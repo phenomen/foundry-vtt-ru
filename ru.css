@@ -21,6 +21,11 @@ body {
     font-size: 14px;
 }
 
+.dnd5e.sheet .sheet-header h1 input {
+    height: 40px;
+    font-size: 32px;
+}
+
 .dnd5e.sheet .sheet-navigation {
     font-family: "Arial", serif;
     font-weight: bold;
@@ -35,6 +40,10 @@ body {
 .dnd5e.sheet.actor ul.attributes li.attribute .attribute-footer {
     font-family: "Arial", serif;
     font-size: 11px;
+}
+
+.dnd5e.sheet.actor ul.attributes li.attribute .attribute-value input {
+    font-size: 20px;
 }
 
 .dnd5e.sheet.actor .ability-scores {
@@ -81,8 +90,12 @@ body {
     font-size: 16px;
 }
 
+.dnd5e.sheet.actor .sheet-header .charlevel .level.noxp>label {
+    font-size: 24px;
+}
+
 .dnd5e.sheet.actor .sheet-header .charlevel .level input {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .dnd5e.sheet.actor .counters .counter {
@@ -90,4 +103,22 @@ body {
     line-height: 16px;
     align-items: center;
     justify-content: center;
+}
+
+.dnd5e.sheet.actor.character .counters .death-saves {
+    flex: 1;
+}
+
+.dnd5e.sheet.actor .inventory-list .item-detail {
+    font-size: 11px;
+}
+
+.dnd5e.sheet.actor .spell-school,
+.dnd5e.sheet.actor .spell-action,
+.dnd5e.sheet.actor .spell-target {
+    font-size: 11px;
+}
+
+.compendium-browser .spell-browser .spell .spell-tags {
+    max-width: 200px;
 }
