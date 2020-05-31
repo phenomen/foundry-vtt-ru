@@ -7,6 +7,9 @@ body {
     font-size: 14px;
 }
 
+
+/* D&D5 */
+
 .dnd5e.sheet .window-content {
     font-size: 12px;
 }
@@ -34,7 +37,7 @@ body {
 
 .dnd5e.sheet.actor ul.attributes li.attribute {
     font-family: "Georgia", serif;
-	margin: 0 3px;
+    margin: 0 3px;
 }
 
 .dnd5e.sheet.actor ul.attributes li.attribute .attribute-footer {
@@ -115,10 +118,128 @@ body {
     font-size: 11px;
 }
 
-.compendium-browser .spell-browser .spell .spell-tags {
-    max-width: 200px;
-}
-
 .dnd5e.sheet.actor.character .attributes .resource label.checkbox {
     margin: 0px;
+}
+
+
+/* PF1 */
+
+.pf1.sheet .window-content {
+    font-size: 12px;
+}
+
+.pf1 .form-header {
+    font-family: "Arial", serif;
+    font-size: 12px;
+}
+
+.pf1.sheet .sheet-header {
+    font-family: "Georgia", serif;
+    font-size: 14px;
+}
+
+.pf1.sheet .sheet-header h1 input {
+    height: 40px;
+    font-size: 32px;
+}
+
+.pf1.sheet .sheet-navigation {
+    font-family: "Arial", serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.pf1.sheet.actor ul.attributes li.attribute {
+    font-family: "Georgia", serif;
+    margin: 0 3px;
+}
+
+.pf1.sheet.actor ul.attributes li.attribute .attribute-footer {
+    font-family: "Arial", serif;
+    font-size: 11px;
+}
+
+.pf1.sheet.actor .ability-scores {
+    font-family: "Georgia", serif;
+    font-size: 14px;
+}
+
+.pf1.sheet.actor .counters .counter h4 {
+    font-family: "Arial", serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.pf1.sheet.actor .inventory-filters h3,
+.pf1.sheet.actor .inventory-filters .filter-title {
+    font-family: "Arial", serif;
+    font-size: 12px;
+}
+
+.pf1.chat-card .card-header h3 {
+    font-family: "Arial", serif;
+    font-size: 14px;
+}
+
+.pf1.sheet.actor h4.box-title {
+    font-family: "Arial", serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.pf1.sheet.actor.character ul.skills-list li.skill h4 {
+    font-size: 11px;
+}
+
+.pf1.sheet.actor.character ul.skills-list {
+    font-size: 11px;
+}
+
+.pf1 label.checkbox {
+    font-size: 10px;
+}
+
+.pf1.sheet.actor ul.attributes li.attribute .attribute-value span.sep {
+    font-size: 16px;
+}
+
+.pf1.sheet.actor .sheet-header .charlevel .level.noxp>label {
+    font-size: 24px;
+}
+
+.pf1.sheet.actor .sheet-header .charlevel .level input {
+    font-size: 24px;
+}
+
+.pf1.sheet.actor .counters .counter {
+    padding: 0 3px;
+    line-height: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pf1.sheet.actor.character .counters .death-saves {
+    flex: 1;
+}
+
+.pf1.sheet.actor .inventory-list .item-detail {
+    font-size: 11px;
+}
+
+.pf1.sheet.actor .spell-school,
+.pf1.sheet.actor .spell-action,
+.pf1.sheet.actor .spell-target {
+    font-size: 11px;
+}
+
+.pf1.sheet.actor.character .attributes .resource label.checkbox {
+    margin: 0px;
+}
+
+
+/* OTHER */
+
+.compendium-browser .spell-browser .spell .spell-tags {
+    max-width: 200px;
 }
