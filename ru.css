@@ -8,7 +8,7 @@ body {
 }
 
 
-/* D&D5 */
+/* DUNGEONS AND DRAGONS 5 */
 
 .dnd5e.sheet .window-content {
     font-size: 12px;
@@ -127,7 +127,7 @@ body {
 }
 
 
-/* PF1 */
+/* PATHFINDER 1 */
 
 .pf1.sheet .window-content {
     font-size: 12px;
@@ -242,7 +242,71 @@ body {
 }
 
 
-/* OTHER */
+/* 13TH AGE */
+
+#chat-log .message {
+    font-family: "Georgia", serif;
+}
+
+#chat-log .card-header {
+    font-family: "Georgia", serif;
+}
+
+.ability-usage {
+    background: #2f3640 !important;
+}
+
+.ability-usage--at-will {
+    background: #004D40 !important;
+}
+
+.ability-usage--once-per-battle {
+    background: #BF360C !important;
+}
+
+.ability-usage--daily {
+    background: #607D8B !important;
+}
+
+.ability-usage--recharge {
+    background: #0D47A1 !important;
+}
+
+.ability-usage--other {
+    background: #4527A0 !important;
+}
+
+.archmage.sheet,
+.archmage.actor-sheet .primary-attributes .attribute .attribute-value,
+.archmage .abilities .ability .ability-score>input,
+.archmage .abilities .ability .ability-lvl,
+.archmage-escalation {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.archmage.sheet h1,
+.archmage.sheet h2,
+.archmage.sheet h3,
+.archmage.sheet h4,
+.archmage.actor-sheet .sheet-header .charname>input,
+.archmage.actor-sheet .sheet-header .charlevel .level,
+.archmage.actor-sheet .details .character-detail .attribute-label,
+.archmage.actor-sheet .primary-attributes .attribute .attribute-name,
+.archmage.actor-sheet .statuses .status h4,
+.class-list .item .class-levels,
+.class-header h3,
+.archmage .abilities .ability-name,
+.archmage .abilities .ability-header,
+.archmage.actor-sheet .details .character-detail>input,
+.archmage-escalation::after,
+.archmage.actor-sheet.npc-sheet .charlevel .initiative,
+.class-list .item .class-name,
+.archmage.actor-sheet .details .character-detail .attribute-label {
+    font-family: "Georgia", serif;
+}
+
+
+/* MODULES */
 
 .compendium-browser .spell-browser .spell .spell-tags {
     max-width: 200px;
