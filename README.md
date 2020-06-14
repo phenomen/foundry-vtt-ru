@@ -13,7 +13,7 @@ Russian language for Foundry VTT including translation for D&D5, Pathfinder 1, D
 
 Модуль добавляет русский язык в Foundry VTT, системы D&D5, Pathfinder 1, Dungeon World, Savage World и некоторые модули.
 
-**Ведущий** должен выполнить следующее:
+**Ведущий** должен выполнить следующее в каждом созданном мире:
 
 Game Settings > Manage Modules и поставить галочку на Translation: Russian.
 
