@@ -250,7 +250,7 @@ body {
 /* 13TH AGE */
 
 #chat-log .message {
-    font-family: "Georgia", serif;
+    font-family: "Arial", sans-serif;
 }
 
 #chat-log .card-header {
@@ -308,6 +308,22 @@ body {
 .class-list .item .class-name,
 .archmage.actor-sheet .details .character-detail .attribute-label {
     font-family: "Georgia", serif;
+}
+
+.inventory-list .item .item-action--standard::before {
+    content: 'Обыч';
+}
+
+.inventory-list .item .item-action--move::before {
+    content: 'Движ';
+}
+
+.inventory-list .item .item-action--quick::before {
+    content: 'Быст';
+}
+
+.inventory-list .item .item-action--free::before {
+    content: 'Своб';
 }
 
 
