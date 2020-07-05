@@ -327,6 +327,7 @@
 	"Stealth Disadv.": "Помеха скрытности",
 	"BRT.TypeLabel": "Тип таблицы",
 	"BRT.TypeDefault": "Стандартная таблица",
+	"BRT.BetterTable": "Улучшенная таблица",
 	"BRT.TypeLoot": "Таблица добычи",
 	"BRT.StoryLoot": "Таблица истории",
 	"BRT.CurrencyLoot": "Случайная валюта",
@@ -1074,6 +1075,192 @@
 	"DW.characters": "Персонажи",
 	"DW.npc": "NPC",
 	"DW.npcs": "NPCs",
+	"ForienQuestLog": {
+		"NewQuest": "Новое задание",
+		"QuestLogButton": "Журнал заданий",
+		"Quests": "{0} заданий",
+		"SampleReward": "напр. „300 Пунктов Опыта”",
+		"SampleTask": "напр. „Избавиться от крыс в подвале таверне”",
+		"QuestTypes": {
+			"InProgress": "Активное",
+			"Completed": "Завершённое",
+			"Failed": "Проваленное",
+			"Hidden": "Скрытое",
+			"Labels": {
+				"available": "доступно",
+				"active": "текущее",
+				"completed": "завершено",
+				"failed": "провалено",
+				"hidden": "скрыто"
+			}
+		},
+		"Buttons": {
+			"AddNewQuest": "Добавить задание",
+			"AddNewTask": "добавить"
+		},
+		"QuestForm": {
+			"Title": "Новое задание",
+			"QuestGiver": "Источник",
+			"QuestGiverPlaceholder": "Имя актёра или UUID сущности",
+			"QuestTitle": "Название задания",
+			"DragDropActor": "Перетащите Актёра, Предмет или Запись журнала, чтобы сделать их Источником",
+			"QuestDescription": "Описание задания",
+			"QuestGMNotes": "Примечания GM",
+			"Submit": "Создать",
+			"SubquestOf": "Подзадание {name}"
+		},
+		"QuestLog": {
+			"Title": "Журнал заданий",
+			"SubTitle": "часть: {0}",
+			"Table": {
+				"QuestGiver": "Источник",
+				"QuestTitle": "Название",
+				"Tasks": "Задачи",
+				"Actions": "Действия"
+			},
+			"Tabs": {
+				"Available": "Доступные",
+				"InProgress": "Текущие",
+				"Completed": "Завершённые",
+				"Failed": "Проваленные",
+				"Hidden": "Скрытые"
+			}
+		},
+		"QuestPreview": {
+			"Title": "Подробности задания",
+			"SubTitle": "часть: {0}",
+			"Objectives": "Задачи",
+			"Rewards": "Награды",
+			"DragDropRewards": "Перетащите предмет, чтобы сделать его наградой",
+			"InvalidQuestId": "Не удаётся открыть подробности из-за несуществующего ID задания.",
+			"HeaderButtons": {
+				"Show": "Показать игрокам"
+			},
+			"Management": {
+				"IsPersonalQuest": "Персональное задание?",
+				"IsPersonalQuestDescription": "Сделать квест персональным для персонажа. Он будет невидим для всех, кроме выбранного игрока. Снятие этого статуса переместит задание в Скрытые.",
+				"SplashArt": "Изображение",
+				"QuestBranching": "Подзадания",
+				"AddSubquest": "Создать подзадание",
+				"CanPlayerEdit": "Разрешить игрокам изменять подробности задания"
+			},
+			"Tabs": {
+				"Details": "Подробности",
+				"QuestManagement": "Изменить задание",
+				"GMNotes": "Примечания GM"
+			}
+		},
+		"DeleteDialog": {
+			"Title": "Удаление {name}",
+			"Header": "Вы уверены?",
+			"Body": "Это задание и связанные данные будут удалены.",
+			"Delete": "Удалить",
+			"Cancel": "Отмена"
+		},
+		"CloseDialog": {
+			"Title": "Закрыть форму",
+			"Header": "Вы уверены?",
+			"Body": "Вы уверены, что хотите закрыть форму? Несохранённые данные будут потеряны.",
+			"Discard": "Сбросить изменения",
+			"Cancel": "Отмена"
+		},
+		"Notifications": {
+			"CannotOpen": "Не удаётся открыть подробности. Возможно у вас нет разрешения, задание не существует или имеет неверный ID.",
+			"UserCantOpen": "Участник {user} не имеет разрешения для просмотра этого задания.",
+			"LinkCopied": "Ссылка на сущность этого задания была скопирована в буфер.",
+			"QuestMoved": "Задание перемещено в новую папку и имеет статус: {target}"
+		},
+		"Settings": {
+			"allowPlayersDrag": {
+				"Enable": "Разрешить игрокам перемещать награды",
+				"EnableHint": "Если включено, игроки смогут перемещать награды из окна задания в свой инвентарь."
+			},
+			"availableQuests": {
+				"Enable": "Показать доступные задания",
+				"EnableHint": "Если включено, игроки будут видеть вкладку \"Доступные\", где отображаются ещё не взятые задания."
+			},
+			"countHidden": {
+				"Enable": "Считать скрытые задачи",
+				"EnableHint": "Если включено, число завершено/всего задач будет включать скрытые."
+			},
+			"navStyle": {
+				"Enable": "Способ навигации",
+				"EnableHint": "Вид отображение заданий в журнале.",
+				"bookmarks": "Закладки",
+				"classic": "Вкладки"
+			},
+			"showFolder": {
+				"Enable": "Показывать папку заданий",
+				"EnableHint": "Если включено, папка заданий будет отображаться в журналах. ТОЛЬКО ДЛЯ РАЗРАБОТЧИКОВ."
+			},
+			"showTasks": {
+				"Enable": "Показывать задачи в журнале",
+				"EnableHint": "Если включено, число задач будет отображаться около названия задания.",
+				"default": "Показывать задачи: завершено/всего",
+				"onlyCurrent": "Показывать задачи: завершено",
+				"no": "Скрыть колонку \"задачи\""
+			},
+			"titleAlign": {
+				"Enable": "Расположение названия задания",
+				"EnableHint": "Вид отображения названия задания в журнале.",
+				"left": "Слева",
+				"center": "По центру"
+			},
+			"playersWelcomeScreen": {
+				"Enable": "Показывать экран приветствия игрокам",
+				"EnableHint": "Если включено, игроки будут видеть экран приветствия модуля."
+			},
+			"allowPlayersAccept": {
+				"Enable": "Игроки могут принимают задания",
+				"EnableHint": "Если включено, игроки смогут сами принимать задания из вкладки Доступных."
+			},
+			"allowPlayersCreate": {
+				"Enable": "Игроки могут создавать задания",
+				"EnableHint": "Если включено, игроки смогут сами создавать задания. Созданные игроками задания отображаются во вкладке Доступные. ТРЕБУЕТСЯ разрешение 'создание заметок' в Foundry."
+			}
+		},
+		"Tooltips": {
+			"SetAvailable": "Сделать доступным",
+			"SetActive": "Сделать текущим",
+			"SetCompleted": "Сделать завершённым",
+			"SetFailed": "Сделать проваленным",
+			"Hide": "Скрыть",
+			"Delete": "Удалить",
+			"AddAbstractReward": "Добавить абстрактную награду",
+			"PersonalQuestButNoPlayers": "Это персональное задание, но его никто не видит.",
+			"PersonalQuestVisibleFor": "Это персональное задание для",
+			"RewardHidden": "Награда скрыта. Нажмите, чтобы показать.",
+			"RewardVisible": "Награда видима. Нажмите, чтобы скрыть.",
+			"TaskHidden": "Задача скрыта. Нажмите, чтобы показать.",
+			"TaskVisible": "Задача видима. Нажмите, чтобы скрыть.",
+			"ToggleImage": "Переключить изображение портрета/токена"
+		},
+		"Api": {
+			"__COMMENT__": "No need for translating lines starting with 'API ERROR', they show in console for developers only.",
+			"create": {
+				"title": "API Error: Title property is required to create new Quest"
+			},
+			"hooks": {
+				"createOpenQuestMacro": {
+					"name": "Открыть задание „{name}”",
+					"error": {
+						"noQuest": "API Error: Can't create macro with invalid Quest ID"
+					}
+				}
+			},
+			"reward": {
+				"create": {
+					"data": "API Error: Data property with at least {name, img} is required to create new Reward",
+					"type": "API Error: Type property is required to create new Reward"
+				}
+			},
+			"task": {
+				"create": {
+					"name": "API Error: Name property is required to create new Task"
+				}
+			}
+		}
+	},
 	"Activate": "Активировать",
 	"Author": "Автор",
 	"Cancel": "Отмена",
@@ -1125,6 +1312,7 @@
 	"CHAT.Export": "Экспорт чата",
 	"CHAT.FlushTitle": "Очистить чат",
 	"CHAT.FlushWarning": "<h3>Вы уверены?</h3><p>Все сообщения чата будут удалены.</p>",
+	"CHAT.InvalidCommand": "{command} не является командой чата.",
 	"CHAT.Title": "Чат",
 	"CHAT.To": "К",
 	"CHAT.RevealMessage": "Показать всем",
@@ -1291,6 +1479,7 @@
 	"CONTROLS.DrawingHeader": "Управление рисованием",
 	"CONTROLS.DrawingTextConfirm": "Подтвердить текст",
 	"CONTROLS.DrawingTextCancel": "Отменить текст",
+	"DICE.ErrorNonNumeric": "Формула броска {formula} не имеет числового результата.",
 	"ENTITY.Actor": "Актёр",
 	"ENTITY.ChatMessage": "Сообщения чата",
 	"ENTITY.Combat": "Бой",
@@ -1335,6 +1524,7 @@
 	"FILES.ErrorSomethingWrong": "Что-то пошло не так с запросом загрузки файла.",
 	"FILES.WarnUploadModules": "Вы загрузили файл в папку модуля или системы. Это не рекомендуется делать, т.к. при обновлении модуля или системы загруженные файлы удалятся.",
 	"GAME.Paused": "Игра на паузе",
+	"GAME.PausedWarning": "Вы не можете совершить это действия пока игра на паузе.",
 	"INVITATIONS.Copied": "Ссылка с приглашением скопирована в буфер обмена",
 	"INVITATIONS.Instructions": "Отправьте ссылку с приглашением другим игрокам. Локальная ссылка работает только в локальной сети. Интернет ссылка работает в глобальной сети, но требует открытого порта.",
 	"INVITATIONS.Internet": "Интернет",
@@ -1623,6 +1813,8 @@
 	"PERMISSION.SettingsModifyHint": "Позволить роли.",
 	"PERMISSION.ShowCursor": "Отображение курсора",
 	"PERMISSION.ShowCursorHint": "Отображать курсор мыши этой роли для всех.",
+	"PERMISSION.ShowRuler": "Отображать значения линейки",
+	"PERMISSION.ShowRulerHint": "Отображать значения линейки другим участникамц.",
 	"PERMISSION.TemplateCreate": "Создание шаблонов",
 	"PERMISSION.TemplateCreateHint": "Позволить роли создавать и настраивать измерительные шаблоны для AoE эффектов.",
 	"PERMISSION.TokenCreate": "Создание токенов",
@@ -1944,6 +2136,8 @@
 	"LMRTFY.DisadvantageNote": "Эти броски будут с помехой",
 	"LMRTFY.SelectUser": "Выберите игрока:",
 	"LMRTFY.ControlledCharacters": "Подконтрольные персонажи",
+	"LMRTFY.ControlledTokens": "Подконтрольные токены",
+	"LMRTFY.AssignedCharacters": "Назначенные персонажи",
 	"LMRTFY.SelectCharacters": "Выберите персонажей:",
 	"LMRTFY.SelectAll": "Все",
 	"LMRTFY.SelectNone": "Нет",
@@ -2075,6 +2269,8 @@
 	"minor-qol.halfDamage": "half as much damage",
 	"minor-qol.halfDamageAlt": "half damage",
 	"minor-qol.noDamageText": "no damage on save",
+	"minor-qol.PreRollChecks.Name": "Экспериментально: Совершать проверки до быстрого броска/макроса",
+	"minor-qol.PreRollChecks.Hint": "Экспериментально: Проверки будут просчитываться до броска; в зоне досягаемости и цель имеет > 0 HP",
 	"minor-qol.": "",
 	"PLUT.Delete": "Удалить",
 	"PLUT.Reset": "Сброс",
