@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
 @font-face {
     font-family: "Avenir";
     src: url('fonts/AvenirNextCyr-Bold.ttf');
@@ -50,6 +51,10 @@ body {
 .nodesto {
     font-family: 'Oswald', sans-serif !important;
     font-weight: bold;
+}
+
+.dnd5e.sheet .sheet-header .header-details {
+    font-family: 'Vollkorn', serif !important;
 }
 
 a.entity-link,
@@ -121,10 +126,11 @@ a.inline-roll {
     font-family: 'Oswald', sans-serif !important;
     font-weight: bold;
     font-size: 14px;
+    margin: 4px 8px 4px 4px;
 }
 
 .dnd5e.sheet.actor .sheet-header .summary {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .dnd5e.sheet.actor.character ul.skills-list li.skill h4 {
@@ -139,9 +145,13 @@ a.inline-roll {
     font-size: 10px;
 }
 
-.dnd5e.sheet.actor ul.attributes li.attribute .attribute-value span.sep {
-    font-size: 16px;
+.dnd5e.sheet.actor ul.attributes li.attribute .attribute-value {
+    font-family: "Vollkorn", serif;
+    font-size: 15px;
+    height: 25px;
+    height: 25px;
 }
+
 
 .dnd5e.sheet.actor .sheet-header .charlevel .level.noxp>label {
     font-size: 24px;
@@ -154,6 +164,15 @@ a.inline-roll {
 .dnd5e.sheet.actor .inventory-list .item-detail {
     font-family: 'Oswald', sans-serif !important;
     font-size: 14px;
+}
+
+.dnd5e.sheet .sheet-header .summary li {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.dnd5e.sheet.actor .inventory-list .inventory-header h3 {
+    font-family: "Vollkorn", serif !important;
 }
 
 .dnd5e.sheet.actor .spell-school,
