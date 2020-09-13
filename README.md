@@ -9,9 +9,9 @@
 * Manifest: https://github.com/Phenomen/foundry-vtt-ru/raw/master/module.json
 
 ### Description
-Russian language for Foundry VTT including translation for D&D5, OSE, Pathfinder 1, Dungeon World, Savage Worlds systems, and some modules.
+Russian language for Foundry VTT including translation for D&D5, OSE, Pathfinder 1, Dungeon World, Savage Worlds, Numenera systems, and some modules.
 
-Модуль добавляет русский язык в Foundry VTT, системы D&D5, OSE, Pathfinder 1, Dungeon World, Savage World и некоторые модули.
+Модуль добавляет русский язык в Foundry VTT, системы D&D5, OSE, Pathfinder 1, Dungeon World, Savage World, Numenera  и некоторые модули.
 
 **Ведущий** должен выполнить следующее в каждом созданном мире:
 
