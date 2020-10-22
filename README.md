@@ -1,17 +1,17 @@
 # Russian language for Foundry Virtual Tabletop
 
 * **Author**: Phenomen [Discord: Phenomen#1337]
-* **Version**: 0.6.6.7
-* **Foundry VTT Compatibility**: 0.6.6
+* **Version**: 0.7.5.1
+* **Foundry VTT Compatibility**: 0.7.5
 
 ### Links to Translation
 * Github: https://github.com/Phenomen/foundry-vtt-ru
 * Manifest: https://github.com/Phenomen/foundry-vtt-ru/raw/master/module.json
 
 ### Description
-Russian language for Foundry VTT including translation for D&D5, OSE, Pathfinder 1, Dungeon World, Savage Worlds, Numenera systems, and some modules.
+Russian language for Foundry VTT including translation for D&D5, OSE, Pathfinder 1, Dungeon World, Savage Worlds, Cypher systems, and some modules.
 
-Модуль добавляет русский язык в Foundry VTT, системы D&D5, OSE, Pathfinder 1, Dungeon World, Savage World, Numenera  и некоторые модули.
+Модуль добавляет русский язык в Foundry VTT, системы D&D5, OSE, Pathfinder 1, Dungeon World, Savage World, Cypher и некоторые модули.
 
 **Ведущий** должен выполнить следующее в каждом созданном мире:
 
