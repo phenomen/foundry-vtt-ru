@@ -1,47 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
 
-@font-face {
-    font-family: "Avenir";
-    src: url('fonts/AvenirNextCyr-Bold.ttf');
-    font-weight: 900;
-}
-
-@font-face {
-    font-family: "Avenir";
-    src: url('fonts/AvenirNextCyr-Heavy.ttf');
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: "Avenir";
-    src: url('fonts/AvenirNextCyr-Medium.ttf');
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: "Avenir";
-    src: url('fonts/AvenirNextCyr-Regular.ttf');
-}
-
-@font-face {
-    font-family: "Avenir";
-    src: url('fonts/AvenirNextCyr-Regular.ttf');
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: "Avenir";
-    src: url('fonts/AvenirNextCyr-Light.ttf');
-    font-weight: 200;
-}
-
-@font-face {
-    font-family: "Calluna";
-    src: url('fonts/AvenirNextCyr-Regular.ttf');
-}
-
-
 /* FOUNDRY */
 
 body {
@@ -218,6 +177,11 @@ a.inline-roll {
 }
 
 .tidy5e.sheet.actor .header-attributes .value-footer {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.tidy5e.sheet.actor .attribute-name {
+    font-size: 18px;
     font-family: 'Oswald', sans-serif !important;
 }
 
