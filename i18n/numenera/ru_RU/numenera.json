@@ -1,0 +1,436 @@
+{
+  "NUMENERA": {
+    "N/A": "Нет",
+    "canvas": {
+      "unit": {
+        "feet": "футы",
+        "meters": "метры",
+        "noUnitWarning": "Не удаётся определить расстояние: не выбрана система измерений для Сцены"
+      }
+    },
+    "community": {
+      "armor": "Броня",
+      "combat": "Бой",
+      "damage": "Урон",
+      "health": "Здоровье",
+      "infrastructure": "Инфраструктура",
+      "modifications": "Модификации",
+      "rank": "Ранг"
+    },
+    "communityActorSheet": {
+      "tab": {
+        "combat": "Бой",
+        "government": "Правительство",
+        "information": "Информации",
+        "overview": "Обзор"
+      }
+    },
+    "dialog": {
+      "confirmDeletion": {
+        "cancel": "Отмена",
+        "ok": "OK",
+        "text": "Вы действительно хотите удалить",
+        "title": "Подтверждение удаления"
+      }
+    },
+    "effort": {
+      "cost": "Цена",
+      "effortLevels": "Уровень Усилия",
+      "failAutomatically": "Автоматический провал",
+      "max": "Макс",
+      "other": "Другие Улучшения",
+      "remaining": "Осталось",
+      "rollType": "Тип броска",
+      "selectAStat": "Выберите характеристику",
+      "skillAbilitySuffix": "(Способность)",
+      "succeedAutomatically": "Автоматический успех",
+      "title": "Усилие",
+      "warning": {
+        "notEnoughPoolPoints": "Не хватает пунктов Запаса",
+        "provideStat": "Вы должгы выбрать характеристику для Усилия"
+      }
+    },
+    "effortLevels": "Уровни Усилия",
+    "gmIntrusion": "Вторжение Мастера",
+    "gmIntrusionAccepts": "соглашается на вторжение",
+    "gmIntrusionButtonAccept": "Согласиться",
+    "gmIntrusionButtonRefuse": "Отказаться",
+    "gmIntrusionContent": "<p>Мастер предложил вам вторжение. Вы согласны?</p><ul><li>Если вы согласитесь, то Мастер опишет неожиданное осложнение для вашего персонажа. При этом вы получите 2 ПО, 1 из которых нужер поделиться с другим игроком.</li><li>Если вы откажетесь, то осложнения не случится, однако вы должны будете потратить 1 ПО из текущих.</li></ul>",
+    "gmIntrusionRefuses": "отказывается от вторжения",
+    "gmIntrusionText": "Мастер предлагает вторжение",
+    "info": {
+      "linkedToSkillWithSameName": "Способность связана с навыком с таким же названием",
+      "skillWithSameNameCreated": "Навык с таким же названием был добавлен"
+    },
+    "item": {
+      "ability": {
+        "category": "Категория",
+        "categoryPlaceholder": "Категория (Типаж, Фокусировка и т.п.)",
+        "categoryValuePlaceholder": "Значение категории (Джек, Глефа, Мастерское оружие и т.п.)",
+        "cost": "Цена",
+        "description": "Описание",
+        "name": "Способности",
+        "newAbility": "Новая способность",
+        "range": "Дистанция",
+        "relatedSkillUpdated": "Связанный навык обновлён",
+        "tab": {
+          "cost": "Цена",
+          "createTooltip": "Создать",
+          "deleteTooltip": "Удалить",
+          "description": "Описание",
+          "instructions": "Нет способностей. Добавьте способность, нажав на <a><i class=\"fas fa-plus\"></i></a> справа или перетащив предмет из Библиотеки.",
+          "name": "Название",
+          "range": "Дистанция"
+        },
+        "tier": "Ступень",
+        "type": {
+          "action": "Действие",
+          "enabler": "Активатор",
+          "spell": "Заклинание"
+        },
+        "useNotLinkedToActor": "Способность не связана с актёром"
+      },
+      "armor": {
+        "additionalSpeedEffortCost": "Доп. стоимость Усилия Скорости",
+        "armor": "Броня",
+        "description": "Описание",
+        "newArmor": "Новый доспех",
+        "price": "Цена",
+        "weight": "Вес"
+      },
+      "artifact": {
+        "depletion": "Истощение",
+        "depletionDie": "Кость",
+        "depletionThreshold": "Порог",
+        "description": "Описание",
+        "effect": "Эффект",
+        "form": "Форма",
+        "laws": "Законы",
+        "level": "Уровень",
+        "newArtifact": "Новый артефакт"
+      },
+      "cypher": {
+        "effect": "Эффект",
+        "form": "Форма",
+        "level": "Уровень",
+        "newCypher": "Новый шифр",
+        "type": {
+          "anoetic": "Непостижимый",
+          "fantastic": "Фантастический",
+          "label": "Тип",
+          "manifest": "Манифестация",
+          "occultic": "Оккультный",
+          "subtle": "Субтильный"
+        }
+      },
+      "equipment": {
+        "description": "Описание",
+        "newEquipment": "Новое снаряжение",
+        "price": "Цена"
+      },
+      "numenera": {
+        "formPlaceholder": "Вы можете добавить несколько форм, разделяя запятой"
+      },
+      "oddity": {
+        "description": "Описание",
+        "newOddity": "Новая причуда"
+      },
+      "powerShift": {
+        "effects": "Эффекты",
+        "newPowerShift": "Новое Смещение"
+      },
+      "recursion": {
+        "active": "Активная?",
+        "focus": "Фокусировка",
+        "focusAbilities": "Способность фокусировки",
+        "laws": "Законы",
+        "level": "Уровень",
+        "name": "Название",
+        "newRecursion": "Новая рекурсия",
+        "race": "Раса",
+        "tab": {
+          "deleteTooltip": "Удалить",
+          "instructions": "Нет рекурсий. Добавьте новую из Библиотеки."
+        },
+        "trait": "Черта"
+      },
+      "skill": {
+        "description": "Описание",
+        "newSkill": "Новый навык",
+        "relatedAbilityUpdated": "Связанная способность обновлена",
+        "stat": "Параметр",
+        "tab": {
+          "createTooltip": "Создать",
+          "deleteTooltip": "Удалить",
+          "instructions": "Нет навыка. Добавьте навык, нажав на <a><i class=\"fas fa-plus\"></i></a> справа или перетащив предмет из Библиотеки.",
+          "name": "Название",
+          "stat": "Параметр"
+        },
+        "useNotLinkedToActor": "Навык не связан с актёром"
+      },
+      "tab": {
+        "rollTooltip": "Бросок (Shift для скрытого броска)"
+      },
+      "weapon": {
+        "damage": "Урон",
+        "description": "Описание",
+        "newWeapon": "Новое оружие",
+        "price": "Цена",
+        "range": "Дистанция",
+        "type": "Тип",
+        "weight": "Вес"
+      }
+    },
+    "macro": {
+      "create": {
+        "onlyOwned": "Вы можете создать макросы только для предметов во владении"
+      },
+      "use": {
+        "notActorsItem": "Актёр под вашим управлением не владеет этим предметом"
+      }
+    },
+    "majorEffect": "Сильный эффект",
+    "minorEffect": "Слабый эффект",
+    "npc": {
+      "armor": "Броня",
+      "attacks": {
+        "createTooltip": "Создать",
+        "deleteTooltip": "Удалить",
+        "description": "Описание",
+        "none": "Нет атак. Добавьте атаку, нажав на <a><i class=\"fas fa-plus\"></i></a> справа или перетащив предмет из Библиотеки.",
+        "placeholder": "Описание атаки"
+      },
+      "combat": "Бой",
+      "damage": "Урон",
+      "description": "Описание",
+      "environment": "Окружение",
+      "gmIntrusion": "Вторжение мастера",
+      "health": "Здоровье",
+      "interaction": "Взаимодействие",
+      "level": "Уровень",
+      "loot": "Добыча",
+      "modifications": "Модификаторы",
+      "motive": "Мотивация",
+      "movement": "Движение",
+      "use": "Использование"
+    },
+    "npcActorSheet": {
+      "tab": {
+        "attacks": "Атаки",
+        "description": "Описание",
+        "information": "Информация"
+      }
+    },
+    "pc": {
+      "advances": {
+        "edge": "+1 к Гране",
+        "effort": "+1 к Усилию",
+        "other": "Другое",
+        "skillTraining": "Тренировка навыка",
+        "statPools": "+4 к Параметру"
+      },
+      "armor": {
+        "armor": "Броня",
+        "createTooltip": "Создать",
+        "deleteTooltip": "Удалить",
+        "effortCost": "Цена Усилия",
+        "label": "Броня",
+        "name": "Название",
+        "none": "Нет доспехов. Добавьте доспех, нажав на <a><i class=\"fas fa-plus\"></i></a> справа или перетащив предмет из Библиотеки.",
+        "notes": "Заметки",
+        "sectionName": "Доспехи",
+        "type": "Тип"
+      },
+      "armorpenalty": {
+        "label": "Штраф Скорости"
+      },
+      "bio": {
+        "saveChanges": "Сохранить изменения"
+      },
+      "damageTrack": {
+        "dead": {
+          "description": "Персонаж мёртв.",
+          "label": "Смерть",
+          "warning": "Невозможно совершить проверку: персонаж мёртв."
+        },
+        "debilitated": {
+          "description": "Персонаж в критическом состоянии. Можно передвигаться только на короткие дистанции; Нельзя передвигаться при запасе Скорости равном 0.",
+          "label": "Изнурение",
+          "warning": "Невозможно совершить проверку: персонаж изнурён."
+        },
+        "hale": {
+          "description": "Обычное состояние персонажа.",
+          "label": "Здравие"
+        },
+        "impaired": {
+          "description": "Персонаж ранен или покалечен. Усилие требует +1 пункт запаса за каждый уровень Усилия; Игнорируйте малые и сильные эффекты проверок; Боевые проверки 17-20 наносят только +1 урон.",
+          "label": "Ранение"
+        },
+        "name": "Повреждения"
+      },
+      "effort": "Усилие",
+      "initiativeRoll": "проверяет инициативу",
+      "numenera": {
+        "artifact": {
+          "depletion": "Истощение",
+          "effect": "Эффект",
+          "form": "Форма",
+          "identified": "Определён?",
+          "in": "из",
+          "level": "Уровень",
+          "name": "Артефакты",
+          "none": "Нет артефактов",
+          "roll": "Бросок",
+          "unidentified": "Неопределённый артефакт"
+        },
+        "cypher": {
+          "deleteTooltip": "Удалить",
+          "effect": "Эффект",
+          "form": "Форма",
+          "identified": "Определён?",
+          "level": "Уровень",
+          "limit": "Лимит",
+          "name": "Шифры",
+          "none": "Нет шифров",
+          "overLimit": "Вы достигли лимита шифров!",
+          "type": {
+            "fantastic": "Фантастический",
+            "manifest": "Манифестация",
+            "name": "Тип",
+            "occultic": "Оккультный",
+            "subtle": "Субтильный"
+          },
+          "unidentified": "Неопределённый шифр"
+        },
+        "oddity": {
+          "name": "Причуда",
+          "none": "Нет причуд"
+        },
+        "strange": {
+          "alienation": "Отчуждёние"
+        }
+      },
+      "otherItems": {
+        "createTooltip": "Создать",
+        "deleteTooltip": "Удалить",
+        "description": "Описание",
+        "name": "Название",
+        "none": "Нет предметов. Добавьте предмет, нажав на <a><i class=\"fas fa-plus\"></i></a> справа или перетащив предмет из Библиотеки.",
+        "quantity": "Количество",
+        "sectionName": "Другие предметы"
+      },
+      "recovery": {
+        "action": "1 действие",
+        "name": "Восстановление",
+        "oneHour": "1 час",
+        "tenHours": "10 часов",
+        "tenMin": "10 минута"
+      },
+      "tier": "Ступень",
+      "weapons": {
+        "ammo": "Боезапас",
+        "createTooltip": "Создать",
+        "damage": "Урон",
+        "deleteTooltip": "Удалить",
+        "name": "Название",
+        "none": "Нет оружия. Добавьте оружие, нажав на <a><i class=\"fas fa-plus\"></i></a> справа или перетащив предмет из Библиотеки.",
+        "notes": "Описание",
+        "range": "Дистанция",
+        "sectionName": "Оружие",
+        "type": "Тип"
+      }
+    },
+    "pcActorSheet": {
+      "advancement": {
+        "title": "Развитие",
+        "xp": "XP"
+      },
+      "header": {
+        "descriptor": "Дескриптор",
+        "focus": "Фокусировка",
+        "isA": "- это",
+        "name": "Имя",
+        "type": "Типаж",
+        "who": ", кто"
+      },
+      "tab": {
+        "abilities": "Способности",
+        "bio": "Биография",
+        "cyphers": "Шифры",
+        "equipment": "Снаряжение",
+        "features": "Черты",
+        "numenera": "Нуменера",
+        "recursion": "Рекурсии",
+        "skills": "Навыки",
+        "strange": "Странности"
+      }
+    },
+    "powerShift": "Смещение",
+    "range": {
+      "immediate": "Вплотную",
+      "long": "Длинная",
+      "short": "Короткая",
+      "veryLong": "Очень длинная"
+    },
+    "recoveries": {
+      "accept": "Принять",
+      "noDice": "Нет костей для броска",
+      "pointsRemaining": "Оставшиеся пункты",
+      "pools": "Запасы",
+      "reset": "Сброс",
+      "resetDialog": {
+        "confirmation": "- сброшено ежедневнное Восстановление.",
+        "content": "Сбросить восстановление? Неиспользованные пункты запаса будут потеряны.",
+        "title": "Сброс восстановления"
+      },
+      "roll": "Бросок",
+      "title": "Восстановление"
+    },
+    "roll": "Бросок",
+    "rollFailure": "Провал",
+    "rollMode": {
+      "blind": "Слепой",
+      "private": "Приватный",
+      "public": "Публичный",
+      "self": "Для себя"
+    },
+    "rollSuccess": "Успех",
+    "rolling": "Бросок",
+    "skill": "Навык",
+    "skillLevels": {
+      "Inability": "Неспособный",
+      "Specialized": "Специализированный",
+      "Trained": "Тренированный",
+      "Untrained": "Нетренированный"
+    },
+    "stat": "Параметр",
+    "stats": {
+      "current": "Текущий",
+      "edge": "Грань",
+      "intellect": "Интеллект",
+      "might": "Сила",
+      "name": "Параметр",
+      "pool": "Запас",
+      "speed": "Скорость"
+    },
+    "successLevel": "Уровень успеха",
+    "unknown": "Неизвестно",
+    "warnings": {
+      "abilityWithSameNameExists": "Способность с таким названием уже существует",
+      "noSkillRelatedToAbility": "Нет навыков, связанных с этой способностью",
+      "notEnoughPointsInPoolForAbility": "В запасе не осталось достаточно пунктов для использования способности",
+      "skillWithSameNameExists": "Навык с таким названием уже существует"
+    },
+    "weaponTypes": {
+      "Bashing": "Дробящее",
+      "Bladed": "Острое",
+      "Ranged": "Дистанционное"
+    },
+    "weightClasses": {
+      "Heavy": "Тяжёлое",
+      "Light": "Лёгкое",
+      "Medium": "Среднее"
+    },
+    "with": "c"
+  }
+}
