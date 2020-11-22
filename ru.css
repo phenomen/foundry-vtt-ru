@@ -4,16 +4,12 @@
 /* FOUNDRY */
 
 body {
-    font-family: 'Oswald', sans-serif !important;
+    font-family: 'Arial', sans-serif !important;
 }
 
 .nodesto {
     font-family: 'Oswald', sans-serif !important;
     font-weight: bold;
-}
-
-.dnd5e.sheet .sheet-header .header-details {
-    font-family: 'Vollkorn', serif !important;
 }
 
 a.entity-link,
@@ -38,6 +34,10 @@ a.inline-roll {
 
 .dnd5e.sheet .window-content {
     font-size: 14px;
+}
+
+.dnd5e.sheet .sheet-header .header-details {
+    font-family: 'Vollkorn', serif !important;
 }
 
 .dnd5e .form-header {
@@ -364,8 +364,8 @@ form.numenera-recovery h2 {
     font-family: 'Vollkorn', serif !important;
 }
 
-.yzecoriolis.sheet.actor .always-visible-stats .perma-stats-list .entry {
-    font-family: "Oswald";
+.yzecoriolis.sheet.actor .always-visible-stats .perma-stats-list .entry .stat-label {
+    font-family: "Oswald", sans-serif !important;
 }
 
 .yzecoriolis.sheet.actor .always-visible-stats .perma-stats-list .entry .number .input-value {
@@ -386,7 +386,6 @@ form.numenera-recovery h2 {
 
 .yzecoriolis.sheet.actor .sheet-body .skills-list-group .skill-header {
     font-family: "Oswald";
-
 }
 
 .yzecoriolis.sheet.actor .sheet-body .skills-list-group .skill h4 {
@@ -423,7 +422,6 @@ form.numenera-recovery h2 {
 .yzecoriolis.sheet.actor .sheet-body .item-properties .tag {
     font-family: "Oswald";
 }
-
 
 .yzecoriolis.sheet.actor .sheet-body .talent-list .talent-category-header {
     font-family: "Oswald";
@@ -483,7 +481,7 @@ form.numenera-recovery h2 {
 
 .yzecoriolis.sheet.actor .sheet-body .gear-list .gear-category-name {
     font-size: 13px;
-  }
+}
 
 /* MODULES */
 
