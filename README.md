@@ -1,8 +1,8 @@
 # Russian language for Foundry Virtual Tabletop
 
 * **Author**: Phenomen [Discord: Phenomen#1337]
-* **Version**: 0.7.7.3
-* **Foundry VTT Compatibility**: 0.7.7
+* **Version**: 0.7.8.1
+* **Foundry VTT Compatibility**: 0.7.8
 
 ### Links to Translation
 * Github: https://github.com/Phenomen/foundry-vtt-ru

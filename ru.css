@@ -1,32 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
 
 /* FOUNDRY */
 
 body {
-    font-family: 'Arial', sans-serif !important;
+    font-family: 'Arial', sans-serif;
 }
 
 .nodesto {
-    font-family: 'Oswald', sans-serif !important;
+    font-family: 'Oswald', sans-serif;
     font-weight: bold;
 }
 
 a.entity-link,
 a.inline-roll {
-    padding: 0px 4px 2px 2px;
+    padding: 0px 4px 2px 2px !important;
     border: 1px solid #4b4a44;
-    border-radius: 1px;
+    border-radius: 1px !important;
 }
 
 #chat-log .message {
-    font-family: 'Arial', sans-serif !important;
+    font-family: 'Arial', sans-serif;
 }
 
 #chat-log .card-header {
     font-family: 'Oswald', sans-serif !important;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 16px !important;
 }
 
 
@@ -37,118 +37,149 @@ a.inline-roll {
 }
 
 .dnd5e.sheet .sheet-header .header-details {
-    font-family: 'Vollkorn', serif !important;
+    font-family: 'PT Serif', serif !important;
 }
 
 .dnd5e .form-header {
     font-family: 'Oswald', sans-serif !important;
-    font-size: 12px;
+    font-size: 12px !important;
 }
 
 .dnd5e.sheet .sheet-header {
     font-family: 'Oswald', sans-serif !important;
-    font-size: 14px;
+    font-size: 14px !important;
 }
 
 .dnd5e.sheet .sheet-header h1 input {
-    font-size: 32px;
+    font-size: 32px !important;
 }
 
 .dnd5e.sheet .sheet-navigation {
     font-family: 'Oswald', sans-serif !important;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 14px !important;
 }
 
 .dnd5e.sheet.actor ul.attributes li.attribute {
-    font-family: 'Vollkorn', serif !important;
+    font-family: 'PT Serif', serif !important;
 }
 
 .dnd5e.sheet.actor ul.attributes li.attribute .attribute-footer {
     font-family: 'Oswald', sans-serif !important;
-    font-size: 12px;
+    font-size: 12px !important;
 }
 
 .dnd5e.sheet.actor .counters .counter h4 {
     font-family: 'Oswald', sans-serif !important;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 12px !important;
 }
 
 .dnd5e.sheet.actor .inventory-filters h3,
 .dnd5e.sheet.actor .inventory-filters .filter-title {
     font-family: 'Oswald', sans-serif !important;
-    font-size: 12px;
+    font-size: 12px !important;
 }
 
 .dnd5e.sheet.actor h4.box-title {
     font-family: 'Oswald', sans-serif !important;
     font-weight: bold;
-    font-size: 14px;
-    margin: 4px 8px 4px 4px;
+    font-size: 14px !important;
+    margin: 4px 8px 4px 4px !important;
 }
 
 .dnd5e.sheet.actor .sheet-header .summary {
-    font-size: 15px;
+    font-size: 15px !important;
 }
 
 .dnd5e.sheet.actor.character ul.skills-list li.skill h4 {
-    font-size: 14px;
+    font-size: 14px !important;
 }
 
 .dnd5e.sheet.actor.character ul.skills-list {
-    font-size: 14px;
+    font-size: 14px !important;
 }
 
 .dnd5e label.checkbox {
-    font-size: 10px;
+    font-size: 10px !important;
+}
+
+.dnd5e.sheet .items-list .items-header .item-name {
+    font-family: "PT Serif", serif !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
 }
 
 .dnd5e.sheet.actor ul.attributes li.attribute .attribute-value {
-    font-family: "Vollkorn", serif;
-    font-size: 15px;
-    height: 25px;
-    height: 25px;
+    font-family: "PT Serif", serif !important;
+    font-size: 15px !important;
+    height: 27px !important;
+}
+
+.dnd5e.sheet.actor.character .sheet-header .attributes .hit-dice {
+    font-family: "PT Serif", serif !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+}
+
+.dnd5e.sheet.actor ul.attributes li.attribute .attribute-value > * {
+    font-family: "PT Serif", serif !important;
+    font-weight: bold;
+    font-size: 20px !important;
 }
 
 
 .dnd5e.sheet.actor .sheet-header .charlevel .level.noxp>label {
-    font-size: 24px;
+    font-size: 24px !important;
 }
 
 .dnd5e.sheet.actor .sheet-header .charlevel .level input {
-    font-size: 24px;
+    font-size: 24px !important;
 }
 
 .dnd5e.sheet.actor .inventory-list .item-detail {
     font-family: 'Oswald', sans-serif !important;
-    font-size: 14px;
+    font-size: 14px !important;
 }
 
 .dnd5e.sheet .sheet-header .summary li {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 16px !important;
+    line-height: 20px !important;
 }
 
 .dnd5e.sheet.actor .inventory-list .inventory-header h3 {
-    font-family: "Vollkorn", serif !important;
+    font-family: "PT Serif", serif !important;
 }
 
 .dnd5e.sheet.actor .spell-school,
 .dnd5e.sheet.actor .spell-action,
 .dnd5e.sheet.actor .spell-target {
-    font-size: 12px;
+    font-size: 12px !important;
 }
 
 .dnd5e.chat-card .card-header h3 {
     font-family: 'Oswald', sans-serif !important;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 16px !important;
 }
 
 .dnd5e.sheet.actor .inventory-list .item-summary {
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 13px !important;
+    line-height: 18px !important;
+}
+
+.dnd5e.sheet.actor ul.skills-list li.skill .skill-ability {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 13px !important;
+}
+
+.dnd5e.sheet.actor.character ul.skills-list li.skill h4 {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 13px !important;
+}
+
+.dnd5e.sheet.actor.character .resource .attribute-value label.recharge {
+    font-size: 11px !important;
 }
 
 
@@ -163,7 +194,7 @@ a.inline-roll {
 .tidy5e-navigation {
     font-family: 'Oswald', sans-serif !important;
     font-size: 16px !important;
-    line-height: 12px;
+    line-height: 12px !important;
 }
 
 .tidy5e.sheet.actor .header-attributes .value {
@@ -181,7 +212,7 @@ a.inline-roll {
 }
 
 .tidy5e.sheet.actor .attribute-name {
-    font-size: 18px;
+    font-size: 17px !important;
     font-family: 'Oswald', sans-serif !important;
 }
 
@@ -221,8 +252,8 @@ a.inline-roll {
 }
 
 .tidy5e.sheet.actor .header-attributes .value-footer {
-    line-height: 12px;
-    padding-top: 4px;
+    line-height: 12px !important;
+    padding-top: 4px !important;
 }
 
 
@@ -257,7 +288,7 @@ a.inline-roll {
 .archmage .abilities .ability .ability-score>input,
 .archmage .abilities .ability .ability-lvl,
 .archmage-escalation {
-    font-family: 'Vollkorn', serif !important;
+    font-family: 'PT Serif', serif !important;
 }
 
 .archmage.sheet h1,
@@ -278,7 +309,7 @@ a.inline-roll {
 .archmage.actor-sheet.npc-sheet .charlevel .initiative,
 .class-list .item .class-name,
 .archmage.actor-sheet .details .character-detail .attribute-label {
-    font-family: 'Vollkorn', serif !important;
+    font-family: 'PT Serif', serif !important;
 }
 
 .inventory-list .item .item-action--standard::before {
@@ -361,7 +392,7 @@ form.numenera-recovery h2 {
 }
 
 .yzecoriolis.sheet.actor input[type="text"] {
-    font-family: 'Vollkorn', serif !important;
+    font-family: 'PT Serif', serif !important;
 }
 
 .yzecoriolis.sheet.actor .always-visible-stats .perma-stats-list .entry .stat-label {
@@ -373,7 +404,7 @@ form.numenera-recovery h2 {
 }
 
 .yzecoriolis.sheet.actor .sheet-header .char-class {
-    font-family: 'Vollkorn', serif !important;
+    font-family: 'PT Serif', serif !important;
 }
 
 .yzecoriolis.sheet.actor .sheet-body .navigation .nav-link {
@@ -480,11 +511,11 @@ form.numenera-recovery h2 {
 }
 
 .yzecoriolis.sheet.actor .sheet-body .gear-list .gear-category-name {
-    font-size: 13px;
+    font-size: 13px !important;
 }
 
 /* MODULES */
 
 .compendium-browser .spell-browser .spell .spell-tags {
-    max-width: 200px;
+    max-width: 200px !important;
 }
