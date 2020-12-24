@@ -72,7 +72,13 @@ a.inline-roll {
 .dnd5e.sheet.actor .counters .counter h4 {
     font-family: 'Oswald', sans-serif !important;
     font-weight: bold;
-    font-size: 12px !important;
+    font-size: 13px !important;
+}
+
+.dnd5e.sheet .items-list .item-controls a {
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: bold;
+    font-size: 13px !important;
 }
 
 .dnd5e.sheet.actor .inventory-filters h3,
@@ -95,15 +101,18 @@ a.inline-roll {
 .dnd5e.sheet.actor.character ul.skills-list li.skill h4 {
     font-family: 'Oswald', sans-serif !important;
     font-size: 14px !important;
+    overflow: hidden !important;
 }
 
 .dnd5e.sheet.actor.character ul.skills-list {
     font-family: 'Oswald', sans-serif !important;
     font-size: 14px !important;
+    overflow: hidden !important;
 }
 
 .dnd5e label.checkbox {
-    font-size: 10px !important;
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 12px !important;
 }
 
 .dnd5e.sheet .items-list .items-header .item-name {
@@ -180,10 +189,17 @@ a.inline-roll {
     font-size: 13px !important;
 }
 
+.dnd5e.sheet.actor ul.skills-list li.skill h4 {
+    overflow: hidden !important;
+}
+
 .dnd5e.sheet.actor.character .resource .attribute-value label.recharge {
     font-size: 11px !important;
 }
 
+.dnd5e.sheet.actor.character .characteristics label {
+    font-family: "PT Serif", serif !important;
+}
 
 /* TIDY5E */
 
