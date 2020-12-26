@@ -32,17 +32,13 @@ a.inline-roll {
 
 /* DUNGEONS AND DRAGONS 5 */
 
-.dnd5e.sheet .window-content {
-    font-size: 14px;
-}
-
 .dnd5e.sheet .sheet-header .header-details {
     font-family: 'PT Serif', serif !important;
 }
 
 .dnd5e .form-header {
     font-family: 'Oswald', sans-serif !important;
-    font-size: 12px !important;
+    font-size: 13px !important;
 }
 
 .dnd5e.sheet .sheet-header {
@@ -64,6 +60,14 @@ a.inline-roll {
     font-family: 'PT Serif', serif !important;
 }
 
+.dnd5e.sheet.actor .sheet-header .summary input {
+    font-family: 'PT Serif', serif !important;
+}
+
+.dnd5e.sheet.actor .ability-scores .ability {
+    height: 71px !important;
+}
+
 .dnd5e.sheet.actor ul.attributes li.attribute .attribute-footer {
     font-family: 'Oswald', sans-serif !important;
     font-size: 12px !important;
@@ -81,10 +85,36 @@ a.inline-roll {
     font-size: 13px !important;
 }
 
+.dnd5e.sheet .filter-list .filter-item {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.dnd5e.sheet.actor ul.skills-list li.skill h4 {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.dnd5e.sheet.actor .traits label {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 13px !important;
+}
+
+.dnd5e.sheet.actor .spellcasting-ability label, .dnd5e.sheet.actor .spellcasting-ability span {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.dnd5e.sheet.actor .spell-school, .dnd5e.sheet.actor .spell-action, .dnd5e.sheet.actor .spell-target {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 13px !important;
+}
+
+.dnd5e.sheet .items-list .items-header h3 {
+    font-family: 'PT Serif', serif !important;
+}
+
 .dnd5e.sheet.actor .inventory-filters h3,
 .dnd5e.sheet.actor .inventory-filters .filter-title {
     font-family: 'Oswald', sans-serif !important;
-    font-size: 12px !important;
+    font-size: 13px !important;
 }
 
 .dnd5e.sheet.actor h4.box-title {
@@ -189,6 +219,16 @@ a.inline-roll {
     font-size: 13px !important;
 }
 
+.dnd5e.sheet.actor ul.skills-list li.skill .skill-mod {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 13px !important;
+}
+
+.dnd5e.sheet.actor ul.skills-list li.skill .skill-passive {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 13px !important;
+}
+
 .dnd5e.sheet.actor ul.skills-list li.skill h4 {
     overflow: hidden !important;
 }
@@ -199,6 +239,11 @@ a.inline-roll {
 
 .dnd5e.sheet.actor.character .characteristics label {
     font-family: "PT Serif", serif !important;
+}
+
+.dnd5e.sheet.actor.npc .header-exp .cr {
+    font-family: "PT Serif", serif !important;
+    font-size: 20px !important;
 }
 
 /* TIDY5E */
