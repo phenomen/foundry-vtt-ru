@@ -8,6 +8,7 @@
 * Github: https://github.com/Phenomen/foundry-vtt-ru
 * Manifest: https://github.com/Phenomen/foundry-vtt-ru/raw/master/module.json
 
+
 ### Description
 Russian language for Foundry VTT including translation for D&D5, GURPS, OSE, Coriolis, Dungeon World, Savage Worlds, Cypher, Traveler systems, and some modules.
 
