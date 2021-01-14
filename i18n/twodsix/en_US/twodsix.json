@@ -71,9 +71,11 @@
         "DeleteItem": "Delete Item",
         "EditItem": "Edit Item",
         "EditOrRemove": "Edit / Remove",
+        "InvertedSkillRollTooltip": "Rolls a skill check applying no modifier and assumes a difficulty of 8. Shift-clicking shows the skill roll dialog",
         "Level": "Level",
         "Modifier": "Modifier",
         "SkillName": "Skill Name",
+        "SkillRollTooltip": "Shows the skill roll dialog. Shift-clicking rolls a skill check applying no modifier and assumes a difficulty of 8",
         "Total": "Total",
         "Untrained": "Untrained"
       },
@@ -85,7 +87,7 @@
         "Notes": "Notes",
         "Skills": "Skills"
       },
-      "Unknown actor type ": "Unknown actor type ",
+      "UnknownActorType": "Unknown actor type",
       "using": "using"
     },
     "Chat": {
@@ -95,6 +97,13 @@
         "OtherModifiers": "Other modifiers",
         "Type": "Roll type"
       }
+    },
+    "CloseAndCreateNew": "Close and create new",
+    "Copy": "Copy",
+    "Errors": {
+      "NoCharacteristicForRoll": "You tried to perform a characteristics roll without specifying a characteristic",
+      "NoDamageForWeapon": "This weapon has not specified the damage it does",
+      "NoROFForAttack": "Rate of fire must be specified for this attack"
     },
     "Handlebars": {
       "CantShowCharacteristic": "You need to reselect the characteristic for all skills marked with XXX. Sorry..."
@@ -163,7 +172,7 @@
         "damageType": "Damage Type",
         "lawLevel": "Law Level",
         "rangeBand": "Range Band",
-        "rateOfFire": "Rate of Fire",
+        "rateOfFire": "Rate of Fire/Auto X",
         "recoil": "Recoil",
         "weaponType": "Weapon Type"
       }
@@ -177,9 +186,15 @@
         }
       }
     },
+    "Modules": {
+      "compendiumFolders": {
+        "disabled": "Please enable the 'Compendium Folders' module in this world if you intend to use the included compendiums. Or turn off this warning in System Settings.",
+        "missing": "The included compendiums for the various Cepheus variants often use the 'Compendium Folders' module. If you use those, please install the Compendium Folders module in Foundry VTT. Or turn off this warning in System Settings."
+      }
+    },
     "No": "No",
     "Rolls": {
-      "AdjustedDamage": "Damage adjusted by effect:",
+      "AdjustedDamage": "Damage adjusted by effect",
       "Cancel": "Cancel",
       "DamageUsing": "Damage using",
       "Effect": "Effect",
@@ -223,9 +238,21 @@
         "hint": "Leave empty to use default (+/-1). Not currently used.",
         "name": "What bonus/penalty to give per each time increment change in a task."
       },
+      "absoluteCriticalEffectValue": {
+        "hint": "Defaults to 99, which means that effect is ignored.",
+        "name": "What effect is required for a throw to be considered a critical success/failure (i.e. be colored green/red)."
+      },
+      "autofireRulesUsed": {
+        "hint": "Select which variant's auto/burst fire rules should be used.",
+        "name": "Select which variant's auto/burst fire rules should be used."
+      },
       "automateDamageRollOnHit": {
         "hint": "checked=Roll damage, modified by effect of skill roll. unchecked=Don't roll damage.",
         "name": "Automatically roll damage on skill rolls that hit (i.e. get effect > 0) with items that do damage?"
+      },
+      "criticalNaturalAffectsEffect": {
+        "hint": "checked=Regardless of success consider a natural 2 to have an effect of -1 and a 12 to have an effect of 0, unchecked=Use normal rules",
+        "name": "Whether a natural 2 or 12 should have special treatment as regards to success/failure."
       },
       "defaultTokenSettings": {
         "hint": "Automatically set advised prototype token settings to newly created Actors.",
@@ -251,6 +278,10 @@
         "hint": "Like: \"2d6 + @characteristics.dexterity.mod\"",
         "name": "Initiative Formula"
       },
+      "invertSkillRollShiftClick": {
+        "hint": "When clicking on a skill a dialog for the skill roll typically appears. Shift-clicking is a shortcut for rolling without modifiers witth a dificulty of 8. Checking this box swaps this behavior.",
+        "name": "Invert behavior for shift-clicking for skill rolls"
+      },
       "maxSkillLevel": {
         "hint": "Leave empty to use default (9).",
         "name": "Maximum skill level."
@@ -258,6 +289,14 @@
       "modifierForZeroCharacteristic": {
         "hint": "Leave empty to use default (-2). Does not automatically recalculate modifiers for existing characters.",
         "name": "Modifier for characteristic value of zero."
+      },
+      "ruleset": {
+        "hint": "This will configure the below settings with the best options for the given ruleset.",
+        "name": "Ruleset"
+      },
+      "showMissingCompendiumWarnings": {
+        "hint": "Whether to show warnings for missing/disabled modules on world start.",
+        "name": "Show warnings about missing/disabled modules."
       },
       "systemMigrationVersion": {
         "hint": "Records the schema version for the Twodsix system. (Don't modify this unless you know what you are doing)",
