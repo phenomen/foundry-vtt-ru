@@ -1,0 +1,2071 @@
+{
+    "ACTOR": {
+        "TypeCharacter": "Персонаж игрока",
+        "TypeDrone": "Дрон",
+        "TypeHazard": "Угроза",
+        "TypeNpc": "Персонаж ведущего",
+        "TypeVehicle": "Транспорт",
+        "TypeStarship": "Звездолёт"
+    },
+    "ITEM": {
+        "TypeAsi": "Повышение характеристик",
+        "TypeWeapon": "Оружие",
+        "TypeEquipment": "Броня",
+        "TypeConsumable": "Расходник",
+        "TypeGoods": "Товар",
+        "TypeContainer": "Контейнер",
+        "TypeClass": "Класс",
+        "TypeSpell": "Заклинание",
+        "TypeFeat": "Черта",
+        "TypeRace": "Раса",
+        "TypeTheme": "Тема",
+        "TypeTechnological": "Технологический предмет",
+        "TypeHybrid": "Гибридный предмет",
+        "TypeMagic": "Магический предмет",
+        "TypeFusion": "Оружейное сопряжение",
+        "TypeUpgrade": "Улучшение брони",
+        "TypeAugmentation": "Аугментация",
+        "TypeStarshipaction": "Действие экпипажа",
+        "TypeStarshipcomputer": "Бортовой компьютер",
+        "TypeStarshipframe": "Корпус звездолёта",
+        "TypeStarshipweapon": "Бортовое орудие",
+        "TypeArchetypes": "Архетип",
+        "TypeChassis": "Корпус дрона",
+        "TypeMod": "Модуль дрона",
+        "TypeShield": "Щит",
+        "TypeWeaponaccessory": "Улучшение оружия"
+    },
+    "SFRPG": {
+        "AbilityActivationTypesDay": "День",
+        "AbilityActivationTypesFull": "Действие полного хода",
+        "AbilityActivationTypesHour": "Час",
+        "AbilityActivationTypesMinute": "Минута",
+        "AbilityActivationTypesMove": "Сопутствующее действие",
+        "AbilityActivationTypesNone": "-",
+        "AbilityActivationTypesOther": "Прочее действие",
+        "AbilityActivationTypesReaction": "Ответное действие",
+        "AbilityActivationTypesSpecial": "Особое действие",
+        "AbilityActivationTypesStandard": "Основное действие",
+        "AbilityActivationTypesSwift": "Быстрое действие",
+        "AbilityCha": "Харизма",
+        "AbilityCon": "Выносливость",
+        "AbilityDamagePlaceholder": "УРН",
+        "AbilityDamageTitle": "Урон характеристике",
+        "AbilityDamageTooltip": "Урон характеристики: {mod}",
+        "AbilityDex": "Ловкость",
+        "AbilityDrainPlaceholder": "ПТР",
+        "AbilityDrainTitle": "Потеря характеристики",
+        "AbilityDrainTooltip": "Потеря характеристики: {mod}",
+        "AbilityInt": "Интеллект",
+        "AbilityModifierBase": "Модификатор харктеристики: {mod}",
+        "AbilityModifiersTooltip": "{type} Бонус: {mod} ({source})",
+        "AbilityPenaltyPlaceholder": "ШТР",
+        "AbilityPenaltyTitle": "Штраф на характеристику",
+        "AbilityPenaltyTooltip": "Штраф на характеристику: {mod}",
+        "AbilityScoreBase": "Базовое значенеи характеристики",
+        "AbilityScoreBaseTooltip": "Базовое значенеи характеристики: {mod}",
+        "AbilityScoreBonusTooltip": "{type} бонус: {mod} ({source})",
+        "AbilityScoreIncreaseTooltip": "Повышение характеристики: {mod}",
+        "AbilityScoreRaceTooltip": "Раса: {mod}",
+        "AbilityScoreThemeTooltip": "Тема: {mod}",
+        "AbilityStr": "Сила",
+        "AbilityWis": "Мудрость",
+        "ACPTooltip": "Штраф за броню: {mod} ({source})",
+        "ActionAbil": "Проверка характеристики",
+        "ActionHeal": "Лечение",
+        "ActionMSAK": "Атака заклинанием в ближнем бою",
+        "ActionMWAK": "Атака оружием в ближнем бою",
+        "ActionOther": "Прочее",
+        "ActionRSAK": "Дистанционная атака заклинанием",
+        "ActionRWAK": "Дистанционная атака оружием",
+        "ActionSave": "Испытание",
+        "ActionUtil": "Поддержка",
+        "ACTooltipArmorACMod": "Модификатор брони: {armor} ({name})",
+        "ACTooltipBase": "Базовый класс брони: {base}",
+        "ACTooltipBonus": "{type} Бонус: {mod} ({source})",
+        "ACTooltipMaxDex": "Модификатор ловкости: {maxDex} (armor max dex: {armorMax})",
+        "ACTooltipNotProficientMod": "Штраф за отсутствие навыка обращения: {profMod}",
+        "ActorSheet": {
+            "Attributes": {
+                "Skills": {
+                    "SkillRanks": "Пункты навыка"
+                }
+            },
+            "Header": {
+                "CL": "УЗ",
+                "Hitpoints": {
+                    "RacialTooltip": "ПЗ Расы: {mod} ({source})",
+                    "ClassTooltip": "ПЗ Класса: {mod} ({source})"
+                },
+                "Stamina": {
+                    "ConstitutionTooltip": "ПЖ Выносливости: {mod}",
+                    "ClassTooltip": "ПЖ Класса: {mod} ({source})"
+                },
+                "Resolve": {
+                    "LevelTooltip": "ПР Уровня: {mod}",
+                    "KeyAbilityTooltip": "ПР Основной характеристики: {mod} ({kas}, {source})"
+                }
+            },
+            "Inventory": {
+                "Container": {
+                    "AcceptedItemTypes": "Допустимые типы предметов",
+                    "AcceptedItemTypesTooltip": "Этот раздел позволяет установить, какие типы предметов могут храниться в контейнере.",
+                    "AffectsEncumbrance": "Учитывать вес содержимого",
+                    "AffectsEncumbranceTooltip": "Если отключено, вещи внутри контейнера перестают влиять на нагрузку персонажа.",
+                    "AffectsEncumbranceCheckbox": "Вещи в контейнере влияют на нагрузку.",
+                    "CapacityLabelBulk": "Вес",
+                    "CapacityLabelItems": "Предмет(ы)",
+                    "EquippedBulkMultiplier": "Множитель нагрузки при использовании",
+                    "EquippedBulkMultiplierTooltip": "Этот множитель используется для изменения веса предмета при его экипировке.<br/>Если установить его в 0, предмет не будет учитываться в нагрузке персонажа.",
+                    "DetailsHeader": "Описание контейнера",
+                    "Capacity": "Ёмкость",
+                    "CapacityTooltip": "Как много 'ячеек' может вместить данный контейнер.",
+                    "CapacityPropertyItems": "Предметы",
+                    "CapacityPropertySlots": "Ячейки",
+                    "CapacityPropertyLevel": "Уровни",
+                    "CapacityBulk": "Вместимость",
+                    "CapacityBulkTooltip": "Какую массу предметов может вместить данный контейнер.",
+                    "Close": "Закрыть",
+                    "CloseTooltip": "Закрыть список содержимого контейнера.",
+                    "Open": "Открыть",
+                    "OpenTooltip": "Открыть список содержимого контейнера.",
+                    "StorageIdentifier": "Идентификатор хранилища",
+                    "StorageIdentifierTooltip": "Тип предметов, хранимых в данной секции контейнера.",
+                    "StorageIdentifierItem": "Ячейка предмета",
+                    "StorageIdentifierArmorUpgrade": "Ячейка улучшения брони",
+                    "StorageIdentifierWeaponSlot": "Ячейка оружия",
+                    "StorageIdentifierFusion": "Сопряжение",
+                    "StorageIdentifierSpellSlot": "Ячейка заклинания",
+                    "StorageSection": "Секция хранилища {index}",
+                    "StorageSections": "Секция хранилища",
+                    "StorageSectionsAdd": "Добавить новую Секцию хранилища",
+                    "StorageSectionsRemove": "Удалить эту Секцию хранилища",
+                    "StorageType": "Тип хранилища",
+                    "StorageTypeTooltip": "Этот переключатель определяет единицы измерения для хранилища.",
+                    "StorageTypeSlot": "Ячейки",
+                    "StorageTypeBulk": "Вес"
+                },
+                "Encumbrance": {
+                    "Encumbrance": "Нагрузка",
+                    "EncumbranceBaseTooltip": "Базовая нагрузка: {base} (Strength)",
+                    "EncumbranceModifierTooltip": "{type} Бонус: {mod} ({source})"
+                },
+                "Interface": {
+                    "DragFromExternalTokenError": "Невозможно вытащить предметы из токенов персонажей вне активной сцены.",
+                    "DragToExternalTokenError": "Невозможно перетащить предметы на токены персонажей вне активной сцены.",
+                    "ItemCollectionLocked": "Данный контейнер заперт и не открывается.",
+                    "NoTarget": "Не выбран целевой персонаж или токен.",
+                    "DeleteConfirmationTitle": "Удалить '{itemName}'?",
+                    "DeleteConfirmationMessage": "Вы уверены, что хотите удалить '{itemName}'?",
+                    "DeleteConfirmationDeleteChildren": "Также удалить предметы внутри контейнера.",
+                    "AmountToTransferTitle": "Передать предметы",
+                    "AmountToTransferMessage": "Укажите количество предметов, которые хотите передать.",
+                    "AmountToTransferLabel": "Количество",
+                    "AmountToTransferInfo": "Минимум 1, максимум {max}",
+                    "EquipmentEnhancements": "Улучшения для снаряжения",
+                    "SpecialItems"  : "Технологические, магические и гибридные предметы"
+                },
+                "Item": {
+                    "Create": "Создать новый предмет",
+                    "Deactivate": "Отключить",
+                    "Delete": "Удалить",
+                    "Edit": "Изменить",
+                    "Equip": "Снарядить",
+                    "Unequip": "Снять"
+                },
+                "ItemValue": {
+                    "Label": "Стоимость:",
+                    "Tooltip": "Это число представляет суммарную стоимость вещей в инвентаре."
+                },
+                "Weapon": {
+                    "Reload": "Перезарядить"
+                }
+            },
+            "Modifiers": {
+                "ModifierTypes": {
+                    "Class": "Классовый",
+                    "Racial": "Расовый"
+                },
+                "EffectTypes": {
+                    "Hitpoints": "Здоровье",
+                    "HP": "ПЗ",
+                    "Stamina": "Живучесть",
+                    "SP": "ПЖ",
+                    "Resolve": "Решимость",
+                    "RP": "ПР",
+                    "BaseAttackBonus": "Базовый модификатор атаки",
+                    "BAB": "БМА",
+                    "RangedAttackRolls": "Дистанционные атаки",
+                    "MeleeAttackRolls": "Атаки в ближнем бою",
+                    "SpellAttackRolls": "Атаки заклинаниями",
+                    "SpecificWeaponAttackRolls": "Атаки конкретным оружием",
+                    "AllAttackRolls": "Все атаки",
+                    "RangedAttackDamage": "Дистанционный урон",
+                    "MeleeAttackDamage": "Урон в ближнем бою",
+                    "SpellAttackDamage": "Урон заклинанием",
+                    "SpecificWeaponAttackDamage": "Урон конкретным оружием",
+                    "WeaponPropertyDamage": "Урон особого свойства",
+                    "AllAttackDamage": "Урон всех атак",
+                    "Encumbrance": "Нагрузка",
+                    "Skillpoints": "Очки навыков",
+                    "SkillRanks": "Пунктов навыков"
+                },
+                "Tooltips": {
+                    "SkillRank": "{type} Пунктов: {mod} ({source})",
+                    "ClassSkillpoints": "{class} Очков навыков: {total}",
+                    "BonusSkillpoints": "{type} Бонус: {mod} ({source})"
+                },
+                "UI": {
+                    "LongFormula": "Полная формула"
+                }
+            },
+            "Skills": {
+                "RightClickHint": "Нажмите на навык правой кнопкой мыши для доступа к подробному меню."
+            }
+        },
+        "ACvsCombatManeuversLabel": "КББМ",
+        "ACvsCombatManeuversTitle": "КБ против боевых манёвров",
+        "AddLabel": "+",
+        "AddProfessionButtonText": "Добавить профессию",
+        "AlignmentCE": "Хаотичный злой",
+        "AlignmentCG": "Хаотичный добрый",
+        "AlignmentCN": "Хаотичный нейтральный",
+        "AlignmentLE": "Принципиальный злой",
+        "AlignmentLG": "Принципиальный добрый",
+        "AlignmentLN": "Принципиальный нейтральный",
+        "AlignmentNE": "Нейтральный злой",
+        "AlignmentNG": "Нейтральный добрый",
+        "AlignmentPlaceHolderText": "Мировоззрение",
+        "AlignmentTN": "Нейтральный",
+        "AllowedClasses": {
+            "Myst": "Мистик",
+            "Tech": "Техномант",
+            "Wysh": "Меняющий реальность"
+        },
+        "ArchetypesAlternateClassFeatures": "Альтернативные классовые особенности",
+        "ArmorTypes": {
+            "Light": "Легкая броня",
+            "Heavy": "Тяжелая броня",
+            "Power": "Силовая броня"
+        },
+        "ArmorCheckPenalty": "Штраф за броню",
+        "ArmorProficiencyHeavy": "Тяжелая броня",
+        "ArmorProficiencyLight": "Легкая броня",
+        "ArmorProficiencyPower": "Силовая броня",
+        "ArmorProficiencyShields": "Щиты",
+        "Attack": "Атака",
+        "Attributes": "Характеристики",
+        "AugAllArms": "Все руки",
+        "AugAllFeet": "Все ступни",
+        "AugAllHands": "Все кисти",
+        "AugAllLegs": "Все ноги",
+        "AugAllLegsAndFeet": "Все ноги и ступни",
+        "AugArm": "Рука",
+        "AugArmAndHand": "Рука и кисть",
+        "AugBrain": "Мозг",
+        "AugBrainHeartLungs": "Мозг, Сердце, Лёгкое",
+        "AugBrainAndEyes": "Мозг и Глаза",
+        "AugEars": "Уши",
+        "AugEarsAndThroat": "Уши и Горло",
+        "AugEndocrine": "Эндокринная система",
+        "AugEye": "Глаз",
+        "AugEyes": "Глаза",
+        "AugFoot": "Ступня",
+        "AugHand": "Рука",
+        "AugHeart": "Сердце",
+        "AugLeg": "Нога",
+        "AugLegAndFoot": "Нога и ступня",
+        "AugLungs": "Лёгкие",
+        "AugLungsAndThroat": "Легкие и горло",
+        "AugSkin": "Кожа",
+        "AugSkinAndThroat": "Кожа и горло",
+        "AugSpinalColumn": "Позвоночник",
+        "AugThroat": "Горло",
+        "BABProgressionFull": "Полный",
+        "BABProgressionModerate": "Частичный",
+        "BABTooltip": "{class} БМА: {bonus}",
+        "BaseAttackBonusLabel": "БМА",
+        "BaseAttackBonusTitle": "Базовый модификатор атаки",
+        "Biography": "Биография",
+        "Biotech": "Biotech",
+        "Browsers": {
+            "EquipmentBrowser": {
+                "BrowserSortMethodLevel": "Уровень",
+                "Button": "Снаряжение",
+                "EquipmentType": "Тип снаряжения",
+                "ItemType": "Тип предмета",
+                "Title": "Открыть снаряжение",
+                "WeaponCategories": "Категории оружия",
+                "WeaponType": "Тип оружия"
+            },
+            "ItemBrowser": {
+                "BrowserClearFilters": "Очистить фильтры",
+                "BrowserSearchPlaceholder": "Искать..",
+                "BrowserSearchTitle": "Нажмите правой кнопкой мыши для помощи",
+                "BrowserSortByLabel": "Сортировать",
+                "BrowserSortMethodName": "Название",
+                "SearchHint": "Вы можете ввести название предмета, который ищете.",
+                "Title": "Открыть предметы"
+            },
+            "SpellBrowser": {
+                "BrowserFilterClass": "Фильтровать по классу",
+                "BrowserFilterLevel": "Фильтровать по уровню",
+                "BrowserFilterSchool": "Фильтровать по школе",
+                "BrowserSortMethodLevel": "Уровень",
+                "Button": "Заклинания",
+                "Title": "Открыть заклинания"
+            }
+        },
+        "CancelButtonLabel": "Отмена",
+        "Canvas": {
+            "Interface": {
+                "NoTargetTokenForItemDrop": "Не выбран токен, невозможно выбросить предмет!"
+            }
+        },
+        "Capacity": {
+            "UsagePer": {
+                "Action": "Действие",
+                "Day": "День",
+                "Hour": "Час",
+                "Round": "Раунд",
+                "Shot": "Выстрел",        
+                "Minute": "Минута"
+            }
+        },
+        "CapacityUsage": "Ёмкость и Расход",
+        "CharacterFlagsSectionClassFeatures": "Классовые особенности",
+        "CharacterFlagsSectionFeats": "Черты",
+        "CharacterFlagsSectionRacialTraits": "Особенности расы",
+        "CharacterLevelsTooltip": "{class} Уровни: {levels}",
+        "CharacterNamePlaceHolderText": "Имя персонажа",
+        "ChatCard":{
+            "DamageRoll" : "Бросок урона",
+            "HealingRoll": "Бросок лечения",
+            "ItemActivation": {
+                "Activates": "Активация",
+                "Cost": "Стоимость: {cost}",
+                "Deactivates": "Деактивация",
+                "Duration": "Длительность: {duration}",
+                "Reloads": "Перезарядка"
+            }
+        },
+        "ClassArmorProf": "Ношение брони",
+        "ClassBABProgression": "Прогрессия БМА",
+        "ClassFortSaveProgression": "Прогрессия стойкости",
+        "ClassHPPerLevel": "ПЗ за уровень",
+        "ClassKeyAbilityScore": "Ключевая характеристика",
+        "ClassLevelLabel": "Уровни класса",
+        "ClassReflexSaveProgression": "Прогрессия рефлексов",
+        "ClassSkillRanksPerlevel": "Пунктов навыков за уровень",
+        "ClassSkills": "Классовые навыки",
+        "ClassSPPerlevel": "Пунктов живучести за уровень",
+        "ClassWeaponProf": "Обращение с оружием",
+        "ClassWillSaveProgression": "Прогрессия воли",
+        "Close": "Закрыть",
+        "CMDBaseTooltip": "Базовый: 8",
+        "CMDKACModTooltip": "ККБ: {kac}",
+        "CMDModiferTooltip": "{type} Бонус: {mod} ({source})",
+        "Combat": {
+            "ChatCards": {
+                "Footer": "{combatType} - {combatPhase} фаза",
+                "Phase": {
+                    "Header": "{phase} Фаза",
+                    "MessageTitle": "Описание"
+                },
+                "Round": {
+                    "Header": "Раунд {round}",
+                    "BodyHeader": "Новый раунд"
+                },
+                "Speaker": {
+                    "GM": "Мастер"
+                },
+                "Turn": {
+                    "Header": "Действует {combatant}"
+                }
+            },
+            "EncounterTracker": {
+                "SelectNextType": "Переключиться на следующий тип боя",
+                "SelectPrevType": "Переключиться на предыдущий тип боя"
+            },
+            "Errors": {
+                "HistoryLimitedResetInitiative": "Инициатива была сброшена на этой фазе, невозможно вернуться к прошлому ходу.<br/><br/>Нажмите, чтобы закрыть.",
+                "HistoryLimitedStartOfEncounter": "Вы достигли начала боя, невозможно вернуться к прошлому ходу.<br/><br/>Нажмите, чтобы закрыть.",
+                "MissingInitiative": "На этой фазе инициатива сбрасывается, пожалуйста, бросьте инициативу повторно для продолжения.<br/><br/>Нажмите, чтобы закрыть."
+            },
+            "Normal": {
+                "Name": "Нормальный бой",
+                "Phases": {
+                    "1": {
+                        "Name": "Бой",
+                        "Description": "Теперь каждый может действовать на своём ходу."
+                    }
+                }
+            },
+            "Starship": {
+                "Name": "Космический бой",
+                "Phases": {
+                    "1": {
+                        "Name": "Смена ролей",
+                        "Description": "Каждый может изменить свою текущую роль в экипаже."
+                    },
+                    "2": {
+                        "Name": "Ремонт",
+                        "Description": "Капитаны, Бортинженеры, Офицеры по магии, Старпомы могут действовать."
+                    },
+                    "3": {
+                        "Name": "Проверка пилотирования",
+                        "Description": "Пилоты бросают проверку пилотирования для определения инициативы."
+                    },
+                    "4": {
+                        "Name": "Командование",
+                        "Description": "Капитаны, Пилоты, Офицеры по науке и старпомы могут действовать."
+                    },
+                    "5": {
+                        "Name": "Стрельба",
+                        "Description": "Капитаны и Бортстрелки могут действовать."
+                    },
+                    "6": {
+                        "Name": "Урон",
+                        "Description": "Выполняется оценка полученного всеми урона."
+                    }
+                }
+            },
+            "VehicleChase": {
+                "Name": "Транспортная погоня",
+                "Phases": {
+                    "1": {
+                        "Name": "Транспортные манёвры",
+                        "Description": "Водители выбирают манёвры и совершают необходимые проверки."
+                    },
+                    "2": {
+                        "Name": "Развитие событий",
+                        "Description": "Мастер перемещает ТС между зонами в зависимости от успешности манёвров."
+                    },
+                    "3": {
+                        "Name": "Бой",
+                        "Description": "Все действуют в рамках инициативы как в обычном бою."
+                    }
+                }
+            }
+        },
+        "ComingSoon": "Coming soon!",
+        "ConditionsAsleep": "Сон",
+        "ConditionsBleeding": "Кровотечение",
+        "ConditionsBlinded": "Слепота",
+        "ConditionsBroken": "Сломан (только предметы)",
+        "ConditionsBurning": "Горение",
+        "ConditionsConfused": "Замешательство",
+        "ConditionsCowering": "Оцепенение",
+        "ConditionsDazed": "Ступор",
+        "ConditionsDazzled": "Растерянность",
+        "ConditionsDead": "Смерть",
+        "ConditionsDeafened": "Глухота",
+        "ConditionsDying": "При смерти",
+        "ConditionsEncumbered": "Нагруженность",
+        "ConditionsEntangled": "Опутывание",
+        "ConditionsExhausted": "Бессилие",
+        "ConditionsFascinated": "Завороженность",
+        "ConditionsFatigued": "Утомление",
+        "ConditionsFlatFooted": "Застигнут врасплох",
+        "ConditionsFrightened": "Испуг",
+        "ConditionsGrappled": "Захват",
+        "ConditionsHelpless": "Беспомощность",
+        "ConditionsNauseated": "Тошнота",
+        "ConditionsOffKilter": "Неконтролируемое вращение",
+        "ConditionsOffTarget": "Сбит с цели",
+        "ConditionsOverburdened": "Перегруженность",
+        "ConditionsPanicked": "Паника",
+        "ConditionsParalyzed": "Паралич",
+        "ConditionsPinned": "Обездвиживание",
+        "ConditionsProne": "Распластанность",
+        "ConditionsShaken": "Потрясение",
+        "ConditionsSickened": "Дезориентация",
+        "ConditionsStable": "Стабильное состояние",
+        "ConditionsStaggered": "Ошеломление",
+        "ConditionsStunned": "Шок",
+        "ConditionsUnconscious": "Без сознания",
+        "ConImm": "Иммунитет к состояниям",
+        "ConsumableTypes": {
+            "Serum"    : "Сыворотки",
+            "Ampoule"  : "Ампулы заклинаний",
+            "SpellGem" : "Камни чар",
+            "Drugs"    : "Наркотики",
+            "Medicine" : "Лекарства",
+            "Poison"   : "Яды",
+            "FoodDrink": "Еда и напитки"
+        },
+        "CounterClassesAddButton":"+1",
+        "CounterClassesCurrentCount":"Всего очков:",
+        "CounterClassesCurrentPositionLabel":"Текущее состояние:",
+        "CounterClassesKiSoldier":"Очки Ки",
+        "CounterClassesManagementTitle":"Панель управления:",
+        "CounterClassesManagementWindowsTitles":"Окно управления счётчиками класса",
+        "CounterClassesRemoveButton":"-1",
+        "CounterClassesSolarian":"Звёздный режим",
+        "CounterClassesSolarianGraviton":"Гравитонный",
+        "CounterClassesSolarianPhoton":"Фотонный",
+        "CounterClassesSolarianUnaligned":"Нейтральный",
+        "CounterClassesVanguard":"Очки энтропии",
+        "Credits": "Кредиты",
+        "Cybernetic": "Кибернетика",
+        "Damage": "Урон",
+        "DamageReduction": "Снижение урона",
+        "DamageTypesAcid": "Кислота",
+        "DamageTypesAcidAndBludgeoning": "Кислота и Дробящий",
+        "DamageTypesAcidAndElectricity": "Кислота и Электричество",
+        "DamageTypesAcidAndFire": "Кислота и огонь",
+        "DamageTypesAcidAndPiercing": "Кислота и Колющий",
+        "DamageTypesAcidAndSlashing": "Кислота и Режущий",
+        "DamageTypesAcidOrFire": "Кислота | Огонь",
+        "DamageTypesAcidOrSlashing": "Кислота | Режущий",
+        "DamageTypesBludgeoning": "Дробящий",
+        "DamageTypesBludgeoningAndCold": "Дробящий и Холод",
+        "DamageTypesBludgeoningAndElectricity": "Дробящий и Электричество",
+        "DamageTypesBludgeoningAndFire": "Дробящий и Огонь",
+        "DamageTypesBludgeoningAndSonic": "Дробящий и Звук",
+        "DamageTypesCold": "Холод",
+        "DamageTypesColdAndPiercing": "Холод и Колющий",
+        "DamageTypesColdOrFire": "Холод | Огонь",
+        "DamageTypesElectricity": "Электр-во",
+        "DamageTypesElectricityAndFire": "Электричество и Огонь",
+        "DamageTypesElectricityAndPiercing": "Электричество и Колющий",
+        "DamageTypesElectricityAndSlashing": "Электричество и Режущий",
+        "DamageTypesFire": "Огонь",
+        "DamageTypesFireAndPiercing": "Огонь и Колющий",
+        "DamageTypesFireAndSlashing": "Огонь и Режущий",
+        "DamageTypesFireOrSlashing": "Огонь | Режущий",
+        "DamageTypesFireOrSonic": "Огонь | Звук",
+        "DamageTypesForce": "Сила",
+        "DamageTypesPiercing": "Колющий",
+        "DamageTypesPiercingAndSonic": "Колющий и Звук",
+        "DamageTypesRadiation": "Радиация",
+        "DamageTypesSlashing": "Режущий",
+        "DamageTypesSlashingAndPiercing": "Режущий и Колющий",
+        "DamageTypesSlashingAndSonic": "Режущий и Звук",
+        "DamageTypesSonic": "Звук",
+        "DamageTypesNonlethal": "Нелетальный",
+        "DamImm": "Иммунитет к урону",
+        "DamRes": "Устойчивость к энергии",
+        "DamVuln": "Уязвимость к урону",
+        "Description": "Описание",
+        "Details": "Подробности",
+        "Dialogs": {
+            "InputDialog": {
+                "SingleFieldInvalid": "Неверно введены данные {fieldName}.",
+                "MultipleFieldsInvalid": "Неверно введены данные в следующие поля:<br/>{fieldNames}"
+            }
+        },
+        "DistAny": "Любая",
+        "DroneSheet": {
+            "Chassis": {
+                "Missing": "Отсутствует корпус",
+                "NotInstalled": "Корпус не установлен.",
+                "Details": {
+                    "AbilityScores": {
+                        "Dexterity": "Базовая ловкость",
+                        "Header": "Характеристики",
+                        "Increases": "Увеличение характеристик",
+                        "Strength": "Базовая сила",
+                        "Wisdom": "Базовая мудрость"
+                    },
+                    "BaseStatistics": {
+                        "Header": "Базовые показатели",
+                        "MechanicLevel": "Уровень механика",
+                        "Size": "Размер",
+                        "SpeedBase": "Скорость, Базовая (Числом, в футах)",
+                        "SpeedSpecial": "Скорость, Особая"
+                    },
+                    "Defense": {
+                        "EAC": "Базовый ЭКБ",
+                        "Header": "Защита",
+                        "KAC": "Базовый ККБ"
+                    },
+                    "Saves": {
+                        "Fortitude": "Стойкость",
+                        "Header": "Испытания",
+                        "Reflex": "Рефлекс",
+                        "Will": "Воля"
+                    }
+                },
+                "Name": {
+                    "Placeholder": "Название корпуса"
+                },
+                "Source": "Источник",
+                "SourceTooltip": "Откуда взят корпус? Какая книга? Страница?"
+            },
+            "Details": {
+                "Speed": {
+                    "SpecialPlaceholder": "Отсутствуют дополнительные виды скорости"
+                }
+            },
+            "Features": {
+                "Chassis": "Корпус",
+                "Feats": {
+                    "Active": "Активные черты",
+                    "Header": "Черты (Количество: {current} из {max})",
+                    "Passive": "Пассивные черты"
+                },
+                "Mods": "Модули (Количество: {current} из {max})",
+                "ModsFree": "Встроенные модули"
+            },
+            "Header": {
+                "Actions": {
+                    "Header": "Действия",
+                    "Repair": "Ремонт"
+                },
+                "Defense": "Защита",
+                "Owner": "Владелец"
+            },
+            "Inventory": {
+                "ArmorUpgrades": "Улучшения брони (Использовано {current} из {max} слотов брони)",
+                "CarriedItems": "Носимые предметы",
+                "Weapons": {
+                    "Both": "Оружие (Установленное оружие: Ближнего боя {meleeCurrent} из {meleeMax}, Дистанционное {rangedCurrent} из {rangedMax})",
+                    "MeleeOnly": "Оружие (Установленное оружие: Ближнего боя {meleeCurrent} из {meleeMax})",
+                    "None": "Оружие",
+                    "RangedOnly": "Оружие (Установленное оружие: Дистанционное {rangedCurrent} из {rangedMax})"
+                }
+            },
+            "Mod": {
+                "Details": {
+                    "Arms": {
+                        "Amount": "Количество рук",
+                        "ArmType": {
+                            "General": "Манипуляторы",
+                            "Label": "Тип руки",
+                            "Melee": "Для оружия ближнего боя",
+                            "Ranged": "Для стрелкового оружия"
+                        },
+                        "Header": "Прочие эффекты"
+                    },
+                    "BaseStatistics": {
+                        "FreeInstall": "Встроенная модификация",
+                        "FreeInstallLabel": "Не учитывать модификацию при расчёте максимального числа",
+                        "Header": "Базовые показатели",
+                        "MaxInstalls": "Максимальное число копий"
+                    },
+                    "OtherEffects": {
+                        "AdditionalSenses": "Дополнительный сенсор",
+                        "ArmorSlot": "Место под улучшения брони",
+                        "BonusSkill": "Модуль навыка",
+                        "Header": "Прочие эффекты",
+                        "SpeedSpecial": "Дополнительный способ движения",
+                        "WeaponProficiency": "Обращение с оружием"
+                    }
+                },
+                "Name": {
+                    "Placeholder": "Название модуля"
+                },
+                "Source": "Источник",
+                "SourceTooltip": "Откуда вы взяли этот модуль? Какая книга? Страница?"
+            },
+            "Skills": {
+                "NoSkillsAvailable": "У этого дрона нет доступных навыков."
+            },
+            "Traits": {
+                "ArmorSlots": "Улучшений брони",
+                "GeneralPurposeArms": "Рук общего назначения",
+                "MeleeWeaponMounts": "Рук для оружия ближнего боя",
+                "RangedWeaponMounts": "Рук для стрелкового оружия"
+            }
+        },
+        "EnergyArmorClass": "ЭКБ",
+        "FeatTypes": {
+            "General": "Общие черты",
+            "Combat" : "Боевые черты"
+        },
+        "Features": "Особенности",
+        "FeaturesAdd": "Добавить",
+        "FeaturesFilter": "Фильтр",
+        "FeaturesUsage": "Использование",
+        "FeaturesCharges": "Осталось",
+        "FlagDeprecationNotice": "<strong>NOTE:</strong> These values are being replaced by the new modifiers system and will be removed in a future update. It is recommended that you uncheck any of these values and add them as a modifer on the Modifiers tab.",
+        "FlagsInstructions": "Configure character features and traits which fine-tune behaviors of the Starfinder system.",
+        "FlagsSave": "Update Special Traits",
+        "FlagsTitle": "Configure Special Traits",
+        "FortitudeSave": "Стойкость",
+        "Ft": "фт",
+        "GreatFortitudeHint": "Черта персонажа, которая повышает испытание стойкости на 2",
+        "GreatFortitudeLabel": "Внушительная стойкость",
+        "HazardSheet": {
+            "Details": {
+                "Attributes": {
+                    "Bypass": "Обход",
+                    "BypassTooltip": "(Опционально) В некоторые ловушки встраивается способ обхода, позволяющий создателю или другим персонажам временно её выключить.",
+                    "Duration": "Длительность",
+                    "DurationTooltip": "(Опционально) Если ловушка действует не мгновенно, здесь указывается длительность её эффектов. Подобные ловушки действуют несколько раундов - эффект происходит на соответствующем значении инициативы.",
+                    "Header": "Характеристики",
+                    "Initiative": "Инициатива",
+                    "InitiativeTooltip": "(Опционально) Для некоторых ловушек нужно совершить проверку инициативы, чтобы понимать, когда они срабатывают в течение раунда.",
+                    "Reset": "Перезарядка",
+                    "ResetPlaceholder": "Нет, Вручную, 1 минута, и т.д.",
+                    "ResetTooltip": "Время, необходимое для автоматической перезарядки ловушки.",
+                    "Trigger": "Условие",
+                    "TriggerPlaceholder": "Местоположение, Приближение, Касание, и т.д.",
+                    "TriggerTooltip": "Условие срабатывания ловушки. Если не указано иное, ловушка не срабатывает на существ менее Маленького."
+                },
+                "DCs": {
+                    "Disable": "Обезвреживание",
+                    "DisableTooltip": "СЛ обезвреживания ловушки при помощи указанного навыка или навыков.",
+                    "Header": "СЛ",
+                    "Notice": "Внимание",
+                    "NoticePlaceholder": "напр. Внимание СЛ 10",
+                    "NoticeTooltip": "СЛ проверки Внимания для обнаружения ловушки."
+                },
+                "Effects": {
+                    "Effect": "Эффекты",
+                    "EffectTooltip": "Эффектом ловушки называется то, что происходит с попавшими в неё. Обычно это атака, урон или эффект залинания, но возможно и что-то более экзотическое.",
+                    "Header": "Эффекты"
+                },
+                "Vitals": {
+                    "Defenses": {
+                        "EAC": "ЭКБ",
+                        "EACTooltip": "Если механические части ловушки можно атаковать, эти значения помогут вам определить, насколько просто по ним попасть.",
+                        "Hardness": "Твёрдость",
+                        "HardnessTooltip": "Твёрдость ловушек зависит от материала, из которого они сделаны.",
+                        "Header": "Оборона",
+                        "Hitpoints": "ПЗ",
+                        "HitpointsTooltip": "В этом разделе указзываются ПЗ частей ловушки, которые можно повредить. Когда ПЗ ловушки опускаются до 0, она уничтожается, но при этом может сработать - например, взорваться. Если не указано иное, ловушка обладает всеми невосприимчивостями предметов. ПЖ у ловушек не бывает.",
+                        "KAC": "ККБ",
+                        "KACTooltip": "Если механические части ловушки можно атаковать, эти значения помогут вам определить, насколько просто по ним попасть."
+                    },
+                    "Offense": {
+                        "Attack": "Атака",
+                        "AttackTooltip": "(Опционально) Модификатор атак ловушки, если она совершает непосредственные атаки по целям.",
+                        "Damage": "Урон",
+                        "DamageTooltip": "(Опционально) Средний урон ловушки, если она совершает непосредственные атаки по целям. Урон можно снизить, если ловушка атакует несколько раз или действует на несколько целей одновременно.",
+                        "Header": "Нападение"
+                    },
+                    "Saves": {
+                        "Fortitude": "Испытание стойкости",
+                        "FortitudeTooltip": "Если персонаж применяет на ловушку какую-то из своих способностей, которые действуют на предметы, используйте указанное значение в качестве модификатора испытания Стойкости.",
+                        "Header": "Испытания",
+                        "Reflex": "Испытание рефлекса",
+                        "ReflexTooltip": "Если персонаж применяет на ловушку какую-то из своих способностей, которые действуют на предметы, используйте указанное значение в качестве модификатора испытания Рефлекса.",
+                        "Will": "Испытание воли",
+                        "WillTooltip": "Ловушки обычно не проходят испытаний Воли, но если это всё-таки необходимо, испытание Воли считается сложным."
+                    }
+                }
+            },
+            "Header": {
+                "NamePlaceholder": "Название угрозы",
+                "SourcePlaceholder": "Источник",
+                "TypePlaceholder": "Аналоговая, Магическая, Технологическая, Гибридная"
+            },
+            "Notifications": {
+                "NoDamage": "Не указано значение урона, невозможно совершить бросок: {name}."
+            },
+            "Rolls": {
+                "Attack": "Атака - {name}",
+                "Damage": "Урон - {name}",
+                "Fortitude": "Испытание стойкости - {name}",
+                "Reflex": "Испытания рефлекса - {name}",
+                "Will": "Испытание воли - {name}"
+            },
+            "Tabs": {
+                "Vitals": "Показатели"
+            }
+        },
+        "HealingTypesHealing": "Лечение",
+        "Health": "ПЗ",
+        "HullPoints": "Пункты корпуса",
+        "ImprovedInitiativeHint": "Черта персонажа, которая повышает инициативу на 4",
+        "ImprovedInitiativeLabel": "Улучшенная инициатива",
+        "InitiativeDexModTooltip": "Модификатор ловкости: {mod}",
+        "InitiativeLabel": "Инициатива",
+        "InitiativeModiferLabel": "Мод",
+        "InitiativeModiferTooltip": "{type} Бонус: {mod} ({source})",
+        "InvalidStarshipItem": "{name} неподходящий предмет для космотлёта.",
+        "Inventory": "Инвентарь",
+        "InventoryAdd": "Добавить",
+        "InventoryBulk": "Вес",
+        "InventoryCapacity": "Ёмкость",
+        "InventoryCurrency": "Стоимость",
+        "InventoryEquipped": "Экипировано",
+        "InventoryUsage": "Использовано",
+        "IronWillHint": "Черта персонажа, которая повышает испытания Воли на 2",
+        "IronWillLabel": "Стальная воля",
+        "ItemCollectionSheet": {
+            "ItemCollectionLocked": "Данный контейнер заперт и не открывается.",
+            "Settings": {
+                "Header": "Настройки мастера:",
+                "Locked": "Заперт",
+                "LockedTooltip": "<strong>Заперт</strong><br/>Запертый контейнер недоступен для открытия игроками.",
+                "DeleteIfEmpty": "Удалить при опустошении",
+                "DeleteIfEmptyTooltip": "<strong>Удалить при опустошении</strong><br/>Необходимо ли удалить контейнер после того, как из него достанут последний предмет?"
+            }
+        },
+        "ItemNoUses": "{name} полностью разряжен!",
+        "Items": {
+            "ACP"            : "Штраф за броню",
+            "Attuned"        : "Настроено",
+            "EquipmentStatus": "Статус снаряжения",
+            "EquipmentUsage" : "Использование снаряжения",
+            "Equipped"       : "Экипировано",
+            "Identified"     : "Опознано",
+            "MaxDex"         : "Макс.Лвк",
+            "Proficient"     : "Обращение",
+            "Unlimited"      : "Неограничено",
+            "Action": {
+                "ActionType"            : "Тип действия",
+                "AbilityModifier"       : "Модификатор характеристики",
+                "AttackRollBonus"       : "Бонус атаки",
+                "DamageFormula"         : "Формула урона",
+                "HealingFormula"        : "Формула лечения",
+                "CriticalEffect"        : "Критический эффект",
+                "CriticalDamageFormula" : "Формула критического урона",
+                "CriticalHealingFormula": "Формула критического лечения",
+                "OtherFormula"          : "Другие формулы",
+                "SavingThrow"           : "Испытание",
+                "ChatMessageFlavor"     : "Описание в чате"
+            },
+            "Activation": {
+                "ActivationCost"     : "Стоимость активации",
+                "ActivationCondition": "Условие активации",
+                "Target"             : "Цель",
+                "Area"               : "Область",
+                "Range"              : "Дистанция",
+                "Duration"           : "Длительность",
+                "LimitedUses"        : "Ограничение использования"
+            },
+            "Augmentation": {
+                "Details": "Описание аугментации",
+                "Type"   : "Тип",
+                "System" : "Система"
+            },
+            "Capacity": {
+                "Capacity"            : "Ёмкость",
+                "CapacityValueTooltip": "Текущее число зарядов",
+                "CapacityMaxTooltip"  : "Масимальное число зарядов",
+                "HeaderTooltip"       : "Число снарядов, зарядов и пр. вмещаемого обоймой (либо ёмкость батареи)",
+                "Usage"               : "Расход",
+                "UsageTooltip"        : "Число снарядов, зарядов и пр. потребляемых при использовании.",
+                "UsageValueTooltip"   : "Период, за который расходуются заряды."
+            },
+            "Categories": {
+                "AbilityScoreIncrease": "Повышения характеристик",
+                "Archetypes"          : "Архетипы",
+                "Armor"               : "Броня",
+                "ArmorUpgrades"       : "Улучшения брони",
+                "Augmentations"       : "Аугментации",
+                "DroneChassis"        : "Корпуса дронов",
+                "DroneMods"           : "Модули дронов",
+                "Classes"             : "Классы",
+                "Consumables"         : "Расходники",
+                "Containers"          : "Контейнеры",
+                "Equipment"           : "Снаряжение",
+                "Feats"               : "Черты",
+                "Goods"               : "Товары",
+                "HybridItems"         : "Гибридные",
+                "MagicItems"          : "Магические",
+                "MiscellaneousItems"  : "Прочие",
+                "Races"               : "Расы",
+                "Shields"             : "Щиты",
+                "Spells"              : "Заклинания",
+                "StarshipComputers"   : "Бортовые компьютеры",
+                "StarshipFrames"      : "Корпуса звездолётов",
+                "StarshipWeapons"     : "Бортовые орудия",
+                "TechnologicalItems"  : "Технологические",
+                "Themes"              : "Темы",
+                "Weapons"             : "Оружие",
+                "WeaponFusions"       : "Сопряжения",
+                "WeaponAccessories"   : "Улучшения оружия"
+            },
+            "Consumable": {
+                "Type"            : "Тип",
+                "Usage"           : "Использование",
+                "OnUse"           : "Расход",
+                "DestroyWhenEmpty": "Уничтожить при опустошении",
+                "Action"          : "Действие для использования"
+            },
+            "Description": {
+                "Quantity": "Количество",
+                "Bulk"    : "Вес",
+                "Price"   : "Цена",
+                "Level"   : "Уровень",
+                "Hands"   : "Рук"
+            },
+            "Equipment": {
+                "Category"         : "Тип брони",
+                "ContainerTooltip" : "Броня как правило может содержать улучшения и другие предметы. Увеличьте ёмкость хранилища для их добавления.",
+                "EAC"              : "Энергетический класс брони",
+                "KAC"              : "Кинетический класс брони",
+                "SpeedAdjustment"  : "Скорость",
+                "PowerArmorDetails": "Описание силовой брони",
+                "Action"           : "Действие"
+            },
+            "Feat": {
+                "Requirements"  : "Требования",
+                "FeatureUsage"  : "Использование особенности",
+                "ActionRecharge": "Перезарядка",
+                "RechargeOn"    : "Перезаряжается при",
+                "Charged"       : "Заряжена",
+                "FeatureAttack" : "Эффект особенности"
+            },
+            "Hybrid": {
+                "Details": "Описание гибридного предмета"
+            },
+            "Magic": {
+                "Details": "Описание магического предмета"
+            },
+            "Shield": {
+                "Action" : "Эффект использования",
+                "Aligned": "Поднят",
+                "Bonus"  : "Бонус щита",
+                "Details": "Описание щита",
+                "Wielded": "Снаряжен"
+            },
+            "ShipWeapon": {
+                "ItemType"    : "Бортовое орудие",
+                "Source"      : "Источник",
+                "Mounted"     : "Смонтировано",
+                "Activated"   : "Активировано",
+                "WeaponArc"   : "Зона поражения",
+                "WeaponClass" : "Класс орудия",
+                "WeaponStatus": "Статус орудия",
+                "PowerCost"   : "Потребление энергии",
+                "BpCost"      : "Стоимость ПС",
+                "Range"       : "Дистанция",
+                "AttackBonus" : "Бонус атаки"
+            },
+            "Spell": {
+                "Details"              : "Описание заклинания",
+                "AllowedClasses"       : "Доступные классы",
+                "Level"                : "Круг заклинания",
+                "School"               : "Школа заклинания",
+                "Properties"           : "Параметры заклинания",
+                "Resistance"           : "Устойчивость к магии",
+                "Dismissible"          : "Прекращаемое",
+                "Concentration"        : "Концентрация",
+                "SpellcastingMaterials": "Материалы",
+                "Supply"               : "Количество",
+                "Cost"                 : "Стоимость (Кр)",
+                "Consumed"             : "Потребляются",
+                "PreparationMode"      : "Способ подготовки",
+                "Prepared"             : "Подготовлено",
+                "Casting"              : "Сотворение заклинания",
+                "Effects"              : "Эффекты заклинания"
+            },
+            "Technological": {
+                "Details": "Описание технологического предмета"
+            },
+            "Theme": {
+                "Details"          : "Описание темы",
+                "AbilityAdjustment": "Модификатор характеристики",
+                "Skill"            : "Навык"
+            },
+            "Upgrade": {
+                "ArmorUpgradeDetails": "Описание улучшения брони",
+                "Slots"              : "Места",
+                "AllowedArmorType"   : "Тип брони",
+                "Any"                : "Любая"
+            },
+            "Weapon": {
+                "Details"   : "Подробности",
+                "Type"      : "Тип оружия",
+                "Category"  : "Категория оружия",
+                "Properties": "Особые свойства",
+                "Usage"     : "Использование",
+                "Attack"    : "Атака"
+            },
+            "WeaponAccessory": {
+                "SupportedType": {
+                    "Any": "Любое",
+                    "HeavyWeapon": "Тяжёлое оружие",
+                    "MeleeWeapon": "Оружие ближнего боя",
+                    "Projectile": "Снаряд",
+                    "RailedWeapon": "Обвешиваемое оружие",
+                    "SmallArm": "Короткоствол"
+                }
+            }
+        },
+        "ItemSheet": {
+            "AbilityScoreIncrease": {
+                "Header": "Улучшения характеристик",
+                "Label": "Характристики",
+                "Instruction": "* Выберите 4 характеристики для повышения.",
+                "ItemName": "Повышение характеристик: Уровень {level}"
+            },
+            "Consumables": {
+                "Category": "Тип расходников"
+            },
+            "Containers": {
+                "ContainerTooltip": "Контейнеры могут содержать любые предметы. Увеличьте вместимость контейнера для добавления в него предметов."
+            },
+            "Header": {
+                "ArmorClass": "Класс брони",
+                "ArmorClassTooltip": "<strong>Класс брони</strong><br/>Класс брони предмета, оставленного бесхозным. Если предмет находится в руках персонажа или надет на него, используется больший из классов брони предмета или владельца.",
+                "DetailsHeader": "Подробности снаряжения",
+                "Hardness": "Твёрдость",
+                "HardnessTooltip": "<strong>Твёрдость</strong><br/>При любом повреждении значение твёрдости вычитается из наносимого урона.",
+                "Hitpoints": "ПЗ",
+                "HitpointsTooltip": "<strong>ПЗ</strong><br/>Количество пунктов здоровья предмета.<br/>Предмет считается 'сломанным' если он получает урон.<br/>Предмет считается 'уничтоженным' когда его ПЗ падают до 0.",
+                "ItemName": "Название",
+                "ItemNameTooltip": "<strong>Название предмета</strong><br/>Имя, данное предмету.",
+                "Requirements": "Требования",
+                "Save": "Испытания",
+                "SaveTooltip": "<strong>Испытания</strong><br/>Формула: {formula}<br/>Это модификатор испытаний предмета, оставленного бесхозным. Если предмет находится в распоряжении персонажа, эффекты не воздействуют на него, если описание эффекта прямо на это не указывает. В этом случае предмет использует больший из модификаторов предмета или владельца.",
+                "Source": "Источник",
+                "SourceTooltip": "<strong>Источник</strong><br/><em>Используется для указания ссылки на книгу с описанием предмета</em>",
+                "Subtype": "Подтип",
+                "Type": "Тип"
+            },
+            "PhysicalProperties": {
+                "ArmorClass": "Класс брони",
+                "ArmorClassTooltip": "<strong>Класс брони</strong><br/>Класс брони предмета, оставленного бесхозным. Если предмет находится в руках персонажа или надет на него, используется больший из классов брони предмета или владельца.",
+                "CustomBuilt": "Собственноручно созданный",
+                "CustomBuiltTooltip": "Было ли данное снаряжение сделано персонажем или произведено массово?",
+                "DexterityModifier": "Модификатор ловкости",
+                "DexterityModifierTooltip": "Изначально, модификатор ловкости предметов равен -5.",
+                "Hardness": "Твёрдость",
+                "HardnessTooltip": "<strong>Твёрдость</strong><br/>При любом повреждении значение твёрдости вычитается из наносимого урона.",
+                "Header": "Физические характеристики",
+                "Hitpoints": {
+                    "CurrentTooltip": "Количество пунктов здоровья предмета.",
+                    "Header": "ПЗ",
+                    "HeaderTooltip": "<strong>ПЗ</strong><br/>Количество пунктов здоровья предмета.<br/>Предмет считается 'сломаннным' если он получил урон.<br/>Предмет считается 'уничтоженным' когда его ПЗ опускаются до 0.",
+                    "MaxTooltip": "Максимальное число ПЗ, которое может быть у предмета. Оставьте пустым для автоматических расчётов."
+                },
+                "ItemDescriptor": "Физические параметры",
+                "Size": "Размер",
+                "SizeTooltip": "По умолчанию предметы считаются среднего размера. Размеры предмета изменяют его КБ.",
+                "Sturdy": "Крепкий",
+                "SturdyTooltip": "Снаряжение, такое как оружие и броня, считается крепким."
+            },
+            "StarshipComponent": {
+                "Cost": "Стоимость (В ПС)",
+                "CostTooltip": "Количество пунктов сборки, требуемых для установки данного компонента.",
+                "Header": "Общие свойства",
+                "PCU": "Использование ЕМ",
+                "PCUTooltip": "Энергия (в единицах мощности) расходуемая при активном модуле."
+            },
+            "StarshipComputer": {
+                "Header": "Свойства бортового компьютера",
+                "Modifier": "Бонус",
+                "ModifierTooltip": "Бонус к броскам, предоставляемый компьютером.",
+                "Nodes": "Узлы",
+                "NodesTooltip": "Количество раз за раунд, которое компьютер может предоставлять бонус."
+            },
+            "StarshipFrame": {
+                "Details": {
+                    "Cost": "Стоимость (В ПС)",
+                    "CostTooltip": "Количество пунктов сборки, требуемых для приобретения этого корпуса.",
+                    "CrewMinimum": "Минимальный экипаж",
+                    "CrewMinimumTooltip": "Минимальный экипаж, необходимый для управления звездолётом на базе этого корпуса.",
+                    "CrewMaximum": "Максимальный экипаж",
+                    "CrewMaximumTooltip": "Максимальное число людей, которые могут исполнять в бою роли экипажа звездолёта построенного на базе этого корпуса.",
+                    "DamageThreshold": "Предел прочности (ПП)",
+                    "DamageThresholdTooltip": "Если урон от атаки меньше или равен указанному значению, он не вычитается из ПЗ. Если урон от атаки больше указанного значения, он вычитается из ПЗ в полном объёме. Действует только после пробивания щитов.",
+                    "ExpansionBays": "Отсеки расширения",
+                    "ExpansionBaysTooltip": "Число отсеков расширения, которое можно установить на данный корпус.",
+                    "HeaderDefense": "Защита",
+                    "HeaderOffense": "Атака",
+                    "HeaderSpecs": "Параметры",
+                    "Hitpoints": "Пункты защиты (ПЗ)",
+                    "HitpointsTooltip": "Общая величина урона, который способен выдержать звездолёт на 1 уровне, прежде чем выйдет из строя.",
+                    "HitpointsIncrement": "Шаг ПЗ",
+                    "HitpointsIncrementTooltip": "Количество ПЗ, которые добавляются звездолёту на базе этого корпуса на 4 уровне (и каждые 4 уровня после этого).",
+                    "Maneuverability": "Манёвренность",
+                    "ManeuverabilityTooltip": "Манёвренность влияет на сложность пилотирования и скорость поворотов.<br/>Скверная: -2 Пилотирования, Поворот 4<br/>Плохая: -1 Пилотирования, Поворот 3<br/>Средняя: +0 Пилотирования, Поворот 2<br/>Хорошая: +1 Пилотирования, Поворот 1<br/>Безупречная: +2 Пилотирования, Поворот 0",
+                    "Size": "Размер",
+                    "SizeTooltip": "Размер корпуса определяет размер звездолёта.",
+                    "WeaponArcAft": "Задний сектор",
+                    "WeaponArcForward": "Передний сектор",
+                    "WeaponArcPort": "Левый сектор",
+                    "WeaponArcStarboard": "Правый сектор",
+                    "WeaponArcTurret": "Туррель",
+                    "WeaponArcTooltip": "Количество орудий, которые могут быть установлены в секторе, разделённое между лёгкими, тяжёлыми и сверхтяжёлыми орудиями.",
+                    "WeaponTypeCapital": "Сверхтяжёлые",
+                    "WeaponTypeHeavy": "Тяжёлые",
+                    "WeaponTypeLight": "Лёгкие"
+                }
+            },
+            "Weapons": {
+                "Category": "Тип оружия",
+                "ContainerTooltip": "Оружие как правило может содежать сопряжения и улучшения. Увеличьте ёмкость для их добавления."
+            },
+            "WeaponAccessory": {
+                "SupportedTypes": "Поддерживаемые типы оружия"
+            }
+        },
+        "KeyAbility": "Ключевая характеристика",
+        "KineticArmorClass": "ККБ",
+        "Languages": "Языки",
+        "LanguagesAbyssal": "Демонический",
+        "LanguagesAkitonian": "Акитонский",
+        "LanguagesAklo": "Акло",
+        "LanguagesAquan": "Акван",
+        "LanguagesArkanen": "Арканенский",
+        "LanguagesAuran": "Ауран",
+        "LanguagesAzlanti": "Ацланти",
+        "LanguagesBrethedan": "Бреседский",
+        "LanguagesCastrovelian": "Кастровельский",
+        "LanguagesCelestial": "Небесный",
+        "LanguagesCommon": "Общий",
+        "LanguagesDraconic": "Драконий",
+        "LanguagesDrow": "Дроу",
+        "LanguagesDwarven": "Дварфийский",
+        "LanguagesElven": "Эльфийский",
+        "LanguagesEoxian": "Эоксийский",
+        "LanguagesGnome": "Гномий",
+        "LanguagesGoblin": "Гоблинский",
+        "LanguagesHalfling": "Полуросличий",
+        "LanguagesIgnan": "Игнан",
+        "LanguagesInfernal": "Дьявольский",
+        "LanguagesKalo": "Кало",
+        "LanguagesKasatha": "Касатский",
+        "LanguagesNchaki": "Нчаки",
+        "LanguagesOrc": "Орочий",
+        "LanguagesSarcesian": "Саркезианский",
+        "LanguagesShirren": "Ширренский",
+        "LanguagesShobhad": "Шовадский",
+        "LanguagesTerran": "Терран",
+        "LanguagesTriaxian": "Триаксийский",
+        "LanguagesVercite": "Верчитский",
+        "LanguagesVesk": "Веск",
+        "LanguagesYsoki": "Исоки",
+        "LevelLabel": "Круг заклинания",
+        "LevelLabelText": "Level",
+        "LightningReflexesHint": "Черта персонажа, которая добавляет 2 к испытаниям Рефлекса",
+        "LightningReflexesLabel": "Lightning Reflexes",
+        "LimitedUsePeriodsCharges": "Заряды",
+        "LimitedUsePeriodsDay": "День",
+        "LimitedUsePeriodsLong": "Длинный отдых",
+        "LimitedUsePeriodsShort": "Короткий отдых",
+        "Long": "Long",
+        "Magic": {
+            "Levels": {
+                "0": "0 Круг",
+                "1": "1 Круг",
+                "2": "2 Круг",
+                "3": "3 Круг",
+                "4": "4 Круг",
+                "5": "5 Круг",
+                "6": "6 Круг"
+            },
+            "Schools": {
+                "Abjuration": "Преграждение",
+                "Conjuration": "Воплощение",
+                "Divination": "Прорицание",
+                "Enchantment": "Очарование",
+                "Evocation": "Разрушение",
+                "Illusion": "Иллюзия",
+                "Necromancy": "Некромантия",
+                "Transmutation": "Превращение",
+                "Universal": "Универсализм"
+            }
+        },
+        "Magitech": "Magitech",
+        "Medium": "Medium",
+        "Meter": "Meter",
+        "Mi": "Miles",
+        "MigrationBeginingMigration": "Пытаемся обновить систему Starfinder до версии {systemVersion}. Пожалуйста, наберитесь терпения, не выключайте игру и не останваливайте сервер.",
+        "MigrationEndMigration": "Система Starfinder успешно обновлена до версии {systemVersion}!",
+        "MigrationErrorMessage": "При обновлении системы Starfinder возникли проблемы с переносом данных, вы ведь сделали бэкап?",
+        "MigrationSuccessfulMessage": "Ваши данные Starfinder были успешно перенесены в новую версию.",
+        "ModifierACPEffectingArmorTypeAll": "Вся броня",
+        "ModifierACPEffectingArmorTypeHeavy": "Только тяжёлая броня",
+        "ModifierACPEffectingArmorTypeLight": "Только лёгкая броня",
+        "ModifierACPEffectingArmorTypePower": "Только силовая броня",
+        "ModifierAppTitle": "Изменение модификатора: {name}",
+        "ModifierArmorClassBoth": "Оба",
+        "ModifierEffectTypeAbilityCheck": "Проверка характеристики",
+        "ModifierEffectTypeAbilityChecks": "Проверки характеристики",
+        "ModifierEffectTypeAbilityScore": "Значение характеристики",
+        "ModifierEffectTypeAbilitySkills": "Значение навыка",
+        "ModifierEffectTypeAC": "Класс брони",
+        "ModifierEffectTypeACP": "Штраф за броню",
+        "ModifierEffectTypeAllSkills": "Все навыки",
+        "ModifierEffectTypeCMD": "КБ против боевых манёвров",
+        "ModifierEffectTypeHeaderLabel":"Вид параметра",
+        "ModifierEffectTypeInit": "Иницаитива",
+        "ModifierEffectTypeLabel": "Модифицируется",
+        "ModifierEffectTypeSave": "Испытание",
+        "ModifierEffectTypeSaves": "Испытания",
+        "ModifierEffectTypeSkill": "Навык",
+        "ModifierEffectTypeTooltip":"Здесь выбирается тип параметра, изменяемого модификатором",
+        "ModifierEnabledLabel": "Включен",
+        "ModifierEnabledTooltip":"Определяет, будет ли учитываться модификатор при вычислении модификаторов атрибутов.",
+        "ModifierModifierLabel": "Значение",
+        "ModifierModifierTooltip": "Значение модификатора.",
+        "ModifierModifierTypeLabel": "Тип",
+        "ModifierModifierTypeTooltip":"Модификатор может быть плоским (+2) или формулой (+1d4).",
+        "ModifierNameLabel": "Модификатор",
+        "ModifierNameTooltip": "Название модификатора",
+        "ModifierNotesLabel": "Заметки",
+        "ModifierNotesTooltip": "Дополнительная информация о модификаторе",
+        "Modifiers": "Модификаторы",
+        "ModifierSaveHighest": "Лёгкие",
+        "ModifierSaveLowest": "Сложные",
+        "ModifiersConditionsTabLabel": "Состояния",
+        "ModifiersItemTabLabel": "Предмет",
+        "ModifiersMiscTabLabel": "Прочее",
+        "ModifierSourceLabel": "Источник",
+        "ModifierSourceTooltip":"Откуда появился модификатор? Предмет? Заклинание? Другой персонаж?",
+        "ModifiersPermanentTabLabel": "Постоянный",
+        "ModifiersTemporaryTabLabel": "Временный",
+        "ModifierTitle": "Значение",
+        "ModifierTypeAbility": "Характеристики",
+        "ModifierTypeArmor": "Брони",
+        "ModifierTypeBase": "Базовый",
+        "ModifierTypeCircumstance": "Состояния",
+        "ModifierTypeConstant": "Постоянный",
+        "ModifierTypeDivine": "Сакральный",
+        "ModifierTypeEnhancement": "Зачарования",
+        "ModifierTypeFormula": "Формула броска",
+        "ModifierTypeInsight": "Вдохновения",
+        "ModifierTypeLabel": "Тип",
+        "ModifierTypeLuck": "Удачи",
+        "ModifierTypeMorale": "Моральный",
+        "ModifierTypeRacial": "Расовый",
+        "ModifierTypeTooltip": "Тип модификатора. Используется при определении взаимодействия однотипных модификаторов (обычно берётся только больший)",
+        "ModifierTypeUntyped": "Безтиповый",
+        "ModifierValueAffectedHeaderLabel": "Параметр",
+        "ModifierValueAffectedLabel": "Параметр",
+        "ModifierValueAffectedTooltip": "This identifies a specific value being affected if the general attribute has many possible values",
+        "Necrograft": "Necrograft",
+        "None": "None",
+        "Notes": "Notes",
+        "NPCSheet": {
+            "Header": {
+                "NamePlaceHolderText": "Имя персонажа",
+                "RaceAndGraftsPlaceHolderText": "Пол, Раса, и Класс",
+                "SourcePlaceHolderText": "Источник",
+                "AlignmentPlaceHolderText": "НД",
+                "TypePlaceHolderText": "Тип (подтип)",
+                "AuraPlaceHolderText": "Аура"
+            },
+            "Interface": {
+                "Navigation": {
+                    "Conditions": "Состояния"
+                },
+                "Conditions": {
+                    "Warning": "* НИП пока не поддерживают автоматический расчёт модификаторов!"
+                },
+                "CreateItem": {
+                    "Button": "Создать предмет",
+                    "Name": "Новый предмет",
+                    "Note": "Выберите тип предмета для создания.",
+                    "Title": "Создать новый предмет"
+                }
+            }
+        },
+        "NpcToggleSkillsDialogTitle": "Выбрать навыки НИП",
+        "NumberOfArms": "Количество рук",
+        "Personal": "Персональное",
+        "PersonalUpgrade": "Персональное улучшение",
+        "Plane": "План",
+        "Planetary": "Planetary",
+        "RaceAbilityAdjustmentAny": "Любая",
+        "RaceAbilityAdjustments": "Изменения характеристик",
+        "RaceAddAbilityAdjustment": "Добавить изменение",
+        "RaceHitPoints": "ПЗ",
+        "RacePlaceHolderText": "Раса",
+        "RaceSize": "Размер",
+        "RacialTraits": "Расовые особенности",
+        "Reach": "Зона досягаемости",
+        "ReflexSave": "Рефлекс",
+        "RepairDroneChatMessage": "{name} был отремонтирован на {regainedHP} ПЗ.",
+        "RepairDroneDialogCancelButton": "Отменить",
+        "RepairDroneDialogDescription": "Починить дрона? Ремонт по умолчанию восстанавливает 10% максимальных ПЗ дрона за 10 минут, если у вас есть трюк Ремнот Дрона (Экс), вы можете восстановить 25% максимальных ПЗ дрона.",
+        "RepairDroneDialogImprovedFeat": "Использовать правила трюка Ремонт Дрона (Экс)",
+        "RepairDroneDialogRepairButton": "Ремонтировать",
+        "RepairDroneDialogTitle": "Ремонт дрона",
+        "RepairDroneUnnecessary": "{name} уже восстановлен до максимума ПЗ, ремонт не требуется.",
+        "Resolve": "Решимость",
+        "RestButton": "Отдыхать",
+        "RestCancel": "Отменить",
+        "RestL": "Длинный отдых",
+        "RestS": "Короткий отдых",
+        "RestSActionHeader": "Потратить очко решимости?",
+        "RestSChatMessage": "{name} устраивается на десятиминутный отдых.",
+        "RestSChatMessageRestored": "{name} устраивается на десятиминутный отдых и тратит {spentRP} пунктов решимости, чтобы восстановить {regainedSP} пунктов стойкости.",
+        "RestSDescription": "Устроиться на десятиминутный отдых? Вы можете потратить один Пункт Решимости и восстановить все Пункты Живучести.",
+        "RestSTitle": "Короткий десятиминутный отдых",
+        "Rolls": {
+            "AttackRoll": "Бросок атаки",
+            "AttackRollFull": "Бросок атаки - {name}",
+            "Character": {
+                "Charge": "Атака с разбега",
+                "Flanking": "Взятие в тиски",
+                "FightDefensively": "Уход в защиту",
+                "FullAttack": "Полная атака",
+                "HarryingFire": "Бонус отвлекающего огня",
+                "HarryingFireTooltip": "Активируйте этот бонус, когда атакуете цель, которую отвлекает огнём ваш союзник.",
+                "Nonlethal": "Нелетальная"
+            },
+            "Dialog": {
+                "AvailableModifiers": "Доступные модификаторы",
+                "AvailableModifiersTooltip": "Список доступных модификаторов для этого броска.",
+                "Formula": "Формула",
+                "FormulaTooltip": "Формула, используемая для расчёта броска.",
+                "ModifierName": "Название",
+                "ModifierEffect": "Эффект",
+                "RollMode": "Режим броска",
+                "RollModeTooltip": "Режим броска определяет, кто сможет увидеть бросок.",
+                "Selector": "Выбрать '{name}'",
+                "SelectorTooltip": "Динамические выбор персонажа для контекста формулы '{name}'.",
+                "SituationalBonus": "Ситуационный бонус",
+                "SituationalBonusTooltip": "Действуют ли на бросок ситуационные модификаторы? (Например, дальность стрельбы)"
+            },
+            "Dice": {
+                "Advantage": "Преимущество",
+                "AdvantageTooltip": "Бросок с преимуществом.",
+                "CriticalDamage": "Критический",
+                "CriticalDamageTooltip": "Бросить критический урон.",
+                "Disadvantage": "Помеха",
+                "DisadvantageTooltip": "Бросок с помехой.",
+                "Normal": "Обычный",
+                "NormalTooltip": "Обычный бросок.",
+                "NormalDamage": "Обычный",
+                "NormalDamageTooltip": "Бросить обычный урон.",
+                "Roll": "Бросить"
+            },
+            "InitiativeRollFull": "Бросок инициативы - {name}",
+            "Starship": {
+                "ComputerBonus": "Бонус бортового компьютера",
+                "CaptainDemand": "Требование капитана",
+                "CaptainEncouragement": "Вдохновляющая речь капитана",
+                "ScienceOfficerLockOn": "Ведение цели офицером по науке",
+                "SnapShot": "Быстрый выстрел",
+                "FireAtWill": "Беглый огонь",
+                "Broadside": "Выстрел в смежный сектор"
+            },
+            "StarshipAction": "Действие звездолёта: {action}",
+            "StarshipActions": {
+                "ActionNotFoundError": "Действие звездолёта с ID '{actionId}' не существует!",
+                "Chat": {
+                    "CriticalEffect": "Критический эффект",
+                    "DC": "СЛ",
+                    "NormalEffect": "Эффект",
+                    "Role": "{role} звездолёта: '{name}'"
+                },
+                "Choice": {
+                    "Title": "{name} - Выберите действие",
+                    "Message": "Действие звездолёта '{name}' предлагает несколько бросков на выбор. Выберите один.",
+                    "AvailableRolls": "Доступные броски"
+                },
+                "NoFormulaError": "Не указана формула для действия звездолёта '{name}'.",
+                "NoActorError": "Отсутствует член экипажа, необходимый для совершения броска."
+            }
+        },
+        "Save": "Сохранить",
+        "SaveAbilityModTooltip": "Модификатор характеристики: {mod} ({ability})",
+        "SaveClassModTooltip": "Классовый модификатор: {mod} ({class})",
+        "SaveDescriptorDisbelieve": "разоблачает",
+        "SaveDescriptorHalf": "половина",
+        "SaveDescriptorHarmless": "безвредно",
+        "SaveDescriptorNegates": "отменяет",
+        "SaveDescriptorObject": "предмет",
+        "SaveDescriptorPartial": "ослабляет",
+        "SaveMiscModifierLabel": "прочее",
+        "SaveModifiersTooltip": "{type} Бонус: {mod} ({source})",
+        "SaveProgressionFast": "Легкое",
+        "SaveProgressionSlow": "Сложное",
+        "SenesBL": "Слепозрение",
+        "SenesBS": "Слепое чутьё",
+        "SenesDark": "Ночное зрение",
+        "SenesLLV": "Сумеречное зрение",
+        "Senses": "Восприятие",
+        "SensesST": "Сквозное чутьё",
+        "Settings": {
+            "Advantage": {
+                "Hint": "Включает возможность совершения бросков с преимуществом/помехой.",
+                "Name": "Использовать преимущества и помехи?"
+            },
+            "AutoCollapseCard": {
+                "Hint": "Автоматически сворачивает описания предметов в чате",
+                "Name": "Сворачивать карты предметов в чате"
+            },
+            "CombatCards": {
+                "NormalHint": "Какие боевые карты отображаются в чате в обычном бою.",
+                "NormalName": "Обычный бой",
+                "StarshipHint": "Какие боевые карты отображаются в чате в космическом бою.",
+                "StarshipName": "Космический бой",
+                "Values": {
+                    "Disabled": "Ничего",
+                    "Enabled": "Раунды, фазы, и ходы",
+                    "OnlyRounds": "Только раунды",
+                    "RoundsPhases": "Раунды и фазы"
+                },
+                "VehicleChaseHint": "Какие боевые карты отображаются в чате во время погони.",
+                "VehicleChaseName": "Погоня"
+            },
+            "DamageWithAttack": {
+                "Hint": "Автоматически бросает урон после совершения атак.",
+                "Name": "Бросать урон вместе с атакой"
+            },
+            "DiagonalMovementRule": {
+                "Hint": "Определяет, как именно считается расстояние по диагоналям.",
+                "Name": "Правила движения по диагонали",
+                "Values": {
+                    "Core": "Starfinder (5/10/5)",
+                    "Optional": "DND5e (5/5/5)"
+                }
+            },
+            "ExperienceTracking": {
+                "Hint": "Удаляет шкалу опыта из листов персонажей.",
+                "Name": "Отключить шкалу опыта"
+            },
+            "StarshipActionsCrit": {
+                "Hint": "Отображаются ли эффекты критических попаданий.",
+                "Name": "Критические эффекты в космическом бою",
+                "Values": {
+                    "Never": "Не показывать.",
+                    "CritOnly": "Показывать только при критических попаданиях.",
+                    "Always": "Показывать."
+                }
+            },
+            "StarshipActionsSource": {
+                "Hint": "Ключ компендиума с описаниями действий.",
+                "Name": "Компендиум действий космических боёв"
+            },
+            "UseCustomChatCard": {
+                "Hint": "Переключение между классическими картами чата и новыми.",
+                "Name": "Использовать кастомные карты чата Starfinder?"
+            },
+            "UseQuickRollAsDefault": {
+                "Hint": "Если этот пункт включен, при нажатии на элемент, предполагающий совершение броска, он будет совершён без промежуточных меню (как с нажатым shift).",
+                "Name": "Использовать быстрые броски?"
+            },
+            "UseStarfinderAOETemplates": {
+                "Hint": "Использовать шаблоны зоны поражения Starfinder вместо стандартных шаблонов Foundry VTT",
+                "Name": "Использовать шаблоны зоны поражения Starfinder"
+            },
+            "WorldSchemaVersion": {
+                "Hint": "Records the data schema version for the Starfinder system. WARNING: Do not edit this value unless you know what you are doing!",
+                "Name": "Starfinder Data Schema Version"
+            }
+        },
+        "ShipFrameLabel": "Корпус",
+        "ShipModelLabel": "Модель",
+        "ShipNameLabel": "Название",
+        "ShipSystems": {
+            "ArmorSystems": {
+                "Mk01": "Броня (тип 1)",
+                "Mk02": "Броня (тип 2)",
+                "Mk03": "Броня (тип 3)",
+                "Mk04": "Броня (тип 4)",
+                "Mk05": "Броня (тип 5)",
+                "Mk06": "Броня (тип 6)",
+                "Mk07": "Броня (тип 7)",
+                "Mk08": "Броня (тип 8)",
+                "Mk09": "Броня (тип 9)",
+                "Mk10": "Броня (тип 10)",
+                "Mk11": "Броня (тип 11)",
+                "Mk12": "Броня (тип 12)",
+                "Mk13": "Броня (тип 13)",
+                "Mk14": "Броня (тип 14)",
+                "Mk15": "Броня (тип 15)"
+            },
+            "BaseFrames": {
+                "Race"    : "Гонщик",
+                "Inter"   : "Перехватчик",
+                "Fight"   : "Истребитель",
+                "Shuttle" : "Шаттл",
+                "Lfreight": "Лёгкий грузовик",
+                "Expl"    : "Исследователь",
+                "Trans"   : "Транспортник",
+                "Dest"    : "Разрушитель",
+                "Hfreight": "Тяжёлый грузовик",
+                "Bfreight": "Балкер",
+                "Cruiser" : "Крейсер",
+                "Carr"    : "Носитель",
+                "Battle"  : "Линкор",
+                "Dread"   : "Дредноут"
+            },
+            "ComputerSystems": {
+                "Basic" : "Базовый",
+                "Mk01m" : "Одноузловой (тип 1)",
+                "Mk01d" : "Двухузловой (тип 1)",
+                "Mk01tr": "Трёхузловой (тип 1)",
+                "Mk01te": "Четырёхузловой (тип 1)",
+                "Mk02m" : "Одноузловой (тип 2)",
+                "Mk02d" : "Двухузловой (тип 2)",
+                "Mk02tr": "Трёхузловой (тип 2)",
+                "Mk02te": "Четырёхузловой (тип 2)",
+                "Mk03m" : "Одноузловой (тип 3)",
+                "Mk03d" : "Двухузловой (тип 3)",
+                "Mk03tr": "Трёхузловой (тип 3)",
+                "Mk03te": "Четырёхузловой (тип 3)",
+                "Mk04m" : "Одноузловой (тип 4)",
+                "Mk04d" : "Двухузловой (тип 4)",
+                "Mk04tr": "Трёхузловой (тип 4)",
+                "Mk05m" : "Одноузловой (тип 5)",
+                "Mk05d" : "Двухузловой (тип 5)",
+                "Mk05tr": "Трёхузловой (тип 5)",
+                "Mk06m" : "Одноузловой (тип 6)",
+                "Mk06d" : "Двухузловой (тип 6)",
+                "Mk07m" : "Одноузловой (тип 7)",
+                "Mk07d" : "Двухузловой (тип 7)",
+                "Mk08m" : "Одноузловой (тип 8)",
+                "Mk08d" : "Двухузловой (тип 8)",
+                "Mk09m" : "Одноузловой (тип 9)",
+                "Mk09d" : "Двухузловой (тип 9)",
+                "Mk10m" : "Одноузловой (тип 10)",
+                "Mk10d" : "Двухузловой (тип 10)"
+            },
+            "CrewQuarterSystems": {
+                "Common"   : "Эконом",
+                "Good"     : "Стандарт",
+                "Luxurious": "Люкс"
+            },
+            "DefenseSystems": {
+                "Mk01": "Защита (тип 1)",
+                "Mk02": "Защита (тип 2)",
+                "Mk03": "Защита (тип 3)",
+                "Mk04": "Защита (тип 4)",
+                "Mk05": "Защита (тип 5)",
+                "Mk06": "Защита (тип 6)",
+                "Mk07": "Защита (тип 7)",
+                "Mk08": "Защита (тип 8)",
+                "Mk09": "Защита (тип 9)",
+                "Mk10": "Защита (тип 10)",
+                "Mk11": "Защита (тип 11)",
+                "Mk12": "Защита (тип 12)",
+                "Mk13": "Защита (тип 13)",
+                "Mk14": "Защита (тип 14)",
+                "Mk15": "Защита (тип 15)"
+            },
+            "DriftEngineSystems": {
+                "Basic"   : "\"Сигнал\" базовый",
+                "Booster" : "\"Сигнал\" плюс",
+                "Major"   : "\"Сигнал\" мега",
+                "Superior": "\"Сигнал\" супер",
+                "Ultra"   : "\"Сигнал\" ультра"
+            },
+            "ExpansionBaySystems": {
+                "Arclab"  : "Магическая лаборатория",
+                "Cargo"   : "Грузовой отсек",
+                "Escape"  : "Аварийные капсулы",
+                "Guest"   : "Гостевые каюты",
+                "Hangar"  : "Ангар",
+                "Life"    : "Спасательные шлюпки",
+                "Med"     : "Медотсек",
+                "Pass"    : "Сидяиче места для пассажиров",
+                "Pwrhouse": "Реакторный отсек",
+                "Recg"    : "Комната отдыха (тренажёры)",
+                "Rect"    : "Комната отдыха (тридеозал)",
+                "Hac"     : "Комната отдыха (КГА)",
+                "Science" : "Научная лаборатория",
+                "Senv"    : "Отсек с контролируемой средой",
+                "Shuttle" : "Шаттл-отсек",
+                "Smuggler": "Потайной отсек",
+                "Syth"    : "Отсек синтезирования",
+                "Tech"    : "Мастерская"
+            },
+            "Maneuverability": {
+                "Clumsy" : "Скверная",
+                "Poor"   : "Плохая",
+                "Average": "Средняя",
+                "Good"   : "Хорогая",
+                "Perfect": "Безупречная"
+            },
+            "PowerCoreSystems": {
+                "MicronLight"   : "\"Микрон\" малый",
+                "MicronHeavy"   : "\"Микрон\" средний",
+                "MicronUltra"   : "\"Микрон\" ультра",
+                "ArcusLight"    : "\"Арка\" малый",
+                "PulseBrown"    : "\"Импульс\" коричневый",
+                "PulseBlack"    : "\"Импульс\" чёрный",
+                "PulseWhite"    : "\"Импульс\" белый",
+                "PulseGray"     : "\"Импульс\" серый",
+                "ArcusHeavy"    : "\"Арка\" средний",
+                "PulseGreen"    : "\"Импульс\" зелёный",
+                "PulseRed"      : "\"Импульс\" красный",
+                "PulseBlue"     : "\"Импульс\" синий",
+                "ArcusUltra"    : "\"Арка\" ультра",
+                "ArcusMaximum"  : "\"Арка\" максимум",
+                "PulseOrange"   : "\"Импульс\" оранжевый",
+                "PulsePrismatic": "\"Импульс\" радуга",
+                "NovaLight"     : "\"Нова\" малый",
+                "NovaHeavy"     : "\"Нова\" средний",
+                "NovaUltra"     : "\"Нова\" ультра",
+                "GatewayLight"  : "\"Врата\" малый",
+                "GatewayHeavy"  : "\"Врата\" средний",
+                "GatewayUltra"  : "\"Врата\" ультра"
+            },
+            "SecuritySystems": {
+                "Antihack"    : "Антихакерские системы",
+                "Antiper"     : "Противопехотное оружие",
+                "Bio"         : "Биометрические замки",
+                "Compcounter" : "Средства защиты для компьютеров",
+                "Selfdestruct": "Система самоуничтожения"
+            },
+            "SensorSystems": {
+                "Cut"    : "Уценённые",
+                "Bushort": "Малой дальности, бюджетные",
+                "Bashort": "Малой дальности, стандартные",
+                "Ashort" : "Малой дальности, улучшенные",
+                "Bumed"  : "Средней дальности, бюджетные",
+                "Bamed"  : "Средней дальности, стандартные",
+                "Amed"   : "Средней дальности, улучшенные",
+                "Bulong" : "Большой дальности, бюджетные",
+                "Balong" : "Большой дальности, стандартные",
+                "Along"  : "Большой дальности, улучшенные"
+            },
+            "ShieldSystems": {
+                "010": "Базовые щиты 10",
+                "020": "Базовые щиты 20",
+                "030": "Базовые щиты 30",
+                "040": "Базовые щиты 40",
+                "050": "Лёгкие щиты 50",
+                "060": "Лёгкие щиты 60",
+                "070": "Лёгкие щиты 70",
+                "080": "Лёгкие щиты 80",
+                "090": "Средние щиты 90",
+                "100": "Средние щиты 100",
+                "120": "Средние щиты 120",
+                "140": "Средние щиты 140",
+                "160": "Средние щиты 160",
+                "200": "Средние щиты 200",
+                "240": "Тяжёлые щиты 240",
+                "280": "Тяжёлые щиты 280",
+                "320": "Тяжёлые щиты 320",
+                "360": "Тяжёлые щиты 360",
+                "420": "Тяжёлые щиты 420",
+                "480": "Тяжёлые щиты 480",
+                "540": "Превосходные щиты 540",
+                "600": "Превосходные щиты 600"
+            },
+            "Size": {
+                "Supercolossal": "Титан"
+            },
+            "StarshipArcs": {
+                "Forward"  : "Нос",
+                "Starboard": "Правый борт",
+                "Aft"      : "Корма",
+                "Port"     : "Левый борт",
+                "Turret"   : "Турель"
+            },
+            "StarshipRoles": {
+                "Pilot"          : "Пилот",
+                "Captain"        : "Капитан",
+                "Engineers"      : "Инженеры",
+                "Gunners"        : "Бортстрелки",
+                "ScienceOfficers": "Офицеры по науке",
+                "Passengers"     : "Пассажиры"
+            },
+            "StarshipWeaponClass": {
+                "Light"  : "Лёгкое",
+                "Heavy"  : "Тяжёлое",
+                "Capital": "Сверхтяжёлое"
+            },
+            "StarshipWeaponProperties": {
+                "Array"     : "Секторное",
+                "Broad"     : "Широкий угол",
+                "Emp"       : "ЭМИ",
+                "IrradiateL": "Облучение (низкий уровень)",
+                "IrradiateM": "Облучение (средний уровень)",
+                "IrradiateH": "Облучение (повышенный уровень)",
+                "Limited"   : "Боезапас",
+                "Line"      : "Линейное",
+                "Point"     : "Активная защита",
+                "Quantum"   : "Квантовое",
+                "Ripper"    : "Потрошитель",
+                "Tractor"   : "Луч захвата",
+                "Vortex"    : "Вихревое"
+            },
+            "StarshipWeaponRanges":{
+                "Short" : "Близкая",
+                "Medium": "Средняя",
+                "Long"  : "Дальняя"
+            },
+            "StarshipWeaponTypes": {
+                "Direct"  : "Прямого наведения",
+                "Tracking": "Самонаводящееся"
+            },
+            "ThrusterSystems": {
+                "T6" : "Двигатели М6",
+                "T8" : "Двигатели М8",
+                "T10": "Двигатели М10",
+                "T12": "Двигатели М12",
+                "T14": "Двигатели М14",
+                "S6" : "Двигатели Н6",
+                "S8" : "Двигатели Н8",
+                "S10": "Двигатели Н10",
+                "S12": "Двигатели Н12",
+                "M4" : "Двигатели С4",
+                "M6" : "Двигатели С6",
+                "M8" : "Двигатели С8",
+                "M10": "Двигатели С10",
+                "M12": "Двигатели С12",
+                "L4" : "Двигатели К4",
+                "L6" : "Двигатели К6",
+                "L8" : "Двигатели К8",
+                "L10": "Двигатели К10",
+                "H4" : "Двигатели О4",
+                "H6" : "Двигатели О6",
+                "H8" : "Двигатели О8",
+                "H10": "Двигатели О10",
+                "G4" : "Двигатели Г4",
+                "G6" : "Двигатели Г6",
+                "G8" : "Двигатели Г8",
+                "C4" : "Двигатели Клс4",
+                "C6" : "Двигатели Клс6",
+                "C8" : "Двигатели Клс8"
+            }
+        },
+        "ShipTierLabel": "Ранг",
+        "Size": "Размер",
+        "SizeColossal": "Колоссальный",
+        "SizeDim": "Миниатюрный",
+        "SizeFine": "Крошечный",
+        "SizeGargantuan": "Гигантский",
+        "SizeHuge": "Огромный",
+        "SizeLarge": "Крупный",
+        "SizeMedium": "Средний",
+        "SizeSmall": "Небольшой",
+        "SizeTiny": "Маленький",
+        "SkillAcr": "Акробатика",
+        "SkillAth": "Атлетика",
+        "SkillBlu": "Блеф",
+        "SkillCom": "Компьютеры",
+        "SkillCul": "Культура",
+        "SkillDip": "Дипломатия",
+        "SkillDis": "Маскировка",
+        "SkillEng": "Инженерное дело",
+        "SkillInt": "Запугивание",
+        "SkillLsc": "Биологические науки",
+        "SkillMed": "Медицина",
+        "SkillModifierTooltip": "{type} Бонус: {mod} ({source})",
+        "SkillMys": "Мистицизм",
+        "SkillPer": "Внимание",
+        "SkillPil": "Пилотирование",
+        "SkillPro": "Профессия",
+        "SkillProficiencyLevelClassSkill": "Навык класса",
+        "SkillPsc": "Физические науки",
+        "SkillSen": "Проницательность",
+        "SkillsHeaderAbility": "Хар",
+        "SkillsHeaderModifier": "Мод",
+        "SkillsHeaderName": "Навык",
+        "SkillsHeaderRanks": "Пунктов",
+        "SkillSle": "Ловкость рук",
+        "SkillSte": "Скрытность",
+        "SkillsToggleHeader": "Навыки",
+        "SkillSur": "Выживание",
+        "SkillTooltipAbilityMod": "Модификтор характеристики: {abilityMod} ({abilityAbbr})",
+        "SkillTooltipMiscMod": "Прочие модификаторы: {mod}",
+        "SkillTooltipSkillRanks": "Пункты навыка: {ranks}",
+        "SkillTooltipThemeMod": "Модификатор темы: {mod}",
+        "SkillTooltipTrainedClassSkill": "Бонус изученного классового навыка: {mod}",
+        "SkillTrainedOnly": "Требуется изучение",
+        "SortByFilterLevel": "Уровень",
+        "SortByFilterName": "Название",
+        "Space": "Занимаемое пространство",
+        "Special": "Особое",
+        "SpecialTraits": "Особые черты",
+        "Speed": "Скорость",
+        "SpeedSpecial": "Доп. скорости",
+        "SpellAreaEffects": {
+                "Burst"    : "Взрыв",
+                "Emanation": "Эманация",
+                "Spread"   : "Облако"
+        },
+        "SpellAreaShapesCone": "Конус",
+        "SpellAreaShapesCylinder": "Цилиндр",
+        "SpellAreaShapesLine": "Линия",
+        "SpellAreaShapesOther": "Прочее",
+        "SpellAreaShapesShapable": "Формируемая",
+        "SpellAreaShapesSphere": "Сфера",
+        "SpellBook": {
+            "Spellbook": "Заклинания",
+            "Add": "Добавить",
+            "AddSpells": "Добавить заклинание",
+            "AttributesNone": "Нет",
+            "Browse": "Открыть справочник заклинаний",
+            "CreateSpell": "Создать заклинание",
+            "DeleteItem": "Удалить",
+            "EditItem": "Изменить",
+            "NoSpells": "Не найдены заклинания, соответствующие выбранным фильтрам.",
+            "SearchSpell": "Искать заклинание",
+            "SpellCastingAbility": "Заклинательная характеристика",
+            "SpellSchool": "Школа",
+            "SpellUsage": "Использование",
+            "Uses": "Осталось"
+        },
+        "SpellBrowserSearchHint": "",
+        "SpellCantripLabel": "Кантрип",
+        "SpellPreparationModesAlways": "Всегда доступно",
+        "SpellPreparationModesInnate": "Врожденное",
+        "SpellResistance": "Устойчивость к магии",
+        "Stamina": "ПЖ",
+        "StarshipSheet": {
+            "Actions": {
+                "Header": {
+                    "Phase": "Фаза",
+                    "ResolvePoints": "Решимость"
+                },
+                "Tooltips": {
+                    "NormalEffect": "Обычный эффект",
+                    "CriticalEffect": "Критический эффект",
+                    "Push": "Усилие",
+                    "PushTooltip": "Действия с пометкой \"Усилие\" в названии труднее совершить, но и резултьтат у них более внушительный. Такие действия нельзя применить, если требуемая для них система неисправна или вышла из строя (см. \"Критические состояния\" на стр. 321)."
+                }
+            },
+            "Attributes": {
+                "Computer": "Борткомпьютер"
+            },
+            "Crew": {
+                "AssignedCount": "({current} / {max})",
+                "Captain": "Капитан",
+                "Pilot": "Пилот",
+                "Gunners": "Бортстрелки",
+                "Engineers": "Бортинженеры",
+                "ScienceOfficers": "Офицеры по науке",
+                "ChiefMates": "Старпомы",
+                "MagicOfficers": "Офицеры по магии",
+                "Passengers": "Пассажиры",
+                "UnlimitedMax": "Неограниченно",
+                "CrewLimitReached": "Экипаж не может включать большего количества людей на роль '{targetRole}'."
+            },
+            "Details": {
+                "Shields": {
+                    "Aft": "Щиты заднего сектора",
+                    "Forward": "Щиты переднего сектора",
+                    "Header": "Щиты",
+                    "Port": "Щиты левого сектора",
+                    "Starboard": "Щиты правого сектора"
+                },
+                "ShieldTooHigh": "Щиты слишком высоки!",
+                "ShieldTooHighTooltip": "Уровень энергии щита не может превышать 70% общего объёма щитов, поскольку у каждого из щитов должно быть не менее 10% от общего количества ПЩ. (Больше инфомации на стр. 301)"
+            },
+            "Features": {
+                "Frame": "Корпус ({current} / 1)",
+                "Systems": "Системы"
+            },
+            "Header": {
+                "FrameMissing": "Отсутствует корпус",
+                "Maneuverability": "Манёвренность: {maneuverability}",
+                "Size": "Размер: {size}"
+            },
+            "Modifiers": {
+                "ComputerBonus": "Бонус компьютера: {mod} ({source})"
+            },
+            "Role": {
+                "Captain": "Капитан",
+                "Pilot": "Пилот",
+                "Gunner": "Бортстрелок",
+                "Engineer": "Бортмеханик",
+                "ScienceOfficer": "Офицер по науке",
+                "ChiefMate": "Старпом",
+                "MagicOfficer": "Офицер по магии",
+                "Passenger": "Пассажир",
+                "MinorCrew": "Вспомогательные действия",
+                "OpenCrew": "Свободный член экипажа"
+            },
+            "Sides": {
+                "Aft": "Корма",
+                "Forward": "Нос",
+                "Port": "Левый борт",
+                "Starboard": "Правый борт"
+            },
+            "Tabs": {
+                "Actions": "Действия",
+                "Crew": "Экипаж",
+                "Weapons": "Орудия"
+            },
+            "Weapons": {
+                "AftArc": "Задний сектор ({slots})",
+                "CapitalSlots": "Сверхтяжёлые: {current} / {max}",
+                "ForwardArc": "Передний сектор ({slots})",
+                "HeavySlots": "Тяжёлые: {current} / {max}",
+                "LightSlots": "Лёгкие: {current} / {max}",
+                "NotAvailable": "Недоступно",
+                "NotMounted": "Демонтированные орудия",
+                "PortArc": "Левый сектор ({slots})",
+                "StarboardArc": "Правый сектор ({slots})",
+                "Turret": "Туррель ({slots})"
+            }
+        },
+        "SubmitButtonLabel": "Отправить",
+        "SystemWide": "System-Wide",
+        "TempHPMaxPlaceHolderText": "+Максимальные",
+        "TempHPPlaceHolderText": "+Временные",
+        "ThemePlaceHolderText": "Тема",
+        "ToggleSkillsButtonLabel": "Выбрать навыки",
+        "Touch": "Касание",
+        "TraitArmorProf": "Владение броней",
+        "TraitWeaponProf": "Владение оружием",
+        "Unlimited": "Неограниченно",
+        "UPBs": "УПО",
+        "Vehicles": {
+            "VehicleCoverTypes": {
+                "None"   : "-",
+                "Cover"  : "Укрытие",
+                "Soft"   : "Живое укрытие",
+                "Partial": "Частичное укрытие",
+                "Total"  : "Полное укрытие"
+            },
+            "VehicleTypes": {
+                "Land" : "Наземный",
+                "Water": "Плавание",
+                "Hover": "Парение",
+                "Landw": "Наземный и водный",
+                "Air"  : "Воздушный",
+                "Landa": "Наземный и воздушный"
+            }
+        },
+        "WeaponCategoriesCryo"         : "Криооружие",
+        "WeaponCategoriesDisruption"   : "Разрушающее",
+        "WeaponCategoriesDisintegrator": "Дезинтегрирующее оружие",
+        "WeaponCategoriesFlame"        : "Огненное оружие",
+        "WeaponCategoriesLaser"        : "Лазерное оружие",
+        "WeaponCategoriesPlasma"       : "Плазменное оружие",
+        "WeaponCategoriesProjectile"   : "Огнестрельное оружие",
+        "WeaponCategoriesShock"        : "Электрическое оружие",
+        "WeaponCategoriesSonic"        : "Звуковое оружие",
+        "WeaponCategoriesUncategorized": "Прочее оружие",
+        "WeaponCriticalHitEffects": {
+            "Arc"        : "Дуга",
+            "Bleed"      : "Кровопускание",
+            "Burn"       : "Поджигание",
+            "Corrode"    : "Окисление",
+            "Deafen"     : "Оглушение",
+            "Injection"  : "СЛ инъекции +2",
+            "Knockdown"  : "Нокдаун",
+            "SevereWound": "Серьёзное ранение",
+            "Staggered"  : "Ошеломление",
+            "Stunned"    : "Шок",
+            "Wound"      : "Ранение"
+        },
+        "WeaponProficiencyAdvMelee": "Высокотехнологичное оружие",
+        "WeaponProficiencyBasicMelee": "Простое оружие",
+        "WeaponProficiencyGrenades": "Гранаты",
+        "WeaponProficiencyHeavy": "Тяжелое оружие",
+        "WeaponProficiencyLongArms": "Длинноствольное оружие",
+        "WeaponProficiencySmallArms": "Короткоствольное оружие",
+        "WeaponProficiencySniper": "Снайперское оружие",
+        "WeaponProficiencySpecial": "Особое оружие",
+        "WeaponPropertiesAeon": "Камней вечных",
+        "WeaponPropertiesAmmunition": "Боеприпасы",
+        "WeaponPropertiesAnalog": "Аналоговое",
+        "WeaponPropertiesAntibiological": "Антибиологическое",
+        "WeaponPropertiesArchaic": "Архаичное",
+        "WeaponPropertiesAurora": "Озаряющее",
+        "WeaponPropertiesAutomatic": "Автоматическое",
+        "WeaponPropertiesBlast": "Конусное",
+        "WeaponPropertiesBlock": "Парирующее",
+        "WeaponPropertiesBoost": "Мощное",
+        "WeaponPropertiesBreach": "Стенобитное",
+        "WeaponPropertiesBreakdown": "Разборное",
+        "WeaponPropertiesBright": "Яркое",
+        "WeaponPropertiesCluster": "Кластерное",
+        "WeaponPropertiesDeconstruct": "Окисление?",
+        "WeaponPropertiesDeflect": "Отражающее",
+        "WeaponPropertiesDisarm": "Разоружающее",
+        "WeaponPropertiesDouble": "Двойное",
+        "WeaponPropertiesDrainCharge": "Разряжающее",
+        "WeaponPropertiesEcho": "Эхо",
+        "WeaponPropertiesEntangle": "Опутывающее",
+        "WeaponPropertiesExplode": "Взрыв",
+        "WeaponPropertiesExtinguish": "Огнетушащее",
+        "WeaponPropertiesFeint": "Финтовое",
+        "WeaponPropertiesFiery": "Тлеющее",
+        "WeaponPropertiesFirstArc": "Дуговое",
+        "WeaponPropertiesFlexibleLine": "Гибкая линия?",
+        "WeaponPropertiesForce": "Силовое",
+        "WeaponPropertiesFreeHands": "Свободные руки",
+        "WeaponPropertiesFueled": "Топливное",
+        "WeaponPropertiesGrapple": "Удерживающее",
+        "WeaponPropertiesGravitation": "Гравитационное",
+        "WeaponPropertiesGuided": "Управляемое",
+        "WeaponPropertiesHarrying": "Отвлекающее",
+        "WeaponPropertiesHolyWater": "Освящённое",
+        "WeaponPropertiesHybrid": "Гибридное",
+        "WeaponPropertiesIgnite": "Поджигающее",
+        "WeaponPropertiesIndirect": "Окольное",
+        "WeaponPropertiesInjection": "Инъекционное",
+        "WeaponPropertiesIntegrated": "Встроенное",
+        "WeaponPropertiesLine": "Линейное",
+        "WeaponPropertiesLiving": "Живое",
+        "WeaponPropertiesLockdown": "Отключающее",
+        "WeaponPropertiesMindAffecting": "Поражающее разум",
+        "WeaponPropertiesMine": "Миномётное",
+        "WeaponPropertiesMire": "Заболочивающее",
+        "WeaponPropertiesModal": "Переключаемое",
+        "WeaponPropertiesNecrotic": "Некротическое",
+        "WeaponPropertiesNonlethal": "Нелетальное",
+        "WeaponPropertiesOneHanded": "Одноручное",
+        "WeaponPropertiesOperative": "Оперативное",
+        "WeaponPropertiesPenetrating": "Проникающее",
+        "WeaponPropertiesPolarize": "Поляризующее",
+        "WeaponPropertiesPolymorphic": "Полиморфное",
+        "WeaponPropertiesPowered": "Аккумуляторное",
+        "WeaponPropertiesProfessional": "Профессиональное",
+        "WeaponPropertiesPunchGun": "Ударное",
+        "WeaponPropertiesQuickReload": "Быстрозаряжаемое",
+        "WeaponPropertiesRadioactive": "Радиоактивное",
+        "WeaponPropertiesReach": "Длинное",
+        "WeaponPropertiesRecall": "Возвращающееся",
+        "WeaponPropertiesRegrowth": "Взращиваемое",
+        "WeaponPropertiesRelic": "Реликтовое",
+        "WeaponPropertiesReposition": "Смещающее",
+        "WeaponPropertiesShape": "Формируемое",
+        "WeaponPropertiesShells": "Чешуйчатое",
+        "WeaponPropertiesShield": "Ограждающее",
+        "WeaponPropertiesSniper": "Снайперское",
+        "WeaponPropertiesStun": "Обезвреживающее",
+        "WeaponPropertiesSubtle": "Бесшумное",
+        "WeaponPropertiesSunder": "Разрушающее",
+        "WeaponPropertiesSwarm": "Ульевое",
+        "WeaponPropertiesTail": "Хвостовое",
+        "WeaponPropertiesTeleportive": "Телепортивное",
+        "WeaponPropertiesThought": "Мысленное",
+        "WeaponPropertiesThrottle": "Удушающее",
+        "WeaponPropertiesThrown": "Метательное",
+        "WeaponPropertiesTrip": "Сбивающее",
+        "WeaponPropertiesTwoHanded": "Двуручное",
+        "WeaponPropertiesUnbalancing": "Сбивающее с баланса",
+        "WeaponPropertiesUnderwater": "Подводное",
+        "WeaponPropertiesUnwieldy": "Громоздкое",
+        "WeaponPropertiesVariantBoost": "Мощное (ограниченно)",
+        "WeaponPropertiesWideLine": "Широколинейное",
+        "WeaponsPropertiesConceal": "Скрытое",
+        "WeaponSpecial": {
+                "Analog"     : "Аналоговое",
+                "Archaic"    : "Архаичное",
+                "Auto"       : "Автоматическое",
+                "Blast"      : "Конусное",
+                "Block"      : "Парирующее",
+                "Boost"      : "Мощное",
+                "Bright"     : "Яркое",
+                "Disarm"     : "Разоружающее",
+                "Entangle"   : "Опутывающее",
+                "Exploade"   : "Взрыв",
+                "Injection"  : "Инъекционное",
+                "Line"       : "Линейное",
+                "Nonlethal"  : "Нелетальное",
+                "Operative"  : "Оперативное",
+                "Penetrating": "Проникающее",
+                "Powered"    : "Аккумуляторное",
+                "Quickreload": "Быстрозаряжаемое",
+                "Reach"      : "Длинное",
+                "Sniper"     : "Снайперское",
+                "Stun"       : "Обезвреживающее",
+                "Thrown"     : "Метательное",
+                "Trip"       : "Сбивающее",
+                "Unwieldy"   : "Громоздкое"
+        },
+        "WeaponTypesAdvMelee": "Высокотехнологичное оружие",
+        "WeaponTypesBasicMelee": "Простое оружие",
+        "WeaponTypesGrenades": "Гранаты",
+        "WeaponTypesHeavy": "Тяжелое оружие",
+        "WeaponTypesLongArms": "Длинноствольное оружие",
+        "WeaponTypesSmallArms": "Короткоствольное оружие",
+        "WeaponTypesSniper": "Снайперское оружие",
+        "WeaponTypesSolarian": "Солярионский оружейный кристалл",
+        "WeaponTypesSpecial": "Особое оружие",
+        "WillSave": "Воля",
+		"Ability": "Характеристика",
+		"ItemStatus": "Статус предмета",
+        "Units": {
+            "Speed": "фт."
+        },
+        "Classes": {
+            "IsCasterClass": "Является ли этот класс заклинателем?"
+        },
+
+        "LocalizationTerminator": ""
+    }
+}
