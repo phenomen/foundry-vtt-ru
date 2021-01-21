@@ -1,0 +1,248 @@
+{
+  "AC": "AC",
+  "Ability Check": "Ability Check",
+  "Ability Roll": "Ability Roll",
+  "Better Rolls": "Better Rolls",
+  "Better Rolls for 5e": "Better Rolls for 5e",
+  "Concentration": "Concentration",
+  "Equipped": "Equipped",
+  "Expertise": "Expertise",
+  "Jack of all Trades": "Jack of all Trades",
+  "Not Proficient": "Not Proficient",
+  "Proficient": "Proficient",
+  "Ritual": "Ritual",
+  "Saving Throw": "Saving Throw",
+  "Target: ": "Target: ",
+  "What type of roll?": "What type of roll?",
+  "br5e": {
+    "altSecondaryEnabled": {
+      "hint": "When Alt-clicking on an item's image, output a second Better Roll message which can be configured separately per-item. Overwrites ability to bypass with default chat output.",
+      "name": "Alt-Click Image for Secondary Roll"
+    },
+    "buttons": {
+      "altDamage": "Alt. Damage",
+      "altRoll": "Alt. Roll",
+      "attack": "Attack",
+      "attackAndDamage": "Roll (Atk & Dmg)",
+      "damage": "Damage",
+      "defaultSheetRoll": "Default Sheet Roll",
+      "extraDamage": "Extra Damage",
+      "info": "Info",
+      "itemUse": "Use",
+      "roll": "Roll",
+      "saveAndDamage": "Roll (Save & Dmg)",
+      "saveDC": "Save DC",
+      "verDamage": "Versatile Damage"
+    },
+    "chat": {
+      "abrMaterial": "M",
+      "abrSomatic": "S",
+      "abrVocal": "V",
+      "advantage": "Advantage",
+      "altPrefix": "Alt.",
+      "attack": "Attack",
+      "check": "Check",
+      "consumedBySpell": "Consumed by spell",
+      "damage": "Damage",
+      "damageButtons": {
+        "crit": {
+          "hint": "Click to roll crit damage."
+        },
+        "critPrompt": {
+          "no": "No",
+          "title": "Use Crit Damage?",
+          "yes": "Yes"
+        },
+        "doubleDamage": {
+          "hint": "Click to apply double damage to selected token(s)."
+        },
+        "fullDamage": {
+          "hint": "Click to apply full damage to selected token(s)."
+        },
+        "halfDamage": {
+          "hint": "Click to apply half damage to selected token(s)."
+        },
+        "healing": {
+          "hint": "Click to apply full healing to selected token(s)."
+        }
+      },
+      "disadvantage": "Disadvantage",
+      "extraPrefix": "Extra",
+      "healing": "Healing",
+      "multiRollButtons": {
+        "advantage": {
+          "hint": "Roll with Advantage (Shift)"
+        },
+        "disadvantage": {
+          "hint": "Roll with Disadvantage (Ctrl)"
+        }
+      },
+      "normal": "Normal",
+      "other": "Other",
+      "save": "Save"
+    },
+    "chatContext": {
+      "repeat": "Repeat the roll"
+    },
+    "chatDamageButtonsEnabled": {
+      "hint": "Renders buttons on Better Rolls damage rolls that apply damage to selected tokens. Requires refreshing Foundry.",
+      "name": "Enable Chat Damage Buttons"
+    },
+    "contextReplacesDamage": {
+      "hint": "If a context label is in the same place as a damage type label, it will replace it.",
+      "name": "Context Replaces Damage Type"
+    },
+    "contextReplacesTitle": {
+      "hint": "If a context label is in the same place as a damage roll's title label, such as \"Damage\" or \"Healing\", it will replace it.",
+      "name": "Context Replaces Title Label"
+    },
+    "critBehavior": {
+      "choices": {
+        "0": "No Extra Damage",
+        "1": "Roll Critical Damage Dice",
+        "2": "Roll Base Damage, Max Critical",
+        "3": "Max Base & Critical Damage"
+      },
+      "hint": "Determines how critical damage is calculated.",
+      "name": "Critical Damage"
+    },
+    "critString": {
+      "choices": {
+        "2": "Crit",
+        "3": "Crit!",
+        "4": "(Crit)",
+        "5": "Critical",
+        "6": "Critical!",
+        "7": "(Critical)",
+        "8": "BAMMMM!"
+      },
+      "hint": "Determines how criticals are labeled. Appears as text to the right of the critical damage roll. Only works on Better Rolls.",
+      "name": "Critical Indicator"
+    },
+    "d20Mode": {
+      "choices": {
+        "1": "Single Roll (Shift Advantage, Ctrl Disadvantage)",
+        "2": "Dual Rolls",
+        "3": "ゴゴ Triple Threat ゴゴ"
+      },
+      "hint": "Determines how attack rolls, ability checks, and saving throws are shown.",
+      "name": "d20 Mode"
+    },
+    "d20RollIconsEnabled": {
+      "hint": "If enabled, attacks, checks, and saves show natural die roll",
+      "name": "Show D20 die icon for multi rolls"
+    },
+    "damageContextEnabled": {
+      "hint": "Allows entering context for damage labels, which precede the damage type. Only works on Better Rolls.",
+      "name": "Damage Context Labels"
+    },
+    "damageContextPlacement": {
+      "hint": "Determines if and where a damage roll's context label appears.",
+      "name": "Show Damage Context Labels"
+    },
+    "damagePromptEnabled": {
+      "hint": "Do not autoroll damage, instead show a damage button if there is an attack roll or saving throw.",
+      "name": "Damage Prompt In Chat Card"
+    },
+    "damageRollPlacement": {
+      "choices": {
+        "0": "Don't Show",
+        "1": "Above",
+        "2": "Below & Inside",
+        "3": "Below & Outside"
+      },
+      "hint": "Determines where the damage type label is placed, relative to a damage roll.",
+      "name": "Show Damage Type Labels"
+    },
+    "damageTitlePlacement": {
+      "hint": "Determines if a damage roll's title, such as \"Damage\", appears.",
+      "name": "Show Damage Title Labels"
+    },
+    "defaultRollArt": {
+      "hint": "Determines which art is used by default for ability checks and saving throws. If this is not available (or is the default mystery man icon), it will use the other icon instead.",
+      "name": "Use Default Art"
+    },
+    "diceEnabled": {
+      "hint": "Enables the improved dice outputs for DnD5e. Affects all ability checks, saving throws, items, spells, and features on the sheet. Requires reopening the sheet.",
+      "name": "Enable Better Rolls"
+    },
+    "error": {
+      "autoDestroy": "The {name} disappears as its last charge is consumed.",
+      "noActorWithId": "No actor is known with that ID",
+      "noActorWithName": "No actor is known with that name",
+      "noChargesLeft": "This item has run out of charges!",
+      "noItemWithId": "No item is known with that ID on actor",
+      "noKnownItemOnActor": "does not own an item named",
+      "noSelectedActor": "Must have a character selected to use this macro!",
+      "rollEvaluation": "Dice roll evaluation failed: {msg}"
+    },
+    "hideDC": {
+      "choices": {
+        "0": "Never",
+        "1": "NPCs Only",
+        "2": "Always"
+      },
+      "hint": "Determines if the DC is hidden on save DC buttons on Better Rolls.",
+      "name": "Hide Save DCs",
+      "string": "??"
+    },
+    "imageButtonEnabled": {
+      "hint": "When clicking on an item's image, output a Better Roll message to chat instead of the normal chat output. Can be bypassed by holding Alt when clicking.",
+      "name": "Make Item Image Auto-roll"
+    },
+    "playRollSounds": {
+      "hint": "Plays a dice-rolling sound when a Better Rolls message is sent to chat. Wlll not play if Maestro's Item Track are enabled.",
+      "name": "Enable Roll Sounds"
+    },
+    "queryAdvantageEnabled": {
+      "hint": "Adds a Query for Advantage/Normal/Disadvantage roll types. Ctrl + Shift may still be used.",
+      "name": "Query for (Dis)Advantage"
+    },
+    "querying": {
+      "advantage": "Advantage",
+      "disadvantage": "Disadvantage",
+      "normal": "Normal",
+      "title": "What type of roll?"
+    },
+    "quickDefaultDescriptionEnabled": {
+      "hint": "If enabled, weapons and tools will have their descriptions show by default on quick rolls. Only affects new weapons and tools, as other item types already have descriptions enabled by default.",
+      "name": "Quick Roll Description Enabled by Default"
+    },
+    "rollButtonsEnabled": {
+      "hint": "Adds buttons to items, spells, and features in the sheet, which display when the item is expanded. May be incompatible with the Item Sheet Buttons mod. Requires reopening the sheet.",
+      "name": "Add Roll Buttons to Sheet"
+    },
+    "rollTitlePlacement": {
+      "hint": "Determines if a non-damage roll's title, such as \"Attack\", appear.",
+      "name": "Show Roll Title Labels"
+    },
+    "settings": {
+      "altDamage": "Alternate Damage",
+      "attackAndSave": "Attack / Save",
+      "attackRoll": "Attack Roll",
+      "baseDamage": "Base Damage",
+      "check": "Check",
+      "consume": "Consume",
+      "consumeQuantity": "Quantity",
+      "consumeRecharge": "Action Charge",
+      "consumeResource": "Resource",
+      "consumeUses": "Uses",
+      "context": "Context",
+      "critDamage": {
+        "hint": "Extra Critical Damage to apply when at least one damage is rolled"
+      },
+      "critThreshold": "Critical Threshold",
+      "description": "Description",
+      "label": "Label",
+      "otherFormula": "Other Formula",
+      "prompt": "Extended Prompt",
+      "properties": "Properties",
+      "quickFlavor": "Flavor",
+      "quickRollsAltLabel": "Alt Quick Rolls",
+      "quickRollsAltSubLabel": "(When holding Alt during a quick roll)",
+      "quickRollsLabel": "Quick Rolls",
+      "saveDC": "Save DC",
+      "useTemplate": "Place Template"
+    }
+  }
+}
