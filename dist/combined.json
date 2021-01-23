@@ -1387,6 +1387,8 @@
 		"ViewArt": "Открыть изображение",
 		"TypeAsi": "Повышение характеристик",
 		"TypeGoods": "Товар",
+		"TypeContainer": "Контейнер",
+		"TypeRace": "Раса",
 		"TypeTheme": "Тема",
 		"TypeTechnological": "Технологический предмет",
 		"TypeHybrid": "Гибридный предмет",
@@ -1394,10 +1396,24 @@
 		"TypeFusion": "Оружейное сопряжение",
 		"TypeUpgrade": "Улучшение брони",
 		"TypeAugmentation": "Аугментация",
-		"TypeStarshipaction": "Действие экпипажа",
-		"TypeStarshipcomputer": "Бортовой компьютер",
-		"TypeStarshipframe": "Корпус звездолёта",
-		"TypeStarshipweapon": "Бортовое орудие",
+		"TypeStarshipablativearmor": "Звездолёт: Абляционная броня",
+		"TypeStarshipaction": "Звездолёт: Действие экпипажа",
+		"TypeStarshiparmor": "Звездолёт: Броня",
+		"TypeStarshipcomputer": "Звездолёт: Бортовой компьютер",
+		"TypeStarshipcrewquarter": "Звездолёт: Каюта экипажа",
+		"TypeStarshipdefensivecountermeasure": "Звездолёт: Радиоэлектронная защита",
+		"TypeStarshipdriftengine": "Звездолёт: Потоковый ускоритель",
+		"TypeStarshipexpansionbay": "Звездолёт: Отсек расширения",
+		"TypeStarshipfortifiedhull": "Звездолёт: Бронирование корпуса",
+		"TypeStarshipframe": "Звездолёт: Корпус",
+		"TypeStarshipothersystem": "Звездолёт: Прочие системы",
+		"TypeStarshippowercore": "Звездолёт: Реактор",
+		"TypeStarshipreinforcedbulkhead": "Звездолёт: Укреплённые перегородки",
+		"TypeStarshipsecuritysystem": "Звездолёт: Система безопасности",
+		"TypeStarshipsensor": "Звездолёт: Сенсор",
+		"TypeStarshipshield": "Звездолёт: Щит",
+		"TypeStarshipthruster": "Звездолёт: Двигатель",
+		"TypeStarshipweapon": "Звездолёт: Орудие",
 		"TypeArchetypes": "Архетип",
 		"TypeChassis": "Корпус дрона",
 		"TypeMod": "Мод",
@@ -4493,10 +4509,27 @@
 		"ACTooltipBonus": "{type} Бонус: {mod} ({source})",
 		"ACTooltipMaxDex": "Модификатор ловкости: {maxDex} (armor max dex: {armorMax})",
 		"ACTooltipNotProficientMod": "Штраф за отсутствие навыка обращения: {profMod}",
+		"ACTooltipNotProficientShield": "Штраф за отсутствие навыка обращения со щитом: {profMod}",
+		"ACTooltipShieldACMod": "Модификатор щита: {shield} ({name})",
 		"ActorSheet": {
 			"Attributes": {
 				"Skills": {
 					"SkillRanks": "Пункты навыка"
+				}
+			},
+			"Features": {
+				"Categories": {
+					"Classes": "Классы",
+					"Race": "Раса",
+					"Theme": "Тема",
+					"Archetypes": "Архетипы",
+					"ActiveFeats": "Активные черты",
+					"PassiveFeats": "Пассивные черты"
+				},
+				"Filters": {
+					"Action": "Основное",
+					"Bonus": "Бонусное",
+					"Reaction": "Ответное"
 				}
 			},
 			"Header": {
@@ -4722,6 +4755,15 @@
 				"BrowserSortMethodLevel": "Уровень",
 				"Button": "Заклинания",
 				"Title": "Открыть заклинания"
+			},
+			"StarshipBrowser": {
+				"BrowserSortMethodBP": "ПС",
+				"BrowserSortMethodPCU": "ЕМ",
+				"Button": "Звездолёты",
+				"ComponentType": "Тип компонента",
+				"Title": "Справочник звездолётов",
+				"WeaponClass": "Класс орудия",
+				"WeaponType": "Тип орудия"
 			}
 		},
 		"CancelButtonLabel": "Отмена",
@@ -4746,9 +4788,15 @@
 		"CharacterFlagsSectionRacialTraits": "Особенности расы",
 		"CharacterLevelsTooltip": "{class} Уровни: {levels}",
 		"CharacterNamePlaceHolderText": "Имя персонажа",
+		"CharacterSheet": {
+			"Inventory": {
+				"ContainedWealth": "Стоимость содержимого: {wealth}"
+			},
+			"Warnings": {
+				"DeathByMassiveDamage": "{name} умер от Массированного урона!"
+			}
+		},
 		"ChatCard": {
-			"DamageRoll": "Бросок урона",
-			"HealingRoll": "Бросок лечения",
 			"ItemActivation": {
 				"Activates": "Активация",
 				"Cost": "Стоимость: {cost}",
@@ -5176,7 +5224,7 @@
 		},
 		"HealingTypesHealing": "Лечение",
 		"Health": "ПЗ",
-		"HullPoints": "Пункты корпуса",
+		"HullPoints": "ПЗ",
 		"ImprovedInitiativeHint": "Черта персонажа, которая повышает инициативу на 4",
 		"ImprovedInitiativeLabel": "Улучшенная инициатива",
 		"InitiativeDexModTooltip": "Модификатор ловкости: {mod}",
@@ -5213,6 +5261,7 @@
 			"Identified": "Опознано",
 			"MaxDex": "Макс.Лвк",
 			"Proficient": "Обращение",
+			"NotProficient": "Необучен",
 			"Unlimited": "Неограничено",
 			"Action": {
 				"ActionType": "Тип действия",
@@ -5270,9 +5319,23 @@
 				"Races": "Расы",
 				"Shields": "Щиты",
 				"Spells": "Заклинания",
-				"StarshipComputers": "Бортовые компьютеры",
-				"StarshipFrames": "Корпуса звездолётов",
-				"StarshipWeapons": "Бортовые орудия",
+				"StarshipAblativeArmors": "З: Абляционная броня",
+				"StarshipArmors": "З: Броня",
+				"StarshipComputers": "З: Компьютеры",
+				"StarshipCrewQuarters": "З: Каюты экипажа",
+				"StarshipDefensiveCountermeasures": "З: Радиоэлектронная защита",
+				"StarshipDriftEngine": "З: Потоковый ускоритель",
+				"StarshipExpansionBays": "З: Отсеки расширения",
+				"StarshipFortifiedHulls": "З: Бронирование корпуса",
+				"StarshipFrames": "З: Корпуса",
+				"StarshipOtherSystems": "З: Прочие системы",
+				"StarshipPowerCores": "З: Реакторы",
+				"StarshipReinforcedBulkheads": "З: Укреплённые перегородки",
+				"StarshipSecuritySystems": "З: Системы безопасности",
+				"StarshipSensors": "З: Сенсоры",
+				"StarshipShields": "З: Щиты",
+				"StarshipThrusters": "З: Двигатели",
+				"StarshipWeapons": "З: Орудия",
 				"TechnologicalItems": "Технологические",
 				"Themes": "Темы",
 				"Weapons": "Оружие",
@@ -5317,16 +5380,24 @@
 				"Details": "Описание магического предмета"
 			},
 			"Shield": {
-				"Action": "Эффект использования",
+				"Action": "Действие",
+				"AcMaxDex": "Макс. бонус ловкости: {maxDex}",
+				"ACP": "Штраф: {acp}",
 				"Aligned": "Поднят",
+				"ArmorCheck": "Штраф за броню: {acp}",
 				"Bonus": "Бонус щита",
+				"Bonuses": "Бонус Снаряжён: {wielded} / Поднят : {aligned}",
 				"Details": "Описание щита",
+				"Dex": "ЛВК: {dex}",
+				"Shield": "Щит",
+				"ShieldBonus": "Щит: {wielded} / {aligned}",
 				"Wielded": "Снаряжен"
 			},
 			"ShipWeapon": {
 				"ItemType": "Бортовое орудие",
 				"Source": "Источник",
 				"Mounted": "Смонтировано",
+				"NotMounted": "Демонтировано",
 				"Activated": "Активировано",
 				"WeaponArc": "Зона поражения",
 				"WeaponClass": "Класс орудия",
@@ -5334,6 +5405,8 @@
 				"PowerCost": "Потребление энергии",
 				"BpCost": "Стоимость ПС",
 				"Range": "Дистанция",
+				"ReloadCost": "10 минут",
+				"Speed": "Скорость: {speed} гексов",
 				"AttackBonus": "Бонус атаки"
 			},
 			"Spell": {
@@ -5440,12 +5513,36 @@
 				"Sturdy": "Крепкий",
 				"SturdyTooltip": "Снаряжение, такое как оружие и броня, считается крепким."
 			},
+			"StarshipAblativeArmor": {
+				"AblativeValue": "Общие дополнительные ПЗ",
+				"AblativeValueTooltip": "Общее количество ПЗ абляционной брони, которое может быть распределено по секторам.",
+				"Header": "Параметры абляционной брони",
+				"TargetLockPenalty": "Штраф к ЗН",
+				"TargetLockPenaltyTooltip": "Штраф, накладываемый на показатель защиты от наведения звездолёта.",
+				"TurnDistancePenalty": "Штраф к скорости разворота",
+				"TurnDistancePenaltyTooltip": "Штраф, увеличивающий количество гексов по прямой, после которых корабль может повернуть."
+			},
+			"StarshipArmor": {
+				"ArmorBonus": "Бонус брони",
+				"ArmorBonusTooltip": "Бонус КБ, предоставляемый данной бронёй.",
+				"Header": "Параметры абляционной брони",
+				"TargetLockPenalty": "Штраф к ЗН",
+				"TargetLockPenaltyTooltip": "Штраф, накладываемый на показатель защиты от наведения звездолёта.",
+				"TurnDistancePenalty": "Штраф к скорости разворота",
+				"TurnDistancePenaltyTooltip": "Штраф, увеличивающий количество гексов по прямой, после которых корабль может повернуть."
+			},
 			"StarshipComponent": {
 				"Cost": "Стоимость (В ПС)",
 				"CostTooltip": "Количество пунктов сборки, требуемых для установки данного компонента.",
+				"CostMultipliedBySize": "Множитель размера, стоимость",
+				"CostMultipliedBySizeTooltip": "Изменяется ли стоимость компонента в зависимости от размера звездолёта?",
+				"IsCostMultipliedBySize": "Действует",
 				"Header": "Общие свойства",
 				"PCU": "Использование ЕМ",
-				"PCUTooltip": "Энергия (в единицах мощности) расходуемая при активном модуле."
+				"PCUTooltip": "Энергия (в единицах мощности) расходуемая при активном модуле.",
+				"PoweredState": "Питание",
+				"PoweredStateTooltip": "Запитан ли данный компонент?",
+				"IsPowered": "Активно"
 			},
 			"StarshipComputer": {
 				"Header": "Свойства бортового компьютера",
@@ -5453,6 +5550,23 @@
 				"ModifierTooltip": "Бонус к броскам, предоставляемый компьютером.",
 				"Nodes": "Узлы",
 				"NodesTooltip": "Количество раз за раунд, которое компьютер может предоставлять бонус."
+			},
+			"StarshipDefensiveCountermeasure": {
+				"Header": "Параметры средства радиоэлектронной защиты",
+				"TargetLockBonus": "Бонус ЗН",
+				"TargetLockBonusTooltip": "Бонус к зашите от наведения звездолёта."
+			},
+			"StarshipDriftEngine": {
+				"EngineRating": "Рейтинг",
+				"EngineRatingTooltip": "Рейтинг потокового ускорителя.",
+				"Header": "Параметры потокового ускорителя",
+				"MaxSize": "Максимальный размер корпуса",
+				"MaxSizeTooltip": "Максимальный размер корпуса, на который может быть установлен данный потоковый ускоритель."
+			},
+			"StarshipFortifiedHull": {
+				"CriticalThresholdBonus": "Бонус КП",
+				"CriticalThresholdBonusTooltip": "Бонус к критическому пределу звездолёта.",
+				"Header": "Параметры бронирования корпуса"
 			},
 			"StarshipFrame": {
 				"Details": {
@@ -5485,8 +5599,62 @@
 					"WeaponArcTooltip": "Количество орудий, которые могут быть установлены в секторе, разделённое между лёгкими, тяжёлыми и сверхтяжёлыми орудиями.",
 					"WeaponTypeCapital": "Сверхтяжёлые",
 					"WeaponTypeHeavy": "Тяжёлые",
-					"WeaponTypeLight": "Лёгкие"
+					"WeaponTypeLight": "Лёгкие",
+					"WeaponTypeSpinal": "Осевое"
 				}
+			},
+			"StarshipPowerCore": {
+				"Header": "Параметры реактора",
+				"ProvidedPower": "Производимые ЕМ",
+				"ProvidedPowerTooltip": "Количество энергии, производимое реактором.",
+				"Sizes": "Поддерживаемые корпуса",
+				"SizesTooltip": "Выберите размеры корпусов, на которые может быть установлен данный реактор."
+			},
+			"StarshipReinforcedBulkhead": {
+				"Fortification": "Укрепление",
+				"FortificationTooltip": "Когда звездолёт получает критические повреждения, существет вероятность, зависящая от показателя укрепления перегородок звездолёта, что критический эффект применён не будет (звездолёт всё ещё получает положенный урон).",
+				"Header": "Параметры укрпелённых перегородок"
+			},
+			"StarshipSensor": {
+				"Header": "Параметры сенсоров",
+				"Modifier": "Модификатор сенсоров",
+				"ModifierTooltip": "Модификатор, добавляемый при сканировании планет вне боя.",
+				"Range": "Дистанция",
+				"RangeTooltip": "Шаг дистанции сканирования, малой дальности 5, средней дальности 10, большой дальности 20 гексов."
+			},
+			"StarshipShield": {
+				"ArmorBonus": "Бонус КБ",
+				"ArmorBonusTooltip": "Бонус класса брони, предоставляемый щитом.",
+				"DefenseValue": "Показатель защиты",
+				"DefenseValueTooltip": "Максимальный показатель защиты отражающего щита.",
+				"Header": "Параметры щита",
+				"Regeneration": "Восстановление в минуту",
+				"RegenerationTooltip": "Количество пунктов щита, восстанавливаемых за минуту вне боя.",
+				"ShieldPoints": "ПЩ",
+				"ShieldPointsTooltip": "Общее количество пунктов щита в распоряжении звездолёта.",
+				"ShieldType": "Тип",
+				"ShieldTypeTooltip": "Является ли данный щит отражающим?",
+				"IsDeflector": "Отражающий",
+				"TargetLockBonus": "Бонус ЗН",
+				"TargetLockBonusTooltip": "Бонус защиты от наведения, предоставляемый щитом."
+			},
+			"StarshipThruster": {
+				"Booster": "Ускоритель",
+				"BoosterTooltip": "Подробное описание приведено в описании отсека расширения BOOSTER THRUSTER HOUSING.",
+				"Header": "Параметры двигателя",
+				"IsBooster": "Ускоритель",
+				"IsEnabled": "Активен",
+				"PilotingModifier": "Модификатор пилотирования",
+				"PilotingModifierTooltip": "Дополнительный модификатор к проверкам пилотирования.",
+				"Size": "Размер",
+				"SizeTooltip": "Выберите размер звездолёта, на который может быть установлен этот двигатель.",
+				"Speed": "Скорость",
+				"SpeedTooltip": "Число гексов, которые пролетает звездолёт за раунд."
+			},
+			"StarshipWeapon": {
+				"Header": "Параметры бортового орудия",
+				"Placeholder": "напр. 5",
+				"Unmounted": "Демонтировано"
 			},
 			"Weapons": {
 				"Category": "Тип оружия",
@@ -5533,9 +5701,9 @@
 		"LanguagesVesk": "Веск",
 		"LanguagesYsoki": "Исоки",
 		"LevelLabel": "Круг заклинания",
-		"LevelLabelText": "Level",
+		"LevelLabelText": "Уровень",
 		"LightningReflexesHint": "Черта персонажа, которая добавляет 2 к испытаниям Рефлекса",
-		"LightningReflexesLabel": "Lightning Reflexes",
+		"LightningReflexesLabel": "Молниеносная реакция",
 		"LimitedUsePeriodsCharges": "Заряды",
 		"LimitedUsePeriodsDay": "День",
 		"LimitedUsePeriodsLong": "Длинный отдых",
@@ -5635,6 +5803,13 @@
 		"None": "None",
 		"Notes": "Notes",
 		"NPCSheet": {
+			"Features": {
+				"Actions": "Действия",
+				"ActiveItems": "Активные черты",
+				"Drone": "Предметы дрона",
+				"Attacks": "Атаки",
+				"Features": "Пассивные черты"
+			},
 			"Header": {
 				"NamePlaceHolderText": "Имя персонажа",
 				"RaceAndGraftsPlaceHolderText": "Пол, Раса, и Класс",
@@ -5656,6 +5831,9 @@
 					"Note": "Выберите тип предмета для создания.",
 					"Title": "Создать новый предмет"
 				}
+			},
+			"Inventory": {
+				"Inventory": "Инвентарь"
 			}
 		},
 		"NpcToggleSkillsDialogTitle": "Выбрать навыки НИП",
@@ -5702,6 +5880,8 @@
 				"HarryingFireTooltip": "Активируйте этот бонус, когда атакуете цель, которую отвлекает огнём ваш союзник.",
 				"Nonlethal": "Нелетальная"
 			},
+			"DamageRoll": "Бросок урона",
+			"DamageRollFull": "Бросок урона - {name}",
 			"Dialog": {
 				"AvailableModifiers": "Доступные модификаторы",
 				"AvailableModifiersTooltip": "Список доступных модификаторов для этого броска.",
@@ -5729,6 +5909,8 @@
 				"NormalDamageTooltip": "Бросить обычный урон.",
 				"Roll": "Бросить"
 			},
+			"HealingRoll": "Бросок исцеления",
+			"HealingRollFull": "Бросок исцеления - {name}",
 			"InitiativeRollFull": "Бросок инициативы - {name}",
 			"Starship": {
 				"ComputerBonus": "Бонус бортового компьютера",
@@ -5754,7 +5936,16 @@
 					"AvailableRolls": "Доступные броски"
 				},
 				"NoFormulaError": "Не указана формула для действия звездолёта '{name}'.",
-				"NoActorError": "Отсутствует член экипажа, необходимый для совершения броска."
+				"NoActorError": "Отсутствует член экипажа, необходимый для совершения броска.",
+				"Quadrant": {
+					"Title": "{name} - Выберите используемый сектор стрельбы.",
+					"Message": "Действие стрельбы требует выбора сектора. Туррель позволяет выбрать любой сектор. Пожалуйста, выберит один сектор.",
+					"Quadrant": "Сектор",
+					"Forward": "Передний",
+					"Port": "Левый",
+					"Starboard": "Правый",
+					"Aft": "Задний"
+				}
 			}
 		},
 		"Save": "Сохранить",
@@ -5780,6 +5971,10 @@
 			"Advantage": {
 				"Hint": "Включает возможность совершения бросков с преимуществом/помехой.",
 				"Name": "Использовать преимущества и помехи?"
+			},
+			"AlwaysShowQuantity": {
+				"Hint": "Всегда показывать количество предметов, даже если их 0 или 1. Необходимо обновить окно приложения, чтобы изменения вступили в силу.",
+				"Name": "Всегда показывать количество предметов"
 			},
 			"AutoCollapseCard": {
 				"Hint": "Автоматически сворачивает описания предметов в чате",
@@ -5849,98 +6044,10 @@
 		"ShipModelLabel": "Модель",
 		"ShipNameLabel": "Название",
 		"ShipSystems": {
-			"ArmorSystems": {
-				"Mk01": "Броня (тип 1)",
-				"Mk02": "Броня (тип 2)",
-				"Mk03": "Броня (тип 3)",
-				"Mk04": "Броня (тип 4)",
-				"Mk05": "Броня (тип 5)",
-				"Mk06": "Броня (тип 6)",
-				"Mk07": "Броня (тип 7)",
-				"Mk08": "Броня (тип 8)",
-				"Mk09": "Броня (тип 9)",
-				"Mk10": "Броня (тип 10)",
-				"Mk11": "Броня (тип 11)",
-				"Mk12": "Броня (тип 12)",
-				"Mk13": "Броня (тип 13)",
-				"Mk14": "Броня (тип 14)",
-				"Mk15": "Броня (тип 15)"
-			},
-			"BaseFrames": {
-				"Race": "Гонщик",
-				"Inter": "Перехватчик",
-				"Fight": "Истребитель",
-				"Shuttle": "Шаттл",
-				"Lfreight": "Лёгкий грузовик",
-				"Expl": "Исследователь",
-				"Trans": "Транспортник",
-				"Dest": "Разрушитель",
-				"Hfreight": "Тяжёлый грузовик",
-				"Bfreight": "Балкер",
-				"Cruiser": "Крейсер",
-				"Carr": "Носитель",
-				"Battle": "Линкор",
-				"Dread": "Дредноут"
-			},
-			"ComputerSystems": {
-				"Basic": "Базовый",
-				"Mk01m": "Одноузловой (тип 1)",
-				"Mk01d": "Двухузловой (тип 1)",
-				"Mk01tr": "Трёхузловой (тип 1)",
-				"Mk01te": "Четырёхузловой (тип 1)",
-				"Mk02m": "Одноузловой (тип 2)",
-				"Mk02d": "Двухузловой (тип 2)",
-				"Mk02tr": "Трёхузловой (тип 2)",
-				"Mk02te": "Четырёхузловой (тип 2)",
-				"Mk03m": "Одноузловой (тип 3)",
-				"Mk03d": "Двухузловой (тип 3)",
-				"Mk03tr": "Трёхузловой (тип 3)",
-				"Mk03te": "Четырёхузловой (тип 3)",
-				"Mk04m": "Одноузловой (тип 4)",
-				"Mk04d": "Двухузловой (тип 4)",
-				"Mk04tr": "Трёхузловой (тип 4)",
-				"Mk05m": "Одноузловой (тип 5)",
-				"Mk05d": "Двухузловой (тип 5)",
-				"Mk05tr": "Трёхузловой (тип 5)",
-				"Mk06m": "Одноузловой (тип 6)",
-				"Mk06d": "Двухузловой (тип 6)",
-				"Mk07m": "Одноузловой (тип 7)",
-				"Mk07d": "Двухузловой (тип 7)",
-				"Mk08m": "Одноузловой (тип 8)",
-				"Mk08d": "Двухузловой (тип 8)",
-				"Mk09m": "Одноузловой (тип 9)",
-				"Mk09d": "Двухузловой (тип 9)",
-				"Mk10m": "Одноузловой (тип 10)",
-				"Mk10d": "Двухузловой (тип 10)"
-			},
 			"CrewQuarterSystems": {
 				"Common": "Эконом",
 				"Good": "Стандарт",
 				"Luxurious": "Люкс"
-			},
-			"DefenseSystems": {
-				"Mk01": "Защита (тип 1)",
-				"Mk02": "Защита (тип 2)",
-				"Mk03": "Защита (тип 3)",
-				"Mk04": "Защита (тип 4)",
-				"Mk05": "Защита (тип 5)",
-				"Mk06": "Защита (тип 6)",
-				"Mk07": "Защита (тип 7)",
-				"Mk08": "Защита (тип 8)",
-				"Mk09": "Защита (тип 9)",
-				"Mk10": "Защита (тип 10)",
-				"Mk11": "Защита (тип 11)",
-				"Mk12": "Защита (тип 12)",
-				"Mk13": "Защита (тип 13)",
-				"Mk14": "Защита (тип 14)",
-				"Mk15": "Защита (тип 15)"
-			},
-			"DriftEngineSystems": {
-				"Basic": "\"Сигнал\" базовый",
-				"Booster": "\"Сигнал\" плюс",
-				"Major": "\"Сигнал\" мега",
-				"Superior": "\"Сигнал\" супер",
-				"Ultra": "\"Сигнал\" ультра"
 			},
 			"ExpansionBaySystems": {
 				"Arclab": "Магическая лаборатория",
@@ -5969,30 +6076,6 @@
 				"Good": "Хорогая",
 				"Perfect": "Безупречная"
 			},
-			"PowerCoreSystems": {
-				"MicronLight": "\"Микрон\" малый",
-				"MicronHeavy": "\"Микрон\" средний",
-				"MicronUltra": "\"Микрон\" ультра",
-				"ArcusLight": "\"Арка\" малый",
-				"PulseBrown": "\"Импульс\" коричневый",
-				"PulseBlack": "\"Импульс\" чёрный",
-				"PulseWhite": "\"Импульс\" белый",
-				"PulseGray": "\"Импульс\" серый",
-				"ArcusHeavy": "\"Арка\" средний",
-				"PulseGreen": "\"Импульс\" зелёный",
-				"PulseRed": "\"Импульс\" красный",
-				"PulseBlue": "\"Импульс\" синий",
-				"ArcusUltra": "\"Арка\" ультра",
-				"ArcusMaximum": "\"Арка\" максимум",
-				"PulseOrange": "\"Импульс\" оранжевый",
-				"PulsePrismatic": "\"Импульс\" радуга",
-				"NovaLight": "\"Нова\" малый",
-				"NovaHeavy": "\"Нова\" средний",
-				"NovaUltra": "\"Нова\" ультра",
-				"GatewayLight": "\"Врата\" малый",
-				"GatewayHeavy": "\"Врата\" средний",
-				"GatewayUltra": "\"Врата\" ультра"
-			},
 			"SecuritySystems": {
 				"Antihack": "Антихакерские системы",
 				"Antiper": "Противопехотное оружие",
@@ -6000,50 +6083,14 @@
 				"Compcounter": "Средства защиты для компьютеров",
 				"Selfdestruct": "Система самоуничтожения"
 			},
-			"SensorSystems": {
-				"Cut": "Уценённые",
-				"Bushort": "Малой дальности, бюджетные",
-				"Bashort": "Малой дальности, стандартные",
-				"Ashort": "Малой дальности, улучшенные",
-				"Bumed": "Средней дальности, бюджетные",
-				"Bamed": "Средней дальности, стандартные",
-				"Amed": "Средней дальности, улучшенные",
-				"Bulong": "Большой дальности, бюджетные",
-				"Balong": "Большой дальности, стандартные",
-				"Along": "Большой дальности, улучшенные"
-			},
-			"ShieldSystems": {
-				"100": "Средние щиты 100",
-				"120": "Средние щиты 120",
-				"140": "Средние щиты 140",
-				"160": "Средние щиты 160",
-				"200": "Средние щиты 200",
-				"240": "Тяжёлые щиты 240",
-				"280": "Тяжёлые щиты 280",
-				"320": "Тяжёлые щиты 320",
-				"360": "Тяжёлые щиты 360",
-				"420": "Тяжёлые щиты 420",
-				"480": "Тяжёлые щиты 480",
-				"540": "Превосходные щиты 540",
-				"600": "Превосходные щиты 600",
-				"010": "Базовые щиты 10",
-				"020": "Базовые щиты 20",
-				"030": "Базовые щиты 30",
-				"040": "Базовые щиты 40",
-				"050": "Лёгкие щиты 50",
-				"060": "Лёгкие щиты 60",
-				"070": "Лёгкие щиты 70",
-				"080": "Лёгкие щиты 80",
-				"090": "Средние щиты 90"
-			},
 			"Size": {
-				"Supercolossal": "Титан"
+				"Supercolossal": "Сверхколоссальный"
 			},
 			"StarshipArcs": {
-				"Forward": "Нос",
-				"Starboard": "Правый борт",
-				"Aft": "Корма",
-				"Port": "Левый борт",
+				"Forward": "Передний сектор",
+				"Starboard": "Правый сектор",
+				"Aft": "Задний сектор",
+				"Port": "Левый сектор",
 				"Turret": "Турель"
 			},
 			"StarshipRoles": {
@@ -6057,61 +6104,73 @@
 			"StarshipWeaponClass": {
 				"Light": "Лёгкое",
 				"Heavy": "Тяжёлое",
-				"Capital": "Сверхтяжёлое"
+				"Capital": "Сверхтяжёлое",
+				"Spinal": "Осевое"
 			},
 			"StarshipWeaponProperties": {
+				"Anchoring": "Анкерное",
 				"Array": "Секторное",
+				"Automated": "Автоматическое",
 				"Broad": "Широкий угол",
+				"Bugging": "Слежения",
+				"Burrowing": "Пробивающее",
+				"Buster": "Рассеивающее",
+				"Connecting": "Соединяющее",
+				"DeathField": "Смертельного поля",
+				"Deployed": "Носитель",
+				"Drone": "Дрон",
 				"Emp": "ЭМИ",
+				"FlakArea": "Зенитного огня",
+				"ForceField": "Силового поля",
+				"GravityTether": "Гравитационной связи",
+				"GravityWell": "Гравитационного колодца",
+				"Hacking": "Взлом",
+				"Immobilize": "Иммобилизирующее",
+				"Intimidating": "Пугающее",
 				"IrradiateL": "Облучение (низкий уровень)",
 				"IrradiateM": "Облучение (средний уровень)",
 				"IrradiateH": "Облучение (повышенный уровень)",
+				"Jamming": "Глушащее",
 				"Limited": "Боезапас",
 				"Line": "Линейное",
+				"Mine": "Минное",
+				"Mystical": "Мистическое",
+				"NavScram": "Навигационных помех",
+				"Numbing": "Сковывающее",
+				"Orbital": "Орбитальное",
+				"Pod": "Подвесное",
 				"Point": "Активная защита",
 				"Quantum": "Квантовое",
+				"Radiant": "Излучающее",
+				"Rail": "Рельсовое",
+				"Ramming": "Таранное",
+				"Redirect": "Перенаправляющее",
+				"Restricted": "Ограниченное",
 				"Ripper": "Потрошитель",
+				"Scatterscan": "Помеха датчикам",
+				"Smart": "Умное",
+				"Smoldering": "Плавящее",
+				"Spore": "Споровое",
+				"Suspending": "Подавляющее (щиты)",
+				"Sustained": "Длительное",
+				"Teleportation": "Телепортационное",
 				"Tractor": "Луч захвата",
+				"Transposition": "Транспозиции",
+				"VandalDrones": "Дроны-разрушители",
+				"Volatile": "Разделяющееся",
 				"Vortex": "Вихревое"
 			},
 			"StarshipWeaponRanges": {
+				"None": "Нет",
 				"Short": "Близкая",
 				"Medium": "Средняя",
 				"Long": "Дальняя"
 			},
 			"StarshipWeaponTypes": {
 				"Direct": "Прямого наведения",
-				"Tracking": "Самонаводящееся"
-			},
-			"ThrusterSystems": {
-				"T6": "Двигатели М6",
-				"T8": "Двигатели М8",
-				"T10": "Двигатели М10",
-				"T12": "Двигатели М12",
-				"T14": "Двигатели М14",
-				"S6": "Двигатели Н6",
-				"S8": "Двигатели Н8",
-				"S10": "Двигатели Н10",
-				"S12": "Двигатели Н12",
-				"M4": "Двигатели С4",
-				"M6": "Двигатели С6",
-				"M8": "Двигатели С8",
-				"M10": "Двигатели С10",
-				"M12": "Двигатели С12",
-				"L4": "Двигатели К4",
-				"L6": "Двигатели К6",
-				"L8": "Двигатели К8",
-				"L10": "Двигатели К10",
-				"H4": "Двигатели О4",
-				"H6": "Двигатели О6",
-				"H8": "Двигатели О8",
-				"H10": "Двигатели О10",
-				"G4": "Двигатели Г4",
-				"G6": "Двигатели Г6",
-				"G8": "Двигатели Г8",
-				"C4": "Двигатели Клс4",
-				"C6": "Двигатели Клс6",
-				"C8": "Двигатели Клс8"
+				"ECM": "Электронного противодействия",
+				"Tracking": "Самонаводящееся",
+				"Melee": "Ближнего боя"
 			}
 		},
 		"ShipTierLabel": "Ранг",
@@ -6212,43 +6271,172 @@
 				}
 			},
 			"Attributes": {
-				"Computer": "Борткомпьютер"
+				"BuildPoints": "ПС",
+				"BuildPointsUsage": "Использовано",
+				"Complement": "Экипаж",
+				"ComplementMin": "Минимальный экипаж для управления.",
+				"ComplementMax": "Максимальный экипаж в бою (не число персонажей, которые могут находиться на борту).",
+				"Computer": "Борткомпьютер",
+				"DriftNotAvailable": "Поток недоступен",
+				"DriftRating": "Поток",
+				"Power": "Реактор",
+				"PowerConsumption": "Потребление",
+				"PowerMissing": "Реактор не установлен"
 			},
 			"Crew": {
+				"ActionsPerRound": "Действий за раунд",
+				"AddSkill": "Добавить навык",
 				"AssignedCount": "({current} / {max})",
 				"Captain": "Капитан",
-				"Pilot": "Пилот",
-				"Gunners": "Бортстрелки",
-				"Engineers": "Бортинженеры",
-				"ScienceOfficers": "Офицеры по науке",
 				"ChiefMates": "Старпомы",
+				"CrewLimitReached": "Экипаж не может включать большего количества людей на роль '{targetRole}'.",
+				"CrewSetting": "Настройки экипажа",
+				"Engineers": "Бортинженеры",
+				"Gunners": "Бортстрелки",
+				"Header": "Экипаж",
+				"IsNPCCrew": "Экипаж НИП",
 				"MagicOfficers": "Офицеры по магии",
 				"Passengers": "Пассажиры",
-				"UnlimitedMax": "Неограниченно",
-				"CrewLimitReached": "Экипаж не может включать большего количества людей на роль '{targetRole}'."
+				"Pilot": "Пилот",
+				"ScienceOfficers": "Офицеры по науке",
+				"SkillModifier": "Модификатор",
+				"SkillRanks": "Ранги",
+				"UnlimitedMax": "Неограниченно"
+			},
+			"Critical": {
+				"Edit": "Изменить подверженные роли.",
+				"EditMessage": "Выбрать, на какие роли экипажа действует повреждение данной системы.",
+				"EditTitle": "Выбор подверженных ролей",
+				"Header": "Критические повреждения",
+				"Status": {
+					"Glitching": "Сбоит",
+					"Malfunctioning": "Неисправна",
+					"Nominal": "В норме",
+					"Wrecked": "Вышла из строя"
+				},
+				"Systems": {
+					"Engines": "Двигатели",
+					"LifeSupport": "Жизнеобеспечение",
+					"PowerCore": "Реактор",
+					"Sensors": "Сенсоры",
+					"WeaponsArrayAft": "Орудия (Задний сектор)",
+					"WeaponsArrayForward": "Орудия (Передний сектор)",
+					"WeaponsArrayPort": "Орудия (Левый сектор)",
+					"WeaponsArrayStarboard": "Орудия (Правый сектор)"
+				}
+			},
+			"Damage": {
+				"CrossedCriticalThreshold": "{name} получил критическое повреждение! Поулученный урон: {crossedThresholds}",
+				"Message": "Урон по звездолёту всегда приходит с определённого направления, пожалуйста, выберите сектор, к которому будет применён полученный урон.",
+				"Quadrant": {
+					"Quadrant": "Сектор",
+					"Forward": "Передний",
+					"Port": "Левый",
+					"Starboard": "Правый",
+					"Aft": "Задний"
+				},
+				"Title": "{name} - Выберите получивший урон сектор."
 			},
 			"Details": {
+				"Ablative": {
+					"Aft": "Задний сектор",
+					"Forward": "Передний сектор",
+					"Header": "АПЗ",
+					"Port": "Левый сектор",
+					"Starboard": "Правый сектор"
+				},
+				"AblativeExceedsHull": "Общее число ПЗ абляционной брони превышает удвоенное число ПЗ корпуса!",
+				"AblativeExceedsHullTooltip": "На звездолёт невозможно установить абляционную броню, предоставляющую временные ПЗ, в два раза превышающие максимальные ПЗ корпуса. (For more information, see the Starship Operations Manual pg. 20)",
+				"AblativeTooHigh": "Слишком много абляционной брони распределено!",
+				"AblativeTooHighTooltip": "Общее число ПЗ абляционной брони или сумма ПЗ текущих участков абляционной брони слишком высоки.",
 				"Shields": {
-					"Aft": "Щиты заднего сектора",
-					"Forward": "Щиты переднего сектора",
+					"Aft": "Задний сектор",
+					"Conventional": "Щиты",
+					"Deflector": "УЗ Щита",
+					"Forward": "Передний сектор",
 					"Header": "Щиты",
-					"Port": "Щиты левого сектора",
-					"Starboard": "Щиты правого сектора"
+					"Port": "Левый сектор",
+					"Starboard": "Правый сектор"
 				},
 				"ShieldTooHigh": "Щиты слишком высоки!",
-				"ShieldTooHighTooltip": "Уровень энергии щита не может превышать 70% общего объёма щитов, поскольку у каждого из щитов должно быть не менее 10% от общего количества ПЩ. (Больше инфомации на стр. 301)"
+				"ShieldTooHighTooltip": "Уровень энергии щита не может превышать 70% общего объёма щитов, поскольку у каждого из щитов должно быть не менее 10% от общего количества ПЩ. (Больше инфомации на стр. 301)",
+				"ShieldTotalTooHigh": "Общий объём щитов превышает максимум!",
+				"ShieldTotalTooHighTooltip": "Сумма всех щитов превышает максимальное значение."
 			},
 			"Features": {
+				"ExpansionBays": "Отсеки расширения ({current} / {max})",
 				"Frame": "Корпус ({current} / 1)",
-				"Systems": "Системы"
+				"OtherSystems": "Другие системы",
+				"PowerCores": "Реакторы",
+				"PrimarySystems": "Основные системы",
+				"SecuritySystems": "Системы безопасности",
+				"Thrusters": "Двигатели",
+				"Prefixes": {
+					"StarshipAblativeArmors": "Абляционная броня",
+					"StarshipArmors": "Броня",
+					"StarshipComputers": "Борткомпьютер",
+					"StarshipCrewQuarters": "Каюты экипажа",
+					"StarshipDefensiveCountermeasures": "Системы радиоэлектронной защиты",
+					"StarshipDriftEngine": "Потоковый ускоритель",
+					"StarshipExpansionBays": "Отсек расширения",
+					"StarshipFortifiedHulls": "Бронирование корпуса",
+					"StarshipFrames": "Корпус",
+					"StarshipOtherSystems": "Другие системы",
+					"StarshipPowerCores": "Реактор",
+					"StarshipReinforcedBulkheads": "Укреплённые перегородки",
+					"StarshipSecuritySystems": "Системы безопасности",
+					"StarshipSensors": "Сенсоры",
+					"StarshipShields": "Щиты",
+					"StarshipThrusters": "Двигатели",
+					"StarshipWeapons": "Орудия"
+				}
 			},
 			"Header": {
+				"BP": "ПС",
+				"CT": "КП",
+				"CriticalThreshold": "Критический предел",
+				"DT": "ПП",
+				"DamageThreshold": "Предел прочности",
 				"FrameMissing": "Отсутствует корпус",
-				"Maneuverability": "Манёвренность: {maneuverability}",
-				"Size": "Размер: {size}"
+				"HullPointIncrementTooltip": "Это количество пунктов прочности, которое добавляется к корпусу звездолёта при достижении 4 ранга (и каждые 4 ранга после этого)",
+				"Max": "Макс",
+				"Misc": "Прочее",
+				"Movement": {
+					"Maneuverability": "Манёвренность",
+					"ManeuverabilityTooltip": "Манёвренность: {maneuverability}",
+					"Speed": "Скорость",
+					"ThrustersMissing": "Двигатели отсутствуют",
+					"Title": "Движение",
+					"Turn": "Поворот"
+				},
+				"PCU": "ЕМ",
+				"Size": "Размер: {size}",
+				"Statistics": "Характеристики",
+				"Thresholds": "Пороги",
+				"Value": "Значение"
+			},
+			"Inventory": {
+				"Inventory": "Инвентарь"
 			},
 			"Modifiers": {
-				"ComputerBonus": "Бонус компьютера: {mod} ({source})"
+				"AblativeOverload": "Абляционная перегрузка: {mod}",
+				"Base": "Базовое: 10",
+				"ComputerBonus": "Бонус компьютера: {mod} ({source})",
+				"MiscModifier": "Прочие модификаторы: {value}",
+				"PilotingBonus": "Бонус пилотирования: {value}",
+				"PilotSkillBonus": "Бонус навыка пилота: {value}",
+				"SizeModifier": "Модификатор размера: {value}",
+				"UnevenAblative": "Нераспределённая абляционная броя: {mod}"
+			},
+			"Quadrants": {
+				"AblativeHeader": "Абляционная броня",
+				"ArmorClass": "Класс брони",
+				"EvenDistribution": "Равное распределение",
+				"Header": "Защита секторов",
+				"NotAvailable": "Недоступно",
+				"QuadrantLimit": "Ограничение сектора",
+				"ShieldHeader": "Щиты",
+				"TargetLock": "Защита от наведения"
 			},
 			"Role": {
 				"Captain": "Капитан",
@@ -6263,10 +6451,10 @@
 				"OpenCrew": "Свободный член экипажа"
 			},
 			"Sides": {
-				"Aft": "Корма",
-				"Forward": "Нос",
-				"Port": "Левый борт",
-				"Starboard": "Правый борт"
+				"Aft": "Задний сектор",
+				"Forward": "Передний сектор",
+				"Port": "Левый сектор",
+				"Starboard": "Правый сектор"
 			},
 			"Tabs": {
 				"Actions": "Действия",
@@ -6279,6 +6467,8 @@
 				"ForwardArc": "Передний сектор ({slots})",
 				"HeavySlots": "Тяжёлые: {current} / {max}",
 				"LightSlots": "Лёгкие: {current} / {max}",
+				"SpinalSlots": "Осевые: {current} / {max}",
+				"NoCapacity": "У этого орудия не осталось зарядов для атаки.",
 				"NotAvailable": "Недоступно",
 				"NotMounted": "Демонтированные орудия",
 				"PortArc": "Левый сектор ({slots})",
@@ -6286,7 +6476,7 @@
 				"Turret": "Туррель ({slots})"
 			}
 		},
-		"SubmitButtonLabel": "Отправить",
+		"SubmitButtonLabel": "Принять",
 		"SystemWide": "System-Wide",
 		"TempHPMaxPlaceHolderText": "+Максимальные",
 		"TempHPPlaceHolderText": "+Временные",
@@ -6299,7 +6489,7 @@
 		"UPBs": "УПО",
 		"Vehicles": {
 			"VehicleCoverTypes": {
-				"None": "-",
+				"None": "Нет",
 				"Cover": "Укрытие",
 				"Soft": "Живое укрытие",
 				"Partial": "Частичное укрытие",
@@ -6312,6 +6502,54 @@
 				"Landw": "Наземный и водный",
 				"Air": "Воздушный",
 				"Landa": "Наземный и воздушный"
+			}
+		},
+		"VehicleSheet": {
+			"Attacks": {
+				"Title": "Атаки и модификаторы",
+				"ToDo": "Ещё не доделано."
+			},
+			"Details": {
+				"Dimensions": {
+					"Length": "Длина",
+					"Height": "Высота",
+					"Title": "Габариты",
+					"Unit": "фт",
+					"Width": "Ширина"
+				},
+				"Hardness": "Твёрдость",
+				"Movement": {
+					"Drive": "Бой",
+					"DrivePlaceholder": "напр. 15 фт",
+					"DriveTooltip": "Скорость в тактическом бою при использовании действия движения.",
+					"Full": "Максимальная",
+					"FullPlaceholder": "напр. 500 фт",
+					"FullTooltip": "Максимальная скорость ТС в тактическом бою.",
+					"Speed": "Стратегическая",
+					"SpeedPlaceholder": "напр. 55 мвч",
+					"SpeedTooltip": "Скорость при стратегических перемещениях по типовой местности.",
+					"Title": "Скорость"
+				},
+				"OtherAttributes": {
+					"Cover": "Укрытие",
+					"Passengers": "Пассажиры",
+					"Size": "Размер",
+					"Title": "Другие атрибуты",
+					"Type": "Тип"
+				},
+				"Threshold": "Threshold"
+			},
+			"Header": {
+				"Level": "Ранг",
+				"LevelPlaceholder": "1",
+				"NamePlaceholder": "Название транспорта",
+				"NameTooltip": "Введите здесь название транспорта.",
+				"Price": "Цена",
+				"PricePlaceholder": "Цена в кредитах",
+				"PriceTooltip": "Стоимость покупки транспорта в кредитах."
+			},
+			"Tabs": {
+				"Attacks": "Атаки"
 			}
 		},
 		"WeaponCategoriesCryo": "Криооружие",
@@ -6465,8 +6703,6 @@
 		"WeaponTypesSolarian": "Солярионский оружейный кристалл",
 		"WeaponTypesSpecial": "Особое оружие",
 		"WillSave": "Воля",
-		"Ability": "Характеристика",
-		"ItemStatus": "Статус предмета",
 		"Units": {
 			"Speed": "фт."
 		},
