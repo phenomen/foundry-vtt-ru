@@ -2,15 +2,18 @@
     "name": "ru-RU",
     "title": "Translation: Russian",
     "description": "Модуль добавляет русский язык в Foundry VTT, системы D&D5, Pathfinder 1, Starfinder, OSE, GURPS, Coriolis, Dungeon World, Savage World, Cypher, Traveller и некоторые модули.<br/><br/><b>Ведущий</b> должен выполнить следующее в каждом созданном мире:<br/>Game Settings > Manage Modules и поставить галочку на Translation: Russian.<br/><b>Каждый участник</b> должен выполнить следующее:<br/>Game Settings > Configure Settings и поменять Language на Russian.<br/>",
-    "version": "0.7.9.24",
+    "version": "0.7.9.30",
     "minimumCoreVersion": "0.7.8",
     "compatibleCoreVersion": "0.7.9",
     "author": "Phenomen#1337",
     "styles": [
-        "ru.css"
+        "styles/ru.css"
+    ],
+    "scripts": [
+        "scripts/loadCSS.js"
     ],
     "esmodules": [
-        "scripts/dnd5e.js"
+        "scripts/systemhacks.js"
     ],
     "packs": [],
     "languages": [
