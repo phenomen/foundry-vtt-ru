@@ -6,6 +6,12 @@
     "minimumCoreVersion": "0.7.8",
     "compatibleCoreVersion": "0.7.9",
     "author": "Phenomen#1337",
+    "dependencies": [
+		{
+		    "name": "babele",
+			"type": "module"
+		}
+	],  
     "styles": [
         "styles/ru.css"
     ],
@@ -13,7 +19,8 @@
         "scripts/loadCSS.js"
     ],
     "esmodules": [
-        "scripts/systemhacks.js"
+        "scripts/systemhacks.js",
+        "scripts/babele-register.js"
     ],
     "packs": [],
     "languages": [
