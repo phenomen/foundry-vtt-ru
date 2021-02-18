@@ -10,9 +10,9 @@
 
 
 ### Description
-Russian language for Foundry VTT including translation for D&D5, Starfinder, GURPS, OSE, Coriolis, Dungeon World, Savage Worlds, Cypher, Traveler systems, and some modules.
+Russian language for Foundry VTT including translation for D&D5, Pathfinder 1, Starfinder, OSE, GURPS, Delta Green, Coriolis, Dungeon World, Savage World, Cypher, Traveller systems, and some modules.
 
-Модуль добавляет русский язык в Foundry VTT, системы D&D5, Starfinder, GURPS, OSE, Coriolis, Dungeon World, Savage World, Cypher, Traveler и некоторые модули.
+Модуль добавляет русский язык в Foundry VTT, системы D&D5, Pathfinder 1, Starfinder, OSE, GURPS, Delta Green, Coriolis, Dungeon World, Savage World, Cypher, Traveller и некоторые модули.
 
 **Ведущий** должен выполнить следующее в каждом созданном мире:
 

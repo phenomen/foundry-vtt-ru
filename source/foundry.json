@@ -71,7 +71,11 @@
     "TurnNext": "Следующий ход",
     "TurnPrev": "Предыдущий ход",
     "Turns": "Ходы",
-    "UnknownCombatant": "Неизвестный боец"
+    "UnknownCombatant": "Неизвестный боец",
+    "CombatantActor": "Представляет актёра",
+    "EndConfirmation": "Завершить этот бой и очистить очередь ходов?",
+    "EndTitle": "Завершить бой?",
+    "RollsInitiative": "{name} проверяет инициативу!"
   },
   "COMPENDIUM": {
     "Create": "Создать библиотеку",
@@ -215,7 +219,8 @@
     "WallSelect": "Инструмент выделения стен",
     "WallSelectChain": "Выбор связанных стен",
     "WallSnap": "Прикреплять к сетке",
-    "WallTerrain": "Заграждающие стены"
+    "WallTerrain": "Заграждающие стены",
+    "GroupToken": "Инструменты токенов"
   },
   "Cancel": "Отмена",
   "Character": "Персонаж",
@@ -608,7 +613,8 @@
     "SaveConfig": "Сохранить",
     "Title": "Игроки",
     "UnBan": "Разблокировать игрока",
-    "ViewAvatar": "Открыть аватар"
+    "ViewAvatar": "Открыть аватар",
+    "CharSelected": "Выбранный персонаж"
   },
   "PLAYLIST": {
     "Create": "Создать плейлист",
@@ -622,7 +628,6 @@
     "ModeSimultaneous": "Одновременный",
     "Name": "Название плейлиста",
     "Play": "Воспроизвести плейлист",
-    "SoundAdd": "Добавить звук",
     "SoundDelete": "Удалить звук",
     "SoundEdit": "Редактировать звук",
     "SoundLoop": "Повторять звук",
@@ -639,7 +644,8 @@
     "Update": "Обновить плейлист",
     "VolAmbient": "Фоновые звуки",
     "VolInterface": "Интерфейс",
-    "VolPlaylist": "Плейлист"
+    "VolPlaylist": "Плейлист",
+    "SoundCreate": "Создать звук"
   },
   "Packs": "Наборы",
   "Path": "Путь",
@@ -764,7 +770,9 @@
     "TokenDragPreviewN": "Зрение при перетаскивании",
     "Update": "Обновление программы",
     "ViewModules": "Посмотреть активные модули",
-    "Wiki": "Wiki сообщества"
+    "Wiki": "Wiki сообщества",
+    "NoCanvasL": "Визуальное представление игрового стола можно отключить. Это позволит участникам с очень слабыми PC пользоваться только базовым функционалом Foundry, вроде листов персонажа и чата.",
+    "NoCanvasN": "Отключить игровой стол"
   },
   "SETUP": {
     "AWSHint": "Вы можете выбрать указать файл настроек AWS для интеграции S3 (абсолютный/относительный путь к папке User Data)",
@@ -851,7 +859,32 @@
     "WorldLaunch": "Запустить",
     "WorldMigrationRequired": "<p>Запуск мира <strong>{world}</strong> требует обновления данных с версии {oldVersion} на текущую версию {newVersion}.</p><p>В ходе этого процесса <strong>{nIncompatible} из {nModules} установленных модулей</strong> могут быть не совместимы с новой версией и будут отключены. Позже вы можете включить их вручную.</p><p>Проверьте обновления ваших модулей и систем. Начать обновление данных?</p>",
     "WorldMigrationRequiredTitle": "Требуется обновление данных мира",
-    "Worlds": "Миры"
+    "Worlds": "Миры",
+    "ConfigSave": "Сохранить настройки",
+    "ConfigSaveRestart": "Сервер Foundry был выключен для применения изменений. Вам нужно перезапустить его вручную.",
+    "ConfigSaveWarning": "Изменение этих настроек приведёт к выключению сервера и потребует ручной перезагрузки. Хотите продолжить?",
+    "CurrentVersion": "Текущая версия",
+    "ForceUpdate": "Принудительно",
+    "PackageDeleteConfirm": "Вы уверены, что хотите удалить {type} <strong>{title}</strong>?",
+    "PackageDeleteNoUndo": "<strong>Внимание:</strong> Это действие не может быть отменено.",
+    "PackageDeleteTitle": "Удалить {type}: {title}",
+    "PackageDeleteWorldConfirm": "Введите точное название мира, чтобы подтвердить удаление.",
+    "PackageStatusBlocked": "Заблокирован",
+    "PackageStatusCheck": "Проверить обновление",
+    "PackageStatusCurrent": "Обновлён",
+    "PackageStatusUpdate": "Обновить",
+    "UpdateCleaningC": "Очистка завершена",
+    "UpdateCleaningS": "Очистка папок",
+    "UpdateDownloadingC": "Загрузка завершена",
+    "UpdateDownloadingS": "Загружается обновление",
+    "UpdateExtractingC": "Распаковка завершена",
+    "UpdateExtractingS": "Распаковывается обновление",
+    "UpdateInstallingC": "Установка завершена",
+    "UpdateInstallingS": "Устанавливается обновление",
+    "UpdateNotAvailable": "Обновлений в выбранном канале не найдено.",
+    "UpdateNoupdateMode": "Вы не можете обновить версию Foundry, т.к. программа была запущена в режиме --noupdate",
+    "WorldDeleteConfirm1": "<strong>Внимание:</strong> Это действие <strong>навсегда</strong> удалит ваш мир и всё его содержимое. Вы уверены?",
+    "WorldDeleteConfirm2": "Введите точное название мира <strong>{title}</strong>, чтобы продолжить."
   },
   "SHEETS": {
     "DefaultSheet": "Лист по умолчанию",
@@ -896,7 +929,8 @@
     "SourcePath": "Файл звука",
     "TypeGlobal": "Глобальный звук",
     "TypeLocal": "Локальный звук",
-    "Update": "Обновить фоновый звук"
+    "Update": "Обновить фоновый звук",
+    "New": "Новый звук"
   },
   "Save Changes": "Сохранить",
   "Scale": "Масштаб",
@@ -973,7 +1007,9 @@
     "VisionDimDist": "Тусклое зрение",
     "VisionHas": "Имеет зрение",
     "VisionInstructions": "Настройка зрения и отбрасываемого токеном света.",
-    "VisionSightAngle": "Угол зрения"
+    "VisionSightAngle": "Угол зрения",
+    "WarningNoActor": "Этот токен связан с актёром, который больше не существует.",
+    "WarningNoVision": "У вас нет токенов со зрением в этой сцене."
   },
   "Token": "Токен",
   "Type": "Тип",
@@ -1091,11 +1127,42 @@
   },
   "WORLD": {
     "DescTab": "Описание мира",
-    "DetailTab": "Подробности мира"
+    "DetailTab": "Подробности мира",
+    "BackgroundImage": "Фоновое изображение",
+    "DataPath": "Путь к файлам",
+    "Description": "Описание мира",
+    "GameSystem": "Система",
+    "NextSession": "Следующая игра",
+    "ResetKeys": "Сбросить ключи доступа",
+    "ResetModules": "Сбросить активные модули",
+    "Title": "Название мира"
   },
   "Warning": "Предупреждение",
   "Width": "Ширина",
   "XCoord": "X-координата",
   "YCoord": "Y-координата",
-  "Yes": "Да"
+  "Yes": "Да",
+  "TILE": {
+    "ConfigHint": "Настройте тайл, который будет отображаться над фоном сцены.",
+    "Image": "Изображение или видео",
+    "ConfigTitle": "Настройка тайла"
+  },
+  "DOCUMENT": {
+    "Create": "Создать {type}",
+    "Tile": "Тайл",
+    "Update": "Обновить {type}",
+    "New": "Новый {type}"
+  },
+  "JOIN": {
+    "AdminKey": "Ключ администратора",
+    "AuthAdmin": "Вы вошли как администратор сервера.",
+    "CurrentPlayers": "Текущие игроки",
+    "HeaderDetails": "Подробности игры",
+    "HeaderJoin": "Войти в игру",
+    "HeaderSetup": "Вернуться к настройкам",
+    "HeaderWorld": "Описание мира",
+    "NextSession": "Следующая игра",
+    "SelectUser": "Выбор участника",
+    "UserKey": "Ключ участника"
+  }
 }
