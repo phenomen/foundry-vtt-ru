@@ -79,8 +79,6 @@
     "End": "End Combat",
     "InitiativeRoll": "Roll Initiative",
     "InitiativeReset": "Reset Initiative",
-    "EndTitle": "End Combat Encounter?",
-    "EndConfirmation": "End this combat encounter and empty the turn tracker?",
     "None": "No Active Encounter",
     "NoneActive": "There is no active Combat Encounter in your currently viewed Scene.",
     "NoneRemaining": "There are no Combatants remaining in this Encounter which are not defeated.",
@@ -93,7 +91,6 @@
     "RoundNext": "Next Round",
     "RollNPC": "Roll NPCs",
     "RollAll": "Roll All",
-    "RollsInitiative": "{name} rolls for Initiative!",
     "Settings": "Combat Tracker Settings",
     "SettingsSave": "Save Tracker Settings",
     "SkipDefeated": "Skip Defeated?",
@@ -106,7 +103,6 @@
     "TurnNext": "Next Turn",
     "TurnPrev": "Previous Turn",
     "UnknownCombatant": "Unknown Combatant",
-    "CombatantActor": "Represented Actor",
     "CombatantCreate": "Create Combatant",
     "CombatantDefeated": "Defeated",
     "CombatantHidden": "Hidden",
@@ -116,8 +112,8 @@
     "CombatantUpdate": "Update Combatant",
     "CombatantName": "Displayed Name",
     "CombatantRemove": "Remove Combatant",
-    "CombatantReroll": "Re-roll Initiative",
-    "CombatantToken": "Represented Token"
+    "CombatantReroll": "Reroll Initiative",
+    "CombatantToken": "Linked Token"
   },
   "COMPENDIUM": {
     "Name": "Compendium Name",
@@ -145,7 +141,7 @@
   "CONTROLS": {
     "Title": "Game Controls Reference",
     "Instructions": "This form describes common keyboard and mouse commands used to control various aspects of the Foundry Virtual Tabletop environment. Some controls are only available to a GameMaster user, those are highlighted in light purple.",
-    "GroupToken": "Token Controls",
+    "GroupBasic": "Basic Controls",
     "BasicSelect": "Select Tokens",
     "TargetSelect": "Select Targets",
     "BasicMeasure": "Measure Distance",
@@ -266,12 +262,6 @@
   "DICE": {
     "ErrorNonNumeric": "The dice roll formula {formula} did not produce a numeric outcome.",
     "WarnMissingData": "The attribute {match} was not present in the provided roll data."
-  },
-  "DOCUMENT": {
-    "Tile": "Tile",
-    "Create": "Create New {type}",
-    "New": "New {type}",
-    "Update": "Update {type}"
   },
   "DRAWING": {
     "ConfigTitle": "Drawing Configuration",
@@ -556,7 +546,6 @@
   "PLAYERS": {
     "Title": "Players",
     "CharSelect": "Select Character",
-    "CharSelected": "Selected Character",
     "CharRelease": "Release Character",
     "ConfigTitle": "Player Configuration",
     "PlayerColor": "Player Color",
@@ -585,7 +574,7 @@
     "Name": "Playlist Name",
     "Mode": "Playback Mode",
     "Update": "Update Playlist",
-    "SoundCreate": "Create Sound",
+    "SoundAdd": "Add Sound",
     "SoundEdit": "Edit Sound",
     "SoundDelete": "Delete Sound",
     "SoundLoop": "Loop Sound",
@@ -701,8 +690,6 @@
     "LangL": "Change the displayed language for Foundry Virtual Tabletop.",
     "LClickReleaseN": "Left-Click to Release Objects",
     "LClickReleaseL": "When enabled, a left click on empty canvas space will release any currently controlled objects. If disabled, objects are released by selecting an empty space, shift-clicking the object, or pressing the escape key.",
-    "NoCanvasN": "Disable Game Canvas",
-    "NoCanvasL": "The game canvas which provides a visual representation of the virtual tabletop can be disabled. This allows for low-end machines to use a subset of software features.",
     "CBubN": "Enable Chat Bubbles",
     "CBubL": "Configure whether or not chat bubbles will be displayed above Tokens for in-character and emote type chat messages.",
     "CBubPN": "Pan to Token Speaker",
@@ -745,6 +732,7 @@
     "UpdateRelease": "Release (Stable)",
     "UpdateKey": "Update Access Key",
     "ForceUpdateHint": "Checking the Force Update box will force your version to the requested channel. Do not use this option unless you know exactly what you are doing.",
+    "UpdateWarning": "In order to update Foundry Virtual Tabletop you will need to be connected to the internet and have a valid software license.",
     "Uninstall": "Uninstall",
     "WorldCreate": "Create World",
     "WorldDelete": "Delete World",
@@ -755,11 +743,6 @@
     "RequireSystem": "Requires System Update",
     "RequireDep": "Requires Dependency",
     "RequireCore": "Requires Core Update",
-    "ConfigSave": "Save Application Configuration",
-    "ConfigSaveWarning": "Modifying these configuration options will cause the server to be shut down and require that you restart the server manually. Do you wish to continue?",
-    "ConfigSaveRestart": "The Foundry Virtual Tabletop server has been terminated to apply changes. You must restart manually.",
-    "CurrentVersion": "Current Version",
-    "ForceUpdate": "Force Update?",
     "CompatibilityUnknown": "Compatibility Unknown",
     "CompatibilityRisk": "Compatibility Risk",
     "ManifestURL": "Manifest URL",
@@ -788,30 +771,9 @@
     "PackageDependenciesDecline": "You have chosen not to install the required dependency packages for {title}. You will need to install them manually.",
     "PackageDependenciesSuccess": "Successfully installed {title} and {number} dependencies.",
     "PackageUpdateBlocked": "An update is available for {name} but cannot be installed because it requires core software version {vreq} and you are currently using version {vcur}.",
-    "PackageDeleteTitle": "Delete {type}: {title}",
-    "PackageDeleteConfirm": "Are you sure you want to delete the {type} <strong>{title}</strong>?",
-    "WorldDeleteConfirm1": "<strong>Warning:</strong> This will permanently delete your world content and <strong>can not</strong> be un-done. Are you sure you wish to do this?</strong>.",
-    "WorldDeleteConfirm2": "Type the exact title of your world <strong>{title}</strong> in the box below to proceed.",
-    "PackageDeleteNoUndo": "<strong>Warning:</strong> This operation cannot be un-done.",
-    "PackageDeleteWorldConfirm": "You must enter the exact World name to confirm the deletion request.",
-    "PackageStatusCheck": "Check Update",
-    "PackageStatusBlocked": "Blocked",
-    "PackageStatusUpdate": "Update",
-    "PackageStatusCurrent": "Current",
-    "UpdateDownloadingS": "Downloading Update",
-    "UpdateDownloadingC": "Download Complete",
-    "UpdateExtractingS": "Extracting Update",
-    "UpdateExtractingC": "Extraction Complete",
-    "UpdateCleaningS": "Cleaning Directory",
-    "UpdateCleaningC": "Cleaning Complete",
-    "UpdateInstallingS": "Installing Update",
-    "UpdateInstallingC": "Installation Complete",
-    "UpdateWarning": "In order to update Foundry Virtual Tabletop you will need to be connected to the internet and have a valid software license.",
     "UpdateWarningWillDisable": "This update is a new major version of the Foundry Virtual Tabletop software. Installing this update will require some installed modules which may not yet be compatible to be disabled.",
     "UpdateButtonDownload": "Download Update {version}",
     "UpdateInfoAvailable": "An update to Foundry Virtual Tabletop version {version} is available!",
-    "UpdateNoupdateMode": "You are not allowed to update this instance of Foundry Virtual Tabletop because it was launched in --noupdate mode.",
-    "UpdateNotAvailable": "No software update is currently available on the requested update channel.",
     "WorldMigrationRequiredTitle": "World Data Migration Required",
     "WorldMigrationRequired": "<p>Launching the world <strong>{world}</strong> will migrate its data model from an older core software version {oldVersion} to the currently installed version {newVersion}.</p><p>As part of this process, <strong>{nIncompatible} out of {nModules} installed modules</strong> which may not yet be compatible with the new version will be automatically disabled. You may re-enable them manually if you wish.</p><p>Please check for any available updates to your game systems and modules, and please be sure to periodically back up your critical world data. Would you like to proceed?</p>",
     "AdminAccess": "Foundry Virtual Tabletop &bull; Administrator Access",
@@ -830,18 +792,6 @@
     "SSLCertLabel": "SSL Certificate",
     "SSLKeyLabel": "SSL Private Key",
     "SSLHint": "You may run the server using secure socket layer (SSL) encryption by providing paths to certificate and key files. Paths are absolute or relative to the Config subdirectory in user data."
-  },
-  "JOIN": {
-    "CurrentPlayers": "Current Players",
-    "HeaderJoin": "Join Game Session",
-    "HeaderDetails": "Game Details",
-    "HeaderSetup": "Return to Setup",
-    "HeaderWorld": "World Description",
-    "NextSession": "Next Session",
-    "SelectUser": "Select User",
-    "UserKey": "User Access Key",
-    "AuthAdmin": "You are authenticated as a server administrator user.",
-    "AdminKey": "Admin Access Key"
   },
   "SHEETS": {
     "ThisSheet": "This Sheet",
@@ -886,8 +836,7 @@
     "Easing": "Volume Easing",
     "EasingHint": "Adjust the volume level of the sound as Tokens move closer to the origin.",
     "MaxVol": "Maximum Volume",
-    "MaxVolHint": "Define the maximum volume of the sound at it's origin point (if easing) or everywhere in the area.",
-    "New": "New Sound"
+    "MaxVolHint": "Define the maximum volume of the sound at it's origin point (if easing) or everywhere in the area."
   },
   "FOLDER": {
     "Clear": "Clear Folder",
@@ -994,11 +943,6 @@
     "ConeTypeFlat": "Flat",
     "ConeTypeRound": "Round"
   },
-  "TILE": {
-    "ConfigHint": "Configure this tile sprite which is displayed above the Scene background.",
-    "ConfigTitle": "Tile Configuration",
-    "Image": "Tile Image or Video"
-  },
   "TOKEN": {
     "Assign": "Assign Token",
     "AssignWarn": "You must select one existing Token to assign as the new prototype configuration.",
@@ -1034,8 +978,6 @@
     "VisionBrightDist": "Bright Vision",
     "VisionDimDist": "Dim Vision",
     "VisionSightAngle": "Sight Angle",
-    "WarningNoActor": "This Token references and Actor which no longer exists within the World.",
-    "WarningNoVision": "You do not own any Token with vision in this Scene",
     "HOSTILE": "Hostile",
     "NEUTRAL": "Neutral",
     "FRIENDLY": "Friendly",
@@ -1079,15 +1021,7 @@
   },
   "WORLD": {
     "DetailTab": "World Details",
-    "DescTab": "World Description",
-    "Title": "World Title",
-    "DataPath": "Data Path",
-    "GameSystem": "Game System",
-    "BackgroundImage": "Background Image",
-    "NextSession": "Next Session",
-    "ResetModules": "Reset Active Modules",
-    "ResetKeys": "Reset User Access Keys",
-    "Description": "World Description"
+    "DescTab": "World Description"
   },
   "WEBRTC": {
     "Title": "Audio/Video Configuration",
