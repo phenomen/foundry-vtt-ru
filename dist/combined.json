@@ -10355,7 +10355,11 @@
 		"broken": "Сломлен и травмирован",
 		"accepted": "Одобрен"
 	},
-	"TIDY5E.EditActorImage": "Изменить портрет",
+	"TIDY5E.Subclass": "Подкласс",
+	"TIDY5E.EditActorImage": "ЛКМ: изменить портрет",
+	"TIDY5E.ShowActorImage": "ПКМ: показать портрет",
+	"TIDY5E.ShowPortraitArt": "показать портрет",
+	"TIDY5E.ShowTokenArt": "показать токен",
 	"TIDY5E.Exhaustion0": "Нет негативных эффектов",
 	"TIDY5E.Exhaustion1": "Помеха при проверке характеристик",
 	"TIDY5E.Exhaustion2": "Скорость снижена вдвое",
@@ -10373,9 +10377,15 @@
 	"TIDY5E.JournalQuests": "Задания",
 	"TIDY5E.JournalMisc": "Другое",
 	"TIDY5E.JournalEntries": "Записи журнала",
+	"TIDY5E.TogglePersonalityInfo": "Видимость свойств личности",
 	"TIDY5E.EnableEdit": "Включить редактирование",
 	"TIDY5E.DisableEdit": "Выключить редактирование",
 	"TIDY5E.EditHint": "Переключает режим, позволяющий удалять элементы списка.",
+	"TIDY5E.EmptySection": "Эта секция пуста. Разблокируйте лист для редактирования.",
+	"TIDY5E.GmOnlyEdit": "Только GM может редактировать эту секцию.",
+	"TIDY5E.AttunementWarning": "Предупреждение настроенности: Вы не можете настроиться на более чем {number} предметов!",
+	"TIDY5E.AttunementItems": "Настроенные предметы",
+	"TIDY5E.AttunementMax": "Максимум настроенности",
 	"TIDY5E.GridLayout": "Режим сетки",
 	"TIDY5E.ListLayout": "Режим списка",
 	"TIDY5E.Encumbrance": "Нагрузка",
@@ -10389,109 +10399,184 @@
 	"TIDY5E.Show": "показать",
 	"TIDY5E.Hide": "скрыть",
 	"TIDY5E.Edit": "изменить",
-	"TIDY5E.TraitsEmpty": "без черт",
+	"TIDY5E.TraitsEmpty": "нет черт",
 	"TIDY5E.Abilities": "Характеристики",
 	"TIDY5E.Environment": "Окружение",
+	"TIDY5E.CurrencyAbbrCP": "мм",
+	"TIDY5E.CurrencyAbbrSP": "см",
+	"TIDY5E.CurrencyAbbrGP": "зм",
+	"TIDY5E.CurrencyAbbrEP": "эм",
+	"TIDY5E.CurrencyAbbrPP": "пм",
 	"TIDY5E.AbbrMod": "Мод",
+	"TIDY5E.AbbrSavingThrow": "Испытание",
+	"TIDY5E.SpellAttackMod": "Мод. атаки",
+	"TIDY5E.PreparedSpells": "Подготовленные заклинания",
+	"TIDY5E.PreparedSpellsMax": "Макс. подготовленных заклинаний",
+	"TIDY5E.Components": "Реагенты",
+	"TIDY5E.SpellSchool": "Школа",
 	"TIDY5E.TokenLinked": "Токен связан с актёром",
 	"TIDY5E.TokenUnlinked": "Токен не связан с актёром",
-	"TIDY5E.ItemDetailsHeadline": "Механический/художественный текст",
+	"TIDY5E.ItemDetailsHeadline": "Механика/художественный текст",
 	"TIDY5E.Settings.GlobalLabel": "Глобальный",
 	"TIDY5E.Settings.UserLabel": "Участник",
 	"TIDY5E.Settings.PcLabel": "Игрок",
 	"TIDY5E.Settings.NpcLabel": "NPC",
 	"TIDY5E.Settings.VehicleLabel": "Транспорт",
-	"TIDY5E.Settings.UseExpandedSheet": {
-		"name": "Expanded View for the Limited Sheet.",
-		"hint": "The expanded view for the limited sheet displays the entire character sheet (minus the Private Notes tab) to players with Limited permission for that actor."
+	"TIDY5E.Settings.SheetMenu": {
+		"label": "Настройки листа"
 	},
-	"TIDY5E.Settings.UseDarkMode": {
-		"name": "Use alternate dark mode.",
-		"hint": "Checking this option will enable an alternate Dark Mode version of the Tidy5e Sheet."
+	"TIDY5E.Settings.AllItemCards": {
+		"name": "Show item info cards in all layouts.",
+		"hint": "Disable if you only want the slide out item info cards in grid layout."
 	},
-	"TIDY5E.Settings.PrimaryAccentColor": {
-		"name": "Primary accent color.",
-		"hint": "Overwrite the default primary accent color (default: #ff6400/darkmode: #48BB78) used to highlight e. g. buttons, input field borders or hover states. Use any valid css value like red/#ff0000/rgba(255,0,0)/rgba(255,0,0,1)."
+	"TIDY5E.Settings.NpcItemCards": {
+		"name": "Show item info cards for NPCs/vehivcles.",
+		"hint": "Disable if you don't want the slide out item info cards for NPCs/vehicles."
 	},
-	"TIDY5E.Settings.SecondaryAccentColor": {
-		"name": "Secondary accent color.",
-		"hint": "Overwrite the default secondary accent color (default: rgba(210,0,255,.1)/darkmode: rgba(0,150,150,.325)) used to highlight preparation states. Use any valid css value like red/#ff0000/rgba(255,0,0)/rgba(255,0,0,1)."
+	"TIDY5E.Settings.FloatingItemCards": {
+		"name": "Item info cards float next to cursor.",
+		"hint": "Enable to detach item info cards from sheet and float them next to the cursor. Best to use with delay. Also useful when sheet is popped out."
 	},
-	"TIDY5E.Settings.AlwaysPreparedAccentColor": {
-		"name": "Accent Color for Always Prepared Spells.",
-		"hint": "Overwrite the default accent color (default: rgba(210,0,255,.1)/darkmode: rgba(0,150,150,.325)) for Always Prepared Spells. Use any valid css value like red/#ff0000/rgba(255,0,0)/rgba(255,0,0,1)."
+	"TIDY5E.Settings.ItemCardsDelay": {
+		"name": "Delay showing info cards.",
+		"hint": "The Item Card will show when you hover an item for the value in milliseconds (0 = no delay, 300 is default)."
 	},
-	"TIDY5E.Settings.UseRoundPortraits": {
-		"name": "Sheets use round portraits.",
-		"hint": "You should check this if you use round portraits. It will adapt the hp overlay and portait buttons to make it look nicer. Also looks nice on square portraits without a custom frame."
+	"TIDY5E.Settings.FixCardKey": {
+		"name": "Key to hold for Item Card interaction.",
+		"hint": "Enter a key (e.g.: x) to use for item card interaction. Can be any key except function keys (ctrl, alt, etc.)"
 	},
-	"TIDY5E.Settings.HpOverlayBorder": {
-		"name": "Border width for the hit point overlay.",
-		"hint": "If your portrait has a frame you can adjust the Hit Point overlay to compensate the frame width. It might look nicer if the overlay doesn't tint the border."
+	"TIDY5E.Settings.SheetTheme": {
+		"name": "Tidy5e color theme.",
+		"hint": "Use either the default light or alternate dark color theme of Tidy5e.",
+		"default": "Default (light)",
+		"dark": "Alternate (dark)"
 	},
-	"TIDY5E.Settings.DisableHpOverlay": {
-		"name": "Disable the hit point overlay.",
-		"hint": "If you don't like the video game style Hit Point overlay on your character's portrait you can disable it."
+	"TIDY5E.Settings.UseClassicControls": {
+		"name": "Use classic item controls in list view.",
+		"hint": "Always shows item controls and disable right click menu. Only applies for PC item/spell inventory in list layout."
+	},
+	"TIDY5E.Settings.ContextRollButtons": {
+		"name": "Show midiQol Item Buttons in item's info card",
+		"hint": "Per default roll buttons appear in the item's description. Enable to move them to the item's info card. Works in all layout modes."
+	},
+	"TIDY5E.Settings.ShowTraitLabels": {
+		"name": "Show Trait Labels.",
+		"hint": "By default only icons are shown for traits. Enable to display labels as well."
 	},
 	"TIDY5E.Settings.HideClassList": {
 		"name": "Hide character class list.",
-		"hint": "Checking this option will hide the character's class list next to the level label. The sheet can handle 3 classes well, more than that will work but things get shifty ;)"
+		"hint": "Enable to hide the class list below the character's name."
 	},
 	"TIDY5E.Settings.DisableInspirationAnimation": {
-		"name": "No inspiration indicator animation.",
-		"hint": "If it's too distracting, you can disable the subtle animation of the glowing inspiration indicator."
-	},
-	"TIDY5E.Settings.DisableInspiration": {
-		"name": "Disable Inspiration Tracker.",
-		"hint": "If your campaign doesn't use inspiration you can disable the tracker completely."
-	},
-	"TIDY5E.Settings.DisableExhaustion": {
-		"name": "Disable Exhaustion Tracker.",
-		"hint": "If your campaign doesn't use exhaustion you can disable the tracker completely."
+		"name": "Inanimate inspiration tracker.",
+		"hint": "Enable to turn off inspiration tracker glow animation."
 	},
 	"TIDY5E.Settings.HideIfZero": {
-		"name": "Hide Exhaustion and Inspiration when not available (0).",
-		"hint": "Check this option if you want to hide Exhaustion if its level is 0 and Inspiration if you have none. Appears on hover."
-	},
-	"TIDY5E.Settings.ExhaustionOnHover": {
-		"name": "Show exhaustion tracker only on hover.",
-		"hint": "If you check this option the exhaustion tracker will only be visible when you hover over the portrait."
+		"name": "Hide exhaustion and inspiration tracker on 0.",
+		"hint": "Enable to hide exhaustion and inspiration if 0. Will show on hover."
 	},
 	"TIDY5E.Settings.InspirationOnHover": {
 		"name": "Show inspiration indicator only on hover.",
-		"hint": "If you check this option the inspiration indicator will only be visible when you hover over the portrait."
+		"hint": "Enable to only show the inspiration indicator when you hover over the portrait."
 	},
-	"TIDY5E.Settings.RestOnHover": {
-		"name": "Show rest button on hover.",
-		"hint": "If you check this option the rest button will only be visible when you hover over the portrait."
+	"TIDY5E.Settings.ExhaustionOnHover": {
+		"name": "Show exhaustion tracker only on hover.",
+		"hint": "Enable to only show the exhaustion tracker when you hover over the portrait."
+	},
+	"TIDY5E.Settings.DisableHpBar": {
+		"name": "Disable health bar.",
+		"hint": "Enable to hide the colored bar indicating the remaining HP (Health Numbers will still be visible)."
+	},
+	"TIDY5E.Settings.DisableHpOverlay": {
+		"name": "Hide hit point overlay.",
+		"hint": "Enable to hide the HP overlay for this actor type."
+	},
+	"TIDY5E.Settings.PcToggleTraits": {
+		"name": "Toggle empty character traits.",
+		"hint": "By default empty traits are always visible. Enable to add a toggle button."
 	},
 	"TIDY5E.Settings.MoveTraits": {
 		"name": "Move traits below resources.",
-		"hint": "Check this if you want to show the traits below the resources."
-	},
-	"TIDY5E.Settings.PcToggleTraits": {
-		"name": "Show Toggle button for character traits.",
-		"hint": "Check this if you want to show a button to toggle empty traits."
+		"hint": "Enable to move traits from the left side below resources."
 	},
 	"TIDY5E.Settings.AlwaysShowTraits": {
 		"name": "Always show traits.",
-		"hint": "When you don't want to hide and toggle empty NPC traits tick this box."
+		"hint": "By default empty traits are hidden by a toggle button. Enable to never hide."
 	},
 	"TIDY5E.Settings.AlwaysShowSkills": {
 		"name": "Always show skills.",
-		"hint": "When you don't want to hide and toggle not proficient NPC skills tick this box."
+		"hint": "By default unproficient skills are hidden by a toggle button. Enable to never hide."
 	},
-	"TIDY5E.Settings.MarkLinked": {
-		"name": "Highlight Sheet when linked to Actor.",
-		"hint": "When you find yourself editing the wrong NPC Sheet you can have linked sheets visually highlighted."
+	"TIDY5E.Settings.ActiveEffectsMarker": {
+		"name": "Show Active Effects Marker on items.",
+		"hint": "Enable if you want to see if items have active effects on them (only for list view)."
 	},
-	"TIDY5E.Settings.MarkUnlinked": {
-		"name": "Highlight sheet when not linked to actor.",
-		"hint": "When you find yourself editing the wrong NPC Sheet you can have unlinked sheets visually highlighted."
+	"TIDY5E.Settings.DisableRightClick": {
+		"name": "Disable right click context menu.",
+		"hint": "In case of module conflicts or preference you can disable the right click context menu. Items will show a menu icon instead."
 	},
-	"I18N.MAINTAINERS": [
-		"Moerill"
-	],
+	"TIDY5E.Settings.UseExpandedSheet": {
+		"name": "Expanded Limited view for character sheets.",
+		"hint": "Displays the entire character sheet (minus the journal) to players with limited permission."
+	},
+	"TIDY5E.Settings.UseRoundPortraits": {
+		"name": "Round portrait style.",
+		"hint": "Choose to enable round portraits/icons for actors.",
+		"all": "All actors",
+		"pc": "PCs",
+		"npc": "NPCs/Vehicles",
+		"none": "none",
+		"default": "none"
+	},
+	"TIDY5E.Settings.HpOverlayBorder": {
+		"name": "Offset hit point overlay.",
+		"hint": "Enter offset value to compensate for portrait frames and prevent tinting."
+	},
+	"TIDY5E.Settings.TotalEditLock": {
+		"name": "Lock down sensitive fields.",
+		"hint": "Enable to prevent acidentially changing sensible, mostly static values."
+	},
+	"TIDY5E.Settings.GmEditPermission": {
+		"name": "GM can always edit PC sheets.",
+		"hint": "Enable to allow GMs to edit PC sheets without toggling the sheet lock."
+	},
+	"TIDY5E.Settings.GmEditEffects": {
+		"name": "Only GM can edit active effects.",
+		"hint": "Enable to deny players to edit active effects on their sheets. They will still see applied effects."
+	},
+	"TIDY5E.Settings.AlwaysShowQty": {
+		"name": "Always show item quantity.",
+		"hint": "Enable to never hide item quantity."
+	},
+	"TIDY5E.Settings.DisableInspiration": {
+		"name": "Disable inspiration tracker.",
+		"hint": "If your campaign doesn't use inspiration you can disable the tracker completely."
+	},
+	"TIDY5E.Settings.ExhaustionEffects": {
+		"name": "Exhaustion effects (uses Active Effects).",
+		"hint": "Apply corresponding active effects when setting exhaustion levels - requires midiQol for disadvantage rolls!"
+	},
+	"TIDY5E.Settings.CustomExhaustionIcon": {
+		"name": "Custom exhaustion effect icon.",
+		"hint": "Set your custom exhaustion effect icon by providing an image url (eg.: systems/dnd5e/icons/skills/light_01.jpg)."
+	},
+	"TIDY5E.Settings.DisableExhaustion": {
+		"name": "Disable exhaustion tracker.",
+		"hint": "If your campaign doesn't use exhaustion you can disable the tracker completely."
+	},
+	"TIDY5E.Settings.ShowNpcRest": {
+		"name": "Resting for NPCs.",
+		"hint": "Enable to shows the rest icon/buttons on NPC sheets."
+	},
+	"TIDY5E.Settings.LinkMarker": {
+		"name": "Mark linked/unlinked NPCs.",
+		"hint": "Adds a colored border and icon to linked/unliked NPC sheets.",
+		"default": "No link marker (default)",
+		"unlinked": "Highlight unlinked tokens",
+		"linked": "Highlight linked tokens",
+		"both": "Highlight linked and unlinked tokens"
+	},
+	"I18N.MAINTAINERS": "Phenomen",
 	"Token Mold": "Лекало токенов",
 	"tmold.config.applySettings": "Применить настройки к",
 	"tmold.config.unlinkedOnly": "только несвязанным токенам",
@@ -10707,6 +10792,70 @@
 	"vtta-tokenizer.token-size.name": "Размер токенов",
 	"vtta-tokenizer.token-size.hint": "Определяет размер токенов (ширину и высоту). Рекомендуется значение от 200 и выше.",
 	"vtta-tokenizer.requires-upload-permission": "Использование Tokenizer требует прав на загрузку файлов. Сообщите GM, чтобы он выдал вам права.",
+	"I18N.LANGUAGE": "Russian",
+	"token-tooltip-alt.TokenTooltipAlt": "Token Tooltip Alt",
+	"token-tooltip-alt.settings.TOOLTIP_POSITION.name": "Расположение подсказки",
+	"token-tooltip-alt.settings.TOOLTIP_POSITION.hint": "Определяет расположение всплывающей подсказки.",
+	"token-tooltip-alt.settings.TOOLTIP_POSITION.choices.top": "Сверху",
+	"token-tooltip-alt.settings.TOOLTIP_POSITION.choices.right": "Справа",
+	"token-tooltip-alt.settings.TOOLTIP_POSITION.choices.bottom": "Снизу",
+	"token-tooltip-alt.settings.TOOLTIP_POSITION.choices.left": "Слева",
+	"token-tooltip-alt.settings.TOOLTIP_POSITION.choices.overlay": "Поверх",
+	"token-tooltip-alt.settings.TOOLTIP_POSITION.choices.surprise": "Случайно",
+	"token-tooltip-alt.settings.TOOLTIP_POSITION.choices.doubleSurprise": "Очень случайно",
+	"token-tooltip-alt.settings.FONT_SIZE.name": "Размер шрифта",
+	"token-tooltip-alt.settings.FONT_SIZE.hint": "Размер текста в подсказке от 1 до 2.5 rem.",
+	"token-tooltip-alt.settings.MAX_ROWS.name": "Максимум строк",
+	"token-tooltip-alt.settings.MAX_ROWS.hint": "Максимальное число строк/столбцов.",
+	"token-tooltip-alt.settings.DATA_SOURCE.name": "Источник данных",
+	"token-tooltip-alt.settings.DATA_SOURCE.hint": "Это продвинутая функция - не меняйте, если не уверены. Значение определяет источник, откуда модуль будет брать данные.",
+	"token-tooltip-alt.settings.DARK_THEME.name": "Тёмная тема",
+	"token-tooltip-alt.settings.DARK_THEME.hint": "Подсказка будет использовать тёмную тему оформления.",
+	"token-tooltip-alt.settings.SHOW_ALL_ON_ALT.name": "Показывать с <ALT>",
+	"token-tooltip-alt.settings.SHOW_ALL_ON_ALT.hint": "Подсказка будет отображаться для всех видимых токенов на сцене при нажатии <ALT>.",
+	"token-tooltip-alt.settings.SHOW_TOOLTIP_FOR_HIDDEN_TOKENS.name": "Показывать всех с <ALT>",
+	"token-tooltip-alt.settings.SHOW_TOOLTIP_FOR_HIDDEN_TOKENS.hint": "Показывать подсказки для всех токенов, включая невидимых при нажатии <ALT>. Требует активной опции 'Показывать всех с <ALT>'",
+	"token-tooltip-alt.settings.ISOMETRIC.name": "Изометрические подсказки",
+	"token-tooltip-alt.settings.ISOMETRIC.hint": "Экспериментальная опция для отображение подсказок при использовании изометрического вида.",
+	"token-tooltip-alt.settings.DEBUG_OUTPUT.name": "Режим отладки",
+	"token-tooltip-alt.settings.DEBUG_OUTPUT.hint": "Отображать полезную информацию для разработчиков в консоле.",
+	"token-tooltip-alt.settings.TOOLTIP_MANAGER.name": "Управление подсказками",
+	"token-tooltip-alt.settings.TOOLTIP_MANAGER.label": "Управление подсказками",
+	"token-tooltip-alt.buttons.import": "Импорт",
+	"token-tooltip-alt.buttons.export": "Экспорт",
+	"token-tooltip-alt.buttons.save": "Сохранить",
+	"token-tooltip-alt.buttons.importFromDefault": "Импорт стандартной",
+	"token-tooltip-alt.buttons.add": "Добавить",
+	"token-tooltip-alt.buttons.copy": "Копировать",
+	"token-tooltip-alt.buttons.paste": "Вставить",
+	"token-tooltip-alt.tooltipManager.infoMessage": "Для подробной информации смотрите ",
+	"token-tooltip-alt.tooltipManager.col.actor": "Актёр",
+	"token-tooltip-alt.tooltipManager.col.enable": "Включить",
+	"token-tooltip-alt.tooltipManager.col.custom": "Своё",
+	"token-tooltip-alt.tooltipManager.col.edit": "Изменить",
+	"token-tooltip-alt.tooltipEditor.col.color": "Цвет",
+	"token-tooltip-alt.tooltipEditor.col.icon": "Иконка",
+	"token-tooltip-alt.tooltipEditor.col.value": "Значение",
+	"token-tooltip-alt.tooltipEditor.col.expression": "Выражение",
+	"token-tooltip-alt.tooltipEditor.col.isFunction": "Функция",
+	"token-tooltip-alt.tooltipEditor.col.isNumber": "Число",
+	"token-tooltip-alt.tooltipEditor.col.delete": "Удалить",
+	"token-tooltip-alt.tooltipEditorGm.gmHeader": "GM",
+	"token-tooltip-alt.tooltipEditorGm.settingsHeader": "Настройки",
+	"token-tooltip-alt.tooltipEditorGm.settings.displayName.name": "Отображать имя",
+	"token-tooltip-alt.tooltipEditorGm.settings.displayName.hint": "Показывать имя токена в подсказке.",
+	"token-tooltip-alt.tooltipEditorGm.settings.useAccentEverywhere.name": "Использовать оттенок везде",
+	"token-tooltip-alt.tooltipEditorGm.settings.useAccentEverywhere.hint": "Использовать цвет оттенка везде вместо особых цветов.",
+	"token-tooltip-alt.tooltipEditorGm.settings.accentColor.name": "Цвет оттенка",
+	"token-tooltip-alt.tooltipEditorGm.settings.accentColor.hint": "Цвет оттенка для рамки и названий.",
+	"token-tooltip-alt.tooltipEditorPlayer.playerHeader": "Игрок",
+	"token-tooltip-alt.tooltipEditorPlayer.settingsHeader": "Настройки",
+	"token-tooltip-alt.tooltipEditorPlayer.settings.displayName.name": "Отображать имя",
+	"token-tooltip-alt.tooltipEditorPlayer.settings.displayName.hint": "Показывать имя токена в подсказке в зависимости от отношения (дружественный, нейтральный, враждебный).",
+	"token-tooltip-alt.tooltipEditorPlayer.settings.useAccentEverywhere.name": "Использовать оттенок везде",
+	"token-tooltip-alt.tooltipEditorPlayer.settings.useAccentEverywhere.hint": "Использовать цвет оттенка везде вместо особых цветов.",
+	"token-tooltip-alt.tooltipEditorPlayer.settings.accentColor.name": "Цвет оттенка",
+	"token-tooltip-alt.tooltipEditorPlayer.settings.accentColor.hint": "Цвет оттенка для рамки и названий.",
 	"torch.playerTorches.name": "Факелы игроков",
 	"torch.playerTorches.hint": "Разрешить игрокам зажигать факелы",
 	"torch.brightRadius.hint": "Дистанция яркого света",
