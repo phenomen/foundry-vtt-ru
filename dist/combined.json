@@ -351,7 +351,8 @@
 			"roll": "Бросок",
 			"saveAndDamage": "Бросок (испытание и урон)",
 			"saveDC": "СЛ испытания",
-			"verDamage": "Полуторный урон"
+			"verDamage": "Полуторный урон",
+			"applyActiveEffects": "Применить активные эффекты"
 		},
 		"chat": {
 			"abrMaterial": "Р",
@@ -420,7 +421,8 @@
 				"0": "Без дополнительного урона",
 				"1": "Бросать кости базового и критического урона",
 				"2": "Бросать базовый урон, критический всегда максимальный",
-				"3": "Максимальный базовый и критический урон"
+				"3": "Максимальный базовый и критический урон",
+				"4": "Максимальный базовый, бросать критический урон"
 			},
 			"hint": "Определите как вычислять критический урон.",
 			"name": "Критический урон"
@@ -442,7 +444,8 @@
 			"choices": {
 				"1": "Одиночный бросок (Shift: Преимущество, Ctrl: Помеха)",
 				"2": "Двойной бросок",
-				"3": "Тройной бросок"
+				"3": "Тройной бросок",
+				"4": "Запрос преимущества/помехи"
 			},
 			"hint": "Определите тип отображения бросков характеристик, испытаний и атак.",
 			"name": "Режим d20"
@@ -493,7 +496,8 @@
 			"noItemWithId": "Не найден предмет с этим ID или названием",
 			"noKnownItemOnActor": "Не владеет предметом",
 			"noSelectedActor": "Требуется выбрать персонажа!",
-			"rollEvaluation": "Ошибка расчёта броска: {msg}"
+			"rollEvaluation": "Ошибка расчёта броска: {msg}",
+			"noDAE": "Для применения активных эффектов к цели требуется DAE"
 		},
 		"hideDC": {
 			"choices": {
@@ -562,7 +566,12 @@
 			"quickRollsLabel": "Суперброски",
 			"saveDC": "Испытание",
 			"useTemplate": "Разместить шаблон"
-		}
+		},
+		"applyActiveEffects": {
+			"hint": "Показать кнопку применения активных эффектов. Требуется модуль DAE. Если DAE не активе, то эта опция бесполезна.",
+			"name": "Показывать кнопку активных эффектов"
+		},
+		"migrating": "Происходит миграция настроек Better Rolls для версии {version}"
 	},
 	"BRT.TypeLabel": "Тип таблицы",
 	"BRT.TypeDefault": "Стандартная таблица",
@@ -5488,6 +5497,23 @@
 	"MonksLittleDetails.PlayRoundSound": "Звук в начале раунда",
 	"MonksLittleDetails.PlayRoundSoundHint": "Проигрывать звук, когда начинается новый раунд",
 	"MonksLittleDetails.PreventTokenMessage": "Токен в бою не может быть удалён, кроме как из интерфейса управления боем.",
+	"MonksLittleDetails.HotKeysWarning": "Monks Little Details использует 'Library: DF Hotkeys' модуль для некоторых инструментов. Он не обязателен, но требуется для этой функции.",
+	"MonksLittleDetails.SystemChanges": "Системные изменения",
+	"MonksLittleDetails.CombatTracker": "Отслеживание боя",
+	"MonksLittleDetails.CombatTurn": "Ход боя",
+	"MonksLittleDetails.CombatTokenHighlight": "Подсветка токена в бою",
+	"MonksLittleDetails.AddedFeatures": "Дополнительные функции",
+	"MonksLittleDetails.QuickShow": "Быстро показать",
+	"MonksLittleDetails.ChangeTo": "Изменить на",
+	"MonksLittleDetails.TokenLayer": "Слой токенов",
+	"MonksLittleDetails.MeasureLayer": "Слой измерений",
+	"MonksLittleDetails.TileLayer": "Слой тайлов",
+	"MonksLittleDetails.DrawingLayer": "Слой рисунков",
+	"MonksLittleDetails.WallLayer": "Слой стен",
+	"MonksLittleDetails.LightingLayer": "Слой освещения",
+	"MonksLittleDetails.SoundLayer": "Слой звуков",
+	"MonksLittleDetails.NoteLayer": "Слой заметок",
+	"MonksLittleDetails.TerrainLayer": "Слой местности",
 	"MonksLittleDetails.StatusCharmed": "Обворожение",
 	"MonksLittleDetails.StatusExhausted": "Утомление",
 	"MonksLittleDetails.StatusGrappled": "Захват",
@@ -5507,6 +5533,10 @@
 	"MonksLittleDetails.challenging": "Сложная",
 	"MonksLittleDetails.hard": "Очень сложная",
 	"MonksLittleDetails.epic": "Невыполнимая",
+	"MonksLittleDetails.combatopen.none": "Не открывать окно боя",
+	"MonksLittleDetails.combatopen.everyone": "Для всех",
+	"MonksLittleDetails.combatopen.gm": "Только GM",
+	"MonksLittleDetails.combatopen.players": "Только игроки",
 	"MonksSceneNavigation.RemoveNav": "Удалить навигацию",
 	"MonksSceneNavigation.click-to-view.name": "Нажатие для перехода",
 	"MonksSceneNavigation.click-to-view.hint": "Нажатие на сцену действует как переход вместо открытия окна настроек",
@@ -11219,7 +11249,12 @@
 				"ShortDescr": "Краткое описание",
 				"TL": "ТУ",
 				"WEAPONS": "ОРУЖИЕ",
-				"Weight": "Вес"
+				"Weight": "Вес",
+				"Reload": "Перезарядка",
+				"Subtype": "Тип",
+				"Refill": "Восполнение",
+				"Count": "Число",
+				"CONSUMABLES": "Расходники"
 			},
 			"Notes": {
 				"NOTES": "ЛИЧНЫЕ ЗАМЕТКИ"
@@ -11236,7 +11271,8 @@
 				"SkillName": "Название",
 				"SkillRollTooltip": "Показывать настройки проверки по умолчанию. Shift+ЛКМ совершает проверку навыков без модификаторов со сложностью 8.",
 				"Total": "Всего",
-				"Untrained": "Нетренирован"
+				"Untrained": "Нетренирован",
+				"JOAT": "Мастер на все руки"
 			},
 			"Species": "Вид",
 			"Tabs": {
@@ -11262,7 +11298,18 @@
 		"Errors": {
 			"NoCharacteristicForRoll": "Вы пытатлись совершить проверку характеристики без выбора характеристики",
 			"NoDamageForWeapon": "У этого оружия не указан урон",
-			"NoROFForAttack": "У этого оружия не указана скорострельность"
+			"NoROFForAttack": "У этого оружия не указана скорострельность",
+			"TooFewToReload": "Не хватает _NAME_ для _REFILL_ACTION_",
+			"SkillsConsumables": "Навыки не могут иметь расходники",
+			"CouldNotFindItem": "Не удаётся найти предмет с id: _ITEM_ID_",
+			"DraggedCompendiumIsNotItem": "Переносимый из библиотеки объект не является предметом.",
+			"DraggingSomething": "Попытка перенести что-то, что нельзя перенести.",
+			"DropFailedWith": "Перенос не удался из-за _ERROR_MSG_",
+			"NoAmmo": "Не достаточно боеприпасов. Перезарядитесь перед стрельбой!",
+			"NoSkillForSkillRoll": "Вы пытаетесь пройти проверку навыка, не выбрав навык.",
+			"OnlyDropConsumables": "Только расходники могут быть перенесены на предмет.",
+			"OnlyDropItems": "Вы можете перенести только предметы",
+			"OnlyOwnedItems": "Можно перенести только предметы во владении актёра"
 		},
 		"Handlebars": {
 			"CantShowCharacteristic": "Вам нужно заново выбрать характеристики для навыков, отмеченных XXX. Извините..."
@@ -11306,7 +11353,8 @@
 				"ItemType": "Тип",
 				"MoveStorage": "Переместить",
 				"New": "Новый",
-				"Storage": "Хранилище"
+				"Storage": "Хранилище",
+				"AssignConsumable": "Сделать расходником"
 			},
 			"Skills": {
 				"DEX": "ЛОВ",
@@ -11333,7 +11381,26 @@
 				"rangeBand": "Диапазон",
 				"rateOfFire": "Скорострельность",
 				"recoil": "Отдача",
-				"weaponType": "Тип оружия"
+				"weaponType": "Тип оружия",
+				"MagazineCost": "Цена обоймы/энергоячейки",
+				"UseAsAmmunitionForAttack": "Использовать боеприпасы для атак"
+			},
+			"Consumable": {
+				"Subtype": "Тип",
+				"Size": "Размер",
+				"Count": "Число",
+				"DropConsumablesHere": "Вы можете перенести расходники сюда.",
+				"RemoveConsumable": "Удалить расходник",
+				"RemoveConsumableFrom": "Удалить расходник _CONSUMABLE_NAME_ из _ITEM_NAME_?",
+				"Types": {
+					"air": "Воздух",
+					"drugs": "Лекарства",
+					"food": "Еда",
+					"fuel": "Горючее",
+					"magazine": "Обойма",
+					"other": "Другое",
+					"power_cell": "Энергоячейка"
+				}
 			}
 		},
 		"Migration": {
@@ -11379,8 +11446,11 @@
 			"skills": "навыки",
 			"storage": "хранилище",
 			"tool": "инструмент",
-			"weapon": "оружие"
-		}
+			"weapon": "оружие",
+			"consumable": "расходник"
+		},
+		"Name": "Название",
+		"Create": "Создать"
 	},
 	"VeryDifficult": "Очень сложная"
 }

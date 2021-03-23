@@ -60,7 +60,12 @@
         "ShortDescr": "Краткое описание",
         "TL": "ТУ",
         "WEAPONS": "ОРУЖИЕ",
-        "Weight": "Вес"
+        "Weight": "Вес",
+        "Reload": "Перезарядка",
+        "Subtype": "Тип",
+        "Refill": "Восполнение",
+        "Count": "Число",
+        "CONSUMABLES": "Расходники"
       },
       "Notes": {
         "NOTES": "ЛИЧНЫЕ ЗАМЕТКИ"
@@ -77,7 +82,8 @@
         "SkillName": "Название",
         "SkillRollTooltip": "Показывать настройки проверки по умолчанию. Shift+ЛКМ совершает проверку навыков без модификаторов со сложностью 8.",
         "Total": "Всего",
-        "Untrained": "Нетренирован"
+        "Untrained": "Нетренирован",
+        "JOAT": "Мастер на все руки"
       },
       "Species": "Вид",
       "Tabs": {
@@ -103,7 +109,18 @@
     "Errors": {
       "NoCharacteristicForRoll": "Вы пытатлись совершить проверку характеристики без выбора характеристики",
       "NoDamageForWeapon": "У этого оружия не указан урон",
-      "NoROFForAttack": "У этого оружия не указана скорострельность"
+      "NoROFForAttack": "У этого оружия не указана скорострельность",
+      "TooFewToReload": "Не хватает _NAME_ для _REFILL_ACTION_",
+      "SkillsConsumables": "Навыки не могут иметь расходники",
+      "CouldNotFindItem": "Не удаётся найти предмет с id: _ITEM_ID_",
+      "DraggedCompendiumIsNotItem": "Переносимый из библиотеки объект не является предметом.",
+      "DraggingSomething": "Попытка перенести что-то, что нельзя перенести.",
+      "DropFailedWith": "Перенос не удался из-за _ERROR_MSG_",
+      "NoAmmo": "Не достаточно боеприпасов. Перезарядитесь перед стрельбой!",
+      "NoSkillForSkillRoll": "Вы пытаетесь пройти проверку навыка, не выбрав навык.",
+      "OnlyDropConsumables": "Только расходники могут быть перенесены на предмет.",
+      "OnlyDropItems": "Вы можете перенести только предметы",
+      "OnlyOwnedItems": "Можно перенести только предметы во владении актёра"
     },
     "Handlebars": {
       "CantShowCharacteristic": "Вам нужно заново выбрать характеристики для навыков, отмеченных XXX. Извините..."
@@ -147,7 +164,8 @@
         "ItemType": "Тип",
         "MoveStorage": "Переместить",
         "New": "Новый",
-        "Storage": "Хранилище"
+        "Storage": "Хранилище",
+        "AssignConsumable": "Сделать расходником"
       },
       "Skills": {
         "DEX": "ЛОВ",
@@ -174,7 +192,26 @@
         "rangeBand": "Диапазон",
         "rateOfFire": "Скорострельность",
         "recoil": "Отдача",
-        "weaponType": "Тип оружия"
+        "weaponType": "Тип оружия",
+        "MagazineCost": "Цена обоймы/энергоячейки",
+        "UseAsAmmunitionForAttack": "Использовать боеприпасы для атак"
+      },
+      "Consumable": {
+        "Subtype": "Тип",
+        "Size": "Размер",
+        "Count": "Число",
+        "DropConsumablesHere": "Вы можете перенести расходники сюда.",
+        "RemoveConsumable": "Удалить расходник",
+        "RemoveConsumableFrom": "Удалить расходник _CONSUMABLE_NAME_ из _ITEM_NAME_?",
+        "Types": {
+          "air": "Воздух",
+          "drugs": "Лекарства",
+          "food": "Еда",
+          "fuel": "Горючее",
+          "magazine": "Обойма",
+          "other": "Другое",
+          "power_cell": "Энергоячейка"
+        }
       }
     },
     "Migration": {
@@ -220,8 +257,11 @@
       "skills": "навыки",
       "storage": "хранилище",
       "tool": "инструмент",
-      "weapon": "оружие"
-    }
+      "weapon": "оружие",
+      "consumable": "расходник"
+    },
+    "Name": "Название",
+    "Create": "Создать"
   },
   "VeryDifficult": "Очень сложная"
 }

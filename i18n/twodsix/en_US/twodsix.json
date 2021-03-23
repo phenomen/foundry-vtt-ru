@@ -47,6 +47,8 @@
         "AUGMENTS": "AUGMENTS",
         "Ammo": "Ammo",
         "Armor": "Armor",
+        "CONSUMABLES": "Consumables",
+        "Count": "Count",
         "CreateItem": "Create Item",
         "Damage": "Damage",
         "DeleteItem": "Delete Item",
@@ -57,7 +59,10 @@
         "Name": "Name",
         "Qty": "Qty",
         "Range": "Range",
+        "Refill": "Refill",
+        "Reload": "Reload",
         "ShortDescr": "Short Descr",
+        "Subtype": "Type",
         "TL": "TL",
         "WEAPONS": "WEAPONS",
         "Weight": "Wt"
@@ -71,13 +76,14 @@
         "DeleteItem": "Delete Item",
         "EditItem": "Edit Item",
         "EditOrRemove": "Edit / Remove",
-        "InvertedSkillRollTooltip": "Rolls a skill check applying no modifier and assumes a difficulty of 8. Shift-clicking shows the skill roll dialog",
         "Level": "Level",
         "Modifier": "Modifier",
         "SkillName": "Skill Name",
-        "SkillRollTooltip": "Shows the skill roll dialog. Shift-clicking rolls a skill check applying no modifier and assumes a difficulty of 8",
         "Total": "Total",
-        "Untrained": "Untrained"
+        "Untrained": "Untrained",
+        "SkillRollTooltip": "Shows the skill roll dialog. Shift-clicking rolls a skill check applying no modifier and assumes a difficulty of 8",
+        "InvertedSkillRollTooltip": "Rolls a skill check applying no modifier and assumes a difficulty of 8. Shift-clicking shows the skill roll dialog",
+        "JOAT": "Jack of all trades"
       },
       "Species": "Species",
       "Tabs": {
@@ -98,21 +104,15 @@
         "Type": "Roll type"
       }
     },
-    "CloseAndCreateNew": "Close and create new",
-    "Copy": "Copy",
-    "Errors": {
-      "NoCharacteristicForRoll": "You tried to perform a characteristics roll without specifying a characteristic",
-      "NoDamageForWeapon": "This weapon has not specified the damage it does",
-      "NoROFForAttack": "Rate of fire must be specified for this attack"
-    },
+    "Create": "Create",
     "Handlebars": {
       "CantShowCharacteristic": "You need to reselect the characteristic for all skills marked with XXX. Sorry..."
     },
     "Items": {
       "Armor": {
         "Armor": "Armor",
-        "RadProt": "Rad Prot",
-        "SecondaryArmor": "Secondary Armor"
+        "SecondaryArmor": "Secondary Armor",
+        "RadProt": "Rad Prot"
       },
       "Augmentation": {
         "Arms": "Arms",
@@ -143,6 +143,7 @@
         "AssignJunk": "Assign Junk",
         "AssignTool": "Assign Tool",
         "AssignWeapon": "Assign Weapon",
+        "AssignConsumable": "Assign Consumable",
         "Inventory": "Inventory",
         "ItemType": "Type",
         "MoveStorage": "Move Storage",
@@ -165,16 +166,35 @@
       "Tool": {
         "Bonus": "Bonus"
       },
+      "Consumable": {
+        "Types": {
+          "air": "Air",
+          "drugs": "Drugs",
+          "food": "Food",
+          "fuel": "Fuel",
+          "magazine": "Magazine",
+          "power_cell": "Power Cell",
+          "other": "Other"
+        },
+        "Size": "Size",
+        "Subtype": "Type",
+        "Count": "Count",
+        "DropConsumablesHere": "You can drop consumables here.",
+        "RemoveConsumable": "Remove consumable",
+        "RemoveConsumableFrom": "Remove consumable _CONSUMABLE_NAME_ from _ITEM_NAME_?"
+      },
       "Weapon": {
         "Ammo": "Ammo",
         "Damage": "Damage",
         "Range": "Range",
-        "damageType": "Damage Type",
         "lawLevel": "Law Level",
         "rangeBand": "Range Band",
+        "weaponType": "Weapon Type",
+        "damageType": "Damage Type",
         "rateOfFire": "Rate of Fire/Auto X",
         "recoil": "Recoil",
-        "weaponType": "Weapon Type"
+        "UseAsAmmunitionForAttack": "Use as ammunition for attack",
+        "MagazineCost": "Magazine/Power Cell Cost"
       }
     },
     "Migration": {
@@ -188,8 +208,8 @@
     },
     "Modules": {
       "compendiumFolders": {
-        "disabled": "Please enable the 'Compendium Folders' module in this world if you intend to use the included compendiums. Or turn off this warning in System Settings.",
-        "missing": "The included compendiums for the various Cepheus variants often use the 'Compendium Folders' module. If you use those, please install the Compendium Folders module in Foundry VTT. Or turn off this warning in System Settings."
+        "missing": "The included compendiums for the various Cepheus variants often use the 'Compendium Folders' module. If you use those, please install the Compendium Folders module in Foundry VTT. Or turn off this warning in System Settings.",
+        "disabled": "Please enable the 'Compendium Folders' module in this world if you intend to use the included compendiums. Or turn off this warning in System Settings."
       }
     },
     "No": "No",
@@ -206,33 +226,9 @@
       "using": "using {characteristic}"
     },
     "Settings": {
-      "ExperimentalFeatures": {
-        "hint": "checked=Boldly use ugly and buggy experimental features that just maybe won't delete your game world, unchecked=Hide them like any sane person would",
-        "name": "Show ugly, buggy and unfinished features. I.e., kind of like all the other features that are not hidden by this flag. :)"
-      },
-      "ShowDamageType": {
-        "hint": "checked=Show the 'Damage Type' field, unchecked=Hide it",
-        "name": "Show the 'Damage Type' field on weapon sheets"
-      },
-      "ShowLawLevel": {
-        "hint": "checked=Show the 'Law Level' field, unchecked=Hide it",
-        "name": "Show the 'Law Level' field on weapon sheets"
-      },
-      "ShowRangeBandAndHideRange": {
-        "hint": "checked=Shows 'Range Band', unchecked=Shows 'Range'",
-        "name": "Show 'Range Band' and *hide* 'Range' on weapon sheets and the character sheet"
-      },
-      "ShowRateOfFire": {
-        "hint": "checked=Show the 'Rate of Fire' field, unchecked=Hide it",
-        "name": "Show the 'Rate of Fire' field on weapon sheets"
-      },
-      "ShowRecoil": {
-        "hint": "checked=Show the 'Recoil' field, unchecked=Hide it",
-        "name": "Show the 'Recoil' field on weapon sheets"
-      },
-      "ShowWeaponType": {
-        "hint": "checked=Show the 'Weapon Type' field, unchecked=Hide it",
-        "name": "Show the 'Weapon Type' field on weapon sheets"
+      "ruleset": {
+        "hint": "This will configure the below settings with the best options for the given ruleset.",
+        "name": "Ruleset"
       },
       "absoluteBonusValueForEachTimeIncrement": {
         "hint": "Leave empty to use default (+/-1). Not currently used.",
@@ -241,10 +237,6 @@
       "absoluteCriticalEffectValue": {
         "hint": "Defaults to 99, which means that effect is ignored.",
         "name": "What effect is required for a throw to be considered a critical success/failure (i.e. be colored green/red)."
-      },
-      "autofireRulesUsed": {
-        "hint": "Select which variant's auto/burst fire rules should be used.",
-        "name": "Select which variant's auto/burst fire rules should be used."
       },
       "automateDamageRollOnHit": {
         "hint": "checked=Roll damage, modified by effect of skill roll. unchecked=Don't roll damage.",
@@ -258,29 +250,13 @@
         "hint": "Automatically set advised prototype token settings to newly created Actors.",
         "name": "Default Prototype Token Settings"
       },
-      "difficultiesAsTargetNumber": {
-        "hint": "checked=Use target number rather than modifier for difficulties, unchecked=Use modifiers",
-        "name": "Use target numbers rather than modifiers for difficulties."
-      },
-      "difficultyListUsed": {
-        "hint": "Select which variant's difficulty list should be used.",
-        "name": "Select which variant's difficulty list should be used."
-      },
       "effectOrTotal": {
         "hint": "checked=Show effect (i.e. roll+modifiers-target number, usually 8), unchecked=Show total (i.e. roll+modifiers)",
         "name": "Show effect or total roll value for skill and characteristic rolls."
       },
-      "hideUntrainedSkills": {
-        "hint": "checked=Show pseudo-skill 'Untrained' instead of all untrained skills. unchecked=Show all untrained skills",
-        "name": "Hide all untrained skills, instead show a single pseudo-skill named 'Untrained'. This also makes it so new skills are added at 0 instead of the untrained skill value."
-      },
       "initiativeFormula": {
         "hint": "Like: \"2d6 + @characteristics.dexterity.mod\"",
         "name": "Initiative Formula"
-      },
-      "invertSkillRollShiftClick": {
-        "hint": "When clicking on a skill a dialog for the skill roll typically appears. Shift-clicking is a shortcut for rolling without modifiers witth a dificulty of 8. Checking this box swaps this behavior.",
-        "name": "Invert behavior for shift-clicking for skill rolls"
       },
       "maxSkillLevel": {
         "hint": "Leave empty to use default (9).",
@@ -289,10 +265,6 @@
       "modifierForZeroCharacteristic": {
         "hint": "Leave empty to use default (-2). Does not automatically recalculate modifiers for existing characters.",
         "name": "Modifier for characteristic value of zero."
-      },
-      "ruleset": {
-        "hint": "This will configure the below settings with the best options for the given ruleset.",
-        "name": "Ruleset"
       },
       "showMissingCompendiumWarnings": {
         "hint": "Whether to show warnings for missing/disabled modules on world start.",
@@ -310,22 +282,90 @@
         "hint": "Don't use the same as for termForAdvantage...",
         "name": "What you want to call rolls with disadvantage (3d6kl2)."
       },
-      "untrainedSkillValue": {
-        "hint": "Change this to match the character's level of the 'Jack of All Trades' (JOAT) skill. If you have JOAT 1, set the value to -2, etc.",
-        "name": "The value that is used for untrained skills."
+      "ShowLawLevel": {
+        "hint": "checked=Show the 'Law Level' field, unchecked=Hide it",
+        "name": "Show the 'Law Level' field on weapon sheets"
+      },
+      "ShowRecoil": {
+        "hint": "checked=Show the 'Recoil' field, unchecked=Hide it",
+        "name": "Show the 'Recoil' field on weapon sheets"
+      },
+      "ShowRateOfFire": {
+        "name": "Show the 'Rate of Fire' field on weapon sheets",
+        "hint": "checked=Show the 'Rate of Fire' field, unchecked=Hide it"
+      },
+      "ShowDamageType": {
+        "hint": "checked=Show the 'Damage Type' field, unchecked=Hide it",
+        "name": "Show the 'Damage Type' field on weapon sheets"
+      },
+      "ShowWeaponType": {
+        "hint": "checked=Show the 'Weapon Type' field, unchecked=Hide it",
+        "name": "Show the 'Weapon Type' field on weapon sheets"
+      },
+      "ShowRangeBandAndHideRange": {
+        "hint": "checked=Shows 'Range Band', unchecked=Shows 'Range'",
+        "name": "Show 'Range Band' and *hide* 'Range' on weapon sheets and the character sheet"
+      },
+      "autofireRulesUsed": {
+        "hint": "Select which variant's auto/burst fire rules should be used.",
+        "name": "Select which variant's auto/burst fire rules should be used."
+      },
+      "difficultyListUsed": {
+        "hint": "Select which variant's difficulty list should be used.",
+        "name": "Select which variant's difficulty list should be used."
+      },
+      "difficultiesAsTargetNumber": {
+        "hint": "checked=Use target number rather than modifier for difficulties, unchecked=Use modifiers",
+        "name": "Use target numbers rather than modifiers for difficulties."
+      },
+      "ExperimentalFeatures": {
+        "hint": "checked=Boldly use ugly and buggy experimental features that just maybe won't delete your game world, unchecked=Hide them like any sane person would",
+        "name": "Show ugly, buggy and unfinished features. I.e., kind of like all the other features that are not hidden by this flag. :)"
+      },
+      "hideUntrainedSkills": {
+        "hint": "checked=Show pseudo-skill 'Untrained' instead of all untrained skills. unchecked=Show all untrained skills",
+        "name": "Hide all untrained skills, instead show a single pseudo-skill named 'Untrained'. This also makes it so new skills are added at 0 instead of the untrained skill value.",
+        "warningReset": "After saving the system settings all skills using the pseudo-skill Untrained will be permanently reset to using no skill.This action cannot be undone.",
+        "warningUpdateWeapon": "After saving the system settings all actors' weapons that do not have a skill will be updated to use the pseudo-skill Untrained.This action cannot be undone.",
+        "continue": "Do you want to continue?",
+        "warning": "Warning!"
+      },
+      "invertSkillRollShiftClick": {
+        "hint": "When clicking on a skill a dialog for the skill roll typically appears. Shift-clicking is a shortcut for rolling without modifiers witth a dificulty of 8. Checking this box swaps this behavior.",
+        "name": "Invert behavior for shift-clicking for skill rolls"
       }
     },
+    "CloseAndCreateNew": "Close and create new",
+    "Copy": "Copy",
     "Yes": "Yes",
+    "Name": "Name",
     "itemTypes": {
+      "equipment": "equipment",
+      "weapon": "weapon",
       "armor": "armor",
       "augment": "augment",
-      "equipment": "equipment",
-      "junk": "junk",
-      "skill": "skill",
-      "skills": "skills",
       "storage": "storage",
       "tool": "tool",
-      "weapon": "weapon"
+      "junk": "junk",
+      "skills": "skills",
+      "skill": "skill",
+      "consumable": "consumable"
+    },
+    "Errors": {
+      "NoSkillForSkillRoll": "You tried to perform a skill roll without specifying a skill",
+      "NoCharacteristicForRoll": "You tried to perform a characteristics roll without specifying a characteristic",
+      "NoROFForAttack": "Rate of fire must be specified for this attack",
+      "NoDamageForWeapon": "This weapon has not specified the damage it does",
+      "TooFewToReload": "Too few _NAME_ to _REFILL_ACTION_",
+      "NoAmmo": "You are out of ammunition. You need to reload before shooting!",
+      "OnlyOwnedItems": "Can only drop to items that are owned by an actor",
+      "SkillsConsumables": "Skills can't have consumables",
+      "DraggingSomething": "Dragging something that can't be dragged",
+      "OnlyDropItems": "You can only drop items",
+      "OnlyDropConsumables": "Only consumables can be dropped on an item.",
+      "DropFailedWith": "Drop failed with _ERROR_MSG_",
+      "CouldNotFindItem": "Could not find an item with id: _ITEM_ID_",
+      "DraggedCompendiumIsNotItem": "The dragged compendium object is not an item."
     }
   },
   "VeryDifficult": "Very Difficult"
