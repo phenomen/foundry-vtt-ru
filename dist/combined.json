@@ -1721,9 +1721,9 @@
 		"AmmoDelete": "Удалить боеприпас",
 		"AmmoEdit": "Изменить боеприпас",
 		"AmmoTitle": "Боеприпас",
-		"AncestryCreate": "Создать род",
+		"AncestryCreate": "Создать происхождение",
 		"AncestryDefenseModifier": "Модификатор защиты",
-		"AncestryEdit": "Изменить род",
+		"AncestryEdit": "Изменить происхождение",
 		"AncestryHealingRateModifier": "Модификатор темпа исцеления",
 		"AncestryHealthModifier": "Модификатор здоровья",
 		"AncestryLearnSpell": "Изучить заклинание",
@@ -1774,7 +1774,7 @@
 		"ChallengeRollText": "Испытание:",
 		"ChallengeVS": "VS",
 		"CharAge": "Возраст",
-		"CharAncestry": "Род",
+		"CharAncestry": "Происхождение",
 		"CharCorruption": "Скверна",
 		"CharDefense": "Защита",
 		"CharDescription": "Описание",
@@ -2131,7 +2131,7 @@
 		"SpellEffectDiceResult": "Результат:",
 		"SpellMaxUsesReached": "Достигнут максимум использований заклинания",
 		"SpellName": "Название заклинания",
-		"SpellRank": "Ранг",
+		"SpellRank": "Круг",
 		"SpellRequirements": "Требования",
 		"SpellRollArea": "Область",
 		"SpellPermanence": "Постоянность",
@@ -2174,11 +2174,11 @@
 		"concentrate": "Концентрация",
 		"TalentRollActions": "Действия:",
 		"SpellAftereffect": "Последействие",
-		"SettingUsingHomebrewModeHint": "Атрибуты не будут рассчитываться от выбранного рода или пути. Они должны быть выставлены вручную. Характеристики будут рассчитаны как обычно.",
+		"SettingUsingHomebrewModeHint": "Атрибуты не будут рассчитываться от выбранного происхождения или пути. Они должны быть выставлены вручную. Характеристики будут рассчитаны как обычно.",
 		"SettingUsingHomebrewMode": "Домашние правила",
 		"SettingRollCreaturesToGMHint": "Когда вы проходите испытание существа, результат будет виден только ведущему.",
 		"SettingRollCreaturesToGM": "Скрытые испытания существ",
-		"SettingLockAncestry": "Заблокировать изменение рода",
+		"SettingLockAncestry": "Заблокировать изменение происхождения",
 		"SettingLockAncestrHint": "Игрокам будет недоступно изменение модификаторов, скорости, безумия, скверны и здоровья.",
 		"SettingInitRandomize": "Случайная инициатива",
 		"SettingInitRandomizeHint": "Добавляет d6 к значению инициативы, делая её более случайной.",
@@ -2233,7 +2233,7 @@
 		"ModsListAgility": "Ловкость",
 		"ModsFastTurnFieldHeader": "Стандартная инициатива",
 		"ModsFastTurnField": "Быстрый ход",
-		"ModsDamageIncapacitated": "Недееспособность",
+		"ModsDamageIncapacitated": "Небоеспособность",
 		"MacroWealthManager": {
 			"Everyone": "Всем",
 			"DialogTitle": "Управление богатствами",
@@ -2270,7 +2270,7 @@
 	},
 	"ITEM": {
 		"TypeAmmo": "Боеприпас",
-		"TypeAncestry": "Род",
+		"TypeAncestry": "Происхождение",
 		"TypeCreaturerole": "Роль существа",
 		"TypeEndoftheround": "Конец раунда",
 		"TypeFeature": "Особенность",
@@ -2594,7 +2594,7 @@
 		"AbilityPromptTitle": "Проверка {ability}",
 		"AbilityStr": "Сила",
 		"AbilityStrAbbr": "Сил",
-		"AbilityUseCast": "Сотворить закклинание",
+		"AbilityUseCast": "Сотворить заклинание",
 		"AbilityUseChargedHint": "{type} заряжен и готов к использованию!",
 		"AbilityUseChargesLabel": "{value} зарядов",
 		"AbilityUseConsumableChargeHint": "Использование {type} израсходует 1 заряд из {value} оставшихся.",
@@ -7913,6 +7913,79 @@
 	"PLUT.Reset": "Сброс",
 	"PLUT.Name": "Название",
 	"PLUT.Find items...": "Поиск...",
+	"POINTER": {
+		"Settings": {
+			"Name": "Настройте клавиши, отметки и указатели!",
+			"Button": "Настройки и дизайн",
+			"Controls": {
+				"header": "Управление",
+				"inputhint": "Нажмите на поле для выбора клавиши.",
+				"pointer": {
+					"label": "Указатель",
+					"hint": "При нажатии этой клавиши, указатель будет следовать за вашим курсором на игровом поле."
+				},
+				"ping": {
+					"label": "Отметка",
+					"pointerActive": "Отметка только при активном указателе?",
+					"pointerActiveHint": "Если эта опция включена, то отметка будет срабатывать только если активен указатель.",
+					"hint": "При нажатии этой клавиши в месте курсора на игровом поле возникнет отметка.",
+					"force": "Перемещать камеру на отметку",
+					"forceHint": "При нажатии этой клавиши камера всех игроков будет перемещена на отметку."
+				}
+			},
+			"GM": {
+				"applyToAll": {
+					"label": "Применить настройки для всех игроков?",
+					"button": "Да!",
+					"hint": "Настройки будут синхронизированы для всех игроков. После этого каждый игрок может настроить модуль под себя, если желает."
+				}
+			},
+			"Designer": {
+				"Graphic": "Графика",
+				"Scale": {
+					"label": "Масштаб"
+				},
+				"Angle": {
+					"label": "Угол"
+				},
+				"Offset": {
+					"label": "Смещение"
+				},
+				"Tint": {
+					"label": "Оттенок",
+					"userColor": "Использовать цвет игрока."
+				},
+				"Animations": {
+					"header": "Анимация",
+					"rotate": {
+						"label": "Вращение"
+					},
+					"scale": {
+						"label": "Масштаб"
+					},
+					"duration": "Продолжительность",
+					"easing": "Тип затухания"
+				},
+				"pingDuration": "Продолжительность отметки"
+			},
+			"Chooser": {
+				"addPointer": "Создать новый"
+			}
+		},
+		"General": {
+			"min": "Мин",
+			"max": "Макс",
+			"name": "Название",
+			"ping": "Отметка",
+			"pointer": "Указатель",
+			"delete": "Удалить?",
+			"units": {
+				"grid": "един. сетки",
+				"degree": "град.",
+				"seconds": "сек."
+			}
+		}
+	},
 	"POLYGLOT.CustomLanguagesTitle": "Свои языки",
 	"POLYGLOT.CustomLanguagesHint": "Список нестандартных языков, которые вы хотите добавить в систему (разделяйте запятой).",
 	"POLYGLOT.ComprehendLanguagesTitle": "Заклинание \"Понимание языков\"",
