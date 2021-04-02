@@ -178,7 +178,7 @@
         "PSI": "ПСИ",
         "SOC": "СОЦ",
         "STR": "СИЛ",
-        "SkillName": "Название навыки"
+        "SkillName": "Название навыка"
       },
       "Tool": {
         "Bonus": "Бонус"
@@ -190,7 +190,7 @@
         "damageType": "Тип урона",
         "lawLevel": "Законность",
         "rangeBand": "Диапазон",
-        "rateOfFire": "Скорострельность",
+        "rateOfFire": "Скорострельность/Авто X",
         "recoil": "Отдача",
         "weaponType": "Тип оружия",
         "MagazineCost": "Цена обоймы/энергоячейки",
@@ -244,7 +244,8 @@
     },
     "Settings": {
       "ruleset": {
-        "name": "Правила"
+        "name": "Правила",
+        "hint": "Настройки будут оптимизированы под выбранные правила."
       }
     },
     "Yes": "Да",
@@ -261,7 +262,25 @@
       "consumable": "расходник"
     },
     "Name": "Название",
-    "Create": "Создать"
+    "Create": "Создать",
+    "Warnings": {
+      "StatValBelowZero": "Значение не может быть ниже нуля",
+      "MaxStatVal": "Значение превышает максимальное для характеристики",
+      "DecreaseEnduranceFirst": "Выносливость должна быть понижена перед другими характеристиками",
+      "AutoDamageForMultipleTargetsNotImplemented": "Автоматическое нанесение урона нескольким целям (используя Авто X) в данный момент не поддерживается."
+    },
+    "Damage": {
+      "CharacterIsDead": "Персонаж мёртв",
+      "Characteristics": "Характеристики",
+      "Current": "Текущий",
+      "Damage": "Урон",
+      "DealDamage": "Нанести урон",
+      "DealDamageTo": "Нанести урон _ACTOR_NAME_",
+      "Max": "Макс.",
+      "ResultingStat": "Итоговое значение",
+      "TotalDamage": "Общий урон",
+      "UnallocatedDamage": "Нераспределённый урон"
+    }
   },
   "VeryDifficult": "Очень сложная"
 }

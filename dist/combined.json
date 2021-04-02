@@ -1691,8 +1691,12 @@
 	"DG.ModifySkillRollDialogue.TargetModifier": "Новая цель:",
 	"DG.ModifySkillRollDialogue.ModifierTooltip": "Укажите положительный или отрицательный модификатор к проверке навыка.",
 	"DG.ModifyDamageRollDialogue.Weapon": "Оружие:",
-	"DG.ModifyDamageRollDialogue.OuterModifierTooltip": "Поле для модификации внешней формулы, например '*2' для удвоения общего результата.",
-	"DG.ModifyDamageRollDialogue.InnerModifierTooltip": "Поле для модификации внутренней формулы, например '+1' для прибавки числа или '+1d4' для добавления кости.",
+	"DG.ModifyDamageRollDialogue.OuterModifierTooltip": "Поле для изменения внешней формулы, например '*2' для удвоения общего результата.",
+	"DG.ModifyDamageRollDialogue.InnerModifierTooltip": "Поле для изменения внутренней формулы, например '+1' для прибавки числа или '+1d4' для добавления кости.",
+	"DG.Roll.Inhuman": "Нечеловеческий",
+	"DG.Tooltip.BreakPoint": "Текущий психический предел. Сбрасывается, когда рассудок достигает этого значения или падает ниже. Начальный психический предел равен РАС - САМ.",
+	"DG.Tooltip.BreakPointReset": "Сбросить психический предел до РАС - САМ.",
+	"DG.Skills.ritual": "Ритуал",
 	"ACTOR": {
 		"TypeCreature": "Существо",
 		"TypeCharacter": "Персонаж игрока",
@@ -2409,7 +2413,7 @@
 	"DRAGON_FLAGON.Nav_SettingOnClick": "Переход к сцене при нажатии",
 	"DRAGON_FLAGON.Nav_SettingOnClickHint": "Открывать сцену при нажатии на неё во вкладке сцен (всегда активно для игроков)",
 	"DRAGON_FLAGON.Nav_SettingOnClickPC": "Включить вкладку сцен для игроков",
-	"DRAGON_FLAGON.Nav_SettingOnClickPCHint": "(требуется перезапуск) Позволить игрокам перемещаться по сценам из вкладки сцен",
+	"DRAGON_FLAGON.Nav_SettingOnClickPCHint": "Позволить игрокам перемещаться по сценам из вкладки сцен (требуется перезапуск) ",
 	"DRAGON_FLAGON.Nav_SettingOnClickJournal": "Открывать сцену при нажатии в журнале",
 	"DRAGON_FLAGON.Nav_SettingOnClickJournalHint": "Если в журнале содержится ссылка на сцену, то при нажатии будет совершён переход на неё.",
 	"DRAGON_FLAGON.Nav_SettingOnClickJournalOnlyOne": "Открывать ссылку на сцену мгновенно",
@@ -3293,6 +3297,10 @@
 			"alwaysShowSpeedForPCs": {
 				"name": "Показывать скорость персонажей игроков всем",
 				"hint": "Если включено, то расчёт скорости персонажей игроков будет виден всем игрокам, даже если у них нет прав наблюдателя для токена."
+			},
+			"showGMRulerToPlayers": {
+				"name": "Показывать измерения GM игрокам",
+				"hint": "Если выключено, то игроки не будут видеть измерения, производимые GM."
 			},
 			"speedProviderSettings": {
 				"name": "Настройки источника скорости",
@@ -6102,7 +6110,10 @@
 			"RerollInitiative": "Постоянство инициативы",
 			"RerollInitiativeHint": "Оставлять, сбрасывать или перебрасывать инициативу каждый раунд.",
 			"SignificantTreasure": "Значительный вес сокровищ",
-			"SignificantTreasureHint": "Вес сокровищ при котором это будет влияет на скорость движения. Только для базовой нагрузки."
+			"SignificantTreasureHint": "Вес сокровищ при котором это будет влияет на скорость движения. Только для базовой нагрузки.",
+			"EnableInventory": "Включить инвентарь",
+			"Languages": "Языки",
+			"LanguagesHint": "Введите языки, разделяя их запятой"
 		},
 		"Show": "Показать",
 		"SitMod": "Ситуационный модификатор",
@@ -6170,11 +6181,12 @@
 			"itemName": "Название",
 			"itemType": "Тип предмета",
 			"partysheet": "Обзор партии",
-			"selectActors": "Выбрать игроков",
 			"tweaks": "Опции",
 			"xp": {
-				"deal": "Раздать ПО"
-			}
+				"deal": "Раздать ПО",
+				"label": "ПО"
+			},
+			"partyselect": "Выберите игроков"
 		},
 		"exploration": {
 			"ft": {
@@ -8143,26 +8155,36 @@
 	"POLYGLOT.CustomLanguagesTitle": "Свои языки",
 	"POLYGLOT.CustomLanguagesHint": "Список нестандартных языков, которые вы хотите добавить в систему (разделяйте запятой).",
 	"POLYGLOT.ComprehendLanguagesTitle": "Заклинание \"Понимание языков\"",
+	"POLYGLOT.ComprehendLanguagesHint": "Like the Comprehend Languages spell from D&D. Input a custom language you have already set. It won't be able to be spoken or written but allows to understand all other languages.",
 	"POLYGLOT.TruespeechTitle": "Заклинание \"Полиглот\"",
 	"POLYGLOT.DefaultLanguageTitle": "Стандартный язык",
+	"POLYGLOT.TruespeechHint": "Like the Tongues spell from D&D. Input a custom language you have already set. Its speaker understands all spoken languages (can't read Journals) and is understood by all creatures.",
 	"POLYGLOT.DefaultLanguageHint": "Название языка по умолчанию. Оставьте пустым, чтобы использовать язык системы.",
 	"POLYGLOT.ScrambleGMTitle": "Шифровать для GM",
 	"POLYGLOT.ScrambleGMHint": "Отключите эту опцию, чтобы GM всегда мог читать языки.",
 	"POLYGLOT.toggleRuneTextTitle": "Рунный текст в журнале",
 	"POLYGLOT.toggleRuneTextHint": "Включает видимость \"Рун\" в журнале.",
 	"POLYGLOT.RandomizeRunesTitle": "Случайные руны",
-	"POLYGLOT.RandomizeRunesHint": "Включение этой настройки будет шифровать один и тот же текст разным способом.",
+	"POLYGLOT.RandomizeRunesHint": "При включении, один и тот же текст будет шифроваться разным способом.",
 	"POLYGLOT.ExportFontsTitle": "Доступ к шрифтам",
 	"POLYGLOT.ExportFontsHint": "Сделать шрифты Polyglot доступными в других инструментах (например в Рисовании).",
 	"POLYGLOT.DisplayTranslatedTitle": "Показывать переведённый текст",
 	"POLYGLOT.DisplayTranslatedHint": "Для языков, переведённых в окне чата, отображать оригинальный текст и перевод под ним.",
-	"POLYGLOT.AllowOOCTitle": "Шифровать ЧВО сообщения",
+	"POLYGLOT.HideTranslationTitle": "Скрывать Глобус и текст \"Перевод с\" от игроков",
+	"POLYGLOT.HideTranslationHint": "Включите эту настройку, если не хотите, чтобы игроки видели на каком языке говорит NPC.",
+	"POLYGLOT.AllowOOCTitle": "Шифровать сообщения вне отыгрыша",
 	"POLYGLOT.AllowOOCHint": "Позволить GM шифровать сообщения, отправляемый в \"Чат вне отыгрыша\"",
 	"POLYGLOT.Translation": "Перевод",
 	"POLYGLOT.TranslatedFrom": "Перевод с ",
 	"POLYGLOT.LanguageLabel": "Язык",
 	"POLYGLOT.ToggleRunes": "Включить руны",
 	"POLYGLOT.Runes": "Руны",
+	"POLYGLOT.COC7.LanguageOwn": "Язык",
+	"POLYGLOT.COC7.LanguageAny": "Язык",
+	"POLYGLOT.COC7.LanguageOther": "Язык",
+	"POLYGLOT.COC7.LanguageSpec": "Язык",
+	"POLYGLOT.SWADE.LanguageSkills": "Язык",
+	"POLYGLOT.WFRP4E.LanguageSkills": "Язык",
 	"POPOUT.PopOut": "В окно",
 	"POPOUT.PopIn": "Вернуть",
 	"POPOUT.useWindows": "Вывести лист в отдельное окно",
@@ -11594,7 +11616,7 @@
 				"PSI": "ПСИ",
 				"SOC": "СОЦ",
 				"STR": "СИЛ",
-				"SkillName": "Название навыки"
+				"SkillName": "Название навыка"
 			},
 			"Tool": {
 				"Bonus": "Бонус"
@@ -11606,7 +11628,7 @@
 				"damageType": "Тип урона",
 				"lawLevel": "Законность",
 				"rangeBand": "Диапазон",
-				"rateOfFire": "Скорострельность",
+				"rateOfFire": "Скорострельность/Авто X",
 				"recoil": "Отдача",
 				"weaponType": "Тип оружия",
 				"MagazineCost": "Цена обоймы/энергоячейки",
@@ -11660,7 +11682,8 @@
 		},
 		"Settings": {
 			"ruleset": {
-				"name": "Правила"
+				"name": "Правила",
+				"hint": "Настройки будут оптимизированы под выбранные правила."
 			}
 		},
 		"Yes": "Да",
@@ -11677,7 +11700,25 @@
 			"consumable": "расходник"
 		},
 		"Name": "Название",
-		"Create": "Создать"
+		"Create": "Создать",
+		"Warnings": {
+			"StatValBelowZero": "Значение не может быть ниже нуля",
+			"MaxStatVal": "Значение превышает максимальное для характеристики",
+			"DecreaseEnduranceFirst": "Выносливость должна быть понижена перед другими характеристиками",
+			"AutoDamageForMultipleTargetsNotImplemented": "Автоматическое нанесение урона нескольким целям (используя Авто X) в данный момент не поддерживается."
+		},
+		"Damage": {
+			"CharacterIsDead": "Персонаж мёртв",
+			"Characteristics": "Характеристики",
+			"Current": "Текущий",
+			"Damage": "Урон",
+			"DealDamage": "Нанести урон",
+			"DealDamageTo": "Нанести урон _ACTOR_NAME_",
+			"Max": "Макс.",
+			"ResultingStat": "Итоговое значение",
+			"TotalDamage": "Общий урон",
+			"UnallocatedDamage": "Нераспределённый урон"
+		}
 	},
 	"VeryDifficult": "Очень сложная"
 }
