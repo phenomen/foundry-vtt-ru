@@ -18,6 +18,7 @@
     "ContestedRoll": "Contested Roll",
     "AssignXP": "Assign XP",
     "Lootables": "Convert Lootables",
+    "Attribute": "Attribute",
     "Ability": "Ability",
     "AbilityCheck": "Ability Check",
     "SavingThrow": "Saving Throw",
@@ -32,6 +33,7 @@
     "Passed": "Passed",
     "Failed": "Failed",
     "GrabMessage": "Grab Message Roll",
+    "UnknownError": "An unknown error occured",
     "CombatTurnMovementLimited": "Movement is set to combat turn, it's currently not your turn",
     "NormalMovementLimited": "Movement is currently locked",
     "RequestNoneActorSelected": "Cannot send request if no actors selected",
@@ -40,6 +42,7 @@
     "TokenNoActorAttrs": "token has no actor to use for additional attributes",
     "ActorNoRollFunction": ": Could not find function to roll",
     "ActorNoTool": ": Does not have that tool",
+    "UnknownSystem": "You're not using a system that Monk's Tokenbar supports.",
     "notify-on-change": {
       "name": "Notify on Movement Change",
       "hint": "Send a notification to all players when the GM changes the allowable movement"
@@ -49,8 +52,24 @@
       "hint": "Show the XP Dialog automatically after you complete an encounter"
     },
     "divide-xp": {
-      "name": "Divide XP among player",
-      "hint": "In the assign XP dialog, automatically divide the xp amongst the players"
+      "name": "How to divide XP among players",
+      "hint": "How to divide XP among players"
+    },
+    "divide-xp-equal-split": {
+      "name": "Divide XP among players",
+      "hint": "In the assign XP dialog, automatically divide the xp among players"
+    },
+    "divide-xp-no-split": {
+      "name": "Do not divide XP",
+      "hint": "In the assign XP dialog, do not automatically divide the xp among players"
+    },
+    "divide-xp-robin-hood-split": {
+      "name": "Larger share to lower level",
+      "hint": "In the assign XP dialog, automatically give more xp to lower level players and less to higher level players (robbing the rich to give to the poor...)"
+    },
+    "divide-xp-nottingham-split": {
+      "name": "Larger share to higher level",
+      "hint": "In the assign XP dialog, automatically give more xp to higher level players and less to lower level players (robbing the poor to give to the rich...)"
     },
     "show-resource-bars": {
       "name": "Show Resource Bars",
@@ -90,6 +109,10 @@
       "name": "Set movement after combat",
       "hint": "When combat ends, select what movement type to set it back to"
     },
+    "free-npc-combat": {
+      "name": "Free all tokens of Active Combatant",
+      "hint": "Allow the users who own Active Combatant to move all their tokens in Combat Turn"
+    },
     "change-to-combat": {
       "name": "Change movement to combat",
       "hint": "Change movement to combat when combat starts"
@@ -105,6 +128,18 @@
     "delete-after-grab": {
       "name": "Delete message after grab",
       "hint": "Delete the message after grabbing a players message roll for a requested roll."
+    },
+    "show-lootable-menu": {
+      "name": "Show Lootable Menu",
+      "hint": "Show lootable button on the token menu"
+    },
+    "request-roll-sound": {
+      "name": "Request Roll Sound",
+      "hint": "Play a sound when requesting a roll"
+    },
+    "send-levelup-whisper": {
+      "name": "Whisper player on levelup",
+      "hint": "Whisper player on actor levelup"
     },
     "XP": "XP",
     "Actors": "Actors",
@@ -142,6 +177,7 @@
     "GroupDC": "Group DC",
     "AssignByCR": "Assign gold by CR",
     "ConvertToLootable": "Convert to Lootable",
-    "Gold": "Gold"
+    "Gold": "Gold",
+    "Levelup": "You have enough xp to level up!"
   }
 }

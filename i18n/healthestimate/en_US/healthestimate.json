@@ -1,21 +1,17 @@
 {
   "healthEstimate": {
     "core": {
-      "onlyGM": {
-        "name": "GM only",
-        "hint": "Only show estimations to GM."
-      },
-      "onlyNotGM": {
-        "name": "Players only",
-        "hint": "Only show estimations to players."
-      },
-      "onlyNPCs": {
-        "name": "NPCs only",
-        "hint": "Only show estimations for NPCs, but not for player characters. This setting only affects players."
-      },
-      "onlyPCs": {
-        "name": "PCs only",
-        "hint": "Only show estimations for PCs, but not for non-player characters. This setting only affects players."
+      "isNow": "is now",
+      "showDescription": {
+        "name": "Show Estimates",
+        "hint": "Show estimates to the selected users.",
+        "choices": {
+          "all": "All",
+          "GM": "Only to GM",
+          "Players": "Only to Players",
+          "NPC": "Only to Players (NPC estimates only)",
+          "PC": "Only to Players (PC estimates only)"
+        }
       },
       "stateNames": {
         "name": "Stages",
@@ -35,7 +31,7 @@
       },
       "deathState": {
         "name": "Death State on Condition",
-        "hint": "Show token as dead when it's been marked with specific condition. Works independently from the macro."
+        "hint": "Show token as dead when it's been affected by any condition that uses the icon set on the Death Marker setting. Works independently from the macro."
       },
       "deathStateName": {
         "name": "Death State Name",
@@ -51,7 +47,7 @@
       },
       "NPCsJustDie": {
         "name": "NPCs die immediately",
-        "hint": "With this setting on the lowest option in normal description list won't be shown for NPCs, they'll be shown as dead instead."
+        "hint": "The last stage of NPCs is replaced by the Death State Name."
       },
       "perfectionism": {
         "name": "Perfectionism",
