@@ -14,6 +14,8 @@
     "Second": "Second",
     "Forward": "Forward",
     "Back": "Back",
+    "ShowAdvanced": "Show Advanced",
+    "HideAdvanced": "Hide Advanced",
     "DateControls": "Date Controls",
     "DateControlsHelp": "Use these controls to change the current date in your game.",
     "NoDateControls": "Simple Calendar has been configured to let another module control the date and time. Please use that module to update the time or change Simple Calendars configuration.",
@@ -165,6 +167,8 @@
         "IntercalaryHelp": "If this month is to be considered an intercalary month or not.",
         "IntercalaryInclude": "Include Intercalary Month In Total Day Count",
         "IntercalaryIncludeHelp": "If checked the days that make up the intercalary month will be included in the total number of days in a year.",
+        "DayOffset": "Day Offset",
+        "DayOffsetHelp": "The amount to offset the day's number by. Used if you want to start a month at 2 instead of 1",
         "Number": "Month Number",
         "NumberHelp": "The numeric representation of this month.",
         "Remove": "Remove",
@@ -180,7 +184,9 @@
         "NameHelp": "The text name of this day of the week.",
         "Add": "Add New Weekday",
         "RemoveAll": "Remove All Weekdays",
-        "Options": "Weekday Options"
+        "Options": "Weekday Options",
+        "FirstWeekDay": "Starting Week Day",
+        "FirstWeekDayHelp": "This sets the day of the week that the first day of year 0 starts on."
       },
       "Weekdays": "Weekdays",
       "DefaultNoteVisibility": "Note Default Player Visibility",
@@ -258,6 +264,9 @@
       },
       "Notes": {
         "NotGM": "There is no GM present in the game, a GM needs to be logged in for players to add notes."
+      },
+      "Macros": {
+        "GMUpdate": "Only the GM can update the calendar date!"
       }
     },
     "Error": {

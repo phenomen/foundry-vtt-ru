@@ -15,8 +15,9 @@
     "INT": "INT",
     "WIS": "WIS",
     "CHA": "CHA",
-    "ASK": "ASK",
-    "BOND": "BOND",
+    "ASK": "Ask (ability prompt)",
+    "BOND": "Bond (modifier prompt)",
+    "FORMULA": "Custom Roll Formula",
     "DebilityStr": "Weak",
     "DebilityDex": "Shaky",
     "DebilityCon": "Sick",
@@ -44,7 +45,11 @@
     "BondHelp": "________ bond text goes here.",
     "Dialog": {
       "Bond1": "Choose the bonus for the bond on this ",
-      "Bond2": " move."
+      "Bond2": " move.",
+      "askTitle": "Choose a stat",
+      "askContent": "Choose a stat for this <strong>{name}</strong> move.",
+      "bondTitle": "Enter your modifier",
+      "bondContent": "Enter a bonus for the bond or modifier for this <strong>{name}</strong> move."
     },
     "MoveCreate": "Create Move",
     "AddBasicMove": "Add a Basic move",
@@ -80,6 +85,7 @@
     "Spells9": "9th Level Spells",
     "SpellPrepared": "Prepared",
     "SpellRollFormula": "Roll Formula",
+    "RollFormula": "Roll Formula",
     "AddEquipment": "Add equipment",
     "AddSpell": "Add spell",
     "Common": {
@@ -136,13 +142,7 @@
     "ChooseAdvanced2": "When you gain a level from 2-5, choose from these moves.",
     "ChooseAdvanced6": "When you gain a level from 6-10, choose from these moves or the level 2-5 moves.",
     "ChooseSpells": "Choose spells",
-    "DefaultLook": [
-      "Eyes:\r",
-      "Hair:\r",
-      "Body:\r",
-      "Skin:\r",
-      "Clothes:"
-    ],
+    "DefaultLook": "<ul><li>Eyes:</li><li>Hair:</li><li>Body:</li><li>Skin:</li><li>Clothes:</li></ul>",
     "Cancel": "Cancel",
     "Confirm": "Confirm",
     "Prepared": "Prepared",
@@ -155,13 +155,21 @@
     "Forward": "Forward",
     "Ongoing": "Ongoing",
     "Hold": "Hold",
-    "failure": "Complications (mark XP)",
+    "failure": "Complications",
     "partial": "Partial Success",
     "success": "Success",
+    "ChooseResult": "Choose Result",
+    "Choices": "Choices",
+    "MarkXp": "Mark XP",
+    "XpMarked": "XP marked",
     "Settings": {
       "itemIcons": {
         "name": "Enable Item Icons",
         "hint": "Enable visual icons for moves, spells, and equipment in character sheets (requires browser reload)."
+      },
+      "nightmode": {
+        "name": "Enable Nightmode",
+        "hint": "Enable night/dark mode for character sheets (per user)."
       }
     }
   }
