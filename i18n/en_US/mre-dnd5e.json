@@ -1,0 +1,59 @@
+{
+  "mre-dnd5e": {
+    "SETTINGS": {
+      "AutoRollChecksLabel": "Automatically Roll Item Checks",
+      "AutoRollChecksHint": "Automatically roll the attack roll or tool check for the item if it exists.",
+      "AutoRollDamageLabel": "Automatically Roll Item Damage",
+      "AutoRollDamageHint": "Automatically roll the first formula group for the item if it exists.",
+      "ShowDamageTotalLabel": "Show Total Damage",
+      "ShowDamageTotalHint": "Whether or not to show the total result of all individual rolls in a combined damage card.",
+      "GlobalDefault": "World Default",
+      "GlobalHint": "This setting sets the default setting for all players.",
+      "LocalOverride": "Local Override",
+      "LocalHint": "This setting overrides the world default for this client only.",
+      "ModifierAdvLabel": "ADV/Crit Modifier Key",
+      "ModifierAdvHint": "When holding this modifier key, MRE will roll a check or attack with advantage, or roll damage as critical damage.",
+      "ModifierDisAdvLabel": "DISADV Modifier Key",
+      "ModifierDisAdvHint": "When holding this modifier key, MRE will roll with disadvantage.",
+      "ModifierShowRollDialogLabel": "Roll Dialog Modifier Key",
+      "ModifierShowRollDialogHint": "When holding this modifier key, MRE will show the roll dialog, rather than skipping it.",
+      "RollDialogBehaviorLabel": "Default Roll Dialog Behavior",
+      "RollDialogBehaviorHint": "Choose whether to show or skip the core dnd5e roll dialog when no modifier keys are held.",
+      "Skip": "Skip",
+      "Show": "Show"
+    },
+    "MODIFIERS": {
+      "default": "Use World Default",
+      "altKey": "Alt/Option",
+      "ctrlKey": "Control",
+      "metaKey": "Command",
+      "shiftKey": "Shift"
+    },
+    "FORMULA-GROUP": {
+      "DialogTitle": "Formula Group Configuration",
+      "DialogHint": "Configure formula groups and which formulae are included in each group.",
+      "Primary": "Primary",
+      "Secondary": "Secondary",
+      "Tertiary":  "Tertiary",
+      "Empty": "Empty",
+      "NewFormulaGroup": "New Formula Group",
+      "SaveAndClose": "Save & Close",
+      "AddFormulaGroup": "Add a New Formula Group",
+      "DeleteFormulaGroup": "Delete This Formula Group",
+      "RenameFormulaGroup": "Rename Formula Group",
+      "GroupEmptyError": "Formula Group \"{label}\" is empty.",
+      "GroupsMustNotBeEmpty": "You must have at least one formula assigned to a formula group."
+    },
+    "AUTO-ROLL": {
+      "AutoRoll": "Auto Roll",
+      "OverrideFalse": "Force Auto Roll OFF for this item",
+      "OverrideTrue": "Force Auto Roll ON for this item",
+      "Default": "Use the default Auto Roll setting",
+      "False": "Auto Roll OFF for this item",
+      "True": "Auto Roll ON for this item"
+    },
+    "OTHER": {
+      "TotalDamage": "Total"
+    }
+  }
+}

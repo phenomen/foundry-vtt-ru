@@ -1,0 +1,66 @@
+{
+	"pings": {
+		"settings": {
+			"minMovePermission": {
+				"title": "Minimum Move Permission",
+				"hint": "The minimum permission to allow users to move the screen with a ping. For example, if ASSISTANT is selected, only Gamemasters and their Assistants are allowed to perform a ping that moves everybodies' screens."
+			},
+			"mouseButton": {
+				"title": "Mouse Button to Press for a Ping",
+				"hint": "The mouse button that needs to be held for a specified time (configurable below) to perform a ping. 0 = left, 1 = middle, 2 = right. Press your desired mouse button (with modifiers like shift/ctrl if you want) in this field, use the escape key to clear it again."
+			},
+			"mouseButtonMove": {
+				"title": "Mouse Button for a Screen-Moving Ping",
+				"hint": "The mouse button that needs to be held for a specified time (configurable below) to perform a ping that also moves all the player's screens to the ping. 0 = left, 1 = middle, 2 = right. Press your desired mouse button (with modifiers like shift/ctrl if you want) in this field, use the escape key to clear it again."
+			},
+			"mouseButtonDuration": {
+				"title": "Mouse Button Press Duration",
+				"hint": "The time in milliseconds you have to hold the mouse button until a ping is performed."
+			},
+			"key": {
+				"title": "Key to Press for a Ping",
+				"hint": "The key to press to perform a ping at the current location of the mouse cursor. Press your desired key (with modifiers like shift/ctrl if you want) in this field, use the escape key to clear it again."
+			},
+			"keyMove": {
+				"title": "Key for a Screen-Moving Ping",
+				"hint": "The key to press to perform a ping at the current location of the mouse cursor that also moves all the player's screens to the ping. Press your desired key (with modifiers like shift/ctrl if you want) in this field, use the escape key to clear it again."
+			},
+			"showName": {
+				"title": "Show Player Name",
+				"hint": "If the player name should be shown beneath the ping."
+			},
+			"image": {
+				"title": "Ping Image",
+				"hint": "The image that should be used as an alternative to the default ping. A tint will be applied based on the player's color, so everything other than greyscale will look bad."
+			},
+			"scale": {
+				"title": "Scale",
+				"hint": "How big, in grids, the ping should be."
+			},
+			"duration": {
+				"title": "Duration",
+				"hint": "How long the ping should be shown, in seconds."
+			},
+			"rotate": {
+				"title": "Rotation",
+				"hint": "If the ping image should rotate."
+			},
+			"rotateSpeed": {
+				"title": "Rotation Speed",
+				"hint": "How many seconds it should take for the ping image to rotate 360 degrees."
+			},
+			"sizeChange": {
+				"title": "Size Change",
+				"hint": "If the ping image should slightly change its size."
+			},
+			"sizeChangeAmount": {
+				"title": "Size Change Amount",
+				"hint": "How much of the total size should be changed."
+			},
+			"sizeChangeSpeed": {
+				"title": "Size Change Speed",
+				"hint": "How long in seconds one cycle of size changing should take."
+			}
+		}
+	}
+}

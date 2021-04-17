@@ -1,7 +1,7 @@
 # Русский перевод для Foundry VTT
 
-* **Автор**: Phenomen [Discord: Phenomen#1337]
-* **Версия**: 0.8.1.18
+* **Автор**: Phenomen [Discord: Phen#1337]
+* **Версия**: 0.8.1.19
 * **Foundry VTT**: 0.7.9-0.8.1
 
 ### Ссылки
