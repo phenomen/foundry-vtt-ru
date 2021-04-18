@@ -1,82 +1,40 @@
 {
-	"drag-ruler": {
-		"dependencies": {
-			"ok": "OK",
-			"terrain-ruler": {
-				"title": "How to measure difficult terrain with Drag Ruler",
-				"text": "You have the {moduleName} module enabled. Drag Ruler is able to measure difficult terrain that was placed down using that module. To make this possible Drag Ruler utilizes the Terrain Ruler module. If Terrain Ruler is installed and activated Drag Ruler will automatically start to respect difficult terrain in it's measurements.",
-				"neverShowAgain": "Never show this again"
-			},
-			"socketlib": {
-				"title": "Socketlib Module Missing",
-				"text": "Drag Ruler requires the socketlib module to work properly. Please activate the socketlib module in this world."
-			}
-		},
-		"genericSpeedProvider": {
-			"settings": {
-				"dashMultiplier": {
-					"name": "Dash Multiplier",
-					"hint": "This can be used to give tokens a secondary speed during coloring of the measured path. Set it to 0 to disable the secondary speed."
-				},
-				"speedAttribute": {
-					"name": "Speed Attribute",
-					"hint": "The attribute that defines a token's walking speed. This is used during coloring of the measured path."
-				}
-			},
-			"speeds": {
-				"walk": "walk",
-				"dash": "dash"
-			}
-		},
-		"settings": {
-			"alwaysShowSpeedForPCs": {
-				"name": "Show PC speed to everyone",
-				"hint": "If enabled the coloring based on actor speed for player characters will shown to everyone, even if they don't have observer permission for the character sheet."
-			},
-			"enableMovementHistory": {
-				"name": "Enable movement history during combat",
-				"hint": "If enabled, Drag Ruler will remember the path a token took during it's turn in combat and will display it when you pick the token back up."
-			},
-			"showGMRulerToPlayers": {
-				"name": "Show GM ruler to players",
-				"hint": "If disabled the ruler of GMs will not be shown for non-GM players"
-			},
-			"speedProviderSettings": {
-				"name": "Speed Provider Settings",
-				"hint": "The Speed Provider Settings contain all the game system specific settings.",
-				"button": "Speed Provider Settings",
-				"windowTitle": "Speed Provider Settings",
-				"headers": {
-					"speedProvider": "Speed Provider",
-					"speedProviderSettings": "Speed Provider specific settings"
-				},
-				"activeProvider": {
-					"name": "Currently active Speed Provider",
-					"hint": "The settings show below depend on the active speed provider. If the GM selects a different speed provider the available settings may change."
-				},
-				"noSettings": "This speed provider doesn't offer any configuration options.",
-				"color": {
-					"name": "Color for {colorName}",
-					"hint": "The color that will be used to color squares that are within {colorName} range",
-					"unreachable": {
-						"name": "unreachable",
-						"hint": "The color for spaces that aren't reachable by the dragged token"
-					}
-				},
-				"speedProvider": {
-					"name": "Speed Settings Provider",
-					"hint": "Select who provides speed information for tokens duing coloring. Drag Ruler offers a generic speed provider that provides basic functionality and should work for all game systems if configured correctly. More speed providers can be made available via game systems and installed modules. Selecting a different speed provider than the generic speed provider may offer a better integration into the rules of the game system you're using. The options below are dependent upon the speed provider selected here.",
-					"choices": {
-						"module": "Module {name}",
-						"native": "Generic",
-						"system": "System {name}"
-					}
-				}
-			},
-			"swapSpacebarRightClick": {
-				"name": "Swap spacebar and right click",
-				"hint": "Swaps the functions of spacebar and right click during dragging. If enabled right click will place waypoints and spacebar will delete them"
-			}
-		}
-	}
+	"drag-ruler.dependencies.ok": "OK",
+	"drag-ruler.dependencies.terrain-ruler.title": "How to measure difficult terrain with Drag Ruler",
+	"drag-ruler.dependencies.terrain-ruler.text": "You have the {moduleName} module enabled. Drag Ruler is able to measure difficult terrain that was placed down using that module. To make this possible Drag Ruler utilizes the Terrain Ruler module. If Terrain Ruler is installed and activated Drag Ruler will automatically start to respect difficult terrain in it's measurements.",
+	"drag-ruler.dependencies.terrain-ruler.neverShowAgain": "Never show this again",
+	"drag-ruler.dependencies.socketlib.title": "Socketlib Module Missing",
+	"drag-ruler.dependencies.socketlib.text": "Drag Ruler requires the socketlib module to work properly. Please activate the socketlib module in this world.",
+	"drag-ruler.genericSpeedProvider.settings.dashMultiplier.name": "Dash Multiplier",
+	"drag-ruler.genericSpeedProvider.settings.dashMultiplier.hint": "This can be used to give tokens a secondary speed during coloring of the measured path. Set it to 0 to disable the secondary speed.",
+	"drag-ruler.genericSpeedProvider.settings.speedAttribute.name": "Speed Attribute",
+	"drag-ruler.genericSpeedProvider.settings.speedAttribute.hint": "The attribute that defines a token's walking speed. This is used during coloring of the measured path.",
+	"drag-ruler.genericSpeedProvider.speeds.walk": "walk",
+	"drag-ruler.genericSpeedProvider.speeds.dash": "dash",
+	"drag-ruler.settings.alwaysShowSpeedForPCs.name": "Show PC speed to everyone",
+	"drag-ruler.settings.alwaysShowSpeedForPCs.hint": "If enabled the coloring based on actor speed for player characters will shown to everyone, even if they don't have observer permission for the character sheet.",
+	"drag-ruler.settings.enableMovementHistory.name": "Enable movement history during combat",
+	"drag-ruler.settings.enableMovementHistory.hint": "If enabled, Drag Ruler will remember the path a token took during it's turn in combat and will display it when you pick the token back up.",
+	"drag-ruler.settings.showGMRulerToPlayers.name": "Show GM ruler to players",
+	"drag-ruler.settings.showGMRulerToPlayers.hint": "If disabled the ruler of GMs will not be shown for non-GM players",
+	"drag-ruler.settings.speedProviderSettings.name": "Speed Provider Settings",
+	"drag-ruler.settings.speedProviderSettings.hint": "The Speed Provider Settings contain all the game system specific settings.",
+	"drag-ruler.settings.speedProviderSettings.button": "Speed Provider Settings",
+	"drag-ruler.settings.speedProviderSettings.windowTitle": "Speed Provider Settings",
+	"drag-ruler.settings.speedProviderSettings.headers.speedProvider": "Speed Provider",
+	"drag-ruler.settings.speedProviderSettings.headers.speedProviderSettings": "Speed Provider specific settings",
+	"drag-ruler.settings.speedProviderSettings.activeProvider.name": "Currently active Speed Provider",
+	"drag-ruler.settings.speedProviderSettings.activeProvider.hint": "The settings show below depend on the active speed provider. If the GM selects a different speed provider the available settings may change.",
+	"drag-ruler.settings.speedProviderSettings.noSettings": "This speed provider doesn't offer any configuration options.",
+	"drag-ruler.settings.speedProviderSettings.color.name": "Color for {colorName}",
+	"drag-ruler.settings.speedProviderSettings.color.hint": "The color that will be used to color squares that are within {colorName} range",
+	"drag-ruler.settings.speedProviderSettings.color.unreachable.name": "unreachable",
+	"drag-ruler.settings.speedProviderSettings.color.unreachable.hint": "The color for spaces that aren't reachable by the dragged token",
+	"drag-ruler.settings.speedProviderSettings.speedProvider.name": "Speed Settings Provider",
+	"drag-ruler.settings.speedProviderSettings.speedProvider.hint": "Select who provides speed information for tokens duing coloring. Drag Ruler offers a generic speed provider that provides basic functionality and should work for all game systems if configured correctly. More speed providers can be made available via game systems and installed modules. Selecting a different speed provider than the generic speed provider may offer a better integration into the rules of the game system you're using. The options below are dependent upon the speed provider selected here.",
+	"drag-ruler.settings.speedProviderSettings.speedProvider.choices.module": "Module {name}",
+	"drag-ruler.settings.speedProviderSettings.speedProvider.choices.native": "Generic",
+	"drag-ruler.settings.speedProviderSettings.speedProvider.choices.system": "System {name}",
+	"drag-ruler.settings.swapSpacebarRightClick.name": "Swap spacebar and right click",
+	"drag-ruler.settings.swapSpacebarRightClick.hint": "Swaps the functions of spacebar and right click during dragging. If enabled right click will place waypoints and spacebar will delete them"
 }

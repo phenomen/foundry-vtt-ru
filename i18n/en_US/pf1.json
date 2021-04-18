@@ -2,12 +2,10 @@
   "Pathfinder 1": "Pathfinder 1",
   "PF1.title": "Pathfinder 1",
   "PF1.description": "A comprehensive game system for running games of Pathfinder 1 in the Foundry VTT environment.",
-
   "PF1.ActorSheetPFCharacter": "Character",
   "PF1.ActorSheetPFNPC": "NPC",
   "PF1.ActorSheetPFNPCLite": "NPC (Lite)",
   "PF1.ActorSheetPFNPCLoot": "Loot",
-
   "SETTINGS.pf1DiagN": "Diagonal Movement Rule",
   "SETTINGS.pf1DiagL": "Configure which diagonal movement rule should be used for games within this system.",
   "SETTINGS.pf1InitTBN": "Initiative Dexterity Tiebreaker",
@@ -60,7 +58,6 @@
   "SETTINGS.pf1HideReachMeasurementsH": "Don't show reach measurements, such as those found when hovering over token quick actions.",
   "SETTINGS.pf1DisplayIterativesN": "Display iteratives",
   "SETTINGS.pf1DisplayIterativesH": "Breaks down BAB display to iteratives instead of only the total bonus",
-
   "SETTINGS.pf1HealthConfigName": "Health Configuration",
   "SETTINGS.pf1HealthConfigLabel": "Configure Health",
   "SETTINGS.pf1HealthConfigHint": "Configure health computations for actors.",
@@ -80,7 +77,6 @@
   "SETTINGS.pf1HealthConfigWoundsAndVigorPCHint": "Use the Wounds and Vigor optional ruleset for player characters.",
   "SETTINGS.pf1HealthConfigWoundsAndVigorNPCName": "Wounds and Vigor for NPCs",
   "SETTINGS.pf1HealthConfigWoundsAndVigorNPCHint": "Use the Wounds and Vigor optional ruleset for nonplayer characters.",
-
   "SETTINGS.pf1HealthConfigWoundThresholdsPCName": "Wound thresholds for PCs",
   "SETTINGS.pf1HealthConfigWoundsThresholdsPCHint": "Use wound threshold optional ruleset for player characters.",
   "SETTINGS.pf1HealthConfigWoundThresholdsNPCName": "Wound thresholds for NPCs",
@@ -92,26 +88,19 @@
   "SETTINGS.pf1HealthConfigWoundThresholdDisabled": "Disabled",
   "SETTINGS.pf1HealthConfigWoundThresholdNormal": "Normal",
   "SETTINGS.pf1HealthConfigWoundThresholdGritty": "Gritty",
-
   "SETTINGS.pf1DragRulerWalk": "walk",
   "SETTINGS.pf1DragRulerDash": "dash",
   "SETTINGS.pf1DragRulerRun": "run",
-
   "PF1.OptionalAndVariantRules": "Optional & Variant Rules",
-
   "PF1.WoundThresholdOverride": "Wound Threshold override",
-
   "PF1.WoundLevelHealthy": "Healthy Condition",
   "PF1.WoundLevelGrazed": "Grazed Condition",
   "PF1.WoundLevelWounded": "Wounded Condition",
   "PF1.WoundLevelCritical": "Critical Condition",
-
   "SETTINGS.pf1UnitsN": "System of units",
   "SETTINGS.pf1UnitsL": "System of units to be used in the world",
-
   "TOKEN.VisionLowLight": "Low-light Vision",
   "TOKEN.VisionDarkvision": "Darkvision",
-
   "PF1.ExperienceConfigName": "Experience Configuration",
   "PF1.ExperienceConfigLabel": "Configure Experience",
   "PF1.ExperienceConfigHint": "Configure aspects about leveling up.",
@@ -120,13 +109,11 @@
   "PF1.XPTrackFast": "Fast",
   "PF1.XPTrackCustomFormula": "Custom (Formula)",
   "PF1.XPTrackCustomFormulaHint": "e.g. '@level * 1000'",
-
   "PF1.AccessibilityConfigName": "Accessibility Configuration",
   "PF1.AccessibilityConfigLabel": "Accessibility",
   "PF1.AccessibilityConfigHint": "Change accessibility settings",
   "PF1.AccessibilityFontSize": "Font Size",
   "PF1.AccessibilityFontSizeHint": "Changes font size in certain aspects of the game (such as on attack chat cards)",
-
   "PF1.TooltipConfigName": "Tooltip Configuration",
   "PF1.TooltipConfigLabel": "Tooltip",
   "PF1.TooltipConfigHint": "Change tooltip settings",
@@ -140,7 +127,6 @@
   "PF1.TooltipConfigDisable": "Disable Tooltips",
   "PF1.TooltipConfigHideWithoutKey": "Hide unless {key} is held",
   "PF1.OnMouse": "On Mouse",
-
   "PF1.TooltipWorldConfigName": "Tooltip World Configuration",
   "PF1.TooltipWorldConfigLabel": "Tooltip (World)",
   "PF1.TooltipWorldConfigHint": "Change world-wide tooltip settings",
@@ -159,37 +145,24 @@
   "PF1.TooltipWorldConfigHideActorName": "Hide Actor names (globally)",
   "PF1.TooltipWorldConfigHideActorName_Hint": "Hide Actor names from all players",
   "PF1.TooltipWorldConfigHideActorNameReplacement": "Hidden Replacement Name",
-
   "PF1.LevelUpForm_Title": "Level up {className}",
   "PF1.LevelUpForm_Health": "Health",
   "PF1.LevelUpForm_Health_Roll": "Roll",
   "PF1.LevelUpForm_Health_Manual": "Manual",
-  "PF1.LevelUp": {
-    "Label": "Level Up",
-    "Chat": {
-      "Header": "Level Up Report",
-      "Health": {
-        "Header": "Health",
-        "Roll": "Rolled for health: {add}",
-        "Manual": "Manual health: {add}"
-      },
-      "FC": {
-        "Header": "Favoured Class Bonus"
-      },
-      "Extra": {
-        "Header": "Extra",
-        "NewFeat": "You have 1 new feat to choose",
-        "NewFeats": "You have {newValue} new feats to choose",
-        "NewAbilityScore": "You can increase an ability score by +1"
-      }
-    }
-  },
-
+  "PF1.LevelUp.Label": "Level Up",
+  "PF1.LevelUp.Chat.Header": "Level Up Report",
+  "PF1.LevelUp.Chat.Health.Header": "Health",
+  "PF1.LevelUp.Chat.Health.Roll": "Rolled for health: {add}",
+  "PF1.LevelUp.Chat.Health.Manual": "Manual health: {add}",
+  "PF1.LevelUp.Chat.FC.Header": "Favoured Class Bonus",
+  "PF1.LevelUp.Chat.Extra.Header": "Extra",
+  "PF1.LevelUp.Chat.Extra.NewFeat": "You have 1 new feat to choose",
+  "PF1.LevelUp.Chat.Extra.NewFeats": "You have {newValue} new feats to choose",
+  "PF1.LevelUp.Chat.Extra.NewAbilityScore": "You can increase an ability score by +1",
   "PF1.Submit": "Submit",
   "PF1.Next": "Next",
   "PF1.Previous": "Previous",
   "PF1.General": "General",
-
   "PF1.Apply": "Apply",
   "PF1.ApplyHalf": "Apply Half",
   "PF1.ApplyDamage": "Apply Damage",
@@ -199,24 +172,16 @@
   "PF1.ReduceBy": "Reduce by",
   "PF1.SwapSelected": "Swap Selected",
   "PF1.ClearReduction": "Clear Reduction",
-
   "PF1.RollsForInitiative": "{0} rolls for initiative!",
-
   "PF1.Flags": "Flags",
   "PF1.FlagsInstructions": "Configure character features and traits which fine-tune behaviors of the PF1 system.",
   "PF1.FlagsTitle": "Configure Special Traits",
   "PF1.FlagsSave": "Update Special Traits",
   "PF1.FlagsBoolean": "Boolean Flags",
   "PF1.FlagsDictionary": "Dictionary Flags",
-  "PF1.AdvancedInfo": {
-    "Flags": {
-      "InfoBox": "Flags can be used by modules and macros, and don't do anything by themselves."
-    }
-  },
-
+  "PF1.AdvancedInfo.Flags.InfoBox": "Flags can be used by modules and macros, and don't do anything by themselves.",
   "PF1.AbilityDamage": "Ability Damage",
   "PF1.AbilityDrain": "Ability Drain",
-
   "PF1.PointBuyCalculator": "Point Buy Calculator",
   "PF1.PointBuyCalculatorWarning": "The point buy calculator will OVERRIDE the character's base ability scores.",
   "PF1.PointBuyCalculatorSpent": "Points Spent",
@@ -226,58 +191,47 @@
   "PF1.PointBuyCalculatorStandardFantasy": "Standard Fantasy",
   "PF1.PointBuyCalculatorHighFantasy": "High Fantasy",
   "PF1.PointBuyCalculatorEpicFantasy": "Epic Fantasy",
-
   "PF1.CreateItem": "Create Item",
   "PF1.EditItem": "Edit Item",
   "PF1.DuplicateItem": "Duplicate Item",
   "PF1.DeleteItem": "Delete Item",
   "PF1.DeleteItemTitle": "Delete Item: {0}",
-
   "PF1.LinkTypeChildren": "Children",
   "PF1.LinkTypeCharges": "Charges",
   "PF1.LinkTypeClassAssociations": "Class Associations",
   "PF1.LinkTypeAmmunition": "Ammunition",
-
   "PF1.LinkHelpChildren": "Linked children are deleted from the actor when the link parent is deleted.",
   "PF1.LinkHelpCharges": "Items linked in this way share their charges. Add all links to one master item.",
   "PF1.LinkHelpClassAssociations": "Items linked in this way are automatically added to the actor at the appropriate class level.",
   "PF1.LinkHelpAmmunition": "Items linked in this way automatically lose a quantity (or charge) for every attack made.",
-
   "PF1.HelpSellMultiplierN": "Sale Rate",
   "PF1.HelpSellMultiplier": "The rate at which non-trade goods sell. Trade goods always sell at full price. Default is 0.5.",
   "PF1.HelpDomainSpell": "This spell will not cost any spell slots to restore upon rest.",
-
   "PF1.AbilityStr": "Strength",
   "PF1.AbilityDex": "Dexterity",
   "PF1.AbilityCon": "Constitution",
   "PF1.AbilityInt": "Intelligence",
   "PF1.AbilityWis": "Wisdom",
   "PF1.AbilityCha": "Charisma",
-
   "PF1.AbilityShortStr": "Str",
   "PF1.AbilityShortDex": "Dex",
   "PF1.AbilityShortCon": "Con",
   "PF1.AbilityShortInt": "Int",
   "PF1.AbilityShortWis": "Wis",
   "PF1.AbilityShortCha": "Cha",
-
   "PF1.SavingThrowFort": "Fortitude",
   "PF1.SavingThrowRef": "Reflex",
   "PF1.SavingThrowWill": "Will",
-
   "PF1.ACNormal": "AC",
   "PF1.ACTouch": "Touch",
   "PF1.ACFlatFooted": "Flat-footed",
   "PF1.CMDFlatFooted": "Flat-footed CMD",
-
   "PF1.ACTypeNormal": "Deflection",
   "PF1.ACTypeTouch": "Dodge",
   "PF1.ACTypeFlatFooted": "Misc FF",
-
   "PF1.WeaponHoldTypeNormal": "Normal",
   "PF1.WeaponHoldTypeTwoHanded": "Two-handed",
   "PF1.WeaponHoldTypeOffhand": "Off-hand",
-
   "PF1.CondBleed": "Bleed",
   "PF1.CondBlind": "Blind",
   "PF1.CondConfused": "Confused",
@@ -302,7 +256,6 @@
   "PF1.CondStunned": "Stunned",
   "PF1.CondNauseated": "Nauseated",
   "PF1.CondDazed": "Dazed",
-
   "PF1.CondTypeBleed": "Bleed",
   "PF1.CondTypeBlind": "Blind",
   "PF1.CondTypeConfuse": "Confusion",
@@ -320,16 +273,13 @@
   "PF1.CondTypePetrify": "Petrification",
   "PF1.CondTypeStun": "Stun",
   "PF1.CondTypeSleep": "Sleep",
-
   "PF1.CostGP": "Cost (GP)",
-
   "PF1.ClassType": "Class Type",
   "PF1.ClassTypeBase": "Base Class",
   "PF1.ClassTypePrestige": "Prestige Class",
   "PF1.ClassTypeNPC": "NPC Class",
   "PF1.ClassTypeRacial": "Racial HD",
   "PF1.ClassTypeMythic": "Mythic Path",
-
   "PF1.ActionMWAK": "Melee Weapon Attack",
   "PF1.ActionRWAK": "Ranged Weapon Attack",
   "PF1.ActionMSAK": "Melee Spell Attack",
@@ -340,7 +290,6 @@
   "PF1.ActionSave": "Saving Throw",
   "PF1.ActionHeal": "Healing",
   "PF1.ActionOther": "Other",
-
   "PF1.Alignment": "Alignment",
   "PF1.AlignmentLG": "Lawful Good",
   "PF1.AlignmentNG": "Neutral Good",
@@ -360,17 +309,14 @@
   "PF1.AlignmentShortLE": "LE",
   "PF1.AlignmentShortNE": "NE",
   "PF1.AlignmentShortCE": "CE",
-
   "PF1.ChatReqMats": "Required Materials",
   "PF1.ChatOtherFormula": "Other Formula",
-
   "PF1.Currency": "Currency",
   "PF1.WeightlessCurrency": "Weightless Currency",
   "PF1.CurrencyPP": "PP",
   "PF1.CurrencyGP": "GP",
   "PF1.CurrencySP": "SP",
   "PF1.CurrencyCP": "CP",
-
   "PF1.DistPersonal": "Personal",
   "PF1.DistTouch": "Touch",
   "PF1.DistMelee": "Melee",
@@ -380,14 +326,12 @@
   "PF1.DistLong": "Long",
   "PF1.DistFt": "Feet",
   "PF1.DistMi": "Miles",
-
   "PF1.DistM": "Meters",
   "PF1.DistKM": "Kilometers",
   "PF1.DistFtShort": "ft",
   "PF1.DistMiShort": "mi",
   "PF1.DistMShort": "m",
   "PF1.DistKMShort": "km",
-
   "PF1.ItemContainerContentsWeight": "Contents Weight",
   "PF1.ItemContainerContentsValue": "Contents Value",
   "PF1.ItemContainerContentsSellValue": "Contents Sell Value",
@@ -404,26 +348,22 @@
   "PF1.ItemContainerTotalItemValue": "Total Item Value: {0} GP, {1} SP, {2} CP",
   "PF1.ItemContainerSellValue": "Sell Value: {0} GP, {1} SP, {2} CP",
   "PF1.ItemContainerTakeContents": "Take from Container",
-
   "PF1.LootTypeGear": "Gear",
   "PF1.LootTypeAmmo": "Ammunition",
   "PF1.LootTypeTradeGoods": "Trade Goods",
   "PF1.LootTypeGearSingle": "Gear",
   "PF1.LootTypeAmmoSingle": "Ammunition",
   "PF1.LootTypeTradeGoodsSingle": "Trade Good",
-
   "PF1.SenseBS": "Blindsight",
   "PF1.SenseDV": "Darkvision",
   "PF1.SenseTS": "Tremorsense",
   "PF1.SenseTR": "Truesight",
   "PF1.SenseLL": "Low-light",
-
   "PF1.FlyManeuverabilityClumsy": "Clumsy",
   "PF1.FlyManeuverabilityPoor": "Poor",
   "PF1.FlyManeuverabilityAverage": "Average",
   "PF1.FlyManeuverabilityGood": "Good",
   "PF1.FlyManeuverabilityPerfect": "Perfect",
-
   "PF1.BuffTarAC": "AC",
   "PF1.BuffTarACGeneric": "Generic",
   "PF1.BuffTarACArmor": "Armor",
@@ -445,10 +385,8 @@
   "PF1.BuffTarChaChecks": "Charisma Checks",
   "PF1.BuffTarBonusSkillRanks": "Bonus Skill Ranks",
   "PF1.BuffTarBonusFeats": "Bonus Feats",
-
   "PF1.BuffTarSpells": "Spells",
   "PF1.SpellBuffEffect": "Effect",
-
   "PF1.SkillAcr": "Acrobatics",
   "PF1.SkillApr": "Appraise",
   "PF1.SkillArt": "Artistry",
@@ -486,7 +424,6 @@
   "PF1.SkillSur": "Survival",
   "PF1.SkillSwm": "Swim",
   "PF1.SkillUMD": "Use Magic Device",
-
   "PF1.TargetAlly": "Ally",
   "PF1.TargetCreature": "Creature",
   "PF1.TargetCylinder": "Cylinder",
@@ -501,7 +438,6 @@
   "PF1.TargetSquare": "Square",
   "PF1.TargetSpace": "Space",
   "PF1.TargetWall": "Wall",
-
   "PF1.TimeInst": "Instantaneous",
   "PF1.TimeTurn": "Turns",
   "PF1.TimeRound": "Rounds",
@@ -511,31 +447,24 @@
   "PF1.TimeMonth": "Months",
   "PF1.TimeYear": "Years",
   "PF1.TimePerm": "Permanent",
-
   "PF1.TraitArmorProf": "Armor Proficiencies",
   "PF1.TraitWeaponProf": "Weapon Proficiencies",
-
   "PF1.SpellPrepAtWill": "At-will",
   "PF1.SpellPrepPrepared": "Prepared",
   "PF1.SpellPrepSpontaneous": "Spontaneous",
-
   "PF1.SpellComponentVerbal": "Verbal",
   "PF1.SpellComponentSomatic": "Somatic",
   "PF1.SpellComponentMaterial": "Material",
   "PF1.SpellComponentFocus": "Focus",
   "PF1.SpellComponentDivineFocus": "Divine Focus",
-
   "PF1.SpellComponentDivineFocusAlone": "DF",
   "PF1.SpellComponentDivineFocusMaterial": "M/DF",
   "PF1.SpellComponentDivineFocusFocus": "F/DF",
-
   "PF1.MeasureTemplateCone": "Cone",
   "PF1.MeasureTemplateCircle": "Circle",
   "PF1.MeasureTemplateRay": "Ray",
   "PF1.MeasureTemplateRectangle": "Rectangle",
-
   "PF1.LoadingCompendiumBrowser": "Loading Compendium Browser...",
-
   "PF1.ItemTypeWeapon": "Weapon",
   "PF1.ItemTypeEquipment": "Equipment",
   "PF1.ItemTypeLoot": "Loot",
@@ -546,13 +475,11 @@
   "PF1.ItemTypeFeat": "Feat",
   "PF1.ItemTypeAttack": "Attack",
   "PF1.ItemTypeRace": "Race",
-
   "PF1.WeaponType": "Weapon Type",
   "PF1.WeaponTypeSimple": "Simple",
   "PF1.WeaponTypeMartial": "Martial",
   "PF1.WeaponTypeExotic": "Exotic",
   "PF1.WeaponTypeSplash": "Splash",
-
   "PF1.WeaponPropBlocking": "Blocking",
   "PF1.WeaponPropBrace": "Brace",
   "PF1.WeaponPropDeadly": "Deadly",
@@ -570,16 +497,13 @@
   "PF1.WeaponPropSunder": "Sunder",
   "PF1.WeaponPropThrown": "Thrown",
   "PF1.WeaponPropTrip": "Trip",
-
   "PF1.WeaponSubtype": "Weapon Subtype",
   "PF1.WeaponPropLight": "Light",
   "PF1.WeaponPropOneHanded": "One-handed",
   "PF1.WeaponPropTwoHanded": "Two-handed",
   "PF1.WeaponSubtypeRanged": "Ranged",
-
   "PF1.EquipTypeShield": "Shield",
   "PF1.EquipTypeArmor": "Armor",
-
   "PF1.EquipTypeLight": "Light Armor",
   "PF1.EquipTypeMedium": "Medium Armor",
   "PF1.EquipTypeHeavy": "Heavy Armor",
@@ -590,7 +514,6 @@
   "PF1.EquipTypeOtherShield": "Miscellaneous Shield",
   "PF1.EquipTypeClothing": "Clothing",
   "PF1.EquipTypeWondrousItem": "Wondrous Item",
-
   "PF1.EquipSlotSlotless": "Slotless",
   "PF1.EquipSlotArmor": "Armor",
   "PF1.EquipSlotShield": "Shield",
@@ -606,14 +529,12 @@
   "PF1.EquipSlotHands": "Hands",
   "PF1.EquipSlotRing": "Ring",
   "PF1.EquipSlotFeet": "Feet",
-
   "PF1.ConsumableTypePotion": "Potion/Oil",
   "PF1.ConsumableTypePoison": "Poison",
   "PF1.ConsumableTypeDrug": "Drug",
   "PF1.ConsumableTypeScroll": "Scroll",
   "PF1.ConsumableTypeWand": "Wand",
   "PF1.ConsumableTypeStaff": "Staff",
-
   "PF1.AttackTypeWeapon": "Weapon Attack",
   "PF1.AttackTypeWeaponPlural": "Weapon Attacks",
   "PF1.AttackTypeNatural": "Natural Attack",
@@ -622,13 +543,11 @@
   "PF1.AttackTypeAbilityPlural": "Class Abilities",
   "PF1.AttackTypeRacial": "Racial Ability",
   "PF1.AttackTypeRacialPlural": "Racial Abilities",
-
   "PF1.FeatTypeFeat": "Feat",
   "PF1.FeatTypeClassFeat": "Class Feature",
   "PF1.FeatTypeTraits": "Trait",
   "PF1.FeatTypeRacial": "Racial Trait",
   "PF1.FeatTypeTemplate": "Template",
-
   "PF1.ActivationTypePassive": "Passive",
   "PF1.ActivationTypeFree": "Free Action",
   "PF1.ActivationTypeSwift": "Swift Action",
@@ -643,7 +562,6 @@
   "PF1.ActivationTypeSpecial": "Special",
   "PF1.ActivationTypeReaction": "Reaction",
   "PF1.ActivationTypeAction": "Action",
-
   "PF1.ActivationTypeFreePlural": "Free Actions",
   "PF1.ActivationTypeSwiftPlural": "Swift Actions",
   "PF1.ActivationTypeImmediatePlural": "Immediate Actions",
@@ -656,12 +574,10 @@
   "PF1.ActivationTypeHourPlural": "Hours",
   "PF1.ActivationTypeReactionPlural": "Reactions",
   "PF1.ActivationTypeActionPlural": "Actions",
-
   "PF1.LimitedUseSingle": "Single Use",
   "PF1.LimitedUseDay": "Per Day",
   "PF1.LimitedUseWeek": "Per Week",
   "PF1.LimitedUseCharges": "Charges",
-
   "PF1.ActorSizeFine": "Fine",
   "PF1.ActorSizeDiminutive": "Diminutive",
   "PF1.ActorSizeTiny": "Tiny",
@@ -671,7 +587,6 @@
   "PF1.ActorSizeHuge": "Huge",
   "PF1.ActorSizeGargantuan": "Gargantuan",
   "PF1.ActorSizeColossal": "Colossal",
-
   "PF1.SpellSchoolAbjuration": "Abjuration",
   "PF1.SpellSchoolConjuration": "Conjuration",
   "PF1.SpellSchoolDivination": "Divination",
@@ -681,7 +596,6 @@
   "PF1.SpellSchoolNecromancy": "Necromancy",
   "PF1.SpellSchoolTransmutation": "Transmutation",
   "PF1.SpellSchoolUniversal": "Universal",
-
   "PF1.SpellLevel0": "Cantrip/Orison",
   "PF1.SpellLevel1": "1st Level",
   "PF1.SpellLevel2": "2nd Level",
@@ -692,40 +606,30 @@
   "PF1.SpellLevel7": "7th Level",
   "PF1.SpellLevel8": "8th Level",
   "PF1.SpellLevel9": "9th Level",
-
   "PF1.FavouredClassBonuses": "Favoured Class Bonuses",
   "PF1.FavouredClassHP": "Hit Points",
   "PF1.FavouredClassSkill": "Skills",
   "PF1.FavouredClassAlt": "Alt",
-
-  "PF1.FavouredClassBonus": {
-    "Label": "Favoured Class Bonus",
-    "HP": "Hit Point",
-    "Skill": "Skill",
-    "Alt": "Alt"
-  },
-
+  "PF1.FavouredClassBonus.Label": "Favoured Class Bonus",
+  "PF1.FavouredClassBonus.HP": "Hit Point",
+  "PF1.FavouredClassBonus.Skill": "Skill",
+  "PF1.FavouredClassBonus.Alt": "Alt",
   "PF1.Key_Control": "Control",
-
   "PF1.ArmorProfLight": "Light Armor",
   "PF1.ArmorProfMedium": "Medium Armor",
   "PF1.ArmorProfHeavy": "Heavy Armor",
   "PF1.ArmorProfShield": "Shields",
   "PF1.ArmorProfTowerShield": "Tower Shields",
-
   "PF1.WeaponProfSimple": "Simple Weapons",
   "PF1.WeaponProfMartial": "Martial Weapons",
-
   "PF1.InventoryWeapons": "Weapons",
   "PF1.InventoryArmorEquipment": "Armor/Equipment",
   "PF1.InventoryConsumables": "Consumables",
   "PF1.InventoryContainers": "Containers",
-
   "PF1.ChangeFlagLoseDexToAC": "Lose Dex to AC",
   "PF1.ChangeFlagDwarflikeEncumbrance": "Dwarf-like Encumbrance",
   "PF1.ChangeFlagMediumArmorFullSpeed": "Full Speed in Medium Armor",
   "PF1.ChangeFlagHeavyArmorFullSpeed": "Full Speed in Heavy Armor",
-
   "PF1.ErrorGenericPermission": "You don't have permission to perform what action",
   "PF1.ErrorNoActorPermission": "You don't have permission to control this actor",
   "PF1.ErrorNoActorPermissionAlt": "You don't have permission to control actor '{0}'",
@@ -751,13 +655,10 @@
   "PF1.WarningCannotCreateChargeLink2": "Could not create a Charge type link between {0} and {1}, because {1} is already linked to {2}",
   "PF1.WarningNoCombatantFound": "No combatant found",
   "PF1.NotificationCreatedAttack": "Created attack for {0}",
-
   "PF1.Action_RollDefenses": "Roll Defenses",
-
   "PF1.Info_FirstClass": "Drag and drop from {0}\nor click the '+ Add' button above.",
   "PF1.Info_FirstClass_Compendium": "Class Compendium",
   "PF1.Info_MissingClass": "Your character is missing a class. Go to the Classes subtab on the Summary tab of your character sheet.",
-
   "PF1.CMDNotes": "CMD Notes",
   "PF1.AttackNotes": "Attack Notes",
   "PF1.EffectNotes": "Effect Notes",
@@ -767,10 +668,8 @@
   "PF1.SaveNotes": "Save Notes",
   "PF1.CLNotes": "Caster Level Notes",
   "PF1.NonApplicable": "N/A",
-
   "PF1.SkillTypeAdventure": "Adventure",
   "PF1.SkillTypeBackground": "Background",
-
   "PF1.ACP": "ACP",
   "PF1.ACPLong": "Armor Check Penalty",
   "PF1.ACPTooltip": "Armor Check Penalties",
@@ -779,14 +678,12 @@
   "PF1.RT": "RT",
   "PF1.RTTooltip": "Requires Training",
   "PF1.SkillModTooltip": "Skill Modifier",
-
   "PF1.BrowseSpells": "Browse Spells",
   "PF1.BrowseItems": "Browse Items",
   "PF1.BrowseBestiary": "Browse Bestiary",
   "PF1.BrowseFeats": "Browse Features",
   "PF1.BrowseClasses": "Browse Classes",
   "PF1.BrowseRaces": "Browse Races",
-
   "PF1.LanguageAboleth": "Aboleth",
   "PF1.LanguageAbyssal": "Abyssal",
   "PF1.LanguageAklo": "Aklo",
@@ -838,7 +735,6 @@
   "PF1.LanguageTien": "Tien",
   "PF1.LanguageVarisian": "Varisian",
   "PF1.LanguageVudrani": "Vudrani",
-
   "PF1.CreatureTypeAberration": "Aberration",
   "PF1.CreatureTypeAnimal": "Animal",
   "PF1.CreatureTypeConstruct": "Construct",
@@ -852,12 +748,10 @@
   "PF1.CreatureTypePlant": "Plant",
   "PF1.CreatureTypeUndead": "Undead",
   "PF1.CreatureTypeVermin": "Vermin",
-
   "PF1.Rest": "Rest",
   "PF1.RestoreHealth": "Restore Health",
   "PF1.RestoreDailyUses": "Restore Daily Uses",
   "PF1.LongTermCare": "Long-Term Care",
-
   "PF1.BonusModifierUntyped": "Untyped",
   "PF1.BonusModifierUntypedPerm": "Untyped (Permanent)",
   "PF1.BonusModifierBase": "Base",
@@ -878,21 +772,18 @@
   "PF1.BonusModifierCircumstance": "Circumstance",
   "PF1.BonusModifierAlchemical": "Alchemical",
   "PF1.BonusModifierPenalty": "Penalty",
-
   "PF1.AbilityTypeExtraordinary": "Extraordinary",
   "PF1.AbilityTypeSupernatural": "Supernatural",
   "PF1.AbilityTypeSpell-Like": "Spell-Like",
   "PF1.AbilityTypeShortExtraordinary": "Ex",
   "PF1.AbilityTypeShortSupernatural": "Su",
   "PF1.AbilityTypeShortSpell-Like": "Sp",
-
   "PF1.RollSkillMacroName": "{0}: Roll {1}",
   "PF1.RollDefensesMacroName": "{0}: Roll Defenses",
   "PF1.RollCMBMacroName": "{0}: Roll Combat Maneuver Bonus",
   "PF1.RollCLMacroName": "{0}: Roll Caster Level ({1})",
   "PF1.RollConcentrationMacroName": "{0}: Roll Concentration ({1})",
   "PF1.RollBABMacroName": "{0}: Roll Base Attack Bonus",
-
   "PF1.DamageTypeBludgeoning": "Bludgeoning",
   "PF1.DamageTypePiercing": "Piercing",
   "PF1.DamageTypeSlashing": "Slashing",
@@ -904,7 +795,6 @@
   "PF1.DamageTypeForce": "Force",
   "PF1.DamageTypeNegative": "Negative",
   "PF1.DamageTypePositive": "Positive",
-
   "PF1.SourceInfoSize": "Size",
   "PF1.SourceInfoBuffs": "Buff",
   "PF1.SourceInfoTemporaryBuffs": "Temporary Buff",
@@ -920,10 +810,8 @@
   "PF1.SourceInfoMiscFeatures": "Miscellaneous",
   "PF1.SourceInfoTemplate": "Template",
   "PF1.SourceInfoRace": "Race",
-
   "PF1.SourceInfoSkillRank_ClassBase": "{className} (Base)",
   "PF1.SourceInfoSkillRank_ClassFC": "{className} (Favoured Class)",
-
   "PF1.CreateItemForSpell": "Create Item for {0}",
   "PF1.CreateItemWand": "Wand",
   "PF1.CreateItemScroll": "Scroll",
@@ -931,10 +819,8 @@
   "PF1.CreateItemWandOf": "Wand of {0}",
   "PF1.CreateItemScrollOf": "Scroll of {0}",
   "PF1.CreateItemPotionOf": "Potion of {0}",
-
   "PF1.CombatInfo_Header": "Combat",
   "PF1.CombatInfo_Round": "Round {0}",
-
   "PF1.AddClass": "Add Class",
   "PF1.Horizontal": "Horizontal",
   "PF1.Vertical": "Vertical",
@@ -1180,12 +1066,10 @@
   "PF1.SpellRangeShortMetric": "(7.5 m + 1.5 m/2 levels)",
   "PF1.SpellRangeMediumMetric": "(30 m + 3 m/level)",
   "PF1.SpellRangeLongMetric": "(120 m + 12 m/level)",
-
   "PF1.AuraStrength_Faint": "Faint",
   "PF1.AuraStrength_Moderate": "Moderate",
   "PF1.AuraStrength_Strong": "Strong",
   "PF1.AuraStrength_Overwhelming": "Overwhelming",
-
   "PF1.ElementalSchool": "Elemental School",
   "PF1.Bloodline": "Bloodline",
   "PF1.ConcentrationCheck": "Concentration Check",
@@ -1433,312 +1317,177 @@
   "PF1.StepsRequired": "Steps Required",
   "PF1.RemoveInfo": "Remove Info",
   "PF1.CustomRollDesc": "This roll uses a non-default formula",
-
   "PF1.Migration.Start": "Applying PF1 System Migration for version {version}. Please stand by.",
   "PF1.Migration.Ongoing": "Migration is ongoing. Please wait until it finishes.",
   "PF1.Migration.End": "PF1 System Migration to version {version} succeeded!",
-
-  "PF1.Info": {
-    "AddClassDialog": "You can hold Shift to bypass this dialog.",
-    "AddClassDialog_Desc": "Pressing Normal opens a short wizard, while pressing Raw will add the class without any alterations."
-  },
-
-  "PF1.Help": {
-    "Label": "Help",
-    "WIP": "This section is currently a Work In Progress (WIP).",
-    "Desc": "This is a reference sheet and information panel on various topics of the Pathfinder 1e system for Foundry Virtual Tabletop.",
-    "Desc2": "You can select topics on the left, whose contents will appear on the right. On the top of this window are navigational tools.",
-    "Img": {
-      "Items.Weapons": "systems/pf1/help/img/en/weapon-details.jpg",
-      "Items.Equipment": "systems/pf1/help/img/en/equipment-details.jpg",
-      "Items.Description": "systems/pf1/help/img/en/item-description.jpg",
-      "Items.Changes": "systems/pf1/help/img/en/item-changes.jpg"
-    },
-    "Nav": {
-      "Home": "Home",
-      "Actors": "Actors",
-      "Items": "Items",
-      "ItemTypes": "Item Types",
-      "Concepts": "Concepts",
-      "Special": "Special"
-    },
-    "Content": {
-      "Special": {
-        "Formulas": {
-          "Label": "Formulas",
-          "Desc": "Formulas are an important aspect in the Pathfinder 1e system. They can be as simple as a single numerical value, or as complex as single lines of code. They play a great role in item changes.",
-          "Desc2": "For a quick reference, you can find a lot of this information in tooltips on actor sheets as well.",
-          "Variables": {
-            "Label": "Variables",
-            "Desc": "Below you will find an (incomplete) list of variables you can use within your formulas.",
-            "Header": {
-              "Name": "Variable",
-              "Description": "Description"
-            },
-            "AbilityScoreTotal": {
-              "Desc": "The total value of an ability score. Replace X with one of the following: 'str', 'dex', 'con', 'int', 'wis', 'cha'."
-            },
-            "AbilityScoreMod": {
-              "Desc": "The modifier of an ability score. Replace X with one of the following: 'str', 'dex', 'con', 'int', 'wis', 'cha'."
-            },
-            "HitDie": {
-              "Desc": "The total hit die the actor has. This is a combination of class levels and racial hit die, and it excludes mythic tiers."
-            },
-            "EncumbranceLevel": {
-              "Desc": "The current encumbrance level of the actor.",
-              "0": "<code>0</code>: Light Load",
-              "1": "<code>1</code>: Medium Load",
-              "2": "<code>2</code>: Heavy Load"
-            },
-            "ArmorType": {
-              "Desc": "The type of armor the actor is wearing.",
-              "0": "<code>0</code>: No Armor",
-              "1": "<code>1</code>: Light Armor",
-              "2": "<code>2</code>: Medium Armor",
-              "3": "<code>3</code>: Heavy Armor"
-            },
-            "ShieldType": {
-              "Desc": "The type of shield the actor is holding.",
-              "0": "<code>0</code>: No Shield",
-              "1": "<code>1</code>: Miscellaneous Shield (such as a buckler)",
-              "2": "<code>2</code>: Light Shield",
-              "3": "<code>3</code>: Heavy Shield",
-              "4": "<code>4</code>: Tower Shield"
-            },
-            "CombatRound": {
-              "Desc": "The current round of combat, or <code>0</code> if not in combat."
-            }
-          },
-          "Functions": {
-            "Label": "Functions",
-            "Desc": "The following are functions you can use within formulas, and examples on how to use them.",
-            "Header": {
-              "Name": "Function",
-              "Description": "Description",
-              "Examples": "Examples",
-              "Example": "Example"
-            },
-            "Max": {
-              "Desc": "Returns the highest of the given numbers.",
-              "Examples": {
-                "0": "Returns the either the actor's Strength modifier or the actor's Dexterity modifier, whichever is higher."
-              }
-            },
-            "Min": {
-              "Desc": "Returns the lowest of the given numbers.",
-              "Examples": {
-                "0": "Returns the either the actor's Hit Die total or the number 10, whichever is lower."
-              }
-            },
-            "Floor": {
-              "Desc": "Rounds the given number down to the lowest integer.",
-              "Examples": {
-                "0": "Returns half of the actor's Hit Die total, rounded down."
-              }
-            },
-            "Ceil": {
-              "Desc": "Rounds the given number down to the highest integer.",
-              "Examples": {
-                "0": "Returns half of the actor's Hit Die total, rounded up."
-              }
-            },
-            "Round": {
-              "Desc": "Rounds the given number to the nearest integer.",
-              "Examples": {
-                "0": "Returns one third of the actor's Hit Die total, rounded to the nearest whole number."
-              }
-            },
-            "SquareRoot": {
-              "Desc": "Returns the positive square root of the given number.",
-              "Examples": {
-                "0": "Returns 4."
-              }
-            },
-            "Power": {
-              "Desc": "Returns x to the power of y.",
-              "Examples": {
-                "0": "Returns 64."
-              }
-            },
-            "SizeRoll": {
-              "Desc": "Alters a damage roll to that of another size category.",
-              "Examples": {
-                "0": "Rolls 1d8 for medium actors, and alters the damage formula according to the calling actor's current size.",
-                "1": "Translates a damage roll of 1d4 from a tiny actor (size '2') to a huge actor (size '6')<br/>Output: 3d6"
-              }
-            }
-          }
-        }
-      },
-      "Items": {
-        "ItemTypes.Physical": "Physical Item Types",
-        "ItemTypes.Other": "Other Item Types",
-        "Generic": {
-          "EnhancementBonus": "Enhancement Bonus",
-          "EnhancementBonusDesc": "The item's enhancement bonus, as per the Core rules",
-          "Masterwork": "Masterwork",
-          "MasterworkDesc": "Whether the item is masterwork, as per the Core rules",
-          "Broken": "Broken",
-          "BrokenDesc": "Whether the item is broken, as per the Core rules",
-          "EquipmentStatus": "Equipment Status",
-          "Equipped": "Equipped",
-          "EquippedDesc": "Whether the item is currently equipped, and transfers its changes to its actor (if any)",
-          "Identified": "Identified (GM only)",
-          "IdentifiedDesc": "Whether the item is currently identified, and shows its identified information to players",
-          "Size": "Size",
-          "SizeDesc": "The item's size, similar to a character's size"
-        },
-        "Weapons": {
-          "Label": "Weapons",
-          "Desc": "Weapons are meant to represent physical weapons that a character can hold.",
-          "Category": "Category",
-          "CategoryDesc": "The weapon's category (simple, martial, exotic or misc)",
-          "Type": "Type",
-          "TypeDesc": "The weapon's type (light, one-handed, two-handed or ranged)",
-          "Size": "Weapon Size",
-          "SizeDesc": "The weapon's size, similar to a character's size",
-          "Properties": "Weapon Properties",
-          "PropertiesDesc": "The weapon's properties, as per the Core rules (does nothing mechanically)",
-          "BonusAttackFormula": "Bonus Attack Formula",
-          "BonusAttackFormulaDesc": "The weapon's attack bonus formula. Some examples:",
-          "BonusAttackFormulaExamples": {
-            "0": "Will incur a penalty to the attack roll of -2 if the wielder's Strength modifier is lower than 3"
-          },
-          "BaseWeaponDamage": "Base Weapon Damage",
-          "BaseWeaponDamageDesc": "The first field indicates the damage die a Medium-sized weapon would deal, and the second field indicates the type of damage it deals (i.e. Bludgeoning, Slashing, etc.)",
-          "BonusDamageFormula": "Bonus Damage Formula",
-          "BonusDamageFormulaDesc": "The bonus damage the weapon deals. Some examples:",
-          "BonusDamageFormulaExamples": {
-            "0": "Will add either 4 or the wielder's Strength modifier to the damage roll, whichever is lower"
-          },
-          "BaseWeaponCritical": "Base Weapon Critical",
-          "BaseWeaponCriticalDesc": "The first field indicates the lowest result of the attack's d20 to be a critical threat, and the second field indicates the amount by which the damage is multiplied"
-        },
-        "Equipment": {
-          "Label": "Equipment",
-          "Desc": "Equipment represents all non-weapon equippable items, including armor, shields, rings and wondrous items.",
-          "Category": "Category",
-          "CategoryDesc": "The armor's category (whether it's armor, a shield, or something else)",
-          "Type": "Type",
-          "TypeDesc": "Armor or Shield size type, or other item type (clothing, wondrous item, etc.)",
-          "Slot": "Slot",
-          "SlotDesc": "What slot this item is for (only shows up for items other than armor or shields)",
-          "Status": "Equipment Status",
-          "StatusDesc": "Status flags of this particular item"
-        },
-        "Consumables": {
-          "Label": "Consumables",
-          "Desc": "Consumables represent physical items with limited uses, such as potions or wands."
-        },
-        "Containers": {
-          "Label": "Containers",
-          "Desc": "Containers are items which can contain other items."
-        },
-        "Loot": {
-          "Label": "Loot",
-          "Desc": "Loot items are all types of physical items that don't fit in other major categories, such as trade goods and ammunition."
-        },
-        "Description": {
-          "Label": "Description",
-          "Name": "Name",
-          "NameDesc": "The name of the item, if identified.",
-          "UnidentifiedName": "Unidentified Name",
-          "UnidentifiedNameDesc": "The name of the item, if unidentified. Shows the identified name for players if left empty.",
-          "Description": "Description",
-          "DescriptionDesc": "The description to show, if identified.",
-          "UnidentifiedDescription": "Unidentified Description",
-          "UnidentifiedDescriptionDesc": "The description to show to players, if unidentified.",
-          "Price": "Price",
-          "PriceDesc": "The price of the item, in gold pieces, if identified",
-          "UnidentifiedPrice": "Unidentified Price",
-          "UnidentifiedPriceDesc": "The price of the item, in gold pieces, if unidentified."
-        },
-        "Changes": {
-          "Label": "Changes",
-          "Flags": {
-            "Label": "Flags",
-            "LoseDexToAC": {
-              "Label": "Lose Dex to AC",
-              "Desc": "While an item with this change is active, a character loses his Dexterity bonuses to Armor Class."
-            },
-            "SetAbility": {
-              "Label": "X Ability",
-              "Desc": "Sets the appropriate ability to the flag's specified value. This might be removed in a later version, since the same can be accomplished with the '=' operator (see below)."
-            },
-            "DwarfLikeEncumbrance": {
-              "Label": "Dwarf-like Encumbrance",
-              "Desc": "While an item with this change is active, its actor will not be slowed down by being in a medium or heavy load."
-            },
-            "FullSpeedMediumArmor": {
-              "Label": "Full Speed in Medium Armor",
-              "Desc": "While an item with this change is active, its actor will not be slowed down by wearing medium armor."
-            },
-            "FullSpeedHeavyArmor": {
-              "Label": "Full Speed in Heavy Armor",
-              "Desc": "While an item with this change is active, its actor will not be slowed down by wearing heavy armor."
-            }
-          },
-          "Changes": {
-            "Label": "Changes",
-            "Desc": "This is a list of changes which affect the actor owning the item directly. From left to right:",
-            "Formula": {
-              "Label": "Formula",
-              "Desc": "The formula by which to affect this particular change. The way this alters an actor's attribute depends on the operator (see next). See {tagOpen}this page{tagClose} for more details."
-            },
-            "Operator": {
-              "Label": "Operator",
-              "Desc": "The operators are '+' (relative), '=' (absolute) or 'S' (script). Relative values <i>add</i> to an attribute, while absolute values <i>set</i> the attribute to the result of the formula. See below for the script operator."
-            },
-            "Priority": {
-              "Label": "Priority",
-              "Desc": "The priority of this change. Changes with lower priorities will be processed later."
-            },
-            "Target": {
-              "Label": "Target",
-              "Desc": "A general category of the attribute to alter."
-            },
-            "SubTarget": {
-              "Label": "Sub-Target",
-              "Desc": "The specific attribute to alter with this change."
-            },
-            "Modifier": {
-              "Label": "Modifier",
-              "Desc": "The modifier of this change."
-            }
-          },
-          "ContextNotes": {
-            "Label": "Context Notes",
-            "Desc": "This a list of contextual notes, which are shown in appropriate situations. From left to right:",
-            "Description": {
-              "Label": "Description",
-              "Desc": "The description to show in appropriate situations. Every newline adds a new description to the same target. You can use Foundry-style inline rolls in these."
-            },
-            "Target": {
-              "Label": "Target",
-              "Desc": "A general category of the attribute to alter."
-            },
-            "SubTarget": {
-              "Label": "Sub-Target",
-              "Desc": "The specific attribute to alter with this change."
-            }
-          },
-          "ScriptOperator": {
-            "Label": "Script Operator",
-            "Desc": "The 'formula' of changes using the Script operator are actually small JavaScript scripts that are run when processing changes. Some JavaScript knowledge is required to understand these.",
-            "Variables": {
-              "Desc": "Within these scripts, the following variables can be used:",
-              "0": {
-                "Name": "d",
-                "Desc": "The roll data at the time of processing the change. Contains any variable you could use within a normal change formula using the `@` symbol."
-              },
-              "1": {
-                "Name": "result",
-                "Desc": "This contains two more variables, <code>value</code> and <code>operator</code>. Set <code>value</code> to the numeric result you want for the change, and <code>operator</code> to either <code>\"add\"</code> or <code>\"set\"</code>.<br><br><code>value</code> defaults to <code>0</code> and <code>operator</code> defaults to <code>\"add\"</code>."
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+  "PF1.Info.AddClassDialog": "You can hold Shift to bypass this dialog.",
+  "PF1.Info.AddClassDialog_Desc": "Pressing Normal opens a short wizard, while pressing Raw will add the class without any alterations.",
+  "PF1.Help.Label": "Help",
+  "PF1.Help.WIP": "This section is currently a Work In Progress (WIP).",
+  "PF1.Help.Desc": "This is a reference sheet and information panel on various topics of the Pathfinder 1e system for Foundry Virtual Tabletop.",
+  "PF1.Help.Desc2": "You can select topics on the left, whose contents will appear on the right. On the top of this window are navigational tools.",
+  "PF1.Help.Img.Items.Weapons": "systems/pf1/help/img/en/weapon-details.jpg",
+  "PF1.Help.Img.Items.Equipment": "systems/pf1/help/img/en/equipment-details.jpg",
+  "PF1.Help.Img.Items.Description": "systems/pf1/help/img/en/item-description.jpg",
+  "PF1.Help.Img.Items.Changes": "systems/pf1/help/img/en/item-changes.jpg",
+  "PF1.Help.Nav.Home": "Home",
+  "PF1.Help.Nav.Actors": "Actors",
+  "PF1.Help.Nav.Items": "Items",
+  "PF1.Help.Nav.ItemTypes": "Item Types",
+  "PF1.Help.Nav.Concepts": "Concepts",
+  "PF1.Help.Nav.Special": "Special",
+  "PF1.Help.Content.Special.Formulas.Label": "Formulas",
+  "PF1.Help.Content.Special.Formulas.Desc": "Formulas are an important aspect in the Pathfinder 1e system. They can be as simple as a single numerical value, or as complex as single lines of code. They play a great role in item changes.",
+  "PF1.Help.Content.Special.Formulas.Desc2": "For a quick reference, you can find a lot of this information in tooltips on actor sheets as well.",
+  "PF1.Help.Content.Special.Formulas.Variables.Label": "Variables",
+  "PF1.Help.Content.Special.Formulas.Variables.Desc": "Below you will find an (incomplete) list of variables you can use within your formulas.",
+  "PF1.Help.Content.Special.Formulas.Variables.Header.Name": "Variable",
+  "PF1.Help.Content.Special.Formulas.Variables.Header.Description": "Description",
+  "PF1.Help.Content.Special.Formulas.Variables.AbilityScoreTotal.Desc": "The total value of an ability score. Replace X with one of the following: 'str', 'dex', 'con', 'int', 'wis', 'cha'.",
+  "PF1.Help.Content.Special.Formulas.Variables.AbilityScoreMod.Desc": "The modifier of an ability score. Replace X with one of the following: 'str', 'dex', 'con', 'int', 'wis', 'cha'.",
+  "PF1.Help.Content.Special.Formulas.Variables.HitDie.Desc": "The total hit die the actor has. This is a combination of class levels and racial hit die, and it excludes mythic tiers.",
+  "PF1.Help.Content.Special.Formulas.Variables.EncumbranceLevel.0": "<code>0</code>: Light Load",
+  "PF1.Help.Content.Special.Formulas.Variables.EncumbranceLevel.1": "<code>1</code>: Medium Load",
+  "PF1.Help.Content.Special.Formulas.Variables.EncumbranceLevel.2": "<code>2</code>: Heavy Load",
+  "PF1.Help.Content.Special.Formulas.Variables.EncumbranceLevel.Desc": "The current encumbrance level of the actor.",
+  "PF1.Help.Content.Special.Formulas.Variables.ArmorType.0": "<code>0</code>: No Armor",
+  "PF1.Help.Content.Special.Formulas.Variables.ArmorType.1": "<code>1</code>: Light Armor",
+  "PF1.Help.Content.Special.Formulas.Variables.ArmorType.2": "<code>2</code>: Medium Armor",
+  "PF1.Help.Content.Special.Formulas.Variables.ArmorType.3": "<code>3</code>: Heavy Armor",
+  "PF1.Help.Content.Special.Formulas.Variables.ArmorType.Desc": "The type of armor the actor is wearing.",
+  "PF1.Help.Content.Special.Formulas.Variables.ShieldType.0": "<code>0</code>: No Shield",
+  "PF1.Help.Content.Special.Formulas.Variables.ShieldType.1": "<code>1</code>: Miscellaneous Shield (such as a buckler)",
+  "PF1.Help.Content.Special.Formulas.Variables.ShieldType.2": "<code>2</code>: Light Shield",
+  "PF1.Help.Content.Special.Formulas.Variables.ShieldType.3": "<code>3</code>: Heavy Shield",
+  "PF1.Help.Content.Special.Formulas.Variables.ShieldType.4": "<code>4</code>: Tower Shield",
+  "PF1.Help.Content.Special.Formulas.Variables.ShieldType.Desc": "The type of shield the actor is holding.",
+  "PF1.Help.Content.Special.Formulas.Variables.CombatRound.Desc": "The current round of combat, or <code>0</code> if not in combat.",
+  "PF1.Help.Content.Special.Formulas.Functions.Label": "Functions",
+  "PF1.Help.Content.Special.Formulas.Functions.Desc": "The following are functions you can use within formulas, and examples on how to use them.",
+  "PF1.Help.Content.Special.Formulas.Functions.Header.Name": "Function",
+  "PF1.Help.Content.Special.Formulas.Functions.Header.Description": "Description",
+  "PF1.Help.Content.Special.Formulas.Functions.Header.Examples": "Examples",
+  "PF1.Help.Content.Special.Formulas.Functions.Header.Example": "Example",
+  "PF1.Help.Content.Special.Formulas.Functions.Max.Desc": "Returns the highest of the given numbers.",
+  "PF1.Help.Content.Special.Formulas.Functions.Max.Examples.0": "Returns the either the actor's Strength modifier or the actor's Dexterity modifier, whichever is higher.",
+  "PF1.Help.Content.Special.Formulas.Functions.Min.Desc": "Returns the lowest of the given numbers.",
+  "PF1.Help.Content.Special.Formulas.Functions.Min.Examples.0": "Returns the either the actor's Hit Die total or the number 10, whichever is lower.",
+  "PF1.Help.Content.Special.Formulas.Functions.Floor.Desc": "Rounds the given number down to the lowest integer.",
+  "PF1.Help.Content.Special.Formulas.Functions.Floor.Examples.0": "Returns half of the actor's Hit Die total, rounded down.",
+  "PF1.Help.Content.Special.Formulas.Functions.Ceil.Desc": "Rounds the given number down to the highest integer.",
+  "PF1.Help.Content.Special.Formulas.Functions.Ceil.Examples.0": "Returns half of the actor's Hit Die total, rounded up.",
+  "PF1.Help.Content.Special.Formulas.Functions.Round.Desc": "Rounds the given number to the nearest integer.",
+  "PF1.Help.Content.Special.Formulas.Functions.Round.Examples.0": "Returns one third of the actor's Hit Die total, rounded to the nearest whole number.",
+  "PF1.Help.Content.Special.Formulas.Functions.SquareRoot.Desc": "Returns the positive square root of the given number.",
+  "PF1.Help.Content.Special.Formulas.Functions.SquareRoot.Examples.0": "Returns 4.",
+  "PF1.Help.Content.Special.Formulas.Functions.Power.Desc": "Returns x to the power of y.",
+  "PF1.Help.Content.Special.Formulas.Functions.Power.Examples.0": "Returns 64.",
+  "PF1.Help.Content.Special.Formulas.Functions.SizeRoll.Desc": "Alters a damage roll to that of another size category.",
+  "PF1.Help.Content.Special.Formulas.Functions.SizeRoll.Examples.0": "Rolls 1d8 for medium actors, and alters the damage formula according to the calling actor's current size.",
+  "PF1.Help.Content.Special.Formulas.Functions.SizeRoll.Examples.1": "Translates a damage roll of 1d4 from a tiny actor (size '2') to a huge actor (size '6')<br/>Output: 3d6",
+  "PF1.Help.Content.Items.ItemTypes.Physical": "Physical Item Types",
+  "PF1.Help.Content.Items.ItemTypes.Other": "Other Item Types",
+  "PF1.Help.Content.Items.Generic.EnhancementBonus": "Enhancement Bonus",
+  "PF1.Help.Content.Items.Generic.EnhancementBonusDesc": "The item's enhancement bonus, as per the Core rules",
+  "PF1.Help.Content.Items.Generic.Masterwork": "Masterwork",
+  "PF1.Help.Content.Items.Generic.MasterworkDesc": "Whether the item is masterwork, as per the Core rules",
+  "PF1.Help.Content.Items.Generic.Broken": "Broken",
+  "PF1.Help.Content.Items.Generic.BrokenDesc": "Whether the item is broken, as per the Core rules",
+  "PF1.Help.Content.Items.Generic.EquipmentStatus": "Equipment Status",
+  "PF1.Help.Content.Items.Generic.Equipped": "Equipped",
+  "PF1.Help.Content.Items.Generic.EquippedDesc": "Whether the item is currently equipped, and transfers its changes to its actor (if any)",
+  "PF1.Help.Content.Items.Generic.Identified": "Identified (GM only)",
+  "PF1.Help.Content.Items.Generic.IdentifiedDesc": "Whether the item is currently identified, and shows its identified information to players",
+  "PF1.Help.Content.Items.Generic.Size": "Size",
+  "PF1.Help.Content.Items.Generic.SizeDesc": "The item's size, similar to a character's size",
+  "PF1.Help.Content.Items.Weapons.Label": "Weapons",
+  "PF1.Help.Content.Items.Weapons.Desc": "Weapons are meant to represent physical weapons that a character can hold.",
+  "PF1.Help.Content.Items.Weapons.Category": "Category",
+  "PF1.Help.Content.Items.Weapons.CategoryDesc": "The weapon's category (simple, martial, exotic or misc)",
+  "PF1.Help.Content.Items.Weapons.Type": "Type",
+  "PF1.Help.Content.Items.Weapons.TypeDesc": "The weapon's type (light, one-handed, two-handed or ranged)",
+  "PF1.Help.Content.Items.Weapons.Size": "Weapon Size",
+  "PF1.Help.Content.Items.Weapons.SizeDesc": "The weapon's size, similar to a character's size",
+  "PF1.Help.Content.Items.Weapons.Properties": "Weapon Properties",
+  "PF1.Help.Content.Items.Weapons.PropertiesDesc": "The weapon's properties, as per the Core rules (does nothing mechanically)",
+  "PF1.Help.Content.Items.Weapons.BonusAttackFormula": "Bonus Attack Formula",
+  "PF1.Help.Content.Items.Weapons.BonusAttackFormulaDesc": "The weapon's attack bonus formula. Some examples:",
+  "PF1.Help.Content.Items.Weapons.BonusAttackFormulaExamples.0": "Will incur a penalty to the attack roll of -2 if the wielder's Strength modifier is lower than 3",
+  "PF1.Help.Content.Items.Weapons.BaseWeaponDamage": "Base Weapon Damage",
+  "PF1.Help.Content.Items.Weapons.BaseWeaponDamageDesc": "The first field indicates the damage die a Medium-sized weapon would deal, and the second field indicates the type of damage it deals (i.e. Bludgeoning, Slashing, etc.)",
+  "PF1.Help.Content.Items.Weapons.BonusDamageFormula": "Bonus Damage Formula",
+  "PF1.Help.Content.Items.Weapons.BonusDamageFormulaDesc": "The bonus damage the weapon deals. Some examples:",
+  "PF1.Help.Content.Items.Weapons.BonusDamageFormulaExamples.0": "Will add either 4 or the wielder's Strength modifier to the damage roll, whichever is lower",
+  "PF1.Help.Content.Items.Weapons.BaseWeaponCritical": "Base Weapon Critical",
+  "PF1.Help.Content.Items.Weapons.BaseWeaponCriticalDesc": "The first field indicates the lowest result of the attack's d20 to be a critical threat, and the second field indicates the amount by which the damage is multiplied",
+  "PF1.Help.Content.Items.Equipment.Label": "Equipment",
+  "PF1.Help.Content.Items.Equipment.Desc": "Equipment represents all non-weapon equippable items, including armor, shields, rings and wondrous items.",
+  "PF1.Help.Content.Items.Equipment.Category": "Category",
+  "PF1.Help.Content.Items.Equipment.CategoryDesc": "The armor's category (whether it's armor, a shield, or something else)",
+  "PF1.Help.Content.Items.Equipment.Type": "Type",
+  "PF1.Help.Content.Items.Equipment.TypeDesc": "Armor or Shield size type, or other item type (clothing, wondrous item, etc.)",
+  "PF1.Help.Content.Items.Equipment.Slot": "Slot",
+  "PF1.Help.Content.Items.Equipment.SlotDesc": "What slot this item is for (only shows up for items other than armor or shields)",
+  "PF1.Help.Content.Items.Equipment.Status": "Equipment Status",
+  "PF1.Help.Content.Items.Equipment.StatusDesc": "Status flags of this particular item",
+  "PF1.Help.Content.Items.Consumables.Label": "Consumables",
+  "PF1.Help.Content.Items.Consumables.Desc": "Consumables represent physical items with limited uses, such as potions or wands.",
+  "PF1.Help.Content.Items.Containers.Label": "Containers",
+  "PF1.Help.Content.Items.Containers.Desc": "Containers are items which can contain other items.",
+  "PF1.Help.Content.Items.Loot.Label": "Loot",
+  "PF1.Help.Content.Items.Loot.Desc": "Loot items are all types of physical items that don't fit in other major categories, such as trade goods and ammunition.",
+  "PF1.Help.Content.Items.Description.Label": "Description",
+  "PF1.Help.Content.Items.Description.Name": "Name",
+  "PF1.Help.Content.Items.Description.NameDesc": "The name of the item, if identified.",
+  "PF1.Help.Content.Items.Description.UnidentifiedName": "Unidentified Name",
+  "PF1.Help.Content.Items.Description.UnidentifiedNameDesc": "The name of the item, if unidentified. Shows the identified name for players if left empty.",
+  "PF1.Help.Content.Items.Description.Description": "Description",
+  "PF1.Help.Content.Items.Description.DescriptionDesc": "The description to show, if identified.",
+  "PF1.Help.Content.Items.Description.UnidentifiedDescription": "Unidentified Description",
+  "PF1.Help.Content.Items.Description.UnidentifiedDescriptionDesc": "The description to show to players, if unidentified.",
+  "PF1.Help.Content.Items.Description.Price": "Price",
+  "PF1.Help.Content.Items.Description.PriceDesc": "The price of the item, in gold pieces, if identified",
+  "PF1.Help.Content.Items.Description.UnidentifiedPrice": "Unidentified Price",
+  "PF1.Help.Content.Items.Description.UnidentifiedPriceDesc": "The price of the item, in gold pieces, if unidentified.",
+  "PF1.Help.Content.Items.Changes.Label": "Changes",
+  "PF1.Help.Content.Items.Changes.Flags.Label": "Flags",
+  "PF1.Help.Content.Items.Changes.Flags.LoseDexToAC.Label": "Lose Dex to AC",
+  "PF1.Help.Content.Items.Changes.Flags.LoseDexToAC.Desc": "While an item with this change is active, a character loses his Dexterity bonuses to Armor Class.",
+  "PF1.Help.Content.Items.Changes.Flags.SetAbility.Label": "X Ability",
+  "PF1.Help.Content.Items.Changes.Flags.SetAbility.Desc": "Sets the appropriate ability to the flag's specified value. This might be removed in a later version, since the same can be accomplished with the '=' operator (see below).",
+  "PF1.Help.Content.Items.Changes.Flags.DwarfLikeEncumbrance.Label": "Dwarf-like Encumbrance",
+  "PF1.Help.Content.Items.Changes.Flags.DwarfLikeEncumbrance.Desc": "While an item with this change is active, its actor will not be slowed down by being in a medium or heavy load.",
+  "PF1.Help.Content.Items.Changes.Flags.FullSpeedMediumArmor.Label": "Full Speed in Medium Armor",
+  "PF1.Help.Content.Items.Changes.Flags.FullSpeedMediumArmor.Desc": "While an item with this change is active, its actor will not be slowed down by wearing medium armor.",
+  "PF1.Help.Content.Items.Changes.Flags.FullSpeedHeavyArmor.Label": "Full Speed in Heavy Armor",
+  "PF1.Help.Content.Items.Changes.Flags.FullSpeedHeavyArmor.Desc": "While an item with this change is active, its actor will not be slowed down by wearing heavy armor.",
+  "PF1.Help.Content.Items.Changes.Changes.Label": "Changes",
+  "PF1.Help.Content.Items.Changes.Changes.Desc": "This is a list of changes which affect the actor owning the item directly. From left to right:",
+  "PF1.Help.Content.Items.Changes.Changes.Formula.Label": "Formula",
+  "PF1.Help.Content.Items.Changes.Changes.Formula.Desc": "The formula by which to affect this particular change. The way this alters an actor's attribute depends on the operator (see next). See {tagOpen}this page{tagClose} for more details.",
+  "PF1.Help.Content.Items.Changes.Changes.Operator.Label": "Operator",
+  "PF1.Help.Content.Items.Changes.Changes.Operator.Desc": "The operators are '+' (relative), '=' (absolute) or 'S' (script). Relative values <i>add</i> to an attribute, while absolute values <i>set</i> the attribute to the result of the formula. See below for the script operator.",
+  "PF1.Help.Content.Items.Changes.Changes.Priority.Label": "Priority",
+  "PF1.Help.Content.Items.Changes.Changes.Priority.Desc": "The priority of this change. Changes with lower priorities will be processed later.",
+  "PF1.Help.Content.Items.Changes.Changes.Target.Label": "Target",
+  "PF1.Help.Content.Items.Changes.Changes.Target.Desc": "A general category of the attribute to alter.",
+  "PF1.Help.Content.Items.Changes.Changes.SubTarget.Label": "Sub-Target",
+  "PF1.Help.Content.Items.Changes.Changes.SubTarget.Desc": "The specific attribute to alter with this change.",
+  "PF1.Help.Content.Items.Changes.Changes.Modifier.Label": "Modifier",
+  "PF1.Help.Content.Items.Changes.Changes.Modifier.Desc": "The modifier of this change.",
+  "PF1.Help.Content.Items.Changes.ContextNotes.Label": "Context Notes",
+  "PF1.Help.Content.Items.Changes.ContextNotes.Desc": "This a list of contextual notes, which are shown in appropriate situations. From left to right:",
+  "PF1.Help.Content.Items.Changes.ContextNotes.Description.Label": "Description",
+  "PF1.Help.Content.Items.Changes.ContextNotes.Description.Desc": "The description to show in appropriate situations. Every newline adds a new description to the same target. You can use Foundry-style inline rolls in these.",
+  "PF1.Help.Content.Items.Changes.ContextNotes.Target.Label": "Target",
+  "PF1.Help.Content.Items.Changes.ContextNotes.Target.Desc": "A general category of the attribute to alter.",
+  "PF1.Help.Content.Items.Changes.ContextNotes.SubTarget.Label": "Sub-Target",
+  "PF1.Help.Content.Items.Changes.ContextNotes.SubTarget.Desc": "The specific attribute to alter with this change.",
+  "PF1.Help.Content.Items.Changes.ScriptOperator.Label": "Script Operator",
+  "PF1.Help.Content.Items.Changes.ScriptOperator.Desc": "The 'formula' of changes using the Script operator are actually small JavaScript scripts that are run when processing changes. Some JavaScript knowledge is required to understand these.",
+  "PF1.Help.Content.Items.Changes.ScriptOperator.Variables.0.Name": "d",
+  "PF1.Help.Content.Items.Changes.ScriptOperator.Variables.0.Desc": "The roll data at the time of processing the change. Contains any variable you could use within a normal change formula using the `@` symbol.",
+  "PF1.Help.Content.Items.Changes.ScriptOperator.Variables.1.Name": "result",
+  "PF1.Help.Content.Items.Changes.ScriptOperator.Variables.1.Desc": "This contains two more variables, <code>value</code> and <code>operator</code>. Set <code>value</code> to the numeric result you want for the change, and <code>operator</code> to either <code>\"add\"</code> or <code>\"set\"</code>.<br><br><code>value</code> defaults to <code>0</code> and <code>operator</code> defaults to <code>\"add\"</code>.",
+  "PF1.Help.Content.Items.Changes.ScriptOperator.Variables.Desc": "Within these scripts, the following variables can be used:"
 }

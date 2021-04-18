@@ -1,9 +1,7 @@
 {
-	"I18N.MAINTAINERS": ["Red Reign"],
-
+	"I18N.MAINTAINERS.0": "Red Reign",
 	"Better Rolls": "Better Rolls",
 	"Better Rolls for 5e": "Better Rolls for 5e",
-
 	"br5e.migrating": "Applying Better Rolls System Migration for version {version}",
 	"br5e.rollButtonsEnabled.name": "Add Roll Buttons to Sheet",
 	"br5e.rollButtonsEnabled.hint": "Adds buttons to items, spells, and features in the sheet, which display when the item is expanded. May be incompatible with the Item Sheet Buttons mod. Requires reopening the sheet.",
@@ -49,14 +47,12 @@
 	"br5e.d20RollIconsEnabled.hint": "If enabled, attacks, checks, and saves show natural die roll",
 	"br5e.applyActiveEffects.name": "Show DAE Active Effects Button",
 	"br5e.applyActiveEffects.hint": "Show button to apply active effects. The DAE module is required. If DAE is not installed, this option will not do anything.",
-
 	"br5e.d20Mode.name": "d20 Mode",
 	"br5e.d20Mode.hint": "Determines how attack rolls, ability checks, and saving throws are shown. If set to Single Roll, also enables [-]/[+] roll overlay buttons for advantage and disadvantage.",
 	"br5e.d20Mode.choices.1": "Single Roll Upgradeable (Shift Adv, Ctrl Disadv)",
 	"br5e.d20Mode.choices.2": "Dual Rolls",
 	"br5e.d20Mode.choices.3": "ゴゴ Triple Threat ゴゴ",
 	"br5e.d20Mode.choices.4": "Query for (Dis)Advantage",
-
 	"br5e.critBehavior.name": "Critical Damage",
 	"br5e.critBehavior.hint": "Determines how critical damage is calculated.",
 	"br5e.critBehavior.choices.0": "No Extra Damage",
@@ -64,7 +60,6 @@
 	"br5e.critBehavior.choices.2": "Roll Base Damage, Max Critical",
 	"br5e.critBehavior.choices.3": "Max Base & Max Critical Damage",
 	"br5e.critBehavior.choices.4": "Max Base Damage, Roll Critical Damage",
-
 	"br5e.critString.name": "Critical Indicator",
 	"br5e.critString.hint": "Determines how criticals are labeled. Appears as text to the right of the critical damage roll. Only works on Better Rolls.",
 	"br5e.critString.choices.2": "Crit",
@@ -74,7 +69,6 @@
 	"br5e.critString.choices.6": "Critical!",
 	"br5e.critString.choices.7": "(Critical)",
 	"br5e.critString.choices.8": "BAMMMM!",
-
 	"br5e.error.noSelectedActor": "Must have a character selected to use this macro!",
 	"br5e.error.noKnownItemOnActor": "does not own an item named",
 	"br5e.error.noActorWithId": "No actor is known with that ID",
@@ -85,7 +79,6 @@
 	"br5e.error.rollEvaluation": "Dice roll evaluation failed: {msg}",
 	"br5e.error.noDAE": "DAE is required to apply active effects to targets",
 	"br5e.error.libWrapperMinVersion": "Better Rolls requires libWrapper version {version} or newer.",
-
 	"br5e.settings.critThreshold": "Critical Threshold",
 	"br5e.settings.critDamage": "Extra Critical Damage",
 	"br5e.settings.critDamage.hint": "Extra Critical Damage to apply when at least one damage is rolled",
@@ -111,7 +104,6 @@
 	"br5e.settings.otherFormula": "Other Formula",
 	"br5e.settings.quickFlavor": "Flavor",
 	"br5e.settings.prompt": "Extended Prompt",
-
 	"br5e.buttons.roll": "Roll",
 	"br5e.buttons.altRoll": "Alt. Roll",
 	"br5e.buttons.attack": "Attack",
@@ -126,7 +118,6 @@
 	"br5e.buttons.itemUse": "Use",
 	"br5e.buttons.defaultSheetRoll": "Default Sheet Roll",
 	"br5e.buttons.applyActiveEffects": "Apply Active Effects",
-
 	"br5e.chat.attack": "Attack",
 	"br5e.chat.check": "Check",
 	"br5e.chat.save": "Save",
@@ -142,36 +133,28 @@
 	"br5e.chat.advantage": "Advantage",
 	"br5e.chat.disadvantage": "Disadvantage",
 	"br5e.chat.normal": "Normal",
-
 	"br5e.chatContext.repeat": "Repeat the roll",
-
 	"br5e.querying.title": "What type of roll?",
 	"br5e.querying.disadvantage": "Disadvantage",
 	"br5e.querying.normal": "Normal",
 	"br5e.querying.advantage": "Advantage",
-
 	"br5e.chat.multiRollButtons.advantage.hint": "Roll with Advantage (Shift)",
 	"br5e.chat.multiRollButtons.disadvantage.hint": "Roll with Disadvantage (Ctrl)",
-
-	"br5e.chat.damageButtons": {
-		"fullDamage.hint": "Click to apply full damage to selected token(s).",
-		"quarterDamage.hint": "Click to apply quarter damage to selected token(s).",
-		"halfDamage.hint": "Click to apply half damage to selected token(s).",
-		"doubleDamage.hint": "Click to apply double damage to selected token(s).",
-		"healing.hint": "Click to apply full healing to selected token(s).",
-		"crit.hint": "Click to roll crit damage.",
-		"tempOverwrite.title": "Overwrite Temporary Health",
-		"tempOverwrite.content": "Replace {original} temporary health with {new} new temporary health?",
-		"bcritPrompt.title": "Use Crit Damage?",
-		"critPrompt.yes": "Yes",
-		"critPrompt.no": "No"
-	},
-
+	"br5e.chat.damageButtons.fullDamage.hint": "Click to apply full damage to selected token(s).",
+	"br5e.chat.damageButtons.quarterDamage.hint": "Click to apply quarter damage to selected token(s).",
+	"br5e.chat.damageButtons.halfDamage.hint": "Click to apply half damage to selected token(s).",
+	"br5e.chat.damageButtons.doubleDamage.hint": "Click to apply double damage to selected token(s).",
+	"br5e.chat.damageButtons.healing.hint": "Click to apply full healing to selected token(s).",
+	"br5e.chat.damageButtons.crit.hint": "Click to roll crit damage.",
+	"br5e.chat.damageButtons.tempOverwrite.title": "Overwrite Temporary Health",
+	"br5e.chat.damageButtons.tempOverwrite.content": "Replace {original} temporary health with {new} new temporary health?",
+	"br5e.chat.damageButtons.bcritPrompt.title": "Use Crit Damage?",
+	"br5e.chat.damageButtons.critPrompt.yes": "Yes",
+	"br5e.chat.damageButtons.critPrompt.no": "No",
 	"Ability Roll": "Ability Roll",
 	"What type of roll?": "What type of roll?",
 	"Ability Check": "Ability Check",
 	"Saving Throw": "Saving Throw",
-
 	"Not Proficient": "Not Proficient",
 	"Proficient": "Proficient",
 	"Jack of all Trades": "Jack of all Trades",
