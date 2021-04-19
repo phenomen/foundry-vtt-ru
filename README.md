@@ -9,6 +9,7 @@
 * Github: https://github.com/Phenomen/foundry-vtt-ru
 * Manifest: https://github.com/Phenomen/foundry-vtt-ru/raw/master/module.json
 * Русскоязычное сообщество Foundry VTT: https://discord.gg/Z2CXFy35WF
+* Проект совместной локализации на Transifex: https://www.transifex.com/foundry-vtt-ru/foundry-vtt-russian-localization/
 
 ### Описание и инструкция
 
