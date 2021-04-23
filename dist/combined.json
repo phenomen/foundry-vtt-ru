@@ -98,6 +98,26 @@
 	"AIME.LanguagesRohan": "Роханский",
 	"AIME.Journey": "Путешествие",
 	"AIME.Adventure": "Приключение",
+	"ALWAYSHP.SetToDead": "Сделать персонажа мертвым",
+	"ALWAYSHP.HurtCharacter": "Нанести урон выбранному персонажу",
+	"ALWAYSHP.HealCharacter": "Лечить выбранного персонажа",
+	"ALWAYSHP.HealFully": "Полностью вылечить выбранного персонажа",
+	"ALWAYSHP.ResourceTitle": "Ресурс для изменения",
+	"ALWAYSHP.ResourceHint": "Большинство систем используют attribute.hp, но если в используемой вами системе его нет или вы предпочитаете использовать другое свойство, вы можете установить его здесь.",
+	"ALWAYSHP.DefeatedTitle": "Установить статус побежден на 0 хитов",
+	"ALWAYSHP.DefeatedHint": "При нажатии на кнопку (череп), чтобы сбросить ХП  до 0, также установить статус побежденного",
+	"ALWAYSHP.ShowDialogTitle": "Показать окно",
+	"ALWAYSHP.ShowDialogHint": "В случае, если вы не хотите видеть диалог или у вас маленький экран",
+	"ALWAYSHP.GMOnlyTitle": "Только ГМ ",
+	"ALWAYSHP.GMOnlyHint": "Показывать диалог только для ГМ",
+	"ALWAYSHP.AllowDoubleClick": "Разрешить двойное нажатие",
+	"ALWAYSHP.AllowDoubleClickHint": "Двойной щелчок по стрелке вниз или вверх полностью исцелит или полностью истощит. Добавьте это, если вы не можете щелкнуть ПКМ по черепу или сердцу.",
+	"ALWAYSHP.ClearSavingThrows": "Очистить Испытания Смерти",
+	"ALWAYSHP.ClearSavingThrowsHint": "Пройдите испытания смерти автоматически при исцелении",
+	"ALWAYSHP.ClearAfterTitle": "Очистить после применения",
+	"ALWAYSHP.ClearAfterHint": "Закройте текстовое поле после нанесения урона, снимите этот флажок, если вы по-прежнему хотите сохранить последнее введенное значение.",
+	"ALWAYSHP.DeathSavingThrowFail": "Испытание Смерти, Провал",
+	"ALWAYSHP.DeathSavingThrowPass": "Испытание Смерти, Успех",
 	"ARCHMAGE.SETTINGS.ShowDebugLogsName": "Показывать лог отладки?",
 	"ARCHMAGE.SETTINGS.ShowDebugLogsHint": "Включите для сообщений об ошибках",
 	"ARCHMAGE.SETTINGS.RoundUpDamageApplicationName": "При нанесении урона через меню ПКМ, округлять урон в большую (вкл) или меньшую сторону (выкл)?",
@@ -5309,93 +5329,179 @@
 	"FXMASTER.AnimationDelayHint": "Задержка с которой будет проигрываться анимация",
 	"FXMASTER.Ease": "Замедление",
 	"FXMASTER.EaseHint": "Метод замедления анимации",
-	"healthEstimate.core.isNow": "теперь",
-	"healthEstimate.core.showDescription.name": "Показывать оценку",
-	"healthEstimate.core.showDescription.hint": "Показывать оценку выборанным участникам.",
-	"healthEstimate.core.showDescription.choices.all": "Всем",
-	"healthEstimate.core.showDescription.choices.GM": "Только для GM",
-	"healthEstimate.core.showDescription.choices.Players": "Только для игроков",
-	"healthEstimate.core.showDescription.choices.NPC": "Только для игроков (оценка только NPC)",
-	"healthEstimate.core.showDescription.choices.PC": "Только для игроков (оценка только PC)",
-	"healthEstimate.core.stateNames.name": "Стадии",
-	"healthEstimate.core.stateNames.hint": "Массив стадий, который будут показаны игрокам, от худшего к лучшему.\nКоличество возможных стадий не ограничено и модуль автоматически распределит их равномерно.\nЕсли вы хотите, чтобы какая-то стадия имела больший диапазон, то просто введите её несколько раз подряд.",
-	"healthEstimate.core.stateNames.default.0": "Без сознания",
-	"healthEstimate.core.stateNames.default.1": "При смерти",
-	"healthEstimate.core.stateNames.default.2": "Сильные повреждения",
-	"healthEstimate.core.stateNames.default.3": "Средние травмы",
-	"healthEstimate.core.stateNames.default.4": "Лёгкое ранение",
-	"healthEstimate.core.stateNames.default.5": "Здоров",
-	"healthEstimate.core.deathState.name": "Смерть при состоянии",
-	"healthEstimate.core.deathState.hint": "Отмечать токен как мёртвый, когда он отмечается определённым состоянием.",
-	"healthEstimate.core.deathStateName.name": "Название состояния смерти",
-	"healthEstimate.core.deathStateName.hint": "Состояние, которое будет отображаться для мёртвых токенов. В компендиум добавлен макрос, позволяющий \"убивать\" токены вне боя.",
-	"healthEstimate.core.deathStateName.default": "Мёртв",
-	"healthEstimate.core.deathMarker.name": "Метка смерти",
-	"healthEstimate.core.deathMarker.hint": "Путь к иконке состояние для мёртвых токенов.",
-	"healthEstimate.core.NPCsJustDie.name": "NPC мгновенно умирают",
-	"healthEstimate.core.NPCsJustDie.hint": "При включении этой опции, самая худшая стадия не будет отображаться для NPC, а вместо этого они будут сразу умирать.",
-	"healthEstimate.core.perfectionism.name": "Перфекционизм",
-	"healthEstimate.core.perfectionism.hint": "Показывать самую лучшую стадию только если персонаж полностью здоров и не получил даже единицы урона.",
-	"healthEstimate.core.outputChat.name": "Выводить оценку в чат",
-	"healthEstimate.core.outputChat.hint": "Выводить все оценки здоровья в чат. Персонажи, помеченные макросом Скрыть оценку будут отображаться как \"Неизвестное существо\".",
-	"healthEstimate.core.addTemp.name": "Учитывать временные ПЗ",
-	"healthEstimate.core.addTemp.hint": "Временные ПЗ будут суммированы с обычными при оценке общего здоровья.",
-	"healthEstimate.core.breakOnZeroMaxHP.name": "Скрывать на токенах без максимального ПЗ",
-	"healthEstimate.core.breakOnZeroMaxHP.hint": "Полезно для объектов с токенами",
-	"healthEstimate.core.menuSettings.fontSize.name": "Размер шрифта",
-	"healthEstimate.core.menuSettings.fontSize.hint": "Принимаются параметры CSS для размера шрифта (px, em, rem, и т.д)",
-	"healthEstimate.core.menuSettings.useColor.name": "Использовать цвета",
-	"healthEstimate.core.menuSettings.useColor.hint": "При выключении, стадия будет отображаться в чёрно-белом виде.",
-	"healthEstimate.core.menuSettings.smoothGradient.name": "Плавный градиент",
-	"healthEstimate.core.menuSettings.smoothGradient.hint": "Если включено, цвет будет плавно меняться между стадиями. Если выключено, то цвет будет изменяться только при достижении новой стадии.",
-	"healthEstimate.core.menuSettings.deadColor.name": "Цвет для мёртвых токенов",
-	"healthEstimate.core.menuSettings.outline.name": "Обводка",
-	"healthEstimate.core.menuSettings.outline.darken": "Темнее",
-	"healthEstimate.core.menuSettings.outline.brighten": "Ярче",
-	"healthEstimate.core.menuSettings.position.name": "Расположение",
-	"healthEstimate.core.menuSettings.position.top": "Сверху",
-	"healthEstimate.core.menuSettings.position.middle": "Посередине",
-	"healthEstimate.core.menuSettings.position.bottom": "Снизу",
-	"healthEstimate.core.menuSettings.positionAdjustment.name": "Настройка расположения",
-	"healthEstimate.core.menuSettings.positionAdjustment.hint": "Расположение стадии относительно рамки токена. Ввод положительных значений двигает текст вниз, ввод отрицательных значений двигает текст вверх.",
-	"healthEstimate.dnd5e.vehicleNames.hint": "Описание стадий для транспорта.",
-	"healthEstimate.dnd5e.vehicleNames.default.0": "Вышел из строя",
-	"healthEstimate.dnd5e.vehicleNames.default.1": "Структурные повреждения",
-	"healthEstimate.dnd5e.vehicleNames.default.2": "Повреждён",
-	"healthEstimate.dnd5e.vehicleNames.default.3": "Поцарапан",
-	"healthEstimate.dnd5e.vehicleNames.default.4": "В целости",
-	"healthEstimate.PF1.addNonlethal.name": "Учитывать нелетальный урон",
-	"healthEstimate.PF1.addNonlethal.hint": "Если включено, нелетальный урон будет вычтен из текущего здоровья в целях оценки.",
-	"healthEstimate.PF1.showExtra.name": "Выведен из строя и При смерти",
-	"healthEstimate.PF1.showExtra.hint": "Показывать состояния \"Выход из строя\" и \"При смерти\"",
-	"healthEstimate.PF1.disabledName.name": "Выведен из строя",
-	"healthEstimate.PF1.disabledName.hint": "Состояние, когда здоровье равно 0 ПЗ",
-	"healthEstimate.PF1.disabledName.default": "Выведен из строя",
-	"healthEstimate.PF1.dyingName.name": "Умирает",
-	"healthEstimate.PF1.dyingName.hint": "Состояние, когда здоровье ниже 0 ПЗ",
-	"healthEstimate.PF1.dyingName.default": "При смерти",
-	"healthEstimate.numenera.countPools.name": "Считать пустые пулы",
-	"healthEstimate.numenera.countPools.hint": "Считать пустые пулы вместо суммы их значений, оценивая только полноту/пустоту пулов.",
-	"healthEstimate.starfinder.useThreshold.name": "Использовать порог транспорта",
-	"healthEstimate.starfinder.useThreshold.hint": "Если включено, то \"Стадии порога\" будут использоваться для транспорта при более, менее и равном 0 ПЗ.",
-	"healthEstimate.starfinder.thresholdNames.name": "Стадии порога",
-	"healthEstimate.starfinder.thresholdNames.hint": "Число стадий ограничено 3, от худшей к лучшей",
-	"healthEstimate.starfinder.thresholdNames.default.0": "Разрушен",
-	"healthEstimate.starfinder.thresholdNames.default.1": "Сломан",
-	"healthEstimate.starfinder.thresholdNames.default.2": "Рабочий",
-	"healthEstimate.starfinder.vehicleNames.name": "Стадии транспорта",
-	"healthEstimate.starfinder.vehicleNames.hint": "Стадии отображаемые для звёздных кораблей и транспорта (если отдельные \"Стадии транспорта\" выключены)",
-	"healthEstimate.starfinder.vehicleNames.default.0": "Разрушен",
-	"healthEstimate.starfinder.vehicleNames.default.1": "Горит",
-	"healthEstimate.starfinder.vehicleNames.default.2": "Дымится",
-	"healthEstimate.starfinder.vehicleNames.default.3": "Помят",
-	"healthEstimate.starfinder.vehicleNames.default.4": "Поцарапан",
-	"healthEstimate.starfinder.vehicleNames.default.5": "Как новый",
-	"healthEstimate.starfinder.addStamina.name": "Учитывать Запас сил",
-	"healthEstimate.starfinder.addStamina.hint": "Если включено, Запас сил будет суммироваться с ПЗ при оценке.",
-	"healthEstimate.worldbuilding.simpleRule.name": "Формула оценки",
-	"healthEstimate.worldbuilding.simpleRule.hint": "JS формула для расчёта долей здоровья токена. Не изменяйте, если не знаете что это.",
-	"healthEstimate.worldbuilding.simpleRule.default": "const hp = token.actor.data.data.health; return hp.value / hp.max",
+	"healthEstimate": {
+		"core": {
+			"isNow": "теперь",
+			"showDescription": {
+				"name": "Показывать оценку",
+				"hint": "Показывать оценку выборанным участникам.",
+				"choices": {
+					"all": "Всем",
+					"GM": "Только для GM",
+					"Players": "Только для игроков",
+					"NPC": "Только для игроков (оценка только NPC)",
+					"PC": "Только для игроков (оценка только PC)"
+				}
+			},
+			"deathState": {
+				"name": "Смерть при состоянии",
+				"hint": "Отмечать токен как мёртвый, когда он отмечается определённым состоянием."
+			},
+			"deathStateName": {
+				"name": "Название состояния смерти",
+				"hint": "Состояние, которое будет отображаться для мёртвых токенов. В компендиум добавлен макрос, позволяющий \"убивать\" токены вне боя.",
+				"default": "Мёртв"
+			},
+			"deathMarker": {
+				"name": "Метка смерти",
+				"hint": "Путь к иконке состояние для мёртвых токенов."
+			},
+			"NPCsJustDie": {
+				"name": "NPC мгновенно умирают",
+				"hint": "При включении этой опции, самая худшая стадия не будет отображаться для NPC, а вместо этого они будут сразу умирать."
+			},
+			"perfectionism": {
+				"name": "Перфекционизм",
+				"hint": "Показывать самую лучшую стадию только если персонаж полностью здоров и не получил даже единицы урона."
+			},
+			"outputChat": {
+				"name": "Выводить оценку в чат",
+				"hint": "Выводить все оценки здоровья в чат. Персонажи, помеченные макросом Скрыть оценку будут отображаться как \"Неизвестное существо\"."
+			},
+			"addTemp": {
+				"name": "Учитывать временные ПЗ",
+				"hint": "Временные ПЗ будут суммированы с обычными при оценке общего здоровья."
+			},
+			"breakOnZeroMaxHP": {
+				"name": "Скрывать на токенах без максимального ПЗ",
+				"hint": "Полезно для объектов с токенами"
+			},
+			"menuSettings": {
+				"fontSize": {
+					"name": "Размер шрифта",
+					"hint": "Принимаются параметры CSS для размера шрифта (px, em, rem, и т.д)"
+				},
+				"useColor": {
+					"name": "Использовать цвета",
+					"hint": "При выключении, стадия будет отображаться в чёрно-белом виде."
+				},
+				"smoothGradient": {
+					"name": "Плавный градиент",
+					"hint": "Если включено, цвет будет плавно меняться между стадиями. Если выключено, то цвет будет изменяться только при достижении новой стадии."
+				},
+				"deadColor": {
+					"name": "Цвет для мёртвых токенов"
+				},
+				"outline": {
+					"name": "Обводка",
+					"darken": "Темнее",
+					"brighten": "Ярче"
+				},
+				"position": {
+					"name": "Расположение",
+					"top": "Сверху",
+					"middle": "Посередине",
+					"bottom": "Снизу"
+				},
+				"positionAdjustment": {
+					"name": "Настройка расположения",
+					"hint": "Расположение стадии относительно рамки токена. Ввод положительных значений двигает текст вниз, ввод отрицательных значений двигает текст вверх."
+				}
+			},
+			"stateNames": {
+				"default": [
+					"Без сознания",
+					"При смерти",
+					"Сильные повреждения",
+					"Средние травмы",
+					"Лёгкое ранение",
+					"Здоров"
+				],
+				"hint": [
+					"Массив стадий, который будут показаны игрокам, от худшего к лучшему.",
+					"Количество возможных стадий не ограничено и модуль автоматически распределит их равномерно.",
+					"Если вы хотите, чтобы какая-то стадия имела больший диапазон, то просто введите её несколько раз подряд."
+				],
+				"name": "Стадии"
+			}
+		},
+		"PF1": {
+			"addNonlethal": {
+				"name": "Учитывать нелетальный урон",
+				"hint": "Если включено, нелетальный урон будет вычтен из текущего здоровья в целях оценки."
+			},
+			"showExtra": {
+				"name": "Выведен из строя и При смерти",
+				"hint": "Показывать состояния \"Выход из строя\" и \"При смерти\""
+			},
+			"disabledName": {
+				"name": "Выведен из строя",
+				"hint": "Состояние, когда здоровье равно 0 ПЗ",
+				"default": "Выведен из строя"
+			},
+			"dyingName": {
+				"name": "Умирает",
+				"hint": "Состояние, когда здоровье ниже 0 ПЗ",
+				"default": "При смерти"
+			}
+		},
+		"numenera": {
+			"countPools": {
+				"name": "Считать пустые пулы",
+				"hint": "Считать пустые пулы вместо суммы их значений, оценивая только полноту/пустоту пулов."
+			}
+		},
+		"worldbuilding": {
+			"simpleRule": {
+				"name": "Формула оценки",
+				"hint": "JS формула для расчёта долей здоровья токена. Не изменяйте, если не знаете что это.",
+				"default": "const hp = token.actor.data.data.health; return hp.value / hp.max"
+			}
+		},
+		"dnd5e": {
+			"vehicleNames": {
+				"default": [
+					"Вышел из строя",
+					"Структурные повреждения",
+					"Повреждён",
+					"Поцарапан",
+					"В целости"
+				],
+				"hint": "Описание стадий для транспорта."
+			}
+		},
+		"starfinder": {
+			"addStamina": {
+				"hint": "Если включено, Запас сил будет суммироваться с ПЗ при оценке.",
+				"name": "Учитывать Запас сил"
+			},
+			"thresholdNames": {
+				"default": [
+					"Разрушен",
+					"Сломан",
+					"Рабочий"
+				],
+				"hint": "Число стадий ограничено тремя в порядке от худшего к лучшему.",
+				"name": "Стадии транспорта"
+			},
+			"useThreshold": {
+				"name": "Использовать порог транспорта",
+				"hint": "Если включено, то \"Стадии порога\" будут использоваться для транспорта при более, менее и равном 0 ПЗ."
+			},
+			"vehicleNames": {
+				"default": [
+					"Разрушен",
+					"Горит",
+					"Дымится",
+					"Помят",
+					"Поцарапан",
+					"Как новый"
+				],
+				"hint": "Стадии отображаемые для звёздных кораблей и транспорта (если отдельные \"Стадии транспорта\" выключены)",
+				"name": "Стадии транспорта"
+			}
+		}
+	},
 	"ICRPG.Attributes": "Показатели",
 	"ICRPG.Name": "Название",
 	"ICRPG.Class": "Класс",
@@ -10294,6 +10400,310 @@
 	"TIDY5E.Settings.AlwaysShowTraits.hint": "By default empty traits are hidden by a toggle button. Enable to never hide.",
 	"TIDY5E.Settings.AlwaysShowSkills.name": "Always show skills.",
 	"TIDY5E.Settings.AlwaysShowSkills.hint": "By default unproficient skills are hidden by a toggle button. Enable to never hide.",
+	"tokenactionhud": {
+		"abilities": "Характеристики",
+		"accept": "Принять",
+		"actions": "Действия",
+		"activate": "Активировать",
+		"active": "Активно",
+		"advanced": "Дополнительно",
+		"allowlist": "Белый список",
+		"armour": "Броня",
+		"atk": "Атака",
+		"attack": "Атаки",
+		"attribute": {
+			"agility": "Ловкость",
+			"intellect": "Интеллект",
+			"perception": "Восприятие",
+			"strength": "Сила",
+			"will": "Воля"
+		},
+		"attributes": "Характеристики",
+		"basic": "Базовое",
+		"blessing": "Благословение",
+		"blocklist": "Чёрный список",
+		"book": "Книга",
+		"books": "Книги",
+		"buffs": "Усиления",
+		"cancel": "Отмена",
+		"cantrips": "Фокусы",
+		"characteristics": "Характеристики",
+		"checks": "Проверки",
+		"clearButton": "Очистить",
+		"commonSkills": "Общие навыки",
+		"conditions": "Состояния",
+		"consumables": "Расходники",
+		"critical": "Критический",
+		"d35e": {
+			"grapple": "Захват"
+		},
+		"damage": "Урон",
+		"dc": "СЛ",
+		"deathSave": "Испытание смерти",
+		"defenses": "Защита",
+		"dmg": "Урон",
+		"downtime": "Свободное время",
+		"dying": "Умирает",
+		"effects": "Эффекты",
+		"equipment": "Снаряжение",
+		"features": "Особенности",
+		"initiative": "Инициатива",
+		"inspiration": "Вдохновение",
+		"inventory": "Инвентарь",
+		"level": "Уровень",
+		"longRest": "Долгий отдых",
+		"magicItems": "Волшебные вещи",
+		"melee": "Ближний",
+		"moves": "Ходы",
+		"msa": "Ближ. атаки заклинанием",
+		"mwa": "Ближ. атаки оружием",
+		"other": "Другое",
+		"points": "Пункты",
+		"ranged": "Дистанционный",
+		"recharge": "Перезарядка",
+		"religion": "Религия",
+		"rest": "Отдых",
+		"restNight": "Отдыхать всю ночь",
+		"rests": "Отдых",
+		"roll": "Бросок",
+		"rollInitiative": "Проверка инициативы",
+		"rsa": "Дист. атаки заклинанием",
+		"rwa": "Дист. атаки оружием",
+		"saves": "Испытания",
+		"shields": "Щиты",
+		"shortRest": "Короткий отдых",
+		"skills": "Навыки",
+		"skilltriggers": "Триггеры навыков",
+		"special": "Особое",
+		"spellbook": "Книга заклинаний",
+		"spells": "Заклинания",
+		"spend": "Потратить",
+		"stat": "Показатель",
+		"stats": "Показатели",
+		"status": "Статус",
+		"tags": "Тэги",
+		"temporary": "Временно",
+		"title": "Token Action HUD",
+		"toggleCombatState": "Состояние боя",
+		"toggleVisibility": "Видимость",
+		"toggles": "Переключатели",
+		"token": "Токен",
+		"tools": "Инструменты",
+		"traits": "Черты",
+		"treasure": "Сокровище",
+		"utility": "Другое",
+		"weapons": "Оружие",
+		"wounds": "Раны",
+		"wounded": "Ранен",
+		"woundsAndFatigue": "Раны/Усталость",
+		"talents": "Таланты",
+		"strikes": "Удары",
+		"starting": "Начальное",
+		"rank": "Ранг",
+		"concentration": "Концентрация",
+		"fatigue": "Усталость",
+		"feats": "Особенности",
+		"experimental": "Экспериментальное",
+		"free": "Свободное",
+		"gear": "Снаряжение",
+		"gm": "GM",
+		"healing": "Лечение",
+		"lore": "Знание",
+		"magic": "Магия",
+		"mech": "Мех",
+		"misc": "Разное",
+		"levelAbbreviation": "Ур.",
+		"lair": "Логово",
+		"legendary": "Легендарное",
+		"instinct": "Инстинкт",
+		"pilot": "Пилот",
+		"reactions": "Реакции",
+		"profession": "Профессия",
+		"systems": "Системы",
+		"techs": "Технологии",
+		"techattack": "Техно-атака",
+		"treatWounds": "Лечить раны",
+		"specialQualities": "Особые свойства",
+		"passive": "Пассивное",
+		"monsterMoves": "Ходы монстра",
+		"hull": "Корпус",
+		"exploration": "Исследование",
+		"engineering": "Инженерия",
+		"corebonus": "Бонус ядра",
+		"bennies": "Фишки",
+		"blocklistLabel": "чёрный список: скрыть / белый список: показать",
+		"bonuses": "Бонусы",
+		"categoryTagExplanation": "Добавить или удалить дополнительные категории.",
+		"categoryTagTitle": "Изменение категорий",
+		"charts": "Графики",
+		"classFeatures": "Классовые особенности",
+		"crewActions": "Действия экипажа",
+		"bab": "БМА",
+		"cmb": "МБМ",
+		"doomed": "Обречён",
+		"get": "Получить",
+		"hindrances": "Помехи",
+		"inconsumables": "Нерасходники",
+		"noammo": "Нет боеприпасов",
+		"powers": "Силы",
+		"push": "Справа",
+		"pushLabelExplanation": "С какой стороны показывать категории?",
+		"resistance": "Устойчивость",
+		"rollable": "Случайное",
+		"subcategoryTagExplanation": "Добавление или удаление подкатегорий: введите название подкатегорий макросов или связанных библиотек.",
+		"takeBreather": "Передохнуть",
+		"unrollable": "Не случайное",
+		"unshift": "Слева",
+		"settings": {
+			"wfrp": {
+				"meleeSkillPrefix": "Ближний",
+				"rangedSkillPrefix": "Дистанционный"
+			},
+			"swade": {
+				"abbreviateAttributes": {
+					"name": "Сокращать названия навыков и характеристик",
+					"hint": "Если включено, то навыки и характеристики будут сокращены до трёх букв."
+				}
+			},
+			"showIcons": {
+				"name": "Показывать иконки действий",
+				"hint": "Если включено, то для действий будут отображаться связанные с ними иконки."
+			},
+			"showHudTitle": {
+				"name": "Показывать заголовок",
+				"hint": "Показывать заголовок над HUD (обычно имя токена)."
+			},
+			"sfrpg": {
+				"showSpellInfo": {
+					"name": "Показывать подробности заклинаний",
+					"hint": "Если включено, то устойчивость к магии, концентрация и испытания будут отображаться рядом с именем заклинания."
+				},
+				"showMiscFeats": {
+					"name": "Показывать особые черты",
+					"hint": "Если включено, то черты без определённого типа действия будут отображаться в отдельной категории."
+				}
+			},
+			"scale": {
+				"name": "Масштаб интерфейса",
+				"hint": "Изменяет масштаб HUD в процентальном значении (100 по умолчанию)"
+			},
+			"dungeonworld": {
+				"showGmCompendiums": {
+					"name": "Показывать библиотеки GM",
+					"hint": "Если включено и участник является GM, в HUD будут отображаться ходы GM и таблицы сокровищ."
+				}
+			},
+			"activeCssAsText": {
+				"name": "Отмечать активные действия текстом",
+				"hint": "Если включено, то возможные для активации действия будут также отмечаться звёздочкой."
+			},
+			"alwaysShowAdditionalCategories": {
+				"name": "Всегда показывать особые категории",
+				"hint": "Если выключено, то особые категории будут всегда отображаться, даже если не выбран токен."
+			},
+			"alwaysShowHud": {
+				"name": "Всегда показывать HUD",
+				"hint": "Если за участником закреплён персонаж, то HUD будет всегда отображаться для этого персонажа, даже если не выбран токен."
+			},
+			"clickOpenCategory": {
+				"name": "Раскрывать категории по нажатию",
+				"hint": "Если включено, то для раскрытия категорий нужно нажать по ней вместо наведения."
+			},
+			"debug": {
+				"name": "Включить отладку",
+				"hint": "Включить режим отладки (для разработчиков)."
+			},
+			"demonlord": {
+				"rest": "Отдых",
+				"specialattacks": "Особые атаки",
+				"challenge": "Испытания",
+				"attackoptions": "Атаки"
+			},
+			"dropdown": {
+				"name": "Категории раскрываются вниз",
+				"hint": "Если включено, то категории будут раскрываться вниз. Иначе будет использован (экспериментальный) метод раскрытия вверх."
+			},
+			"playerPermission": {
+				"name": "Включить HUD для игроков",
+				"hint": "Если включено, то игроки смогут использовать HUD."
+			},
+			"enabledForUser": {
+				"name": "Включить HUD для текущего участника",
+				"hint": "Если включено, то HUD будет активирован для участника. Не перезаписывает параметр прав игроков."
+			},
+			"itemMacroReplace": {
+				"showOriginal": "Показывать оригинальный предмет",
+				"showItemMacro": "Показывать макрос предмета",
+				"showBoth": "Показывать оригинальный предмет и макрос"
+			},
+			"onTokenHover": {
+				"name": "Включить наведение",
+				"hint": "Если включено, HUD будет отображаться при наведении на контролируемый токен."
+			},
+			"renderItemOnRightClick": {
+				"name": "Показывать лист предмета при правом клике",
+				"hint": "Если включено, правый клик по предмету в HUD будет открывать лист этого предмета."
+			},
+			"rollHandler": {
+				"name": "Обработка действий HUD",
+				"hint": "Выберите какой модуль будет обрабатывать действия HUD."
+			},
+			"dnd5e": {
+				"splitAbilities": {
+					"hint": "Если включено, проверки характеристик и испытаний будут разделены на две категории.",
+					"name": "Разделять проверки характеристик и испытания"
+				},
+				"showSpellInfo": {
+					"name": "Показывать подробности заклинаний",
+					"hint": "Если включено, то компоненты, концентрация и ритуалы будут отображаться рядом с именем заклинания."
+				},
+				"showEmptyItems": {
+					"name": "Показывать пустые предметы",
+					"hint": "Если включено, предметы (включая экипировку и заклинания) будут отображаться в HUD даже если у них не осталось зарядов."
+				},
+				"showConditionsCategory": {
+					"name": "Показывать категорию состояний",
+					"hint": "Если включено, в HUD будут отображаться состояния, доступные в стандартном интерфейса токена."
+				},
+				"showAllNpcItems": {
+					"name": "Показывать все предметы NPC",
+					"hint": "Если включено, то будут отображаться все предметы NPC (включая неэкипированные)."
+				},
+				"showAllNonpreparableSpells": {
+					"name": "Показывать все неподготовленные заклинания",
+					"hint": "Если выключено, то заклинания, вроде фокусов, врождённых и неограниченных заклинаний должны быть 'поднготовлены' для отображения в HUD."
+				},
+				"itemMacroReplace": {
+					"hint": "Выберите какие предметы должны быть отображены в инвентаре.",
+					"name": "Макросы-предметы"
+				},
+				"ignorePassiveFeats": {
+					"name": "Игнорировать пассивные особенности",
+					"hint": "Если включено, пассивные особенности не будут отображаться."
+				},
+				"hideLongerActions": {
+					"name": "Скрывать долгие действия",
+					"hint": "Если включено, действия с активацией дольше 1 раунда (минуты, часы, дни) будут скрыты."
+				},
+				"abbreviateSkills": {
+					"name": "Сокращать названия навыков и характеристик",
+					"hint": "Если включено, то навыки и характеристики будут сокращены до трёх букв."
+				}
+			}
+		},
+		"symbaroum": {
+			"mysticalPowers": "Мистические силы",
+			"abilities": "Характеристики"
+		},
+		"subcategoryTagTitle": "Изменение подкатегорий",
+		"dodge": "Уклонение",
+		"filterPlaceholder": "Выборы (разделяйте ; )",
+		"filterTagExplanation": "Добавьте элементы сюда, чтобы показать или скрыть отдельные элементы.",
+		"filterTitle": "Фильтр",
+		"heroPoints": "Пункты Героизма",
+		"improvisedWeapon": "Импровизированное оружие",
+		"unarmed": "Безоружная атака"
+	},
 	"TOKENATTACHER.error.NothingSelected": "Ни одного объекта не выбрано!",
 	"TOKENATTACHER.error.NoTokensSelected": "Ни одного токена не выбрано!",
 	"TOKENATTACHER.error.NoActiveGMFound": "Нет активного GM! Связанные токены не были корректно обновлены. Переместите токены в предыдущее положение и свяжитесь с GM.",

@@ -1,10 +1,21 @@
+@font-face {
+  font-family: "IM Fell DW Pica";
+  src: url("../fonts/IM_FELL_DW_PICA_RU.ttf");
+}
+
+@font-face {
+  font-family: "IM Fell DW Pica SC";
+  src: url("../fonts/IM_FELL_DW_PICA_SC_RU.ttf");
+}
+
+
 /* FORBIDDEN LANDS */
 
 :root {
   --font-editor: "PT Serif", "Georgia", serif;
   --font-input: "Roboto", "Arial", sans-serif;
-  --font-special: "Manuskript", "Georgia", serif;
-  --font-subheader: "Manuskript", "Georgia", serif;
+  --font-special: "IM Fell DW Pica", "Georgia", serif;
+  --font-subheader: "IM Fell DW Pica SC", "Georgia", serif;
   --font-table: "Roboto", "Arial", sans-serif;
 }
 
@@ -82,23 +93,4 @@ li.folder.collapsed > .folder-header h3 {
 
 .fa-slash:before {
   content: "|";
-}
-
-/* Hack for Conditions */
-
-.forbidden-lands .conditions-grid a.condition {
-  flex-basis: 100%;
-  margin: 5px;
-  display: inline-block;
-}
-
-.forbidden-lands .character .conditions-grid {
-  display: flex;
-  height: 100%;
-  flex-wrap: wrap;
-  padding: 0%;
-}
-
-.forbidden-lands .main-tab {
-  grid-template-columns: 1.1fr 0.9fr;
 }
