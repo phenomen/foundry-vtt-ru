@@ -1,168 +1,234 @@
 {
-	"I18N.MAINTAINERS.0": "Red Reign",
-	"Better Rolls": "Суперброски",
-	"Better Rolls for 5e": "Суперброски для 5e",
-	"br5e.migrating": "Происходит миграция настроек Better Rolls для версии {version}",
-	"br5e.rollButtonsEnabled.name": "Добавить кнопки бросков в лист",
-	"br5e.rollButtonsEnabled.hint": "Добавить кнопки на предметы, заклинания и особенности при разворачивании полного описания нажатием на название.",
-	"br5e.imageButtonEnabled.name": "Авто-бросок нажатием по иконке",
-	"br5e.imageButtonEnabled.hint": "При нажатии на иконку будет автоматически произведён Супербросок вместо обычного. Можно обойти удерживанием Alt.",
-	"br5e.quickDefaultDescriptionEnabled.name": "Полное описание при Супербросках",
-	"br5e.quickDefaultDescriptionEnabled.hint": "Если включено, то полное описание предметов и инструментов будут отображаться в чате при бросках.",
-	"br5e.defaultRollArt.name": "Иконка по умолчанию",
-	"br5e.defaultRollArt.hint": "Выберите изображение, которое будет использоваться по умолчанию для проверок характеристик и испытаний. Если оно не доступно (или является стандартным человеком в плаще), то будет использоваться другая иконка.",
-	"br5e.damageContextEnabled.name": "Контекст урона",
-	"br5e.damageContextEnabled.hint": "Позволяет добавлять контекст у дополнительному урону. Работает только с Супербросками.",
-	"br5e.contextReplacesTitle.name": "Контекст заменяет название",
-	"br5e.contextReplacesTitle.hint": "Если контекст в том же месте, что текст броска урона, например \"Урон\" или \"Лечение\", то он заменит его.",
-	"br5e.contextReplacesDamage.name": "Контекст заменяет тип урона",
-	"br5e.contextReplacesDamage.hint": "Если контекст в том же месте, что текст типа урона, то он заменит его.",
-	"br5e.rollTitlePlacement.name": "Показывать название бросков",
-	"br5e.rollTitlePlacement.hint": "Определяет показывать ли название бросков (кроме урона), вроде \"Атака\".",
-	"br5e.damageTitlePlacement.name": "Показывать название урона",
-	"br5e.damageTitlePlacement.hint": "Определяет показывать ли название урона, вроде \"Урон\".",
-	"br5e.damageContextPlacement.name": "Показывать название урона",
-	"br5e.damageContextPlacement.hint": "Определяет отображение названий контекста урона.",
-	"br5e.damageRollPlacement.name": "Показывать тип урона",
-	"br5e.damageRollPlacement.hint": "Определяет где отображать тип урона относительно броска урона.",
-	"br5e.damageRollPlacement.choices.0": "Не показывать",
-	"br5e.damageRollPlacement.choices.1": "Сверху",
-	"br5e.damageRollPlacement.choices.2": "Снизу и внутри",
-	"br5e.damageRollPlacement.choices.3": "Снизу и снаружи",
-	"br5e.altSecondaryEnabled.name": "Alt-клик по изображению для второстепенного броска.",
-	"br5e.altSecondaryEnabled.hint": "При Alt-клике на иконку предмета отображать второстепенное сообщение Суперброска, настраиваемое для каждого предмета отдельно.",
-	"br5e.chatDamageButtonsEnabled.name": "Включить кнопки урона в чате",
-	"br5e.chatDamageButtonsEnabled.hint": "Показывать кнопки в чате для быстрого нанесения урона и лечения выбранных токенов. Требуется перезагрузка Foundry.",
-	"br5e.playRollSounds.name": "Включить звук бросков",
-	"br5e.playRollSounds.hint": "Проигрывать звук костей при бросках.",
-	"br5e.hideDC.name": "Скрывать СЛ испытаний",
-	"br5e.hideDC.hint": "Скрывает отображение СЛ испытаний на кнопке испытаний в чате.",
-	"br5e.hideDC.string": "??",
-	"br5e.hideDC.choices.0": "Никогда",
-	"br5e.hideDC.choices.1": "Только NPC",
-	"br5e.hideDC.choices.2": "Всегда",
-	"br5e.damagePromptEnabled.name": "Кнопка урона в чате",
-	"br5e.damagePromptEnabled.hint": "Не бросать урон автоматически, а показывать кнопку на карточке броска в чате.",
-	"br5e.d20RollIconsEnabled.name": "Показывать иконку D20 для мультибросков.",
-	"br5e.d20RollIconsEnabled.hint": "Если включено, атаки, проверки и испытания будут показывать натуральный результат на кубике.",
-	"br5e.applyActiveEffects.name": "Показывать кнопку активных эффектов",
-	"br5e.applyActiveEffects.hint": "Показать кнопку применения активных эффектов. Требуется модуль DAE. Если DAE не активе, то эта опция бесполезна.",
-	"br5e.d20Mode.name": "Режим d20",
-	"br5e.d20Mode.hint": "Определите тип отображения бросков характеристик, испытаний и атак.",
-	"br5e.d20Mode.choices.1": "Одиночный бросок (Shift: Преимущество, Ctrl: Помеха)",
-	"br5e.d20Mode.choices.2": "Двойной бросок",
-	"br5e.d20Mode.choices.3": "Тройной бросок",
-	"br5e.d20Mode.choices.4": "Запрос преимущества/помехи",
-	"br5e.critBehavior.name": "Критический урон",
-	"br5e.critBehavior.hint": "Определите как вычислять критический урон.",
-	"br5e.critBehavior.choices.0": "Без дополнительного урона",
-	"br5e.critBehavior.choices.1": "Бросать кости базового и критического урона",
-	"br5e.critBehavior.choices.2": "Бросать базовый урон, критический всегда максимальный",
-	"br5e.critBehavior.choices.3": "Максимальный базовый и критический урон",
-	"br5e.critBehavior.choices.4": "Максимальный базовый, бросать критический урон",
-	"br5e.critString.name": "Отображение критического удара",
-	"br5e.critString.hint": "Выберите как отмечать критические удары. Текст появляется справа от критического броска. Работает только с включёнными Удобными Бросками.",
-	"br5e.critString.choices.2": "Крит",
-	"br5e.critString.choices.3": "Крит!",
-	"br5e.critString.choices.4": "(Крит)",
-	"br5e.critString.choices.5": "Критический",
-	"br5e.critString.choices.6": "Критический!",
-	"br5e.critString.choices.7": "(Критический)",
-	"br5e.critString.choices.8": "БАМ!",
-	"br5e.error.noSelectedActor": "Требуется выбрать персонажа!",
-	"br5e.error.noKnownItemOnActor": "Не владеет предметом",
-	"br5e.error.noActorWithId": "Не найден актёр с этим ID",
-	"br5e.error.noActorWithName": "Не найден актёр с этим именем",
-	"br5e.error.noItemWithId": "Не найден предмет с этим ID или названием",
-	"br5e.error.noChargesLeft": "У предмета закончились заряды!",
-	"br5e.error.autoDestroy": "{name} пропадает, т.к. был использован последний заряд.",
-	"br5e.error.rollEvaluation": "Ошибка расчёта броска: {msg}",
-	"br5e.error.noDAE": "Для применения активных эффектов к цели требуется DAE",
-	"br5e.error.libWrapperMinVersion": "Better Rolls требует libWrapper версии {version} или новее.",
-	"br5e.settings.critThreshold": "Порог критического удара",
-	"br5e.settings.critDamage": "Доп. критический урон",
-	"br5e.settings.critDamage.hint": "Дополнительный критический урон добавляется, если хотя бы одна кость урона была брошена",
-	"br5e.settings.quickRollsLabel": "Суперброски",
-	"br5e.settings.quickRollsAltLabel": "Альт. Суперброски",
-	"br5e.settings.quickRollsAltSubLabel": "(При удержании Alt во время Суперброска)",
-	"br5e.settings.description": "Описание",
-	"br5e.settings.attackRoll": "Атака",
-	"br5e.settings.attackAndSave": "Атака / Испытание",
-	"br5e.settings.saveDC": "Испытание",
-	"br5e.settings.baseDamage": "Базовый урон",
-	"br5e.settings.altDamage": "Альт. урон",
-	"br5e.settings.properties": "Свойства",
-	"br5e.settings.check": "Проверка",
-	"br5e.settings.consume": "Потратить",
-	"br5e.settings.consumeQuantity": "Количество",
-	"br5e.settings.consumeUses": "Использования",
-	"br5e.settings.consumeResource": "Ресурс",
-	"br5e.settings.consumeRecharge": "Заряд",
-	"br5e.settings.useTemplate": "Разместить шаблон",
-	"br5e.settings.label": "Название",
-	"br5e.settings.context": "Контекст",
-	"br5e.settings.otherFormula": "Другая формула",
-	"br5e.settings.quickFlavor": "Текст",
-	"br5e.settings.prompt": "Расширеный запрос",
-	"br5e.buttons.roll": "Бросок",
-	"br5e.buttons.altRoll": "Альт. бросок",
-	"br5e.buttons.attack": "Атака",
-	"br5e.buttons.saveDC": "СЛ испытания",
-	"br5e.buttons.saveAndDamage": "Бросок (испытание и урон)",
-	"br5e.buttons.attackAndDamage": "Бросок (атака и урон)",
-	"br5e.buttons.damage": "Урон",
-	"br5e.buttons.altDamage": "Альт. урон",
-	"br5e.buttons.extraDamage": "Доп. урон",
-	"br5e.buttons.verDamage": "Полуторный урон",
-	"br5e.buttons.info": "Инфо",
-	"br5e.buttons.itemUse": "Использовать",
-	"br5e.buttons.defaultSheetRoll": "Классический бросок",
-	"br5e.buttons.applyActiveEffects": "Применить активные эффекты",
-	"br5e.chat.attack": "Атака",
-	"br5e.chat.check": "Проверка",
-	"br5e.chat.save": "Испытание",
-	"br5e.chat.damage": "Урон",
-	"br5e.chat.healing": "Лечение",
-	"br5e.chat.altPrefix": "Альтернативный",
-	"br5e.chat.extraPrefix": "Дополнительный",
-	"br5e.chat.consumedBySpell": "Поглощено заклинанием",
-	"br5e.chat.abrVocal": "С",
-	"br5e.chat.abrSomatic": "Ж",
-	"br5e.chat.abrMaterial": "Р",
-	"br5e.chat.other": "Другое",
-	"br5e.chat.advantage": "Преимущество",
-	"br5e.chat.disadvantage": "Помеха",
-	"br5e.chat.normal": "Обычный",
-	"br5e.chatContext.repeat": "Повторить бросок",
-	"br5e.querying.title": "Выберите тип броска",
-	"br5e.querying.disadvantage": "Помеха",
-	"br5e.querying.normal": "Обычный",
-	"br5e.querying.advantage": "Преимущество",
-	"br5e.chat.multiRollButtons.advantage.hint": "Бросок с Преимуществом (Shift)",
-	"br5e.chat.multiRollButtons.disadvantage.hint": "Бросок с Помехой (Ctrl)",
-	"br5e.chat.damageButtons.fullDamage.hint": "Нанести полный урон выбранным токенам.",
-	"br5e.chat.damageButtons.quarterDamage.hint": "Нажмите, чтобы нанести четверть урона выбранным токенам.",
-	"br5e.chat.damageButtons.halfDamage.hint": "Нанести половину урона выбранным токенам.",
-	"br5e.chat.damageButtons.doubleDamage.hint": "Нанести двойной урон выбранным токенам.",
-	"br5e.chat.damageButtons.healing.hint": "Вылечить выбранные токены.",
-	"br5e.chat.damageButtons.crit.hint": "Нажмите для броска критического урона.",
-	"br5e.chat.damageButtons.tempOverwrite.title": "Перезапись временного здоровья.",
-	"br5e.chat.damageButtons.tempOverwrite.content": "Заменить {original} временного здоровья на новое значение в {new} временного здоровья?",
-	"br5e.chat.damageButtons.bcritPrompt.title": "Использовать критический урон?",
-	"br5e.chat.damageButtons.critPrompt.yes": "Да",
-	"br5e.chat.damageButtons.critPrompt.no": "Нет",
-	"Ability Roll": "Бросок характеристики",
-	"What type of roll?": "Выберите тип броска",
-	"Ability Check": "Проверка характеристики",
-	"Saving Throw": "Испытание",
-	"Not Proficient": "Не умелый",
-	"Proficient": "Умелый",
-	"Jack of all Trades": "Мастер на все руки",
-	"Expertise": "Умение",
-	"Ritual": "Ритуал",
-	"Target: ": "Цель: ",
-	"Concentration": "Концентрация",
-	"AC": "КБ",
-	"Equipped": "Надето",
-	"Stealth Disadv.": "Помеха скрытности"
+  "Better Rolls": "Суперброски",
+  "Better Rolls for 5e": "Суперброски для 5e",
+  "br5e": {
+    "migrating": "Происходит миграция настроек Better Rolls для версии {version}",
+    "rollButtonsEnabled": {
+      "name": "Добавить кнопки бросков в лист",
+      "hint": "Добавить кнопки на предметы, заклинания и особенности при разворачивании полного описания нажатием на название."
+    },
+    "imageButtonEnabled": {
+      "name": "Авто-бросок нажатием по иконке",
+      "hint": "При нажатии на иконку будет автоматически произведён Супербросок вместо обычного. Можно обойти удерживанием Alt."
+    },
+    "quickDefaultDescriptionEnabled": {
+      "name": "Полное описание при Супербросках",
+      "hint": "Если включено, то полное описание предметов и инструментов будут отображаться в чате при бросках."
+    },
+    "defaultRollArt": {
+      "name": "Иконка по умолчанию",
+      "hint": "Выберите изображение, которое будет использоваться по умолчанию для проверок характеристик и испытаний. Если оно не доступно (или является стандартным человеком в плаще), то будет использоваться другая иконка."
+    },
+    "damageContextEnabled": {
+      "name": "Контекст урона",
+      "hint": "Позволяет добавлять контекст у дополнительному урону. Работает только с Супербросками."
+    },
+    "contextReplacesTitle": {
+      "name": "Контекст заменяет название",
+      "hint": "Если контекст в том же месте, что текст броска урона, например \"Урон\" или \"Лечение\", то он заменит его."
+    },
+    "contextReplacesDamage": {
+      "name": "Контекст заменяет тип урона",
+      "hint": "Если контекст в том же месте, что текст типа урона, то он заменит его."
+    },
+    "rollTitlePlacement": {
+      "name": "Показывать название бросков",
+      "hint": "Определяет показывать ли название бросков (кроме урона), вроде \"Атака\"."
+    },
+    "damageTitlePlacement": {
+      "name": "Показывать название урона",
+      "hint": "Определяет показывать ли название урона, вроде \"Урон\"."
+    },
+    "damageContextPlacement": {
+      "name": "Показывать название урона",
+      "hint": "Определяет отображение названий контекста урона."
+    },
+    "damageRollPlacement": {
+      "name": "Показывать тип урона",
+      "hint": "Определяет где отображать тип урона относительно броска урона.",
+      "choices": {
+        "0": "Не показывать",
+        "1": "Сверху",
+        "2": "Снизу и внутри",
+        "3": "Снизу и снаружи"
+      }
+    },
+    "altSecondaryEnabled": {
+      "name": "Alt-клик по изображению для второстепенного броска.",
+      "hint": "При Alt-клике на иконку предмета отображать второстепенное сообщение Суперброска, настраиваемое для каждого предмета отдельно."
+    },
+    "chatDamageButtonsEnabled": {
+      "name": "Включить кнопки урона в чате",
+      "hint": "Показывать кнопки в чате для быстрого нанесения урона и лечения выбранных токенов. Требуется перезагрузка мира.",
+      "choices": {
+        "0": "Выключено",
+        "1": "Включено",
+        "2": "Только GM"
+      }
+    },
+    "playRollSounds": {
+      "name": "Включить звук бросков",
+      "hint": "Проигрывать звук костей при бросках."
+    },
+    "hideDC": {
+      "name": "Скрывать СЛ испытаний",
+      "hint": "Скрывает отображение СЛ испытаний на кнопке испытаний в чате.",
+      "string": "??",
+      "choices": {
+        "0": "Никогда",
+        "1": "Только NPC",
+        "2": "Всегда"
+      }
+    },
+    "damagePromptEnabled": {
+      "name": "Кнопка урона в чате",
+      "hint": "Не бросать урон автоматически, а показывать кнопку на карточке броска в чате."
+    },
+    "d20RollIconsEnabled": {
+      "name": "Показывать иконку D20 для мультибросков.",
+      "hint": "Если включено, атаки, проверки и испытания будут показывать натуральный результат на кубике."
+    },
+    "applyActiveEffects": {
+      "name": "Показывать кнопку активных эффектов",
+      "hint": "Показать кнопку применения активных эффектов. Требуется модуль DAE. Если DAE не активе, то эта опция бесполезна."
+    },
+    "d20Mode": {
+      "name": "Режим d20",
+      "hint": "Определите тип отображения бросков характеристик, испытаний и атак.",
+      "choices": {
+        "1": "Одиночный бросок (Shift: Преимущество, Ctrl: Помеха)",
+        "2": "Двойной бросок",
+        "3": "Тройной бросок",
+        "4": "Запрос преимущества/помехи"
+      }
+    },
+    "critBehavior": {
+      "name": "Критический урон",
+      "hint": "Определите как вычислять критический урон.",
+      "choices": {
+        "0": "Без дополнительного урона",
+        "1": "Бросать кости базового и критического урона",
+        "2": "Бросать базовый урон, критический всегда максимальный",
+        "3": "Максимальный базовый и критический урон",
+        "4": "Максимальный базовый, бросать критический урон"
+      }
+    },
+    "critString": {
+      "name": "Отображение критического удара",
+      "hint": "Выберите как отмечать критические удары. Текст появляется справа от критического броска. Работает только с включёнными Удобными Бросками.",
+      "choices": {
+        "2": "Крит",
+        "3": "Крит!",
+        "4": "(Крит)",
+        "5": "Критический",
+        "6": "Критический!",
+        "7": "(Критический)",
+        "8": "БАМ!"
+      }
+    },
+    "error": {
+      "noSelectedActor": "Требуется выбрать персонажа!",
+      "noKnownItemOnActor": "Не владеет предметом",
+      "noActorWithId": "Не найден актёр с этим ID",
+      "noActorWithName": "Не найден актёр с этим именем",
+      "noItemWithId": "Не найден предмет с этим ID или названием",
+      "noChargesLeft": "У предмета закончились заряды!",
+      "autoDestroy": "{name} пропадает, т.к. был использован последний заряд.",
+      "rollEvaluation": "Ошибка расчёта броска: {msg}",
+      "noDAE": "Для применения активных эффектов к цели требуется DAE",
+      "libWrapperMinVersion": "Better Rolls требует libWrapper версии {version} или новее."
+    },
+    "settings": {
+      "critThreshold": "Порог критического удара",
+      "critDamage": {
+        "hint": "Дополнительный критический урон добавляется, если хотя бы одна кость урона была брошена"
+      },
+      "quickRollsLabel": "Суперброски",
+      "quickRollsAltLabel": "Альтернативные Суперброски",
+      "quickRollsAltSubLabel": "(При удержании Alt во время Суперброска)",
+      "description": "Описание",
+      "attackRoll": "Атака",
+      "attackAndSave": "Атака / Испытание",
+      "saveDC": "Испытание",
+      "baseDamage": "Базовый урон",
+      "altDamage": "Альт. урон",
+      "properties": "Свойства",
+      "check": "Проверка",
+      "consume": "Потратить",
+      "consumeQuantity": "Количество",
+      "consumeUses": "Использования",
+      "consumeResource": "Ресурс",
+      "consumeRecharge": "Заряд",
+      "useTemplate": "Разместить шаблон",
+      "label": "Название",
+      "context": "Контекст",
+      "otherFormula": "Другая формула",
+      "quickFlavor": "Текст",
+      "prompt": "Расширеный запрос"
+    },
+    "buttons": {
+      "roll": "Бросок",
+      "altRoll": "Альт. бросок",
+      "attack": "Атака",
+      "saveDC": "СЛ испытания",
+      "saveAndDamage": "Бросок (испытание и урон)",
+      "attackAndDamage": "Бросок (атака и урон)",
+      "damage": "Урон",
+      "altDamage": "Альт. урон",
+      "extraDamage": "Доп. урон",
+      "verDamage": "Полуторный урон",
+      "info": "Инфо",
+      "itemUse": "Использовать",
+      "defaultSheetRoll": "Классический бросок",
+      "applyActiveEffects": "Применить активные эффекты"
+    },
+    "chat": {
+      "attack": "Атака",
+      "check": "Проверка",
+      "save": "Испытание",
+      "damage": "Урон",
+      "healing": "Лечение",
+      "altPrefix": "Альтернативный",
+      "extraPrefix": "Дополнительный",
+      "consumedBySpell": "Поглощено заклинанием",
+      "abrVocal": "С",
+      "abrSomatic": "Ж",
+      "abrMaterial": "Р",
+      "other": "Другое",
+      "advantage": "Преимущество",
+      "disadvantage": "Помеха",
+      "normal": "Обычный",
+      "multiRollButtons": {
+        "advantage": {
+          "hint": "Бросок с Преимуществом (Shift)"
+        },
+        "disadvantage": {
+          "hint": "Бросок с Помехой (Ctrl)"
+        }
+      }
+    },
+    "chatContext": {
+      "repeat": "Повторить бросок"
+    },
+    "querying": {
+      "title": "Выберите тип броска",
+      "disadvantage": "Помеха",
+      "normal": "Обычный",
+      "advantage": "Преимущество"
+    }
+  },
+  "Ability Roll": "Бросок характеристики",
+  "What type of roll?": "Выберите тип броска",
+  "Ability Check": "Проверка характеристики",
+  "Saving Throw": "Испытание",
+  "Not Proficient": "Не умелый",
+  "Proficient": "Умелый",
+  "Jack of all Trades": "Мастер на все руки",
+  "Expertise": "Умение",
+  "Ritual": "Ритуал",
+  "Target: ": "Цель: ",
+  "Concentration": "Концентрация",
+  "AC": "КБ",
+  "Equipped": "Надето",
+  "Stealth Disadv": {}
 }
