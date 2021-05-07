@@ -1,7 +1,7 @@
 Hooks.once("init", async () => {
-  loadCSS("modules/ru-RU/styles/" + game.system.id + ".css");
+  loadCSS("modules/ru-ru/styles/" + game.system.id + ".css");
 
-    // D&D6
+  // D&D6
 
   if (game.system.id === "dnd5e") {
     async function sortSkillsAlpha() {
@@ -55,21 +55,17 @@ Hooks.once("init", async () => {
     });
   }
 
-// DUNGEON WORLD
+  // DUNGEON WORLD
 
   if (game.system.id === "dungeonworld") {
-
-
-    if(typeof Babele !== 'undefined') {
-		
+    if (typeof Babele !== "undefined") {
       Babele.get().register({
-        module: 'ru-RU',
-        lang: 'ru',
-        dir: 'compendium/dungeonworld'
+        module: "ru-ru",
+        lang: "ru",
+        dir: "compendium/dungeonworld",
       });
     }
   }
 
-// END
-
+  // END
 });
