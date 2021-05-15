@@ -256,63 +256,15 @@
 
 /* TIDY5E */
 
-.tidy5e.sheet.actor .inventory-list .inventory-header,
-.tidy5e.sheet.actor .inventory-list .inventory-header.spellbook-header,
-.tidy5e.sheet.actor .inventory-list .inventory-header h3,
-.tidy5e.sheet.actor .spellcasting-ability h3.spell-dc,
-.tidy5e.sheet.actor .ability-scores .ability .ability-name,
-.tidy5e.sheet.actor .header-attributes .ac-display,
-.tidy5e.dnd5e.sheet.item .sheet-header .item-subtitle .item-type,
-.tidy5e-sheet h1,
-.tidy5e-sheet h2,
-.tidy5e-sheet h3,
-.tidy5e-navigation,
-.tidy5e.sheet.actor .header-attributes .value,
-.tidy5e.sheet.actor .header-attributes .ac-display,
-.tidy5e.sheet.actor .header-attributes .value-footer,
-.tidy5e.sheet.actor .attribute-name,
-.tidy5e.sheet.actor .inventory-filters h3,
-.tidy5e.sheet.actor .inventory-filters .filter-title,
-.tidy5e.sheet.actor .inventory-filters .tidy5e-delete-lock,
-.tidy5e.sheet.actor .spellcasting-ability h3 {
-  font-family: "Oswald", sans-serif;
+.system-dnd5e {
+  --modesto: "PT Serif", serif;
+  --signika: "Oswald", sans-serif;
 }
 
-.tidy5e-navigation {
-  font-size: 16px;
-  line-height: 12px;
-}
-
-.tidy5e.sheet.actor .header-attributes .value {
+.tidy5e.sheet.item .sheet-header .item-subtitle .item-type {
   font-size: 18px;
 }
 
-.tidy5e.sheet.actor .header-attributes .ac-display {
-  font-size: 28px;
-}
-
-.tidy5e.sheet.actor .attribute-name {
-  font-size: 17px;
-}
-
-.tidy5e.sheet.actor .ability-scores .ability .ability-name {
-  font-size: 13px;
-}
-
-.tidy5e.sheet.actor .attribute-name {
-  font-size: 18px;
-}
-
-.tidy5e.sheet.actor .header-attributes .value-footer {
-  line-height: 12px;
-  padding-top: 4px;
-}
-
-.tidy5e.sheet.actor .header-attributes .ac-display {
-  font-weight: bold;
-  font-size: 22px;
-}
-
-.tidy5e.dnd5e.sheet.item .sheet-header .item-subtitle .item-type {
-  font-size: 16px;
+.tidy5e.sheet.item .sheet-body .item-properties .form-group {
+  font-family: var(--signika);
 }
