@@ -1,55 +1,35 @@
 /* CORIOLIS */
 
-.yzecoriolis.sheet.actor input[type="text"],
-.yzecoriolis.sheet.actor .sheet-header .char-class {
-  font-family: "PT Serif", serif !important;
+@font-face {
+  font-family: "Nodesto";
+  src: url("../fonts/Oswald-Regular.ttf");
+}
+.nodesto {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
 }
 
-.yzecoriolis.sheet.actor .player-text,
-.yzecoriolis.sheet.actor .player-text-bold,
-.yzecoriolis.sheet.actor .data-text,
-.yzecoriolis.sheet.actor .data-text-bold,
-.yzecoriolis.sheet.actor .data-text-semibold,
-.yzecoriolis.sheet.actor
-  .always-visible-stats
-  .perma-stats-list
-  .entry
-  .stat-label,
-.yzecoriolis.sheet.actor
-  .always-visible-stats
-  .perma-stats-list
-  .entry
-  .number
-  .input-value,
-.yzecoriolis.sheet.actor .sheet-body .navigation .nav-link,
-.yzecoriolis.sheet.actor .sheet-body .attribute-list .attr-name,
-.yzecoriolis.sheet.actor .sheet-body .skills-list-group .skill-header,
-.yzecoriolis.sheet.actor .sheet-body .skills-list-group .skill h4,
-.yzecoriolis.sheet.actor .sheet-body .critical-injuries-list .crit-header h4,
-.yzecoriolis.sheet.actor .sheet-body .critical-injuries-list .crit-add-controls,
-.yzecoriolis.sheet.actor .sheet-body .critical-injuries-list .injury-display,
-.yzecoriolis.sheet.actor .sheet-body .category-header,
-.yzecoriolis.sheet.actor .sheet-body .item-entry,
-.yzecoriolis.sheet.actor .sheet-body .item-entry-name,
-.yzecoriolis.sheet.actor .sheet-body .item-properties .tag,
-.yzecoriolis.sheet.actor .sheet-body .talent-list .talent-category-header,
-.yzecoriolis.sheet.actor .sheet-body .talent-list .talent,
-.yzecoriolis.sheet.actor .sheet-body .talent-list .talent-name,
-.yzecoriolis.sheet.actor .sheet-body .gear-list .gear-category-header,
-.yzecoriolis.sheet.actor .sheet-body .gear-list .gear,
-.yzecoriolis.sheet.actor .sheet-body .gear-list .gear-name,
-.yzecoriolis.sheet.actor .sheet-body .gear-list .gear-row-data,
-.yzecoriolis.sheet.actor .sheet-body .gear-list .gear-quantity-input,
-.yzecoriolis.sheet.actor .sheet-body .encumbrance-bar .encumbrance-data,
-.yzecoriolis.sheet.actor .sheet-body .bio-stats .bio-category-header,
-.yzecoriolis.sheet.actor .sheet-body .bio-stats .bio-input,
-.yzecoriolis.sheet.actor .sheet-body .bio-stats .bio-block .bio-block-title,
-.yzecoriolis.sheet.actor .sheet-body .bio-stats .bio-block select,
-.yzecoriolis.sheet.actor .charnotes .editor,
-.yzecoriolis.sheet.actor .sheet-body .gear-list .gear-category-name {
-  font-family: "Oswald", sans-serif !important;
+@font-face {
+  font-family: "Cairo";
+  src: url("../fonts/Oswald-Regular.ttf");
+}
+@font-face {
+  font-family: "Cairo-Bold";
+  src: url("../fonts/Oswald-Bold.ttf");
+}
+@font-face {
+  font-family: "Cairo-SemiBold";
+  src: url("../fonts/Oswald-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Play";
+  src: url("../fonts/Oswald-ExtraLight.ttf");
 }
 
 .yzecoriolis.sheet.actor .sheet-body .gear-list .gear-category-name {
   font-size: 13px !important;
+}
+
+.yzecoriolis.sheet.actor .nav-item-link {
+  font-size: 15px;
 }
