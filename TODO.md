@@ -2,13 +2,9 @@
 
 1. moulinette-core
 2. pin-cushion
-
 3. monks-hotbar-expansion
-
 4. monks-little-details
-
 5. ActiveAuras
-
 6. monks-enhanced-journal
 7. smart-target
 8. lockview
