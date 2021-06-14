@@ -1,11 +1,94 @@
 {
-    "levels.settings.showTokensGM.name": "Показывать все токены для GM",
-    "levels.settings.showTokensGM.hint": "GM будет видеть все токены вне зависимости от высоты",
-    "levels.settings.hideAllUnowned.name": "Скрывать все токены без владельца для игроков",
-    "levels.settings.hideAllUnowned.hint": "Все токены без владельца будут скрыты для игроков, когда на высоте нет токенов под их управлением",
-    "levels.tilecoonfig.range.name": "Диапазон высоты",
-    "levels.tilecoonfig.range.unit": "Низ,Верх",
-    "levels.wallconfig.hb.name": "Высота снизу",
-    "levels.wallconfig.ht.name": "Высота сверху",
-    "levels.drawingconfig.range.name": "Диапазон отверстия"
+  "levels": {
+    "tilecoonfig": {
+      "range": {
+        "unit": "Высота"
+      },
+      "rangeTop": {
+        "name": "Высота (верх)"
+      },
+      "rangeBottom": {
+        "name": "Высота (низ)"
+      }
+    },
+    "drawingconfig": {
+      "range": {
+        "name": "Диапазон отверстия"
+      },
+      "hb": {
+        "name": "Высота (низ)"
+      },
+      "ht": {
+        "name": "Высота (верх)"
+      },
+      "isHole": {
+        "name": "Режим рисования уровней",
+        "opt0": "Нет",
+        "opt1": "Отверстие",
+        "opt2": "Лестница"
+      }
+    },
+    "yesnodialog": {
+      "no": "Отмена",
+      "yes": "Применить"
+    },
+    "widget": {
+      "element": "Уровень",
+      "title": "Уровни"
+    },
+    "settings": {
+      "enableTooltips": {
+        "hint": "Показывать подсказки с высотой верха и низа при наведении на объекты уровней",
+        "name": "Включить подсказки"
+      }
+    },
+    "modulename": "Уровни",
+    "form": {
+      "addNew": "Добавить уровень",
+      "autoLevels": "Получить уровни со сцены",
+      "bottom": "Низ:",
+      "currentLevel": "Текушие уровни",
+      "name": "Название:",
+      "suggestedLevels": "Автоматически создать уровни",
+      "tip": "*Уровни не должны пересекаться (напр. 0,9 / 10,19 / 20,29)",
+      "top": "Верх:"
+    },
+    "dialog": {
+      "define": {
+        "text": "Уровни:",
+        "warn": "Определите уровни как: низ,верх|низ,верх - например 0,9|10,19|20,29",
+        "title": "Определите уровни этой сцены"
+      },
+      "levelsclear": {
+        "content": "Очистить все сохранённые уровни?",
+        "title": "Очистить уровни"
+      }
+    },
+    "controls": {
+      "main": {
+        "name": "Уровни"
+      },
+      "levelup": {
+        "name": "На уровень вверх"
+      },
+      "levelsview": {
+        "name": "Включить просмотр/размещение уровней"
+      },
+      "levelsroof": {
+        "name": "Включить просмотр/размещение крыш"
+      },
+      "levelshole": {
+        "name": "ВКЛ - рисунок размещается как Лестница, ВЫКЛ - Отверствие"
+      },
+      "levelsclear": {
+        "name": "Очистить уровни"
+      },
+      "leveldown": {
+        "name": "На уровень вниз"
+      },
+      "definelevels": {
+        "name": "Редактировать уровни"
+      }
+    }
+  }
 }
