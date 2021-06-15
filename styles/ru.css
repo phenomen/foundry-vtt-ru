@@ -22,10 +22,6 @@
   src: url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 }
 
-body {
-  font-family: "Roboto", "Arial", sans-serif;
-}
-
 /* FOUNDRY */
 
 .nodesto {
@@ -35,6 +31,20 @@ body {
 
 .tabs .item {
     font-family: "Oswald", sans-serif !important;
+}
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+button {
+  font-family: "Oswald", sans-serif;
+}
+
+.package-list .package .package-controls button {
+    font-size: 13px !important;
+    line-height: 20px !important;
+
 }
 
 /* MODULES */
@@ -62,8 +72,3 @@ body {
 .monks-tokenbar .sheet .items-list .items-header h3 {
   font-family: "Oswald", sans-serif !important;
 }
-
-button {
-  font-family: "Oswald", sans-serif;
-}
-
