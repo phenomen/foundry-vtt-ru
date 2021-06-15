@@ -60,7 +60,7 @@
     "Clear": "Очистить чат",
     "Export": "Экспорт чата",
     "FlushTitle": "Очистить чат",
-    "FlushWarning": "<h3>Вы уверены?</h3><p>Все сообщения чата будут удалены.</p>",
+    "FlushWarning": "Все сообщения чата будут удалены.</p>",
     "InvalidCommand": "{command} не является командой чата.",
     "Title": "Чат",
     "To": "К",
@@ -124,7 +124,8 @@
     "CombatantRemove": "Удалить бойца",
     "CombatantClear": "Очистить инициативу",
     "CombatantReroll": "Перебросить инициативу",
-    "CombatantToken": "Связанный токен"
+    "CombatantToken": "Связанный токен",
+    "CombatantNotInScene": "Боец {name} отсутствует на текущей сцене"
   },
   "COMPENDIUM": {
     "Name": "Название библиотеки",
@@ -799,7 +800,9 @@
     "TokenDragPreviewL": "Если включено, то зрение токена будет обновляться в реальном времени при перетаскивании. По умолчанию опция выключена, чтобы избежать нежелательного мухлежа.",
     "DefaultTokenH": "Настройте значения по умолчанию для токенов новых актёров.",
     "DefaultTokenL": "Настроить токен по умолчанию",
-    "DefaultTokenN": "Настройки токена по умолчанию"
+    "DefaultTokenN": "Настройки токена по умолчанию",
+    "PermissionReset": "Сбросить права роли участника на стандартные.",
+    "PermissionUpdate": "Обновлены настройки прав роли участника."
   },
   "SETUP": {
     "CoreVersion": "Версия программы",
@@ -927,7 +930,9 @@
     "Package": "Пакет",
     "UpdatedPackages": "Журнал обновлений",
     "VersionChange": "Изменение версии",
-    "PackageName": "Название пакета"
+    "PackageName": "Название пакета",
+    "PackageStatusUpdated": "Обновлён",
+    "PackageStatusUpdating": "Обновление"
   },
   "PACKAGE": {
     "TagJavaScript": "JavaScript",
@@ -948,7 +953,11 @@
     "UserKey": "Ключ участника",
     "AuthAdmin": "Вы вошли как администратор сервера.",
     "AdminKey": "Ключ администратора",
-    "AccessKey": "Ключ доступа"
+    "AccessKey": "Ключ доступа",
+    "ErrorBanned": "У {user} нет прав на доступ к этому миру!",
+    "ErrorInvalidPassword": "Введён неверный пароль для {user}!",
+    "ErrorUserDoesNotExist": "Участник \"{user}\" не существует!",
+    "LoginSuccess": "Вход как {user} был успешен, присоединяемся к игре!"
   },
   "SHEETS": {
     "ThisSheet": "Этот лист",
