@@ -1,8 +1,8 @@
 # Русский перевод для Foundry VTT
 
 * **Автор**: Phenomen
-* **Версия**: 0.8.6.1
-* **Foundry VTT**: 0.8.6
+* **Версия**: 0.8.7.2
+* **Foundry VTT**: 0.8.7
 
 ### Ссылки
 
@@ -33,6 +33,7 @@
 - Dungeons & Dragons 5
 - 13th Age
 - Alien RPG (Чужой)
+- Coriolis (Кориолис)
 - Cypher / Numenera
 - Dungeon World
 - Forbidden Lands (Запретные земли)

@@ -7,6 +7,7 @@
     "SampleTask": "напр. „Избавиться от крыс в подвале таверне”",
     "FloatingQuestWindow": "Плавающее окно заданий",
     "NoActiveQuests": "Нет активных заданий",
+
     "QuestTypes": {
       "InProgress": "Активные",
       "Completed": "Завершённые",
@@ -20,11 +21,13 @@
         "hidden": "скрыто"
       }
     },
+
     "Buttons": {
       "AddNewQuest": "Добавить задание",
       "AddNewTask": "Добавить задачу",
       "AddNewFolder": "Добавить папку"
     },
+
     "QuestForm": {
       "Title": "Новое задание",
       "QuestGiver": "Источник",
@@ -37,6 +40,7 @@
       "Submit": "Создать",
       "SubquestOf": "Подзадание {name}"
     },
+
     "QuestLog": {
       "Title": "Журнал заданий",
       "SubTitle": "часть: {0}",
@@ -54,6 +58,7 @@
         "Hidden": "Скрытые"
       }
     },
+
     "QuestPreview": {
       "Title": "Подробности задания",
       "SubTitle": "часть: {0}",
@@ -64,6 +69,7 @@
       "HeaderButtons": {
         "Show": "Показать игрокам"
       },
+
       "Management": {
         "IsPersonalQuest": "Персональное задание?",
         "IsPersonalQuestDescription": "Сделать квест персональным для персонажа. Он будет невидим для всех, кроме выбранного игрока. Снятие этого статуса переместит задание в Скрытые.",
@@ -72,12 +78,15 @@
         "AddSubquest": "Создать подзадание",
         "CanPlayerEdit": "Разрешить игрокам изменять подробности задания"
       },
+
       "Tabs": {
         "Details": "Подробности",
         "QuestManagement": "Изменить задание",
         "GMNotes": "Примечания GM"
       }
+
     },
+
     "DeleteDialog": {
       "Title": "Удаление {name}",
       "Header": "Вы уверены?",
@@ -85,6 +94,7 @@
       "Delete": "Удалить",
       "Cancel": "Отмена"
     },
+
     "CloseDialog": {
       "Title": "Закрыть форму",
       "Header": "Вы уверены?",
@@ -92,12 +102,14 @@
       "Discard": "Сбросить изменения",
       "Cancel": "Отмена"
     },
+
     "Notifications": {
       "CannotOpen": "Не удаётся открыть подробности. Возможно у вас нет разрешения, задание не существует или имеет неверный ID.",
       "UserCantOpen": "Участник {user} не имеет разрешения для просмотра этого задания.",
       "LinkCopied": "Ссылка на сущность этого задания была скопирована в буфер.",
       "QuestMoved": "Задание перемещено в новую папку и имеет статус: {target}"
     },
+
     "Settings": {
       "allowPlayersDrag": {
         "Enable": "Разрешить игрокам перемещать награды",
@@ -147,6 +159,7 @@
         "EnableHint": "Если включено, игроки смогут сами создавать задания. Созданные игроками задания отображаются во вкладке Доступные. ТРЕБУЕТСЯ разрешение 'создание заметок' в Foundry."
       }
     },
+
     "Tooltips": {
       "SetAvailable": "Сделать доступным",
       "SetActive": "Сделать текущим",
@@ -163,11 +176,12 @@
       "TaskHidden": "Задача скрыта. Нажмите, чтобы показать.",
       "TaskVisible": "Задача видима. Нажмите, чтобы скрыть.",
       "ToggleImage": "Переключить изображение портрета/токена",
-      "ChangeGiverImgPos": "Изменить расположение портрета NPC",
-      "ChangeSplashPos": "Изменить расположение заставки",
       "DeleteQuestGiver": "Удалить NPC",
-      "DeleteSplash": "Удалить заставку"
+      "DeleteSplash": "Удалить заставку",
+      "ChangeGiverImgPos": "Изменить расположение портрета NPC",
+      "ChangeSplashPos": "Изменить расположение заставки"
     },
+
     "Api": {
       "__COMMENT__": "No need for translating lines starting with 'API ERROR', they show in console for developers only.",
       "create": {
@@ -209,5 +223,6 @@
         }
       }
     }
+
   }
 }
