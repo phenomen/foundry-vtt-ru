@@ -1,7 +1,7 @@
 # Русский перевод для Foundry VTT
 
 * **Автор**: Phenomen
-* **Версия**: 0.8.8.1
+* **Версия**: 0.8.8.4
 * **Foundry VTT**: 0.8.8
 
 ### Ссылки
@@ -36,6 +36,7 @@
 - Coriolis (Кориолис)
 - Cypher / Numenera
 - Dungeon World
+- Genesys / Star Wars
 - Forbidden Lands (Запретные земли)
 - Mutants Year Zero (Мутанты. Точка Отсчёта)
 - Old-School Essentials

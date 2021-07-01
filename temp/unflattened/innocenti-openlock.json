@@ -1,0 +1,80 @@
+{
+  "OpenLock.Settings": {
+    "ThievesTool": "Thieves’ Tools",
+    "ThievesToolTitle": "Thieves’ Tools: ",
+    "ThievesToolHint": "Name of the item representing the Thieves’ Tools",
+    "removeLock": "Remove lock",
+    "removeLockHint": "if enabled, whenever the chest is opened the lock item will be removed from the chest items.",
+    "perceptionDistance": "Maximum distance for perception (in grids)",
+    "perceptionDistanceHint": "The maximum grid distance for the perception action to be performed",
+    "interactDistance": "Maximum distance to interact (in grids)",
+    "interactDistanceHint": "the maximum distance for players to interact with the lock in number of grids",
+    "repeatCheck": "Repeat Check",
+    "repeatCheckHint": "if enabled, players will be able to repeat the check the same loot"
+  },
+
+  "OpenLock.Btn": {
+    "BreakLock": "Break Lock",
+    "PickLock": "Pick Lock",
+    "DontTouch": "Don't touch this",
+    "OpenChest": "Open",
+    "DisarmTrap": "Unset Trap"
+  },
+
+  "OpenLock.MsgDialog": {
+    "TrapAlert": "Warning!! Trap detected!",
+    "HaveKey": "You have the key to this chest",
+    "HasLock": "This chest is locked",
+    "Title": "Open Chest",
+    "TitleCheck": "Check Traps",
+    "Content": "The chest is locked, how do you want to open it?",
+    "ContentCheck": "Did you find a chest what do you want to do?",
+    "ConsumableLock": "Lock",
+    "TrapDisarm": "The trap has been successfully deactivated!"
+  },
+  "OpenLock.MsgChat": {
+    "Used": "Used: ",
+    "Loot": "Opened: ",
+    "SearchTitle": "Check Loot",
+    "TitleDisarm": "Disarm Traps",
+    "TrapDisarm": "Disarmed Trap: ",
+    "OpenTitle": "Open Chest",
+    "NotLock": "This Item does not have a locking device",
+    "hasLock": "Locked: ",
+    "Yes": "Yes",
+    "No": "No",
+    "Dontfound": "Not found",
+    "haveKey": "Have the Key: ",
+    "haveTrap": "Traps: ",
+    "StranghtOpen": "Broke the lock: ",
+    "TrapOnOpen": "Enabled Trap!",
+    "ToolOpen": "Open the lock: ",
+    "BreakTools": "With misuse, the thieves' tools broke!",
+    "NeedKey": "Need Key: ",
+    "HavePermission": "{token} have permission",
+    "Door": "Door: "
+  },
+  "OpenLock.ItemLabel": {
+    "disarmTrapDC": "Disarm Trap DC",
+    "passiveDC": "Passive Find DC",
+    "findTrapDC": "Find Trap DC",
+    "Perception": "Perception",
+    "Investigation": "Investigation",
+    "forceLockDC": "Force Lock DC",
+    "openLockDC": "Open Lock DC",
+    "toolsBreak": "Threshold of Tools Break",
+    "resetTrap": "Reset Trap",
+    "keylock": "Item Key Name",
+    "SheetEnabled": "Enable Lock/Trap",
+    "OpenTitle": "Open Chests",
+    "wallCoord":  "Wall Coordenates"
+  },
+  "OpenLock.Errors": {
+    "noSelect": "Select a token",
+    "noToken": "No token is targeted",
+    "novalidLoot": " not a valid Loot",
+    "invalidDistance": "The maximum distance for this interaction is: {dist} grids",
+    "invalidCheck": "{token} cannot check the same loot more than once (displaying the last check)",
+    "notHaveTools": "You don't have a {tools}"
+  }
+}

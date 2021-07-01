@@ -10,15 +10,18 @@
     "levels.settings.lockElevation.hint": "Предотвращает изменение высоты токена игроком через меню токена. Обратите внимание, что если у игроков есть разрешение на редактирование токенов, то они все равном смогут это сделать в настройках токена.",
     "levels.settings.defaultLosHeight.name": "Рост токена по умолчанию",
     "levels.settings.defaultLosHeight.hint": "Рост токена (расположение глаз существа). По умолчанию 6.",
-    "levels.settings.advancedLOS.name": "Продвинутое поле зрения",
-    "levels.settings.advancedLOS.hint": "Рассчитывать зрение в 3D пространстве, используя рост токена для расчётов.",
     "levels.settings.autoLOSHeight.name": "Автоматический рост токена",
     "levels.settings.autoLOSHeight.hint": "Рассчитывать рост токена автоматически на основе его размера и масштаба. Настройки, установленные вручную, будут проигнорированы.",
     "levels.settings.debugRaycast.name": "ОТЛАДКА: Включить отображение лучей",
     "levels.settings.debugRaycast.hint": "Показывать лучи зрения в 3D (зелёные: видимо, красные: не видимо)",
-
+    "levels.settings.preciseLightOcclusion.name": "Точный рассчёт света",
+    "levels.settings.preciseLightOcclusion.hint": "Меньше искажений света за счёт производительности",
     "levels.tilecoonfig.rangeTop.name": "Высота (верх)",
     "levels.tilecoonfig.rangeBottom.name": "Высота (низ)",
+    "levels.tilecoonfig.showIfAbove.name": "Показывать даже если снизу?",
+    "levels.tilecoonfig.showAboveRange.name": "Максимальная разница высот",
+    "levels.tilecoonfig.isBasement.name": "Подвал?",
+    "levels.tilecoonfig.noFogHide.name": "Не скрывать этот тайл туманом",
     "levels.tilecoonfig.range.unit": "Высота",
     "levels.drawingconfig.hb.name": "Высота (низ)",
     "levels.drawingconfig.ht.name": "Высота (верх)",
@@ -33,7 +36,7 @@
     "levels.drawingHud.title": "Переключить блокировку лестницы",
     "levels.tokenconfig.tokenHeight.name": "Высота поля видимости токена",
     "levels.tokenconfig.tokenHeight.unit": "(Дистанция)",
-
+    "levels.template.elevation.name": "Высота",
     "levels.controls.main.name": "Уровни",
     "levels.controls.levelsview.name": "Включить просмотр/размещение уровней",
     "levels.controls.definelevels.name": "Редактировать уровни",
@@ -42,20 +45,19 @@
     "levels.controls.levelsroof.name": "Включить просмотр/размещение крыш",
     "levels.controls.levelshole.name": "ВКЛ - рисунок размещается как Лестница, ВЫКЛ - Отверствие",
     "levels.controls.levelsclear.name": "Очистить уровни",
-
+    "levels.controls.placeOverhead.name": "Если включено, верхние тайлы будут размещены 'внутри' уровней",
+    "levels.controls.setTemplateElevation.name": "Задать высоту следующего размещаемого шаблона",
     "levels.dialog.levelsclear.title": "Очистить уровни",
     "levels.dialog.levelsclear.content": "Очистить все сохранённые уровни?",
     "levels.dialog.define.warn": "Определите уровни как: низ,верх|низ,верх - например 0,9|10,19|20,29",
     "levels.dialog.define.title": "Определите уровни этой сцены",
     "levels.dialog.define.text": "Уровни:",
     "levels.dialog.elevator.title": "Уровни - Выберите этаж",
-
+    "levels.dialog.elevation.title": "Высота следующего шаблона",
     "levels.yesnodialog.yes": "Применить",
     "levels.yesnodialog.no": "Отмена",
-
     "levels.widget.title": "Уровни",
     "levels.widget.element": "Уровень",
-
     "levels.form.bottom": "Низ:",
     "levels.form.top": "Верх:",
     "levels.form.name": "Название:",
@@ -64,6 +66,4 @@
     "levels.form.tip": "*Уровни не должны пересекаться (напр. 0,9 / 10,19 / 20,29)",
     "levels.form.suggestedLevels": "Автоматически создать уровни",
     "levels.form.autoLevels": "Получить уровни со сцены",
-
-    "levels.err.lessfog": "Levels: ВНИМАНИЕ! Обнаружен модуль Less Fog - видимость токенов не будет работать корректно. Отключите этот модуль."
-}
+    "levels.err.lessfog": "Levels: ВНИМАНИЕ! Обнаружен модуль Less Fog - видимость токенов не будет работать корректно. Отключите этот модуль."}
