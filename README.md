@@ -9,7 +9,7 @@
 * Github: https://github.com/Phenomen/foundry-vtt-ru
 * Manifest: https://github.com/Phenomen/foundry-vtt-ru/raw/master/module.json
 * Русскоязычное сообщество Foundry VTT: https://discord.gg/Z2CXFy35WF
-* Проект совместной локализации на Transifex: https://www.transifex.com/foundry-vtt-ru/foundry-vtt-russian-localization/
+* Проект совместной локализации на Transifex: https://www.transifex.com/foundry-vtt-ru/foundry-vtt-russian-translation/
 
 ### Описание и инструкция
 
@@ -35,17 +35,18 @@
 - Pathfinder 2e
 - Starfinder
 - 13th Age
+- Dungeon World
+- Genesys / Star Wars
 - Alien RPG (Чужой)
 - Coriolis (Кориолис)
 - Cypher / Numenera
-- Dungeon World
-- Genesys / Star Wars
 - Forbidden Lands (Запретные земли)
 - Mutants Year Zero (Мутанты. Точка Отсчёта)
+- Tales from the Loop (Тайны Эхосферы)
 - Old-School Essentials
 - Savage World (Дневник Авантюриста)
 - Shadow of the Demon Lord
-- Tales from the Loop (Тайны Эхосферы)
+
 
 ## Поддерживаемые модули
 

@@ -55,6 +55,18 @@ Hooks.once("init", async () => {
     });
   }
   
+// PATHFINDER 2
+
+  if (game.system.id === "pf2e") {
+    if (typeof Babele !== "undefined") {
+      Babele.get().register({
+        module: "ru-ru",
+        lang: "ru",
+        dir: "compendium/pf2e",
+      });
+    }
+  }
+  
 // DUNGEON WORLD
 
   if (game.system.id === "dungeonworld") {
