@@ -1,7 +1,7 @@
 # Русский перевод для Foundry VTT
 
 * **Автор**: Phenomen
-* **Версия**: 0.8.8.8
+* **Версия**: 0.8.8.16
 * **Foundry VTT**: 0.8.8
 
 ### Ссылки
@@ -31,6 +31,9 @@
 ## Поддерживаемые cистемы
 
 - Dungeons & Dragons 5
+- Pathfinder 1e
+- Pathfinder 2e
+- Starfinder
 - 13th Age
 - Alien RPG (Чужой)
 - Coriolis (Кориолис)
@@ -40,10 +43,8 @@
 - Forbidden Lands (Запретные земли)
 - Mutants Year Zero (Мутанты. Точка Отсчёта)
 - Old-School Essentials
-- Pathfinder 1
 - Savage World (Дневник Авантюриста)
 - Shadow of the Demon Lord
-- Starfinder
 - Tales from the Loop (Тайны Эхосферы)
 
 ## Поддерживаемые модули
@@ -64,6 +65,7 @@
 - Forien's Quest Log
 - Furnace
 - Health Estimate
+- Levels
 - LMRTFY
 - Metric System for DnD5e
 - Monk's Little Details
