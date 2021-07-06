@@ -61,7 +61,7 @@ Hooks.once("init", async () => {
     if (typeof Babele !== "undefined") {
       Babele.get().register({
         module: "ru-ru",
-        lang: "de",
+        lang: "ru",
         dir: "compendium/pf2e",
       });
     }
