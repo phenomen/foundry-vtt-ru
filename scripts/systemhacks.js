@@ -1,7 +1,7 @@
 Hooks.once("init", async () => {
   loadCSS("modules/ru-ru/styles/" + game.system.id + ".css");
 
-  // D&D6
+// D&D5
 
   if (game.system.id === "dnd5e") {
     async function sortSkillsAlpha() {
@@ -28,7 +28,7 @@ Hooks.once("init", async () => {
     });
   }
 
-  // DELTA GREEN
+// DELTA GREEN
 
   if (game.system.id === "deltagreen") {
     async function sortSkillsAlpha() {
@@ -54,8 +54,8 @@ Hooks.once("init", async () => {
       sortSkillsAlpha();
     });
   }
-
-  // DUNGEON WORLD
+  
+// DUNGEON WORLD
 
   if (game.system.id === "dungeonworld") {
     if (typeof Babele !== "undefined") {
@@ -67,5 +67,5 @@ Hooks.once("init", async () => {
     }
   }
 
-  // END
+// END
 });
