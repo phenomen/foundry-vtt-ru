@@ -1,7 +1,7 @@
 Hooks.once("init", async () => {
   loadCSS("modules/ru-ru/styles/" + game.system.id + ".css");
 
-// D&D5
+  // D&D5
 
   if (game.system.id === "dnd5e") {
     async function sortSkillsAlpha() {
@@ -28,7 +28,7 @@ Hooks.once("init", async () => {
     });
   }
 
-// DELTA GREEN
+  // DELTA GREEN
 
   if (game.system.id === "deltagreen") {
     async function sortSkillsAlpha() {
@@ -54,20 +54,20 @@ Hooks.once("init", async () => {
       sortSkillsAlpha();
     });
   }
-  
-// PATHFINDER 2
+
+  // PATHFINDER 2
 
   if (game.system.id === "pf2e") {
     if (typeof Babele !== "undefined") {
       Babele.get().register({
         module: "ru-ru",
-        lang: "ru",
+        lang: "de",
         dir: "compendium/pf2e",
       });
     }
   }
-  
-// DUNGEON WORLD
+
+  // DUNGEON WORLD
 
   if (game.system.id === "dungeonworld") {
     if (typeof Babele !== "undefined") {
@@ -79,5 +79,5 @@ Hooks.once("init", async () => {
     }
   }
 
-// END
+  // END
 });
