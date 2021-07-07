@@ -66,10 +66,10 @@ Hooks.once("init", async () => {
       });
     }
   }
-  
-	Hooks.once('babele.ready', () => {
-		game.pf2e.ConditionManager.init();
-	});
+
+  Hooks.once("babele.ready", () => {
+    game.pf2e.ConditionManager.init();
+  });
 
   // DUNGEON WORLD
 
