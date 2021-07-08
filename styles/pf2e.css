@@ -1,3 +1,5 @@
+/* PLAYER SHEET */
+
 .crb-style {
     font-family: "PT Serif", serif;
 }
@@ -48,7 +50,7 @@
 
 .crb-style .sheet-body .sheet-content .character .character-details .alignment select {
     font-family: "Oswald", sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: normal;
 }
 
@@ -62,7 +64,8 @@
 }
 
 .crb-style input, .crb-style label, .crb-style select {
-    font-size: 12px;
+    font-size: 13px;
+    font-family: "Oswald", sans-serif;
 }
 
 .crb-style .sheet-body .sheet-content .actions .actions-container .actions-tabs-wrapper .actions-nav .tab {
@@ -112,11 +115,44 @@
     font-weight: bold;
 }
 
+.crb-style .sheet-body .sheet-content .spell-list .item .spell-cast button {
+    width: 50px;
+}
+
+/* NPC SHEET */
+
+.npc .npc-sheet .side-bar {
+    font-family: "Roboto", sans-serif;
+}
+
+.npc .npc-sheet .npc-sheet-header #name .level-container .level-label {
+    font-family: "Roboto", sans-serif;
+}
+
+.npc .npc-sheet .npc-sheet-header #name .name-value {
+    font-family: "Roboto", sans-serif;
+}
+
 .npc .npc-sheet .trait {
     font-size: 10px;
 }
 
+.npc .spell-list .item .spell-cast button {
+    width: 50px;
+}
+
+.npc .npc-sheet .entries-list .spellcasting-entry .header {
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+}
+
+.npc .npc-sheet .entries-list .spellcasting-entry .header .item-controls .spellcasting-remove {
+    font-size: 10px;
+}
+
+/* OTHER */
+
 #pause {
-    font-family: "PT Serif", serif;
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
 }
