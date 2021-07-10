@@ -58,6 +58,22 @@ Hooks.once("init", async () => {
   // PATHFINDER 2
 
   if (game.system.id === "pf2e") {
+
+    if (typeof Babele === "undefined") {
+
+      new Dialog({
+        title: "Перевод библиотек",
+        content: `<p>Для перевода библиотек системы Pathfinder 2e требуется установить и активировать модуль Babele.<p>`,
+        buttons: {
+            done: {
+                label: "Хорошо"
+            }
+        }
+    }).render(true) 
+      
+    }
+
+
     if (typeof Babele !== "undefined") {
 
       Babele.get().register({
