@@ -45,8 +45,8 @@
 		},
 		{
 			"id": "Call Upon the Brightness",
-			"name": "Воззвание к яркости (Call Upon the Brightness)",
-			"description": "<p><strong>Условие:</strong> вы проходите проверку навыка, испытание, или совершаете атаку для действия из @Compendium[pf2e.spells-srd.41TZEjhO6D1nWw2X]{Гадания}, но ещё не совершили бросок.</p>\n<hr />\n<p>Вы получаете ситуационный бонус +1 к проверке, или ситуационный бонус +2 , если результат гадания был &laquo;горем&raquo;, но вы всё равно решили совершить это действие.</p>"
+			"name": "Воззвание к Яркости (Call Upon the Brightness)",
+			"description": "<p><strong>Условие:</strong> вы проходите проверку навыка, испытание, или совершаете атаку для действия из @Compendium[pf2e.spells-srd.41TZEjhO6D1nWw2X]{Гадания}, но ещё не совершили бросок.</p>\n<hr />\n<p>Вы получаете ситуационный бонус +1 к проверке, или ситуационный бонус +2, если результат гадания был &laquo;горем&raquo;, но вы всё равно решили совершить это действие.</p>"
 		},
 		{
 			"id": "Recall Knowledge (Lore)",
@@ -780,13 +780,36 @@
 		},
 		{
 			"id": "Anadi Venom",
-			"name": "Яд Анади (Anadi Venom)",
-			"description": "<p><strong>Frequency</strong> a number of times per day equal to your level</p>\n<hr />\n<p>You envenom your fangs. If the next fangs Strike you make before the end of your turn hits and deals damage, the Strike deals an additional [[/r 1d6 #poison]] poison damage. On a critical failure, the poison is wasted as normal. At 12th level, this poison damage increases to 2d6.</p>\n<p>[[/r (1+(floor(@details.level.value/12)))d6 #poison]]{Levelled} poison damage</p>"
+			"name": "Яд Анади (Anadi Venom)"
 		},
 		{
 			"id": "Rage",
 			"name": "Ярость",
 			"description": "<p><strong>Требования:</strong> вы не находитесь в ярости и не @Compendium[pf2e.conditionitems.HL2l2VRSaQHu9lUw]{утомлены}.</p>\n<hr />\n<p>Вы пробуждаете в себе внутренний гнев и впадаете в ярость. Вы получаете временные ПЗ в количестве, равном вашему уровню + ваш модификатор Выносливости. Вы пребываете в ярости либо 1 минуту, либо пока не перестанете ощущать присутствие врагов, либо пока не потеряете @Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{сознание} &ndash; в зависимости от того, что случится раньше. Вы не можете добровольно прервать ярость. Пока длится ярость, вы:</p>\n<ul>\n<li>Дополнительно наносите 2 урона Ударами в ближнем бою. Этот дополнительный урон уменьшается вдвое, если оружие или безоружная атака обладают дескриптором &laquo;быстрое&raquo;.</li>\n<li>Получаете штраф -1 к КБ.</li>\n<li>Не можете использовать действия с дескриптором &laquo;концентрация&raquo;, если у них отсутствует дескриптор &laquo;ярость&raquo;. Вы можете использовать действие @Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Поиск} в ярости.</li>\n</ul>\n<p>Когда ярость завершается, вы теряете все полученные от неё временные ПЗ и не можете впасть в ярость снова в течение 1 минуты.</p>"
+		},
+		{
+			"id": "Board",
+			"name": "Посадка на борт (Board)"
+		},
+		{
+			"id": "Call to Axis",
+			"name": "Воззвание к Оси (Call to Axis)"
+		},
+		{
+			"id": "Drive",
+			"name": "Вождение (Drive)"
+		},
+		{
+			"id": "Run Over",
+			"name": "Переезд (Run Over)"
+		},
+		{
+			"id": "Stop",
+			"name": "Остановка (Stop)"
+		},
+		{
+			"id": "Take Control",
+			"name": "Управление (Take Control)"
 		}
 	]
 }
