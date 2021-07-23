@@ -1,21 +1,41 @@
 /* GLOBAL FONTS */
 
-@import url("https://use.typekit.net/guk0leb.css");
-
 :root {
-    --body-serif          : "PT Serif", Georgia, serif;
-    --sans-serif          : "Roboto", sans-serif;
+    --body-serif: "PT Serif", Georgia, serif;
+    --sans-serif: "Roboto", sans-serif;
     --sans-serif-condensed: "Oswald", sans-serif;
-    --serif               : "PT Serif", Georgia, serif;
-    --serif-condensed     : "ff-more-web-pro-condensed", serif;
+    --serif: "PT Serif", Georgia, serif;
+    --serif-condensed: "Oswald", serif;
 }
+
 
 /* PLAYER SHEET */
 
+.crb-style aside .sidebar .hitpoints h4,
+.crb-style aside .sidebar .hitpoints label {
+    font-family: var(--sans-serif-condensed);
+}
+
+.crb-style aside .sidebar .armor-class .shield h4,
+.crb-style aside .sidebar .armor-class .shield label {
+    font-family: var(--sans-serif-condensed);
+    font-size: 9px;
+}
+
+.crb-style aside .sidebar .difficulty-checks .classdc-rank h4,
+.crb-style aside .sidebar ul.sidebar-saves .roll-data .save-rank h4 {
+    font-family: var(--sans-serif-condensed);
+    font-weight: normal;
+}
+
+.crb-style header.char-header .char-level .level label {
+    font-family: var(--sans-serif-condensed);
+    font-weight: normal;
+}
 
 .crb-style .sheet-body .sheet-content .character .ability-scores .ability .ability-id {
     font-weight: bold;
-    font-size  : 20px;
+    font-size: 20px;
 }
 
 .crb-style aside .sidebar select {
@@ -23,7 +43,7 @@
 }
 
 .crb-style .sheet-body .sheet-content .character .character-details .alignment select {
-    font-size  : 12px;
+    font-size: 12px;
     font-weight: normal;
 }
 
@@ -32,6 +52,8 @@
 }
 
 .crb-style .sheet-body .sheet-content .actions .actions-container .actions-tabs-wrapper .actions-panels .actions-options .actions-option label * {
+    font-family: var(--sans-serif-condensed);
+    font-weight: normal;
     font-size: 12px;
 }
 
@@ -54,7 +76,19 @@
 }
 
 .crb-style .sheet-body .sheet-content .spell-list .item .spell-cast button {
+    font-family: var(--sans-serif-condensed);
+    font-weight: normal;
     width: 50px;
+}
+
+.crb-style .sheet-body .sheet-content .spellbook .spellcasting-entry .skills-list.focus .skill-grid .skill-container.focus-pool .focus-pool-input h4 {
+    font-family: var(--sans-serif-condensed);
+    font-weight: normal;
+}
+
+.crb-style .sheet-body .sheet-content .spellbook .spellcasting-entry .skills-list .spell-ability .pf-rank {
+    font-family: var(--sans-serif-condensed);
+    font-weight: normal;
 }
 
 
@@ -69,10 +103,20 @@
 }
 
 
-
 /* ITEM SHEET */
 
 
+/* ROLL DIALOG
+
+.dice-checks .window-content .dialog-row .exclude.toggle:before {
+    content: "ВКЛ";
+}
+
+.dice-checks .window-content .dialog-row .exclude.toggle:after {
+    content: "ВЫКЛ";
+}
+
+ */
 
 
 /* OTHER */
