@@ -13,13 +13,14 @@
 
 .crb-style aside .sidebar .hitpoints h4,
 .crb-style aside .sidebar .hitpoints label {
-    font-family: var(--sans-serif-condensed);
+    font-family: var(--sans-serif);
+    font-weight: normal;
 }
 
-.crb-style aside .sidebar .armor-class .shield h4,
-.crb-style aside .sidebar .armor-class .shield label {
-    font-family: var(--sans-serif-condensed);
+.crb-style aside .sidebar h4, .crb-style aside .sidebar label {
     font-size: 9px;
+    font-family: var(--sans-serif-condensed);
+    font-weight: normal;
 }
 
 .crb-style aside .sidebar .difficulty-checks .classdc-rank h4,
@@ -33,13 +34,31 @@
     font-weight: normal;
 }
 
+
+.crb-style aside .sidebar .armor-class .armor_footer .shield-max label,
+.crb-style aside .sidebar .armor-class .armor_footer .shield-status label
+{
+    font-family: var(--sans-serif);
+    font-weight: 700;
+    font-size: 8px;
+}
+
+.crb-style aside .sidebar .armor-class .shield h4, .crb-style aside .sidebar .armor-class .shield label {
+    font-family: var(--sans-serif-condensed);
+    font-weight: normal;
+}
+
 .crb-style .sheet-body .sheet-content .character .ability-scores .ability .ability-id {
     font-weight: bold;
     font-size: 20px;
 }
 
 .crb-style aside .sidebar select {
-    font-size: 14px;
+    font-size: 12px;
+}
+
+.crb-style select {
+    font-size: 12px;
 }
 
 .crb-style .sheet-body .sheet-content .character .character-details .alignment select {
@@ -60,7 +79,12 @@
 .crb-style .sheet-body .sheet-content .skills .skills-pane .combat-list .skill .skill-name,
 .crb-style .sheet-body .sheet-content .skills .skills-pane .lores-list .skill .skill-name,
 .crb-style .sheet-body .sheet-content .skills .skills-pane .skills-list .skill .skill-name {
-    font-size: 13px;
+    font-size: 12px;
+}
+
+.crb-style .sheet-body .sheet-content .skills .skills-pane .pf-rank, .crb-style .sheet-body .sheet-content .skills .skills-pane h6 {
+    font-family: var(--sans-serif-condensed);
+    font-weight: normal;
 }
 
 .crb-style .sheet-body .sheet-content .feats .action-header h3 {
