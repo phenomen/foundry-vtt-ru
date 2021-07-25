@@ -17,7 +17,8 @@
     font-weight: normal;
 }
 
-.crb-style aside .sidebar h4, .crb-style aside .sidebar label {
+.crb-style aside .sidebar h4,
+.crb-style aside .sidebar label {
     font-size: 9px;
     font-family: var(--sans-serif-condensed);
     font-weight: normal;
@@ -34,16 +35,15 @@
     font-weight: normal;
 }
 
-
 .crb-style aside .sidebar .armor-class .armor_footer .shield-max label,
-.crb-style aside .sidebar .armor-class .armor_footer .shield-status label
-{
+.crb-style aside .sidebar .armor-class .armor_footer .shield-status label {
     font-family: var(--sans-serif);
     font-weight: 700;
     font-size: 8px;
 }
 
-.crb-style aside .sidebar .armor-class .shield h4, .crb-style aside .sidebar .armor-class .shield label {
+.crb-style aside .sidebar .armor-class .shield h4,
+.crb-style aside .sidebar .armor-class .shield label {
     font-family: var(--sans-serif-condensed);
     font-weight: normal;
 }
@@ -82,7 +82,8 @@
     font-size: 12px;
 }
 
-.crb-style .sheet-body .sheet-content .skills .skills-pane .pf-rank, .crb-style .sheet-body .sheet-content .skills .skills-pane h6 {
+.crb-style .sheet-body .sheet-content .skills .skills-pane .pf-rank,
+.crb-style .sheet-body .sheet-content .skills .skills-pane h6 {
     font-family: var(--sans-serif-condensed);
     font-weight: normal;
 }
@@ -115,6 +116,11 @@
     font-weight: normal;
 }
 
+.crb-style .sheet-body .sheet-content .actions .actions-container .actions-tabs-wrapper .actions-nav .tab {
+    font-family: var(--sans-serif-condensed);
+    font-weight: bold;
+}
+
 
 /* NPC SHEET */
 
@@ -128,6 +134,12 @@
 
 
 /* ITEM SHEET */
+
+.pf2e.item.sheet form>article>section.sheet-sidebar .inventory-details label {
+    font-weight: 600;
+    font-family: 'Oswald';
+    font-size: 12px;
+}
 
 
 /* ROLL DIALOG
