@@ -1,68 +1,205 @@
-.ability-usage {
-  background: #2f3640 !important;
+.archmage-v2 {
+    font-family: "PT Serif", serif;
 }
 
-.ability-usage--at-will {
-  background: #004d40 !important;
+.archmage-v2 input[type="text"],
+.archmage-v2 input[type="number"] {
+    font-family: "PT Serif", serif;
 }
 
-.ability-usage--once-per-battle {
-  background: #bf360c !important;
+.archmage-v2 button {
+    font-family: "Oswald", sans-serif;
 }
 
-.ability-usage--daily {
-  background: #607d8b !important;
+.archmage-v2 h1,
+.archmage-v2 h2,
+.archmage-v2 h3,
+.archmage-v2 h4 {
+    font-family: "PT Serif", serif;
 }
 
-.ability-usage--recharge {
-  background: #0d47a1 !important;
+.archmage-v2 .unit-title {
+    font-family: "PT Serif", serif;
+    font-weight: bold;
+    font-size: 16px;
 }
 
-.ability-usage--other {
-  background: #4527a0 !important;
+.archmage-v2 .rollable--init {
+    font-family: "PT Serif", serif;
 }
 
-.archmage.sheet,
-.archmage.actor-sheet .primary-attributes .attribute .attribute-value,
-.archmage .abilities .ability .ability-score > input,
-.archmage .abilities .ability .ability-lvl,
-.archmage-escalation {
-  font-family: "PT Serif", serif !important;
+.archmage-v2 .section--tabs .tab-link {
+    font-family: "PT Serif", serif;
+}
+
+.archmage-v2 .resource .resource-max {
+    font-family: "PT Serif", serif;
+}
+
+.archmage-v2.sheet .character-header input[type="text"],
+.archmage-v2.sheet .character-header input[type="number"] {
+    font-family: "PT Serif", serif;
+}
+
+.archmage-v2.sheet .section--abilities .ability-name {
+    font-family: "PT Serif", serif;
+}
+
+.archmage-v2.sheet .section--abilities .ability-mod,
+.archmage-v2.sheet .section--abilities .ability-lvl {
+    font-family: "PT Serif", serif;
+}
+
+.archmage-v2.sheet .section--attributes .unit--defenses .defense-value {
+    font-family: "PT Serif", serif;
+}
+
+.archmage-v2.sheet .section--attributes .unit--defenses .unit-subtitle {
+    font-family: "PT Serif", serif;
+}
+
+.archmage-v2.sheet .section--resources input.resource-title-input {
+    font-family: "PT Serif", serif;
+}
+
+.archmage-v2.sheet .section--powers .power-grid .power-name {
+    font-family: "PT Serif", serif;
+}
+
+.archmage-v2.sheet .section--powers .power-summary--trigger .power-trigger {
+    font-family: "PT Serif", serif;
+}
+
+.archmage-v2.sheet .section--inventory .equipment-grid .equipment-name {
+    font-family: "PT Serif", serif;
+}
+
+.archmage-v2 .rollable {
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+}
+
+.nodesto {
+    font-family: "PT Serif", serif;
+}
+
+#chat-log .card-header {
+    font-family: "PT Serif", serif;
+}
+
+#chat-log .message {
+    font-family: "PT Serif", serif;
+}
+
+.archmage.sheet {
+    font-family: "PT Serif", serif;
 }
 
 .archmage.sheet h1,
 .archmage.sheet h2,
 .archmage.sheet h3,
-.archmage.sheet h4,
-.archmage.actor-sheet .sheet-header .charname > input,
-.archmage.actor-sheet .sheet-header .charlevel .level,
-.archmage.actor-sheet .details .character-detail .attribute-label,
-.archmage.actor-sheet .primary-attributes .attribute .attribute-name,
-.archmage.actor-sheet .statuses .status h4,
-.class-list .item .class-levels,
-.class-header h3,
-.archmage .abilities .ability-name,
-.archmage .abilities .ability-header,
-.archmage.actor-sheet .details .character-detail > input,
-.archmage-escalation::after,
-.archmage.actor-sheet.npc-sheet .charlevel .initiative,
-.class-list .item .class-name,
+.archmage.sheet h4 {
+    font-family: "PT Serif", serif;
+}
+
+.archmage.actor-sheet .sheet-header .charname>input {
+    font-family: "PT Serif", serif;
+}
+
+.archmage.actor-sheet .sheet-header .charlevel .level {
+    font-family: "PT Serif", serif;
+}
+
+.archmage.actor-sheet .details .character-detail>input,
 .archmage.actor-sheet .details .character-detail .attribute-label {
-  font-family: "PT Serif", serif !important;
+    font-family: "PT Serif", serif;
 }
 
-.inventory-list .item .item-action--standard::before {
-  content: "Обыч";
+.archmage.actor-sheet .primary-attributes .attribute .attribute-name {
+    font-family: "PT Serif", serif;
 }
 
-.inventory-list .item .item-action--move::before {
-  content: "Движ";
+.archmage.actor-sheet .primary-attributes .attribute .attribute-display,
+.archmage.actor-sheet .primary-attributes .attribute .attribute-value {
+    font-family: "PT Serif", serif;
 }
 
-.inventory-list .item .item-action--quick::before {
-  content: "Быст";
+.archmage.actor-sheet .primary-attributes .attribute .attribute-value {
+    font-family: "PT Serif", serif;
 }
 
-.inventory-list .item .item-action--free::before {
-  content: "Своб";
+.archmage.actor-sheet .statuses .status h4 {
+    font-family: "PT Serif", serif;
+}
+
+.archmage .abilities .ability-name,
+.archmage .abilities .ability-header {
+    font-family: "PT Serif", serif;
+}
+
+.archmage .abilities .ability .ability-score>input {
+    font-family: "PT Serif", serif;
+}
+
+.archmage .abilities .ability .ability-mod,
+.archmage .abilities .ability .ability-lvl {
+    font-family: "PT Serif", serif;
+}
+
+.class-header h3 {
+    color: #333;
+    font-family: "PT Serif", serif;
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+}
+
+.class-list .item .class-levels {
+    font-family: "PT Serif", serif;
+}
+
+.class-list .item .class-name {
+    font-family: "PT Serif", serif;
+}
+
+.archmage.sheet.actor-sheet .textarea {
+    font-family: "PT Serif", serif;
+}
+
+.archmage.actor-sheet.npc-sheet .charlevel .initiative {
+    font-family: "PT Serif", serif;
+}
+
+.archmage-escalation {
+    font-family: "PT Serif", serif;
+}
+
+.archmage-escalation::after {
+    content: "Кость эскалации";
+    font-family: "PT Serif", serif;
+}
+
+.compendium .directory-list--archmage h3.entry-group {
+    font-family: "PT Serif", serif;
+}
+
+.compendium .directory-list--archmage .directory-item {
+    font-family: "PT Serif", serif;
+}
+
+.compendium .directory-list--archmage .directory-item h4.entry-name a {
+    font-family: "PT Serif", serif;
+}
+
+.archmage-prepopulate button.cancel,
+.archmage-prepopulate button.submit {
+    font-family: "Oswald", sans-serif;
+}
+
+.archmage-prepopulate-tabs .tabs>.item {
+    font-family: "Oswald", sans-serif;
+}
+
+table {
+    font-family: "PT Serif", serif;
 }
