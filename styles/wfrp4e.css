@@ -543,3 +543,31 @@ input[type="password"] {
 .tabs .item {
     font-family: "Manuskript", serif;
 }
+
+.app.window-app.sheet.wfrp4e.actor.character-sheet .tab.main.active .characteristics-table .row-type.table-data {
+    padding: 5px 0px 0px 0px;
+    max-width: 14%;
+    min-width: max(80px, 14%);
+}
+
+.app.window-app.sheet.wfrp4e.actor.character-sheet .tab.main.active .characteristics-table .table-header.table-row .table-header:first-of-type {
+    max-width: 14%;
+    min-width: max(80px, 14%);
+}
+
+.wfrp4e.actor.vehicle-sheet .tab.cargo .encumbrance-header .encumbrance-label,
+.wfrp4e .tab.inventory.active .encumbrance-header .encumbrance-label,
+.wfrp4e.actor.vehicle-sheet .tab.cargo .encumbrance-header .encumbrance-max,
+.wfrp4e .tab.inventory.active .encumbrance-header .encumbrance-max {
+    padding: 0px;
+    padding-top: 0px;
+}
+
+h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.app.window-app.sheet.item-sheet.skill-sheet .label-text {
+    width: 80px;
+}
