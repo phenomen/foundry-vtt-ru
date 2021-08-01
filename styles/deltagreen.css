@@ -1,61 +1,83 @@
 .window-app .window-content {
-  background: url(images/dg.jpg);
+  background: url(images/dg.jpg) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
 
-.typewriter-condensed-font{
+.typewriter-condensed-font {
   font-family: "Oswald", sans-serif !important;
 }
 
-.martel-font{
+.martel-font {
   font-family: "PT Serif", sans-serif !important;
 }
 
-.signika-font{
+.signika-font {
   font-family: "Oswald", sans-serif !important;
 }
 
-.atwriter-font{
+.atwriter-font {
   font-family: "Roboto", sans-serif !important;
 }
 
-.special-elite-font{
+.special-elite-font {
   font-family: "Oswald", sans-serif !important;
 }
 
 .bio-grid-5col {
-  grid-template-columns: 100px 150px 50px 50px auto;
+  grid-template-columns: 100px 150px 50px 50px auto !important;
 }
 
 .breaking-point-grid-3col {
-  grid-template-columns: 150px 70px 65px;
+  grid-template-columns: 150px 70px 65px !important;
 }
 
 .app .window-app .deltagreen .sheet .actor {
-  width: 640px;
+  width: 640px !important;
 }
 
 .flex-group-center,
 .flex-group-left,
 .flex-group-right {
-  border: 1px solid #000;
+  border: 1px solid #000 !important;
 }
 
 .breaking-point-grid-3col {
-  border-top: 1px solid #000;
+  border-top: 1px solid #000 !important;
 }
 
 .deltagreen .items-list .item {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000 !important;
 }
 
 .bonds-section-header {
-  border-top: 1px solid #000;
+  border-top: 1px solid #000 !important;
 }
 
 .bio-grid-top-border {
-    border-top: 1px solid #000;
+  border-top: 1px solid #000 !important;
 }
 
-.chat-message .message-header .flavor-text, .chat-message .message-header .whisper-to {
-    font-size: 13px;
+.chat-message .message-header .flavor-text,
+.chat-message .message-header .whisper-to {
+  font-size: 13px !important;
+}
+
+.deltagreen .skill-label:hover {
+  color: #21641f !important;
+  text-shadow: none !important;
+}
+
+.not-rollable  {
+  color: #808080 !important;
+  text-shadow: none !important;
+}
+
+.deltagreen .not-rollable:hover {
+  color: #808080 !important;
+  text-shadow: none !important;
+}
+
+.deltagreen .tabs .item.active {
+  color: #21641f !important;
 }
