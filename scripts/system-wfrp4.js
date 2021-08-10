@@ -17,209 +17,208 @@ export function InitWFRP4() {
             }
         });
 
-        if (game.system.id === "wfrp4e") {
-            Babele.get().register({
-                module: "ru-ru",
-                lang: "ru",
-                dir: "compendium/wfrp4e",
-            });
+        Babele.get().register({
+            module: "ru-ru",
+            lang: "ru",
+            dir: "compendium/wfrp4e",
+        });
 
-            Babele.get().registerConverters({
-                talent_effects: (
-                    effects,
-                    translations,
-                    data,
-                    translatedCompendium,
-                    translatedTalent
-                ) => {
-                    if (effects) {
-                        return effects.map((effect) => {
-                            effect.label = translatedTalent.name;
-                            return effect;
-                        });
+        Babele.get().registerConverters({
+            talent_effects: (
+                effects,
+                translations,
+                data,
+                translatedCompendium,
+                translatedTalent
+            ) => {
+                if (effects) {
+                    return effects.map((effect) => {
+                        effect.label = translatedTalent.name;
+                        return effect;
+                    });
+                }
+            },
+            npc_characteristics: (chars) => {
+                for (let key in chars) {
+                    let char = chars[key];
+                    let abrev = char.abrev;
+
+                    // Some of NPCs have localization keys in their characteristics, meanwhile others don't
+                    // This will patch NPCs that don't utilize translation keys
+                    if (!abrev.includes("CHARAbbrev.")) {
+                        char.label = "CHAR." + abrev;
+                        char.abrev = "CHARAbbrev." + abrev;
                     }
-                },
-                npc_characteristics: (chars) => {
-                    for (let key in chars) {
-                        let char = chars[key];
-                        let abrev = char.abrev;
+                }
 
-                        // Some of NPCs have localization keys in their characteristics, meanwhile others don't
-                        // This will patch NPCs that don't utilize translation keys
-                        if (!abrev.includes("CHARAbbrev.")) {
-                            char.label = "CHAR." + abrev;
-                            char.abrev = "CHARAbbrev." + abrev;
+                return chars;
+            },
+            npc_traits: (npcTraits) => {
+                if (!npcTraits) {
+                    return;
+                }
+
+                const fullTraits = game.packs.get("wfrp4e-core.traits") || {};
+                const fullSkills = game.packs.get(
+                    compendium === "wfrp4e" ? "wfrp4e.basic" : "wfrp4e-core.skills"
+                );
+                const fullTalents = game.packs.get("wfrp4e-core.talents") || {};
+                const fullCareers = game.packs.get("wfrp4e-core.careers") || {};
+                const fullTrappings = game.packs.get(
+                    compendium === "wfrp4e" ? "wfrp4e.basic" : "wfrp4e-core.trappings"
+                );
+                const fullSpells = game.packs.get("wfrp4e-core.spells") || {};
+                const fullPrayers = game.packs.get("wfrp4e-core.prayers") || {};
+
+                for (let originalTrait of npcTraits) {
+                    let parsedTrait = parseTraitName(originalTrait.name);
+
+                    if (originalTrait.type === "trait" && fullTraits.index) {
+                        let translatedTrait = fullTraits.index.find(
+                            (trait) => trait.originalName === parsedTrait.baseName
+                        );
+                        if (!translatedTrait) {
+                            continue;
                         }
-                    }
 
-                    return chars;
-                },
-                npc_traits: (npcTraits) => {
-                    if (!npcTraits) {
-                        return;
-                    }
-
-                    const fullTraits = game.packs.get("wfrp4e-core.traits") || {};
-                    const fullSkills = game.packs.get(
-                        compendium === "wfrp4e" ? "wfrp4e.basic" : "wfrp4e-core.skills"
-                    );
-                    const fullTalents = game.packs.get("wfrp4e-core.talents") || {};
-                    const fullCareers = game.packs.get("wfrp4e-core.careers") || {};
-                    const fullTrappings = game.packs.get(
-                        compendium === "wfrp4e" ? "wfrp4e.basic" : "wfrp4e-core.trappings"
-                    );
-                    const fullSpells = game.packs.get("wfrp4e-core.spells") || {};
-                    const fullPrayers = game.packs.get("wfrp4e-core.prayers") || {};
-
-                    for (let originalTrait of npcTraits) {
-                        let parsedTrait = parseTraitName(originalTrait.name);
-
-                        if (originalTrait.type === "trait" && fullTraits.index) {
-                            let translatedTrait = fullTraits.index.find(
-                                (trait) => trait.originalName === parsedTrait.baseName
+                        originalTrait.name = translatedTrait.name + parsedTrait.special;
+                        if (typeof originalTrait.type !== "undefined") {
+                            originalTrait.name = originalTrait.name.replace(
+                                "#",
+                                parsedTrait.tentacles
                             );
-                            if (!translatedTrait) {
-                                continue;
-                            }
-
-                            originalTrait.name = translatedTrait.name + parsedTrait.special;
-                            if (typeof originalTrait.type !== "undefined") {
-                                originalTrait.name = originalTrait.name.replace(
-                                    "#",
-                                    parsedTrait.tentacles
-                                );
-                            }
-                            if (
-                                translatedTrait.data &&
-                                translatedTrait.data.description &&
-                                translatedTrait.data.description.value
-                            ) {
-                                originalTrait.data.description.value =
-                                    translatedTrait.data.description.value;
-                            }
-
-                            if (isNaN(originalTrait.data.specification.value)) {
-                                // This is a string, so translate it
-                                let specificationKey =
-                                    "SPEC." + originalTrait.data.specification.value.trim();
-                                let specification = game.i18n.localize(
-                                    "SPEC." + originalTrait.data.specification.value.trim()
-                                );
-                                specification =
-                                    specification !== specificationKey ?
-                                    specification :
-                                    originalTrait.data.specification.value.trim();
-
-                                originalTrait.data.specification.value = specification;
-                            }
-                        } else if (originalTrait.type === "skill" && fullSkills.index) {
-                            let translatedSkill = translateSkill(parsedTrait, fullSkills);
-
-                            if (translatedSkill) {
-                                originalTrait.name = translatedSkill.name.replace(
-                                    / \( ?\)/,
-                                    parsedTrait.special
-                                );
-                                originalTrait.data.description.value =
-                                    translatedSkill.data.description.value;
-                            }
-                        } else if (originalTrait.type === "prayer" && fullPrayers.index) {
-                            let translatedTrait = fullPrayers.index.find(
-                                (prayer) => prayer.originalName === parsedTrait.baseName
-                            );
-                            originalTrait.name = translatedTrait.name + parsedTrait.special;
-
-                            if (
-                                translatedTrait.data &&
-                                translatedTrait.data.description &&
-                                translatedTrait.data.description.value
-                            )
-                                originalTrait.data.description.value =
-                                translatedTrait.data.description.value;
-                        } else if (originalTrait.type === "spell" && fullSpells.index) {
-                            let translatedTrait = fullSpells.index.find(
-                                (spell) => spell.originalName === parsedTrait.baseName
-                            );
-                            originalTrait.name = translatedTrait.name + parsedTrait.special;
-
-                            if (
-                                translatedTrait.data &&
-                                translatedTrait.data.description &&
-                                translatedTrait.data.description.value
-                            )
-                                originalTrait.data.description.value =
-                                translatedTrait.data.description.value;
-                        } else if (originalTrait.type === "talent" && fullTalents.index) {
-                            let translatedTrait = fullTalents.index.find(
-                                (talent) => talent.originalName === parsedTrait.baseName
-                            );
-
-                            if (translatedTrait) {
-                                originalTrait.name = translatedTrait.name + parsedTrait.special;
-                                originalTrait.data.description.value =
-                                    translatedTrait.data.description.value;
-                                originalTrait.data.tests = translatedTrait.data.tests;
-                            }
-                        } else if (originalTrait.type === "career" && fullCareers.index) {
-                            originalTrait = fullCareers.index.find(
-                                (career) => career.originalName === originalTrait.name
-                            );
-                        } else if (
-                            originalTrait.type === "trapping" ||
-                            originalTrait.type === "weapon" ||
-                            originalTrait.type === "armour" ||
-                            originalTrait.type === "container" ||
-                            (originalTrait.type === "money" && fullTrappings.index)
+                        }
+                        if (
+                            translatedTrait.data &&
+                            translatedTrait.data.description &&
+                            translatedTrait.data.description.value
                         ) {
-                            let translatedTrapping = fullTrappings.index.find(
-                                (trapping) => trapping.originalName === originalTrait.name
-                            );
-                            if (!translatedTrapping) {
-                                continue;
-                            }
-
-                            originalTrait.name = translatedTrapping.name;
-                            originalTrait.data.description =
-                                translatedTrapping.data?.description;
+                            originalTrait.data.description.value =
+                                translatedTrait.data.description.value;
                         }
-                    }
-                    return npcTraits;
-                },
-                skills: (skills) => {
-                    const fullSkills = game.packs.get(
-                        compendium === "wfrp4e" ? "wfrp4e.basic" : "wfrp4e-core.skills"
-                    );
-                    return skills.map((skill) => {
-                        let parsedSkill = parseTraitName(skill);
-                        let translatedSkill = translateSkill(parsedSkill, fullSkills);
+
+                        if (isNaN(originalTrait.data.specification.value)) {
+                            // This is a string, so translate it
+                            let specificationKey =
+                                "SPEC." + originalTrait.data.specification.value.trim();
+                            let specification = game.i18n.localize(
+                                "SPEC." + originalTrait.data.specification.value.trim()
+                            );
+                            specification =
+                                specification !== specificationKey ?
+                                specification :
+                                originalTrait.data.specification.value.trim();
+
+                            originalTrait.data.specification.value = specification;
+                        }
+                    } else if (originalTrait.type === "skill" && fullSkills.index) {
+                        let translatedSkill = translateSkill(parsedTrait, fullSkills);
 
                         if (translatedSkill) {
-                            return translatedSkill.name.replace(
+                            originalTrait.name = translatedSkill.name.replace(
                                 / \( ?\)/,
-                                parsedSkill.special
+                                parsedTrait.special
                             );
+                            originalTrait.data.description.value =
+                                translatedSkill.data.description.value;
                         }
+                    } else if (originalTrait.type === "prayer" && fullPrayers.index) {
+                        let translatedTrait = fullPrayers.index.find(
+                            (prayer) => prayer.originalName === parsedTrait.baseName
+                        );
+                        originalTrait.name = translatedTrait.name + parsedTrait.special;
 
-                        return skill;
-                    });
-                },
-                talents: (talents) => {
-                    const fullTalents = game.packs.get("wfrp4e-core.talents");
-                    return talents.map((talent) => {
-                        let parsedTalent = parseTraitName(talent);
-                        let translatedTalent = fullTalents.index.find(
-                            (talent) => talent.originalName === parsedTalent.baseName
+                        if (
+                            translatedTrait.data &&
+                            translatedTrait.data.description &&
+                            translatedTrait.data.description.value
+                        )
+                            originalTrait.data.description.value =
+                            translatedTrait.data.description.value;
+                    } else if (originalTrait.type === "spell" && fullSpells.index) {
+                        let translatedTrait = fullSpells.index.find(
+                            (spell) => spell.originalName === parsedTrait.baseName
+                        );
+                        originalTrait.name = translatedTrait.name + parsedTrait.special;
+
+                        if (
+                            translatedTrait.data &&
+                            translatedTrait.data.description &&
+                            translatedTrait.data.description.value
+                        )
+                            originalTrait.data.description.value =
+                            translatedTrait.data.description.value;
+                    } else if (originalTrait.type === "talent" && fullTalents.index) {
+                        let translatedTrait = fullTalents.index.find(
+                            (talent) => talent.originalName === parsedTrait.baseName
                         );
 
-                        if (translatedTalent) {
-                            return translatedTalent.name + parsedTalent.special;
+                        if (translatedTrait) {
+                            originalTrait.name = translatedTrait.name + parsedTrait.special;
+                            originalTrait.data.description.value =
+                                translatedTrait.data.description.value;
+                            originalTrait.data.tests = translatedTrait.data.tests;
+                        }
+                    } else if (originalTrait.type === "career" && fullCareers.index) {
+                        originalTrait = fullCareers.index.find(
+                            (career) => career.originalName === originalTrait.name
+                        );
+                    } else if (
+                        originalTrait.type === "trapping" ||
+                        originalTrait.type === "weapon" ||
+                        originalTrait.type === "armour" ||
+                        originalTrait.type === "container" ||
+                        (originalTrait.type === "money" && fullTrappings.index)
+                    ) {
+                        let translatedTrapping = fullTrappings.index.find(
+                            (trapping) => trapping.originalName === originalTrait.name
+                        );
+                        if (!translatedTrapping) {
+                            continue;
                         }
 
-                        return talent;
-                    });
-                },
-            });
-        }
+                        originalTrait.name = translatedTrapping.name;
+                        originalTrait.data.description =
+                            translatedTrapping.data ?.description;
+                    }
+                }
+                return npcTraits;
+            },
+            skills: (skills) => {
+                const fullSkills = game.packs.get(
+                    compendium === "wfrp4e" ? "wfrp4e.basic" : "wfrp4e-core.skills"
+                );
+                return skills.map((skill) => {
+                    let parsedSkill = parseTraitName(skill);
+                    let translatedSkill = translateSkill(parsedSkill, fullSkills);
+
+                    if (translatedSkill) {
+                        return translatedSkill.name.replace(
+                            / \( ?\)/,
+                            parsedSkill.special
+                        );
+                    }
+
+                    return skill;
+                });
+            },
+            talents: (talents) => {
+                const fullTalents = game.packs.get("wfrp4e-core.talents");
+                return talents.map((talent) => {
+                    let parsedTalent = parseTraitName(talent);
+                    let translatedTalent = fullTalents.index.find(
+                        (talent) => talent.originalName === parsedTalent.baseName
+                    );
+
+                    if (translatedTalent) {
+                        return translatedTalent.name + parsedTalent.special;
+                    }
+
+                    return talent;
+                });
+            },
+        });
+
 
         function translateSkill(parsedSkill, fullSkills) {
             if (parsedSkill.special) {
