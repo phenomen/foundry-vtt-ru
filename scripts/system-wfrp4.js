@@ -59,7 +59,7 @@ export function InitWFRP4() {
                 }
 
                 const fullTraits = game.packs.get("wfrp4e-core.traits") || {};
-                const fullSkills = game.packs.get(
+                const fullSkills = game.babele.packs.get(
                     compendium === "wfrp4e" ? "wfrp4e.basic" : "wfrp4e-core.skills"
                 );
                 const fullTalents = game.packs.get("wfrp4e-core.talents") || {};
@@ -111,7 +111,7 @@ export function InitWFRP4() {
 
                             originalTrait.data.specification.value = specification;
                         }
-                    } else if (originalTrait.type === "skill" && fullSkills.index) {
+                    } else if (originalTrait.type === "skill") {
                         let translatedSkill = translateSkill(parsedTrait, fullSkills);
 
                         if (translatedSkill) {
@@ -120,7 +120,7 @@ export function InitWFRP4() {
                                 parsedTrait.special
                             );
                             originalTrait.data.description.value =
-                                translatedSkill.data.description.value;
+                                translatedSkill.description;
                         }
                     } else if (originalTrait.type === "prayer" && fullPrayers.index) {
                         let translatedTrait = fullPrayers.index.find(
@@ -185,7 +185,7 @@ export function InitWFRP4() {
                 return npcTraits;
             },
             skills: (skills) => {
-                const fullSkills = game.packs.get(
+                const fullSkills = game.babele.packs.get(
                     compendium === "wfrp4e" ? "wfrp4e.basic" : "wfrp4e-core.skills"
                 );
                 return skills.map((skill) => {
@@ -222,25 +222,19 @@ export function InitWFRP4() {
 
         function translateSkill(parsedSkill, fullSkills) {
             if (parsedSkill.special) {
-                let translatedSkill = fullSkills.index.find(
-                    (skill) =>
-                    skill.originalName === parsedSkill.baseName + parsedSkill.special
-                );
+                let translatedSkill = fullSkills.translations[parsedSkill.baseName 
+                        + parsedSkill.special]
+
                 if (translatedSkill) {
                     return translatedSkill;
                 }
             }
 
-            return (
-                fullSkills.index.find(
-                    (skill) => skill.originalName === parsedSkill.baseName
-                ) ||
-                fullSkills.index.find((skill) =>
-                    skill.originalName.match(
-                        new RegExp(parsedSkill.baseName + " \\( ?\\)")
-                    )
-                )
-            );
+            return [
+                fullSkills.translations[parsedSkill.baseName],
+                fullSkills.translations[parsedSkill.baseName + " ( )"],
+                fullSkills.translations[parsedSkill.baseName + " ()"]
+            ].find(skill => skill !== undefined);
         }
 
         function parseTraitName(traitName) {
