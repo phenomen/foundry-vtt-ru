@@ -1,4 +1,5 @@
 export function InitWFRP4() {
+    
     if (typeof Babele === "undefined") {
         new Dialog({
             title: "Перевод библиотек",
