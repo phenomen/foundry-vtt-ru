@@ -537,8 +537,8 @@ export function InitWFRP4() {
                 nausea: "Тошнота",
                 pox: "Сыпь",
                 wounded: "Незаживающая рана",
-                delirium: "Delirium",
-                swelling: "Swelling",
+                delirium: "Бред",
+                swelling: "Вздутие",
             };
 
             for (let obj in WFRP4E) {
