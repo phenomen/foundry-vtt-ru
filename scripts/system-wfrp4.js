@@ -179,7 +179,7 @@ export function InitWFRP4() {
 
                         originalTrait.name = translatedTrapping.name;
                         originalTrait.data.description =
-                            translatedTrapping.data ?.description;
+                            translatedTrapping.data?.description;
                     }
                 }
                 return npcTraits;
@@ -193,10 +193,7 @@ export function InitWFRP4() {
                     let translatedSkill = translateSkill(parsedSkill, fullSkills);
 
                     if (translatedSkill) {
-                        return translatedSkill.name.replace(
-                            / \( ?\)/,
-                            parsedSkill.special
-                        );
+                        return translatedSkill.name.replace(/ \( ?\)/, parsedSkill.special);
                     }
 
                     return skill;
@@ -219,11 +216,10 @@ export function InitWFRP4() {
             },
         });
 
-
         function translateSkill(parsedSkill, fullSkills) {
             if (parsedSkill.special) {
-                let translatedSkill = fullSkills.translations[parsedSkill.baseName 
-                        + parsedSkill.special]
+                let translatedSkill =
+                    fullSkills.translations[parsedSkill.baseName + parsedSkill.special];
 
                 if (translatedSkill) {
                     return translatedSkill;
@@ -233,8 +229,8 @@ export function InitWFRP4() {
             return [
                 fullSkills.translations[parsedSkill.baseName],
                 fullSkills.translations[parsedSkill.baseName + " ( )"],
-                fullSkills.translations[parsedSkill.baseName + " ()"]
-            ].find(skill => skill !== undefined);
+                fullSkills.translations[parsedSkill.baseName + " ()"],
+            ].find((skill) => skill !== undefined);
         }
 
         function parseTraitName(traitName) {
