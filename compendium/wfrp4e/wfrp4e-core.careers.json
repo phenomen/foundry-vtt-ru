@@ -10,8 +10,7 @@
 		"talents": {
 			"path": "data.talents",
 			"converter": "talents"
-		},
-		"trappings": "data.trappings"
+		}
 	},
 	"entries": [
 		{
@@ -24,1412 +23,2043 @@
 		},
 		{
 			"id": "Advisor",
-			"name": "Advisor",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.J8ejrXE0zWMjNsZd]{Advisor}</p>"
+			"name": "Советник",
+			"class": "Придворный",
+			"careerGroup": "Советник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.J8ejrXE0zWMjNsZd]{Советник}</p>",
+			"trappings": "ливрея"
 		},
 		{
 			"id": "Agent",
-			"name": "Agent",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.dWLxT0zRnDFbwTKZ]{Spy}</p>"
+			"name": "Агент",
+			"class": "Придворный",
+			"careerGroup": "Шпион",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.dWLxT0zRnDFbwTKZ]{Шпион}</p>",
+			"trappings": "голубятня с почтовыми голубями, книга (криптография), писчий набор, сеть шпионов и осведомителей"
 		},
 		{
 			"id": "Agitator",
 			"name": "Агитатор",
 			"class": "Бюргер",
 			"careerGroup": "Агитатор",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.yDGBs92ko6rUyoTe]{Агитатор}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.yDGBs92ko6rUyoTe]{Агитатор}</p>",
+			"trappings": "кожаная куртка"
 		},
 		{
 			"id": "Aide",
-			"name": "Aide",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.J8ejrXE0zWMjNsZd]{Advisor}</p>"
+			"name": "Секретарь",
+			"class": "Придворный",
+			"careerGroup": "Советник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.J8ejrXE0zWMjNsZd]{Советник}</p>",
+			"trappings": "писчий набор"
 		},
 		{
 			"id": "Ambassador",
-			"name": "Ambassador",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.B0zxjP3KbZag5Y79]{Envoy}</p>"
+			"name": "Посол",
+			"class": "Придворный",
+			"careerGroup": "Эмиссар",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.B0zxjP3KbZag5Y79]{Эмиссар}</p>",
+			"trappings": "великолепный придворный наряд, герольд, секретари, штат дипломатов"
 		},
 		{
 			"id": "Apothecary",
-			"name": "Apothecary",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.FW2VeYf0vUUFbVE6]{Apothecary}</p>"
+			"name": "Аптекарь",
+			"class": "Книгочей",
+			"careerGroup": "Аптекарь",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.FW2VeYf0vUUFbVE6]{Аптекарь}</p>",
+			"trappings": "лицензия Гильдии Аптекарей, рабочие инструменты (аптекарь)"
 		},
 		{
 			"id": "Apothecary's Apprentice",
-			"name": "Apothecary's Apprentice",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.FW2VeYf0vUUFbVE6]{Apothecary}</p>"
+			"name": "Подмастерье аптекаря",
+			"class": "Книгочей",
+			"careerGroup": "Аптекарь",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.FW2VeYf0vUUFbVE6]{Аптекарь}</p>",
+			"trappings": "книга (пустая), кожаная жилетка, ступка и пестик, целебное снадобье"
 		},
 		{
 			"id": "Apothecary-General",
-			"name": "Apothecary-General",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.FW2VeYf0vUUFbVE6]{Apothecary}</p>"
+			"name": "Провизор",
+			"class": "Книгочей",
+			"careerGroup": "Аптекарь",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.FW2VeYf0vUUFbVE6]{Аптекарь}</p>",
+			"trappings": "провизорский патент, большая мастерская (аптекарь)"
 		},
 		{
 			"id": "Apprentice Artisan",
 			"name": "Подмастерье ремесленника",
 			"class": "Бюргер",
 			"careerGroup": "Ремесленник",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.AlriWm9KtKnDAMw1]{Ремесленник}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.AlriWm9KtKnDAMw1]{Ремесленник}</p>",
+			"trappings": "кожаная жилетка, кусок мела, d10 ветошей"
 		},
 		{
 			"id": "Apprentice Artist",
-			"name": "Apprentice Artist",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.rjUjdQrWHWazjkRC]{Ремесленник}</p>"
+			"name": "Ученик художника",
+			"class": "Придворный",
+			"careerGroup": "Художник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.rjUjdQrWHWazjkRC]{Художник}</p>",
+			"trappings": "кисть, или резец, или писчее перо"
 		},
 		{
 			"id": "Artisan",
 			"name": "Ремесленник",
 			"class": "Бюргер",
 			"careerGroup": "Ремесленник",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.AlriWm9KtKnDAMw1]{Ремесленник}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.AlriWm9KtKnDAMw1]{Ремесленник}</p>",
+			"trappings": "лицензия ремесленной Гильдии, рабочие инструменты (любые)"
 		},
 		{
 			"id": "Artist",
-			"name": "Artist",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.rjUjdQrWHWazjkRC]{Artist}</p>"
+			"name": "Художник",
+			"class": "Придворный",
+			"careerGroup": "Художник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.rjUjdQrWHWazjkRC]{Художник}</p>",
+			"trappings": "наплечная сумка с рабочими инструментами (художник)"
 		},
 		{
 			"id": "Assassin",
 			"name": "Ассасин",
 			"class": "Воин",
 			"careerGroup": "Негодяй",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.mlLVNBKIUnonqka2]{Негодяй}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.mlLVNBKIUnonqka2]{Негодяй}</p>",
+			"trappings": "арбалет и 10 болтов, гримёрный набор"
 		},
 		{
 			"id": "Attendant",
-			"name": "Attendant",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.g12yhcU74qsRKxXX]{Servant}</p>"
+			"name": "Камердинер",
+			"class": "Придворный",
+			"careerGroup": "Слуга",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.g12yhcU74qsRKxXX]{Слуга}</p>",
+			"trappings": "отличная ливрея, масляный фонарь, огниво, ламповое масло"
 		},
 		{
 			"id": "Bailiff",
-			"name": "Bailiff",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.WbjmnVlyJ9VP2nt4]{Bailiff}</p>"
+			"name": "Бейлиф",
+			"class": "Крестьянин",
+			"careerGroup": "Бейлиф",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.WbjmnVlyJ9VP2nt4]{Бейлиф}</p>",
+			"trappings": "кожаная куртка, 3 мытаря"
 		},
 		{
 			"id": "Bandit King",
-			"name": "Bandit King",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.mOljt11dxZENtmoR]{Outlaw}</p>"
+			"name": "Король разбойников",
+			"class": "Шельма",
+			"careerGroup": "Разбойник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.mOljt11dxZENtmoR]{Разбойник}</p>",
+			"trappings": "логово, подчинённые атаманы разбойников"
 		},
 		{
 			"id": "Barge Master",
-			"name": "Barge Master",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.14nKRAT6nMCMGSUf]{Boatman}</p>"
+			"name": "Капитан баржи",
+			"class": "Речник",
+			"careerGroup": "Лодочник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.14nKRAT6nMCMGSUf]{Лодочник}</p>",
+			"trappings": "речная лодка или баржа, шляпа, экипаж"
 		},
 		{
 			"id": "Bargeswain",
-			"name": "Bargeswain",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.14nKRAT6nMCMGSUf]{Boatman}</p>"
+			"name": "Старшина",
+			"class": "Речник",
+			"careerGroup": "Лодочник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.14nKRAT6nMCMGSUf]{Лодочник}</p>",
+			"trappings": "рабочие инструменты (корабел), рюкзак"
 		},
 		{
 			"id": "Barrister",
-			"name": "Barrister",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.GhqPa2iwEdc4Dokc]{Lawyer}</p>"
+			"name": "Барристер",
+			"class": "Книгочей",
+			"careerGroup": "Законник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.GhqPa2iwEdc4Dokc]{Законник}</p>",
+			"trappings": "ассистент (студент-законник или слуга), рабочий кабинет"
 		},
 		{
 			"id": "Bawd",
-			"name": "Bawd",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.MY4aFbQL5T9znCUd]{Bawd}</p>"
+			"name": "Пройдоха",
+			"class": "Шельма",
+			"careerGroup": "Пройдоха",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.MY4aFbQL5T9znCUd]{Пройдоха}</p>",
+			"trappings": "доза чудного корня, отличная одежда"
 		},
 		{
 			"id": "Beggar",
 			"name": "Попрошайка",
 			"class": "Бюргер",
 			"careerGroup": "Попрошайка",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.djOQaw7iRfec9UEj]{Попрошайка}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.djOQaw7iRfec9UEj]{Попрошайка}</p>",
+			"trappings": "костыль, чаша"
 		},
 		{
 			"id": "Beggar King",
 			"name": "Король попрошаек",
 			"class": "Бюргер",
 			"careerGroup": "Попрошайка",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.djOQaw7iRfec9UEj]{Попрошайка}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.djOQaw7iRfec9UEj]{Попрошайка}</p>",
+			"trappings": "большая группа последователей-попрошаек, логово"
 		},
 		{
 			"id": "Black Marketeer",
-			"name": "Black Marketeer",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lbbddfm36XMb8SYg]{Fence}</p>"
+			"name": "Теневой воротила",
+			"class": "Шельма",
+			"careerGroup": "Скупщик краденого",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lbbddfm36XMb8SYg]{Скупщик краденого}</p>",
+			"trappings": "наёмные громилы, сеть осведомителей, склад"
 		},
 		{
 			"id": "Boat-hand",
-			"name": "Boat-hand",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.14nKRAT6nMCMGSUf]{Boatman}</p>"
+			"name": "Гребец",
+			"class": "Речник",
+			"careerGroup": "Лодочник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.14nKRAT6nMCMGSUf]{Лодочник}</p>",
+			"trappings": "кожаная куртка, ручное оружие (лодочный багор), шест"
 		},
 		{
 			"id": "Boatman",
-			"name": "Boatman",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.14nKRAT6nMCMGSUf]{Boatman}</p>"
+			"name": "Лодочник",
+			"class": "Речник",
+			"careerGroup": "Лодочник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.14nKRAT6nMCMGSUf]{Лодочник}</p>",
+			"trappings": "верёвка, гребная лодка"
 		},
 		{
 			"id": "Boatswain",
-			"name": "Boatswain",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.wu6aG1XPdzvpiLcR]{Seaman}</p>"
+			"name": "Боцман",
+			"class": "Речник",
+			"careerGroup": "Моряк",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.wu6aG1XPdzvpiLcR]{Моряк}</p>",
+			"trappings": "рабочие инструменты (плотник)"
 		},
 		{
 			"id": "Body Snatcher",
-			"name": "Body Snatcher",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.W2Ovj3ec7eqZUuuv]{Grave Robber}</p>"
+			"name": "Поставщик трупов",
+			"class": "Шельма",
+			"careerGroup": "Гробокопатель",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.W2Ovj3ec7eqZUuuv]{Гробокопатель}</p>",
+			"trappings": "кусок парусины, ломик, плащ с капюшоном, тачка"
 		},
 		{
 			"id": "Bounty Hunter",
-			"name": "Bounty Hunter",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.bsQN8B1mtZhl2WRu]{Bounty Hunter}</p>"
+			"name": "Охотник за головами",
+			"class": "Странник",
+			"careerGroup": "Охотник за головами",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.bsQN8B1mtZhl2WRu]{Охотник за головами}</p>",
+			"trappings": "арбалет и 10 болтов, кандалы, кожаная шапочка, ордера, сеть"
 		},
 		{
 			"id": "Bounty Hunter General",
-			"name": "Bounty Hunter General",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.bsQN8B1mtZhl2WRu]{Bounty Hunter}</p>"
+			"name": "Старший поимщик",
+			"class": "Странник",
+			"careerGroup": "Охотник за головами",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.bsQN8B1mtZhl2WRu]{Охотник за головами}</p>",
+			"trappings": "4 пары кандалов, повозка, упряжная лошадь"
 		},
 		{
 			"id": "Braggart",
 			"name": "Задира",
 			"class": "Воин",
 			"careerGroup": "Негодяй",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.mlLVNBKIUnonqka2]{Негодяй}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.mlLVNBKIUnonqka2]{Негодяй}</p>",
+			"trappings": "капюшон или маска, кастет, кожаная куртка"
 		},
 		{
 			"id": "Brigand",
-			"name": "Brigand",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.mOljt11dxZENtmoR]{Outlaw}</p>"
+			"name": "Грабитель",
+			"class": "Шельма",
+			"careerGroup": "Разбойник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.mOljt11dxZENtmoR]{Разбойник}</p>",
+			"trappings": "кожаная жилетка, огниво, ручное оружие, спальный мешок"
 		},
 		{
 			"id": "Broker",
-			"name": "Broker",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lbbddfm36XMb8SYg]{Fence}</p>"
+			"name": "Барышник",
+			"class": "Шельма",
+			"careerGroup": "Скупщик краденого",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lbbddfm36XMb8SYg]{Скупщик краденого}</p>",
+			"trappings": "краденые товары стоимостью 3d10 шиллингов, ручное оружие"
 		},
 		{
 			"id": "Burgomeister",
 			"name": "Бургомистр",
 			"class": "Бюргер",
 			"careerGroup": "Горожанин",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.uqdZBoLtuLv0bHVV]{Горожанин}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.uqdZBoLtuLv0bHVV]{Горожанин}</p>",
+			"trappings": "большой городской дом с садом и слугами, камердинер, отличная одежда, цепь бургомистра"
 		},
 		{
 			"id": "Busker",
-			"name": "Busker",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.b96g5MZr3rk5zYAo]{Entertainer}</p>"
+			"name": "Уличный артист",
+			"class": "Странник",
+			"careerGroup": "Артист",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.b96g5MZr3rk5zYAo]{Артист}</p>",
+			"trappings": "музыкальный инструмент, чаша"
 		},
 		{
 			"id": "Cargo Scavenger",
-			"name": "Cargo Scavenger",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.AnW8kwDb9koFgMPx]{Wrecker}</p>"
+			"name": "Мародёр",
+			"class": "Речник",
+			"careerGroup": "Побережник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.AnW8kwDb9koFgMPx]{Побережник}</p>",
+			"trappings": "большой мешок, кожаные перчатки, ломик"
 		},
 		{
 			"id": "Cat Burglar",
-			"name": "Cat Burglar",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.TgcyR0ZdG6bMOK9o]{Thief}</p>"
+			"name": "Взломщик",
+			"class": "Шельма",
+			"careerGroup": "Вор",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.TgcyR0ZdG6bMOK9o]{Вор}</p>",
+			"trappings": "капюшон или маска, крюк-кошка, тёмная одежда"
 		},
 		{
 			"id": "Cavalryman",
 			"name": "Кавалерист",
 			"class": "Воин",
 			"careerGroup": "Кавалерист",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.h9LHCAdlP4o55QvD]{Кавалерист}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.h9LHCAdlP4o55QvD]{Кавалерист}</p>",
+			"trappings": "боевой конь, кираса, пистолет и 10 зарядов, шлем, щит"
 		},
 		{
 			"id": "Chancellor",
-			"name": "Chancellor",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.J8ejrXE0zWMjNsZd]{Advisor}</p>"
+			"name": "Канцлер",
+			"class": "Придворный",
+			"careerGroup": "Советник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.J8ejrXE0zWMjNsZd]{Советник}</p>",
+			"trappings": "верховая лошадь, отличный придворный наряд, седло и сбруя, штат советников и секретарей"
 		},
 		{
 			"id": "Charlatan",
-			"name": "Charlatan",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.JTKAh4qCOCcPa2yN]{Charlatan}</p>"
+			"name": "Шарлатан",
+			"class": "Шельма",
+			"careerGroup": "Шарлатан",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.JTKAh4qCOCcPa2yN]{Шарлатан}</p>",
+			"trappings": "2 комплекта отличной одежды, множество безделушек и талисманов, множество склянок с цветными порошками и подкрашенной водой, официальный документ (поддельный)"
 		},
 		{
 			"id": "Chartered Engineer",
-			"name": "Chartered Engineer",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.c2n86bcUngGrHyO4]{Engineer}</p>"
+			"name": "Патентованный инженер",
+			"class": "Книгочей",
+			"careerGroup": "Инженер",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.c2n86bcUngGrHyO4]{Инженер}</p>",
+			"trappings": "библиотека (инженерное дело), большая мастерская (инженер), инженерский патент, отличные рабочие инструменты (инженер)"
 		},
 		{
 			"id": "Clerk",
 			"name": "Мелкая сошка",
 			"class": "Бюргер",
 			"careerGroup": "Горожанин",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.uqdZBoLtuLv0bHVV]{Горожанин}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.uqdZBoLtuLv0bHVV]{Горожанин}</p>",
+			"trappings": "крепкие башмаки, съёмная комната"
 		},
 		{
 			"id": "Coach Master",
-			"name": "Coach Master",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.BnA8KJuCw16zwOVC]{Coachman}</p>"
+			"name": "Хозяин дилижанса",
+			"class": "Странник",
+			"careerGroup": "Кучер",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.BnA8KJuCw16zwOVC]{Кучер}</p>",
+			"trappings": "дилижанс, лошади, кольчужная рубаха, отличный плащ, пистолет и 10 зарядов"
 		},
 		{
 			"id": "Coachman",
-			"name": "Coachman",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.BnA8KJuCw16zwOVC]{Coachman}</p>"
+			"name": "Кучер",
+			"class": "Странник",
+			"careerGroup": "Кучер",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.BnA8KJuCw16zwOVC]{Кучер}</p>",
+			"trappings": "кожаная куртка, кучерский рожок, мушкетон и 10 зарядов, шляпа"
 		},
 		{
 			"id": "Con Artist",
-			"name": "Con Artist",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.JTKAh4qCOCcPa2yN]{Charlatan}</p>"
+			"name": "Аферист",
+			"class": "Шельма",
+			"careerGroup": "Шарлатан",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.JTKAh4qCOCcPa2yN]{Шарлатан}</p>",
+			"trappings": "гримёрный набор, множество официальных документов (поддельных), набор отмычек"
 		},
 		{
 			"id": "Councilor",
-			"name": "Councilor",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.btrs5XFk2OQsCtqj]{Villager}</p>"
+			"name": "Член схода",
+			"class": "Крестьянин",
+			"careerGroup": "Селянин",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.btrs5XFk2OQsCtqj]{Селянин}</p>",
+			"trappings": "деревенский дом, мастерская, мул, повозка"
 		},
 		{
 			"id": "Counsellor",
-			"name": "Counsellor",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.J8ejrXE0zWMjNsZd]{Advisor}</p>"
+			"name": "Сановник",
+			"class": "Придворный",
+			"careerGroup": "Советник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.J8ejrXE0zWMjNsZd]{Советник}</p>",
+			"trappings": "отличная одежда, секретарь"
 		},
 		{
 			"id": "Courier",
-			"name": "Courier",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.8pk2uCvAMUAXWbcP]{Messenger}</p>"
+			"name": "Курьер",
+			"class": "Странник",
+			"careerGroup": "Посыльный",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.8pk2uCvAMUAXWbcP]{Посыльный}</p>",
+			"trappings": "перемётные сумки, рюкзак, щит"
 		},
 		{
 			"id": "Courier-Captain",
-			"name": "Courier-Captain",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.8pk2uCvAMUAXWbcP]{Messenger}</p>"
+			"name": "Капитан курьеров",
+			"class": "Странник",
+			"careerGroup": "Посыльный",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.8pk2uCvAMUAXWbcP]{Посыльный}</p>",
+			"trappings": "кольчужная рубаха, курьеры, писчий набор"
 		},
 		{
 			"id": "Court Physician",
-			"name": "Court Physician",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Ora8bmvHERjYWEQn]{Physician}</p>"
+			"name": "Придворный врач",
+			"class": "Книгочей",
+			"careerGroup": "Врач",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Ora8bmvHERjYWEQn]{Врач}</p>",
+			"trappings": "письмо о назначении, придворный наряд"
 		},
 		{
 			"id": "Crime Lord",
-			"name": "Crime Lord",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.yGZN7bMjbGH7kCMK]{Racketeer}</p>"
+			"name": "Король преступного мира",
+			"class": "Шельма",
+			"careerGroup": "Бандит",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.yGZN7bMjbGH7kCMK]{Бандит}</p>",
+			"trappings": "отличная одежда, отличная шляпа, подчинённые главари банд, сеть осведомителей"
 		},
 		{
 			"id": "Custodian",
-			"name": "Custodian",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.XUrZJ3f1xtarPihy]{Warden}</p>"
+			"name": "Сторож",
+			"class": "Придворный",
+			"careerGroup": "Смотритель",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.XUrZJ3f1xtarPihy]{Смотритель}</p>",
+			"trappings": "ключи, ламповое масло, ливрея, масляная лампа"
 		},
 		{
 			"id": "Daemon Slayer",
 			"name": "Убийца демонов",
 			"class": "Воин",
 			"careerGroup": "Убийца чудовищ",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.9p3DaFU5hMFP1C3v]{Убийца чудовищ}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.9p3DaFU5hMFP1C3v]{Убийца чудовищ}</p>",
+			"trappings": "голова дракона"
 		},
 		{
 			"id": "Demagogue",
 			"name": "Демагог",
 			"class": "Бюргер",
 			"careerGroup": "Агитатор",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.yDGBs92ko6rUyoTe]{Агитатор}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.yDGBs92ko6rUyoTe]{Агитатор}</p>",
+			"trappings": "внушительная шляпа, печатный станок, покровитель, трое памфлетистов"
 		},
 		{
 			"id": "Detective",
 			"name": "Детектив",
 			"class": "Бюргер",
 			"careerGroup": "Следователь",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.DAHJ4cu3WiGCdakE]{Следователь}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.DAHJ4cu3WiGCdakE]{Следователь}</p>",
+			"trappings": "зрительная труба, сеть осведомителей"
 		},
 		{
 			"id": "Diplomat",
-			"name": "Diplomat",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.B0zxjP3KbZag5Y79]{Envoy}</p>"
+			"name": "Дипломат",
+			"class": "Придворный",
+			"careerGroup": "Эмиссар",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.B0zxjP3KbZag5Y79]{Эмиссар}</p>",
+			"trappings": "карта, отличная одежда, секретарь"
 		},
 		{
 			"id": "Dock Master",
-			"name": "Dock Master",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lDvbNLRfv9MsNyf6]{Stevedore}</p>"
+			"name": "Докмейстер",
+			"class": "Речник",
+			"careerGroup": "Докер",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lDvbNLRfv9MsNyf6]{Докер}</p>",
+			"trappings": "контора с персоналом, писчий набор"
 		},
 		{
 			"id": "Dockhand",
-			"name": "Dockhand",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lDvbNLRfv9MsNyf6]{Stevedore}</p>"
+			"name": "Грузчик",
+			"class": "Речник",
+			"careerGroup": "Докер",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lDvbNLRfv9MsNyf6]{Докер}</p>",
+			"trappings": "кожаные перчатки, ручное оружие (лодочный багор)"
 		},
 		{
 			"id": "Doktor",
-			"name": "Doktor",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Ora8bmvHERjYWEQn]{Physician}</p>"
+			"name": "Доктор",
+			"class": "Книгочей",
+			"careerGroup": "Врач",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Ora8bmvHERjYWEQn]{Врач}</p>",
+			"trappings": "мастерская (врач), подмастерье"
 		},
 		{
 			"id": "Dragon Slayer",
 			"name": "Убийца драконов",
 			"class": "Воин",
 			"careerGroup": "Убийца чудовищ",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.9p3DaFU5hMFP1C3v]{Убийца чудовищ}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.9p3DaFU5hMFP1C3v]{Убийца чудовищ}</p>",
+			"trappings": "голова великана, метательные топорики"
 		},
 		{
 			"id": "Duellist",
-			"name": "Duellist",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.RNcsFphKVYohTrS9]{Duellist}</p>"
+			"name": "Дуэлянт",
+			"class": "Придворный",
+			"careerGroup": "Дуэлянт",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.RNcsFphKVYohTrS9]{Дуэлянт}</p>",
+			"trappings": "дага или мечелом, пистолет и 10 зарядов"
 		},
 		{
 			"id": "Duelmaster",
-			"name": "Duelmaster",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.RNcsFphKVYohTrS9]{Duellist}</p>"
+			"name": "Мастер-дуэлянт",
+			"class": "Придворный",
+			"careerGroup": "Дуэлянт",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.RNcsFphKVYohTrS9]{Дуэлянт}</p>",
+			"trappings": "2 деревянных тренировочных меча, доверенный секундант, отличная шпага, ручное оружие"
 		},
 		{
 			"id": "Engineer",
-			"name": "Engineer",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.c2n86bcUngGrHyO4]{Engineer}</p>"
+			"name": "Инженер",
+			"class": "Книгочей",
+			"careerGroup": "Инженер",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.c2n86bcUngGrHyO4]{Инженер}</p>",
+			"trappings": "лицензия Гильдии Инженеров, рабочие инструменты (инженер)"
 		},
 		{
 			"id": "Entertainer",
-			"name": "Entertainer",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.b96g5MZr3rk5zYAo]{Entertainer}</p>"
+			"name": "Артист",
+			"class": "Странник",
+			"careerGroup": "Артист",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.b96g5MZr3rk5zYAo]{Артист}</p>",
+			"trappings": "комплект метательного оружия, множество сценариев (которые персонаж пока не может прочесть), музыкальный инструмент, сценический костюм"
 		},
 		{
 			"id": "Envoy",
-			"name": "Envoy",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.B0zxjP3KbZag5Y79]{Envoy}</p>"
+			"name": "Эмиссар",
+			"class": "Придворный",
+			"careerGroup": "Эмиссар",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.B0zxjP3KbZag5Y79]{Эмиссар}</p>",
+			"trappings": "10 листов пергамента, писчий набор"
 		},
 		{
 			"id": "Explorer",
-			"name": "Explorer",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Xl9yyv67BB8a8XFo]{Scout}</p>"
+			"name": "Первооткрыватель",
+			"class": "Крестьянин",
+			"careerGroup": "Разведчик",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Xl9yyv67BB8a8XFo]{Разведчик}</p>",
+			"trappings": "множество карт, рабочие инструменты (картограф)"
 		},
 		{
 			"id": "Exterminator",
 			"name": "Изничтожитель",
 			"class": "Бюргер",
 			"careerGroup": "Крысолов",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.0DuRRCYdahOKxDPF]{Крысолов}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.0DuRRCYdahOKxDPF]{Крысолов}</p>",
+			"trappings": "большая и злобная собака, мешок с ядовитой приманкой (10 доз сердцебоя), помощник"
 		},
 		{
 			"id": "Fellow",
-			"name": "Fellow",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.cIBJfaY9DKJh5ZEM]{Scholar}</p>"
+			"name": "Академик",
+			"class": "Книгочей",
+			"careerGroup": "Учёный",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.cIBJfaY9DKJh5ZEM]{Учёный}</p>",
+			"trappings": "академическая мантия, академическая шапочка"
 		},
 		{
 			"id": "Fence",
-			"name": "Fence",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lbbddfm36XMb8SYg]{Fence}</p>"
+			"name": "Скупщик краденого",
+			"class": "Шельма",
+			"careerGroup": "Скупщик краденого",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lbbddfm36XMb8SYg]{Скупщик краденого}</p>",
+			"trappings": "увеличительное стекло, рабочие инструменты (гравёр), писчий набор"
 		},
 		{
 			"id": "Fencer",
-			"name": "Fencer",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.RNcsFphKVYohTrS9]{Duellist}</p>"
+			"name": "Фехтовальщик",
+			"class": "Придворный",
+			"careerGroup": "Дуэлянт",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.RNcsFphKVYohTrS9]{Дуэлянт}</p>",
+			"trappings": "наплечная сумка со сменной одеждой и 1d10 бинтами, ручное оружие или шпага"
 		},
 		{
 			"id": "First Knight",
 			"name": "Первый рыцарь",
 			"class": "Воин",
 			"careerGroup": "Рыцарь",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.n2VdkCPNNxdupjeQ]{Рыцарь}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.n2VdkCPNNxdupjeQ]{Рыцарь}</p>",
+			"trappings": "доспех для коня, небольшой отряд рыцарей"
 		},
 		{
 			"id": "Flagellant",
-			"name": "Flagellant",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Vtice54Y7PV95Dkp]{Flagellant}</p>"
+			"name": "Флагеллант",
+			"class": "Странник",
+			"careerGroup": "Флагеллант",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Vtice54Y7PV95Dkp]{Флагеллант}</p>",
+			"trappings": "праща, религиозный символ, табличка"
 		},
 		{
 			"id": "Foreman",
-			"name": "Foreman",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lDvbNLRfv9MsNyf6]{Stevedore}</p>"
+			"name": "Бригадир докеров",
+			"class": "Речник",
+			"careerGroup": "Докер",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lDvbNLRfv9MsNyf6]{Докер}</p>",
+			"trappings": "артель грузчиков, свисток"
 		},
 		{
 			"id": "Fortune Teller",
-			"name": "Fortune Teller",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.M9NiEgE7qaCXmskM]{Mystic}</p>"
+			"name": "Предсказатель",
+			"class": "Крестьянин",
+			"careerGroup": "Мистик",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.M9NiEgE7qaCXmskM]{Мистик}</p>",
+			"trappings": "дешёвые украшения, колода карт или игральные кости"
 		},
 		{
 			"id": "Gang Boss",
-			"name": "Gang Boss",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.yGZN7bMjbGH7kCMK]{Racketeer}</p>"
+			"name": "Главарь банды",
+			"class": "Шельма",
+			"careerGroup": "Бандит",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.yGZN7bMjbGH7kCMK]{Бандит}</p>",
+			"trappings": "шайка громил и бандитов, одноручный арбалет и 10 болтов"
 		},
 		{
 			"id": "Giant Slayer",
 			"name": "Убийца великанов",
 			"class": "Воин",
 			"careerGroup": "Убийца чудовищ",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.9p3DaFU5hMFP1C3v]{Убийца чудовищ}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.9p3DaFU5hMFP1C3v]{Убийца чудовищ}</p>",
+			"trappings": "голова тролля, двуручный топор, украшения"
 		},
 		{
 			"id": "Governor",
-			"name": "Governor",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.XUrZJ3f1xtarPihy]{Warden}</p>"
+			"name": "Губернатор",
+			"class": "Придворный",
+			"careerGroup": "Смотритель",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.XUrZJ3f1xtarPihy]{Смотритель}</p>",
+			"trappings": "губернаторская резиденция, секретарь, слуга"
 		},
 		{
 			"id": "Grave Robber",
-			"name": "Grave Robber",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.W2Ovj3ec7eqZUuuv]{Grave Robber}</p>"
+			"name": "Гробокопатель",
+			"class": "Шельма",
+			"careerGroup": "Гробокопатель",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.W2Ovj3ec7eqZUuuv]{Гробокопатель}</p>",
+			"trappings": "ламповое масло, лопата, масляный фонарь, ручное оружие, рюкзак"
 		},
 		{
 			"id": "Greenfish",
-			"name": "Greenfish",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.9D0o0fbqscpgk0RK]{Riverwoman}</p>"
+			"name": "Малёк",
+			"class": "Речник",
+			"careerGroup": "Речной житель",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.9D0o0fbqscpgk0RK]{Речной житель}</p>",
+			"trappings": "ведро, кожаные штаны, наживка, удочка"
 		},
 		{
 			"id": "Guard",
 			"name": "Охранник",
 			"class": "Воин",
 			"careerGroup": "Охранник",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.qaL8gLZdfOL5F5UV]{Охранник}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.qaL8gLZdfOL5F5UV]{Охранник}</p>",
+			"trappings": "кольчуга, копьё, лук и 10 стрел, щит"
 		},
 		{
 			"id": "Guard Officer",
 			"name": "Офицер гвардии",
 			"class": "Воин",
 			"careerGroup": "Охранник",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.qaL8gLZdfOL5F5UV]{Охранник}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.qaL8gLZdfOL5F5UV]{Охранник}</p>",
+			"trappings": "кираса"
 		},
 		{
 			"id": "Guide",
-			"name": "Guide",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Xl9yyv67BB8a8XFo]{Scout}</p>"
+			"name": "Проводник",
+			"class": "Крестьянин",
+			"careerGroup": "Разведчик",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Xl9yyv67BB8a8XFo]{Разведчик}</p>",
+			"trappings": "верёвка, плащ, прочные сапоги, ручное оружие"
 		},
 		{
 			"id": "Guildmaster",
 			"name": "Гильдмейстер",
 			"class": "Бюргер",
 			"careerGroup": "Ремесленник",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.AlriWm9KtKnDAMw1]{Ремесленник}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.AlriWm9KtKnDAMw1]{Ремесленник}</p>",
+			"trappings": "отличная одежда, ремесленная Гильдия"
 		},
 		{
 			"id": "Hedge Apprentice",
-			"name": "Hedge Apprentice",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.pxxGfn6ze45dwg4Y]{Hedge Witch}</p>"
+			"name": "Ученик знахаря",
+			"class": "Крестьянин",
+			"careerGroup": "Знахарь",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.pxxGfn6ze45dwg4Y]{Знахарь}</p>",
+			"trappings": "1d10 талисманов, посох, рюкзак"
 		},
 		{
 			"id": "Hedge Master",
-			"name": "Hedge Master",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.pxxGfn6ze45dwg4Y]{Hedge Witch}</p>"
+			"name": "Знахарь-наставник",
+			"class": "Крестьянин",
+			"careerGroup": "Знахарь",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.pxxGfn6ze45dwg4Y]{Знахарь}</p>",
+			"trappings": "уединённая хижина, ученик"
 		},
 		{
 			"id": "Hedge Witch",
-			"name": "Hedge Witch",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.pxxGfn6ze45dwg4Y]{Hedge Witch}</p>"
+			"name": "Знахарь",
+			"class": "Крестьянин",
+			"careerGroup": "Знахарь",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.pxxGfn6ze45dwg4Y]{Знахарь}</p>",
+			"trappings": "набор противоядий, рабочие инструменты (травник), целебная припарка"
 		},
 		{
 			"id": "Hedgewise",
-			"name": "Hedgewise",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.pxxGfn6ze45dwg4Y]{Hedge Witch}</p>"
+			"name": "Премудрый знахарь",
+			"class": "Крестьянин",
+			"careerGroup": "Знахарь",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.pxxGfn6ze45dwg4Y]{Знахарь}</p>",
+			"trappings": "коллекция черепов животных, церемониальный плащ и венок"
 		},
 		{
 			"id": "Herald",
-			"name": "Herald",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.B0zxjP3KbZag5Y79]{Envoy}</p>"
+			"name": "Герольд",
+			"class": "Придворный",
+			"careerGroup": "Эмиссар",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.B0zxjP3KbZag5Y79]{Эмиссар}</p>",
+			"trappings": "кожаная куртка, ливрея, футляр для свитков"
 		},
 		{
 			"id": "Herb Gatherer",
-			"name": "Herb Gatherer",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.MYzcmrUrSKLmshwu]{Herbalist}</p>"
+			"name": "Сборщик трав",
+			"class": "Крестьянин",
+			"careerGroup": "Травник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.MYzcmrUrSKLmshwu]{Травник}</p>",
+			"trappings": "башмаки, наплечная сумка с травами, плащ"
 		},
 		{
 			"id": "Herb Master",
-			"name": "Herb Master",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.MYzcmrUrSKLmshwu]{Herbalist}</p>"
+			"name": "Знаток трав",
+			"class": "Крестьянин",
+			"careerGroup": "Травник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.MYzcmrUrSKLmshwu]{Травник}</p>",
+			"trappings": "мастерская (травник), сборщик трав, целебное снадобье, 3 целебных припарки"
 		},
 		{
 			"id": "Herbalist",
-			"name": "Herbalist",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.MYzcmrUrSKLmshwu]{Herbalist}</p>"
+			"name": "Травник",
+			"class": "Крестьянин",
+			"careerGroup": "Травник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.MYzcmrUrSKLmshwu]{Травник}</p>",
+			"trappings": "рабочие инструменты (травник), ручное оружие (серп), целебная припарка"
 		},
 		{
 			"id": "Herbwise",
-			"name": "Herbwise",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.MYzcmrUrSKLmshwu]{Herbalist}</p>"
+			"name": "Премудрый травник",
+			"class": "Крестьянин",
+			"careerGroup": "Травник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.MYzcmrUrSKLmshwu]{Травник}</p>",
+			"trappings": "повозка, пони"
 		},
 		{
 			"id": "Hexer",
-			"name": "Hexer",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.5ITpDJoRHlIgbE0g]{Witch}</p>"
+			"name": "Ворожея",
+			"class": "Шельма",
+			"careerGroup": "Ведьма",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.5ITpDJoRHlIgbE0g]{Ведьма}</p>",
+			"trappings": "свечи, кусок мела, булавки"
 		},
 		{
 			"id": "High Priest",
-			"name": "High Priest",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.GNwQFkVKUs0JM6U5]{Priest}</p>"
+			"name": "Верховный жрец",
+			"class": "Книгочей",
+			"careerGroup": "Жрец",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.GNwQFkVKUs0JM6U5]{Жрец}</p>",
+			"trappings": "отличная ряса, подчинённые жрецы, священная реликвия, храм"
 		},
 		{
 			"id": "Hitman",
 			"name": "Наёмный убийца",
 			"class": "Воин",
 			"careerGroup": "Негодяй",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.mlLVNBKIUnonqka2]{Негодяй}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.mlLVNBKIUnonqka2]{Негодяй}</p>",
+			"trappings": "болас, метательные ножи, плащ, яд"
 		},
 		{
 			"id": "Honor Guard",
 			"name": "Гвардеец",
 			"class": "Воин",
 			"careerGroup": "Охранник",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.qaL8gLZdfOL5F5UV]{Охранник}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.qaL8gLZdfOL5F5UV]{Охранник}</p>",
+			"trappings": "двуручное оружие или алебарда, мундир, шлем"
 		},
 		{
 			"id": "Horseman",
 			"name": "Всадник",
 			"class": "Воин",
 			"careerGroup": "Кавалерист",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.h9LHCAdlP4o55QvD]{Кавалерист}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.h9LHCAdlP4o55QvD]{Кавалерист}</p>",
+			"trappings": "верховая лошадь, кожаная куртка, седло и сбруя"
 		},
 		{
 			"id": "Huffer",
-			"name": "Huffer",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.LaTDWvLySPKGojiW]{Huffer}</p>"
+			"name": "Лоцман",
+			"class": "Речник",
+			"careerGroup": "Лоцман",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.LaTDWvLySPKGojiW]{Лоцман}</p>",
+			"trappings": "верёвка, гребная лодка, кожаная куртка"
 		},
 		{
 			"id": "Hunter",
-			"name": "Hunter",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.2RxWvPZCKW2ShY5a]{Hunter}</p>"
+			"name": "Охотник",
+			"class": "Крестьянин",
+			"careerGroup": "Охотник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.2RxWvPZCKW2ShY5a]{Охотник}</p>",
+			"trappings": "лук и 10 стрел"
 		},
 		{
 			"id": "Huntsmaster",
-			"name": "Huntsmaster",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.2RxWvPZCKW2ShY5a]{Hunter}</p>"
+			"name": "Егермейстер",
+			"class": "Крестьянин",
+			"careerGroup": "Охотник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.2RxWvPZCKW2ShY5a]{Охотник}</p>",
+			"trappings": "верховая лошадь, свора охотничьих собак, седло и сбруя"
 		},
 		{
 			"id": "Hustler",
-			"name": "Hustler",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.MY4aFbQL5T9znCUd]{Bawd}</p>"
+			"name": "Прохиндей",
+			"class": "Шельма",
+			"careerGroup": "Пройдоха",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.MY4aFbQL5T9znCUd]{Пройдоха}</p>",
+			"trappings": "фляжка с крепкой выпивкой"
 		},
 		{
 			"id": "Informer",
-			"name": "Informer",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.dWLxT0zRnDFbwTKZ]{Spy}</p>"
+			"name": "Осведомитель",
+			"class": "Придворный",
+			"careerGroup": "Шпион",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.dWLxT0zRnDFbwTKZ]{Шпион}</p>",
+			"trappings": "наплечная сумка с двумя разными комплектами одежды, плащ с капюшоном, угольный карандаш"
 		},
 		{
 			"id": "Initiate",
-			"name": "Initiate",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.GNwQFkVKUs0JM6U5]{Priest}</p>"
+			"name": "Диакон",
+			"class": "Книгочей",
+			"careerGroup": "Жрец",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.GNwQFkVKUs0JM6U5]{Жрец}</p>",
+			"trappings": "религиозный символ, ряса"
 		},
 		{
 			"id": "Inquisitor",
-			"name": "Inquisitor",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.3A56eFnkIYFmbRL1]{Witch Hunter}</p>"
+			"name": "Инквизитор",
+			"class": "Странник",
+			"careerGroup": "Охотник на ведьм",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.3A56eFnkIYFmbRL1]{Охотник на ведьм}</p>",
+			"trappings": "отличная одежда, подчинённые дознаватели"
 		},
 		{
 			"id": "Interrogator",
-			"name": "Interrogator",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.3A56eFnkIYFmbRL1]{Witch Hunter}</p>"
+			"name": "Дознаватель",
+			"class": "Странник",
+			"careerGroup": "Охотник на ведьм",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.3A56eFnkIYFmbRL1]{Охотник на ведьм}</p>",
+			"trappings": "рабочие инструменты (дознаватель), ручное оружие"
 		},
 		{
 			"id": "Investigator",
 			"name": "Следователь",
 			"class": "Бюргер",
 			"careerGroup": "Следователь",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.DAHJ4cu3WiGCdakE]{Следователь}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.DAHJ4cu3WiGCdakE]{Следователь}</p>",
+			"trappings": "кожаная куртка, набор отмычек, ручное оружие, увеличительное стекло"
 		},
 		{
 			"id": "Judge",
-			"name": "Judge",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.GhqPa2iwEdc4Dokc]{Lawyer}</p>"
+			"name": "Судья",
+			"class": "Книгочей",
+			"careerGroup": "Законник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.GhqPa2iwEdc4Dokc]{Законник}</p>",
+			"trappings": "судейский молоток, шикарный парик"
 		},
 		{
 			"id": "Judicial Champion",
-			"name": "Judicial Champion",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.RNcsFphKVYohTrS9]{Duellist}</p>"
+			"name": "Судебный поединщик",
+			"class": "Придворный",
+			"careerGroup": "Дуэлянт",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.RNcsFphKVYohTrS9]{Дуэлянт}</p>",
+			"trappings": "2 единицы отличного оружия (любого)"
 		},
 		{
 			"id": "Knight",
 			"name": "Рыцарь",
 			"class": "Воин",
 			"careerGroup": "Рыцарь",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.n2VdkCPNNxdupjeQ]{Рыцарь}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.n2VdkCPNNxdupjeQ]{Рыцарь}</p>",
+			"trappings": "дестриэ, кавалерийское копьё, латы, оружие ближнего боя (любое), седло и сбруя, шлем"
 		},
 		{
 			"id": "Knight of the Inner Circle",
 			"name": "Рыцарь Внутреннего Круга",
 			"class": "Воин",
 			"careerGroup": "Рыцарь",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.n2VdkCPNNxdupjeQ]{Рыцарь}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.n2VdkCPNNxdupjeQ]{Рыцарь}</p>",
+			"trappings": "большой отряд рыцарей или несколько небольших отрядов рыцарей, глухой шлем с плюмажем, оруженосец"
 		},
 		{
 			"id": "Landsman",
-			"name": "Landsman",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.wu6aG1XPdzvpiLcR]{Seaman}</p>"
+			"name": "Береговик",
+			"class": "Речник",
+			"careerGroup": "Моряк",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.wu6aG1XPdzvpiLcR]{Моряк}</p>",
+			"trappings": "ведро, метла, швабра"
 		},
 		{
 			"id": "Lawyer",
-			"name": "Lawyer",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.GhqPa2iwEdc4Dokc]{Lawyer}</p>"
+			"name": "Законник",
+			"class": "Книгочей",
+			"careerGroup": "Законник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.GhqPa2iwEdc4Dokc]{Законник}</p>",
+			"trappings": "лицензия Гильдии Законников, мантия законника, писчий набор"
 		},
 		{
 			"id": "Lector",
-			"name": "Lector",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.GNwQFkVKUs0JM6U5]{Priest}</p>"
+			"name": "Предстоятель",
+			"class": "Книгочей",
+			"careerGroup": "Жрец",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.GNwQFkVKUs0JM6U5]{Жрец}</p>",
+			"trappings": "подчинённые верховные жрецы, библиотека (теология)"
 		},
 		{
 			"id": "Light Cavalry Officer",
 			"name": "Офицер кавалерии",
 			"class": "Воин",
 			"careerGroup": "Кавалерист",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.h9LHCAdlP4o55QvD]{Кавалерист}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.h9LHCAdlP4o55QvD]{Кавалерист}</p>",
+			"trappings": "колода карт, отличный мундир, офицерский патент"
 		},
 		{
 			"id": "Light Cavalry Sergeant",
 			"name": "Сержант кавалерии",
 			"class": "Воин",
 			"careerGroup": "Кавалерист",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.h9LHCAdlP4o55QvD]{Кавалерист}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.h9LHCAdlP4o55QvD]{Кавалерист}</p>",
+			"trappings": "кушак"
 		},
 		{
 			"id": "Maestro",
-			"name": "Maestro",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.rjUjdQrWHWazjkRC]{Artist}</p>"
+			"name": "Маэстро",
+			"class": "Придворный",
+			"careerGroup": "Художник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.rjUjdQrWHWazjkRC]{Художник}</p>",
+			"trappings": "библиотека (искусство), большая мастерская (художник), 3 ученика"
 		},
 		{
 			"id": "Magistrate",
-			"name": "Magistrate",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.WbjmnVlyJ9VP2nt4]{Bailiff}</p>"
+			"name": "Магистрат",
+			"class": "Крестьянин",
+			"careerGroup": "Бейлиф",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.WbjmnVlyJ9VP2nt4]{Бейлиф}</p>",
+			"trappings": "библиотека (закон), отличная мантия, печать магистрата"
 		},
 		{
 			"id": "Magnate",
-			"name": "Magnate",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.CMIowWLOafHKAhnB]{Noble}</p>"
+			"name": "Магнат",
+			"class": "Придворный",
+			"careerGroup": "Дворянин",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.CMIowWLOafHKAhnB]{Дворянин}</p>",
+			"trappings": "200 золотых крон, 2 отличных придворных наряда, перстень-печатка, украшения на сумму 200 золотых крон, фьеф"
 		},
 		{
 			"id": "Master Apothecary",
-			"name": "Master Apothecary",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.FW2VeYf0vUUFbVE6]{Apothecary}</p>"
+			"name": "Мастер-аптекарь",
+			"class": "Книгочей",
+			"careerGroup": "Аптекарь",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.FW2VeYf0vUUFbVE6]{Аптекарь}</p>",
+			"trappings": "книга (аптекарское дело), мастерская (аптекарь), подмастерье"
 		},
 		{
 			"id": "Master Artisan",
 			"name": "Мастер-ремесленник",
 			"class": "Бюргер",
 			"careerGroup": "Ремесленник",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.AlriWm9KtKnDAMw1]{Ремесленник}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.AlriWm9KtKnDAMw1]{Ремесленник}</p>",
+			"trappings": "мастерская (любая), подмастерье"
 		},
 		{
 			"id": "Master Artist",
-			"name": "Master Artist",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.rjUjdQrWHWazjkRC]{Artist}</p>"
+			"name": "Мэтр",
+			"class": "Придворный",
+			"careerGroup": "Художник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.rjUjdQrWHWazjkRC]{Художник}</p>",
+			"trappings": "мастерская (художник), покровитель, ученик"
 		},
 		{
 			"id": "Master Beggar",
 			"name": "Старший попрошайка",
 			"class": "Бюргер",
 			"careerGroup": "Попрошайка",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.djOQaw7iRfec9UEj]{Попрошайка}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.djOQaw7iRfec9UEj]{Попрошайка}</p>",
+			"trappings": "гримёрный набор, последователь-побирушка, убежище"
 		},
 		{
 			"id": "Master Bounty Hunter",
-			"name": "Master Bounty Hunter",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.bsQN8B1mtZhl2WRu]{Bounty Hunter}</p>"
+			"name": "Мастер-поимщик",
+			"class": "Странник",
+			"careerGroup": "Охотник за головами",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.bsQN8B1mtZhl2WRu]{Охотник за головами}</p>",
+			"trappings": "верховая лошадь, кольчужная рубаха, седло и сбруя"
 		},
 		{
 			"id": "Master Engineer",
-			"name": "Master Engineer",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.c2n86bcUngGrHyO4]{Engineer}</p>"
+			"name": "Мастер-инженер",
+			"class": "Книгочей",
+			"careerGroup": "Инженер",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.c2n86bcUngGrHyO4]{Инженер}</p>",
+			"trappings": "мастерская (инженер)"
 		},
 		{
 			"id": "Master Fence",
-			"name": "Master Fence",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lbbddfm36XMb8SYg]{Fence}</p>"
+			"name": "Ломбардщик",
+			"class": "Шельма",
+			"careerGroup": "Скупщик краденого",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lbbddfm36XMb8SYg]{Скупщик краденого}</p>",
+			"trappings": "ломбард"
 		},
 		{
 			"id": "Master Investigator",
 			"name": "Старший следователь",
 			"class": "Бюргер",
 			"careerGroup": "Следователь",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.DAHJ4cu3WiGCdakE]{Следователь}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.DAHJ4cu3WiGCdakE]{Следователь}</p>",
+			"trappings": "ассистент, контора"
 		},
 		{
 			"id": "Master Merchant",
 			"name": "Негоциант",
 			"class": "Бюргер",
 			"careerGroup": "Купец",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.FLqzxS5gxKflqDUk]{Купец}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.FLqzxS5gxKflqDUk]{Купец}</p>",
+			"trappings": "городской дом с прислугой, склад, 100 золотых крон"
 		},
 		{
 			"id": "Master Miner",
-			"name": "Master Miner",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lWT9EiFL6a09w0h9]{Miner}</p>"
+			"name": "Рудознатец",
+			"class": "Крестьянин",
+			"careerGroup": "Рудокоп",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lWT9EiFL6a09w0h9]{Рудокоп}</p>",
+			"trappings": "двуручное оружие (кирка), рабочие инструменты (инженер), шлем"
 		},
 		{
 			"id": "Master Pedlar",
-			"name": "Master Pedlar",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.jAqbxNrHW35xiuOn]{Pedlar}</p>"
+			"name": "Бывалый коробейник",
+			"class": "Странник",
+			"careerGroup": "Коробейник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.jAqbxNrHW35xiuOn]{Коробейник}</p>",
+			"trappings": "повозка, товары на 2d10 золотых крон"
 		},
 		{
 			"id": "Master Pilot",
-			"name": "Master Pilot",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.LaTDWvLySPKGojiW]{Huffer}</p>"
+			"name": "Навигатор",
+			"class": "Речник",
+			"careerGroup": "Лоцман",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.LaTDWvLySPKGojiW]{Лоцман}</p>",
+			"trappings": "гребец, небольшая речная лодка"
 		},
 		{
 			"id": "Master Smuggler",
-			"name": "Master Smuggler",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.TaOvUqKMJoPeuynD]{Smuggler}</p>"
+			"name": "Лихой контрабандист",
+			"class": "Речник",
+			"careerGroup": "Контрабандист",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.TaOvUqKMJoPeuynD]{Контрабандист}</p>",
+			"trappings": "быстрая речная лодка, речной скороход"
 		},
 		{
 			"id": "Master Thief",
-			"name": "Master Thief",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.TgcyR0ZdG6bMOK9o]{Thief}</p>"
+			"name": "Искусный вор",
+			"class": "Шельма",
+			"careerGroup": "Вор",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.TgcyR0ZdG6bMOK9o]{Вор}</p>",
+			"trappings": "одноручный арбалет и 10 болтов"
 		},
 		{
 			"id": "Master Wizard",
-			"name": "Master Wizard",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.m6WuSnrrW7QllX63]{Wizard}</p>"
+			"name": "Магистр",
+			"class": "Книгочей",
+			"careerGroup": "Маг",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.m6WuSnrrW7QllX63]{Маг}</p>",
+			"trappings": "боевой конь, магический предмет, ученик"
 		},
 		{
 			"id": "Menial",
-			"name": "Menial",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.g12yhcU74qsRKxXX]{Servant}</p>"
+			"name": "Дворня",
+			"class": "Придворный",
+			"careerGroup": "Слуга",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.g12yhcU74qsRKxXX]{Слуга}</p>",
+			"trappings": "метла"
 		},
 		{
 			"id": "Merchant",
 			"name": "Купец",
 			"class": "Бюргер",
 			"careerGroup": "Купец",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.FLqzxS5gxKflqDUk]{Купец}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.FLqzxS5gxKflqDUk]{Купец}</p>",
+			"trappings": "лицензия Гильдии Купцов, речная баржа или 2 фургона, 20 золотых крон"
 		},
 		{
 			"id": "Merchant Prince",
 			"name": "Патриций",
 			"class": "Бюргер",
 			"careerGroup": "Купец",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.FLqzxS5gxKflqDUk]{Купец}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.FLqzxS5gxKflqDUk]{Купец}</p>",
+			"trappings": "городской особняк, отличная одежда, 2 речных баржи или 4 фургона, 2 склада, 1000 золотых крон"
 		},
 		{
 			"id": "Messenger",
-			"name": "Messenger",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.8pk2uCvAMUAXWbcP]{Messenger}</p>"
+			"name": "Посыльный",
+			"class": "Странник",
+			"careerGroup": "Посыльный",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.8pk2uCvAMUAXWbcP]{Посыльный}</p>",
+			"trappings": "верховая лошадь, кожаная куртка, ручное оружие, седло и сбруя"
 		},
 		{
 			"id": "Mine Foreman",
-			"name": "Mine Foreman",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lWT9EiFL6a09w0h9]{Miner}</p>"
+			"name": "Бригадир рудокопов",
+			"class": "Крестьянин",
+			"careerGroup": "Рудокоп",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lWT9EiFL6a09w0h9]{Рудокоп}</p>",
+			"trappings": "бригада рудокопов, писчий набор"
 		},
 		{
 			"id": "Miner",
-			"name": "Miner",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lWT9EiFL6a09w0h9]{Miner}</p>"
+			"name": "Рудокоп",
+			"class": "Крестьянин",
+			"careerGroup": "Рудокоп",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lWT9EiFL6a09w0h9]{Рудокоп}</p>",
+			"trappings": "кожаная куртка, лампа Давриха, ламповое масло, ручное оружие (кирка)"
 		},
 		{
 			"id": "Mystic",
-			"name": "Mystic",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.M9NiEgE7qaCXmskM]{Mystic}</p>"
+			"name": "Мистик",
+			"class": "Крестьянин",
+			"careerGroup": "Мистик",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.M9NiEgE7qaCXmskM]{Мистик}</p>",
+			"trappings": "множество талисманов"
 		},
 		{
 			"id": "Noble",
-			"name": "Noble",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.CMIowWLOafHKAhnB]{Noble}</p>"
+			"name": "Дворянин",
+			"class": "Придворный",
+			"careerGroup": "Дворянин",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.CMIowWLOafHKAhnB]{Дворянин}</p>",
+			"trappings": "верховая лошадь с седлом и сбруей или карета, дага или отличный плащ, отличный придворный наряд, 4 слуги, украшения на сумму 50 золотых крон"
 		},
 		{
 			"id": "Noble Lord",
-			"name": "Noble Lord",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.CMIowWLOafHKAhnB]{Noble}</p>"
+			"name": "Аристократ",
+			"class": "Придворный",
+			"careerGroup": "Дворянин",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.CMIowWLOafHKAhnB]{Дворянин}</p>",
+			"trappings": "4 великолепных придворных наряда, 500 золотых крон, отличная рапира или отличное зеркальце, провинция, украшения на сумму 500 золотых крон"
 		},
 		{
 			"id": "Novitiate (Nun)",
 			"name": "Послушник",
 			"class": "Книгочей",
 			"careerGroup": "Монах",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.bE8g67fjVAE6R7Wx]{Монах}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.bE8g67fjVAE6R7Wx]{Монах}</p>",
+			"trappings": "монашеская ряса, религиозный символ"
 		},
 		{
 			"id": "Novitiate (Warrior Priest)",
 			"name": "Неофит",
 			"class": "Воин",
 			"careerGroup": "Жрец-воин",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.KG5lVereynSwOkxa]{Жрец-воин}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.KG5lVereynSwOkxa]{Жрец-воин}</p>",
+			"trappings": "книга (религия), кожаная жилетка, оружие (любое оружие ближнего боя), религиозный символ, ряса"
 		},
 		{
 			"id": "Nun",
 			"name": "Монах",
 			"class": "Книгочей",
 			"careerGroup": "Монах",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.bE8g67fjVAE6R7Wx]{Монах}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.bE8g67fjVAE6R7Wx]{Монах}</p>",
+			"trappings": "книга (религия), рабочие инструменты (любые), священная реликвия"
 		},
 		{
 			"id": "Officer",
 			"name": "Офицер",
 			"class": "Воин",
 			"careerGroup": "Солдат",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.kT0ZI0LoHmIvhjPk]{Солдат}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.kT0ZI0LoHmIvhjPk]{Солдат}</p>",
+			"trappings": "боевой конь, знак служебного положения, карта, отличный мундир, отряд солдат, офицерский патент, приказы, седло и сбруя"
 		},
 		{
 			"id": "Outlaw",
-			"name": "Outlaw",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.mOljt11dxZENtmoR]{Outlaw}</p>"
+			"name": "Разбойник",
+			"class": "Шельма",
+			"careerGroup": "Разбойник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.mOljt11dxZENtmoR]{Разбойник}</p>",
+			"trappings": "лук и 10 стрел, палатка, щит"
 		},
 		{
 			"id": "Outlaw Chief",
-			"name": "Outlaw Chief",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.mOljt11dxZENtmoR]{Outlaw}</p>"
+			"name": "Атаман разбойников",
+			"class": "Шельма",
+			"careerGroup": "Разбойник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.mOljt11dxZENtmoR]{Разбойник}</p>",
+			"trappings": "верховая лошадь, кольчуга, седло и сбруя, шайка разбойников, шлем"
 		},
 		{
 			"id": "Pamphleteer",
 			"name": "Памфлетист",
 			"class": "Бюргер",
 			"careerGroup": "Агитатор",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.yDGBs92ko6rUyoTe]{Агитатор}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.yDGBs92ko6rUyoTe]{Агитатор}</p>",
+			"trappings": "дюжина гвоздей, молоток, писчий набор, стопка листовок"
 		},
 		{
 			"id": "Pathfinder",
-			"name": "Pathfinder",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Xl9yyv67BB8a8XFo]{Scout}</p>"
+			"name": "Землепроходец",
+			"class": "Крестьянин",
+			"careerGroup": "Разведчик",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Xl9yyv67BB8a8XFo]{Разведчик}</p>",
+			"trappings": "верховая лошадь, карта, палатка, перемётные сумки с запасом пайков на 2 недели, седло и сбруя"
 		},
 		{
 			"id": "Pauper",
 			"name": "Побирушка",
 			"class": "Бюргер",
 			"careerGroup": "Попрошайка",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.djOQaw7iRfec9UEj]{Попрошайка}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.djOQaw7iRfec9UEj]{Попрошайка}</p>",
+			"trappings": "дрянное одеяло, чашка"
 		},
 		{
 			"id": "Peasant",
-			"name": "Peasant",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.btrs5XFk2OQsCtqj]{Villager}</p>"
+			"name": "Батрак",
+			"class": "Крестьянин",
+			"careerGroup": "Селянин",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.btrs5XFk2OQsCtqj]{Селянин}</p>",
+			"trappings": "нет"
 		},
 		{
 			"id": "Pedlar",
-			"name": "Pedlar",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.jAqbxNrHW35xiuOn]{Pedlar}</p>"
+			"name": "Коробейник",
+			"class": "Странник",
+			"careerGroup": "Коробейник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.jAqbxNrHW35xiuOn]{Коробейник}</p>",
+			"trappings": "множество кастрюль и сковородок, мул, перемётные сумки, рабочие инструменты (медник), товары на 2d10 серебряных шиллингов"
 		},
 		{
 			"id": "Penitent",
-			"name": "Penitent",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Vtice54Y7PV95Dkp]{Flagellant}</p>"
+			"name": "Кающийся грешник",
+			"class": "Странник",
+			"careerGroup": "Флагеллант",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Vtice54Y7PV95Dkp]{Флагеллант}</p>",
+			"trappings": "священная реликвия"
 		},
 		{
 			"id": "Physician",
-			"name": "Physician",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Ora8bmvHERjYWEQn]{Physician}</p>"
+			"name": "Врач",
+			"class": "Книгочей",
+			"careerGroup": "Врач",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Ora8bmvHERjYWEQn]{Врач}</p>",
+			"trappings": "книга (медицина), лицензия Гильдии Врачей, рабочие инструменты (врач)"
 		},
 		{
 			"id": "Physician's Apprentice",
-			"name": "Physician's Apprentice",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Ora8bmvHERjYWEQn]{Physician}</p>"
+			"name": "Подмастерье врача",
+			"class": "Книгочей",
+			"careerGroup": "Врач",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Ora8bmvHERjYWEQn]{Врач}</p>",
+			"trappings": "бинт, целебное снадобье"
 		},
 		{
 			"id": "Pilot",
-			"name": "Pilot",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.LaTDWvLySPKGojiW]{Huffer}</p>"
+			"name": "Кормчий",
+			"class": "Речник",
+			"careerGroup": "Лоцман",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.LaTDWvLySPKGojiW]{Лоцман}</p>",
+			"trappings": "рабочие инструменты (навигатор), шест"
 		},
 		{
 			"id": "Pit Champion",
 			"name": "Чемпион арены",
 			"class": "Воин",
 			"careerGroup": "Гладиатор",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.15N8GauWXWfbYbEQ]{Гладиатор}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.15N8GauWXWfbYbEQ]{Гладиатор}</p>",
+			"trappings": "кираса, шлем"
 		},
 		{
 			"id": "Pit Fighter",
 			"name": "Гладиатор",
 			"class": "Воин",
 			"careerGroup": "Гладиатор",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.15N8GauWXWfbYbEQ]{Гладиатор}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.15N8GauWXWfbYbEQ]{Гладиатор}</p>",
+			"trappings": "ручное оружие, сеть или кнут, цеп или двуручное оружие, щит или баклер"
 		},
 		{
 			"id": "Pit Legend",
 			"name": "Легенда арены",
 			"class": "Воин",
 			"careerGroup": "Гладиатор",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.15N8GauWXWfbYbEQ]{Гладиатор}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.15N8GauWXWfbYbEQ]{Гладиатор}</p>",
+			"trappings": "отличный шлем"
 		},
 		{
 			"id": "Postilion",
-			"name": "Postilion",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.BnA8KJuCw16zwOVC]{Coachman}</p>"
+			"name": "Форейтор",
+			"class": "Странник",
+			"careerGroup": "Кучер",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.BnA8KJuCw16zwOVC]{Кучер}</p>",
+			"trappings": "кнут, перчатки, тёплый плащ"
 		},
 		{
 			"id": "Priest",
-			"name": "Priest",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.GNwQFkVKUs0JM6U5]{Priest}</p>"
+			"name": "Жрец",
+			"class": "Книгочей",
+			"careerGroup": "Жрец",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.GNwQFkVKUs0JM6U5]{Жрец}</p>",
+			"trappings": "богослужебная мантия, книга (религия)"
 		},
 		{
 			"id": "Priest Captain",
 			"name": "Жрец-капитан",
 			"class": "Воин",
 			"careerGroup": "Жрец-воин",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.KG5lVereynSwOkxa]{Жрец-воин}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.KG5lVereynSwOkxa]{Жрец-воин}</p>",
+			"trappings": "священная реликвия"
 		},
 		{
 			"id": "Priest Sergeant",
 			"name": "Жрец-сержант",
 			"class": "Воин",
 			"careerGroup": "Жрец-воин",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.KG5lVereynSwOkxa]{Жрец-воин}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.KG5lVereynSwOkxa]{Жрец-воин}</p>",
+			"trappings": "боевой конь, седло и сбруя"
 		},
 		{
 			"id": "Prioress General",
 			"name": "Генеральный настоятель",
 			"class": "Книгочей",
 			"careerGroup": "Монах",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.bE8g67fjVAE6R7Wx]{Монах}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.bE8g67fjVAE6R7Wx]{Монах}</p>",
+			"trappings": "монашеский орден"
 		},
 		{
 			"id": "Procurer",
-			"name": "Procurer",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.MY4aFbQL5T9znCUd]{Bawd}</p>"
+			"name": "Посредник",
+			"class": "Шельма",
+			"careerGroup": "Пройдоха",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.MY4aFbQL5T9znCUd]{Пройдоха}</p>",
+			"trappings": "шайка прохиндеев"
 		},
 		{
 			"id": "Professor",
-			"name": "Professor",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.cIBJfaY9DKJh5ZEM]{Scholar}</p>"
+			"name": "Профессор",
+			"class": "Книгочей",
+			"careerGroup": "Учёный",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.cIBJfaY9DKJh5ZEM]{Учёный}</p>",
+			"trappings": "рабочий кабинет"
 		},
 		{
 			"id": "Prophet of Doom",
-			"name": "Prophet of Doom",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Vtice54Y7PV95Dkp]{Flagellant}</p>"
+			"name": "Пророк Судного Дня",
+			"class": "Странник",
+			"careerGroup": "Флагеллант",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Vtice54Y7PV95Dkp]{Флагеллант}</p>",
+			"trappings": "книга (религия), последователи (включая кающихся грешников, флагеллантов и фанатиков)"
 		},
 		{
 			"id": "Prospector",
-			"name": "Prospector",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lWT9EiFL6a09w0h9]{Miner}</p>"
+			"name": "Старатель",
+			"class": "Крестьянин",
+			"careerGroup": "Рудокоп",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lWT9EiFL6a09w0h9]{Рудокоп}</p>",
+			"trappings": "грубая карта, лопата, лоток, угольный карандаш"
 		},
 		{
 			"id": "Protagonist",
 			"name": "Негодяй",
 			"class": "Воин",
 			"careerGroup": "Негодяй",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.mlLVNBKIUnonqka2]{Негодяй}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.mlLVNBKIUnonqka2]{Негодяй}</p>",
+			"trappings": "верховая лошадь, кольчужная рубаха, ручное оружие, седло и сбруя, щит"
 		},
 		{
 			"id": "Prowler",
-			"name": "Prowler",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.TgcyR0ZdG6bMOK9o]{Thief}</p>"
+			"name": "Проныра",
+			"class": "Шельма",
+			"careerGroup": "Вор",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.TgcyR0ZdG6bMOK9o]{Вор}</p>",
+			"trappings": "кожаная жилетка, ломик, мешок"
 		},
 		{
 			"id": "Pugilist",
 			"name": "Кулачный боец",
 			"class": "Воин",
 			"careerGroup": "Гладиатор",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.15N8GauWXWfbYbEQ]{Гладиатор}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.15N8GauWXWfbYbEQ]{Гладиатор}</p>",
+			"trappings": "бинт, кастет, кожаная куртка"
 		},
 		{
 			"id": "Rabble Rouser",
 			"name": "Подстрекатель",
 			"class": "Бюргер",
 			"careerGroup": "Агитатор",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.yDGBs92ko6rUyoTe]{Агитатор}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.yDGBs92ko6rUyoTe]{Агитатор}</p>",
+			"trappings": "памфлетист, ручное оружие"
 		},
 		{
 			"id": "Racketeer",
-			"name": "Racketeer",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.yGZN7bMjbGH7kCMK]{Racketeer}</p>"
+			"name": "Бандит",
+			"class": "Шельма",
+			"careerGroup": "Бандит",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.yGZN7bMjbGH7kCMK]{Бандит}</p>",
+			"trappings": "кольчужная рубаха, ручное оружие, шляпа"
 		},
 		{
 			"id": "Rat Catcher",
 			"name": "Крысолов",
 			"class": "Бюргер",
 			"careerGroup": "Крысолов",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.0DuRRCYdahOKxDPF]{Крысолов}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.0DuRRCYdahOKxDPF]{Крысолов}</p>",
+			"trappings": "ловушки на крыс, шест для мёртвых крыс"
 		},
 		{
 			"id": "Rat Hunter",
 			"name": "Крысобой",
 			"class": "Бюргер",
 			"careerGroup": "Крысолов",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.0DuRRCYdahOKxDPF]{Крысолов}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.0DuRRCYdahOKxDPF]{Крысолов}</p>",
+			"trappings": "маленькая, но злобная собака, мешок, праща и 10 пуль"
 		},
 		{
 			"id": "Recruit",
 			"name": "Новобранец",
 			"class": "Воин",
 			"careerGroup": "Солдат",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.kT0ZI0LoHmIvhjPk]{Солдат}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.kT0ZI0LoHmIvhjPk]{Солдат}</p>",
+			"trappings": "кожаная куртка, мундир, ручное оружие"
 		},
 		{
 			"id": "Reeve",
-			"name": "Reeve",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.WbjmnVlyJ9VP2nt4]{Bailiff}</p>"
+			"name": "Шериф",
+			"class": "Крестьянин",
+			"careerGroup": "Бейлиф",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.WbjmnVlyJ9VP2nt4]{Бейлиф}</p>",
+			"trappings": "верховая лошадь, бейлиф, кираса, седло и сбруя"
 		},
 		{
 			"id": "Ringleader",
-			"name": "Ringleader",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.MY4aFbQL5T9znCUd]{Bawd}</p>"
+			"name": "Делец",
+			"class": "Шельма",
+			"careerGroup": "Пройдоха",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.MY4aFbQL5T9znCUd]{Пройдоха}</p>",
+			"trappings": "городской дом с незаметным чёрным ходом, шайка пройдох"
 		},
 		{
 			"id": "River Elder",
-			"name": "River Elder",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.9D0o0fbqscpgk0RK]{Riverwoman}</p>"
+			"name": "Речной староста",
+			"class": "Речник",
+			"careerGroup": "Речной житель",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.9D0o0fbqscpgk0RK]{Речной житель}</p>",
+			"trappings": "хижина или речная лодка"
 		},
 		{
 			"id": "River Pirate",
-			"name": "River Pirate",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.AnW8kwDb9koFgMPx]{Wrecker}</p>"
+			"name": "Речной пират",
+			"class": "Речник",
+			"careerGroup": "Побережник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.AnW8kwDb9koFgMPx]{Побережник}</p>",
+			"trappings": "арбалет и 10 болтов, верёвка, крюк-кошка, речная лодка"
 		},
 		{
 			"id": "River Recruit",
-			"name": "River Recruit",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.EBpCBitHuWElKf3D]{Riverwarden}</p>"
+			"name": "Новобранец Речной стражи",
+			"class": "Речник",
+			"careerGroup": "Речной стражник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.EBpCBitHuWElKf3D]{Речной стражник}</p>",
+			"trappings": "кожаная куртка, мундир, ручное оружие (меч)"
 		},
 		{
 			"id": "River Runner",
-			"name": "River Runner",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.TaOvUqKMJoPeuynD]{Smuggler}</p>"
+			"name": "Речной скороход",
+			"class": "Речник",
+			"careerGroup": "Контрабандист",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.TaOvUqKMJoPeuynD]{Контрабандист}</p>",
+			"trappings": "большой мешок, капюшон или маска, ламповое масло, масляный фонарь, огниво"
 		},
 		{
 			"id": "Riverguide",
-			"name": "Riverguide",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.LaTDWvLySPKGojiW]{Huffer}</p>"
+			"name": "Вперёдсмотрящий",
+			"class": "Речник",
+			"careerGroup": "Лоцман",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.LaTDWvLySPKGojiW]{Лоцман}</p>",
+			"trappings": "ламповое масло, масляный фонарь, ручное оружие (лодочный багор)"
 		},
 		{
 			"id": "Riverwarden",
-			"name": "Riverwarden",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.EBpCBitHuWElKf3D]{Riverwarden}</p>"
+			"name": "Речной стражник",
+			"class": "Речник",
+			"careerGroup": "Речной стражник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.EBpCBitHuWElKf3D]{Речной стражник}</p>",
+			"trappings": "ламповое масло, масляная лампа, пистолет и 10 зарядов, щит"
 		},
 		{
 			"id": "Riverwise",
-			"name": "Riverwise",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.9D0o0fbqscpgk0RK]{Riverwoman}</p>"
+			"name": "Речной старожил",
+			"class": "Речник",
+			"careerGroup": "Речной житель",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.9D0o0fbqscpgk0RK]{Речной житель}</p>",
+			"trappings": "гребная лодка, копьё, ламповое масло, масляный фонарь"
 		},
 		{
 			"id": "Riverwoman",
-			"name": "Riverwoman",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.9D0o0fbqscpgk0RK]{Riverwoman}</p>"
+			"name": "Речной житель",
+			"class": "Речник",
+			"careerGroup": "Речной житель",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.9D0o0fbqscpgk0RK]{Речной житель}</p>",
+			"trappings": "дротик или метательное копьё, кожаная жилетка, ловушка на угря, сеть"
 		},
 		{
 			"id": "Road Captain",
-			"name": "Road Captain",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.8zowZP5UEKTM9ehU]{Road warden}</p>"
+			"name": "Капитан Дорожной стражи",
+			"class": "Странник",
+			"careerGroup": "Дорожный стражник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.8zowZP5UEKTM9ehU]{Дорожный стражник}</p>",
+			"trappings": "боевой конь, ещё один пистолет и 10 зарядов, отличная шляпа, отличный плащ, отряд дорожных стражников"
 		},
 		{
 			"id": "Road Sergeant",
-			"name": "Road Sergeant",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.8zowZP5UEKTM9ehU]{Road warden}</p>"
+			"name": "Сержант Дорожной стражи",
+			"class": "Странник",
+			"careerGroup": "Дорожный стражник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.8zowZP5UEKTM9ehU]{Дорожный стражник}</p>",
+			"trappings": "знак служебного положения, отряд дорожных стражников, пистолет и 10 зарядов, щит"
 		},
 		{
 			"id": "Road Warden",
-			"name": "Road Warden",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.8zowZP5UEKTM9ehU]{Road warden}</p>"
+			"name": "Дорожный стражник",
+			"class": "Странник",
+			"careerGroup": "Дорожный стражник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.8zowZP5UEKTM9ehU]{Дорожный стражник}</p>",
+			"trappings": "верёвка, верховая лошадь, кольчужная рубаха, ручное оружие, седло и сбруя"
 		},
 		{
 			"id": "Route Master",
-			"name": "Route Master",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.BnA8KJuCw16zwOVC]{Coachman}</p>"
+			"name": "Распорядитель маршрута",
+			"class": "Странник",
+			"careerGroup": "Кучер",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.BnA8KJuCw16zwOVC]{Кучер}</p>",
+			"trappings": "карты, несколько дилижансов"
 		},
 		{
 			"id": "Runner",
-			"name": "Runner",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.8pk2uCvAMUAXWbcP]{Messenger}</p>"
+			"name": "Гонец",
+			"class": "Странник",
+			"careerGroup": "Посыльный",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.8pk2uCvAMUAXWbcP]{Посыльный}</p>",
+			"trappings": "футляр для свитков"
 		},
 		{
 			"id": "Sage",
-			"name": "Sage",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.M9NiEgE7qaCXmskM]{Mystic}</p>"
+			"name": "Прорицатель",
+			"class": "Крестьянин",
+			"careerGroup": "Мистик",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.M9NiEgE7qaCXmskM]{Мистик}</p>",
+			"trappings": "рабочие инструменты (писатель)"
 		},
 		{
 			"id": "Scholar",
-			"name": "Scholar",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.cIBJfaY9DKJh5ZEM]{Scholar}</p>"
+			"name": "Учёный",
+			"class": "Книгочей",
+			"careerGroup": "Учёный",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.cIBJfaY9DKJh5ZEM]{Учёный}</p>",
+			"trappings": "доступ в библиотеку, учёная степень"
 		},
 		{
 			"id": "Scion",
-			"name": "Scion",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.CMIowWLOafHKAhnB]{Noble}</p>"
+			"name": "Дворянский отпрыск",
+			"class": "Придворный",
+			"careerGroup": "Дворянин",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.CMIowWLOafHKAhnB]{Дворянин}</p>",
+			"trappings": "камердинер, придворный наряд, рапира или зеркальце, украшения на сумму 3d10 золотых крон"
 		},
 		{
 			"id": "Scoundrel",
-			"name": "Scoundrel",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.JTKAh4qCOCcPa2yN]{Charlatan}</p>"
+			"name": "Махинатор",
+			"class": "Шельма",
+			"careerGroup": "Шарлатан",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.JTKAh4qCOCcPa2yN]{Шарлатан}</p>",
+			"trappings": "писчий набор, поддельная печать"
 		},
 		{
 			"id": "Scout",
-			"name": "Scout",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Xl9yyv67BB8a8XFo]{Scout}</p>"
+			"name": "Разведчик",
+			"class": "Крестьянин",
+			"careerGroup": "Разведчик",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Xl9yyv67BB8a8XFo]{Разведчик}</p>",
+			"trappings": "кольчужная рубаха, лук и 10 стрел"
 		},
 		{
 			"id": "Seaman",
-			"name": "Seaman",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.wu6aG1XPdzvpiLcR]{Seaman}</p>"
+			"name": "Моряк",
+			"class": "Речник",
+			"careerGroup": "Моряк",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.wu6aG1XPdzvpiLcR]{Моряк}</p>",
+			"trappings": "кожаная жилетка, ручное оружие (лодочный багор)"
 		},
 		{
 			"id": "Seer",
-			"name": "Seer",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.M9NiEgE7qaCXmskM]{Mystic}</p>"
+			"name": "Провидец",
+			"class": "Крестьянин",
+			"careerGroup": "Мистик",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.M9NiEgE7qaCXmskM]{Мистик}</p>",
+			"trappings": "рабочие инструменты (астролог)"
 		},
 		{
 			"id": "Seneschal",
-			"name": "Seneschal",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.XUrZJ3f1xtarPihy]{Warden}</p>"
+			"name": "Сенешаль",
+			"class": "Придворный",
+			"careerGroup": "Смотритель",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.XUrZJ3f1xtarPihy]{Смотритель}</p>",
+			"trappings": "кираса, сенешальский жезл, штат смотрителей и сторожей"
 		},
 		{
 			"id": "Sentry",
 			"name": "Часовой",
 			"class": "Воин",
 			"careerGroup": "Охранник",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.qaL8gLZdfOL5F5UV]{Охранник}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.qaL8gLZdfOL5F5UV]{Охранник}</p>",
+			"trappings": "баклер, кожаная жилетка, ламповое масло, масляный фонарь"
 		},
 		{
 			"id": "Sergeant",
 			"name": "Сержант",
 			"class": "Воин",
 			"careerGroup": "Солдат",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.kT0ZI0LoHmIvhjPk]{Солдат}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.kT0ZI0LoHmIvhjPk]{Солдат}</p>",
+			"trappings": "знак служебного положения, отряд новобранцев"
 		},
 		{
 			"id": "Servant",
-			"name": "Servant",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.g12yhcU74qsRKxXX]{Servant}</p>"
+			"name": "Слуга",
+			"class": "Придворный",
+			"careerGroup": "Слуга",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.g12yhcU74qsRKxXX]{Слуга}</p>",
+			"trappings": "ливрея"
 		},
 		{
 			"id": "Sewer Jack",
 			"name": "Чистильщик",
 			"class": "Бюргер",
 			"careerGroup": "Крысолов",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.0DuRRCYdahOKxDPF]{Крысолов}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.0DuRRCYdahOKxDPF]{Крысолов}</p>",
+			"trappings": "кожаная куртка, лампа Давриха, ручное оружие"
 		},
 		{
 			"id": "Ship's Master",
-			"name": "Ship's Master",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.wu6aG1XPdzvpiLcR]{Seaman}</p>"
+			"name": "Капитан корабля",
+			"class": "Речник",
+			"careerGroup": "Моряк",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.wu6aG1XPdzvpiLcR]{Моряк}</p>",
+			"trappings": "зрительная труба, карты, парусный корабль, секстант, экипаж"
 		},
 		{
 			"id": "Shipsword",
-			"name": "Shipsword",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.EBpCBitHuWElKf3D]{Riverwarden}</p>"
+			"name": "Корабельный меч",
+			"class": "Речник",
+			"careerGroup": "Речной стражник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.EBpCBitHuWElKf3D]{Речной стражник}</p>",
+			"trappings": "кольчужная рубаха, крюк-кошка, шлем"
 		},
 		{
 			"id": "Shipsword Master",
-			"name": "Shipsword Master",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.EBpCBitHuWElKf3D]{Riverwarden}</p>"
+			"name": "Командир корабельных мечей",
+			"class": "Речник",
+			"careerGroup": "Речной стражник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.EBpCBitHuWElKf3D]{Речной стражник}</p>",
+			"trappings": "знак служебного положения, патрульные лодки с экипажем"
 		},
 		{
 			"id": "Sleuth",
 			"name": "Сыщик",
 			"class": "Бюргер",
 			"careerGroup": "Следователь",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.DAHJ4cu3WiGCdakE]{Следователь}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.DAHJ4cu3WiGCdakE]{Следователь}</p>",
+			"trappings": "дневник, ламповое масло, масляная лампа, писчий набор"
 		},
 		{
 			"id": "Smuggler",
-			"name": "Smuggler",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.TaOvUqKMJoPeuynD]{Smuggler}</p>"
+			"name": "Контрабандист",
+			"class": "Речник",
+			"careerGroup": "Контрабандист",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.TaOvUqKMJoPeuynD]{Контрабандист}</p>",
+			"trappings": "2 бочки, гребная лодка, кожаная куртка, ручное оружие"
 		},
 		{
 			"id": "Smuggler King",
-			"name": "Smuggler King",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.TaOvUqKMJoPeuynD]{Smuggler}</p>"
+			"name": "Король контрабандистов",
+			"class": "Речник",
+			"careerGroup": "Контрабандист",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.TaOvUqKMJoPeuynD]{Контрабандист}</p>",
+			"trappings": "гримёрный набор, флотилия речных лодок"
 		},
 		{
 			"id": "Soldier",
 			"name": "Солдат",
 			"class": "Воин",
 			"careerGroup": "Солдат",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.kT0ZI0LoHmIvhjPk]{Солдат}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.kT0ZI0LoHmIvhjPk]{Солдат}</p>",
+			"trappings": "латная кираса, оружие (любое), шлем"
 		},
 		{
 			"id": "Spy",
-			"name": "Spy",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.dWLxT0zRnDFbwTKZ]{Spy}</p>"
+			"name": "Шпион",
+			"class": "Придворный",
+			"careerGroup": "Шпион",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.dWLxT0zRnDFbwTKZ]{Шпион}</p>",
+			"trappings": "гримёрный набор, зрительная труба, ручное оружие, сеть осведомителей"
 		},
 		{
 			"id": "Spymaster",
-			"name": "Spymaster",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.dWLxT0zRnDFbwTKZ]{Spy}</p>"
+			"name": "Глава шпионов",
+			"class": "Придворный",
+			"careerGroup": "Шпион",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.dWLxT0zRnDFbwTKZ]{Шпион}</p>",
+			"trappings": "деловая контора, обширная сеть агентов, шпионов и осведомителей"
 		},
 		{
 			"id": "Squire",
 			"name": "Оруженосец",
 			"class": "Воин",
 			"careerGroup": "Рыцарь",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.n2VdkCPNNxdupjeQ]{Рыцарь}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.n2VdkCPNNxdupjeQ]{Рыцарь}</p>",
+			"trappings": "верховая лошадь, кожаная куртка, кольчужная рубаха, рабочие инструменты (коновал), седло и сбруя, щит"
 		},
 		{
 			"id": "Stevedore",
-			"name": "Stevedore",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lDvbNLRfv9MsNyf6]{Stevedore}</p>"
+			"name": "Докер",
+			"class": "Речник",
+			"careerGroup": "Докер",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.lDvbNLRfv9MsNyf6]{Докер}</p>",
+			"trappings": "вязаная шапка, кожаная жилетка, лицензия Гильдии Докеров, трубка и табак"
 		},
 		{
 			"id": "Steward",
-			"name": "Steward",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.g12yhcU74qsRKxXX]{Servant}</p>"
+			"name": "Домоправитель",
+			"class": "Придворный",
+			"careerGroup": "Слуга",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.g12yhcU74qsRKxXX]{Слуга}</p>",
+			"trappings": "отличная одежда, ручное оружие, слуга"
 		},
 		{
 			"id": "Student",
-			"name": "Student",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.cIBJfaY9DKJh5ZEM]{Scholar}</p>"
+			"name": "Студент",
+			"class": "Книгочей",
+			"careerGroup": "Учёный",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.cIBJfaY9DKJh5ZEM]{Учёный}</p>",
+			"trappings": "книга, крепкая выпивка, мнение обо всём на свете, писчий набор"
 		},
 		{
 			"id": "Student Engineer",
-			"name": "Student Engineer",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.c2n86bcUngGrHyO4]{Engineer}</p>"
+			"name": "Студент-инженер",
+			"class": "Книгочей",
+			"careerGroup": "Инженер",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.c2n86bcUngGrHyO4]{Инженер}</p>",
+			"trappings": "книга (инженерное дело), молоток и штырь"
 		},
 		{
 			"id": "Student Lawyer",
-			"name": "Student Lawyer",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.GhqPa2iwEdc4Dokc]{Lawyer}</p>"
+			"name": "Студент-законник",
+			"class": "Книгочей",
+			"careerGroup": "Законник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.GhqPa2iwEdc4Dokc]{Законник}</p>",
+			"trappings": "книга (законы), увеличительное стекло"
 		},
 		{
 			"id": "Swindler",
-			"name": "Swindler",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.JTKAh4qCOCcPa2yN]{Charlatan}</p>"
+			"name": "Мошенник",
+			"class": "Шельма",
+			"careerGroup": "Шарлатан",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.JTKAh4qCOCcPa2yN]{Шарлатан}</p>",
+			"trappings": "игральные кости, колода карт, 2 комплекта одежды, рюкзак"
 		},
 		{
 			"id": "Tax Collector",
-			"name": "Tax Collector",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.WbjmnVlyJ9VP2nt4]{Bailiff}</p>"
+			"name": "Мытарь",
+			"class": "Крестьянин",
+			"careerGroup": "Бейлиф",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.WbjmnVlyJ9VP2nt4]{Бейлиф}</p>",
+			"trappings": "ручное оружие, сундучок с замком"
 		},
 		{
 			"id": "Thief",
-			"name": "Thief",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.TgcyR0ZdG6bMOK9o]{Thief}</p>"
+			"name": "Вор",
+			"class": "Шельма",
+			"careerGroup": "Вор",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.TgcyR0ZdG6bMOK9o]{Вор}</p>",
+			"trappings": "верёвка, рабочие инструменты (вор)"
 		},
 		{
 			"id": "Thief-taker",
-			"name": "Thief-taker",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.bsQN8B1mtZhl2WRu]{Bounty Hunter}</p>"
+			"name": "Ловец воров",
+			"class": "Странник",
+			"careerGroup": "Охотник за головами",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.bsQN8B1mtZhl2WRu]{Охотник за головами}</p>",
+			"trappings": "верёвка, кожаная жилетка, ручное оружие"
 		},
 		{
 			"id": "Thug",
-			"name": "Thug",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.yGZN7bMjbGH7kCMK]{Racketeer}</p>"
+			"name": "Громила",
+			"class": "Шельма",
+			"careerGroup": "Бандит",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.yGZN7bMjbGH7kCMK]{Бандит}</p>",
+			"trappings": "кастет, кожаная куртка"
 		},
 		{
 			"id": "Toll Keeper",
-			"name": "Toll Keeper",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.8zowZP5UEKTM9ehU]{Road warden}</p>"
+			"name": "Сборщик пошлин",
+			"class": "Странник",
+			"careerGroup": "Дорожный стражник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.8zowZP5UEKTM9ehU]{Дорожный стражник}</p>",
+			"trappings": "арбалет и 10 болтов, кожаная куртка, мундир"
 		},
 		{
 			"id": "Tomb Robber",
-			"name": "Tomb Robber",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.W2Ovj3ec7eqZUuuv]{Grave Robber}</p>"
+			"name": "Расхититель гробниц",
+			"class": "Шельма",
+			"careerGroup": "Гробокопатель",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.W2Ovj3ec7eqZUuuv]{Гробокопатель}</p>",
+			"trappings": "верёвка, кожаная куртка, лошадь, повозка, рабочие инструменты (вор), ручное оружие (кирка)"
 		},
 		{
 			"id": "Town Councilor",
 			"name": "Городской старшина",
 			"class": "Бюргер",
 			"careerGroup": "Горожанин",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.uqdZBoLtuLv0bHVV]{Горожанин}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.uqdZBoLtuLv0bHVV]{Горожанин}</p>",
+			"trappings": "городской дом, карета с кучером"
 		},
 		{
 			"id": "Townsman",
 			"name": "Горожанин",
 			"class": "Бюргер",
 			"careerGroup": "Горожанин",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.uqdZBoLtuLv0bHVV]{Горожанин}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.uqdZBoLtuLv0bHVV]{Горожанин}</p>",
+			"trappings": "писчий набор, скромный городской дом, слуга"
 		},
 		{
 			"id": "Tracker",
-			"name": "Tracker",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.2RxWvPZCKW2ShY5a]{Hunter}</p>"
+			"name": "Следопыт",
+			"class": "Крестьянин",
+			"careerGroup": "Охотник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.2RxWvPZCKW2ShY5a]{Охотник}</p>",
+			"trappings": "палатка, рюкзак, спальный мешок"
 		},
 		{
 			"id": "Trader",
 			"name": "Торговец",
 			"class": "Бюргер",
 			"careerGroup": "Купец",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.FLqzxS5gxKflqDUk]{Купец}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.FLqzxS5gxKflqDUk]{Купец}</p>",
+			"trappings": "абак, мул, парусиновый навес, повозка, 3d10 серебряных шиллингов"
 		},
 		{
 			"id": "Trapper",
-			"name": "Trapper",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.2RxWvPZCKW2ShY5a]{Hunter}</p>"
+			"name": "Зверолов",
+			"class": "Крестьянин",
+			"careerGroup": "Охотник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.2RxWvPZCKW2ShY5a]{Охотник}</p>",
+			"trappings": "ловушки на животных, праща и 10 пуль, прочные сапоги, плащ, ручное оружие"
 		},
 		{
 			"id": "Treasure Hunter",
-			"name": "Treasure Hunter",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.W2Ovj3ec7eqZUuuv]{Grave Robber}</p>"
+			"name": "Охотник за сокровищами",
+			"class": "Шельма",
+			"careerGroup": "Гробокопатель",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.W2Ovj3ec7eqZUuuv]{Гробокопатель}</p>",
+			"trappings": "карты, палатка, писчий набор, рабочие инструменты (инженер), спальный мешок"
 		},
 		{
 			"id": "Troll Slayer",
 			"name": "Убийца троллей",
 			"class": "Воин",
 			"careerGroup": "Убийца чудовищ",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.9p3DaFU5hMFP1C3v]{Убийца чудовищ}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.9p3DaFU5hMFP1C3v]{Убийца чудовищ}</p>",
+			"trappings": "татуировки, топор, фляжка с крепкой выпивкой, чувство вины"
 		},
 		{
 			"id": "Troubadour",
-			"name": "Troubadour",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.b96g5MZr3rk5zYAo]{Entertainer}</p>"
+			"name": "Трубадур",
+			"class": "Странник",
+			"careerGroup": "Артист",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.b96g5MZr3rk5zYAo]{Артист}</p>",
+			"trappings": "дрессированное животное, писчий набор"
 		},
 		{
 			"id": "Troupe Leader",
-			"name": "Troupe Leader",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.b96g5MZr3rk5zYAo]{Entertainer}</p>"
+			"name": "Глава труппы",
+			"class": "Странник",
+			"careerGroup": "Артист",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.b96g5MZr3rk5zYAo]{Артист}</p>",
+			"trappings": "гардероб с костюмами, сундук с реквизитом, труппа артистов, упряжные лошади, фургон (сцена)"
 		},
 		{
 			"id": "Vagabond",
-			"name": "Vagabond",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.jAqbxNrHW35xiuOn]{Pedlar}</p>"
+			"name": "Лоточник",
+			"class": "Странник",
+			"careerGroup": "Коробейник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.jAqbxNrHW35xiuOn]{Коробейник}</p>",
+			"trappings": "палатка, рюкзак, спальный мешок, товары на 2d10 медных пенни"
 		},
 		{
 			"id": "Village Elder",
-			"name": "Village Elder",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.btrs5XFk2OQsCtqj]{Villager}</p>"
+			"name": "Староста",
+			"class": "Крестьянин",
+			"careerGroup": "Селянин",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.btrs5XFk2OQsCtqj]{Селянин}</p>",
+			"trappings": "уважение односельчан"
 		},
 		{
 			"id": "Villager",
-			"name": "Villager",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.btrs5XFk2OQsCtqj]{Villager}</p>"
+			"name": "Селянин",
+			"class": "Крестьянин",
+			"careerGroup": "Селянин",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.btrs5XFk2OQsCtqj]{Селянин}</p>",
+			"trappings": "кожаная жилетка, рабочие инструменты (любые), ручное оружие (топор)"
 		},
 		{
 			"id": "Wandering Trader",
-			"name": "Wandering Trader",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.jAqbxNrHW35xiuOn]{Pedlar}</p>"
+			"name": "Странствующий торговец",
+			"class": "Странник",
+			"careerGroup": "Коробейник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.jAqbxNrHW35xiuOn]{Коробейник}</p>",
+			"trappings": "монеты на сумму 50 серебряных шиллингов, товары на 5d10 золотых крон, упряжная лошадь, фургон"
 		},
 		{
 			"id": "Warden",
-			"name": "Warden",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.XUrZJ3f1xtarPihy]{Warden}</p>"
+			"name": "Смотритель",
+			"class": "Придворный",
+			"careerGroup": "Смотритель",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.XUrZJ3f1xtarPihy]{Смотритель}</p>",
+			"trappings": "верховая лошадь, кожаная куртка, ручное оружие или лук и 10 стрел, седло и сбруя"
 		},
 		{
 			"id": "Warlock",
-			"name": "Warlock",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.5ITpDJoRHlIgbE0g]{Witch}</p>"
+			"name": "Колдунья",
+			"class": "Шельма",
+			"careerGroup": "Ведьма",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.5ITpDJoRHlIgbE0g]{Ведьма}</p>",
+			"trappings": "мантия, череп"
 		},
 		{
 			"id": "Warrior Priest",
 			"name": "Жрец-воин",
 			"class": "Воин",
 			"careerGroup": "Жрец-воин",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.KG5lVereynSwOkxa]{Жрец-воин}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.KG5lVereynSwOkxa]{Жрец-воин}</p>",
+			"trappings": "кираса, оружие (любое)"
 		},
 		{
 			"id": "Watch Captain",
 			"name": "Капитан Городской стражи",
 			"class": "Бюргер",
 			"careerGroup": "Городской стражник",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Tt8DCpewqkmBq02v]{Городской стражник}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Tt8DCpewqkmBq02v]{Городской стражник}</p>",
+			"trappings": "верховая лошадь, отличная шляпа, отличное ручное оружие, отличный знак служебного положения, седло и сбруя"
 		},
 		{
 			"id": "Watch Recruit",
 			"name": "Новобранец Городской стражи",
 			"class": "Бюргер",
 			"careerGroup": "Городской стражник",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Tt8DCpewqkmBq02v]{Городской стражник}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Tt8DCpewqkmBq02v]{Городской стражник}</p>",
+			"trappings": "кожаная куртка, мундир, ручное оружие"
 		},
 		{
 			"id": "Watch Sergeant",
 			"name": "Сержант Городской стражи",
 			"class": "Бюргер",
 			"careerGroup": "Городской стражник",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Tt8DCpewqkmBq02v]{Городской стражник}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Tt8DCpewqkmBq02v]{Городской стражник}</p>",
+			"trappings": "знак служебного положения, кираса, шлем"
 		},
 		{
 			"id": "Watchman",
 			"name": "Городской стражник",
 			"class": "Бюргер",
 			"careerGroup": "Городской стражник",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Tt8DCpewqkmBq02v]{Городской стражник}</p>"
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Tt8DCpewqkmBq02v]{Городской стражник}</p>",
+			"trappings": "ламповое масло, масляная лампа на шесте, медный значок"
 		},
 		{
 			"id": "Witch",
-			"name": "Witch",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.5ITpDJoRHlIgbE0g]{Witch}</p>"
+			"name": "Ведьма",
+			"class": "Шельма",
+			"careerGroup": "Ведьма",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.5ITpDJoRHlIgbE0g]{Ведьма}</p>",
+			"trappings": "мешок, посох, рабочие инструменты (травник), травы"
 		},
 		{
 			"id": "Witch Hunter",
-			"name": "Witch Hunter",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.3A56eFnkIYFmbRL1]{Witch Hunter}</p>"
+			"name": "Охотник на ведьм",
+			"class": "Странник",
+			"careerGroup": "Охотник на ведьм",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.3A56eFnkIYFmbRL1]{Охотник на ведьм}</p>",
+			"trappings": "верёвка, верховая лошадь, кожаная куртка, одноручный арбалет и 10 болтов или пистолет и 10 зарядов, седло и сбруя, серебрёный меч, шляпа пилигрима"
 		},
 		{
 			"id": "Witchfinder General",
-			"name": "Witchfinder General",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.3A56eFnkIYFmbRL1]{Witch Hunter}</p>"
+			"name": "Великий инквизитор",
+			"class": "Странник",
+			"careerGroup": "Охотник на ведьм",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.3A56eFnkIYFmbRL1]{Охотник на ведьм}</p>",
+			"trappings": "великолепный придворный наряд, подчинённые охотники на ведьм"
 		},
 		{
 			"id": "Wizard",
-			"name": "Wizard",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.m6WuSnrrW7QllX63]{Wizard}</p>"
+			"name": "Маг",
+			"class": "Книгочей",
+			"careerGroup": "Маг",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.m6WuSnrrW7QllX63]{Маг}</p>",
+			"trappings": "лицензия мага"
 		},
 		{
 			"id": "Wizard Lord",
-			"name": "Wizard Lord",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.m6WuSnrrW7QllX63]{Wizard}</p>"
+			"name": "Верховный маг",
+			"class": "Книгочей",
+			"careerGroup": "Маг",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.m6WuSnrrW7QllX63]{Маг}</p>",
+			"trappings": "библиотека (магия), мастерская (маг), ученики"
 		},
 		{
 			"id": "Wizard's Apprentice",
-			"name": "Wizard's Apprentice",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.m6WuSnrrW7QllX63]{Wizard}</p>"
+			"name": "Ученик мага",
+			"class": "Книгочей",
+			"careerGroup": "Маг",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.m6WuSnrrW7QllX63]{Маг}</p>",
+			"trappings": "гримуар, посох"
 		},
 		{
 			"id": "Wrecker",
-			"name": "Wrecker",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.AnW8kwDb9koFgMPx]{Wrecker}</p>"
+			"name": "Побережник",
+			"class": "Речник",
+			"careerGroup": "Побережник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.AnW8kwDb9koFgMPx]{Побережник}</p>",
+			"trappings": "кожаная жилетка, ламповое масло, масляный фонарь, ручное оружие (лодочный багор)"
 		},
 		{
 			"id": "Wrecker Captain",
-			"name": "Wrecker Captain",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.AnW8kwDb9koFgMPx]{Wrecker}</p>"
+			"name": "Капитан побережников",
+			"class": "Речник",
+			"careerGroup": "Побережник",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.AnW8kwDb9koFgMPx]{Побережник}</p>",
+			"trappings": "баклага эля, ватага побережников, кандалы, флотилия речных лодок"
 		},
 		{
 			"id": "Wyrd",
-			"name": "Wyrd",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.5ITpDJoRHlIgbE0g]{Witch}</p>"
+			"name": "Ведунья",
+			"class": "Шельма",
+			"careerGroup": "Ведьма",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.5ITpDJoRHlIgbE0g]{Ведьма}</p>",
+			"trappings": "плащ с карманами, рюкзак, талисман"
 		},
 		{
 			"id": "Zealot",
-			"name": "Zealot",
-			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Vtice54Y7PV95Dkp]{Flagellant}</p>"
+			"name": "Фанатик",
+			"class": "Странник",
+			"careerGroup": "Флагеллант",
+			"description": "<p>@Compendium[wfrp4e-core.career-descriptions.Vtice54Y7PV95Dkp]{Флагеллант}</p>",
+			"trappings": "лохмотья, плеть"
 		}
 	]
 }
