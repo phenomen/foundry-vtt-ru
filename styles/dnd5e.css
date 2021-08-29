@@ -56,10 +56,6 @@
     font-family: "Oswald", sans-serif;
 }
 
-.dnd5e.sheet.actor ul.skills-list li.skill h4 {
-    font-family: "Oswald", sans-serif;
-}
-
 .dnd5e.sheet.actor .traits label {
     font-family: "Oswald", sans-serif;
     font-weight: 500;
@@ -227,7 +223,8 @@
 }
 
 .dnd5e.sheet.actor ul.skills-list li.skill h4 {
-    font-size: 12px;
+    font-family: "Oswald", sans-serif;
+    font-size: 13px;
     overflow: hidden;
 }
 
@@ -253,6 +250,13 @@
     height: 73px;
 }
 
+.dnd5e.sheet.actor.npc .header-exp {
+    flex: 0 0 120px;
+}
+
+.dnd5e.sheet.actor.npc .header-exp .experience, .dnd5e.sheet.actor.npc .header-exp .proficiency {
+    font-size: 14px;
+}
 
 /* TIDY5E */
 
