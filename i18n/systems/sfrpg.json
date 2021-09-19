@@ -8,6 +8,7 @@
         "TypeVehicle": "Транспорт"
     },
     "ITEM": {
+        "TypeAmmunition": "Ammunition",
         "TypeArchetypes": "Архетип",
         "TypeAsi": "Повышение характеристик",
         "TypeAugmentation": "Аугментация",
@@ -234,6 +235,8 @@
                     "Tooltip": "Это число представляет суммарную стоимость вещей в инвентаре."
                 },
                 "Weapon": {
+                    "AlreadyFullyLoaded": "The weapon {name} is already fully loaded.",
+                    "NoAmmunitionAvailable": "You have no ammunition available for the weapon {name}.",
                     "Reload": "Перезарядить"
                 }
             },
@@ -915,6 +918,26 @@
                 "Range": "Дистанция",
                 "Target": "Цель"
             },
+            "Ammunition": {
+                "AmmunitionType": "Ammunition Type",
+                "Capacity": "Capacity Settings",
+                "Details": "Ammunition Details",
+                "Type": {
+                    "Arrows": "Arrows",
+                    "Charges": "Charges",
+                    "Darts": "Darts",
+                    "Flares": "Flares",
+                    "Fuel": "Fuel",
+                    "HeavyRounds": "Heavy Rounds",
+                    "LongarmAndSniperRounds": "Longarm and Sniper Rounds",
+                    "Missiles": "Missiles",
+                    "None": "None",
+                    "Rockets": "Rockets",
+                    "SmallArmRounds": "Small Arm Rounds",
+                    "Shells": "Shells"
+                },
+                "UseCapacity": "Use Capacity"
+            },
             "Attuned": "Настроено",
             "Augmentation": {
                 "Details": "Описание аугментации",
@@ -934,6 +957,7 @@
                 "AbilityScoreIncrease": "Повышения характеристик",
                 "Archetypes": "Архетипы",
                 "Armor": "Броня",
+                "Ammunition": "Ammunition",
                 "ArmorUpgrades": "Улучшения брони",
                 "Augmentations": "Аугментации",
                 "Classes": "Классы",
@@ -987,7 +1011,8 @@
                 "Hands": "Рук",
                 "Level": "Уровень",
                 "Price": "Цена",
-                "Quantity": "Количество"
+                "Quantity": "Количество",
+                "QuantityPerPack": "Pack size"
             },
             "Equipment": {
                 "Action": "Действие",
