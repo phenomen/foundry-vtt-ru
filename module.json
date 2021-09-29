@@ -2,7 +2,7 @@
     "name": "ru-ru",
     "title": "Russian Translation | Русский перевод",
     "description": "Модуль добавляет русский язык в Foundry VTT, системы D&D5, Pathfinder 1e, Pathfinder 2e, Starfinder, Mutants Year Zero, Forbidden Lands, Tales from the Loop, Coriolis, WFRP4, OSE, GURPS, Delta Green, Dungeon World, Savage World, Cypher, Traveller, Genesys и некоторые модули.<br/><br/><b>Ведущий</b> должен выполнить следующее в каждом созданном мире:<br/>Game Settings > Manage Modules и поставить галочку на Russian Translation.<br/><b>Каждый участник</b> должен выполнить следующее:<br/>Game Settings > Configure Settings и поменять Language на Russian.<br/>",
-    "version": "0.9.3.1",
+    "version": "0.9.3.5",
     "minimumCoreVersion": "0.8.6",
     "compatibleCoreVersion": "0.9.1",
     "coreTranslation": true,
@@ -17,7 +17,8 @@
         "scripts/init.js"
     ],
     "packs": [],
-    "languages": [{
+    "languages": [
+        {
             "lang": "ru",
             "name": "Russian",
             "path": "dist/combined.json"
@@ -106,6 +107,11 @@
             "lang": "ru",
             "path": "i18n/systems/wfrp4e.json",
             "system": "wfrp4e"
+        },
+        {
+            "lang": "ru",
+            "path": "i18n/systems/thewitcher.json",
+            "system": "TheWitcherTRPG"
         }
     ],
     "url": "https://github.com/Phenomen/foundry-vtt-ru",
