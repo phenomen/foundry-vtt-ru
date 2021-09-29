@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'dead-saloon';
+    src: url('../fonts/manuskriptantd-reg.ttf');
+}
+
+/* SWADE */
+
+:root {
+    --body-font-family: 'PT Serif', Georgia, serif;
+    --heading-font-family: 'Oswald', sans-serif;
+    --table-title-font-family: 'PT Serif', Georgia, serif;
+    --table-headers-font-family: 'PT Serif', Georgia, serif;
+    --table-summary-font-family: 'Oswald', sans-serif;
+    --quote-font-family: 'Rock Salt', cursive;
+  }
+
+  .swade-official {
+    --section-header-size: 1.4em;
+    --section-header-font: 'Oswald', sans-serif;
+    --default-font: 'PT Serif', Georgia, serif;
+  }
+
+.swade-official .tabs .item {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6em;
+}
+
+.swade .check-container, .swade-official .check-container {
+    font-size: 1em;
+    padding-left: 25px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+
+.swade-official .derived .stat-label {
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+}
+
+.swade-official .primary .attribute-label {
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* DEADLANDS */
+.swade-official.actor.deadlands-sheet {
+    --section-header-size: 1.3em;
+	--default-font: 'PT Serif', Georgia, serif;
+}
+
+.deadlands-sheet .tabs .item {
+    font-family: 'dead-saloon' !important;
+    font-size: 1.4em;
+}
