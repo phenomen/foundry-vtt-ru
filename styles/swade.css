@@ -1,73 +1,109 @@
 @font-face {
-    font-family: 'dead-saloon';
-    src: url('../fonts/manuskriptantd-reg.ttf');
+  font-family: "dead-saloon";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap");
 }
 
 /* SWADE */
 
 :root {
-    --body-font-family: 'PT Serif', Georgia, serif;
-    --heading-font-family: 'Oswald', sans-serif;
-    --table-title-font-family: 'PT Serif', Georgia, serif;
-    --table-headers-font-family: 'PT Serif', Georgia, serif;
-    --table-summary-font-family: 'Oswald', sans-serif;
-    --quote-font-family: 'Rock Salt', cursive;
-  }
-
-  .swade-official {
-    --section-header-size: 1.4em;
-    --section-header-font: 'Oswald', sans-serif;
-    --default-font: 'PT Serif', Georgia, serif;
-  }
-
-.swade-official .tabs .item {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.6em;
+  --body-font-family: "PT Serif", Georgia, serif;
+  --heading-font-family: "Oswald", sans-serif;
+  --table-title-font-family: "PT Serif", Georgia, serif;
+  --table-headers-font-family: "PT Serif", Georgia, serif;
+  --table-summary-font-family: "Oswald", sans-serif;
+  --quote-font-family: "Rock Salt", cursive;
 }
 
-.swade .check-container, .swade-official .check-container {
-    font-size: 13px;
-    padding-left: 25px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 500;
+.swade-official {
+  --section-header-size: 1.4em;
+  --section-header-font: "Roboto Slab", sans-serif;
+  --default-font: "PT Serif", Georgia, serif;
+}
+
+.swade-official .label {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: bold;
+}
+
+.swade.sheet .tabs .item {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 600;
+}
+
+.swade-official .header .header-name {
+  font-weight: bold;
+}
+
+.swade-official .tabs .item {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1.2em;
+}
+
+.swade .check-container,
+.swade-official .check-container {
+  font-size: 1em;
+  padding-left: 25px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
 }
 
 .swade-official .derived .stat-label {
-    font-weight: 500;
-    font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
 }
 
 .swade-official .primary .attribute-label {
-    font-size: 10px;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-family: 'Oswald', sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+}
+
+.swade.sheet.actor .attribute-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
 }
 
 .swade-official .section-header .controls {
-    font-family: 'Oswald';
-    font-size: 12px;
+  font-family: "Oswald";
+  font-size: 12px;
 }
 
 .swade-official .item-controls button {
-    padding: 0;
-    font-family: 'Oswald';
-    font-size: 12px;
+  padding: 0;
+  font-family: "Oswald";
+  font-size: 12px;
 }
 
-.swade.sheet.actor .sheet-body .attributes .attributes-list .attribute .attribute-label {
-    font-family: 'Oswald';
-    font-weight: 500;
-    font-size: 12px;
+.swade-official .section-header .name {
+  font-weight: bold;
+}
+
+#pause {
+  font-family: "Roboto Slab";
+  font-weight: bold;
 }
 
 /* DEADLANDS */
 .swade-official.actor.deadlands-sheet {
-    --section-header-size: 1.3em;
-	--default-font: 'PT Serif', Georgia, serif;
+  --section-header-size: 1.3em;
+  --section-header-font: "Roboto Slab", sans-serif;
+  --default-font: "PT Serif", Georgia, serif;
+}
+
+.deadlands-core {
+  font-family: "PT Serif";
 }
 
 .deadlands-sheet .tabs .item {
-    font-family: 'dead-saloon' !important;
-    font-size: 1.4em;
+  font-family: "Roboto Slab";
+  font-weight: bold;
+  font-size: 1.3em;
 }
