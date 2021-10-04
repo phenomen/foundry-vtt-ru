@@ -250,7 +250,7 @@ export function InitWFRP4() {
             if (traitName.includes("(") && traitName.includes(")")) {
                 let res = /(.*) *\((.*)\)/i.exec(traitName);
                 parsedTrait.baseName = res[1].trim();
-                parsedTrait.special = " (" + translateSpecification(res[2].trim()) + ")";
+                parsedTrait.special = " (" + translateSpecification(res[2]) + ")";
             }
 
             return parsedTrait;
