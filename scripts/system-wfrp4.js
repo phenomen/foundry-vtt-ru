@@ -99,17 +99,8 @@ export function InitWFRP4() {
 
                         if (isNaN(originalTrait.data.specification.value)) {
                             // This is a string, so translate it
-                            let specificationKey =
-                                "SPEC." + originalTrait.data.specification.value.trim();
-                            let specification = game.i18n.localize(
-                                "SPEC." + originalTrait.data.specification.value.trim()
-                            );
-                            specification =
-                                specification !== specificationKey ?
-                                specification :
-                                originalTrait.data.specification.value.trim();
-
-                            originalTrait.data.specification.value = specification;
+                            originalTrait.data.specification.value =
+                                translateSpecification(originalTrait.data.specification.value);
                         }
                     } else if (originalTrait.type === "skill") {
                         let translatedSkill = translateSkill(parsedTrait, fullSkills);
@@ -233,6 +224,13 @@ export function InitWFRP4() {
             ].find((skill) => skill !== undefined);
         }
 
+        function translateSpecification(originalSpecification) {
+            let specificationKey = "SPEC." + originalSpecification.trim();
+            let specification = game.i18n.localize(specificationKey);
+
+            return specification !== specificationKey ? specification : originalSpecification.trim();
+        }
+
         function parseTraitName(traitName) {
             traitName = traitName.trim();
             let parsedTrait = {
@@ -252,7 +250,7 @@ export function InitWFRP4() {
             if (traitName.includes("(") && traitName.includes(")")) {
                 let res = /(.*) *\((.*)\)/i.exec(traitName);
                 parsedTrait.baseName = res[1].trim();
-                parsedTrait.special = " (" + game.i18n.localize(res[2].trim()) + ")";
+                parsedTrait.special = " (" + translateSpecification(res[2]) + ")";
             }
 
             return parsedTrait;
