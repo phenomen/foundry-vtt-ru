@@ -9,6 +9,7 @@
     },
     "ITEM": {
         "TypeAmmunition": "Ammunition",
+        "TypeActorresource": "Actor Resource",
         "TypeArchetypes": "Архетип",
         "TypeAsi": "Повышение характеристик",
         "TypeAugmentation": "Аугментация",
@@ -109,6 +110,25 @@
             "Attributes": {
                 "Skills": {
                     "SkillRanks": "Пункты навыка"
+                },
+                "Speed": {
+                    "Flight": {
+                        "Average": "Average",
+                        "Clumsy": "Clumsy",
+                        "Perfect": "Perfect"
+                    },
+                    "MainMovementType": "Main Movement",
+                    "MovementSpeedTitle": "Movement Speed",
+                    "MovementSpeedNamedTitle": "Movement Speed: {name}",
+                    "Types": {
+                        "All": "All speeds",
+                        "Burrowing": "Burrowing",
+                        "Climbing": "Climbing",
+                        "Flying": "Flying",
+                        "Land": "Land",
+                        "Special": "Special",
+                        "Swimming": "Swimming"
+                    }
                 }
             },
             "Biography": {
@@ -130,6 +150,7 @@
             "Features": {
                 "Categories": {
                     "ActiveFeats": "Активные черты",
+                    "ActorResources": "Actor Resources",
                     "Archetypes": "Архетипы",
                     "Classes": "Классы",
                     "PassiveFeats": "Пассивные черты",
@@ -237,13 +258,16 @@
                 "Weapon": {
                     "AlreadyFullyLoaded": "The weapon {name} is already fully loaded.",
                     "NoAmmunitionAvailable": "You have no ammunition available for the weapon {name}.",
-                    "Reload": "Перезарядить"
+                    "Reload": "Перезарядить",
+                    "ReloadFromContainer": "The weapon {name} was reloaded with {ammoName} pulled from the container {containerName}. Double-check your action economy."
                 }
             },
             "Modifiers": {
                 "EffectTypes": {
+                    "ActorResource": "Actor Resource",
                     "AllAttackDamage": "Урон всех атак",
                     "AllAttackRolls": "Все атаки",
+                    "AllSpeeds": "All Speeds",
                     "BAB": "БМА",
                     "BaseAttackBonus": "Базовый модификатор атаки",
                     "Encumbrance": "Нагрузка",
@@ -251,6 +275,7 @@
                     "HP": "ПЗ",
                     "MeleeAttackDamage": "Урон в ближнем бою",
                     "MeleeAttackRolls": "Атаки в ближнем бою",
+                    "MultiplyAllSpeeds": "All Speeds Multiplier",
                     "RangedAttackDamage": "Дистанционный урон",
                     "RangedAttackRolls": "Дистанционные атаки",
                     "Resolve": "Решимость",
@@ -260,6 +285,7 @@
                     "SP": "ПЖ",
                     "SpecificWeaponAttackDamage": "Урон конкретным оружием",
                     "SpecificWeaponAttackRolls": "Атаки конкретным оружием",
+                    "SpecificSpeed": "Specific Speed",
                     "SpellAttackDamage": "Урон заклинанием",
                     "SpellAttackRolls": "Атаки заклинаниями",
                     "Stamina": "Живучесть",
@@ -273,7 +299,8 @@
                 "Tooltips": {
                     "BonusSkillpoints": "{type} Бонус: {mod} ({source})",
                     "ClassSkillpoints": "{class} Очков навыков: {total}",
-                    "SkillRank": "{type} Пунктов: {mod} ({source})"
+                    "SkillRank": "{type} Пунктов: {mod} ({source})",
+                    "Speed": "{speed}: {type} {mod} ({source})"
                 },
                 "UI": {
                     "LongFormula": "Полная формула"
@@ -422,10 +449,11 @@
         "ChatCard": {
             "ContextMenu": {
                 "ApplyDamage": "Применить урон",
-                "ApplyHealing": "Применить лечение",
-                "DamageAndAHalf": "Полуторный урон",
-                "DoubleDamage": "Двойной урон",
-                "HalfDamage": "Половинный урон"
+                "ApplyHealing": "Apply as Healing",
+                "DamageAndAHalf": "Apply 1.5x Damage",
+                "DoubleDamage": "Apply Double Damage",
+                "HalfDamage": "Apply Half Damage",
+                "NoToken": "Cannot apply: No token selected!"
             },
             "ItemActivation": {
                 "Activates": "Активация",
@@ -602,47 +630,32 @@
             "UPBs": "УПО"
         },
         "Cybernetic": "Кибернетика",
-        "Damage": "Урон",
-        "DamageReduction": "Снижение урона",
-        "DamageTypesAcid": "Кислота",
-        "DamageTypesAcidAndBludgeoning": "Кислота и Дробящий",
-        "DamageTypesAcidAndElectricity": "Кислота и Электричество",
-        "DamageTypesAcidAndFire": "Кислота и огонь",
-        "DamageTypesAcidAndPiercing": "Кислота и Колющий",
-        "DamageTypesAcidAndSlashing": "Кислота и Режущий",
-        "DamageTypesAcidOrFire": "Кислота | Огонь",
-        "DamageTypesAcidOrSlashing": "Кислота | Режущий",
-        "DamageTypesBludgeoning": "Дробящий",
-        "DamageTypesBludgeoningAndCold": "Дробящий и Холод",
-        "DamageTypesBludgeoningAndElectricity": "Дробящий и Электричество",
-        "DamageTypesBludgeoningAndFire": "Дробящий и Огонь",
-        "DamageTypesBludgeoningAndSonic": "Дробящий и Звук",
-        "DamageTypesCold": "Холод",
-        "DamageTypesColdAndPiercing": "Холод и Колющий",
-        "DamageTypesColdAndSlashing": "Холод и Режущий",
-        "DamageTypesColdOrFire": "Холод | Огонь",
-        "DamageTypesElectricity": "Электр-во",
-        "DamageTypesElectricityAndFire": "Электричество и Огонь",
-        "DamageTypesElectricityAndPiercing": "Электричество и Колющий",
-        "DamageTypesElectricityAndSlashing": "Электричество и Режущий",
-        "DamageTypesFire": "Огонь",
-        "DamageTypesFireAndForce": "Огонь и Сила",
-        "DamageTypesFireAndPiercing": "Огонь и Колющий",
-        "DamageTypesFireAndSlashing": "Огонь и Режущий",
-        "DamageTypesFireOrSlashing": "Огонь | Режущий",
-        "DamageTypesFireOrSonic": "Огонь | Звук",
-        "DamageTypesForce": "Сила",
-        "DamageTypesNonlethal": "Нелетальный",
-        "DamageTypesPiercing": "Колющий",
-        "DamageTypesPiercingAndSonic": "Колющий и Звук",
-        "DamageTypesRadiation": "Радиация",
-        "DamageTypesSlashing": "Режущий",
-        "DamageTypesSlashingAndPiercing": "Режущий и Колющий",
-        "DamageTypesSlashingAndSonic": "Режущий и Звук",
-        "DamageTypesSonic": "Звук",
-        "DamImm": "Иммунитет к урону",
-        "DamRes": "Устойчивость к энергии",
-        "DamVuln": "Уязвимость к урону",
+        "Damage": {
+            "Immunities": "Damage Immunities",
+            "Reduction": "Damage Reduction",
+            "Resistances": "Energy Resistances",
+            "Title": "Damage",            
+            "Types": {
+                "Acid": "Acid",
+                "Bludgeoning": "Bludgeoning",
+                "Cold": "Cold",
+                "Electricity": "Electricity",
+                "Fire": "Fire",
+                "Force": "Force",
+                "Hint": "This is a list of damage types that apply to this damage roll.",
+                "Nonlethal": "Nonlethal",
+                "Piercing": "Piercing",
+                "Radiation": "Radiation",
+                "Slashing": "Slashing",
+                "Sonic": "Sonic",
+                "Title": "Damage Types",
+                "Operators": {
+                    "And": "and",
+                    "Or": "or"
+                }
+            },
+            "Vulnerabilities": "Damage Vulnerabilities"
+        },
         "Description": "Описание",
         "DescriptionShort": "Краткое описание",
         "Details": "Подробности",
@@ -1079,11 +1092,14 @@
                 "AllowedClasses": "Доступные классы",
                 "Casting": "Сотворение заклинания",
                 "Concentration": "Концентрация",
+                "ConcentrationTooltip": "This spell requires concentration.<br/>You must use the 'Concentrate to Maintain Spell' action (CRB pg. 246) to maintain it.",
                 "Consumed": "Потребляются",
                 "Cost": "Стоимость (Кр)",
                 "Details": "Описание заклинания",
                 "Dismissible": "Прекращаемое",
                 "Effects": "Эффекты заклинания",
+                "IsVariableLevel": "Is Variable Level?",
+                "IsVariableLevelYes": "Yes",
                 "Level": "Круг заклинания",
                 "PreparationMode": "Способ подготовки",
                 "Prepared": "Подготовлено",
@@ -1141,6 +1157,63 @@
                 "Instruction": "* Выберите 4 характеристики для повышения.",
                 "ItemName": "Повышение характеристик: Уровень {level}",
                 "Label": "Характристики"
+            },
+            "ActorResource": {
+                "Base": "Base value",
+                "BaseTooltip": "(Required) The base value defines the base value of this resource. Modifiers may alter it.<br/>Attribute: @resources.type.subtype.base",
+                "CombatTracker": "Combat Tracker settings",
+                "DisplayAbsoluteValue": "Display Absolute Value",
+                "DisplayAbsoluteValueTooltip": "Should the displayed value in the combat tracker be absolute? i.e. -1 is displayed as 1, -2 as 2, etc.",
+                "Enabled": "Enabled",
+                "EnabledTooltip": "If unchecked this resource will not produce a key in the resources data format, nor will it have automation running on it.",
+                "ErrorIncompleteData": "Resource is missing type, subType, or base value.",
+                "ErrorMissingFields": "Please fill in any of the missing fields.",
+                "ErrorNoBase": "Base value is a required field.",
+                "ErrorNoSubType": "Subtype is a required field.",
+                "ErrorNoType": "Type is a required field.",
+                "Header": "Resource Properties",
+                "Range": "Value range",
+                "RangeTooltip": "(Optional) Minimum and maximum values for this resource.<br/>The value cannot be lower than the range minimum, nor can it be higher than the range maximum.",
+                "RangeMode": "Range mode",
+                "RangeModeImmediate": "Immediate",
+                "RangeModePost": "Post",
+                "RangeModeTooltip": "(Advanced) Defines whether the range limitations are applied only after the modifiers are all processed, or for each modifier as they are being processed.<br/><br/>For example, if the range is set to maximum of 1, and the base value is 0, and you have a modifier of +2, and a modifier of -1, the different modes would work as follows:<br/><br/>Post: 0 + 2 - 1 would output 1, which does not exceed the range maximum.<br/><br/>Immediate: 0 + 2 - 1 would output 0. Because 0 + 2 is 2, which exceeds the range maximum of 1, so it gets clamped to 1. Then -1 is applied, producing 0.",
+                "ShowInCombatTracker": "Show in Combat Tracker",
+                "ShowInCombatTrackerTooltip": "If enabled, this resource will be visible in the combat tracker for quick reference.",
+                "ShowOwnerAndGMOnly": "Only shown for Owner and GM",
+                "ShowOwnerAndGMOnlyTooltip": "If enabled, this resource will only be visible in the combat tracker for the sheet owner and the GM.",
+                "SubType": "Subtype",
+                "SubTypeTooltip": "(Required) Subtype makes up the second half of the resource identifier.<br/>For example: @resources.type.subtype.value",
+                "Type": "Type",
+                "TypeTooltip": "(Required) Type makes up the first half of the resource identifier.<br/>For example: @resources.type.subtype.value",
+                "Usage": "Attribute usage",
+                "UsageBaseValue": "Base value",
+                "UsageComputedValue": "Computed value",
+                "UsageTooltip": "What follows are a couple of example attributes how you may be able to access this resource in formulas:",
+                "Visualizations": "Conditional Visualization",
+                "VisualizationsIntro": "If resource value is..",
+                "VisualizationsModeEqual": "equal to",
+                "VisualizationsModeNotEqual": "not equal to",
+                "VisualizationsModeGreaterThan": "greater than",
+                "VisualizationsModeGreaterThanEqual": "greather than or equal to",
+                "VisualizationsModeLesserThan": "lesser than",
+                "VisualizationsModeLesserThanEqual": "lesser than or equal to",
+                "VisualizationsThen": "Then:",
+                "VisualizationsTitle": "Title:"
+            },
+            "Class": {
+                "SpellCasting": {
+                    "ClassLevel": "Class Level",
+                    "Header": "Spellcasting",
+                    "IsCaster": "Spellcaster",
+                    "KeyAbilityScore": "Key Ability Score",
+                    "SpellsKnown": "Spells Known",
+                    "SpellsKnownHeader": "Spells Known (by spell level)",
+                    "SpellsPerDay": "Spells Per Day",
+                    "SpellsPerDayHeader": "Spells Per Day (by spell level)",
+                    "SpellsPerDayBonus": "Bonus Spells Per Day",
+                    "SpellsPerDayBonusHeader": "Bonus Spells Per Day (by spell level)"
+                }
             },
             "Consumables": {
                 "Category": "Тип расходников"
@@ -1377,6 +1450,29 @@
         "LanguagesYsoki": "Исоки",
         "LevelLabel": "Круг заклинания",
         "LevelLabelText": "Уровень",
+        "Levels": {
+            "0": "0",
+            "1": "1st",
+            "2": "2nd",
+            "3": "3rd",
+            "4": "4th",
+            "5": "5th",
+            "6": "6th",
+            "7": "7th",
+            "8": "8th",
+            "9": "9th",
+            "10": "10th",
+            "11": "11th",
+            "12": "12th",
+            "13": "13th",
+            "14": "14th",
+            "15": "15th",
+            "16": "16th",
+            "17": "17th",
+            "18": "18th",
+            "19": "19th",
+            "20": "20th"
+        },
         "LightningReflexesHint": "Черта персонажа, которая добавляет 2 к испытаниям Рефлекса",
         "LightningReflexesLabel": "Молниеносная реакция",
         "LimitedUsePeriodsCharges": "Заряды",
@@ -1440,7 +1536,7 @@
         "ModifierModifierLabel": "Значение",
         "ModifierModifierTooltip": "Значение модификатора.",
         "ModifierModifierTypeLabel": "Тип",
-        "ModifierModifierTypeTooltip": "Модификатор может быть плоским (+2) или формулой (+1d4).",
+        "ModifierModifierTypeTooltip": "A modifier can be a constant value that allways applies or a situational modifier that only applies in certian situations. This is used to identifiy the Modifier field as one or the other",
         "ModifierNameLabel": "Модификатор",
         "ModifierNameTooltip": "Название модификатора",
         "ModifierNotesLabel": "Заметки",
@@ -1460,10 +1556,10 @@
         "ModifierTypeArmor": "Брони",
         "ModifierTypeBase": "Базовый",
         "ModifierTypeCircumstance": "Состояния",
-        "ModifierTypeConstant": "Постоянный",
+        "ModifierTypeConstant": "Constant Modifier",
         "ModifierTypeDivine": "Сакральный",
         "ModifierTypeEnhancement": "Зачарования",
-        "ModifierTypeFormula": "Формула броска",
+        "ModifierTypeFormula": "Situational Modifier",
         "ModifierTypeInsight": "Вдохновения",
         "ModifierTypeLabel": "Тип",
         "ModifierTypeLuck": "Удачи",
@@ -1491,7 +1587,8 @@
                 "NamePlaceHolderText": "Имя персонажа",
                 "RaceAndGraftsPlaceHolderText": "Пол, Раса, и Класс",
                 "SourcePlaceHolderText": "Источник",
-                "TypePlaceHolderText": "Тип (подтип)"
+                "SubtypePlaceHolderText": "Subtype",
+                "TypePlaceHolderText": "Type"
             },
             "Interface": {
                 "Conditions": {
@@ -1535,15 +1632,37 @@
         "RepairDroneDialogTitle": "Ремонт дрона",
         "RepairDroneUnnecessary": "{name} уже восстановлен до максимума ПЗ, ремонт не требуется.",
         "Resolve": "Решимость",
-        "RestButton": "Отдыхать",
-        "RestCancel": "Отменить",
-        "RestL": "Длинный отдых",
-        "RestS": "Короткий отдых",
-        "RestSActionHeader": "Потратить очко решимости?",
-        "RestSChatMessage": "{name} устраивается на десятиминутный отдых.",
-        "RestSChatMessageRestored": "{name} устраивается на десятиминутный отдых и тратит {spentRP} пунктов решимости, чтобы восстановить {regainedSP} пунктов стойкости.",
-        "RestSDescription": "Устроиться на десятиминутный отдых? Вы можете потратить один Пункт Решимости и восстановить все Пункты Живучести.",
-        "RestSTitle": "Короткий десятиминутный отдых",
+        "Rest": {
+            "Button": "Rest",
+            "Cancel": "Cancel",
+            "Long": {
+                "ChatMessage": {
+                    "AbilityDamage": "Reduced {ability} damage by {amount}",
+                    "Header": "{name} takes a full night's rest and recovers:",
+                    "HeaderNoRecovery": "{name} takes a full night's rest.",
+                    "HitPoints": "{deltaHP} Hit points",
+                    "Item": "The item '{itemName}' has recharged its uses.",
+                    "ResolvePoints": "{deltaRP} Resolve points",
+                    "SpellSlots": "{deltaSS} Spell slots",
+                    "StaminaPoints": "{deltaSP} Stamina points"
+                },
+                "Dialog": {
+                    "Title": "Full Night's Rest",
+                    "Description": "<p>Take a full night's rest?</p><p>On a full night's rest you will recover 1 hit point per character level, all stamina points, all resolve points, class resources, limited use item charges, and spell slots.</p>"
+                },
+                "Title": "Full Rest"
+            },
+            "Short": {
+                "ActionHeader": "Spend one Resolve Point?",
+                "ChatMessage": {
+                    "Message": "{name} takes a short 10 minute rest.",
+                    "Restored": "{name} takes a short 10 minute rest, and spent {spentRP} Resolve Point to recover {regainedSP} Stamina Points."
+                },
+                "DialogDescription": "Take a short rest? On a short rest you may spend one Resolve Point to recover all Stamina Points.",
+                "DialogTitle": "Short 10 Minute Rest",
+                "Title": "Short Rest"
+            }
+        },
         "Rolls": {
             "AttackRoll": "Бросок атаки",
             "AttackRollFull": "Бросок атаки - {name}",
@@ -1573,17 +1692,27 @@
                 "SituationalBonusTooltip": "Действуют ли на бросок ситуационные модификаторы? (Например, дальность стрельбы)"
             },
             "Dice": {
+                "AbilityCheckTitle": "Ability Check - {label}",
                 "Advantage": "Преимущество",
                 "AdvantageTooltip": "Бросок с преимуществом.",
                 "CriticalDamage": "Критический",
                 "CriticalDamageTooltip": "Бросить критический урон.",
+                "CriticalEffect": "Critical Effect: {criticalEffect}",
+                "CriticalFlavor": "{title} (Critical)",
+                "CriticalFlavorWithEffect": "{title} (Critical; {criticalEffect})",
+                "CriticalHit": "Critical Hit",
                 "Disadvantage": "Помеха",
                 "DisadvantageTooltip": "Бросок с помехой.",
+                "Formula": {
+                    "AdditionalBonus": " {bonus} [Additional Bonus]"
+                },
                 "Normal": "Обычный",
                 "NormalDamage": "Обычный",
                 "NormalDamageTooltip": "Бросить обычный урон.",
                 "NormalTooltip": "Обычный бросок.",
-                "Roll": "Бросить"
+                "Roll": "Бросить",
+                "SaveTitle": "Save - {label}",
+                "SkillCheckTitle": "Skill Check - {skill}"
             },
             "HealingRoll": "Бросок исцеления",
             "HealingRollFull": "Бросок исцеления - {name}",
@@ -1665,7 +1794,8 @@
                     "Disabled": "Ничего",
                     "Enabled": "Раунды, фазы, и ходы",
                     "OnlyRounds": "Только раунды",
-                    "RoundsPhases": "Раунды и фазы"
+                    "RoundsPhases": "Раунды и фазы",
+                    "RoundsTurns": "Rounds and turns"
                 },
                 "VehicleChaseHint": "Какие боевые карты отображаются в чате во время погони.",
                 "VehicleChaseName": "Погоня"
@@ -1932,6 +2062,18 @@
             "Uses": "Осталось"
         },
         "SpellCantripLabel": "Кантрип",
+        "SpellCasting": {
+            "AllowedClasses": "Allowed Classes",
+            "ButtonCast": "Cast",
+            "ConsumeSlot": "Consume Spell Slot?",
+            "ConsumeSlotYes": "Yes",
+            "ErrorNoSlot": "You are not able to cast this spell using spell slots, as you have no available spell slots. You may opt to cast it without consuming any spell slots.",
+            "Header": "Configure how you would like to cast the {spellName} spell.",
+            "SelectSpellSlot": "Cast with Spell Slot",
+            "SpellLabelClass": "{className} - {spellSlot} ({remainingSlots} Slots)",
+            "SpellLabelGeneral": "{spellSlot} ({remainingSlots} Slots)",
+            "Title": "{spellName}: Spell Configuration"
+        },
         "SpellPreparationModesAlways": "Всегда доступно",
         "SpellPreparationModesInnate": "Врожденное",
         "SpellResistance": "Устойчивость к магии",
@@ -2160,6 +2302,10 @@
         "TempHPMaxPlaceHolderText": "+Максимальные",
         "TempHPPlaceHolderText": "+Временные",
         "ThemePlaceHolderText": "Тема",
+        "Tippy": {
+            "Attributes": "Attributes:",
+            "ErrorNoTitle": "You must define a title for the tooltip."
+        },
         "ToggleSkillsButtonLabel": "Выбрать навыки",
         "Touch": "Касание",
         "TraitArmorProf": "Владение броней",
@@ -2398,6 +2544,8 @@
         "WeaponPropertiesFreeHandsTooltip": "A free hands weapon is unbalanced or otherwise awkward to use. This difficulty in using the weapon can be negated by moving the listed number of hands that are not holding anything or being used for any other purpose as counterweights. You wield a free hands weapon using the normal number of hands, but if you have the listed number of free hands available while wielding it, the weapon is not considered unwieldy. For example, a kasatha wielding a flame spinner in two of her hands while her other two hands remain empty treats the weapon as though it does not have the unwieldy weapon special property.",
         "WeaponPropertiesFueled": "Топливное",
         "WeaponPropertiesFueledTooltip": "A fueled weapon has an integrated petrol tank and must be activated to function properly. This works like the powered weapon special property, except it uses petrol as a fuel source instead of a battery. Unlike a battery, petrol is permanently expended upon use and must be purchased rather than recharged.",
+        "WeaponPropertiesGearArray": "Gear Array",
+        "WeaponPropertiesGearArrayTooltip": "Your nanites shape themselves into a single piece of equipment, such as a weapon, tool, or cybernetic augmentation.",
         "WeaponPropertiesGrapple": "Удерживающее",
         "WeaponPropertiesGrappleTooltip": "When wielding a grapple weapon, you can use it to perform a grapple combat maneuver without having your hands free. When you do so, you gain a +2 bonus to the attack roll, and if you roll a natural 20 on the attack roll, you apply the weapon’s critical hit effect (if any) to the target.",
         "WeaponPropertiesGravitation": "Гравитационное",

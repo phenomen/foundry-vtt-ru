@@ -1,120 +1,132 @@
 {
-    "name": "ru-ru",
-    "title": "Russian Translation | Русский перевод",
-    "description": "Модуль добавляет русский язык в Foundry VTT, системы D&D5, Pathfinder 1e, Pathfinder 2e, Starfinder, Mutants Year Zero, Forbidden Lands, Tales from the Loop, Coriolis, WFRP4, OSE, GURPS, Delta Green, Dungeon World, Savage World, Cypher, Traveller, Genesys и некоторые модули.<br/><br/><b>Ведущий</b> должен выполнить следующее в каждом созданном мире:<br/>Game Settings > Manage Modules и поставить галочку на Russian Translation.<br/><b>Каждый участник</b> должен выполнить следующее:<br/>Game Settings > Configure Settings и поменять Language на Russian.<br/>",
-    "version": "0.9.3.13",
-    "minimumCoreVersion": "0.8.6",
-    "compatibleCoreVersion": "0.9.1",
-    "coreTranslation": true,
-    "author": "Phen",
-    "styles": [
-        "styles/ru.css"
-    ],
-    "scripts": [
-        "scripts/loadCSS.js"
-    ],
-    "esmodules": [
-        "scripts/init.js"
-    ],
-    "packs": [],
-    "languages": [
-        {
-            "lang": "ru",
-            "name": "Russian",
-            "path": "dist/combined.json"
-        },
-        {
-            "lang": "ru",
-            "path": "i18n/systems/dnd5e.json",
-            "system": "dnd5e"
-        },
-        {
-            "lang": "ru",
-            "path": "i18n/systems/ose.json",
-            "system": "ose"
-        },
-        {
-            "lang": "ru",
-            "path": "i18n/systems/pf1.json",
-            "system": "pf1"
-        },
-        {
-            "lang": "ru",
-            "path": "i18n/systems/sfrpg.json",
-            "system": "sfrpg"
-        },
-        {
-            "lang": "ru",
-            "path": "i18n/systems/archmage.json",
-            "system": "archmage"
-        },
-        {
-            "lang": "ru",
-            "path": "i18n/systems/yzecoriolis.json",
-            "system": "yzecoriolis"
-        },
-        {
-            "lang": "ru",
-            "path": "i18n/systems/forbidden-lands.json",
-            "system": "forbidden-lands"
-        },
-        {
-            "lang": "ru",
-            "path": "i18n/systems/mutant-year-zero.json",
-            "system": "mutant-year-zero"
-        },
-        {
-            "lang": "ru",
-            "path": "i18n/systems/swade.json",
-            "system": "swade"
-        },
-        {
-            "lang": "ru",
-            "path": "i18n/systems/tftloop.json",
-            "system": "tftloop"
-        },
-        {
-            "lang": "ru",
-            "path": "i18n/systems/demonlord.json",
-            "system": "demonlord"
-        },
-        {
-            "lang": "ru",
-            "path": "i18n/systems/deltagreen.json",
-            "system": "deltagreen"
-        },
-        {
-            "lang": "ru",
-            "path": "i18n/systems/dungeonworld.json",
-            "system": "dungeonworld"
-        },
-        {
-            "lang": "ru",
-            "path": "i18n/systems/city-of-mist.json",
-            "system": "city-of-mist"
-        },
-        {
-            "lang": "ru",
-            "path": "i18n/systems/starwarsffg.json",
-            "system": "starwarsffg"
-        },
-        {
-            "lang": "ru",
-            "path": "i18n/systems/pf2e.json",
-            "system": "pf2e"
-        },
-        {
-            "lang": "ru",
-            "path": "i18n/systems/wfrp4e.json",
-            "system": "wfrp4e"
-        },
-        {
-            "lang": "ru",
-            "path": "i18n/systems/thewitcher.json",
-            "system": "TheWitcherTRPG"
-        }
-    ],
-    "url": "https://github.com/Phenomen/foundry-vtt-ru",
-    "manifest": "https://raw.githubusercontent.com/Phenomen/foundry-vtt-ru/master/module.json",
-    "download": "https://github.com/Phenomen/foundry-vtt-ru/archive/refs/heads/master.zip"
+  "name": "ru-ru",
+  "title": "Russian Translation | Русский перевод",
+  "description": "Модуль добавляет русский язык в Foundry VTT, системы D&D5, Pathfinder 1e, Pathfinder 2e, Starfinder, Mutants Year Zero, Forbidden Lands, Tales from the Loop, Coriolis, WFRP4, OSE, GURPS, Delta Green, Dungeon World, Savage World, Cypher, Traveller, Genesys и некоторые модули.<br/><br/><b>Ведущий</b> должен выполнить следующее в каждом созданном мире:<br/>Game Settings > Manage Modules и поставить галочку на Russian Translation.<br/><b>Каждый участник</b> должен выполнить следующее:<br/>Game Settings > Configure Settings и поменять Language на Russian.<br/>",
+  "author": "Phen",
+  "authors": [],
+  "url": "https://github.com/Phenomen/foundry-vtt-ru",
+  "flags": {},
+  "version": "0.9.3.15",
+  "minimumCoreVersion": "0.8.6",
+  "compatibleCoreVersion": "0.9.1",
+  "scripts": [
+    "scripts/loadCSS.js"
+  ],
+  "esmodules": [
+    "scripts/init.js"
+  ],
+  "styles": [
+    "styles/ru.css"
+  ],
+  "languages": [
+    {
+      "lang": "ru",
+      "name": "Russian",
+      "path": "dist/combined.json"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/dnd5e.json",
+      "system": "dnd5e"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/ose.json",
+      "system": "ose"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/pf1.json",
+      "system": "pf1"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/sfrpg.json",
+      "system": "sfrpg"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/archmage.json",
+      "system": "archmage"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/yzecoriolis.json",
+      "system": "yzecoriolis"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/forbidden-lands.json",
+      "system": "forbidden-lands"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/mutant-year-zero.json",
+      "system": "mutant-year-zero"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/swade.json",
+      "system": "swade"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/tftloop.json",
+      "system": "tftloop"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/demonlord.json",
+      "system": "demonlord"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/deltagreen.json",
+      "system": "deltagreen"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/dungeonworld.json",
+      "system": "dungeonworld"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/city-of-mist.json",
+      "system": "city-of-mist"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/starwarsffg.json",
+      "system": "starwarsffg"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/pf2e.json",
+      "system": "pf2e"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/wfrp4e.json",
+      "system": "wfrp4e"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/thewitcher.json",
+      "system": "TheWitcherTRPG"
+    }
+  ],
+  "packs": [],
+  "system": [],
+  "dependencies": [
+    {
+      "name": "babele",
+      "type": "module"
+    }
+  ],
+  "socket": false,
+  "manifest": "https://raw.githubusercontent.com/Phenomen/foundry-vtt-ru/master/module.json",
+  "download": "https://github.com/Phenomen/foundry-vtt-ru/archive/refs/heads/master.zip",
+  "protected": false,
+  "coreTranslation": true,
+  "library": false
 }
