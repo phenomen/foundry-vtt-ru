@@ -1,0 +1,415 @@
+{
+	"label": "Травмы",
+	"mapping": {
+		"effects": {
+			"path": "effects",
+			"converter": "entry_effects"
+		},
+		"condition_effects": {
+			"path": "effects",
+			"converter": "condition_effects"
+		}
+	},
+	"entries": [
+		{
+			"id": "Arterial Damage",
+			"name": "Повреждённая артерия",
+			"description": "<p>Персонаж @Condition[Истекает кровью] (4). Пока рана не будет зашита в результате хирургического вмешательства, любой полученный персонажем урон, который придётся на торс, будет тревожить рану, каждый раз вызывая @Condition[Истекает кровью] (2).</p>"
+		},
+		{
+			"id": "Bad Cut",
+			"name": "Глубокий порез",
+			"description": "<p>Удар оставляет на голени глубокий порез. Персонаж @Condition[Истекает кровью] (2) и должен успешно <strong>пройти проверку стойкости (+0)</strong> — в противном случае он @Condition[Сбит с ног].</p>"
+		},
+		{
+			"id": "Badly Cut Toe",
+			"name": "Серьёзная травма пальца",
+			"description": "<p>Персонаж @Condition[Истекает кровью]. После завершения сцены он должен пройти <strong>проверку стойкости (+0)</strong>. При провале персонаж лишится 1 пальца &mdash; @Compendium[wfrp4e-core.injuries.ZhMADOqoo0y8Q9bx]{травматическая ампутация (+20)}.</p>"
+		},
+		{
+			"id": "Badly Jarred Arm",
+			"name": "Сильное онемение руки",
+			"description": "Рука буквально деревенеет от удара. Персонаж роняет всё, что держит в этой руке. Кроме того, рука становится бесполезной на [@Roll[1d10] — рейтинг выносливости] раундов (как минимум на 1 раунд): эффект такой же, как если бы персонаж лишился кисти."
+		},
+		{
+			"id": "Badly Twisted Knee",
+			"name": "Вывих колена",
+			"description": "<p>Попытка уклониться от атаки приводит к вывиху. Персонаж получает @Compendium[wfrp4e-core.injuries.3S4OYOZLauXctmev]{серьёзный разрыв мышцы}.</p>"
+		},
+		{
+			"id": "Black Eye",
+			"name": "Подбитый глаз",
+			"description": "<p>Сильный удар приходится прямо в глаз. Слёзы застят взор, и боль даёт о себе знать. Персонаж @Condition[Ослеплён] (2).</p>"
+		},
+		{
+			"id": "Bleeding hand",
+			"name": "Кровоточащая кисть",
+			"description": "<p>Кисть серьёзно рассечена — всё так и норовит выпасть из скользких от крови пальцев. Персонаж истекает кровью. Кроме того, пока он не избавится от этого состояния, перед любым действием ему придётся проходить <strong>проверку ловкости (+20) </strong>; при провале этой проверки персонаж роняет предмет, который он держит в травмированной руке.</p>"
+		},
+		{
+			"id": "Broken Collar Bone",
+			"name": "Перелом ключицы",
+			"description": "<p>Персонаж @Condition[Без сознания] и может избавиться от этого состояния только с медицинской помощью. Кроме того, он получает @Compendium[wfrp4e-core.injuries.EaqlLRQigwnsEAXX]{серьёзный перелом кости}.</p>"
+		},
+		{
+			"id": "Broken Jaw",
+			"name": "Сломанная челюсть",
+			"description": "<p>Удар приходится прямо под подбородок, и челюсть, влажно хрустнув, взрывается болью. Персонаж@Condition[Ошеломлён] (3) и получает @Compendium[wfrp4e-core.injuries.hCadFsTRvLN9faaY]{серьёзный перелом кости}. Кроме того, он должен пройти <strong>проверку стойкости (+0)</strong>, при провале которой он окажется @Condition[Без сознания].</p>"
+		},
+		{
+			"id": "Broken Knee",
+			"name": "Перелом колена",
+			"description": "<p>Удар приходится прямо в коленную чашечку и разбивает её вдребезги; боль настолько сильна, что остаётся только рухнуть на землю, рефлекторно вцепившись в изувеченную ногу. Персонаж @Condition[Истекает кровью], @Condition[Сбит с ног] и @Condition[Ошеломлён] и вдобавок получает @Compendium[wfrp4e-core.injuries.2iult41Jehz0F1O8]{серьёзный перелом кости}.</p>"
+		},
+		{
+			"id": "Broken Nose",
+			"name": "Сломанный нос",
+			"description": "<p>Мощный удар в лицо сворачивает нос набок, кровь льётся ручьём. Персонаж @Condition[Истекает кровью] (2). Кроме того, он должен пройти  <strong>проверку стойкости (+0)</strong>, при провале которой он окажется @Condition[Ошеломлён]. Когда травма заживёт, кривой нос персонажа будет обеспечивать ему (в зависимости от контекста) +1 или –1 к уровню успеха социальных проверок. Исправить сломанный нос можно посредством  @JournalEntry[Healing]{хирургического вмешательства}.</p>"
+		},
+		{
+			"id": "Bruised Ribs",
+			"name": "Ушиб рёбер",
+			"description": "На все проверки проворства (и связанных с ним навыков) на @Roll[1d10] дней налагается модификатор –10."
+		},
+		{
+			"id": "Brutal Dismemberment",
+			"name": "Жестокое расчленение",
+			"description": "<p>Оторванная рука, брызжа во все стороны кровью, отлетает на @Roll[1d10] футов в случайном направлении (см. @Table[scatter]{Промах при броске}). Затем оторвавший руку удар сокрушает грудную клетку персонажа, убивая его на месте.</p>"
+		},
+		{
+			"id": "Carved Shin",
+			"name": "Травма голени",
+			"description": "<p>Удар приходится под колено, ломает кости и рассекает сухожилия. Персонаж @Condition[Ошеломлён] и @Condition[Сбит с ног] а также получает @Compendium[wfrp4e-core.injuries.3S4OYOZLauXctmev]{серьёзный разрыв мышцы} и @Compendium[wfrp4e-core.injuries.7mCcI3q7hgWcmbBU]{лёгкий перелом кости}.</p>"
+		},
+		{
+			"id": "Clean Break",
+			"name": "Закрытый перелом",
+			"description": "<p>Сильный удар сопровождается сухим, отчётливо слышным хрустом. Персонаж роняет всё, что держит в этой руке, и получает @Compendium[wfrp4e-core.injuries.4lj1ik958mbgAlaF]{лёгкий перелом кости}. Кроме того, он должен пройти <strong>проверку стойкости (–10)</strong>, чтобы не получить вдобавок ещё и состояние @Condition[Ошеломлён].</p>"
+		},
+		{
+			"id": "Cleft Hand",
+			"name": "Разрубленная кисть",
+			"description": "<p>Сильный удар разрубает кисть до самого предплечья. Персонаж @Condition[Истекает кровью] (2) и @Condition[Ошеломлён]. Кроме того, он лишается 1 пальца сразу и теряет ещё по 1 пальцу за каждый последующий раунд без медицинской помощи — всё это считается одной @Compendium[wfrp4e-core.injuries.SYjWiKDzMS6CtROJ]{травматической ампутацией (–10)}. Как только пальцы на травмированной руке заканчиваются, персонаж лишается кисти — ещё одна @Compendium[wfrp4e-core.injuries.SYjWiKDzMS6CtROJ]{травматическая ампутация (–10)}.</p>"
+		},
+		{
+			"id": "Concussive Blow",
+			"name": "Сильное сотрясение",
+			"description": "<p>Мозг персонажа сотрясается внутри черепной коробки, из носа и ушей ручьями хлещет кровь. Персонаж @Condition[Оглушён], @Condition[Истекает кровью] (2) и @Condition[Ошеломлён] (@Roll[1d10]). Кроме того, он оказывается @Condition[Устал] — избавиться от этого состояния он сможет не раньше чем через @Roll[1d10] дней. Если за это время персонаж получит ещё одну травму головы, ему придётся пройти <strong>проверку стойкости (+20)</strong>, чтобы не оказаться @Condition[Без сознания].</p>"
+		},
+		{
+			"id": "Cracked Ribs",
+			"name": "Треснувшие рёбра",
+			"description": "<p>Мощный удар — и хрустнувшие рёбра взрываются нестерпимой болью. Персонаж @Condition[Ошеломлён] и получает @Compendium[wfrp4e-core.injuries.QluSTTTq3viHJJUh]{лёгкий перелом кости }.</p>"
+		},
+		{
+			"id": "Crushed Elbow",
+			"name": "Раздробленный локоть",
+			"description": "<p>Могучий удар превращает локоть в месиво из фрагментов хряща и осколков костей. Персонаж роняет всё, что держит в этой руке, и получает @Compendium[wfrp4e-core.injuries.rlDZZTj5PXjuRXa2]{серьёзный перелом кости}.</p>"
+		},
+		{
+			"id": "Crushed Foot",
+			"name": "Раздробленная стопа",
+			"description": "<p>Удар превращает ступню в месиво из плоти и раздробленных костей. Персонаж @Condition[Истекает кровью] (2). Кроме того, он должен успешно пройти <strong>проверку стойкости (+20)</strong> — в противном случае персонаж лишится [1 – уровень успеха] пальцев. Помимо этого, без хирургического вмешательства персонаж через @Roll[1d10] дней лишится всей стопы — @Compendium[wfrp4e-core.injuries.ZhMADOqoo0y8Q9bx]{травматическая ампутация (+20)}.</p>"
+		},
+		{
+			"id": "Cut Tendon",
+			"name": "Рассечение сухожилий",
+			"description": "<p>Удар рассекает крупные и мелкие сухожилия — нога перестаёт слушаться и подгибается. Персонаж @Condition[Истекает кровью] (2), @Condition[Ошеломлён] (2), @Condition[Сбит с ног] и с ужасом понимает, что только что лишился ноги, — @Compendium[wfrp4e-core.injuries.k00PimCWkff11IA0]{травматическая ампутация (–30)}.</p>"
+		},
+		{
+			"id": "Damaged Artery",
+			"name": "Повреждённая артерия",
+			"description": "<p>Персонаж @Condition[Истекает кровью] (4). Пока рана не будет зашита в результате хирургического вмешательства, любой полученный персонажем урон, который придётся на эту руку, будет тревожить рану, каждый раз вызывая @Condition[Истекает кровью] (2).</p>\n<blockquote>\n    <p><strong>Примечание для Foundry:</strong> <em>Эффект должен быть скорректирован. Замените </em><span style=\"font-style: normal;\">ARM_LOCATION_HERE на lArm или rArm</span></p>\n</blockquote>"
+		},
+		{
+			"id": "Decapitated",
+			"name": "Обезглавливание",
+			"description": "<p>Удар буквально сносит голову с плеч. Голова пролетает 1d10 футов в случайном направлении (см. (see @Table[scatter]{Промах при броске})). Безжизненное тело валится на землю. Персонаж погибает.</p>"
+		},
+		{
+			"id": "Deep Cut",
+			"name": "Глубокий порез",
+			"description": "<p>Удар оставляет на руке персонажа глубокую и очень болезненную рану. Персонаж @Condition[Истекает кровью] (2), @Condition[Ошеломлён] и получает @Compendium[wfrp4e-core.injuries.GlShFJF2TpsNh1FX]{лёгкий разрыв мышцы}. Кроме того, он должен пройти <strong>проверку стойкости (–20)</strong>, чтобы не оказаться @Condition[Без сознания].</p>"
+		},
+		{
+			"id": "Devastated Eye",
+			"name": "Выбитый глаз",
+			"description": "<p>Невыносимая боль пронзает внезапно опустевшую глазницу. Персонаж @Condition[Ослеплён] (3), @Condition[Истекает кровью] (2) и @Condition[Ошеломлён]. Кроме того, он лишается глаза — @Compendium[wfrp4e-core.injuries.weczkAMPlTjX7lqU]{травматическая ампутация (–10)} .</p>"
+		},
+		{
+			"id": "Disfiguring Blow",
+			"name": "Безобразная рана",
+			"description": "<p>Могучий удар крушит лицевые кости, оставляя кровоточащее месиво там, где раньше были нос и глаз. Персонаж @Condition[Истекает кровью] (3), @Condition[Ошеломлён] (2) и @Condition[Ослеплён]. Кроме того, он лишается @Compendium[wfrp4e-core.injuries.SpPRZZRHxly7uo2G]{носа} и @Compendium[wfrp4e-core.injuries.weczkAMPlTjX7lqU]{глаза} — травматическая ампутация (–20).</p>"
+		},
+		{
+			"id": "Dislocated Knee",
+			"name": "Dislocated Knee",
+			"description": "<p>Your knee is wrenched out of its socket. Gain the @Condition[Prone] Condition. Pass a Hard (-20) Endurance Test, or gain the @Condition[Stunned] Condition, which is not removed until you receive Medical Attention. After this initial Medical Attention, an <strong>Extended Average (+20) Heal </strong>Test needing 6 SL is required to reset the knee at which point you regain its use. Movement is halved, and Tests made using this leg suffer a -10 penalty for [[/r d10]] days.</p>"
+		},
+		{
+			"id": "Dislocated Shoulder",
+			"name": "Dislocated Shoulder",
+			"description": "<p>Your arm is wrenched out of its socket. Pass a <strong>Hard (-20) Endurance</strong> Test or gain the @Condition[Stunned] and @Condition[Prone] Condition. Drop whatever is held in that hand: the arm is useless and counts as lost (see @Compendium[wfrp4e-core.injuries.MnMZv7ZXoRqoH9dS]{Amputated Part}). Gain 1 @Condition[Stunned] Condition until you receive Medical Attention. After this initial Medical Attention, an Extended <strong>Average (+20) Heal</strong> Test needing 6 SL is required to reset the arm, at which point you regain its use. Tests made using this arm suffer a -10 penalty for <strong>@Roll[1d10]</strong> days.</p>"
+		},
+		{
+			"id": "Dramatic Injury",
+			"name": "Dramatic Injury",
+			"description": "<p>A fine wound across the forehead and cheek. Gain 1 @Condition[Bleeding] Condition. Once the wound is healed, the impressive scar it leaves provides a bonus of +1 SL to appropriate social Tests. You can only gain this benefit once.</p>"
+		},
+		{
+			"id": "Ear Bash",
+			"name": "Ear Bash",
+			"description": "<p>Your ear takes a sickening impact, leaving it ringing. Gain 1 @Condition[Deafened] Condition.</p>"
+		},
+		{
+			"id": "Fractured Hip",
+			"name": "Fractured Hip",
+			"description": "<p>Gain a @Condition[Stunned] Condition. Take a <strong>Challenging (+0) Endurance</strong> Test or also gain the @Condition[Prone] Condition. Suffer a @Compendium[wfrp4e-core.injuries.QluSTTTq3viHJJUh]{Broken Bone (Minor)} injury.</p>"
+		},
+		{
+			"id": "Fractured Jaw",
+			"name": "Fractured Jaw",
+			"description": "<p>With a sickening crunch, pain fills your face as the blow fractures your jaw. Gain 2 @Condition[Stunned] Conditions. Suffer a @Compendium[wfrp4e-core.injuries.nbhn2wX35b7Jrcbg]{Broken Bone (Minor)} injury.</p>"
+		},
+		{
+			"id": "Gaping Arm Wound",
+			"name": "Gaping Arm Wound",
+			"description": "<p>The blow opens a deep, gaping wound. Gain 2 @Condition[Bleeding] Conditions. Until you receive @JournalEntry[Healing]{Surgery} to stitch up the cut, any associated Arm Damage you receive will also inflict 1 @Condition[Bleeding] Condition as the wound reopens.</p>\n<blockquote>\n<p><strong>Foundry Note:</strong>&nbsp;<span style=\"font-style: normal;\">The Active Effect for this item needs your input. Replace&nbsp;</span><span style=\"font-style: normal;\">ARM_LOCATION_HERE with lArm or rArm</span></p>\n</blockquote>"
+		},
+		{
+			"id": "Gaping Chest Wound",
+			"name": "Gaping Chest Wound",
+			"description": "<p>Take 3 @Condition[Bleeding] Conditions. Until you receive @JournalEntry[Healing]{Surgery}, any Wounds you receive to the Body Hit Location will inflict an additional Bleeding Condition as the cut reopens.</p>"
+		},
+		{
+			"id": "Gut Blow",
+			"name": "Gut Blow",
+			"description": "<p>Gain 1 @Condition[Stunned] Condition. Pass an <strong>Easy (+40) Endurance </strong>Test, or vomit, gaining the @Condition[Prone] Condition.</p>"
+		},
+		{
+			"id": "Gut Wound",
+			"name": "Gut Wound",
+			"description": "<p>Contract a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound} and gain 2 @Condition[Bleeding] Conditions.</p>"
+		},
+		{
+			"id": "Hacked Leg",
+			"name": "Hacked Leg",
+			"description": "<p>A cut bites down into the hip. Gain 1 @Condition[Prone] and 2 @Condition[Bleeding] Conditions, and suffer a @Compendium[wfrp4e-core.injuries.7mCcI3q7hgWcmbBU]{Broken Bone (Minor)} injury. Further, take a <strong>Hard (-20) Endurance</strong> Test or also gain a @Condition[Stunned] condition from the pain.</p>"
+		},
+		{
+			"id": "Internal Bleeding",
+			"name": "Internal Bleeding",
+			"description": "<p>Gain a @Condition[Bleeding] Condition that can only be removed through @JournalEntry[Healing]{Surgery}. Contract @Compendium[wfrp4e-core.diseases.M8XyRs9DN12XsFTQ]{Blood Rot}.</p>"
+		},
+		{
+			"id": "Jarred Arm",
+			"name": "Jarred Arm",
+			"description": "Your arm is jarred in the attack. Drop whatever was held in that hand."
+		},
+		{
+			"id": "Lost Footing",
+			"name": "Lost Footing",
+			"description": "<p>In the scuffle you lose your footing. Pass a <strong>Challenging (+0) Endurance</strong> Test or gain the @Condition[Prone] Condition.</p>"
+		},
+		{
+			"id": "Low Blow!",
+			"name": "Low Blow!",
+			"description": "<p>Make a <strong>Hard (-20) Endurance </strong>Test or gain 3 @Condition[Stunned] Condition.</p>"
+		},
+		{
+			"id": "Major Chest Wound",
+			"name": "Major Chest Wound",
+			"description": "<p>You take a significant wound to your chest, flensing skin from muscle and sinew. Take 4 @Condition[Bleeding] Conditions. Until you receive @JournalEntry[Healing]{Surgery}, to stitch the wound together, any Wounds you receive to the Body Hit Location will also inflict 2 @Condition[Bleeding] Conditions as the tears reopen.</p>"
+		},
+		{
+			"id": "Major Ear Wound",
+			"name": "Major Ear Wound",
+			"description": "The blow damages your ear, leaving you with permanent hearing loss in one ear. Suffer a -20 penalty on all Tests relating to hearing. If you suffer this result again, your hearing is permanently lost as the second ear falls quiet. Only magic can heal this."
+		},
+		{
+			"id": "Major Eye Wound",
+			"name": "Major Eye Wound",
+			"description": "<p>The blow cracks across your eye socket. Gain 1 @Condition[Bleeding] Condition. Also gain 1 @Condition[Blinded] Condition that cannot be removed until you receive Medical Attention.</p>"
+		},
+		{
+			"id": "Mangled Ear",
+			"name": "Mangled Ear",
+			"description": "<p>Little is left of your ear as the blow tears it apart. You gain 3 @Condition[Deafened] and 2 @Condition[Bleeding] Conditions. Lose your ear &mdash; @Compendium[wfrp4e-core.injuries.8piWcBKFlQ2J1E3A]{Amputatation (Average)}.</p>"
+		},
+		{
+			"id": "Mangled Hand",
+			"name": "Mangled Hand",
+			"description": "<p>Your hand is left a mauled, bleeding mess. You lose your hand &mdash; @Compendium[wfrp4e-core.injuries.zyocWSzEZEC826NS]{{Amputation (Hard)}. Gain 2 @Condition[Bleeding] Condition. Take a <strong>Hard (-20) Endurance </strong>Test or gain the @Condition[Stunned] and @Condition[Prone] Conditions.</p>"
+		},
+		{
+			"id": "Mangled Jaw",
+			"name": "Mangled Jaw",
+			"description": "<p>The blow almost removes your jaw as it utterly destroys your tongue, sending teeth flying in a shower of blood. Gain 4 @Condition[Bleeding] and 3 @Condition[Stunned] Conditions. Make a <strong>Very Hard (-30) Endurance </strong>Test or gain an @Condition[Unconscious] Condition. Suffer a @Compendium[wfrp4e-core.injuries.hCadFsTRvLN9faaY]{Broken Bone (Major)} injury and lose your @Compendium[wfrp4e-core.injuries.rkJA1DlK51QuRlJy]{tongue} and <strong>@Roll[1d10]</strong> @Compendium[wfrp4e-core.injuries.fBcZhOBn8IpoVqQ1]{teeth}&mdash; <strong>Amputation (Hard).</strong></p>"
+		},
+		{
+			"id": "Mauled Bicep",
+			"name": "Mauled Bicep",
+			"description": "<p>The blow almost separates bicep and tendon from bone, leaving an ugly wound that sprays blood over you and your opponent. You automatically drop anything held in the associated hand and suffers a @Compendium[wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl]{Torn Muscle (Major)} injury and 2 @Condition[Bleeding] and 1 @Condition[Stunned] Condition.</p>"
+		},
+		{
+			"id": "Minor Arm Cut",
+			"name": "Minor Arm Cut",
+			"description": "<p>Gain a @Condition[Bleeding] Condition as your upper arm is cut badly.</p>"
+		},
+		{
+			"id": "Minor Head Cut",
+			"name": "Minor Head Cut",
+			"description": "<p>The strike opens your cheek and blood flies everywhere. Gain 1 @Condition[Bleeding] Condition.</p>"
+		},
+		{
+			"id": "Minor Leg Cut",
+			"name": "Minor Leg Cut",
+			"description": "<p>Gain 1 @Condition[Bleeding] Condition.</p>"
+		},
+		{
+			"id": "Painful Cut",
+			"name": "Painful Cut",
+			"description": "<p>Gain 2 @Condition[Bleeding] Conditions and a @Condition[Stunned] Condition. Take a <strong>Hard (-20) Endurance </strong>Test or gain the @Condition[Unconscious] Condition as you black out from the pain. Unless you achieve 4+ SL, you also scream out in agony.</p>"
+		},
+		{
+			"id": "Poked Eye",
+			"name": "Poked Eye",
+			"description": "<p>The blow glances across your eye socket. Gain 1 @Condition[Blinded] condition.</p>"
+		},
+		{
+			"id": "Pulled Back",
+			"name": "Pulled Back",
+			"description": "<p>Your back turns to white pain as you pull a muscle. Suffer a @Compendium[wfrp4e-core.injuries.eWPN3CV2Eddwz8aM]{Torn Muscle (Major)} injury.</p>"
+		},
+		{
+			"id": "Ragged Wound",
+			"name": "Ragged Wound",
+			"description": "<p>Take 2 @Condition[Bleeding] Conditions.</p>"
+		},
+		{
+			"id": "Rattling Blow",
+			"name": "Rattling Blow",
+			"description": "<p>The blow floods your vision with spots and flashing lights. Gain 1 @Condition[Stunned] Condition.</p>"
+		},
+		{
+			"id": "Ruptered Ligament",
+			"name": "Ruptered Ligament",
+			"description": "<p>You immediately drop whatever was held in that hand. Suffer a @Compendium[wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl]{Torn Muscle (Major)} injury.</p>"
+		},
+		{
+			"id": "Ruptured Tendon",
+			"name": "Ruptured Tendon",
+			"description": "<p>Gain a @Condition[Prone] and @Condition[Stunned] Condition as one of your tendons tears badly. Pass a <strong>Hard (-20) Endurance </strong>Test or gain the @Condition[Unconscious] Condition. Your leg is useless. Suffer a @Compendium[wfrp4e-core.injuries.3S4OYOZLauXctmev]{Torn Muscle (Major)} injury.</p>"
+		},
+		{
+			"id": "Severed Finger",
+			"name": "Severed Finger",
+			"description": "<p>You gape in horror as a finger flies &mdash; @Compendium[wfrp4e-core.injuries.SYjWiKDzMS6CtROJ]{Amputation (Average)}. Gain a @Condition[Bleeding] condition.</p>"
+		},
+		{
+			"id": "Severed Foot",
+			"name": "Severed Foot",
+			"description": "<p>Your foot is severed at the ankle and lands <strong>@Roll[1d10]</strong> feet away in a random direction &mdash; @Compendium[wfrp4e-core.injuries.gz2xy41OSVZ8YBgI]{Amputation (Hard)}. You gain 3 @Condition[Bleeding], 2 @Condition[Stunned], and 1 @Condition[Prone] Condition.</p>"
+		},
+		{
+			"id": "Shattered Pelvis",
+			"name": "Shattered Pelvis",
+			"description": "The blow shatters your pelvis, severing one leg then driving through to the next. You die instantly from traumatic shock."
+		},
+		{
+			"id": "Sliced Ear",
+			"name": "Sliced Ear",
+			"description": "<p>Your side of your head takes a hard blow, cutting deep into your ear. Gain 2 @Condition[Deafened] and 1 @Condition[Bleeding] Condition.</p>"
+		},
+		{
+			"id": "Sliced Tendons",
+			"name": "Sliced Tendons",
+			"description": "<p>Your tendons are cut by the blow, leaving your arm hanging useless &mdash; @Compendium[wfrp4e-core.injuries.MnMZv7ZXoRqoH9dS]{Amputation (Very Hard)}. Gain 3 @Condition[Bleeding], 1 @Condition[Prone], and 1 @Condition[Stunned] Condition. Pass a <strong>Hard (-20) Endurance </strong>Test or gain the @Condition[Unconscious] Condition.</p>"
+		},
+		{
+			"id": "Smashed Mouth",
+			"name": "Smashed Mouth",
+			"description": "<p>With a sickening crunch, your mouth is suddenly filled with broken teeth and blood. Gain 2 @Condition[Bleeding] Conditions. Lose <strong>@Roll[1d10]</strong> teeth &mdash; @Compendium[wfrp4e-core.injuries.fBcZhOBn8IpoVqQ1]{Amputation (Easy)}.</p>"
+		},
+		{
+			"id": "Smashed Rib Cage",
+			"name": "Smashed Rib Cage",
+			"description": "<p>Gain a @Condition[Stunned] Condition that can only be removed through Medical Attention, and suffer a @Compendium[wfrp4e-core.injuries.EaqlLRQigwnsEAXX]{Broken Bone (Major)} injury.</p>"
+		},
+		{
+			"id": "Sprain",
+			"name": "Sprain",
+			"description": "<p>You sprain your arm, suffering a @Compendium[wfrp4e-core.injuries.GlShFJF2TpsNh1FX]{Torn Muscle (Minor)} injury.</p>"
+		},
+		{
+			"id": "Sprained Ankle",
+			"name": "Sprained Ankle",
+			"description": "<p>You sprain your ankle, giving you a @Compendium[wfrp4e-core.injuries.nF5z1OEhpi4t6a6S]{Torn Muscle (Minor)} injury.</p>"
+		},
+		{
+			"id": "Struck Forehead",
+			"name": "Struck Forehead",
+			"description": "<p>A solid blow thumps into the centre of your forehead. Gain 2 @Condition[Bleeding] Conditions and a @Condition[Blinded] Condition that cannot be removed until all Bleeding Conditions are removed.</p>"
+		},
+		{
+			"id": "Stubbed Toe",
+			"name": "Stubbed Toe",
+			"description": "<p>In the scuffle, you stub your toe. Pass a <strong>Average (+20) Endurance </strong>Test or suffer -10 on Agility Tests until the end of the next turn.</p>"
+		},
+		{
+			"id": "Thigh Strike",
+			"name": "Thigh Strike",
+			"description": "<p>A painful blow slams into your upper thigh. Gain a @Condition[Bleeding] Condition and take an <strong>Average (+20) Endurance </strong>Test or stumble, gaining the @Condition[Prone] Condition.</p>"
+		},
+		{
+			"id": "Tis But A Scratch!",
+			"name": "Tis But A Scratch!",
+			"description": "<p>Gain 1 @Condition[Bleeding] Condition.</p>"
+		},
+		{
+			"id": "Torn Apart",
+			"name": "Torn Apart",
+			"description": "You are hacked in two. The top half lands in a random direction, and all characters within 2 yards are showered in blood."
+		},
+		{
+			"id": "Torn Muscles",
+			"name": "Torn Muscles",
+			"description": "<p>The blow slams into your forearm. Gain a @Condition[Bleeding] Condition and a @Compendium[wfrp4e-core.injuries.GlShFJF2TpsNh1FX]{Torn Muscle (Minor)} injury.</p>"
+		},
+		{
+			"id": "Torn Thigh",
+			"name": "Torn Thigh",
+			"description": "<p>Gain 3 @Condition[Bleeding] Conditions as the weapon opens up your upper thigh. Pass a <strong>Challenging (+0) Endurance </strong>Test or gain the @Condition[Prone] Condition. Until you receive @JournalEntry[Healing]{Surgery} to stitch up the wound, each time you receive Damage to this Leg, also receive 1 @Condition[Bleeding] Condition.</p>\n<blockquote>\n<p><strong>Foundry Note</strong><em>: The Active Effect for this item needs your input. Replace LEG_LOCATION HERE with lLeg or rLeg</em></p>\n</blockquote>"
+		},
+		{
+			"id": "Twisted Ankle",
+			"name": "Twisted Ankle",
+			"description": "You go over your ankle, hurting it. Agility Tests suffer a -10 penalty for @Roll[1d10] rounds."
+		},
+		{
+			"id": "Twisted Back",
+			"name": "Twisted Back",
+			"description": "<p>Suffer a @Compendium[wfrp4e-core.injuries.7rBhIRo96Mydo0Cv]{Torn Muscle (Minor)} injury.</p>"
+		},
+		{
+			"id": "Twisted Knee",
+			"name": "Twisted Knee",
+			"description": "You twist your knee too far. Agility Tests suffer a -20 penalty for @Roll[1d10] rounds."
+		},
+		{
+			"id": "Winded",
+			"name": "Winded",
+			"description": "<p>Gain a @Condition[Stunned] Condition. Make an <strong>Average (+20) Endurance </strong>Test, or gain the @Condition[Prone] Condition. Movement is halved for @Roll[1d10] rounds as you get your breath back.</p>"
+		},
+		{
+			"id": "Wrenched Arm",
+			"name": "Wrenched Arm",
+			"description": "Your arm is almost pulled from its socket. Drop whatever is held in the associated hand; the arm is useless for @Roll[1d10] Rounds."
+		},
+		{
+			"id": "Wrenched Collar Bone",
+			"name": "Wrenched Collar Bone",
+			"description": "Randomly select one arm. Drop whatever is held in that hand; the arm is useless for @Roll[1d10] rounds."
+		}
+	]
+}
