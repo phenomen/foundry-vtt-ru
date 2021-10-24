@@ -1,60 +1,76 @@
 @font-face {
-    font-family: "Manuskript";
-    src: url("../fonts/manuskriptantd-reg.ttf");
+  font-family: "CaslonAntique";
+  src: url("../fonts/manuskriptantd-reg.ttf");
 }
 
 @font-face {
-    font-family: "CaslonAntique";
-    src: url("../fonts/manuskriptantd-reg.ttf");
+  font-family: "CaslonAntique";
+  src: url("../fonts/manuskriptantd-reg.ttf");
+  font-weight: bold;
 }
 
 @font-face {
-    font-family: "CaslonAntique";
-    src: url("../fonts/manuskriptantd-reg.ttf");
-    font-weight: bold;
+  font-family: "CaslonPro";
+  src: url("../fonts/PTSerif-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "CaslonPro";
-    src: url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+  font-family: "CaslonPro";
+  src: url("../fonts/PTSerif-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: "CaslonPro";
-    src: url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-    font-weight: bold;
+  font-family: "CaslonPro";
+  src: url("../fonts/PTSerif-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CaslonPro";
+  src: url("../fonts/PTSerif-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
 }
 
 :root {
-    --window-header-title-font-family: "Manuskript", serif;
-    --window-header-title-font-size: 16px;
-    --major-button-font-family: "Manuskript", serif;
-    --major-button-font-size: 18px;
-    --tab-header-font-family: "Manuskript", serif;
-    --tab-header-font-size: 12px;
-    --actor-input-font-family: "PT Serif", Georgia, serif;
-    --actor-input-font-size: 12px;
-    --actor-label-font-family: "Manuskript", serif;
-    --actor-label-font-size: 12px;
+  --window-header-title-font-family: "Manuskript", serif;
+  --window-header-title-font-size: 16px;
+  --major-button-font-family: "Manuskript", serif;
+  --major-button-font-size: 18px;
+  --tab-header-font-family: "Manuskript", serif;
+  --tab-header-font-size: 12px;
+  --actor-input-font-family: "PT Serif", Georgia, serif;
+  --actor-input-font-size: 12px;
+  --actor-label-font-family: "Manuskript", serif;
+  --actor-label-font-size: 12px;
 }
 
-.app.window-app.sheet.wfrp4e.actor.character-sheet .tab.main.active .characteristics-table .row-type.table-data .header-block {
-    font-size: 11px;
+.app.window-app.sheet.wfrp4e.actor.character-sheet
+  .tab.main.active
+  .characteristics-table
+  .row-type.table-data
+  .header-block {
+  font-size: 11px;
 }
 
 #tinymce .mce-content-body h1,
 .app.window-app .editor .editor-content h1 {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 #tinymce .mce-content-body h2,
 .app.window-app .editor .editor-content h2 {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 #tinymce .mce-content-body h3,
 .app.window-app .editor .editor-content h3 {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 .sidebar-tab .directory-footer button,
@@ -62,150 +78,156 @@
 #macros .directory-footer button,
 #sidebar button,
 #sidebar .header-actions button {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 #combat-popout #combat-round,
 #sidebar #combat #combat-round {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 #combat-popout #combat-controls a,
 #sidebar #combat #combat-controls a {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 .app.window-app.sheet.item-sheet .item-header input[type="text"],
 input[type="password"] {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 .app.window-app.sheet.item-sheet .item-details .label-text {
-    font-family: "Manuskript", serif;
-    font-size: 14px;
+  font-family: "Manuskript", serif;
+  font-size: 14px;
 }
 
 .app.window-app.sheet.item-sheet .sheet-tabs {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 .app.window-app.sheet.item-sheet .tab .label-text {
-    font-family: "Manuskript", serif;
-    font-size: 14px;
+  font-family: "Manuskript", serif;
+  font-size: 14px;
 }
 
 .app.window-app.sheet.item-sheet.career-sheet .sheet-tabs {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 .app.window-app.sheet.item-sheet.disease-sheet .sheet-tabs {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 .app.window-app.sheet.item-sheet.talent-sheet .sheet-tabs {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 .app.window-app.sheet.item-sheet.injury-sheet .sheet-tabs {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 .app.window-app.sheet.item-sheet.injury-sheet .label-text {
-    font-family: "Manuskript", serif;
-    font-size: 14px;
+  font-family: "Manuskript", serif;
+  font-size: 14px;
 }
 
 .app.window-app.sheet.item-sheet.mutation-sheet .sheet-tabs {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 .app.window-app.sheet.item-sheet.creature-trait-sheet .sheet-tabs {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 .app.window-app.sheet.item-sheet.creature-trait-sheet .label-text {
-    font-family: "Manuskript", serif;
-    font-size: 14px;
+  font-family: "Manuskript", serif;
+  font-size: 14px;
 }
 
 .app.window-app.sheet.item-sheet.prayer-sheet .sheet-tabs {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 .app.window-app.sheet.item-sheet.prayer-sheet .label-text {
-    font-family: "Manuskript", serif;
-    font-size: 14px;
+  font-family: "Manuskript", serif;
+  font-size: 14px;
 }
 
 .app.window-app.sheet.item-sheet.skill-sheet .sheet-tabs {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 .app.window-app.sheet.item-sheet.skill-sheet .label-text {
-    font-family: "Manuskript", serif;
-    font-size: 14px;
+  font-family: "Manuskript", serif;
+  font-size: 14px;
 }
 
 .app.window-app.sheet.item-sheet.spell-sheet .sheet-tabs {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 .app.window-app.sheet.item-sheet.spell-sheet .label-text {
-    font-family: "Manuskript", serif;
-    font-size: 14px;
+  font-family: "Manuskript", serif;
+  font-size: 14px;
 }
 
-.app.window-app.sheet.wfrp4e.actor .tab.religion.active .religion-box-1 .blessed-label {
-    font-family: "Manuskript", serif;
+.app.window-app.sheet.wfrp4e.actor
+  .tab.religion.active
+  .religion-box-1
+  .blessed-label {
+  font-family: "Manuskript", serif;
 }
 
-.app.window-app.sheet.wfrp4e.actor .tab.religion.active .religion-box-2 .sin-label {
-    font-family: "Manuskript", serif;
+.app.window-app.sheet.wfrp4e.actor
+  .tab.religion.active
+  .religion-box-2
+  .sin-label {
+  font-family: "Manuskript", serif;
 }
 
 .wfrp4e.actor .randomize-buttons .randomize-label {
-    font-family: "Manuskript", serif;
-    font-size: 10px;
+  font-family: "Manuskript", serif;
+  font-size: 10px;
 }
 
 #client-settings .window-content form h2 {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 #client-settings .window-content button {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 #controls-reference h3 {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 .window-app.app.journal-sheet .window-content input[name="name"],
 .window-app.app.journal-sheet .window-content input[name="title"] {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 #menu {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 .wfrp4e.item-sheet .condition-value,
 .wfrp4e.actor .condition-value {
-    font-family: "Manuskript";
+  font-family: "Manuskript";
 }
 
 #calendar-settings .window-content h1 {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 #calendar-settings .window-content h2 {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 .forien-quest-preview h1,
 #forien-quest-log h1,
 .calendar-form-container h1 {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 #dice-config h2,
@@ -213,211 +235,219 @@ input[type="password"] {
 #forien-quest-log-form h2,
 #forien-quest-log h2,
 .calendar-form-container h2 {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 #drawing-config h3,
 #dd-importer h3,
 .calendar-form-container h3 {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
 #chat-log .message {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 #chat-log .message .message-header {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 #chat-log .message .message-header .message-metadata {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 #sidebar .sidebar-tab #chat-controls .roll-type-select {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
-.app.window-app.sheet.item-sheet .item-details>li>* {
-    font-family: "PT Serif", Georgia, serif;
+.app.window-app.sheet.item-sheet .item-details > li > * {
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.item-sheet .item-details .input-box {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.item-sheet .item-details .input-text {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.item-sheet .tab .input-box {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.item-sheet .tab .input-text {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.wfrp4e.actor.vehicle-sheet select,
-.app.window-app.sheet.item-sheet .tab .form-group>select {
-    font-family: "PT Serif", Georgia, serif;
+.app.window-app.sheet.item-sheet .tab .form-group > select {
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.item-sheet .tab .form-group .item-checkbox {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.item-sheet .tab .form-group-stacked .input-box {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.item-sheet.career-sheet #characteristics-table {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.item-sheet.career-sheet #characteristics-table th {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.item-sheet.disease-sheet .tab .input-text {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.item-sheet.talent-sheet .tab .input-text {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.item-sheet.injury-sheet .input-box {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.item-sheet.injury-sheet .input-text {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.item-sheet.creature-trait-sheet .input-box {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.item-sheet.creature-trait-sheet .input-text {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.item-sheet.prayer-sheet .input-box {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.item-sheet.prayer-sheet .input-text {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.item-sheet.skill-sheet .input-box {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.item-sheet.skill-sheet .input-text {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.item-sheet.spell-sheet .input-box {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.item-sheet.spell-sheet .input-text {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
-.app.window-app.sheet.wfrp4e.actor .tab.religion.active .religion-box-1 .blessed-input>input {
-    font-family: "PT Serif", Georgia, serif;
+.app.window-app.sheet.wfrp4e.actor
+  .tab.religion.active
+  .religion-box-1
+  .blessed-input
+  > input {
+  font-family: "PT Serif", Georgia, serif;
 }
 
-.app.window-app.sheet.wfrp4e.actor .tab.religion.active .religion-box-2 .sin-input>input {
-    font-family: "PT Serif", Georgia, serif;
+.app.window-app.sheet.wfrp4e.actor
+  .tab.religion.active
+  .religion-box-2
+  .sin-input
+  > input {
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .wfrp4e.actor.vehicle-sheet .tab.cargo .encumbrance-header .encumbrance-label,
 .wfrp4e .tab.inventory.active .encumbrance-header .encumbrance-label {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .wfrp4e.actor.vehicle-sheet .tab.cargo .encumbrance-header .encumbrance-max,
 .wfrp4e .tab.inventory.active .encumbrance-header .encumbrance-max {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .wfrp4e .tab.inventory.active .encumbrance-header .encumbrance-max.input {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.wfrp4e.actor.vehicle-sheet .tab.cargo .encumbrance-text,
 .app.window-app.sheet.wfrp4e.actor .tab.inventory.active .encumbrance-text {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.wfrp4e.actor.vehicle-sheet .tab.cargo .encumbrance-bar,
 .app.window-app.sheet.wfrp4e.actor .tab.inventory.active .encumbrance-bar {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .wfrp4e.actor .randomize-buttons {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .wfrp4e.actor .randomize-buttons .randomize {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .wfrp4e.creature-sheet .creature-skills {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .wfrp4e.creature-sheet .creature-lists .label {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .wfrp4e.creature-sheet .creature-talents {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .wfrp4e.creature-sheet .creature-traits {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .wfrp4e.creature-sheet .creature-mutations {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .wfrp4e.creature-sheet .creature-psychology {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .wfrp4e.creature-sheet .creature-diseases,
 .wfrp4e.creature-sheet .creature-injuries {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 #players {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 #navigation #nav-toggle {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 #navigation #scene-list .scene.nav-item {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 #client-settings .window-content form .form-group {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 #client-settings .window-content form .form-group select {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .system-wfrp4e .dice-so-nice .sfxs-list select {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .window-app.dialog.weapon-roll-dialog .window-content,
@@ -426,43 +456,43 @@ input[type="password"] {
 .window-app.dialog.prayer-roll-dialog .window-content,
 .window-app.dialog.channel-roll-dialog .window-content,
 .window-app.dialog.characteristic-roll-dialog .window-content {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .app.window-app.sheet.wfrp4e.actor .main-row .wounds.row-section .top.label {
-    padding: 5px 0px 0px 0px;
+  padding: 5px 0px 0px 0px;
 }
 
 .window-app.app.image-popout .window-content {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .window-app.app.journal-sheet .window-content {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .window-app.app.journal-sheet .window-content form button[type="submit"] {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .window-app.journal-sheet.image-popout .form-group button {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 #hotbar {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .window-app.dialog.cast-channel .window-header .window-title {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .window-app.dialog.cast-channel .window-content {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .window-app.dialog.cast-channel .dialog-buttons button {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .apply-effect,
@@ -471,55 +501,55 @@ input[type="password"] {
 .overcast-button,
 .prayer-extension-button,
 .chargen-button {
-    font-family: "PT Serif", Georgia, serif;
-    font-size: 12px;
+  font-family: "PT Serif", Georgia, serif;
+  font-size: 12px;
 }
 
 #chat-log .message.whisper {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 #chat-log .message.whisper.blind {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 #module-management .window-content .directory-list.package-list .package {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 #chat-bubbles {
-    font-family: "PT Serif", Georgia, serif;
-    font-size: 14px;
-    font-weight: normal;
+  font-family: "PT Serif", Georgia, serif;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 .chat-card-button {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 #calendar-settings .window-content form {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
-#calendar-settings .window-content form>div {
-    font-family: "PT Serif", Georgia, serif;
+#calendar-settings .window-content form > div {
+  font-family: "PT Serif", Georgia, serif;
 }
 
 #calendar-settings .window-content form select,
 #calendar-settings .window-content form input {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 #calendar {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 #calendar-weather-container {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 #calendar-weather-climate {
-    font-family: "PT Serif", Georgia, serif;
+  font-family: "PT Serif", Georgia, serif;
 }
 
 .sidebar-tab .directory-footer button,
@@ -527,52 +557,70 @@ input[type="password"] {
 #macros .directory-footer button,
 #sidebar button,
 #sidebar .header-actions button {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 #combat-popout #combat-round .encounters h3,
 #sidebar #combat #combat-round .encounters h3 {
-    font-size: 18px;
-    padding: 4px;
+  font-size: 18px;
+  padding: 4px;
 }
 
-.app.window-app.sheet.wfrp4e.actor .tab.talents.active .inventory-header.talent-header #times-taken {
-    width: 60px;
+.app.window-app.sheet.wfrp4e.actor
+  .tab.talents.active
+  .inventory-header.talent-header
+  #times-taken {
+  width: 60px;
 }
 
 .tabs .item {
-    font-family: "Manuskript", serif;
+  font-family: "Manuskript", serif;
 }
 
-.app.window-app.sheet.wfrp4e.actor.character-sheet .tab.main.active .characteristics-table .row-type.table-data {
-    padding: 5px 0px 0px 0px;
-    max-width: 14%;
-    min-width: max(80px, 14%);
+.app.window-app.sheet.wfrp4e.actor.character-sheet
+  .tab.main.active
+  .characteristics-table
+  .row-type.table-data {
+  padding: 5px 0px 0px 0px;
+  max-width: 14%;
+  min-width: max(80px, 14%);
 }
 
-.app.window-app.sheet.wfrp4e.actor.character-sheet .tab.main.active .characteristics-table .table-header.table-row .table-header:first-of-type {
-    max-width: 14%;
-    min-width: max(80px, 14%);
+.app.window-app.sheet.wfrp4e.actor.character-sheet
+  .tab.main.active
+  .characteristics-table
+  .table-header.table-row
+  .table-header:first-of-type {
+  max-width: 14%;
+  min-width: max(80px, 14%);
 }
 
 .wfrp4e.actor.vehicle-sheet .tab.cargo .encumbrance-header .encumbrance-label,
 .wfrp4e .tab.inventory.active .encumbrance-header .encumbrance-label,
 .wfrp4e.actor.vehicle-sheet .tab.cargo .encumbrance-header .encumbrance-max,
 .wfrp4e .tab.inventory.active .encumbrance-header .encumbrance-max {
-    padding: 0px;
-    padding-top: 0px;
+  padding: 0px;
+  padding-top: 0px;
 }
 
 h2 {
-    font-size: 1.3em;
-    font-weight: bold;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 .app.window-app.sheet.item-sheet.skill-sheet .label-text {
-    width: 80px;
+  width: 80px;
 }
 
-.app.window-app.sheet.wfrp4e.actor.vehicle-sheet .cargo .container .inventory-header.inventory-container .column-section, .app.window-app.sheet.wfrp4e.actor .tab.inventory.active .inventory-header.inventory-container .column-section {
-    min-width: 110px;
-    max-width: 110px;
+.app.window-app.sheet.wfrp4e.actor.vehicle-sheet
+  .cargo
+  .container
+  .inventory-header.inventory-container
+  .column-section,
+.app.window-app.sheet.wfrp4e.actor
+  .tab.inventory.active
+  .inventory-header.inventory-container
+  .column-section {
+  min-width: 110px;
+  max-width: 110px;
 }
