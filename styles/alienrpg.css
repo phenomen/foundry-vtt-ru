@@ -16,7 +16,9 @@
   font-size: 1.025em;
 }
 
-/* CRT 
+/* CRT */
+
+/* 
 .alien-Push-button {
   background: url(../images/alien_crt_push-button.png) no-repeat top left;
 }
@@ -24,5 +26,17 @@
 .alien-Push-button:hover {
   background: url(../images/alien_crt_push-button_hover.gif) no-repeat top left;
 }
+ */
 
-*/
+:root {
+  --alienfont: "OCR-A", sans-serif !important;
+  --alienchatfont: "Oswald", sans-serif !important;
+}
+
+.alienrpg .dots.radiation {
+  padding-bottom: 40px !important;
+}
+
+.alienrpg .dots_conditions .dots {
+  height: 30px !important;
+}
