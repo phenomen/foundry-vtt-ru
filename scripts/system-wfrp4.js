@@ -56,6 +56,23 @@ export function InitWFRP4() {
                     });
                 }
             },
+            injury_effects: (
+                effects,
+                translations,
+                data,
+                translatedCompendium,
+                translatedEntry
+            ) => {
+                if (effects) {
+                    let baseName = data.name.replace(/ \(.*\)/, "");
+                    return effects.map((effect) => {
+                        if (baseName === effect.label) {
+                            effect.label = translatedEntry.name;
+                        }
+                        return effect;
+                    });
+                }
+            },
             condition_effects: (
                 effects
             ) => {
