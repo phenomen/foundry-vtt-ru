@@ -123,14 +123,13 @@ export function InitWFRP4() {
                     let parsedTrait = parseTraitName(originalTrait.name);
 
                     if (originalTrait.type === "trait" && fullTraits.index) {
-                        let translatedTrait = fullTraits.index.find(
-                            (trait) => trait.originalName === parsedTrait.baseName
-                        );
+                        let translatedTrait = fullTraits.index.find(trait => trait.originalName === parsedTrait.baseName)
+                            || fullTraits.index.find(trait => trait.originalName.startsWith(parsedTrait.baseName));
                         if (!translatedTrait) {
                             continue;
                         }
 
-                        originalTrait.name = translatedTrait.name + parsedTrait.special;
+                        originalTrait.name = translatedTrait.name.replace(/ \(.*\)/, parsedTrait.special);
                         if (typeof originalTrait.type !== "undefined") {
                             originalTrait.name = originalTrait.name.replace(
                                 "#",
