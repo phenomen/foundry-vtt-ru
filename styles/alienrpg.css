@@ -12,12 +12,9 @@
 }
 
 /* ALIEN */
-.alienrpg .resource-label {
-  font-size: 1.025em;
-}
 
-.alienrpg .maxboxsize {
-  max-width: 35px;
+h3.Power1.resource-label {
+  font-size: 0.9em;
 }
 
 .chat-message {
@@ -44,7 +41,11 @@
 
 :root {
   --alienfont: "OCR-A", sans-serif !important;
-  --alienchatfont: "Oswald", sans-serif !important;
+  --alienchatfont: "Roboto", sans-serif !important;
+}
+
+.alienrpg textarea {
+  font-family: var(--alienfont);
 }
 
 .alienrpg .dots.radiation {
@@ -59,6 +60,66 @@
   font-size: 13px !important;
 }
 
-.alienrpg .Col3 .expanded {
+#panel,
+#panel ol,
+#panel li {
   font-size: 15px !important;
+  color: white !important;
+}
+
+.message-sender {
+  color: white !important;
+}
+
+.message-metadata {
+  color: white !important;
+}
+
+.message-content h2 {
+  font-family: var(--alienfont) !important;
+  font-size: 20px !important;
+}
+
+a.inline-roll {
+  background: none !important;
+  border: none !important;
+}
+
+.chat-message .table-draw .table-results .table-result .result-text {
+  color: white !important;
+}
+
+.panicked-textarea {
+  margin-left: 40px !important;
+  color: black !important;
+  font-weight: bold;
+}
+
+.alienrpg .maxboxsize,
+.textbox1,
+.textbox2,
+.textbox3,
+.textbox4,
+.biog-full {
+  color: white !important;
+}
+
+#pause,
+#menu {
+  font-family: var(--alienfont) !important;
+  font-variant: small-caps !important;
+  text-transform: uppercase !important;
+}
+
+#pause h3 {
+  color: var(--aliengreen) !important;
+}
+
+.alienrpg .item-header {
+  font-weight: 700 !important;
+}
+
+form .form-group label {
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
 }
