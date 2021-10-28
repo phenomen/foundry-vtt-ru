@@ -23,20 +23,39 @@ h3.Power1.resource-label {
 
 /* CRT */
 
-.alien-Push-button {
-  background: url(./images/alien_crt_push-button.png) no-repeat top left;
-}
-
-.alien-Push-button:hover {
-  background: url(./images/alien_crt_push-button_hover.png) no-repeat top left;
-}
-
 .creature-attack-roll {
+  width: 260px !important;
+  height: 40px !important;
+  border-radius: 3px !important;
+  text-shadow: 0 0 #00000000 !important;
+  color: #00000000 !important;
   background: url(./images/alien_crt_roll-attack.png) no-repeat top left;
 }
 
 .creature-attack-roll:hover {
+  border-radius: 3px !important;
+  background-color: var(--aliendarkergreen) !important;
+  text-shadow: 0 0 #00000000 !important;
+  color: #00000000 !important;
   background: url(./images/alien_crt_roll-attack_hover.png) no-repeat top left;
+}
+
+.alien-Push-button {
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 1px;
+  box-shadow: 0 0 5px var(--aliendarkergreen);
+  border-radius: 3px;
+  background: url(./images/alien_crt_push-button.png) no-repeat top left;
+  color: #00000000;
+}
+
+.alien-Push-button:hover {
+  border-radius: 3px;
+  box-shadow: 0 0 5px var(--aliendarkergreen);
+  background-color: inherit;
+  background: url(./images/alien_crt_push-button_hover.png) no-repeat top left;
+  color: #00000000;
 }
 
 :root {

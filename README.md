@@ -1,8 +1,8 @@
 # Русский перевод для Foundry VTT
 
 * **Автор**: Phenomen
-* **Версия**: 0.8.8.37
-* **Foundry VTT**: 0.8.8
+* **Версия**: 0.9.3.31
+* **Foundry VTT**: 0.8.9-V9
 
 ### Ссылки
 
@@ -50,8 +50,9 @@
 
 ## Поддерживаемые модули
 
+- About Face
 - About Time
-- Automated Animations (JB2A)
+- Automated Animations
 - Better Rolltables
 - BetterRolls for 5e
 - Combat Utility Belt
@@ -72,6 +73,8 @@
 - Monk's Little Details
 - Monk's Scene Navigation
 - Monk's TokenBar
+- Motion Tracker
+- Multilevel Tokens
 - Pings
 - Pointer
 - Polyglot
@@ -83,3 +86,4 @@
 - Tokenizer
 - Torch
 - Turn Marker
+- Wall Height
