@@ -306,9 +306,18 @@ export function InitWFRP4() {
         }
         //END
 
+        let origLoadTable = game.wfrp4e.utility.loadTablesPath;
+        game.wfrp4e.utility.loadTablesPath = async function(path) {
+            if (path === "modules/wfrp4e-core/tables") {
+                await origLoadTable("modules/wfrp4e-core/tables");
+                origLoadTable("modules/ru-ru/tables/wfrp4e");
+            } else {
+                origLoadTable(path);
+            }
+        }
+
         Hooks.once("ready", () => {
             patchWfrpConfig();
-            loadTables();
 
             function patchWfrpConfig() {
                 const WFRP4E = {};
@@ -629,8 +638,8 @@ export function InitWFRP4() {
                     "Уход в защиту [название навыка]";
                 game.wfrp4e.config.systemEffects.defensive.flags.wfrp4e.script =
                     game.wfrp4e.config.systemEffects.defensive.flags.wfrp4e.script
-                    .replace("Language (Magick)", "Язык (магический)")
-                    .replace("Prayer", "Молитва");
+                        .replace("Language (Magick)", "Язык (магический)")
+                        .replace("Prayer", "Молитва");
 
                 game.wfrp4e.config.systemEffects.dualwielder.label = "Двойная атака";
 
@@ -653,37 +662,6 @@ export function InitWFRP4() {
                 game.wfrp4e.config.symptomEffects.nausea.label = "Тошнота";
                 game.wfrp4e.config.symptomEffects.pox.label = "Сыпь";
                 game.wfrp4e.config.symptomEffects.wounded.label = "Незаживающая рана";
-            }
-
-            function loadTables() {
-                // load tables from system folder
-                FilePicker.browse("data", "modules/ru-ru/tables/wfrp4e").then(
-                    (resp) => {
-                        try {
-                            if (resp.error) {
-                                throw "";
-                            }
-                            for (var file of resp.files) {
-                                try {
-                                    if (!file.includes(".json")) continue;
-                                    let filename = file.substring(
-                                        file.lastIndexOf("/") + 1,
-                                        file.indexOf(".json")
-                                    );
-                                    fetch(file)
-                                        .then((r) => r.json())
-                                        .then(async(records) => {
-                                            game.wfrp4e.tables[filename] = records;
-                                        });
-                                } catch (error) {
-                                    console.error("Error reading " + file + ": " + error);
-                                }
-                            }
-                        } catch {
-                            // Do nothing
-                        }
-                    }
-                );
             }
         });
     }
