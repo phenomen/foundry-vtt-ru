@@ -1,0 +1,30 @@
+{
+  "name": "Распад тела и разума",
+  "die" : "1d100",
+  "hide": true,
+  "columns" : ["welf", "helf", "halfling", "human", "dwarf"],
+  "rows": [
+    {
+      "range":{
+        "human" : [1, 50],
+        "dwarf" : [1, 5],
+        "halfling" : [1, 10],
+        "helf" : [],
+        "welf" : []
+      },
+      "name": "Тело",
+      "description" : "@Table[mutatephys]"
+    },
+    {
+      "range":{
+        "human" : [51, 100],
+        "dwarf" : [6, 100],
+        "halfling" : [11, 100],
+        "helf" : [1, 100],
+        "welf" : [1, 100]
+      },
+      "name": "Разум",
+      "description": "@Table[mutatemental]"
+    }
+  ]
+}

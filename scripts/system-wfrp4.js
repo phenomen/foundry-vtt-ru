@@ -10,6 +10,22 @@ export function InitWFRP4() {
             },
         }).render(true);
     } else {
+        let specs = {
+            "Any": "Любое",
+            //Difficulties
+            "Very Easy": "Элементарная",
+            "Easy": "Лёгкая",
+            "Average": "Заурядная",
+            "Challenging": "Серьёзная",
+            "Difficultly": "Трудная",
+            "Hard": "Тяжёлая",
+            "Very Hard": "Безумная",
+            // Corruption
+            "Minor": "Лёгкий",
+            "Moderate": "Сильный",
+            "Major": "Серьезный",
+        };
+
         let compendium = "wfrp4e";
         game.modules.forEach((module, name) => {
             if (name === "wfrp4e-core" && module.active) {
@@ -24,16 +40,49 @@ export function InitWFRP4() {
         });
 
         Babele.get().registerConverters({
-            talent_effects: (
+            entry_effects: (
                 effects,
                 translations,
                 data,
                 translatedCompendium,
-                translatedTalent
+                translatedEntry
             ) => {
                 if (effects) {
                     return effects.map((effect) => {
-                        effect.label = translatedTalent.name;
+                        if (data.name === effect.label) {
+                            effect.label = translatedEntry.name;
+                        }
+                        return effect;
+                    });
+                }
+            },
+            injury_effects: (
+                effects,
+                translations,
+                data,
+                translatedCompendium,
+                translatedEntry
+            ) => {
+                if (effects) {
+                    let baseName = data.name.replace(/ \(.*\)/, "");
+                    return effects.map((effect) => {
+                        if (baseName === effect.label) {
+                            effect.label = translatedEntry.name;
+                        }
+                        return effect;
+                    });
+                }
+            },
+            condition_effects: (
+                effects
+            ) => {
+                if (effects) {
+                    return effects.map((effect) => {
+                        let effectKey = "WFRP4E.ConditionName." + effect.label;
+                        let translatedEffect = game.i18n.localize(effectKey);
+                        if (translatedEffect !== effectKey) {
+                            effect.label = translatedEffect;
+                        }
                         return effect;
                     });
                 }
@@ -74,14 +123,13 @@ export function InitWFRP4() {
                     let parsedTrait = parseTraitName(originalTrait.name);
 
                     if (originalTrait.type === "trait" && fullTraits.index) {
-                        let translatedTrait = fullTraits.index.find(
-                            (trait) => trait.originalName === parsedTrait.baseName
-                        );
+                        let translatedTrait = fullTraits.index.find(trait => trait.originalName === parsedTrait.baseName)
+                            || fullTraits.index.find(trait => trait.originalName.startsWith(parsedTrait.baseName));
                         if (!translatedTrait) {
                             continue;
                         }
 
-                        originalTrait.name = translatedTrait.name + parsedTrait.special;
+                        originalTrait.name = translatedTrait.name.replace(/ \(.*\)/, parsedTrait.special);
                         if (typeof originalTrait.type !== "undefined") {
                             originalTrait.name = originalTrait.name.replace(
                                 "#",
@@ -225,10 +273,11 @@ export function InitWFRP4() {
         }
 
         function translateSpecification(originalSpecification) {
-            let specificationKey = "SPEC." + originalSpecification.trim();
-            let specification = game.i18n.localize(specificationKey);
+            let trimmedSpecification = originalSpecification.trim();
+            let specificationKey = "SPEC." + trimmedSpecification;
+            let specification = specs[trimmedSpecification] || game.i18n.localize(specificationKey);
 
-            return specification !== specificationKey ? specification : originalSpecification.trim();
+            return specification !== specificationKey ? specification : trimmedSpecification;
         }
 
         function parseTraitName(traitName) {
