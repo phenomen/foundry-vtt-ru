@@ -1,7 +1,9 @@
 {
-	"I18N.MAINTAINERS.0": "Red Reign",
+	"I18N.MAINTAINERS": ["Red Reign"],
+
 	"Better Rolls": "Better Rolls",
 	"Better Rolls for 5e": "Better Rolls для 5e",
+
 	"br5e.migrating": "Происходит миграция настроек Better Rolls для версии {version}",
 	"br5e.rollButtonsEnabled.name": "Добавить кнопки бросков в лист",
 	"br5e.rollButtonsEnabled.hint": "Добавить кнопки на предметы, заклинания и особенности при разворачивании полного описания нажатием на название.",
@@ -45,12 +47,14 @@
 	"br5e.d20RollIconsEnabled.hint": "Если включено, атаки, проверки и испытания будут показывать натуральный результат на кубике.",
 	"br5e.applyActiveEffects.name": "Показывать кнопку активных эффектов",
 	"br5e.applyActiveEffects.hint": "Показать кнопку применения активных эффектов. Требуется модуль DAE. Если DAE не активен, эта опция не имеет эффекта.",
+
 	"br5e.d20Mode.name": "Режим d20",
 	"br5e.d20Mode.hint": "Определите тип отображения бросков характеристик, испытаний и атак.",
 	"br5e.d20Mode.choices.1": "Одиночный бросок (Shift: Преимущество, Ctrl: Помеха)",
 	"br5e.d20Mode.choices.2": "Двойной бросок",
 	"br5e.d20Mode.choices.3": "Тройной бросок",
 	"br5e.d20Mode.choices.4": "Запрос преимущества/помехи",
+
 	"br5e.critBehavior.name": "Критический урон",
 	"br5e.critBehavior.hint": "Определите как вычислять критический урон.",
 	"br5e.critBehavior.choices.0": "Без дополнительного урона",
@@ -58,6 +62,7 @@
 	"br5e.critBehavior.choices.2": "Бросать базовый урон, критический всегда максимальный",
 	"br5e.critBehavior.choices.3": "Максимальный базовый и критический урон",
 	"br5e.critBehavior.choices.4": "Максимальный базовый, бросать критический урон",
+
 	"br5e.critString.name": "Отображение критического удара",
 	"br5e.critString.hint": "Выберите как отмечать критические удары. Текст появляется справа от критического броска. Работает только с включёнными Better Rolls.",
 	"br5e.critString.choices.2": "Крит",
@@ -67,11 +72,17 @@
 	"br5e.critString.choices.6": "Критический!",
 	"br5e.critString.choices.7": "(Критический)",
 	"br5e.critString.choices.8": "БАМ!",
-	"br5e.chatDamageButtonsEnabled.name": "Включить кнопки нанесения урона",
-	"br5e.chatDamageButtonsEnabled.hint": "Отображать кнопки на бросках Better Rolls для нанесения урона выбранным токенам.",
-	"br5e.chatDamageButtonsEnabled.choices.0": "Выключено",
-	"br5e.chatDamageButtonsEnabled.choices.1": "Включено",
-	"br5e.chatDamageButtonsEnabled.choices.2": "Только DM",
+
+	"br5e.chatDamageButtonsEnabled": {
+		"name": "Включить кнопки нанесения урона",
+		"hint": "Отображать кнопки на бросках Better Rolls для нанесения урона выбранным токенам.",
+		"choices": {
+			"0": "Выключено",
+			"1": "Включено",
+			"2": "Только мастер"
+		}
+	},
+
 	"br5e.error.noSelectedActor": "Требуется выбрать персонажа!",
 	"br5e.error.noKnownItemOnActor": "Не владеет предметом",
 	"br5e.error.noActorWithId": "Не найден актёр с этим ID",
@@ -83,6 +94,7 @@
 	"br5e.error.noDAE": "Для применения активных эффектов к цели требуется DAE",
 	"br5e.error.libWrapperMinVersion": "Better Rolls требует libWrapper версии {version} или новее.",
 	"br5e.error.noVersatile": "Бросать полуторный урон, если тип не был задан",
+
 	"br5e.settings.critThreshold": "Порог критического удара",
 	"br5e.settings.critDamage.name": "Дополнительный критический урон",
 	"br5e.settings.critDamage.hint": "Дополнительный критический урон добавляется, если хотя бы одна кость урона была брошена",
@@ -108,6 +120,7 @@
 	"br5e.settings.otherFormula": "Другая формула",
 	"br5e.settings.quickFlavor": "Текст",
 	"br5e.settings.prompt": "Расширеный запрос",
+
 	"br5e.buttons.roll": "Бросок",
 	"br5e.buttons.altRoll": "Альт. бросок",
 	"br5e.buttons.attack": "Атака",
@@ -122,6 +135,7 @@
 	"br5e.buttons.itemUse": "Использовать",
 	"br5e.buttons.defaultSheetRoll": "Классический бросок",
 	"br5e.buttons.applyActiveEffects": "Применить активные эффекты",
+
 	"br5e.chat.attack": "Атака",
 	"br5e.chat.check": "Проверка",
 	"br5e.chat.save": "Испытание",
@@ -137,28 +151,36 @@
 	"br5e.chat.advantage": "Преимущество",
 	"br5e.chat.disadvantage": "Помеха",
 	"br5e.chat.normal": "Обычный",
+
 	"br5e.chatContext.repeat": "Повторить бросок",
+
 	"br5e.querying.title": "Выберите тип броска",
 	"br5e.querying.disadvantage": "Помеха",
 	"br5e.querying.normal": "Обычный",
 	"br5e.querying.advantage": "Преимущество",
+
 	"br5e.chat.multiRollButtons.advantage.hint": "Бросок с Преимуществом (Shift)",
 	"br5e.chat.multiRollButtons.disadvantage.hint": "Бросок с Помехой (Ctrl)",
-	"br5e.chat.damageButtons.fullDamage.hint": "Нанести полный урон выбранным токенам.",
-	"br5e.chat.damageButtons.quarterDamage.hint": "Нанести четверть урона выбранным токенам.",
-	"br5e.chat.damageButtons.halfDamage.hint": "Нанести половину урона выбранным токенам.",
-	"br5e.chat.damageButtons.doubleDamage.hint": "Нанести двойной урон выбранным токенам.",
-	"br5e.chat.damageButtons.healing.hint": "Применить исцеление к выбранным токенам.",
-	"br5e.chat.damageButtons.crit.hint": "Нажмите для броска крит. урона.",
-	"br5e.chat.damageButtons.tempOverwrite.title": "Перезапись временного здоровья",
-	"br5e.chat.damageButtons.tempOverwrite.content": "Заменить {original} временного здоровья на {new} временного здоровья?",
-	"br5e.chat.damageButtons.critPrompt.title": "Критический урон?",
-	"br5e.chat.damageButtons.critPrompt.yes": "Да",
-	"br5e.chat.damageButtons.critPrompt.no": "Нет",
+
+	"br5e.chat.damageButtons": {
+		"fullDamage.hint": "Нанести полный урон выбранным токенам.",
+		"quarterDamage.hint": "Нанести четверть урона выбранным токенам.",
+		"halfDamage.hint": "Нанести половину урона выбранным токенам.",
+		"doubleDamage.hint": "Нанести двойной урон выбранным токенам.",
+		"healing.hint": "Применить исцеление к выбранным токенам.",
+		"crit.hint": "Нажмите для броска крит. урона.",
+		"tempOverwrite.title": "Перезапись временного здоровья",
+		"tempOverwrite.content": "Заменить {original} временного здоровья на {new} временного здоровья?",
+		"critPrompt.title": "Критический урон?",
+		"critPrompt.yes": "Да",
+		"critPrompt.no": "Нет"
+	},
+
 	"Ability Roll": "Бросок характеристики",
 	"What type of roll?": "Выберите тип броска",
 	"Ability Check": "Проверка характеристики",
 	"Saving Throw": "Испытание",
+
 	"Not Proficient": "Не умелый",
 	"Proficient": "Умелый",
 	"Jack of all Trades": "Мастер на все руки",
