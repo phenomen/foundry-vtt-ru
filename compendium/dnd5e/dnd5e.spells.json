@@ -2,7 +2,15 @@
 	"label": "Заклинания (SRD)",
 	"mapping": {
 		"materials": "data.materials.value",
-		"source": "data.source"
+		"source": "data.source",
+		"range": {
+			"path": "data.range",
+			"converter": "range"
+		},
+		"target": {
+			"path": "data.target",
+			"converter": "range"
+		}
 	},
 	"entries": {
 		"Acid Arrow": {
