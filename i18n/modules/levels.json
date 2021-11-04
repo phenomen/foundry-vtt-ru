@@ -4,8 +4,8 @@
     "levels.settings.enableTooltips.hint": "Показывать подсказки с высотой верха и низа при наведении на объекты уровней",
     "levels.settings.tokenElevScale.name": "Изменять размер токена от высоты",
     "levels.settings.tokenElevScale.hint": "Размер контролируемых токенов будет изменяться в зависимости от их высоты",
-    "levels.settings.tokenElevScaleMultiSett.name": "Свой множитель масштаба высоты",
-    "levels.settings.tokenElevScaleMultiSett.hint": "Умножение масштаба высоты на это число. Числа выше 1 сделают токен больше, а ниже 1 - меньше.",
+    "levels.settings.tokenElevScaleMultiSett.name":"Свой множитель масштаба высоты",
+    "levels.settings.tokenElevScaleMultiSett.hint":"Умножение масштаба высоты на это число. Числа выше 1 сделают токен больше, а ниже 1 - меньше.",
     "levels.settings.fogHiding.name": "Продвинутый туман войны",
     "levels.settings.fogHiding.hint": "Неисследованные этажи не будут раскрываться в тумане войны",
     "levels.settings.lockElevation.name": "Заблокировать высоту",
@@ -20,9 +20,9 @@
     "levels.settings.preciseLightOcclusion.hint": "Меньше искажений света за счёт производительности",
     "levels.settings.preciseTokenVisibility.name": "Точная видимость токенов",
     "levels.settings.preciseTokenVisibility.hint": "Включение этой опции позволит проверять видимость по отношению к углам токена, а не только центра за счёт ухудшения производительности.",
-    "levels.settings.blockSightMovement.name": "Ограда",
-    "levels.settings.blockSightMovement.hint": "Если включено, то стены с высотой, не ограничивающей зрений, всё ещё будут ограничивать передвижение.",
-    "levels.settings.forceUiRefresh.name": "Принудительное обновление UI",
+    "levels.settings.blockSightMovement.name":"Ограда",
+    "levels.settings.blockSightMovement.hint":"Если включено, то стены с высотой, не ограничивающей зрений, всё ещё будут ограничивать передвижение.",
+    "levels.settings.forceUiRefresh.name":"Принудительное обновление UI",
     "levels.settings.forceUiRefresh.hint": "Принудительно повысить частоту обновления интерфейса Levels за счёт производительности.",
     "levels.settings.hideElevation.name": "Скрывать высоту",
     "levels.settings.hideElevation.hint": "Скрывать высоту от токенов",
@@ -31,12 +31,14 @@
     "levels.settings.hideElevation.opt2": "Скрывать для всех",
     "levels.settings.revealTokenInFog.name": "Раскрывать токены в тумане",
     "levels.settings.revealTokenInFog.hint": "Если токен видим, раскрывать туман вокруг этого токена",
+
+
     "levels.tilecoonfig.rangeTop.name": "Высота (верх)",
     "levels.tilecoonfig.rangeBottom.name": "Высота (низ)",
     "levels.tilecoonfig.showIfAbove.name": "Показывать даже если снизу?",
-    "levels.tilecoonfig.showAboveRange.name": "Максимальная разница высот",
-    "levels.tilecoonfig.isBasement.name": "Подвал?",
-    "levels.tilecoonfig.noFogHide.name": "Не скрывать этот тайл туманом",
+    "levels.tilecoonfig.showAboveRange.name":"Максимальная разница высот",
+    "levels.tilecoonfig.isBasement.name":"Подвал?",
+    "levels.tilecoonfig.noFogHide.name":"Не скрывать этот тайл туманом",
     "levels.tilecoonfig.range.unit": "Высота",
     "levels.drawingconfig.hb.name": "Высота (низ)",
     "levels.drawingconfig.ht.name": "Высота (верх)",
@@ -53,6 +55,7 @@
     "levels.tokenconfig.tokenHeight.unit": "(Дистанция)",
     "levels.template.elevation.name": "Высота",
     "levels.template.special.name": "Особый",
+
     "levels.controls.main.name": "Уровни",
     "levels.controls.levelsview.name": "Включить просмотр/размещение уровней",
     "levels.controls.definelevels.name": "Редактировать уровни",
@@ -62,7 +65,9 @@
     "levels.controls.levelshole.name": "ВКЛ - рисунок размещается как Лестница, ВЫКЛ - Отверствие",
     "levels.controls.levelsclear.name": "Очистить уровни",
     "levels.controls.placeOverhead.name": "Если включено, верхние тайлы будут размещены 'внутри' уровней",
-    "levels.controls.setTemplateElevation.name": "Задать высоту следующего размещаемого шаблона",
+    "levels.controls.setTemplateElevation.name":"Задать высоту следующего размещаемого шаблона",
+    "levels.controls.suppressBrmode.name":"Принудительно отключить режим Better Roofs",
+
     "levels.dialog.levelsclear.title": "Очистить уровни",
     "levels.dialog.levelsclear.content": "Очистить все сохранённые уровни?",
     "levels.dialog.define.warn": "Определите уровни как: низ,верх|низ,верх - например 0,9|10,19|20,29",
@@ -74,11 +79,15 @@
     "levels.dialog.getFromScene.content": "Получить уровни со сцены? Это перезапишет уровни текущей сцены.",
     "levels.dialog.elevator.title": "Уровни - Выберите этаж",
     "levels.dialog.elevation.title": "Высота следующего шаблона",
+
     "levels.ui.title": "Уровни - Инструмент слоёв",
+
     "levels.yesnodialog.yes": "Применить",
     "levels.yesnodialog.no": "Отмена",
+
     "levels.widget.title": "Уровни",
     "levels.widget.element": "Уровень",
+
     "levels.form.bottom": "Низ:",
     "levels.form.top": "Верх:",
     "levels.form.name": "Название:",
@@ -88,4 +97,6 @@
     "levels.form.suggestedLevels": "Автоматически создать уровни",
     "levels.form.autoLevels": "Получить уровни со сцены",
     "levels.err.collision": "Движение заблокировано стеной или потолком",
-    "levels.err.lessfog": "Levels: ВНИМАНИЕ! Обнаружен модуль Less Fog - видимость токенов не будет работать корректно. Отключите этот модуль."}
+
+    "levels.err.lessfog": "Levels: ВНИМАНИЕ! Обнаружен модуль Less Fog - видимость токенов не будет работать корректно. Отключите этот модуль.",
+    "levels.err.tokenheight": "Levels: ВНИМАНИЕ! Обнаружена активированная настройка 'Включить высоту токенов' в модуле Wall Height. Эта функция несовместима с Levels и была принудительно отключена.  "}
