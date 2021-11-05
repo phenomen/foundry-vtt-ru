@@ -221,9 +221,22 @@
   > section.sheet-sidebar
   .inventory-details
   label {
-  font-weight: 600;
+  font-weight: 500;
   font-family: "Oswald";
   font-size: 12px;
+}
+
+.pf2e.item.sheet
+  form
+  > article
+  > section.sheet-body
+  > .tab.active.item-details
+  label {
+  font-weight: 500;
+}
+
+.pf2e.item.sheet form .form-group > label:not(.large) {
+  max-width: 170px;
 }
 
 /* ROLL DIALOG
