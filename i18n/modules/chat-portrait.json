@@ -6,6 +6,8 @@
   "chat-portrait.reset": "Сброс настроек",
   "chat-portrait.use-token-image-s": "Исп. изображение токена",
   "chat-portrait.use-token-image-l": "Будет использовано изображение токена вместо портрета актёра.",
+  "chat-portrait.settings.doNotUseTokenImageWithSpecificType.name": "Не использовать изображение токена для следующих типов актёров (напр. 'персонаж;существо' - разделяйте знаком ; )",
+  "chat-portrait.settings.doNotUseTokenImageWithSpecificType.hint": "Обратите внимание, что тип актёра чувствителен к регистру. Также это имеет смысл только если включена настройка 'Использовать изображение токена'.",
   "chat-portrait.portrait-size-s": "Размер портрета (px)",
   "chat-portrait.portrait-size-l": "Настройка размера изображения в сообщениях чата. По умолчанию: 36 px",
   "chat-portrait.border-shape-s": "Форма портрета",
@@ -96,5 +98,9 @@
   "chat-portrait.settings.useImageReplacer.name": "Использовать замену изображений",
   "chat-portrait.settings.useImageReplacer.hint": "Если вам не нужна функция замены изображений, вы можете её отключить",
   "chat-portrait.settings.useImageReplacerDamageType.name": "Использовать замену изображений для типов урона",
-  "chat-portrait.settings.useImageReplacerDamageType.hint": "Если вам не нужна функция замены изображений для типов урона, вы можете её отключить"
+  "chat-portrait.settings.useImageReplacerDamageType.hint": "Если вам не нужна функция замены изображений для типов урона, вы можете её отключить",
+  "chat-portrait.settings.applyOnCombatTracker.name": "Использовать портрет актёра в трекере боя",
+  "chat-portrait.settings.applyOnCombatTracker.hint": "Если у актёра есть портрет, то он будет использован вместо изображения токена в трекере боя.",
+  "chat-portrait.settings.applyPreCreateChatMessagePatch.name": "Применить патч для 'PreCreateChatMessage' ",
+  "chat-portrait.settings.applyPreCreateChatMessagePatch.hint": "Внимание: включение этой настройки может исправить некоторые ошибки с Midi-QOL, dnd5e helper, CUB, но также может вызвать проблемы совместимости с другими модулями."
 }
