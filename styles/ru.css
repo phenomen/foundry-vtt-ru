@@ -168,40 +168,49 @@
   src: url("../fonts/Oswald-SemiBold.ttf") format("truetype");
 }
 
-.nodesto {
-  font-family: "Oswald", sans-serif;
-  font-weight: 500;
+/* CUSTOM PROPERTIES */
+
+:root {
+  --font-family-sans-serif: "Roboto", "Arial", sans-serif;
+  --font-family-sans-serif-condensed: "Oswald", sans-serif;
+  --font-family-serif: "PT Serif", serif;
+  --fomt-family-serif-fantasy: "Manuskript", serif;
 }
 
 /* FOUNDRY */
 
 body {
-  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+  font-family: var(--font-family-sans-serif);
 }
 
 button {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-family-sans-serif-condensed);
 }
 
 select {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-family-sans-serif-condensed);
 }
 
 form .form-group label {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-family-sans-serif-condensed);
   font-size: 0.8rem;
   font-weight: 600;
 }
 
 .tabs .item {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-family-sans-serif-condensed);
 }
 
 .package-list .package .package-controls button {
   width: 130px;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-family-sans-serif-condensed);
   font-size: 13px;
   line-height: 20px;
+}
+
+.nodesto {
+  font-family: var(--font-family-sans-serif-condensed);
+  font-weight: 500;
 }
 
 /* MODULES */
@@ -211,21 +220,21 @@ form .form-group label {
 }
 
 .monks-tokenbar.chat-card .card-header h3 {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-family-sans-serif-condensed);
 }
 
 .monks-tokenbar .sheet .items-list .items-header h3 {
-  font-family: "PT Serif", serif;
+  font-family: var(--font-family-serif);
 }
 
 .encounter-cr {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-family-sans-serif-condensed);
 }
 
 .request-roll {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-family-sans-serif-condensed);
 }
 
 .monks-tokenbar .sheet .items-list .items-header h3 {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-family-sans-serif-condensed);
 }
