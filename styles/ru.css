@@ -162,6 +162,27 @@
 }
 
 @font-face {
+  font-family: "Roboto Mono";
+  src: url("../fonts/RobotoMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../fonts/RobotoMono-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marck Script";
+  src: url("../fonts/MarckScript-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Nodesto";
   src: url("../fonts/Oswald-SemiBold.ttf") format("truetype");
 }
@@ -173,6 +194,8 @@
   --font-sans-condensed: "Oswald", sans-serif;
   --font-serif: "PT Serif", serif;
   --font-serif-fantasy: "Manuskript", serif;
+  --font-mono: "Roboto Mono", "Consolas", "Courier New", monospace;
+  --font-cursive: "Marck Script", "Manuskript", serif;
 
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
