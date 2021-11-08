@@ -21,6 +21,21 @@
   border-radius: 1rem;
 }
 
+/* ALERT */
+
+.journal-sheet .editor-content .alert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
 /* FONT FAMILY */
 
 .journal-sheet .editor-content .font-sans {
@@ -37,6 +52,14 @@
 
 .journal-sheet .editor-content .font-serif-fantasy {
   font-family: var(--font-serif-fantasy) !important;
+}
+
+.journal-sheet .editor-content .font-mono {
+  font-family: var(--font-mono) !important;
+}
+
+.journal-sheet .editor-content .font-cursive {
+  font-family: var(--font-cursive) !important;
 }
 
 /* FONT PROPERTY */
