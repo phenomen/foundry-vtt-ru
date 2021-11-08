@@ -85,17 +85,9 @@
   max-height: 100vh;
 }
 
-.toggle:checked + .collapse-toggle {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
 .collapse-content .collapse-content-inner {
   font-size: var(--text-sm);
-  background-color: var(--color-gray-300);
-  border-bottom: 1px solid var(--color-gray-500);
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
+  background-color: transparent;
   padding: 0.3rem 0.3rem;
 }
 
