@@ -1,7 +1,6 @@
-/* CYRILLIC FONTS  */
+@import "journal.css";
 
-/* ROBOTO  */
-
+/* CYRILLIC FONTS  */ /* ROBOTO  */
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Light.ttf") format("truetype");
@@ -151,7 +150,6 @@
 @font-face {
   font-family: "Modesto Condensed";
   src: url("../fonts/Oswald-Regular.ttf") format("truetype");
-
   font-weight: 400;
   font-style: normal;
 }
@@ -171,45 +169,121 @@
 /* CUSTOM PROPERTIES */
 
 :root {
-  --font-family-sans-serif: "Roboto", "Arial", sans-serif;
-  --font-family-sans-serif-condensed: "Oswald", sans-serif;
-  --font-family-serif: "PT Serif", serif;
-  --font-family-serif-fantasy: "Manuskript", serif;
+  --font-sans: "Roboto", "Arial", sans-serif;
+  --font-sans-condensed: "Oswald", sans-serif;
+  --font-serif: "PT Serif", serif;
+  --font-serif-fantasy: "Manuskript", serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+  --text-8xl: 6rem;
+
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray-300: #d4d4d8;
+  --color-gray-500: #71717a;
+  --color-gray-700: #3f3f46;
+  --color-gray-900: #18181b;
+  --color-pink-300: #f9a8d4;
+  --color-pink-500: #ec4899;
+  --color-pink-700: #be185d;
+  --color-pink-900: #831843;
+  --color-rose-300: #fda4af;
+  --color-rose-500: #f43f5e;
+  --color-rose-700: #be123c;
+  --color-rose-900: #881337;
+  --color-red-300: #fca5a5;
+  --color-red-500: #ef4444;
+  --color-red-700: #b91c1c;
+  --color-red-900: #7f1d1d;
+  --color-orange-300: #fdba74;
+  --color-orange-500: #f97316;
+  --color-orange-700: #c2410c;
+  --color-orange-900: #7c2d12;
+  --color-yellow-300: #fde047;
+  --color-yellow-500: #eab308;
+  --color-yellow-700: #a16207;
+  --color-yellow-900: #713f12;
+  --color-lime-300: #bef264;
+  --color-lime-500: #84cc16;
+  --color-lime-700: #4d7c0f;
+  --color-lime-900: #365314;
+  --color-green-300: #86efac;
+  --color-green-500: #22c55e;
+  --color-green-700: #15803d;
+  --color-green-900: #14532d;
+  --color-emerald-300: #6ee7b7;
+  --color-emerald-500: #10b981;
+  --color-emerald-700: #047857;
+  --color-emerald-900: #064e3b;
+  --color-teal-300: #5eead4;
+  --color-teal-500: #14b8a6;
+  --color-teal-700: #0f766e;
+  --color-teal-900: #134e4a;
+  --color-cyan-300: #67e8f9;
+  --color-cyan-500: #06b6d4;
+  --color-cyan-700: #0e7490;
+  --color-cyan-900: #164e63;
+  --color-blue-300: #93c5fd;
+  --color-blue-500: #3b82f6;
+  --color-blue-700: #1d4ed8;
+  --color-blue-900: #1e3a8a;
+  --color-indigo-300: #a5b4fc;
+  --color-indigo-500: #6366f1;
+  --color-indigo-700: #4338ca;
+  --color-indigo-900: #312e81;
+  --color-purple-300: #d8b4fe;
+  --color-purple-500: #a855f7;
+  --color-purple-700: #7e22ce;
+  --color-purple-900: #4c1d95;
+  --color-fuchsia-300: #f0abfc;
+  --color-fuchsia-500: #d946ef;
+  --color-fuchsia-700: #a21caf;
+  --color-fuchsia-900: #701a75;
 }
 
 /* FOUNDRY */
 
 body {
-  font-family: var(--font-family-sans-serif);
+  font-family: var(--font-sans);
 }
 
 button {
-  font-family: var(--font-family-sans-serif-condensed);
+  font-family: var(--font-sans-condensed);
 }
 
 select {
-  font-family: var(--font-family-sans-serif-condensed);
+  font-family: var(--font-sans-condensed);
 }
 
 form .form-group label {
-  font-family: var(--font-family-sans-serif-condensed);
-  font-size: 0.8rem;
+  font-family: var(--font-sans-condensed);
+  font-size: var(--text-xs);
   font-weight: 600;
 }
 
 .tabs .item {
-  font-family: var(--font-family-sans-serif-condensed);
+  font-family: var(--font-sans-condensed);
 }
 
 .package-list .package .package-controls button {
   width: 130px;
-  font-family: var(--font-family-sans-serif-condensed);
-  font-size: 13px;
+  font-family: var(--font-sans-condensed);
+  font-size: var(--text-sm);
   line-height: 20px;
 }
 
 .nodesto {
-  font-family: var(--font-family-sans-serif-condensed);
+  font-family: var(--font-sans-condensed);
   font-weight: 500;
 }
 
@@ -220,122 +294,25 @@ form .form-group label {
 }
 
 .monks-tokenbar.chat-card .card-header h3 {
-  font-family: var(--font-family-sans-serif-condensed);
+  font-family: var(--font-sans-condensed);
 }
 
 .monks-tokenbar .sheet .items-list .items-header h3 {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .encounter-cr {
-  font-family: var(--font-family-sans-serif-condensed);
+  font-family: var(--font-sans-condensed);
 }
 
 .request-roll {
-  font-family: var(--font-family-sans-serif-condensed);
+  font-family: var(--font-sans-condensed);
 }
 
 .monks-tokenbar .sheet .items-list .items-header h3 {
-  font-family: var(--font-family-sans-serif-condensed);
+  font-family: var(--font-sans-condensed);
 }
 
 .storyteller-tooltip {
-  font-family: var(--font-family-serif);
-}
-
-/* CUSTOM DECORATIVE STYLES */
-
-/* FONT FAMILY */
-
-.journal-sheet .editor-content .font-fantasy {
-  font-family: var(--font-family-serif-fantasy);
-}
-
-.journal-sheet .editor-content .font-serif {
-  font-family: var(--font-family-serif);
-}
-
-.journal-sheet .editor-content .font-sans-serif {
-  font-family: var(--font-family-sans-serif);
-}
-
-.journal-sheet .editor-content .font-condensed {
-  font-family: var(--font-family-condensed);
-}
-
-/* BACKGROUND */
-
-.journal-sheet .editor-content .bg-black {
-  background-color: #1f2937 !important;
-  border-color: #1f2937 !important;
-}
-
-.journal-sheet .editor-content .bg-white {
-  background-color: #ffffff !important;
-  border-color: #ffffff !important;
-}
-
-.journal-sheet .editor-content .bg-purple {
-  background-color: #570df8 !important;
-  border-color: #570df8 !important;
-}
-
-.journal-sheet .editor-content .bg-orange {
-  background-color: #ff5724 !important;
-  border-color: #ff5724 !important;
-}
-
-.journal-sheet .editor-content .bg-blue {
-  background-color: #2094f3 !important;
-  border-color: #2094f3 !important;
-}
-
-.journal-sheet .editor-content .bg-green {
-  background-color: #37cdbe !important;
-  border-color: #37cdbe !important;
-}
-
-.journal-sheet .editor-content .bg-yellow {
-  background-color: #ff9900 !important;
-  border-color: #ff9900 !important;
-}
-
-.journal-sheet .editor-content .bg-pink {
-  background-color: #f000b8 !important;
-  border-color: #f000b8 !important;
-}
-
-.journal-sheet .editor-content .bg-gray {
-  background-color: #d1d5db !important;
-  border-color: #d1d5db !important;
-}
-
-.journal-sheet .editor-content .bg-lighter {
-  background-color: rgba(currentcolor, 0.5) !important;
-}
-
-/* FONT COLOR */
-
-.journal-sheet .editor-content .text-black {
-  color: #1f2937 !important;
-}
-
-.journal-sheet .editor-content .text-white {
-  color: #ffffff !important;
-}
-
-/* BADGE */
-
-.journal-sheet .editor-content .badge {
-  display: inline-flex;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding-left: 0.563rem;
-  padding-right: 0.563rem;
-  background-color: #1f2937;
-  color: #ffffff;
-  border: 1px;
-  border-color: #1f2937;
-  border-radius: 1rem;
+  font-family: var(--font-serif);
 }

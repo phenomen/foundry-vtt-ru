@@ -43,11 +43,11 @@
   --major-button-font-family: "Manuskript", serif;
   --major-button-font-size: 18px;
   --tab-header-font-family: "Manuskript", serif;
-  --tab-header-font-size: 12px;
+  --tab-header-font-size: var(--text-xs);
   --actor-input-font-family: "PT Serif", serif;
-  --actor-input-font-size: 12px;
+  --actor-input-font-size: var(--text-xs);
   --actor-label-font-family: "Manuskript", serif;
-  --actor-label-font-size: 12px;
+  --actor-label-font-size: var(--text-xs);
 }
 
 .app.window-app.sheet.wfrp4e.actor.character-sheet
@@ -60,17 +60,17 @@
 
 #tinymce .mce-content-body h1,
 .app.window-app .editor .editor-content h1 {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 #tinymce .mce-content-body h2,
 .app.window-app .editor .editor-content h2 {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 #tinymce .mce-content-body h3,
 .app.window-app .editor .editor-content h3 {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 .sidebar-tab .directory-footer button,
@@ -78,156 +78,156 @@
 #macros .directory-footer button,
 #sidebar button,
 #sidebar .header-actions button {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 #combat-popout #combat-round,
 #sidebar #combat #combat-round {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 #combat-popout #combat-controls a,
 #sidebar #combat #combat-controls a {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 .app.window-app.sheet.item-sheet .item-header input[type="text"],
 input[type="password"] {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 .app.window-app.sheet.item-sheet .item-details .label-text {
-  font-family: var(--font-family-serif-fantasy);
-  font-size: 14px;
+  font-family: var(--font-serif-fantasy);
+  font-size: var(--text-sm);
 }
 
 .app.window-app.sheet.item-sheet .sheet-tabs {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 .app.window-app.sheet.item-sheet .tab .label-text {
-  font-family: var(--font-family-serif-fantasy);
-  font-size: 14px;
+  font-family: var(--font-serif-fantasy);
+  font-size: var(--text-sm);
 }
 
 .app.window-app.sheet.item-sheet.career-sheet .sheet-tabs {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 .app.window-app.sheet.item-sheet.disease-sheet .sheet-tabs {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 .app.window-app.sheet.item-sheet.talent-sheet .sheet-tabs {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 .app.window-app.sheet.item-sheet.injury-sheet .sheet-tabs {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 .app.window-app.sheet.item-sheet.injury-sheet .label-text {
-  font-family: var(--font-family-serif-fantasy);
-  font-size: 14px;
+  font-family: var(--font-serif-fantasy);
+  font-size: var(--text-sm);
 }
 
 .app.window-app.sheet.item-sheet.mutation-sheet .sheet-tabs {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 .app.window-app.sheet.item-sheet.creature-trait-sheet .sheet-tabs {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 .app.window-app.sheet.item-sheet.creature-trait-sheet .label-text {
-  font-family: var(--font-family-serif-fantasy);
-  font-size: 14px;
+  font-family: var(--font-serif-fantasy);
+  font-size: var(--text-sm);
 }
 
 .app.window-app.sheet.item-sheet.prayer-sheet .sheet-tabs {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 .app.window-app.sheet.item-sheet.prayer-sheet .label-text {
-  font-family: var(--font-family-serif-fantasy);
-  font-size: 14px;
+  font-family: var(--font-serif-fantasy);
+  font-size: var(--text-sm);
 }
 
 .app.window-app.sheet.item-sheet.skill-sheet .sheet-tabs {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 .app.window-app.sheet.item-sheet.skill-sheet .label-text {
-  font-family: var(--font-family-serif-fantasy);
-  font-size: 14px;
+  font-family: var(--font-serif-fantasy);
+  font-size: var(--text-sm);
 }
 
 .app.window-app.sheet.item-sheet.spell-sheet .sheet-tabs {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 .app.window-app.sheet.item-sheet.spell-sheet .label-text {
-  font-family: var(--font-family-serif-fantasy);
-  font-size: 14px;
+  font-family: var(--font-serif-fantasy);
+  font-size: var(--text-sm);
 }
 
 .app.window-app.sheet.wfrp4e.actor
   .tab.religion.active
   .religion-box-1
   .blessed-label {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 .app.window-app.sheet.wfrp4e.actor
   .tab.religion.active
   .religion-box-2
   .sin-label {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 .wfrp4e.actor .randomize-buttons .randomize-label {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
   font-size: 10px;
 }
 
 #client-settings .window-content form h2 {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 #client-settings .window-content button {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 #controls-reference h3 {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 .window-app.app.journal-sheet .window-content input[name="name"],
 .window-app.app.journal-sheet .window-content input[name="title"] {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 #menu {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 .wfrp4e.item-sheet .condition-value,
 .wfrp4e.actor .condition-value {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 #calendar-settings .window-content h1 {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 #calendar-settings .window-content h2 {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 .forien-quest-preview h1,
 #forien-quest-log h1,
 .calendar-form-container h1 {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 #dice-config h2,
@@ -235,118 +235,118 @@ input[type="password"] {
 #forien-quest-log-form h2,
 #forien-quest-log h2,
 .calendar-form-container h2 {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 #drawing-config h3,
 #dd-importer h3,
 .calendar-form-container h3 {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 #chat-log .message {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 #chat-log .message .message-header {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 #chat-log .message .message-header .message-metadata {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 #sidebar .sidebar-tab #chat-controls .roll-type-select {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet .item-details > li > * {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet .item-details .input-box {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet .item-details .input-text {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet .tab .input-box {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet .tab .input-text {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.wfrp4e.actor.vehicle-sheet select,
 .app.window-app.sheet.item-sheet .tab .form-group > select {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet .tab .form-group .item-checkbox {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet .tab .form-group-stacked .input-box {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet.career-sheet #characteristics-table {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet.career-sheet #characteristics-table th {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet.disease-sheet .tab .input-text {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet.talent-sheet .tab .input-text {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet.injury-sheet .input-box {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet.injury-sheet .input-text {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet.creature-trait-sheet .input-box {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet.creature-trait-sheet .input-text {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet.prayer-sheet .input-box {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet.prayer-sheet .input-text {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet.skill-sheet .input-box {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet.skill-sheet .input-text {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet.spell-sheet .input-box {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.item-sheet.spell-sheet .input-text {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.wfrp4e.actor
@@ -354,7 +354,7 @@ input[type="password"] {
   .religion-box-1
   .blessed-input
   > input {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.wfrp4e.actor
@@ -362,92 +362,92 @@ input[type="password"] {
   .religion-box-2
   .sin-input
   > input {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .wfrp4e.actor.vehicle-sheet .tab.cargo .encumbrance-header .encumbrance-label,
 .wfrp4e .tab.inventory.active .encumbrance-header .encumbrance-label {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .wfrp4e.actor.vehicle-sheet .tab.cargo .encumbrance-header .encumbrance-max,
 .wfrp4e .tab.inventory.active .encumbrance-header .encumbrance-max {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .wfrp4e .tab.inventory.active .encumbrance-header .encumbrance-max.input {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.wfrp4e.actor.vehicle-sheet .tab.cargo .encumbrance-text,
 .app.window-app.sheet.wfrp4e.actor .tab.inventory.active .encumbrance-text {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.wfrp4e.actor.vehicle-sheet .tab.cargo .encumbrance-bar,
 .app.window-app.sheet.wfrp4e.actor .tab.inventory.active .encumbrance-bar {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .wfrp4e.actor .randomize-buttons {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .wfrp4e.actor .randomize-buttons .randomize {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .wfrp4e.creature-sheet .creature-skills {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .wfrp4e.creature-sheet .creature-lists .label {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .wfrp4e.creature-sheet .creature-talents {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .wfrp4e.creature-sheet .creature-traits {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .wfrp4e.creature-sheet .creature-mutations {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .wfrp4e.creature-sheet .creature-psychology {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .wfrp4e.creature-sheet .creature-diseases,
 .wfrp4e.creature-sheet .creature-injuries {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 #players {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 #navigation #nav-toggle {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 #navigation #scene-list .scene.nav-item {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 #client-settings .window-content form .form-group {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 #client-settings .window-content form .form-group select {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .system-wfrp4e .dice-so-nice .sfxs-list select {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .window-app.dialog.weapon-roll-dialog .window-content,
@@ -456,7 +456,7 @@ input[type="password"] {
 .window-app.dialog.prayer-roll-dialog .window-content,
 .window-app.dialog.channel-roll-dialog .window-content,
 .window-app.dialog.characteristic-roll-dialog .window-content {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .app.window-app.sheet.wfrp4e.actor .main-row .wounds.row-section .top.label {
@@ -464,35 +464,35 @@ input[type="password"] {
 }
 
 .window-app.app.image-popout .window-content {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .window-app.app.journal-sheet .window-content {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .window-app.app.journal-sheet .window-content form button[type="submit"] {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .window-app.journal-sheet.image-popout .form-group button {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 #hotbar {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .window-app.dialog.cast-channel .window-header .window-title {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .window-app.dialog.cast-channel .window-content {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .window-app.dialog.cast-channel .dialog-buttons button {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .apply-effect,
@@ -501,55 +501,55 @@ input[type="password"] {
 .overcast-button,
 .prayer-extension-button,
 .chargen-button {
-  font-family: var(--font-family-serif);
-  font-size: 12px;
+  font-family: var(--font-serif);
+  font-size: var(--text-xs);
 }
 
 #chat-log .message.whisper {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 #chat-log .message.whisper.blind {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 #module-management .window-content .directory-list.package-list .package {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 #chat-bubbles {
-  font-family: var(--font-family-serif);
-  font-size: 14px;
+  font-family: var(--font-serif);
+  font-size: var(--text-sm);
   font-weight: normal;
 }
 
 .chat-card-button {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 #calendar-settings .window-content form {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 #calendar-settings .window-content form > div {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 #calendar-settings .window-content form select,
 #calendar-settings .window-content form input {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 #calendar {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 #calendar-weather-container {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 #calendar-weather-climate {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-serif);
 }
 
 .sidebar-tab .directory-footer button,
@@ -574,7 +574,7 @@ input[type="password"] {
 }
 
 .tabs .item {
-  font-family: var(--font-family-serif-fantasy);
+  font-family: var(--font-serif-fantasy);
 }
 
 .app.window-app.sheet.wfrp4e.actor.character-sheet
