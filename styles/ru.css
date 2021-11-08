@@ -174,7 +174,7 @@
   --font-family-sans-serif: "Roboto", "Arial", sans-serif;
   --font-family-sans-serif-condensed: "Oswald", sans-serif;
   --font-family-serif: "PT Serif", serif;
-  --fomt-family-serif-fantasy: "Manuskript", serif;
+  --font-family-serif-fantasy: "Manuskript", serif;
 }
 
 /* FOUNDRY */
@@ -241,4 +241,101 @@ form .form-group label {
 
 .storyteller-tooltip {
   font-family: var(--font-family-serif);
+}
+
+/* CUSTOM DECORATIVE STYLES */
+
+/* FONT FAMILY */
+
+.journal-sheet .editor-content .font-fantasy {
+  font-family: var(--font-family-serif-fantasy);
+}
+
+.journal-sheet .editor-content .font-serif {
+  font-family: var(--font-family-serif);
+}
+
+.journal-sheet .editor-content .font-sans-serif {
+  font-family: var(--font-family-sans-serif);
+}
+
+.journal-sheet .editor-content .font-condensed {
+  font-family: var(--font-family-condensed);
+}
+
+/* BACKGROUND */
+
+.journal-sheet .editor-content .bg-black {
+  background-color: #1f2937 !important;
+  border-color: #1f2937 !important;
+}
+
+.journal-sheet .editor-content .bg-white {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+.journal-sheet .editor-content .bg-purple {
+  background-color: #570df8 !important;
+  border-color: #570df8 !important;
+}
+
+.journal-sheet .editor-content .bg-orange {
+  background-color: #ff5724 !important;
+  border-color: #ff5724 !important;
+}
+
+.journal-sheet .editor-content .bg-blue {
+  background-color: #2094f3 !important;
+  border-color: #2094f3 !important;
+}
+
+.journal-sheet .editor-content .bg-green {
+  background-color: #37cdbe !important;
+  border-color: #37cdbe !important;
+}
+
+.journal-sheet .editor-content .bg-yellow {
+  background-color: #ff9900 !important;
+  border-color: #ff9900 !important;
+}
+
+.journal-sheet .editor-content .bg-pink {
+  background-color: #f000b8 !important;
+  border-color: #f000b8 !important;
+}
+
+.journal-sheet .editor-content .bg-gray {
+  background-color: #d1d5db !important;
+  border-color: #d1d5db !important;
+}
+
+.journal-sheet .editor-content .bg-lighter {
+  background-color: rgba(currentcolor, 0.5) !important;
+}
+
+/* FONT COLOR */
+
+.journal-sheet .editor-content .text-black {
+  color: #1f2937 !important;
+}
+
+.journal-sheet .editor-content .text-white {
+  color: #ffffff !important;
+}
+
+/* BADGE */
+
+.journal-sheet .editor-content .badge {
+  display: inline-flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 0.563rem;
+  padding-right: 0.563rem;
+  background-color: #1f2937;
+  color: #ffffff;
+  border: 1px;
+  border-color: #1f2937;
+  border-radius: 1rem;
 }
