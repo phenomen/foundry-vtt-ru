@@ -1,6 +1,13 @@
-/* CUSTOM DECORATIVE STYLES */
+/* CDS - CUSTOM DECORATIVE STYLES */
 
 :root {
+  --font-sans: "Roboto", "Arial", sans-serif;
+  --font-sans-condensed: "Oswald", "Nodesto", sans-serif;
+  --font-serif: "PT Serif", "Times New Roman", "Georgia", serif;
+  --font-fantasy: "Manuskript", "Papyrus", fantasy;
+  --font-mono: "Roboto Mono", "Consolas", "Courier New", monospace;
+  --font-cursive: "Marck Script", "Lucida Handwriting", cursive;
+
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
   --text-base: 1rem;
@@ -300,8 +307,8 @@
   font-family: var(--font-sans-condensed) !important;
 }
 
-.font-serif-fantasy {
-  font-family: var(--font-serif-fantasy) !important;
+.font-fantasy {
+  font-family: var(--font-fantasy) !important;
 }
 
 .font-mono {
