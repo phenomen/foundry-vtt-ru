@@ -1,8 +1,13 @@
 /* CUSTOM DECORATIVE STYLES */
 
 .journal-sheet .editor-content {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-size: var(--text-base);
+}
+
+h1,
+h2 {
+  font-weight: 700;
 }
 
 /* BADGE */
@@ -38,58 +43,6 @@
 */
 
 /* COLLAPSE */
-
-.collapse {
-  margin-bottom: 1.2rem 0;
-}
-
-.collapse > input[type="checkbox"] {
-  display: none;
-}
-
-.collapse-toggle {
-  display: block;
-  font-size: var(--text-base);
-  color: var(--color-white);
-  background-color: var(--color-gray-700);
-  font-weight: bold;
-  padding: 0.5rem;
-  cursor: pointer;
-  border-radius: 0.2rem;
-  transition: all 0.25s ease-out;
-}
-
-.collapse-toggle::before {
-  content: " ";
-  display: inline-block;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 5px solid currentColor;
-  vertical-align: middle;
-  margin-right: 0.7rem;
-  transform: translateY(-2px);
-  transition: transform 0.2s ease-out;
-}
-
-.toggle:checked + .collapse-toggle::before {
-  transform: rotate(90deg) translateX(-3px);
-}
-
-.collapse-content {
-  max-height: 0px;
-  overflow: hidden;
-  transition: max-height 0.25s ease-in-out;
-}
-
-.toggle:checked + .collapse-toggle + .collapse-content {
-  max-height: 100vh;
-}
-
-.collapse-content .collapse-content-inner {
-  font-size: var(--text-sm);
-  background-color: transparent;
-  padding: 0.3rem 0.3rem;
-}
 
 /* FONT FAMILY */
 
