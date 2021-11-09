@@ -1,16 +1,252 @@
 /* CUSTOM DECORATIVE STYLES */
 
-.journal-sheet .editor-content {
-  font-family: var(--font-sans);
-  font-size: var(--text-base);
+:root {
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+  --text-8xl: 6rem;
+
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray-300: #d4d4d8;
+  --color-gray-500: #71717a;
+  --color-gray-700: #3f3f46;
+  --color-gray-900: #18181b;
+  --color-pink-300: #f9a8d4;
+  --color-pink-500: #ec4899;
+  --color-pink-700: #be185d;
+  --color-pink-900: #831843;
+  --color-rose-300: #fda4af;
+  --color-rose-500: #f43f5e;
+  --color-rose-700: #be123c;
+  --color-rose-900: #881337;
+  --color-red-300: #fca5a5;
+  --color-red-500: #ef4444;
+  --color-red-700: #b91c1c;
+  --color-red-900: #7f1d1d;
+  --color-orange-300: #fdba74;
+  --color-orange-500: #f97316;
+  --color-orange-700: #c2410c;
+  --color-orange-900: #7c2d12;
+  --color-yellow-300: #fde047;
+  --color-yellow-500: #eab308;
+  --color-yellow-700: #a16207;
+  --color-yellow-900: #713f12;
+  --color-lime-300: #bef264;
+  --color-lime-500: #84cc16;
+  --color-lime-700: #4d7c0f;
+  --color-lime-900: #365314;
+  --color-green-300: #86efac;
+  --color-green-500: #22c55e;
+  --color-green-700: #15803d;
+  --color-green-900: #14532d;
+  --color-emerald-300: #6ee7b7;
+  --color-emerald-500: #10b981;
+  --color-emerald-700: #047857;
+  --color-emerald-900: #064e3b;
+  --color-teal-300: #5eead4;
+  --color-teal-500: #14b8a6;
+  --color-teal-700: #0f766e;
+  --color-teal-900: #134e4a;
+  --color-cyan-300: #67e8f9;
+  --color-cyan-500: #06b6d4;
+  --color-cyan-700: #0e7490;
+  --color-cyan-900: #164e63;
+  --color-blue-300: #93c5fd;
+  --color-blue-500: #3b82f6;
+  --color-blue-700: #1d4ed8;
+  --color-blue-900: #1e3a8a;
+  --color-indigo-300: #a5b4fc;
+  --color-indigo-500: #6366f1;
+  --color-indigo-700: #4338ca;
+  --color-indigo-900: #312e81;
+  --color-purple-300: #d8b4fe;
+  --color-purple-500: #a855f7;
+  --color-purple-700: #7e22ce;
+  --color-purple-900: #4c1d95;
+  --color-fuchsia-300: #f0abfc;
+  --color-fuchsia-500: #d946ef;
+  --color-fuchsia-700: #a21caf;
+  --color-fuchsia-900: #701a75;
 }
 
-h1,
-h2 {
-  font-weight: 700;
+/* >>>>> SPACING */
+
+/* PADDING */
+/* Utilities for controlling an element's padding. */
+
+.p-0 {
+  padding: 0px !important;
 }
+
+.p-0\.5 {
+  padding: 0.125rem !important;
+}
+
+.p-1 {
+  padding: 0.25rem !important;
+}
+
+.p-2 {
+  padding: 0.5rem !important;
+}
+
+.p-4 {
+  padding: 1rem !important;
+}
+
+.p-8 {
+  padding: 2rem !important;
+}
+
+.p-10 {
+  padding: 2.5rem !important;
+}
+
+.p-12 {
+  padding: 3rem !important;
+}
+
+.p-14 {
+  padding: 3.5rem !important;
+}
+
+.p-16 {
+  padding: 4rem !important;
+}
+
+.p-20 {
+  padding: 5rem !important;
+}
+
+/* PADDING Y */
+/* Utilities for controlling an element's vertical padding. */
+
+.py-0 {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.py-0\.5 {
+  padding-top: 0.125rem !important;
+  padding-bottom: 0.125rem !important;
+}
+
+.py-1 {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+
+.py-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.py-4 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.py-8 {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+.py-10 {
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
+}
+
+.py-12 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.py-14 {
+  padding-top: 3.5rem !important;
+  padding-bottom: 3.5rem !important;
+}
+
+.py-16 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+.py-20 {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+/* PADDING X */
+/* Utilities for controlling an element's horizontal padding. */
+
+.px-0 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.px-0\.5 {
+  padding-left: 0.125rem !important;
+  padding-right: 0.125rem !important;
+}
+
+.px-1 {
+  padding-left: 0.25rem !important;
+  padding-right: 0.25rem !important;
+}
+
+.px-2 {
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+
+.px-4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem;
+}
+
+.px-8 {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+.px-10 {
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+}
+
+.px-12 {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
+.px-14 {
+  padding-left: 3.5rem !important;
+  padding-right: 3.5rem !important;
+}
+
+.px-16 {
+  padding-left: 4rem !important;
+  padding-right: 4rem !important;
+}
+
+.px-20 {
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+}
+
+/* >>>>> COMPONENTS */
 
 /* BADGE */
+/* Badge components highlights a text with rounded background */
 
 .badge {
   display: inline-flex;
@@ -19,6 +255,8 @@ h2 {
   width: fit-content;
   padding-left: 0.563rem;
   padding-right: 0.563rem;
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
   background-color: var(--color-black);
   color: var(--color-white);
   border: 1px;
@@ -44,7 +282,11 @@ h2 {
 
 /* COLLAPSE */
 
+/* >>>>> UTILITIES */
+/* Utilities control various properties of element and can be stacked with each other */
+
 /* FONT FAMILY */
+/* Utilities for controlling the font family of an element. */
 
 .font-sans {
   font-family: var(--font-sans) !important;
@@ -70,52 +312,8 @@ h2 {
   font-family: var(--font-cursive) !important;
 }
 
-/* FONT PROPERTY */
-
-.text-italic {
-  font-style: italic !important;
-}
-
-.text-bold {
-  font-weight: bold !important;
-}
-
-.text-light {
-  font-weight: lighter !important;
-}
-
-.text-normal {
-  font-weight: normal !important;
-}
-
-.text-small-caps {
-  font-variant: small-caps !important;
-}
-
-.text-uppercase {
-  text-transform: uppercase !important;
-}
-
-.text-underline {
-  text-decoration: underline !important;
-}
-
-.text-dashed {
-  text-decoration: underline !important;
-  text-decoration-style: dashed !important;
-}
-
-.text-dotted {
-  text-decoration: underline !important;
-  text-decoration-style: dotted !important;
-}
-
-.text-wavy {
-  text-decoration: underline !important;
-  text-decoration-style: wavy !important;
-}
-
-/* TEXT SIZE */
+/* FONT SIZE */
+/* Utilities for controlling the font size of an element. */
 
 .text-xs {
   font-size: var(--text-xs) !important;
@@ -177,7 +375,182 @@ h2 {
   line-height: 1;
 }
 
+/* FONT WEIGHT */
+/* Utilities for controlling the font weight of an element. */
+
+.text-thin {
+  font-weight: 100 !important;
+}
+
+.text-light {
+  font-weight: 300 !important;
+}
+
+.text-regular,
+.text-normal {
+  font-weight: 400 !important;
+}
+
+.text-medium {
+  font-weight: 500 !important;
+}
+
+.text-semibold {
+  font-weight: 600 !important;
+}
+
+.text-bold {
+  font-weight: 700 !important;
+}
+
+.text-extrabold {
+  font-weight: 800 !important;
+}
+
+.text-black {
+  font-weight: 900 !important;
+}
+
+/* FONT STYLE */
+/* Utilities for controlling the style of text. */
+
+.text-italic {
+  font-style: italic !important;
+}
+
+.text-non-italic {
+  font-style: normal !important;
+}
+
+/* TEXT TRANSFORM */
+
+.text-normal-case {
+  text-transform: none !important;
+}
+
+.text-small-caps {
+  font-variant: small-caps !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+/* LETTER SPACING */
+/* Utilities for controlling the tracking (letter spacing) of an element. */
+
+.text-tracking-tighter {
+  letter-spacing: -0.05em !important;
+}
+
+.text-tracking-tight {
+  letter-spacing: -0.025em !important;
+}
+
+.text-tracking-normal {
+  letter-spacing: 0em !important;
+}
+
+.text-tracking-wide {
+  letter-spacing: 0.025em !important;
+}
+
+.text-tracking-wider {
+  letter-spacing: 0.05em !important;
+}
+
+.text-tracking-widest {
+  letter-spacing: 0.1em !important;
+}
+
+/* TEXT ALIGNMENT */
+/* Utilities for controlling the alignment of text. */
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+/* TEXT DECORATION */
+/* Utilities for controlling the decoration of text. */
+
+.text-line-through {
+  -webkit-text-decoration-line: line-through !important;
+  text-decoration-line: line-through !important;
+}
+
+.text-underline {
+  -webkit-text-decoration-line: underline !important;
+  text-decoration-line: underline !important;
+}
+
+.text-underline-thick {
+  -webkit-text-decoration-line: underline !important;
+  text-decoration-line: underline !important;
+  text-decoration-thickness: 3px !important;
+}
+
+.text-underline-extrathick {
+  -webkit-text-decoration-line: underline !important;
+  text-decoration-line: underline !important;
+  text-decoration-thickness: 6px !important;
+}
+
+.text-dashed {
+  text-decoration: underline !important;
+  text-decoration-style: dashed !important;
+}
+
+.text-dotted {
+  text-decoration: underline !important;
+  text-decoration-style: dotted !important;
+}
+
+.text-wavy {
+  text-decoration: underline !important;
+  text-decoration-style: wavy !important;
+}
+
+/* TEXT SHADOW */
+/* Utilities for controlling the shadow of a text element. */
+
+.text-shadow {
+  text-shadow: 0px 0px 1px rgb(0 0 0 / 20%), 0px 0px 1px rgb(1 0 5 / 10%) !important;
+}
+
+.text-shadow-sm {
+  text-shadow: 1px 1px 3px rgb(36 37 47 / 25%) !important;
+}
+
+.text-shadow-lg {
+  text-shadow: 3px 3px 6px rgb(0 0 0 / 26%), 0 0 5px rgb(15 3 86 / 22%) !important;
+}
+
 /* BACKGROUND */
+/* Utilities for controlling an element's background color. */
+
+.bg-transparent {
+  background-color: transparent !important;
+}
 
 .bg-black {
   background-color: var(--color-black) !important;
@@ -490,6 +863,11 @@ h2 {
 }
 
 /* FONT COLOR */
+/* Utilities for controlling the text color of an element. */
+
+.color-transparent {
+  color: transparent !important;
+}
 
 .color-black {
   color: var(--color-black) !important;
@@ -737,4 +1115,307 @@ h2 {
 
 .color-gray-900 {
   color: var(--color-gray-900) !important;
+}
+
+/* BORDER WIDTH */
+/* Utilities for controlling the width of an element's borders. */
+
+.border,
+.border-1 {
+  border-width: 1px !important;
+}
+
+.border-0,
+.border-none {
+  border-width: 0px !important;
+}
+
+.border-2 {
+  border-width: 2px !important;
+}
+
+.border-3 {
+  border-width: 3px !important;
+}
+
+.border-4 {
+  border-width: 4px !important;
+}
+
+.border-5 {
+  border-width: 5px !important;
+}
+
+/* BORDER RADIUS */
+/* Utilities for controlling the border radius of an element. */
+
+.rounded {
+  border-radius: 0.25rem !important;
+}
+
+.rounded-none {
+  border-radius: 0px !important;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem !important;
+}
+
+.rounded-md {
+  border-radius: 0.375rem !important;
+}
+
+/* BORDER COLOR */
+/* Utilities for controlling the color of an element's borders. */
+
+.border-color-transparent {
+  border-color: transparent !important;
+}
+
+.border-color-black {
+  border-color: var(--color-black) !important;
+}
+
+.border-color-white {
+  border-color: var(--color-white) !important;
+}
+
+.border-color-pink-300 {
+  border-color: var(--color-pink-300) !important;
+}
+
+.border-color-pink-500 {
+  border-color: var(--color-pink-500) !important;
+}
+
+.border-color-pink-700 {
+  border-color: var(--color-pink-700) !important;
+}
+
+.border-color-pink-900 {
+  border-color: var(--color-pink-900) !important;
+}
+
+.border-color-rose-300 {
+  border-color: var(--color-rose-300) !important;
+}
+
+.border-color-rose-500 {
+  border-color: var(--color-rose-500) !important;
+}
+
+.border-color-rose-700 {
+  border-color: var(--color-rose-700) !important;
+}
+
+.border-color-rose-900 {
+  border-color: var(--color-rose-900) !important;
+}
+
+.border-color-red-300 {
+  border-color: var(--color-red-300) !important;
+}
+
+.border-color-red-500 {
+  border-color: var(--color-red-500) !important;
+}
+
+.border-color-red-700 {
+  border-color: var(--color-red-700) !important;
+}
+
+.border-color-red-900 {
+  border-color: var(--color-red-900) !important;
+}
+
+.border-color-orange-300 {
+  border-color: var(--color-orange-300) !important;
+}
+
+.border-color-orange-500 {
+  border-color: var(--color-orange-500) !important;
+}
+
+.border-color-orange-700 {
+  border-color: var(--color-orange-700) !important;
+}
+
+.border-color-orange-900 {
+  border-color: var(--color-orange-900) !important;
+}
+
+.border-color-yellow-300 {
+  border-color: var(--color-yellow-300) !important;
+}
+
+.border-color-yellow-500 {
+  border-color: var(--color-yellow-500) !important;
+}
+
+.border-color-yellow-700 {
+  border-color: var(--color-yellow-700) !important;
+}
+
+.border-color-yellow-900 {
+  border-color: var(--color-yellow-900) !important;
+}
+
+.border-color-lime-300 {
+  border-color: var(--color-lime-300) !important;
+}
+
+.border-color-lime-500 {
+  border-color: var(--color-lime-500) !important;
+}
+
+.border-color-lime-700 {
+  border-color: var(--color-lime-700) !important;
+}
+
+.border-color-lime-900 {
+  border-color: var(--color-lime-900) !important;
+}
+
+.border-color-green-300 {
+  border-color: var(--color-green-300) !important;
+}
+
+.border-color-green-500 {
+  border-color: var(--color-green-500) !important;
+}
+
+.border-color-green-700 {
+  border-color: var(--color-green-700) !important;
+}
+
+.border-color-green-900 {
+  border-color: var(--color-green-900) !important;
+}
+
+.border-color-emerald-300 {
+  border-color: var(--color-emerald-300) !important;
+}
+
+.border-color-emerald-500 {
+  border-color: var(--color-emerald-500) !important;
+}
+
+.border-color-emerald-700 {
+  border-color: var(--color-emerald-700) !important;
+}
+
+.border-color-emerald-900 {
+  border-color: var(--color-emerald-900) !important;
+}
+
+.border-color-teal-300 {
+  border-color: var(--color-teal-300) !important;
+}
+
+.border-color-teal-500 {
+  border-color: var(--color-teal-500) !important;
+}
+
+.border-color-teal-700 {
+  border-color: var(--color-teal-700) !important;
+}
+
+.border-color-teal-900 {
+  border-color: var(--color-teal-900) !important;
+}
+
+.border-color-cyan-300 {
+  border-color: var(--color-cyan-300) !important;
+}
+
+.border-color-cyan-500 {
+  border-color: var(--color-cyan-500) !important;
+}
+
+.border-color-cyan-700 {
+  border-color: var(--color-cyan-700) !important;
+}
+
+.border-color-cyan-900 {
+  border-color: var(--color-cyan-900) !important;
+}
+
+.border-color-blue-300 {
+  border-color: var(--color-blue-300) !important;
+}
+
+.border-color-blue-500 {
+  border-color: var(--color-blue-500) !important;
+}
+
+.border-color-blue-700 {
+  border-color: var(--color-blue-700) !important;
+}
+
+.border-color-blue-900 {
+  border-color: var(--color-blue-900) !important;
+}
+
+.border-color-indigo-300 {
+  border-color: var(--color-indigo-300) !important;
+}
+
+.border-color-indigo-500 {
+  border-color: var(--color-indigo-500) !important;
+}
+
+.border-color-indigo-700 {
+  border-color: var(--color-indigo-700) !important;
+}
+
+.border-color-indigo-900 {
+  border-color: var(--color-indigo-900) !important;
+}
+
+.border-color-purple-300 {
+  border-color: var(--color-purple-300) !important;
+}
+
+.border-color-purple-500 {
+  border-color: var(--color-purple-500) !important;
+}
+
+.border-color-purple-700 {
+  border-color: var(--color-purple-700) !important;
+}
+
+.border-color-purple-900 {
+  border-color: var(--color-purple-900) !important;
+}
+
+.border-color-fuchsia-300 {
+  border-color: var(--color-fuchsia-300) !important;
+}
+
+.border-color-fuchsia-500 {
+  border-color: var(--color-fuchsia-500) !important;
+}
+
+.border-color-fuchsia-700 {
+  border-color: var(--color-fuchsia-700) !important;
+}
+
+.border-color-fuchsia-900 {
+  border-color: var(--color-fuchsia-900) !important;
+}
+
+.border-color-gray-300 {
+  border-color: var(--color-gray-300) !important;
+}
+
+.border-color-gray-500 {
+  border-color: var(--color-gray-500) !important;
+}
+
+.border-color-gray-700 {
+  border-color: var(--color-gray-700) !important;
+}
+
+.border-color-gray-900 {
+  border-color: var(--color-gray-900) !important;
 }
