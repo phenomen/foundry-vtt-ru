@@ -1156,22 +1156,46 @@
   border-width: 5px !important;
 }
 
+.border-bottom {
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.border-top {
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.border-left {
+  border-top: none !important;
+  border-bottom: none !important;
+  border-right: none !important;
+}
+
+.border-right {
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+}
+
 /* BORDER RADIUS */
 /* Utilities for controlling the border radius of an element. */
 
-.rounded {
-  border-radius: 0.25rem !important;
-}
-
-.rounded-none {
+.border-rounded-none {
   border-radius: 0px !important;
 }
 
-.rounded-sm {
+.border-rounded {
+  border-radius: 0.25rem !important;
+}
+
+.border-rounded-sm {
   border-radius: 0.125rem !important;
 }
 
-.rounded-md {
+.border-rounded-md {
   border-radius: 0.375rem !important;
 }
 
