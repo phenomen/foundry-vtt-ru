@@ -1133,27 +1133,33 @@
 .border,
 .border-1 {
   border-width: 1px !important;
+  border-style: solid;
 }
 
 .border-0,
 .border-none {
   border-width: 0px !important;
+  border-style: none !important;
 }
 
 .border-2 {
   border-width: 2px !important;
+  border-style: solid;
 }
 
 .border-3 {
   border-width: 3px !important;
+  border-style: solid;
 }
 
 .border-4 {
   border-width: 4px !important;
+  border-style: solid;
 }
 
 .border-5 {
   border-width: 5px !important;
+  border-style: solid;
 }
 
 .border-bottom {
@@ -1178,6 +1184,24 @@
   border-top: none !important;
   border-bottom: none !important;
   border-left: none !important;
+}
+
+/* BORDER STYLE */
+
+.border-solid {
+  border-style: solid !important;
+}
+
+.border-dashed {
+  border-style: dashed !important;
+}
+
+.border-dotted {
+  border-style: dotted !important;
+}
+
+.border-double {
+  border-style: double !important;
 }
 
 /* BORDER RADIUS */
