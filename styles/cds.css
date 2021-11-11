@@ -1162,6 +1162,9 @@
   border-style: solid;
 }
 
+/* BORDER POSITION */
+/* Utilities for controlling the position of element's border. By default all sides are enabled. Adding one of the following classes will disable all other sides.  */
+
 .border-bottom {
   border-top: none !important;
   border-left: none !important;
@@ -1187,6 +1190,7 @@
 }
 
 /* BORDER STYLE */
+/* Utilities for controlling the style of an element's borders. */
 
 .border-solid {
   border-style: solid !important;
@@ -1207,19 +1211,19 @@
 /* BORDER RADIUS */
 /* Utilities for controlling the border radius of an element. */
 
-.border-rounded-none {
+.rounded-none {
   border-radius: 0px !important;
 }
 
-.border-rounded {
+.rounded {
   border-radius: 0.25rem !important;
 }
 
-.border-rounded-sm {
+.rounded-sm {
   border-radius: 0.125rem !important;
 }
 
-.border-rounded-md {
+.rounded-md {
   border-radius: 0.375rem !important;
 }
 
