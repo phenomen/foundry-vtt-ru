@@ -213,8 +213,13 @@ form .form-group label {
 }
 
 a.entity-link {
-  padding: 1px 3px;
-  line-height: 22px;
+  padding: 1px 3px !important;
+  line-height: 22px !important;
+}
+
+li a.entity-link {
+  padding: 1px 3px !important;
+  line-height: 24px !important;
 }
 
 .package-list .package .package-controls button {
@@ -225,8 +230,8 @@ a.entity-link {
 }
 
 .nodesto {
-  font-family: var(--font-sans-condensed);
-  font-weight: 500;
+  font-family: var(--font-sans-condensed) !important;
+  font-weight: 500 !important;
 }
 
 .journal-sheet .editor-content {
