@@ -1,8 +1,44 @@
 {
     "combat-utility-belt": {
+        "SHORT_NAME": "CUB",
+        "NAME": "Combat Utility Belt",
+        "ID": "combat-utility-belt",
         "ENHANCED_CONDITIONS.OutputChatConfirm": {
             "Title": "Включить вывод в чат для всех состояний?",
             "Content": "Нажмите 'Да', чтобы включить 'Выводить в чат' для всех состояний."
+        },
+        "CONCENTRATOR": {
+            "MessagePrefix": "Combat Utility Belt - Концентратор",
+            "NoMatchingCondition": "Не найдено подходящего состояния для Концентратора. Проверьте ваши настройки Концентратора и Лаборатории состояний.",
+            "Prompts": {
+                "Check": {
+                    "Title": "Проверка концентрации",
+                    "Content": "<p>Проверить концентрацию для <strong>{actorName}</strong>?</p><p>Заклинание: <strong>{spellName}</strong></p>",
+                    "ClosedByOther": "Другой участник совершил проверку концентрации"
+                },
+                "EnableEnhancedConditions": {
+                    "Title": "Включить Улучшенные состояния?",
+                    "Content": "<p>Для использования Концентратора требуется включить Улучшенные состояния.</p><strong>Желаете ли включить их?</strong>"
+                }
+            },
+            "Messages": {
+                "StartConcentration": "<h3>Концентратор</h3><p>{entityName} сейчас концентрируется на <strong>{spellName}</strong>.",
+                "DoubleConcentration": "<h3>Концентратор</h3><p>{entityName} сотворяет <strong>{newSpellName}</strong> во время концентрации на <strong>{oldSpellName}</strong>. Концентрация на предыдущем заклинании была потеряна.",
+                "EndConcentration": "<h3>Концентратор</h3><p>Концентрация {entityName} на <strong>{spellName}</strong> была потеряна!</p>",
+                "ConcentrationTested": "<h3>Концентратор</h3><strong>{entityName}</strong> получает урон и концентрация на <strong>{spellName}</strong> требует проверки (<strong>СЛ {dc}</strong>)!</p>",
+                "Incapacitated": "<h3>Концентратор</h3><strong>{entityName}</strong> выведен из строя и концентрация на <strong>{spellName}</strong> была потеряна!</p>"      
+            },
+            "UnknownSpell": "Неизвестное заклинание"
+        },
+        "SETTINGS": {
+            "CONCENTRATOR": {
+                "AutoEndConcentrationN": "Автоматически завершать концентрацию",
+                "AutoEndConcentrationH": "Автоматическая потеря концентрации при проваленной проверке концентрации.",
+                "NotifyConcentrationN": "Оповещение о начале концентрации",
+                "NotifyConcentrationH": "Отправлять сообщение при сотворении заклинания, требующего концентрации.",
+                "NotifyEndN": "Оповещение о завершении концентрации",
+                "NotifyEndH": "Отправлять сообщение при окончании концентрация на заклинании."
+            }
         }
     },
     "GADGET_DESCRIPTIONS.AwardXP": "Включает распределение пунктов опыта между игроками за победу над врагами после боя",

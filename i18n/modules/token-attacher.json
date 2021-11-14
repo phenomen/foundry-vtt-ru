@@ -1,15 +1,18 @@
 {
 	"TOKENATTACHER.error.NothingSelected": "Ни одного объекта не выбрано!",
 	"TOKENATTACHER.error.NoTokensSelected": "Ни одного токена не выбрано!",
-	"TOKENATTACHER.error.NoActiveGMFound": "Нет активного GM! Связанные токены не были корректно обновлены. Переместите токены в предыдущее положение и свяжитесь с GM.",
-	"TOKENATTACHER.error.ExportAllowsOnlyActor": "Через Token Attacher можно экспортировать только библиотеки актёров!",
-	"TOKENATTACHER.error.NoValidJSONProvided": "Не был загружен корректный JSON!",
+	"TOKENATTACHER.error.NoActiveGMFound": "Нет активного GM! Связанные токены не были корректно обновлены. Переместите токены в предыдущее положение и свяжитесь с GM.",	
+	"TOKENATTACHER.error.ExportAllowsOnlyActor": "Через Token Attacher можно экспортировать только библиотеки актёров!",	
+	"TOKENATTACHER.error.NoValidJSONProvided": "Не был загружен корректный JSON!",	
 	"TOKENATTACHER.error.ElementAlreadyAttachedInChain": "Элемент уже в очереди на привязки. Смотрите консоль для подробностей.",
 	"TOKENATTACHER.error.ActorDataModelNeedsMigration": "Токен использует старую модель данных. Мигрируйте её через 'Token Attacher - Меню GM ' в 'Настройках модулей' и попытайтесь снова!",
 	"TOKENATTACHER.error.MigrationErrorScene": "Ошибка миграции на сцене {scene}. Смотрите консоль для подробностей.",
 	"TOKENATTACHER.error.QuickEditNotFinished": "Режим быстрого редактирования Token Attacher не был завершён и изменения не были сохранены.",
 	"TOKENATTACHER.error.PostProcessingNotFinished": "Пост-обработчик Token Attacher не завершил работу. Если вы сменили сцену в этот момент, то используйте макрос (TA) Delete missing Links.",
 	"TOKENATTACHER.error.OnlyTokenToggleAnimate": "Только анимация токена может изменяться.",
+	"TOKENATTACHER.error.BaseDoesntExist": "Интерфейс прикрепления открыт для основы, которая больше не существует. Окно было закрыто. Откройте интерфейс прикрепления для существующей основы!",
+	"TOKENATTACHER.error.UIisOpenOnAssign": "Интерфейс прикрепления всё ещё открыт для основы. Чтобы применить изменения, закройте окно и выберите токен снова!",
+
 	"TOKENATTACHER.info.ObjectsAttached": "Выбранные объекты привязанны к токену.",
 	"TOKENATTACHER.info.ObjectsDetached": "Выбранные объекты отвязаны от токена.",
 	"TOKENATTACHER.info.SelectionSaved": "Выбранные объекты сохранены для будущей привязки.",
@@ -25,6 +28,7 @@
 	"TOKENATTACHER.info.ObjectsUnlocked": "Выбор элементов разблокирован.",
 	"TOKENATTACHER.info.ObjectsLocked": "Выбор элементов заблокирован.",
 	"TOKENATTACHER.info.AnimationToggled": "Анимация изменена на {count} токенах",
+
 	"TOKENATTACHER.button.AttachToToken": "Связать выделение с токеном",
 	"TOKENATTACHER.button.DetachFromToken": "Отвязать всё от токена",
 	"TOKENATTACHER.button.SaveSelection": "Сохранить выделение для привязки",
@@ -40,13 +44,16 @@
 	"TOKENATTACHER.button.paste": "Вставить и привязать элементы",
 	"TOKENATTACHER.button.toggleAnimate": "Переключить анимацию токена",
 	"TOKENATTACHER.button.close": "Закрыть интерфейс привязки",
+	
 	"TOKENATTACHER.button.gmMenu.SceneMigration": "Принудительная миграция активной сцены",
 	"TOKENATTACHER.button.gmMenu.ActorsMigration": "Мигрировать актёров из боковой панели",
 	"TOKENATTACHER.button.gmMenu.CompendiumsMigration": "Мигрировать все библиотеки, содержащие актёров с привязкой",
 	"TOKENATTACHER.button.gmMenu.ImportJSONDialog": "Открыть окно импорта JSON",
 	"TOKENATTACHER.button.gmMenu.ExportActorsToJSON": "Открыть окно экспорта актёров в JSON",
 	"TOKENATTACHER.button.gmMenu.ResetMigration": "Сбросить модель данных и запустить миграцию",
-	"TOKENATTACHER.button.gmMenu.PurgeTADataInScene": "Удаление всех данных Token Attacher со сцены",
-	"TOKENATTACHER.setting.MLTBlockMovement": "Предотвращение перемещения MLT/V&M",
+	"TOKENATTACHER.button.gmMenu.PurgeTADataInScene": "Удаление всех данных Token Attacher со сцены",	
+	
+	"TOKENATTACHER.setting.MLTBlockMovement": "Предотвращение перемещения MLT/V&M основы токена",	
 	"TOKENATTACHER.setting.MLTBlockMovementHint": "Если у токена есть транспорт, перевозящий этот токен, то эта настройка предотвратит нежелательное перемещение токена модулями Multi Level Tokens и Vehicles & Mechanisms."
+
 }
