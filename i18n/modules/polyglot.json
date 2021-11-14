@@ -1,46 +1,99 @@
 {
-  "POLYGLOT.LanguageSettings": "Language Settings",
-  "POLYGLOT.ChatSettings": "Chat Settings",
-  "POLYGLOT.LanguagesTitle": "Языки",
-  "POLYGLOT.LanguagesHint": "Изменить алфавит, используемый языками. Требуется перезагрузка мира.",
-  "POLYGLOT.Fonts": "Шрифты",
-  "POLYGLOT.CustomLanguagesTitle": "Свои языки",
-  "POLYGLOT.CustomLanguagesHint": "Список нестандартных языков, которые вы хотите добавить в систему (разделяйте запятой).",
-  "POLYGLOT.ComprehendLanguagesTitle": "Заклинание \"Понимание языков\"",
-  "POLYGLOT.ComprehendLanguagesHint": "Like the Comprehend Languages spell from D&D. Input a custom language you have already set. It won't be able to be spoken or written but allows to understand all other languages.",
-  "POLYGLOT.TruespeechTitle": "Заклинание \"Полиглот\"",
-  "POLYGLOT.TruespeechHint": "Like the Tongues spell from D&D. Input a custom language you have already set. Its speaker understands all spoken languages (can't read Journals) and is understood by all creatures.",
-  "POLYGLOT.DefaultLanguageTitle": "Стандартный язык",
-  "POLYGLOT.DefaultLanguageHint": "Название языка по умолчанию. Оставьте пустым, чтобы использовать язык системы.",
-  "POLYGLOT.ReplaceLanguagesTitle": "Replace System's Languages",
-  "POLYGLOT.ReplaceLanguagesHint": "Replaces the system's default languages with your Custom Languages. The first language on the list becomes the new default language.",
-  "POLYGLOT.ScrambleGMTitle": "Шифровать для GM",
-  "POLYGLOT.ScrambleGMHint": "Отключите эту опцию, чтобы GM всегда мог читать языки.",
-  "POLYGLOT.RandomizeRunesTitle": "Случайные руны",
-  "POLYGLOT.RandomizeRunesHint": "При включении, один и тот же текст будет шифроваться разным способом.",
-  "POLYGLOT.ExportFontsTitle": "Доступ к шрифтам",
-  "POLYGLOT.ExportFontsHint": "Сделать шрифты Polyglot доступными в других инструментах (например в Рисовании).",
-  "POLYGLOT.DisplayTranslatedTitle": "Display translations",
-  "POLYGLOT.DisplayTranslatedHint": "Для языков, переведённых в окне чата, отображать оригинальный текст и перевод под ним.",
-  "POLYGLOT.HideTranslationTitle": "Скрывать Глобус и текст \"Перевод с\" от игроков",
-  "POLYGLOT.HideTranslationHint": "Включите эту настройку, если не хотите, чтобы игроки видели на каком языке говорит NPC.",
-  "POLYGLOT.AllowOOCTitle": "Шифровать сообщения вне отыгрыша",
-  "POLYGLOT.AllowOOCHint": "Позволить GM шифровать сообщения, отправляемый в \"Чат вне отыгрыша\"",
-  "POLYGLOT.AllowOOCOptions.a": "Все",
-  "POLYGLOT.AllowOOCOptions.b": "Только GM",
-  "POLYGLOT.AllowOOCOptions.c": "Только игроки",
-  "POLYGLOT.AllowOOCOptions.d": "Никто",
-  "POLYGLOT.Translation": "Перевод",
-  "POLYGLOT.TranslatedFrom": "Перевод с ",
-  "POLYGLOT.LanguageLabel": "Язык",
-  "POLYGLOT.AlphabetLabel": "Алфавит",
-  "POLYGLOT.LatinAlphabet": "Латинский алфавит",
-  "POLYGLOT.ToggleRunes": "Включить руны",
-  "POLYGLOT.Runes": "Руны",
-  "POLYGLOT.COC7.LanguageOwn": "Язык",
-  "POLYGLOT.COC7.LanguageAny": "Язык",
-  "POLYGLOT.COC7.LanguageOther": "Язык",
-  "POLYGLOT.COC7.LanguageSpec": "Язык",
-  "POLYGLOT.SWADE.LanguageSkills": "Язык",
-  "POLYGLOT.WFRP4E.LanguageSkills": "Язык"
+	"POLYGLOT": {
+		"DefaultAlphabet": "Алфавит по умолчанию",
+		"FontSettings": "Настройки шрифта",
+		"LanguageSettings": "Настройки языка",
+		"ChatSettings": "Настройки чата",
+		"LanguagesTitle": "Языки",
+		"LanguagesHint": "Изменить алфавит, используемый языками. Требуется перезагрузка мира.",
+		"Font": "Шрифт",
+		"Fonts": "Шрифты",
+		"FontSize": "Размер шрифта (%)",
+
+		"CustomLanguagesTitle": "Свои языки",
+		"CustomLanguagesHint": "Список нестандартных языков, которые вы хотите добавить в систему (разделяйте запятой).",
+		"ComprehendLanguagesTitle": "Заклинание \"Понимание языков\"",
+		"ComprehendLanguagesHint": "Выберите язык, который позволяет обладателю понимать буквальное значение услышанных слов, произнесённых на любом языке, но без возможности говорить или писать на них.",
+		"directory": {
+			"name": "Своя папка со шрифтами",
+			"hint": "Папка, в которой содержаться ваши файлы шрифтов."
+		},
+		"source": {
+			"name": "Тип источника",
+			"hint": "Если ваши шрифты находятся на Forge или Amazon S3, то выберите соответсвующий тип.",
+			"data": "Data",
+			"forgevtt": "Forge",
+			"s3": "S3"
+		},
+		"TruespeechTitle": "Заклинание \"Полиглот\"",
+		"TruespeechHint": "Выберите язык, который позволяет обладателю понимать значение услышанных слов, произнесённых на любом языке, а также позволяет другим существам понимать обладателя.",
+		"JournalHighlightTitle": "Непрозрачность выделения журнала (%)",
+		"JournalHighlightHint": "Определяет непрозрачность выделения других шрифтов в журнале.",
+		"logographicalFontToggleTitle": "Логографические шрифты",
+		"logographicalFontToggleHint": "Сокращение фраз вдвое на логографических языках (японский, китайский, корейский и т.д.).",
+		"DefaultLanguageTitle": "Стандартный язык",
+		"DefaultLanguageHint": "Название языка по умолчанию. Оставьте пустым, чтобы использовать язык системы.",
+		"ReplaceLanguagesTitle": "Заменить языки системы",
+		"ReplaceLanguagesHint": "Замена языков системы вашими особыми языками. Первый язык в списке станет новым языком по умолчанию.",
+		"ScrambleGMTitle": "Шифровать для GM",
+		"ScrambleGMHint": "Отключите эту опцию, чтобы GM всегда мог читать языки.",
+		"enableAllFontsTitle": "Использовать все шрифты",
+		"enableAllFontsHint": "Сделать шрифты Polyglot доступными в настройках языка",
+		"RandomizeRunesTitle": "Случайные руны",
+		"RandomizeRunesHint": "При включении, один и тот же текст будет шифроваться разным способом.",
+		"RandomizeRunesOptions": {
+			"a": "По умолчанию",
+			"b": "Уникальный фразы",
+			"c": "Отключено"
+		},
+		"ExportFontsTitle": "Доступ к шрифтам",
+		"ExportFontsHint": "Сделать шрифты Polyglot доступными в других инструментах (например в Рисовании).",
+		"DisplayTranslatedTitle": "Отображать перевод",
+		"DisplayTranslatedHint": "Для языков, переведённых в окне чата, отображать оригинальный текст и перевод под ним.",
+		"HideTranslationTitle": "Скрывать Глобус и текст \"Перевод с\" от игроков",
+		"HideTranslationHint": "Включите эту настройку, если не хотите, чтобы игроки видели на каком языке говорит NPC.",
+		"AllowOOCTitle": "Шифровать сообщения вне отыгрыша",
+		"AllowOOCHint": "Позволить GM шифровать сообщения, отправляемый в \"Чат вне отыгрыша\"",
+		"AllowOOCOptions": {
+			"a": "Все",
+			"b": "Только GM",
+			"c": "Только игроки",
+			"d": "Никто"
+		},
+		"LanguageProvider": {
+			"name": "Настройки источника языка",
+			"hint": "Выберите источник, предоставляющий информацию об языках. Некоторые источники могут быть добавлены системами и модулями. Опции ниже отражают те, что были найдены в текущем мире.",
+			"choices": {
+				"module": "Модуль {name}",
+				"native": "Универсальный",
+				"system": "Система {name}"
+			}
+		},
+
+		"Translation": "Перевод",
+		"TranslatedFrom": "Перевод с ",
+		"LanguageLabel": "Язык",
+		"AlphabetLabel": "Алфавит",
+		"LatinAlphabet": "Латинский алфавит",
+		"ToggleRunes": "Включить руны",
+		"Runes": "Руны",
+
+		"UESRPG.Language": "Язык",
+
+		"Generic": {
+			"Language": "Язык"
+		},
+		"COC7": {
+			"LanguageOwn": "Язык",
+			"LanguageAny": "Язык",
+			"LanguageOther": "Язык",
+			"LanguageSpec": "Язык"
+		},
+		"SWADE": {
+			"LanguageSkills": "Язык"
+		},
+		"WFRP4E": {
+			"LanguageSkills": "Язык"
+		}
+	}
 }
