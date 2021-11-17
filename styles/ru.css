@@ -1,6 +1,21 @@
 @import "cds.css";
 
 /* CYRILLIC FONTS  */ /* ROBOTO  */
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Light.ttf") format("truetype");
@@ -57,6 +72,20 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
 /* MISC  */
 
 @font-face {
@@ -101,33 +130,75 @@
   font-style: normal;
 }
 
-/* PT SERIF  */
+/* BEAUFORT  */
 
 @font-face {
-  font-family: "PT Serif";
-  src: url("../fonts/PTSerif-Regular.ttf") format("truetype");
+  font-family: "Beaufort";
+  src: url("../fonts/Beaufort-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Beaufort";
+  src: url("../fonts/Beaufort-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Beaufort";
+  src: url("../fonts/Beaufort-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "PT Serif";
-  src: url("../fonts/PTSerif-Italic.ttf") format("truetype");
+  font-family: "Beaufort";
+  src: url("../fonts/Beaufort-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "PT Serif";
-  src: url("../fonts/PTSerif-Bold.ttf") format("truetype");
+  font-family: "Beaufort";
+  src: url("../fonts/Beaufort-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Beaufort";
+  src: url("../fonts/Beaufort-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Beaufort";
+  src: url("../fonts/Beaufort-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "PT Serif";
-  src: url("../fonts/PTSerif-BoldItalic.ttf") format("truetype");
+  font-family: "Beaufort";
+  src: url("../fonts/Beaufort-BoldItalic.ttf") format("truetype");
   font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Beaufort";
+  src: url("../fonts/Beaufort-Heavy.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Beaufort";
+  src: url("../fonts/Beaufort-HeavyItalic.ttf") format("truetype");
+  font-weight: 800;
   font-style: italic;
 }
 
@@ -236,6 +307,10 @@ li a.entity-link {
 
 .journal-sheet .editor-content {
   font-size: var(--text-base);
+}
+
+.directory .directory-list .directory-item {
+  font-size: var(--text-sm);
 }
 
 /* MODULES */

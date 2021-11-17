@@ -43,6 +43,10 @@
   border-color: var(--color-green-dnd) !important;
 }
 
+.dnd5e.sheet .window-content {
+  font-size: var(--text-sm);
+}
+
 .dnd5e.sheet .sheet-header .header-details {
   font-family: var(--font-serif);
 }
@@ -59,12 +63,17 @@
 
 .dnd5e.sheet .sheet-header h1 input {
   font-size: var(--text-3xl);
+  font-weight: 600;
 }
 
 .dnd5e.sheet .sheet-navigation {
-  font-family: var(--font-sans-condensed);
-  font-weight: 500;
-  font-size: var(--text-sm);
+  font-weight: 600;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+}
+
+.dnd5e.sheet .sheet-navigation .item.active {
+  border-bottom: 3px solid var(--color-red-dnd);
 }
 
 .dnd5e.sheet.actor ul.attributes li.attribute {
@@ -214,6 +223,10 @@
   font-size: var(--text-xs);
 }
 
+.dnd5e.chat-card .card-content {
+  font-size: var(--text-sm);
+}
+
 .dnd5e.chat-card .card-header h3 {
   font-family: var(--font-sans-condensed);
   font-weight: 500;
@@ -246,6 +259,7 @@
 
 .dnd5e.sheet.actor.character .characteristics label {
   font-family: var(--font-serif);
+  font-weight: 700;
 }
 
 .dnd5e.sheet.actor.npc .header-exp .cr {
@@ -334,7 +348,7 @@
 /* TIDY5E */
 
 .system-dnd5e {
-  --modesto: "PT Serif", serif;
+  --modesto: "Beaufort", serif;
   --signika: "Oswald", sans-serif;
 }
 
