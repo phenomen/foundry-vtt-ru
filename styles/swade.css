@@ -62,7 +62,7 @@ form .form-group > label {
   font-size: 1em;
   padding-left: 25px;
   font-family: var(--font-sans-condensed);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .swade-official .derived .stat-label {
@@ -96,12 +96,25 @@ form .form-group > label {
 }
 
 .swade-official .section-header .name {
-  font-weight: bold;
+  font-weight: 600;
+}
+
+.swade.sheet.actor .status-container {
+  flex-basis: 123px;
+}
+
+.swade-official .charname {
+  font-family: var(--font-serif);
+  font-weight: 600;
+}
+
+.swade-official .skills .skill-die {
+  font-weight: 600;
 }
 
 #pause {
   font-family: "Roboto Slab";
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* DEADLANDS */
@@ -119,4 +132,17 @@ form .form-group > label {
   font-family: "Roboto Slab";
   font-weight: bold;
   font-size: 1.3em;
+}
+
+/* PATHFINDER */
+
+.swpf-core {
+  font-family: var(--font-serif);
+}
+
+.swade.sheet.actor.npc .header-field {
+  text-transform: uppercase;
+  color: var(--color-white);
+  font-size: var(--text-xs);
+  font-weight: 500;
 }
