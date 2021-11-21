@@ -8,8 +8,8 @@
         "TypeVehicle": "Транспорт"
     },
     "ITEM": {
-        "TypeAmmunition": "Ammunition",
-        "TypeActorresource": "Actor Resource",
+        "TypeAmmunition": "Боеприпасы",
+        "TypeActorresource": "Ресурс актёра",
         "TypeArchetypes": "Архетип",
         "TypeAsi": "Повышение характеристик",
         "TypeAugmentation": "Аугментация",
@@ -113,21 +113,21 @@
                 },
                 "Speed": {
                     "Flight": {
-                        "Average": "Average",
-                        "Clumsy": "Clumsy",
-                        "Perfect": "Perfect"
+                        "Average": "Средняя",
+                        "Clumsy": "Скверная",
+                        "Perfect": "Безупречная"
                     },
-                    "MainMovementType": "Main Movement",
-                    "MovementSpeedTitle": "Movement Speed",
-                    "MovementSpeedNamedTitle": "Movement Speed: {name}",
+                    "MainMovementType": "Основное движение",
+                    "MovementSpeedTitle": "Скорость передвижения",
+                    "MovementSpeedNamedTitle": "Скорость передвижения: {name}",
                     "Types": {
-                        "All": "All speeds",
-                        "Burrowing": "Burrowing",
-                        "Climbing": "Climbing",
-                        "Flying": "Flying",
-                        "Land": "Land",
-                        "Special": "Special",
-                        "Swimming": "Swimming"
+                        "All": "Вся скорость",
+                        "Burrowing": "Рытьё",
+                        "Climbing": "Лазание",
+                        "Flying": "Полёт",
+                        "Land": "Наземная",
+                        "Special": "Особая",
+                        "Swimming": "Плавание"
                     }
                 }
             },
@@ -150,7 +150,7 @@
             "Features": {
                 "Categories": {
                     "ActiveFeats": "Активные черты",
-                    "ActorResources": "Actor Resources",
+                    "ActorResources": "Ресурсы актёра",
                     "Archetypes": "Архетипы",
                     "Classes": "Классы",
                     "PassiveFeats": "Пассивные черты",
@@ -256,18 +256,18 @@
                     "Tooltip": "Это число представляет суммарную стоимость вещей в инвентаре."
                 },
                 "Weapon": {
-                    "AlreadyFullyLoaded": "The weapon {name} is already fully loaded.",
-                    "NoAmmunitionAvailable": "You have no ammunition available for the weapon {name}.",
+                    "AlreadyFullyLoaded": "Оружие {name} уже полностью заряжено.",
+                    "NoAmmunitionAvailable": "У вас нет подходящих боеприпасов для оружия {name}.",
                     "Reload": "Перезарядить",
-                    "ReloadFromContainer": "The weapon {name} was reloaded with {ammoName} pulled from the container {containerName}. Double-check your action economy."
+                    "ReloadFromContainer": "Оружие {name} было перезаряжено боеприпасами {ammoName} из контейнера {containerName}. Учтите в использованных действиях."
                 }
             },
             "Modifiers": {
                 "EffectTypes": {
-                    "ActorResource": "Actor Resource",
+                    "ActorResource": "Ресурс актёра",
                     "AllAttackDamage": "Урон всех атак",
                     "AllAttackRolls": "Все атаки",
-                    "AllSpeeds": "All Speeds",
+                    "AllSpeeds": "Вся скорость",
                     "BAB": "БМА",
                     "BaseAttackBonus": "Базовый модификатор атаки",
                     "Encumbrance": "Нагрузка",
@@ -275,7 +275,7 @@
                     "HP": "ПЗ",
                     "MeleeAttackDamage": "Урон в ближнем бою",
                     "MeleeAttackRolls": "Атаки в ближнем бою",
-                    "MultiplyAllSpeeds": "All Speeds Multiplier",
+                    "MultiplyAllSpeeds": "Множитель всей скорости",
                     "RangedAttackDamage": "Дистанционный урон",
                     "RangedAttackRolls": "Дистанционные атаки",
                     "Resolve": "Решимость",
@@ -285,9 +285,10 @@
                     "SP": "ПЖ",
                     "SpecificWeaponAttackDamage": "Урон конкретным оружием",
                     "SpecificWeaponAttackRolls": "Атаки конкретным оружием",
-                    "SpecificSpeed": "Specific Speed",
+                    "SpecificSpeed": "Особая скорость",
                     "SpellAttackDamage": "Урон заклинанием",
                     "SpellAttackRolls": "Атаки заклинаниями",
+                    "SpellSaveDC": "Spell Save DC",
                     "Stamina": "Живучесть",
                     "WeaponPropertyAttackRolls": "Атаки особого свойства",
                     "WeaponPropertyDamage": "Урон особого свойства"
@@ -420,6 +421,9 @@
         "Canvas": {
             "Interface": {
                 "NoTargetTokenForItemDrop": "Не выбран токен, невозможно выбросить предмет!"
+            },
+            "TokenHud": {
+                "RemoveAll": "Remove All"
             }
         },
         "Capacity": {
@@ -449,11 +453,11 @@
         "ChatCard": {
             "ContextMenu": {
                 "ApplyDamage": "Применить урон",
-                "ApplyHealing": "Apply as Healing",
-                "DamageAndAHalf": "Apply 1.5x Damage",
-                "DoubleDamage": "Apply Double Damage",
-                "HalfDamage": "Apply Half Damage",
-                "NoToken": "Cannot apply: No token selected!"
+                "ApplyHealing": "Исцелить",
+                "DamageAndAHalf": "Нанести полуторный урон",
+                "DoubleDamage": "Нанести двойной урон",
+                "HalfDamage": "Нанести половину урона",
+                "NoToken": "Не удаётся применить: токен не выбран!"
             },
             "ItemActivation": {
                 "Activates": "Активация",
@@ -631,30 +635,30 @@
         },
         "Cybernetic": "Кибернетика",
         "Damage": {
-            "Immunities": "Damage Immunities",
-            "Reduction": "Damage Reduction",
-            "Resistances": "Energy Resistances",
-            "Title": "Damage",            
+            "Immunities": "Иммунитет к урону",
+            "Reduction": "Снижение урона",
+            "Resistances": "Устойчивость к энергии",
+            "Title": "Урон",            
             "Types": {
-                "Acid": "Acid",
-                "Bludgeoning": "Bludgeoning",
-                "Cold": "Cold",
-                "Electricity": "Electricity",
-                "Fire": "Fire",
-                "Force": "Force",
-                "Hint": "This is a list of damage types that apply to this damage roll.",
-                "Nonlethal": "Nonlethal",
-                "Piercing": "Piercing",
-                "Radiation": "Radiation",
-                "Slashing": "Slashing",
-                "Sonic": "Sonic",
-                "Title": "Damage Types",
+                "Acid": "Кислотный",
+                "Bludgeoning": "Дробящий",
+                "Cold": "Холод",
+                "Electricity": "Электричество",
+                "Fire": "Огонь",
+                "Force": "Силовой",
+                "Hint": "Список типов урона применяющихся к броску урона.",
+                "Nonlethal": "Нелетальный",
+                "Piercing": "Колющий",
+                "Radiation": "Радиация",
+                "Slashing": "Режущий",
+                "Sonic": "Звук",
+                "Title": "Типы урона",
                 "Operators": {
-                    "And": "and",
-                    "Or": "or"
+                    "And": "и",
+                    "Or": "или"
                 }
             },
-            "Vulnerabilities": "Damage Vulnerabilities"
+            "Vulnerabilities": "Уязвимость к урону"
         },
         "Description": "Описание",
         "DescriptionShort": "Краткое описание",
@@ -1832,6 +1836,10 @@
             "StarshipActionsSource": {
                 "Hint": "Ключ компендиума с описаниями действий.",
                 "Name": "Компендиум действий космических боёв"
+            },
+            "TokenConditionLabels": {
+                "Hint": "Adds text labels to the token conditions.",
+                "Name": "Token condition labels"
             },
             "UseCustomChatCard": {
                 "Hint": "Переключение между классическими картами чата и новыми.",
