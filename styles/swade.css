@@ -19,18 +19,18 @@ form .form-group > label {
 }
 
 :root {
-  --body-font-family: "Literata", "Georgia", "Times New Roman", serif;
-  --heading-font-family: "Oswald", sans-serif;
-  --table-title-font-family: "Literata", "Georgia", "Times New Roman", serif;
-  --table-headers-font-family: "Literata", "Georgia", "Times New Roman", serif;
-  --table-summary-font-family: "Oswald", sans-serif;
+  --body-font-family: var(--font-serif);
+  --heading-font-family: var(--font-sans-condensed);
+  --table-title-font-family: var(--font-serif);
+  --table-headers-font-family: var(--font-serif);
+  --table-summary-font-family: var(--font-sans-condensed);
   --quote-font-family: "Rock Salt", cursive;
 }
 
 .swade-official {
   --section-header-size: 1.4em;
   --section-header-font: "Roboto Slab", sans-serif;
-  --default-font: "Literata", "Georgia", "Times New Roman", serif;
+  --default-font: var(--font-serif);
 }
 
 .swade.sheet.actor .sheet-header .charline .charname {
@@ -121,7 +121,7 @@ form .form-group > label {
 .swade-official.actor.deadlands-sheet {
   --section-header-size: 1.3em;
   --section-header-font: "Roboto Slab", sans-serif;
-  --default-font: "Literata", "Georgia", "Times New Roman", serif;
+  --default-font: "Vollkorn", "Georgia", "Times New Roman", serif;
 }
 
 .deadlands-core {

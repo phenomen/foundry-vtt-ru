@@ -348,8 +348,8 @@
 /* TIDY5E */
 
 .system-dnd5e {
-  --modesto: "Literata", "Georgia", "Times New Roman", serif;
-  --signika: "Oswald", sans-serif;
+  --modesto: var(--font-serif);
+  --signika: var(--font-sans-condensed);
 }
 
 .tidy5e.sheet.item .sheet-header .item-subtitle .item-type {

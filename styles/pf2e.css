@@ -1,11 +1,11 @@
 /* GLOBAL FONTS */
 
 :root {
-  --body-serif: "Literata", "Georgia", "Times New Roman", serif;
-  --sans-serif: "Roboto", sans-serif;
-  --sans-serif-condensed: "Oswald", sans-serif;
-  --serif: "Literata", "Georgia", "Times New Roman", serif;
-  --serif-condensed: "Oswald", serif;
+  --body-serif: var(--font-serif);
+  --sans-serif: var(--font-sans);
+  --sans-serif-condensed: var(--font-sans-condensed);
+  --serif: var(--font-serif);
+  --serif-condensed: var(--font-sans-condensed);
 }
 
 .app.sheet.actor p,
