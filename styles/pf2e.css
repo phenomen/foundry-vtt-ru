@@ -1,10 +1,10 @@
 /* GLOBAL FONTS */
 
 :root {
-  --body-serif: "Beaufort", Georgia, serif;
+  --body-serif: "Literata", "Georgia", "Times New Roman", serif;
   --sans-serif: "Roboto", sans-serif;
   --sans-serif-condensed: "Oswald", sans-serif;
-  --serif: "Beaufort", Georgia, serif;
+  --serif: "Literata", "Georgia", "Times New Roman", serif;
   --serif-condensed: "Oswald", serif;
 }
 
@@ -59,13 +59,7 @@
   font-weight: normal;
 }
 
-.crb-style
-  .sheet-body
-  .sheet-content
-  .character
-  .ability-scores
-  .ability
-  .ability-id {
+.crb-style .sheet-body .sheet-content .character .ability-scores .ability .ability-id {
   font-weight: bold;
   font-size: var(--text-lg);
 }
@@ -76,13 +70,7 @@
   font-size: var(--text-xs);
 }
 
-.crb-style
-  .sheet-body
-  .sheet-content
-  .character
-  .character-details
-  .alignment
-  select {
+.crb-style .sheet-body .sheet-content .character .character-details .alignment select {
   font-size: var(--text-xs);
   font-weight: normal;
 }
@@ -107,30 +95,9 @@
   font-size: var(--text-xs);
 }
 
-.crb-style
-  .sheet-body
-  .sheet-content
-  .skills
-  .skills-pane
-  .combat-list
-  .skill
-  .skill-name,
-.crb-style
-  .sheet-body
-  .sheet-content
-  .skills
-  .skills-pane
-  .lores-list
-  .skill
-  .skill-name,
-.crb-style
-  .sheet-body
-  .sheet-content
-  .skills
-  .skills-pane
-  .skills-list
-  .skill
-  .skill-name,
+.crb-style .sheet-body .sheet-content .skills .skills-pane .combat-list .skill .skill-name,
+.crb-style .sheet-body .sheet-content .skills .skills-pane .lores-list .skill .skill-name,
+.crb-style .sheet-body .sheet-content .skills .skills-pane .skills-list .skill .skill-name,
 .crb-style .details-label {
   font-size: var(--text-xs);
   font-family: var(--sans-serif-condensed);
@@ -146,28 +113,11 @@
   padding-top: 0px;
 }
 
-.crb-style
-  .sheet-body
-  .sheet-content
-  .spellbook
-  .directory-list
-  .item
-  .inventory-list
-  .item.inventory-header
-  h3 {
+.crb-style .sheet-body .sheet-content .spellbook .directory-list .item .inventory-list .item.inventory-header h3 {
   text-transform: none;
 }
 
-.crb-style
-  .sheet-body
-  .sheet-content
-  .spellbook
-  .directory-list
-  .item
-  .skills-list.focus
-  .skill-grid
-  .skill-container.focus-points
-  h4 {
+.crb-style .sheet-body .sheet-content .spellbook .directory-list .item .skills-list.focus .skill-grid .skill-container.focus-points h4 {
   font-size: var(--text-xs);
 }
 
@@ -191,26 +141,12 @@
   font-weight: normal;
 }
 
-.crb-style
-  .sheet-body
-  .sheet-content
-  .spellbook
-  .spellcasting-entry
-  .skills-list
-  .spell-ability
-  .pf-rank {
+.crb-style .sheet-body .sheet-content .spellbook .spellcasting-entry .skills-list .spell-ability .pf-rank {
   font-family: var(--sans-serif-condensed);
   font-weight: normal;
 }
 
-.crb-style
-  .sheet-body
-  .sheet-content
-  .actions
-  .actions-container
-  .actions-tabs-wrapper
-  .actions-nav
-  .tab {
+.crb-style .sheet-body .sheet-content .actions .actions-container .actions-tabs-wrapper .actions-nav .tab {
   font-family: var(--sans-serif-condensed);
   font-weight: bold;
 }
@@ -227,23 +163,13 @@
 
 /* ITEM SHEET */
 
-.pf2e.item.sheet
-  form
-  > article
-  > section.sheet-sidebar
-  .inventory-details
-  label {
+.pf2e.item.sheet form > article > section.sheet-sidebar .inventory-details label {
   font-weight: 500;
   font-family: var(--sans-serif-condensed);
   font-size: var(--text-xs);
 }
 
-.pf2e.item.sheet
-  form
-  > article
-  > section.sheet-body
-  > .tab.active.item-details
-  label {
+.pf2e.item.sheet form > article > section.sheet-body > .tab.active.item-details label {
   font-weight: 500;
 }
 

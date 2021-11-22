@@ -44,17 +44,13 @@
   --major-button-font-size: 18px;
   --tab-header-font-family: "Manuskript", serif;
   --tab-header-font-size: var(--text-xs);
-  --actor-input-font-family: "Beaufort", serif;
+  --actor-input-font-family: "Literata", "Georgia", "Times New Roman", serif;
   --actor-input-font-size: var(--text-xs);
   --actor-label-font-family: "Manuskript", serif;
   --actor-label-font-size: var(--text-xs);
 }
 
-.app.window-app.sheet.wfrp4e.actor.character-sheet
-  .tab.main.active
-  .characteristics-table
-  .row-type.table-data
-  .header-block {
+.app.window-app.sheet.wfrp4e.actor.character-sheet .tab.main.active .characteristics-table .row-type.table-data .header-block {
   font-size: 11px;
 }
 
@@ -171,17 +167,11 @@ input[type="password"] {
   font-size: var(--text-sm);
 }
 
-.app.window-app.sheet.wfrp4e.actor
-  .tab.religion.active
-  .religion-box-1
-  .blessed-label {
+.app.window-app.sheet.wfrp4e.actor .tab.religion.active .religion-box-1 .blessed-label {
   font-family: var(--font-fantasy);
 }
 
-.app.window-app.sheet.wfrp4e.actor
-  .tab.religion.active
-  .religion-box-2
-  .sin-label {
+.app.window-app.sheet.wfrp4e.actor .tab.religion.active .religion-box-2 .sin-label {
   font-family: var(--font-fantasy);
 }
 
@@ -349,19 +339,11 @@ input[type="password"] {
   font-family: var(--font-serif);
 }
 
-.app.window-app.sheet.wfrp4e.actor
-  .tab.religion.active
-  .religion-box-1
-  .blessed-input
-  > input {
+.app.window-app.sheet.wfrp4e.actor .tab.religion.active .religion-box-1 .blessed-input > input {
   font-family: var(--font-serif);
 }
 
-.app.window-app.sheet.wfrp4e.actor
-  .tab.religion.active
-  .religion-box-2
-  .sin-input
-  > input {
+.app.window-app.sheet.wfrp4e.actor .tab.religion.active .religion-box-2 .sin-input > input {
   font-family: var(--font-serif);
 }
 
@@ -566,10 +548,7 @@ input[type="password"] {
   padding: 4px;
 }
 
-.app.window-app.sheet.wfrp4e.actor
-  .tab.talents.active
-  .inventory-header.talent-header
-  #times-taken {
+.app.window-app.sheet.wfrp4e.actor .tab.talents.active .inventory-header.talent-header #times-taken {
   width: 60px;
 }
 
@@ -577,10 +556,7 @@ input[type="password"] {
   font-family: var(--font-fantasy);
 }
 
-.app.window-app.sheet.wfrp4e.actor.character-sheet
-  .tab.main.active
-  .characteristics-table
-  .row-type.table-data {
+.app.window-app.sheet.wfrp4e.actor.character-sheet .tab.main.active .characteristics-table .row-type.table-data {
   padding: 5px 0px 0px 0px;
   max-width: 14%;
   min-width: max(80px, 14%);
@@ -612,15 +588,8 @@ h2 {
   width: 80px;
 }
 
-.app.window-app.sheet.wfrp4e.actor.vehicle-sheet
-  .cargo
-  .container
-  .inventory-header.inventory-container
-  .column-section,
-.app.window-app.sheet.wfrp4e.actor
-  .tab.inventory.active
-  .inventory-header.inventory-container
-  .column-section {
+.app.window-app.sheet.wfrp4e.actor.vehicle-sheet .cargo .container .inventory-header.inventory-container .column-section,
+.app.window-app.sheet.wfrp4e.actor .tab.inventory.active .inventory-header.inventory-container .column-section {
   min-width: 110px;
   max-width: 110px;
 }
