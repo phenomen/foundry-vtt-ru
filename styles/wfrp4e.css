@@ -38,15 +38,15 @@
 }
 
 :root {
-  --window-header-title-font-family: "Manuskript", serif;
-  --window-header-title-font-size: 16px;
-  --major-button-font-family: "Manuskript", serif;
+  --window-header-title-font-family: var(--font-fantasy);
+  --window-header-title-font-size: var(--text-base);
+  --major-button-font-family: var(--font-fantasy);
   --major-button-font-size: 18px;
-  --tab-header-font-family: "Manuskript", serif;
+  --tab-header-font-family: var(--font-fantasy);
   --tab-header-font-size: var(--text-xs);
-  --actor-input-font-family: "Vollkorn", "Georgia", "Times New Roman", serif;
+  --actor-input-font-family: var(--font-serif);
   --actor-input-font-size: var(--text-xs);
-  --actor-label-font-family: "Manuskript", serif;
+  --actor-label-font-family: var(--font-fantasy);
   --actor-label-font-size: var(--text-xs);
 }
 
