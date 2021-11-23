@@ -4,6 +4,7 @@ import { InitDUNGEONWORLD } from "./system-dungeonworld.js";
 import { InitPF2E } from "./system-pf2e.js";
 import { InitWFRP4 } from "./system-wfrp4.js";
 import { InitALIEN } from "./system-alien.js";
+import { InitCORIOLIS } from "./system-coriolis.js";
 
 Hooks.once("init", async () => {
   // Load system-specific CSS styles
@@ -37,5 +38,10 @@ Hooks.once("init", async () => {
   // ALIEN
   if (game.system.id === "alienrpg") {
     InitALIEN();
+  }
+
+  // CORIOLIS
+  if (game.system.id === "yzecoriolis") {
+    InitCORIOLIS();
   }
 });
