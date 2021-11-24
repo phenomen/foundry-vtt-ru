@@ -73,6 +73,32 @@ export function InitWFRP4() {
                     });
                 }
             },
+            disease_effects: (
+                effects,
+                translations,
+                data,
+                translatedCompendium,
+                translatedEntry
+            ) => {
+                if (effects) {
+                    let translatedSymptoms = translatedEntry.symptoms.split(/,\s?/).reduce((acc, curr) => {
+                        for (const [key, symptom] of Object.entries(game.wfrp4e.config.symptoms)) {
+                            if (curr.startsWith(symptom)) {
+                                return (acc[key] = curr, acc);
+                            }
+                        }
+                    }, {});
+                    return effects.map((effect) => {
+                        for (const symptom in game.wfrp4e.config.symptoms) {
+                            if (effect.label.toLowerCase().startsWith(symptom.split('[A-Z]')[0])) {
+                                effect.label = translatedSymptoms[symptom];
+                                break;
+                            }
+                        }
+                        return effect;
+                    });
+                }
+            },
             condition_effects: (
                 effects
             ) => {
@@ -327,38 +353,6 @@ export function InitWFRP4() {
                     ranged: "Дистанционное оружие",
                 };
 
-                // Armor Qualities
-                WFRP4E.armorQualities = {
-                    flexible: "Гибкая",
-                    impenetrable: "Непробиваемая",
-                };
-
-                // Armor Flaws
-                WFRP4E.armorFlaws = {
-                    partial: "Неполная",
-                    weakpoints: "Уязвимые места",
-                };
-
-                // Difficulty Labels
-                WFRP4E.difficultyLabels = {
-                    veasy: "Элементарная (+60)",
-                    easy: "Лёгкая (+40)",
-                    average: "Заурядная (+20)",
-                    challenging: "Серьёзная (+0)",
-                    difficult: "Трудная (-10)",
-                    hard: "Тяжёлая (-20)",
-                    vhard: "Безумная (-30)",
-                };
-
-                WFRP4E.locations = {
-                    head: "Голова",
-                    body: "Туловище",
-                    rArm: "Правая рука",
-                    lArm: "Левая рука",
-                    rLeg: "Правая нога",
-                    lLeg: "Левая нога",
-                };
-
                 WFRP4E.magicLores = {
                     petty: "Простейшие заклинания",
                     beasts: "Школа Зверей",
@@ -395,22 +389,6 @@ export function InitWFRP4() {
                     nurgle: "Дхар",
                     slaanesh: "Дхар",
                     tzeentch: "Дхар",
-                };
-
-                WFRP4E.prayerTypes = {
-                    blessing: "Благословение",
-                    miracle: "Чудо",
-                };
-
-                WFRP4E.mutationTypes = {
-                    physical: "Тело",
-                    mental: "Разум",
-                };
-
-                WFRP4E.hitLocationTables = {
-                    hitloc: "Стандартная",
-                    snake: "Змееподобная",
-                    spider: "Паукоподобная",
                 };
 
                 // Species
