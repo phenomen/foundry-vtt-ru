@@ -3,7 +3,11 @@
 	"mapping": {
 		"contraction": "data.contraction.value",
 		"symptoms": "data.symptoms.value",
-		"permanent": "data.permanent.value"
+		"permanent": "data.permanent.value",
+		"diseases_effects": {
+			"path": "effects",
+			"converter": "disease_effects"
+		}
 	},
 	"entries": [
 		{
