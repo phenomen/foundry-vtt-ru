@@ -90,11 +90,28 @@ export function InitWFRP4() {
                     }, {});
                     return effects.map((effect) => {
                         for (const symptom in game.wfrp4e.config.symptoms) {
-                            if (effect.label.toLowerCase().startsWith(symptom.split('[A-Z]')[0])) {
+                            if (effect.label.toLowerCase().startsWith(symptom.split(/[A-Z]/)[0])) {
                                 effect.label = translatedSymptoms[symptom];
                                 break;
                             }
                         }
+
+                        if (effect.label.startsWith("Незаживающая рана")) {
+                            effect.flags.wfrp4e.script = effect.flags.wfrp4e.script
+                                .replaceAll("Endurance", game.i18n.localize("NAME.Endurance"));
+                        }
+
+                        if (effect.label.startsWith("Судороги")) {
+                            effect.flags.wfrp4e.script = effect.flags.wfrp4e.script
+                                .replaceAll("Moderate", "сильные");
+                        }
+
+                        if (effect.label.startsWith("Летальный исход")) {
+                            effect.flags.wfrp4e.script = effect.flags.wfrp4e.script
+                                .replaceAll("Moderate", "вероятный")
+                                .replaceAll("Severe", "очень вероятный");
+                        }
+
                         return effect;
                     });
                 }
