@@ -43,6 +43,16 @@ export function InitDND5() {
         window.location.reload();
       },
     });
+  } else {
+    new Dialog({
+      title: "Перевод библиотек",
+      content: `<p>Для перевода библиотек системы D&D5 требуется установить и активировать модуль <b>Babele</b><p>`,
+      buttons: {
+        done: {
+          label: "Хорошо",
+        },
+      },
+    }).render(true);
   }
 
   Babele.get().registerConverters({
@@ -102,27 +112,10 @@ export function InitDND5() {
   });
 
   Hooks.on("createActor", (actor) => {
-    if (
-      game.settings.get("ru-ru", "metricConversion") &&
-      actor.data.data.attributes.movement.walk == 30
-    ) {
+    if (game.settings.get("ru-ru", "metricConversion") && actor.data.data.attributes.movement.walk == 30) {
       mergeObject(actor.data.data.attributes.movement, { units: "m", walk: 9 });
       actor.update({ data: actor.data.data });
       actor.render(true);
-    }
-  });
-
-  Hooks.once("ready", async function () {
-    if (typeof Babele === "undefined" && game.user.isGM) {
-      new Dialog({
-        title: "Перевод библиотек",
-        content: `<p>Для перевода библиотек системы D&D5 требуется установить и активировать модуль Babele.<p>`,
-        buttons: {
-          done: {
-            label: "Хорошо",
-          },
-        },
-      }).render(true);
     }
   });
 }

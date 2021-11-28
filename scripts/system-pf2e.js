@@ -69,18 +69,16 @@ export function InitPF2E() {
 
     Hooks.once("babele.ready", () => {
       game.pf2e.ConditionManager.init();
-
-      if (typeof Babele === "undefined" && game.user.isGM) {
-        new Dialog({
-          title: "Перевод библиотек",
-          content: `<p>Для перевода библиотек системы Pathfinder 2e требуется установить и активировать модуль Babele.<p>`,
-          buttons: {
-            done: {
-              label: "Хорошо",
-            },
-          },
-        }).render(true);
-      }
     });
+  } else {
+    new Dialog({
+      title: "Перевод библиотек",
+      content: `<p>Для перевода библиотек системы Pathfinder 2 требуется установить и активировать модуль <b>Babele</b><p>`,
+      buttons: {
+        done: {
+          label: "Хорошо",
+        },
+      },
+    }).render(true);
   }
 }
