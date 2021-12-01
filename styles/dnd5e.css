@@ -355,15 +355,12 @@
 
 .system-dnd5e {
   --modesto: var(--font-serif);
-  --signika: var(--font-sans-condensed);
+  --signika: var(--font-sans);
 }
 
-.tidy5e.sheet.item .sheet-header .item-subtitle .item-type {
-  font-size: var(--text-sm);
-}
-
-.tidy5e.sheet.item .sheet-header .item-subtitle .item-status {
-  font-size: var(--text-sm);
+.tidy5e.sheet.actor .tidy5e-navigation .item {
+  font-size: var(--text-base);
+  line-height: 20px;
 }
 
 .tidy5e.sheet.item .sheet-body .item-properties .form-group {
@@ -372,8 +369,4 @@
 
 .tidy5e.sheet.actor .header-attributes .ac-display .attribute-value {
   top: 30%;
-}
-
-.tidy5e.sheet.actor .list-layout .items-list .item .item-name {
-  font-size: var(--text-sm);
 }
