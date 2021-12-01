@@ -53,6 +53,7 @@
         "Search": "Поиск в библиотеке"
     },
     "CONTROLS": {
+        "AdjustSceneDarkness": "Adjust Scene Darkness",
         "EffectPanel": "Панель эффектов",
         "WorldClock": "Время мира"
     },
@@ -158,6 +159,10 @@
                     "CraftButtonLabel": "Ремесло",
                     "DropItemZoneLabel": "Переместите предмет сюда...",
                     "Title": "Выберите предмет для Создания"
+                },
+                "SelectSpellDialog": {
+                    "CraftButtonLabel": "Craft",
+                    "Title": "Select Spell"
                 },
                 "Error": {
                     "ItemReferenceMismatch": "Возможно создание только физических предметов из компендиума или директории предметов мира."
@@ -416,6 +421,15 @@
                     "failure": "<b>Провал</b> Ваше перемещение завершается, и вы провоцируете ответные действия, как если бы покинули клетку, с которой начали перекат."
                 },
                 "Title": "Перекат"
+            },
+            "WhirlingThrow": {
+                "Notes": {
+                    "criticalSuccess": "<b>Critical Success</b> You throw the creature the desired distance and it lands @Compendium[pf2e.conditionitems.Prone]{Prone}.",
+                    "success": "<b>Success</b> You throw the creature the desired distance.",
+                    "failure": "<b>Failure</b> You don't throw the creature.",
+                    "criticalFailure": "<b>Critical Failure</b> You don't throw the creature, and it's no longer @Compendium[pf2e.conditionitems.Grabbed]{Grabbed} or @Compendium[pf2e.conditionitems.Restrained]{Restrained} by you."
+                },
+                "Title": "Whirling Throw"
             }
         },
         "ActionsCheck": {
@@ -582,6 +596,7 @@
         "ArmorPropertyRuneGreaterShadow": "Улучшенная теневая",
         "ArmorPropertyRuneGreaterSlick": "Улучшенная скользкая",
         "ArmorPropertyRuneGreaterStanching": "Улучшенная остановки кровотечения",
+        "ArmorPropertyRuneImplacable": "Implacable",
         "ArmorPropertyRuneInvisibility": "Невидимости",
         "ArmorPropertyRuneMajorShadow": "Высшая теневая",
         "ArmorPropertyRuneMajorSlick": "Высшая скользкая",
@@ -987,6 +1002,7 @@
         "DCAdjustmentHard": "сложно",
         "DCAdjustmentVeryHard": "очень сложно",
         "DCAdjustmentIncrediblyHard": "невероятно сложно",
+        "DCBase": "Base DC 10",
         "DCLabel": "СЛ: {dc}",
         "DCWithValue": "СЛ {dc} {text}",
         "DefencesLabel": "Защита",
@@ -1011,7 +1027,44 @@
             "P1W": "неделя"
         },
         "Encounter": {
-            "ExcludingFromInitiative": "Исключаем {type} {actor} из инициативы."
+            "Budget": {
+                "EncounterBudget": "Encounter Budget",
+                "PartySize": "Party Size",
+                "PartyLevel": "Party Level",
+                "Threat": "Threat",
+                "Reward": "Reward",
+                "XPBudget": "XP Budget",
+                "XPNeeded": "XP Needed",
+                "Threats": {
+                    "trivial": "Trivial",
+                    "low": "Low",
+                    "moderate": "Moderate",
+                    "severe": "Severe",
+                    "extreme": "Extreme"
+                }
+            },
+            "CreatureXPAndRole": {
+                "CreatureXPAndRole": "Creature XP and Role",
+                "CreatureLevel": "Creature Level",
+                "SuggestedRole": "Suggested Role",
+                "CreatureLevels": {
+                    "-4": "Low-threat lackey",
+                    "-3": "Low- or moderate-threat lackey",
+                    "-2": "Any lackey or standard creature",
+                    "-1": "Any standard creature",
+                    "0": "Any standard creature or low-threat boss",
+                    "1": "Low- or moderate-threat boss",
+                    "2": "Moderate- or severe-threat boss",
+                    "3": "Severe- or extreme-threat boss",
+                    "4": "Extreme-threat solo boss"
+                }
+            },
+            "ExcludingFromInitiative": "Исключаем {type} {actor} из инициативы.",
+            "HasNoInitiativeScore": "{actor} has no initiative score.",
+            "HideName": "Hide Name",
+            "NoActiveEncounter": "There is no active encounter.",
+            "NoTokenInScene": "{actor} has no token in the scene.",
+            "RevealName": "Reveal Name"
         },
         "EditHazardLabel": "Изменить опаснось?",
         "EditItemTitle": "Изменить предмет",
@@ -1167,7 +1220,16 @@
         "InventroyBrowserSearchHint": "Вы можете искать по имени и атрибутам. Доступные для поиска атрибуты:<br> source, spellType, level, school, components, materials, target, range, time, duration, damage, damageType, save, concentration, ritual, ability and classes. <br>Пример: 'fire, damage:d6' выдаст все элементы со словом fire в названии и костью урона d6.",
         "InvestedLabel": "Настроенность",
         "Item": {
-            "CannotAddType": "Предметы с типом {type} не могут быть добавлены к этому персонажу.",
+            "Activation": {
+                "Label": "Activation",
+                "Add": "Add Activation",
+                "Command": "command",
+                "CommandSheetLabel": "Command",
+                "Envision": "envision",
+                "EnvisionSheetLabel": "Envision",
+                "Interact": "Interact",
+                "Cast": "Cast a Spell"
+            },
             "ABC": {
                 "InvalidDrop": "{badType} нельзя поместить сюда (должен быть {goodType})"
             },
@@ -1194,6 +1256,7 @@
                     "hellknight-plate": "Латный доспех Адского рыцаря"
                 }
             },
+            "CannotAddType": "Предметы с типом {type} не могут быть добавлены к этому персонажу.",
             "Deity": {
                 "Alignment": "Мировоззрение",
                 "FollowerAlignments": "Мировоззрение последователей",
@@ -1258,6 +1321,7 @@
                     "PotencyStrikingFourPropertiesMaterial": "+{potency} {striking} {property1} {property2} {property3} {property4} {material} {base}"
                 },
                 "HandsLabel": "Hands",
+                "MandatoryMelee": "This weapon has a trait that can only be used with melee weapons.",
                 "MaterialAndRunes": {
                     "MaterialOption": "{type} ({grade})",
                     "Title": "Используемые материалы и руны",
@@ -1271,23 +1335,17 @@
                         "Melee": "Melee Strike: {weapon}"
                     }
                 },
+                "NoRangeMelee": "None (Melee)",
                 "OtherTags": {
                     "Label": "Other Tags",
                     "Hint": "These are tags indicating classifications in 2nd Edition rules that lack explicit status/definition but are still yet heavily relied upon. Some may be automatically added when other properties are present."
                 },
+                "RangeIncrementN": "Range Increment {range} ft.",
                 "SpecificMagicWeapon": {
                     "Label": "Конкретное магическое оружие",
                     "Hint": "Указание оружия как <i>специальное магическое оружия</i> означает, что свойства этого оружия выходят далеко за рамки возможностей рун. Название, уровень, редкость и цена не будут перезаписываться особыми материалами или рунами при создании. Однако эти материалы и руны будут служить основанием для изменения уровня, редкости и цены при последующих улучшениях."
                 }
             }
-        },
-        "ItemActivate": {
-            "Label": "Activate",
-            "Add": "Add Activation",
-            "Command": "command",
-            "Envision": "envision",
-            "Interact": "Interact",
-            "Cast": "Cast a Spell"
         },
         "ItemBonus0": "0",
         "ItemBonus1": "Усиления оружия (+1)",
@@ -1343,6 +1401,7 @@
         "LanguageDruidic": "Друидический",
         "LanguageDwarven": "Дварфийский",
         "LanguageDziriak": "Д'зириак",
+        "LanguageFormian": "Formian",
         "LanguageEkujae": "Иероглифы Экуджа",
         "LanguageElven": "Эльфийский",
         "LanguageErutaki": "Эрутаки",
@@ -1357,6 +1416,7 @@
         "LanguageHalfling": "Полуросличий",
         "LanguageHallit": "Халлит",
         "LanguageIgnan": "Игнан",
+        "LanguageIkeshti": "Ikeshti",
         "LanguageInfernal": "Дьявольский",
         "LanguageIruxi": "Ирукси",
         "LanguageJistkan": "Джисткан",
@@ -1729,6 +1789,7 @@
             "AdjustDegreeOfSuccess": "Указать степени успеха",
             "BaseSpeed": "Базовая скорость",
             "BattleForm": "Battle Form",
+            "ChoiceSet": "Choice Set",
             "CraftingEntry": "Вкладка Ремесла",
             "CraftingFormula": "Формула предмета",
             "CreatureSize": "Размер существа",
@@ -1738,6 +1799,7 @@
             "FlatModifier": "Чистый модификатор",
             "FixedProficiency": "Фиксированное умение",
             "Immunity": "Невосприимчивость",
+            "LinkedProficiency": "Linked Proficiency",
             "LoseHitPoints": "Потеря ПЗ",
             "MultipleAttackPenalty": "Штраф последовательных атак",
             "Note": "Заметки",
@@ -1791,11 +1853,11 @@
                 "name": "Отображать эффекты состояний в бою"
             },
             "statusEffectType": {
-                "blackWhite": "Чёрно-белые иконки",
-                "default": "Иконки по умолчанию",
-                "hint": "Определяет, какой набор иконок используется для эффектов состояний. Благодарность errational#2007 за вдохновение и Ediwir#7664 за ЧБ токены от Lorc@OpenGameArt.",
-                "legacy": "Оригинальные иконки",
-                "name": "Набор иконок состояний"
+                "blackWhite": "Black & white",
+                "default": "Full color",
+                "hint": "Determines which icon set is used for condition token effects. Thanks to errational#2007 for inspiration and Ediwir#7664 for the B&W tokens by Lorc@OpenGameArt.",
+                "legacy": "Legacy",
+                "name": "Condition Icon Set"
             },
             "Player": {
                 "QuickRolls": {
@@ -1865,7 +1927,8 @@
                 "Hint": "Решите, что именно и насколько сильно должно быть автоматизировано в вашем игровом мире.",
                 "RulesBasedVision": {
                     "Name": "Основанное на правилах зрение",
-                    "Hint": "Применять механики зрения в соответствии с правилами Pathfinder 2e. Включение этой настройки уберёт возможность настройки Неограниченного Глобального зрения, а также дистанцию зрения токенов."
+                    "Hint": "Применять механики зрения в соответствии с правилами Pathfinder 2e. Включение этой настройки уберёт возможность настройки Неограниченного Глобального зрения, а также дистанцию зрения токенов.",
+                    "ManagedBy": "Managed by <a>rules-based vision</a>."
                 },
                 "EffectExpiration": {
                     "Name": "Авто-истечение эффектов",
@@ -1881,8 +1944,8 @@
                 }
             },
             "Homebrew": {
-                "Name": "Домашние правила",
-                "Label": "Управление домашними правилами",
+                "Name": "Homebrew Elements",
+                "Label": "Manage Homebrew Elements",
                 "Hint": "Добавление новых дескрипторов, языков и других элементов авторского мира.",
                 "Instructions": "Эти настройки позволяют ведущему добавлять дескрипторы, языки и другие элементы правил собственного мира. Для добавления таких элементов, просто введите желаемые термины в подходящие поля, разделяя их запятыми или табуляцией. Они будут автоматически добавлены в подходящие места на листах актёров и предметов. Для обновления термина, нажмите на него и внесите необходимые изменения.",
                 "ConfirmDelete": {
@@ -1895,7 +1958,7 @@
                 },
                 "FeatTraits": {
                     "Name": "Дескрипторы черт",
-                    "Hint": "Дескрипторы, применимые к чертам (напр. Монах, Наследие)"
+                    "Hint": "Traits that can be applied to feats (e.g., Lineage, Monk) and actions"
                 },
                 "Languages": {
                     "Name": "Языки",
@@ -1920,6 +1983,14 @@
                 "BaseWeapons": {
                     "Name": "Модели оружия",
                     "Hint": "Нижний уровень систематизации оружия в Pathfinder 2e (напр. Тяжёлый арбалет, Длинный меч)"
+                },
+                "WeaponTraits": {
+                    "Name": "Weapon Traits",
+                    "Hint": "Traits applicable to weapons and NPC attacks"
+                },
+                "EquipmentTraits": {
+                    "Name": "Equipment Traits",
+                    "Hint": "Traits applicable to equipment other than weapons"
                 }
             },
             "Metagame": {
@@ -2086,7 +2157,8 @@
                 "Title": "Настройки альтернативных правил"
             }
         },
-        "SaveDCLabel": "СЛ испытания",
+        "SaveDCLabel": "Save DC {dc} {type}",
+        "SaveDCLabelBasic": "Save DC {dc} basic {type}",
         "SavesFortitude": "Стойкость",
         "SavesFortitudeShort": "Стк",
         "SavesHeader": "Испытания",
@@ -2126,7 +2198,12 @@
                 "Precise": "Precise",
                 "Imprecise": "Imprecise",
                 "Vague": "Vague"
-            }
+            },
+            "Label": "Senses",
+            "RangeLabel": "Range",
+            "NoRangeLimit": "No Limit",
+            "WithAcuity": "{sense} ({acuity})",
+            "WithAcuityAndRange": "{sense} ({acuity} {range} Ft)"
         },
         "SettingsColorBlue": "Серо-голубая",
         "SettingsColorLabel": "Тема интерфейса",
@@ -2198,7 +2275,7 @@
         "SkillFeatLevels": "Уровни черт навыков",
         "SkillIncreaseLevels": "Уровни повышения навыков",
         "Source": {
-            "AuthorLabel":"Author",
+            "AuthorLabel": "Author",
             "AuthorPlaceholder": "Author",
             "Label": "Source",
             "SourcePlaceholder": "Book"
@@ -2425,9 +2502,16 @@
         "TraitAeon": "Эон",
         "TraitAffixedToArmor": "Закрепляемый на броне",
         "TraitAffixedToArmorOrAWeapon": "Affixed to Armor or a Weapon",
+        "TraitAffixedToArmorOrTravelersClothing": "Affixed to Armor or Travelers Clothing",
+        "TraitAffixededToCrossbowOrFirearm": "Affixed to Crossbow or Firearm",
+        "TraitAffixededToFirearm": "Affixed to Firearm",
+        "TraitAffixededToFirearmWithAReloadOf1": "Affixed to a Firearm With a Reload of 1",
+        "TraitAffixededToFirearmWithTheKickbackTrait": "Affixed to a Firearm With the Kickback Trait",
         "TraitAffixedToHeadgear": "Affixed to Headgear",
         "TraitAffixedToWeapon": "Закрепляемый на оружии",
+        "TraitAffixedToARangedWeapon": "Affixed to a Ranged Weapon",
         "TraitAffixedToAShield": "Закрепляемый на щите",
+        "TraitAffixededToATwoHandedFirearmOrCrossbow": "Affixed to a Two-Handed Firearm or Crossbow",
         "TraitAgathion": "Агатион",
         "TraitAgile": "Быстрое",
         "TraitAir": "Воздух",
@@ -2442,6 +2526,13 @@
         "TraitAnugobu": "Анугобу",
         "TraitApex": "Возвышающий",
         "TraitAphorite": "Афорит",
+        "TraitAppliedToAWindPoweredVehicle": "Applied to a wind-powered vehicle",
+        "TraitAppliedToAnyItemOfLightOrNegligibleBulk": "Applied to any item of light or negligible Bulk",
+        "TraitAppliedToAnyVisibleArticleOfClothing": "Applied to any visible article of clothing",
+        "TraitAppliedToBeltCapeCloakOrScarf": "Applied to belt, cape, cloak, or scarf",
+        "TraitAppliedToBootsCapeCloakOrUmbrella": "Applied to boots, cape, cloak, or umbrella",
+        "TraitAppliedToDuelingCapeOrShield": "Applied to dueling cape or shield",
+        "TraitAppliedToShield": "Applied to shield",
         "TraitAquatic": "Водный",
         "TraitArcane": "Мистическая",
         "TraitArchetype": "Архетип",
@@ -2452,6 +2543,12 @@
         "TraitAsura": "Асура",
         "TraitAttachedToShield": "Attached to Shield",
         "TraitAttachedToCrossbowOrFirearm": "Attached to Crossbow or Firearm",
+        "TraitAttachedToCrossbowOrFirearmFiringMechanism": "Attached to Crossbow or Firearm (Firing Mechanism)",
+        "TraitAttachedToCrossbowOrFirearmScope": "Attached to Crossbow or Firearm (Scope)",
+        "TraitAttachedToFirearm": "Attached To Firearm",
+        "TraitAttachedToFirearmFiringMechanism": "Attached To Firearm (Firing Mechanism)",
+        "TraitAttachedToFirearmScope": "Attached To Firearm (Scope)",
+        "TraitAttachedToAThrownWeapon": "Attached to a Thrown Weapon",
         "TraitAttack": "Атака",
         "TraitAuditory": "Слух",
         "TraitAutomaton": "Automaton",
@@ -2544,6 +2641,7 @@
         "TraitDescriptionAir": "Эффекты с этим дескриптором создают воздух или позволяют им манипулировать. Эффекты, манипулирующие воздухом, не действуют в вакууме и областях, где воздуха нет. Существа с этим дескриптором в основном состоят из воздуха или магическим образом связаны с этой стихией.",
         "TraitDescriptionAlchemical": "Алхимические предметы работают за счёт реакций алхимических реагентов, они не магические и не обладают магическими аурами.",
         "TraitDescriptionAlchemist": "Обозначает способности класса алхимика.",
+        "TraitDescriptionAmphibious": "An amphibious creature can breathe in water and in air, even outside of its preferred environment, usually indefinitely but at least for hours. These creatures often have a swim Speed. Their bludgeoning and slashing unarmed Strikes don't take the usual –2 penalty for being underwater.",
         "TraitDescriptionAnadi": "A reclusive people from Garund who resemble spiders and can assume human forms.",
         "TraitDescriptionAnroid": "A synthetic humanoid ancestry created by artificial means. Most common in Numeria.",
         "TraitDescriptionAphorite": "A type of planar scion descended from a being from Axis, the Plane of Law.",
@@ -2588,6 +2686,7 @@
         "TraitDescriptionConrasu": "A people that are made of cosmic force given consciousness and housed within unique exoskeletons.",
         "TraitDescriptionConsecration": "Заклинания освящения каким-либо образом улучшают область на продолжительное время. На область может действовать не более одного такого эффекта одновременно. В случае пересечения новый эффект пытается нейтрализовать уже существующий в области пересечения.",
         "TraitDescriptionConsumable": "Предметы с этим дескриптором можно применить лишь единожды, и после активации они уничтожаются, если не указано иное. К одноразовым предметам относятся алхимические предметы и магические одноразовые предметы вроде свитков и талисманов. При создании одноразовых предметов персонаж может делать их партиями по четыре штуки.",
+        "TraitDescriptionContingency": "Spells with this trait grant you an action during the spell's effects, typically a reaction with a special trigger. They typically have a long duration, such as 24 hours. You can have only one spell with the contingency trait, or one contingency spell, active at a time. If you cast another spell with the contingency trait or contingency, the newer casting supersedes the older.",
         "TraitDescriptionConstruct": "A construct is an artificial creature empowered by a force other than necromancy. Constructs are often mindless; they are immune to bleed damage, death effects, disease, healing, necromancy, nonlethal attacks, poison, and the doomed, drained, fatigued, paralyzed, sickened, and unconscious conditions; and they may have Hardness based on the materials used to construct their bodies. Constructs are not living creatures, nor are they undead. When reduced to 0 Hit Points, a construct creature is destroyed.",
         "TraitDescriptionContact": "Яд с этим дескриптором поражает через контакт с кожей.",
         "TraitDescriptionCriticalFusion": "Critical fusion is a new trait for combination weapons that grants you two additional options for the critical specialization effect when using the combination weapon's melee version to make a melee attack while the firearm is loaded. If you choose to use one of them, they replace the melee usage's normal critical specialization effect. First, you can discharge the firearm to create a loud bang and concussion, using the critical specialization effect for firearms instead of the melee weapon group's critical specialization effect. Second, you can choose to discharge the firearm to increase the critical hit's momentum or shoot the foe as you attack them in melee, dealing 2 additional damage per weapon damage die. Both of these options discharge the firearm, which typically means you have to reload it before firing it again.",
@@ -2659,9 +2758,12 @@
         "TraitDescriptionHex": "Сглаз - тип фокального заклинания, доступный ведьмам.",
         "TraitDescriptionHobgolin": "Hobgoblins are a sturdy, clever people with a propensity for militaristic order.",
         "TraitDescriptionHuman": "Существо с этим дескриптором - представитель народа людей. Люди крайне многообразны и славятся своей способностью приспосабливаться к различным условиям. Способность с этим дескриптором может быть выбрана и использована исключительно людьми. ",
+        "TraitDescriptionHumanoid": "Humanoid creatures reason and act much like humans. They typically stand upright and have two arms and two legs.",
         "TraitDescriptionIllusion": "Эффекты, предметы и заклинания школы иллюзии создают видимость реальности, обманывая восприятие.",
         "TraitDescriptionIfrit": "A type of geniekin descended from a being from the Plane of Fire.",
+        "TraitDescriptionIncarnate": "A spell with the incarnate trait is similar in theme to spells that summon creatures, but it doesn't conjure a minion with the summoned trait. Instead, when summoned, the incarnate creature takes its Arrive action when you finish Casting the Spell. At the end of your next turn, the incarnate creature can either Step, Stride, or take the action for another movement type it has (such as Climb or Burrow), and then takes its Depart action. The spell then ends. The names of specific Arrive and Depart actions are listed in italics after the word “Arrive” or “Depart” respectively, along with any traits. A creature summoned by an incarnate spell acts in your interests, directs its effects away from you and your allies as much as possible, and might listen to your requests, but ultimately makes its own decisions. If the spell indicates that the incarnate makes a decision, the GM determines what the incarnate would do. It might even become more inclined to do precisely as you wish over multiple summonings. The incarnate is not fully a creature. It can't take any other actions, nor can it be targeted or harmed by Strikes, spells, or other effects unless they would be able to target or end a spell effect (such as dispel magic). It has a size for the purposes of determining its placement for effects, but it doesn't block movement. If applicable, its effects use your spell DCs and spell attack roll modifier.",
         "TraitDescriptionIncapacitation": "Способность с этим дескриптором может полностью вывести персонажа из строя и даже убить его, но против сильных существ она менее эффективна. Если заклинание обладает дескриптором «устранение», то существо с уровнем, более чем в два раза превышающим круг заклинания, считает степень успешности своей проверки против устранения на одну ступень лучше или считает степень успешности проверки заклинателя для устранения на одну ступень хуже. Если любой другой эффект обладает дескриптором «устранение», то аналогичные преимущества получает существо с уровнем большим, чем у создавшего эффект предмета, существа или опасности.",
+        "TraitDescriptionIncapacitationShort": "If the target level is higher than the ability level (or 2x spell level) treat the result as one degree better.",
         "TraitDescriptionIncorporeal": "Бестелесное существо или объект не имеет физической формы. Он может проходить сквозь твердые предметы, включая стены. Находясь внутри объекта, бестелесное существо не может воспринимать, атаковать или взаимодействовать с чем-либо вне объекта, и если оно начинает свой ход внутри объекта, оно получает замедление 1. Телесные существа могут проходить через бестелесное существо, но они не могут закончить свое движение в его пространстве. Бестелесное существо не может совершать проверки связанные с Силой против физических существ или объектов, а только против других бестелесных (если только физические объекты не обладают руной призрачного касания). Аналогично, телесное существо не может пытаться совершать проверки Силы на против бестелесных существ или объектов. Бестелесные существа обычно обладают иммунитетом к эффектам и состояниям, требующим физического тела, таким как болезнь, яд и точный урон. Они обычно обладают устойчивостью ко всем типам урона (за исключением силового урона и урона от Ударов с руной призрачного касания), и двойной устойчивостью ко всему не-магическому урону.",
         "TraitDescriptionInfused": "Алхимические предметы с дескриптором «заряженный» создаются при помощи ваших заряженных реагентов и достаточно быстро теряют полезные свойства. Все эффекты заряженных алхимических предметов, за исключением постоянных эффектов и недугов вроде медленнодействующих ядов, завершаются при следующей вашей ежедневной подготовке.",
         "TraitDescriptionIngested": "Яд с этим дескриптором поражает через пищу или питьё.",
@@ -2687,6 +2789,7 @@
         "TraitDescriptionMechanical": "Опасность с этим дескриптором представляет сконструированный физический объект.",
         "TraitDescriptionMental": "Ментальные эффекты влияют на разум цели и не действуют на объекты и неразумных существ.",
         "TraitDescriptionMetamagic": "Действия с дескриптором «‎метамагия» изменяют параметры ваших заклинаний (например, дистанцию или урон). Действие с дескриптором «‎метамагия» следует совершать непосредственно перед Сотворением заклинания, которое вы собираетесь изменить. Если вы используете любое другое действие (в том числе свободное, ответное или другое метамагическое), преимущества метамагии пропадут. Все дополнительные эффекты, полученные от метамагического действия, считаются частью эффектов заклинания, а не метамагического действия.",
+        "TraitDescriptionMindless": "A mindless creature has either programmed or rudimentary mental attributes. Most, if not all, of their mental ability modifiers are –5. They are immune to all mental effects.",
         "TraitDescriptionMinion": "Подручными называются существа, напрямую служащие другому существу. Существо с таким дескриптором может использовать только 2 действия в свой ход и не может совершать ответных действий. Во время боя ваш подручный действует в ваш ход и один раз за ход, когда вы тратите действие, чтобы отдать ему приказ. Если это верный зверь, вы используете Команду животному, если это эффект заклинания или магического предмета вроде призванного существа, вы применяете Поддержание заклинания или Поддержание активации. Если не указано иное, вы отдаёте устный приказ — это одиночное действие с дескрипторами «концентрация» и «слух». Если подручный не получил приказа, то не будет совершать никаких действий — разве только чтобы защитить себя или избежать непосредственной опасности. Если на подручного достаточно долго (как правило, не менее 1 минуты) не обращать внимания, то неразумный подручный не будет действовать, животное займётся удовлетворением своих насущных инстинктов, а разумные подручные станут делать что пожелают.",
         "TraitDescriptionMisfortune": "Эффект неудачи негативно влияет на ваш бросок. К одному броску нельзя применить более одного эффекта неудачи, а в случае применения нескольких эффектов неудачи ведущий выбирает из них тот, что хуже. Если к одному броску применяется и эффект удачи, и эффект неудачи, они отменяют друг друга и бросок совершается как обычно.",
         "TraitDescriptionModification": "A feat with this trait alters the construction of your innovation. If you have the reconfigure class feature, you can retrain such a feat more easily.",
@@ -2753,8 +2856,9 @@
         "TraitDescriptionStaff": "This magic item holds spells of a particular theme and allows a spellcaster to cast additional spells by preparing the staff.",
         "TraitDescriptionSteam": "Items with this trait are powered by engines that boil water to produce steam and move their components.",
         "TraitDescriptionStrix": "Winged humanoids, most of whom live in and around Cheliax.",
-        "TraitDescriptionStructure": "An item with the structure trait creates a magical building or other structure when activated. The item must be activated on a plot of land free of other structures. The structure adapts to the natural terrain, adopting the structural requirements for being built there. The structure adjusts around small features such as ponds or spires of rock, but it can’t be created on water or other nonsolid surfaces. If activated on snow, sand dunes, or other soft surfaces with a solid surface underneath, the structure’s foundation (if any) reaches the solid ground. If an item with this trait is activated on a solid but unstable surface, such as a swamp or an area plagued by tremors, roll a DC 3 flat check each day; on a failure, the structure begins to sink or collapse. The structure doesn’t harm creatures within the area when it appears, and it can’t be created within a crowd or in a densely populated area. Any creature inadvertently caught inside the structure when the item is activated ends up unharmed inside the complete structure and always has a clear path of escape. A creature inside the structure when the activation ends isn’t harmed, and it lands harmlessly on the ground if it was on an upper level of the structure.",
+        "TraitDescriptionStructure": "An item with the structure trait creates a magical building or other structure when activated. The item must be activated on a plot of land free of other structures. The structure adapts to the natural terrain, adopting the structural requirements for being built there. The structure adjusts around small features such as ponds or spires of rock, but it can't be created on water or other nonsolid surfaces. If activated on snow, sand dunes, or other soft surfaces with a solid surface underneath, the structure's foundation (if any) reaches the solid ground. If an item with this trait is activated on a solid but unstable surface, such as a swamp or an area plagued by tremors, roll a DC 3 flat check each day; on a failure, the structure begins to sink or collapse. The structure doesn't harm creatures within the area when it appears, and it can't be created within a crowd or in a densely populated area. Any creature inadvertently caught inside the structure when the item is activated ends up unharmed inside the complete structure and always has a clear path of escape. A creature inside the structure when the activation ends isn't harmed, and it lands harmlessly on the ground if it was on an upper level of the structure.",
         "TraitDescriptionSummoned": "Существо, вызванное при помощи заклинания или эффекта воплощения, получает дескриптор «призванный». Призванное существо не может призывать других существ, создавать хоть сколько-нибудь ценные предметы или творить заклинания, обладающие стоимостью. У него есть дескриптор «подручный». Если оно пытается сотворить заклинание такого же или более высокого круга, что и призвавшее его заклинание, то это заклинание не срабатывает, а заклинание, которым призвали существо, прекращается. В остальном призванный использует обычные способности существа его вида и, как правило, старается максимально эффективно атаковать ваших врагов. Если вы способны общаться с таким существом, то можете попытаться отдавать ему приказы, но ведущий решит, насколько оно будет им следовать.\nКак только вы завершили Сотворение заклинания, призванное существо сразу же использует 2 своих действия в этом ходу. Призванное существо не может контролировать отродий или других созданных им существ, все эти существа возвращаются в прежнее состояние (по усмотрению ведущего после исчезновения призванного (отродья обычно становятся мёртвыми телами).\nПризванные существа могут быть изгнаны при помощи различных заклинаний и эффектов. Они изгоняются автоматически, если их ПЗ снижаются до 0 или прекращается вызвавшее их заклинание",
+        "TraitDescriptionSummoner": "This indicates abilities from the Summoner class.",
         "TraitDescriptionSuli": "Sulis are planar scions descended from jann.",
         "TraitDescriptionSwashbuckler": "Обозначает способности класса авантюриста.",
         "TraitDescriptionSweep": "Атаки этим оружием требуют широкого размаха, им легче поразить несколько целей. Когда вы атакуете таким оружием, вы получаете ситуативный бонус +1 к проверке атаки, если в этот ход уже применяли это оружие для атаки другой цели.",
@@ -2768,6 +2872,7 @@
         "TraitDescriptionTransmutation": "Эффекты, предметы и заклинания школы превращения изменяют или полностью преображают физическую форму объектов и существ.",
         "TraitDescriptionTrap": "Опасность или предмет с этим дескриптором сконструированы так, чтобы препятствовать вторжениям.",
         "TraitDescriptionTrip": "Вы можете применять это оружие для Сбивания ног с помощью навыка Атлетики, даже если у вас нет свободной руки. При этом используется зона досягаемости оружия (если она отличается от вашей обычной). К результату проверки Атлетики добавляется бонус предмета оружия к проверкам атаки, если он есть. Если при применении оружия вы критически проваливаете проверку Атлетики для Сбивания с ног, вы можете уронить оружие, чтобы критический провал считался обычным.",
+        "TraitDescriptionTrueName": "Certain spells, feats, and items have the true name trait. This trait means they require you to know a creature's true name to use them.",
         "TraitDescriptionTwin": "Это оружие применяется в паре с другим, дополняя его. При атаке парным оружием вы добавляете к броску урона ситуативный бонус, равный количеству костей урона оружия, если в этот ход уже атаковали другим оружием такого же типа. Для получения преимущества оба оружия должны быть одного типа, но их руны могут отличаться.",
         "TraitDescriptionTwoHand": "This weapon can be wielded with two hands. Doing so changes its weapon damage die to the indicated value. This change applies to all the weapon's damage dice, such as those from striking runes.",
         "TraitDescriptionUnarmed": "Для совершения безоружных атак вы используете своё тело, а не рукотворное оружие. Безоружная атака не считается оружием, хотя может обладать дескрипторами оружия и относиться к определённой группе оружия. Поскольку безоружная атака совершается частью вашего тела, Разоружение на неё не действует. Также она не не занимает рук, хотя кулаки и прочие хватательные конечности здесь обычно аналогичны наручному оружию.",
@@ -2782,6 +2887,22 @@
         "TraitDescriptionWater": "Эффекты с этим дескриптором создают воду или позволяют ей манипулировать. Эффекты, манипулирующие водой, не действуют в области без неё. Существа с этим дескриптором в основном состоят из воды или магическим образом связаны с этой стихией.",
         "TraitDescriptionWitch": "Обозначает способности класса ведьмы.",
         "TraitDescriptionWizard": "Обозначает способности класса волшебника.",
+        "TraitDescriptionEidolon": "A creature with this trait is a summoner's eidolon. An item with this trait can be worn by an eidolon. An eidolon can have up to two items invested.",
+        "TraitDescriptionAdjustment": "Items with this trait are intended to alter existing pieces of equipment, typically armors, shields, and weapons. The given item will note which type of equipment it modifies. A piece of equipment can only be affected by a single adjustment at a time. Unless otherwise noted, adding or removing an adjustment requires using a 10-minute activity and a repair kit.",
+        "TraitDescriptionApex": "When you Invest an Item that has the apex trait, it improves one of your ability scores, either increasing it by 2 or to a total of 18, whichever grants the higher score. This gives you all the benefits of the new ability score until the investiture ends. An apex item grants this benefit only the first time it's invested within a 24-hour period, and you can benefit from only one apex item at a time. If you attempt to invest an apex item when you already have one invested, you don't gain the ability score increase, though you do gain any other effects of Investing the Item.",
+        "TraitDescriptionCatalyst": "Items with the catalyst trait are consumable material spell components that alter or magnify specific spells. Activating a catalyst is part of Casting the Spell. The catalyst might increase the number of actions required to Cast the Spell, as indicated in the catalyst's Activate entry. Additionally, the spell gains material components if it didn't have them already or adds the catalyst to its existing components. Because the catalyst becomes part of the material components, you can draw the catalyst as part of Casting the Spell.",
+        "TraitDescriptionContract": "A contract is a type of item that magically establishes an agreement between multiple parties and typically grants magical benefits.",
+        "TraitDescriptionElixir": "Elixirs are alchemical liquids that are used by drinking them.",
+        "TraitDescriptionFey": "Creatures of the First World are called the fey.",
+        "TraitDescriptionFulu": "Fulus are small paper charms that can be affixed to a suit of armor, a shield, a weapon, a creature, or even a structure. Some fulus are composed of multiple such charms, taking effect only once all have been affixed. Normal fulus have effects immediately once affixed, while fulu talismans have an effect only once activated. Once a fulu has been activated, it lasts for the given duration and then burns out. Unless otherwise noted, fulus expire one year after being created, reverting to mundane paper. All fulus have the fulu and consumable traits. Fulus also have a tradition trait—either arcane, divine, occult or primal—determined by the magical tradition of its creator. For example, a fulu created by a priest would have the divine trait, whereas a witch who dabbles in fate might create a fulu with the occult trait. Some fulus also have the talisman trait, if they work similarly to talismans (such as being affixed to a suit of armor, a shield, or a weapon. Each fulu's stat block indicates the type of item or creature it can be affixed to. Affixing or removing a fulu requires using the Affix a Fulu activity, or the Affix a Talisman action instead if the fulu is also a talisman.",
+        "TraitDescriptionMutagen": "An elixir with the mutagen trait temporarily transmogrifies the subject's body and alters its mind. A mutagen always conveys one or more beneficial effects paired with one or more detrimental effects. Mutagens are polymorph effects, meaning you can benefit from only one at a time.",
+        "TraitDescriptionOil": "Oils are magical gels, ointments, pastes, or salves that are typically applied to an object and are used up in the process.",
+        "TraitDescriptionPotion": "A potion is a magical liquid activated when you drink it.",
+        "TraitDescriptionScroll": "A scroll contains a single spell you can cast without a spell slot.",
+        "TraitDescriptionSnare": "Traps typically made by rangers, snares follow special rules that allow them to be constructed quickly and used on the battlefield.",
+        "TraitDescriptionSpellheart": "Spellhearts are permanent items that work similarly to talismans. You affix a spellheart using the Affix a Spellheart activity, which is otherwise identical to Affix a Talisman. The limit of one talisman per item remains—an item can have one spellheart or one talisman, not both. When casting a cantrip from a spellheart, you can use your own spell attack roll or spell DC if it's higher. Crafting a spellheart requires the spells the spellheart can cast. For example, a major five-feather wreath requires air walk, gale blast, and wall of wind.",
+        "TraitDescriptionTalisman": "A talisman is a small object affixed to armor, a shield, or a weapon (called the affixed item). You must be wielding or wearing an item to activate a talisman attached to it. Once activated, a talisman burns out permanently.",
+        "TraitDescriptionWand": "A wand contains a single spell which you can cast once per day.",
         "TraitDetection": "Обнаружение",
         "TraitDevil": "Дьявол",
         "TraitDhampir": "Дампир",
@@ -2801,6 +2922,7 @@
         "TraitDuergar": "Двергар",
         "TraitDuskwalker": "Сумракоход",
         "TraitDwarf": "Дварф",
+        "TraitEachRuneAppliedToASeparateItemThatHasPockets": "Each rune applied to a separate item that has pockets",
         "TraitEarth": "Земля",
         "TraitEidolon": "Эйдолон",
         "TraitElectricity": "Электричество",
@@ -2837,6 +2959,7 @@
         "TraitFocused": "Фокальный",
         "TraitForce": "Сила",
         "TraitForceful": "Напористое",
+        "TraitFormian": "Formian",
         "TraitFortune": "Удача",
         "TraitFreeHand": "Наручное",
         "TraitFulu": "Фулу",
@@ -2878,6 +3001,7 @@
         "TraitHuman": "Человек",
         "TraitHumanoid": "Гуманоид",
         "TraitIfrit": "Ифрит",
+        "TraitIkeshti": "Ikeshti",
         "TraitIllusion": "Иллюзия",
         "TraitIncapacitation": "Устранение",
         "TraitIncarnate": "Incarnate",
@@ -2937,6 +3061,7 @@
         "TraitNoisy": "Шумная",
         "TraitNonlethal": "Несмертельное",
         "TraitNonlethalAttacks": "Несмертельные атаки",
+        "TraitNonmagicalAttacks": "Non-magical Attacks",
         "TraitNymph": "Нимфа",
         "TraitOath": "Клятва",
         "TraitObjectImmunities": "Object Immunities",
@@ -2974,6 +3099,7 @@
         "TraitProteanAnatomy": "Protean Anatomy",
         "TraitPsychopomp": "Психопомп",
         "TraitQlippoth": "Клиппот",
+        "TraitRadiation": "Radiation",
         "TraitRage": "Ярость",
         "TraitRakshasa": "Ракшаса",
         "TraitRange": "Дистанция",
@@ -3026,6 +3152,7 @@
         "TraitRangeIncrement500": "Шаг дистанции 500 фт",
         "TraitRangeIncrement60": "Шаг дистанции 60 фт",
         "TraitRangeIncrement70": "Шаг дистанции 70 фт",
+        "TraitRangeIncrement75": "Range Increment 75 ft",
         "TraitRangeIncrement80": "Шаг дистанции 80 фт",
         "TraitRangeIncrement90": "Шаг дистанции 90 фт",
         "TraitRangedTrip": "Дистанционно сбивающее",
@@ -3102,7 +3229,7 @@
         "TraitStrix": "Стрикс",
         "TraitStructure": "Строение",
         "TraitSuli": "Сули",
-        "TraitSummon": "Призванный",
+        "TraitSummoned": "Summoned",
         "TraitSummoner": "Призыватель",
         "TraitSwarmAttacks": "Атаки роя",
         "TraitSwarmMind": "Разум роя",
@@ -3118,6 +3245,7 @@
         "TraitTeleportation": "Телепортация",
         "TraitTengu": "Тэнгу",
         "TraitTethered": "Привязанное",
+        "TraitThrown": "Thrown",
         "TraitThrown10": "Метательное 10 фт",
         "TraitThrown15": "Метательное 15 фт",
         "TraitThrown20": "Метательное 20 фт",
@@ -3182,6 +3310,8 @@
         "TraitHeldTwoHands": "Удержание 2 руками",
         "TraitTattooedOnTheBody": "Tattooed on the Body",
         "TraitWorn": "Ношение",
+        "TraitWornAndAttachedToTwoWeapons": "Worn and Attached to Two Weapons",
+        "TraitWornUnderArmor": "Worn Under Light Armor or Clothes",
         "TraitWornAmulet": "Амулет",
         "TraitWornArmbands": "Нарукавники",
         "TraitWornBackpack": "Рюкзак",
@@ -3209,7 +3339,8 @@
         "TraitWornBarding": "Броня животного",
         "TraitWornOnBelt": "Поясной предмет",
         "TraitWornSaddle": "Седло",
-        "TraitEtchedOntoAArmor": "Начерт. на броне",
+        "TraitEtchedOntoArmor": "Etched onto Armor",
+        "TraitEtchedOntoMedHeavyArmor": "Etched onto Medium or Heavy Armor",
         "TraitEtchedOntoAWeapon": "Начерт. на оружии",
         "TraitEtchedOntoAThrownWeapon": "Начерт. на метательном оружии",
         "TraitEtchedOntoAMeleeWeapon": "Начерт. на оружии ближнего боя",
@@ -3277,10 +3408,16 @@
             "shiftModifyDamageTitle": "Изменить выброшенный урона/исцеления",
             "shiftModifyDamageHint": "Положительный модификатор для урона, отрицательный для лечения.",
             "RuleElements": {
+                "ChoiceSet": {
+                    "Prompt": "Make a selection.",
+                    "SaveLabel": "Save"
+                },
                 "EffectTarget": {
-                    "NoSelectionMade": "No selection was made: {effect} is inactive.",
-                    "NoValidOptions": "{actor} has no valid targets for {effect}.",
                     "Prompt": "Choose the target of this effect."
+                },
+                "Prompt": {
+                    "NoSelectionMade": "No selection was made: {item} is inactive.",
+                    "NoValidOptions": "{actor} has no valid targets for {item}."
                 }
             }
         },
@@ -3386,6 +3523,7 @@
                 "greatclub": "Двуручная дубина",
                 "greatpick": "Двуручный клевец",
                 "greatsword": "Двуручный меч",
+                "griffon-cane": "Griffon Cane",
                 "guisarme": "Гвизарма",
                 "gun-sword": "Ганблейд",
                 "halberd": "Алебарда",
@@ -3415,6 +3553,7 @@
                 "light-hammer": "Лёгкий молот",
                 "light-mace": "Лёгкая булава",
                 "light-pick": "Лёгкий клевец",
+                "lion-scythe": "Lion Scythe",
                 "long-air-repeater": "Пневматическое ружьё",
                 "longbow": "Длинный лук",
                 "longspear": "Длинное копьё",
@@ -3442,6 +3581,7 @@
                 "piranha-kiss": "Поцелуй пираньи",
                 "poi": "Пои",
                 "polytool": "Мультитул",
+                "probing-cane": "Probing Cane",
                 "ranseur": "Рунка",
                 "rapier": "Рапира",
                 "rapier-pistol": "Пистолет-рапира",
@@ -3462,6 +3602,7 @@
                 "shield-bash": "Удар щитом",
                 "shield-boss": "Умбон",
                 "shield-spikes": "Шипы для щита",
+                "shobhad-longrifle": "Shobhad Longrifle",
                 "shortbow": "Короткий лук",
                 "shortsword": "Короткий меч",
                 "shuriken": "Сюрикен",
@@ -3478,6 +3619,7 @@
                 "staff": "Посох",
                 "starknife": "Нож-звезда",
                 "stiletto-pen": "Ручка-стилет",
+                "sun-sling": "Sun Sling",
                 "sword-cane": "Меч-трость",
                 "tamchal-chakram": "Тамчал чакрам",
                 "taw-launcher": "Пулестрел",
@@ -3901,6 +4043,7 @@
         "WeaponRange20": "20 фт",
         "WeaponRange240": "240 фт",
         "WeaponRange30": "30 фт",
+        "WeaponRange300": "300 ft.",
         "WeaponRange40": "40 фт",
         "WeaponRange50": "50 фт",
         "WeaponRange60": "60 фт",
@@ -3909,6 +4052,7 @@
         "WeaponRange90": "90 фт",
         "WeaponRangeLabel": "Дистанция",
         "WeaponRangeMelee": "Ближнее",
+        "WeaponRangeN": "{range} ft.",
         "WeaponRangeReach": "Длинное",
         "WeaponReloadLabel": "Перезарядка",
         "WeaponSpecialization": "Привычное оружие",
@@ -4054,10 +4198,10 @@
                 "rules": "<p>Вы устали и нуждаетесь в отдыхе. Вы получаете штраф состояния -1 к КБ и испытаниям и не можете использовать занятия исследования в путешествии.</p><p>Вы теряете утомление после полноценного отдыха.</p>",
                 "summary": "Вы не можете нормально защищать себя и использовать занятие исследования в путешествии."
             },
-            "flatFooted": {
-                "name": "Застигнутость врасплох",
+            "flat-footed": {
+                "name": "Flat-Footed",
                 "rules": "<p>You're distracted or otherwise unable to focus your full attention on defense. You take a -2 circumstance penalty to AC. Some effects give you the flat-footed condition only to certain creatures or against certain attacks. Others- especially conditions-can make you universally flatfooted against everything. If a rule doesn't specify that the condition applies only to certain circumstances, it applies to all of them; for example, many effects simply say \"The target is flat-footed.\"</p>",
-                "summary": "Вы не можете полноценно защищать себя."
+                "summary": "You're unable to defend yourself to your full capability."
             },
             "fleeing": {
                 "name": "Паника",
@@ -4119,10 +4263,10 @@
                 "rules": "<p>Вы замираете на месте. Вы считаетесь застигнутым врасплох и не можете действовать, за исключением попыток Вспомнить информацию и действий, требующих только разум усмотрению ведущего). Ваши способы восприятия продолжают работать, но из-за невозможности двигаться их может быть ограничена, поэтому вы не можете заниматься Поиском, когда парализованы.</p>",
                 "summary": "Ваше тело парализовано."
             },
-            "persistentDamage": {
-                "name": "Продолжительный урон",
+            "persistent-damage": {
+                "name": "Persistent Damage",
                 "rules": "<p>Persistent damage comes from effects like acid, being on fire, or many other situations. It appears as \"X persistent [type] damage,\" where \"X\" is the amount of damage dealt and \"[type]\" is the damage type. Instead of taking persistent damage immediately, you take it at the end of each of your turns as long as you have the condition, rolling any damage dice anew each time. After you take persistent damage, roll a DC 15 flat check to see if you recover from the persistent damage. If you succeed, the condition ends.</p>",
-                "summary": "Вы получаете урон каждый раунд."
+                "summary": "You keep taking damage every round."
             },
             "petrified": {
                 "name": "Окаменение",
@@ -4407,7 +4551,6 @@
                 "WeakNameFormat": "Слабый {name}"
             },
             "ArmorExtraInfoLabelPlaceholder": "Подробности КБ...",
-            "AttackEffectMissing": "Эффект атаки '{attackEffect}' не найден среди действий актёра и в библиотеке Bestiary Ability Glossary.",
             "Attacks": "Атаки",
             "AttackType": {
                 "Melee": "Атаки ближнего боя",
@@ -4444,6 +4587,7 @@
             "InventoryTab": "Инвентарь",
             "SavesExtraInfoLabelPlaceholder": "Бонус ко всем испытаниям...",
             "SensesLabel": "Восприятие",
+            "SpeedExtraInfoLabelPlaceholder": "Speed details...",
             "Spells": {
                 "AttackLabel": "Атака",
                 "DCLabel": "СЛ",
