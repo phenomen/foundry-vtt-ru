@@ -363,10 +363,73 @@
   line-height: 20px;
 }
 
-.tidy5e.sheet.item .sheet-body .item-properties .form-group {
-  font-family: var(--signika);
+.tidy5e.sheet.actor .list-layout .items-list .item h4 {
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+.tidy5e.sheet.actor .spellcasting-ability h3 {
+  font-family: var(--font-sans-condensed);
+  font-size: var(--text-base);
+}
+
+.tidy5e.sheet.actor .list-layout .items-list .item-detail,
+.tidy5e.sheet.actor .items-list .items-header-labels div {
+  font-family: var(--font-sans-condensed);
+  font-weight: 500;
+}
+
+.tidy5e.sheet.actor .skills-list .skill .skill-name {
+  font-size: var(--text-sm);
+  font-family: var(--font-sans-condensed);
+}
+
+.tidy5e.sheet.actor .skills-list .skill.proficient .skill-name {
+  font-weight: 500;
+  color: var(--color-red-dnd);
+}
+
+.tidy5e.sheet.actor .ability-scores .ability .ability-score,
+.tidy5e.sheet.actor .char-name {
+  font-size: var(--text-2xl);
+  color: var(--color-red-dnd);
+}
+
+.tidy5e.sheet.actor .header-attributes .ac-display svg path {
+  fill: var(--color-red-dnd);
 }
 
 .tidy5e.sheet.actor .header-attributes .ac-display .attribute-value {
-  top: 30%;
+  color: var(--color-white);
+  font-size: var(--text-4xl);
+  top: 40%;
+}
+
+.tidy5e.sheet.actor .resources .resource .resource-name input {
+  font-family: var(--font-sans-condensed);
+  font-size: var(--text-sm);
+}
+
+.tidy5e.sheet.actor .resources .resource .resource-value.multiple input {
+  font-size: var(--text-base);
+}
+
+.portrait-hp span {
+  height: 130% !important;
+}
+
+.tidy5e.sheet.actor input.hp-max,
+.tidy5e.sheet.actor input.max-temphp,
+.tidy5e.sheet.actor input.hp-min,
+.tidy5e.sheet.actor input.min-temphp {
+  text-align: center;
+}
+
+.tidy5e.sheet.actor .traits.show-labels label span {
+  font-size: var(--text-xs);
+  font-weight: 500;
+}
+
+.system-dnd5e.tidy5eDark {
+  --color-red-dnd: #ce381f;
 }
