@@ -1838,6 +1838,10 @@
                 "hint": "Отображать кнопки карт критических попаданий и промахов на бросках атаки.",
                 "name": "Кнопки карт критических попаданий и промахов"
             },
+            "DeathIcon": {
+                "Name": "Death Icon",
+                "Hint": "Set the overlay icon used to mark dead actors."
+            },
             "JournalEntryTheme": {
                 "Name": "Стиль журналов",
                 "Hint": "Выберите стиль оформления для записей журнала.",
@@ -1938,6 +1942,14 @@
                     "Name": "Use experimental damage chat card formatting",
                     "Hint": "Parse damage roll data and decorate the resulting chat card with differently formatted roll formulas, damage types and categories, and roll notes for splash and persistent damage."
                 },
+                "ActorsDeadAtZero": {
+                    "Name": "NPCs dead at 0 HP",
+                    "Hint": "Upon reaching zero hit points, NPCs are marked as dead.",
+                    "Neither": "No",
+                    "NPCsOnly": "Yes",
+                    "PCsOnly": "PCs only",
+                    "Both": "PCs and NPCs"
+                },
                 "LootableNPCs": {
                     "Name": "Обыскиваемые персонажи ведущего",
                     "Hint": "Игроки могут обыскивать тела персонажей ведущего после их смерти."
@@ -1997,6 +2009,10 @@
                 "Name": "Metagame Information",
                 "Label": "Limit Metagame Information",
                 "Hint": "Limit what kinds of metagame information your players have access to.",
+                "TokenSetsNameVisibility": {
+                    "Name": "Tokens determine NPC name visibility",
+                    "Hint": "If enabled, then for any NPC token whose nameplate isn't visible to players, its name will also be hidden from them in the encounter tracker and chat messages."
+                },
                 "PartyVision": {
                     "Name": "Общая область видимости игроков",
                     "Hint": "При включении, все игроки будут видеть области, видимые всеми их токенами, независимо от разрешений и выбора токена."
@@ -3229,6 +3245,7 @@
         "TraitStrix": "Стрикс",
         "TraitStructure": "Строение",
         "TraitSuli": "Сули",
+        "TraitSummon": "Summon",
         "TraitSummoned": "Summoned",
         "TraitSummoner": "Призыватель",
         "TraitSwarmAttacks": "Атаки роя",
@@ -3786,7 +3803,7 @@
             "flaming": {
                 "Name": "Flaming Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Flaming Rune</b> When you critically succeed at a Strike with this weapon, you deal an additional [[/r {1d10}[persistent,fire} # Flaming Rune]]{1d10 persistent fire} damage."
+                    "criticalSuccess": "<b>Flaming Rune</b> When you critically succeed at a Strike with this weapon, you deal an additional [[/r {1d10}[persistent,fire]]] # Flaming Rune]]{1d10 persistent fire} damage."
                 }
             },
             "frost": {
@@ -3850,7 +3867,7 @@
             "greaterFlaming": {
                 "Name": "Greater Flaming Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Greater Flaming Rune</b> Fire damage dealt by this weapon (including the persistent fire damage) ignores the target's fire resistance. When you critically succeed at a Strike with this weapon, you deal an additional [[/r {2d10}[persistent,fire} # Greater Flaming Rune]]{2d10 persistent fire} damage.",
+                    "criticalSuccess": "<b>Greater Flaming Rune</b> Fire damage dealt by this weapon (including the persistent fire damage) ignores the target's fire resistance. When you critically succeed at a Strike with this weapon, you deal an additional [[/r {2d10}[persistent,fire]]] # Greater Flaming Rune]]{2d10 persistent fire} damage.",
                     "success": "<b>Greater Flaming Rune</b> Fire damage dealt by this weapon ignores the target's fire resistance."
                 }
             },
