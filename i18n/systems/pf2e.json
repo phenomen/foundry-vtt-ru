@@ -484,6 +484,7 @@
             "Character": {
                 "AncestryClass": "{ancestry} {class}"
             },
+            "Dead": "Dead",
             "Hazard": {
                 "Level": "Опасность {level}"
             },
@@ -1027,6 +1028,13 @@
             "P1W": "неделя"
         },
         "Encounter": {
+            "Broadcast": {
+                "TempHP": {
+                    "PluralNew": "{actor} now has {newQuantity} temporary hit points{wasAt} from {item}.",
+                    "SingleNew": "{actor} now has {newQuantity} temporary hit point{wasAt} from {item}.",
+                    "WasAt": " (was at {oldQuantity})"
+                }
+            },
             "Budget": {
                 "EncounterBudget": "Encounter Budget",
                 "PartySize": "Party Size",
@@ -2136,9 +2144,9 @@
                     "Name": "Опциональные правила автоматической прогрессии бонусов",
                     "Hint": "Требуется перезапуск: Поддержка опциональных правил автоматической прогрессии бонусов, за исключением навыков/возвышенных характеристик",
                     "Choices": {
-                        "noABP": "Использовать стандартные правила",
-                        "ABPRulesAsWritten": "Использовать альтернативные правила RAW",
-                        "ABPFundamentalPotency": "Использовать автоматические правила как фундаментальные руны."
+                        "noABP": "Do not use ABP",
+                        "ABPFundamentalPotency": "ABP: Allow Property Runes",
+                        "ABPRulesAsWritten": "ABP: Disallow Property Runes "
                     }
                 },
                 "Proficiency": {
