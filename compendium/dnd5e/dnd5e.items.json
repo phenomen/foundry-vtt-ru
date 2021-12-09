@@ -1,20 +1,9 @@
 {
 	"label": "Предметы (SRD)",
-	"mapping": {
-		"source": "data.source",
-		"weight": {
-			"path": "data.weight",
-			"converter": "weight"
-		},
-		"range": {
-			"path": "data.range",
-			"converter": "range"
-		}
-	},
 	"entries": {
 		"Abacus": {
-			"name": "Abacus",
-			"description": "<p>The abacus, also called a counting frame, is a calculating tool.</p>",
+			"name": "Счёты",
+			"description": "<p>Счёты, также называемый абаком, – это инструмент для произведения вычислений.</p>",
 			"source": "Abacus"
 		},
 		"Acid (vial)": {
@@ -2058,9 +2047,9 @@
 			"source": "PHB pg. 154"
 		},
 		"Maul": {
-			"name": "Maul",
-			"description": "<p>This heavy two-handed mace crushes metal and bone with thunderous force.</p>",
-			"source": "PHB pg. 149"
+			"name": "Двуручный молот",
+			"description": "<p>Этот тяжелый двуручный молот сокрушает металл и кости с чудовищной силой.</p>",
+			"source": "Maul"
 		},
 		"Maul +1": {
 			"name": "Maul +1",
@@ -2143,9 +2132,9 @@
 			"source": "DMG pg. 182"
 		},
 		"Morningstar": {
-			"name": "Morningstar",
-			"description": "<p>A viciously spiked metal orb mounted upon the end of a stout haft makes for a deadly weapon which can puncture armor and flesh alike.</p>",
-			"source": "PHB pg. 149"
+			"name": "Моргенштерн",
+			"description": "<p>Металлическая сфера с острыми шипами, закрепленная на конце прочного древка. Служит смертоносным оружием, способным как пробить броню, так и изувечить плоть.</p>",
+			"source": "Morningstar"
 		},
 		"Morningstar +1": {
 			"name": "Morningstar +1",
@@ -2180,27 +2169,27 @@
 		"Necklace of Prayer Beads": {
 			"name": "Necklace of Prayer Beads",
 			"description": "<p><em>Wondrous item, (requires attunement by a cleric, druid, or paladin)</em></p>\n<p>This necklace has 1d4 + 2 magic beads made from aquamarine, black pearl, or topaz. It also has many nonmagical beads made from stones such as amber, bloodstone, citrine, coral, jade, pearl, or quartz. If a magic bead is removed from the necklace, that bead loses its magic.</p>\n<p>Six types of magic beads exist. The GM decides the type of each bead on the necklace or determines it randomly. A necklace can have more than one bead of the same type. To use one, you must be wearing the necklace. Each bead contains a spell that you can cast from it as a bonus action (using your spell save DC if a save is necessary). Once a magic bead's spell is cast, that bead can't be used again until the next dawn.</p>\n<table border=\"1\">\n<tbody>\n<tr>\n<td><strong>d20</strong></td>\n<td><strong>Bead of...</strong></td>\n<td><strong>Spell</strong></td>\n<td><strong>Guide Price per Bead (gp)</strong></td>\n</tr>\n<tr>\n<td>1-6</td>\n<td>Blessing</td>\n<td>@Compendium[dnd5e.spells.8dzaICjGy6mTUaUr]{Bless}</td>\n<td>2,000</td>\n</tr>\n<tr>\n<td>7-12</td>\n<td>Curing</td>\n<td>@Compendium[dnd5e.spells.uUWb1wZgtMou0TVP]{Cure Wounds}  (2nd level) or  @Compendium[dnd5e.spells.F0GsG0SJzsIOacwV]{Lesser Restoration}</td>\n<td>4,000</td>\n</tr>\n<tr>\n<td>13-16</td>\n<td>Favor</td>\n<td>@Compendium[dnd5e.spells.WzvJ7G3cqvIubsLk]{Greater Restoration}</td>\n<td>32,000</td>\n</tr>\n<tr>\n<td>17-18</td>\n<td>Smiting</td>\n<td>@Compendium[dnd5e.spells.7UwUjJ6owIQkEPrs]{Branding Smite}</td>\n<td>1,500</td>\n</tr>\n<tr>\n<td>19</td>\n<td>Summons</td>\n<td>@Compendium[dnd5e.spells.fkREcytuZ8sngWtC]{Planar Ally}</td>\n<td>128,000</td>\n</tr>\n<tr>\n<td>20</td>\n<td>Wind Walking</td>\n<td>@Compendium[dnd5e.spells.8PJAsHmbu6UgDHC0]{Wind Walk}</td>\n<td>96,000</td>\n</tr>\n</tbody>\n</table>\n<p><em>**Foundry note: the 6 charges reflect the maximum number of beads able to be found; please adjust as required. </em></p>\n<p><em>Additionally, the guide price is a guide only and should be adjusted accordingly to reflect the Dungeon Master's world.</em></p>",
-			"source": "DMG pg. 182"
+			"source": "Necklace of Prayer Beads"
 		},
 		"Net": {
-			"name": "Net",
-			"description": "<p>These thickly woven fibers are reinforced for use in combat to entrap and entangle even the most dangerous foes, rendering them vulnerable for assault with other weaponry.</p>\n<p><strong>Special.</strong> A Large or smaller creature hit by a net is restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net. When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make.</p>",
-			"source": "PHB pg. 149"
+			"name": "Сеть",
+			"description": "<p>Эти плотно сплетенные нити усилены для использования в бою, чтобы поймать и опутать даже самых опасных противников, делая их уязвимыми для нападения другим оружием.</p>\n<p><em><strong>Особое.</strong></em> Существо размером не более крупного, по которому попала атака сетью, остаётся обездвиженным, пока не освободится. Сеть не действует на бесформенных существ, а также на существ огромного размера и больше. Существо может использовать действие, чтобы пройти проверку Силы со СЛ 10, при успехе освобождая себя или другое существо в пределах своей зоны досягаемости. Если нанести сети (КБ 10) 5 режущего урона, существо тоже освободится, не получив урона, а сеть будет уничтожена. Используя действие, бонусное или ответное действие для атаки сетью, вы можете совершить только одну атаку, вне зависимости от количества атак, которые вы обычно совершаете.</p>",
+			"source": "Net"
 		},
 		"Net +1": {
-			"name": "Net +1",
+			"name": "Сеть +1",
 			"description": "<p><em>Whether through demonic blessing, celestial bequeathment, crazed experiment, or skillful craft, this weapon has been enhanced to bring more bloodshed by the bearer.</em></p>\n<p>You have a bonus to attack rolls made with this magic weapon.</p>\n<p><strong>Special.</strong> A Large or smaller creature hit by a net is restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net. When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make.</p>",
-			"source": "DMG pg. 213"
+			"source": "Net +1"
 		},
 		"Net +2": {
-			"name": "Net +2",
+			"name": "Сеть +2",
 			"description": "<p><em>Whether through demonic blessing, celestial bequeathment, crazed experiment, or skillful craft, this weapon has been enhanced to bring more bloodshed by the bearer.</em></p>\n<p>You have a bonus to attack rolls made with this magic weapon.</p>\n<p><strong>Special.</strong> A Large or smaller creature hit by a net is restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net. When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make.</p>",
-			"source": "DMG pg. 213"
+			"source": "Net +2"
 		},
 		"Net +3": {
-			"name": "Net +3",
+			"name": "Сеть +3",
 			"description": "<p><em>Whether through demonic blessing, celestial bequeathment, crazed experiment, or skillful craft, this weapon has been enhanced to bring more bloodshed by the bearer.</em></p>\n<p>You have a bonus to attack rolls made with this magic weapon.</p>\n<p><strong>Special.</strong> A Large or smaller creature hit by a net is restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net. When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make.</p>",
-			"source": "DMG pg. 213"
+			"source": "Net +3"
 		},
 		"Nine Lives Stealer Greatsword": {
 			"name": "Nine Lives Stealer Greatsword",
@@ -2338,9 +2327,9 @@
 			"source": "DMG pg. 184"
 		},
 		"Pike": {
-			"name": "Pike",
-			"description": "<p>A sturdy blade mounted upon the end of a long metal haft. Designed as a defensive weapon with considerable reach to both fend off and menace foes.</p>",
-			"source": "PHB pg. 149"
+			"name": "Пика",
+			"description": "<p>Крепкое лезвие, закрепленное на конце длинного металлического древка. Предназначена как оборонительное оружие со значительной зоной досягаемости, чтобы отбиваться от противников и устрашать их.</p>",
+			"source": "Pike"
 		},
 		"Pike +1": {
 			"name": "Pike +1",
@@ -2988,9 +2977,9 @@
 			"source": "DMG pg. 199"
 		},
 		"Scimitar": {
-			"name": "Scimitar",
-			"description": "<p>This curved blade is wide near the wrapped handle but arcs and tapers towards a gleaming tip.</p>",
-			"source": "PHB pg. 149"
+			"name": "Скимитар",
+			"description": "<p>Этот изогнутый клинок широк у обтянутой рукояти, но дугообразно сужается к сверкающему острию.</p>",
+			"source": "Scimitar"
 		},
 		"Scimitar +1": {
 			"name": "Scimitar +1",
@@ -3533,9 +3522,9 @@
 			"source": "PHB pg. 150"
 		},
 		"Trident": {
-			"name": "Trident",
-			"description": "<p>A multi-pronged spear designed to impale a target in multiple locations, pinning them in place. Often used in combination with a net to entrap and harass foes.</p>",
-			"source": "PHB pg. 149"
+			"name": "Трезубец",
+			"description": "<p>Многозубчатое копье, предназначенное для пронзания цели в нескольких местах, пригвождая ее к поверхности. Часто используется в сочетании с сетью для опутывания и изведения противников.</p>",
+			"source": "Trident"
 		},
 		"Trident +1": {
 			"name": "Trident +1",
@@ -3873,44 +3862,44 @@
 			"source": "DMG pg. 212"
 		},
 		"War Pick": {
-			"name": "War Pick",
-			"description": "<p>A brutal curved spike mounted on the back of a sturdy haft - designed for puncturing armor with deadly force.</p>",
-			"source": "PHB pg. 149"
+			"name": "Клевец",
+			"description": "<p>Грубый изогнутый шип, закрепленный на прочном древке. Предназначен для пробивания брони со смертоносной силой.</p>",
+			"source": "War Pick"
 		},
 		"War Pick +1": {
-			"name": "War Pick +1",
+			"name": "Клевец +1",
 			"description": "<p><em>Whether through demonic blessing, celestial bequeathment, crazed experiment, or skillful craft, this weapon has been enhanced to bring more bloodshed by the bearer.</em></p>\n<p>You have a bonus to attack and damage rolls made with this magic weapon.</p>",
-			"source": "DMG pg. 213"
+			"source": "War Pick +1"
 		},
 		"War Pick +2": {
-			"name": "War Pick +2",
+			"name": "Клевец +2",
 			"description": "<p><em>Whether through demonic blessing, celestial bequeathment, crazed experiment, or skillful craft, this weapon has been enhanced to bring more bloodshed by the bearer.</em></p>\n<p>You have a bonus to attack and damage rolls made with this magic weapon.</p>",
-			"source": "DMG pg. 213"
+			"source": "War Pick +2"
 		},
 		"War Pick +3": {
-			"name": "War Pick +3",
+			"name": "Клевец +3",
 			"description": "<p><em>Whether through demonic blessing, celestial bequeathment, crazed experiment, or skillful craft, this weapon has been enhanced to bring more bloodshed by the bearer.</em></p>\n<p>You have a bonus to attack and damage rolls made with this magic weapon.</p>",
-			"source": "DMG pg. 213"
+			"source": "War Pick +3"
 		},
 		"Warhammer": {
-			"name": "Warhammer",
-			"description": "<p>A heavy metal hammer capable of being wielded with a single hand with a shield or in two hands to deliver crushing concussive blows.</p>",
-			"source": "PHB pg. 149"
+			"name": "Боевой молот",
+			"description": "<p>Тяжелый металлический молот, который можно использовать одной рукой со щитом или двумя руками для нанесения сокрушительных дробящих ударов.</p>",
+			"source": "Warhammer"
 		},
 		"Warhammer +1": {
-			"name": "Warhammer +1",
+			"name": "Боевой молот +1",
 			"description": "<p><em>Whether through demonic blessing, celestial bequeathment, crazed experiment, or skillful craft, this weapon has been enhanced to bring more bloodshed by the bearer.</em></p>\n<p>You have a bonus to attack and damage rolls made with this magic weapon.</p>",
-			"source": "DMG pg. 213"
+			"source": "Warhammer +1"
 		},
 		"Warhammer +2": {
-			"name": "Warhammer +2",
+			"name": "Боевой молот +2",
 			"description": "<p><em>Whether through demonic blessing, celestial bequeathment, crazed experiment, or skillful craft, this weapon has been enhanced to bring more bloodshed by the bearer.</em></p>\n<p>You have a bonus to attack and damage rolls made with this magic weapon.</p>",
-			"source": "DMG pg. 213"
+			"source": "Warhammer +2"
 		},
 		"Warhammer +3": {
-			"name": "Warhammer +3",
+			"name": "Боевой молот +3",
 			"description": "<p><em>Whether through demonic blessing, celestial bequeathment, crazed experiment, or skillful craft, this weapon has been enhanced to bring more bloodshed by the bearer.</em></p>\n<p>You have a bonus to attack and damage rolls made with this magic weapon.</p>",
-			"source": "DMG pg. 213"
+			"source": "Warhammer +3"
 		},
 		"Waterskin": {
 			"name": "Бурдюк",
@@ -3920,62 +3909,62 @@
 		"Weaver's Tools": {
 			"name": "Инструменты ткача",
 			"description": "<p>Эти специальные инструменты включают предметы, необходимые для занятия ткачеством. Умение в обращении с этими инструментами позволяет вам добавить ваш бонус умения к любой проверке характеристики, связанной с их использованием.</p>",
-			"source": "PHB pg. 154"
+			"source": "Weaver's Tools"
 		},
 		"Well of Many Worlds": {
-			"name": "Well of Many Worlds",
+			"name": "Колодец миров",
 			"description": "<p><em>Wondrous item</em></p>\n<p>This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.</p>\n<p>You can use an action to unfold and place the Well of Many Worlds on a solid surface, whereupon it creates a two-way portal to another world or plane of existence. Each time the item opens a portal, the GM decides where it leads. You can use an action to close an open portal by taking hold of the edges of the cloth and folding it up. Once a Well of Many Worlds has opened a portal, it can't do so again for 1d8 hours.</p>",
-			"source": "DMG pg. 213"
+			"source": "Well of Many Worlds"
 		},
 		"Whetstone": {
-			"name": "Whetstone",
+			"name": "Точильный камень",
 			"description": "<p>Whetstone is a sharpening stone. It is used to sharpen the edges of steel tools and implements through grinding and honing.</p>",
-			"source": "PHB pg. 150"
+			"source": "Whetstone"
 		},
 		"Whip": {
-			"name": "Whip",
-			"description": "<p>A tensile lash made of leather, cord, or chain which can lash out at nearby enemies, dealing lacerations and harrying them from a distance.</p>",
-			"source": "PHB pg. 149"
+			"name": "Кнут",
+			"description": "<p>Растягивающаяся плеть из кожи, шнура или цепи, которой можно поражать противников, нанося им рваные раны и изводя их на расстоянии.</p>",
+			"source": "Whip"
 		},
 		"Whip +1": {
-			"name": "Whip +1",
+			"name": "Кнут +1",
 			"description": "<p><em>Whether through demonic blessing, celestial bequeathment, crazed experiment, or skillful craft, this weapon has been enhanced to bring more bloodshed by the bearer.</em></p>\n<p>You have a bonus to attack and damage rolls made with this magic weapon.</p>",
-			"source": "DMG pg. 213"
+			"source": "Whip +1"
 		},
 		"Whip +2": {
-			"name": "Whip +2",
+			"name": "Кнут +2",
 			"description": "<p><em>Whether through demonic blessing, celestial bequeathment, crazed experiment, or skillful craft, this weapon has been enhanced to bring more bloodshed by the bearer.</em></p>\n<p>You have a bonus to attack and damage rolls made with this magic weapon.</p>",
-			"source": "DMG pg. 213"
+			"source": "Whip +2"
 		},
 		"Whip +3": {
-			"name": "Whip +3",
+			"name": "Кнут +3",
 			"description": "<p><em>Whether through demonic blessing, celestial bequeathment, crazed experiment, or skillful craft, this weapon has been enhanced to bring more bloodshed by the bearer.</em></p>\n<p>You have a bonus to attack and damage rolls made with this magic weapon.</p>",
-			"source": "DMG pg. 213"
+			"source": "Whip +3"
 		},
 		"Wind Fan": {
-			"name": "Wind Fan",
+			"name": "Веер ветра",
 			"description": "<p><em>Wondrous item</em></p>\n<p>While holding this fan, you can use an action to cast the @Compendium[dnd5e.spells.FSMy6VAjDnXY9vWz]{Gust of Wind} spell (save DC 13) from it. Once used, the fan shouldn't be used again until the next dawn. Each time it is used again before then, it has a cumulative 20 percent chance of not working and tearing into useless, nonmagical tatters.</p>",
-			"source": "DMG pg. 213"
+			"source": "Wind Fan"
 		},
 		"Winged Boots": {
-			"name": "Winged Boots",
+			"name": "Крылатые сапоги",
 			"description": "<p><em>Wondrous item, (requires attunement)</em></p>\n<p>While you wear these boots, you have a flying speed equal to your walking speed. You can use the boots to fly for up to 4 hours, all at once or in several shorter flights, each one using a minimum of 1 minute from the duration. If you are flying when the duration expires, you descend at a rate of 30 feet per round until you land.</p>\n<p>The boots regain 2 hours of flying capability for every 12 hours they aren't in use.</p>",
-			"source": "DMG pg. 214"
+			"source": "Winged Boots"
 		},
 		"Wings of Flying": {
-			"name": "Wings of Flying",
+			"name": "Крылья полёта",
 			"description": "<p><em>Wondrous item, (requires attunement)</em></p>\n<p>While wearing this cloak, you can use an action to speak its command word. This turns the cloak into a pair of bat wings or bird wings on your back for 1 hour or until you repeat the command word as an action. The wings give you a flying speed of 60 feet. When they disappear, you can't use them again for 1d12 hours.</p>",
-			"source": "DMG pg. 214"
+			"source": "Wings of Flying"
 		},
 		"Woodcarver's Tools": {
 			"name": "Инструменты резчика",
 			"description": "<p>Эти специальные инструменты включают предметы, необходимые для занятия резьбой. Умение в обращении с этими инструментами позволяет вам добавить ваш бонус умения к любой проверке характеристики, связанной с их использованием.</p>",
-			"source": "PHB pg. 154"
+			"source": "Woodcarver's Tools"
 		},
 		"Wooden Staff": {
-			"name": "Wooden Staff",
+			"name": "Деревянный посох",
 			"description": "<p>A gnarled or naturely smooth staff of wood drawn out from a living tree, those who heed nature's call can use this to harness the incredible power of nature.</p>\n<p><strong>Spellcasting Focus</strong>. A druidic focus is a special item designed to channel the power of spells from the druid's spell list. A druid can use such an item as a spellcasting focus, using it in place of any material component which does not list a cost.</p>",
-			"source": "PHB pg. 151"
+			"source": "Wooden Staff"
 		},
 		"Yew Wand": {
 			"name": "Тисовый жезл",
