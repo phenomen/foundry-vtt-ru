@@ -1098,7 +1098,8 @@
                 "ZeroRoundsExpireTurnStart": "Осталось 0 раундов, начинается инициатива {initiative}"
             },
             "Sustained": "Поддерживается?",
-            "UnlimitedDuration": "Неограниченная длительность"
+            "UnlimitedDuration": "Неограниченная длительность",
+            "UntilEncounterEnds": "Until encounter ends"
         },
         "EmptySlot": "Пустая ячейка",
         "EquipmentEquippedLabel": "Экипировано",
@@ -1106,6 +1107,7 @@
         "EquippedSameBulkValue": "Без изменений",
         "ErrorMessage": {
             "ActorMustHaveToken": "Добавление состояний актёрам без токенов на данный момент не поддерживается.",
+            "CantImportTooHighVersion": "Unable to import {sourceName}: its schema version ({sourceSchemaVersion}) is higher than this world's ({worldSchemaVersion}).",
             "CantMoveItemSource": "У вас нет прав для перемещения предметов из этого персонажа.",
             "CantMoveItemDestination": "У вас нет прав для перемещения предметов этому персонажу.",
             "MinimumProfLevelSetByFeatures": "Выбранный уровень мастерства ниже уровня, указанного особенностями.",
@@ -1286,8 +1288,7 @@
                 "Expiry": {
                     "ExpiresOn": "Expires On",
                     "StartOfTurn": "Начало хода",
-                    "EndOfTurn": "Конец хода",
-                    "EndOfCombat": "Конец боя"
+                    "EndOfTurn": "Конец хода"
                 },
                 "ShowTokenIcon": "Показывать иконку токена?"
             },
@@ -1806,6 +1807,7 @@
             "DexterityModifierCap": "Макс. модификатор ловкости",
             "FlatModifier": "Чистый модификатор",
             "FixedProficiency": "Фиксированное умение",
+            "GrantItem": "Grant Item",
             "Immunity": "Невосприимчивость",
             "LinkedProficiency": "Linked Proficiency",
             "LoseHitPoints": "Потеря ПЗ",
@@ -2482,7 +2484,8 @@
                 "Hours": "Часы",
                 "Days": "Дни",
                 "Weeks": "Недели",
-                "Unlimited": "Неограниченно"
+                "Unlimited": "Неограниченно",
+                "UntilEncounterEnds": "Until encounter ends"
             }
         },
         "TogglesLabel": "Переключатели",
