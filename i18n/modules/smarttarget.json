@@ -5,12 +5,25 @@
     "smarttarget.settings.alwaysTarget.name": "Всегда целиться",
     "smarttarget.settings.alwaysTarget.hint": "Клик на не принадлежащие токены автоматически выбирает их целью",
 
-    "smarttarget.settings.portraitPips.name": "Показывать портреты вместо цвета в качестве индикаторов целей игроков и настроить индикатор цели",
+    "smarttarget.settings.targetingMode.name": "Режим выбора цели",
+    "smarttarget.settings.targetingMode.hint": "По умолчанию: режим Foundry по умолчанию. Alt+ЛКМ: выбор цели удержанием Alt и щелчком, добавьте Shift для выбора нескольких целей. Всегда выбирать целью: щелчок на токены не в вашем владении автоматически выберет их целью. \n Вы можете переназначить клавишу Alt в настройках управления.",
+
+    "smarttarget.settings.targetingMode.opt0": "По умолчанию",
+    "smarttarget.settings.targetingMode.opt1": "Alt+ЛКМ",
+    "smarttarget.settings.targetingMode.opt2": "Всегда выбирать целью",
+
+    "smarttarget.settings.portraitPips.name": "Отображение портретов вместо цветных точек",
     "smarttarget.settings.portraitPips.hint": "Использовать аватар для GM. По умолчанию для игроков используется изображение токена, если аватар для назначенного актера не найден (требуется перезагрузка)",
-    
+
     "smarttarget.settings.useToken.name": "Использовать токены вместо аватаров",
     "smarttarget.settings.useToken.hint": "Использовать токены вместо аватаров для индикаторов цели игроков",
-    
+
+    "smarttarget.settings.useTokenGm.name": "Изображение GM",
+    "smarttarget.settings.useTokenGm.hint": "Изображение индикатора при выборе цели GM",
+    "smarttarget.settings.useTokenGm.opt0": "Аватар игрока",
+    "smarttarget.settings.useTokenGm.opt1": "Портрет токена",
+    "smarttarget.settings.useTokenGm.opt2": "Изображение токена",
+
     "smarttarget.settings.insidePips.name": "Ограничить индикаторы цели внутри токена",
     "smarttarget.settings.insidePips.hint": "Переместить целевые индикаторы так, чтобы они оставались внутри границ токена.",
 
@@ -48,5 +61,26 @@
     "smarttarget.settings.target-indicator-choices-5" : "Лучшая цель",
 
     "smarttarget.settings.use-player-color.name" : "Использовать цвет игрока для индикатора цели",
-    "smarttarget.settings.use-player-color.hint" : "Использовать цвет игрока для индикатора цели"
+    "smarttarget.settings.use-player-color.hint" : "Использовать цвет игрока для индикатора цели",
+
+    "smarttarget.settings.customHotKeyTarget.name": "Target with a custom Hot Key",
+    "smarttarget.settings.customHotKeyTarget.hint": "Target tokens by pressing a custom Hot Key, add Shift to target multiple",
+
+    "smarttarget.settings.customHotKeyTargetMulti.name": "Multi Target with a custom Hot Key",
+    "smarttarget.settings.customHotKeyTargetMulti.hint": "Multi Target tokens by pressing a custom Hot Key, add Shift to target multiple",
+
+    "smarttarget.settings.releaseBehaviour.name": "Release Behaviour",
+	"smarttarget.settings.releaseBehaviour.hint": "This setting determines how refresh target behaves when clicking multiple tokens. 'Sticky' mode will target each clicked token without un-targeting anything, and you must click a token again to un-target it. 'Standard' mode more closely matches the standard foundry behaviour where all previous tokens are automatically un-targeted when clicking a new token, and you must hold Shift while clicking in order to target multiple tokens.",
+	"smarttarget.settings.releaseBehaviour.choice0.Standard": "Standard",
+	"smarttarget.settings.releaseBehaviour.choice0.Sticky": "Sticky",
+
+    "smarttarget.warningNoSelectMoreThanOneToken": "No token is selected to set up the targets",
+    "smarttarget.controls.cleartargets.name": "Clear All Targets",
+    
+    "smarttarget.settings.forceToUseSelectedTokenForPortraitPips.name": "Force to use selected tokens image for build the indicator portraits",
+    "smarttarget.settings.forceToUseSelectedTokenForPortraitPips.hint": "Force to use selected tokens image for build the indicator portraits",
+
+    "smarttarget.settings.useOwnedTokenIfNoTokenIsSelected.name": "Use the owned tokens if no tokens is selected (Ignored if you are GM)",
+    "smarttarget.settings.useOwnedTokenIfNoTokenIsSelected.hint": "This settings make sense only in combination with 'Force to use selected tokens image for build the indicator portraits' (Ignored if you are GM)",
+    "smarttarget.keybindings.altkey": "Targeting Modifier"
 }
