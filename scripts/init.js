@@ -8,7 +8,7 @@ import { InitCORIOLIS } from "./system-coriolis.js";
 
 Hooks.once("init", async () => {
   // Load system-specific CSS styles
-  loadCSS("modules/ru-ru/styles/" + game.system.id + ".css");
+  loadCSS("modules/ru-ru/styles/" + game.system.id.toLowerCase() + ".css");
 
   // D&D5
   if (game.system.id === "dnd5e") {
