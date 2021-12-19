@@ -49,7 +49,6 @@
         "UnknownCombatant": "Неизвестный участник"
     },
     "COMPENDIUM": {
-        "ImportAllHint": "Всё содержимое из этой библиотеки будет импортировано в ваш мир.  <p class=\"notes\"><strong>ВНИМАНИЕ:</strong> мы крайне не рекомендуем делать это для больших библиотек, т.к. это негативно повлияет на скорость загрузки мира и производительность у вас и игроков.",
         "Search": "Поиск в библиотеке"
     },
     "CONTROLS": {
@@ -121,35 +120,35 @@
         "Actions": {
             "Balance": {
                 "Notes": {
-                    "criticalSuccess": "<b>Критический успех</b> Вы перемещаетесь на расстояние вплоть до значения вашей скорости.",
-                    "success": "<b>Успех</b> Вы перемещаетесь на расстояние вплоть до значения вашей скорости, но поверхность считается для вас пересечённой местностью (каждые 5 футов стоят 10 футов движения).",
-                    "failure": "<b>Провал</b> Вы должны остаться на месте, чтобы удержать равновесие (тратя на это действие) и не упасть. Если вы падаете, ваш ход завершается.",
-                    "criticalFailure": "<b>Критический провал</b> Вы падаете и ваш ход завершается."
+                    "criticalSuccess": "<strong>Critical Success</strong> You move up to your Speed.",
+                    "success": "<strong>Success</strong> You move up to your Speed, treating it as difficult terrain (every 5 feet costs 10 feet of movement).",
+                    "failure": "<strong>Failure</strong> You must remain stationary to keep your balance (wasting the action) or you fall. If you fall, your turn ends.",
+                    "criticalFailure": "<strong>Critical Failure</strong> You fall and your turn ends."
                 },
                 "Title": "Удержание равновесия"
             },
             "BonMot": {
                 "Notes": {
-                    "criticalSuccess": "<b>Critical Success</b> The target is distracted and takes a –3 status penalty to Perception and Will saves for 1 minute. The target can end the effect early with a retort to your Bon Mot. This can either be a single action that has the concentrate trait or an appropriate skill action to frame their retort. The GM determines which skill actions qualify, though they must take at least 1 action. Typically, the retort needs to use a linguistic Charisma-based skill action. @Compendium[pf2e.feat-effects.CtrZFI3RV0yPNzTv]{Effect: Bon Mot (Critical Success)}",
-                    "success": "<b>Success</b> The target is distracted and takes a –2 status penalty to Perception and Will saves for 1 minute. The target can end the effect early with a retort to your Bon Mot. This can either be a single action that has the concentrate trait or an appropriate skill action to frame their retort. The GM determines which skill actions qualify, though they must take at least 1 action. Typically, the retort needs to use a linguistic Charisma-based skill action. @Compendium[pf2e.feat-effects.GoSls6SKCFmSoDxT]{Effect: Bon Mot}",
-                    "criticalFailure": "<b>Critical Failure</b> Your quip is atrocious. You take the same penalty an enemy would take had you succeeded. This ends after 1 minute or if you issue another Bon Mot and succeed. @Compendium[pf2e.feat-effects.GoSls6SKCFmSoDxT]{Effect: Bon Mot}"
+                    "criticalSuccess": "<strong>Critical Success</strong> The target is distracted and takes a –3 status penalty to Perception and Will saves for 1 minute. The target can end the effect early with a retort to your Bon Mot. This can either be a single action that has the concentrate trait or an appropriate skill action to frame their retort. The GM determines which skill actions qualify, though they must take at least 1 action. Typically, the retort needs to use a linguistic Charisma-based skill action. @Compendium[pf2e.feat-effects.CtrZFI3RV0yPNzTv]{Effect: Bon Mot (Critical Success)}",
+                    "success": "<strong>Success</strong> The target is distracted and takes a –2 status penalty to Perception and Will saves for 1 minute. The target can end the effect early with a retort to your Bon Mot. This can either be a single action that has the concentrate trait or an appropriate skill action to frame their retort. The GM determines which skill actions qualify, though they must take at least 1 action. Typically, the retort needs to use a linguistic Charisma-based skill action. @Compendium[pf2e.feat-effects.GoSls6SKCFmSoDxT]{Effect: Bon Mot}",
+                    "criticalFailure": "<strong>Critical Failure</strong> Your quip is atrocious. You take the same penalty an enemy would take had you succeeded. This ends after 1 minute or if you issue another Bon Mot and succeed. @Compendium[pf2e.feat-effects.GoSls6SKCFmSoDxT]{Effect: Bon Mot}"
                 },
                 "Title": "Острота"
             },
             "Climb": {
                 "Notes": {
-                    "criticalSuccess": "<b>Критический успех</b> Вы влезаете, спускаетесь или переползаете по наклонной поверхности на 5 футов плюс дополнительные 5 футов за каждые 20 футов вашей наземной скорости (всего на 10 футов для большинства персонажей игроков).",
-                    "success": "<b>Успех</b> Вы влезаете, спускаетесь или переползаете по наклонной поверхности на 5 футов за каждые 20 футов вашей наземной скорости (всего на 5 футов для большинства персонажей игроков и минимум на 5 футов, если ваша наземная скорость ниже 20 футов).",
-                    "criticalFailure": "<b>Критический провал</b> Вы падаете. Если вы начали Лазание на устойчивой поверхности, вы падаете и  @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Распластываетесь}."
+                    "criticalSuccess": "<strong>Critical Success</strong> You move up, across, or safely down the incline for 5 feet plus 5 feet per 20 feet of your land Speed (a total of 10 feet for most PCs).",
+                    "success": "<strong>Success</strong> You move up, across, or safely down the incline for 5 feet per 20 feet of your land Speed (a total of 5 feet for most PCs, minimum 5 feet if your Speed is below 20 feet).",
+                    "criticalFailure": "<strong>Critical Failure</strong> You fall. If you began the climb on stable ground, you fall and land @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}."
                 },
                 "Title": "Лазание"
             },
             "Coerce": {
                 "Notes": {
-                    "criticalSuccess": "<b>Критический успех</b> Цель выдаёт вам желаемую информацию или выполняет приказы, не подвергающие её опасности. Такое отношение сохраняется в течение определяемого ведущим времени, но не более 1 дня, после чего цель становится недружелюбной (если изначально не была недружелюбной или враждебной). Тем не менее цель слишком боится вас, чтобы попытаться навредить - по крайней мере в ближайшее время.",
-                    "success": "<b>Успех</b> Аналогичен критическому успеху, но как только цель становится недружелюбной, она может решить немедленно вам навредить, например сообщив о вас властям или оказав содействие врагам.",
-                    "failure": "<b>Провал</b> Цель не подчиняется вам и становится недружелюбной, если ещё не была недружелюбной или враждебной.",
-                    "criticalFailure": "<b>Критический провал</b> Цель отказывается подчиниться, становится враждебной, если ещё таковой не была, и в течение как минимум 1 недели не может быть целью ваших Угроз."
+                    "criticalSuccess": "<strong>Critical Success</strong> The target gives you the information you seek or agrees to follow your directives so long as they aren't likely to harm the target in any way. The target continues to comply for an amount of time determined by the GM but not exceeding 1 day, at which point the target becomes unfriendly (if they weren't already unfriendly or hostile). However, the target is too scared of you to retaliate—at least in the short term.",
+                    "success": "<strong>Success</strong> As critical success, but once the target becomes unfriendly, they might decide to act against you—for example, by reporting you to the authorities or assisting your enemies.",
+                    "failure": "<strong>Failure</strong> The target doesn't do what you say, and if they were not already unfriendly or hostile, they become unfriendly.",
+                    "criticalFailure": "<strong>Critical Failure</strong> The target refuses to comply, becomes hostile if they weren't already, and can't be Coerced by you for at least 1 week."
                 },
                 "Title": "Угроза"
             },
@@ -168,10 +167,10 @@
                     "ItemReferenceMismatch": "Возможно создание только физических предметов из компендиума или директории предметов мира."
                 },
                 "Notes": {
-                    "criticalSuccess": "<b>Критический успех</b> попытка успешна. Каждый дополнительный день, потраченный на Создание предмета, снижает стоимость необходимых для завершения предмета материалов на сумму, указанную для вашего уровня +1 и вашего уровня умения в Ремесле.",
-                    "success": "<b>Успех</b> попытка успешна. Каждый дополнительный день, потраченный на создание предмета, снижает стоимость необходимых для завершения предмета материалов на сумму, указанную для вашего уровня и вашего уровня умения в Ремесле.",
-                    "failure": "<b>Провал</b> вы не смогли создать предмет, но сохраняете в материалы на полную сумму. Если вы хотите попытаться ещё раз, придется начать заново.",
-                    "criticalFailure": "<b>Критический провал</b> вы не смогли создать предмет и безнадежно испортили 10% материалов, но остальное можете сохранить. Если вы хотите попытаться ещё раз, придется начать заново."
+                    "criticalSuccess": "<strong>Critical Success</strong> Your attempt is successful. Each additional day spent Crafting reduces the materials needed to complete the item by an amount based on your level + 1 and your proficiency rank in Crafting.",
+                    "success": "<strong>Success</strong> Your attempt is successful. Each additional day spent Crafting reduces the materials needed to complete the item by an amount based on your level and your proficiency rank.",
+                    "failure": "<strong>Failure</strong> You fail to complete the item. You can salvage the raw materials you supplied for their full value. If you want to try again, you must start over.",
+                    "criticalFailure": "<strong>Critical Failure</strong> You fail to complete the item. You ruin 10% of the raw materials you supplied, but you can salvage the rest. If you want to try again, you must start over."
                 },
                 "Title": "Ремесло",
                 "Warning": {
@@ -197,23 +196,23 @@
                 "DistractingWords": "Отвлекающий манёвр - Слова",
                 "Gesture": "Отвлекающий манёвр - Жест",
                 "Notes": {
-                    "success": "<b>Успех</b> Вы становитесь @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Спрятанным} от всех существ, чья СЛ Внимания оказалась меньше или равна результату вашей проверки. Спрятавшись, вы можете @Compendium[pf2e.actionspf2e.VMozDqMMuK5kpoX4]{Красться}  и остаётесь спрятанным до конца своего хода или пока не совершите действие, отличное от Шага или попытки  @Compendium[pf2e.actionspf2e.XMcnh4cSI32tljXa]{Спрятаться} или @Compendium[pf2e.actionspf2e.VMozDqMMuK5kpoX4]{Красться}. Если вы нанесёте существу Удар, оно будет @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Застигнуто врасплох} для этой атаки, а вы после этого станете @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Видимым}. Если вы предпримете любое другое действие, то станете @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Видимым} непосредственно перед его совершением, если ведущий не решит иначе.",
-                    "failure": "<b>Провал</b> Вам не удаётся отвлечь внимание существ, чья СЛ  Внимания больше результата вашей проверки, и они понимают, что вы пытались их обмануть."
+                    "success": "<strong>Success</strong> You become @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} to each creature whose Perception DC is less than or equal to your result. (The hidden condition allows you to @Compendium[pf2e.actionspf2e.VMozDqMMuK5kpoX4]{Sneak} away.) This lasts until the end of your turn or until you do anything except Step or use the @Compendium[pf2e.actionspf2e.XMcnh4cSI32tljXa]{Hide} or the @Compendium[pf2e.actionspf2e.VMozDqMMuK5kpoX4]{Sneak} action of the Stealth skill. If you Strike a creature, the creature remains @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} against that attack, and you then become @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Observed}. If you do anything else, you become @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Observed} just before you act unless the GM determines otherwise.",
+                    "failure": "<strong>Failure</strong> You don't divert the attention of any creatures whose Perception DC exceeds your result, and those creatures are aware you were trying to trick them."
                 },
                 "Trick": "Отвлекающий манёвр - Уловка"
             },
             "Demoralize": {
                 "Notes": {
-                    "criticalSuccess": "<b>Критический успех</b> Цель получает @Compendium[pf2e.conditionitems.Frightened]{Испуг 2}.",
-                    "success": "<b>Успех</b> Цель получает @Compendium[pf2e.conditionitems.Frightened]{Испуг 1}."
+                    "criticalSuccess": "<strong>Critical Success</strong> The target becomes @Compendium[pf2e.conditionitems.Frightened]{Frightened 2}.",
+                    "success": "<strong>Success</strong> The target becomes @Compendium[pf2e.conditionitems.Frightened]{Frightened 1}."
                 },
                 "Title": "Деморализация"
             },
             "Disarm": {
                 "Notes": {
-                    "criticalSuccess": "<b>Критический успех</b> Вы успешно выбиваете из рук цели предмет, который падает на землю в её пространстве.",
-                    "success": "<b>Успех</b> Вы ослабляете хватку цели на предмете. Все попытки разоружения этой цели для данного предмета до начала её хода получают ситуативный бонус +2, а сама цель получает ситуативный штраф –2 к атакам этим предметом и иным проверкам, требующим крепко его держать.",
-                    "criticalFailure": "<b>Критический провал</b> Вы теряете равновесие и @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Застигнуты врасплох} до начала своего следующего раунда."
+                    "criticalSuccess": "<strong>Critical Success</strong> You knock the item out of the opponent's grasp. It falls to the ground in the opponent's space.",
+                    "success": "<strong>Success</strong> You weaken your opponent's grasp on the item. Until the start of that creature's turn, attempts to Disarm the opponent of that item gain a +2 circumstance bonus, and the target takes a –2 circumstance penalty to attacks with the item or other checks requiring a firm grasp on the item.",
+                    "criticalFailure": "<strong>Critical Failure</strong> You lose your balance and become @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} until the start of your next turn."
                 },
                 "Title": "Разоружение"
             },
@@ -239,95 +238,95 @@
             },
             "Feint": {
                 "Notes": {
-                    "criticalSuccess": "<b>Критический успех</b> Вам удаётся полностью одурачить противника, он считается @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Застигнутым врасплох} для всех ваших атак в ближнем бою по нему до конца вашего следующего хода.",
-                    "success": "<b>Успех</b> Вам удаётся на секунду сбить противника с толку. Противник считается @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Застигнутым врасплох} для вашей следующей атаки в ближнем бою по нему, совершённой до конца этого вашего хода.",
-                    "criticalFailure": "<b>Критический провал</b> Вы обхитрили себя самого. Вы считаетесь @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Застигнутым врасплох} для всех атак в ближнем бою, совершённых по вам целью до конца вашего следующего хода."
+                    "criticalSuccess": "<strong>Critical Success</strong> You throw your enemy's defenses against you entirely off. The target is @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} against melee attacks that you attempt against it until the end of your next turn.",
+                    "success": "<strong>Success</strong> Your foe is fooled, but only momentarily. The target is @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} against the next melee attack that you attempt against it before the end of your current turn.",
+                    "criticalFailure": "<strong>Critical Failure</strong> Your feint backfires. You are @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} against melee attacks the target attempts against you until the end of your next turn."
                 },
                 "Title": "Финт"
             },
             "ForceOpen": {
                 "Notes": {
-                    "criticalSuccess": "<b>Критический успех</b> Вы открываете дверь, окно, контейнер или ворота, не повредив их при этом.",
-                    "success": "<b>Успех</b> Вы ломаете дверь, окно,  контейнер или ворота и они становятся @Compendium[pf2e.conditionitems.6dNUvdb1dhToNDj3]{Сломанными}. Если они отличались особенной прочностью, ведущий может постановить, что они получили урон, но не сломались полностью.",
-                    "criticalFailure": "<b>Критический провал</b> Из-за ваших попыток дверь, окно, контейнер или ворота заклинило. Дальнейшие попытки Ломания для них получают ситуативный штраф -2."
+                    "criticalSuccess": "<strong>Critical Success</strong> You open the door, window, container, or gate and can avoid damaging it in the process.",
+                    "success": "<strong>Success</strong> You break the door, window, container, or gate open, and the door, window, container, or gate gains the @Compendium[pf2e.conditionitems.6dNUvdb1dhToNDj3]{Broken} condition. If it's especially sturdy, the GM might have it take damage but not be broken.",
+                    "criticalFailure": "<strong>Critical Failure</strong> Your attempt jams the door, window, container, or gate shut, imposing a –2 circumstance penalty on future attempts to Force it Open."
                 },
                 "Title": "Ломание"
             },
             "GatherInformation": {
                 "Notes": {
-                    "success": "<b>Success</b> You collect information about the individual or topic. The GM determines the specifics.",
-                    "criticalFailure": "<b>Critical Failure</b> You collect incorrect information about the individual or topic."
+                    "success": "<strong>Success</strong> You collect information about the individual or topic. The GM determines the specifics.",
+                    "criticalFailure": "<strong>Critical Failure</strong> You collect incorrect information about the individual or topic."
                 },
                 "Title": "Сбор информации"
             },
             "Grapple": {
                 "Notes": {
-                    "criticalSuccess": "<b>Критический успех</b> Ваша цель @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Обездвижена} до конца вашего следующего хода, если вы не переместитесь или ей не удастся @Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Освобождение}.",
-                    "success": "<b>Успех</b> Ваша цель @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{в Захвате} до конца вашего следующего хода, если вы не переместитесь ил ей не удастся @Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Освобождение}.",
-                    "failure": "<b>Провал</b> Вам не удаётся схватить цель. Если вы уже ранее взяли цель @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{в Захват} или @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Обездвижили} цель при помощи Захвата, эти состояния прекращаются для данного существа или объекта.",
-                    "criticalFailure": "<b>Критический провал</b> Если ранее вы уже взяли цель @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{в Захват} или @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Обездвижили} цель, она освобождается. Ваша цель может либо взять в захват вас, как после успешного @Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{Захвата}, либо заставить вас упасть и @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Распластаться}."
+                    "criticalSuccess": "<strong>Critical Success</strong> Your opponent is @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} until the end of your next turn unless you move or your opponent @Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escapes}.",
+                    "success": "<strong>Success</strong> Your opponent is @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} until the end of your next turn unless you move or your opponent @Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escapes}.",
+                    "failure": "<strong>Failure</strong> You fail to grab your opponent. If you already had the opponent @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} or @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} using a Grapple, those conditions on that creature end.",
+                    "criticalFailure": "<strong>Critical Failure</strong> If you already had the opponent @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} or @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained}, it breaks free. Your target can either grab you, as if it succeeded at using the @Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple} action against you, or force you to fall and land @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}."
                 },
                 "Title": "Захват"
             },
             "Hide": {
                 "Notes": {
-                    "success": "<b>Success</b> If the creature could see you, you're now @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} from it instead of observed. If you were @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} from or @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected} by the creature, you retain that condition."
+                    "success": "<strong>Success</strong> If the creature could see you, you're now @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} from it instead of observed. If you were @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} from or @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected} by the creature, you retain that condition."
                 },
                 "Title": "Спрятаться"
             },
             "HighJump": {
                 "Notes": {
-                    "criticalSuccess": "<b>Критический успех</b> Либо максимальная высота прыжка увеличивается до 8 футов, либо максимальная высота прыжка увеличивается до 5 футов, а длина - до 10 футов.",
-                    "success": "<b>Успех</b> Максимальная высота прыжка увеличивается до 5 футов.",
-                    "failure": "<b>Провал</b> Вы совершаете обычный @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Прыжок}.",
-                    "criticalFailure": "<b>Критический провал</b> Вы не  @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Прыгаете} и вместо этого @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Распластываетесь} в своём пространстве."
+                    "criticalSuccess": "<strong>Critical Success</strong> Increase the maximum vertical distance to 8 feet, or increase the maximum vertical distance to 5 feet and maximum horizontal distance to 10 feet.",
+                    "success": "<strong>Success</strong> Increase the maximum vertical distance to 5 feet.",
+                    "failure": "<strong>Failure</strong> You @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Leap} normally.",
+                    "criticalFailure": "<strong>Critical Failure</strong> You don't @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Leap} at all, and instead you fall @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} in your space."
                 },
                 "Title": "Прыжок в высоту"
             },
             "Impersonate": {
                 "Notes": {
-                    "success": "<b>Success</b> You trick the creature into thinking you're the person you're disguised as. You might have to attempt a new check if your behavior changes.",
-                    "failure": "<b>Failure</b> The creature can tell you're not who you claim to be.",
-                    "criticalFailure": "<b>Critical Failure</b> The creature can tell you're not who you claim to be, and it recognizes you if it would know you without a disguise."
+                    "success": "<strong>Success</strong> You trick the creature into thinking you're the person you're disguised as. You might have to attempt a new check if your behavior changes.",
+                    "failure": "<strong>Failure</strong> The creature can tell you're not who you claim to be.",
+                    "criticalFailure": "<strong>Critical Failure</strong> The creature can tell you're not who you claim to be, and it recognizes you if it would know you without a disguise."
                 },
                 "Title": "Маскировка"
             },
             "Lie": {
                 "Notes": {
-                    "success": "<b>Success</b> The target believes your lie.",
-                    "failure": "<b>Failure</b> The target doesn't believe your lie and gains a +4 circumstance bonus against your attempts to Lie for the duration of your conversation. The target is also more likely to be suspicious of you in the future."
+                    "success": "<strong>Success</strong> The target believes your lie.",
+                    "failure": "<strong>Failure</strong> The target doesn't believe your lie and gains a +4 circumstance bonus against your attempts to Lie for the duration of your conversation. The target is also more likely to be suspicious of you in the future."
                 },
                 "Title": "Ложь"
             },
             "LongJump": {
                 "Notes": {
-                    "success": "<b>Успех</b> Увеличьте максимальную длину  @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Прыжка} до желаемого значения.",
-                    "failure": "<b>Провал</b> Вы совершаете обычный @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Прыжок}.",
-                    "criticalFailure": "<b>Критический провал</b> Вы совершаете обычный @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Прыжок}, но затем падаете и  @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Распластываетесь}."
+                    "success": "<strong>Success</strong> Increase the maximum horizontal distance you @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Leap} to the desired distance.",
+                    "failure": "<strong>Failure</strong> You @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Leap} normally.",
+                    "criticalFailure": "<strong>Critical Failure</strong> You @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Leap} normally, but then fall and land @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}."
                 },
                 "Title": "Прыжок в длину"
             },
             "MakeAnImpression": {
                 "Notes": {
-                    "criticalSuccess": "<b>Critical Success</b> The target's attitude toward you improves by two steps.",
-                    "success": "<b>Success</b> The target's attitude toward you improves by one step.",
-                    "criticalFailure": "<b>Critical Failure</b> The target's attitude toward you decreases by one step."
+                    "criticalSuccess": "<strong>Critical Success</strong> The target's attitude toward you improves by two steps.",
+                    "success": "<strong>Success</strong> The target's attitude toward you improves by one step.",
+                    "criticalFailure": "<strong>Critical Failure</strong> The target's attitude toward you decreases by one step."
                 },
                 "Title": "Улучшить впечатление"
             },
             "ManeuverInFlight": {
                 "Notes": {
-                    "success": "<b>Успех</b> Вы успешно выполняете манёвр.",
-                    "failure": "<b>Провал</b> Вам не удаётся выполнить манёвр. Ведущий решает. что происходит: вы можете как остаться на месте, так и усугубить своё положение. Результат провала должен основываться на манёвре, который вы пытались выполнить (например, если вы пытались лететь против сильного ветра, вас могло отнести в сторону).",
-                    "criticalFailure": "<b>Критический провал</b> Аналогичен провалу, но с более серьёзными последствиями."
+                    "success": "<strong>Success</strong> You succeed at the maneuver.",
+                    "failure": "<strong>Failure</strong> Your maneuver fails. The GM chooses if you simply can't move or if some other detrimental effect happens. The outcome should be appropriate for the maneuver you attempted (for instance, being blown off course if you were trying to fly against a strong wind).",
+                    "criticalFailure": "<strong>Critical Failure</strong> As failure, but the consequence is more dire."
                 },
                 "Title": "Маневрирование в полёте"
             },
             "PickALock": {
                 "Notes": {
-                    "criticalSuccess": "<b>Критический успех</b> Вы открываете замок или получаете два успеха для его взлома, не оставляя следов вмешательства.",
-                    "success": "<b>Успех</b> Вы открываете замок или получаете один успех для его взлома.",
-                    "criticalFailure": "<b>Критический провал</b> Вы ломаете инструменты вора. Нужно использовать ремесло для @Compendium[pf2e.actionspf2e.bT3skovyLUtP22ME]{Починки} предмета или купить запасные отмычки на замену (заплатив 3 см, or 3 зм, если используете улучшенные инструменты вора)."
+                    "criticalSuccess": "<strong>Critical Success</strong> You unlock the lock, or you achieve two successes toward opening a complex lock. You leave no trace of your tampering.",
+                    "success": "<strong>Success</strong> You open the lock, or you achieve one success toward opening a complex lock.",
+                    "criticalFailure": "<strong>Critical Failure</strong> You break your tools. Fixing them requires using Crafting to @Compendium[pf2e.actionspf2e.bT3skovyLUtP22ME]{Repair} them or else swapping in replacement picks (costing 3 sp, or 3 gp for infiltrator thieves' tools)."
                 },
                 "Title": "Взлом замка"
             },
@@ -341,26 +340,26 @@
             },
             "Request": {
                 "Notes": {
-                    "criticalSuccess": "<b>Critical Success</b> The target agrees to your request without qualifications.",
-                    "success": "<b>Success</b> The target agrees to your request, but they might demand added provisions or alterations to the request.",
-                    "failure": "<b>Failure</b> The target refuses the request, though they might propose an alternative that is less extreme.",
-                    "criticalFailure": "<b>Critical Failure</b> Not only does the target refuse the request, but their attitude toward you decreases by one step due to the temerity of the request."
+                    "criticalSuccess": "<strong>Critical Success</strong> The target agrees to your request without qualifications.",
+                    "success": "<strong>Success</strong> The target agrees to your request, but they might demand added provisions or alterations to the request.",
+                    "failure": "<strong>Failure</strong> The target refuses the request, though they might propose an alternative that is less extreme.",
+                    "criticalFailure": "<strong>Critical Failure</strong> Not only does the target refuse the request, but their attitude toward you decreases by one step due to the temerity of the request."
                 },
                 "Title": "Просьба"
             },
             "Seek": {
                 "Notes": {
-                    "criticalSuccess": "<b>Критический успех</b> При поиске существ любое @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Необнаруженное} или @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Спрятанное} существо, против которого получен критический успех, становится для вас @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Видимым}. Если вы искали объект, то узнаёте его местоположение.",
-                    "success": "<b>Успех</b> При поиске существ любое  @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Необнаруженное} существо, против которого получен успех становится для вас @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Спрятанным}, а любое @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Спрятанное} существо, против которого получен успех, становится для вас @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Видимым}. Если вы искали объект, то узнаёте его местоположение или получаете намёк на его местоположение, на усмотрение ведущего."
+                    "criticalSuccess": "<strong>Critical Success</strong> If you were searching for creatures, any @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected} or @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} creature you critically succeeded against becomes @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Observed} by you. If you were searching for an object, you learn its location.",
+                    "success": "<strong>Success</strong> If you were searching for creatures, any @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected} creature you succeeded against becomes @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} from you instead of @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected}, and any @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} creature you succeeded against becomes @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Observed} by you. If you were searching for an object, you learn its location or get a clue to its whereabouts, as determined by the GM."
                 },
                 "Title": "Поиск"
             },
             "SenseMotive": {
                 "Notes": {
-                    "criticalSuccess": "<b>Критический успех</b> Вы определяете истинные намерения существа и понимаете, что за ментальная магия на него влияет.",
-                    "success": "<b>Успех</b> Вы можете понять, ведёт ли себя существо естественно или нет, но его точные намерения или влияющую на него магию определить неспособны.",
-                    "failure": "<b>Провал</b> Вы поддаётесь на обман существа и верите в то, в чём оно пытается вас убедить. Если существо не пытается вас обмануть, вы решаете, что оно ведёт себя совершенно естественно.",
-                    "criticalFailure": "<b>Критический провал</b> Вы неверно трактуете намерения существа."
+                    "criticalSuccess": "<strong>Critical Success</strong> You determine the creature's true intentions and get a solid idea of any mental magic affecting it.",
+                    "success": "<strong>Success</strong> You can tell whether the creature is behaving normally, but you don't know its exact intentions or what magic might be affecting it.",
+                    "failure": "<strong>Failure</strong> You detect what a deceptive creature wants you to believe. If they're not being deceptive, you believe they're behaving normally.",
+                    "criticalFailure": "<strong>Critical Failure</strong> You get a false sense of the creature's intentions."
                 },
                 "Title": "Проницательность"
             },
@@ -369,25 +368,25 @@
             },
             "Shove": {
                 "Notes": {
-                    "criticalSuccess": "<b>Критический успех</b> Вы отталкиваете цель на 10 или менее футов от себя. Вы можете совершить перемещение вслед за ней в том же направлении и на то же расстояние.",
-                    "success": "<b>Успех</b> Вы отталкиваете цель на 5 футов от себя. Вы можете совершить перемещение вслед за ней в том же направлении и на то же расстояние.",
-                    "criticalFailure": "<b>Критический провал</b> Вы теряете равновесие, падаете и @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Распластываетесь}."
+                    "criticalSuccess": "<strong>Critical Success</strong> You push your opponent up to 10 feet away from you. You can Stride after it, but you must move the same distance and in the same direction.",
+                    "success": "<strong>Success</strong> You push your opponent back 5 feet. You can Stride after it, but you must move the same distance and in the same direction.",
+                    "criticalFailure": "<strong>Critical Failure</strong> You lose your balance, fall, and land @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}."
                 },
                 "Title": "Толчок"
             },
             "Sneak": {
                 "Notes": {
-                    "success": "<b>Success</b> You're undetected by the creature during your movement and remain undetected by the creature at the end of it.",
-                    "failure": "<b>Failure</b> A telltale sound or other sign gives your position away, though you still remain unseen. You're hidden from the creature throughout your movement and remain so",
-                    "criticalFailure": "<b>Critical Failure</b> You're spotted! You're observed by the creature throughout your movement and remain so. If you're invisible and were hidden from the creature, instead of being observed you're hidden throughout your movement and remain so."
+                    "success": "<strong>Success</strong> You're undetected by the creature during your movement and remain undetected by the creature at the end of it.",
+                    "failure": "<strong>Failure</strong> A telltale sound or other sign gives your position away, though you still remain unseen. You're hidden from the creature throughout your movement and remain so",
+                    "criticalFailure": "<strong>Critical Failure</strong> You're spotted! You're observed by the creature throughout your movement and remain so. If you're invisible and were hidden from the creature, instead of being observed you're hidden throughout your movement and remain so."
                 },
                 "Title": "Спрятаться"
             },
             "Squeeze": {
                 "Notes": {
-                    "criticalSuccess": "<b>Критический успех</b> Вы протискиваетесь через узкое место со скоростью 10 футов в минуту.",
-                    "success": "<b>Успех</b> Вы протискиваетесь через узкое место со скоростью 5 футов в минуту.",
-                    "criticalFailure": "<b>Критический провал</b> Вы застреваете. Застряв, вы можете потратить 1 минуту на совершение повторной проверки Акробатики с той же СЛ. Если результатом повторной проверки будет не критический провал, вы перестаёте быть застрявшим."
+                    "criticalSuccess": "<strong>Critical Success</strong> You squeeze through the tight space in 1 minute per 10 feet of squeezing.",
+                    "success": "<strong>Success</strong> You squeeze through in 1 minute per 5 feet.",
+                    "criticalFailure": "<strong>Critical Failure</strong> You become stuck in the tight space. While you're stuck, you can spend 1 minute attempting another Acrobatics check at the same DC. Any result on that check other than a critical failure causes you to become unstuck."
                 },
                 "Title": "Протискивание"
             },
@@ -401,33 +400,33 @@
             },
             "Swim": {
                 "Notes": {
-                    "criticalSuccess": "<b>Критический успех</b> Вы проплываете 10 футов плюс дополнительные 5 футов за каждые 20 футов вашей наземной скорости (всего 15 футов для большинства персонажей игроков).",
-                    "success": "<b>Успех</b> Вы проплываете 5 футов плюс дополнительные 5 футов за каждые 20 футов вашей наземной скорости (всего 10 футов для большинства персонажей игроков).",
-                    "criticalFailure": "<b>Критический провал</b> Вы не перемещаетесь. Если вы задерживаете дыхание, ваш запас воздуха уменьшается на 1 раунд."
+                    "criticalSuccess": "<strong>Critical Success</strong> You move through the water 10 feet, plus 5 feet per 20 feet of your land Speed (a total of 15 feet for most PCs).",
+                    "success": "<strong>Success</strong> You move through the water 5 feet, plus 5 feet per 20 feet of your land Speed (a total of 10 feet for most PCs).",
+                    "criticalFailure": "<strong>Critical Failure</strong> You make no progress, and if you're holding your breath, you lose 1 round of air."
                 },
                 "Title": "Плавание"
             },
             "Trip": {
                 "Notes": {
-                    "criticalSuccess": "<b>Критический успех</b> Цель падает,  @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Распластывается} и получает [[/r 1d6[дробящий] # Дробящий урон]]{1d6} дробящего урона.",
-                    "success": "<b>Успех</b> Цель падает и @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Распластывается}.",
-                    "criticalFailure": "<b>Критический провал</b> Вы теряете равновесие, падаете и @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Распластываетесь}."
+                    "criticalSuccess": "<strong>Critical Success</strong> The target falls and lands @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} and takes [[/r 1d6[bludgeoning] # Bludgeoning damage]]{1d6} bludgeoning damage.",
+                    "success": "<strong>Success</strong> The target falls and lands @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.",
+                    "criticalFailure": "<strong>Critical Failure</strong> You lose your balance and fall and land @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}."
                 },
                 "Title": "Сбивание с ног"
             },
             "TumbleThrough": {
                 "Notes": {
-                    "success": "<b>Успех</b> Вы перемещаетесь через занятое противником пространство, но оно считается для вас пересечённой местностью (каждые 5 футов стоят 10 футов перемещения). Если вашей скорости недостаточно, чтобы полностью преодолеть пространство противника, результат аналогичен провалу.",
-                    "failure": "<b>Провал</b> Ваше перемещение завершается, и вы провоцируете ответные действия, как если бы покинули клетку, с которой начали перекат."
+                    "success": "<strong>Success</strong> You move through the enemy's space, treating the squares in its space as difficult terrain (every 5 feet costs 10 feet of movement). If you don't have enough Speed to move all the way through its space, you get the same effect as a failure.",
+                    "failure": "<strong>Failure</strong> Your movement ends, and you trigger reactions as if you had moved out of the square you started in."
                 },
                 "Title": "Перекат"
             },
             "WhirlingThrow": {
                 "Notes": {
-                    "criticalSuccess": "<b>Critical Success</b> You throw the creature the desired distance and it lands @Compendium[pf2e.conditionitems.Prone]{Prone}.",
-                    "success": "<b>Success</b> You throw the creature the desired distance.",
-                    "failure": "<b>Failure</b> You don't throw the creature.",
-                    "criticalFailure": "<b>Critical Failure</b> You don't throw the creature, and it's no longer @Compendium[pf2e.conditionitems.Grabbed]{Grabbed} or @Compendium[pf2e.conditionitems.Restrained]{Restrained} by you."
+                    "criticalSuccess": "<strong>Critical Success</strong> You throw the creature the desired distance and it lands @Compendium[pf2e.conditionitems.Prone]{Prone}.",
+                    "success": "<strong>Success</strong> You throw the creature the desired distance.",
+                    "failure": "<strong>Failure</strong> You don't throw the creature.",
+                    "criticalFailure": "<strong>Critical Failure</strong> You don't throw the creature, and it's no longer @Compendium[pf2e.conditionitems.Grabbed]{Grabbed} or @Compendium[pf2e.conditionitems.Restrained]{Restrained} by you."
                 },
                 "Title": "Whirling Throw"
             }
@@ -1176,7 +1175,7 @@
         "FormulaListEmpty": "Пусто (перетащите сюда предмет/формулу)",
         "FormulaPlaceholder": "Формула",
         "FormulaSheet": {
-            "DescriptionUnknown": "Эта формула полностью забита рисунками человечков, потёками неизвестных жидкостей, бессмысленными рифмами выведенными детским почерком и прочими, на первый взгляд бессмысленными пометками. Похоже, она была сделана гоблинами и совершенно вам неясна. <hr><b>Примечание:</b> Эта формула описывает несуществующий или сломанный предмет.",
+            "DescriptionUnknown": "This formula is completely filled with drawings of small stick men, stains from some unknown liquid, non-sensical rhymes written in children's letters, and other seemingly random markings. It must have been made by goblins, and makes no sense to you.<hr><strong>Note</strong> This formula is referencing a missing or invalid item.",
             "NameEmpty": "Пустая формула",
             "NamePrefix": "Формула {name}",
             "NameUnknown": "Неизвестная формула"
@@ -3144,6 +3143,7 @@
         "TraitRange90": "Метательное 90 фт",
         "TraitRange100": "Метательное 100 фт",
         "TraitRange120": "Метательное 120 фт",
+        "TraitRange150": "Range 150 ft",
         "TraitRange180": "Метательное 180 фт",
         "TraitRange240": "Метательное 240 фт",
         "TraitRangeIncrement10": "Шаг дистанции 10 фт",
@@ -3437,6 +3437,8 @@
             "shiftModifyDamageHint": "Положительный модификатор для урона, отрицательный для лечения.",
             "RuleElements": {
                 "ChoiceSet": {
+                    "HomebrewItem": "Homebrew Item",
+                    "DragHomebrewItem": "Drag a homebrew item here if using one instead of the above options",
                     "Prompt": "Make a selection.",
                     "SaveLabel": "Save"
                 },
@@ -3445,7 +3447,7 @@
                 },
                 "Prompt": {
                     "NoSelectionMade": "No selection was made: {item} is inactive.",
-                    "NoValidOptions": "{actor} has no valid targets for {item}."
+                    "NoValidOptions": "{actor} has no valid options for {item}."
                 }
             }
         },
@@ -3733,7 +3735,7 @@
             "anarchic": {
                 "Name": "Бунтарская руна",
                 "Note": {
-                    "criticalSuccess": "<b>Бунтарская руна</b> Когда вы получаете критический успех при ударе этим оружием по принципиальному существу, бросьте [[/r 1d6]]. При результате 1 или 2 вы наносите удвоенный минимальный урон оружия, если выпало 3 или 4, вы удваиваете урон как обычно, если выпало 5 или 6 вы наносите удвоенный максимальный урон."
+                    "criticalSuccess": "<strong>Anarchic Rune</strong> When you critically succeed at a Strike with this weapon against a lawful creature, roll [[/r 1d6]]. On a 1 or 2, you deal double minimum damage; on a 3 or 4, double your damage normally; on a 5 or 6, you deal double maximum damage."
                 }
             },
             "ancestralEchoing": {
@@ -3742,13 +3744,13 @@
             "anchoring": {
                 "Name": "Anchoring Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Anchoring Rune</b> If you critically hit a target with an anchoring weapon, the weapon casts <em>@Compendium[pf2e.spells-srd.Dimensional Anchor]{dimensional anchor}</em> on the target (<span data-pf2-check=\"will\" data-pf2-label=\"Anchoring Rune\" data-pf2-dc=\"27\">Will</span>, counteract modifier [[/r 1d20+17 # Anchoring Rune Counteract Check]]{+17})."
+                    "criticalSuccess": "<strong>Anchoring Rune</strong> If you critically hit a target with an anchoring weapon, the weapon casts <em>@Compendium[pf2e.spells-srd.Dimensional Anchor]{dimensional anchor}</em> on the target (<span data-pf2-check=\"will\" data-pf2-label=\"Anchoring Rune\" data-pf2-dc=\"27\">Will</span>, counteract modifier [[/r 1d20+17 # Anchoring Rune Counteract Check]]{+17})."
                 }
             },
             "axiomatic": {
                 "Name": "Axiomatic Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Axiomatic Rune</b> When you critically succeed at an attack roll with this weapon against a chaotic creature, instead of rolling, count each weapon damage die as average damage rounded up (3 for d4, 4 for d6, 5 for d8, 6 for d10, 7 for d12)."
+                    "criticalSuccess": "<strong>Axiomatic Rune</strong> When you critically succeed at an attack roll with this weapon against a chaotic creature, instead of rolling, count each weapon damage die as average damage rounded up (3 for d4, 4 for d6, 5 for d8, 6 for d10, 7 for d12)."
                 }
             },
             "bane": {
@@ -3760,13 +3762,13 @@
             "bloodthirsty": {
                 "Name": "Bloodthirsty Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Bloodthirsty Rune</b> When you critically hit a target that's taking persistent bleed damage, your target becomes @Compendium[pf2e.conditionitems.Drained]{drained 1}."
+                    "criticalSuccess": "<strong>Bloodthirsty Rune</strong> When you critically hit a target that's taking persistent bleed damage, your target becomes @Compendium[pf2e.conditionitems.Drained]{drained 1}."
                 }
             },
             "brilliant": {
                 "Name": "Brilliant Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Brilliant Rune</b> On a critical hit, the target must succeed at a <span data-pf2-check=\"fortitude\" data-pf2-label=\"Brilliant Rune\" data-pf2-dc=\"29\">Fortitude</span> save or be @Compendium[pf2e.conditionitems.Blinded]{blinded} for 1 round."
+                    "criticalSuccess": "<strong>Brilliant Rune</strong> On a critical hit, the target must succeed at a <span data-pf2-check=\"fortitude\" data-pf2-label=\"Brilliant Rune\" data-pf2-dc=\"29\">Fortitude</span> save or be @Compendium[pf2e.conditionitems.Blinded]{blinded} for 1 round."
                 }
             },
             "conducting": {
@@ -3775,13 +3777,13 @@
             "corrosive": {
                 "Name": "Corrosive Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Corrosive Rune</b> On a critical hit, the target's armor (if any) takes [[/r {3d6}[acid] # Corrosive Rune]]{3d6 acid} damage (before applying Hardness); if the target has a shield raised, the shield takes this damage instead."
+                    "criticalSuccess": "<strong>Corrosive Rune</strong> On a critical hit, the target's armor (if any) takes [[/r {3d6}[acid] # Corrosive Rune]]{3d6 acid} damage (before applying Hardness); if the target has a shield raised, the shield takes this damage instead."
                 }
             },
             "crushing": {
                 "Name": "Crushing Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Crushing Rune</b> When you critically hit a target with this weapon, your target becomes @Compendium[pf2e.conditionitems.Clumsy]{clumsy 1} and @Compendium[pf2e.conditionitems.Enfeebled]{enfeebled 1} until the end of your next turn."
+                    "criticalSuccess": "<strong>Crushing Rune</strong> When you critically hit a target with this weapon, your target becomes @Compendium[pf2e.conditionitems.Clumsy]{clumsy 1} and @Compendium[pf2e.conditionitems.Enfeebled]{enfeebled 1} until the end of your next turn."
                 }
             },
             "cunning": {
@@ -3793,7 +3795,7 @@
             "disrupting": {
                 "Name": "Disrupting Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Disrupting Rune</b> On a critical hit, the undead is also @Compendium[pf2e.conditionitems.Enfeebled]{enfeebled 1} until the end of your next turn."
+                    "criticalSuccess": "<strong>Disrupting Rune</strong> On a critical hit, the undead is also @Compendium[pf2e.conditionitems.Enfeebled]{enfeebled 1} until the end of your next turn."
                 }
             },
             "energizing": {
@@ -3808,30 +3810,30 @@
             "fearsome": {
                 "Name": "Fearsome Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Fearsome Rune</b> When you critically hit with this weapon, the target becomes @Compendium[pf2e.conditionitems.Frightened]{frightened 1}."
+                    "criticalSuccess": "<strong>Fearsome Rune</strong> When you critically hit with this weapon, the target becomes @Compendium[pf2e.conditionitems.Frightened]{frightened 1}."
                 }
             },
             "flaming": {
                 "Name": "Flaming Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Flaming Rune</b> When you critically succeed at a Strike with this weapon, you deal an additional [[/r {1d10}[persistent,fire]]] # Flaming Rune]]{1d10 persistent fire} damage."
+                    "criticalSuccess": "<strong>Flaming Rune</strong> When you critically succeed at a Strike with this weapon, you deal an additional [[/r {1d10}[persistent,fire]]] # Flaming Rune]]{1d10 persistent fire} damage."
                 }
             },
             "frost": {
                 "Name": "Frost Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Frost Rune</b> On a critical hit, the target is also @Compendium[pf2e.conditionitems.Slowed]{slowed 1} until the end of your next turn unless it succeeds at a <span data-pf2-check=\"fortitude\" data-pf2-label=\"Frost Rune\" data-pf2-dc=\"24\">Fortitude</span> save."
+                    "criticalSuccess": "<strong>Frost Rune</strong> On a critical hit, the target is also @Compendium[pf2e.conditionitems.Slowed]{slowed 1} until the end of your next turn unless it succeeds at a <span data-pf2-check=\"fortitude\" data-pf2-label=\"Frost Rune\" data-pf2-dc=\"24\">Fortitude</span> save."
                 }
             },
             "ghostTouch": {
                 "Name": "Ghost Touch Rune",
-                "Note": "<b>Ghost Touch Rune</b> The weapon can harm creatures without physical form. A ghost touch weapon is particularly effective against incorporeal creatures, which almost always have a specific vulnerability to ghost touch weapons. Incorporeal creatures can touch, hold, and wield ghost touch weapons (unlike most physical objects)."
+                "Note": "<strong>Ghost Touch Rune</strong> The weapon can harm creatures without physical form. A ghost touch weapon is particularly effective against incorporeal creatures, which almost always have a specific vulnerability to ghost touch weapons. Incorporeal creatures can touch, hold, and wield ghost touch weapons (unlike most physical objects)."
             },
             "greaterAnchoring": {
                 "Name": "Greater Anchoring Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Greater Anchoring Rune</b> When you critically hit a target with a weapon with the anchoring rune, the weapon casts 8th-level <em>@Compendium[pf2e.spells-srd.Dimensional Anchor]{dimensional anchor}</em> on the target (<span data-pf2-check=\"will\" data-pf2-label=\"Greater Anchoring Rune\" data-pf2-dc=\"38\">Will</span>, counteract modifier [[/r 1d20+28 # Anchoring Rune Counteract Check]]{+28}), except that if the target critically succeeds at its Will save, instead of having no effect, the <em>dimensional anchor</em> lasts for 1 round.",
-                    "success": "<b>Greater Anchoring Rune</b> When you hit a target with the weapon but don't critically hit, the target is affected by 4th-level <em>@Compendium[pf2e.spells-srd.Dimensional Anchor]{dimensional anchor}</em> for 1 round without a save (counteract modifier [[/r 1d20+28 # Anchoring Rune Counteract Check]]{+28})."
+                    "criticalSuccess": "<strong>Greater Anchoring Rune</strong> When you critically hit a target with a weapon with the anchoring rune, the weapon casts 8th-level <em>@Compendium[pf2e.spells-srd.Dimensional Anchor]{dimensional anchor}</em> on the target (<span data-pf2-check=\"will\" data-pf2-label=\"Greater Anchoring Rune\" data-pf2-dc=\"38\">Will</span>, counteract modifier [[/r 1d20+28 # Anchoring Rune Counteract Check]]{+28}), except that if the target critically succeeds at its Will save, instead of having no effect, the <em>dimensional anchor</em> lasts for 1 round.",
+                    "success": "<strong>Greater Anchoring Rune</strong> When you hit a target with the weapon but don't critically hit, the target is affected by 4th-level <em>@Compendium[pf2e.spells-srd.Dimensional Anchor]{dimensional anchor}</em> for 1 round without a save (counteract modifier [[/r 1d20+28 # Anchoring Rune Counteract Check]]{+28})."
                 }
             },
             "greaterBloodbane": {
@@ -3840,27 +3842,27 @@
             "greaterBrilliant": {
                 "Name": "Greater Brilliant Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Greater Brilliant Rune</b> Damage dealt by this weapon ignores the target's fire, good, or positive resistance. On a critical hit, the target must succeed at a <span data-pf2-check=\"fortitude\" data-pf2-label=\"Greater Brilliant Rune\" data-pf2-dc=\"41\">Fortitude</span> save or be @Compendium[pf2e.conditionitems.Blinded]{blinded} for 1 round.",
-                    "success": "<b>Greater Brilliant Rune</b> Damage dealt by this weapon ignores the target's fire, good, or positive resistance."
+                    "criticalSuccess": "<strong>Greater Brilliant Rune</strong> Damage dealt by this weapon ignores the target's fire, good, or positive resistance. On a critical hit, the target must succeed at a <span data-pf2-check=\"fortitude\" data-pf2-label=\"Greater Brilliant Rune\" data-pf2-dc=\"41\">Fortitude</span> save or be @Compendium[pf2e.conditionitems.Blinded]{blinded} for 1 round.",
+                    "success": "<strong>Greater Brilliant Rune</strong> Damage dealt by this weapon ignores the target's fire, good, or positive resistance."
                 }
             },
             "greaterCorrosive": {
                 "Name": "Greater Corrosive Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Greater Corrosive Rune</b> The acid damage dealt by this weapon ignores the target's acid resistance. On a critical hit, the target's armor (if any) takes [[/r {6d6}[acid] # Corrosive Rune]]{6d6 acid} damage (before applying Hardness); if the target has a shield raised, the shield takes this damage instead.",
-                    "success": "<b>Greater Corrosive Rune</b> The acid damage dealt by this weapon ignores the target's acid resistance."
+                    "criticalSuccess": "<strong>Greater Corrosive Rune</strong> The acid damage dealt by this weapon ignores the target's acid resistance. On a critical hit, the target's armor (if any) takes [[/r {6d6}[acid] # Corrosive Rune]]{6d6 acid} damage (before applying Hardness); if the target has a shield raised, the shield takes this damage instead.",
+                    "success": "<strong>Greater Corrosive Rune</strong> The acid damage dealt by this weapon ignores the target's acid resistance."
                 }
             },
             "greaterCrushing": {
                 "Name": "Greater Crushing Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Greater Crushing Rune</b> Your critical hits leave the target @Compendium[pf2e.conditionitems.Clumsy]{clumsy 2} and @Compendium[pf2e.conditionitems.Enfeebled]{enfeebled 2} until the end of your next turn."
+                    "criticalSuccess": "<strong>Greater Crushing Rune</strong> Your critical hits leave the target @Compendium[pf2e.conditionitems.Clumsy]{clumsy 2} and @Compendium[pf2e.conditionitems.Enfeebled]{enfeebled 2} until the end of your next turn."
                 }
             },
             "greaterDisrupting": {
                 "Name": "Greater Disrupting Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Greater Disrupting Rune</b> On a critical hit the undead creature must attempt a <span data-pf2-check=\"fortitude\" data-pf2-traits=\"incapacitation\" data-pf2-label=\"Greater Disrupting Rune\" data-pf2-dc=\"34\">Fortitude</span> save with the following effects. This is an incapacitation effect.<br /><br /><b>Critical Success</b> It's @Compendium[pf2e.conditionitems.Enfeebled]{enfeebled 1} until the end of your next turn.<br /><b>Success</b> It's @Compendium[pf2e.conditionitems.Enfeebled]{enfeebled 2} until the end of your next turn.<br /><b>Failure</b> It's @Compendium[pf2e.conditionitems.Enfeebled]{enfeebled 3} until the end of your next turn.<br /><b>Critical Failure</b> It's destroyed."
+                    "criticalSuccess": "<strong>Greater Disrupting Rune</strong> On a critical hit the undead creature must attempt a <span data-pf2-check=\"fortitude\" data-pf2-traits=\"incapacitation\" data-pf2-label=\"Greater Disrupting Rune\" data-pf2-dc=\"34\">Fortitude</span> save with the following effects. This is an incapacitation effect.<br /><br /><strong>Critical Success</strong> It's @Compendium[pf2e.conditionitems.Enfeebled]{enfeebled 1} until the end of your next turn.<br /><strong>Success</strong> It's @Compendium[pf2e.conditionitems.Enfeebled]{enfeebled 2} until the end of your next turn.<br /><strong>Failure</strong> It's @Compendium[pf2e.conditionitems.Enfeebled]{enfeebled 3} until the end of your next turn.<br /><strong>Critical Failure</strong> It's destroyed."
                 }
             },
             "greaterExtending": {
@@ -3872,21 +3874,21 @@
             "greaterFearsome": {
                 "Name": "Greater Fearsome Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Greater Fearsome Rune</b> When you critically hit with this weapon, the target becomes @Compendium[pf2e.conditionitems.Frightened]{frightened 2}."
+                    "criticalSuccess": "<strong>Greater Fearsome Rune</strong> When you critically hit with this weapon, the target becomes @Compendium[pf2e.conditionitems.Frightened]{frightened 2}."
                 }
             },
             "greaterFlaming": {
                 "Name": "Greater Flaming Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Greater Flaming Rune</b> Fire damage dealt by this weapon (including the persistent fire damage) ignores the target's fire resistance. When you critically succeed at a Strike with this weapon, you deal an additional [[/r {2d10}[persistent,fire]]] # Greater Flaming Rune]]{2d10 persistent fire} damage.",
-                    "success": "<b>Greater Flaming Rune</b> Fire damage dealt by this weapon ignores the target's fire resistance."
+                    "criticalSuccess": "<strong>Greater Flaming Rune</strong> Fire damage dealt by this weapon (including the persistent fire damage) ignores the target's fire resistance. When you critically succeed at a Strike with this weapon, you deal an additional [[/r {2d10}[persistent,fire]]] # Greater Flaming Rune]]{2d10 persistent fire} damage.",
+                    "success": "<strong>Greater Flaming Rune</strong> Fire damage dealt by this weapon ignores the target's fire resistance."
                 }
             },
             "greaterFrost": {
                 "Name": "Greater Frost Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Greater Frost Rune</b> Cold damage dealt by this weapon ignores the target's cold resistance. On a critical hit, the target is also @Compendium[pf2e.conditionitems.Slowed]{slowed 1} until the end of your next turn unless it succeeds at a <span data-pf2-check=\"fortitude\" data-pf2-label=\"Frost Rune\" data-pf2-dc=\"34\">Fortitude</span> save.",
-                    "success": "<b>Greater Frost Rune</b> Cold damage dealt by this weapon ignores the target's cold resistance."
+                    "criticalSuccess": "<strong>Greater Frost Rune</strong> Cold damage dealt by this weapon ignores the target's cold resistance. On a critical hit, the target is also @Compendium[pf2e.conditionitems.Slowed]{slowed 1} until the end of your next turn unless it succeeds at a <span data-pf2-check=\"fortitude\" data-pf2-label=\"Frost Rune\" data-pf2-dc=\"34\">Fortitude</span> save.",
+                    "success": "<strong>Greater Frost Rune</strong> Cold damage dealt by this weapon ignores the target's cold resistance."
                 }
             },
             "greaterHauling": {
@@ -3895,40 +3897,40 @@
             "greaterImpactful": {
                 "Name": "Greater Impactful Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Greater Impactful Rune</b> On a critical hit, you can choose to force the target to succeed at a <span data-pf2-check=\"fortitude\" data-pf2-label=\"Greater Impactful Rune\" data-pf2-dc=\"37\">Fortitude</span> save or be pushed 10 feet away from you."
+                    "criticalSuccess": "<strong>Greater Impactful Rune</strong> On a critical hit, you can choose to force the target to succeed at a <span data-pf2-check=\"fortitude\" data-pf2-label=\"Greater Impactful Rune\" data-pf2-dc=\"37\">Fortitude</span> save or be pushed 10 feet away from you."
                 }
             },
             "greaterShock": {
                 "Name": "Greater Shock Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Greater Shock Rune</b> Electricity damage dealt by this weapon ignores the targets electricity resistance (and the other creatures' on a critical hit). On a critical hit, electricity arcs out to deal an equal amount of electricity damage to up to two other creatures of your choice within 10 feet of the target.",
-                    "success": "<b>Greater Shock Rune</b> Electricity damage dealt by this weapon ignores the target's electricity resistance."
+                    "criticalSuccess": "<strong>Greater Shock Rune</strong> Electricity damage dealt by this weapon ignores the targets electricity resistance (and the other creatures' on a critical hit). On a critical hit, electricity arcs out to deal an equal amount of electricity damage to up to two other creatures of your choice within 10 feet of the target.",
+                    "success": "<strong>Greater Shock Rune</strong> Electricity damage dealt by this weapon ignores the target's electricity resistance."
                 }
             },
             "greaterThundering": {
                 "Name": "Greater Thundering Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Greater Thundering Rune</b> Sonic damage dealt by this weapon ignores the target's sonic resistance. On a critical hit, the target has to succeed at a <span data-pf2-check=\"fortitude\" data-pf2-label=\"Greater Thundering Rune\" data-pf2-dc=\"34\">Fortitude</span> save or be @Compendium[pf2e.conditionitems.Deafened]{deafened} permanently.",
-                    "success": "<b>Greater Thundering Rune</b> Sonic damage dealt by this weapon ignores the target's sonic resistance."
+                    "criticalSuccess": "<strong>Greater Thundering Rune</strong> Sonic damage dealt by this weapon ignores the target's sonic resistance. On a critical hit, the target has to succeed at a <span data-pf2-check=\"fortitude\" data-pf2-label=\"Greater Thundering Rune\" data-pf2-dc=\"34\">Fortitude</span> save or be @Compendium[pf2e.conditionitems.Deafened]{deafened} permanently.",
+                    "success": "<strong>Greater Thundering Rune</strong> Sonic damage dealt by this weapon ignores the target's sonic resistance."
                 }
             },
             "grievous": {
                 "Name": "Grievous Rune",
                 "Note": {
-                    "Axe": "<b>Grievous Rune</b> You can damage a third creature, with the same restrictions.",
-                    "Bow": "<b>Grievous Rune</b> The Athletics check to pull the missile free is DC 20.",
-                    "Brawling": "<b>Grievous Rune</b> The target takes a –4 circumstance penalty to its save.",
-                    "Club": "<b>Grievous Rune</b> You can knock the target up to 15 feet away.",
-                    "Dart": "<b>Grievous Rune</b> The base persistent bleed damage increases to 2d6.",
-                    "Flail": "<b>Grievous Rune</b> You move the target 5 feet. You can't move it away from you, but you can move it in another direction of your choice.",
-                    "Hammer": "<b>Grievous Rune</b> You can also knock the target 5 feet away from you.",
-                    "Knife": "<b>Grievous Rune</b> The target takes a –5-foot status penalty to its Speed while it has the persistent bleed damage.",
-                    "Pick": "<b>Grievous Rune</b> The extra damage from the critical specialization effect increases to 4 per weapon damage die.",
-                    "Polearm": "<b>Grievous Rune</b> You can move the target up to 10 feet.",
-                    "Shield": "<b>Grievous Rune</b> You can knock the target up to 10 feet away.",
-                    "Sling": "<b>Grievous Rune</b> The target also takes a –10-foot status penalty to its Speed for 1 round if it fails the save.",
-                    "Spear": "<b>Grievous Rune</b> The clumsy condition lasts for 2 rounds.",
-                    "Sword": "<b>Grievous Rune</b> The target is flat-footed until the end of your next turn."
+                    "Axe": "<strong>Grievous Rune</strong> You can damage a third creature, with the same restrictions.",
+                    "Bow": "<strong>Grievous Rune</strong> The Athletics check to pull the missile free is DC 20.",
+                    "Brawling": "<strong>Grievous Rune</strong> The target takes a –4 circumstance penalty to its save.",
+                    "Club": "<strong>Grievous Rune</strong> You can knock the target up to 15 feet away.",
+                    "Dart": "<strong>Grievous Rune</strong> The base persistent bleed damage increases to 2d6.",
+                    "Flail": "<strong>Grievous Rune</strong> You move the target 5 feet. You can't move it away from you, but you can move it in another direction of your choice.",
+                    "Hammer": "<strong>Grievous Rune</strong> You can also knock the target 5 feet away from you.",
+                    "Knife": "<strong>Grievous Rune</strong> The target takes a –5-foot status penalty to its Speed while it has the persistent bleed damage.",
+                    "Pick": "<strong>Grievous Rune</strong> The extra damage from the critical specialization effect increases to 4 per weapon damage die.",
+                    "Polearm": "<strong>Grievous Rune</strong> You can move the target up to 10 feet.",
+                    "Shield": "<strong>Grievous Rune</strong> You can knock the target up to 10 feet away.",
+                    "Sling": "<strong>Grievous Rune</strong> The target also takes a –10-foot status penalty to its Speed for 1 round if it fails the save.",
+                    "Spear": "<strong>Grievous Rune</strong> The clumsy condition lasts for 2 rounds.",
+                    "Sword": "<strong>Grievous Rune</strong> The target is flat-footed until the end of your next turn."
                 }
             },
             "hauling": {
@@ -3940,18 +3942,18 @@
             "hopeful": {
                 "Name": "Hopeful Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Hopeful Rune</b> On a critical hit with this weapon, you inspire your comrades, pushing them to fight harder and stand for your shared convictions. Allies within 30 feet that share at least one alignment component with you gain a +1 status bonus to attack rolls until the end of your next turn."
+                    "criticalSuccess": "<strong>Hopeful Rune</strong> On a critical hit with this weapon, you inspire your comrades, pushing them to fight harder and stand for your shared convictions. Allies within 30 feet that share at least one alignment component with you gain a +1 status bonus to attack rolls until the end of your next turn."
                 }
             },
             "impactful": {
                 "Name": "Impactful Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Impactful Rune</b> On a critical hit, you can choose to force the target to succeed at a <span data-pf2-check=\"fortitude\" data-pf2-label=\"Impactful Rune\" data-pf2-dc=\"27\">Fortitude</span> save or be pushed 5 feet away from you."
+                    "criticalSuccess": "<strong>Impactful Rune</strong> On a critical hit, you can choose to force the target to succeed at a <span data-pf2-check=\"fortitude\" data-pf2-label=\"Impactful Rune\" data-pf2-dc=\"27\">Fortitude</span> save or be pushed 5 feet away from you."
                 }
             },
             "keen": {
                 "Name": "Keen Rune",
-                "Note": "<b>Keen Rune</b> Attacks with this weapon are a critical hit on a 19 on the die as long as that result is a success. This property has no effect on a 19 if the result would be a failure."
+                "Note": "<strong>Keen Rune</strong> Attacks with this weapon are a critical hit on a 19 on the die as long as that result is a success. This property has no effect on a 19 if the result would be a failure."
             },
             "kinWarding": {
                 "Name": "Kin-Warding Rune"
@@ -3964,7 +3966,7 @@
             },
             "returning": {
                 "Name": "Returning Rune",
-                "Note": "<b>Returning Rune</b> When you make a thrown Strike with this weapon, it flies back to your hand after the Strike is complete. If your hands are full when the weapon returns, it falls to the ground in your space."
+                "Note": "<strong>Returning Rune</strong> When you make a thrown Strike with this weapon, it flies back to your hand after the Strike is complete. If your hands are full when the weapon returns, it falls to the ground in your space."
             },
             "serrating": {
                 "Name": "Serrating Rune"
@@ -3975,7 +3977,7 @@
             "shock": {
                 "Name": "Shock Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Shock Rune</b> On a critical hit, electricity arcs out to deal an equal amount of electricity damage to up to two other creatures of your choice within 10 feet of the target."
+                    "criticalSuccess": "<strong>Shock Rune</strong> On a critical hit, electricity arcs out to deal an equal amount of electricity damage to up to two other creatures of your choice within 10 feet of the target."
                 }
             },
             "speed": {
@@ -3987,7 +3989,7 @@
             "thundering": {
                 "Name": "Thundering Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Thundering Rune</b> On a critical hit, the target has to succeed at a <span data-pf2-check=\"fortitude\" data-pf2-label=\"Thundering Rune\" data-pf2-dc=\"24\">Fortitude</span> save or be @Compendium[pf2e.conditionitems.Deafened]{deafened} for 1 minute (or 1 hour on a critical failure)."
+                    "criticalSuccess": "<strong>Thundering Rune</strong> On a critical hit, the target has to succeed at a <span data-pf2-check=\"fortitude\" data-pf2-label=\"Thundering Rune\" data-pf2-dc=\"24\">Fortitude</span> save or be @Compendium[pf2e.conditionitems.Deafened]{deafened} for 1 minute (or 1 hour on a critical failure)."
                 }
             },
             "unholy": {
@@ -3999,8 +4001,8 @@
             "wounding": {
                 "Name": "Wounding Rune",
                 "Note": {
-                    "criticalSuccess": "<b>Wounding Rune</b> When you critically hit a creature with a wounding weapon, you deal an extra [[/r {1d12}[persistent,bleed] # Wounding Rune]]{1d12 persistent bleed} damage.",
-                    "success": "<b>Wounding Rune</b> When you hit a creature with a wounding weapon, you deal an extra [[/r {1d6}[persistent,bleed] # Wounding Rune]]{1d6 persistent bleed} damage."
+                    "criticalSuccess": "<strong>Wounding Rune</strong> When you critically hit a creature with a wounding weapon, you deal an extra [[/r {1d12}[persistent,bleed] # Wounding Rune]]{1d12 persistent bleed} damage.",
+                    "success": "<strong>Wounding Rune</strong> When you hit a creature with a wounding weapon, you deal an extra [[/r {1d6}[persistent,bleed] # Wounding Rune]]{1d6 persistent bleed} damage."
                 }
             }
         },
