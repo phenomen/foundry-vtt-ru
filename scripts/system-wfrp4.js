@@ -284,16 +284,6 @@ export function InitWFRP4() {
     }
     //END
 
-    let origLoadTable = game.wfrp4e.utility.loadTablesPath;
-    game.wfrp4e.utility.loadTablesPath = async function (path) {
-      if (path === "modules/wfrp4e-core/tables") {
-        await origLoadTable("modules/wfrp4e-core/tables");
-        origLoadTable("modules/ru-ru/tables/wfrp4e");
-      } else {
-        origLoadTable(path);
-      }
-    };
-
     Hooks.once("ready", () => {
       patchWfrpConfig();
 
