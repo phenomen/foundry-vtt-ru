@@ -1207,6 +1207,7 @@
             "One": "1/{max} пункт героизма",
             "Many": "{value}/{max} пунктов героизма"
         },
+        "HideSelectedLabel": "Hide Selected",
         "HitPointsHeader": "Пункты здоровья",
         "HitPointsShortLabel": "ПЗ",
         "HitPointsDetailsLabel": "Подробности ПЗ",
@@ -1217,8 +1218,12 @@
         "InitativeIsNow": "Инициатива {name} теперь {value}!",
         "InitiativeLabel": "Инициатива",
         "InitiativeWithSkill": "Инициатива: {skillName}",
-        "InlineButtons": {
-            "TemplateLabel": "{unit}-футовый {type}"
+        "InlineTemplateErrors": {
+            "TypeMissing": "Error in @Template: type parameter is mandatory",
+            "DistanceMissing": "Error in @Template: distance parameter is mandatory",
+            "TypeUnsupported": "Error in @Template: type {type} is not supported",
+            "DistanceNoNumber": "Error in @Template: dimension {distance} is not a number",
+            "WidthNoNumber": "Error in @Template: width {width} is not a number"
         },
         "InventoryArmorHeader": "Броня",
         "InventoryBackpackHeader": "Контейнеры",
@@ -1423,6 +1428,7 @@
         "LanguageGrippli": "Гриппли",
         "LanguageHalfling": "Полуросличий",
         "LanguageHallit": "Халлит",
+        "LanguageHwan": "Hwan",
         "LanguageIgnan": "Игнан",
         "LanguageIkeshti": "Ikeshti",
         "LanguageInfernal": "Дьявольский",
@@ -1445,10 +1451,12 @@
         "LanguageNagaji": "Нагайи",
         "LanguageNecril": "Некрил",
         "LanguageOcotan": "Окотан",
+        "LanguageOkaiyan": "Okaiyan",
         "LanguageOrcish": "Орочий",
         "LanguageOsiriani": "Осириани",
         "LanguageProtean": "Протеан",
         "LanguageRasu": "Расу",
+        "LanguageRazatlani": "Razatlani",
         "LanguageRequian": "Реквиан",
         "LanguageRussian": "Русский",
         "LanguageSamsaran": "Самсаран",
@@ -1465,6 +1473,7 @@
         "LanguageStrix": "Стрикс",
         "LanguageSylvan": "Сильван",
         "LanguageTaldane": "Талдэни",
+        "LanguageTekritanin": "Tekritanin",
         "LanguageTengu": "Тэнгу",
         "LanguageTerran": "Терран",
         "LanguageThassilonian": "Тассилонский",
@@ -1791,44 +1800,6 @@
         },
         "RollBonusPlaceholder": "напр. +3 или +1d4",
         "RollModeLabel": "Режим броска",
-        "RuleElement": {
-            "ActiveEffectLike": "Как Активный эффект",
-            "ActorTraits": "Дескрипторы актёра",
-            "AdjustDegreeOfSuccess": "Указать степени успеха",
-            "BaseSpeed": "Базовая скорость",
-            "BattleForm": "Battle Form",
-            "ChoiceSet": "Choice Set",
-            "CraftingEntry": "Вкладка Ремесла",
-            "CraftingFormula": "Формула предмета",
-            "CreatureSize": "Размер существа",
-            "EffectTarget": "Цель эффекта",
-            "DamageDice": "Кость урона",
-            "DexterityModifierCap": "Макс. модификатор ловкости",
-            "FlatModifier": "Чистый модификатор",
-            "FixedProficiency": "Фиксированное умение",
-            "GrantItem": "Grant Item",
-            "Immunity": "Невосприимчивость",
-            "LinkedProficiency": "Linked Proficiency",
-            "LoseHitPoints": "Потеря ПЗ",
-            "MultipleAttackPenalty": "Штраф последовательных атак",
-            "Note": "Заметки",
-            "Sense": "Восприятие",
-            "Strike": "Удар",
-            "Striking": "Разящая",
-            "RecoveryCheckDC": "СЛ проверки восстановления",
-            "Resistance": "Resistance",
-            "RollOption": "Roll Option",
-            "TempHP": "Временные ПЗ",
-            "TempHPShortLabel": "Врем",
-            "ToggleProperty": "Переключить свойство",
-            "TokenEffectIcon": "Иконка эффекта на токене",
-            "TokenImage": "Изображение токена",
-            "TokenSize": "Размер токна",
-            "Weakness": "Weakness",
-            "WeaponPotency": "Усиление оружия",
-            "NewRuleElement": "Новый элемент правил",
-            "Unrecognized": "Неопределённый элемент правил"
-        },
         "Scene": {
             "Plural": "Сцены"
         },
@@ -2191,7 +2162,7 @@
         "SavesReflexShort": "Ркц",
         "SavesWill": "Воля",
         "SavesWillShort": "Воля",
-        "SavingThrowWithName": "Испытание: {saveName}",
+        "SavingThrowWithName": "{saveName} Saving Throw",
         "ScoreTitle": "Показатель",
         "ScrollFromSpell": "Свиток {name} ({level}-й круг)",
         "ScrollWandPopup": {
@@ -2467,12 +2438,14 @@
         "TabEffectsLabel": "Эффекты",
         "TabFeatsLabel": "Черты",
         "TabInventoryLabel": "Инвентарь",
+        "TabManageTabsLabel": "Manage Tabs",
         "TabPathfinderSociety": "Общ. Искателей",
         "TabSkillsLabel": "Навыки/умения",
         "TabSpellbookLabel": "Заклинания",
         "TargetFlatFootedLabel": "Включить действия, требующие застигнутой врасплох цели",
         "TempHPTitle": "Количество ваших временных пунктов здоровья",
         "TempHitPointsShortLabel": "Врем ПЗ",
+        "TemplateLabel": "{size}-{unit} {shape}",
         "TemporaryItemToolTip": "This item is temporary and will expire after a duration or during daily preparations. It has no value and cannot be sold.",
         "Time": {
             "Duration": "Длительность",
@@ -3433,23 +3406,7 @@
             "errorTargetToken": "Выберите минимум один токен.",
             "noDamageInfoForOutcome": "Нет информации об уроне для результата {outcome}.",
             "shiftModifyDamageLabel": "Модификатор:",
-            "shiftModifyDamageTitle": "Изменить выброшенный урона/исцеления",
-            "shiftModifyDamageHint": "Положительный модификатор для урона, отрицательный для лечения.",
-            "RuleElements": {
-                "ChoiceSet": {
-                    "HomebrewItem": "Homebrew Item",
-                    "DragHomebrewItem": "Drag a homebrew item here if using one instead of the above options",
-                    "Prompt": "Make a selection.",
-                    "SaveLabel": "Save"
-                },
-                "EffectTarget": {
-                    "Prompt": "Choose the target of this effect."
-                },
-                "Prompt": {
-                    "NoSelectionMade": "No selection was made: {item} is inactive.",
-                    "NoValidOptions": "{actor} has no valid options for {item}."
-                }
-            }
+            "shiftModifyDamageTitle": "Изменить выброшенный урона/исцеления"
         },
         "UnitPriceLabel": "Цена единицы",
         "UnprepareItemTitle": "Убрать подготовку",
