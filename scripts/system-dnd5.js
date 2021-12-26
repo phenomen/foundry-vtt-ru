@@ -26,9 +26,9 @@ export function InitDND5() {
   // Добавление настройки перевода величин в метрическую систему
   game.settings.register("ru-ru", "altTranslation", {
     name: "Использовать официальный перевод",
-    hint: "Использовать официальный перевод D&D5e от издательства Hobby World. Иначе будет использовать альтернативный перевод от Phantom Studio (ТРЕБУЕТСЯ МОДУЛЬ libWrapper).",
+    hint: "Использовать официальный перевод D&D5e от издательства Hobby World. Иначе будет использовать альтернативный перевод от Phantom Studio (требуется модуль libWrapper).",
     type: Boolean,
-    default: false,
+    default: true,
     scope: "world",
     config: true,
     onChange: (value) => {
