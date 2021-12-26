@@ -25,10 +25,10 @@ export function InitDND5() {
 
   // Выбор источника перевода
   game.settings.register("ru-ru", "altTranslation", {
-    name: "Использовать официальный перевод",
-    hint: "Использовать официальный перевод D&D5e от издательства Hobby World. Иначе будет использовать альтернативный перевод от Phantom Studio. (Требуется модуль libWrapper)",
+    name: "Использовать альтернативный перевод",
+    hint: "(Требуется модуль libWrapper) Использовать альтернативный перевод D&D5e от Phantom Studio. Иначе будет использоваться официальный перевод издательства Hobby World.",
     type: Boolean,
-    default: true,
+    default: false,
     scope: "world",
     config: true,
     restricted: true,
@@ -40,7 +40,7 @@ export function InitDND5() {
   // Настройка активации Babele
   game.settings.register("ru-ru", "compendiumTranslation", {
     name: "Перевод библиотек",
-    hint: "Некоторые библиотеки системы D&D5e будут переведены. (Требуется модуль Babele)",
+    hint: "(Требуется модуль Babele) Некоторые библиотеки системы D&D5e будут переведены.",
     type: Boolean,
     default: true,
     scope: "world",
@@ -54,7 +54,7 @@ export function InitDND5() {
   // Добавление настройки перевода величин в метрическую систему
   game.settings.register("ru-ru", "metricConversion", {
     name: "Конверсия величин в метрическую систему",
-    hint: "Значения длинны и веса будут переведены в метры и килограммы. Включение этой настройки перерассчитывает значения в предметах и заклинаниях, но не меняет название величины - это вы можете включить в настройках системы D&D5. (Требуется модуль Babele)",
+    hint: "(Требуется модуль Babele) Значения длинны и веса будут переведены в метры и килограммы. Включение этой настройки перерассчитывает значения в предметах и заклинаниях, но не меняет название величины - это вы можете включить в настройках системы D&D5.",
     type: Boolean,
     default: false,
     scope: "world",
@@ -65,8 +65,20 @@ export function InitDND5() {
     },
   });
 
-  if (!game.settings.get("ru-ru", "altTranslation")) {
-    libWrapper.register("ru-ru", "game.i18n._getTranslations", loadAltTranslation, "OVERRIDE");
+  if (game.settings.get("ru-ru", "altTranslation")) {
+    if (typeof libWrapper === "function") {
+      libWrapper.register("ru-ru", "game.i18n._getTranslations", loadAltTranslation, "OVERRIDE");
+    } else {
+      new Dialog({
+        title: "Альтернативный перевод",
+        content: `<p>Для использования альтернативного перевода требуется активировать модуль <b>libWrapper</b>.</p>`,
+        buttons: {
+          done: {
+            label: "Хорошо",
+          },
+        },
+      }).render(true);
+    }
   }
 
   async function loadAltTranslation() {
