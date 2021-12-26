@@ -52,7 +52,7 @@
         "Search": "Поиск в библиотеке"
     },
     "CONTROLS": {
-        "AdjustSceneDarkness": "Adjust Scene Darkness",
+        "AdjustSceneDarkness": "Настройка темноты сцены",
         "EffectPanel": "Панель эффектов",
         "WorldClock": "Время мира"
     },
@@ -120,10 +120,10 @@
         "Actions": {
             "Balance": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> You move up to your Speed.",
-                    "success": "<strong>Success</strong> You move up to your Speed, treating it as difficult terrain (every 5 feet costs 10 feet of movement).",
-                    "failure": "<strong>Failure</strong> You must remain stationary to keep your balance (wasting the action) or you fall. If you fall, your turn ends.",
-                    "criticalFailure": "<strong>Critical Failure</strong> You fall and your turn ends."
+                    "criticalSuccess": "<strong>Критический успех</strong> Вы перемещаетесь на расстояние вплоть до значения вашей скорости.",
+                    "success": "<strong>Успех</strong> Вы перемещаетесь на расстояние вплоть до значения вашей скорости, но поверхность считается для вас пересечённой местностью (каждые 5 футов стоят 10 футов движения).",
+                    "failure": "<strong>Провал</strong> Вы должны остаться на месте, чтобы удержать равновесие (тратя на это действие) и не упасть. Если вы падаете, ваш ход завершается.",
+                    "criticalFailure": "<strong>Критический провал</strong> Вы падаете и ваш ход завершается."
                 },
                 "Title": "Удержание равновесия"
             },
@@ -137,18 +137,18 @@
             },
             "Climb": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> You move up, across, or safely down the incline for 5 feet plus 5 feet per 20 feet of your land Speed (a total of 10 feet for most PCs).",
-                    "success": "<strong>Success</strong> You move up, across, or safely down the incline for 5 feet per 20 feet of your land Speed (a total of 5 feet for most PCs, minimum 5 feet if your Speed is below 20 feet).",
-                    "criticalFailure": "<strong>Critical Failure</strong> You fall. If you began the climb on stable ground, you fall and land @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}."
+                    "criticalSuccess": "<strong>Критический успех</strong> Вы влезаете, спускаетесь или переползаете по наклонной поверхности на 5 футов плюс дополнительные 5 футов за каждые 20 футов вашей наземной скорости (всего на 10 футов для большинства персонажей игроков).",
+                    "success": "<strong>Успех</strong> Вы влезаете, спускаетесь или переползаете по наклонной поверхности на 5 футов за каждые 20 футов вашей наземной скорости (всего на 5 футов для большинства персонажей игроков и минимум на 5 футов, если ваша наземная скорость ниже 20 футов).",
+                    "criticalFailure": "<strong>Критический провал</strong> Вы падаете. Если вы начали Лазание на устойчивой поверхности, вы падаете и  @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Распластываетесь}."
                 },
                 "Title": "Лазание"
             },
             "Coerce": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> The target gives you the information you seek or agrees to follow your directives so long as they aren't likely to harm the target in any way. The target continues to comply for an amount of time determined by the GM but not exceeding 1 day, at which point the target becomes unfriendly (if they weren't already unfriendly or hostile). However, the target is too scared of you to retaliate—at least in the short term.",
-                    "success": "<strong>Success</strong> As critical success, but once the target becomes unfriendly, they might decide to act against you—for example, by reporting you to the authorities or assisting your enemies.",
-                    "failure": "<strong>Failure</strong> The target doesn't do what you say, and if they were not already unfriendly or hostile, they become unfriendly.",
-                    "criticalFailure": "<strong>Critical Failure</strong> The target refuses to comply, becomes hostile if they weren't already, and can't be Coerced by you for at least 1 week."
+                    "criticalSuccess": "<strong>Критический успех</strong> Цель выдаёт вам желаемую информацию или выполняет приказы, не подвергающие её опасности. Такое отношение сохраняется в течение определяемого ведущим времени, но не более 1 дня, после чего цель становится недружелюбной (если изначально не была недружелюбной или враждебной). Тем не менее цель слишком боится вас, чтобы попытаться навредить - по крайней мере в ближайшее время.",
+                    "success": "<strong>Успех</strong> Аналогичен критическому успеху, но как только цель становится недружелюбной, она может решить немедленно вам навредить, например сообщив о вас властям или оказав содействие врагам.",
+                    "failure": "<strong>Провал</strong> Цель не подчиняется вам и становится недружелюбной, если ещё не была недружелюбной или враждебной.",
+                    "criticalFailure": "<strong>Критический провал</strong> Цель отказывается подчиниться, становится враждебной, если ещё таковой не была, и в течение как минимум 1 недели не может быть целью ваших Угроз."
                 },
                 "Title": "Угроза"
             },
@@ -160,17 +160,17 @@
                     "Title": "Выберите предмет для Создания"
                 },
                 "SelectSpellDialog": {
-                    "CraftButtonLabel": "Craft",
-                    "Title": "Select Spell"
+                    "CraftButtonLabel": "Ремесло",
+                    "Title": "Выберите заклинание"
                 },
                 "Error": {
                     "ItemReferenceMismatch": "Возможно создание только физических предметов из компендиума или директории предметов мира."
                 },
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> Your attempt is successful. Each additional day spent Crafting reduces the materials needed to complete the item by an amount based on your level + 1 and your proficiency rank in Crafting.",
-                    "success": "<strong>Success</strong> Your attempt is successful. Each additional day spent Crafting reduces the materials needed to complete the item by an amount based on your level and your proficiency rank.",
-                    "failure": "<strong>Failure</strong> You fail to complete the item. You can salvage the raw materials you supplied for their full value. If you want to try again, you must start over.",
-                    "criticalFailure": "<strong>Critical Failure</strong> You fail to complete the item. You ruin 10% of the raw materials you supplied, but you can salvage the rest. If you want to try again, you must start over."
+                    "criticalSuccess": "<strong>Критический успех</strong> попытка успешна. Каждый дополнительный день, потраченный на Создание предмета, снижает стоимость необходимых для завершения предмета материалов на сумму, указанную для вашего уровня +1 и вашего уровня умения в Ремесле.",
+                    "success": "<strong>Успех</strong> попытка успешна. Каждый дополнительный день, потраченный на создание предмета, снижает стоимость необходимых для завершения предмета материалов на сумму, указанную для вашего уровня и вашего уровня умения в Ремесле.",
+                    "failure": "<strong>Провал</strong> вы не смогли создать предмет, но сохраняете в материалы на полную сумму. Если вы хотите попытаться ещё раз, придется начать заново.",
+                    "criticalFailure": "<strong>Критический провал</strong> вы не смогли создать предмет и безнадежно испортили 10% материалов, но остальное можете сохранить. Если вы хотите попытаться ещё раз, придется начать заново."
                 },
                 "Title": "Ремесло",
                 "Warning": {
@@ -196,23 +196,23 @@
                 "DistractingWords": "Отвлекающий манёвр - Слова",
                 "Gesture": "Отвлекающий манёвр - Жест",
                 "Notes": {
-                    "success": "<strong>Success</strong> You become @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} to each creature whose Perception DC is less than or equal to your result. (The hidden condition allows you to @Compendium[pf2e.actionspf2e.VMozDqMMuK5kpoX4]{Sneak} away.) This lasts until the end of your turn or until you do anything except Step or use the @Compendium[pf2e.actionspf2e.XMcnh4cSI32tljXa]{Hide} or the @Compendium[pf2e.actionspf2e.VMozDqMMuK5kpoX4]{Sneak} action of the Stealth skill. If you Strike a creature, the creature remains @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} against that attack, and you then become @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Observed}. If you do anything else, you become @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Observed} just before you act unless the GM determines otherwise.",
-                    "failure": "<strong>Failure</strong> You don't divert the attention of any creatures whose Perception DC exceeds your result, and those creatures are aware you were trying to trick them."
+                    "success": "<strong>Успех</strong> Вы становитесь @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Спрятанным} от всех существ, чья СЛ Внимания оказалась меньше или равна результату вашей проверки. Спрятавшись, вы можете @Compendium[pf2e.actionspf2e.VMozDqMMuK5kpoX4]{Красться}  и остаётесь спрятанным до конца своего хода или пока не совершите действие, отличное от Шага или попытки  @Compendium[pf2e.actionspf2e.XMcnh4cSI32tljXa]{Спрятаться} или @Compendium[pf2e.actionspf2e.VMozDqMMuK5kpoX4]{Красться}. Если вы нанесёте существу Удар, оно будет @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Застигнуто врасплох} для этой атаки, а вы после этого станете @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Видимым}. Если вы предпримете любое другое действие, то станете @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Видимым} непосредственно перед его совершением, если ведущий не решит иначе.",
+                    "failure": "<strong>Провал</strong> Вам не удаётся отвлечь внимание существ, чья СЛ  Внимания больше результата вашей проверки, и они понимают, что вы пытались их обмануть."
                 },
                 "Trick": "Отвлекающий манёвр - Уловка"
             },
             "Demoralize": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> The target becomes @Compendium[pf2e.conditionitems.Frightened]{Frightened 2}.",
-                    "success": "<strong>Success</strong> The target becomes @Compendium[pf2e.conditionitems.Frightened]{Frightened 1}."
+                    "criticalSuccess": "<strong>Критический успех</strong> Цель получает @Compendium[pf2e.conditionitems.Frightened]{Испуг 2}.",
+                    "success": "<strong>Успех</strong> Цель получает @Compendium[pf2e.conditionitems.Frightened]{Испуг 1}."
                 },
                 "Title": "Деморализация"
             },
             "Disarm": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> You knock the item out of the opponent's grasp. It falls to the ground in the opponent's space.",
-                    "success": "<strong>Success</strong> You weaken your opponent's grasp on the item. Until the start of that creature's turn, attempts to Disarm the opponent of that item gain a +2 circumstance bonus, and the target takes a –2 circumstance penalty to attacks with the item or other checks requiring a firm grasp on the item.",
-                    "criticalFailure": "<strong>Critical Failure</strong> You lose your balance and become @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} until the start of your next turn."
+                    "criticalSuccess": "<strong>Критический успех</strong> Вы успешно выбиваете из рук цели предмет, который падает на землю в её пространстве.",
+                    "success": "<strong>Успех</strong> Вы ослабляете хватку цели на предмете. Все попытки разоружения этой цели для данного предмета до начала её хода получают ситуативный бонус +2, а сама цель получает ситуативный штраф –2 к атакам этим предметом и иным проверкам, требующим крепко его держать.",
+                    "criticalFailure": "<strong>Критический провал</strong> Вы теряете равновесие и @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Застигнуты врасплох} до начала своего следующего раунда."
                 },
                 "Title": "Разоружение"
             },
@@ -238,17 +238,17 @@
             },
             "Feint": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> You throw your enemy's defenses against you entirely off. The target is @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} against melee attacks that you attempt against it until the end of your next turn.",
-                    "success": "<strong>Success</strong> Your foe is fooled, but only momentarily. The target is @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} against the next melee attack that you attempt against it before the end of your current turn.",
-                    "criticalFailure": "<strong>Critical Failure</strong> Your feint backfires. You are @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} against melee attacks the target attempts against you until the end of your next turn."
+                    "criticalSuccess": "<strong>Критический успех</strong> Вам удаётся полностью одурачить противника, он считается @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Застигнутым врасплох} для всех ваших атак в ближнем бою по нему до конца вашего следующего хода.",
+                    "success": "<strong>Успех</strong> Вам удаётся на секунду сбить противника с толку. Противник считается @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Застигнутым врасплох} для вашей следующей атаки в ближнем бою по нему, совершённой до конца этого вашего хода.",
+                    "criticalFailure": "<strong>Критический провал</strong> Вы обхитрили себя самого. Вы считаетесь @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Застигнутым врасплох} для всех атак в ближнем бою, совершённых по вам целью до конца вашего следующего хода."
                 },
                 "Title": "Финт"
             },
             "ForceOpen": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> You open the door, window, container, or gate and can avoid damaging it in the process.",
-                    "success": "<strong>Success</strong> You break the door, window, container, or gate open, and the door, window, container, or gate gains the @Compendium[pf2e.conditionitems.6dNUvdb1dhToNDj3]{Broken} condition. If it's especially sturdy, the GM might have it take damage but not be broken.",
-                    "criticalFailure": "<strong>Critical Failure</strong> Your attempt jams the door, window, container, or gate shut, imposing a –2 circumstance penalty on future attempts to Force it Open."
+                    "criticalSuccess": "<strong>Критический успех</strong> Вы открываете дверь, окно, контейнер или ворота, не повредив их при этом.",
+                    "success": "<strong>Успех</strong> Вы ломаете дверь, окно,  контейнер или ворота и они становятся @Compendium[pf2e.conditionitems.6dNUvdb1dhToNDj3]{Сломанными}. Если они отличались особенной прочностью, ведущий может постановить, что они получили урон, но не сломались полностью.",
+                    "criticalFailure": "<strong>Критический провал</strong> Из-за ваших попыток дверь, окно, контейнер или ворота заклинило. Дальнейшие попытки Ломания для них получают ситуативный штраф -2."
                 },
                 "Title": "Ломание"
             },
@@ -261,10 +261,10 @@
             },
             "Grapple": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> Your opponent is @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} until the end of your next turn unless you move or your opponent @Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escapes}.",
-                    "success": "<strong>Success</strong> Your opponent is @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} until the end of your next turn unless you move or your opponent @Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escapes}.",
-                    "failure": "<strong>Failure</strong> You fail to grab your opponent. If you already had the opponent @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} or @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} using a Grapple, those conditions on that creature end.",
-                    "criticalFailure": "<strong>Critical Failure</strong> If you already had the opponent @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} or @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained}, it breaks free. Your target can either grab you, as if it succeeded at using the @Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple} action against you, or force you to fall and land @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}."
+                    "criticalSuccess": "<strong>Критический успех</strong> Ваша цель @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Обездвижена} до конца вашего следующего хода, если вы не переместитесь или ей не удастся @Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Освобождение}.",
+                    "success": "<strong>Успех</strong> Ваша цель @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{в Захвате} до конца вашего следующего хода, если вы не переместитесь ил ей не удастся @Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Освобождение}.",
+                    "failure": "<strong>Провал</strong> Вам не удаётся схватить цель. Если вы уже ранее взяли цель @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{в Захват} или @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Обездвижили} цель при помощи Захвата, эти состояния прекращаются для данного существа или объекта.",
+                    "criticalFailure": "<strong>Критический провал</strong> Если ранее вы уже взяли цель @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{в Захват} или @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Обездвижили} цель, она освобождается. Ваша цель может либо взять в захват вас, как после успешного @Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{Захвата}, либо заставить вас упасть и @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Распластаться}."
                 },
                 "Title": "Захват"
             },
@@ -276,10 +276,10 @@
             },
             "HighJump": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> Increase the maximum vertical distance to 8 feet, or increase the maximum vertical distance to 5 feet and maximum horizontal distance to 10 feet.",
-                    "success": "<strong>Success</strong> Increase the maximum vertical distance to 5 feet.",
-                    "failure": "<strong>Failure</strong> You @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Leap} normally.",
-                    "criticalFailure": "<strong>Critical Failure</strong> You don't @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Leap} at all, and instead you fall @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} in your space."
+                    "criticalSuccess": "<strong>Критический успех</strong> Либо максимальная высота прыжка увеличивается до 8 футов, либо максимальная высота прыжка увеличивается до 5 футов, а длина - до 10 футов.",
+                    "success": "<strong>Успех</strong> Максимальная высота прыжка увеличивается до 5 футов.",
+                    "failure": "<strong>Провал</strong> Вы совершаете обычный @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Прыжок}.",
+                    "criticalFailure": "<strong>Критический провал</strong> Вы не  @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Прыгаете} и вместо этого @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Распластываетесь} в своём пространстве."
                 },
                 "Title": "Прыжок в высоту"
             },
@@ -300,9 +300,9 @@
             },
             "LongJump": {
                 "Notes": {
-                    "success": "<strong>Success</strong> Increase the maximum horizontal distance you @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Leap} to the desired distance.",
-                    "failure": "<strong>Failure</strong> You @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Leap} normally.",
-                    "criticalFailure": "<strong>Critical Failure</strong> You @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Leap} normally, but then fall and land @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}."
+                    "success": "<strong>Успех</strong> Увеличьте максимальную длину  @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Прыжка} до желаемого значения.",
+                    "failure": "<strong>Провал</strong> Вы совершаете обычный @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Прыжок}.",
+                    "criticalFailure": "<strong>Критический провал</strong> Вы совершаете обычный @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Прыжок}, но затем падаете и  @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Распластываетесь}."
                 },
                 "Title": "Прыжок в длину"
             },
@@ -316,17 +316,17 @@
             },
             "ManeuverInFlight": {
                 "Notes": {
-                    "success": "<strong>Success</strong> You succeed at the maneuver.",
-                    "failure": "<strong>Failure</strong> Your maneuver fails. The GM chooses if you simply can't move or if some other detrimental effect happens. The outcome should be appropriate for the maneuver you attempted (for instance, being blown off course if you were trying to fly against a strong wind).",
-                    "criticalFailure": "<strong>Critical Failure</strong> As failure, but the consequence is more dire."
+                    "success": "<strong>Успех</strong> Вы успешно выполняете манёвр.",
+                    "failure": "<strong>Провал</strong> Вам не удаётся выполнить манёвр. Ведущий решает. что происходит: вы можете как остаться на месте, так и усугубить своё положение. Результат провала должен основываться на манёвре, который вы пытались выполнить (например, если вы пытались лететь против сильного ветра, вас могло отнести в сторону).",
+                    "criticalFailure": "<strong>Критический провал</strong> Аналогичен провалу, но с более серьёзными последствиями."
                 },
                 "Title": "Маневрирование в полёте"
             },
             "PickALock": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> You unlock the lock, or you achieve two successes toward opening a complex lock. You leave no trace of your tampering.",
-                    "success": "<strong>Success</strong> You open the lock, or you achieve one success toward opening a complex lock.",
-                    "criticalFailure": "<strong>Critical Failure</strong> You break your tools. Fixing them requires using Crafting to @Compendium[pf2e.actionspf2e.bT3skovyLUtP22ME]{Repair} them or else swapping in replacement picks (costing 3 sp, or 3 gp for infiltrator thieves' tools)."
+                    "criticalSuccess": "<strong>Критический успех</strong> Вы открываете замок или получаете два успеха для его взлома, не оставляя следов вмешательства.",
+                    "success": "<strong>Успех</strong> Вы открываете замок или получаете один успех для его взлома.",
+                    "criticalFailure": "<strong>Критический провал</strong> Вы ломаете инструменты вора. Нужно использовать ремесло для @Compendium[pf2e.actionspf2e.bT3skovyLUtP22ME]{Починки} предмета или купить запасные отмычки на замену (заплатив 3 см, or 3 зм, если используете улучшенные инструменты вора)."
                 },
                 "Title": "Взлом замка"
             },
@@ -349,17 +349,17 @@
             },
             "Seek": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> If you were searching for creatures, any @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected} or @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} creature you critically succeeded against becomes @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Observed} by you. If you were searching for an object, you learn its location.",
-                    "success": "<strong>Success</strong> If you were searching for creatures, any @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected} creature you succeeded against becomes @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} from you instead of @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected}, and any @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} creature you succeeded against becomes @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Observed} by you. If you were searching for an object, you learn its location or get a clue to its whereabouts, as determined by the GM."
+                    "criticalSuccess": "<strong>Критический успех</strong> При поиске существ любое @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Необнаруженное} или @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Спрятанное} существо, против которого получен критический успех, становится для вас @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Видимым}. Если вы искали объект, то узнаёте его местоположение.",
+                    "success": "<strong>Успех</strong> При поиске существ любое  @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Необнаруженное} существо, против которого получен успех становится для вас @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Спрятанным}, а любое @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Спрятанное} существо, против которого получен успех, становится для вас @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Видимым}. Если вы искали объект, то узнаёте его местоположение или получаете намёк на его местоположение, на усмотрение ведущего."
                 },
                 "Title": "Поиск"
             },
             "SenseMotive": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> You determine the creature's true intentions and get a solid idea of any mental magic affecting it.",
-                    "success": "<strong>Success</strong> You can tell whether the creature is behaving normally, but you don't know its exact intentions or what magic might be affecting it.",
-                    "failure": "<strong>Failure</strong> You detect what a deceptive creature wants you to believe. If they're not being deceptive, you believe they're behaving normally.",
-                    "criticalFailure": "<strong>Critical Failure</strong> You get a false sense of the creature's intentions."
+                    "criticalSuccess": "<strong>Критический успех</strong> Вы определяете истинные намерения существа и понимаете, что за ментальная магия на него влияет.",
+                    "success": "<strong>Успех</strong> Вы можете понять, ведёт ли себя существо естественно или нет, но его точные намерения или влияющую на него магию определить неспособны.",
+                    "failure": "<strong>Провал</strong> Вы поддаётесь на обман существа и верите в то, в чём оно пытается вас убедить. Если существо не пытается вас обмануть, вы решаете, что оно ведёт себя совершенно естественно.",
+                    "criticalFailure": "<strong>Критический провал</strong> Вы неверно трактуете намерения существа."
                 },
                 "Title": "Проницательность"
             },
@@ -368,9 +368,9 @@
             },
             "Shove": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> You push your opponent up to 10 feet away from you. You can Stride after it, but you must move the same distance and in the same direction.",
-                    "success": "<strong>Success</strong> You push your opponent back 5 feet. You can Stride after it, but you must move the same distance and in the same direction.",
-                    "criticalFailure": "<strong>Critical Failure</strong> You lose your balance, fall, and land @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}."
+                    "criticalSuccess": "<strong>Критический успех</strong> Вы отталкиваете цель на 10 или менее футов от себя. Вы можете совершить перемещение вслед за ней в том же направлении и на то же расстояние.",
+                    "success": "<strong>Успех</strong> Вы отталкиваете цель на 5 футов от себя. Вы можете совершить перемещение вслед за ней в том же направлении и на то же расстояние.",
+                    "criticalFailure": "<strong>Критический провал</strong> Вы теряете равновесие, падаете и @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Распластываетесь}."
                 },
                 "Title": "Толчок"
             },
@@ -384,9 +384,9 @@
             },
             "Squeeze": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> You squeeze through the tight space in 1 minute per 10 feet of squeezing.",
-                    "success": "<strong>Success</strong> You squeeze through in 1 minute per 5 feet.",
-                    "criticalFailure": "<strong>Critical Failure</strong> You become stuck in the tight space. While you're stuck, you can spend 1 minute attempting another Acrobatics check at the same DC. Any result on that check other than a critical failure causes you to become unstuck."
+                    "criticalSuccess": "<strong>Критический успех</strong> Вы протискиваетесь через узкое место со скоростью 10 футов в минуту.",
+                    "success": "<strong>Успех</strong> Вы протискиваетесь через узкое место со скоростью 5 футов в минуту.",
+                    "criticalFailure": "<strong>Критический провал</strong> Вы застреваете. Застряв, вы можете потратить 1 минуту на совершение повторной проверки Акробатики с той же СЛ. Если результатом повторной проверки будет не критический провал, вы перестаёте быть застрявшим."
                 },
                 "Title": "Протискивание"
             },
@@ -400,24 +400,24 @@
             },
             "Swim": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> You move through the water 10 feet, plus 5 feet per 20 feet of your land Speed (a total of 15 feet for most PCs).",
-                    "success": "<strong>Success</strong> You move through the water 5 feet, plus 5 feet per 20 feet of your land Speed (a total of 10 feet for most PCs).",
-                    "criticalFailure": "<strong>Critical Failure</strong> You make no progress, and if you're holding your breath, you lose 1 round of air."
+                    "criticalSuccess": "<strong>Критический успех</strong> Вы проплываете 10 футов плюс дополнительные 5 футов за каждые 20 футов вашей наземной скорости (всего 15 футов для большинства персонажей игроков).",
+                    "success": "<strong>Успех</strong> Вы проплываете 5 футов плюс дополнительные 5 футов за каждые 20 футов вашей наземной скорости (всего 10 футов для большинства персонажей игроков).",
+                    "criticalFailure": "<strong>Критический провал</strong> Вы не перемещаетесь. Если вы задерживаете дыхание, ваш запас воздуха уменьшается на 1 раунд."
                 },
                 "Title": "Плавание"
             },
             "Trip": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> The target falls and lands @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} and takes [[/r 1d6[bludgeoning] # Bludgeoning damage]]{1d6} bludgeoning damage.",
-                    "success": "<strong>Success</strong> The target falls and lands @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.",
-                    "criticalFailure": "<strong>Critical Failure</strong> You lose your balance and fall and land @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}."
+                    "criticalSuccess": "<strong>Критический успех</strong> Цель падает,  @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Распластывается} и получает [[/r 1d6[дробящий] # Дробящий урон]]{1d6} дробящего урона.",
+                    "success": "<strong>Успех</strong> Цель падает и @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Распластывается}.",
+                    "criticalFailure": "<strong>Критический провал</strong> Вы теряете равновесие, падаете и @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Распластываетесь}."
                 },
                 "Title": "Сбивание с ног"
             },
             "TumbleThrough": {
                 "Notes": {
-                    "success": "<strong>Success</strong> You move through the enemy's space, treating the squares in its space as difficult terrain (every 5 feet costs 10 feet of movement). If you don't have enough Speed to move all the way through its space, you get the same effect as a failure.",
-                    "failure": "<strong>Failure</strong> Your movement ends, and you trigger reactions as if you had moved out of the square you started in."
+                    "success": "<strong>Успех</strong> Вы перемещаетесь через занятое противником пространство, но оно считается для вас пересечённой местностью (каждые 5 футов стоят 10 футов перемещения). Если вашей скорости недостаточно, чтобы полностью преодолеть пространство противника, результат аналогичен провалу.",
+                    "failure": "<strong>Провал</strong> Ваше перемещение завершается, и вы провоцируете ответные действия, как если бы покинули клетку, с которой начали перекат."
                 },
                 "Title": "Перекат"
             },
@@ -1207,7 +1207,6 @@
             "One": "1/{max} пункт героизма",
             "Many": "{value}/{max} пунктов героизма"
         },
-        "HideSelectedLabel": "Hide Selected",
         "HitPointsHeader": "Пункты здоровья",
         "HitPointsShortLabel": "ПЗ",
         "HitPointsDetailsLabel": "Подробности ПЗ",
@@ -1345,12 +1344,12 @@
                     "Hint": "A combination weapon has a firearm form or usage and a melee weapon form or usage. Switching between the melee weapon usage and the firearm usage requires an Interact action. However, if your last action was a successful melee Strike against a foe using a combination weapon, you can make a firearm Strike with the combination weapon against that foe without fully switching to the firearm usage, firing the firearm just as you hit with the melee attack. In this case, the combination weapon returns to its melee usage after the firearm Strike.",
                     "StrikeLabel": {
                         "Ranged": "Дистанционная атака: {weapon}",
-                        "Melee": "Melee Strike: {weapon}"
+                        "Melee": "Ближняя атака: {weapon}"
                     }
                 },
-                "NoRangeMelee": "None (Melee)",
+                "NoRangeMelee": "Нет (ближняя)",
                 "OtherTags": {
-                    "Label": "Other Tags",
+                    "Label": "Другие дескрипторы",
                     "Hint": "These are tags indicating classifications in 2nd Edition rules that lack explicit status/definition but are still yet heavily relied upon. Some may be automatically added when other properties are present."
                 },
                 "RangeIncrementN": "Range Increment {range} ft.",
@@ -1695,6 +1694,7 @@
         "PreciousMaterialDarkwood": "Сумеречное дерево",
         "PreciousMaterialDragonhide": "Драконья шкура",
         "PreciousMaterialGradeLabel": "Категория чистоты материала",
+        "PreciousMaterialGrisantianPelt": "Grisantian Pelt",
         "PreciousMaterialHighGrade": "Высококачественный",
         "PreciousMaterialLabel": "Материал",
         "PreciousMaterialLowGrade": "Низкокачественный",
@@ -1899,10 +1899,6 @@
             "EnabledRulesUI": {
                 "Name": "Интерфейс для продвинутых правил",
                 "Hint": "При включении отображает интерфейс продвинутых правил на листах предметов. Будьте осторожны, так как это можем сломать актёров и предметы, если вы не будете уверены в том, что делаете или допустите ошибку."
-            },
-            "PFSSheetTab": {
-                "Name": "Вкладка Общества Искателей",
-                "Hint": "Отображать вкладку Общества Искателей на листе персонажа"
             },
             "ResetChanges": "Сбросить изменения",
             "Automation": {
@@ -3118,6 +3114,7 @@
         "TraitRange120": "Метательное 120 фт",
         "TraitRange150": "Range 150 ft",
         "TraitRange180": "Метательное 180 фт",
+        "TraitRange200": "Range 200 ft",
         "TraitRange240": "Метательное 240 фт",
         "TraitRangeIncrement10": "Шаг дистанции 10 фт",
         "TraitRangeIncrement100": "Шаг дистанции 100 фт",
@@ -3243,6 +3240,7 @@
         "TraitTane": "Тане",
         "TraitTanggal": "Танггал",
         "TraitTattoo": "Тату",
+        "TraitTechnological": "Technological",
         "TraitTeleportation": "Телепортация",
         "TraitTengu": "Тэнгу",
         "TraitTethered": "Привязанное",
@@ -4574,7 +4572,7 @@
             "InventoryTab": "Инвентарь",
             "SavesExtraInfoLabelPlaceholder": "Бонус ко всем испытаниям...",
             "SensesLabel": "Восприятие",
-            "SpeedExtraInfoLabelPlaceholder": "Speed details...",
+            "SpeedExtraInfoLabelPlaceholder": "Подробности скорости",
             "Spells": {
                 "AttackLabel": "Атака",
                 "DCLabel": "СЛ",
