@@ -23,6 +23,71 @@ export function InitDND5() {
     sortSkillsAlpha();
   });
 
+  // Добавление настройки перевода величин в метрическую систему
+  game.settings.register("ru-ru", "altTranslation", {
+    name: "Использовать официальный перевод",
+    hint: "Использовать официальный перевод D&D5e от издательства Hobby World. Иначе будет использовать альтернативный перевод от Phantom Studio (ТРЕБУЕТСЯ МОДУЛЬ libWrapper).",
+    type: Boolean,
+    default: false,
+    scope: "world",
+    config: true,
+    onChange: (value) => {
+      window.location.reload();
+    },
+  });
+
+  if (!game.settings.get("ru-ru", "altTranslation")) {
+    libWrapper.register("ru-ru", "game.i18n._getTranslations", loadAltTranslation, "OVERRIDE");
+  }
+
+  async function loadAltTranslation() {
+    const translations = {};
+    const promises = [];
+    const lang = "ru";
+
+    // Include core supported translations
+    if (CONST.CORE_SUPPORTED_LANGUAGES.includes(lang)) {
+      promises.push(this._loadTranslationFile(`lang/${lang}.json`));
+    }
+
+    // Default module translations
+    if (this.defaultModule !== "core" && game.modules?.has(this.defaultModule)) {
+      const defaultModule = game.modules.get(this.defaultModule);
+      this._filterLanguagePaths(defaultModule, lang).forEach((path) => {
+        promises.push(this._loadTranslationFile(path));
+      });
+    }
+
+    // Game system translations
+    if (game.system) {
+      this._filterLanguagePaths(game.system, lang).forEach((path) => {
+        promises.push(this._loadTranslationFile(path));
+      });
+    }
+
+    // Additional (non-default) module translations
+    if (game.modules) {
+      for (let module of game.modules.values()) {
+        if (!module.active || module.id === this.defaultModule) continue;
+        this._filterLanguagePaths(module, lang).forEach((path) => {
+          promises.push(this._loadTranslationFile(path));
+        });
+      }
+    }
+
+    /// Alternative D&D5 translation
+    promises.push(this._loadTranslationFile(`modules/ru-ru/i18n/systems/dnd5e-alt.json`));
+    console.log("ЗАГРУЖЕН АЛЬТЕРНАТИВНЫЙ ПЕРЕВОД D&D5e");
+
+    // Merge translations in load order and return the prepared dictionary
+    await Promise.all(promises);
+    for (let p of promises) {
+      let json = await p;
+      foundry.utils.mergeObject(translations, json, { inplace: true });
+    }
+    return translations;
+  }
+
   // Регистрация Babele
   if (typeof Babele !== "undefined") {
     Babele.get().register({
