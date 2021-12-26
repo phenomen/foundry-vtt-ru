@@ -23,14 +23,43 @@ export function InitDND5() {
     sortSkillsAlpha();
   });
 
-  // Добавление настройки перевода величин в метрическую систему
+  // Выбор источника перевода
   game.settings.register("ru-ru", "altTranslation", {
     name: "Использовать официальный перевод",
-    hint: "Использовать официальный перевод D&D5e от издательства Hobby World. Иначе будет использовать альтернативный перевод от Phantom Studio (требуется модуль libWrapper).",
+    hint: "Использовать официальный перевод D&D5e от издательства Hobby World. Иначе будет использовать альтернативный перевод от Phantom Studio. (Требуется модуль libWrapper)",
     type: Boolean,
     default: true,
     scope: "world",
     config: true,
+    restricted: true,
+    onChange: (value) => {
+      window.location.reload();
+    },
+  });
+
+  // Настройка активации Babele
+  game.settings.register("ru-ru", "compendiumTranslation", {
+    name: "Перевод библиотек",
+    hint: "Некоторые библиотеки системы D&D5e будут переведены. (Требуется модуль Babele)",
+    type: Boolean,
+    default: true,
+    scope: "world",
+    config: true,
+    restricted: true,
+    onChange: (value) => {
+      window.location.reload();
+    },
+  });
+
+  // Добавление настройки перевода величин в метрическую систему
+  game.settings.register("ru-ru", "metricConversion", {
+    name: "Конверсия величин в метрическую систему",
+    hint: "Значения длинны и веса будут переведены в метры и килограммы. Включение этой настройки перерассчитывает значения в предметах и заклинаниях, но не меняет название величины - это вы можете включить в настройках системы D&D5. (Требуется модуль Babele)",
+    type: Boolean,
+    default: false,
+    scope: "world",
+    config: true,
+    restricted: true,
     onChange: (value) => {
       window.location.reload();
     },
@@ -77,7 +106,6 @@ export function InitDND5() {
 
     /// Alternative D&D5 translation
     promises.push(this._loadTranslationFile(`modules/ru-ru/i18n/systems/dnd5e-alt.json`));
-    console.log("ЗАГРУЖЕН АЛЬТЕРНАТИВНЫЙ ПЕРЕВОД D&D5e");
 
     // Merge translations in load order and return the prepared dictionary
     await Promise.all(promises);
@@ -95,29 +123,18 @@ export function InitDND5() {
       lang: "ru",
       dir: "compendium/dnd5e",
     });
-
-    // Добавление настройки перевода величин в метрическую систему
-    game.settings.register("ru-ru", "metricConversion", {
-      name: "Конверсия величин в метрическую систему",
-      hint: "Значения длинны и веса будут переведены в метры и килограммы. Включение этой настройки перерассчитывает значения в предметах и заклинаниях, но не меняет название величины - это вы можете включить в настройках системы D&D5.",
-      type: Boolean,
-      default: false,
-      scope: "world",
-      config: true,
-      onChange: (value) => {
-        window.location.reload();
-      },
-    });
   } else {
-    new Dialog({
-      title: "Перевод библиотек",
-      content: `<p>Для перевода библиотек системы D&D5 требуется установить и активировать модуль <b>Babele</b><p>`,
-      buttons: {
-        done: {
-          label: "Хорошо",
+    if (game.settings.get("ru-ru", "compendiumTranslation")) {
+      new Dialog({
+        title: "Перевод библиотек",
+        content: `<p>Для перевода библиотек системы D&D5 требуется установить и активировать модуль <b>Babele</b>. Вы можете отключить перевод библиотек в настройках модуля, чтобы это окно больше не отображалось.</p>`,
+        buttons: {
+          done: {
+            label: "Хорошо",
+          },
         },
-      },
-    }).render(true);
+      }).render(true);
+    }
   }
 
   Babele.get().registerConverters({
