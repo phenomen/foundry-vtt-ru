@@ -51,19 +51,6 @@ export function InitDND5() {
     },
   });
 
-  // Добавление настройки перевода величин в метрическую систему
-  game.settings.register("ru-ru", "metricConversion", {
-    name: "Конверсия величин в метрическую систему",
-    hint: "(Требуется модуль Babele) Значения длинны и веса будут переведены в метры и килограммы. Включение этой настройки перерассчитывает значения в предметах и заклинаниях, но не меняет название величины - это вы можете включить в настройках системы D&D5.",
-    type: Boolean,
-    default: false,
-    scope: "world",
-    config: true,
-    restricted: true,
-    onChange: (value) => {
-      window.location.reload();
-    },
-  });
 
   if (game.settings.get("ru-ru", "altTranslation")) {
     if (typeof libWrapper === "function") {
@@ -149,67 +136,5 @@ export function InitDND5() {
     }
   }
 
-  Babele.get().registerConverters({
-    "weight": (value) => {
-      if (game.settings.get("ru-ru", "metricConversion")) {
-        return parseInt(value) / 2;
-      } else {
-        return value;
-      }
-    },
-    "range": (range) => {
-      if (range) {
-        if (game.settings.get("ru-ru", "metricConversion")) {
-          if (range.units === "ft") {
-            if (range.long) {
-              range = mergeObject(range, { long: range.long * 0.3 });
-            }
-            range.units = "m";
-            return mergeObject(range, { value: range.value * 0.3 });
-          }
-          if (range.units === "mi") {
-            if (range.long) {
-              range = mergeObject(range, { long: range.long * 1.5 });
-            }
-            range.units = "km";
-            return mergeObject(range, { value: range.value * 1.5 });
-          }
-        }
-        return range;
-      }
-    },
-    "movement": (movement) => {
-      if (movement) {
-        if (game.settings.get("ru-ru", "metricConversion")) {
-          if (movement.units === "ft") {
-            for (var i in movement) {
-              if (movement[i] === "ft") {
-                movement[i] = "m";
-              } else {
-                movement[i] = movement[i] * 0.3;
-              }
-            }
-          }
-          if (movement.units === "mi") {
-            for (var i in movement) {
-              if (movement[i] === "mi") {
-                movement[i] = "km";
-              } else {
-                movement[i] = movement[i] * 1.5;
-              }
-            }
-          }
-        }
-        return movement;
-      }
-    },
-  });
 
-  Hooks.on("createActor", (actor) => {
-    if (game.settings.get("ru-ru", "metricConversion") && actor.data.data.attributes.movement.walk == 30) {
-      mergeObject(actor.data.data.attributes.movement, { units: "m", walk: 9 });
-      actor.update({ data: actor.data.data });
-      actor.render(true);
-    }
-  });
 }
