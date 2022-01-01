@@ -54,7 +54,7 @@ export function InitDND5() {
 
   if (game.settings.get("ru-ru", "altTranslation")) {
     if (typeof libWrapper === "function") {
-      libWrapper.register("ru-ru", "game.i18n._getTranslations", loadAltTranslation, "OVERRIDE");
+      libWrapper.register("ru-ru", "game.i18n._getTranslations", loadAltTranslation, "MIXED");
     } else {
       new Dialog({
         title: "Альтернативный перевод",
@@ -68,50 +68,19 @@ export function InitDND5() {
     }
   }
 
-  async function loadAltTranslation() {
-    const translations = {};
+  // Alternative D&D5 translation
+  async function loadAltTranslation(wrapped, lang) {
+    const translations = await wrapped(lang);
     const promises = [];
-    const lang = "ru";
 
-    // Include core supported translations
-    if (CONST.CORE_SUPPORTED_LANGUAGES.includes(lang)) {
-      promises.push(this._loadTranslationFile(`lang/${lang}.json`));
-    }
-
-    // Default module translations
-    if (this.defaultModule !== "core" && game.modules?.has(this.defaultModule)) {
-      const defaultModule = game.modules.get(this.defaultModule);
-      this._filterLanguagePaths(defaultModule, lang).forEach((path) => {
-        promises.push(this._loadTranslationFile(path));
-      });
-    }
-
-    // Game system translations
-    if (game.system) {
-      this._filterLanguagePaths(game.system, lang).forEach((path) => {
-        promises.push(this._loadTranslationFile(path));
-      });
-    }
-
-    // Additional (non-default) module translations
-    if (game.modules) {
-      for (let module of game.modules.values()) {
-        if (!module.active || module.id === this.defaultModule) continue;
-        this._filterLanguagePaths(module, lang).forEach((path) => {
-          promises.push(this._loadTranslationFile(path));
-        });
-      }
-    }
-
-    /// Alternative D&D5 translation
     promises.push(this._loadTranslationFile(`modules/ru-ru/i18n/systems/dnd5e-alt.json`));
 
-    // Merge translations in load order and return the prepared dictionary
     await Promise.all(promises);
     for (let p of promises) {
       let json = await p;
       foundry.utils.mergeObject(translations, json, { inplace: true });
     }
+    
     return translations;
   }
 
