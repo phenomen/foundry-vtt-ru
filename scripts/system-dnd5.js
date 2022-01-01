@@ -89,7 +89,7 @@ export function InitDND5() {
     Babele.get().register({
       module: "ru-ru",
       lang: "ru",
-      dir: "compendium/dnd5e",
+      dir: (game.settings.get("ru-ru", "altTranslation")) ? "compendium/dnd5e-alt" : "compendium/dnd5e",
     });
   } else {
     if (game.settings.get("ru-ru", "compendiumTranslation")) {
