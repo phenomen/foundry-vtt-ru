@@ -484,7 +484,7 @@
             "Character": {
                 "AncestryClass": "{ancestry} {class}"
             },
-            "Dead": "Dead",
+            "Dead": "Мёртв",
             "Hazard": {
                 "Level": "Опасность {level}"
             },
@@ -804,6 +804,7 @@
         "ClassTitle": "Класс вашего персонажа",
         "ClickToSetInitiative": "Нажмите, чтобы назначить инициативу выбранных токенов.",
         "ClickToSetInitiativeContext": "Назначить инициативой",
+        "ColdIronStrikes": "Cold Iron Strikes",
         "CompendiumDirectory": {
             "Folders": {
                 "bestiaries": "Бестиарии",
@@ -987,7 +988,7 @@
         "CurrentStaminaPointsShortLabel": "Текущие ПЖ",
         "CurrentStaminaTitle": "Количество ваших пунктов живучести",
         "Damage": {
-            "NoDamageFormulaLabel": "No damage"
+            "NoDamageFormulaLabel": "Нет урона"
         },
         "DamageCategoriesLabel": "Категории урона",
         "DamageDieD10": "d10",
@@ -1004,7 +1005,7 @@
         "DCAdjustmentHard": "сложно",
         "DCAdjustmentVeryHard": "очень сложно",
         "DCAdjustmentIncrediblyHard": "невероятно сложно",
-        "DCBase": "Base DC 10",
+        "DCBase": "Базовая СЛ 10",
         "DCLabel": "СЛ: {dc}",
         "DCWithValue": "СЛ {dc} {text}",
         "DefencesLabel": "Защита",
@@ -1073,7 +1074,7 @@
             "HideName": "Скрыть имя",
             "NoActiveEncounter": "There is no active encounter.",
             "NoTokenInScene": "{actor} has no token in the scene.",
-            "RevealName": "Reveal Name"
+            "RevealName": "Раскрыть имя"
         },
         "EditHazardLabel": "Изменить опаснось?",
         "EditItemTitle": "Изменить предмет",
@@ -1320,7 +1321,7 @@
                     "Potency": "+{potency} {base}",
                     "PotencyOneProperty": "+{potency} {property1} {base}",
                     "PotencyTwoProperties": "+{potency} {property1} {property2} {base}",
-                    "PotencyThreeProperties": "+{potency} {property1} {property2} {base}",
+                    "PotencyThreeProperties": "+{potency} {property1} {property2} {property3} {base}",
                     "PotencyFourProperties": "+{potency} {property1} {property2} {property3} {property4} {base}",
                     "Material": "{material} {base}",
                     "PotencyMaterial": "+{potency} {material} {base}",
@@ -1521,7 +1522,7 @@
         "Level19": "19-й уровень",
         "Level20": "20-й уровень",
         "LicenseViewer": {
-            "Label": "Legal Notice",
+            "Label": "Правовая информация",
             "LandingPageText": "Use the tabs above to read the legal information"
         },
         "Lore": "Знание",
@@ -1787,6 +1788,7 @@
         "ResistancesLabel": "Устойчивости",
         "ResolvePointsShortLabel": "ПР",
         "ResolveTitle": "Количество ваших пунктов решимости",
+        "RestoreSpellTitle": "Restore Spell",
         "ResultLabel": "Результат",
         "ResultOffset": "на {offset}",
         "Roll": {
@@ -2199,9 +2201,9 @@
                 "Imprecise": "Imprecise",
                 "Vague": "Vague"
             },
-            "Label": "Senses",
+            "Label": "Восприятие",
             "RangeLabel": "Дистанция",
-            "NoRangeLimit": "No Limit",
+            "NoRangeLimit": "Без ограничений",
             "WithAcuity": "{sense} ({acuity})",
             "WithAcuityAndRange": "{sense} ({acuity} {range} фт)"
         },
@@ -2235,6 +2237,7 @@
         "SidebarAppearanceLabel": "Внешний вид",
         "Size": "Размер",
         "SizeLabel": "Размер",
+        "SilverStrikes": "Silver Strikes",
         "SkillAcr": "Акробатика",
         "SkillAcrobatics": "Акробатика",
         "SkillArc": "Мистика",
@@ -2275,10 +2278,10 @@
         "SkillFeatLevels": "Уровни черт навыков",
         "SkillIncreaseLevels": "Уровни повышения навыков",
         "Source": {
-            "AuthorLabel": "Author",
-            "AuthorPlaceholder": "Author",
-            "Label": "Source",
-            "SourcePlaceholder": "Book"
+            "AuthorLabel": "Автор",
+            "AuthorPlaceholder": "Автор",
+            "Label": "Источник ",
+            "SourcePlaceholder": "Книга"
         },
         "SpecialLabel": "Особые",
         "SpecialSensesLabel": "Особые способы восприятия",
@@ -2472,7 +2475,7 @@
         "ToggleUnreadyStrikes": "Показывать неэкипированное оружие",
         "ToggleWithName": "Переключение: {property}",
         "Token": {
-            "Appearance": "Appearance",
+            "Appearance": "Внешний вид",
             "Size": {
                 "Label": "Размер",
                 "Dimensions": "Габариты",
@@ -2486,10 +2489,10 @@
         "TotalCoinage": "Всего монет",
         "TotalWealth": "Общее богатство",
         "TraditionSpells": {
-            "Arcane": "{tradition} Spells",
-            "Divine": "{tradition} Spells",
-            "Occult": "{tradition} Spells",
-            "Primal": "{tradition} Spells"
+            "Arcane": "Заклинания {tradition}",
+            "Divine": "Заклинания {tradition}",
+            "Occult": "Заклинания {tradition}",
+            "Primal": "Заклинания {tradition}"
         },
         "TrainedSkillsLabel": "Изученные навыки",
         "Traits": "Дескрипторы",
@@ -2504,23 +2507,23 @@
         "TraitAesir": "Ас",
         "TraitAeon": "Эон",
         "TraitAffixedToArmor": "Закрепляемый на броне",
-        "TraitAffixedToArmorOrAWeapon": "Affixed to Armor or a Weapon",
-        "TraitAffixedToArmorOrTravelersClothing": "Affixed to Armor or Travelers Clothing",
-        "TraitAffixededToCrossbowOrFirearm": "Affixed to Crossbow or Firearm",
-        "TraitAffixededToFirearm": "Affixed to Firearm",
-        "TraitAffixededToFirearmWithAReloadOf1": "Affixed to a Firearm With a Reload of 1",
-        "TraitAffixededToFirearmWithTheKickbackTrait": "Affixed to a Firearm With the Kickback Trait",
-        "TraitAffixedToHeadgear": "Affixed to Headgear",
+        "TraitAffixedToArmorOrAWeapon": "Закрепляемый на броне и оружии",
+        "TraitAffixedToArmorOrTravelersClothing": "Закрепляемый на броне и походной одежде",
+        "TraitAffixededToCrossbowOrFirearm": "Закрепляемый на арбалетах и огнестрельном оружии",
+        "TraitAffixededToFirearm": "Закрепляемый на огнестрельном оружии",
+        "TraitAffixededToFirearmWithAReloadOf1": "Закрепляемый на огнестрельном оружии с Перезарядкой 1",
+        "TraitAffixededToFirearmWithTheKickbackTrait": "Закрепляемый на огнестрельном оружии с дескриптором Отдача",
+        "TraitAffixedToHeadgear": "Закрепляемый на головных уборах",
         "TraitAffixedToWeapon": "Закрепляемый на оружии",
         "TraitAffixedToARangedWeapon": "Закрепляемый на дистанционном оружии",
         "TraitAffixedToAShield": "Закрепляемый на щите",
-        "TraitAffixededToATwoHandedFirearmOrCrossbow": "Affixed to a Two-Handed Firearm or Crossbow",
+        "TraitAffixededToATwoHandedFirearmOrCrossbow": "Закрепляемый на двуручном огнестрельном оружии и арбалетах",
         "TraitAgathion": "Агатион",
         "TraitAgile": "Быстрое",
         "TraitAir": "Воздух",
         "TraitAlchemical": "Алхимический",
         "TraitAlchemist": "Алхимик",
-        "TraitAll": "All",
+        "TraitAll": "Все",
         "TraitAmphibious": "Земноводный",
         "TraitAnadi": "Анади",
         "TraitAndroid": "Андроид",
@@ -2540,7 +2543,7 @@
         "TraitArcane": "Мистическая",
         "TraitArchetype": "Архетип",
         "TraitArchon": "Архон",
-        "TraitAreaDamage": "Area Damage",
+        "TraitAreaDamage": "Урон по области",
         "TraitArtifact": "Артефакт",
         "TraitAstral": "Астральный",
         "TraitAsura": "Асура",
@@ -2751,7 +2754,7 @@
         "TraitDescriptionGrapple": "Вы можете применять это оружие для Захвата с помощью навыка Атлетики, даже если у вас нет свободной руки. При этом используется зона досягаемости оружия (если она отличается от вашей обычной). К результату проверки Атлетики добавляется бонус предмета оружия к проверкам атаки, если он есть. Если при применении оружия вы критически проваливаете проверку Атлетики для Захвата, вы можете уронить оружие, чтобы критический провал считался обычным.",
         "TraitDescriptionGrimoire": "Spellbooks are useful tools for any magic user to write down incantations and runes of power, but where most spellbooks are nothing more than ink on parchment, grimoires have absorbed the magic of the spells within—magic that knowledgeable spellcasters can use to augment their spells.",
         "TraitDescriptionGrippli": "Gripplis are a family of frog-like humanoids",
-        "TraitDescriptionGunslinger": "This indicates abilities from the gunslinger class.",
+        "TraitDescriptionGunslinger": "Обозначает способности класса стрелка.",
         "TraitDescriptionHalfElf": "Существо с этим дескриптором – частично человек, частично эльф. Способность с этим дескриптором может быть выбрана и использована исключительно полуэльфами.",
         "TraitDescriptionHalfOrc": "Существо с этим дескриптором – частично человек, частично орк. Способность с этим дескриптором может быть выбрана и использована исключительно полуорками.",
         "TraitDescriptionHalfling": "Существо с этим дескриптором - представитель народа полуросликов. Эти небольшие существа - удачливые дружелюбные странники. Способность с этим дескриптором может быть выбрана и использована исключительно полуросликами. Оружие с этим дескриптором обычно изготовлено и используется полуросликами.",
