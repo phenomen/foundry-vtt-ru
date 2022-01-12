@@ -130,8 +130,8 @@
             },
             "BonMot": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> The target is distracted and takes a –3 status penalty to Perception and Will saves for 1 minute. The target can end the effect early with a retort to your Bon Mot. This can either be a single action that has the concentrate trait or an appropriate skill action to frame their retort. The GM determines which skill actions qualify, though they must take at least 1 action. Typically, the retort needs to use a linguistic Charisma-based skill action. @Compendium[pf2e.feat-effects.CtrZFI3RV0yPNzTv]{Effect: Bon Mot (Critical Success)}",
-                    "success": "<strong>Success</strong> The target is distracted and takes a –2 status penalty to Perception and Will saves for 1 minute. The target can end the effect early with a retort to your Bon Mot. This can either be a single action that has the concentrate trait or an appropriate skill action to frame their retort. The GM determines which skill actions qualify, though they must take at least 1 action. Typically, the retort needs to use a linguistic Charisma-based skill action. @Compendium[pf2e.feat-effects.GoSls6SKCFmSoDxT]{Effect: Bon Mot}",
+                    "criticalSuccess": "<strong>Critical Success</strong> The target is distracted and takes a -3 status penalty to Perception and Will saves for 1 minute. The target can end the effect early with a retort to your Bon Mot. This can either be a single action that has the concentrate trait or an appropriate skill action to frame their retort. The GM determines which skill actions qualify, though they must take at least 1 action. Typically, the retort needs to use a linguistic Charisma-based skill action. @Compendium[pf2e.feat-effects.CtrZFI3RV0yPNzTv]{Effect: Bon Mot (Critical Success)}",
+                    "success": "<strong>Success</strong> The target is distracted and takes a -2 status penalty to Perception and Will saves for 1 minute. The target can end the effect early with a retort to your Bon Mot. This can either be a single action that has the concentrate trait or an appropriate skill action to frame their retort. The GM determines which skill actions qualify, though they must take at least 1 action. Typically, the retort needs to use a linguistic Charisma-based skill action. @Compendium[pf2e.feat-effects.GoSls6SKCFmSoDxT]{Effect: Bon Mot}",
                     "criticalFailure": "<strong>Critical Failure</strong> Your quip is atrocious. You take the same penalty an enemy would take had you succeeded. This ends after 1 minute or if you issue another Bon Mot and succeed. @Compendium[pf2e.feat-effects.GoSls6SKCFmSoDxT]{Effect: Bon Mot}"
                 },
                 "Title": "Острота"
@@ -212,7 +212,7 @@
             "Disarm": {
                 "Notes": {
                     "criticalSuccess": "<strong>Критический успех</strong> Вы успешно выбиваете из рук цели предмет, который падает на землю в её пространстве.",
-                    "success": "<strong>Успех</strong> Вы ослабляете хватку цели на предмете. Все попытки разоружения этой цели для данного предмета до начала её хода получают ситуативный бонус +2, а сама цель получает ситуативный штраф –2 к атакам этим предметом и иным проверкам, требующим крепко его держать.",
+                    "success": "<strong>Success</strong> You weaken your opponent's grasp on the item. Until the start of that creature's turn, attempts to Disarm the opponent of that item gain a +2 circumstance bonus, and the target takes a -2 circumstance penalty to attacks with the item or other checks requiring a firm grasp on the item.",
                     "criticalFailure": "<strong>Критический провал</strong> Вы теряете равновесие и @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Застигнуты врасплох} до начала своего следующего раунда."
                 },
                 "Title": "Разоружение"
@@ -249,7 +249,7 @@
                 "Notes": {
                     "criticalSuccess": "<strong>Критический успех</strong> Вы открываете дверь, окно, контейнер или ворота, не повредив их при этом.",
                     "success": "<strong>Успех</strong> Вы ломаете дверь, окно,  контейнер или ворота и они становятся @Compendium[pf2e.conditionitems.6dNUvdb1dhToNDj3]{Сломанными}. Если они отличались особенной прочностью, ведущий может постановить, что они получили урон, но не сломались полностью.",
-                    "criticalFailure": "<strong>Критический провал</strong> Из-за ваших попыток дверь, окно, контейнер или ворота заклинило. Дальнейшие попытки Ломания для них получают ситуативный штраф -2."
+                    "criticalFailure": "<strong>Critical Failure</strong> Your attempt jams the door, window, container, or gate shut, imposing a -2 circumstance penalty on future attempts to Force it Open."
                 },
                 "Title": "Ломание"
             },
@@ -481,6 +481,17 @@
             "DisableAutomation": "Отключить автоматизацию"
         },
         "Actor": {
+            "ApplyDamage": {
+                "DamagedForN": "{actor} takes {hpDamage} damage.",
+                "ShieldAbsorbed": "{actor} takes no damage, their shield absorbing {absorbedDamage}.",
+                "DamagedForNShield": "{actor}'s shield absorbs {absorbedDamage} damage, with an additional {hpDamage} making it through.",
+                "HealedForN": "{actor} is healed for {hpDamage}.",
+                "ShieldDamagedForN": "Their shield is also damaged for {shieldDamage}.",
+                "ShieldDamagedForNBroken": "Their shield also takes {shieldDamage} damage, breaking it.",
+                "ShieldDamagedForNDestroyed": "Their shield also takes {shieldDamage} damage, destroying it.",
+                "ShieldNotRaised": "{actor} has not raised their shield.",
+                "TakesNoDamage": "{actor} takes no damage."
+            },
             "Character": {
                 "AncestryClass": "{ancestry} {class}"
             },
@@ -942,11 +953,12 @@
                 "CharacterLevel": "Уровень предмета превышает уровень персонажа.",
                 "ItemMissingTraits": "Предмет не совместим с требованиями вкладки ремесла, должен обладать одним из следующих дескрипторов: {traits}",
                 "MaxItemLevel": "Уровень предмета превышает максимальный уровень предмета для вкладки.",
-                "MissingReagents": "Недостаточно заряженных реагентов для завершения создания предметов на день."
+                "MissingReagents": "Insufficient infused reagents to complete crafting."
             },
             "CraftQuantityTitle": "Количество",
             "ExpendFormula": "Израсходовать формулу",
             "ToggleFreeCrafting": "Toggle Free Crafting",
+            "ToggleQuickAlchemy": "Quick Alchemy",
             "UndeletableTooltip": "Эта формула является частью другого предмета и не может быть удалена отдельно от него."
         },
         "CraftDCTitle": "СЛ",
@@ -1008,6 +1020,7 @@
         "DCBase": "Базовая СЛ 10",
         "DCLabel": "СЛ: {dc}",
         "DCWithValue": "СЛ {dc} {text}",
+        "DecrementEffectTitle": "Decrease Effect Level",
         "DefencesLabel": "Защита",
         "Deity": "Божество",
         "DeityTitle": "Ваше божество или вера",
@@ -1035,7 +1048,9 @@
                     "PluralNew": "{actor} now has {newQuantity} temporary hit points{wasAt} from {item}.",
                     "SingleNew": "{actor} now has {newQuantity} temporary hit point{wasAt} from {item}.",
                     "WasAt": " (was at {oldQuantity})"
-                }
+                },
+                "FastHealing": "Received Fast Healing",
+                "Regeneration": "Received Regeneration"
             },
             "Budget": {
                 "EncounterBudget": "Encounter Budget",
@@ -1215,10 +1230,18 @@
         "HitPointsDetailsTitle": "Дополнительная информация по пунктам здоровья, например быстрое исцеление и регенерация",
         "ImageLabel": "Изображение",
         "ImmunitiesLabel": "Невосприимчивости",
+        "IncrementEffectTitle": "Increase Effect Level",
         "InitiativeHeader": "Бонус инициативы",
         "InitativeIsNow": "Инициатива {name} теперь {value}!",
         "InitiativeLabel": "Инициатива",
         "InitiativeWithSkill": "Инициатива: {skillName}",
+        "InlineCheck": {
+            "BasicWithSave": "Basic {save}",
+            "DCWithName": "{name} DC",
+            "Errors": {
+                "TypeMissing": "Error in @Check: type parameter is mandatory"
+            }
+        },
         "InlineTemplateErrors": {
             "TypeMissing": "Error in @Template: type parameter is mandatory",
             "DistanceMissing": "Error in @Template: distance parameter is mandatory",
@@ -1699,20 +1722,30 @@
         },
         "PotencyRuneLabel": "Руна усиления",
         "PreciousMaterialAdamantine": "Адамантин",
+        "PreciousMaterialAdamantineDescription": "Mined from rocks that fell from the heavens, adamantine is one of the hardest metals known. It has a shiny, black appearance, and it is prized for its amazing resiliency and ability to hold an incredibly sharp edge.",
         "PreciousMaterialColdIron": "Холодное железо",
+        "PreciousMaterialColdIronDescription": "Weapons made from cold iron are deadly to demons and fey alike. Cold iron looks like normal iron but is mined from particularly pure sources and shaped with little or no heat. This process is extremely difficult, especially for high-grade cold iron items.",
         "PreciousMaterialDarkwood": "Сумеречное дерево",
+        "PreciousMaterialDarkwoodDescription": "Darkwood is a very lightweight wood found primarily in old- growth forests in south-central Avistan; it is dark as ebony but has a slight purple tint. A darkwood item's Bulk is reduced by 1 (or to light Bulk if its normal Bulk is 1, with no effect on an item that normally has light Bulk). The Price of an item made of darkwood is based on the item's normal Bulk, not its reduced Bulk for being made of darkwood, but reduce the Bulk before making any further Bulk adjustments for the size of the item.",
         "PreciousMaterialDragonhide": "Драконья шкура",
+        "PreciousMaterialDragonhideDescription": "The hide and scales of a dragon can be used to Craft any item normally made of ordinary leather or hide. Dragonhide varies in color from blue to glittering gold, depending on the dragon it came from. Due to the scales' resiliency, it can also be used to Craft armor usually made out of metal plates (such as a breastplate, half plate, and full plate), allowing such armor to be made without metal. Dragonhide objects are immune to one damage type, depending on the type of dragon.",
         "PreciousMaterialGradeLabel": "Категория чистоты материала",
         "PreciousMaterialGrisantianPelt": "Grisantian Pelt",
+        "PreciousMaterialGrisantianPeltDescription": "This supernaturally tough animal skin is gold and shines in sunlight. It can be used to make any item usually made of cloth, leather, or hide. This material is immune to fire, and its Hardness is doubled against piercing or slashing damage. Up to 4 Bulk of grisantian pelt can be harvested from a single creature (this is usually more than enough for 4 suits of standard grade armor or 2 suit of high-grade armor).",
         "PreciousMaterialHighGrade": "Высококачественный",
         "PreciousMaterialLabel": "Материал",
         "PreciousMaterialLowGrade": "Низкокачественный",
         "PreciousMaterialMithral": "Мифрал",
+        "PreciousMaterialMithralDescription": "Mithral is renowned for its lightness, durability, and effectiveness against a range of creatures including devils and lycanthropes. It has the same sheen as silver but a slightly lighter hue. Mithral weapons and armor are treated as if they were silver for the purpose of damaging creatures with weakness to silver. A metal item made of mithral is lighter than one made of iron or steel: the item's Bulk is reduced by 1 (reduced to light Bulk if its normal Bulk is 1, with no effect on an item that normally has light Bulk). The Price of an item made of this material is based on the item's normal Bulk, not its reduced Bulk for being made of mithral, but reduce the Bulk before making any further Bulk adjustments for the size of the item.",
         "PreciousMaterialOrichalcum": "Хоракалк",
+        "PreciousMaterialOrichalcumDescription": "The most rare and valuable skymetal, orichalcum is coveted for its incredible time-related magical properties. This dull, coppery metal isn't as physically sturdy as adamantine, but orichalcum's time-bending properties protect it, granting it greater Hardness and Hit Points. If an orichalcum item takes damage but isn't destroyed, it repairs itself completely 24 hours later.",
         "PreciousMaterialSilver": "Серебро",
+        "PreciousMaterialSilverDescription": "Silver weapons are a bane to creatures ranging from devils to werewolves. Silver items are less durable than steel items, and low-grade silver items are usually merely silver-plated.",
         "PreciousMaterialSovereignSteel": "Суверенная сталь",
+        "PreciousMaterialSovereignSteelDescription": "Created by Black Sovereign Kevoth-Kul, this unique alloy of cold iron and the skymetal noqual can provide protection from magical assault. The process of cold-forging the two materials together is quite complicated and precise. Characters in search of sovereign steel weapons and armor will almost assuredly have to travel to Starfall to procure gear made from this rare alloy. While some believe it possible to craft shields of sovereign steel as well, in one of his fits, Kevoth-Kul yelled that he had no use for them and banned anyone from making such a thing. So far, his smiths have been too afraid to confirm whether or not it was a joke. All sovereign steel items (including weapon and armor below) have a +4 circumstance bonus on saves against magic that the item makes, and grant their bonus to saves the owner makes specifically to protect the item from magic (such as against the rusting grasp spell).",
         "PreciousMaterialStandardGrade": "Стандартный",
         "PreciousMaterialWarpglass": "Искривлённое стекло",
+        "PreciousMaterialWarpglassDescription": "This bizarre substance is fashioned from the raw, chaotic quintessence of the Maelstrom. It can be fashioned into weapons and items, but is too unstable to make into useful armor or shields. Raw warpglass is an opalescent glassy material with surprising strength. When worked, it changes its appearance-though not its properties-to appear as random striations of other metals and types of stone.",
         "PreparationTypeInnate": "Врожденные",
         "PreparationTypePrepared": "Подготовленные",
         "PreparationTypeSpontaneous": "Спонтанные",
@@ -2647,7 +2680,7 @@
         "TraitDescriptionAir": "Эффекты с этим дескриптором создают воздух или позволяют им манипулировать. Эффекты, манипулирующие воздухом, не действуют в вакууме и областях, где воздуха нет. Существа с этим дескриптором в основном состоят из воздуха или магическим образом связаны с этой стихией.",
         "TraitDescriptionAlchemical": "Алхимические предметы работают за счёт реакций алхимических реагентов, они не магические и не обладают магическими аурами.",
         "TraitDescriptionAlchemist": "Обозначает способности класса алхимика.",
-        "TraitDescriptionAmphibious": "An amphibious creature can breathe in water and in air, even outside of its preferred environment, usually indefinitely but at least for hours. These creatures often have a swim Speed. Their bludgeoning and slashing unarmed Strikes don't take the usual –2 penalty for being underwater.",
+        "TraitDescriptionAmphibious": "An amphibious creature can breathe in water and in air, even outside of its preferred environment, usually indefinitely but at least for hours. These creatures often have a swim Speed. Their bludgeoning and slashing unarmed Strikes don't take the usual -2 penalty for being underwater.",
         "TraitDescriptionAnadi": "A reclusive people from Garund who resemble spiders and can assume human forms.",
         "TraitDescriptionAnroid": "A synthetic humanoid ancestry created by artificial means. Most common in Numeria.",
         "TraitDescriptionAphorite": "A type of planar scion descended from a being from Axis, the Plane of Law.",
@@ -2782,7 +2815,7 @@
         "TraitDescriptionInvestigator": "Обозначает способности класса сыщика.",
         "TraitDescriptionJoustingD6": "Это оружие подходит для боя верхом - например, снабжено специальными креплениями. Если вы верхом и во время предшествующего атаке действия переместились хотя бы на 10 футов, вы получаете ситуативный бонус к урону этой атаки, равный количеству костей урона оружия. Кроме этого, верхом вы можете использовать это оружие одной рукой, при этом кость урона оружия заменяется на указанную.",
         "TraitDescriptionKobold": "Существо с этим дескриптором является представителем народа кобольдов.",
-        "TraitDescriptionKickback": "A kickback weapon is extra powerful and difficult to use due to its high recoil. A kickback weapon deals 1 additional damage with all attacks. Firing a kickback weapon gives a –2 circumstance penalty to the attack roll, but characters with 14 or more Strength ignore the penalty. Attaching a kickback weapon to a deployed bipod, tripod, or other stabilizer can lower or negate this penalty.",
+        "TraitDescriptionKickback": "A kickback weapon is extra powerful and difficult to use due to its high recoil. A kickback weapon deals 1 additional damage with all attacks. Firing a kickback weapon gives a -2 circumstance penalty to the attack roll, but characters with 14 or more Strength ignore the penalty. Attaching a kickback weapon to a deployed bipod, tripod, or other stabilizer can lower or negate this penalty.",
         "TraitDescriptionKitsune": "Shapeshifting humanoids whose true forms resemble foxes.",
         "TraitDescriptionLawful": "Эффекты с этим дескриптором часто управляют энергиями принципиальных Внешних планов и противостоят хаотичным служителям божеств и служителям хаотичных божеств. Существо с этим дескриптором обладает принципиальным мировоззрением. Способности с этим дескриптором доступны только принципиальным существам.",
         "TraitDescriptionLeshy": "Существо с этим дескриптором является представителем народа леших.",
@@ -2795,7 +2828,7 @@
         "TraitDescriptionMechanical": "Опасность с этим дескриптором представляет сконструированный физический объект.",
         "TraitDescriptionMental": "Ментальные эффекты влияют на разум цели и не действуют на объекты и неразумных существ.",
         "TraitDescriptionMetamagic": "Действия с дескриптором «‎метамагия» изменяют параметры ваших заклинаний (например, дистанцию или урон). Действие с дескриптором «‎метамагия» следует совершать непосредственно перед Сотворением заклинания, которое вы собираетесь изменить. Если вы используете любое другое действие (в том числе свободное, ответное или другое метамагическое), преимущества метамагии пропадут. Все дополнительные эффекты, полученные от метамагического действия, считаются частью эффектов заклинания, а не метамагического действия.",
-        "TraitDescriptionMindless": "A mindless creature has either programmed or rudimentary mental attributes. Most, if not all, of their mental ability modifiers are –5. They are immune to all mental effects.",
+        "TraitDescriptionMindless": "A mindless creature has either programmed or rudimentary mental attributes. Most, if not all, of their mental ability modifiers are -5. They are immune to all mental effects.",
         "TraitDescriptionMinion": "Подручными называются существа, напрямую служащие другому существу. Существо с таким дескриптором может использовать только 2 действия в свой ход и не может совершать ответных действий. Во время боя ваш подручный действует в ваш ход и один раз за ход, когда вы тратите действие, чтобы отдать ему приказ. Если это верный зверь, вы используете Команду животному, если это эффект заклинания или магического предмета вроде призванного существа, вы применяете Поддержание заклинания или Поддержание активации. Если не указано иное, вы отдаёте устный приказ — это одиночное действие с дескрипторами «концентрация» и «слух». Если подручный не получил приказа, то не будет совершать никаких действий — разве только чтобы защитить себя или избежать непосредственной опасности. Если на подручного достаточно долго (как правило, не менее 1 минуты) не обращать внимания, то неразумный подручный не будет действовать, животное займётся удовлетворением своих насущных инстинктов, а разумные подручные станут делать что пожелают.",
         "TraitDescriptionMisfortune": "Эффект неудачи негативно влияет на ваш бросок. К одному броску нельзя применить более одного эффекта неудачи, а в случае применения нескольких эффектов неудачи ведущий выбирает из них тот, что хуже. Если к одному броску применяется и эффект удачи, и эффект неудачи, они отменяют друг друга и бросок совершается как обычно.",
         "TraitDescriptionModification": "A feat with this trait alters the construction of your innovation. If you have the reconfigure class feature, you can retrain such a feat more easily.",
@@ -3178,6 +3211,7 @@
         "TraitReach50": "Длинное 50 фт",
         "TraitReach60": "Длинное 60 фт",
         "TraitReach100": "Длинное 100 фт",
+        "TraitReach1000": "Reach 1,000 ft",
         "TraitReckless": "Reckless",
         "TraitReload0": "Перезарядка 0",
         "TraitReload1": "Перезарядка 1",
@@ -3885,16 +3919,16 @@
                 "Note": {
                     "Axe": "<strong>Grievous Rune</strong> You can damage a third creature, with the same restrictions.",
                     "Bow": "<strong>Grievous Rune</strong> The Athletics check to pull the missile free is DC 20.",
-                    "Brawling": "<strong>Grievous Rune</strong> The target takes a –4 circumstance penalty to its save.",
+                    "Brawling": "<strong>Grievous Rune</strong> The target takes a -4 circumstance penalty to its save.",
                     "Club": "<strong>Grievous Rune</strong> You can knock the target up to 15 feet away.",
                     "Dart": "<strong>Grievous Rune</strong> The base persistent bleed damage increases to [[/r {2d6}[persistent,bleed]]] @Compendium[pf2e.conditionitems.Persistent Damage]{Persistent Bleed Damage}.",
                     "Flail": "<strong>Grievous Rune</strong> You move the target 5 feet. You can't move it away from you, but you can move it in another direction of your choice.",
                     "Hammer": "<strong>Grievous Rune</strong> You can also knock the target 5 feet away from you.",
-                    "Knife": "<strong>Grievous Rune</strong> The target takes a –5-foot status penalty to its Speed while it has the @Compendium[pf2e.conditionitems.Persistent Damage]{Persistent Bleed Damage}.",
+                    "Knife": "<strong>Grievous Rune</strong> The target takes a -5-foot status penalty to its Speed while it has the @Compendium[pf2e.conditionitems.Persistent Damage]{Persistent Bleed Damage}.",
                     "Pick": "<strong>Grievous Rune</strong> The extra damage from the critical specialization effect increases to 4 per weapon damage die.",
                     "Polearm": "<strong>Grievous Rune</strong> You can move the target up to 10 feet.",
                     "Shield": "<strong>Grievous Rune</strong> You can knock the target up to 10 feet away.",
-                    "Sling": "<strong>Grievous Rune</strong> The target also takes a –10-foot status penalty to its Speed for 1 round if it fails the save.",
+                    "Sling": "<strong>Grievous Rune</strong> The target also takes a -10-foot status penalty to its Speed for 1 round if it fails the save.",
                     "Spear": "<strong>Grievous Rune</strong> The clumsy condition lasts for 2 rounds.",
                     "Sword": "<strong>Grievous Rune</strong> The target is flat-footed until the end of your next turn."
                 }
@@ -4347,7 +4381,7 @@
         },
         "UnitedPaizoWorkers": {
             "Title": "Объявление: United Paizo Workers",
-            "ReleaseIntro": "Redmond, WA (October 14th, 2021) — Today, the workers at Paizo, Inc – publisher of the Pathfinder and Starfinder roleplaying games – are announcing their formation of the United Paizo Workers union (UPW), with the Communication Workers of America's CODE-CWA project. This union is the first of its kind in the tabletop roleplaying games industry.",
+            "ReleaseIntro": "Redmond, WA (October 14th, 2021) — Today, the workers at Paizo, Inc - publisher of the Pathfinder and Starfinder roleplaying games - are announcing their formation of the United Paizo Workers union (UPW), with the Communication Workers of America's CODE-CWA project. This union is the first of its kind in the tabletop roleplaying games industry.",
             "PFSNote": "Note for Pathfinder Society players: In support of UPW, merchandise purchased from the union store will count in the Online PFS region for the <span class=\"hover\" title=\"When you use a Hero Point to reroll a check, add a +1 cirumstance bonus to the reroll\">Promotional Vestments</a> boon."
         },
         "identification": {
@@ -4573,6 +4607,7 @@
             "EditSpeed": "Изменить скорость",
             "EditTraits": "Изменить дескрипторы",
             "EditWeaknesses": "Изменить уязвимости",
+            "EffectsTab": "Effects",
             "MainTab": "Основное",
             "NotesTab": "Заметки",
             "PassivesLabel": "Пассивные",
