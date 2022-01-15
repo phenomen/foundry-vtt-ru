@@ -54,6 +54,7 @@
     "dc": "СЛ",
     "deathSave": "Испытание смерти",
     "defenses": "Защита",
+    "destructionSave": "Destruction Save",
     "dmg": "Урон",
     "dodge": "Уклонение",
     "doomed": "Обречён",
@@ -107,6 +108,7 @@
     "moves": "Ходы",
     "msa": "Ближ. атаки заклинанием",
     "mwa": "Ближ. атаки оружием",
+    "natPowers": "Natural Powers",
     "noammo": "Нет боеприпасов",
     "other": "Другое",
     "passive": "Пассивное",
@@ -128,12 +130,17 @@
     "rank": "Ранг",
     "reactions": "Реакции",
     "recharge": "Перезарядка",
+    "rechargeRepair": "Recharge",
+    "refittingRepair": "Refitting",
+    "regenRepair": "Regen",
     "religion": "Религия",
+    "repair": "Repair",
     "resistance": "Устойчивость",
     "rest": "Отдых",
     "restNight": "Отдыхать всю ночь",
     "takeBreather": "Передохнуть",
     "rests": "Отдых",
+    "repairs": "Repairs",
     "roll": "Бросок",
     "rollable": "Случайное",
     "rollInitiative": "Проверка инициативы",
@@ -382,9 +389,33 @@
           "hint": "Если включено, пассивные особенности не будут отображаться.",
           "name": "Игнорировать пассивные особенности"
         },
+        "itemMacroReplace": {
+          "hint": "Выберите какие предметы должны быть отображены в инвентаре.",
+          "name": "Item-Macro: макрос предмета, оригинальный предмет или оба."
+        },
+        "showAllNonpreparablePowers": {
+          "hint": "Если выключено, то заклинания, вроде фокусов, врождённых и неограниченных заклинаний должны быть 'подготовлены' для отображения в HUD.",
+          "name": "Show all non-preparable powers"
+        },
+        "showAllNpcItems": {
+          "hint": "If enabled, all items are shown for NPCs, not just equipped items.",
+          "name": "Show all NPC items"
+        },
+        "showConditionsCategory": {
+          "hint": "If enabled, the HUD will present a category showing the available token conditions and status effects normally available in the regular Token HUD.",
+          "name": "Show Conditions Category"
+        },
         "showEmptyItems": {
           "hint": "Если включено, предметы (включая экипировку и заклинания) будут отображаться в HUD даже если у них не осталось зарядов.",
           "name": "Показывать пустые предметы и способности"
+        },
+        "showPowerInfo": {
+          "hint": "If enabled, power component information, concentration, and ritual status will be noted next to the power name.",
+          "name": "Display power information"
+        },
+        "splitAbilities": {
+          "hint": "If enabled, abilities will be separated into checks and saves.",
+          "name": "Show separate ability check and save categories"
         }
       },
       "swade": {

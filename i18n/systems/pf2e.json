@@ -482,10 +482,11 @@
         },
         "Actor": {
             "ApplyDamage": {
+                "AtFullHealth": "{actor} is already at full health.",
                 "DamagedForN": "{actor} takes {hpDamage} damage.",
                 "ShieldAbsorbed": "{actor} takes no damage, their shield absorbing {absorbedDamage}.",
                 "DamagedForNShield": "{actor}'s shield absorbs {absorbedDamage} damage, with an additional {hpDamage} making it through.",
-                "HealedForN": "{actor} is healed for {hpDamage}.",
+                "HealedForN": "{actor} is healed for {hpDamage} damage.",
                 "ShieldDamagedForN": "Their shield is also damaged for {shieldDamage}.",
                 "ShieldDamagedForNBroken": "Their shield also takes {shieldDamage} damage, breaking it.",
                 "ShieldDamagedForNDestroyed": "Their shield also takes {shieldDamage} damage, destroying it.",
@@ -1049,8 +1050,11 @@
                     "SingleNew": "{actor} now has {newQuantity} temporary hit point{wasAt} from {item}.",
                     "WasAt": " (was at {oldQuantity})"
                 },
-                "FastHealing": "Received Fast Healing",
-                "Regeneration": "Received Regeneration"
+                "FastHealing": {
+                    "FastHealingLabel": "Received Fast Healing",
+                    "RegenerationLabel": "Received Regeneration",
+                    "DeactivatedBy": "Deactivated by {types}"
+                }
             },
             "Budget": {
                 "EncounterBudget": "Encounter Budget",
@@ -1098,7 +1102,9 @@
         "EffectsLabel": "Эффекты",
         "EffectPanel": {
             "AppliedBy": "Источник: {condition}",
+            "DecrementToolTip": "[Right Click] Decrease value or remove effect",
             "Expired": "Истекает",
+            "IncrementToolTip": "[Left Click] Increase value",
             "RemainingDuration": {
                 "MultipleYears": "Осталось {years} лет",
                 "SingleYear": "Остался 1 год",
@@ -1547,6 +1553,12 @@
         "LicenseViewer": {
             "Label": "Правовая информация",
             "LandingPageText": "Use the tabs above to read the legal information"
+        },
+        "ListPartsOr": {
+            "two": "{first} or {second}",
+            "start": "{first}, {second}",
+            "middle": "{first}, {second}",
+            "end": "{first}, or {second}"
         },
         "Lore": "Знание",
         "LoreProficiencyDisclaimer": "Только для информации. Не изменяет модификатор навыка.",
@@ -3338,6 +3350,7 @@
         "TraitVolley30": "Залповое 30 фт",
         "TraitVolley50": "Залповое 50 фт",
         "TraitVorpalFear": "Vorpal Fear",
+        "TraitVulnerableToSunlight": "Vulnerable to Sunlight",
         "TraitWand": "Жезл",
         "TraitWater": "Вода",
         "TraitWayang": "Ваян",
