@@ -1,1 +1,144 @@
-@font-face{font-family:OCR-A;src:url(../fonts/ocra_cyr.otf) format("opentype")}@font-face{font-family:Changa;font-style:normal;font-weight:400;src:url(../fonts/Oswald.ttf) format("truetype")}h3.Power1.resource-label{font-size:.9em}.chat-message{font-weight:400}.creature-attack-roll{background:url(../images/alien/alien_crt_roll-attack.png) no-repeat 0 0;height:40px!important;width:260px!important}.creature-attack-roll,.creature-attack-roll:hover{border-radius:3px!important;color:#00000000!important;text-shadow:0 0 #00000000!important}.creature-attack-roll:hover{background-color:var(--aliendarkergreen)!important;background:url(../images/alien/alien_crt_roll-attack_hover.png) no-repeat 0 0}.alien-Push-button{background:url(../images/alien/alien_crt_push-button.png) no-repeat 0 0;height:40px;margin-left:1px;margin-top:5px}.alien-Push-button,.alien-Push-button:hover{border-radius:3px;box-shadow:0 0 5px var(--aliendarkergreen);color:#00000000}.alien-Push-button:hover{background-color:inherit;background:url(../images/alien/alien_crt_push-button_hover.png) no-repeat 0 0}:root{--alienfont:"OCR-A",sans-serif!important;--alienchatfont:var(--font-sans)!important}.alienrpg textarea{font-family:var(--alienfont)}.alienrpg .dots.radiation{padding-bottom:40px!important}.alienrpg .dots_conditions .dots{height:30px!important}.tooltip{font-size:var(--text-sm)!important}#panel,#panel li,#panel ol{color:#fff!important;font-size:15px!important}.message-metadata,.message-sender{color:#fff!important}.message-content h2{font-family:var(--alienfont)!important;font-size:20px!important}a.inline-roll{background:none!important;border:none!important}.chat-message .table-draw .table-results .table-result .result-text{color:#fff!important}.panicked-textarea{color:#000!important;font-weight:700;margin-left:40px!important}.alienrpg .maxboxsize,.biog-full,.textbox1,.textbox2,.textbox3,.textbox4{color:#fff!important}#menu,#pause{font-family:var(--alienfont)!important;font-variant:small-caps!important;text-transform:uppercase!important}#pause h3{color:var(--aliengreen)!important}.alienrpg .item-header{font-weight:700!important}form .form-group label{font-family:var(--font-sans-condensed);font-size:15px}
+/* FONTS */
+@font-face {
+  font-family: "OCR-A";
+  src: url("../fonts/ocra_cyr.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Changa";
+  src: url("../fonts/Oswald.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ALIEN */
+
+h3.Power1.resource-label {
+  font-size: 0.9em;
+}
+
+.chat-message {
+  font-weight: 400;
+}
+
+/* CRT */
+
+.creature-attack-roll {
+  width: 260px !important;
+  height: 40px !important;
+  border-radius: 3px !important;
+  text-shadow: 0 0 #00000000 !important;
+  color: #00000000 !important;
+  background: url(../images/alien/alien_crt_roll-attack.png) no-repeat top left;
+}
+
+.creature-attack-roll:hover {
+  border-radius: 3px !important;
+  background-color: var(--aliendarkergreen) !important;
+  text-shadow: 0 0 #00000000 !important;
+  color: #00000000 !important;
+  background: url(../images/alien/alien_crt_roll-attack_hover.png) no-repeat top left;
+}
+
+.alien-Push-button {
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 1px;
+  box-shadow: 0 0 5px var(--aliendarkergreen);
+  border-radius: 3px;
+  background: url(../images/alien/alien_crt_push-button.png) no-repeat top left;
+  color: #00000000;
+}
+
+.alien-Push-button:hover {
+  border-radius: 3px;
+  box-shadow: 0 0 5px var(--aliendarkergreen);
+  background-color: inherit;
+  background: url(../images/alien/alien_crt_push-button_hover.png) no-repeat top left;
+  color: #00000000;
+}
+
+:root {
+  --alienfont: "OCR-A", sans-serif !important;
+  --alienchatfont: var(--font-sans) !important;
+}
+
+.alienrpg textarea {
+  font-family: var(--alienfont);
+}
+
+.alienrpg .dots.radiation {
+  padding-bottom: 40px !important;
+}
+
+.alienrpg .dots_conditions .dots {
+  height: 30px !important;
+}
+
+.tooltip {
+  font-size: var(--text-sm) !important;
+}
+
+#panel,
+#panel ol,
+#panel li {
+  font-size: 15px !important;
+  color: white !important;
+}
+
+.message-sender {
+  color: white !important;
+}
+
+.message-metadata {
+  color: white !important;
+}
+
+.message-content h2 {
+  font-family: var(--alienfont) !important;
+  font-size: 20px !important;
+}
+
+a.inline-roll {
+  background: none !important;
+  border: none !important;
+}
+
+.chat-message .table-draw .table-results .table-result .result-text {
+  color: white !important;
+}
+
+.panicked-textarea {
+  margin-left: 40px !important;
+  color: black !important;
+  font-weight: bold;
+}
+
+.alienrpg .maxboxsize,
+.textbox1,
+.textbox2,
+.textbox3,
+.textbox4,
+.biog-full {
+  color: white !important;
+}
+
+#pause,
+#menu {
+  font-family: var(--alienfont) !important;
+  font-variant: small-caps !important;
+  text-transform: uppercase !important;
+}
+
+#pause h3 {
+  color: var(--aliengreen) !important;
+}
+
+.alienrpg .item-header {
+  font-weight: 700 !important;
+}
+
+form .form-group label {
+  font-family: var(--font-sans-condensed);
+  font-size: 15px;
+}
