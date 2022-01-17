@@ -212,7 +212,7 @@
             "Disarm": {
                 "Notes": {
                     "criticalSuccess": "<strong>Критический успех</strong> Вы успешно выбиваете из рук цели предмет, который падает на землю в её пространстве.",
-                    "success": "<strong>Success</strong> You weaken your opponent's grasp on the item. Until the start of that creature's turn, attempts to Disarm the opponent of that item gain a +2 circumstance bonus, and the target takes a -2 circumstance penalty to attacks with the item or other checks requiring a firm grasp on the item.",
+                    "success": "<strong>Успех</strong> Вы ослабляете хватку цели на предмете. Все попытки разоружения этой цели для данного предмета до начала её хода получают ситуативный бонус +2, а сама цель получает ситуативный штраф -2 к атакам этим предметом и иным проверкам, требующим крепко его держать.",
                     "criticalFailure": "<strong>Критический провал</strong> Вы теряете равновесие и @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Застигнуты врасплох} до начала своего следующего раунда."
                 },
                 "Title": "Разоружение"
@@ -249,14 +249,14 @@
                 "Notes": {
                     "criticalSuccess": "<strong>Критический успех</strong> Вы открываете дверь, окно, контейнер или ворота, не повредив их при этом.",
                     "success": "<strong>Успех</strong> Вы ломаете дверь, окно,  контейнер или ворота и они становятся @Compendium[pf2e.conditionitems.6dNUvdb1dhToNDj3]{Сломанными}. Если они отличались особенной прочностью, ведущий может постановить, что они получили урон, но не сломались полностью.",
-                    "criticalFailure": "<strong>Critical Failure</strong> Your attempt jams the door, window, container, or gate shut, imposing a -2 circumstance penalty on future attempts to Force it Open."
+                    "criticalFailure": "<strong>Критический провал</strong> Из-за ваших попыток дверь, окно, контейнер или ворота заклинило. Дальнейшие попытки Ломания для них получают ситуативный штраф -2."
                 },
                 "Title": "Ломание"
             },
             "GatherInformation": {
                 "Notes": {
-                    "success": "<strong>Success</strong> You collect information about the individual or topic. The GM determines the specifics.",
-                    "criticalFailure": "<strong>Critical Failure</strong> You collect incorrect information about the individual or topic."
+                    "success": "<strong>Успех</strong> Вы получаете информацию об интересующей вас теме или личности. Ведущий определяет, какую именно.",
+                    "criticalFailure": "<strong>Критический провал</strong> Вы получаете неверную информацию об интересующей вас теме или личности."
                 },
                 "Title": "Сбор информации"
             },
@@ -271,7 +271,7 @@
             },
             "Hide": {
                 "Notes": {
-                    "success": "<strong>Success</strong> If the creature could see you, you're now @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} from it instead of observed. If you were @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} from or @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected} by the creature, you retain that condition."
+                    "success": "<strong>Успех</strong> Если вы были видимы для существа, теперь вы @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{спрятаны} от него. Если вы были для него @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{спрятанными} или @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{необнаруженным}, состояние сохраняется."
                 },
                 "Title": "Спрятаться"
             },
@@ -286,16 +286,16 @@
             },
             "Impersonate": {
                 "Notes": {
-                    "success": "<strong>Success</strong> You trick the creature into thinking you're the person you're disguised as. You might have to attempt a new check if your behavior changes.",
-                    "failure": "<strong>Failure</strong> The creature can tell you're not who you claim to be.",
-                    "criticalFailure": "<strong>Critical Failure</strong> The creature can tell you're not who you claim to be, and it recognizes you if it would know you without a disguise."
+                    "success": "<strong>Успех</strong> Существо считает, что вы тот, за кого себя выдаёте. Если вы будете вести себя иначе, вам может потребоваться пройти проверку повторно.",
+                    "failure": "<strong>Провал</strong> Сушество знает, что вы не тот, за кого себя выдаёте.",
+                    "criticalFailure": "<strong>Критический провал</strong> Сушество знает, что вы не тот, за кого себя выдаёте, и опознаёт вас, если узнало бы вас без маскировки."
                 },
                 "Title": "Маскировка"
             },
             "Lie": {
                 "Notes": {
-                    "success": "<strong>Success</strong> The target believes your lie.",
-                    "failure": "<strong>Failure</strong> The target doesn't believe your lie and gains a +4 circumstance bonus against your attempts to Lie for the duration of your conversation. The target is also more likely to be suspicious of you in the future."
+                    "success": "<strong>Успех</strong> Цель верит вашей лжи.",
+                    "failure": "<strong>Провал</strong> Цель не верит вашей лжи и до конца разговора получаете ситуативный бонус +4 против вашей Лжи. Более того, цель будет более недоверчиво относиться к вам впредь."
                 },
                 "Title": "Ложь"
             },
@@ -309,9 +309,9 @@
             },
             "MakeAnImpression": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> The target's attitude toward you improves by two steps.",
-                    "success": "<strong>Success</strong> The target's attitude toward you improves by one step.",
-                    "criticalFailure": "<strong>Critical Failure</strong> The target's attitude toward you decreases by one step."
+                    "criticalSuccess": "<strong>Критический успех</strong> Отношение цели к вам улучшается на две ступени.",
+                    "success": "<strong>Успех</strong> Отношение цели к вам улучшается на одну ступень.",
+                    "criticalFailure": "<strong>Критический провал</strong> Отношение цели к вам ухудшается на одну ступень."
                 },
                 "Title": "Улучшить впечатление"
             },
@@ -341,10 +341,10 @@
             },
             "Request": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> The target agrees to your request without qualifications.",
-                    "success": "<strong>Success</strong> The target agrees to your request, but they might demand added provisions or alterations to the request.",
-                    "failure": "<strong>Failure</strong> The target refuses the request, though they might propose an alternative that is less extreme.",
-                    "criticalFailure": "<strong>Critical Failure</strong> Not only does the target refuse the request, but their attitude toward you decreases by one step due to the temerity of the request."
+                    "criticalSuccess": "<strong>Критический успех</strong> Цель без малейших оговорок согласится выполнить вашу просьбу.",
+                    "success": "<strong>Успех</strong> Цель соглашается выполнить просьбу, но может потребовать дополнительных условий или изменения просьбы.",
+                    "failure": "<strong>Провал</strong> Цель отказывается выполнить просьбу, но вполне может предложить менее радикальную альтернативу.",
+                    "criticalFailure": "<strong>Критический провал</strong> Цель не только отказывается выполнять вашу просьбу, посчитав её дерзкой, но и её отношение к вам ухудшается на одну ступень."
                 },
                 "Title": "Просьба"
             },
@@ -377,9 +377,9 @@
             },
             "Sneak": {
                 "Notes": {
-                    "success": "<strong>Success</strong> You're undetected by the creature during your movement and remain undetected by the creature at the end of it.",
-                    "failure": "<strong>Failure</strong> A telltale sound or other sign gives your position away, though you still remain unseen. You're hidden from the creature throughout your movement and remain so",
-                    "criticalFailure": "<strong>Critical Failure</strong> You're spotted! You're observed by the creature throughout your movement and remain so. If you're invisible and were hidden from the creature, instead of being observed you're hidden throughout your movement and remain so."
+                    "success": "<strong>Успех</strong> Вы остаётесь необнаруженным для существа в процессе перемещения и после него.",
+                    "failure": "<strong>Провал</strong> Вы выдаёте своё местоположение неосторожным звуком или иным способом, но на виду не показываетесь. Вы остаётесь спрятанным от существа в процессе перемещения и после него.",
+                    "criticalFailure": "<strong>Критический провал</strong> Вас заметили! Вы становитесь видимым для существа в процессе перемещения и после него. Если вы невидимы и были спрятаны от существа, то вместо этого остаётесь спрятанным от существа в процессе перемещения и после него. "
                 },
                 "Title": "Спрятаться"
             },
@@ -424,12 +424,12 @@
             },
             "WhirlingThrow": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> You throw the creature the desired distance and it lands @Compendium[pf2e.conditionitems.Prone]{Prone}.",
-                    "success": "<strong>Success</strong> You throw the creature the desired distance.",
-                    "failure": "<strong>Failure</strong> You don't throw the creature.",
-                    "criticalFailure": "<strong>Critical Failure</strong> You don't throw the creature, and it's no longer @Compendium[pf2e.conditionitems.Grabbed]{Grabbed} or @Compendium[pf2e.conditionitems.Restrained]{Restrained} by you."
+                    "criticalSuccess": "<strong>Критический успех</strong> Вы бросаете существо на желаемую дистанцию и оно падает @Compendium[pf2e.conditionitems.Prone]{распластанным}.",
+                    "success": "<strong>Успех</strong> Вы бросаете существо на желаемую дистанцию.",
+                    "failure": "<strong>Провал</strong> Вам не удаётся бросить существо.",
+                    "criticalFailure": "<strong>Критический провал</strong> Вам не удаётся бросить существо и оно больше не @Compendium[pf2e.conditionitems.Grabbed]{взято в захват}  или @Compendium[pf2e.conditionitems.Restrained]{обездвижено} вами."
                 },
-                "Title": "Whirling Throw"
+                "Title": "Бросок с вращением"
             }
         },
         "ActionsCheck": {
@@ -482,16 +482,16 @@
         },
         "Actor": {
             "ApplyDamage": {
-                "AtFullHealth": "{actor} is already at full health.",
-                "DamagedForN": "{actor} takes {hpDamage} damage.",
-                "ShieldAbsorbed": "{actor} takes no damage, their shield absorbing {absorbedDamage}.",
-                "DamagedForNShield": "{actor}'s shield absorbs {absorbedDamage} damage, with an additional {hpDamage} making it through.",
-                "HealedForN": "{actor} is healed for {hpDamage} damage.",
-                "ShieldDamagedForN": "Their shield is also damaged for {shieldDamage}.",
-                "ShieldDamagedForNBroken": "Their shield also takes {shieldDamage} damage, breaking it.",
-                "ShieldDamagedForNDestroyed": "Their shield also takes {shieldDamage} damage, destroying it.",
-                "ShieldNotRaised": "{actor} has not raised their shield.",
-                "TakesNoDamage": "{actor} takes no damage."
+                "AtFullHealth": "{actor} уже полностью здоров.",
+                "DamagedForN": "{actor} получает {hpDamage} урона.",
+                "ShieldAbsorbsAll": "{actor} не получает урона, щит полностью поглотил {absorbedDamage} урона.",
+                "DamagedForNShield": "Щит {actor} поглощает {absorbedDamage} урона, и дополнительно {hpDamage} урона проходит через щит.",
+                "HealedForN": "{actor} исцеляет {hpDamage} урона.",
+                "ShieldDamagedForN": "Щит также получает {shieldDamage} урона.",
+                "ShieldDamagedForNBroken": "Щит также получает {shieldDamage} урона и ломается.",
+                "ShieldDamagedForNDestroyed": "Щит также получает {shieldDamage} урона и уничтожается.",
+                "ShieldNotRaised": "{actor} не поднял свой щит.",
+                "TakesNoDamage": "{actor} не получает урона."
             },
             "Character": {
                 "AncestryClass": "{ancestry} {class}"
@@ -816,7 +816,7 @@
         "ClassTitle": "Класс вашего персонажа",
         "ClickToSetInitiative": "Нажмите, чтобы назначить инициативу выбранных токенов.",
         "ClickToSetInitiativeContext": "Назначить инициативой",
-        "ColdIronStrikes": "Cold Iron Strikes",
+        "ColdIronStrikes": "Удары холодным железом",
         "CompendiumDirectory": {
             "Folders": {
                 "bestiaries": "Бестиарии",
@@ -1058,8 +1058,8 @@
             },
             "Budget": {
                 "EncounterBudget": "Encounter Budget",
-                "PartySize": "Party Size",
-                "PartyLevel": "Party Level",
+                "PartySize": "Размер группы",
+                "PartyLevel": "Уровень группы",
                 "Threat": "Threat",
                 "Reward": "Reward",
                 "XPBudget": "XP Budget",
@@ -1102,7 +1102,7 @@
         "EffectsLabel": "Эффекты",
         "EffectPanel": {
             "AppliedBy": "Источник: {condition}",
-            "DecrementToolTip": "[Right Click] Decrease value or remove effect",
+            "DecrementToolTip": "[Right Click] Decrease value",
             "Expired": "Истекает",
             "IncrementToolTip": "[Left Click] Increase value",
             "RemainingDuration": {
@@ -1120,6 +1120,7 @@
                 "ZeroRoundsExpireTurnEnd": "Осталось 0 раундов, завершается инициатива {initiative}",
                 "ZeroRoundsExpireTurnStart": "Осталось 0 раундов, начинается инициатива {initiative}"
             },
+            "RemoveToolTip": "[Right Click] Remove effect",
             "Sustained": "Поддерживается?",
             "UnlimitedDuration": "Неограниченная длительность",
             "UntilEncounterEnds": "До конца боя"
@@ -1129,6 +1130,7 @@
         "EquippedBulkLabel": "Надетый вес",
         "EquippedSameBulkValue": "Без изменений",
         "ErrorMessage": {
+            "WeaponQuantityZero": "You have no more of these weapons equipped.",
             "ActorMustHaveToken": "Добавление состояний актёрам без токенов на данный момент не поддерживается.",
             "CantImportTooHighVersion": "Unable to import {sourceName}: its schema version ({sourceSchemaVersion}) is higher than this world's ({worldSchemaVersion}).",
             "CantMoveItemSource": "У вас нет прав для перемещения предметов из этого персонажа.",
@@ -1242,8 +1244,8 @@
         "InitiativeLabel": "Инициатива",
         "InitiativeWithSkill": "Инициатива: {skillName}",
         "InlineCheck": {
-            "BasicWithSave": "Basic {save}",
-            "DCWithName": "{name} DC",
+            "BasicWithSave": "Обычное {save}",
+            "DCWithName": "СЛ {name}",
             "Errors": {
                 "TypeMissing": "Error in @Check: type parameter is mandatory"
             }
@@ -2205,7 +2207,7 @@
             }
         },
         "SaveDCLabel": "Save DC {dc} {type}",
-        "SaveDCLabelBasic": "Save DC {dc} basic {type}",
+        "SaveDCLabelBasic": " {dc} СЛ обычного испытания {type}",
         "SavesFortitude": "Стойкость",
         "SavesFortitudeShort": "Стк",
         "SavesHeader": "Испытания",
@@ -2282,7 +2284,7 @@
         "SidebarAppearanceLabel": "Внешний вид",
         "Size": "Размер",
         "SizeLabel": "Размер",
-        "SilverStrikes": "Silver Strikes",
+        "SilverStrikes": "Удары серебром",
         "SkillAcr": "Акробатика",
         "SkillAcrobatics": "Акробатика",
         "SkillArc": "Мистика",
@@ -2354,7 +2356,7 @@
             "focus": "Атака фокальным заклинанием"
         },
         "SpellAttackLabel": "Атака заклинанием",
-        "SpellBasicSaveOption": "Базовая",
+        "SpellBasicSaveOption": "Обычное",
         "SpellBrowserSearchHint": "Вы можете искать по имени и атрибутам. Доступные для поиска атрибуты:<br> source, spellType, level, school, components, materials, target, range, time, duration, damage, damageType, save, concentration, ritual, ability and classes. <br>Пример: 'fire, damage:d6' выдаст все элементы со словом fire в названии и костью урона d6.",
         "SpellCantripLabel": "Фокус",
         "SpellCastingFormat": "{tradition} {preparationType} Заклинания",
