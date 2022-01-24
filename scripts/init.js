@@ -5,6 +5,7 @@ import { InitPF2E } from "./system-pf2e.js";
 import { InitWFRP4 } from "./system-wfrp4.js";
 import { InitALIEN } from "./system-alien.js";
 import { InitCORIOLIS } from "./system-coriolis.js";
+import { InitAOS } from "./system-age-of-sigmar-soulbound.js"
 
 Hooks.once("init", async () => {
   // Load system-specific CSS styles
@@ -44,4 +45,9 @@ Hooks.once("init", async () => {
   if (game.system.id === "yzecoriolis") {
     InitCORIOLIS();
   }
+
+    // AGE OF SIGMAR SOULBOUND
+    if (game.system.id === "age-of-sigmar-soulbound") {
+      InitAOS();
+    }
 });
