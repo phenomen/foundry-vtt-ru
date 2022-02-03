@@ -1,6 +1,7 @@
 import { InitDELTAGREEN } from "./system-deltagreen.js";
 import { InitDND5 } from "./system-dnd5.js";
 import { InitDUNGEONWORLD } from "./system-dungeonworld.js";
+import { InitPF1E } from "./system-pf1e.js";
 import { InitPF2E } from "./system-pf2e.js";
 import { InitWFRP4 } from "./system-wfrp4.js";
 import { InitALIEN } from "./system-alien.js";
@@ -48,6 +49,11 @@ Hooks.once("init", async () => {
   // DUNGEON WORLD
   if (game.system.id === "dungeonworld") {
     InitDUNGEONWORLD();
+  }
+
+  // PATHFINDER 1
+  if (game.system.id === "pf1") {
+    InitPF1E();
   }
 
   // PATHFINDER 2
