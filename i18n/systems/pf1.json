@@ -2,10 +2,12 @@
   "Pathfinder 1": "Pathfinder 1",
   "PF1.title": "Pathfinder 1",
   "PF1.description": "Система Pathfinder 1 для Foundry VTT.",
+
   "PF1.ActorSheetPFCharacter": "Персонаж",
   "PF1.ActorSheetPFNPC": "NPC",
   "PF1.ActorSheetPFNPCLite": "NPC (Lite)",
   "PF1.ActorSheetPFNPCLoot": "Добыча",
+
   "SETTINGS.pf1DiagN": "Правила движения по диагонали",
   "SETTINGS.pf1DiagL": "Выберите правила диагонального движения в вашей игре.",
   "SETTINGS.pf1InitTBN": "Ничья инициативы решается ловкостью",
@@ -18,6 +20,8 @@
   "SETTINGS.pf1ExpRateL": "Скорость, с которой персонажи двигаются по уровням",
   "SETTINGS.pf1NoExpN": "Отключить полосу опыта",
   "SETTINGS.pf1NoExpL": "Убрать полосу опыта в листах персонажей.",
+  "SETTINGS.pf1OpenXPDistributorN": "Open XP Distributor",
+  "SETTINGS.pf1OpenXPDistributorL": "Opens the XP distributor on combat end unless Shift is held when the combat's deletion is confirmed",
   "SETTINGS.pf1BackgroundSkillsN": "Использование фоновых навыков",
   "SETTINGS.pf1BackgroundSkillsH": "Использовать опциональное правило фоновых навыков",
   "SETTINGS.pf1FractionalBaseBonusesN": "Использовать дробные бонусы",
@@ -38,8 +42,14 @@
   "SETTINGS.pf1SharedVisionModeH": "Как управлять общим зрением между игроками",
   "SETTINGS.pf1SharedVisionWithoutSelection": "Без выбранного токена",
   "SETTINGS.pf1SharedVisionWithSelection": "Всегда",
+  "SETTINGS.pf1AllowScriptChangesN": "Enable Script Changes",
+  "SETTINGS.pf1AllowScriptChangesH": "Allows the use of \"Script\"-type changes in the world",
+  "SETTINGS.pf1AllowScriptChangesW": "<b>This settings would allow players to execute arbitrary code as the GM.</b><br><br>Are you absolutely sure you want to enable this?",
+  "SETTINGS.pf1AllowScriptChangesE": "Script Changes are disabled on this world.",
   "SETTINGS.pf1HideTokenConditionsN": "Скрывать состояния у токенов",
   "SETTINGS.pf1HideTokenConditionsH": "Скрывать состояния",
+  "SETTINGS.pf1obscureInlineRollsN": "Obscure inline rolls",
+  "SETTINGS.pf1obscureInlineRollsH": "Hide inline rolls from those without at least observer permission.",
   "SETTINGS.pf1CoreEffectsN": "Состояния у токенов",
   "SETTINGS.pf1CoreEffectsH": "Показывает только состояния PF1 на токенах (когда не выбрано) или также показывает стандартные иконки (когда выбрано)",
   "SETTINGS.pf1HideChatButtonsN": "Скрывать кнопки на карточках в чате",
@@ -58,6 +68,13 @@
   "SETTINGS.pf1HideReachMeasurementsH": "Не показывать радиус действия, который появляется при наведении курсора на быстрые действия у токена.",
   "SETTINGS.pf1DisplayIterativesN": "Показывать дополнительные значения БМА",
   "SETTINGS.pf1DisplayIterativesH": "Отображает дополнительные значения БМА, а не только общее",
+  "SETTINGS.pf1AlternativeReachCornerRuleN": "Alternative Reach Rule",
+  "SETTINGS.pf1AlternativeReachCornerRuleH": "Hides the outer corners from 10-ft reach measurements",
+  "SETTINGS.pf1DisableAttackCardTargetsN": "Disable Attack Targets",
+  "SETTINGS.pf1DisableAttackCardTargetsH": "Disables targeted actors from showing up on attack cards",
+  "SETTINGS.pf1ClearTargetsAfterAttackN": "Clear targets after attack",
+  "SETTINGS.pf1ClearTargetsAfterAttackH": "Whether to untarget everything after an attack roll.",
+
   "SETTINGS.pf1HealthConfigName": "Настройки здоровья",
   "SETTINGS.pf1HealthConfigLabel": "Настроить здоровье",
   "SETTINGS.pf1HealthConfigHint": "Настроить вычисление здоровья.",
@@ -77,6 +94,7 @@
   "SETTINGS.pf1HealthConfigWoundsAndVigorPCHint": "Использовать опциональное правило ран и энергии для персонажей игроков.",
   "SETTINGS.pf1HealthConfigWoundsAndVigorNPCName": "Раны и энергия для NPC",
   "SETTINGS.pf1HealthConfigWoundsAndVigorNPCHint": "Использовать опциональное правило ран и энергии для персонажей ведущего.",
+
   "SETTINGS.pf1HealthConfigWoundThresholdsPCName": "Пороги ранений для PC",
   "SETTINGS.pf1HealthConfigWoundsThresholdsPCHint": "Использовать опциональное правило порога ранений для персонажей игроков.",
   "SETTINGS.pf1HealthConfigWoundThresholdsNPCName": "Пороги ранений для NPC",
@@ -88,19 +106,62 @@
   "SETTINGS.pf1HealthConfigWoundThresholdDisabled": "Отключено",
   "SETTINGS.pf1HealthConfigWoundThresholdNormal": "Простой",
   "SETTINGS.pf1HealthConfigWoundThresholdGritty": "Сложный",
+
   "SETTINGS.pf1DragRulerWalk": "шаг",
   "SETTINGS.pf1DragRulerDash": "рывок",
   "SETTINGS.pf1DragRulerRun": "бег",
+  "SETTINGS.pf1DragRulerUseElevationName": "Use elevation to determine movement type",
+  "SETTINGS.pf1DragRulerUseElevationHint": "Use a tokens elevation to determine wether a token is flying or burrowing",
+
+  "PF1.KEYBINDINGS": {
+    "SkipConfirmPrompt": {
+      "Name": "Skip Confirmation Prompt"
+    },
+
+    "HideTokenTooltip": {
+      "Name": "Hide Token Tooltip",
+      "Hint": "Hide token tooltips while this key is held"
+    },
+
+    "HideTokenTooltipGMInfo": {
+      "Name": "Show Token Tooltip as Player"
+    },
+
+    "ForceShowItem": {
+      "Name": "Force Show Item",
+      "Hint": "Whether to show the item to chat when using a macro for it"
+    }
+  },
+
   "PF1.OptionalAndVariantRules": "Опциональные правила",
+
   "PF1.WoundThresholdOverride": "Режим порога ранений",
+
   "PF1.WoundLevelHealthy": "Здоров",
   "PF1.WoundLevelGrazed": "Ранен",
   "PF1.WoundLevelWounded": "Сильно ранен",
   "PF1.WoundLevelCritical": "Критически ранен",
+
   "SETTINGS.pf1UnitsN": "Система измерения",
   "SETTINGS.pf1UnitsL": "Система измерения, которая используется в этом мире.",
+
+  "SETTINGS.pf1ImperialUnits": "Imperial (feet, lbs)",
+  "SETTINGS.pf1ImperialDistanceUnits": "Imperial (feet)",
+  "SETTINGS.pf1ImperialWeightUnits": "Imperial (lbs)",
+  "SETTINGS.pf1MetricUnits": "Metric (meters, kg)",
+  "SETTINGS.pf1MetricDistanceUnits": "Metric (meters)",
+  "SETTINGS.pf1MetricWeightUnits": "Metric (kg)",
+
+  "SETTINGS.pf1DistanceUnitsN": "System of units for distances",
+  "SETTINGS.pf1DistanceUnitsL": "Override system of units to be used with distances.",
+
+  "SETTINGS.pf1WeightUnitsN": "System of units for weights",
+  "SETTINGS.pf1WeightUnitsL": "Override system of units to be used with weights.",
+
   "TOKEN.VisionLowLight": "Сумеречное зрение",
+  "TOKEN.VisionLowLightMultiplier": "Low-light Multiplier",
   "TOKEN.VisionDarkvision": "Ночное зрение",
+
   "PF1.ExperienceConfigName": "Настройка опыта",
   "PF1.ExperienceConfigLabel": "Настроить опыт",
   "PF1.ExperienceConfigHint": "Настроить аспекты в повышении уровня.",
@@ -109,11 +170,13 @@
   "PF1.XPTrackFast": "Быстрый",
   "PF1.XPTrackCustomFormula": "Пользовательский",
   "PF1.XPTrackCustomFormulaHint": "напр. '@level * 1000'",
+
   "PF1.AccessibilityConfigName": "Настройка специальных возможностей",
   "PF1.AccessibilityConfigLabel": "Специальные возможности",
   "PF1.AccessibilityConfigHint": "Изменить настройки специальных возможностей ",
   "PF1.AccessibilityFontSize": "Размер шрифта",
   "PF1.AccessibilityFontSizeHint": "Изменяет размер шрифта в некоторых аспектах игры (например, на карточках в чате)",
+
   "PF1.TooltipConfigName": "Настройка подсказок",
   "PF1.TooltipConfigLabel": "Подсказки",
   "PF1.TooltipConfigHint": "Изменить настройки подсказок",
@@ -127,6 +190,16 @@
   "PF1.TooltipConfigDisable": "Выключить подсказки",
   "PF1.TooltipConfigHideWithoutKey": "Скрыть, если не удерживается {key}",
   "PF1.OnMouse": "На курсоре",
+
+  "PF1.Sheet": {
+    "PC": "Player Character (PC)",
+    "NPC": "Nonplayer Character (NPC)",
+    "NPCLite": "NPC Lite",
+    "NPCLoot": "Loot",
+    "Item": "Generic Item",
+    "Container": "Container"
+  },
+
   "PF1.TooltipWorldConfigName": "Настройки подсказок в Мире",
   "PF1.TooltipWorldConfigLabel": "Подсказки (Мир)",
   "PF1.TooltipWorldConfigHint": "Поменять настройки подсказок в Мире",
@@ -145,24 +218,74 @@
   "PF1.TooltipWorldConfigHideActorName": "Скрыть имена (глобально)",
   "PF1.TooltipWorldConfigHideActorName_Hint": "Скрыть имена от всех игроков",
   "PF1.TooltipWorldConfigHideActorNameReplacement": "Hidden Replacement Name",
+
   "PF1.LevelUpForm_Title": "Повышение уровня {className}",
   "PF1.LevelUpForm_Health": "Здоровье",
   "PF1.LevelUpForm_Health_Roll": "Бросок",
   "PF1.LevelUpForm_Health_Manual": "Ручной",
-  "PF1.LevelUp.Label": "Повышение уровня",
-  "PF1.LevelUp.Chat.Header": "Отчёт повышения",
-  "PF1.LevelUp.Chat.Health.Header": "Здоровье",
-  "PF1.LevelUp.Chat.Health.Roll": "Бросок КЗ: {add}",
-  "PF1.LevelUp.Chat.Health.Manual": "Ручной бросок: {add}",
-  "PF1.LevelUp.Chat.FC.Header": "Бонус предпочитаемого класса",
-  "PF1.LevelUp.Chat.Extra.Header": "Дополнительно",
-  "PF1.LevelUp.Chat.Extra.NewFeat": "На выбор 1 новая черта",
-  "PF1.LevelUp.Chat.Extra.NewFeats": "На выбор {newValue} новых черт",
-  "PF1.LevelUp.Chat.Extra.NewAbilityScore": "Можно повысить характеристику на +1",
+  "PF1.LevelUp": {
+    "Label": "Level Up",
+    "Health": {
+      "Roll": {
+        "Desc": "Your hit points for this level will be rolled for based on the size of your hit die."
+      },
+      "Manual": {
+        "Desc": "You will decide how many hit points you gain for this level."
+      }
+    },
+    "FC": {
+      "Label": "Favoured Class Bonus",
+      "HP": {
+        "Desc": "You will gain a single hit point as your favoured class bonus for this level."
+      },
+      "Skill": {
+        "Desc": "You will gain a single skill rank to freely spend as your favoured class bonus for this level."
+      },
+      "Alt": {
+        "Desc": "You will gain something specific for your class and race combination as your favoured class bonus for this level."
+      }
+    },
+    "AbilityScore": {
+      "Label": "Ability Score",
+      "PointsLeft": "Points remaining: {value}",
+      "Item": {
+        "Name": "Added Ability Scores",
+        "Desc": "<p>This feature is used for tracking your ability score changes from gaining hit die.</p>"
+      }
+    },
+    "Summary": {
+      "Label": "Summary",
+      "AbilityScore": {
+        "Gain": "{abl}: +{value}"
+      }
+    },
+    "Chat": {
+      "Header": "Level Up Report",
+      "Health": {
+        "Header": "Health",
+        "Roll": "Rolled for health: {add}",
+        "Manual": "Manual health: {add}"
+      },
+      "FC": {
+        "Header": "Favoured Class Bonus"
+      },
+      "AbilityScore": {
+        "Header": "Ability Score Increase"
+      },
+      "Extra": {
+        "Header": "Extra",
+        "NewFeat": "You have 1 new feat to choose",
+        "NewFeats": "You have {newValue} new feats to choose",
+        "NewAbilityScore": "You can increase an ability score by +1"
+      }
+    }
+  },
+
   "PF1.Submit": "Подтвердить",
   "PF1.Next": "Cледующий",
   "PF1.Previous": "Предыдущий",
   "PF1.General": "Общее",
+
   "PF1.Apply": "Применить",
   "PF1.ApplyHalf": "Применить половину",
   "PF1.ApplyDamage": "Применить урон",
@@ -172,16 +295,22 @@
   "PF1.ReduceBy": "Уменьшить на",
   "PF1.SwapSelected": "Поменять выделенных",
   "PF1.ClearReduction": "Очистить уменьшение",
+
   "PF1.RollsForInitiative": "{0} проверка инициативы!",
+
+  "PF1.Take10": "Take 10",
+  "PF1.Take20": "Take 20",
+
   "PF1.Flags": "Метки",
   "PF1.FlagsInstructions": "Настройте штрихи и черты персонажей в системе PF1",
   "PF1.FlagsTitle": "Настроить особые штрихи",
   "PF1.FlagsSave": "Обновить особые штрихи",
   "PF1.FlagsBoolean": "Логические метки",
   "PF1.FlagsDictionary": "Словарные метки",
-  "PF1.AdvancedInfo.Flags.InfoBox": "Метки могут использоваться макросами и модулями и ничего не делают сами по себе.",
+
   "PF1.AbilityDamage": "Урон характеристике",
   "PF1.AbilityDrain": "Потеря характеристики",
+
   "PF1.PointBuyCalculator": "Калькулятор покупки очков",
   "PF1.PointBuyCalculatorWarning": "Калькулятор покупки очков ЗАМЕНЯЕТ базовые значения характеристики персонажа.",
   "PF1.PointBuyCalculatorSpent": "Очков потрачено",
@@ -191,47 +320,65 @@
   "PF1.PointBuyCalculatorStandardFantasy": "Обычное фэнтези",
   "PF1.PointBuyCalculatorHighFantasy": "Высокое фэнтези",
   "PF1.PointBuyCalculatorEpicFantasy": "Эпическое фэнтези",
+
   "PF1.CreateItem": "Создать предмет",
   "PF1.EditItem": "Редактировать предмет",
   "PF1.DuplicateItem": "Дублировать предмет",
   "PF1.DeleteItem": "Удалить предмет",
   "PF1.DeleteItemTitle": "Удалить предмет: {0}",
+
   "PF1.LinkTypeChildren": "Подссылки",
   "PF1.LinkTypeCharges": "Заряды",
   "PF1.LinkTypeClassAssociations": "Сопутствующие способности",
   "PF1.LinkTypeAmmunition": "Боеприпасы",
-  "PF1.LinkHelpChildren": "Связанные подссылки удаляются из актёра при удалении исходной ссылки.",
-  "PF1.LinkHelpCharges": "Связанные таким образом предметы разделяют свои заряды. Добавьте все ссылки на один основной предмет.",
-  "PF1.LinkHelpClassAssociations": "Связанные таким образом элементы автоматически добавляются к актёру на соответствующем уровне класса.",
-  "PF1.LinkHelpAmmunition": "Связанные таким образом предметы автоматически теряют определенное количество (или заряд) за каждую совершенную атаку.",
+
+  "PF1.LinkHelpChildren": "Linked children are deleted from the actor when the link parent (this item) is deleted.",
+  "PF1.LinkHelpCharges": "Linked items inherit and share the charges from the link parent (this item).",
+  "PF1.LinkHelpClassAssociations": "Class association linked items are automatically added to the actor at the appropriate class level. Unlike other item links, these must be linked from a compendium.",
+  "PF1.LinkHelpAmmunition": "Linked items automatically lose quantity (or charge) for every attack made with link parent (this item).",
+
   "PF1.HelpSellMultiplierN": "Коэффициент продажи",
   "PF1.HelpSellMultiplier": "Коэффициент продажи неторговых предметов. Товары всегда продают по полной цене. По умолчанию 0,5.",
   "PF1.HelpDomainSpell": "Это заклинание не тратит ячейки заклинаний, которые восполняются во время отдыха",
+
   "PF1.AbilityStr": "Сила",
   "PF1.AbilityDex": "Ловкость",
   "PF1.AbilityCon": "Выносливость",
   "PF1.AbilityInt": "Интеллект",
   "PF1.AbilityWis": "Мудрость",
   "PF1.AbilityCha": "Харизма",
+
+  "PF1.AbilityStrMod": "Модификатор силы",
+  "PF1.AbilityDexMod": "Модификатор ловкости",
+  "PF1.AbilityConMod": "Модификатор выносливости",
+  "PF1.AbilityIntMod": "Модификатор интеллекта",
+  "PF1.AbilityWisMod": "Модификатор мудрости",
+  "PF1.AbilityChaMod": "Модификатор харизмы",
+
   "PF1.AbilityShortStr": "Сил",
   "PF1.AbilityShortDex": "Лвк",
   "PF1.AbilityShortCon": "Вын",
   "PF1.AbilityShortInt": "Инт",
   "PF1.AbilityShortWis": "Мдр",
   "PF1.AbilityShortCha": "Хар",
+
   "PF1.SavingThrowFort": "Стойкость",
   "PF1.SavingThrowRef": "Реакция",
   "PF1.SavingThrowWill": "Воля",
+
   "PF1.ACNormal": "КБ",
   "PF1.ACTouch": "Касание",
   "PF1.ACFlatFooted": "Врасплох",
   "PF1.CMDFlatFooted": "Врасплох ЗБМ",
+
   "PF1.ACTypeNormal": "Отражение",
   "PF1.ACTypeTouch": "Уклонение",
   "PF1.ACTypeFlatFooted": "Разн. Врасплох",
+
   "PF1.WeaponHoldTypeNormal": "Ведущая рука",
   "PF1.WeaponHoldTypeTwoHanded": "Двуручное",
   "PF1.WeaponHoldTypeOffhand": "Неведущая рука",
+
   "PF1.CondBleed": "Истекает кровью",
   "PF1.CondBlind": "Ослеп",
   "PF1.CondConfused": "В замешательстве",
@@ -256,12 +403,16 @@
   "PF1.CondStunned": "В шоке",
   "PF1.CondNauseated": "Мучим тошнотой",
   "PF1.CondDazed": "В ступоре",
+  "PF1.CondSleep": "Сон",
+  "PF1.CondCowering": "Cowering",
+
   "PF1.CondTypeBleed": "Кровотечение",
   "PF1.CondTypeBlind": "Слепота",
   "PF1.CondTypeConfuse": "Замешательство",
   "PF1.CondTypeDaze": "Ступор",
   "PF1.CondTypeDazzle": "Растерянность",
   "PF1.CondTypeDeaf": "Глухота",
+  "PF1.CondTypeDeathEffects": "Death Effects",
   "PF1.CondTypeDisease": "Болезнь",
   "PF1.CondTypeEnergyDrain": "Вытягивание жизни",
   "PF1.CondTypeFatigue": "Утомление",
@@ -273,13 +424,16 @@
   "PF1.CondTypePetrify": "Окаменение",
   "PF1.CondTypeStun": "Шок",
   "PF1.CondTypeSleep": "Сон",
+
   "PF1.CostGP": "Цена (ЗМ)",
+
   "PF1.ClassType": "Тип класса",
   "PF1.ClassTypeBase": "Базовый класс",
   "PF1.ClassTypePrestige": "Престиж класс",
   "PF1.ClassTypeNPC": "Класс NPC",
   "PF1.ClassTypeRacial": "КЗ народа",
   "PF1.ClassTypeMythic": "Мифичекий путь",
+
   "PF1.ActionMWAK": "Атака ближнего боя",
   "PF1.ActionRWAK": "Атака дистанционного боя",
   "PF1.ActionMSAK": "Атака заклинанием в ближнем бою",
@@ -290,16 +444,17 @@
   "PF1.ActionSave": "Испытание",
   "PF1.ActionHeal": "Лечение",
   "PF1.ActionOther": "Прочее",
+
   "PF1.Alignment": "Мировоззрение",
-  "PF1.AlignmentLG": "Принципиальный Добрый",
-  "PF1.AlignmentNG": "Нейтральный Добрый",
-  "PF1.AlignmentCG": "Хаотичный Добрый",
-  "PF1.AlignmentLN": "Принципиальный Нейтральный",
+  "PF1.AlignmentLG": "Принципиальный добрый",
+  "PF1.AlignmentNG": "Нейтральный добрый",
+  "PF1.AlignmentCG": "Хаотичный добрый",
+  "PF1.AlignmentLN": "Принципиальный нейтральный",
   "PF1.AlignmentTN": "Нейтральный",
-  "PF1.AlignmentCN": "Хаотичный Нейтральный",
-  "PF1.AlignmentLE": "Принципиальный Нейтральный",
-  "PF1.AlignmentNE": "Нейтральный Злой",
-  "PF1.AlignmentCE": "Хаотичный Злой",
+  "PF1.AlignmentCN": "Хаотичный нейтральный",
+  "PF1.AlignmentLE": "Принципиальный злой",
+  "PF1.AlignmentNE": "Нейтральный злой",
+  "PF1.AlignmentCE": "Хаотичный злой",
   "PF1.AlignmentShortLG": "ПД",
   "PF1.AlignmentShortNG": "НД",
   "PF1.AlignmentShortCG": "ХД",
@@ -309,14 +464,25 @@
   "PF1.AlignmentShortLE": "ПЗ",
   "PF1.AlignmentShortNE": "НЗ",
   "PF1.AlignmentShortCE": "ХЗ",
+
   "PF1.ChatReqMats": "Требуемые реагенты",
   "PF1.ChatOtherFormula": "Прочее",
+
   "PF1.Currency": "Валюта",
   "PF1.WeightlessCurrency": "Валюта без веса",
   "PF1.CurrencyPP": "ПМ",
   "PF1.CurrencyGP": "ЗМ",
   "PF1.CurrencySP": "СМ",
   "PF1.CurrencyCP": "ММ",
+  "PF1.CurrencySend": "Отправить валюту",
+  "PF1.CurrencyPlatinumP": "Платиновые монеты",
+  "PF1.CurrencyGoldP": "Золотые монеты",
+  "PF1.CurrencySilverP": "Серебряные монеты",
+  "PF1.CurrencyCopperP": "Медные монеты",
+  "PF1.CurrencyFailed": "Перевод валюты не удался:",
+  "PF1.CurrencyGMRequired": "Для завершения передачи требуется подтверждение ведущего.",
+  "PF1.CurrencyInsufficient": "Недостаточно валюты",
+
   "PF1.DistPersonal": "На себя",
   "PF1.DistTouch": "Касание",
   "PF1.DistMelee": "Ближняя",
@@ -326,12 +492,14 @@
   "PF1.DistLong": "Дальняя",
   "PF1.DistFt": "Футы",
   "PF1.DistMi": "Мили",
+
   "PF1.DistM": "Метры",
   "PF1.DistKM": "Километры",
   "PF1.DistFtShort": "фт",
   "PF1.DistMiShort": "ми",
   "PF1.DistMShort": "м",
   "PF1.DistKMShort": "км",
+
   "PF1.ItemContainerContentsWeight": "Вес содержимого",
   "PF1.ItemContainerContentsValue": "Стоимость содержимого",
   "PF1.ItemContainerContentsSellValue": "Цена продажи содержимого",
@@ -348,31 +516,37 @@
   "PF1.ItemContainerTotalItemValue": "Общая стоимость предметов: {0} ЗМ, {1} СМ, {2} ММ",
   "PF1.ItemContainerSellValue": "Цена продажи: {0} ЗМ, {1} СМ, {2} ММ",
   "PF1.ItemContainerTakeContents": "Взять из контейнера",
+
   "PF1.LootTypeGear": "Снаряжение",
   "PF1.LootTypeAmmo": "Боеприпасы",
   "PF1.LootTypeTradeGoods": "Товары",
   "PF1.LootTypeGearSingle": "Снаряжение",
   "PF1.LootTypeAmmoSingle": "Боеприпас",
   "PF1.LootTypeTradeGoodsSingle": "Товар",
+
   "PF1.SenseBS": "Слепозрение",
   "PF1.SenseDV": "Ночное зрение",
   "PF1.SenseTS": "Виброчувствительность",
   "PF1.SenseTR": "Истинное зрение",
   "PF1.SenseLL": "Сумеречное зрение",
+
   "PF1.FlyManeuverabilityClumsy": "Скверная",
   "PF1.FlyManeuverabilityPoor": "Плохая",
   "PF1.FlyManeuverabilityAverage": "Средняя",
   "PF1.FlyManeuverabilityGood": "Хорошая",
   "PF1.FlyManeuverabilityPerfect": "Безупречная",
+
   "PF1.BuffTarAC": "КБ",
   "PF1.BuffTarACGeneric": "Общий",
   "PF1.BuffTarACArmor": "Броня",
   "PF1.BuffTarACShield": "Щит",
   "PF1.BuffTarACNatural": "Естественная броня",
+  "PF1.BuffTarACTouch": "Касание",
+  "PF1.BuffTarACFlatFooted": "Врасплох",
   "PF1.BuffTarStrSkills": "Навыки силы",
   "PF1.BuffTarDexSkills": "Навыки ловкости",
   "PF1.BuffTarConSkills": "Навыки выносливости",
-  "PF1.BuffTarIntSkills": "Навыки интелекта",
+  "PF1.BuffTarIntSkills": "Навыки интеллекта",
   "PF1.BuffTarWisSkills": "Навыки мудрости",
   "PF1.BuffTarChaSkills": "Навыки харизмы",
   "PF1.BuffTarSpecificSkill": "Определенный навык",
@@ -380,13 +554,23 @@
   "PF1.BuffTarStrChecks": "Проверки силы",
   "PF1.BuffTarDexChecks": "Проверки ловкости",
   "PF1.BuffTarConChecks": "Проверки выносливости",
-  "PF1.BuffTarIntChecks": "Проверки интелекта",
+  "PF1.BuffTarIntChecks": "Проверки интеллекта",
   "PF1.BuffTarWisChecks": "Проверки мудрости",
   "PF1.BuffTarChaChecks": "Проверки харизмы",
   "PF1.BuffTarBonusSkillRanks": "Дополнительные пункты навыков",
   "PF1.BuffTarBonusFeats": "Дополнительные черты",
+  "PF1.BuffTarAllAttackRolls": "Все проверки атак",
+  "PF1.BuffTarAllDamageRolls": "Все проверки урона",
+  "PF1.BuffTarAllSavingThrows": "Все испытания",
+  "PF1.BuffTarAllSkills": "Все навыки",
+  "PF1.BuffTarAllAbilityChecks": "Все проверки характеристики",
+  "PF1.BuffTarAllSpeeds": "Вся скорость",
+  "PF1.BuffTarMeleeAttack": "Проверки атак ближнего боя",
+  "PF1.BuffTarRangedAttack": "Проверки атак дистанционного боя",
+
   "PF1.BuffTarSpells": "Заклинания",
   "PF1.SpellBuffEffect": "Эффект",
+
   "PF1.SkillAcr": "Акробатика",
   "PF1.SkillApr": "Оценка",
   "PF1.SkillArt": "Артистизм",
@@ -424,6 +608,9 @@
   "PF1.SkillSur": "Выживание",
   "PF1.SkillSwm": "Плавание",
   "PF1.SkillUMD": "Использование магических устройств",
+
+  "PF1.AddSkill": "Add Skill",
+
   "PF1.TargetAlly": "Союзник",
   "PF1.TargetCreature": "Существо",
   "PF1.TargetCylinder": "Цилиндр",
@@ -438,33 +625,65 @@
   "PF1.TargetSquare": "Клетка",
   "PF1.TargetSpace": "Занимаемое пространство",
   "PF1.TargetWall": "Стена",
+
   "PF1.TimeInst": "Мгновенно",
   "PF1.TimeTurn": "Ход",
+  "PF1.TimeTurnShort": "turns",
   "PF1.TimeRound": "Раунд",
+  "PF1.TimeRoundShort": "rnds",
   "PF1.TimeMinute": "Минута",
+  "PF1.TimeMinuteShort": "mins",
   "PF1.TimeHour": "Час",
+  "PF1.TimeHourShort": "hrs",
   "PF1.TimeDay": "День",
   "PF1.TimeMonth": "Месяц",
   "PF1.TimeYear": "Год",
   "PF1.TimePerm": "Постоянно",
+
   "PF1.TraitArmorProf": "Ношение брони",
   "PF1.TraitWeaponProf": "Обращение с оружием",
+
   "PF1.SpellPrepAtWill": "Неограниченно",
-  "PF1.SpellPrepPrepared": "Подготовленно",
+  "PF1.SpellPrepPrepared": "Подготовлено",
   "PF1.SpellPrepSpontaneous": "Спонтанно",
+
+  "PF1.SpellsKnown": "Заклинаний известно",
+
+  "PF1.Arcanist": "Арканист",
+  "PF1.RedMantisAssassin": "Ассасин Красного Богомола",
+  "PF1.Psychic": "Psychic",
+
   "PF1.SpellComponentVerbal": "Словесный",
   "PF1.SpellComponentSomatic": "Жестовый",
+  "PF1.SpellComponentThought": "Thought",
+  "PF1.SpellComponentEmotion": "Emotion",
   "PF1.SpellComponentMaterial": "Реагент",
   "PF1.SpellComponentFocus": "Фокусирующий предмет",
   "PF1.SpellComponentDivineFocus": "Сакральный фокусирующий предмет",
+
   "PF1.SpellComponentDivineFocusAlone": "СФ",
   "PF1.SpellComponentDivineFocusMaterial": "Р/СФ",
   "PF1.SpellComponentDivineFocusFocus": "Ф/СФ",
+
+  "PF1.AutoSpellClassLevelOffset": {
+    "Formula": "Class Level Modification",
+    "InfoBox": "If you have a prestige class that alters your class level, add that here (e.g. @classes.mysticTheurge.level)"
+  },
+
+  "PF1.LearnMoreSpell": "You can learn 1 more spell",
+  "PF1.LearnMoreSpells": "You can learn {quantity} more spells",
+  "PF1.PrepareMoreSpell": "You can prepare 1 more spell",
+  "PF1.PrepareMoreSpells": "You can prepare {quantity} more spells",
+  "PF1.SpellScoreTooLow": "Your ability score is too low to cast spells of this level",
+  "PF1.TooManySpells": "You have {quantity} too many spells",
+
   "PF1.MeasureTemplateCone": "Конус",
   "PF1.MeasureTemplateCircle": "Круг",
   "PF1.MeasureTemplateRay": "Луч",
   "PF1.MeasureTemplateRectangle": "Прямоугольник",
+
   "PF1.LoadingCompendiumBrowser": "Загрузка библиотеки...",
+
   "PF1.ItemTypeWeapon": "Оружие",
   "PF1.ItemTypeEquipment": "Снаряжение",
   "PF1.ItemTypeLoot": "Добыча",
@@ -475,11 +694,13 @@
   "PF1.ItemTypeFeat": "Черта",
   "PF1.ItemTypeAttack": "Атака",
   "PF1.ItemTypeRace": "Народ",
+
   "PF1.WeaponType": "Тип Оружия",
   "PF1.WeaponTypeSimple": "Простое",
   "PF1.WeaponTypeMartial": "Особое",
   "PF1.WeaponTypeExotic": "Экзотическое",
   "PF1.WeaponTypeSplash": "Жидкостное",
+
   "PF1.WeaponPropBlocking": "Блокирующее",
   "PF1.WeaponPropBrace": "Упираемое",
   "PF1.WeaponPropDeadly": "Смертельное",
@@ -497,13 +718,16 @@
   "PF1.WeaponPropSunder": "Разрушающее",
   "PF1.WeaponPropThrown": "Метательное",
   "PF1.WeaponPropTrip": "Сбивающее",
+
   "PF1.WeaponSubtype": "Подтип оружия",
   "PF1.WeaponPropLight": "Одноручное",
   "PF1.WeaponPropOneHanded": "Полуторное",
   "PF1.WeaponPropTwoHanded": "Двуручное",
   "PF1.WeaponSubtypeRanged": "Дистанционное",
+
   "PF1.EquipTypeShield": "Щит",
   "PF1.EquipTypeArmor": "Броня",
+
   "PF1.EquipTypeLight": "Легкая броня",
   "PF1.EquipTypeMedium": "Средняя броня",
   "PF1.EquipTypeHeavy": "Тяжелая броня",
@@ -514,6 +738,7 @@
   "PF1.EquipTypeOtherShield": "Щит (прочее)",
   "PF1.EquipTypeClothing": "Одежда",
   "PF1.EquipTypeWondrousItem": "Волшебная вещица",
+
   "PF1.EquipSlotSlotless": "Без ячейки",
   "PF1.EquipSlotArmor": "Броня",
   "PF1.EquipSlotShield": "Щит",
@@ -529,12 +754,14 @@
   "PF1.EquipSlotHands": "Руки",
   "PF1.EquipSlotRing": "Кольцо",
   "PF1.EquipSlotFeet": "Ноги",
+
   "PF1.ConsumableTypePotion": "Зелье/Масло",
   "PF1.ConsumableTypePoison": "Яд",
   "PF1.ConsumableTypeDrug": "Медикамент",
   "PF1.ConsumableTypeScroll": "Свиток",
   "PF1.ConsumableTypeWand": "Жезл",
   "PF1.ConsumableTypeStaff": "Посох",
+
   "PF1.AttackTypeWeapon": "Атака оружием",
   "PF1.AttackTypeWeaponPlural": "Атаки оружием",
   "PF1.AttackTypeNatural": "Естественная атака",
@@ -543,11 +770,13 @@
   "PF1.AttackTypeAbilityPlural": "Классовые способности",
   "PF1.AttackTypeRacial": "Особенность народа",
   "PF1.AttackTypeRacialPlural": "Особенности народа",
+
   "PF1.FeatTypeFeat": "Черта",
   "PF1.FeatTypeClassFeat": "Особенность класса",
   "PF1.FeatTypeTraits": "Штрих",
   "PF1.FeatTypeRacial": "Особенность народа",
   "PF1.FeatTypeTemplate": "Шаблон",
+
   "PF1.ActivationTypePassive": "Пассивное",
   "PF1.ActivationTypeFree": "Свободное действие",
   "PF1.ActivationTypeSwift": "Быстрое действие",
@@ -560,8 +789,11 @@
   "PF1.ActivationTypeMinute": "Минута",
   "PF1.ActivationTypeHour": "Час",
   "PF1.ActivationTypeSpecial": "Особый",
+  "PF1.ActivationTypeNonaction": "Nonaction",
+  "PF1.ActivationTypeAoO": "Attack of Opportunity",
   "PF1.ActivationTypeReaction": "Ответное действие",
   "PF1.ActivationTypeAction": "Действие",
+
   "PF1.ActivationTypeFreePlural": "Свободные действия",
   "PF1.ActivationTypeSwiftPlural": "Быстрые действия",
   "PF1.ActivationTypeImmediatePlural": "Прерывающие действия",
@@ -574,10 +806,12 @@
   "PF1.ActivationTypeHourPlural": "Часы",
   "PF1.ActivationTypeReactionPlural": "Ответные действия",
   "PF1.ActivationTypeActionPlural": "Действия",
+
   "PF1.LimitedUseSingle": "Одноразовый",
   "PF1.LimitedUseDay": "В день",
   "PF1.LimitedUseWeek": "В неделю",
   "PF1.LimitedUseCharges": "Заряды",
+
   "PF1.ActorSizeFine": "Крошечный",
   "PF1.ActorSizeDiminutive": "Миниатюрный",
   "PF1.ActorSizeTiny": "Маленький",
@@ -587,6 +821,7 @@
   "PF1.ActorSizeHuge": "Огромный",
   "PF1.ActorSizeGargantuan": "Гигантский",
   "PF1.ActorSizeColossal": "Колоссальный",
+
   "PF1.SpellSchoolAbjuration": "Преграждение",
   "PF1.SpellSchoolConjuration": "Воплощение",
   "PF1.SpellSchoolDivination": "Прорицание",
@@ -596,6 +831,7 @@
   "PF1.SpellSchoolNecromancy": "Некромантия",
   "PF1.SpellSchoolTransmutation": "Превращение",
   "PF1.SpellSchoolUniversal": "Универсализм",
+
   "PF1.SpellLevel0": "Фокусы/Молитвы",
   "PF1.SpellLevel1": "1 Круг",
   "PF1.SpellLevel2": "2 Круг",
@@ -606,30 +842,44 @@
   "PF1.SpellLevel7": "7 Круг",
   "PF1.SpellLevel8": "8 Круг",
   "PF1.SpellLevel9": "9 Круг",
+
   "PF1.FavouredClassBonuses": "Бонусы предпочитаемого класса",
-  "PF1.FavouredClassHP": "Очки Здоровья",
+  "PF1.FavouredClassHP": "Пункты здоровья",
   "PF1.FavouredClassSkill": "Пункты навыков",
   "PF1.FavouredClassAlt": "Другие",
-  "PF1.FavouredClassBonus.Label": "Бонусы предпочитаемого класса",
-  "PF1.FavouredClassBonus.HP": "Очки Здоровья",
-  "PF1.FavouredClassBonus.Skill": "Пункты навыков",
-  "PF1.FavouredClassBonus.Alt": "Другие",
+
+  "PF1.FavouredClassBonus": {
+    "Label": "Favoured Class Bonus",
+    "HP": "Hit Point",
+    "Skill": "Skill",
+    "Alt": "Alt"
+  },
+
   "PF1.Key_Control": "Управление",
+
   "PF1.ArmorProfLight": "Легкая броня",
   "PF1.ArmorProfMedium": "Средняя броня",
   "PF1.ArmorProfHeavy": "Тяжелая броня",
   "PF1.ArmorProfShield": "Щиты",
   "PF1.ArmorProfTowerShield": "Башенные щиты",
+
   "PF1.WeaponProfSimple": "Простое оружие",
   "PF1.WeaponProfMartial": "Особое оружие",
+
   "PF1.InventoryWeapons": "Оружие",
   "PF1.InventoryArmorEquipment": "Броня/Снаряжение",
   "PF1.InventoryConsumables": "Расходники",
   "PF1.InventoryContainers": "Контейнеры",
+
   "PF1.ChangeFlagLoseDexToAC": "Теряет мод. Лвк к КБ",
   "PF1.ChangeFlagDwarflikeEncumbrance": "Дварфоподобная нагрузка",
   "PF1.ChangeFlagMediumArmorFullSpeed": "Полная скорость в средней броне",
   "PF1.ChangeFlagHeavyArmorFullSpeed": "Полная скорость в тяжелой броне",
+  "PF1.ChangeFlagNoDex": "No Dexterity",
+  "PF1.ChangeFlagNoStr": "No Strength",
+
+  "PF1.Undefined": "Undefined",
+
   "PF1.ErrorGenericPermission": "У вас нет разрешения, чтобы совершить это действие",
   "PF1.ErrorNoActorPermission": "У вас нет разрешения, чтобы контролировать этого актёра.",
   "PF1.ErrorNoActorPermissionAlt": "У вас нет разрешения, чтобы контролировать актёра '{0}'",
@@ -646,19 +896,25 @@
   "PF1.ErrorCantIdentify": "Вам не разрешено идентифицировать предметы",
   "PF1.ErrorNoApplicableActorFoundForAction": "Не найден актёр для выполнения действия '{0}'",
   "PF1.ErrorCouldNotFindActorByName": "Не удалось найти актёра по имени '{0}'",
+  "PF1.ErrorFeatDisabled": "Эта черта отключена",
+  "PF1.ErrorNoMacroID": "Макрос с номером '{id}' не найден",
   "PF1.WarningNoSizeDie": "Не удалось подобрать подходящий размер кости {0}, проверка по умолчанию {1}",
   "PF1.WarningNoDiceAllowedInFormula": "Броски в формуле не допускаются '{0}' для {1}",
   "PF1.WarningInsufficientAmmunition": "У вас недостаточно боеприпасов вида {0}",
+  "PF1.WarningMissingAmmunition": "Ammunition linked to the attack is missing.",
   "PF1.WarningConditionalRoll": "Rolling conditional formula № {number} of conditional {name} caused an error",
   "PF1.WarningNoItemOnActor": "У актёра {0} нет предмета {1}",
   "PF1.WarningCannotCreateChargeLink": "Could not create a Charge type link between {0} and {1}, because {1} has Charge type links of its own",
   "PF1.WarningCannotCreateChargeLink2": "Could not create a Charge type link between {0} and {1}, because {1} is already linked to {2}",
   "PF1.WarningNoCombatantFound": "Участник сражения не найден",
   "PF1.NotificationCreatedAttack": "Создана атака для {0}",
+
   "PF1.Action_RollDefenses": "Проверка защиты",
+
   "PF1.Info_FirstClass": "Перетащите из {0}\nили щёлкните на кнопку '+' выше.",
   "PF1.Info_FirstClass_Compendium": "Библиотеки классов",
   "PF1.Info_MissingClass": "У вашего персонажа отсутствует класс. Зайдите в подвкладку Классы во вкладке Сводка вашего листа персонажа.",
+
   "PF1.CMDNotes": "Прим. ЗБМ",
   "PF1.AttackNotes": "Прим. Атаки",
   "PF1.EffectNotes": "Прим. Эффектов",
@@ -668,8 +924,10 @@
   "PF1.SaveNotes": "Прим. Испытаний",
   "PF1.CLNotes": "Прим. Уровня заклинателя ",
   "PF1.NonApplicable": "Н/Д",
+
   "PF1.SkillTypeAdventure": "Приключенческие",
   "PF1.SkillTypeBackground": "Фоновые",
+
   "PF1.ACP": "Штр",
   "PF1.ACPLong": "Штраф за доспехи",
   "PF1.ACPTooltip": "Штраф за доспехи",
@@ -678,12 +936,15 @@
   "PF1.RT": "Из",
   "PF1.RTTooltip": "Требуется изучение",
   "PF1.SkillModTooltip": "Модификатор навыка",
+
   "PF1.BrowseSpells": "Посмотреть заклинания",
   "PF1.BrowseItems": "Посмотреть предметы",
   "PF1.BrowseBestiary": "Посмотреть бестиарий",
   "PF1.BrowseFeats": "Посмотреть особенности",
   "PF1.BrowseClasses": "Посмотреть классы",
   "PF1.BrowseRaces": "Посмотреть народы",
+  "PF1.BrowseBuffs": "Посмотреть усиления",
+
   "PF1.LanguageAboleth": "Аболетский",
   "PF1.LanguageAbyssal": "Демонический",
   "PF1.LanguageAklo": "Акло",
@@ -721,7 +982,7 @@
   "PF1.LanguageTekritanin": "Текританский",
   "PF1.LanguageTengu": "Тэнгу",
   "PF1.LanguageTerran": "Терран",
-  "PF1.LanguageThassilonian": "Тассилонскнй",
+  "PF1.LanguageThassilonian": "Тассилонский",
   "PF1.LanguageTreant": "Язык древней",
   "PF1.LanguageUndercommon": "Подземный",
   "PF1.LanguageVegepygmy": "Растепигмейский",
@@ -735,6 +996,7 @@
   "PF1.LanguageTien": "Тяньский",
   "PF1.LanguageVarisian": "Варисийский",
   "PF1.LanguageVudrani": "Вудрани",
+
   "PF1.CreatureTypeAberration": "Аберрация",
   "PF1.CreatureTypeAnimal": "Животное",
   "PF1.CreatureTypeConstruct": "Конструкция",
@@ -748,10 +1010,12 @@
   "PF1.CreatureTypePlant": "Растение",
   "PF1.CreatureTypeUndead": "Нежить",
   "PF1.CreatureTypeVermin": "Вредитель",
+
   "PF1.Rest": "Отдых",
   "PF1.RestoreHealth": "Восстановить здоровье",
   "PF1.RestoreDailyUses": "Восстановить ежедневный запас",
   "PF1.LongTermCare": "Продолжительный уход",
+
   "PF1.BonusModifierUntyped": "Без типа",
   "PF1.BonusModifierUntypedPerm": "Без типа (постоянный)",
   "PF1.BonusModifierBase": "Базовый",
@@ -772,18 +1036,22 @@
   "PF1.BonusModifierCircumstance": "Ситуативный",
   "PF1.BonusModifierAlchemical": "Алхимический",
   "PF1.BonusModifierPenalty": "Штраф",
+
   "PF1.AbilityTypeExtraordinary": "Экстраординарные",
   "PF1.AbilityTypeSupernatural": "Сверхъестественная",
   "PF1.AbilityTypeSpell-Like": "Псевдозаклинание",
   "PF1.AbilityTypeShortExtraordinary": "Экс",
   "PF1.AbilityTypeShortSupernatural": "Св",
   "PF1.AbilityTypeShortSpell-Like": "Пс",
+
   "PF1.RollSkillMacroName": "{0}: проверка {1}",
   "PF1.RollDefensesMacroName": "{0}: проверка защиты",
   "PF1.RollCMBMacroName": "{0}: проверка модификатора боевых манёвров",
   "PF1.RollCLMacroName": "{0}: проверка уровня заклинателя ({1})",
   "PF1.RollConcentrationMacroName": "{0}: проверка концентрации ({1})",
   "PF1.RollBABMacroName": "{0}: проверка базового модификатора атаки",
+  "PF1.RollSaveMacroName": "{0}: Roll {1} Save",
+
   "PF1.DamageTypeBludgeoning": "Дробящее",
   "PF1.DamageTypePiercing": "Колющее",
   "PF1.DamageTypeSlashing": "Режущее",
@@ -795,6 +1063,7 @@
   "PF1.DamageTypeForce": "Сила",
   "PF1.DamageTypeNegative": "Негативный",
   "PF1.DamageTypePositive": "Позитивный",
+
   "PF1.SourceInfoSize": "Размер",
   "PF1.SourceInfoBuffs": "Эффект",
   "PF1.SourceInfoTemporaryBuffs": "Временный эффект",
@@ -810,8 +1079,10 @@
   "PF1.SourceInfoMiscFeatures": "Разное",
   "PF1.SourceInfoTemplate": "Шаблон",
   "PF1.SourceInfoRace": "Народ",
+
   "PF1.SourceInfoSkillRank_ClassBase": "{className} (Базовый)",
   "PF1.SourceInfoSkillRank_ClassFC": "{className} (Предпочитаемый)",
+
   "PF1.CreateItemForSpell": "Создать предмет из {0}",
   "PF1.CreateItemWand": "Жезл",
   "PF1.CreateItemScroll": "Свиток",
@@ -819,8 +1090,40 @@
   "PF1.CreateItemWandOf": "Жезл {0}",
   "PF1.CreateItemScrollOf": "Свиток {0}",
   "PF1.CreateItemPotionOf": "Зелье {0}",
+
   "PF1.CombatInfo_Header": "Бой",
   "PF1.CombatInfo_Round": "Раунд {0}",
+
+  "PF1.ScriptCalls": {
+    "Name": "Script Calls",
+    "NewName": "New Script Call",
+
+    "Use": {
+      "Name": "Use",
+      "Info": "Called when the item has been 'used' (attack, drink potion, etc.). Has the extra variable `attacks`, which is an array containing the action's attack rolls, if any."
+    },
+
+    "Equip": {
+      "Name": "Equip",
+      "Info": "Called when the item has been equipped or unequipped. Has the extra variable `equipped`, which is either `true` or `false`."
+    },
+
+    "Toggle": {
+      "Name": "Toggle",
+      "Info": "Called when the item has been enabled or disabled. Has the extra variable `state`, which is either `true` or `false`."
+    },
+
+    "ChangeQuantity": {
+      "Name": "Change Quantity",
+      "Info": "Called when the quantity of the item has been changed. Has the extra variables `quantity.previous` and `quantity.new`, which are both numbers."
+    },
+
+    "ChangeLevel": {
+      "Name": "Change Level",
+      "Info": "Called when the level of the item has been changed. Has the extra variables `quantity.previous` and `quantity.new`, which are both numbers."
+    }
+  },
+
   "PF1.AddClass": "Добавить класс",
   "PF1.Horizontal": "Горизонтально",
   "PF1.Vertical": "Вертикально",
@@ -846,6 +1149,7 @@
   "PF1.AddConditional": "Добавить состояние",
   "PF1.AddChange": "Добавить изменение",
   "PF1.AddNote": "Добавить примечание",
+  "PF1.AddEntry": "Add Entry",
   "PF1.Confirmation": "Подтверждение",
   "PF1.Attributes": "Характеристики",
   "PF1.ArmorClass": "Класс Брони",
@@ -872,6 +1176,7 @@
   "PF1.MinimumDamage": "Минимальный урон",
   "PF1.Drain": "Потеря",
   "PF1.Penalty": "Штраф",
+  "PF1.Defense": "Defense",
   "PF1.Defenses": "Защита",
   "PF1.Description": "Описание",
   "PF1.Details": "Подробности",
@@ -882,6 +1187,7 @@
   "PF1.NotEquipped": "Не экипирован",
   "PF1.Carried": "Носит",
   "PF1.Identified": "Опознано",
+  "PF1.Iterative": "Повторяющийся",
   "PF1.Unidentified": "Неопознано",
   "PF1.Exhaustion": "Бессилие",
   "PF1.FlyManeuverability": "Маневренность полёта",
@@ -905,7 +1211,9 @@
   "PF1.LevelDrain": "Уровень потери",
   "PF1.None": "Нет",
   "PF1.Notes": "Примечания",
+  "PF1.Operator": "Оператор",
   "PF1.Proficiency": "Обращение",
+  "PF1.ProficiencyPenalty": "Штраф умения",
   "PF1.Quadruped": "Четвероногий",
   "PF1.ResourcePrimary": "Ресурс 1",
   "PF1.ResourceSecondary": "Ресурс 2",
@@ -913,6 +1221,7 @@
   "PF1.Senses": "Чувства",
   "PF1.Save": "Испытание",
   "PF1.Size": "Размер",
+  "PF1.Resizing": "Resizing",
   "PF1.Special": "Особый",
   "PF1.Speed": "Скорость",
   "PF1.SpeedBurrow": "Скорость рытья",
@@ -1007,6 +1316,7 @@
   "PF1.SkillCheck": "{0} Проверка навыка",
   "PF1.SavingThrowRoll": "{0} Испытание",
   "PF1.SavingThrowButtonLabel": "{0} КБ {1}",
+  "PF1.SavingThrowButtonLabelGMSensitive": "{save} Save",
   "PF1.SpellResistanceNote": "Устойчивость к магии {0}",
   "PF1.ImmunityPlural": "Иммунитеты",
   "PF1.BABAbbr": "БМА",
@@ -1015,6 +1325,7 @@
   "PF1.CMB": "Модификатор боевых маневров",
   "PF1.CMDAbbr": "ЗБМ",
   "PF1.CMDFFAbbr": "ЗБМ Врспл",
+  "PF1.CMD": "Защита от боевых манёвров",
   "PF1.Untrained": "Не изучено",
   "PF1.DeleteItemConfirmation": "Вы уверены, что хотите удалить предмет?",
   "PF1.UnsavedTinyMCE": "Вы не сохранили текст.<br>Желаете сохранить перед закрытием?",
@@ -1066,10 +1377,12 @@
   "PF1.SpellRangeShortMetric": "(7.5 м + 1.5 м/2 УЗ)",
   "PF1.SpellRangeMediumMetric": "(30 м + 3 м/УЗ)",
   "PF1.SpellRangeLongMetric": "(120 м + 12 м/УЗ)",
+
   "PF1.AuraStrength_Faint": "Слабая",
   "PF1.AuraStrength_Moderate": "Средняя",
   "PF1.AuraStrength_Strong": "Сильная",
   "PF1.AuraStrength_Overwhelming": "Ошеломительная",
+
   "PF1.ElementalSchool": "Стихийная школа",
   "PF1.Bloodline": "Наследие",
   "PF1.ConcentrationCheck": "Проверка концентрации",
@@ -1090,11 +1403,17 @@
   "PF1.MaxDexterityModifier": "Макс. Лвк",
   "PF1.ArmorCheckPenalty": "Штраф за доспехи",
   "PF1.ArcaneSpellFailure": "Провал мистич. заклинания",
+  "PF1.AutoCalculateSpellSlots": "Авторасчёт ячеек заклинаний",
+  "PF1.HasCantrips": "Есть фокусы/молитвы",
+  "PF1.Modifications": "Модификаторы",
+  "PF1.PreparePerDay": "Подготовлено в день",
+  "PF1.CastPerDay": "Сотворение в день",
   "PF1.SkillsPerLevel": "Навыки за уровень",
   "PF1.Source": "Источник",
   "PF1.Unlimited": "Неограниченная",
   "PF1.Requirements": "Требования",
   "PF1.Formula": "Формула",
+  "PF1.BonusFormula": "Bonus Formula",
   "PF1.FormulaResult": "Результат формулы",
   "PF1.ActionType": "Тип действия",
   "PF1.AttackRollBonus": "Бонус проверки попадания",
@@ -1125,6 +1444,7 @@
   "PF1.CheckFlags": "Метки",
   "PF1.Quantity": "Количество",
   "PF1.Price": "Цена",
+  "PF1.PricePerCharge": "Price per Charge",
   "PF1.HPShort": "ПП",
   "PF1.Hardness": "Твердость",
   "PF1.SituationalBonus": "Ситуативный бонус",
@@ -1132,6 +1452,9 @@
   "PF1.UpdateActor": "Обновить актёра",
   "PF1.UpdateItem": "Обновить предмет",
   "PF1.BonusCarryStrength": "Бонус силы переноски",
+  "PF1.BonusCarryMultiplier": "Bonus Carry Multiplier",
+  "PF1.CarryStrength": "Carry Strength",
+  "PF1.CarryMultiplier": "Carry Multiplier",
   "PF1.Multiplier": "Модификатор",
   "PF1.CarryLightLoad": "Легкая нагрузка",
   "PF1.CarryMediumLoad": "Средняя нагрузка",
@@ -1142,6 +1465,7 @@
   "PF1.CarryLabel": "Переносит {0} фунтов",
   "PF1.CarryLabelKg": "Переносит {0} кг",
   "PF1.SkillBonusRankFormula": "Бонусные пункты",
+  "PF1.ToggleSkillLock": "Toggle edit lock on rarely needed parts of the skill list.",
   "PF1.Rank": "Пункт",
   "PF1.SkillRankPlural": "Пункты навыка",
   "PF1.Used": "Использовано",
@@ -1160,8 +1484,11 @@
   "PF1.PowerAttack": "Сокрушительный удар",
   "PF1.DeadlyAim": "Убийственная меткость",
   "PF1.PrimaryAttack": "Основная атака",
+  "PF1.SecondaryAttack": "Вспомогательная атака",
   "PF1.Enabled": "Вкл.",
   "PF1.Disabled": "Выкл.",
+  "PF1.Enable": "Включить",
+  "PF1.Disable": "Выключить",
   "PF1.AttackPenalty": "Штраф атаки",
   "PF1.Low": "Низкий",
   "PF1.Medium": "Средний",
@@ -1232,6 +1559,7 @@
   "PF1.Value": "Стоимость",
   "PF1.TotalItems": "{0} Всего предметов",
   "PF1.FilteredItems": "{0} Отфильтровано предметов",
+  "PF1.SearchFilterPlaceholder": "Поиск...",
   "PF1.QuickInfo": "Быстрая информация",
   "PF1.QuickActions": "Быстрые действия",
   "PF1.ConvertCurrency": "Конвертировать валюту",
@@ -1317,177 +1645,470 @@
   "PF1.StepsRequired": "Требуемые шаги",
   "PF1.RemoveInfo": "Удалить информацию",
   "PF1.CustomRollDesc": "Этот бросок использует нестандартную формулу",
+  "PF1.Hidden": "Hidden",
+  "PF1.Bright": "Bright",
+  "PF1.Dim": "Dim",
+  "PF1.PCs": "PCs",
+  "PF1.NPCs": "NPCs",
+  "PF1.Options": "Options",
+  "PF1.Cancel": "Cancel",
+
   "PF1.Migration.Start": "Начинаем обновление системы PF1 до версии {version}. Пожалуйста, подождите.",
   "PF1.Migration.Ongoing": "Обновление в процессе. Пожалуйста, дождитесь окончания.",
   "PF1.Migration.End": "Обновление системы PF1 до версии {version} успешно завершено!",
-  "PF1.Info.AddClassDialog": "Вы можете удерживать Shift для пропуска этого диалога.",
-  "PF1.Info.AddClassDialog_Desc": "Нажатие на Обычный открывает интерактивный помощник, когда нажатие Raw позволит добавить класс без каких-либо изменений.",
-  "PF1.Help.Label": "Помощь",
-  "PF1.Help.WIP": "Этот раздел находится в стадии разработки.",
-  "PF1.Help.Desc": "Это справочник по различным темам о системе Pathfinder 1 для Foundry Virtual Tabletop.",
-  "PF1.Help.Desc2": "Вы можете выбрать темы слева, содержание которых появится справа. Вверху этого окна находятся инструменты навигации. ",
-  "PF1.Help.Img.Items.Weapons": "systems/pf1/help/img/en/weapon-details.jpg",
-  "PF1.Help.Img.Items.Equipment": "systems/pf1/help/img/en/equipment-details.jpg",
-  "PF1.Help.Img.Items.Description": "systems/pf1/help/img/en/item-description.jpg",
-  "PF1.Help.Img.Items.Changes": "systems/pf1/help/img/en/item-changes.jpg",
-  "PF1.Help.Nav.Home": "Главная",
-  "PF1.Help.Nav.Actors": "Актёры",
-  "PF1.Help.Nav.Items": "Предметы",
-  "PF1.Help.Nav.ItemTypes": "Типы предметов",
-  "PF1.Help.Nav.Concepts": "Понятия",
-  "PF1.Help.Nav.Special": "Особое",
-  "PF1.Help.Content.Special.Formulas.Label": "Формулы",
-  "PF1.Help.Content.Special.Formulas.Desc": "Формулы - важный аспект в системе Pathfinder 1. Они могут быть как простыми, как одно числовое значение, так и сложными, как отдельные строки кода. Они играют большую роль в изменении предметов. ",
-  "PF1.Help.Content.Special.Formulas.Desc2": "Для быстрой справки вы также можете найти много этой информации во всплывающих подсказках на листах персонажей. ",
-  "PF1.Help.Content.Special.Formulas.Variables.Label": "Переменные",
-  "PF1.Help.Content.Special.Formulas.Variables.Desc": "Ниже вы найдете (неполный) список переменных, которые вы можете использовать в своих формулах. ",
-  "PF1.Help.Content.Special.Formulas.Variables.Header.Name": "Переменная",
-  "PF1.Help.Content.Special.Formulas.Variables.Header.Description": "Описание",
-  "PF1.Help.Content.Special.Formulas.Variables.AbilityScoreTotal.Desc": "Общее значение характеристики. Замените X одним из следующих: 'str', 'dex', 'con', 'int', 'wis', 'cha'.",
-  "PF1.Help.Content.Special.Formulas.Variables.AbilityScoreMod.Desc": "Модификатор характеристики. Замените X одним из следующих: 'str', 'dex', 'con', 'int', 'wis', 'cha'.",
-  "PF1.Help.Content.Special.Formulas.Variables.HitDie.Desc": "Общая кость здоровья, которая есть у персонажа. Это комбинация уровней классов и КЗ народа, и она исключает мифические уровни.",
-  "PF1.Help.Content.Special.Formulas.Variables.EncumbranceLevel.0": "<code>0</code>: Лёгкая",
-  "PF1.Help.Content.Special.Formulas.Variables.EncumbranceLevel.1": "<code>1</code>: Средняя",
-  "PF1.Help.Content.Special.Formulas.Variables.EncumbranceLevel.2": "<code>2</code>: Тяжёлая",
-  "PF1.Help.Content.Special.Formulas.Variables.EncumbranceLevel.Desc": "Текущий уровень нагрузки персонажа",
-  "PF1.Help.Content.Special.Formulas.Variables.ArmorType.0": "<code>0</code>: Без брони",
-  "PF1.Help.Content.Special.Formulas.Variables.ArmorType.1": "<code>1</code>: Лёгкая броня",
-  "PF1.Help.Content.Special.Formulas.Variables.ArmorType.2": "<code>2</code>: Средняя броня",
-  "PF1.Help.Content.Special.Formulas.Variables.ArmorType.3": "<code>3</code>: Тяжёлая броня",
-  "PF1.Help.Content.Special.Formulas.Variables.ArmorType.Desc": "Тип брони, которую носит актёр.",
-  "PF1.Help.Content.Special.Formulas.Variables.ShieldType.0": "<code>0</code>: Без щита",
-  "PF1.Help.Content.Special.Formulas.Variables.ShieldType.1": "<code>1</code>: Разные щиты (такой как баклер)",
-  "PF1.Help.Content.Special.Formulas.Variables.ShieldType.2": "<code>2</code>: Лёгкий щит",
-  "PF1.Help.Content.Special.Formulas.Variables.ShieldType.3": "<code>3</code>: Тяжёлый щит",
-  "PF1.Help.Content.Special.Formulas.Variables.ShieldType.4": "<code>4</code>: Башенный щит",
-  "PF1.Help.Content.Special.Formulas.Variables.ShieldType.Desc": "Тип щита, который носит актёр.",
-  "PF1.Help.Content.Special.Formulas.Variables.CombatRound.Desc": "Текущий раунд боя или <code>0</code> если нет боя.",
-  "PF1.Help.Content.Special.Formulas.Functions.Label": "Функции",
-  "PF1.Help.Content.Special.Formulas.Functions.Desc": "Ниже приведены функции, которые можно использовать в формулах, и примеры их использования. ",
-  "PF1.Help.Content.Special.Formulas.Functions.Header.Name": "Функция",
-  "PF1.Help.Content.Special.Formulas.Functions.Header.Description": "Описание",
-  "PF1.Help.Content.Special.Formulas.Functions.Header.Examples": "Примеры",
-  "PF1.Help.Content.Special.Formulas.Functions.Header.Example": "Пример",
-  "PF1.Help.Content.Special.Formulas.Functions.Max.Desc": "Возвращает наибольшее из заданных чисел.",
-  "PF1.Help.Content.Special.Formulas.Functions.Max.Examples.0": "Возвращает либо модификатор силы актёра, либо модификатор ловкости актёра, в зависимости от того, что больше.",
-  "PF1.Help.Content.Special.Formulas.Functions.Min.Desc": "Возвращает наименьшее из заданных чисел. ",
-  "PF1.Help.Content.Special.Formulas.Functions.Min.Examples.0": "Возвращает либо общее количество кости здоровья актёра, либо число 10, в зависимости от того, что меньше. ",
-  "PF1.Help.Content.Special.Formulas.Functions.Floor.Desc": "Округляет заданное число до наименьшего целого. ",
-  "PF1.Help.Content.Special.Formulas.Functions.Floor.Examples.0": "Возвращает половину от общей суммы кости здоровья актёра, округленную в меньшую сторону. ",
-  "PF1.Help.Content.Special.Formulas.Functions.Ceil.Desc": "Округляет заданное число до самого высокого целого числа.",
-  "PF1.Help.Content.Special.Formulas.Functions.Ceil.Examples.0": "Возвращает половину от общей суммы кости здоровья актёра, округленную в большую сторону.",
-  "PF1.Help.Content.Special.Formulas.Functions.Round.Desc": "Округляет заданное число до ближайшего целого.",
-  "PF1.Help.Content.Special.Formulas.Functions.Round.Examples.0": "Возвращает одну треть от общей суммы кости здоровья актёра, округленную до ближайшего целого числа. ",
-  "PF1.Help.Content.Special.Formulas.Functions.SquareRoot.Desc": "Возвращает положительный квадратный корень заданного числа. ",
-  "PF1.Help.Content.Special.Formulas.Functions.SquareRoot.Examples.0": "Возвращает 4.",
-  "PF1.Help.Content.Special.Formulas.Functions.Power.Desc": "Возвращает x в степень y. ",
-  "PF1.Help.Content.Special.Formulas.Functions.Power.Examples.0": "Возвращает 64.",
-  "PF1.Help.Content.Special.Formulas.Functions.SizeRoll.Desc": "Изменяет бросок урона согласно размеру существа.",
-  "PF1.Help.Content.Special.Formulas.Functions.SizeRoll.Examples.0": "Бросает 1d8 для средних актеров и изменяет формулу урона в соответствии с текущим размером актёра.",
-  "PF1.Help.Content.Special.Formulas.Functions.SizeRoll.Examples.1": "Переводит бросок урона 1d4 от маленького актёра (размер '2') до огромного актёра (размер '6')<br/>Результат: 3d6",
-  "PF1.Help.Content.Items.ItemTypes.Physical": "Типы физических предметов ",
-  "PF1.Help.Content.Items.ItemTypes.Other": "Типы других предметов",
-  "PF1.Help.Content.Items.Generic.EnhancementBonus": "Бонус усиления",
-  "PF1.Help.Content.Items.Generic.EnhancementBonusDesc": "Бонус усиления предмета, согласно основным правилам",
-  "PF1.Help.Content.Items.Generic.Masterwork": "Искусно сделанный",
-  "PF1.Help.Content.Items.Generic.MasterworkDesc": "Является ли предмет искусно сделанным, согласно основным правилам",
-  "PF1.Help.Content.Items.Generic.Broken": "Сломан",
-  "PF1.Help.Content.Items.Generic.BrokenDesc": "Сломан ли предмет, согласно основным правилам",
-  "PF1.Help.Content.Items.Generic.EquipmentStatus": "Статус снаряжения",
-  "PF1.Help.Content.Items.Generic.Equipped": "Экипирован",
-  "PF1.Help.Content.Items.Generic.EquippedDesc": "Является ли предмет экипированным в данный момент и передает свои изменения его актёру (если есть) ",
-  "PF1.Help.Content.Items.Generic.Identified": "Опознан (только ведущий)",
-  "PF1.Help.Content.Items.Generic.IdentifiedDesc": "Опознан ли предмет в настоящий момент и показывается ли его опознанная информация игрокам ",
-  "PF1.Help.Content.Items.Generic.Size": "Размер",
-  "PF1.Help.Content.Items.Generic.SizeDesc": "Размер предмета, подобный размеру персонажа",
-  "PF1.Help.Content.Items.Weapons.Label": "Оружие",
-  "PF1.Help.Content.Items.Weapons.Desc": "Оружие предназначено для представления физического оружия, которое персонаж может держать.",
-  "PF1.Help.Content.Items.Weapons.Category": "Категория",
-  "PF1.Help.Content.Items.Weapons.CategoryDesc": "Категория оружия (простое, особое, экзотическое или другое)",
-  "PF1.Help.Content.Items.Weapons.Type": "Тип",
-  "PF1.Help.Content.Items.Weapons.TypeDesc": "Тип оружия (одноручное, полуторное, двуручное или дистанционное)",
-  "PF1.Help.Content.Items.Weapons.Size": "Размер оружия",
-  "PF1.Help.Content.Items.Weapons.SizeDesc": "Размер оружия, подобный размеру персонажа",
-  "PF1.Help.Content.Items.Weapons.Properties": "Свойства оружия",
-  "PF1.Help.Content.Items.Weapons.PropertiesDesc": "Свойства оружия, согласно основным правилам (ничего не делает механически)",
-  "PF1.Help.Content.Items.Weapons.BonusAttackFormula": "Бонус атаки",
-  "PF1.Help.Content.Items.Weapons.BonusAttackFormulaDesc": "Формула бонуса атаки оружия. Некоторые примеры:",
-  "PF1.Help.Content.Items.Weapons.BonusAttackFormulaExamples.0": "Возникнет штраф к броску атаки -2, если модификатор Силы владельца ниже 3.",
-  "PF1.Help.Content.Items.Weapons.BaseWeaponDamage": "Базовый урон оружия",
-  "PF1.Help.Content.Items.Weapons.BaseWeaponDamageDesc": "Первое поле указывает на кость урона, который нанесет оружие среднего размера, а второе поле указывает тип наносимого им урона (например, дробящий, режущий и т. д.) ",
-  "PF1.Help.Content.Items.Weapons.BonusDamageFormula": "Бонус урона",
-  "PF1.Help.Content.Items.Weapons.BonusDamageFormulaDesc": "Бонусный урон, наносимый оружием. Некоторые примеры:",
-  "PF1.Help.Content.Items.Weapons.BonusDamageFormulaExamples.0": "Добавит либо 4, либо модификатор Силы владельца к броску урона, в зависимости от того, что ниже",
-  "PF1.Help.Content.Items.Weapons.BaseWeaponCritical": "Базовый крит. удар",
-  "PF1.Help.Content.Items.Weapons.BaseWeaponCriticalDesc": "Первое поле указывает наименьший результат d20 для шанса нанести критический удар, а во втором поле указывается сумма, на которую умножается урон",
-  "PF1.Help.Content.Items.Equipment.Label": "Снаряжение",
-  "PF1.Help.Content.Items.Equipment.Desc": "Снаряжение представляет собой все предметы, не относящиеся к оружию, включая доспехи, щиты, кольца и волшебные предметы.",
-  "PF1.Help.Content.Items.Equipment.Category": "Категория",
-  "PF1.Help.Content.Items.Equipment.CategoryDesc": "Категория брони (будь то броня, щит или что-то еще)",
-  "PF1.Help.Content.Items.Equipment.Type": "Тип",
-  "PF1.Help.Content.Items.Equipment.TypeDesc": "Тип размера брони или щита, или другой тип предмета (одежда, волшебный предмет и т. д.)",
-  "PF1.Help.Content.Items.Equipment.Slot": "Ячейка",
-  "PF1.Help.Content.Items.Equipment.SlotDesc": "Для какой ячейки предназначен этот предмет (отображается только для других предметов, кроме брони или щитов)",
-  "PF1.Help.Content.Items.Equipment.Status": "Статус снаряжения",
-  "PF1.Help.Content.Items.Equipment.StatusDesc": "Флажки статуса этого конкретного предмета",
-  "PF1.Help.Content.Items.Consumables.Label": "Расходники",
-  "PF1.Help.Content.Items.Consumables.Desc": "Расходники представляют собой физические предметы с ограниченным использованием, такие как зелья или жезлы.",
-  "PF1.Help.Content.Items.Containers.Label": "Контейнеры",
-  "PF1.Help.Content.Items.Containers.Desc": "Контейнеры это предметы, которые могут содержать другие предметы.",
-  "PF1.Help.Content.Items.Loot.Label": "Добыча",
-  "PF1.Help.Content.Items.Loot.Desc": "Добыча это все типы физических предметов, которые не подходят к другим основным категориям, например, товары и боеприпасы.",
-  "PF1.Help.Content.Items.Description.Label": "Описание",
-  "PF1.Help.Content.Items.Description.Name": "Имя",
-  "PF1.Help.Content.Items.Description.NameDesc": "Название предмета, если он опознан.",
-  "PF1.Help.Content.Items.Description.UnidentifiedName": "Неопознанное имя",
-  "PF1.Help.Content.Items.Description.UnidentifiedNameDesc": "Название предмета, если он неопознан. Если оставить поле пустым, показывает опознаное имя для игроков. ",
-  "PF1.Help.Content.Items.Description.Description": "Описание",
-  "PF1.Help.Content.Items.Description.DescriptionDesc": "Описание для отображения, если он опознан.",
-  "PF1.Help.Content.Items.Description.UnidentifiedDescription": "Неопознанное описание",
-  "PF1.Help.Content.Items.Description.UnidentifiedDescriptionDesc": "Описание для отображения игрокам, если он неопознан.",
-  "PF1.Help.Content.Items.Description.Price": "Цена",
-  "PF1.Help.Content.Items.Description.PriceDesc": "Цена предмета в золотых монетах, если он опознан.",
-  "PF1.Help.Content.Items.Description.UnidentifiedPrice": "Неопознанная цена",
-  "PF1.Help.Content.Items.Description.UnidentifiedPriceDesc": "Цена предмета в золотых монетах, если он неопознан.",
-  "PF1.Help.Content.Items.Changes.Label": "Изменения",
-  "PF1.Help.Content.Items.Changes.Flags.Label": "Метки",
-  "PF1.Help.Content.Items.Changes.Flags.LoseDexToAC.Label": "Теряет мод. Лвк к КБ",
-  "PF1.Help.Content.Items.Changes.Flags.LoseDexToAC.Desc": "Пока предмет с этим изменением активен, персонаж теряет свои бонусы ловкости к классу брони.",
-  "PF1.Help.Content.Items.Changes.Flags.SetAbility.Label": "X Характеристика",
-  "PF1.Help.Content.Items.Changes.Flags.SetAbility.Desc": "Устанавливает соответствующую характеристику на указанное значение. Это может быть удалено в более поздней версии, поскольку то же самое можно сделать с помощью оператора '=' (см. ниже).",
-  "PF1.Help.Content.Items.Changes.Flags.DwarfLikeEncumbrance.Label": "Дварфоподобная нагрузка",
-  "PF1.Help.Content.Items.Changes.Flags.DwarfLikeEncumbrance.Desc": "Пока предмет с этим изменением активен, его актер не будет замедляться из-за средней или большой нагрузки.",
-  "PF1.Help.Content.Items.Changes.Flags.FullSpeedMediumArmor.Label": "Полная скорость в средней броне",
-  "PF1.Help.Content.Items.Changes.Flags.FullSpeedMediumArmor.Desc": "Пока предмет с этим изменением активен, его актер не будет замедлен, если будет носить среднюю броню.",
-  "PF1.Help.Content.Items.Changes.Flags.FullSpeedHeavyArmor.Label": "Полная скорость в тяжёлой броне",
-  "PF1.Help.Content.Items.Changes.Flags.FullSpeedHeavyArmor.Desc": "Пока предмет с этим изменением активен, его актер не будет замедлен, если будет носить тяжёлую броню.",
-  "PF1.Help.Content.Items.Changes.Changes.Label": "Изменения",
-  "PF1.Help.Content.Items.Changes.Changes.Desc": "Это список изменений, которые влияют на актёра, владеющего предметом. Слева направо:",
-  "PF1.Help.Content.Items.Changes.Changes.Formula.Label": "Формула",
-  "PF1.Help.Content.Items.Changes.Changes.Formula.Desc": "Формула, с помощью которой можно повлиять на конкретное изменение. То, как это изменяет атрибут актёра, зависит от оператора (см. далее). См. {tagOpen}эту страницу{tagClose} для получения подробной информации.",
-  "PF1.Help.Content.Items.Changes.Changes.Operator.Label": "Оператор",
-  "PF1.Help.Content.Items.Changes.Changes.Operator.Desc": "Операторы '+' (относительный), '=' (абсолютный) или 'S' (скрипт). Относительные значения <i>добавляют</i> к атрибуту, а абсолютные значения <i>устанавливают</i> атрибут равным результату формулы. См. ниже скрипты операторов.",
-  "PF1.Help.Content.Items.Changes.Changes.Priority.Label": "Приоритет",
-  "PF1.Help.Content.Items.Changes.Changes.Priority.Desc": "Приоритет этого изменения. Изменения с более низким приоритетом будут обработаны позже. ",
-  "PF1.Help.Content.Items.Changes.Changes.Target.Label": "Цель",
-  "PF1.Help.Content.Items.Changes.Changes.Target.Desc": "Общая категория изменяемого атрибута.",
-  "PF1.Help.Content.Items.Changes.Changes.SubTarget.Label": "Подцель",
-  "PF1.Help.Content.Items.Changes.Changes.SubTarget.Desc": "Конкретный атрибут, который нужно изменить с этим изменением.",
-  "PF1.Help.Content.Items.Changes.Changes.Modifier.Label": "Модификатор",
-  "PF1.Help.Content.Items.Changes.Changes.Modifier.Desc": "Модификатор этого изменения.",
-  "PF1.Help.Content.Items.Changes.ContextNotes.Label": "Ситуативные примечания",
-  "PF1.Help.Content.Items.Changes.ContextNotes.Desc": "Это список ситуативных примечаний, которые отображаются в конкретных случаях. Слева направо:",
-  "PF1.Help.Content.Items.Changes.ContextNotes.Description.Label": "Описание",
-  "PF1.Help.Content.Items.Changes.ContextNotes.Description.Desc": "Описание для отображения соответствующих ситуаций. Каждая новая строка добавляет новое описание к той же цели. Вы можете использовать встроенные в Foundry броски.",
-  "PF1.Help.Content.Items.Changes.ContextNotes.Target.Label": "Цель",
-  "PF1.Help.Content.Items.Changes.ContextNotes.Target.Desc": "Общая категория изменяемого атрибута.",
-  "PF1.Help.Content.Items.Changes.ContextNotes.SubTarget.Label": "Подцель",
-  "PF1.Help.Content.Items.Changes.ContextNotes.SubTarget.Desc": "Конкретный атрибут, который нужно изменить с этим изменением.",
-  "PF1.Help.Content.Items.Changes.ScriptOperator.Label": "Операторы скриптов",
-  "PF1.Help.Content.Items.Changes.ScriptOperator.Desc": "Формулы операторов скриптов на самом деле представляют собой небольшие скрипты JavaScript, которые запускаются при обработке изменений. Чтобы понять это, требуются некоторые знания JavaScript.",
-  "PF1.Help.Content.Items.Changes.ScriptOperator.Variables.0.Name": "d",
-  "PF1.Help.Content.Items.Changes.ScriptOperator.Variables.0.Desc": "Данные броска на момент обработки изменения. Содержит любую переменную, которую вы можете использовать в обычной формуле изменения, используя символ `@`.",
-  "PF1.Help.Content.Items.Changes.ScriptOperator.Variables.1.Name": "result",
-  "PF1.Help.Content.Items.Changes.ScriptOperator.Variables.1.Desc": "Он содержит еще две переменные, <code>value</code> и <code>operator</code>. Задайте для <code>value</code> числовой результат, который вы хотите изменить, и <code>operator</code> либо <code>\"add\"</code> или <code>\"set\"</code>.<br><br><code>value</code> по умолчанию <code>0</code> и <code>operator</code> по умолчанию <code>\"add\"</code>.",
-  "PF1.Help.Content.Items.Changes.ScriptOperator.Variables.Desc": "В этих скриптах могут использоваться следующие переменные:"
+
+  "PF1.DenyDexBonus": "Deny Dexterity bonus",
+
+  "PF1.Application": {
+    "ChangeTargetSelector": {
+      "Title": "Select change target"
+    },
+    "ContextNoteTargetSelector": {
+      "Title": "Select context note target"
+    },
+    "XPDistributor": {
+      "Title": "Experience Distributor",
+      "Options": {
+        "BonusExperience": "Bonus Experience"
+      },
+      "SplitEvenly": "Split Evenly",
+      "GiveToAll": "Give to All",
+      "TotalExperience": "Total Experience",
+      "SplitExperience": "Split Experience"
+    }
+  },
+
+  "PF1.Info": {
+    "AddClassDialog": "You can hold Shift to bypass this dialog.",
+    "AddClassDialog_Desc": "Pressing Normal opens a short wizard, while pressing Raw will add the class without any alterations."
+  },
+
+  "PF1.Help": {
+    "Label": "Help",
+    "WIP": "This section is currently a Work In Progress (WIP).",
+    "Desc": "This is a reference sheet and information panel on various topics of the Pathfinder 1e system for Foundry Virtual Tabletop.",
+    "Desc2": "You can select topics on the left, whose contents will appear on the right. On the top of this window are navigational tools.",
+    "Img": {
+      "Items.Weapons": "systems/pf1/help/img/en/weapon-details.jpg",
+      "Items.Equipment": "systems/pf1/help/img/en/equipment-details.jpg",
+      "Items.Description": "systems/pf1/help/img/en/item-description.jpg",
+      "Items.Changes": "systems/pf1/help/img/en/item-changes.jpg"
+    },
+    "Nav": {
+      "Home": "Home",
+      "Actors": "Actors",
+      "Items": "Items",
+      "ItemTypes": "Item Types",
+      "Concepts": "Concepts",
+      "Special": "Special"
+    },
+    "Content": {
+      "Special": {
+        "Formulas": {
+          "Label": "Formulas",
+          "Desc": "Formulas are an important aspect in the Pathfinder 1e system. They can be as simple as a single numerical value, or as complex as single lines of code. They play a great role in item changes.",
+          "Desc2": "For a quick reference, you can find a lot of this information in tooltips on actor sheets as well.",
+          "Variables": {
+            "Label": "Variables",
+            "Desc": "Below you will find an (incomplete) list of variables you can use within your formulas.",
+            "Header": {
+              "Name": "Variable",
+              "Description": "Description"
+            },
+            "AbilityScoreTotal": {
+              "Desc": "The total value of an ability score. Replace X with one of the following: 'str', 'dex', 'con', 'int', 'wis', 'cha'."
+            },
+            "AbilityScoreMod": {
+              "Desc": "The modifier of an ability score. Replace X with one of the following: 'str', 'dex', 'con', 'int', 'wis', 'cha'."
+            },
+            "HitDie": {
+              "Desc": "The total hit die the actor has. This is a combination of class levels and racial hit die, and it excludes mythic tiers."
+            },
+            "SavingThrows": {
+              "Desc": "The total bonus of the appropriate saving throw for that actor. X can be either 'fort' (Fortitude), 'ref' (Reflex) or 'will' (Will)"
+            },
+            "SavingThrowsBase": {
+              "Desc": "The total base bonus of the appropriate saving throw for that actor, as given by class levels. X can be either 'fort' (Fortitude), 'ref' (Reflex) or 'will' (Will)"
+            },
+            "EncumbranceLevel": {
+              "Desc": "The current encumbrance level of the actor.",
+              "0": "<code>0</code>: Light Load",
+              "1": "<code>1</code>: Medium Load",
+              "2": "<code>2</code>: Heavy Load"
+            },
+            "ArmorType": {
+              "Desc": "The type of armor the actor is wearing.",
+              "0": "<code>0</code>: No Armor",
+              "1": "<code>1</code>: Light Armor",
+              "2": "<code>2</code>: Medium Armor",
+              "3": "<code>3</code>: Heavy Armor"
+            },
+            "ShieldType": {
+              "Desc": "The type of shield the actor is holding.",
+              "0": "<code>0</code>: No Shield",
+              "1": "<code>1</code>: Miscellaneous Shield (such as a buckler)",
+              "2": "<code>2</code>: Light Shield",
+              "3": "<code>3</code>: Heavy Shield",
+              "4": "<code>4</code>: Tower Shield"
+            },
+            "CombatRound": {
+              "Desc": "The current round of combat, or <code>0</code> if not in combat."
+            },
+            "CritMult": {
+              "Desc": "The critical multiplier of the attack, or 1 if the attack is not a critical threat. Only appropriate for use in damage rolls and attack and effect notes."
+            }
+          },
+          "Functions": {
+            "Label": "Functions",
+            "Desc": "The following are functions you can use within formulas, and examples on how to use them.",
+            "Header": {
+              "Name": "Function",
+              "Description": "Description",
+              "Examples": "Examples",
+              "Example": "Example"
+            },
+            "Max": {
+              "Desc": "Returns the highest of the given numbers.",
+              "Examples": {
+                "0": "Returns the either the actor's Strength modifier or the actor's Dexterity modifier, whichever is higher."
+              }
+            },
+            "Min": {
+              "Desc": "Returns the lowest of the given numbers.",
+              "Examples": {
+                "0": "Returns the either the actor's Hit Die total or the number 10, whichever is lower."
+              }
+            },
+            "Floor": {
+              "Desc": "Rounds the given number down to the lowest integer.",
+              "Examples": {
+                "0": "Returns half of the actor's Hit Die total, rounded down."
+              }
+            },
+            "Ceil": {
+              "Desc": "Rounds the given number down to the highest integer.",
+              "Examples": {
+                "0": "Returns half of the actor's Hit Die total, rounded up."
+              }
+            },
+            "Round": {
+              "Desc": "Rounds the given number to the nearest integer.",
+              "Examples": {
+                "0": "Returns one third of the actor's Hit Die total, rounded to the nearest whole number."
+              }
+            },
+            "SquareRoot": {
+              "Desc": "Returns the positive square root of the given number.",
+              "Examples": {
+                "0": "Returns 4."
+              }
+            },
+            "Power": {
+              "Desc": "Returns x to the power of y.",
+              "Examples": {
+                "0": "Returns 64."
+              }
+            },
+            "SizeRoll": {
+              "Desc": "Alters a damage roll to that of another size category.",
+              "Examples": {
+                "0": "Rolls 1d8 for medium actors, and alters the damage formula according to the calling actor's current size.",
+                "1": "Translates a damage roll of 1d4 from a tiny actor (size '2') to a huge actor (size '6')<br/>Output: 3d6"
+              }
+            },
+            "SizeReach": {
+              "Desc": "Generates a number equal to the reach of a creature of a certain size and stature.",
+              "Examples": {
+                "0": "Returns the normal melee reach as if the actor was 1 size category higher.",
+                "1": "Returns the reach a huge, long actor would have with a reach weapon."
+              }
+            }
+          }
+        },
+        "CompendiumBrowsers": {
+          "Label": "Compendium Browsers",
+          "Properties": {
+            "Label": "Compendium Properties",
+            "Hidden": {
+              "Label": "Hidden",
+              "Description": "Hidden compendiums will not show up for players in compendium browsers."
+            },
+            "Disabled": {
+              "Label": "Disabled",
+              "Description": "Disabled compendiums will not show up for anyone (including GMs) in compendium browsers."
+            }
+          }
+        }
+      },
+      "Items": {
+        "ItemTypes.Physical": "Physical Item Types",
+        "ItemTypes.Other": "Other Item Types",
+        "Generic": {
+          "EnhancementBonus": "Enhancement Bonus",
+          "EnhancementBonusDesc": "The item's enhancement bonus, as per the Core rules",
+          "Masterwork": "Masterwork",
+          "MasterworkDesc": "Whether the item is masterwork, as per the Core rules",
+          "Broken": "Broken",
+          "BrokenDesc": "Whether the item is broken, as per the Core rules",
+          "EquipmentStatus": "Equipment Status",
+          "Equipped": "Equipped",
+          "EquippedDesc": "Whether the item is currently equipped, and transfers its changes to its actor (if any)",
+          "Identified": "Identified (GM only)",
+          "IdentifiedDesc": "Whether the item is currently identified, and shows its identified information to players",
+          "Size": "Size",
+          "SizeDesc": "The item's size, similar to a character's size"
+        },
+        "Weapons": {
+          "Label": "Weapons",
+          "Desc": "Weapons are meant to represent physical weapons that a character can hold.",
+          "Category": "Category",
+          "CategoryDesc": "The weapon's category (simple, martial, exotic or misc)",
+          "Type": "Type",
+          "TypeDesc": "The weapon's type (light, one-handed, two-handed or ranged)",
+          "Size": "Weapon Size",
+          "SizeDesc": "The weapon's size, similar to a character's size",
+          "Properties": "Weapon Properties",
+          "PropertiesDesc": "The weapon's properties, as per the Core rules (does nothing mechanically)",
+          "BonusAttackFormula": "Bonus Attack Formula",
+          "BonusAttackFormulaDesc": "The weapon's attack bonus formula. Some examples:",
+          "BonusAttackFormulaExamples": {
+            "0": "Will incur a penalty to the attack roll of -2 if the wielder's Strength modifier is lower than 3"
+          },
+          "BaseWeaponDamage": "Base Weapon Damage",
+          "BaseWeaponDamageDesc": "The first field indicates the damage die a Medium-sized weapon would deal, and the second field indicates the type of damage it deals (i.e. Bludgeoning, Slashing, etc.)",
+          "BonusDamageFormula": "Bonus Damage Formula",
+          "BonusDamageFormulaDesc": "The bonus damage the weapon deals. Some examples:",
+          "BonusDamageFormulaExamples": {
+            "0": "Will add either 4 or the wielder's Strength modifier to the damage roll, whichever is lower"
+          },
+          "BaseWeaponCritical": "Base Weapon Critical",
+          "BaseWeaponCriticalDesc": "The first field indicates the lowest result of the attack's d20 to be a critical threat, and the second field indicates the amount by which the damage is multiplied"
+        },
+        "Equipment": {
+          "Label": "Equipment",
+          "Desc": "Equipment represents all non-weapon equippable items, including armor, shields, rings and wondrous items.",
+          "Category": "Category",
+          "CategoryDesc": "The armor's category (whether it's armor, a shield, or something else)",
+          "Type": "Type",
+          "TypeDesc": "Armor or Shield size type, or other item type (clothing, wondrous item, etc.)",
+          "Slot": "Slot",
+          "SlotDesc": "What slot this item is for (only shows up for items other than armor or shields)",
+          "Status": "Equipment Status",
+          "StatusDesc": "Status flags of this particular item"
+        },
+        "Consumables": {
+          "Label": "Consumables",
+          "Desc": "Consumables represent physical items with limited uses, such as potions or wands."
+        },
+        "Containers": {
+          "Label": "Containers",
+          "Desc": "Containers are items which can contain other items."
+        },
+        "Loot": {
+          "Label": "Loot",
+          "Desc": "Loot items are all types of physical items that don't fit in other major categories, such as trade goods and ammunition."
+        },
+        "Description": {
+          "Label": "Description",
+          "Name": "Name",
+          "NameDesc": "The name of the item, if identified.",
+          "UnidentifiedName": "Unidentified Name",
+          "UnidentifiedNameDesc": "The name of the item, if unidentified. Shows the identified name for players if left empty.",
+          "Description": "Description",
+          "DescriptionDesc": "The description to show, if identified.",
+          "UnidentifiedDescription": "Unidentified Description",
+          "UnidentifiedDescriptionDesc": "The description to show to players, if unidentified.",
+          "Price": "Price",
+          "PriceDesc": "The price of the item, in gold pieces, if identified",
+          "UnidentifiedPrice": "Unidentified Price",
+          "UnidentifiedPriceDesc": "The price of the item, in gold pieces, if unidentified."
+        },
+        "Changes": {
+          "Label": "Changes",
+          "Flags": {
+            "Label": "Flags",
+            "LoseDexToAC": {
+              "Label": "Lose Dex to AC",
+              "Desc": "While an item with this change is active, a character loses his Dexterity bonuses to Armor Class."
+            },
+            "SetAbility": {
+              "Label": "X Ability",
+              "Desc": "Sets the appropriate ability to the flag's specified value. This might be removed in a later version, since the same can be accomplished with the '=' operator (see below)."
+            },
+            "DwarfLikeEncumbrance": {
+              "Label": "Dwarf-like Encumbrance",
+              "Desc": "While an item with this change is active, its actor will not be slowed down by being in a medium or heavy load."
+            },
+            "FullSpeedMediumArmor": {
+              "Label": "Full Speed in Medium Armor",
+              "Desc": "While an item with this change is active, its actor will not be slowed down by wearing medium armor."
+            },
+            "FullSpeedHeavyArmor": {
+              "Label": "Full Speed in Heavy Armor",
+              "Desc": "While an item with this change is active, its actor will not be slowed down by wearing heavy armor."
+            }
+          },
+          "Changes": {
+            "Label": "Changes",
+            "Desc": "This is a list of changes which affect the actor owning the item directly. From left to right:",
+            "Formula": {
+              "Label": "Formula",
+              "Desc": "The formula by which to affect this particular change. The way this alters an actor's attribute depends on the operator (see next). See {tagOpen}this page{tagClose} for more details."
+            },
+            "Operator": {
+              "Label": "Operator",
+              "Desc": "The operators are '+' (relative), '=' (absolute) or 'S' (script). Relative values <i>add</i> to an attribute, while absolute values <i>set</i> the attribute to the result of the formula. See below for the script operator."
+            },
+            "Priority": {
+              "Label": "Priority",
+              "Desc": "The priority of this change. Changes with lower priorities will be processed later."
+            },
+            "Target": {
+              "Label": "Target",
+              "Desc": "A general category of the attribute to alter."
+            },
+            "SubTarget": {
+              "Label": "Sub-Target",
+              "Desc": "The specific attribute to alter with this change."
+            },
+            "Modifier": {
+              "Label": "Modifier",
+              "Desc": "The modifier of this change."
+            }
+          },
+          "ContextNotes": {
+            "Label": "Context Notes",
+            "Desc": "This a list of contextual notes, which are shown in appropriate situations. From left to right:",
+            "Description": {
+              "Label": "Description",
+              "Desc": "The description to show in appropriate situations. Every newline adds a new description to the same target. You can use Foundry-style inline rolls in these."
+            },
+            "Target": {
+              "Label": "Target",
+              "Desc": "A general category of the attribute to alter."
+            },
+            "SubTarget": {
+              "Label": "Sub-Target",
+              "Desc": "The specific attribute to alter with this change."
+            }
+          },
+          "ScriptOperator": {
+            "Label": "Script Operator",
+            "Desc": "The 'formula' of changes using the Script operator are actually small JavaScript scripts that are run when processing changes. Some JavaScript knowledge is required to understand these.",
+            "Variables": {
+              "Desc": "Within these scripts, the following variables can be used:",
+              "0": {
+                "Name": "d",
+                "Desc": "The roll data at the time of processing the change. Contains any variable you could use within a normal change formula using the `@` symbol."
+              },
+              "1": {
+                "Name": "result",
+                "Desc": "This contains two more variables, <code>value</code> and <code>operator</code>. Set <code>value</code> to the numeric result you want for the change, and <code>operator</code> to either <code>\"add\"</code> or <code>\"set\"</code>.<br><br><code>value</code> defaults to <code>0</code> and <code>operator</code> defaults to <code>\"add\"</code>."
+              }
+            }
+          }
+        },
+        "Flags": {
+          "Label": "Flags",
+          "Desc": {
+            "Basic": "Flags can be used by modules and macros. Boolean Flags don't do anything by themselves, but Dictionary Flags can be used in rolls, in addition to their use in macros and modules.",
+            "DictionaryFlags": {
+              "Basic": "You can access Dictionary Flags within rolls by using <code>@dFlags.(itemTag).(flagName)</code>, or with <code>@item.dFlags.(flagName)</code> within the current item."
+            }
+          }
+        },
+        "ScriptCalls": {
+          "Label": "Script Calls",
+          "Desc": {
+            "Basic": "Most items have certain categories of script calls, which are a combination of macros and inline scripts which run at specific events for that item."
+          },
+          "Macros": {
+            "Label": "Using Macros as Script Calls",
+            "Desc": {
+              "Basic": "In order to use Macros as Script Calls, simply drag a macro over from somewhere to the category of Script Calls you wish to run them on."
+            }
+          },
+          "Variables": {
+            "Label": "Variables",
+            "Desc": {
+              "Basic": "The variable availability differs somewhat from what's available in regular Macros. Below you will find a list of variables which are present within Script Calls."
+            },
+            "List": {
+              "Item": {
+                "Desc": "The item from which this event was called."
+              },
+              "Actor": {
+                "Desc": "The actor which owns the calling item. Can be <code>null</code> if the item is not on an actor."
+              },
+              "Token": {
+                "Desc": "The token of the associated actor, if any."
+              },
+              "Shared": {
+                "Desc": "An object which starts out as empty, but is shared between all script calls of a single event, after which it is returned to the calling function, which may or may not do something with it."
+              }
+            }
+          },
+
+          "Categories": {
+            "Label": "Categories",
+
+            "Use": {
+              "Name": "Use",
+              "Desc": {
+                "Basic": "Called when an item has been used. If an item has at least one script call under this category, it's usable no matter what. This call will have two additional variables: <code>{var1}</code> which is an array of attack data, and <code>{var2}</code>, which containts the attack's measure template (if any).",
+                "Extra1": "Setting <code>shared.hideChat</code> to <code>true</code> prevents a chat card from being shown.",
+                "Extra2": "Setting <code>shared.reject</code> to <code>true</code> prevents the item from being used, take away charges and showing a chat card."
+              }
+            },
+
+            "Equip": {
+              "Name": "Equip",
+              "Desc": {
+                "Basic": "Called when an item has been equipped or unequipped. This call will have an additional variable <code>{var1}</code> which is either <code>true</code> if it has just been equipped, or <code>false</code> if it has just been unequipped."
+              }
+            },
+
+            "Toggle": {
+              "Name": "Toggle",
+              "Desc": {
+                "Basic": "Called when a buff or feature has been toggled on/off. This call will have an additional variable <code>{var1}</code> which is either <code>true</code> if it has just been enabled or <code>false</code> if it has just been disabled."
+              }
+            },
+
+            "ChangeQuantity": {
+              "Name": "Change Quantity",
+              "Desc": {
+                "Basic": "Called when the quantity of a physical item has been changed. This call will have the additional variables <code>{var1}</code> and <code>{var2}</code>, which contains the quantity numbers before and after the update respectively."
+              }
+            },
+
+            "ChangeLevel": {
+              "Name": "Change Level",
+              "Desc": {
+                "Basic": "Called when the level of a item has been changed. This call will have the additional variables <code>{var1}</code> and <code>{var2}</code>, which contains the numbers before and after the update respectively."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "ACTOR": {
+    "TypeCharacter": "Player Character (PC)",
+    "TypeNpc": "Nonplayer Character (NPC)",
+    "TypeBasic": "Basic (for modules)"
+  },
+  "ITEM": {
+    "TypeWeapon": "Weapon",
+    "TypeEquipment": "Equipment, Magic Item, etc.",
+    "TypeConsumable": "Consumable",
+    "TypeLoot": "Loot",
+    "TypeClass": "Class, Racial HD, Mythic Path, etc.",
+    "TypeSpell": "Spell",
+    "TypeFeat": "Feat, Class Feature, Talent, etc.",
+    "TypeBuff": "Buff",
+    "TypeAttack": "Attack",
+    "TypeRace": "Race",
+    "TypeContainer": "Container"
+  }
 }
