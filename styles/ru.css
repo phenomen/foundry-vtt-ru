@@ -1,4 +1,91 @@
-@import "cds.css";
+:root {
+  --font-sans: "Inter", "Arial", sans-serif;
+  --font-sans-condensed: "Oswald", "Inter Condensed", sans-serif;
+  --font-serif: "PT Serif", "Georgia", "Times New Roman", serif;
+  --font-fantasy: "Manuskript", "Papyrus", fantasy;
+  --font-mono: "Roboto Mono", "Consolas", "Courier New", monospace;
+  --font-cursive: "Marck Script", "Lucida Handwriting", cursive;
+  --font-sci-fi: "OCR-A", monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+  --text-8xl: 6rem;
+
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray-300: #d4d4d8;
+  --color-gray-500: #71717a;
+  --color-gray-700: #3f3f46;
+  --color-gray-900: #18181b;
+  --color-pink-300: #f9a8d4;
+  --color-pink-500: #ec4899;
+  --color-pink-700: #be185d;
+  --color-pink-900: #831843;
+  --color-rose-300: #fda4af;
+  --color-rose-500: #f43f5e;
+  --color-rose-700: #be123c;
+  --color-rose-900: #881337;
+  --color-red-300: #fca5a5;
+  --color-red-500: #ef4444;
+  --color-red-700: #b91c1c;
+  --color-red-900: #7f1d1d;
+  --color-orange-300: #fdba74;
+  --color-orange-500: #f97316;
+  --color-orange-700: #c2410c;
+  --color-orange-900: #7c2d12;
+  --color-yellow-300: #fde047;
+  --color-yellow-500: #eab308;
+  --color-yellow-700: #a16207;
+  --color-yellow-900: #713f12;
+  --color-lime-300: #bef264;
+  --color-lime-500: #84cc16;
+  --color-lime-700: #4d7c0f;
+  --color-lime-900: #365314;
+  --color-green-300: #86efac;
+  --color-green-500: #22c55e;
+  --color-green-700: #15803d;
+  --color-green-900: #14532d;
+  --color-emerald-300: #6ee7b7;
+  --color-emerald-500: #10b981;
+  --color-emerald-700: #047857;
+  --color-emerald-900: #064e3b;
+  --color-teal-300: #5eead4;
+  --color-teal-500: #14b8a6;
+  --color-teal-700: #0f766e;
+  --color-teal-900: #134e4a;
+  --color-cyan-300: #67e8f9;
+  --color-cyan-500: #06b6d4;
+  --color-cyan-700: #0e7490;
+  --color-cyan-900: #164e63;
+  --color-blue-300: #93c5fd;
+  --color-blue-500: #3b82f6;
+  --color-blue-700: #1d4ed8;
+  --color-blue-900: #1e3a8a;
+  --color-indigo-300: #a5b4fc;
+  --color-indigo-500: #6366f1;
+  --color-indigo-700: #4338ca;
+  --color-indigo-900: #312e81;
+  --color-purple-300: #d8b4fe;
+  --color-purple-500: #a855f7;
+  --color-purple-700: #7e22ce;
+  --color-purple-900: #4c1d95;
+  --color-fuchsia-300: #f0abfc;
+  --color-fuchsia-500: #d946ef;
+  --color-fuchsia-700: #a21caf;
+  --color-fuchsia-900: #701a75;
+}
+
+
+
 
 /* CYRILLIC FONTS  */ /* INTER  */
 

@@ -1,21 +1,50 @@
+
+@font-face {
+  font-family: 'atwriter';
+  src: url("../fonts/PTSerif-Regular.ttf") format("truetype") !important;
+} 
+
+@font-face {
+  font-family: TypeWriterCondensed;
+  src: url("../fonts/Inter.ttf") format("truetype") !important;
+}
+
+@font-face {
+  font-family: TypeWriterCondensed;
+  font-weight: bold;
+  src: url("../fonts/Oswald.ttf") format("truetype") !important;
+}
+
+@font-face {
+  font-family: TypeWriterCondensed;
+  font-weight: 600;
+  src: url("../fonts/Oswald.ttf") format("truetype") !important;
+}
+
+@font-face {
+  font-family: 'SpecialElite';
+  src: url("../fonts/ocra_cyr.otf") format("opentype") !important;
+}
+
+
 .typewriter-condensed-font {
-  font-family: var(--font-sans-condensed);
+  font-family: var(--font-sans-condensed) !important;
 }
 
 .martel-font {
-  font-family: var(--font-serif);
+  font-family: var(--font-serif) !important;
 }
 
 .signika-font {
-  font-family: var(--font-sans-condensed);
+  font-family: var(--font-sans-condensed) !important;
 }
 
 .atwriter-font {
-  font-family: var(--font-sans);
+  font-family: var(--font-sci-fi) !important;
 }
 
 .special-elite-font {
-  font-family: var(--font-sans-condensed);
+  font-family: var(--font-sans-condensed) !important;
 }
 
 .bio-grid-5col {
@@ -74,4 +103,9 @@
 
 .deltagreen .tabs .item.active {
   color: #21641f !important;
+}
+
+.old-paper-background{
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
