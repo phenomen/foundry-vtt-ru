@@ -572,7 +572,6 @@
         "ArmorClassLabel": "Класс брони",
         "ArmorClassShortLabel": "КБ",
         "ArmorDexLabel": "Макс. мод. Лвк",
-        "ArmorEquippedLabel": "Экипировано",
         "ArmorGreaterResilientRune": "Улучшенная укреплённая",
         "ArmorGreaterStrikingRune": "Улучшенная разящая",
         "ArmorGroupChain": "Кольчужная",
@@ -696,6 +695,7 @@
                 "Pincer": "Pincer",
                 "Pseudopod": "Pseudopod",
                 "Rock": "Rock",
+                "Spikes": "Spikes",
                 "Spine": "Spine",
                 "Stinger": "Stinger",
                 "Sunbeam": "Sunbeam",
@@ -757,7 +757,8 @@
         "BonusSPLabel": "Бонус ПЖ",
         "BonusSPperLevel": "Бонус ПЖ за уровень",
         "BonusSPperLevelTitle": "Применяется один раз на каждом уровне (Модификатор Выносливости прибавляется отдельно)",
-        "BrowserClearFilters": "Очистить фильтры",
+        "BrowserClearFilter": "Clear Filter",
+        "BrowserClearFilters": "Clear All Filters",
         "BrowserFilterAlignments": "Мировоззрения",
         "BrowserFilterAncestries": "Народы",
         "BrowserFilterArmorFilters": "Фильтры брони",
@@ -792,6 +793,14 @@
         "BulkShortLabel": "Вес",
         "BulkTypeLight": "Лёгкий",
         "CapacityBarLabel": "Заполненность",
+        "CarryType": {
+            "held1": "Held 1H",
+            "held2": "Held 2H",
+            "worn": "Worn",
+            "worn-slotted": "Worn (Slotted)",
+            "stowed": "Stowed",
+            "dropped": "Dropped"
+        },
         "CastLabel": "Сотворить",
         "CharacterDetails": "Подробности персонажа",
         "CharacterLevelLabel": "Уровень",
@@ -816,6 +825,7 @@
         "ClassTitle": "Класс вашего персонажа",
         "ClickToSetInitiative": "Нажмите, чтобы назначить инициативу выбранных токенов.",
         "ClickToSetInitiativeContext": "Назначить инициативой",
+        "ClipboardNotification": "Copied \"{clipText}\" to the clipboard.",
         "ColdIronStrikes": "Удары холодным железом",
         "CompendiumDirectory": {
             "Folders": {
@@ -834,6 +844,8 @@
         "CompendiumBrowser": {
             "AddedItem": "Предмет {item} добавлен выбранным актёрам.",
             "AddedItemToCharacter": "{item} добавлен к {character}.",
+            "BestiaryBrowser": "Bestiary Browser",
+            "Hint": "Use the tabs above to select a compendium",
             "ProgressBar": {
                 "LoadingPack": "Загрузка {pack}",
                 "LoadingComplete": "Загрузка завершена"
@@ -960,7 +972,8 @@
             "ExpendFormula": "Израсходовать формулу",
             "ToggleFreeCrafting": "Toggle Free Crafting",
             "ToggleQuickAlchemy": "Quick Alchemy",
-            "UndeletableTooltip": "Эта формула является частью другого предмета и не может быть удалена отдельно от него."
+            "UndeletableTooltip": "Эта формула является частью другого предмета и не может быть удалена отдельно от него.",
+            "QuickAddTitle": "Quick add this formula to the daily crafting list."
         },
         "CraftDCTitle": "СЛ",
         "CraftItemTitle": "Ремесло",
@@ -1327,6 +1340,21 @@
                     "EndOfTurn": "Конец хода"
                 },
                 "ShowTokenIcon": "Показывать иконку токена?"
+            },
+            "Feat": {
+                "OnlyLevel1": "Must be taken at level 1",
+                "TakeMultiple": {
+                    "Label": "Can be taken multiple times",
+                    "Two": "Up to 2×",
+                    "Three": "Up to 3×",
+                    "Four": "Up to 4×",
+                    "NoLimit": "No limit"
+                },
+                "Warning": {
+                    "TakenAfterLevel1": "{item} must be taken at level 1, but {actor} is at level {actorLevel}.",
+                    "TakenMoreThanOnce": "{item} may only be taken once, but {actor} has selected it an additional time.",
+                    "TakenMoreThanMax": "{item} may only be {maxTaken} times, but {actor} has selected it {timesTaken} times."
+                }
             },
             "Heritage": {
                 "AncestryNotFound": "The referenced ancestry item was not found.",
@@ -1980,6 +2008,10 @@
                     "Name": "Авто-истечение эффектов",
                     "Hint": "Эффекты автоматически выключают связанные элементы правил при истечении длительности."
                 },
+                "RemoveExpiredEffects": {
+                    "Name": "Remove expired effects",
+                    "Hint": "Expired effects are automatically removed from actors (requires a GM to be logged in)."
+                },
                 "ExperimentalDamageFormatting": {
                     "Name": "Use experimental damage chat card formatting",
                     "Hint": "Parse damage roll data and decorate the resulting chat card with differently formatted roll formulas, damage types and categories, and roll notes for splash and persistent damage."
@@ -2368,7 +2400,7 @@
         "SpellBasicSaveOption": "Обычное",
         "SpellBrowserSearchHint": "Вы можете искать по имени и атрибутам. Доступные для поиска атрибуты:<br> source, spellType, level, school, components, materials, target, range, time, duration, damage, damageType, save, concentration, ritual, ability and classes. <br>Пример: 'fire, damage:d6' выдаст все элементы со словом fire в названии и костью урона d6.",
         "SpellCantripLabel": "Фокус",
-        "SpellCastingFormat": "{tradition} {preparationType} Заклинания",
+        "SpellCastingFormat": "{traditionSpells} {preparationType} Spells",
         "SpellComponentF": "Фокусирующий предмет",
         "SpellComponentM": "Реагент",
         "SpellComponentS": "Жестовый",
@@ -2545,10 +2577,10 @@
         "TotalCoinage": "Всего монет",
         "TotalWealth": "Общее богатство",
         "TraditionSpells": {
-            "Arcane": "Заклинания {tradition}",
-            "Divine": "Заклинания {tradition}",
-            "Occult": "Заклинания {tradition}",
-            "Primal": "Заклинания {tradition}"
+            "Arcane": "{tradition}",
+            "Divine": "{tradition}",
+            "Occult": "{tradition}",
+            "Primal": "{tradition}"
         },
         "TrainedSkillsLabel": "Изученные навыки",
         "Traits": "Дескрипторы",
@@ -2642,6 +2674,7 @@
         "TraitChangeling": "Перевёртыш",
         "TraitChaotic": "Хаос",
         "TraitCharauKa": "Чарау-ка",
+        "TraitCharm": "Charm",
         "TraitCleric": "Жрец",
         "TraitClimbing": "Лазательное",
         "TraitClockwork": "Заводной",
@@ -2729,6 +2762,7 @@
         "TraitDescriptionChampion": "Обозначает способности класса поборника.",
         "TraitDescriptionChangeling": "Существо с этим дескриптором является представителем народа подменышей.",
         "TraitDescriptionChaotic": "Эффекты с этим дескриптором часто управляют энергиями хаотичных Внешних планов и противостоят принципиальным служителям божеств и служителям принципиальных божеств. Существо с этим дескриптором обладает хаотичным мировоззрением. Способности с этим дескриптором доступны только хаотичным существам.",
+        "TraitDescriptionCharm": "Abilities that magically influence attitudes.",
         "TraitDescriptionClass": "Archetypes with the class trait fundamentally diverge from your class's specialties but still fit within the theme of your class. You can select a class archetype only if your class meets the criteria listed in the archetype's prerequisites. Class archetypes always alter or replace some of a class's static class features in addition to any new feats they offer. It might be possible to take a class archetype at 1st level if it alters or replaces some of the class's initial class features. The 1st-level ability is presented much like a class feature and includes the class archetype's prerequisites and rules on how it changes your class. If you select this ability, you must take that archetype's dedication feat at 2nd level, and you proceed normally afterward. You can never have more than one class archetype.",
         "TraitDescriptionCleric": "Обозначает способности класса жреца.",
         "TraitDescriptionClockwork": "Clockworks are intricate, complex constructs that can be programmed to perform specific functions.",
@@ -2876,6 +2910,7 @@
         "TraitDescriptionOread": "A type of geniekin descended from a being from the Plane of Earth.",
         "TraitDescriptionOrc": "Существо с этим дескриптором - представитель народа орков. Это зеленокожие существа, чаще всего обладающие ночным зрением. Способность с этим дескриптором может быть выбрана и использована исключительно орками. Оружие с этим дескриптором обычно изготовлено и используется орками.",
         "TraitDescriptionParry": "Такое оружие можно применять для парирования ударов противника. Если вы используете такое оружие и умелы в обращении с ним хотя бы на изученном уровне, вы можете потратить одиночное действие, чтобы подготовиться к отражению атак и получить ситуативный бонус +1 к КБ до начала своего следующего хода.",
+        "TraitDescriptionPlant": "Vegetable creatures have the plant trait. They are distinct from normal plants. Magical effects with this trait manipulate or conjure plants or plant matter in some way. Those that manipulate plants have no effect in an area with no plants.",
         "TraitDescriptionPoison": "Эффект с этим дескриптором отравляет существо или наносит урон ядом. Предмет с таким дескриптором отравлен и может вызвать недуг.",
         "TraitDescriptionPolymorph": "Такие эффекты полностью изменяют форму цели. Одновременно на цель может действовать не более одного эффекта полиморфа. Если цель подвергнется действию другого такого эффекта, он попытается нейтрализовать первый. При успехе он заменяет его, а в случае провала не действует на цель. Если такой эффект даёт новые Удары, они считаются магическими. Если не указано иное, заклинания полиморфа не позволяют цели обрести внешность конкретного существа — лишь форму характерного представителя определённого типа или народа. Если вы приняли боевую форму с помощью заклинания полиморфа, её особые параметры могут быть изменены лишь ситуативными бонусами, бонусами состояния и штрафами. Если не указано иное, боевая форма лишает вас возможности творить заклинания, говорить и совершать большую часть действий с дескриптором «манипуляция», требующих использования рук. В случае споров относительно того, можно ли совершить действие, последнее слово остаётся за ведущим. Ваше снаряжение становится частью вашего тела. Постоянные способности снаряжения продолжают действовать, но активировать предметы вы не можете.",
         "TraitDescriptionPortable": "Portable siege weapons, such as battering rams, can be more easily carried and have a role in both warfare and smaller conflicts or exploration.",
@@ -3096,6 +3131,7 @@
         "TraitLitany": "Литания",
         "TraitLizardfolk": "Ящеролюд",
         "TraitLocathah": "Локата",
+        "TraitMagic": "Magic",
         "TraitMagical": "Магический",
         "TraitMagus": "Магус",
         "TraitManipulate": "Манипуляция",
@@ -3679,6 +3715,7 @@
                 "starknife": "Нож-звезда",
                 "stiletto-pen": "Ручка-стилет",
                 "sun-sling": "Sun Sling",
+                "switchscythe": "Switchscythe",
                 "sword-cane": "Меч-трость",
                 "tamchal-chakram": "Тамчал чакрам",
                 "taw-launcher": "Пулестрел",
@@ -3715,22 +3752,22 @@
         "WeaponCustomDamageLabel": "Дополнительный настраиваемый урон",
         "WeaponCustomDamageTitle": "Эта секция добавляет любой дополнительный урон, который не удалось добавить с помощью рун. Эффект удара и Критический эффект на данный момент не используются и добавлены только для информации.",
         "WeaponDamageLabel": "Базовый урон",
-        "WeaponDescriptionAxe": "Критический эффект: выберите одно существо в вашей зоне досягаемости рядом с первоначальной целью. Если его КБ ниже результата проверки атаки для критического удара, вы наносите существу урон, равный результату броска костей урона оружия (включая дополнительные кости за руну усиления, если она есть). Этот результат не удваивается, и к нему не прибавляются другие бонусы и дополнительные кости.",
-        "WeaponDescriptionBomb": "Критический эффект: увеличьте радиус урона брызгами (если он есть) до 10 футов.",
-        "WeaponDescriptionBow": "Critical Specialization Effect: If the target of the critical hit is adjacent to a surface, it gets stuck to that surface by the missile. The target is immobilized and must spend an Interact action to attempt a <span data-pf2-check=\"athletics\" data-pf2-label=\"Pull the Missile Free DC\" data-pf2-dc=\"10\" data-pf2-show-dc=\"all\">Athletics</span> check to pull the missile free; it can't move from its space until it succeeds. The creature doesn't become stuck if it is incorporeal, is liquid (like a water elemental or some oozes), or could otherwise escape without effort",
-        "WeaponDescriptionBrawling": "Critical Specialization Effect: The target must succeed at a Fortitude save against your class DC or be @Compendium[pf2e.conditionitems.Slowed]{Slowed 1} until the end of your next turn.",
-        "WeaponDescriptionClub": "Критический эффект: вы отталкиваете цель от себя на расстояние до 10 футов (на ваш выбор). Это принудительное перемещение.",
-        "WeaponDescriptionDart": "Critical Specialization Effect: The target takes [[/r {1d6}[persistent,bleed]]] @Compendium[pf2e.conditionitems.Persistent Damage]{Persistent Bleed Damage}. You gain an item bonus to this bleed damage equal to the weapon's item bonus to attack rolls.",
-        "WeaponDescriptionFirearm": "Critical Specialization Effect: The target must succeed at a Fortitude save against your class DC or be @Compendium[pf2e.conditionitems.Stunned]{Stunned 1}.",
-        "WeaponDescriptionFlail": "Critical Specialization Effect: The target is knocked @Compendium[pf2e.conditionitems.Prone]{Prone}.",
-        "WeaponDescriptionHammer": "Critical Specialization Effect: The target is knocked @Compendium[pf2e.conditionitems.Prone]{Prone}.",
-        "WeaponDescriptionKnife": "Critical Specialization Effect: The target takes [[/r {1d6}[persistent,bleed]]] @Compendium[pf2e.conditionitems.Persistent Damage]{Persistent Bleed Damage}. You gain an item bonus to this bleed damage equal to the weapon's item bonus to attack rolls.",
-        "WeaponDescriptionPick": "Критический эффект: оружие вонзается в цель, она получает 2 дополнительного урона за каждую кость урона оружия.",
-        "WeaponDescriptionPolearm": "Критический эффект: цель перемещается на 5 футов в выбранном вами направлении. Это принудительное перемещение.",
-        "WeaponDescriptionShield": "Критический эффект: вы отталкиваете цель от себя на 5 футов. Это принудительное перемещение.",
-        "WeaponDescriptionSling": "Critical Specialization Effect: The target must succeed at a Fortitude save against your class DC or be @Compendium[pf2e.conditionitems.Stunned]{Stunned 1}.",
-        "WeaponDescriptionSpear": "Critical Specialization Effect: The weapon pierces the target, weakening its attacks. The target is @Compendium[pf2e.conditionitems.Clumsy]{Clumsy 1} until the start of your next turn.",
-        "WeaponDescriptionSword": "Critical Specialization Effect: The target is made off-balance by your attack, becoming @Compendium[pf2e.conditionitems.Flat-Footed]{Flat-Footed} until the start of your next turn.",
+        "WeaponDescriptionAxe": "<strong>Critical Specialization Effect</strong> Choose one creature adjacent to the initial target and within reach. If its AC is lower than your attack roll result for the critical hit, you deal damage to that creature equal to the result of the weapon damage die you rolled (including extra dice for its potency rune, if any). This amount isn't doubled, and no bonuses or other additional dice apply to this damage.",
+        "WeaponDescriptionBomb": "<strong>Critical Specialization Effect</strong> Increase the radius of the bomb's splash damage (if any) to 10 feet.",
+        "WeaponDescriptionBow": "<strong>Critical Specialization Effect</strong> If the target of the critical hit is adjacent to a surface, it gets stuck to that surface by the missile. The target is immobilized and must spend an Interact action to attempt a @Check[type:athletics|dc:10|name:Pull the Missile Free|showDC:all] check to pull the missile free; it can't move from its space until it succeeds. The creature doesn't become stuck if it is incorporeal, is liquid (like a water elemental or some oozes), or could otherwise escape without effort",
+        "WeaponDescriptionBrawling": "<strong>Critical Specialization Effect</strong> The target must succeed at a Fortitude save against your class DC or be @Compendium[pf2e.conditionitems.Slowed]{Slowed 1} until the end of your next turn.",
+        "WeaponDescriptionClub": "<strong>Critical Specialization Effect</strong> You knock the target away from you up to 10 feet (you choose the distance). This is forced movement.",
+        "WeaponDescriptionDart": "<strong>Critical Specialization Effect</strong> The target takes [[/r {1d6}[persistent,bleed]]] @Compendium[pf2e.conditionitems.Persistent Damage]{Persistent Bleed Damage}. You gain an item bonus to this bleed damage equal to the weapon's item bonus to attack rolls.",
+        "WeaponDescriptionFirearm": "<strong>Critical Specialization Effect</strong> The target must succeed at a Fortitude save against your class DC or be @Compendium[pf2e.conditionitems.Stunned]{Stunned 1}.",
+        "WeaponDescriptionFlail": "<strong>Critical Specialization Effect</strong> The target is knocked @Compendium[pf2e.conditionitems.Prone]{Prone}.",
+        "WeaponDescriptionHammer": "<strong>Critical Specialization Effect</strong> The target is knocked @Compendium[pf2e.conditionitems.Prone]{Prone}.",
+        "WeaponDescriptionKnife": "<strong>Critical Specialization Effect</strong> The target takes [[/r {1d6}[persistent,bleed]]] @Compendium[pf2e.conditionitems.Persistent Damage]{Persistent Bleed Damage}. You gain an item bonus to this bleed damage equal to the weapon's item bonus to attack rolls.",
+        "WeaponDescriptionPick": "<strong>Critical Specialization Effect</strong> The weapon viciously pierces the target, who takes 2 additional damage per weapon damage die.",
+        "WeaponDescriptionPolearm": "<strong>Critical Specialization Effect</strong> The target is moved 5 feet in a direction of your choice. This is forced movement.",
+        "WeaponDescriptionShield": "<strong>Critical Specialization Effect</strong> You knock the target back from you 5 feet. This is forced movement.",
+        "WeaponDescriptionSling": "<strong>Critical Specialization Effect</strong> The target must succeed at a Fortitude save against your class DC or be @Compendium[pf2e.conditionitems.Stunned]{Stunned 1}.",
+        "WeaponDescriptionSpear": "<strong>Critical Specialization Effect</strong> The weapon pierces the target, weakening its attacks. The target is @Compendium[pf2e.conditionitems.Clumsy]{Clumsy 1} until the start of your next turn.",
+        "WeaponDescriptionSword": "<strong>Critical Specialization Effect</strong> The target is made off-balance by your attack, becoming @Compendium[pf2e.conditionitems.Flat-Footed]{Flat-Footed} until the start of your next turn.",
         "WeaponGroups": "Группы оружия",
         "WeaponGroupAxe": "Топоры",
         "WeaponGroupBomb": "Бомбы",
@@ -4537,6 +4574,7 @@
             "TotalNumberFamiliarAbilities": "Всего # способностей фамильяра",
             "Familiar": "Фамильяр",
             "Creature": "Существо",
+            "CreatureType": "Creature Type",
             "Perception": "Внимание",
             "Defenses": "Защита",
             "ArmorClass": "Класс брони",
