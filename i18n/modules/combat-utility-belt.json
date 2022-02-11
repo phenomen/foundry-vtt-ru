@@ -3,9 +3,14 @@
         "SHORT_NAME": "CUB",
         "NAME": "Combat Utility Belt",
         "ID": "combat-utility-belt",
-        "ENHANCED_CONDITIONS.OutputChatConfirm": {
-            "Title": "Включить вывод в чат для всех состояний?",
-            "Content": "Нажмите 'Да', чтобы включить 'Выводить в чат' для всех состояний."
+        "ENHANCED_CONDITIONS" :{
+            "OutputChatConfirm": {
+                "Title": "Включить вывод в чат для всех состояний?",
+                "Content": "Нажмите 'Да', чтобы включить 'Выводить в чат' для всех состояний."
+            },
+            "ConditionLab": {
+                "NoReference": "--Нет документа-- (перетащите журнал, предмет или актёра в это поле)"
+            }
         },
         "CONCENTRATOR": {
             "MessagePrefix": "Combat Utility Belt - Концентратор",
@@ -211,7 +216,7 @@
     
     "SETTINGS.GiveXP.EnableN": "Включить награждение ПО",
     "SETTINGS.GiveXP.EnableH": "Включает распределение пунктов опыта между игроками после боя за победу над врагами",
-    "SETTINGS.GiveXP.ModifierN": "Модификатор",
+    "SETTINGS.GiveXP.ModifierN": "Модификатор ПО",
     "SETTINGS.GiveXP.ModifierH": "Умножает полученные ПО на это значение",
 
     "SETTINGS.HideNames.EnableN": "Скрывать имена актёров",

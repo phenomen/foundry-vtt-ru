@@ -284,6 +284,38 @@
                 },
                 "Title": "Прыжок в высоту"
             },
+            "Interact": {
+                "Title": "Interact",
+                "Notes": "",
+                "Draw1H": {
+                    "Title": "Draw (1H)",
+                    "Description": "Draw {weapon} (1 handed)."
+                },
+                "Draw2H": {
+                    "Title": "Draw (2H)",
+                    "Description": "Draw {weapon} (2 handed)."
+                },
+                "PickUp1H": {
+                    "Title": "Pick up (1H)",
+                    "Description": "Pick up {weapon} from ground (1 handed)."
+                },
+                "PickUp2H": {
+                    "Title": "Pick up (2H)",
+                    "Description": "Pick up {weapon} from ground (2 handed)."
+                },
+                "Grip2H": {
+                    "Title": "Grip (2H)",
+                    "Description": "Grip {weapon} with two hands."
+                },
+                "Retrieve": {
+                    "Title": "Retrieve",
+                    "Description": "Retrieve {weapon} from stowed container."
+                },
+                "Sheathe": {
+                    "Title": "Sheathe",
+                    "Description": "Sheathe {weapon}."
+                }
+            },
             "Impersonate": {
                 "Notes": {
                     "success": "<strong>Успех</strong> Существо считает, что вы тот, за кого себя выдаёте. Если вы будете вести себя иначе, вам может потребоваться пройти проверку повторно.",
@@ -338,6 +370,18 @@
                 "BadArgs": "Это действие должно выполняться исключительно с одним выбранным персонажем игрока или ведущего.",
                 "NoShieldEquipped": "{actor} должен экипировать щит.",
                 "ShieldIsBroken": "У {actor} сломан {shield}."
+            },
+            "Release": {
+                "Title": "Release",
+                "Notes": "Unlike most manipulate actions, Release does not trigger reactions that can be triggered by actions with the manipulate trait (such as Attack of Opportunity).",
+                "Drop": {
+                    "Title": "Drop",
+                    "Description": "Drop {weapon} onto ground."
+                },
+                "Release1H": {
+                    "Title": "Release (1H)",
+                    "Description": "Wield {weapon} with a single hand."
+                }
             },
             "Request": {
                 "Notes": {
@@ -668,49 +712,6 @@
         "BackgroundTitle": "Происхождение вашего персонажа",
         "BaseModifier": "Базовый модификатор",
         "BaseWeapons": "Модели оружия",
-        "BattleForm": {
-            "Attack": {
-                "Antler": "Antler",
-                "Beak": "Beak",
-                "Beard": "Beard",
-                "Body": "Body",
-                "BoneShard": "Bone Shard",
-                "Boot": "Boot",
-                "Branch": "Branch",
-                "CubeFace": "Cube Face",
-                "Fangs": "Fangs",
-                "FireMote": "Fire Mote",
-                "Foot": "Foot",
-                "Foreleg": "Foreleg",
-                "Gust": "Gust",
-                "Hoof": "Hoof",
-                "Horn": "Horn",
-                "HolyMace": "Holy Mace",
-                "Leaf": "Leaf",
-                "Leg": "Leg",
-                "LightingLash": "Lightning Lash",
-                "Mandibles": "Mandibles",
-                "Moonbeam": "Moonbeam",
-                "PiercingHymn": "Piercing Hymn",
-                "Pincer": "Pincer",
-                "Pseudopod": "Pseudopod",
-                "Rock": "Rock",
-                "Spikes": "Spikes",
-                "Spine": "Spine",
-                "Stinger": "Stinger",
-                "Sunbeam": "Sunbeam",
-                "Tail": "Tail",
-                "Talon": "Talon",
-                "Tendril": "Tendril",
-                "Tentacle": "Tentacle",
-                "TentacleArm": "Tentacle Arm",
-                "Tongue": "Tongue",
-                "Vine": "Vine",
-                "Wave": "Wave",
-                "WaterSpout": "Water Spout",
-                "Wing": "Wing"
-            }
-        },
         "BestiaryBrowserSearchHint": "Вы можете искать по имени и атрибутам. Доступные для поиска атрибуты:<br> source, spellType, level, school, components, materials, target, range, time, duration, damage, damageType, save, concentration, ritual, ability and classes. <br>Пример: 'fire, damage:d6' выдаст все элементы со словом fire в названии и костью урона d6.",
         "Biography": "Биография",
         "BiographyAllies": "Союзники",
