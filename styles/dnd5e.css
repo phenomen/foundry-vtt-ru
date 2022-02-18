@@ -345,10 +345,24 @@
   padding: 2px;
 }
 
+.dnd5e.sheet.item .sheet-navigation .item {
+  font-size: var(--text-sm);
+}
+
 #chat-log thead > tr > th {
   font-family: var(--font-sans-condensed);
   font-size: var(--text-xs);
   font-weight: 500;
+}
+
+.dnd5e.sheet.item {
+  min-height: 400px;
+  max-height: 95%;
+  min-width: 580px;
+}
+
+.dnd5e.sheet.item .weapon-properties label.checkbox {
+  flex: 0 0 100px;
 }
 
 /* TIDY5E */
