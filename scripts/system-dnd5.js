@@ -137,10 +137,16 @@ export function InitDND5() {
     if (game.settings.get("ru-ru", "compendiumTranslation")) {
       new Dialog({
         title: "Перевод библиотек",
-        content: `<p>Для перевода библиотек системы D&D5 требуется установить и активировать модуль <b>Babele</b>. Вы можете отключить перевод библиотек в настройках модуля, чтобы это окно больше не отображалось.</p>`,
+        content: `<p>Для перевода библиотек системы D&D5 требуется установить и активировать модуль <b>Babele</b>. Вы можете отключить перевод библиотек в настройках модуля.</p>`,
         buttons: {
           done: {
             label: "Хорошо",
+          },
+          never: {
+            label: "Больше не показывать",
+            callback: () => {
+              game.settings.set("ru-ru", "compendiumTranslation", false);
+            },
           },
         },
       }).render(true);
