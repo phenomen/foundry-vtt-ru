@@ -210,9 +210,10 @@
                 "Title": "Деморализация"
             },
             "Disarm": {
+                "EffectLabel": "Using weapon with loose grip",
                 "Notes": {
                     "criticalSuccess": "<strong>Критический успех</strong> Вы успешно выбиваете из рук цели предмет, который падает на землю в её пространстве.",
-                    "success": "<strong>Успех</strong> Вы ослабляете хватку цели на предмете. Все попытки разоружения этой цели для данного предмета до начала её хода получают ситуативный бонус +2, а сама цель получает ситуативный штраф -2 к атакам этим предметом и иным проверкам, требующим крепко его держать.",
+                    "success": "<strong>Success</strong> You weaken your opponent's grasp on the item. Until the start of that creature's turn, attempts to Disarm the opponent of that item gain a +2 circumstance bonus, and the target takes a -2 circumstance penalty to attacks with the item or other checks requiring a firm grasp on the item. @Compendium[pf2e.equipment-effects.z3ATL8DcRVrT0Uzt]{Effect: Disarm (Success)}",
                     "criticalFailure": "<strong>Критический провал</strong> Вы теряете равновесие и @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Застигнуты врасплох} до начала своего следующего раунда."
                 },
                 "Title": "Разоружение"
@@ -286,34 +287,38 @@
             },
             "Interact": {
                 "Title": "Interact",
-                "Notes": "",
+                "Parenthetical": "Interact {purpose}",
                 "Draw1H": {
                     "Title": "Draw (1H)",
-                    "Description": "Draw {weapon} (1 handed)."
+                    "Description": "{actor} draws their {weapon}."
                 },
                 "Draw2H": {
                     "Title": "Draw (2H)",
-                    "Description": "Draw {weapon} (2 handed)."
+                    "Description": "{actor} draws their {weapon}."
                 },
                 "PickUp1H": {
-                    "Title": "Pick up (1H)",
-                    "Description": "Pick up {weapon} from ground (1 handed)."
+                    "Title": "Pick Up (1H)",
+                    "Description": "{actor} picks up {weapon} from the ground."
                 },
                 "PickUp2H": {
-                    "Title": "Pick up (2H)",
-                    "Description": "Pick up {weapon} from ground (2 handed)."
+                    "Title": "Pick Up (2H)",
+                    "Description": "{actor} picks up {weapon} from the ground."
                 },
-                "Grip2H": {
-                    "Title": "Grip (2H)",
-                    "Description": "Grip {weapon} with two hands."
+                "Grip": {
+                    "Title": "Change Grip (2H)",
+                    "Description": "{actor} grips their {weapon} with two hands."
                 },
-                "Retrieve": {
-                    "Title": "Retrieve",
-                    "Description": "Retrieve {weapon} from stowed container."
+                "Retrieve1H": {
+                    "Title": "Retrieve (1H)",
+                    "Description": "{actor} retrieves their {weapon}."
+                },
+                "Retrieve2H": {
+                    "Title": "Retrieve (1H)",
+                    "Description": "{actor} retrieves their {weapon}."
                 },
                 "Sheathe": {
                     "Title": "Sheathe",
-                    "Description": "Sheathe {weapon}."
+                    "Description": "{actor} sheathes their {weapon}."
                 }
             },
             "Impersonate": {
@@ -373,14 +378,13 @@
             },
             "Release": {
                 "Title": "Release",
-                "Notes": "Unlike most manipulate actions, Release does not trigger reactions that can be triggered by actions with the manipulate trait (such as Attack of Opportunity).",
                 "Drop": {
                     "Title": "Drop",
-                    "Description": "Drop {weapon} onto ground."
+                    "Description": "{actor} drops their {weapon} onto the ground."
                 },
-                "Release1H": {
-                    "Title": "Release (1H)",
-                    "Description": "Wield {weapon} with a single hand."
+                "Grip": {
+                    "Title": "Change Grip (1H)",
+                    "Description": "{actor} releases a hand from their {weapon}."
                 }
             },
             "Request": {
@@ -477,23 +481,23 @@
             }
         },
         "ActionsCheck": {
-            "acrobatics": "Проверка акробатики",
-            "arcana": "Проверка мистицизма",
-            "athletics": "Проверка атлетики",
-            "crafting": "Проверка ремесла",
-            "deception": "Проверка обмана",
-            "diplomacy": "Проверка дипломатии",
-            "intimidation": "Проверка запугивания",
-            "medicine": "Проверка медицины",
-            "nature": "Проверка природы",
-            "occultism": "Проверка оккультизма",
+            "acrobatics": "Acrobatics Check",
+            "arcana": "Arcana Check",
+            "athletics": "Athletics Check",
+            "crafting": "Crafting Check",
+            "deception": "Deception Check",
+            "diplomacy": "Diplomacy Check",
+            "intimidation": "Intimidation Check",
+            "medicine": "Medicine Check",
+            "nature": "Nature Check",
+            "occultism": "Occultism Check",
             "perception": "Проверка внимания",
-            "performance": "Проверка исполнения",
-            "religion": "Проверка религии",
-            "society": "Проверка общества",
-            "stealth": "Проверка скрытности",
-            "survival": "Проверка выживания",
-            "thievery": "Проверка воровства"
+            "performance": "Performance Check",
+            "religion": "Religion Check",
+            "society": "Society Check",
+            "stealth": "Stealth Check",
+            "survival": "Survival Check",
+            "thievery": "Thievery Check"
         },
         "ActionsWarning": {
             "DeceptionUnknownVariant": "Использован неизвестный вариант '{variant}' для отвлекающего манёвра, используйте слова, жест или уловку.",
@@ -502,28 +506,6 @@
         "ActionsActionsHeader": "Действия",
         "ActionsFreeActionsHeader": "Свободные действия",
         "ActionsReactionsHeader": "Ответные действия",
-        "ActiveEffects": {
-            "Label": "Эффекты",
-            "Duration": {
-                "Label": "Длительность",
-                "Permanent": "Неограниченная",
-                "Second": "{quantity} секунда",
-                "Round": "{quantity} раунд",
-                "Turn": "{quantity} ход",
-                "Seconds": "{quantity} секунд",
-                "Rounds": "{quantity} раундов",
-                "Turns": "{quantity} ходов"
-            },
-            "Controls": {
-                "Label": "Управление",
-                "Disable": "Выключить",
-                "Enable": "Включить",
-                "Edit": "Изменить",
-                "Delete": "Удалить"
-            },
-            "EnableAutomation": "Включить автоматизацию",
-            "DisableAutomation": "Отключить автоматизацию"
-        },
         "Actor": {
             "ApplyDamage": {
                 "AtFullHealth": "{actor} уже полностью здоров.",
@@ -538,7 +520,10 @@
                 "TakesNoDamage": "{actor} не получает урона."
             },
             "Character": {
-                "AncestryClass": "{ancestry} {class}"
+                "AncestryClass": "{ancestry} {class}",
+                "Rest": {
+                    "Label": "Rest for the Night"
+                }
             },
             "Dead": "Мёртв",
             "Hazard": {
@@ -583,7 +568,6 @@
         "AlignmentNG": "Нейтр. добрый",
         "AlignmentTitle": "Ваше мировоззрение",
         "AllSavesLabel": "Испытания",
-        "Ancestry": "Народ",
         "AncestryFeatures": "Особенности народа",
         "AncestryHP": "ПЗ народа",
         "AncestryTitle": "Народ вашего персонажа",
@@ -603,6 +587,7 @@
         "AreaSize75": "75 футов",
         "AreaSize80": "80 футов",
         "AreaSize90": "90 футов",
+        "AreaSize1Mile": "1 Mile",
         "AreaTypeBurst": "Взрыв",
         "AreaTypeCone": "Конус",
         "AreaTypeEmanation": "Эманация",
@@ -686,12 +671,6 @@
         "AttackEffectPush": "Отталкивающее",
         "AttackEffectTrip": "Сбивающее",
         "AttackLabel": "Атака",
-        "AttackOutcome": {
-            "criticalSuccess": "Критическое попадание",
-            "success": "Попадание",
-            "failure": "Промах",
-            "criticalFailure": "Критический промах"
-        },
         "AttitudeLabel": "Отношение",
         "Attitudes": {
             "Hostile": "Враждебность",
@@ -798,7 +777,7 @@
             "held1": "Held 1H",
             "held2": "Held 2H",
             "worn": "Worn",
-            "worn-slotted": "Worn (Slotted)",
+            "worn-in-slot": "Worn (In Slot)",
             "stowed": "Stowed",
             "dropped": "Dropped"
         },
@@ -808,11 +787,52 @@
         "CharacterNamePlaceholder": "Имя персонажа",
         "CharacterTraits": "Дескрипторы персонажа",
         "CharacterTraitsHeader": "Дескрипторы и прочее",
-        "CheckOutcome": {
-            "criticalSuccess": "Критический успех",
-            "success": "Успех",
-            "failure": "Провал",
-            "criticalFailure": "Критический провал"
+        "Check": {
+            "DC": {
+                "Label": {
+                    "AdjustedTarget": "<target>Target: {target}</target> <dc>({dcType} <preadjusted>{preadjusted}</preadjusted> <adjusted>{adjusted}</adjusted>)</dc>",
+                    "NoChangeTarget": "<target>Target: {target}</target> <dc>({dcType} <adjusted>{adjusted}</adjusted>)</dc>",
+                    "NoTarget": "{dcType} {dc}",
+                    "WithTarget": "<target>Target: {target}</target> <dc>({dcType} {dc})</dc>"
+                },
+                "Specific": {
+                    "ac": "AC",
+                    "athletics": "Athletics DC",
+                    "deception": "Deception DC",
+                    "fortitude": "Fortitude DC",
+                    "perception": "Perception DC",
+                    "reflex": "Reflex DC",
+                    "stealth": "Stealth DC",
+                    "will": "Will DC"
+                },
+                "Unspecific": "DC"
+            },
+            "Label": "Check",
+            "Result": {
+                "Degree": {
+                    "Attack": {
+                        "criticalSuccess": "Critical Hit",
+                        "success": "Hit",
+                        "failure": "Miss",
+                        "criticalFailure": "Critical Miss"
+                    },
+                    "Check": {
+                        "criticalSuccess": "Critical Success",
+                        "success": "Success",
+                        "failure": "Failure",
+                        "criticalFailure": "Critical Failure"
+                    }
+                },
+                "Label": "Result: <degree>{degree}</degree> <offset>by {offset}</offset>",
+                "AdjustedLabel": "Result: <degree>{degree}</degree> <offset>by {offset}</offset> ({adjustment})"
+            },
+            "Specific": {
+                "Perception": {
+                    "Label": "Perception Check",
+                    "Secret": "Perception Check (Secret)"
+                },
+                "Recovery": "Recovery Check"
+            }
         },
         "CircumstanceBonusShortLabel": "Ситуативный",
         "CircumstanceBonusTitle": "Ситуативный бонус",
@@ -957,11 +977,11 @@
         "CraftingTab": {
             "Alchemical": {
                 "AdvancedAlchemy": "Продвинутая алхимия",
-                "AdvancedAlchemyLevel": "Уровень продвинутой алхимии:",
-                "InfusedReagents": "Заряженные реагенты:",
-                "ReagentCost": "Стоимость реагентов:",
+                "AdvancedAlchemyLevel": "Advanced Alchemy Level",
+                "InfusedReagents": "Infused Reagents",
+                "ReagentCost": "Reagent Cost",
                 "ToggleSignatureItem": "Toggle Signature Item",
-                "TotalCost": "Общая стоимость:"
+                "TotalCost": "Total Cost"
             },
             "Alerts": {
                 "CharacterLevel": "Уровень предмета превышает уровень персонажа.",
@@ -974,7 +994,8 @@
             "ToggleFreeCrafting": "Toggle Free Crafting",
             "ToggleQuickAlchemy": "Quick Alchemy",
             "UndeletableTooltip": "Эта формула является частью другого предмета и не может быть удалена отдельно от него.",
-            "QuickAddTitle": "Quick add this formula to the daily crafting list."
+            "QuickAddTitle": "Add this formula to one or more crafting entries",
+            "NoEligibleEntry": "No eligible crafting entry was found."
         },
         "CraftDCTitle": "СЛ",
         "CraftItemTitle": "Ремесло",
@@ -986,15 +1007,6 @@
         "CreateLabelUniversal": "Создать",
         "CreateSkillTitle": "Создать навык",
         "CreateSpellTitle": "Создать заклинание",
-        "CreatureStatisticDC": {
-            "ac": "{creature} КБ: {dc}",
-            "deception": "{creature} СЛ обмана: {dc}",
-            "fortitude": "{creature} СЛ стойкости: {dc}",
-            "perception": "{creature} СЛ внимания: {dc}",
-            "reflex": "{creature} СЛ реакции: {dc}",
-            "stealth": "{creature} СЛ скрытности: {dc}",
-            "will": "{creature} СЛ воли: {dc}"
-        },
         "CritFailure": "<strong>Критический провал</strong>",
         "CritSuccess": "<strong>Критический успех</strong>",
         "CriticalDamageLabel": "Критический",
@@ -1015,6 +1027,7 @@
         "CurrentStaminaPointsShortLabel": "Текущие ПЖ",
         "CurrentStaminaTitle": "Количество ваших пунктов живучести",
         "Damage": {
+            "Base": "Base",
             "NoDamageFormulaLabel": "Нет урона"
         },
         "DamageCategoriesLabel": "Категории урона",
@@ -1033,10 +1046,10 @@
         "DCAdjustmentVeryHard": "очень сложно",
         "DCAdjustmentIncrediblyHard": "невероятно сложно",
         "DCBase": "Базовая СЛ 10",
-        "DCLabel": "СЛ: {dc}",
         "DCWithValue": "СЛ {dc} {text}",
+        "DCWithValueAndVisibility": "<span data-visibility=\"{role}\">DC {dc}</span> {text}",
         "DecrementEffectTitle": "Decrease Effect Level",
-        "DefencesLabel": "Защита",
+        "DefensesLabel": "Defenses",
         "Deity": "Божество",
         "DeityTitle": "Ваше божество или вера",
         "DeleteConditionQuestion": "Вы уверены, что хотите удалить {condition}?",
@@ -1144,19 +1157,19 @@
         "EquippedBulkLabel": "Надетый вес",
         "EquippedSameBulkValue": "Без изменений",
         "ErrorMessage": {
-            "WeaponQuantityZero": "You have no more of these weapons equipped.",
-            "ActorMustHaveToken": "Добавление состояний актёрам без токенов на данный момент не поддерживается.",
+            "CantCreateEffectMacro": "An effect for a toggle macro must come from a compendium or world item.",
             "CantImportTooHighVersion": "Unable to import {sourceName}: its schema version ({sourceSchemaVersion}) is higher than this world's ({worldSchemaVersion}).",
-            "CantMoveItemSource": "У вас нет прав для перемещения предметов из этого персонажа.",
             "CantMoveItemDestination": "У вас нет прав для перемещения предметов этому персонажу.",
+            "CantMoveItemSource": "У вас нет прав для перемещения предметов из этого персонажа.",
             "MinimumProfLevelSetByFeatures": "Выбранный уровень мастерства ниже уровня, указанного особенностями.",
-            "NotEnoughAmmo": "У вас недостаточно боеприпасов для этой атаки.",
             "NoTokenSelected": "Выберите минимум один токен.",
-            "NoUpdatePermission": "У вас нет прав для изменения этого актёра."
+            "NoUpdatePermission": "У вас нет прав для изменения этого актёра.",
+            "NotEnoughAmmo": "You don't have enough ammo to make this strike.",
+            "SubV9Module": "{module} does not support Foundry V9 and may introduce stability issues to your game.",
+            "WeaponQuantityZero": "You have no more of these weapons equipped."
         },
         "Ethnicity": "Этнос",
         "ExpendSpellTitle": "Потратить заклинание",
-        "ExperimentalLabel": "Экспериментальный",
         "Failure": "<strong>Провал</strong>",
         "FamiliarItemTypeError": "На данный момент фамилиарами поддерживаются только состояния и эффекты.",
         "FeatActionTypeLabel": "Тип действия",
@@ -1166,6 +1179,7 @@
         "FeatBackgroundShort": "ПР",
         "FeatBonusHeader": "Дополнительные черты",
         "FeatBrowserSearchHint": "Вы можете искать по имени и атрибутам. Доступные для поиска атрибуты:<br> source, spellType, level, school, components, materials, target, range, time, duration, damage, damageType, save, concentration, ritual, ability and classes. <br>Пример: 'fire, damage:d6' выдаст все элементы со словом fire в названии и костью урона d6.",
+        "FeatCampaignHeader": "Campaign Feats",
         "FeatClassHeader": "Черты класса",
         "FeatDualClassHeader": "Черты двойных классов",
         "FeatGeneralHeader": "Общие черты",
@@ -1317,21 +1331,271 @@
                 }
             },
             "CannotAddType": "Предметы с типом {type} не могут быть добавлены к этому персонажу.",
+            "Condition": {
+                "Flanked": "Flat-Footed (Flanked)"
+            },
             "Deity": {
                 "Alignment": "Мировоззрение",
-                "FollowerAlignments": "Мировоззрение последователей",
-                "DivineAbility": "Божественная характеристика",
+                "ClericSpells": {
+                    "Label": "Cleric Spells",
+                    "Hint": "To add a spell, drag and drop one onto this sheet."
+                },
+                "DivineAbility": {
+                    "Label": "Divine Ability",
+                    "Hint": "If choosing the Raised by Belief background, its ability boost options come from a deity."
+                },
                 "DivineSkill": "Божественный навык",
-                "Edicts": "Наказы",
-                "Anathema": "Табу",
-                "AreasOfConcern": "Область интереса",
                 "DivineFont": {
                     "Label": "Божественный источник",
                     "Harm": "Повреждение",
                     "Heal": "Излечение"
                 },
-                "FavoredWeapon": "Любимое оружие",
-                "ClericSpells": "Заклинания жрецов"
+                "FavoredWeapons": {
+                    "Label": "Favored Weapon(s)",
+                    "Hint": "Almost all deities have a single favored weapon, but a few have both a favored weapon and unarmed attack."
+                },
+                "FollowerAlignments": "Мировоззрение последователей",
+                "Domains": {
+                    "Primary": "Primary Domains",
+                    "Alternate": {
+                        "Label": "Alternate Domains",
+                        "Hint": "A cleric can take the Expanded Domain Initiate feat to gain access to one of their deity's alternate domains."
+                    }
+                },
+                "Domain": {
+                    "Abomination": {
+                        "Label": "Abomination",
+                        "Description": "You seek to instill abhorrence and horror in those around you."
+                    },
+                    "Air": {
+                        "Label": "Air",
+                        "Description": "You can control winds and the weather."
+                    },
+                    "Ambition": {
+                        "Label": "Ambition",
+                        "Description": "You strive to keep up with and outpace the competition."
+                    },
+                    "Change": {
+                        "Label": "Change",
+                        "Description": "You can restructure the physical and metaphysical."
+                    },
+                    "Cities": {
+                        "Label": "Cities",
+                        "Description": "You have powers over urban environments and denizens."
+                    },
+                    "Cold": {
+                        "Label": "Cold",
+                        "Description": "You control ice, snow, and freezing temperatures."
+                    },
+                    "Confidence": {
+                        "Label": "Confidence",
+                        "Description": "You overcome your fear and project pride."
+                    },
+                    "Creation": {
+                        "Label": "Creation",
+                        "Description": "You have divine abilities related to crafting and art."
+                    },
+                    "Darkness": {
+                        "Label": "Darkness",
+                        "Description": "You operate in the darkness and take away the light."
+                    },
+                    "Death": {
+                        "Label": "Death",
+                        "Description": "You have the power to end lives and destroy undead."
+                    },
+                    "Decay": {
+                        "Label": "Decay",
+                        "Description": "You have the power to spoil and deteriorate matter."
+                    },
+                    "Delirium": {
+                        "Label": "Delirium",
+                        "Description": "You can bring about hallucinations and restlessness."
+                    },
+                    "Destruction": {
+                        "Label": "Destruction",
+                        "Description": "You are a conduit for divine devastation."
+                    },
+                    "Dreams": {
+                        "Label": "Dreams",
+                        "Description": "You have the power to enter and manipulate dreams."
+                    },
+                    "Dust": {
+                        "Label": "Dust",
+                        "Description": "You have the power to dry and crumble what opposes you."
+                    },
+                    "Duty": {
+                        "Label": "Duty",
+                        "Description": "You defend oaths and carry out your divine missions with great dedication."
+                    },
+                    "Earth": {
+                        "Label": "Earth",
+                        "Description": "You control soil and stone."
+                    },
+                    "Family": {
+                        "Label": "Family",
+                        "Description": "You aid and protect your family and community more effectively."
+                    },
+                    "Fate": {
+                        "Label": "Fate",
+                        "Description": "You see and understand hidden inevitabilities."
+                    },
+                    "Fire": {
+                        "Label": "Fire",
+                        "Description": "You control flame."
+                    },
+                    "Freedom": {
+                        "Label": "Freedom",
+                        "Description": "You liberate yourself and others from shackles and constraints."
+                    },
+                    "Glyph": {
+                        "Label": "Glyph",
+                        "Description": "You wield power over written words and symbols."
+                    },
+                    "Healing": {
+                        "Label": "Healing",
+                        "Description": "Your healing magic is particularly potent."
+                    },
+                    "Indulgence": {
+                        "Label": "Indulgence",
+                        "Description": "You feast mightily and can shake off the effects of overindulging."
+                    },
+                    "Knowledge": {
+                        "Label": "Knowledge",
+                        "Description": "You receive divine insights."
+                    },
+                    "Lightning": {
+                        "Label": "Lightning",
+                        "Description": "You control electricity, thunder, and storms."
+                    },
+                    "Luck": {
+                        "Label": "Luck",
+                        "Description": "You’re unnaturally lucky and keep out of harm’s way."
+                    },
+                    "Magic": {
+                        "Label": "Magic",
+                        "Description": "You perform the unexpected and inexplicable."
+                    },
+                    "Might": {
+                        "Label": "Might",
+                        "Description": "Your physical power is bolstered by divine strength."
+                    },
+                    "Moon": {
+                        "Label": "Moon",
+                        "Description": "You command powers associated with the moon."
+                    },
+                    "Naga": {
+                        "Label": "Naga",
+                        "Description": "Like the serpentine nagas, you're in tune with cosmic forces that Ravithra once controlled."
+                    },
+                    "Nature": {
+                        "Label": "Nature",
+                        "Description": "You hold power over animals and plants."
+                    },
+                    "Nightmares": {
+                        "Label": "Nightmares",
+                        "Description": "You fill minds with horror and dread."
+                    },
+                    "Pain": {
+                        "Label": "Pain",
+                        "Description": "You punish those who displease you with the sharp sting of pain."
+                    },
+                    "Passion": {
+                        "Label": "Passion",
+                        "Description": "You evoke passion, whether as love or lust."
+                    },
+                    "Perfection": {
+                        "Label": "Perfection",
+                        "Description": "You strive to perfect your mind, body, and spirit."
+                    },
+                    "Plague": {
+                        "Label": "Plague",
+                        "Description": "You wield disease and pestilence like a weapon."
+                    },
+                    "Protection": {
+                        "Label": "Protection",
+                        "Description": "You ward yourself and others."
+                    },
+                    "Repose": {
+                        "Label": "Repose",
+                        "Description": "You ease mental burdens."
+                    },
+                    "Secrecy": {
+                        "Label": "Secrecy",
+                        "Description": "You protect secrets and keep them hidden."
+                    },
+                    "Sorrow": {
+                        "Label": "Sorrow",
+                        "Description": "You have a painful connection to melancholy and sadness."
+                    },
+                    "Soul": {
+                        "Label": "Soul",
+                        "Description": "You wield power over the spiritual."
+                    },
+                    "Star": {
+                        "Label": "Star",
+                        "Description": "You command the power of the stars."
+                    },
+                    "Sun": {
+                        "Label": "Sun",
+                        "Description": "You harness the power of the sun and other light sources, and punish undead."
+                    },
+                    "Swarm": {
+                        "Label": "Swarm",
+                        "Description": "You exert control over masses of creatures."
+                    },
+                    "Time": {
+                        "Label": "Time",
+                        "Description": "You reign over the flow of time."
+                    },
+                    "Toil": {
+                        "Label": "Toil",
+                        "Description": "You work constantly and refuse to let anything stand in your way."
+                    },
+                    "Travel": {
+                        "Label": "Travel",
+                        "Description": "You have power over movement and journeys."
+                    },
+                    "Trickery": {
+                        "Label": "Trickery",
+                        "Description": "You deceive others and cause mischief."
+                    },
+                    "Truth": {
+                        "Label": "Truth",
+                        "Description": "You pierce lies and discover the truth."
+                    },
+                    "Tyranny": {
+                        "Label": "Tyranny",
+                        "Description": "You wield power to rule and enslave others."
+                    },
+                    "Undeath": {
+                        "Label": "Undeath",
+                        "Description": "Your magic carries close ties to the undead."
+                    },
+                    "Vigil": {
+                        "Label": "Vigil",
+                        "Description": "You watch over those long passed and guard their secrets."
+                    },
+                    "Void": {
+                        "Label": "Void",
+                        "Description": "You draw power from emptiness."
+                    },
+                    "Water": {
+                        "Label": "Water",
+                        "Description": "You control water and bodies of water."
+                    },
+                    "Wealth": {
+                        "Label": "Wealth",
+                        "Description": "You hold power over wealth, trade, and treasure."
+                    },
+                    "Wyrmkin": {
+                        "Label": "Wyrmkin",
+                        "Description": "You draw on the power of dragons, linnorms, and other powerful reptilian creatures."
+                    },
+                    "Zeal": {
+                        "Label": "Zeal",
+                        "Description": "Your inner fire increases your combat prowess."
+                    }
+                }
             },
             "Effect": {
                 "Sustained": "Длительное",
@@ -1349,6 +1613,7 @@
                     "Two": "Up to 2×",
                     "Three": "Up to 3×",
                     "Four": "Up to 4×",
+                    "Five": "Up to 5x",
                     "NoLimit": "No limit"
                 },
                 "Warning": {
@@ -1363,15 +1628,48 @@
                 "NoneVersatile": "None (Versatile)",
                 "RemoveAncestry": "Удалить требуемый народ"
             },
-            "NameLabel": "Название",
             "IconLabel": "Иконка",
+            "NameLabel": "Название",
             "SidebarSummary": "Подробности {type}",
             "Spells": {
                 "PlaceMeasuredTemplate": "Расположите {size}-{unit} {shape}"
             },
             "Physical": {
                 "LevelLabel": "Предмет {level}",
-                "PriceLabel": "Цена: {price}"
+                "PriceLabel": "Цена: {price}",
+                "Usage": {
+                    "WornParenthetical": "Worn ({where})",
+                    "WornSlot": {
+                        "amulet": "Amulet",
+                        "anklets": "Anklets",
+                        "armbands": "Armbands",
+                        "armor": "Armor",
+                        "backpack": "Backpack",
+                        "barding": "Barding",
+                        "belt": "Belt",
+                        "beltpouch": "Belt Pouch",
+                        "bracelet": "Bracelet",
+                        "bracers": "Bracers",
+                        "circlet": "Circlet",
+                        "cloak": "Cloak",
+                        "clothing": "Clothing",
+                        "collar": "Collar",
+                        "crown": "Crown",
+                        "epaulet": "Epaulet",
+                        "eyepiece": "Eyepiece",
+                        "garment": "Garment",
+                        "gloves": "Gloves",
+                        "headwear": "Headwear",
+                        "horseshoes": "Horseshoes",
+                        "mask": "Mask",
+                        "necklace": "Necklace",
+                        "onbelt": "OnBelt",
+                        "ring": "Ring",
+                        "saddle": "Saddle",
+                        "shoes": "Shoes",
+                        "wrist": "On Wrists"
+                    }
+                }
             },
             "Plural": "Предметы",
             "Weapon": {
@@ -1409,6 +1707,7 @@
                     "FourPropertiesMaterial": "{property1} {property2} {property3} {property4} {material} {base}"
                 },
                 "HandsLabel": "Hands",
+                "Improvised": "Improvised",
                 "MandatoryMelee": "Это оружие имеет дескриптор, который может быть использован только с оружием ближнего боя.",
                 "MaterialAndRunes": {
                     "MaterialOption": "{type} ({grade})",
@@ -1456,7 +1755,9 @@
         "ItemTitle": "Предмет",
         "ItemsLabel": "Предметы",
         "JournalEntry": {
-            "Plural": "Заметки журнала"
+            "Plural": "Заметки журнала",
+            "FoundryTheme": "Foundry (Classic) Journal Entry",
+            "PF2ETheme": "PF2e System Journal Entry"
         },
         "KeyAbility": "Ключевая характеристика",
         "KeyAbilityLabel": "Ключевая характеристика",
@@ -1748,8 +2049,7 @@
         "PerceptionLabel": "Внимание",
         "PFS": {
             "CharacterNumber": "Персонаж #",
-            "CurrentFaction": "Текущая фракция",
-            "Fame": "Слава",
+            "CurrentFaction": "Current Faction",
             "LevelBump": "Поднятие уровня",
             "OrganizedPlayNumber": "Организованная игра #",
             "Reputation": "Репутация",
@@ -1772,24 +2072,34 @@
             "Plural": "Плейлисты"
         },
         "PotencyRuneLabel": "Руна усиления",
+        "PreciousMaterialAbysium": "Abysium",
+        "PreciousMaterialAbysiumDescription": "A blue-green metal with an eerie green luminescence, abysium radiates power that's inimical to life. Careless exposure to the material can lead to long‑term damage to the immune system; as such, mining abysium is hazardous, as large quantities of the metal in an area cause all nearby creatures to become sick. A creature carrying an abysium object is sickened 1 for a standard‑grade object of light Bulk, sickened 2 for a standard‑grade object of 1 Bulk or more or a high-grade object of light Bulk, or sickened 3 for a high‑grade object of 1 Bulk or more. This and all other sickening effects of abysium are poison effects. Crafters can use 1 abysium chunk to create up to 6 doses of poisonous abysium powder. Unscrupulous smiths have harnessed abysium's toxic properties to create noxious weapons and deadly substances. All objects crafted from abysium shed dim light in a 10‑foot radius.",
         "PreciousMaterialAdamantine": "Адамантин",
         "PreciousMaterialAdamantineDescription": "Mined from rocks that fell from the heavens, adamantine is one of the hardest metals known. It has a shiny, black appearance, and it is prized for its amazing resiliency and ability to hold an incredibly sharp edge.",
         "PreciousMaterialColdIron": "Холодное железо",
         "PreciousMaterialColdIronDescription": "Weapons made from cold iron are deadly to demons and fey alike. Cold iron looks like normal iron but is mined from particularly pure sources and shaped with little or no heat. This process is extremely difficult, especially for high-grade cold iron items.",
         "PreciousMaterialDarkwood": "Сумеречное дерево",
         "PreciousMaterialDarkwoodDescription": "Darkwood is a very lightweight wood found primarily in old- growth forests in south-central Avistan; it is dark as ebony but has a slight purple tint. A darkwood item's Bulk is reduced by 1 (or to light Bulk if its normal Bulk is 1, with no effect on an item that normally has light Bulk). The Price of an item made of darkwood is based on the item's normal Bulk, not its reduced Bulk for being made of darkwood, but reduce the Bulk before making any further Bulk adjustments for the size of the item.",
+        "PreciousMaterialDjezet": "Djezet",
+        "PreciousMaterialDjezetDescription": "This rust red metal is liquid at room temperature, making it challenging for all but the most skilled metallurgists to craft with and earning it the name \"quickiron\" in some places. Djezet is also extremely reactive to magic, even in its solid, workable alloyed form. It glows when targeted by magic, and objects crafted with djezet alloys glow with scarlet striations, which lead some smiths to nickname it \"tiger iron.\" When targeted by spells, objects crafted from djezet alloys exhibit these glowing red markings that last for 1 round or the duration of the spell, whichever is longer. A djezet mass contains enough djezet to refine into up to two djezet doses.",
         "PreciousMaterialDragonhide": "Драконья шкура",
         "PreciousMaterialDragonhideDescription": "The hide and scales of a dragon can be used to Craft any item normally made of ordinary leather or hide. Dragonhide varies in color from blue to glittering gold, depending on the dragon it came from. Due to the scales' resiliency, it can also be used to Craft armor usually made out of metal plates (such as a breastplate, half plate, and full plate), allowing such armor to be made without metal. Dragonhide objects are immune to one damage type, depending on the type of dragon.",
         "PreciousMaterialGradeLabel": "Категория чистоты материала",
         "PreciousMaterialGrisantianPelt": "Grisantian Pelt",
         "PreciousMaterialGrisantianPeltDescription": "This supernaturally tough animal skin is gold and shines in sunlight. It can be used to make any item usually made of cloth, leather, or hide. This material is immune to fire, and its Hardness is doubled against piercing or slashing damage. Up to 4 Bulk of grisantian pelt can be harvested from a single creature (this is usually more than enough for 4 suits of standard grade armor or 2 suit of high-grade armor).",
         "PreciousMaterialHighGrade": "Высококачественный",
+        "PreciousMaterialInubrix": "Inubrix",
+        "PreciousMaterialInubrixDescription": "This pale, malleable metal's unusual molecular structure allows it to partially pass through iron and steel without touching them. While this property is useful for making weapons that bypass metal armor, inubrix is barely sturdier than lead. Even in an alloyed state, this skymetal is so fragile that it's difficult to use in crafting reliable shields and less than ideal for crafting armor.",
         "PreciousMaterialLabel": "Материал",
         "PreciousMaterialLowGrade": "Низкокачественный",
         "PreciousMaterialMithral": "Мифрал",
         "PreciousMaterialMithralDescription": "Mithral is renowned for its lightness, durability, and effectiveness against a range of creatures including devils and lycanthropes. It has the same sheen as silver but a slightly lighter hue. Mithral weapons and armor are treated as if they were silver for the purpose of damaging creatures with weakness to silver. A metal item made of mithral is lighter than one made of iron or steel: the item's Bulk is reduced by 1 (reduced to light Bulk if its normal Bulk is 1, with no effect on an item that normally has light Bulk). The Price of an item made of this material is based on the item's normal Bulk, not its reduced Bulk for being made of mithral, but reduce the Bulk before making any further Bulk adjustments for the size of the item.",
+        "PreciousMaterialNoqual": "Noqual",
+        "PreciousMaterialNoqualDescription": "Light and strong, noqual also demonstrates a powerful resistance to magic. A side effect of this resistance is that making magical weapons out of noqual requires complex and expensive alchemical treatments. Kevoth‑Kul, the Black Sovereign of Numeria, has developed an alloy of noqual and cold iron known as sovereign steel to help mitigate this property. The metal's crystalline appearance might suggest that it's fragile, but the pale‑green material can be worked similarly to iron. Objects made of noqual have a +4 circumstance bonus on saves against magic that the item attempts and grant their bonus to saves the owner makes specifically to protect the item from magic (such as against the rusting grasp spell).",
         "PreciousMaterialOrichalcum": "Хоракалк",
         "PreciousMaterialOrichalcumDescription": "The most rare and valuable skymetal, orichalcum is coveted for its incredible time-related magical properties. This dull, coppery metal isn't as physically sturdy as adamantine, but orichalcum's time-bending properties protect it, granting it greater Hardness and Hit Points. If an orichalcum item takes damage but isn't destroyed, it repairs itself completely 24 hours later.",
+        "PreciousMaterialSiccatite": "Siccatite",
+        "PreciousMaterialSiccatiteDescription": "In its raw state, this silvery ore is either scalding hot or freezing cold. Metallurgists disagree over whether siccatite is two related substances or one substance that determines its temperature output via some unknown process. Whatever the reason, the extreme temperature of the material means it must be handled carefully. Hot siccatite can easily ignite flammables such as paper and dry brush, and cold siccatite left in moist areas quickly surrounds itself with a thick layer of ice. A creature that comes into physical contact with a significant amount of siccatite takes 1 energy Damage for each round of continued contact (either fire or cold damage, for hot and cold siccatite respectively).",
         "PreciousMaterialSilver": "Серебро",
         "PreciousMaterialSilverDescription": "Silver weapons are a bane to creatures ranging from devils to werewolves. Silver items are less durable than steel items, and low-grade silver items are usually merely silver-plated.",
         "PreciousMaterialSovereignSteel": "Суверенная сталь",
@@ -1842,7 +2152,6 @@
             "critFailure": "Значение вашего состояния при смерти увеличивается на 2.",
             "critSuccess": "Значение вашего состояния при смерти уменьшается на 2.",
             "failure": "Значение вашего состояния при смерти увеличивается на 1.",
-            "roll": "Нажмите для совершения проверки восстановления.",
             "rollingDescription": "Проверка восстановления со СЛ {dc} (при смерти {dying})",
             "success": "Значение вашего состояния при смерти уменьшается на 1."
         },
@@ -1874,12 +2183,12 @@
         "ResolvePointsShortLabel": "ПР",
         "ResolveTitle": "Количество ваших пунктов решимости",
         "RestoreSpellTitle": "Restore Spell",
-        "ResultLabel": "Результат",
-        "ResultOffset": "на {offset}",
         "Roll": {
             "Modifier": "Модификатор",
             "Type": "Тип",
             "Fortune": "Удача",
+            "KeepHigher": "Keep Higher",
+            "KeepLower": "Keep Lower",
             "FortuneTitle": "{title} - Удача",
             "Misfortune": "Неудача",
             "MisfortuneTitle": "{title} - Неудача",
@@ -1917,12 +2226,6 @@
                 "Name": "Death Icon",
                 "Hint": "Set the overlay icon used to mark dead actors."
             },
-            "JournalEntryTheme": {
-                "Name": "Стиль журналов",
-                "Hint": "Выберите стиль оформления для записей журнала.",
-                "Foundry": "Foundry",
-                "PF2E": "Pathfinder 2e"
-            },
             "statusEffectKeepFoundry": {
                 "hint": "Выбор, какой набор иконок использовать: Foundry или Pathfinder 2e. Смена приведёт к перезагрузке.",
                 "name": "Набор иконок состояний Foundry"
@@ -1952,18 +2255,6 @@
             "WorldSchemaVersion": {
                 "Name": "Версия схемы актёра",
                 "Hint": "Сохраняет версию схемы актёра для системы PF2e. (не изменяйте это значение, если только вы не уверены в том, что делаете)"
-            },
-            "DefaultTokenSettings": {
-                "Name": "Настройки токена-прототипа по умолчанию",
-                "Hint": "Автоматически выставляет рекомендованные параметры токена-прототипа для новых актёров."
-            },
-            "DefaultTokenSettingsName": {
-                "Name": "Отображение имени токена по умолчанию",
-                "Hint": "Настройка по умолчанию для режима отображения имени токена"
-            },
-            "DefaultTokenSettingsBar": {
-                "Name": "Отображение полоски токена по умолчанию",
-                "Hint": "Настройка по умолчанию для режима отображения полоски токена"
             },
             "IgnoreCoinBulk": {
                 "Name": "Невесомые монеты",
@@ -2013,9 +2304,9 @@
                     "Name": "Remove expired effects",
                     "Hint": "Expired effects are automatically removed from actors (requires a GM to be logged in)."
                 },
-                "ExperimentalDamageFormatting": {
-                    "Name": "Use experimental damage chat card formatting",
-                    "Hint": "Parse damage roll data and decorate the resulting chat card with differently formatted roll formulas, damage types and categories, and roll notes for splash and persistent damage."
+                "FlankingDetection": {
+                    "Name": "Flanking detection",
+                    "Hint": "Flanking arrangements and abilities that predicate on it are managed by the system."
                 },
                 "ActorsDeadAtZero": {
                     "Name": "NPCs dead at 0 HP",
@@ -2171,6 +2462,10 @@
                     }
                 },
                 "DeferredToModule": "Эти настройки управляются модулем Calendar/Weather."
+            },
+            "CampaignFeats": {
+                "Name": "Campaign Feats",
+                "Hint": "Adds a section to all player sheets for campaign specific feats."
             },
             "RAI": {
                 "TreatWoundsAltSkills": {
@@ -2469,6 +2764,7 @@
         "SpellTypeSave": "Испытание",
         "SpellTypeUtility": "Вспомогательное",
         "SpellCategorySpell": "Заклинание",
+        "SpellUsesLabel": "Uses",
         "SpellCategoryFocus": "Фокальное",
         "SpellCategoryRitual": "Ритуал",
         "SpellCategoryFocusCantrip": "Фокальный фокус",
@@ -2514,7 +2810,8 @@
             },
             "Ranged": {
                 "Description": "Вы атакуете оружием, которым вооружены, целясь в одно существо в пределах дистанции стрельбы оружия. Совершите бросок атаки для оружия, которое вы используете и сравните результат с КБ цели для определения результата.",
-                "Success": "Вы наносите урон, соответствующий оружию, включая все модификаторы, бонусы и штрафы к урону, которые у вас есть."
+                "Success": "Вы наносите урон, соответствующий оружию, включая все модификаторы, бонусы и штрафы к урону, которые у вас есть.",
+                "NoAmmo": "No ammunition is assigned to {weapon}. Check the Actions tab of {actor}'s sheet."
             },
             "Combined": {
                 "Description": "Вы атакуете оружием, которым вооружены, целясь в одно существо в пределах вашей досягаемости (в ближнем бою) или дистанции (в дальнем бою). Совершите бросок атаки для оружия или безоружной атаки, которое вы используете и сравните результат с КБ цели для определения результата.",
@@ -3540,7 +3837,6 @@
                 "aldori-dueling-sword": "Дуэльный меч Алдори",
                 "air-repeater": "Пневматический пистолет",
                 "arquebus": "Аркебуза",
-                "arrows": "Стрелы",
                 "axe-musket": "Топор-мушкет",
                 "asp-coil": "Меч-кнут",
                 "bastard-sword": "Меч-бастрад",
@@ -3558,7 +3854,6 @@
                 "boarding-axe": "Абордажный топор",
                 "boarding-pike": "Абордажная пика",
                 "bola": "Болас",
-                "bolts": "Болты",
                 "butchering-axe": "Разделочный топор",
                 "butterfly-sword": "Меч-бабочка",
                 "buugeng": "Бугенг",
@@ -4181,7 +4476,21 @@
                 "AddOneDay": "1 день",
                 "AddOneWeek": "1 неделя",
                 "Advance": "Продвинуть время",
-                "Retract": "Откатить время"
+                "Retract": "Откатить время",
+                "TimeOfDay": {
+                    "Advance": {
+                        "Dawn": "Advance to Dawn",
+                        "Dusk": "Advance to Dusk",
+                        "Noon": "Advance to Noon",
+                        "Midnight": "Advance to Midnight"
+                    },
+                    "Retract": {
+                        "Dawn": "Retract to Dawn",
+                        "Dusk": "Retract to Dusk",
+                        "Noon": "Retract to Noon",
+                        "Midnight": "Retract to Midnight"
+                    }
+                }
             },
             "Placeholder": "Число",
             "Title": "Время мира",
@@ -4536,7 +4845,8 @@
             "Quantity": "Количество",
             "SheetType": "Тип листа",
             "SplitCoinsLabel": "Распределить монеты",
-            "SplitCoinsPopupHeader": "Актёры для получения доли"
+            "SplitCoinsPopupHeader": "Актёры для получения доли",
+            "Stack": "Create new stack?"
         },
         "vehicle": {
             "ItemTypeError": "На данный момент транспортом поддерживаются только предметы и действия.",
@@ -4603,7 +4913,7 @@
                     "FastHealing": "<p>Монстр с этой способностью восстанавливает указанное число ПЗ каждый раунд в начале своего хода.</p>",
                     "Ferocity": "<p data-visibility=\"gm\"><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its @Compendium[pf2e.conditionitems.Wounded]{Wounded} value increases by 1. When it is Wounded 3, it can no longer use this ability</p>",
                     "FormUp": "<p>The troop chooses one of the squares it currently occupies and redistributes its squares to any configuration in which all squares are contiguous and within 15 feet of the chosen square. The troop can't share its space with other creatures.</p>",
-                    "FrightfulPresence": "<hr />\n<p>A creature that first enters the area must attempt a Will save.</p>\n<div data-visibility=\"gm\">\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to this monster's Frightful Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by the presence.</p>\n<p><strong>Success</strong> The creature is @Compendium[pf2e.conditionitems.Frightened]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @Compendium[pf2e.conditionitems.Frightened]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @Compendium[pf2e.conditionitems.Frightened]{Frightened 4}.</p>\n</div>",
+                    "FrightfulPresence": "<p>A creature that first enters the area must attempt a Will save.</p>\n<div data-visibility=\"gm\">\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to this monster's Frightful Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by the presence.</p>\n<p><strong>Success</strong> The creature is @Compendium[pf2e.conditionitems.Frightened]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @Compendium[pf2e.conditionitems.Frightened]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @Compendium[pf2e.conditionitems.Frightened]{Frightened 4}.</p>\n</div>",
                     "Grab": "<p data-visibility=\"gm\"><strong>Requirements</strong> The monster's last action was a success with a Strike that lists Grab in its damage entry, or it has a creature grabbed using this action.</p>\n<p><strong>Effect</strong> The monster automatically Grabs the target until the end of the monster's next turn. The creature is @Compendium[pf2e.conditionitems.Grabbed]{Grabbed} by whichever body part the monster attacked with, and that body part can't be used to Strike creatures until the grab is ended. Using Grab extends the duration of the monster's Grab until the end of its next turn for all creatures grabbed by it. A grabbed creature can use the @Compendium[pf2e.actionspf2e.Escape]{Escape} action to get out of the grab, and the Grab ends for a grabbed creatures if the monster moves away from it.</p>",
                     "GreaterConstrict": "<p>The monster deals the listed amount of damage to any number of creatures @Compendium[pf2e.conditionitems.Grabbed]{Grabbed} or @Compendium[pf2e.conditionitems.Restrained]{Restrained} by it. Each of those creatures can attempt a basic Fortitude save with the listed DC. A creature that fails this save falls @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}, and a creature that succeeds is then temporarily immune to falling unconscious from Greater Constrict for 1 minute.</p>",
                     "GreaterDarkvision": "<p>A creature with greater darkvision can see perfectly well in areas of darkness and dim light, though such vision is in black and white only. Some forms of magical darkness, such as a 4th-level <em>@Compendium[pf2e.spells-srd.Darkness]{Darkness}</em> spell, block normal @Compendium[pf2e.bestiary-ability-glossary-srd.Darkvision]{Darkvision}. A creature with greater darkvision, however, can see through even these forms of magical darkness.</p>",
