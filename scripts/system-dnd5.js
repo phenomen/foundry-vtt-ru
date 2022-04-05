@@ -65,7 +65,7 @@ export function InitDND5() {
   if (!game.settings.get("ru-ru", "altTranslationSelected")) {
     new Dialog({
       title: "Выбор перевода",
-      content: `<p>Выберите предпочитаемый перевод системы D&D5. Вы можете изменить его позже в настройках модуля.</p>`,
+      content: `<p>Выберите предпочитаемый перевод системы D&D5. Вы можете изменить это позже в настройках модуля</p>`,
       buttons: {
         hw: {
           label: "Hobby World",
@@ -96,7 +96,7 @@ export function InitDND5() {
     } else {
       new Dialog({
         title: "Альтернативный перевод",
-        content: `<p>Для использования альтернативного перевода требуется активировать модуль <b>libWrapper</b>.</p>`,
+        content: `<p>Для использования альтернативного перевода требуется активировать модуль <b>libWrapper</b></p>`,
         buttons: {
           done: {
             label: "Хорошо",
@@ -137,7 +137,7 @@ export function InitDND5() {
     if (game.settings.get("ru-ru", "compendiumTranslation")) {
       new Dialog({
         title: "Перевод библиотек",
-        content: `<p>Для перевода библиотек системы D&D5 требуется установить и активировать модуль <b>Babele</b>. Вы можете отключить перевод библиотек в настройках модуля.</p>`,
+        content: `<p>Для перевода библиотек системы D&D5 требуется активировать модуль <b>Babele</b>. Вы можете отключить перевод библиотек в настройках модуля</p>`,
         buttons: {
           done: {
             label: "Хорошо",
