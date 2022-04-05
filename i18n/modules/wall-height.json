@@ -1,9 +1,30 @@
 {
-    "wallHeight": {
+    "wall-height": {
         "WallHeightTopLabel": "Высота стены (верх)",
         "WallHeightBottomLabel": "Высота стены (низ)",
         "AdvancedVisionLabel": "Включить высоту стен для зрения в сцене",
         "AdvancedMovementLabel": "Включить высоту стен для перемещения в сцене",
-        "ModuleLabel": "Высота стены"
+        "tokenHeightLabel": "Высота токена",
+        "tokenHeightNotes": "Высота токена, импользуемая для расчёта зрения относительно высоты стен.",
+        "ModuleLabel": "Высота стены",
+        "ALGlobal": "Эта настройка включена глобально в настройках модуля.",
+        "elevation": "Высота",
+        "levelsRangeTop": "Высота (верх)",
+        "levelsRangeBottom": "Высота (низ)",
+        "distance": "(единицы сетки)",
+        "settings.globalAdvancedLighting.name": "Включить 'Ограничение высотой' глобально",
+        "settings.globalAdvancedLighting.hint": "Эффекты области будут ограничены стенами в зависимости от высоты источника эффекта, вместо высоты токена.",
+        "advancedLightingLabel": "Ограничение высотой",
+        "advancedLightingNotes": "Configure whether area of effect for this source is contrained by walls corresponding the elevation of this source instead of the elevation of the controlled token.",
+        "settings.enableTooltip.name": "Включить подсказки",
+        "settings.enableTooltip.hint": "Включение подсказок на слое стен, отображающих верх и низ стены.",
+        "settings.migrateOnStartup.name": "Миграция данных высоты стен при запуске",
+        "settings.migrateOnStartup.hint": "Миграция структуры данных модуля wall-height на новую. Это нужно сделать только один раз и затем перезагрузить мир.",
+        "settings.blockSightMovement.name": "Перелазание",
+        "settings.blockSightMovement.hint": "Разрешить токенам перемещаться через стены, если высота верха стены не больше высоты токена.",
+        "settings.autoLOSHeight.name": "Автоматическая высота токена",
+        "settings.autoLOSHeight.hint": "Автоматически расчитывать высоту токена в зависимости от его размера и масштаба. Высота будет расчитана для токенов, у которых не указана высота или с высотой 0. Настройка высоты по умолчанию будет проигнорирована.",
+        "settings.defaultLosHeight.name": "Высота токена по умолчанию",
+        "settings.defaultLosHeight.hint": "Высота токена (расположение глаз существа). По умолчанию 6."
     }
 }
