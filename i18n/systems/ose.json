@@ -20,7 +20,7 @@
   "OSE.dialog.xp.deal": "Раздать ПО",
   "OSE.dialog.xp.label": "ПО",
   "OSE.dialog.generator": "Генератор персонажа",
-  "OSE.dialog.generateSaves": "Генерация спасбросков",
+  "OSE.dialog.generateSaves": "Генерация испытаний",
   "OSE.dialog.generateScores": "Генерация характеристик",
   "OSE.dialog.generateScore": "Бросок {score} ({count})",
 
@@ -37,7 +37,7 @@
   "OSE.roll.hd": "Бросок Кости здоровья",
   "OSE.roll.attacksWith": "Атака {name}",
   "OSE.roll.attacks": "{name} атакует!",
-  "OSE.roll.save": "Спасбросок: {save}",
+  "OSE.roll.save": "Испытание: {save}",
   "OSE.roll.details.save": "Бросьте 1d20 >= {save} для успеха",
   "OSE.roll.attribute": "Проверка {attribute}",
   "OSE.roll.details.attribute": "Бросьте 1d20 <= {score} для успеха",
@@ -46,6 +46,7 @@
   "OSE.roll.reaction": "Проверка Реакции",
   "OSE.roll.initiative": "Группа {group} проверяет Инициативу!",
   "OSE.roll.individualInit": "{name} проверяет Инициативу!",
+  "OSE.roll.individualInitGroup": "Проверка инициативы",
 
   "OSE.table.treasure.roll": "Проверка сокровищ",
 
@@ -154,7 +155,7 @@
   "OSE.NPCReaction": "Реакция NPC",
   "OSE.RetainersMax": "# Спутников",
 
-  "OSE.category.saves": "Спасброски",
+  "OSE.category.saves": "Испытания",
   "OSE.category.attributes": "Основное",
   "OSE.category.inventory": "Инвентарь",
   "OSE.category.abilities": "Умения",
@@ -185,10 +186,14 @@
   "OSE.Setting.EncumbranceComplete": "Полная",
   "OSE.Setting.MovementAuto": "Рассчитывать движение",
   "OSE.Setting.SignificantTreasure": "Значительный вес сокровищ",
-  "OSE.Setting.SignificantTreasureHint": "Вес сокровищ при котором это будет влияет на скорость движения. Только для базовой нагрузки.", 
+  "OSE.Setting.SignificantTreasureHint": "Вес сокровищ при котором это будет влияет на скорость движения. Только для базовой нагрузки.",
   "OSE.Setting.Languages": "Языки",
   "OSE.Setting.LanguagesHint": "Введите языки, разделяя их запятой",
   "OSE.Setting.EnableInventory": "Включить инвентарь",
+  "OSE.Setting.applyDamageOption": "Цель урона",
+  "OSE.Setting.applyDamageOptionHint": "Токен, которому будет нанесён урон от атаки",
+  "OSE.Setting.damageSelected": "Выделение",
+  "OSE.Setting.damageTarget": "Цель",
 
   "OSE.items.Equip": "Надеть",
   "OSE.items.Unequip": "Снять",
@@ -245,8 +250,8 @@
   "OSE.spells.Class": "Класс",
   "OSE.spells.Duration": "Длительность",
   "OSE.spells.Level": "Круг",
-  "OSE.spells.Save": "Спасбросок",
-  "OSE.spells.ResetSlots": "Сбросить ячейки",
+  "OSE.spells.Save": "Испытание",
+  "OSE.spells.ResetSlots": "Сброс ячеек",
   "OSE.spells.MemorizedSlotsHint": "Запомненные ячейки",
   "OSE.spells.MaximumSlotsHint": "Доступные ячейки",
 
@@ -287,5 +292,8 @@
   "OSE.reaction.Unfriendly": "{name} выглядит недружественно",
   "OSE.reaction.Neutral": "{name} кажется нейтральным",
   "OSE.reaction.Indifferent": "{name} не заинтересован вами",
-  "OSE.reaction.Friendly": "{name} явно дружелюбен"
+  "OSE.reaction.Friendly": "{name} явно дружелюбен",
+
+  "OSE.CombatFlag.SpellDeclared": "Объявлено заклинание",
+  "OSE.CombatFlag.RetreatFromMeleeDeclared": "Объявлен отдход из ближнего боя"
 }

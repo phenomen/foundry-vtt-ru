@@ -2,7 +2,8 @@
   --font-sans: "Inter", "Arial", sans-serif;
   --font-sans-condensed: "Oswald", "Inter Condensed", sans-serif;
   --font-serif: "PT Serif", "Georgia", "Times New Roman", serif;
-  --font-fantasy: "Manuskript", "Papyrus", fantasy;
+  --font-fancy: "Beaufort", serif;
+  --font-pirate: "Manuskript", fantasy;
   --font-mono: "Roboto Mono", "Consolas", "Courier New", monospace;
   --font-cursive: "Marck Script", "Lucida Handwriting", cursive;
   --font-sci-fi: "OCR-A", monospace;
@@ -31,92 +32,13 @@
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter.ttf") format("truetype");
-  font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-Italic.ttf") format("truetype");
-  font-weight: 100;
   font-style: italic;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Italic.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Italic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Italic.ttf") format("truetype");
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Italic.ttf") format("truetype");
-  font-weight: 700;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Italic.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic;
-}
-
-/* MISC  */
-
-@font-face {
-  font-family: "Manuskript";
-  src: url("../fonts/manuskriptantd-reg.ttf") format("truetype");
 }
 
 /* OSWALD  */
@@ -124,43 +46,6 @@
 @font-face {
   font-family: "Oswald";
   src: url("../fonts/Oswald.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/Oswald.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/Oswald.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/Oswald.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/Oswald.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/Oswald.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
 }
 
 /* PT Serif  */
@@ -191,6 +76,13 @@
   src: url("../fonts/PTSerif-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
+}
+
+/* MISC  */
+
+@font-face {
+  font-family: "Manuskript";
+  src: url("../fonts/manuskriptantd-reg.ttf") format("truetype");
 }
 
 @font-face {
@@ -239,15 +131,6 @@
 @font-face {
   font-family: "Modesto Condensed";
   src: url("../fonts/Nodesto-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Modesto Condensed";
-  src: url("../fonts/Nodesto-Regular.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
 }
 
 @font-face {
@@ -267,15 +150,11 @@
 @font-face {
   font-family: "Marck Script";
   src: url("../fonts/MarckScript-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
 }
 
 @font-face {
   font-family: "Nodesto";
-  src: url("../fonts/Oswald.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
+  src: url("../fonts/Nodesto-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -291,6 +170,11 @@
 @font-face {
   font-family: "Jim Nightshade";
   src: url("../fonts/MarckScript-Regular.ttf") format("truetype");
+}
+
+.nodesto {
+  font-family: "Modesto Condensed";
+  font-weight: 400 !important;
 }
 
 /* FOUNDRY */
@@ -310,22 +194,15 @@ select {
 form .form-group label {
   font-family: var(--font-sans-condensed);
   font-size: var(--text-sm);
-  line-height: 22px;
   font-weight: 500;
+}
+
+.setup .form-group label {
+  font-size: var(--text-base) !important;
 }
 
 .tabs .item {
   font-family: var(--font-sans-condensed);
-}
-
-a.entity-link {
-  padding: 1px 3px !important;
-  line-height: 22px !important;
-}
-
-li a.entity-link {
-  padding: 1px 3px !important;
-  line-height: 24px !important;
 }
 
 .package-list .package .package-controls button {
@@ -338,11 +215,6 @@ li a.entity-link {
 .updated-packages-table th.action,
 .updated-packages-table td.action {
   font-family: var(--font-sans-condensed);
-}
-
-.nodesto {
-  font-family: "Modesto Condensed";
-  font-weight: 400 !important;
 }
 
 .journal-sheet .editor-content {
