@@ -7,21 +7,25 @@
   "Easy": "Легкая",
   "Formidable": "Внушительная",
   "Impossible": "Невозможная",
-  "Normal": "Обычный",
+  "Normal": "Обычная",
   "Routine": "Рутина",
   "Simple": "Элементарная",
   "TWODSIX": {
     "Damage": {
       "DealDamage": "Нанести урон",
       "Damage": "Урон",
+      "AP": "ББ",
       "TotalDamage": "Общий урон",
       "Characteristics": "Характеристики",
       "Max": "Макс.",
+      "Mod": "Мод.",
+      "Dmg": "Урон",
       "Current": "Текущий",
       "ResultingStat": "Итоговое значение",
       "UnallocatedDamage": "Нераспределённый урон",
       "CharacterIsDead": "Персонаж мёртв",
-      "DealDamageTo": "Нанести урон _ACTOR_NAME_"
+      "DealDamageTo": "Нанести урон _ACTOR_NAME_",
+      "DamageFormula": "Формула урона"
     },
     "Dialogs": {
       "ROFPickerTitle": "Выберите режим стрельбы",
@@ -36,14 +40,18 @@
       "Characteristics": {
         "DEX": "ЛОВ",
         "EDU": "ОБР",
-        "END": "ВЫН",
+        "END": "ВНС",
         "INT": "ИНТ",
         "PSI": "ПСИ",
         "SOC": "СОЦ",
         "STR": "СИЛ",
         "LFB": "ЗДР",
-        "STA": "ВНС"
+        "STA": "СТК",
+        "CTM": "ЗРЖ",
+        "ALT1": "АЛЬТ1",
+        "ALT2": "АЛЬТ2"
       },
+      "CharacteristicEdit": "Переключить редактирование аббревиатур характеристик",
       "DeleteOwnedItem": "Удалить предмет",
       "Finances": {
         "CASH_ON_HAND": "НА РУКАХ",
@@ -51,12 +59,13 @@
         "FINANCIAL_NOTES": "БУХГАЛТЕРИЯ",
         "LIVING_COSTS": "РАСХОДЫ НА ПРОЖИВАНИЕ",
         "PENSION": "ПЕНСИЯ",
-        "SHIP_PAYMENTS_MONTHLY": "ВЫПЛАТЫ ЗА КОРАБЛЬ"
+        "SHIP_PAYMENTS_MONTHLY": "ЕЖЕМЕСЯЧНЫЕ ВЫПЛАТЫ ЗА КОРАБЛЬ"
       },
       "Gender": "Пол",
+      "HeroPoints": "Пункты героизма",
       "Contamination": "Заражение",
       "Lifeblood": "Здоровье",
-      "Stamina": "Выносливость",
+      "Stamina": "Стойкость",
       "RadiationExposure": "Облучение радиацией",
       "HomeWorld": "Родной мир",
       "Info": {
@@ -71,6 +80,7 @@
         "AUGMENTS": "АУГМЕНТЫ",
         "Ammo": "Боеп.",
         "Armor": "Броня",
+        "EffectiveArmor": "Действующая броня",
         "CONSUMABLES": "Расходники",
         "Count": "Число",
         "CreateItem": "Создать предмет",
@@ -88,12 +98,17 @@
         "ShortDescr": "Краткое описание",
         "Subtype": "Тип",
         "TRAITS": "ЧЕРТЫ",
+        "Traits": "Черты",
         "TL": "ТУ",
+        "TechLevel": "Тех. уровень",
+        "Value": "Цена",
         "WEAPONS": "ОРУЖИЕ",
+        "Weapons": "Оружие",
         "Weight": "Вес"
       },
       "Notes": {
-        "NOTES": "ЛИЧНЫЕ ЗАМЕТКИ"
+        "NOTES": "ЛИЧНЫЕ ЗАМЕТКИ",
+        "Notes": "Личные заметки"
       },
       "Rolling": "Бросок",
       "Skills": {
@@ -119,7 +134,28 @@
         "Skills": "Навыки"
       },
       "UnknownActorType": "Неизвестный тип актёра",
-      "using": "исп."
+      "using": "исп.",
+      "Movement": {
+        "MovementConfig": "Настройка скорости движения",
+        "MovementConfigHint": "Настройте скорость передвижения и специальные атрибуты передвижения существа.",
+        "MovementWalk": "Шаг",
+        "MovementBurrow": "Рытьё",
+        "MovementClimb": "Лазание",
+        "MovementHover": "Парение",
+        "MovementFly": "Полёт",
+        "MovementSwim": "Плавание",
+        "MovementUnits": "Единицы",
+        "DistFt": "Футы",
+        "DistKm": "Километры",
+        "DistM": "Метры",
+        "DistMi": "Мили",
+        "MovementRate": "Скорость движения"
+      },
+      "CharDisplay": {
+        "Base": "Базовый",
+        "Alternate": "Альтернативный",
+        "All": "Все"
+      }
     },
     "Chat": {
       "Roll": {
@@ -134,6 +170,9 @@
       "CantShowCharacteristic": "Вам нужно заново выбрать характеристики для навыков, отмеченных XXX. Извините..."
     },
     "Items": {
+      "Encumbrance": "Вес",
+      "Enc": "Вес",
+      "DocumentReference": "Источник",
       "Armor": {
         "Armor": "Броня",
         "SecondaryArmor": "Вторичная броня",
@@ -148,6 +187,64 @@
         "Legs": "Ноги",
         "Torso": "Туловище",
         "ValueCr": "Цена"
+      },
+      "Component": {
+        "componentName": "Компонент",
+        "accomodations": "жилое помещение",
+        "armament": "вооружение",
+        "armor": "броня",
+        "bridge": "мостик",
+        "cargo": "груз",
+        "computer": "компьютер",
+        "drive": "двигатель",
+        "drone": "дрон",
+        "electronics": "электроника",
+        "fuel": "топливо",
+        "hull": "корпус",
+        "mount": "крепление",
+        "power": "питание",
+        "sensor": "сенсор",
+        "shield": "щит",
+        "software": "программа",
+        "storage": "хранилище",
+        "vehicle": "транспорт",
+        "other": "прочее",
+        "otherExternal": "прочее - внешнее",
+        "otherInternal": "прочее - внутреннее",
+        "operational": "работает",
+        "damaged": "повреждён",
+        "destroyed": "уничтожен",
+        "off": "отключён",
+        "powerDraw": "Потребление питания за единицу",
+        "powerGenerated": "Вырабатываемое питание за единицу",
+        "Power": "Питание",
+        "status": "Статус",
+        "rating": "Рейтинг",
+        "totalQuantity": "Всего",
+        "availableQuantity": "Доступное количество",
+        "damage": "Урон",
+        "damageHits": "Урон / Попадание",
+        "hits": "Попадание",
+        "weightIsPct": "Вес в процентах?",
+        "purchasePrice": "Цена покупки",
+        "isIllegal": "Незаконный?",
+        "unitWeight": "Вес единицы",
+        "pctDisplacement": "% Массы смещения",
+        "CargoItem": "Предмет груза",
+        "CargoLocation": "Расположение груза",
+        "Price": "Цена",
+        "Value": "Значение",
+        "GeneratesPower": "Генерирует Питание?",
+        "IsRefined": "Очищенный?",
+        "Features": "Особенности / черты",
+        "PricingBasis": "Цена на",
+        "perUnit": "МКр за единицу",
+        "perCompTon": "МКр за тонну компонента",
+        "perHullTon": "МКр на тонну корпуса",
+        "pctHull": "Процент базового значения корпуса",
+        "isBaseHull":"Является базовым корпусом?",
+        "RollModifier":"Модификатор Броска",
+        "DM":"МБ"
       },
       "Equipment": {
         "AssignSkill": "Назначить навык",
@@ -179,7 +276,7 @@
       "Skills": {
         "DEX": "ЛОВ",
         "EDU": "ОБР",
-        "END": "ВЫН",
+        "END": "ВНС",
         "INT": "ИНТ",
         "Level": "Уровень",
         "Modifier": "Модификатор",
@@ -188,12 +285,16 @@
         "SOC": "СОЦ",
         "STR": "СИЛ",
         "SkillName": "Название навыка",
+        "SimplifiedSkillName": "Аббревиатура навыка",
+        "SimplifiedSkillNameDescription": "Используется в формулах бросков, вроде @skills._SKILL_NAME_.<br>@skills._SKILL_NAME__ равняется нулю, если навыка не существует или он меньше нуля.",
         "LFB": "ЗДР",
-        "STA": "ВНС"
+        "STA": "ВНС",
+        "ALT1": "АЛТ1",
+        "ALT2": "АЛТ2"
       },
       "Traits": {
-              "Prerequisite": "Критерии",
-              "TraitName": "Название черты"
+        "Prerequisite": "Критерии",
+        "TraitName": "Название черты"
       },
       "Tool": {
         "Bonus": "Бонус"
@@ -211,6 +312,7 @@
         "Size": "Размер",
         "Subtype": "Тип",
         "Count": "Число",
+        "ArmorPiercing": "Бронебойность",
         "DropConsumablesHere": "Вы можете перенести расходники сюда.",
         "RemoveConsumable": "Удалить расходник",
         "RemoveConsumableFrom": "Удалить расходник _CONSUMABLE_NAME_ из _ITEM_NAME_?"
@@ -226,8 +328,97 @@
         "rateOfFire": "Скорострельность/Авто X",
         "recoil": "Отдача",
         "UseAsAmmunitionForAttack": "Использовать боеприпасы для атак",
-        "MagazineCost": "Цена обоймы/энергоячейки"
+        "MagazineCost": "Цена обоймы/энергоячейки",
+        "ArmorPiercing": "Бронебойность",
+        "Features": "Особенности / черты"
       }
+    },
+    "Ship": {
+      "Actions": "Действия",
+      "ActionType": "Тип действия",
+      "Unknown": "неизвестный",
+      "ActorLacksSkill": "_ACTOR_NAME_ не имеет навыка _SKILL_",
+      "ActorMustBeSelectedForAction": "Так как имеется несколько актеров, выберите того кто делает действие",
+      "AddShipPosition": "Добавить Позицию Корабля",
+      "Avail": "Доступ.",
+      "Available": "Доступно",
+      "AvailableCargoWeight": "Доступный вес груза",
+      "CantDropActorIfPositionIsNotOnShip": "Вы не можете поставить Путешественника на позицию корабля, которая не находится на корабле",
+      "Cargo": "Груз",
+      "CargoWeight": "Общий вес груза",
+      "CARGONOTES": "ГРУЗОВЫЕ ЗАМЕТКИ",
+      "COMPONENTS": "КОМПОНЕНТЫ",
+      "CreateAction": "Создать действие",
+      "Crew": {
+        "ADMIN": "АДМИНИСТРАЦИЯ",
+        "ASTROGATOR": "АСТРОГАТОР",
+        "BROKER": "ПОСРЕДНИК",
+        "CAPTAIN": "КАПИТАН",
+        "ENGINEER": "ИНЖЕНЕР",
+        "GUNNER": "ЗЕНИТЧИК",
+        "MAINTENANCE": "РЕМОНТНИК",
+        "MARINE": "ПЕХОТИНЕЦ",
+        "MEDIC": "МЕДИК",
+        "OTHER": "ДРУГИЕ",
+        "PILOT": "ПИЛОТ",
+        "STEWARD": "СТЮАРД"
+      },
+      "Deckplan": "План палубы",
+      "DeleteAction": "Удалить действие",
+      "Displacement": "Смещение",
+      "Drives": "Двигатели",
+      "FINANCENOTES": "БУХГАЛТЕРИЯ",
+      "SHIPVALUE": "ЦЕНА КОРАБЛЯ",
+      "Fuel": "Топливо",
+      "Gs": "G",
+      "InvalidDocumentForShipPosition": "Этот тип документа недопустим для позиций корабля. Сюда можно перенести только навыки.",
+      "IsMassProduced": "Корабль Серийно Выпускается",
+      "JDrive": "J-Двигатель",
+      "Jump": "Прыжок",
+      "MacroSkill": "Макрос/Навык",
+      "MakesChatRollAction": "Использует действие _ACTION_NAME_ из позиции _POSITION_NAME_",
+      "MaintPM": "Ежемесячное обслуживание",
+      "MANIFEST": "ДЕКЛАРАЦИЯ",
+      "MAX": "МАКС.",
+      "MDrive": "М-Двигатель",
+      "Name": "Имя",
+      "NewAction": "Новое действие",
+      "NoActorsForAction": "Нет доступных актеров для действия",
+      "Order": "Порядок",
+      "Overdrive": "Перегрузка",
+      "Parsecs": "Парсеки",
+      "pc": "pc",
+      "PositionName": "Название Позиции",
+      "Power": "Питание",
+      "PowerManagement": "Управление питанием",
+      "PowerWeightManagement": "Управление питания и веса",
+      "PP": "ОП",
+      "RemoveTraveller": "Убрать путешественника с корабля",
+      "Sensors": "Сенсоры",
+      "ShipHull": "Корпус корабля",
+      "SHIPNOTES": "ЗАМЕТКИ КОРАБЛЯ",
+      "Storage": "Хранение",
+      "Systems": "Системы",
+      "Tabs": {
+        "Cargo": "Груз",
+        "Components": "Компоненты",
+        "Crew": "Экипаж",
+        "Finance": "Финансы",
+        "Locker": "Сейф",
+        "Notes": "Заметки",
+        "ShipPositions": "Позиции"
+      },
+      "Thrust": "Тяга",
+      "tons": "тонны",
+      "Travellers": "Путешественники",
+      "USED": "ИСПОЛ.",
+      "Vehicles": "Транспорт",
+      "Weapons": "Орудия",
+      "MCr": "МКр",
+      "ShipValue": "Цена корабля",
+      "MortgagePerMonth": "Платеж по Ипотеке",
+      "MaintenancePerMonth": "Цена Обслуживания",
+      "CrPerMonth": "Кр/месяц"
     },
     "Migration": {
       "Completed": "Миграция Twodsix System до версии {version} завершена!",
@@ -251,24 +442,35 @@
       "With": "с",
       "resultShows": "отображает",
       "sum": "сумму",
-      "using": "использует {characteristic}"
+      "using": "использует {characteristic}",
+      "Wounds": "Ранения",
+      "AttackDM": "МБ атаки",
+      "BonusDamage": "Бонусный урон"
     },
     "Settings": {
-      "ruleset": {
-        "hint": "Настройки будут оптимизированы под выбранные правила.",
-        "name": "Правила"
-      },
       "absoluteBonusValueForEachTimeIncrement": {
-        "hint": "Leave empty to use default (+/-1). Not currently used.",
-        "name": "What bonus/penalty to give per each time increment change in a task."
+        "hint": "Оставьте пустую для использования обычного (+/-1). Сейчас не используется.",
+        "name": "Какие бонусы/штрафы выдавать за каждое изменение в задаче."
       },
       "absoluteCriticalEffectValue": {
-        "hint": "Defaults to 99, which means that effect is ignored.",
-        "name": "What effect is required for a throw to be considered a critical success/failure (i.e. be colored green/red)."
+        "hint": "Сбрасывается на 99, означает что эффект не работает",
+        "name": "Этот эффект нужен на случай критически успешного/провального броска (в цвете зеленого/красного)."
+      },
+      "alternativeShort1": {
+        "hint": "Аббревиатура для первой альтернативной характеристики. Оно должно быть не больше четырех символов.",
+        "name": "Аббревиатура для альтернативной характеристики 1"
+      },
+      "alternativeShort2": {
+        "hint": "Аббревиатура для второй альтернативной характеристики. Оно должно быть не больше четырех символов.",
+        "name": "Аббревиатура для альтернативной характеристики 2"
+      },
+      "autofireRulesUsed": {
+        "hint": "Выберите используемый вариант правил длинной/короткой очереди.",
+        "name": "Выберите используемый вариант правил длинной/короткой очереди."
       },
       "automateDamageRollOnHit": {
-        "hint": "checked=Roll damage, modified by effect of skill roll. unchecked=Don't roll damage.",
-        "name": "Automatically roll damage on skill rolls that hit (i.e. get effect > 0) with items that do damage?"
+        "hint": "выбран=Бросает урон, измененный эффектом броска. не выбран=Не бросает урон.",
+        "name": "Автоматически бросает урон на проверке навыков при попадании (эффект > 0) с предметами которые наносят урон."
       },
       "criticalNaturalAffectsEffect": {
         "hint": "checked=Regardless of success consider a natural 2 to have an effect of -1 and a 12 to have an effect of 0, unchecked=Use normal rules",
@@ -278,25 +480,136 @@
         "hint": "Automatically set advised prototype token settings to newly created Actors.",
         "name": "Default Prototype Token Settings"
       },
+      "difficultiesAsTargetNumber": {
+        "hint": "checked=Use target number rather than modifier for difficulties, unchecked=Use modifiers",
+        "name": "Use target numbers rather than modifiers for difficulties."
+      },
+      "difficultyListUsed": {
+        "hint": "Select which variant's difficulty list should be used.",
+        "name": "Select which variant's difficulty list should be used."
+      },
       "effectOrTotal": {
         "hint": "checked=Show effect (i.e. roll+modifiers-target number, usually 8), unchecked=Show total (i.e. roll+modifiers)",
         "name": "Show effect or total roll value for skill and characteristic rolls."
       },
+      "ExperimentalFeatures": {
+        "hint": "checked=Boldly use ugly and buggy experimental features that just maybe won't delete your game world, unchecked=Hide them like any sane person would",
+        "name": "Show ugly, buggy and unfinished features. I.e., kind of like all the other features that are not hidden by this flag. :)"
+      },
+      "hideUntrainedSkills": {
+        "continue": "Do you want to continue?",
+        "hint": "checked=Show pseudo-skill 'Untrained' instead of all untrained skills. unchecked=Show all untrained skills",
+        "name": "Hide all untrained skills, instead show a single pseudo-skill named 'Untrained'. This also makes it so new skills are added at 0 instead of the untrained skill value.",
+        "warning": "Warning!",
+        "warningReset": "After saving the system settings all skills using the pseudo-skill Untrained will be permanently reset to using no skill.This action cannot be undone.",
+        "warningUpdateWeapon": "After saving the system settings all actors' weapons that do not have a skill will be updated to use the pseudo-skill Untrained.This action cannot be undone."
+      },
       "initiativeFormula": {
-        "hint": "Like: \"2d6 + @characteristics.dexterity.mod\"",
-        "name": "Initiative Formula"
+        "hint": "Например: \"2d6 + @characteristics.dexterity.mod\"",
+        "name": "Формула инициативы"
+      },
+      "invertSkillRollShiftClick": {
+        "hint": "Clicking on a skill roll or dragging damage to a character normally shows a dialog, shift-clicking applies default values (Average skill roll or automatic damage distribution). Checking this box swaps this behavior.",
+        "name": "Invert behavior for shift-clicking for skill rolls and shift-dragging for taking damage"
+      },
+      "lifebloodInsteadOfCharacteristics": {
+        "hint": "Показывать ВНС и Здоровье (использует СИЛ за укрытиями) как характеристики. Полезно для Cepheus Atom, Barbaric! и др.",
+        "name": "Показывать ВНС и Здоровье (СИЛ) как характеристики."
       },
       "maxSkillLevel": {
         "hint": "Leave empty to use default (9).",
-        "name": "Maximum skill level."
+        "name": "Максимальный уровень навыка"
       },
       "modifierForZeroCharacteristic": {
         "hint": "Leave empty to use default (-2). Does not automatically recalculate modifiers for existing characters.",
         "name": "Modifier for characteristic value of zero."
       },
+      "ruleset": {
+        "hint": "Настройки будут оптимизированы под выбранные правила. Подмечю что правила сверху имеют наилучшую поддержку. Посмотрите https://github.com/xdy/twodsix-foundryvtt/blob/master/docs/docs.md для деталей. Правила, относящиеся к набору правил, отмечены зеленой рамкой. Любые изменения в настройках, установленных набором правил, будут отмечены оранжевой рамкой.",
+        "name": "Правила"
+      },
+      "settingsInterface": {
+        "debugSettings": {
+          "hint": "Configure/View the debug settings.",
+          "intro": "Debug Settings",
+          "name": "Debug Settings"
+        },
+        "displaySettings": {
+          "hint": "Configure the display settings.",
+          "intro": "Display Settings",
+          "name": "Display Settings"
+        },
+        "itemSettings": {
+          "hint": "Configure the item fields that are shown.",
+          "intro": "Item Settings",
+          "name": "Item Settings"
+        },
+        "rulesetSettings": {
+          "hint": "Configure the ruleset settings.",
+          "intro": "Current Rules",
+          "modified": "modified",
+          "name": "Advanced Ruleset Settings"
+        }
+      },
+      "shipInitiativeFormula": {
+        "hint": "Например: \\\"2d6",
+        "name": "Формула инициативы корабля"
+      },
+      "showAlternativeCharacteristics": {
+        "hint": "Основные шесть плюс ПСИ. Альтернативно: основные шесть плюс альтернативные. Все: основные шесть плюс ПСИ плюс Альтернативные",
+        "name": "Выберите показываемые характеристики"
+      },
+      "showContaminationBelowLifeblood": {
+        "hint": "Показывать Заражение под Здоровьем. Полезно только если включена опция 'Показывать ВНС и Здоровье',",
+        "name": "Показывать Заражение под Здоровьем."
+      },
+      "ShowDamageType": {
+        "hint": "checked=Show the 'Damage Type' field, unchecked=Hide it",
+        "name": "Отображать поле типа урона на оружии"
+      },
+      "showHeroPoints": {
+        "hint": "Показывать счётчик пунктов Героизма в бланке персонажа.",
+        "name": "Включить пункты Героизма"
+      },
+      "showItemReferences": {
+        "hint": "В бланках предметов будет отображаться поле для указания источника в формате PDFoundry: [документ] [номер страницы]",
+        "name": "Отображать поле источника в бланках предметов."
+      },
+      "ShowLawLevel": {
+        "hint": "checked=Show the 'Law Level' field, unchecked=Hide it",
+        "name": "Отображать поле уровня законности на оружии"
+      },
+      "showLifebloodStamina": {
+        "hint": "Отображать Здоровье и Стойкость на бланке персонажа. Урон будет применяться к этим характеристикам. Полезно для Cepheus Deluxe.",
+        "name": "Отображать и наносить урон Здоровью и Стойкости."
+      },
       "showMissingCompendiumWarnings": {
         "hint": "Whether to show warnings for missing/disabled modules on world start.",
         "name": "Show warnings about missing/disabled modules."
+      },
+      "ShowRangeBandAndHideRange": {
+        "hint": "checked=Shows 'Range Band', unchecked=Shows 'Range'",
+        "name": "Отображать 'Диапазон дистанций' и *скрывать* 'Дистанцию' на оружии и персонажах"
+      },
+      "ShowRateOfFire": {
+        "hint": "checked=Show the 'Rate of Fire' field, unchecked=Hide it",
+        "name": "Show the 'Rate of Fire' field on weapon sheets"
+      },
+      "ShowRecoil": {
+        "hint": "checked=Show the 'Recoil' field, unchecked=Hide it",
+        "name": "Show the 'Recoil' field on weapon sheets"
+      },
+      "showSingleComponentColumn": {
+        "hint": "Show the ship components list as a single row.",
+        "name": "Ship components listed as single row"
+      },
+      "ShowWeaponType": {
+        "hint": "checked=Show the 'Weapon Type' field, unchecked=Hide it",
+        "name": "Show the 'Weapon Type' field on weapon sheets"
+      },
+      "showWeightUsage": {
+        "hint": "Display ship weight values instead of power on ship sheet.",
+        "name": "Show Weight instead of Power management on Ship Sheet"
       },
       "systemMigrationVersion": {
         "hint": "Records the schema version for the Twodsix system. (Don't modify this unless you know what you are doing)",
@@ -310,73 +623,63 @@
         "hint": "Don't use the same as for termForAdvantage...",
         "name": "What you want to call rolls with disadvantage (3d6kl2)."
       },
-      "ShowLawLevel": {
-        "hint": "checked=Show the 'Law Level' field, unchecked=Hide it",
-        "name": "Show the 'Law Level' field on weapon sheets"
+      "useFoundryStandardStyle": {
+        "default": "Default Twodsix Style",
+        "foundry": "Standard Foundry VTT style",
+        "hint": "Use Foundry's default style for user interface.  This should make some modules more compatible with TWODSIX",
+        "name": "Use Foundry Standard Style"
       },
-      "ShowRecoil": {
-        "hint": "checked=Show the 'Recoil' field, unchecked=Hide it",
-        "name": "Show the 'Recoil' field on weapon sheets"
+      "useModuleFixStyle": {
+        "hint": "Modifies CSS style to correct identified style issues for certain modules when using the Twodsix style.  It doesn't work when using Foundry default style.",
+        "name": "Correct some css style issues due to modules and default Twodsix style."
       },
-      "ShowRateOfFire": {
-        "name": "Show the 'Rate of Fire' field on weapon sheets",
-        "hint": "checked=Show the 'Rate of Fire' field, unchecked=Hide it"
-      },
-      "ShowDamageType": {
-        "hint": "checked=Show the 'Damage Type' field, unchecked=Hide it",
-        "name": "Show the 'Damage Type' field on weapon sheets"
-      },
-      "ShowWeaponType": {
-        "hint": "checked=Show the 'Weapon Type' field, unchecked=Hide it",
-        "name": "Show the 'Weapon Type' field on weapon sheets"
-      },
-      "ShowRangeBandAndHideRange": {
-        "hint": "checked=Shows 'Range Band', unchecked=Shows 'Range'",
-        "name": "Show 'Range Band' and *hide* 'Range' on weapon sheets and the character sheet"
-      },
-      "autofireRulesUsed": {
-        "hint": "Select which variant's auto/burst fire rules should be used.",
-        "name": "Select which variant's auto/burst fire rules should be used."
-      },
-      "difficultyListUsed": {
-        "hint": "Select which variant's difficulty list should be used.",
-        "name": "Select which variant's difficulty list should be used."
-      },
-      "difficultiesAsTargetNumber": {
-        "hint": "checked=Use target number rather than modifier for difficulties, unchecked=Use modifiers",
-        "name": "Use target numbers rather than modifiers for difficulties."
-      },
-      "ExperimentalFeatures": {
-        "hint": "checked=Boldly use ugly and buggy experimental features that just maybe won't delete your game world, unchecked=Hide them like any sane person would",
-        "name": "Show ugly, buggy and unfinished features. I.e., kind of like all the other features that are not hidden by this flag. :)"
-      },
-      "hideUntrainedSkills": {
-        "hint": "checked=Show pseudo-skill 'Untrained' instead of all untrained skills. unchecked=Show all untrained skills",
-        "name": "Hide all untrained skills, instead show a single pseudo-skill named 'Untrained'. This also makes it so new skills are added at 0 instead of the untrained skill value.",
-        "warningReset": "After saving the system settings all skills using the pseudo-skill Untrained will be permanently reset to using no skill.This action cannot be undone.",
-        "warningUpdateWeapon": "After saving the system settings all actors' weapons that do not have a skill will be updated to use the pseudo-skill Untrained.This action cannot be undone.",
-        "continue": "Do you want to continue?",
-        "warning": "Warning!"
-      },
-      "invertSkillRollShiftClick": {
-        "hint": "Clicking on a skill roll or dragging damage to a character normally shows a dialog, shift-clicking applies default values (Average skill roll or automatic damage distribution). Checking this box swaps this behavior.",
-        "name": "Invert behavior for shift-clicking for skill rolls and shift-dragging for taking damage"
-      },
-      "lifebloodInsteadOfCharacteristics": {
-        "hint": "Показывать ВЫН и Здоровье (использует СИЛ за укрытиями) как характеристики. Полезно для Cepheus Atom, Barbaric! и др.",
-        "name": "Показывать ВЫН и Здоровье (СИЛ) как характеристики."
-      },
-      "showContaminationBelowLifeblood": {
-        "hint": "Показывать Заражение под Здоровьем. Полезно только если включена опция 'Показывать ВЫН и Здоровье',",
-        "name": "Показывать Заражение под Здоровьем."
+      "useShipAutoCalcs": {
+        "hint": "When enabled, the ship summary power, weight, and price statistics are calculated based on component vaules. Otherwise, values are input by user.",
+        "name": "Automatically calculate summary ship power, weight, and price values"
       },
       "useSystemDefaultTokenIcon": {
-        "hint": "Будет использована иконка токена по умолчанию (человек в капюшоне) при создании нового актёра. Включите эту опцию, чтобы портрет актёра автоматически устанавливался в качестве изображения токена.",
-        "name": "Использовать иконку токена по умолчанию для новых актёров."
+        "hint": "Будет использована иконка токена Foundry VTT (человек в капюшоне) вместо иконки из Twodsix при создании нового актёра. Включите эту опцию, чтобы портрет актёра автоматически устанавливался в качестве изображения токена (иначе иконку токена надо будет изменять отдельно).",
+        "name": "Использовать иконку токена Foundry вместо Twodsix для новых актёров."
       },
-      "showLifebloodStamina": {
-        "hint": "Отображать Здоровье и Выносливость на бланке персонажа. Урон будет применяться к этим характеристикам. Полезно для Cepheus Deluxe.",
-        "name": "Наносить урон Здоровью и Выносливости."
+      "useWoundedStatusIndicators": {
+        "hint": "Uses status indicators to indicate wounded status and automatically roll unconcious saves on serious wounds. Roll modifiers below are applied to all rolls.",
+        "name": "Display wounded status indicators and apply roll modifiers"
+      },
+      "minorWoundsRollModifier": {
+        "hint": "The modifier for all rolls when actor has minor wounds (negative subtracts from roll or increases DM).",
+        "name": "Roll Modifier for minor wounds"
+      },
+      "seriousWoundsRollModifier": {
+        "hint": "The modifier for all rolls when actor has serious wounds (negative subtracts from roll or increases DM).",
+        "name": "Roll Modifier for serious wounds"
+      },
+      "weightModifierForWornArmor": {
+        "hint": "Factor to multiply the weight value of a armor if it is currently equipped.",
+        "name": "Factor to multiply the weight value of a equipped armor."
+      },
+      "useTinyMCEditor": {
+        "hint": "Use the embedded HTML editor for larger input blocks.",
+        "name": "Use TinyMCE editor for larger input blocks."
+      },
+      "showIcons": {
+        "hint": "Использовать иконки вместо тексты для информации в биографии. Иконки всегда будут отображаться для здоровья и стойкости.",
+        "name": "Use icons for biographical information."
+      },
+      "maxComponentHits": {
+        "hint": "The number of hits at which the component is destroyed",
+        "name": "Maximum hits for a component."
+      },
+      "mortgagePayment": {
+        "hint": "The number to divide the ship cost by to determine the monthly mortgage payments over 40 years.  A value of 240 means that the ship cost is divided 240 to dermine the monthly payment.",
+        "name": "Mortgage Payment Terms."
+      },
+      "massProductionDiscount": {
+        "hint": "The cost savings for ship construction due to being mass produced. A value of 0.1 means that 10% is deducted from the base price of the ship.",
+        "name": "Discount for ship being mass produced"
+      },
+      "reverseHealingOrder": {
+        "hint": "Healing using token bar input heals in the same order that auto damage occurs. The first characteristic damaged is also the first healed.  If this setting is false, healing starts with last characterisic and works backwards.",
+        "name": "Reverse characteristic healing order"
       }
     },
     "CloseAndCreateNew": "Закрыть и создать",
@@ -394,7 +697,8 @@
       "skills": "навыки",
       "skill": "навык",
       "consumable": "расходник",
-      "trait": "черта"
+      "trait": "черта",
+      "component": "компонент"
     },
     "Errors": {
       "NoSkillForSkillRoll": "Вы пытаетесь пройти проверку навыка, не выбрав навык.",
@@ -411,14 +715,19 @@
       "OnlyDropConsumables": "Только расходники могут быть перенесены на предмет.",
       "DropFailedWith": "Перенос не удался из-за _ERROR_MSG_",
       "CouldNotFindItem": "Не удаётся найти предмет с id: _ITEM_ID_",
-      "DraggedCompendiumIsNotItem": "Переносимый из библиотеки объект не является предметом."
+      "DraggedCompendiumIsNotItem": "Переносимый из библиотеки объект не является предметом.",
+      "InvalidRollFormula": "Некорректная формула урона"
     },
     "Warnings": {
       "ActorMissingItem": "У актёра под вашим управлением нет предмета с id: _ITEM_ID_",
       "AutoDamageForMultipleTargetsNotImplemented": "Автоматическое нанесение урона нескольким целям (используя Авто X) в данный момент не поддерживается.",
       "MaxStatVal": "Значение превышает максимальное для характеристики",
       "StatValBelowZero": "Значение не может быть ниже нуля",
-      "DecreaseEnduranceFirst": "Выносливость должна быть понижена перед другими характеристиками"
+      "DecreaseEnduranceFirst": "Выносливость/Стойкость должна быть понижена перед другими характеристиками",
+      "CantAutoDamageShip": "Автоматический урон корабля не поддерживается",
+      "CantDragOntoActor": "Этот предмет не может быть добавлен этому актёру",
+      "PDFFoundryNotInstalled": "Для ссылок на источники нужно установить PDFoundry.",
+      "NoSpecfiedLink": "Документ и страница не указаны для этой ссылки."
     }
   },
   "VeryDifficult": "Очень сложная"
