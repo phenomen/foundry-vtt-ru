@@ -1,3 +1,32 @@
+@font-face {
+  font-family: "Asap";
+  src: url("../fonts/Inter.ttf") format("truetype") !important;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Asap";
+  src: url("../fonts/Inter.ttf") format("truetype") !important;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Asap-Italic";
+  src: url("../fonts/Inter.ttf") format("truetype") !important;
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Asap-Italic";
+  src: url("../fonts/Inter.ttf") format("truetype") !important;
+  font-weight: bold;
+  font-style: italic;
+}
+
+label,
+.window-content,
 .gear-header,
 .gear,
 .item-title-short,
@@ -10,16 +39,10 @@ span.special-name {
   font-family: var(--font-sans-condensed);
 }
 
-.item-title {
-  font-weight: bold !important;
-}
-
-span.stat-name {
-  font-size: 15px !important;
-  top: -1.3em;
-}
-
-span.special-name {
-  font-size: 15px !important;
-  top: -1.3em;
+.power-current input[type="number"],
+.power-total input[type="number"],
+.ship-stat input[type="number"],
+.ship-stat-finance input[type="number"] {
+  width: 1.7em;
+  margin-top: -1px;
 }
