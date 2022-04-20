@@ -5,6 +5,7 @@ import { InitPF1E } from "./system-pf1e.js";
 import { InitWFRP4 } from "./system-wfrp4.js";
 import { InitALIEN } from "./system-alien.js";
 import { InitCORIOLIS } from "./system-coriolis.js";
+import { InitINVESTIGATOR } from "./system-investigator.js";
 //import { InitAOS } from "./system-age-of-sigmar-soulbound.js";
 
 Hooks.once("init", async () => {
@@ -35,9 +36,14 @@ Hooks.once("init", async () => {
     "Roboto Mono",
   ];
 
-  // D&D5
-  if (game.system.id === "dnd5e") {
-    InitDND5();
+  // ALIEN
+  if (game.system.id === "alienrpg") {
+    InitALIEN();
+  }
+
+  // CORIOLIS
+  if (game.system.id === "yzecoriolis") {
+    InitCORIOLIS();
   }
 
   // DELTA GREEN
@@ -45,9 +51,19 @@ Hooks.once("init", async () => {
     InitDELTAGREEN();
   }
 
+  // D&D5
+  if (game.system.id === "dnd5e") {
+    InitDND5();
+  }
+
   // DUNGEON WORLD
   if (game.system.id === "dungeonworld") {
     InitDUNGEONWORLD();
+  }
+
+  // INVESTIGATOR
+  if (game.system.id === "investigator") {
+    InitINVESTIGATOR();
   }
 
   // PATHFINDER 1
@@ -58,16 +74,6 @@ Hooks.once("init", async () => {
   // WFRP4
   if (game.system.id === "wfrp4e") {
     InitWFRP4();
-  }
-
-  // ALIEN
-  if (game.system.id === "alienrpg") {
-    InitALIEN();
-  }
-
-  // CORIOLIS
-  if (game.system.id === "yzecoriolis") {
-    InitCORIOLIS();
   }
 
   // AGE OF SIGMAR SOULBOUND
