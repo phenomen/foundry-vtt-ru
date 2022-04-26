@@ -1,5 +1,8 @@
 .sta.sheet.actor,
-.sta.sheet.item {
+.sta.sheet.item,
+.sta.tracker-container .tracker .header,
+.dice-roll .dice-formula,
+.dice-roll .dice-total {
   font-family: var(--font-sans-condensed);
 }
 .sta.sheet.actor .main .row .column .section .title {
@@ -8,11 +11,6 @@
 
 .sta.sheet.actor .track .bar .box {
   height: auto;
-}
-
-.dice-roll .dice-formula,
-.dice-roll .dice-total {
-  font-family: var(--font-sans-condensed);
 }
 
 .sta.sheet.actor .track .bar .box.stress,
