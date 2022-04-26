@@ -1,8 +1,5 @@
 .sta.sheet.actor,
-.sta.sheet.item,
-.sta.tracker-container .tracker .header,
-.dice-roll .dice-formula,
-.dice-roll .dice-total {
+.sta.sheet.item {
   font-family: var(--font-sans-condensed);
 }
 .sta.sheet.actor .main .row .column .section .title {
@@ -11,6 +8,11 @@
 
 .sta.sheet.actor .track .bar .box {
   height: auto;
+}
+
+.dice-roll .dice-formula,
+.dice-roll .dice-total {
+  font-family: var(--font-sans-condensed);
 }
 
 .sta.sheet.actor .track .bar .box.stress,
@@ -24,4 +26,49 @@
 .sta.sheet.actor .track .bar .box.power.selected {
   background-color: #ffcc33;
   border-color: #000000;
+}
+
+.sta.sheet.actor .secondary-title,
+.sta.sheet.actor .main .row .column .value-used {
+  font-size: 10pt;
+}
+
+.sta.sheet.actor .main > .row .column .section .row .control {
+  text-align: center;
+}
+
+@font-face {
+  font-family: "Teko";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Oswald.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Oswald.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Oswald.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Oswald.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Oswald.ttf") format("truetype");
 }
