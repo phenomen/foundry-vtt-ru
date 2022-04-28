@@ -149,6 +149,8 @@
         "DistKm": "Километры",
         "DistM": "Метры",
         "DistMi": "Мили",
+        "DistPc": "Parsecs",
+        "DistGU": "Grid Units",
         "MovementRate": "Скорость движения"
       },
       "CharDisplay": {
@@ -220,9 +222,11 @@
         "Power": "Питание",
         "status": "Статус",
         "rating": "Рейтинг",
+        "Range": "Range",
         "totalQuantity": "Всего",
         "availableQuantity": "Доступное количество",
         "damage": "Урон",
+        "RadiationDamage": "Radiation Damage",
         "damageHits": "Урон / Попадание",
         "hits": "Попадание",
         "weightIsPct": "Вес в процентах?",
@@ -377,6 +381,11 @@
       "Jump": "Прыжок",
       "MacroSkill": "Макрос/Навык",
       "MakesChatRollAction": "Использует действие _ACTION_NAME_ из позиции _POSITION_NAME_",
+      "ActionHits": "Hits _WHILE_USING_with an effect of _EFFECT_VALUE_",
+      "ActionHitsAndDamage": "Hits _WHILE_USING_with an effect of _EFFECT_VALUE_ causing _DAMAGE_TOTAL_ points of standard damage",
+      "ActionMisses": "Misses _WHILE_USING_with an effect of _EFFECT_VALUE_",
+      "RadiationDamageOf":"and radiation damage of",
+      "WhileUsing": "while using ",
       "MaintPM": "Ежемесячное обслуживание",
       "MANIFEST": "ДЕКЛАРАЦИЯ",
       "MAX": "МАКС.",
@@ -681,6 +690,10 @@
         "hint": "Healing using token bar input heals in the same order that auto damage occurs. The first characteristic damaged is also the first healed.  If this setting is false, healing starts with last characterisic and works backwards.",
         "name": "Reverse characteristic healing order"
       },
+      "maxEncumbrance": {
+        "hint": "Formula to calculate maximum encumbrance for actor.",
+        "name": "Maximum Encumbrance Formula"
+      },
       "allowDropOnIcon": {
         "hint": "Items can be dropped and added to actors directly on top of icon without opening actor sheet.  Duplicate items increase inventory quantity.  Chat damage items will apply damge.",
         "name": "Allow Items to be droped onto icons"
@@ -735,7 +748,8 @@
       "NoSpecfiedLink": "Документ и страница не указаны для этой ссылки.",
       "NoTargetFound": "Не найдена цель для нанесения урона.",
       "LackPermissionToDamage": "У вас недостаточно прав для целевого актёра.",
-      "MultipleActorsFound": "Обнаружено несколько актёров. Не удалось нанести урон."
+      "MultipleActorsFound": "Обнаружено несколько актёров. Не удалось нанести урон.",
+      "EncumbranceFormulaInvalid": "Encumbrance Formula is not valid.  Value is set to zero."
     }
   },
   "VeryDifficult": "Очень сложная"
