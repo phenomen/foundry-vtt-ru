@@ -10,8 +10,8 @@
 
   "SETTINGS.pf1DiagN": "Правила движения по диагонали",
   "SETTINGS.pf1DiagL": "Выберите правила диагонального движения в вашей игре.",
-  "SETTINGS.pf1InitTBN": "Ничья инициативы решается ловкостью",
-  "SETTINGS.pf1InitTBL": "Использовать показатель ловкости для разрешения ничьи при проверке инициативы.",
+  "SETTINGS.pf1InitTiebreakerN": "Initiative Tiebreaker",
+  "SETTINGS.pf1InitTiebreakerH": "Append total initiative divided by 100 to break ties in Initiative.",
   "SETTINGS.pf1CurWtN": "Включить вес валюты",
   "SETTINGS.pf1CurWtL": "Переносимая валюта влияет на нагрузку.",
   "SETTINGS.pf1DiagPHB": "5/5/5",
@@ -50,6 +50,8 @@
   "SETTINGS.pf1HideTokenConditionsH": "Скрывать состояния",
   "SETTINGS.pf1obscureInlineRollsN": "Obscure inline rolls",
   "SETTINGS.pf1obscureInlineRollsH": "Hide inline rolls from those without at least observer permission.",
+  "SETTINGS.pf1obscureSaveDCsN": "Obscure save DCs",
+  "SETTINGS.pf1obscureSaveDCsH": "Hide DC values from chat cards from players.",
   "SETTINGS.pf1CoreEffectsN": "Состояния у токенов",
   "SETTINGS.pf1CoreEffectsH": "Показывает только состояния PF1 на токенах (когда не выбрано) или также показывает стандартные иконки (когда выбрано)",
   "SETTINGS.pf1HideChatButtonsN": "Скрывать кнопки на карточках в чате",
@@ -70,6 +72,8 @@
   "SETTINGS.pf1DisplayIterativesH": "Отображает дополнительные значения БМА, а не только общее",
   "SETTINGS.pf1AlternativeReachCornerRuleN": "Alternative Reach Rule",
   "SETTINGS.pf1AlternativeReachCornerRuleH": "Hides the outer corners from 10-ft reach measurements",
+  "SETTINGS.pf1NPCProficienciesN": "NPC proficiencies",
+  "SETTINGS.pf1NPCProficienciesH": "NPC actors also use proficiencies. With this disabled (default), they are considered proficienct with everything they have as per RAW.",
   "SETTINGS.pf1DisableAttackCardTargetsN": "Disable Attack Targets",
   "SETTINGS.pf1DisableAttackCardTargetsH": "Disables targeted actors from showing up on attack cards",
   "SETTINGS.pf1ClearTargetsAfterAttackN": "Clear targets after attack",
@@ -131,6 +135,16 @@
       "Name": "Force Show Item",
       "Hint": "Whether to show the item to chat when using a macro for it"
     }
+  },
+
+  "PF1.SpellComponentKeys": {
+    "Verbal": "V",
+    "Somatic": "S",
+    "Thought": "T",
+    "Emotion": "E",
+    "Material": "M",
+    "Focus": "F",
+    "DivineFocus": "DF"
   },
 
   "PF1.OptionalAndVariantRules": "Опциональные правила",
@@ -292,6 +306,7 @@
   "PF1.ApplyCriticalDamage": "Применить крит. урон",
   "PF1.ApplyHealing": "Применить лечение",
   "PF1.ApplyCriticalHealing": "Применить крит. лечение",
+  "PF1.ApplyToAll": "Apply to all",
   "PF1.ReduceBy": "Уменьшить на",
   "PF1.SwapSelected": "Поменять выделенных",
   "PF1.ClearReduction": "Очистить уменьшение",
@@ -523,6 +538,14 @@
   "PF1.LootTypeGearSingle": "Снаряжение",
   "PF1.LootTypeAmmoSingle": "Боеприпас",
   "PF1.LootTypeTradeGoodsSingle": "Товар",
+
+  "PF1.AmmoTypeArrow": "Arrow",
+  "PF1.AmmoTypeBolt": "Bolt",
+  "PF1.AmmoTypeRepeatingBolt": "Bolt (Repeating)",
+  "PF1.AmmoTypeBulletSling": "Bullet (Sling)",
+  "PF1.AmmoTypeBulletGun": "Bullet (Firearm)",
+  "PF1.AmmoTypeBulletDragoon": "Bullet (Dragoon Firearm)",
+  "PF1.AmmoTypeDart": "Dart",
 
   "PF1.SenseBS": "Слепозрение",
   "PF1.SenseDV": "Ночное зрение",
@@ -1124,6 +1147,8 @@
     }
   },
 
+  "PF1.Abundant": "Abundant",
+  "PF1.AbundantDesc": "Never remove this ammunition when used.",
   "PF1.AddClass": "Добавить класс",
   "PF1.Horizontal": "Горизонтально",
   "PF1.Vertical": "Вертикально",
@@ -1201,6 +1226,8 @@
   "PF1.Vigor": "Энергия",
   "PF1.HitDice": "Кости здоровья",
   "PF1.HitDie": "Кость здоровья",
+  "PF1.CustomHitDice": "Custom Hit Dice",
+  "PF1.CustomHitDiceHint": "Enter formula, e.g. floor(@item.level / 2)",
   "PF1.InfoShort": "Инфо",
   "PF1.Inventory": "Инвентарь",
   "PF1.Inspiration": "Вдохновение",
@@ -1262,8 +1289,10 @@
   "PF1.TempHP": "Временные Очки Здоровья",
   "PF1.Nonlethal": "Нелетальный",
   "PF1.Initiative": "Инициатива",
+  "PF1.Tiebreaker": "Tiebreaker",
   "PF1.MaxDexShort": "Макс. Лвк",
   "PF1.Type": "Тип",
+  "PF1.Subtype": "Subtype",
   "PF1.ActionPlural": "Действия",
   "PF1.ChargePlural": "Заряды",
   "PF1.ConditionPlural": "Состояния",
@@ -1277,6 +1306,10 @@
   "PF1.SpellDetails": "Подробности заклинания",
   "PF1.SpellBook": "Книга заклинаний",
   "PF1.SpellBookPlural": "Книги заклинаний",
+  "PF1.SpellBookPrimary": "Primary",
+  "PF1.SpellBookSecondary": "Secondary",
+  "PF1.SpellBookTertiary": "Tertiary",
+  "PF1.SpellBookSpelllike": "Spell-like",
   "PF1.SpellLevel": "Круг заклинания",
   "PF1.SpellSchool": "Школа заклинания",
   "PF1.SpellComponents": "Компоненты заклинания",
@@ -1307,6 +1340,7 @@
   "PF1.SavingThrow": "Испытание",
   "PF1.SavingThrowPlural": "Испытания",
   "PF1.SavingThrowEffect": "Эффект испытания",
+  "PF1.SavingThrowGoodFractionalBonus": "Good Saving Throw Bonus",
   "PF1.Misc": "Разное",
   "PF1.MiscShort": "Разн.",
   "PF1.HitPoints": "Очки здоровья",
@@ -1383,6 +1417,7 @@
   "PF1.AuraStrength_Strong": "Сильная",
   "PF1.AuraStrength_Overwhelming": "Ошеломительная",
 
+  "PF1.Unknown": "Unknown",
   "PF1.ElementalSchool": "Стихийная школа",
   "PF1.Bloodline": "Наследие",
   "PF1.ConcentrationCheck": "Проверка концентрации",
@@ -1550,6 +1585,9 @@
   "PF1.Manyshot": "Залп",
   "PF1.RapidShot": "Быстрый выстрел",
   "PF1.PointBlankShot": "Стрельба вблизи",
+  "PF1.UsesAmmo": "Uses Ammunition",
+  "PF1.Ammunition": "Ammunition",
+  "PF1.AmmunitionAbbr": "Ammo",
   "PF1.AmmoRemaining": "Осталось боеприпасов: {0}",
   "PF1.AmmoDepleted": "Нет боеприпасов!",
   "PF1.Priority": "Приоритет",
@@ -1623,6 +1661,8 @@
   "PF1.Maximum": "Максимум",
   "PF1.Ability": "Характеристика",
   "PF1.Modifier": "Модификатор",
+  "PF1.ModifierAbbr": "Mod.",
+  "PF1.Bonus": "Bonus",
   "PF1.OpenAssociatedCompendiumEntry": "Открыть соответствующую запись библиотеки",
   "PF1.OpenCompendium": "Открыть библиотеку",
   "PF1.Primary": "Основной",
@@ -1632,7 +1672,7 @@
   "PF1.Settings": "Настройки",
   "PF1.SpellbookUsage": "Использование книги заклинаний",
   "PF1.SpellSlotAbilityBonus": "Характеристика бонусных ячеек заклинаний",
-  "PF1.AlternativeSpellbookName": "Название книги заклинаний",
+  "PF1.SpellbookName": "Spellbook Name",
   "PF1.StaticSize": "Статический размер",
   "PF1.DomainSlotValue": "Ячейки сферы",
   "PF1.DomainSlotValueDesc": "Сколько 'свободных' ячеек дает Сфера/Школа за круг заклинаний?",
@@ -2055,7 +2095,7 @@
             "Use": {
               "Name": "Use",
               "Desc": {
-                "Basic": "Called when an item has been used. If an item has at least one script call under this category, it's usable no matter what. This call will have two additional variables: <code>{var1}</code> which is an array of attack data, and <code>{var2}</code>, which containts the attack's measure template (if any).",
+                "Basic": "Called when an item has been used. If an item has at least one script call under this category, it's usable no matter what. This call will have an additional object: <code>{var1}</code> which contains the underlying data being used to generate an ItemAttack.",
                 "Extra1": "Setting <code>shared.hideChat</code> to <code>true</code> prevents a chat card from being shown.",
                 "Extra2": "Setting <code>shared.reject</code> to <code>true</code> prevents the item from being used, take away charges and showing a chat card."
               }

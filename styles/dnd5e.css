@@ -461,3 +461,30 @@
 .system-dnd5e.tidy5eDark {
   --color-red-dnd: #ce381f;
 }
+
+/* MOBILE IMPROVEMENTS */
+
+.mobile-improvements .dnd5e.sheet .sheet-navigation .item {
+  font-size: 0.6rem;
+}
+
+.mobile-improvements
+  .dnd5e.sheet.actor
+  ul.attributes
+  li.attribute
+  .attribute-value
+  > * {
+  font-size: 1rem;
+}
+
+.mobile-improvements .dnd5e.sheet .items-list .items-header .item-name {
+  font-size: var(--text-sm);
+}
+
+.mobile-improvements
+  .dnd5e.sheet.actor.character
+  .resource
+  .attribute-value
+  label.recharge {
+  font-size: 0.6rem;
+}

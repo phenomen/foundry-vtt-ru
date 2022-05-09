@@ -74,6 +74,7 @@
         "AbilityActivationTypesNoneButton": "Activate",
         "AbilityActivationTypesOther": "Прочее действие",
         "AbilityActivationTypesReaction": "Ответное действие",
+        "AbilityActivationTypesRound": "Round",
         "AbilityActivationTypesSpecial": "Особое действие",
         "AbilityActivationTypesStandard": "Основное действие",
         "AbilityActivationTypesSwift": "Быстрое действие",
@@ -263,7 +264,13 @@
                 },
                 "ItemValue": {
                     "Label": "Стоимость:",
-                    "Tooltip": "Это число представляет суммарную стоимость вещей в инвентаре."
+                    "Tooltip": "This number represents the sum total value of all of the items owned by this character, as well as their currencies such as credits, and UPBs. Please be aware that inventory wealth is not equivalent to spending power, as items typically sell at 10% of their value."
+                },
+                "Wealth": {
+                    "Currency": "{currency}: {amount}",
+                    "EstimatedLevel": "Estimated level by wealth: {estimatedLevel} (Up to {valueAtLevel})",
+                    "Expected": "Expected wealth by character level: {expectedWealth}",
+                    "Inventory": "Inventory: {amount}"
                 },
                 "Weapon": {
                     "AlreadyFullyLoaded": "Оружие {name} уже полностью заряжено.",
@@ -280,7 +287,9 @@
                     "AllSpeeds": "Вся скорость",
                     "BAB": "БМА",
                     "BaseAttackBonus": "Базовый модификатор атаки",
+                    "DamageReduction": "Damage Reduction",
                     "Encumbrance": "Нагрузка",
+                    "EnergyResistance": "Energy Resistance",
                     "HP": "ПЗ",
                     "Hitpoints": "Здоровье",
                     "MeleeAttackDamage": "Урон в ближнем бою",
@@ -310,8 +319,14 @@
                 "Tooltips": {
                     "BonusSkillpoints": "{type} Бонус: {mod} ({source})",
                     "ClassSkillpoints": "{class} Очков навыков: {total}",
+                    "DeleteModifier": "Delete modifier",
+                    "DeleteModifierTooltip": "Delete this modifier.",
+                    "EditModifier": "Edit modifier",
+                    "EditModifierTooltip": "Open the modifier editor for this modifier.",
                     "SkillRank": "{type} Пунктов: {mod} ({source})",
-                    "Speed": "{speed}: {type} {mod} ({source})"
+                    "Speed": "{speed}: {type} {mod} ({source})",
+                    "ToggleModifier": "Toggle modifier",
+                    "ToggleModifierTooltip": "Toggle a modifier on and off. Disabled modifiers do not affect the character."
                 },
                 "UI": {
                     "LongFormula": "Полная формула"
@@ -319,6 +334,9 @@
             },
             "Skills": {
                 "RightClickHint": "Нажмите на навык правой кнопкой мыши для доступа к подробному меню."
+            },
+            "Traits": {
+                "MagicalItems": "Worn Magical Items"
             },
             "UI": {
                 "ErrorNoCharges": "У {name} не осталось зарядов."
@@ -338,6 +356,7 @@
         "AlignmentTN": "Нейтральный",
         "AllowedClasses": {
             "Myst": "Мистик",
+            "Precog": "Precog",
             "Tech": "Техномант",
             "Wysh": "Меняющий реальность"
         },
@@ -503,6 +522,7 @@
         "ClassSkills": "Классовые навыки",
         "ClassWeaponProf": "Обращение с оружием",
         "ClassWillSaveProgression": "Прогрессия воли",
+        "ClassSpellcastingAbility": "Spellcasting Ability",
         "Classes": {
             "IsCasterClass": "Является ли этот класс заклинателем?"
         },
@@ -665,6 +685,7 @@
                 "Acid": "Кислотный",
                 "Bludgeoning": "Дробящий",
                 "Cold": "Холод",
+                "Custom": "Custom",
                 "Electricity": "Электричество",
                 "Fire": "Огонь",
                 "Force": "Силовой",
@@ -821,6 +842,7 @@
         "FeaturesUsage": "Использование",
         "FlagDeprecationNotice": "<strong>NOTE:</strong> These values are being replaced by the new modifiers system and will be removed in a future update. It is recommended that you uncheck any of these values and add them as a modifer on the Modifiers tab.",
         "FlagsInstructions": "Configure character features and traits which fine-tune behaviors of the Starfinder system.",
+        "FlagsEmptySolarian": "There are no special traits at the moment. If you're looking for Solarian Attunement, use the new Actor Resource system within the Stellar Mode class feature.",
         "FlagsSave": "Update Special Traits",
         "FlagsTitle": "Configure Special Traits",
         "FortitudeSave": "Стойкость",
@@ -1215,6 +1237,8 @@
                     "KAC8": "KAC +8",
                     "None": "No target",
                     "Other": "Other",
+                    "StarshipAC": "AC",
+                    "StarshipTL": "TL",
                     "Tag": "Targets: {actionTarget}",
                     "Title": "Action Target",
                     "Tooltip": "If this action targets a specific property, you can configure that here."
@@ -1380,7 +1404,10 @@
             },
             "Identified": "Опознано",
             "Magic": {
-                "Details": "Описание магического предмета"
+                "Details": "Описание магического предмета",
+                "LimitedWear": "Magical Item Worn Limit",
+                "LimitedWearCheckbox": "This item counts towards the worn magical item limit.",
+                "LimitedWearExceeded": "You have equipped too many magical items!"
             },
             "MaxDex": "Макс.Лвк",
             "NotProficient": "Необучен",
@@ -1415,6 +1442,9 @@
                 "WeaponClass": "Класс орудия",
                 "WeaponStatus": "Статус орудия"
             },
+            "SpecialMaterials": {
+                "Title": "Special Materials"
+            },
             "Spell": {
                 "AllowedClasses": "Доступные классы",
                 "Casting": "Сотворение заклинания",
@@ -1425,6 +1455,7 @@
                 "Details": "Описание заклинания",
                 "Dismissible": "Прекращаемое",
                 "Effects": "Эффекты заклинания",
+                "ErrorNoUses": "Failed to cast this spell as it has no uses remaining. Click this message to dismiss it.",
                 "IsVariableLevel": "Is Variable Level?",
                 "IsVariableLevelYes": "Yes",
                 "Level": "Круг заклинания",
@@ -1577,6 +1608,7 @@
         "MigrationEndMigration": "Система Starfinder успешно обновлена до версии {systemVersion}!",
         "MigrationErrorMessage": "При обновлении системы Starfinder возникли проблемы с переносом данных, вы ведь сделали бэкап?",
         "MigrationSuccessfulMessage": "Ваши данные Starfinder были успешно перенесены в новую версию.",
+        "MigrationSuccessfulRefreshMessage": "Your Starfinder data was successfully migrated to the current version.<br/><br/>Please refresh your game to finalize migration.",
         "ModifierACPEffectingArmorTypeAll": "Вся броня",
         "ModifierACPEffectingArmorTypeHeavy": "Только тяжёлая броня",
         "ModifierACPEffectingArmorTypeLight": "Только лёгкая броня",
@@ -1626,6 +1658,7 @@
         "ModifierTypeLuck": "Удачи",
         "ModifierTypeMorale": "Моральный",
         "ModifierTypeRacial": "Расовый",
+        "ModifierTypeResistance": "Resistance",
         "ModifierTypeTooltip": "Тип модификатора. Используется при определении взаимодействия однотипных модификаторов (обычно берётся только больший)",
         "ModifierTypeUntyped": "Безтиповый",
         "ModifierValueAffectedHeaderLabel": "Параметр",
@@ -1804,7 +1837,8 @@
                 "NormalTooltip": "Обычный бросок.",
                 "Roll": "Бросить",
                 "SaveTitle": "Save - {label}",
-                "SkillCheckTitle": "Skill Check - {skill}"
+                "SkillCheckTitle": "Skill Check - {skill}",
+                "SkillCheckTitleWithProfession": "Skill Check - {skill} ({profession})"
             },
             "HealingRoll": "Бросок исцеления",
             "HealingRollFull": "Бросок исцеления - {name}",
@@ -1893,6 +1927,14 @@
                 "VehicleChaseHint": "Какие боевые карты отображаются в чате во время погони.",
                 "VehicleChaseName": "Погоня"
             },
+            "CombatTiebreaker": {
+                "Hint": "Automatically add the initiative modifier divided by 100 to the roll, to help with tie breakers.",
+                "Name": "Initiative Roll Tie Breaker"
+            },
+            "CurrencyLocale": {
+                "Hint": "What locale to use for currency displays in inventory popups, etc.",
+                "Name": "Currency Locale"
+            },
             "DamageRoundingAdvantage": {
                 "Hint": "In the case of fractional damage, alternate rounding up or down in the advantage of the attacker, or the defender.",
                 "Name": "Damage Rounding Advantage",
@@ -1918,6 +1960,10 @@
             "GalacticTrade": {
                 "Hint": "Enables the Galactic Trade subsystem, allowing the maximum BP on a ship to be 5% higher than normal, and adds BPs to the ship inventory as credits.",
                 "Name": "Enable Galactic Trade"
+            },
+            "ScalingCantrips": {
+                "Hint": "Enables the Scaling Cantrips variant rule from Galactic Magic pg. 88. Changing this setting will alter the formulas of all affected spells on all actors, so can take a while if you have lots.",
+                "Name": "Enable Scaling Cantrips"
             },
             "StarshipActionsCrit": {
                 "Hint": "Отображаются ли эффекты критических попаданий.",
@@ -2105,6 +2151,7 @@
         "SkillDip": "Дипломатия",
         "SkillDis": "Маскировка",
         "SkillEng": "Инженерное дело",
+        "SkillGun": "Gunnery",
         "SkillInt": "Запугивание",
         "SkillLsc": "Биологические науки",
         "SkillMed": "Медицина",
@@ -2134,6 +2181,21 @@
         "SortByFilterName": "Название",
         "Space": "Занимаемое пространство",
         "Special": "Особое",
+        "SpecialMaterials": {
+            "Abysium": "Abysium",
+            "Adamantine": "Adamantine Alloy",
+            "ColdIron": "Cold Iron",
+            "Diatha": "Diatha",
+            "Djezet": "Djezet",
+            "Horacalcum": "Horacalcum",
+            "Inubrix": "Inubrix",
+            "Khefak": "Khefak Armor",
+            "Noqual": "Noqual",
+            "PurpleCores": "Purple Cores",
+            "Siccatite": "Siccatite",
+            "Silver": "Silver",
+            "Voidglass": "Voidglass"
+        },
         "SpecialTraits": "Особые черты",
         "Speed": "Скорость",
         "SpeedSpecial": "Доп. скорости",
@@ -2221,6 +2283,7 @@
                 "Header": "Экипаж",
                 "IsNPCCrew": "Экипаж НИП",
                 "MagicOfficers": "Офицеры по магии",
+                "NPCGunnerRanksMessage": "While ranks aren't relevant to an NPC's gunnery modifier, some statblocks may include the Gunner's level, which you can store here. You can otherwise safely leave this box blank.",
                 "Passengers": "Пассажиры",
                 "Pilot": "Пилот",
                 "ScienceOfficers": "Офицеры по науке",
