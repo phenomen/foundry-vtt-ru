@@ -64,6 +64,7 @@
 }
 
 .dnd5e.sheet .sheet-header h1 input {
+  font-family: var(--font-fancy);
   font-size: var(--text-2xl);
   font-weight: 600;
 }
@@ -142,7 +143,7 @@
 }
 
 .dnd5e.sheet.actor h4.box-title {
-  font-family: var(--font-sans-condensed);
+  font-family: var(--font-fancy);
   font-size: var(--text-sm);
   font-weight: 500;
   padding: 0px;
@@ -365,6 +366,10 @@
 
 .dnd5e.sheet.item .weapon-properties label.checkbox {
   flex: 1 0 100px;
+}
+
+.dnd5e.sheet.actor.ability-name #pause {
+  font-family: var(--font-fancy);
 }
 
 /* TIDY5E */
