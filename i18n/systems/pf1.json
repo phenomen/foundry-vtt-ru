@@ -547,11 +547,15 @@
   "PF1.AmmoTypeBulletDragoon": "Bullet (Dragoon Firearm)",
   "PF1.AmmoTypeDart": "Dart",
 
+  "PF1.SenseBSense": "Blindsense",
   "PF1.SenseBS": "Слепозрение",
   "PF1.SenseDV": "Ночное зрение",
   "PF1.SenseTS": "Виброчувствительность",
   "PF1.SenseTR": "Истинное зрение",
   "PF1.SenseLL": "Сумеречное зрение",
+  "PF1.SenseSI": "See Invisibility",
+  "PF1.SenseSID": "See in darkness",
+  "PF1.SenseSC": "Scent",
 
   "PF1.FlyManeuverabilityClumsy": "Скверная",
   "PF1.FlyManeuverabilityPoor": "Плохая",
@@ -1453,6 +1457,7 @@
   "PF1.ActionType": "Тип действия",
   "PF1.AttackRollBonus": "Бонус проверки попадания",
   "PF1.AttackRollDice": "Кости для проверки попадания",
+  "PF1.BaseDice": "Base Dice",
   "PF1.CriticalThreatRange": "Шанс нанесения крит. удара",
   "PF1.CriticalMultiplier": "Модификатор крит. удара",
   "PF1.CriticalConfirmBonus": "Бонус подтверждения крит. удара",
@@ -1637,6 +1642,7 @@
   "PF1.Vision": "Зрение",
   "PF1.Held": "Хват",
   "PF1.GiveItem": "Выдать предмет",
+  "PF1.SplitItem": "Split Item",
   "PF1.HideFromToken": "Скрыть с токена",
   "PF1.ACPArmor": "Штраф за доспехи (Броня)",
   "PF1.ACPShield": "Штраф за доспехи (Щит)",
@@ -1692,6 +1698,7 @@
   "PF1.NPCs": "NPCs",
   "PF1.Options": "Options",
   "PF1.Cancel": "Cancel",
+  "PF1.Split": "Split",
 
   "PF1.Migration.Start": "Начинаем обновление системы PF1 до версии {version}. Пожалуйста, подождите.",
   "PF1.Migration.Ongoing": "Обновление в процессе. Пожалуйста, дождитесь окончания.",
@@ -1718,9 +1725,17 @@
     }
   },
 
+  "PF1.Dialog": {
+    "SplitItem": {
+      "Title": "Split item: {0}",
+      "Desc": "Input the number to split off."
+    }
+  },
+
   "PF1.Info": {
     "AddClassDialog": "You can hold Shift to bypass this dialog.",
-    "AddClassDialog_Desc": "Pressing Normal opens a short wizard, while pressing Raw will add the class without any alterations."
+    "AddClassDialog_Desc": "Pressing Normal opens a short wizard, while pressing Raw will add the class without any alterations.",
+    "NotFunctioning": "The system (currently) doesn't use this feature"
   },
 
   "PF1.Help": {
