@@ -149,8 +149,8 @@
         "DistKm": "Километры",
         "DistM": "Метры",
         "DistMi": "Мили",
-        "DistPc": "Parsecs",
-        "DistGU": "Grid Units",
+        "DistPc": "Парсеки",
+        "DistGU": "Единицы сетки",
         "MovementRate": "Скорость движения"
       },
       "CharDisplay": {
@@ -178,7 +178,8 @@
       "Armor": {
         "Armor": "Броня",
         "SecondaryArmor": "Вторичная броня",
-        "RadProt": "Рад. Защ."
+        "RadProt": "Рад. Защ.",
+        "IsPowered": "Силовая броня"
       },
       "Augmentation": {
         "Arms": "Руки",
@@ -222,12 +223,11 @@
         "Power": "Питание",
         "status": "Статус",
         "rating": "Рейтинг",
-        "Range": "Range",
+        "Range": "Дистанция",
         "totalQuantity": "Всего",
         "availableQuantity": "Доступное количество",
         "damage": "Урон",
-        "RadiationDamage": "Radiation Damage",
-        "damageHits": "Урон / Попадание",
+        "RadiationDamage": "Радиационный урон",
         "hits": "Попадание",
         "weightIsPct": "Вес в процентах?",
         "purchasePrice": "Цена покупки",
@@ -238,7 +238,7 @@
         "CargoLocation": "Расположение груза",
         "Price": "Цена",
         "Value": "Цена",
-        "GeneratesPower": "Генерирует Питание?",
+        "GeneratesPower": "Генерирует питание?",
         "IsRefined": "Очищенный?",
         "Features": "Особенности / черты",
         "PricingBasis": "Цена на",
@@ -294,7 +294,8 @@
         "LFB": "ЗДР",
         "STA": "ВНС",
         "ALT1": "АЛТ1",
-        "ALT2": "АЛТ2"
+        "ALT2": "АЛТ2",
+        "TrainingNotes": "Учебные заметки"
       },
       "Traits": {
         "Prerequisite": "Критерии",
@@ -334,12 +335,15 @@
         "UseAsAmmunitionForAttack": "Использовать боеприпасы для атак",
         "MagazineCost": "Цена обоймы/энергоячейки",
         "ArmorPiercing": "Бронебойность",
-        "Features": "Особенности / черты"
+        "Features": "Особенности / черты",
+        "Unarmed": "Без оружия",
+        "UnarmedDescription": "Безоружная атака"
       }
     },
     "Ship": {
       "Actions": "Действия",
       "ActionType": "Тип действия",
+      "ActionRollFormula": "Формула броска действия",
       "Unknown": "неизвестный",
       "ActorLacksSkill": "_ACTOR_NAME_ не имеет навыка _SKILL_",
       "ActorMustBeSelectedForAction": "Так как имеется несколько актеров, выберите того кто делает действие",
@@ -374,6 +378,8 @@
       "FINANCENOTES": "БУХГАЛТЕРИЯ",
       "SHIPVALUE": "ЦЕНА КОРАБЛЯ",
       "Fuel": "Топливо",
+      "RefinedFuel": "Переработанное топливо",
+      "UnrefinedFuel": "Сырое топливо",
       "Gs": "G",
       "InvalidDocumentForShipPosition": "Этот тип документа недопустим для позиций корабля. Сюда можно перенести только навыки.",
       "IsMassProduced": "Корабль Серийно Выпускается",
@@ -381,11 +387,11 @@
       "Jump": "Прыжок",
       "MacroSkill": "Макрос/Навык",
       "MakesChatRollAction": "Использует действие _ACTION_NAME_ из позиции _POSITION_NAME_",
-      "ActionHits": "Hits _WHILE_USING_with an effect of _EFFECT_VALUE_",
-      "ActionHitsAndDamage": "Hits _WHILE_USING_with an effect of _EFFECT_VALUE_ causing _DAMAGE_TOTAL_ points of standard damage",
-      "ActionMisses": "Misses _WHILE_USING_with an effect of _EFFECT_VALUE_",
-      "RadiationDamageOf":"and radiation damage of",
-      "WhileUsing": "while using ",
+      "ActionHits": "Попадает, используя _WHILE_USING_ с эффектом _EFFECT_VALUE_",
+      "ActionHitsAndDamage": "Попадает, используя _WHILE_USING_ с эффектом _EFFECT_VALUE_ нанося стандартный урон _DAMAGE_TOTAL_",
+      "ActionMisses": "Промахивается, используя _WHILE_USING_ с эффектом _EFFECT_VALUE_",
+      "RadiationDamageOf":"и радиационный урон",
+      "WhileUsing": "используя",
       "MaintPM": "Ежемесячное обслуживание",
       "MANIFEST": "ДЕКЛАРАЦИЯ",
       "MAX": "МАКС.",
@@ -482,20 +488,20 @@
         "name": "Автоматически бросает урон на проверке навыков при попадании (эффект > 0) с предметами которые наносят урон."
       },
       "criticalNaturalAffectsEffect": {
-        "hint": "checked=Regardless of success consider a natural 2 to have an effect of -1 and a 12 to have an effect of 0, unchecked=Use normal rules",
-        "name": "Whether a natural 2 or 12 should have special treatment as regards to success/failure."
+        "hint": "вкл=При успехе натуральная 2 будет иметь эффект -1, а 12 – эффект 0; выкл=Использовать стандартные правила",
+        "name": "Имеет ли натуральные 2 или 12 особое влияние на успех/провал."
       },
       "defaultTokenSettings": {
-        "hint": "Automatically set advised prototype token settings to newly created Actors.",
+        "hint": "Автоматически выставляет рекомендованные параметры токена-прототипа для новых актёров.",
         "name": "Настройки токена-прототипа по умолчанию"
       },
       "difficultiesAsTargetNumber": {
-        "hint": "checked=Use target number rather than modifier for difficulties, unchecked=Use modifiers",
-        "name": "Use target numbers rather than modifiers for difficulties."
+        "hint": "вкл=Целевые значения; выкл=Модификаторы сложности",
+        "name": "Использовать целевые значения вместо модификаторов сложности."
       },
       "difficultyListUsed": {
-        "hint": "Select which variant's difficulty list should be used.",
-        "name": "Select which variant's difficulty list should be used."
+        "hint": "Выберите вариант правил для сложности.",
+        "name": "Вариант правил для сложности"
       },
       "effectOrTotal": {
         "hint": "checked=Show effect (i.e. roll+modifiers-target number, usually 8), unchecked=Show total (i.e. roll+modifiers)",
@@ -602,7 +608,7 @@
       },
       "ShowRateOfFire": {
         "hint": "checked=Show the 'Rate of Fire' field, unchecked=Hide it",
-        "name": "Show the 'Rate of Fire' field on weapon sheets"
+        "name": "Отображать поле Скорострельность на бланках оружия"
       },
       "ShowRecoil": {
         "hint": "checked=Show the 'Recoil' field, unchecked=Hide it",
@@ -617,12 +623,12 @@
         "name": "Show the 'Weapon Type' field on weapon sheets"
       },
       "showWeightUsage": {
-        "hint": "Display ship weight values instead of power on ship sheet.",
-        "name": "Show Weight instead of Power management on Ship Sheet"
+        "hint": "На бланке корабля будет отображаться вес вместо управления питанием",
+        "name": "Отображать вес вместо питания на бланке корабля"
       },
       "systemMigrationVersion": {
         "hint": "Records the schema version for the Twodsix system. (Don't modify this unless you know what you are doing)",
-        "name": "System Schema Version"
+        "name": "Версия схемы системы"
       },
       "termForAdvantage": {
         "hint": "Don't use the same as for termForDisadvantage...",
@@ -633,18 +639,18 @@
         "name": "What you want to call rolls with disadvantage (3d6kl2)."
       },
       "useFoundryStandardStyle": {
-        "default": "Default Twodsix Style",
-        "foundry": "Standard Foundry VTT style",
-        "hint": "Use Foundry's default style for user interface.  This should make some modules more compatible with TWODSIX",
-        "name": "Use Foundry Standard Style"
+        "default": "Оформление Twodsix",
+        "foundry": "Оформление Foundry",
+        "hint": "Будет использовано стандартное оформление Foundry, что может помочь сделать некоторые модули более совместимыми с Twodsix",
+        "name": "Использовать оформление Foundry"
       },
       "useModuleFixStyle": {
         "hint": "Modifies CSS style to correct identified style issues for certain modules when using the Twodsix style.  It doesn't work when using Foundry default style.",
         "name": "Correct some css style issues due to modules and default Twodsix style."
       },
       "useShipAutoCalcs": {
-        "hint": "When enabled, the ship summary power, weight, and price statistics are calculated based on component vaules. Otherwise, values are input by user.",
-        "name": "Automatically calculate summary ship power, weight, and price values"
+        "hint": "Если включено, значения для питания, веса и цены будут рассчитываться автоматически на основе значений компонента. Иначе нужно ввести данные вручную.",
+        "name": "Автоматически рассчитывать значения для питания, веса и цены."
       },
       "useSystemDefaultTokenIcon": {
         "hint": "Будет использована иконка токена Foundry VTT (человек в капюшоне) вместо иконки из Twodsix при создании нового актёра. Включите эту опцию, чтобы портрет актёра автоматически устанавливался в качестве изображения токена (иначе иконку токена надо будет изменять отдельно).",
@@ -697,6 +703,30 @@
       "allowDropOnIcon": {
         "hint": "Items can be dropped and added to actors directly on top of icon without opening actor sheet.  Duplicate items increase inventory quantity.  Chat damage items will apply damge.",
         "name": "Allow Items to be droped onto icons"
+      },
+      "defaultMovement": {
+        "hint": "The default movement/walk for new travellers (typically a minor action), e.g. 10 for 10m",
+        "name": "The default movement walk rate"
+      },
+      "defaultMovementUnits": {
+        "hint": "The default movement/walk units for new travellers (typically a minor action), e.g. m for 10m",
+        "name": "The default movement units for the walk rate"
+      },
+      "useEncumbrance": {
+        "hint": "Use encumbarnce rules (if they exist) when displaying movement with drag ruler.",
+        "name": "Use system encumbrance rules for drag ruler"
+      },
+      "addEffectForShipDamage": {
+        "hint": "The ship attack effect value is added to the damage roll.",
+        "name": "Add effect to ship damage"
+      },
+      "autoAddUnarmed": {
+        "hint": "When checked (true), the unarmed weapon will be automatically added to the inventory for new actors (per rules settings).",
+        "name": "Automatically add unarmed weapon to new actors"
+      },
+      "unarmedDamage": {
+        "hint": "Dice formula for unarmed damage used when Unarmed is automatically added to actors.",
+        "name": "Unarmed Damage Formula"
       }
     },
     "CloseAndCreateNew": "Закрыть и создать",
@@ -716,6 +746,12 @@
       "consumable": "расходник",
       "trait": "черта",
       "component": "компонент"
+    },
+    "speeds": {
+      "walk": "ходьба",
+      "dash": "рывок",
+      "run": "бег",
+      "jump": "прыжок"
     },
     "Errors": {
       "NoSkillForSkillRoll": "Вы пытаетесь пройти проверку навыка, не выбрав навык.",
@@ -749,7 +785,7 @@
       "NoTargetFound": "Не найдена цель для нанесения урона.",
       "LackPermissionToDamage": "У вас недостаточно прав для целевого актёра.",
       "MultipleActorsFound": "Обнаружено несколько актёров. Не удалось нанести урон.",
-      "EncumbranceFormulaInvalid": "Encumbrance Formula is not valid.  Value is set to zero."
+      "EncumbranceFormulaInvalid": "Формула нагрузки некорректная. Значение установлено на ноль."
     }
   },
   "VeryDifficult": "Очень сложная"
