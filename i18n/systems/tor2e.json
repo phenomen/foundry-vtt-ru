@@ -64,7 +64,7 @@
         "commonSkills": "Общие навыки",
         "combatSkills": "Боевые навыки",
         "relevantSkills": "Полезные навыки",
-        "favoured": "(изл.)"
+        "favoured": "(одар.)"
       },
       "types": {
         "community": {
@@ -210,7 +210,7 @@
         "group": "Тип",
         "protection-roll": "Проверка защиты",
         "tech": {
-          "title": "Изображение, представляющее иконку брони.",
+          "title": "Фоновое изображение, представляющее броню.",
           "alt": "Изображение брони"
         }
       },
@@ -218,56 +218,56 @@
         "title": "Другое",
         "equipment": "Снаряжение",
         "tech": {
-          "title": "Изображение, представляющее иконку разных предметов.",
+          "title": "Фоновое изображение, представляющее разные предметы.",
           "alt": "Изображение разных предметов"
         }
       },
       "traits": {
         "title": "Черта",
         "tech": {
-          "title": "Изображение, представляющее иконку черты.",
+          "title": "Фоновое изображение, представляющее черту.",
           "alt": "Изображение черты"
         }
       },
       "special-abilities": {
         "title": "Особенность",
         "tech": {
-          "title": "Изображение, представляющее иконку особенности.",
+          "title": "Фоновое изображение, представляющее особенность.",
           "alt": "Изображение особенности"
         }
       },
       "fellowship": {
         "title": "Братство",
         "tech": {
-          "title": "Изображение, представляющее иконку братства.",
+          "title": "Фоновое изображение, представляющее братство.",
           "alt": "Изображение братства"
         }
       },
       "skills": {
         "title": "Навык",
         "tech": {
-          "title": "Изображение, представляющее иконку навыка.",
+          "title": "Фоновое изображение, представляющее навык.",
           "alt": "Изображение навыка"
         }
       },
       "virtues": {
         "title": "Качество",
         "tech": {
-          "title": "Изображение, представляющее иконку качества.",
+          "title": "Фоновое изображение, представляющее качество.",
           "alt": "Изображение качества"
         }
       },
       "rewards": {
         "title": "Награда",
         "tech": {
-          "title": "Изображение, представляющее иконку награды.",
+          "title": "Фоновое изображение, представляющее награду.",
           "alt": "Изображение награды"
         }
       },
       "weapons": {
         "title": "Оружие",
         "tech": {
-          "title": "Изображение, представляющее иконку оружия.",
+          "title": "Фоновое изображение, представляющее оружие.",
           "alt": "Изображение оружия"
         }
       }
@@ -367,7 +367,7 @@
       "details": {
         "weapon": "Оружие",
         "damage": "Урон",
-        "edge": "Edge",
+        "edge": "Сложность",
         "injury": "Травма",
         "extendedWeaponSelectionHint": "(option. Dedicated to PC custom weapon.)",
         "group": "Категория",
@@ -377,14 +377,14 @@
         "ranged": "Дистанционное",
         "actions": "Действия",
         "twoHandWeapon": "Двуручное",
-        "short": "Short Range",
-        "medium": "Medium Range",
-        "long": "Long Range",
+        "short": "Короткая дистанция",
+        "medium": "Средняя дистанция",
+        "long": "Дальняя дистанция",
         "description": "Описание",
         "tech": {
           "alt": "Изображение оружия",
-          "title": "Изображение, представляющее иконку особенностей оружия.",
-          "caption": "Attributes"
+          "title": "Фоновое изображение, представляющее иконку особенностей оружия.",
+          "caption": "Качества"
         }
       }
     },
@@ -405,15 +405,15 @@
       "groups": {
         "leather": "Кожаный доспех",
         "mail": "Кольчуга",
-        "head": "Headgear",
-        "shield": "Shield"
+        "head": "Шлем",
+        "shield": "Щит"
       }
     },
     "stats": {
       "strength": "Сила",
       "heart": "Характер",
       "wits": "Смекалка",
-      "favoured": "излюбленный"
+      "favoured": "одарённый"
     },
     "statureStats": {
       "adventurePoints": "Пункты приключений",
@@ -473,12 +473,12 @@
             "community-point-label": "Пунктов сообщества доступно",
             "required-hope-points": "Сколько пунктов вы желаете восстановить?",
             "actor-hope-points": "Пункты надежды (текущие/макс.):",
-            "submit-button": "Recover",
+            "submit-button": "Восстановление",
             "cancel-button": "Отмена",
             "warn": {
               "one-community_actor_expected": "Только один актёр с типом Сообщество может существовать в игре!",
               "not-enough-hope-points-available": "Not enough Hope points available in the Pool (required: {required}, available: {available})",
-              "too-many-hope-points-required": "Too many Hope points required (total: {target}, max available: {max})"
+              "too-many-hope-points-required": "Требуется слишком много пунктов надежды (всего: {target}, доступно: {max})"
             }
           },
           "short": {
@@ -505,7 +505,7 @@
           "skill": "бросок"
         },
         "toggle": {
-          "favoured": "Нажмите Alt+ЛКМ для выбора излюбленного статуса"
+          "favoured": "Нажмите Alt+ЛКМ для выбора одарённого статуса"
         }
       },
       "skill": {
@@ -519,7 +519,7 @@
       "warn": {
         "noSkillFound": "Навык {skillName} не найден у актёра {actorName}",
         "clickOnWeaponInstead": "Нажмите на оружие для его использования, а не на боевой навык.",
-        "impossibleToFavouredAWeapon": "Невозможно выбрать излюбленное оружие этому персонажу."
+        "impossibleToFavouredAWeapon": "Невозможно выбрать одарённое оружие этому персонажу."
       },
       "difficulty": "Сложность",
       "target": "Цель",
@@ -554,35 +554,35 @@
       "gandalf": "Руна Гэндальфа",
       "sauron": "Око Саурона",
       "standard": {
-        "1": "1 на кубике",
-        "2": "2 на кубике",
-        "3": " 3 на кубике",
-        "4": "4 на кубике",
-        "5": "5 на кубике",
-        "6": "6 на кубике с тенгвар"
+        "1": "обычная кость 1",
+        "2": "обычная кость 2",
+        "3": "обычная кость 3",
+        "4": "обычная кость 4",
+        "5": "обычная кость 5",
+        "6": "обычная кость с тенгвар 6 "
       },
       "weary": {
-        "1": "1 на кубике с усталостью",
-        "2": "2 на кубике с усталостью",
-        "3": "3 на кубике с усталостью",
-        "4": "4 на кубике",
-        "5": "5 на кубике",
-        "6": "6 на кубике с тенгвар"
+        "1": "кость с усталостью 1",
+        "2": "кость с усталостью 2",
+        "3": "кость с усталостью 3",
+        "4": "кость с усталостью 4",
+        "5": "кость с усталостью 5",
+        "6": "кость с усталостью и тенгвар 6"
       },
       "feat": {
-        "description": "A D12 Feat Die",
-        "1": "dice feat one",
-        "2": "dice feat two",
-        "3": "dice feat three",
-        "4": "dice feat four",
-        "5": "dice feat five",
-        "6": "dice feat six",
-        "7": "dice feat seven",
-        "8": "dice feat eight",
-        "9": "dice feat nine",
-        "10": "dice feat ten",
-        "11": "dice eye of sauron",
-        "12": "dice gandalf rune"
+        "description": "Кость испытания D12",
+        "1": "кость испытания 1",
+        "2": "кость испытания 2",
+        "3": "кость испытания 3",
+        "4": "кость испытания 4",
+        "5": "кость испытания 5",
+        "6": "кость испытания 6",
+        "7": "кость испытания 7",
+        "8": "кость испытания 8",
+        "9": "кость испытания 9",
+        "10": "кость испытания 10",
+        "11": "кость с оком саурона 11",
+        "12": "кость с руной гэндальфа 12"
       }
     },
     "popup": {
@@ -609,8 +609,8 @@
           "roll-formula": "Формула броска",
           "difficulty": "Сложность",
           "tn": "СЛ",
-          "feat-die-value": "Feat Die Value",
-          "feat-dice": "Feat Dice",
+          "feat-die-value": "Значение кости испытания",
+          "feat-dice": "Кость испытания",
           "bonus-success-dice": "Бонусный кубик",
           "bonus-penalty-dice": "Мод. кубика",
           "extended-penalty-dice": {
@@ -619,8 +619,8 @@
           },
           "hope-point-bonus-dice": "Бонус от надежды",
           "inspired": "Вдохновение",
-          "mastery-dice": "Mastery Dice",
-          "favoured-ill-favoured": "Излюбленное / Нелюбимое",
+          "mastery-dice": "Кость одарённости",
+          "favoured-ill-favoured": "Одарённый / Бездарный",
           "bonus-penalty": "Бонус / Штраф",
           "support-die": "Поддержка компаньона",
           "advanced": "Дополнительно",
@@ -696,29 +696,29 @@
           "title": "Пронзающий удар",
           "alt": "Копьё наносит пронзающий удар",
           "label": "Пронзающий удар",
-          "description": "Add {amount} to Feat Die ({edge} to beat)."
+          "description": "Добавить {amount} к кости испытания ({edge} для успеха)."
         },
         "shield-thrust": {
           "title": "Удар щитом",
-          "alt": "A shield bashing violently someone",
+          "alt": "Мощный удар щитом попадает по цели.",
           "label": "Удар щитом",
           "description": "Отталкивание вместо нанесения урона."
         },
         "seize": {
-          "title": "Seize",
-          "alt": "A hand grasping something.",
+          "title": "Захват",
+          "alt": "Крепко ухватились.",
           "label": "Захват",
-          "description": "The attacker holds on to the target."
+          "description": "Нападающий берёт цель в захват."
         },
         "break-shield": {
           "title": "Пробитие щита",
-          "alt": "A shield broken in pieces",
+          "alt": "Щит раскололся на щепки.",
           "label": "Пробитие щита",
-          "description": "The attacker smashes the shield to pieces."
+          "description": "Нападающий расколол щит на щепки."
         }
       },
       "dicePool": {
-        "label": "Success Dice Pool size."
+        "label": "Число костей с успехом"
       },
       "step": {
         "initiative": {
@@ -728,16 +728,16 @@
         "preparation": {
           "label": "Подготовка",
           "roll": {
-            "reroll": "Reroll combat preparation",
-            "label": "Combat preparation",
-            "title": "Roll a combat preparation test."
+            "reroll": "Повторная подготовка к бою",
+            "label": "Подготовка к бою",
+            "title": "Проверка подготовки к бою"
           }
         },
         "openingVolley": {
-          "label": "Opening Volley",
+          "label": "Открывающий залп",
           "roll": {
-            "label": "Opening volley",
-            "title": "Roll an opening volley test."
+            "label": "Открывающий залп",
+            "title": "Проверка открывающего залпа"
           }
         },
         "closeCombat": {
@@ -791,7 +791,7 @@
         },
         "piercing": {
           "title": "Пронзающий удар",
-          "description": "<span class='actor-name'>{targetName}</span> должен пройти <a class='button-protection-roll' data-tn-test={weaponInjuryValue}>проверку защиты <i class='fas fa-dice'></i></a> со СЛ {weaponInjuryValue} (edge beaten {edge})."
+          "description": "<span class='actor-name'>{targetName}</span> должен пройти <a class='button-protection-roll' data-tn-test={weaponInjuryValue}>проверку защиты <i class='fas fa-dice'></i></a> со СЛ {weaponInjuryValue} (атака против {edge})."
         },
         "injuryRoll": {
           "title": "Проверка травмы",
