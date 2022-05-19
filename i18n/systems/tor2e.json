@@ -8,7 +8,7 @@
         "years": "лет",
         "culture": "Культура",
         "standardOfLiving": "Образ жизни",
-        "culturalBlessing": "Культурное благословение",
+        "culturalBlessing": "Дар культуры",
         "calling": "Призвание",
         "shadowPath": "Соблазн Тени"
       },
@@ -17,7 +17,7 @@
         "traits": "Черты",
         "effects": "Эффекты",
         "attributes": "Характеристики",
-        "skillGroups": "Группы навыков",
+        "skillGroups": "Категории навыков",
         "combatProficiencies": "Боевые умения",
         "commonSkills": "Общие навыки",
         "weaponSkills": "Боевые навыки",
@@ -50,7 +50,7 @@
         }
       },
       "fellAbilities": {
-        "title": "Зловещие способности"
+        "title": "Злодеяния"
       },
       "traits": {
         "distinctiveFeatures": "Отличительные черты",
@@ -63,7 +63,7 @@
         "title": "Навыки",
         "commonSkills": "Общие навыки",
         "combatSkills": "Боевые навыки",
-        "relevantSkills": "Связанные навыки",
+        "relevantSkills": "Полезные навыки",
         "favoured": "(изл.)"
       },
       "types": {
@@ -88,29 +88,29 @@
         "friendly": "Друг"
       },
       "stats": {
-        "attributeLevel": "Качество характеристики",
+        "attributeLevel": "Уровень",
         "damage": {
           "closedCombat": "Урон ближнего боя",
-          "rangedCombat": "Урон дальнего боя"
+          "rangedCombat": "Дистанционный урон"
         },
         "hate": "Ненависть",
         "might": "Мощь",
         "parry": "Парирование",
         "noShield": "нет щита",
         "noHeadgear": "нет шлема",
-        "noArmour": "нет доспеха",
-        "armour": "Доспех",
+        "noArmour": "нет брони",
+        "armour": "Броня",
         "endurance": "Выносливость",
-        "load": "Вес",
+        "load": "Нагрузка",
         "hope": "Надежда",
         "maxHope": "Макс. надежда",
-        "rating": "Начальное значение",
+        "rating": "Изначально",
         "travelLoad": "Утомление",
         "shadow": "Тень",
         "temporary": "Временная",
         "shadowScars": "Шрамы Тени",
         "canBeAPatron": "Может быть покровителем?",
-        "initial": "Начальная",
+        "initial": "Изначально",
         "fellowshipPoints": "Пункты братства",
         "eyeAwareness": "Внимание Ока",
         "current": "Текущая",
@@ -146,45 +146,45 @@
       },
       "combatAttributes": {
         "damage": "Урон",
-        "ranged": "Ranged",
+        "ranged": "Дистанционное",
         "parry": "Парирование",
-        "shield": "Shield",
-        "armour": "Доспех",
-        "headGear": "Head Gear"
+        "shield": "Щит",
+        "armour": "Броня",
+        "headGear": "Шлем"
       },
       "chat": {
         "warn": {
-          "title": "Warn Message",
+          "title": "Предупреждение",
           "hint": "Щёлкните правой кнопкой, чтобы вызвать меню и применить изменения.",
-          "weary": "<strong>{name}</strong> should be <strong>Weary</strong>.",
+          "weary": "<strong>{name}</strong> должен быть <strong>усталым</strong>.",
           "miserable": "<strong>{name}</strong> должен быть <strong>подавленным</strong>.",
           "wearyAndMiserable": "<strong>{name}</strong> должен быть <strong>усталым</strong> и <strong>подавленным</strong>."
         },
         "result": {
-          "title": "Result Message",
-          "weary": "<strong>{name}</strong> теперь <strong>усталый</strong>.",
-          "miserable": "<strong>{name}</strong> is <strong>Miserable</strong>.",
-          "wearyAndMiserable": "<strong>{name}</strong> теперь <strong>усталый</strong> и <strong>подавленный</strong>."
+          "title": "Результат",
+          "weary": "<strong>{name}</strong> становится <strong>усталым</strong>.",
+          "miserable": "<strong>{name}</strong> становится <strong>подавленный</strong>.",
+          "wearyAndMiserable": "<strong>{name}</strong> становится <strong>усталым</strong> и <strong>подавленным</strong>."
         }
       }
     },
     "travel": {
       "roles": {
         "guide": {
-          "label": "Guide",
+          "label": "Проводник",
           "skill": "путешествие"
         },
         "scouts": {
-          "label": "Scouts",
-          "skill": "исследование"
+          "label": "Разведчик",
+          "skill": "разведка"
         },
         "hunters": {
-          "label": "Hunters",
+          "label": "Охотник",
           "skill": "охота"
         },
         "lookouts": {
-          "label": "Lookouts",
-          "skill": "разведка"
+          "label": "Дозорщик",
+          "skill": "бдительность"
         }
       }
     },
@@ -193,7 +193,7 @@
     },
     "items": {
       "common": {
-        "load": "Вес",
+        "load": "Нагрузка",
         "equipped": "Надето",
         "dropped": "Обронено"
       },
@@ -204,14 +204,14 @@
         "greatShield": "Высокий щит"
       },
       "armours": {
-        "title": "Доспех",
-        "armour": "Доспех",
+        "title": "Броня",
+        "armour": "Броня",
         "protection": "Защита",
         "group": "Тип",
         "protection-roll": "Проверка защиты",
         "tech": {
-          "title": "Изображение, представляющее иконку доспеха.",
-          "alt": "Изображение доспеха"
+          "title": "Изображение, представляющее иконку брони.",
+          "alt": "Изображение брони"
         }
       },
       "miscellaneous": {
@@ -230,10 +230,10 @@
         }
       },
       "special-abilities": {
-        "title": "Special Ability",
+        "title": "Особенность",
         "tech": {
-          "title": "Изображение, представляющее иконку особой способности.",
-          "alt": "Изображение особой способности"
+          "title": "Изображение, представляющее иконку особенности.",
+          "alt": "Изображение особенности"
         }
       },
       "fellowship": {
@@ -258,7 +258,7 @@
         }
       },
       "rewards": {
-        "title": "Reward",
+        "title": "Награда",
         "tech": {
           "title": "Изображение, представляющее иконку награды.",
           "alt": "Изображение награды"
@@ -283,8 +283,8 @@
         "combat": "Бой"
       },
       "details": {
-        "skillGroup": "Skill Group",
-        "associatedStat": "Associated Stat",
+        "skillGroup": "Категория навыка",
+        "associatedStat": "Характеристика",
         "tech": {
           "alt": "Изображение навыка"
         }
@@ -292,11 +292,11 @@
     },
     "traits": {
       "groups": {
-        "distinctiveFeature": "Distinctive Feature",
-        "flaw": "Flaw"
+        "distinctiveFeature": "Отличительная черта",
+        "flaw": "Изъян"
       },
       "details": {
-        "traitGroup": "Trait Group",
+        "traitGroup": "Категория черты",
         "tech": {
           "alt": "Изображение черты"
         }
@@ -304,11 +304,11 @@
     },
     "reward": {
       "groups": {
-        "cultural": "Cultural reward",
-        "qualities": "Qualities"
+        "cultural": "Награда культуры",
+        "qualities": "Свойства"
       },
       "details": {
-        "type": "Reward Type",
+        "type": "Тип награды",
         "tech": {
           "alt": "Изображение награды"
         }
@@ -316,11 +316,11 @@
     },
     "virtues": {
       "groups": {
-        "cultural": "Cultural virtues",
-        "masteries": "Starting Virtues"
+        "cultural": "Качества культуры",
+        "masteries": "Изначальное качество"
       },
       "details": {
-        "type": "Virtue Type",
+        "type": "Тип качества",
         "tech": {
           "alt": "Изображение качества"
         }
@@ -328,14 +328,14 @@
     },
     "specialAbilities": {
       "groups": {
-        "hate": "Hate",
-        "virtues": "Virtues",
+        "hate": "Ненависть",
+        "virtues": "Качества",
         "valour": "Доблесть"
       },
       "details": {
-        "specialAbilityGroup": "Special Ability Group",
-        "active": "Active",
-        "cost": "Cost",
+        "specialAbilityGroup": "Категория особенности",
+        "active": "Активная",
+        "cost": "Цена",
         "tech": {
           "alt": "Изображение особой способности"
         }
@@ -343,14 +343,14 @@
     },
     "fellAbilities": {
       "groups": {
-        "hate": "Hate"
+        "hate": "Ненависть"
       },
       "details": {
-        "fellAbilityGroup": "Fell Abilities Group",
-        "active": "Active",
-        "cost": "Cost",
+        "fellAbilityGroup": "Категория злодеяния",
+        "active": "Активное",
+        "cost": "Цена",
         "tech": {
-          "alt": "Изображение зловещей способности"
+          "alt": "Изображение злодеяния"
         }
       }
     },
@@ -362,7 +362,7 @@
         "axes": "Топоры",
         "bows": "Луки",
         "spears": "Копья",
-        "bestial": "Bestial"
+        "bestial": "Зверское"
       },
       "details": {
         "weapon": "Оружие",
@@ -370,13 +370,13 @@
         "edge": "Edge",
         "injury": "Травма",
         "extendedWeaponSelectionHint": "(option. Dedicated to PC custom weapon.)",
-        "group": "Group",
-        "ranks": "Ranks",
-        "notes": "Notes",
-        "skill-name": "Skill",
-        "ranged": "Ranged",
-        "actions": "Actions",
-        "twoHandWeapon": "Two Hands",
+        "group": "Категория",
+        "ranks": "Уровни",
+        "notes": "Заметки",
+        "skill-name": "Навык",
+        "ranged": "Дистанционное",
+        "actions": "Действия",
+        "twoHandWeapon": "Двуручное",
         "short": "Short Range",
         "medium": "Medium Range",
         "long": "Long Range",
@@ -400,7 +400,7 @@
     },
     "armour": {
       "title": {
-        "group": "Группа доспехов"
+        "group": "Категория брони"
       },
       "groups": {
         "leather": "Кожаный доспех",
@@ -413,7 +413,7 @@
       "strength": "Сила",
       "heart": "Характер",
       "wits": "Смекалка",
-      "favoured": "favoured"
+      "favoured": "излюбленный"
     },
     "statureStats": {
       "adventurePoints": "Пункты приключений",
@@ -422,24 +422,24 @@
       "wisdom": "Мудрость"
     },
     "commonSkills": {
-      "awe": "Awe",
-      "enhearten": "Enhearten",
-      "persuade": "Persuade",
-      "athletics": "Athletics",
-      "travel": "Travel",
-      "stealth": "Stealth",
-      "awareness": "Awareness",
-      "insight": "Insight",
-      "scan": "Scan",
-      "explore": "Explore",
-      "healing": "Healing",
-      "hunting": "Hunting",
-      "song": "Song",
-      "courtesy": "Courtesy",
-      "riddle": "Riddle",
-      "craft": "Craft",
-      "battle": "Battle",
-      "lore": "Lore"
+      "awe": "Впечатление",
+      "enhearten": "Вдохновление",
+      "persuade": "Убеждение",
+      "athletics": "Атлетика",
+      "travel": "Путешествие",
+      "stealth": "Скрытность",
+      "awareness": "Бдительность",
+      "insight": "Проницательность",
+      "scan": "Внимательность",
+      "explore": "Разведка",
+      "healing": "Лечение",
+      "hunting": "Охота",
+      "song": "Песня",
+      "courtesy": "Традиции",
+      "riddle": "Загадка",
+      "craft": "Ремесло",
+      "battle": "Битва",
+      "lore": "Знание"
     },
     "combatProficiencies": {
       "brawling": "Борьба",
@@ -476,7 +476,7 @@
             "submit-button": "Recover",
             "cancel-button": "Отмена",
             "warn": {
-              "one-community_actor_expected": "One and only one Community Actor should exist in the World !",
+              "one-community_actor_expected": "Только один актёр с типом Сообщество может существовать в игре!",
               "not-enough-hope-points-available": "Not enough Hope points available in the Pool (required: {required}, available: {available})",
               "too-many-hope-points-required": "Too many Hope points required (total: {target}, max available: {max})"
             }
@@ -499,75 +499,75 @@
           }
         },
         "roll": {
-          "hope": "Spend a point of hope to add",
-          "lore": "Roll a Lore skill test",
-          "fatigue": "Roll a Fatigue test",
-          "skill": " roll"
+          "hope": "Потрать пункт надежды, чтобы добавить",
+          "lore": "Проверка навыка Знания",
+          "fatigue": "Проверка Утомления",
+          "skill": "бросок"
         },
         "toggle": {
-          "favoured": "Press ALT+Click to toggle favoured state"
+          "favoured": "Нажмите Alt+ЛКМ для выбора излюбленного статуса"
         }
       },
       "skill": {
-        "delete": "Delete Item",
-        "edit": "Edit Item",
-        "roll": "Roll Item",
-        "chat": "Send to chat"
+        "delete": "Удалить предмет",
+        "edit": "Изменить предмет",
+        "roll": "Бросок предмета",
+        "chat": "Отправить в чат"
       }
     },
     "roll": {
       "warn": {
-        "noSkillFound": "The skill {skillName} in not found for actor {actorName}",
+        "noSkillFound": "Навык {skillName} не найден у актёра {actorName}",
         "clickOnWeaponInstead": "Нажмите на оружие для его использования, а не на боевой навык.",
         "impossibleToFavouredAWeapon": "Невозможно выбрать излюбленное оружие этому персонажу."
       },
-      "difficulty": "Difficulty",
-      "target": "Target",
+      "difficulty": "Сложность",
+      "target": "Цель",
       "result": {
-        "success": "Success",
-        "great-success": "Great Success",
-        "extraordinary-success": "Extraordinary Success",
-        "automatic-success": "Automatic Success",
-        "failure": "Failure",
-        "hidden": "Hidden",
-        "automatic-failure": "Automatic Failure"
+        "success": "Успех",
+        "great-success": "Великолепный успех",
+        "extraordinary-success": "Экстраординарный успех",
+        "automatic-success": "Безусловный успех",
+        "failure": "Провал",
+        "hidden": "Скрытый",
+        "automatic-failure": "Безусловный провал"
       },
       "details": {
         "tech": {
-          "title": "A task check roll."
+          "title": "Проверка задачи"
         }
       },
       "special-success": {
-        "title": "Special success(es) usage",
-        "label": "Number of Special success(es)",
+        "title": "Использование особых успехов",
+        "label": "Число особых успехов",
         "actions": {
-          "submit": "Submit",
+          "submit": "Подтвердить",
           "cancel": "Отмена"
         },
         "tech": {
-          "title": "A task check roll with Tengwar(s)."
+          "title": "Проверка задачи с тенгвар"
         }
       }
     },
     "dice": {
-      "tengwar": "Tengwar Rune",
-      "gandalf": "Gandalf Rune",
-      "sauron": "Eye of Sauron",
+      "tengwar": "Руна тенгвара",
+      "gandalf": "Руна Гэндальфа",
+      "sauron": "Око Саурона",
       "standard": {
-        "1": "dice standard one",
-        "2": "dice standard two",
-        "3": "dice standard three",
-        "4": "dice standard four",
-        "5": "dice standard five",
-        "6": "dice standard six with tengwar"
+        "1": "1 на кубике",
+        "2": "2 на кубике",
+        "3": " 3 на кубике",
+        "4": "4 на кубике",
+        "5": "5 на кубике",
+        "6": "6 на кубике с тенгвар"
       },
       "weary": {
-        "1": "dice weary one",
-        "2": "dice weary two",
-        "3": "dice weary three",
-        "4": "dice standard four",
-        "5": "dice standard five",
-        "6": "dice standard six with tengwar"
+        "1": "1 на кубике с усталостью",
+        "2": "2 на кубике с усталостью",
+        "3": "3 на кубике с усталостью",
+        "4": "4 на кубике",
+        "5": "5 на кубике",
+        "6": "6 на кубике с тенгвар"
       },
       "feat": {
         "description": "A D12 Feat Die",
@@ -587,51 +587,51 @@
     },
     "popup": {
       "actions": {
-        "save": "Save",
+        "save": "Сохранить",
         "cancel": "Отмена"
       },
       "taskCheck": {
         "armour": {
         },
-        "title": "{type} edit popup"
+        "title": "Редактирование {type}"
       }
     },
     "chat": {
       "actions": {
-        "roll": "Roll",
-        "test": "Test",
-        "save": "Save",
+        "roll": "Бросок",
+        "test": "Проверка",
+        "save": "Сохранить",
         "cancel": "Отмена",
-        "hidden": "hidden action"
+        "hidden": "скрытое действие"
       },
       "taskCheck": {
         "options": {
-          "roll-formula": "Roll formula",
-          "difficulty": "Difficulty",
+          "roll-formula": "Формула броска",
+          "difficulty": "Сложность",
           "tn": "СЛ",
           "feat-die-value": "Feat Die Value",
           "feat-dice": "Feat Dice",
-          "bonus-success-dice": "Bonus Die",
-          "bonus-penalty-dice": "Penalty/Bonus Dice",
+          "bonus-success-dice": "Бонусный кубик",
+          "bonus-penalty-dice": "Мод. кубика",
           "extended-penalty-dice": {
-            "label": "Bonus/Penalty Dice Value",
-            "hint": "enter a negative value for penalties and a positive value for bonuses"
+            "label": "Значение бонуса / штрафа",
+            "hint": "введите отрицательное значение для штрафа или положительное для бонуса"
           },
-          "hope-point-bonus-dice": "Hope Point Bonus Die",
-          "inspired": "Inspired",
+          "hope-point-bonus-dice": "Бонус от надежды",
+          "inspired": "Вдохновение",
           "mastery-dice": "Mastery Dice",
-          "favoured-ill-favoured": "Favoured/Ill-Favoured",
-          "bonus-penalty": "Bonus/Penalty",
-          "support-die": "Support from a Companion",
-          "advanced": "Advanced",
-          "hope": "Hope",
-          "worst": "Worst",
-          "best": "Best",
-          "weary-not-weary": "Weary Roll ?",
+          "favoured-ill-favoured": "Излюбленное / Нелюбимое",
+          "bonus-penalty": "Бонус / Штраф",
+          "support-die": "Поддержка компаньона",
+          "advanced": "Дополнительно",
+          "hope": "Надежда",
+          "worst": "Худший",
+          "best": "Лучший",
+          "weary-not-weary": "Проверка с усталостью?",
           "weary": "усталый",
           "not-weary": "не усталый"
         },
-        "title": "{type} Roll"
+        "title": "Бросок {type}"
       },
       "error": {
         "actorNotFound": "No actor has been found with actorID: {actorId} and tokenId:{tokenId}"
@@ -642,7 +642,7 @@
     },
     "rolls": {
       "protection": "Защита",
-      "fear": "Fear",
+      "fear": "Ужас",
       "corruption": "Соблазн"
     },
     "combat": {
@@ -654,7 +654,7 @@
       "warn": {
         "noActorFound": "No actor found with name {name}.",
         "combatantNotInCombat": "The Token ({name}) with id ({id}) you want to make an engagement with is not part of the active Combat or is Out of Combat.",
-        "combatantDoesntExistInCombat": "The Actor with id ({id}) is not part of the active Combat.",
+        "combatantDoesntExistInCombat": "Актёр с id ({id}) не является участником активного боя.",
         "noSkillNameAvailableWithExtendedWeaponSelection": "The character {actorName} has no combat proficiency ({name}) and neither a skill name of name ({name}).",
         "noSkillNameFoundWithExtendedWeaponSelection": "The character {actorName} has no combat proficiency ({name}) and has no skill with the expected name ({name}).",
         "noCombatProficiencyFound": "The character {actorName} has no combat profeciency ({name}). You should either add a proficiency or use the extendable combat skill settings to add one.",
@@ -673,7 +673,7 @@
         "applyWeary": "Сделать усталым",
         "applyWounded": "Сделать раненым",
         "applyAll": "Нанести урон и состояния",
-        "applyAllStates": "Добавить все состояния",
+        "applyAllStates": "Сделать усталым, раненым и вне боя",
         "applyOutOfCombat": "Вывести из боя",
         "applyWearyState": "Сделать усталым",
         "applyMiserableState": "Сделать подавленным",
@@ -687,9 +687,9 @@
           "description": "Прибавление {amount} к урону."
         },
         "fend-off": {
-          "title": "Fend Off",
+          "title": "Отражение",
           "alt": "Персонаж уклоняется от удара",
-          "label": "Fend Off",
+          "label": "Отражение",
           "description": "Прибавить 2 к парированию следующей атаки."
         },
         "piercing-blow": {
@@ -699,21 +699,21 @@
           "description": "Add {amount} to Feat Die ({edge} to beat)."
         },
         "shield-thrust": {
-          "title": "Shield Thrust",
+          "title": "Удар щитом",
           "alt": "A shield bashing violently someone",
-          "label": "Shield Thrust",
+          "label": "Удар щитом",
           "description": "Отталкивание вместо нанесения урона."
         },
         "seize": {
           "title": "Seize",
           "alt": "A hand grasping something.",
-          "label": "Seize",
+          "label": "Захват",
           "description": "The attacker holds on to the target."
         },
         "break-shield": {
-          "title": "Break Shield",
+          "title": "Пробитие щита",
           "alt": "A shield broken in pieces",
-          "label": "Break Shield",
+          "label": "Пробитие щита",
           "description": "The attacker smashes the shield to pieces."
         }
       },
@@ -722,11 +722,11 @@
       },
       "step": {
         "initiative": {
-          "att": "Att.",
-          "def": "Def."
+          "att": "Атака",
+          "def": "Защита"
         },
         "preparation": {
-          "label": "Preparation",
+          "label": "Подготовка",
           "roll": {
             "reroll": "Reroll combat preparation",
             "label": "Combat preparation",
@@ -771,7 +771,7 @@
         },
         "preparation-roll": {
           "title": "Combat preparation roll result",
-          "message": " gets <span class='key-point'>{successDiceBonus} bonus dice</span> for the fight."
+          "message": " получает <span class='key-point'>{successDiceBonus} бонусных кубиков</span> в этом бою."
         },
         "result": {
           "title": "Attack result",
@@ -786,33 +786,33 @@
           "damage": {
             "title": "Урон:",
             "weapon": "[Оружие ({weaponDamage})",
-            "bonus": " + Бонус( {bonusDamage})"
+            "bonus": " + Бонус результата ({bonusDamage})"
           }
         },
         "piercing": {
           "title": "Пронзающий удар",
-          "description": "<span class='actor-name'>{targetName}</span> needs to make a <a class='button-protection-roll' data-tn-test={weaponInjuryValue}>Protection Roll Test<i class='fas fa-dice'></i></a> against {weaponInjuryValue} TN (edge beaten {edge})."
+          "description": "<span class='actor-name'>{targetName}</span> должен пройти <a class='button-protection-roll' data-tn-test={weaponInjuryValue}>проверку защиты <i class='fas fa-dice'></i></a> со СЛ {weaponInjuryValue} (edge beaten {edge})."
         },
         "injuryRoll": {
           "title": "Проверка травмы",
-          "description": "<span class='actor-name'>{targetName}</span> is wounded and needs to make an <a class='button-injury-roll'>Injury Roll <i class='fas fa-dice'></i></a>."
+          "description": "<span class='actor-name'>{targetName}</span> ранен и вынужден совершить <a class='button-injury-roll'>проверку травмы <i class='fas fa-dice'></i></a>."
         },
         "injury": {
           "title": "Травма",
           "moderate": {
             "type": "moderate",
             "title": "Незначительная травма",
-            "message": "<span class='actor-name'>{targetName}</span> suffers a <b>Moderate Injury</b> that last for the combat only."
+            "message": "<span class='actor-name'>{targetName}</span> получает <b>незначительную травму</b> до конца боя."
           },
           "severe": {
             "type": "severe",
             "title": "Серьёзная травма",
-            "message": "<span class='actor-name'>{targetName}</span> suffers a <b>Severe Injury</b> for a duration of {duration} days."
+            "message": "<span class='actor-name'>{targetName}</span> получает <b>серьёзную травму</b> на {duration} дней."
           },
           "grievous": {
             "type": "grievous",
             "title": "Мучительная травма",
-            "message": "<span class='actor-name'>{targetName}</span> suffers a <b>Grievous Injury</b> and is unconscious and dying."
+            "message": "<span class='actor-name'>{targetName}</span> получает <b>мучительную травму</b>, теряет сознание и при смерти."
           }
         },
         "effects": {
@@ -824,17 +824,17 @@
             "protected": "защищён!"
           },
           "weary": {
-            "is": "усталый."
+            "is": " усталый."
           },
           "ooc": {
-            "is": " is out of combat."
+            "is": " вне боя."
           }
         }
       }
     },
     "macro": {
       "error": {
-        "noActorAvailable": "Please select an actor before using this macro !",
+        "noActorAvailable": "Выберите актёра перед использованием макроса!",
         "itemIsMissing": "Item {itemName} of type {itemType} is not available in the actor selected {actorName} !"
       }
     },
@@ -851,10 +851,10 @@
   "SETTINGS": {
     "setTnBaseValue": "Set the TN base value",
     "setTnBaseValueDescription": "This setting allows the LM to set the base value they want. From the book, it is advised that you put 20 for campaign mode and 18 for one-shot",
-    "setExtendedWeaponSelection": "Extended weapon list",
+    "setExtendedWeaponSelection": "Расширенный список оружия",
     "setExtendedWeaponSelectionDescription": "This parameter should only be activated if the Loremaster wants to use homebrew rules for combat (ie. new combat proficiencies). By activating this parameter, a new field will appear in the weapon sheet to make a link with the new combat proficiency instead of the weapon group name.",
-    "setUseAdversarySkills": "Allow the use of Skills for Adversary",
-    "setUseAdversarySkillsDescription": "In 2nd edition, adversaries don't have skills in their sheet anymore. Toggling this setting to true allows the LM to add the block back to the Adversary Sheet.",
+    "setUseAdversarySkills": "Разрешить использование навыков врагами",
+    "setUseAdversarySkillsDescription": "Во втором издании враги не имеют навыков. Включение этой настройки добавит навыки в бланки персонажей Хранителя.",
     "setOverrideEyeAwareness": "Override Eye Awareness Max value",
     "setOverrideEyeAwarenessDescription": "By default, max value is 24 but if you want you can modify this value to another value depending on your needs.",
     "setRawModeForActiveEffectName": "Change Active Effect selection mode",
@@ -862,8 +862,8 @@
     "setAlwaysShowShieldThrustName": "Always show Shield Thrust",
     "setAlwaysShowShieldThrustDescription": "If you want to always show the Shield Thrust to your player hero carrying a shield, please tick this setting.",
     "setWarnLoreMasterForCharacterStateName": "Active Warn Message",
-    "setWarnLoreMasterForCharacterStateDescription": "To activate a warn message in the Chat for each character that should have a Weary or Miserable state.",
-    "setShowHideRangeBlockName": "Show Distance Range",
+    "setWarnLoreMasterForCharacterStateDescription": "Для активации предупреждения в чате для каждого персонажа с состоянием усталости или подавленности.",
+    "setShowHideRangeBlockName": "Отображение диапазона дистанции",
     "setShowHideRangeBlockDescription": "Used to show the Distance Range Block in the Weapon sheet and Character/Adversary sheet."
   }
 }
