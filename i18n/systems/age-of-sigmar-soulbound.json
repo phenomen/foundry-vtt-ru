@@ -21,6 +21,7 @@
   "ACTOR.SPEED_SLOW": "Медленная",
   "ACTOR.SPEED_NORMAL": "Средняя",
   "ACTOR.SPEED_FAST": "Быстрая",
+  "ACTOR.SPEED_MODIFIER": "Скорость (модификатор)",
 
   "ITEM.TypeAethericdevice": "Аэфирное устройство",
   "ITEM.TypeAlly": "Союзник",
@@ -211,6 +212,7 @@
   "DIALOG.ARMOUR": "Броня цели",
   "DIALOG.BONUSDICE": "Дополнительные кубики",
   "DIALOG.BONUSDAMAGE": "Дополнительный урон",
+  "DIALOG.BONUSFOCUS": "Дополнительная фокусировка",
   "DIALOG.EFFECTS": "Эффекты",
   "DIALOG.FOCUSALLOCATION": "Распределение фокусировки",
   "DIALOG.MANUAL": "Вручную",
@@ -229,6 +231,7 @@
   "DURATION.HOUR": "Час",
   "DURATION.DAY": "День",
   "DURATION.PERMANENT": "Постоянное",
+  "DURATION.SPECIAL": "Особая",
 
   "EQUIPMENT.NAME": "Название",
   "EQUIPMENT.COST": "Цена",
@@ -258,6 +261,7 @@
   "HEADER.TOTAL": "Всего",
   "HEADER.TOUGHNESS": "Выносливость",
   "HEADER.METTLE": "Отвага",
+  "HEADER.METTLE_REGAIN": "Отвага (Восстановление)",
   "HEADER.MELEE": "Рукопашное",
   "HEADER.ACCURACY": "Точность",
   "HEADER.DEFENCE": "Защита",
@@ -281,11 +285,13 @@
   "HEADER.DISABLED_EFFECTS": "ОТКЛЮЧЁННЫЕ ЭФФЕКТЫ",
   "HEADER.REROLLER": "Повторная проверка",
   "HEADER.CHARGEN": "Создание персонажа",
+  "HEADER.ARCHETYPE_APPLY": "Применить архетип",
   "HEADER.ARCHETYPE_GROUPS": "Группы архетипа",
   "HEADER.ARCHETYPE_GENERIC": "Предмет архетипа",
   "HEADER.EFFECT_SCRIPT_CONFIG": "Настройка скрипта эффекта",
   "HEADER.FILTER_RESULTS": "Фильтр результатов",
   "HEADER.ITEM_TRAITS": "Свойства предмета",
+  "HEADER.ZONE_CONFIG": "Настройка области",
 
   "ITEM.GOAL": "Цель",
   "ITEM.CONNECTION": "Связь",
@@ -341,6 +347,7 @@
   "ARCHETYPE.ITEM.ADD_FILTER": "Добавить фильтр",
   "ARCHETYPE.ITEM.ADD_GENERIC": "Добавить универсальный",
   "ARCHETYPE.ITEM.RESET_GROUPS": "Сбросить группы",
+  "ARCHETYPE.PROMPT": "Применить архетип к этому актёру?",
 
   "POWER.NAME": "Название",
   "POWER.DN": "СЛ",
@@ -439,11 +446,14 @@
   "TAB.MAIN": "ОСНОВНОЕ",
   "TAB.MEMBERS": "УЧАСТНИКИ",
   "TAB.EFFECTS": "ЭФФЕКТЫ",
+  "TAB.PROPERTIES": "СВОЙСТВА",
 
   "TALENT.NAME": "Название",
   "TALENT.EFFECT": "Эффект",
   "TALENT.DESCRIPTION": "Описание",
   "TALENT.REQUIREMENT": "Требования",
+  "TALENT.FREE": "Бесплатный",
+  "TALENT.FREE_TT": "Исключить талант из расчёта опыта",
 
   "TITLE.PHYSICAL": "ВНЕШНОСТЬ",
   "TITLE.GOALS": "ЦЕЛИ",
@@ -562,11 +572,32 @@
   "CONDITION.STUNNED": "Ошеломлён",
   "CONDITION.UNCONSCIOUS": "Без сознания",
 
+  "EFFECT.PartialCover" : "Частичное укрытие",
+  "EFFECT.TotalCover" : "Полное укрытие",
+  "EFFECT.LightlyObscured" : "Слабое заслонение",
+  "EFFECT.HeavilyObscured" : "Сильное заслонение",
+  "EFFECT.DifficultTerrain" : "Пересечённая местность",
+
   "EFFECT.RequiresEquip": "Требуется снаряжение",
   "EFFECT.CREATE": "Создать эффект",
   "EFFECT.DELETE": "Удалить эффект",
   "EFFECT.ENABLE": "Включить эффект",
   "EFFECT.DISABLE": "Выключить эффект",
+
+
+  "ZONE.DIFFICULT_TERRAIN" : "Пересечённая местность",
+  "ZONE.COVER" : "Укрытие",
+  "ZONE.HAZARD" : "Опасность",
+  "ZONE.HAZARD_IGNORE_ARMOUR" : "Игнорирует броню",
+  "ZONE.OBSCURED" : "Заслонённая",
+  "ZONE.PARTIAL" : "Частичное",
+  "ZONE.TOTAL" : "Полное",
+  "ZONE.MINOR" : "Слабая",
+  "ZONE.MAJOR" : "Сильная",
+  "ZONE.DEADLY" : "Смертельная",
+  "ZONE.LIGHTLY_OBSCURED" : "Слабое заслонение",
+  "ZONE.HEAVILY_OBSCURED" : "Сильное заслонение",
+
 
   "QUICKEFFECT.CHANGE": "Изменение",
   "QUICKEFFECT.LABEL": "Название",
