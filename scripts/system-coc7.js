@@ -1,14 +1,14 @@
-export function InitALIEN() {
+export function InitCOC7() {
   if (typeof Babele !== "undefined") {
     Babele.get().register({
       module: "ru-ru",
       lang: "ru",
-      dir: "compendium/alien",
+      dir: "compendium/coc7",
     });
   } else {
     new Dialog({
       title: "Перевод библиотек",
-      content: `<p>Для перевода библиотек ALIEN требуется установить и активировать модули <b>Babele и libWrapper</b><p>`,
+      content: `<p>Для перевода библиотек Call of Cthulhu 7e требуется установить и активировать модули <b>Babele и libWrapper</b><p>`,
       buttons: {
         done: {
           label: "Хорошо",

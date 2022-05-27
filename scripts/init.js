@@ -6,6 +6,7 @@ import { InitWFRP4 } from "./system-wfrp4.js";
 import { InitALIEN } from "./system-alien.js";
 import { InitCORIOLIS } from "./system-coriolis.js";
 import { InitINVESTIGATOR } from "./system-investigator.js";
+import { InitCOC7 } from "./system-coc7.js";
 //import { InitAOS } from "./system-age-of-sigmar-soulbound.js";
 
 Hooks.once("init", async () => {
@@ -39,6 +40,11 @@ Hooks.once("init", async () => {
   // ALIEN
   if (game.system.id === "alienrpg") {
     InitALIEN();
+  }
+
+  // CALL OF CTHULHU
+  if (game.system.id === "CoC7") {
+    InitCOC7();
   }
 
   // CORIOLIS
