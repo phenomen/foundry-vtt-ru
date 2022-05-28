@@ -1,8 +1,8 @@
 # Русский перевод для Foundry VTT
 
 * **Автор**: Phenomen#1337
-* **Версия**: 0.9.4.05
-* **Foundry VTT**: 0.8.9-V9
+* **Версия**: 0.9.269.24
+* **Foundry VTT**: V9-V10
 
 ### Ссылки
 
@@ -35,100 +35,37 @@
 ## **Системы:**
 
 - 13th Age
+- Age of Sigmar: Soulbound
 - Alien RPG (Чужой)
 - Blades in the Dark (Клинки во тьме)
 - City of Mist (Город Тумана)
+- Coriolis (Кориолис)
+- Cyberpunk RED
 - Cypher / Numenera
+- Delta Green
 - Dungeon World
 - Dungeons & Dragons 5
 - Forbidden Lands (Запретные земли)
-- GUMSHOE
 - Genesys / Star Wars FFG
+- GUMSHOE
 - Mutants Year Zero (Мутанты. Точка Отсчёта)
 - Old-School Essentials
 - Pathfinder 1e
-- Pathfinder 2e
 - Savage Worlds (Дневник Авантюриста)
 - Shadow of the Demon Lord
+- Star Trek Adventures (Звёздный Путь)
 - Starfinder
 - Tales from the Loop (Тайны Эхосферы)
+- The One Ring 2e
 - Traveler / Cepheus Engine
 - Warhammer Fantasy Roleplay 4
+- The Witcher (Ведьмак)
 
 ## **Модули:**
 
-- About Face
-- About Time
-- Active Auras
-- Adventure Import-Export
-- Always HP
-- Automated Animations
-- Babele
-- Better Rolltables
-- Better Roofs
-- BetterRolls for 5e
-- Chat Portrait
-- Combat Carousel
-- Combat Numbers
-- Combat Utility Belt
-- Compendium Browser
-- Compendium Folders
-- DF Active Lights
-- DF Curvy Walls
-- DF QOL
-- DF Scene Enhancement
-- DF Settings Clarity
-- DF User Logger
-- Damage Log
-- Dice Calculator (Dice Tray)
-- Dice So Nice
-- Drag Ruler
-- Dynamic Active Effects (DAE)
-- Easy Target
-- Enhanced Terrain Layer
-- Ernie's Modern Layout
-- FX Master
-- Forien's Copy Environment
-- Forien's Quest Log
-- Forien's Scene Navigator
-- Furnace
-- Health Estimate
-- Innocenti Loot
-- Innocenti Openlock
-- LMRTFY
-- Levels
-- Metric System for DnD5e
-- Midi-qol
-- Minimal UI
-- Monk's Hotbar Expansion
-- Monk's Little Details
-- Monk's Scene Navigation
-- Monk's Tokenbar
-- Monk's Wall Enhancement
-- Motion Tracker
-- Multilevel Tokens
-- Patrol
-- Pin Cushion
-- Pings
-- Playlist Import
-- Pointer
-- Polyglot
-- Rarity Colors
-- Shared Vision
-- Simple Calendar
-- Simple Dice Roller
-- Smart Target
-- Tidy5e Sheet
-- Token Action HUD
-- Token Attacher
-- Token Auras
-- Token HUD Wildcard
-- Token Mold
-- TokenMagic
-- Tokenizer
-- Torch
-- Turn Marker
-- Wall Height
+87 модулей, можно посмотреть список в `i18n/modules`
+
+---
 
 Оставляйте заявки на другие системы и модули в канале #перевод 
 

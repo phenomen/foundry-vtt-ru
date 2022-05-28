@@ -123,7 +123,17 @@
         "Untrained": "Нетренирован",
         "SkillRollTooltip": "Показывать настройки проверки по умолчанию. Shift+ЛКМ совершает проверку навыков без модификаторов со сложностью 8.",
         "InvertedSkillRollTooltip": "Проверки навыков совершаются без модификаторов со сложностью 8. Shift+ЛКМ открывает окно настроек проверки.",
-        "JOAT": "Мастер на все руки"
+        "JOAT": "Мастер на все руки",
+        "Timeframe": {
+          "none": "---",
+          "secs": "second(s)",
+          "mins": "minute(s)",
+          "hrs": "hour(s)",
+          "days": "day(s)",
+          "weeks": "week(s)",
+          "months": "month(s)",
+          "rounds": "round(s)"
+        }
       },
       "Species": "Вид",
       "Tabs": {
@@ -161,10 +171,15 @@
     },
     "Chat": {
       "Roll": {
-        "Difficulty": "Сложность",
-        "Mode": "Тип",
+        "Difficulty": "Difficulty",
+        "Mode": "Mode",
         "OtherModifiers": "Другие модификаторы",
-        "Type": "Бросок"
+        "Type": "Type",
+        "RollDetails": "Roll Details",
+        "Timeframe": "Timeframe",
+        "RollFormula": "Roll Formula",
+        "Units": "Units",
+        "taskDuration": "The task takes _TIME_ _UNITS_ to complete."
       }
     },
     "Create": "Создать",
@@ -386,7 +401,7 @@
       "JDrive": "J-Двиг.",
       "Jump": "Прыжок",
       "MacroSkill": "Макрос/Навык",
-      "MakesChatRollAction": "Использует действие _ACTION_NAME_ из позиции _POSITION_NAME_",
+      "MakesChatRollAction": "Uses the _ACTION_NAME_ action from the _POSITION_NAME_ position.",
       "ActionHits": "Попадает, используя _WHILE_USING_ с эффектом _EFFECT_VALUE_",
       "ActionHitsAndDamage": "Попадает, используя _WHILE_USING_ с эффектом _EFFECT_VALUE_ нанося стандартный урон _DAMAGE_TOTAL_",
       "ActionMisses": "Промахивается, используя _WHILE_USING_ с эффектом _EFFECT_VALUE_",
@@ -460,7 +475,8 @@
       "using": "использует {characteristic}",
       "Wounds": "Ранения",
       "AttackDM": "МБ атаки",
-      "BonusDamage": "Бонусный урон"
+      "BonusDamage": "Бонусный урон",
+      "Timeframe": "Time"
     },
     "Settings": {
       "absoluteBonusValueForEachTimeIncrement": {
@@ -727,6 +743,14 @@
       "unarmedDamage": {
         "hint": "Dice formula for unarmed damage used when Unarmed is automatically added to actors.",
         "name": "Unarmed Damage Formula"
+      },
+      "showTimeframe": {
+        "hint": "Add timeframe options to skill / characteristic rolls/",
+        "name": "Show Timeframe in Roll Dialog"
+      },
+      "showStatusIcons": {
+        "hint": "Overlay condition icons on side of actor images on sheets.",
+        "name": "Show condition icons on actor sheets"
       }
     },
     "CloseAndCreateNew": "Закрыть и создать",
