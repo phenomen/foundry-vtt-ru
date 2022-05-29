@@ -38,10 +38,12 @@
 - Age of Sigmar: Soulbound
 - Alien RPG (Чужой)
 - Blades in the Dark (Клинки во тьме)
+- Call of Cthulhu (Зов Ктулху)
 - City of Mist (Город Тумана)
 - Coriolis (Кориолис)
 - Cyberpunk RED
 - Cypher / Numenera
+- Death in Space
 - Delta Green
 - Dungeon World
 - Dungeons & Dragons 5

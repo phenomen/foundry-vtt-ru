@@ -117,9 +117,9 @@
 		"header" : "Бланки персонажей игроков"
 	},
 	"TIDY5E.Settings.TabNPCsVehicles" : {
-		"tabLabel" : "ПМ/Транспорт",
-		"header" : "Бланки ПМ и транспорта",
-		"labelNPCs" : "ПМ",
+		"tabLabel" : "Персонажи мастера/Транспорт",
+		"header" : "Бланки персонажей мастера и транспорта",
+		"labelNPCs" : "Персонажи мастера",
 		"labelVehicles" : "Транспорт"
 	},
 	"TIDY5E.Settings.TabGM" : {
@@ -248,37 +248,37 @@
 		"hint" : "При отключении контектного меню ПКМ рядом с предметами будет отображаться иконка меню, заменяющая его."
 	},
 	"TIDY5E.Settings.ExpandedSheet" : {
-		"name" : "Expanded Limited view for character sheets.",
-		"hint" : "Displays the entire character sheet (minus the journal) to players with limited permission."
+		"name" : "Расширенный обзор с ограниченными правами",
+		"hint" : "Участники с ограниченными правами на персонажа будут видеть всю информацию, кроме личного журнала."
 	},
 	"TIDY5E.Settings.PortraitStyle" : {
 		"name" : "Круглые портреты",
 		"hint" : "Включение стиля круглых портретов/иконок для актёров.",
 		"all": "Все актёры",
-		"pc": "ПИ",
-		"npc": "ПМ/Транспорт",
+		"pc": "Персонажи игроков",
+		"npc": "Персонажи мастера/Транспорт",
 		"none": "Нет",
 		"default": "Нет"
 	},
 	"TIDY5E.Settings.HpOverlayBorder" : {
-		"name" : "Offset hit point overlay.",
-		"hint" : "Enter offset value to compensate for portrait frames and prevent tinting."
+		"name" : "Смещение затенения пунктов здоровья",
+		"hint" : "Значение на которое будет смещено наложение ПЗ по отношению к рамке портрета."
 	},
 	"TIDY5E.Settings.EditTotalLock" : {
-		"name" : "Lock down sensitive fields.",
-		"hint" : "Enable to prevent accidentally changing sensible, mostly static values."
+		"name" : "Блокировка чувствительных полей",
+		"hint" : "Включение позволяет заблокировать изменение важных и обычно статичных полей."
 	},
 	"TIDY5E.Settings.EditGmAlways" : {
-		"name" : "GM can always edit PC sheets.",
-		"hint" : "Enable to allow GMs to edit PC sheets without toggling the sheet lock."
+		"name" : "Мастер всегда может редактировать персонажей",
+		"hint" : "Позволить мастеру редактировать бланки без переключения режима блокировки."
 	},
 	"TIDY5E.Settings.EditEffectsGmOnly" : {
-		"name" : "Only GM can edit active effects.",
-		"hint" : "Enable to deny players to edit active effects on their sheets. They will still see applied effects."
+		"name" : "Только мастер может изменять активные эффекты",
+		"hint" : "Игроки не смогут редактировать активные эффекты на своих бланках, но всё ещё будут их видеть."
 	},
 	"TIDY5E.Settings.QuantityAlwaysShown" : {
-		"name" : "Always show item quantity.",
-		"hint" : "Enable to never hide item quantity."
+		"name" : "Всегда показывать количество предметов",
+		"hint" : "Количество предметов никогда не будет скрыто."
 	},
 	"TIDY5E.Settings.InspirationDisabled" : {
 		"name" : "Отключение вдохновения",
@@ -292,34 +292,34 @@
 		"custom" : "Свои - Использовать ваши эффекты (требуется CUB)"
 	},
 	"TIDY5E.Settings.CustomExhaustionIcon" : {
-		"name" : "Custom exhaustion effect icon.",
-		"hint" : "Set your custom exhaustion effect icon by providing an image url. Only available when Exhaustion Effect is set to \"tidy 5e\" (e. g.: modules/tidy5e-sheet/images/exhaustion.svg)."
+		"name" : "Особая иконка утомления",
+		"hint" : "Введите относительный путь к иконке утомления (напр.: modules/tidy5e-sheet/images/exhaustion.svg). Работает только если Эффекты утомления выставлены на \"tidy 5e\"."
 	},
 	"TIDY5E.Settings.CustomExhaustionEffect" : {
 		"name" : "Название эффекта утомления в CUB",
-		"hint" : "Set the name for your custom Exhaustion Effect - must be the same as defined in CUB but WITHOUT tier number. (e. g. \"Exhaustion\")",
-		"tiers": "Number of custom CUB exhaustion tiers. Default = 5",
-		"warning": "Can't find actor token to apply exhaustion effect to!"
+		"hint" : "Введите название для вашего особого Эффекта утомления из CUB, но без числа этапов (например \"Безумие\")",
+		"tiers": "Число этапов утомления в CUB. По умолчанию 5.",
+		"warning": "Не найден актёр для применения эффекта утомления!"
 	},
 	"TIDY5E.Settings.ExhaustionDisabled" : {
 		"name" : "Отключение шкалы утомления",
 		"hint" : "Если вы не используете утомление в вашей игре, можно полностью отключить эту шкалу."
 	},
 	"TIDY5E.Settings.RestingForNpcs" : {
-		"name" : "Resting for NPCs.",
-		"hint" : "Enable to shows the rest icon/buttons on NPC sheets."
+		"name" : "Отдых для ПМ",
+		"hint" : "Отображение кнопок отдыха в бланках персонажей мастера."
 	},
 	"TIDY5E.Settings.RestingForNpcsChat" : {
-		"name" : "Hide chat card for NPC rest.",
-		"hint" : "Enable to hide the Chat Card for NPC rest (applies to GM and Players)."
+		"name" : "Скрывать карточка чата при отдыхе ПМ",
+		"hint" : "Отдых персонажей мастера не будет создавать карточки с информацией в чате."
 	},
 	"TIDY5E.Settings.LinkMarker" : {
-		"name" : "Mark linked/unlinked NPCs.",
-		"hint" : "Adds a colored border and icon to linked/unliked NPC sheets.",
-		"default": "No link marker (default)",
-		"unlinked": "Highlight unlinked tokens",
-		"linked": "Highlight linked tokens",
-		"both": "Highlight linked and unlinked tokens"
+		"name" : "Отметка связанных/отвязанных ПМ",
+		"hint" : "Добавляет цветную рамку и иконку к связанным/отвязанным бланкам персонажей мастера.",
+		"default": "Без отметки связи (по умолчанию)",
+		"unlinked": "Подсветка отвязанных токенов",
+		"linked": "Подсветка связанных токенов",
+		"both": "Подсветка отвязанных и связанных токенов"
 	},
 	"TIDY5E.Settings.DefaultActionsTab" : {
 		"name" : "Вкладка по умолчанию при открытии бланка",
@@ -333,14 +333,14 @@
 	},
 	"TIDY5E.Settings.npsSheetWidth" : {
 		"name" : "Ширина бланка ПМ по умолчанию.",
-		"hint" : "The width of the NPC sheet in pixels, requires a refresh to take effect (default 740)."
+		"hint" : "Ширина бланка персонажей мастера в пикселях. По умолчанию 740. Для применения требуется перезагрузка."
 	},
 	"TIDY5E.Settings.playerSheetWidth" : {
 		"name" : "Ширина бланка персонажа игрока по умолчанию.",
-		"hint" : "The width of the player sheet in pixels, requires a refresh to take effect (default 740)."
+		"hint" : "Ширина бланка персонажей игроков в пикселях. По умолчанию 740. Для применения требуется перезагрузка."
 	},
 	"TIDY5E.Settings.vehicleSheetWidth" : {
 		"name" : "Ширина бланка транспорта по умолчанию.",
-		"hint" : "The width of the vehicle sheet in pixels, requires a refresh to take effect (default 740)."
+		"hint" : "Ширина бланка транспорта в пикселях. По умолчанию 740. Для применения требуется перезагрузка."
 	}
 }
