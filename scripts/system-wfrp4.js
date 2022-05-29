@@ -564,6 +564,8 @@ export function InitWFRP4() {
         game.wfrp4e.config.symptomEffects.nausea.label = "Тошнота";
         game.wfrp4e.config.symptomEffects.pox.label = "Сыпь";
         game.wfrp4e.config.symptomEffects.wounded.label = "Незаживающая рана";
+        game.wfrp4e.config.symptomEffects.delirium.label = "Бред";
+        game.wfrp4e.config.symptomEffects.swelling.label = "Вздутие";
       }
     });
   }
