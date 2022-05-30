@@ -3,10 +3,10 @@
   "title": "❄️ Russian Translation | Русский перевод",
   "description": "<p>Модуль перевода добавляет русский язык в Foundry VTT, системы Dungeons & Dragons 5, Call of Cthulhu (Зов Ктулху), 13th Age, Age of Sigmar: Soulbound, Alien RPG (Чужой), Blades in the Dark (Клинки во тьме), City of Mist (Город Тумана), Coriolis (Кориолис), Cyberpunk RED, Cypher, Death in Space, Delta Green, Dungeon World, , Forbidden Lands (Запретные земли), Genesys / Star Wars FFG, GUMSHOE, Mutants Year Zero (Мутанты. Точка Отсчёта), Old-School Essentials, Pathfinder 1e, Savage Worlds (Дневник Авантюриста), Shadow of the Demon Lord, Star Trek Adventures (Звёздный Путь), Starfinder, Tales from the Loop (Тайны Эхосферы), The One Ring 2e, Traveler / Cepheus Engine, Warhammer Fantasy Roleplay 4, The Witcher (Ведьмак) и множество модулей.</p><p><strong>ВНИМАНИЕ:</strong> Ознакомьтесь с инструкцией по корректной установке и настройке на <a href=\"https://github.com/Phenomen/foundry-vtt-ru\">https://github.com/Phenomen/foundry-vtt-ru</a></p>",
   "author": "Phenomen#1337",
-  "url": "https://github.com/phenomen/foundry-vtt-ru",
-  "version": "0.9.269.26",
+  "version": "0.9.269.27",
   "minimumCoreVersion": "9",
-  "compatibleCoreVersion": "9",
+  "compatibleCoreVersion": "10",
+  "coreTranslation": true,
   "scripts": ["scripts/loadCSS.js"],
   "esmodules": ["scripts/init.js"],
   "styles": ["styles/ru.css"],
@@ -175,11 +175,6 @@
       "lang": "ru",
       "path": "i18n/modules/activeauras.json",
       "module": "ActiveAuras"
-    },
-    {
-      "lang": "ru",
-      "path": "i18n/modules/advancedspelleffects.json",
-      "module": "advancedspelleffects"
     },
     {
       "lang": "ru",
@@ -463,6 +458,11 @@
     },
     {
       "lang": "ru",
+      "path": "i18n/modules/pings.json",
+      "module": "pings"
+    },
+    {
+      "lang": "ru",
       "path": "i18n/modules/pointer.json",
       "module": "pointer"
     },
@@ -592,7 +592,7 @@
       "module": "wfrp4e-core"
     }
   ],
+  "url": "https://github.com/phenomen/foundry-vtt-ru",
   "manifest": "https://raw.githubusercontent.com/phenomen/foundry-vtt-ru/master/module.json",
-  "download": "https://github.com/phenomen/foundry-vtt-ru/archive/refs/heads/master.zip",
-  "coreTranslation": true
+  "download": "https://github.com/phenomen/foundry-vtt-ru/archive/refs/heads/master.zip"
 }
