@@ -174,6 +174,7 @@
   "CoC7.RollSecretDice": "Хранитель скрытно кинул кости",
   "CoC7.KeeperSentDecoy": "Фальшивый бросок был отправлен игрокам",
   "CoC7.FakeRoll": "Отправить фальшивый бросок игрокам",
+  "CoC7.ErrorMissingKeeperUser": "Хранитель должен быть в игре для этого действия.",
 
   "CoC7.ConstitutionCheck": "Проверка телосложения",
 
@@ -200,11 +201,15 @@
   "CoC7.CreateLink": "Создать ссылку",
   "CoC7.SuccesLevelHint": "{value} уровень(и) успеха",
   "CoC7.FailureLevelHint": "Провал по {value} уровню",
+  "CoC7.CardType": "Roll type",
   "CoC7.CombinedRollCard": "Карточка смежной проверки",
   "CoC7.OpposedRollCard": "Карточка встречной проверки",
+  "CoC7.GroupRollCard": "Group roll card",
+  "CoC7.RegularRollCard": "Regular roll card",
   "CoC7.CombinedAnyHint": "Любой бросок должен быть успешным",
   "CoC7.CombinedAllHint": "Все броски должны быть успешными",
   "CoC7.CloseCard": "Закрыть карточку",
+  "CoC7.AttackManeuver": "Attack Maneuver",
 
   "CoC7.CheckResult": "Проверка {name} ({value}%) - {difficulty} сложность",
   "CoC7.ItemCheckResult": "{item} - проверка {навык} ({value}%) - {difficulty} сложность",
@@ -374,6 +379,8 @@
   "CoC7.ErrorActor": "Не удалось найти актера",
   "CoC7.ErrorInvalidFormula": "{value} не является действительной формулой",
   "CoC7.ErrorInvalid": "недействительный",
+  "CoC7.ErrorInvalidCardType": "Card Type",
+  "CoC7.ErrorInvalidRollType": "Roll Type",
   "CoC7.Validate": "Проверить",
   "CoC7.Apply": "Применить",
 
@@ -769,6 +776,7 @@
   "CoC7.Migrate.TriggerContents": " <p> Включите миграцию данных и перезапустите </p>. ",
   "CoC7.Migrate.TriggerRestart": "Сохранить и вернуться",
 
+  "CoC7.Migrate.UpdateCurrentScene": "Миграция текущей сцены",
   "CoC7.Migrate.Complete": "Миграция данных завершена",
 
   "CoC7.Settings.CoreRules.Title": "Необязательные правила Книги Хранителя",
@@ -801,11 +809,13 @@
   "CoC7.MessageSelectUserToGiveTo": "Какому персонажу вы хотели бы отдать этот предмет?",
   "CoC7.MessageDistanceCalculationFailure": "Невозможно рассчитать расстояние между жетонами, пожалуйста, используйте лист персонажа токена.",
 
-  "CoC7.ToolTipSkill": "<label>{skill} {regular}% ({hard}/{extreme})</label><ol><li><strong>ЛКМ</strong>проверка с опциями</li><li><strong>Shift + ЛКМ </strong>Проверка с обычной сложностью</li></ol><label>Встречная проверки</label><ol><li><strong>ПКМ</strong>Встречная проверка с опциями</li><li><strong>Shift + ПКМ</strong>Просто встречная проверка</li></ol><label>Проверка нескольких навыков</label><ol><li><strong>Alt/Option + ПКМ</strong>Проверка нескольких навыков с опциями</li></ol>",
-  "CoC7.ToolTipKeeperSkill": " <label> Проверки хранителя </label> <ol> <li> <strong> CTRL + левый клик </strong> Создать ссылку на бросок </li> {other} </ol> ",
+  "CoC7.ToolTipSkill": "<label>{skill} {regular}% ({hard}/{extreme})</label><ol><li><strong>Left click</strong> roll check with options</li><li><strong>Shift + Left click</strong> Immediate regular difficulty roll</li></ol><label>Opposed checks</label><ol><li><strong>Right click</strong> Opposed check with options</li><li><strong>Shift + Right click</strong> Immediate opposed check</li></ol><label>Combined checks</label><ol><li><strong>Alt/Option + Right click</strong> Combined check with options</li><li><strong>Shift + Alt/Option + Right click</strong> Immediate combined check</li></ol>",
+  "CoC7.ToolTipKeeperSkill": "<label>Keeper checks</label><ol><li><strong>Ctrl + Left click</strong> Create roll link</li><li><strong>Shift + Ctrl + Left click</strong> Create roll link with modifiers</li>{other}</ol>",
   "CoC7.ToolTipKeeperStandbySkill": " <li>  <strong> Щелкните ЛКМ </strong> Для запроса броска у {name} </li> ",
-  "CoC7.ToolTipDB": " <label> Бонус к урону </label> <ol> <li> <strong> Левый клик </strong> Немедленная проверка обычной сложности </li> </ol> ",
-  "CoC7.ToolTipKeeperSanity": " <li>  <strong> CTRL + Alt/Option </strong> Создать ссылку на проверку рассудка </li> ",
+  "CoC7.ToolTipDB": "<label>Бонус к урону</label><ol><li><strong>ЛКМ </strong> Быстрая проверка</li></ol>",
+  "CoC7.ToolTipSanity": "<label>{skill} {regular}% ({hard}/{extreme})</label><ol><li><strong>Left click</strong> roll check with options</li><li><strong>Alt/Option + Left click</strong> roll sanity loss with options</li><li><strong>Shift + Left click</strong> Immediate regular difficulty roll</li><li><strong>Shift + Alt/Option + Left click</strong> roll sanity loss without dice pool options</li></ol><label>Opposed checks</label><ol><li><strong>Right click</strong> Opposed check with options</li><li><strong>Shift + Right click</strong> Immediate opposed check</li></ol><label>Combined checks</label><ol><li><strong>Alt/Option + Right click</strong> Combined check with options</li><li><strong>Shift + Alt/Option + Right click</strong> Immediate combined check</li></ol>",
+  "CoC7.ToolTipCombat": "<label>{skill} {regular}% ({hard}/{extreme})</label><ol><li><strong>Left click</strong> roll check with options</li><li><strong>Shift + Left click</strong> Immediate regular difficulty roll</li></ol><label>Combat opposed maneuver</label><ol><li><strong>Right click</strong> Combat opposed maneuver with options</li><li><strong>Shift + Right click</strong> Immediate combat opposed maneuver</li></ol>",
+  "CoC7.ToolTipKeeperSanity": " <li><strong> Ctrl + Alt/Option </strong> Создать ссылку на проверку рассудка</li> ",
   "CoC7.ToolTipAutoToggle": " <label> Переключение авторасчета </label> <ol> <li> <strong> ЛКМ </strong> Переключение авторасчета / ручной ввод </li> ",
   "CoC7.ToolTipSkillFlagToggle": " <label> {status} </label>  <ol>  <li>  <strong> Двойной щелчок </strong> Переключение значение состояния</li> ",
   "CoC7.ToolTipSkillFlagged": "Помечен для развития",

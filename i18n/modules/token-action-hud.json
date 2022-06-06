@@ -18,6 +18,7 @@
       "will": "Воля"
     },
     "attributes": "Характеристики",
+    "at-will": "Неограниченно",
     "bab": "БМА",
     "basic": "Базовое",
     "bennies": "Фишки",
@@ -54,7 +55,7 @@
     "dc": "СЛ",
     "deathSave": "Испытание смерти",
     "defenses": "Защита",
-    "destructionSave": "Destruction Save",
+    "destructionSave": "Проверка уничтожения",
     "dmg": "Урон",
     "dodge": "Уклонение",
     "doomed": "Обречён",
@@ -78,6 +79,7 @@
     "gear": "Снаряжение",
     "get": "Получить",
     "gm": "GM",
+    "general": "Общее",
     "grit": "Крутость",
     "handlerNotFound": "не найден, возврат к обычному броску.",
     "hase": "HASE",
@@ -108,7 +110,7 @@
     "moves": "Ходы",
     "msa": "Ближ. атаки заклинанием",
     "mwa": "Ближ. атаки оружием",
-    "natPowers": "Natural Powers",
+    "natPowers": "Естественные силы",
     "noammo": "Нет боеприпасов",
     "other": "Другое",
     "passive": "Пассивное",
@@ -130,17 +132,17 @@
     "rank": "Ранг",
     "reactions": "Реакции",
     "recharge": "Перезарядка",
-    "rechargeRepair": "Recharge",
-    "refittingRepair": "Refitting",
-    "regenRepair": "Regen",
+    "rechargeRepair": "Перезарядка",
+    "refittingRepair": "Переоборудование",
+    "regenRepair": "Регенерация",
     "religion": "Религия",
-    "repair": "Repair",
+    "repair": "Починка",
     "resistance": "Устойчивость",
     "rest": "Отдых",
     "restNight": "Отдыхать всю ночь",
     "takeBreather": "Передохнуть",
     "rests": "Отдых",
-    "repairs": "Repairs",
+    "repairs": "Починки",
     "roll": "Бросок",
     "rollable": "Случайное",
     "rollInitiative": "Проверка инициативы",
@@ -213,6 +215,10 @@
         "hint": "Включить режим отладки (для разработчиков).",
         "name": "Включить отладку"
       },
+      "dorakoUI": {
+        "hint": "Enable the more compact and modern look of Dorako UI in any system.",
+        "name": "Enable Dorako UI (TAH Standalone)"
+      },
       "dropdown": {
         "hint": "Если включено, то категории будут раскрываться вниз. Иначе будет использован (экспериментальный) метод раскрытия вверх.",
         "name": "Категории раскрываются вниз"
@@ -276,6 +282,18 @@
         "forcePowerColours": {
           "hint": "Кнопки сил будут окрашены в зависимости от их типа.",
           "name": "Окрашивать кнопки сил"
+        },
+        "hideUnequippedInventory": {
+          "hint": "If enabled, only inventory items that are set as equipped will be shown",
+          "name": "Скрыть ненадетые вещи"
+        },
+        "hideQuantityZero": {
+          "hint": "If enabled, inventory with a quantity 0 will be hidden (useful for consumables)",
+          "name": "Hide inventory with quantity of 0"
+        },
+        "equipmentCategoryList": {
+          "hint": "Comma-separated list of inventory types to show.  The default hides things without actions.  The complete list is: 'weapon, equipment, consumable, tool, backpack, loot, alchemical, ammo, potion, poison, food, scroll, trinket'",
+          "name": "Visible Inventory Categories"
         }
       },
       "dnd5e": {
@@ -310,6 +328,10 @@
         "showEmptyItems": {
           "hint": "Если включено, предметы (включая экипировку и заклинания) будут отображаться в HUD даже если у них не осталось зарядов.",
           "name": "Показывать пустые предметы"
+        },
+        "showItemsWithoutAction": {
+          "hint": "If enabled, Items that have no activation information will be added to the Inventory list",
+          "name": "Show Items without Activation costs"
         },
         "showSpellInfo": {
           "hint": "Если включено, то компоненты, концентрация и ритуалы будут отображаться рядом с именем заклинания.",
@@ -532,6 +554,20 @@
       "items": "Предметы",
       "sacraments": "Таинства",
       "consumables": "Расходники"
+    },
+    "gurps": {
+      "blindroll": "Слепой бросок",
+      "addacc": "Add Acc",
+      "retreatdodge": "Retreating Dodge",
+      "retreatparry": "Retreating Parry",
+      "retreatparryfence": "Retreating Parry (Fencing)",
+      "retreatblock": "Retreating Block"
+    },
+    "co": {
+      "combat": "Combat",
+      "attacks": "Attacks",
+      "protections": "Protections",
+      "capacities": "Capacities"
     }
   }
 }
