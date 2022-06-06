@@ -376,6 +376,10 @@
   font-family: var(--font-fancy);
 }
 
+.dnd5e .tag {
+  font-size: var(--text-sm);
+}
+
 /* TIDY5E */
 
 .system-dnd5e {
@@ -500,6 +504,12 @@
 
 
 /* ROS */
+
 .syb5e.sheet.actor.character .sheet-header h1.charname input {
   font-size: 30px;
+}
+
+.syb5e.sheet.actor.npc .tag,
+.syb5e.sheet.actor.character .tag {
+  color: var(--color-red-dnd);
 }
