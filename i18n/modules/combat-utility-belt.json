@@ -9,7 +9,39 @@
                 "Content": "Нажмите 'Да', чтобы включить 'Выводить в чат' для всех состояний."
             },
             "ConditionLab": {
-                "NoReference": "--Нет документа-- (перетащите журнал, предмет или актёра в это поле)"
+                "NoReference": "--Нет документа-- (перетащите журнал, предмет или актёра в это поле)",
+                "FilterInputTitle": "Фильтр по названию",
+                "FilterButtonTitle": "Применить фильтр",
+                "SortAnchorTitle": "Сотрировка по названию - нет сортировки",
+                "SortAnchorTitle_asc": "Сотрировка по названию - по алфавиту",
+                "SortAnchorTitle_desc": "Сотрировка по названию - обратно алфавиту",
+                "SortDirectionSave": {
+                    "Title": "Сохранить привязки с сортировкой?",
+                    "Content": "<p>Нажмите 'Да' для сохранения Лаборатории состояний с настройками сортировки, иначе нажмите 'Нет' для отмены.</p>",
+                    "CheckboxText": "Больше не показывать"
+                }
+            },
+            "ChatCard": {
+                "Heading": "Улучшенные состояния",
+                "Title": {
+                    "Added": "Добавлено",
+                    "Removed": "Удалено",
+                    "Active": "Активно"
+                }
+            },
+            "MacroConfig": {
+                "Heading": "Запускаемый макрос",
+                "ApplyHeading": "Применить макрос",
+                "RemoveHeading": "Удалить макрос",
+                "Description": "Выберите макрос для запуска, когда это условие добавляется или удаляется из токена/актёра",
+                "SelectNone": "--Нет макроса--"
+            },
+            "TriggerConfig": {
+                "Heading": "Триггеры",
+                "ApplyHeading": "Применить триггер",
+                "RemoveHeading": "Удалить триггер",
+                "Description": "Триггеры, применяемые при добавлении или удалении состояния",
+                "SelectNone": "--Нет триггера--"
             }
         },
         "CONCENTRATOR": {
@@ -35,19 +67,44 @@
             },
             "UnknownSpell": "Неизвестное заклинание"
         },
+        "HIDE_NAMES": {
+            "MessageIcon": {
+                "Title": {
+                    "NameNotHidden": "Имя не скрыто (нажмите, чтобы скрыть)",
+                    "NameHiddenPrefix": "Имя для подмены:",
+                    "NameHiddenSuffix": "(раскрыть имя)"
+                }
+            }
+        },
         "SETTINGS": {
             "CONCENTRATOR": {
                 "AutoEndConcentrationN": "Автоматически завершать концентрацию",
                 "AutoEndConcentrationH": "Автоматическая потеря концентрации при проваленной проверке концентрации.",
                 "NotifyConcentrationN": "Оповещение о начале концентрации",
                 "NotifyConcentrationH": "Отправлять сообщение при сотворении заклинания, требующего концентрации.",
+                "NotifyConcentrationCheckN": "Оповещение о проверке концентрации",
+                "NotifyConcentrationCheckH": "Отправлять сообщение при проверке, требующей концентрации.",
                 "NotifyEndN": "Оповещение о завершении концентрации",
-                "NotifyEndH": "Отправлять сообщение при окончании концентрация на заклинании."
+                "NotifyEndH": "Отправлять сообщение при завершении концентрации на заклинании (включая смерть или потерю сознания заклинателя)",
+                "HideNPCConcentrationN": "Скрытие концентрации NPC",
+                "HideNPCConcentrationH": "Скрывать сообщения концентрации NPC от игроков. Эта настройка активна даже если оповещения о концентрации выставлены на 'Всем'"
             },
             "ENHANCED_CONDITIONS": {
                 "MigrationVersionN": "Версия миграции",
-                "MigrationVersionH": "Версия CUB для которой будет выполнена миграция настроек"
+                "MigrationVersionH": "Версия CUB для которой будет выполнена миграция настроек",
+                "ShowSortDirectionDialogN": "Подтверждение сохранения сортировки Лаборатории состояний",
+                "ShowSortDirectionDialogH": "Отображать или нет окно подтверждения для сохранения направления сортировки."
             }
+        },
+        "TRIGGLER": {
+            "ButtonTitle": "Открыть Тригглер"
+        },
+        "WORDS": {
+            "Icon": "Иконка",
+            "Macro": "Макрос",
+            "Name": "Название",
+            "Reference": "Отсылка",
+            "Save": "Сохранение"
         }
     },
     "GADGET_DESCRIPTIONS.AwardXP": "Включает распределение пунктов опыта между игроками за победу над врагами после боя",
@@ -282,8 +339,8 @@
     "SETTINGS.TokenUtility.TokenEffectSizeN": "Размер иконок эффекта",
     "SETTINGS.TokenUtility.TokenEffectSizeH": "Определяет размер иконки эффекта на токене. Число означает число иконок на сетке (X*Y). По умолчанию: 5x5",
     
-    "SETTINGS.Triggler.TriggersN": "Triggler Triggers",
-    "SETTINGS.Triggler.TriggersH": "Хранит сохранённые Triggler Triggers",
+    "SETTINGS.Triggler.TriggersN": "Триггеры Triggler",
+    "SETTINGS.Triggler.TriggersH": "Хранит сохранённые триггеры Triggler",
     
     "WORDS.IUnderstand": "Я понимаю",
     "WORDS.Import": "Импорт",
