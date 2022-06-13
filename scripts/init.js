@@ -24,7 +24,6 @@ Hooks.once("init", async () => {
     "Signika",
     "Times",
     "Times New Roman",
-    "-- КИРИЛЛИЦА --",
     "Beaufort",
     "GWENT",
     "Inter",
