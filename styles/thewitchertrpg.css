@@ -1,5 +1,11 @@
-.witcher-style {
+.witcher-style,
+h1,
+h2 {
   font-family: "GWENT" !important;
+}
+
+h2 {
+  font-size: var(--text-lg);
 }
 
 .app .window-app .witcher .sheet .actor,
@@ -24,10 +30,27 @@ label {
 }
 
 .not-skilled a {
-  background-color: var(--color-yellow-900);
+  background-color: #57534e;
 }
 
 h1,
 .charname {
-  font-family: "GWENT";
+  font-family: "GWENT" !important;
+}
+
+.sheet nav.sheet-tabs {
+  font-family: "GWENT" !important;
+  line-height: 20px;
+}
+
+.skill-info {
+  background-color: #64748b;
+
+  border-radius: 2px;
+}
+
+.IP-value,
+.extra-skill-name,
+.extra-skill-value {
+  background: #e2e8f0 !important;
 }
