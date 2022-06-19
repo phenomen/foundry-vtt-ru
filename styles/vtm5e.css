@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "cormorantLight";
+  src: url("../fonts/Beaufort-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "cormorantLight";
+  src: url("../fonts/Beaufort-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "cormorantLight";
+  src: url("../fonts/Beaufort-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+.sheet header.sheet-header h1,
+.vtm5e .sheet-header h1.charname input {
+  font-family: var(--font-fancy);
+}
+
+.vtm5e .window-content .abilities .ability .resource-label,
+.vtm5e .window-content .resource-label {
+  font-size: 16px;
+}

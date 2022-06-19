@@ -42,7 +42,8 @@
         "connections": "Связи",
         "travel": "Путешествие",
         "taleOfYears": "Сказание лет",
-        "notes": "Заметки"
+        "notes": "Заметки",
+        "journey-log": "Journey Log"
       },
       "details": {
         "tech": {
@@ -166,6 +167,22 @@
           "miserable": "<strong>{name}</strong> становится <strong>подавленный</strong>.",
           "wearyAndMiserable": "<strong>{name}</strong> становится <strong>усталым</strong> и <strong>подавленным</strong>."
         }
+      },
+      "community": {
+        "messages": {
+          "setDefaultActorManually": "В этом мире вы сделали Актера ({name}) Актером Отряда по умолчанию.",
+          "setDefaultActorAutomatically": "В этом мире актер ({name}) автоматически стал Актером Отряда по умолчанию.",
+          "displayDefaultActor": "Актер отряда по умолчанию - (имя: '{name}' / id: '{id}').",
+          "warnNoCommunityActor": "Warning, there is no Community Actor in this World, some features features won't work properly till you create one.",
+          "warnTooManyCommunityActors": "Warning, there is too many Community Actors ({size}) in this world. The system can't guess the good one. Please set it manually in the Community Sheets."
+        },
+        "journey-log": {
+          "year": "Год",
+          "season": "Время года",
+          "from": "Пункт отправления",
+          "to": "Пункт назначения",
+          "duration": "Дней в пути"
+        }
       }
     },
     "travel": {
@@ -183,7 +200,7 @@
           "skill": "охота"
         },
         "lookouts": {
-          "label": "Дозорщик",
+          "label": "Дозорный",
           "skill": "бдительность"
         }
       }
@@ -234,6 +251,48 @@
         "tech": {
           "title": "Фоновое изображение, представляющее особенность.",
           "alt": "Изображение особенности"
+        }
+      },
+      "journey-log": {
+        "title": "Journey Log",
+        "company": "Отряд",
+        "mounts": "Ездовые животные",
+        "journal": "Дневник",
+        "journey-path": "Карта путешествия",
+        "events": "События",
+        "attributes": {
+          "name": "Имя",
+          "role": "Роль",
+          "vigour": "Мощь",
+          "": "Утомление в путешествии",
+          "travel-fatigue": "Утомление в путешествии"
+        },
+        "actions": {
+          "import": {
+            "title": "Добавить данные из актера Отряда (ALT+клик). Внимание, данные предметов Отряда не будут учтены."
+          },
+          "add-member": {
+            "title": "Добавить персонажа в Отряд (ALT+клик)."
+          },
+          "delete-member": {
+            "title": "Убрать персонажа из Отряда (ALT+клик)."
+          },
+          "add-mount": {
+            "title": "Добавить ездовое животное к Отряду (ALT+клик)."
+          },
+          "delete-mount": {
+            "title": "Убрать ездовое животное из Отряда (ALT+клик)."
+          },
+          "add-event": {
+            "title": "Добавить событие для Отряда (ALT+клик)."
+          },
+          "delete-event": {
+            "title": "Удалить событие (ALT+клик)."
+          }
+        },
+        "tech": {
+          "title": "Background Image of the Journey Log representing a path.",
+          "alt": "Image representing a Journey Log."
         }
       },
       "fellowship": {
@@ -652,20 +711,20 @@
         "noActorAttachedToToken": "Impossible to add token '{name}' to combat because this Token has no Actor attached to it. You should have deleted the actor linked to the token."
       },
       "warn": {
-        "noActorFound": "No actor found with name {name}.",
+        "noActorFound": "Актер с именем {name} не найден",
         "combatantNotInCombat": "The Token ({name}) with id ({id}) you want to make an engagement with is not part of the active Combat or is Out of Combat.",
         "combatantDoesntExistInCombat": "Актёр с id ({id}) не является участником активного боя.",
         "noSkillNameAvailableWithExtendedWeaponSelection": "The character {actorName} has no combat proficiency ({name}) and neither a skill name of name ({name}).",
         "noSkillNameFoundWithExtendedWeaponSelection": "The character {actorName} has no combat proficiency ({name}) and has no skill with the expected name ({name}).",
         "noCombatProficiencyFound": "The character {actorName} has no combat profeciency ({name}). You should either add a proficiency or use the extendable combat skill settings to add one.",
         "incompleteItem": "No valid {element} for this item ({item}). You need select a(n) {element}.",
-        "noValidTarget": "You need to select one and only one token to attack.",
-        "noValidCombatTarget": "You need to select a token that is included in the Combat Tracker.",
+        "noValidTarget": "Чтобы атаковать вы должны выбрать только один токен.",
+        "noValidCombatTarget": "Вы должны выбрать токен, который участвует в бою.",
         "noValidWeaponEquipped": "У вас нет подходящего надетого оружия для использования навыка ({skill}).",
         "tnIsWeird": "СЛ имеет некорректное значение. Возможно вы не выставили значение паррирования цели ({foeName}).",
         "noTokenSelectedForEngagement": "You need to select some tokens to be engaged with each other.",
         "numberOfTengwarNotCorrect": "Something weird happened. Number of Tengwar ({tengwar}) is 0 or less ! This should not happen.",
-        "impossibleForMonoFaction": "You need to select at least one Token from each faction.",
+        "impossibleForMonoFaction": "Вы должны выбрать хотя бы по одному токену от каждой стороны конфликта.",
         "impossibleForComplexEngagement": "You need to select one and only one token for one of the two factions, not several tokens for both."
       },
       "actions": {
@@ -742,7 +801,7 @@
         },
         "closeCombat": {
           "engagement": "Engagement",
-          "label": "Close Combat"
+          "label": "Ближний бой"
         },
         "default": {
           "label": "Unknown Combat Step"
@@ -750,19 +809,19 @@
       },
       "stance": {
         "forward": {
-          "label": "Forward"
+          "label": "На острие"
         },
         "open": {
-          "label": "Open"
+          "label": "Открытая стойка"
         },
         "defensive": {
-          "label": "Defensive"
+          "label": "Защитная стойка"
         },
         "rearward": {
-          "label": "Rearward"
+          "label": "В тылу"
         },
         "default": {
-          "label": "Unknown Combat Stance"
+          "label": "Неизвестная стойка"
         }
       },
       "chat": {
@@ -774,14 +833,14 @@
           "message": " получает <span class='key-point'>{successDiceBonus} бонусных кубиков</span> в этом бою."
         },
         "result": {
-          "title": "Attack result",
-          "help": "Please right click to use the contextual menu",
+          "title": "Результат атаки",
+          "help": "Пожалуйста, нажмите правую кнопку, чтобы вызвать меню.",
           "paragraph": "<span class='actor-name'>{attackerName}</span> атакует <span class='actor-name'>{targetName}</span> при помощи {weaponName} и наносит <a class='apply-damage-element' title='{hint}'>{totalDamage} урона<i class='fas fa-external-link-alt'></i></a>",
           "specialResult": " with <a class='apply-special-result' title='{hint}'>{quantity} special result(s)<i class='fas fa-external-link-alt'></i></a> (<img src='systems/tor2e/assets/images/tengwar.png' data-edit='img' title='tengwar' height='15' width='15' alt='tengwar'/>)"
         },
         "details": {
-          "attackerRoll": "Attacker roll :",
-          "successLevel": "Success level :",
+          "attackerRoll": "Проверка атакующего:",
+          "successLevel": "Уровень успеха:",
           "specialDamage": "Особый урон:",
           "damage": {
             "title": "Урон:",
@@ -816,7 +875,7 @@
           }
         },
         "effects": {
-          "title": "Effects of the attack",
+          "title": "Эффекты атаки",
           "damageDealt": "Нанесённый урон:",
           "protection": {
             "is": " ",
@@ -845,23 +904,53 @@
       "miserable": "Подавленный",
       "weary": "Усталый",
       "unit": {
-        "days": "Days"
+        "days": "Дней"
       }
+    },
+    "journey-log": {
+      "log": {
+        "year": "Год",
+        "season": "Время года",
+        "from": "Пункт отправления",
+        "to": "Пункт назначения",
+        "duration": "Дней в пути"
+      }
+    },
+    "seasons": {
+      "winter": "Зима",
+      "spring": "Весна",
+      "summer": "Лето",
+      "autumn": "Осень"
+    },
+    "roles": {
+      "guide": "Проводник",
+      "scout": "Разведчик",
+      "lookout": "Дозорный",
+      "hunter": "Охотник"
+    },
+    "evenTypes": {
+      "terrible-misfortune": "Terrible Misfortune",
+      "despair": "Despair",
+      "ill-choices": "Ill Choices",
+      "mishap": "Mishap",
+      "short-cut": "Short Cut",
+      "chance-meeting": "Chance Meeting",
+      "joyful-sight": "Joyful Sight"
     }
   },
   "SETTINGS": {
-    "setTnBaseValue": "Set the TN base value",
+    "setTnBaseValue": "Установите базовую сложность",
     "setTnBaseValueDescription": "This setting allows the LM to set the base value they want. From the book, it is advised that you put 20 for campaign mode and 18 for one-shot",
     "setExtendedWeaponSelection": "Расширенный список оружия",
     "setExtendedWeaponSelectionDescription": "This parameter should only be activated if the Loremaster wants to use homebrew rules for combat (ie. new combat proficiencies). By activating this parameter, a new field will appear in the weapon sheet to make a link with the new combat proficiency instead of the weapon group name.",
     "setUseAdversarySkills": "Разрешить использование навыков врагами",
     "setUseAdversarySkillsDescription": "Во втором издании враги не имеют навыков. Включение этой настройки добавит навыки в бланки персонажей Хранителя.",
-    "setOverrideEyeAwareness": "Override Eye Awareness Max value",
-    "setOverrideEyeAwarenessDescription": "By default, max value is 24 but if you want you can modify this value to another value depending on your needs.",
+    "setOverrideEyeAwareness": "Вы превысили максимально значение Внимания Ока",
+    "setOverrideEyeAwarenessDescription": "По умолчанию максимальное значение равно 24, но вы можете изменить его, исходя из своих потребностей.",
     "setRawModeForActiveEffectName": "Change Active Effect selection mode",
     "setRawModeForActiveEffectDescription": "If you need to do some specific stuff and you know what you are doing, you can toggle the Active selection mode (Checked : List mode/Unchecked: Raw mode (text input box)).",
     "setAlwaysShowShieldThrustName": "Always show Shield Thrust",
-    "setAlwaysShowShieldThrustDescription": "If you want to always show the Shield Thrust to your player hero carrying a shield, please tick this setting.",
+    "setAlwaysShowShieldThrustDescription": "Special Damage \"Shield Thrust\" : Propose this option even if the display rule (strength > attribute) is not reached.",
     "setWarnLoreMasterForCharacterStateName": "Active Warn Message",
     "setWarnLoreMasterForCharacterStateDescription": "Для активации предупреждения в чате для каждого персонажа с состоянием усталости или подавленности.",
     "setShowHideRangeBlockName": "Отображение диапазона дистанции",
