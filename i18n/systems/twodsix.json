@@ -25,7 +25,8 @@
       "UnallocatedDamage": "Нераспределённый урон",
       "CharacterIsDead": "Персонаж мёртв",
       "DealDamageTo": "Нанести урон _ACTOR_NAME_",
-      "DamageFormula": "Формула урона"
+      "DamageFormula": "Формула урона",
+      "NoRegularDamage": "No Regular Damage"
     },
     "Dialogs": {
       "ROFPickerTitle": "Выберите режим стрельбы",
@@ -126,13 +127,13 @@
         "JOAT": "Мастер на все руки",
         "Timeframe": {
           "none": "---",
-          "secs": "second(s)",
-          "mins": "minute(s)",
-          "hrs": "hour(s)",
-          "days": "day(s)",
-          "weeks": "week(s)",
-          "months": "month(s)",
-          "rounds": "round(s)"
+          "secs": "секунды",
+          "mins": "минуты",
+          "hrs": "часы",
+          "days": "дни",
+          "weeks": "недели",
+          "months": "месяца",
+          "rounds": "раунд"
         }
       },
       "Species": "Вид",
@@ -171,15 +172,15 @@
     },
     "Chat": {
       "Roll": {
-        "Difficulty": "Difficulty",
-        "Mode": "Mode",
+        "Difficulty": "Сложность",
+        "Mode": "Режим",
         "OtherModifiers": "Другие модификаторы",
-        "Type": "Type",
-        "RollDetails": "Roll Details",
-        "Timeframe": "Timeframe",
-        "RollFormula": "Roll Formula",
-        "Units": "Units",
-        "taskDuration": "The task takes _TIME_ _UNITS_ to complete."
+        "Type": "Тип",
+        "RollDetails": "Подробности броска",
+        "Timeframe": "Временные рамки",
+        "RollFormula": "Формула броска",
+        "Units": "Единицы измерения",
+        "taskDuration": "Для выполнения задания требуется _TIME_ _UNITS_."
       }
     },
     "Create": "Создать",
@@ -401,7 +402,7 @@
       "JDrive": "J-Двиг.",
       "Jump": "Прыжок",
       "MacroSkill": "Макрос/Навык",
-      "MakesChatRollAction": "Uses the _ACTION_NAME_ action from the _POSITION_NAME_ position.",
+      "MakesChatRollAction": "Использует действие _ACTION_NAME_ из позиции _POSITION_NAME_",
       "ActionHits": "Попадает, используя _WHILE_USING_ с эффектом _EFFECT_VALUE_",
       "ActionHitsAndDamage": "Попадает, используя _WHILE_USING_ с эффектом _EFFECT_VALUE_ нанося стандартный урон _DAMAGE_TOTAL_",
       "ActionMisses": "Промахивается, используя _WHILE_USING_ с эффектом _EFFECT_VALUE_",
@@ -450,6 +451,52 @@
       "MaintenancePerMonth": "Цена Обслуживания",
       "CrPerMonth": "Кр/месяц"
     },
+    "Vehicle": {
+      "SystemStatus": "System Status",
+      "Cargo": "Cargo",
+      "CargoNotes": "Notes",
+      "CargoCapacity": "Capacity",
+      "Speed": "Speed",
+      "Range": "Range",
+      "Agility": "Agility",
+      "systems": {
+        "cargo": "Cargo",
+        "cockpit": "Cockpit",
+        "computers": "Computers",
+        "electronics": "Electronics",
+        "limbs": "Limbs / Appendages",
+        "propulsion": "Propulsion / Locomotion",
+        "powerPlant": "Power Plant",
+        "sensors": "Sensors",
+        "weapons": "Weapons"
+      },
+      "crew": {
+        "operators": "Operators",
+        "passengers": "Passengers"
+      },
+      "Movement": "Movement",
+      "Crew": "Crew",
+      "Weight": "Weight",
+      "Armor": "Armor",
+      "Hull": "Hull",
+      "Structure": "Structure",
+      "Protection": "Protection",
+      "skillToOperate": "Skill to operate",
+      "Weapons": "Weapons",
+      "OpenVehicle": "Open Vehicle",
+      "techLevel": "TL",
+      "Cost": "Cost",
+      "Traits": "Traits",
+      "ArmorHull": "Armor and Hull",
+      "Regular": "Regular",
+      "Critical": "Critical",
+      "Thresholds": "Thresholds",
+      "ProtectionType": {
+        "ArmorOnly": "Armor Only",
+        "Threshold": "Threshold",
+        "ArmorHullStruc": "Armor, Hull and Structure"
+      }
+    },
     "Migration": {
       "Completed": "Миграция Twodsix System до версии {version} завершена!",
       "DoNotClose": "Происходит миграция Migrating Twodsix до версии {version}. Не закрывайте игру.",
@@ -476,7 +523,7 @@
       "Wounds": "Ранения",
       "AttackDM": "МБ атаки",
       "BonusDamage": "Бонусный урон",
-      "Timeframe": "Time"
+      "Timeframe": "Время"
     },
     "Settings": {
       "absoluteBonusValueForEachTimeIncrement": {
@@ -603,8 +650,8 @@
         "name": "Включить пункты Героизма"
       },
       "showItemReferences": {
-        "hint": "В бланках предметов будет отображаться поле для указания источника в формате PDFoundry: [документ] [номер страницы]",
-        "name": "Отображать поле источника в бланках предметов."
+        "hint": "Shows a text field on item and vehicle sheets to use with PDFoundry or as a freeform reference.  For PDFoundry, format must be '[abbreviated name] [page number]'.",
+        "name": "Show reference field on vehicle and item sheets."
       },
       "ShowLawLevel": {
         "hint": "checked=Show the 'Law Level' field, unchecked=Hide it",
@@ -742,7 +789,7 @@
       },
       "unarmedDamage": {
         "hint": "Dice formula for unarmed damage used when Unarmed is automatically added to actors.",
-        "name": "Unarmed Damage Formula"
+        "name": "Формула урона без оружия"
       },
       "showTimeframe": {
         "hint": "Add timeframe options to skill / characteristic rolls/",
@@ -750,7 +797,19 @@
       },
       "showStatusIcons": {
         "hint": "Overlay condition icons on side of actor images on sheets.",
-        "name": "Show condition icons on actor sheets"
+        "name": "Show condition icons on traveller sheets"
+      },
+      "showHullAndArmor": {
+        "hint": "option to choose information in protection area of vehicle sheets.  Options are armor only (a plain text box), thresholds (roll values for regular and critical hits) and armor, hull, structre (table of three damage fields).",
+        "name": "Protection values on vehicle sheets"
+      },
+      "addEffectToManualDamage": {
+        "hint": "This option addts the effect to a manual damage roll from the most recent chat message.",
+        "name": "Add effect when making manual damage"
+      },
+      "showRangeSpeedNoUnits": {
+        "hint": "Omit the range and speed units (e.g. km/hr) on vehicle sheet.",
+        "name": "Don't show range and speed units"
       }
     },
     "CloseAndCreateNew": "Закрыть и создать",
@@ -801,8 +860,8 @@
       "MaxStatVal": "Значение превышает максимальное для характеристики",
       "StatValBelowZero": "Значение не может быть ниже нуля",
       "DecreaseEnduranceFirst": "Выносливость/Стойкость должна быть понижена перед другими характеристиками",
-      "CantAutoDamageShip": "Автоматический урон корабля не поддерживается",
-      "CantDropOnShipToken": "Перенос предметов на токены кораблей не поддерживается.",
+      "CantAutoDamage": "Automatic damage of ship or vehicle is not supported",
+      "CantDropOnToken": "Dropping items on ship or vehicle tokens is not supported",
       "CantDragOntoActor": "Этот предмет не может быть добавлен этому актёру",
       "PDFFoundryNotInstalled": "Для ссылок на источники нужно установить PDFoundry.",
       "NoSpecfiedLink": "Документ и страница не указаны для этой ссылки.",
