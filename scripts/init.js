@@ -14,7 +14,7 @@ Hooks.once("init", async () => {
   loadCSS("modules/ru-ru/styles/" + game.system.id.toLowerCase() + ".css");
 
   // Add Cyrillic fonts to the font list
-  CONFIG.defaultFontFamily = "Inter";
+  CONFIG.defaultFontFamily = "Noto Sans";
 
   CONFIG.fontFamilies = [
     "Arial",
@@ -24,9 +24,9 @@ Hooks.once("init", async () => {
     "Signika",
     "Times",
     "Times New Roman",
-    "Inter",
-    "PT Serif",
-    "Alegreya Sans",
+    "Noto Sans",
+    "Noto Serif",
+    "Noto Mono",
     "Beaufort",
     "Manuskript",
     "Marck Script",
@@ -35,7 +35,6 @@ Hooks.once("init", async () => {
     "Oswald",
     "GWENT",
     "Exocet",
-    "Roboto Mono",
   ];
 
   // ALIEN

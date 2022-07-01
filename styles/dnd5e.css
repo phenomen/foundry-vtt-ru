@@ -84,7 +84,7 @@
 }
 
 .dnd5e.sheet.actor .sheet-header .summary input {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-size: var(--text-sm);
 }
 
@@ -156,6 +156,7 @@
 .dnd5e.sheet.actor.character ul.skills-list li.skill h4 {
   font-family: var(--font-sans-condensed);
   font-size: var(--text-sm);
+  font-weight: 500;
   overflow: hidden;
 }
 
@@ -176,7 +177,7 @@
 
 .dnd5e.sheet .items-list .items-header .item-name {
   font-family: var(--font-serif);
-  font-weight: bold;
+  font-weight: 600;
   font-size: var(--text-base);
 }
 
@@ -188,14 +189,14 @@
 
 .dnd5e.sheet.actor.character .sheet-header .attributes .hit-dice {
   font-family: var(--font-serif);
-  font-weight: bold;
+  font-weight: 600;
   font-size: var(--text-xl);
 }
 
 .dnd5e.sheet.actor ul.attributes li.attribute .attribute-value > * {
   font-family: var(--font-serif);
-  font-weight: bold;
-  font-size: var(--text-xl);
+  font-weight: 600;
+  font-size: var(--text-lg);
 }
 
 .dnd5e.sheet.actor .sheet-header .charlevel .level.noxp > label {
@@ -247,12 +248,14 @@
 
 .dnd5e.sheet.actor ul.skills-list li.skill .skill-mod {
   font-family: var(--font-sans-condensed);
+  font-weight: 500;
   font-size: var(--text-sm);
   color: var(--color-gray-500);
 }
 
 .dnd5e.sheet.actor ul.skills-list li.skill .skill-passive {
   font-family: var(--font-sans-condensed);
+  font-weight: 500;
   font-size: var(--text-sm);
 }
 
@@ -301,6 +304,7 @@
 
 .dnd5e.sheet.actor ul.skills-list li.skill h4 {
   font-family: var(--font-sans-condensed);
+  font-weight: 500;
   font-size: var(--text-sm);
   overflow: hidden;
 }
@@ -388,7 +392,7 @@
 /* TIDY5E */
 
 .system-dnd5e {
-  --modesto: var(--font-serif);
+  --modesto: var(--font-fancy);
   --signika: var(--font-sans);
 }
 
@@ -434,8 +438,9 @@
 }
 
 .tidy5e.sheet.actor .header-attributes .ac-display .attribute-value {
-  color: var(--color-white);
-  font-size: var(--text-4xl);
+  font-family: var(--font-serif);
+  font-size: var(--text-3xl);
+  font-weight: 700;
   top: 40%;
 }
 

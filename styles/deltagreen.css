@@ -1,31 +1,60 @@
+@font-face {
+  font-family: "atwriter";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Noto_Serif/NotoSerif-Italic.ttf") format("truetype") !important;
+}
 
 @font-face {
-  font-family: 'atwriter';
-  src: url("../fonts/PTSerif-Regular.ttf") format("truetype") !important;
-} 
+  font-family: "atwriter";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Noto_Serif/NotoSerif-BoldItalic.ttf") format("truetype") !important;
+}
 
 @font-face {
-  font-family: TypeWriterCondensed;
-  src: url("../fonts/Inter.ttf") format("truetype") !important;
+  font-family: "atwriter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Noto_Serif/NotoSerif-Regular.ttf") format("truetype") !important;
+}
+
+@font-face {
+  font-family: "atwriter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Noto_Serif/NotoSerif-Bold.ttf") format("truetype") !important;
 }
 
 @font-face {
   font-family: TypeWriterCondensed;
-  font-weight: bold;
-  src: url("../fonts/Oswald.ttf") format("truetype") !important;
+  font-weight: 400;
+  src: url("../fonts/Fira_Sans_Extra_Condensed/FiraSansExtraCondensed-Medium.ttf")
+    format("truetype") !important;
 }
 
 @font-face {
   font-family: TypeWriterCondensed;
   font-weight: 600;
-  src: url("../fonts/Oswald.ttf") format("truetype") !important;
+  src: url("../fonts/Fira_Sans_Extra_Condensed/FiraSansExtraCondensed-SemiBold.ttf")
+    format("truetype") !important;
 }
 
 @font-face {
-  font-family: 'SpecialElite';
-  src: url("../fonts/ocra_cyr.otf") format("opentype") !important;
+  font-family: TypeWriterCondensed;
+  font-weight: 700;
+  src: url("../fonts/Fira_Sans_Extra_Condensed/FiraSansExtraCondensed-Bold.ttf")
+    format("truetype") !important;
 }
 
+@font-face {
+  font-family: "SpecialElite";
+  src: url("../fonts/ocra_cyr.otf") format("opentype") !important;
+}
 
 .typewriter-condensed-font {
   font-family: var(--font-sans-condensed) !important;
@@ -105,7 +134,7 @@
   color: #21641f !important;
 }
 
-.old-paper-background{
+.old-paper-background {
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
