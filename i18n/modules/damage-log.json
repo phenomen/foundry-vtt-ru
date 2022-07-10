@@ -14,8 +14,12 @@
 	"damage-log.new": "Новый",
 	"damage-log.diff": "Разница",
 
-	"damage-log.hp-name.default" : "ПЗ",
-	"damage-log.hp-name.age-of-sigmar-soulbound" : "Выносливость",
+	"damage-log.default.hp-name" : "ПЗ",
+	"damage-log.default.temp-name" : "Врем.",
+	"damage-log.age-of-sigmar-soulbound.toughness-name" : "Выносливость",
+	"damage-log.swade.wounds-name" : "Ранения",
+	"damage-log.swade.fatigue-name" : "Усталость",
+	"damage-log.swade.bennies-name" : "Фишки",
 
 	"damage-log.settings.use-tab": "Отдельная вкладка для урона",
 	"damage-log.settings.use-tab-hint": "Для журнала урона будет создана отдельная вкладка. Иначе информация об уроне будет отправляться в чат как обычно.",
@@ -25,7 +29,7 @@
 	"damage-log.settings.min-player-permission": "Минимальные права актёра",
 	"damage-log.settings.min-player-permission-hint": "Только игроки со следующими правами (или выше) смогут просматривать журнал урона.",
 
-	"damage-log.settings.allow-player-undo": "Разрешить игрокам отменять/повторять урон.",
+	"damage-log.settings.allow-player-undo": "Разрешить игрокам отменять/повторять урон",
 	"damage-log.settings.allow-player-undo-hint": "Игроки смогут отменять или повторно наносить урон и лечение по актёрам в их владении.",
 
 	"damage-log.settings.show-limited-info": "Ограниченная информация об уроне",
@@ -49,5 +53,6 @@
 	"damage-log.error.scene-id-missing": "Damage Log | Не удаётся найти ID сцены из журнала урона",
 	"damage-log.error.scene-deleted": "Damage Log | Сцена '{scene}' больше не существует",
 	"damage-log.error.token-id-missing": "Damage Log | Не удаётся найти ID токена из журнала урона",
-	"damage-log.error.token-deleted": "Damage Log | Токен '{token}' больше не существует"
+	"damage-log.error.token-deleted": "Damage Log | Токен '{token}' больше не существует",
+	"damage-log.error.no-undo-user": "Damage Log | Не удаётся {undo} {damage}.  Ни {user}, ни GM не в игре."
 }
