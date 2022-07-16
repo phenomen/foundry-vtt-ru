@@ -9,7 +9,7 @@
       "url": "https://discord.gg/Z2CXFy35WF"
     }
   ],
-  "version": "0.10.272.8",
+  "version": "0.10.272.9",
   "compatibility": {
     "minimum": "9",
     "verified": "10"
@@ -640,6 +640,26 @@
       "module": "wfrp4e-gm-toolkit"
     }
   ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "babele",
+        "type": "module",
+        "manifest": "https://gitlab.com/riccisi/foundryvtt-babele/raw/master/module/module.json",
+        "compatibility": {
+          "verified": "2.2.5"
+        }
+      },
+      {
+        "id": "lib-wrapper",
+        "type": "module",
+        "manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json",
+        "compatibility": {
+          "verified": "1.12.7.0"
+        }
+      }
+    ]
+  },
   "url": "https://github.com/phenomen/foundry-vtt-ru",
   "manifest": "https://raw.githubusercontent.com/phenomen/foundry-vtt-ru/master/module.json",
   "download": "https://github.com/phenomen/foundry-vtt-ru/archive/refs/heads/master.zip"
