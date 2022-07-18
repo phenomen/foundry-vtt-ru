@@ -13,9 +13,6 @@ Hooks.once("init", async () => {
   // Load system-specific CSS styles
   loadCSS("modules/ru-ru/styles/" + game.system.id.toLowerCase() + ".css");
 
-  // Add Cyrillic fonts to the font list
-  CONFIG.defaultFontFamily = "Noto Sans";
-
   CONFIG.fontFamilies = [
     "Arial",
     "Courier",
@@ -35,6 +32,26 @@ Hooks.once("init", async () => {
     "GWENT",
     "Exocet",
   ];
+
+  // Add Cyrillic fonts to the font list
+  game.settings.register("ru-ru", "tokenFont", {
+    name: "Шрифт токенов",
+    hint: "Название шрифта, используемого для токенов на сцене",
+    type: String,
+    default: "Fira Sans Extra Condensed",
+    choices: CONFIG.fontFamilies,
+    scope: "world",
+    config: true,
+    restricted: true,
+    onChange: (value) => {
+      window.location.reload();
+    },
+  });
+
+  CONFIG.defaultFontFamily = "Noto Sans";
+  CONFIG.canvasTextStyle.fontFamily = game.settings.get("ru-ru", "tokenFont");
+
+  //System-specific scripts
 
   // ALIEN
   if (game.system.id === "alienrpg") {
