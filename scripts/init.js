@@ -13,11 +13,11 @@ Hooks.once("init", async () => {
   // Load system-specific CSS styles
   loadCSS("modules/ru-ru/styles/" + game.system.id.toLowerCase() + ".css");
 
-  const ruFonts = [
+  const cyrillicFonts = [
     "Arial",
     "Courier",
     "Courier New",
-    "Helvetica",
+    "Modesto Condensed",
     "Signika",
     "Times",
     "Times New Roman",
@@ -28,21 +28,22 @@ Hooks.once("init", async () => {
     "Beaufort",
     "Manuskript",
     "Marck Script",
-    "Modesto Condensed",
     "OCR-A",
     "GWENT",
     "Exocet",
   ];
 
-  CONFIG.fontFamilies = ruFonts;
+  game.version < 10
+    ? (CONFIG.fontFamilies = cyrillicFonts)
+    : (CONFIG._fontFamilies = cyrillicFonts);
 
   // Add Cyrillic fonts to the font list
   game.settings.register("ru-ru", "tokenFontFamily", {
-    name: "Шрифт названий на сцене",
-    hint: "Шрифт, используемый для названий токенов и заметок на сцене.",
+    name: "Шрифт подписей на сцене",
+    hint: "Шрифт, используемый для имён токенов и названий заметок на сцене.",
     type: Number,
     default: 10,
-    choices: ruFonts,
+    choices: cyrillicFonts,
     scope: "world",
     config: true,
     restricted: true,
@@ -53,7 +54,7 @@ Hooks.once("init", async () => {
 
   CONFIG.defaultFontFamily = "Noto Sans";
   CONFIG.canvasTextStyle.fontFamily =
-    ruFonts[game.settings.get("ru-ru", "tokenFontFamily")];
+    cyrillicFonts[game.settings.get("ru-ru", "tokenFontFamily")];
 
   //System-specific scripts
 
