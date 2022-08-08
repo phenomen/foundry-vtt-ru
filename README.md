@@ -1,25 +1,25 @@
 # Русский перевод для Foundry VTT
 
-* **Автор**: Phen#1337
-* **Версия**: 0.9.269.24
-* **Foundry VTT**: V9-V10
+- **Автор**: Phen#1337
+- **Версия**: 10.276.006
+- **Foundry VTT**: V9-V10
 
 ### Ссылки
 
-* Github: https://github.com/phenomen/foundry-vtt-ru
-* Manifest: https://github.com/phenomen/foundry-vtt-ru/raw/master/module.json
-* Русскоязычное сообщество Foundry VTT: https://discord.gg/Z2CXFy35WF
-* Проект совместной локализации на Transifex: https://www.transifex.com/foundry-vtt-ru/foundry-vtt-russian-translation/
+- Github: https://github.com/phenomen/foundry-vtt-ru
+- Manifest: https://github.com/phenomen/foundry-vtt-ru/raw/master/module.json
+- Русскоязычное сообщество Foundry VTT: https://discord.gg/Z2CXFy35WF
+- Проект совместной локализации на Transifex: https://www.transifex.com/foundry-vtt-ru/foundry-vtt-russian-translation/
 
 ### Описание и инструкция
 
 Модуль добавляет поддержку русского языка в Foundry VTT, многие системы и модули.
 
-**Нужно выполнить один раз:** 
+**Нужно выполнить один раз:**
 
 1. На вкладке **Add-on Modules** нажмите **Install Module**
-2. Введите в фильтр "русский перевод", в списке должен появится модуль "Russian Translation  | Русский перевод". Нажмите кнопку **Install**
-3. Перейдите на вкладку **Configuration** и измените **Default Language** на "Russian - Russian Translation". Нажмите **Save Changes**. 
+2. Введите в фильтр "русский перевод", в списке должен появится модуль "Russian Translation | Русский перевод". Нажмите кнопку **Install**
+3. Перейдите на вкладку **Configuration** и измените **Default Language** на "Russian - Russian Translation". Нажмите **Save Changes**.
 
 **Нужно выполнять каждый раз для каждого мира:**
 
@@ -36,20 +36,21 @@
 
 - 13th Age
 - Age of Sigmar: Soulbound
-- Alien RPG (Чужой)
+- Alien (Чужой)
 - Blades in the Dark (Клинки во тьме)
 - Call of Cthulhu (Зов Ктулху)
 - City of Mist (Город Тумана)
 - Coriolis (Кориолис)
 - Cyberpunk RED
-- Cypher / Numenera
+- Cypher
 - Death in Space
 - Delta Green
+- Dungeon Crawl Classics
 - Dungeon World
 - Dungeons & Dragons 5
 - Forbidden Lands (Запретные земли)
 - Genesys / Star Wars FFG
-- GUMSHOE
+- GUMSHOE (СЫШИК)
 - Mutants Year Zero (Мутанты. Точка Отсчёта)
 - Old-School Essentials
 - Pathfinder 1e
@@ -59,16 +60,17 @@
 - Starfinder
 - Tales from the Loop (Тайны Эхосферы)
 - The One Ring 2e
-- Traveler / Cepheus Engine
-- Warhammer Fantasy Roleplay 4
 - The Witcher (Ведьмак)
+- Traveler / Cepheus Engine
+- Vampire V5 (Вампиры: Маскарад)
+- Warhammer Fantasy Roleplay 4
 
 ## **Модули:**
 
-87 модулей, можно посмотреть список в `i18n/modules`
+Переведены 93 модуля, список в можно посмотреть `i18n/modules`
 
 ---
 
-Оставляйте заявки на другие системы и модули в канале #перевод 
+Оставляйте заявки на другие системы и модули в канале #перевод на нашем Discord сервере.
 
 Страница перевода на сайте Foundry VTT: https://foundryvtt.com/packages/ru-ru/
