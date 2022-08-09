@@ -43,7 +43,7 @@
         "travel": "Путешествие",
         "taleOfYears": "Сказание лет",
         "notes": "Заметки",
-        "journey-log": "Journey Log"
+        "journey-log": "Дневник путешествия"
       },
       "details": {
         "tech": {
@@ -254,12 +254,35 @@
         }
       },
       "journey-log": {
-        "title": "Journey Log",
+        "roll-dialog": {
+          "title": "Select a region type"
+        },
+        "chat": {
+          "region-type": "Region Type:",
+          "event-type": "Event Type:",
+          "target": "Target:"
+        },
+        "title": "Дневник путешествия",
         "company": "Отряд",
         "mounts": "Ездовые животные",
         "journal": "Дневник",
-        "journey-path": "Карта путешествия",
-        "events": "События",
+        "journey-path": "Маршрут путешествия",
+        "events": {
+          "title": "Roll Event",
+          "name": "Events"
+        },
+        "event": {
+          "name": "Event",
+          "result": "Result",
+          "target": "Target",
+          "region": "Region",
+          "description": "Some dice rolling on a journey path"
+        },
+        "region-types": {
+          "border-land": "Border Land",
+          "wild-land": "Wild Land",
+          "dark-land": "Dark Land"
+        },
         "attributes": {
           "name": "Имя",
           "role": "Роль",
@@ -286,8 +309,14 @@
           "add-event": {
             "title": "Добавить событие для Отряда (ALT+клик)."
           },
+          "add-event-with-roll": {
+            "title": "Add an event to the Company with automatic event rolls (ALT+Click)."
+          },
           "delete-event": {
             "title": "Удалить событие (ALT+клик)."
+          },
+          "re-roll-event": {
+            "title": "Reroll the event and replace with the new result (ALT+Click)."
           }
         },
         "tech": {
@@ -564,7 +593,8 @@
           "skill": "бросок"
         },
         "toggle": {
-          "favoured": "Нажмите Alt+ЛКМ для выбора одарённого статуса"
+          "favoured": "Press Alt+Click to toggle favoured state",
+          "add-remove-skill": "Press Alt+Click to add a skill level and Shift+Alt+Click to remove a level."
         }
       },
       "skill": {
@@ -580,6 +610,7 @@
         "clickOnWeaponInstead": "Нажмите на оружие для его использования, а не на боевой навык.",
         "impossibleToFavouredAWeapon": "Невозможно выбрать одарённое оружие этому персонажу."
       },
+      "skill": "Press Click to roll the skill",
       "difficulty": "Сложность",
       "target": "Цель",
       "result": {
@@ -820,6 +851,9 @@
         "rearward": {
           "label": "В тылу"
         },
+        "skirmish": {
+          "label": "Skirmish"
+        },
         "default": {
           "label": "Неизвестная стойка"
         }
@@ -936,9 +970,18 @@
       "short-cut": "Short Cut",
       "chance-meeting": "Chance Meeting",
       "joyful-sight": "Joyful Sight"
+    },
+    "active-effect" : {
+      "toggle" : {
+        "help" : "use ALT+Click to toggle state"
+      }
     }
   },
   "SETTINGS": {
+    "setSoloMode": "Strider Mode (Solo)",
+    "setSoloModeDescription": "Some features are adapted to Strider Mode (eg. Skirmish stance only, community actor is simplified, ...)",
+    "setAddSkirmish": "Add skirmish stance to your game",
+    "setAddSkirmishDescription": "Add skirmish to the stances allowed even if you are not playing Strider Mode (Solo)",
     "setTnBaseValue": "Установите базовую сложность",
     "setTnBaseValueDescription": "This setting allows the LM to set the base value they want. From the book, it is advised that you put 20 for campaign mode and 18 for one-shot",
     "setExtendedWeaponSelection": "Расширенный список оружия",
@@ -954,6 +997,8 @@
     "setWarnLoreMasterForCharacterStateName": "Active Warn Message",
     "setWarnLoreMasterForCharacterStateDescription": "Для активации предупреждения в чате для каждого персонажа с состоянием усталости или подавленности.",
     "setShowHideRangeBlockName": "Отображение диапазона дистанции",
-    "setShowHideRangeBlockDescription": "Used to show the Distance Range Block in the Weapon sheet and Character/Adversary sheet."
+    "setShowHideRangeBlockDescription": "Used to show the Distance Range Block in the Weapon sheet and Character/Adversary sheet.",
+    "disableAltClickName": "Disable ALT Click",
+    "disableAltClickDescription": "Disable the ALT Click to protect some modification actions like upgrading skill or toggling health status."
   }
 }
