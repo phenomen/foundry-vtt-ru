@@ -7,6 +7,7 @@ import { InitALIEN } from "./system-alien.js";
 import { InitCORIOLIS } from "./system-coriolis.js";
 import { InitINVESTIGATOR } from "./system-investigator.js";
 import { InitCOC7 } from "./system-coc7.js";
+import { InitMASKS } from "./system-masks.js";
 //import { InitAOS } from "./system-age-of-sigmar-soulbound.js";
 
 Hooks.once("init", async () => {
@@ -101,6 +102,14 @@ Hooks.once("init", async () => {
   // WFRP4
   if (game.system.id === "wfrp4e") {
     InitWFRP4();
+  }
+
+  // MASKS
+  if (
+    game.system.id === "pbta" &&
+    game.modules.get("masks-newgeneration-sheets")?.active
+  ) {
+    InitMASKS();
   }
 
   // AGE OF SIGMAR SOULBOUND

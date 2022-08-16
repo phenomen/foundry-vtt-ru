@@ -1,0 +1,25 @@
+{
+	"label": "Инструкции - Маски",
+	"entries": [
+		{
+			"id": "How To Set Up CUB",
+			"name": "Как настроить CUB",
+			"description": "<h1>Как настроить CUB</h1>\n<p> </p>\n<p>Вы можете заставить состояние отображаться на токене, когда игрок отмечает его на Листе персонажа, с помощью модуля Combat Utility Belt.</p>\n<p>Сначала вам нужно включить Condition Lab.<img style=\"font-family:var(--font-primary);font-size:var(--font-size-14)\" src=\"modules/masks-newgeneration-unofficial/images/guide/cub-masks02.webp\" width=\"749\" height=\"454\" /></p>\n<p> </p>\n<p>Для каждого состояния необходимо создать триггер On и Off.</p>\n<p><img src=\"modules/masks-newgeneration-unofficial/images/guide/cub-masks01.webp\" width=\"800\" height=\"711\" /></p>\n<p> </p>\n<p>Это значения, которые вы можете использовать для каждого из состояний:</p>\n<p>Напуган</p>\n<p>data.attrLeft.conditions.options.0.value</p>\n<p>Зол</p>\n<p>data.attrLeft.conditions.options.1.value</p>\n<p>Виноват</p>\n<p>data.attrLeft.conditions.options.2.value</p>\n<p>Отчаян</p>\n<p>data.attrLeft.conditions.options.3.value</p>\n<p>Не уверен</p>\n<p>data.attrLeft.conditions.options.4.value</p>\n<p> </p>\n<p>Вам необходимо создать состояния. Вы можете импортировать их по этой ссылке: <a href=\"https://raw.githubusercontent.com/brunocalado/masks-newgeneration-unofficial/main/resources/cub-pbta-condition-map.json\" target=\"_blank\" rel=\"noopener\">Download Link</a></p>\n<p><img src=\"modules/masks-newgeneration-unofficial/images/guide/cub-masks03.webp\" width=\"800\" height=\"477\" /></p>\n<p>Убедитесь, что для каждого состояния определены триггеры.</p>\n<p> </p>\n<h2>Иконки</h2>\n<p>Зол: icons/skills/wounds/injury-face-impact-orange.webp</p>\n<p><img src=\"icons/skills/wounds/injury-face-impact-orange.webp\" width=\"50\" height=\"50\" /></p>\n<p> </p>\n<p>Напуган: icons/magic/unholy/silhouette-robe-evil-power.webp</p>\n<p><img src=\"icons/magic/unholy/silhouette-robe-evil-power.webp\" width=\"50\" height=\"50\" /></p>\n<p> </p>\n<p>Виноват: icons/creatures/mammals/humanoid-cat-skulking-teal.webp</p>\n<p><img src=\"icons/creatures/mammals/humanoid-cat-skulking-teal.webp\" width=\"50\" height=\"50\" /></p>\n<p> </p>\n<p>Отчаявшийся: icons/creatures/magical/spirit-undead-masked-blue.webp</p>\n<p><img src=\"icons/creatures/magical/spirit-undead-masked-blue.webp\" width=\"50\" height=\"50\" /></p>\n<p> </p>\n<p>Неуверенный: icons/skills/wounds/injury-face-impact-orange.webp</p>\n<p><img src=\"icons/magic/death/undead-skeleton-deformed-red.webp\" width=\"50\" height=\"50\" /></p>\n<p> </p>\n<p> </p>"
+		},
+		{
+			"id": "Macros",
+			"name": "Макрос",
+			"description": "<h1>Макрос</h1>\n<p>У вас есть макрос, позволяющий игрокам легче менять ярлыки.</p>\n<p> </p>\n<p> </p>\n<p><img src=\"icons/commodities/treasure/mask-jeweled-gold.webp\" width=\"28\" height=\"28\" /> Label Changer</p>\n<ol>\n<li>импортируйте макрос в мир. </li>\n<li>Поделитесь им с игроками.</li>\n<li>Они должны выбрать свой токен. </li>\n</ol>\n<p> </p>\n<p><img src=\"modules/masks-newgeneration-unofficial/images/guide/macro-labelchanger.png\" width=\"397\" height=\"334\" /></p>\n<p> </p>\n<p>Примечания</p>\n<p>Токен должен быть связан с актером.</p>"
+		},
+		{
+			"id": "Templates",
+			"name": "Шаблоны",
+			"description": "<h1>Шаблоны</h1>\n<p>Прежде чем что-либо делать, вам нужно добавить шаблон в ваш мир.</p>\n<p>Используйте этот шаблон: <a href=\"https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial-revised/main/templates/masks.txt\" target=\"_blank\" rel=\"noopener\">Download Link</a></p>\n<p> </p>\n<p> </p>\n<p> </p>"
+		},
+		{
+			"id": "Tips",
+			"name": "Советы",
+			"description": "<h1>Советы</h1>\n<p> </p>\n<h2>Запасы героев</h2>\n<p>Token HUD Wildcard для Foundry VTT</p>\n<p>Вы можете использовать Token HUD Wildcard для замены токенов цифрами.</p>\n<p>https://github.com/javieros105/FVTT-TokenHUDWildcard</p>\n<p> </p>\n<p>FoundryVTT - Party Resources</p>\n<p>Вы можете использовать Party Resources для управления запасами.</p>\n<p>https://github.com/davelens/fvtt-party-resources</p>\n<p> </p>\n<h2>Theatre</h2>\n<p>Используйте Theatre, чтобы заставить РС почувствовать себя в сцене.</p>\n<p>https://github.com/League-of-Foundry-Developers/fvtt-module-theatre</p>\n<p> </p>"
+		}
+	]
+}
