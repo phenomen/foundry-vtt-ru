@@ -508,50 +508,6 @@ export function InitWFRP4() {
         mergeObject(game.wfrp4e.config, WFRP4E);
 
         // Patching system items/effects/statuses
-        game.wfrp4e.config.systemItems.improv.name = "Импровизированное оружие";
-        game.wfrp4e.config.systemItems.stomp.name = "Затаптывание";
-        game.wfrp4e.config.systemItems.unarmed.name = "Безоружная атака";
-
-        game.wfrp4e.config.systemItems.fear.name = "Страх";
-        game.wfrp4e.config.systemItems.fear.data.test.value = "Хладнокровие";
-        game.wfrp4e.config.systemItems.fear.effects[0].label = "Страх";
-
-        game.wfrp4e.config.systemItems.terror.label = "Ужас";
-        game.wfrp4e.config.systemItems.terror.flags.wfrp4e.script = game.wfrp4e.config.systemItems.terror.flags.wfrp4e.script.replace(
-          "Cool",
-          "Хладнокровие"
-        );
-
-        game.wfrp4e.config.systemEffects.enc1.label = "Перегруженность 1";
-        game.wfrp4e.config.systemEffects.enc2.label = "Перегруженность 2";
-        game.wfrp4e.config.systemEffects.enc3.label = "Перегруженность 3";
-
-        game.wfrp4e.config.systemEffects.cold1.label = "Холод 1";
-        game.wfrp4e.config.systemEffects.cold2.label = "Холод 2";
-        game.wfrp4e.config.systemEffects.cold3.label = "Холод 3";
-
-        game.wfrp4e.config.systemEffects.heat1.label = "Жара 1";
-        game.wfrp4e.config.systemEffects.heat2.label = "Жара 2";
-        game.wfrp4e.config.systemEffects.heat3.label = "Жара 3";
-
-        game.wfrp4e.config.systemEffects.thirst1.label = "Жажда 1";
-        game.wfrp4e.config.systemEffects.thirst2.label = "Жажда 2+";
-
-        game.wfrp4e.config.systemEffects.starvation1.label = "Голод 1";
-        game.wfrp4e.config.systemEffects.starvation2.label = "Голод 2";
-
-        game.wfrp4e.config.systemEffects.defensive.label = "Уход в защиту [название навыка]";
-        game.wfrp4e.config.systemEffects.defensive.flags.wfrp4e.script = game.wfrp4e.config.systemEffects.defensive.flags.wfrp4e.script
-          .replace("Language (Magick)", "Язык (магический)")
-          .replace("Prayer", "Молитва");
-
-        game.wfrp4e.config.systemEffects.dualwielder.label = "Двойная атака";
-
-        game.wfrp4e.config.systemEffects.consumealcohol1.label = "Кутёж 1";
-        game.wfrp4e.config.systemEffects.consumealcohol2.label = "Кутёж 3";
-        game.wfrp4e.config.systemEffects.consumealcohol3.label = "Кутёж 2";
-        game.wfrp4e.config.systemEffects.stinkingdrunk1.label = "Мариенбуржская отвага";
-
         game.wfrp4e.config.symptomEffects.blight.label = "Летальный исход";
         game.wfrp4e.config.symptomEffects.buboes.label = "Бубоны";
         game.wfrp4e.config.symptomEffects.convulsions.label = "Судороги";
