@@ -168,16 +168,20 @@ export function InitWFRP4() {
             }
           } else if (originalTrait.type === "prayer" && fullPrayers.index) {
             let translatedTrait = fullPrayers.index.find((prayer) => prayer.originalName === parsedTrait.baseName);
-            originalTrait.name = translatedTrait.name + parsedTrait.special;
+            if (translatedTrait) {
+              originalTrait.name = translatedTrait.name + parsedTrait.special;
 
-            if (translatedTrait.data && translatedTrait.data.description && translatedTrait.data.description.value)
-              originalTrait.data.description.value = translatedTrait.data.description.value;
+              if (translatedTrait.data && translatedTrait.data.description && translatedTrait.data.description.value)
+                originalTrait.data.description.value = translatedTrait.data.description.value;
+            }
           } else if (originalTrait.type === "spell" && fullSpells.index) {
             let translatedTrait = fullSpells.index.find((spell) => spell.originalName === parsedTrait.baseName);
-            originalTrait.name = translatedTrait.name + parsedTrait.special;
+            if (translatedTrait) {
+              originalTrait.name = translatedTrait.name + parsedTrait.special;
 
-            if (translatedTrait.data && translatedTrait.data.description && translatedTrait.data.description.value)
-              originalTrait.data.description.value = translatedTrait.data.description.value;
+              if (translatedTrait.data && translatedTrait.data.description && translatedTrait.data.description.value)
+                originalTrait.data.description.value = translatedTrait.data.description.value;
+            }
           } else if (originalTrait.type === "talent" && fullTalents.index) {
             let translatedTrait = fullTalents.index.find((talent) => talent.originalName === parsedTrait.baseName);
 
