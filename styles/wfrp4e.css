@@ -41,13 +41,21 @@
   --window-header-title-font-family: var(--font-pirate);
   --window-header-title-font-size: var(--text-base);
   --major-button-font-family: var(--font-pirate);
-  --major-button-font-size: 18px;
+  --major-button-font-size: var(--text-sm);
   --tab-header-font-family: var(--font-pirate);
   --tab-header-font-size: var(--text-xs);
   --actor-input-font-family: var(--font-serif);
   --actor-input-font-size: var(--text-xs);
   --actor-label-font-family: var(--font-pirate);
   --actor-label-font-size: var(--text-xs);
+}
+
+form .form-group span.units {
+  font-size: var(--text-xs);
+}
+
+.app .window-app .sheet .token-sheet {
+  width: 560px;
 }
 
 .app.window-app.sheet.wfrp4e.actor.character-sheet
@@ -207,8 +215,10 @@ input[type="password"] {
   font-family: var(--font-pirate);
 }
 
-#menu {
+#menu,
+#menu #menu-items li h4 {
   font-family: var(--font-pirate);
+  font-size: var(--text-2xl);
 }
 
 .wfrp4e.item-sheet .condition-value,
@@ -389,12 +399,10 @@ input[type="password"] {
   font-family: var(--font-serif);
 }
 
-.wfrp4e.actor .randomize-buttons {
-  font-family: var(--font-serif);
-}
-
+.wfrp4e.actor .randomize-buttons,
 .wfrp4e.actor .randomize-buttons .randomize {
   font-family: var(--font-serif);
+  font-size: var(--text-xs);
 }
 
 .wfrp4e.creature-sheet .creature-skills {
