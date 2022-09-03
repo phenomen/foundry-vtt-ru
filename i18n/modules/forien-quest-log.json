@@ -10,10 +10,6 @@
         }
       }
     },
-    "Buttons": {
-      "AddNewQuest": "Добавить задание",
-      "AddNewTask": "Добавить задачу"
-    },
     "DeleteDialog": {
       "BodyObjective": "Задача и все её данные будут навсегда удалены.",
       "BodyQuest": "Задание и все его данные будут навсегда удалены.",
@@ -22,6 +18,9 @@
       "Delete": "Удаление",
       "HeaderDel": "Вы уверены, что хотите удалить: <p>'{name}'</p>",
       "TitleDel": "Удаление {title}"
+    },
+    "HeaderLabels": {
+      "Show": "Показать игрокам"
     },
     "Migration": {
       "ChatMessage": {
@@ -54,18 +53,15 @@
     "Quest": "Задание",
     "QuestIs": "Задание {statusLabel}",
     "QuestLog": {
+      "Buttons": {
+        "AddQuest": "Добавить задание"
+      },
       "ContextMenu": {
         "CopyEntityLink": "Копирование ссылки на документ",
         "CopyQuestID": "Копирование ID задания",
         "PrimaryQuest": "Переключение главного задания"
       },
       "SubTitle": "Подзадание у {0}",
-      "Table": {
-        "Actions": "Действия",
-        "QuestGiver": "Источник задания",
-        "QuestTitle": "Название",
-        "Tasks": "Задачи"
-      },
       "Tabs": {
         "Available": "Доступные",
         "Completed": "Завершённые",
@@ -73,19 +69,27 @@
         "InActive": "Неактивные",
         "InProgress": "Текущие"
       },
-      "Title": "Журнал заданий"
+      "Title": "Журнал заданий",
+      "Tooltips": {
+        "Objectives": "Задачи"
+      }
     },
     "QuestLogButton": "Журнал заданий",
     "QuestPreview": {
+      "Buttons": {
+        "AddObjective": "Добавить задачу",
+        "RewardCustom": "Особая",
+        "RewardHide": "Скрыть",
+        "RewardLock": "Заблокировать",
+        "RewardShow": "Показать",
+        "RewardUnlock": "Разблокироввать"
+      },
       "CustomSource": "Свой источник",
       "Description": "Описание:",
       "DragDropActor": "Перенесите актёра, предмет или запись журнала или ЛКМ для выбора своего источника.",
       "DragDropActorPlayer": "Перенесите актёра, предмет или запись журнала.",
       "DragDropRewards": "Перенесите предмет, чтобы сделать его наградой.",
       "GMNotes": "Заметки GM:",
-      "HeaderButtons": {
-        "Show": "Показать игрокам"
-      },
       "InvalidQuestId": "Не удаётся открыть подробности из-за несуществующего ID задания.",
       "Management": {
         "AddSubquest": "Добавить подзадание",
@@ -114,11 +118,29 @@
       },
       "Title": "Подробности задания - {name}",
       "Tooltips": {
+        "AddCustom": "Добавить особую",
+        "ChangeSplashPos": "Изменить расположение обложки",
+        "DeleteQuestGiver": "Удалить выдающего задание",
+        "DeleteSplash": "Удалить обложку",
+        "HideAll": "Скрыть все",
+        "LockAll": "Заблокировать все",
         "PrimaryQuestSet": "Сделать основным заданием",
-        "PrimaryQuestUnset": "Сделать неосновным заданием"
+        "PrimaryQuestUnset": "Сделать неосновным заданием",
+        "RewardHidden": "Награда скрыта. Нажмите, чтобы показать.",
+        "RewardLocked": "Награда заблокирована. Нажмите для разблокирования.",
+        "RewardLockedPlayer": "Награда заблокирована.",
+        "RewardUnlocked": "Награда разблокирована. Нажмите для блокировки.",
+        "RewardUnlockedPlayer": "Награда разблокирована.",
+        "RewardVisible": "Награда видима. Нажмите, чтобы скрыть.",
+        "ShowAll": "Показывать все",
+        "TaskHidden": "Задача скрыта. Нажмите, чтобы показать.",
+        "TaskVisible": "Задача видима. Нажмите, чтобы скрыть.",
+        "ToggleImage": "Переключение портрета/токена",
+        "UnlockAll": "Разблокировать все",
+        "ViewSplashArt": "Просмотреть обложку"
       }
     },
-    "Quests": "{0} задания",
+    "Quests": "{0} заданий",
     "QuestTracker": {
       "NoPrimary": "Нет основного задания.",
       "Title": "Трекер заданий",
@@ -206,33 +228,16 @@
       }
     },
     "Tooltips": {
-      "AddAbstract": "Добавить абстракцию",
-      "ChangeSplashPos": "Изменить расположение обложки",
       "Delete": "Удаление",
-      "DeleteQuestGiver": "Удалить выдающего задание",
-      "DeleteSplash": "Удалить обложку",
       "Edit": "Изменение",
       "HiddenQuestNoPlayers": "Это задание скрыто от всех игроков.",
-      "Hide": "Сделать неактивным",
-      "HideAll": "Скрыть все",
-      "LockAll": "Заблокировать все",
       "PrimaryQuest": "Основное задание",
-      "RewardHidden": "Награда скрыта. Нажмите, чтобы показать.",
-      "RewardLocked": "Награда заблокирована. Нажмите для разблокирования.",
-      "RewardLockedPlayer": "Награда заблокирована.",
-      "RewardUnlocked": "Награда разблокирована. Нажмите для блокировки.",
-      "RewardUnlockedPlayer": "Награда разблокирована.",
-      "RewardVisible": "Награда видима. Нажмите, чтобы скрыть.",
       "SetActive": "Сделать текущим",
       "SetAvailable": "Сделать доступным",
       "SetCompleted": "Сделать завершённым",
       "SetFailed": "Сделать проваленным",
-      "ShowAll": "Показывать все",
-      "Status": "Состояние: {statusI18n}",
-      "TaskHidden": "Задача скрыта. Нажмите, чтобы показать.",
-      "TaskVisible": "Задача видима. Нажмите, чтобы скрыть.",
-      "ToggleImage": "Переключение портрета/токена",
-      "UnlockAll": "Разблокировать все"
+      "SetInactive": "Сделать неактивным",
+      "Status": "Состояние: {statusI18n}"
     }
   }
 }

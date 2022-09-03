@@ -201,7 +201,7 @@
       },
       "alwaysShowAdditionalCategories": {
         "hint": "Если выключено, то особые категории будут всегда отображаться, даже если не выбран токен.",
-        "name": "Всегда показывать особые категории"
+        "name": "Всегда отображать особые категории"
       },
       "alwaysShowHud": {
         "hint": "Если за участником закреплён персонаж, то HUD будет всегда отображаться для этого персонажа, даже если не выбран токен.",
@@ -228,9 +228,9 @@
         "name": "Включить HUD для текущего участника"
       },
       "itemMacroReplace": {
-        "showBoth": "Показывать оригинальный предмет и макрос",
-        "showItemMacro": "Показывать макрос предмета",
-        "showOriginal": "Показывать оригинальный предмет"
+        "showBoth": "Отображать оригинальный предмет и макрос",
+        "showItemMacro": "Отображать макрос предмета",
+        "showOriginal": "Отображать оригинальный предмет"
       },
       "onTokenHover": {
         "hint": "Если включено, HUD будет отображаться при наведении на контролируемый токен.",
@@ -242,7 +242,7 @@
       },
       "renderItemOnRightClick": {
         "hint": "Если включено, правый клик по предмету в HUD будет открывать лист этого предмета.",
-        "name": "Показывать лист предмета при правом клике"
+        "name": "Отображать бланк предмета при правом клике"
       },
       "rollHandler": {
         "hint": "Выберите какой модуль будет обрабатывать действия HUD.",
@@ -257,12 +257,12 @@
         "name": "Фоновый цвет HUD"
       },
       "showHudTitle": {
-        "name": "Показывать заголовок",
+        "name": "Отображать заголовок",
         "hint": "Показывать заголовок над HUD (обычно имя токена)."
       },
       "showIcons": {
         "hint": "Если включено, то для действий будут отображаться связанные с ними иконки.",
-        "name": "Показывать иконки действий"
+        "name": "Отображать иконки действий"
       },
       "useActionList": {
         "name": "Группировать по типу действия",
@@ -284,7 +284,7 @@
           "name": "Окрашивать кнопки сил"
         },
         "hideUnequippedInventory": {
-          "hint": "If enabled, only inventory items that are set as equipped will be shown",
+          "hint": "Если включено, будут отображаться только надетые предметы инвентаря.",
           "name": "Скрыть ненадетые вещи"
         },
         "hideQuantityZero": {
@@ -315,23 +315,23 @@
         },
         "showAllNonpreparableSpells": {
           "hint": "Если выключено, то заклинания, вроде фокусов, врождённых и неограниченных заклинаний должны быть 'поднготовлены' для отображения в HUD.",
-          "name": "Показывать все неподготовленные заклинания"
+          "name": "Отображать все неподготовленные заклинания"
         },
         "showAllNpcItems": {
           "hint": "Если включено, то будут отображаться все предметы NPC (включая неэкипированные).",
-          "name": "Показывать все предметы NPC"
+          "name": "Отображать все предметы NPC"
         },
         "showConditionsCategory": {
           "hint": "Если включено, в HUD будут отображаться состояния, доступные в стандартном интерфейса токена.",
-          "name": "Показывать категорию состояний"
+          "name": "Отображать категорию состояний"
         },
         "showEmptyItems": {
           "hint": "Если включено, предметы (включая экипировку и заклинания) будут отображаться в HUD даже если у них не осталось зарядов.",
-          "name": "Показывать пустые предметы"
+          "name": "Отображать пустые предметы и заклинания"
         },
         "showItemsWithoutAction": {
           "hint": "If enabled, Items that have no activation information will be added to the Inventory list",
-          "name": "Show Items without Activation costs"
+          "name": "Отображать предметы без цены активации"
         },
         "showSpellInfo": {
           "hint": "Если включено, то компоненты, концентрация и ритуалы будут отображаться рядом с именем заклинания.",
@@ -421,7 +421,7 @@
         },
         "showAllNpcItems": {
           "hint": "If enabled, all items are shown for NPCs, not just equipped items.",
-          "name": "Show all NPC items"
+          "name": "Отображать все предметы NPC"
         },
         "showConditionsCategory": {
           "hint": "If enabled, the HUD will present a category showing the available token conditions and status effects normally available in the regular Token HUD.",
@@ -431,13 +431,17 @@
           "hint": "Если включено, предметы (включая экипировку и заклинания) будут отображаться в HUD даже если у них не осталось зарядов.",
           "name": "Показывать пустые предметы и способности"
         },
+        "showItemsWithoutAction": {
+          "hint": "If enabled, Items that have no activation information will be added to the Inventory list",
+          "name": "Отображать предметы без цены активации"
+        },
         "showPowerInfo": {
           "hint": "If enabled, power component information, concentration, and ritual status will be noted next to the power name.",
           "name": "Display power information"
         },
         "splitAbilities": {
           "hint": "If enabled, abilities will be separated into checks and saves.",
-          "name": "Show separate ability check and save categories"
+          "name": "Разделять проверки характеристик и испытания"
         }
       },
       "swade": {
