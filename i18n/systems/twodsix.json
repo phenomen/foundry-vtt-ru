@@ -11,6 +11,10 @@
   "Routine": "Рутина",
   "Simple": "Элементарная",
   "TWODSIX": {
+    "ActiveEffects": {
+      "DeleteEffect": "Убрать активный эффект",
+      "ConfirmDelete": "Вы уверены, что хотите удалить эффект?"
+    },
     "Damage": {
       "DealDamage": "Нанести урон",
       "Damage": "Урон",
@@ -26,7 +30,7 @@
       "CharacterIsDead": "Персонаж мёртв",
       "DealDamageTo": "Нанести урон _ACTOR_NAME_",
       "DamageFormula": "Формула урона",
-      "NoRegularDamage": "No Regular Damage"
+      "NoRegularDamage": "Без обычного урона"
     },
     "Dialogs": {
       "ROFPickerTitle": "Выберите режим стрельбы",
@@ -96,6 +100,8 @@
         "Range": "Дист.",
         "Refill": "Восполнение",
         "Reload": "Перезарядка",
+        "SPELLS": "ЗАКЛИНАНИЯ",
+        "Spells": "Заклинания",
         "ShortDescr": "Краткое описание",
         "Subtype": "Тип",
         "TRAITS": "ЧЕРТЫ",
@@ -194,7 +200,7 @@
       "Armor": {
         "Armor": "Броня",
         "SecondaryArmor": "Вторичная броня",
-        "RadProt": "Рад. Защ.",
+        "RadProt": "Защита от радиации",
         "IsPowered": "Силовая броня"
       },
       "Augmentation": {
@@ -311,7 +317,9 @@
         "STA": "ВНС",
         "ALT1": "АЛТ1",
         "ALT2": "АЛТ2",
-        "TrainingNotes": "Учебные заметки"
+        "TrainingNotes": "Учебные заметки",
+        "NumberOfSkills": "Количество навыков",
+        "SkillRanks": "Ранг навыка"
       },
       "Traits": {
         "Prerequisite": "Критерии",
@@ -354,6 +362,12 @@
         "Features": "Особенности / черты",
         "Unarmed": "Без оружия",
         "UnarmedDescription": "Безоружная атака"
+      },
+      "Spells": {
+        "CircleSchool": "Школа/Круг Заклинания",
+        "SpellName": "Название заклинания",
+        "Level": "Уровень",
+        "sorcerySkill": "Волшебство"
       }
     },
     "Ship": {
@@ -452,49 +466,49 @@
       "CrPerMonth": "Кр/месяц"
     },
     "Vehicle": {
-      "SystemStatus": "System Status",
-      "Cargo": "Cargo",
-      "CargoNotes": "Notes",
-      "CargoCapacity": "Capacity",
-      "Speed": "Speed",
-      "Range": "Range",
-      "Agility": "Agility",
+      "SystemStatus": "Статус системы",
+      "Cargo": "Груз",
+      "CargoNotes": "Заметки",
+      "CargoCapacity": "Вместимость",
+      "Speed": "Скорость",
+      "Range": "Дальность",
+      "Agility": "Ловкость",
       "systems": {
-        "cargo": "Cargo",
-        "cockpit": "Cockpit",
-        "computers": "Computers",
-        "electronics": "Electronics",
-        "limbs": "Limbs / Appendages",
-        "propulsion": "Propulsion / Locomotion",
-        "powerPlant": "Power Plant",
-        "sensors": "Sensors",
-        "weapons": "Weapons"
+        "cargo": "Груз",
+        "cockpit": "Копот",
+        "computers": "Компьютеры",
+        "electronics": "Электроника",
+        "limbs": "Манипуляторы",
+        "propulsion": "Движение",
+        "powerPlant": "Силовая установка",
+        "sensors": "Сенсоры",
+        "weapons": "Орудия"
       },
       "crew": {
-        "operators": "Operators",
-        "passengers": "Passengers"
+        "operators": "Операторы",
+        "passengers": "Пассажиры"
       },
-      "Movement": "Movement",
-      "Crew": "Crew",
-      "Weight": "Weight",
-      "Armor": "Armor",
-      "Hull": "Hull",
-      "Structure": "Structure",
-      "Protection": "Protection",
-      "skillToOperate": "Skill to operate",
-      "Weapons": "Weapons",
-      "OpenVehicle": "Open Vehicle",
-      "techLevel": "TL",
-      "Cost": "Cost",
-      "Traits": "Traits",
-      "ArmorHull": "Armor and Hull",
-      "Regular": "Regular",
-      "Critical": "Critical",
-      "Thresholds": "Thresholds",
+      "Movement": "Скорость",
+      "Crew": "Команда",
+      "Weight": "Вес",
+      "Armor": "Броня",
+      "Hull": "Корпус",
+      "Structure": "Структура",
+      "Protection": "Защита",
+      "skillToOperate": "Навык для управления",
+      "Weapons": "Орудия",
+      "OpenVehicle": "Открытый транспорт",
+      "techLevel": "ТУ",
+      "Cost": "Стоимость",
+      "Traits": "Черты",
+      "ArmorHull": "Броня и Корпус",
+      "Regular": "Обычный",
+      "Critical": "Критический",
+      "Thresholds": "Пороги",
       "ProtectionType": {
-        "ArmorOnly": "Armor Only",
-        "Threshold": "Threshold",
-        "ArmorHullStruc": "Armor, Hull and Structure"
+        "ArmorOnly": "Только Броня",
+        "Threshold": "Порог",
+        "ArmorHullStruc": "Броня, Корпус и Структура"
       }
     },
     "Migration": {
@@ -524,7 +538,7 @@
       "AttackDM": "МБ атаки",
       "BonusDamage": "Бонусный урон",
       "Timeframe": "Время",
-      "RollInitiative": "Roll Initiative"
+      "RollInitiative": "Бросок инициативы"
     },
     "Settings": {
       "absoluteBonusValueForEachTimeIncrement": {
@@ -736,9 +750,9 @@
         "hint": "Factor to multiply the weight value of a armor if it is currently equipped.",
         "name": "Factor to multiply the weight value of a equipped armor."
       },
-      "useTinyMCEditor": {
+      "useProseMirror": {
         "hint": "Use the embedded HTML editor for larger input blocks.",
-        "name": "Use TinyMCE editor for larger input blocks."
+        "name": "Use ProseMirror editor for larger input blocks."
       },
       "showIcons": {
         "hint": "Использовать иконки вместо тексты для информации в биографии. Иконки всегда будут отображаться для здоровья и стойкости.",
@@ -798,11 +812,11 @@
       },
       "showStatusIcons": {
         "hint": "Overlay condition icons on side of actor images on sheets.",
-        "name": "Show condition icons on traveller sheets"
+        "name": "Показать иконки состояний в листе путешественника "
       },
       "showHullAndArmor": {
         "hint": "option to choose information in protection area of vehicle sheets.  Options are armor only (a plain text box), thresholds (roll values for regular and critical hits) and armor, hull, structre (table of three damage fields).",
-        "name": "Protection values on vehicle sheets"
+        "name": "Значение защиты в листе транспорта"
       },
       "addEffectToManualDamage": {
         "hint": "This option addts the effect to a manual damage roll from the most recent chat message.",
@@ -810,11 +824,27 @@
       },
       "showRangeSpeedNoUnits": {
         "hint": "Omit the range and speed units (e.g. km/hr) on vehicle sheet.",
-        "name": "Don't show range and speed units"
+        "name": "Не показывать скорость и дальность"
       },
       "showInitiativeButton": {
-        "hint": "Show an initiative roll button on actor sheet on skills tab.",
-        "name": "Show Initiative Roll Button"
+        "hint": "Показать кнопку броска инициативы в листе персонажа в разделе навыков",
+        "name": "Показать кнопку броска инициативы"
+      },
+      "showSkillCountsRanks": {
+        "hint": "Show a count of the number of trained skills and the sum of the levels (rank) at the bottom of the skills tab.",
+        "name": "Show Skills Count and Ranks on Traveller Sheet"
+      },
+      "showComponentSummaryIcons": {
+        "hint": "Show summary icons for components below ship image.",
+        "name": "Show Component Summary Icons"
+      },
+      "showSpells": {
+        "hint": "Показать лист заклинаний в листе персонажа",
+        "name": "Show Spells"
+      },
+      "sorcerySkill": {
+        "hint": "The name of the skill used for spellcasting / sorcery.",
+        "name": "Название заклинания"
       }
     },
     "CloseAndCreateNew": "Закрыть и создать",
@@ -833,6 +863,7 @@
       "skill": "навык",
       "consumable": "расходник",
       "trait": "черта",
+      "spell": "заклинание",
       "component": "компонент"
     },
     "speeds": {
@@ -865,8 +896,8 @@
       "MaxStatVal": "Значение превышает максимальное для характеристики",
       "StatValBelowZero": "Значение не может быть ниже нуля",
       "DecreaseEnduranceFirst": "Выносливость/Стойкость должна быть понижена перед другими характеристиками",
-      "CantAutoDamage": "Automatic damage of ship or vehicle is not supported",
-      "CantDropOnToken": "Dropping items on ship or vehicle tokens is not supported",
+      "CantAutoDamage": "Автоматический урон по кораблю или транспорту не поддерживается",
+      "CantDropOnToken": "Перенос предметов на токен корабля или транспорта не поддерживается ",
       "CantDragOntoActor": "Этот предмет не может быть добавлен этому актёру",
       "PDFFoundryNotInstalled": "Для ссылок на источники нужно установить PDFoundry.",
       "NoSpecfiedLink": "Документ и страница не указаны для этой ссылки.",
@@ -874,8 +905,8 @@
       "LackPermissionToDamage": "У вас недостаточно прав для целевого актёра.",
       "MultipleActorsFound": "Обнаружено несколько актёров. Не удалось нанести урон.",
       "EncumbranceFormulaInvalid": "Формула нагрузки некорректная. Значение установлено на ноль.",
-      "ActorHasInitiativeAlready": "Traveller already has initiative.",
-      "NoActiveToken": "Actor does not have an active token in scene."
+      "ActorHasInitiativeAlready": "Путешественник уже имеет инициативу",
+      "NoActiveToken": "Актер не имеет активного токена на сцене"
     }
   },
   "VeryDifficult": "Очень сложная"

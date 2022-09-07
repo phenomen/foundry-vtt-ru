@@ -1,12 +1,28 @@
 {
   "ForienQuestLog": {
-    "Api": {
-      "hooks": {
-        "createOpenQuestMacro": {
-          "error": {
-            "noQuest": "API Error: Can't create macro with invalid Quest ID."
-          },
-          "name": "Открыть ”{name}”"
+    "API": {
+      "Hooks": {
+        "Labels": {
+          "OpenMacro": "Открыть ”{name}”"
+        },
+        "Notifications": {
+          "NoQuest": "API Error: Can't create macro with invalid Quest ID."
+        }
+      },
+      "QuestDB": {
+        "Labels": {
+          "NewQuest": "Новое задание"
+        }
+      },
+      "Socket": {
+        "Notifications": {
+          "RewardDrop": "FQL (награда): {userName} передал '{itemName}' к {actorName}."
+        }
+      },
+      "Utils": {
+        "Notifications": {
+          "NoDocument": "Не удаётся загрузить элемент для UUID: '{uuid}'.",
+          "NoPermission": "У вас нет прав доступа к бланку этого документа."
         }
       }
     },
@@ -19,8 +35,11 @@
       "HeaderDel": "Вы уверены, что хотите удалить: <p>'{name}'</p>",
       "TitleDel": "Удаление {title}"
     },
-    "HeaderLabels": {
-      "Show": "Показать игрокам"
+    "Labels": {
+      "AppHeader": {
+        "ShowPlayers": "Показать игрокам"
+      },
+      "Quest": "Задание"
     },
     "Migration": {
       "ChatMessage": {
@@ -30,28 +49,24 @@
         "QuestGiver": "Выдающий задание",
         "QuestRewards": "Награды задания"
       },
-      "Complete": "Forien's Quest Log - Перенос данных завершён.",
-      "CouldNotMigrate": "Forien's Quest Log - Не удалось перенести задание: '{name}'",
-      "Schema": "Forien's Quest Log - Обновление данных до версии '{version}'",
-      "Start": "Forien's Quest Log - Перенос данных, подождите."
+      "Notifications": {
+        "Complete": "Forien's Quest Log - Перенос данных завершён.",
+        "CouldNotMigrate": "Forien's Quest Log - Не удалось перенести задание: '{name}'.",
+        "Schema": "Forien's Quest Log - Обновление данных до версии '{version}'.",
+        "Start": "Forien's Quest Log - Перенос данных, подождите."
+      }
     },
-    "NewQuest": "Новое задание",
-    "NoActiveQuests": "Нет активных заданий",
-    "NoDocument": "Не удаётся загрузить элемент для UUID: {uuid}",
-    "NoPermission": "У вас нет прав доступа к листу этого документа.",
     "Notifications": {
       "CannotOpen": "Не удаётся открыть подробности задания. Это задания может быть не доступно вам или больше не существует.",
       "FinishQuestAdded": "Завершите редактирование и закройте текущее задание перед добавлением нового.",
       "LinkCopied": "Ссылка на документ этого задания была скопирована в буфер.",
-      "QuestAdded": "Добавлено новое задание '{name}' со статусом {status}.",
+      "QuestAdded": "Добавлено новое задание '{name}' со статусом '{status}'.",
       "QuestIDCopied": "ID этого задания был скопирована в буфер.",
-      "QuestMoved": "'{name}' перемещено в новую папку со статусом: {target}",
+      "QuestMoved": "'{name}' перемещено в новую папку со статусом: '{target}'.",
       "QuestPrimary": "'{name}' теперь основное задание.",
-      "QuestTrackerNoActive": "Трекер включён, но нет активных заданий.",
-      "UserCantOpen": "Участник {user} не имеет разрешения для просмотра этого задания."
+      "QuestTrackerNoActive": "Трекер заданий включён, но нет активных заданий.",
+      "UserCantOpen": "Участник '{user}' не имеет разрешения на просмотр этого задания."
     },
-    "Quest": "Задание",
-    "QuestIs": "Задание {statusLabel}",
     "QuestLog": {
       "Buttons": {
         "AddQuest": "Добавить задание"
@@ -61,36 +76,35 @@
         "CopyQuestID": "Копирование ID задания",
         "PrimaryQuest": "Переключение главного задания"
       },
-      "SubTitle": "Подзадание у {0}",
-      "Tabs": {
-        "Available": "Доступные",
-        "Completed": "Завершённые",
-        "Failed": "Проваленные",
-        "InActive": "Неактивные",
-        "InProgress": "Текущие"
+      "Labels": {
+        "TableHeader": "{0} заданий",
+        "SubTitle": "Подзадание у {0}"
       },
       "Title": "Журнал заданий",
       "Tooltips": {
         "Objectives": "Задачи"
       }
     },
-    "QuestLogButton": "Журнал заданий",
     "QuestPreview": {
       "Buttons": {
-        "AddObjective": "Добавить задачу",
         "RewardCustom": "Особая",
         "RewardHide": "Скрыть",
         "RewardLock": "Заблокировать",
         "RewardShow": "Показать",
         "RewardUnlock": "Разблокироввать"
       },
-      "CustomSource": "Свой источник",
-      "Description": "Описание:",
-      "DragDropActor": "Перенесите актёра, предмет или запись журнала или ЛКМ для выбора своего источника.",
-      "DragDropActorPlayer": "Перенесите актёра, предмет или запись журнала.",
-      "DragDropRewards": "Перенесите предмет, чтобы сделать его наградой.",
-      "GMNotes": "Заметки GM:",
-      "InvalidQuestId": "Не удаётся открыть подробности из-за несуществующего ID задания.",
+      "Labels": {
+        "CustomSource": "Особый источник",
+        "Description": "Описание:",
+        "DragDropActor": "Перенесите актёра, предмет или запись журнала или ЛКМ для выбора своего источника.",
+        "DragDropActorPlayer": "Перенесите актёра, предмет или запись журнала.",
+        "DragDropRewards": "Перенесите предмет, чтобы сделать его наградой.",
+        "GMNotes": "Заметки GM:",
+        "Objective": "Задача",
+        "Objectives": "Задачи:",
+        "Reward": "Награда",
+        "Rewards": "Награда:"
+      },
       "Management": {
         "AddSubquest": "Добавить подзадание",
         "ConfigurePermissions": "Настройка прав",
@@ -101,16 +115,10 @@
         "SplashQuestIcon": "Выбор иконки задания"
       },
       "Notifications": {
-        "BadUUID": "Не удаётся получить документ для UUID: {uuid}",
+        "BadUUID": "Не удаётся получить документ для UUID: '{uuid}'.",
         "WrongDocType": "Forien's Quest Log принимает только актёров, предметы и записи журнала в качестве выдающего задание.",
         "WrongItemType": "Forien's Quest Log принимает только предметы из мира и библиотеки в качестве наград."
       },
-      "Objective": "Задача",
-      "Objectives": "Задачи:",
-      "Reward": "Награда",
-      "RewardDrop": "FQL (награда): {userName} передал '{itemName}' к {actorName}",
-      "Rewards": "Награда:",
-      "SubTitle": "Подзадание у {0}",
       "Tabs": {
         "Details": "Подробности",
         "GMNotes": "Примечания GM",
@@ -119,6 +127,7 @@
       "Title": "Подробности задания - {name}",
       "Tooltips": {
         "AddCustom": "Добавить особую",
+        "AddObjective": "Добавить задачу",
         "ChangeSplashPos": "Изменить расположение обложки",
         "DeleteQuestGiver": "Удалить выдающего задание",
         "DeleteSplash": "Удалить обложку",
@@ -140,7 +149,6 @@
         "ViewSplashArt": "Просмотреть обложку"
       }
     },
-    "Quests": "{0} заданий",
     "QuestTracker": {
       "NoPrimary": "Нет основного задания.",
       "Title": "Трекер заданий",
@@ -152,17 +160,26 @@
       }
     },
     "QuestTypes": {
-      "Active": "В процессе",
-      "Available": "Доступные",
-      "Completed": "Завершённые",
-      "Failed": "Проваленные",
-      "InActive": "Неактивные",
       "Labels": {
+        "Active": "Текущие",
         "active": "текущее",
+        "Available": "Доступные",
         "available": "доступно",
+        "Completed": "Завершённые",
         "completed": "завершено",
+        "Failed": "Проваленные",
         "failed": "провалено",
-        "inactive": "неактивно"
+        "InActive": "Неактивные",
+        "inactive": "неактивно",
+        "Status": "Задание {statusLabel}"
+      },
+      "Tooltips": {
+        "SetActive": "Сделать текущим",
+        "SetAvailable": "Сделать доступным",
+        "SetCompleted": "Сделать завершённым",
+        "SetFailed": "Сделать проваленным",
+        "SetInactive": "Сделать неактивным",
+        "Status": "Статус: {statusI18n}"
       }
     },
     "Settings": {
@@ -231,13 +248,7 @@
       "Delete": "Удаление",
       "Edit": "Изменение",
       "HiddenQuestNoPlayers": "Это задание скрыто от всех игроков.",
-      "PrimaryQuest": "Основное задание",
-      "SetActive": "Сделать текущим",
-      "SetAvailable": "Сделать доступным",
-      "SetCompleted": "Сделать завершённым",
-      "SetFailed": "Сделать проваленным",
-      "SetInactive": "Сделать неактивным",
-      "Status": "Состояние: {statusI18n}"
+      "PrimaryQuest": "Основное задание"
     }
   }
 }
