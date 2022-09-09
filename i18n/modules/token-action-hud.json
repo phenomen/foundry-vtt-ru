@@ -7,8 +7,8 @@
     "active": "Активно",
     "advanced": "Дополнительно",
     "allowlist": "Белый список",
-    "ancestryFeatures": "Ancestry Features",
-    "ancestryFeats": "Ancestry Feats",
+    "ancestryFeatures": "Способности происхождения",
+    "ancestryFeats": "Черты происхождения",
     "armour": "Броня",
     "atk": "Атака",
     "attack": "Атаки",
@@ -28,7 +28,7 @@
     "blocklist": "Чёрный список",
     "blocklistLabel": "чёрный список: скрыть / белый список: показать",
     "bonusActions": "Бонусные действия",
-    "bonusFeats": "Bonus Feats",
+    "bonusFeats": "Дополнительные черты",
     "bonuses": "Бонусы",
     "book": "Книга",
     "books": "Книги",
@@ -42,14 +42,14 @@
     "charts": "Графики",
     "checks": "Проверки",
     "classFeatures": "Классовые особенности",
-    "classFeats": "Class Feats",
+    "classFeats": "Классовые черты",
     "clearButton": "Очистить",
     "cmb": "МБМ",
     "commonSkills": "Общие навыки",
     "concentration": "Концентрация",
     "conditions": "Состояния",
     "consumables": "Расходники",
-    "coreBonus": "Core Bonus",
+    "coreBonus": "Базовый бонус",
     "crewActions": "Действия экипажа",
     "critical": "Критический",
     "d35e": {
@@ -68,6 +68,7 @@
     "edges": "Черты",
     "edgesAndHindrances": "Черты/Изъяны",
     "effects": "Эффекты",
+    "endTurn": "Конец хода",
     "engineering": "Инженерия",
     "equipment": "Снаряжение",
     "experimental": "Экспериментальное",
@@ -84,7 +85,7 @@
     "get": "Получить",
     "gm": "GM",
     "general": "Общее",
-    "generalFeats": "General Feats",
+    "generalFeats": "Общие черты",
     "grit": "Крутость",
     "handlerNotFound": "не найден, возврат к обычному броску.",
     "hase": "HASE",
@@ -150,13 +151,13 @@
     "repairs": "Починки",
     "roll": "Бросок",
     "rollable": "Случайное",
-    "rollInitiative": "Проверка инициативы",
+    "rollInitiative": "Бросок инициативы",
     "rsa": "Дист. атаки заклинанием",
     "rwa": "Дист. атаки оружием",
     "saves": "Испытания",
     "shields": "Щиты",
     "shortRest": "Короткий отдых",
-    "skillFeats": "Skill Feats",
+    "skillFeats": "Черты навыков",
     "skills": "Навыки",
     "skilltriggers": "Триггеры навыков",
     "special": "Особое",
@@ -191,6 +192,7 @@
     "traits": "Черты",
     "treasure": "Сокровище",
     "treatWounds": "Лечить раны",
+    "turn": "Ход",
     "unarmed": "Безоружная атака",
     "stomp": "Stomp!",
     "unrollable": "Не случайное",
@@ -259,16 +261,16 @@
         "name": "Масштаб интерфейса"
       },
       "background": {
-        "hint": "Set the background color of the HUD.",
-        "name": "HUD Background Color"
+        "hint": "Установить цвет фона интерфейса",
+        "name": "Цвет фона интерфейса"
       },
       "buttonBackgroundColor": {
-        "hint": "Set the background color of the HUD buttons.",
-        "name": "Button Background Color"
+        "hint": "Установить цвет фона кнопок интерфейса",
+        "name": "Цвет фона кнопки"
       },
       "buttonBorderColor": {
-        "hint": "Set the border color of the HUD buttons.",
-        "name": "Button Border Color"
+        "hint": "Установить цвет рамки кнопок интерфейса",
+        "name": "Цвет рамки кнопки"
       },
       "showHudTitle": {
         "name": "Отображать заголовок",
@@ -306,8 +308,8 @@
           "name": "Скрывать пустой инвентарь"
         },
         "equipmentCategoryList": {
-          "hint": "Comma-separated list of inventory types to show.  The default hides things without actions.  The complete list is: 'weapon, equipment, consumable, tool, backpack, loot, alchemical, ammo, potion, poison, food, scroll, trinket'",
-          "name": "Visible Inventory Categories"
+          "hint": "Отображать разделенный список типов инвентаря. По умолчанию скрывает вещи без действий. Полный список: «оружие, снаряжение, расходные материалы, инструменты, рюкзак, добыча, алхимия, боеприпасы, зелья, яды, еда, свитки, безделушки».",
+          "name": "Видимые категории инвентаря"
         }
       },
       "dnd5e": {
@@ -344,7 +346,7 @@
           "name": "Отображать пустые предметы и заклинания"
         },
         "showItemsWithoutAction": {
-          "hint": "If enabled, Items that have no activation information will be added to the Inventory list",
+          "hint": "Если этот параметр включен, предметы, не имеющие информации об активации, будут добавлены в список инвентаря.",
           "name": "Отображать предметы без цены активации"
         },
         "showSpellInfo": {
@@ -431,7 +433,7 @@
         },
         "showAllNonpreparablePowers": {
           "hint": "Если выключено, то заклинания, вроде фокусов, врождённых и неограниченных заклинаний должны быть 'подготовлены' для отображения в HUD.",
-          "name": "Show all non-preparable powers"
+          "name": "Отображать все неподготовленные силы"
         },
         "showAllNpcItems": {
           "hint": "If enabled, all items are shown for NPCs, not just equipped items.",
@@ -454,7 +456,7 @@
           "name": "Display power information"
         },
         "splitAbilities": {
-          "hint": "If enabled, abilities will be separated into checks and saves.",
+          "hint": "Если включено, способности будут разделены на проверки и спасброски.",
           "name": "Разделять проверки характеристик и испытания"
         }
       },
@@ -585,11 +587,11 @@
       "combat": "Бой",
       "attacks": "Атаки",
       "protections": "Защита",
-      "capacities": "Capacities"
+      "capacities": "Способности"
     },
     "advancedCategoryOptions": {
-      "customWidth": "Custom Width (leave blank for default)",
-      "compactView": "Compact View",
+      "customWidth": "Пользовательская ширина (оставьте пустым по умолчанию)",
+      "compactView": "Компактный вид",
       "characterCount": "Characters per Word to Display in Compact View (0 for icons only)"
     }
   }
