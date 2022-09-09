@@ -1,0 +1,111 @@
+{
+    "rsr5e": {
+        "settings": {
+            "enableAbilityQuickRoll.name": "Быстрые броски характеристик",
+            "enableAbilityQuickRoll.hint": "When clicking on an ability check or saving throw, quick roll to chat instead of using the normal roll dialog. This functionality can be bypassed by holding Alt when clicking.",
+            "enableSkillQuickRoll.name": "Быстрые броски навыков",
+            "enableSkillQuickRoll.hint": "When clicking on a skill check, automatically roll to chat instead of using the normal chat output. This functionality can be bypassed by holding Alt when clicking.",
+            "enableItemQuickRoll.name": "Быстрые броски предметов",
+            "enableItemQuickRoll.hint": "When clicking on an item's image (weapons, spells, features, etc.), automatically roll to chat instead of using the normal chat output. This functionality can be bypassed by holding Alt when clicking.",
+            "enableAltQuickRoll.name": "Альтернативные броски предметов",
+            "enableAltQuickRoll.hint": "When Alt-clicking on an item's image, output a different quick roll which can be configured separately, replacing the ability to bypass quick rolling for items. This setting has no effect if item quick rolling is disabled.",
+            "enableD20Icons.name": "Show D20 Rolls for Quick Rolls",
+            "enableD20Icons.hint": "When outputting a quick roll, display an icon showing the natural die roll next to the total result.",
+            "enableDiceSounds.name": "Enable Dice Sounds for Quick Rolls",
+            "enableDiceSounds.hint": "When outputting a quick roll, play the default system dice-rolling sound.",
+            "alwaysRollMulti.name": "Always Roll Multiple Dice",
+            "alwaysRollMulti.hint": "When outputting a quick roll, always roll two dice (or three for Elven Accuracy) even when advantage/disadvantage is not applied.",
+            "showSkillAbilities.name": "Show Ability Names for Skills",
+            "showSkillAbilities.hint": "When outputting a skill quick roll, display the name of the ability used next to the skill name.",
+            "rollModifierMode.name": "Roll Modifier Keys",
+            "rollModifierMode.hint": "Determines which keys to use to modify quick rolls with advantage or disadvantage. This has no effect if quick rolls are disabled.",
+            "defaultRollArt.name": "Quick Roll Image Used",
+            "defaultRollArt.hint": "Determines which art is used by default for ability checks and saving throws for an actor. If this is not available, the other icon will be used instead.",
+            "placementRollTitle.name": "Show Roll Title Labels",
+            "placementRollTitle.hint": "Determines if and where a non-damage roll's title, such as \"Attack\", appears.",
+            "placementDamageTitle.name": "Show Damage Title Labels",
+            "placementDamageTitle.hint": "Determines if and where a damage roll's title, such as \"Damage\", appears.",
+            "placementDamageContext.name": "Show Damage Context Labels",
+            "placementDamageContext.hint": "Determines if and where a damage roll's context label appears.",
+            "placementDamageType.name": "Show Damage Type Labels",
+            "placementDamageType.hint": "Determines where the damage type label is placed, relative to a damage roll.",
+            "contextReplacesTitle.name": "Context Replaces Title Label",
+            "contextReplacesTitle.hint": "If a context label is in the same place as a damage roll's title label, such as \"Damage\" or \"Healing\", it will replace it.",
+            "contextReplacesDamage.name": "Context Replaces Damage Type",
+            "contextReplacesDamage.hint": "If a context label is in the same place as a damage type label, it will replace it.",
+            "hideSaveDC.name": "Hide Save DCs",
+            "hideSaveDC.hint": "Determines if the DC is hidden on save DC buttons for quick rolls.",
+            "hideSaveDC.replacement": "??"
+        },
+        "messages": {
+            "error": {
+                "libWrapperMinVersion": "This module requires libWrapper version {version} or newer.",
+                "labelNotInDictionary": "{type} '{label}' does not exist. Valid values can be found in {dictionary}.",
+                "objectNotExpectedType": "Data object did not match the expected type. Expected type '{type}'.",
+                "incorrectRollType": "Cannot roll an {function} roll for roll type '{type}'."
+            },
+            "warning": {
+                "emptyDamageField": "One or more damage fields on this item are empty! To roll damage, ensure all damage fields are filled."
+            }
+        },
+        "choices": {
+            "rollModifierMode": {
+                "shiftAdv": "Shift ➔ Преимущество, Ctrl/Cmd ➔ Помеха",
+                "ctrlAdv": "Ctrl/Cmd ➔ Преимущество, Shift ➔ Помеха"
+            },
+            "placement": {
+                "0": "Не показывать",
+                "1": "Сверху",
+                "2": "Снизу и внутри",
+                "3": "Снизу и снаружи"
+            },
+            "hideSaveDC": {
+                "0": "Никогда",
+                "1": "Только персонажи мастера",
+                "2": "Всегда"
+            }
+        },
+        "sheet": {
+            "tab": {
+                "title": "Быстрый бросок",
+                "section": {
+                    "defaultRoll": "Настройки броска по умолчанию",
+                    "alternateRoll": "Настройки альтернативного броска"
+                },
+                "subsection": {
+                    "main": "Основное",
+                    "damage": "Броски урона",
+                    "consume": "Расходуемые"
+                },
+                "options": {
+                    "description": "Описание",
+                    "flavor": "Худ. текст",
+                    "footer": "Свойства",
+                    "attack": "Атака",
+                    "template": "Разместить шаблон",
+                    "save": "СЛ испытания",
+                    "other": "Другое",
+                    "check": "Проверка",
+                    "quantity": "Количество",
+                    "uses": "Применения",
+                    "resource": "Ресурс",
+                    "recharge": "Перезарядка"
+                }
+            },
+            "placeholder": {
+                "context": "Контекст",
+                "label": "Название"
+            }
+        },
+        "chat": {
+            "attack": "Атака",
+            "check": "Проверка",
+            "save": "Испытание",
+            "saveDC": "Испытание со СЛ",
+            "damage": "Урон",
+            "healing": "Лечение",
+            "crit": "Крит",
+            "other": "Другое"
+        }
+    }
+}
