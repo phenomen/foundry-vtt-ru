@@ -108,7 +108,7 @@ export function InitWFRP4() {
 
           // Some of NPCs have localization keys in their characteristics, meanwhile others don't
           // This will patch NPCs that don't utilize translation keys
-          if (!abrev.includes("CHARAbbrev.")) {
+          if (abrev && !abrev.includes("CHARAbbrev.")) {
             char.label = "CHAR." + abrev;
             char.abrev = "CHARAbbrev." + abrev;
           }
