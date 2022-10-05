@@ -173,8 +173,8 @@
           "setDefaultActorManually": "В этом мире вы сделали Актера ({name}) Актером Отряда по умолчанию.",
           "setDefaultActorAutomatically": "В этом мире актер ({name}) автоматически стал Актером Отряда по умолчанию.",
           "displayDefaultActor": "Актер отряда по умолчанию - (имя: '{name}' / id: '{id}').",
-          "warnNoCommunityActor": "Warning, there is no Community Actor in this World, some features features won't work properly till you create one.",
-          "warnTooManyCommunityActors": "Warning, there is too many Community Actors ({size}) in this world. The system can't guess the good one. Please set it manually in the Community Sheets."
+          "warnNoCommunityActor": "В этом мире нет актера с типом Отряд и некоторые функции не будут работать, пока вы его не создадите.",
+          "warnTooManyCommunityActors": "В этом мире слишком много актеров с типом Отряд ({size}). Система не может установить, какой из них правильный. Пожалуйста, установите его в листе Отряда вручную."
         },
         "journey-log": {
           "year": "Год",
@@ -255,12 +255,12 @@
       },
       "journey-log": {
         "roll-dialog": {
-          "title": "Select a region type"
+          "title": "Выберите тип региона"
         },
         "chat": {
-          "region-type": "Region Type:",
-          "event-type": "Event Type:",
-          "target": "Target:"
+          "region-type": "Тип региона:",
+          "event-type": "Тип события:",
+          "target": "Цель:"
         },
         "title": "Дневник путешествия",
         "company": "Отряд",
@@ -268,20 +268,20 @@
         "journal": "Дневник",
         "journey-path": "Маршрут путешествия",
         "events": {
-          "title": "Roll Event",
-          "name": "Events"
+          "title": "Бросок на событие",
+          "name": "События"
         },
         "event": {
-          "name": "Event",
-          "result": "Result",
-          "target": "Target",
-          "region": "Region",
-          "description": "Some dice rolling on a journey path"
+          "name": "Событие",
+          "result": "Результат",
+          "target": "Цель",
+          "region": "Регион",
+          "description": "Кости катятся по маршруту путешествия"
         },
         "region-types": {
-          "border-land": "Border Land",
-          "wild-land": "Wild Land",
-          "dark-land": "Dark Land"
+          "border-land": "Приграничные земли",
+          "wild-land": "Дикие земли",
+          "dark-land": "Темные земли"
         },
         "attributes": {
           "name": "Имя",
@@ -292,36 +292,36 @@
         },
         "actions": {
           "import": {
-            "title": "Добавить данные из актера Отряда (ALT+клик). Внимание, данные предметов Отряда не будут учтены."
+            "title": "Добавить данные из актера Отряда (Alt+ЛКМ). Внимание, данные предметов Отряда не будут учтены."
           },
           "add-member": {
-            "title": "Добавить персонажа в Отряд (ALT+клик)."
+            "title": "Добавить персонажа в Отряд (Alt+ЛКМ)."
           },
           "delete-member": {
-            "title": "Убрать персонажа из Отряда (ALT+клик)."
+            "title": "Убрать персонажа из Отряда (Alt+ЛКМ)."
           },
           "add-mount": {
-            "title": "Добавить ездовое животное к Отряду (ALT+клик)."
+            "title": "Добавить ездовое животное к Отряду (Alt+ЛКМ)."
           },
           "delete-mount": {
-            "title": "Убрать ездовое животное из Отряда (ALT+клик)."
+            "title": "Убрать ездовое животное из Отряда (Alt+ЛКМ)."
           },
           "add-event": {
-            "title": "Добавить событие для Отряда (ALT+клик)."
+            "title": "Добавить событие для Отряда (Alt+ЛКМ)."
           },
           "add-event-with-roll": {
-            "title": "Add an event to the Company with automatic event rolls (ALT+Click)."
+            "title": "Добавить событие в историю отряда с автоматическим броском на событие (Alt+ЛКМ)"
           },
           "delete-event": {
-            "title": "Удалить событие (ALT+клик)."
+            "title": "Удалить событие (ALT+ЛКМ)."
           },
           "re-roll-event": {
-            "title": "Reroll the event and replace with the new result (ALT+Click)."
+            "title": "Повторить бросок на событие и заменить предыдущий результат (Alt+ЛКМ)"
           }
         },
         "tech": {
-          "title": "Background Image of the Journey Log representing a path.",
-          "alt": "Image representing a Journey Log."
+          "title": "Фоновое изображение Дневника путешествия, представляющее путь.",
+          "alt": "Изображение для Дневника путешествия"
         }
       },
       "fellowship": {
@@ -565,24 +565,24 @@
             "cancel-button": "Отмена",
             "warn": {
               "one-community_actor_expected": "Только один актёр с типом Сообщество может существовать в игре!",
-              "not-enough-hope-points-available": "Not enough Hope points available in the Pool (required: {required}, available: {available})",
+              "not-enough-hope-points-available": "У вас недостаточно Надежды в запасе (необходимо: {required}, в запасе: {available})",
               "too-many-hope-points-required": "Требуется слишком много пунктов надежды (всего: {target}, доступно: {max})"
             }
           },
           "short": {
             "label": "Короткий",
-            "noRestoredMessage": "After a short rest, {name} <b>does not recover</b> any Endurance ({name} is in <b>full health</b>).",
-            "restoredMessage": "After a short rest, {name} <b>recovers {amount} endurance</b> ({name} <b>has {endurance}</b> endurance).",
-            "woundedRestoredMessage": "After a short rest, {name} <b>does not recover</b> any Endurance ({name} is <b>wounded</b>).",
-            "description": "click to recover endurance after a short rest (one hour)",
+            "noRestoredMessage": "{name} <b>не восстановил</b> выносливость после короткого отдыха ({name} <b>полностью здоров</b>).",
+            "restoredMessage": "{name} <b>восстановил {amount} выносливости</b> после короткого отдыха (выносливость {name} <b>равна {endurance}</b>) ",
+            "woundedRestoredMessage": "{name} <b>не восстановил</b> выносливость после короткого отдыха ({name} <b>раненый</b>).",
+            "description": "нажмите, чтобы восстановить выносливость после короткого отдыха (один час)",
             "title": "Короткий отдых"
           },
           "prolonged": {
             "label": "Долгий",
-            "noRestoredMessage": "After a prolonged rest, {name} <b>does not recover</b> any Endurance ({name} is in <b>full health</b>).",
-            "restoredMessage": "After a prolonged rest, {name} <b>recovers all endurance</b> ({name} is in <b>full health</b>).",
-            "woundedRestoredMessage": "After a prolonged rest, {name} <b>recovers {amount} endurance</b>, they are wounded ({name} <b>has {endurance}</b> endurance).",
-            "description": "click to recover endurance after a prolonged rest (one night)",
+            "noRestoredMessage": "{name} <b>не восстановил</b> выносливость после долгого отдыха ({name} <b>полностью здоров</b>).",
+            "restoredMessage": "{name} <b>полностью восстановил выносливость</b> после долгого отдыха ({name} <b>полностью здоров</b>).",
+            "woundedRestoredMessage": "{name} <b>восстановил {amount} выносливости</b> после долгого отдыха, он раненый (выносливость {name} <b>равна {endurance}</b>).",
+            "description": "нажмите, чтобы восстановить выносливость после долгого отдыха (одна ночь)",
             "title": "Долгий отдых"
           }
         },
@@ -593,8 +593,8 @@
           "skill": "бросок"
         },
         "toggle": {
-          "favoured": "Press Alt+Click to toggle favoured state",
-          "add-remove-skill": "Press Alt+Click to add a skill level and Shift+Alt+Click to remove a level."
+          "favoured": "Нажмите Alt+ЛКМ, чтобы выбрать одаренный навык",
+          "add-remove-skill": "Нажмите Alt+ЛКМ, чтобы увеличить уровень навыка и Shift+Alt+ЛКМ, чтобы уменьшить уровень навыка."
         }
       },
       "skill": {
@@ -610,7 +610,7 @@
         "clickOnWeaponInstead": "Нажмите на оружие для его использования, а не на боевой навык.",
         "impossibleToFavouredAWeapon": "Невозможно выбрать одарённое оружие этому персонажу."
       },
-      "skill": "Press Click to roll the skill",
+      "skill": "Нажмите ЛКМ, чтобы совершить проверку навыка",
       "difficulty": "Сложность",
       "target": "Цель",
       "result": {
@@ -737,13 +737,13 @@
     },
     "combat": {
       "error": {
-        "unableToRerollPrepBattle": "it's impossible to reroll preparation battle roll for token {token} because it is not a character. It's a {type}",
-        "itemNotFound": "The item (name :{name}, type: {type}) is not found for this actor.",
-        "noActorAttachedToToken": "Impossible to add token '{name}' to combat because this Token has no Actor attached to it. You should have deleted the actor linked to the token."
+        "unableToRerollPrepBattle": "невозможно перебросить проверку подготовки к битве, потому что токен {token} имеет тип {type} и не является персонажем",
+        "itemNotFound": "У этого актера нет такого предмета (название: {name}, тип {type})",
+        "noActorAttachedToToken": "Невозможно добавить токен \"{name}\" к бою, потому что с этим токеном не связан актер. "
       },
       "warn": {
         "noActorFound": "Актер с именем {name} не найден",
-        "combatantNotInCombat": "The Token ({name}) with id ({id}) you want to make an engagement with is not part of the active Combat or is Out of Combat.",
+        "combatantNotInCombat": "Вы не можете вступить в бой с выбранным токеном ({name}) с id ({id}). Выбранный токен не участвует в бою или выбыл из боя.",
         "combatantDoesntExistInCombat": "Актёр с id ({id}) не является участником активного боя.",
         "noSkillNameAvailableWithExtendedWeaponSelection": "The character {actorName} has no combat proficiency ({name}) and neither a skill name of name ({name}).",
         "noSkillNameFoundWithExtendedWeaponSelection": "The character {actorName} has no combat proficiency ({name}) and has no skill with the expected name ({name}).",
@@ -756,7 +756,7 @@
         "noTokenSelectedForEngagement": "You need to select some tokens to be engaged with each other.",
         "numberOfTengwarNotCorrect": "Something weird happened. Number of Tengwar ({tengwar}) is 0 or less ! This should not happen.",
         "impossibleForMonoFaction": "Вы должны выбрать хотя бы по одному токену от каждой стороны конфликта.",
-        "impossibleForComplexEngagement": "You need to select one and only one token for one of the two factions, not several tokens for both."
+        "impossibleForComplexEngagement": "Вы должны выбрать один токен для одной из двух фракций, а не несколько для обеих."
       },
       "actions": {
         "applyDamage": "Нанести урон",
@@ -787,6 +787,12 @@
           "alt": "Копьё наносит пронзающий удар",
           "label": "Пронзающий удар",
           "description": "Добавить {amount} к кости испытания ({edge} для успеха)."
+        },
+        "gain-ground": {
+          "title": "Одержать верх",
+          "alt": "Выстрел, чтобы одержать верх над противниками",
+          "label": "Одержать верх",
+          "description": "Выстрел, чтобы одержать верх."
         },
         "shield-thrust": {
           "title": "Удар щитом",
@@ -831,11 +837,11 @@
           }
         },
         "closeCombat": {
-          "engagement": "Engagement",
+          "engagement": "Вступить в бой",
           "label": "Ближний бой"
         },
         "default": {
-          "label": "Unknown Combat Step"
+          "label": "Неизвестный шаг боя"
         }
       },
       "stance": {
@@ -852,7 +858,7 @@
           "label": "В тылу"
         },
         "skirmish": {
-          "label": "Skirmish"
+          "label": "Битва"
         },
         "default": {
           "label": "Неизвестная стойка"
@@ -863,7 +869,7 @@
           "impossibleToRollInjury": "Не удаётся совершить бросок по таблице для травмы."
         },
         "preparation-roll": {
-          "title": "Combat preparation roll result",
+          "title": "Результат проверки подготовки к бою",
           "message": " получает <span class='key-point'>{successDiceBonus} бонусных кубиков</span> в этом бою."
         },
         "result": {
@@ -893,17 +899,17 @@
         "injury": {
           "title": "Травма",
           "moderate": {
-            "type": "moderate",
+            "type": "средней тяжести",
             "title": "Незначительная травма",
             "message": "<span class='actor-name'>{targetName}</span> получает <b>незначительную травму</b> до конца боя."
           },
           "severe": {
-            "type": "severe",
+            "type": "серьезная",
             "title": "Серьёзная травма",
             "message": "<span class='actor-name'>{targetName}</span> получает <b>серьёзную травму</b> на {duration} дней."
           },
           "grievous": {
-            "type": "grievous",
+            "type": "ужасная",
             "title": "Мучительная травма",
             "message": "<span class='actor-name'>{targetName}</span> получает <b>мучительную травму</b>, теряет сознание и при смерти."
           }
@@ -963,22 +969,22 @@
       "hunter": "Охотник"
     },
     "evenTypes": {
-      "terrible-misfortune": "Terrible Misfortune",
-      "despair": "Despair",
-      "ill-choices": "Ill Choices",
-      "mishap": "Mishap",
-      "short-cut": "Short Cut",
-      "chance-meeting": "Chance Meeting",
-      "joyful-sight": "Joyful Sight"
+      "terrible-misfortune": "Ужасная неудача",
+      "despair": "Отчаяние",
+      "ill-choices": "Неверный выбор",
+      "mishap": "Неприятность",
+      "short-cut": "Короткий путь",
+      "chance-meeting": "Случайная встреча",
+      "joyful-sight": "Добрый знак"
     },
     "active-effect" : {
       "toggle" : {
-        "help" : "use ALT+Click to toggle state"
+        "help" : "используйте Alt+ЛКМ, чтобы переключить состояние"
       }
     }
   },
   "SETTINGS": {
-    "setSoloMode": "Strider Mode (Solo)",
+    "setSoloMode": "Режим Бродяги (Одиночная игра)",
     "setSoloModeDescription": "Some features are adapted to Strider Mode (eg. Skirmish stance only, community actor is simplified, ...)",
     "setAddSkirmish": "Add skirmish stance to your game",
     "setAddSkirmishDescription": "Add skirmish to the stances allowed even if you are not playing Strider Mode (Solo)",
@@ -992,13 +998,13 @@
     "setOverrideEyeAwarenessDescription": "По умолчанию максимальное значение равно 24, но вы можете изменить его, исходя из своих потребностей.",
     "setRawModeForActiveEffectName": "Change Active Effect selection mode",
     "setRawModeForActiveEffectDescription": "If you need to do some specific stuff and you know what you are doing, you can toggle the Active selection mode (Checked : List mode/Unchecked: Raw mode (text input box)).",
-    "setAlwaysShowShieldThrustName": "Always show Shield Thrust",
+    "setAlwaysShowShieldThrustName": "Всегда показывать Удар Щитом",
     "setAlwaysShowShieldThrustDescription": "Special Damage \"Shield Thrust\" : Propose this option even if the display rule (strength > attribute) is not reached.",
     "setWarnLoreMasterForCharacterStateName": "Active Warn Message",
     "setWarnLoreMasterForCharacterStateDescription": "Для активации предупреждения в чате для каждого персонажа с состоянием усталости или подавленности.",
     "setShowHideRangeBlockName": "Отображение диапазона дистанции",
     "setShowHideRangeBlockDescription": "Used to show the Distance Range Block in the Weapon sheet and Character/Adversary sheet.",
-    "disableAltClickName": "Disable ALT Click",
+    "disableAltClickName": "Отключить Alt+ЛКМ",
     "disableAltClickDescription": "Disable the ALT Click to protect some modification actions like upgrading skill or toggling health status."
   }
 }
