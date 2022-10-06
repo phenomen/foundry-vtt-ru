@@ -46,10 +46,10 @@
     "smarttarget.settings.borderThicc.hint": "Установить толщину границы в пикселях (по умолчанию: 2)",
 
     "smarttarget.settings.crossairSpread.name": "Свести стрелки прицеливания ближе друг к другу",
-    "smarttarget.settings.crossairSpread.hint": "Bring the targeting arrows closer together so that they are inside the token frame (works only with default targeting arrows)",
+    "smarttarget.settings.crossairSpread.hint": "Приближает стрелочки прицеливания так, чтобы они находились внутри рамки токена (работает только со стрелками прицеливания по умолчанию)",
 
     "smarttarget.settings.crossairColor.name": "Цвет стрелок прицеливания",
-    "smarttarget.settings.crossairColor.hint": "Код цвета стрелок прицеливания (по умолчанию: # ff9829).",
+    "smarttarget.settings.crossairColor.hint": "Шестнадцатеричный цвет для стрелочек прицеливания(по умолчанию: #ff9829). Оставьте пустым для использования основного цвета.",
 
     "smarttarget.settings.target-indicator.name" : "Индикатор цели",
     "smarttarget.settings.target-indicator.hint" : "Выбрать индикатор для токена под прицелом",
@@ -63,36 +63,36 @@
     "smarttarget.settings.use-player-color.name" : "Использовать цвет игрока для индикатора цели",
     "smarttarget.settings.use-player-color.hint" : "Использовать цвет игрока для индикатора цели",
 
-    "smarttarget.settings.customHotKeyTarget.name": "Target with a custom Hot Key",
-    "smarttarget.settings.customHotKeyTarget.hint": "Target tokens by pressing a custom Hot Key, add Shift to target multiple",
+    "smarttarget.settings.customHotKeyTarget.name": "Прицеливание пользовательской Горячей клавишей",
+    "smarttarget.settings.customHotKeyTarget.hint": "Нацеливаясь на токен нажатием пользовательской горячей клавиши, добавьте несколько целей клавишей Shift ",
 
-    "smarttarget.settings.customHotKeyTargetMulti.name": "Multi Target with a custom Hot Key",
-    "smarttarget.settings.customHotKeyTargetMulti.hint": "Multi Target tokens by pressing a custom Hot Key, add Shift to target multiple",
+    "smarttarget.settings.customHotKeyTargetMulti.name": "Несколько целей пользовательской горячей клавишей",
+    "smarttarget.settings.customHotKeyTargetMulti.hint": "Несколько целей пользовательской горячей клавишей, добавьте несколько целей клавишей Shift",
 
-    "smarttarget.settings.releaseBehaviour.name": "Release Behaviour",
-	"smarttarget.settings.releaseBehaviour.hint": "This setting determines how refresh target behaves when clicking multiple tokens. 'Sticky' mode will target each clicked token without un-targeting anything, and you must click a token again to un-target it. 'Standard' mode more closely matches the standard foundry behaviour where all previous tokens are automatically un-targeted when clicking a new token, and you must hold Shift while clicking in order to target multiple tokens.",
-	"smarttarget.settings.releaseBehaviour.choice0.Standard": "Standard",
-	"smarttarget.settings.releaseBehaviour.choice0.Sticky": "Sticky",
+    "smarttarget.settings.releaseBehaviour.name": "Поведение выбора",
+	"smarttarget.settings.releaseBehaviour.hint": "Эта настройка определяет поведение при выборе нескольких целей. В 'Связанном' режиме вы можете выбирать цели без снятия предыдущих целей и должны кликнуть на токен снова, чтобы снять выбор. В 'Стандартном' режиме выбор автоматически снимается с токена при выборе новой цели.",
+	"smarttarget.settings.releaseBehaviour.choice0.Standard": "Стандартный",
+	"smarttarget.settings.releaseBehaviour.choice0.Sticky": "Связанный",
 
-    "smarttarget.warningNoSelectMoreThanOneToken": "No token is selected to set up the targets",
-    "smarttarget.controls.cleartargets.name": "Clear All Targets",
+    "smarttarget.warningNoSelectMoreThanOneToken": "Ни один токен не выбран для прицеливания",
+    "smarttarget.controls.cleartargets.name": "Удалить все прицеливания",
     
-    "smarttarget.settings.forceToUseSelectedTokenForPortraitPips.name": "Force to use selected tokens image for build the indicator portraits",
-    "smarttarget.settings.forceToUseSelectedTokenForPortraitPips.hint": "Force to use selected tokens image for build the indicator portraits",
+    "smarttarget.settings.forceToUseSelectedTokenForPortraitPips.name": "Принудительно использовать выбранное изображение токена чтобы создать индикатор",
+    "smarttarget.settings.forceToUseSelectedTokenForPortraitPips.hint": "Принудительно использовать выбранное изображение токена чтобы создать индикатор",
 
-    "smarttarget.settings.useOwnedTokenIfNoTokenIsSelected.name": "Use the owned tokens if no tokens is selected (Ignored if you are GM)",
-    "smarttarget.settings.useOwnedTokenIfNoTokenIsSelected.hint": "This settings make sense only in combination with 'Force to use selected tokens image for build the indicator portraits' (Ignored if you are GM)",
-    "smarttarget.keybindings.altkey": "Targeting Modifier",
-    "smarttarget.keybindings.clearAllTargets": "Clear All Targets",
+    "smarttarget.settings.useOwnedTokenIfNoTokenIsSelected.name": "Использовать принадлежащий токен, если не выбран ни один токен (игнорируется если вы ведущий)",
+    "smarttarget.settings.useOwnedTokenIfNoTokenIsSelected.hint": "Эта настройка имеет смысл только в сочетании с "Принудительно использовать выбранное изображение токена чтобы создать индикатор" (игнорируется если вы ведущий)",
+    "smarttarget.keybindings.altkey": "Клавиша прицеливания",
+    "smarttarget.keybindings.clearAllTargets": "Удалить все прицеливания",
 
-    "smarttarget.settings.pipPosition.name": "Target Indicator Position",
-    "smarttarget.settings.pipPosition.hint": "Set the position for the target indicator",
-    "smarttarget.settings.pipPosition.topleft": "Top Left",
-    "smarttarget.settings.pipPosition.topright": "Top Right",
-    "smarttarget.settings.pipPosition.bottomleft": "Bottom Left",
-    "smarttarget.settings.pipPosition.bottomright": "Bottom Right",
-    "smarttarget.settings.pipPosition.centertop": "Center Top",
-    "smarttarget.settings.pipPosition.centerbottom": "Center Bottom",
-    "smarttarget.settings.pipPosition.random": "Random"
+    "smarttarget.settings.pipPosition.name": "Позиция индикатора прицеливания",
+    "smarttarget.settings.pipPosition.hint": "Выбрать позицию для индикатора прицеливания",
+    "smarttarget.settings.pipPosition.topleft": "Сверху слева",
+    "smarttarget.settings.pipPosition.topright": "Сверху справа",
+    "smarttarget.settings.pipPosition.bottomleft": "Снизу слева",
+    "smarttarget.settings.pipPosition.bottomright": "Снизу справа",
+    "smarttarget.settings.pipPosition.centertop": "По центру вверху",
+    "smarttarget.settings.pipPosition.centerbottom": "По центру снизу",
+    "smarttarget.settings.pipPosition.random": "Случайно"
 
 }
