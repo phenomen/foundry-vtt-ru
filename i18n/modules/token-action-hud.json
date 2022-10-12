@@ -1,0 +1,768 @@
+{
+  "tokenActionHud": {
+    "abilities": "Характеристики",
+    "accept": "Принять",
+    "actions": "Действия",
+    "activate": "Активировать",
+    "active": "Активно",
+    "addToCombat": "Добавление в бой",
+    "advanced": "Дополнительно",
+    "advancedCategoryOptions": {
+      "customWidth": "Пользовательская ширина (оставьте пустым по умолчанию)",
+      "compactView": "Компактный вид",
+      "characterCount": "Число символов на слово в компактном режиме (0 - только иконки)"
+    },
+    "allowlist": "Белый список",
+    "ancestryFeatures": "Особенности народа",
+    "ancestryFeats": "Черты происхождения",
+    "armour": "Броня",
+    "attack": "Атаки",
+    "attacks": "Атаки",
+    "attribute": {
+      "agility": "Ловкость",
+      "intellect": "Интеллект",
+      "perception": "Восприятие",
+      "strength": "Сила",
+      "will": "Воля"
+    },
+    "attributes": "Параметры",
+    "at-will": "Неограниченно",
+    "blockList": "Чёрный список",
+    "blockListLabel": "чёрный список: скрыть / белый список: показать",
+    "bonusActions": "Бонусные действия",
+    "book": "Книга",
+    "books": "Книги",
+    "cancel": "Отмена",
+    "cantrips": "Фокусы",
+    "categoryTagExplanation": "Добавить или удалить дополнительные категории.",
+    "categoryTagTitle": "Изменение категорий",
+    "characteristics": "Характеристики",
+    "checks": "Проверки",
+    "clearButton": "Очистить",
+    "combat": "Бой",
+    "conditions": "Состояния",
+    "consumables": "Расходники",
+    "coreBonus": "Базовый бонус",
+    "critical": "Критический",
+    "damage": "Урон",
+    "defenses": "Защита",
+    "effects": "Эффекты",
+    "endTurn": "Конец хода",
+    "equipment": "Снаряжение",
+    "experimental": "Экспериментальное",
+    "feats": "Особенности",
+    "features": "Особенности",
+    "filterPlaceholder": "Выборы (разделяйте ; )",
+    "filterTagExplanation": "Добавьте элементы сюда, чтобы показать или скрыть отдельные элементы.",
+    "filterTitle": "Фильтр",
+    "general": "Общее",
+    "handlerNotFound": "не найден, возврат к обычному броску.",
+    "healing": "Лечение",
+    "hide": "Скрыть",
+    "initiative": "Инициатива",
+    "inspiration": "Вдохновение",
+    "inventory": "Инвентарь",
+    "level": "Уровень",
+    "levelAbbreviation": "Ур.",
+    "longRest": "Долгий отдых",
+    "magic": "Магия",
+    "magicItems": "Волшебные вещи",
+    "makeInvisible": "Сделать невидимым",
+    "makeVisible": "Сделать видимым",
+    "melee": "Ближний",
+    "other": "Другое",
+    "passive": "Пассивное",
+    "powers": "Силы",
+    "profession": "Профессия",
+    "push": "Справа",
+    "pushLabelExplanation": "С какой стороны отображать категории?",
+    "ranged": "Дистанционный",
+    "reactions": "Реакции",
+    "recharge": "Перезарядка",
+    "rechargeRepair": "Перезарядка",
+    "refittingRepair": "Переоборудование",
+    "regenRepair": "Регенерация",
+    "removeFromCombat": "Убрать из боя",
+    "repair": "Починка",
+    "rest": "Отдых",
+    "rests": "Отдых",
+    "repairs": "Починки",
+    "roll": "Бросок",
+    "rollInitiative": "Бросок инициативы",
+    "saves": "Испытания",
+    "shortRest": "Короткий отдых",
+    "show": "Показать",
+    "skillFeats": "Черты навыков",
+    "skills": "Навыки",
+    "specialActions": "Особые действия",
+    "spells": "Заклинания",
+    "subcategoryTagExplanation": "Добавление или удаление подкатегорий: введите название подкатегорий макросов или связанных библиотек.",
+    "subcategoryTagTitle": "Изменение подкатегорий",
+    "talents": "Таланты",
+    "temporary": "Временно",
+    "title": "Token Action HUD",
+    "toggleCombatState": "Состояние боя",
+    "toggles": "Переключатели",
+    "toggleVisibility": "Видимость",
+    "token": "Токен",
+    "tools": "Инструменты",
+    "traits": "Черты",
+    "turn": "Ход",
+    "unshift": "Слева",
+    "utility": "Вспомогательное",
+    "weapons": "Оружие",
+    "settings": {
+      "activeCssAsText": {
+        "name": "Отмечать активные действия текстом",
+        "hint": "Если включено, то возможные для активации действия будут также отмечаться звёздочкой."
+      },
+      "alwaysShowAdditionalCategories": {
+        "hint": "Если выключено, то особые категории будут всегда отображаться, даже если не выбран токен.",
+        "name": "Всегда отображать особые категории"
+      },
+      "alwaysShowHud": {
+        "hint": "Если за участником закреплён персонаж, то HUD будет всегда отображаться для этого персонажа, даже если не выбран токен.",
+        "name": "Всегда показывать HUD"
+      },
+      "clickOpenCategory": {
+        "hint": "Если включено, то для раскрытия категорий нужно нажать по ней вместо наведения.",
+        "name": "Раскрывать категории по нажатию"
+      },
+      "debug": {
+        "hint": "Включить режим отладки (для разработчиков).",
+        "name": "Включить отладку"
+      },
+      "dropdown": {
+        "hint": "Если включено, то категории будут раскрываться вниз. Иначе будет использован (экспериментальный) метод раскрытия вверх.",
+        "name": "Категории раскрываются вниз"
+      },
+      "enabledForUser": {
+        "hint": "Если включено, то HUD будет активирован для участника. Не перезаписывает параметр прав игроков.",
+        "name": "Включить HUD для текущего участника"
+      },
+      "itemMacroReplace": {
+        "showBoth": "Отображать оригинальный предмет и макрос",
+        "showItemMacro": "Отображать макрос предмета",
+        "showOriginal": "Отображать оригинальный предмет"
+      },
+      "onTokenHover": {
+        "hint": "Если включено, HUD будет отображаться при наведении на контролируемый токен.",
+        "name": "Включить наведение"
+      },
+      "playerPermission": {
+        "hint": "Если включено, то игроки смогут использовать HUD.",
+        "name": "Включить HUD для игроков"
+      },
+      "renderItemOnRightClick": {
+        "hint": "Если включено, правый клик по предмету в HUD будет открывать лист этого предмета.",
+        "name": "Отображать бланк предмета при правом клике"
+      },
+      "rollHandler": {
+        "hint": "Выберите какой модуль будет обрабатывать действия HUD.",
+        "name": "Обработка действий HUD"
+      },
+      "scale": {
+        "hint": "Изменяет масштаб HUD в процентальном значении (100 по умолчанию)",
+        "name": "Масштаб HUD"
+      },
+      "showAbilitiesCategory": {
+        "hint": "Отображение категории характеристик в HUD",
+        "name": "Отображение характеристик"
+      },
+      "showActionsCategory": {
+        "hint": "Отображение категории действий в HUD",
+        "name": "Отображение действий"
+      },
+      "showAttacksCategory": {
+        "hint": "Отображение категории атак в HUD",
+        "name": "Отображение атак"
+      },
+      "showAttributesCategory": {
+        "hint": "Отображение категории параметров в HUD",
+        "name": "Отображение параметров"
+      },
+      "showBenniesCategory": {
+        "hint": "Отображение категории фишек в HUD",
+        "name": "Отображение фишек"
+      },
+      "showBuffsCategory": {
+        "hint": "Отображение категории усилений в HUD",
+        "name": "Отображение усилений"
+      },
+      "showCharacteristicsCategory": {
+        "hint": "Отображение категории характеристик в HUD",
+        "name": "Отображение характеристик"
+      },
+      "showChecksCategory": {
+        "hint": "Отображение категории проверок в HUD",
+        "name": "Отображение проверок"
+      },
+      "showConditionsCategory": {
+        "hint": "Отображение категории состояний в HUD",
+        "name": "Отображение состояний"
+      },
+      "showConsumablesCategory": {
+        "hint": "Отображение категории расходиков в HUD",
+        "name": "Отображение расходиков"
+      },
+      "showEdgesHindrancesCategory": {
+        "hint": "Отображение категории черт/изъянов в HUD",
+        "name": "Отображение черт/изъянов"
+      },
+      "showEffectsCategory": {
+        "hint": "Отображение категории эффектов в HUD",
+        "name": "Отображение эффектов"
+      },
+      "showFeaturesCategory": {
+        "hint": "Отображение категории особенностей в HUD",
+        "name": "Отображение особенностей"
+      },
+      "showGearCategory": {
+        "hint": "Отображение категории снаряжения в HUD",
+        "name": "Отображение снаряжения"
+      },
+      "showInventoryCategory": {
+        "hint": "Отображение категории инвентаря в HUD",
+        "name": "Отображение инвентаря"
+      },
+      "showMagicCategory": {
+        "hint": "Отображение категории магии в HUD",
+        "name": "Отображение магии"
+      },
+      "showPowersCategory": {
+        "hint": "Отображение категории сил в HUD",
+        "name": "Отображение сил"
+      },
+      "showReligionCategory": {
+        "hint": "Отображение категории религии в HUD",
+        "name": "Отображение религии"
+      },
+      "showSavesCategory": {
+        "hint": "Отображение категории испытаний в HUD",
+        "name": "Отображение испытаний"
+      },
+      "showSkillsCategory": {
+        "hint": "Отображение категории навыков в HUD",
+        "name": "Отображение навыков"
+      },
+      "showSpecialAbilitiesCategory": {
+        "hint": "Отображение категории особых способностей в HUD",
+        "name": "Отображение особых способностей"
+      },
+      "showSpellsCategory": {
+        "hint": "Отображение категории заклинаний в HUD",
+        "name": "Отображение заклинаний"
+      },
+      "showStatusCategory": {
+        "hint": "Отображение категории статусов в HUD",
+        "name": "Отображение статусов"
+      },
+      "showStrikesCategory": {
+        "hint": "Отображение категории ударов в HUD",
+        "name": "Отображение ударов"
+      },
+      "showTalentsCategory": {
+        "hint": "Отображение категории достоинств в HUD",
+        "name": "Отображение достоинств"
+      },
+      "showTraitsCategory": {
+        "hint": "Отображение категории дескриптор в HUD",
+        "name": "Отображение дескрипторов"
+      },
+      "showUtilityCategory": {
+        "hint": "Отображение вспомогательной категории в HUD",
+        "name": "Отображение вспомогательного"
+      },
+      "showWeaponsCategory": {
+        "hint": "Отображение категории оружия в HUD",
+        "name": "Отображение оружия"
+      },
+      "showWoundsFatigueCategory": {
+        "hint": "Отображение категории ранений/усталости в HUD",
+        "name": "Отображение ранений/усталости"
+      },
+      "background": {
+        "hint": "Set the background color of the HUD. This setting is ignored with the Dorako UI style and requires one module of 'Color Picker', 'Color Settings', or 'libThemer'",
+        "name": "Цвет фона интерфейса"
+      },
+      "buttonBackgroundColor": {
+        "hint": "Set the background color of the HUD buttons. This setting is ignored with the Dorako UI style and requires one module of 'Color Picker', 'Color Settings', or 'libThemer'",
+        "name": "Цвет фона кнопки"
+      },
+      "buttonBorderColor": {
+        "hint": "Set the border color of the HUD buttons. This setting is ignored with the Dorako UI style and requires one module of 'Color Picker', 'Color Settings', or 'libThemer'",
+        "name": "Цвет рамки кнопки"
+      },
+      "showHudTitle": {
+        "name": "Отображать заголовок",
+        "hint": "Показывать заголовок над HUD (обычно имя токена)."
+      },
+      "showIcons": {
+        "hint": "Если включено, то для действий будут отображаться связанные с ними иконки.",
+        "name": "Отображать иконки действий"
+      },
+      "style": {
+        "hint": "Изменения стиля интерфейса",
+        "name": "Стиль"
+      },
+      "useActionList": {
+        "name": "Группировать по типу действия",
+        "hint": "Требуется модуль 'Character Actions 5e'. При включении кнопки будут сгрупированны по типу действия."
+      }
+    },
+    "alienRpg": {
+      "acidSplash": "Кислотные брызги",
+      "agenda": "Карты истории/целей",
+      "agility": "Ловкость",
+      "air": "Воздух",
+      "armorRating": "Броня",
+      "armorVersusFire": "Защита от огня",
+      "command": "Лидерство",
+      "closeCombat": "Ближний бой",
+      "comtech": "Информатика",
+      "consumables": "Запасы",
+      "conditions": "Состояния",
+      "creatureAttack": "Атака существа",
+      "dehydrated": "Жажда",
+      "empathy": "Эмпатия",
+      "exhausted": "Переутомление",
+      "food": "Пища",
+      "freezing": "Переохлаждение",
+      "health": "Здоровье",
+      "heavyMachinery": "Тяжёлая техника",
+      "manipulation": "Влияние",
+      "medicalAid": "Медпомощь",
+      "mobility": "Проворство",
+      "observation": "Наблюдательность",
+      "panic": "Паника",
+      "piloting": "Пилотирование",
+      "power": "Электроэнергия",
+      "rangedCombat": "Дистанционный бой",
+      "rollCrit": "Получить травму",
+      "rollStress": "Проверка стресса",
+      "skill": "Навык",
+      "speed": "Скорость",
+      "stamina": "Выносливость",
+      "starving": "Голод",
+      "strength": "Сила",
+      "stressPoints": "Уровень стресса",
+      "survival": "Выживание",
+      "water": "Вода",
+      "wits": "Смекалка"
+    },
+    "bitd": {
+      "resistance": "Resistance"
+    },
+    "co": {
+      "attacks": "Атаки",
+      "capacities": "Способности",
+      "combat": "Бой",
+      "protections": "Защита"
+    },
+    "d35e": {
+      "buffs": "Усиления",
+      "concentration": "Концентрация",
+      "fullAttack": "Полная атака",
+      "grapple": "Захват",
+      "inconsumables": "Нерасходники"
+    },
+    "demonLord": {
+      "attackoptions": "Варианты атаки",
+      "challenge": "Challenge Roll",
+      "rest": "Rest",
+      "specialattacks": "Special Attacks"
+    },
+    "dnd4e": {
+      "settings": {
+        "hideUsedPowers": {
+          "hint": "If enabled, abilities that are unavailable will be hidden (except for recharge powers that will roll to recharge)",
+          "name": "Hide used powers"
+        },
+        "forcePowerColours": {
+          "hint": "If enabled, power buttons are coloured by their use (at-will, daily, etc...) - optional as looks a bit ugly",
+          "name": "Colour Powers By Use Type"
+        },
+        "hideUnequippedInventory": {
+          "hint": "If enabled, only inventory items that are set as equipped will be shown",
+          "name": "Hide Unequipped Inventory"
+        },
+        "hideQuantityZero": {
+          "hint": "If enabled, inventory with a quantity 0 will be hidden (useful for consumables)",
+          "name": "Hide inventory with quantity of 0"
+        },
+        "equipmentCategoryList": {
+          "hint": "Comma-separated list of inventory types to show.  The default hides things without actions.  The complete list is: 'weapon, equipment, consumable, tool, backpack, loot, alchemical, ammo, potion, poison, food, scroll, trinket'",
+          "name": "Visible Inventory Categories"
+        }
+      }
+    },
+    "dnd5e": {
+      "abilities": "Характеристики",
+      "attributes": "Параметры", 
+      "checks": "Проверки",
+      "deathSave": "Испытание смерти",
+      "lair": "Логово",
+      "lairActions": "Действия логова",
+      "legendary": "Легендарное",
+      "legendaryActions": "Легендарные действия",
+      "saves": "Испытания",
+      "skills": "Навыки",
+      "settings": {
+        "abbreviateSkills": {
+          "hint": "Если включено, то навыки и характеристики будут сокращены до трёх букв.",
+          "name": "Сокращение названий навыков и характеристик"
+        },
+        "categoriseAttributes": {
+          "hint": "Сортировка характеристик и навыков на параметры, способности/навыки и проверки/испытания",
+          "name": "Сортировка параметров",
+          "choices": {
+            "attributes": "Параметры",
+            "abilitiesSkills": "Характеристики/навыки",
+            "checksSavesSkills": "Проверки/испытания/навыки"
+          }
+        },
+        "hideLongerActions": {
+          "hint": "Если включено, действия с активацией дольше 1 раунда (минуты, часы, дни) будут скрыты.",
+          "name": "Скрытие действий дольше 1 раунда"
+        },
+        "ignorePassiveFeats": {
+          "hint": "Если включено, пассивные особенности будут скрыты.",
+          "name": "Скрытие пассивных особенностей"
+        },
+        "itemMacroReplace": {
+          "hint": "Выберите какие предметы должны быть отображены в инвентаре.",
+          "name": "Item-Macro: макрос предмета, оригинальный предмет или оба."
+        },
+        "showAllNonpreparableSpells": {
+          "hint": "Если выключено, то заклинания, вроде фокусов, врождённых и неограниченных заклинаний должны быть 'поднготовлены' для отображения в HUD.",
+          "name": "Отображение всех неподготовленных заклинаний"
+        },
+        "showAllNpcItems": {
+          "hint": "Если включено, то будут отображаться все предметы NPC (включая неэкипированные).",
+          "name": "Отображение всех предметов NPC"
+        },
+        "showEmptyItems": {
+          "hint": "Если включено, предметы (включая экипировку и заклинания) будут отображаться в HUD даже если у них не осталось зарядов.",
+          "name": "Отображение пустых предметов и заклинаний"
+        },
+        "showItemsWithoutAction": {
+          "hint": "Если этот параметр включен, предметы, не имеющие информации об активации, будут добавлены в список инвентаря.",
+          "name": "Отображение предметов без цены активации"
+        },
+        "showSpellInfo": {
+          "hint": "Если включено, то компоненты, концентрация и ритуалы будут отображаться рядом с именем заклинания.",
+          "name": "Отображение подробностей заклинаний"
+        },
+        "splitAbilities": {
+          "hint": "Если включено, характеристики будут разделены на проверки и испытания.",
+          "name": "Отображение проверок характеристик и испытаний раздельно"
+        }
+      }
+    },
+    "ds4": {
+      "settings": {
+        "displayCheckTargetNumbers": {
+          "name": "Show Check Target Numbers",
+          "hint": "If enabled, Check Target Numbers are displayed for each check."
+        }
+      }
+    },
+    "dungeonWorld": {
+      "basic": "Основные",
+      "charts": "Графики",
+      "gm": "Ведущий",
+      "instinct": "Инстинкт",
+      "monsterMoves": "Ходы монстра",
+      "moves": "Ходы",
+      "special": "Особые",
+      "specialQualities": "Особые свойства",
+      "starting": "Стартовые",
+      "tags": "Свойства",
+      "treasure": "Сокровища",
+      "settings": {
+        "showGmCompendiums": {
+          "hint": "Если включено и участник является ведущим, в HUD будут отображаться ходы ведущего и таблицы сокровищ.",
+          "name": "Отображение библиотек ведущего"
+        }
+      }
+    },
+    "ed4e": {
+      "systems": "Systems"
+    },
+    "forbiddenLands": {
+      "agility": "Ловкость",
+      "animalHandling": "Дрессировка",
+      "arrows": "Стрелы",
+      "cold": "Переохлаждение",
+      "conditions": "Состояния",
+      "consumables": "Запасы",
+      "crafting": "Ремесло",
+      "empathy": "Эмпатия",
+      "endurance": "Выносливость",
+      "food": "Пища",
+      "healing": "Лечение",
+      "hungry": "Голод",
+      "insight": "Понимание",
+      "lore": "Знание",
+      "manipulation": "Влияние",
+      "marksmanship": "Стрельба",
+      "melee": "Драка",
+      "might": "Сила",
+      "monsterAttack": "Атака монстра",
+      "move": "Проворство",
+      "performance": "Исполнение",
+      "scouting": "Разведка",
+      "sleightOfHand": "Ловкость рук",
+      "sleepy": "Недосыпание",
+      "stealth": "Скрытность",
+      "strength": "Телосложение",
+      "survival": "Выживание",
+      "thirsty": "Жажда",
+      "torches": "Факелы",
+      "water": "Вода",
+      "wits": "Смекалка"
+    },
+    "gurps": {
+      "addAcc": "Add Acc",
+      "blindRoll": "Blind Roll",
+      "retreatBlock": "Retreating Block",
+      "retreatDodge": "Retreating Dodge",
+      "retreatParry": "Retreating Parry",
+      "retreatParryFencing": "Retreating Parry (Fencing)"
+    },
+    "kamigakari": {
+      "attack": "Атака",
+      "conceptDestruction": "Разрушение концепции",
+      "constant": "Постоянное",
+      "consumables": "Расходники",
+      "defense": "Защита",
+      "end": "Этюд",
+      "free": "Свободное",
+      "items": "Предметы",
+      "mainStats": "Основные характеристики",
+      "prep": "Подготовка",
+      "sacraments": "Таинства",
+      "spiritBurn": "Сожжение духа",
+      "start": "Дебют",
+      "subStats": "Доп. характеристики",
+      "transcend": "Превознесение",
+      "vitalIgnition": "Воспламенение жизни"
+    },
+    "lancer": {
+      "engineering": "Engineering",
+      "gear": "Gear",
+      "grit": "Grit",
+      "hase": "HASE",
+      "hull": "Hull",
+      "mech": "Mech",
+      "pilot": "Pilot",
+      "rank": "Rank",
+      "skillTriggers": "Skill Triggers",
+      "stat": "Stat",
+      "stats": "Stats",
+      "systems": "Systems",
+      "techAttack": "Tech Attack",
+      "techs": "Techs"
+    },
+    "pf1": {
+      "bab": "BAB",
+      "bonuses": "Bonuses",
+      "buffs": "Buffs",
+      "casterlevel": "Caster Level",
+      "cmb": "CMB",
+      "concentration": "Concentration",
+      "disabled": "Обезвреживание",
+      "inconsumables": "Inconsumables",
+      "settings": {
+        "showDisabled": {
+          "hint": "Если включено, отключённые особенности не будут отображаться.",
+          "name": "Скрытие отключённых особенностей"
+        }
+      }
+    },
+    "pf2e": {
+      "atk": "Atk",
+      "bonusFeats": "Bonus Feats",
+      "classFeats": "Class Feats",
+      "classFeatures": "Особенности класса",
+      "commonSkills": "Common skills",
+      "dc": "DC",
+      "doomed": "Doomed",
+      "downtime": "Downtime",
+      "dying": "Dying",
+      "exploration": "Exploration",
+      "free": "Free",
+      "generalFeats": "General Feats",
+      "heroPoints": "Hero Points",
+      "lore": "Lore",
+      "noAmmo": "No ammo",
+      "recoveryCheck": "Проверка восстановления",
+      "restNight": "Rest for the Night",
+      "strikes": "Strikes",
+      "takeBreather": "Take a Breather",
+      "treatWounds": "Treat Wounds",
+      "useTwoHandedLabel": "Использование оружия двумя руками",
+      "wounded": "Wounded",
+      "settings": {
+        "abbreviateSkills": {
+          "hint": "If enabled, skills and abilities will use a three-character abbreviation.",
+          "name": "Abbreviate Skill and Ability Names"
+        },
+        "calculateAttackPenalty": {
+          "hint": "If enabled, strikes will show their calculated attack bonus (attack bonus - MAP) instead of the flat MAP.",
+          "name": "Show calculated MAP"
+        },
+        "ignorePassiveActions": {
+          "hint": "If enabled, passive actions are not shown.",
+          "name": "Ignore passive actions"
+        },
+        "printSpellCard": {
+          "hint": "If disabled, left-clicking a spell will roll attack (shift right-click for bonus dialogue), right-clicking will roll damage (ctrl right-click for bonus dialogue). If neither are applicable, the spell card will be printed to chat anyway.",
+          "name": "Print spell card to chat"
+        },
+        "separateTogglesCategory": {
+          "hint": "If enabled, rule toggles will be placed in their own category, otherwise they will fall under strikes.",
+          "name": "Separate Toggles Category"
+        },
+        "showNpcAbilities": {
+          "hint": "If enabled, NPCs will also have an Abilities category on their HUD.",
+          "name": "Show NPC abilities"
+        },
+        "showOldNpcStrikes": {
+          "hint": "If enabled, the HUD will show the old NPC strike actions as well as the new (experimental) strikes for NPCs.",
+          "name": "Show old NPC Strikes"
+        },
+        "showPcAbilities": {
+          "hint": "If enabled, PCs will also have an Abilities category on their HUD.",
+          "name": "Show PC abilities"
+        }
+      }
+    },
+    "sfrpg": {
+      "activeFeats": "Active Feats",
+      "crewActions": "Crew Actions",
+      "misc": "Misc",
+      "msa": "Melee Spell Attacks",
+      "mwa": "Melee Weapon Attacks",
+      "passiveFeats": "Passive Feats",
+      "rsa": "Ranged Spell Attacks",
+      "rwa": "Ranged Weapon Attacks",
+      "shields": "Shields",
+      "spellbook": "Spellbook",
+      "settings": {
+        "showMiscFeats": {
+          "hint": "Если включено, то особенности без определённого типа действия будут отображаться в отдельной категории.",
+          "name": "Display miscellaneous feats"
+        },
+        "showSpellInfo": {
+          "hint": "If enabled, spell resistance, dismissible, concentration and save information noted next to the spell name.",
+          "name": "Display spell information"
+        }
+      }
+    },
+    "sw5e": {
+      "deathSave": "Death Save",
+      "destructionSave": "Destruction Save",
+      "naturalPowers": "Natural Powers",
+      "settings": {
+        "abbreviateSkills": {
+          "hint": "If enabled, skills and abilities will use a three-character abbreviation.",
+          "name": "Abbreviate Skill and Ability Names"
+        },
+        "hideLongerActions": {
+          "hint": "If enabled, actions with longer activation types (minutes, hours, or days) are not shown.",
+          "name": "Hide actions with an activation longer than 1 round"
+        },
+        "ignorePassiveFeats": {
+          "hint": "If enabled, passive feats are not shown.",
+          "name": "Ignore passive feats"
+        },
+        "itemMacroReplace": {
+          "hint": "Select which of the items will be shown in the inventory.",
+          "name": "Item-Macro: item macro, original item, or both"
+        },
+        "showAllNonpreparablePowers": {
+          "hint": "If disabled, powers such as cantrips, innate, pact, and at-will powers need to be 'prepared' via the power details to be shown on the HUD.",
+          "name": "Show all non-preparable powers"
+        },
+        "showAllNpcItems": {
+          "hint": "If enabled, all items are shown for NPCs, not just equipped items.",
+          "name": "Show all NPC items"
+        },
+        "showConditionsCategory": {
+          "hint": "If enabled, the HUD will present a category showing the available token conditions and status effects normally available in the regular Token HUD.",
+          "name": "Show Conditions Category"
+        },
+        "showEmptyItems": {
+          "hint": "If enabled, items are shown in the HUD even if they have no remaining charges.",
+          "name": "Show empty items (includes items and powers)"
+        },
+        "showItemsWithoutAction": {
+          "hint": "If enabled, Items that have no activation information will be added to the Inventory list",
+          "name": "Show Items without Activation costs"
+        },
+        "showPowerInfo": {
+          "hint": "If enabled, power component information, concentration, and ritual status will be noted next to the power name.",
+          "name": "Display power information"
+        },
+        "splitAbilities": {
+          "hint": "If enabled, abilities will be separated into checks and saves.",
+          "name": "Show separate ability check and save categories"
+        }
+      }  
+    },
+    "swade": {
+      "bennies": "Фишки",
+      "edges": "Черты",
+      "edgesAndHindrances": "Черты/Изъяны",
+      "fatigue": "Усталость",
+      "gear": "Снаряжение",
+      "give": "Дать",
+      "gm": "Ведущий",
+      "hindrances": "Изъяны",
+      "misc": "Другое",
+      "mods": "Модификации",
+      "points": "Пункты",
+      "shields": "Щиты",
+      "specialAbilities": "Особенности",
+      "spend": "Потратить",
+      "status": "Состояние",
+      "wounds": "Ранения",
+      "woundsAndFatigue": "Ранения/Усталость",
+      "settings": {
+        "abbreviateAttributes": {
+          "hint": "If enabled, skills and abilities will use a three-character abbreviation.",
+          "name": "Abbreviate Skill and Ability Names"
+        },
+        "allowGiveBennies" : {
+          "name": "Allow Give Bennies",
+          "hint": "Allow users with this role (and above) to give bennies via the HUD",
+          "choices" : {
+            "4": "Ведущий",
+            "3": "Ассистент ведущего",
+            "2": "Доверенный",
+            "1": "Игрок"
+          }
+        }
+      }
+    },
+    "symbaroum": {
+      "abilities": "Характеристики",
+      "mysticalPowers": "Мистические силы"
+    },
+    "wfrp": {
+      "basic": "Основное",
+      "blessing": "Благословение",
+      "dodge": "Уклонение",
+      "improvisedWeapon": "Импровизированное",
+      "melee": "Рукопашное",
+      "petty": "Простейшее",
+      "ranged": "Дистанционное",
+      "religion": "Религия",
+      "rollable": "С проверкой",
+      "stomp": "Затаптывание",
+      "unarmed": "Безоружная",
+      "unrollable": "Без проверки"
+    }
+  }
+}
