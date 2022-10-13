@@ -2,50 +2,60 @@
     "rsr5e": {
         "settings": {
             "enableAbilityQuickRoll.name": "Быстрые броски характеристик",
-            "enableAbilityQuickRoll.hint": "When clicking on an ability check or saving throw, quick roll to chat instead of using the normal roll dialog. This functionality can be bypassed by holding Alt when clicking.",
+            "enableAbilityQuickRoll.hint": "При нажатии на характеристику или испытание будет автоматически произведена проверка вместо стандартного окна подтверждения. Стандартный вывод можно получить удержанием Alt при нажатии.",
             "enableSkillQuickRoll.name": "Быстрые броски навыков",
-            "enableSkillQuickRoll.hint": "When clicking on a skill check, automatically roll to chat instead of using the normal chat output. This functionality can be bypassed by holding Alt when clicking.",
+            "enableSkillQuickRoll.hint": "При нажатии на навык будет автоматически произведена проверка вместо стандартного вывода в чат. Стандартный вывод можно получить удержанием Alt при нажатии.",
             "enableItemQuickRoll.name": "Быстрые броски предметов",
-            "enableItemQuickRoll.hint": "When clicking on an item's image (weapons, spells, features, etc.), automatically roll to chat instead of using the normal chat output. This functionality can be bypassed by holding Alt when clicking.",
+            "enableItemQuickRoll.hint": "При нажатии на предмет (оружие, заклинание, особенность) будет автоматически произведена проверка вместо стандартного вывода в чат. Стандартный вывод можно получить удержанием Alt при нажатии.",
             "enableAltQuickRoll.name": "Альтернативные броски предметов",
-            "enableAltQuickRoll.hint": "When Alt-clicking on an item's image, output a different quick roll which can be configured separately, replacing the ability to bypass quick rolling for items. This setting has no effect if item quick rolling is disabled.",
-            "enableD20Icons.name": "Show D20 Rolls for Quick Rolls",
-            "enableD20Icons.hint": "When outputting a quick roll, display an icon showing the natural die roll next to the total result.",
-            "enableDiceSounds.name": "Enable Dice Sounds for Quick Rolls",
-            "enableDiceSounds.hint": "When outputting a quick roll, play the default system dice-rolling sound.",
-            "alwaysRollMulti.name": "Always Roll Multiple Dice",
-            "alwaysRollMulti.hint": "When outputting a quick roll, always roll two dice (or three for Elven Accuracy) even when advantage/disadvantage is not applied.",
-            "showSkillAbilities.name": "Show Ability Names for Skills",
-            "showSkillAbilities.hint": "When outputting a skill quick roll, display the name of the ability used next to the skill name.",
-            "rollModifierMode.name": "Roll Modifier Keys",
-            "rollModifierMode.hint": "Determines which keys to use to modify quick rolls with advantage or disadvantage. This has no effect if quick rolls are disabled.",
-            "defaultRollArt.name": "Quick Roll Image Used",
-            "defaultRollArt.hint": "Determines which art is used by default for ability checks and saving throws for an actor. If this is not available, the other icon will be used instead.",
-            "placementRollTitle.name": "Show Roll Title Labels",
-            "placementRollTitle.hint": "Determines if and where a non-damage roll's title, such as \"Attack\", appears.",
-            "placementDamageTitle.name": "Show Damage Title Labels",
-            "placementDamageTitle.hint": "Determines if and where a damage roll's title, such as \"Damage\", appears.",
-            "placementDamageContext.name": "Show Damage Context Labels",
-            "placementDamageContext.hint": "Determines if and where a damage roll's context label appears.",
-            "placementDamageType.name": "Show Damage Type Labels",
-            "placementDamageType.hint": "Determines where the damage type label is placed, relative to a damage roll.",
-            "contextReplacesTitle.name": "Context Replaces Title Label",
-            "contextReplacesTitle.hint": "If a context label is in the same place as a damage roll's title label, such as \"Damage\" or \"Healing\", it will replace it.",
-            "contextReplacesDamage.name": "Context Replaces Damage Type",
-            "contextReplacesDamage.hint": "If a context label is in the same place as a damage type label, it will replace it.",
-            "hideSaveDC.name": "Hide Save DCs",
-            "hideSaveDC.hint": "Determines if the DC is hidden on save DC buttons for quick rolls.",
-            "hideSaveDC.replacement": "??"
+            "enableAltQuickRoll.hint": "При нажатии с Alt на изображение предмета, выводить альтернативный быстрый бросок, который можно настроить отдельно. Это заменяет возможность получить стандартный вывод, удерживая Alt.",
+            "enableD20Icons.name": "Отображение D20 для быстрых бросков",
+            "enableD20Icons.hint": "При выводе быстрого броска, будет отображаться иконка с натуральным значением броска рядом с конечным результатом.",
+            "enableDiceSounds.name": "Включение звука броска для быстрых бросков",
+            "enableDiceSounds.hint": "При выводе быстрых бросков будет проигрываться стандартный звук броска костей.",
+            "enableOverlayButtons.name": "Включение дополнительных кнопок",
+            "enableOverlayButtons.hint": "При выводе быстрого броска, добавляет дополнительные кнопки на карточку чата.",
+            "applyDamageTo.name": "Получение урона/лечения",
+            "applyDamageTo.hint": "Определяет какие токены получают урон или лечение при нажатии на дополнительные кнопки на карточках чата.",
+            "alwaysApplyCrit.name": "Всегда наносить критический урон",
+            "alwaysApplyCrit.hint": "При нажатии на дополнительные кнопки, всегда применять критический урон (если он есть). Если отключено, нажатие на дополнительную кнопку для критического урона будет вызывать окно выбора урона.",
+            "alwaysRollMulti.name": "Всегда бросать несколько костей",
+            "alwaysRollMulti.hint": "При выводе быстрого броска, всегда бросать две кости, даже если преимущество/помеха не были применены.",
+            "alwaysManualDamage.name": "Всегда бросать урон вручную",
+            "alwaysManualDamage.hint": "При выводе быстрого броска, не бросать урон автоматически. Вместо этого на карточке будет отображаться кнопка для броска урона.",
+            "showSkillAbilities.name": "Отображение характеристик для навыков",
+            "showSkillAbilities.hint": "При выводе быстрого броска навыка отображать рядом связанную характеристику.",
+            "rollModifierMode.name": "Клавиши модификации броска",
+            "rollModifierMode.hint": "Определяет какие клавиши модифицируют быстрые броски для преимущества и помехи.",
+            "defaultRollArt.name": "Иконка быстрых бросков",
+            "defaultRollArt.hint": "Определяет изображение иконки для проверок характеристик и испытаний. Для предметов будет использоваться их собственная иконка.",
+            "placementRollTitle.name": "Отображение заголовков бросков",
+            "placementRollTitle.hint": "Определяет наличие и расположение заголовка бросков (кроме урона), вроде \"Атака\".",
+            "placementDamageTitle.name": "Отображение заголовков урона",
+            "placementDamageTitle.hint": "Определяет наличие и расположение заголовка урона, вроде \"Урон\".",
+            "placementDamageContext.name": "Отображение контекста урона",
+            "placementDamageContext.hint": "Определяет отображение контекста урона.",
+            "placementDamageType.name": "Отображение типа урона",
+            "placementDamageType.hint": "Определяет расположение типа урона относительно броска урона.",
+            "contextReplacesTitle.name": "Контекст заменяет заголовок",
+            "contextReplacesTitle.hint": "Если контекст в том же месте, что заголовок урона, например \"Урон\" или \"Лечение\", то он заменит его.",
+            "contextReplacesDamage.name": "Контекст заменяет тип урона",
+            "contextReplacesDamage.hint": "Если контекст в том же месте, что тип урона, то он заменит его.",
+            "hideSaveDC.name": "Скрытие СЛ испытаний",
+            "hideSaveDC.hint": "Скрывает отображение СЛ испытаний на кнопках испытаний в чате."
         },
         "messages": {
             "error": {
-                "libWrapperMinVersion": "This module requires libWrapper version {version} or newer.",
-                "labelNotInDictionary": "{type} '{label}' does not exist. Valid values can be found in {dictionary}.",
-                "objectNotExpectedType": "Data object did not match the expected type. Expected type '{type}'.",
-                "incorrectRollType": "Cannot roll an {function} roll for roll type '{type}'."
+                "libWrapperMinVersion": "Модуль требует libWrapper версии {version} или новее.",
+                "labelNotInDictionary": "{type} '{label}' не существует. Возможные значения можно посмотреть в {dictionary}.",
+                "objectNotExpectedType": "Данные объекта не соответствуют ожидаемому типу. Ожидался '{type}'.",
+                "incorrectRollType": "Не удалось совершить бросок {function} для типа '{type}'.",
+                "incorrectFieldType": "Не удалось преобразовать бросок с типом {type} в мультибросок.",
+                "incorrectTargetState": "Не удалось преобразовать бросок в {state}, т.к. это некорректный вариант (преимущество или помеха).",
+                "rollIsNullOrUndefined": "Бросок вернул значение null или undefined."
             },
             "warning": {
-                "emptyDamageField": "One or more damage fields on this item are empty! To roll damage, ensure all damage fields are filled."
+                "emptyDamageField": "Одно или несколько значений урона этого предмета не заполнены. Перед броском убедитесь, что все поля урона заполнены."
             }
         },
         "choices": {
@@ -58,6 +68,11 @@
                 "1": "Сверху",
                 "2": "Снизу и внутри",
                 "3": "Снизу и снаружи"
+            },
+            "apply": {
+                "0": "Выбранные токены",
+                "1": "Нацеленные токены",
+                "2": "Выбранные и нацеленные"
             },
             "hideSaveDC": {
                 "0": "Никогда",
@@ -98,14 +113,31 @@
             }
         },
         "chat": {
+            "hide": "??",
             "attack": "Атака",
             "check": "Проверка",
             "save": "Испытание",
             "saveDC": "Испытание со СЛ",
             "damage": "Урон",
             "healing": "Лечение",
-            "crit": "Крит",
-            "other": "Другое"
+            "crit": "Критический",
+            "other": "Другое",
+            "buttons": {
+                "damageFull": "Нанести полный урон выбранным токенам",
+                "damageHalf": "Нанести половину урона выбранным токенам",
+                "damageQuarter": "Нанести четверть урона выбранным токенам",
+                "damageDouble": "Нанести двойной урон выбранным токенам",
+                "healing": "Исцелить выбранные токены",
+                "healingTemp": "Добавить временные ПЗ выбранным токенам",
+                "rollCrit": "Бросок критического урона",
+                "rollAdvantage": "Бросок с преимуществом",
+                "rollDisadvantage": "Бросок с помехой"
+            },
+            "critPrompt": {                
+                "title": "Нанести критический урон?",
+		        "yes": "Да",
+		        "no": "Нет"
+            }
         }
     }
 }
