@@ -140,8 +140,12 @@
           "up": "Вверх"
         }
       },
+      "drag": {
+        "hint": "Перемещение HUD перетягиванием одной из кнопок категорий",
+        "name": "Включение перетягивания"
+      },
       "enabledForUser": {
-        "hint": "Если включено, то HUD будет активирован для участника. Не перезаписывает параметр прав игроков.",
+        "hint": "Включение HUD для текущего участника. Не перезаписывает параметры прав игрока.",
         "name": "Включить HUD для текущего участника"
       },
       "itemMacroReplace": {
@@ -355,7 +359,7 @@
       "wits": "Смекалка"
     },
     "bitd": {
-      "resistance": "Resistance"
+      "resistance": "Устойчивость"
     },
     "co": {
       "attacks": "Атаки",
@@ -372,45 +376,55 @@
     },
     "demonLord": {
       "attackoptions": "Варианты атаки",
-      "challenge": "Challenge Roll",
-      "rest": "Rest",
-      "specialattacks": "Special Attacks"
+      "challenge": "Испытания",
+      "rest": "Отдых",
+      "specialattacks": "Особые атаки"
     },
     "dnd4e": {
       "settings": {
         "hideUsedPowers": {
-          "hint": "If enabled, abilities that are unavailable will be hidden (except for recharge powers that will roll to recharge)",
-          "name": "Hide used powers"
+          "hint": "Недоступные способности будут скрыты (кроме тех сил, что требуют проверки перезарядки).",
+          "name": "Скрытие использованных сил"
         },
         "forcePowerColours": {
-          "hint": "If enabled, power buttons are coloured by their use (at-will, daily, etc...) - optional as looks a bit ugly",
-          "name": "Colour Powers By Use Type"
+          "hint": "Кнопки сил будут окрашены в зависимости от их типа.",
+          "name": "Окрашивать кнопок сил"
         },
         "hideUnequippedInventory": {
-          "hint": "If enabled, only inventory items that are set as equipped will be shown",
-          "name": "Hide Unequipped Inventory"
+          "hint": "Если включено, будут отображаться только надетые предметы инвентаря.",
+          "name": "Скрытие ненадетых вещей"
         },
         "hideQuantityZero": {
-          "hint": "If enabled, inventory with a quantity 0 will be hidden (useful for consumables)",
-          "name": "Hide inventory with quantity of 0"
+          "hint": "Если включено, предметы с количеством 0 будут скрыты (полезно для расходников)",
+          "name": "Скрывать пустой инвентарь"
         },
         "equipmentCategoryList": {
-          "hint": "Comma-separated list of inventory types to show.  The default hides things without actions.  The complete list is: 'weapon, equipment, consumable, tool, backpack, loot, alchemical, ammo, potion, poison, food, scroll, trinket'",
-          "name": "Visible Inventory Categories"
+          "hint": "Отображать разделенный список типов инвентаря. По умолчанию скрывает вещи без действий. Полный список: «оружие, снаряжение, расходные материалы, инструменты, рюкзак, добыча, алхимия, боеприпасы, зелья, яды, еда, свитки, безделушки».",
+          "name": "Видимые категории инвентаря"
         }
       }
     },
     "dnd5e": {
       "abilities": "Характеристики",
+      "actions": "Actions",
       "attributes": "Параметры", 
+      "bonusActions": "Bonus Actions",
       "checks": "Проверки",
+      "consumables": "Consumables",
+      "crewActions": "Crew Actions",
       "deathSave": "Испытание смерти",
+      "equipment": "Equipment",
       "lair": "Логово",
       "lairActions": "Действия логова",
       "legendary": "Легендарное",
       "legendaryActions": "Легендарные действия",
+      "other": "Other",
+      "reactions": "Reactions",
       "saves": "Испытания",
       "skills": "Навыки",
+      "specialActions": "Special Actions",
+      "tools": "Tools",
+      "weapons": "Weapons",
       "settings": {
         "abbreviateSkills": {
           "hint": "Если включено, то навыки и характеристики будут сокращены до трёх букв.",
@@ -466,8 +480,8 @@
     "ds4": {
       "settings": {
         "displayCheckTargetNumbers": {
-          "name": "Show Check Target Numbers",
-          "hint": "If enabled, Check Target Numbers are displayed for each check."
+          "name": "Отображать целевое значение проверки",
+          "hint": "Если включено, целевое значение будет отображаться для каждой проверки."
         }
       }
     },
@@ -491,7 +505,7 @@
       }
     },
     "ed4e": {
-      "systems": "Systems"
+      "systems": "Системы"
     },
     "forbiddenLands": {
       "agility": "Ловкость",
@@ -569,11 +583,9 @@
       "techs": "Techs"
     },
     "pf1": {
-      "bab": "BAB",
       "bonuses": "Bonuses",
       "buffs": "Buffs",
       "casterlevel": "Caster Level",
-      "cmb": "CMB",
       "concentration": "Concentration",
       "disabled": "Обезвреживание",
       "inconsumables": "Inconsumables",

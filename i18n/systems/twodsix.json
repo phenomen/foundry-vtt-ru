@@ -68,11 +68,14 @@
       },
       "Gender": "Пол",
       "HeroPoints": "Пункты героизма",
+      "Hits": "Hits",
       "Contamination": "Заражение",
       "Lifeblood": "Здоровье",
       "Stamina": "Стойкость",
+      "Endurance": "Endurance",
       "RadiationExposure": "Облучение радиацией",
       "HomeWorld": "Родной мир",
+      "Nationality": "Nationality",
       "Info": {
         "ALLIES": "СОЮЗНИКИ",
         "BIOGRAPHY": "БИОГРАФИЯ",
@@ -81,6 +84,7 @@
         "ENEMIES": "ВРАГИ"
       },
       "Items": {
+        "Amount": "Amount",
         "ARMOR": "БРОНЯ",
         "AUGMENTS": "АУГМЕНТЫ",
         "Ammo": "Боеп.",
@@ -96,6 +100,7 @@
         "Effect": "Эффект",
         "Location": "Место",
         "Name": "Название",
+        "QuantityToTransfer": "Quantity to Transfer",
         "Qty": "Кол.",
         "Range": "Дист.",
         "Refill": "Восполнение",
@@ -106,6 +111,7 @@
         "Subtype": "Тип",
         "TRAITS": "ЧЕРТЫ",
         "Traits": "Черты",
+        "Transfer": "Transfer Items",
         "TL": "ТУ",
         "TechLevel": "Тех. уровень",
         "Value": "Цена",
@@ -128,7 +134,7 @@
         "SkillName": "Название",
         "Total": "Всего",
         "Untrained": "Нетренирован",
-        "SkillRollTooltip": "Показывать настройки проверки по умолчанию. Shift+ЛКМ совершает проверку навыков без модификаторов со сложностью 8.",
+        "SkillRollTooltip": "Shows the skill roll dialog. Shift-clicking rolls a skill check applying no modifier and assumes an average difficulty of 6 or 8",
         "InvertedSkillRollTooltip": "Проверки навыков совершаются без модификаторов со сложностью 8. Shift+ЛКМ открывает окно настроек проверки.",
         "JOAT": "Мастер на все руки",
         "Timeframe": {
@@ -176,6 +182,58 @@
         "All": "Все"
       }
     },
+    "Animal": {
+      "Niche": "Niche",
+      "NicheType": {
+        "Herbivore": "Herbivore",
+        "Omnivore": "Omnivore",
+        "Carnivore": "Carnivore",
+        "Scavenger": "Scavenger",
+        "Other": "Other"
+      },
+      "Type": "Type",
+      "Subtype": {
+        "Filter": "Filter",
+        "Intermittent": "Intermittent",
+        "Grazer": "Grazer",
+        "Gatherer": "Gatherer",
+        "Hunter": "Hunter",
+        "Eater": "Eater",
+        "Pouncer": "Pouncer",
+        "Chaser": "Chaser",
+        "Trapper": "Trapper",
+        "Killer": "Killer",
+        "Hijacker": "Hijacker",
+        "Intimidator": "Intimidator",
+        "CarrionEater": "Carrion-Eater",
+        "Reducer": "Reducer",
+        "Siren": "Siren"
+      },
+      "Locations": {
+        "CityUrban": "City or Urban",
+        "PlainsGrassland": "Plains or Grassland",
+        "HillsMountains": "Hills or Mountains",
+        "DesertBadlands": "Desert or Badlands",
+        "SwampAquatic": "Swamp or Aquatic",
+        "ForestJungle": "Forest or Jungle"
+      },
+      "Location": "Location",
+      "AnimalNotes": "Animal Notes",
+      "AttackWeapons": "Attacks / Weapons",
+      "Reaction": "Reaction Roll",
+      "Attack": "Attack",
+      "Flee": "Flee",
+      "AttacksMessage": "Animal attacks party!",
+      "FleesMessage": "Animal flees from party!",
+      "NoReactionMessage": "Animal does not react",
+      "MoraleRoll": "Morale Roll",
+      "MoraleDM": "Morale DM",
+      "Retreat": "Retreat",
+      "FightingWithdrawal": "Fighting Withdrawl",
+      "KeepFighting": "Keep Fighting",
+      "Advance": "Advance",
+      "FightToTheDeath": "Fight to The Death!"
+    },
     "Chat": {
       "Roll": {
         "Difficulty": "Сложность",
@@ -197,6 +255,8 @@
       "Encumbrance": "Вес",
       "Enc": "Вес",
       "DocumentReference": "Источник",
+      "Link": "Link",
+      "DeleteReference": "Delete Reference",
       "Armor": {
         "Armor": "Броня",
         "SecondaryArmor": "Вторичная броня",
@@ -221,6 +281,7 @@
         "bridge": "мостик",
         "cargo": "груз",
         "computer": "компьютер",
+        "dock": "dock",
         "drive": "двигатель",
         "drone": "дрон",
         "electronics": "электроника",
@@ -232,7 +293,7 @@
         "shield": "щит",
         "software": "программа",
         "storage": "хранилище",
-        "vehicle": "транспорт",
+        "vehicle": "vehicle & craft",
         "other": "прочее",
         "otherExternal": "прочее - внешнее",
         "otherInternal": "прочее - внутреннее",
@@ -267,10 +328,14 @@
         "perUnit": "МКр за единицу",
         "perCompTon": "МКр за тонну компонента",
         "perHullTon": "МКр на тонну корпуса",
+        "per100HullTon": "MCr per 100 hull tons",
         "pctHull": "Процент базового значения корпуса",
         "isBaseHull":"Является базовым корпусом?",
         "RollModifier":"Модификатор Броска",
-        "DM":"МБ"
+        "DM":"МБ",
+        "Hardened": "Hardened?",
+        "hardened": "hardened",
+        "Hd": "Hd"
       },
       "Equipment": {
         "AssignSkill": "Назначить навык",
@@ -315,6 +380,7 @@
         "SimplifiedSkillNameDescription": "Используется в формулах бросков, вроде @skills._SKILL_NAME_.<br>@skills._SKILL_NAME__ равняется нулю, если навыка не существует или он меньше нуля.",
         "LFB": "ЗДР",
         "STA": "ВНС",
+        "HIT": "HIT",
         "ALT1": "АЛТ1",
         "ALT2": "АЛТ2",
         "TrainingNotes": "Учебные заметки",
@@ -510,7 +576,8 @@
         "ArmorOnly": "Только Броня",
         "Threshold": "Порог",
         "ArmorHullStruc": "Броня, Корпус и Структура"
-      }
+      },
+      "ShippingSize": "Shipping Size"
     },
     "Migration": {
       "Completed": "Миграция Twodsix System до версии {version} завершена!",
@@ -583,7 +650,7 @@
         "name": "Вариант правил для сложности"
       },
       "effectOrTotal": {
-        "hint": "checked=Show effect (i.e. roll+modifiers-target number, usually 8), unchecked=Show total (i.e. roll+modifiers)",
+        "hint": "checked=Show effect (i.e. roll+modifiers-target number, usually 6 or 8), unchecked=Show total (i.e. roll+modifiers)",
         "name": "Show effect or total roll value for skill and characteristic rolls."
       },
       "ExperimentalFeatures": {
@@ -665,9 +732,9 @@
         "hint": "Показывать счётчик пунктов Героизма в бланке персонажа.",
         "name": "Включить пункты Героизма"
       },
-      "showItemReferences": {
-        "hint": "Shows a text field on item and vehicle sheets to use with PDFoundry or as a freeform reference.  For PDFoundry, format must be '[abbreviated name] [page number]'.",
-        "name": "Show reference field on vehicle and item sheets."
+      "usePDFPagerForRefs": {
+        "hint": "Use with PDF Pager to show references.  The format must be '[code name] [page number]'. If setting is false, uri links to references are used instead.",
+        "name": "Use PDF-Pager module to show references"
       },
       "ShowLawLevel": {
         "hint": "checked=Show the 'Law Level' field, unchecked=Hide it",
@@ -780,7 +847,7 @@
         "name": "Формула максимальной нагруженности"
       },
       "allowDropOnIcon": {
-        "hint": "Items can be dropped and added to actors directly on top of icon without opening actor sheet.  Duplicate items increase inventory quantity.  Chat damage items will apply damge.",
+        "hint": "Items can be dropped and added to actors directly on top of icon without opening actor sheet.  Duplicate items increase inventory quantity.  Chat damage items will apply damage.",
         "name": "Разрешить перенос предметов на иконки"
       },
       "defaultMovement": {
@@ -792,7 +859,7 @@
         "name": "The default movement units for the walk rate"
       },
       "useEncumbrance": {
-        "hint": "Use encumbarnce rules (if they exist) when displaying movement with drag ruler.",
+        "hint": "Use encumbrance rules (if they exist) when displaying movement with drag ruler.",
         "name": "Use system encumbrance rules for drag ruler"
       },
       "addEffectForShipDamage": {
@@ -846,6 +913,46 @@
       "sorcerySkill": {
         "hint": "Навык, используемый для сотворения заклинаний.",
         "name": "Название заклинания"
+      },
+      "useNationality": {
+        "hint": "Display nationality field instead of home world field on actor sheet.",
+        "name": "Display nationality rather than home world"
+      },
+      "animalsUseHits": {
+        "hint": "Animals have only one damage statistic: hits.",
+        "name": "Animals use hits for damage"
+      },
+      "animalsUseLocations": {
+        "hint": "Animals are described by location found instead of type and niche.",
+        "name": "Animals use location instead of type"
+      },
+      "displayReactionMorale": {
+        "hint": "Show reaction and morale information on animal sheet.",
+        "name": "Show animal reaction and morale"
+      },
+      "showComponentRating": {
+        "hint": "Show rating field on ship component item sheet.",
+        "name": "Show component rating"
+      },
+      "showComponentDM": {
+        "hint": "Show DM field on ship component item sheet.",
+        "name": "Show component DM"
+      },
+      "useEncumbranceStatusIndicators": {
+        "hint": "Uses status indicators to indicate encumbered status. Roll modifiers below are applied to all physical characteristic rolls.",
+        "name": "Display encumbrance status indicators and apply roll modifiers"
+      },
+      "encumbranceFraction": {
+        "hint": "The fraction applied to the maximum encumbrance formula to indicate actor is encumbered.  For example, a value of 0.5 would mean the actor becomes encumbered when carried weight exceeds one half of maximum encumbrance.",
+        "name": "Fraction of maximum encumbrance when actor becomes encumbered"
+      },
+      "encumbranceModifier": {
+        "hint": "The number to add to the physical (STR, END, DEX) characteristic modifier when encumbered. For example, -1 indicates one should be subtracted for all rolls involving physical characterisitcs.",
+        "name": "Modifier to physical characteristics when actor becomes encumbered"
+      },
+      "transferDroppedItems": {
+        "hint": "Overrides the default Foundry behavior of copying on drag-drop to transfering items (items removed from source actor) when drag-dropping equipment between actors.",
+        "name": "Transfer rather than copy dropped equipment on actors"
       }
     },
     "CloseAndCreateNew": "Закрыть и создать",
@@ -900,14 +1007,16 @@
       "CantAutoDamage": "Автоматический урон по кораблю или транспорту не поддерживается",
       "CantDropOnToken": "Перенос предметов на токен корабля или транспорта не поддерживается ",
       "CantDragOntoActor": "Этот предмет не может быть добавлен этому актёру",
-      "PDFFoundryNotInstalled": "Для ссылок на источники нужно установить PDFoundry.",
+      "PDFPagerNotInstalled": "PDF Pager must be installed to use source links.",
       "NoSpecfiedLink": "Документ и страница не указаны для этой ссылки.",
-      "NoTargetFound": "Не найдена цель для нанесения урона.",
+      "NoTargetFound": "No target for dropping found.",
       "LackPermissionToDamage": "У вас недостаточно прав для целевого актёра.",
       "MultipleActorsFound": "Обнаружено несколько актёров. Не удалось нанести урон.",
       "EncumbranceFormulaInvalid": "Формула нагрузки некорректная. Значение установлено на ноль.",
-      "ActorHasInitiativeAlready": "Путешественник уже имеет инициативу",
-      "NoActiveToken": "Актер не имеет активного токена на сцене"
+      "ActorHasInitiativeAlready": "Actor already has initiative.",
+      "NoActiveToken": "Актер не имеет активного токена на сцене",
+      "InvalidReactionInputs": "Reaction roll cannot be made as attack and flee inputs are invalid.",
+      "AnimalsCantHoldPositions": "Animals cant be placed in ship positions"
     }
   },
   "VeryDifficult": "Очень сложная"
