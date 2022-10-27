@@ -1,93 +1,112 @@
 @font-face {
-  font-family: "IM Fell DW Pica";
-  src: url("../fonts/IM_FELL_DW_PICA_RU.ttf");
+  font-family: IM Fell DW Pica;
+  src: url("../fonts/Noto_Serif/NotoSerif-Regular.ttf");
 }
-
 @font-face {
-  font-family: "IM Fell DW Pica SC";
-  src: url("../fonts/IM_FELL_DW_PICA_SC_RU.ttf");
+  font-family: IM Fell DW Pica;
+  src: url("../fonts/Noto_Serif/NotoSerif-Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: IM Fell DW Pica SC;
+  src: url("../fonts/Noto_Serif/NotoSerif-Bold.ttf");
+}
+@font-face {
+  font-family: IM Fell Three Line Pica;
+  src: url("../fonts/Noto_Serif/NotoSerif-Bold.ttf");
+}
+@font-face {
+  font-family: IM Fell Great Primer;
+  src: url("../fonts/Noto_Serif/NotoSerif-Regular.ttf");
+}
+@font-face {
+  font-family: IM Fell Great Primer;
+  src: url("../fonts/Noto_Serif/NotoSerif-Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Noto_Sans/NotoSans-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins;
+  font-weight: 700;
+  src: url("../fonts/Noto_Sans/NotoSans-Bold.ttf");
+}
+@font-face {
+  font-family: Poppins;
+  font-style: italic;
+  src: url("../fonts/Noto_Sans/NotoSans-Italic.ttf");
+}
+@font-face {
+  font-family: Poppins;
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/Noto_Sans/NotoSans-BoldItalic.ttf");
+}
+@font-face {
+	font-family: "Branding";
+	src: url("../fonts/Noto_Sans/NotoSans-Regular.ttf");
+}
+@font-face {
+	font-family: "Branding";
+	src: url("../fonts/Noto_Sans/NotoSans-Bold.ttf");
+	font-weight: bold;
+}
+@font-face {
+	font-family: "Branding";
+	src: url("../fonts/Noto_Sans/NotoSans-Italic.ttf");
+	font-style: italic;
+}
+@font-face {
+	font-family: "Branding";
+	src: url("../fonts/Noto_Sans/NotoSans-BoldItalic.ttf");
+  font-style: italic;
+	font-weight: 700;
 }
 
 :root {
-  --font-editor: var(--font-serif);
-  --font-input: var(--font-sans);
-  --font-special: "IM Fell DW Pica" "Georgia", serif;
-  --font-subheader: "IM Fell DW Pica SC", "Georgia", serif;
-  --font-table: var(--font-sans);
+  font-size: 90% !important;
+  --font-size--extra-small: var(--font-size-11);
+  --font-size--very-small: var(--font-size-12);
+  --font-size--small: var(--font-size-13);
+  --font-size--default: var(--font-size-14);
+  --font-size--large: var(--font-size-16);
+  --font-size--extra-large: var(--font-size-18);
+  --font-size-11: 0.6875rem;
+  --font-size-12: 0.75rem;
+  --font-size-13: 0.8125rem;
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+  --font-size-18: 1.125rem;
+  --font-size-20: 1.25rem;
+  --font-size-24: 1.5rem;
+  --font-size-28: 1.75rem;
+  --font-size-32: 2rem;
+  --font-size-48: 3rem;
 }
 
-.forbidden-lands .character .currencies .header b {
-  font-size: var(--text-sm);
-}
-
-.forbidden-lands.item .tabs .tab-item,
-.forbidden-lands .tabs .item {
-  font-size: var(--text-sm);
-}
-
-.fbl-core {
-  font-family: var(--font-serif);
-}
-
-.fbl-core h1,
-.fbl-core h2,
-.fbl-core h3,
-.fbl-core h4 {
-  font-family: var(--font-pirate);
-}
-
+body,
 button {
-  font-family: var(--font-pirate);
+	font-family: var(--font-sans);
+	font-size: var(--font-size-14);
 }
 
-#pause h3 {
-  font-family: var(--font-pirate);
+
+.fa-comments,
+.fa-suitcase { 
+  font-size: var(--font-size-16);
 }
 
-li.folder.collapsed > .folder-header h3 {
-  font-size: 16px;
+.forbidden-lands .sheet-tabs .tab-item {
+  font-size: var(--font-size-16);
+  line-height: 1.2;
 }
 
-.app.window-app.sheet.journal-sheet form input[name="name"] {
-  font-family: var(--font-pirate);
+.forbidden-lands .character .critical-injuries .critical-injury .healtime {
+  flex-basis: 35%;
 }
 
-.fbl-inline-heading {
-  font-family: var(--font-pirate);
-}
-
-.forbidden-lands.chat-item h3 {
-  font-family: var(--font-serif);
-}
-
-.forbidden-lands.chat-item .link-header:hover h3 {
-  font-family: var(--font-serif);
-}
-
-.forbidden-lands.chat-item .link-header a {
-  font-family: var(--font-serif);
-}
-
-.forbidden-lands .sheet-tabs {
-  font-size: 15px;
-}
-
-.message-content .entity-link {
-  font-family: var(--font-serif);
-}
-
-#menu #menu-items li h4 {
-  font-family: var(--font-pirate);
-}
-
-.chat-message .message-header .message-sender {
-  font-family: var(--font-serif);
-}
-
-#players h3 {
-  font-family: var(--font-pirate);
-}
-
-#players ol .player-name {
-  font-family: var(--font-serif);
+.forbidden-lands .roll-action {
+  font-family: var(--font-sans-condensed);
 }
