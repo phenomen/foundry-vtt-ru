@@ -1,69 +1,85 @@
 {
-    "label": "Правила (SRD)",
-    "mapping": {
-        "name": "name",
-        "content": "content"
-    },
-    "entries": [
-        {
-            "id": "Chapter 1: Beyond 1st Level",
-            "name": "Глава 1: После первого уровня"
-        },
-        {
-            "id": "Chapter 2: Races",
-            "name": "Глава 2: Расы"
-        },
-        {
-            "id": "Chapter 3: Classes",
-            "name": "Глава 3: Классы"
-        },
-        {
-            "id": "Chapter 4: Personality and Background",
-            "name": "Глава 4: Происхождение и личность"
-        },
-        {
-            "id": "Chapter 5: Equipment",
-            "name": "Глава 5: Снаряжение"
-        },
-        {
-            "id": "Chapter 6: Customization Options",
-            "name": "Глава 6: Варианты развития"
-        },
-        {
-            "id": "Chapter 7: Using Ability Scores",
-            "name": "Глава 7: Использование характеристик"
-        },
-        {
-            "id": "Chapter 8: Adventuring",
-            "name": "Глава 8: Приключения"
-        },
-        {
-            "id": "Chapter 9: Combat",
-            "name": "Глава 9: Бой"
-        },
-        {
-            "id": "Chapter 10: Spellcasting",
-            "name": "Глава 10: Магия"
-        },
-        {
-            "id": "Chapter 11: DM Tools",
-            "name": "Глава 11: Инструменты мастера"
-        },        
-        {
-            "id": "Appendix A: Conditions",
-            "name": "Приложение A: Состояния"
-        },        
-        {
-            "id": "Appendix B: Gods and the Multiverse",
-            "name": "Приложение B: Боги и Мультивселенная"
-        },        
-        {
-            "id": "Appendix C: Creatures",
-            "name": "Приложение C: Существа"
-        },        
-        {
-            "id": "Appendix D: Senses and Speeds",
-            "name": "Приложение D: Чувства и типы перемещения"
+  "label": "Правила (SRD)",
+  "entries": [
+    {
+      "id": "Disclaimer",
+      "name": "Информация о лицензии",
+      "pages": {
+        "Disclaimer": {
+          "name": "Информация о лицензии",
+          "text": "<blockquote>\n<p>Правила были адаптированы из <a href=\"https://dnd.wizards.com/articles/features/systems-reference-document-srd\">System Reference Document</a> под Open Game License (текст лицензии доступен в папке User Data/systems/dnd5e).</p>\n<p>Дополнительная информация, вроде создания персонажей, доступна в бесплатных <a href=\"https://dnd.wizards.com/articles/features/basicrules\">Basic Rules</a></p></blockquote>"
         }
-    ]
+      }
+    },
+    {
+      "id": "Chapter 1: Beyond 1st Level",
+      "name": "Глава 1: Развитие персонажа"
+    },
+    {
+      "id": "Chapter 2: Races",
+      "name": "Глава 2: Расы"
+    },
+    {
+      "id": "Chapter 3: Classes",
+      "name": "Глава 3: Классы"
+    },
+    {
+      "id": "Chapter 4: Personality and Background",
+      "name": "Глава 4: Личность и происхождение"
+    },
+    {
+      "id": "Chapter 5: Equipment",
+      "name": "Глава 5: Снаряжение"
+    },
+    {
+      "id": "Chapter 6: Customization Options",
+      "name": "Глава 6: Варианты индивидуализации"
+    },
+    {
+      "id": "Chapter 7: Using Ability Scores",
+      "name": "Глава 7: Использование характеристик"
+    },
+    {
+      "id": "Chapter 8: Adventuring",
+      "name": "Глава 8: Приключения"
+    },
+    {
+      "id": "Chapter 9: Combat",
+      "name": "Глава 9: Бой"
+    },
+    {
+      "id": "Chapter 10: Spellcasting",
+      "name": "Глава 10: Заклинания"
+    },
+    {
+      "id": "Chapter 11: DM Tools",
+      "name": "Глава 11: Инструменты мастера"
+    },
+    {
+      "id": "Appendix A: Conditions",
+      "name": "Приложение А: Состояния",
+      "pages": {
+        "Conditions": {
+          "name": "Состояния",
+          "text": "<p>Cостояния существа влияют на его способности самым разным образом. Они могут возникать из-за заклинаний, классовых особенностей или других воздействий. Большинство состояний, например слепота, вредят персонажу, но некоторые, например невидимость, могут принести пользу.</p><p>Состояние длится, пока его не нарушат (к примеру, состояние распластанности нарушается, если встать) или пока не пройдёт длительность эффекта, который его вызвал.</p><p>Если несколько разных эффектов вызывают одно и то же состояние, у каждого из них своя длительность, но состояние не становится хуже. У существа либо есть состояние, либо нет.</p><p>Ниже описывается, как те или иные состояния влияют на существо.</p>"
+        },
+        "Blinded": {
+          "name": "Слепота",
+          "text": "<ul><li>Ослеплённое существо не может видеть и автоматически проваливает проверки характеристик, требующие зрения.</li><li>Броски атаки против этого существа получают преимущество, а броски атак самого существа получают помеху.</li></ul>"
+        }
+      }
+    },
+    {
+      "id": "Appendix B: Gods and the Multiverse",
+      "name": "Приложение Б: Боги и мультивселенная"
+    },
+    {
+      "id": "Appendix C: Creatures",
+      "name": "Приложение В: Существа"
+    },
+    {
+      "id": "Appendix D: Senses and Speeds",
+      "name": "Приложение Г: Восприятие и типы перемещения"
+    }
+  ]
 }
