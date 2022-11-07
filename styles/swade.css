@@ -8,6 +8,45 @@
   src: url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap");
 }
 
+@font-face {
+  font-family: "Treacherous Corners";
+  src: url("../fonts/Beaufort/Beaufort-Medium.otf") format("opentype");
+}
+
+/* Noto Serif */
+
+@font-face {
+  font-family: "Romic";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Noto_Serif/NotoSerif-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Romic";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Noto_Serif/NotoSerif-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Romic";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Noto_Serif/NotoSerif-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Romic";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Noto_Serif/NotoSerif-Bold.ttf") format("truetype");
+}
+
 /* SWADE */
 
 form .form-group > label {
@@ -45,6 +84,7 @@ form .form-group > label {
 
 .swade.sheet .tabs .item {
   font-family: "Roboto Slab", sans-serif;
+  font-size: 1em;
   font-weight: 600;
 }
 
@@ -116,12 +156,9 @@ form .form-group > label {
   font-family: "Roboto Slab";
 }
 
-#pause {
-  font-family: "Roboto Slab";
-  font-weight: 600;
-}
 
 /* DEADLANDS */
+
 .swade-official.actor.deadlands-sheet {
   --section-header-size: 1.3em;
   --section-header-font: "Roboto Slab", sans-serif;
@@ -144,9 +181,37 @@ form .form-group > label {
   font-family: var(--font-serif);
 }
 
-.swade.sheet.actor.npc .header-field {
-  text-transform: uppercase;
-  color: var(--color-white);
-  font-size: var(--text-xs);
-  font-weight: 500;
+.swpf-core h2.trap, .swpf-core h2.red-award, .swpf-core h2.white-award {
+  max-width: 16em;
 }
+
+.swpf-core h1.wide {
+  text-shadow: 5px 5px 5px #00000087, 5px 5px 5px #00000087;
+}
+
+.swpf-core .chapter-heading h1 {
+  font-size: 5em;
+  font-weight: 900;
+}
+
+.sheet.journal-entry.swpf-wrapper .pages-list .page-heading {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.swpf-sheet.swade-official.actor {
+  --section-header-font: var(--font-fancy);
+  --default-font: var(--font-serif);
+}
+
+.swpf-sheet .tabs .item {
+  font-family: var(--font-fancy);
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.swpf-compendium .window-content {
+  font-family: var(--font-serif);
+  font-size: 11pt;
+}
+
