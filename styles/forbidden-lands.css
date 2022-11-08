@@ -93,6 +93,8 @@ button {
 }
 
 
+
+
 .fa-comments,
 .fa-suitcase { 
   font-size: var(--font-size-16);
@@ -109,4 +111,18 @@ button {
 
 .forbidden-lands .roll-action {
   font-family: var(--font-sans-condensed);
+}
+
+.forbidden-lands .character .conditions-grid {
+  display: flex;
+  flex-flow: column;
+  gap: 5% 5%;
+  place-content: space-between;
+  padding: 5% 5%;
+}
+
+.forbidden-lands .conditions-grid a.condition {
+  display: inline-flex;
+  justify-content: space-between !important;
+  grid: none;
 }
