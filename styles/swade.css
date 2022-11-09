@@ -64,8 +64,8 @@
 
 .swade-official {
   --section-header-size: 1.4em;
-  --section-header-font: "Roboto Slab", sans-serif;
-  --default-font: var(--font-serif);
+  --section-header-font: var(--font-sans);
+  --default-font: var(--font-sans);
 }
 
 .swade.sheet.actor .sheet-header .charline .charname {
@@ -107,9 +107,9 @@
 }
 
 .swade-official .primary .attribute-label {
-  font-size: 10px;
+  font-size: 11px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   font-family: var(--font-sans-condensed);
 }
 
@@ -140,12 +140,16 @@
 }
 
 .swade-official .charname {
-  font-family: var(--font-serif);
+  font-family: var(--font-fancy);
   font-weight: 600;
 }
 
 .swade-official .skills .skill-die {
   font-weight: 600;
+}
+
+.swade-official .item-name button {
+  font-family: var(--font-sans-condensed);
 }
 
 .swade.sheet.actor.npc .vitals-container {
@@ -163,7 +167,7 @@
 .swade-official.actor.deadlands-sheet {
   --section-header-size: 1.3em;
   --section-header-font: "Roboto Slab", sans-serif;
-  --default-font: var(--font-serif);
+  --default-font: var(--font-sans);
 }
 
 .deadlands-core {
@@ -202,7 +206,7 @@
 
 .swpf-sheet.swade-official.actor {
   --section-header-font: var(--font-fancy);
-  --default-font: var(--font-serif);
+  --default-font: var(--font-sans);
 }
 
 .swpf-sheet .tabs .item {
@@ -216,3 +220,13 @@
   font-size: 11pt;
 }
 
+
+.swpf-sheet .branding::before {
+  display: none;
+}
+
+.swade-official .branding {
+  background-image: url(../images/swade/logo.png);
+  width: auto;
+  height: 95px;
+}
