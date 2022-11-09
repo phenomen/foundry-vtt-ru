@@ -1,20 +1,19 @@
 # Русский перевод для Foundry VTT
 
+Модуль добавляет поддержку русского языка в Foundry VTT, многие системы и модули.
+
 - **Разработка и поддержка**: Phenomen#1337
-- **Версия**: 10.288
-- **Foundry VTT**: V10
+- **Требуемая версия Foundry VTT**: V10.288
 
 ## Ссылки
 
 - Github: https://github.com/phenomen/foundry-vtt-ru
 - Manifest: https://github.com/phenomen/foundry-vtt-ru/raw/master/module.json
 - Модуль на сайте Foundry VTT: https://foundryvtt.com/packages/ru-ru/
-- Русскоязычное сообщество Foundry VTT: https://discord.gg/Z2CXFy35WF
+- Русскоязычное сообщество Foundry в Discord: https://discord.gg/Z2CXFy35WF
 - Проект совместной локализации на Transifex: https://www.transifex.com/foundry-vtt-ru/foundry-vtt-russian-translation/
 
 ## Установка и настройка
-
-Модуль добавляет поддержку русского языка в Foundry VTT, многие системы и модули.
 
 **Нужно выполнить один раз:**
 
@@ -44,7 +43,6 @@
 - City of Mist (Город Тумана)
 - Coriolis (Кориолис)
 - Cyberpunk RED
-- Cypher
 - Death in Space
 - Delta Green
 - Dungeon Crawl Classics
@@ -59,7 +57,7 @@
 - Savage Worlds (Дневник Авантюриста)
 - Shadow of the Demon Lord
 - Star Trek Adventures (Звёздный Путь)
-- Starfinder
+- Starfinder + Beginner Box
 - Tales from the Loop (Тайны Эхосферы)
 - The One Ring 2e
 - The Witcher (Ведьмак)
