@@ -69,17 +69,17 @@
 }
 
 .swade.sheet.actor .sheet-header .charline .charname {
-  font-family: "Roboto Slab";
+  font-family: var(--font-serif);
   font-size: 35px;
 }
 
 .swade-official .label {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: var(--font-sans-condensed);
   font-weight: bold;
 }
 
 .swade.sheet .tabs .item {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: var(--font-sans-condensed);
   font-size: 1em;
   font-weight: 600;
 }
@@ -89,8 +89,8 @@
 }
 
 .swade-official .tabs .item {
-  font-family: "Roboto Slab", sans-serif;
-  font-size: 1.2em;
+  font-family: var(--font-sans-condensed);
+  font-size: 1.1em;
 }
 
 .swade .check-container,
@@ -140,7 +140,7 @@
 }
 
 .swade-official .charname {
-  font-family: var(--font-fancy);
+  font-family: var(--font-serif);
   font-weight: 600;
 }
 
@@ -153,7 +153,7 @@
 }
 
 .swade.sheet.actor.npc .vitals-container {
-  font-family: "Roboto Slab";
+  font-family: var(--font-sans-condensed);
 }
 
 .combat-sidebar .combat-tracker-header div.encounter-controls .encounter-title {
@@ -162,11 +162,19 @@
   line-height: normal;
 }
 
+.swade-app button {
+  font-family: var(--font-sans-condensed);
+}
+
 /* DEADLANDS */
+
+.deadlands-sheet input.charname {
+  font-family: "Roboto Slab";
+}
 
 .swade-official.actor.deadlands-sheet {
   --section-header-size: 1.3em;
-  --section-header-font: "Roboto Slab", sans-serif;
+  --section-header-font: "Roboto Slab";
   --default-font: var(--font-sans);
 }
 
@@ -177,7 +185,7 @@
 .deadlands-sheet .tabs .item {
   font-family: "Roboto Slab";
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 0.9em;
 }
 
 /* PATHFINDER */
@@ -186,7 +194,9 @@
   font-family: var(--font-serif);
 }
 
-.swpf-core h2.trap, .swpf-core h2.red-award, .swpf-core h2.white-award {
+.swpf-core h2.trap,
+.swpf-core h2.red-award,
+.swpf-core h2.white-award {
   max-width: 16em;
 }
 
@@ -219,7 +229,6 @@
   font-family: var(--font-serif);
   font-size: 11pt;
 }
-
 
 .swpf-sheet .branding::before {
   display: none;
