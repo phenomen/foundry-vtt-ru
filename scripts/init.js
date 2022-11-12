@@ -13,7 +13,10 @@ import { InitSFRPGBB } from "./system-sfrpgbb.js";
 
 Hooks.once("init", async () => {
   // Load system-specific CSS styles
-  loadCSS("modules/ru-ru/styles/" + game.system.id.toLowerCase() + ".css");
+  var systemCSS = document.createElement("link");
+  systemCSS.rel = "stylesheet";
+  systemCSS.href = "modules/ru-ru/styles/" + game.system.id.toLowerCase() + ".css";
+  document.head.insertBefore(systemCSS, document.head.childNodes[document.head.childNodes.length - 1].nextSibling);
 
   const cyrillicFonts = [
     "Arial",
@@ -35,9 +38,7 @@ Hooks.once("init", async () => {
     "Exocet",
   ];
 
-  game.version < 10
-    ? (CONFIG.fontFamilies = cyrillicFonts)
-    : (CONFIG._fontFamilies = cyrillicFonts);
+  game.version < 10 ? (CONFIG.fontFamilies = cyrillicFonts) : (CONFIG._fontFamilies = cyrillicFonts);
 
   // Add Cyrillic fonts to the font list
   game.settings.register("ru-ru", "tokenFontFamily", {
@@ -55,8 +56,7 @@ Hooks.once("init", async () => {
   });
 
   CONFIG.defaultFontFamily = "Noto Sans";
-  CONFIG.canvasTextStyle.fontFamily =
-    cyrillicFonts[game.settings.get("ru-ru", "tokenFontFamily")];
+  CONFIG.canvasTextStyle.fontFamily = cyrillicFonts[game.settings.get("ru-ru", "tokenFontFamily")];
 
   //System-specific scripts
 
@@ -106,10 +106,7 @@ Hooks.once("init", async () => {
   }
 
   // MASKS
-  if (
-    game.system.id === "pbta" &&
-    game.modules.get("masks-newgeneration-sheets")?.active
-  ) {
+  if (game.system.id === "pbta" && game.modules.get("masks-newgeneration-sheets")?.active) {
     InitMASKS();
   }
 
