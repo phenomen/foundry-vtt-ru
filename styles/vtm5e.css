@@ -13,7 +13,6 @@
 @font-face {
   font-family: "cormorantLight";
   src: url("../fonts/Beaufort/Beaufort-Bold.otf") format("opentype");
-  font-weight: 700;
 }
 
 .sheet header.sheet-header h1,
@@ -23,5 +22,14 @@
 
 .vtm5e .window-content .abilities .ability .resource-label,
 .vtm5e .window-content .resource-label {
-  font-size: 16px;
+  font-weight: 500;
+}
+
+.vtm5e .window-content nav.sheet-tabs {
+  align-items: center;
+}
+
+.roll-label {
+  font-family: var(--font-fancy);
+  font-size: 110%;
 }
