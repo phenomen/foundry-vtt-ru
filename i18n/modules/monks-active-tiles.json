@@ -9,6 +9,7 @@
   "MonksActiveTiles.PlayerTokens": "Токены игроков",
   "MonksActiveTiles.CurrentLocation": "Текущее местоположение",
   "MonksActiveTiles.WithinTile": "Токены внутри тайла",
+  "MonksActiveTiles.WithinWall": "Тайлы под дверью",
   "MonksActiveTiles.CurrentCollection": "Текущие {collection}",
   "MonksActiveTiles.Origin": "Оригинальное место назначения",
   "MonksActiveTiles.Controlled": "Токены под управлением",
@@ -110,6 +111,7 @@
   "MonksActiveTiles.filter.first": "Позиция в списке",
   "MonksActiveTiles.filter.attribute": "Фильтр по атрибутам",
   "MonksActiveTiles.filter.inventory": "Фильтр по предметам в инвентаре",
+  "MonksActiveTiles.filter.condition": "Фильтр состояния",
 
   "MonksActiveTiles.logic.anchor": "Вход",
   "MonksActiveTiles.logic.goto": "Переход ко входу",
@@ -217,6 +219,10 @@
   "MonksActiveTiles.ctrl.loops": "Повторы",
   "MonksActiveTiles.ctrl.rotation": "Поворот",
   "MonksActiveTiles.ctrl.rolldice": "Бросок кости, если требуется",
+  "MonksActiveTiles.ctrl.positioning": "Расположение",
+  "MonksActiveTiles.ctrl.waitresponse": "Ожидание ответа",
+  "MonksActiveTiles.ctrl.landing": "Вход",
+  "MonksActiveTiles.ctrl.washcolour": "Цвет размытия",
 
   "MonksActiveTiles.mode.enter": "Вход",
   "MonksActiveTiles.mode.exit": "Выход",
@@ -236,8 +242,10 @@
   "MonksActiveTiles.mode.combatstart": "Начало боя",
   "MonksActiveTiles.mode.combatend": "Окончание боя",
   "MonksActiveTiles.mode.canvasready": "Смена сцены",
-  "MonksActiveTiles.mode.elevation": "Изменение высоты",
+  "MonksActiveTiles.mode.elevation": "Высота",
+  "MonksActiveTiles.mode.rotation": "Поворот",
   "MonksActiveTiles.mode.create": "Создание токена",
+  "MonksActiveTiles.mode.door": "Дверной триггер",
 
   "MonksActiveTiles.restrict.all": "Разрешить все токены",
   "MonksActiveTiles.restrict.player": "Только токены игроков",
@@ -284,6 +292,7 @@
   "MonksActiveTiles.animate.start": "Начало",
   "MonksActiveTiles.animate.pause": "Пауза",
   "MonksActiveTiles.animate.stop": "Остановка",
+  "MonksActiveTiles.animate.toggle": "Переключение",
 
   "MonksActiveTiles.pause.pause": "Пауза",
   "MonksActiveTiles.pause.unpause": "Снятие с паузы",
@@ -300,6 +309,7 @@
   "MonksActiveTiles.attack.action": "Действие",
   "MonksActiveTiles.attack.weapon": "Оружие",
   "MonksActiveTiles.attack.melee": "Ближний бой",
+  "MonksActiveTiles.attack.consumable": "Расходуемый",
 
   "MonksActiveTiles.rollmode.public": "Публичный бросок",
   "MonksActiveTiles.rollmode.private": "Приватный бросок (GM)",
@@ -323,6 +333,10 @@
   "MonksActiveTiles.target.appendtarget": "Добавление доп. целей",
   "MonksActiveTiles.target.overwritetarget": "Смена целей",
   "MonksActiveTiles.target.clear": "Очистка всех целей",
+
+  "MonksActiveTiles.position.random": "Случайно внутри",
+  "MonksActiveTiles.position.center": "По центру",
+  "MonksActiveTiles.position.relative": "Относительно входа",
 
   "MonksActiveTiles.transition.none": "Нет",
   "MonksActiveTiles.transition.fade": "Затухание",
@@ -358,6 +372,7 @@
   "MonksActiveTiles.msg.useplayers": "Использование токенов игроков",
   "MonksActiveTiles.msg.useplayersjournal": "Использование журнала игрока",
   "MonksActiveTiles.msg.usewithin": "Использование токенов внутри триггерного тайла",
+  "MonksActiveTiles.msg.usewithinwall": "Срабатывание триггера тайла под дверью",
   "MonksActiveTiles.msg.useprevious": "Использование текущей коллекции действий",
   "MonksActiveTiles.msg.usepreviouslocation": "Использование действий в текущем местоположении",
   "MonksActiveTiles.msg.usecontrolled": "Использование токенов под управлением",
