@@ -9,6 +9,7 @@ import { InitINVESTIGATOR } from "./system-investigator.js";
 import { InitCOC7 } from "./system-coc7.js";
 import { InitMASKS } from "./system-masks.js";
 import { InitSFRPGBB } from "./system-sfrpgbb.js";
+import { InitFL } from "./system-forbidden-lands.js";
 //import { InitAOS } from "./system-age-of-sigmar-soulbound.js";
 
 Hooks.once("init", async () => {
@@ -88,6 +89,11 @@ Hooks.once("init", async () => {
   // DUNGEON WORLD
   if (game.system.id === "dungeonworld") {
     InitDUNGEONWORLD();
+  }
+
+  // FORBIDDEN LANDS
+  if (game.system.id === "forbidden-lands") {
+    InitFL();
   }
 
   // INVESTIGATOR
