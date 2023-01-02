@@ -237,12 +237,11 @@
 
 body,
 button {
-	font-size: var(--font-size-14);
+  font-size: var(--font-size-14);
 }
 
 button {
-	font-family: Poppins;
-  font-weight: 600;
+  font-family: Poppins;
 }
 
 .fbl-button {
@@ -251,7 +250,7 @@ button {
 }
 
 .fa-comments,
-.fa-suitcase { 
+.fa-suitcase {
   font-size: var(--font-size-16);
 }
 
@@ -284,11 +283,6 @@ button {
   grid: none;
 }
 
-.journal-sheet .journal-header .title,
-.journal-sheet .page-title {
-  font-weight: 600;
-}
-
 .journal-sheet .fbl-italic {
   font-style: italic;
 }
@@ -298,20 +292,19 @@ button {
 }
 
 .journal-sheet .fbl-italic.fbl-centered {
-  font-size: var(--font-size-18)
+  font-size: var(--font-size-18);
 }
 
 .journal-sheet .pages-list {
   font-family: Poppins;
 }
 
-
 /* TEMP FIX UNTIL FREE LEAGUE HANDLE THIS */
 .journal-sheet .big-first-char {
   font-size: var(--font-size-32);
   margin-right: -8px;
 }
-
+/* TEMP FIX UNTIL FREE LEAGUE HANDLE THIS */
 .journal-sheet .big-first-char::before {
   visibility: hidden;
   display: none;
@@ -320,10 +313,6 @@ button {
 .journal-sheet h2,
 .journal-sheet h3 {
   font-weight: 700;
-}
-
-.journal-sheet h4 {
-  font-weight: 600;
 }
 
 .journal-sheet .fbl-uppercase,
@@ -340,8 +329,7 @@ button {
   font-size: var(--font-size-14);
 }
 
-
-.forbidden-lands .gear-tab .gears .items>table thead {
+.forbidden-lands .gear-tab .gears .items > table thead {
   font-size: var(--font-size-11);
 }
 
@@ -350,9 +338,18 @@ button {
   text-transform: uppercase;
 }
 
+button,
+.journal-sheet h4,
+.journal-sheet .journal-header .title,
+.journal-sheet .page-title,
+.forbidden-lands input[type="text"],
+.forbidden-lands input[type="number"],
 .forbidden-lands .attributes .value,
 .forbidden-lands .skills .value,
-.forbidden-lands .attributes .value input, { 
+.forbidden-lands .attributes .value input,
+.forbidden-lands .item-list .items .item,
+.forbidden-lands .gear-tab .gears .items > table th,
+.forbidden-lands .gear-tab .gears .items > table td {
   font-weight: 600;
 }
 
@@ -367,6 +364,10 @@ button {
 .forbidden-lands .attributes .rotated::before {
   visibility: hidden;
   display: none;
+}
+
+.forbidden-lands.sheet label {
+  font-family: Poppins;
 }
 
 #menu {
