@@ -301,13 +301,26 @@ button {
 
 /* TEMP FIX UNTIL FREE LEAGUE HANDLE THIS */
 .journal-sheet .big-first-char {
-  font-size: var(--font-size-32);
-  margin-right: -8px;
+  float: left;
+  font-size: var(--text-7xl);
+  line-height: var(--text-5xl);
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
 }
 /* TEMP FIX UNTIL FREE LEAGUE HANDLE THIS */
 .journal-sheet .big-first-char::before {
   visibility: hidden;
   display: none;
+}
+
+.fbl-branding-bold,
+.fbl-branding {
+  font-family: Branding;
+}
+
+.fbl-branding-bold {
+  font-weight: 500;
 }
 
 .journal-sheet h2,
@@ -367,7 +380,7 @@ button,
 }
 
 .forbidden-lands.item .weight {
-    gap: 0px; 
+  gap: 0px;
 }
 
 .forbidden-lands.sheet label {
