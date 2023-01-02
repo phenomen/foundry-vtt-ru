@@ -2,6 +2,8 @@
   --color-red-dnd: #58180d;
   --color-yellow-dnd: #c9ad6a;
   --color-green-dnd: #e0e5c1;
+  --color-black: #000000;
+  --color-white: #ffffff;
   --syb5e-pc-font: var(--font-fancy) !important;
   --syb5e-npc-font: var(--font-fancy) !important;
 }
@@ -505,12 +507,7 @@
   font-size: 0.6rem;
 }
 
-.mobile-improvements
-  .dnd5e.sheet.actor
-  ul.attributes
-  li.attribute
-  .attribute-value
-  > * {
+.mobile-improvements .dnd5e.sheet.actor ul.attributes li.attribute .attribute-value > * {
   font-size: 1rem;
 }
 
@@ -518,11 +515,7 @@
   font-size: var(--text-sm);
 }
 
-.mobile-improvements
-  .dnd5e.sheet.actor.character
-  .resource
-  .attribute-value
-  label.recharge {
+.mobile-improvements .dnd5e.sheet.actor.character .resource .attribute-value label.recharge {
   font-size: 0.6rem;
 }
 
@@ -537,12 +530,12 @@
   color: var(--color-red-dnd);
 }
 
-/* LOTR */ 
+/* LOTR */
 
 .dnd5e.sheet.actor .ability-name h4,
 .dnd5e.sheet.actor h4.box-title-small {
   font-family: var(--font-fancy) !important;
-} 
+}
 
 /* ARGON HUD */
 

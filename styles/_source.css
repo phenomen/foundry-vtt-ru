@@ -23,9 +23,6 @@
   --text-6xl: 3.75rem;
   --text-7xl: 4.5rem;
   --text-8xl: 6rem;
-
-  --color-black: #000000;
-  --color-white: #ffffff;
 }
 
 /* FOUNDRY */
@@ -36,11 +33,7 @@ body {
 
 button {
   font-family: var(--font-sans-condensed);
-  line-height: normal;
   font-weight: 500;
-  align-items: center;
-  align-content: center;
-  padding: 4px 2px;
 }
 
 select {
@@ -108,11 +101,13 @@ form .form-group label {
   font-size: var(--text-sm);
 }
 
-.updated-packages-table th.package, .updated-packages-table td.package {
+.updated-packages-table th.package,
+.updated-packages-table td.package {
   width: 450px;
 }
 
-.updated-packages-table th.action, .updated-packages-table td.action {
+.updated-packages-table th.action,
+.updated-packages-table td.action {
   width: 150px;
 }
 
@@ -150,4 +145,3 @@ form .form-group label {
 .monks-active-tiles.sheet .items-list .items-header > * {
   font-family: var(--font-sans-condensed) !important;
 }
-
