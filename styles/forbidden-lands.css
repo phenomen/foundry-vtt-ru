@@ -334,9 +334,9 @@ button {
   text-transform: uppercase;
 }
 
-.forbidden-lands .character .roll-skill,
-.forbidden-lands .character .roll-attribute,
-.forbidden-lands .character .conditions-grid a.condition {
+.forbidden-lands .roll-skill,
+.forbidden-lands .roll-attribute,
+.forbidden-lands .conditions-grid a.condition {
   font-family: Poppins;
   font-weight: 600;
   font-size: var(--font-size-14);
@@ -352,6 +352,8 @@ button {
 }
 
 button,
+select,
+select option,
 .journal-sheet h4,
 .journal-sheet .journal-header .title,
 .journal-sheet .page-title,
@@ -362,7 +364,8 @@ button,
 .forbidden-lands .attributes .value input,
 .forbidden-lands .item-list .items .item,
 .forbidden-lands .gear-tab .gears .items > table th,
-.forbidden-lands .gear-tab .gears .items > table td {
+.forbidden-lands .gear-tab .gears .items > table td,
+.combat-sidebar li.combatant .token-name h4 {
   font-weight: 600;
 }
 
@@ -372,11 +375,19 @@ button,
   padding: 0 4px 4px;
 }
 
-.forbidden-lands .attributes .fas .fa-slash,
-.forbidden-lands .attributes .rotated,
-.forbidden-lands .attributes .rotated::before {
-  visibility: hidden;
-  display: none;
+.forbidden-lands div.value {
+  justify-content: space-between;
+}
+
+.forbidden-lands .attributes .rotated {
+  transform: none;
+  font-size: var(--font-size-12);
+}
+
+.forbidden-lands .attributes .fa-slash:before {
+  content: "/";
+  font-size: var(--font-size-12);
+  padding: 0px;
 }
 
 .forbidden-lands.item .weight {
@@ -386,6 +397,37 @@ button,
 .forbidden-lands.sheet label {
   font-size: var(--font-size-14);
   font-family: Poppins;
+}
+
+.combat-sidebar li.combatant .token-name,
+.combat-sidebar li.combatant .token-initiative .initiative {
+  text-shadow: none;
+  font-family: Poppins;
+  font-weight: 600;
+}
+
+.combat-sidebar li.combatant .token-initiative {
+  flex: 0 0 45px;
+}
+
+.combat-sidebar li.combatant .token-image {
+  margin-left: 2px;
+}
+
+.combat-sidebar #combat-controls a {
+  font-family: Poppins;
+  font-weight: 700;
+}
+
+.combat-sidebar li.combatant .token-initiative {
+  border-right-style: solid;
+  border-right-width: 3px;
+  border-right-color: #000000 !important;
+}
+
+.directory .directory-item.context,
+.directory .directory-item.active {
+  border-color: #000000 !important;
 }
 
 #menu {
