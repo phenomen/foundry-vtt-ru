@@ -9,7 +9,7 @@ import { InitINVESTIGATOR } from "./system-investigator.js";
 import { InitCOC7 } from "./system-coc7.js";
 import { InitMASKS } from "./system-masks.js";
 import { InitSFRPGBB } from "./system-sfrpgbb.js";
-import { InitFL } from "./system-forbidden-lands.js";
+import { InitFBL } from "./system-fbl.js";
 //import { InitAOS } from "./system-age-of-sigmar-soulbound.js";
 
 Hooks.once("init", async () => {
@@ -39,7 +39,7 @@ Hooks.once("init", async () => {
     "Exocet",
   ];
 
-  game.version < 10 ? (CONFIG.fontFamilies = cyrillicFonts) : (CONFIG._fontFamilies = cyrillicFonts);
+  CONFIG._fontFamilies = cyrillicFonts;
 
   // Add Cyrillic fonts to the font list
   game.settings.register("ru-ru", "tokenFontFamily", {
@@ -93,7 +93,7 @@ Hooks.once("init", async () => {
 
   // FORBIDDEN LANDS
   if (game.system.id === "forbidden-lands") {
-    InitFL();
+    InitFBL();
   }
 
   // INVESTIGATOR
@@ -125,4 +125,9 @@ Hooks.once("init", async () => {
   //if (game.system.id === "age-of-sigmar-soulbound") {
   //  InitAOS();
   //}
+
+  // QUICK INSERT FIX
+  if (game.modules.get("quick-insert")?.active) {
+    await game.settings.set("quick-insert", "EMBEDDED_INDEXING", true);
+  }
 });
