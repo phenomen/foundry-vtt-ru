@@ -128,6 +128,8 @@ Hooks.once("init", async () => {
 
   // QUICK INSERT FIX
   if (game.modules.get("quick-insert")?.active) {
-    await game.settings.set("quick-insert", "EMBEDDED_INDEXING", true);
+    Hooks.on("ready", async function () {
+      await game.settings.set("quick-insert", "embeddedIndexing", true);
+    });
   }
 });
