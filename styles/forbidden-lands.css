@@ -158,6 +158,17 @@
 }
 @font-face {
   font-family: Poppins;
+  src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Montserrat/Montserrat-MediumItalic.ttf");
+  font-style: italic;
+  font-weight: 500;
+}
+@font-face {
+  font-family: Poppins;
   src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf");
   font-weight: 600;
 }
@@ -190,6 +201,17 @@
   src: url("../fonts/Montserrat/Montserrat-Italic.ttf");
   font-style: italic;
   font-weight: 400;
+}
+@font-face {
+  font-family: Branding;
+  src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Branding;
+  src: url("../fonts/Montserrat/Montserrat-MediumItalic.ttf");
+  font-style: italic;
+  font-weight: 500;
 }
 @font-face {
   font-family: Branding;
@@ -266,7 +288,11 @@ button {
 .forbidden-lands .roll-action {
   font-family: Poppins;
   font-weight: 600;
-  font-size: var(--font-size-14);
+  font-size: var(--font-size-12);
+}
+
+.forbidden-lands .character .weapons .weapon .weapon-actions {
+  flex-basis: 24%;
 }
 
 .forbidden-lands .character .conditions-grid {
@@ -287,6 +313,11 @@ button {
   font-weight: 600;
   font-family: Poppins;
   font-size: var(--text-sm);
+}
+
+.roll-dialog {
+  padding: 0 1rem;
+  gap: 0.6rem;
 }
 
 .journal-sheet .fbl-italic {
