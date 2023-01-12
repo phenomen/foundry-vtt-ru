@@ -77,6 +77,10 @@ button {
 
 /* CUSTOM STYLES */
 
+.fbl-button.push {
+  width: max(100%);
+}
+
 a.inline-roll {
   font-family: var(--font-fancy) !important;
 }
@@ -135,6 +139,8 @@ a.inline-roll {
   font-size: var(--font-size-12);
 }
 
+.fbl-button,
+.roll-dialog .form-actions button,
 .sheet.journal-entry .pages-list .page-heading .page-title,
 .app.journal-sheet .journal-entry-content h1,
 .app.journal-sheet .journal-entry-content h2,
@@ -177,6 +183,7 @@ select option,
 .forbidden-lands .skills .value,
 .forbidden-lands .attributes .value input,
 .forbidden-lands .item-list .items .item,
+.forbidden-lands .character .spells .spell .name .roll-spell,
 .forbidden-lands .gear-tab .gears .items > table th,
 .forbidden-lands .gear-tab .gears .items > table td,
 .combat-sidebar li.combatant .token-name h4 {
@@ -246,8 +253,4 @@ select option,
 .directory .directory-item.context,
 .directory .directory-item.active {
   border-color: #000000 !important;
-}
-
-.forbidden-lands.chat-item p {
-  font-size: var(--font-size-13);
 }
