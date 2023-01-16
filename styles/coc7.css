@@ -96,18 +96,42 @@
 
 @font-face {
   font-family: "customSheetFont";
-  src: url("../fonts/Beaufort/Beaufort-Regular.otf") format("opentype");
+  src: url("../fonts/Beaufort/Beaufort-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "customSheetFont";
-  src: url("../fonts/Beaufort/Beaufort-Medium.otf") format("opentype");
+  src: url("../fonts/Beaufort/Beaufort-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "customSheetFont";
+  src: url("../fonts/Beaufort/Beaufort-Medium.ttf") format("truetype");
   font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "customSheetFont";
-  src: url("../fonts/Beaufort/Beaufort-Bold.otf") format("opentype");
-  font-weight: 600;
+  src: url("../fonts/Beaufort/Beaufort-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "customSheetFont";
+  src: url("../fonts/Beaufort/Beaufort-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "customSheetFont";
+  src: url("../fonts/Beaufort/Beaufort-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
 }
