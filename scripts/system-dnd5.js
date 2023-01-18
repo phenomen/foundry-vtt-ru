@@ -82,7 +82,18 @@ export function InitDND5() {
     const translations = await wrapped(lang);
     const promises = [];
 
-    promises.push(this._loadTranslationFile(`modules/ru-ru/i18n/systems/dnd5e-alt.json`));
+    promises.push(
+      this._loadTranslationFile(`modules/ru-ru/i18n/systems/dnd5e-alt.json`),
+      this._loadTranslationFile(`modules/ru-ru/i18n/modules/always-hp-alt.json`),
+      this._loadTranslationFile(`modules/ru-ru/i18n/modules/arbron-hp-bar-alt.json`),
+      this._loadTranslationFile(`modules/ru-ru/i18n/modules/combat-utility-belt-alt.json`),
+      this._loadTranslationFile(`modules/ru-ru/i18n/modules/dae-alt.json`),
+      this._loadTranslationFile(`modules/ru-ru/i18n/modules/damage-log-alt.json`),
+      this._loadTranslationFile(`modules/ru-ru/i18n/modules/health-monitor-alt.json`),
+      this._loadTranslationFile(`modules/ru-ru/i18n/modules/midi-qol-alt.json`),
+      this._loadTranslationFile(`modules/ru-ru/i18n/modules/tidy5e-sheet-alt.json`),
+      this._loadTranslationFile(`modules/ru-ru/i18n/modules/token-action-hud-alt.json`)
+    );
 
     await Promise.all(promises);
     for (let p of promises) {
