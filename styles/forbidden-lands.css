@@ -10,7 +10,15 @@
 /* HARDCODED FONT REPLACEMENTS */
 
 body,
-button {
+button,
+.app .journal-sheet-container.adventure-site .journal-entry-page.text em,
+.app .journal-sheet-container.adventure-site .journal-entry-page.text strong,
+.app .journal-sheet-container.adventure-site .journal-entry-page.text .room > .index-tip,
+.app.sheet .journal-page-content .fbl-box,
+.app.sheet .journal-page-content .fbl-box table.fbl-table,
+.app.sheet .journal-page-content .fbl-box h4,
+.app.sheet .journal-page-content .fbl-journal-info-box,
+.app.sheet .journal-page-content .fbl-core .fbl-branding-bold {
   font-family: var(--font-elegant);
 }
 
@@ -62,17 +70,6 @@ button {
 .consumable-result,
 .spell-roll {
   font-family: var(--font-fancy);
-}
-
-.app .journal-sheet-container.adventure-site .journal-entry-page.text em,
-.app .journal-sheet-container.adventure-site .journal-entry-page.text strong,
-.app .journal-sheet-container.adventure-site .journal-entry-page.text .room > .index-tip,
-.app.sheet .journal-page-content .fbl-box,
-.app.sheet .journal-page-content .fbl-box table.fbl-table,
-.app.sheet .journal-page-content .fbl-box h4,
-.app.sheet .journal-page-content .fbl-journal-info-box,
-.app.sheet .journal-page-content .fbl-core .fbl-branding-bold {
-  font-family: var(--font-elegant);
 }
 
 /* CUSTOM STYLES */
