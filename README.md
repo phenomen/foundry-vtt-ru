@@ -2,8 +2,8 @@
 
 Модуль добавляет поддержку русского языка в Foundry VTT, многие системы и модули.
 
-- **Разработка и поддержка**: Phenomen#1337
-- **Требуемая версия Foundry VTT**: V10.291
+- **Требуемая версия Foundry VTT**: 10.291
+- **Поддерживаемая версия Foundry VTT**: 11.292
 
 ## Ссылки
 
@@ -11,7 +11,6 @@
 - Manifest: https://github.com/phenomen/foundry-vtt-ru/raw/master/module.json
 - Модуль на сайте Foundry VTT: https://foundryvtt.com/packages/ru-ru/
 - Русскоязычное сообщество Foundry в Discord: https://discord.gg/Z2CXFy35WF
-- Проект совместной локализации на Transifex: https://www.transifex.com/foundry-vtt-ru/foundry-vtt-russian-translation/
 
 ## Установка и настройка
 
@@ -28,7 +27,11 @@
 3. Снова перейдите на вкладку **Настройки игры** и нажмите **Управление модулями**.
 4. Поставьте галочку напротив "Russian Translation | Русский перевод" и нажмите **Сохранить настройки**.
 
+**Примечание:** некоторые системы могут также требовать модули _Babele_ и _libWrapper_ для перевода содержимого библиотек.
+
 ## Информация о переводе
+
+**Разработка и поддержка**: Phenomen#1337
 
 Модуль в данный момент имеет перевод самого приложения Foundry VTT, а также:
 
@@ -46,11 +49,12 @@
 - Death in Space
 - Delta Green
 - Dungeon Crawl Classics
-- Dungeon World
+- Dungeon World (Мир Подземелий)
 - Dungeons & Dragons 5
 - Forbidden Lands (Запретные земли)
 - Genesys / Star Wars FFG
 - GUMSHOE (СЫШИК)
+- Ironsworn / Starforged
 - Mutants Year Zero (Мутанты. Точка Отсчёта)
 - Old-School Essentials
 - Pathfinder 1e
