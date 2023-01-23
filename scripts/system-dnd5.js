@@ -92,7 +92,8 @@ export function InitDND5() {
       this._loadTranslationFile(`modules/ru-ru/i18n/modules/health-monitor-alt.json`),
       this._loadTranslationFile(`modules/ru-ru/i18n/modules/midi-qol-alt.json`),
       this._loadTranslationFile(`modules/ru-ru/i18n/modules/tidy5e-sheet-alt.json`),
-      this._loadTranslationFile(`modules/ru-ru/i18n/modules/token-action-hud-alt.json`)
+      this._loadTranslationFile(`modules/ru-ru/i18n/modules/token-action-hud-alt.json`),
+      this._loadTranslationFile(`modules/ru-ru/i18n/modules/ready-set-roll-5e-alt.json`)
     );
 
     await Promise.all(promises);
