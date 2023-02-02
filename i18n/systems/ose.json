@@ -13,16 +13,22 @@
 
   "OSE.dialog.tweaks": "Опции",
   "OSE.dialog.partysheet": "Обзор партии",
+  "OSE.dialog.partysheetplaceholder": "Добавьте персонажей в группу, перетащив актёров в это окно.",
   "OSE.dialog.partyselect": "Выберите игроков",
   "OSE.dialog.createItem": "Создать предмет",
   "OSE.dialog.itemType": "Тип предмета",
   "OSE.dialog.itemName": "Название",
   "OSE.dialog.xp.deal": "Раздать ПО",
+  "OSE.dialog.xp.amount": "Количество",
   "OSE.dialog.xp.label": "ПО",
   "OSE.dialog.generator": "Генератор персонажа",
   "OSE.dialog.generateSaves": "Генерация испытаний",
   "OSE.dialog.generateScores": "Генерация характеристик",
   "OSE.dialog.generateScore": "Бросок {score} ({count})",
+  "OSE.dialog.shoppingCart": "Корзина",
+  "OSE.dialog.purchaseFor": "Купить за {totalCost}зм",
+  "OSE.dialog.deleteContainer": "Удалить контейнер?",
+  "OSE.dialog.confirmDeleteContainer": "Вы уверены, что хотите удалить контейнер?",
 
   "OSE.Formula": "Формула",
   "OSE.SitMod": "Ситуационный модификатор",
@@ -46,9 +52,10 @@
   "OSE.roll.reaction": "Проверка Реакции",
   "OSE.roll.initiative": "Группа {group} проверяет Инициативу!",
   "OSE.roll.individualInit": "{name} проверяет Инициативу!",
-  "OSE.roll.individualInitGroup": "Проверка инициативы",
+  "OSE.roll.individualInitGroup": "Проверки инициативы",
 
   "OSE.table.treasure.roll": "Проверка сокровищ",
+  "OSE.table.treasure.noItems": "Нет предметов",
 
   "OSE.details.name": "Имя",
   "OSE.details.class": "Класс",
@@ -60,6 +67,7 @@
   "OSE.details.experience.next": "Следующий уровень",
   "OSE.details.experience.share": "Доля опыта",
   "OSE.details.experience.award": "Награда ПО",
+  "OSE.details.special.abilities": "Особые способности",
   "OSE.details.treasure": "Тип сокровищ",
   "OSE.details.treasureTable": "Таблица",
   "OSE.details.treasureTableHint": "Перенесите сюда случайную таблицу для назначения сокровищ монстра",
@@ -192,8 +200,10 @@
   "OSE.Setting.EnableInventory": "Включить инвентарь",
   "OSE.Setting.applyDamageOption": "Цель урона",
   "OSE.Setting.applyDamageOptionHint": "Токен, которому будет нанесён урон от атаки",
-  "OSE.Setting.damageSelected": "Выделение",
+  "OSE.Setting.damageSelected": "Выбрано",
   "OSE.Setting.damageTarget": "Цель",
+  "OSE.Setting.InvertedCtrlBehavior": "Заменить бросок Ctrl",
+  "OSE.Setting.InvertedCtrlBehaviorHint": "Поменять поведение при удержании Ctrl при нажатии на бросок.",
 
   "OSE.items.Equip": "Надеть",
   "OSE.items.Unequip": "Снять",
@@ -224,6 +234,8 @@
   "OSE.items.enterTag": "Свойства",
   "OSE.items.pattern": "Метка атаки",
   "OSE.items.uses": "Исп.",
+  "OSE.items.gp.short": "зм",
+  "OSE.items.gp.long": "Золотые монеты",
 
   "OSE.items.Range": "Дистанционное",
   "OSE.items.Melee": "Ближнее",
@@ -295,5 +307,16 @@
   "OSE.reaction.Friendly": "{name} явно дружелюбен",
 
   "OSE.CombatFlag.SpellDeclared": "Объявлено заклинание",
-  "OSE.CombatFlag.RetreatFromMeleeDeclared": "Объявлен отдход из ближнего боя"
+  "OSE.CombatFlag.RetreatFromMeleeDeclared": "Объявлен отход из ближнего боя",
+
+  "OSE.warn.moreThanOneItemWithName": "Ваш актёр {actorName} имеет больше одного предмета с названием {itemName}. Будет выбран первый предмет.",
+  "OSE.warn.macrosOnlyForOwnedItems": "Только предметы во владении актёра могут быть помещены в макрос",
+  "OSE.warn.macrosNoTokenOwnedInScene": "На сцене нет токенов под контролем",
+
+  "OSE.error.macrosOnlyForOwnedItems": "Вы можете создавать макро-кнопки только для предметов во владении.",
+  "OSE.error.noItemWithName": "Ваш актёр {actorName} не имеет предмета с названием {itemName}.",
+  "OSE.error.notEnoughGP": "У актёра не достаточно монет для оплаты.",
+  "OSE.error.itemNoLongerExistsOnActor": "Предмет {itemId} отсутствует у актёра {actorName}.",
+  "OSE.error.noTokenControlled": "Вы должны контролировать один или несколько токенов, чтобы сделать это.",
+  "OSE.error.noGP": "Для использования вам нужен предмет Золотых монет."
 }

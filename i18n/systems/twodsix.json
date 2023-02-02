@@ -13,7 +13,20 @@
   "TWODSIX": {
     "ActiveEffects": {
       "DeleteEffect": "Убрать активный эффект",
-      "ConfirmDelete": "Вы уверены, что хотите удалить эффект?"
+      "ConfirmDelete": "Вы уверены, что хотите удалить эффект?",
+      "BaseValue": "Base",
+      "Modifiers": "Modifiers",
+      "EffectLabel": "Effect Label",
+      "Source": "Source",
+      "Duration": "Duration",
+      "Condition":"Condition",
+      "UnknownSource": "Unknown Source",
+      "EffectEnable": "Enable Effect",
+      "EffectDisable": "Disable Effect",
+      "Controls": "Controls",
+      "NewEffect": "New Effect",
+      "CreateEffect": "Create Effect",
+      "Add": "Add"
     },
     "Damage": {
       "DealDamage": "Нанести урон",
@@ -68,14 +81,17 @@
       },
       "Gender": "Пол",
       "HeroPoints": "Пункты героизма",
-      "Hits": "Hits",
+      "Hits": "Попадания",
+      "healing": "healing",
+      "damage": "damage",
+      "Applied": "Applied",
       "Contamination": "Заражение",
       "Lifeblood": "Здоровье",
       "Stamina": "Стойкость",
-      "Endurance": "Endurance",
+      "Endurance": "Выносливость",
       "RadiationExposure": "Облучение радиацией",
       "HomeWorld": "Родной мир",
-      "Nationality": "Nationality",
+      "Nationality": "Национальность",
       "Info": {
         "ALLIES": "СОЮЗНИКИ",
         "BIOGRAPHY": "БИОГРАФИЯ",
@@ -84,8 +100,9 @@
         "ENEMIES": "ВРАГИ"
       },
       "Items": {
-        "Amount": "Amount",
+        "Amount": "Количество",
         "ARMOR": "БРОНЯ",
+        "ATTACHMENTS": "ATTACHMENTS",
         "AUGMENTS": "АУГМЕНТЫ",
         "Ammo": "Боеп.",
         "Armor": "Броня",
@@ -95,12 +112,15 @@
         "CreateItem": "Создать предмет",
         "Damage": "Урон",
         "DeleteItem": "Удалить предмет",
+        "DisplayStored": "Displaying stored items",
+        "HideStored": "Hiding stored items",
         "EQUIPMENT": "СНАРЯЖЕНИЕ",
+        "EQUIPMENT_TOOLS": "EQUIPMENT & TOOLS",
         "EditItem": "Изменить предмет",
         "Effect": "Эффект",
         "Location": "Место",
         "Name": "Название",
-        "QuantityToTransfer": "Quantity to Transfer",
+        "QuantityToTransfer": "Кол-во для передачи",
         "Qty": "Кол.",
         "Range": "Дист.",
         "Refill": "Восполнение",
@@ -111,7 +131,7 @@
         "Subtype": "Тип",
         "TRAITS": "ЧЕРТЫ",
         "Traits": "Черты",
-        "Transfer": "Transfer Items",
+        "Transfer": "Передать предметы",
         "TL": "ТУ",
         "TechLevel": "Тех. уровень",
         "Value": "Цена",
@@ -129,12 +149,14 @@
         "DeleteItem": "Удалить навык",
         "EditItem": "Изменить навык",
         "EditOrRemove": "Управление",
+        "BaseLevel": "Base Level",
+        "AdjLevel": "Adj. Level",
         "Level": "Ур.",
         "Modifier": "Мод.",
         "SkillName": "Название",
         "Total": "Всего",
         "Untrained": "Нетренирован",
-        "SkillRollTooltip": "Shows the skill roll dialog. Shift-clicking rolls a skill check applying no modifier and assumes an average difficulty of 6 or 8",
+        "SkillRollTooltip": "Показывать настройки проверки по умолчанию. Shift+ЛКМ совершает проверку навыков без модификаторов со сложностью 6 или 8.",
         "InvertedSkillRollTooltip": "Проверки навыков совершаются без модификаторов со сложностью 8. Shift+ЛКМ открывает окно настроек проверки.",
         "JOAT": "Мастер на все руки",
         "Timeframe": {
@@ -154,7 +176,14 @@
         "Info": "Инфо",
         "Inventory": "Инвентарь",
         "Notes": "Заметки",
-        "Skills": "Навыки"
+        "Effects": "Effects",
+        "Skills": "Навыки",
+        "FinancesTabTooltip": "Cash on Hand, Debt, Pension, Living Costs, etc.",
+        "InfoTabTooltip": "Traits, Description, Contacts, and Biography",
+        "InventoryTabTooltip": "Weapons, Armor, Augments, Equipment & Tools, Consumables and Attachements",
+        "NotesTabTooltip": "Traveller Notes",
+        "EffectsTabTooltip": "Active Effects",
+        "SkillsTabTooltip": "Traveller Skills"
       },
       "UnknownActorType": "Неизвестный тип актёра",
       "using": "исп.",
@@ -244,7 +273,25 @@
         "Timeframe": "Временные рамки",
         "RollFormula": "Формула броска",
         "Units": "Единицы измерения",
-        "taskDuration": "Для выполнения задания требуется _TIME_ _UNITS_."
+        "taskDuration": "Для выполнения задания требуется _TIME_ _UNITS_.",
+        "RollModifiers": "Roll Modifiers",
+        "SkillModifier": "Skill Level",
+        "ItemModifier": "Item Bonus",
+        "ROF": "Rate-of-Fire",
+        "Wounds": "Wounds",
+        "Encumbered": "Encumbered",
+        "CharacteristicModifier": "Characteristic Modifier",
+        "Conditions": "Condition Modifiers",
+        "DodgeParry": "Dodge/Parry Modifier",
+        "Custom": "Custom",
+        "Modifier": "Modifier",
+        "Description": "Description",
+        "DM": "DM",
+        "Characteristic": "Characteristic",
+        "Condition": "Condition",
+        "Attack": "Attack",
+        "ActiveEffect": "Active Effect",
+        "Attachments": "Attach./Consm."
       }
     },
     "Create": "Создать",
@@ -348,7 +395,10 @@
         "ShortDescription": "Краткое описание",
         "SkillModifier": "Модификатор навыка",
         "TL": "ТУ",
-        "Weight": "Вес"
+        "Weight": "Вес",
+        "isAttachment": "Attachment?",
+        "NewAttachment": "New Attachment",
+        "BonusDamage": "Bonus Damage"
       },
       "Items": {
         "AssignArmor": "Сделать бронёй",
@@ -388,8 +438,14 @@
         "SkillRanks": "Ранг навыка"
       },
       "Traits": {
-        "Prerequisite": "Критерии",
-        "TraitName": "Название черты"
+              "Prerequisite": "Критерии",
+              "TraitName": "Название черты",
+              "CreateEffect": "Create Effect",
+              "DeleteEffect": "Delete Effect",
+              "EditEffect": "Edit Effects",
+              "CreateTrait": "Create Trait",
+              "DeleteTrait": "Delete Trait",
+              "ShortDescAndEffects": "Short description and list of effects"
       },
       "Tool": {
         "Bonus": "Бонус"
@@ -409,6 +465,7 @@
         "Count": "Число",
         "ArmorPiercing": "Бронебойность",
         "DropConsumablesHere": "Вы можете перенести расходники сюда.",
+        "DropAttachmentsHere": "You can drop attachments here.",
         "RemoveConsumable": "Удалить расходник",
         "RemoveConsumableFrom": "Удалить расходник _CONSUMABLE_NAME_ из _ITEM_NAME_?"
       },
@@ -530,7 +587,16 @@
       "ShipValue": "Цена корабля",
       "MortgagePerMonth": "Платеж по кредиту",
       "MaintenancePerMonth": "Цена Обслуживания",
-      "CrPerMonth": "Кр/месяц"
+      "CrPerMonth": "Кр/месяц",
+      "Chat": "Chat",
+      "UseAComponent": "Component",
+      "SkillRoll": "Skill",
+      "chatPlaceholder": "Chat Message",
+      "skillPlaceholder": "Skill/CHR 8+",
+      "firePlaceholder": "Skill/CHR 8+=COMPONENT_ID",
+      "skillTooltip": "Possible options:\nSkill\nSkill|Alternative Skill 1|...\nSkills/ATR\nSkills/ 8+\nSkills/ATR 8+",
+      "fireTooltip": "Possible options:\nSkill=COMPONENT_ID\nSkill|Alternative Skill 1|...=COMPONENT_ID\nSkills/ATR=COMPONENT_ID\nSkills/ 8+=COMPONENT_ID\nSkills/ATR 8+=COMPONENT_ID",
+      "chatTooltip": "Ahoy!"
     },
     "Vehicle": {
       "SystemStatus": "Статус системы",
@@ -579,6 +645,11 @@
       },
       "ShippingSize": "Shipping Size"
     },
+    "SpaceObject": {
+      "Notes": "Notes",
+      "Damage": "Damage",
+      "Information": "Information"
+    },
     "Migration": {
       "Completed": "Миграция Twodsix System до версии {version} завершена!",
       "DoNotClose": "Происходит миграция Migrating Twodsix до версии {version}. Не закрывайте игру.",
@@ -586,7 +657,7 @@
     },
     "Modules": {
       "compendiumFolders": {
-        "missing": "Встроеные библиотеки используют модуль 'Compendium Folders' для отображения данных в удобном виде. Если вы желаете использовать встроенные библиотеки, то установите и включите модуль 'Compendium Folders'. Или выключите это предупреждение в настройках.",
+        "missing": "Встроенные библиотеки используют модуль 'Compendium Folders' для отображения данных в удобном виде. Если вы желаете использовать встроенные библиотеки, то установите и включите модуль 'Compendium Folders'. Или выключите это предупреждение в настройках.",
         "disabled": "Включите модуль 'Compendium Folders', если хотите использовать встроенные библиотеки в этом модуле. Или выключите это предупреждение в настройках."
       }
     },
@@ -606,7 +677,11 @@
       "AttackDM": "МБ атаки",
       "BonusDamage": "Бонусный урон",
       "Timeframe": "Время",
-      "RollInitiative": "Бросок инициативы"
+      "RollInitiative": "Бросок инициативы",
+      "characteristic": "characteristic",
+      "ROF" :"ROF",
+      "DodgeParry": "Dodge/Parry",
+      "Attachments": "Attch/Cons"
     },
     "Settings": {
       "absoluteBonusValueForEachTimeIncrement": {
@@ -686,14 +761,14 @@
         "name": "Модификатор характеристики, равной нулю."
       },
       "ruleset": {
-        "hint": "Настройки будут оптимизированы под выбранные правила. Подмечю что правила сверху имеют наилучшую поддержку. Посмотрите https://github.com/xdy/twodsix-foundryvtt/blob/master/docs/docs.md для деталей. Правила, относящиеся к набору правил, отмечены зеленой рамкой. Любые изменения в настройках, установленных набором правил, будут отмечены оранжевой рамкой.",
+        "hint": "Настройки будут оптимизированы под выбранные правила. Имейте ввиду, что правила выше имеют наилучшую поддержку. Смотрите https://github.com/xdy/twodsix-foundryvtt/blob/master/docs/docs.md для подробностей. Правила, относящиеся к набору правил, отмечены зеленой рамкой. Любые изменения в настройках, установленных набором правил, будут отмечены оранжевой рамкой.",
         "name": "Правила"
       },
       "settingsInterface": {
         "debugSettings": {
-          "hint": "Настройка отладки для разработчиков.",
-          "intro": "Настройки отладки",
-          "name": "Настройки отладки"
+          "hint": "Configure/View the debugging and experimental features settings.",
+          "intro": "Experimental & Debugging Settings",
+          "name": "Experimental & Debugging Settings"
         },
         "displaySettings": {
           "hint": "Настройка внешнего вида.",
@@ -953,6 +1028,38 @@
       "transferDroppedItems": {
         "hint": "Overrides the default Foundry behavior of copying on drag-drop to transfering items (items removed from source actor) when drag-dropping equipment between actors.",
         "name": "Transfer rather than copy dropped equipment on actors"
+      },
+      "allowDragDropOfLists" : {
+        "hint": "Allow items in lists to be moved by drag and drop rather than sorting alphabetically.",
+        "name":"Allow Drag-Drop in Lists"
+      },
+      "useDodgeParry" : {
+        "hint": "Add a roll penalty to refect targets ability to dodge / parry.  A target must be selected and the skill name for weapon action must match.",
+        "name": "Use Dodge / Parry Attack Modifers"
+      },
+      "showModifierDetails": {
+        "hint": "Show roll moddifier values in roll flavor line, e.g. STR(+1) versus STR.",
+        "name": "Display roll modifiers in chat roll text"
+      },
+      "defaultColor": {
+        "hint": "Change the theme main color. Delete value to reset.",
+        "name": "Set Default Color"
+      },
+      "lightColor": {
+        "hint": "Change the theme highlight color. Delete value to reset.",
+        "name": "Set Highlight Color"
+      },
+      "useItemActiveEffects": {
+        "hint": "Use Item Active Effects.  WARNING: may result is odd system behavior.",
+        "name": "Use Item Active Effects"
+      },
+      "showFeaturesInChat": {
+        "hint" : "Show item features text at bottom of chat messages for rolls.",
+        "name": "Show Item Features in Chat"
+      },
+      "showHitsChangesInChat": {
+        "hint": "Show a whispered chat message to GM when damage/healing is appled to an actor.",
+        "name": "Show damage / healing chat message to GM"
       }
     },
     "CloseAndCreateNew": "Закрыть и создать",
@@ -982,7 +1089,7 @@
     },
     "Errors": {
       "NoSkillForSkillRoll": "Вы пытаетесь пройти проверку навыка, не выбрав навык.",
-      "NoCharacteristicForRoll": "Вы пытатлись совершить проверку характеристики без выбора характеристики",
+      "NoCharacteristicForRoll": "Вы пытались совершить проверку характеристики без выбора характеристики",
       "NoROFForAttack": "У этого оружия не указана скорострельность",
       "NoDamageForWeapon": "У этого оружия не указан урон",
       "TooFewToReload": "Не хватает _NAME_ для _REFILL_ACTION_",
@@ -1016,7 +1123,8 @@
       "ActorHasInitiativeAlready": "Actor already has initiative.",
       "NoActiveToken": "Актер не имеет активного токена на сцене",
       "InvalidReactionInputs": "Reaction roll cannot be made as attack and flee inputs are invalid.",
-      "AnimalsCantHoldPositions": "Animals cant be placed in ship positions"
+      "AnimalsCantHoldPositions": "Animals cant be placed in ship positions",
+      "CantEditCreateInCargo": "Can not edit or create effects while in cargo"
     }
   },
   "VeryDifficult": "Очень сложная"

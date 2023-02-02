@@ -3,6 +3,7 @@
     "Ironsworn": "Ironsworn",
     "Starforged": "Starforged",
     "YourWorldTruths": "Ваш мир: Истины",
+    "TruthsAreOptional": "Определение истин является необязательным шагом. Вы можете сделать это позже в настройках системы.",
     "TruthQuestStarter": "Начальная миссия:",
     "QuestStarter": "Начальная миссия",
     "SaveYourTruths": "Сохранение истин",
@@ -204,6 +205,7 @@
     "StarforgedTools": "Инструменты Starforged",
     "IronswornTools": "Инструменты Ironsworn",
     "Region": "Регион",
+    "RegionTip": "This sets the default region for locations in this scene. It affects the outcomes of some location oracles.",
     "REGION": {
       "Terminus": "Терминал",
       "Outlands": "Пограничье",
@@ -219,6 +221,9 @@
       "ExtraChallengeDice": "Доп. кость испытания"
     },
     "ChatAlert": {
+      "Muted": "Шепот сообщений участнику, который вызвал их",
+      "Unmuted": "Трансляция сообщений всем участникам",
+      "ToggleMute": "Переключение заглушения",
       "Renamed": "Переименовано в {name}",
       "renamed": "переименовано в {name}",
       "Added": "Добавлено {name}",
@@ -271,13 +276,23 @@
         "Hint": "Если включено, изменения показателей персонажа будут отображаться в чате."
       },
       "PromptTruths": {
-        "Name": "Отображение вступительного окна Ironsworn/Starforged",
-        "Hint": "При запуске мира будет отображаться окно с начальными настройками."
+        "Name": "Окно настроек при запуске",
+        "Hint": "При запуске будет отображаться окно настроек."
       },
       "ConfigurationDialog": {
-        "Label": "Окно настроек Ironsworn/Starforged",
+        "Label": "Окно настроек",
         "Name": "Окно настроек",
         "Hint": "Выбор между элементами интерфейса Ironsworn и Starforged."
+      },
+      "ISTruthsDialog": {
+        "Label": "Истины Ironsworn",
+        "Name": "Истины Ironsworn",
+        "Hint": "Открытие окна настроек истин мира Ironsworn."
+      },
+      "SFTruthsDialog": {
+        "Label": "Истины Starforged",
+        "Name": "Истины Starforged",
+        "Hint": "Открытие окна настроек истин мира Starforged."
       },
       "SFBeta": {
         "Name": "Отображение бета-контента Starforged",
@@ -294,18 +309,9 @@
     },
     "First Start": {
       "Welcome": "Добро пожаловать",
-      "Save": "Принять",
-      "Intro": "Добро пожаловать в Ironsworn/Starforged! Перед началом сделай выбор.",
-      "CharacterSheet": "Бланк персонажа",
-      "DefaultSheet": "Какой бланк персонажа использовать по умолчанию?",
-      "MovesOracles": "Ходы и оракулы",
-      "DefaultMovesOracles": "Какой набор ходов и оракулов использовать?",
-      "MatchSheet": "Согласно бланку",
+      "Intro": "Выберите вашу основную систему. Это определит тип бланков персонажей, ходы, оракулы и прочие элементы игры.",
       "SettingTruths": "Истины мира",
-      "SettingTruth": "Истина мира",
-      "GenerateTruths": "Желаешь сформировать истины нового мира?",
-      "YesFor": "Да, для",
-      "NeverAsk": "Больше не спрашивать"
+      "SettingTruth": "Истина мира"
     },
     "WorldTruths": {
       "The Old World": {
@@ -463,7 +469,7 @@
       "Rocky": "Скалы",
       "Ruined": "Руины",
       "Sacred": "Святилище",
-      "Sanctum": "Cвятилище",
+      "Sanctum": "Святилище",
       "Sector Name": "Название сектора",
       "Settlement": "Поселение",
       "Settlements": "Поселения",
