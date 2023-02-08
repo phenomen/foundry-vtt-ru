@@ -122,6 +122,8 @@
 	"TIDY5E.ClassWarlock": "Колдун",
 	"TIDY5E.ClassWizard": "Волшебник",
 
+  "TIDY5E.OriginSummaryConfig": "Origin Summary Configuration",
+
 	"TIDY5E.Settings.GlobalLabel": "Глобальный",
 	"TIDY5E.Settings.DebugLabel": "Отладка",
 	"TIDY5E.Settings.UserLabel": "Участник",
@@ -411,6 +413,10 @@
 		"name": "Enable Lazy Hp and Exp",
 		"hint": "Easily add or remove HP and Experience with automatic conversion and no overdraft. It will allow inputs like '+10', '-10', '=10', '010'"
 	},
+	"TIDY5E.Settings.LazyHpForceHpValueLimit": {
+		"name": "Force current hp to be always <= to the max hp",
+		"hint": "Forcefully ensure that current hp never exceeds maximum hp. This setting is useful for those who prefer to use temporary hp fields to manage a temporary addition of hp"
+	},
 	"TIDY5E.Settings.LazyMoneyEnable": {
 		"name": "Enable Lazy Money",
 		"hint": "Easily add or remove currency with automatic conversion and no overdraft. It will allow inputs like '+10', '-10', '=10', '010'"
@@ -546,5 +552,14 @@
 			"confirm": "Reset Module Settings",
 			"cancel": "Cancel"
 		}
+	},
+	"TIDY5E.Settings.Debug": {
+		"name": "Enable debugging",
+		"hint": "Prints debug messages to the console"
+	},
+	"TIDY5E.Settings.EnableSortFavoritesItemsAlphabetically": {
+		"name": "Enable Sort Favorites Alphabetically",
+		"hint": "It enabled this setting will sort the items, features, spells alphabetically on the favorites html template"
 	}
+
 }
