@@ -94,7 +94,7 @@
 	"TIDY5E.AbbrSavingThrow": "Испытание",
 	"TIDY5E.SpellAttackMod": "Мод. атаки",
 	"TIDY5E.PreparedSpells": "Подготовленные заклинания",
-	"TIDY5E.PreparedSpellsMax": "Максимум подготовленных заклинаний",
+	"TIDY5E.PreparedSpellsMax": "Максимум подготовленных заклинаний (Примечание: не используйте режим перезаписи на активном эффекте)",
 	"TIDY5E.Components": "Компоненты",
 	"TIDY5E.SpellSchool": "Школа",
 
@@ -122,7 +122,7 @@
 	"TIDY5E.ClassWarlock": "Колдун",
 	"TIDY5E.ClassWizard": "Волшебник",
 
-  "TIDY5E.OriginSummaryConfig": "Origin Summary Configuration",
+	"TIDY5E.OriginSummaryConfig": "Настройка описания происхождения",
 
 	"TIDY5E.Settings.GlobalLabel": "Глобальный",
 	"TIDY5E.Settings.DebugLabel": "Отладка",
@@ -131,11 +131,11 @@
 	"TIDY5E.Settings.NpcLabel": "Персонажи мастера",
 	"TIDY5E.Settings.VehicleLabel": "Транспорт",
 	"TIDY5E.Settings.MulticlassSpellbookFilterLabel": "Фильтр мультикласса заклинаний",
-	"TIDY5E.Settings.ColorPickerLabel": "Color Picker (Customize the color)",
+	"TIDY5E.Settings.ColorPickerLabel": "Настройка цвета (рекомендуется установить модуль Color Settings)",
 
 	"TIDY5E.Settings.SheetMenu": {
-		"name": "Tidy Sheet Settings",
-		"hint": "Customize your own version of Tidy",
+		"name": "Настройки бланка Tidy",
+		"hint": "Настройка вашей версии Tidy",
 		"label": "Настройки бланка",
 		"title": "Настройки бланка Tidy5e"
 	},
@@ -158,16 +158,16 @@
 		"header": "Настройки модуля",
 		"labelActionsFavorites": "Действия/Избранное актёра",
 		"labelMidiQoL": "Midi Qol",
-		"labelLazyMoney": "Lazy Money"
+		"labelLazyMoney": "Ленивые деньги"
 	},
 	"TIDY5E.Settings.TabLocks": {
 		"tabLabel": "Блокировка",
 		"header": "Настройки блокировки",
-		"hint": "Prevents players from making changes to aspects of their character sheets that should change infrequently, and provides the option to completely hide some elements that you don't want to use at all. Settings are available to customize exactly what is locked / hidden, and determine who has permission to make sheets editable through a toggle button.",
-		"hint2": "Note that this is not a secure lockdown and players could get around the restrictions, so this is not a sufficient answer if your players are malicious. This is intended for games where the players are inexperienced (with D&D and/or with using computers) to prevent them from making mistakes (ex. accidentally adding/removing saving throw proficiency).",
-		"labelGeneralLocks": "General Locks",
-		"labelInventoryLocks": "Inventory Locks",
-		"labelFeaturesLocks": "Features Locks"
+		"hint": "Запретить игрокам вносить изменения в те аспекты бланков персонажей, которые редко меняются, и предоставить опцию для полного скрытия элементов, которые вы не хотите использовать. Настройки позволяют выбрать, что именно будет заблокировано / скрыто и кто имеет право редактировать бланк через кнопку переключения.",
+		"hint2": "Обратите внимание, что это не надёжная блокировка, так как игроки могут обойти ограничения, поэтому эта опция не является ответом на злонамеренное поведение игроков. Она предназначена для игр с неопытными игроками (в отношении D&D и/или умения пользоваться компьютерами), чтобы не дать им допустить ошибки (например, нечаянно добавить/убрать умение в спасброске).",
+		"labelGeneralLocks": "Общие блокировки",
+		"labelInventoryLocks": "Блокировки инвентаря",
+		"labelFeaturesLocks": "Блокировки особенностей"
 	},
 	"TIDY5E.Settings.TabInfo": {
 		"tabLabel": "Информация",
@@ -203,7 +203,11 @@
 
 	"TIDY5E.Settings.ClassicControls": {
 		"name": "Использование стандартного управления предметами",
-		"hint": "В режиме списка будет использоваться стандартное управление предметами (изменение, удаление) вместо контекстного меню (ПКМ)."
+		"hint": "Кнопки управления предметами всегда отображается. Это не отключает меню на ПКМ. Применяется только к инвентарю с предметами/заклинаниями игрока в режиме списка."
+	},
+	"TIDY5E.Settings.HideIconsNextToTheItemName": {
+		"name": "Скрыть иконки рядом с названием предмета",
+		"hint": "Если включено, эта настройка скрывает вспомогательные иконки рядом с названием объекта (избранное, настройка, и т.д.). Обычно, это полезно вместе с включённой настройкой \"Использование стандартного управления предметами\", чтобы избежать лишних иконок..."
 	},
 	"TIDY5E.Settings.RollButtonsToCard": {
 		"name": "Отображение кнопок Midi QOL на карточках предметов",
@@ -220,7 +224,11 @@
 	},
 	"TIDY5E.Settings.JournalTab": {
 		"name": "Скрытие дневника персонажа",
-		"hint": "Вкладка с дневником персонажа будет скрыта."
+		"hint": "Скрыть вкладку дневника для персонажей."
+	},
+	"TIDY5E.Settings.JournalTabNPCDisabled": {
+		"name": "Скрыть дневник персонажей мастера",
+		"hint": "Скрыть вкладку дневника для персонажей мастера."
 	},
 	"TIDY5E.Settings.ClassList": {
 		"name": "Скрытие списка классов персонажа",
@@ -272,17 +280,17 @@
 		"hint": "По умолчанию навыки без умения скрыты кнопкой переключения. При включении, они никогда не будут скрываться."
 	},
 	"TIDY5E.Settings.HideSpellbookTabNpc": {
-		"name": "Hide Spellbook tab on NPC",
-		"hint": "By default the spellbook tab on NPC is moved on the attributes tab. Disable this for never do that."
+		"name": "Скрыть вкладку книги заклинаний для персонажей мастера",
+		"hint": "По-умолчанию вкладка книги заклинаний для персонажей мастера переносится во вкладку параметров. Отключите опцию, чтобы этого не происходило."
 	},
 
 	"TIDY5E.Settings.ActiveEffectsMarker": {
 		"name": "Отображение индикаторов активных эффектов на предметах",
 		"hint": "При включении на предметах с активными эффектами будет отображаться индикатор (только в режиме списка)."
 	},
-	"TIDY5E.Settings.RightClick": {
-		"name": "Отключение контекстное меню ПКМ",
-		"hint": "При отключении контекстное меню ПКМ рядом с предметами будет отображаться иконка меню, заменяющая его."
+	"TIDY5E.Settings.RightClickDisabled": {
+		"name": "Отключить контекстное меню на ПКМ.",
+		"hint": "Вы можете отключить контекстное меню на ПКМ в случае конфликта модулей или по вашему выбору."
 	},
 	"TIDY5E.Settings.ExpandedSheet": {
 		"name": "Расширенный обзор с ограниченными правами",
@@ -326,8 +334,8 @@
 		"hint": "Выберите как будут автоматизированы эффекты, связанные со ступенями утомления (для проверок с помехой требуется Midi QOL)",
 		"default": "Без автоматизации эффектов утомления",
 		"tidy5e": "Tidy5e - Использовать встроенные эффекты (через Active Effects)",
-		"dfredce": "DFreds Convenient Effects - Use your own effects",
-		"cub": "CUB - Use your own effects",
+		"dfredce": "DFreds Convenient Effects - Использовать собственные эффекты",
+		"cub": "CUB - Использовать собственные эффекты",
 		"custom": "Свои - Использовать ваши эффекты (требуется CUB)"
 	},
 	"TIDY5E.Settings.CustomExhaustionIcon": {
@@ -365,21 +373,21 @@
 		"hint": "Выберите между Действиями или Параметрами.",
 		"default": "",
 		"attributes": "Параметры",
-		"inventory": "Inventory",
-		"spellbook": "Spellbook",
-		"features": "Features",
-		"effects": "Effects",
-		"biography": "Biography",
-		"journal": "Journal",
-		"actions": "Actions"
+		"inventory": "Инвентарь",
+		"spellbook": "Книга заклинаний",
+		"features": "Особенности",
+		"effects": "Эффекты",
+		"biography": "Биография",
+		"journal": "Дневник",
+		"actions": "Действия"
 	},
 	"TIDY5E.Settings.HiddenDeathSaves": {
 		"name": "Скрытие испытаний смерти от игроков",
 		"hint": "Испытания смерти и их результаты будут видны только GM"
 	},
 	"TIDY5E.Settings.HideSpellSlotMarker": {
-		"name": "Hide Spell Slot Marker on sheet.",
-		"hint": "Enable to hide the colored spell slot marker, this is usually useful when the spell points variant rule is use."
+		"name": "Скрыть ячейки заклинаний на бланке.",
+		"hint": "Скрывает цветные маркеры ячеек заклинаний. Обычно, это полезно при использовании правило на пункты заклинаний."
 	},
 	"TIDY5E.Settings.EnableSpellLevelButtons": {
 		"name": "Включение кнопок круга заклинаний",
@@ -387,7 +395,7 @@
 	},
 	"TIDY5E.Settings.HideStandardEncumbranceBar": {
 		"name": "Удаление/скрытие стандартной шкалы нагрузки в бланке персонажа",
-		"hint": "If enabled it will hide the standard bar of encumbrance, if you are using 'Variant Encumbrance' module you probably DO NOT NEED THIS"
+		"hint": "Если включено, скрывает стандартную полоску нагрузки, если вы используете модуль Variant Encumbrance. Вероятно, вам это НЕ НУЖНО"
 	},
 	"TIDY5E.Settings.npsSheetWidth": {
 		"name": "Ширина бланка ПМ по умолчанию.",
@@ -403,163 +411,165 @@
 	},
 	"TIDY5E.Settings.SpellClassFilterSelect": {
 		"name": "Фильтр мультикласса заклинаний",
-		"hint": "If you don't need this for your character, disabling this option will allow you to reclaim the space and declutter your sheet."
+		"hint": "Если эти опции не нужны вашему персонажу, их отключение позволит освободить пространство и разгрузить бланк."
 	},
 	"TIDY5E.Settings.SpellClassFilterIconReplace": {
 		"name": "Наложение иконки класса на иконки заклинаний ",
-		"hint": "Enabling this will change the spellbook tab to display the icon for the spell's class instead of the spell's image. Useful for managing multiple lists without having to switch between them."
+		"hint": "Во вкладке книги заклинаний вместо изображения заклинания будет отображаться иконка соответствующего класса. Полезно для управления несколькими списками, чтобы не переключаться между ними."
 	},
 	"TIDY5E.Settings.LazyHpAndExpEnable": {
-		"name": "Enable Lazy Hp and Exp",
-		"hint": "Easily add or remove HP and Experience with automatic conversion and no overdraft. It will allow inputs like '+10', '-10', '=10', '010'"
+		"name": "Включить ленивые деньги и опыт",
+		"hint": "С лёгкостью добавляйте и отнимайте ПЗ и опыт с автоматической конвертацией без перерасхода. Позволяет вводить значения, такие как: \"+10\", \"-10\", \"=10\", \"010\""
 	},
-	"TIDY5E.Settings.LazyHpForceHpValueLimit": {
-		"name": "Force current hp to be always <= to the max hp",
-		"hint": "Forcefully ensure that current hp never exceeds maximum hp. This setting is useful for those who prefer to use temporary hp fields to manage a temporary addition of hp"
+	"TIDY5E.Settings.LazyHpForceHpValueLimit1": {
+		"name": "Принудительно (ТОЛЬКО со стороны бланка) запретить текущим ПЗ превышать максимальные ПЗ + максимальные временных ПЗ (hp.value <= hp.max + hp.tempmax)",
+		"hint": "Если включено, эта настройка принудительно гарантирует hp.value <= (hp.max + hp.tempmax)'."
+	},
+	"TIDY5E.Settings.LazyHpForceHpValueLimit2": {
+		"name": "Принудительно (ТОЛЬКО со стороны бланка) запретить текущим ПЗ превышать максимальные ПЗ, и вместо этого добавлять временные пункты здоровья (hp.value <= hp.max && hp.temp <= hp.tempmax)",
+		"hint": "Эта настройка включает логику расчёта для добавления временных пунктов здоровья, требуя от игроков заполнять поле временных хитов (hp.temp) вместо увеличения текущих хитов в соответствующем поле (hp.value). Дабы избежать противоречий, по-умолчанию эта опция выключена, чтобы соответствовать стандартному поведению бланка. Если включено, гарантируется, что текущие ПЗ (hp.value <= hp.max) увеличиваются временные ПЗ (hp.temp) в соответствующим количестве, если hp.value > hp.max, при этом всегда соблюдая hp.temp <= hp.tempmax."
 	},
 	"TIDY5E.Settings.LazyMoneyEnable": {
-		"name": "Enable Lazy Money",
-		"hint": "Easily add or remove currency with automatic conversion and no overdraft. It will allow inputs like '+10', '-10', '=10', '010'"
+		"name": "Включить ленивые деньги",
+		"hint": "С лёгкостью добавляйте и отнимайте валюту с автоматическим конвертацией без перерасхода. Позволяет вводить значения, такие как: \"+10\", \"-10\", \"=10\", \"010\""
 	},
 	"TIDY5E.Settings.LazyMoneyAddConvert": {
-		"name": "Convert when adding money",
-		"hint": "Automatically convert currency to higher denominations when adding money instead of the default behaviour of preserving the denominations you receive."
+		"name": "Конвертировать валюту при добавлении денег",
+		"hint": "Автоматически конвертировать валюту в наибольший номинал при добавлении денег вместо стандартного поведения, когда номинал полученной валюты сохраняется."
 	},
 	"TIDY5E.Settings.LazyMoneyIgnoreElectrum": {
-		"name": "Ignore electrum",
-		"hint": "When converting, ignore electrum. This won't affect directly adding or removing it, except in the case when \"Convert when adding money\" is also enabled."
+		"name": "Игнорировать электрум",
+		"hint": "При конвертации электрум будет игнорироваться. Это не повлияет на его прямое добавление или удаление, за исключением случая, когда включена опция \"Конвертировать валюту при добавлении денег\"."
 	},
 	"TIDY5E.Settings.LazyMoneyChatLog": {
-		"name": "Chat log",
-		"hint": "Whisper any currency changes to the GM."
+		"name": "Чат",
+		"hint": "Шептать GM о любых изменениях валюты."
 	},
 	"TIDY5E.Settings.AllowCantripToBePreparedOnContext": {
-		"name": "Allow cantrips to be 'prepared' via right-click",
-		"hint": "The \"cantrip formulas\" optional rule from Tashas Cauldron of Everything allows Wizards to prepare their cantrips after a long rest in the same way that they do with leveled spells."
+		"name": "Разрешить подготавливать фокусы при нажатии ПКМ",
+		"hint": "Опциональное правило \"Формулы фокусов\" из книги Tashas Cauldron of Everything позволяет волшебникам подготавливать фокусы после долго отдыха так же, как заклинания круга."
 	},
 	"TIDY5E.Settings.LockMoneyChanges": {
-		"name": "Lock change money for non GM",
-		"hint": "This will lock up the money input pp, gp, ep, sp, cp on the tidy sheet for non GM player. All other module working with these fields are working just fine."
+		"name": "Заблокировать изменение денег для всех, кроме GM",
+		"hint": "Блокирует ввод пм, зм, эм, см, мм на бланке для всех игроков, кроме GM. Все прочие модули, которые используют эти поля, будут работать исправно."
 	},
 	"TIDY5E.Settings.LockExpChanges": {
-		"name": "Lock change experience for non GM",
-		"hint": "This will lock up the experience input on the tidy sheet for non GM player. All other module working with these fields are working just fine."
+		"name": "Заблокировать изменение опыта для всех, кроме GM",
+		"hint": "Блокирует ввод опыта на бланке для всех игроков, кроме GM. Все прочие модули, которые используют эти поля, будут работать исправно."
 	},
 	"TIDY5E.Settings.LockHpMaxChanges": {
-		"name": "Lock change hp max for non GM",
-		"hint": "This will lock up the hp max input on the tidy sheet for non GM player. All other module working with these fields are working just fine."
+		"name": "Заблокировать изменение максимума ПЗ для всех, кроме GM",
+		"hint": "Блокирует ввод максимальных ПЗ на бланке для всех игроков, кроме GM. Все прочие модули, которые используют эти поля, будут работать исправно."
 	},
 	"TIDY5E.Settings.LockLevelSelector": {
-		"name": "Lock level selector for non GM",
-		"hint": "Disable Level Dropdown on the tidy sheet under Features Tab or Offer Option to Lock PLayers out from changing it. All other module working with these fields are working just fine."
+		"name": "Заблокировать выбора уровня для всех, кроме GM",
+		"hint": "Отключает выпадающий список уровней на бланке во вкладке особенностей или предоставляет опцию заблокировать его изменение. Все прочие модули, которые используют эти поля, будут работать исправно. "
 	},
 	"TIDY5E.Settings.LockConfigureSheet": {
-		"name": "Lock configure sheet for non GM",
-		"hint": "Disable and hide the button for configure sheet on the tidy sheet, to avoid players to use other sheet. All other module working with these fields are working just fine."
+		"name": "Заблокировать настройку бланка для всех, кроме GM",
+		"hint": "Отключает и скрывает кнопку для настройки бланка, чтобы игроки не использовали другие бланки. Все прочие модули, которые используют эти поля, будут работать исправно."
 	},
 	"TIDY5E.Settings.LockItemQuantity": {
-		"name": "Lock item quantity for non GM",
-		"hint": "Enable this to lock the input quantity on the inventory and item sheet on the tidy sheet. All other module working with these fields are working just fine."
+		"name": "Заблокировать количество предметов для всех, кроме GM",
+		"hint": "Блокирует ввод количества предметов в инвентаре на бланке игрока и на бланке предмета. Все прочие модули, которые используют эти поля, будут работать исправно."
 	},
 
 	"TIDY5E.Settings.ColorPickerEnabled": {
-		"name": "Enable Color Picker",
-		"hint": "Enable/Disable the coloration picker"
+		"name": "Включить выбор цвета",
+		"hint": "Включает/выключает выбор оттенка"
 	},
 	"TIDY5E.Settings.ColorPickerEquipped": {
-		"name": "Color Picker for 'Equipped'",
-		"hint": "Select what color you want to use for 'Equipped'. The transparency value '#00000000' is equivalent to disabling the color for the current context."
+		"name": "Выбор цвета для \"Надето\"",
+		"hint": "Выберите, какой цвет вы хотите использовать для \"Надето\". Значение прозрачности #00000000 равносильно отключению цвета в текущем контексте."
 	},
 	"TIDY5E.Settings.ColorPickerEquippedOutline": {
-		"name": "Color Picker for 'Equipped Outline'",
-		"hint": "Select what color you want to use for 'Equipped Outline'. The transparency value '#00000000' is equivalent to disabling the color for the current context."
+		"name": "Выбор цвета для \"Надето - контур\"",
+		"hint": "Выберите, какой цвет вы хотите использовать для \"Надето - контур\". Значение прозрачности #00000000 равносильно отключению цвета в текущем контексте."
 	},
 	"TIDY5E.Settings.ColorPickerEquippedAccent": {
-		"name": "Color Picker for 'Equipped Accent'",
-		"hint": "Select what color you want to use for 'Equipped Accent'. The transparency value '#00000000' is equivalent to disabling the color for the current context."
+		"name": "Выбор цвета для \"Надето - акцент\"",
+		"hint": "Выберите, какой цвет вы хотите использовать для \"Надето - акцент\". Значение прозрачности #00000000 равносильно отключению цвета в текущем контексте."
 	},
 	"TIDY5E.Settings.ColorPickerPrepared": {
-		"name": "Color Picker for 'Prepared'",
-		"hint": "Select what color you want to use for 'Prepared'. The transparency value '#00000000' is equivalent to disabling the color for the current context."
+		"name": "Выбор цвета для \"Подготовлено\"",
+		"hint": "Выберите, какой цвет вы хотите использовать для \"Подготовлено\". Значение прозрачности #00000000 равносильно отключению цвета в текущем контексте."
 	},
 	"TIDY5E.Settings.ColorPickerPreparedOutline": {
-		"name": "Color Picker for 'Prepared Outline'",
-		"hint": "Select what color you want to use for 'Prepared Outline'. The transparency value '#00000000' is equivalent to disabling the color for the current context."
+		"name": "Выбор цвета для \"Подготовлено - контур\"",
+		"hint": "Выберите, какой цвет вы хотите использовать для \"Подготовлено - контур\". Значение прозрачности #00000000 равносильно отключению цвета в текущем контексте."
 	},
 	"TIDY5E.Settings.ColorPickerPreparedAccent": {
-		"name": "Color Picker for 'Prepared Accent'",
-		"hint": "Select what color you want to use for 'Prepared Accent'. The transparency value '#00000000' is equivalent to disabling the color for the current context."
+		"name": "Выбор цвета для \"Подготовлено - акцент\"",
+		"hint": "Выберите, какой цвет вы хотите использовать для \"Подготовлено - акцент\". Значение прозрачности #00000000 равносильно отключению цвета в текущем контексте."
 	},
 	"TIDY5E.Settings.ColorPickerPact": {
-		"name": "Color Picker for 'Pact'",
-		"hint": "Select what color you want to use for 'Pact'. The transparency value '#00000000' is equivalent to disabling the color for the current context."
+		"name": "Выбор цвета для \"Договор\"",
+		"hint": "Выберите, какой цвет вы хотите использовать для \"Договор\". Значение прозрачности #00000000 равносильно отключению цвета в текущем контексте."
 	},
 	"TIDY5E.Settings.ColorPickerPactOutline": {
-		"name": "Color Picker for 'PactOutline'",
-		"hint": "Select what color you want to use for 'PactOutline'. The transparency value '#00000000' is equivalent to disabling the color for the current context."
+		"name": "Выбор цвета для \"Договор - контур\"",
+		"hint": "Выберите, какой цвет вы хотите использовать для \"Договор - контур\". Значение прозрачности #00000000 равносильно отключению цвета в текущем контексте."
 	},
 	"TIDY5E.Settings.ColorPickerPactAccent": {
-		"name": "Color Picker for 'PactAccent'",
-		"hint": "Select what color you want to use for 'PactAccent'. The transparency value '#00000000' is equivalent to disabling the color for the current context."
+		"name": "Выбор цвета для \"Договор - акцент\"",
+		"hint": "Выберите, какой цвет вы хотите использовать для \"Договор - акцент\". Значение прозрачности #00000000 равносильно отключению цвета в текущем контексте."
 	},
 	"TIDY5E.Settings.ColorPickerAtWill": {
-		"name": "Color Picker for 'At Will'",
-		"hint": "Select what color you want to use for 'At Will'. The transparency value '#00000000' is equivalent to disabling the color for the current context."
+		"name": "Выбор цвета для \"По желанию\"",
+		"hint": "Выберите, какой цвет вы хотите использовать для \"По желанию\". Значение прозрачности #00000000 равносильно отключению цвета в текущем контексте."
 	},
 	"TIDY5E.Settings.ColorPickerAtWillOutline": {
-		"name": "Color Picker for 'At Will Outline'",
-		"hint": "Select what color you want to use for 'At Will Outline'. The transparency value '#00000000' is equivalent to disabling the color for the current context."
+		"name": "Выбор цвета для \"По желанию - контур\"",
+		"hint": "Выберите, какой цвет вы хотите использовать для \"По желанию - контур\". Значение прозрачности #00000000 равносильно отключению цвета в текущем контексте."
 	},
 	"TIDY5E.Settings.ColorPickerAtWillAccent": {
-		"name": "Color Picker for 'At Will Accent'",
-		"hint": "Select what color you want to use for 'At Will Accent'. The transparency value '#00000000' is equivalent to disabling the color for the current context."
+		"name": "Выбор цвета для \"По желанию - акцент\"",
+		"hint": "Выберите, какой цвет вы хотите использовать для \"По желанию - акцент\". Значение прозрачности #00000000 равносильно отключению цвета в текущем контексте."
 	},
 	"TIDY5E.Settings.ColorPickerInnate": {
-		"name": "Color Picker for 'Innate'",
-		"hint": "Select what color you want to use for 'Innate'. The transparency value '#00000000' is equivalent to disabling the color for the current context."
+		"name": "Выбор цвета для \"Врождённое\"",
+		"hint": "Выберите, какой цвет вы хотите использовать для \"Врождённое\". Значение прозрачности #00000000 равносильно отключению цвета в текущем контексте."
 	},
 	"TIDY5E.Settings.ColorPickerInnateOutline": {
-		"name": "Color Picker for 'Innate Outline'",
-		"hint": "Select what color you want to use for 'Innate Outline'. The transparency value '#00000000' is equivalent to disabling the color for the current context."
+		"name": "Выбор цвета для \"Врождённое - контур\"",
+		"hint": "Выберите, какой цвет вы хотите использовать для \"Врождённое - контур\". Значение прозрачности #00000000 равносильно отключению цвета в текущем контексте."
 	},
 	"TIDY5E.Settings.ColorPickerInnateAccent": {
-		"name": "Color Picker for 'Innate Accent'",
-		"hint": "Select what color you want to use for 'Innate Accent'. The transparency value '#00000000' is equivalent to disabling the color for the current context."
+		"name": "Выбор цвета для \"Врождённое - акцент\"",
+		"hint": "Выберите, какой цвет вы хотите использовать для \"Врождённое - акцент\". Значение прозрачности #00000000 равносильно отключению цвета в текущем контексте."
 	},
 	"TIDY5E.Settings.ColorPickerAlwaysPrepared": {
-		"name": "Color Picker for 'Always Prepared'",
-		"hint": "Select what color you want to use for 'Always Prepared'. The transparency value '#00000000' is equivalent to disabling the color for the current context."
+		"name": "Выбор цвета для \"Всегда подготовлено\"",
+		"hint": "Выберите, какой цвет вы хотите использовать для \"Всегда подготовлено\". Значение прозрачности #00000000 равносильно отключению цвета в текущем контексте."
 	},
 	"TIDY5E.Settings.ColorPickerAlwaysPreparedOutline": {
-		"name": "Color Picker for 'Always Prepared Outline'",
-		"hint": "Select what color you want to use for 'Always Prepared Outline'. The transparency value '#00000000' is equivalent to disabling the color for the current context."
+		"name": "Выбор цвета для \"Всегда подготовлено - контур\"",
+		"hint": "Выберите, какой цвет вы хотите использовать для \"Всегда подготовлено - контур\". Значение прозрачности #00000000 равносильно отключению цвета в текущем контексте."
 	},
 	"TIDY5E.Settings.ColorPickerAlwaysPreparedAccent": {
-		"name": "Color Picker for 'Always Prepared Accent'",
-		"hint": "Select what color you want to use for 'Always Prepared Accent'. The transparency value '#00000000' is equivalent to disabling the color for the current context."
+		"name": "Выбор цвета для \"Всегда подготовлено - акцент\"",
+		"hint": "Выберите, какой цвет вы хотите использовать для \"Всегда подготовлено - акцент\". Значение прозрачности #00000000 равносильно отключению цвета в текущем контексте."
 	},
 	"TIDY5E.Settings.AllowHpMaxOverride": {
-		"name": "Allow Hp Max override on Character",
-		"hint": "If enable this module replace will let the GM to manually change the hp max  value on the character sheet. THIS WILL OVERRIDE THE DEFAULT BEHAVIOUR OF THE SYSTEM FOR AVOID THE RESET TO '0' ISSUE EXPLAINED HERE https://github.com/sdenec/tidy5e-sheet/issues/659"
+		"name": "Разрешить перезапись максимальных ПЗ персонажа",
+		"hint": "Если включено, модуль позволит GM вручную изменять значение максимальных ПЗ на бланке персонажа. ЭТО ПЕРЕПИШЕТ СТАНДАРТНОЕ ПОВЕДЕНИЕ СИСТЕМЫ. КАК ИЗБЕЖАТЬ ПРОБЛЕМУ СБРОСА ДО \"0\" ОБЪЯСНЯЕТСЯ ЗДЕСЬ https://github.com/sdenec/tidy5e-sheet/issues/659 и https://github.com/sdenec/tidy5e-sheet/issues/696"
 	},
-
 	"TIDY5E.Settings.Reset": {
-		"name": "Reset settings to default",
-		"hint": "This will reset all of the settings of back to the active game system's default.",
+		"name": "Сброс настроек на стандартные",
+		"hint": "Это сбросит все настройки на стандартные для текущей системы.",
 		"dialogs": {
-			"title": "Reset Module Settings",
-			"content": "Are you sure you want to reset all of the module settings to the current system's defaults? <strong>THIS CANNOT BE UNDONE!</strong>",
-			"confirm": "Reset Module Settings",
-			"cancel": "Cancel"
+			"title": "Сброс настроек модуля",
+			"content": "Вы уверены, что хотите сбросить все настройки модуля на стандартные? <strong>ЭТО НЕЛЬЗЯ ОТМЕНИТЬ!</strong>",
+			"confirm": "Сброс настроек модуля",
+			"cancel": "Отмена"
 		}
 	},
 	"TIDY5E.Settings.Debug": {
-		"name": "Enable debugging",
-		"hint": "Prints debug messages to the console"
+		"name": "Включить отладку",
+		"hint": "Отображение отладочной информации в консоли."
 	},
 	"TIDY5E.Settings.EnableSortFavoritesItemsAlphabetically": {
-		"name": "Enable Sort Favorites Alphabetically",
-		"hint": "It enabled this setting will sort the items, features, spells alphabetically on the favorites html template"
+		"name": "Включить сортировку избранного в алфавитном порядке",
+		"hint": "Если включено, эта опция будет сортировать в алфавитном порядке предметы, особенности, заклинания в html-шаблоне избранного."
 	}
-
 }
