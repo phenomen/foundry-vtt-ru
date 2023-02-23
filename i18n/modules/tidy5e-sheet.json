@@ -124,6 +124,8 @@
 
 	"TIDY5E.OriginSummaryConfig": "Настройка описания происхождения",
 
+  "TIDY5E.LevelBump": "Повышение уровня",
+
 	"TIDY5E.Settings.GlobalLabel": "Глобальный",
 	"TIDY5E.Settings.DebugLabel": "Отладка",
 	"TIDY5E.Settings.UserLabel": "Участник",
@@ -152,6 +154,11 @@
 	"TIDY5E.Settings.TabGM": {
 		"tabLabel": "Опции мастера",
 		"header": "Настройки бланка мастера"
+	},
+  "TIDY5E.Settings.TabHomebrewRules": {
+		"tabLabel": "Homebrew Rules",
+		"header": "Homebrew Rules",
+    "labelHBUpcastFreeSpell": "Upcast Free Spell"
 	},
 	"TIDY5E.Settings.TabModules": {
 		"tabLabel": "Модули",
@@ -550,9 +557,13 @@
 		"name": "Выбор цвета для \"Всегда подготовлено - акцент\"",
 		"hint": "Выберите, какой цвет вы хотите использовать для \"Всегда подготовлено - акцент\". Значение прозрачности #00000000 равносильно отключению цвета в текущем контексте."
 	},
-	"TIDY5E.Settings.AllowHpMaxOverride": {
+  "TIDY5E.Settings.AllowHpMaxOverride": {
 		"name": "Разрешить перезапись максимальных ПЗ персонажа",
-		"hint": "Если включено, модуль позволит GM вручную изменять значение максимальных ПЗ на бланке персонажа. ЭТО ПЕРЕПИШЕТ СТАНДАРТНОЕ ПОВЕДЕНИЕ СИСТЕМЫ. КАК ИЗБЕЖАТЬ ПРОБЛЕМУ СБРОСА ДО \"0\" ОБЪЯСНЯЕТСЯ ЗДЕСЬ https://github.com/sdenec/tidy5e-sheet/issues/659 и https://github.com/sdenec/tidy5e-sheet/issues/696"
+		"hint": "If enable this module replace will let the GM to manually change the hp max  value on the character sheet."
+	},
+	"TIDY5E.Settings.AllowHpConfigOverride": {
+		"name": "Allow hp panel configuration override on Character",
+		"hint": "Usually you don't need this but if enable this module setting replace the hp configuration panel on the character sheet. THIS WILL OVERRIDE THE DEFAULT BEHAVIOR OF THE SYSTEM IS USEFUL FOR AVOID SOME NOT UNWANTED DEFAULT BEHAVIOR OF THE SYSTEM."
 	},
 	"TIDY5E.Settings.Reset": {
 		"name": "Сброс настроек на стандартные",
@@ -571,5 +582,13 @@
 	"TIDY5E.Settings.EnableSortFavoritesItemsAlphabetically": {
 		"name": "Включить сортировку избранного в алфавитном порядке",
 		"hint": "Если включено, эта опция будет сортировать в алфавитном порядке предметы, особенности, заклинания в html-шаблоне избранного."
+	},
+	"TIDY5E.Settings.HBEnableUpcastFreeSpell": {
+		"name": "Enable upcast free spell.",
+		"hint": "Add an additional button when you are casting a spell for cast it one level higher. This is a homebrew rule. Ty to @mxfz on discord for the macro code and to @thundershield on for the idea, you can find more details here https://discord.com/channels/170995199584108546/699750150674972743/1055686421198946465"
+	},
+    "TIDY5E.Settings.HBSetFeaturesForUpcastFreeSpell": {
+		"name": "Set features for upcast free spell",
+		"hint": "This setting work only with the module setting 'Enable upcast free spell' enabled, is a string of feature names separated by the character '|' , the search for such features is case unsensitive if found a 'valid' feature enables actors to use the feature upcast"
 	}
 }
