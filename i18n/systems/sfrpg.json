@@ -4,7 +4,7 @@
         "TypeDrone": "Дрон",
         "TypeHazard": "Угроза",
         "TypeNpc": "Old Style NPC",
-        "TypeNpc2": "Non-player Character",
+        "TypeNpc2": "Персонаж ведущего",
         "TypeStarship": "Звездолёт",
         "TypeVehicle": "Транспорт"
     },
@@ -44,6 +44,7 @@
         "TypeStarshipsecuritysystem": "Звездолёт: Система безопасности",
         "TypeStarshipsensor": "Звездолёт: Сенсор",
         "TypeStarshipshield": "Звездолёт: Щит",
+        "TypeStarshipspecialability": "Starship Special Ability",
         "TypeStarshipthruster": "Звездолёт: Двигатель",
         "TypeStarshipweapon": "Звездолёт: Орудие",
         "TypeTechnological": "Технологический предмет",
@@ -63,7 +64,7 @@
         "ACTooltipNotProficientMod": "Штраф за отсутствие навыка обращения: {profMod}",
         "ACTooltipNotProficientShield": "Штраф за отсутствие навыка обращения со щитом: {profMod}",
         "ACTooltipShieldACMod": "Модификатор щита: {shield} ({name})",
-        "ACvsCombatManeuversLabel": "КББМ",
+        "ACvsCombatManeuversLabel": "KAC + 8",
         "ACvsCombatManeuversTitle": "КБ против боевых манёвров",
         "AbilityActivationTypesDay": "День",
         "AbilityActivationTypesFull": "Действие полного хода",
@@ -99,7 +100,7 @@
         "AbilityScoreBonusTooltip": "{type} бонус: {mod} ({source})",
         "AbilityScoreGenericTooltip": "{score} Ability Score: {value} ({source})",
         "AbilityScoreIncreaseTooltip": "Повышение характеристики: {mod}",
-        "AbilityScoreRaceTooltip": "Раса: {mod}",
+        "AbilityScoreRaceTooltip": "Species: {mod}",
         "AbilityScoreThemeTooltip": "Тема: {mod}",
         "AbilityStr": "Сила",
         "AbilityWis": "Мудрость",
@@ -112,6 +113,7 @@
         "ActionRSAK": "Дистанционная атака заклинанием",
         "ActionRWAK": "Дистанционная атака оружием",
         "ActionSave": "Испытание",
+        "ActionSkill": "Проверка навыка",
         "ActionUtil": "Поддержка",
         "ActorSheet": {
             "Attributes": {
@@ -143,13 +145,13 @@
                 "AgePlaceholder": "напр. 19",
                 "DateOfBirth": "Дата рождения",
                 "DateOfBirthPlaceholder": "напр. 6-е Гозрана, 300 П.Р.",
-                "Deity": "Deity",
+                "Deity": "Божество",
                 "DeityPlaceholder": "e.g. Pharasma",
-                "GenderPronouns": "Gender/Pronouns",
+                "GenderPronouns": "Пол/местоимения",
                 "GenderPronounsPlaceholder": "e.g. They/Them",
                 "Height": "Рост",
                 "HeightPlaceholder": "напр. 5'4''",
-                "HomeWorld": "Home World",
+                "HomeWorld": "Родной мир",
                 "HomeWorldPlaceholder": "e.g. Akiton",
                 "ImageTooltip": "Здесь размещается изображение персонажа в полный рост. Изображение должно быть размером 200х250 пикселей либо с соотношением сторон 4:5. ",
                 "OtherVisuals": "Внешность",
@@ -170,6 +172,7 @@
                     "Race": "Раса",
                     "Theme": "Тема"
                 },
+                "Create": "Create new feature",
                 "Filters": {
                     "Action": "Основное",
                     "Bonus": "Бонусное",
@@ -180,7 +183,7 @@
                 "CL": "УЗ",
                 "Hitpoints": {
                     "ClassTooltip": "ПЗ Класса: {mod} ({source})",
-                    "RacialTooltip": "ПЗ Расы: {mod} ({source})"
+                    "RacialTooltip": "Species Base: {mod} ({source})"
                 },
                 "Resolve": {
                     "KeyAbilityTooltip": "ПР Основной характеристики: {mod} ({kas}, {source})",
@@ -261,12 +264,16 @@
                 },
                 "Item": {
                     "Activate": "Активировать",
-                    "Create": "Создать новый предмет",
+                    "Create": "Create New Item",
+                    "CreateFromCompendium": "Add Item From Compendium",
                     "Deactivate": "Отключить",
-                    "Delete": "Удалить",
-                    "Edit": "Изменить",
-                    "Equip": "Снарядить",
-                    "Unequip": "Снять"
+                    "Delete": "Delete Item",
+                    "Edit": "Edit Item",
+                    "Equip": "Equip Item",
+                    "Install": "Install Augmentation",
+                    "LevelUp": "Level Up",
+                    "Unequip": "Unequip Item",
+                    "Uninstall": "Uninstall Augmentation"
                 },
                 "ItemValue": {
                     "Label": "Стоимость:",
@@ -293,9 +300,9 @@
                     "AllSpeeds": "Вся скорость",
                     "BAB": "БМА",
                     "BaseAttackBonus": "Базовый модификатор атаки",
-                    "DamageReduction": "Damage Reduction",
+                    "DamageReduction": "Снижение урона",
                     "Encumbrance": "Нагрузка",
-                    "EnergyResistance": "Energy Resistance",
+                    "EnergyResistance": "Устойчивость к энергии",
                     "HP": "ПЗ",
                     "Hitpoints": "Здоровье",
                     "MeleeAttackDamage": "Урон в ближнем бою",
@@ -322,7 +329,7 @@
                 },
                 "ModifierTypes": {
                     "Class": "Классовый",
-                    "Racial": "Расовый"
+                    "Racial": "Раса"
                 },
                 "Tooltips": {
                     "BonusSkillpoints": "{type} Бонус: {mod} ({source})",
@@ -392,6 +399,7 @@
         "AugBrain": "Мозг",
         "AugBrainAndEyes": "Мозг и Глаза",
         "AugBrainHeartLungs": "Мозг, Сердце, Лёгкое",
+        "AugBrainThroat": "Brain and Throat",
         "AugEars": "Уши",
         "AugEarsAndThroat": "Уши и Горло",
         "AugEndocrine": "Эндокринная система",
@@ -418,14 +426,14 @@
         "Browsers": {
             "AlienArchiveBrowser": {
                 "BrowserFilterAlignment": "Filter by Alignment",
-                "BrowserFilterCR": "Filter by CR",
-                "BrowserFilterHP": "Filter by HP",
+                "BrowserFilterCR": "Фильтр по КО",
+                "BrowserFilterHP": "Фильтр по ПЗ",
                 "BrowserFilterOrganizationSize": "Filter by Organization Size",
-                "BrowserFilterSize": "Filter by Size",
-                "BrowserFilterType": "Filter by Type",
-                "BrowserSortMethodCR": "CR",
-                "BrowserSortMethodHP": "HP",
-                "Button": "Alien Archive",
+                "BrowserFilterSize": "Фильтр по Размеру",
+                "BrowserFilterType": "Фильтр по Типу",
+                "BrowserSortMethodCR": "КО",
+                "BrowserSortMethodHP": "ПЗ",
+                "Button": "Aliens",
                 "Title": "Browse Alien Archive"
             },
             "EquipmentBrowser": {
@@ -481,6 +489,7 @@
                 "Action": "Действие",
                 "Day": "День",
                 "Hour": "Час",
+                "Hour8": "8 Hours",
                 "Minute": "Минута",
                 "Minute10": "10 Minutes",
                 "Round": "Раунд",
@@ -490,7 +499,7 @@
         "CapacityUsage": "Ёмкость и Расход",
         "CharacterFlagsSectionClassFeatures": "Классовые особенности",
         "CharacterFlagsSectionFeats": "Черты",
-        "CharacterFlagsSectionRacialTraits": "Особенности расы",
+        "CharacterFlagsSectionRacialTraits": "Расовые особенности",
         "CharacterLevelsTooltip": "{class} Уровни: {levels}",
         "CharacterNamePlaceHolderText": "Имя персонажа",
         "CharacterSheet": {
@@ -503,12 +512,19 @@
         },
         "ChatCard": {
             "ContextMenu": {
+                "Accept": "Принять",
                 "ApplyDamage": "Применить урон",
                 "ApplyHealing": "Исцелить",
                 "DamageAndAHalf": "Нанести полуторный урон",
                 "DoubleDamage": "Нанести двойной урон",
                 "HalfDamage": "Нанести половину урона",
+                "ModifyDamage": "Modify Damage",
+                "ModifyDamageText": "Input a number to modify the damage amount by. This is applied after any multiplication.",
+                "NoDamageModifier": "No damage modifier applied.",
                 "NoToken": "Не удаётся применить: токен не выбран!"
+            },
+            "ItemAction": {
+                "Check": "Проверка"
             },
             "ItemActivation": {
                 "Activates": "Активация",
@@ -528,7 +544,7 @@
         "ClassSPPerlevel": "Пунктов живучести за уровень",
         "ClassSkillRanksPerlevel": "Пунктов навыков за уровень",
         "ClassSkills": "Классовые навыки",
-        "ClassSpellcastingAbility": "Spellcasting Ability",
+        "ClassSpellcastingAbility": "Закл. характеристика",
         "ClassWeaponProf": "Обращение с оружием",
         "ClassWillSaveProgression": "Прогрессия воли",
         "Classes": {
@@ -641,6 +657,7 @@
         "ConditionsFrightened": "Испуг",
         "ConditionsGrappled": "Захват",
         "ConditionsHelpless": "Беспомощность",
+        "ConditionsInvisible": "Невидим",
         "ConditionsNauseated": "Тошнота",
         "ConditionsOffKilter": "Неконтр. вращение",
         "ConditionsOffTarget": "Сбит с цели",
@@ -685,7 +702,7 @@
         "Cybernetic": "Кибернетика",
         "Damage": {
             "Immunities": "Иммунитет к урону",
-            "MinimumDamage": "Minimum Damage",
+            "MinimumDamage": "Минимальный урон",
             "PartIndex": "Part {partIndex} of {partCount}",
             "Reduction": "Снижение урона",
             "Resistances": "Устойчивость к энергии",
@@ -695,9 +712,12 @@
                 "Bludgeoning": "Дробящий",
                 "Cold": "Холод",
                 "Custom": "Custom",
+                "DamageGroup": "Damage Group {group}",
+                "DamageGroupTooltip": "If damage sections share a group, you may only enable one from that group when making a damage roll. You may freely enable/disable damage sections that lack a group.",
                 "Electricity": "Электричество",
                 "Fire": "Огонь",
                 "Force": "Силовой",
+                "GrouplessDamage": "Groupless Damage",
                 "Hint": "This is a list of the different damage sections that are available for this damage roll.",
                 "Nonlethal": "Нелетальный",
                 "Operators": {
@@ -727,11 +747,11 @@
             "CompulsionDescription": "A compulsion effect overrides the subject’s free will in some way, forcing the subject to act in some manner or changing the way its mind works.",
             "Creation": "Creation",
             "CreationDescription": "A creation effect manipulates matter to create an object or creature in the place the creator designates. If the effect has a duration other than instantaneous, magic or some other energy holds the creation together, but when the duration ends, the created creature or object vanishes without a trace. If the effect has an instantaneous duration, the created object or creature does not depend on any outside energy for its existence, so it lasts indefinitely once created.",
-            "Curse": "Curse",
-            "Darkness": "Darkness",
-            "Death": "Death",
+            "Curse": "Проклятие",
+            "Darkness": "Тьма",
+            "Death": "Смерть",
             "Descriptors": "Descriptors",
-            "Disease": "Disease",
+            "Disease": "Болезнь",
             "Earth": "Earth",
             "Electricity": "Electricity",
             "Emotion": "Emotion",
@@ -741,7 +761,7 @@
             "Force": "Force",
             "ForceDescription": "A force effect deals full damage to incorporeal creatures and blocks their movement. It also blocks the sense through ability.",
             "Good": "Good",
-            "Healing": "Healing",
+            "Healing": "Лечение",
             "LanguageDependent": "Language Dependent",
             "LanguageDependentDescription": "A language-dependent effect uses intelligible language (either audible, visual, or telepathic) as a medium for communication. If you cannot communicate with the target or the target cannot understand what you are communicating, the effect fails to affect that target.",
             "Lawful": "Lawful",
@@ -891,6 +911,19 @@
             }
         },
         "EnergyArmorClass": "ЭКБ",
+        "EnergyArmorClassShort": "ЭКБ",
+        "Enrichers": {
+            "Icon": {
+                "Types": {
+                    "Graviton": "Graviton",
+                    "LanguageDependent": "Language Dependent",
+                    "MindAffecting": "Mind Affecting",
+                    "Photon": "Photon",
+                    "SenseDependent": "Sense Dependent"
+                }
+            },
+            "TypeError": "{enricherType} parsing failed! Type is invalid."
+        },
         "Environment": "Окружение",
         "FeatTypes": {
             "Combat": "Боевые черты",
@@ -906,6 +939,24 @@
         "FlagsInstructions": "Configure character features and traits which fine-tune behaviors of the Starfinder system.",
         "FlagsSave": "Update Special Traits",
         "FlagsTitle": "Configure Special Traits",
+        "FloatingHP": {
+            "HP": "HP",
+            "Sh.A.": "Sh.A.",
+            "Sh.F.": "Sh.F.",
+            "Sh.P.": "Sh.P.",
+            "Sh.S.": "Sh.S.",
+            "stamina": "SP",
+            "temp": "Temp"
+        },
+        "FloatingHPVerbose": {
+            "HP": "HP",
+            "Sh.A.": "Aft Shields",
+            "Sh.F.": "Forward Shields",
+            "Sh.P.": "Port Shields",
+            "Sh.S.": "Starboard Shields",
+            "stamina": "SP",
+            "temp": "Temp"
+        },
         "FortitudeSave": "Стойкость",
         "Ft": "фт",
         "GreatFortitudeHint": "Черта персонажа, которая повышает испытание стойкости на 2",
@@ -1006,6 +1057,7 @@
         "InventoryCapacity": "Ёмкость",
         "InventoryCurrency": "Стоимость",
         "InventoryEquipped": "Экипировано",
+        "InventoryNotEquipped": "Not Equipped",
         "InventoryUsage": "Использовано",
         "IronWillHint": "Черта персонажа, которая повышает испытания Воли на 2",
         "IronWillLabel": "Стальная воля",
@@ -1020,11 +1072,19 @@
                 "LockedTooltip": "<strong>Заперт</strong><br/>Запертый контейнер недоступен для открытия игроками."
             }
         },
+        "ItemMacro": {
+            "Activate": "Activate",
+            "Attack": "Attack",
+            "Damage": "Damage",
+            "Healing": "Healing",
+            "Use": "Use"
+        },
         "ItemNoAmmo": "{name} has no ammunition left!",
         "ItemSheet": {
             "AbilityScoreIncrease": {
                 "Header": "Улучшения характеристик",
-                "Instruction": "* Выберите 4 характеристики для повышения.",
+                "Instruction": "Select 4 ability scores to increase.",
+                "InstructionRules": "Every 5 levels (at 5th, 10th, 15th, and 20th levels), you get to increase and customize your ability scores. Each time you reach one of these level thresholds, choose four of your ability scores to increase. If that ability score is 17 or higher (excluding any ability increases from personal upgrades—see page 212), it increases permanently by 1. If it’s 16 or lower, it increases permanently by 2. You can’t apply more than one of these increases to the same ability score at a given level, but unlike at 1st level, these increases can make your ability scores go higher than 18.",
                 "ItemName": "Повышение характеристик: Уровень {level}",
                 "Label": "Характристики"
             },
@@ -1099,7 +1159,7 @@
             "Header": {
                 "ArmorClass": "Класс брони",
                 "ArmorClassTooltip": "<strong>Класс брони</strong><br/>Класс брони предмета, оставленного бесхозным. Если предмет находится в руках персонажа или надет на него, используется больший из классов брони предмета или владельца.",
-                "DetailsHeader": "Armor details",
+                "DetailsHeader": "Armor Details",
                 "Hardness": "Твёрдость",
                 "HardnessTooltip": "<strong>Твёрдость</strong><br/>При любом повреждении значение твёрдости вычитается из наносимого урона.",
                 "Hitpoints": "ПЗ",
@@ -1293,12 +1353,12 @@
                 "AbilityModifier": "Модификатор характеристики",
                 "ActionTarget": {
                     "ChatMessage": " against {actionTarget}",
-                    "EAC": "EAC",
-                    "KAC": "KAC",
-                    "KAC8": "KAC +8",
+                    "EAC": "ЭКБ",
+                    "KAC": "ККБ",
+                    "KAC8": "ККБ +8",
                     "None": "No target",
                     "Other": "Other",
-                    "StarshipAC": "AC",
+                    "StarshipAC": "КБ",
                     "StarshipTL": "TL",
                     "Tag": "Targets: {actionTarget}",
                     "Title": "Action Target",
@@ -1326,8 +1386,9 @@
                 "RollNotes": "Roll Notes",
                 "RollNotesTooltip": "The roll notes are displayed on the action roll chat card. This is a great way to put helpful reminders, especially for GMs with complicated NPCs.",
                 "SavingThrow": "Испытание",
-                "TitleAction": "Action",
-                "TitleActivation": "Activation"
+                "SkillCheck": "Проверка навыка",
+                "TitleAction": "Действие",
+                "TitleActivation": "Активация"
             },
             "Activation": {
                 "ActivationCondition": "Условие активации",
@@ -1339,26 +1400,26 @@
                 "Target": "Цель"
             },
             "Ammunition": {
-                "AmmunitionType": "Ammunition Type",
+                "AmmunitionType": "Тип боеприпасов",
                 "Capacity": "Capacity Settings",
                 "Details": "Ammunition Details",
                 "Type": {
-                    "Arrows": "Arrows",
+                    "Arrows": "Стрелы",
                     "Caustrol": "Caustrol",
                     "Charges": "Charges",
-                    "Darts": "Darts",
-                    "Flares": "Flares",
+                    "Darts": "Дротики",
+                    "Flares": "Фальшфейер",
                     "Flechettes": "Flechettes",
                     "Fuel": "Petrol",
-                    "HeavyRounds": "Heavy Rounds",
-                    "LongarmAndSniperRounds": "Longarm and Sniper Rounds",
-                    "Missiles": "Missiles",
+                    "HeavyRounds": "Патроны для тяжёлого оружия",
+                    "LongarmAndSniperRounds": "Патроны для Длинноствольного и Снайперского оружия ",
+                    "Missiles": "Ракеты",
                     "MoodGoo": "Mood Goo",
-                    "Nanites": "Nanites",
-                    "None": "None",
-                    "Rockets": "Mini-Rockets",
+                    "Nanites": "Наниты",
+                    "None": "Отсутствует",
+                    "Rockets": "Мини-Ракеты",
                     "Sclerites": "Sclerites",
-                    "Shells": "Shells",
+                    "Shells": "Дробовые патроны ",
                     "SmallArmRounds": "Small Arm Rounds",
                     "Thasphalt": "Thasphalt",
                     "ThasteronPellets": "Thasteron Pellets"
@@ -1382,7 +1443,7 @@
             },
             "Categories": {
                 "AbilityScoreIncrease": "Повышения характеристик",
-                "Ammunition": "Ammunition",
+                "Ammunition": "Боеприпасы",
                 "Archetypes": "Архетипы",
                 "Armor": "Броня",
                 "ArmorUpgrades": "Улучшения брони",
@@ -1392,13 +1453,13 @@
                 "Containers": "Контейнеры",
                 "DroneChassis": "Корпуса дронов",
                 "DroneMods": "Модули дронов",
-                "Equipment": "Armor",
+                "Equipment": "Броня",
                 "Feats": "Черты",
                 "Goods": "Товары",
                 "HybridItems": "Гибридные",
                 "MagicItems": "Магические",
                 "MiscellaneousItems": "Прочие",
-                "Races": "Расы",
+                "Races": "Species",
                 "Shields": "Щиты",
                 "Spells": "Заклинания",
                 "StarshipAblativeArmors": "З: Абляционная броня",
@@ -1433,7 +1494,7 @@
                 "OnUse": "Расход",
                 "Type": "Тип",
                 "Usage": "Использование",
-                "UseAction": "Use",
+                "UseAction": "Использовать",
                 "UseChatMessage": "Uses {consumableName}."
             },
             "Description": {
@@ -1527,7 +1588,7 @@
                 "Effects": "Эффекты заклинания",
                 "ErrorNoUses": "Failed to cast this spell as it has no uses remaining. Click this message to dismiss it.",
                 "IsVariableLevel": "Is Variable Level?",
-                "IsVariableLevelYes": "Yes",
+                "IsVariableLevelYes": "Да",
                 "Level": "Круг заклинания",
                 "PreparationMode": "Способ подготовки",
                 "Prepared": "Подготовлено",
@@ -1581,6 +1642,7 @@
         },
         "KeyAbility": "Ключевая характеристика",
         "KineticArmorClass": "ККБ",
+        "KineticArmorClassShort": "ККБ",
         "Languages": "Языки",
         "LanguagesAbyssal": "Демонический",
         "LanguagesAkitonian": "Акитонский",
@@ -1644,8 +1706,8 @@
         "LightningReflexesLabel": "Молниеносная реакция",
         "LimitedUsePeriodsCharges": "Заряды",
         "LimitedUsePeriodsDay": "День",
-        "LimitedUsePeriodsLong": "Длинный отдых",
-        "LimitedUsePeriodsShort": "Короткий отдых",
+        "LimitedUsePeriodsLong": "Full Rest",
+        "LimitedUsePeriodsShort": "10-Minute Rest",
         "LocalizationTerminator": "",
         "Long": "Long",
         "Magic": {
@@ -1719,15 +1781,15 @@
         "ModifierTypeArmor": "Брони",
         "ModifierTypeBase": "Базовый",
         "ModifierTypeCircumstance": "Состояния",
-        "ModifierTypeConstant": "Constant Modifier",
+        "ModifierTypeConstant": "Постоянный модификатор",
         "ModifierTypeDivine": "Сакральный",
         "ModifierTypeEnhancement": "Зачарования",
-        "ModifierTypeFormula": "Situational Modifier",
+        "ModifierTypeFormula": "Ситуационный модификатор",
         "ModifierTypeInsight": "Вдохновения",
         "ModifierTypeLabel": "Тип",
         "ModifierTypeLuck": "Удачи",
         "ModifierTypeMorale": "Моральный",
-        "ModifierTypeRacial": "Расовый",
+        "ModifierTypeRacial": "Species",
         "ModifierTypeResistance": "Resistance",
         "ModifierTypeTooltip": "Тип модификатора. Используется при определении взаимодействия однотипных модификаторов (обычно берётся только больший)",
         "ModifierTypeUntyped": "Безтиповый",
@@ -1762,7 +1824,7 @@
                 "BaseSpellDC": "Base Spell DC",
                 "BaseSpellDCTooltip": "The base spell DC this NPC has. All of the NPCs spells that have a saving throw associated with them typically use this value, plus the spell level.",
                 "NamePlaceHolderText": "Имя персонажа",
-                "RaceAndGraftsPlaceHolderText": "Пол, Раса, и Класс",
+                "RaceAndGraftsPlaceHolderText": "Gender, Species, and Class/Grafts",
                 "SourcePlaceHolderText": "Источник",
                 "SubtypePlaceHolderText": "Subtype",
                 "TypePlaceHolderText": "Type"
@@ -1795,12 +1857,13 @@
                 "Inventory": "Инвентарь"
             }
         },
-        "Necrograft": "Necrograft",
+        "Necrograft": "Некротрансплант",
         "None": "Нет",
         "Notes": "Заметки",
         "NpcToggleSkillsDialogTitle": "Выбрать навыки НИП",
         "NumberOfArms": "Количество рук",
         "Organization": "Организация",
+        "Passive": "Passive",
         "Personal": "Персональное",
         "PersonalUpgrade": "Персональное улучшение",
         "Plane": "План",
@@ -1809,9 +1872,9 @@
         "RaceAbilityAdjustments": "Изменения характеристик",
         "RaceAddAbilityAdjustment": "Добавить изменение",
         "RaceHitPoints": "ПЗ",
-        "RacePlaceHolderText": "Раса",
+        "RacePlaceHolderText": "Species",
         "RaceSize": "Размер",
-        "RacialTraits": "Расовые особенности",
+        "RacialTraits": "Species Traits",
         "Reach": "Зона досягаемости",
         "ReflexSave": "Рефлекс",
         "RepairDroneChatMessage": "{name} был отремонтирован на {regainedHP} ПЗ.",
@@ -1823,7 +1886,7 @@
         "RepairDroneUnnecessary": "{name} уже восстановлен до максимума ПЗ, ремонт не требуется.",
         "Resolve": "Решимость",
         "Rest": {
-            "Button": "Rest",
+            "Button": "Отдых",
             "Cancel": "Cancel",
             "Long": {
                 "ChatMessage": {
@@ -1845,12 +1908,12 @@
             "Short": {
                 "ActionHeader": "Spend one Resolve Point?",
                 "ChatMessage": {
-                    "Message": "{name} takes a short 10 minute rest.",
-                    "Restored": "{name} takes a short 10 minute rest, and spent {spentRP} Resolve Point to recover {regainedSP} Stamina Points."
+                    "Message": "{name} takes a 10-minute rest.",
+                    "Restored": "{name} takes a 10-minute rest, and spent {spentRP} Resolve Point to recover {regainedSP} Stamina Points."
                 },
-                "DialogDescription": "Take a short rest? On a short rest you may spend one Resolve Point to recover all Stamina Points.",
-                "DialogTitle": "Short 10 Minute Rest",
-                "Title": "Short Rest"
+                "DialogDescription": "Take a 10-minute rest? On a 10-minute rest you may spend one Resolve Point to recover all Stamina Points.",
+                "DialogTitle": "10-Minute Rest",
+                "Title": "10-Min Rest"
             }
         },
         "Rolls": {
@@ -1883,6 +1946,7 @@
                 "RollModeTooltip": "Режим броска определяет, кто сможет увидеть бросок.",
                 "Selector": "Выбрать '{name}'",
                 "SelectorTooltip": "Динамические выбор персонажа для контекста формулы '{name}'.",
+                "SimplifiedFormulaTooltip": "<p>The formula displayed on the dialog has been calculated from the following formula:</p><p>{formula}</p>",
                 "SituationalBonus": "Ситуационный бонус",
                 "SituationalBonusTooltip": "Действуют ли на бросок ситуационные модификаторы? (Например, дальность стрельбы)"
             },
@@ -1895,7 +1959,7 @@
                 "CriticalEffect": "Critical Effect: {criticalEffect}",
                 "CriticalFlavor": "{title} (Critical)",
                 "CriticalFlavorWithEffect": "{title} (Critical; {criticalEffect})",
-                "CriticalHit": "Critical Hit",
+                "CriticalHit": "Критическое попадание",
                 "Disadvantage": "Помеха",
                 "DisadvantageTooltip": "Бросок с помехой.",
                 "Formula": {
@@ -1907,8 +1971,8 @@
                 "NormalTooltip": "Обычный бросок.",
                 "Roll": "Бросить",
                 "SaveTitle": "Save - {label}",
-                "SkillCheckTitle": "Skill Check - {skill}",
-                "SkillCheckTitleWithProfession": "Skill Check - {skill} ({profession})"
+                "SkillCheckTitle": "Проверка навыка - {skill}",
+                "SkillCheckTitleWithProfession": "Проверка навыка - {skill} ({profession})"
             },
             "HealingRoll": "Бросок исцеления",
             "HealingRollFull": "Бросок исцеления - {name}",
@@ -1950,7 +2014,7 @@
             }
         },
         "Save": "Сохранить",
-        "SaveAbilityModTooltip": "Ability Modifier: {mod} ({ability})",
+        "SaveAbilityModTooltip": "Модификатор характеристики: {mod} ({ability})",
         "SaveBaseModifier": "Base Save: {base}",
         "SaveClassModTooltip": "Классовый модификатор: {mod} ({class})",
         "SaveDescriptorDisbelieve": "разоблачает",
@@ -1963,12 +2027,16 @@
         "SaveModifiersTooltip": "{type} Бонус: {mod} ({source})",
         "SaveProgressionFast": "Легкое",
         "SaveProgressionSlow": "Сложное",
-        "SenesBL": "Слепозрение",
-        "SenesBS": "Слепое чутьё",
-        "SenesDark": "Ночное зрение",
-        "SenesLLV": "Сумеречное зрение",
-        "Senses": "Восприятие",
-        "SensesST": "Сквозное чутьё",
+        "SensesTypes": {
+            "GlobalIlluminationThresholdMessage": "<strong>Starfinder System</strong><br />It is recommended to keep these settings enabled in order for features such as Low Light Vision to function correctly.",
+            "Senses": "Особые чувства",
+            "SensesBL": "Слепое зрение",
+            "SensesBS": "Слепое чутьё",
+            "SensesDark": "Ночное зрение",
+            "SensesLLV": "Сумеречное зрение",
+            "SensesLLVDark": "Low-Light Vision & Darkvision",
+            "SensesST": "Sense Through"
+        },
         "Settings": {
             "Advantage": {
                 "Hint": "Включает возможность совершения бросков с преимуществом/помехой.",
@@ -2031,9 +2099,45 @@
                 "Hint": "Удаляет шкалу опыта из листов персонажей.",
                 "Name": "Отключить шкалу опыта"
             },
+            "FloatingHP": {
+                "Button": "Configure Floating Number Settings",
+                "Hint": "Configure the floating numbers that appear on a token when their HP/SP is changed.",
+                "Menu": {
+                    "CanSeeBars": {
+                        "Hint": "Users that can see the token's resource bars will be able to see floating numbers.",
+                        "Name": "Can see resource bars?"
+                    },
+                    "CanSeeName": {
+                        "Hint": "Users that can see the token's name will be able to see floating numbers.",
+                        "Name": "Can see name?"
+                    },
+                    "Enabled": {
+                        "Hint": "Enable floating numbers when a token's HP/SP is changed.",
+                        "Name": "Enable Floating Numbers?"
+                    },
+                    "Label": "Floating Number Settings",
+                    "LimitByCriteria": {
+                        "Hint": "When enabled, users will only be shown floating numbers if they meet at least one of the criteria below. When disabled, floating numbers will be shown to all users.",
+                        "Name": "Limit by criteria?"
+                    },
+                    "MinPerm": {
+                        "Hint": "Users with this permission or higher over the token will be able to see floating numbers.",
+                        "Name": "Minimum Permission"
+                    },
+                    "VerboseFloatyText": {
+                        "Hint": "When enabled, the full names of shield arcs will be displayed.",
+                        "Name": "Verbose Mode"
+                    }
+                },
+                "Name": "Floating Number Settings"
+            },
             "GalacticTrade": {
                 "Hint": "Enables the Galactic Trade subsystem, allowing the maximum BP on a ship to be 5% higher than normal, and adds BPs to the ship inventory as credits.",
                 "Name": "Enable Galactic Trade"
+            },
+            "SFRPGTheme": {
+                "Hint": "When enabled, a few minor tweaks to Foundry's colours will be made to match Starfinder's colour scheme.",
+                "Name": "Custom SFRPG theme"
             },
             "ScalingCantrips": {
                 "Hint": "Enables the Scaling Cantrips variant rule from Galactic Magic pg. 88. Changing this setting will alter the formulas of all affected spells on all actors, so can take a while if you have lots.",
@@ -2246,6 +2350,10 @@
         "SkillTooltipThemeMod": "Модификатор темы: {mod}",
         "SkillTooltipTrainedClassSkill": "Бонус изученного классового навыка: {mod}",
         "SkillTrainedOnly": "Требуется изучение",
+        "SkillTrainedOnlyDialog": {
+            "Content": "{skill} is a trained only skill, but {name} is not trained in that skill. Would you like to roll anyway?",
+            "Title": "{skill} is trained only"
+        },
         "SkillsHeaderAbility": "Хар",
         "SkillsHeaderModifier": "Мод",
         "SkillsHeaderName": "Навык",
@@ -2272,6 +2380,7 @@
             "Voidglass": "Voidglass"
         },
         "SpecialTraits": "Особые черты",
+        "SpeciesGraft": "Species Graft",
         "Speed": "Скорость",
         "SpeedSpecial": "Доп. скорости",
         "SpellAreaEffects": {
@@ -2290,6 +2399,7 @@
             "AddSpells": "Доб. закл.",
             "AttributesNone": "Нет",
             "Browse": "Открыть справочник заклинаний",
+            "CreateFromCompendium": "Add Spell from Compendium",
             "CreateSpell": "Создать заклинание",
             "DeleteItem": "Удалить",
             "EditItem": "Изменить",
@@ -2452,6 +2562,7 @@
                 },
                 "PrimarySystems": "Основные системы",
                 "SecuritySystems": "Системы безопасности",
+                "SpecialAbilities": "Special Abilities",
                 "Thrusters": "Двигатели"
             },
             "Header": {
@@ -2800,6 +2911,8 @@
         "WeaponPropertiesHolyWaterTooltip": "A holy water weapon is infused with the blessings of one or more good-aligned deities (most commonly Hylax, Iomedae, or Sarenrae within the Pact Worlds, though devoted followers of any good-aligned deity could create such weapons). It damages only undead (regardless of alignment) and outsiders with the evil subtype, and even those creatures suffer no effect (and show no sign of their nature if it is not already obvious) with a successful saving throw. Crafting a holy water grenade requires the blessing of formally trained priests of a good deity, though a character of any alignment can do the actual crafting.",
         "WeaponPropertiesHybrid": "Гибридное",
         "WeaponPropertiesHybridTooltip": "A weapon with this special property is a hybrid item, incorporating both magic and technology into its design. It counts as a magical weapon and gains the analog weapon special property. It consumes ammunition and battery charges normally.",
+        "WeaponPropertiesHydrodynamic": "Hydrodynamic",
+        "WeaponPropertiesHydrodynamicTooltip": "This weapon can be thrown underwater effectively, taking no penalty to attack rolls or damage for underwater combat.",
         "WeaponPropertiesIgnite": "Поджигающее",
         "WeaponPropertiesIgniteTooltip": "Weapons with the ignite special property use an accelerant to start small, intense fires on their targets. A target hit by a weapon with this special property must succeed at a Reflex save (DC = 20 + 1/2 the item’s level + your Dexterity bonus) or gains the burning condition with the listed amount of damage. Gaining the burning condition multiple times from the ignite special property does not increase your burning damage—you take only the highest listed ignite damage each round. A character who gains the burning condition through other means (such as the burn critical effect, even from a weapon with ignite) does add that damage to her burning damage each round. Ending the burning condition ends burning from all sources.",
         "WeaponPropertiesIndirect": "Окольное",
@@ -2809,7 +2922,7 @@
         "WeaponPropertiesInstrumental": "Instrumental",
         "WeaponPropertiesInstrumentalTooltip": "A weapon with this property can also be used as a basic musical instrument (Armory 105). The size of this instrument’s battery is the same as that of the weapon’s, and it can be used as a weapon (with the charge usage indicated) or an instrument (where it uses 1 charge every 10 minutes). If the weapon is 8th level or higher, it also functions instead as a euphonic musical instrument (Armory 106).",
         "WeaponPropertiesIntegrated": "Встроенное",
-        "WeaponPropertiesIntegratedTooltip": "An integrated weapon can be wielded normally or installed in an armor upgrade slot. When properly installed, the weapon is considered to be wielded without needing to assign a number of hands to wield it. An integrated weapon requires the listed number of armor slots for proper installation. An android or any other creature with the upgrade slot racial ability cannot combine its racial upgrade slot with armor upgrade slots to install an integrated weapon. Installing, removing, or replacing an integrated weapon in a suit of armor takes 10 minutes, as if it were an armor upgrade.",
+        "WeaponPropertiesIntegratedTooltip": "An integrated weapon can be wielded normally or installed in an armor upgrade slot. When properly installed, the weapon is considered to be wielded without needing to assign a number of hands to wield it. An integrated weapon requires the listed number of armor slots for proper installation. An android or any other creature with the upgrade slot species ability cannot combine its species upgrade slot with armor upgrade slots to install an integrated weapon. Installing, removing, or replacing an integrated weapon in a suit of armor takes 10 minutes, as if it were an armor upgrade.",
         "WeaponPropertiesLine": "Линейное",
         "WeaponPropertiesLineTooltip": "This weapon fires a projectile in a straight line that pierces through multiple creatures or obstacles. When attacking with such a weapon, make a single attack roll and compare it to the relevant Armor Class of all creatures and objects in a line extending to the weapon’s listed range increment. Roll damage only once. The weapon hits all targets with an AC equal to or lower than the attack roll. However, if an attack fails to damage a creature or obstacle hit in the line (typically due to damage reduction or hardness), the path is stopped and the attack doesn’t damage creatures farther away. A line weapon can’t damage targets beyond its listed range. If you score a critical hit, that effect applies only to the first target hit in the line, and you roll the critical damage separately. If multiple creatures are equally close, you choose which one takes the effects of the critical hit. A line weapon doesn’t benefit from feats or abilities that increase the damage of a single attack (such as the operative’s trick attack).",
         "WeaponPropertiesLiving": "Живое",
@@ -2849,7 +2962,7 @@
         "WeaponPropertiesQuickReload": "Быстрозаряжаемое",
         "WeaponPropertiesQuickReloadTooltip": "You can reload this weapon as part of the same action as firing it, instead of taking a move action to reload.",
         "WeaponPropertiesRadioactive": "Радиоактивное",
-        "WeaponPropertiesRadioactiveTooltip": "A radioactive weapon contains unstable radioactive components. When the wielder rolls a natural 1 on an attack roll, she is exposed to dangerous radiation and must succeed at a Fortitude save or be inflicted with radiation sickness. (For radioactive blast weapons, the user must attempt a Fortitude save if any of the attacks are a natural 1). This is considered a low level of radiation. The DCs for this save and the disease are each equal to the weapon’s critical hit DC.",
+        "WeaponPropertiesRadioactiveTooltip": "Радиоактивное оружие содержит нестабильные радиоактивные компоненты. Когда владелец бросает натуральную 1 на броске атаки, он подвергается опасному облучению и должен преуспеть в испытании стойкости иначе будет поражен лучевой болезнью. (Для радиоактивного конусного оружия пользователь должен совершить проверку Стойкости, если какая-либо из атак является натуральной 1). Это считается низким уровнем радиации. СЛ для этого испытания и болезни равны СЛ для критической атаки оружия.",
         "WeaponPropertiesReach": "Длинное",
         "WeaponPropertiesReachTooltip": "Only melee weapons can have the reach special property. Wielding a weapon with reach gives you 10 feet of reach for attacks with that weapon. See Reach and Threatened Squares on page 255 for more information.",
         "WeaponPropertiesRecall": "Возвращающееся",
@@ -2871,7 +2984,7 @@
         "WeaponPropertiesShield": "Ограждающее",
         "WeaponPropertiesShieldTooltip": "A shield weapon encapsulates the target in a short-term force field. This force field lasts until the start of your next turn or until it has absorbed the listed amount of damage, whichever occurs first. A force field originating from a shield weapon blocks only incoming damage; it does not interfere in any way with the target’s weapons or attacks. You can’t use a shield projector to target yourself.",
         "WeaponPropertiesSniper": "Снайперское",
-        "WeaponPropertiesSniperTooltip": "Weapons with the sniper special property can be fired accurately at very long ranges if aimed properly. If you aim the weapon as a move action and then fire it on the same turn, use the value listed with the sniper special property as the weapon’s range increment. You can still fire a sniper weapon as normal, but it has only the range listed under its normal range entry when you do.",
+        "WeaponPropertiesSniperTooltip": "При должном прицеливании оружие с этим свойством позволяет вести огонь на дальние расстояния с высокой точностью. Если вы потратите сопутствующее действие на прицеливание, а затем совершите выстрел в этот же ход, в качестве шага дистанции оружия используется значение, указанное после особого свойства. Вы можете стрелять и без предварительного прицеливания, в этом случае используется шаг дистанции, указанный в таблице в столбце «дистанция». ",
         "WeaponPropertiesStun": "Обезвреживающее",
         "WeaponPropertiesStunTooltip": "You can set a weapon with the stun special property to stun mode (or reset it to normal mode) as a move action. While in stun mode, all the weapon’s attacks are nonlethal. See page 252 for more about how nonlethal damage works.",
         "WeaponPropertiesSubtle": "Бесшумное",
@@ -2885,12 +2998,12 @@
         "WeaponPropertiesTeleportive": "Телепортивное",
         "WeaponPropertiesTeleportiveTooltip": "This weapon’s fired ammunition teleports a short distance after being fired. You take only a –1 cumulative penalty when attacking outside the range of this weapon.",
         "WeaponPropertiesThought": "Мысленное",
-        "WeaponPropertiesThoughtTooltip": "A thought weapon can be fully or partially controlled via telepathy. If you have the telepathy or limited telepathy racial trait, are benefiting from a telepathy spell, are wearing a mindlink circlet, or have a similar ability, you ignore the weapon’s unwieldy weapon special property.",
+        "WeaponPropertiesThoughtTooltip": "A thought weapon can be fully or partially controlled via telepathy. If you have the telepathy or limited telepathy species trait, are benefiting from a telepathy spell, are wearing a mindlink circlet, or have a similar ability, you ignore the weapon’s unwieldy weapon special property.",
         "WeaponPropertiesThrottle": "Удушающее",
-        "WeaponPropertiesThrottleTooltip": "A throttle weapon deals damage only when it is used to grapple a foe, automatically dealing damage with every successful grapple combat maneuver. These are considered attacks for abilities that can increase a weapon’s damage (such as trick attack). All throttle weapons are also grapple weapons. While a target is successfully being grappled with a throttle weapon, it cannot use its airways to speak or make vocalizations of any kind (though other forms of making noise work normally).",
+        "WeaponPropertiesThrottleTooltip": "A throttle weapon deals damage only when it is used to grapple a foe, automatically dealing damage with every successful grapple combat maneuver. All throttle weapons are also grapple weapons. While a target is successfully being grappled with a throttle weapon, it cannot use its airways to speak or make vocalizations of any kind (though other forms of making noise work normally).",
         "WeaponPropertiesThrown": "Метательное",
-        "WeaponPropertiesThrownTooltip": "Ranged weapons that must be thrown and melee weapons that can be thrown as a ranged attack have the thrown special property and a listed range increment. You apply your Strength modifier to damage rolls for thrown attacks. After you throw a weapon, it lands near your target and you must recover it if you want to attack with it again.",
-        "WeaponPropertiesThruster": "Thruster",
+        "WeaponPropertiesThrownTooltip": "Этим свойством обладает дистанционное оружие, которое при атаке нужно метать, а также оружие ближнего боя, которое при атаке можно метнуть. Вы добавляете свой модификатор Силы к проверкам урона при метании. После метания оружие падает возле цели. Вы должны подобрать его, чтобы использовать снова.",
+        "WeaponPropertiesThruster": "Двигатель",
         "WeaponPropertiesThrusterTooltip": "This weapon produces controlled bursts of forceful energy, which you can direct toward enhancing your athletic exploits. As part of the action you use to fly, jump, or perform the bull rush combat maneuver, you can expend ammunition or charges equal to the weapon's usage to boost that action. When used to fly, this burst grants you a +2 enhanceent bonus to one Acrobatics check made to fly that round. When used to jump, this burst grants you an enhancement bonus to that Athletics check equal to the weapon's item level. When used to perform a bull rush, this burst grants you a +2 bonus to your attack roll.",
         "WeaponPropertiesTrip": "Сбивающее",
         "WeaponPropertiesTripTooltip": "When you attempt a trip combat maneuver while wielding a weapon with this property, you gain a +2 bonus to your attack roll.",
@@ -2901,7 +3014,7 @@
         "WeaponPropertiesUnderwater": "Подводное",
         "WeaponPropertiesUnderwaterTooltip": "Like residents of most water worlds, kalos create their own versions of common weapons, redesigned to function better underwater. These weapons have the following special property and generally cost 10% more.<br><br>Underwater: A weapon with this special property that is used underwater ignores the –2 penalty to attack rolls and deals full damage.",
         "WeaponPropertiesUnwieldy": "Громоздкое",
-        "WeaponPropertiesUnwieldyTooltip": "Weapons with the unwieldy special property are large and awkward, can’t be fired without cooling down first, or are otherwise difficult to use with repeated attacks. You can’t use an unwieldy weapon as part of a full attack (or any other action in which you could make multiple attacks), you can’t attack with it more than once per round, and you can’t use it to make an attack of opportunity.",
+        "WeaponPropertiesUnwieldyTooltip": "Оружие, обладающее этим свойством, достаточно крупное и неудобное. Возможно, ему нужно охлаждение между выстрелами, или его последовательное применение затруднено по иным причинам. Использование громоздкого оружия не может быть частью полной атаки (или любого другого действия, позволяющего совершить несколько атак), с его помощью можно совершить только одну атаку за раунд. Его нельзя применять для совершения внеочередныхатак. ",
         "WeaponPropertiesVariantBoost": "Мощное (ограниченно)",
         "WeaponPropertiesVariantBoostTooltip": "A weapon with the variant boost special property acts as a weapon with the boost special property, except boosting the weapon does not expend additional charges and the weapon can be boosted only the listed number of times per day.",
         "WeaponPropertiesWideLine": "Широколинейное",
