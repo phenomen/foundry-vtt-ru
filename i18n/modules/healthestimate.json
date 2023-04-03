@@ -97,12 +97,12 @@
 				"hint": "При включении этой опции, самая худшая стадия не будет отображаться для NPC, а вместо этого они будет заменена состоянием смерти."
 			},
 			"perfectionism": {
-				"name": "Поведение",
-				"hint": "Описание является последней стадией из настройки стадий.",
+				"name": "Отображение лучшей стадии",
+				"hint": "Настройки отображения наилучшей стадии (полностью здоров / без урона)",
 				"choices": {
-					"0": "Отображать описание даже если цель повреждена.",
-					"1": "Отображать описание, когда цель не повреждена.",
-					"2": "Не отображать описание, когда цель не повреждена."
+					"0": "Отображать даже если цель повреждена.",
+					"1": "Отображать только когда цель не повреждена.",
+					"2": "Полностью скрыто."
 				}
 			},
 			"outputChat": {
@@ -166,15 +166,34 @@
 				}
 			}
 		},
+		"custom-system-builder": {
+			"FractionHP": {
+				"hint": "Возможно это {dataPath1} или {dataPath2}."
+			},
+			"tempHP": {
+				"name": "Путь атрибута временных пунктов здоровья",
+				"hint": "Оставьте это пустым, если система не имеет этого или вы не хотите, чтобы это использовалось при оценке."
+			}
+		},
 		"cyberpunk-red-core": {
 			"useSystemStates": {
 				"name": "Cyberpunk RED - Травмы",
 				"hint": "Игнорировать настройки стадий и использовать систему травм из Cyberpunk RED."
 			}
 		},
+		"cyphersystem": {
+			"impaired": {
+				"name": "Health level for Impaired PCs",
+				"hint": "Sets the maximum health level (current / maximum, fraction 0.0 - 1.0) that can be reported for a PC that is Impaired on the Death Track"
+			},
+			"debilitated": {
+				"name": "Health level for Debilitated PCs",
+				"hint": "Sets the maximum health level (current / maximum, fraction 0.0 - 1.0) that can be reported for a PC that is Debilitated on the Death Track"
+			}
+		},
 		"dnd5e": {
 			"vehicleNames": {
-				"hint": "Описание всегда отображается для звездолётов и транспорта.",
+				"hint": "Описание стадий для транспорта.",
 				"default": "Разрушен, Структурные повреждения, Повреждён, Поцарапан, Как новый"
 			}
 		},
@@ -202,6 +221,17 @@
 			"staminaToHp": {
 				"name": "Живучесть для оценки",
 				"hint": "Добавить пункты живучести для оценки."
+			},
+			"hideHazardHP": {
+				"name": "Скрытие оценки угроз",
+				"hint": "Скрывает оценку для угроз."
+			},
+			"hideVehicleHP": {
+				"name": "Скрытие оценки транспорта",
+				"hint": "Скрывает оценку для транспорта."
+			},
+			"useThreshold": {
+				"hint": "Оценка здоровья для транспорта в виде трёх стадий. Рекомендуется уменьшить число стадий в настройке {setting} до трёх, если вы используете эту опцию."
 			}
 		},
 		"numenera": {
@@ -213,7 +243,7 @@
 		"starfinder": {
 			"useThreshold": {
 				"name": "Использовать порог транспорта",
-				"hint": "При включении стадии транспорта будут ограничены тремя."
+				"hint": "Транспорт использует стадии из настройки {setting1}. Иначе транспорт будет использовать то же описание, что указано в настройке {setting2}."
 			},
 			"thresholdNames": {
 				"name": "Стадии транспорта",
@@ -222,7 +252,7 @@
 			},
 			"vehicleNames": {
 				"name": "Стадии транспорта",
-				"hint": "Описание всегда отображается для звездолётов и транспорта.",
+				"hint": "Описание стадий для дронов, транспорта и звездолётов.",
 				"default": "Разрушен, Горит, Дымится, Помят, Поцарапан, Как новый"
 			},
 			"addStamina": {
@@ -238,14 +268,24 @@
 		},
 		"od6s": {
 			"vehicleNames": {
-				"name": "Стадии транспорта и звездолётов",
-				"hint": "Описание стадия для транспорта и звездолётов",
+				"name": "Стадии транспорта",
+				"hint": "Описание стадия для транспорта и звездолётов.",
 				"default": "Уничтожен, Почти уничтожен, Сильно повреждён, Незначительно повреждён, Слегка поврежден, Не повреждён"
+			}
+		},
+		"swade": {
+			"defaultWildCardMaxWounds": {
+				"name": "Default Wild Card's Max Wounds",
+				"hint": "This is used to calculate the default max wounds a NPC flagged as Wild Card would have for estimations."
 			},
-			"thresholdNames": {
-				"name": "Стадии",
-				"hint": "Число стадий ограничено тремя в порядке от худшего к лучшему.",
-				"default": "Разрушен, Структурные повреждения, В целости"
+			"vehicleNames": {
+				"name": "Стадии транспорта",
+				"hint": "Описание стадий для транспорта.",
+				"default": "Разрушен, Горит, Дымится, Помят, Поцарапан, Как новый"
+			},
+			"showIncap": {
+				"name": "Эффект статуса {incap}",
+				"hint": "Tokens with the {incap} Status Effect will be shown as {incap} instead of their actual estimates. Doesn't work for tokens that are vehicles or dead."
 			}
 		}
 	}

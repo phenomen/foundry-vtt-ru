@@ -13,11 +13,18 @@ import { InitFBL } from "./system-fbl.js";
 //import { InitAOS } from "./system-age-of-sigmar-soulbound.js";
 
 Hooks.once("init", async () => {
-  // Load system-specific CSS styles
-  var systemCSS = document.createElement("link");
-  systemCSS.rel = "stylesheet";
-  systemCSS.href = "modules/ru-ru/styles/" + game.system.id.toLowerCase() + ".css";
-  document.head.insertBefore(systemCSS, document.head.childNodes[document.head.childNodes.length - 1].nextSibling);
+  try {
+    const systemCSS = document.createElement("link");
+    systemCSS.rel = "stylesheet";
+    systemCSS.href = `/styles/${game.system.id.toLowerCase()}.css`;
+    systemCSS.addEventListener("error", (event) => {
+      console.error(`Failed to load ${systemCSS.href}`);
+    });
+    systemCSS.setAttribute("cache-control", "public, max-age=3600");
+    insertAfter(systemCSS, document.head.childNodes[document.head.childNodes.length - 1]);
+  } catch (error) {
+    console.error(error);
+  }
 
   const cyrillicFonts = [
     "Arial",
@@ -133,3 +140,7 @@ Hooks.once("init", async () => {
     });
   }
 });
+
+function insertAfter(newNode, referenceNode) {
+  referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+}

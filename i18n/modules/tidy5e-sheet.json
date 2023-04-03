@@ -425,6 +425,10 @@
 		"name": "Наложение иконки класса на иконки заклинаний ",
 		"hint": "Во вкладке книги заклинаний вместо изображения заклинания будет отображаться иконка соответствующего класса. Полезно для управления несколькими списками, чтобы не переключаться между ними."
 	},
+	"TIDY5E.Settings.SpellClassFilterAdditionalClasses": {
+		"name": "Add additional classes for 'Multiclass Spellbook filter'",
+		"hint": "Add additional homebrewed classes to the dropdown with this syntax 'id1|name1,id2|name2' e.g. 'occultist|Occultist,alchemist|Alchemist'"
+	},
 	"TIDY5E.Settings.LazyHpAndExpEnable": {
 		"name": "Включить ленивые деньги и опыт",
 		"hint": "С лёгкостью добавляйте и отнимайте ПЗ и опыт с автоматической конвертацией без перерасхода. Позволяет вводить значения, такие как: \"+10\", \"-10\", \"=10\", \"010\""
@@ -560,10 +564,10 @@
 	},
   "TIDY5E.Settings.AllowHpMaxOverride": {
 		"name": "Разрешить перезапись максимальных ПЗ персонажа",
-		"hint": "If enable this module replace will let the GM to manually change the hp max  value on the character sheet."
+		"hint": "If enable this module setting will let the GM to manually change the hp max  value on the character sheet."
 	},
 	"TIDY5E.Settings.AllowHpConfigOverride": {
-		"name": "Allow hp panel configuration override on Character",
+		"name": "Разрешить перезапись ПЗ",
 		"hint": "Usually you don't need this but if enable this module setting replace the hp configuration panel on the character sheet. THIS WILL OVERRIDE THE DEFAULT BEHAVIOR OF THE SYSTEM IS USEFUL FOR AVOID SOME NOT UNWANTED DEFAULT BEHAVIOR OF THE SYSTEM."
 	},
 	"TIDY5E.Settings.BetterAttackDialog": {
@@ -587,6 +591,10 @@
 	"TIDY5E.Settings.EnableSortFavoritesItemsAlphabetically": {
 		"name": "Включить сортировку избранного в алфавитном порядке",
 		"hint": "Если включено, эта опция будет сортировать в алфавитном порядке предметы, особенности, заклинания в html-шаблоне избранного."
+	},
+	"TIDY5E.Settings.EnableActionListOnFavoritePanel": {
+		"name": "Enable Action List On Favorite Panel",
+		"hint": "Show favorites item grouped for Action, Bonus Action, Reaction. YOU NEED THE MODULE 'Character Actions 5e Variant forked by p4535992 (https://github.com/p4535992/foundryvtt-character-actions-dnd5e)'"
 	},
 	"TIDY5E.Settings.HBEnableUpcastFreeSpell": {
 		"name": "Enable upcast free spell.",
