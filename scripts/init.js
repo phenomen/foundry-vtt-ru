@@ -10,21 +10,12 @@ import { InitCOC7 } from "./system-coc7.js";
 import { InitMASKS } from "./system-masks.js";
 import { InitSFRPGBB } from "./system-sfrpgbb.js";
 import { InitFBL } from "./system-fbl.js";
-//import { InitAOS } from "./system-age-of-sigmar-soulbound.js";
 
 Hooks.once("init", async () => {
-  try {
-    const systemCSS = document.createElement("link");
-    systemCSS.rel = "stylesheet";
-    systemCSS.href = `/styles/${game.system.id.toLowerCase()}.css`;
-    systemCSS.addEventListener("error", (event) => {
-      console.error(`Failed to load ${systemCSS.href}`);
-    });
-    systemCSS.setAttribute("cache-control", "public, max-age=3600");
-    insertAfter(systemCSS, document.head.childNodes[document.head.childNodes.length - 1]);
-  } catch (error) {
-    console.error(error);
-  }
+  const systemCSS = document.createElement("link");
+  systemCSS.rel = "stylesheet";
+  systemCSS.href = `/modules/ru-ru/styles/${game.system.id.toLowerCase()}.css`;
+  document.head.appendChild(systemCSS);
 
   const cyrillicFonts = [
     "Arial",
@@ -128,11 +119,6 @@ Hooks.once("init", async () => {
     InitSFRPGBB();
   }
 
-  // AGE OF SIGMAR SOULBOUND
-  //if (game.system.id === "age-of-sigmar-soulbound") {
-  //  InitAOS();
-  //}
-
   // QUICK INSERT FIX
   if (game.modules.get("quick-insert")?.active) {
     Hooks.on("ready", async function () {
@@ -140,7 +126,3 @@ Hooks.once("init", async () => {
     });
   }
 });
-
-function insertAfter(newNode, referenceNode) {
-  referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
-}
