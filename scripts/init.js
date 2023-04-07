@@ -10,14 +10,12 @@ import { InitCOC7 } from "./system-coc7.js";
 import { InitMASKS } from "./system-masks.js";
 import { InitSFRPGBB } from "./system-sfrpgbb.js";
 import { InitFBL } from "./system-fbl.js";
-//import { InitAOS } from "./system-age-of-sigmar-soulbound.js";
 
 Hooks.once("init", async () => {
-  // Load system-specific CSS styles
-  var systemCSS = document.createElement("link");
+  const systemCSS = document.createElement("link");
   systemCSS.rel = "stylesheet";
-  systemCSS.href = "modules/ru-ru/styles/" + game.system.id.toLowerCase() + ".css";
-  document.head.insertBefore(systemCSS, document.head.childNodes[document.head.childNodes.length - 1].nextSibling);
+  systemCSS.href = `/modules/ru-ru/styles/${game.system.id.toLowerCase()}.css`;
+  document.head.appendChild(systemCSS);
 
   const cyrillicFonts = [
     "Arial",
@@ -120,11 +118,6 @@ Hooks.once("init", async () => {
   if (game.system.id === "sfrpgbb") {
     InitSFRPGBB();
   }
-
-  // AGE OF SIGMAR SOULBOUND
-  //if (game.system.id === "age-of-sigmar-soulbound") {
-  //  InitAOS();
-  //}
 
   // QUICK INSERT FIX
   if (game.modules.get("quick-insert")?.active) {

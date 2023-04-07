@@ -4,6 +4,7 @@
   --color-green-dnd: #e0e5c1;
   --color-black: #000000;
   --color-white: #ffffff;
+  --t5e-signika: var(--font-sans);
   --syb5e-pc-font: var(--font-fancy) !important;
   --syb5e-npc-font: var(--font-fancy) !important;
 }
@@ -113,8 +114,10 @@
   font-size: var(--text-sm);
 }
 
-.dnd5e.sheet .filter-list .filter-item {
+.dnd5e.sheet .filter-list .filter-item,
+.tidy5e.sheet.actor .filter-list .filter-item {
   font-family: var(--font-sans-condensed);
+  font-size: var(--text-sm);
 }
 
 .dnd5e.sheet.actor .traits label {
@@ -148,7 +151,7 @@
 .dnd5e.sheet.actor h4.box-title {
   font-family: var(--font-fancy);
   font-size: var(--text-sm);
-  font-weight: 500;
+  font-weight: 700;
   padding: 0px;
   height: 19px;
 }
@@ -180,8 +183,15 @@
 }
 
 .dnd5e.sheet .items-list .items-header .item-name {
-  font-family: var(--font-serif);
-  font-weight: 600;
+  font-family: "Nodesto", sans-serif;
+  font-weight: 500;
+  font-size: var(--text-lg);
+}
+
+.dnd5e.sheet.actor.character .sheet-header .charlevel,
+.dnd5e.sheet.actor.character .sheet-header .charlevel label,
+.dnd5e.sheet.actor .sheet-header .header-exp {
+  font-family: var(--font-fancy);
   font-size: var(--text-base);
 }
 
@@ -401,11 +411,22 @@
   --signika: var(--font-sans);
 }
 
+.tidy5e.sheet.actor input.temphp,
+.tidy5e.sheet.actor input.max-temphp,
+.tidy5e.sheet.actor .portrait-temp {
+  font-size: var(--text-xs);
+}
+
+.tidy5e.sheet.actor .portrait-temp input {
+  width: 42px;
+}
+
 .tidy5e.sheet.actor .tidy5e-navigation .item {
   font-family: var(--font-fancy);
   font-weight: 500;
   font-size: var(--text-base);
   line-height: 20px;
+  text-align: center;
 }
 
 .tidy5e.sheet.actor .list-layout .items-list .item h4 {
@@ -459,17 +480,6 @@
 
 .tidy5e.sheet.actor .resources .resource .resource-value.multiple input {
   font-size: var(--text-base);
-}
-
-.portrait-hp span {
-  height: 130% !important;
-}
-
-.tidy5e.sheet.actor input.hp-max,
-.tidy5e.sheet.actor input.max-temphp,
-.tidy5e.sheet.actor input.hp-min,
-.tidy5e.sheet.actor input.min-temphp {
-  text-align: center;
 }
 
 .tidy5e.sheet.actor .traits.show-labels label span {

@@ -450,7 +450,16 @@
 
 @font-face {
   font-family: "Modesto Condensed";
-  src: url("../fonts/Nodesto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Modesto.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Modesto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Modesto.ttf") format("truetype");
 }
 
 @font-face {
@@ -460,7 +469,7 @@
 
 @font-face {
   font-family: "Nodesto";
-  src: url("../fonts/Nodesto-Regular.ttf") format("truetype");
+  src: url("../fonts/Modesto.ttf") format("truetype");
 }
 
 @font-face {
@@ -478,7 +487,7 @@
   src: url("../fonts/MarckScript-Regular.ttf") format("truetype");
 }
 
-.nodesto {
+.nodesto,
+.modesto {
   font-family: "Modesto Condensed";
-  font-weight: 400 !important;
 }
