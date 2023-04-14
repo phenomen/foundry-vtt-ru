@@ -36,7 +36,24 @@ Hooks.once("init", async () => {
   
   CONFIG.fontDefinitions = foundry.utils.mergeObject(CONFIG.fontDefinitions, cyrillicFonts);
   CONFIG.defaultFontFamily = "Noto Sans";
-  CONFIG.canvasTextStyle.fontFamily = "Fira Sans Extra Condensed";
+
+  /* CUSTOM LABEL FONTS */
+  game.settings.register("ru-ru", "tokenFontFamily", {
+    name: "Шрифт подписей на сцене",
+    hint: "Шрифт, используемый для имён токенов и названий заметок на сцене.",
+    type: Number,
+    default: 17,
+    choices: Object.keys(CONFIG.fontDefinitions),
+    scope: "world",
+    config: true,
+    restricted: true,
+    onChange: (value) => {
+      window.location.reload();
+    },
+  });
+
+
+  CONFIG.canvasTextStyle.fontFamily = Object.keys(CONFIG.fontDefinitions)[game.settings.get("ru-ru", "tokenFontFamily")];
   
   /* LOAD SYSTEM-SPECIFIC SCRIPTS */
 
