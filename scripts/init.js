@@ -38,7 +38,7 @@ Hooks.once("init", async () => {
   CONFIG.defaultFontFamily = "Noto Sans";
 
   /* CUSTOM LABEL FONTS */
-  game.settings.register("ru-ru", "tokenFontFamily", {
+  game.settings.register("ru-ru", "sceneLabelFont", {
     name: "Шрифт подписей на сцене",
     hint: "Шрифт, используемый для имён токенов и названий заметок на сцене.",
     type: Number,
@@ -53,7 +53,7 @@ Hooks.once("init", async () => {
   });
 
 
-  CONFIG.canvasTextStyle.fontFamily = Object.keys(CONFIG.fontDefinitions)[game.settings.get("ru-ru", "tokenFontFamily")];
+  CONFIG.canvasTextStyle.fontFamily = Object.keys(CONFIG.fontDefinitions)[game.settings.get("ru-ru", "sceneLabelFont")];
   
   /* LOAD SYSTEM-SPECIFIC SCRIPTS */
 
