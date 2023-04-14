@@ -14,6 +14,8 @@
   "MonksActiveTiles.Origin": "Оригинальное место назначения",
   "MonksActiveTiles.Controlled": "Токены под управлением",
   "MonksActiveTiles.CurrentlyPlaying": "Сейчас играет",
+  "MonksActiveTiles.TileVariables": "Переменные тайла",
+  "MonksActiveTiles.ClearVariables": "Очистка переменных",
   "MonksActiveTiles.TileHistory": "История тайла",
   "MonksActiveTiles.ResetHistory": "Сброс истории",
   "MonksActiveTiles.SelectTile": "Выбор тайла",
@@ -76,7 +78,7 @@
   "MonksActiveTiles.action.activeeffect": "Активный эффект",
   "MonksActiveTiles.action.movement": "Перемещение",
   "MonksActiveTiles.action.createtoken": "Создание токена",
-  "MonksActiveTiles.action.playanimation": "Воспроизведение анимации",
+  "MonksActiveTiles.action.playanimation": "Анимация тайла",
   "MonksActiveTiles.action.openjournal": "Открытие журнала",
   "MonksActiveTiles.action.openactor": "Открытие бланка актёра",
   "MonksActiveTiles.action.additem": "Добавление предмета",
@@ -114,6 +116,7 @@
   "MonksActiveTiles.filter.attribute": "Фильтр по атрибутам",
   "MonksActiveTiles.filter.inventory": "Фильтр по предметам в инвентаре",
   "MonksActiveTiles.filter.condition": "Фильтр состояния",
+  "MonksActiveTiles.filter.random": "Случайное число",
 
   "MonksActiveTiles.logic.anchor": "Вход",
   "MonksActiveTiles.logic.goto": "Переход ко входу",
@@ -157,7 +160,7 @@
   "MonksActiveTiles.ctrl.animatepan": "Анимация движения камеры",
   "MonksActiveTiles.ctrl.deletesource": "Удаление исходного токена",
   "MonksActiveTiles.ctrl.avoidtokens": "Отступ от других токенов в месте назначения",
-  "MonksActiveTiles.ctrl.rollattack": "Отображение в виде броска",
+  "MonksActiveTiles.ctrl.rollattack": "Бросок атаки",
   "MonksActiveTiles.ctrl.volume": "Громкость",
   "MonksActiveTiles.ctrl.incharacter": "От персонажа",
   "MonksActiveTiles.ctrl.speaker": "Говорящий",
@@ -228,6 +231,11 @@
   "MonksActiveTiles.ctrl.washcolour": "Цвет размытия",
   "MonksActiveTiles.ctrl.imagefile": "Файл изображения",
   "MonksActiveTiles.ctrl.caption": "Заголовок",
+  "MonksActiveTiles.ctrl.activetoken": "Использовать только токены активного игрока",
+  "MonksActiveTiles.ctrl.randomnumber": "Случайный процент",
+  "MonksActiveTiles.ctrl.fail": "Переход ко входу при провале",
+  "MonksActiveTiles.ctrl.showdice": "Отображение кости",
+  "MonksActiveTiles.ctrl.allowdisabled": "Разрешить отключенные",
 
   "MonksActiveTiles.mode.enter": "Вход",
   "MonksActiveTiles.mode.exit": "Выход",
@@ -337,11 +345,16 @@
 
   "MonksActiveTiles.target.appendtarget": "Добавление доп. целей",
   "MonksActiveTiles.target.overwritetarget": "Смена целей",
+  "MonksActiveTiles.target.removetarget": "Удаление цели",
   "MonksActiveTiles.target.clear": "Очистка всех целей",
 
   "MonksActiveTiles.position.random": "Случайно внутри",
   "MonksActiveTiles.position.center": "По центру",
   "MonksActiveTiles.position.relative": "Относительно входа",
+
+  "MonksActiveTiles.msgtype.MessageAndBubble": "Сообщение чата и облако речи",
+  "MonksActiveTiles.msgtype.MessageOnly": "Только сообщение чата",
+  "MonksActiveTiles.msgtype.ChatBubble": "Только облако речи",
 
   "MonksActiveTiles.transition.none": "Нет",
   "MonksActiveTiles.transition.fade": "Затухание",
@@ -408,5 +421,7 @@
   "MonksActiveTiles.prevent-when-paused.name": "Предотвращение во время паузы",
   "MonksActiveTiles.prevent-when-paused.hint": "Предотвращает срабатывание триггеров, когда игра на паузе",
   "MonksActiveTiles.allow-door-passthrough.name": "Разрешить щелчок сквозь дверь",
-  "MonksActiveTiles.allow-door-passthrough.hint": "Разрешить тайлу под дверью срабатывать при нажатии на дверь"
+  "MonksActiveTiles.allow-door-passthrough.hint": "Разрешить тайлу под дверью срабатывать при нажатии на дверь",
+  "MonksLittleDetails.drop-item-size.name": "Размер выбрасываемого предмета",
+  "MonksLittleDetails.drop-item-size.hint": "Устанавливает размер выбрасываемого предмета"
 }
