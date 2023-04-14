@@ -37,12 +37,12 @@ Hooks.once("init", async () => {
   CONFIG.fontDefinitions = foundry.utils.mergeObject(CONFIG.fontDefinitions, cyrillicFonts);
   CONFIG.defaultFontFamily = "Noto Sans";
 
-  /* CUSTOM LABEL FONTS */
+  /* CUSTOM LABEL FONT */
   game.settings.register("ru-ru", "sceneLabelFont", {
     name: "Шрифт подписей на сцене",
     hint: "Шрифт, используемый для имён токенов и названий заметок на сцене.",
     type: Number,
-    default: 17,
+    default: 10,
     choices: Object.keys(CONFIG.fontDefinitions),
     scope: "world",
     config: true,
