@@ -12,112 +12,75 @@ import { InitSFRPGBB } from "./system-sfrpgbb.js";
 import { InitFBL } from "./system-fbl.js";
 
 Hooks.once("init", async () => {
+
+  /* LOAD SYSTEM-SPECIFIC CSS */
   const systemCSS = document.createElement("link");
   systemCSS.rel = "stylesheet";
   systemCSS.href = `/modules/ru-ru/styles/${game.system.id.toLowerCase()}.css`;
   document.head.appendChild(systemCSS);
 
-  const cyrillicFonts = [
-    "Arial",
-    "Courier",
-    "Courier New",
-    "Modesto Condensed",
-    "Signika",
-    "Times",
-    "Times New Roman",
-    "Noto Sans",
-    "Noto Serif",
-    "Noto Sans Mono",
-    "Fira Sans Extra Condensed",
-    "Beaufort",
-    "Manuskript",
-    "Marck Script",
-    "OCR-A",
-    "GWENT",
-    "Exocet",
-  ];
-
-  CONFIG._fontFamilies = cyrillicFonts;
-
-  // Add Cyrillic fonts to the font list
-  game.settings.register("ru-ru", "tokenFontFamily", {
-    name: "Шрифт подписей на сцене",
-    hint: "Шрифт, используемый для имён токенов и названий заметок на сцене.",
-    type: Number,
-    default: 10,
-    choices: cyrillicFonts,
-    scope: "world",
-    config: true,
-    restricted: true,
-    onChange: (value) => {
-      window.location.reload();
-    },
-  });
-
+  /* ADD CYRILLIC FONTS */
+  const cyrillicFonts = {
+    "Beaufort": { editor: true, fonts: []},
+    "Exocet": { editor: true, fonts: []},
+    "Fira Sans Extra Condensed": { editor: true, fonts: []},
+    "GWENT": { editor: true, fonts: []},
+    "Manuskript": { editor: true, fonts: []},
+    "Marck Script": { editor: true, fonts: []},
+    "Montserrat": { editor: true, fonts: []},
+    "Noto Sans Mono": { editor: true, fonts: []},
+    "Noto Sans": { editor: true, fonts: []},
+    "Noto Serif": { editor: true, fonts: []},
+    "OCR-A": { editor: true, fonts: []},
+  };
+  
+  CONFIG.fontDefinitions = foundry.utils.mergeObject(CONFIG.fontDefinitions, cyrillicFonts);
   CONFIG.defaultFontFamily = "Noto Sans";
-  CONFIG.canvasTextStyle.fontFamily = cyrillicFonts[game.settings.get("ru-ru", "tokenFontFamily")];
+  CONFIG.canvasTextStyle.fontFamily = "Fira Sans Extra Condensed";
+  
+  /* LOAD SYSTEM-SPECIFIC SCRIPTS */
 
-  //System-specific scripts
-
-  // ALIEN
-  if (game.system.id === "alienrpg") {
-    InitALIEN();
+  switch(game.system.id) {
+    case "alienrpg":
+      InitALIEN();
+      break;
+    case "CoC7":
+      InitCOC7();
+      break;
+    case "yzecoriolis":
+      InitCORIOLIS();
+      break;
+    case "deltagreen":
+      InitDELTAGREEN();
+      break;
+    case "dnd5e":
+      InitDND5();
+      break;
+    case "dungeonworld":
+      InitDUNGEONWORLD();
+      break;
+    case "forbidden-lands":
+      InitFBL();
+      break;
+    case "investigator":
+      InitINVESTIGATOR();
+      break;
+    case "pf1":
+      InitPF1E();
+      break;
+    case "wfrp4e":
+      InitWFRP4();
+      break;
+    case "pbta":
+      if (game.modules.get("masks-newgeneration-sheets")?.active) {
+        InitMASKS();
+      }
+      break;
+    case "sfrpgbb":
+      InitSFRPGBB();
+      break;
   }
-
-  // CALL OF CTHULHU
-  if (game.system.id === "CoC7") {
-    InitCOC7();
-  }
-
-  // CORIOLIS
-  if (game.system.id === "yzecoriolis") {
-    InitCORIOLIS();
-  }
-
-  // DELTA GREEN
-  if (game.system.id === "deltagreen") {
-    InitDELTAGREEN();
-  }
-
-  // D&D5
-  if (game.system.id === "dnd5e") {
-    InitDND5();
-  }
-
-  // DUNGEON WORLD
-  if (game.system.id === "dungeonworld") {
-    InitDUNGEONWORLD();
-  }
-
-  // FORBIDDEN LANDS
-  if (game.system.id === "forbidden-lands") {
-    InitFBL();
-  }
-
-  // INVESTIGATOR
-  if (game.system.id === "investigator") {
-    InitINVESTIGATOR();
-  }
-
-  // PATHFINDER 1
-  if (game.system.id === "pf1") {
-    InitPF1E();
-  }
-
-  // WFRP4
-  if (game.system.id === "wfrp4e") {
-    InitWFRP4();
-  }
-
-  // MASKS
-  if (game.system.id === "pbta" && game.modules.get("masks-newgeneration-sheets")?.active) {
-    InitMASKS();
-  }
-
-  // SFBB
-  if (game.system.id === "sfrpgbb") {
-    InitSFRPGBB();
-  }
+  
 
   // QUICK INSERT FIX
   if (game.modules.get("quick-insert")?.active) {
