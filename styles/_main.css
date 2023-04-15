@@ -3,6 +3,9 @@
 /* FOUNDRY */
 
 body {
+  --font-h1: var(--font-fancy);
+  --font-h2: var(--font-serif);
+  --font-body: var(--font-sans);
   font-family: var(--font-sans);
 }
 
@@ -23,6 +26,12 @@ form .form-group label {
 form .form-group label {
   line-height: 18px;
   line-height: normal;
+}
+
+
+
+body.auth #main-header h1 {
+  font-size: 3rem;
 }
 
 .header-button,
@@ -90,6 +99,18 @@ form .form-group label {
   flex: 2;
   font-family: var(--font-sans-condensed);
   font-weight: 500;
+}
+
+.compendium-sidebar .dropdown-menu .dropdown-list .dropdown-item {
+  font-family: var(--font-sans-condensed);
+}
+
+.compendium-sidebar .dropdown-menu .dropdown-list {
+  padding: 6px;
+}
+
+.compendium-sidebar .dropdown-menu {
+  width: 150px;
 }
 
 /* MODULES */
