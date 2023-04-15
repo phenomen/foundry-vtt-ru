@@ -28,6 +28,12 @@
   --text-8xl: 6rem;
 }
 
+body {
+  --font-h1: var(--font-fancy);
+  --font-h2: var(--font-serif);
+  --font-body: var(--font-sans);
+}
+
 /* Fira Sans Extra Condensed */
 
 @font-face {
@@ -493,6 +499,11 @@
 @font-face {
   font-family: "Fondamento";
   src: url("../fonts/Beaufort/Beaufort-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Jim Nightshade";
+  src: url("../fonts/MarckScript-Regular.ttf") format("truetype");
 }
 
 @font-face {
