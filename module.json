@@ -11,14 +11,18 @@
       "url": "https://discord.gg/Z2CXFy35WF"
     }
   ],
-  "version": "11.295.4",
+  "version": "11.295.5",
   "compatibility": {
     "minimum": "10",
     "verified": "11",
     "maximum": "11"
   },
-  "esmodules": ["scripts/init.js"],
-  "styles": ["styles/_main.css"],
+  "esmodules": [
+    "scripts/init.js"
+  ],
+  "styles": [
+    "styles/_main.css"
+  ],
   "coreTranslation": true,
   "languages": [
     {
@@ -29,6 +33,10 @@
     {
       "lang": "ru",
       "path": "i18n/core/types.json"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/core/adjectives.json"
     },
     {
       "lang": "ru",
@@ -110,7 +118,6 @@
       "path": "i18n/systems/foundry-ironsworn.json",
       "system": "foundry-ironsworn"
     },
-
     {
       "lang": "ru",
       "path": "i18n/systems/mutant-year-zero.json",

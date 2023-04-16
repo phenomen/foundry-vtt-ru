@@ -12,28 +12,30 @@ import { InitSFRPGBB } from "./system-sfrpgbb.js";
 import { InitFBL } from "./system-fbl.js";
 
 Hooks.once("init", async () => {
-
   /* LOAD SYSTEM-SPECIFIC CSS */
   const systemCSS = document.createElement("link");
   systemCSS.rel = "stylesheet";
   systemCSS.href = `/modules/ru-ru/styles/${game.system.id.toLowerCase()}.css`;
   document.head.appendChild(systemCSS);
 
+  /*  USE RUSSIAN ADJECTIVES FOR RANDOM PREFIX */
+  CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectives";
+
   /* ADD CYRILLIC FONTS */
   const cyrillicFonts = {
-    "Beaufort": { editor: true, fonts: []},
-    "Exocet": { editor: true, fonts: []},
-    "Fira Sans Extra Condensed": { editor: true, fonts: []},
-    "GWENT": { editor: true, fonts: []},
-    "Manuskript": { editor: true, fonts: []},
-    "Marck Script": { editor: true, fonts: []},
-    "Montserrat": { editor: true, fonts: []},
-    "Noto Sans Mono": { editor: true, fonts: []},
-    "Noto Sans": { editor: true, fonts: []},
-    "Noto Serif": { editor: true, fonts: []},
-    "OCR-A": { editor: true, fonts: []},
+    "Beaufort": { editor: true, fonts: [] },
+    "Exocet": { editor: true, fonts: [] },
+    "Fira Sans Extra Condensed": { editor: true, fonts: [] },
+    "GWENT": { editor: true, fonts: [] },
+    "Manuskript": { editor: true, fonts: [] },
+    "Marck Script": { editor: true, fonts: [] },
+    "Montserrat": { editor: true, fonts: [] },
+    "Noto Sans Mono": { editor: true, fonts: [] },
+    "Noto Sans": { editor: true, fonts: [] },
+    "Noto Serif": { editor: true, fonts: [] },
+    "OCR-A": { editor: true, fonts: [] },
   };
-  
+
   CONFIG.fontDefinitions = foundry.utils.mergeObject(CONFIG.fontDefinitions, cyrillicFonts);
   CONFIG.defaultFontFamily = "Noto Sans";
 
@@ -52,12 +54,13 @@ Hooks.once("init", async () => {
     },
   });
 
+  CONFIG.canvasTextStyle.fontFamily = Object.keys(CONFIG.fontDefinitions)[
+    game.settings.get("ru-ru", "sceneLabelFont")
+  ];
 
-  CONFIG.canvasTextStyle.fontFamily = Object.keys(CONFIG.fontDefinitions)[game.settings.get("ru-ru", "sceneLabelFont")];
-  
   /* LOAD SYSTEM-SPECIFIC SCRIPTS */
 
-  switch(game.system.id) {
+  switch (game.system.id) {
     case "alienrpg":
       InitALIEN();
       break;
@@ -97,7 +100,6 @@ Hooks.once("init", async () => {
       InitSFRPGBB();
       break;
   }
-  
 
   // QUICK INSERT FIX
   if (game.modules.get("quick-insert")?.active) {
