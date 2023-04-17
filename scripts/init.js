@@ -19,7 +19,7 @@ Hooks.once("init", async () => {
   document.head.appendChild(systemCSS);
 
   /*  USE RUSSIAN ADJECTIVES FOR RANDOM PREFIX */
-  CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectives";
+  CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
 
   /* ADD CYRILLIC FONTS */
   const cyrillicFonts = {
@@ -108,3 +108,29 @@ Hooks.once("init", async () => {
     });
   }
 });
+
+Hooks.on("getSceneControlButtons", getSceneControlButtons);
+
+function getSceneControlButtons(controls) {
+  if (game.version.startsWith("11")) {
+    const tokens = controls.find((c) => c.name === "token");
+    if (game.user.isGM)
+      tokens.tools.push({
+        name: "adjectives-mode",
+        title: "Переключение рода прилагательных",
+        icon: "fas fa-female",
+        active: CONFIG.Token.adjectivesPrefix === "TOKEN.RussianAdjectivesM" ? false : true,
+        toggle: true,
+        onClick: (active) => {
+          active = !active;
+          if (active) {
+            ui.notifications.notify("Для случайных прилагательных используется мужской род");
+            CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
+          } else {
+            ui.notifications.notify("Для случайных прилагательных используется женский род");
+            CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesF";
+          }
+        },
+      });
+  }
+}
