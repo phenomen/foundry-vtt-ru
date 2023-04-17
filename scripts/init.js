@@ -122,13 +122,12 @@ function getSceneControlButtons(controls) {
         active: CONFIG.Token.adjectivesPrefix === "TOKEN.RussianAdjectivesF",
         toggle: true,
         onClick: (active) => {
-          active = !active;
           if (active) {
-            ui.notifications.notify("Для случайных прилагательных используется мужской род");
-            CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
-          } else {
             ui.notifications.notify("Для случайных прилагательных используется женский род");
             CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesF";
+          } else {
+            ui.notifications.notify("Для случайных прилагательных используется мужской род");
+            CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
           }
         },
       });
