@@ -112,24 +112,24 @@ Hooks.once("init", async () => {
 Hooks.on("getSceneControlButtons", getSceneControlButtons);
 
 function getSceneControlButtons(controls) {
-  if (game.version.startsWith("11")) {
+  if (game.version.startsWith("11") && game.user.isGM) {
     const tokens = controls.find((c) => c.name === "token");
-    if (game.user.isGM)
-      tokens.tools.push({
-        name: "adjectives-mode",
-        title: "Переключение рода прилагательных",
-        icon: "fas fa-female",
-        active: CONFIG.Token.adjectivesPrefix === "TOKEN.RussianAdjectivesF",
-        toggle: true,
-        onClick: (active) => {
-          if (active) {
-            ui.notifications.notify("Для случайных прилагательных используется женский род");
-            CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesF";
-          } else {
-            ui.notifications.notify("Для случайных прилагательных используется мужской род");
-            CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
-          }
-        },
-      });
+
+    tokens.tools.push({
+      name: "adjectives-mode",
+      title: "Переключение рода прилагательных",
+      icon: "fas fa-female",
+      active: CONFIG.Token.adjectivesPrefix === "TOKEN.RussianAdjectivesF",
+      toggle: true,
+      onClick: (active) => {
+        if (active) {
+          ui.notifications.notify("Для случайных прилагательных используется женский род");
+          CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesF";
+        } else {
+          ui.notifications.notify("Для случайных прилагательных используется мужской род");
+          CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
+        }
+      },
+    });
   }
 }
