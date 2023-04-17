@@ -119,7 +119,7 @@ function getSceneControlButtons(controls) {
         name: "adjectives-mode",
         title: "Переключение рода прилагательных",
         icon: "fas fa-female",
-        active: CONFIG.Token.adjectivesPrefix === "TOKEN.RussianAdjectivesM" ? false : true,
+        active: CONFIG.Token.adjectivesPrefix === "TOKEN.RussianAdjectivesF",
         toggle: true,
         onClick: (active) => {
           active = !active;
