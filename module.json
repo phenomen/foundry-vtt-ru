@@ -1,0 +1,733 @@
+{
+  "id": "ru-ru",
+  "name": "ru-ru",
+  "title": "❄️ Russian Translation | Русский перевод",
+  "description": "<p>Модуль перевода добавляет русский язык в Foundry VTT, системы Dungeons & Dragons 5, Call of Cthulhu (Зов Ктулху), Dungeon Crawl Classics, 13th Age, AoS: Soulbound, Alien (Чужой), AGE, Blades in the Dark (Клинки во тьме), City of Mist (Город Тумана), Coriolis (Кориолис), Cyberpunk RED, Cypher, Death in Space, Delta Green, Dungeon World, Forbidden Lands (Запретные земли), Vampire V5 (Вампиры: Маскарад), Genesys / Star Wars FFG, GUMSHOE, Mutants Year Zero (Мутанты. Точка Отсчёта), Old-School Essentials, Pathfinder 1e, Savage Worlds (Дневник Авантюриста), Shadow of the Demon Lord, Star Trek Adventures (Звёздный Путь), Starfinder, Tales from the Loop (Тайны Эхосферы), The One Ring 2e, Traveler / Cepheus Engine, Warhammer Fantasy Roleplay 4, The Witcher (Ведьмак) и множество модулей.</p><p><strong>ВНИМАНИЕ:</strong> Ознакомьтесь с инструкцией по корректной установке и настройке на <a href=\"https://github.com/phenomen/foundry-vtt-ru\">https://github.com/phenomen/foundry-vtt-ru</a></p>",
+  "authors": [
+    {
+      "name": "Phenomen",
+      "discord": "phenomen#1337",
+      "email": "alex@ruleplaying.com",
+      "url": "https://discord.gg/Z2CXFy35WF"
+    }
+  ],
+  "version": "11.295.11",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "11",
+    "maximum": "11"
+  },
+  "esmodules": [
+    "ru-ru.js"
+  ],
+  "styles": [
+    "styles/_main.css"
+  ],
+  "coreTranslation": true,
+  "languages": [
+    {
+      "lang": "ru",
+      "name": "Russian",
+      "path": "i18n/core/foundry.json"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/core/types.json"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/core/adjectives_m.json"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/core/adjectives_f.json"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/age-of-sigmar-soulbound.json",
+      "system": "age-of-sigmar-soulbound"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/age-system.json",
+      "system": "age-system"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/alienrpg.json",
+      "system": "alienrpg"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/archmage.json",
+      "system": "archmage"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/coc7.json",
+      "system": "CoC7"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/cyberpunk-red-core.json",
+      "system": "cyberpunk-red-core"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/dcc.json",
+      "system": "dcc"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/deathinspace.json",
+      "system": "deathinspace"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/dnd5e.json",
+      "system": "dnd5e"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/deltagreen.json",
+      "system": "deltagreen"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/demonlord.json",
+      "system": "demonlord"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/dune.json",
+      "system": "dune"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/dungeonworld.json",
+      "system": "dungeonworld"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/forbidden-lands.json",
+      "system": "forbidden-lands"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/investigator.json",
+      "system": "investigator"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/foundry-ironsworn.json",
+      "system": "foundry-ironsworn"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/mutant-year-zero.json",
+      "system": "mutant-year-zero"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/ose.json",
+      "system": "ose"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/pbta.json",
+      "system": "pbta"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/pf1.json",
+      "system": "pf1"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/sfrpg.json",
+      "system": "sfrpg"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/sfrpgbb.json",
+      "system": "sfrpgbb"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/sta.json",
+      "system": "sta"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/starwarsffg.json",
+      "system": "starwarsffg"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/swade.json",
+      "system": "swade"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/thewitcher.json",
+      "system": "TheWitcherTRPG"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/tftloop.json",
+      "system": "tftloop"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/tor2e.json",
+      "system": "tor2e"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/twodsix.json",
+      "system": "twodsix"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/vaesen.json",
+      "system": "vaesen"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/vtm5e.json",
+      "system": "vtm5e"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/wfrp4e.json",
+      "system": "wfrp4e"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/wod20.json",
+      "system": "wod20"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/systems/yzecoriolis.json",
+      "system": "yzecoriolis"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/about-face.json",
+      "module": "about-face"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/about-time.json",
+      "module": "about-time"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/activeauras.json",
+      "module": "ActiveAuras"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/adventure-import-export.json",
+      "module": "adventure-import-export"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/aime.json",
+      "module": "aime"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/alienrpg-corerules.json",
+      "module": "alienrpg-corerules"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/always-hp.json",
+      "module": "always-hp"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/arbron-hp-bar.json",
+      "module": "arbron-hp-bar"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/autoanimations.json",
+      "module": "autoanimations"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/babele.json",
+      "module": "babele"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/better-rolltables.json",
+      "module": "better-rolltables"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/betterroofs.json",
+      "module": "betterroofs"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/chat-portrait.json",
+      "module": "chat-portrait"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/colorsettings.json",
+      "module": "colorsettings"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/combatbooster.json",
+      "module": "combatbooster"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/combat-carousel.json",
+      "module": "combat-carousel"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/combat-utility-belt.json",
+      "module": "combat-utility-belt"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/compendium-browser.json",
+      "module": "compendium-browser"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/compendium-folders.json",
+      "module": "compendium-folders"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/dae.json",
+      "module": "dae"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/damage-log.json",
+      "module": "damage-log"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/df-active-lights.json",
+      "module": "df-active-lights"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/df-curvy-walls.json",
+      "module": "df-curvy-walls"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/df-scene-enhance.json",
+      "module": "df-scene-enhance"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/df-settings-clarity.json",
+      "module": "df-settings-clarity"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/df-qol.json",
+      "module": "df-qol"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/dice-calculator.json",
+      "module": "dice-calculator"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/dice-so-nice.json",
+      "module": "dice-so-nice"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/drag-ruler.json",
+      "module": "drag-ruler"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/easy-target.json",
+      "module": "easy-target"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/enhancedcombathud.json",
+      "module": "enhancedcombathud"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/enhanced-terrain-layer.json",
+      "module": "enhanced-terrain-layer"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/fogmanager.json",
+      "module": "fogmanager"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/forien-copy-environment.json",
+      "module": "forien-copy-environment"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/forien-quest-log.json",
+      "module": "forien-quest-log"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/forien-scene-navigator.json",
+      "module": "forien-scene-navigator"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/fxmaster.json",
+      "module": "fxmaster"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/gatherer.json",
+      "module": "gatherer"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/hand-mini-bar.json",
+      "module": "hand-mini-bar"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/healthestimate.json",
+      "module": "healthEstimate"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/health-monitor.json",
+      "module": "health-monitor"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/illandril-hotbar-uses.json",
+      "module": "illandril-hotbar-uses"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/innocenti-openlock.json",
+      "module": "innocenti-openlock"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/innocenti-loot.json",
+      "module": "innocenti-loot"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/itemcollection.json",
+      "module": "itemcollection"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/lancer-initiative.json",
+      "module": "lancer-initiative"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/levels.json",
+      "module": "levels"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/lmrtfy.json",
+      "module": "lmrtfy"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/lotr5e.json",
+      "module": "lotr5e"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/mastercrafted.json",
+      "module": "mastercrafted"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/masks-newgeneration-sheets.json",
+      "module": "masks-newgeneration-sheets"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/merchant-sheet-npc.json",
+      "module": "merchantsheetnpc"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/metric-system-dnd5e.json",
+      "module": "metric-system-dnd5e"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/midi-qol.json",
+      "module": "midi-qol"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/minimal-ui.json",
+      "module": "minimal-ui"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/monarch.json",
+      "module": "monarch"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/monks-active-tiles.json",
+      "module": "monks-active-tiles"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/monks-hotbar-expansion.json",
+      "module": "monks-hotbar-expansion"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/monks-scene-navigation.json",
+      "module": "monks-scene-navigation"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/monks-tokenbar.json",
+      "module": "monks-tokenbar"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/monks-wall-enhancement.json",
+      "module": "monks-wall-enhancement"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/motion_tracker.json",
+      "module": "motion_tracker"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/multilevel-tokens.json",
+      "module": "multilevel-tokens"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/fvtt-party-resources.json",
+      "module": "fvtt-party-resources"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/patrol.json",
+      "module": "patrol"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/perfect-vision.json",
+      "module": "perfect-vision"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/pin-cushion.json",
+      "module": "pin-cushion"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/pings.json",
+      "module": "pings"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/pointer.json",
+      "module": "pointer"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/popout.json",
+      "module": "popout"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/rarity-colors.json",
+      "module": "rarity-colors"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/ready-set-roll-5e.json",
+      "module": "ready-set-roll-5e"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/sharedvision.json",
+      "module": "sharedvision"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/simple-calendar.json",
+      "module": "foundryvtt-simple-calendar"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/simple-dice-roller.json",
+      "module": "simple-dice-roller"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/smarttarget.json",
+      "module": "smarttarget"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/symbaroum5ecore.json",
+      "module": "symbaroum5ecore"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/swade-tools.json",
+      "module": "swade-tools"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/terrain-ruler.json",
+      "module": "terrain-ruler"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/three-actor-portrait.json",
+      "module": "three-actor-portrait"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/tidy5e-sheet.json",
+      "module": "tidy5e-sheet"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/tidy-ui-game-settings.json",
+      "module": "tidy-ui-game-settings"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/token-action-hud.json",
+      "module": "token-action-hud"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/token-attacher.json",
+      "module": "token-attacher"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/token-auras.json",
+      "module": "token-auras"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/token-hud-wildcard.json",
+      "module": "token-hud-wildcard"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/tokenmagic.json",
+      "module": "tokenmagic"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/token-mold.json",
+      "module": "token-mold"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/token-notes.json",
+      "module": "token-notes"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/tokenflip.json",
+      "module": "tokenflip"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/trigger-happy.json",
+      "module": "trigger-happy"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/turnmarker.json",
+      "module": "turnmarker"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/vtta-tokenizer.json",
+      "module": "vtta-tokenizer"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/wall-height.json",
+      "module": "wall-height"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/weatherblock.json",
+      "module": "weatherblock"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/wfrp4e-core.json",
+      "module": "wfrp4e-core"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/wfrp4e-gm-toolkit.json",
+      "module": "wfrp4e-gm-toolkit"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/yze-combat.json",
+      "module": "yze-combat"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/tours/welcome.json"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/tours/installing-a-system.json"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/tours/creating-a-world.json"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/tours/ui-overview.json"
+    }
+  ],
+  "media": [
+    {
+      "type": "cover",
+      "url": "https://github.com/phenomen/foundry-vtt-ru/raw/main/public/images/module/cover.jpg",
+      "loop": false,
+      "flags": {}
+    }
+  ],
+  "url": "https://github.com/phenomen/foundry-vtt-ru",
+  "manifest": "https://raw.githubusercontent.com/phenomen/foundry-vtt-ru/main/public/module.json",
+  "download": "https://github.com/phenomen/foundry-vtt-ru/releases/download/latest/ru-ru.zip"
+}
