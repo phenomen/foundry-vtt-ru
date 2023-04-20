@@ -1,15 +1,17 @@
-import { InitDELTAGREEN } from "./system-deltagreen.js";
-import { InitDND5 } from "./system-dnd5.js";
-import { InitDUNGEONWORLD } from "./system-dungeonworld.js";
-import { InitPF1E } from "./system-pf1e.js";
-import { InitWFRP4 } from "./system-wfrp4.js";
-import { InitALIEN } from "./system-alien.js";
-import { InitCORIOLIS } from "./system-coriolis.js";
-import { InitINVESTIGATOR } from "./system-investigator.js";
-import { InitCOC7 } from "./system-coc7.js";
-import { InitMASKS } from "./system-masks.js";
-import { InitSFRPGBB } from "./system-sfrpgbb.js";
-import { InitFBL } from "./system-fbl.js";
+import "../styles/_main.css";
+
+import { InitDELTAGREEN } from "./systems/deltagreen.js";
+import { InitDND5 } from "./systems/dnd5.js";
+import { InitDUNGEONWORLD } from "./systems/dungeonworld.js";
+import { InitPF1E } from "./systems/pf1e.js";
+import { InitWFRP4 } from "./systems/wfrp4.js";
+import { InitALIEN } from "./systems/alien.js";
+import { InitCORIOLIS } from "./systems/coriolis.js";
+import { InitINVESTIGATOR } from "./systems/investigator.js";
+import { InitCOC7 } from "./systems/coc7.js";
+import { InitMASKS } from "./systems/masks.js";
+import { InitSFRPGBB } from "./systems/sfrpgbb.js";
+import { InitFBL } from "./systems/fbl.js";
 
 Hooks.once("init", async () => {
   /* LOAD SYSTEM-SPECIFIC CSS */

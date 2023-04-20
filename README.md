@@ -3,12 +3,12 @@
 Модуль добавляет поддержку русского языка в Foundry VTT, многие системы и модули.
 
 - **Требуемая версия Foundry VTT**: 10.291
-- **Поддерживаемая версия Foundry VTT**: 11.292
+- **Поддерживаемая версия Foundry VTT**: 11.295
 
 ## Ссылки
 
 - Github: https://github.com/phenomen/foundry-vtt-ru
-- Manifest: https://github.com/phenomen/foundry-vtt-ru/raw/master/module.json
+- Manifest: https://raw.githubusercontent.com/phenomen/foundry-vtt-ru/main/public/module.json
 - Модуль на сайте Foundry VTT: https://foundryvtt.com/packages/ru-ru/
 - Русскоязычное сообщество Foundry в Discord: https://discord.gg/Z2CXFy35WF
 
