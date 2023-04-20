@@ -3,10 +3,12 @@
 	"scripts": {
 		"dev": "vite",
 		"serve": "vite serve",
-		"build": "vite build",
+		"build": " vite build && node process-css.js",
 		"preview": "vite preview"
 	},
-	"dependencies": {
-		"vite": "^4.3.0"
+	"type": "module",
+	"devDependencies": {
+		"vite": "^4.3.0",
+		"lightningcss": "^1.20.0"
 	}
 }

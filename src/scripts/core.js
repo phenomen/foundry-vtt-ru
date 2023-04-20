@@ -1,5 +1,3 @@
-import "../styles/_main.css";
-
 import { InitDELTAGREEN } from "./systems/deltagreen.js";
 import { InitDND5 } from "./systems/dnd5.js";
 import { InitDUNGEONWORLD } from "./systems/dungeonworld.js";
