@@ -1,4 +1,4 @@
-export function InitINVESTIGATOR() {
+export function init() {
   if (typeof Babele !== "undefined") {
     Babele.get().register({
       module: "ru-ru",

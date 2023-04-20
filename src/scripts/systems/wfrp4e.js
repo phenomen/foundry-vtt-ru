@@ -1,4 +1,4 @@
-export function InitWFRP4() {
+export function init() {
   if (typeof Babele === "undefined") {
     new Dialog({
       title: "Перевод библиотек",
@@ -72,11 +72,17 @@ export function InitWFRP4() {
             }
 
             if (effect.label.startsWith("Незаживающая рана")) {
-              effect.flags.wfrp4e.script = effect.flags.wfrp4e.script.replaceAll("Endurance", game.i18n.localize("NAME.Endurance"));
+              effect.flags.wfrp4e.script = effect.flags.wfrp4e.script.replaceAll(
+                "Endurance",
+                game.i18n.localize("NAME.Endurance")
+              );
             }
 
             if (effect.label.startsWith("Судороги")) {
-              effect.flags.wfrp4e.script = effect.flags.wfrp4e.script.replaceAll("Moderate", "сильные");
+              effect.flags.wfrp4e.script = effect.flags.wfrp4e.script.replaceAll(
+                "Moderate",
+                "сильные"
+              );
             }
 
             if (effect.label.startsWith("Летальный исход")) {
@@ -134,8 +140,8 @@ export function InitWFRP4() {
 
           if (originalTrait.type === "trait") {
             let translatedTrait =
-              fullTraits.find(trait => trait === parsedTrait.baseName) ||
-              fullTraits.find(trait => trait.startsWith(parsedTrait.baseName));
+              fullTraits.find((trait) => trait === parsedTrait.baseName) ||
+              fullTraits.find((trait) => trait.startsWith(parsedTrait.baseName));
             if (!translatedTrait) {
               continue;
             }
@@ -148,7 +154,9 @@ export function InitWFRP4() {
 
             if (isNaN(originalTrait.system.specification.value)) {
               // This is a string, so translate it
-              originalTrait.system.specification.value = translateSpecification(originalTrait.system.specification.value);
+              originalTrait.system.specification.value = translateSpecification(
+                originalTrait.system.specification.value
+              );
             }
           } else if (originalTrait.type === "skill") {
             let translatedSkill = translateSkill(parsedTrait, fullSkills);
@@ -158,19 +166,19 @@ export function InitWFRP4() {
               originalTrait.system.description.value = translatedSkill.description;
             }
           } else if (originalTrait.type === "prayer") {
-            let translatedTrait = fullPrayers.find(prayer => prayer === parsedTrait.baseName);
+            let translatedTrait = fullPrayers.find((prayer) => prayer === parsedTrait.baseName);
             if (translatedTrait) {
               originalTrait.name = translatedTrait.name + parsedTrait.special;
               originalTrait.system.description.value = translatedTrait.description;
             }
           } else if (originalTrait.type === "spell") {
-            let translatedTrait = fullSpells.find(spell => spell === parsedTrait.baseName);
+            let translatedTrait = fullSpells.find((spell) => spell === parsedTrait.baseName);
             if (translatedTrait) {
               originalTrait.name = translatedTrait.name + parsedTrait.special;
               originalTrait.system.description.value = translatedTrait.description;
             }
           } else if (originalTrait.type === "talent") {
-            let translatedTrait = fullTalents.find(talent => talent === parsedTrait.baseName);
+            let translatedTrait = fullTalents.find((talent) => talent === parsedTrait.baseName);
 
             if (translatedTrait) {
               originalTrait.name = translatedTrait.name + parsedTrait.special;
@@ -178,7 +186,7 @@ export function InitWFRP4() {
               originalTrait.system.tests = translatedTrait.tests;
             }
           } else if (originalTrait.type === "career") {
-            let translatedTrait = fullCareers.find(career => career === originalTrait.name);
+            let translatedTrait = fullCareers.find((career) => career === originalTrait.name);
             if (translatedTrait) {
               originalTrait.name = translatedTrait.name;
             }
@@ -187,9 +195,11 @@ export function InitWFRP4() {
             originalTrait.type === "weapon" ||
             originalTrait.type === "armour" ||
             originalTrait.type === "container" ||
-            (originalTrait.type === "money")
+            originalTrait.type === "money"
           ) {
-            let translatedTrapping = fullTrappings.find(trapping => trapping === originalTrait.name);
+            let translatedTrapping = fullTrappings.find(
+              (trapping) => trapping === originalTrait.name
+            );
             if (!translatedTrapping) {
               continue;
             }
@@ -217,7 +227,7 @@ export function InitWFRP4() {
         const fullTalents = WfrpCompendiumTranslations.talents();
         return talents.map((talent) => {
           let parsedTalent = parseTraitName(talent);
-          let translatedTalent = fullTalents.find(talent => talent === parsedTalent.baseName);
+          let translatedTalent = fullTalents.find((talent) => talent === parsedTalent.baseName);
 
           if (translatedTalent) {
             return translatedTalent.name + parsedTalent.special;
@@ -230,14 +240,16 @@ export function InitWFRP4() {
 
     function translateSkill(parsedSkill, fullSkills) {
       if (parsedSkill.special) {
-        let translatedSkill = fullSkills.find(skill => skill === parsedSkill.baseName + parsedSkill.special);
+        let translatedSkill = fullSkills.find(
+          (skill) => skill === parsedSkill.baseName + parsedSkill.special
+        );
 
         if (translatedSkill) {
           return translatedSkill;
         }
       }
 
-      return fullSkills.find(skill => skill.match(new RegExp(parsedSkill.baseName + "( \( ?\))?")));
+      return fullSkills.find((skill) => skill.match(new RegExp(parsedSkill.baseName + "( ( ?))?")));
     }
 
     function translateSpecification(originalSpecification) {
@@ -438,7 +450,13 @@ export function InitWFRP4() {
             "Бугай",
             0,
           ],
-          halfling: ["Обострённое восприятие (Вкус)", "Сумеречное зрение", "Устойчивость (Хаос)", "Небольшой", 2],
+          halfling: [
+            "Обострённое восприятие (Вкус)",
+            "Сумеречное зрение",
+            "Устойчивость (Хаос)",
+            "Небольшой",
+            2,
+          ],
           helf: [
             "Обострённое восприятие (Зрение)",
             "Самообладание, Смекалка",
@@ -447,7 +465,14 @@ export function InitWFRP4() {
             "Грамотность",
             0,
           ],
-          welf: ["Обострённое восприятие (Зрение)", "Здоровяк, Второе зрение", "Сумеречное зрение", "Грамотность, Закалка", "Скиталец", 0],
+          welf: [
+            "Обострённое восприятие (Зрение)",
+            "Здоровяк, Второе зрение",
+            "Сумеречное зрение",
+            "Грамотность, Закалка",
+            "Скиталец",
+            0,
+          ],
         };
 
         // Weapon Group Descriptions
@@ -516,26 +541,36 @@ export function InitWFRP4() {
     });
 
     class WfrpCompendiumTranslations {
-
-      static coreModuleEnabled = !!game.modules.filter(mod => mod.id === 'wfrp4e-core' && mod.active).length;
+      static coreModuleEnabled = !!game.modules.filter(
+        (mod) => mod.id === "wfrp4e-core" && mod.active
+      ).length;
       // adventures and other expansions could provide new traits, spells prayers etc. let's discover them
-      static itemCompendiums = ["wfrp4e-altdorf.altdorf-items", "wfrp4e-archives1.archives1-items", "wfrp4e-dotr.dotr-items",
-          "wfrp4e-eis.eisitems", "wfrp4e-middenheim.middenheim-items", "wfrp4e-rnhd.rnhd-items", "wfrp4e-starter-set.starter-set-items",
-          "wfrp4e-ua1.ua1-items", "wfrp4e-ua2.ua2-items"];
+      static itemCompendiums = [
+        "wfrp4e-altdorf.altdorf-items",
+        "wfrp4e-archives1.archives1-items",
+        "wfrp4e-dotr.dotr-items",
+        "wfrp4e-eis.eisitems",
+        "wfrp4e-middenheim.middenheim-items",
+        "wfrp4e-rnhd.rnhd-items",
+        "wfrp4e-starter-set.starter-set-items",
+        "wfrp4e-ua1.ua1-items",
+        "wfrp4e-ua2.ua2-items",
+      ];
       packs = [];
 
       constructor(pack) {
-        this.packs = []
+        this.packs = [];
         if (pack) {
           this.packs.push(pack);
         }
 
-        WfrpCompendiumTranslations.itemCompendiums.map(packName => game.babele.packs.get(packName))
-            .forEach(itemPack => {
-              if (itemPack) {
-                this.packs.push(itemPack);
-              }
-            });
+        WfrpCompendiumTranslations.itemCompendiums
+          .map((packName) => game.babele.packs.get(packName))
+          .forEach((itemPack) => {
+            if (itemPack) {
+              this.packs.push(itemPack);
+            }
+          });
       }
 
       find(condition) {
@@ -555,7 +590,9 @@ export function InitWFRP4() {
       }
 
       static skills() {
-        return new WfrpCompendiumTranslations(game.babele.packs.get(this.coreModuleEnabled ? "wfrp4e-core.skills" : "wfrp4e.basic"));
+        return new WfrpCompendiumTranslations(
+          game.babele.packs.get(this.coreModuleEnabled ? "wfrp4e-core.skills" : "wfrp4e.basic")
+        );
       }
 
       static talents() {
@@ -567,7 +604,9 @@ export function InitWFRP4() {
       }
 
       static trappings() {
-        return new WfrpCompendiumTranslations(game.babele.packs.get(this.coreModuleEnabled ? "wfrp4e-core.trappings" : "wfrp4e.basic"));
+        return new WfrpCompendiumTranslations(
+          game.babele.packs.get(this.coreModuleEnabled ? "wfrp4e-core.trappings" : "wfrp4e.basic")
+        );
       }
 
       static spells() {

@@ -1,16 +1,3 @@
-import { InitDELTAGREEN } from "./systems/deltagreen.js";
-import { InitDND5 } from "./systems/dnd5.js";
-import { InitDUNGEONWORLD } from "./systems/dungeonworld.js";
-import { InitPF1E } from "./systems/pf1e.js";
-import { InitWFRP4 } from "./systems/wfrp4.js";
-import { InitALIEN } from "./systems/alien.js";
-import { InitCORIOLIS } from "./systems/coriolis.js";
-import { InitINVESTIGATOR } from "./systems/investigator.js";
-import { InitCOC7 } from "./systems/coc7.js";
-import { InitMASKS } from "./systems/masks.js";
-import { InitSFRPGBB } from "./systems/sfrpgbb.js";
-import { InitFBL } from "./systems/fbl.js";
-
 Hooks.once("init", async () => {
   /* LOAD SYSTEM-SPECIFIC CSS */
   const systemCSS = document.createElement("link");
@@ -59,46 +46,24 @@ Hooks.once("init", async () => {
   ];
 
   /* LOAD SYSTEM-SPECIFIC SCRIPTS */
+  const system = await import(`./systems/${game.system.id.toLowerCase()}.js`);
 
-  switch (game.system.id) {
-    case "alienrpg":
-      InitALIEN();
-      break;
-    case "CoC7":
-      InitCOC7();
-      break;
-    case "yzecoriolis":
-      InitCORIOLIS();
-      break;
-    case "deltagreen":
-      InitDELTAGREEN();
-      break;
-    case "dnd5e":
-      InitDND5();
-      break;
-    case "dungeonworld":
-      InitDUNGEONWORLD();
-      break;
-    case "forbidden-lands":
-      InitFBL();
-      break;
-    case "investigator":
-      InitINVESTIGATOR();
-      break;
-    case "pf1":
-      InitPF1E();
-      break;
-    case "wfrp4e":
-      InitWFRP4();
-      break;
-    case "pbta":
-      if (game.modules.get("masks-newgeneration-sheets")?.active) {
-        InitMASKS();
-      }
-      break;
-    case "sfrpgbb":
-      InitSFRPGBB();
-      break;
+  const systems = [
+    "alienrpg",
+    "coc7",
+    "yzecoriolis",
+    "deltagreen",
+    "dnd5e",
+    "dungeonworld",
+    "forbidden-lands",
+    "investigator",
+    "pf1",
+    "wfrp4e",
+    "sfrpgbb",
+  ];
+
+  if (systems.includes(game.system.id.toLowerCase())) {
+    system.init();
   }
 
   // QUICK INSERT FIX

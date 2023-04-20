@@ -1,6 +1,6 @@
 # Русский перевод для Foundry VTT
 
-![](https://img.shields.io/badge/module-v11.295.12-blue) ![](https://img.shields.io/badge/foundry--min-v10-orange) ![](https://img.shields.io/badge/foundry--max-v11-orange)
+![](https://img.shields.io/badge/module-v11.295.13-blue) ![](https://img.shields.io/badge/foundry--min-v10-orange) ![](https://img.shields.io/badge/foundry--max-v11-orange)
 
 Модуль добавляет поддержку русского языка в Foundry VTT, а также многие системы и модули.
 
