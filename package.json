@@ -3,12 +3,18 @@
 	"scripts": {
 		"dev": "vite",
 		"serve": "vite serve",
-		"build": " vite build && node process-css.js",
-		"preview": "vite preview"
+		"process:build": "vite build",
+		"process:bumpp": "bumpp ./public/module.json ./README.md --no-push --no-commit --no-tag",
+		"process:css": "node process-css.js",
+		"process:zip": "node process-zip.js",
+		"build": "pnpm process:build && pnpm process:css",
+		"release": "pnpm process:bumpp && pnpm process:build && pnpm process:css && pnpm process:zip"
 	},
 	"type": "module",
 	"devDependencies": {
-		"vite": "^4.3.0",
-		"lightningcss": "^1.20.0"
+		"archiver": "^5.3.1",
+		"bumpp": "^9.1.0",
+		"lightningcss": "^1.20.0",
+		"vite": "^4.3.0"
 	}
 }

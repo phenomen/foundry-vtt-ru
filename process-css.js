@@ -13,6 +13,8 @@ readdir(srcDir)
   .then(async (files) => {
     const cssFiles = files.filter((file) => file.endsWith(".css"));
 
+    console.log("Minifying CSS...");
+
     for (const file of cssFiles) {
       const srcPath = path.join(srcDir, file);
       const distPath = path.join(distDir, file);

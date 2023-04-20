@@ -1,16 +1,18 @@
 # Русский перевод для Foundry VTT
 
-Модуль добавляет поддержку русского языка в Foundry VTT, многие системы и модули.
+![](https://img.shields.io/badge/module-v11.295.11-blue) ![](https://img.shields.io/badge/foundry--min-v10-orange) ![](https://img.shields.io/badge/foundry--max-v11-orange)
 
-- **Требуемая версия Foundry VTT**: 10.291
-- **Поддерживаемая версия Foundry VTT**: 11.295
+Модуль добавляет поддержку русского языка в Foundry VTT, а также многие системы и модули.
+
+- **Требуемая версия Foundry VTT**: V10
+- **Поддерживаемая версия Foundry VTT**: V11
 
 ## Ссылки
 
-- Github: https://github.com/phenomen/foundry-vtt-ru
-- Manifest: https://raw.githubusercontent.com/phenomen/foundry-vtt-ru/main/public/module.json
-- Модуль на сайте Foundry VTT: https://foundryvtt.com/packages/ru-ru/
-- Русскоязычное сообщество Foundry в Discord: https://discord.gg/Z2CXFy35WF
+- [Github](https://github.com/phenomen/foundry-vtt-ru)
+- [manifest.json](https://raw.githubusercontent.com/phenomen/foundry-vtt-ru/main/public/module.json)
+- [Модуль на сайте Foundry VTT](https://foundryvtt.com/packages/ru-ru/)
+- [Русскоязычное сообщество Foundry в Discord](https://discord.gg/Z2CXFy35WF)
 
 ## Установка и настройка
 
@@ -71,5 +73,6 @@
 
 ### Модули
 
-Переведено более 100 модулей, список в можно посмотреть `i18n/modules`
-Оставляйте заявки на другие системы и модули в канале #перевод на нашем Discord сервере.
+Переведено более 100 модулей, список в можно посмотреть `public/i18n/modules`
+
+Оставляйте заявки на другие системы и модули в канале #перевод на нашем [Discord сервере](https://discord.gg/Z2CXFy35WF).
