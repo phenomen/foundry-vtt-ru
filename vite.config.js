@@ -11,7 +11,7 @@ const config = {
     brotliSize: true,
     lib: {
       name: "ru-ru",
-      entry: path.resolve(__dirname, "src/index.js"),
+      entry: path.resolve(__dirname, "src/scripts/index.js"),
       formats: ["es"],
       fileName: "ru-ru",
     },
