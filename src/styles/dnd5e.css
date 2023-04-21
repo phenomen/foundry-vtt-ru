@@ -114,8 +114,7 @@
   font-size: var(--text-sm);
 }
 
-.dnd5e.sheet .filter-list .filter-item,
-.tidy5e.sheet.actor .filter-list .filter-item {
+.dnd5e.sheet .filter-list .filter-item {
   font-family: var(--font-sans-condensed);
   font-size: var(--text-sm);
 }
@@ -409,6 +408,11 @@
 .system-dnd5e {
   --modesto: var(--font-fancy);
   --signika: var(--font-sans);
+}
+
+.tidy5e.sheet.actor .filter-list .filter-item {
+  font-family: var(--font-sans-condensed);
+  font-size: var(--text-sm);
 }
 
 .tidy5e.sheet.actor input.temphp,

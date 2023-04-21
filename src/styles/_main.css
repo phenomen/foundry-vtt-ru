@@ -10,18 +10,21 @@ body {
   font-family: var(--font-sans);
 }
 
-button {
+button,
+form .form-group label,
+.tabs .item {
   font-family: var(--font-sans-condensed);
   font-weight: 500;
 }
 
-select {
+select,
+.header-button,
+.window-header,
+.playlist-sounds,
+.updated-packages-table th.action,
+.updated-packages-table td.action,
+.compendium-sidebar .dropdown-menu .dropdown-list .dropdown-item {
   font-family: var(--font-sans-condensed);
-}
-
-form .form-group label {
-  font-family: var(--font-sans-condensed);
-  font-weight: 500;
 }
 
 form .form-group label {
@@ -33,19 +36,8 @@ body.auth #main-header h1 {
   font-size: 3rem;
 }
 
-.header-button,
-.window-header,
-.playlist-sounds {
-  font-family: var(--font-sans-condensed);
-}
-
 .setup .form-group label {
-  font-size: var(--text-base) !important;
-}
-
-.tabs .item {
-  font-family: var(--font-sans-condensed);
-  font-weight: 500;
+  font-size: var(--text-base);
 }
 
 .package-list .package .package-controls button {
@@ -53,11 +45,6 @@ body.auth #main-header h1 {
   font-family: var(--font-sans-condensed);
   font-size: var(--text-sm);
   line-height: 20px;
-}
-
-.updated-packages-table th.action,
-.updated-packages-table td.action {
-  font-family: var(--font-sans-condensed);
 }
 
 .journal-sheet .editor-content {
@@ -68,9 +55,12 @@ body.auth #main-header h1 {
   font-size: var(--text-sm);
 }
 
+.key,
+.show-title,
+.filepicker .favorites .label,
 .active-effect-sheet .effects-header {
   font-family: var(--font-sans-condensed);
-  font-size: var(--text-xs);
+  font-size: var(--text-sm);
 }
 
 .sheet.journal-entry-page .journal-header .page-level {
@@ -78,10 +68,8 @@ body.auth #main-header h1 {
   margin-left: 0.4rem;
 }
 
-.key,
-.show-title {
-  font-family: var(--font-sans-condensed);
-  font-size: var(--text-sm);
+.filepicker .favorites .label {
+  flex: 2;
 }
 
 .updated-packages-table th.package,
@@ -90,26 +78,13 @@ body.auth #main-header h1 {
 }
 
 .updated-packages-table th.action,
-.updated-packages-table td.action {
+.updated-packages-table td.action,
+.compendium-sidebar .dropdown-menu {
   width: 150px;
-}
-
-.filepicker .favorites .label {
-  flex: 2;
-  font-family: var(--font-sans-condensed);
-  font-weight: 500;
-}
-
-.compendium-sidebar .dropdown-menu .dropdown-list .dropdown-item {
-  font-family: var(--font-sans-condensed);
 }
 
 .compendium-sidebar .dropdown-menu .dropdown-list {
   padding: 6px;
-}
-
-.compendium-sidebar .dropdown-menu {
-  width: 150px;
 }
 
 /* MODULES */

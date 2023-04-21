@@ -15,14 +15,14 @@ readdir(srcDir)
 
     console.log("Minifying CSS...");
 
-    for (const file of cssFiles) {
+    const promises = cssFiles.map(async (file) => {
       const srcPath = path.join(srcDir, file);
       const distPath = path.join(distDir, file);
 
       try {
         const srcCode = await readFile(srcPath);
 
-        const { code } = await transform({
+        const { code } = transform({
           filename: file,
           code: srcCode,
           minify: true,
@@ -33,7 +33,9 @@ readdir(srcDir)
       } catch (err) {
         console.error(`Error minifying ${srcPath}: ${err.message}`);
       }
-    }
+    });
+
+    await Promise.all(promises);
   })
   .catch((err) => {
     console.error(err);
