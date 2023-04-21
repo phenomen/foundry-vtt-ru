@@ -4,6 +4,8 @@
 ![](https://img.shields.io/badge/требуется_FVTT-v10-orange)
 ![](https://img.shields.io/badge/поддерживается_FVTT-v11-green)
 
+![](/public/images/module/cover.webp)
+
 Модуль добавляет поддержку русского языка в Foundry VTT, а также многие системы и модули.
 
 ## Ссылки

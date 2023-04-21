@@ -1,11 +1,13 @@
 Hooks.once("init", async () => {
+  const system = game.system.id.toLowerCase();
+
   /* LOAD SYSTEM-SPECIFIC CSS */
   const systemCSS = document.createElement("link");
   systemCSS.rel = "stylesheet";
-  systemCSS.href = `/modules/ru-ru/styles/${game.system.id.toLowerCase()}.css`;
+  systemCSS.href = `/modules/ru-ru/styles/${system}.css`;
   document.head.appendChild(systemCSS);
 
-  /*  USE RUSSIAN ADJECTIVES FOR RANDOM PREFIX */
+  /* RANDOM ADJECTIVES GENDER DEFAULT */
   CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
 
   /* ADD CYRILLIC FONTS */
@@ -46,7 +48,7 @@ Hooks.once("init", async () => {
   ];
 
   /* LOAD SYSTEM-SPECIFIC SCRIPTS */
-  const system = await import(`./systems/${game.system.id.toLowerCase()}.js`);
+  const systemScript = await import(`./systems/${system}.js`);
 
   const systems = [
     "alienrpg",
@@ -63,8 +65,8 @@ Hooks.once("init", async () => {
     "yzecoriolis",
   ];
 
-  if (systems.includes(game.system.id.toLowerCase())) {
-    system.init();
+  if (systems.includes(system)) {
+    systemScript.init();
   }
 
   /* QUICK INSERT FIX */
