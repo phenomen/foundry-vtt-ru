@@ -33,7 +33,7 @@ Hooks.once("init", async () => {
     name: "Шрифт подписей на сцене",
     hint: "Шрифт, используемый для имён токенов и названий заметок на сцене.",
     type: Number,
-    default: 10,
+    default: Object.keys(CONFIG.fontDefinitions).indexOf(CONFIG.defaultFontFamily),
     choices: Object.keys(CONFIG.fontDefinitions),
     scope: "world",
     config: true,
