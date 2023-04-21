@@ -6,8 +6,11 @@ const archive = archiver("zip", {
   zlib: { level: 9 },
 });
 
-archive.directory("ru-ru", false);
+console.log("Packing into ZIP...");
 
-console.log("Packing a ZIP...");
+archive.on("error", function (err) {
+  throw err;
+});
+archive.directory("ru-ru", false);
 archive.pipe(output);
 archive.finalize();

@@ -51,22 +51,23 @@ Hooks.once("init", async () => {
   const systems = [
     "alienrpg",
     "coc7",
-    "yzecoriolis",
     "deltagreen",
     "dnd5e",
     "dungeonworld",
     "forbidden-lands",
     "investigator",
+    "pbta",
     "pf1",
-    "wfrp4e",
     "sfrpgbb",
+    "wfrp4e",
+    "yzecoriolis",
   ];
 
   if (systems.includes(game.system.id.toLowerCase())) {
     system.init();
   }
 
-  // QUICK INSERT FIX
+  /* QUICK INSERT FIX */
   if (game.modules.get("quick-insert")?.active) {
     Hooks.on("ready", async function () {
       await game.settings.set("quick-insert", "embeddedIndexing", true);
@@ -74,6 +75,7 @@ Hooks.once("init", async () => {
   }
 });
 
+/* RANDOM ADJECTIVES GENDER TOGGLE */
 Hooks.on("getSceneControlButtons", getSceneControlButtons);
 
 function getSceneControlButtons(controls) {

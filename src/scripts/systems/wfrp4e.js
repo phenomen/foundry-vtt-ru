@@ -2,7 +2,7 @@ export function init() {
   if (typeof Babele === "undefined") {
     new Dialog({
       title: "Перевод библиотек",
-      content: `<p>Для перевода библиотек системы WFRP4 требуется установить и активировать модуль <b>Babele</b><p>`,
+      content: `<p>Для перевода библиотек системы WFRP4 требуется установить и активировать модули <b>Babele и libWrapper</b><p>`,
       buttons: {
         done: {
           label: "Хорошо",

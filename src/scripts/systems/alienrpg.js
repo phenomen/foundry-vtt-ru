@@ -8,7 +8,7 @@ export function init() {
   } else {
     new Dialog({
       title: "Перевод библиотек",
-      content: `<p>Для перевода библиотек ALIEN требуется установить и активировать модули <b>Babele и libWrapper</b><p>`,
+      content: `<p>Для перевода библиотек ЧУЖОЙ требуется установить и активировать модули <b>Babele и libWrapper</b><p>`,
       buttons: {
         done: {
           label: "Хорошо",
