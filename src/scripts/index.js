@@ -1,3 +1,5 @@
+import {Dnd5eAltInit} from "./systems/dnd5e-alt.js";
+
 Hooks.once("init", async () => {
   const system = game.system.id.toLowerCase();
 
@@ -47,9 +49,6 @@ Hooks.once("init", async () => {
     game.settings.get("ru-ru", "sceneLabelFont")
   ];
 
-  /* LOAD SYSTEM-SPECIFIC SCRIPTS */
-  const systemScript = await import(`./systems/${system}.js`);
-
   const systems = [
     "alienrpg",
     "coc7",
@@ -66,8 +65,10 @@ Hooks.once("init", async () => {
     "yzecoriolis",
   ];
 
+  /* LOAD SYSTEM-SPECIFIC SCRIPTS */
   if (systems.includes(system)) {
-    systemScript.init();
+    if (system === "dnd5e") Dnd5eAltInit(); // This code need load synchronously! Any modularization is denied!
+    (await import(`./systems/${system}.js`))?.init();
   }
 
   /* QUICK INSERT FIX */
