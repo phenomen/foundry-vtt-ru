@@ -1,5 +1,5 @@
 export function init() {
-  // Уведомление выбора перевода
+  /* Уведомление выбора перевода */
   game.settings.register("ru-ru", "altTranslationSelected", {
     type: Boolean,
     default: false,
@@ -10,7 +10,7 @@ export function init() {
     },
   });
 
-  // Настройка активации Babele
+  /* Настройка Babele */
   game.settings.register("ru-ru", "compendiumTranslation", {
     name: "Перевод библиотек",
     hint: "(Требуется модуль Babele) Некоторые библиотеки системы D&D5e будут переведены.",
@@ -47,7 +47,7 @@ export function init() {
     }).render(true);
   }
 
-  // Регистрация Babele
+  /* Регистрация Babele */
   if (typeof Babele !== "undefined") {
     Babele.get().register({
       module: "ru-ru",
@@ -76,20 +76,25 @@ export function init() {
     }
   }
 
-  // HOUSE DIVIDED ADVENTURE
+  /* Приключение HOUSE DIVIDED */
+
   if (game.modules.get("house-divided")?.active) {
-    // Поддержка кириллицы в стилях
+    /* Поддержка кириллицы в стилях */
     const moduleCSS = document.createElement("link");
     moduleCSS.rel = "stylesheet";
     moduleCSS.href = `/modules/ru-ru/styles/house-divided.css`;
     document.head.appendChild(moduleCSS);
 
-    //Изменения в журнале
+    /* Изменения в журнале */
     class HouseDividedRussianJournalSheet extends JournalSheet {
       constructor(doc, options) {
         super(doc, options);
-        this.options.classes.push("house-divided", doc.getFlag("house-divided", "realm"));
-        this.sidebarSections = doc.getFlag("house-divided", "sidebar-sections") ?? false;
+        this.options.classes.push(
+          "house-divided",
+          doc.getFlag("house-divided", "realm")
+        );
+        this.sidebarSections =
+          doc.getFlag("house-divided", "sidebar-sections") ?? false;
       }
 
       async _renderInner(...args) {
@@ -105,7 +110,6 @@ export function init() {
         const divider = document.createElement("li");
         divider.classList.add("directory-section", "level1");
         for (const li of Array.from(toc.children)) {
-          // Обзор
           if (!sections.overview) {
             const d = divider.cloneNode();
             d.innerHTML = "<h2 class='section-header'>Обзор</h2>";
@@ -114,7 +118,6 @@ export function init() {
             continue;
           }
 
-          // События
           const title = li.querySelector(".page-title").innerText;
           if (!sections.events && title.startsWith("Событие:")) {
             const d = divider.cloneNode();
@@ -124,7 +127,6 @@ export function init() {
             continue;
           }
 
-          // Задания
           if (!sections.quests && title.startsWith("Задание:")) {
             const d = divider.cloneNode();
             d.innerHTML = "<h2 class='section-header'>Задания</h2>";
@@ -135,7 +137,7 @@ export function init() {
       }
     }
 
-    // Регистрация шаблона журнала
+    /* Регистрация шаблона журнала */
     DocumentSheetConfig.registerSheet(
       JournalEntry,
       "house-divided",

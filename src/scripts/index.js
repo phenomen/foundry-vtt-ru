@@ -1,18 +1,18 @@
-import {Dnd5eAltInit} from "./systems/dnd5e-alt.js";
+import { Dnd5eAltInit } from "./systems/dnd5e-alt.js";
 
 Hooks.once("init", async () => {
   const system = game.system.id.toLowerCase();
 
-  /* LOAD SYSTEM-SPECIFIC CSS */
+  /* Загрузка особых CSS стилей для систем */
   const systemCSS = document.createElement("link");
   systemCSS.rel = "stylesheet";
   systemCSS.href = `/modules/ru-ru/styles/${system}.css`;
   document.head.appendChild(systemCSS);
 
-  /* RANDOM ADJECTIVES GENDER DEFAULT */
+  /* Пол прилагательных по умолчанию */
   CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
 
-  /* ADD CYRILLIC FONTS */
+  /* Добавление шрифтов с кириллицей */
   const cyrillicFonts = {
     "Beaufort": { editor: true, fonts: [] },
     "Exocet": { editor: true, fonts: [] },
@@ -27,15 +27,20 @@ Hooks.once("init", async () => {
     "OCR-A": { editor: true, fonts: [] },
   };
 
-  CONFIG.fontDefinitions = foundry.utils.mergeObject(CONFIG.fontDefinitions, cyrillicFonts);
+  CONFIG.fontDefinitions = foundry.utils.mergeObject(
+    CONFIG.fontDefinitions,
+    cyrillicFonts
+  );
   CONFIG.defaultFontFamily = "Noto Sans";
 
-  /* CUSTOM LABEL FONT */
+  /* Настройка шрифта для подписей на сцене */
   game.settings.register("ru-ru", "sceneLabelFont", {
     name: "Шрифт подписей на сцене",
     hint: "Шрифт, используемый для имён токенов и названий заметок на сцене.",
     type: Number,
-    default: Object.keys(CONFIG.fontDefinitions).indexOf(CONFIG.defaultFontFamily),
+    default: Object.keys(CONFIG.fontDefinitions).indexOf(
+      CONFIG.defaultFontFamily
+    ),
     choices: Object.keys(CONFIG.fontDefinitions),
     scope: "world",
     config: true,
@@ -65,13 +70,13 @@ Hooks.once("init", async () => {
     "yzecoriolis",
   ];
 
-  /* LOAD SYSTEM-SPECIFIC SCRIPTS */
+  /* Загрузка системных скриптов */
   if (systems.includes(system)) {
     if (system === "dnd5e") Dnd5eAltInit(); // This code need load synchronously! Any modularization is denied!
     (await import(`./systems/${system}.js`))?.init();
   }
 
-  /* QUICK INSERT FIX */
+  /* Исправление для QUICK INSERT */
   if (game.modules.get("quick-insert")?.active) {
     Hooks.on("ready", async function () {
       await game.settings.set("quick-insert", "embeddedIndexing", true);
@@ -79,7 +84,7 @@ Hooks.once("init", async () => {
   }
 });
 
-/* RANDOM ADJECTIVES GENDER TOGGLE */
+/* Выбор пола для случайных прилагательных */
 Hooks.on("getSceneControlButtons", getSceneControlButtons);
 
 function getSceneControlButtons(controls) {
@@ -94,10 +99,14 @@ function getSceneControlButtons(controls) {
       toggle: true,
       onClick: (active) => {
         if (active) {
-          ui.notifications.notify("Для случайных прилагательных используется женский род");
+          ui.notifications.notify(
+            "Для случайных прилагательных используется женский род"
+          );
           CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesF";
         } else {
-          ui.notifications.notify("Для случайных прилагательных используется мужской род");
+          ui.notifications.notify(
+            "Для случайных прилагательных используется мужской род"
+          );
           CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
         }
       },
