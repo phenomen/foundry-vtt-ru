@@ -18,6 +18,15 @@
   src: url("../fonts/Beaufort/Beaufort-Bold.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Great Vibes";
+  src: url("../fonts/MarckScript.ttf") format("truetype");
+}
+
+.house-divided.journal-page-content.handwritten > p {
+  line-height: 1.5rem;
+}
+
 .house-divided {
   --body-font: "Beaufort", serif;
   --body-b: "Beaufort Bold", serif;
@@ -32,9 +41,4 @@
 .house-divided .journal-page-header h1,
 .house-divided .journal-page-header h2 {
   text-transform: uppercase;
-}
-
-.house-divided .family-tree .member .content-link,
-.house-divided .family-tree .member .nolink {
-  font-family: "Marck Script", serif;
 }
