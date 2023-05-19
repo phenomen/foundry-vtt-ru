@@ -8,7 +8,7 @@
   "MonksActiveTiles.TriggeringToken": "Триггерный токен",
   "MonksActiveTiles.PlayerTokens": "Токены игроков",
   "MonksActiveTiles.CurrentLocation": "Текущее местоположение",
-  "MonksActiveTiles.WithinTile": "Токены внутри тайла",
+  "MonksActiveTiles.WithinTile": "{collection} внутри тайла",
   "MonksActiveTiles.WithinWall": "Тайлы под дверью",
   "MonksActiveTiles.CurrentCollection": "Текущие {collection}",
   "MonksActiveTiles.Origin": "Оригинальное место назначения",
@@ -107,6 +107,9 @@
   "MonksActiveTiles.action.runbatch": "Выполнить все пакетные действия",
   "MonksActiveTiles.action.rotation": "Поворот",
   "MonksActiveTiles.action.showimage": "Отображение изображения",
+  "MonksActiveTiles.action.writetojournal": "Запись в журнал",
+  "MonksActiveTiles.action.setvariable": "Выставление переменной",
+  "MonksActiveTiles.action.setcurrent": "Выставление текущей коллекции",
 
   "MonksActiveTiles.filter.distance": "Фильтр токенов по дистанции",
   "MonksActiveTiles.filter.exists": "Проверка числа объектов",
@@ -117,6 +120,7 @@
   "MonksActiveTiles.filter.inventory": "Фильтр по предметам в инвентаре",
   "MonksActiveTiles.filter.condition": "Фильтр состояния",
   "MonksActiveTiles.filter.random": "Случайное число",
+  "MonksActiveTiles.filter.visibility": "Фильтр по видимости",
 
   "MonksActiveTiles.logic.anchor": "Вход",
   "MonksActiveTiles.logic.goto": "Переход ко входу",
@@ -161,6 +165,7 @@
   "MonksActiveTiles.ctrl.deletesource": "Удаление исходного токена",
   "MonksActiveTiles.ctrl.avoidtokens": "Отступ от других токенов в месте назначения",
   "MonksActiveTiles.ctrl.rollattack": "Бросок атаки",
+  "MonksActiveTiles.ctrl.rolldamage": "Бросок урона",
   "MonksActiveTiles.ctrl.volume": "Громкость",
   "MonksActiveTiles.ctrl.incharacter": "От персонажа",
   "MonksActiveTiles.ctrl.speaker": "Говорящий",
@@ -236,6 +241,12 @@
   "MonksActiveTiles.ctrl.fail": "Переход ко входу при провале",
   "MonksActiveTiles.ctrl.showdice": "Отображение кости",
   "MonksActiveTiles.ctrl.allowdisabled": "Разрешить отключенные",
+  "MonksActiveTiles.ctrl.showplaylist": "Отображение в плейлисте",
+  "MonksActiveTiles.ctrl.htmlfile": "Файл HTML",
+  "MonksActiveTiles.ctrl.buttons": "Кнопки",
+  "MonksActiveTiles.ctrl.select-target": "Выбор цели",
+  "MonksActiveTiles.ctrl.close-means-no": "Закрытие окна не вызывает переход",
+  "MonksActiveTiles.ctrl.fastforward": "Перемотка",
 
   "MonksActiveTiles.mode.enter": "Вход",
   "MonksActiveTiles.mode.exit": "Выход",
@@ -336,12 +347,14 @@
   "MonksActiveTiles.runas.gm": "GM",
   "MonksActiveTiles.runas.player": "Триггерный игрок",
 
-  "MonksActiveTiles.volumetype.playlists": "Плейлисты",
-  "MonksActiveTiles.volumetype.ambient": "Фоновые звуки",
-  "MonksActiveTiles.volumetype.interface": "Интерфейс",
+  "MonksActiveTiles.volumetype.globalPlaylistVolume": "Плейлисты",
+  "MonksActiveTiles.volumetype.globalAmbientVolume": "Фоновые звуки",
+  "MonksActiveTiles.volumetype.globalInterfaceVolume": "Интерфейс",
+  "MonksActiveTiles.volumetype.globalSoundEffectVolume": "Звуковой эффект",
 
   "MonksActiveTiles.dialogtype.confirm": "Подтверждение",
   "MonksActiveTiles.dialogtype.alert": "Оповещение",
+  "MonksActiveTiles.dialogtype.custom": "Особое",
 
   "MonksActiveTiles.target.appendtarget": "Добавление доп. целей",
   "MonksActiveTiles.target.overwritetarget": "Смена целей",
@@ -389,7 +402,7 @@
   "MonksActiveTiles.msg.usetoken": "Использование триггерного токена",
   "MonksActiveTiles.msg.useplayers": "Использование токенов игроков",
   "MonksActiveTiles.msg.useplayersjournal": "Использование журнала игрока",
-  "MonksActiveTiles.msg.usewithin": "Использование токенов внутри триггерного тайла",
+  "MonksActiveTiles.msg.usewithin": "Исп. объектов внутри триггерного тайла",
   "MonksActiveTiles.msg.usewithinwall": "Срабатывание триггера тайла под дверью",
   "MonksActiveTiles.msg.useprevious": "Использование текущей коллекции действий",
   "MonksActiveTiles.msg.usepreviouslocation": "Использование действий в текущем местоположении",
@@ -408,6 +421,8 @@
   "MonksActiveTiles.use-core-macro.hint": "Срабатывание стандартных макросов Foundry не передаёт всю нужную информацию, поэтому Active Tiles обрабатывает выполнение макросов самостоятельно. Включите, если требуется отладка проблемы с макросом.",
   "MonksActiveTiles.drop-item.name": "Выбрасывание предмета на сцену",
   "MonksActiveTiles.drop-item.hint": "Позволяет выброшенным предметам на сцене становиться активными тайлами",
+  "MonksActiveTiles.drop-scene.name": "Перенос сцен на полотно",
+  "MonksActiveTiles.drop-scene.hint": "Позволяет переносить сцены на полотно для создания активных тайлов",
   "MonksActiveTiles.allow-door.name": "Дверные триггеры",
   "MonksActiveTiles.allow-door.hint": "Разрешить дверям триггерить тайлы",
   "MonksActiveTiles.teleport-wash.name": "Отображение размытия при телепортации",
@@ -423,5 +438,7 @@
   "MonksActiveTiles.allow-door-passthrough.name": "Разрешить щелчок сквозь дверь",
   "MonksActiveTiles.allow-door-passthrough.hint": "Разрешить тайлу под дверью срабатывать при нажатии на дверь",
   "MonksLittleDetails.drop-item-size.name": "Размер выбрасываемого предмета",
-  "MonksLittleDetails.drop-item-size.hint": "Устанавливает размер выбрасываемого предмета"
+  "MonksLittleDetails.drop-item-size.hint": "Устанавливает размер выбрасываемого предмета",
+  "MonksActiveTiles.show-landing.name": "Отображение подсветки входа",
+  "MonksActiveTiles.show-landing.hint": "Подсвечивает действия в месте входа"
 }
