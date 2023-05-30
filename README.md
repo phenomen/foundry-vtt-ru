@@ -1,6 +1,6 @@
 # Русский перевод для Foundry VTT
 
-![](https://img.shields.io/badge/версия_модуля-v11.299.3-blue)
+![](https://img.shields.io/badge/версия_модуля-v11.299.4-blue)
 ![](https://img.shields.io/badge/требуется_FVTT-v10-orange)
 ![](https://img.shields.io/badge/поддерживается_FVTT-v11-green)
 
@@ -67,6 +67,7 @@
 - The One Ring 2e
 - The Witcher (Ведьмак)
 - Traveler / Cepheus Engine
+- Vaesen (Нечисть)
 - Vampire V5 (Вампиры: Маскарад)
 - Warhammer Fantasy Roleplay 4
 
