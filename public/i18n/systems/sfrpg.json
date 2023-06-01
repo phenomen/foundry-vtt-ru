@@ -1,59 +1,61 @@
 {
-    "ACTOR": {
-        "TypeCharacter": "Персонаж игрока",
-        "TypeDrone": "Дрон",
-        "TypeHazard": "Угроза",
-        "TypeNpc": "Old Style NPC",
-        "TypeNpc2": "Персонаж ведущего",
-        "TypeStarship": "Звездолёт",
-        "TypeVehicle": "Транспорт"
-    },
-    "ITEM": {
-        "TypeActorresource": "Ресурс актёра",
-        "TypeAmmunition": "Боеприпасы",
-        "TypeArchetypes": "Архетип",
-        "TypeAsi": "Повышение характеристик",
-        "TypeAugmentation": "Аугментация",
-        "TypeChassis": "Корпус дрона",
-        "TypeClass": "Класс",
-        "TypeConsumable": "Расходник",
-        "TypeContainer": "Контейнер",
-        "TypeEquipment": "Снаряжение",
-        "TypeFeat": "Feature",
-        "TypeFusion": "Оружейное сопряжение",
-        "TypeGoods": "Товар",
-        "TypeHybrid": "Гибридный предмет",
-        "TypeMagic": "Магический предмет",
-        "TypeMod": "Модуль дрона",
-        "TypeRace": "Раса",
-        "TypeShield": "Щит",
-        "TypeSpell": "Заклинание",
-        "TypeStarshipablativearmor": "Звездолёт: Абляционная броня",
-        "TypeStarshipaction": "Звездолёт: Действие экпипажа",
-        "TypeStarshiparmor": "Звездолёт: Броня",
-        "TypeStarshipcomputer": "Звездолёт: Бортовой компьютер",
-        "TypeStarshipcrewquarter": "Звездолёт: Каюта экипажа",
-        "TypeStarshipdefensivecountermeasure": "Звездолёт: Радиоэлектронная защита",
-        "TypeStarshipdriftengine": "Звездолёт: Потоковый ускоритель",
-        "TypeStarshipexpansionbay": "Звездолёт: Отсек расширения",
-        "TypeStarshipfortifiedhull": "Звездолёт: Бронирование корпуса",
-        "TypeStarshipframe": "Звездолёт: Корпус",
-        "TypeStarshipothersystem": "Звездолёт: Прочие системы",
-        "TypeStarshippowercore": "Звездолёт: Реактор",
-        "TypeStarshipreinforcedbulkhead": "Звездолёт: Укреплённые перегородки",
-        "TypeStarshipsecuritysystem": "Звездолёт: Система безопасности",
-        "TypeStarshipsensor": "Звездолёт: Сенсор",
-        "TypeStarshipshield": "Звездолёт: Щит",
-        "TypeStarshipspecialability": "Starship Special Ability",
-        "TypeStarshipthruster": "Звездолёт: Двигатель",
-        "TypeStarshipweapon": "Звездолёт: Орудие",
-        "TypeTechnological": "Технологический предмет",
-        "TypeTheme": "Тема",
-        "TypeUpgrade": "Улучшение брони",
-        "TypeVehicleattack": "Атака транспорта",
-        "TypeVehiclesystem": "Оснащение",
-        "TypeWeapon": "Оружие",
-        "TypeWeaponaccessory": "Улучшение оружия"
+    "TYPES": {
+        "Actor": {
+            "character": "Player Character",
+            "drone": "Drone",
+            "hazard": "Hazard",
+            "npc": "Old Style NPC",
+            "npc2": "Non-player Character",
+            "starship": "Starship",
+            "vehicle": "Vehicle"
+        },
+        "Item": {
+            "actorResource": "Actor Resource",
+            "ammunition": "Ammunition",
+            "archetypes": "Archetype",
+            "asi": "Ability Score Increase",
+            "augmentation": "Augmentation",
+            "chassis": "Drone Chassis",
+            "class": "Class",
+            "consumable": "Consumable",
+            "container": "Container",
+            "equipment": "Armor",
+            "feat": "Feature",
+            "fusion": "Weapon Fusion",
+            "goods": "Goods",
+            "hybrid": "Hybrid",
+            "magic": "Magic",
+            "mod": "Drone Mod",
+            "race": "Species",
+            "shield": "Shield",
+            "spell": "Spell",
+            "starshipAblativeArmor": "Starship Ablative Armor",
+            "starshipAction": "Starship Action",
+            "starshipArmor": "Starship Armor",
+            "starshipComputer": "Starship Computer",
+            "starshipCrewQuarter": "Starship Crew Quarter",
+            "starshipDefensiveCountermeasure": "Starship Defensive Countermeasure",
+            "starshipDriftEngine": "Starship Drift Engine",
+            "starshipExpansionBay": "Starship Expansion Bay",
+            "starshipFortifiedHull": "Starship Fortified Hull",
+            "starshipFrame": "Starship Frame",
+            "starshipOtherSystem": "Starship Other System",
+            "starshipPowerCore": "Starship Power Core",
+            "starshipReinforcedBulkhead": "Starship Reinforced Bulkhead",
+            "starshipSecuritySystem": "Starship Security System",
+            "starshipSensor": "Starship Sensor",
+            "starshipShield": "Starship Shield",
+            "starshipSpecialAbility": "Starship Special Ability",
+            "starshipThruster": "Starship Thruster",
+            "starshipWeapon": "Starship Weapon",
+            "technological": "Technological",
+            "theme": "Theme",
+            "upgrade": "Armor Upgrade",
+            "vehicleAttack": "Vehicle Attack",
+            "vehicleSystem": "Vehicle System",
+            "weapon": "Weapon",
+            "weaponAccessory": "Weapon Accessory"
+        }
     },
     "SFRPG": {
         "ACPTooltip": "Штраф за броню: {mod} ({source})",
@@ -531,7 +533,8 @@
                 "NoToken": "Не удаётся применить: токен не выбран!"
             },
             "ItemAction": {
-                "Check": "Проверка"
+                "Check": "Проверка",
+                "NoActor": "You must have an actor selected or assigned to your user."
             },
             "ItemActivation": {
                 "Activates": "Активация",
@@ -574,6 +577,46 @@
                 },
                 "Turn": {
                     "Header": "Действует {combatant}"
+                }
+            },
+            "Difficulty": {
+                "Levels": {
+                    "Average": "Average",
+                    "Challenging": "Challenging",
+                    "Easy": "Easy",
+                    "Epic": "Epic",
+                    "GreaterThanEpic": "Greater than Epic",
+                    "Hard": "Hard",
+                    "LessThanEasy": "Less than Easy",
+                    "NoEnemies": "No Enemies",
+                    "NoEnemyShips": "No Enemy Ships",
+                    "NoPCShips": "No PC Ships",
+                    "NoPCs": "No PCs"
+                },
+                "Tooltip": {
+                    "APL": "APL",
+                    "APLFull": "Average Party Level",
+                    "CR": "CR",
+                    "CanBeAdded": "A creature of this CR can be added without increasing the encounter difficulty",
+                    "ClickForDetails": "Click for Encounter Details",
+                    "Details": "Details",
+                    "DifficultyEncounter": "Difficulty Encounter",
+                    "EncounterCR": "Encounter Challenge Rating",
+                    "EncounterTotalXP": "Encounter Total XP Value",
+                    "EncounterWealth": "Suggested Wealth Gain (credit equivalent)",
+                    "Enemies": "Enemies",
+                    "EnemyShipEffectiveTier": "Effective Tier, Enemy Ship(s)",
+                    "EnemyXP": "Enemy Total XP Value",
+                    "HostileNPCs": "Hostile NPCs",
+                    "PCs": "Number of PCs",
+                    "PlayerShipEffectiveTier": "Effective Tier, Player Ship(s) ",
+                    "PlayerXP": "Per Player XP",
+                    "Players": "Players",
+                    "XPBounds": "Encounter XP Bounds"
+                },
+                "Units": {
+                    "Credits": "cr",
+                    "XP": "XP"
                 }
             },
             "EncounterTracker": {
@@ -640,6 +683,17 @@
                     }
                 }
             }
+        },
+        "CombatRoles": {
+            "Combatant": "Combatant",
+            "Descriptions": {
+                "Combatant": "These creatures are best suited to physical fighting; they may be most effective at range, in melee, or both.",
+                "Expert": "These creatures tend to be most effective with various skills.",
+                "Spellcaster": "These creatures rely primarily on spells or spell-like abilities."
+            },
+            "Expert": "Expert",
+            "Label": "Combat Role",
+            "Spellcaster": "Spellcaster"
         },
         "ComingSoon": "Скоро будет!",
         "ConImm": "Иммунитет к состояниям",
@@ -917,6 +971,11 @@
                 "RangedWeaponMounts": "Рук для стрелкового оружия"
             }
         },
+        "DurationTypesInstantaneous": "Instantaneous",
+        "EffectDurationTypesDays": "Days",
+        "EffectDurationTypesHours": "Hours",
+        "EffectDurationTypesMinutes": "Minutes",
+        "EffectDurationTypesRounds": "Rounds",
         "EnergyArmorClass": "ЭКБ",
         "EnergyArmorClassShort": "ЭКБ",
         "Enrichers": {
@@ -1408,12 +1467,14 @@
                 "TitleActivation": "Активация"
             },
             "Activation": {
+                "Activation": "Activation",
                 "ActivationCondition": "Условие активации",
                 "ActivationCost": "Стоимость активации",
                 "Area": "Область",
                 "Duration": "Длительность",
                 "LimitedUses": "Ограничение использования",
                 "Range": "Дистанция",
+                "RangeIncrement": "Range Increment",
                 "Target": "Цель"
             },
             "Ammunition": {
@@ -1567,11 +1628,13 @@
             "Shield": {
                 "ACP": "Штраф: {acp}",
                 "AcMaxDex": "Макс. бонус ловкости: {maxDex}",
+                "AcMaxDexLabel": "Max Dex Bonus",
                 "Action": "Действие",
                 "Aligned": "Поднят",
                 "ArmorCheck": "Штраф за броню: {acp}",
+                "ArmorCheckLabel": "Armor Check Penalty",
                 "Bonus": "Бонус щита",
-                "Bonuses": "Бонус Снаряжён: {wielded} / Поднят : {aligned}",
+                "Bonuses": "Wielded: {wielded} / Aligned: {aligned}",
                 "Details": "Описание щита",
                 "Dex": "ЛВК: {dex}",
                 "Shield": "Щит",
@@ -1976,6 +2039,10 @@
         "RacePlaceHolderText": "Species",
         "RaceSize": "Размер",
         "RacialTraits": "Species Traits",
+        "RangeCalculated": "{rangeType} ({total} ft.)",
+        "RangeClose": "Close (25 ft. + 5 ft./2 levels)",
+        "RangeLong": "Long (400 ft. + 40 ft./level)",
+        "RangeMedium": "Medium (100 ft. + 10 ft./level)",
         "Reach": "Зона досягаемости",
         "ReflexSave": "Рефлекс",
         "RepairDroneChatMessage": "{name} был отремонтирован на {regainedHP} ПЗ.",
@@ -2195,6 +2262,10 @@
                     "Core": "Starfinder (5/10/5)",
                     "Optional": "DND5e (5/5/5)"
                 }
+            },
+            "DifficultyDisplay": {
+                "Hint": "Enables difficulty calculation and display on the combat tracker tab.",
+                "Name": "Enable Difficulty Display"
             },
             "ExperienceTracking": {
                 "Hint": "Удаляет шкалу опыта из листов персонажей.",
@@ -2495,6 +2566,7 @@
             "Spread": "Облако"
         },
         "SpellAreaShapesCone": "Конус",
+        "SpellAreaShapesCube": "Cube",
         "SpellAreaShapesCylinder": "Цилиндр",
         "SpellAreaShapesLine": "Линия",
         "SpellAreaShapesOther": "Прочее",
@@ -2760,6 +2832,7 @@
         "SystemWide": "System-Wide",
         "TempHPMaxPlaceHolderText": "+Максимальные",
         "TempHPPlaceHolderText": "+Временные",
+        "Text": "Text",
         "ThemePlaceHolderText": "Тема",
         "Tippy": {
             "Attributes": "Attributes:",
@@ -3013,6 +3086,8 @@
         "WeaponPropertiesGuidedTooltip": "A guided weapon uses a signal along with wireless telemetry, magnetic guidance, or another means of guiding its payload after the weapon has been fired. When you take a move action to aim the weapon and then fire it on the same turn (including doing so with a sniper weapon), your target does not gain the bonus to AC provided by cover, partial cover, or soft cover. Improved cover and total cover still confer their bonuses normally.",
         "WeaponPropertiesHarrying": "Отвлекающее",
         "WeaponPropertiesHarryingTooltip": "A harrying weapon produces exceptionally distracting bursts of fire. When you take the harrying fire action with this weapon, you gain a +2 insight bonus to your attack roll.",
+        "WeaponPropertiesHealing": "Healing",
+        "WeaponPropertiesHealingTooltip": "A healing weapon, which must be an energy weapon, can deliver restorative energy. You can set the weapon to heal mode (or reset it to normal mode) as a move action. While in healing mode, if the healing weapon hits a creature, roll dice equal to the weapon’s damage; Weapon Specialization, an operative’s trick attack, and other effects that increase damage don’t apply. The creature recovers Hit Points equal to the amount rolled, minimum 1. Reduce healing by half for constructs and undead; objects are unaffected. A critical hit with a healing weapon doesn’t increase the healing or have a critical hit effect. A healing weapon used in healing mode expends twice the usual number of charges, and a battery used in a healing weapon can’t be recharged.",
         "WeaponPropertiesHolyWater": "Освящённое",
         "WeaponPropertiesHolyWaterTooltip": "A holy water weapon is infused with the blessings of one or more good-aligned deities (most commonly Hylax, Iomedae, or Sarenrae within the Pact Worlds, though devoted followers of any good-aligned deity could create such weapons). It damages only undead (regardless of alignment) and outsiders with the evil subtype, and even those creatures suffer no effect (and show no sign of their nature if it is not already obvious) with a successful saving throw. Crafting a holy water grenade requires the blessing of formally trained priests of a good deity, though a character of any alignment can do the actual crafting.",
         "WeaponPropertiesHybrid": "Гибридное",

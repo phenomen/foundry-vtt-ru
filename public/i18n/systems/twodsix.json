@@ -56,6 +56,7 @@
       "Age": "Возраст",
       "CharacterImage": "Портрет персонажа",
       "CharacterName": "Имя персонажа",
+      "CharacterNames": "Character Names",
       "Characteristics": {
         "DEX": "ЛОВ",
         "EDU": "ОБР",
@@ -71,6 +72,10 @@
         "ALT2": "АЛЬТ2"
       },
       "CharacteristicEdit": "Переключить редактирование аббревиатур характеристик",
+      "Chassis": "Chassis",
+      "OperationalTime": "Operational Time",
+      "Price": "Price",
+      "LocomotionType": "Locomotion Type",
       "DeleteOwnedItem": "Удалить предмет",
       "Finances": {
         "CASH_ON_HAND": "НА РУКАХ",
@@ -109,6 +114,7 @@
         "ARMOR": "БРОНЯ",
         "ATTACHMENTS": "ATTACHMENTS",
         "AUGMENTS": "АУГМЕНТЫ",
+        "Augments": "Augments",
         "Ammo": "Боеп.",
         "Armor": "Броня",
         "EffectiveArmor": "Действующая броня",
@@ -121,6 +127,7 @@
         "HideStored": "Hiding stored items",
         "EQUIPMENT": "СНАРЯЖЕНИЕ",
         "EQUIPMENT_TOOLS": "EQUIPMENT & TOOLS",
+        "STORAGE_JUNK": "STORAGE & JUNK",
         "EditItem": "Изменить предмет",
         "Effect": "Эффект",
         "Location": "Место",
@@ -133,6 +140,11 @@
         "SPELLS": "ЗАКЛИНАНИЯ",
         "Spells": "Заклинания",
         "ShortDescr": "Краткое описание",
+        "LocationState": {
+          "equipped": "Equipped",
+          "ship": "Ship",
+          "backpack": "Backpack"
+        },
         "Subtype": "Тип",
         "TRAITS": "ЧЕРТЫ",
         "Traits": "Черты",
@@ -253,6 +265,7 @@
       },
       "Location": "Location",
       "AnimalNotes": "Animal Notes",
+      "RobotNotes": "Robot Notes",
       "AttackWeapons": "Attacks / Weapons",
       "Reaction": "Reaction Roll",
       "Attack": "Attack",
@@ -302,7 +315,13 @@
         "Bonus": "Bonus",
         "WithChainBonus": "with Chain / Assist bonus",
         "WinsRoll": "wins contested / opposed roll.",
-        "TiedRoll": "Tied contested / opposed roll. No winner."
+        "TiedRoll": "Tied contested / opposed roll. No winner.",
+        "GMUtils": "GM Utilities",
+        "RequestRoll": "Request Roll",
+        "RequestRollClip":"<div class='toolclip'><video src='systems/twodsix/assets/toolclips/requestRollToolClip.webm' autoplay muted loop></video><h4>Request Roll</h4><p>Select any Tokens from which you would like to request a skill roll. A pop-up dialog opens where you can select the particulars of the roll.</p><p class='faint'>Disable Toolclips in the Settings</p></div>",
+        "GMRequestsRoll": "GM requests a _TYPE_ roll.",
+        "normal": "normal",
+        "AbilityCheck": "Ability / Characteristic Check"
       }
     },
     "Create": "Создать",
@@ -335,7 +354,7 @@
       "Component": {
         "Ammunition":"Ammuniton",
         "componentName": "Компонент",
-        "accomodations": "жилое помещение",
+        "accomodations": "accommodations",
         "armament": "вооружение",
         "armor": "броня",
         "bridge": "мостик",
@@ -391,6 +410,7 @@
         "perHullTon": "МКр на тонну корпуса",
         "per100HullTon": "MCr per 100 hull tons",
         "pctHull": "Процент базового значения корпуса",
+        "pctHullPerUnit": "Percent of base hull value per unit",
         "isBaseHull":"Является базовым корпусом?",
         "RollModifier":"Модификатор Броска",
         "DM":"МБ",
@@ -419,7 +439,8 @@
         "Weight": "Вес",
         "isAttachment": "Attachment?",
         "NewAttachment": "New Attachment",
-        "BonusDamage": "Bonus Damage"
+        "BonusDamage": "Bonus Damage",
+        "PriorType": "Prior Item Type"
       },
       "Items": {
         "AssignArmor": "Сделать бронёй",
@@ -434,7 +455,8 @@
         "ItemType": "Тип",
         "MoveStorage": "Переместить",
         "New": "Новый",
-        "Storage": "Хранилище"
+        "Storage": "Хранилище",
+        "Junk": "Junk"
       },
       "Skills": {
         "DEX": "ЛОВ",
@@ -481,6 +503,7 @@
           "magazine": "Обойма",
           "power_cell": "Энергоячейка",
           "software": "Software",
+          "processor": "Processor",
           "other": "Другое"
         },
         "Size": "Размер",
@@ -686,6 +709,7 @@
       "Protection": "Защита",
       "skillToOperate": "Навык для управления",
       "Weapons": "Орудия",
+      "Components": "Components",
       "OpenVehicle": "Открытый транспорт",
       "techLevel": "ТУ",
       "Cost": "Стоимость",
@@ -714,12 +738,6 @@
       "Completed": "Миграция Twodsix System до версии {version} завершена!",
       "DoNotClose": "Происходит миграция Migrating Twodsix до версии {version}. Не закрывайте игру.",
       "MigrationError0.6.25": "Ошибка миграции: не удалось конвертировать цену ${name}, она была ${price} и стала 0."
-    },
-    "Modules": {
-      "compendiumFolders": {
-        "missing": "Встроенные библиотеки используют модуль 'Compendium Folders' для отображения данных в удобном виде. Если вы желаете использовать встроенные библиотеки, то установите и включите модуль 'Compendium Folders'. Или выключите это предупреждение в настройках.",
-        "disabled": "Включите модуль 'Compendium Folders', если хотите использовать встроенные библиотеки в этом модуле. Или выключите это предупреждение в настройках."
-      }
     },
     "No": "Нет",
     "Rolls": {
@@ -813,6 +831,10 @@
         "hint": "Например: \"2d6 + @characteristics.dexterity.mod\"",
         "name": "Формула инициативы"
       },
+      "armorDamageFormula": {
+        "hint": "Use VTT roll math without dice terms '@damage'/'@effectiveArmor' are replaced with the damage/effective armor. default behaviour: \"@damage-@effectiveArmor\"",
+        "name": "Armor damage reduction formula"
+      },
       "invertSkillRollShiftClick": {
         "hint": "Clicking on a skill roll or dragging damage to a character normally shows a dialog, shift-clicking applies default values (Average skill roll or automatic damage distribution). Checking this box swaps this behavior.",
         "name": "Invert behavior for shift-clicking for skill rolls and shift-dragging for taking damage"
@@ -857,7 +879,7 @@
         }
       },
       "shipInitiativeFormula": {
-        "hint": "Например: \"2d6",
+        "hint": "Like: \"2d6\"",
         "name": "Формула инициативы корабля"
       },
       "showAlternativeCharacteristics": {
@@ -887,10 +909,6 @@
       "showLifebloodStamina": {
         "hint": "Отображать Здоровье и Стойкость на бланке персонажа. Урон будет применяться к этим характеристикам. Полезно для Cepheus Deluxe.",
         "name": "Отображать и наносить урон Здоровью и Стойкости."
-      },
-      "showMissingCompendiumWarnings": {
-        "hint": "Whether to show warnings for missing/disabled modules on world start.",
-        "name": "Show warnings about missing/disabled modules."
       },
       "ShowRangeBandAndHideRange": {
         "hint": "checked=Shows 'Range Band', unchecked=Shows 'Range'",
@@ -951,7 +969,7 @@
         "name": "Использовать иконку токена Foundry вместо Twodsix для новых актёров."
       },
       "useWoundedStatusIndicators": {
-        "hint": "Uses status indicators to indicate wounded status and automatically roll unconcious saves on serious wounds. Roll modifiers below are applied to all rolls.",
+        "hint": "Uses status indicators to indicate wounded status and automatically roll unconsciousness saves on serious wounds. Roll modifiers below are applied to all rolls.",
         "name": "Display wounded status indicators and apply roll modifiers"
       },
       "minorWoundsRollModifier": {
@@ -1078,6 +1096,10 @@
         "hint": "Show reaction and morale information on animal sheet.",
         "name": "Show animal reaction and morale"
       },
+      "robotsUseHits": {
+        "hint": "Robots have only one damage statistic: hits.",
+        "name": "Robots use hits for damage"
+      },
       "showComponentRating": {
         "hint": "Show rating field on ship component item sheet.",
         "name": "Show component rating"
@@ -1145,7 +1167,12 @@
       "useTabbedViews": {
         "hint": "Use a tabbbed sheet for longer item sheets rather than a flat sheet.",
         "name": "Use tabbed views for weapons and component sheets"
-      }
+      },
+      "damageTypeOptions": {
+        "hint": "A comma separated list that specifies the allowable damage types.",
+        "name": "Damage and Protection Types"
+      },
+      "defaultDamageOptions": "Ballistic, Bludgeoning, Corrosive, EMP, Energy, Fire, Laser, Piercing, Poison, Plasma, Psionic, Rad, Slashing, Smoke, Stun"
     },
     "CloseAndCreateNew": "Закрыть и создать",
     "Copy": "Копировать",
@@ -1164,7 +1191,8 @@
       "consumable": "расходник",
       "trait": "черта",
       "spell": "заклинание",
-      "component": "компонент"
+      "component": "компонент",
+      "computer": "computer"
     },
     "speeds": {
       "walk": "ходьба",
@@ -1199,6 +1227,7 @@
       "CantAutoDamage": "Автоматический урон по кораблю или транспорту не поддерживается",
       "CantDropOnToken": "Перенос предметов на токен корабля или транспорта не поддерживается ",
       "CantDragOntoActor": "Этот предмет не может быть добавлен этому актёру",
+      "CantDragActorOntoActor": "Can only drag actor reference onto an active ProseMirror text box.",
       "PDFPagerNotInstalled": "PDF Pager must be installed to use source links.",
       "NoSpecfiedLink": "Документ и страница не указаны для этой ссылки.",
       "NoTargetFound": "No target for dropping found.",
@@ -1219,52 +1248,62 @@
       "CantDeleteEffect": "Can't delete an effect for item that is embedded in non-Actor."
     }
   },
-  "ITEM" :{
-    "TypeBackpack": "Backpack",
-    "TypeContainer": "Container",
-    "TypeConsumable": "Consumable",
-    "TypeEquipment": "Equipment",
-    "TypeSpell": "Spell",
-    "TypeTool": "Tool",
-    "TypeWeapon": "Weapon",
-    "TypeArmor": "Armor",
-    "TypeSkill": "Skill",
-    "TypeComponent": "Component",
-    "TypeComputer": "Computer",
-    "TypeAugment": "Augment",
-    "TypeStorage": "Storage",
-    "TypeJunk": "Junk",
-    "TypeSkills": "Skill",
-    "TypeTrait": "Trait",
-    "TypeShip_position": "Ship Position",
-    "TypeBackpackPl": "Backpacks",
-    "TypeContainerPl": "Containers",
-    "TypeConsumablePl": "Consumables",
-    "TypeEquipmentPl": "Equipment",
-    "TypeSpellPl": "Spells",
-    "TypeToolPl": "Tools",
-    "TypeWeaponPl": "Weapons",
-    "TypeArmorPl": "Armors",
-    "TypeSkillPl": "Skills",
-    "TypeComponentPl": "Components",
-    "TypeComputerPl": "Computers",
-    "TypeAugmentPl": "Augments",
-    "TypeStoragePl": "Storage",
-    "TypeJunkPl": "Junk",
-    "TypeSkillsPl": "Skills",
-    "TypeTraitPl": "Traits",
-    "TypeShip_positionPl": "Ship Positions"
+  "TYPES": {
+    "Item" :{
+      "backpack": "Backpack",
+      "container": "Container",
+      "consumable": "Consumable",
+      "equipment": "Equipment",
+      "spell": "Spell",
+      "tool": "Tool",
+      "weapon": "Weapon",
+      "armor": "Armor",
+      "skill": "Skill",
+      "component": "Component",
+      "computer": "Computer",
+      "augment": "Augment",
+      "storage": "Storage",
+      "junk": "Junk",
+      "skills": "Skill",
+      "trait": "Trait",
+      "ship_position": "Ship Position",
+      "backpackPl": "Backpacks",
+      "containerPl": "Containers",
+      "consumablePl": "Consumables",
+      "equipmentPl": "Equipment",
+      "spellPl": "Spells",
+      "toolPl": "Tools",
+      "weaponPl": "Weapons",
+      "armorPl": "Armors",
+      "skillPl": "Skills",
+      "componentPl": "Components",
+      "computerPl": "Computers",
+      "augmentPl": "Augments",
+      "storagePl": "Storage",
+      "junkPl": "Junk",
+      "skillsPl": "Skills",
+      "traitPl": "Traits",
+      "ship_positionPl": "Ship Positions"
+    },
+    "Actor": {
+      "traveller": "Traveller",
+      "ship": "Ship",
+      "vehicle": "Vehicle",
+      "animal": "Animal",
+      "robot": "Robot",
+      "space-object": "Space Object",
+      "travellerPl": "Travellers",
+      "shipPl": "Ships",
+      "vehiclePl": "Vehicles",
+      "animalPl": "Animals",
+      "space-objectPl": "Space Objects",
+      "robotPl": "Robots"
+    }
   },
-  "ACTOR": {
-    "TypeTraveller": "Traveller",
-    "TypeShip": "Ship",
-    "TypeVehicle": "Vehicle",
-    "TypeAnimal": "Animal",
-    "TypeSpace-object": "Space Object",
-    "TypeTravellerPl": "Travellers",
-    "TypeShipPl": "Ships",
-    "TypeVehiclePl": "Vehicles",
-    "TypeAnimalPl": "Animals",
-    "TypeSpace-objectPl": "Space Objects"
+  "EFFECT": {
+   "StatusWounded": "Wounded",
+   "StatusEncumbered": "Encumbered",
+   "StatusDead": "Dead",
+   "StatusUnconscious": "Unconscious"
   }
 }
