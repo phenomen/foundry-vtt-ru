@@ -48,7 +48,6 @@ export const Dnd5eAltInit = () => {
       "modules/ru-ru/i18n/modules/health-monitor-alt.json",
       "modules/ru-ru/i18n/modules/midi-qol-alt.json",
       "modules/ru-ru/i18n/modules/tidy5e-sheet-alt.json",
-      "modules/ru-ru/i18n/modules/token-action-hud-alt.json",
       "modules/ru-ru/i18n/modules/ready-set-roll-5e-alt.json",
     ];
 

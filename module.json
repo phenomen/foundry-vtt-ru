@@ -11,7 +11,7 @@
       "url": "https://discord.gg/Z2CXFy35WF"
     }
   ],
-  "version": "11.301.2",
+  "version": "11.301.4",
   "compatibility": {
     "minimum": "10",
     "verified": "11",
@@ -20,6 +20,18 @@
   "esmodules": ["ru-ru.js"],
   "styles": ["styles/_main.css"],
   "coreTranslation": true,
+  "relationships": {
+    "recommends": [
+      {
+        "id": "babele",
+        "type": "module"
+      },
+      {
+        "id": "lib-wrapper",
+        "type": "module"
+      }
+    ]
+  },
   "languages": [
     {
       "lang": "ru",
@@ -641,8 +653,13 @@
     },
     {
       "lang": "ru",
-      "path": "i18n/modules/token-action-hud.json",
-      "module": "token-action-hud"
+      "path": "i18n/modules/token-action-hud-core.json",
+      "module": "token-action-hud-core"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/token-action-hud-dnd5e.json",
+      "module": "token-action-hud-dnd5e"
     },
     {
       "lang": "ru",
