@@ -1,3 +1,7 @@
+import "../styles/_main.css";
+import "../styles/_fonts.css";
+import "../styles/_custom.css";
+
 import { Dnd5eAltInit } from "./systems/dnd5e-alt.js";
 
 Hooks.once("init", async () => {
