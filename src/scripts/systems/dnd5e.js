@@ -90,8 +90,10 @@ export function init() {
       .closest(".form-group");
 
     const updateAAButton = $(`
+  <label>
+    Перед встраиванием перевода анимаций требуется включить модули Automated Animations, D&D5e Animations, JB2A (Free + Patreon)
+  </label>
   <div class="form-group">
-  <label>Перед встраиванием перевода анимаций вы должны заранее включить модули Automated Animations и D&D5e Animations</label>
       <button type="button">
           <i class="fas fa-cogs"></i>
           <label>Перевести анимации</label>
@@ -112,48 +114,19 @@ async function updateAA() {
     "/modules/ru-ru/i18n/modules/aa-autorec.json"
   );
 
-  let newSettings = {
-    melee: {},
-    range: {},
-    ontoken: {},
-    templatefx: {},
-    aura: {},
-    preset: {},
-    aefx: {},
-    version: "5",
-  };
-
   const currentSettings =
     AutomatedAnimations.AutorecManager.getAutorecEntries();
 
-  newSettings.melee = mergeArrays(
-    currentSettings.melee,
-    translatedSettings.melee
-  );
-
-  newSettings.range = mergeArrays(
-    currentSettings.range,
-    translatedSettings.range
-  );
-
-  newSettings.ontoken = mergeArrays(
-    currentSettings.ontoken,
-    translatedSettings.ontoken
-  );
-
-  newSettings.templatefx = mergeArrays(
-    currentSettings.templatefx,
-    translatedSettings.templatefx
-  );
-
-  newSettings.aura = mergeArrays(currentSettings.aura, translatedSettings.aura);
-
-  newSettings.preset = mergeArrays(
-    currentSettings.preset,
-    translatedSettings.preset
-  );
-
-  newSettings.aefx = mergeArrays(currentSettings.aefx, translatedSettings.aefx);
+  const newSettings = {
+    melee: mergeArrays(currentSettings.melee, translatedSettings.melee),
+    range: mergeArrays(currentSettings.range, translatedSettings.range),
+    ontoken: mergeArrays(currentSettings.ontoken, translatedSettings.ontoken),
+    templatefx: mergeArrays(currentSettings.templatefx, translatedSettings.templatefx),
+    aura: mergeArrays(currentSettings.aura, translatedSettings.aura),
+    preset: mergeArrays(currentSettings.preset, translatedSettings.preset),
+    aefx: mergeArrays(currentSettings.aefx, translatedSettings.aefx),
+    version: "5",
+  };
 
   AutomatedAnimations.AutorecManager.overwriteMenus(
     JSON.stringify(newSettings),
