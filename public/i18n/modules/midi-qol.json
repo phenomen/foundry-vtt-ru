@@ -16,7 +16,7 @@
   "midi-qol.AutoCheckHit.Name": "Автопроверка попадания атаки",
   "midi-qol.AutoCheckHit.Hint": "Проверка попадания атаки по выбранным целям — урон наносится, если поражена одна или несколько целей и включено автоматическое нанесение урона. Если отключено, то midi-qol будет считать, что атака попала и продолжит бросок.",
   "midi-qol.RequiresTargets.Name": "Требовать выбор целей",
-  "midi-qol.RequiresTargets.Hint": "Require tokens to be targeted before rolls. Never means never require targets to be set, In Combat means only in combat and always whenever an item with targets is rolled.",
+  "midi-qol.RequiresTargets.Hint": "Требовать, чтобы токены были выбраны в качестве цели перед броском. 'Нет' означает никогда не требовать выбора целей; 'в бою' означает требовать выбора целей только в бою; 'да' означает требовать выбора целей, когда совершается бросок для предмета при использовании которого назначаются цели.",
   "midi-qol.requiresTargetsOptions": {
     "none": "нет",
     "combat": "в бою",
@@ -24,7 +24,7 @@
   },
   "midi-qol.AutoApplyDamage.Name": "Автонанесение урона цели",
   "midi-qol.AutoApplyDamage.Hint": "Автоматическое нанесение урона по пораженным целям (если включена автоматическая проверка попаданий) или целям, выбранным пользователем.",
-  "midi-qol.PlayerDamageCard.Name": "Show a player's damage card",
+  "midi-qol.PlayerDamageCard.Name": "Отображение карточки урона игрока",
   "midi-qol.PlayerDamageCard.Hint": "Упрощённая версия карточки урона. Отображается только если показана карточка для GM. Сама карточка не показывается GM.",
   "midi-qol.PlayerCardDamageDifferent.Name": "Отображать карточку урона игрока, если выброшенный урон не совпадает с нанесённым цели уроном",
   "midi-qol.ItemRollButtons.Name": "Добавить кнопки атаки/урона к предмету в инвентаре",
@@ -68,7 +68,7 @@
   "midi-qol.noTokens": "Не удаётся применить эффект — токен не выбран целью",
   "midi-qol.HideNPCNames.Name": "Скрывать имена токенов",
   "midi-qol.HideNPCNames.Hint": "Скрывать имена токенов в сообщениях чата для попаданий/испытаний",
-  "midi-qol.noTemplateSeen": "Template has not been placed",
+  "midi-qol.noTemplateSeen": "Шаблон не был размещен",
   "midi-qol.AutoTarget.Name": "Автовыбор целей при размещении шаблона",
   "midi-qol.AutoTarget.Hint": "When placing a template (e.g. spell) auto target tokens inside the template. If 'Center + Levels' is set in ranged targeting Levels Volumetric Templates will be used (if installed)",
   "midi-qol._comment for translators_noDamageonSaveSpells": "Начиная с Foundry V9 массив элементов json больше не поддерживается, поэтому будет использоваться только версия V9",
@@ -104,7 +104,7 @@
   "midi-qol.ColoredBorders.Name": "Сообщения с цветными рамками",
   "midi-qol.ColoredBorders.Hint": "Каждое сообщение чата имеет рамку в цвете персонажей игрока.",
   "midi-qol.AutoEffects.Name": "Автоприменение эффектов предмета к целям",
-  "midi-qol.AutoEffects.Hint": "Automatically apply item active effects to targets if they are hit, failed a save or don't get a save. Works better with about-time and/or times-up as well.",
+  "midi-qol.AutoEffects.Hint": "Автоматическое применение активных эффектов предметов к целям, если по ним попали, они не прошли испытание или не имели возможности его пройти. Работает лучше с About Time и/или Times Up.",
   "midi-qol.AutoEffectsOptions": {
     "off": "Не применять эффекты автоматически",
     "applyNoButton": "Применять эффекты, не отображать кнопку",
@@ -114,10 +114,10 @@
   "midi-qol.RangeTarget.Name": "Автовыбор цели дистанционных заклинаний/атак",
   "midi-qol.RangeTarget.Hint": "Автоматически выбирать цель дистанционных атак, если тип цели — существо/враг/союзник.",
   "midi-qol.PlayerRollSaves.Name": "Запрашивать игроков совершать броски испытаний",
-  "midi-qol.PlayerRollSaves.Hint": "Players Roll saves. None means the modules roll the save. Otherwise, the player will get a whispered chat message, LMRTFY or Monk's Token bar prompt.",
+  "midi-qol.PlayerRollSaves.Hint": "Игроки совершают броски испытаний. 'Нет' - означает, что модули совершают броски испытаний без участия игрока. В противном случае игрок получит запрос LMRTFY/Monk's Token Bar или запрос в личные сообщения",
   "midi-qol.rollNPCSaves.Name": "Запрашивать GM совершать броски испытаний (несвязанные актёры)",
   "midi-qol.rollNPCLinkedSaves.Name": "Запрашивать GM совершать броски испытаний (связанные актёры)",
-  "midi-qol.rollNPCSaves.Hint": "Auto means the module will roll the save for the Actor. Otherwise the GM will receive an LMRTFY/Monk's Token Bar or chat prompt.",
+  "midi-qol.rollNPCSaves.Hint": "'Авто' — модуль совершит бросок испытания за NPC, в противном случае GM получит запрос LMRTFY/Monk's Token Bar или или запрос в чате.",
   "midi-qol.PlayerSaveTimeout.Name": "Задержка перед броском за игроков",
   "midi-qol.PlayerSaveTimeout.Hint": "Как долго ожидать, прежде чем совершать броски испытаний за игроков, в секундах.",
   "midi-qol.MagicResistant": "устойчивость к магии",
@@ -137,9 +137,9 @@
   "midi-qol.noSaveTargets": "нет целей для испытания",
   "midi-qol.UseTokenNames.Name": "Карточки чата используют имя токена",
   "midi-qol.UseTokenNames.Hint": "В названиях карточек чата и названиях целей используют имя токена, а не имя актёра.",
-  "midi-qol.CriticalDamage.Name": "Choose critical damage for Players",
-  "midi-qol.CriticalDamage.Hint": "DND5e Settings Only - standard dnd5e critical roll, Max Normal Damage - base weapon dice only (no critical dice) but all maximised, Max Critical Dice - critical dice maximised, Max All Dice - item + critical dice maximised, double dice value - result of dice x2, Explode Critical Dice - roll normal critical exploding any critical dice, Only Weapon Extra Critical - the only bonus damage for critical is from the item extra critical field",
-  "midi-qol.CriticalDamageGM.Name": "Choose critical damage for GM",
+  "midi-qol.CriticalDamage.Name": "Выберите, как игроки совершают бросок критического урона",
+  "midi-qol.CriticalDamage.Hint": "'По умолчанию DnD5e' — все кости урона удваиваются в количестве; 'базовые кости макс.' — стандартные кости урона (без дополнительных костей за критический удар), но все кости имеют максимально возможный результат; 'критические кости макс.' — кости получаемые за критический удар имеют максимально возможный результат; 'все кости макс.' — базовые кости и кости за критический удар имеют максимально возможный результат; 'удвоение урона' — любой результат костей удваивается; 'Взрыв критических костей' — все кости урона удваиваются, все критические кости взрываются; 'Только дополнительные кости крита оружия' — единственный бонус к критическому урону - от поля дополнительного критического урона предмета.",
+  "midi-qol.CriticalDamageGM.Name": "Выберите, как GM совершает бросок критического урона",
   "midi-qol.CriticalDamageGM.Hint": "",
 
 
@@ -147,14 +147,14 @@
     "default": "настройки DnD5e",
     "maxDamage": "базовые кости макс.",
     "maxCrit": "макс. кость крита (число)",
-    "maxCritRoll": "Max Critical Dice (roll dice)",
+    "maxCritRoll": "макс. кость крита (бросок)",
     "maxAll": "все кости макс.",
     "doubleDice": "удвоение урона",
-    "explode": "Explode all critical dice",
-    "maxDamageExplode": "Max base damage and explode critical dice",
-    "explodeCharacter": "Explode Character critical dice",
-    "explodeNPC": "Explode NPC crtical dice",
-    "baseDamage": "Only Weapon Extra Critical"
+    "explode": "Взрыв критических костей",
+    "maxDamageExplode": "Базовые кости макс. и взрыв критических костей",
+    "explodeCharacter": "Взрыв критических костей у Игроков",
+    "explodeNPC": "Взрыв критических костей у NPC",
+    "baseDamage": "Только дополнительные кости крита оружия"
   },
   "midi-qol.MergeCard.Name": "Объединение бросков в одну карточку",
   "midi-qol.MergeCard.Hint": "Объединить атаку, попадание, урон и испытания в одну карточку чата.",
@@ -187,7 +187,7 @@
   "midi-qol.AutoFastForwardAbilityRolls.Name": "Перематывать броски характеристик",
   "midi-qol.AutoFastForwardAbilityRolls.Hint": "При нажатии на характеристику, для совершения броска на проверку/испытания, либо проверки навыка, происходит автоматическая перемотка.",
   "midi-qol.UseCustomSounds.Name": "Включить особые звуки Midi-qol",
-  "midi-qol.UseCustomSounds.Hint": "If set will override system sounds. Configure sounds from the 'Configure Midi Custom Sounds' Application",
+  "midi-qol.UseCustomSounds.Hint": "Если установлено, то системные звуки будут заменены. Настройка звуков доступна из приложения 'Настройка особых звуков Midi-qol.",
   "midi-qol:Debug.Name": "Включить отладку",
   "midi-qol:Debug.Hint": "'Предупреждения' дает обзор активностей; 'отладка' добавляет больше информации; 'всё' включает также CONFIG.debug.hooks",
   "midi-qol.DebugOptions": {
@@ -238,7 +238,7 @@
   "midi-qol.autoRollDamageOptions": {
     "none": "нет",
     "always": "да",
-    "saveOnly": "Saving Throw Only",
+    "saveOnly": "только испытания",
     "onHit": "Требуется бросок атаки"
   },
   "midi-qol.autoApplyDamageOptions": {
@@ -246,7 +246,7 @@
     "noCard": "нет и отображать карточку урона",
     "yes": "да",
     "yesCard": "да и отображать карточку урона",
-    "yesCardNPC": "Да (NPC) Нет (игроки) + карточка урона"
+    "yesCardNPC": "да (NPC) нет (игроки) + карточка урона"
   },
   "midi-qol.playerDamageCardOptions": {
     "none": "не показывать",
@@ -269,8 +269,8 @@
   "midi-qol.showItemDetailsOptions": {
     "none": "нет",
     "cardOnly": "только карточка",
-    "pc": "Подробности: только игроки",
-    "all": "Подробности: NPC + игроки"
+    "pc": "подробности: только игроки",
+    "all": "подробности: NPC + игроки"
   },
   "midi-qol.rollNPCSavesOptions": {
     "none": "сообщение чата",
@@ -405,12 +405,12 @@
   "midi-qol.SingleConcentrationRoll.Hint": "Если включено и атака наносит обычный урон + испытание + альтернативный /полуторный урон, то для суммарного урона нужно совершить только одну проверку концентрации.",
   "midi-qol.TempHPDamageConcentrationCheck.Name": "Проверка концентрации от временных ПЗ",
   "midi-qol.TempHPDamageConcentrationCheck.Hint": "Если включено, потеря временных ПЗ вызовет проверку концентрации",
-  "midi-qol.RemoveConcentrationEffects.Name": "Remove concentration when effects removed",
-  "midi-qol.RemoveConcentrationEffects.Hint": "Check when effects (effects & templates) are removed. If all effects and templates for the concentration spell/feature have been removed remove concentrtion",
+  "midi-qol.RemoveConcentrationEffects.Name": "Снять концентрацию при снятии эффектов",
+  "midi-qol.RemoveConcentrationEffects.Hint": "Проверка, когда эффекты (эффекты и шаблоны) удалены. Если все эффекты и шаблоны для концентрации на заклинании были удалены, то снимает концентрацию.",
   "midi-qol.RemoveConcentrationEffectsOptions" : {
-    "none": "Never",
-    "effects": "Check Effects",
-    "effectsTemplates": "Check Effects and Templates"
+    "none": "Никогда",
+    "effects": "Проверка эффектов",
+    "effectsTemplates": "Проверка эффектов и шаблонов"
   },
   "midi-qol.GMSettings": "GM",
   "midi-qol.PlayerSettings": "Игрок",
@@ -431,19 +431,24 @@
   "midi-qol.AttackMacro.Name": "Макрос на бонус атаки",
   "midi-qol.AttackMacro.Hint": "Разделенный запятыми список макросов для вызова при расчете броска атаки, которые будут применяться для проверки попадания атаки в цель.",
   "midi-qol.DAEMidiQOL": "Особое для DAE/Midi-qol",
-  "midi-qol.Optional": "Rules",
-  "midi-qol.Mechanics": "Mechanics",
-  "midi-qol.OptionalRules.Name": "Optional Game Rules",
+  "midi-qol.Optional": "Правила",
+  "midi-qol.Mechanics": "Механики",
+  "midi-qol.OptionalRules.Name": "Дополнительные игровые правила",
   "midi-qol.OptionalRules.Hint": "Правила игры DnD5e, которые вы, возможно, захотите включить. Как правило, не работают с Better Rolls.",
-  "midi-qol.InvisAdvantage.Name": "Hidden/Invisible attackers have advantage (disadvantage if they cannot see their target) on attacks (use CV/CE/CUB and core foundy vision)",
+  "midi-qol.InvisAdvantage.Name": "Скрытые/Невидимые атакующие имеют преимущество (помеху, если не видят свою цель) на броски атаки (Используется CUB/Conditional Visibility/Convenient Effects и базовое зрение Foundry)",
   "midi-qol.CheckRange.Name": "Проверять дальность оружия при атаке",
+  "midi-qol.CheckRangeOptions": {
+    "none": "Не проверять дальность",
+    "longfail": "Расстояние до цели > Максимальная дистанция: Промах",
+    "longdisadv": "Расстояние до цели > Максимальная дистанция: Помеха"
+  },
   "midi-qol.NearbyFoe.Name": "Для дистанционных атак, когда противник находится ближе, чем указанное значение, то атакующий имеет помеху (значение 0 выключает это)",
   "midi-qol.WallsBlockRange.Name": "Стены блокируют дистанционные атаки",
-  "midi-qol.WallsBlockRange.Hint": "Walls block ranged attacks \n No = no effect, center = check center to center line, center + Levels = center check but use the 'levels' module to determine wall blocking. Center + Levels also means use levels volumetric templates for template targeting",
+  "midi-qol.WallsBlockRange.Hint": "Стены блокируют дистанционные атаки  \nНет = нет эффекта, Проверка по центру = проверка по линии между центрами двух клеток, Проверка по центру + Levels = то же самое, что и предыдущее, но с использованием модуля Levels для определения преграждения стен. Проверка по центру + Levels так же означает, что будут использоваться объёмные шаблоны для выбора целей этим шаблоном.",
   "midi-qol.WallsBlockRangeOptionsNew": {
-    "none": "нет",
-    "center": "проверка по центру",
-    "centerLevels": "проверка по центру + Levels",
+    "none": "Нет",
+    "center": "Проверка по центру",
+    "centerLevels": "Проверка по центру + Levels",
     "levelsautocover": "Levels Auto Cover",
     "simbuls-cover-calculator": "Simbuls Cover Calculator"
   },
@@ -452,18 +457,18 @@
   "midi-qol.WallsBlockRangeOptions": {
     "none": "нет",
     "center": "проверка по центру",
-    "centerLevels": "проверка по центру + Levels"
+    "centerLevels": "Проверка по центру + Levels"
   },
-  "midi-qol.CoverCalculation.Name": "Calculate Cover",
-  "midi-qol.CoverCalculation.Hint": "Calculate AC bonus for targets in cover - settings taken from the selected module",
+  "midi-qol.CoverCalculation.Name": "Рассчитать укрытия",
+  "midi-qol.CoverCalculation.Hint": "Рассчитать КД для целей в укрытии - параметры берутся из выбранного модуля",
   "midi-qol.CoverCalculationOptions": {
-    "none": "None",
-    "simbuls-cover-calculator": "Simbul's Cover Calculator",
+    "none": "Нет",
+    "simbuls-cover-calculator": "Simbuls Cover Calculator",
     "levelsautocover": "Levels Auto Cover"
   },
   "midi-qol.NearbyAllyRanged.Hint": "Дистанционные атаки союзников, находящихся рядом (5 футов) с целью, совершаются с помехой для целей меньшего, чем этот размер: ш*в (значение 0 выключает это)",
   "midi-qol.Incapacitated.Name": "Недееспособные актёры не могут совершать действия и ответные действия",
-  "midi-qol.RemoveHiddenInvis.Name": "Attacking removes hidden (use CE/CV/CUB/core foundry specialStatus )",
+  "midi-qol.RemoveHiddenInvis.Name": "Атака снимает статус Скрытый (Используется CUB/Conditional Visibility/Convenient Effects и базовый параметр Foundry specialStatus)",
   "midi-qol.CriticalSaves.Name": "(Домашнее правило) Критические броски испытаний всегда приводят к успеху/провалу",
   "midi-qol.MaxDRValue.Name": "(Домашнее правило) При включении будет применяться только самое эффективное уменьшение урона, в ином случае уменьшение урона сможет складываться",
   "midi-qol.invisible": "Невидим",
@@ -710,7 +715,7 @@
   "midi-qol.itemUseHooks.Name": "Utilise Item Hooks",
   "midi-qol.itemUseHooks.Hint": "Do NOT set this - used for author's testing",
   "midi-qol.SkillAbilityCheckAdvantage.Name": "Ability Check Advantage gives Skill Advantage",
-  "midi-qol.SkillAbilityCheckAdvantage.Hint": "If an actor has advantage/disadvantage on ability checks, skills based on that ability also have advatnage/disadvantage",
+  "midi-qol.SkillAbilityCheckAdvantage.Hint": "If an actor has advantage/disadvantage on ability checks, skills based on that ability also have advantage/disadvantage",
   "midi-qol.ignoreTotalCover": "No Full cover",
   "midi-qol.InitPromptTitle": "Initiative Roll",
   "midi-qol.HighlightSuccess.Name": "Color code Hit/Miss/Save Display",
@@ -732,5 +737,7 @@
     "removeFirstWorkflow": "Remove Top/Most Recent Workflow From List (WARNING)",
     "undoFirstWorkflow": "Undo Top/Most Recent Workflow From List",
     "GMOnly": "Only the GM can undo workflows"
-  }
+  },
+  "midi-qol.cubNotSupported": "Combat Utility Belt will not be migrated to version 11. Midi will remove support for CUB in midi version 11.1.0"
+
 }
