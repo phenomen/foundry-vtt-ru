@@ -125,7 +125,8 @@
           "combat": {
             "injury": "Травма от оружия",
             "piercingBlow": "Пронзающий удар оружия",
-            "heavyBlow": "Урон от сокрушительного удара"
+            "heavyBlow": "Урон от сокрушительного удара",
+            "pierce": "Укол"
           },
           "defense": {
             "protection": "Защита",
@@ -182,6 +183,11 @@
           "from": "Пункт отправления",
           "to": "Пункт назначения",
           "duration": "Дней в пути"
+        },
+        "make-default": {
+          "title": "Назначить по умолчанию",
+          "description": "Два персонажа связаны друг с другом" ,
+          "label": "чтобы назначить это сообществом по умолчанию."
         }
       }
     },
@@ -724,10 +730,10 @@
         "title": "Бросок {type}"
       },
       "error": {
-        "actorNotFound": "No actor has been found with actorID: {actorId} and tokenId:{tokenId}"
+        "actorNotFound": "Не найден актёр с actorID: {actorId} и tokenId: {tokenId}"
       },
       "warn": {
-        "characterHasNotBeenUsedToCreateTheAction": "The action you want to spend hope point on has not been created by a Character, but by {actorName} !"
+        "characterHasNotBeenUsedToCreateTheAction": "Действие, на которое вы хотите потратить пункт надежды, было создано не этим персонажем, а {actorName}!"
       }
     },
     "rolls": {
@@ -745,16 +751,16 @@
         "noActorFound": "Актер с именем {name} не найден",
         "combatantNotInCombat": "Вы не можете вступить в бой с выбранным токеном ({name}) с id ({id}). Выбранный токен не участвует в бою или выбыл из боя.",
         "combatantDoesntExistInCombat": "Актёр с id ({id}) не является участником активного боя.",
-        "noSkillNameAvailableWithExtendedWeaponSelection": "The character {actorName} has no combat proficiency ({name}) and neither a skill name of name ({name}).",
-        "noSkillNameFoundWithExtendedWeaponSelection": "The character {actorName} has no combat proficiency ({name}) and has no skill with the expected name ({name}).",
-        "noCombatProficiencyFound": "The character {actorName} has no combat profeciency ({name}). You should either add a proficiency or use the extendable combat skill settings to add one.",
-        "incompleteItem": "No valid {element} for this item ({item}). You need select a(n) {element}.",
+        "noSkillNameAvailableWithExtendedWeaponSelection": "У персонажа {actorName} нет боевого умения ({name}) или навыка ({name}).",
+        "noSkillNameFoundWithExtendedWeaponSelection": "У персонажа {actorName} нет боевого умения ({name}) и навыка ({name}).",
+        "noCombatProficiencyFound": "У персонажа {actorName} нет боевого умения ({name}). Вам нужно или добавить умение, или использовать расширенный боевой навык.",
+        "incompleteItem": "Не найдено {element} для предмета ({item}). Вам нужно выбрать {element}.",
         "noValidTarget": "Чтобы атаковать вы должны выбрать только один токен.",
         "noValidCombatTarget": "Вы должны выбрать токен, который участвует в бою.",
         "noValidWeaponEquipped": "У вас нет подходящего надетого оружия для использования навыка ({skill}).",
         "tnIsWeird": "СЛ имеет некорректное значение. Возможно вы не выставили значение паррирования цели ({foeName}).",
-        "noTokenSelectedForEngagement": "You need to select some tokens to be engaged with each other.",
-        "numberOfTengwarNotCorrect": "Something weird happened. Number of Tengwar ({tengwar}) is 0 or less ! This should not happen.",
+        "noTokenSelectedForEngagement": "Вам нужно выбрать несколько токенов, которые вступят в бой друг с другом.",
+        "numberOfTengwarNotCorrect": "Произошло что-то странное. Количество тенгвар ({tengwar}) равно 0 или меньше! Этого не должно происходить.",
         "impossibleForMonoFaction": "Вы должны выбрать хотя бы по одному токену от каждой стороны конфликта.",
         "impossibleForComplexEngagement": "Вы должны выбрать один токен для одной из двух фракций, а не несколько для обеих."
       },
@@ -876,7 +882,7 @@
           "title": "Результат атаки",
           "help": "Пожалуйста, нажмите правую кнопку, чтобы вызвать меню.",
           "paragraph": "<span class='actor-name'>{attackerName}</span> атакует <span class='actor-name'>{targetName}</span> при помощи {weaponName} и наносит <a class='apply-damage-element' title='{hint}'>{totalDamage} урона<i class='fas fa-external-link-alt'></i></a>",
-          "specialResult": " with <a class='apply-special-result' title='{hint}'>{quantity} special result(s)<i class='fas fa-external-link-alt'></i></a> (<img src='systems/tor2e/assets/images/tengwar.png' data-edit='img' title='tengwar' height='15' width='15' alt='tengwar'/>)"
+          "specialResult": " с <a class='apply-special-result' title='{hint}'>{quantity} особых результатов<i class='fas fa-external-link-alt'></i></a> (<img src='systems/tor2e/assets/images/tengwar.png' data-edit='img' title='tengwar' height='15' width='15' alt='tengwar'/>)"
         },
         "details": {
           "attackerRoll": "Проверка атакующего:",
@@ -899,17 +905,17 @@
         "injury": {
           "title": "Травма",
           "moderate": {
-            "type": "средней тяжести",
+            "type": "незначительная",
             "title": "Незначительная травма",
             "message": "<span class='actor-name'>{targetName}</span> получает <b>незначительную травму</b> до конца боя."
           },
           "severe": {
-            "type": "серьезная",
+            "type": "серьёзная",
             "title": "Серьёзная травма",
             "message": "<span class='actor-name'>{targetName}</span> получает <b>серьёзную травму</b> на {duration} дней."
           },
           "grievous": {
-            "type": "ужасная",
+            "type": "мучительная",
             "title": "Мучительная травма",
             "message": "<span class='actor-name'>{targetName}</span> получает <b>мучительную травму</b>, теряет сознание и при смерти."
           }
@@ -918,7 +924,7 @@
           "title": "Эффекты атаки",
           "damageDealt": "Нанесённый урон:",
           "protection": {
-            "is": " ",
+            "is": " - ",
             "wounded": "ранен!",
             "protected": "защищён!"
           },
@@ -934,8 +940,8 @@
     "macro": {
       "error": {
         "noActorAvailable": "Выберите актёра перед использованием макроса!",
-        "itemIsMissing": "Item {itemName} of type {itemType} is not available for the selected actor - {actorName} !",
-        "skillIsMissing": "Skill {skillName} is not available for the selected actor - {actorName} !"
+        "itemIsMissing": "Предмет {itemName} с типом {itemType} не доступен актёру {actorName}!",
+        "skillIsMissing": "Навык {skillName} не доступен актёру {actorName} !"
       }
     },
     "effects": {
@@ -985,13 +991,13 @@
   },
   "SETTINGS": {
     "setSoloMode": "Режим Бродяги (Одиночная игра)",
-    "setSoloModeDescription": "Some features are adapted to Strider Mode (eg. Skirmish stance only, community actor is simplified, ...)",
-    "setAddSkirmish": "Add skirmish stance to your game",
-    "setAddSkirmishDescription": "Add skirmish to the stances allowed even if you are not playing Strider Mode (Solo)",
+    "setSoloModeDescription": "Некоторые функции адаптированы для режима Бродяги (например: только стойка Битвы, упрощён актёр сообщества)",
+    "setAddSkirmish": "Добавить стойку битвы",
+    "setAddSkirmishDescription": "Добавляет битву в доступные стойки, даже если вы не играете в режиме Бродяги (одиночная игра)",
     "setTnBaseValue": "Установите базовую сложность",
     "setTnBaseValueDescription": "This setting allows the LM to set the base value they want. From the book, it is advised that you put 20 for campaign mode and 18 for one-shot",
     "setExtendedWeaponSelection": "Расширенный список оружия",
-    "setExtendedWeaponSelectionDescription": "This parameter should only be activated if the Loremaster wants to use homebrew rules for combat (ie. new combat proficiencies). By activating this parameter, a new field will appear in the weapon sheet to make a link with the new combat proficiency instead of the weapon group name.",
+    "setExtendedWeaponSelectionDescription": "Этот параметр следует активировать только в том случае, если Хранитель хочет использовать домашние правила боя (т.е. новые боевые умения). При активации этого параметра в бланке оружия появится поле для связи с новым боевым умением вместо названия группы оружия.",
     "setUseAdversarySkills": "Разрешить использование навыков врагами",
     "setUseAdversarySkillsDescription": "Во втором издании враги не имеют навыков. Включение этой настройки добавит навыки в бланки персонажей Хранителя.",
     "setOverrideEyeAwareness": "Вы превысили максимально значение Внимания Ока",
