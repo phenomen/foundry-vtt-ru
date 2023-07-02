@@ -40,7 +40,7 @@
 	"FSC.Configuration.CombatPauseRule.Active": "Пауза только в активной сцене",
 	"FSC.Configuration.CombatPauseRule.Current": "Пауза на сцене, которую в данный момент просматривает Ведущий",
 	"FSC.Configuration.Display.DateTimeFormat": "Формат времени и даты",
-	"FSC.Configuration.Display.Description": "Эти настройки позволяют изменить способ отображения даты и времени для выбранного календаря. Для получения более подробной информации о настройке форматов дат, пожалуйста, ознакомьтесь с <a target=\"_blank\" href=\"https://simplecalendar.info/pages/calendar-configuration/index/display-options.html#datetime-formatting\">документацией</a> или разверните таблицу ниже.",
+	"FSC.Configuration.Display.Description": "Эти настройки позволяют изменить способ отображения даты и времени для выбранного календаря. Для получения более подробной информации о настройке форматов дат, пожалуйста, ознакомьтесь с <a target=\"_blank\" href=\"https://simplecalendar.info/docs/calendar-configuration/display-options#datetime-formatting\">документацией</a> или разверните таблицу ниже.",
 	"FSC.Configuration.Display.Compact": "Настройки компактного вида",
 	"FSC.Configuration.Display.CompactControls.Title": "Элементы управления временем в компактном виде",
 	"FSC.Configuration.Display.CompactControls.Description": "Выберите вид кнопок, используемых для изменения даты и времени, когда календарь переключен в компактный вид.",
@@ -56,6 +56,8 @@
 	"FSC.Configuration.Global.SyncCalendars.Description": "Если этот параметр установлен, все календари будут изменять дату/время при использовании элементов управления для изменения даты/времени вперед или назад.",
 	"FSC.Configuration.Global.ShowNoteFolder.Title": "Отображение папки заметок",
 	"FSC.Configuration.Global.ShowNoteFolder.Description": "Показывать ли папку заметок на вкладке Записи журнала. Для вступления в силу требуется обновление.",
+	"FSC.Configuration.Global.InGameChatTimestamp.Title": "Использовать игровое время для меток времени в чате",
+	"FSC.Configuration.Global.InGameChatTimestamp.Description": "Метки времени в чате будут использовать внутриигровое время Simple Calendar, вместо реального.",
 	"FSC.Configuration.ImportExport.ExportDescription": "Выберите какие настройки и настройки календаря будут экспортированы. Этим экспортом можно делиться и импортировать в другие миры.",
 	"FSC.Configuration.ImportExport.ImportDescription": "Выберите экспортированный файл, содержащий параметры для импорта в мир.",
 	"FSC.Configuration.ImportExport.ImportDetailsText": "Эти параметры были найдены в выбранном файле. Выберите какие настройки и к какому календарю применить",
@@ -341,6 +343,8 @@
 	"FSC.Configuration.General.Display.DateFormat.TimeHelp": "Формат для отображения времени.",
 	"FSC.Configuration.General.Display.DateFormat.MonthYear": "Формат месяца/года",
 	"FSC.Configuration.General.Display.DateFormat.MonthYearHelp": "Формат для отображения месяца и года в заголовке календаря.",
+	"FSC.Configuration.General.Display.DateFormat.ChatTime": "Формат меток времени в чате",
+	"FSC.Configuration.General.Display.DateFormat.ChatTimeHelp": "Формат текста, используемый для формирования меток времени сообщений чата.",
 	"FSC.Configuration.Notes.Title": "Настройки заметки",
 	"FSC.Configuration.Notes.NoteCategories": "Категории заметок",
 	"FSC.Configuration.NoteCategories.Name": "Название категории заметок",
@@ -493,5 +497,7 @@
 	"FSC.Warn.Time.ActiveCombats": "Идет активный бой. Завершите его перед запуском часов в реальном времени.",
 	"FSC.Warn.Macros.GMUpdate": "Только GM может обновлять дату календаря!",
 	"FSC.Warn.Calendar.NotGM": "В игре отсутствует GM. Для изменения даты/времени заметок GM должен быть в игре.",
-	"FSC.Error.Calendar.GMCurrent": "Вы должны быть GM для сохранения текущей даты."
+	"FSC.Error.Calendar.GMCurrent": "Вы должны быть GM для сохранения текущей даты.",
+	"FSC.KeyBinding.Toggle.Title": "Отображение календаря",
+	"FSC.KeyBinding.Toggle.Hint": "При нажатии этой кнопки окно календаря открывается или закрывается."
 }
