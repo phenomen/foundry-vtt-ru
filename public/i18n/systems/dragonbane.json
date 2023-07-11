@@ -1,0 +1,471 @@
+{
+    "ACTOR": {
+        "TypeCharacter": "Персонаж игрока",
+        "TypeNpc": "Персонаж ведущего",
+        "TypeMonster": "Чудовище"
+    },
+    "ITEM": {
+        "TypeAbility": "Способность",
+        "TypeArmor": "Броня",
+        "TypeHelmet": "Шлем",
+        "TypeItem": "Предмет",
+        "TypeKin": "Народ",
+        "TypeProfession": "Профессия",
+        "TypeSkill": "Навык",
+        "TypeSpell": "Заклинание",
+        "TypeWeapon": "Оружие"
+    },
+    "TYPES": {
+        "Actor": {
+            "character": "Персонаж игрока",
+            "npc": "Персонаж ведущего",
+            "monster": "Чудовище"
+        },
+        "Item": {
+            "ability": "Способность",
+            "armor": "Броня",
+            "helmet": "Шлем",
+            "item": "Предмет",
+            "kin": "Народ",
+            "profession": "Профессия",
+            "skill": "Навык",
+            "spell": "Заклинание",
+            "weapon": "Оружие"                
+        }
+    },
+    "DoD": {
+        "ability": {
+            "requirement": "Требования",
+            "type": "Тип",
+            "wp": "Пункты силы воли",
+            "secondaryAttribute": "Бонус характеристики",
+            "useWithWP": "<b>{actor}</b> расходует <b>{wp}</b> ПСВ для @UUID[{uuid}].",
+            "useWithoutWP": "<b>{actor}</b> использует @UUID[{uuid}]. Расход ПСВ в описании способности."
+        },
+        "abilityTypes": {
+            "kin": "Народ",
+            "profession": "Профессия",
+            "heroic": "Героическая"
+        },
+        "ageTypes": {
+            "young": "Юность",
+            "adult": "Зрелость",
+            "old": "Старость"
+        },
+        "areaOfEffectTypes": {
+            "none": "-",
+            "cone": "Конус",
+            "sphere": "Сфера"
+        },
+        "armor": {
+            "banes": "Бедствия",
+            "rating": "Класс защиты",
+            "bonuses": "Модификатор защиты"
+
+        },
+        "attackTypes": {
+            "ranged": "Дистанционная атака",
+            "rangedTooltip": "Атаковать дистанционным оружием",
+            "parry": "Парирование",
+            "parryTooltip": "Парировать атаку в ближнем бою",
+            "normal": "Удар",
+            "normalTooltip": "Совершить обычную атаку",
+            "stab": "Укол",
+            "stabTooltip": "Атаковать с колющим уроном",
+            "slash": "Разрез",
+            "slashTooltip": "Атаковать с режущим уроном",
+            "weakpoint": "Поиск уязвимости",
+            "weakpointTooltip": "Нанести укол и попытаться найти брешь в доспехах противника. Эта атака добавляет одно бедствие к броску",
+            "disarm": "Разоружение",
+            "disarmTooltip": "Разоружить противника вместо нанесения урона",
+            "topple": "Сбивание с ног",
+            "toppleTooltip": "Сбить противника с ног вместо нанесения урона",
+            "throw": "Метание",
+            "throwTooltip": "Бросить метательное оружие"
+        },
+        "attributes": {
+            "str": "СИЛ",
+            "con": "ВЫН",
+            "agl": "ЛОВ",
+            "int": "ИНТ",
+            "wil": "ВОЛ",
+            "cha": "ХАР"
+        },
+        "castingTimeTypes": {
+            "action": "Действие",
+            "reaction": "Ответное",
+            "stretch": "Отрезок",
+            "shift": "Смена"
+        },
+        "conditions": {
+            "str": "Утомление",
+            "con": "Слабость",
+            "agl": "Ступор",
+            "int": "Ярость",
+            "wil": "Испуг",
+            "cha": "Уныние"
+        },
+        "currency": {
+            "gold": "Золото",
+            "silver": "Серебро",
+            "copper": "Медь"
+        },
+        "damageTypes": {
+            "none": "Урон",
+            "bludgeoning": "Дробящий урон",
+            "piercing": "Колющий урон",
+            "slashing": "Режущий урон"
+        },
+        "dice": {
+            "d": "D",
+            "d4": "D4",
+            "d6": "D6",
+            "d8": "D8",
+            "d10": "D10",
+            "d12": "D12",
+            "d20": "D20"
+        },
+        "gear": {
+            "weight": "Вес",
+            "quantity": "Количество",
+            "cost": "Цена",
+            "supply": "Запас",
+            "worn": "Надето",
+            "memento": "Реликвия",
+            "type": "Категория",
+            "effect": "Эффект"
+        },
+        "gearTypeName": {
+            "animal": "Зверь",
+            "armor": "Броня",
+            "clothes": "Одежда",
+            "container": "Контейнер",
+            "hunting": "Охотничьи снасти",
+            "instrument": "Музыкальный инструмент",
+            "knowledge": "Знание",
+            "light": "Освещение",
+            "medicine": "Лекарство",
+            "melee": "Оружие ближ. боя",
+            "ranged": "Оружие дист. боя",
+            "service": "Услуга",
+            "tool": "Инструмент",
+            "trade": "Товар",
+            "travel": "Транспорт"
+        },
+        "gripTypes": {
+            "none": "-",
+            "grip1h": "1 рука",
+            "grip2h": "2 руки"
+        },
+        "helmet": {
+            "rating": "Класс защиты"
+        },
+        "itemTypes": {
+            "item": "Предмет",
+            "backpack": "Рюкзак"
+        },
+        "journal": {
+            "tableResult": "Результат",
+            "monsterAttacks": "Атаки чудовища"
+        },
+        "magicCritChoices": {
+            "choiceLabel": "Критический эффект",
+            "doubleDamage": "Двойной урон<br>",
+            "doubleRange": "Двойная дистанция<br>",
+            "noCost": "Это заклинание не расходует ПСВ<br>",
+            "extraSpell": "Вы можете мгновенно сотворить другое заклинания, но с бедствием к броску<br>"
+        },
+        "critChoices": {
+            "choiceLabel": "Критический эффект",
+            "doubleWeaponDamage": "Двойной урон оружия<br>",
+            "extraAttack": "Свободная атака против другого противника<br>",
+            "ignoreArmor": "Броня не эффективна против этой атаки<br>"
+        },
+        "profession": {
+            "key-attribute": "Основная характеристика",
+            "skills": "Навыки"
+        },
+        "roll": {
+            "dragon": "успех с Драконом!",
+            "demon": "провал с Демоном!",
+            "success": "успешна.",
+            "failure": "провалена.",
+            "attributeRoll": "Проверка характеристики <b>{attribute}</b> <b>{result}</b>",
+            "skillRoll": "Проверка навыка <b>{skill}</b> <b>{result}</b>",
+            "spellRoll": "Проверка навыка для <b>{spell}</b> с <b>Мощностью {powerLevel}</b> <b>{result}</b>",
+            "weaponRoll": "<b>{action}</b> с <b>{skill}</b> <b>{result}</b>",
+            "weaponRollTarget": "<b>{action}</b> с <b>{skill}</b> на <b>{target}</b> <b>{result}</b>",
+            "damage": "<b>{actor}</b> наносит <b>{damage}</b> урона от <b>{damageType}</b>.",
+            "damageWeapon": "<b>{actor}</b> наносит <b>{damage}</b> урона от <b>{damageType}</b> с <b>{weapon}</b>.",
+            "damageIgnoreArmor": "<b>{actor}</b> наносит <b>{damage}</b> урона от <b>{damageType} минуя броню</b> с <b>{weapon}</b>.",
+            "damageTarget": "<b>{actor}</b> наносит <b>{damage}</b> урона от <b>{damageType}</b> по {target}.",
+            "damageWeaponTarget": "<b>{actor}</b> наносит <b>{damage}</b> урона от <b>{damageType}</b> по {target} с <b>{weapon}</b>.",
+            "damageIgnoreArmorTarget": "<b>{actor}</b> наносит <b>{damage}</b> урона от <b>{damageType} пр {target} минуя броню</b> с <b>{weapon}</b>.",
+            "pushButtonLabel": "Усилие",
+            "pushChoiceLabel": "Выбери состояние:",
+            "parryWeapon": "<p>Если парируемый урон превосходит прочность оружия (<b>{durability}</b>), то оружие повреждается. Колющий урон не может повредить оружие.</p>",
+            "parryShield": "<p>Если парируемый урон превосходит прочность щита (<b>{durability}</b>), то щит повреждается. Колющий урон не может повредить щит.</p>"
+
+        },
+        "secondaryAttributeTypes": {
+            "none": "-",
+            "hitPoints": "Пункты здоровья",
+            "willPoints": "Пункты силы воли",
+            "movement": "Передвижение"
+        },
+        "sizeTypes": {
+            "small": "Небольшой",
+            "normal": "Обычный",
+            "large": "Большой",
+            "huge": "Огромный",
+            "swarm": "Стая"
+        },
+        "skill": {
+            "advance": "Развитие",
+            "advanceTooltip": "Отметьте возможность проверки Развития",
+            "attribute": "Характеристика",
+            "attributeTooltip": "Характеристика навыка",
+            "hide": "Скрыть",
+            "hideTooltip": "Скрыть навык в списке натренированных навыков",
+            "type": "Тип",
+            "typeTooltip": "Тип навыка"
+        },
+        "skillTypes": {
+            "core": "Основной навык",
+            "weapon": "Оружейный навык",
+            "secondary": "Дополнительный навык",
+            "magic": "Школа магии"  
+        },
+        "spell": {
+            "areaOfEffect": "Область",
+            "castingTime": "Время сотворения",
+            "damage": "Урон",
+            "damagePerPowerlevel": "Урон за Мощность",
+            "duration": "Длительность",
+            "general": "Общее",
+            "memorized": "Подготовка",
+            "prerequisite": "Требование",
+            "range": "Дальность",
+            "rangeType": "Дистанция",
+            "rank": "Круг",
+            "requirement": "Требования",
+            "school": "Школа магии"
+        },
+        "spellDurationTypes": {
+            "instant": "Мгновенное",
+            "round": "Раунд",
+            "stretch": "Отрезок",
+            "shift": "Смена",
+            "concentration": "Концентрация",
+            "permanent": "Постоянное"
+        },
+        "spellRangeTypes": {
+            "personal": "На себя",
+            "touch": "Касание",
+            "range": "Дистанция",
+            "cone": "Конус",
+            "sphere": "Сфера"
+        },        
+        "supplyTypes": {
+            "common": "Обычный",
+            "uncommon": "Необычный",
+            "rare": "Редкий",
+            "unique": "Уникальный"
+        },
+        "tables": {
+            "mishapMagic": "Побочный эффект - Магический",
+            "mishapMelee": "Побочный эффект - Ближний",
+            "mishapRanged": "Побочный эффект - Дистанционный"
+        },
+        "weapon": {
+            "grip": "Хват",
+            "gripTooltip": "Сколько рук требуется для эффективного использования оружия.",
+            "str": "СИЛ",
+            "strTooltip": "Сколько СИЛ нужно для эффективного обращения с оружием.",
+            "range": "Дистанция",
+            "rangeShort": "Д",
+            "rangeTooltip": "Дистанция указывает максимальную дальность в метрах, на которой оружие можно эффективно использовать",
+            "damage": "Урон",
+            "damageShort": "Урон",
+            "damageTooltip": "Сколько урона наносит оружие при попадании.",
+            "durability": "Прочность",
+            "durabilityShort": "Прочн.",
+            "durabilityTooltip": "Прочность определяет урон, который можно парировать без повреждения оружия.",
+            "features": "Особенности",
+            "skill": "Навык",
+            "skillValue": "Навык",
+            "skillValueTooltip": "Навык, используемый оружием",
+            "brokenTooltip": "Оружие сломано",
+            "mainHandTooltip": "Хват оружия основной рукой",
+            "offHandTooltip": "Хват оружия неосновной рукой"
+        },
+        "unit": {
+            "meterPlural": "метров"
+        },
+        "weaponFeatureTypes": {
+            "bludgeoning": "Дробящее",
+            "long": "Длинное",
+            "mounted": "Верховое",
+            "noDamageBonus": "Без бонусного урона",
+            "noDamageBonusTooltip": "Отсутствует бонусный урон",
+            "noparry": "Без парирования",
+            "piercing": "Колющее",
+            "quiver": "Колчан",
+            "quiverTooltip": "Требует колчан для стрел",
+            "slashing": "Режущее",
+            "subtle": "Незаметное",
+            "thrown": "Метательное",
+            "toppling": "Сбивающее",
+            "shield": "Щит",
+            "bludgeoningTooltip": "Оружие наносит дробящий урон, что может повлиять на эффективность брони",
+            "longTooltip": "Атаки этим оружием могут достичь цель на дистанции до 4 метров (2 клеток)",
+            "mountedTooltip": "Требует дрессированного скакуна",
+            "noparryTooltip": "Не может парировать атаки",
+            "piercingTooltip": "Оружие наносит колющий урон, что может повлиять на эффективность брони",
+            "slashingTooltip": "Оружие наносит режущий урон. Если оружие и режущее и колющее, вы должны выбрать тип атаки перед броском",
+            "subtleTooltip": "Скрытые атаки этим оружием получают дар и увеличенный урон",
+            "thrownTooltip": "Можно метнуть на расстоянии",
+            "topplingTooltip": "Атаки этим оружием получают дар при попытке сбить с ног",
+            "shieldTooltip": "Можно использовать как щит"    
+        },    
+        "ui": {
+            "character-sheet": {
+                "abilities": "Способности",
+                "age": "Возраст",
+                "appearance": "Внешность",
+                "armor": "Броня",
+                "background": "Происхождение",
+                "banes": "Бедствие у",
+                "combat": "Бой",
+                "coreSkills": "Основные навыки",
+                "currency": "Монеты",
+                "damageBonusAGL": "Бонус урона от ЛОВ",
+                "damageBonusSTR": "Бонус урона от СИЛ",
+                "deathRolls": "Испытание против смерти",
+                "description": "Описание",
+                "encumbrance": "Нагрузка",
+                "equipped-armor": "Надетая броня",
+                "equipped-helmet": "Надетый шлем",
+                "equipped-weapon": "Надетое оружие",
+                "failures": "Провалы",
+                "ferocity": "Свирепость",
+                "gear": "Снаряжение",
+                "heroicAbilities": "Героические способности",
+                "hitPoints": "Пункты здоровья",
+                "hp": "ПЗ",
+                "inventory": "Инвентарь",
+                "kin": "Народ",
+                "kinAbilities": "Способности народа",
+                "main": "Основное",
+                "max-encumbrance": "Макс. нагрузка",
+                "memento": "Реликвия",
+                "memorized": "П",
+                "monsterAttackFlavor": "<b>{actor}</b> совершает атаку чудовища из <b>{table}</b>.",
+                "monsterAttackTooltip": "Атака чудовища",
+                "monsterDefendSkillFlavor": "Уклонение или парирование",
+                "monsterDefendTooltip": "Уклониться или парировать атаку",
+                "movement": "Передвижение",
+                "notes": "Заметки",
+                "profession": "Профессия",
+                "professionAbilities": "Профессиональный способности",
+                "restRound": "Раунд отдыха: <b>{actor}</b> отдыхает один раунд и восстанавливает <b>{wp}</b> ПСВ.",
+                "restRoundTooltip": "Раунд отдыха\rБыстрый отдых длительностью в один раунд позволяет восстановить D6 ПСВ.\rВы можете совершить только один раунд отдыха за смену.",
+                "restStretch": "Отрезок отдыха: <b>{actor}</b> отдыхает один отрезок и восстанавливает <b>{hp}</b> ПЗ, <b>{wp}</b> ПСВ и снимает одно <b>состояние на выбор</b>.<br>Можно использовать реликвию, чтобы снять дополнительное состояние.",
+                "restStretchTooltip": "Отрезок отдыха\rОтдых длительностью в один отрезок позволяет восстановить D6 ПЗ, D6 ПСВ и снять одно состояние на выбор.\rМожно использовать реликвию, чтобы снять дополнительное состояние.\rВы можете совершить только один отрезок отдыха за смену.",
+                "restShift": "Смена отдыха: <b>{actor}</b> отдыхает одну смену и восстанавливает <b>{hp}</b> ПЗ, <b>{wp}</b> ПСВ и снимает все состояния.",
+                "restShiftTooltip": "Смена отдыха\rОтдых длительностью в одну смену восстанавливает все ПЗ, ПСВ и снимает все состояния.",
+                "school": "Школа магии",
+                "secondarySkills": "Дополнительные навыки",
+                "size": "Размер",
+                "skills": "Навыки",
+                "skillValue": "",
+                "spell": "Заклинание",
+                "spells": "Заклинания",
+                "successes": "Успехи",
+                "tiny-items": "Мелочи",
+                "traits": "Свойства",
+                "trained-skills": "Изученные навыки",
+                "weakness": "Уязвимость",
+                "weapons": "Оружие",
+                "weaponSkills": "Оружейные навыки",
+                "willPoints": "Пункты силы воли",
+                "wp": "ПСВ"
+            },
+            "chat":{
+                "damageApplied": "<b>{damage} урона</b> нанесено <b>{actor}</b>.",
+                "damageAppliedDetails": "{damage} урона против {armor} класса защиты.",
+                "damageAppliedMultiplier": "x{multiplier} множитель.",
+                "rollDamage": "Бросок урона",
+                "dealDamage": "Нанести урон",
+                "dealHalfDamage": "Нанести половину урона",
+                "dealDoubleDamage": "Нанести двойной урон",
+                "dealDamageIgnoreArmor": "Нанести урон без брони",
+                "dealSelectedDamage": "Нанести урон (выбранный)",
+                "dealSelectedHalfDamage": "Нанести половину урона (выбранный)",
+                "dealSelectedDoubleDamage": "Нанести двойной урон (выбранный)",
+                "dealSelectedDamageIgnoreArmor": "Нанести урон без брони (выбранный)",
+                "choose": "Выбери",
+                "takeCondition": "{actor} получает {condition}.",
+                "treasureCard": "1 карта сокровищ",
+                "treasureCards": "{count} карты сокровищ",
+                "failedDeathRoll": "{actor} проваливает испытание против смерти из-за получения урона при 0 ПЗ.",
+                "characterDied": "{actor} погибает.",
+                "characterProne": "{actor} имеет 0 ПЗ и падает с ног."
+            },
+            "dialog": {
+                "banes": "Бедствия",
+                "boons": "Дары",
+                "brokenWeaponTitle": "Сломанное оружие",
+                "brokenWeaponContent": "Это оружие сломано. Вы уверены, что хотите использовать его?",
+                "performAction": "Выполнить действие",
+                "cancelAction": "Отменить действие",
+                "enchantedWeapon": "Зачарованное оружие",
+                "extra": "Дополнительно",
+                "extraDamage": "Дополнительный урон",
+                "skillRollTitle": "Проверка навыка",
+                "skillRollLabel": "Бросок",
+                "attributeRollTitle": "Проверка характеристики",
+                "attributeRollLabel": "Бросок",
+                "powerLevel": "Мощность",
+                "labelCancel": "Отмена",
+                "labelOk": "Ок",
+                "chooseAction": "Выбери действие",
+                "useAbility": "Использовать способность",
+                "useAbilityWithWP": "Израсходовать <b>{wp}</b> ПСВ для <b>{ability}</b>?",
+                "useAbilityWithoutWP": "Использовать <b>{ability}</b>?",
+                "weaponFeatures": "Особенности оружия"
+            }
+
+        },
+        "INFO": {
+            "professionSkillAdded": "Добавляет профессиональный навык: {skill}"
+        },
+        "SETTINGS": {
+            "keepOwnershipOnImport": "Сохранять права владения при импорте приключения",
+            "keepOwnershipOnImportHint": "Не переназначать права владения при импорте содержимого, которое уже существует в мире."
+        },
+        "WARNING": {
+            "kinAbility": "Не удалось найти способность народа: {ability}",
+            "kin": "Не удалось найти народ: {kin}",
+            "profession": "Не удалось найти профессию: {profession}",
+            "professionAbility": "Не удалось найти профессиональную способность: {ability}",
+            "professionSkill": "Не удалось найти профессиональный навык: {skill}",
+            "notEnoughWPForSpell": "Не достаточно пунктов силы воли для сотворения заклинания",
+            "notEnoughWPForAbility": "Не достаточно пунктов силы воли для использование способности",
+            "actorNotFound": "Не удалось найти актёра с id: {id}",
+            "tableNotFound": "Не удалось найти таблицу: {id}",
+            "conditionAlreadyTaken": "Состояние уже существует",
+            "noPermissionToModifyActor": "У вас нет прав для изменения этого актёра",
+            "cannotEvaluateFormula": "Формула не может быть рассчитана",
+            "missingMonsterAttackTable": "Отсутствует таблица атак чудовища. Перетащите таблицу на бланк чудовища.",
+            "attributeOutOfRange": "Характеристика не может быть выше 18 или ниже 1.",
+            "macroNoActor": "Отсутствует актёр для макроса.",
+            "macroNoItem": "Отсутствует предмет для макроса. Название: {item}. Тип: {type}.",
+            "macroMultipleItems": "Найдено несколько ({type}) с названием ({item}). Будет использован первый результат из списка.",
+            "noTreasureTable": "Отсутствует таблица сокровищ.",
+            "noMeleeMishapTable": "Отсутствует таблица побочных эффектов для оружия ближнего боя.",
+            "noRangedMishapTable": "Отсутствует таблица побочных эффектов для дистанционного оружия.",
+            "noMagicMishapTable": "Отсутствует таблица побочных эффектов для магии."
+      }
+    }
+}
