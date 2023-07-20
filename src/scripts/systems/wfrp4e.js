@@ -185,7 +185,7 @@ export function init() {
 						if (translatedTrait) {
 							originalTrait.name = translatedTrait.name + parsedTrait.special;
 							originalTrait.system.description.value = translatedTrait.description;
-							originalTrait.system.tests = translatedTrait.tests;
+							originalTrait.system.tests.value = translatedTrait.tests;
 						}
 					} else if (originalTrait.type === 'career') {
 						let translatedTrait = fullCareers.find((career) => career === originalTrait.name);
@@ -272,7 +272,7 @@ export function init() {
 
 			// Process specific Tentacles case
 			if (traitName.includes('Tentacles')) {
-				let res = /(?<tentacles>\d+)x Tentacles/i.exec(traitName);
+				let res = /(?<tentacles>\d+)x? Tentacles/i.exec(traitName);
 				parsedTrait.baseName = '# Tentacles';
 				parsedTrait.tentacles = res.groups.tentacles;
 			}
