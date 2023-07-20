@@ -627,7 +627,14 @@ export function init() {
 Hooks.on('setup', () => {
 	/* RNHD */
 	if (game.modules.get('wfrp4e-rnhd')?.active) {
-		game.wfrp4e.config.species['gnome'] = 'Карлик';
+		game.wfrp4e.config.species = {
+			human: 'Человек',
+			dwarf: 'Гном',
+			halfling: 'Полурослик',
+			helf: 'Высший эльф',
+			welf: 'Лесной эльф',
+			gnome: 'Карлик'
+		};
 
 		game.wfrp4e.config.speciesSkills['gnome'] = [
 			'Артистизм (любой)',
