@@ -733,7 +733,7 @@ Hooks.on('setup', () => {
 	if (game.modules.get('wfrp4e-up-in-arms')?.active) {
 		game.wfrp4e.config.hitLocationTables['quadruped'] = 'Четвероногие';
 
-		game.wfrp4e.config.groupAdvantageActions = game.wfrp4e.config.groupAdvantageActions.concat([
+		game.wfrp4e.config.groupAdvantageActions = [
 			{
 				cost: 1,
 				name: 'Таран',
@@ -780,7 +780,7 @@ Hooks.on('setup', () => {
 				effect:
 					'<strong>Свободное действие</strong>: Вы можете совершить дополнительное Действие. Это действие никогда не дает Преимуществ при его совершении. В ход можно совершить до одного Дополнительного действия путем траты Преимуществ.'
 			}
-		]);
+		];
 
 		game.wfrp4e.config.subspecies.human['tilean'] = {
 			name: 'Тилиец',
