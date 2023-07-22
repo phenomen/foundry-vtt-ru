@@ -169,12 +169,14 @@ export function init() {
 						}
 					} else if (originalTrait.type === 'prayer') {
 						let translatedTrait = fullPrayers.find((prayer) => prayer === parsedTrait.baseName);
+
 						if (translatedTrait) {
 							originalTrait.name = translatedTrait.name + parsedTrait.special;
 							originalTrait.system.description.value = translatedTrait.description;
 						}
 					} else if (originalTrait.type === 'spell') {
 						let translatedTrait = fullSpells.find((spell) => spell === parsedTrait.baseName);
+
 						if (translatedTrait) {
 							originalTrait.name = translatedTrait.name + parsedTrait.special;
 							originalTrait.system.description.value = translatedTrait.description;
@@ -189,6 +191,7 @@ export function init() {
 						}
 					} else if (originalTrait.type === 'career') {
 						let translatedTrait = fullCareers.find((career) => career === originalTrait.name);
+
 						if (translatedTrait) {
 							originalTrait.name = translatedTrait.name;
 						}
@@ -202,6 +205,7 @@ export function init() {
 						let translatedTrapping = fullTrappings.find(
 							(trapping) => trapping === originalTrait.name
 						);
+
 						if (!translatedTrapping) {
 							continue;
 						}
