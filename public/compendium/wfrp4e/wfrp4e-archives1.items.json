@@ -1,5 +1,17 @@
 {
 	"label": "Объекты (Архивы Том I)",
+	"mapping": {
+		"careerGroup": "system.careergroup.value",
+		"skills": {
+		  "path": "system.skills",
+		  "converter": "skills"
+		},
+		"talents": {
+		  "path": "system.talents",
+		  "converter": "talents"
+		},
+		"trappings": "system.trappings"
+	  },
 	"entries": {
 		"Badger Botherer": {
 			"name": "Барсучий надоеда",
