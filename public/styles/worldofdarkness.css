@@ -1,0 +1,57 @@
+/* Imported Fonts */
+@font-face {
+	font-family: 'default';
+	src: url('../fonts/Beaufort/Beaufort-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'mortal';
+	src: url('../fonts/Montserrat/Montserrat-.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'changeling';
+	src: url('../fonts/Imprint.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'vampire';
+	src: url('../fonts/Beaufort/Beaufort-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'mage';
+	src: url('../fonts/Manuskript.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'werewolf';
+	src: url('../fonts/Old-Fenris.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'hunter';
+	src: url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'demon';
+	src: url('../fonts/Exocet.ttf') format('truetype');
+}
+
+:root {
+	--main-font: var(--font-fancy);
+	--main-large-headline: var(--font-fancy);
+}
+
+.chat-message .message-content {
+	padding: 3px;
+}
+
+#pause {
+	font-family: 'demon';
+}
+
+#chat-log {
+	font-family: var(--font-serif);
+}
