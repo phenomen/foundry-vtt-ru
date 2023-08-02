@@ -47,14 +47,38 @@
 	--font-x-large: 22px;
 }
 
+
+.wod-sheet .sheet-headline {
+    font-size: 24px !important;
+}
+
 .chat-message .message-content {
 	padding: 2px;
+}
+
+#chat-log .tray-roll-area {
+    font-weight: bold;
+}
+
+#chat-log .tray-info-area {
+    margin: 4px;
+    padding: 2px;
+	font-family: var(--font-sans-condensed);
+}
+
+#chat-log .tray-title-area {
+    font-size: 20px;
+	font-weight: bold;
+}
+
+#chat-log .tray-roll-area span.danger {
+	color: var(--chat-header-background);
 }
 
 #pause {
 	font-family: 'mage';
 }
 
-.wod-sheet .sheet-headline {
-    font-size: 24px !important;
-}
+#chat-log img {
+    border: 0px;  
+} 
