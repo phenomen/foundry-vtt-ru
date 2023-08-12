@@ -2,25 +2,36 @@
   "id": "ru-ru",
   "name": "ru-ru",
   "title": "❄️ Russian Translation | Русский перевод",
-  "description": "<p>Модуль перевода добавляет русский язык в Foundry VTT, системы Dungeons & Dragons 5, Call of Cthulhu (Зов Ктулху), Dungeon Crawl Classics, 13th Age, AoS: Soulbound, Alien (Чужой), AGE, Blades in the Dark (Клинки во тьме), City of Mist (Город Тумана), Coriolis (Кориолис), Cyberpunk RED, Cypher, Death in Space, Delta Green, Dungeon World, Forbidden Lands (Запретные земли), Vampire V5 (Вампиры: Маскарад), Genesys / Star Wars FFG, GUMSHOE, Mutants Year Zero (Мутанты. Точка Отсчёта), Old-School Essentials, Pathfinder 1e, Savage Worlds (Дневник Авантюриста), Shadow of the Demon Lord, Star Trek Adventures (Звёздный Путь), Starfinder, Tales from the Loop (Тайны Эхосферы), The One Ring 2e, Traveler / Cepheus Engine, Warhammer Fantasy Roleplay 4, The Witcher (Ведьмак) и множество модулей.</p><p><strong>ВНИМАНИЕ:</strong> Ознакомьтесь с инструкцией по корректной установке и настройке на <a href=\"https://github.com/Phenomen/foundry-vtt-ru\">https://github.com/Phenomen/foundry-vtt-ru</a></p>",
+  "description": "<p>Модуль перевода добавляет русский язык в Foundry VTT, системы Dungeons & Dragons 5, Call of Cthulhu (Зов Ктулху), Dungeon Crawl Classics, 13th Age, AoS: Soulbound, Alien (Чужой), AGE, Blades in the Dark (Клинки во тьме), City of Mist (Город Тумана), Coriolis (Кориолис), Cyberpunk RED, Cypher, Death in Space, Delta Green, Dungeon World, Forbidden Lands (Запретные земли), Vampire V5 (Вампиры: Маскарад), Genesys / Star Wars FFG, GUMSHOE, Mutants Year Zero (Мутанты. Точка Отсчёта), Old-School Essentials, Pathfinder 1e, Savage Worlds (Дневник Авантюриста), Shadow of the Demon Lord, Star Trek Adventures (Звёздный Путь), Starfinder, Tales from the Loop (Тайны Эхосферы), The One Ring 2e, Traveler / Cepheus Engine, Warhammer Fantasy Roleplay 4, The Witcher (Ведьмак) и множество модулей.</p><p><strong>ВНИМАНИЕ:</strong> Ознакомьтесь с инструкцией по корректной установке и настройке на <a href=\"https://github.com/phenomen/foundry-vtt-ru\">https://github.com/phenomen/foundry-vtt-ru</a></p>",
   "authors": [
     {
       "name": "Phenomen",
       "discord": "phenomen#1337",
+      "email": "alex@ruleplaying.com",
       "url": "https://discord.gg/Z2CXFy35WF"
     }
   ],
-  "version": "11.292.2",
-  "minimumCoreVersion": "10",
-  "compatibleCoreVersion": "11",
+  "version": "11.301.5",
   "compatibility": {
     "minimum": "10",
-    "verified": "10",
+    "verified": "11",
     "maximum": "11"
   },
-  "coreTranslation": true,
-  "esmodules": ["scripts/init.js"],
+  "esmodules": ["ru-ru.js"],
   "styles": ["styles/_main.css"],
+  "coreTranslation": true,
+  "relationships": {
+    "recommends": [
+      {
+        "id": "babele",
+        "type": "module"
+      },
+      {
+        "id": "lib-wrapper",
+        "type": "module"
+      }
+    ]
+  },
   "languages": [
     {
       "lang": "ru",
@@ -29,7 +40,15 @@
     },
     {
       "lang": "ru",
-      "path": "i18n/core/types.json"
+      "path": "i18n/core/extras.json"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/core/adjectives_m.json"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/core/adjectives_f.json"
     },
     {
       "lang": "ru",
@@ -111,7 +130,11 @@
       "path": "i18n/systems/foundry-ironsworn.json",
       "system": "foundry-ironsworn"
     },
-
+    {
+      "lang": "ru",
+      "path": "i18n/systems/mouseguard.json",
+      "system": "mouseguard"
+    },
     {
       "lang": "ru",
       "path": "i18n/systems/mutant-year-zero.json",
@@ -264,6 +287,11 @@
     },
     {
       "lang": "ru",
+      "path": "i18n/modules/card-hands-list.json",
+      "module": "card-hands-list"
+    },
+    {
+      "lang": "ru",
       "path": "i18n/modules/chat-portrait.json",
       "module": "chat-portrait"
     },
@@ -284,9 +312,15 @@
     },
     {
       "lang": "ru",
+      "path": "i18n/modules/combat-tracker-dock.json",
+      "module": "combat-tracker-dock"
+    },
+    {
+      "lang": "ru",
       "path": "i18n/modules/combat-utility-belt.json",
       "module": "combat-utility-belt"
     },
+
     {
       "lang": "ru",
       "path": "i18n/modules/compendium-browser.json",
@@ -364,8 +398,8 @@
     },
     {
       "lang": "ru",
-      "path": "i18n/modules/ernies-modern-layout.json",
-      "module": "ernies-modern-layout"
+      "path": "i18n/modules/farchievements.json",
+      "module": "farchievements"
     },
     {
       "lang": "ru",
@@ -386,11 +420,6 @@
       "lang": "ru",
       "path": "i18n/modules/forien-scene-navigator.json",
       "module": "forien-scene-navigator"
-    },
-    {
-      "lang": "ru",
-      "path": "i18n/modules/furnace.json",
-      "module": "furnace"
     },
     {
       "lang": "ru",
@@ -416,6 +445,11 @@
       "lang": "ru",
       "path": "i18n/modules/health-monitor.json",
       "module": "health-monitor"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/hot-pan.json",
+      "module": "hot-pan"
     },
     {
       "lang": "ru",
@@ -529,7 +563,7 @@
     },
     {
       "lang": "ru",
-      "path": "i18n/modules/party-resources.json",
+      "path": "i18n/modules/fvtt-party-resources.json",
       "module": "fvtt-party-resources"
     },
     {
@@ -624,8 +658,13 @@
     },
     {
       "lang": "ru",
-      "path": "i18n/modules/token-action-hud.json",
-      "module": "token-action-hud"
+      "path": "i18n/modules/token-action-hud-core.json",
+      "module": "token-action-hud-core"
+    },
+    {
+      "lang": "ru",
+      "path": "i18n/modules/token-action-hud-dnd5e.json",
+      "module": "token-action-hud-dnd5e"
     },
     {
       "lang": "ru",
@@ -701,25 +740,17 @@
       "lang": "ru",
       "path": "i18n/modules/yze-combat.json",
       "module": "yze-combat"
-    },
+    }
+  ],
+  "media": [
     {
-      "lang": "ru",
-      "path": "i18n/tours/welcome.json"
-    },
-    {
-      "lang": "ru",
-      "path": "i18n/tours/installing-a-system.json"
-    },
-    {
-      "lang": "ru",
-      "path": "i18n/tours/creating-a-world.json"
-    },
-    {
-      "lang": "ru",
-      "path": "i18n/tours/ui-overview.json"
+      "type": "cover",
+      "url": "https://github.com/phenomen/foundry-vtt-ru/raw/main/public/images/module/cover.webp",
+      "loop": false,
+      "flags": {}
     }
   ],
   "url": "https://github.com/phenomen/foundry-vtt-ru",
-  "manifest": "https://raw.githubusercontent.com/phenomen/foundry-vtt-ru/main/module.json",
-  "download": "https://github.com/phenomen/foundry-vtt-ru/archive/refs/heads/main.zip"
+  "manifest": "https://raw.githubusercontent.com/phenomen/foundry-vtt-ru/main/public/module.json",
+  "download": "https://github.com/phenomen/foundry-vtt-ru/releases/download/latest/ru-ru.zip"
 }

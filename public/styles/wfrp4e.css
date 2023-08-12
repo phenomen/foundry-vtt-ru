@@ -1,0 +1,154 @@
+/* Caslon Antique*/
+
+@font-face {
+	font-family: 'CaslonAntique';
+	src: url('../fonts/Beaufort/Beaufort-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CaslonAntique';
+	src: url('../fonts/Beaufort/Beaufort-Italic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'CaslonAntique';
+	src: url('../fonts/Beaufort/Beaufort-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CaslonAntique';
+	src: url('../fonts/Beaufort/Beaufort-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'CaslonAntique';
+	src: url('../fonts/Beaufort/Beaufort-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CaslonAntique';
+	src: url('../fonts/Beaufort/Beaufort-BoldItalic.ttf') format('truetype');
+	font-weight: 700;
+	font-style: italic;
+}
+
+/* Caslon Pro */
+
+@font-face {
+	font-family: 'CaslonPro';
+	src: url('../fonts/Beaufort/Beaufort-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CaslonPro';
+	src: url('../fonts/Beaufort/Beaufort-Italic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'CaslonPro';
+	src: url('../fonts/Beaufort/Beaufort-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CaslonPro';
+	src: url('../fonts/Beaufort/Beaufort-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'CaslonPro';
+	src: url('../fonts/Beaufort/Beaufort-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CaslonPro';
+	src: url('../fonts/Beaufort/Beaufort-BoldItalic.ttf') format('truetype');
+	font-weight: 700;
+	font-style: italic;
+}
+
+:root {
+	--window-header-title-font-size: var(--text-base);
+	--major-button-font-size: var(--text-sm);
+	--tab-header-font-size: var(--text-xs);
+	--actor-input-font-size: var(--text-xs);
+	--actor-label-font-size: var(--text-xs);
+}
+
+.wfrp4e.actor .randomize-buttons .randomize-label {
+	font-size: 0.7rem;
+}
+
+.wfrp4e.actor .randomize-buttons .randomize {
+	height: auto;
+	padding: 0px;
+}
+
+.app.window-app.sheet.wfrp4e.actor .system-effects label {
+	flex: 0 0 120px;
+}
+
+span.item-carries {
+	font-size: 0.6rem;
+}
+
+.app.window-app.sheet.wfrp4e.actor
+	.tab.inventory.active
+	.inventory-header.inventory-container
+	.column-section {
+	min-width: 100px;
+	max-width: 100px;
+}
+
+.app.window-app.sheet.wfrp4e.actor
+	.tab.skills.active
+	.skill-section
+	.inventory-list
+	.item
+	.skill-total {
+	height: 19px;
+}
+
+.label-text,
+.app.window-app.sheet.item-sheet .item-details .label-text,
+.app.window-app.sheet.item-sheet .tab .label-text,
+.app.window-app.sheet.item-sheet.prayer-sheet .label-text,
+.app.window-app.sheet.item-sheet.spell-sheet .label-text,
+.app.window-app.sheet.item-sheet .tab .label-text {
+	font-size: var(--text-xs);
+}
+
+.sidebar-popout button,
+.sidebar-tab .directory-footer button,
+#macros .directory-footer button,
+#macros .directory-footer button,
+#sidebar button,
+#sidebar .header-actions button,
+.action-buttons button {
+	font-size: var(--text-base);
+}
+
+.app.window-app.sheet.item-sheet .sheet-tabs.tabs > a {
+	font-family: var(--font-fancy);
+	font-size: var(--text-base);
+	font-weight: 700;
+}

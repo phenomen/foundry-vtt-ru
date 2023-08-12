@@ -1,0 +1,297 @@
+{
+  "label": "Буклеты Unbound",
+  "mapping": {
+    "description": "system.description",
+    "choices": "system.choices",
+    "success": "system.moveResults.success.value",
+    "partial": "system.moveResults.partial.value",
+    "failure": "system.moveResults.failure.value"
+  },
+  "entries": [
+    {
+      "id": "#[CF_tempEntity]",
+      "name": "#[CF_tempEntity]",
+      "description": "",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "#[CF_tempEntity]",
+      "name": "#[CF_tempEntity]",
+      "description": "",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "#[CF_tempEntity]",
+      "name": "#[CF_tempEntity]",
+      "description": "",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "21st Century Studies",
+      "name": "Наука 21 века",
+      "description": "<p><span id=\"docs-internal-guid-fbc0f2bb-7fff-eb8c-e9b5-b07805ecca53\"></span></p>\n<p dir=\"ltr\" style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\"><span style=\"font-family: Arial;\"><span style=\"font-size: 14.6667px; white-space: pre-wrap;\">Когда ты <span style=\"text-decoration: underline;\">оцениваешь ситуацию</span>, ты можешь спросить &ldquo;что в будущем известно об этом моменте?&rdquo; даже при провале. Ты получаешь +1 к броскам, если действуешь согласно ответу.</span></span>&nbsp;</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "All the Best Stuff",
+      "name": "Всё самое лучшее",
+      "description": "<p>У тебя есть доступ к хранилищам обмундирования и вооружения других суперов, спрятанным по городу. Когда ты <span style=\"text-decoration: underline;\">открываешь хранилище</span><span style=\"font-family: var(--font-primary); font-size: var(--font-size-14);\">, </span>скажи, чье оно. Если это герой, брось <strong style=\"font-family: var(--font-primary); font-size: var(--font-size-14);\">+ Savior</strong><span style=\"font-family: var(--font-primary); font-size: var(--font-size-14);\">. </span>Если это злодей, брось<span style=\"font-family: var(--font-primary); font-size: var(--font-size-14);\"> </span><strong style=\"font-family: var(--font-primary); font-size: var(--font-size-14);\">+ Danger</strong><span style=\"font-family: var(--font-primary); font-size: var(--font-size-14);\">.</span></p>\n<p>При <strong>успехе</strong>, ты находишь инструмент или данные, полезные для ситуации, ведущий расскажет детали.</p>\n<p>При <strong>7-9</strong>, ты оставляешь улики о своем присутствии.</p>\n<p>При <strong>провале</strong>, ты поднимаешь тревогу и за тобой идут, приготовься объясняться.&nbsp;</p>",
+      "choices": "",
+      "success": "<p>Ты находишь инструмент или данные, полезные для ситуации, ведущий расскажет детали.</p>",
+      "partial": "<p>Ты находишь инструмент или данные, полезные для ситуации, ведущий расскажет детали, но ты оставляешь улики о своем присутствии.</p>",
+      "failure": "<p>Ты поднимаешь тревогу и за тобой идут, приготовься объясняться.&nbsp;</p>"
+    },
+    {
+      "id": "Applied History",
+      "name": "Прикладная история",
+      "description": "<p>Когда ты <span style=\"text-decoration: underline;\">заглядываешь под маску</span> кого-то, кто, по-твоему мнению, определит будущее, ты можешь бросить<strong> + Savior</strong> вместо <strong>Mundane</strong>.&nbsp;</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "Changed Sides",
+      "name": "Смена сторон",
+      "description": "<p>Когда ты <span style=\"text-decoration: underline;\">обманываешь или вводишь в заблуждение</span> врага, показывая, что ты на его стороне, брось<strong> + Danger</strong>.</p>\n<p>При<strong> успехе</strong>, цель купилась, по крайней мере сейчас.</p>\n<p>При <strong>7-9</strong> выбери 1.</p>\n<p>При <strong>10+</strong> выбери 2.</p>\n<p>При <strong>провале</strong>, кто-то из наблюдателей приходит к наихудшему из возможных заключений и действует соответствующе.</p>",
+      "choices": "<ul>\n<li>Ты избегаешь необходимости предоставить веские доказательства</li>\n<li>Ты создаешь возможность</li>\n<li>Ты раскрываешь слабость или изъян&nbsp;</li>\n</ul>",
+      "success": "<p>Цель купилась, по крайней мере сейчас. Выбери 2.</p>",
+      "partial": "<p>Цель купилась, по крайней мере сейчас. Выбери 1.</p>",
+      "failure": "<p>Кто-то из наблюдателей приходит к наихудшему из возможных заключений и действует соответствующе.</p>"
+    },
+    {
+      "id": "Connecting the Dots",
+      "name": "Соединяя точки",
+      "description": "<p>Ты из будущего, но твои знания о нём нечеткие, размытые, спутанные.</p>\n<p>Тем не менее, ты делаешь всё возможное чтобы собрать воспоминания воедино и провести через них четкую линию, чтобы разобраться как нынешний мир и люди станут теми, кого ты знаешь.</p>\n<p><span style=\"text-decoration: underline;\">Когда ты заставляешь себя вспомнить кем в будущем является тот или иной человек</span>, отметь Состояние и брось <strong>+ Воспоминания</strong>. При <strong>успехе</strong> ты находишь связь его настоящего и будущего, выбери роль для него, ведущий расскажет подробнее о его будущем. На <strong>10+ </strong>задай дополнительный вопрос. При <strong>провале</strong> он не тот, за кого ты его принял, ведущий сам выберет ему роль или скажет, что его не существует в известном тебе будущем.</p>\n<hr />\n<p>Чудовище:</p>\n<p>Предатель:</p>\n<p>Осквернитель:</p>\n<p>Мученик:</p>\n<p>Создатель:</p>\n<p>Лидер:</p>\n<hr />\n<p>Твои Воспоминания равняются -1 в начале и поднимаются за каждое заполненное имя на 1 (до максимума +3).</p>\n<p><strong>Когда ты записываешь чье-то имя</strong>, он получают влияние на тебя, если еще не влиял</p>\n<p><strong>В начале каждой встречи</strong> брось <strong>+ Savior</strong>, чтобы узнать, как продвигаются твоё исследование временной линии. На <strong>10+</strong> ты нашел серьезную зацепку, выберите роль или деталь будущего, которую можешь вспомнить, ведущий расскажет о событиях, что произойдут, приведших к их будущему состоянию. На <strong>7-9</strong>, ты нашел зацепку, выбери фигуру или аспект будущего и ведущий расскажет, что побуждает тебя получше разузнать о них. При <strong>провале</strong>, ты потерялся в &ldquo;настоящем&rdquo;, ведущий расскажет, что здесь воспринимается для тебя совсем по-другому и передвинет твои ярлыки в зависимости от того как ты себя чувствуешь.</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "I Hate Calling the Cavalry",
+      "name": "Ненавижу звать на помощь",
+      "description": "<p>Когда ты <span style=\"text-decoration: underline;\">призываешь на помощь своих союзников не из этого мира</span>, отметь состояние и брось <strong>+ Superior</strong>.</p>\n<p>При <strong>успехе</strong>, кто-то появляется, чтобы протянуть руку помощи.</p>\n<p>При<strong> 7-9</strong>, вслед за союзником приходят и его проблемы.</p>\n<p>При <strong>провале</strong>, твой зов достигает того, кого ты не хотел бы видеть.&nbsp;</p>",
+      "choices": "",
+      "success": "<p>Кто-то появляется, чтобы протянуть руку помощи.</p>",
+      "partial": "<p>Кто-то появляется, чтобы протянуть руку помощи, но вслед за союзником приходят и его проблемы.</p>",
+      "failure": "<p>Твой зов достигает того, кого ты не хотел бы видеть.&nbsp;</p>"
+    },
+    {
+      "id": "I Learned the Solution in Grade School",
+      "name": "Выучил в начальной школе",
+      "description": "<p>Когда ты <span style=\"text-decoration: underline;\">даешь волю своим силам</span>, чтобы улучшить свои чувства или преодолеть интеллектуальное препятствие, ты можешь бросить <strong>+ Superior</strong> вместо <strong>+ Freak</strong>.&nbsp;</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "I’ll Show Them",
+      "name": "Я им покажу",
+      "description": "<p>Когда ты <span style=\"text-decoration: underline;\">защищаешь кого-нибудь</span>, кто не верит в тебя, ты всегда можешь получить влияние на него, даже при провале.&nbsp;</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "Moldable",
+      "name": "Пластичность",
+      "description": "<p>Когда ты <span style=\"text-decoration: underline;\">заглядываешь под маску кого-то</span>, чьего уважения ты добиваешься, ты всегда можешь спросить &ldquo;Как я могу получить влияние над тобой?&rdquo;, даже при провале.</p>\n<p>Получи +1 к броскам, действуя согласно ответу.&nbsp;</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "No Good At Being A Kid",
+      "name": "Ненавижу быть ребенком",
+      "description": "<p>Когда ты <span style=\"text-decoration: underline;\">снимаешь состояние</span>, ты можешь сдвинуть ярлыки по своему выбору.&nbsp;</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "Out Of This World",
+      "name": "Не из этого мира",
+      "description": "<p>Когда ты <span style=\"text-decoration: underline;\">подключаешься к космическому эфиру и направляешь свой взор прочь от этого мира</span>, брось <strong>+ Freak</strong>.</p>\n<p>При <strong>успехе</strong>, тебя посещает новая, интересная идея о твоих текущих проблемах и положении; ведущий расскажет, что именно.</p>\n<p>При <strong>10+</strong> ты также смещаешь ярлыки, чтобы соответствовать новому пониманию.</p>\n<p>При <strong>провале</strong>, ты узнаешь что-то опасное или ужасное; ведущий скажет, что именно и сдвинет ярлыки соответственно.&nbsp;</p>",
+      "choices": "",
+      "success": "<p>тебя посещает новая, интересная идея о твоих текущих проблемах и положении; ведущий расскажет, что именно.&nbsp;&nbsp;Ты также смещаешь ярлыки, чтобы соответствовать новому пониманию.</p>",
+      "partial": "<p>Тебя посещает новая, интересная идея о твоих текущих проблемах и положении; ведущий расскажет, что именно.</p>",
+      "failure": "<p>Ты узнаешь что-то опасное или ужасное; ведущий скажет, что именно и сдвинет ярылыки соответственно.&nbsp;</p>"
+    },
+    {
+      "id": "Putting Down Roots",
+      "name": "Пустить корни",
+      "description": "<p><span class=\"fontstyle0\">Сегодня здесь, завтра там... Хотя со временем ты могла бы привыкнуть к этому месту.</span></p>\n<ul>\n<li><span class=\"fontstyle0\"><strong>Взрослые не имеют на тебя влияния по умолчанию</strong>. Никто из них. </span></li>\n<li><span class=\"fontstyle0\">Ты можешь дать на себя влияние только <strong>6 раз</strong>. </span></li>\n<li><span class=\"fontstyle0\">Во время игры ты можешь давать влияние на себя только когда <strong>разделяешь с кем-то уязвимость или слабость</strong>. Ты всё ещё можешь давать влияние как опцию хода конец сессии. Ты не можешь давать влияние на себя кому-то у кого оно уже есть. </span></li>\n<li><span class=\"fontstyle0\"><strong>Другие не могут получить влияние на тебя</strong>, вместо этого они выбирают: отметить себе потенциал или отметить тебе состояние. </span></li>\n<li><span class=\"fontstyle0\"><strong>Когда ты отвергаешь чье-то влияние бросай с -2, вместо +0</strong>. </span></li>\n<li><span class=\"fontstyle0\">Когда кто-то <strong>пользуется влиянием на тебя для получения преимущества</strong>, он выбирает два варианта. </span></li>\n<li><span class=\"fontstyle0\"><strong>В конце сессии</strong> ты можешь отнять влияние на себя у кого-то одного. </span></li>\n<li><span class=\"fontstyle0\">Если ни у кого <strong>нет на тебя влияния</strong>, ты не можешь <strong>утешать и поддерживать</strong>. Если ход всё же был инициирован твоими действиями, отметь состояние, поскольку ты говоришь совсем не те вещи, что нужно.</span> Если ни у кого нет на тебя влияния, и<span style=\"font-family: var(--font-primary); font-size: var(--font-size-14);\"> <strong>кто-то утешает и поддерживает</strong> </span>тебя, ты не можешь открыться ему.</li>\n<li><span class=\"fontstyle0\">Ты <strong>получаешь бонусы в зависимости от того сколько влияния на себя раздала</strong>. Эти бонусы складываются.</span></li>\n</ul>\n<p><strong>❑ 1-2 Влияния</strong>: когда ты защищаешь кого-то кто имеет на тебя влияние, можешь игнорировать состояние Неуверен. Когда ты выходишь против явной угрозы, что имеет влияние на тебя, можешь игнорировать состояние Напуган.</p>\n<p><strong>❑ 3 Влияния</strong>: получив мощный удар от того, кто имеет на тебя влияние добавь -2 к броску.</p>\n<p><strong>❑ 4 Влияния</strong>: срывая маску с кого-то кто имеет на тебя влияние, ты можешь задать один вопрос даже при провале.</p>\n<p><strong>❑ 5 Влияния</strong>: тратя очко команды, чтобы помочь тому кто имеет на тебя влияние, дай ему +2.</p>\n<p><strong>❑ 6 Влияния</strong>: когда ты принимаешь слова того, кто имеет на тебя влияние отметь потенциал, очисти состояние и возьми +1 к следующему броску.</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "Respect",
+      "name": "Уважение",
+      "description": "<p>Запиши имена как минимум двоих, чьего уважения ты добиваешься, чтобы показать, что ты не такой, как твой родитель. Ты можешь записывать новые имена, когда сочтёшь нужным.</p>\n<hr />\n<table style=\"border-top: 1px solid var(--color-border-light-tertiary); border-bottom: 1px solid var(--color-border-light-tertiary);\" border=\"1\">\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"width: 595px; height: 17px;\"><strong>Величайший враг твоего родителя:</strong></td>\n</tr>\n<tr style=\"height: 34px;\">\n<td style=\"width: 595px; height: 34px;\"><strong>Уважение:</strong> ☐ ☐ ☐ ☐</td>\n</tr>\n<tr style=\"height: 19px;\">\n<td style=\"width: 595px; height: 19px;\"><strong>Продвижение</strong>: ☐</td>\n</tr>\n</tbody>\n</table>\n<hr />\n<table style=\"border-top: 1px solid var(--color-border-light-tertiary); border-bottom: 1px solid var(--color-border-light-tertiary); height: 70px;\" border=\"1\">\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"width: 595px; height: 17px;\"><strong>Жертва действий твоего родителя:</strong></td>\n</tr>\n<tr style=\"height: 34px;\">\n<td style=\"width: 595px; height: 34px;\"><strong>Уважение:</strong>&nbsp;☐ ☐ ☐ ☐</td>\n</tr>\n<tr style=\"height: 19px;\">\n<td style=\"width: 595px; height: 19px;\"><strong>Продвижение</strong>: ☐</td>\n</tr>\n</tbody>\n</table>\n<hr />\n<table style=\"border-top: 1px solid var(--color-border-light-tertiary); border-bottom: 1px solid var(--color-border-light-tertiary); height: 70px;\" border=\"1\">\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"width: 595px; height: 17px;\"><strong>Твой личный кумир:</strong></td>\n</tr>\n<tr style=\"height: 34px;\">\n<td style=\"width: 595px; height: 34px;\"><strong>Уважение:</strong>&nbsp;☐ ☐ ☐ ☐</td>\n</tr>\n<tr style=\"height: 19px;\">\n<td style=\"width: 595px; height: 19px;\"><strong>Продвижение</strong>: ☐<br /><br /></td>\n</tr>\n</tbody>\n</table>\n<hr />\n<table style=\"border-top: 1px solid var(--color-border-light-tertiary); border-bottom: 1px solid var(--color-border-light-tertiary); height: 70px;\" border=\"1\">\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"width: 595px; height: 17px;\"><strong>Величайший лидер города:</strong></td>\n</tr>\n<tr style=\"height: 34px;\">\n<td style=\"width: 595px; height: 34px;\"><strong>Уважение:</strong>&nbsp;☐ ☐ ☐ ☐</td>\n</tr>\n<tr style=\"height: 19px;\">\n<td style=\"width: 595px; height: 19px;\"><strong>Продвижение</strong>: ☐<br /><br /></td>\n</tr>\n</tbody>\n</table>\n<hr />\n<table style=\"border-top: 1px solid var(--color-border-light-tertiary); border-bottom: 1px solid var(--color-border-light-tertiary); height: 70px;\" border=\"1\">\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"width: 595px; height: 17px;\"><strong>Величайший герой города:</strong></td>\n</tr>\n<tr style=\"height: 34px;\">\n<td style=\"width: 595px; height: 34px;\"><strong>Уважение:</strong>&nbsp;☐ ☐ ☐ ☐</td>\n</tr>\n<tr style=\"height: 19px;\">\n<td style=\"width: 595px; height: 19px;\"><strong>Продвижение</strong>: ☐</td>\n</tr>\n</tbody>\n</table>\n<hr />\n<table style=\"border-top: 1px solid var(--color-border-light-tertiary); border-bottom: 1px solid var(--color-border-light-tertiary); height: 70px;\" border=\"1\">\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"width: 595px; height: 17px;\"><strong>Крупнейшая знаменитость:</strong></td>\n</tr>\n<tr style=\"height: 34px;\">\n<td style=\"width: 595px; height: 34px;\"><strong>Уважение:</strong>&nbsp;☐ ☐ ☐ ☐</td>\n</tr>\n<tr style=\"height: 19px;\">\n<td style=\"width: 595px; height: 19px;\"><strong>Продвижение</strong>: ☐</td>\n</tr>\n</tbody>\n</table>\n<hr />\n<p>Когда ты ищешь одного из этих персонажей, брось <strong>+ Savior</strong>. При <strong>успехе</strong> ты их находишь. На <strong>7-9</strong> они заняты своими проблемами и у них может не быть времени на тебя. При провале ты их находишь и ситуация ужасающая, ведущий скажет почему.</p>\n<p>Если ты получаешь влияние над кем-то из списка, вместо этого ты получаешь 1 уважение. Если ты теряешь влияние на кого-то из этих персонажей, ты теряешь 1 уважение. Если при этом у тебя нет Уважения, ты отмечаешь состояние на выбор ведущего.</p>\n<p>Когда ты впервые получаешь 4 Уважения от одного из этих персонажей, возьми Продвижение.</p>\n<p>Пока у тебя есть 4 Уважения одного из этих персонажей:</p>\n<ul>\n<li>Ты отвергаешь его влияние с +3 (не плюсуется ни с чем).</li>\n<li>Ты получаешь +1 к ярлыку на его выбор (Запиши какой рядом с его именем)</li>\n</ul>\n<p>Если количество Уважения падает ниже 4, ты теряешь эти преимущества.</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "Sharpened Eyes",
+      "name": "Наметанный глаз",
+      "description": "<p>Когда ты <span style=\"text-decoration: underline;\">оцениваешь ситуацию</span>, ты можешь всегда спросить один из следующих вопросов, даже при провале:</p>\n<ul>\n<li>Как лучше всего пробраться, выбраться или обойти?</li>\n<li>Что полезного можно здесь стащить?</li>\n<li>Кто здесь восприимчив к моим словам?&nbsp;</li>\n</ul>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "Stick to the Mission",
+      "name": "Следуй миссии",
+      "description": "<p>Когда ты <span style=\"text-decoration: underline;\">защищаешь кого-то</span> или что-то критически важное для будущего (расскажи, почему), ты можешь снизить любой ярлык, чтобы поднять <strong>Savior</strong> перед броском. В таком случае, ты не можешь выбрать вариант &ldquo;сними состояние&rdquo; для <span style=\"text-decoration: underline;\">хода защиты</span>.&nbsp;</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "The Harbinger",
+      "name": "Предвестник",
+      "description": "<h2>ПРЕДВЕСТНИК</h2>\n<p>Ты из будущего и потому знаешь, как все обернется. Ты вернулся с миссией убедиться, что история изменится к лучшему. Но все смешалось. Некоторым из твоих воспоминаний больше нельзя доверять. Ты не уверен, как мир, в котором находишься, станет тем, который ты помнишь. Поэтому, пока ты во всем не разберешься, просто делай все что в твоих силах, пытаясь связать воедино линию времени.</p>\n<p>@PDF[The Harbringer|page=1]{Предвестник}</p>\n<p>&nbsp;</p>\n<h2>ИСТОЧНИКИ ВДОХНОВЕНИЯ</h2>\n<p>Bishop, <em>X-MEN</em></p>\n<p>Deathlok, <em>ASTONISHING TALES</em></p>\n<p>Iron Lad, <em>YOUNG AVENGERS</em></p>\n<p>Booster Gold, <em>JUSTICE LEAGUE</em></p>\n<p>Impulse, <em>YOUNG JUSTICE</em></p>\n<p>Rachel Summers, <em>X-MEN</em></p>"
+    },
+    {
+      "id": "The Harbinger - Advancement",
+      "name": "Предвестник - Продвижение",
+      "description": "<p>Когда твой трек потенциала заполняется, ты становишься сильнее. Выбери из списка ниже.</p>\n<p>❑ Выбери еще ход из своего буклета</p>\n<p>❑ Выбери еще ход из своего буклета</p>\n<p>❑ Выбери ход из чужого буклета&nbsp;</p>\n<p>❑ Выбери ход из чужого буклета&nbsp;</p>\n<p>❑ Передвинь ярлыки по своему выбору и добавь +1 к одному из них</p>\n<p>❑ Открой Момент Истины</p>\n<p>❑ Кто-то навсегда теряет на тебя влияние; добавь +1 к одному из ярлыков.</p>\n<p>❑ Передвинь ярлыки по своему выбору и добавь +1 к одному из них</p>\n<hr />\n<p>Взяв пять продвижений из верхнего списка, можешь перейти к списку ниже.</p>\n<p>❑ Разблокируй использованный тобой ранее Момент Истины</p>\n<p>❑ Смени буклет</p>\n<p>❑ Возьми ход взрослого</p>\n<p>❑ Возьми ход взрослого</p>\n<p>❑ Заблокируй ярлык и добавь +1 к ярлыку по своему выбору</p>\n<p>❑ Вернись в будущее и прими его новую форму или прыгни в другую точку прошлого, чтобы начать свою миссию заново</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "The Harbinger - Team Moves",
+      "name": "Предвестник - Командная работа",
+      "description": "<p>Когда ты <strong>рассказываешь товарищу по команде о разнице между тем, кем он станет в будущем и тем, кем являются в настоящем</strong>, добавь очко команды и спроси его, такого ли будущего он для себя хочет. Если он говорит да, отметь потенциал. Если он говорит нет, отметь состояние.</p>\n<p>Когда ты <strong>рассказываешь кому-то историю о будущей потере</strong>, спроси его, считает ли он, что ты способен предотвратить эту потерю. Если он верит в тебя, отметь потенциал и дай ему влияние на себя. Если он не верит что ты справишься, отметь состояние виноват и сдвинь два ярлыка (на свой выбор).</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "The Littlest Space Bandit",
+      "name": "Самый маленький космический бандит",
+      "description": "<p>Когда ты <span style=\"text-decoration: underline;\">напрямую сталкиваешься с угрозой</span>, которая тебя недооценивает, брось <strong>+ Superior</strong> вместо <strong>+ Danger</strong>.&nbsp;</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "The Nomad",
+      "name": "Кочевница",
+      "description": "<h2>КОЧЕВНИЦА</h2>\n<p>Когда-то у тебя было место, которые ты могла назвать домом. Распорядок дня, повседневность и люди, которым ты небезразличен. Давно это было. Теперь ты сама по себе, путешествуешь по пространственно-временному континууму и тому что за ним. Ты видела вещи, которые у обычного взрослого с его здравым смыслом не смогут уложиться в голове. А сейчас ты покинула далекие рубежи и вернулась на землю. Как оказалось, находить общий язык с людьми намного сложнее, чем странствовать по другим измерениям.</p>\n<p>@PDF[The Nomad|page=1]{Кочевница}</p>\n<p>&nbsp;</p>\n<h2>ИСТОЧНИКИ ВДОХНОВЕНИЯ</h2>\n<p>Cammi Benally, <em>AVENGERS ARENA/UNDERCOVER</em></p>\n<p>Marvel Boy,<em> YOUNG AVENGERS</em></p>\n<p>America Chavez,<em> YOUNG AVENGERS/AMERICA</em></p>\n<p>The Doctor, <em>DOCTOR WHO</em></p>\n<p>Star-Lord, <em>GUARDIANS OF THE GALAXY</em></p>\n<p>Blink, <em>EXILES</em></p>"
+    },
+    {
+      "id": "The Nomad - Advancement",
+      "name": "Кочевница - Продвижение",
+      "description": "<p>&nbsp;</p>\n<p>Когда твой трек потенциала заполняется, ты становишься сильнее. Выбери из списка ниже.</p>\n<p>❑ Выбери еще ход из своего буклета</p>\n<p>❑ Выбери еще ход из своего буклета</p>\n<p>❑ Выбери еще ход из своего буклета</p>\n<p>❑ Выбери ход из чужого буклета&nbsp;&nbsp;</p>\n<p>❑ Выбери ход из чужого буклета&nbsp;&nbsp;</p>\n<p>❑ Открой Момент Истины</p>\n<p>❑ Передвинь ярлыки по своему выбору и добавь +1 к одному из них</p>\n<p>❑ Передвинь ярлыки по своему выбору и добавь +1 к одному из них</p>\n<hr />\n<p>Взяв пять продвижений из верхнего списка, можешь перейти к списку ниже.</p>\n<p>❑ Разблокируй использованный тобой ранее Момент Истины</p>\n<p>❑ Смени буклет</p>\n<p>❑ Возьми ход взрослого</p>\n<p>❑ Возьми ход взрослого</p>\n<p>❑ Заблокируй ярлык и добавь +1 к ярлыку по своему выбору</p>\n<p>❑ Отправься в неизведанное, чтобы никогда не вернуться</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "The Nomad - Team Moves",
+      "name": "Кочевница - Командная работа",
+      "description": "<p>Когда ты <strong>делишь с кем-то момент триумфа</strong>, спроси, что его восхищает в тебе? Ведущий сдвинет один ярлык вниз, а один вверх, в зависимости от того, что тебе ответят.</p>\n<p>Когда ты <strong>разделяешь с кем-то уязвимость или слабость</strong>, возьми состояние, дай ему влияние на себя и запиши потенциал.</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "The Scion",
+      "name": "Отпрыск",
+      "description": "<h2>ОТПРЫСК</h2>\n<p>Ты дитя настоящего злодея. Не творение, не помощник просто его чёртов ребенок. И когда ктото, кто знает об этом, смотрит на тебя, все, что он может разглядеть, это твой родитель. Как будто ты сам не имеешь никакого значения. Знаешь, да пошли они все. Ты хочешь показать, что ты другой, отличный от него, и есть ли способ сделать это лучше, чем стать супергероем?</p>\n<p>@PDF[The Scion|page=1]{Отпрыск}</p>\n<p>&nbsp;</p>\n<h2><span class=\"fontstyle0\">ИСТОЧНИКИ ВДОХНОВЕНИЯ</span></h2>\n<p><span class=\"fontstyle0\">Spoiler, <em>BATMAN </em></span></p>\n<p><span class=\"fontstyle0\">Ravager, <em>TEEN TITANS </em></span></p>\n<p><span class=\"fontstyle0\">Victor Mancha, <em>RUNAWAYS </em></span></p>\n<p><span class=\"fontstyle0\">Gamora, <em>GUARDIANS OF THE GALAXY </em></span></p>\n<p><span class=\"fontstyle0\">Quake, <em>SECRET WARRIORS </em></span></p>\n<p><span class=\"fontstyle0\">Polaris, Quicksilver, and Scarlet Witch,<em> X-MEN</em></span></p>"
+    },
+    {
+      "id": "The Scion - Advancement",
+      "name": "Отпрыск - Продвижение",
+      "description": "<p>Когда твой трек потенциала заполняется, ты становишься сильнее. Выбери из списка ниже.</p>\n<p>❑ Выбери еще ход из своего буклета</p>\n<p>❑ Выбери еще ход из своего буклета</p>\n<p>❑ Выбери ход из чужого буклета&nbsp;</p>\n<p>❑ Выбери ход из чужого буклета&nbsp;</p>\n<p>❑ Открой Момент Истины</p>\n<p>❑ Кто-то навсегда теряет на тебя влияние; добавь +1 к одному из ярлыков.</p>\n<p>❑ Передвинь ярлыки по своему выбору и добавь +1 к одному из них</p>\n<p>❑ Возьми Маску и секретную личность из буклета Януса</p>\n<hr />\n<p>Взяв пять продвижений из верхнего списка, можешь перейти к списку ниже.</p>\n<p>❑ Разблокируй использованный тобой ранее Момент Истины</p>\n<p>❑ Смени буклет</p>\n<p>❑ Возьми ход взрослого</p>\n<p>❑ Возьми ход взрослого</p>\n<p>❑ Заблокируй ярлык и добавь +1 к ярлыку по своему выбору</p>\n<p>❑ Отойди от дел, став образцом для подражания</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "The Scion - Team Move",
+      "name": "Отпрыск - Командная работа",
+      "description": "<p>Когда ты <strong>разделяешь с кем-то момент триумфа</strong>, спроси, заслужила ли его уважение. Если это так, получи влияние на него и отметь потенциал. Если нет, дай ему влияние на себя и отметь потенциал.</p>\n<p>Когда ты <strong>делишься уязвимостью или слабостью с кем-то</strong>, спроси его, будет ли он защищать тебя от тех, кто не доверяет тебе. Если он скажет &laquo;да&raquo;, очисти состояние и двинь <strong>Savior</strong> вверх, а любой другой ярлык вниз. Если он говорит &laquo;нет&raquo;, отметь состояние и двинь <strong>Danger</strong> вверх, а любой другой ярлык вниз.</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "They Don’t Deserve Forgiveness",
+      "name": "Не заслуживают прощения",
+      "description": "<p>Когда ты <span style=\"text-decoration: underline;\">говоришь, что враг неисправим</span>, ты можешь отметить два состояния, чтобы снять его влияние с себя. Когда ты <span style=\"text-decoration: underline;\">напрямую сталкиваешься с угрозой</span>, которая не имеет на тебя влияние, ты всегда можешь выбрать 1 дополнительный вариант, даже при промахе.&nbsp;</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "Tomorrow’s Golden Promise",
+      "name": "Обещание завтрашнего дня",
+      "description": "<p>Когда ты <span style=\"text-decoration: underline;\">утешаешь или поддерживаешь кого-то</span> рассказами о том, каким по твоему мнению будет будущее цели, ты можешь бросить<strong> + Savior</strong> вместо <strong>Mundane</strong>. Отметь состояние, если ты не уверен, что история правдива.&nbsp;</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "Watched C-Beams Glitter",
+      "name": "Видела мерцание си-лучей",
+      "description": "<p>Когда ты делаешь предположение о странной ситуации или феномене, основываясь на своем опыте, брось <strong>+ Freak</strong>.</p>\n<p>При <strong>успехе</strong>, ты прав; ведущий расскажет, что за возможность тебе дает твое знание.</p>\n<p>При <strong>7-9</strong>, твое понимание неполное, ошибочное или поверхностное; ведущий скажет, как именно.</p>\n<p>При <strong>провале</strong>, твой опыт неполноценен; ведущий расскажет, какую ошибку ты совершишь, следуя своему ошибочному пониманию.&nbsp;</p>",
+      "choices": "",
+      "success": "<p>Ты прав; ведущий расскажет, что за возможность тебе дает твое знание.</p>",
+      "partial": "<p>Твое понимание неполное, ошибочное или поверхностное; ведущий скажет, как именно.</p>",
+      "failure": "<p>Твой опыт неполноценен; ведущий расскажет, какую ошибку ты совершишь, следуя своему ошибочному пониманию.&nbsp;</p>"
+    },
+    {
+      "id": "White Lies",
+      "name": "Ложь во спасение",
+      "description": "<p>Когда ты <span style=\"text-decoration: underline;\">утешаешь или поддерживаешь</span> кого-то, говоря ложь, которую тот хочет услышать, брось <strong>+ Savior</strong> вместо <strong>+ Mundane</strong>.</p>\n<p>При <strong>успехе</strong>, получи влияние над целью, если она открылась.&nbsp;</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    },
+    {
+      "id": "You Haven’t Learned You Can Do That Yet",
+      "name": "Ты еще не знаешь, что так можешь",
+      "description": "<p>Когда ты <span style=\"text-decoration: underline;\">рассказываешь товарищу о новом, никогда еще не использованном трюке</span>, который он даже не рассматривал, потрать очко команды и позволь им <span style=\"text-decoration: underline;\">дать волю своим силам, напрямую столкнуться с угрозой</span> или <span style=\"text-decoration: underline;\">защитить кого-то</span>, используя твой <strong>Superior</strong>, как будто это их ярлык. Все цены и осложнения от хода воздействуют и на тебя.</p>",
+      "choices": "",
+      "success": "",
+      "partial": "",
+      "failure": ""
+    }
+  ]
+}

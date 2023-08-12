@@ -1,0 +1,17 @@
+:root {
+	--fontFamilySerif: var(--font-fancy);
+	--fontFamilySans: var(--font-sans-condensed);
+}
+
+.crucible.sheet.actor .ability h4.label,
+.crucible.sheet.actor .defenses .defense h3,
+.crucible.sheet.actor .defenses .defense h4,
+.crucible.sheet.actor .damage-resistances .category h3 label,
+.crucible.sheet.actor .resources .resource h3 label,
+.items-header .item-name h4 {
+	font-weight: 600;
+}
+
+.crucible.sheet.actor .badge {
+	font-size: var(--text-sm);
+}

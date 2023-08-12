@@ -1,0 +1,143 @@
+/* FOUNDRY */
+
+body {
+	--font-h1: var(--font-fancy);
+	--font-h2: var(--font-serif);
+	--font-body: var(--font-sans);
+	font-family: var(--font-sans);
+}
+
+button,
+form .form-group label,
+.tabs .item {
+	font-family: var(--font-sans-condensed);
+	font-weight: 500;
+}
+
+select,
+.header-button,
+.window-header,
+.playlist-sounds,
+.updated-packages-table th.action,
+.updated-packages-table td.action,
+.compendium-sidebar .dropdown-menu .dropdown-list .dropdown-item,
+.context-item {
+	font-family: var(--font-sans-condensed);
+}
+
+form .form-group label {
+	line-height: 18px;
+	line-height: normal;
+}
+
+body.auth #main-header h1 {
+	font-size: 3rem;
+}
+
+.setup .form-group label {
+	font-size: var(--text-base);
+}
+
+.package-list .package .package-controls button {
+	width: 130px;
+	font-family: var(--font-sans-condensed);
+	font-size: var(--text-sm);
+	line-height: 20px;
+}
+
+.journal-sheet .editor-content {
+	font-size: var(--text-base);
+}
+
+.directory .directory-list .directory-item {
+	font-size: var(--text-sm);
+}
+
+.key,
+.show-title,
+.filepicker .favorites .label,
+.active-effect-sheet .effects-header {
+	font-family: var(--font-sans-condensed);
+	font-size: var(--text-sm);
+}
+
+.sheet.journal-entry-page .journal-header .page-level {
+	flex: 0 0 130px;
+	margin-left: 0.4rem;
+}
+
+.filepicker .favorites .label {
+	flex: 2;
+}
+
+.updated-packages-table th.package,
+.updated-packages-table td.package {
+	width: 200px;
+	padding: 0.5rem;
+}
+
+.updated-packages .action {
+	flex: 0 0 120px;
+	font-family: var(--font-sans-condensed);
+}
+
+.updated-packages-table th.action,
+.updated-packages-table td.action {
+	width: 155px;
+	padding: 0.5rem;
+}
+
+.updated-packages-table th.description,
+.updated-packages-table td.description {
+	padding: 0.5rem;
+}
+
+.compendium-sidebar .dropdown-menu .dropdown-list {
+	padding: 6px;
+}
+
+.toolclip {
+	font-family: var(--font-sans-condensed);
+	font-size: var(--text-base);
+}
+
+/* MODULES */
+
+#AA-autorec-settings .window-content header ul li {
+	font-family: var(--font-sans-condensed);
+	font-weight: 600;
+	font-size: var(--text-sm);
+}
+
+.compendium-browser .spell-browser .spell .spell-tags {
+	max-width: 200px;
+}
+
+.monks-tokenbar.chat-card .card-header h3 {
+	font-family: var(--font-sans-condensed);
+}
+
+.monks-tokenbar .sheet .items-list .items-header h3 {
+	font-family: var(--font-serif);
+}
+
+.encounter-cr {
+	font-family: var(--font-sans-condensed);
+}
+
+.request-roll {
+	font-family: var(--font-sans-condensed);
+}
+
+.monks-tokenbar .sheet .items-list .items-header h3 {
+	font-family: var(--font-sans-condensed);
+}
+
+.storyteller-tooltip {
+	font-family: var(--font-serif);
+}
+
+.monks-active-tiles.sheet .items-list .items-header h3,
+.monks-active-tiles.sheet .items-list .items-header > * {
+	font-family: var(--font-sans-condensed) !important;
+}

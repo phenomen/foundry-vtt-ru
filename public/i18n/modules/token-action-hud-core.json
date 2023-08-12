@@ -1,0 +1,297 @@
+{
+  "tokenActionHud": {
+    "accept": "Принять",
+    "addToCombat": "Добавление в бой",
+    "blockListLabel": "чёрный список: скрыть / белый список: показать",
+    "cancel": "Отмена",
+    "collapseHud": "Свернуть HUD",
+    "combat": "Бой",
+    "compendiumEntry": "Документ библиотеки",
+    "compendiumMacro": "Макрос библиотеки",
+    "compendiumPlaylist": "Плейлист библиотеки",
+    "editHud": "Изменение HUD",
+    "endTurn": "Конец хода",
+    "expandHud": "Развернуть HUD",
+    "handlerNotFound": "не найдено, возврат к обычному броску.",
+    "lockHud": "Блокировка HUD",
+    "macro": "Макрос",
+    "macros": "Макросы",
+    "makeInvisible": "Сделать невидимым",
+    "makeVisible": "Сделать видимым",
+    "pushLabelExplanation": "С какой стороны отображать категории?",
+    "removeFromCombat": "Убрать из боя",
+    "title": "Token Action HUD",
+    "toggleHud": "Переключение HUD",
+    "token": "Токен",
+    "unlockHud": "Разблокировка HUD",
+    "utility": "Вспомогательное",
+    "settings": {
+      "activeCssAsText": {
+        "hint":  "Активные действия будут отмечены звёздочкой",
+        "name": "Отметка активных действий"
+      },
+      "allow": {
+        "hint": "Настройка ведущего: Разрешить участникам с этой ролью (и выше) использовать HUD.",
+        "name": "Разрешить HUD",
+        "choices" : {
+          "4": "Ведущий",
+          "3": "Ассистент ведущего",
+          "2": "Доверенный игрок",
+          "1": "Игрок"
+        }
+      },
+      "alwaysShowHud": {
+        "hint": "Показывать привязанного к участнику персонажа, даже если токен не выбран.",
+        "name": "Всегда отображать HUD"
+      },
+      "background": {
+        "hint": "Устанавливает цвет фона HUD. Эта настройка игнорируется при использовании интерфейса Dorako UI и требует наличия одного из модулей: 'Color Picker', 'Color Settings' или 'libThemer'.",
+        "name": "Цвет фона HUD"
+      },
+      "buttonBackgroundColor": {
+        "hint": "Устанавливает цвет фона кнопок HUD. Эта настройка игнорируется при использовании интерфейса Dorako UI и требует наличия одного из модулей: 'Color Picker', 'Color Settings' или 'libThemer'.",
+        "name": "Цвет фона кнопок"
+      },
+      "clickOpenCategory": {
+        "hint": "Раскрывать группы щелчком вместо наведения.",
+        "name": "Щелчок для раскрытия"
+      },
+      "customStyle": {
+        "hint": "Настройка внешнего вида HUD. Для включения, установите 'Стиль' на 'Свой'.",
+        "label": "Настройка стиля",
+        "name": "Настройка стиля",
+        "form": {
+          "title": "Token Action HUD | Настройка стиля",
+          "active": "Когда активно",
+          "buttons": "Кнопки",
+          "hovered": "При наведении",
+          "text": "Текст и иконки",
+          "toggleable": "Переключатель",
+          "reset": "Сброс настроек",
+          "save": "Сохранение",
+          "backgroundColor": {
+            "label": "Цвет фона"
+          },
+          "buttonHeight": {
+            "label": "Высота",
+            "units": "(пиксели)"
+          },
+          "buttonBackgroundColor": {
+            "label": "Цвет фона"
+          },
+          "buttonBorderPrimaryColor": {
+            "label": "Основной цвет рамки"
+          },
+          "buttonBorderSecondaryColor": {
+            "label": "Дополнительный цвет рамки"
+          },
+          "buttonTextColor": {
+            "label": "Цвет текста кнопок"
+          },
+          "buttonHoverBackgroundColor": {
+            "label": "Цвет фона"
+          },
+          "buttonHoverBorderPrimaryColor": {
+            "label": "Основной цвет рамки"
+          },
+          "buttonHoverBorderSecondaryColor": {
+            "label": "Дополнительный цвет рамки"
+          },
+          "buttonHoverTextColor": {
+            "label": "Цвет текста"
+          },
+          "buttonToggleActiveBackgroundColor": {
+            "label": "Цвет фона"
+          },
+          "buttonToggleActiveBorderPrimaryColor": {
+            "label": "Основной цвет рамки"
+          },
+          "buttonToggleActiveBorderSecondaryColor": {
+            "label": "Дополнительный цвет рамки"
+          },
+          "buttonToggleActiveTextColor": {
+            "label": "Цвет текста"
+          },
+          "buttonToggleHoverBackgroundColor": {
+            "label": "Цвет фона"
+          },
+          "buttonToggleHoverTextColor": {
+            "label": "Цвет текста"
+          },
+          "buttonToggleHoverBorderPrimaryColor": {
+            "label": "Основной цвет рамки"
+          },
+          "buttonToggleHoverBorderSecondaryColor": {
+            "label": "Дополнительный цвет рамки"
+          },
+          "textPrimaryColor": {
+            "label": "Основной цвет"
+          },
+          "textSecondaryColor": {
+            "label": "Дополнительный цвет"
+          },
+          "textTertiaryColor": {
+            "label": "Вспомогательный цвет"
+          },
+          "textHoverPrimaryColor": {
+            "label": "Основной цвет"
+          },
+          "textHoverSecondaryColor": {
+            "label": "Дополнительный цвет"
+          },
+          "textHoverTertiaryColor": {
+            "label": "Вспомогательный цвет"
+          }
+        }
+      },
+      "debug": {
+        "hint": "Включение вывода отладочной информации в консоль.",
+        "name": "Отладка"
+      },
+      "direction": {
+        "hint": "Выбор направления раскрытия HUD",
+        "name": "Направление",
+        "choices": {
+          "auto": "Автоматически",
+          "down": "Вниз",
+          "up": "Вверх"
+        }
+      },
+      "displayCharacterName": {
+        "hint": "При 'Направлении вниз' имя персонажа будет отображаться над HUD.",
+        "name": "Отображение имени персонажа"
+      },
+      "displayIcons": {
+        "hint": "На действиях будут отображаться иконки, если они доступны.",
+        "name": "Отображение иконок"
+      },
+      "drag": {
+        "hint": "Выберите, когда HUD можно перемещать перетаскиванием одной из кнопок верхнего уровня.",
+        "name": "Перетаскивание",
+        "choices": {
+          "always": "Всегда",
+          "whenUnlocked": "Когда разблокирован",
+          "never": "Никогда"
+        }
+      },
+      "enable": {
+        "hint": "Включение Token Action HUD.",
+        "name": "Включение HUD"
+      },
+      "enableCustomization": {
+        "hint": "Настройка ведущего: Включение настроек стиля HUD.",
+        "name": "Включение настройки стиля"
+      },
+      "grid": {
+        "hint": "Действия будут отображаться в виде сетки.",
+        "name": "Сетка"
+      },
+      "itemMacro": {
+        "hint": "Выбор способа отображения макросов предметов.",
+        "name": "Отображение макросов предметов",
+        "choices": {
+            "both": "Предмет и макрос",
+            "itemMacro": "Только макрос",
+            "original": "Только предмет"
+        }
+      },
+      "renderItemOnRightClick": {
+        "hint": "При щелчке правой кнопкой мыши будет открыт бланк предмета.",
+        "name": "Открытие бланка предмета ПКМ"
+      },
+      "reset": {
+        "hint": "ВНИМАНИЕ! Это сбросит все настройки на стандартные",
+        "name": "Сброс HUD"
+      },
+      "rollHandler": {
+        "hint": "Настройка ведущего: Выбор модуля для обработки бросков через HUD.",
+        "name": "Обработчик бросков"
+      },
+      "scale": {
+        "hint": "Изменение масштаба HUD (по умолчанию '1').",
+        "name": "Масштаб HUD"
+      },
+      "style": {
+        "hint": "Настройка стиля HUD",
+        "name": "Стиль"
+      },
+      "tooltips": {
+        "hint": "Способ отображения всплывающих подсказок при наведении курсора на действия.",
+        "name": "Отображение подсказок",
+        "choices": {
+          "full": "Полная подсказка",
+          "nameOnly": "Только название",
+          "none": "Без подсказки"
+        }
+      },
+      "toggleHud": {
+        "disabled": "HUD отключён. Для включения нажмите {binding}",
+        "enabled": "HUD включён. Для отключения нажмите {binding}"
+      }
+    },
+    "tagDialog": {
+      "actionDialogDescription": "Добавляйте и удаляйте группы и действия. Перетаскивайте группы и действия, чтобы изменить их порядок.",
+      "actionDialogTitle": "Настройка действий",
+      "groupDialogDescription": "Добавляйте и удаляйте группы. Выберите группы с заранее определенными действиями из списка или введите свой текст для пустых групп. Перетаскивайте группы, чтобы изменить их порядок.",
+      "groupDialogTitle": "Настройка групп",
+      "hudDialogDescription": "Добавляйте и удаляйте группы. Перетаскивайте группы, чтобы изменить их порядок.",
+      "hudDialogTitle": "Настройка HUD",
+      "clearButton": "Очистка",
+      "settings": {
+        "characterCount": {
+          "label": "Максимум символов в слове",
+          "hint": "Ограничение числа символов для каждого слова в названии действия."
+        },
+        "collapse": {
+          "label": "Сворачивание группы",
+          "hint": "Группа будет свёрнута"
+        },
+        "customWidth": {
+          "label": "Особая ширина",
+          "units": "(пиксели)",
+          "hint": "Настройте ширину для подкатегорий"
+        },
+        "grid": {
+          "label": "Сетка",
+          "hint": "Действия будут отображаться в виде сетки."
+        },
+        "image": {
+          "label": "Изображение",
+          "hint": "Изображение на кнопке."
+        },
+        "showCategoryTitle": {
+          "label": "Отображение заголовка",
+          "hint": "Отображение заголовка кнопки"
+        },
+        "showSubcategoryTitle": {
+          "label": "Отображение заголовка",
+          "hint": "Отображение заголовка группы"
+        },
+        "sort": {
+          "label": "Сортировка действий",
+          "hint": "Действия будут отсортированы в алфавитном порядке."
+        },
+        "style": {
+          "label": "Стиль",
+          "choice": {
+            "list": "Список",
+            "tab": "Вкадка"
+          },
+          "hint": "Стиль этой группы"
+        }
+      },
+      "resetActions": {
+        "button": "Сброс действий",
+        "dialog": {
+          "title": "Сброс действий",
+          "content": "Это приведёт к сбросу всех действий актёра. Продолжить?",
+          "buttons": {
+            "yes": "Да",
+            "no": "Нет"
+          }
+        }
+      },
+      "tagPlaceholder": "Выборы (разделяйте ; )"
+    }
+  }
+}

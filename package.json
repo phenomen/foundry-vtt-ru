@@ -1,0 +1,17 @@
+{
+  "name": "@phenomen/foundry-vtt-ru",
+  "private": "true",
+  "scripts": {
+    "process:build": "vite build",
+    "process:bump": "bumpp ./public/module.json ./README.md --no-push --no-commit --no-tag",
+    "process:zip": "node process-zip.js",
+    "build": "pnpm process:build",
+    "release": "pnpm process:bump && pnpm process:build && pnpm process:zip"
+  },
+  "type": "module",
+  "devDependencies": {
+    "archiver": "^5.3.1",
+    "bumpp": "^9.1.1",
+    "vite": "^4.4.9"
+  }
+}

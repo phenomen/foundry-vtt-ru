@@ -1,0 +1,122 @@
+{
+	"POLYGLOT": {
+		"DefaultAlphabet": "Алфавит по умолчанию",
+		"FontSettings": "Настройки шрифта",
+		"LanguageSettings": "Настройки языка",
+		"ChatSettings": "Настройки чата",
+		"Languages.title": "Языки",
+		"Languages.hint": "Изменение алфавита, используемого языками.",
+		"Font": "Шрифт",
+		"Fonts": "Шрифты",
+		"FontSize": "Размер шрифта (%)",
+		"AllowOOC.hint": "Выбор участников, сообщения вне отыгрыша которых будут зашифрованы.",
+		"AllowOOC.title": "Шифрование сообщений вне отыгрыша",
+		"AllowOOCOptions": {
+			"a": "Все",
+			"b": "Только GM",
+			"c": "Только игроки",
+			"d": "Никто"
+		},
+		"ComprehendLanguages.hint": "Выберите язык, который позволяет обладателю понимать буквальное значение услышанных слов, произнесённых на любом языке, но без возможности говорить или писать на них.",
+		"ComprehendLanguages.title": "Omniscient Language",
+		"CustomLanguages.hint": "Список нестандартных языков, которые вы хотите добавить в систему (разделяйте запятой).",
+		"CustomLanguages.title": "Свои языки",
+		"DefaultLanguage.hint": "Название языка по умолчанию. Оставьте пустым, чтобы использовать язык системы.",
+		"DefaultLanguage.title": "Стандартный язык",
+		"DisplayTranslated.hint": "Для языков, переведённых в окне чата, отображать оригинальный текст и перевод под ним.",
+		"DisplayTranslated.title": "Отображать перевод",
+		"enableAllFonts": {
+			"choices": {
+				"0": "Ничего",
+				"1": "Шрифты Polyglot",
+				"2": "Core's Additional Fonts",
+				"3": "Оба"
+			},
+			"hint": "Adds fonts from the chosen sources to the {setting1} and {setting2}.",
+			"title": "Add Fonts to Module Settings"
+		},
+		"ExportFonts.hint": "Add Polyglot's fonts to Core's Additional Fonts menu. Toggling this setting off will remove all of Polyglot's fonts from the menu.",
+		"ExportFonts.title": "Add Polyglot's fonts to Core",
+		"HideTranslation.hint": "Hides the Globe and the \"Translated from\" text from chat messages to players. Useful for when you don't want to show players which language you are speaking. Requires reload.",
+		"HideTranslation.title": "Hide Indicators from Players",
+		"IgnoreJournalFontSize": {
+			"hint": "Ignores the size of Polyglot's fonts on journals, making them have the same size as normal text would have. Useful for when the formatting of the journal matters.",
+			"title": "Journal: Use Normal Font Size"
+		},
+		"JournalHighlight": {
+			"hint": "Defines the opacity of the highlight over fonts on the journal.",
+			"title": "Journal Highlight Opacity (%)"
+		},
+		"JournalHighlightColor": {
+			"hint": "Defines the color of the highlight over fonts on the journal.",
+			"title": "Journal Highlight Color"
+		},
+		"LanguageProvider": {
+			"choices": {
+				"module": "[Module] {name}",
+				"native": "Универсальный",
+				"system": "[System] {name}"
+			},
+			"hint": "Выберите источник, предоставляющий информацию об языках. Некоторые источники могут быть добавлены системами и модулями. Опции ниже отражают те, что были найдены в текущем мире.",
+			"name": "Настройки источника языка"
+		},
+		"languageDataPath": {
+			"title": "Language Data Path",
+			"hint": "If your system has languages set in actors' data and aren't being loaded properly, it might be using another data path. Input the data path to the correct attribute (e.g. actor.system.languages or actor.system.speak). This settings takes precedence over the {setting} setting. Requires reload."
+		},
+		"literacyDataPath": {
+			"title": "Literacy Data Path",
+			"hint": "Same as the {setting} setting, but for reading journals. This settings requires the {setting} setting. Requires reload."
+		},
+		"LanguageRegex": {
+			"hint": "You can use this to change the term searched on items from \"Language\" to something else, like \"Tongue\". This setting is more useful for non-English speakers.",
+			"title": "Language RegEx"
+		},
+		"logographicalFontToggle.hint": "Сокращение фраз вдвое на логографических языках (японский, китайский, корейский и т.д.).",
+		"logographicalFontToggle.title": "Логографические шрифты",
+		"RandomizeRunes.hint": "This determines which type of RNG is used to generate a phrase. ⚠️ The \"None\" option only supports Alphanumeric characters (no accents).",
+		"RandomizeRunes.title": "Случайные руны",
+		"RandomizeRunesOptions": {
+			"a": "По умолчанию",
+			"b": "Уникальный фразы",
+			"c": "Отключено"
+		},
+		"ReplaceLanguages.hint": "Замена языков системы вашими особыми языками. Первый язык в списке станет новым языком по умолчанию.",
+		"ReplaceLanguages.title": "Заменить языки системы",
+		"RuneRegex": {
+			"hint": "Makes the randomization ignore non-alphanumerical characters (e.g. !,.;:?#$\"'). This might have the undesired effect of showing some of those characters as a square (□) on some fonts.",
+			"title": "Randomize Only Alphanumericals"
+		},
+		"ScrambleGM.hint": "Don't translate the text for the GM (refer to the globe's color for the token's understanding). Requires reload.",
+		"ScrambleGM.title": "Scramble Messages for GM",
+		"Truespeech.hint": "Выберите язык, который позволяет обладателю понимать значение услышанных слов, произнесённых на любом языке, а также позволяет другим существам понимать обладателя.",
+		"Truespeech.title": "Omnispeech Language",
+		"Translation": "Перевод",
+		"TranslatedFrom": "Перевод с ",
+		"LanguageLabel": "Язык",
+		"AlphabetLabel": "Алфавит",
+		"LatinAlphabet": "Латинский алфавит",
+		"ToggleRunes": "Включить руны",
+		"Runes": "Руны",
+		"UESRPG.Language": "Язык",
+		"Generic": {
+			"Language": "Язык"
+		},
+		"COC7": {
+			"LanguageOwn": "Язык",
+			"LanguageAny": "Язык",
+			"LanguageOther": "Язык",
+			"LanguageSpec": "Язык"
+		},
+		"DND5E": {
+			"SpecialLanguages.title": "Replace Special Languages",
+			"SpecialLanguages.hint": "Name of the language that will replace \"languages\" such as \"all the languages it knew in life\"."
+		},
+		"SWADE": {
+			"LanguageSkills": "Язык"
+		},
+		"WFRP4E": {
+			"LanguageSkills": "Язык"
+		}
+	}
+}
