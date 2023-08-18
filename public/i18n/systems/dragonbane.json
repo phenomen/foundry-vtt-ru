@@ -30,7 +30,7 @@
             "profession": "Профессия",
             "skill": "Навык",
             "spell": "Заклинание",
-            "weapon": "Оружие"                
+            "weapon": "Оружие"
         }
     },
     "DoD": {
@@ -62,7 +62,6 @@
             "banes": "Бедствия",
             "rating": "Класс защиты",
             "bonuses": "Модификатор защиты"
-
         },
         "attackTypes": {
             "ranged": "Дистанционная атака",
@@ -221,7 +220,6 @@
             "pushChoiceLabel": "Выбери состояние:",
             "parryWeapon": "<p>Если парируемый урон превосходит прочность оружия (<b>{durability}</b>), то оружие повреждается. Колющий урон не может повредить оружие.</p>",
             "parryShield": "<p>Если парируемый урон превосходит прочность щита (<b>{durability}</b>), то щит повреждается. Колющий урон не может повредить щит.</p>"
-
         },
         "secondaryAttributeTypes": {
             "none": "-",
@@ -239,10 +237,14 @@
         "skill": {
             "advance": "Развитие",
             "advanceTooltip": "Отметьте возможность проверки Развития",
+            "advancementFail": "Не удалось повысить навык <b>{skill}</b>.",
+            "advancementSuccess": "Навык <b>{skill}</b> развит с <b>{old}</b> до <b>{new}</b>.",
             "attribute": "Характеристика",
             "attributeTooltip": "Характеристика навыка",
             "hide": "Скрыть",
             "hideTooltip": "Скрыть навык в списке натренированных навыков",
+            "markAdvancement": "Отменить навык для развития.",
+            "rollAdvancement": "Проверка развития навыка в конце игровой встречи.",
             "type": "Тип",
             "typeTooltip": "Тип навыка"
         },
@@ -250,7 +252,7 @@
             "core": "Основной навык",
             "weapon": "Оружейный навык",
             "secondary": "Дополнительный навык",
-            "magic": "Школа магии"  
+            "magic": "Школа магии"
         },
         "spell": {
             "areaOfEffect": "Область",
@@ -281,7 +283,7 @@
             "range": "Дистанция",
             "cone": "Конус",
             "sphere": "Сфера"
-        },        
+        },
         "supplyTypes": {
             "common": "Обычная",
             "uncommon": "Необычная",
@@ -347,8 +349,7 @@
             "topplingTooltip": "Даёт преимущество при сбивании с ног",
             "unarmed": "Безоружное",
             "unarmedTooltip": "Не считается за оружие в руке и не может быть парировано"
-            
-        },    
+        },
         "ui": {
             "character-sheet": {
                 "abilities": "Способности",
@@ -417,7 +418,7 @@
                 "willPoints": "Пункты силы воли",
                 "wp": "ПСВ"
             },
-            "chat":{
+            "chat": {
                 "damageApplied": "<b>{damage} урона</b> нанесено <b>{actor}</b>.",
                 "damageAppliedDetails": "{damage} урона против {armor} класса защиты.",
                 "damageAppliedMultiplier": "x{multiplier} множитель.",
@@ -461,7 +462,6 @@
                 "useAbilityWithoutWP": "Использовать <b>{ability}</b>?",
                 "weaponFeatures": "Особенности оружия"
             }
-
         },
         "INFO": {
             "professionSkillAdded": "Добавляет профессиональный навык: {skill}"
@@ -493,6 +493,6 @@
             "noRangedMishapTable": "Отсутствует таблица побочных эффектов для дистанционного оружия.",
             "noMagicMishapTable": "Отсутствует таблица побочных эффектов для магии.",
             "maxWeaponsEquipped": "Максимум три надетых оружия."
-      }
+        }
     }
 }
