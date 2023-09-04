@@ -1,9 +1,43 @@
 {
 	"label": "Объекты (Враг в тенях)",
+	"mapping": {
+		"tests": "system.tests.value",
+		"contraction": "system.contraction.value",
+		"symptoms": "system.symptoms.value",
+		"permanent": "system.permanent.value",
+		"incubation_value": "system.incubation.value",
+		"incubation_unit": {
+			"path": "system.incubation.unit",
+			"converter": "convertDuration"
+		},
+		"duration_unit": {
+			"path": "system.duration.unit",
+			"converter": "convertDuration"
+		},
+		"hit_location": {
+			"path": "system.location.value",
+			"converter": "convertHitLocation"
+		},
+		"penalty": "system.penalty.value",
+		"careerGroup": "system.careergroup.value",
+		"careerClass": {
+			"path": "system.class.value",
+			"converter": "convertCareerClass"
+		},
+		"trappings": "system.trappings",
+		"skills": {
+			"path": "system.skills",
+			"converter": "convertSkill"
+		},
+		"talents": {
+			"path": "system.talents",
+			"converter": "convertTalent"
+		}
+	},
 	"entries": {
 		"Absorb": {
 			"name": "Поглощение",
-			"description": "<p><span class=\"fontstyle0\">В конце раунда, если существо имеет Преимущество больше, чем связанные с ним боем враги, оно поглощает одного противника равного размера или меньше. Поглощённая жертва получает состояния  </span>@Condition[Обездвижен] <span class=\"fontstyle0\">в количестве, равном Рейтингу Силы существа и считается находящейся @JournalEntry[t36Z4DOhYnfX1dr3]{В клинче}. Поглощённая жертва теряет Рейтинг Силы существа здоровья в конце каждого раунда; Броня и Рейтинг Выносливости не уменьшают этот урон. Существо исцеляется на то-же самое количество Здоровья. Если поглощённая жертва погибает, существо отступает, чтобы переварить поглощённое тело в течение следующих нескольких дней. Любая атака, поражающая существо, наносит такое-же количество урона поглощённой жертве.</span></p>"
+			"description": "<p><span class=\"fontstyle0\">В конце раунда, если существо имеет Преимущество больше, чем связанные с ним боем враги, оно поглощает одного противника равного размера или меньше. Поглощённая жертва получает состояния  </span>@Condition[Обездвижен] <span class=\"fontstyle0\">в количестве, равном Рейтингу Силы существа и считается находящейся @UUID[JournalEntry.t36Z4DOhYnfX1dr3]{В клинче}. Поглощённая жертва теряет Рейтинг Силы существа здоровья в конце каждого раунда; Броня и Рейтинг Выносливости не уменьшают этот урон. Существо исцеляется на то-же самое количество Здоровья. Если поглощённая жертва погибает, существо отступает, чтобы переварить поглощённое тело в течение следующих нескольких дней. Любая атака, поражающая существо, наносит такое-же количество урона поглощённой жертве.</span></p>"
 		},
 		"Amorphous": {
 			"name": "Бесформенный",
@@ -51,7 +85,7 @@
 		},
 		"Fleshthief": {
 			"name": "Похититель плоти",
-			"description": "<p><span class=\"fontstyle0\">Существо, обладающее Чертой @Compendium[wfrp4e-core.traits.v3uzEthcq0JRar0J]{Демон}</span><span class=\"fontstyle2\"></span><span class=\"fontstyle0\">, может носить плоть любого убитого ею человека. Кроме того, оно может идеально имитировать личность жертвы, ставшей оболочкой, вкусе с имитацией голоса и манер. Для подготовки плоти требуется [[/r 1d10]] Раундов, после чего существо может носить и снимать её по желанию, это занимает 1 Раунд. После подготовки плоть сгниёт только в случае смерти носителя, но она может быть повреждена обычными средствами. Если существо пожелает, оно может вырваться из телесной оболочки, разорвав плоть и получив черту @Compendium[wfrp4e-core.traits.kJNAY1YRaCy9IgmT]{Ужас}</span><span class=\"fontstyle2\">&nbsp;</span><span class=\"fontstyle0\">на один раунд. Плоть после этого использовать уже невозможно.</span></p>\n<p><span class=\"fontstyle0\"><br>Знавшие того, чья плоть и личность была украдена, могут совершить </span><strong><span class=\"fontstyle3\">Тщетную (-40) проверку Интуиции </span></strong><span class=\"fontstyle0\">, чтобы увидеть что что-то не так, хотя и не будут точно знать что именно.</span> .</p>"
+			"description": "<p><span class=\"fontstyle0\">Существо, обладающее Чертой @UUID[Compendium.wfrp4e-core.items.v3uzEthcq0JRar0J]{Демон}</span><span class=\"fontstyle2\"></span><span class=\"fontstyle0\">, может носить плоть любого убитого ею человека. Кроме того, оно может идеально имитировать личность жертвы, ставшей оболочкой, вкусе с имитацией голоса и манер. Для подготовки плоти требуется [[/r 1d10]] Раундов, после чего существо может носить и снимать её по желанию, это занимает 1 Раунд. После подготовки плоть сгниёт только в случае смерти носителя, но она может быть повреждена обычными средствами. Если существо пожелает, оно может вырваться из телесной оболочки, разорвав плоть и получив черту @UUID[Compendium.wfrp4e-core.items.kJNAY1YRaCy9IgmT]{Ужас}</span><span class=\"fontstyle2\">&nbsp;</span><span class=\"fontstyle0\">на один раунд. Плоть после этого использовать уже невозможно.</span></p>\n<p><span class=\"fontstyle0\"><br>Знавшие того, чья плоть и личность была украдена, могут совершить </span><strong><span class=\"fontstyle3\">Тщетную (-40) проверку Интуиции </span></strong><span class=\"fontstyle0\">, чтобы увидеть что что-то не так, хотя и не будут точно знать что именно.</span> .</p>"
 		},
 		"Heavy Draught Horse": {
 			"name": "Тяжелая упряжная лошадь",
@@ -67,7 +101,7 @@
 		},
 		"Mark of Tzeentch": {
 			"name": "Метка Тзинча",
-			"description": "<p><span class=\"fontstyle0\">Тзинч, Повелитель Перемен, отметил это существо физическим клеймом, отметив его как важную фигуру в Великой игре. Это существо получает [[/r ceil(1d10/3)]]{1d10/3} Мутаций, чередующихся между Физическими и Ментальными. Все физические мутации должны быть определены броском по таблице мутаций Тзинча. Это существо получает @Compendium[wfrp4e-core.talents.sYbgpSnRqSZWgwFP]{Этикет(Последователи Тзинча)}, и подвержено Враждебности по отношению к явным Нурглитам. Существо также испытывает Враждебность Нурглитов, если они могут видеть Метку Тзинча. Дополнительно существо может приобрести за обычную цену следующие таланты, как если-бы они были карьерными талантами: @Compendium[wfrp4e-core.talents.1IZWRr7BYOIcqPlQ]{Эфирный унисон}, @Compendium[wfrp4e-core.talents.3O9clK7LGyuLTHPW]{Школа Магии(любая)}, @Compendium[wfrp4e-core.talents.hiU7vhBOVpVI8c7C]{Магия Хаоса(Тзинч)}, @Compendium[wfrp4e-core.talents.9sMAf0xmehjEmUao]{Быстрые руки}, @Compendium[wfrp4e-core.talents.BYChSVfMG004eflQ]{Безупречная дикция}, @Compendium[wfrp4e-core.talents.6w30u0VPsAicrqb5]{Магическое чутье}, @Compendium[wfrp4e-core.talents.mdPGZsn2396dEpOf]{Простейшая магия}, @Compendium[wfrp4e-core.talents.OEjUvJKi0xmBwbS2]{Второе зрение}, @Compendium[wfrp4e-core.talents.F2EiuAc6IpaGd4J7]{Боевой маг}, and @Compendium[wfrp4e-core.talents.qdMbxW09FUoYBzmB]{Ведьма!}</span></p>"
+			"description": "<p><span class=\"fontstyle0\">Тзинч, Повелитель Перемен, отметил это существо физическим клеймом, отметив его как важную фигуру в Великой игре. Это существо получает [[/r ceil(1d10/3)]]{1d10/3} Мутаций, чередующихся между Физическими и Ментальными. Все физические мутации должны быть определены броском по таблице мутаций Тзинча. Это существо получает @UUID[Compendium.wfrp4e-core.items.sYbgpSnRqSZWgwFP]{Этикет(Последователи Тзинча)}, и подвержено Враждебности по отношению к явным Нурглитам. Существо также испытывает Враждебность Нурглитов, если они могут видеть Метку Тзинча. Дополнительно существо может приобрести за обычную цену следующие таланты, как если-бы они были карьерными талантами: @UUID[Compendium.wfrp4e-core.items.1IZWRr7BYOIcqPlQ]{Эфирный унисон}, @UUID[Compendium.wfrp4e-core.items.3O9clK7LGyuLTHPW]{Школа Магии(любая)}, @UUID[Compendium.wfrp4e-core.items.hiU7vhBOVpVI8c7C]{Магия Хаоса(Тзинч)}, @UUID[Compendium.wfrp4e-core.items.9sMAf0xmehjEmUao]{Быстрые руки}, @UUID[Compendium.wfrp4e-core.items.BYChSVfMG004eflQ]{Безупречная дикция}, @UUID[Compendium.wfrp4e-core.items.6w30u0VPsAicrqb5]{Магическое чутье}, @UUID[Compendium.wfrp4e-core.items.mdPGZsn2396dEpOf]{Простейшая магия}, @UUID[Compendium.wfrp4e-core.items.OEjUvJKi0xmBwbS2]{Второе зрение}, @UUID[Compendium.wfrp4e-core.items.F2EiuAc6IpaGd4J7]{Боевой маг}, and @UUID[Compendium.wfrp4e-core.items.qdMbxW09FUoYBzmB]{Ведьма!}</span></p>"
 		},
 		"Master Magus": {
 			"name": "Мастер-магус",

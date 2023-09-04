@@ -1,17 +1,51 @@
 {
 	"label": "Объекты (Мидденхейм)",
+	"mapping": {
+		"tests": "system.tests.value",
+		"contraction": "system.contraction.value",
+		"symptoms": "system.symptoms.value",
+		"permanent": "system.permanent.value",
+		"incubation_value": "system.incubation.value",
+		"incubation_unit": {
+			"path": "system.incubation.unit",
+			"converter": "convertDuration"
+		},
+		"duration_unit": {
+			"path": "system.duration.unit",
+			"converter": "convertDuration"
+		},
+		"hit_location": {
+			"path": "system.location.value",
+			"converter": "convertHitLocation"
+		},
+		"penalty": "system.penalty.value",
+		"careerGroup": "system.careergroup.value",
+		"careerClass": {
+			"path": "system.class.value",
+			"converter": "convertCareerClass"
+		},
+		"trappings": "system.trappings",
+		"skills": {
+			"path": "system.skills",
+			"converter": "convertSkill"
+		},
+		"talents": {
+			"path": "system.talents",
+			"converter": "convertTalent"
+		}
+	},
 	"entries": {
 		"Bless With Filth": {
 			"name": "Благословение мерзостью",
-			"description": "<p>Вы проклинаете лезвия, когти и зубы тех, кто вас окружает, чтобы сделать раны гнойными. На время действия заклинания каждый персонаж в зоне действия считается обладающим чертой @Compendium[wfrp4e-core.traits.V0c3qBU1CMm8bmsW]{Заразный}.</p>"
+			"description": "<p>Вы проклинаете лезвия, когти и зубы тех, кто вас окружает, чтобы сделать раны гнойными. На время действия заклинания каждый персонаж в зоне действия считается обладающим чертой @UUID[Compendium.wfrp4e-core.items.V0c3qBU1CMm8bmsW]{Заразный}.</p>"
 		},
 		"Boots of Gucci": {
 			"name": "Башмаки Гуччи",
-			"description": "<p>При активации фразой 'Изящество превыше стиля' владелец получает талант @Compendium[wfrp4e-core.talents.sYbgpSnRqSZWgwFP]{Этикет (Дворяне, Гильдейцы, или Слуги)} до тех пор, пока башмаки остаются на ногах. Если владелец пожелает, он может произнести фразу еще раз, чтобы изменить версию таланта.</p>"
+			"description": "<p>При активации фразой 'Изящество превыше стиля' владелец получает талант @UUID[Compendium.wfrp4e-core.items.sYbgpSnRqSZWgwFP]{Этикет (Дворяне, Гильдейцы, или Слуги)} до тех пор, пока башмаки остаются на ногах. Если владелец пожелает, он может произнести фразу еще раз, чтобы изменить версию таланта.</p>"
 		},
 		"Child of Ulric": {
 			"name": "Дитя Ульрика",
-			"description": "<h4>Черты</h4>\n<p>@Compendium[wfrp4e-core.traits.VUJUZVN3VYhOaPjj]{Броня}</p>\n<p>@Compendium[wfrp4e-core.traits.pLW9SVX0TVTYPiPv]{Укус}</p>\n<p>@Compendium[wfrp4e-core.traits.pTorrE0l3VybAbtn]{Страх}</p>\n<p>@Compendium[wfrp4e-core.traits.FmHDbCOy3pH8yKhm]{Сумеречное зрение}</p>\n<p>@Compendium[wfrp4e-core.traits.ClOlztW6hH8rslbp]{Следопыт}</p>\n<p>@Compendium[wfrp4e-core.traits.AtpAudHA4ybXVlWM]{Оружие}</p>\n<h4>Optional</h4>\n<p>@Compendium[wfrp4e-core.traits.GbDyBCu8ZjDp6dkj]{Воинственность}</p>\n<p>@Compendium[wfrp4e-core.traits.AGcJl5rHjkyIQBPP]{Зверь}</p>\n<p>@Compendium[wfrp4e-core.traits.a8MC97PLzl10WocT]{Крупный}</p>\n<p>@Compendium[wfrp4e-core.traits.5muSFXd6oc760uVj]{Благословлён (Ульрик)}</p>\n<p>@Compendium[wfrp4e-core.traits.4mF5Sp3t09kZhBYc]{Воитель}</p>\n<p>@Compendium[wfrp4e-core.traits.UsJ2uIOOtHA7JqD5]{Крепкий орешек}</p>\n<p>@Compendium[wfrp4e-core.traits.9MjH4xyVrd3Inzak]{Fast}</p>\n<p>@Compendium[wfrp4e-core.traits.yRhhOlt18COq4e1q]{Ярость}</p>\n<p>@Compendium[wfrp4e-core.traits.IAWyzDfC286a9MPz]{Невозмутимость}</p>\n<p>@Compendium[wfrp4e-core.traits.SfUUdOGjdYpr3KSR]{Регенерация}</p>\n<p>@Compendium[wfrp4e-core.traits.8slW8CJ2oVTxeQ6q]{Размер (Большой)}</p>"
+			"description": "<h4>Черты</h4>\n<p>@UUID[Compendium.wfrp4e-core.items.VUJUZVN3VYhOaPjj]{Броня}</p>\n<p>@UUID[Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv]{Укус}</p>\n<p>@UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Страх}</p>\n<p>@UUID[Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm]{Сумеречное зрение}</p>\n<p>@UUID[Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp]{Следопыт}</p>\n<p>@UUID[Compendium.wfrp4e-core.items.AtpAudHA4ybXVlWM]{Оружие}</p>\n<h4>Optional</h4>\n<p>@UUID[Compendium.wfrp4e-core.items.GbDyBCu8ZjDp6dkj]{Воинственность}</p>\n<p>@UUID[Compendium.wfrp4e-core.items.AGcJl5rHjkyIQBPP]{Зверь}</p>\n<p>@UUID[Compendium.wfrp4e-core.items.a8MC97PLzl10WocT]{Крупный}</p>\n<p>@UUID[Compendium.wfrp4e-core.items.5muSFXd6oc760uVj]{Благословлён (Ульрик)}</p>\n<p>@UUID[Compendium.wfrp4e-core.items.4mF5Sp3t09kZhBYc]{Воитель}</p>\n<p>@UUID[Compendium.wfrp4e-core.items.UsJ2uIOOtHA7JqD5]{Крепкий орешек}</p>\n<p>@UUID[Compendium.wfrp4e-core.items.9MjH4xyVrd3Inzak]{Fast}</p>\n<p>@UUID[Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q]{Ярость}</p>\n<p>@UUID[Compendium.wfrp4e-core.items.IAWyzDfC286a9MPz]{Невозмутимость}</p>\n<p>@UUID[Compendium.wfrp4e-core.items.SfUUdOGjdYpr3KSR]{Регенерация}</p>\n<p>@UUID[Compendium.wfrp4e-core.items.8slW8CJ2oVTxeQ6q]{Размер (Большой)}</p>"
 		},
 		"Gromril Helm": {
 			"name": "Громриловый шлем",
@@ -35,7 +69,7 @@
 		},
 		"Sword of Fear": {
 			"name": "Меч Страха",
-			"description": "<p>Носящий меч может призвать его силу, сказав 'Сдавайся или умри!' и получив черту @Compendium[wfrp4e-core.traits.pTorrE0l3VybAbtn]{Страх (2)} на [[/r 2d10]] раундов. Меч также наносит урон существам, обычно невосприимчивым к немагическим атакам и имеет достоинства <em>Красивый </em>и <em>Прочный</em>.</p>"
+			"description": "<p>Носящий меч может призвать его силу, сказав 'Сдавайся или умри!' и получив черту @UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Страх (2)} на [[/r 2d10]] раундов. Меч также наносит урон существам, обычно невосприимчивым к немагическим атакам и имеет достоинства <em>Красивый </em>и <em>Прочный</em>.</p>"
 		},
 		"Wolf Brother": {
 			"name": "Волчий брат",

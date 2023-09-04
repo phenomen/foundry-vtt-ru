@@ -1,17 +1,39 @@
 {
 	"label": "Объекты (Up In Arms)",
 	"mapping": {
+		"tests": "system.tests.value",
+		"contraction": "system.contraction.value",
+		"symptoms": "system.symptoms.value",
+		"permanent": "system.permanent.value",
+		"incubation_value": "system.incubation.value",
+		"incubation_unit": {
+			"path": "system.incubation.unit",
+			"converter": "convertDuration"
+		},
+		"duration_unit": {
+			"path": "system.duration.unit",
+			"converter": "convertDuration"
+		},
+		"hit_location": {
+			"path": "system.location.value",
+			"converter": "convertHitLocation"
+		},
+		"penalty": "system.penalty.value",
 		"careerGroup": "system.careergroup.value",
+		"careerClass": {
+			"path": "system.class.value",
+			"converter": "convertCareerClass"
+		},
+		"trappings": "system.trappings",
 		"skills": {
-		  "path": "system.skills",
-		  "converter": "skills"
+			"path": "system.skills",
+			"converter": "convertSkill"
 		},
 		"talents": {
-		  "path": "system.talents",
-		  "converter": "talents"
-		},
-		"trappings": "system.trappings"
-	  },
+			"path": "system.talents",
+			"converter": "convertTalent"
+		}
+	},
 	"entries": {
 		"Ahlspiess": {
 			"name": "Альшпис",
@@ -58,12 +80,10 @@
 			"description": "<p>Топор, столь любимый гномами, не так скор в руке как меч, но тяжелое лезвие может сильно попортить вражеские щиты и доспехи.</p>"
 		},
 		"Ball and Powder": {
-			"name": "Ядро и порох",
-			"description": ""
+			"name": "Ядро и порох"
 		},
 		"Ballista": {
-			"name": "Баллиста",
-			"description": ""
+			"name": "Баллиста"
 		},
 		"Ballock Knife": {
 			"name": "Кинжал-баллок",
@@ -78,8 +98,7 @@
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.1BTD0otB4pln0o8j.JournalEntryPage.mGMZSWoJnbnRze1h]{Пикенёр}</p>"
 		},
 		"Barbed Arrow": {
-			"name": "Зазубренная стрела",
-			"description": ""
+			"name": "Зазубренная стрела"
 		},
 		"Bastard Sword": {
 			"name": "Меч-бастард",
@@ -102,12 +121,10 @@
 			"description": "<p>Багры используются грузчиками для помощи при погрузке-разгрузке, но они могут стать опасным оружием в умелых руках.</p>"
 		},
 		"Bodkin Arrow": {
-			"name": "Гранёная стрела",
-			"description": ""
+			"name": "Гранёная стрела"
 		},
 		"Bolt": {
-			"name": "Болт",
-			"description": ""
+			"name": "Болт"
 		},
 		"Bomb": {
 			"name": "Бомба",
@@ -122,16 +139,14 @@
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.tczPk698eLFpVOsm]{Лучник}</p>"
 		},
 		"Bright Spark": {
-			"name": "Умник",
-			"description": ""
+			"name": "Умник"
 		},
 		"Bullet and Powder": {
 			"name": "Пуля и порох (12 зарядов)",
 			"description": "<p>Пули продаются в небольшом промасленном мешочке с достаточным количеством пороха и используются для стрельбы из большинства @UUID[Compendium.wfrp4e-up-in-arms.items.pu2OkOWm15zEqWzz]{пистолетов}, @UUID[Compendium.wfrp4e-up-in-arms.items.ivuGhpoG9e9fN3Ks]{ружей} и других разновидностей огнестрельного оружия.</p>"
 		},
 		"Bullets and Powder (Swivel Gun)": {
-			"name": "Пули и порох (вертлюжное орудие)",
-			"description": ""
+			"name": "Пули и порох (вертлюжное орудие)"
 		},
 		"Camp Chief": {
 			"name": "Квартирмейстер",
@@ -146,16 +161,13 @@
 			"description": "<p>Мелкокалиберный пистолет, спрятанный в трости. Ищущие скрытое оружие должны пройти <strong>Тяжелую (-20) проверку Наблюдательности</strong> чтобы идентифицировать это как оружие или <strong>Безумная (-30) проверка Наблюдательности</strong>, если ищущий не знаком с огнестрельным оружием.</p>"
 		},
 		"Cannon (large)": {
-			"name": "Пушка (большая)",
-			"description": ""
+			"name": "Пушка (большая)"
 		},
 		"Cannon (medium)": {
-			"name": "Пушка (средняя)",
-			"description": ""
+			"name": "Пушка (средняя)"
 		},
 		"Cannon (small)": {
-			"name": "Пушка (малая)",
-			"description": ""
+			"name": "Пушка (малая)"
 		},
 		"Captain": {
 			"name": "Капитан",
@@ -174,16 +186,13 @@
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.6xKxqvKM5exJhiAA]{Картограф}</p>"
 		},
 		"Catapult (large)": {
-			"name": "Катапульта (большая)",
-			"description": ""
+			"name": "Катапульта (большая)"
 		},
 		"Catapult (medium)": {
-			"name": "Катапульта (средняя)",
-			"description": ""
+			"name": "Катапульта (средняя)"
 		},
 		"Catapult (small)": {
-			"name": "Катапульта (малая)",
-			"description": ""
+			"name": "Катапульта (малая)"
 		},
 		"Cavalry Hammer": {
 			"name": "Кавалерийский молот",
@@ -230,8 +239,7 @@
 			"description": "<p>Лансы напоминают копья с массивным древком, предназначенным для прижимания оружия к груди атакующим рыцарем. Демиланс имеет ту же конструкцию, но не так увесист и длинен.</p><p>* Лансы и демилансы считаются @UUID[Compendium.wfrp4e-up-in-arms.items.okPRj8ixa55d9ETF]{импровизированным оружием}, если они используются в раунде, в котором вы не совершали атаку с разгона.</p>"
 		},
 		"Diamond in the Rough": {
-			"name": "Самородок",
-			"description": ""
+			"name": "Самородок"
 		},
 		"Dismay Foe": {
 			"name": "Вражий страх",
@@ -302,8 +310,7 @@
 			"description": "<p>Расхожая присказка о том, что крестьяне могут перековать орала на мечи, конечно, изрядно преувеличена, однако в умелых руках молотило для зерна представляет из себя опасное оружие. Молотило состоит из деревянной ручки, соединенной цепью или веревкой с тяжелой колотушкой.</p>"
 		},
 		"Grapeshot and Powder": {
-			"name": "Картечь и порох",
-			"description": ""
+			"name": "Картечь и порох"
 		},
 		"Grapple": {
 			"name": "Зацеп",
@@ -390,16 +397,13 @@
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.hCtfLrI7R6mJg6YV]{Стрелец}</p>"
 		},
 		"Helblaster Volley Gun": {
-			"name": "Залповая пушка 'Адострел'",
-			"description": ""
+			"name": "Залповая пушка 'Адострел'"
 		},
 		"Helstorm Rocket Battery": {
-			"name": "Ракетная батарея 'Адский шторм'",
-			"description": ""
+			"name": "Ракетная батарея 'Адский шторм'"
 		},
 		"Hireling": {
-			"name": "Спутник",
-			"description": ""
+			"name": "Спутник"
 		},
 		"Hochland Long Rifle": {
 			"name": "Хохландская длинноствольная винтовка",
@@ -426,8 +430,7 @@
 			"description": "<blockquote class=\"foundry-note\"><p>Этот предмет предназначен для использования в качестве боеприпаса для @UUID[JournalEntry.2EGaOiGaaunZ2RuS.JournalEntryPage.SGWjMaw6OrZ06Nbp]{порохового и инженерного} оружия. Для метательного оружия используйте @UUID[Compendium.wfrp4e-core.trappings.vI0oorwbZdlszudf]{Зажигательное}, для осадного оружия используйте @UUID[Item.MQV1cMMZQZnyzZx2]{Зажигательное}</p><p>Для использования с @UUID[Item.d2LzU8hNCH97njsK]{мортирами}, измените типа боеприпаса на <strong>Пороховое и инженерное</strong></p></blockquote><p>Много попыток было предпринято в стремлении забросить очередной сосуд с чёрным порохом, смолой или дёгтем дальше, чем это может сделать человек самостоятельно.Такие изделия можно зарядить в @UUID[Compendium.wfrp4e-up-in-arms.items.hRXoLcdkE97BBJlL]{ручную мортиру} и запустить куда дальше, чем обычно.</p><p>Такой боеприпас нельзя заряжать заблаговременно - фитиль бомбы поджигается перед закладкой бомбы в ствол @UUID[Compendium.wfrp4e-up-in-arms.items.hRXoLcdkE97BBJlL]{ручной мортиры}. При заряжании вы должны решить, на сколько ходов вы подготавливаете фитиль.</p><p>Фитиль на один ход означает, что бомба взорвется в конце текущего Хода. Фитиль на два Хода означает что она взорвется в конце следующего Хода и так далее. В это время бомба взорвется независимо от того, произвели вы выстрел или нет. Вы должны следить за этим сами, так как Ведущий не обязан напоминать вам об этом, пока не наступит нужный момент.</p>"
 		},
 		"Infirm": {
-			"name": "Немощный",
-			"description": ""
+			"name": "Немощный"
 		},
 		"Jarred Arm": {
 			"name": "Онемение руки",
@@ -518,16 +521,14 @@
 			"description": "<p>Кустарные клевцы - немногим большее, чем металлический шип на конце недлинного древка, хотя для более качественной версии нередко исполнение в хорошей стали. Это не слишком манёвренное оружие, но хорошо проламывающее чужую броню.</p>"
 		},
 		"Mortar": {
-			"name": "Мортира",
-			"description": ""
+			"name": "Мортира"
 		},
 		"Novice": {
 			"name": "Послушник",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.pVLlBMBG95DVUGGj]{Рыцарь Белого волка}</p>"
 		},
 		"Old Salt": {
-			"name": "Морской волк",
-			"description": ""
+			"name": "Морской волк"
 		},
 		"On Deadly Ground": {
 			"name": "Стоять насмерть",
@@ -550,8 +551,7 @@
 			"description": "<p>Павеза - это большой щит, который носят арбалетчики, чтобы обеспечить себе укрытие на поле боя во время перезарядки арбалета. Примерно 4 фута высотой, зачастую расписаны гербами - подразделения или сеньора - павезы устанавливались на поле боя для организации личной стены. Будучи наиболее эффективными при развертывании в линию с другими арбалетчиками, павеза обеспечивает хорошее укрытие при стрельбе по вражеским войскам или противостоянии вражеским вылазкам, когда вы орудуете копьем или мечом из-за павезы.</p><p>Павезу можно использовать двумя способами.</p><p>Её можно использовать как большой щит. Это не лучшее для нее применение, так как она представляет из себя тяжелую и неудобную конструкцию из дерева и кожи. В этом случае она обладает всеми качествами @UUID[unknown]{Щит(большой)} (<em>Щит 3, защитное, щадящее</em>), приобретает Изъян <em>Медленное</em> и <em>Массивное</em>. Павиза, используемая таким образом, по-прежнему имеет Вес 4 и Урон +РС+2.</p><p>Использование в качестве полевого укрытия. Установка павезы стоит 2 Действия. Установка осуществляется по стороне света от владельца (север, юг, восток, запад), относительно владельца (слева, справа, спереди, сзади) или по определённому ориентиру(<em>‘Я установил его между в сторону замка от меня’</em>).</p><p>Пока персонаж остается в пределах 1 ярда за павезой, она обеспечивает защиту владельца от любых стрелковых атака, исходящих с указанного направления, обеспечивая владельцу Достоинство <em>Щит 5</em>. Если противник вступает в рукопашную схватку с использующим павезу, павеза обеспечивает защиту только если атака происходит со стороны установки павезы, и только на первом ходу боя.</p><p><strong>Пример</strong>: <em>Осадный специалист Браганца подошёл с юга к вражеской крепости. Он устанавливает свою павезу так, чтобы она была обращена к крепости. Браганца получает достоинство Щит 5 для любых атака с севера, но не имеет никакой защиты от атак с юга, востока и запада. Если кто-то совершит вылазку из крепости и попытается напасть на Браганца, тот сможет воспользоваться качеством Щит 5 в первом раунде Боя. Если бы на него напали сбоку или сзади, он не сможет воспользоваться этим Достоинством.</em></p>"
 		},
 		"Pebble": {
-			"name": "Камушек",
-			"description": ""
+			"name": "Камушек"
 		},
 		"Pepperbox": {
 			"name": "Перечница",
@@ -610,8 +610,7 @@
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.1BTD0otB4pln0o8j.JournalEntryPage.mGMZSWoJnbnRze1h]{Пикенёр}</p>"
 		},
 		"Reformed Rogue": {
-			"name": "Завязавший преступник",
-			"description": ""
+			"name": "Завязавший преступник"
 		},
 		"Reiver": {
 			"name": "Налётчик",
@@ -638,8 +637,7 @@
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.PyuVaepgBmUkbfrz]{Маркитант}</p>"
 		},
 		"Rocket": {
-			"name": "Ракета",
-			"description": ""
+			"name": "Ракета"
 		},
 		"Roughrider": {
 			"name": "Выездка",
@@ -674,8 +672,7 @@
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.PyuVaepgBmUkbfrz]{Маркитант}</p>"
 		},
 		"Sharp Stick": {
-			"name": "Острая палка",
-			"description": ""
+			"name": "Острая палка"
 		},
 		"Shattered Skull": {
 			"name": "Расколотый Череп",
@@ -714,8 +711,7 @@
 			"description": "<p>Часто использующаяся для охоты на птиц и других мелких быстроногих животных, Дробь диаметром куда меньше обычного ствола, поэтому один заряд состоит обычно из около дюжины дробин.</p>"
 		},
 		"Small Shot and Powder (Swivel Gun)": {
-			"name": "Свинцовая дробь и порох (вертлюжное орудие)",
-			"description": ""
+			"name": "Свинцовая дробь и порох (вертлюжное орудие)"
 		},
 		"Smallsword": {
 			"name": "Смолсворд",
@@ -734,8 +730,7 @@
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.FmalmVn3AhtabhMN]{Рыцарь Пантеры}</p>"
 		},
 		"Stone": {
-			"name": "Камень",
-			"description": ""
+			"name": "Камень"
 		},
 		"Strike to Injure": {
 			"name": "Безжалостный удар",
@@ -750,8 +745,7 @@
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.6xKxqvKM5exJhiAA]{Картограф}</p>"
 		},
 		"Swivel Gun": {
-			"name": "Вертлюжное орудие",
-			"description": ""
+			"name": "Вертлюжное орудие"
 		},
 		"Sword": {
 			"name": "Меч",
@@ -774,12 +768,10 @@
 			"description": "<p>Вы полны праведного гнева Мирмидии. Пока действует это Чудо, вы должны атаковать ближайшего нераскаявшегося врага. Вы можете перебрасывать любые броски навыка ближнего боя, которые вы делаете, пока действует Чудо.</p>"
 		},
 		"Veteran of Adventures": {
-			"name": "Бывалый",
-			"description": ""
+			"name": "Бывалый"
 		},
 		"Volley Gun": {
-			"name": "Залповое ружье",
-			"description": ""
+			"name": "Залповое ружье"
 		},
 		"Warhammer": {
 			"name": "Боевой молот",

@@ -1,45 +1,41 @@
 {
-	"label": "Actors (Up In Arms)",
+	"label": "Актёры (К оружию!)",
 	"mapping": {
 		"species": "system.details.species.value",
 		"items": {
 			"path": "items",
-			"converter": "npc_traits"
+			"converter": "fromPack"
 		},
-		"token": "prototypeToken.name",
-		"characteristics": {
-			"path": "system.characteristics",
-			"converter": "npc_characteristics"
+		"gender": {
+			"path": "system.details.gender.value",
+			"converter": "convertGender"
+		},
+		"tokenName": {
+			"path": "prototypeToken.name",
+			"converter": "name"
 		}
 	},
 	"entries": {
 		"Demigryph Mount": {
-			"name": "Demigryph Mount",
-			"description": ""
+			"name": "Скакун-демигриф"
 		},
 		"Doktor": {
-			"name": "Doktor",
-			"description": ""
+			"name": "Доктор"
 		},
 		"Lawyer": {
-			"name": "Lawyer",
-			"description": ""
+			"name": "Адвокат"
 		},
 		"Local Scout": {
-			"name": "Local Scout",
-			"description": ""
+			"name": "Местный проводник"
 		},
 		"Porter": {
-			"name": "Porter",
-			"description": ""
+			"name": "Портье"
 		},
 		"Scribe": {
-			"name": "Scribe",
-			"description": ""
+			"name": "Писец"
 		},
 		"Seasoned Mercenary": {
-			"name": "Seasoned Mercenary",
-			"description": ""
+			"name": "Опытный наёмник"
 		}
 	}
 }
