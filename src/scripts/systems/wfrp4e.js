@@ -1,12 +1,13 @@
 import {
-	translatedSkill,
-	translatedTalent,
-	translatedDuration,
-	translatedHitLocation,
 	translatedCareerClass,
+	translatedDuration,
+	translatedExceptions,
 	translatedGender,
+	translatedHitLocation,
+	translatedSkill,
 	translatedSpec,
-	translatedExceptions
+	translatedSpecification,
+	translatedTalent
 } from "./wfrp4-data";
 
 export function init() {
@@ -50,6 +51,10 @@ export function init() {
 
 			convertGender: (gender) => {
 				return translateValue(gender, translatedGender);
+			},
+
+			convertSpecification: (specification) => {
+				return translateValue(specification, translatedSpecification);
 			}
 		});
 
