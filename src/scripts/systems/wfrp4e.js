@@ -872,7 +872,7 @@ export function init() {
 
 		function translateDoubleArray(arr, leftTranslation, rightTranslation) {
 			function translateItem(item) {
-				if (item in translatedExceptions) {
+				if (translatedExceptions.hasOwnProperty(item)) {
 					return translatedExceptions[item];
 				}
 

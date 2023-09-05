@@ -137,6 +137,7 @@ export const translatedSpec = {
 	"Law": "закон",
 	"Local": "местность",
 	"Lute": "лютня",
+	"Lyre": "лира",
 	"Magick": "магия",
 	"Medicine": "медицина",
 	"Metallurgy": "металлургия",
@@ -145,6 +146,7 @@ export const translatedSpec = {
 	"Mootish": "мутландский",
 	"Mosaics": "мозаика",
 	"Norse": "норс",
+	"Nuln": "Нульн",
 	"Painting": "живопись",
 	"Parry": "парирующее",
 	"Pegasus": "пегасы",
@@ -157,6 +159,7 @@ export const translatedSpec = {
 	"Prophecy": "пророчества",
 	"Queekish": "квикиш",
 	"Ranger": "охотники",
+	"Reikland": "Рейкланд",
 	"Reikspiel": "рейкшпиль",
 	"Riverways": "судоходные реки",
 	"Rope Walking": "хождение по канату",
@@ -172,6 +175,7 @@ export const translatedSpec = {
 	"Sling": "пращи",
 	"Smell": "нюх",
 	"Smith": "кузнец",
+	"Speeches": "речи",
 	"Storyteller": "сказительство",
 	"Storytelling": "сказительство",
 	"Tanner": "дубильщик",
@@ -474,5 +478,7 @@ export const translatedSpecification = {
 	"Very Hard": "Безумная",
 	"War": "боевой",
 	"Witch": "Школа Ведьмовства",
-	"Witchcraft": "Школа Ведьмовства"
+	"Witchcraft": "Школа Ведьмовства",
+	"Target": "Цель",
+	"Thieves": "воры"
 };
