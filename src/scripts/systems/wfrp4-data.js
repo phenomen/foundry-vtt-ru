@@ -430,6 +430,7 @@ export const translatedSpecification = {
 	"Broken": "приручённый",
 	"Challenging": "Серьёзная",
 	"Chaos": "Школа Хаоса",
+	"Coastal": "побережья",
 	"Daemonology": "Школа Демонологии",
 	"Death": "Школа Смерти",
 	"Difficult": "Трудная",

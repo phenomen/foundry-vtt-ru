@@ -1,6 +1,19 @@
 {
-	"label": "Объекты (Враг в тенях)",
+	"label": "Предметы (Враг в тенях)",
+	"folders": {
+		"Careers": "Карьеры",
+		"Diseases": "Болезни",
+		"Injuries": "Ранения",
+		"Mutations": "Мутации",
+		"Spells": "Заклинания",
+		"Lore of Tzeentch": "Школа Тзинча",
+		"Undivided": "Хаос Неделимый",
+		"Talents": "Таланты",
+		"Traits": "Черты",
+		"Trappinges": "Имущество"
+	},
 	"mapping": {
+		"gmdescription": "system.gmdescription.value",
 		"tests": "system.tests.value",
 		"contraction": "system.contraction.value",
 		"symptoms": "system.symptoms.value",
@@ -32,128 +45,652 @@
 		"talents": {
 			"path": "system.talents",
 			"converter": "convertTalent"
+		},
+		"specification": {
+			"path": "system.specification.value",
+			"converter": "convertSpecification"
 		}
 	},
 	"entries": {
-		"Absorb": {
-			"name": "Поглощение",
-			"description": "<p><span class=\"fontstyle0\">В конце раунда, если существо имеет Преимущество больше, чем связанные с ним боем враги, оно поглощает одного противника равного размера или меньше. Поглощённая жертва получает состояния  </span>@Condition[Обездвижен] <span class=\"fontstyle0\">в количестве, равном Рейтингу Силы существа и считается находящейся @UUID[JournalEntry.t36Z4DOhYnfX1dr3]{В клинче}. Поглощённая жертва теряет Рейтинг Силы существа здоровья в конце каждого раунда; Броня и Рейтинг Выносливости не уменьшают этот урон. Существо исцеляется на то-же самое количество Здоровья. Если поглощённая жертва погибает, существо отступает, чтобы переварить поглощённое тело в течение следующих нескольких дней. Любая атака, поражающая существо, наносит такое-же количество урона поглощённой жертве.</span></p>"
+		"Cult Acolyte": {
+			"name": "Аколит культа",
+			"description": "<p>@UUID[Compendium.wfrp4e-eis.journals.IZVgB7zmTm4rK2yJ.JournalEntryPage.okL3l1pH269uRycI]{Маг-культист Тзинча}</p>",
+			"careerGroup": "Маг-культист Тзинча",
+			"trappings": ["Инсигния культа", "Ритуальное облачение", "Тайная татуировка"]
+		},
+		"Disciple of Change": {
+			"name": "Апостол Перемен",
+			"description": "<p>При получении мутации, бросьте два раза 1к100 и выберите ту, которая вам больше нравится.</p>",
+			"tests": ""
 		},
 		"Amorphous": {
 			"name": "Бесформенный",
 			"description": "<p><span class=\"fontstyle0\">Существо представляет собой бесформенный сгусток. Существо получает только половину урона от атака, кроме огня, холода и магии. Существо игнорирует все Травмы и может быть уничтожено только когда его здоровье опустится до 0 в результате урона огнём, холодом или магией. Если урон до 0 здоровья имеет иную природу, существо переходит в состояние бездействия на </span>r [[/r 1d10]] раундов <span class=\"fontstyle0\">, а затем восстанавливает 1 пункт Здоровья. Бесформенные существа избегают источников излишнего тепла или холода.</span> .</p>"
 		},
-		"Blighted": {
-			"name": "Переносчик болезни",
-			"description": "<p><span class=\"fontstyle0\">Существо источает означенную болезнь, и передаёт её при контакте. При прикосновении пострадавший должен совершить Проверку Заражения, но проверка на 2 шага сложнее обычного. Если жертва заражается болезнью, её инкубационный период меняется на 'Отсутсвует'</span></p>"
-		},
-		"Chosen of Tzeentch": {
-			"name": "Избранник Тзинча",
-			"description": "<p>@Compendium[wfrp4e-eis.eis-journals.UW37AxkhQtUr3GuS]{Маг-культист Тзинча}</p>"
-		},
-		"Common Cold": {
-			"name": "Простуда",
-			"description": "<p>Сезонная, как осенний листопад, простуда всё-же является вечным бичом Старого Света. Начинаясь с чихания и покашливания, она имеет все шансы усугубиться, если не попытаться это предотвратить. У каждого старика в Империи есть свой набор надёжнейших дедовских средств от простуды, а также несколько историй, как она проводила их друзей и близких в Сады Морра.</p>\n<p>Персонажи с простудой, снова пострадав от непогоды в дождь или снегопад, продолжительность заболевания увеличивается на [[/r 1d10]] дней. Если персонаж более простудой больше 14 дней, она перерастает в Пневмонию.</p>\n<p>&nbsp;</p>"
-		},
-		"Cult Acolyte": {
-			"name": "Аколит культа",
-			"description": "<p>@Compendium[wfrp4e-eis.eis-journals.UW37AxkhQtUr3GuS]{Маг-культист Тзинча}</p>"
-		},
-		"Cult Magus": {
-			"name": "Маг-культист",
-			"description": "<p>@Compendium[wfrp4e-eis.eis-journals.UW37AxkhQtUr3GuS]{Маг-культист Тзинча}</p>"
-		},
-		"Disciple of Change": {
-			"name": "Апостол Перемен",
-			"description": "<p>При получении мутации, бросьте два раза 1к100 и выберите ту, которая вам больше нравится.</p>"
-		},
-		"Dog": {
-			"name": "Собака",
-			"description": "<p>@Actor[iaVpUaCKx1qEYkq1]{Собака}</p>\n<p>Грузоподъемность: 8</p>"
-		},
-		"Donkey or Mule": {
-			"name": "Осёл или Мул",
-			"description": "<p>@Actor[lOO8BfzQfP7omFe0]{Осёл} or @Actor[jd77heDEL6v768Nd]{Мул}</p>\n<p>Грузоподъемность: 14</p>"
-		},
-		"Double Life": {
-			"name": "Двойная жизнь",
-			"description": "<p><span class=\"fontstyle0\">Вы настолько искусны в сохранении своего Альтер эго, что способны жить двумя абсолютно разными жизнями. Когда вы приобретаете этот талант, вы можете взять вторую Карьеру наравне с вашей Карьерой Хаоса. Теперь вы принадлежите одновременно обоим карьерам и можете совершать шаги развития и приобретать Таланты из обеих. Любые изменения карьеры по-прежнему требуют одобрения ведущего, чтобы лучшим образом соответствовать ходу кампании и отражать вашу двойную жизнь.</span></p>"
-		},
-		"Draught Horse": {
-			"name": "Упряжная лошадь",
-			"description": "<p>@Actor[guaFC5d5WK8ExDhk]{Упряжная лошадь}</p>\n<p>Грузоподъемность: 20</p>"
-		},
-		"Fleshthief": {
-			"name": "Похититель плоти",
-			"description": "<p><span class=\"fontstyle0\">Существо, обладающее Чертой @UUID[Compendium.wfrp4e-core.items.v3uzEthcq0JRar0J]{Демон}</span><span class=\"fontstyle2\"></span><span class=\"fontstyle0\">, может носить плоть любого убитого ею человека. Кроме того, оно может идеально имитировать личность жертвы, ставшей оболочкой, вкусе с имитацией голоса и манер. Для подготовки плоти требуется [[/r 1d10]] Раундов, после чего существо может носить и снимать её по желанию, это занимает 1 Раунд. После подготовки плоть сгниёт только в случае смерти носителя, но она может быть повреждена обычными средствами. Если существо пожелает, оно может вырваться из телесной оболочки, разорвав плоть и получив черту @UUID[Compendium.wfrp4e-core.items.kJNAY1YRaCy9IgmT]{Ужас}</span><span class=\"fontstyle2\">&nbsp;</span><span class=\"fontstyle0\">на один раунд. Плоть после этого использовать уже невозможно.</span></p>\n<p><span class=\"fontstyle0\"><br>Знавшие того, чья плоть и личность была украдена, могут совершить </span><strong><span class=\"fontstyle3\">Тщетную (-40) проверку Интуиции </span></strong><span class=\"fontstyle0\">, чтобы увидеть что что-то не так, хотя и не будут точно знать что именно.</span> .</p>"
-		},
-		"Heavy Draught Horse": {
-			"name": "Тяжелая упряжная лошадь",
-			"description": "<p>@Actor[PZiW5RRL0sqmGjaL]{Тяжелая упряжная лошадь}</p>\n<p>Грузоподъемность: 30</p>"
-		},
-		"Heavy Warhorse": {
-			"name": "Тяжелый боевой конь",
-			"description": "<p>@Actor[NJxgxApkhZixXYEj]{Тяжелый боевой конь} (Дестриэ)</p>\n<p>Грузоподъемность: 20</p>"
+		"Tzeentch's Blessing": {
+			"name": "Благословение Тзинча",
+			"description": "<p><span class=\"fontstyle0\">Тзинч, Бог магии Хаоса, одарил вас червячком-паразитом, поселившемся в голове. Когда вы приобретаете этот Талант, одно Заклинание свободно проскальзывает в ваш разум, поселяется там и звучит тихим шёпотом во сне. Заклинание можно выбрать из любой Школы магии.</span></p>\n  <p><span class=\"fontstyle0\"><br>После этого вы можете приобрести по одному заклинанию Цветной магии, ценой 100 очков опыта, за каждое запоминенное заклинание Тзинча.</span> </p>",
+			"tests": ""
 		},
 		"Light Warhorse": {
 			"name": "Боевой конь",
-			"description": "<p>@Actor[QhEFgUrPzF2NNWoS]{Боевой конь} (Хобби)</p>\n<p>Грузоподъемность: 18</p>"
-		},
-		"Mark of Tzeentch": {
-			"name": "Метка Тзинча",
-			"description": "<p><span class=\"fontstyle0\">Тзинч, Повелитель Перемен, отметил это существо физическим клеймом, отметив его как важную фигуру в Великой игре. Это существо получает [[/r ceil(1d10/3)]]{1d10/3} Мутаций, чередующихся между Физическими и Ментальными. Все физические мутации должны быть определены броском по таблице мутаций Тзинча. Это существо получает @UUID[Compendium.wfrp4e-core.items.sYbgpSnRqSZWgwFP]{Этикет(Последователи Тзинча)}, и подвержено Враждебности по отношению к явным Нурглитам. Существо также испытывает Враждебность Нурглитов, если они могут видеть Метку Тзинча. Дополнительно существо может приобрести за обычную цену следующие таланты, как если-бы они были карьерными талантами: @UUID[Compendium.wfrp4e-core.items.1IZWRr7BYOIcqPlQ]{Эфирный унисон}, @UUID[Compendium.wfrp4e-core.items.3O9clK7LGyuLTHPW]{Школа Магии(любая)}, @UUID[Compendium.wfrp4e-core.items.hiU7vhBOVpVI8c7C]{Магия Хаоса(Тзинч)}, @UUID[Compendium.wfrp4e-core.items.9sMAf0xmehjEmUao]{Быстрые руки}, @UUID[Compendium.wfrp4e-core.items.BYChSVfMG004eflQ]{Безупречная дикция}, @UUID[Compendium.wfrp4e-core.items.6w30u0VPsAicrqb5]{Магическое чутье}, @UUID[Compendium.wfrp4e-core.items.mdPGZsn2396dEpOf]{Простейшая магия}, @UUID[Compendium.wfrp4e-core.items.OEjUvJKi0xmBwbS2]{Второе зрение}, @UUID[Compendium.wfrp4e-core.items.F2EiuAc6IpaGd4J7]{Боевой маг}, and @UUID[Compendium.wfrp4e-core.items.qdMbxW09FUoYBzmB]{Ведьма!}</span></p>"
-		},
-		"Master Magus": {
-			"name": "Мастер-магус",
-			"description": "<p>@Compendium[wfrp4e-eis.eis-journals.UW37AxkhQtUr3GuS]{Маг-культист Тзинча}</p>"
-		},
-		"Mindless": {
-			"name": "Неразумное",
-			"description": "<p><span class=\"fontstyle0\">Существо неразумно и живёт только своими природными инстинктами или магическим принуждением. Оно не имеет Инициативы, Интеллекта, Силы Воли и Харизмы и не может совершать проверку этих Характеристик. Для подсчёта Здоровья оно использует свой рейтинг Силы всякий раз, когда в обычно случае использовался бы Рейтинг Силы Воли. Посколько у него нет Инициативы, оно всегда совершает ход последним в Раунде</span>.</p>"
-		},
-		"Ox": {
-			"name": "Вол",
-			"description": "<p>@Actor[l7G0hmzl6VMnAXtL]{Вол}</p>\n<p>Грузоподъемность: 30</p>"
-		},
-		"Pneumonia": {
-			"name": "Пневмония",
-			"description": "<p>.</p>\n<p>Персонаж с Пневмонией должен совершать <strong>Сложную (+0) проверку Стойкости</strong> каждый день, когда он испытывает неудобство, отправляясь в путешествие, участвуя в сражении или совершает другую физическую активность. Провал проверки приводит к тому что Лихорадка становится Серьезной. Пока действует Симптом @Symptom[Лихорадка(Серьезный)] проверку необходимо совершать каждый день, в противном же случае также развивается симптом @Symptom[Летальный исход].</p>"
-		},
-		"Pony": {
-			"name": "Пони",
-			"description": "<p>@Actor[12ARFrc7Dokxc72q]{Пони}</p>\n<p>Грузоподъемность: 14</p>"
-		},
-		"Purple Brain Fever": {
-			"name": "Пурпурный менингит",
-			"description": "<p>Пурпурный менингит - страшная болезнь. Голова раздувается до ужасающих размеров и сопровождается приступами лихорадки и бреда. Лицо приобретает ужасающий сливовый оттенок, глаза лезут из орбит, а язык распухает, занимая весь рот и даже больше. Смерть обычно наступает в течение недели.</p>"
+			"description": "<p>@UUID[Compendium.wfrp4e-eis.actors.QhEFgUrPzF2NNWoS]{Боевой конь} (Хобби)</p>\n<p>Грузоподъемность: 18</p>"
 		},
 		"Riding Horse": {
 			"name": "Верховая лошадь",
-			"description": "<p>@Actor[4DTXl9hXbWlfLa5J]{Верховая лошадь} (aka Palfrey)</p>\n<p>Грузоподъемность: 16</p>"
+			"description": "<p>@UUID[Actor.4DTXl9hXbWlfLa5J]{Верховая лошадь} (aka Palfrey)</p>\n<p>Грузоподъемность: 16</p>"
+		},
+		"Ox": {
+			"name": "Вол",
+			"description": "<p>@UUID[Actor.l7G0hmzl6VMnAXtL]{Вол}</p>\n<p>Грузоподъемность: 30</p>"
+		},
+		"Double Life": {
+			"name": "Двойная жизнь",
+			"description": "<p><span class=\"fontstyle0\">Вы настолько искусны в сохранении своего Альтер эго, что способны жить двумя абсолютно разными жизнями. Когда вы приобретаете этот талант, вы можете взять вторую Карьеру наравне с вашей Карьерой Хаоса. Теперь вы принадлежите одновременно обоим карьерам и можете совершать шаги развития и приобретать Таланты из обеих. Любые изменения карьеры по-прежнему требуют одобрения ведущего, чтобы лучшим образом соответствовать ходу кампании и отражать вашу двойную жизнь.</span></p>",
+			"tests": ""
+		},
+		"Chosen of Tzeentch": {
+			"name": "Избранник Тзинча",
+			"description": "<p>@UUID[Compendium.wfrp4e-eis.journals.IZVgB7zmTm4rK2yJ.JournalEntryPage.okL3l1pH269uRycI]{Маг-культист Тзинча}</p>",
+			"careerGroup": "Маг-культист Тзинча",
+			"trappings": ["Ячейка культистов", "Волшебный предмет", "Кинжал для жертвоприношений"]
 		},
 		"Ring of Opsianon": {
 			"name": "Кольцо Опсианона",
 			"description": "<p>Гидеон носит золотое кольцо с чёрным гранёным обсидианом.</p>"
 		},
+		"Cult Magus": {
+			"name": "Маг-культист",
+			"description": "<p>@UUID[Compendium.wfrp4e-eis.journals.IZVgB7zmTm4rK2yJ.JournalEntryPage.okL3l1pH269uRycI]{Маг-культист Тзинча}</p>",
+			"careerGroup": "Маг-культист Тзинча",
+			"trappings": ["Гримуар Хаоса", "Отличное ритуальное облачение", "Клубок интриг"]
+		},
+		"Master Magus": {
+			"name": "Мастер-магус",
+			"description": "<p>@UUID[Compendium.wfrp4e-eis.journals.IZVgB7zmTm4rK2yJ.JournalEntryPage.okL3l1pH269uRycI]{Маг-культист Тзинча}</p>",
+			"careerGroup": "Маг-культист Тзинча",
+			"trappings": ["Культ Хаоса", "Ужасающее предназначение"]
+		},
+		"Mark of Tzeentch": {
+			"name": "Метка Тзинча",
+			"description": "<p><span class=\"fontstyle0\">Тзинч, Повелитель Перемен, отметил это существо физическим клеймом, отметив его как важную фигуру в Великой игре. Это существо получает [[/r ceil(1d10/3)]]{1d10/3} Мутаций, чередующихся между Физическими и Ментальными. Все физические мутации должны быть определены броском по таблице мутаций Тзинча. Это существо получает @UUID[Compendium.wfrp4e-core.items.sYbgpSnRqSZWgwFP]{Этикет(Последователи Тзинча)}, и подвержено Враждебности по отношению к явным Нурглитам. Существо также испытывает Враждебность Нурглитов, если они могут видеть Метку Тзинча. Дополнительно существо может приобрести за обычную цену следующие таланты, как если-бы они были карьерными талантами: @UUID[Compendium.wfrp4e-core.items.1IZWRr7BYOIcqPlQ]{Эфирный унисон}, @UUID[Compendium.wfrp4e-core.items.3O9clK7LGyuLTHPW]{Школа Магии(любая)}, @UUID[Compendium.wfrp4e-core.items.hiU7vhBOVpVI8c7C]{Магия Хаоса(Тзинч)}, @UUID[Compendium.wfrp4e-core.items.9sMAf0xmehjEmUao]{Быстрые руки}, @UUID[Compendium.wfrp4e-core.items.BYChSVfMG004eflQ]{Безупречная дикция}, @UUID[Compendium.wfrp4e-core.items.6w30u0VPsAicrqb5]{Магическое чутье}, @UUID[Compendium.wfrp4e-core.items.mdPGZsn2396dEpOf]{Простейшая магия}, @UUID[Compendium.wfrp4e-core.items.OEjUvJKi0xmBwbS2]{Второе зрение}, @UUID[Compendium.wfrp4e-core.items.F2EiuAc6IpaGd4J7]{Боевой маг}, and @UUID[Compendium.wfrp4e-core.items.qdMbxW09FUoYBzmB]{Ведьма!}</span></p>"
+		},
+		"Mindless": {
+			"name": "Неразумное",
+			"description": "<p><span class=\"fontstyle0\">Существо неразумно и живёт только своими природными инстинктами или магическим принуждением. Оно не имеет Инициативы, Интеллекта, Силы Воли и Харизмы и не может совершать проверку этих Характеристик. Для подсчёта Здоровья оно использует свой рейтинг Силы всякий раз, когда в обычно случае использовался бы Рейтинг Силы Воли. Посколько у него нет Инициативы, оно всегда совершает ход последним в Раунде</span>.</p>"
+		},
+		"Donkey or Mule": {
+			"name": "Осёл или Мул",
+			"description": "<p>@UUID[Actor.lOO8BfzQfP7omFe0]{Осёл} or @UUID[Actor.jd77heDEL6v768Nd]{Мул}</p>\n<p>Грузоподъемность: 14</p>"
+		},
 		"Shapeshifter": {
 			"name": "Перевёртыш",
 			"description": "<p><span class=\"fontstyle0\">Это существо может по желанию менять свой облик, оборачиваясь из человека в обозначенное Существо. Трансформация занимает полный Раунд, в течение которого оно не может совершить ни Движение, ни Действие. Когда луна Маннслиб полна, это существо должно пройти </span><strong><span class=\"fontstyle2\">Заурядную (+20) проверку Силы Воли </span></strong><span class=\"fontstyle0\">, чтобы избежать принудительной трансформации. Существа, приобретающие данную Черту, испытывают серьезные сложности с Проверкой Силы воли на первых порах (по усмотрению ведущего). При трансформации существо сохраняет свои ментальные атрибуты (</span><span class=\"fontstyle2\">Инт</span><span class=\"fontstyle0\">, </span><span class=\"fontstyle2\">СВ</span><span class=\"fontstyle0\">, и </span><span class=\"fontstyle2\">Х</span><span class=\"fontstyle0\">), но остальная часть его профиля становится профилем обозначенного Существа.</span></p>"
 		},
-		"Split": {
-			"name": "Разделение",
-			"description": "<p><span class=\"fontstyle0\">Если существо получает Травму, оно разделяется на две части и заменяется двумя @Actor[cLOGeMqUty61nYB9]{Голубыми ужасами}, которые полностью здоровы.</span></p>"
-		},
-		"Suffused with Magic": {
-			"name": "Полон магии",
-			"description": "<p><span class=\"fontstyle0\">Все заклинания, произнесенные в пределах Рейтинга СВ ярдов от вас, получаются +1 УУ к сотворению. Этот бонус можно получить только один раз за сотворение, независимо от того, сколько персонажей с талантом находится рядом.</span></p>"
-		},
-		"Tzeentch's Blessing": {
-			"name": "Благословение Тзинча",
-			"description": "<p><span class=\"fontstyle0\">Тзинч, Бог магии Хаоса, одарил вас червячком-паразитом, поселившемся в голове. Когда вы приобретаете этот Талант, одно Заклинание свободно проскальзывает в ваш разум, поселяется там и звучит тихим шёпотом во сне. Заклинание можно выбрать из любой Школы магии.</span></p>\n  <p><span class=\"fontstyle0\"><br>После этого вы можете приобрести по одному заклинанию Цветной магии, ценой 100 очков опыта, за каждое запоминенное заклинание Тзинча.</span> </p>"
+		"Blighted": {
+			"name": "Переносчик болезни",
+			"description": "<p><span class=\"fontstyle0\">Существо источает означенную болезнь, и передаёт её при контакте. При прикосновении пострадавший должен совершить Проверку Заражения, но проверка на 2 шага сложнее обычного. Если жертва заражается болезнью, её инкубационный период меняется на 'Отсутсвует'</span></p>"
 		},
 		"Tzeentch's Fire": {
 			"name": "Пламя Тзинча",
-			"description": "<p><span class=\"fontstyle0\">Существо объято пламенем Тзинча</span><span class=\"fontstyle2\">&rsquo;</span><span class=\"fontstyle0\">, слетающее с кончиков пальцев, вырывающееся из глаз и рта. Все существа одного типа (например Розовые или Голубые Ужасы), находящиеся поблизости, объединяют свою силу. Один Ужас выбирается в качестве средоточия(заклинателя) и может сотворить 1 заклинание Тзинча: Розовые ужасы произносят @Compendium[wfrp4e-eis.eisspells.sklbZU3K8ogeu3mC]{Розовое пламя Тзинча}; другие существа произносят заклинание @Compendium[wfrp4e-eis.eisspells.wY6JAt76eArBroYC]{Голубое пламя Тзинча} Spell. Каждое дополнительно участвующее в объединении сил существо добавляет +1 УУ, вплоть до максимума +9 УУ, в качестве Свободного действия.</span></p>"
+			"description": "<p><span class=\"fontstyle0\">Существо объято пламенем Тзинча</span><span class=\"fontstyle2\">&rsquo;</span><span class=\"fontstyle0\">, слетающее с кончиков пальцев, вырывающееся из глаз и рта. Все существа одного типа (например Розовые или Голубые Ужасы), находящиеся поблизости, объединяют свою силу. Один Ужас выбирается в качестве средоточия(заклинателя) и может сотворить 1 заклинание Тзинча: Розовые ужасы произносят @UUID[Compendium.wfrp4e-eis.items.sklbZU3K8ogeu3mC]{Розовое пламя Тзинча}; другие существа произносят заклинание @UUID[Compendium.wfrp4e-eis.items.wY6JAt76eArBroYC]{Голубое пламя Тзинча} Spell. Каждое дополнительно участвующее в объединении сил существо добавляет +1 УУ, вплоть до максимума +9 УУ, в качестве Свободного действия.</span></p>"
+		},
+		"Pneumonia": {
+			"name": "Пневмония",
+			"description": "<p>.</p>\n<p>Персонаж с Пневмонией должен совершать <strong>Сложную (+0) проверку Стойкости</strong> каждый день, когда он испытывает неудобство, отправляясь в путешествие, участвуя в сражении или совершает другую физическую активность. Провал проверки приводит к тому что Лихорадка становится Серьезной. Пока действует Симптом @Symptom[Лихорадка(Серьезный)] проверку необходимо совершать каждый день, в противном же случае также развивается симптом @Symptom[Летальный исход].</p>",
+			"contraction": "See Common Cold",
+			"symptoms": "Coughs and Sneezes, Fever, Malaise",
+			"permanent": "",
+			"incubation_value": "Instantaneous"
+		},
+		"Absorb": {
+			"name": "Поглощение",
+			"description": "<p><span class=\"fontstyle0\">В конце раунда, если существо имеет Преимущество больше, чем связанные с ним боем враги, оно поглощает одного противника равного размера или меньше. Поглощённая жертва получает состояния  </span>@Condition[Обездвижен] <span class=\"fontstyle0\">в количестве, равном Рейтингу Силы существа и считается находящейся @UUID[JournalEntry.t36Z4DOhYnfX1dr3]{В клинче}. Поглощённая жертва теряет Рейтинг Силы существа здоровья в конце каждого раунда; Броня и Рейтинг Выносливости не уменьшают этот урон. Существо исцеляется на то-же самое количество Здоровья. Если поглощённая жертва погибает, существо отступает, чтобы переварить поглощённое тело в течение следующих нескольких дней. Любая атака, поражающая существо, наносит такое-же количество урона поглощённой жертве.</span></p>"
+		},
+		"Suffused with Magic": {
+			"name": "Полон магии",
+			"description": "<p><span class=\"fontstyle0\">Все заклинания, произнесенные в пределах Рейтинга СВ ярдов от вас, получаются +1 УУ к сотворению. Этот бонус можно получить только один раз за сотворение, независимо от того, сколько персонажей с талантом находится рядом.</span></p>",
+			"tests": ""
+		},
+		"Pony": {
+			"name": "Пони",
+			"description": "<p>@UUID[Actor.12ARFrc7Dokxc72q]{Пони}</p>\n<p>Грузоподъемность: 14</p>"
+		},
+		"Fleshthief": {
+			"name": "Похититель плоти",
+			"description": "<p><span class=\"fontstyle0\">Существо, обладающее Чертой @UUID[Compendium.wfrp4e-core.items.v3uzEthcq0JRar0J]{Демон}</span><span class=\"fontstyle2\"></span><span class=\"fontstyle0\">, может носить плоть любого убитого ею человека. Кроме того, оно может идеально имитировать личность жертвы, ставшей оболочкой, вкусе с имитацией голоса и манер. Для подготовки плоти требуется [[/r 1d10]] Раундов, после чего существо может носить и снимать её по желанию, это занимает 1 Раунд. После подготовки плоть сгниёт только в случае смерти носителя, но она может быть повреждена обычными средствами. Если существо пожелает, оно может вырваться из телесной оболочки, разорвав плоть и получив черту @UUID[Compendium.wfrp4e-core.items.kJNAY1YRaCy9IgmT]{Ужас}</span><span class=\"fontstyle2\">&nbsp;</span><span class=\"fontstyle0\">на один раунд. Плоть после этого использовать уже невозможно.</span></p>\n<p><span class=\"fontstyle0\"><br>Знавшие того, чья плоть и личность была украдена, могут совершить </span><strong><span class=\"fontstyle3\">Тщетную (-40) проверку Интуиции </span></strong><span class=\"fontstyle0\">, чтобы увидеть что что-то не так, хотя и не будут точно знать что именно.</span> .</p>"
+		},
+		"Common Cold": {
+			"name": "Простуда",
+			"description": "<p>Сезонная, как осенний листопад, простуда всё-же является вечным бичом Старого Света. Начинаясь с чихания и покашливания, она имеет все шансы усугубиться, если не попытаться это предотвратить. У каждого старика в Империи есть свой набор надёжнейших дедовских средств от простуды, а также несколько историй, как она проводила их друзей и близких в Сады Морра.</p>\n<p>Персонажи с простудой, снова пострадав от непогоды в дождь или снегопад, продолжительность заболевания увеличивается на [[/r 1d10]] дней. Если персонаж более простудой больше 14 дней, она перерастает в Пневмонию.</p>\n<p>&nbsp;</p>",
+			"contraction": "If you fail a Challenging (+0) Endurance Test when exposed to the elements, or when an infected person sneezes or coughs in your immediate vicinity.",
+			"symptoms": "Coughs and Sneezes, Malaise",
+			"permanent": "",
+			"incubation_value": "20+4d10"
+		},
+		"Purple Brain Fever": {
+			"name": "Пурпурный менингит",
+			"description": "<p>Пурпурный менингит - страшная болезнь. Голова раздувается до ужасающих размеров и сопровождается приступами лихорадки и бреда. Лицо приобретает ужасающий сливовый оттенок, глаза лезут из орбит, а язык распухает, занимая весь рот и даже больше. Смерть обычно наступает в течение недели.</p>",
+			"contraction": "If you fail an <b>Average (+20) Endurance</b> Test when physical contact is made with an infected individual (at a rate of 1 Test per hour of exposure).",
+			"symptoms": "Blight, Convulsions, Delirium, Fever (Severe), Lingering (Challenging), Swelling (face and head).",
+			"permanent": "",
+			"incubation_value": "1d10"
+		},
+		"Split": {
+			"name": "Разделение",
+			"description": "<p><span class=\"fontstyle0\">Если существо получает Травму, оно разделяется на две части и заменяется двумя @UUID[Actor.cLOGeMqUty61nYB9]{Голубыми ужасами}, которые полностью здоровы.</span></p>"
+		},
+		"Dog": {
+			"name": "Собака",
+			"description": "<p>@UUID[Actor.iaVpUaCKx1qEYkq1]{Собака}</p>\n<p>Грузоподъемность: 8</p>"
+		},
+		"Heavy Draught Horse": {
+			"name": "Тяжелая упряжная лошадь",
+			"description": "<p>@UUID[Actor.PZiW5RRL0sqmGjaL]{Тяжелая упряжная лошадь}</p>\n<p>Грузоподъемность: 30</p>"
+		},
+		"Heavy Warhorse": {
+			"name": "Тяжелый боевой конь",
+			"description": "<p>@UUID[Actor.NJxgxApkhZixXYEj]{Тяжелый боевой конь} (Дестриэ)</p>\n<p>Грузоподъемность: 20</p>"
+		},
+		"Draught Horse": {
+			"name": "Упряжная лошадь",
+			"description": "<p>@UUID[Actor.guaFC5d5WK8ExDhk]{Упряжная лошадь}</p>\n<p>Грузоподъемность: 20</p>"
+		},
+		"Acid Blood": {
+			"name": "Acid Blood",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.M5QSWOYt2Rbv2yxW]{Corrosive Blood}&nbsp;Creature Trait</p>"
+		},
+		"Aethyric Leak": {
+			"name": "Aethyric Leak",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.qdMbxW09FUoYBzmB]{Witch!} Talent</p>"
+		},
+		"Animalistic Legs": {
+			"name": "Animalistic Legs",
+			"description": "<p>+1 Movement; this mutation can only be hidden by clothing; <strong>Difficult (&ndash;10) Athletics </strong>Test to walk with a normal gait</p>"
+		},
+		"Animalistic Psyche": {
+			"name": "Animalistic Psyche",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.AGcJl5rHjkyIQBPP]{Bestial} Creature Trait for [[/r 1d10]] hours if you fail a Test derived from Willpower</p>"
+		},
+		"Beacon of Corruption": {
+			"name": "Beacon of Corruption",
+			"description": "<p>Whenever subject to Psychology, gain the @UUID[Compendium.wfrp4e-core.items.xsGbDFqK2qh7lsIj]{Corruption} (Minor) Creature Trait</p>"
+		},
+		"Beaked Face": {
+			"name": "Beaked Face",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv]{Bite}&nbsp;+3 Creature Trait; this mutation cannot be hidden</p>"
+		},
+		"Bear Head": {
+			"name": "Bear Head",
+			"description": "<p>+1 Armour Point to the Head; Gain the @UUID[Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv]{Bite} +9 Creature Trait; this mutation cannot be hidden</p>"
+		},
+		"Beast Head": {
+			"name": "Beast Head",
+			"description": "<p>Roll on the @Table[beasthead] Table; this mutation cannot be hidden</p>"
+		},
+		"Bestial Face (Dog)": {
+			"name": "Bestial Face (Dog)",
+			"description": "<p>You feel an irresistible urge to fall to your knees and howl. As your jaw is forced to its maximum extension, you begin to choke uncontrollably as a thickly furred snout forces its way through your face. Your Human nose, lips, and teeth slough off, nothing more than relics of your former existence, replaced by the snarling face of a dog.</p>\n<p>Lose 20 Fellowship and 10 Intelligence. Gain the @UUID[Compendium.wfrp4e-core.items.9h82z72XGo9tfgQS]{Acute Sense (Smell)} Talent.</p>"
+		},
+		"Beweaponed Extremities": {
+			"name": "Beweaponed Extremities",
+			"description": "<p>Permanently reduce Dexterity to 0. You cannot be disarmed; this mutation cannot be hidden</p>"
+		},
+		"Beyond Pain": {
+			"name": "Beyond Pain",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.wMwSRDmgiF2IdCJr]{Painless} Creature Trait</p>"
+		},
+		"Big Ears": {
+			"name": "Big Ears",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.9h82z72XGo9tfgQS]{Acute Sense}&nbsp;(Hearing) Talent; this mutation can only be hidden by clothing</p>"
+		},
+		"Bird's Feet": {
+			"name": "Bird's Feet",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.rOV2s6PQBBrhpMOv]{Arboreal} Creature Trait</p>"
+		},
+		"Blank Face": {
+			"name": "Blank Face",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Fear}&nbsp;2 Creature Trait; this mutation can only be hidden by clothing</p>"
+		},
+		"Blasphemous Soul": {
+			"name": "Blasphemous Soul",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.aE3pyW20Orvdjzj0]{Hatred} (Religion) Creature Trait</p>"
+		},
+		"Blast of Corruption (Tzeentch)": {
+			"name": "Blast of Corruption (Tzeentch)",
+			"description": "<p><span class=\"fontstyle0\">You channel profane magic into an explosive blast of corruption. This is a magic missile with Damage +5 that targets everyone in the Area of Effect. Everyone affected by the spell must pass a </span><strong><span class=\"fontstyle2\">Challenging (+0) Endurance </span></strong><span class=\"fontstyle0\">Test, or gain 1 Corruption.</span></p><p>\n\n <b>Lore:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Blast of Corruption (Undivided)": {
+			"name": "Blast of Corruption (Undivided)",
+			"description": "<p><span class=\"fontstyle0\">You channel profane magic into an explosive blast of corruption. This is a magic missile with Damage +5 that targets everyone in the Area of Effect. Everyone affected by the spell must pass a </span><strong><span class=\"fontstyle2\">Challenging (+0) Endurance </span></strong><span class=\"fontstyle0\">Test, or gain 1 Corruption.</span></p>"
+		},
+		"Blasted Mind": {
+			"name": "Blasted Mind",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.IAWyzDfC286a9MPz]{Immunity to Psychology} Creature Trait for [[/r 1d10]]&nbsp; Rounds whenever you would take a @Condition[Broken] Condition, afterwards take [[/r 1d10]] Broken Conditions</p>"
+		},
+		"Blue Fire of Tzeentch": {
+			"name": "Blue Fire of Tzeentch",
+			"description": "<p>Your words conjure a writhing ball of coruscating blue fire that engulfs your foes. <em>Blue Fire of Tzeentch </em>is a <em>magic missile</em>. Anyone within your Initiative Bonus yards of the target suffers a +3 Damage hit, and gains +1 @Condition[Ablaze] Condition.</p><p>Should a Character of size small or larger be reduced to 0 Wounds by this spell, or while suffering from an <em>Ablaze </em>Condition from <em>Blue Fire of Tzeentch</em>, roll a [[/r 1d10]]. On a roll of 9, two @UUID[Compendium.wfrp4e-eis.actors.cLOGeMqUty61nYB9]{Blue Horror of Tzeentch} claw their way out of the Character’s screaming flesh, killing them in the process.</p><p><strong>Lore:</strong> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.</p><p></p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Boar Head": {
+			"name": "Boar Head",
+			"description": "<p>+1 Armour Point to the Head; @UUID[Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW]{Horns (Tusks)} Creature Trait; this mutation cannot be hidden</p>"
+		},
+		"Bolt of Change": {
+			"name": "Bolt of Change",
+			"description": "<p>A pulsating bolt of scintillating Chaotic energy rends the air. <strong>Bolt of Change</strong> is a <em>magic missile</em>, and targets suffer a +7 Damage hit. Further, targets must make a <strong>Challenging (+0) Endurance</strong> Test. A target that fails gains +1 Corruption Point. On a fumble, the target immediately rolls for a Mutation (@Table[expandedmutatemental]{Mental} or @Table[expandedmutatephys]{Physical}), and gains the @UUID[Compendium.wfrp4e-core.items.hiU7vhBOVpVI8c7C]{Chaos Magic (Tzeentch)}  Talent. A Character affected by this spell may resist a mutation by spending a point of Resolve. </p><p><strong>Lore:</strong> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.</p><p></p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Bolt of Corruption (Tzeentch)": {
+			"name": "Bolt of Corruption (Tzeentch)",
+			"description": "<p><span class=\"fontstyle0\">You channel dark magic into a damaging bolt of corrosive power. This is a magic missile with a Damage of +6. Targets affected by the spell must pass a </span><strong><span class=\"fontstyle2\">Challenging (+0) Endurance </span></strong><span class=\"fontstyle0\">Test, or gain 1 Corruption.</span></p><p>\n\n <b>Lore:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Bolt of Corruption (Undivided)": {
+			"name": "Bolt of Corruption (Undivided)",
+			"description": "<p><span class=\"fontstyle0\">You channel dark magic into a damaging bolt of corrosive power. This is a magic missile with a Damage of +6. Targets affected by the spell must pass a </span><strong><span class=\"fontstyle2\">Challenging (+0) Endurance </span></strong><span class=\"fontstyle0\">Test, or gain 1 Corruption.</span></p>"
+		},
+		"Boon of Tzeentch": {
+			"name": "Boon of Tzeentch",
+			"description": "<p><span class=\"fontstyle0\">Your words, imbued with the labyrinthine prescience of the Changer of the Ways, twist your mind, granting you access to new arcane knowledge. Choose one Spell from any Lore (to ensure swift play, the GM may impose a nine second time limit). While </span><em><span class=\"fontstyle2\">Boon of Tzeentch </span></em><span class=\"fontstyle0\">is in effect, you may cast your new Spell as if you had memorised it, but may not record it in a Grimoire, Scroll, or similar. If you channel to cast the new Spell, you may use either Channelling (</span><em><span class=\"fontstyle2\">Dhar</span></em><span class=\"fontstyle0\">) or the Channelling Skill appropriate to the Lore the spell normally requires, should you possess it.<br></span></p>\n<p><span class=\"fontstyle0\">If you suffer a miscast when channelling or casting this new Spell, the </span><em><span class=\"fontstyle2\">Boon of Tzeentch </span></em><span class=\"fontstyle0\">Spell quits your mind in disgust, and also erases itself from your grimoire should it have allowed itself to be recorded there.</span></p><p>\n\n <b>Lore:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Breathe Fire": {
+			"name": "Breathe Fire",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.uqGxFOEqeurwkAO3]{Breath}&nbsp;5 Fire Creature Trait</p>"
+		},
+		"Bulging Eyes": {
+			"name": "Bulging Eyes",
+			"description": "<p>+10 Initiative; this mutation can only be hidden by clothing</p>"
+		},
+		"Bull Head": {
+			"name": "Bull Head",
+			"description": "<p>+1 Armour Point to the Head; gain the @UUID[Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW]{Horns} Creature Trait; this mutation cannot be hidden</p>"
+		},
+		"Burning Skin": {
+			"name": "Burning Skin",
+			"description": "<p>Creatures and objects that physically touch you must pass an Athletics Test or gain 1 @Condition[Ablaze] Condition; this mutation cannot be hidden</p>"
+		},
+		"Carapace": {
+			"name": "Carapace",
+			"description": "<p>+1 Armour Point on two random Hit Locations; this mutation can only be hidden by clothing</p>"
+		},
+		"Claws": {
+			"name": "Claws",
+			"description": "<p>Hands count as a Creature @UUID[Compendium.wfrp4e-core.items.AtpAudHA4ybXVlWM]{Weapon} of Damage equal to your SB; this mutation cannot be hidden</p>"
+		},
+		"Cloud of Flies": {
+			"name": "Cloud of Flies",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF]{Distracting}&nbsp;Creature Trait; this mutation cannot be hidden</p>"
+		},
+		"Corpulent": {
+			"name": "Corpulent",
+			"description": "<p>-1 Movement, +5 Strength, +5 Toughness</p>"
+		},
+		"Crested Head": {
+			"name": "Crested Head",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.6l3jvIAvrKxt0lA9]{Attractive}&nbsp;Talent when Dealing with Mutants and Beastmen; this mutation cannot be hidden</p>"
+		},
+		"Curse of Tzeentch": {
+			"name": "Curse of Tzeentch",
+			"description": "<p><span class=\"fontstyle0\">Tzeentchian Lore has it that all spells ultimately derive from the God’s will, and so belong to him. Using this spell, a Tzeentch sorcerer can cause another wizard to lose the knowledge and ability to cast a spell they previously had mastery of.<br></span></p>\n<p><span class=\"fontstyle0\">Should the curse of Tzeentch be successfully cast, the caster must then make an opposed </span><span class=\"fontstyle2\"><strong>Willpower</strong> </span><span class=\"fontstyle0\">Test against the target. If the caster wins, the target loses access to a randomly selected spell. The effects of the spell lasts for one day for every level of success scored by the caster during the opposed test.</span></p><p>\n\n <b>Lore:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Deafening Cry": {
+			"name": "Deafening Cry",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF]{Distracting}&nbsp;Creature Trait</p>"
+		},
+		"Demonic Mien (Tzeentch)": {
+			"name": "Demonic Mien (Tzeentch)",
+			"description": "<p><span class=\"fontstyle0\">You channel the transformative power of Chaos into your own flesh, temporarily sacrificing your mortal form on the altar of your god&rsquo;s will. Your body is warped, assuming aspects of a Daemon loyal to your patron god. Roll on the @Table[demonic-mien] table, and apply the relevant Trait for the duration of the spell. For every +2 </span><span class=\"fontstyle2\">SL </span><span class=\"fontstyle0\">you may both extend the duration and roll again on the table. Should you roll the&nbsp;</span><span class=\"fontstyle3\">@UUID[Compendium.wfrp4e-core.items.v3uzEthcq0JRar0J]{Daemonic} </span><span class=\"fontstyle0\">Trait and be reduced to 0 Wounds, your soul is sucked into the Realms of Chaos as described in the Creature Traits rules.</span></p><p>\n\n <b>Lore:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Demonic Mien (Undivided)": {
+			"name": "Demonic Mien (Undivided)",
+			"description": "<p><span class=\"fontstyle0\">You channel the transformative power of Chaos into your own flesh, temporarily sacrificing your mortal form on the altar of your god’s will. Your body is warped, assuming aspects of a Daemon loyal to your patron god. Roll on the @Table[demonic-mien] table, and apply the relevant Trait for the duration of the spell. For every +2&nbsp;</span><span class=\"fontstyle2\">SL&nbsp;</span><span class=\"fontstyle0\">you may both extend the duration and roll again on the table. Should you roll the&nbsp;</span><span class=\"fontstyle3\">@UUID[Compendium.wfrp4e-core.items.v3uzEthcq0JRar0J]{Daemonic}&nbsp;</span><span class=\"fontstyle0\">Trait and be reduced to 0 Wounds, your soul is sucked into the Realms of Chaos as described in the Creature Traits rules.</span></p>"
+		},
+		"Distended Digits": {
+			"name": "Distended Digits",
+			"description": "<p>+10 Dexterity; this mutation cannot be hidden</p>"
+		},
+		"Dog Head": {
+			"name": "Dog Head",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv]{Bite +5} Creature Trait; this mutation cannot be hidden</p>"
+		},
+		"Eagle Head": {
+			"name": "Eagle Head",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv]{Bite} +4 Creature Trait; this mutation cannot be hidden</p>"
+		},
+		"Elastic Arms": {
+			"name": "Elastic Arms",
+			"description": "<p>You may count any melee weapon as having a Reach up to 2 steps longer</p>"
+		},
+		"Emaciated": {
+			"name": "Emaciated",
+			"description": "<p>-10 Strength, +5 Agility</p>"
+		},
+		"Evil Eye": {
+			"name": "Evil Eye",
+			"description": "<p>You may cast @UUID[Compendium.wfrp4e-core.items.CnydL8p3PVAuF98w]{The Evil Eye} Spell without performing a Test by spending a Fortune Point; you immediately suffer a @Table[minormis]{Minor Miscast}</p>"
+		},
+		"Extra Leg Joints": {
+			"name": "Extra Leg Joints",
+			"description": "<p>+5 Agility; this mutation cannot be hidden</p>"
+		},
+		"Extra Mouth": {
+			"name": "Extra Mouth",
+			"description": "<p>Roll on the @Table[hitloc]{Hit Location} table to see where; this mutation can only be hidden by clothing</p>"
+		},
+		"Eyestalks": {
+			"name": "Eyestalks",
+			"description": "<p>See over/around obstacles; this mutation cannot be hidden</p>"
+		},
+		"Fantasist": {
+			"name": "Fantasist",
+			"description": ""
+		},
+		"Fitful Hatred": {
+			"name": "Fitful Hatred",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.aE3pyW20Orvdjzj0]{Hatred} (Target) Creature Trait. Roll on the @Table[fixations]{Fixations} Table once per day for the Target</p>"
+		},
+		"Fleshy Tentacle": {
+			"name": "Fleshy Tentacle",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.4xF7M6ylIiGntekh]{# Tentacles}&nbsp;Creature Trait; this mutation can only be hidden by clothing</p>"
+		},
+		"Foul Messenger (Tzeentch)": {
+			"name": "Foul Messenger (Tzeentch)",
+			"description": "<p><span class=\"fontstyle0\">You conjure forth a swarm of minor daemons shackled to&nbsp; your will. The form of the daemons will vary depending on your deity. The daemons will bear a short message (approximately 25 words) to your target. They travel almost instantaneously, and are invisible (and inaudible) to anyone without the @UUID[Compendium.wfrp4e-core.items.OEjUvJKi0xmBwbS2]{Second Sight}</span><span class=\"fontstyle2\">&nbsp;</span><span class=\"fontstyle0\">Talent even while delivering their message. Anyone with the Talent may make a </span><strong><span class=\"fontstyle3\">Hard (&ndash;20) Perception </span></strong><span class=\"fontstyle0\"><strong>Test</strong> to notice the swarm, and hear their message. For every +2 SLs, you may double the length of the message.</span></p><p>\n\n <b>Lore:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Foul Messenger (Undivided)": {
+			"name": "Foul Messenger (Undivided)",
+			"description": "<p><span class=\"fontstyle0\">You conjure forth a swarm of minor daemons shackled to&nbsp; your will. The form of the daemons will vary depending on your deity. The daemons will bear a short message (approximately 25 words) to your target. They travel almost instantaneously, and are invisible (and inaudible) to anyone without the @UUID[Compendium.wfrp4e-core.items.OEjUvJKi0xmBwbS2]{Second Sight}</span><span class=\"fontstyle2\">&nbsp;</span><span class=\"fontstyle0\">Talent even while delivering their message. Anyone with the Talent may make a&nbsp;</span><strong>Hard (–20) Perception&nbsp;</strong><span class=\"fontstyle0\"><strong>Test</strong>&nbsp;to notice the swarm, and hear their message. For every +2 SLs, you may double the length of the message.</span></p>"
+		},
+		"Foul Odour": {
+			"name": "Foul Odour",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF]{Distracting}&nbsp;Creature Trait</p>"
+		},
+		"Furred Skin": {
+			"name": "Furred Skin",
+			"description": "<p>You no longer suffer the effects of Exposure in cold climates; the effects of Exposure in hot climates are doubled; this mutation cannot be hidden</p>"
+		},
+		"Giant Spider Head": {
+			"name": "Giant Spider Head",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv]{Bite} +3 and @UUID[Compendium.wfrp4e-core.items.gFkRm9wS65qe18Xv]{Venom (Average)} Creature Traits, this mutation cannot be hidden</p>"
+		},
+		"Gills": {
+			"name": "Gills",
+			"description": "<p>You can breathe underwater; this mutation can only be hidden by clothing</p>"
+		},
+		"Glorious Corruption": {
+			"name": "Glorious Corruption",
+			"description": "<p><span class=\"fontstyle0\">Gain a </span><span class=\"fontstyle2\">@Condition[Fatigued] </span><span class=\"fontstyle0\">Condition for every week you go without gaining a Corruption Point, or where you are not responsible for another Character gaining a Corruption Point; lose all Fatigued Conditions if either situation occurs</span></p>"
+		},
+		"Glowing Skin": {
+			"name": "Glowing Skin",
+			"description": "<p>Effective light of a candle; this mutation cannot be hidden</p>"
+		},
+		"Goat Head": {
+			"name": "Goat Head",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW]{Horns} Creature Trait, this mutation cannot be hidden</p>"
+		},
+		"Headless": {
+			"name": "Headless",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Fear}&nbsp;2 Creature Trait; Head hits count as misses; this mutation cannot be hidden</p>"
+		},
+		"Hopper": {
+			"name": "Hopper",
+			"description": "<p>Your Movement is reduced to 2 and cannot be increase; gain the @UUID[Compendium.wfrp4e-core.items.j6v78dnOOdCB6c3d]{Bounce}&nbsp;Creature Trait; this mutation cannot be hidden</p>"
+		},
+		"Hounds of Despair": {
+			"name": "Hounds of Despair",
+			"description": "<p>Gain the @Symptom[Malaise] Symptom for [[/r 1d10]] hours if you fail a Test Derived from Willpower</p>"
+		},
+		"Hurried Masochism": {
+			"name": "Hurried Masochism",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.GbDyBCu8ZjDp6dkj]{Belligerent} Creature Trait; you cannot Flee voluntarilly</p>"
+		},
+		"Inhuman Beauty": {
+			"name": "Inhuman Beauty",
+			"description": "<p>+10 Fellowship; you do not scar</p>"
+		},
+		"Iron Skin": {
+			"name": "Iron Skin",
+			"description": "<p>+2 Armour Points to all locations; -10 Agility</p>"
+		},
+		"Joyous Aspect (Tzeentch)": {
+			"name": "Joyous Aspect (Tzeentch)",
+			"description": "<p><span class=\"fontstyle0\">The caster infuses the target (perhaps themselves) with a corrupted caul of </span><em><span class=\"fontstyle2\">Dhar</span></em><span class=\"fontstyle0\">-infused </span><em><span class=\"fontstyle2\">Ulgu</span></em><span class=\"fontstyle0\">, sheathing them in an aura of concealment. While the spell is in force, the target appears without flaw, or blemish. Scars, deformities and, most crucially, mutations are undetectable, save through Divine means.&nbsp;</span></p>\n<p><span class=\"fontstyle0\">While obvious deformities are hidden, the targets can appear strange, or outlandish, infused with too much life, or unnaturally alluring. Passing a </span><strong><span class=\"fontstyle2\">Hard (&ndash;20) Perception </span></strong><span class=\"fontstyle0\"><strong>Test</strong> reveals something is awry, though not precisely what. For Characters with the @UUID[Compendium.wfrp4e-core.items.OEjUvJKi0xmBwbS2]{Second Sight}</span><em><span class=\"fontstyle3\">&nbsp;</span></em><span class=\"fontstyle0\">Talent the Test is&nbsp; <strong>C</strong></span><strong><span class=\"fontstyle2\">hallenging (+0)</span></strong><span class=\"fontstyle0\">, and should they succeed they will become aware that a spell is in place, but not what it hides.</span></p><p>\n\n <b>Lore:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Joyous Aspect (Undivided)": {
+			"name": "Joyous Aspect (Undivided)",
+			"description": "<p><span class=\"fontstyle0\">The caster infuses the target (perhaps themselves) with a corrupted caul of&nbsp;</span><em>Dhar</em><span class=\"fontstyle0\">-infused&nbsp;</span><em>Ulgu</em><span class=\"fontstyle0\">, sheathing them in an aura of concealment. While the spell is in force, the target appears without flaw, or blemish. Scars, deformities and, most crucially, mutations are undetectable, save through Divine means.&nbsp;</span></p>\n<p><span class=\"fontstyle0\">While obvious deformities are hidden, the targets can appear strange, or outlandish, infused with too much life, or unnaturally alluring. Passing a&nbsp;</span><strong>Hard (–20) Perception&nbsp;</strong><span class=\"fontstyle0\"><strong>Test</strong>&nbsp;reveals something is awry, though not precisely what. For Characters with the @UUID[Compendium.wfrp4e-core.items.OEjUvJKi0xmBwbS2]{Second Sight}</span><em>&nbsp;</em><span class=\"fontstyle0\">Talent the Test is&nbsp;&nbsp;<strong>C</strong></span><strong>hallenging (+0)</strong><span class=\"fontstyle0\">, and should they succeed they will become aware that a spell is in place, but not what it hides.</span></p>"
+		},
+		"Lingering Foulness": {
+			"name": "Lingering Foulness",
+			"description": "<p>Gain the @Symptom[Nausea] Symptom for [[/r 1d10]]  hours after interacting with filth</p>"
+		},
+		"Lolling Tongue": {
+			"name": "Lolling Tongue",
+			"description": "<p>-10 to all Language Tests when speaking; this mutation cannot be hidden</p>"
+		},
+		"Long Arms": {
+			"name": "Long Arms",
+			"description": "<p>If you and your opponent have weapons of the same Reach, your weapon counts as longer; this mutation cannot be hidden</p>"
+		},
+		"Long Legs": {
+			"name": "Long Legs",
+			"description": "<p>+2 Movement; this mutation cannot be hidden</p>"
+		},
+		"Long Neck": {
+			"name": "Long Neck",
+			"description": "<p>Half of body hits are head hits; this mutation cannot be hidden</p>"
+		},
+		"Master of Fortune": {
+			"name": "Master of Fortune",
+			"description": "<p><span class=\"fontstyle0\">Tzeentch sorcerers often bargain with their master to provide them with insights about their potential fate. Scrying in this manner is dangerous, for Tzeentch is a capricious god, even in the case of his own favoured servants. Once the spell is cast it may not be cast again until its duration has run out.</span></p>\n<p><span class=\"fontstyle0\">Determine the result of the </span><strong><span class=\"fontstyle2\">Language (Magick) </span></strong><span class=\"fontstyle0\">Test needed to cast the spell. For every positive SL the caster benefits from an a point of Fortune which they can use as normal for the duration of the spell. However, if the spell fails then for every negative level of success the caster receives a point of Corruption as they receive a dizzying array of disturbing future echoes.</span></p><p>\n\n <b>Lore:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Mindfire": {
+			"name": "Mindfire",
+			"description": "<p><span class=\"fontstyle0\">The air warps around your fingertips, forming a bolt of shimmering, hazy magical energy that can be hurled at your target. Anyone affected by </span><em><span class=\"fontstyle2\">Mindfire </span></em><span class=\"fontstyle0\">must make a <strong>C</strong></span><strong><span class=\"fontstyle3\">hallenging (+0) Cool </span></strong><span class=\"fontstyle0\">Test, or gain 1 Corruption Point. For every +2 SL, you may make one target gain an additional Corruption Point if the Cool Test is failed. Should a Mutation occur as a result of this Spell, the target automatically rolls on the @Table[expandedmutatemental] table, and gains +1 </span>@Condition[Ablaze] <span class=\"fontstyle0\">Condition as unnatural fire spills from every orifice in their head.</span></p><p>\n\n <b>Lore:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Mindless Wandering": {
+			"name": "Mindless Wandering",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.9GNpAqgsKzxZKJpp]{Stupid} Creature Trait when alone</p>"
+		},
+		"Monstrous Paranoia": {
+			"name": "Monstrous Paranoia",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.IPKRMGry6WotuS1G]{Skittish} Creature Trait</p>"
+		},
+		"Multiple Arms": {
+			"name": "Multiple Arms",
+			"description": "<p>Gain one Free Attack; this mutation cannot be hidden</p>"
+		},
+		"Multiple Legs": {
+			"name": "Multiple Legs",
+			"description": "<p>+1 Movement; this mutation cannot be hidden</p>"
+		},
+		"Obsession (Tzeentch)": {
+			"name": "Obsession (Tzeentch)",
+			"description": "<p><span class=\"fontstyle0\">You must possess a beloved or precious object belonging to the target. You weave magic infused with the raw stuff of Chaos into the object that, in turn, affects the target. They become obsessed with something: the precise nature of the obsession depends onthe individual in question, and your Lore. For instance, when cast with the Lore of Nurgle, </span><em><span class=\"fontstyle2\">Obsession </span></em><span class=\"fontstyle0\">may cause a recently wounded target to become obsessed with picking at their scabs. The Lore of Slaanesh may cause an epicure or gourmand to overeat.</span></p>\n<p><span class=\"fontstyle0\"><br />The target must pass an </span><strong><span class=\"fontstyle3\">Average (+20) Endurance </span></strong><span class=\"fontstyle0\"><strong>Test</strong> every hour, or succumb to their obsession. On a failure, future tests become </span><strong><span class=\"fontstyle3\">Challenging (+0)</span></strong><span class=\"fontstyle0\">. Subsequent failings make Tests increasingly harder, until they become </span><strong><span class=\"fontstyle3\">Very Hard (&ndash;30)</span></strong><span class=\"fontstyle0\">. Should the target ever Fumble one of these Tests (fail while rolling a double), the target becomes completely obsessed. They can do nothing except indulge the obsession, no matter the costs or implications, for [[/r d10]]&ndash;Will Power Bonus hours (minimum 1 hour). At the end of the spell&rsquo;s duration, in addition to any other physical, social, or financial implications, the target must pass a </span><strong><span class=\"fontstyle3\">Challenging (+0) Endurance </span></strong><span class=\"fontstyle0\"><strong>Test</strong> or gain +1 Corruption Point.<br /></span></p>\n<p><span class=\"fontstyle0\">A target may only ever be affected once by this spell once for each Lore with which it is cast. Any future attempts on the same target with this spell have no effect.</span></p><p>\n\n <b>Lore:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Obsession (Undivided)": {
+			"name": "Obsession (Undivided)",
+			"description": "<p><span class=\"fontstyle0\">You must possess a beloved or precious object belonging to the target. You weave magic infused with the raw stuff of Chaos into the object that, in turn, affects the target. They become obsessed with something: the precise nature of the obsession depends onthe individual in question, and your Lore. For instance, when cast with the Lore of Nurgle,&nbsp;</span><em>Obsession&nbsp;</em><span class=\"fontstyle0\">may cause a recently wounded target to become obsessed with picking at their scabs. The Lore of Slaanesh may cause an epicure or gourmand to overeat.</span></p>\n<p><span class=\"fontstyle0\"><br />The target must pass an&nbsp;</span><strong>Average (+20) Endurance&nbsp;</strong><span class=\"fontstyle0\"><strong>Test</strong>&nbsp;every hour, or succumb to their obsession. On a failure, future tests become&nbsp;</span><strong>Challenging (+0)</strong><span class=\"fontstyle0\">. Subsequent failings make Tests increasingly harder, until they become&nbsp;</span><strong>Very Hard (&ndash;30)</strong><span class=\"fontstyle0\">. Should the target ever Fumble one of these Tests (fail while rolling a double), the target becomes completely obsessed. They can do nothing except indulge the obsession, no matter the costs or implications, for [[/r d10]]&ndash;Will Power Bonus hours (minimum 1 hour). At the end of the spell&rsquo;s duration, in addition to any other physical, social, or financial implications, the target must pass a&nbsp;</span><strong>Challenging (+0) Endurance&nbsp;</strong><span class=\"fontstyle0\"><strong>Test</strong>&nbsp;or gain +1 Corruption Point.<br /></span></p>\n<p><span class=\"fontstyle0\">A target may only ever be affected once by this spell once for each Lore with which it is cast. Any future attempts on the same target with this spell have no effect.</span></p>"
+		},
+		"One Eye": {
+			"name": "One Eye",
+			"description": "<p>-20 Ballistic Skill; this mutation can only be hidden by clothing</p>"
+		},
+		"Panicked Urgency": {
+			"name": "Panicked Urgency",
+			"description": ""
+		},
+		"Patchy Feathers": {
+			"name": "Patchy Feathers",
+			"description": "<p>Roll on the @Table[hitloc] table twice to see where</p>"
+		},
+		"Pin Head": {
+			"name": "Pin Head",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.9GNpAqgsKzxZKJpp]{Stupid} Creature Trait; this mutation cannot be hidden</p>"
+		},
+		"Pink Fire of Tzeentch": {
+			"name": "Pink Fire of Tzeentch",
+			"description": "<p><span class=\"fontstyle0\">Swirling bolts of pink fire arc from your outstretched fingertips, causing reality to scream in anguish. </span><span class=\"fontstyle2\"><em>Pink Fire of Tzeentch </em></span><span class=\"fontstyle0\">is a </span><span class=\"fontstyle2\"><em>magic missile</em></span><span class=\"fontstyle0\">. Targets affected suffer a +6 Damage hit, and gain +</span>1 @Condition[Ablaze] <span class=\"fontstyle0\">Condition.</span></p><p><span class=\"fontstyle0\">Should a Character of size Small or larger be reduced to 0 Wounds by this spell, or while suffering from an <em>Ablaze</em> Condition caused by </span><span class=\"fontstyle2\"><em>Pink Fire of Tzeentch</em></span><span class=\"fontstyle0\">, roll a [[/r 1d10]]. On a roll of 9, a @UUID[Compendium.wfrp4e-eis.actors.iDy8SDTwJSlCzZMl]{Pink Horror} claws its way out of the target’s writhing corpse, killing the individual.</span></p><p><strong>Lore:</strong> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.</p><p></p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Pointed Head": {
+			"name": "Pointed Head",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.9GNpAqgsKzxZKJpp]{Stupid} Creature Trait; you cannot wear a helmet; this mutation cannot be hidden</p>"
+		},
+		"Power of Chaos (Tzeentch)": {
+			"name": "Power of Chaos (Tzeentch)",
+			"description": "<p><span class=\"fontstyle0\">You call on the Dark Gods of Chaos to aid your efforts by tearing a small rent to the aethyr. Any spells cast within Fellowship Bonus yards of the point targeted by the spell have their CN halved. Anyone within the AoE must pass an </span><strong><span class=\"fontstyle2\">Average (+20) Endurance </span></strong><span class=\"fontstyle0\"><strong>Test</strong> at the end of each Round or gain +1 Corruption Point. Anyone casting a spell within the AoE makes their Test at </span><span class=\"fontstyle2\"><strong>Average (+20) Difficulty</strong>.</span></p><p>\n\n <b>Lore:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Power of Chaos (Undivided)": {
+			"name": "Power of Chaos (Undivided)",
+			"description": "<p><span class=\"fontstyle0\">You call on the Dark Gods of Chaos to aid your efforts by tearing a small rent to the aethyr. Any spells cast within<br>Fellowship Bonus yards of the point targeted by the spell have their CN halved. Anyone within the AoE must pass an </span><strong><span class=\"fontstyle2\">Average (+20) Endurance </span></strong><span class=\"fontstyle0\"><strong>Test</strong> at the end of each Round or gain +1 Corruption Point. Anyone casting a spell within the AoE makes their Test at </span><span class=\"fontstyle2\"><strong>Average (+20) Difficulty</strong>.</span></p>"
+		},
+		"Rat Head": {
+			"name": "Rat Head",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv]{Bite} +4 and @UUID[Compendium.wfrp4e-core.items.V0c3qBU1CMm8bmsW]{Infected} Creature Traits; this mutation cannot be hidden</p>"
+		},
+		"Ravenous Hunger": {
+			"name": "Ravenous Hunger",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.xneBqGOs1QS7kfUr]{Hungry} Creature Trait</p>"
+		},
+		"Rearranged Face": {
+			"name": "Rearranged Face",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Fear}&nbsp;1 Creature Trait; Characters trying to determine if you are lying suffer a -20 penalty to Intuition; this mutation can only be hidden by clothing</p>"
+		},
+		"Rend Aethyr (Tzeentch)": {
+			"name": "Rend Aethyr (Tzeentch)",
+			"description": "<p><span class=\"fontstyle0\">Your foul, profane words tear apart the fabric of reality, ripping a hole in the world, through which the servants of the Dark Gods are free to pour. A ragged portal to the aethyr appears.</span></p><p><span class=\"fontstyle0\">At the end of every Round, one Lesser Daemon crosses from the Realms of Chaos through the portal. These Daemons are not under your control, but are likely to defend you and attack your enemies, should that be your unholy master’s will. The Daemons summoned depend on your Chaos Lore: @UUID[Compendium.wfrp4e-core.actors.8gG2Wim6wAlJWRax]{Daemonette of Slaanesh}, Plaguebearers of Nurgle, @UUID[Compendium.wfrp4e-eis.actors.iDy8SDTwJSlCzZMl]{Horrors of Tzeentch}, @UUID[Compendium.wfrp4e-core.actors.KZkuwdOYmE3nwB2n]{Bloodletter of Khorne}, and, for Sorcerers of Chaos Undivided, @UUID[Compendium.wfrp4e-eis.actors.piVHq2Y1a9PhHlZJ]{Furies of Chaos}. While the spell is in effect, any Daemons it summons are immune to the @UUID[Compendium.wfrp4e-core.items.D0ImWEIMSDgElsnl]{Unstable} Condition.</span></p><p><span class=\"fontstyle0\">For every +5 SL Overcast, you may increase the rate the Daemons arrive by +1.</span></p><p><span class=\"fontstyle0\">Living creatures must pass an </span><span class=\"fontstyle3\"><strong>Average (+20) Endurance </strong></span><span class=\"fontstyle0\">Test at the end of every Round where they can see the tear, or gain +1 Corruption. Any living creature foolish or unlucky enough to enter the rift falls into the Realms of Chaos and is immediately killed, unless a Fate point is spent. In that case, they are spat back into reality, perhaps saved by some power for an as of yet unfulfilled purpose.</span></p><p><span class=\"fontstyle0\">Should you Fumble the casting of this spell, the Daemons crossing from the Realms of Chaos belong to a rival deity, and may well be immediately hostile to their summoner!</span></p><p><strong>Lore:</strong> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.</p><p></p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Rend Aethyr (Undivided)": {
+			"name": "Rend Aethyr (Undivided)",
+			"description": "<p><span class=\"fontstyle0\">Your foul, profane words tear apart the fabric of reality, ripping a hole in the world, through which the servants of the Dark Gods are free to pour. A ragged portal to the aethyr appears.</span></p><p><span class=\"fontstyle0\">At the end of every Round, one Lesser Daemon crosses from the Realms of Chaos through the portal. These Daemons are not under your control, but are likely to defend you and attack your enemies, should that be your unholy master’s will. The Daemons summoned depend on your Chaos Lore: @UUID[Compendium.wfrp4e-core.actors.8gG2Wim6wAlJWRax]{Daemonette of Slaanesh}, Plaguebearers of Nurgle, @UUID[Compendium.wfrp4e-eis.actors.iDy8SDTwJSlCzZMl]{Horrors of Tzeentch}, @UUID[Compendium.wfrp4e-core.actors.KZkuwdOYmE3nwB2n]{Bloodletter of Khorne}, and, for Sorcerers of Chaos Undivided, @UUID[Compendium.wfrp4e-eis.actors.piVHq2Y1a9PhHlZJ]{Furies of Chaos}. While the spell is in effect, any Daemons it summons are immune to the @UUID[Compendium.wfrp4e-core.items.D0ImWEIMSDgElsnl]{Unstable} Condition.</span></p><p><span class=\"fontstyle0\">For every +5 SL Overcast, you may increase the rate the Daemons arrive by +1.</span></p><p><span class=\"fontstyle0\">Living creatures must pass an </span><span class=\"fontstyle3\"><strong>Average (+20) Endurance </strong></span><span class=\"fontstyle0\">Test at the end of every Round where they can see the tear, or gain +1 Corruption. Any living creature foolish or unlucky enough to enter the rift falls into the Realms of Chaos and is immediately killed, unless a Fate point is spent. In that case, they are spat back into reality, perhaps saved by some power for an as of yet unfulfilled purpose.</span></p><p><span class=\"fontstyle0\">Should you Fumble the casting of this spell, the Daemons crossing from the Realms of Chaos belong to a rival deity, and may well be immediately hostile to their summoner!</span></p><p><strong>Lore:</strong> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.</p><p></p>"
+		},
+		"Rotting Flesh": {
+			"name": "Rotting Flesh",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Fear 2}, and @UUID[Compendium.wfrp4e-core.items.V0c3qBU1CMm8bmsW]{Infected} Creature Traits</p>"
+		},
+		"Sense the Skein": {
+			"name": "Sense the Skein",
+			"description": "<p><span class=\"fontstyle0\">Your eyes glow pink and blue as you speak forbidden words of power. The scales fall from your eyes and you see, for a few fleeting moments, the interconnected fate of all things. You may choose one target you can see, and the GM must reveal the target’s Motivation, Short-Term Ambition, and Long-Term Ambition.</span> </p><p>\n\n <b>Lore:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Shifting Colours": {
+			"name": "Shifting Colours",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF]{Distracting}&nbsp;Creature Trait; this mutation cannot be hidden</p>"
+		},
+		"Short Legs": {
+			"name": "Short Legs",
+			"description": "<p>-1 Movement; this mutation cannot be hidden</p>"
+		},
+		"Skull Face": {
+			"name": "Skull Face",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Fear}&nbsp;2 Creature Trait; this mutation can only be hidden by clothing</p>"
+		},
+		"Slave to Darkness (Tzeentch)": {
+			"name": "Slave to Darkness (Tzeentch)",
+			"description": "<p><span class=\"fontstyle0\">You implore your patron to take the soul of your target, replacing it with something terrible. Make an </span><strong><span class=\"fontstyle2\">Opposed Willpower </span></strong><span class=\"fontstyle0\">Test, which you must win by at least 2+ SL. Should you do this, the victim’s soul is sent howling into the Realms of Chaos, and the remaining body is possessed by a Daemon. Unless the target spends a Fate point, control of the Character is passed to the GM. Should you not win the </span><strong><span class=\"fontstyle2\">&nbsp;</span></strong><span class=\"fontstyle0\">Test by at least 2+ SL, you instead suffer a @Table[majormis], and the spell fails. Should you Fumble the Test, you are punished by your god for your arrogance. Your soul is torn from your body, never to return unless you spend a Fate point to resist this, although your patron is unlikely to be pleased if you flagrantly reject their authority in such a fashion.<br></span></p>\n<p><span class=\"fontstyle0\">Given the risks and limitations inherent in this spell, it is generally cast on victims that have been ‘prepared’ for their sacrifice; they have been bound, drugged, and/or otherwise pacified.</span></p><p>\n\n <b>Lore:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Slave to Darkness (Undivided)": {
+			"name": "Slave to Darkness (Undivided)",
+			"description": "<p><span class=\"fontstyle0\">You implore your patron to take the soul of your target, replacing it with something terrible. Make an&nbsp;</span><strong>Opposed Willpower&nbsp;</strong><span class=\"fontstyle0\">Test, which you must win by at least 2+ SL. Should you do this, the victim’s soul is sent howling into the Realms of Chaos, and the remaining body is possessed by a Daemon. Unless the target spends a Fate point, control of the Character is passed to the GM. Should you not win the&nbsp;</span><strong>&nbsp;</strong><span class=\"fontstyle0\">Test by at least 2+ SL, you instead suffer a @Table[majormis], and the spell fails. Should you Fumble the Test, you are punished by your god for your arrogance. Your soul is torn from your body, never to return unless you spend a Fate point to resist this, although your patron is unlikely to be pleased if you flagrantly reject their authority in such a fashion.<br></span></p>\n<p><span class=\"fontstyle0\">Given the risks and limitations inherent in this spell, it is generally cast on victims that have been ‘prepared’ for their sacrifice; they have been bound, drugged, and/or otherwise pacified.</span></p>"
+		},
+		"Snake Head": {
+			"name": "Snake Head",
+			"description": "<p>+1 Armour Point to the Head; gain the @UUID[Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv]{Bite} +3 and @UUID[Compendium.wfrp4e-core.items.gFkRm9wS65qe18Xv]{Venom (Average)} Creature Traits; this mutation cannot be hidden</p>"
+		},
+		"Soul Sickness": {
+			"name": "Soul Sickness",
+			"description": "<p>Gain the @Symptom[Convulsions] Symptom for [[/r 1d10]] hours if you fail a Test derived from Willpower</p>"
+		},
+		"Spiked Skin": {
+			"name": "Spiked Skin",
+			"description": "<p>Cannot waer armour; +1 Armour Points on all locations; gain a Free Attack (@UUID[Compendium.wfrp4e-core.items.AtpAudHA4ybXVlWM]{Weapon}&nbsp;+4 Creature Trait) when Charging; this mutation cannot be hidden</p>"
+		},
+		"Suckered Hands and Feet": {
+			"name": "Suckered Hands and Feet",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.KII1gWnxIZ8HzmU5]{Wallcrawler}&nbsp;Creature Trait; this mutation can only be hidden by clothing</p>"
+		},
+		"Tail": {
+			"name": "Tail",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.UnJ25lL8aUzem5JO]{Tail Attack} +3 Creature Trait; this mutation can only be hidden by clothing.</p>"
+		},
+		"Terrible Phobia": {
+			"name": "Terrible Phobia",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.4CMKeDTDrRQZbPIJ]{Afraid} (Target) Creature Trait, rolling on the @Table[fixations]{Fixations} Table to determine the Target</p>"
+		},
+		"The Flickering Flames of Fickle Fate": {
+			"name": "The Flickering Flames of Fickle Fate",
+			"description": "<p><span class=\"fontstyle0\">You conjure forth a torrent of magical fire, which spits, crackles and burns without material fuel. The fire has no physical properties and does not burn, damage, or emit heat. All living creatures and Daemons who can see the fire may choose to reroll every Test once, as if they had spent a Fortune Point, even if they passed the Test. Each time they do so, they must then pass a </span><strong><span class=\"fontstyle2\">Challenging (+0) Endurance </span></strong><span class=\"fontstyle0\">Test or gain +1 Corruption Point (@Corruption[minor]{Minor}). Characters bearing the Mark of Tzeentch are immune to this Corruption. The Test to resist gaining Corruption may not be rerolled using this Spell’s effect.</span></p><p>\n\n <b>Lore:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"The Purple Hand": {
+			"name": "The Purple Hand",
+			"description": "<p>This spell is a petty curse used by Purple Hand sorcerers&nbsp; to intimidate and cajole truculent co-conspirators. Of all the non-verbal codes used by the Purple Hand the meaning of this curse is clear: mend your ways immediately or face punishment.</p>\n<p>In order to cast the spell the sorcerer must first acquire a small amount of matter from their target: a loose hair or toenail clipping will serve. Should this item be acquired and the spell successfully cast, the palms of the target&rsquo;s hands turn a deep purple. The spell&rsquo;s effects last for one hour for every level of success scored by the caster while casting the spell.</p><p>\n\n <b>Lore:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Thorny Scales": {
+			"name": "Thorny Scales",
+			"description": "<p>+1 Armour Points to all locations; this mutation can only be hidden by clothing</p>"
+		},
+		"Three Eyes": {
+			"name": "Three Eyes",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.9h82z72XGo9tfgQS]{Acute Sense}&nbsp;(Vision) Talent; this mutation can only be hidden by clothing</p>"
+		},
+		"Thrill Seeker": {
+			"name": "Thrill Seeker",
+			"description": ""
+		},
+		"Transformation of Tzeentch": {
+			"name": "Transformation of Tzeentch",
+			"description": "<p>At your command, bonds of aethyric fire coil from the earth, enshrouding your target in a cocoon of magical energy. Targets affected gain the @Condition[Prone] Condition, and are considered Helpless for the duration of the Spell. When Transformation of Tzeentch ends, the target must make<span class=\"fontstyle0\"> a </span><strong><span class=\"fontstyle3\">Challenging (+0) Endurance </span></strong><span class=\"fontstyle0\">Test, opposed by your Language (Magick) Skill. If they lose, they gain +1 Corruption Point, +1 extra Point for every SL by which they lost.</span></p><p>\n\n <b>Lore:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Transparent Skin": {
+			"name": "Transparent Skin",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Fear}&nbsp;2 Creature Trait; this mutation cannot be hidden</p>"
+		},
+		"Two Heads": {
+			"name": "Two Heads",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.IFKWu98qmWpaSfUi]{Ambidextrous} Talent; this mutation cannot be hidden</p>"
+		},
+		"Tzeentch's Firestorm": {
+			"name": "Tzeentch's Firestorm",
+			"description": "<p><span class=\"fontstyle0\">A swirling storm of purple arcane fire bursts forth, summoned by your profane cackling. </span><em><span class=\"fontstyle2\">Tzeentch&rsquo;s Firestorm </span></em><span class=\"fontstyle0\">is a </span><em><span class=\"fontstyle2\">magic missile</span></em><span class=\"fontstyle0\">. Everyone within Initiative Bonus yards of the target suffers a +9 Damage hit, and gains +1 @Condition[Ablaze]</span><em><span class=\"fontstyle2\">&nbsp;</span></em><span class=\"fontstyle0\">Condition.</span></p>\n<p><span class=\"fontstyle0\"><br />Should a Character of size small or larger be reduced to 0 Wounds by this Spell, or while suffering from an <em>Ablaze</em> Condition caused by </span><em><span class=\"fontstyle2\">Tzeentch&rsquo;s Firestorm</span></em><span class=\"fontstyle0\">, roll </span>a [[/r 1d10]]. On a roll of 9, two @UUID[Compendium.wfrp4e-eis.actors.iDy8SDTwJSlCzZMl]{Pink Horrors} claw their way out of the target&rsquo;s magically burning corpse, killing the poor unfortunate.</p>\n<p><strong>Lore:</strong> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.</p>\n<p>&nbsp;</p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Tzeentch's Golden Aura": {
+			"name": "Tzeentch's Golden Aura",
+			"description": "<p><span class=\"fontstyle0\">This is one of the most straightforward and practical spells in a Tzeentch sorcerer’s arsenal. A swirling vortex of yellow fire is summoned out of the aethyr and wraps about the caster’s body, shielding them from incoming blows and missiles. Whilst the spell is in effect, the caster benefits from the Creature Trait @UUID[Compendium.wfrp4e-core.items.Bvd2aZ0gQUXHfCTh]{Ward 9+}</span><span class=\"fontstyle2\">&nbsp;</span><span class=\"fontstyle0\">.</span></p><p>\n\n <b>Lore:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
+		},
+		"Uneven Horns": {
+			"name": "Uneven Horns",
+			"description": "<p>+1 Armour Points to the Head; counts as a Creature @UUID[Compendium.wfrp4e-core.items.AtpAudHA4ybXVlWM]{Weapon} of Damage equal to your SB; this mutation cannot be hidden</p>"
+		},
+		"Unusual Skin": {
+			"name": "Unusual Skin",
+			"description": "<p>Odd colour or texture: orange, striped, spotted, warty, etc.; this mutation cannot be hidden</p>"
+		},
+		"Warp Frenzy": {
+			"name": "Warp Frenzy",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q]{Frenzy}&nbsp;Creature Trait; whilst Frenzied, temporarily gain another random physical mutation</p>"
+		},
+		"Webbed Feet": {
+			"name": "Webbed Feet",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.sJ3yX1kvzu2hgNq5]{Amphibious}&nbsp;Creature Trait; this mutation can only be hidden by clothing</p>"
+		},
+		"Weeping Pus": {
+			"name": "Weeping Pus",
+			"description": "<p>Roll on the @Table[hitloc] table to twice to see where</p>"
+		},
+		"Whiskered Snout": {
+			"name": "Whiskered Snout",
+			"description": "<p>+10 Track; this mutation can only be hidden by clothing</p>"
+		},
+		"Wings": {
+			"name": "Wings",
+			"description": "<p>Gain the @UUID[Compendium.wfrp4e-core.items.EO05HX7jql0g605A]{Flight} 60 Creature Trait; this mutation can only be hidden by clothing</p>"
+		},
+		"Wolf Head": {
+			"name": "Wolf Head",
+			"description": "<p>+1 Armour Point to the Head; gain the @UUID[Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv]{Bite} +6 Creature Trait; gain the @UUID[Compendium.wfrp4e-core.items.9h82z72XGo9tfgQS]{Acute Sense (Smell)} Talent; this mutation cannot be hidden</p>"
+		},
+		"Word of Tzeentch": {
+			"name": "Word of Tzeentch",
+			"description": "<p><span class=\"fontstyle0\">As your tongue forms the twisted sound-patterns of this blasphemous Spell, two voices seem to utter from your throat, in unholy and unnatural harmony with each other. Your words carry extra meaning for those affected by the Spell, though targets can never remember what was said. They are left with a haunting sense of foreboding, as if they have forgotten something very important about their own future.</span></p>\n<p><span class=\"fontstyle0\"><br>Living targets affected by the Spell must make an </span><strong><span class=\"fontstyle2\">Opposed Intelligence </span></strong><span class=\"fontstyle0\">Test with you. If the target loses, they gai</span>n 1 @Condition[Stunned] Condition, +1 additional Stunned Condition for each SL by which they lost. If they Fumble, they gain the @Condition[Unconscious] Condition, and +1 Corruption.<span class=\"fontstyle0\"><br></span></p>\n<p><span class=\"fontstyle0\">Once all Conditions have been removed, targets affected must pass an </span><strong><span class=\"fontstyle2\">Average (+20) Endurance </span></strong><span class=\"fontstyle0\">Test, or gain +1 Corruption. Should they Fumble, they immediately gain 1 @Table[expandedmutatemental]{Mental Mutation}, and may not take a Short-term Ambition for the next [[/r 1d10]] weeks.</span></p><p>\n\n <b>Lore:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p><p>\n\n <b>Школа:</b> Targets of Spells from the Lore of Tzeentch are riven by the transformative magic of Chaos. Targets affected by a Spell from the Lore of Tzeentch must pass a Challenging (+0) Endurance Test, or gain +1 Corruption Point. Should they pass their Test, they instead gain +1 Fortune Point, which can be used as normal. Such are the whims of Tzeentch.<p>"
 		}
 	}
 }
