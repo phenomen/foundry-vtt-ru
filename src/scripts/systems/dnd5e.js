@@ -1,9 +1,9 @@
 export function init() {
 	/* Уведомление выбора перевода */
-	game.settings.register('ru-ru', 'altTranslationSelected', {
+	game.settings.register("ru-ru", "altTranslationSelected", {
 		type: Boolean,
 		default: false,
-		scope: 'world',
+		scope: "world",
 		restricted: true,
 		onChange: (value) => {
 			window.location.reload();
@@ -11,12 +11,12 @@ export function init() {
 	});
 
 	/* Настройка Babele */
-	game.settings.register('ru-ru', 'compendiumTranslation', {
-		name: 'Перевод библиотек',
-		hint: '(Требуется модуль Babele) Некоторые библиотеки системы D&D5e будут переведены.',
+	game.settings.register("ru-ru", "compendiumTranslation", {
+		name: "Перевод библиотек",
+		hint: "(Требуется модуль Babele) Некоторые библиотеки системы D&D5e будут переведены.",
 		type: Boolean,
 		default: true,
-		scope: 'world',
+		scope: "world",
 		config: true,
 		restricted: true,
 		onChange: (value) => {
@@ -24,23 +24,23 @@ export function init() {
 		}
 	});
 
-	if (!game.settings.get('ru-ru', 'altTranslationSelected')) {
+	if (!game.settings.get("ru-ru", "altTranslationSelected")) {
 		new Dialog({
-			title: 'Выбор перевода',
+			title: "Выбор перевода",
 			content: `<p>Выберите предпочитаемый перевод системы D&D5. Вы можете изменить это позже в настройках модуля</p>`,
 			buttons: {
 				hw: {
-					label: 'Hobby World',
+					label: "Hobby World",
 					callback: () => {
-						game.settings.set('ru-ru', 'altTranslation', false);
-						game.settings.set('ru-ru', 'altTranslationSelected', true);
+						game.settings.set("ru-ru", "altTranslation", false);
+						game.settings.set("ru-ru", "altTranslationSelected", true);
 					}
 				},
 				ph: {
-					label: 'Phantom Studio',
+					label: "Phantom Studio",
 					callback: () => {
-						game.settings.set('ru-ru', 'altTranslation', true);
-						game.settings.set('ru-ru', 'altTranslationSelected', true);
+						game.settings.set("ru-ru", "altTranslation", true);
+						game.settings.set("ru-ru", "altTranslationSelected", true);
 					}
 				}
 			}
@@ -48,27 +48,27 @@ export function init() {
 	}
 
 	/* Регистрация Babele */
-	if (typeof Babele !== 'undefined') {
+	if (typeof Babele !== "undefined") {
 		Babele.get().register({
-			module: 'ru-ru',
-			lang: 'ru',
-			dir: game.settings.get('ru-ru', 'altTranslation')
-				? 'compendium/dnd5e-alt'
-				: 'compendium/dnd5e'
+			module: "ru-ru",
+			lang: "ru",
+			dir: game.settings.get("ru-ru", "altTranslation")
+				? "compendium/dnd5e-alt"
+				: "compendium/dnd5e"
 		});
 	} else {
-		if (game.settings.get('ru-ru', 'compendiumTranslation')) {
+		if (game.settings.get("ru-ru", "compendiumTranslation")) {
 			new Dialog({
-				title: 'Перевод библиотек',
+				title: "Перевод библиотек",
 				content: `<p>Для перевода библиотек системы D&D5 требуется активировать модуль <b>Babele</b>. Вы можете отключить перевод библиотек в настройках модуля</p>`,
 				buttons: {
 					done: {
-						label: 'Хорошо'
+						label: "Хорошо"
 					},
 					never: {
-						label: 'Больше не показывать',
+						label: "Больше не показывать",
 						callback: () => {
-							game.settings.set('ru-ru', 'compendiumTranslation', false);
+							game.settings.set("ru-ru", "compendiumTranslation", false);
 						}
 					}
 				}
@@ -77,17 +77,17 @@ export function init() {
 	}
 
 	/* Приключение HOUSE DIVIDED */
-	if (game.modules.get('house-divided')?.active) {
+	if (game.modules.get("house-divided")?.active) {
 		localizeHouseDivided();
 	}
 
 	/*  Настройка автоопределения анимаций AA  */
-	Hooks.on('renderSettingsConfig', (app, html, data) => {
+	Hooks.on("renderSettingsConfig", (app, html, data) => {
 		if (!game.user.isGM) return;
 
 		const lastMenuSetting = html
 			.find(`input[name="ru-ru.compendiumTranslation"]`)
-			.closest('.form-group');
+			.closest(".form-group");
 
 		const updateAAButton = $(`
   <label>
@@ -100,7 +100,7 @@ export function init() {
       </button>
   </div>
   `);
-		updateAAButton.find('button').click((e) => {
+		updateAAButton.find("button").click((e) => {
 			e.preventDefault();
 			updateAA();
 		});
@@ -111,7 +111,7 @@ export function init() {
 
 async function updateAA() {
 	const translatedSettings = await foundry.utils.fetchJsonWithTimeout(
-		'/modules/ru-ru/i18n/modules/aa-autorec.json'
+		"/modules/ru-ru/i18n/modules/aa-autorec.json"
 	);
 
 	const currentSettings = AutomatedAnimations.AutorecManager.getAutorecEntries();
@@ -124,7 +124,7 @@ async function updateAA() {
 		aura: mergeArrays(currentSettings.aura, translatedSettings.aura),
 		preset: mergeArrays(currentSettings.preset, translatedSettings.preset),
 		aefx: mergeArrays(currentSettings.aefx, translatedSettings.aefx),
-		version: '5'
+		version: "5"
 	};
 
 	AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify(newSettings), {
@@ -134,8 +134,8 @@ async function updateAA() {
 
 function localizeHouseDivided() {
 	/* Поддержка кириллицы в стилях */
-	const moduleCSS = document.createElement('link');
-	moduleCSS.rel = 'stylesheet';
+	const moduleCSS = document.createElement("link");
+	moduleCSS.rel = "stylesheet";
 	moduleCSS.href = `/modules/ru-ru/styles/house-divided.css`;
 	document.head.appendChild(moduleCSS);
 
@@ -143,8 +143,8 @@ function localizeHouseDivided() {
 	class HouseDividedRussianJournalSheet extends JournalSheet {
 		constructor(doc, options) {
 			super(doc, options);
-			this.options.classes.push('house-divided', doc.getFlag('house-divided', 'realm'));
-			this.sidebarSections = doc.getFlag('house-divided', 'sidebar-sections') ?? false;
+			this.options.classes.push("house-divided", doc.getFlag("house-divided", "realm"));
+			this.sidebarSections = doc.getFlag("house-divided", "sidebar-sections") ?? false;
 		}
 
 		async _renderInner(...args) {
@@ -154,11 +154,11 @@ function localizeHouseDivided() {
 		}
 
 		_insertSidebarSections(html) {
-			const toc = html[0].querySelector('.pages-list .directory-list');
+			const toc = html[0].querySelector(".pages-list .directory-list");
 			if (!toc.children.length) return;
 			const sections = { overview: false, quests: false, events: false };
-			const divider = document.createElement('li');
-			divider.classList.add('directory-section', 'level1');
+			const divider = document.createElement("li");
+			divider.classList.add("directory-section", "level1");
 			for (const li of Array.from(toc.children)) {
 				if (!sections.overview) {
 					const d = divider.cloneNode();
@@ -168,8 +168,8 @@ function localizeHouseDivided() {
 					continue;
 				}
 
-				const title = li.querySelector('.page-title').innerText;
-				if (!sections.events && title.startsWith('Событие:')) {
+				const title = li.querySelector(".page-title").innerText;
+				if (!sections.events && title.startsWith("Событие:")) {
 					const d = divider.cloneNode();
 					d.innerHTML = "<h2 class='section-header'>События</h2>";
 					li.before(d);
@@ -177,7 +177,7 @@ function localizeHouseDivided() {
 					continue;
 				}
 
-				if (!sections.quests && title.startsWith('Задание:')) {
+				if (!sections.quests && title.startsWith("Задание:")) {
 					const d = divider.cloneNode();
 					d.innerHTML = "<h2 class='section-header'>Задания</h2>";
 					li.before(d);
@@ -190,11 +190,11 @@ function localizeHouseDivided() {
 	/* Регистрация шаблона журнала */
 	DocumentSheetConfig.registerSheet(
 		JournalEntry,
-		'house-divided',
+		"house-divided",
 		HouseDividedRussianJournalSheet,
 		{
-			types: ['base'],
-			label: 'Разделённый дом',
+			types: ["base"],
+			label: "Разделённый дом",
 			makeDefault: false
 		}
 	);

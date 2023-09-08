@@ -1,50 +1,50 @@
 @font-face {
-	font-family: 'dead-saloon';
-	src: url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
+	font-family: "dead-saloon";
+	src: url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap");
 }
 
 @font-face {
-	font-family: 'Roboto Slab';
-	src: url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
+	font-family: "Roboto Slab";
+	src: url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap");
 }
 
 @font-face {
-	font-family: 'Treacherous Corners';
-	src: url('../fonts/Beaufort/Beaufort-Medium.ttf') format('truetype');
+	font-family: "Treacherous Corners";
+	src: url("../fonts/Beaufort/Beaufort-Medium.ttf") format("truetype");
 }
 
 /* Noto Serif */
 
 @font-face {
-	font-family: 'Romic';
+	font-family: "Romic";
 	font-style: italic;
 	font-weight: 400;
 	font-display: swap;
-	src: url('../fonts/Noto_Serif/NotoSerif-Italic.ttf') format('truetype');
+	src: url("../fonts/Noto_Serif/NotoSerif-Italic.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'Romic';
+	font-family: "Romic";
 	font-style: italic;
 	font-weight: 700;
 	font-display: swap;
-	src: url('../fonts/Noto_Serif/NotoSerif-BoldItalic.ttf') format('truetype');
+	src: url("../fonts/Noto_Serif/NotoSerif-BoldItalic.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'Romic';
+	font-family: "Romic";
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
-	src: url('../fonts/Noto_Serif/NotoSerif-Regular.ttf') format('truetype');
+	src: url("../fonts/Noto_Serif/NotoSerif-Regular.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'Romic';
+	font-family: "Romic";
 	font-style: normal;
 	font-weight: 700;
 	font-display: swap;
-	src: url('../fonts/Noto_Serif/NotoSerif-Bold.ttf') format('truetype');
+	src: url("../fonts/Noto_Serif/NotoSerif-Bold.ttf") format("truetype");
 }
 
 /* SWADE */
@@ -59,7 +59,7 @@
 	--table-title-font-family: var(--font-serif);
 	--table-headers-font-family: var(--font-serif);
 	--table-summary-font-family: var(--font-sans-condensed);
-	--quote-font-family: 'Rock Salt', cursive;
+	--quote-font-family: "Rock Salt", cursive;
 }
 
 .swade-official {
@@ -169,12 +169,12 @@
 /* DEADLANDS */
 
 .deadlands-sheet input.charname {
-	font-family: 'Roboto Slab';
+	font-family: "Roboto Slab";
 }
 
 .swade-official.actor.deadlands-sheet {
 	--section-header-size: 1.3em;
-	--section-header-font: 'Roboto Slab';
+	--section-header-font: "Roboto Slab";
 	--default-font: var(--font-sans);
 }
 
@@ -183,7 +183,7 @@
 }
 
 .deadlands-sheet .tabs .item {
-	font-family: 'Roboto Slab';
+	font-family: "Roboto Slab";
 	font-weight: bold;
 	font-size: 0.9em;
 }
@@ -205,7 +205,9 @@
 }
 
 .swpf-core h1.wide {
-	text-shadow: 5px 5px 5px #00000087, 5px 5px 5px #00000087;
+	text-shadow:
+		5px 5px 5px #00000087,
+		5px 5px 5px #00000087;
 }
 
 .swpf-core .chapter-heading h1 {

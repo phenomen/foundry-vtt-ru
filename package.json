@@ -1,17 +1,20 @@
 {
-  "name": "@phenomen/foundry-vtt-ru",
-  "private": "true",
-  "scripts": {
-    "process:build": "vite build",
-    "process:bump": "bumpp ./public/module.json ./README.md --no-push --no-commit --no-tag",
-    "process:zip": "node process-zip.js",
-    "build": "pnpm process:build",
-    "release": "pnpm process:bump && pnpm process:build && pnpm process:zip"
-  },
-  "type": "module",
-  "devDependencies": {
-    "archiver": "^6.0.1",
-    "bumpp": "^9.2.0",
-    "vite": "^4.4.9"
-  }
+	"name": "@phenomen/foundry-vtt-ru",
+	"private": "true",
+	"scripts": {
+		"process:build": "vite build",
+		"process:bump": "bumpp ./public/module.json ./README.md --no-push --no-commit --no-tag",
+		"process:zip": "node process-zip.js",
+		"build": "pnpm process:build",
+		"release": "pnpm process:bump && pnpm process:build && pnpm process:zip",
+		"format:check": "prettier --check .",
+		"format": "prettier --write ."
+	},
+	"type": "module",
+	"devDependencies": {
+		"archiver": "^6.0.1",
+		"bumpp": "^9.2.0",
+		"prettier": "^3.0.3",
+		"vite": "^4.4.9"
+	}
 }
