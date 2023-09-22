@@ -1,51 +1,7 @@
 :root {
-	--color-red-dnd: #58180d;
-	--color-yellow-dnd: #c9ad6a;
-	--color-green-dnd: #e0e5c1;
-	--color-black: #000000;
-	--color-white: #ffffff;
 	--t5e-signika: var(--font-sans);
 	--syb5e-pc-font: var(--font-fancy) !important;
 	--syb5e-npc-font: var(--font-fancy) !important;
-}
-
-.bg-red-dnd {
-	background-color: var(--color-red-dnd) !important;
-	color: var(--color-white);
-}
-
-.bg-yellow-dnd {
-	background-color: var(--color-yellow-dnd) !important;
-	color: var(--color-black);
-}
-
-.bg-green-dnd {
-	background-color: var(--color-green-dnd) !important;
-	color: var(--color-black);
-}
-
-.color-red-dnd {
-	color: var(--color-red-dnd) !important;
-}
-
-.color-yellow-dnd {
-	color: var(--color-yellow-dnd) !important;
-}
-
-.color-green-dnd {
-	color: var(--color-green-dnd) !important;
-}
-
-.border-color-red-dnd {
-	border-color: var(--color-red-dnd) !important;
-}
-
-.border-color-yellow-dnd {
-	border-color: var(--color-yellow-dnd) !important;
-}
-
-.border-color-green-dnd {
-	border-color: var(--color-green-dnd) !important;
 }
 
 .dnd5e.sheet .window-content {
@@ -76,10 +32,6 @@
 	font-weight: 600;
 	font-size: var(--text-sm);
 	text-transform: uppercase;
-}
-
-.dnd5e.sheet .sheet-navigation .item.active {
-	border-bottom: 3px solid var(--color-red-dnd);
 }
 
 .dnd5e.sheet.actor ul.attributes li.attribute {
@@ -457,17 +409,11 @@
 
 .tidy5e.sheet.actor .skills-list .skill.proficient .skill-name {
 	font-weight: 500;
-	color: var(--color-red-dnd);
 }
 
 .tidy5e.sheet.actor .ability-scores .ability .ability-score,
 .tidy5e.sheet.actor .char-name {
 	font-size: var(--text-2xl);
-	color: var(--color-red-dnd);
-}
-
-.tidy5e.sheet.actor .header-attributes .ac-display svg path {
-	fill: var(--color-red-dnd);
 }
 
 .tidy5e.sheet.actor .header-attributes .ac-display .attribute-value {
@@ -499,20 +445,12 @@
 	font-size: var(--text-sm);
 }
 
-.tidy5e.sheet.actor .header-attributes .ac-display .config-button {
-	color: var(--color-white);
-}
-
 .tidy5e.sheet.actor .traits .config-button {
 	line-height: 17px;
 }
 
 .tidy5e.sheet.actor .tidy5e-navigation .item {
 	padding: 4px 4px 0 4px;
-}
-
-.system-dnd5e.tidy5eDark {
-	--color-red-dnd: #ce381f;
 }
 
 /* MOBILE IMPROVEMENTS */
@@ -537,11 +475,6 @@
 
 .syb5e.sheet.actor.character .sheet-header h1.charname input {
 	font-size: 30px;
-}
-
-.syb5e.sheet.actor.npc .tag,
-.syb5e.sheet.actor.character .tag {
-	color: var(--color-red-dnd);
 }
 
 /* LOTR */
