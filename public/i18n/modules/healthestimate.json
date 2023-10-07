@@ -119,7 +119,8 @@
 			},
 			"deathState": {
 				"name": "Смерть при состоянии",
-				"hint": "Show token as defined on the {setting} setting when it has been marked as defeated on combat."
+				"hint1": "Show token as defined on the {setting} setting when it has been affected by any condition that uses the icon set on the {setting2} setting.",
+				"hint2": "Show token as defined on the {setting} setting when it has been marked as defeated on combat."
 			},
 			"deathStateName": {
 				"name": "Название состояния смерти",
@@ -143,7 +144,7 @@
 				"hint": "Временные ПЗ будут суммированы с обычными при оценке общего здоровья."
 			},
 			"breakOnZeroMaxHP": {
-				"name": "Скрывать на токенах без максимального ПЗ",
+				"name": "Hide Estimates on Tokens with 0 Max HP",
 				"hint": "Полезно для объектов с токенами."
 			},
 			"menuSettings": {
@@ -180,11 +181,15 @@
 					"brighten": "Ярче"
 				},
 				"position": {
-					"name": "Расположение",
-					"hint": "Расположение относительно рамки токена. Отрицательные значения перемещают наверх, а положительные вниз.",
+					"name": "Height",
+					"hint": "The height is set relative to the token's frame. Negative values push it higher; positive, lower.",
 					"top": "Сверху",
 					"middle": "Посередине",
 					"bottom": "Снизу"
+				},
+				"position2": {
+					"name": "Position",
+					"hint": "The position relative to the token's frame."
 				},
 				"positionAdjustment": {
 					"name": "Настройка отступа",
@@ -192,7 +197,7 @@
 				},
 				"scaleToZoom": {
 					"name": "Масштабировать оценку при приближении",
-					"hint": "Масштабирует оценку в зависимости от уровня приближения камеры. Значение параметра {setting2} будет игнорироваться при отдалении."
+					"hint": "Scales the estimate based on the zoom distance. This will cause a drop in performance when used along {setting3}."
 				}
 			}
 		},
@@ -268,7 +273,7 @@
 		"starfinder": {
 			"useThreshold": {
 				"name": "Использовать порог транспорта",
-				"hint": "Vehicles Use the stages set on {setting1} setting. Otherwise, vehicles will use the same description as the {setting2} setting."
+				"hint": "Defines which estimation table will be used when calculating a Vehicle's estimatives."
 			},
 			"addStamina": {
 				"name": "Учитывать Живучесть",

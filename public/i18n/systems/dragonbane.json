@@ -68,7 +68,7 @@
             "rangedTooltip": "Атаковать дистанционным оружием",
             "parry": "Парирование",
             "parryTooltip": "Парировать атаку в ближнем бою",
-            "normal": "Удар",
+            "normal": "Атака",
             "normalTooltip": "Совершить обычную атаку",
             "stab": "Укол",
             "stabTooltip": "Атаковать с колющим уроном",
@@ -422,7 +422,7 @@
                 "wp": "ПСВ"
             },
             "chat": {
-                "damageApplied": "<b>{damage} урона</b> нанесено <b>{actor}</b>.",
+                "damageApplied": "<b>{damage}</b> урона ПЗ нанесено <b>{actor}</b>.",
                 "damageAppliedDetails": "{damage} урона против {armor} класса защиты.",
                 "damageAppliedMultiplier": "x{multiplier} множитель.",
                 "healingApplied": "<b>{actor}</b> исцеляет <b>{spell}</b> ПЗ.",
@@ -436,6 +436,7 @@
                 "dealSelectedDoubleDamage": "Нанести двойной урон (выбранный)",
                 "dealSelectedDamageIgnoreArmor": "Нанести урон без брони (выбранный)",
                 "healSelectedDamage": "Исцелить (выбранный)",
+                "undoDamage": "Отменить урон",
                 "choose": "Выбери",
                 "takeCondition": "{actor} получает {condition}.",
                 "treasureCard": "1 карта сокровищ",
@@ -444,7 +445,11 @@
                 "characterDied": "{actor} погибает.",
                 "characterSurvived": "{actor} избегает смерти и восстанавливает [[/roll D6]] ПЗ.",
                 "characterProne": "{actor} имеет 0 ПЗ и падает с ног.",
-                "castMagicTrick": "<b>{actor}</b> сотворяет <b>{spell}</b>."
+                "castMagicTrick": "<b>{actor}</b> сотворяет <b>{spell}</b>.",
+                "damageDetailDamage": "Урон",
+                "damageDetailArmor": "Броня",
+                "damageDetailMultiplier": "Множитель",
+                "damageDetailTotal": "Общий урон"
             },
             "dialog": {
                 "banes": "Бедствия",
@@ -478,8 +483,10 @@
             "professionSkillAdded": "Добавляет профессиональный навык: {skill}"
         },
         "SETTINGS": {
-            "keepOwnershipOnImport": "Сохранять права владения при импорте приключения",
-            "keepOwnershipOnImportHint": "Не переназначать права владения при импорте содержимого, которое уже существует в мире."
+            "keepOwnershipOnImport": "Сохранить владение",
+            "keepOwnershipOnImportHint": "Не переназначать права владения при импорте содержимого, которое уже существует в мире.",
+            "viewDamagePermission": "Права для видимого урона",
+            "viewDamagePermissionHint": "Выберите минимальный уровень прав участника при котором будут видимы значения урона."
         },
         "WARNING": {
             "kinAbility": "Не удалось найти способность народа: {ability}",
