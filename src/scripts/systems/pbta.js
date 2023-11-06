@@ -119,23 +119,23 @@ function overrideSheet() {
 							condition: true,
 							options: {
 								0: {
-									label: "Напуган (-2 сталкиваясь с угрозой)",
+									label: "Afraid (-2 to engage)",
 									value: false
 								},
 								1: {
-									label: "Зол (-2 утешая или заглядывая)",
+									label: "Angry (-2 to comfort or pierce)",
 									value: false
 								},
 								2: {
-									label: "Виноват (-2 провоцируя или оценивая)",
+									label: "Guilty (-2 to provoke or assess)",
 									value: false
 								},
 								3: {
-									label: "Отчаян (-2 давая волю)",
+									label: "Hopeless (-2 to unleash)",
 									value: false
 								},
 								4: {
-									label: "Неуверен (-2 защищая или отвергая)",
+									label: "Insecure (-2 to defend or reject)",
 									value: false
 								}
 							}
