@@ -173,11 +173,11 @@
       },
       "community": {
         "messages": {
-          "setDefaultActorManually": "В этом мире вы сделали Актера ({name}) Актером Отряда по умолчанию.",
-          "setDefaultActorAutomatically": "В этом мире актер ({name}) автоматически стал Актером Отряда по умолчанию.",
-          "displayDefaultActor": "Актер отряда по умолчанию - (имя: '{name}' / id: '{id}').",
-          "warnNoCommunityActor": "В этом мире нет актера с типом Отряд и некоторые функции не будут работать, пока вы его не создадите.",
-          "warnTooManyCommunityActors": "В этом мире слишком много актеров с типом Отряд ({size}). Система не может установить, какой из них правильный. Пожалуйста, установите его в листе Отряда вручную."
+          "setDefaultActorManually": "Вы выбрали Отряд '{name}' основным для этого мира.",
+          "setDefaultActorAutomatically": "Отряд '{name}' автоматически выбран в этом мире основным.",
+          "displayDefaultActor": "Основным Отрядом является '{name}'.",
+          "warnNoCommunityActor": "В этом мире нет Отряда и некоторые функции не будут работать, пока вы его не создадите.",
+          "warnTooManyCommunityActors": "В этом мире несколько Отрядов ({size}). Система не может установить, какой из них вам нужен. Пожалуйста, укажите его вручную в бланке Отряда."
         },
         "journey-log": {
           "year": "Год",
@@ -486,7 +486,7 @@
     },
     "callings": {
       "groups": {
-        "captain": "Воевода",
+        "captain": "Командующий",
         "scholar": "Учёный",
         "champion": "Поборник",
         "treasure-hunter": "Искатель сокровищ",
@@ -729,7 +729,7 @@
           "weary-not-weary": "Проверка с усталостью?",
           "miserable-not-miserable": "Подавленный бросок?",
           "weary": "усталый",
-          "roll-modifier": "Модификатор броска",
+          "result-modifier": "Result modifier",
           "modifier": "Модификатор",
           "not-weary": "не усталый",
           "miserable": "подавленный",
@@ -797,9 +797,9 @@
           "description": "Прибавить 2 к парированию следующей атаки."
         },
         "piercing-blow": {
-          "title": "Пронзающий удар",
+          "title": "Укол",
           "alt": "Копьё наносит пронзающий удар",
-          "label": "Пронзающий удар",
+          "label": "Укол",
           "description": "Добавить {amount} к кости испытания ({edge} для успеха)."
         },
         "gain-ground": {
@@ -832,8 +832,17 @@
       },
       "step": {
         "initiative": {
-          "att": "Атака",
-          "def": "Защита"
+          "attack": {
+            "label" : "Att.",
+            "title" : "Группа персонажей на острие атаки"
+          },
+          "defense": {
+            "label" : "Def.",
+            "title" : "Группа персонажей в защитной стойке"
+          },
+          "toggle": {
+            "title" : "Toggle between defending and attacking position."
+          }
         },
         "preparation": {
           "label": "Подготовка",
@@ -1009,7 +1018,7 @@
     "setExtendedWeaponSelection": "Расширенный список оружия",
     "setExtendedWeaponSelectionDescription": "Этот параметр следует активировать только в том случае, если Хранитель хочет использовать домашние правила боя (т.е. новые боевые умения). При активации этого параметра в бланке оружия появится поле для связи с новым боевым умением вместо названия группы оружия.",
     "setUseAdversarySkills": "Разрешить использование навыков врагами",
-    "setUseAdversarySkillsDescription": "Во втором издании враги не имеют навыков. Включение этой настройки добавит навыки в бланки персонажей Хранителя.",
+    "setUseAdversarySkillsDescription": "Во втором издании у врагов нет навыков. Включение этой настройки добавит навыки в бланки персонажей Хранителя.",
     "setOverrideEyeAwareness": "Вы превысили максимально значение Внимания Ока",
     "setOverrideEyeAwarenessDescription": "По умолчанию максимальное значение равно 24, но вы можете изменить его, исходя из своих потребностей.",
     "setRawModeForActiveEffectName": "Change Active Effect selection mode",
@@ -1021,6 +1030,10 @@
     "setShowHideRangeBlockName": "Отображение диапазона дистанции",
     "setShowHideRangeBlockDescription": "Used to show the Distance Range Block in the Weapon sheet and Character/Adversary sheet.",
     "disableAltClickName": "Отключить Alt+ЛКМ",
-    "disableAltClickDescription": "Disable the ALT Click to protect some modification actions like upgrading skill or toggling health status."
+    "disableAltClickDescription": "Отключите Alt+ЛКМ, чтобы предотвратить некоторые действия по изменению действий, такие как улучшение навыков или переключения состояния здоровья",
+    "aldDefaultValueName": "Actor Link Data for Npc is checked by default",
+    "aldDefaultValueDescription": "Set up the Actor Link Data default value for new Npc Actor.",
+    "setDisplayCommunityInfoAtStartValue": "Показать текущий основной Отряд.",
+    "setDisplayCommunityInfoAtStartDescription": "Показывать название основного Отряда при присоединении к игре."
   }
 }
