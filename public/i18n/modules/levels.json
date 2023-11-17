@@ -1,151 +1,287 @@
 {
-    "levels.modulename": "Уровни",
-    "levels.settings.enableTooltips.name": "Подсказки высоты объектов",
-    "levels.settings.enableTooltips.hint": "Показывать подсказки с высотой верха и низа при наведении на объекты уровней.",
-    "levels.settings.tokenElevScale.name": "Размер от высоты",
-    "levels.settings.tokenElevScale.hint": "Размер токенов будет изменяться в зависимости от высоты контролируемого токена.",
-    "levels.settings.tokenElevScaleMultiSett.name":"Множитель размера от высоты",
-    "levels.settings.tokenElevScaleMultiSett.hint":"Умножение размера токенов в зависимости от высоты на это число. Числа выше 1 сделают токены больше, а ниже 1 - меньше.",
-    "levels.settings.fogHiding.name": "Продвинутый туман войны",
-    "levels.settings.fogHiding.hint": "Неисследованные этажи не будут раскрываться в тумане войны.",
-    "levels.settings.lockElevation.name": "Заблокировать высоту",
-    "levels.settings.lockElevation.hint": "Предотвращает изменение высоты токена игроком через меню токена. Обратите внимание, что если у игроков есть разрешение на редактирование токенов, то они все равно смогут это сделать в настройках токена.",
-    "levels.settings.defaultLosHeight.name": "Рост токена по умолчанию",
-    "levels.settings.defaultLosHeight.hint": "Рост токена (расположение глаз существа). По умолчанию 6.",
-    "levels.settings.autoLOSHeight.name": "Автоматический рост токена",
-    "levels.settings.autoLOSHeight.hint": "Рассчитывать рост токена автоматически на основе его размера и масштаба. Настройки токена по умолчанию будут проигнорированы, но любые значения кроме 0 будут иметь приоритет над автоматическим расчётом.",
-    "levels.settings.debugRaycast.name": "ОТЛАДКА: Включить отображение лучей",
-    "levels.settings.debugRaycast.hint": "Показывать лучи зрения в 3D (зелёные: видимо, красные: не видимо)",
-    "levels.settings.preciseLightOcclusion.name": "Точный рассчёт света",
-    "levels.settings.preciseLightOcclusion.hint": "Меньше искажений света за счёт производительности",
-    "levels.settings.preciseTokenVisibility.name": "Точная видимость токенов",
-    "levels.settings.preciseTokenVisibility.hint": "Включение этой опции позволит проверять видимость по отношению к углам токена, а не только к его центру. Немного влияет на производительность на слабых компьютерах.",
-    "levels.settings.exactTokenVisibility.name": " Абсолютная видимость токенов",
-    "levels.settings.exactTokenVisibility.hint": "Включает тщательную проверку углов токена 11-точечным методом. Для работы также требуется включить опцию 'Точная видимость токенов'.  Рекомендуется при использовании 3D Canvas.",
-    "levels.settings.blockSightMovement.name":"Ограда",
-    "levels.settings.blockSightMovement.hint":"Если включено, то стены с высотой, не ограничивающей зрения, всё ещё будут ограничивать передвижение.",
-    "levels.settings.forceUiRefresh.name":"Принудительное обновление UI",
-    "levels.settings.forceUiRefresh.hint": "Принудительно повысить частоту обновления интерфейса Levels за счёт производительности.",
-    "levels.settings.hideElevation.name": "Скрывать высоту",
-    "levels.settings.hideElevation.hint": "Скрывать высоту от токенов",
-    "levels.settings.hideElevation.opt0": "Не скрывать",
-    "levels.settings.hideElevation.opt1": "Скрывать для игроков",
-    "levels.settings.hideElevation.opt2": "Скрывать для всех",
-    "levels.settings.revealTokenInFog.name": "Раскрывать токены в тумане",
-    "levels.settings.revealTokenInFog.hint": "Если токен видим, раскрывать туман вокруг этого токена.",
-
-
-    "levels.tilecoonfig.noOverhead": "Это не верхний тайл! Этот тайл будет отображаться на уровне фона. Вы можете сделать его верхним на соответствующей вкладке в настройках тайла.",
-    "levels.tilecoonfig.rangeTop.name": "Высота (верх)",
-    "levels.tilecoonfig.rangeBottom.name": "Высота (низ)",
-    "levels.tilecoonfig.showIfAbove.name": "Отображать даже снизу",
-    "levels.tilecoonfig.showIfAbove.hint": "Тайл будет отображаться, даже если токен под его нижней высотой (например, балкон).",
-    "levels.tilecoonfig.showAboveRange.name":"Максимальная разница высот",
-    "levels.tilecoonfig.showAboveRange.hint": "Если 'Отображать даже снизу' включено, это будет максимальной разницей высот между токеном и тайлом. Тайл дальше этого значения не будет виден.",
-    "levels.tilecoonfig.isBasement.name":"Строгий диапазон дистанции",
-    "levels.tilecoonfig.isBasement.hint": "Тайл будет виден только если токен находится в указанном диапазоне дистанции. Это означает, что токен, находящийся над верхним диапазоном не будет видеть этот тайл.",
-    "levels.tilecoonfig.noFogHide.name":"Не скрывать этот тайл туманом",
-    "levels.tilecoonfig.noFogHide.hint": "Исключает этот тайл из настройки 'Продвинутый туман войны'.",
-    "levels.tilecoonfig.range.unit": "Высота",
-    "levels.tilecoonfig.excludeFromChecker.name": "Исключение из Проверки сцены",
-    "levels.tilecoonfig.noCollision.name": "Позволить зрение",
-    "levels.tilecoonfig.noCollision.hint": "Этот тайл не будет блокировать зрение.",
-    "levels.tilecoonfig.allWallBlockSight.name": "Все стены блокируют зрение",
-    "levels.tilecoonfig.allWallBlockSight.hint": "Все стены под этим тайлом будут блокировать зрение, когда тайл не перекрывается.",
-
-    "levels.drawingconfig.hb.name": "Высота (низ)",
-    "levels.drawingconfig.ht.name": "Высота (верх)",
-    "levels.drawingconfig.range.name": "Диапазон отверстия",
-    "levels.drawingconfig.elevatorFloors.name": "Лифтовые этажи",
-    "levels.drawingconfig.elevatorFloors.hint": "Укажите этажи как: elevation,name|elevation,name... Пример: 0,Ground Floor|10,First Floor...",
-    "levels.drawingconfig.isHole.name": "Режим уровня",
-    "levels.drawingconfig.isHole.opt0": "Нет",
-    "levels.drawingconfig.isHole.opt1": "Отверстие",
-    "levels.drawingconfig.isHole.opt2": "Лестница",
-    "levels.drawingconfig.isHole.opt21": "Лестница (только вниз)",
-    "levels.drawingconfig.isHole.opt22": "Лестница (только вверх)",
-    "levels.drawingconfig.isHole.opt3": "Лифт",
-    "levels.drawingHud.title": "Переключить блокировку лестницы",
-    "levels.tokenconfig.tokenHeight.name": "Высота линии зрения токена",
-    "levels.tokenconfig.tokenHeight.unit": "(Дистанция)",
-    "levels.template.elevation.name": "Высота",
-    "levels.template.special.name": "Особое",
-    "levels.template.depth.name": "Глубина",
-
-    "levels.sceneconfig.backgroundElevation.name": "Высота заднего фона",
-    "levels.sceneconfig.backgroundElevation.notes": "Значение в единицах измерения сцены, определяющее высоту заднего фона и нижних тайлов.",
-    "levels.sceneconfig.weatherElevation.name": "Высота погоды",
-    "levels.sceneconfig.weatherElevation.notes": "Значение в единицах измерения сцены, определяющее высоту погодных эффектов.",
-    "levels.sceneconfig.lightMasking.name": "Уровни: не отключать освещение",
-    "levels.sceneconfig.lightMasking.notes": "Levels не будет контролировать видимость света. Опцию следует отключить в сценах, использующих несколько уровней.",
-
-    "levels.controls.main.name": "Уровни",
-    "levels.controls.levelsview.name": "Включить просмотр/размещение уровней",
-    "levels.controls.definelevels.name": "Изменение уровней",
-    "levels.controls.levelup.name": "На уровень вверх",
-    "levels.controls.leveldown.name": "На уровень вниз",
-    "levels.controls.levelsroof.name": "Просмотр/размещение крыш",
-    "levels.controls.levelshole.name": "ВКЛ - рисунок размещается как Лестница; ВЫКЛ - как Отверстие",
-    "levels.controls.levelsclear.name": "Очистка уровней",
-    "levels.controls.placeOverhead.name": "Тайлы будут размещены как верхние тайлы 'внутри' уровней",
-    "levels.controls.setTemplateElevation.name":"Задать высоту следующего размещаемого шаблона",
-    "levels.controls.suppressBrmode.name":"Принудительно отключить режим Better Roofs",
-
-    "levels.dialog.levelsclear.title": "Очистить уровни",
-    "levels.dialog.levelsclear.content": "Очистить все сохранённые уровни?",
-    "levels.dialog.define.warn": "Укажите уровни как: низ,верх|низ,верх - например 0,9|10,19|20,29",
-    "levels.dialog.define.title": "Указание уровней этой сцены",
-    "levels.dialog.define.text": "Уровни:",
-    "levels.dialog.removeLevel.title": "Удалить уровень",
-    "levels.dialog.removeLevel.content": "Вы уверены, что хотите удалить этот уровень?",
-    "levels.dialog.getFromScene.title": "Получить уровни со сцены",
-    "levels.dialog.getFromScene.content": "Получить уровни со сцены? Это перезапишет текущие уровни.",
-    "levels.dialog.elevator.title": "Уровни - Выберите этаж",
-    "levels.dialog.elevation.title": "Высота следующего шаблона",
-    "levels.dialog.sceneDrop.title": "Levels - Перенос сцены",
-    "levels.dialog.sceneDrop.content": "Все элементы переносимой сцены будут размещены на текущем уровне. Желаете продолжить?",
-
-    "levels.ui.title": "Уровни - Инструмент слоёв",
-
-    "levels.yesnodialog.yes": "Применить",
-    "levels.yesnodialog.no": "Отмена",
-
-    "levels.widget.title": "Уровни",
-    "levels.widget.element": "Уровень",
-
-    "levels.form.bottom": "Низ:",
-    "levels.form.top": "Верх:",
-    "levels.form.name": "Название:",
-    "levels.form.currentLevel": "Текущие уровни",
-    "levels.form.addNew": "Добавить уровень",
-    "levels.form.tip": "*Уровни не должны пересекаться (напр. 0,9 / 10,19 / 20,29)",
-    "levels.form.suggestedLevels": "Автоматически создать уровни",
-    "levels.form.autoLevels": "Получить уровни со сцены",
-    "levels.err.collision": "Движение заблокировано стеной или потолком",
-
-    "levels.err.wallheight": "ВНИМАНИЕ! Для корректной работы Levels требует модуль Wall Height версии 4.1.0 или выше.",
-    "levels.err.lessfog": "Levels: ВНИМАНИЕ! Обнаружен модуль Less Fog - видимость токенов не будет работать корректно. Отключите этот модуль.",
-    "levels.err.tokenheight": "Levels: ВНИМАНИЕ! Обнаружена активированная настройка 'Включить высоту токенов' в модуле Wall Height. Эта функция несовместима с Levels и была принудительно отключена.  ",
-    "levels.info.advancedMode": "Levels: был активирован Продвинутый режим в Better Roofs.",
-    "levels.firsttime.dialog": "",
-
-    "levels.dialog.checkScene.title": "Levels - Проверка сцены",
-    "levels.dialog.checkScene.content": "Определение тайлов с полигонами, который могли быть не обнаружены  автоматически. Проверьте вручную следующие тайлы:",
-    "levels.dialog.checkScene.learnMore": "Не знаете, что такое полигон? Есть другие вопросы? Смотрите документацию Levels, где мы разместили обучающее видео.",
-    "levels.dialog.checkScene.noIssues": "Проблемы не найдены",
-    "levels.dialog.checkScene.excluded": "Исключено из проверки",
-
-    "levels.ui.players": "Отображение игроков",
-    "levels.ui.stair": "Размещение рисунка как лестницы",
-    "levels.ui.addLevel": "Добавление уровня",
-    "levels.ui.editLevels": "Изменение уровней",
-    "levels.ui.getFromScene": "Получение уровней со сцены",
-    "levels.ui.clearLevels": "Очистка уровней",
-    "levels.ui.debugScene": "Отладка сцены (красным цветом отмечены проблемы)",
-    "levels.ui.minElevDiff": "Минимальный размер уровня",
-    "levels.ui.warning": "ВНИМАНИЕ! 'Не отключать освещение' включено в настройках сцены - Уровни будут работать неправильно. Нажмите, чтобы исправить проблему.",
-
-
-    "levels.conflicts.midiqol.tokenvis": "Включение 'Игроки контролируют свои скрытые токены' в MidiQOL может вызвать проблемы с видимостью токенов. Отключите эту опцию в настройках."
-
+    "levels": {
+        "modulename": "Уровни",
+        "settings": {
+            "enableTooltips": {
+                "name": "Подсказки высоты объектов",
+                "hint": "Показывать подсказки с высотой верха и низа при наведении на объекты уровней."
+            },
+            "tokenElevScale": {
+                "name": "Размер от высоты",
+                "hint": "Размер токенов будет изменяться в зависимости от высоты контролируемого токена."
+            },
+            "tokenElevScaleMultiSett": {
+                "name": "Множитель размера от высоты",
+                "hint": "Умножение размера токенов в зависимости от высоты на это число. Числа выше 1 сделают токены больше, а ниже 1 - меньше."
+            },
+            "fogHiding": {
+                "name": "Продвинутый туман войны",
+                "hint": "Неисследованные этажи не будут раскрываться в тумане войны."
+            },
+            "lockElevation": {
+                "name": "Заблокировать высоту",
+                "hint": "Предотвращает изменение высоты токена игроком через меню токена. Обратите внимание, что если у игроков есть разрешение на редактирование токенов, то они все равно смогут это сделать в настройках токена."
+            },
+            "defaultLosHeight": {
+                "name": "Рост токена по умолчанию",
+                "hint": "Рост токена (расположение глаз существа). По умолчанию 6."
+            },
+            "autoLOSHeight": {
+                "name": "Автоматический рост токена",
+                "hint": "Рассчитывать рост токена автоматически на основе его размера и масштаба. Настройки токена по умолчанию будут проигнорированы, но любые значения кроме 0 будут иметь приоритет над автоматическим расчётом."
+            },
+            "debugRaycast": {
+                "name": "ОТЛАДКА: Включить отображение лучей",
+                "hint": "Показывать лучи зрения в 3D (зелёные: видимо, красные: не видимо)"
+            },
+            "preciseLightOcclusion": {
+                "name": "Точный рассчёт света",
+                "hint": "Меньше искажений света за счёт производительности"
+            },
+            "preciseTokenVisibility": {
+                "name": "Точная видимость токенов",
+                "hint": "Включение этой опции позволит проверять видимость по отношению к углам токена, а не только к его центру. Немного влияет на производительность на слабых компьютерах."
+            },
+            "exactTokenVisibility": {
+                "name": " Абсолютная видимость токенов",
+                "hint": "Включает тщательную проверку углов токена 11-точечным методом. Для работы также требуется включить опцию 'Точная видимость токенов'.  Рекомендуется при использовании 3D Canvas."
+            },
+            "blockSightMovement": {
+                "name": "Ограда",
+                "hint": "Если включено, то стены с высотой, не ограничивающей зрения, всё ещё будут ограничивать передвижение."
+            },
+            "forceUiRefresh": {
+                "name": "Принудительное обновление UI",
+                "hint": "Принудительно повысить частоту обновления интерфейса Levels за счёт производительности."
+            },
+            "hideElevation": {
+                "name": "Скрывать высоту",
+                "hint": "Скрывать высоту от токенов",
+                "opt0": "Не скрывать",
+                "opt1": "Скрывать для игроков",
+                "opt2": "Скрывать для всех"
+            },
+            "revealTokenInFog": {
+                "name": "Раскрывать токены в тумане",
+                "hint": "Если токен видим, раскрывать туман вокруг этого токена."
+            }
+        },
+        "tileconfig": {
+            "noOverhead": "Это не верхний тайл! Этот тайл будет отображаться на уровне фона. Вы можете сделать его верхним на соответствующей вкладке в настройках тайла.",
+            "occlusionNone": "Режим преграждения выставлен на 'Нет', тайл не будет блокировать видимость. Выставите режим на 'Затухание', если вы желаете, чтобы тайл блокировал видимость.",
+            "rangeTop": {
+                "name": "Высота (верх)"
+            },
+            "rangeBottom": {
+                "name": "Высота (низ)"
+            },
+            "showIfAbove": {
+                "name": "Отображать даже снизу",
+                "hint": "Тайл будет отображаться, даже если токен под его нижней высотой (например, балкон)."
+            },
+            "showAboveRange": {
+                "name": "Максимальная разница высот",
+                "hint": "Если 'Отображать даже снизу' включено, это будет максимальной разницей высот между токеном и тайлом. Тайл дальше этого значения не будет виден."
+            },
+            "isBasement": {
+                "name": "Строгий диапазон дистанции",
+                "hint": "Тайл будет виден только если токен находится в указанном диапазоне дистанции. Это означает, что токен, находящийся над верхним диапазоном не будет видеть этот тайл."
+            },
+            "noFogHide": {
+                "name": "Не скрывать этот тайл туманом",
+                "hint": "Исключает этот тайл из настройки 'Продвинутый туман войны'."
+            },
+            "range": {
+                "unit": "Высота"
+            },
+            "excludeFromChecker": {
+                "name": "Исключение из Проверки сцены"
+            },
+            "noCollision": {
+                "name": "Не блокирует видимость",
+                "hint": "Этот тайл не будет блокировать зрение."
+            },
+            "allWallBlockSight": {
+                "name": "Все стены блокируют зрение",
+                "hint": "Все стены под этим тайлом будут блокировать зрение, когда тайл не перекрывается."
+            }
+        },
+        "drawingconfig": {
+            "hb": {
+                "name": "Высота (низ)"
+            },
+            "ht": {
+                "name": "Высота (верх)"
+            },
+            "range": {
+                "name": "Диапазон отверстия"
+            },
+            "elevatorFloors": {
+                "name": "Лифтовые этажи",
+                "hint": "Укажите этажи как: elevation,name|elevation,name... Пример: 0,Ground Floor|10,First Floor..."
+            },
+            "isHole": {
+                "name": "Режим уровня",
+                "opt0": "Нет",
+                "opt1": "Отверстие",
+                "opt2": "Лестница",
+                "opt21": "Лестница (только вниз)",
+                "opt22": "Лестница (только вверх)",
+                "opt3": "Лифт"
+            }
+        },
+        "drawingHud": {
+            "title": "Переключить блокировку лестницы"
+        },
+        "tokenconfig": {
+            "tokenHeight": {
+                "name": "Высота линии зрения токена",
+                "unit": "(Дистанция)"
+            }
+        },
+        "template": {
+            "elevation": {
+                "name": "Высота"
+            },
+            "special": {
+                "name": "Особое"
+            },
+            "depth": {
+                "name": "Глубина"
+            }
+        },
+        "sceneconfig": {
+            "backgroundElevation": {
+                "name": "Высота заднего фона",
+                "notes": "Значение в единицах измерения сцены, определяющее высоту заднего фона и нижних тайлов."
+            },
+            "weatherElevation": {
+                "name": "Высота погоды",
+                "notes": "Значение в единицах измерения сцены, определяющее высоту погодных эффектов."
+            },
+            "lightMasking": {
+                "name": "Уровни: не отключать освещение",
+                "notes": "Levels не будет контролировать видимость света. Опцию следует отключить в сценах, использующих несколько уровней."
+            }
+        },
+        "controls": {
+            "main": {
+                "name": "Уровни"
+            },
+            "levelsview": {
+                "name": "Включить просмотр/размещение уровней"
+            },
+            "definelevels": {
+                "name": "Изменение уровней"
+            },
+            "levelup": {
+                "name": "На уровень вверх"
+            },
+            "leveldown": {
+                "name": "На уровень вниз"
+            },
+            "levelsroof": {
+                "name": "Просмотр/размещение крыш"
+            },
+            "levelshole": {
+                "name": "ВКЛ - рисунок размещается как Лестница; ВЫКЛ - как Отверстие"
+            },
+            "levelsclear": {
+                "name": "Очистка уровней"
+            },
+            "placeOverhead": {
+                "name": "Тайлы будут размещены как верхние тайлы 'внутри' уровней"
+            },
+            "setTemplateElevation": {
+                "name": "Задать высоту следующего размещаемого шаблона"
+            },
+            "suppressBrmode": {
+                "name": "Принудительно отключить режим Better Roofs"
+            }
+        },
+        "dialog": {
+            "levelsclear": {
+                "title": "Очистить уровни",
+                "content": "Очистить все сохранённые уровни?"
+            },
+            "define": {
+                "warn": "Укажите уровни как: низ,верх|низ,верх - например 0,9|10,19|20,29",
+                "title": "Указание уровней этой сцены",
+                "text": "Уровни:"
+            },
+            "removeLevel": {
+                "title": "Удалить уровень",
+                "content": "Вы уверены, что хотите удалить этот уровень?"
+            },
+            "getFromScene": {
+                "title": "Получить уровни со сцены",
+                "content": "Получить уровни со сцены? Это перезапишет текущие уровни."
+            },
+            "elevator": {
+                "title": "Уровни - Выберите этаж"
+            },
+            "elevation": {
+                "title": "Высота следующего шаблона"
+            },
+            "sceneDrop": {
+                "title": "Levels - Перенос сцены",
+                "content": "Все элементы переносимой сцены будут размещены на текущем уровне. Желаете продолжить?"
+            },
+            "checkScene": {
+                "title": "Levels - Проверка сцены",
+                "content": "Определение тайлов с полигонами, который могли быть не обнаружены  автоматически. Проверьте вручную следующие тайлы:",
+                "learnMore": "Не знаете, что такое полигон? Есть другие вопросы? Смотрите документацию Levels, где мы разместили обучающее видео.",
+                "noIssues": "Проблемы не найдены",
+                "excluded": "Исключено из проверки"
+            }
+        },
+        "ui": {
+            "title": "Уровни - Инструмент слоёв",
+            "players": "Отображение игроков",
+            "stair": "Размещение рисунка как лестницы",
+            "addLevel": "Добавление уровня",
+            "editLevels": "Изменение уровней",
+            "getFromScene": "Получение уровней со сцены",
+            "clearLevels": "Очистка уровней",
+            "debugScene": "Отладка сцены (красным цветом отмечены проблемы)",
+            "minElevDiff": "Минимальный размер уровня",
+            "warning": "ВНИМАНИЕ! 'Не отключать освещение' включено в настройках сцены - Уровни будут работать неправильно. Нажмите, чтобы исправить проблему."
+        },
+        "yesnodialog": {
+            "yes": "Применить",
+            "no": "Отмена"
+        },
+        "widget": {
+            "title": "Уровни",
+            "element": "Уровень"
+        },
+        "form": {
+            "bottom": "Низ:",
+            "top": "Верх:",
+            "name": "Название:",
+            "currentLevel": "Текущие уровни",
+            "addNew": "Добавить уровень",
+            "tip": "*Уровни не должны пересекаться (напр. 0,9 / 10,19 / 20,29)",
+            "suggestedLevels": "Автоматически создать уровни",
+            "autoLevels": "Получить уровни со сцены"
+        },
+        "err": {
+            "collision": "Движение заблокировано стеной или потолком",
+            "tokenOOB": "Levels: Высота токена %n превышает высоту потолка текущего уровня. Выставите высоту токена вручную или увеличьте высоту уровня. Подробнее на <a href='https://wiki.theripper93.com/free/wall-height#token-height' target='_blank'>here</a>.",
+            "wallheight": "ВНИМАНИЕ! Для корректной работы Levels требует модуль Wall Height версии 4.1.0 или выше.",
+            "lessfog": "Levels: ВНИМАНИЕ! Обнаружен модуль Less Fog - видимость токенов не будет работать корректно. Отключите этот модуль.",
+            "tokenheight": "Levels: ВНИМАНИЕ! Обнаружена активированная настройка 'Включить высоту токенов' в модуле Wall Height. Эта функция несовместима с Levels и была принудительно отключена.  "
+        },
+        "info": {
+            "advancedMode": "Levels: был активирован Продвинутый режим в Better Roofs."
+        },
+        "firsttime": {
+            "dialog": ""
+        },
+        "conflicts": {
+            "midiqol": {
+                "tokenvis": "Включение 'Игроки контролируют свои скрытые токены' в MidiQOL может вызвать проблемы с видимостью токенов. Отключите эту опцию в настройках."
+            }
+        }
+    }
 }
