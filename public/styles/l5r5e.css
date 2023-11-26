@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "BrushtipTexe";
+  src: url("../fonts/L5R/BrushtipTexe.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "PatrickHand";
+  src: url("../fonts/L5R/BadComic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Caballar";
+  src: url("../fonts/L5R/Halogen.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ArchitectsDaughter";
+  src: url("../fonts/L5R/ArchitectsDaughter.ttf") format("truetype");
+}
+
+body {
+  font-family: var(--font-sans);
+  letter-spacing: normal;
+}
+
+.l5r5e .rings label strong {
+  font-family: "BrushtipTexe";
+}
+
+.l5r5e .rings #earth label strong {
+  left: -1.6rem;
+}
+
+.l5r5e .rings #air label strong {
+  left: 4.5rem;
+}
+
+.l5r5e .rings #fire label strong {
+  left: 1rem;
+}
+
+.l5r5e .rings #void label strong {
+  left: 0.7rem;
+}
+
+.l5r5e .attribute-label {
+  font-family: var(--font-sans-condensed);
+}
+
+.l5r5e.sheet .sheet-header .attribute-label:before {
+  border: none;
+}
+
+.l5r5e .section-header,
+fieldset legend {
+  font-family: "PatrickHand";
+}
+
+.l5r5e.sheet article .skills-wrapper > li h4,
+.l5r5e.sheet article .techniques-wrapper > li h4 {
+  padding: 0.3rem 0.3rem;
+}
