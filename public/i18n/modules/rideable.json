@@ -1,0 +1,509 @@
+{
+	"Rideable" : {
+		"Titles" : {
+			"Rideable"					: "Rideable",
+			"WorldSettings"				: "Настройки Мира (Только для GM)",
+			"ClientSettings"			: "Настройки клиента",
+			"GMonly"					: "Только для GM",
+			"Tile"						: "Тайл",
+			"RequiresRL"				: "Rideable requires <a href=\"https://foundryvtt.com/packages/routinglib\">routinglib</a> to be active for the token following feature to work" 
+		},
+		
+		"Settings" : {
+			"defaultRideable" : {
+				"name" 					: "Токены доступны для верховой езды по умолчанию",
+				"descrp"				: "Будут ли все токены по умолчанию пригодны для верховой езды (может быть изменено для каждого токена в настройках токена)"
+			},
+			
+			"allowTileRiding" : {
+				"name" 					: "Тайлы могут быть закреплены",
+				"descrp"				: "Могут ли тайлы быть закреплены, как токены"
+			},
+			
+			"allowMountingonEntering" : {
+				"name" 					: "Разрешить прикрепление при входе",
+				"descrp"				: "Разрешить токенам и тайлам быть прикрепленными к токенам, которые входят в их пределы"
+			},
+			
+			"LocknKeyintegration" : {
+				"name" 					: "Интеграция Lock & Key",
+				"descrp"				: "Позволяет блокировать токены, на которых можно ехать верхом"
+			},
+			
+			"DFredsEffectsIntegration" : {
+				"name" 					: "Интеграция DFreds Convenient Effects",
+				"descrp"				: "Позволяет применять различные эффекты к закрепленным и захваченным токенам"
+			},
+			
+			"TaggerMountingIntegration" : {
+				"name" 					: "Интеграция прикрепления Tagger",
+				"descrp"				: "Позволяет прикрепить и открепить токены с помощью тегов (tag: \"Rideable:{RiderTokenID}\")"
+			},
+			
+			"RidingHeight" : {
+				"name" 					: "Высота посадки",
+				"descrp"				: "Высота по оси Z относительно верхового объекта  (рекомендуется, чтобы она была больше 0)"
+			},
+			
+			"useRidingHeight" : {
+				"name" 					: "Высота верховой езды по умолчанию",
+				"descrp"				: "Если токены по умолчанию используют высоту верховой езды"
+			},
+			
+			"useRiddenTokenHeight" : {
+				"name" 					: "Использовать высоту токена",
+				"descrp"				: "Использовать значение высоты токена (добавляется через модуль \"Wall-Height\") вместо установленного значения \" Высота верховой езды\"."
+			},
+			
+			"MountingDistance" : {
+				"name" 					: "Расстояние для прикрепления",
+				"descrp"				: "Максимальное расстояние, на котором токен может находиться до цели прикрепления (-1 для неограниченного расстояния)"
+			},
+			
+			"UseArmReachDistance": {
+				"name" 					: "Используйте расстояние \"Дотянуться рукой\"",
+				"descrp"				: "Для расстояния прикрепления используется расстояние, установленное в \"Дотянутся рукой\"."	
+			},
+			
+			"BorderDistance" : {
+				"name" 					: "Расстояние от границы до границы",
+				"descrp"				: "Если расстояние прикрепления должно рассчитываться от границы токена, а не от средней точки (корректно работает только для круглых/квадратных токенов)"
+			},
+
+			"MaxRiders" : {
+				"name" 					: "Максимальное количество наездников на один токен",
+				"descrp"				: "Максимальное количество токенов, которое может ездить на токене (-1 для неограниченного количества)"
+			},
+
+			"RiderMovementworlddefault" : {
+				"name" 					: "Настройки по умолчанию для движения наездника",
+				"descrp"				: "Настройка по умолчанию для движения игроков в режиме наездника ( не заменяет)"
+			},		
+
+			"MountButtonDefaultPosition" : {
+				"name" 					: "Кнопка крепления положение по умолчанию",
+				"descrp"				: "Настройка по умолчанию для положения кнопки крепления (не отменяется)"
+			},					
+
+			"RiderMovement" : {
+				"name" 					: "Движение наездника",
+				"descrp"				: "Что должно произойти, если токен наездника попытается двигаться самостоятельно",
+				"options" : {
+					"worlddefault"		: "используйте настройки мира по умолчанию",
+					"disallow"			: "Предотвратить движение",
+					"dismount"			: "Снять наездника",
+					"moveridden"		: "Переместить оседланный Токен (если на него выданы права)"
+				}
+			},
+			
+			"MountButtonPosition" : {
+				"name" 					: "Положение кнопки прикрепления",
+				"descrp"				: "Положение кнопки прикрепления",
+				"options" : {
+					"default"			: "используйте настройки мира  по умолчанию",
+					"none"				: "нет кнопки",
+					"left"				: "с левой стороны",
+					"right"				: "с правой стороны"
+				}
+			},
+			
+			"RiderRotation" : {
+				"name" 					: "Связать вращение",
+				"descrp"				: "Поворачивает всех всадников, если повернут токен (также работает с опцией \"Переместить токен\")"				
+			},
+		
+			"RidingSystemEffects" : {
+				"name" 					: "Применить эффект \"Прикреплен\"",
+				"descrp"				: "Если токен оказывается верхом, на него накладывается эффект, зависящий от системы"				
+			},
+			
+			"CustomRidingEffects" : {
+				"name" 					: "Настраиваемые эффекты при верховой езде",
+				"descrp"				: "Эффекты, которые применяются к токенам, когда они оказываются верхом (имена или идентификаторы, разделенные символом \";\")"				
+			},			
+			
+			"RideableTag" : {
+				"name" 					: "Свойство \"Rideable\"",
+				"descrp"				: "Позволяет ездить на токенах, имеющих признак \"Rideable\" (признак \"Rideable\" должен быть добавлен вручную в настройках>Pathfinder 2nd Edition>Manage Honebrew Elements>Creature Traits)."				
+			},
+			
+			"FamiliarRiding" : {
+				"name" 					: "Фамильяр наездник",
+				"descrp"				: "Позволяет фамильярам ездить на своем хозяине, при этом фамильяры будут располагаться по углам своего хозяина"				
+			},
+			
+			"FamiliarRidingFirstCorner" : {
+				"name" 					: "Расположение фамильяра наездника",
+				"descrp"				: "Первый угол который занимают фамильяры.",
+				"options" : {
+					"tl"				: "Верхний левый",
+					"tr"				: "Верхний правый",
+					"bl"				: "Нижний левый",
+					"br"				: "Нижний правый"
+				}
+			},
+			
+			"Grappling" : {
+				"name" 					: "Захват",
+				"descrp"				: "Позволяет токенам захватывать друг друга (захваченные токены могут быть освобождены только захватившим токеном)"				
+			},
+			
+			"GrapplingSystemEffects" : {
+				"name" 					: "Применить эффект \"Схваченный\"",
+				"descrp"				: "Если токен захвачен, на него накладывается эффект, зависящий от системы"				
+			},
+			
+			"GrappleplacementDefault" : {
+				"name"					: "Расположение захвата по умолчанию",
+				"descrp"				: "Стандартное размещение токенов в захвате",
+				"options" : {
+					"RowBelow"			: "ниже",
+					"RowAbove"			: "выше",
+					"RowMiddle"			: "в середине",
+					"ClosestInside"		: "внутри",
+					"Following"			: "следовать"
+				}
+			},
+			
+			"PreventEnemyRiding" : {
+				"name" 					: "Предотвратить поездки на противниках",
+				"descrp"				: "Запрещает токенам кататься на вражеских токенах (GM все еще может отменить это)"				
+			},
+			
+			"FitRidersize" : {
+				"name" 					: "Регулировка размера наездника",
+				"descrp"				: "Регулирует размер наездника в случае, если он больше или равен размеру оседланного токена"				
+			},
+			
+			"FitRiderSizeFactor" : {
+				"name" 					: "Коэффициент размера всадника",
+				"descrp"				: "Коэффициент, на который регулирует размер наездников в случаях, когда они больше или равны по размеру наездническому токену"				
+			},
+		
+			"MessagePopUps" : {
+				"name" 					: "Всплывающие сообщения",
+				"descrp"				: "Включение функции всплывающих сообщений при выполнении таких действий, как крепление или открепление."				
+			},		
+			
+			"OnlyownedMessagePopUps" : {
+				"name" 					: "Всплывающие сообщения только для владельцев",
+				"descrp"				: "Показывает только всплывающие сообщения от токенов, которые вы контролируете"				
+			},
+			
+			"EnableFollowing" : {
+				"name"					: "Включить функцию следования Токенов",
+				"descrp"				: "Если Токен, идущий следом, активен в этом мире"
+			},
+			
+			"FollowingAlgorithm" : {
+				"name"					: "Алгоритм следования",
+				"descrp"				: "Какой из следующих алгоритмов используется (установите routinglib для получения дополнительных возможностей)",
+				"options" : {
+					"SimplePathHistory" : "Простое построение пути (простой, не требующая много ресурсов)",
+					"routinglib"		: "routinglib (продвинутый, ресурсоемкий, рекомендуется)"
+				}
+			},
+			
+			"FollowingCombatBehaviour" : {
+				"name"					: "Поведение в бою",
+				"descrp"				: "Как ведомые токены ведут себя в бою",
+				"options" : {
+					"stop"				: "Прекратить следовать",
+					"resumeafter"		: "Остановить и возобновить после боя",
+					"continue"			: "Продолжить следовать"
+				}
+			},
+			
+			"OnlyfollowViewed" : {
+				"name"					: "Следуют только видимые",
+				"descrp"				: "Если необходимо следовать только видимым в данный момент токенам"
+			},	
+			
+			"PreventFollowerStacking" : {
+				"name"					: "Предотвращение наложения ведомых",
+				"descrp"				: "Если ведомые одного и того же токена не должны накладываться, они все равно могут накладываться в узких местах"
+			},	
+			
+			"OnFollowerMovement" : {
+				"name" 					: "Передвижение ведомого токена",
+				"descrp"				: "Что произойдет, если ведомый токен попытается двигаться самостоятельно",
+				"options" : {
+					"stopfollowing"		: "Прекратить следование",
+					"updatedistance"	: "Обновить дистанцию следования"
+				}
+			}			
+		},
+		
+		"Keys" : {
+			"Mount" : {
+				"name" 					: "Прикрепить",
+				"descrp"				: "Прикреплять управляемые токены в заданный токен (альтернативный макрос: \"Mount\")"
+			},
+			
+			"UnMount" : {
+				"name" 					: "Открепить",
+				"descrp"				: "Открепить управляемые Токены от их оседланных Токенов или открепить целевой Токен от управляемого Токена (альтернативный макрос: \"Unmount\")"
+			},
+			
+			"MountFamiliar" : {
+				"name" 					: "Прикрепить фамильяра",
+				"descrp"				: "Прикрепить управляемых Фамильяров к выбранному Токену, если выбранный Токен является хозяином (альтернативный макрос: \"MountFamiliar\") (только если активирована настройка \"Фамильяр Наездник\")"
+			},
+			
+			"GrappleTarget" : {
+				"name" 					: "Захватить/отпустить цель",
+				"descrp"				: "Прикрепить целевой токен к контролируемому токену, может быть снят только при помощи токена захвата (альтернативный макрос: \"Grapple\") (только если активирована настройка \"Захват\")"
+			},
+			
+			"ToggleMount" : {
+				"name" 					: "Переключение крепления",
+				"descrp"				: "Прикрепить или открепить управляемые токены на/из целевого токена"
+			},
+			
+			"ToggleGrapplePlacement" : {
+				"name"					: "Переключение расположение захвата",
+				"descrp"				: "Переключение между вариантами размещения токенов захвата для выбранных токенов"
+			},
+			
+			"TogglePiloting" : {
+				"name" 					: "Переключение управления",
+				"descrp"				: "Начать или прекратить управление текущим прикрепленным токеном"
+			},
+
+			"ToggleFollowing" : {
+				"name"					: "Переключение следования",
+				"descrp"				: "Начать или прекратить следование выбранных токенов за целевым или последующим токеном"
+			}	
+		},
+		
+		"Popup" : {
+			"Mounting"					: "Закреплен {pRiddenName}",
+			"UnMounting"				: "Откреплен {pRiddenName}",
+			"MountingFamiliar"			: "Следует за хозяином {pRiddenName}",
+			"UnMountingFamiliar"		: "Не следует за хозяином {pRiddenName}",
+			"PreventedRiderMove"		: "Still riding {pRiddenName}",
+			"RidingLoop"				: "Riding {pRiddenName} would be awkward",
+			"NoPlace"					: "{pRiddenName} has no place left",
+			"EnemyRiding"				: "{pRiddenName} is my enemy",
+			"Toofaraway"				: "{pRiddenName} is too far away",
+			"RiddenisLocked"			: "{pRiddenName} is locked",
+			
+			"Grappling"					: "Grappled by {pRiddenName}",
+			"UnGrappling"				: "Released from {pRiddenName}",
+			"PreventedGrappledMove"		: "Still grappled by {pRiddenName}",
+			
+			"cantPilot"					: "{pRiddenName} can't be piloted",
+			"startPiloting"				: "Now piloting {pRiddenName}",
+			"stopPiloting"				: "No longer piloting {pRiddenName}",
+			"cantbeMoved"				: "{cantbeMoved} cant be moved (may be attached to something)",
+			
+			"StopFollowing"				: "Stopped following",
+			"StartFollowing"			: "Started following {pFollowedName}",
+			"CantFollowinCombat"		: "Не может следовать во время боя",
+			"TargetisFollowingMe"		: "{pFollowedName} is already following me"
+		},	
+		
+		"TokenSettings" : {
+			"MaxRiderFlag" : {
+				"name"					: "Максимум наездников",
+				"descrp"				: "Переопределяет глобальные настройки для этого токена (-1 для неограниченных, оставьте пустым, чтобы вернуться к мировым настройкам по умолчанию)"
+			},
+			
+			"MountonEnterFlag" : {
+				"name"					: "Прикреплять в центре",
+				"descrp"				: "Токены, которые попадают в это пространство для токенов/тайлов, прикрепляются к нему"
+			},
+			
+			"AutoMountBlackListFlag" : {
+				"name"					: "Черный список прикреплений",
+				"descrp"				: "Имена токенов, ID и ID актеров, которые не будут прикреплены при входе (разделены символом \";\")"
+			},
+			
+			"RiderPositioningFlag" : {
+				"name"					: "Позиционирование наездника",
+				"descrp"				: "Схема расположения токенов наездника",
+				"options" : {
+					"CirclePlacement"	: "Круг",
+					"RowPlacement"		: "Ряд",
+					"ClusterPlacement"	: "Кластер",
+					"RowPlacementTop"	: "Верхний ряд",
+					"RowPlacementBottom": "Нижний ряд"
+				}
+			},
+			
+			"GrapplePlacementFlag" : {
+				"name"					: "Размещение захваченного",
+				"descrp"				: "Где размещаются захваченные токены",
+				"options" : {
+					"RowBelow"			: "ниже",
+					"RowAbove"			: "выше",
+					"RowMiddle"			: "в середине",
+					"ClosestInside"		: "внутри" 
+				}
+			},
+			
+			"issetRideableFlag" : {
+				"name"					: "Токен пригоден для верховой езды",
+				"descrp"				: "Отменяет глобальную настройку по умолчанию"
+			},
+			
+			"TileRideableNameFlag" : {
+				"name"					: "Название тайла",
+				"descrp"				: "Название, используемое Rideable для этого тайла (например, всплывающие окна)"
+			},
+			
+			"TokenFormFlag" : {
+				"name"					: "Форма токена",
+				"descrp"				: "",
+				"options" : {
+					"TokenFormCircle"	: "Окружность/Эллипс",
+					"TokenFormRectangle": "Прямоугольник",
+					"TokenTransparency"	: "исходя из прозрачности",
+					"TokenFormAttachedTiles" : "исходя из прикрепленных токенов/тайлов",
+					"TileFormNone"		: "Нет формы/игнорировать"
+				}
+			},
+			
+			"CustomRidingheightFlag" : {
+				"name"					: "Настраиваемая высота посадки",
+				"descrp"				: "Настраиваемая высота данного токена, используемая для его всадников (оставить пустым для значения по умолчанию)"
+			},
+			
+			"UseRidingHeightFlag" : {
+				"name"					: "Используйте высоту для верховой езды",
+				"descrp"				: "Если высота этого токена должна управлять высотой наездника"
+			},
+			
+			"InsideMovementFlag" : {
+				"name"					: "Наездники могут свободно передвигаться",
+				"descrp"				: "Если всадники могут свободно перемещаться в пределах границ этого токена"
+			},
+			
+			"SpawnRidersFlag" : {
+				"name"					: "Вызывает наездников",
+				"descrp"				: "Наездники, которых вызывает этот токен (Имена или ID, разделенные символом \";\")"
+			},
+			
+			"MountingEffectsFlag" : {
+				"name"					: "Эффекты для наездников",
+				"descrp"				: "Эффекты, применяемые к наездникам этого токена (имена или ID, разделенные символом \";\")"
+			},
+			
+			"WorldMEffectOverrideFlag" : {
+				"name"					: "Заменить эффекты верховой езды",
+				"descrp"				: "Заменяет стандартные эффекты верховой езды на эффекты, установленные выше (вместо того, чтобы добавлять их)."
+			},
+			
+			"SelfApplyEffectsFlag" : {
+				"name"					: "Self apply riding effects",
+				"descrp"				: "If this token should apply its own riding effects while riding"
+			},
+			
+			"forMountEffectsFlag" : {
+				"name"					: "Mount effects",
+				"descrp"				: "Effects that are applied to mounts of this token (Names or IDs, seperated with \";\")"
+			},
+			
+			"canbeGrappledFlag" : {
+				"name"					: "Может быть схвачен",
+				"descrp"				: "Если этот токен может быть захвачен"
+			},
+			
+			"CanbePilotedFlag" : {
+				"name"					: "Может быть управляемым",
+				"descrp"				: "Игроки могут управлять этим токеном, что позволяет им перемещать его, даже если он им не принадлежит."
+			}
+		},
+		
+		"RideableTag.str"				: "rideable",
+		
+		"monks-active-tiles" : {
+			"filters" : {
+				"name"					: "Filter",
+				
+				"riders-of" : {
+					"name"				: "Filter riders of mount",
+					"descrp"			: "<span class=\"filter-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span> {pCondition} of <span class=\"entity-style\">{pMount}</span>",
+					"settings" : {
+						"mount" : {
+							"name"		: "Прикрепить"
+						},
+						
+						"filterCondition" : {
+							"name"		: "Riding state condition:",
+							"options" : {
+								"rider": "is rider",
+								"notrider" : "is not rider"
+							}	
+						}
+					}
+				},
+				
+				"is-rider" : {
+					"name"				: "Filter riders",
+					"descrp"			: "<span class=\"filter-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span> {pCondition}",
+					"settings" : {
+						"filterCondition" : {
+							"name"		: "Riding state condition:",
+							"options" : {
+								"rider": "is rider",
+								"notrider" : "is not rider"
+							}	
+						}
+					}					
+				},
+				
+				"is-ridden" : {
+					"name"				: "Filter ridden",
+					"descrp"			: "<span class=\"filter-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span> {pCondition}",
+					"settings" : {
+						"filterCondition" : {
+							"name"		: "Ridden state condition:",
+							"options" : {
+								"ridden": "is ridden",
+								"notridden" : "is not ridden"
+							}	
+						}
+					}					
+				}
+			},
+			
+			"actions" : {
+				"mount-this-tile" : {
+					"name"				: "Mount to this tile",
+					"descrp"			: "<span class=\"logic-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span>"
+				},
+				
+				"mount-target" : {
+					"name"				: "Mount",
+					"descrp"			: "<span class=\"logic-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span> to <span class=\"entity-style\">{pMount}</span>",
+					"settings" : {
+						"target" : {
+							"name"		: "Mount"
+						}
+					}
+				},
+				
+				"unmount" : {
+					"name"				: "Unmount",
+					"descrp"			: "<span class=\"logic-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span>"
+				},
+				
+				"unmount-riders" : {
+					"name"				: "Unmount riders",
+					"descrp"			: "<span class=\"logic-style\">{pname}</span> of <span class=\"entity-style\">{pEntities}</span>"
+				},
+				
+				"toggle-mount-target" : {
+					"name"				: "Toggle mount",
+					"descrp"			: "<span class=\"logic-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span> to <span class=\"entity-style\">{pMount}</span>",
+					"settings" : {
+						"target" : {
+							"name"		: "Mount"
+						}
+					}
+				}
+			}
+		}
+	}
+}
