@@ -56,6 +56,8 @@ export function init() {
 				? "compendium/dnd5e-alt"
 				: "compendium/dnd5e"
 		});
+
+		game.settings.set("babele", "showOriginalName", true);
 	} else {
 		if (game.settings.get("ru-ru", "compendiumTranslation")) {
 			new Dialog({
