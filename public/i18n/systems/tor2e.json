@@ -1,5 +1,25 @@
 {
   "GAME.paused": "Ты не пройдёшь!",
+  "TYPES": {
+    "Actor": {
+      "community": "Отряд",
+      "character": "Персонаж игрока",
+      "npc": "Персонаж ведущего",
+      "lore": "Персонаж хранителя",
+      "adversary": "Враг"
+    },
+    "Item": {
+      "trait": "Trait",
+      "fell-ability": "Зловещая способность",
+      "skill": "Навык",
+      "armour": "Броня",
+      "weapon": "Оружие",
+      "miscellaneous": "Miscellaneous",
+      "reward": "Награда",
+      "virtues": "Добродетель",
+      "journey-log": "Дневник путешествия"
+    }
+  },
   "tor2e": {
     "actors": {
       "biography": {
@@ -44,7 +64,8 @@
         "travel": "Путешествие",
         "taleOfYears": "Сказание лет",
         "notes": "Заметки",
-        "journey-log": "Дневник путешествия"
+        "journey-log": "Дневник путешествия",
+        "occupation": "Occupation"
       },
       "details": {
         "tech": {
@@ -52,7 +73,7 @@
         }
       },
       "fellAbilities": {
-        "title": "Злодеяния"
+        "title": "Зловещие способности"
       },
       "traits": {
         "distinctiveFeatures": "Отличительные черты",
@@ -70,7 +91,7 @@
       },
       "types": {
         "community": {
-          "title": "Сообщество"
+          "title": "Отряд"
         },
         "lore": {
           "title": "Знание"
@@ -132,7 +153,7 @@
           },
           "defense": {
             "protection": "Защита",
-            "shieldParry": "Парирование щита"
+            "shieldParry": "Модификатор парирования"
           },
           "tn": {
             "strength": "СЛ Силы",
@@ -188,8 +209,8 @@
         },
         "make-default": {
           "title": "Назначить по умолчанию",
-          "description": "Два персонажа связаны друг с другом" ,
-          "label": "чтобы назначить это сообществом по умолчанию."
+          "description": "Два персонажа связаны друг с другом",
+          "label": "чтобы назначить это Отрядом по умолчанию."
         }
       }
     },
@@ -566,13 +587,13 @@
         "rest": {
           "dialog-box": {
             "title": "Восстановить пункт(ы) надежды от братства",
-            "community-point-label": "Пунктов сообщества доступно",
+            "community-point-label": "Пунктов Отряда доступно",
             "required-hope-points": "Сколько пунктов вы желаете восстановить?",
             "actor-hope-points": "Пункты надежды (текущие/макс.):",
             "submit-button": "Восстановление",
             "cancel-button": "Отмена",
             "warn": {
-              "one-community_actor_expected": "Только один актёр с типом Сообщество может существовать в игре!",
+              "one-community_actor_expected": "Только один актёр с типом Отряд может существовать в игре!",
               "not-enough-hope-points-available": "У вас недостаточно Надежды в запасе (необходимо: {required}, в запасе: {available})",
               "too-many-hope-points-required": "Требуется слишком много пунктов надежды (всего: {target}, доступно: {max})"
             }
@@ -606,7 +627,7 @@
         }
       },
       "skill": {
-        "delete": "Удалить предмет",
+        "delete": "[ALT+Click] Удалить предмет",
         "edit": "Изменить предмет",
         "roll": "Бросок предмета",
         "chat": "Отправить в чат"
@@ -652,6 +673,7 @@
       "gandalf": "Руна Гэндальфа",
       "sauron": "Око Саурона",
       "standard": {
+        "label": "Success",
         "1": "обычная кость 1",
         "2": "обычная кость 2",
         "3": "обычная кость 3",
@@ -660,6 +682,7 @@
         "6": "обычная кость с тенгвар 6 "
       },
       "weary": {
+        "label": "Weary success",
         "1": "кость с усталостью 1",
         "2": "кость с усталостью 2",
         "3": "кость с усталостью 3",
@@ -668,6 +691,7 @@
         "6": "кость с усталостью и тенгвар 6"
       },
       "feat": {
+        "label": "Feat",
         "description": "Кость испытания D12",
         "1": "кость испытания 1",
         "2": "кость испытания 2",
@@ -697,6 +721,7 @@
     "chat": {
       "actions": {
         "roll": "Бросок",
+        "roll-result": "Результат",
         "test": "Проверка",
         "save": "Сохранить",
         "cancel": "Отмена",
@@ -704,6 +729,14 @@
       },
       "taskCheck": {
         "options": {
+          "roll-characteristics": {
+            "title": "Проверка характеристик",
+            "is-weary": "усталый",
+            "is-miserable": "подавленый",
+            "is-inspired": "вдохновленный",
+            "is-favoured": "одаренный",
+            "is-ill-favoured": "бездарный"
+          },
           "roll-formula": "Формула броска",
           "difficulty": "Сложность",
           "tn": "СЛ",
@@ -723,13 +756,13 @@
           "support-die": "Поддержка компаньона",
           "advanced": "Дополнительно",
           "hope": "Надежда",
-          "worst": "Худший",
-          "best": "Лучший",
+          "worst": "худший",
+          "best": "лучший",
           "health-impacts": "Влияние на здоровье",
           "weary-not-weary": "Проверка с усталостью?",
           "miserable-not-miserable": "Подавленный бросок?",
           "weary": "усталый",
-          "result-modifier": "Result modifier",
+          "result-modifier": "Мод. результата",
           "modifier": "Модификатор",
           "not-weary": "не усталый",
           "miserable": "подавленный",
@@ -804,7 +837,7 @@
         },
         "gain-ground": {
           "title": "Одержать верх",
-          "alt": "Выстрел, чтобы одержать верх над противниками",
+          "alt": "Выстрел, чтобы занять лучшую позицию по отношению к врагам",
           "label": "Одержать верх",
           "description": "Выстрел, чтобы одержать верх."
         },
@@ -825,6 +858,12 @@
           "alt": "Щит раскололся на щепки.",
           "label": "Пробитие щита",
           "description": "Нападающий расколол щит на щепки."
+        },
+        "none-custom": {
+          "title": "None/Custom",
+          "alt": "A cancel cross",
+          "label": "None/Custom",
+          "description": "Homebrew situations."
         }
       },
       "dicePool": {
@@ -833,15 +872,15 @@
       "step": {
         "initiative": {
           "attack": {
-            "label" : "Att.",
-            "title" : "Группа персонажей на острие атаки"
+            "label": "Атака",
+            "title": "Группа персонажей в атакующей стойке."
           },
           "defense": {
-            "label" : "Def.",
-            "title" : "Группа персонажей в защитной стойке"
+            "label": "Защита",
+            "title": "Группа персонажей в защитной стойке."
           },
           "toggle": {
-            "title" : "Toggle between defending and attacking position."
+            "title": "Переключение атакующей и защитной стойки."
           }
         },
         "preparation": {
@@ -958,7 +997,9 @@
       "error": {
         "noActorAvailable": "Выберите актёра перед использованием макроса!",
         "itemIsMissing": "Предмет {itemName} с типом {itemType} не доступен актёру {actorName}!",
-        "skillIsMissing": "Навык {skillName} не доступен актёру {actorName} !"
+        "skillIsMissing": "Навык {skillName} не доступен актёру {actorName} !",
+        "missingLoremasterRole": "Only the Lore Master can do this action.",
+        "wrongStatusEffect": "The status '{statusEffect}' doesn't exist."
       }
     },
     "effects": {
@@ -971,6 +1012,9 @@
       }
     },
     "journey-log": {
+      "sheet": {
+        "title": "Name"
+      },
       "log": {
         "year": "Год",
         "season": "Время года",
@@ -1000,21 +1044,23 @@
       "chance-meeting": "Случайная встреча",
       "joyful-sight": "Добрый знак"
     },
-    "active-effect" : {
-      "toggle" : {
-        "help" : "используйте Alt+ЛКМ, чтобы переключить состояние"
+    "active-effect": {
+      "toggle": {
+        "help": "используйте Alt+ЛКМ, чтобы переключить состояние"
       }
     }
   },
   "SETTINGS": {
     "setPauseMessage": "Текст паузы",
     "setPauseMessageDescription": "Сообщение, отображаемое над изображением паузы. Оставьте пустым, чтобы использовать сообщение по умолчанию.",
-    "setSoloMode": "Режим Бродяги (Одиночная игра)",
-    "setSoloModeDescription": "Некоторые функции адаптированы для режима Бродяги (например: только стойка Битвы, упрощён актёр сообщества)",
+    "setSoloMode": "Режим Бродяжника (Одиночная игра)",
+    "setSoloModeDescription": "Некоторые функции адаптированы для режима Бродяжника (например: только стойка Битвы, упрощён актёр отряда)",
     "setAddSkirmish": "Добавить стойку битвы",
-    "setAddSkirmishDescription": "Добавляет битву в доступные стойки, даже если вы не играете в режиме Бродяги (одиночная игра)",
+    "setAddSkirmishDescription": "Добавляет стойку стрелка в доступные стойки, даже если вы не играете в режиме Бродяжника (одиночная игра)",
+    "setNoneCustomCombatSpecialEffect": "Add none/custom combat special effect",
+    "setNoneCustomCombatSpecialEffectDescription": "Add a new combat special effect, called none/custom, to homebrew some situations.",
     "setTnBaseValue": "Установите базовую сложность",
-    "setTnBaseValueDescription": "This setting allows the LM to set the base value they want. From the book, it is advised that you put 20 for campaign mode and 18 for one-shot",
+    "setTnBaseValueDescription": "Эта настройка позволяет ведущему установить базовое значение на свой вкус. В книге правил рекомендуется установить 20 для режима кампании и 18 для игр на одну встречу.",
     "setExtendedWeaponSelection": "Расширенный список оружия",
     "setExtendedWeaponSelectionDescription": "Этот параметр следует активировать только в том случае, если Хранитель хочет использовать домашние правила боя (т.е. новые боевые умения). При активации этого параметра в бланке оружия появится поле для связи с новым боевым умением вместо названия группы оружия.",
     "setUseAdversarySkills": "Разрешить использование навыков врагами",
@@ -1028,12 +1074,14 @@
     "setWarnLoreMasterForCharacterStateName": "Active Warn Message",
     "setWarnLoreMasterForCharacterStateDescription": "Для активации предупреждения в чате для каждого персонажа с состоянием усталости или подавленности.",
     "setShowHideRangeBlockName": "Отображение диапазона дистанции",
-    "setShowHideRangeBlockDescription": "Used to show the Distance Range Block in the Weapon sheet and Character/Adversary sheet.",
+    "setShowHideRangeBlockDescription": "Используется для отображения диапазона дистанции в описании оружия, листе персонажа и врага.",
     "disableAltClickName": "Отключить Alt+ЛКМ",
     "disableAltClickDescription": "Отключите Alt+ЛКМ, чтобы предотвратить некоторые действия по изменению действий, такие как улучшение навыков или переключения состояния здоровья",
     "aldDefaultValueName": "Actor Link Data for Npc is checked by default",
     "aldDefaultValueDescription": "Set up the Actor Link Data default value for new Npc Actor.",
     "setDisplayCommunityInfoAtStartValue": "Показать текущий основной Отряд.",
-    "setDisplayCommunityInfoAtStartDescription": "Показывать название основного Отряда при присоединении к игре."
+    "setDisplayCommunityInfoAtStartDescription": "Показывать название основного Отряда при присоединении к игре.",
+    "setModifiedLoadAsRequested": "Modify Load calculation",
+    "setModifiedLoadAsRequestedDescription": "Allow for homebrew rules that change how much carried Load relative to Endurance triggers the Weary warning. By default, the Weary status shows when Endurance is equal or less than Load. For example, to lower Load by Strength (i.e. allow Actors to carry their Strength in Load for free without affecting Endurance, e.g. put attributes.strength or integer constant value in the field)."
   }
 }
