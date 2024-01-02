@@ -9,18 +9,40 @@
       "adversary": "Враг"
     },
     "Item": {
-      "trait": "Trait",
+      "trait": "Черта",
       "fell-ability": "Зловещая способность",
       "skill": "Навык",
       "armour": "Броня",
       "weapon": "Оружие",
-      "miscellaneous": "Miscellaneous",
+      "miscellaneous": "Прочее",
       "reward": "Награда",
       "virtues": "Добродетель",
       "journey-log": "Дневник путешествия"
     }
   },
   "tor2e": {
+    "types": {
+      "distinctiveFeature": "Distinctive Feature",
+      "flaw": "Flaw",
+      "trait": "Trait",
+      "fell-ability": "Fell ability",
+      "skill": "Skill",
+      "armour": "Armour",
+      "weapon": "Weapon",
+      "miscellaneous": "Miscellaneous",
+      "reward": "Reward",
+      "virtues": "Virtue",
+      "journey-log": "Journey log",
+      "swords": "Swords",
+      "axes": "Axes",
+      "brawling": "Brawling",
+      "spears": "Spears",
+      "bows": "Bows",
+      "shield": "Shields",
+      "head": "Headgear",
+      "leather": "Leather",
+      "mail": "Mail"
+    },
     "actors": {
       "biography": {
         "age": "Возраст",
@@ -65,7 +87,7 @@
         "taleOfYears": "Сказание лет",
         "notes": "Заметки",
         "journey-log": "Дневник путешествия",
-        "occupation": "Occupation"
+        "occupation": "Профессия"
       },
       "details": {
         "tech": {
@@ -235,6 +257,9 @@
       }
     },
     "common": {
+      "type": "Type",
+      "group": "Group",
+      "name": "Name",
       "description": "Описание"
     },
     "items": {
@@ -486,7 +511,7 @@
         "damage": "Урон",
         "edge": "Сложность",
         "injury": "Травма",
-        "extendedWeaponSelectionHint": "(option. Dedicated to PC custom weapon.)",
+        "extendedWeaponSelectionHint": "(опционально для особого оружия игроков)", "type": "Type",
         "group": "Категория",
         "ranks": "Уровни",
         "notes": "Заметки",
@@ -673,7 +698,7 @@
       "gandalf": "Руна Гэндальфа",
       "sauron": "Око Саурона",
       "standard": {
-        "label": "Success",
+        "label": "Успех",
         "1": "обычная кость 1",
         "2": "обычная кость 2",
         "3": "обычная кость 3",
@@ -682,7 +707,7 @@
         "6": "обычная кость с тенгвар 6 "
       },
       "weary": {
-        "label": "Weary success",
+        "label": "Успех с усталостью",
         "1": "кость с усталостью 1",
         "2": "кость с усталостью 2",
         "3": "кость с усталостью 3",
@@ -691,7 +716,7 @@
         "6": "кость с усталостью и тенгвар 6"
       },
       "feat": {
-        "label": "Feat",
+        "label": "Испытание",
         "description": "Кость испытания D12",
         "1": "кость испытания 1",
         "2": "кость испытания 2",
@@ -860,10 +885,10 @@
           "description": "Нападающий расколол щит на щепки."
         },
         "none-custom": {
-          "title": "None/Custom",
-          "alt": "A cancel cross",
-          "label": "None/Custom",
-          "description": "Homebrew situations."
+          "title": "Нет/особый",
+          "alt": "Крест отмены",
+          "label": "Нет/особый",
+          "description": "Домашние правила"
         }
       },
       "dicePool": {
@@ -998,8 +1023,8 @@
         "noActorAvailable": "Выберите актёра перед использованием макроса!",
         "itemIsMissing": "Предмет {itemName} с типом {itemType} не доступен актёру {actorName}!",
         "skillIsMissing": "Навык {skillName} не доступен актёру {actorName} !",
-        "missingLoremasterRole": "Only the Lore Master can do this action.",
-        "wrongStatusEffect": "The status '{statusEffect}' doesn't exist."
+        "missingLoremasterRole": "Только Хранитель может использовать это действие.",
+        "wrongStatusEffect": "Статус '{statusEffect}' не существует."
       }
     },
     "effects": {
@@ -1013,7 +1038,7 @@
     },
     "journey-log": {
       "sheet": {
-        "title": "Name"
+        "title": "Название"
       },
       "log": {
         "year": "Год",
@@ -1057,8 +1082,8 @@
     "setSoloModeDescription": "Некоторые функции адаптированы для режима Бродяжника (например: только стойка Битвы, упрощён актёр отряда)",
     "setAddSkirmish": "Добавить стойку битвы",
     "setAddSkirmishDescription": "Добавляет стойку стрелка в доступные стойки, даже если вы не играете в режиме Бродяжника (одиночная игра)",
-    "setNoneCustomCombatSpecialEffect": "Add none/custom combat special effect",
-    "setNoneCustomCombatSpecialEffectDescription": "Add a new combat special effect, called none/custom, to homebrew some situations.",
+    "setNoneCustomCombatSpecialEffect": "Добавить особые боевые эффекты",
+    "setNoneCustomCombatSpecialEffectDescription": "Добавляет боевой эффект 'Нет/особый' для использования с домашними правилами.",
     "setTnBaseValue": "Установите базовую сложность",
     "setTnBaseValueDescription": "Эта настройка позволяет ведущему установить базовое значение на свой вкус. В книге правил рекомендуется установить 20 для режима кампании и 18 для игр на одну встречу.",
     "setExtendedWeaponSelection": "Расширенный список оружия",
@@ -1082,6 +1107,8 @@
     "setDisplayCommunityInfoAtStartValue": "Показать текущий основной Отряд.",
     "setDisplayCommunityInfoAtStartDescription": "Показывать название основного Отряда при присоединении к игре.",
     "setModifiedLoadAsRequested": "Modify Load calculation",
-    "setModifiedLoadAsRequestedDescription": "Allow for homebrew rules that change how much carried Load relative to Endurance triggers the Weary warning. By default, the Weary status shows when Endurance is equal or less than Load. For example, to lower Load by Strength (i.e. allow Actors to carry their Strength in Load for free without affecting Endurance, e.g. put attributes.strength or integer constant value in the field)."
+    "setModifiedLoadAsRequestedDescription": "Useful for homebrew rules that change how much carried Load relative to Endurance triggers the Weary warning. By default, the Weary status shows when Endurance is equal or less than Load. For example, to lower Load by Strength (i.e. allow Actors to carry their Strength in Load for free without affecting Endurance, e.g. put attributes.strength or integer constant value in the field).",
+    "setInlineElementFromUuidInDescription": "Inline Journal into Description",
+    "setInlineElementFromUuidInDescriptionDescription": "You can inline any journal page into item description. The description will be replaced by the journal content. The item description should only be the Journal link (nothing else) other why it won't work."
   }
 }
