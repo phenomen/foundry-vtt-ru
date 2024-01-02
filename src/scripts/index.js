@@ -55,6 +55,7 @@ Hooks.once("init", async () => {
 
 	const systems = [
 		"alienrpg",
+		"city-of-mist",
 		"coc7",
 		"deltagreen",
 		"dnd5e",

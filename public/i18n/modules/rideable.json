@@ -153,6 +153,11 @@
 				"descrp"				: "Если токен захвачен, на него накладывается эффект, зависящий от системы"				
 			},
 			
+			"StopGrappleonEffectRemoval" : {
+				"name"					: "Прекратить захват при снятии эффекта",
+				"descrp"				: "Токен будет освобождён как только прекратится эффект захвата"
+			},
+			
 			"GrappleplacementDefault" : {
 				"name"					: "Расположение захвата по умолчанию",
 				"descrp"				: "Стандартное размещение токенов в захвате",
@@ -325,9 +330,11 @@
 				"options" : {
 					"CirclePlacement"	: "Круг",
 					"RowPlacement"		: "Ряд",
+					"BlockPlacement"	: "Блокировка",
 					"ClusterPlacement"	: "Кластер",
 					"RowPlacementTop"	: "Верхний ряд",
-					"RowPlacementBottom": "Нижний ряд"
+					"RowPlacementBottom": "Нижний ряд",
+					"MountPosition"		: "Положение прикрепления"
 				}
 			},
 			
@@ -338,7 +345,8 @@
 					"RowBelow"			: "ниже",
 					"RowAbove"			: "выше",
 					"RowMiddle"			: "в середине",
-					"ClosestInside"		: "внутри" 
+					"ClosestInside"		: "внутри",
+					"Following"			: "следовать"
 				}
 			},
 			
