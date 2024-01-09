@@ -7,7 +7,10 @@ import {
 	translatedSkill,
 	translatedSpec,
 	translatedSpecification,
-	translatedTalent
+	translatedTalent,
+	translatedSpellRange,
+	translatedSpellDuration,
+	translatedSpellTarget
 } from "./wfrp4-data";
 
 export function init() {
@@ -55,6 +58,18 @@ export function init() {
 
 			convertSpecification: (specification) => {
 				return translateValue(specification, translatedSpecification);
+			},
+
+			convertSpellRange: (range) => {
+				return translateValue(range, translatedSpellRange);
+			},
+
+			convertSpellDuration: (duration) => {
+				return translateValue(duration, translatedSpellDuration);
+			},
+
+			convertSpellTarget: (target) => {
+				return translateValue(target, translatedSpellTarget);
 			}
 		});
 
@@ -642,7 +657,11 @@ export function init() {
 						"Торговля",
 						"Хладнокровие"
 					],
-					talents: ["Роковое пророчество", "Этикет (выбрать группу), Сильная спина", 3]
+					talents: [
+						"Роковое пророчество",
+						"Этикет (выбрать группу), Сильная спина",
+						3
+					]
 				};
 
 				game.wfrp4e.config.subspecies.human["middenlander"] = {
@@ -733,7 +752,8 @@ export function init() {
 					{
 						cost: 2,
 						name: "Отступление",
-						description: "Тактическое преимущество так же важно в отступлении, как и в атаке.",
+						description:
+							"Тактическое преимущество так же важно в отступлении, как и в атаке.",
 						effect:
 							"<strong>Перемещение</strong>: Вы можете отступить из ближнего боя так, как будто вы не связаны им. Это заменяет правила @UUID[Compendium.wfrp4e-core.journal-entries.NS3YGlJQxwTggjRX.JournalEntryPage.bdfiyhEYtKs7irqc#disengaging]{Выхода из Ближнего боя} за Преимущества, описанное в Основной Книге Правил на стр. 165."
 					},
@@ -836,6 +856,28 @@ export function init() {
 					}
 				});
 			}
+
+			/* WINDS OF MAGIC */
+			if (game.modules.get("wfrp4e-wom")?.active) {
+				game.wfrp4e.utility.mergeCareerReplacements({
+					human: {
+						Аптекарь: ["Мирской алхимик"],
+						Маг: [
+							"Иерофант",
+							"Алхимик",
+							"Друид",
+							"Астромант",
+							"Тенемант",
+							"Спиритист",
+							"Пиромант",
+							"Шаман",
+							"Магистр-охранитель"
+						],
+						Мистик: ["Провидец"],
+						Охранник: ["Надзиратель"]
+					}
+				});
+			}
 		});
 
 		function translateValue(value, obj) {
@@ -859,7 +901,8 @@ export function init() {
 				if (rightPart) {
 					const rightValue = rightPart[1].trim();
 					const translatedLeftPart = leftTranslation[leftPart] || leftPart;
-					const translatedRightValue = rightTranslation[rightValue] || rightValue;
+					const translatedRightValue =
+						rightTranslation[rightValue] || rightValue;
 					return `${translatedLeftPart} (${translatedRightValue})`;
 				} else {
 					const translatedLeftPart = leftTranslation[leftPart] || leftPart;

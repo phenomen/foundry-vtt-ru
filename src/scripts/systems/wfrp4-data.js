@@ -46,6 +46,7 @@ export const translatedSkill = {
 	"Track": "Выслеживание",
 	"Trade": "Ремесло",
 	"Sigmarite": "сигмариты",
+	"Sigmarites": "сигмариты",
 	"Greenskins": "зеленокожие"
 };
 
@@ -88,6 +89,7 @@ export const translatedSpec = {
 	"Cog": "когги",
 	"Comedy": "комедия",
 	"Cook": "повар",
+	"Corosion": "коррозия",
 	"Crossbow": "арбалеты",
 	"Dancing": "танец",
 	"Demigryph": "демигрифы",
@@ -222,6 +224,7 @@ export const translatedTalent = {
 	"Accurate Shot": "Точный выстрел",
 	"Acute": "Обострённое",
 	"Acute Sense": "Обострённое восприятие",
+	"Accute Sense": "Обострённое восприятие",
 	"Aethyric Attunement": "Эфирный унисон",
 	"Alley Cat": "Бродячий кот",
 	"Ambidextrous": "Амбидекстр",
@@ -238,6 +241,7 @@ export const translatedTalent = {
 	"Bless": "Благословение",
 	"Bookish": "Книжный червь",
 	"Break and Enter": "Взлом с проникновением",
+	"Breath": "Дыхание",
 	"Briber": "Взяткодатель",
 	"Cardsharp": "Картёжник",
 	"Careful Strike": "Выверенное попадание",
@@ -277,6 +281,7 @@ export const translatedTalent = {
 	"Flagellant": "Флагеллант",
 	"Flee!": "Поспешное бегство",
 	"Fleet Footed": "Быстрые ноги",
+	"Flight": "Полёт",
 	"Frenzy": "Ярость",
 	"Frightening": "Устрашающий вид",
 	"Furious Assault": "Свирепый натиск",
@@ -424,12 +429,15 @@ export const translatedCareerClass = {
 export const translatedSpecification = {
 	//"Average": "Средний",
 	"Acid": "едкое",
+	"Any Chaos": "любая школа Хаоса",
 	"Average": "Заурядная",
 	"Bailiffs, Lawyers": "бейлифы, законники",
 	"Beasts": "Школа Зверей",
 	"Broken": "приручённый",
 	"Challenging": "Серьёзная",
 	"Chaos": "Школа Хаоса",
+	"Choose one": "выберите одно",
+	"Choose two": "выберите два",
 	"Coastal": "побережья",
 	"Daemonology": "Школа Демонологии",
 	"Death": "Школа Смерти",
@@ -464,9 +472,12 @@ export const translatedSpecification = {
 	"Mount": "верховой",
 	"Necromancy": "Школа Некромантии",
 	"Packer's Pox": "корняжная оспа",
+	"Poison": "Яд",
+	"Nurgle": "Школа Нургла",
 	"Ratte Fever": "крысиная лихорадка",
 	"Shadow": "Школа Теней",
 	"Sigmarite": "сигмариты",
+	"Sigmarites": "сигмариты",
 	"Slaanesh": "Школа Слаанеша",
 	"Small": "Небольшой",
 	"the Rich, Beastmen": "богатеи, зверолюды",
@@ -482,4 +493,49 @@ export const translatedSpecification = {
 	"Witchcraft": "Школа Ведьмовства",
 	"Target": "Цель",
 	"Thieves": "воры"
+};
+
+export const translatedSpellRange = {
+	"You": "персонаж",
+	"Touch": "касание",
+	"Willpower yards": "[сила воли] ярдов",
+	"Willpower Bonus yards": "[рейтинг силы воли] ярдов",
+	"Initiative yards": "[инициатива] ярдов",
+	"Initiative Bonus miles": "[рейтинг инициативы] миль",
+	"Intelligence Bonus yards": "[рейтинг интеллекта] ярдов",
+	"Willpower Bonus miles": "[рейтинг силы воли] миль"
+};
+
+export const translatedSpellTarget = {
+	"You": "персонаж",
+	"Special": "особая",
+	"AoE (Willpower Bonus yards)":
+		"область воздействия ([рейтинг силы воли] ярдов)",
+	"AoE (see description)": "область воздействия (см. описание)",
+	"AoE (Special)": "область воздействия (особая)",
+	"AoE (Initiative Bonus yards)":
+		"область воздействия ([рейтинг инициативы] ярдов)",
+	"AoE (Fellowship Bonus yards)":
+		"область воздействия ([рейтинг харизмы] ярдов)",
+	"AoE (a single location)": "область воздействия (выбранное место)",
+	"AoE (maximum, Willpower Bonus yards across)":
+		"область воздействия (не более [рейтинг силы воли] ярдов в поперечнике)"
+};
+
+export const translatedSpellDuration = {
+	"Instant": "мгновенная",
+	"Special": "особая",
+	"Willpower Bonus Rounds": "[рейтинг силы воли] раундов",
+	"Willpower Bonus days": "[рейтинг силы воли] дней",
+	"Toughness Bonus hours": "[рейтинг выносливости] часов",
+	"Willpower minutes": "[сила воли] минут",
+	"Willpower Bonus minutes": "[рейтинг силы воли] минут",
+	"Willpower days": "[сила воли] дней",
+	"1 Round": "1 раунд",
+	"Initiative Bonus Rounds": "[рейтинг инициативы] раундов",
+	"Intelligence minutes": "[интеллект] минут",
+	"Target’s Intelligence Bonus Rounds": "[рейтинг интеллекта цели] раундов",
+	"Intelligence Bonus minutes": "[рейтинг интеллекта] минут",
+	"Until the next sunrise": "до рассвета",
+	"Until sunrise": "до рассвета"
 };
