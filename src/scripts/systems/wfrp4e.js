@@ -888,29 +888,27 @@ export function init() {
 			return arr.map((item) => obj[item] || item);
 		}
 
-		function translateDoubleArray(arr, leftTranslation, rightTranslation) {
-			function translateItem(item) {
-				if (translatedExceptions.hasOwnProperty(item)) {
-					return translatedExceptions[item];
-				}
+		function translateDoubleArray(arr, termTranslations, detailTranslations) {
+			function translateString(input) {
+				const [term, detail] = input.split(" (");
 
-				const regex = /\(([^)]+)\)/;
-				const leftPart = item.replace(regex, "").trim();
-				const rightPart = item.match(regex);
+				if (detail) {
+					const cleanedDetail = detail.slice(0, -1);
+					const translatedTerm = termTranslations[term];
+					const translatedDetail = detailTranslations[cleanedDetail];
 
-				if (rightPart) {
-					const rightValue = rightPart[1].trim();
-					const translatedLeftPart = leftTranslation[leftPart] || leftPart;
-					const translatedRightValue =
-						rightTranslation[rightValue] || rightValue;
-					return `${translatedLeftPart} (${translatedRightValue})`;
+					if (translatedTerm && translatedDetail) {
+						return `${translatedTerm} (${translatedDetail})`;
+					}
 				} else {
-					const translatedLeftPart = leftTranslation[leftPart] || leftPart;
-					return translatedLeftPart;
+					const translatedTerm = termTranslations[term];
+
+					if (translatedTerm) {
+						return translatedTerm;
+					}
 				}
 			}
-
-			return arr.map(translateItem);
+			return arr.map(translateString);
 		}
 	}
 }

@@ -1,5 +1,16 @@
 {
 	"label": "Актёры (Ветра магии)",
+	"mapping": {
+		"species": "system.details.species.value",
+		"items": {
+			"path": "items",
+			"converter": "fromPack"
+		},
+		"gender": {
+			"path": "system.details.gender.value",
+			"converter": "convertGender"
+		}
+	},
 	"entries": {
 		"Ashamira Dib": {
 			"name": "Ashamira Dib",
