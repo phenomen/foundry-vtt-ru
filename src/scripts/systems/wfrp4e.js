@@ -82,10 +82,6 @@ export function init() {
 				return translateValue(target, translatedSpellTarget);
 			},
 
-			convertSpellRadius: (radius) => {
-				return translateValue(radius, translatedSpellRadius);
-			},
-
 			convertSpellDamage: (damage) => {
 				return translateValue(damage, translatedSpellDamage);
 			}
@@ -898,74 +894,46 @@ export function init() {
 			}
 		});
 
+		function translateCompoundString(value) {
+			if (translatedExceptions.hasOwnProperty(value)) {
+				return translatedExceptions[value];
+			}
+
+			const [term, detail] = value.split(" (");
+
+			if (detail) {
+				const cleanedDetail = detail.slice(0, -1);
+				const translatedTerm = termTranslations[term];
+				const translatedDetail = detailTranslations[cleanedDetail];
+
+				if (translatedTerm && translatedDetail) {
+					return `${translatedTerm} (${translatedDetail})`;
+				} else if (translatedTerm) {
+					return `${translatedTerm} (${cleanedDetail})`;
+				}
+			} else {
+				const translatedTerm = termTranslations[term];
+
+				if (translatedTerm) {
+					return translatedTerm;
+				}
+			}
+
+			return value;
+		}
+
 		function translateValue(value, obj) {
 			return obj[value] || value;
 		}
 
-		function translateArray(arr, termTranslations, detailTranslations) {
-			function translateString(inputString) {
-				if (translatedExceptions.hasOwnProperty(inputString)) {
-					return translatedExceptions[inputString];
-				}
-
-				const [term, detail] = inputString.split(" (");
-
-				if (detail) {
-					const cleanedDetail = detail.slice(0, -1);
-					const translatedTerm = termTranslations[term];
-					const translatedDetail = detailTranslations[cleanedDetail];
-
-					if (translatedTerm && translatedDetail) {
-						return `${translatedTerm} (${translatedDetail})`;
-					} else if (translatedTerm) {
-						return `${translatedTerm} (${cleanedDetail})`;
-					}
-				} else {
-					const translatedTerm = termTranslations[term];
-
-					if (translatedTerm) {
-						return translatedTerm;
-					}
-				}
-
-				return inputString;
-			}
-
-			return arr.map(translateString);
+		function translateArray(arr) {
+			return arr.map(translateCompoundString);
 		}
 
-		function translateObjects(arr, termTranslations, detailTranslations) {
-			function translateString(inputString) {
-				const [term, detail] = inputString.split(" (");
-
-				if (detail) {
-					const cleanedDetail = detail.slice(0, -1);
-					const translatedTerm = termTranslations[term];
-					const translatedDetail = detailTranslations[cleanedDetail];
-
-					if (translatedTerm && translatedDetail) {
-						return `${translatedTerm} (${translatedDetail})`;
-					} else if (translatedTerm) {
-						return `${translatedTerm} (${cleanedDetail})`;
-					}
-				} else {
-					const translatedTerm = termTranslations[term];
-
-					if (translatedTerm) {
-						return translatedTerm;
-					}
-				}
-
-				return inputString;
-			}
-
+		function translateObjects(arr) {
 			return arr.map((obj) => {
 				if (obj.hasOwnProperty("name")) {
-					if (translatedExceptions.hasOwnProperty(obj.name)) {
-						return translatedExceptions[obj.name];
-					}
-
-					obj.name = translateString(obj.name);
+					obj.name = translateCompoundString(obj.name);
 				}
 				return obj;
 			});
