@@ -10,7 +10,9 @@ import {
 	translatedTalent,
 	translatedSpellRange,
 	translatedSpellDuration,
-	translatedSpellTarget
+	translatedSpellTarget,
+	translatedSpellRadius,
+	translatedSpellDamage
 } from "./wfrp4-data";
 
 export function init() {
@@ -33,11 +35,19 @@ export function init() {
 
 		Babele.get().registerConverters({
 			convertSkill: (skills) => {
-				return translateDoubleArray(skills, translatedSkill, translatedSpec);
+				return translateArray(skills, translatedSkill, translatedSpec);
 			},
 
 			convertTalent: (talents) => {
-				return translateDoubleArray(talents, translatedTalent, translatedSpec);
+				return translateArray(talents, translatedTalent, translatedSpec);
+			},
+
+			convertActorSkill: (skills) => {
+				return translateObjects(skills, translatedSkill, translatedSpec);
+			},
+
+			convertActorTalent: (talents) => {
+				return translateObjects(talents, translatedTalent, translatedSpec);
 			},
 
 			convertDuration: (duration) => {
@@ -52,12 +62,12 @@ export function init() {
 				return translateValue(careerClass, translatedCareerClass);
 			},
 
-			convertGender: (gender) => {
-				return translateValue(gender, translatedGender);
-			},
-
 			convertSpecification: (specification) => {
 				return translateValue(specification, translatedSpecification);
+			},
+
+			convertGender: (gender) => {
+				return translateValue(gender, translatedGender);
 			},
 
 			convertSpellRange: (range) => {
@@ -70,6 +80,14 @@ export function init() {
 
 			convertSpellTarget: (target) => {
 				return translateValue(target, translatedSpellTarget);
+			},
+
+			convertSpellRadius: (radius) => {
+				return translateValue(radius, translatedSpellRadius);
+			},
+
+			convertSpellDamage: (damage) => {
+				return translateValue(damage, translatedSpellDamage);
 			}
 		});
 
@@ -884,13 +902,13 @@ export function init() {
 			return obj[value] || value;
 		}
 
-		function translateArray(arr, obj) {
-			return arr.map((item) => obj[item] || item);
-		}
+		function translateArray(arr, termTranslations, detailTranslations) {
+			function translateString(inputString) {
+				if (translatedExceptions.hasOwnProperty(inputString)) {
+					return translatedExceptions[inputString];
+				}
 
-		function translateDoubleArray(arr, termTranslations, detailTranslations) {
-			function translateString(input) {
-				const [term, detail] = input.split(" (");
+				const [term, detail] = inputString.split(" (");
 
 				if (detail) {
 					const cleanedDetail = detail.slice(0, -1);
@@ -899,6 +917,8 @@ export function init() {
 
 					if (translatedTerm && translatedDetail) {
 						return `${translatedTerm} (${translatedDetail})`;
+					} else if (translatedTerm) {
+						return `${translatedTerm} (${cleanedDetail})`;
 					}
 				} else {
 					const translatedTerm = termTranslations[term];
@@ -907,8 +927,48 @@ export function init() {
 						return translatedTerm;
 					}
 				}
+
+				return inputString;
 			}
+
 			return arr.map(translateString);
+		}
+
+		function translateObjects(arr, termTranslations, detailTranslations) {
+			function translateString(inputString) {
+				const [term, detail] = inputString.split(" (");
+
+				if (detail) {
+					const cleanedDetail = detail.slice(0, -1);
+					const translatedTerm = termTranslations[term];
+					const translatedDetail = detailTranslations[cleanedDetail];
+
+					if (translatedTerm && translatedDetail) {
+						return `${translatedTerm} (${translatedDetail})`;
+					} else if (translatedTerm) {
+						return `${translatedTerm} (${cleanedDetail})`;
+					}
+				} else {
+					const translatedTerm = termTranslations[term];
+
+					if (translatedTerm) {
+						return translatedTerm;
+					}
+				}
+
+				return inputString;
+			}
+
+			return arr.map((obj) => {
+				if (obj.hasOwnProperty("name")) {
+					if (translatedExceptions.hasOwnProperty(obj.name)) {
+						return translatedExceptions[obj.name];
+					}
+
+					obj.name = translateString(obj.name);
+				}
+				return obj;
+			});
 		}
 	}
 }

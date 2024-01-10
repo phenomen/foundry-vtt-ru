@@ -1,5 +1,16 @@
 {
 	"label": "Актёры (Империя в руинах)",
+	"mapping": {
+		"items": {
+			"path": "items",
+			"converter": "fromPack"
+		},
+		"species": "system.details.species.value",
+		"gender": {
+			"path": "system.details.gender.value",
+			"converter": "convertGender"
+		}
+	},
 	"entries": {
 		"Adelfried Jarmund": {
 			"name": "Adelfried Jarmund",

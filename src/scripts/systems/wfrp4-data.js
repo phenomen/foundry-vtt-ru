@@ -84,6 +84,7 @@ export const translatedSpec = {
 	"Chamon": "Шамон",
 	"Chandler": "свечник",
 	"Chaos": "Хаос",
+	"Cheesemonger": "сыровар",
 	"Chemistry": "химия",
 	"Classical": "классический",
 	"Clowning": "клоунада",
@@ -503,47 +504,125 @@ export const translatedCareerClass = {
 };
 
 export const translatedSpellRange = {
-	"Initiative Bonus miles": "[рейтинг инициативы] миль",
-	"Initiative yards": "[инициатива] ярдов",
-	"Intelligence Bonus yards": "[рейтинг интеллекта] ярдов",
+	"You": "персонаж",
 	"Touch": "касание",
-	"Willpower Bonus miles": "[рейтинг силы воли] миль",
-	"Willpower Bonus yards": "[рейтинг силы воли] ярдов",
-	"Willpower yards": "[сила воли] ярдов",
-	"You": "персонаж"
+	"Willpower yards": "Сила воли ярдов",
+	"Willpower Yards": "Сила воли ярдов",
+	"Willpower Bonus yards": "Рейтинг силы воли ярдов",
+	"Willpower bonus yards": "Рейтинг силы воли ярдов",
+	"Initiative yards": "Инициатива ярдов",
+	"Initiative Bonus miles": "Рейтинг инициативы миль",
+	"Intelligence Bonus yards": "Рейтинг интеллекта ярдов",
+	"Willpower Bonus miles": "Рейтинг силы воли миль",
+	"Willpower Bonus Miles": "Рейтинг силы воли миль",
+	"Willpower miles": "Сила воли миль",
+	"1 yard": "1 ярд",
+	"Special": "Особая",
+	"AoE (Willpower yards)": "Область воздействия (Сила воли ярдов)",
+	"AoE (Intelligence yards)": "Область воздействия (Интеллект ярдов)",
+	"Half Intelligence yards or Touch": "Интеллект / 2 ярдов или касание",
+	"Willpower / 2 yards": "Сила воли / 2 ярдов",
+	"Half Willpower yards": "Сила воли / 2 ярдов",
+	"Initiative / 2 yards": "Инициатива / 2 ярдов",
+	"Half Initiative yards": "Инициатива / 2 ярдов",
+	"AoE (Willpower Bonus yards)":
+		"Область воздействия (Рейтинг силы воли ярдов)",
+	"AoE (Willpower yards)": "Область воздействия (Сила воли ярдов)",
+	"100 yards": "100 ярдов",
+	"AoE (Fellowship yards)": "Область воздействия (Харизма ярдов)",
+	"Line of sight": "Прямая видимость",
+	"2 * Fellowship Bonus yards": "2 * (Рейтинг харизмы ярдов)",
+	"You or Touch": "Персонаж или касание",
+	"Intelligence yards": "Интеллект ярдов"
 };
 
 export const translatedSpellTarget = {
-	"AoE (a single location)": "область воздействия (выбранное место)",
-	"AoE (Fellowship Bonus yards)":
-		"область воздействия ([рейтинг харизмы] ярдов)",
-	"AoE (Initiative Bonus yards)":
-		"область воздействия ([рейтинг инициативы] ярдов)",
-	"AoE (maximum, Willpower Bonus yards across)":
-		"область воздействия (не более [рейтинг силы воли] ярдов в поперечнике)",
-	"AoE (see description)": "область воздействия (см. описание)",
-	"AoE (Special)": "область воздействия (особая)",
+	"You": "Персонаж",
+	"Special": "Особая",
 	"AoE (Willpower Bonus yards)":
-		"область воздействия ([рейтинг силы воли] ярдов)",
-	"Special": "особая",
-	"You": "персонаж"
+		"Область воздействия (Рейтинг силы воли ярдов)",
+	"AoE (see description)": "Область воздействия (см. описание)",
+	"AoE (Special)": "Область воздействия (особая)",
+	"AoE (Initiative Bonus yards)":
+		"Область воздействия (Рейтинг инициативы ярдов)",
+	"AoE (Fellowship Bonus yards)": "Область воздействия (Рейтинг харизмы ярдов)",
+	"AoE (a single location)": "Область воздействия (выбранное место)",
+	"AoE (maximum, Willpower Bonus yards across)":
+		"Область воздействия (не более Рейтинг силы воли ярдов в поперечнике)",
+	"see description": "смотри описание",
+	"a single location": "выбранное место",
+	"Willpower Bonus yards across maximum":
+		"не более Рейтинг силы воли ярдов в поперечнике",
+	"1 (maximum)": "1 (максимум)",
+	"2 × Initiative Bonus or Initiative Bonus Duration: Instant":
+		"2 × Рейтинг инициативы или Рейтинг инициативы",
+	"2 × Initiative Bonus or Initiative Bonus":
+		"2 × Рейтинг инициативы или Рейтинг инициативы",
+	"1 Forge": "1 кузнечный горн",
+	"1 fire": "1 огонь",
+	"1 with AoE (Willpower Bonus yards)":
+		"1 с областью воздействия (Рейтинг силы воли ярдов)",
+	"You or 1 (maximum)": "персонаж или 1 (максимум)",
+	"1 object": "1 объект",
+	"1 weapon": "1 оружие",
+	"special": "особая",
+	"1 object of 1 Encumbrance": "1 объект не более 1 Вес"
 };
 
 export const translatedSpellDuration = {
-	"1 Round": "1 раунд",
-	"Initiative Bonus Rounds": "[рейтинг инициативы] раундов",
 	"Instant": "мгновенная",
-	"Intelligence Bonus minutes": "[рейтинг интеллекта] минут",
-	"Intelligence minutes": "[интеллект] минут",
 	"Special": "особая",
-	"Target’s Intelligence Bonus Rounds": "[рейтинг интеллекта цели] раундов",
-	"Toughness Bonus hours": "[рейтинг выносливости] часов",
-	"Until sunrise": "до рассвета",
+	"Toughness Bonus Rounds": "Рейтинг выносливости раундов",
+	"Willpower Bonus Rounds": "Рейтинг силы воли раундов",
+	"WIllpower Bonus rounds": "Рейтинг силы воли раундов",
+	"Willpower Bonus Rounds+": "Рейтинг силы воли раундов +",
+	"Willpower Bonus days": "Рейтинг силы воли дней",
+	"Willpower Bonus Days": "Рейтинг силы воли дней",
+	"Willpower Bonus hours": "Рейтинг силы воли часов",
+	"Toughness Bonus hours": "Рейтинг выносливости часов",
+	"Toughness Bonus minutes": "Рейтинг выносливости часов",
+	"Willpower minutes": "Сила воли минут",
+	"Willpower Minutes": "Сила воли минут",
+	"Willpower Bonus minutes": "Рейтинг силы воли минут",
+	"Willpower days": "Сила воли дней",
+	"1 Round": "1 раунд",
+	"1 round": "1 раунд",
+	"3 rounds": "3 раунда",
+	"Initiative Bonus Rounds": "Рейтинг инициативы раундов",
+	"Initiative Bonus rounds": "Рейтинг инициативы раундов",
+	"Intelligence minutes": "Интеллект минут",
+	"Target’s Intelligence Bonus Rounds": "Рейтинг интеллекта цели раундов",
+	"Intelligence Bonus minutes": "Рейтинг интеллекта минут",
 	"Until the next sunrise": "до рассвета",
-	"Willpower Bonus days": "[рейтинг силы воли] дней",
-	"Willpower Bonus minutes": "[рейтинг силы воли] минут",
-	"Willpower Bonus rounds": "[рейтинг силы воли] раундов",
-	"Willpower Bonus Rounds": "[рейтинг силы воли] раундов",
-	"Willpower days": "[сила воли] дней",
-	"Willpower minutes": "[сила воли] минут"
+	"Until sunrise - до рассвета": "до рассвета",
+	"Initiative Bonus minutes": "Рейтинг инициативы минут",
+	"1 hour": "1 час",
+	"1 day": "1 день",
+	"Fellowship Bonus rounds": "Рейтинг харизмы раундов",
+	"Fellowship Bonus minutes": "Рейтинг харизмы минут",
+	"Willpower Bonus hours, days, weeks, or months":
+		"Рейтинг силы воли часов, дней, недель или месяцев",
+	"Willpower Bonus minutes or days": "Рейтинг силы воли минут или дней",
+	"Initiative minutes": "Инициатива минут",
+	"Strength Bonus rounds": "Рейтинг силы раундов",
+	"2 * Willpower Bonus rounds": "2 * Рейтинг силы воли раундов",
+	"Willpower * 1d10 minutes": "Сила воли * 1к10 минут",
+	"1d10 hours": "1к10 часов",
+	"Willpower Bonus years": "Сила воли лет"
+};
+
+export const translatedSpellRadius = {
+	"Willpower Bonus yards": "Рейтинг силы воли ярдов",
+	"Fellowship Bonus": "Рейтинг харизмы ярдов",
+	"Fellowship Bonus yards": "Рейтинг харизмы ярдов",
+	"Initiative Bonus yards": "Рейтинг инициативы ярдов",
+	"Initiative yards": "Инициатива ярдов",
+	"2 * Willpower Bonus yards": "2 * Рейтинг силы воли ярдов",
+	"4 * AoE (Willpower Bonus yards)":
+		"4 * Область воздействия (Рейтинг силы воли ярдов)",
+	"Willpower yards": "Сила воли ярдов"
+};
+
+export const translatedSpellDamage = {
+	"Willpower Bonus": "Рейтинг силы воли"
 };
