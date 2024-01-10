@@ -11,8 +11,8 @@ import {
 	translatedSpellRange,
 	translatedSpellDuration,
 	translatedSpellTarget,
-	translatedSpellRadius,
-	translatedSpellDamage
+	translatedSpellDamage,
+	translatedGods
 } from "./wfrp4-data";
 
 export function init() {
@@ -84,6 +84,14 @@ export function init() {
 
 			convertSpellDamage: (damage) => {
 				return translateValue(damage, translatedSpellDamage);
+			},
+
+			convertGods: (gods) => {
+				return translateList(gods, translatedGods);
+			},
+
+			convertEffects: (effects, translations) => {
+				// todo
 			}
 		});
 
@@ -922,12 +930,21 @@ export function init() {
 			return value;
 		}
 
-		function translateValue(value, obj) {
-			return obj[value] || value;
+		function translateValue(value, translations) {
+			return translations[value] || value;
 		}
 
 		function translateArray(arr) {
 			return arr.map(translateCompoundString);
+		}
+
+		function translateList(value, translations) {
+			return value
+				.split(", ")
+				.map((item) => {
+					return translateValue(item, translations);
+				})
+				.join(", ");
 		}
 
 		function translateObjects(arr) {

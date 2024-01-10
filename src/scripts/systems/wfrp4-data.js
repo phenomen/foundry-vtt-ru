@@ -533,7 +533,16 @@ export const translatedSpellRange = {
 	"Line of sight": "Прямая видимость",
 	"2 * Fellowship Bonus yards": "2 * (Рейтинг харизмы ярдов)",
 	"You or Touch": "Персонаж или касание",
-	"Intelligence yards": "Интеллект ярдов"
+	"Intelligence yards": "Интеллект ярдов",
+	"6 yards": "6 ярдов",
+	"Fellowship yards": "Харизма ярдов",
+	"Fellowship Bonus yards": "Рейтинг харизмы ярдов",
+	"Initiative Bonus Miles": "Рейтинг инициативы миль",
+	"Self": "Персонаж",
+	"See text": "смотри текст",
+	"24 yds": "24 ярда",
+	"36 yds": "36 ярдов",
+	"Fellowship Yards": "Харизма ярдов"
 };
 
 export const translatedSpellTarget = {
@@ -575,7 +584,16 @@ export const translatedSpellTarget = {
 	"2 * Willpower Bonus yards": "2 * Рейтинг силы воли ярдов",
 	"4 * AoE (Willpower Bonus yards)":
 		"4 * Область воздействия (Рейтинг силы воли ярдов)",
-	"Willpower yards": "Сила воли ярдов"
+	"Willpower yards": "Сила воли ярдов",
+	"Intelligence Bonus allies": "Рейтинг интеллекта ярдов",
+	"Fellowship yards": "Харизма ярдов",
+	"8 yards": "8 ярдов",
+	"Fellowship Bonus allies": "Рейтинг харизмы союзников",
+	"Fellowship yards": "Харизма ярдов",
+	"Line of Sight": "Прямая видимость",
+	"Any ally": "Любой союзник",
+	"See text": "смотри текст",
+	"Fellowship Bonus Yards": "Рейтинг харизмы ярдов"
 };
 
 export const translatedSpellDuration = {
@@ -619,9 +637,33 @@ export const translatedSpellDuration = {
 	"2 * Willpower Bonus rounds": "2 * Рейтинг силы воли раундов",
 	"Willpower * 1d10 minutes": "Сила воли * 1d10 минут",
 	"1d10 hours": "1d10 часов",
-	"Willpower Bonus years": "Сила воли лет"
+	"Willpower Bonus years": "Сила воли лет",
+	"6 Rounds": "6 раундов",
+	"Fellowship Bonus Rounds": "Рейтинг харизмы раундов",
+	"1 Hour": "1 час",
+	"Fellowship Bonus Hours (Special)": "Рейтинг харизмы часов (особое)",
+	"Fellowship Bonus Hours": "Рейтинг харизмы часов",
+	"Fellowship Bonus Minutes": "Рейтинг харизмы минут",
+	"Agility Bonus Rounds": "Рейтинг проворства раундов",
+	"Fellowship bonus Rounds": "Рейтинг харизмы раундов",
+	"4 Rounds": "4 раунда",
+	"3 Rounds": "3 раунда",
+	"Immediate": "Мгновенно"
 };
 
 export const translatedSpellDamage = {
 	"Willpower Bonus": "Рейтинг силы воли"
+};
+
+export const translatedGods = {
+	Shallya: "Шалия",
+	Ulric: "Ульрик",
+	Taal: "Таал",
+	Sigmar: "Сигмар",
+	Ranald: "Ранальд",
+	Rhya: "Райя",
+	Morr: "Морр",
+	Myrmidia: "Мирмидия",
+	Manann: "Мананн",
+	Verena: "Верена"
 };
