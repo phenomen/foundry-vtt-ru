@@ -1,13 +1,18 @@
-import { rm, rename } from "node:fs/promises";
+import { rm, rename, access } from "node:fs/promises";
 import { join } from "node:path";
+import "dotenv/config";
 
-const modules = "D:\\Foundry\\Data\\modules";
-const module = "ru-ru";
-const modulePath = join(modules, module);
+const modules = process.env.MODULES_PATH;
+const mod = process.env.MODULE_NAME;
+const modulePath = join(modules, mod);
 
 async function removeOld() {
 	try {
-		await rm(modulePath, { recursive: true });
+		const exists = await access(modulePath);
+
+		if (exists) {
+			await rm(modulePath, { recursive: true });
+		}
 	} catch (err) {
 		console.error(err);
 	}
@@ -15,7 +20,7 @@ async function removeOld() {
 
 async function moveNew() {
 	try {
-		await rename("./ru-ru", modulePath);
+		await rename(`./${mod}`, modulePath);
 	} catch (err) {
 		console.error(err);
 	}

@@ -525,8 +525,7 @@ export const translatedSpellRange = {
 	"Half Willpower yards": "Сила воли / 2 ярдов",
 	"Initiative / 2 yards": "Инициатива / 2 ярдов",
 	"Half Initiative yards": "Инициатива / 2 ярдов",
-	"AoE (Willpower Bonus yards)":
-		"Область воздействия (Рейтинг силы воли ярдов)",
+	"AoE (Willpower Bonus yards)": "Область воздействия (Рейтинг силы воли ярдов)",
 	"AoE (Willpower yards)": "Область воздействия (Сила воли ярдов)",
 	"100 yards": "100 ярдов",
 	"AoE (Fellowship yards)": "Область воздействия (Харизма ярдов)",
@@ -548,29 +547,24 @@ export const translatedSpellRange = {
 export const translatedSpellTarget = {
 	"You": "Персонаж",
 	"Special": "Особая",
-	"AoE (Willpower Bonus yards)":
-		"Область воздействия (Рейтинг силы воли ярдов)",
+	"AoE (Willpower Bonus yards)": "Область воздействия (Рейтинг силы воли ярдов)",
 	"AoE (see description)": "Область воздействия (см. описание)",
 	"AoE (Special)": "Область воздействия (особая)",
-	"AoE (Initiative Bonus yards)":
-		"Область воздействия (Рейтинг инициативы ярдов)",
+	"AoE (Initiative Bonus yards)": "Область воздействия (Рейтинг инициативы ярдов)",
 	"AoE (Fellowship Bonus yards)": "Область воздействия (Рейтинг харизмы ярдов)",
 	"AoE (a single location)": "Область воздействия (выбранное место)",
 	"AoE (maximum, Willpower Bonus yards across)":
 		"Область воздействия (не более Рейтинг силы воли ярдов в поперечнике)",
 	"see description": "смотри описание",
 	"a single location": "выбранное место",
-	"Willpower Bonus yards across maximum":
-		"не более Рейтинг силы воли ярдов в поперечнике",
+	"Willpower Bonus yards across maximum": "не более Рейтинг силы воли ярдов в поперечнике",
 	"1 (maximum)": "1 (максимум)",
 	"2 × Initiative Bonus or Initiative Bonus Duration: Instant":
 		"2 * Рейтинг инициативы или Рейтинг инициативы",
-	"2 × Initiative Bonus or Initiative Bonus":
-		"2 * Рейтинг инициативы или Рейтинг инициативы",
+	"2 × Initiative Bonus or Initiative Bonus": "2 * Рейтинг инициативы или Рейтинг инициативы",
 	"1 Forge": "1 кузнечный горн",
 	"1 fire": "1 огонь",
-	"1 with AoE (Willpower Bonus yards)":
-		"1 с областью воздействия (Рейтинг силы воли ярдов)",
+	"1 with AoE (Willpower Bonus yards)": "1 с областью воздействия (Рейтинг силы воли ярдов)",
 	"You or 1 (maximum)": "персонаж или 1 (максимум)",
 	"1 object": "1 объект",
 	"1 weapon": "1 оружие",
@@ -582,8 +576,7 @@ export const translatedSpellTarget = {
 	"Initiative Bonus yards": "Рейтинг инициативы ярдов",
 	"Initiative yards": "Инициатива ярдов",
 	"2 * Willpower Bonus yards": "2 * Рейтинг силы воли ярдов",
-	"4 * AoE (Willpower Bonus yards)":
-		"4 * Область воздействия (Рейтинг силы воли ярдов)",
+	"4 * AoE (Willpower Bonus yards)": "4 * Область воздействия (Рейтинг силы воли ярдов)",
 	"Willpower yards": "Сила воли ярдов",
 	"Intelligence Bonus allies": "Рейтинг интеллекта ярдов",
 	"Fellowship yards": "Харизма ярдов",
