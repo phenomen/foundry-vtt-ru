@@ -119,7 +119,7 @@ export function init() {
 						//console.log("Trait translation", compmod, trait_en)
 						if (name_en.includes("Tentacles")) {
 							// Process specific Tentacles case
-							let re = /(.d*)x щупалец/i;
+							let re = /(.d*)x Tentacles/i;
 							let res = re.exec(name_en);
 							if (res && res[1]) nbt = res[1] + "x ";
 							name_en = "Tentacles";
