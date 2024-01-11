@@ -397,7 +397,7 @@ export const translatedTalent = {
 	"Wealthy": "Богач",
 	"Weapon": "Оружие",
 	"Well-prepared": "Запасливость",
-	"Witch!": "Ведьма"
+	"Witch!": "Ведьма!"
 };
 
 export const translatedSpecification = {

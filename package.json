@@ -7,7 +7,7 @@
 		"process:zip": "node process-zip.js",
 		"process:test": "node process-test.js",
 		"build": "pnpm process:build",
-		"test": "pnpm pnpm process:build && pnpm process:test",
+		"test": "pnpm process:build && pnpm process:test",
 		"release": "pnpm process:bump && pnpm process:build && pnpm process:zip",
 		"format:check": "prettier --check .",
 		"format": "prettier --write ."

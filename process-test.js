@@ -8,11 +8,8 @@ const modulePath = join(modules, mod);
 
 async function removeOld() {
 	try {
-		const exists = await access(modulePath);
-
-		if (exists) {
-			await rm(modulePath, { recursive: true });
-		}
+		await rm(modulePath, { recursive: true });
+		console.log(`Removed old ${mod} from ${modules}`);
 	} catch (err) {
 		console.error(err);
 	}
@@ -21,6 +18,7 @@ async function removeOld() {
 async function moveNew() {
 	try {
 		await rename(`./${mod}`, modulePath);
+		console.log(`Moved new ${mod} to ${modules}`);
 	} catch (err) {
 		console.error(err);
 	}

@@ -1,5 +1,16 @@
 {
 	"label": "Актёры (Рогатая крыса)",
+	"mapping": {
+		"items": {
+			"path": "items",
+			"converter": "bestiaryTraits"
+		},
+		"species": "system.details.species.value",
+		"gender": {
+			"path": "system.details.gender.value",
+			"converter": "convertGender"
+		}
+	},
 	"entries": {
 		"Abyssal Terror": {
 			"name": "Abyssal Terror",

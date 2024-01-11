@@ -1,6 +1,7 @@
 {
 	"label": "Предметы (Приключения в Убершрейке II)",
 	"mapping": {
+		"gmdescription": "system.gmdescription.value",
 		"tests": "system.tests.value",
 		"contraction": "system.contraction.value",
 		"symptoms": "system.symptoms.value",
@@ -32,6 +33,30 @@
 		"talents": {
 			"path": "system.talents",
 			"converter": "convertTalent"
+		},
+		"specification": {
+			"path": "system.specification.value",
+			"converter": "convertSpecification"
+		},
+		"spellRange": {
+			"path": "system.range.value",
+			"converter": "convertSpellRange"
+		},
+		"spellDuration": {
+			"path": "system.duration.value",
+			"converter": "convertSpellDuration"
+		},
+		"spellTarget": {
+			"path": "system.target.value",
+			"converter": "convertSpellTarget"
+		},
+		"spellDamage": {
+			"path": "system.damage.value",
+			"converter": "convertSpellDamage"
+		},
+		"prayerGods": {
+			"path": "system.god.value",
+			"converter": "convertGods"
 		}
 	},
 	"entries": {
