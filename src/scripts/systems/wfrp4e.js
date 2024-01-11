@@ -102,7 +102,7 @@ export function init() {
 
 			bestiaryTraits: (beast_traits, translations) => {
 				if (!beast_traits) {
-					console.log("No beast traits found here ...");
+					console.log("No traits found here ...");
 					return beast_traits;
 				}
 				//console.log("TRANS:", beast_traits)
@@ -111,7 +111,7 @@ export function init() {
 					let nbt = "";
 					let name_en = trait_en.name.trim(); // strip \r in some traits name
 					if (!trait_en.name || trait_en.name.length == 0) {
-						console.log("Wrong item name found!!!!");
+						console.log("Wrong item name found!");
 						continue;
 					}
 					//console.log(">>>>>>>> Parsing", trait_en.name)
@@ -132,16 +132,16 @@ export function init() {
 						}
 						let validCompendiums = game.wfrp4e.tags.getPacksWithTag("trait");
 						for (let compData of validCompendiums) {
-							let trait_fr = game.babele.translate(
+							let trait_ru = game.babele.translate(
 								compData.metadata.id,
 								{ name: name_en },
 								true
 							);
-							if (trait_fr?.system) {
-								trait_fr.name = trait_fr.name || trait_en.name;
-								trait_en.name = nbt + trait_fr.name + special;
+							if (trait_ru?.system) {
+								trait_ru.name = trait_ru.name || trait_en.name;
+								trait_en.name = nbt + trait_ru.name + special;
 								trait_en.system.description.value =
-									trait_fr.system.description.value;
+									trait_ru.system.description.value;
 								if (
 									trait_en.system?.specification &&
 									isNaN(trait_en.system.specification.value)
@@ -165,35 +165,35 @@ export function init() {
 						}
 						let validCompendiums = game.wfrp4e.tags.getPacksWithTag("skill");
 						for (let compData of validCompendiums) {
-							let trait_fr = game.babele.translate(
+							let trait_ru = game.babele.translate(
 								compData.metadata.id,
 								{ name: name_en },
 								true
 							);
-							if (trait_fr?.system) {
-								//console.log(">>>>> Skill ?", name_en, special, trait_fr.name, trait_fr);
-								trait_fr.name = trait_fr.name || name_en;
-								trait_en.name = trait_fr.name + special;
+							if (trait_ru?.system) {
+								//console.log(">>>>> Skill ?", name_en, special, trait_ru.name, trait_ru);
+								trait_ru.name = trait_ru.name || name_en;
+								trait_en.name = trait_ru.name + special;
 								trait_en.system.description.value =
-									trait_fr.system.description.value;
+									trait_ru.system.description.value;
 								break; // Translation has been found, skip other compendiums
 							}
 						}
 					} else if (trait_en.type == "prayer") {
 						let validCompendiums = game.wfrp4e.tags.getPacksWithTag("prayer");
 						for (let compData of validCompendiums) {
-							let trait_fr = game.babele.translate(
+							let trait_ru = game.babele.translate(
 								compData.metadata.id,
 								{ name: name_en },
 								true
 							);
-							if (trait_fr?.system) {
-								//DEBUG : console.log(">>>>> Prayer ?", name_en, special, trait_fr.name );
-								trait_fr.name = trait_fr.name || name_en;
-								trait_en.name = trait_fr.name + special;
-								if (trait_fr.system?.description?.value) {
+							if (trait_ru?.system) {
+								//DEBUG : console.log(">>>>> Prayer ?", name_en, special, trait_ru.name );
+								trait_ru.name = trait_ru.name || name_en;
+								trait_en.name = trait_ru.name + special;
+								if (trait_ru.system?.description?.value) {
 									trait_en.system.description.value =
-										trait_fr.system.description.value;
+										trait_ru.system.description.value;
 								}
 								break;
 							}
@@ -201,18 +201,18 @@ export function init() {
 					} else if (trait_en.type == "spell") {
 						let validCompendiums = game.wfrp4e.tags.getPacksWithTag("spell");
 						for (let compData of validCompendiums) {
-							let trait_fr = game.babele.translate(
+							let trait_ru = game.babele.translate(
 								compData.metadata.id,
 								{ name: name_en },
 								true
 							);
-							if (trait_fr?.system) {
-								trait_fr.name = trait_fr.name || name_en;
-								//DEBUG : console.log(">>>>> Spell ?", name_en, special, trait_fr.name );
-								trait_en.name = trait_fr.name + special;
-								if (trait_fr.system?.description?.value) {
+							if (trait_ru?.system) {
+								trait_ru.name = trait_ru.name || name_en;
+								//DEBUG : console.log(">>>>> Spell ?", name_en, special, trait_ru.name );
+								trait_en.name = trait_ru.name + special;
+								if (trait_ru.system?.description?.value) {
 									trait_en.system.description.value =
-										trait_fr.system.description.value;
+										trait_ru.system.description.value;
 								}
 								break;
 							}
@@ -227,24 +227,24 @@ export function init() {
 						}
 						let validCompendiums = game.wfrp4e.tags.getPacksWithTag("talent");
 						for (let compData of validCompendiums) {
-							let trait_fr = game.babele.translate(
+							let trait_ru = game.babele.translate(
 								compData.metadata.id,
 								{ name: name_en },
 								true
 							);
-							if (trait_fr?.system) {
-								trait_fr.name = trait_fr.name || name_en; // Security since babele v10
-								//console.log(">>>>> Talent ?", trait_fr, name_en, special, trait_fr.name);
+							if (trait_ru?.system) {
+								trait_ru.name = trait_ru.name || name_en; // Security since babele v10
+								//console.log(">>>>> Talent ?", trait_ru, name_en, special, trait_ru.name);
 								if (
-									trait_fr.name &&
-									(trait_fr.name == "Sprinter" || trait_fr.name != name_en)
+									trait_ru.name &&
+									(trait_ru.name == "Sprinter" || trait_ru.name != name_en)
 								) {
 									// Talent translated!
-									trait_en.name = trait_fr.name.trim() + special;
-									if (trait_fr.system?.description?.value) {
+									trait_en.name = trait_ru.name.trim() + special;
+									if (trait_ru.system?.description?.value) {
 										// Why ???
 										trait_en.system.description.value =
-											trait_fr.system.description.value;
+											trait_ru.system.description.value;
 									}
 								}
 								break;
