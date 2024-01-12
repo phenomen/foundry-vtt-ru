@@ -191,6 +191,35 @@ export function init() {
 								if (trait_ru.system?.description?.value) {
 									trait_en.system.description.value = trait_ru.system.description.value;
 								}
+
+								if (trait_en.system?.range?.value) {
+									trait_en.system.range.value = translateValue(
+										trait_en.system.range.value,
+										translatedSpellRange
+									);
+								}
+
+								if (trait_en.system?.duration?.value) {
+									trait_en.system.duration.value = translateValue(
+										trait_en.system.duration.value,
+										translatedSpellDuration
+									);
+								}
+
+								if (trait_en.system?.target?.value) {
+									trait_en.system.target.value = translateValue(
+										trait_en.system.target.value,
+										translatedSpellTarget
+									);
+								}
+
+								if (trait_en.system?.damage?.value) {
+									trait_en.system.damage.value = translateValue(
+										trait_en.system.damage.value,
+										translatedSpellDamage
+									);
+								}
+
 								break;
 							}
 						}
