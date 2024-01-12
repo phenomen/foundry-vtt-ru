@@ -105,7 +105,7 @@ export function init() {
 					console.log("No traits found here ...");
 					return actor_items;
 				}
-				console.log("TRANS:", actor_items);
+				//console.log("TRANS:", actor_items);
 				for (let item_en of actor_items) {
 					let special = "";
 					let nbt = "";
@@ -307,7 +307,7 @@ export function init() {
 								true
 							);
 							if (trapping_ru?.system) {
-								console.log(">>>>> Trapping ?", name_en, trapping_ru.name);
+								//console.log(">>>>> Trapping ?", name_en, trapping_ru.name);
 								item_en.name = trapping_ru.name || item_en.name;
 								if (trapping_ru.system?.description?.value) {
 									item_en.system.description.value = trapping_ru.system.description.value;
