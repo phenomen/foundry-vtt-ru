@@ -100,23 +100,23 @@ export function init() {
 				return translateList(gods, translatedGods);
 			},
 
-			bestiaryTraits: (beast_traits, translations) => {
-				if (!beast_traits) {
+			convertActorItems: (actor_items, translations) => {
+				if (!actor_items) {
 					console.log("No traits found here ...");
-					return beast_traits;
+					return actor_items;
 				}
-				//console.log("TRANS:", beast_traits)
-				for (let trait_en of beast_traits) {
+				console.log("TRANS:", actor_items);
+				for (let item_en of actor_items) {
 					let special = "";
 					let nbt = "";
-					let name_en = trait_en.name.trim(); // strip \r in some traits name
-					if (!trait_en.name || trait_en.name.length == 0) {
+					let name_en = item_en.name.trim(); // strip \r in some traits name
+					if (!item_en.name || item_en.name.length == 0) {
 						console.log("Wrong item name found!");
 						continue;
 					}
-					//console.log(">>>>>>>> Parsing", trait_en.name)
-					if (trait_en.type == "trait") {
-						//console.log("Trait translation", compmod, trait_en)
+					//console.log(">>>>>>>> Parsing", item_en.name);
+					if (item_en.type == "trait") {
+						//console.log("Trait translation", compmod, item_en)
 						if (name_en.includes("Tentacles")) {
 							// Process specific Tentacles case
 							let re = /(.d*)x Tentacles/i;
@@ -132,22 +132,22 @@ export function init() {
 						}
 						let validCompendiums = game.wfrp4e.tags.getPacksWithTag("trait");
 						for (let compData of validCompendiums) {
-							let trait_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
-							if (trait_ru?.system) {
-								trait_ru.name = trait_ru.name || trait_en.name;
-								trait_en.name = nbt + trait_ru.name + special;
-								trait_en.system.description.value = trait_ru.system.description.value;
-								if (trait_en.system?.specification && isNaN(trait_en.system.specification.value)) {
+							let item_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
+							if (item_ru?.system) {
+								item_ru.name = item_ru.name || item_en.name;
+								item_en.name = nbt + item_ru.name + special;
+								item_en.system.description.value = item_ru.system.description.value;
+								if (item_en.system?.specification && isNaN(item_en.system.specification.value)) {
 									// This is a string, so translate it
-									//console.log("Translating : ", trait_en.system.specification.value);
-									trait_en.system.specification.value = game.i18n.localize(
-										trait_en.system.specification.value.trim()
+									//console.log("Translating : ", item_en.system.specification.value);
+									item_en.system.specification.value = game.i18n.localize(
+										item_en.system.specification.value.trim()
 									);
 								}
 								break; // Translation has been found, skip other compendiums
 							}
 						}
-					} else if (trait_en.type == "skill") {
+					} else if (item_en.type == "skill") {
 						if (name_en.includes("(") && name_en.includes(")")) {
 							// Then process specific skills name with (xxxx) inside
 							let re = /(.*) +\((.*)\)/i;
@@ -157,65 +157,101 @@ export function init() {
 						}
 						let validCompendiums = game.wfrp4e.tags.getPacksWithTag("skill");
 						for (let compData of validCompendiums) {
-							let trait_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
-							if (trait_ru?.system) {
-								//console.log(">>>>> Skill ?", name_en, special, trait_ru.name, trait_ru);
-								trait_ru.name = trait_ru.name || name_en;
-								trait_en.name = trait_ru.name + special;
-								trait_en.system.description.value = trait_ru.system.description.value;
+							let item_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
+							if (item_ru?.system) {
+								//console.log(">>>>> Skill ?", name_en, special, item_ru.name, item_ru);
+								item_ru.name = item_ru.name || name_en;
+								item_en.name = item_ru.name + special;
+								item_en.system.description.value = item_ru.system.description.value;
 								break; // Translation has been found, skip other compendiums
 							}
 						}
-					} else if (trait_en.type == "prayer") {
+					} else if (item_en.type == "prayer") {
 						let validCompendiums = game.wfrp4e.tags.getPacksWithTag("prayer");
 						for (let compData of validCompendiums) {
-							let trait_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
-							if (trait_ru?.system) {
-								//DEBUG : console.log(">>>>> Prayer ?", name_en, special, trait_ru.name );
-								trait_ru.name = trait_ru.name || name_en;
-								trait_en.name = trait_ru.name + special;
-								if (trait_ru.system?.description?.value) {
-									trait_en.system.description.value = trait_ru.system.description.value;
-								}
-								break;
-							}
-						}
-					} else if (trait_en.type == "spell") {
-						let validCompendiums = game.wfrp4e.tags.getPacksWithTag("spell");
-						for (let compData of validCompendiums) {
-							let trait_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
-							if (trait_ru?.system) {
-								trait_ru.name = trait_ru.name || name_en;
-								//DEBUG : console.log(">>>>> Spell ?", name_en, special, trait_ru.name );
-								trait_en.name = trait_ru.name + special;
-								if (trait_ru.system?.description?.value) {
-									trait_en.system.description.value = trait_ru.system.description.value;
+							let item_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
+							if (item_ru?.system) {
+								//DEBUG : console.log(">>>>> Prayer ?", name_en, special, item_ru.name );
+								item_ru.name = item_ru.name || name_en;
+								item_en.name = item_ru.name + special;
+								if (item_ru.system?.description?.value) {
+									item_en.system.description.value = item_ru.system.description.value;
 								}
 
-								if (trait_en.system?.range?.value) {
-									trait_en.system.range.value = translateValue(
-										trait_en.system.range.value,
+								if (item_en.system?.range?.value) {
+									item_en.system.range.value = translateValue(
+										item_en.system.range.value,
 										translatedSpellRange
 									);
 								}
 
-								if (trait_en.system?.duration?.value) {
-									trait_en.system.duration.value = translateValue(
-										trait_en.system.duration.value,
+								if (item_en.system?.duration?.value) {
+									item_en.system.duration.value = translateValue(
+										item_en.system.duration.value,
 										translatedSpellDuration
 									);
 								}
 
-								if (trait_en.system?.target?.value) {
-									trait_en.system.target.value = translateValue(
-										trait_en.system.target.value,
+								if (item_en.system?.target?.value) {
+									item_en.system.target.value = translateValue(
+										item_en.system.target.value,
 										translatedSpellTarget
 									);
 								}
 
-								if (trait_en.system?.damage?.value) {
-									trait_en.system.damage.value = translateValue(
-										trait_en.system.damage.value,
+								if (item_en.system?.damage?.value) {
+									item_en.system.damage.value = translateValue(
+										item_en.system.damage.value,
+										translatedSpellDamage
+									);
+								}
+
+								if (item_en.system?.god?.value) {
+									item_en.system.god.value = translateValue(
+										item_en.system.god.value,
+										translatedGods
+									);
+								}
+
+								break;
+							}
+						}
+					} else if (item_en.type == "spell") {
+						let validCompendiums = game.wfrp4e.tags.getPacksWithTag("spell");
+						for (let compData of validCompendiums) {
+							let item_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
+							if (item_ru?.system) {
+								item_ru.name = item_ru.name || name_en;
+								//DEBUG : console.log(">>>>> Spell ?", name_en, special, item_ru.name );
+								item_en.name = item_ru.name + special;
+								if (item_ru.system?.description?.value) {
+									item_en.system.description.value = item_ru.system.description.value;
+								}
+
+								if (item_en.system?.range?.value) {
+									item_en.system.range.value = translateValue(
+										item_en.system.range.value,
+										translatedSpellRange
+									);
+								}
+
+								if (item_en.system?.duration?.value) {
+									item_en.system.duration.value = translateValue(
+										item_en.system.duration.value,
+										translatedSpellDuration
+									);
+								}
+
+								if (item_en.system?.target?.value) {
+									item_en.system.target.value = translateValue(
+										item_en.system.target.value,
+										translatedSpellTarget
+									);
+								}
+
+								if (item_en.system?.damage?.value) {
+									item_en.system.damage.value = translateValue(
+										item_en.system.damage.value,
 										translatedSpellDamage
 									);
 								}
@@ -223,7 +259,7 @@ export function init() {
 								break;
 							}
 						}
-					} else if (trait_en.type == "talent") {
+					} else if (item_en.type == "talent") {
 						if (name_en.includes("(") && name_en.includes(")")) {
 							// Then process specific skills name with (xxxx) inside
 							let re = /(.*) +\((.*)\)/i;
@@ -233,62 +269,56 @@ export function init() {
 						}
 						let validCompendiums = game.wfrp4e.tags.getPacksWithTag("talent");
 						for (let compData of validCompendiums) {
-							let trait_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
-							if (trait_ru?.system) {
-								trait_ru.name = trait_ru.name || name_en; // Security since babele v10
-								//console.log(">>>>> Talent ?", trait_ru, name_en, special, trait_ru.name);
-								if (trait_ru.name && (trait_ru.name == "Sprinter" || trait_ru.name != name_en)) {
+							let item_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
+							if (item_ru?.system) {
+								item_ru.name = item_ru.name || name_en; // Security since babele v10
+								//console.log(">>>>> Talent ?", item_ru, name_en, special, item_ru.name);
+								if (item_ru.name && (item_ru.name == "Sprinter" || item_ru.name != name_en)) {
 									// Talent translated!
-									trait_en.name = trait_ru.name.trim() + special;
-									if (trait_ru.system?.description?.value) {
+									item_en.name = item_ru.name.trim() + special;
+									if (item_ru.system?.description?.value) {
 										// Why ???
-										trait_en.system.description.value = trait_ru.system.description.value;
+										item_en.system.description.value = item_ru.system.description.value;
 									}
 								}
 								break;
 							}
 						}
-					} else if (trait_en.type == "career") {
+					} else if (item_en.type == "career") {
 						let validCompendiums = game.wfrp4e.tags.getPacksWithTag("career");
 						for (let compData of validCompendiums) {
-							let career_fr = game.babele.translate(compData.metadata.id, { name: name_en }, true);
-							if (career_fr?.system) {
-								trait_en.name = career_fr.name || trait_en.name;
-								// DEBG: console.log(">>>>> Career ?", career_fr.name );
-								trait_en.system = duplicate(career_fr.system);
+							let career_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
+							if (career_ru?.system) {
+								item_en.name = career_ru.name || item_en.name;
+								// DEBG: console.log(">>>>> Career ?", career_ru.name );
+								item_en.system = duplicate(career_ru.system);
 								break;
 							}
 						}
-					} else if (
-						trait_en.type == "trapping" ||
-						trait_en.type == "weapon" ||
-						trait_en.type == "armour" ||
-						trait_en.type == "container" ||
-						trait_en.type == "money"
-					) {
+					} else {
 						let validCompendiums = game.wfrp4e.tags.getPacksWithTag(
 							["trapping"],
 							["weapon", "armour", "container", "money"]
 						);
 						for (let compData of validCompendiums) {
-							let trapping_fr = game.babele.translate(
+							let trapping_ru = game.babele.translate(
 								compData.metadata.id,
 								{ name: name_en },
 								true
 							);
-							if (trapping_fr?.system) {
-								//console.log(">>>>> Trapping ?", name_en, trapping_fr.name);
-								trait_en.name = trapping_fr.name || trait_en.name;
-								if (trapping_fr.system?.description?.value) {
-									trait_en.system.description.value = trapping_fr.system.description.value;
+							if (trapping_ru?.system) {
+								console.log(">>>>> Trapping ?", name_en, trapping_ru.name);
+								item_en.name = trapping_ru.name || item_en.name;
+								if (trapping_ru.system?.description?.value) {
+									item_en.system.description.value = trapping_ru.system.description.value;
 								}
 								break;
 							}
 						}
 					}
 				}
-				//console.log(">>>>>>>><OUTPUT", beast_traits)
-				return beast_traits;
+				console.log(">>>>>>>><OUTPUT", actor_items);
+				return actor_items;
 			}
 
 			//convertEffects: (effects, translations) => {
