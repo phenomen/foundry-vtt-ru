@@ -317,13 +317,9 @@ export function init() {
 						}
 					}
 				}
-				console.log(">>>>>>>><OUTPUT", actor_items);
+				//console.log(">>>>>>>><OUTPUT", actor_items);
 				return actor_items;
 			}
-
-			//convertEffects: (effects, translations) => {
-			//	// todo
-			//}
 		});
 
 		Hooks.once("ready", () => {
