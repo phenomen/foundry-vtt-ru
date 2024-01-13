@@ -37,16 +37,16 @@
 		"contraction": "system.contraction.value",
 		"symptoms": "system.symptoms.value",
 		"permanent": "system.permanent.value",
-		"incubation_value": "system.incubation.value",
-		"incubation_unit": {
+		"incubationValue": "system.incubation.value",
+		"incubationUnit": {
 			"path": "system.incubation.unit",
 			"converter": "convertDuration"
 		},
-		"duration_unit": {
+		"durationUnit": {
 			"path": "system.duration.unit",
 			"converter": "convertDuration"
 		},
-		"hit_location": {
+		"hitLocation": {
 			"path": "system.location.value",
 			"converter": "convertHitLocation"
 		},
@@ -57,17 +57,13 @@
 			"converter": "convertCareerClass"
 		},
 		"trappings": "system.trappings",
-		"skills": {
+		"careerSkills": {
 			"path": "system.skills",
-			"converter": "convertSkill"
+			"converter": "convertCareerSkills"
 		},
-		"talents": {
+		"careerTalents": {
 			"path": "system.talents",
-			"converter": "convertTalent"
-		},
-		"specification": {
-			"path": "system.specification.value",
-			"converter": "convertSpecification"
+			"converter": "convertCareerTalents"
 		},
 		"spellRange": {
 			"path": "system.range.value",
@@ -121,7 +117,13 @@
 			"name": "Аль-кахест",
 			"description": "<p>@UUID[JournalEntry.4spGTAnh7qc2JDqY.JournalEntryPage.ew9yY1K70U0wVCjS#al-kahest]{Аль-кахест} известен как универсальный растворитель, сильнейшая известная алхимикам кислота. Чтобы создать аль-кахест, алхимик должен создать едкую субстанцию из сырья стоимостью 10/6, а затем пройти Продолжительную Тяжелую (-20) проверку ремесла (алхимия) с целевым числом 20 УУ. В результате получается 1 флакон 'Аль-кахеста'.</p><p>Содержимое одного флакона, аккуратно нанесённое, может проплавить отверстие, достаточно широкое чтоб человек мог пролезть в каменную стену толщиной 6 футов или стальную дверь толщиной 10 дюймов. Флакон с аль-кахестом можно использовать как оружие, нанося ужасные повреждения тем, в кого оно попадёт. Рассматривайте это как Зажигательное вещество, создающее для каждой поражённой цели состояние @Condition[охвачен огнём]{горения} в количестве 5+УУ.</p>"
 		},
-		"Alchemist": {
+		"AP06mXK4djaTPgDf": {
+			"name": "Алхимик",
+			"description": "<p>@UUID[Compendium.wfrp4e-wom.journals.4spGTAnh7qc2JDqY.JournalEntryPage.TL27HuBfhnnsHjpt]{Мирской алхимик}</p>",
+			"careerGroup": "Мирской алхимик",
+			"trappings": ["Гильдейская лицензия", "Ремесленные инструменты"]
+		},
+		"TGnxmqf9wDJQAu2u": {
 			"name": "Алхимик",
 			"description": "<p>@UUID[Compendium.wfrp4e-wom.journals.kLTWtoz5d7Yt2zAJ.JournalEntryPage.aYYDra6LCt6daz0s]{Алхимик}</p>",
 			"careerGroup": "Алхимик",
@@ -1122,11 +1124,17 @@
 			"name": "Метка Улгу",
 			"description": "<p>Где-то на вашем теле появляется руна Улгу. Вы получаете талант @UUID[Compendium.wfrp4e-wom.items.EjGYZ4CgX2jZW7Ot]{Единение с Улгу}.</p>"
 		},
-		"Master Alchemist": {
+		"cXXPURj3wlKpPLAx": {
 			"name": "Магистр-алхимик",
 			"description": "<p>@UUID[Compendium.wfrp4e-wom.journals.kLTWtoz5d7Yt2zAJ.JournalEntryPage.aYYDra6LCt6daz0s]{Алхимик}</p>",
 			"careerGroup": "Алхимик",
 			"trappings": ["Ученик алхимика", "Боевой конь", "Волшебный предмет", "Характерное одеяние"]
+		},
+		"CORrT86L4a6BIGfZ": {
+			"name": "Мастер алхимии",
+			"description": "<p>@UUID[Compendium.wfrp4e-wom.journals.4spGTAnh7qc2JDqY.JournalEntryPage.TL27HuBfhnnsHjpt]{Мирской алхимик}</p>",
+			"careerGroup": "Мирской алхимик",
+			"trappings": ["Ученик", "Книга по алхимии", "Лаборатория"]
 		},
 		"Master Druid": {
 			"name": "Магистр-друид",

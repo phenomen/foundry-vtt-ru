@@ -1,14 +1,13 @@
 import { patchConfigReady, patchConfigSetup } from "./wfrp4-config";
 import {
-	translatedCareerClass,
 	translatedDuration,
-	translatedExceptions,
-	translatedGender,
 	translatedHitLocation,
-	translatedSkill,
-	translatedSpec,
-	translatedSpecification,
-	translatedTalent,
+	translatedCareerClass,
+	translatedGender,
+	translatedSpecie,
+	translatedSkillSpec,
+	translatedSkillExceptions,
+	translatedTalentSpec,
 	translatedSpellRange,
 	translatedSpellDuration,
 	translatedSpellTarget,
@@ -35,20 +34,26 @@ export function init() {
 		});
 
 		Babele.get().registerConverters({
+			/*
 			convertSkill: (skills) => {
 				if (!skills) return;
 				return translateArray(skills, translatedSkill, translatedSpec);
 			},
+			*/
 
+			/*
 			convertTalent: (talents) => {
 				if (!talents) return;
 				return translateArray(talents, translatedTalent, translatedSpec);
 			},
+			*/
 
+			/*
 			convertActorSkill: (skills) => {
 				if (!skills) return;
 				return translateObjectNames(skills, translatedSkill, translatedSpec);
 			},
+			*/
 
 			convertDuration: (duration) => {
 				if (!duration) return;
@@ -65,15 +70,19 @@ export function init() {
 				return translateValue(careerClass, translatedCareerClass);
 			},
 
+			/*
 			convertSpecification: (specification) => {
 				if (!specification) return;
 				return translateValue(specification, translatedSpecification);
 			},
+			*/
 
+			/*
 			convertGender: (gender) => {
 				if (!gender) return;
 				return translateValue(gender, translatedGender);
 			},
+			*/
 
 			convertSpellRange: (range) => {
 				if (!range) return;
@@ -100,35 +109,131 @@ export function init() {
 				return translateList(gods, translatedGods);
 			},
 
+			convertCareerSkills: (skills_list) => {
+				let validCompendiums = game.wfrp4e.tags.getPacksWithTag("skill");
+				if (skills_list) {
+					let i;
+					let len = skills_list.length;
+					let re = /(.*)\((.*)\)/i;
+					for (i = 0; i < len; i++) {
+						skills_list[i] = skills_list[i].trim();
+						for (let compData of validCompendiums) {
+							let translItem = game.babele.translate(
+								compData.metadata.id,
+								{ name: skills_list[i], type: "skill" },
+								true
+							);
+							let transl = translItem?.name || undefined;
+							if (!transl) transl = skills_list[i];
+							if (transl == skills_list[i]) {
+								let res = re.exec(skills_list[i]);
+								if (res) {
+									let subword = translateValue(res[2].trim(), translatedSkillSpec);
+									let s1 = res[1].trim() + " ()";
+									translItem = game.babele.translate(
+										compData.metadata.id,
+										{ name: s1, type: "skill" },
+										true
+									);
+									let translw = translItem?.name || undefined;
+									if (translw && translw != s1) {
+										let res2 = re.exec(translw);
+										transl = res2[1] + "(" + subword + ")";
+									} else {
+										s1 = res[1].trim() + " ( )";
+										translItem = game.babele.translate(
+											compData.metadata.id,
+											{ name: s1, type: "skill" },
+											true
+										);
+										translw = translItem?.name || undefined;
+										let res2 = re.exec(translw);
+										transl = res2[1] + "(" + subword + ")";
+									}
+								}
+							}
+							skills_list[i] = transl;
+							if (translItem?.system) break;
+						}
+					}
+				}
+				return skills_list;
+			},
+
+			convertCareerTalents: (talents_list) => {
+				let validCompendiums = game.wfrp4e.tags.getPacksWithTag("talent");
+				let i;
+				if (talents_list) {
+					let len = talents_list.length;
+					let re = /(.*)\((.*)\)/i;
+					for (i = 0; i < len; i++) {
+						for (let compData of validCompendiums) {
+							let translItem = game.babele.translate(
+								compData.metadata.id,
+								{ name: talents_list[i], type: "talent" },
+								true
+							);
+							let transl = translItem?.name || undefined;
+							if (!transl) transl = talents_list[i];
+							if (transl == talents_list[i]) {
+								let res = re.exec(talents_list[i]);
+								if (res) {
+									let subword = translateValue(res[2].trim(), translatedTalentSpec);
+									let s1 = res[1].trim();
+									translItem = game.babele.translate(
+										compData.metadata.id,
+										{ name: s1, type: "talent" },
+										true
+									);
+									let translw = translItem?.name || undefined;
+									if (translw && translw != s1) {
+										transl = translw + " (" + subword + ")";
+									}
+								}
+							}
+							talents_list[i] = transl;
+							if (translItem?.system) break;
+						}
+					}
+				}
+				return talents_list;
+			},
+
+			convertActorDetails: (details) => {
+				let newDetails = duplicate(details);
+				if (details.species?.value)
+					newDetails.species.value = translateValue(details.species.value, translatedSpecie);
+				if (details.gender?.value)
+					newDetails.gender.value = translateValue(details.gender.value, translatedGender);
+				if (details.class?.value)
+					newDetails.class.value = translateValue(details.class.value, translatedCareerClass);
+				return newDetails;
+			},
+
 			convertActorItems: (actor_items, translations) => {
 				if (!actor_items) {
 					console.log("No traits found here ...");
 					return actor_items;
 				}
-				//console.log("TRANS:", actor_items);
 				for (let item_en of actor_items) {
 					let special = "";
 					let nbt = "";
-					let name_en = item_en.name.trim(); // strip \r in some traits name
+					let name_en = item_en.name.trim();
 					if (!item_en.name || item_en.name.length == 0) {
 						console.log("Wrong item name found!");
 						continue;
 					}
-					//console.log(">>>>>>>> Parsing", item_en.name);
 					if (item_en.type == "trait") {
-						//console.log("Trait translation", compmod, item_en)
 						if (name_en.includes("Tentacles")) {
-							// Process specific Tentacles case
 							let re = /(.d*)x Tentacles/i;
 							let res = re.exec(name_en);
 							if (res && res[1]) nbt = res[1] + "x ";
 							name_en = "Tentacles";
 						} else if (name_en.includes("(") && name_en.includes(")")) {
-							// Then process specific traits name with (xxxx) inside
 							let re = /(.*) \((.*)\)/i;
 							let res = re.exec(name_en);
-							name_en = res[1]; // Get the root traits name
-							special = " (" + game.i18n.localize(res[2].trim()) + ")"; // And the special keyword
+							name_en = res[1];
+							special = " (" + translateValue(res[2].trim(), translatedTalentSpec) + ")";
 						}
 						let validCompendiums = game.wfrp4e.tags.getPacksWithTag("trait");
 						for (let compData of validCompendiums) {
@@ -136,34 +241,33 @@ export function init() {
 							if (item_ru?.system) {
 								item_ru.name = item_ru.name || item_en.name;
 								item_en.name = nbt + item_ru.name + special;
+
 								item_en.system.description.value = item_ru.system.description.value;
 								if (item_en.system?.specification && isNaN(item_en.system.specification.value)) {
-									// This is a string, so translate it
-									//console.log("Translating : ", item_en.system.specification.value);
-									item_en.system.specification.value = game.i18n.localize(
-										item_en.system.specification.value.trim()
+									item_en.system.specification.value = translateValue(
+										item_en.system.specification.value.trim(),
+										translatedTalentSpec
 									);
 								}
-								break; // Translation has been found, skip other compendiums
+
+								break;
 							}
 						}
 					} else if (item_en.type == "skill") {
 						if (name_en.includes("(") && name_en.includes(")")) {
-							// Then process specific skills name with (xxxx) inside
 							let re = /(.*) +\((.*)\)/i;
 							let res = re.exec(name_en);
-							name_en = res[1].trim(); // Get the root skill name
-							special = " (" + game.i18n.localize(res[2].trim()) + ")"; // And the special keyword
+							name_en = res[1].trim();
+							special = " (" + translateValue(res[2].trim(), translatedSkillSpec) + ")";
 						}
 						let validCompendiums = game.wfrp4e.tags.getPacksWithTag("skill");
 						for (let compData of validCompendiums) {
 							let item_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
 							if (item_ru?.system) {
-								//console.log(">>>>> Skill ?", name_en, special, item_ru.name, item_ru);
 								item_ru.name = item_ru.name || name_en;
 								item_en.name = item_ru.name + special;
 								item_en.system.description.value = item_ru.system.description.value;
-								break; // Translation has been found, skip other compendiums
+								break;
 							}
 						}
 					} else if (item_en.type == "prayer") {
@@ -171,7 +275,6 @@ export function init() {
 						for (let compData of validCompendiums) {
 							let item_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
 							if (item_ru?.system) {
-								//DEBUG : console.log(">>>>> Prayer ?", name_en, special, item_ru.name );
 								item_ru.name = item_ru.name || name_en;
 								item_en.name = item_ru.name + special;
 								if (item_ru.system?.description?.value) {
@@ -261,18 +364,21 @@ export function init() {
 						}
 					} else if (item_en.type == "talent") {
 						if (name_en.includes("(") && name_en.includes(")")) {
-							// Then process specific skills name with (xxxx) inside
 							let re = /(.*) +\((.*)\)/i;
 							let res = re.exec(name_en);
-							name_en = res[1].trim(); // Get the root talent name, no parenthesis this time...
-							special = " (" + game.i18n.localize(res[2].trim()) + ")"; // And the special keyword
+							name_en = res[1].trim();
+							special = " (" + game.i18n.localize(res[2].trim()) + ")";
 						}
 						let validCompendiums = game.wfrp4e.tags.getPacksWithTag("talent");
 						for (let compData of validCompendiums) {
 							let item_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
 							if (item_ru?.system) {
-								item_ru.name = item_ru.name || name_en; // Security since babele v10
-								//console.log(">>>>> Talent ?", item_ru, name_en, special, item_ru.name);
+								item_ru.name = item_ru.name || name_en;
+
+								if (item_en.system?.tests?.value && isNaN(item_en.system.tests.value)) {
+									item_en.system.tests.value = item_ru.system.tests.value;
+								}
+
 								if (item_ru.name && (item_ru.name == "Sprinter" || item_ru.name != name_en)) {
 									// Talent translated!
 									item_en.name = item_ru.name.trim() + special;
@@ -290,7 +396,6 @@ export function init() {
 							let career_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
 							if (career_ru?.system) {
 								item_en.name = career_ru.name || item_en.name;
-								// DEBG: console.log(">>>>> Career ?", career_ru.name );
 								item_en.system = duplicate(career_ru.system);
 								break;
 							}

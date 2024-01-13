@@ -1,76 +1,16 @@
 {
 	"label": "Актёры (Archives Vol. II)",
 	"mapping": {
+		"description": "system.description.value",
+		"gmdescription": "system.gmdescription.value",
+		"gmnotes": "system.details.gmnotes.value",
 		"items": {
 			"path": "items",
 			"converter": "convertActorItems"
 		},
-		"species": "system.details.species.value",
-		"gender": {
-			"path": "system.details.gender.value",
-			"converter": "convertGender"
-		}
-	},
-	"entries": {
-		"Adalmann von Hopfberg": {
-			"name": "Adalmann von Hopfberg",
-			"description": "<p></p>"
-		},
-		"Anna-Lise Levertske": {
-			"name": "Anna-Lise Levertske",
-			"description": "<p></p>"
-		},
-		"Artur Hammerfoot": {
-			"name": "Artur Hammerfoot",
-			"description": "<p></p>"
-		},
-		"Clementine Clausewitz": {
-			"name": "Clementine Clausewitz",
-			"description": "<p></p>"
-		},
-		"Erzbet Wegener": {
-			"name": "Erzbet Wegener",
-			"description": "<p></p>"
-		},
-		"Hanna Bratsch": {
-			"name": "Hanna Bratsch",
-			"description": "<p></p>"
-		},
-		"Isabella": {
-			"name": "Isabella",
-			"description": "<p></p>"
-		},
-		"Isrogdal the Urgent": {
-			"name": "Isrogdal the Urgent",
-			"description": "<p></p>"
-		},
-		"Margaret von Aschendorf": {
-			"name": "Margaret von Aschendorf",
-			"description": "<p></p>"
-		},
-		"Marie Duvallier": {
-			"name": "Marie Duvallier",
-			"description": "<p></p>"
-		},
-		"Nazzaalta Talltale": {
-			"name": "Nazzaalta Talltale",
-			"description": "<p></p>"
-		},
-		"Rhinox": {
-			"name": "Rhinox",
-			"description": "<section id=\"secret-9MAHvftp1hVVUqOn\" class=\"secret\"><p>Rhinoxen are large, powerful creatures that make their homes in tall and snowy mountains. They are stubborn, dangerous, and pack a lot of meat over dense bones, and so are of course beloved by Ogres. The creatures are not only used as a source of meat, as are most things Ogres happen across, but also as beasts of burden. Their prodigious strength allows them to bear up all but the largest of Ogres. They are often ridden into battle by those Ogres skilled (or lucky) enough to tame one.</p></section>"
-		},
-		"Richter Kless": {
-			"name": "Richter Kless",
-			"description": "<p></p>"
-		},
-		"Typical Sister": {
-			"name": "Typical Sister",
-			"description": "<p></p>"
-		},
-		"Ugrik the Lost": {
-			"name": "Ugrik the Lost",
-			"description": "<p></p>"
+		"details": {
+			"path": "system.details",
+			"converter": "convertActorDetails"
 		}
 	}
 }

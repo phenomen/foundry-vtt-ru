@@ -17,16 +17,16 @@
 		"contraction": "system.contraction.value",
 		"symptoms": "system.symptoms.value",
 		"permanent": "system.permanent.value",
-		"incubation_value": "system.incubation.value",
-		"incubation_unit": {
+		"incubationValue": "system.incubation.value",
+		"incubationUnit": {
 			"path": "system.incubation.unit",
 			"converter": "convertDuration"
 		},
-		"duration_unit": {
+		"durationUnit": {
 			"path": "system.duration.unit",
 			"converter": "convertDuration"
 		},
-		"hit_location": {
+		"hitLocation": {
 			"path": "system.location.value",
 			"converter": "convertHitLocation"
 		},
@@ -37,17 +37,13 @@
 			"converter": "convertCareerClass"
 		},
 		"trappings": "system.trappings",
-		"skills": {
+		"careerSkills": {
 			"path": "system.skills",
-			"converter": "convertSkill"
+			"converter": "convertCareerSkills"
 		},
-		"talents": {
+		"careerTalents": {
 			"path": "system.talents",
-			"converter": "convertTalent"
-		},
-		"specification": {
-			"path": "system.specification.value",
-			"converter": "convertSpecification"
+			"converter": "convertCareerTalents"
 		},
 		"spellRange": {
 			"path": "system.range.value",
@@ -489,7 +485,7 @@
 			"description": "<p>Персонаж с этим талантом мастер управления расчётом осадных орудий и артиллерийских установок. Персонаж может пройти <strong>Сложную (+0) проверку Лидерства</strong>, чтобы помочь экипажу, обслуживающему орудие с Качеством <em>Расчёт</em> в пределах слышимости. Если персонаж проходит эту проверку, члены расчёта могут использовать навык стрельбы персонажа при использовании орудия.</p>",
 			"tests": "Проверка стрельбы при стрельбе из оружия с недостатком 'Расчёт' "
 		},
-		"Company Commander (Inner Circle)": {
+		"xQ9JREArZkDHi5g0": {
 			"name": "Командир роты (Внутренний круг)",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.FmalmVn3AhtabhMN]{Рыцарь Пантеры}</p>",
 			"careerGroup": "Рыцарь Пантеры",
@@ -497,6 +493,12 @@
 				"Оруженосец",
 				"Большой отряд рыцарей Пантеры или несколько небольших рыцарских отрядов"
 			]
+		},
+		"Isir3duZW3XqMtyU": {
+			"name": "Командир роты (Внутренний круг)",
+			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.pVLlBMBG95DVUGGj]{Рыцарь Белого волка}</p>",
+			"careerGroup": "Рыцарь Белого волка",
+			"trappings": ["Послушник", "Рота рыцарей Белого волка"]
 		},
 		"Command the Legion": {
 			"name": "Командование легионом",
@@ -753,7 +755,7 @@
 			"name": "Порошок Акши",
 			"description": "<p>Сделанный из песков пустыни Нехекхары, пропитанного Акши мастерами @UUID[Compendium.wfrp4e-altdorf.altdorf-journals.9Jv4y9kD1tAiZWnm]{Яркого колледжа} в Альтдорфе - этот порошок либо для очень смелых, либо для очень глупых. Он гораздо взрывоопаснее обычного пороха, но не рассчитанные на это стволы портятся куда быстрее. Любая неуспешная проверка с оценкой 8 или 9 на кубике десяток считается Неудачей при использовании этого порошка.</p>"
 		},
-		"Novice": {
+		"TFBXbxzcvuPcPCY7": {
 			"name": "Послушник",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.pVLlBMBG95DVUGGj]{Рыцарь Белого волка}</p>",
 			"careerGroup": "Рыцарь Белого волка",
@@ -764,6 +766,19 @@
 				"Кавалерийский молот",
 				"Инструменты конюха",
 				"Религиозный символ(Ульрик)"
+			]
+		},
+		"8BFuW6timifRDI3u": {
+			"name": "Послушник",
+			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.azFTHnCxn5nb4c7m]{Рыцарь Сияющего Солнца}</p>",
+			"careerGroup": "Рыцарь Сияющего солнца",
+			"trappings": [
+				"Кожаная куртка",
+				"Кольчужная рубаха",
+				"Верховая лошадь с седлом и сбруей",
+				"Щит",
+				"Инструменты конюха",
+				"Религиозный символ(Мирмидия)"
 			]
 		},
 		"Quarterstaff": {
@@ -852,7 +867,7 @@
 			"name": "Ручная мортира",
 			"description": "<p>Выглядащая как короткий и приземистый @UUID[Compendium.wfrp4e-up-in-arms.items.DQtxITVRh2pd8hxp]{мушкетон}, ручная мортира представляет из себея уменьшенную копию обычной мортиры и предназначена для метания бомб и других подобных зарядов в нужном направлении. Её использование довольно опасно - если засыпать слишком много пороха или неправильно использовать запал бомбы, оружие может эффектно и оглушительно взорватся. Любая Неудача при перезарядке оружия приводит к его взрыву. Однако мортира открывает по-настоящему интересные возможности для готовых рискнуть.</p>"
 		},
-		"Knight": {
+		"ab5Ol9OFI1bgHmbV": {
 			"name": "Рыцарь",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.FmalmVn3AhtabhMN]{Рыцарь Пантеры}</p>",
 			"careerGroup": "Рыцарь Пантеры",
@@ -865,10 +880,27 @@
 				"Кольцо или медальон с эмблемой Пантеры"
 			]
 		},
+		"6snqiJEmmAXtE6lW": {
+			"name": "Рыцарь",
+			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.azFTHnCxn5nb4c7m]{Рыцарь Сияющего солнца}</p>",
+			"careerGroup": "Рыцарь Сияющего солнца",
+			"trappings": [
+				"Дестриэ c седлом и сбруей",
+				"Рукопашное оружие (любое)",
+				"Кавалерийское копьё",
+				"Латный доспех и шлем"
+			]
+		},
+		"BJDcsaKX4rNkOetn": {
+			"name": "Рыцарь",
+			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.pVLlBMBG95DVUGGj]{Рыцарь Белого волка}</p>",
+			"careerGroup": "Рыцарь Белого волка",
+			"trappings": ["Плащ из волчьих шкур", "Дестриэ c седлом и сбруей", "Латный доспех"]
+		},
 		"Knight of the Inner Circle": {
 			"name": "Рыцарь внутреннего круга",
-			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.azFTHnCxn5nb4c7m]{Рыцарь Сияющего Солнца}</p>",
-			"careerGroup": "Рыцарь Сияющего Солнца",
+			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.azFTHnCxn5nb4c7m]{Рыцарь Сияющего солнца}</p>",
+			"careerGroup": "Рыцарь Сияющего солнца",
 			"trappings": [
 				"Большой шлем с эмблемой Солнца",
 				"Оруженосец",
@@ -884,7 +916,7 @@
 		"Knight Commander": {
 			"name": "Рыцарь-командор",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.TpwhRuvLbZT8gpQr]{Вольный рыцарь}</p>",
-			"careerGroup": "Freelance",
+			"careerGroup": "Вольный рыцарь",
 			"trappings": ["Отряд рыцарей", "Оруженосец"]
 		},
 		"Sabre": {
@@ -1043,8 +1075,8 @@
 		},
 		"Hochmeister": {
 			"name": "Хокмейстер",
-			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.azFTHnCxn5nb4c7m]{Рыцарь Сияющего Солнца}</p>",
-			"careerGroup": "Рыцарь Сияющего Солнца",
+			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.azFTHnCxn5nb4c7m]{Рыцарь Сияющего солнца}</p>",
+			"careerGroup": "Рыцарь Сияющего солнца",
 			"trappings": ["Бардинг", "Небольшой отряд рыцарей Сияющего Солнца"]
 		},
 		"Hochland Long Rifle": {

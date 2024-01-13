@@ -19,16 +19,16 @@
 		"contraction": "system.contraction.value",
 		"symptoms": "system.symptoms.value",
 		"permanent": "system.permanent.value",
-		"incubation_value": "system.incubation.value",
-		"incubation_unit": {
+		"incubationValue": "system.incubation.value",
+		"incubationUnit": {
 			"path": "system.incubation.unit",
 			"converter": "convertDuration"
 		},
-		"duration_unit": {
+		"durationUnit": {
 			"path": "system.duration.unit",
 			"converter": "convertDuration"
 		},
-		"hit_location": {
+		"hitLocation": {
 			"path": "system.location.value",
 			"converter": "convertHitLocation"
 		},
@@ -39,17 +39,13 @@
 			"converter": "convertCareerClass"
 		},
 		"trappings": "system.trappings",
-		"skills": {
+		"careerSkills": {
 			"path": "system.skills",
-			"converter": "convertSkill"
+			"converter": "convertCareerSkills"
 		},
-		"talents": {
+		"careerTalents": {
 			"path": "system.talents",
-			"converter": "convertTalent"
-		},
-		"specification": {
-			"path": "system.specification.value",
-			"converter": "convertSpecification"
+			"converter": "convertCareerTalents"
 		},
 		"spellRange": {
 			"path": "system.range.value",
@@ -162,7 +158,7 @@
 			"contraction": "See Common Cold",
 			"symptoms": "Coughs and Sneezes, Fever, Malaise",
 			"permanent": "",
-			"incubation_value": "Instantaneous"
+			"incubationValue": "Instantaneous"
 		},
 		"Absorb": {
 			"name": "Поглощение",
@@ -187,7 +183,7 @@
 			"contraction": "If you fail a Challenging (+0) Endurance Test when exposed to the elements, or when an infected person sneezes or coughs in your immediate vicinity.",
 			"symptoms": "Coughs and Sneezes, Malaise",
 			"permanent": "",
-			"incubation_value": "20+4d10"
+			"incubationValue": "20+4d10"
 		},
 		"Purple Brain Fever": {
 			"name": "Пурпурный менингит",
@@ -195,7 +191,7 @@
 			"contraction": "If you fail an <b>Average (+20) Endurance</b> Test when physical contact is made with an infected individual (at a rate of 1 Test per hour of exposure).",
 			"symptoms": "Blight, Convulsions, Delirium, Fever (Severe), Lingering (Challenging), Swelling (face and head).",
 			"permanent": "",
-			"incubation_value": "1d10"
+			"incubationValue": "1d10"
 		},
 		"Split": {
 			"name": "Разделение",

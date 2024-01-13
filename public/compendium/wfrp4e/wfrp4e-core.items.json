@@ -58,16 +58,16 @@
 		"contraction": "system.contraction.value",
 		"symptoms": "system.symptoms.value",
 		"permanent": "system.permanent.value",
-		"incubation_value": "system.incubation.value",
-		"incubation_unit": {
+		"incubationValue": "system.incubation.value",
+		"incubationUnit": {
 			"path": "system.incubation.unit",
 			"converter": "convertDuration"
 		},
-		"duration_unit": {
+		"durationUnit": {
 			"path": "system.duration.unit",
 			"converter": "convertDuration"
 		},
-		"hit_location": {
+		"hitLocation": {
 			"path": "system.location.value",
 			"converter": "convertHitLocation"
 		},
@@ -78,17 +78,13 @@
 			"converter": "convertCareerClass"
 		},
 		"trappings": "system.trappings",
-		"skills": {
+		"careerSkills": {
 			"path": "system.skills",
-			"converter": "convertSkill"
+			"converter": "convertCareerSkills"
 		},
-		"talents": {
+		"careerTalents": {
 			"path": "system.talents",
-			"converter": "convertTalent"
-		},
-		"specification": {
-			"path": "system.specification.value",
-			"converter": "convertSpecification"
+			"converter": "convertCareerTalents"
 		},
 		"spellRange": {
 			"path": "system.range.value",
@@ -456,7 +452,7 @@
 			"contraction": "При провале проверки стойкости (+40) — её нужно пройти сразу после того, как у персонажа во рту окажется источник заразы.",
 			"symptoms": "Понос (сильный), Слабость, Тошнота",
 			"permanent": "",
-			"incubation_value": "1d10"
+			"incubationValue": "1d10"
 		},
 		"Bandage": {
 			"name": "Бинт",
@@ -2647,7 +2643,7 @@
 			"contraction": "При провале проверки стойкости (+40) — её нужно пройти сразу после того, как у персонажа во рту окажется источник заразы.",
 			"symptoms": "Жар, Осложнения (+0), Понос (очень сильный), Слабость, Тошнота",
 			"permanent": "",
-			"incubation_value": "отсутствует"
+			"incubationValue": "отсутствует"
 		},
 		"Bleeding hand": {
 			"name": "Кровоточащая кисть",
@@ -2663,7 +2659,7 @@
 			"contraction": "В результате травмы или развития какой‑нибудь другой болезни.",
 			"symptoms": "Жар (очень сильный), Летальный исход, Слабость",
 			"permanent": "",
-			"incubation_value": "отсутствует"
+			"incubationValue": "отсутствует"
 		},
 		"Big": {
 			"name": "Крупный",
@@ -2675,7 +2671,7 @@
 			"contraction": "При провале проверки стойкости (+20) после битвы, в которой персонаж был ранен грызуном (или скавеном) с чертой заразное; или при провале проверки стойкости (+40), которую нужно пройти сразу после того, как у персонажа во рту окажется источник заразы.",
 			"symptoms": "Жар, Незаживающая рана, Осложнения (+20), Слабость, Судороги, Сыпь",
 			"permanent": "",
-			"incubation_value": "3d10+5"
+			"incubationValue": "3d10+5"
 		},
 		"Rat Hunter": {
 			"name": "Крысобой",
@@ -2836,7 +2832,7 @@
 			"contraction": "При провале проверки стойкости (+60) после сражения, в котором персонаж получил травму.",
 			"symptoms": "Жар, Незаживающая рана, Осложнения (+0), Слабость",
 			"permanent": "",
-			"incubation_value": "1d10"
+			"incubationValue": "1d10"
 		},
 		"Careful Step": {
 			"name": "Лёгкая поступь",
@@ -3523,7 +3519,7 @@
 			"contraction": "При провале проверки стойкости (+40) после битвы, в которой персонаж был ранен существом, обладающим чертой заразный. Кроме того, нагноение может вызвать лёгкая инфекция или другая болезнь.",
 			"symptoms": "Жар, Незаживающая рана, Осложнения (+0), Слабость",
 			"permanent": "",
-			"incubation_value": "1d10 дней (отсутствует, если появляется в результате развития другого симптома)"
+			"incubationValue": "1d10 дней (отсутствует, если появляется в результате развития другого симптома)"
 		},
 		"Hitman": {
 			"name": "Наёмный убийца",
@@ -5489,7 +5485,7 @@
 			"contraction": "При провале проверки стойкости (+40) после контакта с заражённым животным, его трупом или шкурой.",
 			"symptoms": "Осложнения (+0), Сыпь",
 			"permanent": "",
-			"incubation_value": "1d10"
+			"incubationValue": "1d10"
 		},
 		"Speed of Thought": {
 			"name": "Скорость мысли",
@@ -6001,7 +5997,7 @@
 			"contraction": "При контакте с заражённым индивидом персонаж должен пройти проверку стойкости (+20). Если больной уже начал чихать и кашлять, персонаж должен пройти эту проверку, даже если просто находится рядом, — в этом случае проверку следует проходить хотя бы один раз в час.",
 			"symptoms": "Сыпь, Чихание и кашель",
 			"permanent": "Персонаж, переболевший сыпучей чесоткой, получает к ней полный иммунитет.",
-			"incubation_value": "1d10"
+			"incubationValue": "1d10"
 		},
 		"Sleuth": {
 			"name": "Сыщик",
@@ -6789,7 +6785,7 @@
 			"contraction": "Пока персонаж находится в области, изобилующей чумными блохами, он должен каждый час проходить проверку стойкости (+20) — ему придётся пройти эту проверку хотя бы раз, даже если он провёл в заражённой области меньше часа. Дополнительная проверка требуется всякий раз, когда персонаж непосредственно контактирует с телесными жидкостями больного Чёрной чумой.",
 			"symptoms": "Бубоны, Гангрена, Жар, Летальный исход (вероятный), Слабость",
 			"permanent": "",
-			"incubation_value": "1d10"
+			"incubationValue": "1d10"
 		},
 		"Black Lotus": {
 			"name": "Чёрный лотос",
