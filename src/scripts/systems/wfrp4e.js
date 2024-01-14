@@ -129,6 +129,9 @@ export function init() {
 								let res = re.exec(skills_list[i]);
 								if (res) {
 									let subword = translateValue(res[2].trim(), translatedSkillSpec);
+									if (!subword) {
+										subword = res[2];
+									}
 									let s1 = res[1].trim() + " ()";
 									translItem = game.babele.translate(
 										compData.metadata.id,
@@ -138,7 +141,11 @@ export function init() {
 									let translw = translItem?.name || undefined;
 									if (translw && translw != s1) {
 										let res2 = re.exec(translw);
-										transl = res2[1] + "(" + subword + ")";
+										if (res2) {
+											transl = res2[1] + "(" + subword + ")";
+										} else {
+											transl = res2[1];
+										}
 									} else {
 										s1 = res[1].trim() + " ( )";
 										translItem = game.babele.translate(
@@ -148,7 +155,11 @@ export function init() {
 										);
 										translw = translItem?.name || undefined;
 										let res2 = re.exec(translw);
-										transl = res2[1] + "(" + subword + ")";
+										if (res2) {
+											transl = res2[1] + "(" + subword + ")";
+										} else {
+											transl = res2[1];
+										}
 									}
 								}
 							}
@@ -179,6 +190,9 @@ export function init() {
 								let res = re.exec(talents_list[i]);
 								if (res) {
 									let subword = translateValue(res[2].trim(), translatedTalentSpec);
+									if (!subword) {
+										subword = res[2];
+									}
 									let s1 = res[1].trim();
 									translItem = game.babele.translate(
 										compData.metadata.id,
@@ -212,7 +226,6 @@ export function init() {
 
 			convertActorItems: (actor_items, translations) => {
 				if (!actor_items) {
-					console.log("No traits found here ...");
 					return actor_items;
 				}
 				for (let item_en of actor_items) {
@@ -220,7 +233,7 @@ export function init() {
 					let nbt = "";
 					let name_en = item_en.name.trim();
 					if (!item_en.name || item_en.name.length == 0) {
-						console.log("Wrong item name found!");
+						console.log("WARNING: Wrong item name found!");
 						continue;
 					}
 					if (item_en.type == "trait") {
@@ -325,7 +338,6 @@ export function init() {
 							let item_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
 							if (item_ru?.system) {
 								item_ru.name = item_ru.name || name_en;
-								//DEBUG : console.log(">>>>> Spell ?", name_en, special, item_ru.name );
 								item_en.name = item_ru.name + special;
 								if (item_ru.system?.description?.value) {
 									item_en.system.description.value = item_ru.system.description.value;
@@ -379,11 +391,9 @@ export function init() {
 									item_en.system.tests.value = item_ru.system.tests.value;
 								}
 
-								if (item_ru.name && (item_ru.name == "Sprinter" || item_ru.name != name_en)) {
-									// Talent translated!
+								if (item_ru.name && (item_ru.name == "Бегун" || item_ru.name != name_en)) {
 									item_en.name = item_ru.name.trim() + special;
 									if (item_ru.system?.description?.value) {
-										// Why ???
 										item_en.system.description.value = item_ru.system.description.value;
 									}
 								}
@@ -394,13 +404,20 @@ export function init() {
 						let validCompendiums = game.wfrp4e.tags.getPacksWithTag("career");
 						for (let compData of validCompendiums) {
 							let career_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
+
 							if (career_ru?.system) {
 								item_en.name = career_ru.name || item_en.name;
-								item_en.system = duplicate(career_ru.system);
+								//item_en.system = duplicate(career_ru.system);
 								break;
 							}
 						}
-					} else {
+					} else if (
+						item_en.type == "trapping" ||
+						item_en.type == "weapon" ||
+						item_en.type == "armour" ||
+						item_en.type == "container" ||
+						item_en.type == "money"
+					) {
 						let validCompendiums = game.wfrp4e.tags.getPacksWithTag(
 							["trapping"],
 							["weapon", "armour", "container", "money"]
@@ -412,7 +429,6 @@ export function init() {
 								true
 							);
 							if (trapping_ru?.system) {
-								//console.log(">>>>> Trapping ?", name_en, trapping_ru.name);
 								item_en.name = trapping_ru.name || item_en.name;
 								if (trapping_ru.system?.description?.value) {
 									item_en.system.description.value = trapping_ru.system.description.value;
@@ -422,7 +438,7 @@ export function init() {
 						}
 					}
 				}
-				//console.log(">>>>>>>><OUTPUT", actor_items);
+
 				return actor_items;
 			}
 		});
