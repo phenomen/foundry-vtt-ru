@@ -294,7 +294,7 @@ export const translatedGender = {
 	Female: "Женский"
 };
 
-export const translatedSpecie = {
+export const translatedSpecies = {
 	"Human": "Различный",
 	"Dwarf": "Гном",
 	"Elf": "Эльф",

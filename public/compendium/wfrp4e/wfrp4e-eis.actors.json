@@ -8,9 +8,8 @@
 			"path": "items",
 			"converter": "convertActorItems"
 		},
-		"details": {
-			"path": "system.details",
-			"converter": "convertActorDetails"
-		}
+		"species": { "path": "system.details.species.value", "converter": "convertActorSpecies" },
+		"gender": { "path": "system.details.gender.value", "converter": "convertActorGender" },
+		"careerclass": { "path": "system.details.class.value", "converter": "convertActorCareerClass" }
 	}
 }
