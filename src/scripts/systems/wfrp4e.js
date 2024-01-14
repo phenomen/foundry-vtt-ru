@@ -144,7 +144,7 @@ export function init() {
 										if (res2) {
 											transl = res2[1] + "(" + subword + ")";
 										} else {
-											transl = res2[1];
+											break;
 										}
 									} else {
 										s1 = res[1].trim() + " ( )";
@@ -158,7 +158,7 @@ export function init() {
 										if (res2) {
 											transl = res2[1] + "(" + subword + ")";
 										} else {
-											transl = res2[1];
+											break;
 										}
 									}
 								}
