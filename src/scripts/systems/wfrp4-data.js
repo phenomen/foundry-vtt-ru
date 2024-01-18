@@ -6,6 +6,7 @@ export const translatedSkillSpec = {
 	"Alchemist": "алхимик",
 	"Alcohol": "алкоголь",
 	"Altdorf": "Альтдорф",
+	"Ambosstein": "Амбосштайн",
 	"Anatomy": "анатомия",
 	"Animals": "животные",
 	"Any Chaos": "любая школа Хаоса",
@@ -70,6 +71,7 @@ export const translatedSkillSpec = {
 	"Dancing": "танец",
 	"Dark Magic": "Тёмная магия",
 	"Dark tongue": "тёмное наречие",
+	"Dark Tongue": "тёмное наречие",
 	"Demigryph": "демигрифы",
 	"Demigryph": "демигрифы",
 	"Dhar": "Дхар",
@@ -132,6 +134,7 @@ export const translatedSkillSpec = {
 	"Local": "местность",
 	"Lute": "лютня",
 	"Lyre": "лира",
+	"Magic": "магия",
 	"Magick": "магия",
 	"Mason": "каменщик",
 	"Medicine": "медицина",
@@ -145,6 +148,7 @@ export const translatedSkillSpec = {
 	"Necromancy": "некромантия",
 	"Nehekhara": "Нехекхара",
 	"Nehekharan": "нехекхарский",
+	"Nobles": "дворяне",
 	"Norse": "норс",
 	"Nuln": "Нульн",
 	"Painting": "живопись",
@@ -153,6 +157,8 @@ export const translatedSkillSpec = {
 	"Philosophy": "философия",
 	"Pigeon": "голуби",
 	"Plants": "растения",
+	"Playwriting": "драматургия",
+	"Poetry": "поэзия",
 	"Poison": "яды",
 	"Poisoner": "отравитель",
 	"Poisons": "яд",
@@ -197,6 +203,8 @@ export const translatedSkillSpec = {
 	"Taunt": "подначки",
 	"Taxes": "налоги",
 	"The Empire": "Империя",
+	"the Empire": "Империя",
+	"the Arts": "искусство",
 	"Theology": "теология",
 	"Thief": "воры",
 	"Thieves Tongue": "воровской арго",
@@ -218,10 +226,12 @@ export const translatedSkillSpec = {
 	"Various": "различное",
 	"Vintner": "винодел",
 	"Violin": "скрипка",
+	"Virginal": "вёрджинел",
 	"Vision": "зрение",
 	"Warfare": "военное дело",
 	"Wastelander": "вестерландский",
 	"Weaving": "ткачество",
+	"Wissenland": "Виссенланд",
 	"Witches": "ведьмы",
 	"Wolfship": "волчьи корабли",
 	"Wrecks": "кораблекрушения",
@@ -255,6 +265,7 @@ export const translatedTalentSpec = {
 	"Chaos": "Школа Хаоса",
 	"Choose one": "выберите одно",
 	"Choose two": "выберите два",
+	"Claws": "когти",
 	"Coastal": "побережья",
 	"Criminals": "преступники",
 	"Cultists": "духовенство",
@@ -307,6 +318,7 @@ export const translatedTalentSpec = {
 	"Mount": "верховой",
 	"Necromancy": "Школа Некромантии",
 	"Nobles": "дворяне",
+	"nobles": "дворяне",
 	"Nurgle": "Школа Нургла",
 	"Orcs and Goblins": "орки и гоблины",
 	"Outlaws": "разбойники",
@@ -316,6 +328,7 @@ export const translatedTalentSpec = {
 	"Rats": "крысы",
 	"Ratte Fever": "крысиная лихорадка",
 	"Riverwardens": "речные стражники",
+	"Rivals": "соперники",
 	"Road Wardens": "дорожные стражники",
 	"Rocky": "горы",
 	"Scales": "чешуя",
@@ -590,7 +603,8 @@ export const translatedSpellDuration = {
 };
 
 export const translatedSpellDamage = {
-	"Willpower Bonus": "Рейтинг силы воли"
+	"Willpower Bonus": "Рейтинг силы воли",
+	"Toughness Bonus": "Рейтинг выносливости"
 };
 
 export const translatedGods = {
