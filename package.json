@@ -8,14 +8,13 @@
 		"process:test": "node process-test.js",
 		"build": "pnpm process:build",
 		"test": "pnpm process:build && pnpm process:test",
-		"release": "pnpm process:bump && pnpm process:build && pnpm process:zip",
+		"release": "pnpm process:build && pnpm process:zip",
 		"format:check": "prettier --check .",
 		"format": "prettier --write ."
 	},
 	"type": "module",
 	"devDependencies": {
 		"archiver": "^6.0.1",
-		"bumpp": "^9.3.0",
 		"dotenv": "^16.3.1",
 		"prettier": "^3.2.4",
 		"vite": "^5.0.11"
