@@ -6,13 +6,43 @@
 
 /* 3.0 */
 
+.dnd5e2.sheet.actor.character .ability-scores .ability-score .label {
+	font-weight: 600;
+}
+
 .dnd5e2 .name-stacked .title {
-	font-size: var(--font-size-11);
+	font-size: var(--text-sm);
 	font-weight: 600;
 }
 
 .dnd5e2 dnd5e-effects .conditions-list .condition .name-stacked .title {
-	font-size: var(--font-size-11);
+	font-size: var(--text-sm);
+}
+
+.dnd5e2.sidebar-heading h2 {
+	font-size: var(--text-sm);
+}
+
+.dnd5e2.sheet.actor.character .sheet-body .skills .name,
+.dnd5e2.sheet.actor.character .sheet-body .tools .name,
+.dnd5e2.sheet.actor.character .sheet-body .saves .name {
+	font-size: var(--text-sm);
+}
+
+.dnd5e2 .card .info > div .label {
+	white-space: nowrap;
+}
+
+.dnd5e2 .items-section .items-header .item-school,
+.dnd5e2 .items-section .item .item-school,
+.dnd5e2 .items-section .items-header .item-usage,
+.dnd5e2 .items-section .item .item-usage,
+.dnd5e2 .items-section .items-header .item-roll,
+.dnd5e2 .items-section .items-header .item-detail,
+.dnd5e2 .items-section .items-header .item-header,
+.dnd5e2 .items-section .item .item-header {
+	font-size: var(--font-size-10);
+	font-weight: 600;
 }
 
 /* 2.0 */

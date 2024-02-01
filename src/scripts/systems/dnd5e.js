@@ -58,6 +58,41 @@ export function init() {
 		});
 
 		game.settings.set("babele", "showOriginalName", true);
+
+		Babele.get().registerConverters({
+			dndpages(pages, translations) {
+				return pages.map((data) => {
+					if (!translations) {
+						return data;
+					}
+
+					let translation;
+
+					if (Array.isArray(translations)) {
+						translation = translations.find((t) => t.id === data._id || t.id === data.name);
+					} else {
+						translation = translations[data.name];
+					}
+
+					if (!translation) {
+						return data;
+					}
+
+					return mergeObject(data, {
+						name: translation.name,
+						image: { caption: translation.caption ?? data.image?.caption },
+						src: translation.src ?? data.src,
+						text: { content: translation.text ?? data.text?.content },
+						video: {
+							width: translation.width ?? data.video?.width,
+							height: translation.height ?? data.video?.height
+						},
+						system: translation.system ?? data.system,
+						translated: true
+					});
+				});
+			}
+		});
 	} else {
 		if (game.settings.get("ru-ru", "compendiumTranslation")) {
 			new Dialog({
