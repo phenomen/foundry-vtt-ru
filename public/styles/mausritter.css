@@ -1,0 +1,87 @@
+@font-face {
+	font-family: "Futura PT Book";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Futura PT Bold";
+	font-style: normal;
+	font-weight: bold;
+	src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Futura PT Cond Medium";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/Fira_Sans_Extra_Condensed/FiraSansExtraCondensed-Medium.ttf")
+		format("truetype");
+}
+
+@font-face {
+	font-family: "Futura PT Cond Bold";
+	font-style: normal;
+	font-weight: bold;
+	src: url("../fonts/Fira_Sans_Extra_Condensed/FiraSansExtraCondensed-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Moyenage";
+	src: url("../fonts/Moyenage.ttf") format("truetype");
+}
+
+.item-control .item-create,
+.item-slot-footer .mausritter .item-slot-footer {
+	font-family: "Montserrat";
+	font-weight: 600;
+	font-size: 11px;
+}
+
+.mausritter .tab-select,
+.mausritter .current-max-label,
+.mausritter .minmax-input,
+.mausritter .minmaxtext,
+.mausritter .littleLabel,
+.mausritter .bigLabel,
+.mausritter .headerinputtext,
+.mausritter .headerinputfield,
+.mausritter .rollcontainer,
+.mausritter .rollattribute,
+.mausritter .roll-target,
+.mausritter .roll-damage,
+.mausritter .item-bag-text,
+.mausritter .item-slot-header,
+.mausritter .item-card-header,
+.mausritter .item-card-header-noborder,
+.mausritter .item-card-damage,
+.mausritter .item-card-field-container,
+.mausritter .sheet-header-maus h1.charname,
+.mausritter .sheet-header-maus .resource-label,
+.mausritter .tabs .item {
+	font-family: "Moyenage";
+}
+
+.mausritter .littleLabel {
+	font-size: var(--text-base);
+}
+
+.mausritter .headerinputtext {
+	font-size: var(--text-base);
+	margin-top: 4px;
+}
+
+.mausritter .blockborder {
+	background: linear-gradient(
+		90deg,
+		rgba(221, 221, 221, 1) 0%,
+		rgba(221, 221, 221, 1) 39%,
+		rgba(255, 255, 255, 1) 20%,
+		rgba(255, 255, 255, 1) 100%
+	);
+}
+
+.mausritter .minmaxtext {
+	margin-left: 2px;
+}
