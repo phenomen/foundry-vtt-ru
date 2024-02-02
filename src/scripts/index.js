@@ -65,6 +65,7 @@ Hooks.once("init", async () => {
 		"dungeonworld",
 		"forbidden-lands",
 		"investigator",
+		"mausritter",
 		"mouseguard",
 		"pbta",
 		"pf1",
