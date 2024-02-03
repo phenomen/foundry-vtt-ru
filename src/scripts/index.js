@@ -51,6 +51,20 @@ Hooks.once("init", async () => {
 		}
 	});
 
+	/* Настройка шрифта для подписей на сцене */
+	game.settings.register("ru-ru", "displayAdjectiveControls", {
+		name: "Отображение переключателя рода случайных прилагательных",
+		hint: "Если вы используете функцию добавления случайных прилагательных к токенам, вы можете добавить переключатель рода на панель инструментов.",
+		type: Boolean,
+		default: false,
+		scope: "world",
+		config: true,
+		restricted: true,
+		onChange: (value) => {
+			window.location.reload();
+		}
+	});
+
 	CONFIG.canvasTextStyle.fontFamily = Object.keys(CONFIG.fontDefinitions)[
 		game.settings.get("ru-ru", "sceneLabelFont")
 	];
@@ -89,10 +103,11 @@ Hooks.once("init", async () => {
 });
 
 /* Выбор пола для случайных прилагательных */
+
 Hooks.on("getSceneControlButtons", getSceneControlButtons);
 
 function getSceneControlButtons(controls) {
-	if (game.version.startsWith("11") && game.user.isGM) {
+	if (game.user.isGM && game.settings.get("ru-ru", "displayAdjectiveControls")) {
 		const tokens = controls.find((c) => c.name === "token");
 
 		tokens.tools.push({
