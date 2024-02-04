@@ -40,14 +40,12 @@
 }
 
 .mausritter .tab-select,
-.mausritter .current-max-label,
 .mausritter .minmax-input,
 .mausritter .minmaxtext,
 .mausritter .littleLabel,
 .mausritter .bigLabel,
 .mausritter .headerinputtext,
 .mausritter .headerinputfield,
-.mausritter .rollcontainer,
 .mausritter .rollattribute,
 .mausritter .roll-target,
 .mausritter .roll-damage,
@@ -59,12 +57,43 @@
 .mausritter .item-card-field-container,
 .mausritter .sheet-header-maus h1.charname,
 .mausritter .sheet-header-maus .resource-label,
-.mausritter .tabs .item {
+.mausritter .tabs .item,
+.mausritter .rollcontainer {
 	font-family: "Moyenage";
 }
 
-.mausritter .littleLabel {
+.mausritter .littleLabel,
+.mausritter .item-card-header-noborder,
+.mausritter .item-card-header,
+.mausritter .item-card-damage {
 	font-size: var(--text-base);
+}
+
+.mausritter .creaturedescription {
+	font-family: var(--font-fancy);
+	font-weight: 600;
+}
+
+.mausritter .rollcontainer .body {
+	font-family: var(--font-fancy);
+}
+
+.mausritter .rollcontainer h2 {
+	font-weight: 700;
+}
+
+.mausritter .rollmods {
+	font-family: var(--font-fancy);
+	font-size: var(--text-sm);
+	font-weight: 700;
+}
+
+.mausritter .item-card-tag {
+	color: rgb(22, 22, 22);
+	font-weight: 500;
+	background: rgba(255, 255, 255, 0.5);
+	font-size: var(--text-xs);
+	font-family: var(--font-sans-condensed);
 }
 
 .mausritter .headerinputtext {
@@ -84,4 +113,24 @@
 
 .mausritter .minmaxtext {
 	margin-left: 2px;
+}
+
+.mausritter .item-card-desc,
+.mausritter .item-card-clear,
+.mausritter .item-card-clear-text,
+.mausritter .current-max-label {
+	font-family: var(--font-sans-condensed);
+	font-size: var(--text-xs);
+}
+
+.mausritter .item-card-clear {
+	font-weight: 600;
+}
+
+.directory .directory-item img {
+	background-color: white;
+}
+.mausritter .rollweaponh1,
+.mausritter .rollh1 {
+	font-size: var(--text-2xl);
 }

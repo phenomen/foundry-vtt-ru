@@ -1,7 +1,23 @@
 {
+    "TYPES": {
+		"Actor": {
+			"character": "Мышь",
+			"hireling": "Подёнщик",
+			"creature": "Существо",
+			"storage": "Хранилище"
+		},
+		"Item": {
+			"item": "Предмет",
+			"weapon": "Оружие",
+			"armor": "Броня",
+			"storage": "Хранилище",
+			"condition": "Состояние",
+			"spell": "Заклинание"
+		}
+	},
     "Maus.ActorName" : "Имя",
     "Maus.ActorBackground" : "Происхождение",
-    "Maus.ActorWants" : "Желания",
+    "Maus.ActorWants" : "Желает",
     "Maus.ActorDisposition" : "Склонности",
     "Maus.ActorType" : "Тип",
     "Maus.ActorSign" : "Знак",
@@ -27,7 +43,7 @@
     "Maus.Notes" : "Заметки",
     "Maus.Storage" : "Хранилище",
     "Maus.Options" : "Настройки",
-
+    
     "Maus.InventoryCarried" : "В лапах: можно использовать",
     "Maus.InventoryWorn" : "Надетое: можно быстро подготовить",
     "Maus.InventoryPack" : "В мешке: чтобы подготовить, нужно время. Если мышь сражается, то, чтобы достать, требуется действие.",
@@ -39,18 +55,18 @@
     "Maus.InventoryBody" : "Тело",
     "Maus.InventoryAttack1" : "Атака #1",
     "Maus.InventoryAttack2" : "Атака #2",
-    "Maus.CardClear" : "Способ избавиться",
+    "Maus.CardClear" : "Избавиться",
     "Maus.OptionsWidth" : "Ширина",
     "Maus.OptionsHeight" : "Высота",
 
     "Maus.ItemWorth" : "Цена",
     "Maus.ItemCurrentUsage" : "Износ",
     "Maus.ItemMaxUsage" : "Макс. износ",
-    "Maus.ItemTag" : "Тэг",
+    "Maus.ItemTag" : "Свойство",
     "Maus.ItemArmor" : "Броня",
     "Maus.ItemWidth" : "Ширина",
     "Maus.ItemHeight" : "Высота",
-    "Maus.ItemClear" : "Избавиться",
+    "Maus.ItemClear" : "Способ избавиться",
     "Maus.ItemColor" : "Цвет",
     "Maus.ItemDescription" : "Описание",
     "Maus.ItemDamage" : "Урон",
@@ -72,13 +88,13 @@
     "Maus.RollNormal" : "Обычный",
     "Maus.RollEnhanced" : "Усилена",
     "Maus.RollImpaired" : "Ослаблена",
-    "Maus.RollPowerDesc" : "Сколько мощи?",
-    "Maus.RollSum" : "Всего",
-    "Maus.RollDice" : "Кость",
-    "Maus.RollUsage" : "Износ",
+    "Maus.RollPowerDesc" : "Вложено мощи",
+    "Maus.RollSum" : "Сумма",
+    "Maus.RollDice" : "Мощь",
+    "Maus.RollUsage" : "Применения",
     "Maus.RollDamage" : "Урон",
     "Maus.RollTarget" : "Цель",
-    "Maus.RollAD" : "Пр/Пм",
+    "Maus.RollAD" : "Прм/Пмх",
     "Maus.RollMiscast" : "Ошибка",
     "Maus.RollMiscastDesc" : "Получите [[/r !miscast!d6]] урона. Затем сделайте спасбросок воли. Если проверка оказалась неудачной, то получите состояние «Опустошён»."
 }
