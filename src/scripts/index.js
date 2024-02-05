@@ -13,7 +13,7 @@ Hooks.once("init", async () => {
 	systemCSS.href = `/modules/ru-ru/styles/${system}.css`;
 	document.head.appendChild(systemCSS);
 
-	console.log("ADDED STYLE FOR SYSTEM: " + system);
+	//console.log("ADDED STYLE FOR SYSTEM: " + system);
 
 	/* Пол прилагательных по умолчанию */
 	CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
