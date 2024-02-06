@@ -28,7 +28,7 @@ export function init() {
 	});
 
 	/* Регистрация Babele */
-	if (typeof Babele !== "undefined") {
+	if (typeof Babele !== "undefined" && game.settings.get("ru-ru", "compendiumTranslation")) {
 		Babele.get().register({
 			module: "ru-ru",
 			lang: "ru",
