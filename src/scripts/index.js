@@ -2,7 +2,7 @@ import "../styles/_main.css";
 import "../styles/_fonts.css";
 import "../styles/_custom.css";
 
-import { Dnd5eAltInit } from "./systems/dnd5e-alt.js";
+import { init as DND5E } from "./systems/dnd5e.js";
 
 Hooks.once("init", async () => {
 	const system = game.system.id.toLowerCase();
@@ -53,7 +53,7 @@ Hooks.once("init", async () => {
 
 	/* Настройка шрифта для подписей на сцене */
 	game.settings.register("ru-ru", "displayAdjectiveControls", {
-		name: "Отображение переключателя рода случайных прилагательных",
+		name: "Переключатель рода случайных прилагательных",
 		hint: "Если вы используете функцию добавления случайных прилагательных к токенам, вы можете добавить переключатель рода на панель инструментов.",
 		type: Boolean,
 		default: false,
@@ -74,7 +74,6 @@ Hooks.once("init", async () => {
 		"city-of-mist",
 		"coc7",
 		"deltagreen",
-		"dnd5e",
 		"dragonbane",
 		"dungeonworld",
 		"forbidden-lands",
@@ -89,8 +88,9 @@ Hooks.once("init", async () => {
 	];
 
 	/* Загрузка системных скриптов */
-	if (systems.includes(system)) {
-		if (system === "dnd5e") Dnd5eAltInit(); // This code need load synchronously! Any modularization is denied!
+	if (system === "dnd5e") {
+		DND5E(); // Статический импорт для работы альтернативного перевода
+	} else if (systems.includes(system)) {
 		(await import(`./systems/${system}.js`))?.init();
 	}
 

@@ -13,9 +13,10 @@ const config = {
 		emptyOutDir: true,
 		sourcemap: false,
 		brotliSize: true,
+		warnExternalChunkRender: false,
 		lib: {
 			name: mod,
-			entry: path.resolve(__dirname, "src/index.js"),
+			entry: path.resolve(__dirname, "src/scripts/index.js"),
 			formats: ["es"],
 			fileName: mod
 		},

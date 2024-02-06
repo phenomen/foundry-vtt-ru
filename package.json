@@ -4,7 +4,7 @@
 	"scripts": {
 		"build": "vite build",
 		"test": "vite build && pnpm process:test",
-		"release": "bumpp && vite build && pnpm process:pack",
+		"release": "bumpp --no-push --no-commit --no-tag && vite build && pnpm process:pack",
 		"format:check": "prettier --check .",
 		"format": "prettier --write .",
 		"process:pack": "node process-pack.js",
@@ -15,7 +15,7 @@
 		"archiver": "^6.0.1",
 		"bumpp": "^9.3.0",
 		"dotenv": "^16.4.1",
-		"prettier": "^3.2.4",
+		"prettier": "^3.2.5",
 		"vite": "^5.0.12"
 	}
 }

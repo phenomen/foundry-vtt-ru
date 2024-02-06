@@ -1,9 +1,12 @@
 export function init() {
-	/* Уведомление выбора перевода */
-	game.settings.register("ru-ru", "altTranslationSelected", {
+	/* Выбор источника перевода */
+	game.settings.register("ru-ru", "altTranslation", {
+		name: "(D&D5E) Альтернативный перевод",
+		hint: "(Требуется модуль libWrapper) Использовать альтернативный перевод D&D5E от Phantom Studio. Иначе будет использоваться официальный перевод издательства Hobby World.",
 		type: Boolean,
 		default: false,
 		scope: "world",
+		config: true,
 		restricted: true,
 		onChange: (value) => {
 			window.location.reload();
@@ -12,8 +15,8 @@ export function init() {
 
 	/* Настройка Babele */
 	game.settings.register("ru-ru", "compendiumTranslation", {
-		name: "Перевод библиотек",
-		hint: "(Требуется модуль Babele) Некоторые библиотеки системы D&D5e будут переведены.",
+		name: "(D&D5E) Перевод библиотек",
+		hint: "(Требуется модуль Babele) Некоторые библиотеки системы D&D5E будут переведены.",
 		type: Boolean,
 		default: true,
 		scope: "world",
@@ -23,29 +26,6 @@ export function init() {
 			window.location.reload();
 		}
 	});
-
-	if (!game.settings.get("ru-ru", "altTranslationSelected")) {
-		new Dialog({
-			title: "Выбор перевода",
-			content: `<p>Выберите предпочитаемый перевод системы D&D5. Вы можете изменить это позже в настройках модуля</p>`,
-			buttons: {
-				hw: {
-					label: "Hobby World",
-					callback: () => {
-						game.settings.set("ru-ru", "altTranslation", false);
-						game.settings.set("ru-ru", "altTranslationSelected", true);
-					}
-				},
-				ph: {
-					label: "Phantom Studio",
-					callback: () => {
-						game.settings.set("ru-ru", "altTranslation", true);
-						game.settings.set("ru-ru", "altTranslationSelected", true);
-					}
-				}
-			}
-		}).render(true);
-	}
 
 	/* Регистрация Babele */
 	if (typeof Babele !== "undefined") {
@@ -58,6 +38,27 @@ export function init() {
 		});
 
 		game.settings.set("babele", "showOriginalName", true);
+
+		if (game.settings.get("ru-ru", "altTranslation")) {
+			if (typeof libWrapper === "function") {
+				libWrapper.register(
+					"ru-ru",
+					"Localization.prototype._getTranslations",
+					loadAltTranslation,
+					"WRAPPER"
+				);
+			} else {
+				new Dialog({
+					title: "Альтернативный перевод",
+					content: `<p>Для использования альтернативного перевода требуется активировать модуль <b>libWrapper</b></p>`,
+					buttons: {
+						done: {
+							label: "Хорошо"
+						}
+					}
+				}).render(true);
+			}
+		}
 
 		Babele.get().registerConverters({
 			dndpages(pages, translations) {
@@ -97,7 +98,7 @@ export function init() {
 		if (game.settings.get("ru-ru", "compendiumTranslation")) {
 			new Dialog({
 				title: "Перевод библиотек",
-				content: `<p>Для перевода библиотек системы D&D5 требуется активировать модуль <b>Babele</b>. Вы можете отключить перевод библиотек в настройках модуля</p>`,
+				content: `<p>Для перевода библиотек системы D&D5E требуется активировать модуль <b>Babele</b>. Вы можете отключить перевод библиотек в настройках модуля</p>`,
 				buttons: {
 					done: {
 						label: "Хорошо"
@@ -123,7 +124,7 @@ export function init() {
 
 		const updateAAButton = $(`
   <label>
-    Перед переводом анимаций требуется включить модули Automated Animations, D&D5e Animations, JB2A Patreon
+    Перед переводом анимаций требуется включить модули Automated Animations, D&D5E Animations, JB2A Patreon
   </label>
   <div class="form-group">
       <button type="button">
@@ -139,6 +140,35 @@ export function init() {
 
 		lastMenuSetting.after(updateAAButton);
 	});
+}
+
+/* Загрузка JSON с альтернативным переводом */
+async function loadAltTranslation(wrapped, lang) {
+	const translations = await wrapped(lang);
+
+	const files = [
+		"modules/ru-ru/i18n/systems/dnd5e-alt.json",
+		"modules/ru-ru/i18n/modules/always-hp-alt.json",
+		"modules/ru-ru/i18n/modules/arbron-hp-bar-alt.json",
+		"modules/ru-ru/i18n/modules/combat-utility-belt-alt.json",
+		"modules/ru-ru/i18n/modules/dae-alt.json",
+		"modules/ru-ru/i18n/modules/damage-log-alt.json",
+		"modules/ru-ru/i18n/modules/health-monitor-alt.json",
+		"modules/ru-ru/i18n/modules/midi-qol-alt.json",
+		"modules/ru-ru/i18n/modules/tidy5e-sheet-alt.json",
+		"modules/ru-ru/i18n/modules/token-action-hud-dnd5e-alt.json",
+		"modules/ru-ru/i18n/modules/ready-set-roll-5e-alt.json"
+	];
+
+	const promises = files.map((file) => this._loadTranslationFile(file));
+
+	await Promise.all(promises);
+	for (let p of promises) {
+		let altJson = await p;
+		foundry.utils.mergeObject(translations, altJson, { inplace: true });
+	}
+
+	return translations;
 }
 
 async function updateAA() {
