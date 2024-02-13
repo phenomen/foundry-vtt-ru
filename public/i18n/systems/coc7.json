@@ -834,7 +834,7 @@
   "CoC7.EmptySkillList": "Добавьте навык, закинув его сюда.",
   "CoC7.EmptyItemList": "Добавьте предмет, закинув его сюда.",
   "CoC7.EmptyCharacterSkillList": "Добавьте настройку, род занятий или навык, закинув его сюда.",
-  "CoC7.PersonalSpeciality": "Количество специальностей личности или эпохи",
+  "CoC7.PersonalSpecialityPlaceholder": "other skill(s) as personal or era specialties",
   "CoC7.AdditionalSkills": "Доп. навыки",
   "CoC7.SkillSelectionWindow": "Выберите опциональные навыки",
   "CoC7.SelectPersonalSkills": "Выберите {number} навык(ы) в качестве личных навыков",
@@ -1188,6 +1188,8 @@
   "SETTINGS.ChaseShowTokenMovementHint": "Показывать движение токена по сетке, когда он перемещается в новое место.",
   "SETTINGS.UseContextMenus": "Использование контекстных меню",
   "SETTINGS.UseContextMenusHint": "[ЭКСПЕРИМЕНТАЛЬНО] Используйте контекстные меню для проверок вместо комбинации клавиш.",
+  "SETTINGS.SceneDistanceNotCalcualtedNoError": "Don't show error for ranged distance",
+  "SETTINGS.SceneDistanceNotCalcualtedNoErrorHint": "When starting a ranged combat if playing theatre of the mind do not show the unable to calculate distance message.",
 
   "CoC7.getTheExample": "Пример Копии",
   "CoC7.Copied": "Копирование текста примера в буфер обмена",
@@ -1291,5 +1293,12 @@
   "CoC7.CoCIDFlag.error.documents-not-found": "В в мире или библиотеках не были найдены документы, соответствующие CoC ID ({cocids}), языку \"{lang}\" и эпохе \"{era}\". Пожалуйста, проверьте выставленную эпоху в настройках мира.",
 
   "CoC7.CoCIDBatch.title": "Batch set System ID (CoC ID)",
-  "CoC7.CoCIDBatch.summary": "В систему CoC7 введен системный идентификатор (CoC ID). Это позволяет системе идентифицировать документы FoundryVTT. Например, навыки. Эта страница позволит вам установить идентификатор для существующих документов {type}. Системный идентификатор должен использовать перевод названия на английский язык для поддержки локализации на всех языках."
+  "CoC7.CoCIDBatch.summary": "В систему CoC7 введен системный идентификатор (CoC ID). Это позволяет системе идентифицировать документы FoundryVTT. Например, навыки. Эта страница позволит вам установить идентификатор для существующих документов {type}. Системный идентификатор должен использовать перевод названия на английский язык для поддержки локализации на всех языках.",
+
+  "CoC7.TokenCreationRoll.Title": "Rollable detected",
+  "CoC7.TokenCreationRoll.Prompt": "This token has rollables characteristics or skills.<br>What do you want to do ?",
+  "CoC7.TokenCreationRoll.ButtonRoll": "Roll all",
+  "CoC7.TokenCreationRoll.ButtonAverage": "Average all",
+
+  "CoC7.RealRollDecaderPlaceholderName": "10's"
 }
