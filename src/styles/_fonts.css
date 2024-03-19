@@ -10,10 +10,6 @@
 	--font-cursive: "Marck Script", "Lucida Handwriting", cursive;
 	--font-sci-fi: "OCR-A", monospace;
 
-	--font-h1: var(--font-fancy);
-	--font-h2: var(--font-serif);
-	--font-body: var(--font-sans);
-
 	--text-xs: 0.8rem;
 	--text-sm: 0.85rem;
 	--text-base: 1rem;
@@ -489,6 +485,11 @@
 @font-face {
 	font-family: "Jim Nightshade";
 	src: url("./fonts/MarckScript.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Bruno Ace";
+	src: url("./fonts/Ocra.otf") format("opentype");
 }
 
 .nodesto,

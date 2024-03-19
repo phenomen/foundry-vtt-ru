@@ -391,7 +391,7 @@
 "CONTROLS.WallSecretHiddenP": "скрытые двери не видны игрокам",
 "CONTROLS.WallSelect": "Инструмент выделения стен",
 "CONTROLS.CommonMoveWithoutSnapping": "Перемещение без прикрепления",
-"CONTROLS.WallSelectEdit": "<span class=\"reference\">двойной щелчок</span> по точке стены",
+"CONTROLS.WallSelectEdit": "<span class=\"reference\">двойной щелчок</span>",
 "CONTROLS.WallSnap": "Прикрепление к сетке",
 "CONTROLS.WallSnapH": "Прикрепление",
 "CONTROLS.WallSnapP": "Если активно, то точки стены будут прикрепляться к ближайшим углам сетки.",
@@ -806,6 +806,7 @@
 "EDITOR.Save": "Сохранение изменений",
 "EDITOR.SaveAndClose": "Сохранить и закрыть",
 "EDITOR.DiscardHTML": "Сброс изменений HTML",
+"EDITOR.EmbedFailed": "Не удалось встроить содержимое '{uuid}'.",
 "EDITOR.EditingHTMLWarning": "Другой участник сейчас редактирует тот же документ. Любые сделанные вами изменения в HTML отменять изменения другого участника.",
 "EDITOR.Resync": "Ваш редактор был рассинхронизирован с сервером и должен быть сброшен. Содержимое вашего редактора было скопировано в буфер.",
 "EDITOR.NoUploadPermission": "Вам требуются права на загрузку файлов для вставки изображения.",
@@ -1210,7 +1211,6 @@
 "PLAYERS.PlayerAvatar": "Аватар игрока",
 "PLAYERS.PlayerPronouns": "Местоимения",
 "PLAYERS.PullToScene": "Перемещение на сцену",
-"PLAYERS.SaveConfig": "Сохранение настроек",
 "PLAYERS.ViewAvatar": "Просмотр аватара",
 "PLAYERS.Kick": "Выгнать игрока",
 "PLAYERS.Ban": "Заблокировать игрока",
@@ -1326,8 +1326,10 @@
 "SCENES.GridStyle": "Стиль сетки",
 "SCENES.GridThickness": "Толщина сетки",
 "SCENES.HeaderAmbience": "Окружение",
+"SCENES.HeaderAmbienceBasic":"Основные параметры",
 "SCENES.HeaderDetails": "Основное",
 "SCENES.HeaderGrid": "Сетка",
+"SCENES.HeaderVision": "Освещение",
 "SCENES.InitialView": "Начальное положение камеры",
 "SCENES.InitialViewButton": "Сохранение текущей камеры",
 "SCENES.InitialViewHint": "Начальное положение камеры при открытии сцены.",
@@ -1362,8 +1364,6 @@
 "SCENES.FogExploredColorHint": "Цвет, применяемый к областям сцены, которые были исследованы, но находятся за пределами текущей области зрения.",
 "SCENES.FogUnexploredColor": "Неисследованный цвет тумана войны ",
 "SCENES.FogUnexploredColorHint": "Цвет, применяемый к областям сцены, которые не были исследованы.",
-"SCENES.HeaderAmbienceBasic":"Основные параметры",
-"SCENES.HeaderVision":"Освещение",
 
 "SCENES.ENVIRONMENT":{
 "HeaderLabel":"Освещение окружения",
@@ -1961,7 +1961,7 @@
   "LoginSuccess": "Вход под именем {user} успешен, присоединение к игре!"
 },
 
-
+"SHEETS.ConfigureSheet": "Настройка бланка",
 "SHEETS.ThisSheet": "Этот бланк",
 "SHEETS.DefaultSheet": "Бланк по умолчанию",
 "SHEETS.DefaultDocumentSheet": "Бланк по умолчанию для {document}",
@@ -1970,6 +1970,7 @@
 "SHEETS.DocumentSheetPrivate": "У вас нет прав доступа к документу с типом {type}.",
 "SHEETS.Save": "Сохранение настроек бланка",
 "SHEETS.FormNavLabel": "Навигация вкладок формы",
+"SHEETS.CopyId": "Копирование ID",
 
 "SOUND": {
   "ConfigTitle": "Настройка фонового звука",
@@ -1982,7 +1983,7 @@
   "Easing": "Сглаживание громкости",
   "EasingHint": "Регулируйте уровень громкости звука по мере приближения токенов к центру.",
   "Hidden": "Отключено",
-  "HiddenHint": "Переключите, временно ли отключен этот источник звука.",
+  "HiddenHint": "Переключите временное отключение источника звука.",
   "MaxVol": "Максимальная громкость",
   "MaxVolHint": "Определите максимальную громкость звука в его исходной точке (если используется сглаживание) или во всей области.",
   "New": "Новый звук",
@@ -2113,10 +2114,89 @@
 "PERMISSION.WallDoorsHint": "Позволить роли взаимодействовать с дверьми на слое стен.",
 "PERMISSION.WarningNoCreate": "У вас не достаточно прав для создания {document}.",
 
-"REGION.ConfigTitle": "Настройка области",
-"REGION.Name": "Название",
-"REGION.Color": "Цвет",
-"REGION.Shapes": "Формы",
+"REGION": {
+  "SECTIONS": {
+    "identity": "Данные",
+    "shapes": "Формы",
+    "behaviors": "Поведение"
+  },
+  "FIELDS": {
+    "color": {
+      "label": "Цвет",
+      "hint": "Цвет заливки области."
+    },
+    "shapes": {
+      "label": "Формы",
+      "hint": "Формы области."
+    },
+    "behaviors": {
+      "label": "Поведения",
+      "hint": "Поведение области."
+    }
+  },
+  "ACTIONS": {
+    "create": "Создание области",
+    "update": "Обновление области",
+    "delete": "Удаление области",
+    "createBehavior": "Создание поведения",
+    "editBehavior": "Изменение поведения",
+    "deleteBehavior": "Удаление поведения",
+    "enableBehavior": "Включение поведения",
+    "disableBehavior": "Отключение поведения"
+  },
+  "EVENTS": {
+    "behaviorStatus": "Статус поведения изменён",
+    "tokenEnter": "Вход токена",
+    "tokenExit": "Выход токена",
+    "tokenMove": "Движение токена",
+    "tokenTurnStart": "Начало хода токена",
+    "tokenTurnEnd": "Конец хода токена",
+    "tokenRoundStart": "Начало раунда токена",
+    "tokenRoundEnd": "Конец раунда токена"
+  },
+  "Behavior": "Поведение",
+  "Shape": "Форма"
+},
+
+"BEHAVIOR": {
+  "FIELDS": {
+    "disabled": {
+      "label": "Отключено",
+      "hint": "Временное отключение поведения."
+    }
+  },
+  "ACTIONS": {
+    "create": "Создание поведения",
+    "update": "Обновление поведения",
+    "delete": "Удаление поведения"
+  },
+  "TYPES": {
+    "base": {
+      "FIELDS": {
+        "events": {
+          "label": "События",
+          "hint": "События к которым подключено поведение."
+        }
+      }
+    },
+    "macro": {
+      "FIELDS": {
+        "uuid": {
+          "label": "Макрос",
+          "hint": "Макрос, запускаемый при срабатывании события."
+        }
+      }
+    },
+    "script": {
+      "FIELDS": {
+        "source": {
+          "label": "Скрипт",
+          "hint": "Скрипт, запускаемый при срабатывании события."
+        }
+      }
+    }
+  }
+},
 
 "RULER.MovementNotAllowed": "Отмеренный путь движения не доступен.",
 "RULER.MovementCollision": "Движение блокируется стеной.",
@@ -2191,8 +2271,8 @@
 "TABLE.Update": "Обновление",
 
 "TEMPLATE.BorderColor": "Цвет рамки",
-"TEMPLATE.ConeTypeSetting": "Вид шаблона конуса",
-"TEMPLATE.ConeTypeSettingHint": "Форма шаблона конуса для эффектов на местности.",
+"TEMPLATE.ConeTypeSetting": "Форма шаблона конуса",
+"TEMPLATE.ConeTypeSettingHint": "Выберите тип шаблонов конусов. Не имеет эффекта, если включены Формы шаблонов на основе сетки.",
 "TEMPLATE.ConeTypeFlat": "Плоский",
 "TEMPLATE.ConeTypeRound": "Округлый",
 "TEMPLATE.MeasuredConfig": "Настройка измерительного шаблона",
@@ -2200,6 +2280,9 @@
 "TEMPLATE.FillTexture": "Текстура заливки",
 "TEMPLATE.SubmitCreate": "Создание шаблона",
 "TEMPLATE.SubmitUpdate": "Обновление шаблона",
+"TEMPLATE.GridTemplatesSetting": "Формы шаблонов на основе сетки",
+"TEMPLATE.GridTemplatesSettingHint": "Шаблоны будут основаны на сетке, а не на евклидовом пространстве.",
+
 
 "TILE.ConfigTitle": "Настройка тайла",
 "TILE.SubmitCreate": "Создание тайла",
@@ -2485,12 +2568,47 @@
 "TOURS.SuggestedTitle": "Рекомендованный экскурс",
 "TOURS.SuggestedDescription": "<p>Вы завершили экскурс <strong>{currentTitle}</strong>.</p><p>Мы рекомендуем продолжить следующий экскурс <strong>{nextTitle}</strong>. Начать?</p>",
 
-"USER.RoleNone": "Без роли",
-"USER.RolePlayer": "Игрок",
-"USER.RoleTrusted": "Доверенный",
-"USER.RoleAssistant": "Ассистент GM",
-"USER.RoleGamemaster": "GM",
-"USER.GM": "GM",
+"USER": {
+  "FIELDS": {
+    "name": {
+      "label": "Имя игрока",
+      "hint": "Имена игроков настраиваются ведущим на экране Управление участниками."
+    },
+    "avatar": {
+      "label": "Аватар игрока",
+      "hint": "Аватар игрока отображается при использовании видеотрансляции. Некоторые модули также могут назначать аватар."
+    },
+    "color": {
+      "label": "Цвет игрока",
+      "hint": "Цвет игрока используется для курсора, линейки, шаблонов и других элементов, чтобы различать участников."
+    },
+    "pronouns": {
+      "label": "Местоимения игрока",
+      "hint": "Местоимения при обращении к игроку в третьем лице."
+    },
+    "character": {
+      "label": "Персонаж игрока",
+      "hint": "Выберите актёра, который будет отражать вашего основного персонажа. У вас должны быть права как минимум наблюдателя для этого актёра."
+    }
+  },
+  "SHEET": {
+    "HEADERS": {
+      "INFO": "Информация об игроке",
+      "CHAR": "Персонаж игрока"
+    },
+    "BUTTONS": {
+      "SAVE": "Сохранение настроек",
+      "RELEASE": "Открепление персонажа"
+    }
+  },
+  "RoleNone": "Нет",
+  "RolePlayer": "Игрок",
+  "RoleTrusted": "Доверенный игрок",
+  "RoleAssistant": "Ассистент ведущего",
+  "RoleGamemaster": "Ведущий",
+  "GM": "Ведущий"
+},
+
 "USERS.AccessKey": "Ключ доступа",
 "USERS.Role": "Роль участника",
 "USERS.UserName": "Имя участника",
@@ -2503,6 +2621,7 @@
 "USERS.NoGMError": "В вашем мире должен быть как минимум один GM.",
 "USERS.DeleteWarning": "Этот участник будет навсегда удалён из игрового мира.",
 "USERS.DeleteGMWarning": "Вы собираетесь удалить ведущего!",
+
 
 "VISION.ModeBlindness": "Слепота",
 "VISION.ModeBasicVision": "Обычное зрение",
