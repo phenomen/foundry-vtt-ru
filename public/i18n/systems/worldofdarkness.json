@@ -1,5 +1,27 @@
 {
-	"wod": {
+	"TYPES.Actor.Changeling": "Changeling the Dreaming",
+	"TYPES.Actor.Changing Breed": "Фера",
+	"TYPES.Actor.Demon": "Demon the Fallen",
+	"TYPES.Actor.Hunter": "Hunter the Reckoning",
+	"TYPES.Actor.Mage": "Mage the Ascention",
+	"TYPES.Actor.Mortal": "Лист персонажа Смертный ",
+	"TYPES.Actor.Vampire": "Лист персонажа Вампир ",
+	"TYPES.Actor.Wraith": "Wraith the Oblivion",
+	"TYPES.Actor.Werewolf": "Werewolf the Apocalypse",
+	"TYPES.Actor.Creature": "Creature sheet",
+	"TYPES.Actor.Spirit": "Spirit (deprecated)",
+	"TYPES.Item.Bonus": "Bonus",
+	"TYPES.Item.Experience": "Experience Points",
+	"TYPES.Item.Feature": "Feature",
+	"TYPES.Item.Trait": "Trait",
+	"TYPES.Item.Power": "Power",
+	"TYPES.Item.Rote": "Rote",
+	"TYPES.Item.Armor": "Броня",
+	"TYPES.Item.Fetish": "Фетиш",
+	"TYPES.Item.Item": "Предмет",
+	"TYPES.Item.Melee Weapon": "Natural/Melee Weapon",
+	"TYPES.Item.Ranged Weapon": "Ranged Weapon",
+	"wod": {		
 		"system": {
 			"world": "Мир обновлён!",
 			"sheetlocked": "Нельзя редактировать заблокированный бланк!"
@@ -12,7 +34,28 @@
 			"vampire": "Вампиры: Маскарад",
 			"werewolf": "Оборотни: Апокалипсис",
 			"mage": "Маги: Восхождение ",
-			"wraith": "Призрак: Забвение"
+			"wraith": "Призрак: Забвение",
+			"breed": "Changing Breed",
+			"creature": "Существо",
+			"mortal": "Смертный "
+		},
+		"sheets": {
+			"mortal": "Mortal sheet",
+			"werewolf": "Werewolf sheet",
+			"mage": "Mage sheet",
+			"vampire": "Лист персонада Вампир",
+			"changeling": "Changeling sheet",
+			"hunter": "Hunter sheet",
+			"demon": "Лист персонажа Демон",
+			"wraith": "Wraith sheet",
+			"breed": "Лист персонажа Фера",
+			"creature": "Creature sheet",
+			"spirit": "Spirit sheet (deprecated)",
+			"items": "Item sheet",
+			"powers": "Powers",
+			"equipment": "Equipment",
+			"sheets": "Sheets",
+			"npc": "НПС"
 		},
 		"era": {
 			"modern": "Современность",
@@ -64,6 +107,14 @@
 			"usesplatfonthint": "С помощью этой настройки можно отключить специальный стиль шрифта, используемый различными листами на уровне мира.",
 			"usesworldanvil": "Использовать ссылки World Anvil",
 			"usesworldanvilhint": "При этой настройке в \"Биография\" появится поле, в котором можно сохранить ссылку на страницу World Anvil этого листа.",
+			"demonsettings": "Demon the Fallen Settings",
+			"demonsettingshint": "World settings used in Demon the Fallen.",
+			"demoncreateforms": "Create apocalyptic forms automatically",
+			"demoncreateformshint": "When creating a demon sheet create the apocalyptic forms automatically on the actor.",
+			"demonsystemsettings": "Ability list setting",
+			"demonsystemsettingshint": "According to what setting are the list of abilities taken from",
+			"demonsettingasbook": "According to book",
+			"demonsettingas20th": "According to 20th ed WoD",
 			"huntersettings": "Настройки \"Охотники: Расплата\"",
 			"huntersettingshint": "Настройки мира для \"Охотники: Расплата\"",
 			"werewolfsettings": "Настройки \"Оборотни: Апокалипсис\"",
@@ -92,7 +143,9 @@
 			"diceruleshint": "Как система обрабатывает броски костей",
 			"rollsettings": "Настройки бросков",
 			"erasettings": "Настройки эры",
-			"erasettingshint": "Настройки мира, связанные с эрами"
+			"erasettingshint": "Настройки мира, связанные с эрами",
+			"darkmodesetting": "Темная тема ",
+			"darkmodesettinghint": "Darkmode hint (requires relogin to Foundry)"
 		},
 		"types": {
 			"mortal": "Смертный",
@@ -118,6 +171,7 @@
 			"disciplinepower": "Сила Дисциплины",
 			"disciplinepath": "Путь Дисциплины",
 			"disciplinepathpower": "Сила пути Дисциплины",
+			"combination": "Combination Discipline",
 			"art": "Искусство",
 			"artpower": "Сила Искусства",
 			"edge": "Грань",
@@ -142,15 +196,14 @@
 			"realm": "Царство",
 			"resonance": "Резонанс",
 			"othertraits": "Другие черты",
-			"apacolypticform": "Апокалиптическая форма",
+			"apocalypticform": "Апокалиптическая форма",
 			"passion": "Страсть",
-			"fetter": "Оковы"
+			"fetter": "Оковы",
+			"wyrd": "Wyrd"
 		},
 		"tab": {
 			"bio": "Биография",
 			"core": "Основное",
-			"normal": "Нормальное отображение ",
-			"specialities": "Посмотреть Специализации",
 			"combat": "Бой",
 			"gear": "Снаряжение",
 			"notes": "Заметки",
@@ -198,7 +251,10 @@
 				"nagah": "Наги",
 				"nuwisha": "Нувиша",
 				"ratkin": "Раткины",
-				"rokea": "Рокеа"
+				"rokea": "Рокеа",
+				"apis": "Apis",
+				"camazotz": "Camazotz",
+				"grondr": "Grondr"
 			},
 			"breed": "Порода",
 			"breedname": {
@@ -220,7 +276,9 @@
 				"vasuki": "Васуки",
 				"latrani": "Латрани",
 				"rodens": "Роденс",
-				"squamus": "Сквамус"
+				"squamus": "Сквамус",
+				"bos": "Bos",
+				"scrofa": "Scrofa"
 			},			
 			"clan": "Клан",
 			"auspice": "Покровительство",
@@ -248,7 +306,10 @@
 				"kali": "Кали",
 				"brightwaters": "Яркая вода",
 				"dimwater": "Мутная вода",
-				"darkwater": "Темная вода"
+				"darkwater": "Темная вода",
+				"twilight": "Twilight",
+				"solar": "Solar",
+				"lunar": "Lunar"
 			},
 			"aspect": "Аспект",	
 			"aspectname": {
@@ -546,7 +607,7 @@
 				"reconciler": "Миротворец"
 			},
 			"wraith": {
-				"shadow": "Shadow",
+				"shadow": "Тень",
 				"life": "Life",
 				"death": "Death",
 				"regret": "Regret",
@@ -558,15 +619,17 @@
 				"psychewillpower": "Сила воли души"
 			},
 			"mortal": {
-				"autumnpeople": "Autumn people",
-				"enchanted": "Enchanted",
-				"ghoul": "Ghoul",
-				"kinfolk": "Kinfolk",
-				"truefaith": "True faith"
+				"autumnpeople": "Люди осени",
+				"enchanted": "Зачарованный",
+				"ghoul": "Гуль",
+				"kinfolk": "Кинфолк",
+				"truefaith": "Истинная вера"
 			},
 			"creature": {
-				"chimera": "Chimera",
-				"spirit": "Spirit",
+				"chimera": "Химера",
+				"familiar": "Familiar",
+				"construct": "Construct",
+				"spirit": "101%match\nДух",
 				"warwolves": "War wolves",
 				"anurana": "Anurana",
 				"samsa": "Samsa",
@@ -599,7 +662,7 @@
 				"per": "Per"
 			},
 			"bonus": {
-				"strength": "Strength bonus",
+				"strength": "Бонус к силе ",
 				"dexterity": "Dexterity bonus",
 				"stamina": "Stamina bonus",
 				"manipulation": "Manipulation bonus",
@@ -938,7 +1001,13 @@
 			"ungeziefer": "Ungeziefer",
 			"bandia": "Bandia",
 			"kiforu": "Kiforu",
-			"faru": "Faru"
+			"faru": "Faru",
+			"minotaur": "Minotaur",
+			"aurochs": "Aurochs",
+			"apterous": "Apterous",
+			"megachiroptera": "Megachiroptera",
+			"aperius": "Aperius",
+			"daeodon": "Daeodon"
 		},
 		"power": {
 			"rank0": "Ваш ранг равен 0, поэтому Дары недоступны",
@@ -957,6 +1026,7 @@
 			"activegift": "Активный дар",
 			"activerote": "Активное заклятие",
 			"disciplines": "Дисциплины",
+			"combinations": "Комбинированные дисциплины",
 			"paths": "Пути",
 			"rituals": "Ритуалы",
 			"unsorteddisciplines": "Ниже все неотсортированные силы Дисциплин, которым требуется выбрать Дисциплину. Нажмите на название, чтобы отсортировать ",
@@ -1095,6 +1165,7 @@
 			"rank": "Ранг",
 			"other": "Прочее",
 			"both": "Оба",
+			"nochange": "Без изменений",
 			"bio": {
 				"wronggeneration": "Не является действительным поколением",
 				"wrongtempgeneration": "Невозможно иметь поколение ниже 4",
@@ -1219,8 +1290,10 @@
 				"movebonushint": "Этот бонус добавляет бонусы к передвижению персонажа.",
 				"multiplier": "Множитель передвижению",
 				"abilities": {
-					"athletics": "Athletics bonus"
-				}
+					"athletics": "Бонус к Атлетики"
+				},
+				"savesuccess": "Bonus changes saved",
+				"savefail": "Failed so save the bonus"
 			},
 			"new": {
 				"notfound": "Тип предмета не существует",
@@ -1244,21 +1317,23 @@
 				"addexp": "Полученный Опыт",
 				"spentexp": "Потраченный Опыт",
 				"treasure": "Новое сокровище",
-				"bonus": "Новый бонус",
+				"bonus": "Новый бонус",				
 				"attributebonus": "New attribute bonus",
+				"apocalypticform": "New apocalyptic form",
 				"attributedicebonus": "New attribute dice bonus",
 				"attributediff": "New attribute difficulty bonus",
 				"attributesucc": "New attribute automatic successes bonus",
-				"abilitybonus": "New ability bonus",
+				"abilitybonus": "Новый Бонус способности",
 				"abilitydiff": "New ability difficulty bonus",
-				"soakbonus": "New soak bonus",
-				"healthbuff": "New health level bonus",
-				"initbonus": "New initiative bonus",
-				"movebonus": "New movement bonus",
+				"soakbonus": "Новый Бонус к проверке на прочность",
+				"healthbuff": "Новый Бонус к уровню здоровья",
+				"initbonus": "Новый Бонус инициативы",
+				"movebonus": "Новый Бонус к передвижени",
 				"discipline": "Новая дисциплина",
 				"disciplinepower": "Новая сила дисциплины",
 				"disciplinepath": "Новый путь дисциплины",
 				"disciplinepathpower": "Новая сила пути дисциплины",
+				"combination": "New combination discipline",
 				"ritual": "Новый ритуал",
 				"edge": "Новая грань",
 				"edgepower": "Новая сила грани",
@@ -1295,6 +1370,7 @@
 				"othertraits": "Добавить другую черту",
 				"treasure": "Добавить сокровище",
 				"bonus": "Добавить бонус",
+				"apocalypticform": "Add apocalyptic form",
 				"experience": "Добавить опыт",
 				"spentexp": "Добавить потраченный опыт",
 				"gift": "Добавить дар",
@@ -1302,6 +1378,7 @@
 				"disciplinepower": "Добавить силу дисциплины",
 				"disciplinepath": "Добавить путь дисциплины",
 				"disciplinepathpower": "Добавить силу пути дисциплины",
+				"combination": "Add combination discipline",
 				"ritual": "Добавить ритуал",
 				"edge": "Добавить грань",
 				"edgepower": "Добавить силу грани",
@@ -1410,6 +1487,7 @@
 				"othertraits": "Удалить другую черту",
 				"treasure": "Удалить сокровище",
 				"bonus": "Убрать бонус",
+				"apocalypticform": "Remove apocalyptic form",
 				"power": "Удалить силу",
 				"device": "Удалить устройство",
 				"talisman": "Удалить талисман",
@@ -1538,7 +1616,8 @@
 				"selectsphere": "Необходимо сначала выбрать сферу",
 				"keepdifficulty": "Оставляет сложность неизменной",
 				"keepdiff": "Сохранить сложность",
-				"keepdiffdesc": "Keep difficulty is When you are to use extended casting but the difficulty are not to be increased for each roll."
+				"keepdiffdesc": "Keep difficulty is When you are to use extended casting but the difficulty are not to be increased for each roll.",
+				"difficultylimit": "Difficulty can never be higher or lower than the base difficulty +3/-3."
 			},
 			"checkfrenzy": {
 				"headline": "Бросок на сопротивление ярости",
@@ -1574,7 +1653,9 @@
 				"sprayresult": "Выбрано [0] целей. Попадание по [1]",
 				"selectedtargets": "Количество выбранных целей",
 				"firemodes": "Режимы автоматического огня",
-				"numbertargets": "Количество целей"
+				"numbertargets": "Количество целей",
+				"nomeleeweapon": "No melee weapon secondary abilities listed on sheet",
+				"norangedweapon": "No ranged weapon secondary abilities listed on sheet"
 			},
 			"soak": {
 				"missingdamage": "Нужно выбрать тип повреждений",
@@ -1589,7 +1670,10 @@
 				"noarttype": "Тип искусства не выбран",
 				"shiftnightmaredice": "Переключиться на кости кошмара",
 				"notset": "Не установлено",
-				"selectpower": "Выберите, к какой силе привязать"
+				"selectpower": "Выберите, к какой силе привязать",
+				"disciplineneeded": "Disciplines needed",
+				"savecombination": "Save combination discipline",
+				"removecombination": "Remove combination discipline"
 			},
 			"attribute": {
 				"speciality": "Специализация",
@@ -1599,12 +1683,16 @@
 				"techonocracy": "Использовать версию Технократии"
 			},
 			"general": {
-				"selectattribute": "Выберите, какую характеристику использовать"
+				"selectattribute": "Выберите, какую характеристику использовать",
+				"numberdiceshint": "To be able to roll more than 10 dices as once, fill in the number in the box above."
 			},
 			"bonus": {
 				"chosenattribute": "Выбранная характеристика",
 				"movement": "Тип движения",
-				"bonusvalue": "Значение бонуса"
+				"name": "Name",
+				"type": "Type",
+				"bonusvalue": "Value",
+				"bonuses": "Bonuses"
 			},
 			"variant": {
 				"sheettype": "Выбрать тип бланка",
@@ -1615,7 +1703,8 @@
 				"wraith": "Общий призрак",
 				"creature": "Общее существо",
 				"info": "Настройка позволяет выбрать вариант бланка персонажа.",
-				"description": "Позже можно выбрать другой тип бланка в настройках бланка."
+				"description": "Позже можно выбрать другой тип бланка в настройках бланка.",
+				"lostbreeds": "Lost breeds"
 			}
 		}
 	}

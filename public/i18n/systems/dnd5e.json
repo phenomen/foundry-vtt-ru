@@ -135,6 +135,7 @@
 "DND5E.ActionRSAK": "Дист. атака заклинанием",
 "DND5E.ActionRWAK": "Дист. атака оружием",
 "DND5E.ActionSave": "Испытание",
+"DND5E.ActionSumm": "Призыв",
 "DND5E.ActionUtil": "Вспомогательное",
 "DND5E.ActionWarningNoItem": "Предмет {item} отсутствует у {name}",
 "DND5E.ActionWarningNoToken": "Вы должны контролировать один или несколько токенов, чтобы сделать это.",
@@ -283,6 +284,7 @@
 "DND5E.AdvancementTraitModeUpgradeHint": "Получить умение или мастерство в свойстве.",
 "DND5E.AdvancementTraitType": "Тип свойства",
 "DND5E.Advantage": "Преимущество",
+"DND5E.AdvantageMode": "Режим преимущества",
 "DND5E.Age": "Возраст",
 "DND5E.Alignment": "Мировоззрение",
 "DND5E.AlignmentCE": "Хаотичное злое",
@@ -328,6 +330,9 @@
 "DND5E.AttackPl": "Атаки",
 "DND5E.AttackRoll": "Бросок атаки",
 "DND5E.Attributes": "Показатели",
+"DND5E.AttrConcentration": {
+  "Limit": "Предел"
+},
 "DND5E.Automatic": "Автоматически",
 "DND5E.AutomaticValue": "Автоматически ({value})",
 "DND5E.Award": {
@@ -353,6 +358,7 @@
 "DND5E.BonusAbility": "Глобальные бонусы характеристик",
 "DND5E.BonusAbilityCheck": "Глобальный бонус характеристик",
 "DND5E.BonusAbilitySave": "Глобальный бонус испытаний",
+"DND5E.BonusAbilitySaveTitle": "Глобальный бонус испытаний",
 "DND5E.BonusAbilitySkill": "Глобальный бонус навыков",
 "DND5E.BonusAction": "Бонусное действие",
 "DND5E.BonusActionAbbr": "БД",
@@ -382,6 +388,8 @@
 "DND5E.ChatContextTempHP": "Применить временные ПЗ",
 "DND5E.ChatContextDoubleDamage": "Нанести двойной урон",
 "DND5E.ChatContextHalfDamage": "Нанести половину урона",
+"DND5E.ChatContextSelectHit": "Выбор попаданий",
+"DND5E.ChatContextSelectMiss": "Выбор промахов",
 "DND5E.ChatFlavor": "Дополнительный текст в чате",
 "DND5E.CheckBonus": "Бонус проверки",
 "DND5E.ClassAdd": "Добавить класс",
@@ -393,6 +401,7 @@
 "DND5E.ClassName": "Класс",
 "DND5E.ClassOriginal": "Оригинальный класс",
 "DND5E.ClassSaves": "Испытания",
+"DND5E.Confirm": "Подтвердить",
 "DND5E.ComponentMaterial": "Реагент",
 "DND5E.ComponentMaterialAbbr": "Р",
 "DND5E.ComponentSomatic": "Жестовый",
@@ -436,7 +445,21 @@
 "DND5E.ConUnconscious": "Без сознания",
 "DND5E.Concentration": "Концентрация",
 "DND5E.ConcentrationAbbr": "К",
+"DND5E.ConcentrationBreak": "Прерывание концентрации",
+"DND5E.ConcentrationBreakWarning": "Прерывание концентрации на эффекте другого существа, требует GM в игре.",
+"DND5E.ConcentrationBonus": "Бонус концентрации",
 "DND5E.ConcentrationDuration": "Концентрация на {duration}",
+"DND5E.ConcentratingOn": "Вы поддерживаете концентрацию на эффекте '{name}' ({type}).",
+"DND5E.ConcentratingEndChoice": "Вы поддерживаете концентрацию на эффекте с несколькими источникам. Выберите, какой эффект прервать.",
+"DND5E.ConcentratingMissingItem": "Эффект концентрации на замену не существует.",
+"DND5E.ConcentratingLimited": "Вы не можете начать концентрацию на дополнительном эффекте.",
+"DND5E.ConcentrationLimit": "Предел концентрации",
+"DND5E.ConcentratingEnd": "Прервать концентрацию",
+"DND5E.ConcentratingItemless": "Концентрация без источника",
+"DND5E.ConcentratingWarnLimit": "Вы не можете поддерживать концентрацию на нескольких эффектах!",
+"DND5E.ConcentratingWarnLimitOptional": "Вы можете прервать концентрацию на одном из ваших эффектов, чтобы использовать этот предмет.",
+"DND5E.ConcentratingWarnLimitZero": "Вы не можете поддерживать концентрацию на любом из эффектов!",
+"DND5E.ConcentrationConfigurationHint": "Настройка модификаторов и бонусов концентрации этого существа.",
 "DND5E.ConsumeTitle": "Расход ресурсов",
 "DND5E.ConsumeAmount": "Расход",
 "DND5E.ConsumeTarget": "Цель расхода",
@@ -558,11 +581,26 @@
 "DND5E.Damage": "Урон",
 "DND5E.DamageAcid": "Кислота",
 "DND5E.DamageAll": "Весь урон",
+"DND5E.DamageApplication": {
+  "Change": {
+    "Modification": "Модификатор {type}",
+    "Immunity": "Невосприимчивость к {type}",
+    "Resistance": "Устойчивость к {type}",
+    "Vulnerability": "Уязвимость к {type}"
+  },
+  "Downgrading": "Понижение {source} до устойчивости",
+  "Ignoring": "Игнорирование {source}"
+},
 "DND5E.DamageBludgeoning": "Дробящий",
 "DND5E.DamageCold": "Холод",
 "DND5E.DamageFire": "Огонь",
 "DND5E.DamageForce": "Сила",
 "DND5E.DamageLightning": "Молния",
+"DND5E.DamageModification": {
+  "Label": "Модификатор урона",
+  "Hint": "Формулы, которые будут добавлены к урону определённого типа, нанесенному этому актеру. Отрицательные значения уменьшают получаемый урон.",
+  "BypassHint": "Предметы с этими свойствами игнорируют модификаторы к физическому урону."
+},
 "DND5E.DamageNecrotic": "Некротический",
 "DND5E.DamagePiercing": "Колющий",
 "DND5E.DamagePhysical": "Немагический физический",
@@ -633,7 +671,8 @@
 "DND5E.Effect": "Эффект",
 "DND5E.Effects": "Эффекты",
 "DND5E.EffectsApplyTokens": "Применить в выбранным токенам",
-"DND5E.EffectApplyWarning": "Нельзя применить эффект к токену, если вы не его владелец.",
+"DND5E.EffectApplyWarningConcentration": "Применение эффекта на котором концентрируется другой персонаж, требует наличия GM в игре.",
+"DND5E.EffectApplyWarningOwnership": "Нельзя применить эффект к токену, если вы не его владелец.",
 "DND5E.EffectsSearch": "Поиск эффекта",
 "DND5E.Environment": "Среда",
 "DND5E.EquipmentBonus": "Магический бонус",
@@ -693,9 +732,12 @@
     "EpicBoon": "Эпический дар"
   }
 },
-"DND5E.Focus.Arcane": "Мистический фокусирующий предмет",
-"DND5E.Focus.Druidic": "Фокусирующий предмет друида",
-"DND5E.Focus.Holy": "Символ религии",
+"DND5E.Focus": {
+  "Label": "Фокусирующий предмет",
+  "Arcane": "Мистический",
+  "Druidic": "Друидический",
+  "Holy": "Религиозный"
+},
 "DND5E.Loot.Art": "Предмет искусства",
 "DND5E.Loot.Gear": "Походное снаряжение",
 "DND5E.Loot.Gem": "Самоцвет",
@@ -834,6 +876,10 @@
 "DND5E.HPFormulaRollMessage": "Формула броска пунктов здоровья",
 "DND5E.HitDie": "Кость здоровья",
 "DND5E.HitDice": "Кость здоровья",
+"DND5E.HitDiceAutoSpend": {
+  "Label": "Автоматическое использование КЗ",
+  "Hint": "Автоматически бросать кости здоровья, пока они есть и здоровье не восстановится полностью."
+},
 "DND5E.HitDiceConfig": "Настройка кости здоровья",
 "DND5E.HitDiceConfigHint": "Настройте оставшиеся кости здоровья для каждого класса",
 "DND5E.HitDiceMax": "Максимальная кость здоровья",
@@ -863,6 +909,8 @@
 "DND5E.ItemActivationType": "Тип активации",
 "DND5E.ItemAmmoProperties": "Свойства боеприпасов",
 "DND5E.ItemAttackBonus": "Модификатор атаки",
+"DND5E.ItemAttackFlat": "Чистый бонус",
+"DND5E.ItemAttackFlatHint": "Не добавлять умение, модификатор характеристики и другие бонусы к атаке, кроме тех, что указаны здесь.",
 "DND5E.ItemConsumableActivation": "Расходует активацию",
 "DND5E.ItemConsumableUsage": "Расходование",
 "DND5E.ItemConsumableDetails": "Подробности расходника",
@@ -1013,16 +1061,20 @@
 "DND5E.LongRestEpic": "Долгий отдых (1 час)",
 "DND5E.LongRestOvernight": "Долгий отдых (новый день)",
 "DND5E.LongRestHint": "Совершить долгий отдых? В конце долгого отдыха персонаж восстанавливает все потраченные пункты здоровья, а также половину от максимума костей здоровья, предметы с ежедневными зарядами и ячейки заклинаний.",
+"DND5E.LongRestHintGroup": "Совершить долгий отдых? В конце долгого отдыха участники группы восстанавливают все потраченные пункты здоровья, а также половину от максимума костей здоровья, предметы с ежедневными зарядами и ячейки заклинаний.",
 "DND5E.LongRestRecovery": "Восстанавливается после долгого отдыха",
 "DND5E.LongRestResult": "{name} совершает долгий отдых, восстанавливая {health} Пунктов Здоровья и {dice} Костей Здоровья.",
 "DND5E.LongRestResultHitDice": "{name} совершает долгий отдых и восстанавливает {dice} Костей Здоровья.",
 "DND5E.LongRestResultHitPoints": "{name} совершает долгий отдых и восстанавливает {health} Пунктов Здоровья.",
 "DND5E.LongRestResultShort": "{name} совершает долгий отдых.",
+"DND5E.MagicalBonus": "Магический бонус",
 "DND5E.Materials": "Компоненты",
 "DND5E.Max": "Макс.",
 "DND5E.MaxCharacterLevelExceededWarn": "Персонаж не может быть выше {max} уровня.",
 "DND5E.MaxClassLevelExceededWarn": "Класс не может быть выше {max} уровня.",
 "DND5E.MaxClassLevelMinimumWarn": "Класс должен иметь как минимум один уровень.",
+"DND5E.Maximum": "Максимум",
+"DND5E.Minimum": "Минимум",
 "DND5E.Modifier": "Модификатор",
 "DND5E.ModuleArtConfigH": "Настройка предоставляемых модулем изображений.",
 "DND5E.ModuleArtConfigL": "Настройка изображения",
@@ -1204,7 +1256,8 @@
 "DND5E.ShortRestGritty": "Короткий отдых (8 часов)",
 "DND5E.ShortRestEpic": "Короткий отдых (5 минут)",
 "DND5E.ShortRestOvernight": "Короткий отдых (новый день)",
-"DND5E.ShortRestHint": "Совершить короткий отдых? При коротком отдыхе вы можете использовать Кости Здоровья для лечения и восстановить некоторые ресурсы.",
+"DND5E.ShortRestHint": "Совершить короткий отдых? При коротком отдыхе вы можете использовать кости здоровья для лечения и восстановить заряды предметов.",
+"DND5E.ShortRestHintGroup": "Совершить короткий отдых? При коротком отдыхе участники группы могут использовать кости здоровья для лечения и восстановить заряды предметов.",
 "DND5E.ShortRestNoHD": "Не осталось КЗ",
 "DND5E.ShortRestRecovery": "Восстанавливается после короткого отдыха",
 "DND5E.ShortRestResult": "{name} совершает короткий отдых, расходуя {dice} Костей Здоровья и восстанавливая {health} Пунктов Здоровья.",
@@ -1355,12 +1408,115 @@
 "DND5E.SpellUnprepared": "Не подготовлено",
 "DND5E.SpellUsage": "Сотворение",
 "DND5E.Spellbook": "Заклинания",
+"DND5E.StartingEquipment": {
+  "Title": "Начальное снаряжения",
+  "Action": {
+    "AddEntry": "Добавить запись",
+    "Configure": "Настройка начального снаряжения",
+    "RemoveEntry": "Удалить запись"
+  },
+  "Choice": {
+    "Armor": "Выбор брони",
+    "Focus": "Выбор фокусирующего предмета",
+    "Tool": "Выбор инструмента",
+    "Weapon": "Выбор оружия"
+  },
+  "DropHint": "Перенесите предмет сюда",
+  "IfProficient": "Если умелый",
+  "Operator": {
+    "AND": "Все из...",
+    "OR": "Одно из..."
+  },
+  "RequireProficiency": "Требуется умение",
+  "SpecificItem": "Особый предмет",
+  "Warning": {
+    "Depth": "Для снаряжения разрешено только три уровня вложенности.",
+    "ItemTypeInvalid": "Предметы с типом {type} не могут быть добавлены в начальное снаряжение."
+  },
+  "Wealth": {
+    "Label": "Начальное богатство",
+    "Hint": "Формула начальных ЗМ."
+  }
+},
 "DND5E.SubclassIdentifierHint": "Этот идентификатор должен соответствовать идентификатору исходного класса, чтобы они были корректно связаны.",
 "DND5E.SubclassAssignmentError": "{class} уже имеет этот подкласс. Удалите подкласс '{subclass}' перед добавлением нового.",
 "DND5E.SubclassDuplicateError": "Подкласс с идентификатором {identifier} уже существует у этого актёра.",
 "DND5E.SubclassMismatchWarn": "Подкласс {name} не имеет соответствующего класса '{class}'.",
 "DND5E.SubclassName": "Подкласс",
 "DND5E.Subtype": "Подтип",
+"DND5E.Summoning": {
+  "Label": "Призыв",
+  "Action": {
+    "Add": "Добавить профиль",
+    "Configure": "Настройка призыва",
+    "Place": "Размещение призыва",
+    "Remove": "Удалить профиль",
+    "Summon": "Призыв"
+  },
+  "Bonuses": {
+    "ArmorClass": {
+      "Label": "Бонусный класс брони",
+      "Hint": "Бонус класс брони призванного существа."
+    },
+    "Attack": {
+      "Label": "Бонус урона атак",
+      "Hint": "Дополнительный урон, добавляемый к атакам существа."
+    },
+    "Healing": {
+      "Label": "Бонусное лечение",
+      "Hint": "Дополнительное лечение, добавляемое к исцеляющим способностям."
+    },
+    "HitPoints": {
+      "Label": "Бонусные пункты здоровья",
+      "Hint": "Бонус пунктов здоровья призванного существа."
+    },
+    "Saves": {
+      "Label": "Бонус урона испытаний",
+      "Hint": "Дополнительный урон, добавляемый к способностям существа, требующих прохождения испытания."
+    }
+  },
+  "Configuration": "Настройка призыва",
+  "CreatureChanges": {
+    "Label": "Изменения существа",
+    "Hint": "Изменения, применяемые к призванному существу. Любые параметры с @ в формулах будут относиться к параметрам призывателя."
+  },
+  "DisplayName": "Отображаемое имя",
+  "DropHint": "Перенесите существо сюда",
+  "ItemChanges": {
+    "Label": "Изменения предметов",
+    "Hint": "Изменения, применяемые к предметам призванного существа."
+  },
+  "Match": {
+    "Attacks": {
+      "Label": "Приравнивание атак",
+      "Hint": "Изменение значений атак призванного существа, чтобы те совпадали с атаками призывателя."
+    },
+    "Proficiency": {
+      "Label": "Приравнивание умений",
+      "Hint": "Изменение умений призванного существа, чтобы те совпадали с атаками призывателя."
+    },
+    "Saves": {
+      "Label": "Приравнивание испытаний",
+      "Hint": "Изменение СЛ испытаний способностей призванного существа, чтобы те совпадали с атаками призывателя."
+    }
+  },
+  "Profile": {
+    "Label": "Профиль призыва",
+    "LabelPl": "Профили призыва",
+    "Empty": "Нажмите выше, чтобы добавить профиль. Или перенесите существо сюда."
+  },
+  "Prompt": {
+    "Label": "Запрос призыва",
+    "Hint": "Отключить запрос призыва при использовании предмета. Игроки всё еще смогут призывать существ из карточек чата."
+  },
+  "Warning": {
+    "CreateActor": "У вас должны быть права на Создание новых актёров, чтобы призывать существ из библиотеки.",
+    "NoActor": "Актёр для призыва с UUID '{uuid}' не найден.",
+    "NoOwnership": "У вас должны быть права владения '{actor}' для призыва.",
+    "NoProfile": "Не удалось найти профиль призыва {profileId} у '{item}'.",
+    "Wildcard": "У вас должны быть права на Использование проводника файлов, чтобы использовать случайное изображение токена призванного существа."
+  }
+},
 "DND5E.Supply": "Запас",
 "DND5E.Suppressed": "Подавлено",
 "DND5E.Target": "Цель",
@@ -1407,6 +1563,12 @@
 "DND5E.TimeYear": "Год",
 "DND5E.TMP": "ВРЕМ",
 "DND5E.ToHit": "к атаке",
+"DND5E.Tokens": {
+  "NoneSelected": "Токены не выбраны",
+  "NoneTargeted": "Токены не нацелены",
+  "Selected": "Выбрано",
+  "Targeted": "Нацелено"
+},
 "DND5E.TokenRings": {
   "BackgroundColor": "Цвет фона",
   "Effects": {
@@ -1489,6 +1651,20 @@
 "DND5E.UsesAvailable": "Доступные использования",
 "DND5E.UsesMax": "Макс. использований",
 "DND5E.UsesPeriod": "Время восстановления",
+"DND5E.UsesPeriods": {
+  "Charges": "Заряды",
+  "ChargesAbbreviation": "Заряды",
+  "Dawn": "Рассвет",
+  "DawnAbbreviation": "Рассвет",
+  "Day": "День",
+  "DayAbbreviation": "День",
+  "Dusk": "Закат",
+  "DuskAbbreviation": "Закат",
+  "Lr": "Долгий отдых",
+  "LrAbbreviation": "ДО",
+  "Sr": "Короткий отдых",
+  "SrAbbreviation": "КО"
+},
 "DND5E.Vehicle": "Транспорт",
 "DND5E.VehicleActions": "Действия",
 "DND5E.VehicleActionsHint": "Действия с полным составом экипажа",
@@ -1526,6 +1702,7 @@
 "DND5E.WarnCantAddMultipleAdvancements": "В данный момент нельзя добавить несколько предметов с развитием одновременно. Пожалуйста добавьте их по очереди.",
 "DND5E.WarnMultipleArmor": "Надето более одного комплекта брони. Расчёт КБ может быть некорректным.",
 "DND5E.WarnMultipleShields": "Надето более одного щита. Расчёт КБ может быть некорректным.",
+"DND5E.WeaponCategory": "{category} оружие",
 "DND5E.WeaponImprov": "Импровизированное",
 "DND5E.WeaponMartialM": "Военное ближнее",
 "DND5E.WeaponMartialProficiency": "Военное",
@@ -1545,6 +1722,7 @@
 "DND5E.spell": "заклинание",
 
 "EDITOR.DND5E.Inline": {
+  "ApplyStatus": "Применить статус к выбранным токенам",
   "AwardEach": "{award} каждому",
   "CheckShort": "{check}",
   "CheckLong": "Проверка {check}",
@@ -1562,17 +1740,23 @@
 },
 
 "EFFECT.DND5E": {
+  "StatusBleeding": "Кровотечение",
   "StatusBurrowing": "Копание",
   "StatusConcentrating": "Концентрация",
   "StatusCursed": "Проклятие",
+  "StatusDead": "Смерть",
   "StatusDodging": "Уклонение",
   "StatusEncumbered": "Нагруженность",
+  "StatusEthereal": "Эфимерность",
   "StatusExceedingCarryingCapacity": "Превышение максимальной грузоподъёмности",
   "StatusFlying": "Полёт",
   "StatusHeavilyEncumbered": "Крайняя нагруженность",
-  "StatusHidden": "Скрытность",
+  "StatusHiding": "Скрытность",
+  "StatusHovering": "Парение",
   "StatusMarked": "Метка",
+  "StatusSilenced": "Немота",
   "StatusSleeping": "Сон",
+  "StatusStable": "Стабильность",
   "StatusSurprised": "Застигнут врасплох",
   "StatusTransformed": "Превращение"
 },
@@ -1664,6 +1848,8 @@
 "SETTINGS.5eMetricL": "Замена системы веса на метрическую: фунты заменяются на килограммы и происходит перерасчёт нагрузки.",
 "SETTINGS.5eNoAdvancementsN": "Отключение автоматизации повышения уровня",
 "SETTINGS.5eNoAdvancementsL": "Не показывать окно повышения уровня и выбора вариантов развития.",
+"SETTINGS.5eNoConcentrationN": "Отключение отслеживания концентрации",
+"SETTINGS.5eNoConcentrationL": "Отключить автоматизацию концентрации в системе.",
 "SETTINGS.5eNoExpL": "Скрыть шкалу опыта в бланке персонажа.",
 "SETTINGS.5eNoExpN": "Не отслеживать опыт",
 "SETTINGS.5eProfBonus": "КИ: Бонусы (+2, +3, +4, +5, +6)",
@@ -1684,6 +1870,25 @@
 "SETTINGS.5eTokenRings": {
   "Name": "Отключение динамических рамок токенов",
   "Hint": "Отключение динамических рамок может улучшить производительность, если есть проблемы."
+},
+"SETTINGS.DND5E": {
+  "ALLOWSUMMONING": {
+    "Name": "Разрешить призыв",
+    "Hint": "Разрешить игрокам со способностями призыва создавать актёров. У игроков также должно быть включены права на создание токенов."
+  },
+  "THEME": {
+    "Name": "Тема",
+    "Hint": "Тема интерфейса и бланков по умолчанию. Автоматический режим использует настройки браузера или операционной системы."
+  }
+},
+
+"SHEETS.DND5E": {
+  "THEME": {
+    "Label": "Тема",
+    "Automatic": "Автоматическая",
+    "Dark": "Тёмная",
+    "Light": "Светлая"
+  }
 },
 
 "SOURCE.BOOK.SRD": "System Reference Document 5.1"
