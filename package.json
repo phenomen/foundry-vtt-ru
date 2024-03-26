@@ -2,20 +2,21 @@
 	"name": "@phenomen/foundry-vtt-ru",
 	"private": "true",
 	"scripts": {
-		"build": "vite build",
-		"test": "vite build && pnpm process:test",
-		"release": "bumpp public/module.json README.md --no-push --no-commit --no-tag && vite build && pnpm process:pack",
-		"format:check": "prettier --check .",
-		"format": "prettier --write .",
-		"process:pack": "node process-pack.js",
-		"process:test": "node process-test.js"
+		"compile": "bun build.ts",
+		"css": "lightningcss --minify ./ru-ru/styles/*.css --output-dir ./ru-ru/styles",
+		"release": "bumpp public/module.json README.md --no-push --no-commit --no-tag && bun compile && bun css",
+		"format:check": "prettier --check ./src",
+		"format": "prettier --write ./src"
 	},
 	"type": "module",
-	"devDependencies": {
+	"dependencies": {
 		"archiver": "^7.0.1",
 		"bumpp": "^9.4.0",
-		"dotenv": "^16.4.5",
 		"prettier": "^3.2.5",
-		"vite": "^5.2.6"
+		"@types/bun": "^1.0.11",
+		"lightningcss-cli": "^1.24.1"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
 	}
 }

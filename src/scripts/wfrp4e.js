@@ -1,4 +1,4 @@
-import { patchConfigReady, patchConfigSetup } from "./wfrp4-config";
+import { patchConfigReady, patchConfigSetup } from "./wfrp4-config.js";
 import {
 	translatedDuration,
 	translatedHitLocation,
@@ -13,7 +13,7 @@ import {
 	translatedSpellTarget,
 	translatedSpellDamage,
 	translatedGods
-} from "./wfrp4-data";
+} from "./wfrp4-data.js";
 
 export function init() {
 	if (typeof Babele === "undefined") {

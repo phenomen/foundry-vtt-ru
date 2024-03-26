@@ -1,8 +1,17 @@
-import "../styles/_main.css";
-import "../styles/_fonts.css";
-import "../styles/_custom.css";
-
-import { init as DND5E } from "./systems/dnd5e.js";
+import { init as INIT_ALIENRPG } from "./scripts/alienrpg.js";
+import { init as INIT_CITY_OF_MIST } from "./scripts/city-of-mist.js";
+import { init as INIT_COC7 } from "./scripts/coc7.js";
+import { init as INIT_DELTAGREEN } from "./scripts/deltagreen.js";
+import { init as INIT_DND5E } from "./scripts/dnd5e.js";
+import { init as INIT_DRAGONBANE } from "./scripts/dragonbane.js";
+import { init as INIT_DUNGEONWORLD } from "./scripts/dungeonworld.js";
+import { init as INIT_FORBIDDEN_LANDS } from "./scripts/forbidden-lands.js";
+import { init as INIT_INVESTIGATOR } from "./scripts/investigator.js";
+import { init as INIT_MAUSSRITTER } from "./scripts/mausritter.js";
+import { init as INIT_MOUSEGUARD } from "./scripts/mouseguard.js";
+import { init as INIT_PBTA } from "./scripts/pbta.js";
+import { init as INIT_WFRP4E } from "./scripts/wfrp4e.js";
+import { init as INIT_YZECORIOLIS } from "./scripts/yzecoriolis.js";
 
 Hooks.once("init", async () => {
 	const system = game.system.id.toLowerCase();
@@ -12,8 +21,6 @@ Hooks.once("init", async () => {
 	systemCSS.rel = "stylesheet";
 	systemCSS.href = `/modules/ru-ru/styles/${system}.css`;
 	document.head.appendChild(systemCSS);
-
-	//console.log("ADDED STYLE FOR SYSTEM: " + system);
 
 	/* Пол прилагательных по умолчанию */
 	CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
@@ -69,29 +76,29 @@ Hooks.once("init", async () => {
 		game.settings.get("ru-ru", "sceneLabelFont")
 	];
 
-	const systems = [
-		"alienrpg",
-		"city-of-mist",
-		"coc7",
-		"deltagreen",
-		"dragonbane",
-		"dungeonworld",
-		"forbidden-lands",
-		"investigator",
-		"mausritter",
-		"mouseguard",
-		"pbta",
-		"pf1",
-		"sfrpgbb",
-		"wfrp4e",
-		"yzecoriolis"
-	];
+	/* Системные скрипты */
+	const systemHandlers = {
+		"alientrpg": INIT_ALIENRPG,
+		"city-of-mist": INIT_CITY_OF_MIST,
+		"coc7": INIT_COC7,
+		"deltagreen": INIT_DELTAGREEN,
+		"dnd5e": INIT_DND5E,
+		"dragonbane": INIT_DRAGONBANE,
+		"dungeonworld": INIT_DUNGEONWORLD,
+		"forbidden-lands": INIT_FORBIDDEN_LANDS,
+		"investigator": INIT_INVESTIGATOR,
+		"mausritter": INIT_MAUSSRITTER,
+		"mouseguard": INIT_MOUSEGUARD,
+		"pbta": INIT_PBTA,
+		"wfrp4e": INIT_WFRP4E,
+		"yzecoriolis": INIT_YZECORIOLIS
+	};
 
-	/* Загрузка системных скриптов */
-	if (system === "dnd5e") {
-		DND5E(); // Статический импорт для работы альтернативного перевода
-	} else if (systems.includes(system)) {
-		(await import(`./systems/${system}.js`))?.init();
+	const systemHandler = systemHandlers[system];
+	if (systemHandler) {
+		systemHandler();
+	} else {
+		console.log("SYSTEM: " + system);
 	}
 
 	/* Исправление для QUICK INSERT */
@@ -103,7 +110,6 @@ Hooks.once("init", async () => {
 });
 
 /* Выбор пола для случайных прилагательных */
-
 Hooks.on("getSceneControlButtons", getSceneControlButtons);
 
 function getSceneControlButtons(controls) {
