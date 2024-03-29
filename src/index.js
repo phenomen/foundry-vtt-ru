@@ -95,10 +95,9 @@ Hooks.once("init", async () => {
 	};
 
 	const systemHandler = systemHandlers[system];
+
 	if (systemHandler) {
 		systemHandler();
-	} else {
-		console.log("SYSTEM: " + system);
 	}
 
 	/* Исправление для QUICK INSERT */
