@@ -383,15 +383,15 @@ export function init() {
 							let re = /(.*) +\((.*)\)/i;
 							let res = re.exec(name_en);
 							name_en = res[1].trim();
-							special = " (" + game.i18n.localize(res[2].trim()) + ")";
+							special = " (" + translateValue(res[2].trim(), translatedTalentSpec) + ")";
 						}
 						let validCompendiums = game.wfrp4e.tags.getPacksWithTag("talent");
 						for (let compData of validCompendiums) {
 							let item_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
 							if (item_ru?.system) {
-								item_ru.name = item_ru.name || name_en;
+								item_en.name = item_ru.name || name_en;
 
-								if (item_en.system?.tests?.value && isNaN(item_en.system.tests.value)) {
+								if (item_ru?.system?.tests?.value && item_en?.system?.tests?.value) {
 									item_en.system.tests.value = item_ru.system.tests.value;
 								}
 
