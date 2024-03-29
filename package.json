@@ -2,10 +2,10 @@
 	"name": "@phenomen/foundry-vtt-ru",
 	"private": "true",
 	"scripts": {
-		"test": "bun index.ts --id ru-ru",
-		"release": "bun index.ts --id ru-ru --bump 2 --css",
-		"format:check": "prettier --check ./src",
-		"format": "prettier --write ./src"
+		"compile": "bun index.ts --id ru-ru",
+		"release": "bun index.ts --id ru-ru --bump patch --css",
+		"format:check": "prettier --check ./src ./public",
+		"format": "prettier --write ./src ./public"
 	},
 	"type": "module",
 	"dependencies": {

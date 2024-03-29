@@ -3,104 +3,106 @@ import { parseArgs } from "util";
 import { transform } from "lightningcss";
 import manifest from "./public/module.json";
 
-/* 
-Parse args
-*/
-const { values, positionals } = parseArgs({
-	args: Bun.argv,
-	options: {
-		id: {
-			type: "string"
-		},
-		bump: {
-			type: "string"
-		},
-		css: {
-			type: "boolean"
-		}
-	},
-	strict: true,
-	allowPositionals: true
-});
+interface BuildOptions {
+	id: string;
+	bump?: string;
+	css?: boolean;
+}
 
-/*
-Build source into dist
-*/
-async function buildSource() {
+async function main() {
+	const options = parseCommandLineArgs();
+
+	console.log("-- BUILDING SOURCE...");
+	await buildSource(options.id);
+
+	if (options.bump) {
+		console.log("-- BUMPING VERSION...");
+		await bumpVersion(options.bump);
+	}
+
+	console.log("-- COPYING STATIC FILES...");
+	await copyDirectory("./public", `./${options.id}`);
+
+	if (options.css) {
+		console.log("-- OPTIMIZING CSS...");
+		await optimizeCSS(options.id);
+	}
+}
+
+function parseCommandLineArgs(): BuildOptions {
+	const { values } = parseArgs({
+		args: Bun.argv,
+		options: {
+			id: { type: "string" },
+			bump: { type: "string" },
+			css: { type: "boolean" }
+		},
+		strict: true,
+		allowPositionals: true
+	});
+
+	if (!values.id) {
+		throw new Error("Missing required option: --id");
+	}
+
+	return values as BuildOptions;
+}
+
+async function buildSource(id: string) {
 	await Bun.build({
 		entrypoints: ["./src/index.js"],
 		format: "esm",
-		outdir: `./${values.id}`,
-		publicPath: `/modules/${values.id}/`,
+		outdir: `./${id}`,
+		publicPath: `/modules/${id}/`,
 		minify: true,
 		sourcemap: "none"
 	});
 }
 
-/* 
-Copy static files into dist 
-*/
 async function copyDirectory(src: string, dest: string) {
 	await mkdir(dest, { recursive: true });
 	await cp(src, dest, { recursive: true, force: true });
 }
 
-/* 
-Bump semver in manifest and readme.
-Temporal solution until Bun's semver gets inc() -> https://bun.sh/docs/api/semver
-Mode: 0 = major, 1 = minor, 2 = patch 
-*/
-async function bumpVersion(mode: number) {
+async function bumpVersion(mode: string) {
 	const version = manifest.version;
 	const versionFiles = ["./public/module.json", "./README.md"];
-	const versionParts = version.split(".");
-	const digit = parseInt(versionParts[mode], 10);
-	versionParts[mode] = (digit + 1).toString();
-	const next = versionParts.join(".");
+	const [major, minor, patch] = version.split(".");
+
+	let newVersion: string;
+	switch (mode) {
+		case "major":
+			newVersion = `${parseInt(major) + 1}.0.0`;
+			break;
+		case "minor":
+			newVersion = `${major}.${parseInt(minor) + 1}.0`;
+			break;
+		case "patch":
+			newVersion = `${major}.${minor}.${parseInt(patch) + 1}`;
+			break;
+		default:
+			throw new Error(`Invalid bump mode: ${mode}`);
+	}
 
 	for (const file of versionFiles) {
 		const text = await Bun.file(file).text();
-		const bumped = text.replace(version, next);
+		const bumped = text.replace(version, newVersion);
 		await Bun.write(file, bumped);
 	}
 }
 
-/*
-Minify and optimize CSS using LightningCSS
-*/
-async function transformCSS() {
+async function optimizeCSS(id: string) {
 	const cssFiles = await readdir("./public/styles");
 
 	for (const file of cssFiles) {
-		let { code } = transform({
+		const { code } = transform({
 			filename: file,
 			code: Buffer.from(await Bun.file(`./public/styles/${file}`).text()),
 			minify: true,
 			sourceMap: false
 		});
 
-		await Bun.write(`./${values.id}/styles/${file}`, code);
-	}
-}
-
-/*
-Process functions. Order is important
-*/
-async function main() {
-	console.log("-- BUILDING SOURCE...");
-	await buildSource();
-
-	if (values.bump) {
-		console.log("-- BUMPING VERSION...");
-		await bumpVersion(parseInt(values.bump));
-	}
-
-	console.log("-- COPYING STATIC FILES...");
-	await copyDirectory("./public", `./${values.id}`);
-
-	if (values.css) {
-		console.log("-- OPTIMIZING CSS...");
-		await transformCSS();
+		await Bun.write(`./${id}/styles/${file}`, code);
 	}
 }
 

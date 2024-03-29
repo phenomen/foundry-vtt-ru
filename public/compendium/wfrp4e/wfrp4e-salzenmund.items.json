@@ -1,0 +1,142 @@
+{
+	"label": "Объекты (Сользенмунд)",
+	"folders": {
+		"Da Shiny Moon Tribe": "Блестючая луна",
+		"Enchanted Masks": "Зачарованные маски",
+		"Smuggling": "Контрабандист",
+		"Spites of the Laurelorn": "Пакостники Лорелорна"
+	},
+	"mapping": {
+		"description": "system.description.value",
+		"gmdescription": "system.gmdescription.value",
+		"tests": "system.tests.value",
+		"contraction": "system.contraction.value",
+		"symptoms": "system.symptoms.value",
+		"permanent": "system.permanent.value",
+		"incubationValue": "system.incubation.value",
+		"incubationUnit": {
+			"path": "system.incubation.unit",
+			"converter": "convertDuration"
+		},
+		"durationUnit": {
+			"path": "system.duration.unit",
+			"converter": "convertDuration"
+		},
+		"hitLocation": {
+			"path": "system.location.value",
+			"converter": "convertHitLocation"
+		},
+		"penalty": "system.penalty.value",
+		"careerGroup": "system.careergroup.value",
+		"careerClass": {
+			"path": "system.class.value",
+			"converter": "convertCareerClass"
+		},
+		"trappings": "system.trappings",
+		"careerSkills": {
+			"path": "system.skills",
+			"converter": "convertCareerSkills"
+		},
+		"careerTalents": {
+			"path": "system.talents",
+			"converter": "convertCareerTalents"
+		},
+		"spellRange": {
+			"path": "system.range.value",
+			"converter": "convertSpellRange"
+		},
+		"spellDuration": {
+			"path": "system.duration.value",
+			"converter": "convertSpellDuration"
+		},
+		"spellTarget": {
+			"path": "system.target.value",
+			"converter": "convertSpellTarget"
+		},
+		"spellDamage": {
+			"path": "system.damage.value",
+			"converter": "convertSpellDamage"
+		},
+		"prayerGods": {
+			"path": "system.god.value",
+			"converter": "convertGods"
+		}
+	},
+	"entries": {
+		"Despair": {
+			"name": "Отчаянник",
+			"description": "",
+			"gmdescription": "Отчаянники - одинокие духи,владеющие магией в большей степени, чем их собратья. Они предпочитают выглядеть как крошечные, иссушённые старухи, и даже этот облик редко кто-то видит, кроме, возможно, избранного эонира. Отчаянники искусны в следовании нитями судьбы, а лесные эльфы говорят что появление отчаянников предвещает смерть  "
+		},
+		"Dooming": {
+			"name": "Роковое пророчество",
+			"description": "<p>Черта рокового пророчества работает как если-бы у существа была черта @UUID[Compendium.wfrp4e-core.items.5muSFXd6oc760uVj]{Благословение (Морр)} и доступ к чуду @UUID[Compendium.wfrp4e-core.items.itARFNqBAbwNDAAy]{Роковое пророчество}. Однако отчаянники не обязаны человеческим богам этим, хоть способность и является отражением способности жрецов Морра. Это врождённое свойство отчаянников. Для сотворения пророчества пакостники используют силу воли, а не талант <em>божественное вмешательство</em> Talent.</p>"
+		},
+		"Legger": {
+			"name": "Несун",
+			"description": "<p>@UUID[JournalEntry.pHTIwlH91NjUNwig.JournalEntryPage.JyC0KWmSzZmtJiri]{Сыч}</p>"
+		},
+		"Mask of Kharnath": {
+			"name": "Маска Кхарната",
+			"description": "",
+			"gmdescription": "<p>@UUID[JournalEntry.b2odPrxVAmUf46Sz.JournalEntryPage.JDFFajCAFtjXjL0R]{Зал шепчущих масок}</p> <p>Если кто-то носит маску более часа или пользуется каким-либо из ее эффектов, он подвергается Сильному оскверняющему воздействию. Маску можно снять, но эффект сохраняется в течение [[/r d10+4]] дней. После снятия маска теряет свои чары.</p><p></p><p><strong>Характер:</strong> Гнев, воинственность, гордость</p> <p><strong>Тип маски:</strong> Аспект Кхарната</p> <p><strong>Примеры масок:</strong> Гончая, храбрый муж, разъяренная женщина, бык, маска с шипами</p> <p><strong>Эффекты:</strong></p> <ul><li><p>Получите черту @UUID[Compendium.wfrp4e-core.items.hXcfygzujgyMN1uI]{ярость} и талант @UUID[Compendium.wfrp4e-core.items.eowbsW6oHGSNJmxV]{Устойчивость к магии}.</p></li><li><p>Не может творить заклинания или возносить молитвы ради чудес и благословений.</p></li><li><p>+30 ББ, +10 И, –20 Х</p></li></ul>"
+		},
+		"Mask of Mermedus": {
+			"name": "Маска Мермидуса",
+			"description": "",
+			"gmdescription": "<p>@UUID[JournalEntry.b2odPrxVAmUf46Sz.JournalEntryPage.JDFFajCAFtjXjL0R]{Зал шепчущих масок}</p> <p>Если кто-то носит маску более часа или пользуется каким-либо из ее эффектов, он подвергается Сильному оскверняющему воздействию. Маску можно снять, но эффект сохраняется в течение [[/r d10+4]] дней. После снятия маска теряет свои чары.</p><p></p><p><strong>Характер:</strong> Капризность, жадность, изворотливость</p> <p><strong>Тип маски:</strong> Аспект Мермидуса</p> <p><strong>Примеры масок:</strong> Рыба, утопленник, чешуйчатая, угорь, лицо из водорослей</p> <p><strong>Эффекты:</strong></p> <ul><li><p>Получите таланты @UUID[Compendium.wfrp4e-core.items.BlHVzfs0Ow6IYEDw]{свирепый натиск} и @UUID[Compendium.wfrp4e-core.items.Ij9N3G8jzxb4lrwy]{мореплаватель}.</p></li><li><p>+50 к проверкам плавания</p></li><li><p>Персонаж может дышать под водой</p></li></ul>"
+		},
+		"Mask of Neiglen": {
+			"name": "Маска Нейглина",
+			"description": "",
+			"gmdescription": "<p>@UUID[JournalEntry.b2odPrxVAmUf46Sz.JournalEntryPage.JDFFajCAFtjXjL0R]{Зал шепчущих масок}</p> <p>Если кто-то носит маску более часа или пользуется каким-либо из ее эффектов, он подвергается Сильному оскверняющему воздействию. Маску можно снять, но эффект сохраняется в течение [[/r d10+4]] дней. После снятия маска теряет свои чары.</p><p></p><p><strong>Характер:</strong> Шутливость, пессимизм, любезность</p> <p><strong>Тип маски:</strong> Аспект Нейглина</p> <p><strong>Примеры масок:</strong> Ворон, улыбающийся мужчина, измождённая женщина, ободранное дерево</p> <p><strong>Эффекты:</strong></p> <ul><li><p>Получите талант @UUID[Compendium.wfrp4e-core.items.zImcTgEl2XNnbu5W]{здоровяк}.</p></li><li><p>-20 ко всем проверкам сопротивления заболеванию</p></li><li><p>+20 Выносливостьи, -10 Проворства, +5 Харизмы</p></li></ul>"
+		},
+		"Mask of Shornaal": {
+			"name": "Маска Шорнаала",
+			"description": "",
+			"gmdescription": "<p>@UUID[JournalEntry.b2odPrxVAmUf46Sz.JournalEntryPage.JDFFajCAFtjXjL0R]{Зал шепчущих масок}</p> <p>Если кто-то носит маску более часа или пользуется каким-либо из ее эффектов, он подвергается Сильному оскверняющему воздействию. Маску можно снять, но эффект сохраняется в течение [[/r d10+4]] дней. После снятия маска теряет свои чары.</p><p></p><p><strong>Характер:</strong> Жадность, похотливость, дружелюбие</p> <p><strong>Тип маски:</strong> Аспект Шорнаала</p> <p><strong>Примеры масок:</strong> Красавчик, ехидная женщина, змея, стрекоза</p> <p><strong>Эффекты:</strong></p> <ul><li><p>Получите таланты @UUID[Compendium.wfrp4e-core.items.IFKWu98qmWpaSfUi]{Ambidextrous} и @UUID[Compendium.wfrp4e-up-in-arms.items.MoiYSfJRPHu7SZCQ]{Distract}.</p></li><li><p>+10 Инициативы, +20 Проворства, +10 Харизмы, -15 Силы воли</p></li></ul>"
+		},
+		"Mask of Tchar": {
+			"name": "Маска Тчара",
+			"description": "",
+			"gmdescription": "<p>@UUID[JournalEntry.b2odPrxVAmUf46Sz.JournalEntryPage.JDFFajCAFtjXjL0R]{Зал шепчущих масок}</p> <p>Если кто-то носит маску более часа или пользуется каким-либо из ее эффектов, он подвергается Сильному оскверняющему воздействию. Маску можно снять, но эффект сохраняется в течение [[/r d10+4]] дней. После снятия маска теряет свои чары.</p><p></p><p><strong>Характер:</strong> Осторожность, хитрость, терпеливость</p> <p><strong>Тип маски:</strong> Аспект Тчара</p> <p><strong>Примеры масок:</strong> Орёл, хитрая женщина, обманщик, извивы узоров, безликость</p> <p><strong>Эффекты:</strong></p> <ul><li><p>Получите таланты @UUID[Compendium.wfrp4e-core.items.b4x1qEWcevX7xK58]{интриган} и @UUID[Compendium.wfrp4e-core.items.OEjUvJKi0xmBwbS2]{второе зрение}.</p></li><li><p>+20 Интеллекта, +10 Силы воли</p></li><li><p>+1 пункт скверны при проваленных проверках её воздействию</p></li></ul>"
+		},
+		"Master Owler": {
+			"name": "Мастер-сыч",
+			"description": "<p>@UUID[JournalEntry.pHTIwlH91NjUNwig.JournalEntryPage.JyC0KWmSzZmtJiri]{Сыч}</p>"
+		},
+		"Mischief": {
+			"name": "Озорник",
+			"description": "",
+			"gmdescription": "Озорники печально известны своей способностью околдовывать смертных. Они принимают вид светящегося огонька или странной светящейся фигуры, погружая видящих их в глубокий сон, похожий на транс."
+		},
+		"Net (Night Goblin)": {
+			"name": "Сеть (ночные гоблины)",
+			"description": "",
+			"gmdescription": "Сети, утяжелённые камнями - излюбленное оружие ночных гоблинов. Блестючие луны используют эти сети при установке @UUID[Compendium.wfrp4e-salzenmund.items.Item.7tHPKOUU95QsRnIa]{ловушек}, ловя беззаботных существ или незадачливых путников, чтобы притащить их в племя."
+		},
+		"Owler": {
+			"name": "Сыч",
+			"description": "<p>@UUID[JournalEntry.pHTIwlH91NjUNwig.JournalEntryPage.JyC0KWmSzZmtJiri]{Сыч}</p>"
+		},
+		"Owler King": {
+			"name": "Король сычей",
+			"description": "<p>@UUID[JournalEntry.pHTIwlH91NjUNwig.JournalEntryPage.JyC0KWmSzZmtJiri]{Сыч}</p>"
+		},
+		"Shrike": {
+			"name": "Сорокопут",
+			"description": "",
+			"gmdescription": "Сорокопуты - стремительные, злобные пакостники, часто встречающиеся большими стаями. Они являются в виде птиц или безжалостных крошечных воинов в красных шапках, получающих злобное удовольствие от ударов по самым уязвимым точкам врага."
+		},
+		"Terror": {
+			"name": "Ужасник",
+			"description": "",
+			"gmdescription": "Ужасники редко являются днём, предпочитая темноту и полумрак. Самая большая радость для них - пугать людей, так как выражение глубокого испуга жертвы они находят забавным. Ужасники соревнуются друг с другом, принимая самые пугающие формы, какие только могут вообразить."
+		},
+		"Traps": {
+			"name": "Ловушки",
+			"description": "",
+			"gmdescription": "<p>@UUID[JournalEntry.Qn1nkhIjC38ky3uu]{Блестючие луны} используют следующие ловушки в своих шахтах и вокруг них, как для добычи пропитания, так и для охоты на злоумышленников.</p><ul><li><p><strong>Падающая ловушка</strong> – A @UUID[Compendium.wfrp4e-salzenmund.items.Item.iu3KhZAlMVZj7cWQ]{сеть} или камни ([[/r 1d10+3]] урона), падающие сверху. Эта ловушка может быть обнаружена до срабатывания в случае успешного совершения <strong>Серьезной (+0) проверки наблюдательности</strong>. После срабатывания ловушки от неё есть шанс увернуться, успешно совершив <strong>Трудную (–10) проверку уклонения</strong>.</p></li><li><p><strong>Яма с шипами</strong> – открывающаяся яма глубиной в ярд, усеянная шипами.  Падающая жертва получает [[/r 1d10+6]] пунктов урона. Эта ловушка может быть обнаружена до срабатывания в случае успешного совершения <strong>Трудной (–10) проверки наблюдательности</strong>. После падения в яму персонаж может избежать травм, успешно совершив <strong>Трудную (–10) проверку атлетики</strong>.</p></li><li><p><strong>Силок</strong> – жертва получает состояния @Condition[сбит с ног] и @Condition[обездвижен]. Сила ловушки считается равной 25. Эта ловушка может быть обнаружена до срабатывания в случае успешного совершения <strong>Безумной (–30) проверки наблюдательности</strong>.</p></li></ul>"
+		}
+	}
+}
