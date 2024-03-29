@@ -4,8 +4,9 @@
 	"scripts": {
 		"compile:js": "bun build.ts",
 		"compile:css": "lightningcss --minify ./ru-ru/styles/*.css --output-dir ./ru-ru/styles",
+		"compile": "bun compile:js && bun compile:css",
 		"bump": "bun bump.ts",
-		"release": "bun bump && bun compile:js && bun compile:css",
+		"release": "bun bump && bun compile",
 		"format:check": "prettier --check ./src",
 		"format": "prettier --write ./src"
 	},
