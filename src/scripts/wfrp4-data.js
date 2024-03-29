@@ -619,3 +619,7 @@ export const translatedGods = {
 	Manann: "Мананн",
 	Verena: "Верена"
 };
+
+export const translatedExceptions = {
+	"Language (Battle)": "Язык (боевой арго)"
+};

@@ -55,7 +55,7 @@ async function buildSource(id: string) {
 		outdir: `./${id}`,
 		publicPath: `/modules/${id}/`,
 		minify: true,
-		sourcemap: "none"
+		sourcemap: "external"
 	});
 }
 
