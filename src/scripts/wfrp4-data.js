@@ -621,5 +621,11 @@ export const translatedGods = {
 };
 
 export const translatedExceptions = {
-	"Language (Battle)": "Язык (боевой арго)"
+	"Craftsman (Engineer)": "Умелец (инженер)",
+	"Language (Battle)": "Язык (боевой арго)",
+	"Language (Magick)": "Язык (магический)",
+	"Lore (Engineer)": "Знание (инженерное дело)",
+	"Ranged (Engineering)": "Стрельба (инженерное)",
+	"Savant (Engineering)": "Кладезь знаний (инженерное дело)",
+	"Trade (Engineer)": "Ремесло (инженер)"
 };

@@ -239,7 +239,6 @@ export function init() {
 				}
 				for (let item_en of actor_items) {
 					let special = "";
-					let nbt = "";
 					let name_en = item_en.name.trim();
 					if (!item_en.name || item_en.name.length == 0) {
 						console.log("WARNING: Wrong item name found!");
@@ -247,9 +246,9 @@ export function init() {
 					}
 					if (item_en.type == "trait") {
 						if (name_en.includes("(") && name_en.includes(")")) {
-							let re = /(.*) \((.*)\)/i;
+							let re = /(.*) +\((.*)\)/i;
 							let res = re.exec(name_en);
-							name_en = res[1];
+							name_en = res[1].trim();
 							special = " (" + translateValue(res[2].trim(), translatedTalentSpec) + ")";
 						}
 						let validCompendiums = game.wfrp4e.tags.getPacksWithTag("trait");
@@ -257,16 +256,17 @@ export function init() {
 							let item_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
 							if (item_ru?.system) {
 								item_ru.name = item_ru.name || item_en.name;
-								item_en.name = nbt + item_ru.name + special;
-
+								item_en.name = item_ru.name + special;
 								item_en.system.description.value = item_ru.system.description.value;
-								if (item_en.system?.specification && isNaN(item_en.system.specification.value)) {
-									item_en.system.specification.value = translateValue(
-										item_en.system.specification.value.trim(),
-										translatedTalentSpec
-									);
-								}
 
+								if (item_en.system?.specification?.value) {
+									if (typeof item_en.system.specification.value === "string") {
+										item_en.system.specification.value = translateValue(
+											item_en.system.specification.value.trim(),
+											translatedTalentSpec
+										);
+									}
+								}
 								break;
 							}
 						}
@@ -277,10 +277,17 @@ export function init() {
 							name_en = res[1].trim();
 							special = " (" + translateValue(res[2].trim(), translatedSkillSpec) + ")";
 						}
+
 						let validCompendiums = game.wfrp4e.tags.getPacksWithTag("skill");
 						for (let compData of validCompendiums) {
 							let item_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
-							if (item_ru?.system) {
+
+							if (translatedExceptions.hasOwnProperty(item_en.name)) {
+								item_en.name = translatedExceptions[value];
+								item_en.system.description.value =
+									item_ru.system?.description?.value || item_en.system.description.value;
+								break;
+							} else if (item_ru?.system) {
 								item_ru.name = item_ru.name || name_en;
 								item_en.name = item_ru.name + special;
 								item_en.system.description.value = item_ru.system.description.value;
@@ -332,7 +339,6 @@ export function init() {
 										translatedGods
 									);
 								}
-
 								break;
 							}
 						}
@@ -374,7 +380,6 @@ export function init() {
 										translatedSpellDamage
 									);
 								}
-
 								break;
 							}
 						}
@@ -394,7 +399,6 @@ export function init() {
 								if (item_ru?.system?.tests?.value && item_en?.system?.tests?.value) {
 									item_en.system.tests.value = item_ru.system.tests.value;
 								}
-
 								break;
 							}
 						}
@@ -453,42 +457,6 @@ export function init() {
 			return translations[value] || value;
 		}
 
-		function translateCompoundString(value, termTranslations, detailTranslations) {
-			if (value && typeof value === "string") {
-				if (translatedExceptions.hasOwnProperty(value)) {
-					return translatedExceptions[value];
-				}
-
-				const [term, detail] = value.split(" (");
-
-				if (detail) {
-					const cleanedDetail = detail.slice(0, -1);
-					const translatedTerm = termTranslations[term];
-					const translatedDetail = detailTranslations[cleanedDetail];
-
-					if (translatedTerm && translatedDetail) {
-						return `${translatedTerm} (${translatedDetail})`;
-					} else if (translatedTerm) {
-						return `${translatedTerm} (${cleanedDetail})`;
-					}
-				} else {
-					const translatedTerm = termTranslations[term];
-
-					if (translatedTerm) {
-						return translatedTerm;
-					}
-				}
-			}
-
-			return value;
-		}
-
-		function translateArray(arr, termTranslations, detailTranslations) {
-			return arr.map((value) =>
-				translateCompoundString(value, termTranslations, detailTranslations)
-			);
-		}
-
 		function translateList(value, translations) {
 			return value
 				.split(", ")
@@ -496,18 +464,6 @@ export function init() {
 					return translateValue(item, translations);
 				})
 				.join(", ");
-		}
-
-		function translateObjectNames(arr, termTranslations, detailTranslations) {
-			if (!arr) return;
-			return arr.map((obj) => {
-				if (obj.hasOwnProperty("flags.babele.translated")) return obj;
-
-				if (obj.hasOwnProperty("name")) {
-					obj.name = translateCompoundString(obj.name, termTranslations, detailTranslations);
-				}
-				return obj;
-			});
 		}
 	}
 }
