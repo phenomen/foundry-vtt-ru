@@ -88,7 +88,7 @@ export function init() {
 							width: translation.width ?? data.video?.width,
 							height: translation.height ?? data.video?.height
 						},
-						system: translation.system ?? data.system,
+						system: { tooltip: translation.tooltip ?? data.system.tooltip },
 						translated: true
 					});
 				});
