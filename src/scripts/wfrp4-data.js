@@ -249,6 +249,7 @@ export const translatedSkillExceptions = {
 export const translatedTalentSpec = {
 	//"Average": "Средний",
 	"Acid": "едкое",
+	"Animals": "животные",
 	"Any Chaos": "любая школа Хаоса",
 	"any": "любое",
 	"Any": "любое",

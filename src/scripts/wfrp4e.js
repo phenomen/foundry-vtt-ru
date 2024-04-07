@@ -246,9 +246,9 @@ export function init() {
 					}
 					if (item_en.type == "trait") {
 						if (name_en.includes("(") && name_en.includes(")")) {
-							let re = /(.*) +\((.*)\)/i;
+							let re = /(.*) \((.*)\)/i;
 							let res = re.exec(name_en);
-							name_en = res[1].trim();
+							name_en = res[1];
 							special = " (" + translateValue(res[2].trim(), translatedTalentSpec) + ")";
 						}
 						let validCompendiums = game.wfrp4e.tags.getPacksWithTag("trait");
@@ -259,13 +259,11 @@ export function init() {
 								item_en.name = item_ru.name + special;
 								item_en.system.description.value = item_ru.system.description.value;
 
-								if (item_en.system?.specification?.value) {
-									if (typeof item_en.system.specification.value === "string") {
-										item_en.system.specification.value = translateValue(
-											item_en.system.specification.value.trim(),
-											translatedTalentSpec
-										);
-									}
+								if (item_en.system?.specification && isNaN(item_en.system.specification.value)) {
+									item_en.system.specification.value = translateValue(
+										item_en.system.specification.value.trim(),
+										translatedTalentSpec
+									);
 								}
 								break;
 							}
@@ -282,14 +280,14 @@ export function init() {
 						for (let compData of validCompendiums) {
 							let item_ru = game.babele.translate(compData.metadata.id, { name: name_en }, true);
 
-							if (translatedExceptions.hasOwnProperty(item_en.name)) {
-								item_en.name = translatedExceptions[value];
-								item_en.system.description.value =
-									item_ru.system?.description?.value || item_en.system.description.value;
-								break;
-							} else if (item_ru?.system) {
+							if (item_ru?.system) {
 								item_ru.name = item_ru.name || name_en;
-								item_en.name = item_ru.name + special;
+								if (translatedExceptions.hasOwnProperty(item_en.name)) {
+									item_en.name = translatedExceptions[value];
+								} else {
+									item_en.name = item_ru.name + special;
+								}
+
 								item_en.system.description.value = item_ru.system.description.value;
 								break;
 							}
