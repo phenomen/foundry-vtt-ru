@@ -538,3 +538,18 @@
 .actions-container {
 	font-weight: 500;
 }
+
+/* MIDIQOL */
+
+.midi-results > div:first-child {
+	gap: 2px;
+}
+
+.midi-qol-attack-roll > div:first-child,
+.midi-qol-damage-roll > div:first-child {
+	font-size: var(--text-sm);
+	font-family: var(--font-sans-condensed);
+	font-weight: 500;
+	line-height: 14px;
+	height: 30px;
+}
