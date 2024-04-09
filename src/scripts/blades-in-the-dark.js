@@ -16,4 +16,12 @@ export function init() {
 			}
 		}).render(true);
 	}
+
+	Hooks.on("ready", () => {
+		if (game.system.version.startsWith("4")) {
+			ui.notifications.warn(
+				"Вы используете устаревшую версию системы Blades in the Dark. Для корректной работы, обновите систему до 5.0+"
+			);
+		}
+	});
 }
