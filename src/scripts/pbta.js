@@ -4,19 +4,20 @@ export function init() {
 			Babele.get().register({
 				module: "ru-ru",
 				lang: "ru",
-				dir: "compendium/masks"
+				dir: "compendium/masks",
 			});
 
 			overrideSheet();
 		} else {
 			new Dialog({
 				title: "Перевод библиотек",
-				content: `<p>Для перевода библиотек системы МАСКИ требуется установить и активировать модули <b>Babele и libWrapper</b><p>`,
+				content:
+					"<p>Для перевода библиотек системы МАСКИ требуется установить и активировать модули <b>Babele и libWrapper</b><p>",
 				buttons: {
 					done: {
-						label: "Хорошо"
-					}
-				}
+						label: "Хорошо",
+					},
+				},
 			}).render(true);
 		}
 	}
@@ -29,48 +30,48 @@ function overrideSheet() {
 			rollFormula: "2d6",
 			statToggle: {
 				label: "Locked",
-				modifier: 0
+				modifier: 0,
 			},
 			rollResults: {
 				failure: {
 					start: null,
 					end: 6,
-					label: "Осложнения..."
+					label: "Осложнения...",
 				},
 				partial: {
 					start: 7,
 					end: 9,
-					label: "Частичный успех"
+					label: "Частичный успех",
 				},
 				success: {
 					start: 10,
 					end: null,
-					label: "Успех!"
-				}
+					label: "Успех!",
+				},
 			},
 			actorTypes: {
 				character: {
 					stats: {
 						danger: {
 							label: "Дерзкий",
-							value: 0
+							value: 0,
 						},
 						freak: {
 							label: "Странный",
-							value: 0
+							value: 0,
 						},
 						savior: {
 							label: "Верный",
-							value: 0
+							value: 0,
 						},
 						superior: {
 							label: "Хитрый",
-							value: 0
+							value: 0,
 						},
 						mundane: {
 							label: "Обычный",
-							value: 0
-						}
+							value: 0,
+						},
 					},
 					attrTop: {
 						heroName: {
@@ -79,7 +80,7 @@ function overrideSheet() {
 							customLabel: false,
 							userLabel: false,
 							type: "Text",
-							value: ""
+							value: "",
 						},
 						advances: {
 							label: "Продвижения",
@@ -87,7 +88,7 @@ function overrideSheet() {
 							customLabel: false,
 							userLabel: false,
 							type: "Number",
-							value: 0
+							value: 0,
 						},
 						xp: {
 							label: "Потенциал",
@@ -97,7 +98,7 @@ function overrideSheet() {
 							type: "Xp",
 							value: 0,
 							max: 5,
-							steps: [false, false, false, false, false]
+							steps: [false, false, false, false, false],
 						},
 						momentUnlocked: {
 							label: "Момент истины",
@@ -106,8 +107,8 @@ function overrideSheet() {
 							userLabel: false,
 							type: "Checkbox",
 							checkboxLabel: "Unlocked",
-							value: false
-						}
+							value: false,
+						},
 					},
 					attrLeft: {
 						conditions: {
@@ -120,25 +121,25 @@ function overrideSheet() {
 							options: {
 								0: {
 									label: "Afraid (-2 to engage)",
-									value: false
+									value: false,
 								},
 								1: {
 									label: "Angry (-2 to comfort or pierce)",
-									value: false
+									value: false,
 								},
 								2: {
 									label: "Guilty (-2 to provoke or assess)",
-									value: false
+									value: false,
 								},
 								3: {
 									label: "Hopeless (-2 to unleash)",
-									value: false
+									value: false,
 								},
 								4: {
 									label: "Insecure (-2 to defend or reject)",
-									value: false
-								}
-							}
+									value: false,
+								},
+							},
 						},
 						look: {
 							label: "Внешность",
@@ -146,7 +147,7 @@ function overrideSheet() {
 							customLabel: false,
 							userLabel: false,
 							type: "LongText",
-							value: ""
+							value: "",
 						},
 						abilities: {
 							label: "Способности",
@@ -154,7 +155,7 @@ function overrideSheet() {
 							customLabel: false,
 							userLabel: false,
 							type: "LongText",
-							value: ""
+							value: "",
 						},
 						influence: {
 							label: "Влияние",
@@ -162,7 +163,7 @@ function overrideSheet() {
 							customLabel: false,
 							userLabel: false,
 							type: "LongText",
-							value: ""
+							value: "",
 						},
 						moment: {
 							label: "Момент истины",
@@ -170,7 +171,7 @@ function overrideSheet() {
 							customLabel: false,
 							userLabel: false,
 							type: "LongText",
-							value: ""
+							value: "",
 						},
 						advancements: {
 							label: "Продвижения",
@@ -182,33 +183,33 @@ function overrideSheet() {
 							options: {
 								0: {
 									label: "[Text]",
-									value: false
+									value: false,
 								},
 								1: {
 									label: "[Text]",
-									value: false
-								}
-							}
-						}
+									value: false,
+								},
+							},
+						},
 					},
 					moveTypes: {
 						basic: {
 							label: "Основные ходы",
-							moves: []
+							moves: [],
 						},
 						playbook: {
 							label: "Ходы архетипа",
-							moves: []
+							moves: [],
 						},
 						team: {
 							label: "Ходы команды",
-							moves: []
+							moves: [],
 						},
 						adult: {
 							label: "Ходы взрослого",
-							moves: []
-						}
-					}
+							moves: [],
+						},
+					},
 				},
 				npc: {
 					attrTop: {
@@ -218,8 +219,8 @@ function overrideSheet() {
 							customLabel: false,
 							userLabel: false,
 							type: "Text",
-							value: ""
-						}
+							value: "",
+						},
 					},
 					attrLeft: {
 						conditions: {
@@ -232,25 +233,25 @@ function overrideSheet() {
 							options: {
 								0: {
 									label: "Напуган",
-									value: false
+									value: false,
 								},
 								1: {
 									label: "Зол",
-									value: false
+									value: false,
 								},
 								2: {
 									label: "Виноват",
-									value: false
+									value: false,
 								},
 								3: {
 									label: "Отчаян",
-									value: false
+									value: false,
 								},
 								4: {
 									label: "Неуверен",
-									value: false
-								}
-							}
+									value: false,
+								},
+							},
 						},
 						drive: {
 							label: "Мотивация",
@@ -258,7 +259,7 @@ function overrideSheet() {
 							customLabel: false,
 							userLabel: false,
 							type: "LongText",
-							value: ""
+							value: "",
 						},
 						abilities: {
 							label: "Способности",
@@ -266,7 +267,7 @@ function overrideSheet() {
 							customLabel: false,
 							userLabel: false,
 							type: "LongText",
-							value: ""
+							value: "",
 						},
 						generation: {
 							label: "Поколение",
@@ -274,21 +275,21 @@ function overrideSheet() {
 							customLabel: false,
 							userLabel: false,
 							type: "Text",
-							value: ""
-						}
+							value: "",
+						},
 					},
 					moveTypes: {
 						villain: {
 							label: "Ходы злодея",
-							moves: []
+							moves: [],
 						},
 						condition: {
 							label: "Ходы состояния",
-							moves: []
-						}
-					}
-				}
-			}
+							moves: [],
+						},
+					},
+				},
+			},
 		};
 	});
 }

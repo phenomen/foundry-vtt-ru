@@ -1,19 +1,21 @@
 {
-  "name": "@phenomen/foundry-vtt-ru",
-  "private": "true",
-  "scripts": {
-    "compile": "bun index.ts --id ru-ru",
-    "release": "bun index.ts --id ru-ru --bump patch --css",
-    "format:check": "prettier --check ./src ./public",
-    "format": "prettier --write ./src ./public"
-  },
-  "type": "module",
-  "dependencies": {
-    "@types/bun": "^1.0.12",
-    "lightningcss": "^1.24.1",
-    "prettier": "^3.2.5"
-  },
-  "peerDependencies": {
-    "typescript": "^5.4.3"
-  }
+	"name": "@phenomen/foundry-vtt-ru",
+	"private": "true",
+	"scripts": {
+		"compile": "bun index.ts --id ru-ru",
+		"release": "bun index.ts --id ru-ru --bump patch --css",
+		"format:check": "bun biome check .",
+		"format": "bun biome check --apply ."
+	},
+	"type": "module",
+	"dependencies": {
+		"@types/bun": "^1.0.12",
+		"lightningcss": "^1.24.1"
+	},
+	"peerDependencies": {
+		"typescript": "^5.4.3"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.6.4"
+	}
 }

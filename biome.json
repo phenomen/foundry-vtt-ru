@@ -1,0 +1,38 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.6.4/schema.json",
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
+	"organizeImports": {
+		"enabled": true,
+		"ignore": [
+			"node_modules/**",
+			"bun.lockb",
+			"ru-ru/**",
+			"public/compendium/**"
+		]
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		},
+		"ignore": [
+			"node_modules/**",
+			"bun.lockb",
+			"ru-ru/**",
+			"public/compendium/**"
+		]
+	},
+	"formatter": {
+		"enabled": true,
+		"ignore": [
+			"node_modules/**",
+			"bun.lockb",
+			"ru-ru/**",
+			"public/compendium/wfrp4e/wfrp4e-core.items.json"
+		]
+	}
+}

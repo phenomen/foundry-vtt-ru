@@ -28,20 +28,23 @@ Hooks.once("init", async () => {
 
 	/* Добавление шрифтов с кириллицей */
 	const cyrillicFonts = {
-		"Beaufort": { editor: true, fonts: [] },
-		"Exocet": { editor: true, fonts: [] },
+		Beaufort: { editor: true, fonts: [] },
+		Exocet: { editor: true, fonts: [] },
 		"Fira Sans Extra Condensed": { editor: true, fonts: [] },
-		"GWENT": { editor: true, fonts: [] },
-		"Manuskript": { editor: true, fonts: [] },
+		GWENT: { editor: true, fonts: [] },
+		Manuskript: { editor: true, fonts: [] },
 		"Marck Script": { editor: true, fonts: [] },
-		"Montserrat": { editor: true, fonts: [] },
+		Montserrat: { editor: true, fonts: [] },
 		"Noto Sans Mono": { editor: true, fonts: [] },
 		"Noto Sans": { editor: true, fonts: [] },
 		"Noto Serif": { editor: true, fonts: [] },
-		"OCR-A": { editor: true, fonts: [] }
+		"OCR-A": { editor: true, fonts: [] },
 	};
 
-	CONFIG.fontDefinitions = foundry.utils.mergeObject(CONFIG.fontDefinitions, cyrillicFonts);
+	CONFIG.fontDefinitions = foundry.utils.mergeObject(
+		CONFIG.fontDefinitions,
+		cyrillicFonts,
+	);
 	CONFIG.defaultFontFamily = "Noto Sans";
 
 	/* Настройка шрифта для подписей на сцене */
@@ -49,14 +52,16 @@ Hooks.once("init", async () => {
 		name: "Шрифт подписей на сцене",
 		hint: "Шрифт, используемый для имён токенов и названий заметок на сцене.",
 		type: Number,
-		default: Object.keys(CONFIG.fontDefinitions).indexOf(CONFIG.defaultFontFamily),
+		default: Object.keys(CONFIG.fontDefinitions).indexOf(
+			CONFIG.defaultFontFamily,
+		),
 		choices: Object.keys(CONFIG.fontDefinitions),
 		scope: "world",
 		config: true,
 		restricted: true,
 		onChange: (value) => {
 			window.location.reload();
-		}
+		},
 	});
 
 	/* Настройка шрифта для подписей на сцене */
@@ -70,7 +75,7 @@ Hooks.once("init", async () => {
 		restricted: true,
 		onChange: (value) => {
 			window.location.reload();
-		}
+		},
 	});
 
 	CONFIG.canvasTextStyle.fontFamily = Object.keys(CONFIG.fontDefinitions)[
@@ -79,21 +84,21 @@ Hooks.once("init", async () => {
 
 	/* Системные скрипты */
 	const systemHandlers = {
-		"alientrpg": INIT_ALIENRPG,
+		alientrpg: INIT_ALIENRPG,
 		"blades-in-the-dark": INIT_BLADES_IN_THE_DARK,
 		"city-of-mist": INIT_CITY_OF_MIST,
-		"coc7": INIT_COC7,
-		"deltagreen": INIT_DELTAGREEN,
-		"dnd5e": INIT_DND5E,
-		"dragonbane": INIT_DRAGONBANE,
-		"dungeonworld": INIT_DUNGEONWORLD,
+		coc7: INIT_COC7,
+		deltagreen: INIT_DELTAGREEN,
+		dnd5e: INIT_DND5E,
+		dragonbane: INIT_DRAGONBANE,
+		dungeonworld: INIT_DUNGEONWORLD,
 		"forbidden-lands": INIT_FORBIDDEN_LANDS,
-		"investigator": INIT_INVESTIGATOR,
-		"mausritter": INIT_MAUSSRITTER,
-		"mouseguard": INIT_MOUSEGUARD,
-		"pbta": INIT_PBTA,
-		"wfrp4e": INIT_WFRP4E,
-		"yzecoriolis": INIT_YZECORIOLIS
+		investigator: INIT_INVESTIGATOR,
+		mausritter: INIT_MAUSSRITTER,
+		mouseguard: INIT_MOUSEGUARD,
+		pbta: INIT_PBTA,
+		wfrp4e: INIT_WFRP4E,
+		yzecoriolis: INIT_YZECORIOLIS,
 	};
 
 	const systemHandler = systemHandlers[system];
@@ -104,7 +109,7 @@ Hooks.once("init", async () => {
 
 	/* Исправление для QUICK INSERT */
 	if (game.modules.get("quick-insert")?.active) {
-		Hooks.on("ready", async function () {
+		Hooks.on("ready", async () => {
 			await game.settings.set("quick-insert", "embeddedIndexing", true);
 		});
 	}
@@ -114,7 +119,10 @@ Hooks.once("init", async () => {
 Hooks.on("getSceneControlButtons", getSceneControlButtons);
 
 function getSceneControlButtons(controls) {
-	if (game.user.isGM && game.settings.get("ru-ru", "displayAdjectiveControls")) {
+	if (
+		game.user.isGM &&
+		game.settings.get("ru-ru", "displayAdjectiveControls")
+	) {
 		const tokens = controls.find((c) => c.name === "token");
 
 		tokens.tools.push({
@@ -125,13 +133,17 @@ function getSceneControlButtons(controls) {
 			toggle: true,
 			onClick: (active) => {
 				if (active) {
-					ui.notifications.notify("Для случайных прилагательных используется женский род");
+					ui.notifications.notify(
+						"Для случайных прилагательных используется женский род",
+					);
 					CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesF";
 				} else {
-					ui.notifications.notify("Для случайных прилагательных используется мужской род");
+					ui.notifications.notify(
+						"Для случайных прилагательных используется мужской род",
+					);
 					CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
 				}
-			}
+			},
 		});
 	}
 }

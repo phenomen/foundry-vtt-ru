@@ -1,4 +1,5 @@
-import { mkdir, cp, readdir } from "node:fs/promises";
+import { cp, mkdir, readdir } from "node:fs/promises";
+// biome-ignore lint/style/useNodejsImportProtocol: it's a bun import
 import { parseArgs } from "util";
 import { transform } from "lightningcss";
 import manifest from "./public/module.json";
@@ -35,10 +36,10 @@ function parseCommandLineArgs(): BuildOptions {
 		options: {
 			id: { type: "string" },
 			bump: { type: "string" },
-			css: { type: "boolean" }
+			css: { type: "boolean" },
 		},
 		strict: true,
-		allowPositionals: true
+		allowPositionals: true,
 	});
 
 	if (!values.id) {
@@ -55,7 +56,7 @@ async function buildSource(id: string) {
 		outdir: `./${id}`,
 		publicPath: `/modules/${id}/`,
 		minify: true,
-		sourcemap: "external"
+		sourcemap: "external",
 	});
 }
 
@@ -72,13 +73,13 @@ async function bumpVersion(mode: string) {
 	let newVersion: string;
 	switch (mode) {
 		case "major":
-			newVersion = `${parseInt(major) + 1}.0.0`;
+			newVersion = `${Number.parseInt(major) + 1}.0.0`;
 			break;
 		case "minor":
-			newVersion = `${major}.${parseInt(minor) + 1}.0`;
+			newVersion = `${major}.${Number.parseInt(minor) + 1}.0`;
 			break;
 		case "patch":
-			newVersion = `${major}.${minor}.${parseInt(patch) + 1}`;
+			newVersion = `${major}.${minor}.${Number.parseInt(patch) + 1}`;
 			break;
 		default:
 			throw new Error(`Invalid bump mode: ${mode}`);
@@ -99,7 +100,7 @@ async function optimizeCSS(id: string) {
 			filename: file,
 			code: Buffer.from(await Bun.file(`./public/styles/${file}`).text()),
 			minify: true,
-			sourceMap: false
+			sourceMap: false,
 		});
 
 		await Bun.write(`./${id}/styles/${file}`, code);

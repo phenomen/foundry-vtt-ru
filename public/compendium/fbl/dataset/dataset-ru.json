@@ -4,11 +4,7 @@
 			"key": "alderlander",
 			"name": "Человек из Ольховых земель",
 			"weight": 8,
-			"age": [
-				[16, 25],
-				[26, 50],
-				[51, 80]
-			],
+			"age": [[16, 25], [26, 50], [51, 80]],
 			"talent": "Adaptive",
 			"childhood": {
 				"orphaned": {
@@ -16,7 +12,12 @@
 					"name": "Сирота",
 					"weight": 1,
 					"description": "У тебя никогда не было семьи, родителей ты даже не видел и с детства привык заботиться о себе сам. Ты вырос закалённым и сильным, но собственная безродность тебя гнетёт.",
-					"attributes": { "strength": "3", "agility": "5", "wits": "3", "empathy": "4" },
+					"attributes": {
+						"strength": "3",
+						"agility": "5",
+						"wits": "3",
+						"empathy": "4"
+					},
 					"skills": {
 						"endurance": "1",
 						"melee": "1",
@@ -31,15 +32,30 @@
 					"name": "Пастух",
 					"weight": 1,
 					"description": "С детства тебя учили, что домашний скот — это источник жизни. Помогая пастухам, ты бродил по лугам вокруг деревни, охраняя стадо. Ночами ты спал с ним рядом и мечтал о приключениях.",
-					"attributes": { "strength": "4", "agility": "4", "wits": "3", "empathy": "4" },
-					"skills": { "might": "1", "crafting": "1", "scouting": "2", "animal-handling": "2" }
+					"attributes": {
+						"strength": "4",
+						"agility": "4",
+						"wits": "3",
+						"empathy": "4"
+					},
+					"skills": {
+						"might": "1",
+						"crafting": "1",
+						"scouting": "2",
+						"animal-handling": "2"
+					}
 				},
 				"vagabond": {
 					"key": "vagabond",
 					"name": "Путник",
 					"weight": 1,
 					"description": "Твоя семья путешествовала из деревни в деревню, прячась от кровавого тумана, и зарабатывала на жизнь, выполняя простую работу. У вас никогда не было настоящего дома, и каждый день приносил новые приключения. Ты научился жить на подножном корме и понял, как важно держаться вместе.",
-					"attributes": { "strength": "4", "agility": "4", "wits": "4", "empathy": "3" },
+					"attributes": {
+						"strength": "4",
+						"agility": "4",
+						"wits": "4",
+						"empathy": "3"
+					},
 					"skills": {
 						"endurance": "1",
 						"melee": "1",
@@ -53,7 +69,12 @@
 					"name": "Оруженосец",
 					"weight": 1,
 					"description": "Ты долго был на службе у гордого воина: носил его оружие и снаряжение, заботился о его коне и учился всему, чему мог. Ты мечтал о том, как однажды станешь сам себе хозяином — и прославишься на все Запретные земли.",
-					"attributes": { "strength": "4", "agility": "4", "wits": "3", "empathy": "4" },
+					"attributes": {
+						"strength": "4",
+						"agility": "4",
+						"wits": "3",
+						"empathy": "4"
+					},
 					"skills": {
 						"endurance": "1",
 						"melee": "2",
@@ -67,7 +88,12 @@
 					"name": "Рабочий",
 					"weight": 1,
 					"description": "С раннего детства ты трудился на ферме, выполняя тяжёлую чёрную работу. Ты знаешь всё о зерне, скоте и посевах. И в глубине души мечтаешь о чём-то ином.",
-					"attributes": { "strength": "5", "agility": "3", "wits": "3", "empathy": "4" },
+					"attributes": {
+						"strength": "5",
+						"agility": "3",
+						"wits": "3",
+						"empathy": "4"
+					},
 					"skills": {
 						"might": "2",
 						"melee": "1",
@@ -81,8 +107,18 @@
 					"name": "Усердный ученик",
 					"weight": 1,
 					"description": "Кто-то начитанный взял тебя под свою опеку и посадил исследовать старинные рукописи. Дни тянулись долго, а учёба шла тяжело, но в конце концов ты понял, что главное в этом мире — знания.",
-					"attributes": { "strength": "3", "agility": "3", "wits": "5", "empathy": "4" },
-					"skills": { "crafting": "1", "lore": "3", "insight": "1", "manipulation": "1" }
+					"attributes": {
+						"strength": "3",
+						"agility": "3",
+						"wits": "5",
+						"empathy": "4"
+					},
+					"skills": {
+						"crafting": "1",
+						"lore": "3",
+						"insight": "1",
+						"manipulation": "1"
+					}
 				}
 			}
 		},
@@ -90,11 +126,7 @@
 			"key": "aslene",
 			"name": "Человек из Аслена",
 			"weight": 5,
-			"age": [
-				[16, 25],
-				[26, 50],
-				[51, 80]
-			],
+			"age": [[16, 25], [26, 50], [51, 80]],
 			"talent": "Adaptive",
 			"childhood": {
 				"born in the saddle": {
@@ -102,7 +134,12 @@
 					"name": "Рожденный в седле",
 					"weight": 1,
 					"description": "Животных ты всегда понимал лучше, чем людей. Ты по-настоящему счастлив и свободен только в седле, когда ветер дует прямо в лицо. Ты и конь — единое целое, и вы мчитесь по бескрайним равнинам, прославляя имя Рога.",
-					"attributes": { "strength": "4", "agility": "5", "wits": "3", "empathy": "3" },
+					"attributes": {
+						"strength": "4",
+						"agility": "5",
+						"wits": "3",
+						"empathy": "3"
+					},
 					"skills": { "move": "2", "survival": "2", "animal-handling": "2" }
 				},
 				"dreamer": {
@@ -110,31 +147,66 @@
 					"name": "Мечтатель",
 					"weight": 1,
 					"description": "Тебе всегда были интересны легенды и предания, истории о богах и героях. С младенчества ты любил сидеть у костра, слушая, как бард из твоего клана рассказывает о боге-вулкане Роге, о гордых предках и о вторжении демонов. Ты чувствуешь, что живёшь полной жизнью, когда погружаешься в мечты и сказания своего народа. Может, когда-нибудь легенду сложат и о тебе?",
-					"attributes": { "strength": "3", "agility": "3", "wits": "4", "empathy": "5" },
-					"skills": { "lore": "2", "manipulation": "1", "performance": "1", "animal-handling": "1" }
+					"attributes": {
+						"strength": "3",
+						"agility": "3",
+						"wits": "4",
+						"empathy": "5"
+					},
+					"skills": {
+						"lore": "2",
+						"manipulation": "1",
+						"performance": "1",
+						"animal-handling": "1"
+					}
 				},
 				"strongest of the clan": {
 					"key": "strongest of the clan",
 					"name": "Сильнейший в клане",
 					"weight": 1,
 					"description": "С детства ты был крупнее и сильнее всех сверстников. Тебе приходилось сражаться храбрее, работать усерднее и быть ответственнее других. Одни обожали тебя, другие презирали.",
-					"attributes": { "strength": "5", "agility": "3", "wits": "3", "empathy": "4" },
-					"skills": { "might": "2", "endurance": "1", "melee": "2", "animal-handling": "1" }
+					"attributes": {
+						"strength": "5",
+						"agility": "3",
+						"wits": "3",
+						"empathy": "4"
+					},
+					"skills": {
+						"might": "2",
+						"endurance": "1",
+						"melee": "2",
+						"animal-handling": "1"
+					}
 				},
 				"taught by a wise women": {
 					"key": "taught by a wise women",
 					"name": "Ученик мудреца",
 					"weight": 1,
 					"description": "Ещё будучи ребёнком, ты подружился с кем-то из хранителей мудрости клана. Вскоре ты стал его (или её) учеником и выучил всё, что мог, об истории своего народа, древних подвигах и кровавых войнах.",
-					"attributes": { "strength": "3", "agility": "3", "wits": "5", "empathy": "4" },
-					"skills": { "lore": "2", "insight": "1", "healing": "2", "animal-handling": "1" }
+					"attributes": {
+						"strength": "3",
+						"agility": "3",
+						"wits": "5",
+						"empathy": "4"
+					},
+					"skills": {
+						"lore": "2",
+						"insight": "1",
+						"healing": "2",
+						"animal-handling": "1"
+					}
 				},
 				"hunter": {
 					"key": "hunter",
 					"name": "Охотник",
 					"weight": 1,
 					"description": "Ты рано научился жить в гармонии с природой. Охотясь, ты привык не только убивать птиц и зверей, но и ценить каждую жизнь.",
-					"attributes": { "strength": "3", "agility": "4", "wits": "4", "empathy": "4" },
+					"attributes": {
+						"strength": "3",
+						"agility": "4",
+						"wits": "4",
+						"empathy": "4"
+					},
 					"skills": {
 						"marksmanship": "2",
 						"scouting": "2",
@@ -147,7 +219,12 @@
 					"name": "Дитя Ветра",
 					"weight": 1,
 					"description": "По традиции клан выбирает дитя ветра и отправляет его в долгое паломничество в горы. Путешествуя днём и прячась от кровавого тумана ночью, ты исполнил свой долг, но сейчас не вполне уверен, где же твой дом.",
-					"attributes": { "strength": "4", "agility": "4", "wits": "3", "empathy": "4" },
+					"attributes": {
+						"strength": "4",
+						"agility": "4",
+						"wits": "3",
+						"empathy": "4"
+					},
 					"skills": {
 						"melee": "1",
 						"marksmanship": "1",
@@ -162,11 +239,7 @@
 			"key": "ailander",
 			"name": "Человек из Скитальцев",
 			"weight": 3,
-			"age": [
-				[16, 25],
-				[26, 50],
-				[51, 80]
-			],
+			"age": [[16, 25], [26, 50], [51, 80]],
 			"talent": "Adaptive",
 			"childhood": {
 				"child of the raven": {
@@ -174,15 +247,31 @@
 					"name": "Дитя Ворона",
 					"weight": 1,
 					"description": "Ты вырос среди Вороньих сестёр и научился почитать Ворона, бояться Ржавых братьев и жить тем, что даёт земля и добрые люди. Больше всего на свете ты любишь свободу и вольный ветер.",
-					"attributes": { "strength": "3", "agility": "4", "wits": "4", "empathy": "4" },
-					"skills": { "crafting": "1", "move": "1", "scouting": "1", "lore": "2", "insight": "1" }
+					"attributes": {
+						"strength": "3",
+						"agility": "4",
+						"wits": "4",
+						"empathy": "4"
+					},
+					"skills": {
+						"crafting": "1",
+						"move": "1",
+						"scouting": "1",
+						"lore": "2",
+						"insight": "1"
+					}
 				},
 				"druid's apprentice": {
 					"key": "druid's apprentice",
 					"name": "Ученик друида",
 					"weight": 1,
 					"description": "Ты учился у старого друида и узнал всё, что смог, о священных мистериях, ритуалах и колдовстве. Твой наставник умер, но часть своей мудрости успел передать тебе.",
-					"attributes": { "strength": "3", "agility": "4", "wits": "5", "empathy": "3" },
+					"attributes": {
+						"strength": "3",
+						"agility": "4",
+						"wits": "5",
+						"empathy": "3"
+					},
 					"skills": {
 						"scouting": "1",
 						"lore": "1",
@@ -196,15 +285,30 @@
 					"name": "Защитник",
 					"weight": 1,
 					"description": "Ты рано осознал, что на скитальцев всегда велась охота, и научился с мечом и щитом в руках защищать свой угнетённый народ. Битвы закалили тебя, оставив взамен многочисленные шрамы.",
-					"attributes": { "strength": "5", "agility": "4", "wits": "3", "empathy": "3" },
-					"skills": { "might": "1", "melee": "2", "marksmanship": "2", "move": "1" }
+					"attributes": {
+						"strength": "5",
+						"agility": "4",
+						"wits": "3",
+						"empathy": "3"
+					},
+					"skills": {
+						"might": "1",
+						"melee": "2",
+						"marksmanship": "2",
+						"move": "1"
+					}
 				},
 				"wanderer": {
 					"key": "wanderer",
 					"name": "Странник",
 					"weight": 1,
 					"description": "Ты не нашёл постоянного пристанища, и твоим домом стала дорога. Ты привык каждый вечер искать укрытие от кровавого тумана. Ещё в детстве ты повидал больше мест, чем многие обитатели этих земель увидят за всю свою жизнь.",
-					"attributes": { "strength": "4", "agility": "4", "wits": "3", "empathy": "4" },
+					"attributes": {
+						"strength": "4",
+						"agility": "4",
+						"wits": "3",
+						"empathy": "4"
+					},
 					"skills": {
 						"endurance": "1",
 						"melee": "1",
@@ -218,7 +322,12 @@
 					"name": "Рабочий",
 					"weight": 1,
 					"description": "С раннего детства ты трудился на ферме, выполняя тяжёлую чёрную работу. Ты знаешь всё о зерне, скоте и посевах. И в глубине души мечтаешь о чём-то ином.",
-					"attributes": { "strength": "5", "agility": "3", "wits": "3", "empathy": "4" },
+					"attributes": {
+						"strength": "5",
+						"agility": "3",
+						"wits": "3",
+						"empathy": "4"
+					},
 					"skills": {
 						"might": "2",
 						"melee": "1",
@@ -232,8 +341,18 @@
 					"name": "Пастух",
 					"weight": 1,
 					"description": "С детства тебя учили, что домашний скот — это источник жизни. Помогая пастухам, ты бродил по лугам вокруг деревни и охранял стадо. Ночами ты спал с ним рядом и мечтал о приключениях.",
-					"attributes": { "strength": "4", "agility": "4", "wits": "3", "empathy": "4" },
-					"skills": { "might": "1", "crafting": "1", "scouting": "2", "animal-handling": "2" }
+					"attributes": {
+						"strength": "4",
+						"agility": "4",
+						"wits": "3",
+						"empathy": "4"
+					},
+					"skills": {
+						"might": "1",
+						"crafting": "1",
+						"scouting": "2",
+						"animal-handling": "2"
+					}
 				}
 			}
 		},
@@ -241,11 +360,7 @@
 			"key": "halfelf",
 			"name": "Полуэльф",
 			"weight": 3,
-			"age": [
-				[16, 30],
-				[31, 100],
-				[101, 200]
-			],
+			"age": [[16, 30], [31, 100], [101, 200]],
 			"talent": "Psychic Power",
 			"childhood": {
 				"on the run": {
@@ -253,48 +368,108 @@
 					"name": "Беглец",
 					"weight": 1,
 					"description": "Всю жизнь ты бежишь от какой-то опасности. Нигде не можешь найти пристанище и всегда настороже. Ты много путешествовал по деревням и сёлам Запретных земель, но ни разу так и не сумел заснуть спиной к двери.",
-					"attributes": { "strength": "4", "agility": "5", "wits": "3", "empathy": "3" },
-					"skills": { "melee": "1", "stealth": "2", "scouting": "2", "insight": "1" }
+					"attributes": {
+						"strength": "4",
+						"agility": "5",
+						"wits": "3",
+						"empathy": "3"
+					},
+					"skills": {
+						"melee": "1",
+						"stealth": "2",
+						"scouting": "2",
+						"insight": "1"
+					}
 				},
 				"artist": {
 					"key": "artist",
 					"name": "Настоящий талант",
 					"weight": 1,
 					"description": "Ещё в детстве ты открыл в себе талант к искусству. Оно делает тебя счастливым и позволяет жить полной жизнью.",
-					"attributes": { "strength": "3", "agility": "3", "wits": "4", "empathy": "5" },
-					"skills": { "crafting": "2", "move": "1", "lore": "1", "performance": "2" }
+					"attributes": {
+						"strength": "3",
+						"agility": "3",
+						"wits": "4",
+						"empathy": "5"
+					},
+					"skills": {
+						"crafting": "2",
+						"move": "1",
+						"lore": "1",
+						"performance": "2"
+					}
 				},
 				"student": {
 					"key": "student",
 					"name": "Всезнайка",
 					"weight": 1,
 					"description": "Ты всегда был немного умнее своих друзей — и знал об этом. Когда мудрый учитель взял тебя под свою опеку, ты погрузился в тайны этого мира. В книгах ты нашёл всё, о чём мечтал, и даже больше.",
-					"attributes": { "strength": "3", "agility": "4", "wits": "5", "empathy": "3" },
-					"skills": { "crafting": "1", "lore": "3", "insight": "1", "healing": "1" }
+					"attributes": {
+						"strength": "3",
+						"agility": "4",
+						"wits": "5",
+						"empathy": "3"
+					},
+					"skills": {
+						"crafting": "1",
+						"lore": "3",
+						"insight": "1",
+						"healing": "1"
+					}
 				},
 				"acrobat": {
 					"key": "acrobat",
 					"name": "Акробат",
 					"weight": 1,
 					"description": "Ты был проворным и гибким ребёнком, всюду забирался и исследовал все закоулки в родном селе. Тебе удалось овладеть искусством выступления и понять важность изящества и красоты.",
-					"attributes": { "strength": "3", "agility": "5", "wits": "3", "empathy": "4" },
-					"skills": { "stealth": "1", "move": "2", "sleight-of-hand": "2", "performance": "1" }
+					"attributes": {
+						"strength": "3",
+						"agility": "5",
+						"wits": "3",
+						"empathy": "4"
+					},
+					"skills": {
+						"stealth": "1",
+						"move": "2",
+						"sleight-of-hand": "2",
+						"performance": "1"
+					}
 				},
 				"fighter": {
 					"key": "fighter",
 					"name": "Воин",
 					"weight": 1,
 					"description": "Ты рано увлёкся оружием. Вскоре нашёлся воин, который взялся за твоё обучение и открыл тебе тайны боя. Ты тренировался долго и упорно, и наступил момент, когда ты сравнялся с наставником в мастерстве.",
-					"attributes": { "strength": "4", "agility": "5", "wits": "3", "empathy": "3" },
-					"skills": { "might": "1", "endurance": "1", "melee": "2", "marksmanship": "2" }
+					"attributes": {
+						"strength": "4",
+						"agility": "5",
+						"wits": "3",
+						"empathy": "3"
+					},
+					"skills": {
+						"might": "1",
+						"endurance": "1",
+						"melee": "2",
+						"marksmanship": "2"
+					}
 				},
 				"ghost child": {
 					"key": "ghost child",
 					"name": "Тень",
 					"weight": 1,
 					"description": "Ты вырос на улице без семьи, но нашёл других ребят, сбежавших из дома или изгнанных оттуда. Вы жили от кражи к краже и от заработка к заработку. Вас называли тенями.",
-					"attributes": { "strength": "3", "agility": "4", "wits": "4", "empathy": "4" },
-					"skills": { "melee": "1", "stealth": "2", "sleight-of-hand": "2", "insight": "1" }
+					"attributes": {
+						"strength": "3",
+						"agility": "4",
+						"wits": "4",
+						"empathy": "4"
+					},
+					"skills": {
+						"melee": "1",
+						"stealth": "2",
+						"sleight-of-hand": "2",
+						"insight": "1"
+					}
 				}
 			}
 		},
@@ -302,11 +477,7 @@
 			"key": "halfling",
 			"name": "Полурослик",
 			"weight": 3,
-			"age": [
-				[16, 25],
-				[26, 60],
-				[61, 100]
-			],
+			"age": [[16, 25], [26, 60], [61, 100]],
 			"talent": "Hard to Catch",
 			"childhood": {
 				"baker's apprentice": {
@@ -314,7 +485,12 @@
 					"name": "Ученик пекаря",
 					"weight": 1,
 					"description": "Ты всегда любил запах свежей выпечки. С детства ты работал на кухне и делал хлеб, от которого у всех текли слюнки.",
-					"attributes": { "strength": "4", "agility": "4", "wits": "3", "empathy": "4" },
+					"attributes": {
+						"strength": "4",
+						"agility": "4",
+						"wits": "3",
+						"empathy": "4"
+					},
 					"skills": {
 						"crafting": "2",
 						"sleight-of-hand": "1",
@@ -328,7 +504,12 @@
 					"name": "Рабочий",
 					"weight": 1,
 					"description": "С раннего детства ты трудился на ферме, выполняя тяжёлую чёрную работу. Ты знаешь всё о зерне, скоте и посевах. И в глубине души мечтаешь о чём-то ином.",
-					"attributes": { "strength": "4", "agility": "4", "wits": "3", "empathy": "4" },
+					"attributes": {
+						"strength": "4",
+						"agility": "4",
+						"wits": "3",
+						"empathy": "4"
+					},
 					"skills": {
 						"might": "2",
 						"melee": "1",
@@ -342,15 +523,30 @@
 					"name": "Ремесленник",
 					"weight": 1,
 					"description": "У тебя всегда хорошо получалось делать что-то руками, и ты рано занялся ремеслом. Созданные тобой вещи несут отпечаток твоего таланта, но они же будят в тебе желание увидеть работы настоящих мастеров.",
-					"attributes": { "strength": "3", "agility": "4", "wits": "4", "empathy": "4" },
-					"skills": { "melee": "1", "crafting": "3", "lore": "1", "insight": "1" }
+					"attributes": {
+						"strength": "3",
+						"agility": "4",
+						"wits": "4",
+						"empathy": "4"
+					},
+					"skills": {
+						"melee": "1",
+						"crafting": "3",
+						"lore": "1",
+						"insight": "1"
+					}
 				},
 				"raised in the kitchen": {
 					"key": "raised in the kitchen",
 					"name": "Поварёнок",
 					"weight": 1,
 					"description": "Почти всё твоё детство прошло на кухне среди запахов супа, рагу и отваров. Ты познал тайны специй и удовольствие от хорошо приготовленной еды.",
-					"attributes": { "strength": "4", "agility": "4", "wits": "3", "empathy": "4" },
+					"attributes": {
+						"strength": "4",
+						"agility": "4",
+						"wits": "3",
+						"empathy": "4"
+					},
 					"skills": {
 						"crafting": "2",
 						"sleight-of-hand": "1",
@@ -364,15 +560,30 @@
 					"name": "Книгочей",
 					"weight": 1,
 					"description": "Пока остальные дети играли в лесу, ты зарывался в старые книги, глотая истории о героях, драконах и сокровищах.",
-					"attributes": { "strength": "3", "agility": "3", "wits": "5", "empathy": "4" },
-					"skills": { "lore": "3", "insight": "1", "manipulation": "1", "animal-handling": "1" }
+					"attributes": {
+						"strength": "3",
+						"agility": "3",
+						"wits": "5",
+						"empathy": "4"
+					},
+					"skills": {
+						"lore": "3",
+						"insight": "1",
+						"manipulation": "1",
+						"animal-handling": "1"
+					}
 				},
 				"loner": {
 					"key": "loner",
 					"name": "Одиночка",
 					"weight": 1,
 					"description": "Тебе всегда было неуютно среди своего народа, ты держался сам по себе и рос отдельно от сверстников. Ты видел то, что не видели они, и делал то, что они не могли даже представить.",
-					"attributes": { "strength": "4", "agility": "4", "wits": "4", "empathy": "3" },
+					"attributes": {
+						"strength": "4",
+						"agility": "4",
+						"wits": "4",
+						"empathy": "3"
+					},
 					"skills": {
 						"melee": "1",
 						"stealth": "2",
@@ -387,11 +598,7 @@
 			"key": "goblin",
 			"name": "Гоблин",
 			"weight": 4,
-			"age": [
-				[16, 25],
-				[26, 60],
-				[61, 100]
-			],
+			"age": [[16, 25], [26, 60], [61, 100]],
 			"talent": "Nocturnal",
 			"childhood": {
 				"wolfling": {
@@ -399,7 +606,12 @@
 					"name": "Волчонок",
 					"weight": 1,
 					"description": "Родители бросили тебя, но ты обрёл новую семью в волчьей стае. Ты стал одним из волков, выл на луну, бегал по равнинам и ел сырое мясо.",
-					"attributes": { "strength": "3", "agility": "5", "wits": "3", "empathy": "4" },
+					"attributes": {
+						"strength": "3",
+						"agility": "5",
+						"wits": "3",
+						"empathy": "4"
+					},
 					"skills": {
 						"endurance": "1",
 						"melee": "1",
@@ -413,15 +625,30 @@
 					"name": "Проныра",
 					"weight": 1,
 					"description": "Ты рано понял, что собственность — понятие относительное. У тебя настоящий талант к присваиванию чужих вещей. Они как будто появляются у тебя сами собой.",
-					"attributes": { "strength": "3", "agility": "5", "wits": "3", "empathy": "4" },
-					"skills": { "stealth": "2", "scouting": "2", "insight": "1", "manipulation": "1" }
+					"attributes": {
+						"strength": "3",
+						"agility": "5",
+						"wits": "3",
+						"empathy": "4"
+					},
+					"skills": {
+						"stealth": "2",
+						"scouting": "2",
+						"insight": "1",
+						"manipulation": "1"
+					}
 				},
 				"child of the woods": {
 					"key": "child of the woods",
 					"name": "Дитя лесов",
 					"weight": 1,
 					"description": "Ты вырос под сенью леса, карабкался по деревьям и слушал, как ветер шепчется с листвой. В лесу ты до сих пор чувствуешь себя в безопасности и знаешь, что его обитатели всегда придут тебе на помощь.",
-					"attributes": { "strength": "4", "agility": "4", "wits": "4", "empathy": "3" },
+					"attributes": {
+						"strength": "4",
+						"agility": "4",
+						"wits": "4",
+						"empathy": "3"
+					},
 					"skills": {
 						"endurance": "1",
 						"move": "1",
@@ -435,7 +662,12 @@
 					"name": "Дикарь",
 					"weight": 1,
 					"description": "Твой родной клан — сборище вольнодумцев, которым нет дела до старого наследия и договоров. Ты вырос диким и свободным, никто никогда не указывал тебе, что делать.",
-					"attributes": { "strength": "4", "agility": "4", "wits": "3", "empathy": "4" },
+					"attributes": {
+						"strength": "4",
+						"agility": "4",
+						"wits": "3",
+						"empathy": "4"
+					},
 					"skills": { "might": "1", "melee": "2", "move": "2", "survival": "1" }
 				},
 				"wanderer": {
@@ -443,7 +675,12 @@
 					"name": "Странник",
 					"weight": 1,
 					"description": "Ты не нашёл постоянного пристанища, и твоим домом стала дорога. Ты привык каждый вечер искать укрытие от кровавого тумана. Ещё в детстве ты повидал больше мест, чем многие обитатели этих земель увидят за всю свою жизнь.",
-					"attributes": { "strength": "4", "agility": "4", "wits": "4", "empathy": "3" },
+					"attributes": {
+						"strength": "4",
+						"agility": "4",
+						"wits": "4",
+						"empathy": "3"
+					},
 					"skills": {
 						"endurance": "1",
 						"melee": "1",
@@ -457,7 +694,12 @@
 					"name": "Рассказчик",
 					"weight": 1,
 					"description": "Сколько ты себя помнишь, ты любил сидеть у огня и слушать, как старейшина клана рассказывает легенды вашего народа. Воображение несло тебя сквозь пространство и время, позволяя чувствовать себя героем невероятных историй. Ты выучил всё, что мог рассказать старый гоблин, и вскоре сам стал одним из рассказчиков клана.",
-					"attributes": { "strength": "3", "agility": "4", "wits": "3", "empathy": "5" },
+					"attributes": {
+						"strength": "3",
+						"agility": "4",
+						"wits": "3",
+						"empathy": "5"
+					},
 					"skills": { "lore": "1", "manipulation": "2", "performance": "3" }
 				}
 			}
@@ -466,11 +708,7 @@
 			"key": "orc",
 			"name": "Орк",
 			"weight": 4,
-			"age": [
-				[13, 20],
-				[21, 45],
-				[46, 70]
-			],
+			"age": [[13, 20], [21, 45], [46, 70]],
 			"talent": "Unbreakable",
 			"childhood": {
 				"minstrel": {
@@ -478,15 +716,30 @@
 					"name": "Бард",
 					"weight": 1,
 					"description": "Истории о страданиях орочьего народа помогли тебе найти себя. В молодости ты выучил песни о предательстве эльфов и о крови, пролитой во множестве войн. Эта память останется с тобой навсегда.",
-					"attributes": { "strength": "3", "agility": "3", "wits": "4", "empathy": "5" },
-					"skills": { "lore": "1", "insight": "1", "manipulation": "1", "performance": "1" }
+					"attributes": {
+						"strength": "3",
+						"agility": "3",
+						"wits": "4",
+						"empathy": "5"
+					},
+					"skills": {
+						"lore": "1",
+						"insight": "1",
+						"manipulation": "1",
+						"performance": "1"
+					}
 				},
 				"worker": {
 					"key": "worker",
 					"name": "Рабочий",
 					"weight": 1,
 					"description": "Даже в детстве твоя жизнь была тяжела. Сколько ты себя помнишь, ты всегда трудился в поте лица, чтобы потом жить так, как хочется.",
-					"attributes": { "strength": "5", "agility": "4", "wits": "3", "empathy": "3" },
+					"attributes": {
+						"strength": "5",
+						"agility": "4",
+						"wits": "3",
+						"empathy": "3"
+					},
 					"skills": { "might": "2", "endurance": "2", "crafting": "2" }
 				},
 				"brigand": {
@@ -494,7 +747,12 @@
 					"name": "Разбойник",
 					"weight": 1,
 					"description": "Сильный орк — это орк, который может позаботиться о себе. Ты рано понял, что грабёж необходим для выживания. Так почему бы и нет? Орков предавали не один раз, и ты имеешь право на месть.",
-					"attributes": { "strength": "4", "agility": "4", "wits": "4", "empathy": "3" },
+					"attributes": {
+						"strength": "4",
+						"agility": "4",
+						"wits": "4",
+						"empathy": "3"
+					},
 					"skills": {
 						"melee": "2",
 						"stealth": "1",
@@ -508,7 +766,12 @@
 					"name": "Бродяга",
 					"weight": 1,
 					"description": "Твоё детство прошло в дороге, в лесах и на равнинах. Ты путешествовал днём и прятался от кровавого тумана ночью. Тебе никогда не удавалось осесть где-то на одном месте. Ноги сами несли тебя дальше.",
-					"attributes": { "strength": "4", "agility": "4", "wits": "3", "empathy": "4" },
+					"attributes": {
+						"strength": "4",
+						"agility": "4",
+						"wits": "3",
+						"empathy": "4"
+					},
 					"skills": {
 						"endurance": "1",
 						"melee": "1",
@@ -522,16 +785,36 @@
 					"name": "Воитель",
 					"weight": 1,
 					"description": "Ты вырос на поле битвы. Ещё в детстве ты убил своего первого врага. С оружием в руках ты заслужил уважение других.",
-					"attributes": { "strength": "5", "agility": "4", "wits": "3", "empathy": "3" },
-					"skills": { "might": "1", "melee": "2", "marksmanship": "2", "move": "1" }
+					"attributes": {
+						"strength": "5",
+						"agility": "4",
+						"wits": "3",
+						"empathy": "3"
+					},
+					"skills": {
+						"might": "1",
+						"melee": "2",
+						"marksmanship": "2",
+						"move": "1"
+					}
 				},
 				"loner": {
 					"key": "loner",
 					"name": "Одиночка",
 					"weight": 1,
 					"description": "Тебе всегда было неуютно среди своего народа, ты держался сам по себе и рос отдельно от сверстников. Ты видел то, что не видели они, и делал то, что они не могли даже представить.",
-					"attributes": { "strength": "4", "agility": "3", "wits": "5", "empathy": "3" },
-					"skills": { "melee": "1", "scouting": "1", "insight": "2", "survival": "2" }
+					"attributes": {
+						"strength": "4",
+						"agility": "3",
+						"wits": "5",
+						"empathy": "3"
+					},
+					"skills": {
+						"melee": "1",
+						"scouting": "1",
+						"insight": "2",
+						"survival": "2"
+					}
 				}
 			}
 		},
@@ -539,11 +822,7 @@
 			"key": "wolfkin",
 			"name": "Полуволк",
 			"weight": 2,
-			"age": [
-				[13, 20],
-				[21, 40],
-				[41, 65]
-			],
+			"age": [[13, 20], [21, 40], [41, 65]],
 			"talent": "Hunting Instincts",
 			"childhood": {
 				"howler": {
@@ -551,31 +830,66 @@
 					"name": "Ревун",
 					"weight": 1,
 					"description": "Ты вырос среди ревунов — полуволков, которые были сами себе хозяевами и свободно ходили от клана к клану. Тебя научили рассказывать трагические легенды, передаваемые ревунами из поколения в поколение.",
-					"attributes": { "strength": "3", "agility": "4", "wits": "4", "empathy": "4" },
-					"skills": { "lore": "1", "manipulation": "1", "performance": "3", "survival": "1" }
+					"attributes": {
+						"strength": "3",
+						"agility": "4",
+						"wits": "4",
+						"empathy": "4"
+					},
+					"skills": {
+						"lore": "1",
+						"manipulation": "1",
+						"performance": "3",
+						"survival": "1"
+					}
 				},
 				"hunter": {
 					"key": "hunter",
 					"name": "Охотник",
 					"weight": 1,
 					"description": "Ещё щенком ты понял, что кровь — это жизнь. Опытные охотники научили тебя не только убивать зверей, но и уважать их. Так ты и поступаешь. И делишь всех вокруг на охотников и добычу...",
-					"attributes": { "strength": "4", "agility": "4", "wits": "4", "empathy": "3" },
-					"skills": { "endurance": "1", "melee": "1", "scouting": "2", "survival": "2" }
+					"attributes": {
+						"strength": "4",
+						"agility": "4",
+						"wits": "4",
+						"empathy": "3"
+					},
+					"skills": {
+						"endurance": "1",
+						"melee": "1",
+						"scouting": "2",
+						"survival": "2"
+					}
 				},
 				"outcast": {
 					"key": "outcast",
 					"name": "Изгой",
 					"weight": 1,
 					"description": "Другие щенки бегали со стаей, но тебя из неё выгнали. Ты в одиночку учился выживать в лесу и узнал, что другие народы могут оказаться добрее, чем твой собственный. Но однажды ты найдёшь путь домой.",
-					"attributes": { "strength": "4", "agility": "3", "wits": "5", "empathy": "3" },
-					"skills": { "melee": "1", "scouting": "1", "insight": "2", "survival": "2" }
+					"attributes": {
+						"strength": "4",
+						"agility": "3",
+						"wits": "5",
+						"empathy": "3"
+					},
+					"skills": {
+						"melee": "1",
+						"scouting": "1",
+						"insight": "2",
+						"survival": "2"
+					}
 				},
 				"tracker": {
 					"key": "tracker",
 					"name": "Ищейка",
 					"weight": 1,
 					"description": "Ты рано понял, что обладаешь более чутким нюхом, чем товарищи, и можешь находить удивительные вещи, просто доверившись своему носу.",
-					"attributes": { "strength": "3", "agility": "4", "wits": "5", "empathy": "3" },
+					"attributes": {
+						"strength": "3",
+						"agility": "4",
+						"wits": "5",
+						"empathy": "3"
+					},
 					"skills": { "stealth": "2", "scouting": "3", "survival": "1" }
 				},
 				"fighter": {
@@ -583,7 +897,12 @@
 					"name": "Боец",
 					"weight": 1,
 					"description": "Ты был самым сильным щенком в помёте и заводилой в играх с братьями и сёстрами. Когда ты подрос, старейшины клана заметили, что ты прирождённый боец, и обучили тебя секретам битвы.",
-					"attributes": { "strength": "5", "agility": "4", "wits": "3", "empathy": "3" },
+					"attributes": {
+						"strength": "5",
+						"agility": "4",
+						"wits": "3",
+						"empathy": "3"
+					},
 					"skills": { "might": "2", "melee": "3", "move": "1" }
 				},
 				"child of the forest": {
@@ -591,7 +910,12 @@
 					"name": "Дитя леса",
 					"weight": 1,
 					"description": "Тебя с детства тянуло к лесным плодам, цветам, травам и озёрам. Ты многое узнал от кланового травника: как по запаху отличить один цветок от другого, какие растения поддерживают жизнь, а какие её обрывают.",
-					"attributes": { "strength": "3", "agility": "4", "wits": "4", "empathy": "4" },
+					"attributes": {
+						"strength": "3",
+						"agility": "4",
+						"wits": "4",
+						"empathy": "4"
+					},
 					"skills": { "lore": "2", "scouting": "1", "survival": "3" }
 				}
 			}
@@ -600,11 +924,7 @@
 			"key": "dwarf",
 			"name": "Гном",
 			"weight": 2,
-			"age": [
-				[20, 40],
-				[41, 80],
-				[81, 160]
-			],
+			"age": [[20, 40], [41, 80], [81, 160]],
 			"talent": "True Grit",
 			"childhood": {
 				"smith's apprentice": {
@@ -612,48 +932,108 @@
 					"name": "Ученик кузнеца",
 					"weight": 1,
 					"description": "В жаркой кузнице ты всегда чувствовал себя как дома. На протяжении многих дней ты изучал секреты стали в отсветах огня горна.",
-					"attributes": { "strength": "5", "agility": "3", "wits": "4", "empathy": "3" },
-					"skills": { "might": "1", "endurance": "1", "melee": "1", "crafting": "3" }
+					"attributes": {
+						"strength": "5",
+						"agility": "3",
+						"wits": "4",
+						"empathy": "3"
+					},
+					"skills": {
+						"might": "1",
+						"endurance": "1",
+						"melee": "1",
+						"crafting": "3"
+					}
 				},
 				"mineborn": {
 					"key": "mineborn",
 					"name": "Прирожденный шахтер",
 					"weight": 1,
 					"description": "Уже в детстве ты научился ориентироваться в темноте, царящей глубоко под землёй. Ты отлично чувствуешь себя среди холодных камней.",
-					"attributes": { "strength": "4", "agility": "4", "wits": "4", "empathy": "3" },
-					"skills": { "endurance": "2", "crafting": "1", "scouting": "1", "survival": "2" }
+					"attributes": {
+						"strength": "4",
+						"agility": "4",
+						"wits": "4",
+						"empathy": "3"
+					},
+					"skills": {
+						"endurance": "2",
+						"crafting": "1",
+						"scouting": "1",
+						"survival": "2"
+					}
 				},
 				"scout's apprentice": {
 					"key": "scout's apprentice",
 					"name": "Ученик разведчика",
 					"weight": 1,
 					"description": "Ты всегда был внимателен и любопытен. Скоро это заметили в клане, и тебя назначили разведчиком. Много долгих дней ты провёл в укрытии, наблюдая за опасностями, которыми полны Запретные земли.",
-					"attributes": { "strength": "4", "agility": "4", "wits": "4", "empathy": "3" },
-					"skills": { "melee": "1", "stealth": "2", "scouting": "2", "survival": "1" }
+					"attributes": {
+						"strength": "4",
+						"agility": "4",
+						"wits": "4",
+						"empathy": "3"
+					},
+					"skills": {
+						"melee": "1",
+						"stealth": "2",
+						"scouting": "2",
+						"survival": "1"
+					}
 				},
 				"guardian": {
 					"key": "guardian",
 					"name": "Ученик воина",
 					"weight": 1,
 					"description": "Ты учился у гордого могучего воина из своего клана и выполнял обязанности оруженосца. Эта работа была изнурительна, но ты многое узнал. Ты умеешь сражаться, обуздывать свой нрав и готов смело встретить любую опасность.",
-					"attributes": { "strength": "5", "agility": "4", "wits": "3", "empathy": "3" },
-					"skills": { "might": "2", "endurance": "1", "melee": "2", "marksmanship": "1" }
+					"attributes": {
+						"strength": "5",
+						"agility": "4",
+						"wits": "3",
+						"empathy": "3"
+					},
+					"skills": {
+						"might": "2",
+						"endurance": "1",
+						"melee": "2",
+						"marksmanship": "1"
+					}
 				},
 				"carver": {
 					"key": "carver",
 					"name": "Резчик",
 					"weight": 1,
 					"description": "Гномы всегда вели раскопки вглубь и вниз, создавая жизнь из скал. Ещё в детстве тебя завораживало искусство придавать камню форму согласно своему замыслу. Ты стал резчиком — инженером и строителем, который в равной степени пользуется и грубой силой, и возможностями разума.",
-					"attributes": { "strength": "4", "agility": "3", "wits": "5", "empathy": "3" },
-					"skills": { "might": "1", "crafting": "2", "lore": "2", "survival": "1" }
+					"attributes": {
+						"strength": "4",
+						"agility": "3",
+						"wits": "5",
+						"empathy": "3"
+					},
+					"skills": {
+						"might": "1",
+						"crafting": "2",
+						"lore": "2",
+						"survival": "1"
+					}
 				},
 				"hard studies": {
 					"key": "hard studies",
 					"name": "Усердный ученик",
 					"weight": 1,
 					"description": "Кто-то начитанный взял тебя под свою опеку и посадил исследовать старинные рукописи. Дни тянулись долго, а учёба шла тяжело, но в конце концов ты понял, что главное в этом мире — знания.",
-					"attributes": { "strength": "3", "agility": "3", "wits": "5", "empathy": "4" },
-					"skills": { "crafting": "1", "lore": "3", "insight": "1", "manipulation": "1" }
+					"attributes": {
+						"strength": "3",
+						"agility": "3",
+						"wits": "5",
+						"empathy": "4"
+					},
+					"skills": {
+						"crafting": "1",
+						"lore": "3",
+						"insight": "1",
+						"manipulation": "1"
+					}
 				}
 			}
 		},
@@ -669,23 +1049,48 @@
 					"name": "Одиночка",
 					"weight": 1,
 					"description": "Тебе всегда было неуютно среди своего народа, ты держался сам по себе и рос отдельно от сверстников. Ты видел то, что не видели они, и делал то, что они не могли даже представить.",
-					"attributes": { "strength": "4", "agility": "3", "wits": "5", "empathy": "3" },
-					"skills": { "melee": "1", "scouting": "1", "insight": "2", "survival": "2" }
+					"attributes": {
+						"strength": "4",
+						"agility": "3",
+						"wits": "5",
+						"empathy": "3"
+					},
+					"skills": {
+						"melee": "1",
+						"scouting": "1",
+						"insight": "2",
+						"survival": "2"
+					}
 				},
 				"fighter": {
 					"key": "fighter",
 					"name": "Воин",
 					"weight": 1,
 					"description": "Ты рано увлёкся оружием. Вскоре нашёлся воин, который взялся за твоё обучение и открыл тебе тайны боя. Ты тренировался долго и упорно, и наступил момент, когда ты сравнялся с наставником в мастерстве.",
-					"attributes": { "strength": "4", "agility": "5", "wits": "3", "empathy": "3" },
-					"skills": { "might": "1", "endurance": "1", "melee": "2", "marksmanship": "2" }
+					"attributes": {
+						"strength": "4",
+						"agility": "5",
+						"wits": "3",
+						"empathy": "3"
+					},
+					"skills": {
+						"might": "1",
+						"endurance": "1",
+						"melee": "2",
+						"marksmanship": "2"
+					}
 				},
 				"child of the forest": {
 					"key": "child of the forest",
 					"name": "Дитя леса",
 					"weight": 1,
 					"description": "Тебя с детства тянуло к лесным плодам, цветам, травам и озёрам. Ты многое узнал от опытного травника: как по запаху отличить один цветок от другого, какие растения поддерживают жизнь, а какие её обрывают.",
-					"attributes": { "strength": "3", "agility": "4", "wits": "4", "empathy": "4" },
+					"attributes": {
+						"strength": "3",
+						"agility": "4",
+						"wits": "4",
+						"empathy": "4"
+					},
 					"skills": { "lore": "2", "scouting": "1", "survival": "3" }
 				},
 				"hard studies": {
@@ -693,15 +1098,30 @@
 					"name": "Усердный ученик",
 					"weight": 1,
 					"description": "Кто-то начитанный взял тебя под свою опеку и посадил исследовать старинные рукописи. Дни тянулись долго, а учёба шла тяжело, но в конце концов ты понял, что главное в этом мире — знания.",
-					"attributes": { "strength": "3", "agility": "3", "wits": "5", "empathy": "4" },
-					"skills": { "crafting": "1", "lore": "3", "insight": "1", "manipulation": "1" }
+					"attributes": {
+						"strength": "3",
+						"agility": "3",
+						"wits": "5",
+						"empathy": "4"
+					},
+					"skills": {
+						"crafting": "1",
+						"lore": "3",
+						"insight": "1",
+						"manipulation": "1"
+					}
 				},
 				"wanderer": {
 					"key": "wanderer",
 					"name": "Странник",
 					"weight": 1,
 					"description": "Ты не нашёл постоянного пристанища, и твоим домом стала дорога. Каждый вечер ты привык искать укрытие от кровавого тумана. Ты уже повидал больше мест, чем многие обитатели этих земель увидят за всю свою жизнь.",
-					"attributes": { "strength": "4", "agility": "4", "wits": "3", "empathy": "4" },
+					"attributes": {
+						"strength": "4",
+						"agility": "4",
+						"wits": "3",
+						"empathy": "4"
+					},
 					"skills": {
 						"endurance": "1",
 						"melee": "1",
@@ -715,7 +1135,12 @@
 					"name": "Ученик друида",
 					"weight": 1,
 					"description": "Ты учился у друида и узнал всё, что смог, о священных мистериях, ритуалах и колдовстве. Твой наставник давно умер или покинул эти места, но часть своей мудрости успел передать тебе.",
-					"attributes": { "strength": "3", "agility": "4", "wits": "5", "empathy": "3" },
+					"attributes": {
+						"strength": "3",
+						"agility": "4",
+						"wits": "5",
+						"empathy": "3"
+					},
 					"skills": {
 						"scouting": "1",
 						"lore": "1",
@@ -1185,8 +1610,17 @@
 			"key": "rider",
 			"name": "Всадник",
 			"weight": 1,
-			"paths": ["Path of the Companion", "Path of the Knight", "Path of the Plains"],
-			"equipment": ["Riding Horse", ["Spear", "Handaxe"], ["Short Bow", "Sling"], "Trade Goods"],
+			"paths": [
+				"Path of the Companion",
+				"Path of the Knight",
+				"Path of the Plains"
+			],
+			"equipment": [
+				"Riding Horse",
+				["Spear", "Handaxe"],
+				["Short Bow", "Sling"],
+				"Trade Goods"
+			],
 			"consumables": {
 				"food": 8,
 				"water": 8,
@@ -1369,7 +1803,12 @@
 			"key": "sorcerer",
 			"name": "Колдун",
 			"weight": 1,
-			"paths": ["Path of Blood", "Path of Death", "Path of Signs", "Path of Stone"],
+			"paths": [
+				"Path of Blood",
+				"Path of Death",
+				"Path of Signs",
+				"Path of Stone"
+			],
 			"equipment": [["Staff", "Knife"], "Trade Goods"],
 			"consumables": {
 				"food": 6,

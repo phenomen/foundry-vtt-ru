@@ -10,7 +10,7 @@ export function init() {
 		restricted: true,
 		onChange: (value) => {
 			window.location.reload();
-		}
+		},
 	});
 
 	/* Настройка Babele */
@@ -24,17 +24,20 @@ export function init() {
 		restricted: true,
 		onChange: (value) => {
 			window.location.reload();
-		}
+		},
 	});
 
 	/* Регистрация Babele */
-	if (typeof Babele !== "undefined" && game.settings.get("ru-ru", "compendiumTranslation")) {
+	if (
+		typeof Babele !== "undefined" &&
+		game.settings.get("ru-ru", "compendiumTranslation")
+	) {
 		Babele.get().register({
 			module: "ru-ru",
 			lang: "ru",
 			dir: game.settings.get("ru-ru", "altTranslation")
 				? "compendium/dnd5e-alt"
-				: "compendium/dnd5e"
+				: "compendium/dnd5e",
 		});
 
 		game.settings.set("babele", "showOriginalName", true);
@@ -45,17 +48,18 @@ export function init() {
 					"ru-ru",
 					"Localization.prototype._getTranslations",
 					loadAltTranslation,
-					"WRAPPER"
+					"WRAPPER",
 				);
 			} else {
 				new Dialog({
 					title: "Альтернативный перевод",
-					content: `<p>Для использования альтернативного перевода требуется активировать модуль <b>libWrapper</b></p>`,
+					content:
+						"<p>Для использования альтернативного перевода требуется активировать модуль <b>libWrapper</b></p>",
 					buttons: {
 						done: {
-							label: "Хорошо"
-						}
-					}
+							label: "Хорошо",
+						},
+					},
 				}).render(true);
 			}
 		}
@@ -70,7 +74,9 @@ export function init() {
 					let translation;
 
 					if (Array.isArray(translations)) {
-						translation = translations.find((t) => t.id === data._id || t.id === data.name);
+						translation = translations.find(
+							(t) => t.id === data._id || t.id === data.name,
+						);
 					} else {
 						translation = translations[data.name];
 					}
@@ -86,30 +92,31 @@ export function init() {
 						text: { content: translation.text ?? data.text?.content },
 						video: {
 							width: translation.width ?? data.video?.width,
-							height: translation.height ?? data.video?.height
+							height: translation.height ?? data.video?.height,
 						},
 						system: { tooltip: translation.tooltip ?? data.system.tooltip },
-						translated: true
+						translated: true,
 					});
 				});
-			}
+			},
 		});
 	} else {
 		if (game.settings.get("ru-ru", "compendiumTranslation")) {
 			new Dialog({
 				title: "Перевод библиотек",
-				content: `<p>Для перевода библиотек системы D&D5E требуется активировать модуль <b>Babele</b>. Вы можете отключить перевод библиотек в настройках модуля</p>`,
+				content:
+					"<p>Для перевода библиотек системы D&D5E требуется активировать модуль <b>Babele</b>. Вы можете отключить перевод библиотек в настройках модуля</p>",
 				buttons: {
 					done: {
-						label: "Хорошо"
+						label: "Хорошо",
 					},
 					never: {
 						label: "Больше не показывать",
 						callback: () => {
 							game.settings.set("ru-ru", "compendiumTranslation", false);
-						}
-					}
-				}
+						},
+					},
+				},
 			}).render(true);
 		}
 	}
@@ -157,14 +164,14 @@ async function loadAltTranslation(wrapped, lang) {
 		"modules/ru-ru/i18n/modules/midi-qol-alt.json",
 		"modules/ru-ru/i18n/modules/tidy5e-sheet-alt.json",
 		"modules/ru-ru/i18n/modules/token-action-hud-dnd5e-alt.json",
-		"modules/ru-ru/i18n/modules/ready-set-roll-5e-alt.json"
+		"modules/ru-ru/i18n/modules/ready-set-roll-5e-alt.json",
 	];
 
 	const promises = files.map((file) => this._loadTranslationFile(file));
 
 	await Promise.all(promises);
-	for (let p of promises) {
-		let altJson = await p;
+	for (const p of promises) {
+		const altJson = await p;
 		foundry.utils.mergeObject(translations, altJson, { inplace: true });
 	}
 
@@ -173,30 +180,39 @@ async function loadAltTranslation(wrapped, lang) {
 
 async function updateAA() {
 	const translatedSettings = await foundry.utils.fetchJsonWithTimeout(
-		"/modules/ru-ru/i18n/modules/aa-autorec.json"
+		"/modules/ru-ru/i18n/modules/aa-autorec.json",
 	);
 
-	const currentSettings = AutomatedAnimations.AutorecManager.getAutorecEntries();
+	const currentSettings =
+		AutomatedAnimations.AutorecManager.getAutorecEntries();
 
 	const newSettings = {
 		melee: mergeArrays(currentSettings.melee, translatedSettings.melee),
 		range: mergeArrays(currentSettings.range, translatedSettings.range),
 		ontoken: mergeArrays(currentSettings.ontoken, translatedSettings.ontoken),
-		templatefx: mergeArrays(currentSettings.templatefx, translatedSettings.templatefx),
+		templatefx: mergeArrays(
+			currentSettings.templatefx,
+			translatedSettings.templatefx,
+		),
 		aura: mergeArrays(currentSettings.aura, translatedSettings.aura),
 		preset: mergeArrays(currentSettings.preset, translatedSettings.preset),
 		aefx: mergeArrays(currentSettings.aefx, translatedSettings.aefx),
-		version: "5"
+		version: "5",
 	};
 
-	AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify(newSettings), {
-		submitAll: true
-	});
+	AutomatedAnimations.AutorecManager.overwriteMenus(
+		JSON.stringify(newSettings),
+		{
+			submitAll: true,
+		},
+	);
 }
 
 function mergeArrays(array1, array2) {
 	const mergedArray = array1.map((item1) => {
-		const matchingItem = array2.find((item2) => item2.metaData.label === item1.metaData.label);
+		const matchingItem = array2.find(
+			(item2) => item2.metaData.label === item1.metaData.label,
+		);
 		if (matchingItem) {
 			return { ...item1, ...matchingItem };
 		}
