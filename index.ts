@@ -1,6 +1,5 @@
 import { cp, mkdir, readdir } from "node:fs/promises";
-// biome-ignore lint/style/useNodejsImportProtocol: it's a bun import
-import { parseArgs } from "util";
+import { parseArgs } from "node:util";
 import { transform } from "lightningcss";
 import manifest from "./public/module.json";
 
