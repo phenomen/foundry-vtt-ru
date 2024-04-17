@@ -126,17 +126,12 @@
 }
 
 .swade-official .item-controls button {
-	padding: 0;
 	font-family: var(--font-sans-condensed);
 	font-size: var(--text-xs);
 }
 
 .swade-official .section-header .name {
 	font-weight: 600;
-}
-
-.swade.sheet.actor .status-container {
-	flex-basis: 123px;
 }
 
 .swade-official .charname {
@@ -164,6 +159,24 @@
 
 .swade-app button {
 	font-family: var(--font-sans-condensed);
+}
+
+.attribute-manager .index-card header {
+	font-size: 1rem;
+}
+
+.swade-official .branding {
+	background-image: url('../images/swade/logo.webp');
+	width: auto;
+	height: 95px;
+}
+
+/* Fix for gigantic trash icon */
+.inline-delete {
+	& .fa-3x {
+		font-size: 2em;
+
+	}
 }
 
 /* DEADLANDS */
@@ -242,10 +255,4 @@
 
 .swpf-sheet .branding::before {
 	display: none;
-}
-
-.swade-official .branding {
-	background-image: url(../images/swade/logo.webp);
-	width: auto;
-	height: 95px;
 }
