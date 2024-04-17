@@ -10,7 +10,7 @@
 
 @font-face {
 	font-family: "Treacherous Corners";
-	src: url("../fonts/Beaufort/Beaufort-Medium.ttf") format("truetype");
+	src: url("../fonts/Beaufort/Beaufort-Bold.ttf") format("truetype");
 }
 
 /* Noto Serif */
@@ -165,12 +165,6 @@
 	font-size: 1rem;
 }
 
-.swade-official .branding {
-	background-image: url('../images/swade/logo.webp');
-	width: auto;
-	height: 95px;
-}
-
 /* Fix for gigantic trash icon */
 .inline-delete {
 	& .fa-3x {
@@ -195,10 +189,39 @@
 	font-family: var(--font-serif);
 }
 
-.deadlands-sheet .tabs .item {
-	font-family: "Roboto Slab";
-	font-weight: bold;
-	font-size: 0.9em;
+.deadlands-sheet {
+	& .tabs .item {
+		font-family: "Roboto Slab";
+		font-weight: bold;
+		font-size: 0.9em;
+	}
+
+	& .sheet-body {
+		padding: 1rem;
+	}
+
+	& .attribute-list {
+		column-gap: 1px;
+	}
+
+	& .character-detail {
+		font-weight: 600;
+
+		& input,
+		& button {
+			font-weight: 600;
+		}
+	}
+
+	& .fatigue,
+	& .wounds {
+		font-family: "Roboto Slab";
+		font-weight: 700;
+
+		& input {
+			font-weight: 700;
+		}
+	}
 }
 
 /* PATHFINDER */
@@ -207,9 +230,7 @@
 	font-family: var(--font-serif);
 }
 
-.swpf-sheet .sheet-body {
-	font-family: var(--font-fancy);
-}
+
 
 .swpf-core h2.trap,
 .swpf-core h2.red-award,
@@ -242,17 +263,61 @@
 	font-family: var(--font-fancy);
 }
 
-.swpf-sheet .tabs .item {
-	font-family: var(--font-fancy);
-	font-size: 1em;
-	font-weight: 600;
-}
+
 
 .swpf-compendium .window-content {
 	font-family: var(--font-serif);
 	font-size: 11pt;
 }
 
-.swpf-sheet .branding::before {
-	display: none;
+.swpf-sheet {
+
+	& .sheet-body {
+		font-family: var(--font-fancy);
+	}
+
+	& .character-detail {
+		font-weight: 600;
+
+		& input,
+		& button {
+			font-weight: 600;
+		}
+	}
+
+	& .fatigue,
+	& .wounds {
+		font-weight: 700;
+
+		& input {
+			font-weight: 700;
+		}
+	}
+
+	& .tabs .item {
+		font-family: var(--font-fancy);
+		font-size: 1em;
+		font-weight: 600;
+	}
+
+	& .window-content {
+		padding: 4px;
+	}
+
+	& .gu-1 {
+		padding: 0px;
+		height: 13em;
+		left: 0px;
+		top: 0px;
+		right: 0px;
+		width: 110%;
+		transform: scaleY(1);
+	}
+
+
+}
+
+.swpf-sheet,
+.swpf-sheet.swade-official.actor {
+	border-image-width: 8px;
 }
