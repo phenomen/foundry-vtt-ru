@@ -100,15 +100,15 @@
 		"Shields": "Щиты",
 		"Biography": "Биография",
 		"Shaken": "В шоке",
-		"Distr": "Отвлечены",
-		"Vuln": "Уязвимы",
-		"Stunned": "Оглушены",
-		"Entangled": "Опутаны",
-		"Bound": "Схвачены",
-		"Aiming": "Прицеливание",
+		"Distr": "Отвлечён",
+		"Vuln": "Уязвим",
+		"Stunned": "Оглушен",
+		"Entangled": "Опутан",
+		"Bound": "Схвачен",
+		"Aiming": "Целится",
 		"Berserk": "Берсерк",
-		"Defending": "Оборона",
-		"Flying": "Полёт",
+		"Defending": "Обороняется",
+		"Flying": "Летит",
 		"Unfamiliar": {
 			"2": "Незнакомый (-2)",
 			"4": "Незнакомый (-4)"
@@ -126,17 +126,17 @@
 		"ActAfterCurrentCombatant": "Ходить после текущего участника боя",
 		"ActBeforeCurrentCombatant": "Ходить сейчас",
 		"LoseTurn": "Включить потерю хода",
-		"Frightened": "Испуганы",
-		"Encumbered": "Перегружены",
-		"Prone": "Распластаны",
-		"BleedingOut": "Кровоточите",
-		"Diseased": "Болеете",
+		"Frightened": "Испуган",
+		"Encumbered": "Перегружен",
+		"Prone": "Распластан",
+		"BleedingOut": "Истекает кровью",
+		"Diseased": "Болеет",
 		"HeartAttack": "Сердечный приступ",
 		"OnFire": "В ударе",
-		"Poisoned": "Отравлены",
+		"Poisoned": "Отравлен",
 		"Reach": "Расстояние",
 		"Torch": "Факел",
-		"Invisible": "Невидимость",
+		"Invisible": "Невидим",
 		"ColdBodied": "Хладнокровие",
 		"Smite": "Сокрушение",
 		"Armor": "Броня",
@@ -378,7 +378,7 @@
 		"TraitRolls": "Проверки параметра",
 		"Trait": "Параметр",
 		"AltTrait": "Параметр действия",
-		"ClickSuggestions": "[Click] for suggestions",
+		"ClickSuggestions": "[Нажмите] для подсказок",
 		"Quick": "Быстрый",
 		"BonusDamage": "Дополнительный урон",
 		"Joker": "Джокер",
@@ -387,7 +387,7 @@
 		"DmgRolls": "Проверки урона",
 		"SubtractPPDesc": "Вычесть цену ПС из доступных ПС",
 		"AddPPDesc": "Добавить цену ПС к доступным ПС",
-		"RightClickZoom": "[Right-Click] to Zoom",
+		"RightClickZoom": "[ПКМ] для приближения",
 		"SysMigrationWarning": "Данные вашего мира SWADE загружены из очень старой версии Foundry и не могут быть гарантировано перенесены в новую версию. Вы можете попробовать, но могут возникнуть ошибки.",
 		"DeckShuffled": "Колода была автоматически перетасована",
 		"BasePace": "Базовый шаг",
@@ -425,7 +425,7 @@
 		"Yes": "Да",
 		"No": "Нет",
 		"Headquarters": {
-			"Advantage": "Advantage",
+			"Advantage": "Преимущество",
 			"Complication": "Complication",
 			"Form": "Form",
 			"Description": "Description",
@@ -501,9 +501,9 @@
 		"ModDamage": "Мод. урона",
 		"Snapfire": "Позиционное",
 		"UnstablePlatform": "Ненадёжная поверхность",
-		"Weakness": "Weakness",
-		"Resistance": "Resistance",
-		"CannotAddAncestryToAncestry": "You cannot add a ancestry/archetype to an ancestry/archetype!",
+		"Weakness": "Уязвимость",
+		"Resistance": "Устойчивость",
+		"CannotAddAncestryToAncestry": "Нельзя добавить народ/архетип к народу/архетипу!",
 		"LayOutChaseWithDeck": "Использовать колоду для погони",
 		"ClearChaseCards": "Убрать карты погони со сцены",
 		"NoSceneAvailable": "Сцена не доступна, или вы отключили сцены",
@@ -633,7 +633,7 @@
 			},
 			"CreateInitChat": {
 				"Name": "Отправка инициативы в чат",
-				"Hint": "When Action Cards are drawn, Foundry will output the drawn Action Cards to the Chat if enabled."
+				"Hint": "При получении карт действий, Foundry выводит вытянутую карту в чат."
 			},
 			"AutoInit": {
 				"Name": "Автоматическая инициатива",
@@ -965,11 +965,11 @@
 			"Benny": "Фишка",
 			"GMBenny": "Фишка ведущего"
 		},
-		"LoadedAmmo": "Loaded Ammunition",
+		"LoadedAmmo": "Заряженные боеприпасы",
 		"DamageApplicator": {
 			"ApplyDamage": {
-				"Label": "Resolve Damage",
-				"Hint": "[Click] to resolve damage with the selected Token"
+				"Label": "Нанести урон",
+				"Hint": "[Нажмите] для нанесения урона выбранному токену"
 			},
 			"SoakModifier": "Мод. проверки на прочность",
 			"WoundsAboutToBeTaken": "<p><strong>{name}</strong> может получить <strong>{wounds}</strong>!</p>",
@@ -979,57 +979,57 @@
 				"UnwoundedTitle": "Adjust Damage to Determine Status for {name}?",
 				"WoundedPrompt": "<p>{name} может получить {wounds}. Пройти проверку на прочность?</p>",
 				"ShakenPrompt": "<p>{name} может быть шокирован.</p>",
-				"UnharmedPrompt": "<p>{name} might be unharmed.</p>",
+				"UnharmedPrompt": "<p>{name} может быть невредим.</p>",
 				"Benny": "Потратить фишку для проверки на прочность",
 				"GMBenny": "Потратить фишку ведущего  для проверки на прочность",
 				"Free": "Свободная проверка на прочность",
 				"TakeWounds": "Получить {wounds}",
-				"AdjustDamage": "Adjust Damage",
+				"AdjustDamage": "Настроить урон",
 				"ApplyShaken": "Применить статус шока",
-				"Accept": "Accept",
+				"Accept": "Принять",
 				"NoVehicleSoak": "Проверка на прочность для транспорта недоступна"
 			},
 			"RerollSoakDialog": {
 				"Title": "Перебросить проверку на прочность для {name}?",
 				"Prompt": "<p>{name} может получить {wounds}. Перебросить проверку на прочность?</p>",
-				"PromptCritFail": "<p>{name} is about to take {wounds}. A critical fail is preventing rerolls.</p>",
+				"PromptCritFail": "<p>{name} может получить {wounds}. Критический провал делает переброс недоступным.</p>",
 				"Benny": "Потратить фишку для переброса",
 				"GMBenny": "Потратить фишку ведущего для переброса",
 				"Free": "Свободный переброс",
-				"TakeWounds": "Take {wounds}"
+				"TakeWounds": "Получить {wounds}"
 			},
-			"AdjustDamagePrompt": "<p>Adjust damage for any abilities and effects {name} might have.</p>",
+			"AdjustDamagePrompt": "<p>Настройте урон от особенностей и эффектов у {name}.</p>",
 			"Result": {
-				"NoSignificantDamage": "<p><strong>{name}</strong> suffers no significant damage.</p>",
+				"NoSignificantDamage": "<p><strong>{name}</strong> не получает существенного урона.</p>",
 				"SoakedAll": "<p><strong>{name}</strong> проходит проверку на прочность для всех ранений и не в шоке!</p>",
 				"IsShaken": "<p><strong>{name}</strong> теперь <strong>в шоке</strong>!</p>",
 				"IsShakenWithWounds": "<p><strong>{name}</strong> теперь <strong>в шоке</strong> с <strong>{wounds}</strong>!</p>",
-				"IsIncapacitated": "<p><strong>{name}</strong> is <strong>Incapacitated!</strong></p>"
+				"IsIncapacitated": "<p><strong>{name}</strong> теперь <strong>при смерти!</strong></p>"
 			},
 			"Incapacitation": {
 				"InjuryRoll": "Проверка Выносливости для сопротивления увечью при смерти",
-				"Dies": "<p><strong>{name}</strong> dies from the damage!</p>",
-				"PermanentInjury": "<p><strong>{name}</strong> suffers a permanent injury and is <strong>Bleeding Out!</strong></p>",
-				"PermanentInjuryHND": "<p><strong>{name}</strong> suffers a permanent injury!</p>",
-				"TemporaryInjury": "<p><strong>{name}</strong> suffers an injury that will go away when all Wounds are healed.</p>",
-				"ShortInjury": "<p><strong>{name}</strong> suffers an injury that will go away in 24 hours, or when all Wounds are healed (whichever is sooner).</p>",
-				"TakeFail": "Suffer a permanent injury",
-				"TakeSuccess": "Suffer an injury that goes away when all wounds are healed",
+				"Dies": "<p><strong>{name}</strong> погибает от урона!</p>",
+				"PermanentInjury": "<p><strong>{name}</strong> получает постоянное увечье и <strong>истекает кровью!</strong></p>",
+				"PermanentInjuryHND": "<p><strong>{name}</strong> получает постоянное увечье!</p>",
+				"TemporaryInjury": "<p><strong>{name}</strong> получает увечье, пока не излечит все ранения.</p>",
+				"ShortInjury": "<p><strong>{name}</strong> получает увечье, пока не излечит все ранения или не пройдет 24 часа.</p>",
+				"TakeFail": "Получить постоянное увечье",
+				"TakeSuccess": "Получить временное увечье",
 				"Title": "Перебросить степень увечья для {name}?",
 				"Prompt": "<p>{name} может получить увечье. Перебросить проверку Выносливости?</p>"
 			},
-			"NoInjuryTable": "No Injury Table has been selected. See SWADE Settings Configuration",
-			"NoTargetsSelected": "Please select a target to apply the damage to."
+			"NoInjuryTable": "Таблицы увечий не выбрана. Настройте её в настройках системы SWADE.",
+			"NoTargetsSelected": "Выберите цель для урона"
 		},
 		"NumberOfDice": {
 			"Label": "Кости",
 			"Hint": "Сколько костей параметра бросить для этого действия"
 		},
 		"ResourcesUsed": {
-			"Label": "Resources Used",
-			"Hint": "How much of an arbitrary resource is used for this action"
+			"Label": "Использует ресурсы",
+			"Hint": "Сколько ресурсов использует это действие"
 		},
-		"CouldNotFindMacro": "Could not find Macro with UUID {uuid}",
+		"CouldNotFindMacro": "Не удалось найти макрос с UUID {uuid}",
 		"Magazine": {
 			"NoneLoaded": "No magazine loaded",
 			"Select": "Select a magazine"
