@@ -731,7 +731,7 @@
 			},
 			"HardChoices": {
 				"Name": "Сложный выбор",
-				"Hint": "Checking this will enable the Hard Choices setting rule"
+				"Hint": "Включает ситуационное правило 'Сложный выбор'."
 			},
 			"CardSound": {
 				"Name": "Звук карты",
@@ -752,28 +752,28 @@
 				"Hint": "Персонажи ведущего будут иметь те же деньги, что и персонажи игроков"
 			},
 			"DumbLuck": {
-				"Name": "Dumb Luck",
-				"Hint": "Checking this will enable the Dumb Luck Setting Rule"
+				"Name": "Слепая удача",
+				"Hint": "Включает ситуационное правило 'Слепая удача'."
 			},
 			"WoundCap": {
 				"Name": "Предел ранений",
-				"Hint": "Checking this will enable the Wound Cap Setting Rule when calculating Wounds."
+				"Hint": "Включает ситуационное правило 'Предел ранений' при расчёте ранений."
 			},
 			"UnarmoredHero": {
-				"Name": "Unarmored Hero",
-				"Hint": "Checking this will enable the Unarmored Hero setting rule when rolling to soak"
+				"Name": "Герои без брони",
+				"Hint": "Включает ситуационное правило 'Герои без брони' для проверок на прочность."
 			},
 			"GrittyDamage": {
-				"Name": "Gritty Damage",
-				"Hint": "Checking this will enable the Gritty Damage Setting Rule and allow for selecting the Injury Table to roll."
+				"Name": "Реалистичный урон",
+				"Hint": "Включает ситуационное правило 'Реалистичный урон' для проверки по таблице увечий."
 			},
 			"InjuryTable": {
-				"Name": "Injury Table",
-				"Hint": "Select the appropriate RollTable to automatically roll for Gritty Damage."
+				"Name": "Таблица увечий",
+				"Hint": "Выберите подходящую случайную таблицу, которая будет использоваться для Реалистичного урона."
 			},
 			"HeroesNeverDie": {
-				"Name": "Heroes Never Die",
-				"Hint": "Checking this will enable the Heroes Never Die Setting Rule when determining incapacitation"
+				"Name": "Герои не умирают",
+				"Hint": "Включает ситуационное правило 'Герои не умирают' для проверок при смерти."
 			}
 		},
 		"EffectCallbacks": {
@@ -798,12 +798,12 @@
 				"Success": "Вы держитесь, пока что",
 				"Raise": "Ваше состояние теперь стабильно",
 				"BleedOutModifier": "Мод. снятия кровотечения",
-				"IgnoreWounds": "Bleeding Out Ignore Wounds"
+				"IgnoreWounds": "Кровотечение игнорирует ранения"
 			}
 		},
 		"Validation": {
-			"OnlyOneAncestry": "You can only have one ancestry at a time!",
-			"OnlyOneArchetype": "You can only have one archetype at a time!"
+			"OnlyOneAncestry": "Вы можете принадлежать только к одному народу!",
+			"OnlyOneArchetype": "Вы можете иметь только один архетип!"
 		},
 		"BenniesSpendGM": "Потратить фишку ведущего",
 		"DocumentLink": "Ссылка",
@@ -811,25 +811,25 @@
 		"TargetVulnerable": "Цель уязвима",
 		"WildAttack": "Яростный удар",
 		"DesperateAttack": {
-			"2": "Desperate Attack (2)",
-			"4": "Desperate Attack (4)"
+			"2": "Отчаянная атака (2)",
+			"4": "Отчаянная атака (4)"
 		},
 		"CalledShot": {
-			"HeadOrVitals": "Called Shot: Head or Vitals",
-			"Hand": "Called Shot: Hand",
-			"Limbs": "Called Shot: Limbs"
+			"HeadOrVitals": "Прицельный удар: Голова или важные органы",
+			"Hand": "Прицельный удар: Кисть руки",
+			"Limbs": "Прицельный удар: Конечности"
 		},
 		"ItemType": "Тип предмета",
 		"Source": "Источник",
-		"MigrateCompendium": "Force compendium migration",
+		"MigrateCompendium": "Принудительная миграция библиотеки",
 		"Properties": "Свойства",
 		"AddAction": "Добавление действия",
-		"DialogConfirmPrompt": "Are you sure?",
-		"DeleteEmbeddedActionPrompt": "Are you sure you want to delete the action {action}?",
+		"DialogConfirmPrompt": "Вы уверены?",
+		"DeleteEmbeddedActionPrompt": "Вы уверены, что хотите удалить действие {action}?",
 		"DeleteEmbeddedPowerPrompt": "Вы уверены, что хотите удалить силу {power}?",
 		"TrademarkWeapon": {
 			"Label": "Фирменное оружие",
-			"None": "None",
+			"None": "Нет",
 			"Regular": "Обычное",
 			"Improved": "Улучшенное"
 		},
@@ -839,19 +839,19 @@
 			"Stored": "В контейнере",
 			"Carried": "Переносится ",
 			"Equipped": "Надето",
-			"Installed": "Installed",
+			"Installed": "Установлено",
 			"OffHand": "Неосновная рука",
 			"MainHand": "Основная рука",
 			"TwoHands": "Обе руки",
-			"Added": "Added",
-			"Readied": "Readied"
+			"Added": "Добавлено",
+			"Readied": "Подготовленно"
 		},
 		"DestroyOnEmpty": "Уничтожать при израсходовании",
 		"Charges": "Осталось",
 		"Consumable": {
 			"Use": "Использовать",
 			"Consumables": "Расходуемые",
-			"NotEnoughCharges": "Not enough charges!"
+			"NotEnoughCharges": "Не хватает зарядов!"
 		},
 		"EmptyAncestralAbilitiesHint": "<strong>Warning:</strong> This feature is being deprecated in favor of Item grants. If you are creating a new {ancestry} or {archetype}, drag & drop Items onto the Properties tab instead. The {ancestry} or {archetype} will add those Items to the Actor when applied.",
 		"NoTokenSelectedForResistRoll": "Выберите один токен перед проверкой сопротивления",
@@ -903,7 +903,7 @@
 		"HeavyArmor": "Тяжёлая броня",
 		"HeavyWeapon": "Тяжёлое оружие",
 		"UsesTOC": "Использование оглавления библиотеки",
-		"TOCBlockList": "Compendium TOC Blocklist",
+		"TOCBlockList": "Чёрный список оглавления библиотеки",
 		"TOCSettings": {
 			"Label": "Открыть настройки оглавления библиотеки",
 			"Name": "Настройки оглавления библиотеки",
@@ -926,18 +926,18 @@
 		},
 		"OtherStats": "Другие параметры",
 		"AdditionalStats": {
-			"SelectHint": "Enter a list of options, seperated by semicolon",
-			"Key": "Stat Key",
-			"Label": "Label",
-			"Type": "Type",
+			"SelectHint": "Список вариантов, разделённых точкой с запятой",
+			"Key": "Ключ характеристики",
+			"Label": "Название",
+			"Type": "Тип",
 			"HasMaxValue": "Has Max Value",
 			"Current": "Current {stat}",
 			"Max": "Max {stat}",
 			"KeyErr": "Additional Stat key {invalid} is invalid and has been changed to {key}"
 		},
 		"MessageOnUse": {
-			"Label": "Message on Use",
-			"Hint": "Display a chat message when this item is used"
+			"Label": "Сообщение при использовании",
+			"Hint": "Сообщение в чате при использовании предмета"
 		},
 		"ItemGrants": {
 			"EmptyHint": "Этот предмет не предоставляет другие предметы",
@@ -945,13 +945,13 @@
 			"When": "Предоставляет при"
 		},
 		"IgnFatigue": "Игнорировать усталость",
-		"BaseDamage": "Base Damage",
+		"BaseDamage": "Базовый урон",
 		"RefreshPP": "Обновить пункты силы",
-		"Targets": "Targets:",
+		"Targets": "Цели:",
 		"Rolls": {
-			"RollResult": "Roll Result",
-			"SwadeRoll": "Roll",
-			"DamageRoll": "Damage Roll",
+			"RollResult": "Результат",
+			"SwadeRoll": "Бросок",
+			"DamageRoll": "Бросок урона",
 			"TraitRoll": "Проверка параметра",
 			"Critfail": {
 				"Critfail": "CRITICAL FAILURE",
@@ -959,11 +959,11 @@
 				"Unconfirmed": "Critical Failure Not Confirmed",
 				"Possible": "POSSIBLE CRITICAL FAILURE",
 				"Confirmed": "Critical Failure Confirmation",
-				"Confirm": "Confirm"
+				"Confirm": "Подтвердить"
 			},
 			"Free": "Свободная",
-			"Benny": "Benny",
-			"GMBenny": "GM Benny"
+			"Benny": "Фишка",
+			"GMBenny": "Фишка ведущего"
 		},
 		"LoadedAmmo": "Loaded Ammunition",
 		"DamageApplicator": {
@@ -972,7 +972,7 @@
 				"Hint": "[Click] to resolve damage with the selected Token"
 			},
 			"SoakModifier": "Мод. проверки на прочность",
-			"WoundsAboutToBeTaken": "<p><strong>{name}</strong> is about to take <strong>{wounds}</strong>!</p>",
+			"WoundsAboutToBeTaken": "<p><strong>{name}</strong> может получить <strong>{wounds}</strong>!</p>",
 			"SoakDialog": {
 				"SoakRoll": "Проверка Выносливости на прочность",
 				"WoundedTitle": "Проверка на прочность для {name}?",
@@ -1094,8 +1094,8 @@
 					"Content": "The next three settings control if external items are consumed when a weapon reloads, based on the actor type. If these are unchecked but ammunition management is checked, actors of a given type will consume the shots on an item but can freely reload. This allows for arcade-style ammo management where the reload action is important to track but long-term ammo usage is not."
 				},
 				"CharacterWeapons": {
-					"Title": "Character Weapons",
-					"Content": "A character's weapons are listed in the gear tab."
+					"Title": "Оружие персонажа",
+					"Content": "Оружие персонажа перечислено на вкладке снаряжения."
 				},
 				"ReloadNone": {
 					"Title": "Reload Procedure — None",
@@ -1384,10 +1384,10 @@
 		},
 		"Weapon": {
 			"RangeType": {
-				"Label": "Range Type",
-				"Melee": "Melee",
-				"Ranged": "Ranged",
-				"Mixed": "Mixed"
+				"Label": "Тип",
+				"Melee": "Ближнее",
+				"Ranged": "Дистанционное",
+				"Mixed": "Смешанное"
 			}
 		},
 		"NpcWildCardsOnScene": "NPC Wild Cards on Scene",
