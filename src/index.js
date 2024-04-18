@@ -11,6 +11,7 @@ import { init as INIT_INVESTIGATOR } from "./scripts/investigator.js";
 import { init as INIT_MAUSSRITTER } from "./scripts/mausritter.js";
 import { init as INIT_MOUSEGUARD } from "./scripts/mouseguard.js";
 import { init as INIT_PBTA } from "./scripts/pbta.js";
+import { init as INIT_SWADE } from "./scripts/swade.js";
 import { init as INIT_WFRP4E } from "./scripts/wfrp4e.js";
 import { init as INIT_YZECORIOLIS } from "./scripts/yzecoriolis.js";
 
@@ -97,6 +98,7 @@ Hooks.once("init", async () => {
 		mausritter: INIT_MAUSSRITTER,
 		mouseguard: INIT_MOUSEGUARD,
 		pbta: INIT_PBTA,
+		swade: INIT_SWADE,
 		wfrp4e: INIT_WFRP4E,
 		yzecoriolis: INIT_YZECORIOLIS,
 	};

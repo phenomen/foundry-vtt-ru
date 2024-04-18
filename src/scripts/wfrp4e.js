@@ -1,4 +1,6 @@
+import { setupBabele, translateList, translateValue } from "../shared.js";
 import { patchConfigReady, patchConfigSetup } from "./wfrp4-config.js";
+
 import {
 	translatedCareerClass,
 	translatedDuration,
@@ -16,24 +18,9 @@ import {
 } from "./wfrp4-data.js";
 
 export function init() {
-	if (typeof Babele === "undefined") {
-		new Dialog({
-			title: "Перевод WFRP4",
-			content:
-				"<p>Для перевода системы WFRP4 требуется установить и активировать модули <b>Babele и libWrapper</b><p>",
-			buttons: {
-				done: {
-					label: "Хорошо",
-				},
-			},
-		}).render(true);
-	} else {
-		Babele.get().register({
-			module: "ru-ru",
-			lang: "ru",
-			dir: "compendium/wfrp4e",
-		});
+	setupBabele();
 
+	if (typeof Babele !== "undefined") {
 		Babele.get().registerConverters({
 			convertDuration: (duration) => {
 				if (!duration) return;
@@ -508,18 +495,5 @@ export function init() {
 		Hooks.on("setup", () => {
 			patchConfigSetup();
 		});
-
-		function translateValue(value, translations) {
-			return translations[value] || value;
-		}
-
-		function translateList(value, translations) {
-			return value
-				.split(", ")
-				.map((item) => {
-					return translateValue(item, translations);
-				})
-				.join(", ");
-		}
 	}
 }
