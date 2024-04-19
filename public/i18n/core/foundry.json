@@ -12,6 +12,7 @@
 	"Cancel": "Отмена",
 	"Character": "Персонаж",
 	"Configure": "Настройки",
+	"Confirm": "Применить",
 	"Command": "Command",
 	"Collapse": "Свернуть",
 	"Close": "Закрыть",
@@ -136,6 +137,23 @@
 			"ControlsMenu": "Управление приложением",
 			"ToggleControls": "Переключение управления",
 			"Close": "Закрыть окно"
+		}
+	},
+
+	"AUDIO": {
+		"CHANNELS": {
+			"MUSIC": {
+				"label": "Музыка",
+				"tooltip": "Регулирует локальную громкость плейлистов и звуков, которые определяются как музыка."
+			},
+			"ENVIRONMENT": {
+				"label": "Окружение",
+				"tooltip": "Регулирует локальную громкость плейлистов и фоновых звуков, которые являются окружающей средой."
+			},
+			"INTERFACE": {
+				"label": "Интерфейс",
+				"tooltip": "Регулирует локальную громкость звуков, которые являются интеракциями и интерфейсом."
+			}
 		}
 	},
 
@@ -341,6 +359,7 @@
 	"CONTROLS.NavLabel": "Инструменты сцены",
 	"CONTROLS.Instructions": "Ознакомьтесь с управлением мышью и клавиатурой в Foundry Virtual Tabletop. Пункты отмеченные фиолетовым цветом доступны только GM.",
 	"CONTROLS.GroupToken": "Инструменты токенов",
+	"CONTROLS.CommonForceSnap": "Прикрепление к вершинам сетки",
 	"CONTROLS.BasicSelect": "Выбор токенов",
 	"CONTROLS.BasicSelectP": "Выберите токен под вашим управлением, чтобы увидеть его область зрения. Если токен не выбран, то вы видите всё, что видят все ваши токены.",
 	"CONTROLS.TargetSelect": "Выбор цели",
@@ -391,10 +410,8 @@
 	"CONTROLS.WallSecretHiddenP": "скрытые двери не видны игрокам",
 	"CONTROLS.WallSelect": "Инструмент выделения стен",
 	"CONTROLS.CommonMoveWithoutSnapping": "Перемещение без прикрепления",
-	"CONTROLS.WallSelectEdit": "<span class=\"reference\">двойной щелчок</span>",
-	"CONTROLS.WallSnap": "Прикрепление к сетке",
-	"CONTROLS.WallSnapH": "Прикрепление",
-	"CONTROLS.WallSnapP": "Если активно, то точки стены будут прикрепляться к ближайшим углам сетки.",
+	"CONTROLS.WallSelectEdit": "<span class=\"reference\">двойной ЛКМ</span>",
+	"CONTROLS.WallSnapP": "Точки стены будут прикрепляться к ближайшим вершинам сетки.",
 	"CONTROLS.WallClone": "Клонирование стен",
 	"CONTROLS.WallCloseDoors": "Закрытие всех дверей",
 	"CONTROLS.WallDoorsClosed": "Закрыто {number} дверей",
@@ -427,6 +444,10 @@
 	"CONTROLS.NoteClear": "Удаление заметок",
 	"CONTROLS.GroupRegion": "Управление областями",
 	"CONTROLS.RegionSelect": "Выбрать области",
+	"CONTROLS.RegionRectangle": "Рисование прямоугольника",
+	"CONTROLS.RegionEllipse": "Рисование эллипса",
+	"CONTROLS.RegionPolygon": "Рисование полигона",
+	"CONTROLS.RegionHole": "Создание отверстия",
 	"CONTROLS.ClearAll": "Удаление всех объектов",
 	"CONTROLS.ClearAllHint": "Удалить все объекты {type} со сцены?",
 	"CONTROLS.HeaderGame": "Основное управление",
@@ -455,26 +476,29 @@
 	"CONTROLS.CanvasSelectCancel": "Отмена перетягивания",
 	"CONTROLS.CanvasZoom": "Приближение сцены",
 	"CONTROLS.CharacterSheet": "Открытие бланка персонажа",
-	"CONTROLS.LeftClick": "щелчок ЛКМ",
-	"CONTROLS.LeftClick2": "двойной щелчок ЛКМ",
-	"CONTROLS.LeftDrag": "щелчок ЛКМ и перетягивание",
+	"CONTROLS.LeftClick": "ЛКМ",
+	"CONTROLS.LeftClick2": "двойной ЛКМ",
+	"CONTROLS.LeftDrag": "ЛКМ и перетягивание",
 	"CONTROLS.LongPress": "длинное нажатие",
 	"CONTROLS.Double": "двойной",
-	"CONTROLS.RightClick": "щелчок ПКМ",
-	"CONTROLS.MiddleClick": "щелчок СКМ",
-	"CONTROLS.AltRightClick": "ALT + ПКМ",
+	"CONTROLS.RightClick": "ПКМ",
+	"CONTROLS.MiddleClick": "СКМ",
+	"CONTROLS.AltRightClick": "{alt} + ПКМ",
 	"CONTROLS.Click": "ЛКМ",
 	"CONTROLS.ClickDrag": "ЛКМ + перетягивание",
 	"CONTROLS.ClickOrClickDrag": "<span class=\"reference\">ЛКМ</span> или <span class=\"reference\">ЛКМ + перетягивание</span>",
-	"CONTROLS.CtrlClickDrag": "CTRL + перетягивание",
-	"CONTROLS.AltClick": "ALT + ЛКМ",
-	"CONTROLS.CtrlClick": "CTRL + ЛКМ",
+	"CONTROLS.Ctrl": "Ctrl",
+	"CONTROLS.CtrlAbbr": "CTRL",
+	"CONTROLS.CtrlClickDrag": "{mod} + ЛКМ + перетягивание",
+	"CONTROLS.Alt": "ALT",
+	"CONTROLS.AltClick": "{alt} + ЛКМ",
+	"CONTROLS.CtrlClick": "{mod} + ЛКМ",
 	"CONTROLS.ShiftClick": "SHIFT + ЛКМ",
-	"CONTROLS.ChainCtrlClick": "удержание <span class='reference'>CTRL</span> затем <span class='reference'>ЛКМ</span>",
-	"CONTROLS.DoubleClick": "двойной щелчок",
-	"CONTROLS.DoubleRightClick": "Двойной щелчок",
+	"CONTROLS.ChainCtrlClick": "удержание <span class=\"reference\">{mod}</span> затем <span class=\"reference\">ЛКМ</span>",
+	"CONTROLS.DoubleClick": "двойной ЛКМ",
+	"CONTROLS.DoubleRightClick": "двойной ПКМ",
 	"CONTROLS.ShiftScroll": "SHIFT + прокрутка",
-	"CONTROLS.ShiftOrCtrlScroll": "<span class=\"reference\">SHIFT + прокрутка</span> или <span class=\"reference\">CTRL + прокрутка</span>",
+	"CONTROLS.ShiftOrCtrlScroll": "<span class=\"reference\">SHIFT + прокрутка</span> или <span class=\"reference\">{mod} + прокрутка</span>",
 	"CONTROLS.ShiftDrag": "SHIFT + перетягивание",
 	"CONTROLS.Spacebar": "ПРОБЕЛ",
 	"CONTROLS.Delete": "DELETE",
@@ -1218,10 +1242,7 @@
 
 	"PLAYLIST.Delete": "Удаление плейлиста",
 	"PLAYLIST.Edit": "Изменение плейлиста",
-	"PLAYLIST.GlobalVolume": "Управление громкостью",
-	"PLAYLIST.PlaylistVolumeTooltip": "Настройте громкость звуков в плейлистах (фоновая музыка, боевые темы).",
-	"PLAYLIST.AmbientVolumeTooltip": "Настройте громкость звуков, размещённых на сцене (потрескивание камина, бегущий ручей).",
-	"PLAYLIST.InterfaceVolumeTooltip": "Настройка громкости звуков интерфейса (броски костей, сообщения в чате).",
+	"PLAYLIST.Channel": "Аудиоканал",
 	"PLAYLIST.CurrentlyPlaying": "Сейчас играет",
 	"PLAYLIST.ModeDisabled": "Вручную",
 	"PLAYLIST.ModeSequential": "Последовательный",
@@ -1262,7 +1283,10 @@
 	"PLAYLIST.BulkImportWarning": "В указанной папке \"{path}\" не было найдено подходящих звуков для импорта",
 	"PLAYLIST.PinToTop": "Закрепить сверху",
 	"PLAYLIST.PinToBottom": "Закрепить снизу",
-	"PLAYLIST.VolumeTooltip": "Громкость: {volume}%",
+	"PLAYLIST.VOLUME": {
+		"CONTROLS": "Управление громкостью",
+		"TOOLTIP": "Громкость: {volume}%"
+	},
 
 	"SCENES.Accessibility": "Права",
 	"SCENES.AccessibilityGM": "Только GM",
@@ -1435,7 +1459,7 @@
 	"SETTINGS.ResolutionScaleL": "Масштабирование разрешения игровой сцены в соответствии с обнаруженным браузером соотношением пикселей. Для устройств с высокой плотностью пикселей (например Retina) это увеличит разрешение сцены в ущерб производительности приложения. На масштабирование разрешения также влияет масштабирование браузера или настройки дисплея ОС. В таких случаях этот параметр будет увеличивать или уменьшать эффективное разрешение сцены в зависимости от применяемого масштабирования. Отключение этой настройки может повысить производительность за счёт снижения качества изображения на дисплеях с высокой плотностью пикселей.",
 	"SETTINGS.LangN": "Язык",
 	"SETTINGS.LangL": "Смена отображаемого языка в Foundry VTT.",
-	"SETTINGS.LClickReleaseN": "Щелчок ЛКМ для снятия выделения",
+	"SETTINGS.LClickReleaseN": "ЛКМ для снятия выделения",
 	"SETTINGS.LClickReleaseL": "Если включено, щелчок левой кнопкой мыши по пустому месту будет снимать выделение с выбранного объекта. Если отключено, то выделение будет сниматься Shift+ЛКМ, или выделением пустого места, или Esc.",
 	"SETTINGS.NoCanvasN": "Отключение отображения сцены",
 	"SETTINGS.NoCanvasL": "Визуальное представление игрового стола можно отключить. Это позволит участникам со слабыми PC пользоваться только базовым функционалом Foundry, вроде бланка персонажа и чата.",
@@ -2096,6 +2120,8 @@
 	"PERMISSION.NoteCreateHint": "Позволяет участникам с этой ролью создавать заметки на сцене из записей журнала.",
 	"PERMISSION.PingCanvas": "Маячки на сцене",
 	"PERMISSION.PingCanvasHint": "Позволить роли использовать привлекающие внимание маячки на игровой сцене.",
+	"PERMISSION.PlaylistCreate": "Создание плейлистов",
+	"PERMISSION.PlaylistCreateHint": "Позволить роли создавать плейлисты в мире.",
 	"PERMISSION.SettingsModify": "Изменение настроек",
 	"PERMISSION.SettingsModifyHint": "Позволить роли изменять настройки игры и управлять модулями.",
 	"PERMISSION.ShowCursor": "Отображение курсора",
@@ -2138,27 +2164,61 @@
 			"create": "Создание области",
 			"update": "Обновление области",
 			"delete": "Удаление области",
-			"createBehavior": "Создание поведения",
-			"editBehavior": "Изменение поведения",
-			"deleteBehavior": "Удаление поведения",
-			"enableBehavior": "Включение поведения",
-			"disableBehavior": "Отключение поведения"
+			"shapeMakeHole": "Добавление отверстия",
+			"shapeFillHole": "Заполнение отверстия",
+			"shapeMoveUp": "Переместить выше",
+			"shapeMoveDown": "Переместить ниже",
+			"shapeRemove": "Удаление формы",
+			"behaviorCreate": "Создание поведения",
+			"behaviorEdit": "Изменение поведения",
+			"behaviorDelete": "Удаление поведения",
+			"behaviorEnable": "Включение поведения",
+			"behaviorDisable": "Отключение поведения"
 		},
 		"EVENTS": {
+			"regionShape": "Форма области изменена",
 			"behaviorStatus": "Статус поведения изменён",
 			"tokenEnter": "Вход токена",
 			"tokenExit": "Выход токена",
-			"tokenMove": "Движение токена",
+			"tokenMove": "После движения токена",
+			"tokenPreMove": "Перед движением токена",
 			"tokenTurnStart": "Начало хода токена",
 			"tokenTurnEnd": "Конец хода токена",
 			"tokenRoundStart": "Начало раунда токена",
 			"tokenRoundEnd": "Конец раунда токена"
 		},
+		"SHAPES": {
+			"rectangle": "Прямоугольник",
+			"circle": "Круг",
+			"ellipse": "Эллипс",
+			"polygon": "Полигон"
+		},
 		"Behavior": "Поведение",
-		"Shape": "Форма"
+		"Shape": "Форма",
+		"LEGEND": {
+			"control": "Управление областью",
+			"config": "Настройка области",
+			"delete": "Удаление области",
+			"filter": "Фильтр областей",
+			"lock": "Блокировка области",
+			"title": "Информация об области",
+			"unlock": "Разблокировка области",
+			"elevationBottom": "Высота (низ)",
+			"elevationTop": "Высота (верх)"
+		},
+		"SHEET": {
+			"title": "Настройка области"
+		},
+		"ERRORS": {
+			"ControlledRegionIsLocked": "Область заблокирована!"
+		}
 	},
 
 	"BEHAVIOR": {
+		"SECTIONS": {
+			"identity": "Информация о поведении",
+			"status": "Статус поведения"
+		},
 		"FIELDS": {
 			"disabled": {
 				"label": "Отключено",
@@ -2172,6 +2232,9 @@
 		},
 		"TYPES": {
 			"base": {
+				"SECTIONS": {
+					"events": "Подписанные события"
+				},
 				"FIELDS": {
 					"events": {
 						"label": "События",
@@ -2179,7 +2242,7 @@
 					}
 				}
 			},
-			"macro": {
+			"executeMacro": {
 				"FIELDS": {
 					"uuid": {
 						"label": "Макрос",
@@ -2187,12 +2250,41 @@
 					}
 				}
 			},
-			"script": {
+			"executeScript": {
 				"FIELDS": {
 					"source": {
 						"label": "Скрипт",
 						"hint": "Скрипт, запускаемый при срабатывании события."
 					}
+				}
+			},
+			"pauseGame": {
+				"FIELDS": {
+					"once": {
+						"label": "Один раз",
+						"hint": "Отключение поведения, когда токен входит в область."
+					}
+				}
+			},
+			"adjustDarknessLevel": {
+				"FIELDS": {
+					"mode": {
+						"label": "Режим",
+						"hint": "Изменение уровня темноты в этой области."
+					},
+					"modifier": {
+						"label": "Модификатор",
+						"hint": "Числовой модификатор, применяемый к уровню темноты."
+					},
+					"blur": {
+						"label": "Размытие",
+						"hint": "Уровень темноты будет плавно переходить на границах этой формы."
+					}
+				},
+				"MODES": {
+					"override": "Перезапись",
+					"brighten": "Ярче",
+					"darken": "Темнее"
 				}
 			}
 		}
@@ -2200,6 +2292,8 @@
 
 	"RULER.MovementNotAllowed": "Отмеренный путь движения не доступен.",
 	"RULER.MovementCollision": "Движение блокируется стеной.",
+	"RULER.MovementNoPermission": "У вас не достаточно прав для перемещения этого токена.",
+	"RULER.MovementLocked": "Не удалось переместить токен, т.к. он заблокирован.",
 
 	"SIDEBAR.Import": "Импорт данных",
 	"SIDEBAR.NavLabel": "Вкладки боковой панели",
@@ -2520,6 +2614,44 @@
 	"TOKEN.DetectionAdd": "Добавить режим обнаружения",
 	"TOKEN.DetectionRemove": "Удалить режим обнаружения",
 
+	"TOKEN.RING": {
+		"FIELDS": {
+			"colors": {
+				"ring": {
+					"label": "Цвет кольца",
+					"hint": "Цвет рамки кольца."
+				},
+				"background": {
+					"label": "Цвет фона",
+					"hint": "Цвет фона кольца."
+				}
+			},
+			"effects": {
+				"label": "Эффекты кольца"
+			},
+			"enabled": {
+				"label": "Кольцо включено"
+			},
+			"subject": {
+				"scale": {
+					"label": "Коррекция масштаба"
+				},
+				"texture": {
+					"label": "Текстура",
+					"hint": "Укажите путь к изображению, размещенному над динамическим кольцом токенов. Если путь не указан, будет использована стандартная текстура."
+				}
+			}
+		},
+		"EFFECTS": {
+			"BACKGROUND_WAVE": "Фоновые волны",
+			"RING_GRADIENT": "Кольцевой градиент",
+			"RING_PULSE": "Кольцевой пульс"
+		},
+		"SHEET": {
+			"legend": "Динамическое кольцо токена"
+		}
+	},
+
 	"TYPES.Cards.deck": "Колода",
 	"TYPES.Cards.hand": "Рука",
 	"TYPES.Cards.pile": "Стопка",
@@ -2530,8 +2662,11 @@
 	"TYPES.JournalEntryPage.video": "Видео",
 	"TYPES.Macro.chat": "Сообщение",
 	"TYPES.Macro.script": "Скрипт",
-	"TYPES.RegionBehavior.macro": "Макрос",
-	"TYPES.RegionBehavior.script": "Скрипт",
+	"TYPES.RegionBehavior.executeMacro": "Запуск макроса",
+	"TYPES.RegionBehavior.executeScript": "Запуск скрипта",
+	"TYPES.RegionBehavior.pauseGame": "Приостановка игры",
+	"TYPES.RegionBehavior.suppressWeather": "Блокировка погоды",
+	"TYPES.RegionBehavior.adjustDarknessLevel": "Настройка уровня темноты",
 
 	"DETECTION.LightPerception": "Восприятие света",
 	"DETECTION.BasicSight": "Обычное зрение",
@@ -2666,6 +2801,8 @@
 	"WALLS.DoorSound.Industrial": "Индустриальная, простая",
 	"WALLS.DoorSound.IndustrialCreaky": "Индустриальная, скрипящая",
 	"WALLS.DoorSound.Jail": "Клетка",
+	"WALLS.DoorSound.MagicDoor": "Волшебная дверь",
+	"WALLS.DoorSound.MagicWall": "Волшебная стена",
 	"WALLS.DoorSound.Metal": "Металл",
 	"WALLS.DoorSound.SlidingMetal": "Раздвижная, металлическая",
 	"WALLS.DoorSound.SlidingModern": "Раздвижная, современная",
