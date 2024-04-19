@@ -1,5 +1,4 @@
-export function setupBabele() {
-	const id = game.system.id.toLowerCase();
+export function setupBabele(id) {
 	const title = game.system.title;
 
 	if (typeof Babele !== "undefined") {

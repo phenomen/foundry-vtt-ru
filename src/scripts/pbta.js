@@ -2,7 +2,7 @@ import { setupBabele } from "../shared.js";
 
 export function init() {
 	if (game.modules.get("masks-newgeneration-sheets")?.active) {
-		setupBabele();
+		setupBabele("pbta/masks");
 		overrideSheet();
 	}
 }

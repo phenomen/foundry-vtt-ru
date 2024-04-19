@@ -1,7 +1,6 @@
 import { init as INIT_ALIENRPG } from "./scripts/alienrpg.js";
 import { init as INIT_BLADES_IN_THE_DARK } from "./scripts/blades-in-the-dark.js";
 import { init as INIT_CITY_OF_MIST } from "./scripts/city-of-mist.js";
-import { init as INIT_COC7 } from "./scripts/coc7.js";
 import { init as INIT_DELTAGREEN } from "./scripts/deltagreen.js";
 import { init as INIT_DND5E } from "./scripts/dnd5e.js";
 import { init as INIT_DRAGONBANE } from "./scripts/dragonbane.js";
@@ -88,7 +87,6 @@ Hooks.once("init", async () => {
 		alientrpg: INIT_ALIENRPG,
 		"blades-in-the-dark": INIT_BLADES_IN_THE_DARK,
 		"city-of-mist": INIT_CITY_OF_MIST,
-		coc7: INIT_COC7,
 		deltagreen: INIT_DELTAGREEN,
 		dnd5e: INIT_DND5E,
 		dragonbane: INIT_DRAGONBANE,

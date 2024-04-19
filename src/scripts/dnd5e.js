@@ -36,8 +36,8 @@ export function init() {
 			module: "ru-ru",
 			lang: "ru",
 			dir: game.settings.get("ru-ru", "altTranslation")
-				? "compendium/dnd5e-alt"
-				: "compendium/dnd5e",
+				? "compendium/dnd5e/ps"
+				: "compendium/dnd5e/hw",
 		});
 
 		game.settings.set("babele", "showOriginalName", true);

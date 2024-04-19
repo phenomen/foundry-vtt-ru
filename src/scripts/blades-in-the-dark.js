@@ -1,7 +1,7 @@
 import { setupBabele } from "../shared.js";
 
 export function init() {
-	setupBabele();
+	setupBabele("blades-in-the-dark");
 
 	Hooks.on("ready", () => {
 		if (game.system.version.startsWith("4")) {
