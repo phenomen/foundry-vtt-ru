@@ -197,10 +197,10 @@
 				"Value": "Значение",
 				"SWID": "SWID"
 			},
-			"Combinator": "Combinator"
+			"Combinator": "Соединитель"
 		},
 		"Conv": "Решимость",
-		"Hesitant": "Нерешительный",
+		"Hesitant": "Медлительность",
 		"LevelHeaded": "Хладнокровие",
 		"ImprovedLevelHeaded": "Хладнокровие+",
 		"AutoCalc": "Автоматический расчёт",
@@ -335,8 +335,8 @@
 		},
 		"NoAmmoSet": "Боеприпасы не выбраны",
 		"NoAmmoPP": "Не удалось найти пункты силы для выбранных боеприпасов",
-		"NoDescription": "No description available",
-		"NoMags": "You don't have any consumables marked as magazines in your inventory",
+		"NoDescription": "Нет описания",
+		"NoMags": "В вашем инвентаре нет расходников, являющихся обоймами",
 		"RemoveAmmo": "Удалить боеприпасы",
 		"DiscardMagazine": "Удалить пустую обойму",
 		"ConsumableType": {
@@ -379,7 +379,7 @@
 		"Trait": "Параметр",
 		"AltTrait": "Параметр действия",
 		"ClickSuggestions": "[Нажмите] для подсказок",
-		"Quick": "Быстрый",
+		"Quick": "Стремительность",
 		"BonusDamage": "Дополнительный урон",
 		"Joker": "Джокер",
 		"CustomWildDie": "- Свой дикий кубик -",
@@ -592,7 +592,7 @@
 			}
 		},
 		"Settings": {
-			"ArbitFields": "Arbitrary Setting Fields",
+			"ArbitFields": "Произвольные поля для мира",
 			"CharSheetDefaultWidth": {
 				"Name": "Ширина бланка персонажей",
 				"Hint": "Ширина бланков при первом открытии. По умолчанию: 650."
@@ -780,24 +780,24 @@
 			"Shaken": {
 				"RollSpirit": "Проверка Характера",
 				"Title": "Снять шок с {name}",
-				"Flavor": "Проверка Характера для снятия шока",
-				"UnshakeModifier": "Мод. снятия шока",
+				"Flavor": "Проверка Характера для избавления от шока",
+				"UnshakeModifier": "Мод. избавления от шока",
 				"Question": "Что вы хотите сделать?",
 				"Success": "Вы больше не в шоке"
 			},
 			"Stunned": {
-				"Title": "Проверка Выносливости для снятия оглушения",
+				"Title": "Проверка Выносливости для избавления от оглушения",
 				"Fail": "Вы всё ещё оглушены",
 				"Success": "Вы больше не оглушены, но всё ещё уязвимы",
 				"Raise": "Вы больше не оглушены и не уязвимы",
-				"UnStunModifier": "Мод. снятия оглушения"
+				"UnStunModifier": "Мод. избавления от оглушения"
 			},
 			"BleedingOut": {
 				"Title": "Проверка Выносливости для сопротивления кровотечению",
 				"Fail": "Вы погибаете",
 				"Success": "Вы держитесь, пока что",
 				"Raise": "Ваше состояние теперь стабильно",
-				"BleedOutModifier": "Мод. снятия кровотечения",
+				"BleedOutModifier": "Мод. избавления от кровотечения",
 				"IgnoreWounds": "Кровотечение игнорирует ранения"
 			}
 		},
@@ -933,7 +933,7 @@
 			"HasMaxValue": "Имеет макс. значение",
 			"Current": "Текущая {stat}",
 			"Max": "Макс. {stat}",
-			"KeyErr": "Additional Stat key {invalid} is invalid and has been changed to {key}"
+			"KeyErr": "Ключ параметра {invalid} является некорректным и был изменен на {key}"
 		},
 		"MessageOnUse": {
 			"Label": "Сообщение при использовании",
@@ -1171,7 +1171,7 @@
 					"Content": "Expanded advances (the default) bring enhanced data handling that specify the type of advance and automatically calculate your character's rank. Legacy advances are simply a large text box to write whatever you want with no data handling."
 				},
 				"Unshake": {
-					"Title": "Мод. снятия шока",
+					"Title": "Мод. избавления от шока",
 					"Content": "Добавляет бонус к проверке избавления от шока в начале хода персонажа, находящегося в шоке."
 				},
 				"Soak": {
@@ -1402,11 +1402,11 @@
 		"SelectNewGroupLeader": "Выберите нового лидера группы",
 		"ToggleIncap": "При смерти",
 		"AmbushAssistant": {
-			"OnHold": "On Hold",
-			"NormalDraw": "Normal Draw",
-			"NoTurn": "No Turn",
+			"OnHold": "Выжидание",
+			"NormalDraw": "Обычное взятие",
+			"NoTurn": "Нет хода",
 			"Title": "Помощник в засаде",
-			"Hint": "Перетяните участников боя для внезапного раунда.",
+			"Hint": "Перетяните участников боя для внезапного раунда",
 			"Unassigned": "Не назначен"
 		},
 		"Combat": {

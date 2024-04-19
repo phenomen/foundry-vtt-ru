@@ -180,8 +180,17 @@
 
 /* DEADLANDS */
 
+.deadlands,
+.deadlands-compendium,
+.deadlands-core,
+.deadlands-sheet,
+.deadlands-wrapper {
+	--section-header-font: "Roboto Slab", serif;
+	--default-font: var(--font-serif)
+}
+
 .deadlands-sheet input.charname {
-	font-family: "Roboto Slab";
+	font-family: "Roboto Slab", serif;
 }
 
 .swade-official.actor.deadlands-sheet {
