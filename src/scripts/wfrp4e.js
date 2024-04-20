@@ -18,7 +18,7 @@ import {
 } from "./wfrp4-data.js";
 
 export function init() {
-	setupBabele();
+	setupBabele("wfrp4e");
 
 	if (typeof Babele !== "undefined") {
 		Babele.get().registerConverters({
