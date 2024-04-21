@@ -9,7 +9,7 @@
 	"TYPES.Actor.Wraith": "Призрак",
 	"TYPES.Actor.Werewolf": "Оборотень",
 	"TYPES.Actor.Creature": "Существо",
-	"TYPES.Actor.Spirit": "Дух",
+	"TYPES.Actor.Spirit": "Дух (устарел)",
 	"TYPES.Item.Bonus": "Бонус",
 	"TYPES.Item.Experience": "Опыт",
 	"TYPES.Item.Feature": "Особенность",
@@ -50,12 +50,12 @@
 			"wraith": "Бланк призрака",
 			"breed": "Бланк фера",
 			"creature": "Бланк существа",
-			"spirit": "Бланк духа",
+			"spirit": "Бланк духа (устарел)",
 			"items": "Лист Предмета",
 			"powers": "Силы",
 			"equipment": "Снаряжение",
-			"sheets": "Листы",
-			"npc": "НПС"
+			"sheets": "Бланки",
+			"npc": "Персонаж рассказчика"
 		},
 		"era": {
 			"modern": "Современность",
@@ -108,13 +108,13 @@
 			"usesworldanvil": "Использовать ссылки World Anvil",
 			"usesworldanvilhint": "При этой настройке в \"Биография\" появится поле, в котором можно сохранить ссылку на страницу World Anvil этого листа.",
 			"demonsettings": "Демоны:Падшие Настройки",
-			"demonsettingshint": "World settings used in Demon the Fallen.",
+			"demonsettingshint": "Настройки мира, используемые в Демоны Падшие",
 			"demoncreateforms": "Создать апокалиптическую форму автоматический",
-			"demoncreateformshint": "When creating a demon sheet create the apocalyptic forms automatically on the actor.",
-			"demonsystemsettings": "Ability list setting",
+			"demoncreateformshint": "При создании листа демонов автоматически создаются апокалиптические формы на актере.",
+			"demonsystemsettings": "Настройка списка способностей",
 			"demonsystemsettingshint": "According to what setting are the list of abilities taken from",
 			"demonsettingasbook": "Cогласно книге",
-			"demonsettingas20th": "According to 20th ed WoD",
+			"demonsettingas20th": "По данным 20-го издания WoD",
 			"huntersettings": "Настройки \"Охотники: Расплата\"",
 			"huntersettingshint": "Настройки мира для \"Охотники: Расплата\"",
 			"werewolfsettings": "Настройки \"Оборотни: Апокалипсис\"",
@@ -127,7 +127,7 @@
 			"choiceexperience": "Трата пунктов опыта",
 			"therollofone": "Использовать обработку результата 1 по умолчанию",
 			"therollofonehint": "Настройка бросков по умолчанию для 20ой редакции - в соответствии с правилами 20ой редакции все единицы уменьшают число успехов на один.",
-			"useOnesDamage": "Use rule of '1's in damage rolls",
+			"useOnesDamage": "Используйте правило «1» при бросках на урон.",
 			"useOnesSoak": "Use rule of '1's in soak rolls",
 			"lowestdifficulty": "Наименьшая допустимая сложность",
 			"lowestdifficultyhint": "Настройка бросков по умолчанию для 20ой редакции - в соответствии с правилами 20ой редакции наименьшая сложность равна двум.",
@@ -145,7 +145,7 @@
 			"erasettings": "Настройки эры",
 			"erasettingshint": "Настройки мира, связанные с эрами",
 			"darkmodesetting": "Темная тема ",
-			"darkmodesettinghint": "Darkmode hint (requires relogin to Foundry)"
+			"darkmodesettinghint": "Подсказка о темном режиме (требуется повторный вход в Foundry)"
 		},
 		"types": {
 			"mortal": "Смертный",
@@ -654,19 +654,19 @@
 			"perception": "Восприятие",
 			"appearance": "Привлекательность",
 			"short": {
-				"str": "Str",
-				"dex": "Dex",
-				"sta": "Sta",
+				"str": "сил",
+				"dex": "лов",
+				"sta": "вын",
 				"man": "Man",
 				"app": "App",
 				"per": "Per"
 			},
 			"bonus": {
 				"strength": "Бонус к силе ",
-				"dexterity": "Dexterity bonus",
-				"stamina": "Stamina bonus",
-				"manipulation": "Manipulation bonus",
-				"appearance": "Appearance bonus"
+				"dexterity": "Бонус ловкости",
+				"stamina": "Бонус выносливости",
+				"manipulation": "Бонус за манипуляцию",
+				"appearance": "Бонус за внешний вид"
 			}
 		},
 		"abilities": {
@@ -1157,7 +1157,7 @@
 			"numberdamagebashing": "Легкие повреждения",
 			"numberdamagelethal": "Тяжелые повреждения",
 			"numberdamageaggravated": "Губительные повреждения",
-			"numdamagetaken": "Num damage types taken",
+			"numdamagetaken": "Количество типов полученного урона",
 			"otheritems": "Прочие предметы добавлены",
 			"cost": "Стоимость",
 			"rating": "Рейтинг",
@@ -1191,8 +1191,8 @@
 				"clearedge": "Очистить связь с Гранью",
 				"clearlore": "Очистить связь со Знанием",
 				"cleararcanoi": "Очисть связь с арканои",
-				"disconnect": "Disconnect power",
-				"disconnectlabel": "Disconnecting power",
+				"disconnect": "Отключить питание",
+				"disconnectlabel": "Отключение питания",
 				"removebonus": {
 					"art": "Удалить связанные с искусством силы",
 					"sliver": "Удалить связанные с осколком силы",
@@ -1578,7 +1578,7 @@
 				"availspheres": "Доступные сферы",
 				"nospheres": "Нет выбранных сфер",
 				"nospelltype": "Тип заклинания не выбран",
-				"increaseddifficulty": "Due to high difficulty, number of successes required to succeed goes up by",
+				"increaseddifficulty": "Из-за высокой сложности количество успехов, необходимых для успеха, увеличивается на",
 				"spendquintessence": "Потраченная квинтэссенция",
 				"aretebonus": "Бонус аритэ",
 				"aretepenalty": "Штраф аритэ",
@@ -1594,7 +1594,7 @@
 				"resonance": "Резонанс",
 				"resonanceappropriate": "Соответствующий резонанс (личный, инструмент, ритуал или сосуд)",
 				"resonanceopposed": "Противоположный резонанс (личный, инструмент, ритуал или сосуд)",
-				"resonancemysic": "Manipulating mythic threads/ hypernarrative",
+				"resonancemysic": "Манипулирование мифическими нитями/гипернарративом",
 				"time": "Время и усилия",
 				"spendingtime": "Потрачено дополнительное время",
 				"timefast": "Быстрое сотворение",
@@ -1612,11 +1612,11 @@
 				"additionaldifficulty": "Дополнительный модификатор сложности",
 				"castingsettings": "Настройки сотворения",
 				"extendedcasting": "Продолжительное сотворение",
-				"extendedcastingdesc": "Extended casting is when you roll for the same magic time and time again adding the successes together for each roll, each try adds +1 to the difficulty.",
+				"extendedcastingdesc": "Расширенное заклинание — это когда вы снова и снова бросаете одну и ту же магию, суммируя успехи для каждого броска, каждая попытка добавляет +1 к сложности.",
 				"selectsphere": "Необходимо сначала выбрать сферу",
 				"keepdifficulty": "Оставляет сложность неизменной",
 				"keepdiff": "Сохранить сложность",
-				"keepdiffdesc": "Keep difficulty is When you are to use extended casting but the difficulty are not to be increased for each roll.",
+				"keepdiffdesc": "Сохранение сложности — это когда вы хотите использовать расширенное заклинание, но сложность не должна увеличиваться для каждого броска.",
 				"difficultylimit": "Сложность никогда не будет выше или ниже чем стандартная\nсложность +3/-3."
 			},
 			"checkfrenzy": {
@@ -1663,7 +1663,7 @@
 			},
 			"power": {
 				"availrealms": "Доступные царства",
-				"unleashing": "Unleashing",
+				"unleashing": "Развязывание",
 				"nightmaredice": "Кости кошмара",
 				"missingrealm": "Вам нужно выбрать царство",
 				"arttype": "Тип искусства",
@@ -1684,7 +1684,7 @@
 			},
 			"general": {
 				"selectattribute": "Выберите, какую характеристику использовать",
-				"numberdiceshint": "To be able to roll more than 10 dices as once, fill in the number in the box above."
+				"numberdiceshint": "Чтобы иметь возможность бросить более 10 кубиков за один раз, введите число в поле выше."
 			},
 			"bonus": {
 				"chosenattribute": "Выбранная характеристика",
