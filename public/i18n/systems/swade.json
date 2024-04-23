@@ -730,8 +730,8 @@
 				"Hint": "Выберите изображение для фишек в бланке персонажа"
 			},
 			"HardChoices": {
-				"Name": "Сложный выбор",
-				"Hint": "Включает ситуационное правило 'Сложный выбор'."
+				"Name": "Трудный выбор",
+				"Hint": "Включает ситуационное правило 'Трудный выбор'."
 			},
 			"CardSound": {
 				"Name": "Звук карты",
@@ -1074,16 +1074,16 @@
 					"PP": "Wizard Gun"
 				},
 				"GameSettings": {
-					"Title": "Настройки игры",
+					"Title": "Game Settings",
 					"Content": "First, Ammunition Tracking must be enabled in the game's system settings."
 				},
 				"SwadeSettings": {
-					"Title": "Настройки SWADE",
+					"Title": "SWADE Settings",
 					"Content": "Ammunition settings are found in the <em>Savage Worlds</em> setting configurator"
 				},
 				"AmmoSettings": {
 					"Title": "Ammo Settings",
-					"Content": "Автоматически расходовать боеприпасы для дистанционного оружия."
+					"Content": "These control if ammo is automatically consumed by ranged weapons."
 				},
 				"AmmoManagement": {
 					"Title": "Ammunition Management",
@@ -1094,8 +1094,8 @@
 					"Content": "The next three settings control if external items are consumed when a weapon reloads, based on the actor type. If these are unchecked but ammunition management is checked, actors of a given type will consume the shots on an item but can freely reload. This allows for arcade-style ammo management where the reload action is important to track but long-term ammo usage is not."
 				},
 				"CharacterWeapons": {
-					"Title": "Оружие персонажа",
-					"Content": "Оружие персонажа перечислено на вкладке снаряжения."
+					"Title": "Character Weapons",
+					"Content": "A character's weapons are listed in the gear tab."
 				},
 				"ReloadNone": {
 					"Title": "Reload Procedure — None",
@@ -1155,31 +1155,31 @@
 				}
 			},
 			"TWEAKS": {
-				"Title": "Настройки",
-				"Description": "Подробнее о настройках бланка.",
+				"Title": "Tweaks",
+				"Description": "Learn about the unique sheet modifications in the Tweaks menu",
 				"Actor": "Tweaks Tour Demo Character",
 				"AccessTweaks": {
 					"Title": "Accessing Tweaks",
 					"Content": "The Tweaks menu is found in each character sheet's header, and offers additional configuration options"
 				},
 				"TraitTweaks": {
-					"Title": "Настройки параметра",
-					"Content": "Дополнительные поля для детальной настройки параметров персонажей"
+					"Title": "Trait Tweaks",
+					"Content": "This tab provides a large array of additional fields that customize a character's traits"
 				},
 				"Advances": {
-					"Title": "Режим повышения",
+					"Title": "Advance Mode",
 					"Content": "Expanded advances (the default) bring enhanced data handling that specify the type of advance and automatically calculate your character's rank. Legacy advances are simply a large text box to write whatever you want with no data handling."
 				},
 				"Unshake": {
-					"Title": "Мод. избавления от шока",
-					"Content": "Добавляет бонус к проверке избавления от шока в начале хода персонажа, находящегося в шоке."
+					"Title": "Unshake Modifier",
+					"Content": "Adds a bonus to the automated shake roll that's prompted at the start of a shaken character's turn."
 				},
 				"Soak": {
-					"Title": "Мод. проверки на прочность",
-					"Content": "Добавляет бонус и проверкам на прочность, вызываемым кнопкой получения урона в чате."
+					"Title": "Soak Modifier",
+					"Content": "Adds a bonus to the soak roll that's prompted from the Take Damage button on the system's damage roll cards."
 				},
 				"Initiative": {
-					"Title": "Мод. инициативы",
+					"Title": "Initiative Modifiers",
 					"Content": "Modifies the character's initiative handling based on rules found in the core rulebook."
 				},
 				"AutoCalc": {
@@ -1192,11 +1192,11 @@
 				"Description": "Learn how to configure Additional Stats for your setting",
 				"Actor": "Additional Stats Tour Demo Character",
 				"GameSettings": {
-					"Title": "Настройки игры",
+					"Title": "Game Settings",
 					"Content": "First, Additional Stats must be configured in the Game Settings."
 				},
 				"SwadeSettings": {
-					"Title": "Настройки SWADE",
+					"Title": "SWADE Settings",
 					"Content": "Additional Stats are found in the <em>Savage Worlds</em> setting configurator."
 				},
 				"StatSettings": {
@@ -1233,11 +1233,11 @@
 				},
 				"Die": {
 					"Title": "Die Additional Stats",
-					"Content": "Первое поле может содержать любые корректные формулы бросков Foundry. Добавьте x, чтобы сделать бросок взрывным (1d6x). Второе поле является добавочным числом. Нажмите на название для броска."
+					"Content": "The first field accepts any valid Foundry die expression; append an x to make it explode (e.g. 1d6x). The second is a number that is added. Click the label to roll the die."
 				},
 				"Text": {
 					"Title": "Text Additional Stats",
-					"Content": "Короткое строчное поле. Имеет малую ширину, поэтому для длинных тексты следует использовать описание или другие поля."
+					"Content": "Simple string field; the width isn't very long, so long pieces of text should go in the description or other fields."
 				},
 				"Selection": {
 					"Title": "Selection Additional Stats",
@@ -1253,7 +1253,7 @@
 				}
 			},
 			"AURAS": {
-				"Title": "Ауры",
+				"Title": "Auras",
 				"Description": "Introduced in version 3.2, Auras create persistent visuals that follow tokens around.",
 				"Actor": "Auras Tour Demo Character",
 				"AccessAuras": {
@@ -1270,14 +1270,14 @@
 				},
 				"Constrained": {
 					"Title": "Wall Constraints",
-					"Content": "Управляет поведением при пересечении со стенами, которые блокируют видимость и свет."
+					"Content": "This toggle governs whether the aura is limited by walls that block light or if it can pass through them."
 				},
 				"Radius": {
 					"Title": "Aura Radius",
 					"Content": "The Aura's radius, measured in grid units. The unit hint displayed here matches the current scene's unit of measurement."
 				},
 				"Color": {
-					"Title": "Цвет и прозрачность ауры",
+					"Title": "Aura Color and Transparency",
 					"Content": "Auras display similar to circular area templates around the source character; these settings let you control their visual display."
 				},
 				"Visibility": {
@@ -1286,47 +1286,47 @@
 				}
 			},
 			"ADVANCES": {
-				"Title": "Повышения",
-				"Description": "Как SWADE отслеживает повышения",
-				"Actor": "Демонстрационный персонаж для повышения",
+				"Title": "Advances",
+				"Description": "See how SWADE tracks character advances",
+				"Actor": "Advances Tour Demo Character",
 				"AccessAdvanceMode": {
-					"Title": "Выбор режима повышений",
+					"Title": "Setting the Advance Mode",
 					"Content": "A character's advance mode can be switched in the Tweaks menu."
 				},
 				"Mode": {
-					"Title": "Режим повышения"
+					"Title": "Advance Mode Selection"
 				},
 				"AdvanceTab": {
-					"Title": "Повышения",
+					"Title": "The Advances Tab",
 					"Content": "Advances are configured in the primary \"About\" tab."
 				},
 				"Create": {
-					"Title": "Создание повышения",
+					"Title": "Creating an Advance",
 					"Content": "This button creates a new advance for use"
 				},
 				"Editor": {
-					"Title": "Редактор повышения",
+					"Title": "The Advance Editor",
 					"Content": "This form provides configuration info for a new advance."
 				},
 				"Type": {
-					"Title": "Тип повышения",
+					"Title": "Advance Type Selection",
 					"Content": "Choose what kind of advance this is. Currently this does not trigger any further validation or selection, but future updates to the system may change this."
 				},
 				"Rank": {
-					"Title": "Ранг повышения",
+					"Title": "Advance Rank",
 					"Content": "The rank that your character will be upon arriving at this advance. This cannot be directly edited, as it is derived from your character's total number of advances."
 				},
 				"Number": {
-					"Title": "Номер повышения",
+					"Title": "Advance Number",
 					"Content": "This controls the order of advances. Changing this will move the advance to an earlier spot in the list."
 				},
 				"Planned": {
-					"Title": "Планируемые повышения",
+					"Title": "Planned Advances",
 					"Content": "You can mark advances as planned to prevent them from counting towards your character's rank."
 				},
 				"Notes": {
-					"Title": "Заметки о повышении",
-					"Content": "Добавьте полезную информацию о вашем развитии: повышение параметров, выбор черт и прочее."
+					"Title": "Advance Notes",
+					"Content": "Include any relevant information about your advance here; what traits you increased, what edges you selected, etc."
 				},
 				"SaveChanges": {
 					"Title": "Save Changes Button",
