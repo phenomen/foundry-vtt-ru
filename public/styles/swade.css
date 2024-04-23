@@ -84,9 +84,6 @@
 	font-weight: 600;
 }
 
-.swade-official .header .header-name {
-	font-weight: bold;
-}
 
 .swade-official .tabs .item {
 	font-family: var(--font-sans-condensed);
@@ -130,7 +127,10 @@
 	font-size: var(--text-xs);
 }
 
-.swade-official .section-header .name {
+.swade-official .section-header .name,
+.swade-official .header,
+.swade-official .header .header-name {
+	font-family: var(--font-sans-condensed);
 	font-weight: 600;
 }
 
@@ -176,6 +176,13 @@
 		font-size: 2em;
 
 	}
+}
+
+.effect-label,
+.item-name {
+	font-size: var(--text-sm) !important;
+	font-family: var(--font-sans) !important;
+	font-weight: 600 !important;
 }
 
 /* DEADLANDS */
@@ -244,7 +251,9 @@
 	font-family: var(--font-serif);
 }
 
-
+.swpf-compendium.sidebar-popout.Compendium-sidebar>.window-content {
+	font-family: var(--font-serif);
+}
 
 .swpf-core h2.trap,
 .swpf-core h2.red-award,
@@ -273,9 +282,7 @@
 	--default-font: var(--font-sans);
 }
 
-.swade-official .header {
-	font-family: var(--font-fancy);
-}
+
 
 
 
