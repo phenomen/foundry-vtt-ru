@@ -158,21 +158,19 @@
 	font-size: var(--text-base);
 }
 
-.dnd5e.sheet.actor.character ul.skills-list li.skill h4 {
+.dnd5e.sheet.actor.character ul.skills-list li.skill h4,
+.dnd5e.sheet.actor ul.skills-list li.skill h4 {
 	font-family: var(--font-sans-condensed);
 	font-size: var(--text-sm);
 	font-weight: 500;
 	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
-.dnd5e.sheet.actor.character ul.skills-list {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--text-sm);
-	overflow: hidden;
-}
 
+.dnd5e.sheet.actor.character ul.skills-list,
 .dnd5e.sheet.actor.npc ul.skills-list {
-	flex: 0 0 195px;
+	flex: 0 0 200px;
 }
 
 .dnd5e label.checkbox {
@@ -302,24 +300,6 @@
 
 .dnd5e .form-group label {
 	font-weight: 500 !important;
-}
-
-.dnd5e.sheet.actor ul.skills-list {
-	flex: 0 0 185px;
-	margin: 0 3px 0;
-	border: none;
-}
-
-.dnd5e.sheet.actor.character ul.skills-list {
-	flex: 0 0 200px;
-}
-
-.dnd5e.sheet.actor ul.skills-list li.skill h4 {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--text-sm);
-	font-weight: 600;
-	overflow: hidden;
-	text-overflow: ellipsis;
 }
 
 .dnd5e.sheet .items-list .items-header {
