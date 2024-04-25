@@ -29,9 +29,11 @@
 	font-family: var(--font-sans-condensed);
 	font-size: var(--text-sm);
 	font-weight: 600;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
-.dnd5e2 .card .info > div .label {
+.dnd5e2 .card .info>div .label {
 	white-space: nowrap;
 }
 
@@ -203,13 +205,13 @@
 	font-size: var(--text-xl);
 }
 
-.dnd5e.sheet.actor ul.attributes li.attribute .attribute-value > * {
+.dnd5e.sheet.actor ul.attributes li.attribute .attribute-value>* {
 	font-family: var(--font-serif);
 	font-weight: 600;
 	font-size: var(--text-lg);
 }
 
-.dnd5e.sheet.actor .sheet-header .charlevel .level.noxp > label {
+.dnd5e.sheet.actor .sheet-header .charlevel .level.noxp>label {
 	font-size: var(--text-xl);
 }
 
@@ -314,9 +316,10 @@
 
 .dnd5e.sheet.actor ul.skills-list li.skill h4 {
 	font-family: var(--font-sans-condensed);
-	font-weight: 500;
 	font-size: var(--text-sm);
+	font-weight: 600;
 	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .dnd5e.sheet .items-list .items-header {
@@ -366,7 +369,7 @@
 	font-size: var(--text-sm);
 }
 
-#chat-log thead > tr > th {
+#chat-log thead>tr>th {
 	font-family: var(--font-sans-condensed);
 	font-size: var(--text-sm);
 	font-weight: 500;
@@ -504,7 +507,7 @@
 	font-size: 0.6rem;
 }
 
-.mobile-improvements .dnd5e.sheet.actor ul.attributes li.attribute .attribute-value > * {
+.mobile-improvements .dnd5e.sheet.actor ul.attributes li.attribute .attribute-value>* {
 	font-size: 1rem;
 }
 
@@ -541,12 +544,12 @@
 
 /* MIDIQOL */
 
-.midi-results > div:first-child {
+.midi-results>div:first-child {
 	gap: 2px;
 }
 
-.midi-qol-attack-roll > div:first-child,
-.midi-qol-damage-roll > div:first-child {
+.midi-qol-attack-roll>div:first-child,
+.midi-qol-damage-roll>div:first-child {
 	font-size: var(--text-sm);
 	font-family: var(--font-sans-condensed);
 	font-weight: 500;
