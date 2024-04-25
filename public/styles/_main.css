@@ -94,6 +94,17 @@ body.auth #main-header h1 {
 	font-size: var(--text-base);
 }
 
+#menu #menu-items {
+	& h4 {
+		font-family: var(--font-elegant);
+		font-size: 2rem !important;
+		font-weight: 500 !important;
+		text-align: left;
+		padding-left: 1rem;
+	}
+}
+
+
 /* MODULES */
 
 #AA-autorec-settings .window-content header ul li {
@@ -131,7 +142,7 @@ body.auth #main-header h1 {
 }
 
 .monks-active-tiles.sheet .items-list .items-header h3,
-.monks-active-tiles.sheet .items-list .items-header > * {
+.monks-active-tiles.sheet .items-list .items-header>* {
 	font-family: var(--font-sans-condensed) !important;
 }
 
