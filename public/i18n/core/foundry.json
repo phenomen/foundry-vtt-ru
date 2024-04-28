@@ -448,6 +448,7 @@
 	"CONTROLS.RegionEllipse": "Рисование эллипса",
 	"CONTROLS.RegionPolygon": "Рисование полигона",
 	"CONTROLS.RegionHole": "Создание отверстия",
+	"CONTROLS.RegionClear": "Очистка областей",
 	"CONTROLS.ClearAll": "Удаление всех объектов",
 	"CONTROLS.ClearAllHint": "Удалить все объекты {type} со сцены?",
 	"CONTROLS.HeaderGame": "Основное управление",
@@ -1163,9 +1164,9 @@
 	"MACRO.CannotOverwrite": "Нельзя перезаписать макрос на заблокированной панели.",
 
 	"MENU.NavLabel": "Главное меню",
-	"MENU.Reload": "Перезагрузка",
-	"MENU.Logout": "Выход",
-	"MENU.Players": "Игроки",
+	"MENU.Reload": "Перезагрузка мира",
+	"MENU.Logout": "Выход из мира",
+	"MENU.Players": "Управление участниками",
 
 	"MODMANAGE.Bugs": "Сообщить об ошибке",
 	"MODMANAGE.DeactivateAll": "Деактивация всех модулей",
@@ -1517,6 +1518,11 @@
 	"SETTINGS.GridDiagonalsAlternating1": "Чередующиеся (1/2/1)",
 	"SETTINGS.GridDiagonalsAlternating2": "Чередующиеся (2/1/2)",
 	"SETTINGS.GridDiagonalsIllegal": "Недопустимые (∞)",
+	"SETTINGS.ColorSchemeN": "Предпочтительная тема",
+	"SETTINGS.ColorSchemeH": "Укажите, какую тему вы предпочитаете использовать для интерфейса: светлую или тёмную. Не все элементы интерфейса поддерживают тему.",
+	"SETTINGS.ColorSchemeDefault": "Система",
+	"SETTINGS.ColorSchemeDark": "Тёмная",
+	"SETTINGS.ColorSchemeLight": "Светлая",
 
 	"SETUP.NavLabel": "Вкладки основных настроек",
 	"SETUP.CoreVersion": "Версия программы",
@@ -2155,6 +2161,20 @@
 				"label": "Формы",
 				"hint": "Формы области."
 			},
+			"elevation": {
+				"label": "Высота",
+				"hint": "Диапазон высот в области.",
+				"FIELDS": {
+					"bottom": {
+						"label": "Низ",
+						"hint": "Нижняя высота диапазона."
+					},
+					"top": {
+						"label": "Верх",
+						"hint": "Верхняя высота диапазона."
+					}
+				}
+			},
 			"behaviors": {
 				"label": "Поведения",
 				"hint": "Поведение области."
@@ -2176,7 +2196,7 @@
 			"behaviorDisable": "Отключение поведения"
 		},
 		"EVENTS": {
-			"regionShape": "Форма области изменена",
+			"regionBoundary": "Границы области изменены",
 			"behaviorStatus": "Статус поведения изменён",
 			"tokenEnter": "Вход токена",
 			"tokenExit": "Выход токена",
@@ -2198,7 +2218,9 @@
 		"LEGEND": {
 			"control": "Управление областью",
 			"config": "Настройка области",
+			"create": "Создание области",
 			"delete": "Удаление области",
+			"empty": "Пусто",
 			"filter": "Фильтр областей",
 			"lock": "Блокировка области",
 			"title": "Информация об области",
@@ -2669,7 +2691,7 @@
 	"TYPES.RegionBehavior.adjustDarknessLevel": "Настройка уровня темноты",
 
 	"DETECTION.LightPerception": "Восприятие света",
-	"DETECTION.BasicSight": "Обычное зрение",
+	"DETECTION.BasicSight": "Ночное зрение",
 	"DETECTION.SeeInvisibility": "Видение невидимости",
 	"DETECTION.SenseInvisibility": "Чутьё невидимости",
 	"DETECTION.FeelTremor": "Чутьё вибрации",
