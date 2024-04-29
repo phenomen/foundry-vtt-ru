@@ -254,13 +254,19 @@ export function init() {
 					}
 					if (item_en.type === "trait") {
 						if (name_en.includes("(") && name_en.includes(")")) {
-							const re = /(.*) \((.*)\)/i;
-							const res = re.exec(name_en);
-							name_en = res[1];
-							special = ` (${translateValue(
-								res[2].trim(),
-								translatedTalentSpec,
-							)})`;
+							const regex = /^(\w+)\s*\(([^)]+)\)$/;
+							const parsed = name_en.match(regex);
+							if (parsed) {
+								name_en = parsed[1];
+								special = ` (${translateValue(
+									parsed[2],
+									translatedTalentSpec,
+								)})`;
+							} else {
+								console.log(
+									`Trait ${name_en} does not match the expected format.`,
+								);
+							}
 						}
 						const validCompendiums = game.wfrp4e.tags.getPacksWithTag("trait");
 						for (const compData of validCompendiums) {
@@ -273,16 +279,20 @@ export function init() {
 								item_ru.name = item_ru.name || item_en.name;
 								item_en.name = item_ru.name + special;
 								item_en.system.description.value =
-									item_ru.system.description.value;
+									item_ru.system.description.value ||
+									item_en.system.description.value;
 
 								if (
 									item_en.system?.specification &&
-									Number.isNaN(item_en.system.specification.value)
+									typeof item_en.system.specification.value === "string"
 								) {
-									item_en.system.specification.value = translateValue(
+									const translatedSpec = translateValue(
 										item_en.system.specification.value.trim(),
 										translatedTalentSpec,
 									);
+
+									item_en.system.specification.value =
+										translatedSpec || item_en.system.specification.value;
 								}
 								break;
 							}
@@ -582,7 +592,7 @@ async function patchBabele(wrapped, ...args) {
 
 	// Handle specific files for pack folders
 	for (const file of files.filter((file) =>
-		file.endsWith(`${Babele.PACK_FOLDER_TRANSLATION_NAME_SUFFIX}.json`),
+		file.endsWith("_packs-folders.json"),
 	)) {
 		const fileName = file.split("/").pop();
 
@@ -592,26 +602,34 @@ async function patchBabele(wrapped, ...args) {
 	return allTranslations;
 }
 
-async function getTranslationsFiles(context) {
+async function getTranslationsFiles() {
 	if (!game.user.hasPermission("FILES_BROWSE")) {
 		return game.settings.get("babele", "translationFiles");
 	}
 
-	const lang = game.settings.get("core", "language");
-	const directory = game.settings.get("babele", "directory");
-	const directories = context.modules
-		.filter((module) => module.lang === lang)
-		.map((module) => `modules/${module.module}/${module.dir}`);
-
-	if (directory?.trim?.()) {
-		directories.push(`${directory}/${lang}`);
-	}
-
-	if (context.systemTranslationsDir) {
-		directories.push(
-			`systems/${game.system.id}/${context.systemTranslationsDir}/${lang}`,
-		);
-	}
+	const directories = [
+		"/modules/ru-ru/compendium/wfrp4e",
+		"/modules/ru-ru/compendium/wfrp4e/altdorf",
+		"/modules/ru-ru/compendium/wfrp4e/archives1",
+		"/modules/ru-ru/compendium/wfrp4e/archives2",
+		"/modules/ru-ru/compendium/wfrp4e/core",
+		"/modules/ru-ru/compendium/wfrp4e/dotr",
+		"/modules/ru-ru/compendium/wfrp4e/eis",
+		"/modules/ru-ru/compendium/wfrp4e/empire-ruins",
+		"/modules/ru-ru/compendium/wfrp4e/gm-toolkit",
+		"/modules/ru-ru/compendium/wfrp4e/horned-rat",
+		"/modules/ru-ru/compendium/wfrp4e/middenheim",
+		"/modules/ru-ru/compendium/wfrp4e/owb1",
+		"/modules/ru-ru/compendium/wfrp4e/pbtt",
+		"/modules/ru-ru/compendium/wfrp4e/rnhd",
+		"/modules/ru-ru/compendium/wfrp4e/salzenmund",
+		"/modules/ru-ru/compendium/wfrp4e/starter-set",
+		"/modules/ru-ru/compendium/wfrp4e/ua1",
+		"/modules/ru-ru/compendium/wfrp4e/ua2",
+		"/modules/ru-ru/compendium/wfrp4e/up-in-arms",
+		"/modules/ru-ru/compendium/wfrp4e/wom",
+		"/modules/ru-ru/compendium/wfrp4e/zoo",
+	];
 
 	const files = [];
 
