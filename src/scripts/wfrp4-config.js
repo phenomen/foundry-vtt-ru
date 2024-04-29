@@ -7,25 +7,6 @@ export function patchConfigReady() {
 		ranged: "Дистанционное оружие",
 	};
 
-	// Range Test Modifiers
-	// тут нужен перевод левой части???
-	// WFRP4E.rangeModifiers = {
-	// 	"Point Blank": "easy",
-	// 	"Short Range": "average",
-	// 	"Normal": "challenging",
-	// 	"Long Range": "difficult",
-	// 	"Extreme": "vhard"
-	// };
-
-	// Ranges
-	WFRP4E.rangeBands = {
-		pb: "Point Blank",
-		short: "Short Range",
-		normal: "Normal",
-		long: "Long Range",
-		extreme: "Extreme",
-	};
-
 	// Species
 	WFRP4E.species = {
 		human: "Человек",

@@ -21,6 +21,13 @@ export function init() {
 	setupBabele("wfrp4e");
 
 	if (typeof Babele !== "undefined") {
+		libWrapper.register(
+			"ru-ru",
+			"Babele.prototype.loadTranslations",
+			patchBabele,
+			"OVERRIDE",
+		);
+
 		Babele.get().registerConverters({
 			convertDuration: (duration) => {
 				if (!duration) return;
@@ -302,7 +309,7 @@ export function init() {
 							if (item_ru?.system) {
 								item_ru.name = item_ru.name || name_en;
 								if (Object.hasOwn(translatedExceptions, item_en.name)) {
-									item_en.name = translatedExceptions[value];
+									item_en.name = translatedExceptions[item_en.name];
 								} else {
 									item_en.name = item_ru.name + special;
 								}
@@ -496,4 +503,132 @@ export function init() {
 			patchConfigSetup();
 		});
 	}
+}
+
+async function patchBabele(wrapped, ...args) {
+	const files = await getTranslationsFiles(this);
+
+	console.log("ru-ru: Patching Babele");
+
+	if (files.length === 0) {
+		console.log(
+			`Babele | no compendium translation files found for ${game.settings.get(
+				"core",
+				"language",
+			)} language.`,
+		);
+
+		return [];
+	}
+
+	const allTranslations = [];
+	const loadTranslations = async (collection, urls) => {
+		if (urls.length === 0) {
+			console.log(`Babele | no translation file found for ${collection} pack`);
+		} else {
+			const [translations] = await Promise.all([
+				Promise.all(
+					urls.map((url) =>
+						fetch(url)
+							.then((r) => r.json())
+							.catch((e) => {}),
+					),
+				),
+			]);
+
+			let translation;
+			for (const t of translations) {
+				if (t) {
+					if (translation) {
+						translation.label = t.label ?? translation.label;
+						if (t.entries) {
+							translation.entries = {
+								...translation.entries,
+								...t.entries,
+							};
+						}
+						if (t.mapping) {
+							translation.mapping = {
+								...translation.mapping,
+								...t.mapping,
+							};
+						}
+					} else {
+						translation = t;
+					}
+				}
+			}
+
+			if (translation) {
+				console.log(
+					`Babele | translation for ${collection} pack successfully loaded`,
+				);
+				allTranslations.push(
+					mergeObject(translation, { collection: collection }),
+				);
+			}
+		}
+	};
+
+	for (const metadata of game.data.packs) {
+		if (this.supported(metadata)) {
+			const collection = this.getCollection(metadata);
+			const collectionFileName = encodeURI(`${collection}.json`);
+			const urls = files.filter((file) => file.endsWith(collectionFileName));
+
+			await loadTranslations(collection, urls);
+		}
+	}
+
+	// Handle specific files for pack folders
+	for (const file of files.filter((file) =>
+		file.endsWith(`${Babele.PACK_FOLDER_TRANSLATION_NAME_SUFFIX}.json`),
+	)) {
+		const fileName = file.split("/").pop();
+
+		await loadTranslations(fileName.replace(".json", ""), [file]);
+	}
+
+	return allTranslations;
+}
+
+async function getTranslationsFiles(context) {
+	if (!game.user.hasPermission("FILES_BROWSE")) {
+		return game.settings.get("babele", "translationFiles");
+	}
+
+	const lang = game.settings.get("core", "language");
+	const directory = game.settings.get("babele", "directory");
+	const directories = context.modules
+		.filter((module) => module.lang === lang)
+		.map((module) => `modules/${module.module}/${module.dir}`);
+
+	if (directory?.trim?.()) {
+		directories.push(`${directory}/${lang}`);
+	}
+
+	if (context.systemTranslationsDir) {
+		directories.push(
+			`systems/${game.system.id}/${context.systemTranslationsDir}/${lang}`,
+		);
+	}
+
+	const files = [];
+
+	for (let i = 0; i < directories.length; i++) {
+		try {
+			const result = await FilePicker.browse("data", directories[i]);
+			for (const file of result.files) {
+				files.push(file);
+			}
+		} catch (err) {
+			console.warn(`Babele: ${err}`);
+		}
+	}
+
+	if (game.user.isGM) {
+		game.settings.set("babele", "translationFiles", files);
+	}
+
+	return files;
 }
