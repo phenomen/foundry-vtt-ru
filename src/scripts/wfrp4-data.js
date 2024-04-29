@@ -343,7 +343,7 @@ export const translatedTalentSpec = {
 	Small: "Небольшой",
 	Soldiers: "солдаты",
 	Strangers: "незнакомцы",
-	Target: "Цель",
+	Target: "цель",
 	"Taste or Touch": "вкус или осязание",
 	Taste: "вкус",
 	Tentacles: "щупальца",
@@ -397,7 +397,6 @@ export const translatedGender = {
 };
 
 export const translatedSpecies = {
-	Human: "Различный",
 	Dwarf: "Гном",
 	Elf: "Эльф",
 	"High Elf": "Высший эльф",
@@ -423,6 +422,7 @@ export const translatedSpecies = {
 	Griffon: "Грифон",
 	Hippogryph: "Гиппогриф",
 	Horse: "Лошадь",
+	Human: "Человек",
 	Hydra: "Гидра",
 	Jabberslythe: "Бормохват",
 	Manticore: "Мантикора",

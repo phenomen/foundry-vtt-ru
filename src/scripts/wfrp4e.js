@@ -224,7 +224,7 @@ export function init() {
 				return translateValue(gender, translatedGender);
 			},
 
-			convertActorSpecie: (species) => {
+			convertActorSpecies: (species) => {
 				if (!species) return;
 				return translateValue(species, translatedSpecies);
 			},
