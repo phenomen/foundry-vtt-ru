@@ -32,3 +32,16 @@ export function translateList(value, translations) {
 		})
 		.join(", ");
 }
+
+export function parseParentheses(str) {
+	const regex = /^(.*)\s+\((.*)\)$/;
+	const match = str.match(regex);
+
+	if (match) {
+		const main = match[1];
+		const sub = match[2];
+		return { main: main.trim(), sub: sub.trim() || undefined };
+	}
+
+	return { main: str.trim(), sub: undefined };
+}

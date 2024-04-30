@@ -1,4 +1,9 @@
-import { setupBabele, translateList, translateValue } from "../shared.js";
+import {
+	setupBabele,
+	translateList,
+	translateValue,
+	parseParentheses,
+} from "../shared.js";
 import { patchConfigReady, patchConfigSetup } from "./wfrp4-config.js";
 
 import {
@@ -69,161 +74,52 @@ export function init() {
 				return translateList(gods, translatedGods);
 			},
 
-			convertCareerSkills: (originalSkillsList) => {
-				const skillPacks = game.wfrp4e.tags.getPacksWithTag("skill");
+			convertCareerSkills: (list) => {
+				const packs = game.wfrp4e.tags.getPacksWithTag("skill");
 
-				if (originalSkillsList) {
-					let index;
-					const skillsListLength = originalSkillsList.length;
-					const skillRegex = /(.*)\((.*)\)/i;
+				if (list) {
+					for (let i = 0; i < list.length; i++) {
+						list[i] = list[i].trim();
 
-					for (index = 0; index < skillsListLength; index++) {
-						originalSkillsList[index] = originalSkillsList[index].trim();
-
-						for (const skillPack of skillPacks) {
-							let translatedItem = game.babele.translate(
-								skillPack.metadata.id,
-								{ name: originalSkillsList[index], type: "skill" },
-								true,
+						for (const pack of packs) {
+							const translation = translateParentheses(
+								list[i],
+								translatedSkillSpec,
+								"skill",
+								pack.metadata.id,
 							);
 
-							let translatedSkill = translatedItem?.name || undefined;
-
-							if (!translatedSkill) {
-								translatedSkill = originalSkillsList[index];
-							}
-
-							if (translatedSkill === originalSkillsList[index]) {
-								const result = skillRegex.exec(originalSkillsList[index]);
-
-								if (result) {
-									let subword = translateValue(
-										result[2].trim(),
-										translatedSkillSpec,
-									);
-
-									if (!subword) {
-										subword = result[2];
-									}
-
-									let skillPart1 = `${result[1].trim()} ()`;
-
-									translatedItem = game.babele.translate(
-										skillPack.metadata.id,
-										{ name: skillPart1, type: "skill" },
-										true,
-									);
-
-									let translatedWithSubword = translatedItem?.name || undefined;
-
-									if (
-										translatedWithSubword &&
-										translatedWithSubword !== skillPart1
-									) {
-										const result2 = skillRegex.exec(translatedWithSubword);
-
-										if (result2) {
-											translatedSkill = `${result2[1]}(${subword})`;
-										} else {
-											console.log("WARNING: Wrong skill name found!");
-											break;
-										}
-									} else {
-										skillPart1 = `${result[1].trim()} ( )`;
-
-										translatedItem = game.babele.translate(
-											skillPack.metadata.id,
-											{ name: skillPart1, type: "skill" },
-											true,
-										);
-
-										translatedWithSubword = translatedItem?.name || undefined;
-
-										const result2 = skillRegex.exec(translatedWithSubword);
-
-										if (result2) {
-											translatedSkill = `${result2[1]}(${subword})`;
-										} else {
-											console.log("WARNING: Wrong skill name found!");
-											break;
-										}
-									}
-								}
-							}
-
-							originalSkillsList[index] = translatedSkill;
-
-							if (translatedItem?.system) break;
+							list[i] = translation.name || list[i];
+							if (translation?.system) break;
 						}
 					}
 				}
 
-				return originalSkillsList;
+				return list;
 			},
 
-			convertCareerTalents: (originalTalentsList) => {
-				const talentPacks = game.wfrp4e.tags.getPacksWithTag("talent");
-				let index;
+			convertCareerTalents: (list) => {
+				const packs = game.wfrp4e.tags.getPacksWithTag("talent");
 
-				if (originalTalentsList) {
-					const talentsListLength = originalTalentsList.length;
-					const talentRegex = /(.*)\((.*)\)/i;
+				if (list) {
+					for (let i = 0; i < list.length; i++) {
+						list[i] = list[i].trim();
 
-					for (index = 0; index < talentsListLength; index++) {
-						for (const talentPack of talentPacks) {
-							let translatedItem = game.babele.translate(
-								talentPack.metadata.id,
-								{ name: originalTalentsList[index], type: "talent" },
-								true,
+						for (const pack of packs) {
+							const translation = translateParentheses(
+								list[i],
+								translatedTalentSpec,
+								"talent",
+								pack.metadata.id,
 							);
 
-							let translatedTalent = translatedItem?.name || undefined;
-
-							if (!translatedTalent) {
-								translatedTalent = originalTalentsList[index];
-							}
-
-							if (translatedTalent === originalTalentsList[index]) {
-								const result = talentRegex.exec(originalTalentsList[index]);
-
-								if (result) {
-									let subword = translateValue(
-										result[2].trim(),
-										translatedTalentSpec,
-									);
-
-									if (!subword) {
-										subword = result[2];
-									}
-
-									const talentPart1 = result[1].trim();
-
-									translatedItem = game.babele.translate(
-										talentPack.metadata.id,
-										{ name: talentPart1, type: "talent" },
-										true,
-									);
-
-									const translatedWithSubword =
-										translatedItem?.name || undefined;
-
-									if (
-										translatedWithSubword &&
-										translatedWithSubword !== talentPart1
-									) {
-										translatedTalent = `${translatedWithSubword} (${subword})`;
-									}
-								}
-							}
-
-							originalTalentsList[index] = translatedTalent;
-
-							if (translatedItem?.system) break;
+							list[i] = translation.name || list[i];
+							if (translation?.system) break;
 						}
 					}
 				}
 
-				return originalTalentsList;
+				return list;
 			},
 
 			convertActorGender: (gender) => {
@@ -649,4 +545,33 @@ async function getTranslationsFiles() {
 	}
 
 	return files;
+}
+
+function translateParentheses(str, specs, category, pack) {
+	let translation = game.babele.translate(
+		pack,
+		{ name: str, type: category },
+		true,
+	);
+
+	if (translation?.name) {
+		return translation;
+	}
+
+	const words = parseParentheses(str);
+
+	translation = game.babele.translate(
+		pack,
+		{ name: words.main, type: category },
+		true,
+	);
+
+	if (translation?.name) {
+		translation.name = words.sub
+			? `${translation.name} (${translateValue(words.sub, specs)})`
+			: translation.name;
+		return translation;
+	}
+
+	return undefined;
 }
