@@ -274,6 +274,7 @@ export const translatedTalentSpec = {
 	Cultists: "духовенство",
 	Daemonology: "Школа Демонологии",
 	Death: "Школа Смерти",
+	Deity: "божество",
 	Difficult: "Трудная",
 	Difficulty: "Сложность",
 	Disease: "болезни",

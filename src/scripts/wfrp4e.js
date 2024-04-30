@@ -355,10 +355,9 @@ function translateItem(name, type, pack, specs) {
 
 function translateSkill(item) {
 	const packs = game.wfrp4e.tags.getPacksWithTag("skill");
-	let translation;
 
 	for (const pack of packs) {
-		translation = translateItem(
+		const translation = translateItem(
 			item.name,
 			"skill",
 			pack.metadata.id,
@@ -379,10 +378,71 @@ function translateSkill(item) {
 }
 
 function translateTrait(item) {
+	const packs = game.wfrp4e.tags.getPacksWithTag("trait");
+
+	for (const pack of packs) {
+		const translation = translateItem(
+			item.name,
+			"trait",
+			pack.metadata.id,
+			translatedTalentSpec,
+		);
+
+		if (translation?.system) {
+			if (
+				item.system?.specification?.value &&
+				typeof item.system?.specification?.value === "string"
+			) {
+				const translatedSpec = translateValue(
+					item.system.specification.value,
+					translatedTalentSpec,
+				);
+
+				item.system.specification.value =
+					translatedSpec || item.system.specification.value;
+			}
+
+			foundry.utils.mergeObject(item, translation);
+			break;
+		}
+	}
+
+	if (Object.hasOwn(translatedExceptions, item.name)) {
+		item.name = translatedExceptions[item.name];
+	}
+
 	return item;
 }
 
 function translateTalent(item) {
+	const packs = game.wfrp4e.tags.getPacksWithTag("talent");
+
+	for (const pack of packs) {
+		const translation = translateItem(
+			item.name,
+			"talent",
+			pack.metadata.id,
+			translatedTalentSpec,
+		);
+
+		if (translation?.system) {
+			if (
+				item.system?.tests?.value &&
+				typeof item.system?.tests?.value === "string"
+			) {
+				item.system.tests.value =
+					translation.system.tests.value || item.system.specification.value;
+			}
+
+			foundry.utils.mergeObject(item, translation);
+			break;
+		}
+	}
+
+	if (Object.hasOwn(translatedExceptions, item.name)) {
+		item.name = translatedExceptions[item.name];
+	}
+
 	return item;
 }
 

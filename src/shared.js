@@ -21,7 +21,7 @@ export function setupBabele(id) {
 }
 
 export function translateValue(value, translations) {
-	return translations[value] || value;
+	return translations[value.trim()] || value;
 }
 
 export function translateList(value, translations) {
