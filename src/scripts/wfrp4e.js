@@ -531,7 +531,7 @@ function translateCareerSkills(list) {
 						translatedSkillSpec,
 					);
 
-					list[i] = translation.name || list[i];
+					list[i] = translation?.name || list[i];
 
 					if (translation?.system) break;
 				}
@@ -560,7 +560,8 @@ function translateCareerTalents(list) {
 						translatedTalentSpec,
 					);
 
-					list[i] = translation.name || list[i];
+					list[i] = translation?.name || list[i];
+
 					if (translation?.system) break;
 				}
 			}
