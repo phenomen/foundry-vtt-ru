@@ -27,9 +27,7 @@ export function translateValue(value, translations) {
 export function translateList(value, translations) {
 	return value
 		.split(", ")
-		.map((item) => {
-			return translateValue(item, translations);
-		})
+		.map((item) => translateValue(item, translations))
 		.join(", ");
 }
 

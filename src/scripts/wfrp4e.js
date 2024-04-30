@@ -34,6 +34,11 @@ export function init() {
 		);
 
 		Babele.get().registerConverters({
+			convertEffects: (effects) => {
+				if (!effects) return;
+				return translateEffects(effects);
+			},
+
 			convertDuration: (duration) => {
 				if (!duration) return;
 				return translateValue(duration, translatedDuration);
@@ -103,30 +108,29 @@ export function init() {
 				if (!items) return;
 
 				return items.map((item) => {
-					if (item.name) {
-						switch (item.type) {
-							case "skill":
-								return translateSkill(item);
-							case "trait":
-								return translateTrait(item);
-							case "talent":
-								return translateTalent(item);
-							case "spell":
-							case "prayer":
-								return translateSpell(item);
-							case "career":
-								return translateCareer(item);
-							case "trapping":
-							case "weapon":
-							case "armour":
-							case "container":
-							case "money":
-								return translateTrapping(item);
-							default:
-								return item;
-						}
+					const { name, type } = item;
+					if (!name) return item;
+
+					switch (type) {
+						case "skill":
+							return translateSkill(item);
+						case "trait":
+						case "talent":
+							return translateTrait(item);
+						case "spell":
+						case "prayer":
+							return translateSpell(item);
+						case "career":
+							return translateCareer(item);
+						case "trapping":
+						case "weapon":
+						case "armour":
+						case "container":
+						case "money":
+							return translateTrapping(item);
+						default:
+							return item;
 					}
-					return item;
 				});
 			},
 		});
@@ -307,24 +311,31 @@ function translateItem(name, type, pack, specs) {
 	return undefined;
 }
 
+function translateEffects(effects) {
+	// TODO
+}
+
 function translateSkill(item) {
 	const packs = game.wfrp4e.tags.getPacksWithTag("skill");
 
+	let translation;
+
 	for (const pack of packs) {
-		const translation = translateItem(
+		translation = translateItem(
 			item.name,
 			"skill",
 			pack.metadata.id,
 			translatedSkillSpec,
 		);
 
-		if (translation?.system) {
-			foundry.utils.mergeObject(item, translation);
-			break;
-		}
+		if (translation?.system) break;
 	}
 
-	if (Object.hasOwn(translatedExceptions, item.name)) {
+	if (translation) {
+		foundry.utils.mergeObject(item, translation);
+	}
+
+	if (translatedExceptions[item.name]) {
 		item.name = translatedExceptions[item.name];
 	}
 
@@ -332,68 +343,32 @@ function translateSkill(item) {
 }
 
 function translateTrait(item) {
-	const packs = game.wfrp4e.tags.getPacksWithTag("trait");
+	const packs = game.wfrp4e.tags.getPacksWithTag(["trait", "talent"]);
+
+	let translation;
 
 	for (const pack of packs) {
-		const translation = translateItem(
+		translation = translateItem(
 			item.name,
-			"trait",
+			item.type,
 			pack.metadata.id,
 			translatedTalentSpec,
 		);
 
-		if (translation?.system) {
-			if (
-				item.system?.specification?.value &&
-				typeof item.system?.specification?.value === "string"
-			) {
-				const translatedSpec = translateValue(
-					item.system.specification.value,
-					translatedTalentSpec,
-				);
+		if (translation?.system) break;
+	}
 
-				item.system.specification.value =
-					translatedSpec || item.system.specification.value;
-			}
-
-			foundry.utils.mergeObject(item, translation);
-			break;
+	if (translation) {
+		const specification = item.system?.specification;
+		if (specification?.value && typeof specification.value === "string") {
+			specification.value =
+				translateValue(specification.value, translatedTalentSpec) ||
+				specification.value;
 		}
+		foundry.utils.mergeObject(item, translation);
 	}
 
-	if (Object.hasOwn(translatedExceptions, item.name)) {
-		item.name = translatedExceptions[item.name];
-	}
-
-	return item;
-}
-
-function translateTalent(item) {
-	const packs = game.wfrp4e.tags.getPacksWithTag("talent");
-
-	for (const pack of packs) {
-		const translation = translateItem(
-			item.name,
-			"talent",
-			pack.metadata.id,
-			translatedTalentSpec,
-		);
-
-		if (translation?.system) {
-			if (
-				item.system?.tests?.value &&
-				typeof item.system?.tests?.value === "string"
-			) {
-				item.system.tests.value =
-					translation.system.tests.value || item.system.specification.value;
-			}
-
-			foundry.utils.mergeObject(item, translation);
-			break;
-		}
-	}
-
-	if (Object.hasOwn(translatedExceptions, item.name)) {
+	if (translatedExceptions[item.name]) {
 		item.name = translatedExceptions[item.name];
 	}
 
@@ -403,33 +378,38 @@ function translateTalent(item) {
 function translateCareer(item) {
 	const packs = game.wfrp4e.tags.getPacksWithTag("career");
 
+	let translation;
+
 	for (const pack of packs) {
-		const translation = translateItem(
+		translation = translateItem(
 			item.name,
 			"career",
 			pack.metadata.id,
 			undefined,
 		);
 
-		if (translation?.system) {
-			if (item.system?.class?.value) {
-				item.system.class.value = translateValue(
-					item.system.class.value,
-					translatedCareerClass,
-				);
-			}
+		if (translation?.system) break;
+	}
 
-			if (item.system?.skills) {
-				item.system.skills = translateCareerSkills(item.system.skills);
-			}
+	if (translation) {
+		const { class: careerClass, skills, talents } = item.system || {};
 
-			if (item.system?.talents) {
-				item.system.talents = translateCareerTalents(item.system.talents);
-			}
-
-			foundry.utils.mergeObject(item, translation);
-			break;
+		if (careerClass?.value) {
+			careerClass.value = translateValue(
+				careerClass.value,
+				translatedCareerClass,
+			);
 		}
+
+		if (skills) {
+			item.system.skills = translateCareerSkills(skills);
+		}
+
+		if (talents) {
+			item.system.talents = translateCareerTalents(talents);
+		}
+
+		foundry.utils.mergeObject(item, translation);
 	}
 
 	return item;
@@ -438,53 +418,43 @@ function translateCareer(item) {
 function translateSpell(item) {
 	const packs = game.wfrp4e.tags.getPacksWithTag(["spell", "prayer"]);
 
+	let translation;
+
 	for (const pack of packs) {
-		const translation = translateItem(
+		translation = translateItem(
 			item.name,
 			item.type,
 			pack.metadata.id,
 			undefined,
 		);
 
-		if (translation?.system) {
-			if (item.system?.range?.value) {
-				item.system.range.value = translateValue(
-					item.system.range.value,
-					translatedSpellRange,
-				);
-			}
+		if (translation?.system) break;
+	}
 
-			if (item.system?.duration?.value) {
-				item.system.duration.value = translateValue(
-					item.system.duration.value,
-					translatedSpellDuration,
-				);
-			}
+	if (translation) {
+		const { range, duration, target, damage, god } = item.system || {};
 
-			if (item.system?.target?.value) {
-				item.system.target.value = translateValue(
-					item.system.target.value,
-					translatedSpellTarget,
-				);
-			}
-
-			if (item.system?.damage?.value) {
-				item.system.damage.value = translateValue(
-					item.system.damage.value,
-					translatedSpellDamage,
-				);
-			}
-
-			if (item.system?.god?.value) {
-				item.system.god.value = translateValue(
-					item.system.god.value,
-					translatedGods,
-				);
-			}
-
-			foundry.utils.mergeObject(item, translation);
-			break;
+		if (range?.value) {
+			range.value = translateValue(range.value, translatedSpellRange);
 		}
+
+		if (duration?.value) {
+			duration.value = translateValue(duration.value, translatedSpellDuration);
+		}
+
+		if (target?.value) {
+			target.value = translateValue(target.value, translatedSpellTarget);
+		}
+
+		if (damage?.value) {
+			damage.value = translateValue(damage.value, translatedSpellDamage);
+		}
+
+		if (god?.value) {
+			god.value = translateValue(god.value, translatedGods);
+		}
+
+		foundry.utils.mergeObject(item, translation);
 	}
 
 	return item;
@@ -496,77 +466,70 @@ function translateTrapping(item) {
 		["weapon", "armour", "container", "money"],
 	);
 
+	let translation;
+
 	for (const pack of packs) {
-		const translation = translateItem(
+		translation = translateItem(
 			item.name,
 			item.type,
 			pack.metadata.id,
 			undefined,
 		);
 
-		if (translation?.system) {
-			foundry.utils.mergeObject(item, translation);
-			break;
-		}
+		if (translation?.system) break;
+	}
+
+	if (translation) {
+		foundry.utils.mergeObject(item, translation);
 	}
 
 	return item;
 }
 
 function translateCareerSkills(list) {
+	if (!list) return;
+
 	const packs = game.wfrp4e.tags.getPacksWithTag("skill");
 
-	if (list) {
-		for (let i = 0; i < list.length; i++) {
-			list[i] = list[i].trim();
+	return list.map((t) => {
+		const item = t.trim();
 
-			if (Object.hasOwn(translatedExceptions, list[i])) {
-				list[i] = translatedExceptions[list[i]];
-			} else {
-				for (const pack of packs) {
-					const translation = translateItem(
-						list[i],
-						"skill",
-						pack.metadata.id,
-						translatedSkillSpec,
-					);
-
-					list[i] = translation?.name || list[i];
-
-					if (translation?.system) break;
-				}
-			}
+		if (translatedExceptions[item]) {
+			return translatedExceptions[item];
 		}
-	}
 
-	return list;
+		let translation;
+
+		for (const pack of packs) {
+			translation = translateItem(item, "skill", pack.metadata.id, undefined);
+
+			if (translation?.system) break;
+		}
+
+		return translation?.name || item;
+	});
 }
 
 function translateCareerTalents(list) {
+	if (!list) return;
+
 	const packs = game.wfrp4e.tags.getPacksWithTag("talent");
 
-	if (list) {
-		for (let i = 0; i < list.length; i++) {
-			list[i] = list[i].trim();
+	return list.map((t) => {
+		const item = t.trim();
 
-			if (Object.hasOwn(translatedExceptions, list[i])) {
-				list[i] = translatedExceptions[list[i]];
-			} else {
-				for (const pack of packs) {
-					const translation = translateItem(
-						list[i],
-						"talent",
-						pack.metadata.id,
-						translatedTalentSpec,
-					);
-
-					list[i] = translation?.name || list[i];
-
-					if (translation?.system) break;
-				}
-			}
+		if (translatedExceptions[item]) {
+			return translatedExceptions[item];
 		}
-	}
 
-	return list;
+		let translation;
+
+		for (const pack of packs) {
+			translation = translateItem(item, "talent", pack.metadata.id, undefined);
+
+			if (translation?.system) break;
+		}
+
+		return translation?.name || item;
+	});
 }
