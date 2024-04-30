@@ -75,60 +75,13 @@ export function init() {
 			},
 
 			convertCareerSkills: (list) => {
-				const packs = game.wfrp4e.tags.getPacksWithTag("skill");
-
-				if (list) {
-					for (let i = 0; i < list.length; i++) {
-						list[i] = list[i].trim();
-
-						if (Object.hasOwn(translatedExceptions, list[i])) {
-							list[i] = translatedExceptions[list[i]];
-						} else {
-							for (const pack of packs) {
-								const translation = translateItem(
-									list[i],
-									"skill",
-									pack.metadata.id,
-									translatedSkillSpec,
-								);
-
-								list[i] = translation.name || list[i];
-
-								if (translation?.system) break;
-							}
-						}
-					}
-				}
-
-				return list;
+				if (!list) return;
+				return translateCareerSkills(list);
 			},
 
 			convertCareerTalents: (list) => {
-				const packs = game.wfrp4e.tags.getPacksWithTag("talent");
-
-				if (list) {
-					for (let i = 0; i < list.length; i++) {
-						list[i] = list[i].trim();
-
-						if (Object.hasOwn(translatedExceptions, list[i])) {
-							list[i] = translatedExceptions[list[i]];
-						} else {
-							for (const pack of packs) {
-								const translation = translateItem(
-									list[i],
-									"talent",
-									pack.metadata.id,
-									translatedTalentSpec,
-								);
-
-								list[i] = translation.name || list[i];
-								if (translation?.system) break;
-							}
-						}
-					}
-				}
-
-				return list;
+				if (!list) return;
+				return translateCareerTalents(list);
 			},
 
 			convertActorGender: (gender) => {
@@ -344,9 +297,10 @@ function translateItem(name, type, pack, specs) {
 	);
 
 	if (translation?.name) {
-		translation.name = words.sub
-			? `${translation.name} (${translateValue(words.sub, specs)})`
-			: translation.name;
+		translation.name =
+			words.sub && specs
+				? `${translation.name} (${translateValue(words.sub, specs)})`
+				: translation.name;
 		return translation;
 	}
 
@@ -447,13 +401,171 @@ function translateTalent(item) {
 }
 
 function translateCareer(item) {
+	const packs = game.wfrp4e.tags.getPacksWithTag("career");
+
+	for (const pack of packs) {
+		const translation = translateItem(
+			item.name,
+			"career",
+			pack.metadata.id,
+			undefined,
+		);
+
+		if (translation?.system) {
+			if (item.system?.class?.value) {
+				item.system.class.value = translateValue(
+					item.system.class.value,
+					translatedCareerClass,
+				);
+			}
+
+			if (item.system?.skills) {
+				item.system.skills = translateCareerSkills(item.system.skills);
+			}
+
+			if (item.system?.talents) {
+				item.system.talents = translateCareerTalents(item.system.talents);
+			}
+
+			foundry.utils.mergeObject(item, translation);
+			break;
+		}
+	}
+
 	return item;
 }
 
 function translateSpell(item) {
+	const packs = game.wfrp4e.tags.getPacksWithTag(["spell", "prayer"]);
+
+	for (const pack of packs) {
+		const translation = translateItem(
+			item.name,
+			item.type,
+			pack.metadata.id,
+			undefined,
+		);
+
+		if (translation?.system) {
+			if (item.system?.range?.value) {
+				item.system.range.value = translateValue(
+					item.system.range.value,
+					translatedSpellRange,
+				);
+			}
+
+			if (item.system?.duration?.value) {
+				item.system.duration.value = translateValue(
+					item.system.duration.value,
+					translatedSpellDuration,
+				);
+			}
+
+			if (item.system?.target?.value) {
+				item.system.target.value = translateValue(
+					item.system.target.value,
+					translatedSpellTarget,
+				);
+			}
+
+			if (item.system?.damage?.value) {
+				item.system.damage.value = translateValue(
+					item.system.damage.value,
+					translatedSpellDamage,
+				);
+			}
+
+			if (item.system?.god?.value) {
+				item.system.god.value = translateValue(
+					item.system.god.value,
+					translatedGods,
+				);
+			}
+
+			foundry.utils.mergeObject(item, translation);
+			break;
+		}
+	}
+
 	return item;
 }
 
 function translateTrapping(item) {
+	const packs = game.wfrp4e.tags.getPacksWithTag(
+		["trapping"],
+		["weapon", "armour", "container", "money"],
+	);
+
+	for (const pack of packs) {
+		const translation = translateItem(
+			item.name,
+			item.type,
+			pack.metadata.id,
+			undefined,
+		);
+
+		if (translation?.system) {
+			foundry.utils.mergeObject(item, translation);
+			break;
+		}
+	}
+
 	return item;
+}
+
+function translateCareerSkills(list) {
+	const packs = game.wfrp4e.tags.getPacksWithTag("skill");
+
+	if (list) {
+		for (let i = 0; i < list.length; i++) {
+			list[i] = list[i].trim();
+
+			if (Object.hasOwn(translatedExceptions, list[i])) {
+				list[i] = translatedExceptions[list[i]];
+			} else {
+				for (const pack of packs) {
+					const translation = translateItem(
+						list[i],
+						"skill",
+						pack.metadata.id,
+						translatedSkillSpec,
+					);
+
+					list[i] = translation.name || list[i];
+
+					if (translation?.system) break;
+				}
+			}
+		}
+	}
+
+	return list;
+}
+
+function translateCareerTalents(list) {
+	const packs = game.wfrp4e.tags.getPacksWithTag("talent");
+
+	if (list) {
+		for (let i = 0; i < list.length; i++) {
+			list[i] = list[i].trim();
+
+			if (Object.hasOwn(translatedExceptions, list[i])) {
+				list[i] = translatedExceptions[list[i]];
+			} else {
+				for (const pack of packs) {
+					const translation = translateItem(
+						list[i],
+						"talent",
+						pack.metadata.id,
+						translatedTalentSpec,
+					);
+
+					list[i] = translation.name || list[i];
+					if (translation?.system) break;
+				}
+			}
+		}
+	}
+
+	return list;
 }
