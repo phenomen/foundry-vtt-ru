@@ -1,4 +1,4 @@
-import { expect, test, describe } from "bun:test";
+import { describe, expect, test } from "bun:test";
 import { parseParentheses } from "../src/shared.js";
 
 describe("Parse a string with parentheses", () => {

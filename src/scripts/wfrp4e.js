@@ -1,8 +1,8 @@
 import {
+	parseParentheses,
 	setupBabele,
 	translateList,
 	translateValue,
-	parseParentheses,
 } from "../shared.js";
 import { patchConfigReady, patchConfigSetup } from "./wfrp4-config.js";
 
