@@ -311,10 +311,6 @@ function translateItem(name, type, pack, specs) {
 	return undefined;
 }
 
-function translateEffects(effects) {
-	// TODO
-}
-
 function translateSkill(item) {
 	const packs = game.wfrp4e.tags.getPacksWithTag("skill");
 
@@ -366,12 +362,8 @@ function translateTrait(item) {
 				specification.value;
 		}
 
-		if (item.effects?.length > 0) {
-			item.effects.map((effect) => {
-				if (effect.name === item.name) {
-					effect.name = translation.name || effect.name;
-				}
-			});
+		if (Array.isArray(item.effects) && item.effects?.length > 0) {
+			item.effects = translateEffects(item.effects);
 		}
 
 		foundry.utils.mergeObject(item, translation);
@@ -541,4 +533,36 @@ function translateCareerTalents(list) {
 
 		return translation?.name || item;
 	});
+}
+
+function translateEffects(effects) {
+	if (Array.isArray(effects) && effects?.length > 0) {
+		effects.map((effect) => {
+			translateEffect(effect);
+		});
+	}
+	return effects;
+}
+
+function translateEffect(item) {
+	const packs = game.wfrp4e.tags.getPacksWithTag(["trait", "talent"]);
+
+	let translation;
+
+	for (const pack of packs) {
+		translation = translateItem(
+			item.name,
+			"effect",
+			pack.metadata.id,
+			translatedTalentSpec,
+		);
+
+		if (translation?.name) break;
+	}
+
+	if (translation) {
+		item.name = translation.name || item.name;
+	}
+
+	return item;
 }
