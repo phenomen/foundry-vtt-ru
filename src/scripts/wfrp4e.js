@@ -81,12 +81,12 @@ export function init() {
 
 			convertCareerSkills: (list) => {
 				if (!list) return;
-				return translateCareerSkills(list);
+				return translateCareerItems(list, "skill", translatedSkillSpec);
 			},
 
 			convertCareerTalents: (list) => {
 				if (!list) return;
-				return translateCareerTalents(list);
+				return translateCareerItems(list, "talent", translatedTalentSpec);
 			},
 
 			convertActorGender: (gender) => {
@@ -487,13 +487,13 @@ function translateTrapping(item) {
 	return item;
 }
 
-function translateCareerSkills(list) {
+function translateCareerItems(list, type, specs) {
 	if (!list) return;
 
-	const packs = game.wfrp4e.tags.getPacksWithTag("skill");
+	const packs = game.wfrp4e.tags.getPacksWithTag(type);
 
-	return list.map((t) => {
-		const item = t.trim();
+	return list.map((element) => {
+		const item = element.trim();
 
 		if (translatedExceptions[item]) {
 			return translatedExceptions[item];
@@ -502,31 +502,7 @@ function translateCareerSkills(list) {
 		let translation;
 
 		for (const pack of packs) {
-			translation = translateItem(item, "skill", pack.metadata.id, undefined);
-
-			if (translation?.system) break;
-		}
-
-		return translation?.name || item;
-	});
-}
-
-function translateCareerTalents(list) {
-	if (!list) return;
-
-	const packs = game.wfrp4e.tags.getPacksWithTag("talent");
-
-	return list.map((t) => {
-		const item = t.trim();
-
-		if (translatedExceptions[item]) {
-			return translatedExceptions[item];
-		}
-
-		let translation;
-
-		for (const pack of packs) {
-			translation = translateItem(item, "talent", pack.metadata.id, undefined);
+			translation = translateItem(item, type, pack.metadata.id, specs);
 
 			if (translation?.system) break;
 		}
