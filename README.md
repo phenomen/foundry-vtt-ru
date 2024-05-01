@@ -1,6 +1,6 @@
 # Русский перевод для Foundry VTT
 
-![](https://img.shields.io/badge/версия_модуля-v12.320.4-blue)
+![](https://img.shields.io/badge/версия_модуля-v12.320.5-blue)
 ![](https://img.shields.io/badge/требуется_FVTT-v11-orange)
 ![](https://img.shields.io/badge/поддерживается_FVTT-v12-green)
 

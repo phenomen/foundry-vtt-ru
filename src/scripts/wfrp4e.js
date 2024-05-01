@@ -365,6 +365,15 @@ function translateTrait(item) {
 				translateValue(specification.value, translatedTalentSpec) ||
 				specification.value;
 		}
+
+		if (item.effects?.length > 0) {
+			item.effects.map((effect) => {
+				if (effect.name === item.name) {
+					effect.name = translation.name || effect.name;
+				}
+			});
+		}
+
 		foundry.utils.mergeObject(item, translation);
 	}
 
