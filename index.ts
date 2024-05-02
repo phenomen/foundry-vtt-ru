@@ -55,7 +55,7 @@ async function buildSource(id: string) {
 		outdir: `./${id}`,
 		publicPath: `/modules/${id}/`,
 		minify: true,
-		splitting: true,
+		splitting: false,
 		sourcemap: "none",
 	}).catch((e) => {
 		console.error(e);
