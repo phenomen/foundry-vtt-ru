@@ -1,6 +1,6 @@
 # Русский перевод для Foundry VTT
 
-![](https://img.shields.io/badge/версия_модуля-v12.320.12-blue)
+![](https://img.shields.io/badge/версия_модуля-v12.320.13-blue)
 ![](https://img.shields.io/badge/требуется_FVTT-v11-orange)
 ![](https://img.shields.io/badge/поддерживается_FVTT-v12-green)
 
@@ -11,7 +11,7 @@
 ## Ссылки
 
 - [Github](https://github.com/phenomen/foundry-vtt-ru)
-- [manifest.json](https://raw.githubusercontent.com/phenomen/foundry-vtt-ru/main/public/module.json)
+- [manifest.json](https://github.com/phenomen/foundry-vtt-ru/releases/download/latest/module.json)
 - [Модуль на сайте Foundry VTT](https://foundryvtt.com/packages/ru-ru/)
 - [Русскоязычное сообщество Foundry в Discord](https://discord.gg/Z2CXFy35WF)
 
