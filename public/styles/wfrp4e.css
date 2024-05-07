@@ -111,21 +111,17 @@ span.item-carries {
 	font-size: 0.6rem;
 }
 
-.app.window-app.sheet.wfrp4e.actor
-	.tab.inventory.active
-	.inventory-header.inventory-container
-	.column-section {
+.app.window-app.sheet.wfrp4e.actor .tab.inventory.active .inventory-header.inventory-container .column-section {
 	min-width: 100px;
 	max-width: 100px;
 }
 
-.app.window-app.sheet.wfrp4e.actor
-	.tab.skills.active
-	.skill-section
-	.inventory-list
-	.item
-	.skill-total {
+.app.window-app.sheet.wfrp4e.actor .tab.skills.active .skill-section .inventory-list .item .skill-total {
 	height: 19px;
+}
+
+.app.window-app.sheet.wfrp4e.actor.character-sheet .general .items .row .item .label-details {
+	white-space: nowrap;
 }
 
 .label-text,
@@ -147,7 +143,7 @@ span.item-carries {
 	font-size: var(--text-base);
 }
 
-.app.window-app.sheet.item-sheet .sheet-tabs.tabs > a {
+.app.window-app.sheet.item-sheet .sheet-tabs.tabs>a {
 	font-family: var(--font-fancy);
 	font-size: var(--text-base);
 	font-weight: 700;

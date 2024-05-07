@@ -49,7 +49,7 @@ function parseCommandLineArgs(): BuildOptions {
 }
 
 async function buildSource(id: string) {
-	await Bun.build({
+	const result = await Bun.build({
 		entrypoints: ["./src/index.js"],
 		format: "esm",
 		outdir: `./${id}`,
@@ -57,9 +57,11 @@ async function buildSource(id: string) {
 		minify: true,
 		splitting: false,
 		sourcemap: "none",
-	}).catch((e) => {
-		console.error(e);
 	});
+
+	if (!result.success) {
+		throw new AggregateError(result.logs, "Build failed");
+	}
 }
 
 async function copyDirectory(src: string, dest: string) {
