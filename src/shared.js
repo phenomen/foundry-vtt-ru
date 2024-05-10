@@ -7,6 +7,8 @@ export function setupBabele(id) {
 			lang: "ru",
 			dir: `compendium/${id}`,
 		});
+
+		game.settings.set("babele", "showOriginalName", true);
 	} else {
 		new Dialog({
 			title: "Перевод библиотек",

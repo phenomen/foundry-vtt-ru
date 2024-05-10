@@ -1,5 +1,7 @@
+import { setupBabele } from "../shared.js";
+
 export function init() {
-	/* Выбор источника перевода */
+	/* Регистрация настроек */
 	game.settings.register("ru-ru", "altTranslation", {
 		name: "(D&D5E) Альтернативный перевод",
 		hint: "(Требуется модуль libWrapper) Использовать альтернативный перевод D&D5E от Phantom Studio. Иначе будет использоваться официальный перевод издательства Hobby World.",
@@ -13,10 +15,9 @@ export function init() {
 		},
 	});
 
-	/* Настройка Babele */
 	game.settings.register("ru-ru", "compendiumTranslation", {
 		name: "(D&D5E) Перевод библиотек",
-		hint: "(Требуется модуль Babele) Некоторые библиотеки системы D&D5E будут переведены.",
+		hint: "(Требуется модуль Babele) Библиотеки системы D&D5E будут переведены.",
 		type: Boolean,
 		default: true,
 		scope: "world",
@@ -28,40 +29,15 @@ export function init() {
 	});
 
 	/* Регистрация Babele */
-	if (
-		typeof Babele !== "undefined" &&
-		game.settings.get("ru-ru", "compendiumTranslation")
-	) {
-		Babele.get().register({
-			module: "ru-ru",
-			lang: "ru",
-			dir: game.settings.get("ru-ru", "altTranslation")
-				? "compendium/dnd5e/ps"
-				: "compendium/dnd5e/hw",
-		});
+	if (game.settings.get("ru-ru", "compendiumTranslation")) {
+		/* Библиотеки D&D */
+		game.settings.get("ru-ru", "altTranslation")
+			? setupBabele("dnd5e/ps")
+			: setupBabele("dnd5e/hw");
 
-		game.settings.set("babele", "showOriginalName", true);
-
-		if (game.settings.get("ru-ru", "altTranslation")) {
-			if (typeof libWrapper === "function") {
-				libWrapper.register(
-					"ru-ru",
-					"Localization.prototype._getTranslations",
-					loadAltTranslation,
-					"WRAPPER",
-				);
-			} else {
-				new Dialog({
-					title: "Альтернативный перевод",
-					content:
-						"<p>Для использования альтернативного перевода требуется активировать модуль <b>libWrapper</b></p>",
-					buttons: {
-						done: {
-							label: "Хорошо",
-						},
-					},
-				}).render(true);
-			}
+		/* Библиотеки Ruins of Symbaroum */
+		if (game.modules.get("symbaroum5ecore")?.active) {
+			setupBabele("dnd5e/ros");
 		}
 
 		Babele.get().registerConverters({
@@ -115,6 +91,29 @@ export function init() {
 						callback: () => {
 							game.settings.set("ru-ru", "compendiumTranslation", false);
 						},
+					},
+				},
+			}).render(true);
+		}
+	}
+
+	/* Регистрация альтернативного перевода */
+	if (game.settings.get("ru-ru", "altTranslation")) {
+		if (typeof libWrapper === "function") {
+			libWrapper.register(
+				"ru-ru",
+				"Localization.prototype._getTranslations",
+				loadAltTranslation,
+				"WRAPPER",
+			);
+		} else {
+			new Dialog({
+				title: "Альтернативный перевод",
+				content:
+					"<p>Для использования альтернативного перевода требуется активировать модуль <b>libWrapper</b></p>",
+				buttons: {
+					done: {
+						label: "Хорошо",
 					},
 				},
 			}).render(true);
@@ -178,6 +177,7 @@ async function loadAltTranslation(wrapped, lang) {
 	return translations;
 }
 
+/* Обновление базы AA */
 async function updateAA() {
 	const translatedSettings = await foundry.utils.fetchJsonWithTimeout(
 		"/modules/ru-ru/i18n/modules/aa-autorec.json",
@@ -209,15 +209,10 @@ async function updateAA() {
 }
 
 function mergeArrays(array1, array2) {
-	const mergedArray = array1.map((item1) => {
-		const matchingItem = array2.find(
-			(item2) => item2.metaData.label === item1.metaData.label,
-		);
-		if (matchingItem) {
-			return { ...item1, ...matchingItem };
-		}
-		return item1;
-	});
+	const labelMap = new Map(array2.map((item) => [item.metaData.label, item]));
 
-	return mergedArray;
+	return array1.map((item) => {
+		const matchingItem = labelMap.get(item.metaData.label);
+		return matchingItem ? { ...item, ...matchingItem } : item;
+	});
 }
