@@ -132,6 +132,85 @@
 
 	"APP.NavigateBackConfirm": "Вы уверены, что хотите выйти из игры?",
 
+	"AMBIENT_SOUND": {
+		"ACTIONS": {
+			"CREATE": "Создать фоновый звук",
+			"UPDATE": "Обновить фоновый звук"
+		},
+		"FIELDS": {
+			"x": {
+				"label": "X"
+			},
+			"y": {
+				"label": "Y"
+			},
+			"elevation": {
+				"label": "Высота"
+			},
+			"path": {
+				"label": "Путь к файлу",
+				"hint": "Настройте фоновый звук для воспроизведения аудиофайла, когда токены перемещаются в его радиусе."
+			},
+			"radius": {
+				"label": "Радиус действия"
+			},
+			"volume": {
+				"label": "Максимальная громкость",
+				"hint": "Определите максимальную громкость звука в его исходной точке (если используется сглаживание) или во всей области."
+			},
+			"easing": {
+				"label": "Сглаживание громкости",
+				"hint": "Регулируйте уровень громкости звука по мере приближения токенов к источнику."
+			},
+			"hidden": {
+				"label": "Скрытый",
+				"hint": "Временно отключить источник звука."
+			},
+			"walls": {
+				"label": "Ограничено стенами",
+				"hint": "Настройте, ограничена ли область действия этого источника звука близлежащими стенами."
+			},
+			"darkness": {
+				"label": "Диапазон активации темноты",
+				"hint": "Вы можете указать диапазон уровней темноты, в котором этот фоновый звук будет слышен.",
+				"min": {
+					"label": "Между"
+				},
+				"max": {
+					"label": "и"
+				}
+			},
+			"effects": {
+				"base": {
+					"type": {
+						"label": "Базовый эффект"
+					},
+					"intensity": {
+						"label": "Интенсивность базового эффекта"
+					},
+					"hint": "Примените эффект к звуку, который фильтрует или преобразует его звучание."
+				},
+				"muffled": {
+					"type": {
+						"label": "Эффект заглушения"
+					},
+					"intensity": {
+						"label": "Интенсивность эффекта заглушения"
+					},
+					"hint": "Примените звуковой эффект к звуку, который заменяет базовый эффект, когда звук заглушен препятствующими стенами. Звук может быть заглушен только если он не ограничен стенами."
+				}
+			}
+		},
+		"SECTIONS": {
+			"SOURCE": "Источник",
+			"PLACEMENT": "Размещение",
+			"PLACEMENT_HINT": "Настройте исходное положение, высоту и радиус источника звука. Высота пока не используется и предоставляется только для справки.",
+			"VOLUME": "Громкость",
+			"ACTIVATION": "Активация",
+			"EFFECTS": "Особые эффекты"
+		}
+	},
+
 	"APPLICATION": {
 		"TOOLS": {
 			"ControlsMenu": "Управление приложением",
@@ -281,13 +360,13 @@
 	"COMBAT.Linked": "Бой прикреплён к сцене, нажмите для открепления",
 	"COMBAT.None": "Нет боя",
 	"COMBAT.NoneActive": "На текущей сцене нет активного боя.",
-	"COMBAT.NoneRemaining": "В бою не осталось участников, которые не были побеждены.",
+	"COMBAT.NoneRemaining": "В бою не осталось бойцов, которые не были побеждены.",
 	"COMBAT.NotStarted": "Не в бою",
 	"COMBAT.PanToCombatant": "Переместиться к бойцу",
 	"COMBAT.PingCombatant": "Маячок на бойце",
 	"COMBAT.WarnNonVisibleToken": "Этот боец вам не виден.",
 	"COMBAT.Resource": "Отслеживаемый ресурс",
-	"COMBAT.ResourceHint": "Выберите атрибут для отслеживания",
+	"COMBAT.ResourceHint": "Выберите атрибут для отслеживания.",
 	"COMBAT.Round": "Раунд",
 	"COMBAT.Rounds": "Раунды",
 	"COMBAT.RoundPrev": "Предыдущий раунд",
@@ -299,7 +378,7 @@
 	"COMBAT.SettingsSave": "Сохранение настроек",
 	"COMBAT.SidebarTitle": "Трекер боя",
 	"COMBAT.SkipDefeated": "Пропуск побеждённых",
-	"COMBAT.SkipDefeatedHint": "Автоматически пропускать побеждённых участников боя.",
+	"COMBAT.SkipDefeatedHint": "Автоматически пропускать побеждённых бойцов.",
 	"COMBAT.Sounds.Epic": "Эпик",
 	"COMBAT.Sounds.MC": "Комментатор боя",
 	"COMBAT.ToggleVis": "Переключение видимости",
@@ -311,6 +390,7 @@
 	"COMBAT.TurnPrev": "Предыдущий ход",
 	"COMBAT.UnknownCombatant": "Неизвестный боец",
 	"COMBAT.Unlinked": "Бой откреплён от сцены, нажмите для прикрепления",
+	"COMBAT.CannotLinkToScene": "Вы не можете привязать бой к сцене, которая не содержит всех бойцов.",
 
 	"COMBAT.CombatantActor": "Представляет актёра",
 	"COMBAT.CombatantCreate": "Создание бойца",
@@ -326,7 +406,7 @@
 	"COMBAT.CombatantReroll": "Переброс инициативы",
 	"COMBAT.CombatantToken": "Связанный токен",
 	"COMBAT.CombatantScene": "Сцена боя",
-	"COMBAT.CombatantNotInScene": "Участник боя {name} отсутствует на текущей сцене",
+	"COMBAT.CombatantNotInScene": "Боец {name} отсутствует на текущей сцене",
 
 	"COMPENDIUM.Name": "Название библиотеки",
 	"COMPENDIUM.Create": "Создание библиотеки",
@@ -442,13 +522,18 @@
 	"CONTROLS.NoteSelect": "Выбор заметок",
 	"CONTROLS.NoteToggle": "Переключение видимости заметок",
 	"CONTROLS.NoteClear": "Удаление заметок",
+	"CONTROLS.RegionShape": "Добавьте форму к выбранной области. Если область не выбрана, будет создана новая. Пересекающиеся формы внутри одной области будут совмещены. Формы одной области имеют один цвет.",
 	"CONTROLS.GroupRegion": "Управление областями",
 	"CONTROLS.RegionSelect": "Выбрать области",
+	"CONTROLS.RegionSelectP": "Выберите одну или несколько областей на сцене. Выбранные области имеют сплошной цвет, а невыбранные — заштрихованы.",
 	"CONTROLS.RegionRectangle": "Рисование прямоугольника",
 	"CONTROLS.RegionEllipse": "Рисование эллипса",
 	"CONTROLS.RegionPolygon": "Рисование полигона",
 	"CONTROLS.RegionHole": "Создание отверстия",
+	"CONTROLS.RegionHoleP": "Новые формы будут добавлены в виде отверстий, внутри которых поведение области будет игнорироваться.",
+	"CONTROLS.RegionSnap": "Новые формы будут прикрепляться к сетке.",
 	"CONTROLS.RegionClear": "Очистка областей",
+	"CONTROLS.RegionPerformance": "<em>Примечание по производительности:</em> Каждый рисунок является отдельной формой. Не следует размещать формы полностью внутри других форм. Для создания сложных форм следует использовать полигональные области вместо наложения простых форм.",
 	"CONTROLS.ClearAll": "Удаление всех объектов",
 	"CONTROLS.ClearAllHint": "Удалить все объекты {type} со сцены?",
 	"CONTROLS.HeaderGame": "Основное управление",
@@ -493,6 +578,7 @@
 	"CONTROLS.CtrlClickDrag": "{mod} + ЛКМ + перетягивание",
 	"CONTROLS.Alt": "ALT",
 	"CONTROLS.AltClick": "{alt} + ЛКМ",
+	"CONTROLS.AltClickDrag": "{alt} + ЛКМ + перетягивание",
 	"CONTROLS.CtrlClick": "{mod} + ЛКМ",
 	"CONTROLS.ShiftClick": "SHIFT + ЛКМ",
 	"CONTROLS.ChainCtrlClick": "удержание <span class=\"reference\">{mod}</span> затем <span class=\"reference\">ЛКМ</span>",
@@ -554,6 +640,7 @@
 	"CONTROLS.CommonRotate": "Вращение",
 	"CONTROLS.CommonToggleHUD": "Интерфейс",
 	"CONTROLS.CommonDraw": "Рисование",
+	"CONTROLS.CommonDrawProportional": "Пропорциональное рисование",
 	"CONTROLS.CommonPlace": "Размещение",
 	"CONTROLS.CommonBlocks": "Блокирует",
 	"CONTROLS.CommonChain": "Цепочка",
@@ -567,6 +654,12 @@
 	"CONTROLS.CommonSelectMultiple": "Выбор нескольких",
 	"CONTROLS.CommonOpenSheet": "Открытие бланка",
 	"CONTROLS.DisableToolclips": "Подсказки можно отключить в настройках",
+	"CONTROLS.CopiedObjects": "Скопировано {count} {type} объектов.",
+	"CONTROLS.PastedObjects": "Вставлено {count} {type} объектов.",
+	"CONTROLS.DeletedObjects": "Удалено {count} {type} объектов.",
+	"CONTROLS.UndoCreateObjects": "Отменено создание {count} {type} объектов.",
+	"CONTROLS.UndoDeleteObjects": "Отменено удаление {count} {type} объектов.",
+	"CONTROLS.EmptyUndoHistory": "В истории изменений для {type} объектов нет шагов для отмены.",
 
 	"DICE.ErrorNonNumeric": "Формула броска {formula} не имеет числового результата.",
 	"DICE.ManualRoll": "Ручной бросок",
@@ -620,8 +713,8 @@
 	"DOCUMENT.ChatMessages": "Сообщения чата",
 	"DOCUMENT.Combat": "Бой",
 	"DOCUMENT.Combats": "Бой",
-	"DOCUMENT.Combatant": "Участник боя",
-	"DOCUMENT.Combatants": "Участники боя",
+	"DOCUMENT.Combatant": "Боец",
+	"DOCUMENT.Combatants": "Бойцы",
 	"DOCUMENT.CopyOf": "{name} (копия)",
 	"DOCUMENT.Drawing": "Рисунок",
 	"DOCUMENT.Drawings": "Рисунки",
@@ -1112,7 +1205,7 @@
 	"LIGHT.HighAbsorption": "Высокое поглощение",
 	"LIGHT.InvertAbsorption": "Обратное поглощение",
 	"LIGHT.NaturalLight": "Естественный свет",
-	"LIGHT.Negative": "Источник тьмы?",
+	"LIGHT.Negative": "Источник тьмы",
 	"LIGHT.NegativeHint": "Источник тьмы блокирует свет и видимость, подавляет источники света или видимости, находящиеся внутри его зоны действия.",
 	"LIGHT.Priority": "Приоритет",
 	"LIGHT.PriorityHint": "Настройте приоритет этого источника света относительно других. По умолчанию источники тьмы перекрывают источники света, но установка более высокого приоритета позволяет источнику света преодолеть тьму.",
@@ -1145,6 +1238,7 @@
 	"LIGHT.AnimationSmokePatch": "Дым",
 	"LIGHT.AnimationRevolving": "Вращающийся свет",
 	"LIGHT.AnimationSiren": "Сигнальный маяк",
+	"LIGHT.AnimationMagicalGloom": "Волшебная дымка",
 
 	"MACRO.Delete": "Удалить макрос",
 	"MACRO.DeleteWarning": "Этот макрос будет навсегда удалён для всех участников.",
@@ -1694,6 +1788,9 @@
 	"SETUP.PackageProgressCleanup": "Удаление временных файлов",
 	"SETUP.PackageProgressComplete": "Установка завершена",
 	"SETUP.PackageProgressError": "Ошибка",
+	"SETUP.PackageIncompatibleSystemsPrompt": "Обновление этого модуля не совместимо с установленными системами. Продолжить?",
+	"SETUP.PackageIncompatibleSystemsBulkPrompt": "Эти модули не были обновлены, т.к. обновление не совместимо с установленными системами. Всё равно обновить их?",
+	"SETUP.PackageIncompatibleWithSystems": "{module} <em>не совместим с</em> {systems}",
 	"SETUP.ConfirmCodeLabel": "Введите '{code}' для подтверждения",
 
 	"SETUP.WorldLaunchConnect": "Загрузка данных мира",
@@ -1758,7 +1855,7 @@
 	"SETUP.DeleteNEDBHint": "В версии 11 приложение Foundry перешло от старой технологии баз данных (NEDB) к новой (LevelDB). Мы автоматически мигрируем ваши старые базы данных в новый формат и сохраняем файлы NEDB на случай, если вам понадобится сделать откат или диагностировать какую-либо проблему. Эта мера безопасности увеличивает объём, занимаемый Foundry Virtual Tabletop на вашем жестком диске. Включение этой функции приведет к автоматическому удалению файлов NEDB после их миграции. Это станет поведением по умолчанию в версии 12.",
 	"SETUP.PortLabel": "Порт",
 	"SETUP.PortHint": "Вы можете выбрать порт, который Foundry Virtual Tabletop будет использовать для соединений TCP и Universal Plug and Play (UPnP).",
-	"SETUP.UPNPLabel": "Вкл. UPnP?",
+	"SETUP.UPNPLabel": "Вкл. UPnP",
 	"SETUP.DataPathLabel": "Путь к User Data",
 	"SETUP.DataPathHint": "Выбор папки в которой будут храниться ваши миры, системы, модули и загруженные файлы.",
 	"SETUP.WorldLabel": "Мир по умолчанию",
@@ -1769,7 +1866,7 @@
 	"SETUP.SSLKeyLabel": "Ключ",
 	"SETUP.Telemetry": "Передача данных об использовании",
 	"SETUP.TelemetryHint": "Вы можете разрешить передачу анонимных данных об использовании приложения, которые помогут нам улучшить Foundry Virtual Tabletop. Данные, собранные при включении этой опции, описаны в нашей <a href=\"https://foundryvtt.com/article/privacy-policy/\" target=\"_blank\">Политике конфиденциальности</a>. Они не содержат никакой личной информации и не передаются никаким другим сторонам. Обмен данными об использовании помогает нам ответить на такие вопросы, как \"какие версии программного обеспечения Foundry Virtual Tabletop используются чаще всего\", \"какие игровые системы используются чаще всего\" и \"какие версии модулей устанавливаются чаще всего\". Мы используем эти данные, чтобы помочь  улучшить совместимость приложения, обеспечить лучшую поддержку клиентов и делиться общей статистикой с нашим сообществом. Если эта опция отключена, никакие данные не будут передаваться.",
-	"SETUP.TelemetryRequestTitle": "Разрешить передачу данных?",
+	"SETUP.TelemetryRequestTitle": "Разрешить передачу данных",
 	"SETUP.TelemetryRequest1": "Foundry Virtual Tabletop V11 позволяет с вашего разрешения собирать анонимные данные  для улучшения приложения.",
 	"SETUP.TelemetryRequest2": "Этот запрос будет показан только один раз, вы можете изменить настройки обмена данными в любое время в меню Настройки приложения, нажав на значок <i class=\"fas fa-cogs\"></i> в правом верхнем углу главного меню.",
 	"SETUP.TelemetryAllow": "Разрешить передачу",
@@ -2004,37 +2101,8 @@
 
 	"SOUND": {
 		"ConfigTitle": "Настройка фонового звука",
-		"Create": "Создать фоновый звук",
-		"Update": "Обновить фоновый звук",
-		"Path": "Исходный файл",
-		"PathHint": "Настройте фоновый звук для воспроизведения аудиофайла, когда токены перемещаются в его радиусе.",
 		"PathPlaceholder": "путь/к/аудио.mp3",
-		"Radius": "Радиус действия",
-		"Easing": "Сглаживание громкости",
-		"EasingHint": "Регулируйте уровень громкости звука по мере приближения токенов к центру.",
-		"Hidden": "Отключено",
-		"HiddenHint": "Переключите временное отключение источника звука.",
-		"MaxVol": "Максимальная громкость",
-		"MaxVolHint": "Определите максимальную громкость звука в его исходной точке (если используется сглаживание) или во всей области.",
 		"New": "Новый звук",
-		"DarknessRange": "Диапазон активации темноты",
-		"DarknessRangeHint": "Вы можете указать диапазон уровней темноты, в котором этот фоновый звук будет слышен.",
-		"PositionHint": "Настройте исходное положение, высоту и радиус источника звука. Высота пока не используется и предоставляется только для справки.",
-		"Walls": "Ограничено стенами",
-		"WallsHint": "Настройте, ограничена ли область действия этого источника звука близлежащими стенами.",
-		"BaseEffectType": "Базовый эффект",
-		"BaseEffectIntensity": "Интенсивность базового эффекта",
-		"BaseEffectHint": "Примените звуковой эффект к звуку, который фильтрует или преобразует его звучание.",
-		"MuffledEffectType": "Заглушенный эффект",
-		"MuffledEffectIntensity": "Интенсивность заглушенного эффекта",
-		"MuffledEffectHint": "Примените звуковой эффект к звуку, который заменяет базовый эффект, когда звук заглушен препятствующими стенами. Звук может быть заглушен только если он не ограничен стенами.",
-		"SECTIONS": {
-			"SOURCE": "Источник",
-			"PLACEMENT": "Размещение",
-			"VOLUME": "Громкость",
-			"ACTIVATION": "Активация",
-			"EFFECTS": "Специальные эффекты"
-		},
 		"EFFECTS": {
 			"LOWPASS": "Фильтр нижних частот",
 			"HIGHPASS": "Фильтр верхних частот",
@@ -2061,8 +2129,8 @@
 	"FOLDER.ExportHint": "Вы можете экспортировать документы папки в разблокированную библиотеку соответствующего типа.",
 	"FOLDER.ExportOptions": "Настройки экспорта",
 	"FOLDER.ExportDestination": "Назначение",
-	"FOLDER.ExportKeepId": "Сохранить ID документов?",
-	"FOLDER.ExportMerge": "Объединить по имени?",
+	"FOLDER.ExportKeepId": "Сохранить ID документов",
+	"FOLDER.ExportMerge": "Объединить по имени",
 	"FOLDER.ExportKeepFolders": "Сохранить структуру папок",
 	"FOLDER.ExportWarningNone": "Для документов с типом {type} не найдено доступных разблокированных библиотек для экспорта.",
 	"FOLDER.ExportExistingFolder": "Существующая папка",
@@ -2178,12 +2246,17 @@
 			"behaviors": {
 				"label": "Поведения",
 				"hint": "Поведение области."
+			},
+			"visibility": {
+				"label": "Видимость",
+				"hint": "Настройка видимости области."
 			}
 		},
 		"ACTIONS": {
 			"create": "Создание области",
 			"update": "Обновление области",
 			"delete": "Удаление области",
+			"shapeCreateFromWalls": "Создание форм на основе стен",
 			"shapeMakeHole": "Добавление отверстия",
 			"shapeFillHole": "Заполнение отверстия",
 			"shapeMoveUp": "Переместить выше",
@@ -2195,17 +2268,48 @@
 			"behaviorEnable": "Включение поведения",
 			"behaviorDisable": "Отключение поведения"
 		},
+		"VISIBILITY": {
+			"LAYER": {
+				"label": "Только на слое областей"
+			},
+			"GAMEMASTER": {
+				"label": "Всегда для ведущего"
+			},
+			"ALWAYS": {
+				"label": "Всегда для всех"
+			}
+		},
 		"EVENTS": {
-			"regionBoundary": "Границы области изменены",
-			"behaviorStatus": "Статус поведения изменён",
-			"tokenEnter": "Вход токена",
-			"tokenExit": "Выход токена",
-			"tokenMove": "После движения токена",
-			"tokenPreMove": "Перед движением токена",
-			"tokenTurnStart": "Начало хода токена",
-			"tokenTurnEnd": "Конец хода токена",
-			"tokenRoundStart": "Начало раунда токена",
-			"tokenRoundEnd": "Конец раунда токена"
+			"regionBoundary": {
+				"label": "Границы области изменены"
+			},
+			"behaviorStatus": {
+				"label": "Статус поведения изменён"
+			},
+			"tokenEnter": {
+				"label": "Вход токена"
+			},
+			"tokenExit": {
+				"label": "Выход токена"
+			},
+			"tokenMove": {
+				"label": "После движения токена"
+			},
+			"tokenPreMove": {
+				"label": "Перед движением токена"
+			},
+			"tokenTurnStart": {
+				"label": "Начало хода токена"
+			},
+			"tokenTurnEnd": {
+				"label": "Конец хода токена"
+			},
+			"tokenRoundStart": {
+				"label": "Начало раунда токена"
+			},
+			"tokenRoundEnd": {
+				"label": "Конец раунда токена"
+			}
 		},
 		"SHAPES": {
 			"rectangle": "Прямоугольник",
@@ -2231,8 +2335,11 @@
 		"SHEET": {
 			"title": "Настройка области"
 		},
-		"ERRORS": {
-			"ControlledRegionIsLocked": "Область заблокирована!"
+		"NOTIFICATIONS": {
+			"ControlWalls": "Выберите группу стен, которые определят границы формы.",
+			"ControlledRegionIsLocked": "Выбранная область заблокирована!",
+			"EmptyEnclosedArea": "Не удалось создать форму. Убедитесь, что выбранные стены образуют замкнутое пространство.",
+			"NoControlledWalls": "Стены не выбраны."
 		}
 	},
 
@@ -2264,6 +2371,33 @@
 					}
 				}
 			},
+			"adjustDarknessLevel": {
+				"FIELDS": {
+					"mode": {
+						"label": "Режим",
+						"hint": "Изменение уровня темноты в этой области."
+					},
+					"modifier": {
+						"label": "Модификатор",
+						"hint": "Числовой модификатор, применяемый к уровню темноты."
+					},
+					"blur": {
+						"label": "Размытие",
+						"hint": "Уровень темноты будет плавно переходить на границах этой формы."
+					}
+				},
+				"MODES": {
+					"OVERRIDE": {
+						"label": "Перезапись"
+					},
+					"BRIGHTEN": {
+						"label": "Ярче"
+					},
+					"DARKEN": {
+						"label": "Темнее"
+					}
+				}
+			},
 			"executeMacro": {
 				"FIELDS": {
 					"uuid": {
@@ -2288,25 +2422,12 @@
 					}
 				}
 			},
-			"adjustDarknessLevel": {
+			"teleportToken": {
 				"FIELDS": {
-					"mode": {
-						"label": "Режим",
-						"hint": "Изменение уровня темноты в этой области."
-					},
-					"modifier": {
-						"label": "Модификатор",
-						"hint": "Числовой модификатор, применяемый к уровню темноты."
-					},
-					"blur": {
-						"label": "Размытие",
-						"hint": "Уровень темноты будет плавно переходить на границах этой формы."
+					"destination": {
+						"label": "Пункт назначения",
+						"hint": "Пункт назначения, в который телепортируется токен при входе в область."
 					}
-				},
-				"MODES": {
-					"override": "Перезапись",
-					"brighten": "Ярче",
-					"darken": "Темнее"
 				}
 			}
 		}
@@ -2372,7 +2493,7 @@
 	"TABLE.Formula": "Формула броска",
 	"TABLE.SheetTitle": "Настройка таблицы",
 	"TABLE.Normalize": "Усреднение вероятности",
-	"TABLE.Replacement": "Не блокировать выброшенные результаты",
+	"TABLE.Replacement": "Не блокировать результаты",
 	"TABLE.Reset": "Сброс",
 	"TABLE.Result": "Результат",
 	"TABLE.ResultCreate": "Добавление результата",
@@ -2415,8 +2536,8 @@
 	"TILE.ScaleHint": "Отрегулируйте масштаб изображения по X и Y. Изображение может выходить за рамки тайла. Отрицательные значения отзеркаливают изображение.",
 	"TILE.ScaleX": "По горизонтали",
 	"TILE.ScaleY": "По вертикали",
-	"TILE.RestrictsLight": "Ограничивает свет?",
-	"TILE.RestrictsWeather": "Ограничивает погоду?",
+	"TILE.RestrictsLight": "Ограничивает свет",
+	"TILE.RestrictsWeather": "Ограничивает погоду",
 	"TILE.RestrictsLightHint": "Блокируются ли источники света на основе их высоты относительно высоты этого тайла?",
 	"TILE.RestrictsWeatherHint": "Блокируются ли погодные эффекты на основе их высоты относительно высоты этого тайла?",
 	"TILE.OcclusionMode": "Режим преграждения",
@@ -2684,11 +2805,12 @@
 	"TYPES.JournalEntryPage.video": "Видео",
 	"TYPES.Macro.chat": "Сообщение",
 	"TYPES.Macro.script": "Скрипт",
+	"TYPES.RegionBehavior.adjustDarknessLevel": "Настройка уровня темноты",
 	"TYPES.RegionBehavior.executeMacro": "Запуск макроса",
 	"TYPES.RegionBehavior.executeScript": "Запуск скрипта",
 	"TYPES.RegionBehavior.pauseGame": "Приостановка игры",
 	"TYPES.RegionBehavior.suppressWeather": "Блокировка погоды",
-	"TYPES.RegionBehavior.adjustDarknessLevel": "Настройка уровня темноты",
+	"TYPES.RegionBehavior.teleportToken": "Телепортация токена",
 
 	"DETECTION.LightPerception": "Восприятие света",
 	"DETECTION.BasicSight": "Ночное зрение",
