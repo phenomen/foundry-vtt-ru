@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "Caslon Antique";
+    src: url("../fonts/Caslon_Antique/caslon-antique.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Caslon Antique";
+    src: url("../fonts/Caslon_Antique/caslon-antique-Italic.ttf") format("truetype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Caslon Antique";
+    src: url("../fonts/Caslon_Antique/caslon-antique-bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Caslon Antique";
+    src: url("../fonts/Caslon_Antique/caslon-antique-boldItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: bold;
+}
+
+b {
+    font-weight: 500 !important;
+}
+
+.dark-heresy .stats .characteristics .characteristic .name,
+.dark-heresy .progression .characteristics .item-list .items .item .name,
+.dark-heresy .progression .skills .item-list .items .item .name,
+.dark-heresy .stats .skills .skill .name {
+    font-size: 1.1rem;
+}
+
+.dark-heresy .stats .insanities .item-list .header .name {
+    font-weight: 500;
+}
+
+.dark-heresy .item-list .header {
+    font-family: var(--font-sans-condensed);
+    font-weight: 500 !important;
+    font-size: 0.8rem;
+}
+
+.dark-heresy .combat .psychic-powers .information .class,
+.dark-heresy .combat .psychic-powers .information .rating {
+    flex-basis: 35%;
+}
+
+.dark-heresy input[type="number"],
+.dark-heresy input[type="text"],
+.dark-heresy select,
+.dark-heresy textarea {
+    font-family: var(--font-sans-condensed);
+}
+
+.dark-heresy .stats .characteristics {
+    flex-basis: 55%;
+}
+
+.dark-heresy .stats .corruptions {
+    width: calc(22% - 2px);
+}
+
+.dark-heresy .stats .characteristics .characteristic .name {
+    flex-basis: 60%;
+}
+
+.dark-heresy .gear .encumbrance .information .max label,
+.dark-heresy .gear .encumbrance .information .current label {
+    flex-basis: 60%;
+}
+
+.dark-heresy .acolyte .header .role,
+.dark-heresy .acolyte .header .elite,
+.dark-heresy .acolyte .header .home-world,
+.dark-heresy .acolyte .header .background {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    flex-basis: 31%;
+
+    & input {
+        margin-left: 0px !important;
+    }
+}
+
+.dark-heresy .acolyte .header .fate,
+.dark-heresy .acolyte .header .fatigue {
+    flex-basis: 33%;
+}
+
+.dark-heresy.sheet .header input {
+    margin: 0px;
+}
+
+.dark-heresy .acolyte .header .home-world input,
+.dark-heresy .acolyte .header .background input,
+.dark-heresy .acolyte .header .role input,
+.dark-heresy .acolyte .header .elite input {
+    width: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+}

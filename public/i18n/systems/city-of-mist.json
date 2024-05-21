@@ -13,6 +13,7 @@
 	"TYPES.Item.move": "Ход игрока",
 	"TYPES.Item.gmmove": "Ход МЦ",
 	"TYPES.Item.spectrum": "Спектр опасности",
+	"TYPES.Item.themekit": "Themekit",
 
 	"CityOfMistTracker.trackerwindow.title": "Счётчик меток",
 	"CityOfMistTracker.trackerwindow.empty": "Поместите токен на сцену, чтобы создать счётчик.",
@@ -144,6 +145,7 @@
 	"CityOfMist.terms.any": "Любая",
 	"CityOfMist.terms.themeClassRoll": "Добавить темы",
 	"CityOfMist.terms.colllective": "Группа",
+	"CityOfMist.terms.mainTheme": "Main Theme",
 
 	"Otherscape.terms.noise": "Шум",
 	"Otherscape.terms.self": "На себя",
@@ -318,7 +320,7 @@
 	"Otherscape.moves.trackedOutcome.name": "Tracked Outcome",
 	"Otherscape.moves.generic.fail": "You suffer a consequence.",
 	"Otherscape.moves.trackedOutcome.partial": "Suffer a consequence and choose effects of Power PWR (Otherscape Page 90).",
-	"Otherscape.moves.trackedOutcome.success": "Choose effects equal to your PWR (otherscape Page 90).",
+	"Otherscape.moves.trackedOutcome.success": "Choose effects equal to your Power (PWR) (otherscape Page 90).",
 
 	"Otherscape.moves.mitigate.name": "Mitigate Consequences",
 	"Otherscape.moves.mitigate.fail": "You suffer the full consequence",
@@ -389,7 +391,10 @@
 	"CityOfMist.message.attentionAwarded": "+1 внимание",
 	"CityOfMist.message.attentionManual": "Добавьте внимание вручную",
 	"CityOfMist.message.burns-on-use": "Сгорает при использовании",
-	"CityOfMist.message.noExtraSelected": "Вспомогательная тема не выбрана",
+	"CityOfMist.message.noExtraSelected": "No Extra Theme Selected (either give players ownership over a Danger/Extra type actor with a theme or drag and drop a themebook or themekit)",
+	"CityOfMist.message.noCrewSelected": "No Crew Theme Selected (create a crew Actor and give players ownership to view it here)",
+	"CityOfMist.message.noThemeSelected": "No Theme (either click the add Theme button or drag and drop a themebook or themekit)",
+	"CityOfMist.message.levelUpAvailable": "Theme Level Up Available",
 
 	"CityOfMist.misc.newMoE": "Новый эволюционный скачок",
 	"CityOfMist.misc.reduceTier": "Уровень метки снижается на 1",
@@ -426,6 +431,8 @@
 	"CityOfMist.themebook.training.name": "Подготовка",
 	"CityOfMist.themebook.turf.name": "Владения",
 	"CityOfMist.themebook.unit.name": "Ячейка",
+	"CityOfMist.themebook.tradition.name": "Tradition",
+	"CityOfMist.themebook.esoterica.name": "Esoterica",
 	"CityOfMist.themebook.shrouding.name": "Пеленание",
 
 	"Otherscape.themebook.affiliation.name": "Affiliation",
@@ -563,6 +570,9 @@
 	"CityOfMist.settings.tagReview.name": "MC Tag Review",
 	"CityOfMist.settings.tagReview.hint": "Before roll is made MC gets to review what tags and statuses are included.",
 
+	"CityOfMist.settings.flashyLevelUp.name": "Flashing Level Up Indicator",
+	"CityOfMist.settings.flashyLevelUp.hint": "Adds a flashing level up indicator to themes that can be advanced.",
+
 	"CityOfMist.settings.gmmoveheaders.name": "Danger Move starting text",
 	"CityOfMist.settings.gmmoveheaders.hint": "Automatically Apply an identifier to the start of each danger's move based on its type (soft, hard, etc)",
 	"CityOfMist.settings.gmmoveheaders.choice0": "None",
@@ -671,5 +681,8 @@
 
 	"General.error.LOTagNotLoaded": "Loadout tags must be loaded before they can be used",
 
-	"CityOfMist.notification.reloadRequired": "Browser Window will reload shortly for all players due to setting change"
+	"CityOfMist.notification.reloadRequired": "Browser Window will reload shortly for all players due to setting change",
+
+	"CityOfMist.logger.action.changeActiveExtra": "Changes active extra to:",
+	"CityOfMist.logger.action.changeActiveCrew": "Changes active Crew Theme to:"
 }
