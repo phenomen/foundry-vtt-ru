@@ -16,15 +16,14 @@
 	font-family: "Futura PT Cond Medium";
 	font-style: normal;
 	font-weight: normal;
-	src: url("../fonts/Fira_Sans_Extra_Condensed/FiraSansExtraCondensed-Medium.ttf")
-		format("truetype");
+	src: url("../fonts/Roboto_Condensed/RobotoCondensed-Medium.ttf") format("truetype");
 }
 
 @font-face {
 	font-family: "Futura PT Cond Bold";
 	font-style: normal;
 	font-weight: bold;
-	src: url("../fonts/Fira_Sans_Extra_Condensed/FiraSansExtraCondensed-Bold.ttf") format("truetype");
+	src: url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf") format("truetype");
 }
 
 @font-face {
@@ -102,13 +101,11 @@
 }
 
 .mausritter .blockborder {
-	background: linear-gradient(
-		90deg,
-		rgba(221, 221, 221, 1) 0%,
-		rgba(221, 221, 221, 1) 39%,
-		rgba(255, 255, 255, 1) 20%,
-		rgba(255, 255, 255, 1) 100%
-	);
+	background: linear-gradient(90deg,
+			rgba(221, 221, 221, 1) 0%,
+			rgba(221, 221, 221, 1) 39%,
+			rgba(255, 255, 255, 1) 20%,
+			rgba(255, 255, 255, 1) 100%);
 }
 
 .mausritter .minmaxtext {
@@ -130,6 +127,7 @@
 .directory .directory-item img {
 	background-color: white;
 }
+
 .mausritter .rollweaponh1,
 .mausritter .rollh1 {
 	font-size: var(--text-2xl);
