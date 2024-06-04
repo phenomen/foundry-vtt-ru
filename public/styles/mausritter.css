@@ -16,7 +16,8 @@
 	font-family: "Futura PT Cond Medium";
 	font-style: normal;
 	font-weight: normal;
-	src: url("../fonts/Roboto_Condensed/RobotoCondensed-Medium.woff2") format("woff2");
+	src: url("../fonts/Roboto_Condensed/RobotoCondensed-Medium.woff2")
+		format("woff2");
 }
 
 @font-face {
@@ -101,11 +102,13 @@
 }
 
 .mausritter .blockborder {
-	background: linear-gradient(90deg,
-			rgba(221, 221, 221, 1) 0%,
-			rgba(221, 221, 221, 1) 39%,
-			rgba(255, 255, 255, 1) 20%,
-			rgba(255, 255, 255, 1) 100%);
+	background: linear-gradient(
+		90deg,
+		rgba(221, 221, 221, 1) 0%,
+		rgba(221, 221, 221, 1) 39%,
+		rgba(255, 255, 255, 1) 20%,
+		rgba(255, 255, 255, 1) 100%
+	);
 }
 
 .mausritter .minmaxtext {

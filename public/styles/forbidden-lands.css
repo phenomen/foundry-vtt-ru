@@ -13,7 +13,8 @@ body,
 button,
 .app .journal-sheet-container.adventure-site .journal-entry-page.text em,
 .app .journal-sheet-container.adventure-site .journal-entry-page.text strong,
-.app .journal-sheet-container.adventure-site .journal-entry-page.text .room>.index-tip,
+.app.journal-sheet-container.adventure-site.journal-entry-page.text.room
+	> .index-tip,
 .app.sheet .journal-page-content .fbl-box,
 .app.sheet .journal-page-content .fbl-box table.fbl-table,
 .app.sheet .journal-page-content .fbl-box h4,
@@ -23,7 +24,7 @@ button,
 }
 
 #menu,
-#pause>figcaption,
+#pause > figcaption,
 .forbidden-lands.chat-item h3,
 .app.sheet .journal-page-content .fbl-core .fbl-uppercase,
 .app.sheet .journal-page-content .fbl-core .fbl-inline-heading,
@@ -35,10 +36,10 @@ button,
 .chargen-title,
 .chargen-description,
 .chargen-build,
-.app.journal-sheet .editor .journal-header>input[name="name"],
-.app.journal-sheet .journal-entry-content .journal-header>input[name="name"],
-.app.sheet.actor .editor .journal-header>input[name="name"],
-.app.sheet.actor .journal-entry-content .journal-header>input[name="name"],
+.app.journal-sheet .editor .journal-header > input[name="name"],
+.app.journal-sheet .journal-entry-content .journal-header > input[name="name"],
+.app.sheet.actor .editor .journal-header > input[name="name"],
+.app.sheet.actor .journal-entry-content .journal-header > input[name="name"],
 .app.journal-sheet .editor h1,
 .app.journal-sheet .editor h2,
 .app.journal-sheet .editor h3,
@@ -159,7 +160,7 @@ a.inline-roll {
 	font-weight: 600;
 }
 
-.app.journal-sheet .journal-entry-content .journal-header>input[name="name"] {
+.app.journal-sheet .journal-entry-content .journal-header > input[name="name"] {
 	font-weight: 700;
 }
 
@@ -183,7 +184,7 @@ a.inline-roll {
 	margin: 0;
 }
 
-.forbidden-lands .gear-tab .gears .items>table thead {
+.forbidden-lands .gear-tab .gears .items > table thead {
 	font-size: var(--font-size-11);
 }
 
@@ -200,8 +201,8 @@ select option,
 .forbidden-lands .attributes .value input,
 .forbidden-lands .item-list .items .item,
 .forbidden-lands .character .spells .spell .name .roll-spell,
-.forbidden-lands .gear-tab .gears .items>table th,
-.forbidden-lands .gear-tab .gears .items>table td,
+.forbidden-lands .gear-tab .gears .items > table th,
+.forbidden-lands .gear-tab .gears .items > table td,
 .combat-sidebar li.combatant .token-name h4 {
 	font-weight: 600;
 }
