@@ -36,9 +36,9 @@ function registerBabele() {
 }
 
 function registerConverters() {
-	if (typeof Babele === "undefined") return;
+	if (game.babele) return;
 
-	Babele.get().registerConverters({
+	game.babele.registerConverters({
 		convertCategory: (category) => {
 			if (!category) return;
 			return translateValue(category, CATEGORIES);
@@ -47,7 +47,7 @@ function registerConverters() {
 		convertRequirements: (requirements) => {
 			if (!requirements) return;
 
-			const { packs } = Babele.get();
+			const { packs } = game.babele;
 			const translatedEdges = packs.find(
 				(pack) => pack.metadata.id === "swade.edges",
 			).translations;

@@ -1,8 +1,8 @@
 export function setupBabele(id) {
 	const title = game.system.title;
 
-	if (typeof Babele !== "undefined") {
-		Babele.get().register({
+	if (game.babele) {
+		game.babele.register({
 			module: "ru-ru",
 			lang: "ru",
 			dir: `compendium/${id}`,

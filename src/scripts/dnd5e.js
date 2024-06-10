@@ -40,7 +40,7 @@ export function init() {
 			setupBabele("dnd5e/ros");
 		}
 
-		Babele.get().registerConverters({
+		game.babele.registerConverters({
 			dndpages(pages, translations) {
 				return pages.map((data) => {
 					if (!translations) {
