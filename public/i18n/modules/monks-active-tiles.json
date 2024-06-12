@@ -522,6 +522,8 @@
 	"MonksActiveTiles.drop-macro.hint": "Позволяет переносить макросы на сцену для создания активных тайлов",
 	"MonksActiveTiles.tile-edit.name": "Разрешить изменение шаблонов тайлов",
 	"MonksActiveTiles.tile-edit.hint": "Позволяет редактировать шаблоны тайлов. Рекомендуется не включать, если вы точно не знаете, что  делаете.",
+	"MonksActiveTiles.show-imageless.name": "Отображение тайла без изображения",
+	"MonksActiveTiles.show-imageless.hint": "Отображать тайл на слое токенов для GM, если на тайле нет изображения",
 
 	"MonksActiveTiles.tabs.Setup": "Настройка",
 	"MonksActiveTiles.tabs.Actions": "Действия",
@@ -534,5 +536,25 @@
 	"MonksActiveTiles.history.How": "Как",
 	"MonksActiveTiles.history.Who": "Кто",
 	"MonksActiveTiles.history.Name": "Название",
-	"MonksActiveTiles.history.Value": "Значение"
+	"MonksActiveTiles.history.Value": "Значение",
+
+	"TYPES": {
+		"RegionBehavior": {
+			"monks-active-tiles": {
+				"triggerTile": "Триггерный тайл"
+			}
+		}
+	},
+	"BEHAVIOR": {
+		"TYPES": {
+			"triggerTile": {
+				"FIELDS": {
+					"uuid": {
+						"label": "Тайл",
+						"hint": "Тайл для триггера"
+					}
+				}
+			}
+		}
+	}
 }
