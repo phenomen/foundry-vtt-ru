@@ -68,20 +68,29 @@ body.auth #main-header h1 {
 	flex: 2;
 }
 
+.updated-packages :is(.header, .result) > div {
+	padding: 0.5rem 0.3rem;
+}
+
+.updated-packages .action {
+	font-family: var(--font-sans-condensed);
+	font-weight: 500;
+	flex: 0 0 135px;
+}
+
+.updated-packages .package {
+	flex: 0 0 240px;
+}
+
 .updated-packages-table th.package,
 .updated-packages-table td.package {
 	width: 200px;
 	padding: 0.5rem;
 }
 
-.updated-packages .action {
-	flex: 0 0 120px;
-	font-family: var(--font-sans-condensed);
-}
-
 .updated-packages-table th.action,
 .updated-packages-table td.action {
-	width: 155px;
+	width: 135px;
 	padding: 0.5rem;
 }
 
