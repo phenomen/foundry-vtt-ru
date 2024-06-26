@@ -1,10 +1,10 @@
 :root {
-	--font-primary: var(--font-elegant);
+	--font-primary: var(--font-sans);
 	--font-editor: var(--font-fancy);
-	--font-input: var(--font-elegant);
+	--font-input: var(--font-sans);
 	--font-special: var(--font-fancy);
 	--font-subheader: var(--font-fancy);
-	--font-table: var(--font-elegant);
+	--font-table: var(--font-sans);
 }
 
 /* HARDCODED FONT REPLACEMENTS */
@@ -13,13 +13,14 @@ body,
 button,
 .app .journal-sheet-container.adventure-site .journal-entry-page.text em,
 .app .journal-sheet-container.adventure-site .journal-entry-page.text strong,
-.app .journal-sheet-container.adventure-site .journal-entry-page.text .room > .index-tip,
+.app.journal-sheet-container.adventure-site.journal-entry-page.text.room
+	> .index-tip,
 .app.sheet .journal-page-content .fbl-box,
 .app.sheet .journal-page-content .fbl-box table.fbl-table,
 .app.sheet .journal-page-content .fbl-box h4,
 .app.sheet .journal-page-content .fbl-journal-info-box,
 .app.sheet .journal-page-content .fbl-core .fbl-branding-bold {
-	font-family: var(--font-elegant);
+	font-family: var(--font-sans);
 }
 
 #menu,
@@ -97,7 +98,7 @@ a.inline-roll {
 }
 
 .forbidden-lands .roll-action {
-	font-family: var(--font-elegant);
+	font-family: var(--font-sans);
 	font-weight: 600;
 	font-size: var(--font-size-12);
 }
@@ -122,7 +123,7 @@ a.inline-roll {
 
 .roll-dialog .options .legend {
 	font-weight: 600;
-	font-family: var(--font-elegant);
+	font-family: var(--font-sans);
 	font-size: var(--font-size-12);
 }
 
@@ -143,7 +144,7 @@ a.inline-roll {
 }
 
 .journal-entry .pages-list {
-	font-family: var(--font-elegant);
+	font-family: var(--font-sans);
 	font-size: var(--font-size-12);
 }
 
@@ -170,7 +171,7 @@ a.inline-roll {
 .forbidden-lands .roll-skill,
 .forbidden-lands .roll-attribute,
 .forbidden-lands .conditions-grid a.condition {
-	font-family: var(--font-elegant);
+	font-family: var(--font-sans);
 	font-weight: 600;
 	font-size: var(--font-size-14);
 }
@@ -188,7 +189,7 @@ a.inline-roll {
 }
 
 .forbidden-lands .travel-action-header {
-	font-family: var(--font-elegant);
+	font-family: var(--font-sans);
 	text-transform: uppercase;
 }
 
@@ -233,7 +234,7 @@ select option,
 
 .forbidden-lands.sheet label {
 	font-size: var(--font-size-14);
-	font-family: var(--font-elegant);
+	font-family: var(--font-sans);
 }
 
 .combat-sidebar .combat-tracker-header div.encounter-controls h3 {
@@ -243,7 +244,7 @@ select option,
 .combat-sidebar li.combatant .token-name,
 .combat-sidebar li.combatant .token-initiative .initiative {
 	text-shadow: none;
-	font-family: var(--font-elegant);
+	font-family: var(--font-sans);
 	font-weight: 600;
 }
 
@@ -256,7 +257,7 @@ select option,
 }
 
 .combat-sidebar #combat-controls a {
-	font-family: var(--font-elegant);
+	font-family: var(--font-sans);
 	font-weight: 700;
 }
 

@@ -15,6 +15,7 @@
 	"Confirm": "Применить",
 	"Command": "Command",
 	"Collapse": "Свернуть",
+	"Coordinates": "Координаты",
 	"Close": "Закрыть",
 	"Deactivate": "Отключить",
 	"Degrees": "Градусы",
@@ -132,9 +133,51 @@
 
 	"APP.NavigateBackConfirm": "Вы уверены, что хотите выйти из игры?",
 
+	"AMBIENT_LIGHT": {
+		"ACTIONS": {
+			"CREATE": "Создание фонового света",
+			"UPDATE": "Обновить фоновый свет",
+			"RESET": "Сброс доп. настроек"
+		},
+		"FIELDS": {
+			"x": {
+				"label": "X"
+			},
+			"y": {
+				"label": "Y"
+			},
+			"elevation": {
+				"label": "Высота"
+			},
+			"rotation": {
+				"label": "Угол поворота"
+			},
+			"vision": {
+				"label": "Источник зрения",
+				"hint": "Источник света с этой опцией служит дополнительной точкой видимости для токенов. Активируйте эту опцию, чтобы токены всегда видели освещаемую им область, даже если эта область находится за стеной или вне поля зрения токена."
+			},
+			"walls": {
+				"label": "Ограничен стенами",
+				"hint": "Влияет на прохождение источника света через ближайшие стены."
+			}
+		},
+		"LABELS": {
+			"radius": "Радиус света",
+			"radiusHint": "Дистанция света от источника. Радиус яркого света включён в радиус тусклого света.",
+			"darknessAdvancedWarning": "Дополнительные настройки для источников, не являющихся тьмой."
+		},
+		"SECTIONS": {
+			"BASIC": "Основное",
+			"ADVANCED": "Дополнительно",
+			"ANIMATION": "Анимация света",
+			"APPEARANCE": "Внешний вид",
+			"PLACEMENT": "Расположение"
+		}
+	},
+
 	"AMBIENT_SOUND": {
 		"ACTIONS": {
-			"CREATE": "Создать фоновый звук",
+			"CREATE": "Создание фонового звука",
 			"UPDATE": "Обновить фоновый звук"
 		},
 		"FIELDS": {
@@ -416,7 +459,6 @@
 	"COMPENDIUM.Delete": "Удаление библиотеки",
 	"COMPENDIUM.DeleteWarning": "Эта библиотека будет удалена без возможности восстановления.",
 	"COMPENDIUM.DeleteEntry": "Удаление записи",
-	"COMPENDIUM.DeleteEntryWarning": "Эта библиотека и всё содержимое будет удалено.",
 	"COMPENDIUM.Duplicate": "Создание копии",
 	"COMPENDIUM.DuplicateTitle": "Название новой библиотеки",
 	"COMPENDIUM.DuplicateHint": "Вы можете сохранить копию этой библиотеки в вашем мире, чтобы иметь локальную копию для редактирования.",
@@ -632,7 +674,7 @@
 	"CONTROLS.DrawingHeader": "Управление рисованием",
 	"CONTROLS.DrawingTextConfirm": "Подтверждение текста",
 	"CONTROLS.DrawingTextCancel": "Отмена ввода текста",
-	"CONTROLS.CommonCreate": "Создание",
+	"CONTROLS.CommonCreate": "Создать",
 	"CONTROLS.CommonMove": "Перемещение",
 	"CONTROLS.CommonEdit": "Изменение",
 	"CONTROLS.CommonHide": "Скрытие",
@@ -659,7 +701,9 @@
 	"CONTROLS.DeletedObjects": "Удалено {count} {type} объектов.",
 	"CONTROLS.UndoCreateObjects": "Отменено создание {count} {type} объектов.",
 	"CONTROLS.UndoDeleteObjects": "Отменено удаление {count} {type} объектов.",
-	"CONTROLS.EmptyUndoHistory": "В истории изменений для {type} объектов нет шагов для отмены.",
+	"CONTROLS.EmptyUndoHistory": "В истории изменений для {type} нет шагов для отмены.",
+	"CONTROLS.ObjectIsLocked": "Вы не можете совершить это действие, когда {type} заблокирован.",
+	"CONTROLS.ObjectConfigured": "Вы не можете совершить это действие во время настройки другого объекта.",
 
 	"DICE.ErrorNonNumeric": "Формула броска {formula} не имеет числового результата.",
 	"DICE.ManualRoll": "Ручной бросок",
@@ -678,7 +722,7 @@
 		"Manual": "Ручной ввод"
 	},
 
-	"DOCUMENT.Create": "Создание {type}",
+	"DOCUMENT.Create": "Новый {type}",
 	"DOCUMENT.Delete": "Удаление {type}",
 	"DOCUMENT.New": "{type}",
 	"DOCUMENT.Update": "Обновление {type}",
@@ -702,8 +746,8 @@
 	"DOCUMENT.Actors": "Актёры",
 	"DOCUMENT.Adventure": "Приключение",
 	"DOCUMENT.Adventures": "Приключения",
-	"DOCUMENT.AmbientLight": "Фоновое освещение",
-	"DOCUMENT.AmbientLights": "Фоновое освещение",
+	"DOCUMENT.AmbientLight": "Фоновый свет",
+	"DOCUMENT.AmbientLights": "Фоновый свет",
 	"DOCUMENT.AmbientSound": "Фоновый звук",
 	"DOCUMENT.AmbientSounds": "Фоновые звуки",
 	"DOCUMENT.Card": "Карта",
@@ -875,7 +919,7 @@
 	"ERROR.CantWhisper": "У вас не достаточно прав на отправку сообщений шёпотом другим игрокам.",
 	"ERROR.RendererNotDetected": "Не удалось определить вашу видеокарту. Могут возникнуть неожиданные проблемы.",
 	"ERROR.NoHardwareAcceleration": "В вашем браузере выключено аппаратное ускорение. Это негативно влияет на производительность Foundry VTT и вызывает графические проблемы. Убедитесь, что аппаратное ускорение включено в настройках браузера.",
-	"ERROR.UpdateRequiresManualInstall": "Доступна новая версия Foundry VTT {version}, но она не может быть установлена внутри самого приложения Foundry VTT из-за ключевых зависимостей. Скачайте новую версию с сайта <a href=\"https://foundryvtt/com/me/licenses\" target=\"_blank\">foundryvtt.com</a>.",
+	"ERROR.UpdateRequiresManualInstall": "Доступна новая версия Foundry VTT {version}, но она не может быть установлена внутри самого приложения Foundry VTT из-за ключевых зависимостей. Скачайте новую версию с сайта <a href=\"https://foundryvtt.com/me/licenses\" target=\"_blank\">foundryvtt.com</a>.",
 
 	"WARNING.GridConfigNoBG": "Вы используете инструмент настройки сетки на сцене без фонового изображения. Это не рекомендуется и может привести к непредвиденным ошибкам.",
 	"WARNING.ForegroundDimensionsMismatch": "Размер изображения для слоя переднего плана  не совпадает с размером изображения на фоновом слое этой сцены. Передний план был подогнан по размеру, что может привести к нежелательным результатам.",
@@ -965,6 +1009,10 @@
 		"DOCUMENT_TAGS": {
 			"Add": "Добавить документ",
 			"Remove": "Удалить документ"
+		},
+		"TAGS": {
+			"Add": "Добавить тэг",
+			"Remove": "Удалить тэг"
 		}
 	},
 
@@ -1007,6 +1055,7 @@
 	"FILES.BrowseTooltip": "Обзор файлов",
 	"FILES.InPixels": "В пикселях",
 	"FILES.UnitPixels": "(пиксели)",
+	"FILES.ErrorDisallowedExtension": "Файл \"{name}\" имеет неподдерживаемое расширение \"{ext}\".\nДопустимые расширения: {allowed}.",
 
 	"FONTS.AddFont": "Добавление шрифта",
 	"FONTS.Type": "Тип шрифта",
@@ -1157,44 +1206,83 @@
 	"KEYBINDINGS.ErrorReservedModifier": "Нельзя назначить \"{key}\" в качестве сочетания, т.к. эта клавиша зарезервирована в качестве модификатора этого действия.",
 	"KEYBINDINGS.FocusChat": "Фокусировка на чате",
 
-	"LIGHT.ConfigTitle": "Настройка источника света",
-	"LIGHT.NavLabel": "Вкладки настроек света",
-	"LIGHT.HeaderBasic": "Основные настройки",
-	"LIGHT.HeaderAdvanced": "Доп. настройки",
-	"LIGHT.HeaderAnimation": "Анимация света",
-	"LIGHT.Create": "Создание источника света",
-	"LIGHT.Update": "Обновление источника света",
-	"LIGHT.Alpha": "Насыщенность оттенка",
-	"LIGHT.Angle": "Угол излучения",
-	"LIGHT.AngleHint": "Предел угла излучения источника света и настройка его поворота.",
-	"LIGHT.Bright": "Яркий",
-	"LIGHT.Color": "Оттенок света",
-	"LIGHT.ColorHint": "Добавление оттенка к источнику света и регулировка насыщенности.",
-	"LIGHT.Coordinates": "Координаты",
-	"LIGHT.Contrast": "Контрастность",
-	"LIGHT.ContrastHint": "Контрастность поверхностей на которые падает свет от источника. Значение по умолчанию для обычного света равно 0.",
-	"LIGHT.DarknessRange": "Диапазон активации темноты",
-	"LIGHT.DarknessRangeHint": "Диапазон уровня темноты при котором источники света становятся видимыми.",
-	"LIGHT.Dim": "Тусклый",
-	"LIGHT.Attenuation": "Затухание",
-	"LIGHT.AttenuationHint": "Постепенный переход между ярким, тусклым и тёмным освещением.",
-	"LIGHT.Luminosity": "Яркость",
-	"LIGHT.LuminosityHint": "Яркость источника света. Более яркий свет слабее перекрывается темнотой. Значение по умолчанию для обычного света равно 0.5.",
-	"LIGHT.Radius": "Радиус света",
-	"LIGHT.RadiusHint": "Дистанция излучения света от источника. Радиус яркого света включён в радиус тусклого света.",
-	"LIGHT.ResetAdvanced": "Сброс дополнительных настроек",
-	"LIGHT.Rotation": "Угол поворота",
-	"LIGHT.Saturation": "Насыщенность",
-	"LIGHT.SaturationHint": "Контрастность поверхностей на которые падает свет от источника. Значение по умолчанию для обычного света равно 0.",
-	"LIGHT.Shadows": "Тени",
-	"LIGHT.ShadowsHint": "Усиление тёмных цветов фона на который падает свет от источника. Значение по умолчанию для обычного света равно 0.",
-	"LIGHT.Vision": "Источник зрения",
-	"LIGHT.VisionHint": "Является источником зрения для токенов.",
-	"LIGHT.Walls": "Ограничение стенами",
-	"LIGHT.WallsHint": "Влияет на прохождение излучения источника света через ближайшие стены.",
-	"LIGHT.ColorationTechnique": "Режим наложения",
-	"LIGHT.ColorationTechniqueHint": "Режим наложения применяется к свету, изменяя тип перекрытия слоя.",
-	"LIGHT.LegacyColoration": "Старое наложение",
+	"LIGHT.FIELDS": {
+		"alpha": {
+			"label": "Насыщенность оттенка",
+			"hint": "Изменение насыщенности оттенка света источника."
+		},
+		"animation": {
+			"label": "Анимация света",
+			"type": {
+				"label": "Тип анимации"
+			},
+			"speed": {
+				"label": "Скорость анимации",
+				"hint": "Увеличение скорости анимации делает её быстрее и короче."
+			},
+			"intensity": {
+				"label": "Интенсивность анимации",
+				"hint": "Увеличение интенсивности анимации делает её более заметной."
+			},
+			"reverse": {
+				"label": "Обратное направление"
+			}
+		},
+		"angle": {
+			"label": "Угол излучения",
+			"hint": "Ограничение угла излучения источника света и настройка его поворота."
+		},
+		"attenuation": {
+			"label": "Затухание",
+			"hint": "Постепенный переход между ярким, тусклым и тёмным освещением."
+		},
+		"color": {
+			"label": "Оттенок света",
+			"hint": "Добавление оттенка к источнику света и регулировка насыщенности."
+		},
+		"coloration": {
+			"label": "Режим наложения",
+			"hint": "Режим наложения применяется к свету, изменяя тип перекрытия слоя."
+		},
+		"contrast": {
+			"label": "Контрастность",
+			"hint": "Контрастность поверхностей на которые падает свет от источника. Значение по умолчанию для обычного света равно 0."
+		},
+		"dim": {
+			"label": "Тусклый"
+		},
+		"bright": {
+			"label": "Яркий"
+		},
+		"luminosity": {
+			"label": "Яркость",
+			"hint": "Яркость источника света. Более яркий свет слабее перекрывается темнотой. Значение по умолчанию для обычного света равно 0.5."
+		},
+		"negative": {
+			"label": "Источник тьмы",
+			"hint": "Источник тьмы блокирует свет и видимость, подавляет источники света или видимости, находящиеся внутри его зоны действия."
+		},
+		"saturation": {
+			"label": "Насыщенность",
+			"hint": "Контрастность поверхностей на которые падает свет от источника. Значение по умолчанию для обычного света равно 0."
+		},
+		"shadows": {
+			"label": "Тени",
+			"hint": "Усиление тёмных цветов фона на который падает свет от источника. Значение по умолчанию для обычного света равно 0."
+		},
+		"darkness": {
+			"label": "Диапазон активации темноты",
+			"hint": "Диапазон уровня темноты при котором источники света становятся видимыми.",
+			"min": {
+				"label": "Между"
+			},
+			"max": {
+				"label": "и"
+			}
+		}
+	},
+
+	"LIGHT.LegacyColoration": "Устаревшее наложение",
 	"LIGHT.AdaptiveLuminance": "Адаптивная яркость",
 	"LIGHT.InternalHalo": "Внутренний ореол",
 	"LIGHT.ExternalHalo": "Внешний ореол",
@@ -1205,17 +1293,9 @@
 	"LIGHT.HighAbsorption": "Высокое поглощение",
 	"LIGHT.InvertAbsorption": "Обратное поглощение",
 	"LIGHT.NaturalLight": "Естественный свет",
-	"LIGHT.Negative": "Источник тьмы",
-	"LIGHT.NegativeHint": "Источник тьмы блокирует свет и видимость, подавляет источники света или видимости, находящиеся внутри его зоны действия.",
-	"LIGHT.Priority": "Приоритет",
-	"LIGHT.PriorityHint": "Настройте приоритет этого источника света относительно других. По умолчанию источники тьмы перекрывают источники света, но установка более высокого приоритета позволяет источнику света преодолеть тьму.",
-	"LIGHT.AnimationType": "Тип анимации",
-	"LIGHT.AnimationHint": "Ускорение скорости анимации увеличивает её интенсивность, делая более выраженной.",
-	"LIGHT.AnimationSpeed": "Скорость анимации",
-	"LIGHT.AnimationIntensity": "Интенсивность анимации",
-	"LIGHT.AnimationReverse": "Обратное направление",
+
 	"LIGHT.AnimationTorch": "Мерцающий свет",
-	"LIGHT.AnimationPulse": "Пульс",
+	"LIGHT.AnimationPulse": "Импульс",
 	"LIGHT.AnimationChroma": "Перелив",
 	"LIGHT.AnimationWave": "Пульсирующая волна",
 	"LIGHT.AnimationFog": "Вихрь тумана",
@@ -1682,7 +1762,7 @@
 	"SETUP.IncompatibleSystems": "Несовместимые системы: {systems}",
 	"SETUP.NoSupportedSystem": "Не найдены совместимые системы",
 	"SETUP.RequireCoreUpgrade": "Требуется обновление программы",
-	"SETUP.RequireCoreUnstable": "Требуется нестабильная версия",
+	"SETUP.RequireCoreUnstable": "Требуется новая версия",
 	"SETUP.RequireCoreDowngrade": "Неподдерживаемая версия Foundry",
 	"SETUP.LockHint": "Блокировка пакета предотвращает его удаление или обновление",
 	"SETUP.FavoritePackage": "Избранное",
@@ -1766,8 +1846,8 @@
 	"SETUP.PackageDependenciesDecline": "Вы решили не устанавливать необходимые зависимости для {title}. Вам будет нужно установить их вручную.",
 	"SETUP.PackageDependenciesSuccess": "Установка успешна: {title} и {number} зависимостей.",
 	"SETUP.PackageUpdateCoreUpdateNeeded": "Для {id} доступно обновление, но оно требует Foundry VTT версии {vmin}, тогда как у вас {vcur}.",
-	"SETUP.PackageUpdateCoreUnstable": "Для {id} доступно обновление, но оно требует Foundry VTT версии {vmin}, которая является нестабильной.",
-	"SETUP.PackageUpdateCoreInsufficient": "Доступно обновление, но оно требует старой версии приложения ({vmax}).",
+	"SETUP.PackageUpdateCoreUnstable": "Для {id} доступно обновление, но оно требует Foundry VTT версии {vmin}.",
+	"SETUP.PackageUpdateCoreInsufficient": "Доступно обновление, но оно требует версии приложения ({vmax}).",
 	"SETUP.PackageDeleteTitle": "Удаление {type}: {title}",
 	"SETUP.PackageDeleteConfirm": "Вы уверены, что хотите удалить {type} \"{title}\"?",
 	"SETUP.WorldDeleteConfirmCode": "Введите код для подтверждения:",
@@ -1826,8 +1906,8 @@
 	"SETUP.VersionChange": "Изменение версии",
 
 	"SETUP.WorldMigrationRequiredTitle": "Миграция данных мира",
-	"SETUP.WorldCoreMigrationRequired": "<p>Запуск мира <strong>{world}</strong> приведёт к миграции его модели данных с более старой версии Foundry (<code>{oldVersion}</code>) на текущую <strong>{newVersion}</strong>.</p>",
-	"SETUP.WorldSystemMigrationRequired": "<p>Мир был запущен на более старой версии системы (<code>{oldVersion}</code>), чем текущая <strong>{newVersion}</strong> и может потребоваться миграция данных.</p>",
+	"SETUP.WorldCoreMigrationRequired": "<p>Запуск мира <strong>{world}</strong> приведёт к миграции его модели данных с более ранней версии Foundry (<code>{oldVersion}</code>) на текущую <strong>{newVersion}</strong>.</p>",
+	"SETUP.WorldSystemMigrationRequired": "<p>Мир был запущен на более ранней версии системы (<code>{oldVersion}</code>), чем текущая <strong>{newVersion}</strong> и может потребоваться миграция данных.</p>",
 	"SETUP.WorldMigrationSystemUnavailable": "<p>Установленная версия игровой системы <strong>{system}</strong> ( <code>{systemVersion}</code>) не подтверждена как совместимая с данной версией Foundry VTT. Успешная миграция не гарантируется.</p>",
 	"SETUP.WorldMigrationDisableModules": "<p>Пожалуйста, обновите установленные игровые системы и модули перед миграцией вашего мира на новую версию Foundry. Все активные модули будут автоматически отключены. Вы можете снова включить их вручную после миграции.</p>",
 	"SETUP.WorldMigrationBackupPrompt": "<p><strong>Этот процесс невозможно отменить.</strong> Перед продолжением рекомендуется создать резервную копию мира. Резервная копия понадобится, если вы решите вернуться к предыдущей версии Foundry VTT.</p>",
@@ -1852,7 +1932,7 @@
 	"SETUP.DefaultLanguageLabel": "Язык по умолчанию",
 	"SETUP.DefaultLanguageHint": "Вы можете выбрать язык приложения по умолчанию, который будет активен для всех игроков.",
 	"SETUP.DeleteNEDBLabel": "Удаление файлов NEDB",
-	"SETUP.DeleteNEDBHint": "В версии 11 приложение Foundry перешло от старой технологии баз данных (NEDB) к новой (LevelDB). Мы автоматически мигрируем ваши старые базы данных в новый формат и сохраняем файлы NEDB на случай, если вам понадобится сделать откат или диагностировать какую-либо проблему. Эта мера безопасности увеличивает объём, занимаемый Foundry Virtual Tabletop на вашем жестком диске. Включение этой функции приведет к автоматическому удалению файлов NEDB после их миграции. Это станет поведением по умолчанию в версии 12.",
+	"SETUP.DeleteNEDBHint": "В версии 11 приложение Foundry перешло от устаревшей технологии баз данных (NEDB) к новой (LevelDB). Мы автоматически мигрируем ваши старые базы данных в новый формат и сохраняем файлы NEDB на случай, если вам понадобится сделать откат или диагностировать какую-либо проблему. Эта мера безопасности увеличивает объём, занимаемый Foundry Virtual Tabletop на вашем жестком диске. Включение этой функции приведет к автоматическому удалению файлов NEDB после их миграции. Это станет поведением по умолчанию в версии 12.",
 	"SETUP.PortLabel": "Порт",
 	"SETUP.PortHint": "Вы можете выбрать порт, который Foundry Virtual Tabletop будет использовать для соединений TCP и Universal Plug and Play (UPnP).",
 	"SETUP.UPNPLabel": "Вкл. UPnP",
@@ -1867,7 +1947,7 @@
 	"SETUP.Telemetry": "Передача данных об использовании",
 	"SETUP.TelemetryHint": "Вы можете разрешить передачу анонимных данных об использовании приложения, которые помогут нам улучшить Foundry Virtual Tabletop. Данные, собранные при включении этой опции, описаны в нашей <a href=\"https://foundryvtt.com/article/privacy-policy/\" target=\"_blank\">Политике конфиденциальности</a>. Они не содержат никакой личной информации и не передаются никаким другим сторонам. Обмен данными об использовании помогает нам ответить на такие вопросы, как \"какие версии программного обеспечения Foundry Virtual Tabletop используются чаще всего\", \"какие игровые системы используются чаще всего\" и \"какие версии модулей устанавливаются чаще всего\". Мы используем эти данные, чтобы помочь  улучшить совместимость приложения, обеспечить лучшую поддержку клиентов и делиться общей статистикой с нашим сообществом. Если эта опция отключена, никакие данные не будут передаваться.",
 	"SETUP.TelemetryRequestTitle": "Разрешить передачу данных",
-	"SETUP.TelemetryRequest1": "Foundry Virtual Tabletop V11 позволяет с вашего разрешения собирать анонимные данные  для улучшения приложения.",
+	"SETUP.TelemetryRequest1": "Если вы дадите разрешение, Foundry Virtual Tabletop будет делиться небольшим количеством анонимных данных, что позволит нашей команде лучше понять, как используется Foundry VTT, и поможет нам улучшить приложение.",
 	"SETUP.TelemetryRequest2": "Этот запрос будет показан только один раз, вы можете изменить настройки обмена данными в любое время в меню Настройки приложения, нажав на значок <i class=\"fas fa-cogs\"></i> в правом верхнем углу главного меню.",
 	"SETUP.TelemetryAllow": "Разрешить передачу",
 	"SETUP.TelemetryDecline": "Запретить передачу",
@@ -2097,7 +2177,7 @@
 	"SHEETS.DocumentSheetPrivate": "У вас нет прав доступа к документу с типом {type}.",
 	"SHEETS.Save": "Сохранение настроек бланка",
 	"SHEETS.FormNavLabel": "Навигация вкладок формы",
-	"SHEETS.CopyId": "Копирование ID",
+	"SHEETS.CopyUuid": "Копирование UUID",
 
 	"SOUND": {
 		"ConfigTitle": "Настройка фонового звука",
@@ -2188,6 +2268,8 @@
 	"PERMISSION.JournalCreateHint": "Позволить роли создавать записи журнала.",
 	"PERMISSION.MacroScript": "Скрипты в макросах",
 	"PERMISSION.MacroScriptHint": "Позволить роли использовать JavaScript в макросах с доступом к API.",
+	"PERMISSION.ManualRolls": "Совершение ручных бросков",
+	"PERMISSION.ManualRollsHint": "Позволить роли выбор ручного режима для бросков.",
 	"PERMISSION.MessageWhisper": "Личные сообщения",
 	"PERMISSION.MessageWhisperHint": "Позволить роли отправлять личные сообщения шёпотом, которые GM не видит.",
 	"PERMISSION.NoteCreate": "Создание заметок сцены",
@@ -2292,11 +2374,17 @@
 			"tokenExit": {
 				"label": "Выход токена"
 			},
+			"tokenPreMove": {
+				"label": "Перед движением токена"
+			},
 			"tokenMove": {
 				"label": "После движения токена"
 			},
-			"tokenPreMove": {
-				"label": "Перед движением токена"
+			"tokenMoveIn": {
+				"label": "При входе токена"
+			},
+			"tokenMoveOut": {
+				"label": "При выходе токена"
 			},
 			"tokenTurnStart": {
 				"label": "Начало хода токена"
@@ -2337,7 +2425,7 @@
 		},
 		"NOTIFICATIONS": {
 			"ControlWalls": "Выберите группу стен, которые определят границы формы.",
-			"ControlledRegionIsLocked": "Выбранная область заблокирована!",
+			"DrawingMultipleRegionsControlled": "Вы можете выделить только одну область при рисовании формы!",
 			"EmptyEnclosedArea": "Не удалось создать форму. Убедитесь, что выбранные стены образуют замкнутое пространство.",
 			"NoControlledWalls": "Стены не выбраны."
 		}
@@ -2375,7 +2463,7 @@
 				"FIELDS": {
 					"mode": {
 						"label": "Режим",
-						"hint": "Изменение уровня темноты в этой области."
+						"hint": "Как изменяется уровень темноты в этой области. Это поведение учитывает пороговое значение глобального освещения сцены. Если общий уровень темноты в области превышает пороговое значение, то глобальное освещение в этой области будет отключено."
 					},
 					"modifier": {
 						"label": "Модификатор",
@@ -2402,7 +2490,11 @@
 				"FIELDS": {
 					"uuid": {
 						"label": "Макрос",
-						"hint": "Макрос, запускаемый при срабатывании события."
+						"hint": "Макрос, запускаемый при срабатывании одного из событий."
+					},
+					"everyone": {
+						"label": "Для всех",
+						"hint": "Будет ли макрос выполняться всеми подключенными участниками, или одним участником с достаточными правами."
 					}
 				}
 			},
@@ -2410,7 +2502,7 @@
 				"FIELDS": {
 					"source": {
 						"label": "Скрипт",
-						"hint": "Скрипт, запускаемый при срабатывании события."
+						"hint": "Скрипт, запускаемый при срабатывании одного из событий."
 					}
 				}
 			},
@@ -2427,6 +2519,18 @@
 					"destination": {
 						"label": "Пункт назначения",
 						"hint": "Пункт назначения, в который телепортируется токен при входе в область."
+					}
+				}
+			},
+			"toggleBehavior": {
+				"FIELDS": {
+					"enable": {
+						"label": "Включение поведений",
+						"hint": "Поведения, включаемые при срабатывании одного из событий."
+					},
+					"disable": {
+						"label": "Отключение поведений",
+						"hint": "Поведения, отключаемые при срабатывании одного из событий."
 					}
 				}
 			}
@@ -2475,6 +2579,7 @@
 	"SUPPORT.Client": "Client",
 	"SUPPORT.GPU": "GPU",
 	"SUPPORT.MaxTextureSize": "Макс. размер текстур",
+	"SUPPORT.LargestTexture": "Максимальная текстура",
 	"SUPPORT.NoViewedScene": "Нет открытой сцены",
 	"SUPPORT.DocumentIssues": "Проблемы с документом",
 	"SUPPORT.ClientIssues": "Проблемы с клиентом",
@@ -2482,6 +2587,12 @@
 	"SUPPORT.ModuleSubTypesUnavailableName": "<strong>{count}</strong> {document} недоступны, т.к. модуль '{name}' не активен.",
 	"SUPPORT.ModuleSubTypesUnavailableNoName": "<strong>{count}</strong> {document} недоступны, т.к. модуль с ID '{name}' не активен.",
 	"SUPPORT.UnavailableDocuments": "{count} недоступных документов {document}",
+	"SUPPORT.WorldScripts": "Скрипты мира",
+	"SUPPORT.GenerateFullReport": "Создать отчёт",
+	"SUPPORT.GenerateFullReportHint": "Полный отчет содержит подробную информацию об установленных модулях и библиотеках и может занять некоторое время.",
+	"SUPPORT.WorldData": "Данные мира",
+	"SUPPORT.CompendiumData": "Данные библиотеки",
+	"SUPPORT.ActiveModules": "Активные модули",
 
 	"TABLE.AnimateSetting": "Анимация бросков по таблице",
 	"TABLE.AnimateSettingHint": "Отображение анимации в виде рулетки при броске по таблице.",
@@ -2506,6 +2617,9 @@
 	"TABLE.Roll": "Бросок",
 	"TABLE.ToggleDrawn": "Заблокировать результат",
 	"TABLE.Update": "Обновление",
+	"TABLE.RESULT_TYPES.TEXT.label": "Текст",
+	"TABLE.RESULT_TYPES.DOCUMENT.label": "Документ",
+	"TABLE.RESULT_TYPES.COMPENDIUM.label": "Библиотека",
 
 	"TEMPLATE.BorderColor": "Цвет рамки",
 	"TEMPLATE.ConeTypeSetting": "Форма шаблона конуса",
@@ -2625,7 +2739,7 @@
 	"TOKEN.VisionBrightness": "Яркость зрения",
 	"TOKEN.VisionBrightnessHint": "Яркость источника зрения. Чем выше яркость, тем лучше персонаж видит в темноте (по умолчанию 0).",
 	"TOKEN.WarningNoActor": "Этот токен связан с актёром, который больше не существует.",
-	"TOKEN.WarningNoVision": "У вас нет токенов со зрением в этой сцене.",
+	"TOKEN.WarningNoVision": "На этой сцене нет токена, позволяющего вам видеть область.",
 	"TOKEN.VisionMode": "Режим зрения",
 	"TOKEN.VisionModeHint": "Режимы зрения добавляют визуальные эффекты особого чутья (по умолчанию Обычное зрение).",
 
@@ -2757,8 +2871,8 @@
 	"TOKEN.DetectionAdd": "Добавить режим обнаружения",
 	"TOKEN.DetectionRemove": "Удалить режим обнаружения",
 
-	"TOKEN.RING": {
-		"FIELDS": {
+	"TOKEN.FIELDS": {
+		"ring": {
 			"colors": {
 				"ring": {
 					"label": "Цвет кольца",
@@ -2777,28 +2891,33 @@
 			},
 			"subject": {
 				"scale": {
-					"label": "Коррекция масштаба"
+					"label": "Коррекция масштаба",
+					"hint": "Отрегулируйте относительный размер текстуры по отношению к кольцу. Увеличение этого значения сделает текстуру более крупной по сравнению с кольцом. Используйте меньшие значения, чтобы уменьшить размер текстуры, если она кажется слишком заметной."
 				},
 				"texture": {
 					"label": "Текстура",
 					"hint": "Укажите путь к изображению, размещенному над динамическим кольцом токенов. Если путь не указан, будет использована стандартная текстура."
 				}
 			}
-		},
+		}
+	},
+
+	"TOKEN.RING": {
 		"EFFECTS": {
-			"BACKGROUND_WAVE": "Фоновые волны",
+			"BKG_WAVE": "Фоновые волны",
 			"RING_GRADIENT": "Кольцевой градиент",
-			"RING_PULSE": "Кольцевой пульс"
+			"RING_PULSE": "Кольцевой импульс",
+			"INVISIBILITY": "Спектральный импульс"
 		},
 		"SHEET": {
 			"legend": "Динамическое кольцо токена"
 		}
 	},
 
+	"TYPES.Base": "Базовый",
 	"TYPES.Cards.deck": "Колода",
 	"TYPES.Cards.hand": "Рука",
 	"TYPES.Cards.pile": "Стопка",
-	"TYPES.Card.base": "Основа",
 	"TYPES.JournalEntryPage.image": "Изображение",
 	"TYPES.JournalEntryPage.pdf": "PDF",
 	"TYPES.JournalEntryPage.text": "Текст",
@@ -2811,6 +2930,7 @@
 	"TYPES.RegionBehavior.pauseGame": "Приостановка игры",
 	"TYPES.RegionBehavior.suppressWeather": "Блокировка погоды",
 	"TYPES.RegionBehavior.teleportToken": "Телепортация токена",
+	"TYPES.RegionBehavior.toggleBehavior": "Переключение поведения",
 
 	"DETECTION.LightPerception": "Восприятие света",
 	"DETECTION.BasicSight": "Ночное зрение",

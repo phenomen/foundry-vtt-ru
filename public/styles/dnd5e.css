@@ -31,7 +31,7 @@
 	text-overflow: ellipsis;
 }
 
-.dnd5e2 .card .info>div .label {
+.dnd5e2 .card .info > div .label {
 	white-space: nowrap;
 }
 
@@ -47,7 +47,17 @@
 	font-weight: 600;
 }
 
-/* 2.0 */
+/* 1.0 */
+
+.dnd5e.advancement.flow h3 {
+	font-size: var(--text-xl);
+	font-weight: 600;
+}
+
+.dnd5e.advancement.flow .step h1 {
+	font-family: var(--font-fancy);
+	font-weight: 700;
+}
 
 .dnd5e.sheet .window-content {
 	font-size: var(--text-sm);
@@ -165,6 +175,10 @@
 	text-overflow: ellipsis;
 }
 
+.dnd5e.sheet.actor ul.skills-list li.skill .skill-name-controls {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
 
 .dnd5e.sheet.actor.character ul.skills-list,
 .dnd5e.sheet.actor.npc ul.skills-list {
@@ -201,13 +215,13 @@
 	font-size: var(--text-xl);
 }
 
-.dnd5e.sheet.actor ul.attributes li.attribute .attribute-value>* {
+.dnd5e.sheet.actor ul.attributes li.attribute .attribute-value > * {
 	font-family: var(--font-serif);
 	font-weight: 600;
 	font-size: var(--text-lg);
 }
 
-.dnd5e.sheet.actor .sheet-header .charlevel .level.noxp>label {
+.dnd5e.sheet.actor .sheet-header .charlevel .level.noxp > label {
 	font-size: var(--text-xl);
 }
 
@@ -347,7 +361,7 @@
 	font-size: var(--text-sm);
 }
 
-#chat-log thead>tr>th {
+#chat-log thead > tr > th {
 	font-family: var(--font-sans-condensed);
 	font-size: var(--text-sm);
 	font-weight: 500;
@@ -479,24 +493,6 @@
 	padding: 4px 4px 0 4px;
 }
 
-/* MOBILE IMPROVEMENTS */
-
-.mobile-improvements .dnd5e.sheet .sheet-navigation .item {
-	font-size: 0.6rem;
-}
-
-.mobile-improvements .dnd5e.sheet.actor ul.attributes li.attribute .attribute-value>* {
-	font-size: 1rem;
-}
-
-.mobile-improvements .dnd5e.sheet .items-list .items-header .item-name {
-	font-size: var(--text-sm);
-}
-
-.mobile-improvements .dnd5e.sheet.actor.character .resource .attribute-value label.recharge {
-	font-size: 0.6rem;
-}
-
 /* ROS */
 
 .syb5e.sheet.actor.character .sheet-header h1.charname input {
@@ -522,12 +518,12 @@
 
 /* MIDIQOL */
 
-.midi-results>div:first-child {
+.midi-results > div:first-child {
 	gap: 2px;
 }
 
-.midi-qol-attack-roll>div:first-child,
-.midi-qol-damage-roll>div:first-child {
+.midi-qol-attack-roll > div:first-child,
+.midi-qol-damage-roll > div:first-child {
 	font-size: var(--text-sm);
 	font-family: var(--font-sans-condensed);
 	font-weight: 500;

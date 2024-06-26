@@ -1,35 +1,6 @@
 @font-face {
-	font-family: "Futura PT Book";
-	font-style: normal;
-	font-weight: normal;
-	src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
-}
-
-@font-face {
-	font-family: "Futura PT Bold";
-	font-style: normal;
-	font-weight: bold;
-	src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
-}
-
-@font-face {
-	font-family: "Futura PT Cond Medium";
-	font-style: normal;
-	font-weight: normal;
-	src: url("../fonts/Fira_Sans_Extra_Condensed/FiraSansExtraCondensed-Medium.ttf")
-		format("truetype");
-}
-
-@font-face {
-	font-family: "Futura PT Cond Bold";
-	font-style: normal;
-	font-weight: bold;
-	src: url("../fonts/Fira_Sans_Extra_Condensed/FiraSansExtraCondensed-Bold.ttf") format("truetype");
-}
-
-@font-face {
 	font-family: "Moyenage";
-	src: url("../fonts/Moyenage.ttf") format("truetype");
+	src: url("../fonts/Moyenage.woff2") format("woff2");
 }
 
 .item-control .item-create,
@@ -130,7 +101,13 @@
 .directory .directory-item img {
 	background-color: white;
 }
+
 .mausritter .rollweaponh1,
 .mausritter .rollh1 {
 	font-size: var(--text-2xl);
+}
+
+.mausritter .littleLabel {
+	font-size: var(--text-sm);
+	overflow: hidden;
 }

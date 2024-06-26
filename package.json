@@ -4,17 +4,17 @@
 	"scripts": {
 		"compile": "bun index.ts --id ru-ru",
 		"release": "bun format && bun index.ts --id ru-ru --bump patch --css",
-		"format:check": "bun biome check .",
-		"format": "bun biome check --apply ."
+		"format:check": "bun biome check",
+		"format": "bun biome check --write"
 	},
 	"type": "module",
 	"peerDependencies": {
-		"typescript": "^5.4.3"
+		"typescript": "^5.4.4"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^1.7.3",
-		"@types/bun": "^1.1.2",
-		"lightningcss": "^1.25.0"
+		"@biomejs/biome": "^1.8.2",
+		"@types/bun": "^1.1.5",
+		"lightningcss": "^1.25.1"
 	},
 	"trustedDependencies": ["@biomejs/biome"]
 }

@@ -29,22 +29,20 @@ Hooks.once("init", async () => {
 	const cyrillicFonts = {
 		Beaufort: { editor: true, fonts: [] },
 		Exocet: { editor: true, fonts: [] },
-		"Fira Sans Extra Condensed": { editor: true, fonts: [] },
 		GWENT: { editor: true, fonts: [] },
 		Manuskript: { editor: true, fonts: [] },
 		"Marck Script": { editor: true, fonts: [] },
-		Montserrat: { editor: true, fonts: [] },
-		"Noto Sans Mono": { editor: true, fonts: [] },
-		"Noto Sans": { editor: true, fonts: [] },
-		"Noto Serif": { editor: true, fonts: [] },
 		"OCR-A": { editor: true, fonts: [] },
+		"Roboto Condensed": { editor: true, fonts: [] },
+		"Roboto Serif": { editor: true, fonts: [] },
+		Roboto: { editor: true, fonts: [] },
 	};
 
 	CONFIG.fontDefinitions = foundry.utils.mergeObject(
 		CONFIG.fontDefinitions,
 		cyrillicFonts,
 	);
-	CONFIG.defaultFontFamily = "Noto Sans";
+	CONFIG.defaultFontFamily = "Roboto";
 
 	/* Настройка шрифта для подписей на сцене */
 	game.settings.register("ru-ru", "sceneLabelFont", {

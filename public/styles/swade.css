@@ -10,17 +10,35 @@
 
 @font-face {
 	font-family: "Treacherous Corners";
-	src: url("../fonts/Beaufort/Beaufort-Bold.ttf") format("truetype");
+	src: url("../fonts/Beaufort/Beaufort-Bold.woff2") format("woff2");
 }
 
-/* Noto Serif */
+/* Roboto Serif */
 
 @font-face {
 	font-family: "Romic";
 	font-style: italic;
 	font-weight: 400;
 	font-display: swap;
-	src: url("../fonts/Noto_Serif/NotoSerif-Italic.ttf") format("truetype");
+	src: url("../fonts/Roboto_Serif/RobotoSerif-Italic.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Romic";
+	font-style: italic;
+	font-weight: 500;
+	font-display: swap;
+	src: url("../fonts/Roboto_Serif/RobotoSerif-MediumItalic.woff2")
+		format("woff2");
+}
+
+@font-face {
+	font-family: "Romic";
+	font-style: italic;
+	font-weight: 600;
+	font-display: swap;
+	src: url("../fonts/Roboto_Serif/RobotoSerif-SemiBoldItalic.woff2")
+		format("woff2");
 }
 
 @font-face {
@@ -28,7 +46,7 @@
 	font-style: italic;
 	font-weight: 700;
 	font-display: swap;
-	src: url("../fonts/Noto_Serif/NotoSerif-BoldItalic.ttf") format("truetype");
+	src: url("../fonts/Roboto_Serif/RobotoSerif-BoldItalic.woff2") format("woff2");
 }
 
 @font-face {
@@ -36,7 +54,23 @@
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
-	src: url("../fonts/Noto_Serif/NotoSerif-Regular.ttf") format("truetype");
+	src: url("../fonts/Roboto_Serif/RobotoSerif-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Romic";
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url("../fonts/Roboto_Serif/RobotoSerif-Medium.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Romic";
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url("../fonts/Roboto_Serif/RobotoSerif-SemiBold.woff2") format("woff2");
 }
 
 @font-face {
@@ -44,7 +78,7 @@
 	font-style: normal;
 	font-weight: 700;
 	font-display: swap;
-	src: url("../fonts/Noto_Serif/NotoSerif-Bold.ttf") format("truetype");
+	src: url("../fonts/Roboto_Serif/RobotoSerif-Bold.woff2") format("woff2");
 }
 
 /* SWADE */
@@ -83,7 +117,6 @@
 	font-size: 1em;
 	font-weight: 600;
 }
-
 
 .swade-official .tabs .item {
 	font-family: var(--font-sans-condensed);
@@ -172,9 +205,8 @@
 
 /* Fix for gigantic trash icon */
 .inline-delete {
-	& .fa-3x {
+	&.fa-3x {
 		font-size: 2em;
-
 	}
 }
 
@@ -193,7 +225,7 @@
 .deadlands-sheet,
 .deadlands-wrapper {
 	--section-header-font: "Roboto Slab", serif;
-	--default-font: var(--font-serif)
+	--default-font: var(--font-serif);
 }
 
 .deadlands-sheet input.charname {
@@ -211,35 +243,35 @@
 }
 
 .deadlands-sheet {
-	& .tabs .item {
+	&.tabs .item {
 		font-family: "Roboto Slab";
 		font-weight: bold;
 		font-size: 0.9em;
 	}
 
-	& .sheet-body {
+	&.sheet-body {
 		padding: 1rem;
 	}
 
-	& .attribute-list {
+	&.attribute-list {
 		column-gap: 1px;
 	}
 
-	& .character-detail {
+	&.character-detail {
 		font-weight: 600;
 
-		& input,
-		& button {
+		&input,
+		&button {
 			font-weight: 600;
 		}
 	}
 
-	& .fatigue,
-	& .wounds {
+	&.fatigue,
+	&.wounds {
 		font-family: "Roboto Slab";
 		font-weight: 700;
 
-		& input {
+		&input {
 			font-weight: 700;
 		}
 	}
@@ -251,7 +283,7 @@
 	font-family: var(--font-serif);
 }
 
-.swpf-compendium.sidebar-popout.Compendium-sidebar>.window-content {
+.swpf-compendium.sidebar-popout.Compendium-sidebar > .window-content {
 	font-family: var(--font-serif);
 }
 
@@ -266,9 +298,7 @@
 }
 
 .swpf-core h1.wide {
-	text-shadow:
-		3px 3px 3px #00000080,
-		3px 3px 3px #00000080;
+	text-shadow: 3px 3px 3px #00000080, 3px 3px 3px #00000080;
 }
 
 .swpf-core .chapter-heading h1 {
@@ -291,50 +321,47 @@
 }
 
 .swpf-sheet {
-
-	& .sheet-body {
+	&.sheet-body {
 		font-family: var(--font-fancy);
 	}
 
-	& .character-detail {
+	&.character-detail {
 		font-weight: 600;
 
-		& input,
-		& button {
+		&input,
+		&button {
 			font-weight: 600;
 		}
 	}
 
-	& .fatigue,
-	& .wounds {
+	&.fatigue,
+	&.wounds {
 		font-weight: 700;
 
-		& input {
+		&input {
 			font-weight: 700;
 		}
 	}
 
-	& .tabs .item {
+	&.tabs .item {
 		font-family: var(--font-fancy);
 		font-size: 1em;
 		font-weight: 600;
 	}
 
-	& .window-content {
+	&.window-content {
 		padding: 4px;
 	}
 
-	& .gu-1 {
+	&.gu-1 {
 		padding: 0px;
 		height: 13em;
 		left: 0px;
 		top: 0px;
 		right: 0px;
 		width: 110%;
-		transform: scaleY(1);
+		transform: scaley(1);
 	}
-
-
 }
 
 .swpf-sheet,
