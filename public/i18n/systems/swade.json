@@ -13,7 +13,9 @@
 		"ModHint": "Убедитесь, что у модификатора есть + или -",
 		"ActionDeckPresetLight": "Колода действий (светлая)",
 		"ActionDeckPresetDark": "Колода действий (тёмная)",
+		"ActionDeckPresetPEG": "Колода действий (PEG)",
 		"Name": "Название",
+		"disabledAE": "Отключено из-за активного эффекта",
 		"Tough": "Стойкость",
 		"Ancestry": "Народ",
 		"Archetype": "Архетип",
@@ -72,6 +74,9 @@
 		"WildDie": "Дикий кубик",
 		"Modifier": "Модификатор",
 		"BenniesSpend": "Потратить фишку",
+		"BenniesSpendGM": "Потратить фишку ведущего",
+		"BenniesAdjustGM": "Изменить фишки ведущего",
+		"BenniesAdjustGMText": "Введите текущее число фишек ведущего.",
 		"BenniesGive": "Выдать фишку",
 		"BenniesRefresh": "Восполнить фишки",
 		"AllBenniesRefresh": "Восполнить все фишки",
@@ -87,6 +92,8 @@
 		"EdEdge": "Изменить черту",
 		"EdHind": "Изменить изъян",
 		"Ed": "Изменить",
+		"EdF": "Изменить {item}",
+		"EdRightClick": "[ПКМ] для изменения",
 		"Del": "Удалить",
 		"Arcane": "Сверхъестественный",
 		"InnatePower": "Врождённая сила",
@@ -143,6 +150,7 @@
 		"Protection": "Доспех",
 		"Dmg": "Урон",
 		"DmgOver": "Урон действия",
+		"ApOver": "Бронебойность действия",
 		"Resist": "Устойчивость",
 		"ResistRolls": "Проверки устойчивости",
 		"MacroActor": {
@@ -473,7 +481,8 @@
 			},
 			"Value": "Значение",
 			"Ignore": "Игнор.",
-			"None": "Нет модификаторов"
+			"None": "Нет модификаторов",
+			"Active": "Активно"
 		},
 		"Illumination": {
 			"_name": "Освещение",
@@ -709,10 +718,6 @@
 				"Name": "Использование штрафа нагрузки",
 				"Hint": "Добавляет штраф нагрузки. Учтите, что проверки {vigor} для сопротивления {fatigue} в данный момент не поддерживаются!"
 			},
-			"GmBennies": {
-				"Name": "Фишки ведущего",
-				"Hint": "Указать сколько фишек ведущий получит при восполнении"
-			},
 			"VehicleMods": {
 				"Name": "Модификации транспорта",
 				"Hint": "Транспорт имеет ячейки модификаций"
@@ -774,6 +779,14 @@
 			"HeroesNeverDie": {
 				"Name": "Герои не умирают",
 				"Hint": "Включает ситуационное правило 'Герои не умирают' для проверок при смерти."
+			},
+			"ArmorStacking": {
+				"Choices": {
+					"Core": "Savage Worlds Adventure Edition",
+					"SWPF": "Pathfinder for Savage Worlds"
+				},
+				"Name": "Суммирование брони",
+				"Hint": "Выберите правила суммирования брони."
 			}
 		},
 		"EffectCallbacks": {
@@ -805,7 +818,6 @@
 			"OnlyOneAncestry": "Вы можете принадлежать только к одному народу!",
 			"OnlyOneArchetype": "Вы можете иметь только один архетип!"
 		},
-		"BenniesSpendGM": "Потратить фишку ведущего",
 		"DocumentLink": "Ссылка",
 		"DocumentTweaks": "Настройки",
 		"TargetVulnerable": "Цель уязвима",
@@ -851,7 +863,8 @@
 		"Consumable": {
 			"Use": "Использовать",
 			"Consumables": "Расходуемые",
-			"NotEnoughCharges": "Не хватает зарядов!"
+			"NotEnoughCharges": "Не хватает зарядов!",
+			"ChargesUsed": "<p>{charges} заряд(ов) использовано на <em>{name}</em></p>"
 		},
 		"EmptyAncestralAbilitiesHint": "<strong>Внимание:</strong> эта вкладка больше не используется. Если вы создаёте новый {ancestry} или {archetype}, перетащите предметы на вкладку Свойства. {ancestry} или {archetype} автоматически добавит эти особенности актёру.",
 		"NoTokenSelectedForResistRoll": "Выберите один токен перед проверкой сопротивления",
@@ -1410,6 +1423,8 @@
 			"Unassigned": "Не назначен"
 		},
 		"Combat": {
+			"DealAll": "Deal All",
+			"DealNPC": "Deal NPCs",
 			"StartSurpriseRound": "Начать внезапный раунд",
 			"AdvanceRoundTitle": "Следующий раунд",
 			"AdvanceRoundContent": "Изменить раунд на следующий?",

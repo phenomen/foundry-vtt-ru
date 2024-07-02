@@ -3,8 +3,22 @@ import { setupBabele, translateValue } from "../shared.js";
 let error;
 
 export function init() {
+	game.settings.register("ru-ru", "setupRules", {
+		name: "(SWADE) Перевод настроек системы",
+		hint: "Автоматический перевод навыков и других настроек системы SWADE. Отключите, если желаете внести изменения вручную.",
+		type: Boolean,
+		default: false,
+		scope: "world",
+		config: true,
+		restricted: true,
+		onChange: (value) => {
+			window.location.reload();
+		},
+	});
+
 	registerBabele();
 	registerConverters();
+	setupRules();
 
 	Hooks.on("ready", () => {
 		if (error) {
@@ -75,6 +89,42 @@ function registerConverters() {
 	});
 }
 
+function setupRules() {
+	if (game.settings.get("ru-ru", "setupRules")) {
+		// SWADE Basic
+		game.settings.set(
+			"swade",
+			"coreSkills",
+			"Атлетика, Внимание, Осведомлённость, Скрытность, Убеждение",
+		);
+		game.settings.set(
+			"swade",
+			"vehicleSkills",
+			"Верховая езда, Вождение, Пилотирование, Судовождение",
+		);
+		game.settings.set("swade", "currencyName", "$");
+
+		// SWADE Core
+		if (game.modules.get("swade-core-rules")?.active) {
+			game.settings.set(
+				"swade",
+				"coreSkillsCompendium",
+				"swade-core-rules.swade-skills",
+			);
+		}
+
+		// Savage Pathfinder
+		if (game.modules.get("swpf-core-rules")?.active) {
+			game.settings.set(
+				"swade",
+				"coreSkillsCompendium",
+				"swpf-core-rules.swpf-skills",
+			);
+			game.settings.set("swade", "currencyName", "зм");
+		}
+	}
+}
+
 /* Data */
 
 const EXCEPTIONS = {
@@ -99,7 +149,7 @@ const CATEGORIES = {
 	Combat: "Боевые",
 	Professional: "Профессиональные",
 	Social: "Социальные",
-	Weird: "Мистические",
+	Weird: "Потусторонние",
 	Leadership: "Лидерские",
 	Power: "Сверхъестественные",
 	Legendary: "Легендарные",
