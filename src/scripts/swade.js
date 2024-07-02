@@ -7,7 +7,7 @@ export function init() {
 		name: "(SWADE) Перевод настроек системы",
 		hint: "Автоматический перевод навыков и других настроек системы SWADE. Отключите, если желаете внести изменения вручную.",
 		type: Boolean,
-		default: false,
+		default: true,
 		scope: "world",
 		config: true,
 		restricted: true,
@@ -18,12 +18,13 @@ export function init() {
 
 	registerBabele();
 	registerConverters();
-	setupRules();
 
 	Hooks.on("ready", () => {
 		if (error) {
 			ui.notifications.error(error);
 		}
+
+		setupRules();
 	});
 }
 
