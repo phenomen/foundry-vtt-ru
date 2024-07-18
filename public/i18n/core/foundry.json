@@ -774,6 +774,7 @@
 	"DOCUMENT.Combatant": "Боец",
 	"DOCUMENT.Combatants": "Бойцы",
 	"DOCUMENT.CopyOf": "{name} (копия)",
+	"DOCUMENT.Document": "Документ",
 	"DOCUMENT.Drawing": "Рисунок",
 	"DOCUMENT.Drawings": "Рисунки",
 	"DOCUMENT.Folder": "Папка",
@@ -1028,7 +1029,9 @@
 		},
 		"TAGS": {
 			"Add": "Добавить тэг",
-			"Remove": "Удалить тэг"
+			"Remove": "Удалить тэг",
+			"ErrorBlank": "Тэги в HTMLStringTagsElement не могут быть пустыми.",
+			"ErrorNonUnique": "Тэг \"{tag}\" уже существует."
 		}
 	},
 
@@ -1753,7 +1756,8 @@
 	"SETUP.UpdateChannel": "Канал обновлений",
 	"SETUP.UpdateChannelHint": "Вы можете выбрать канал обновлений Foundry VTT. Если у вас нет определённой причины для изменения этого параметра, то рекомендуется Стабильный канал.",
 	"SETUP.UpdateCheck": "Обновление",
-	"SETUP.UpdateCheckFor": "Обновить, если возможно",
+	"SETUP.UpdateCheckFor": "Проверка обновлений",
+	"SETUP.UpdatePerformIfAvailable": "Выполнить обновление",
 	"SETUP.UpdateHint": "Вы можете обновить Foundry VTT до новой версии, проверив обновления в выбранном канале обновлений.",
 	"SETUP.UpdatePrototype": "Прототип",
 	"SETUP.UpdatePrototypeHint": "Прототип: релизы для предпросмотра экспериментальных нововедений, которые ещё не до конца разработаны.",
@@ -2963,7 +2967,8 @@
 		"SETTINGS": {
 			"label": "Динамические кольца токена",
 			"hint": "Выберите визуальный стиль динамических колец.",
-			"defaultConfigLabel": "Кольцо Foundry VTT"
+			"coreSteel": "Стальное кольцо Foundry VTT",
+			"coreBronze": "Бронзовое кольцо Foundry VTT"
 		}
 	},
 
