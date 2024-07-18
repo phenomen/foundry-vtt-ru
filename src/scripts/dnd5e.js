@@ -5,13 +5,16 @@ export function init() {
 	game.settings.register("ru-ru", "altTranslation", {
 		name: "(D&D5E) Альтернативный перевод",
 		hint: "(Требуется модуль libWrapper) Использовать альтернативный перевод D&D5E от Phantom Studio. Иначе будет использоваться официальный перевод издательства Hobby World.",
-		type: Boolean,
-		default: false,
+		type: String,
+		default: "hw",
 		scope: "world",
 		config: true,
 		restricted: true,
-		onChange: (value) => {
-			window.location.reload();
+		requiresReload: true,
+		choices: {
+			hw: "Нет",
+			ps: "Phantom Studio",
+			dr: "dungeons.ru/dnd.su",
 		},
 	});
 
@@ -23,63 +26,74 @@ export function init() {
 		scope: "world",
 		config: true,
 		restricted: true,
-		onChange: (value) => {
-			window.location.reload();
-		},
+		requiresReload: true,
 	});
+
+	/* Миграция значения настройки altTranslation */
+	if (
+		["true", "false"].includes(game.settings.get("ru-ru", "altTranslation"))
+	) {
+		const value =
+			game.settings.get("ru-ru", "altTranslation") === "true" ? "ps" : "hw";
+		game.settings.storage
+			.get("world")
+			.getSetting("ru-ru.altTranslation").value = value;
+
+		Hooks.once("ready", async () => {
+			game.settings.set("ru-ru", "altTranslation", value);
+		});
+	}
 
 	/* Регистрация Babele */
 	if (game.settings.get("ru-ru", "compendiumTranslation")) {
-		/* Библиотеки D&D */
-		game.settings.get("ru-ru", "altTranslation")
-			? setupBabele("dnd5e/ps")
-			: setupBabele("dnd5e/hw");
+		if (typeof game.babele !== "undefined") {
+			/* Библиотеки D&D */
+			setupBabele(`dnd5e/${game.settings.get("ru-ru", "altTranslation")}`);
 
-		/* Библиотеки Ruins of Symbaroum */
-		if (game.modules.get("symbaroum5ecore")?.active) {
-			setupBabele("dnd5e/ros");
-		}
+			/* Библиотеки Ruins of Symbaroum */
+			if (game.modules.get("symbaroum5ecore")?.active) {
+				setupBabele("dnd5e/ros");
+			}
 
-		game.babele.registerConverters({
-			dndpages(pages, translations) {
-				return pages.map((data) => {
-					if (!translations) {
-						return data;
-					}
+			game.babele.registerConverters({
+				dndpages(pages, translations) {
+					return pages.map((data) => {
+						if (!translations) {
+							return data;
+						}
 
-					let translation;
+						let translation;
 
-					if (Array.isArray(translations)) {
-						translation = translations.find(
-							(t) => t.id === data._id || t.id === data.name,
-						);
-					} else {
-						translation = translations[data.name];
-					}
+						if (Array.isArray(translations)) {
+							translation = translations.find(
+								(t) => t.id === data._id || t.id === data.name,
+							);
+						} else {
+							translation = translations[data.name];
+						}
 
-					if (!translation) {
-						return data;
-					}
+						if (!translation) {
+							return data;
+						}
 
-					return mergeObject(data, {
-						name: translation.name,
-						image: { caption: translation.caption ?? data.image?.caption },
-						src: translation.src ?? data.src,
-						text: { content: translation.text ?? data.text?.content },
-						video: {
-							width: translation.width ?? data.video?.width,
-							height: translation.height ?? data.video?.height,
-						},
-						system: { tooltip: translation.tooltip ?? data.system.tooltip },
-						translated: true,
+						return mergeObject(data, {
+							name: translation.name,
+							image: { caption: translation.caption ?? data.image?.caption },
+							src: translation.src ?? data.src,
+							text: { content: translation.text ?? data.text?.content },
+							video: {
+								width: translation.width ?? data.video?.width,
+								height: translation.height ?? data.video?.height,
+							},
+							system: { tooltip: translation.tooltip ?? data.system.tooltip },
+							translated: true,
+						});
 					});
-				});
-			},
-		});
-	} else {
-		if (game.settings.get("ru-ru", "compendiumTranslation")) {
+				},
+			});
+		} else {
 			new Dialog({
-				title: "Перевод библиотек",
+				title: "Использование",
 				content:
 					"<p>Для перевода библиотек системы D&D5E требуется активировать модуль <b>Babele</b>. Вы можете отключить перевод библиотек в настройках модуля</p>",
 				buttons: {
@@ -98,7 +112,7 @@ export function init() {
 	}
 
 	/* Регистрация альтернативного перевода */
-	if (game.settings.get("ru-ru", "altTranslation")) {
+	if (game.settings.get("ru-ru", "altTranslation") !== "hw") {
 		if (typeof libWrapper === "function") {
 			libWrapper.register(
 				"ru-ru",
@@ -121,30 +135,31 @@ export function init() {
 	}
 
 	/*  Настройка автоопределения анимаций AA  */
-	Hooks.on("renderSettingsConfig", (app, html, data) => {
+	Hooks.on("renderSettingsConfig", async (app, html, data) => {
 		if (!game.user.isGM) return;
 
 		const lastMenuSetting = html
 			.find(`input[name="ru-ru.compendiumTranslation"]`)
 			.closest(".form-group");
 
-		const updateAAButton = $(`
-  <label>
-    Перед переводом анимаций требуется включить модули Automated Animations, D&D5E Animations, JB2A Patreon
-  </label>
-  <div class="form-group">
-      <button type="button">
-          <i class="fas fa-cogs"></i>
-          <label>Перевести анимации</label>
-      </button>
-  </div>
-  `);
-		updateAAButton.find("button").click((e) => {
+		const template_data = {
+			label:
+				"Перед переводом анимаций требуется включить модули Automated Animations, D&D5E Animations, JB2A Patreon",
+			button_label: "Перевести анимации",
+		};
+
+		let button_html = await renderTemplate(
+			"modules/ru-ru/templates/dnd5e-settings-update-aa-button.hbs",
+			template_data,
+		);
+
+		button_html = $(button_html);
+		button_html.find("button").click((e) => {
 			e.preventDefault();
 			updateAA();
 		});
 
-		lastMenuSetting.after(updateAAButton);
+		lastMenuSetting.after(button_html);
 	});
 }
 
@@ -152,8 +167,10 @@ export function init() {
 async function loadAltTranslation(wrapped, lang) {
 	const translations = await wrapped(lang);
 
+	const variant = game.settings.get("ru-ru", "altTranslation");
+
 	const files = [
-		"modules/ru-ru/i18n/systems/dnd5e-alt.json",
+		"modules/ru-ru/i18n/systems/dnd5e-alt-ps.json",
 		"modules/ru-ru/i18n/modules/always-hp-alt.json",
 		"modules/ru-ru/i18n/modules/arbron-hp-bar-alt.json",
 		"modules/ru-ru/i18n/modules/combat-utility-belt-alt.json",
@@ -169,6 +186,16 @@ async function loadAltTranslation(wrapped, lang) {
 	const promises = files.map((file) => this._loadTranslationFile(file));
 
 	await Promise.all(promises);
+
+	if (variant === "dr") {
+		const alt_files = ["modules/ru-ru/i18n/systems/dnd5e-alt-dr.json"];
+		const alt_promises = alt_files.map((file) =>
+			this._loadTranslationFile(file),
+		);
+		await Promise.all(alt_promises);
+		promises.push(...alt_promises);
+	}
+
 	for (const p of promises) {
 		const altJson = await p;
 		foundry.utils.mergeObject(translations, altJson, { inplace: true });
