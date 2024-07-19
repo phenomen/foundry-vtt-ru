@@ -5,7 +5,8 @@
 		"compile": "bun index.ts --id ru-ru",
 		"release": "bun format && bun index.ts --id ru-ru --bump patch --css",
 		"format:check": "bun biome check",
-		"format": "bun biome check --write"
+		"format": "bun biome check --write",
+		"archive": "tar.exe -a -cf ru-ru.zip ru-ru"
 	},
 	"type": "module",
 	"peerDependencies": {

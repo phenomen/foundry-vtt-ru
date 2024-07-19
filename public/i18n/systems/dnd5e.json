@@ -148,6 +148,7 @@
 	"DND5E.AdditionalControls": "Дополнительное управление",
 	"DND5E.AdditionalSettings": "Дополнительные настройки",
 	"DND5E.AddEmbeddedItemPromptHint": "Желаете ли вы добавить эти предметы на бланк персонажа?",
+	"DND5E.Advanced": "Дополнительно",
 	"DND5E.AdvancementAbilityScoreImprovementTitle": "Повышение характеристики",
 	"DND5E.AdvancementAbilityScoreImprovementHint": "Позволяет повысить одну или несколько характеристик, или взять дополнительную черту.",
 	"DND5E.AdvancementAbilityScoreImprovementCap": "Максимум пунктов",
@@ -365,6 +366,7 @@
 	"DND5E.BackgroundName": "Название происхождения",
 	"DND5E.Biography": "Биография",
 	"DND5E.BiographyPublic": "Общедоступная биография",
+	"DND5E.BiopgrahyPublicEdit": "Редактировать Общедоступную Биографию",
 	"DND5E.Bonds": "Узы",
 	"DND5E.Bonus": "Бонус",
 	"DND5E.BonusAbility": "Глобальные бонусы характеристик",
@@ -420,6 +422,52 @@
 	"DND5E.ClassOriginal": "Оригинальный класс",
 	"DND5E.ClassSaves": "Испытания",
 	"DND5E.Confirm": "Подтвердить",
+	"DND5E.CompendiumBrowser": {
+		"Title": "Навигатор библиотеки",
+		"Action": {
+			"Open": "Открыть Навигатор Библиотеки"
+		},
+		"Column": {
+			"Icon": "Иконка",
+			"Name": "Название",
+			"Results": "Результат"
+		},
+		"Filters": {
+			"Label": "Фильтр",
+			"HasDarkvision": "Есть Ночное зрение",
+			"HasSpellcasting": "Есть Заклинания",
+			"SearchResults": "Результаты поисков"
+		},
+		"Selection": {
+			"Label": "Выбрано: {summary}",
+			"Select": "Выбрать",
+			"Summary": {
+				"Max": "<span class=\"value\">{value}</span> вплоть до {max}",
+				"Min": "<span class=\"value\">{value}</span> из минимум {min}",
+				"Range": "<span class=\"value\">{value}</span> из {min} до {max}",
+				"Single": "<span class=\"value\">{value}</span> из {max}"
+			},
+			"Warning": {
+				"Document": {
+					"one": "документ",
+					"other": "документов"
+				},
+				"Max": "Нужно выбрать до {max} {document}, выбрано {value}.",
+				"Min": "Нужно выбрать не менее {min} {document}, выбрано {value}.",
+				"Range": "Нужно выбрать от {min} до {max} документов, выбрано {value}.",
+				"Single": "Нужно выбрать до {max} {document}, выбрано {value}."
+			}
+		},
+		"Tabs": {
+			"Feat.other": "Черты",
+			"Item.other": "Предметы",
+			"Monster.other": "Чудовища"
+		},
+		"Types": {
+			"Label": "Типы"
+		},
+		"Locked": "Заблокирован"
+	},
 	"DND5E.ComponentMaterial": "Реагент",
 	"DND5E.ComponentMaterialAbbr": "Р",
 	"DND5E.ComponentSomatic": "Жестовый",
@@ -439,6 +487,8 @@
 	"DND5E.ContextMenuActionEquip": "Надеть",
 	"DND5E.ContextMenuActionUnequip": "Снять",
 	"DND5E.ContextMenuActionPrepare": "Подготовить",
+	"DND5E.ContextMenuActionExpendCharge": "Разрядить",
+	"DND5E.ContextMenuActionCharge": "Зарядить",
 	"DND5E.ContextMenuActionUnprepare": "Снять подготовку",
 	"DND5E.ContextMenuActionAttune": "Настроиться",
 	"DND5E.ContextMenuActionUnattune": "Снять настроенность",
@@ -572,6 +622,7 @@
 	"DND5E.Critical": "Критический",
 	"DND5E.CriticalHit": "Критический удар",
 	"DND5E.PowerfulCritical": "Усиленный крит",
+	"DND5E.CRLabel": "КО {cr}",
 	"DND5E.Currency": "Валюта",
 	"DND5E.CurrencyAbbrCP": "мм",
 	"DND5E.CurrencyAbbrEP": "эм",
@@ -668,6 +719,7 @@
 	"DND5E.DescriptionSummary": "Краткое описание",
 	"DND5E.DescriptionUnidentified": "Неопределённое описание",
 	"DND5E.Details": "Подробности",
+	"DND5E.DetailsEdit": "Изменение подробностей",
 	"DND5E.Dimensions": "Размеры",
 	"DND5E.Disadvantage": "Помеха",
 	"DND5E.Discord": "Discord",
@@ -717,6 +769,7 @@
 		},
 		"Configuration": "Настройка зачарования",
 		"DropArea": "Поместите предмет для зачарования...",
+		"Enchanted": "{current} &sol; {max} зачаровано",
 		"FIELDS": {
 			"enchantment": {
 				"label": "Настройка зачарования",
@@ -867,6 +920,7 @@
 	"DND5E.IdentifierCopy": "Скопировать идентификатор",
 	"DND5E.IdentifierCopied": "Скопировано!",
 	"DND5E.ItemRarityCommon": "обычный",
+	"DND5E.ItemRarityMundane": "обыденный",
 	"DND5E.ItemRarityUncommon": "необычный",
 	"DND5E.ItemRarityRare": "редкий",
 	"DND5E.ItemRarityVeryRare": "крайне редкий",
@@ -892,8 +946,9 @@
 	"DND5E.FeetAbbr": "фт",
 	"DND5E.Filter": "Фильтр",
 	"DND5E.FilterClear": "Сброс фильтров",
-	"DND5E.FilterGroupCategory": "Группировать по категории",
-	"DND5E.FilterGroupOrigin": "Группировать по источнику",
+	"DND5E.FilterGroupCategory": "Группировка по категории",
+	"DND5E.FilterGroupOrigin": "Группировка по источнику",
+	"DND5E.FilterGroupAction": "Группировка по действию",
 	"DND5E.FilterNoSpells": "Заклинания с этим фильтром не найдены.",
 	"DND5E.NoSpellLevels": "У этого персонажа нет уровней заклинателя, но вы можете добавить заклинания сами.",
 	"DND5E.FlagsInstructions": "Настройте особенности и свойства, которые влияют на персонажа.",
@@ -1001,6 +1056,7 @@
 	"DND5E.Identify": "Опознать",
 	"DND5E.Immunities": "Невосприимчивости",
 	"DND5E.Initiative": "Инициатива",
+	"DND5E.InitiativeAbbr": "Иниц",
 	"DND5E.InitiativeBonus": "Бонус инициативы",
 	"DND5E.InitiativeRoll": "Бросок инициативы",
 	"DND5E.InitiativeConfig": "Настройка инициативы",
@@ -1060,6 +1116,10 @@
 	"DND5E.ItemName": "Название",
 	"DND5E.ItemNew": "{type}",
 	"DND5E.Item": {
+		"Category": {
+			"Label": "Категория",
+			"Physical": "Физическое"
+		},
 		"Property": {
 			"Adamantine": "Адамантиновое",
 			"Ammunition": "Боеприпасы",
@@ -1144,10 +1204,18 @@
 	"DND5E.LanguagesThievesCant": "Воровской жаргон",
 	"DND5E.LanguagesUndercommon": "Подземный",
 	"DND5E.LegAct": "Легендарные действия",
+	"DND5E.LegActN.one": "1-е легендарное действие",
+	"DND5E.LegActN.two": "2-е легендарное действие",
+	"DND5E.LegActN.few": "3-е легендарное действие",
+	"DND5E.LegActN.other": "{n}-е легендарное действие",
 	"DND5E.LegActMax": "Максимум легендарных действий",
 	"DND5E.LegActRemaining": "Остаток легендарных действий",
 	"DND5E.LegendaryActionLabel": "Легендарное действие",
 	"DND5E.LegRes": "Легендарная устойчивость",
+	"DND5E.LegResN.one": "1-я легендарная устойчивость",
+	"DND5E.LegResN.two": "2-я легендарная устойчивость",
+	"DND5E.LegResN.few": "3-я легендарная устойчивость",
+	"DND5E.LegResN.other": "{n}-я легендарная устойчивость",
 	"DND5E.LegResMax": "Максимум легендарных устойчивостей",
 	"DND5E.LegResRemaining": "Остаток легендарных устойчивостей",
 	"DND5E.Level": "Уровень",
@@ -1208,9 +1276,11 @@
 	"DND5E.Normal": "Обычный",
 	"DND5E.NotProficient": "Без умения",
 	"DND5E.Notes": "Заметки",
+	"DND5E.NPC": "Персонаж Мастера",
 	"DND5E.OtherFormula": "Альтернативная формула",
 	"DND5E.PactMagic": "Магия договора",
 	"DND5E.Passive": "Пассивная",
+	"DND5E.PassivePerception": "Пассивная Внимательность",
 	"DND5E.PersonalityTraits": "Свойства личности",
 	"DND5E.PlaceTemplate": "Разместить шаблон",
 	"DND5E.PlaceTemplateError": "Не удалось разместить шаблон",
@@ -1271,6 +1341,7 @@
 	"DND5E.Properties": "Свойства",
 	"DND5E.PropertyBase": "Базовый",
 	"DND5E.PropertyTotal": "Всего",
+	"DND5E.Public": "Публичный",
 	"DND5E.Quantity": "Количество",
 	"DND5E.QuantityAbbr": "Кол.",
 	"DND5E.QuantityFormula": "Формула количества",
@@ -1365,7 +1436,8 @@
 	"DND5E.SheetClassItem": "Бланк предмета 5e",
 	"DND5E.SheetClassJournalEntry": "Бланк журнала 5e",
 	"DND5E.SheetClassMapLocation": "Бланк зоны карты 5e",
-	"DND5E.SheetClassNPC": "Бланк персонажа мастера 5e",
+	"DND5E.SheetClassNPC": "Бланк ПМ 5e",
+	"DND5E.SheetClassNPCLegacy": "Старый бланк ПМ 5e",
 	"DND5E.SheetClassRule": "Бланк правил 5e",
 	"DND5E.SheetClassSpellList": "Бланк списка заклинаний 5e",
 	"DND5E.SheetClassToken": "Бланк токена 5e",
@@ -1374,6 +1446,7 @@
 	"DND5E.SheetModePlay": "Игра",
 	"DND5E.SavingThrow": "Испытание",
 	"DND5E.SavingThrowDC": "СЛ {dc} Испытание {ability}",
+	"DND5E.SavingThrowRoll": "Испытание {ability}",
 	"DND5E.SaveDC": "СЛ {dc} {ability}",
 	"DND5E.SavePromptTitle": "Испытание {ability}",
 	"DND5E.ScalingFormula": "Формула повышенного круга",
@@ -1435,6 +1508,7 @@
 	"DND5E.SkillPromptTitle": "Проверка навыка {skill}",
 	"DND5E.SkillConfigureTitle": "Настройка {skill}",
 	"DND5E.SkillConfigure": "Настройка навыка",
+	"DND5E.SkillsConfig": "Настройка навыков",
 	"DND5E.SkillBonuses": "Бонусы навыка",
 	"DND5E.SkillBonusCheck": "Бонус проверки",
 	"DND5E.SkillBonusPassive": "Пассивный бонус",
@@ -1516,6 +1590,7 @@
 	"DND5E.SpellPrepAlways": "Всегда подготовлено",
 	"DND5E.SpellPreparation": "Подготовка заклинаний",
 	"DND5E.SpellPreparationMode": "Тип подготовки",
+	"DND5E.SpellSourceClass": "Исходный класс",
 	"DND5E.SpellPrepared": "Подготовлено",
 	"DND5E.SpellProgArt": "Изобретатель",
 	"DND5E.SpellProgAvailable": "Доступные ячейки",
@@ -1546,7 +1621,7 @@
 	"DND5E.SpellUsage": "Сотворение",
 	"DND5E.Spellbook": "Заклинания",
 	"DND5E.StartingEquipment": {
-		"Title": "Начальное снаряжения",
+		"Title": "Начальное снаряжение",
 		"Action": {
 			"AddEntry": "Добавить запись",
 			"Configure": "Настройка начального снаряжения",
@@ -1633,7 +1708,7 @@
 			"Label": "Тип существа",
 			"Hint": "Призванное существо будет изменено на этот тип. Если выбрано несколько типов, то можно будет выбрать один из них во время призыва."
 		},
-		"DisplayName": "Имя профилья",
+		"DisplayName": "Имя профиля",
 		"DropHint": "Перенесите существо сюда",
 		"ItemChanges": {
 			"Label": "Изменения предметов",
@@ -1657,10 +1732,18 @@
 				"Hint": "Изменение СЛ испытаний способностей призванного существа, чтобы те совпадали с атаками призывателя."
 			}
 		},
+		"Mode": {
+			"Label": "Режим",
+			"Hint": "Как указываются призванные существа.",
+			"CR": "По классу опасности и типу",
+			"Direct": "По прямой ссылке"
+		},
 		"Profile": {
 			"Label": "Профиль призыва",
 			"LabelPl": "Профили призыва",
-			"Empty": "Нажмите выше, чтобы добавить профиль. Или перенесите существо сюда."
+			"ChallengeRatingLabel": "Класс опасности {cr} и ниже",
+			"Empty": "Нажмите выше, чтобы добавить профиль",
+			"EmptyDrop": "Нажмите выше, чтобы добавить профиль. Или перенесите сюда существо для призыва."
 		},
 		"Prompt": {
 			"Label": "Запрос призыва",
@@ -1668,6 +1751,7 @@
 		},
 		"Warning": {
 			"CreateActor": "У вас должны быть права на Создание новых актёров, чтобы призывать существ из библиотеки.",
+			"CRV11": "Призыв по классу опасности работает только в Foundry V12 и выше.",
 			"NoActor": "Актёр для призыва с UUID '{uuid}' не найден.",
 			"NoOwnership": "У вас должны быть права владения '{actor}' для призыва.",
 			"NoProfile": "Не удалось найти профиль призыва {profileId} у '{item}'.",
@@ -1677,6 +1761,7 @@
 	"DND5E.Supply": "Запас",
 	"DND5E.Suppressed": "Подавлено",
 	"DND5E.Target": "Цель",
+	"DND5E.TargetPl": "Цели",
 	"DND5E.TargetAlly": "союзник",
 	"DND5E.TargetAny": "Любая",
 	"DND5E.TargetCone": "конус",
@@ -1743,6 +1828,7 @@
 		},
 		"Title": "Динамическая рамка"
 	},
+	"DND5E.ToggleDescription": "Раскрыть описание",
 	"DND5E.ToolArtisans": "Инструменты ремесла",
 	"DND5E.ToolBonuses": "Бонусы инструмента",
 	"DND5E.ToolCheck": "Проверка инструмента",
@@ -1857,7 +1943,7 @@
 	"DND5E.VersatileDamage": "Полуторный урон",
 	"DND5E.VsDC": "со СЛ",
 	"DND5E.Vulnerabilities": "Уязвимости",
-	"DND5E.WarnBadACFormula": "Введённая формула КБ не может быть рассчитана.",
+	"DND5E.WarnBadACFormula": "Формула КБ  \"{formula}\" не может быть рассчитана.",
 	"DND5E.WarnCantAddMultipleAdvancements": "В данный момент нельзя добавить несколько предметов с развитием одновременно. Пожалуйста добавьте их по очереди.",
 	"DND5E.WarnMultipleArmor": "Надето более одного комплекта брони. Расчёт КБ может быть некорректным.",
 	"DND5E.WarnMultipleShields": "Надето более одного щита. Расчёт КБ может быть некорректным.",
