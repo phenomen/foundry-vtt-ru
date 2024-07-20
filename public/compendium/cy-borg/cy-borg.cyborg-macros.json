@@ -1,0 +1,17 @@
+{
+	"label": "CY_BORG (Макросы)",
+	"entries": {
+		"Discharged CorpKiller Create": {
+			"name": "Создание Брошенного КорпКиллера",
+			"command": "(async () => {\n  if (!actor || !actor.findItem(\"feat\", \"Эксперт по гранатам\")) {\n    return;\n  }\n  const grenade = actor.findItem(\"weapon\", \"Ручная граната\");\n  const flashbang = actor.findItem(\"weapon\", \"Оглушающая граната\");\n  if (grenade) {\n    const quantity = actor.system.abilities.toughness.value + 5;\n    await grenade.update({[\"system.quantity\"]: quantity});\n  }\n  if (flashbang) {\n    await flashbang.update({[\"system.quantity\"]: 5});\n  }\n})();"
+		},
+		"Orphaned Gearhead Create": {
+			"name": "Создание Шестернеголового Сиротки",
+			"command": "(async () => {\n  if (!actor) {\n    return;\n  }\n  const vehicle = actor.ownedVehicles().shift();\n  if (!vehicle) {\n    return;\n  }\n\n  let hpFormula = null;\n  const descript = vehicle.system.description.toLowerCase();\n  if (descript.includes(\"Полуавтономный шагоход\")) {\n    hpFormula = \"1d8+@abilities.knowledge.value\";\n  } else if (descript.includes(\"Летающий дрон\")) {\n    hpFormula = \"1d12+@abilities.knowledge.value\";\n  } else if (descript.includes(\"Прототип гусеничного дрона\")) {\n    hpFormula = \"1d10+@abilities.knowledge.value\";\n  }\n  if (hpFormula) {\n    const roll = new Roll(hpFormula, actor.getRollData()).evaluate({async: false});\n    await vehicle.update({\n      [\"system.hitPoints.max\"]: roll.total, \n      [\"system.hitPoints.value\"]: roll.total, \n    });\n  }\n})();"
+		},
+		"Starting Cyberdeck Slots": {
+			"name": "Слоты стартовой кибердеки",
+			"command": "(async () => {\n  if (!actor) {\n    console.error(\"Ни один актер не передан в макрос\");\n    return;\n  }\n  const item = actor.findItem(\"cyberdeck\", \"Стартовая кибердека\");\n  if (!item) {\n    console.log(\"Стартовая кибердека не найдена\");\n    return;\n  }\n  const slots = new Roll(\"d3\").evaluate({async: false}).total;\n  await item.update({[\"system.slotFormula\"]: slots.toString()});\n})();"
+		}
+	}
+}
