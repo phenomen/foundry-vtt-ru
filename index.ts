@@ -9,9 +9,9 @@ interface BuildOptions {
 	css?: boolean;
 }
 
-async function main() {
-	const options = parseCommandLineArgs();
+const options = parseCommandLineArgs();
 
+async function main() {
 	console.log("-- BUILDING SOURCE...");
 	await buildSource(options.id);
 
@@ -23,10 +23,8 @@ async function main() {
 	console.log("-- COPYING STATIC FILES...");
 	await copyDirectory("./public", `./${options.id}`);
 
-	if (options.css) {
-		console.log("-- OPTIMIZING CSS...");
-		await optimizeCSS(options.id);
-	}
+	console.log("-- OPTIMIZING CSS...");
+	await optimizeCSS(options.id);
 }
 
 function parseCommandLineArgs(): BuildOptions {
@@ -56,7 +54,7 @@ async function buildSource(id: string) {
 		publicPath: `/modules/${id}/`,
 		minify: true,
 		splitting: false,
-		sourcemap: "none",
+		sourcemap: "linked",
 	});
 
 	if (!result.success) {
@@ -97,13 +95,13 @@ async function bumpVersion(mode: string) {
 }
 
 async function optimizeCSS(id: string) {
-	const cssFiles = await readdir("./public/styles");
+	const cssFiles = await readdir("./src/styles");
 
 	for (const file of cssFiles) {
 		const { code } = transform({
 			filename: file,
-			code: Buffer.from(await Bun.file(`./public/styles/${file}`).text()),
-			minify: true,
+			code: Buffer.from(await Bun.file(`./src/styles/${file}`).text()),
+			minify: options.css,
 			sourceMap: false,
 		});
 

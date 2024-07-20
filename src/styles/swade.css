@@ -143,6 +143,11 @@
 	font-family: var(--font-sans-condensed);
 }
 
+.swade-official .primary .attribute-list {
+	-moz-column-gap: 2px;
+	column-gap: 2px;
+}
+
 .swade.sheet.actor .attribute-label {
 	font-size: 10px;
 	text-transform: uppercase;
@@ -367,4 +372,10 @@
 .swpf-sheet,
 .swpf-sheet.swade-official.actor {
 	border-image-width: 8px;
+}
+
+/* OTHER MODULES */
+
+.brws-tab-player-mods {
+	font-family: var(--font-sans-condensed);
 }
