@@ -4,12 +4,12 @@ export function init() {
 	setupBabele("cy-borg");
 
 	CONFIG.CY.appBacklashesTable = "Противодействие программ";
-
+	/*
 	libWrapper.register(
 		"ru-ru",
 		"CONFIG.Item.documentClass.prototype.createLinkedInfestation",
 		async (wrapped, ...args) => {
-			/*
+		
 			const infestation = await drawDocument(
 				TABLES_PACK,
 				"Заражения",
@@ -21,10 +21,9 @@ export function init() {
 			const data = dupeData(infestation);
 			data.system.nanoId = this.id;
 			await this.parent.createEmbeddedDocuments("Item", [data]);
-			*/
-
-			return wrapped(...args);
+	
 		},
-		"WRAPPED",
+		"OVERRIDE",
 	);
+		*/
 }
