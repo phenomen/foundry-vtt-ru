@@ -8,6 +8,7 @@
 		"TypeAbility": "Способность",
 		"TypeArmor": "Броня",
 		"TypeHelmet": "Шлем",
+		"TypeInjury": "Травма",
 		"TypeItem": "Предмет",
 		"TypeKin": "Народ",
 		"TypeProfession": "Профессия",
@@ -25,6 +26,7 @@
 			"ability": "Способность",
 			"armor": "Броня",
 			"helmet": "Шлем",
+			"injury": "Травма",
 			"item": "Предмет",
 			"kin": "Народ",
 			"profession": "Профессия",
@@ -136,6 +138,10 @@
 			"system": "Dragonbane",
 			"textureTransparent": "Dragonbane Полупрозрачный"
 		},
+		"effect": {
+			"applyWhenEquipped": "Применяется пока надето",
+			"applyWhenEquippedTooltip": "Эффект будет активен только когда предмет надет"
+		},
 		"item": {
 			"new": "Новый предмет"
 		},
@@ -174,6 +180,15 @@
 		"helmet": {
 			"new": "Новый шлем",
 			"rating": "Класс защиты"
+		},
+		"injury": {
+			"healingTime": "Период исцеления",
+			"healingTimeTooltip": "Число дней, требуемых для исцеления травмы",
+			"healingTimeExpired": "<b>{injury}</b> исцелена.",
+			"healingTimeRollFlavor": "Период исцеления для <b>{injury}</b> составляет <b>{days}</b> дней.",
+			"rollHealingTime": "ЛКМ для проверки периода исцеления",
+			"clickHealingTime": "ЛКМ - уменьшить, ПКМ - увеличить",
+			"healingTimeChanged": "Период заживления для <b>{injury}</b> изменён <b>{from}</b> на <b>{to}</b> дней."
 		},
 		"itemTypes": {
 			"item": "Предмет",
@@ -353,7 +368,7 @@
 			"slashing": "Режущее",
 			"slashingTooltip": "Оружие наносит режущий урон. Если оружие и режущее и колющее, вы должны выбрать тип атаки перед броском",
 			"subtle": "Незаметное",
-			"subtleTooltip": "Скрытые атаки этим оружием получают дар и увеличенный урон",
+			"subtleTooltip": "Атаки исподтишка этим оружием получают дар и увеличенный урон",
 			"thrown": "Метательное",
 			"thrownTooltip": "Можно метнуть на расстоянии",
 			"toppling": "Сбивающее",
@@ -369,11 +384,13 @@
 				"and": "и",
 				"appearance": "Внешность",
 				"armor": "Броня",
+				"baseValue": "Базовое значение: {value}",
 				"background": "Происхождение",
 				"banes": "Бедствие у",
 				"combat": "Бой",
 				"coreSkills": "Основные навыки",
 				"create-armor": "Создать броню",
+				"create-effect": "Создать эффект",
 				"create-helmet": "Создать шлем",
 				"create-item": "Создать предмет",
 				"create-weapon": "Создать оружие",
@@ -382,6 +399,9 @@
 				"damageBonusSTR": "Бонус урона от СИЛ",
 				"deathRolls": "Испытание пр. смерти",
 				"description": "Описание",
+				"disabled": "Отключено",
+				"effect": "Эффект",
+				"effects": "Эффекты",
 				"encumbrance": "Нагрузка",
 				"equipped": "Снаряжено",
 				"equipped-armor": "Надетая броня",
@@ -396,6 +416,7 @@
 				"hitPointsCurrent": "Текущие ПЗ",
 				"hitPointsMax": "Максимум ПЗ",
 				"hp": "ПЗ",
+				"injuries": "Травмы",
 				"inventory": "Инвентарь",
 				"kin": "Народ",
 				"kinAbilities": "Способности народа",
@@ -427,6 +448,7 @@
 				"size": "Размер",
 				"skills": "Навыки",
 				"skillValue": "",
+				"source": "Источник",
 				"spell": "Заклинание",
 				"spells": "Заклинания",
 				"spellsTooltip": "Подготовленные заклинания",
@@ -512,8 +534,15 @@
 				"deleteActorTokenOnScene": "Сцены с токенами, связанными с актёрами",
 				"monsterAttack": "Атака",
 				"monsterAttackRandom": "Случайно",
-				"monsterAttackTitle": "Выбор атаки чудовища"
+				"monsterAttackTitle": "Выбор атаки чудовища",
+				"healInjuriesTitle": "Исцелить травмы",
+				"healInjuriesMessage": "Сократить период исцеления для всех травм на один день?"
 			}
+		},
+		"item-sheet": {
+			"details": "Подробности",
+			"description": "Описание",
+			"effects": "Эффекты"
 		},
 		"INFO": {
 			"monsterAttackUpdated": "Таблица атак чудовища для {actor} была обновлена.",
