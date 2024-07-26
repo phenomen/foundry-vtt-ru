@@ -1,18 +1,5 @@
-import { init as INIT_ALIENRPG } from "./scripts/alienrpg.js";
-import { init as INIT_BLADES_IN_THE_DARK } from "./scripts/blades-in-the-dark.js";
-import { init as INIT_CITY_OF_MIST } from "./scripts/city-of-mist.js";
-import { init as INIT_CY_BORG } from "./scripts/cy-borg.js";
-import { init as INIT_DELTAGREEN } from "./scripts/deltagreen.js";
-import { init as INIT_DND5E } from "./scripts/dnd5e.js";
-import { init as INIT_DRAGONBANE } from "./scripts/dragonbane.js";
-import { init as INIT_DUNGEONWORLD } from "./scripts/dungeonworld.js";
-import { init as INIT_FORBIDDEN_LANDS } from "./scripts/forbidden-lands.js";
-import { init as INIT_INVESTIGATOR } from "./scripts/investigator.js";
-import { init as INIT_MAUSSRITTER } from "./scripts/mausritter.js";
-import { init as INIT_MOUSEGUARD } from "./scripts/mouseguard.js";
-import { init as INIT_PBTA } from "./scripts/pbta.js";
-import { init as INIT_SWADE } from "./scripts/swade.js";
-import { init as INIT_YZECORIOLIS } from "./scripts/yzecoriolis.js";
+const scripts = import.meta.glob("./systems/*.js");
+import { init as INIT_DND5E_ALT } from "./misc/dnd5e-alt.js";
 
 Hooks.once("init", async () => {
 	const system = game.system.id.toLowerCase();
@@ -81,28 +68,16 @@ Hooks.once("init", async () => {
 	];
 
 	/* Системные скрипты */
-	const systemHandlers = {
-		alientrpg: INIT_ALIENRPG,
-		"blades-in-the-dark": INIT_BLADES_IN_THE_DARK,
-		"city-of-mist": INIT_CITY_OF_MIST,
-		"cy-borg": INIT_CY_BORG,
-		deltagreen: INIT_DELTAGREEN,
-		dnd5e: INIT_DND5E,
-		dragonbane: INIT_DRAGONBANE,
-		dungeonworld: INIT_DUNGEONWORLD,
-		"forbidden-lands": INIT_FORBIDDEN_LANDS,
-		investigator: INIT_INVESTIGATOR,
-		mausritter: INIT_MAUSSRITTER,
-		mouseguard: INIT_MOUSEGUARD,
-		pbta: INIT_PBTA,
-		swade: INIT_SWADE,
-		yzecoriolis: INIT_YZECORIOLIS,
-	};
+	for (const path in scripts) {
+		scripts[path]().then((mod) => {
+			if (path.includes(`${system}.js`)) {
+				mod.init();
+			}
+		});
+	}
 
-	const systemHandler = systemHandlers[system];
-
-	if (systemHandler) {
-		systemHandler();
+	if (system === "dnd5e") {
+		INIT_DND5E_ALT();
 	}
 
 	/* Исправление для QUICK INSERT */

@@ -1,6 +1,5 @@
 # Русский перевод для Foundry VTT
 
-![](https://img.shields.io/badge/версия_модуля-v12.330.2-blue)
 ![](https://img.shields.io/badge/требуется_FVTT-v11-orange)
 ![](https://img.shields.io/badge/поддерживается_FVTT-v12-green)
 
@@ -69,38 +68,12 @@
 - Traveler / Cepheus Engine
 - Vaesen (Нечисть)
 - Vampire V5 (Вампиры: Маскарад)
-- Warhammer Fantasy Roleplay 4
+- [Warhammer Fantasy Roleplay 4](https://github.com/phenomen/fvtt-wfrp4e-ru)
 
 ### Модули
 
 Переведено более 100 модулей, список в можно посмотреть `public/i18n/modules`
 
-Оставляйте заявки на другие системы и модули в канале #перевод на нашем [Discord сервере](https://discord.gg/Z2CXFy35WF).
+### Сообщество
 
-## Разработка
-
-Проект использует [Bun](https://bun.sh/) для сборки.
-
-### Установка
-
-Устанавливает зависимости
-
-```bash
-bun install
-```
-
-### Сборка
-
-Компилирует код и копирует статичные файлы в папку `ru-ru`
-
-```bash
-bun compile
-```
-
-### Релиз
-
-Собирает модуль, минифицирует CSS и повышает версию
-
-```bash
-bun release
-```
+Присоединяйтесь к нашему [Discord серверу](https://discord.gg/Z2CXFy35WF), где можно задать вопросы по Foundry VTT, оставить заявки на перевод и обсудить НРИ.
