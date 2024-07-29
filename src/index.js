@@ -3,11 +3,12 @@ import { init as INIT_DND5E_ALT } from "./misc/dnd5e-alt.js";
 
 Hooks.once("init", async () => {
 	const system = game.system.id.toLowerCase();
+	const route = foundry.utils.getRoute("/");
 
 	/* Загрузка особых CSS стилей для систем */
 	const systemCSS = document.createElement("link");
 	systemCSS.rel = "stylesheet";
-	systemCSS.href = `/modules/ru-ru/styles/${system}.css`;
+	systemCSS.href = `${route}modules/ru-ru/styles/${system}.css`;
 	document.head.appendChild(systemCSS);
 
 	/* Пол прилагательных по умолчанию */

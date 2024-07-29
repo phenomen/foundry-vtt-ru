@@ -38,19 +38,20 @@ export function init() {
 /* Загрузка JSON с альтернативным переводом */
 async function loadAltTranslation(wrapped, lang) {
 	const translations = await wrapped(lang);
+	const route = foundry.utils.getRoute("/");
 
 	const files = [
-		"modules/ru-ru/i18n/systems/dnd5e-alt.json",
-		"modules/ru-ru/i18n/modules/always-hp-alt.json",
-		"modules/ru-ru/i18n/modules/arbron-hp-bar-alt.json",
-		"modules/ru-ru/i18n/modules/combat-utility-belt-alt.json",
-		"modules/ru-ru/i18n/modules/dae-alt.json",
-		"modules/ru-ru/i18n/modules/damage-log-alt.json",
-		"modules/ru-ru/i18n/modules/health-monitor-alt.json",
-		"modules/ru-ru/i18n/modules/midi-qol-alt.json",
-		"modules/ru-ru/i18n/modules/tidy5e-sheet-alt.json",
-		"modules/ru-ru/i18n/modules/token-action-hud-dnd5e-alt.json",
-		"modules/ru-ru/i18n/modules/ready-set-roll-5e-alt.json",
+		`${route}modules/ru-ru/i18n/systems/dnd5e-alt.json`,
+		`${route}modules/ru-ru/i18n/modules/always-hp-alt.json`,
+		`${route}modules/ru-ru/i18n/modules/arbron-hp-bar-alt.json`,
+		`${route}modules/ru-ru/i18n/modules/combat-utility-belt-alt.json`,
+		`${route}modules/ru-ru/i18n/modules/dae-alt.json`,
+		`${route}modules/ru-ru/i18n/modules/damage-log-alt.json`,
+		`${route}modules/ru-ru/i18n/modules/health-monitor-alt.json`,
+		`${route}modules/ru-ru/i18n/modules/midi-qol-alt.json`,
+		`${route}modules/ru-ru/i18n/modules/tidy5e-sheet-alt.json`,
+		`${route}modules/ru-ru/i18n/modules/token-action-hud-dnd5e-alt.json`,
+		`${route}modules/ru-ru/i18n/modules/ready-set-roll-5e-alt.json`,
 	];
 
 	const promises = files.map((file) => this._loadTranslationFile(file));
