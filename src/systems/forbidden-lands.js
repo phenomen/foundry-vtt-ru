@@ -1,6 +1,6 @@
 export function init() {
-	Hooks.on("ready", async () => {
-		await game.settings.set(
+	Hooks.on("ready", () => {
+		game.settings.set(
 			"forbidden-lands",
 			"datasetDir",
 			"modules/ru-ru/compendium/fbl/dataset/dataset-ru.json",

@@ -1,5 +1,5 @@
 export function init() {
-	async function sortSkillsAlpha() {
+	function sortSkillsAlpha() {
 		const lists = document.getElementsByClassName("grid grid-3col");
 		for (const list of lists) {
 			const competences = list.childNodes;
@@ -16,7 +16,7 @@ export function init() {
 		}
 	}
 
-	Hooks.on("renderActorSheet", async () => {
+	Hooks.on("renderActorSheet", () => {
 		sortSkillsAlpha();
 	});
 }

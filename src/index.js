@@ -1,7 +1,7 @@
 const scripts = import.meta.glob("./systems/*.js");
 import { init as INIT_DND5E_ALT } from "./misc/dnd5e-alt.js";
 
-Hooks.once("init", async () => {
+Hooks.once("init", () => {
 	const system = game.system.id.toLowerCase();
 	const route = foundry.utils.getRoute("/");
 
@@ -83,8 +83,8 @@ Hooks.once("init", async () => {
 
 	/* Исправление для QUICK INSERT */
 	if (game.modules.get("quick-insert")?.active) {
-		Hooks.on("ready", async () => {
-			await game.settings.set("quick-insert", "embeddedIndexing", true);
+		Hooks.on("ready", () => {
+			game.settings.set("quick-insert", "embeddedIndexing", true);
 		});
 	}
 });

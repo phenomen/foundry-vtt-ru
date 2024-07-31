@@ -1,0 +1,405 @@
+{
+	"TYPES": {
+		"Actor": {
+			"deployable": "Развёртываемое",
+			"mech": "Мех",
+			"npc": "ПВ",
+			"pilot": "Пилот"
+		},
+		"Item": {
+			"bond": "Узы",
+			"core_bonus": "Бонус ядра",
+			"frame": "Корпус",
+			"license": "Лицензия",
+			"mech_system": "Система меха",
+			"mech_weapon": "Оружие меха",
+			"npc_class": "Класс ПВ",
+			"npc_feature": "Особенность ПВ",
+			"npc_template": "Шаблон ПВ",
+			"organization": "Организация",
+			"pilot_armor": "Броня пилота",
+			"pilot_gear": "Снаряжение пилота",
+			"pilot_weapon": "Оружие пилота",
+			"reserve": "Резерв",
+			"skill": "Навык",
+			"status": "Статус/состояние",
+			"talent": "Талант",
+			"weapon_mod": "Модификация оружия"
+		}
+	},
+	"lancer": {
+		"placeholder": {
+			"name": "Название"
+		},
+		"deployable-sheet": {
+			"tabs": {
+				"status": "<СТАТУС>",
+				"config": "<НАСТРОЙКА>"
+			},
+			"deployer": {
+				"label": "РАЗВЕРНУВШИЙ"
+			},
+			"stats": {
+				"label": "ПОКАЗАТЕЛИ"
+			}
+		},
+		"mech-sheet": {
+			"tabs": {
+				"stats": "<ПОКАЗАТЕЛИ>",
+				"loadout": "<СНАРЯЖЕНИЕ>",
+				"talents": "<ТАЛАНТЫ>",
+				"effects": "<ЭФФЕКТЫ>"
+			},
+			"core": {
+				"label": "ЯДРО"
+			},
+			"actions": {
+				"label": "ДЕЙСТВИЯ"
+			},
+			"macros": {
+				"label": "МАКРОСЫ"
+			},
+			"system": {
+				"label": "СНАРЯЖЕНИЕ",
+				"sp-used": "ИСП. ПС"
+			}
+		},
+		"npc-sheet": {
+			"header": {
+				"class": "КЛАСС:"
+			},
+			"class": {
+				"label": "КЛАСС",
+				"none": "НЕТ КЛАССА"
+			},
+			"templates": {
+				"label": "ШАБЛОНЫ"
+			},
+			"features": {
+				"label": "ОСОБЕННОСТИ"
+			}
+		},
+		"pilot-sheet": {
+			"header": {
+				"ll": "УРОВЕНЬ ЛИЦЕНЗИИ:",
+				"cs": "ПОЗЫВНОЙ:",
+				"name": "ИМЯ:",
+				"bg": "КВАЛИФИКАЦИЯ:"
+			},
+			"tabs": {
+				"cloud": "<СИНХРОНИЗАЦИЯ>",
+				"dossier": "<ДОСЬЕ>",
+				"narrative": "<ПОВЕСТВОВАНИЕ>",
+				"tactical": "<ТАКТИКА>",
+				"loadout": "<СНАРЯЖЕНИЕ>",
+				"mech": "<АКТИВНЫЙ МЕХ>"
+			},
+			"cloud-header": {
+				"label": "OMNINET UPLINK ID",
+				"vaultID": "Загрузка из аккаунта Comp/Con",
+				"raw-placeholder": "или введите код вручную"
+			},
+			"cloud-download": {
+				"label": "СКАЧАТЬ",
+				"lastSync": "Синхронизировано: {timestamp}"
+			},
+			"cloud-upload": {
+				"label": "ЗАГРУЗИТЬ",
+				"wip": "ФУНКЦИЯ В РАЗРАБОТКЕ"
+			},
+			"json-import": {
+				"label": "ИМПОРТ"
+			},
+			"dossier": {
+				"cs": "ПОЗЫВНОЙ",
+				"name": "ИМЯ"
+			},
+			"narrative": {
+				"bond": "УЗЫ С {bondName}",
+				"burdens": "БРЕМЯ",
+				"clocks": "ТАЙМЕРЫ"
+			},
+			"tactical": {
+				"armor": "БРОНЯ",
+				"weapons": "ОРУЖИЕ",
+				"gear": "СНАРЯЖЕНИЕ",
+				"reserves": "РЕЗЕРВЫ",
+				"licenses": "ЛИЦЕНЗИИ",
+				"cores": "БОНУСЫ ЯДРА"
+			},
+			"abilities": {
+				"skills": "ИНИЦИАТОРЫ НАВЫКОВ",
+				"talents": "ТАЛАНТЫ"
+			}
+		},
+		"chat-card": {
+			"title": {
+				"attack": "// АТАКА //",
+				"damage": "// УРОН //",
+				"crit-damage": "// КРИТ УРОН //",
+				"self-heat": "// САМОНАГРЕВ //",
+				"defense-hit": "// ПОПАДАНИЕ ПО {defense}",
+				"e-defense-hit": "// ПОПАДАНИЕ ПО Э-ЗАЩ",
+				"effect": "// ЭФФЕКТ //",
+				"on-attack": "// ПРИ АТАКЕ //",
+				"on-hit": "// ПРИ ПОПАДАНИИ //",
+				"on-crit": "// ПРИ КРИТЕ //",
+				"charge-roll": "// ЗАРЯДКА //",
+				"recharged": "// ПЕРЕЗАРЯЖЕНО //",
+				"structure": "// СТРУКТУРНЫЙ УРОН //",
+				"overheating": "// ПЕРЕГРЕВ //",
+				"cascade": "// РАСПАД //",
+				"check": "// ПРОВЕРКА :: {check} //",
+				"system": "// СИСТЕМА :: {title} //",
+				"mod": "// МОД :: {title} //",
+				"trait": "// ЧЕРТА :: {title} //",
+				"tech": "// ТЕХНИКА :: {title} //",
+				"reaction": "// РЕАКЦИЯ :: {title} //"
+			},
+			"label": {
+				"trigger": "ИНИЦИАТОР",
+				"effect": "ЭФФЕКТ"
+			},
+			"attack": {
+				"crit": "{total} - КРИТ",
+				"hit": "{total} - ПОПАДАНИЕ",
+				"miss": "{total} - ПРОМАХ"
+			},
+			"exclamation": {
+				"overkill": "СВЕРХУНИЧТОЖЕНИЕ!"
+			},
+			"overcharge": {
+				"charged": "{target} + :: ЗАРЯЖЕНО",
+				"uncharged": "{target} + :: РАЗРЯЖЕНО"
+			},
+			"remaining": "{total} / {max} ОСТАЛОСЬ"
+		},
+		"uiTheme": {
+			"name": "Цвет интерфейса",
+			"hint": "Цветовая схема интерфейса.",
+			"gms": "Красная // GMS",
+			"gmsDark": "Тёмная // GMS",
+			"msmc": "Бирюзовая // MSMC",
+			"horus": "Зелёная // HORUS",
+			"ha": "Пурпурная // Harrison Armory",
+			"ssc": "Жёлтая // SSC",
+			"ipsn": "Синяя // IPS-N",
+			"gal": "Оранжевая // GALSIM"
+		},
+		"statusIconsConfig": {
+			"menu-name": "Иконки статусов",
+			"menu-label": "Настройка иконок статусов",
+			"menu-hint": "Configure the status icons that appear on the token HUD",
+			"defaultConditionsStatus": "Default Conditions & Status",
+			"defaultConditionsStatus-desc": "Enable the default icon set for conditions & status",
+			"cancerConditionsStatus": "Cancermantis' Conditions & Status",
+			"cancerConditionsStatus-desc": "Enable Cancermantis' icon set for conditions & status",
+			"cancerNPCTemplates": "Cancermantis' NPC Templates",
+			"cancerNPCTemplates-desc": "Enable Cancermantis' icon set for NPC templates",
+			"hayleyConditionsStatus": "Hayley's Condition & Status",
+			"hayleyConditionsStatus-desc": "Enable Hayley's icon set for conditions & status",
+			"hayleyPC": "Hayley's PC Systems",
+			"hayleyPC-desc": "Enable Hayley's icon set for PC system effects",
+			"hayleyNPC": "Hayley's NPC Systems",
+			"hayleyNPC-desc": "Enable Hayley's icon set for NPC system effects",
+			"hayleyUtility": "Hayley's Utility",
+			"hayleyUtility-desc": "Enable Hayley's icon set for utility indicators",
+			"tommyConditionsStatus": "Tommy's Condition & Status",
+			"tommyConditionsStatus-desc": "Enable Tommy's icon set for conditions & status"
+		},
+		"statusIconsNames": {
+			"abjure": "Abjure",
+			"aceso": "Aceso",
+			"blind": "Blind",
+			"bolster": "Bolster",
+			"burn": "Burn",
+			"camus_razor": "Camus' Razor",
+			"chain": "Chain",
+			"chains_of_prometheus": "Chains of Prometheus",
+			"clamp_bomb": "Clamp Bomb",
+			"commander": "Commander",
+			"dangerzone": "Danger Zone",
+			"dimensional_shackles": "Dimensional Shackles",
+			"dispersal_shield_1": "Dispersal Shield 1",
+			"dispersal_shield_2": "Dispersal Shield 2",
+			"dispersal_shield_3": "Dispersal Shield 3",
+			"dominions_breadth": "Dominion's Breadth",
+			"downandout": "Down and Out",
+			"duat_gate": "Duat Gate",
+			"echo_edge": "Echo Edge",
+			"elite": "Elite",
+			"engaged": "Engaged",
+			"excommunicate": "Excommunicate",
+			"exotic": "Exotic",
+			"exposed": "Exposed",
+			"fade_cloak": "Fade Cloak",
+			"flaw_minus": "FLAW_minus",
+			"flaw_plus": "FLAW_plus",
+			"flying": "Flying",
+			"focus_down": "Focus Down",
+			"follower_count": "Follower Count",
+			"grappled": "Grappled",
+			"gravity": "Gravity",
+			"grind_maniple": "Grind Maniple",
+			"grunt": "Grunt",
+			"haste": "Haste",
+			"hidden": "Hidden",
+			"hiddeninvis": "Hidden and Invisible",
+			"hunter_lock": "Hunter Lock",
+			"hyperdense_armor": "Hyperdense Armor",
+			"illusionary_subroutines": "Illusionary Subroutines",
+			"immobilized": "Immobilized",
+			"impaired": "Impaired",
+			"imperial_eye": "Imperial Eye",
+			"intangible": "Intangible",
+			"investiture": "Investiture",
+			"invisible": "Invisible",
+			"jammed": "Jammed",
+			"kraul_grapple": "Kraul Grapple",
+			"latch_drone": "Latch Drone",
+			"lockon": "Lock On",
+			"marked": "Marked",
+			"mercenary": "Mercenary",
+			"metahook": "Metahook",
+			"molten_puncture": "Molten Puncture",
+			"npc_tier_1": "Tier 1",
+			"npc_tier_2": "Tier 2",
+			"npc_tier_3": "Tier 3",
+			"overshield": "Overshield",
+			"pain_transference": "Pain Transference",
+			"petrify": "Petrify",
+			"pirate": "Pirate",
+			"prone": "Prone",
+			"reactor_meltdown": "Reactor Meltdown",
+			"retort_loop": "Retort Loop",
+			"rpv": "RPV",
+			"sanctuary": "Sanctuary",
+			"shahnameh": "Shahnameh",
+			"ship": "Ship",
+			"shredded": "Shredded",
+			"shutdown": "Shut Down",
+			"slow": "Slowed",
+			"spacer": "Spacer",
+			"spike": "Spike",
+			"stasis": "Stasis",
+			"stunned": "Stunned",
+			"supercharger": "Supercharger",
+			"sympathetic_shield": "Sympathetic_shield",
+			"tachyon_shield": "Tachyon Shield",
+			"tear_down": "Tear Down",
+			"terrify": "Terrify",
+			"tiercust": "Custom Tier",
+			"tracking_bug": "Tracking Bug",
+			"trueblack": "Trueblack Aegis",
+			"ultra": "Ultra",
+			"unravel": "Unravel",
+			"vehicle": "Vehicle",
+			"veteran": "Veteran",
+			"viral_logic": "Viral Logic",
+			"walk_of_kings": "Walk of Kings",
+			"warp_sensors": "Warp Sensors"
+		},
+		"automation": {
+			"menu-name": "Automation",
+			"menu-label": "System Automation Settings",
+			"menu-hint": "Set up what system automation options are enabled, or turn them all off",
+			"master-switch": "Enabled",
+			"master-switch-desc": "Turn this off to do everything manually",
+			"attacks": "Attack roll evaluation",
+			"attacks-desc": "Toggle for whether or not you want the system to auto-calculate hits and other attack related automation.",
+			"damage": "Damage application",
+			"damage-desc": "Toggle for whether or not you want the system to apply rolled damage to targets.",
+			"structure": "Structure/Stress",
+			"structure-desc": "Automatically prompt for a structure or stress roll when a mech reaches 0 hp or exceeds its heat cap.",
+			"overcharge_heat": "Apply Overcharge Heat",
+			"overcharge_heat-desc": "Automatically apply heat when rolling overcharge",
+			"attack_self_heat": "Self Heat from Attacks",
+			"attack_self_heat-desc": "When a weapon has the Overkill or Heat (self) tags, automatically apply any heat.",
+			"remove_templates": "Remove Templates Each Turn",
+			"remove_templates-desc": "When the turn changes, should measured templates from attacks be cleared?",
+			"limited_loading": "Manage Limited/Loading",
+			"limited_loading-desc": "When items are used, should their limited and loading status be automatically managed and tracked?",
+			"npc_recharge": "NPC Recharge",
+			"npc_recharge-desc": "Automatically roll to recharge NPC systems at the start of their turn.",
+			"token_size": "Manage Token Sizes",
+			"token_size-desc": "Automatically force tokens sizes to match the associated actor's size stat."
+		},
+		"actionTracker": {
+			"menu-name": "Action Tracker",
+			"menu-label": "Action Tracker Settings",
+			"menu-hint": "Configure options related to action tracker HUD and automations.",
+			"showHotbar": "Show Hotbar",
+			"showHotbar-desc": "Toggles the display of the floating hotbar during combat.",
+			"allowPlayers": "Allow Players",
+			"allowPlayers-desc": "Allows players to modify their own actions.",
+			"printMessages": "Print Messages",
+			"printMessages-desc": "Prints chat messages for start and end of a token's turn."
+		},
+		"initiative": {
+			"sorttracker": "Sort the tracker",
+			"sorttracker-desc": "Moves the unit currently taking their turn to the top of the tracker and moves units that have taken their turn to the end of the tracker.",
+			"appearancesettingslabel": "Appearance Settings",
+			"appearancesettingsbutton": "Appearance",
+			"appearancesettings-desc": "Configure the colors and icon used in the tracker"
+		},
+		"squaregriddiagonals": {
+			"name": "Square Grid Diagonal Movement",
+			"hint": "How distances will be calculated when moving diagonally on a square grid.",
+			"111": "1-1-1: Diagonal moves cost 1 (default)",
+			"121": "1-2-1: Diagonal moves alternate cost from 1 to 2",
+			"222": "2-2-2: Manhattan distance. Diagonals cost 2",
+			"euc": "Euclidean: Euclidian distance rounded"
+		},
+		"effect": {
+			"categories": {
+				"passive": "Passive",
+				"passthrough": "Passthrough",
+				"disabled": "Disabled",
+				"inherited": "Inherited"
+			}
+		},
+		"compendium": {
+			"core_macros": "LANCER Macros",
+			"lancer_info": "LANCER Info",
+			"deployable": "Deployables",
+			"mech-items": "Mech Items",
+			"npc-actors": "Premade NPCs",
+			"npc-items": "NPC Items",
+			"pilot-items": "Pilot Items",
+			"player-actors": "Premade Player Actors",
+			"status-items": "Status/Condition"
+		},
+		"tokenConfig": {
+			"manual_token_size": {
+				"label": "Manual Token Sizing",
+				"hint": "Bypass system automation for determining token size"
+			}
+		}
+	},
+	"LANCERINITIATIVE": {
+		"IconSettingsMenu": "Icon Settings",
+		"Icon": "Action Icon",
+		"IconDesc": "CSS classes to define the activation icon.",
+		"IconSize": "Icon Size",
+		"IconPreview": "Icon Preview",
+		"PCColor": "Player Color",
+		"PCColorDesc": "Default: #44abe0",
+		"FriendlyColor": "Friendly Color",
+		"FriendlyColorDesc": "Default: #44abe0",
+		"NeutralColor": "Neutral Color",
+		"NeutralColorDesc": "Default: #146464",
+		"EnemyColor": "Enemy Color",
+		"EnemyColorDesc": "Default: #d98f30",
+		"DoneColor": "Inactive Color",
+		"DoneColorDesc": "Default: #444444",
+		"ActivatedLast": "Activated Units Last",
+		"ActivatedLastDesc": "Moves units that have taken their turn to the end of the tracker.",
+		"SortTracker": "Sort the Tracker",
+		"SortTrackerDesc": "Moves the unit currently taking their turn to the top of the tracker and moves units that have taken their turn to the end of the tracker.",
+		"EnableInitiative": "Enable Initiative Rolling",
+		"EnableInitiativeDesc": "Adds a button to owned combatants for rolling initiative",
+		"AddActivation": "Add Activation",
+		"RemoveActivation": "Remove Activation",
+		"UndoActivation": "Undo Activation"
+	}
+}
