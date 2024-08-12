@@ -113,8 +113,8 @@ export function init() {
 }
 
 /* Обновление базы AA */
-function updateAA() {
-	const translatedSettings = foundry.utils.fetchJsonWithTimeout(
+async function updateAA() {
+	const translatedSettings = await foundry.utils.fetchJsonWithTimeout(
 		"/modules/ru-ru/i18n/modules/aa-autorec.json",
 	);
 

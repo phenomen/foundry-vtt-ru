@@ -197,7 +197,7 @@
 	"MonksActiveTiles.ctrl.loop": "Повтор",
 	"MonksActiveTiles.ctrl.audiotype": "Тип звука",
 	"MonksActiveTiles.ctrl.activate": "Активация",
-	"MonksActiveTiles.ctrl.usepermission": "Проверка разрешения",
+	"MonksActiveTiles.ctrl.usepermission": "Права",
 	"MonksActiveTiles.ctrl.distance": "Расстояние",
 	"MonksActiveTiles.ctrl.name": "Название",
 	"MonksActiveTiles.ctrl.chatbubble": "Облако чата",
@@ -322,6 +322,7 @@
 	"MonksActiveTiles.mode.create": "Создание токена",
 	"MonksActiveTiles.mode.door": "Дверной триггер",
 	"MonksActiveTiles.mode.darkness": "Изменение освещения",
+	"MonksActiveTiles.mode.darknesschange": "Анимация света",
 	"MonksActiveTiles.mode.time": "Изменение времени",
 
 	"MonksActiveTiles.restrict.all": "Разрешить все токены",
@@ -459,6 +460,12 @@
 	"MonksActiveTiles.resettype.everything": "Все",
 	"MonksActiveTiles.resettype.token": "Токен",
 
+	"MonksActiveTiles.permission.check": "Проверка прав",
+	"MonksActiveTiles.permission.ignore": "Игнорирование прав",
+	"MonksActiveTiles.permission.limited": "Назначение ограниченных прав",
+	"MonksActiveTiles.permission.observer": "Назначение прав наблюдателя",
+	"MonksActiveTiles.permission.owner": "Назначение прав владельца",
+
 	"MonksActiveTiles.msg.prevent-teleport": "Телепортация за пределы карты была предотвращена",
 	"MonksActiveTiles.msg.prevent-movement": "Перемещение за пределы карты было предотвращено",
 	"MonksActiveTiles.msg.invalid-entity": "Неверный тип объекта",
@@ -552,6 +559,10 @@
 					"uuid": {
 						"label": "Тайл",
 						"hint": "Тайл для триггера"
+					},
+					"usetiletrigger": {
+						"label": "Триггер использует событие",
+						"hint": "Триггер будет срабатывать, используя событие области."
 					}
 				}
 			}

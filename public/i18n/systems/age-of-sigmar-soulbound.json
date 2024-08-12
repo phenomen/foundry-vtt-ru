@@ -161,7 +161,7 @@
 	"CHAT.APPLY_FOCUS": "Применить фокус",
 	"CHAT.RESET_FOCUS": "Сбросить фокус",
 	"CHAT.CLEAR_FOCUS": "Очистить фокус",
-	"CHAT.REROLL": "Повторный бросок (-1 Пламя душ)",
+	"CHAT.REROLL": "Повторная проверка (-1 Пламя душ)",
 	"CHAT.MAXIMIZE": "Максимум успехов  (-1 Пламя душ)",
 	"CHAT.APPLY_DAMAGE": "Нанести урон",
 	"CHAT.APPLY_HEALING": "Исцелить",
@@ -191,6 +191,7 @@
 	"DIALOG.DN": "СЛ",
 	"DIALOG.COMMON_ROLL": "Обычная проверка",
 	"DIALOG.SPELL_ROLL": "Проверка заклинания",
+	"DIALOG.MIRACLE_ROLL": "Проверка чуда",
 	"DIALOG.COMBAT_ROLL": "Боевая проверка",
 	"DIALOG.OPPONENT": "Противник",
 	"DIALOG.CUSTOM_ROLL": "Особая проверка",
@@ -591,6 +592,9 @@
 	"ZONE.MINOR": "Слабая",
 	"ZONE.MAJOR": "Сильная",
 	"ZONE.DEADLY": "Смертельная",
+	"ZONE.MINOR_HAZARD": "Малая опасность",
+	"ZONE.MAJOR_HAZARD": "Крупная опасность",
+	"ZONE.DEADLY_HAZARD": "Смертельная опасность",
 	"ZONE.LIGHTLY_OBSCURED": "Слабое заслонение",
 	"ZONE.HEAVILY_OBSCURED": "Сильное заслонение",
 
@@ -598,12 +602,6 @@
 	"EFFECT.HideIf": "Скрытие при",
 	"EFFECT.ActivateHint": "Функция должна возвращать true для автоматической активации. Оставьте пустым для ручного выбора.",
 	"EFFECT.HideHint": "Функция должна возвращать true, чтобы предотвратить отображение скрипта эффекта в окне.",
-
-	"QUICKEFFECT.CHANGE": "Изменение",
-	"QUICKEFFECT.NAME": "Название",
-	"QUICKEFFECT.MODIFIER": "Модификатор",
-	"QUICKEFFECT.NEW": "Новый эффект",
-	"QUICKEFFECT.TITLE": "Быстрый эффект",
 
 	"INITIALIZER.Complete": "Инициализация завершена",
 	"INITIALIZER.Skipped": "Инициализация пропущена",
@@ -638,5 +636,19 @@
 	"BugReport.ErrorForm": "Пожалуйста заполните форму",
 	"BugReport.ErrorName1": "Пожалуйста введите ваш тэг Discord или Email в поле имени.",
 	"BugReport.ErrorName2": "Требуется тэг Discord или Email в поле имени.",
-	"BUTTON.PostBug": "Сообщить об ошибке в Souldbound"
+	"BUTTON.PostBug": "Сообщить об ошибке в Souldbound",
+
+	"WH": {
+		"Trigger": {
+			"EquipToggle": "Надето",
+			"TakeDamageMod": "Получить мод. урона",
+			"ApplyDamageMod": "Применить мод. урона",
+			"PreRollTest": "Предпроверка",
+			"PreRollCombatTest": "Предпроверка боя",
+			"PreRollSpellTest": "Предпроверка скорости",
+			"RollTest": "Проверка",
+			"RollCombatTest": "Проверка боя",
+			"RollSpellTest": "Проверка скорости"
+		}
+	}
 }
