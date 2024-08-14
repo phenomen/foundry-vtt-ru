@@ -16,7 +16,7 @@ export function init() {
 		},
 	});
 
-	registerBabele();
+	setupBabele("swade");
 	registerConverters();
 
 	Hooks.on("ready", () => {
@@ -28,30 +28,8 @@ export function init() {
 	});
 }
 
-function registerBabele() {
-	if (
-		game.modules.get("swade-core-rules")?.active &&
-		game.modules.get("swpf-core-rules")?.active
-	) {
-		error =
-			"Для <b>Savage Pathfinder</b> не требуется модуль <b>SWADE Core Rules</b>. Отключите его, иначе перевод не будет работать.";
-	} else if (
-		!game.modules.get("swade-core-rules")?.active &&
-		game.modules.get("deadlands-core-rules")?.active
-	) {
-		error =
-			"Для <b>Deadlands</b> требуется модуль <b>SWADE Core Rules</b>. Активируйте его, иначе перевод не будет работать.";
-	} else if (game.modules.get("swpf-core-rules")?.active) {
-		setupBabele("swade/swpf");
-	} else if (game.modules.get("swade-core-rules")?.active) {
-		setupBabele("swade/core");
-	} else {
-		setupBabele("swade/basic");
-	}
-}
-
 function registerConverters() {
-	if (game.babele) return;
+	if (!game.babele) return;
 
 	game.babele.registerConverters({
 		convertCategory: (category) => {
@@ -62,15 +40,31 @@ function registerConverters() {
 		convertRequirements: (requirements) => {
 			if (!requirements) return;
 
+			let packEdges = "swade.edges";
+			let packHindrances = "swade.hindrances";
+			let packSkills = "swade.skills";
+
+			if (game.modules.get("swade-core-rules")?.active) {
+				packEdges = "swade-core-rules.swade-edges";
+				packHindrances = "swade-core-rules.swade-hindrances";
+				packSkills = "swade-core-rules.swade-skills";
+			}
+
+			if (game.modules.get("swpf-core-rules")?.active) {
+				packEdges = "swpf-core-rules.swpf-edges";
+				packHindrances = "swpf-core-rules.swpf-hindrances";
+				packSkills = "swpf-core-rules.swpf-skills";
+			}
+
 			const { packs } = game.babele;
 			const translatedEdges = packs.find(
-				(pack) => pack.metadata.id === "swade.edges",
+				(pack) => pack.metadata.id === packEdges,
 			).translations;
 			const translatedHindrances = packs.find(
-				(pack) => pack.metadata.id === "swade.hindrances",
+				(pack) => pack.metadata.id === packHindrances,
 			).translations;
 			const translatedSkills = packs.find(
-				(pack) => pack.metadata.id === "swade.skills",
+				(pack) => pack.metadata.id === packSkills,
 			).translations;
 
 			return requirements.map((data) => {
