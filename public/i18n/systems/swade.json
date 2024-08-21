@@ -7,6 +7,7 @@
 		"CommunityVicSheet": "Бланк транспорта",
 		"CommunityItemSheet": "Бланк предмета",
 		"ItemSheet": "Бланк предмета Savage Worlds",
+		"GroupSheet": "Бланк группы Savage Worlds",
 		"HeadquartersSheet": "Бланк штаб-квартиры Savage Worlds",
 		"Expand": "Раскрыть",
 		"OfficialSheet": "Официальный бланк Savage Worlds",
@@ -23,8 +24,13 @@
 		"Running": "Бег",
 		"RunningDie": "Кость бега",
 		"RunningMod": "Мод. бега",
+		"RunningHint": {
+			"Header": "<strong>Общая дистанция бега.</strong>",
+			"Reminder": "<p>При этом все остальные действия в этот ход получат штраф -2.</p>"
+		},
 		"RollRun": "[Нажмите] для броска кости бега",
 		"Adv": "Повышения",
+		"Advance": "Повышение",
 		"Rank": "Ранг",
 		"Inv": "Инвентарь",
 		"Summary": "Параметры",
@@ -87,6 +93,7 @@
 		"BenniesGMAddMessage": "взял дополнительную фишку!",
 		"BenniesSpendMessage": "потратил фишку!",
 		"BenniesMax": "Сброс фишек",
+		"BenniesMaxNum": "Максимум фишек",
 		"Elan": "Упорство",
 		"EditSkill": "Изменить навык",
 		"EdEdge": "Изменить черту",
@@ -169,6 +176,7 @@
 		"DmgModUni": "Мод. урона",
 		"SkillModUni": "Мод. параметра",
 		"ShotsUsed": "Выстрелено",
+		"ShotsCurrent": "Текущие выстрелы",
 		"NaturalArmor": "Естественная броня",
 		"HitLocations": "Зоны попадания",
 		"Head": "Голова",
@@ -190,8 +198,11 @@
 		"MajHind": "Крупный изъян",
 		"Major": "(Крупный)",
 		"Minor": "(Мелкий)",
+		"HindMajor": "Крупный",
+		"HindMinor": "Мелкий",
 		"Edges": "Черты",
 		"ArcBack": "Мистический дар",
+		"Value": "Значение",
 		"Req": "Требования",
 		"Requirements": {
 			"Other": "Другое",
@@ -228,6 +239,7 @@
 		"PPCost": "Стоимость активации",
 		"CurPP": "Текущие пункты силы",
 		"MaxPP": "Макс. пункты силы",
+		"MaxLabel": "Максимум",
 		"Dur": "Длительность",
 		"Trap": "Проявление",
 		"Wound": "Ранение",
@@ -248,6 +260,7 @@
 		"Status": "Состояние",
 		"Handling": "Вождение",
 		"Topspeed": "Макс. скорость",
+		"SpeedUnit": "Единицы",
 		"OutOfControl": "Потеря управления",
 		"Wrecked": "Сломан",
 		"Item": "Предмет",
@@ -306,6 +319,7 @@
 		"GM": "Ведущий",
 		"Vehicles": "Транспорт",
 		"AddStats": "Доп. показатели",
+		"Stats": "Показатели",
 		"Actors": "Актёры",
 		"Items": "Предметы",
 		"Max": "Макс",
@@ -363,6 +377,7 @@
 		"SpecialAbilities": "Особенности",
 		"AncestralAbilities": "Особенности народа",
 		"ArchetypeAbilities": "Особенности архетипа",
+		"BuildCost": "Стоимость постройки",
 		"About": "Данные",
 		"EdgesHindrances": "Черты и изъяны",
 		"GrantsPowers": "Предоставляет силу",
@@ -549,6 +564,7 @@
 			"ReportAnIssue": "Сообщить об ошибке"
 		},
 		"OpenOrigin": "Открыть источник",
+		"ActionsOverride": "Перезапись",
 		"EffectsTemporary": "Временные эффекты",
 		"EffectsPermanent": "Постоянные эффекты",
 		"Ranks": {
@@ -564,6 +580,7 @@
 			"Delete": "Удаление повышения",
 			"Planned": "Запланировано",
 			"Modes": {
+				"Label": "Режим",
 				"Legacy": "Оригинальный",
 				"Expanded": "Расширенный"
 			},
@@ -580,6 +597,8 @@
 		"Appearance": "Внешность",
 		"CharacterGoals": "Цели",
 		"Background": "Предыстория",
+		"ID": "ID",
+		"SortNum": "Сорт. число",
 		"ActiveEffects": {
 			"Add": "Доб. активный эффект",
 			"Source": "Источник",
@@ -648,6 +667,7 @@
 				"Name": "Автоматическая инициатива",
 				"Hint": "Автоматически вытягивать карту действия каждый раунд"
 			},
+			"Bumpmaps": "Рельефная текстура",
 			"Benny3DFront": {
 				"Name": "Передняя текстура",
 				"Hint": "Текстура на передней стороне 3D фишки"
@@ -729,6 +749,14 @@
 			"VehicleSkills": {
 				"Name": "Навыки управления",
 				"Hint": "Введите через запятую список навыков, которые будут считаться навыками управления."
+			},
+			"StaticGmBennies": {
+				"Name": "Постоянные фишки ведущего",
+				"Hint": "Постоянное число фишек, получаемых ведущим при восполнении, вместо значения в зависимости от числа игроков."
+			},
+			"GmBennies": {
+				"Name": "Фишки ведущего",
+				"Hint": "Сколько фишек ведущий получает при восполнении"
 			},
 			"BennyImageSheet": {
 				"Name": "Фишка",
@@ -860,6 +888,7 @@
 		},
 		"DestroyOnEmpty": "Уничтожать при израсходовании",
 		"Charges": "Осталось",
+		"ChargesMax": "Максимум зарядов",
 		"Consumable": {
 			"Use": "Использовать",
 			"Consumables": "Расходуемые",
@@ -945,7 +974,10 @@
 			"Type": "Тип",
 			"HasMaxValue": "Имеет макс. значение",
 			"Current": "Текущая {stat}",
+			"Value": "Значение",
 			"Max": "Макс. {stat}",
+			"MaxLabel": "Максимум",
+			"OptionLabel": "Вариант",
 			"KeyErr": "Ключ параметра {invalid} является некорректным и был изменен на {key}"
 		},
 		"MessageOnUse": {
@@ -955,9 +987,12 @@
 		"ItemGrants": {
 			"EmptyHint": "Этот предмет не предоставляет другие предметы",
 			"Header": "Предоставление предметов",
-			"When": "Предоставляет при"
+			"When": "Предоставляет при",
+			"Mutation": "Мутация"
 		},
 		"IgnFatigue": "Сопр. усталости",
+		"IgnFatigueWounds": "Игнор. ранений/усталости",
+		"FatigueWounds": "Ранения/усталость",
 		"BaseDamage": "Базовый урон",
 		"RefreshPP": "Восполнить пункты силы",
 		"Targets": "Цели:",
@@ -1180,8 +1215,8 @@
 					"Content": "This tab provides a large array of additional fields that customize a character's traits"
 				},
 				"Advances": {
-					"Title": "Advance Mode",
-					"Content": "Expanded advances (the default) bring enhanced data handling that specify the type of advance and automatically calculate your character's rank. Legacy advances are simply a large text box to write whatever you want with no data handling."
+					"Title": "Режим повышения",
+					"Content": "Расширенное повышение использует данные типа повышения и автоматически рассчитывает ранг персонажа. Старое повышение не использует данные и отображает окно свободного ввода текста."
 				},
 				"Unshake": {
 					"Title": "Unshake Modifier",
@@ -1299,7 +1334,7 @@
 				}
 			},
 			"ADVANCES": {
-				"Title": "Advances",
+				"Title": "Повышения",
 				"Description": "See how SWADE tracks character advances",
 				"Actor": "Advances Tour Demo Character",
 				"AccessAdvanceMode": {
@@ -1423,8 +1458,8 @@
 			"Unassigned": "Не назначен"
 		},
 		"Combat": {
-			"DealAll": "Deal All",
-			"DealNPC": "Deal NPCs",
+			"DealAll": "Вытянуть всем",
+			"DealNPC": "Вытянуть персонажам ведущего",
 			"StartSurpriseRound": "Начать внезапный раунд",
 			"AdvanceRoundTitle": "Следующий раунд",
 			"AdvanceRoundContent": "Изменить раунд на следующий?",
@@ -1439,19 +1474,61 @@
 		"FollowerCount": "{count} спутников",
 		"Benny": "Фишка",
 		"Free": "Свободно",
+		"DeleteFromParentWarningPermanent": "{name} will be permanently deleted from {parent} and cannot be recovered.",
+		"DeleteFromParentWarning": "{name} will be permanently deleted from {parent}.",
 		"SettingConfigurator": {
 			"WorldTables": "Таблицы мира",
 			"WorldCompendiums": "Библиотеки мира"
+		},
+		"Group": {
+			"Sheet": {
+				"Members": {
+					"Header": "Members",
+					"Hint": "To add members either drag & drop them onto the sheet or copy & paste their UUID. This also works with token actors in a scene.",
+					"Empty": "No members yet"
+				},
+				"Stash": {
+					"Header": "Stash",
+					"Empty": "No items present"
+				},
+				"Lock": {
+					"Label": "Toggle Sheet Lock",
+					"Hint": "When locked, no Actors can be added to or removed from the group"
+				}
+			}
+		},
+		"Supplies": {
+			"Label": "Supplies",
+			"Level": {
+				"Out": "Out",
+				"Low": "Low",
+				"High": "High",
+				"VeryHigh": "Very High"
+			},
+			"Ammo": {
+				"Label": "Ammunition"
+			},
+			"Fuel": {
+				"Label": "Fuel"
+			},
+			"Food": {
+				"Label": "Food"
+			},
+			"Supply": {
+				"Label": "Supply"
+			}
 		}
 	},
 	"TYPES": {
 		"Actor": {
 			"character": "Персонаж игрока",
 			"npc": "Персонаж ведущего",
-			"vehicle": "Транспорт"
+			"vehicle": "Транспорт",
+			"group": "Group"
 		},
 		"Item": {
 			"weapon": "Оружие",
+			"ancestry": "Ancestry",
 			"armor": "Броня",
 			"shield": "Щит",
 			"gear": "Снаряжение",
