@@ -1,12 +1,13 @@
 import { setupBabele } from "../shared.js";
 
 export function init() {
-	if (game.modules.get("masks-newgeneration-sheets")?.active) {
+	if (game.modules.get("masks-newgeneration-unofficial")?.active) {
 		setupBabele("pbta/masks");
-		overrideSheet();
+		//overrideSheet();
 	}
 }
 
+/*
 function overrideSheet() {
 	Hooks.once("pbtaSheetConfig", () => {
 		game.settings.set("pbta", "sheetConfigOverride", true);
@@ -277,3 +278,4 @@ function overrideSheet() {
 		};
 	});
 }
+*/

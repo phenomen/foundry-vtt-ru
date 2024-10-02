@@ -229,12 +229,12 @@
 .deadlands-core,
 .deadlands-sheet,
 .deadlands-wrapper {
-	--section-header-font: "Roboto Slab", serif;
+	--section-header-font: "Roboto Slab", var(--font-serif);
 	--default-font: var(--font-serif);
 }
 
 .deadlands-sheet input.charname {
-	font-family: "Roboto Slab", serif;
+	font-family: "Roboto Slab", var(--font-serif);
 }
 
 .swade-official.actor.deadlands-sheet {
@@ -249,7 +249,7 @@
 
 .deadlands-sheet {
 	&.tabs .item {
-		font-family: "Roboto Slab";
+		font-family: "Roboto Slab", var(--font-serif);
 		font-weight: bold;
 		font-size: 0.9em;
 	}
@@ -273,7 +273,7 @@
 
 	&.fatigue,
 	&.wounds {
-		font-family: "Roboto Slab";
+		font-family: "Roboto Slab", var(--font-serif);
 		font-weight: 700;
 
 		&input {

@@ -844,7 +844,8 @@
 		},
 		"Validation": {
 			"OnlyOneAncestry": "Вы можете принадлежать только к одному народу!",
-			"OnlyOneArchetype": "Вы можете иметь только один архетип!"
+			"OnlyOneArchetype": "Вы можете иметь только один архетип!",
+			"NoGroupCombatants": "Группы не могут быть участниками боя."
 		},
 		"DocumentLink": "Ссылка",
 		"DocumentTweaks": "Настройки",
@@ -1474,8 +1475,8 @@
 		"FollowerCount": "{count} спутников",
 		"Benny": "Фишка",
 		"Free": "Свободно",
-		"DeleteFromParentWarningPermanent": "{name} will be permanently deleted from {parent} and cannot be recovered.",
-		"DeleteFromParentWarning": "{name} will be permanently deleted from {parent}.",
+		"DeleteFromParentWarningPermanent": "{name} будет удалён из {parent} без возможности восстановления.",
+		"DeleteFromParentWarning": "{name} будет навсегда удалён из {parent}.",
 		"SettingConfigurator": {
 			"WorldTables": "Таблицы мира",
 			"WorldCompendiums": "Библиотеки мира"
@@ -1483,39 +1484,39 @@
 		"Group": {
 			"Sheet": {
 				"Members": {
-					"Header": "Members",
-					"Hint": "To add members either drag & drop them onto the sheet or copy & paste their UUID. This also works with token actors in a scene.",
-					"Empty": "No members yet"
+					"Header": "Участники",
+					"Hint": "Чтобы добавить участников, либо перетащите их на бланк, либо скопируйте и вставьте их UUID. Это также работает с токенами актёров на сцене.",
+					"Empty": "Нет участников"
 				},
 				"Stash": {
-					"Header": "Stash",
-					"Empty": "No items present"
+					"Header": "Хранилище",
+					"Empty": "Здесь пусто"
 				},
 				"Lock": {
-					"Label": "Toggle Sheet Lock",
-					"Hint": "When locked, no Actors can be added to or removed from the group"
+					"Label": "Режим редактирования",
+					"Hint": "В режиме блокировки, актёры не могут быть добавлены в группу или удалены из неё."
 				}
 			}
 		},
 		"Supplies": {
-			"Label": "Supplies",
+			"Label": "Запасы",
 			"Level": {
-				"Out": "Out",
-				"Low": "Low",
-				"High": "High",
-				"VeryHigh": "Very High"
+				"Out": "Отсутствуют",
+				"Low": "Мало",
+				"High": "Много",
+				"VeryHigh": "Избыток"
 			},
 			"Ammo": {
-				"Label": "Ammunition"
+				"Label": "Боеприпасы"
 			},
 			"Fuel": {
-				"Label": "Fuel"
+				"Label": "Топливо"
 			},
 			"Food": {
-				"Label": "Food"
+				"Label": "Пища"
 			},
 			"Supply": {
-				"Label": "Supply"
+				"Label": "Запас"
 			}
 		}
 	},
@@ -1524,11 +1525,11 @@
 			"character": "Персонаж игрока",
 			"npc": "Персонаж ведущего",
 			"vehicle": "Транспорт",
-			"group": "Group"
+			"group": "Группа"
 		},
 		"Item": {
 			"weapon": "Оружие",
-			"ancestry": "Ancestry",
+			"ancestry": "Народ",
 			"armor": "Броня",
 			"shield": "Щит",
 			"gear": "Снаряжение",
