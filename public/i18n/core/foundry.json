@@ -72,7 +72,7 @@
 	"Save": "Сохранение",
 	"Save Changes": "Сохранение изменений",
 	"Scale": "Масштаб",
-	"Scope": "Область применения",
+	"Scope": "Применение",
 	"Seconds": "Секунды",
 	"selected": "выбранные",
 	"SelectAll": "Выбор всех",
@@ -259,7 +259,8 @@
 			"ControlsMenu": "Управление приложением",
 			"ToggleControls": "Переключение управления",
 			"Close": "Закрыть окно"
-		}
+		},
+		"IMAGE_POPOUT.AltText": "Изображение: объект неизвестен."
 	},
 
 	"AUDIO": {
@@ -368,6 +369,7 @@
 
 	"CHAT.Chat": "Чат",
 	"CHAT.Clear": "Очистка чата",
+	"CHAT.EnterMessage": "Введите сообщение",
 	"CHAT.Export": "Экспорт чата",
 	"CHAT.FlushTitle": "Очистка чата",
 	"CHAT.FlushWarning": "Все сообщения чата будут удалены.",
@@ -408,8 +410,6 @@
 	"COMBAT.PanToCombatant": "Переместиться к бойцу",
 	"COMBAT.PingCombatant": "Маячок на бойце",
 	"COMBAT.WarnNonVisibleToken": "Этот боец вам не виден.",
-	"COMBAT.Resource": "Отслеживаемый ресурс",
-	"COMBAT.ResourceHint": "Выберите атрибут для отслеживания.",
 	"COMBAT.Round": "Раунд",
 	"COMBAT.Rounds": "Раунды",
 	"COMBAT.RoundPrev": "Предыдущий раунд",
@@ -420,8 +420,6 @@
 	"COMBAT.Settings": "Настройки трекера боя",
 	"COMBAT.SettingsSave": "Сохранение настроек",
 	"COMBAT.SidebarTitle": "Трекер боя",
-	"COMBAT.SkipDefeated": "Пропуск побеждённых",
-	"COMBAT.SkipDefeatedHint": "Автоматически пропускать побеждённых бойцов.",
 	"COMBAT.Sounds.Epic": "Эпик",
 	"COMBAT.Sounds.MC": "Комментатор боя",
 	"COMBAT.ToggleVis": "Переключение видимости",
@@ -443,6 +441,7 @@
 	"COMBAT.CombatantInitiative": "Значение инициативы",
 	"COMBAT.CombatantStatus": "Статус",
 	"COMBAT.CombatantUpdate": "Настройка бойца",
+	"COMBAT.CombatantUpdateNamed": "Обновление бойца: {name}",
 	"COMBAT.CombatantName": "Отображаемое имя",
 	"COMBAT.CombatantRemove": "Удаление бойца",
 	"COMBAT.CombatantClear": "Очистка инициативы",
@@ -450,6 +449,49 @@
 	"COMBAT.CombatantToken": "Связанный токен",
 	"COMBAT.CombatantScene": "Сцена боя",
 	"COMBAT.CombatantNotInScene": "Боец {name} отсутствует на текущей сцене",
+
+	"COMBAT.TURN_MARKERS": {
+		"ANIMATIONS": {
+			"SPIN": "Вращение",
+			"SPIN_PULSE": "Вращение с импульсом",
+			"PULSE": "Импульс"
+		}
+	},
+	"COMBAT.CONFIG": {
+		"SHEET": {
+			"TURN_MARKERS": "Метка хода токена"
+		},
+		"FIELDS": {
+			"core.combatTrackerConfig": {
+				"skipDefeated": {
+					"label": "Пропуск побеждённых",
+					"hint": "Автоматически пропускать побеждённых бойцов."
+				},
+				"resource": {
+					"label": "Отслеживаемый ресурс",
+					"hint": "Выберите параметр для отслеживания."
+				},
+				"turnMarker": {
+					"enabled": {
+						"label": "Включение меток",
+						"hint": "Метки хода будут включены по умолчанию для всех токенов."
+					},
+					"src": {
+						"label": "Файл",
+						"hint": "Изображение или видео для меток хода."
+					},
+					"animation": {
+						"label": "Анимация",
+						"hint": "Анимация для меток хода."
+					},
+					"disposition": {
+						"label": "Оттенок отношения",
+						"hint": "Оттенок меток хода в зависимости от отношения токена."
+					}
+				}
+			}
+		}
+	},
 
 	"COMPENDIUM.Name": "Название библиотеки",
 	"COMPENDIUM.Create": "Создание библиотеки",
@@ -660,7 +702,7 @@
 	"CONTROLS.KeyCopy": "Копирование элементов сцены",
 	"CONTROLS.KeyPaste": "Вставка элементов сцены",
 	"CONTROLS.KeyUndo": "Отмена операции на сцене",
-	"CONTROLS.KeyHotbar": "Активация ячейки быстрого действия",
+	"CONTROLS.KeyHotbar": "Активация ячейки панели действий",
 	"CONTROLS.RulerTitle": "Измерение линейкой",
 	"CONTROLS.RulerMeasure": "Измерение расстояния линейкой",
 	"CONTROLS.RulerWaypoint": "Размещение точки пути",
@@ -676,6 +718,7 @@
 	"CONTROLS.ObjectNoSnap": "Игнорирование сетки",
 	"CONTROLS.MouseWheel": "колёсико мыши",
 	"CONTROLS.DragDrop": "перетягивание и отпускание",
+	"CONTROLS.IgnoreWalls": "Игнорирование стен",
 	"CONTROLS.TokenHeader": "Управление токенами",
 	"CONTROLS.TokenPlaceHidden": "Размещение скрытого токена",
 	"CONTROLS.TokenTarget": "Выбор чужого токена целью",
@@ -724,7 +767,7 @@
 	"DICE.RollResolution": "Результат броска",
 	"DICE.SubmitRoll": "Отправить бросок",
 	"DICE.SubmitRollPl": "Отправить броски",
-	"DICE.WarnMissingData": "Атрибут {match} не был найден в данных броска.",
+	"DICE.WarnMissingData": "Параметр {match} не был найден в данных броска.",
 	"DICE.CONFIG": {
 		"Hint": "Настройте способ броска костей.",
 		"Label": "Настройка костей",
@@ -736,7 +779,7 @@
 		"Manual": "Ручной ввод"
 	},
 
-	"DOCUMENT.Create": "Новый {type}",
+	"DOCUMENT.Create": "Создание: {type}",
 	"DOCUMENT.Delete": "Удаление {type}",
 	"DOCUMENT.New": "{type}",
 	"DOCUMENT.Update": "Обновление {type}",
@@ -816,6 +859,16 @@
 	"DOCUMENT.Wall": "Стена",
 	"DOCUMENT.Walls": "Стены",
 	"DOCUMENT.TypePageFormat": "{type} ({page})",
+	"DOCUMENT.FIELDS": {
+		"width.label": "Ширина",
+		"height.label": "Высота",
+		"hidden.label": "Скрыто",
+		"elevation.label": "Высота",
+		"rotation.label": "Поворот",
+		"sort.label": "Сортировка",
+		"x.label": "X",
+		"y.label": "Y"
+	},
 
 	"DRAWING.ConfigDefaultTitle": "Настройки рисунка по умолчанию",
 	"DRAWING.SubmitDefault": "Настройки по умолчанию",
@@ -830,13 +883,10 @@
 	"DRAWING.NoteLines": "Настройка обрамляющих линий рисунка.",
 	"DRAWING.NoteFill": "Настройка внутреннего заполнения рисунка.",
 	"DRAWING.NoteText": "Настройка текстовых надписей рисунка.",
-	"DRAWING.Author": "Автор",
-	"DRAWING.Width": "Ширина",
-	"DRAWING.Height": "Высота",
 	"DRAWING.Rotation": "Поворот",
 	"DRAWING.ZIndex": "Z-порядок",
 	"DRAWING.LineWidth": "Ширина линий",
-	"DRAWING.StrokeColor": "Цвет линий",
+	"DRAWING.StrokeColor": "Цвет линии",
 	"DRAWING.LineOpacity": "Непрозрачность линий",
 	"DRAWING.SmoothingFactor": "Сглаживание",
 	"DRAWING.SmoothingFactorHint": "Сглаживание влияет на остроту углов при свободном рисовании.",
@@ -853,7 +903,7 @@
 	"DRAWING.TextColor": "Цвет текста",
 	"DRAWING.TextOpacity": "Непрозрачность текста",
 	"DRAWING.Role": "Роль рисунка",
-	"DRAWING.RoleHint": "Рисунок, представляющий \"Объект\", отображается на сцене и подвержен воздействию освещения и тумана войны. Рисунок, являющийся \"Информацией\", отображается в слое интерфейса и виден всем игрокам, если не скрыт.",
+	"DRAWING.RoleHint": "Рисунок, представляющий \"Объект\", отображается на сцене и подвержен воздействию освещения и тумана войны. Рисунок, являющийся \"Информацией\", отображается на слое интерфейса и виден всем игрокам, если не скрыт.",
 	"DRAWING.Object": "Объект",
 	"DRAWING.Information": "Информация",
 	"DRAWING.JointValidationError": "Рисунок должен содержать видимый текст, заливку или линию.",
@@ -882,7 +932,7 @@
 	"EFFECT.DurationTurns": "Продолжительность (ходы)",
 	"EFFECT.Combat": "Бой",
 	"EFFECT.StartTurns": "Начальный ход эффекта",
-	"EFFECT.ChangeKey": "Ключ атрибута",
+	"EFFECT.ChangeKey": "Ключ параметра",
 	"EFFECT.ChangeMode": "Режим изменения",
 	"EFFECT.ChangeValue": "Значение эффекта",
 	"EFFECT.Description": "Описание эффекта",
@@ -1108,6 +1158,19 @@
 
 	"ITEM.ViewArt": "Просмотр изображения",
 
+	"HOTBAR": {
+		"LABEL": "Панель действий",
+		"MUTE": "Выключение звука",
+		"UNMUTE": "Включение звука",
+		"MENU": "Главное меню",
+		"LOCK": "Блокировка панели действий",
+		"UNLOCK": "Разблокировка панели действий",
+		"PAGE_NEXT": "Следующая панель",
+		"PAGE_PREV": "Предыдущая панель",
+		"CLEAR": "Очистка панели действий",
+		"CLEAR_CONFIRM": "Очистить все действия на панели?"
+	},
+
 	"HUD.Elevation": "Высота",
 	"HUD.OpenConfig": "Открыть настройки",
 	"HUD.AssignStatusEffects": "Назначение эффекта статуса",
@@ -1128,7 +1191,7 @@
 	"JOURNAL.ActionShow": "Показать игрокам",
 	"JOURNAL.ActionShowSuccess": "Содержимое {title} показано {which} игрокам.",
 	"JOURNAL.ImageShowSuccess": "Изображение показано {which} игрокам.",
-	"JOURNAL.NavLabel": "Содержание записи журнала",
+	"JOURNAL.NavLabel": "Содержание журнала",
 	"JOURNAL.AddPage": "Добавление страницы",
 	"JOURNAL.NextPage": "Следующая страница",
 	"JOURNAL.PrevPage": "Предыдущая страница",
@@ -1145,7 +1208,7 @@
 	"JOURNAL.ViewExpand": "Развернуть панель",
 	"JOURNAL.ShowTo": "Показать",
 	"JOURNAL.ShowEntry": "Показать {name}",
-	"JOURNAL.ShowBadPermissions": "Вы можете показывать только те записи журнала или страницы, которыми владеете.",
+	"JOURNAL.ShowBadPermissions": "Вы можете показывать только те журналы или страницы, которыми владеете.",
 	"JOURNAL.ShowNoPlayers": "В текущей игре нет других игроков для показа.",
 	"JOURNAL.ShowOwnershipHint": "Возможность предоставить права владения участникам, кому показан документ. Если участник уже имеет права выше, то они не будут понижены.",
 
@@ -1196,7 +1259,6 @@
 	"KEYBINDINGS.HowToEdit": "Используйте {icon}  или двойной щелчок по сочетанию для изменения значения.",
 	"KEYBINDINGS.CycleView": "Переключение вида сцены",
 	"KEYBINDINGS.Dismiss": "Переключение меню / Скрытие всех окон",
-	"KEYBINDINGS.MoveAlongMeasuredRuler": "Движение вдоль линейки",
 	"KEYBINDINGS.Pause": "Пауза",
 	"KEYBINDINGS.Delete": "Удаление объектов",
 	"KEYBINDINGS.Highlight": "Подсветка объектов",
@@ -1219,8 +1281,8 @@
 	"KEYBINDINGS.PanDownRight": "Движение/камера вниз-вправо",
 	"KEYBINDINGS.ZoomIn": "Приближение сцены",
 	"KEYBINDINGS.ZoomOut": "Отдаление сцены",
-	"KEYBINDINGS.ExecuteMacro": "Активация ячейки быстрого действия {number}",
-	"KEYBINDINGS.SwapMacroPage": "Переключение на панель быстрого доступа {page}",
+	"KEYBINDINGS.ExecuteMacro": "Активация {number}-й ячейки панели действий",
+	"KEYBINDINGS.SwapMacroPage": "Переключение на {page}-ю панель действий ",
 	"KEYBINDINGS.MustBeArray": "Должно быть массивом значений",
 	"KEYBINDINGS.ErrorProtectedKey": "Нельзя назначить защищённую клавишу \"{key}\" как сочетание.",
 	"KEYBINDINGS.ErrorIllegalModifier": "Запрошенная клавиша-модификатор \"{key}\" не является корректным значением в KeyboardManager.MODIFIER_KEYS",
@@ -1348,15 +1410,20 @@
 	"MACRO.Execute": "Запустить макрос",
 	"MACRO.Remove": "Убрать макрос",
 	"MACRO.Save": "Сохранить макрос",
-	"MACRO.CollapseHotbar": "Скрытие панели макросов",
+	"MACRO.CollapseHotbar": "Скрытие панели действий",
 	"MACRO.Directory": "Обзор папки с макросами",
 	"MACRO.PageUp": "Следующая панель",
 	"MACRO.PageDown": "Предыдущая панель",
-	"MACRO.NavLabel": "Панель макросов",
+	"MACRO.NavLabel": "Панель действий",
 	"MACRO.LockBar": "Блокировка панели",
 	"MACRO.UnlockBar": "Разблокировка панели",
 	"MACRO.EmptySlot": "Пустая ячейка {slot}",
 	"MACRO.CannotOverwrite": "Нельзя перезаписать макрос на заблокированной панели.",
+	"MACRO.SCOPES": {
+		"actor": "Актёр",
+		"actors": "Актёры",
+		"global": "Глобально"
+	},
 
 	"MENU.NavLabel": "Главное меню",
 	"MENU.Reload": "Перезагрузка",
@@ -1395,23 +1462,40 @@
 	"MODMANAGE.UpstreamPackages": "{number} пакетов требуют этот пакет для работы. Отключение этого пакета также отключит зависимые пакеты.",
 	"MODMANAGE.UnavailableDocuments": "Документы будут недоступны",
 
-	"NOTE.AnchorPoint": "Привязка текста",
-	"NOTE.ConfigTitle": "Настройка заметки сцены",
 	"NOTE.Create": "Создание заметки сцены",
 	"NOTE.CreateJournal": "Создать соответствующий журнал?",
 	"NOTE.Custom": "Особое",
 	"NOTE.CustomIcon": "Особая иконка",
-	"NOTE.EntryIcon": "Иконка записи",
-	"NOTE.FontSize": "Размер шрифта",
-	"NOTE.FontFamily": "Шрифт",
-	"NOTE.Global": "Видимо всем",
-	"NOTE.GlobalHint": "Позволить этой заметке сцены быть видимой всем участникам с правами на просмотр заметки.",
-	"NOTE.IconSize": "Размер иконки",
-	"NOTE.IconTint": "Оттенок иконки",
-	"NOTE.TextLabel": "Надпись",
-	"NOTE.TextColor": "Цвет текста",
 	"NOTE.Unknown": "Неизвестно",
 	"NOTE.Update": "Обновление заметки",
+	"NOTE.SECTIONS": {
+		"CONTENT": "Содержание",
+		"POSITION": "Расположение",
+		"ICON": "Иконка",
+		"LABEL": "Название"
+	},
+	"NOTE.FIELDS": {
+		"entryId.label": "Журнал",
+		"pageId.label": "Страница",
+		"text.label": "Текст",
+		"x.label": "X-координата",
+		"y.label": "Y-координата",
+		"elevation.label": "Высота",
+		"sort.label": "Сортировка",
+		"global": {
+			"label": "Видимо всем",
+			"hint": "Позволить этой заметке сцены быть видимой всем участникам с правами на просмотр заметки."
+		},
+		"texture": {
+			"src.label": "Иконка записи",
+			"tint.label": "Оттенок иконки"
+		},
+		"iconSize.label": "Размер иконки",
+		"fontFamily.label": "Шрифт",
+		"fontSize.label": "Размер шрифта",
+		"textColor.label": "Цвет текста",
+		"textAnchor.label": "Привязка текста"
+	},
 
 	"NUE.FirstLaunchBody": "Похоже, что это новый мир. Для начала вы можете добавить игроков в меню <a class=\"nue-tab\" data-tab=\"settings\">Настройка игроков</a>. Затем можно создать  <a class=\"nue-tab\" data-tab=\"actors\">Актёров</a> для игроков, а также персонажей, которыми будете управлять вы. Карты и фоны можно создать в меню <a class=\"nue-tab\" data-tab=\"scenes\">Сцен</a>, а заметки, книги и описания на вкладке <a class=\"nue-tab\" data-tab=\"journal\">Журналы</a>. И не забудьте активировать модуль Русского перевода в <a class=\"nue-tab\" data-tab=\"settings\">Управлении модулями</a>.",
 	"NUE.FirstLaunchHeader": "Введение",
@@ -1421,24 +1505,29 @@
 	"NUE.FirstLaunchKB": "Ознакомьтесь и с другими меню. Информацию об инструментах и настройках можно найти в <a href=\"https://foundryvtt.com/article/tutorial/\" target=\"_blank\">Руководстве ведущего</a> в нашей <a href=\"https://foundryvtt.com/kb/\" target=\"_blank\">Базе знаний</a>.",
 	"NUE.FirstLaunchTroubleshooting": "Если в меню Ссылки приглашений указано, что ваше соединение является закрытым, вам может понадобиться перенаправление портов. Вы можете найти инструкцию для этого в <a href=\"https://foundryvtt.com/article/port-forwarding/\" target=\"_blank\">Руководстве по перенаправлению портов</a>. Если вам всё ещё нужна помощь, присоединяйтесь к нашему Discord и опишите проблему в канале <a href=\"https://discord.com/channels/170995199584108546/689889940590690323\" target=\"_blank\">#install-and-connection</a> для проблем с соединением и приглашениями, в <a href=\"https://discord.com/channels/170995199584108546/486930822465716249\" target=\"_blank\">#troubleshooting</a> для общих проблем с приложением или в <a href=\"https://discord.com/channels/170995199584108546/713259405667205193\" target=\"_blank\">#core-how-to</a> для вопросов по возможностям Foundry VTT. Вы также можете присоединиться к нашему <a href=\"https://discord.gg/Z2CXFy35WF\" target=\"_blank\">официальному русскоязычному сообществу</a>. ",
 
-	"PLAYERS.Title": "Игроки",
-	"PLAYERS.List": "Список участников",
-	"PLAYERS.CharSelect": "Выбор персонажа",
-	"PLAYERS.CharSelected": "Выбранный персонаж",
-	"PLAYERS.CharRelease": "Открепление персонажа",
-	"PLAYERS.ConfigTitle": "Настройка участника",
-	"PLAYERS.PlayerColor": "Цвет игрока",
-	"PLAYERS.PlayerAvatar": "Аватар игрока",
-	"PLAYERS.PlayerPronouns": "Местоимения",
-	"PLAYERS.PullToScene": "Перемещение на сцену",
-	"PLAYERS.ViewAvatar": "Просмотр аватара",
-	"PLAYERS.Kick": "Выгнать игрока",
-	"PLAYERS.Ban": "Заблокировать игрока",
-	"PLAYERS.UnBan": "Разблокировать игрока",
+	"PLAYERS": {
+		"Title": "Игроки",
+		"List": "Список игроков",
+		"CharSelect": "Выбор персонажа",
+		"CharSelected": "Выбранный персонаж",
+		"CharRelease": "Открепление персонажа",
+		"ConfigTitle": "Настройка участника",
+		"PlayerColor": "Цвет игрока",
+		"PlayerAvatar": "Аватар игрока",
+		"PlayerPronouns": "Местоимения игрока",
+		"PullToScene": "Перемещение на сцену",
+		"ViewAvatar": "Просмотр аватара",
+		"Kick": "Отключить игрока",
+		"Ban": "Заблокировать игрока",
+		"UnBan": "Разблокировать игрока",
+		"LATENCY": "Задержка",
+		"FPS": "FPS"
+	},
 
 	"PLAYLIST.Delete": "Удаление плейлиста",
 	"PLAYLIST.Edit": "Изменение плейлиста",
 	"PLAYLIST.Channel": "Аудиоканал",
+	"PLAYLIST.DefaultChannel": "Аудиоканал по умолчанию",
 	"PLAYLIST.CurrentlyPlaying": "Сейчас играет",
 	"PLAYLIST.ModeDisabled": "Вручную",
 	"PLAYLIST.ModeSequential": "Последовательный",
@@ -1567,7 +1656,6 @@
 	"SCENES.View": "Просмотр сцены",
 	"SCENES.JournalEntry": "Журнал",
 	"SCENES.JournalEntryHint": "Связанный журнал, где GM может хранить заметки о сцене.",
-	"SCENES.NavLabel": "Навигация сцен",
 	"SCENES.PlaylistSound": "Звук плейлиста",
 	"SCENES.PlaylistSoundHint": "Определённый звук в плейлисте, который будет проигран при активации сцены.",
 	"SCENES.ShowNav": "Отображение в навигации",
@@ -1605,6 +1693,12 @@
 		"DarkAmbience": "Тёмная атмосфера",
 		"DarknessLock": "Блокировка уровня тьмы",
 		"DarknessLockHint": "Когда эта опция включена, уровень тьмы не может быть изменен."
+	},
+
+	"SCENE_NAVIGATION": {
+		"COLLAPSE": "Свернуть навигацию",
+		"EXPAND": "Развернуть навигацию",
+		"LABEL": "Навигация сцены"
 	},
 
 	"GRID.STYLES": {
@@ -1705,8 +1799,8 @@
 	"SETTINGS.EnableHighlightDocumentMatchesH": "Включить сопоставление ссылок на содержимое при выделении текста в редакторе ProseMirror. Если эта функция включена, выделенный текст будет проверяться на наличие совпадений с документами в мире или в любой библиотеке и предлагаться в качестве замены ссылок.",
 	"SETTINGS.ReloadPromptTitle": "Перезагрузить приложение?",
 	"SETTINGS.ReloadPromptBody": "Некоторые настройки требуют перезагрузки приложения для применения изменений.",
-	"SETTINGS.GridDiagonalsN": "Диагонали квадратной сетки",
-	"SETTINGS.GridDiagonalsL": "Настройка измерения диагонального расстояния на квадратных сетках. Число в скобках определяет длину диагоналей в единицах сетки для каждого варианта.",
+	"SETTINGS.GridDiagonalsN": "Диагонали сетки",
+	"SETTINGS.GridDiagonalsL": "Настройка измерения диагонального расстояния на квадратных или гексогональных сетках. Число в скобках определяет длину диагоналей в единицах сетки для каждого варианта.",
 	"SETTINGS.GridDiagonalsEquidistant": "Равноудаленные (1)",
 	"SETTINGS.GridDiagonalsExact": "Точные (√2)",
 	"SETTINGS.GridDiagonalsApproximate": "Приблизительные (1.5)",
@@ -2214,19 +2308,16 @@
 	},
 
 	"FOLDER.Clear": "Очистка папки",
-	"FOLDER.Color": "Цвет папки",
 	"FOLDER.Create": "Создание папки",
 	"FOLDER.Collapse": "Свернуть все папки",
 	"FOLDER.Delete": "Удаление всего",
 	"FOLDER.DeleteWarning": "Эта папка и всё её содержимое будет навсегда удалено без возможности восстановления.",
 	"FOLDER.Edit": "Изменение папки",
 	"FOLDER.Export": "Экспорт в библиотеку",
-	"FOLDER.Name": "Название папки",
 	"FOLDER.Remove": "Удаление папки",
 	"FOLDER.RemoveWarning": "Эта папка и всё её содержимое будет навсегда удалено, а содержимое перемещено в вышестоящую папку.",
 	"FOLDER.SortAlphabetical": "По алфавиту",
 	"FOLDER.SortManual": "Ручной порядок",
-	"FOLDER.SortMode": "Режим сортировки",
 	"FOLDER.Update": "Обновление папки",
 	"FOLDER.ExportTitle": "Экспорт содержимого",
 	"FOLDER.ExportHint": "Вы можете экспортировать документы папки в разблокированную библиотеку соответствующего типа.",
@@ -2244,9 +2335,13 @@
 	"FOLDER.CreateTableConfirm": "Создать случайную таблицу, используя содержимое папки в качестве результатов?",
 	"FOLDER.InvalidDocumentType": "Недопустимый тип документа \"{type}\" для этой папки.",
 	"FOLDER.ExceededMaxDepth": "Нельзя иметь более {depth} уровней вложения папок.",
-
 	"FOLDER.DocumentSort": "Сортировка",
 	"FOLDER.DocumentSortHint": "Настройка порядки сортировки для этого документа относительно других в этой коллекции. Меньшие числа сортируются первыми.",
+	"FOLDER.FIELDS": {
+		"name.label": "Название папки",
+		"color.label": "Цвет папки",
+		"sorting.label": "Сортировка"
+	},
 
 	"OWNERSHIP.Title": "Настройка владения",
 	"OWNERSHIP.NONE": "Нет",
@@ -2287,10 +2382,10 @@
 	"PERMISSION.FilesBrowseHint": "Позволить роли использовать проводник файлов для просмотра и выбора файлов.",
 	"PERMISSION.FilesUpload": "Загрузка файлов",
 	"PERMISSION.FilesUploadHint": "Позволить роли использовать проводник для загрузки файлов.",
-	"PERMISSION.JournalCreate": "Создание записей журнала",
-	"PERMISSION.JournalCreateHint": "Позволить роли создавать записи журнала.",
-	"PERMISSION.MacroScript": "Использование скриптов в макросах и областях",
-	"PERMISSION.MacroScriptHint": "Позволить роли использовать JavaScript с доступом к API в макросах и областях.",
+	"PERMISSION.JournalCreate": "Создание журналов",
+	"PERMISSION.JournalCreateHint": "Позволить роли создавать журналы.",
+	"PERMISSION.MacroScript": "Изменение скриптов макросов и запуск скриптов в областях",
+	"PERMISSION.MacroScriptHint": "Позволить роли создавать, обновлять и удалять скрипты макросов и запускать скрипты в областях.",
 	"PERMISSION.ManualRolls": "Совершение ручных бросков",
 	"PERMISSION.ManualRollsHint": "Позволить роли выбор ручного режима для бросков.",
 	"PERMISSION.MessageWhisper": "Личные сообщения",
@@ -2621,8 +2716,8 @@
 
 	"SUPPORT.Title": "Подробности поддержки",
 	"SUPPORT.Places": "Где могут помочь",
-	"SUPPORT.Discord": "Вы можете присоединиться к сообществу Foundry VTT, задать вопросы и помочь другим в нашем Discord:",
-	"SUPPORT.BugReporting": "Если вы хотите сообщить об ошибке, используйте способы, указанные в  Bug Report на странице Contact Us:",
+	"SUPPORT.Discord": "Вы можете присоединиться к сообществу Foundry VTT, задать вопросы и помочь другим на <a href=\"https://discord.gg/foundryvtt\" target=\"_blank\" rel=\"nofollow\">официальном Discord сервере</a>. Вы также можете присоединиться к <a href=\"https://discord.gg/Z2CXFy35WF\" target=\"_blank\" rel=\"nofollow\">русскоязычному сообществу в Discord</a>.",
+	"SUPPORT.BugReporting": "Если вы хотите сообщить об ошибке, используйте способы, указанные в  Bug Report на странице <a href=\"https://foundryvtt.com/contact-us?category=bug\" target=\"_blank\" rel=\"nofollow\">Contact Us</a>.",
 	"SUPPORT.Details": "Подробности поддержки",
 	"SUPPORT.ReportPrelude": "Перед тем, как обратиться за помощью в Discord или Github, полезно получить информацию о настройках текущего мира. Ниже представлен отчёт, который нужно скопировать и присоединить к вопросу.",
 	"SUPPORT.CopyReport": "Скопировать отчёт в буфер",
@@ -2632,6 +2727,9 @@
 	"SUPPORT.GPU": "GPU",
 	"SUPPORT.MaxTextureSize": "Макс. размер текстур",
 	"SUPPORT.LargestTexture": "Максимальная текстура",
+	"SUPPORT.NoDocumentIssues": "Проблемы с документом не обнаружены.",
+	"SUPPORT.NoClientIssues": "Проблемы с клиентом не обнаружены.",
+	"SUPPORT.NoModuleIssues": "Проблемы с модулем не обнаружены.",
 	"SUPPORT.NoViewedScene": "Нет открытой сцены",
 	"SUPPORT.DocumentIssues": "Проблемы с документом",
 	"SUPPORT.ClientIssues": "Проблемы с клиентом",
@@ -2673,49 +2771,79 @@
 	"TABLE.RESULT_TYPES.DOCUMENT.label": "Документ",
 	"TABLE.RESULT_TYPES.COMPENDIUM.label": "Библиотека",
 
-	"TEMPLATE.BorderColor": "Цвет рамки",
 	"TEMPLATE.ConeTypeSetting": "Форма шаблона конуса",
 	"TEMPLATE.ConeTypeSettingHint": "Выберите тип шаблонов конусов. Не имеет эффекта, если включены Формы шаблонов на основе сетки.",
 	"TEMPLATE.ConeTypeFlat": "Плоский",
 	"TEMPLATE.ConeTypeRound": "Округлый",
-	"TEMPLATE.MeasuredConfig": "Настройка измерительного шаблона",
-	"TEMPLATE.FillColor": "Цвет заливки",
-	"TEMPLATE.FillTexture": "Текстура заливки",
 	"TEMPLATE.SubmitCreate": "Создание шаблона",
 	"TEMPLATE.SubmitUpdate": "Обновление шаблона",
 	"TEMPLATE.GridTemplatesSetting": "Формы шаблонов на основе сетки",
 	"TEMPLATE.GridTemplatesSettingHint": "Шаблоны будут основаны на сетке, а не на евклидовом пространстве.",
+	"TEMPLATE.TYPES": {
+		"circle": "Круг",
+		"cone": "Конус",
+		"ray": "Луч",
+		"rect": "Прямоугольник"
+	},
+	"TEMPLATE.FIELDS": {
+		"t.label": "Тип",
+		"direction.label": "Направление",
+		"angle.label": "Угол",
+		"distance.label": "Дистанция",
+		"borderColor.label": "Цвет рамки",
+		"fillColor.label": "Цвет заливки",
+		"texture.label": "Текстура заливки"
+	},
 
 	"TILE.ConfigTitle": "Настройка тайла",
+	"TILE.Dimensions": "Размеры",
 	"TILE.SubmitCreate": "Создание тайла",
 	"TILE.SubmitUpdate": "Обновление тайла",
-	"TILE.BasicHeader": "Основное",
-	"TILE.BasicHint": "Настройте верхнее изображение, отображаемое над фоном сцены.",
-	"TILE.OverheadHeader": "Верхние",
-	"TILE.OverheadHint": "Дополнительные параметры для верхних тайлов переднего слоя.",
-	"TILE.AnimationHeader": "Анимация",
-	"TILE.AnimationHint": "Дополнительные параметры, используемые для анимированных видео-текстур.",
-	"TILE.Image": "Изображение или видео",
-	"TILE.Opacity": "Непрозрачность тайла",
-	"TILE.Tint": "Оттенок",
 	"TILE.Scale": "Масштаб тайла",
 	"TILE.ScaleHint": "Отрегулируйте масштаб изображения по X и Y. Изображение может выходить за рамки тайла. Отрицательные значения отзеркаливают изображение.",
-	"TILE.ScaleX": "По горизонтали",
-	"TILE.ScaleY": "По вертикали",
-	"TILE.RestrictsLight": "Ограничивает свет",
-	"TILE.RestrictsWeather": "Ограничивает погоду",
-	"TILE.RestrictsLightHint": "Блокируются ли источники света на основе их высоты относительно высоты этого тайла?",
-	"TILE.RestrictsWeatherHint": "Блокируются ли погодные эффекты на основе их высоты относительно высоты этого тайла?",
-	"TILE.OcclusionMode": "Режим преграждения",
 	"TILE.OcclusionModeNone": "Нет (всегда видимый)",
 	"TILE.OcclusionModeFade": "Затухание (весь тайл)",
 	"TILE.OcclusionModeRoof": "Крыша (блокирует видимость и освещение)",
 	"TILE.OcclusionModeRadial": "Круговой (вокруг токена)",
 	"TILE.OcclusionModeVision": "Область зрения токена",
-	"TILE.OcclusionAlpha": "Прозрачность преграждения",
-	"TILE.VideoLoop": "Повторение видео",
-	"TILE.VideoAutoplay": "Автопроигрывание",
-	"TILE.VideoVolume": "Громкость видео",
+	"TILE.VideoOptions": "Настройки видео",
+	"TILE.TabPosition": {
+		"Label": "Расположение",
+		"Hint": "Расположение и размер тайла."
+	},
+	"TILE.TabAppearance.Label": "Внешний вид",
+	"TILE.TabOverhead": {
+		"Label": "Верхний",
+		"Hint": "Дополнительные параметры для верхних тайлов переднего слоя."
+	},
+	"TILE.FIELDS": {
+		"texture": {
+			"src.label": "Изображение или видео",
+			"scaleX.label": "По горизонтали",
+			"scaleY.label": "По вертикали",
+			"tint.label": "Оттенок"
+		},
+		"alpha.label": "Непрозрачность тайла",
+		"occlusion": {
+			"mode.label": "Режим преграждения",
+			"alpha.label": "Прозрачность преграждения"
+		},
+		"restrictions": {
+			"light": {
+				"label": "Ограничивает свет",
+				"hint": "Блокируются ли источники света на основе их высоты относительно высоты этого тайла?"
+			},
+			"weather": {
+				"label": "Ограничивает погоду",
+				"hint": "Блокируются ли погодные эффекты на основе их высоты относительно высоты этого тайла?"
+			}
+		},
+		"video": {
+			"loop.label": "Повторение видео",
+			"autoplay.label": "Автопроигрывание",
+			"volume.label": "Громкость видео"
+		}
+	},
 
 	"TIME.Now": "Сейчас",
 	"TIME.Seconds": "секунд",
@@ -2727,73 +2855,151 @@
 	"TIME.DaysAbbreviation": "д",
 	"TIME.Since": "{since} назад",
 
-	"TOKEN.HeaderIdentity": "Данные",
-	"TOKEN.HeaderAppearance": "Внешность",
-	"TOKEN.HeaderVision": "Зрение",
-	"TOKEN.HeaderLight": "Свет",
-	"TOKEN.HeaderResources": "Ресурсы",
-
 	"TOKEN.Assign": "Прикрепление токена",
 	"TOKEN.AssignWarn": "Вы должны выбрать существующий токен, чтобы назначить его в качестве настроек прототипа.",
 	"TOKEN.AssignSuccess": "Прототип токена для {name} обновлён.",
-	"TOKEN.BarAttributes": "Шкалы атрибутов",
+	"TOKEN.BarAttributes": "Шкалы параметров",
 	"TOKEN.BarValues": "Одиночные значения",
-	"TOKEN.CharActor": "Связанный актёр",
-	"TOKEN.CharLink": "Привязка данных актёра",
-	"TOKEN.CharNameplate": "Имя токена",
-	"TOKEN.CharShowNameplate": "Отображение имени",
-	"TOKEN.Coordinates": "Координаты",
-	"TOKEN.Disposition": "Отношение токена",
+	"TOKEN.DeleteCombatantWarning": "Вы собираетесь удалить токен в бою. Боец будет удалён из трекера.",
 	"TOKEN.Dimensions": "Размеры",
 	"TOKEN.DimensionsHint": "Размер токена был округлён до ближайшего к 0.5 от клетки сетки.",
-	"TOKEN.HexagonalShape": "Шестиугольная форма",
-	"TOKEN.HexagonalShapeHint": "Форма токена на шестиугольной сетке.",
 	"TOKEN.AnchorHint": "Координаты якоря по умолчанию (0.5, 0.5) - центр изображения токена.",
 	"TOKEN.ImageAlts": "Альтернативный токен",
-	"TOKEN.ImagePath": "Файл изображения",
-	"TOKEN.ImageFitMode": "Масштабирование изображения",
-	"TOKEN.ImageFitModeHint": "Как изображение масштабируется под размер токена.",
-	"TOKEN.LockRotation": "Блокировка поворота",
-	"TOKEN.Lock": "Блокировка",
-	"TOKEN.AppendNumber": "Добавление нумерации к несвязанным токенам",
-	"TOKEN.AppendNumberHint": "Например: \"{name} (3)\"",
-	"TOKEN.PrependAdjective": "Добавление прилагательных к несвязанным токенам",
-	"TOKEN.PrependAdjectiveHint": "Например: \"Храбрый {name}\"",
 	"TOKEN.Mirror": "Отражение изображения",
 	"TOKEN.MirrorX": "Горизонтально",
 	"TOKEN.MirrorY": "Вертикально",
-	"TOKEN.Opacity": "Непрозрачность токена",
-	"TOKEN.OcclusionRadius": "Радиус преграждения",
-	"TOKEN.OcclusionRadiusHint": "Когда этот токен находится под тайлом, использующим круговое преграждение, это значение управляет размером отверстия, вырезанного в тайле над токеном.",
-	"TOKEN.RandomImg": "Случайные изображения токена",
-	"TOKEN.ResourceBar1A": "Атрибут 1",
 	"TOKEN.ResourceBar1D": "Значение ресурса 1",
-	"TOKEN.ResourceBar2A": "Атрибут 2",
 	"TOKEN.ResourceBar2D": "Значение ресурса 2",
-	"TOKEN.ResourceDisplay": "Отображение шкал ресурсов",
-	"TOKEN.Title": "Параметры токена",
+	"TOKEN.ToggleLockRotation": "Блокировка вращения",
 	"TOKEN.TitlePrototype": "Прототип токена",
-	"TOKEN.TintColor": "Оттенок",
 	"TOKEN.Update": "Обновление токена",
-	"TOKEN.VisionEnabled": "Зрение включено",
-	"TOKEN.VisionEnabledHint": "Позволить токену видеть освещённые области в поле зрения.",
-	"TOKEN.VisionRange": "Дистанция зрения",
-	"TOKEN.VisionRangeHint": "Дистанция зрения токена без источника света.",
-	"TOKEN.VisionAngle": "Угол зрения",
-	"TOKEN.VisionAngleHint": "Угол зрения токена (по умолчанию 360).",
-	"TOKEN.VisionColor": "Цвет зрения",
-	"TOKEN.VisionAttenuation": "Затухание",
-	"TOKEN.VisionAttenuationHint": "Интенсивность постепенного затухания источника зрения (по умолчанию 0).",
-	"TOKEN.VisionContrast": "Контрастность",
-	"TOKEN.VisionContrastHint": "Контрастность фона в радиусе источника зрения (по умолчанию 0).",
-	"TOKEN.VisionSaturation": "Насыщенность",
-	"TOKEN.VisionSaturationHint": "Насыщенность фона в радиусе источника зрения (по умолчанию 0).",
-	"TOKEN.VisionBrightness": "Яркость зрения",
-	"TOKEN.VisionBrightnessHint": "Яркость источника зрения. Чем выше яркость, тем лучше персонаж видит в темноте (по умолчанию 0).",
 	"TOKEN.WarningNoActor": "Этот токен связан с актёром, который больше не существует.",
 	"TOKEN.WarningNoVision": "На этой сцене нет токена, позволяющего вам видеть область.",
-	"TOKEN.VisionMode": "Режим зрения",
-	"TOKEN.VisionModeHint": "Режимы зрения добавляют визуальные эффекты особого чутья (по умолчанию Обычное зрение).",
+	"TOKEN.Tabs": {
+		"Identity": "Данные",
+		"Appearance": "Внешний вид",
+		"Vision": "Зрение",
+		"Light": "Освещение",
+		"Resources": "Ресурсы"
+	},
+	"TOKEN.FIELDS": {
+		"name.label": "Имя токена",
+		"actorId.label": "Связанный актёр",
+		"actorLink.label": "Привязка данных актёра",
+		"x.label": "X",
+		"y.label": "Y",
+		"displayName.label": "Отображаемое имя",
+		"appendNumber": {
+			"label": "Добавление нумерации к несвязанным токенам",
+			"hint": "Например: \"{name} (3)\""
+		},
+		"prependAdjective": {
+			"label": "Добавление прилагательных к несвязанным токенам",
+			"hint": "Например: \"Храбрый {name}\""
+		},
+		"occludable.radius": {
+			"label": "Радиус преграждения",
+			"hint": "Когда этот токен находится под тайлом, использующим круговое преграждение, это значение управляет размером отверстия, вырезанного в тайле над токеном."
+		},
+		"disposition.label": "Отношение токена",
+		"lockRotation.label": "Блокировка поворота",
+		"texture": {
+			"src.label": "Файл изображения",
+			"fit": {
+				"label": "Масштабирование изображения",
+				"hint": "Как изображение масштабируется под размер токена."
+			},
+			"anchorX.label": "X",
+			"anchorY.label": "Y",
+			"tint.label": "Оттенок"
+		},
+		"randomImg.label": "Случайное изображение токена",
+		"shape": {
+			"label": "Форма",
+			"hint": "Форма токена."
+		},
+		"alpha.label": "Непрозрачность токена",
+		"ring": {
+			"colors": {
+				"ring": {
+					"label": "Цвет кольца",
+					"hint": "Цвет рамки кольца."
+				},
+				"background": {
+					"label": "Цвет фона",
+					"hint": "Цвет фона кольца."
+				}
+			},
+			"effects.label": "Эффекты кольца",
+			"enabled.label": "Кольцо включено",
+			"subject": {
+				"scale": {
+					"label": "Коррекция масштаба",
+					"hint": "Отрегулируйте относительный размер текстуры по отношению к кольцу. Увеличение этого значения сделает текстуру более крупной по сравнению с кольцом. Используйте меньшие значения, чтобы уменьшить размер текстуры, если она кажется слишком заметной."
+				},
+				"texture": {
+					"label": "Текстура",
+					"hint": "Укажите путь к изображению, размещенному над динамическим кольцом токенов. Если путь не указан, будет использована стандартная текстура."
+				}
+			}
+		},
+		"sight": {
+			"enabled": {
+				"label": "Зрение включено",
+				"hint": "Позволить токену видеть освещённые области в поле зрения."
+			},
+			"range": {
+				"label": "Дистанция зрения",
+				"hint": "Дистанция зрения токена без источника света."
+			},
+			"angle": {
+				"label": "Угол зрения",
+				"hint": "Угол зрения токена (по умолчанию 360)."
+			},
+			"visionMode": {
+				"label": "Режим зрения",
+				"hint": "Режимы зрения добавляют визуальные эффекты особого чутья (по умолчанию Обычное зрение)."
+			},
+			"color.label": "Цвет зрения",
+			"attenuation": {
+				"label": "Затухание",
+				"hint": "Интенсивность постепенного затухания источника зрения (по умолчанию 0)."
+			},
+			"brightness": {
+				"label": "Яркость зрения",
+				"hint": "Яркость источника зрения. Чем выше яркость, тем лучше персонаж видит в темноте (по умолчанию 0)."
+			},
+			"saturation": {
+				"label": "Насыщенность",
+				"hint": "Насыщенность фона в радиусе источника зрения (по умолчанию 0)."
+			},
+			"contrast": {
+				"label": "Контрастность",
+				"hint": "Контрастность фона в радиусе источника зрения (по умолчанию 0)."
+			}
+		},
+		"turnMarker": {
+			"mode": {
+				"label": "Режим",
+				"hint": "Вы можете отключить метку хода или использовать особую метку. Иначе будет использована метка хода по умолчанию."
+			},
+			"animation": {
+				"label": "Анимация",
+				"hint": "Анимацию метки хода этого токена."
+			},
+			"src": {
+				"label": "Файл",
+				"hint": "Изображение или видео для метки хода этого токена."
+			},
+			"disposition": {
+				"label": "Оттенок отношения",
+				"hint": "Оттенок метки хода в зависимости от отношения токена."
+			}
+		},
+		"displayBars.label": "Отображение шкал",
+		"bar1.attribute.label": "Параметр 1",
+		"bar2.attribute.label": "Параметр 2"
+	},
 
 	"TOKEN.DISPOSITION.HOSTILE": "Враждебный",
 	"TOKEN.DISPOSITION.NEUTRAL": "Нейтральный",
@@ -2807,12 +3013,12 @@
 	"TOKEN.DISPLAY_OWNER": "Всегда для владельца",
 	"TOKEN.DISPLAY_ALWAYS": "Всегда для всех",
 
-	"TOKEN.HEXAGONAL_SHAPE_ELLIPSE_1": "Эллипс (Вариант 1)",
-	"TOKEN.HEXAGONAL_SHAPE_ELLIPSE_2": "Эллипс (Вариант 2)",
-	"TOKEN.HEXAGONAL_SHAPE_TRAPEZOID_1": "Трапеция (Вариант 1)",
-	"TOKEN.HEXAGONAL_SHAPE_TRAPEZOID_2": "Трапеция (Вариант 2)",
-	"TOKEN.HEXAGONAL_SHAPE_RECTANGLE_1": "Прямоугольник (Вариант 1)",
-	"TOKEN.HEXAGONAL_SHAPE_RECTANGLE_2": "Прямоугольник (Вариант 2)",
+	"TOKEN.SHAPES.ELLIPSE_1.label": "Эллипс I",
+	"TOKEN.SHAPES.ELLIPSE_2.label": "Эллипс II",
+	"TOKEN.SHAPES.TRAPEZOID_1.label": "Трапеция I",
+	"TOKEN.SHAPES.TRAPEZOID_2.label": "Трапеция II",
+	"TOKEN.SHAPES.RECTANGLE_1.label": "Прямоугольник I",
+	"TOKEN.SHAPES.RECTANGLE_2.label": "Прямоугольник II",
 
 	"TOKEN.Adjectives.ambitious": "Амбициозный",
 	"TOKEN.Adjectives.angry": "Сердитый",
@@ -2923,43 +3129,13 @@
 	"TOKEN.DetectionAdd": "Добавить режим обнаружения",
 	"TOKEN.DetectionRemove": "Удалить режим обнаружения",
 
-	"TOKEN.FIELDS": {
-		"ring": {
-			"colors": {
-				"ring": {
-					"label": "Цвет кольца",
-					"hint": "Цвет рамки кольца."
-				},
-				"background": {
-					"label": "Цвет фона",
-					"hint": "Цвет фона кольца."
-				}
-			},
-			"effects": {
-				"label": "Эффекты кольца"
-			},
-			"enabled": {
-				"label": "Кольцо включено"
-			},
-			"subject": {
-				"scale": {
-					"label": "Коррекция масштаба",
-					"hint": "Отрегулируйте относительный размер текстуры по отношению к кольцу. Увеличение этого значения сделает текстуру более крупной по сравнению с кольцом. Используйте меньшие значения, чтобы уменьшить размер текстуры, если она кажется слишком заметной."
-				},
-				"texture": {
-					"label": "Текстура",
-					"hint": "Укажите путь к изображению, размещенному над динамическим кольцом токенов. Если путь не указан, будет использована стандартная текстура."
-				}
-			}
-		}
-	},
-
 	"TOKEN.RING": {
 		"EFFECTS": {
 			"BKG_WAVE": "Фоновые волны",
 			"RING_GRADIENT": "Кольцевой градиент",
 			"RING_PULSE": "Кольцевой импульс",
-			"INVISIBILITY": "Спектральный импульс"
+			"INVISIBILITY": "Спектральный импульс",
+			"COLOR_OVER_SUBJECT": "Цвет поверх изображения"
 		},
 		"SHEET": {
 			"legend": "Динамическое кольцо токена"
@@ -2975,6 +3151,16 @@
 				"subject": "Стандартный",
 				"grid": "Сетка"
 			}
+		}
+	},
+	"TOKEN.TURNMARKER": {
+		"SHEET": {
+			"legend": "Метка хода"
+		},
+		"MODES": {
+			"DISABLED": "Отключена",
+			"DEFAULT": "По умолчанию",
+			"CUSTOM": "Особая"
 		}
 	},
 
@@ -3064,6 +3250,11 @@
 				"RELEASE": "Открепление персонажа"
 			}
 		},
+		"MESSAGES": {
+			"KICKED": "Участник {user} был <strong>отключён</strong> от мира.",
+			"BANNED": "Участник {user} был <strong>заблокирован</strong> в мире.",
+			"UNBANNED": "Участник {user} был <strong>разблокирован</strong> в мире."
+		},
 		"RoleNone": "Нет",
 		"RolePlayer": "Игрок",
 		"RoleTrusted": "Доверенный игрок",
@@ -3093,55 +3284,85 @@
 	"VISION.ModeTremorsense": "Чутьё вибрации",
 	"VISION.ModeLightAmplification": "Множитель света",
 
-	"WALLS.Title": "Настройка стены",
-	"WALLS.TitleMany": "Настройка стен (нескольких)",
-	"WALLS.Instructions": "Настройка ограничения передвижения и зрения этой стены.",
-	"WALLS.Coordinates": "Координаты стены",
-	"WALLS.Light": "Ограничение света",
-	"WALLS.Movement": "Ограничение движения",
-	"WALLS.Sight": "Ограничение зрения",
-	"WALLS.Sound": "Ограничение звука",
-	"WALLS.ThresholdAttenuation": "Порог видимости вблизи",
-	"WALLS.ThresholdAttenuationHint": "Расстояние, на которое зрение может проникать через эту стену, в зависимости от близости наблюдателя и порога видимости. Применяется только в случае, если задано значение порога.",
-	"WALLS.Direction": "Направление стены",
-	"WALLS.Door": "Настройка двери",
-	"WALLS.DoorOptions": "Настройка двери",
-	"WALLS.Submit": "Обновление стены",
-	"WALLS.SenseTypes.NONE": "Нет",
-	"WALLS.SenseTypes.LIMITED": "Ограниченное",
-	"WALLS.SenseTypes.NORMAL": "Обычное",
-	"WALLS.SenseTypes.PROXIMITY": "Близость",
-	"WALLS.SenseTypes.DISTANCE": "Обратная близость",
-	"WALLS.Directions.BOTH": "Двусторонняя",
-	"WALLS.Directions.LEFT": "Налево",
-	"WALLS.Directions.RIGHT": "Направо",
-	"WALLS.DoorTypes.NONE": "Нет",
-	"WALLS.DoorTypes.DOOR": "Дверь",
-	"WALLS.DoorTypes.SECRET": "Секретная дверь",
-	"WALLS.DoorState": "Состояние двери",
-	"WALLS.DoorStates.CLOSED": "Закрытая",
-	"WALLS.DoorStates.OPEN": "Открытая",
-	"WALLS.DoorStates.LOCKED": "Запертая",
-
-	"WALLS.DoorSoundLabel": "Звук двери",
-	"WALLS.DoorSound.FuturisticFast": "Футуристичная, быстрая",
-	"WALLS.DoorSound.FuturisticHydraulic": "Футуристичная, гидравлическая",
-	"WALLS.DoorSound.FuturisticForcefield": "Футуристичная, силовое поле",
-	"WALLS.DoorSound.Industrial": "Индустриальная, простая",
-	"WALLS.DoorSound.IndustrialCreaky": "Индустриальная, скрипящая",
-	"WALLS.DoorSound.Jail": "Клетка",
-	"WALLS.DoorSound.MagicDoor": "Волшебная дверь",
-	"WALLS.DoorSound.MagicWall": "Волшебная стена",
-	"WALLS.DoorSound.Metal": "Металл",
-	"WALLS.DoorSound.SlidingMetal": "Раздвижная, металлическая",
-	"WALLS.DoorSound.SlidingModern": "Раздвижная, современная",
-	"WALLS.DoorSound.SlidingWood": "Раздвижная, деревянная",
-	"WALLS.DoorSound.StoneBasic": "Каменная",
-	"WALLS.DoorSound.StoneRocky": "Каменная, скалистая",
-	"WALLS.DoorSound.StoneSandy": "Каменная, песочная",
-	"WALLS.DoorSound.WoodBasic": "Деревянная, простая",
-	"WALLS.DoorSound.WoodCreaky": "Деревянная, скрипящая",
-	"WALLS.DoorSound.WoodHeavy": "Деревянная, тяжёлая",
+	"WALL.FIELDS": {
+		"c.label": "Координаты стены",
+		"light.label": "Свет",
+		"move.label": "Перемещение",
+		"sight.label": "Зрение",
+		"sound.label": "Звук",
+		"dir.label": "Направление стены",
+		"door.label": "Тип двери",
+		"ds.label": "Состояние двери",
+		"doorSound.label": "Звук двери",
+		"threshold.attenuation": {
+			"hint": "Расстояние, на которое зрение может проникать через эту стену, в зависимости от близости наблюдателя и порога видимости. Применяется только в случае, если задано значение порога.",
+			"label": "Порог видимости вблизи"
+		},
+		"animation": {
+			"strength": {
+				"label": "Интенсивность анимации",
+				"hint": "Множитель от 0 до 2, который изменяет интенсивность анимации двери. Например, для распашной двери большее значение интенсивности приводит к большему углу открытия. Для раздвижной двери большая интенсивность заставляет дверь скользить дальше."
+			},
+			"direction.label": "Направление открытия",
+			"double.label": "Двойная дверь",
+			"duration.label": "Длительность анимации (мс)",
+			"flip.label": "Разворот текстуры",
+			"texture.label": "Текстура двери",
+			"type.label": "Тип анимации"
+		}
+	},
+	"WALL.ANIMATION_TYPES": {
+		"ASCEND": "Восходящая",
+		"DESCEND": "Нисходящая",
+		"SLIDE": "Скользящая",
+		"SWING": "Петельная",
+		"SWIVEL": "Поворотная"
+	},
+	"WALL.ANIMATION_DIRECTIONS": {
+		"DEFAULT": "По умолчанию",
+		"REVERSE": "Обратная"
+	},
+	"WALL.Title": "Настройка стены",
+	"WALL.TitleMany": "Настройка стен [нескольких]",
+	"WALL.Instructions": "Настройка ограничения передвижения и зрения этой стены.",
+	"WALL.CoordinateRange": "({p0X}, {p0Y}) на ({p1X}, {p1Y})",
+	"WALL.DoorAnimation": "Анимация двери",
+	"WALL.DoorConfiguration": "Настройка двери",
+	"WALL.NWalls": "[{n} стены]",
+	"WALL.Restrictions": "Ограничения стены",
+	"WALL.Submit": "Обновление стены",
+	"WALL.SenseTypes.NONE": "Нет",
+	"WALL.SenseTypes.LIMITED": "Ограничено",
+	"WALL.SenseTypes.NORMAL": "Обычно",
+	"WALL.SenseTypes.PROXIMITY": "Близость",
+	"WALL.SenseTypes.DISTANCE": "Обратная близость",
+	"WALL.Directions.BOTH": "Оба",
+	"WALL.Directions.LEFT": "Налево",
+	"WALL.Directions.RIGHT": "Направо",
+	"WALL.DoorTypes.NONE": "Нет",
+	"WALL.DoorTypes.DOOR": "Дверь",
+	"WALL.DoorTypes.SECRET": "Скрытая дверь",
+	"WALL.DoorStates.CLOSED": "Закрытая",
+	"WALL.DoorStates.OPEN": "Открытая",
+	"WALL.DoorStates.LOCKED": "Запертая",
+	"WALL.DoorSounds.FuturisticFast": "Футуристичная, быстрая",
+	"WALL.DoorSounds.FuturisticHydraulic": "Футуристичная, гидравлическая",
+	"WALL.DoorSounds.FuturisticForcefield": "Футуристичная, силовое поле",
+	"WALL.DoorSounds.Industrial": "Индустриальная",
+	"WALL.DoorSounds.IndustrialCreaky": "Индустриальная, скрипящая",
+	"WALL.DoorSounds.Jail": "Клетка",
+	"WALL.DoorSounds.MagicDoor": "Волшебная дверь",
+	"WALL.DoorSounds.MagicWall": "Волшебная стена",
+	"WALL.DoorSounds.Metal": "Металлическая",
+	"WALL.DoorSounds.SlidingMetal": "Раздвижная, металлическая",
+	"WALL.DoorSounds.SlidingModern": "Раздвижная, современная",
+	"WALL.DoorSounds.SlidingWood": "Раздвижная, деревянная",
+	"WALL.DoorSounds.StoneBasic": "Каменная",
+	"WALL.DoorSounds.StoneRocky": "Каменная, скалистая",
+	"WALL.DoorSounds.StoneSandy": "Каменная, песчанная",
+	"WALL.DoorSounds.WoodBasic": "Деревянная",
+	"WALL.DoorSounds.WoodCreaky": "Деревянная, скрипящая",
+	"WALL.DoorSounds.WoodHeavy": "Деревянная, тяжёлая",
 
 	"WORLD.TitleCreate": "Создать мир",
 	"WORLD.TitleEdit": "Настройка мира",
@@ -3213,8 +3434,8 @@
 	"WEBRTC.TooltipUnmutePeers": "Включить аудио от других",
 	"WEBRTC.TooltipDisableAllVideo": "Не получать видео",
 	"WEBRTC.TooltipEnableVideo": "Получать видео",
-	"WEBRTC.TooltipShowPlayers": "Показывать список участников",
-	"WEBRTC.TooltipHidePlayers": "Скрытие списка участников",
+	"WEBRTC.TooltipShowPlayers": "Показывать список игроков",
+	"WEBRTC.TooltipHidePlayers": "Скрытие списка игроков",
 	"WEBRTC.TooltipExpandDock": "Развернуть панель",
 	"WEBRTC.TooltipMinimizeDock": "Свернуть панель",
 	"WEBRTC.Nameplates": "Имена",
