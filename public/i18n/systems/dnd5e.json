@@ -54,6 +54,24 @@
 	"DND5E.AbbreviationLevel": "Ур.",
 	"DND5E.AbbreviationLbs": "фнт",
 	"DND5E.AbbreviationSR": "КО",
+
+	"DND5E.ABILITY": {
+		"Configure": {
+			"Title": "Настройка {ability}"
+		},
+		"SECTIONS": {
+			"Bonuses": {
+				"Label": "Бонусы {ability}",
+				"Hint": "Эти бонусы применяются к проверкам и испытаниям {ability}."
+			},
+			"Global": {
+				"Label": "Глобальные бонусы",
+				"Hint": "Эти бонусы применяются к проверкам и испытаниям всех характеристик."
+			},
+			"Score": "Показатель {ability}"
+		}
+	},
+
 	"DND5E.Ability": "Характеристика",
 	"DND5E.Abilities": "Характеристики",
 	"DND5E.AbilityStr": "Сила",
@@ -73,9 +91,11 @@
 	"DND5E.AbilitySan": "Рассудок",
 	"DND5E.AbilitySanAbbr": "рас",
 	"DND5E.AbilityScore": "Характеристика",
+	"DND5E.AbilityScoreShort": "Показатель",
 	"DND5E.AbilityScorePl": "Характеристики",
 	"DND5E.AbilityScoreL": "Показатель {ability}",
 	"DND5E.AbilityScoreMax": "Максимальная характеристика",
+	"DND5E.AbilityScoreMaxShort": "Максимум",
 	"DND5E.AbilityModifier": "Модификатор характеристики",
 	"DND5E.AbilityPromptText": "Выберите тип проверки {ability}",
 	"DND5E.AbilityPromptTitle": "Проверка {ability}",
@@ -469,7 +489,7 @@
 					}
 				},
 				"flat": {
-					"label": "Чистое попадание",
+					"label": "Неизменное попадание",
 					"hint": "При атаке, игнорировать модификатор характеристики, умение и другие бонусы этого актёра и использовать только бонус, определённый функцией."
 				},
 				"type": {
@@ -586,6 +606,47 @@
 	"DND5E.Bonuses": "Глобальные бонусы",
 	"DND5E.BonusesHint": "Добавьте глобальный бонус в виде формулы, применяемой к некоторым проверкам. Например: 1d4+2",
 	"DND5E.BonusesInstructions": "Настройте бонусы персонажа, добавляемые к определённым проверкам.",
+
+	"DND5E.CAST": {
+		"Title": "Сотворение",
+		"FIELDS": {
+			"spell": {
+				"label": "Подробности сотворения",
+				"challenge": {
+					"attack": {
+						"label": "Бонус атаки",
+						"hint": "Неизменный бонус к попаданию вместо обычного бонуса атаки заклинания."
+					},
+					"save": {
+						"label": "СЛ испытания",
+						"hint": "Неизменная СЛ  вместо обычной СЛ испытания заклинания."
+					},
+					"override": {
+						"label": "Перезапись значений",
+						"hint": "Перезапись обычного бонуса атаки и СЛ заклинания."
+					}
+				},
+				"level": {
+					"label": "Круг сотворения",
+					"hint": "Базовый круг сотворения заклинания, если он отличается от круга самого заклинания."
+				},
+				"properties": {
+					"label": "Игнорирование свойств",
+					"hint": "Компоненты и другие свойства, игнорируемые при сотворении."
+				},
+				"uuid": {
+					"label": "Заклинание"
+				}
+			}
+		},
+		"SECTIONS": {
+			"Spell": "Заклинание"
+		},
+		"Action": {
+			"RemoveSpell": "Удалить заклинание"
+		}
+	},
+
 	"DND5E.Casting": "Сотворение",
 	"DND5E.Conditions": "Состояния",
 	"DND5E.Controls": {
@@ -631,7 +692,7 @@
 					},
 					"formula": {
 						"label": "Формула СЛ",
-						"hint": "Формула или постоянное значение для проверки СЛ."
+						"hint": "Формула или неизменное значение для проверки СЛ."
 					}
 				}
 			}
@@ -1761,7 +1822,7 @@
 	"DND5E.ItemActivationType": "Тип активации",
 	"DND5E.ItemAmmoProperties": "Свойства боеприпасов",
 	"DND5E.ItemAttackBonus": "Модификатор атаки",
-	"DND5E.ItemAttackFlat": "Чистый бонус",
+	"DND5E.ItemAttackFlat": "Неизменный бонус",
 	"DND5E.ItemAttackFlatHint": "Не добавлять умение, модификатор характеристики и другие бонусы к атаке, кроме тех, что указаны здесь.",
 	"DND5E.ItemBackgroundDetails": "Подробности происхождения",
 	"DND5E.ItemClassDetails": "Подробности класса",
@@ -2037,6 +2098,7 @@
 	"DND5E.ProficiencyConfigurationHint": "Настройка бонуса и умения.",
 	"DND5E.ProficiencyConfigureTitle": "Настройка {label}",
 	"DND5E.ProficiencyLevel": "Уровень умения",
+	"DND5E.ProficiencyOther": "Прочее",
 	"DND5E.Proficient": "Умелый",
 	"DND5E.Properties": "Свойства",
 	"DND5E.PropertyBase": "Базовый",
@@ -2106,6 +2168,16 @@
 	"DND5E.RestS": "Короткий",
 	"DND5E.Ritual": "Ритуал",
 	"DND5E.RitualAbbr": "Р",
+
+	"DND5E.ROLL": {
+		"Range": {
+			"Label": "Диапазон броска",
+			"Maximum": "Максимальный",
+			"Minimum": "Минимальный"
+		},
+		"Section": "Проверки {label}"
+	},
+
 	"DND5E.Roll": "Бросок",
 	"DND5E.RollConfiguration": {
 		"Title": "Настройка броска",
@@ -2180,7 +2252,7 @@
 					},
 					"formula": {
 						"label": "Формула СЛ",
-						"hint": "Формула или постоянное значение для испытания СЛ."
+						"hint": "Формула или неизменное значение для испытания СЛ."
 					},
 					"CustomFormula": "Своя формула",
 					"DefaultFormula": "8 + @mod + @prof"
@@ -2276,6 +2348,21 @@
 	"DND5E.SizeSmallAbbr": "Нб",
 	"DND5E.SizeTiny": "Маленький",
 	"DND5E.SizeTinyAbbr": "Мл",
+
+	"DND5E.SKILL": {
+		"SECTIONS": {
+			"Details": "Подробности {label}",
+			"Bonuses": {
+				"Label": "Бонусы {label}",
+				"Hint": "Эти бонусы применяются к пассивным и активным проверкам {label}."
+			},
+			"Global": {
+				"Label": "Глобальные бонусы",
+				"Hint": "Эти бонусы применяются к проверкам всех навыков."
+			}
+		}
+	},
+
 	"DND5E.Skill": "Навык",
 	"DND5E.Skills": "Навыки",
 	"DND5E.SkillAcr": "Акробатика",
@@ -2780,6 +2867,21 @@
 		"Title": "Динамическая рамка"
 	},
 	"DND5E.ToggleDescription": "Раскрыть описание",
+
+	"DND5E.TOOL": {
+		"SECTIONS": {
+			"Details": "Подробности {label}",
+			"Bonuses": {
+				"Label": "Бонусы {label}",
+				"Hint": "Эти бонусы применяются к проверкам {label}."
+			},
+			"Global": {
+				"Label": "Глобальные бонусы",
+				"Hint": "Эти бонусы применяются к проверкам всех инструментов."
+			}
+		}
+	},
+
 	"DND5E.ToolArtisans": "Инструменты ремесла",
 	"DND5E.ToolBonuses": "Бонусы инструмента",
 	"DND5E.ToolCheck": "Проверка инструмента",
@@ -3024,7 +3126,6 @@
 	"DND5E.WeaponMartialProficiency": "Военное",
 	"DND5E.WeaponMartialR": "Военное дист.",
 	"DND5E.WeaponNatural": "Природное",
-	"DND5E.WeaponOtherProficiency": "Прочее",
 	"DND5E.WeaponSiege": "Осадное орудие",
 	"DND5E.WeaponSimpleM": "Простое ближнее",
 	"DND5E.WeaponSimpleProficiency": "Простое",
