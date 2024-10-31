@@ -28,6 +28,8 @@
 	"TYPES.Item.consumablePl": "Расходники",
 	"TYPES.Item.equipment": "Снаряжение",
 	"TYPES.Item.equipmentPl": "Снаряжение",
+	"TYPES.Item.facility": "Постройка",
+	"TYPES.Item.facilityPl": "Постройки",
 	"TYPES.Item.feat": "Особенность",
 	"TYPES.Item.featurePl": "Особенности",
 	"TYPES.Item.loot": "Добыча",
@@ -99,17 +101,6 @@
 	"DND5E.AbilityModifier": "Модификатор характеристики",
 	"DND5E.AbilityPromptText": "Выберите тип проверки {ability}",
 	"DND5E.AbilityPromptTitle": "Проверка {ability}",
-	"DND5E.AbilityUseHint": "Использование {type}: {name}",
-	"DND5E.AbilityUseUnavailableHint": "У предмета не осталось использований!",
-	"DND5E.AbilityUseChargedHint": "{type} заряжен и готов к использованию!",
-	"DND5E.AbilityUseRechargeHint": "{type} израсходован и требует перезарядки!",
-	"DND5E.AbilityUseNormalHint": "{type} имеет {value} из {max} зарядов из {per} оставшихся.",
-	"DND5E.AbilityUseConsumableChargeHint": "Использование {type} израсходует 1 заряд из {value} оставшихся.",
-	"DND5E.AbilityUseConsumableQuantityHint": "Использование {type} израсходует 1 количество из {quantity} оставшихся",
-	"DND5E.AbilityUseConsumableDestroyHint": "Использование {type} израсходует последний заряд и предмет будет уничтожен.",
-	"DND5E.AbilityUseConsumableDestroyResourceHint": "Использование {type} израсходует последний заряд и {name} будет уничтожен.",
-	"DND5E.AbilityUseConsume": "Потратить использование способности?",
-	"DND5E.AbilityUseConsumeAction": "Расход использования",
 	"DND5E.AbilityUseChargesLabel": "{value} зарядов",
 	"DND5E.AbilityUseConsumableLabel": "{max} за {per}",
 	"DND5E.AbilityUseCast": "Сотворить заклинание",
@@ -464,6 +455,7 @@
 	"DND5E.ArmorHeavyProficiency": "Тяжёлая",
 	"DND5E.ArmorLightProficiency": "Лёгкая",
 	"DND5E.ArmorMediumProficiency": "Средняя",
+	"DND5E.ArmorValue": "Значение брони",
 	"DND5E.AC": "КБ",
 
 	"DND5E.ATTACK": {
@@ -634,16 +626,24 @@
 					"label": "Игнорирование свойств",
 					"hint": "Компоненты и другие свойства, игнорируемые при сотворении."
 				},
+				"spellbook": {
+					"label": "Отображение в заклинаниях",
+					"hint": "Показывать заклинание в списке заклинаний персонажа."
+				},
 				"uuid": {
 					"label": "Заклинание"
 				}
 			}
 		},
 		"SECTIONS": {
-			"Spell": "Заклинание"
+			"Spell": "Заклинание",
+			"Spellbook": "Заклинания предмета"
 		},
 		"Action": {
 			"RemoveSpell": "Удалить заклинание"
+		},
+		"Enchantment": {
+			"Name": "Изменения заклинания"
 		}
 	},
 
@@ -1016,7 +1016,7 @@
 				"Label": "Исп. функции",
 				"PromptDecrease": "Израсходовать использования функции?",
 				"PromptIncrease": "Восстановить использования функции?",
-				"PromptHintDecrease": "Потратить <strong>{cost}</strong> {use} у этой функции.",
+				"PromptHintDecrease": "Потратить <strong>{cost}</strong> {use} у этой функции (доступно {available} {availableUse}).",
 				"PromptHintIncrease": "Восстановить <strong>{cost}</strong> {use} у этой функции.",
 				"Warning": "использований у функции {activity} на {item}"
 			},
@@ -1024,15 +1024,15 @@
 				"Label": "Параметр",
 				"PromptDecrease": "Израсходовать параметр?",
 				"PromptIncrease": "Восстановить параметр?",
-				"PromptHintDecrease": "Уменьшить <code>{attribute}</code> на <strong>{cost}</strong>.",
-				"PromptHintIncrease": "Увеличить <code>{attribute}</code> на <strong>{cost}</strong>.",
+				"PromptHintDecrease": "Уменьшить <code>{attribute}</code> на <strong>{cost}</strong> (сейчас {current}).",
+				"PromptHintIncrease": "Увеличить <code>{attribute}</code> на <strong>{cost}</strong> (сейчас {current}).",
 				"Warning": "Значение {attribute}"
 			},
 			"HitDice": {
 				"Label": "Кость здоровья",
 				"PromptDecrease": "Расход кости здоровья?",
 				"PromptIncrease": "Восстановление кости здоровья?",
-				"PromptHintDecrease": "Потратить <strong>{cost}</strong> {denomination} {die}.",
+				"PromptHintDecrease": "Потратить <strong>{cost}</strong> {denomination} {die} (осталось {available}).",
 				"PromptHintIncrease": "Восстановить  <strong>{cost}</strong> {denomination} {die}.",
 				"Warning": "{denomination} КЗ"
 			},
@@ -1044,7 +1044,7 @@
 				"Label": "Использования предмета",
 				"PromptDecrease": "Расход использования?",
 				"PromptIncrease": "Восстановление использования?",
-				"PromptHintDecrease": "Потратить <strong>{cost}</strong> {use} у {item}.",
+				"PromptHintDecrease": "Потратить <strong>{cost}</strong> {use} у {item} (доступно {available} {availableUse}).",
 				"PromptHintIncrease": "Восстановить <strong>{cost}</strong> {use} у {item}.",
 				"Warning": "использований у {name}"
 			},
@@ -1052,7 +1052,7 @@
 				"Label": "Реагент",
 				"PromptDecrease": "Расход реагента?",
 				"PromptIncrease": "Восстановление реагента?",
-				"PromptHintDecrease": "Убавить {item} на <strong>{cost}</strong>.",
+				"PromptHintDecrease": "Убавить {item} на <strong>{cost}</strong> (осталось {quantity}).",
 				"PromptHintIncrease": "Прибавить {item} на <strong>{cost}</strong>.",
 				"Warning": "у {name}"
 			},
@@ -1064,7 +1064,7 @@
 				"Label": "Ячейки заклинаний",
 				"PromptDecrease": "Использовать ячейку?",
 				"PromptIncrease": "Восстановить ячейку?",
-				"PromptHintDecrease": "Потратить <strong>{cost}</strong> {slot}.",
+				"PromptHintDecrease": "Потратить <strong>{cost}</strong> {slot} (осталось {available}).",
 				"PromptHintIncrease": "Восстановить <strong>{cost}</strong> {slot}.",
 				"Warning": "{level} ячеек"
 			},
@@ -1079,7 +1079,8 @@
 			"MissingItem": "Предмет, настроенный на расходование функцией {activity} на {item}, не может быть найден.",
 			"MissingSpellSlot": "Нет доступных ячеек {level} круга.",
 			"None": "Нет доступных {type} для расходования. Требуется {cost}.",
-			"NotEnough": "Нет доступных {type} для расходования. Требуется {cost}, но доступно только {available}."
+			"NotEnough": "Нет доступных {type} для расходования. Требуется {cost}, но доступно только {available}.",
+			"WillDestroy": "Это израсходует последнее использование и {item} будет уничтожен."
 		}
 	},
 
@@ -1509,16 +1510,40 @@
 	},
 
 	"DND5E.Environment": "Среда",
+
+	"DND5E.EQUIPMENT": {
+		"Type": {
+			"Clothing": {
+				"Label": "Одежда"
+			},
+			"Ring": {
+				"Label": "Кольцо"
+			},
+			"Rod": {
+				"Label": "Скипетр"
+			},
+			"Trinket": {
+				"Label": "Безделушка"
+			},
+			"Vehicle": {
+				"Label": "Снаряжение транспорта"
+			},
+			"Wand": {
+				"Label": "Жезл"
+			},
+			"Wondrous": {
+				"Label": "Чудесный предмет"
+			}
+		}
+	},
+
 	"DND5E.EquipmentBonus": "Магический бонус",
-	"DND5E.EquipmentClothing": "Одежда",
 	"DND5E.EquipmentHeavy": "Тяжёлая броня",
 	"DND5E.EquipmentLight": "Лёгкая броня",
 	"DND5E.EquipmentMedium": "Средняя броня",
 	"DND5E.EquipmentNatural": "Природная броня",
 	"DND5E.EquipmentShield": "Щит",
 	"DND5E.EquipmentShieldProficiency": "Щиты",
-	"DND5E.EquipmentTrinket": "Безделушка",
-	"DND5E.EquipmentVehicle": "Снаряжение транспорта",
 	"DND5E.Equipped": "Надето",
 	"DND5E.Exhaustion": "Утомление",
 	"DND5E.ExhaustionLevel": "{n}-я степень утомления",
@@ -1535,6 +1560,164 @@
 	"DND5E.ExperiencePointsMin": "Мин. ПО для этого уровня",
 	"DND5E.ExperiencePointsValue": "Пункты опыта",
 	"DND5E.Expertise": "Мастерство",
+
+	"DND5E.FACILITY": {
+		"Action": {
+			"RemoveCraft": "Отменть создание"
+		},
+		"CraftHint": "Удаляет предмет, который в данный момент создаётся этой постройкой.",
+		"FIELDS": {
+			"defenders": {
+				"max": {
+					"label": "Защитники"
+				}
+			},
+			"free": {
+				"hint": "Свободные постройки не засчитываются в лимит особых построек.",
+				"label": "Свободная постройка"
+			},
+			"hirelings": {
+				"max": {
+					"label": "Прислуга"
+				}
+			},
+			"level": {
+				"label": "Требование к уровню"
+			},
+			"order": {
+				"label": "Приказ"
+			},
+			"progress": {
+				"max": {
+					"label": "Всего"
+				},
+				"value": {
+					"label": "Текущее"
+				}
+			},
+			"size": {
+				"label": "Размер"
+			},
+			"trade": {
+				"creatures": {
+					"max": {
+						"label": "Вместимость существ"
+					}
+				},
+				"profit": {
+					"label": "Прибыльность"
+				},
+				"stock": {
+					"stocked": {
+						"hint": "Подходит для постройки, в которой не хранятся товары с разной стоимостью, а вместо она считается либо заполненной, либо пустой.",
+						"label": "Заполненная"
+					},
+					"value": {
+						"label": "Стоимость"
+					},
+					"max": {
+						"label": "Максимум"
+					}
+				}
+			},
+			"type": {
+				"subtype": {
+					"label": "Тип"
+				},
+				"value": {
+					"label": "Категория"
+				}
+			}
+		},
+		"Goods": "Товары",
+		"Occupants": "Обитатели",
+		"Orders": {
+			"Label": "Приказы",
+			"craft": {
+				"inf": "Изготовление",
+				"present": "Изготовливает"
+			},
+			"empower": {
+				"inf": "Усиление",
+				"present": "Усиляет"
+			},
+			"enlarge": {
+				"inf": "Увеличение",
+				"present": "Увеличивает"
+			},
+			"harvest": {
+				"inf": "Сбор",
+				"present": "Собирает"
+			},
+			"maintain": {
+				"inf": "Поддержание",
+				"present": "Поддерживает"
+			},
+			"recruit": {
+				"inf": "Наём",
+				"present": "Нанимает"
+			},
+			"research": {
+				"inf": "Исследование",
+				"present": "Исследует"
+			},
+			"trade": {
+				"inf": "Торговля",
+				"present": "Торгует"
+			}
+		},
+		"Progress": "Прогресс",
+		"Properties": "Свойства",
+		"Sizes": {
+			"cramped": "Тесная",
+			"roomy": "Вместительная",
+			"vast": "Просторная"
+		},
+		"Types": {
+			"Basic": {
+				"Label": "Обычная постройка",
+				"Bedroom": "Спальня",
+				"DiningRoom": "Обеденный зал",
+				"Parlor": "Гостиная",
+				"Courtyard": "Внутренний двор",
+				"Kitchen": "Кухня",
+				"Storage": "Хранилище"
+			},
+			"Special": {
+				"Label": "Особая постройка",
+				"ArcaneStudy": "Магическая лаборатория",
+				"Armory": "Оружейная палата",
+				"Barrack": "Казарма",
+				"Garden": "Сад",
+				"Library": "Библиотека",
+				"Sanctuary": "Молельня",
+				"Smithy": "Кузница",
+				"Storehouse": "Склад",
+				"Workshop": "Мастерская",
+				"GamingHall": "Игорный зал",
+				"Greenhouse": "Теплица",
+				"Laboratory": "Лаборатория",
+				"Sacristy": "Ризница",
+				"Scriptorium": "Скрипторий",
+				"Stable": "Конюшня",
+				"TeleportationCircle": "Круг телепортации",
+				"Theater": "Театр",
+				"TrainingArea": "Учебный плац",
+				"TrophyRoom": "Трофейная комната",
+				"Archive": "Архив",
+				"MeditationChamber": "Комната медитации",
+				"Menagerie": "Зверинец",
+				"Observatory": "Обсерватория",
+				"Pub": "Харчевня",
+				"Reliquary": "Реликварий",
+				"Demiplane": "Демиплан",
+				"Guildhall": "Ратуша",
+				"Sanctum": "Святилище",
+				"WarRoom": "Командный пункт"
+			}
+		}
+	},
+
 	"DND5E.Favorite": "Избранное",
 	"DND5E.FavoriteDrop": "Добавить в избранное",
 	"DND5E.FavoriteRemove": "Удалить из избранного",
@@ -1685,6 +1868,7 @@
 	"DND5E.FormulaMalformedError": "Проблема в обработке формулы {property} в {name}.",
 	"DND5E.FormulaMissingReferenceWarn": "Формула {property} в {name} имеет отсылки к отсутствующим данным: {references}",
 	"DND5E.Gender": "Пол",
+	"DND5E.GlobalBonus": "Глобальные бонусы",
 	"DND5E.GrantedAbilities": "Полученные способности",
 	"DND5E.GroupInventory": "Инвентарь",
 	"DND5E.GroupHP": "Общие пункты здоровья",
@@ -1776,18 +1960,29 @@
 	"DND5E.HitPointsCurrent": "Текущие пункты здоровья",
 	"DND5E.HitPointsMax": "Максимальные пункты здоровья",
 	"DND5E.HitPointsMin": "Минимальные пункты здоровья",
-	"DND5E.HitPointsOverride": "Перезапись максимальных пунктов здоровья",
+	"DND5E.HitPointsOverride": "Перезапись максимума",
+	"DND5E.HitPointsOverrideHint": "Перезаписать автоматически раскичатанные пункты здоровья, игнорируя класс, бонусы и  прочие модификаторы.",
 	"DND5E.HitPointsTemp": "Временные пункты здоровья",
 	"DND5E.HitPointsTempShort": "Временные ПЗ",
-	"DND5E.HitPointsTempMax": "Временный максимум пунктов здоровья",
+	"DND5E.HitPointsTempMax": "Временный максимум",
+	"DND5E.HitPointsTempMaxHint": "Временно изменяет максимальные ПЗ.",
 	"DND5E.HitPointsTempMaxShort": "Врем. макс. ПЗ",
 	"DND5E.HP": "ПЗ",
 	"DND5E.HealthConditions": "Состояние здоровья",
 	"DND5E.HPFormula": "Формула здоровья",
 	"DND5E.HPFormulaError": "Введённая формула пунктов здоровья не может быть рассчитана.",
 	"DND5E.HPFormulaRollMessage": "Формула броска пунктов здоровья",
+
+	"DND5E.HITDICE": {
+		"Action": {
+			"Decrease": "Понижение",
+			"Increase": "Повышение"
+		},
+		"Config": "Настройка костей здоровья"
+	},
+
 	"DND5E.HitDie": "Кость здоровья",
-	"DND5E.HitDice": "Кость здоровья",
+	"DND5E.HitDice": "Кости здоровья",
 	"DND5E.HitDiceAutoSpend": {
 		"Label": "Автоматическое использование КЗ",
 		"Hint": "Автоматически бросать кости здоровья, пока они есть и здоровье не восстановится полностью."
@@ -1856,6 +2051,7 @@
 	"DND5E.ItemEquipmentStealthDisav": "Помеха скрытности",
 	"DND5E.ItemEquipmentType": "Тип снаряжения",
 	"DND5E.ItemEquipmentUsage": "Использование снаряжения",
+	"DND5E.ItemFacilityDetails": "Подробности постройки",
 	"DND5E.ItemFeatureDetails": "Подробности особенности",
 	"DND5E.ItemFeatureProperties": "Свойства особенности",
 	"DND5E.ItemFeatureSubtype": "{category}",
@@ -2913,6 +3109,8 @@
 	"DND5E.TraitConfigChooseWrapper": "Выберите {choices}",
 	"DND5E.TraitDIPlural.one": "Невосприимчивость к урону",
 	"DND5E.TraitDIPlural.other": "Невосприимчивости к урону",
+	"DND5E.TraitDMPlural.one": "Модификация урона",
+	"DND5E.TraitDMPlural.other": "Модификации урона",
 	"DND5E.TraitDRPlural.one": "Устойчивость к урону",
 	"DND5E.TraitDRPlural.other": "Устойчивости к урону",
 	"DND5E.TraitDVPlural.one": "Уязвимость к урону",
@@ -3063,9 +3261,9 @@
 	"DND5E.VehicleActionThresholdsMid": "Неполный состав экипажа",
 	"DND5E.VehicleActionThresholdsMin": "Минимальный состав экипажа",
 	"DND5E.VehicleCargo": "Груз",
-	"DND5E.VehicleCargoCapacity": "Груз",
+	"DND5E.VehicleCargoCapacity": "Вместимость груза",
 	"DND5E.VehicleCargoCrew": "Груз и экипаж",
-	"DND5E.VehicleCreatureCapacity": "Существа",
+	"DND5E.VehicleCreatureCapacity": "Вместимость существ",
 	"DND5E.VehicleCrew": "Экипаж",
 	"DND5E.VehicleCrewPassengers": "Экипаж и пассажиры",
 	"DND5E.VehicleCrewed": "С экипажем",
