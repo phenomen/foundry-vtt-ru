@@ -1563,9 +1563,22 @@
 
 	"DND5E.FACILITY": {
 		"Action": {
+			"DeleteDefender": "Удалить защитника",
+			"DeleteOccupant": "Удалить присутствующего",
 			"RemoveCraft": "Отменть создание"
 		},
-		"CraftHint": "Удаляет предмет, который в данный момент создаётся этой постройкой.",
+		"AvailableFacility": {
+			"basic": {
+				"build": "Возвести постройку",
+				"free": "Свободная постройка"
+			},
+			"special": {
+				"free": "Добавить постройку"
+			}
+		},
+		"Bastion": "Бастион",
+		"CraftHint": "Предмет, который в данный момент изготавливается этой постройкой.",
+		"Description": "Описание",
 		"FIELDS": {
 			"defenders": {
 				"max": {
@@ -1590,6 +1603,9 @@
 			"progress": {
 				"max": {
 					"label": "Всего"
+				},
+				"order": {
+					"label": "Выполнение"
 				},
 				"value": {
 					"label": "Текущее"
@@ -1630,7 +1646,8 @@
 			}
 		},
 		"Goods": "Товары",
-		"Occupants": "Обитатели",
+		"NoDefenders": "Бастион без защиты.",
+		"Occupants": "Присутствуют",
 		"Orders": {
 			"Label": "Приказы",
 			"craft": {
@@ -1673,9 +1690,13 @@
 			"roomy": "Вместительная",
 			"vast": "Просторная"
 		},
+		"Squares": "{squares} клеток",
 		"Types": {
 			"Basic": {
-				"Label": "Обычная постройка",
+				"Label": {
+					"one": "Обычная постройка",
+					"other": "Обычные постройки"
+				},
 				"Bedroom": "Спальня",
 				"DiningRoom": "Обеденный зал",
 				"Parlor": "Гостиная",
@@ -1684,7 +1705,10 @@
 				"Storage": "Хранилище"
 			},
 			"Special": {
-				"Label": "Особая постройка",
+				"Label": {
+					"one": "Особая постройка",
+					"other": "Особые постройки"
+				},
 				"ArcaneStudy": "Магическая лаборатория",
 				"Armory": "Оружейная палата",
 				"Barrack": "Казарма",
@@ -1960,11 +1984,11 @@
 	"DND5E.HitPointsCurrent": "Текущие пункты здоровья",
 	"DND5E.HitPointsMax": "Максимальные пункты здоровья",
 	"DND5E.HitPointsMin": "Минимальные пункты здоровья",
-	"DND5E.HitPointsOverride": "Перезапись максимума",
+	"DND5E.HitPointsOverride": "Перезапись максимальных ПЗ",
 	"DND5E.HitPointsOverrideHint": "Перезаписать автоматически раскичатанные пункты здоровья, игнорируя класс, бонусы и  прочие модификаторы.",
 	"DND5E.HitPointsTemp": "Временные пункты здоровья",
 	"DND5E.HitPointsTempShort": "Временные ПЗ",
-	"DND5E.HitPointsTempMax": "Временный максимум",
+	"DND5E.HitPointsTempMax": "Временные максимальные ПЗ",
 	"DND5E.HitPointsTempMaxHint": "Временно изменяет максимальные ПЗ.",
 	"DND5E.HitPointsTempMaxShort": "Врем. макс. ПЗ",
 	"DND5E.HP": "ПЗ",
