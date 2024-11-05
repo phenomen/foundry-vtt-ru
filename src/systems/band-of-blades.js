@@ -16,14 +16,12 @@ function registerConverters() {
 
 		effectsConverter: (effects, translations) => {
 			if (!effects || !translations) return;
-			return effects
-				.filter((effect) => effect)
-				.map((effect) => {
-					if (effect.name && translations[effect.name]) {
-						effect.name = translations[effect.name];
-					}
-					return effect;
-				});
+			return effects.map((effect) => {
+				if (effect.name && translations[effect.name]) {
+					effect.name = translations[effect.name];
+				}
+				return effect;
+			});
 		},
 	});
 }
