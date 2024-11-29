@@ -9,10 +9,10 @@
 
 ## Ссылки
 
-- [Github](https://github.com/phenomen/foundry-vtt-ru)
+- [Русскоязычное сообщество Foundry в Discord](https://discord.gg/Z2CXFy35WF)
 - [manifest.json](https://github.com/phenomen/foundry-vtt-ru/releases/download/latest/module.json)
 - [Модуль на сайте Foundry VTT](https://foundryvtt.com/packages/ru-ru/)
-- [Русскоязычное сообщество Foundry в Discord](https://discord.gg/Z2CXFy35WF)
+- [Github](https://github.com/phenomen/foundry-vtt-ru)
 
 ## Установка и настройка
 
@@ -55,6 +55,8 @@
 - Genesys / Star Wars FFG
 - GUMSHOE (СЫШИК)
 - Ironsworn / Starforged
+- Mausritter
+- Mouseguard
 - Mutants Year Zero (Мутанты. Точка Отсчёта)
 - Old-School Essentials
 - Pathfinder 1e

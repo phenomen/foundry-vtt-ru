@@ -28,6 +28,8 @@
 	"TYPES.Item.consumablePl": "Расходники",
 	"TYPES.Item.equipment": "Снаряжение",
 	"TYPES.Item.equipmentPl": "Снаряжение",
+	"TYPES.Item.facility": "Постройка",
+	"TYPES.Item.facilityPl": "Постройки",
 	"TYPES.Item.feat": "Особенность",
 	"TYPES.Item.featurePl": "Особенности",
 	"TYPES.Item.loot": "Добыча",
@@ -54,6 +56,24 @@
 	"DND5E.AbbreviationLevel": "Ур.",
 	"DND5E.AbbreviationLbs": "фнт",
 	"DND5E.AbbreviationSR": "КО",
+
+	"DND5E.ABILITY": {
+		"Configure": {
+			"Title": "Настройка {ability}"
+		},
+		"SECTIONS": {
+			"Bonuses": {
+				"Label": "Бонусы {ability}",
+				"Hint": "Эти бонусы применяются к проверкам и испытаниям {ability}."
+			},
+			"Global": {
+				"Label": "Глобальные бонусы",
+				"Hint": "Эти бонусы применяются к проверкам и испытаниям всех характеристик."
+			},
+			"Score": "Показатель {ability}"
+		}
+	},
+
 	"DND5E.Ability": "Характеристика",
 	"DND5E.Abilities": "Характеристики",
 	"DND5E.AbilityStr": "Сила",
@@ -73,23 +93,14 @@
 	"DND5E.AbilitySan": "Рассудок",
 	"DND5E.AbilitySanAbbr": "рас",
 	"DND5E.AbilityScore": "Характеристика",
+	"DND5E.AbilityScoreShort": "Показатель",
 	"DND5E.AbilityScorePl": "Характеристики",
 	"DND5E.AbilityScoreL": "Показатель {ability}",
 	"DND5E.AbilityScoreMax": "Максимальная характеристика",
+	"DND5E.AbilityScoreMaxShort": "Максимум",
 	"DND5E.AbilityModifier": "Модификатор характеристики",
 	"DND5E.AbilityPromptText": "Выберите тип проверки {ability}",
 	"DND5E.AbilityPromptTitle": "Проверка {ability}",
-	"DND5E.AbilityUseHint": "Использование {type}: {name}",
-	"DND5E.AbilityUseUnavailableHint": "У предмета не осталось использований!",
-	"DND5E.AbilityUseChargedHint": "{type} заряжен и готов к использованию!",
-	"DND5E.AbilityUseRechargeHint": "{type} израсходован и требует перезарядки!",
-	"DND5E.AbilityUseNormalHint": "{type} имеет {value} из {max} зарядов из {per} оставшихся.",
-	"DND5E.AbilityUseConsumableChargeHint": "Использование {type} израсходует 1 заряд из {value} оставшихся.",
-	"DND5E.AbilityUseConsumableQuantityHint": "Использование {type} израсходует 1 количество из {quantity} оставшихся",
-	"DND5E.AbilityUseConsumableDestroyHint": "Использование {type} израсходует последний заряд и предмет будет уничтожен.",
-	"DND5E.AbilityUseConsumableDestroyResourceHint": "Использование {type} израсходует последний заряд и {name} будет уничтожен.",
-	"DND5E.AbilityUseConsume": "Потратить использование способности?",
-	"DND5E.AbilityUseConsumeAction": "Расход использования",
 	"DND5E.AbilityUseChargesLabel": "{value} зарядов",
 	"DND5E.AbilityUseConsumableLabel": "{max} за {per}",
 	"DND5E.AbilityUseCast": "Сотворить заклинание",
@@ -184,6 +195,9 @@
 			"Effect": "Эффект",
 			"Identity": "Данные",
 			"Time": "Время"
+		},
+		"Warning": {
+			"UsageNotAllowed": "Эта функция сейчас недоступна."
 		}
 	},
 
@@ -444,6 +458,7 @@
 	"DND5E.ArmorHeavyProficiency": "Тяжёлая",
 	"DND5E.ArmorLightProficiency": "Лёгкая",
 	"DND5E.ArmorMediumProficiency": "Средняя",
+	"DND5E.ArmorValue": "Значение брони",
 	"DND5E.AC": "КБ",
 
 	"DND5E.ATTACK": {
@@ -469,7 +484,7 @@
 					}
 				},
 				"flat": {
-					"label": "Чистое попадание",
+					"label": "Неизменное попадание",
 					"hint": "При атаке, игнорировать модификатор характеристики, умение и другие бонусы этого актёра и использовать только бонус, определённый функцией."
 				},
 				"type": {
@@ -557,6 +572,57 @@
 	"DND5E.Background": "Происхождение",
 	"DND5E.BackgroundAdd": "Добавить происхождение",
 	"DND5E.BackgroundName": "Название происхождения",
+
+	"DND5E.Bastion": {
+		"Action": {
+			"BastionTurn": "Ход бастиона"
+		},
+		"Attack": {
+			"Automatic": "Расчитать автоматически",
+			"Formula": "Формула атаки",
+			"NoActorWarning": "Требуется выбрать персонажа в качестве цели атаки, либо выбрав токен, либо открыв бланк персонажа.",
+			"Resolve": "Расчёт атаки",
+			"Result": {
+				"Damaged": "{link} получает урон во время атаки.",
+				"Deaths": {
+					"one": "<strong>{deaths}</strong> защитник был повержен во время атаки на бастион.",
+					"other": "<strong>{deaths}</strong> защитника было повержено во время атаки на бастион."
+				},
+				"NoDeaths": "Атака на бастион была отражена без потерь.",
+				"Undefended": "Атакован бастион без защиты!"
+			},
+			"Title": "Атака бастиона"
+		},
+		"Button": {
+			"Label": "Отображение кнопки хода бастиона",
+			"Hint": "В интерфейсе будет отображена кнопка для продвижения хода бастиона."
+		},
+		"Configuration": {
+			"Name": "Бастионы",
+			"Label": "Настройка бастионов",
+			"Hint": "Различные настройки системы бастионов из Руководства Мастера 2024."
+		},
+		"Confirm": "Перейти на следующий ход бастиона?",
+		"Duration": {
+			"Label": "Длительность хода бастиона (дней)"
+		},
+		"Enabled": {
+			"Label": "Включение бастионов",
+			"Hint": "Персонажи игроков получат доступ к вкладке «Бастион» по достижению 5-го уровня, смогут возводить постройки и давать приказы."
+		},
+		"Gold": {
+			"Claim": "Получить прибыль",
+			"Claimed": "получено",
+			"Unclaimed": "не получено"
+		},
+		"Label": "Бастион",
+		"Summary": {
+			"Gold": "{value} ({claimed})",
+			"NoOrders": "Особые постройки не получили приказов в этом ходу.",
+			"Order": "Приказ <strong>{order}</strong> для {link} завершён."
+		}
+	},
+
 	"DND5E.Biography": "Биография",
 	"DND5E.BiographyPublic": "Общедоступная биография",
 	"DND5E.BiopgrahyPublicEdit": "Редактировать Общедоступную Биографию",
@@ -586,6 +652,55 @@
 	"DND5E.Bonuses": "Глобальные бонусы",
 	"DND5E.BonusesHint": "Добавьте глобальный бонус в виде формулы, применяемой к некоторым проверкам. Например: 1d4+2",
 	"DND5E.BonusesInstructions": "Настройте бонусы персонажа, добавляемые к определённым проверкам.",
+
+	"DND5E.CAST": {
+		"Title": "Сотворение",
+		"FIELDS": {
+			"spell": {
+				"label": "Подробности сотворения",
+				"challenge": {
+					"attack": {
+						"label": "Бонус атаки",
+						"hint": "Неизменный бонус к попаданию вместо обычного бонуса атаки заклинания."
+					},
+					"save": {
+						"label": "СЛ испытания",
+						"hint": "Неизменная СЛ  вместо обычной СЛ испытания заклинания."
+					},
+					"override": {
+						"label": "Перезапись значений",
+						"hint": "Перезапись обычного бонуса атаки и СЛ заклинания."
+					}
+				},
+				"level": {
+					"label": "Круг сотворения",
+					"hint": "Базовый круг сотворения заклинания, если он отличается от круга самого заклинания."
+				},
+				"properties": {
+					"label": "Игнорирование свойств",
+					"hint": "Компоненты и другие свойства, игнорируемые при сотворении."
+				},
+				"spellbook": {
+					"label": "Отображение в заклинаниях",
+					"hint": "Показывать заклинание в списке заклинаний персонажа."
+				},
+				"uuid": {
+					"label": "Заклинание"
+				}
+			}
+		},
+		"SECTIONS": {
+			"Spell": "Заклинание",
+			"Spellbook": "Дополнительные заклинания"
+		},
+		"Action": {
+			"RemoveSpell": "Удалить заклинание"
+		},
+		"Enchantment": {
+			"Name": "Изменения заклинания"
+		}
+	},
+
 	"DND5E.Casting": "Сотворение",
 	"DND5E.Conditions": "Состояния",
 	"DND5E.Controls": {
@@ -631,7 +746,7 @@
 					},
 					"formula": {
 						"label": "Формула СЛ",
-						"hint": "Формула или постоянное значение для проверки СЛ."
+						"hint": "Формула или неизменное значение для проверки СЛ."
 					}
 				}
 			}
@@ -658,11 +773,11 @@
 			"primaryAbility": {
 				"all": {
 					"label": "Требовать все",
-					"hint": "Все основные характеристика должны соответствовать минимуму для мультикласса."
+					"hint": "Все основные характеристики должны соответствовать минимуму для мультиклассирования."
 				},
 				"value": {
-					"label": "Основные характеристики",
-					"hint": "Характеристики, чаще всего используемые этим классом. Используются для ограничений мультикласса."
+					"label": "Основная характеристика",
+					"hint": "Характеристики, чаще всего используемые этим классом. Используются для ограничений мультиклассирования."
 				}
 			}
 		}
@@ -955,7 +1070,7 @@
 				"Label": "Исп. функции",
 				"PromptDecrease": "Израсходовать использования функции?",
 				"PromptIncrease": "Восстановить использования функции?",
-				"PromptHintDecrease": "Потратить <strong>{cost}</strong> {use} у этой функции.",
+				"PromptHintDecrease": "Потратить <strong>{cost}</strong> {use} у этой функции (доступно {available} {availableUse}).",
 				"PromptHintIncrease": "Восстановить <strong>{cost}</strong> {use} у этой функции.",
 				"Warning": "использований у функции {activity} на {item}"
 			},
@@ -963,15 +1078,15 @@
 				"Label": "Параметр",
 				"PromptDecrease": "Израсходовать параметр?",
 				"PromptIncrease": "Восстановить параметр?",
-				"PromptHintDecrease": "Уменьшить <code>{attribute}</code> на <strong>{cost}</strong>.",
-				"PromptHintIncrease": "Увеличить <code>{attribute}</code> на <strong>{cost}</strong>.",
+				"PromptHintDecrease": "Уменьшить <code>{attribute}</code> на <strong>{cost}</strong> (сейчас {current}).",
+				"PromptHintIncrease": "Увеличить <code>{attribute}</code> на <strong>{cost}</strong> (сейчас {current}).",
 				"Warning": "Значение {attribute}"
 			},
 			"HitDice": {
 				"Label": "Кость здоровья",
 				"PromptDecrease": "Расход кости здоровья?",
 				"PromptIncrease": "Восстановление кости здоровья?",
-				"PromptHintDecrease": "Потратить <strong>{cost}</strong> {denomination} {die}.",
+				"PromptHintDecrease": "Потратить <strong>{cost}</strong> {denomination} {die} (осталось {available}).",
 				"PromptHintIncrease": "Восстановить  <strong>{cost}</strong> {denomination} {die}.",
 				"Warning": "{denomination} КЗ"
 			},
@@ -983,7 +1098,7 @@
 				"Label": "Использования предмета",
 				"PromptDecrease": "Расход использования?",
 				"PromptIncrease": "Восстановление использования?",
-				"PromptHintDecrease": "Потратить <strong>{cost}</strong> {use} у {item}.",
+				"PromptHintDecrease": "Потратить <strong>{cost}</strong> {use} у {item} (доступно {available} {availableUse}).",
 				"PromptHintIncrease": "Восстановить <strong>{cost}</strong> {use} у {item}.",
 				"Warning": "использований у {name}"
 			},
@@ -991,7 +1106,7 @@
 				"Label": "Реагент",
 				"PromptDecrease": "Расход реагента?",
 				"PromptIncrease": "Восстановление реагента?",
-				"PromptHintDecrease": "Убавить {item} на <strong>{cost}</strong>.",
+				"PromptHintDecrease": "Убавить {item} на <strong>{cost}</strong> (осталось {quantity}).",
 				"PromptHintIncrease": "Прибавить {item} на <strong>{cost}</strong>.",
 				"Warning": "у {name}"
 			},
@@ -1003,7 +1118,7 @@
 				"Label": "Ячейки заклинаний",
 				"PromptDecrease": "Использовать ячейку?",
 				"PromptIncrease": "Восстановить ячейку?",
-				"PromptHintDecrease": "Потратить <strong>{cost}</strong> {slot}.",
+				"PromptHintDecrease": "Потратить <strong>{cost}</strong> {slot} (осталось {available}).",
 				"PromptHintIncrease": "Восстановить <strong>{cost}</strong> {slot}.",
 				"Warning": "{level} ячеек"
 			},
@@ -1018,7 +1133,8 @@
 			"MissingItem": "Предмет, настроенный на расходование функцией {activity} на {item}, не может быть найден.",
 			"MissingSpellSlot": "Нет доступных ячеек {level} круга.",
 			"None": "Нет доступных {type} для расходования. Требуется {cost}.",
-			"NotEnough": "Нет доступных {type} для расходования. Требуется {cost}, но доступно только {available}."
+			"NotEnough": "Нет доступных {type} для расходования. Требуется {cost}, но доступно только {available}.",
+			"WillDestroy": "Это израсходует последнее использование и {item} будет уничтожен."
 		}
 	},
 
@@ -1089,6 +1205,9 @@
 			"Label": "Конвертация",
 			"Action": "Конвертировать валюту",
 			"Hint": "Действие конвертирует все монеты в наивысшую валюту, позволяя снизить переносимый вес. Обратить действие нельзя."
+		},
+		"Error": {
+			"InsufficientFunds": "Не удалось вычесть {amount}{denomination} из {name}. Не хватает средств."
 		},
 		"Transfer": {
 			"Label": "Передача",
@@ -1448,16 +1567,40 @@
 	},
 
 	"DND5E.Environment": "Среда",
+
+	"DND5E.EQUIPMENT": {
+		"Type": {
+			"Clothing": {
+				"Label": "Одежда"
+			},
+			"Ring": {
+				"Label": "Кольцо"
+			},
+			"Rod": {
+				"Label": "Скипетр"
+			},
+			"Trinket": {
+				"Label": "Безделушка"
+			},
+			"Vehicle": {
+				"Label": "Снаряжение транспорта"
+			},
+			"Wand": {
+				"Label": "Жезл"
+			},
+			"Wondrous": {
+				"Label": "Чудесный предмет"
+			}
+		}
+	},
+
 	"DND5E.EquipmentBonus": "Магический бонус",
-	"DND5E.EquipmentClothing": "Одежда",
 	"DND5E.EquipmentHeavy": "Тяжёлая броня",
 	"DND5E.EquipmentLight": "Лёгкая броня",
 	"DND5E.EquipmentMedium": "Средняя броня",
 	"DND5E.EquipmentNatural": "Природная броня",
 	"DND5E.EquipmentShield": "Щит",
 	"DND5E.EquipmentShieldProficiency": "Щиты",
-	"DND5E.EquipmentTrinket": "Безделушка",
-	"DND5E.EquipmentVehicle": "Снаряжение транспорта",
 	"DND5E.Equipped": "Надето",
 	"DND5E.Exhaustion": "Утомление",
 	"DND5E.ExhaustionLevel": "{n}-я степень утомления",
@@ -1474,6 +1617,261 @@
 	"DND5E.ExperiencePointsMin": "Мин. ПО для этого уровня",
 	"DND5E.ExperiencePointsValue": "Пункты опыта",
 	"DND5E.Expertise": "Мастерство",
+
+	"DND5E.FACILITY": {
+		"Action": {
+			"DeleteDefender": "Удалить защитника",
+			"DeleteOccupant": "Удалить присутствующего",
+			"RemoveCraft": "Отменть создание"
+		},
+		"AvailableFacility": {
+			"basic": {
+				"build": "Возвести постройку",
+				"free": "Свободная постройка"
+			},
+			"special": {
+				"free": "Возвести постройку"
+			}
+		},
+		"Build": {
+			"Unbuilt": "Снести"
+		},
+		"Costs": {
+			"Automatic": "Вычесть автоматически",
+			"Days": "{days} дня",
+			"Label": "Цена",
+			"Manual": "Оплачено",
+			"Paid": "оплачено",
+			"Unpaid": "не оплачено"
+		},
+		"Craft": {
+			"BaseItem": {
+				"Label": "Покупка базового предмета",
+				"Hint": "Базовый предмет будет куплен за полную стоимость вместо изготовления."
+			},
+			"Hint": "Предметы, которые в данный момент изготавливаются или собираются этой постройкой."
+		},
+		"Description": "Описание",
+		"FIELDS": {
+			"building": {
+				"built": {
+					"label": "Возведена",
+					"hint": "Обычные постройки должны быть возведены до того, как их можно использовать."
+				}
+			},
+			"defenders": {
+				"max": {
+					"label": "Защитники"
+				}
+			},
+			"disabled": {
+				"hint": "Отключенные постройки не могут получать приказы и проводить ремонт в начале следующего хода.",
+				"label": "Отключённая"
+			},
+			"enlargeable": {
+				"hint": "Некоторые особые постройки могут быть расширены за дополнительную цену.",
+				"label": "Расширяемая"
+			},
+			"free": {
+				"hint": "Свободные постройки не засчитываются в лимит особых построек.",
+				"label": "Свободная постройка"
+			},
+			"hirelings": {
+				"max": {
+					"label": "Прислуга"
+				}
+			},
+			"level": {
+				"label": "Требование к уровню"
+			},
+			"order": {
+				"label": "Приказ"
+			},
+			"progress": {
+				"max": {
+					"label": "Всего"
+				},
+				"order": {
+					"label": "Выполнение"
+				},
+				"value": {
+					"label": "Текущий"
+				}
+			},
+			"size": {
+				"label": "Размер"
+			},
+			"trade": {
+				"creatures": {
+					"max": {
+						"label": "Вместимость существ"
+					}
+				},
+				"profit": {
+					"label": "Прибыльность"
+				},
+				"stock": {
+					"stocked": {
+						"hint": "Подходит для постройки, в которой не хранятся запасы с разной стоимостью, а вместо она считается либо укомплектованной, либо пустой.",
+						"label": "Укомплектованная"
+					},
+					"value": {
+						"label": "Стоимость"
+					},
+					"max": {
+						"label": "Максимум"
+					}
+				}
+			},
+			"type": {
+				"subtype": {
+					"label": "Тип"
+				},
+				"value": {
+					"label": "Категория"
+				}
+			}
+		},
+		"Goods": "Товары",
+		"NoDefenders": "Бастион без защиты.",
+		"Occupants": "Присутствуют",
+		"Order": {
+			"Execute": "Выполнить приказ",
+			"Issue": "Приказ: {order}"
+		},
+		"Orders": {
+			"Label": "Приказы",
+			"build": {
+				"inf": "Постройка",
+				"present": "Строит"
+			},
+			"change": {
+				"inf": "Изменение",
+				"present": "Изменяет"
+			},
+			"craft": {
+				"inf": "Изготовление",
+				"present": "Изготовливает"
+			},
+			"empower": {
+				"inf": "Усиление",
+				"present": "Усиляет"
+			},
+			"enlarge": {
+				"inf": "Расширение",
+				"present": "Расширяется"
+			},
+			"harvest": {
+				"inf": "Сбор",
+				"present": "Собирает"
+			},
+			"maintain": {
+				"inf": "Поддержание",
+				"present": "Поддерживает"
+			},
+			"recruit": {
+				"inf": "Наём",
+				"present": "Нанимает"
+			},
+			"repair": {
+				"inf": "Ремонт",
+				"present": "Ремонтирует"
+			},
+			"research": {
+				"inf": "Исследование",
+				"present": "Исследует"
+			},
+			"trade": {
+				"inf": "Торговля",
+				"present": "Торгует"
+			}
+		},
+		"Progress": "Прогресс",
+		"Properties": "Свойства",
+		"Sizes": {
+			"cramped": "Тесная",
+			"roomy": "Вместительная",
+			"vast": "Просторная"
+		},
+		"Squares": "{squares} клеток",
+		"Trade": {
+			"Buy": {
+				"Supplement": "Покупка"
+			},
+			"Creatures": {
+				"Buy": "Перенесите животных, которых желаете приобрести, в ячейки выше и обновите стоимость."
+			},
+			"Price": {
+				"Label": "Базовая цена",
+				"Hint": "Выберите запасы на продажу и укажите базовую стоимость."
+			},
+			"Sell": {
+				"Label": "Продажа запасов",
+				"Supplement": "Продажа"
+			},
+			"Stock": {
+				"Buy": "Покупает",
+				"Sell": "Продаёт"
+			},
+			"Stocked": {
+				"Label": "Полная укомплектованность",
+				"Hint": "Введите стоимость при которой постройка будет полностью укомплектованной."
+			}
+		},
+		"Types": {
+			"Basic": {
+				"Label": {
+					"one": "Обычная постройка",
+					"other": "Обычные постройки"
+				},
+				"Bedroom": "Спальня",
+				"DiningRoom": "Обеденный зал",
+				"Parlor": "Гостиная",
+				"Courtyard": "Внутренний двор",
+				"Kitchen": "Кухня",
+				"Storage": "Хранилище"
+			},
+			"Special": {
+				"Label": {
+					"one": "Особая постройка",
+					"other": "Особые постройки"
+				},
+				"ArcaneStudy": "Магическая лаборатория",
+				"Armory": "Оружейная палата",
+				"Barrack": "Казарма",
+				"Garden": "Сад",
+				"Library": "Библиотека",
+				"Sanctuary": "Молельня",
+				"Smithy": "Кузница",
+				"Storehouse": "Склад",
+				"Workshop": "Мастерская",
+				"GamingHall": "Игорный зал",
+				"Greenhouse": "Теплица",
+				"Laboratory": "Лаборатория",
+				"Sacristy": "Ризница",
+				"Scriptorium": "Скрипторий",
+				"Stable": "Конюшня",
+				"TeleportationCircle": "Круг телепортации",
+				"Theater": "Театр",
+				"TrainingArea": "Учебный плац",
+				"TrophyRoom": "Трофейная комната",
+				"Archive": "Архив",
+				"MeditationChamber": "Комната медитации",
+				"Menagerie": "Зверинец",
+				"Observatory": "Обсерватория",
+				"Pub": "Харчевня",
+				"Reliquary": "Реликварий",
+				"Demiplane": "Демиплан",
+				"Guildhall": "Ратуша",
+				"Sanctum": "Святилище",
+				"WarRoom": "Командный пункт"
+			}
+		},
+		"Use": {
+			"Description": "Приказ {link} {facilityType} выполнить <strong>{order}</strong>."
+		}
+	},
+
 	"DND5E.Favorite": "Избранное",
 	"DND5E.FavoriteDrop": "Добавить в избранное",
 	"DND5E.FavoriteRemove": "Удалить из избранного",
@@ -1509,6 +1907,7 @@
 		},
 		"Monster": "Особенность монстра",
 		"Species": "Черта вида",
+		"SpeciesLegacy": "Особенность расы",
 		"SupernaturalGift": {
 			"Label": "Сверхъестественное благо",
 			"Blessing": "Благословение",
@@ -1518,9 +1917,9 @@
 	},
 	"DND5E.Focus": {
 		"Label": "Фокусирующий предмет",
-		"Arcane": "Мистический",
-		"Druidic": "Друидический",
-		"Holy": "Религиозный"
+		"Arcane": "Мистический фокусирующий предмет",
+		"Druidic": "Фокусирующий предмет друида",
+		"Holy": "Символ религии"
 	},
 	"DND5E.Loot.Art": "Предмет искусства",
 	"DND5E.Loot.Gear": "Походное снаряжение",
@@ -1531,6 +1930,19 @@
 	"DND5E.Loot.Treasure": "Сокровище",
 	"DND5E.Flaws": "Изъяны",
 	"DND5E.FormulaCannotContainDiceError": "Формула {name} не может содержать броски костей.",
+
+	"DND5E.FORWARD": {
+		"Title": "Перенаправление",
+		"FIELDS": {
+			"activity": {
+				"label": "Выполняемая функция"
+			}
+		},
+		"Warning": {
+			"NoActivity": "Связанная функция должна быть настроена перед использованием перенаправляющей функции."
+		}
+	},
+
 	"DND5E.EffectCreate": "Создание эффекта",
 	"DND5E.EffectToggle": "Переключить эффект",
 	"DND5E.EffectEdit": "Изменить эффект",
@@ -1602,7 +2014,8 @@
 	"DND5E.FlagsInitiativeAdv": "Преимущество инициативы",
 	"DND5E.FlagsInitiativeAdvHint": "Проверки инициативы получают преимущество.",
 	"DND5E.FlagsAlert": "Бдительный",
-	"DND5E.FlagsAlertHint": "+5 к Инициативе.",
+	"DND5E.FlagsAlertHint": "Умение в проверках инициативы.",
+	"DND5E.FlagsAlertHintLegacy": "+5 к инициативе.",
 	"DND5E.FlagsJOAT": "Мастер на все руки",
 	"DND5E.FlagsJOATHint": "Половина бонуса умения в навыках у которых у вас нет умения.",
 	"DND5E.FlagsObservant": "Внимательный",
@@ -1624,6 +2037,7 @@
 	"DND5E.FormulaMalformedError": "Проблема в обработке формулы {property} в {name}.",
 	"DND5E.FormulaMissingReferenceWarn": "Формула {property} в {name} имеет отсылки к отсутствующим данным: {references}",
 	"DND5E.Gender": "Пол",
+	"DND5E.GlobalBonus": "Глобальные бонусы",
 	"DND5E.GrantedAbilities": "Полученные способности",
 	"DND5E.GroupInventory": "Инвентарь",
 	"DND5E.GroupHP": "Общие пункты здоровья",
@@ -1715,18 +2129,29 @@
 	"DND5E.HitPointsCurrent": "Текущие пункты здоровья",
 	"DND5E.HitPointsMax": "Максимальные пункты здоровья",
 	"DND5E.HitPointsMin": "Минимальные пункты здоровья",
-	"DND5E.HitPointsOverride": "Перезапись максимальных пунктов здоровья",
+	"DND5E.HitPointsOverride": "Перезапись максимальных ПЗ",
+	"DND5E.HitPointsOverrideHint": "Перезаписать автоматически раскичатанные пункты здоровья, игнорируя класс, бонусы и  прочие модификаторы.",
 	"DND5E.HitPointsTemp": "Временные пункты здоровья",
 	"DND5E.HitPointsTempShort": "Временные ПЗ",
-	"DND5E.HitPointsTempMax": "Временный максимум пунктов здоровья",
+	"DND5E.HitPointsTempMax": "Временные максимальные ПЗ",
+	"DND5E.HitPointsTempMaxHint": "Временно изменяет максимальные ПЗ.",
 	"DND5E.HitPointsTempMaxShort": "Врем. макс. ПЗ",
 	"DND5E.HP": "ПЗ",
 	"DND5E.HealthConditions": "Состояние здоровья",
 	"DND5E.HPFormula": "Формула здоровья",
 	"DND5E.HPFormulaError": "Введённая формула пунктов здоровья не может быть рассчитана.",
 	"DND5E.HPFormulaRollMessage": "Формула броска пунктов здоровья",
+
+	"DND5E.HITDICE": {
+		"Action": {
+			"Decrease": "Понижение",
+			"Increase": "Повышение"
+		},
+		"Config": "Настройка костей здоровья"
+	},
+
 	"DND5E.HitDie": "Кость здоровья",
-	"DND5E.HitDice": "Кость здоровья",
+	"DND5E.HitDice": "Кости здоровья",
 	"DND5E.HitDiceAutoSpend": {
 		"Label": "Автоматическое использование КЗ",
 		"Hint": "Автоматически бросать кости здоровья, пока они есть и здоровье не восстановится полностью."
@@ -1761,7 +2186,7 @@
 	"DND5E.ItemActivationType": "Тип активации",
 	"DND5E.ItemAmmoProperties": "Свойства боеприпасов",
 	"DND5E.ItemAttackBonus": "Модификатор атаки",
-	"DND5E.ItemAttackFlat": "Чистый бонус",
+	"DND5E.ItemAttackFlat": "Неизменный бонус",
 	"DND5E.ItemAttackFlatHint": "Не добавлять умение, модификатор характеристики и другие бонусы к атаке, кроме тех, что указаны здесь.",
 	"DND5E.ItemBackgroundDetails": "Подробности происхождения",
 	"DND5E.ItemClassDetails": "Подробности класса",
@@ -1795,6 +2220,7 @@
 	"DND5E.ItemEquipmentStealthDisav": "Помеха скрытности",
 	"DND5E.ItemEquipmentType": "Тип снаряжения",
 	"DND5E.ItemEquipmentUsage": "Использование снаряжения",
+	"DND5E.ItemFacilityDetails": "Подробности постройки",
 	"DND5E.ItemFeatureDetails": "Подробности особенности",
 	"DND5E.ItemFeatureProperties": "Свойства особенности",
 	"DND5E.ItemFeatureSubtype": "{category}",
@@ -1938,8 +2364,10 @@
 	"DND5E.LongRestGritty": "Долгий отдых (7 дней)",
 	"DND5E.LongRestEpic": "Долгий отдых (1 час)",
 	"DND5E.LongRestOvernight": "Долгий отдых (новый день)",
-	"DND5E.LongRestHint": "Совершить долгий отдых? В конце долгого отдыха персонаж восстанавливает все потраченные пункты здоровья, а также половину от максимума костей здоровья, предметы с ежедневными зарядами и ячейки заклинаний.",
-	"DND5E.LongRestHintGroup": "Совершить долгий отдых? В конце долгого отдыха участники группы восстанавливают все потраченные пункты здоровья, а также половину от максимума костей здоровья, предметы с ежедневными зарядами и ячейки заклинаний.",
+	"DND5E.LongRestHint": "Совершить долгий отдых? В конце долгого отдыха персонаж восстанавливает все потраченные пункты здоровья, а также кости здоровья, ресурсы класса, предметы с ежедневными зарядами и ячейки заклинаний.",
+	"DND5E.LongRestHintLegacy": "Совершить долгий отдых? В конце долгого отдыха персонаж восстанавливает все потраченные пункты здоровья, а также половину от максимума костей здоровья, ресурсы класса, предметы с ежедневными зарядами и ячейки заклинаний.",
+	"DND5E.LongRestHintGroup": "Совершить долгий отдых? В конце долгого отдыха участники группы восстанавливают все потраченные пункты здоровья, а также кости здоровья, ресурсы класса, предметы с ежедневными зарядами и ячейки заклинаний.",
+	"DND5E.LongRestHintGroupLegacy": "Совершить долгий отдых? В конце долгого отдыха участники группы восстанавливают все потраченные пункты здоровья, а также половину от максимума костей здоровья, ресурсы класса, предметы с ежедневными зарядами и ячейки заклинаний.",
 	"DND5E.LongRestRecovery": "Восстанавливается после долгого отдыха",
 	"DND5E.LongRestResult": "{name} совершает долгий отдых, восстанавливая {health} Пунктов Здоровья и {dice} Костей Здоровья.",
 	"DND5E.LongRestResultHitDice": "{name} совершает долгий отдых и восстанавливает {dice} Костей Здоровья.",
@@ -2037,6 +2465,7 @@
 	"DND5E.ProficiencyConfigurationHint": "Настройка бонуса и умения.",
 	"DND5E.ProficiencyConfigureTitle": "Настройка {label}",
 	"DND5E.ProficiencyLevel": "Уровень умения",
+	"DND5E.ProficiencyOther": "Прочее",
 	"DND5E.Proficient": "Умелый",
 	"DND5E.Properties": "Свойства",
 	"DND5E.PropertyBase": "Базовый",
@@ -2106,6 +2535,16 @@
 	"DND5E.RestS": "Короткий",
 	"DND5E.Ritual": "Ритуал",
 	"DND5E.RitualAbbr": "Р",
+
+	"DND5E.ROLL": {
+		"Range": {
+			"Label": "Диапазон броска",
+			"Maximum": "Максимальный",
+			"Minimum": "Минимальный"
+		},
+		"Section": "Проверки {label}"
+	},
+
 	"DND5E.Roll": "Бросок",
 	"DND5E.RollConfiguration": {
 		"Title": "Настройка броска",
@@ -2169,8 +2608,8 @@
 			"save": {
 				"label": "Подробности испытания",
 				"ability": {
-					"label": "Характеристика для испытания",
-					"hint": "Характеристика, используемая при прохождении испытания."
+					"label": "Характеристики испытаний",
+					"hint": "Характеристики, используемые при прохождении испытаний."
 				},
 				"dc": {
 					"label": "Сложность",
@@ -2180,7 +2619,7 @@
 					},
 					"formula": {
 						"label": "Формула СЛ",
-						"hint": "Формула или постоянное значение для испытания СЛ."
+						"hint": "Формула или неизменное значение для испытания СЛ."
 					},
 					"CustomFormula": "Своя формула",
 					"DefaultFormula": "8 + @mod + @prof"
@@ -2276,6 +2715,21 @@
 	"DND5E.SizeSmallAbbr": "Нб",
 	"DND5E.SizeTiny": "Маленький",
 	"DND5E.SizeTinyAbbr": "Мл",
+
+	"DND5E.SKILL": {
+		"SECTIONS": {
+			"Details": "Подробности {label}",
+			"Bonuses": {
+				"Label": "Бонусы {label}",
+				"Hint": "Эти бонусы применяются к пассивным и активным проверкам {label}."
+			},
+			"Global": {
+				"Label": "Глобальные бонусы",
+				"Hint": "Эти бонусы применяются к проверкам всех навыков."
+			}
+		}
+	},
+
 	"DND5E.Skill": "Навык",
 	"DND5E.Skills": "Навыки",
 	"DND5E.SkillAcr": "Акробатика",
@@ -2526,6 +2980,10 @@
 				"hint": "Призванное существо будет изменено на этот тип. Если выбрано несколько типов, то можно будет выбрать один из них во время призыва."
 			},
 			"match": {
+				"ability": {
+					"label": "Соответствующая характеристика",
+					"hint": "Характеристика, которая будет использована для соответсвующих атак и испытаний."
+				},
 				"attacks": {
 					"label": "Приравнивание атак",
 					"hint": "Изменение значений атак призванного существа, чтобы те совпадали с атаками призывателя."
@@ -2621,7 +3079,7 @@
 			"EmptyDrop": "Нажмите на <i class=\"fas fa-plus\"></i>, чтобы создать профиль или перенесите сюда существо для призыва."
 		},
 		"Warning": {
-			"CreateActor": "У вас должны быть права на Создание новых актёров, чтобы призывать существ из библиотеки.",
+			"CreateActor": "У вас должны быть права на создание новых актёров, чтобы призывать существ из библиотеки.",
 			"CRV11": "Призыв по классу опасности работает только в Foundry V12 и выше.",
 			"NoActor": "Актёр для призыва с UUID '{uuid}' не найден.",
 			"NoOwnership": "У вас должны быть права владения '{actor}' для призыва.",
@@ -2740,7 +3198,7 @@
 	"DND5E.TemplatePromptTooltip": "Отображение диалогового окна при размещении шаблона.",
 	"DND5E.Temp": "Врем.",
 	"DND5E.Threshold": "Предел",
-	"DND5E.TimeDay": "День",
+	"DND5E.TimeDay": "Дней",
 	"DND5E.TimeDayAbbr": "д",
 	"DND5E.TimeDisp": "Пока не развеется",
 	"DND5E.TimeDispTrig": "Пока не сработает или развеется",
@@ -2780,6 +3238,21 @@
 		"Title": "Динамическая рамка"
 	},
 	"DND5E.ToggleDescription": "Раскрыть описание",
+
+	"DND5E.TOOL": {
+		"SECTIONS": {
+			"Details": "Подробности {label}",
+			"Bonuses": {
+				"Label": "Бонусы {label}",
+				"Hint": "Эти бонусы применяются к проверкам {label}."
+			},
+			"Global": {
+				"Label": "Глобальные бонусы",
+				"Hint": "Эти бонусы применяются к проверкам всех инструментов."
+			}
+		}
+	},
+
 	"DND5E.ToolArtisans": "Инструменты ремесла",
 	"DND5E.ToolBonuses": "Бонусы инструмента",
 	"DND5E.ToolCheck": "Проверка инструмента",
@@ -2795,22 +3268,24 @@
 	"DND5E.ToolThieves": "Воровские инструменты",
 	"DND5E.ToolVehicle": "Транспорт",
 	"DND5E.TraitAll": "Все {category}",
-	"DND5E.TraitArmorPlural.one": "Подготовка в броне",
-	"DND5E.TraitArmorPlural.other": "Подготовки в броне",
-	"DND5E.TraitArmorProf": "Подготовки в броне",
+	"DND5E.TraitArmorPlural.one": "Обращение с бронёй",
+	"DND5E.TraitArmorPlural.other": "Обращение с бронёй",
+	"DND5E.TraitArmorProf": "Обращение с бронёй",
 	"DND5E.TraitArmorLegacyPlural.one": "Умение в броне",
 	"DND5E.TraitArmorLegacyPlural.other": "Умения в броне",
 	"DND5E.TraitArmorLegacyProf": "Умения в броне",
 	"DND5E.TraitCIPlural.one": "Невосприимчивость к состоянию",
 	"DND5E.TraitCIPlural.other": "Невосприимчивости к состоянию",
 	"DND5E.TraitConfig": "Настройка {trait}",
-	"DND5E.TraitConfigChooseAnyCounted": "любых {count} {type}",
-	"DND5E.TraitConfigChooseAnyUncounted": "любых {type}",
-	"DND5E.TraitConfigChooseList": "{count} из {list}",
+	"DND5E.TraitConfigChooseAnyCounted": "любые {count} {type}",
+	"DND5E.TraitConfigChooseAnyUncounted": "любой {type}",
+	"DND5E.TraitConfigChooseList": "{count}: {list}",
 	"DND5E.TraitConfigChooseOther": "{count} других {type}",
 	"DND5E.TraitConfigChooseWrapper": "Выберите {choices}",
 	"DND5E.TraitDIPlural.one": "Невосприимчивость к урону",
 	"DND5E.TraitDIPlural.other": "Невосприимчивости к урону",
+	"DND5E.TraitDMPlural.one": "Модификация урона",
+	"DND5E.TraitDMPlural.other": "Модификации урона",
 	"DND5E.TraitDRPlural.one": "Устойчивость к урону",
 	"DND5E.TraitDRPlural.other": "Устойчивости к урону",
 	"DND5E.TraitDVPlural.one": "Уязвимость к урону",
@@ -2961,9 +3436,9 @@
 	"DND5E.VehicleActionThresholdsMid": "Неполный состав экипажа",
 	"DND5E.VehicleActionThresholdsMin": "Минимальный состав экипажа",
 	"DND5E.VehicleCargo": "Груз",
-	"DND5E.VehicleCargoCapacity": "Груз",
+	"DND5E.VehicleCargoCapacity": "Вместимость груза",
 	"DND5E.VehicleCargoCrew": "Груз и экипаж",
-	"DND5E.VehicleCreatureCapacity": "Существа",
+	"DND5E.VehicleCreatureCapacity": "Вместимость существ",
 	"DND5E.VehicleCrew": "Экипаж",
 	"DND5E.VehicleCrewPassengers": "Экипаж и пассажиры",
 	"DND5E.VehicleCrewed": "С экипажем",
@@ -3024,7 +3499,6 @@
 	"DND5E.WeaponMartialProficiency": "Военное",
 	"DND5E.WeaponMartialR": "Военное дист.",
 	"DND5E.WeaponNatural": "Природное",
-	"DND5E.WeaponOtherProficiency": "Прочее",
 	"DND5E.WeaponSiege": "Осадное орудие",
 	"DND5E.WeaponSimpleM": "Простое ближнее",
 	"DND5E.WeaponSimpleProficiency": "Простое",
@@ -3159,16 +3633,16 @@
 			"EquipmentDescription": "Вы начинаете с таким снаряжением в придачу к тому снаряжению, что вам даёт происхождение:",
 			"Features": {
 				"DescriptionLegacy": "Каждый {lowercaseName} получает следующие классовые особенности, которые описаны в таблице {name}.",
-				"DescriptionModern": "В качестве {name}, вы получаете следующие классовые особенности, когда достигаете определённых уровней класса {name}. Смотрите список в таблице Особенности {name}.",
+				"DescriptionModern": "Как {name}, вы получаете следующие классовые особенности, когда достигаете определённых уровней класса. Смотрите список в таблице «Особенности {name}».",
 				"Header": "Классовые особенности",
 				"Name": "Уровень {level}: {name}"
 			},
 			"HitPoints": {
 				"Header": "Пункты здоровья",
-				"HitDiceLegacy": "<strong>Кости здоровья:</strong> {dice} за уровень {class}",
-				"HitDiceModern": "{dice} за уровень {class}",
+				"HitDiceLegacy": "<strong>Кость здоровья:</strong> {dice} за уровень класса {class}",
+				"HitDiceModern": "{dice} за уровень класса {class}",
 				"Level1": "<strong>ПЗ на 1-м уровне:</strong> {max} + модификатор Выносливости",
-				"LevelX": "<strong>ПЗ на следующих уровнях:</strong> {dice} (или {average}) + модификатор Выносливости за каждый уровень {class} выше 1-го"
+				"LevelX": "<strong>ПЗ на следующих уровнях:</strong> {dice} (или {average}) + модификатор Выносливости за каждый уровень класса {class} выше 1-го"
 			},
 			"ItemHint": "Перенесите класс сюда",
 			"NoValidClass": "Не выбран класс. Нажмите на кнопку изменения, чтобы добавить класс.",
@@ -3183,10 +3657,10 @@
 				"Modern": "Современный"
 			},
 			"SubclassHint": "Перенесите подклассы сюда",
-			"TableCaption": "{class}",
+			"TableCaption": "Особенности {class}",
 			"TableOptionalCaption": "Варианты особенностей для {class}",
 			"Traits": {
-				"Caption": "Особенности {class}",
+				"Caption": "Ключевые особенности {class}",
 				"Header": "Умения"
 			}
 		},

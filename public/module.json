@@ -11,15 +11,27 @@
 			"url": "https://discord.gg/Z2CXFy35WF"
 		}
 	],
-	"version": "13.332.2",
+	"version": "12.331.28",
 	"compatibility": {
-		"minimum": "13",
-		"verified": "13",
-		"maximum": "13"
+		"minimum": "11",
+		"verified": "12",
+		"maximum": "12"
 	},
 	"esmodules": ["esm/index.js"],
 	"styles": ["styles/_main.css", "styles/_fonts.css"],
 	"coreTranslation": true,
+	"relationships": {
+		"recommends": [
+			{
+				"id": "babele",
+				"type": "module"
+			},
+			{
+				"id": "lib-wrapper",
+				"type": "module"
+			}
+		]
+	},
 	"languages": [
 		{
 			"lang": "ru",
@@ -590,8 +602,8 @@
 		},
 		{
 			"lang": "ru",
-			"path": "i18n/modules/masks-newgeneration-sheets.json",
-			"module": "masks-newgeneration-sheets"
+			"path": "i18n/modules/masks-newgeneration-unofficial.json",
+			"module": "masks-newgeneration-unofficial"
 		},
 		{
 			"lang": "ru",
@@ -902,9 +914,20 @@
 	"media": [
 		{
 			"type": "cover",
-			"url": "https://github.com/phenomen/foundry-vtt-ru/raw/main/public/images/module/cover.webp",
+			"url": "https://raw.githubusercontent.com/phenomen/foundry-vtt-ru/refs/heads/main/public/images/module/cover.webp",
 			"loop": false,
 			"flags": {}
+		},
+		{
+			"type": "icon",
+			"url": "https://raw.githubusercontent.com/phenomen/foundry-vtt-ru/refs/heads/main/public/images/module/icon.webp",
+			"loop": false,
+			"flags": {}
+		},
+		{
+			"type": "setup",
+			"url": "modules/ru-ru/images/module/cover.webp",
+			"thumbnail": "modules/ru-ru/images/module/setup.webp"
 		}
 	],
 	"flags": {
@@ -913,6 +936,6 @@
 		}
 	},
 	"url": "https://github.com/phenomen/foundry-vtt-ru",
-	"manifest": "https://github.com/phenomen/foundry-vtt-ru/releases/download/v13/module.json",
-	"download": "https://github.com/phenomen/foundry-vtt-ru/releases/download/v13/ru-ru.zip"
+	"manifest": "https://github.com/phenomen/foundry-vtt-ru/releases/download/latest/module.json",
+	"download": "https://github.com/phenomen/foundry-vtt-ru/releases/download/latest/ru-ru.zip"
 }

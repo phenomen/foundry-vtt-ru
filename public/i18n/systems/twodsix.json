@@ -27,7 +27,8 @@
 			"Controls": "Controls",
 			"NewEffect": "New Effect",
 			"CreateEffect": "Create Effect",
-			"Add": "Add"
+			"Add": "Add",
+			"IncludingEffects": "Including active effects:"
 		},
 		"Damage": {
 			"DealDamage": "Нанести урон",
@@ -44,13 +45,30 @@
 			"CharacterIsDead": "Персонаж мёртв",
 			"DealDamageTo": "Нанести урон _ACTOR_NAME_",
 			"DamageFormula": "Формула урона",
-			"NoRegularDamage": "Без обычного урона"
+			"NoRegularDamage": "Без обычного урона",
+			"CanBeBlocked": "Can be blocked",
+			"CanBeParried": "Can be parried"
+		},
+		"DamageType": {
+			"Acid": "Acid",
+			"Ballistic": "Ballistic",
+			"Disintegrate": "Disintegrate",
+			"Electrical": "Electrical",
+			"Entangle": "Entangle",
+			"Fire": "Fire",
+			"Laser": "Laser",
+			"Melee": "Melee",
+			"Plasma": "Plasma",
+			"Poison": "Poison",
+			"Stun": "Stun"
 		},
 		"Dialogs": {
 			"ROFPickerTitle": "Выберите режим стрельбы",
 			"ROFSingle": "Одиночный",
 			"ROFBurst": "Короткими очередями",
-			"ROFFull": "Длинными очередями"
+			"ROFFull": "Длинными очередями",
+			"ROFDoubleTap": "Double Tap",
+			"ReplaceMacroCommand": "Update Macro Command"
 		},
 		"Actor": {
 			"Age": "Возраст",
@@ -69,7 +87,8 @@
 				"STA": "СТК",
 				"CTM": "ЗРЖ",
 				"ALT1": "АЛЬТ1",
-				"ALT2": "АЛЬТ2"
+				"ALT2": "АЛЬТ2",
+				"ALT3": "АЛЬТ3"
 			},
 			"CharacteristicEdit": "Переключить редактирование аббревиатур характеристик",
 			"Chassis": "Chassis",
@@ -96,6 +115,7 @@
 			"Stamina": "Стойкость",
 			"Endurance": "Выносливость",
 			"RadiationExposure": "Облучение радиацией",
+			"Rads": "Rads",
 			"HomeWorld": "Родной мир",
 			"Nationality": "Национальность",
 			"Info": {
@@ -113,10 +133,12 @@
 				"Amount": "Количество",
 				"ARMOR": "БРОНЯ",
 				"ATTACHMENTS": "ATTACHMENTS",
+				"Attachments": "Attachments",
 				"AUGMENTS": "АУГМЕНТЫ",
 				"Augments": "Augments",
 				"Ammo": "Боеп.",
 				"Armor": "Броня",
+				"Parry": "Parry",
 				"EffectiveArmor": "Действующая броня",
 				"CONSUMABLES": "РАСХОДНИКИ",
 				"Count": "Число",
@@ -131,6 +153,7 @@
 				"EditItem": "Изменить предмет",
 				"Effect": "Эффект",
 				"Location": "Место",
+				"EquippedLocation": "Equipped Location",
 				"Name": "Название",
 				"QuantityToTransfer": "Кол-во для передачи",
 				"Qty": "Кол.",
@@ -143,7 +166,12 @@
 				"LocationState": {
 					"equipped": "Equipped",
 					"ship": "Ship",
-					"backpack": "Backpack"
+					"backpack": "Backpack",
+					"vehicle": "Vehicle",
+					"base": "Base",
+					"core": "Core (backpack and equipped only)",
+					"default": "Default (backpack, equipped and ship)",
+					"all": "All"
 				},
 				"Subtype": "Тип",
 				"TRAITS": "ЧЕРТЫ",
@@ -162,7 +190,7 @@
 			},
 			"Rolling": "Бросок",
 			"Skills": {
-				"AddSkill": "+ Доб. навык",
+				"AddSkill": "Skill",
 				"DeleteItem": "Удалить навык",
 				"EditItem": "Изменить навык",
 				"EditOrRemove": "Управление",
@@ -173,6 +201,7 @@
 				"SkillName": "Название",
 				"Total": "Всего",
 				"Untrained": "Нетренирован",
+				"NoGroup": "No Group",
 				"SkillRollTooltip": "Показывать настройки проверки по умолчанию. Shift+ЛКМ совершает проверку навыков без модификаторов со сложностью 6 или 8.",
 				"InvertedSkillRollTooltip": "Проверки навыков совершаются без модификаторов со сложностью 8. Shift+ЛКМ открывает окно настроек проверки.",
 				"JOAT": "Мастер на все руки",
@@ -223,6 +252,7 @@
 				"MovementRate": "Скорость движения"
 			},
 			"CharDisplay": {
+				"Core": "Core",
 				"Base": "Базовый",
 				"Alternate": "Альтернативный",
 				"All": "Все"
@@ -295,23 +325,27 @@
 				"RollModifiers": "Roll Modifiers",
 				"SkillModifier": "Skill Level",
 				"ItemModifier": "Item Bonus",
-				"ROF": "Rate-of-Fire",
+				"Rof": "Rate-of-Fire",
 				"Wounds": "Wounds",
 				"Encumbered": "Encumbered",
 				"CharacteristicModifier": "Characteristic Modifier",
 				"Conditions": "Condition Modifiers",
 				"DodgeParry": "Dodge/Parry Modifier",
-				"Custom": "Custom",
+				"Other": "Custom DM",
 				"Modifier": "Modifier",
 				"Description": "Description",
 				"DM": "DM",
+				"TargetModifier": "Target DM",
+				"OverrideAuto": "Override Auto",
 				"Characteristic": "Characteristic",
 				"Condition": "Condition",
 				"Attack": "Attack",
 				"ActiveEffect": "Active Effect",
 				"Attachments": "Attach./Consm.",
 				"WeaponsHandling": "Weapons Handling",
-				"ChainRoll": "Chain / Assisted Roll",
+				"WeaponsRange": "Weapon Range",
+				"ArmorModifier": "Armor Modifier",
+				"Chain": "Chain / Assisted Roll",
 				"Bonus": "Bonus",
 				"WithChainBonus": "with Chain / Assist bonus",
 				"WinsRoll": "wins contested / opposed roll.",
@@ -321,8 +355,120 @@
 				"RequestRollClip": "<div class='toolclip'><video src='systems/twodsix/assets/toolclips/requestRollToolClip.webm' autoplay muted loop></video><h4>Request Roll</h4><p>Select any Tokens from which you would like to request a skill roll. A pop-up dialog opens where you can select the particulars of the roll.</p><p class='faint'>Disable Toolclips in the Settings</p></div>",
 				"GMRequestsRoll": "GM requests a _TYPE_ roll.",
 				"normal": "normal",
-				"AbilityCheck": "Ability / Characteristic Check"
+				"AbilityCheck": "Ability / Characteristic Check",
+				"ApplyDamage": "Apply Damage",
+				"ApplyDestructiveDamage": "Apply Destructive Damage (10x)",
+				"ApplyReducedDamage": "Apply Scale Reduced Damage (0.1x)",
+				"ApplyHealing": "Apply Healing",
+				"DegreesOfSuccess": {
+					"ExceptionalFailure": "Exceptional Failure",
+					"Failure": "Failure",
+					"AverageFailure": "Average Failure",
+					"MarginalFailure": "Marginal Failure",
+					"MarginalSuccess": "Marginal Success",
+					"AverageSuccess": "Average Success",
+					"Success": "Success",
+					"ExceptionalSuccess": "Exceptional Success",
+					"none": "None",
+					"CE": "Cepheus Engine",
+					"other": "Other"
+				},
+				"RangeModifierTypes": {
+					"none": "None",
+					"singleBand": "Single Value",
+					"doubleBand": "Double Value",
+					"CE_Bands": "Cepheus Engine Bands",
+					"CT_Bands": "Classic Traveller Bands",
+					"CU_Bands": "Cepheus Universal Bands"
+				},
+				"WeaponRangeTypes": {
+					"closeQuarters": "Close Quarters",
+					"CQ": "CQ",
+					"extendedReach": "Extended Reach",
+					"reach": "Reach",
+					"thrown": "Thrown",
+					"pistol": "Pistol",
+					"rifle": "Rifle",
+					"shotgun": "Shotgun",
+					"assaultWeapon": "Assault Weapon",
+					"AW": "AW",
+					"rocket": "Rocket",
+					"none": "None",
+					"hands": "Hands",
+					"claws": "Claws",
+					"teeth": "Teeth",
+					"horns": "Horns",
+					"hooves": "Hooves",
+					"stinger": "Stinger",
+					"thrasher": "Thrasher",
+					"club": "Club",
+					"dagger": "Dagger",
+					"blade": "Blade",
+					"foil": "Foil",
+					"cutlass": "Cutlass",
+					"sword": "Sword",
+					"broadsword": "Broadsword",
+					"bayonet": "Bayonet",
+					"spear": "Spear",
+					"halberd": "Halberd",
+					"pike": "Pike",
+					"cudgel": "Cudgel",
+					"bodyPistol": "Body Pistol",
+					"autoPistol": "Automatic Pistol",
+					"revolver": "Revolver",
+					"carbine": "Carbine",
+					"autoRifle": "Automatic Rifle",
+					"submachinegun": "Submachinegun",
+					"laserCarbine": "Laser Carbine",
+					"laserRifle": "Laser Rifle",
+					"thras": "Thras",
+					"cutl": "Cutl",
+					"brdswd": "Brdswrd",
+					"bynt": "Bynt",
+					"halb": "Halb",
+					"bPistl": "Bpistl",
+					"aPistl": "Apistl",
+					"AR": "AR",
+					"subm": "Subm",
+					"LC": "LC",
+					"LR": "LR",
+					"custom": "Custom",
+					"cust": "Cust",
+					"personal": "Personal",
+					"pers": "Pers.",
+					"close": "Close",
+					"short": "Short",
+					"medium": "Medium",
+					"long": "Long",
+					"veryLong": "Very Long",
+					"vLong": "v.Long",
+					"distant": "Distant",
+					"thr": "Thr."
+				},
+				"RangeBandTypes": {
+					"personal": "Personal",
+					"close": "Close",
+					"short": "Short",
+					"medium": "Medium",
+					"long": "Long",
+					"veryLong": "Very Long",
+					"distant": "Distant",
+					"none": "None"
+				},
+				"ArmorTypes": {
+					"nothing": "Nothing",
+					"jack": "Jack",
+					"mesh": "Mesh",
+					"cloth": "Cloth",
+					"reflec": "Reflec",
+					"ablat": "Ablat",
+					"combat": "Combat"
+				},
+				"Dice": "Dice"
 			}
+		},
+		"Table": {
+			"TableResults": "Table Results"
 		},
 		"Create": "Создать",
 		"Handlebars": {
@@ -336,23 +482,32 @@
 			"DeleteReference": "Delete Reference",
 			"Armor": {
 				"Armor": "Броня",
+				"PrimaryArmor": "Primary Armor",
 				"SecondaryArmor": "Вторичная броня",
+				"TotalArmor": "Total Armor",
 				"RadProt": "Защита от радиации",
 				"IsPowered": "Силовая броня",
-				"SecondaryArmorProtectionTypes": "Secondary Protection Types"
+				"Nonstackable": "Non-stackable",
+				"SecondaryArmorProtectionTypes": "Secondary Protection Types",
+				"ArmorProtectionTypes": "Protection Types",
+				"armorDM": "DM",
+				"ArmorModifier": "Armor Modifier",
+				"ArmorType": "Armor Type",
+				"WearingReflec": "Wearing Reflec"
 			},
 			"Augmentation": {
 				"Arms": "Руки",
 				"AugEffect": "Эффект",
-				"AugLocation": "Место",
+				"AugLocation": "Augment Location",
 				"FullBody": "Всё тело",
 				"Head": "Голова",
 				"Legs": "Ноги",
 				"Torso": "Туловище",
+				"None": "None",
 				"ValueCr": "Цена в Кр"
 			},
 			"Component": {
-				"Ammunition": "Ammuniton",
+				"Ammunition": "Ammunition",
 				"componentName": "Компонент",
 				"accomodations": "accommodations",
 				"armament": "вооружение",
@@ -380,8 +535,8 @@
 				"damaged": "повреждён",
 				"destroyed": "уничтожен",
 				"off": "отключён",
-				"powerDraw": "Потребление питания за единицу",
-				"powerGenerated": "Вырабатываемое питание за единицу",
+				"powerDraw": "Power Draw",
+				"powerGenerated": "Power Generated",
 				"Power": "Питание",
 				"status": "Статус",
 				"rating": "Рейтинг",
@@ -415,7 +570,7 @@
 				"RollModifier": "Модификатор Броска",
 				"DM": "МБ",
 				"Hardened": "Hardened?",
-				"hardened": "hardened",
+				"hardened": "Hardened",
 				"Hd": "Hd",
 				"isPopup": "Is a Pop-up?",
 				"isExtended": "Is Pop-up extended?",
@@ -423,11 +578,23 @@
 				"retracted": "retracted",
 				"Displacement": "Displacement",
 				"Description": "Description",
-				"ComponentType": "Component Type"
+				"ComponentType": "Component Type",
+				"powerPerUnit": "per unit",
+				"powerPerCompTon": "per component ton",
+				"powerPerHullTon": "per hull ton",
+				"installedCost": "Installed Cost (MCr)",
+				"techLevel": "Tech Level",
+				"diceModifier": "Dice Modifier",
+				"displacementWeight": "Displacement Weight (d-tons)",
+				"PowerUsed": "Power Consumed or Generated (+)",
+				"Quantity": "Quantity",
+				"AttackDamage": "Attack Damage",
+				"numberHits": "Number of Hits",
+				"opStatus": "Operational Status"
 			},
 			"Equipment": {
 				"AssignSkill": "Назначить навык",
-				"AssociatedSkillName": "Связанный навык",
+				"AssociatedSkillName": "Associated Skill Name(s)",
 				"Description": "Описание",
 				"ItemName": "Название предмета",
 				"Location": "Место",
@@ -477,9 +644,12 @@
 				"HIT": "HIT",
 				"ALT1": "АЛТ1",
 				"ALT2": "АЛТ2",
+				"ALT3": "ALT3",
 				"TrainingNotes": "Учебные заметки",
 				"NumberOfSkills": "Количество навыков",
-				"SkillRanks": "Ранг навыка"
+				"SkillRanks": "Ранг навыка",
+				"GroupLabel": "Group Label",
+				"Melee Combat": "Melee Combat"
 			},
 			"Traits": {
 				"Prerequisite": "Критерии",
@@ -504,6 +674,7 @@
 					"power_cell": "Энергоячейка",
 					"software": "Software",
 					"processor": "Processor",
+					"suite": "Electronics Suite",
 					"other": "Другое"
 				},
 				"Size": "Размер",
@@ -511,6 +682,7 @@
 				"Count": "Число",
 				"Bandwidth": "Bandwidth",
 				"ArmorPiercing": "Бронебойность",
+				"AmmoRangeModifier": "Range Modifier (% change to base range)",
 				"DropConsumablesHere": "Вы можете перенести расходники сюда.",
 				"DropAttachmentsHere": "You can drop attachments here.",
 				"RemoveConsumable": "Удалить расходник",
@@ -530,10 +702,14 @@
 				"weaponType": "Тип оружия",
 				"damageType": "Тип урона",
 				"rateOfFire": "Скорострельность/Авто X",
+				"doubleTap": "Double Tap",
 				"recoil": "Отдача",
 				"UseAsAmmunitionForAttack": "Использовать боеприпасы для атак",
 				"MagazineCost": "Цена обоймы/энергоячейки",
 				"ArmorPiercing": "Бронебойность",
+				"ParryAV": "Parry AV",
+				"ShieldAV": "Shield AV",
+				"isShield": "Acts as a shield",
 				"Features": "Особенности / черты",
 				"Unarmed": "Без оружия",
 				"UnarmedDescription": "Безоружная атака",
@@ -543,7 +719,12 @@
 				"Attack": "Attack",
 				"Consumables": "Consumables",
 				"DefaultMagazine": "Default Magazine Size",
-				"HandlingExample": "e.g., DEX 6/-3 10/+4"
+				"HandlingExample": "e.g., DEX 6/-3 10/+4",
+				"MeleeRangeModifier": "Melee Range DM",
+				"CustomModifier": {
+					"range": "Custom Range Modifier",
+					"armor": "Custom Armor Modifier"
+				}
 			},
 			"Spells": {
 				"CircleSchool": "Школа/Круг Заклинания",
@@ -584,10 +765,13 @@
 			"Available": "Доступно",
 			"AvailableCargoWeight": "Доступный вес груза",
 			"CantDropActorIfPositionIsNotOnShip": "Вы не можете поставить Путника на позицию корабля, которая не находится на корабле",
+			"CannotParseArgument": "Cannot Parse Position Action String",
 			"Cargo": "Груз",
 			"CargoWeight": "Общий вес груза",
 			"CARGONOTES": "ГРУЗОВЫЕ ЗАМЕТКИ",
 			"COMPONENTS": "КОМПОНЕНТЫ",
+			"COMMONFUNDS": "COMMON FUNDS",
+			"CombatPosition": "Combat Position",
 			"CreateAction": "Создать действие",
 			"Crew": {
 				"ADMIN": "АДМИНИСТРАЦИЯ",
@@ -603,8 +787,11 @@
 				"PILOT": "ПИЛОТ",
 				"STEWARD": "СТЮАРД"
 			},
+			"Damage": "Damage",
 			"Deckplan": "План палубы",
+			"Defense": "Defense",
 			"DeleteAction": "Удалить действие",
+			"Designation": "Designation",
 			"Displacement": "Смещение",
 			"Drives": "Двигатели",
 			"FINANCENOTES": "БУХГАЛТЕРИЯ",
@@ -618,6 +805,7 @@
 			"JDrive": "J-Двиг.",
 			"Jump": "Прыжок",
 			"MacroSkill": "Макрос/Навык",
+			"Component": "Component to use",
 			"MakesChatRollAction": "Использует действие _ACTION_NAME_ из позиции _POSITION_NAME_",
 			"ActionHits": "Попадает, используя _WHILE_USING_ с эффектом _EFFECT_VALUE_",
 			"ActionHitsAndDamage": "Попадает, используя _WHILE_USING_ с эффектом _EFFECT_VALUE_ нанося стандартный урон _DAMAGE_TOTAL_",
@@ -631,6 +819,7 @@
 			"Name": "Имя",
 			"NewAction": "Новое действие",
 			"NoActorsForAction": "Нет доступных актеров для действия",
+			"Operations": "Operations",
 			"Order": "Порядок",
 			"Overdrive": "Перегрузка",
 			"Parsecs": "Парсеки",
@@ -668,14 +857,19 @@
 			"MaintenancePerMonth": "Цена Обслуживания",
 			"CrPerMonth": "Кр/месяц",
 			"Chat": "Chat",
-			"UseAComponent": "Component",
+			"UseAComponent": "Fire weapon",
+			"executeMacro": "Macro",
 			"SkillRoll": "Skill",
 			"chatPlaceholder": "Chat Message",
 			"skillPlaceholder": "Skill/CHR 8+",
-			"firePlaceholder": "Skill/CHR 8+=COMPONENT_ID",
+			"firePlaceholder": "Skill/CHR 8+",
+			"macroPlaceholder": "Macro name",
 			"skillTooltip": "Possible options:\nSkill\nSkill|Alternative Skill 1|...\nSkills/ATR\nSkills/ 8+\nSkills/ATR 8+\nSkills/ATR|ATR2",
-			"fireTooltip": "Possible options:\nSkill=COMPONENT_ID\nSkill|Alternative Skill 1|...=COMPONENT_ID\nSkills/ATR=COMPONENT_ID\nSkills/ 8+=COMPONENT_ID\nSkills/ATR|ATR2 8+=COMPONENT_ID",
-			"chatTooltip": "Ahoy!"
+			"fireTooltip": "Possible options:\nSkill\nSkill|Alternative Skill 1|...\nSkills/ATR\nSkills/ 8+\nSkills/ATR|ATR2 8+",
+			"MacroTooltip": "Macro Name",
+			"chatTooltip": "Ahoy!",
+			"ExecuteMacro": "Execute Macro",
+			"None": "None"
 		},
 		"Vehicle": {
 			"SystemStatus": "Статус системы",
@@ -684,6 +878,7 @@
 			"CargoCapacity": "Вместимость",
 			"Speed": "Скорость",
 			"Range": "Дальность",
+			"Spaces": "Spaces",
 			"Agility": "Ловкость",
 			"systems": {
 				"cargo": "Груз",
@@ -734,6 +929,12 @@
 			"rounds": "round(s)",
 			"RoundsActive": "Rounds Active"
 		},
+		"Resource": {
+			"Value": "Value",
+			"Min": "Min",
+			"Max": "Max",
+			"Label": "Label"
+		},
 		"Migration": {
 			"Completed": "Миграция Twodsix System до версии {version} завершена!",
 			"DoNotClose": "Происходит миграция Migrating Twodsix до версии {version}. Не закрывайте игру.",
@@ -756,7 +957,14 @@
 			"using": "использует {characteristic}",
 			"Wounds": "Ранения",
 			"AttackDM": "МБ атаки",
+			"Damage": "Damage",
 			"BonusDamage": "Бонусный урон",
+			"BurstDamage": "Burst Damage",
+			"Burst": "Burst",
+			"Auto": "Auto",
+			"FullAuto": "Full Auto",
+			"DoubleTap": "Double Tap",
+			"Single": "Single",
 			"Timeframe": "Время",
 			"RollInitiative": "Бросок инициативы",
 			"characteristic": "characteristic",
@@ -768,7 +976,9 @@
 			"SelectSkill": "Select Skill",
 			"SkillName": "Skill Name",
 			"MakesOpposedRoll": "Makes an opposed / contested roll.",
-			"MakesChainRoll": "Makes a chain / assisted roll."
+			"MakesChainRoll": "Makes a chain / assisted roll.",
+			"MakesParryRoll": "Makes a melee combat skill check to parry attack with",
+			"MakesUncRoll": "Rolls to remain conscious."
 		},
 		"Settings": {
 			"absoluteBonusValueForEachTimeIncrement": {
@@ -779,6 +989,34 @@
 				"hint": "Сбрасывается на 99, означает что эффект не работает",
 				"name": "Этот эффект нужен на случай критически успешного/провального броска (в цвете зеленого/красного)."
 			},
+			"shortSTR": {
+				"hint": "Short name for strength characteristic. It should be four characters or fewer.",
+				"name": "Short name for strength characteristic"
+			},
+			"shortDEX": {
+				"hint": "Short name for dexterity characteristic. It should be four characters or fewer.",
+				"name": "Short name for dexterity characteristic"
+			},
+			"shortEND": {
+				"hint": "Short name for endurance characteristic. It should be four characters or fewer.",
+				"name": "Short name for endurance characteristic"
+			},
+			"shortINT": {
+				"hint": "Short name for intelligence characteristic. It should be four characters or fewer.",
+				"name": "Short name for intelligence characteristic"
+			},
+			"shortSOC": {
+				"hint": "Short name for social standing characteristic. It should be four characters or fewer.",
+				"name": "Short name for social standing characteristic"
+			},
+			"shortEDU": {
+				"hint": "Short name for education characteristic. It should be four characters or fewer.",
+				"name": "Short name for education characteristic"
+			},
+			"shortPSI": {
+				"hint": "Short name for psionic strength characteristic. It should be four characters or fewer.",
+				"name": "Short name for psionic strength characteristic"
+			},
 			"alternativeShort1": {
 				"hint": "Аббревиатура для первой альтернативной характеристики. Оно должно быть не больше четырех символов.",
 				"name": "Аббревиатура для альтернативной характеристики 1"
@@ -786,6 +1024,10 @@
 			"alternativeShort2": {
 				"hint": "Аббревиатура для второй альтернативной характеристики. Оно должно быть не больше четырех символов.",
 				"name": "Аббревиатура для альтернативной характеристики 2"
+			},
+			"alternativeShort3": {
+				"hint": "Short name for third alternative characteristic. It should be four characters or fewer.",
+				"name": "Short name for alternative characteristic 3"
 			},
 			"autofireRulesUsed": {
 				"hint": "Выберите используемый вариант правил длинной/короткой очереди.",
@@ -883,7 +1125,7 @@
 				"name": "Формула инициативы корабля"
 			},
 			"showAlternativeCharacteristics": {
-				"hint": "Основные шесть плюс ПСИ. Альтернативно: основные шесть плюс альтернативные. Все: основные шесть плюс ПСИ плюс Альтернативные",
+				"hint": " Core: six basic chararcteristics (STR, DEX, END, INT, EDU, and SOC).  Base: core six plus PSI. Alternative: core six plus two Alternative characteristics. All: core six plus PSI plus three Alternative characteristics.",
 				"name": "Выберите показываемые характеристики"
 			},
 			"showContaminationBelowLifeblood": {
@@ -892,14 +1134,14 @@
 			},
 			"ShowDamageType": {
 				"hint": "Отображать поле типа урона. Иначе оно будет скрыто.",
-				"name": "Отображать поле типа урона на оружии"
+				"name": "Show the 'Damage Type' field on weapon (and spell) sheets"
 			},
 			"showHeroPoints": {
 				"hint": "Показывать счётчик пунктов Героизма в бланке персонажа.",
 				"name": "Включить пункты Героизма"
 			},
 			"usePDFPagerForRefs": {
-				"hint": "Use with PDF Pager to show references.  The format must be '[code name] [page number]'. If setting is false, uri links to references are used instead.",
+				"hint": "Use with PDF Pager to show references.  The format must be '[code name] [page number]'. If setting is false, url links to references are used instead.",
 				"name": "Use PDF-Pager module to show references"
 			},
 			"ShowLawLevel": {
@@ -921,6 +1163,10 @@
 			"ShowRecoil": {
 				"hint": "checked=Show the 'Recoil' field, unchecked=Hide it",
 				"name": "Show the 'Recoil' field on weapon sheets"
+			},
+			"ShowDoubleTap": {
+				"hint": "checked=Show the 'Double Tap' field, unchecked=Hide it",
+				"name": "Show the 'Double Tap' field on weapon sheets"
 			},
 			"showSingleComponentColumn": {
 				"hint": "Show the ship components list as a single row.",
@@ -1052,9 +1298,13 @@
 				"hint": "option to choose information in protection area of vehicle sheets.  Options are armor only (a plain text box), thresholds (roll values for regular and critical hits) and armor, hull, structre (table of three damage fields).",
 				"name": "Значение защиты в листе транспорта"
 			},
+			"addEffectToDamage": {
+				"hint": "This option adds the roll effect to the damage roll.",
+				"name": "Add effect when rolling damage"
+			},
 			"addEffectToManualDamage": {
-				"hint": "This option addts the effect to a manual damage roll from the most recent chat message.",
-				"name": "Add effect when making manual damage"
+				"hint": "This option adds the effect from the most recent chat message to a manual damage roll.  Above setting (Add effect when rolling damage) must be enabled",
+				"name": "Add effect when rolling manual damage"
 			},
 			"showRangeSpeedNoUnits": {
 				"hint": "Omit the range and speed units (e.g. km/hr) on vehicle sheet.",
@@ -1077,8 +1327,8 @@
 				"name": "Отображение заклинаний"
 			},
 			"sorcerySkill": {
-				"hint": "Навык, используемый для сотворения заклинаний.",
-				"name": "Название заклинания"
+				"hint": "The name of the default skill used for spellcasting / sorcery.",
+				"name": "Default sorcery skill name"
 			},
 			"useNationality": {
 				"hint": "Display nationality field instead of home world field on actor sheet.",
@@ -1124,12 +1374,16 @@
 				"hint": "Overrides the default Foundry behavior of copying on drag-drop to transfering items (items removed from source actor) when drag-dropping equipment between actors.",
 				"name": "Transfer rather than copy dropped equipment on actors"
 			},
-			"allowDragDropOfLists": {
-				"hint": "Allow items in lists to be moved by drag and drop rather than sorting alphabetically.",
-				"name": "Allow Drag-Drop in Lists"
+			"allowDragDropOfListsActor": {
+				"hint": "Allow items in lists for Actors (i.e. Travellers, Animals, and Robots) to be moved by drag and drop rather than sorting alphabetically.",
+				"name": "Allow Drag-Drop in Actor Lists"
+			},
+			"allowDragDropOfListsShip": {
+				"hint": "Allow items in lists for Ships and Vehicles to be moved by drag and drop rather than sorting alphabetically.",
+				"name": "Allow Drag-Drop in Ship and Vehicle Lists"
 			},
 			"useDodgeParry": {
-				"hint": "Add a roll penalty to refect targets ability to dodge / parry.  A target must be selected and the skill name for weapon action must match.",
+				"hint": "Add a roll penalty that reflects a target's ability to dodge / parry.  A target must be selected and the skill name for the weapon's action must match.",
 				"name": "Use Dodge / Parry Attack Modifers"
 			},
 			"showModifierDetails": {
@@ -1143,6 +1397,14 @@
 			"lightColor": {
 				"hint": "Change the theme highlight color. Delete value to reset.",
 				"name": "Set Highlight Color"
+			},
+			"damageStatColor": {
+				"hint": "Change the color of characteristic damage on the actor sheet. Delete value to reset.",
+				"name": "Set Characteristic Damage Color"
+			},
+			"battleColor": {
+				"hint": "Change the theme color for the shi battle sheet. Delete value to reset.",
+				"name": "Set Battle Sheet Color"
 			},
 			"useItemActiveEffects": {
 				"hint": "Use Item Active Effects.  WARNING: may result is odd system behavior.",
@@ -1165,14 +1427,151 @@
 				"name": "Fraction of maximum encumbrance for 75 percent movement rate"
 			},
 			"useTabbedViews": {
-				"hint": "Use a tabbbed sheet for longer item sheets rather than a flat sheet.",
-				"name": "Use tabbed views for weapons and component sheets"
+				"hint": "Use a tabbbed sheet for longer item sheets and system settings rather than a flat sheet.",
+				"name": "Use tabbed views for weapons sheets, component sheets, and system settings"
 			},
 			"damageTypeOptions": {
-				"hint": "A comma separated list that specifies the allowable damage types.",
+				"hint": "A comma separated list that specifies the allowable damage types. Note that using CU ruleset overrides this setting.",
 				"name": "Damage and Protection Types"
 			},
-			"defaultDamageOptions": "Ballistic, Bludgeoning, Corrosive, EMP, Energy, Fire, Laser, Piercing, Poison, Plasma, Psionic, Rad, Slashing, Smoke, Stun"
+			"animalTypesIndependentofNiche": {
+				"hint": "Animals may have any type, indpependent of the niche chosen.",
+				"name": "Animal Types Are Independent of Niche"
+			},
+			"reduceStatusIcons": {
+				"hint": "Remove unneeded status conditions from default Foundry that don't apply to a science fiction setting, e.g. cursed. WARNING: changing this setting from true (checked) to false (unchecked) will reload the world.",
+				"name": "Simplify default condition icon list for a science fiction setting"
+			},
+			"overrideDamageRoll": {
+				"hint": "Set the automatic damage roll to a world scope and override client settings.  WARNING: Requires all clients to reload when setting changed.",
+				"name": "Override automatic damage rolls for clients to GM setting."
+			},
+			"autoDamageTarget": {
+				"hint": "Automatically damage a targeted actor without showing the damage pop-up on a sucessful attack roll.",
+				"name": "Auto Damage Targets"
+			},
+			"useDegreesOfSuccess": {
+				"hint": "Show degrees of success.  The 'Other' setting uses exceptional, marginal, and average descriptions for success & failure. The 'Cepheus Engine' setting does not use the marginal descriptor (per rules).  The 'None' setting omits all success or failure descriptions.",
+				"name": "Show degrees of success for non-attack rolls"
+			},
+			"overrideSuccessWithNaturalCrit": {
+				"hint": "Override the degree of success to be exceptional on a natural 2 or 12 - independent of effect.",
+				"name": "Override degree of success on critical roll (2 or 12)"
+			},
+			"showTotalArmor": {
+				"hint": "Display the total armor value (primary + secondary values) instead of the secondary armor value for Traveller sheet.",
+				"name": "Display total armor value on Traveller"
+			},
+			"showItemIconsInChat": {
+				"hint": "Show the item or skill icon in chat message when making a roll",
+				"name": "Show Item Image in Chat"
+			},
+			"defaultDamageOptions": "Ballistic, Bludgeoning, Corrosive, EMP, Energy, Fire, Laser, Piercing, Poison, Plasma, Psionic, Rad, Slashing, Smoke, Stun",
+			"menuLabels": {
+				"general": "General",
+				"roll": "Rolls",
+				"characteristics": "Characteristics",
+				"formulas": "Formulas",
+				"damage": "Damage",
+				"movement": "Movement",
+				"encumbrance": "Encumbrance",
+				"wounds": "Wounds",
+				"ship": "Ship",
+				"animals_robots": "Animals & Robots",
+				"weapon": "Weapon",
+				"token": "Token",
+				"actor": "Actor",
+				"dragDrop": "Drag & Drop",
+				"style": "Style"
+			},
+			"useMaxArmorValue": {
+				"hint": "Use the maximum armor value to determine protection if more than one armor layer is being worn.  The default (false) adds all the armor values for each layer worn. WARNING: Requires all clients to reload when setting changed.",
+				"name": "Use max armor value rather than sum when wearing multiple layers"
+			},
+			"showActorReferences": {
+				"hint": "Display pdf references (using pdf pager module) or url links on all actor sheets.",
+				"name": "Show PDF References or URL links on actor sheets"
+			},
+			"maxSpellLevel": {
+				"hint": "Maximum spell level that can be used in a spell roll.",
+				"name": "Maximum Spell Level"
+			},
+			"showAllCharWithTable": {
+				"hint": "Use a table, instead of hex graphics, when displaying characteristics (when selected characteristics to display is all). Foundry Standard Style always uses table.",
+				"name": "Use table when displaying all characteristics"
+			},
+			"showTLonItemsTab": {
+				"hint": "Displays the items tech level after the name for compendium item lists and items listed in the items tab.",
+				"name": "Display Tech Level in Compendium and Item Tab lists"
+			},
+			"omitPSIifZero": {
+				"hint": "Hides psionic strength characteristic if value set to zero.",
+				"name": "Omit PSI characteristic from actor sheets if value zero"
+			},
+			"omitALTifZero": {
+				"hint": "Hides alternative characteristics if value set to zero.",
+				"name": "Omit ALT characteristics from actor sheets if value zero"
+			},
+			"rangeModifierType": {
+				"hint": "Type of modifier to use for ranged weapons. Single Range Value (e.g. XX, for MgT2). Double Range Value (e.g. XX/YY for CD, CDEE, CQ, etc.). Range Bands by weapon type (e.g. 'Shotgun' for CE and MgT1).",
+				"name": "Range Modifier Types for Weapons"
+			},
+			"equippedToggleStates": {
+				"hint": "Equipment location toggle states to use for actor sheet. Core: backpack and equipped only, Default: backpack, equipped and ship, All: backpack, equipped, vehicle, ship, and base",
+				"name": "Allowable equipment locations for actor sheet"
+			},
+			"targetDMList": {
+				"hint": "A comma separated list of target difficulty modifiers.  The list has the format of 'label1 number1, label2 number2...'.  For example, 'Obscure -1, Prone (melee) +1, Prone (Ranged) -1'.",
+				"name": "List of target modifiers"
+			},
+			"meleeRange": {
+				"hint": "The distance where combat is in melee range.  Typically one grid unit or less (e.g. 1.5m).",
+				"name": "Melee combat range"
+			},
+			"showSkillGroups": {
+				"hint": "Group skills on actor sheet by group labels.",
+				"name": "Group skills by labels"
+			},
+			"NoDuplicatesOnHotbar": {
+				"hint": "Prevent duplicate item macros when drag-dropping items onto hotbar",
+				"name": "No duplicate item macros on hotbar"
+			},
+			"jDriveLabel": {
+				"hint": "The display label for the jump drive on the power management settings",
+				"name": "Jump Drive Label"
+			},
+			"showCost": {
+				"hint": "List the ship component's cost in MCr for the single-line component list on the ship sheet.",
+				"name": "Display Cost"
+			},
+			"chainBonus": {
+				"hint": "The roll DM for chain rolls (or aiding another) based on the previous roll's effect.  This configuration string is formated as comma separated integers.  The sequence is based on effect values:  <=-6, -5 to -2, -1, 0 , 1 to 5, >=6.  So for Cepheus Engine, the configuration string would be '-2, -1, -1, 1, 1, 2'. Note if there are not six integers entered the chain bonus is zero.",
+				"name": "Assisted/Chain Roll DM"
+			},
+			"defaultActorSheetWidth": {
+				"hint": "The default Traveller sheet width when opening after startup - in pixels.  WARNING: changing this setting will reload the world.",
+				"name": "Default Width of Traveller Sheet"
+			},
+			"defaultActorSheetHeight": {
+				"hint": "The default Traveller sheet height when opening after startup - in pixels. WARNING: changing this setting will reload the world.",
+				"name": "Default Height of Traveller Sheet"
+			},
+			"showAttachmentsList": {
+				"hint": "Automatically expand attachments lists for items on the Traveller sheet.",
+				"name": "Display Item Attachment Lists on Traveller Sheet"
+			},
+			"showConsumablesList": {
+				"hint": "Automatically expand consumables lists for items on the Traveller sheet.",
+				"name": "Display Item Consumables Lists on Traveller Sheet"
+			},
+			"showCombatPosition": {
+				"hint": "Show combat position value on Battle Sheet",
+				"name": "Display Combat Position"
+			},
+			"componentsIgnored": {
+				"hint": "A list of non-cargo components to omit from 'Damage' section of Battle Sheet",
+				"name": "Components Ignored for Damage Tracking"
+			}
 		},
 		"CloseAndCreateNew": "Закрыть и создать",
 		"Copy": "Копировать",
@@ -1192,7 +1591,9 @@
 			"trait": "черта",
 			"spell": "заклинание",
 			"component": "компонент",
-			"computer": "computer"
+			"computer": "computer",
+			"unknown": "unknown",
+			"ship_position": "position"
 		},
 		"speeds": {
 			"walk": "ходьба",
@@ -1216,11 +1617,14 @@
 			"CouldNotFindItem": "Не удаётся найти предмет с id: _ITEM_ID_",
 			"DraggedCompendiumIsNotItem": "Переносимый из библиотеки объект не является предметом.",
 			"InvalidRollFormula": "Некорректная формула урона",
-			"CantPlaceTemplate": "Error placing AOE measured Template."
+			"CantPlaceTemplate": "Error placing AOE measured Template.",
+			"TraitsandSkillsNoConsumables": "Spells, Traits and Skills can't have consumables.",
+			"InvalidRangeBand": "Weapon type and/or range band not allowed for ruleset.",
+			"InvalidWeaponArmor": "Weapon type and/or Armor type not allowed for ruleset.",
+			"CantDropAttachOnConsumables": "Can't drop attachements on consumables."
 		},
 		"Warnings": {
 			"ActorMissingItem": "У актёра под вашим управлением нет предмета с id: _ITEM_ID_",
-			"AutoDamageForMultipleTargetsNotImplemented": "Автоматическое нанесение урона нескольким целям (используя Авто X) в данный момент не поддерживается.",
 			"MaxStatVal": "Значение превышает максимальное для характеристики",
 			"StatValBelowZero": "Значение не может быть ниже нуля",
 			"DecreaseEnduranceFirst": "Выносливость/Стойкость должна быть понижена перед другими характеристиками",
@@ -1245,7 +1649,23 @@
 			"ActionWarningNoToken": "No targets selected for action.",
 			"CantEditEffect": "Can't edit effect for item that is embedded in non-Actor.",
 			"CantCreateEffect": "Can't create an effect for item that is embedded in non-Actor.",
-			"CantDeleteEffect": "Can't delete an effect for item that is embedded in non-Actor."
+			"CantDeleteEffect": "Can't delete an effect for item that is embedded in non-Actor.",
+			"PlayerDoesNotHavePermission": "Player does not have permission to execute macro.",
+			"MacroNotFound": "Macro with name, _MACRO_NAME_, not found.",
+			"NoDamageToApply": "Damage or healing values must greater than zero.",
+			"MissingUntrainedSkill": "Actor is missing untrained skill. Reload application to fix.",
+			"TooManyTargets": "More targets than the number of attacks, targets will be chosen in order selected.",
+			"WearingMultipleLayers": "Multiple armor layers equipped while wearing non-stackable armor.",
+			"ResetEffectForManualDamage": "Effects not included in damage rolls.  Resetting effects in manual rolls to false.",
+			"tableNotFound": "Cannot find RollTable in Journal Entry Link.",
+			"typeMismatch": "RollTable link/UUID in Journal Entry is not a RollTable.",
+			"MacroNameExists": "Macro by that name exists, but command is different.  Update to the new command?",
+			"TooManyLayersOnTarget": "Target is wearing too many layers of armor",
+			"ActorOverloaded": "Current actor is carrying more than its capacity.",
+			"NoJournalFound": "Can't find linked Journal Entry",
+			"CantFindMeleeSkill": "Can't find Melee Combat skill",
+			"CantFindMeleeWeapon": "Can't find an equipped melee weapon to parry",
+			"CantFindShield": "Can't find an equipped shield to block"
 		}
 	},
 	"TYPES": {
@@ -1304,6 +1724,13 @@
 		"StatusWounded": "Wounded",
 		"StatusEncumbered": "Encumbered",
 		"StatusDead": "Dead",
-		"StatusUnconscious": "Unconscious"
+		"StatusUnconscious": "Unconscious",
+		"StatusAiming": "Aiming",
+		"StatusFatigued": "Fatigued",
+		"StatusInCover": "In Cover",
+		"StatusThrust": "Thrust",
+		"StatusInvisible": "Stealthed",
+		"StatusIrradiated": "Irradiated",
+		"StatusTargetLock": "Target Lock"
 	}
 }
