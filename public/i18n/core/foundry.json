@@ -101,6 +101,7 @@
 	"ADVENTURE.ImportProgress": "Импорт",
 	"ADVENTURE.ImportHeaderOverview": "Обзор",
 	"ADVENTURE.ImportHeaderContents": "Содержимое",
+	"ADVENTURE.ImportHeaderOptions": "Настройки",
 	"ADVENTURE.ImportOverwriteTitle": "Перезаписать существующее содержимое?",
 	"ADVENTURE.ImportOverwriteWarning": "Если содержимое из приключения {name} уже существует в вашем мире, оно будет перезаписано новым. Продолжить?",
 	"ADVENTURE.ImportAll": "Импорт всего",
@@ -369,6 +370,7 @@
 
 	"CHAT.Chat": "Чат",
 	"CHAT.Clear": "Очистка чата",
+	"CHAT.Dismiss": "Скрыть",
 	"CHAT.EnterMessage": "Введите сообщение",
 	"CHAT.Export": "Экспорт чата",
 	"CHAT.FlushTitle": "Очистка чата",
@@ -498,23 +500,37 @@
 	"COMPENDIUM.CreateHint": "Создание новой библиотеки в вашем мире.",
 	"COMPENDIUM.FilterDocuments": "Фильтр документов по типу",
 	"COMPENDIUM.ClearFilters": "Сброс фильтров",
-	"COMPENDIUM.Delete": "Удаление библиотеки",
-	"COMPENDIUM.DeleteWarning": "Эта библиотека будет удалена без возможности восстановления.",
+	"COMPENDIUM.Delete": {
+		"Option": "Удаление библиотеки",
+		"Title": "Удаление библиотеки: {compendium}",
+		"Warning": "Эта библиотека будет удалена без возможности восстановления."
+	},
 	"COMPENDIUM.DeleteEntry": "Удаление записи",
-	"COMPENDIUM.Duplicate": "Создание копии",
-	"COMPENDIUM.DuplicateTitle": "Название новой библиотеки",
-	"COMPENDIUM.DuplicateHint": "Вы можете сохранить копию этой библиотеки в вашем мире, чтобы иметь локальную копию для редактирования.",
+	"COMPENDIUM.Duplicate": {
+		"Option": "Создание копии",
+		"Title": "Копия библиотеки: {compendium}",
+		"Label": "Название новой библиотеки",
+		"Hint": "Вы можете сохранить копию этой библиотеки в вашем мире, чтобы иметь локальную копию для редактирования.",
+		"Submit": "Создать копию"
+	},
 	"COMPENDIUM.ErrorRequireTitle": "Вы должны дать название библиотеке.",
-	"COMPENDIUM.ImportAll": "Импорт всего содержимого",
-	"COMPENDIUM.ImportAllHint": "Импорт всего содержимого этой библиотеки в новую или существующую папку. Импорт большого числа библиотек может отрицательно повлиять на производительность.",
-	"COMPENDIUM.ImportAllStart": "Импорт {number} {type} документов и {folderNumber} папок в папку {folder}. Пожалуйста, подождите.",
-	"COMPENDIUM.ImportAllFinish": "Успешно импортировано {number} {type} документов и {folderNumber} папок в папку {folder}.",
+	"COMPENDIUM.ImportAll": {
+		"Option": "Импорт всего содержимого",
+		"Title": "Импорт всего содержимого: {compendium}",
+		"Submit": "Импорт",
+		"Hint": "Импорт всего содержимого этой библиотеки в новую или существующую папку. Импорт большого числа библиотек может отрицательно повлиять на производительность.",
+		"Start": "Импорт {number} {type} документов и {folderNumber} папок в папку {folder}. Пожалуйста, подождите.",
+		"Finish": "Успешно импортировано {number} {type} документов и {folderNumber} папок в папку {folder}."
+	},
 	"COMPENDIUM.ImportEntry": "Импорт записи",
 	"COMPENDIUM.SidebarTitle": "Библиотеки",
 	"COMPENDIUM.Type": "Тип документа",
 	"COMPENDIUM.TypeHint": "Каждая библиотека содержит определённый тип документов.",
-	"COMPENDIUM.ToggleLocked": "Режим редактирования",
-	"COMPENDIUM.ToggleLockedWarning": "Вы собираетесь разблокировать библиотеку для редактирования, которая не принадлежит вашему миру. Желательно вместо этого создать локальную копию библиотеки, чтобы не потерять изменения при обновлении модуля или системы. Продолжить?",
+	"COMPENDIUM.ToggleLocked": {
+		"Option": "Режим редактирования",
+		"Title": "Режим редактирования: {compendium}",
+		"Warning": "Вы собираетесь разблокировать библиотеку для редактирования, которая не принадлежит вашему миру. Желательно вместо этого создать локальную копию библиотеки, чтобы не потерять изменения при обновлении модуля или системы. Продолжить?"
+	},
 	"COMPENDIUM.CannotViewWarning": "У вас нет прав доступа к этой библиотеке.",
 	"COMPENDIUM.OwnershipInheritBelow": "Наследование снизу",
 	"COMPENDIUM.OwnershipReset": "Сброс настроек",
@@ -779,7 +795,7 @@
 		"Manual": "Ручной ввод"
 	},
 
-	"DOCUMENT.Create": "Создание: {type}",
+	"DOCUMENT.Create": "Создать {type}",
 	"DOCUMENT.Delete": "Удаление {type}",
 	"DOCUMENT.New": "{type}",
 	"DOCUMENT.Update": "Обновление {type}",
@@ -860,6 +876,8 @@
 	"DOCUMENT.Walls": "Стены",
 	"DOCUMENT.TypePageFormat": "{type} ({page})",
 	"DOCUMENT.FIELDS": {
+		"name.label": "Название",
+		"img.label": "Файл изображения",
 		"width.label": "Ширина",
 		"height.label": "Высота",
 		"hidden.label": "Скрыто",
@@ -915,28 +933,37 @@
 	"EFFECT.MODE_DOWNGRADE": "Понижение",
 	"EFFECT.MODE_UPGRADE": "Повышение",
 	"EFFECT.MODE_OVERRIDE": "Перезапись",
-	"EFFECT.TabDetails": "Подробности",
-	"EFFECT.TabDuration": "Длительность",
-	"EFFECT.TabEffects": "Эффекты",
-	"EFFECT.Name": "Название эффекта",
-	"EFFECT.Image": "Изображение эффекта",
-	"EFFECT.Tint": "Цвет иконки",
-	"EFFECT.Disabled": "Приостановка эффекта",
-	"EFFECT.Origin": "Источник эффекта",
-	"EFFECT.Transfer": "Применение эффекта к актёру",
-	"EFFECT.TransferHint": "Эффект будет применён к актёру, который владеет предметом-источником этого эффекта.",
 	"EFFECT.TransferLegacy": "Копирование эффекта к актёру",
 	"EFFECT.TransferHintLegacy": "Эффект будет скопирован к актёру, когда родительский предмет этого эффекта создаётся на актёре и будет удалён вместе с предметом.",
-	"EFFECT.DurationSecs": "Продолжительность (сек)",
-	"EFFECT.StartTime": "Время начала эффекта",
-	"EFFECT.DurationTurns": "Продолжительность (ходы)",
-	"EFFECT.Combat": "Бой",
+	"EFFECT.DurationTurns": "Длительность (ходы)",
 	"EFFECT.StartTurns": "Начальный ход эффекта",
 	"EFFECT.ChangeKey": "Ключ параметра",
 	"EFFECT.ChangeMode": "Режим изменения",
-	"EFFECT.ChangeValue": "Значение эффекта",
-	"EFFECT.Description": "Описание эффекта",
+	"EFFECT.ChangeValue": "Значение",
+	"EFFECT.ChangePriority": "Приоритет",
 	"EFFECT.Submit": "Применение изменений",
+	"EFFECT.FIELDS": {
+		"name.label": "Название эффекта",
+		"tint.label": "Цвет иконки",
+		"description.label": "Описание эффекта",
+		"disabled.label": "Приостановка эффекта",
+		"origin.label": "Источник эффекта",
+		"transfer": {
+			"label": "Применить эффект к актёру",
+			"hint": "Эффект будет применён к актёру, который владеет предметом-источником этого эффекта."
+		},
+		"statuses.label": "Статусы",
+		"duration": {
+			"seconds.label": "Длительность (сек)",
+			"startTime.label": "Время начала эффекта",
+			"combat.label": "Бой"
+		}
+	},
+	"EFFECT.TABS": {
+		"Details": "Подробности",
+		"Duration": "Длительность",
+		"Changes": "Изменения"
+	},
 
 	"EFFECT.StatusAsleep": "Сон",
 	"EFFECT.StatusDead": "Смерть",
@@ -1087,6 +1114,10 @@
 
 	"FILES.CreateDirectory": "Создание папки",
 	"FILES.CreateSubfolder": "Создание подпапки",
+	"FILES.DirectoryName": {
+		"Label": "Название папки",
+		"Placeholder": "my-folder"
+	},
 	"FILES.TogglePrivacy": "Переключение режима приватности",
 	"FILES.DisplayMode": "Режим отображения",
 	"FILES.DisplayModeList": "Список",
@@ -1193,6 +1224,7 @@
 	"JOURNAL.ImageShowSuccess": "Изображение показано {which} игрокам.",
 	"JOURNAL.NavLabel": "Содержание журнала",
 	"JOURNAL.AddPage": "Добавление страницы",
+	"JOURNAL.EditPage": "Изменить страницу",
 	"JOURNAL.NextPage": "Следующая страница",
 	"JOURNAL.PrevPage": "Предыдущая страница",
 	"JOURNAL.Submit": "Сохранение записи",
@@ -1202,6 +1234,8 @@
 	"JOURNAL.AnchorLeft": "Слева",
 	"JOURNAL.AnchorRight": "Справа",
 	"JOURNAL.EntryTitle": "Заголовок записи",
+	"JOURNAL.ModeMultiple": "Режим нескольких страниц",
+	"JOURNAL.ModeSingle": "Режим одной страницы",
 	"JOURNAL.ViewMultiple": "Просмотр нескольких страниц",
 	"JOURNAL.ViewSingle": "Просмотр одной страницы",
 	"JOURNAL.ViewCollapse": "Свернуть панель",
@@ -1526,7 +1560,6 @@
 
 	"PLAYLIST.Delete": "Удаление плейлиста",
 	"PLAYLIST.Edit": "Изменение плейлиста",
-	"PLAYLIST.Channel": "Аудиоканал",
 	"PLAYLIST.DefaultChannel": "Аудиоканал по умолчанию",
 	"PLAYLIST.CurrentlyPlaying": "Сейчас играет",
 	"PLAYLIST.ModeDisabled": "Вручную",
@@ -1540,159 +1573,245 @@
 	"PLAYLIST.VolPlaylist": "Плейлисты",
 	"PLAYLIST.VolAmbient": "Фоновые звуки",
 	"PLAYLIST.VolInterface": "Интерфейс",
-	"PLAYLIST.Name": "Название плейлиста",
-	"PLAYLIST.Mode": "Режим воспроизведения",
-	"PLAYLIST.Fade": "Затухание (мс)",
-	"PLAYLIST.Description": "Описание плейлиста",
 	"PLAYLIST.Update": "Обновление плейлиста",
-	"PLAYLIST.SortMode": "Сортировка",
 	"PLAYLIST.SortAlphabetical": "По алфавиту",
 	"PLAYLIST.SortManual": "Вручную",
 	"PLAYLIST.SoundCreate": "Создание звука",
 	"PLAYLIST.SoundEdit": "Изменение звука",
 	"PLAYLIST.SoundDelete": "Удаление звука",
 	"PLAYLIST.SoundLoop": "Повторение звука",
-	"PLAYLIST.SoundName": "Название звука",
-	"PLAYLIST.SoundSrc": "Источник звука",
-	"PLAYLIST.SoundDescription": "Описание звука",
-	"PLAYLIST.SoundRepeat": "Повторение",
 	"PLAYLIST.SoundStreaming": "Передача большого файла",
-	"PLAYLIST.SoundUpdate": "Обновление звука",
 	"PLAYLIST.SoundPlay": "Воспроизвести звук",
 	"PLAYLIST.SoundPause": "Пауза",
 	"PLAYLIST.SoundPreload": "Предзагрузка звука",
 	"PLAYLIST.SoundResume": "Продолжение",
-	"PLAYLIST.SoundVolume": "Громкость звука",
 	"PLAYLIST.SoundStop": "Остановка",
-	"PLAYLIST.BulkImport": "Массовый импорт",
-	"PLAYLIST.BulkImportWarning": "В указанной папке \"{path}\" не было найдено подходящих звуков для импорта",
+	"PLAYLIST.BulkImport": {
+		"Title": "Массовый импорт звуков",
+		"Hint": "Выберите папку, содержащую звуки, которые хотите импортировать.",
+		"Button": "Массовый импорт",
+		"Warning": "В указанной папке \"{path}\" не было найдено подходящих звуков для импорта"
+	},
 	"PLAYLIST.PinToTop": "Закрепить сверху",
 	"PLAYLIST.PinToBottom": "Закрепить снизу",
+	"PLAYLIST.FIELDS": {
+		"name.label": "Название плейлиста",
+		"mode.label": "Режим воспроизведения",
+		"channel.label": "Аудиоканал",
+		"sorting.label": "Сортировка",
+		"fade.label": "Длительность затухания",
+		"description.label": "Описание плейлиста"
+	},
 	"PLAYLIST.VOLUME": {
 		"CONTROLS": "Управление громкостью",
 		"TOOLTIP": "Громкость: {volume}%"
 	},
 
-	"SCENES.Accessibility": "Права",
-	"SCENES.AccessibilityGM": "Только GM",
-	"SCENES.AccessibilityAll": "Все игроки",
-	"SCENES.Activate": "Активация",
-	"SCENES.AudioPlaylist": "Плейлист сцены",
-	"SCENES.AudioPlaylistHint": "Плейлист звуков, который будет автоматически проигрываться при активации сцены.",
-	"SCENES.BackgroundColor": "Фоновый цвет",
-	"SCENES.BackgroundImage": "Фоновое изображение",
-	"SCENES.BackgroundImageHint": "Настройте изображение основной карты сцены.",
-	"SCENES.FogOverlay": "Изображение тумана войны",
-	"SCENES.FogOverlayHint": "Опциональное изображение тумана войны, отображаемое поверх неисследованных областей.",
-	"SCENES.ForegroundImage": "Переднее изображение",
-	"SCENES.ForegroundImageHint": "Опциональное изображение переднего плана, отображаемое поверх других объектов сцены.",
-	"SCENES.ForegroundElevation": "Высота переднего плана",
-	"SCENES.ForegroundElevationHint": "Значение в единицах измерения сцены, определяющее высоту переднего плана и верхних тайлов.",
-	"SCENES.BackgroundScale": "Масштаб фонового изображения",
-	"SCENES.BackgroundScaleHint": "Используйте SHIFT+Колёсико или SHIFT+Вверх и SHIFT+Вниз для настройки масштаба фонового изображения.",
-	"SCENES.CaptureInitialViewPosition": "Положение камеры для начального вида сцены.",
-	"SCENES.Configure": "Настройка",
-	"SCENES.ConfigTitle": "Настройка сцены",
-	"SCENES.Darkness": "Уровень темноты",
-	"SCENES.DarknessHint": "Настройте уровень темноты, которая покрывает сцену и приглушает источники света, имитируя ночь или недостаток света.",
-	"SCENES.Dimensions": "Размер сцены",
-	"SCENES.DimensionsHint": "Размер сцены автоматически выставляется в соответствии с размером фонового изображения.",
-	"SCENES.DimensionChangeTitle": "Изменить размер сцены?",
-	"SCENES.DimensionChangeWarning": "Вы собираетесь изменить размер сцены. Это может сместить находящиеся на ней объекты по отношению к фоновому изображению.",
-	"SCENES.DimensionLinked": "Стороны сцены связаны и изменение одной стороны отмасштабирует другую. Нажмите, чтобы отвязать стороны.",
-	"SCENES.DimensionUnlinked": "Стороны сцены отвязаны и изменение одной стороны не повлияет на другую. Нажмите, чтобы привязать стороны.",
-	"SCENES.DistortedDimensionsTitle": "Искажение соотношения сторон",
-	"SCENES.DistortedDimensionsWarning": "Новые размеры сторон сцены не соответствуют соотношению оригинального размера. Результат может исказить изображение сцены. Желаете продолжить?",
-	"SCENES.FogExplore": "Туман",
-	"SCENES.FogExploreHint": "Сцена будет покрыта туманом войны, который будет раскрываться зрением токенов. При отключении будут отображаться только области, которые исследованы и видны токенам в данный момент.",
-	"SCENES.GenerateThumb": "Создание эскиза",
-	"SCENES.GenerateThumbNoCanvas": "Эскиз сцены не может быть создан при активной настройке 'Отключение отображения сцены'",
-	"SCENES.GenerateThumbSuccess": "Создан эскиз для сцены {name}.",
-	"SCENES.GlobalIllum": "Глобальное освещение",
-	"SCENES.GlobalIllumHint": "На этой сцене находится  глобальный источник света, обеспечивающий базовый уровень освещения всех областей сцены.",
-	"SCENES.GlobalLightThreshold": "Порог глобального освещения",
-	"SCENES.GlobalLightThresholdHint": "Порог темноты от 0 до 1. Когда темнота сцены превышает этот порог, глобальное освещение автоматически отключается.",
-	"SCENES.GridColor": "Цвет сетки",
-	"SCENES.GridConfigTool": "Инструмент настройки сетки",
-	"SCENES.GridConfigToolHint": "Настройте сетку и расположение фонового изображения, используя колёсико мыши и кнопки стрелок, или введя значения вручную.",
-	"SCENES.GridOpacity": "Непрозрачность сетки",
-	"SCENES.GridType": "Тип сетки",
-	"SCENES.GridGridless": "Без сетки",
-	"SCENES.GridSquare": "Квадратная",
-	"SCENES.GridHexOddR": "Гексагональная острая - Тип 1",
-	"SCENES.GridHexEvenR": "Гексагональная острая - Тип 2",
-	"SCENES.GridHexOddQ": "Гексагональная плоская - Тип 1",
-	"SCENES.GridHexEvenQ": "Гексагональная плоская - Тип 2",
-	"SCENES.GridSize": "Размер сетки",
-	"SCENES.GridSizeHint": "Размер одной клетки в пикселях. Используйте инструмент настройки сетки, чтобы отрегулировать её.",
-	"SCENES.GridSizeError": "Изменение размера сцены уменьшит размер сетки ниже минимального (50px). Если вы всё равно хотите продолжить, измените режим сетки на 'Без сетки', затем измените размер сцены и добавьте новую сетку.",
-	"SCENES.GridResizeHint": "Используйте ALT+Колёсико или ALT+Вверх и ALT+Вниз для настройки размера сетки.",
-	"SCENES.GridPosition": "Смещение фонового изображения",
-	"SCENES.GridPositionHint": "Используйте кнопки стрелок для регулирования смещения фона.",
-	"SCENES.GridScale": "Масштаб сетки",
-	"SCENES.GridDistance": "Дистанция",
-	"SCENES.GridUnits": "Единицы измерения",
-	"SCENES.GridReset": "Сброс изменений",
-	"SCENES.GridStyle": "Стиль сетки",
-	"SCENES.GridThickness": "Толщина сетки",
-	"SCENES.HeaderAmbience": "Окружение",
-	"SCENES.HeaderAmbienceBasic": "Основные параметры",
-	"SCENES.HeaderDetails": "Основное",
-	"SCENES.HeaderGrid": "Сетка",
-	"SCENES.HeaderVision": "Освещение",
-	"SCENES.InitialView": "Начальное положение камеры",
-	"SCENES.InitialViewButton": "Сохранение текущей камеры",
-	"SCENES.InitialViewHint": "Начальное положение камеры при открытии сцены.",
-	"SCENES.InvalidDimension": "Полученный размер не является целым числом для другой стороны. Попробуйте другое значение, или отвяжите соотношение сторон.",
-	"SCENES.Loading": "Загрузка {name}",
-	"SCENES.NavName": "Название в навигации",
-	"SCENES.NavNameHint": "Альтернативное название, которое будет отображаться в панели навигации.",
-	"SCENES.Notes": "Заметки сцены",
-	"SCENES.Padding": "Процент отступа",
-	"SCENES.PaddingHint": "Дополнительный отступ вокруг фона сцены, являющийся игровой областью.",
-	"SCENES.Pixels": "Пиксели",
-	"SCENES.Preload": "Предзагрузка",
-	"SCENES.SceneName": "Название сцены",
-	"SCENES.View": "Просмотр сцены",
-	"SCENES.JournalEntry": "Журнал",
-	"SCENES.JournalEntryHint": "Связанный журнал, где GM может хранить заметки о сцене.",
-	"SCENES.PlaylistSound": "Звук плейлиста",
-	"SCENES.PlaylistSoundHint": "Определённый звук в плейлисте, который будет проигран при активации сцены.",
-	"SCENES.ShowNav": "Отображение в навигации",
-	"SCENES.ShiftBG": "Смещение фонового изображения",
-	"SCENES.ShiftHorizontal": "По горизонтали",
-	"SCENES.ShiftVertical": "По вертикали",
-	"SCENES.TokenVision": "Зрение токенов",
-	"SCENES.TokenVisionHint": "Ограничить видимость внутри сцены зрением управляемых токенов. Иначе вся сцена будет видимой.",
-	"SCENES.ToggleNav": "Отображение в навигации",
-	"SCENES.Units": "единицы",
-	"SCENES.WeatherEffect": "Погодные эффекты",
-	"SCENES.WeatherEffectHint": "Отображение погодных эффектов на сцене.",
-	"SCENES.ZoomLower": "Приближение",
-	"SCENES.FogExploredColor": "Исследованный цвет тумана войны ",
-	"SCENES.FogExploredColorHint": "Цвет, применяемый к областям сцены, которые были исследованы, но находятся за пределами текущей области зрения.",
-	"SCENES.FogUnexploredColor": "Неисследованный цвет тумана войны ",
-	"SCENES.FogUnexploredColorHint": "Цвет, применяемый к областям сцены, которые не были исследованы.",
+	"PLAYLIST_SOUND.Update": "Обновление звука",
+	"PLAYLIST_SOUND.FIELDS": {
+		"name.label": "Название звука",
+		"path.label": "Источник звука",
+		"channel.label": "Аудиоканал",
+		"volume.label": "Громкость звука",
+		"repeat.label": "Повторение",
+		"fade.label": "Длительность затухания",
+		"description.label": "Описание звука"
+	},
 
-	"SCENES.ENVIRONMENT": {
-		"HeaderLabel": "Освещение окружения",
-		"Luminosity": "Яркость",
-		"LuminosityHint": "Управляйте тем, насколько ярким кажется сцена. Более высокая яркость делает сцену яркой, как солнечный день, в то время как более низкая яркость делает ее темнее и мрачнее.",
-		"Saturation": "Насыщенность",
-		"SaturationHint": "Настройте чистоту цветов на сцене. Значения выше 0 делают цвета более насыщенными (яркими и насыщенными), в то время как отрицательные значения ослабляют и приглушают цвета.",
-		"Shadows": "Тени",
-		"ShadowsHint": "Поднятие этого ползунка делает тени и более темные элементы сцены более темными и глубокими.",
-		"Hue": "Оттенок",
-		"HueHint": "Выберите оттенок (цвет), который смешивается со всей сценой. Чтобы активировать ползунок цвета, у вас должна быть интенсивность больше 0.",
-		"Intensity": "Интенсивность оттенка",
-		"IntensityHint": "Настройте, насколько интенсивно выбранный оттенок смешивается со сценой. Высокая интенсивность оттенка насыщает сцену цветом, возможно, подавляя существующие цвета. Более низкая интенсивность оттенка более плавно смешивает выбранный цвет.",
-		"ResetEnvironment": "Сброс настроек",
-		"BlendAmbience": "Смешивание атмосферы",
-		"BlendAmbienceHint": "Смешивать базовую атмосферу с атмосферой темноты в соответствии с уровнем темноты.",
-		"BaseAmbience": "Базовая атмосфера",
-		"DarkAmbience": "Тёмная атмосфера",
-		"DarknessLock": "Блокировка уровня тьмы",
-		"DarknessLockHint": "Когда эта опция включена, уровень тьмы не может быть изменен."
+	"SCENE.Accessibility": "Права доступа",
+	"SCENE.AccessibilityGM": "Только для ведущего",
+	"SCENE.AccessibilityAll": "Все игроки",
+	"SCENE.Activate": "Активация",
+	"SCENE.BackgroundScale": "Масштаб фонового изображения",
+	"SCENE.BackgroundScaleHint": "Используйте SHIFT+Колёсико или SHIFT+Вверх и SHIFT+Вниз для настройки масштаба фонового изображения.",
+	"SCENE.CaptureInitialViewPosition": "Положение камеры для начального вида сцены.",
+	"SCENE.Configure": "Настройки",
+	"SCENE.Dimensions": "Размер сцены",
+	"SCENE.DimensionsHint": "Размер сцены автоматически выставляется в соответствии с размером фонового изображения.",
+	"SCENE.DimensionChangeTitle": "Изменить размер сцены?",
+	"SCENE.DimensionChangeWarning": "Вы собираетесь изменить размер сцены. Это может сместить находящиеся на ней объекты по отношению к фоновому изображению.",
+	"SCENE.DimensionLinked": "Стороны сцены связаны и изменение одной стороны отмасштабирует другую. Нажмите, чтобы отвязать стороны.",
+	"SCENE.DimensionUnlinked": "Стороны сцены отвязаны и изменение одной стороны не повлияет на другую. Нажмите, чтобы привязать стороны.",
+	"SCENE.DistortedDimensionsTitle": "Искажение соотношения сторон",
+	"SCENE.DistortedDimensionsWarning": "Новые размеры сторон сцены не соответствуют соотношению оригинального размера. Результат может исказить изображение сцены. Желаете продолжить?",
+	"SCENE.GenerateThumb": "Создание эскиза",
+	"SCENE.GenerateThumbNoCanvas": "Эскиз сцены не может быть создан при активной настройке 'Отключение отображения сцены'",
+	"SCENE.GenerateThumbUploadDenied": "Эскиз сцены не может быть создан, потому что у участника нет прав на загрузку файлов.",
+	"SCENE.GenerateThumbSuccess": "Создан эскиз для сцены {name}.",
+	"SCENE.GridConfigTool": "Инструмент настройки сетки",
+	"SCENE.GridConfigToolHint": "Настройте сетку и расположение фонового изображения, используя колёсико мыши и кнопки стрелок, или введя значения вручную.",
+	"SCENE.GridGridless": "Без сетки",
+	"SCENE.GridSquare": "Квадрат",
+	"SCENE.GridHexOddR": "Гексагональная острая - Тип 1",
+	"SCENE.GridHexEvenR": "Гексагональная острая - Тип 2",
+	"SCENE.GridHexOddQ": "Гексагональная плоская - Тип 1",
+	"SCENE.GridHexEvenQ": "Гексагональная плоская - Тип 2",
+	"SCENE.GridSizeError": "Изменение размера сцены уменьшит размер сетки ниже минимального (50px). Если вы всё равно хотите продолжить, измените режим сетки на 'Без сетки', затем измените размер сцены и добавьте новую сетку.",
+	"SCENE.GridResizeHint": "Используйте ALT+Колёсико или ALT+Вверх и ALT+Вниз для настройки размера сетки.",
+	"SCENE.GridPosition": "Смещение фонового изображения",
+	"SCENE.GridPositionHint": "Используйте кнопки стрелок для регулирования смещения фона.",
+	"SCENE.GridScale": "Масштаб сетки",
+	"SCENE.GridReset": "Сброс изменений",
+	"SCENE.InitialView": "Начальное положение камеры",
+	"SCENE.InitialViewButton": "Сохранение текущей камеры",
+	"SCENE.InitialViewHint": "Начальное положение камеры при открытии сцены.",
+	"SCENE.InvalidDimension": "Полученный размер не является целым числом для другой стороны. Попробуйте другое значение, или отвяжите соотношение сторон.",
+	"SCENE.Loading": "Загрузка {name}",
+	"SCENE.Notes": "Заметки сцены",
+	"SCENE.Pixels": "Пиксели",
+	"SCENE.Preload": "Предзагрузка сцены",
+	"SCENE.View": "Просмотр сцены",
+	"SCENE.ShiftBG": "Смещение фонового изображения",
+	"SCENE.ToggleNav": "Отображение в навигации",
+	"SCENE.Ambience": {
+		"Base": "Базовая атмосфера",
+		"Dark": "Тёмная атмосфера",
+		"ResetEnvironment": "Сброс настроек"
+	},
+	"SCENE.FIELDS": {
+		"name.label": "Название сцены",
+		"navigation.label": "Видимость в навигации",
+		"navName": {
+			"label": "Название в навигации",
+			"hint": "Альтернативное название, которое будет отображаться в панели навигации."
+		},
+		"background": {
+			"src": {
+				"label": "Фоновое изображение",
+				"hint": "Настройте изображение основной карты сцены."
+			},
+			"offsetX.label": "По горизонтали",
+			"offsetY.label": "По вертикали"
+		},
+		"backgroundColor.label": "Цвет фона",
+		"foreground": {
+			"label": "Переднее изображение",
+			"hint": "Опциональное изображение переднего плана, отображаемое поверх других объектов сцены."
+		},
+		"foregroundElevation": {
+			"label": "Высота переднего плана",
+			"hint": "Значение в единицах измерения сцены, определяющее высоту переднего плана и верхних тайлов."
+		},
+		"initial.scale.label": "Приближение",
+		"grid": {
+			"type.label": "Тип сетки",
+			"size": {
+				"label": "Размер сетки",
+				"hint": "Размер одной клетки в пикселях. Используйте инструмент настройки сетки, чтобы отрегулировать её."
+			},
+			"thickness.label": "Толщина сетки",
+			"color.label": "Цвет сетки",
+			"alpha.label": "Непрозрачность сетки",
+			"distance.label": "Дистанция",
+			"units.label": "Единицы",
+			"style.label": "Стиль сетки"
+		},
+		"padding": {
+			"label": "Процент отступа",
+			"hint": "Дополнительный отступ вокруг фона сцены, являющийся игровой областью."
+		},
+		"tokenVision": {
+			"label": "Зрение токенов",
+			"hint": "Ограничить видимость внутри сцены зрением управляемых токенов. Иначе вся сцена будет видимой."
+		},
+		"fog": {
+			"exploration": {
+				"label": "Туман войны",
+				"hint": "Тумана войны будет отслеживаться для каждого участника. В противном случае раскрытие тумана не происходит, и вместо этого зрение токенов ограничивается тем, что они могут видеть в данный момент."
+			},
+			"overlay": {
+				"label": "Изображение тумана войны",
+				"hint": "Опциональное изображение тумана войны, отображаемое поверх неисследованных областей."
+			},
+			"colors": {
+				"explored": {
+					"label": "Цвет раскрытого тумана войны ",
+					"hint": "Цвет, применяемый к областям сцены, которые были раскрыты, но находятся за пределами текущей области зрения."
+				},
+				"unexplored": {
+					"label": "Цвет скрытого тумана войны ",
+					"hint": "Цвет, применяемый к областям сцены, которые не были раскрыты."
+				}
+			}
+		},
+		"environment": {
+			"globalLight": {
+				"enabled": {
+					"label": "Глобальное освещение",
+					"hint": "На этой сцене будет глобальный источник света, обеспечивающий базовый уровень освещения всех областей сцены."
+				},
+				"darkness.max": {
+					"label": "Порог глобального освещения",
+					"hint": "Порог темноты от 0 до 1. Когда темнота сцены превышает этот порог, глобальное освещение автоматически отключается."
+				}
+			},
+			"darknessLevel": {
+				"label": "Уровень темноты",
+				"hint": "Настройте наложение темноты, которая покрывает сцену и приглушает источники света, имитируя ночь или недостаток света."
+			},
+			"darknessLock": {
+				"label": "Блокировка уровня темноты",
+				"hint": "Когда эта опция включена, уровень темноты не может быть изменен."
+			},
+			"cycle": {
+				"label": "Смешивание атмосферы",
+				"hint": "Смешивать базовую атмосферу с атмосферой темноты в соответствии с уровнем темноты."
+			}
+		},
+		"environment.base": {
+			"luminosity": {
+				"label": "Яркость",
+				"hint": "Управляйте тем, насколько ярким кажется сцена. Более высокая яркость делает сцену яркой, как солнечный день, в то время как более низкая яркость делает ее темнее и мрачнее."
+			},
+			"saturation": {
+				"label": "Насыщенность",
+				"hint": "Настройте чистоту цветов на сцене. Значения выше 0 делают цвета более насыщенными (яркими и насыщенными), в то время как отрицательные значения ослабляют и приглушают цвета."
+			},
+			"shadows": {
+				"label": "Тени",
+				"hint": "Поднятие этого ползунка делает тени и более темные элементы сцены более темными и глубокими."
+			},
+			"hue": {
+				"label": "Оттенок",
+				"hint": "Выберите оттенок (цвет), который смешивается со всей сценой. Чтобы активировать ползунок цвета, у вас должна быть интенсивность больше 0."
+			},
+			"intensity": {
+				"label": "Интенсивность оттенка",
+				"hint": "Настройте, насколько интенсивно выбранный оттенок смешивается со сценой. Высокая интенсивность оттенка насыщает сцену цветом, возможно, подавляя существующие цвета. Более низкая интенсивность оттенка более плавно смешивает выбранный цвет."
+			}
+		},
+		"journal": {
+			"label": "Журнал",
+			"hint": "Связанный журнал, где ведущий может хранить заметки о сцене."
+		},
+		"journalEntryPage": {
+			"label": "Страница журнала",
+			"hint": "Определённая страница связанного журнала."
+		},
+		"playlist": {
+			"label": "Плейлист сцены",
+			"hint": "Плейлист, который будет автоматически проигрываться при активации сцены."
+		},
+		"playlistSound": {
+			"label": "Звук плейлиста",
+			"hint": "Определённый звук в плейлисте, который будет проигран при активации сцены."
+		},
+		"weather": {
+			"label": "Погодные эффекты",
+			"hint": "Отображение погодных эффектов на сцене."
+		}
+	},
+	"SCENE.TABS": {
+		"Main": {
+			"Basics": "Основное",
+			"Grid": "Сетка",
+			"Lighting": "Освещение",
+			"Ambience": "Окружение"
+		},
+		"Ambience": {
+			"Basic": "Основные параметры",
+			"Environment": "Освещение окружения"
+		}
 	},
 
 	"SCENE_NAVIGATION": {
@@ -1766,8 +1885,6 @@
 	"SETTINGS.FontConfigN": "Дополнительные шрифты",
 	"SETTINGS.FontConfigL": "Настройка дополнительных шрифтов",
 	"SETTINGS.FontConfigH": "Настройте дополнительные шрифты, доступные в этом мире.",
-	"SETTINGS.FontSizeN": "Размер шрифта",
-	"SETTINGS.FontSizeL": "Увеличение или уменьшение шрифта, используемого приложением.",
 	"SETTINGS.PhotosensitiveModeN": "Режим светочувствительности",
 	"SETTINGS.PhotosensitiveModeL": "В этом режиме некоторые анимации, яркие источники света и быстро движущиеся объекты будут статичны или отключены.",
 	"SETTINGS.MipMapN": "Сглаживание текстур при приближении",
@@ -1788,9 +1905,25 @@
 	"SETTINGS.TabSystem": "Настройки системы",
 	"SETTINGS.TokenDragPreviewN": "Зрение при перетаскивании",
 	"SETTINGS.TokenDragPreviewL": "Если включено, то зрение токена будет обновляться в реальном времени при перетаскивании. По умолчанию опция отключена, чтобы избежать нежелательного мухлежа.",
-	"SETTINGS.DefaultTokenN": "Настройки токена по умолчанию",
-	"SETTINGS.DefaultTokenL": "Настройки токенов по умолчанию",
-	"SETTINGS.DefaultTokenH": "Настройте значения по умолчанию для токенов новых актёров.",
+	"SETTINGS.PrototypeTokenOverrides": {
+		"Name": "Перезапись прототипа токена",
+		"Label": "Настройка перезаписи прототипа",
+		"Hint": "Настройка перезаписи параметров прототипа токена для всех актёров.",
+		"Reset": {
+			"Label": "Сброс",
+			"Warning": "Это действие удалит все перезаписанные параметры."
+		},
+		"Disabled": "Отключено",
+		"Submit": "Сохранить перезапись",
+		"TABS": {
+			"AllTypes": {
+				"Label": "[Все типы]",
+				"Hint": "Перезапись этих параметров применяется ко всем прототипам токенов, независимо от типа родительского актёра. Они могут быть переопределены для каждого типа актера в последующих вкладках. Пустые поля будут игнорироваться при перезаписи."
+			},
+			"Basics": "Основное",
+			"Marker": "Метка хода"
+		}
+	},
 	"SETTINGS.PermissionReset": "Сброс прав роли участника на стандартные.",
 	"SETTINGS.PermissionUpdate": "Настройки прав роли участника обновлены.",
 	"SETTINGS.EditorAutosaveN": "Частота автосохранения редактора текста",
@@ -1808,11 +1941,37 @@
 	"SETTINGS.GridDiagonalsAlternating1": "Чередующиеся (1/2/1)",
 	"SETTINGS.GridDiagonalsAlternating2": "Чередующиеся (2/1/2)",
 	"SETTINGS.GridDiagonalsIllegal": "Недопустимые (∞)",
-	"SETTINGS.ColorSchemeN": "Предпочтительная тема",
-	"SETTINGS.ColorSchemeH": "Укажите, какую тему вы предпочитаете использовать для интерфейса: светлую или тёмную. Не все элементы интерфейса поддерживают тему.",
-	"SETTINGS.ColorSchemeDefault": "Система",
-	"SETTINGS.ColorSchemeDark": "Тёмная",
-	"SETTINGS.ColorSchemeLight": "Светлая",
+
+	"SETTINGS.UI": {
+		"MENU": {
+			"name": "Настройка интерфейса",
+			"label": "Настройка интерфейса",
+			"hint": "Настройки, влияющие на вид и поведение интерфейса."
+		},
+		"FIELDS": {
+			"uiScale": {
+				"label": "Масштаб интерфейса",
+				"hint": "Примените глобальный коэффициент масштабирования к интерфейсу, чтобы сделать его крупнее или мельче."
+			},
+			"fontScale": {
+				"label": "Размер шрифта",
+				"hint": "Увеличение или уменьшение шрифта, используемого приложением."
+			},
+			"colorScheme": {
+				"label": "Предпочтительная тема",
+				"hint": "Укажите, какую тему вы предпочитаете использовать для интерфейса: светлую или тёмную. Не все элементы интерфейса поддерживают тему.",
+				"default": "Система",
+				"dark": "Тёмная",
+				"light": "Свет"
+			},
+			"chatNotifications": {
+				"label": "Уведомления чата",
+				"hint": "Будут ли уведомления о новых сообщениях в чате отображаться в виде полных карточек или в виде точек на вкладке чата.",
+				"cards": "Карточки",
+				"pip": "Точки"
+			}
+		}
+	},
 
 	"SETUP.NavLabel": "Вкладки основных настроек",
 	"SETUP.CoreVersion": "Версия программы",
@@ -2332,7 +2491,10 @@
 	"FOLDER.Exporting": "Экспорт {type} в библиотеку {compendium}.",
 	"FOLDER.ExportDone": "Экспорт {type} в библиотеку {compendium} завершён.",
 	"FOLDER.CreateTable": "Создание таблицы",
-	"FOLDER.CreateTableConfirm": "Создать случайную таблицу, используя содержимое папки в качестве результатов?",
+	"FOLDER.CreateTableConfirm": {
+		"Title": "Создание таблицы: {folder}",
+		"Question": "Создать случайную таблицу, используя содержимое папки в качестве результатов?"
+	},
 	"FOLDER.InvalidDocumentType": "Недопустимый тип документа \"{type}\" для этой папки.",
 	"FOLDER.ExceededMaxDepth": "Нельзя иметь более {depth} уровней вложения папок.",
 	"FOLDER.DocumentSort": "Сортировка",
@@ -2343,7 +2505,7 @@
 		"sorting.label": "Сортировка"
 	},
 
-	"OWNERSHIP.Title": "Настройка владения",
+	"OWNERSHIP.Title": "Настройка владения: {object}",
 	"OWNERSHIP.NONE": "Нет",
 	"OWNERSHIP.LIMITED": "Ограниченный",
 	"OWNERSHIP.OBSERVER": "Наблюдатель",
@@ -2385,23 +2547,23 @@
 	"PERMISSION.JournalCreate": "Создание журналов",
 	"PERMISSION.JournalCreateHint": "Позволить роли создавать журналы.",
 	"PERMISSION.MacroScript": "Изменение скриптов макросов и запуск скриптов в областях",
-	"PERMISSION.MacroScriptHint": "Позволить роли создавать, обновлять и удалять скрипты макросов и запускать скрипты в областях.",
+	"PERMISSION.MacroScriptHint": "Позволить роли использовать JavaScript с доступом к API в макросах и областях.",
 	"PERMISSION.ManualRolls": "Совершение ручных бросков",
 	"PERMISSION.ManualRollsHint": "Позволить роли выбор ручного режима для бросков.",
 	"PERMISSION.MessageWhisper": "Личные сообщения",
-	"PERMISSION.MessageWhisperHint": "Позволить роли отправлять личные сообщения шёпотом, которые GM не видит.",
+	"PERMISSION.MessageWhisperHint": "Позволить роли использовать команду /whisper для отправки личных сообщений.",
 	"PERMISSION.NoteCreate": "Создание заметок сцены",
 	"PERMISSION.NoteCreateHint": "Позволяет участникам с этой ролью создавать заметки на сцене из записей журнала.",
-	"PERMISSION.PingCanvas": "Маячки на сцене",
+	"PERMISSION.PingCanvas": "Маячок на сцене",
 	"PERMISSION.PingCanvasHint": "Позволить роли использовать привлекающие внимание маячки на игровой сцене.",
-	"PERMISSION.PlaylistCreate": "Создание плейлистов",
-	"PERMISSION.PlaylistCreateHint": "Позволить роли создавать плейлисты в мире.",
+	"PERMISSION.PlaylistCreate": "Управление плейлистами",
+	"PERMISSION.PlaylistCreateHint": "Позволить роли создавать и управлять плейлистами в мире.",
 	"PERMISSION.SettingsModify": "Изменение настроек",
 	"PERMISSION.SettingsModifyHint": "Позволить роли изменять настройки игры и управлять модулями.",
 	"PERMISSION.ShowCursor": "Отображение курсора",
-	"PERMISSION.ShowCursorHint": "Отображать положение курсора мыши этой роли на сцене для остальных игроков.",
+	"PERMISSION.ShowCursorHint": "Отображать положение курсора мыши игрока другим участникам.",
 	"PERMISSION.ShowRuler": "Отображать значения линейки",
-	"PERMISSION.ShowRulerHint": "Отображать измерения линейкой другим игрокам.",
+	"PERMISSION.ShowRulerHint": "Отображать инструмент измерения игрока другим участникам.",
 	"PERMISSION.TemplateCreate": "Создание шаблонов",
 	"PERMISSION.TemplateCreateHint": "Позволить роли создавать и настраивать измерительные шаблоны для эффектов на области.",
 	"PERMISSION.TokenCreate": "Создание токенов",
@@ -2492,17 +2654,14 @@
 			"tokenExit": {
 				"label": "Выход токена"
 			},
-			"tokenPreMove": {
-				"label": "Перед движением токена"
-			},
-			"tokenMove": {
-				"label": "После движения токена"
-			},
 			"tokenMoveIn": {
 				"label": "При входе токена"
 			},
 			"tokenMoveOut": {
 				"label": "При выходе токена"
+			},
+			"tokenMoveWithin": {
+				"label": "При перемещении внутри"
 			},
 			"tokenTurnStart": {
 				"label": "Начало хода токена"
@@ -2736,7 +2895,10 @@
 	"SUPPORT.ModuleIssues": "Проблемы с модулем",
 	"SUPPORT.ModuleSubTypesUnavailableName": "<strong>{count}</strong> {document} недоступны, т.к. модуль '{name}' не активен.",
 	"SUPPORT.ModuleSubTypesUnavailableNoName": "<strong>{count}</strong> {document} недоступны, т.к. модуль с ID '{name}' не активен.",
-	"SUPPORT.UnavailableDocuments": "{count} недоступных документов {document}",
+	"SUPPORT.UnavailableDocuments": {
+		"one": "1 недоступный документ {document}",
+		"other": "{count} недоступных документов {document}"
+	},
 	"SUPPORT.WorldScripts": "Скрипты мира",
 	"SUPPORT.GenerateFullReport": "Создать отчёт",
 	"SUPPORT.GenerateFullReportHint": "Полный отчет содержит подробную информацию об установленных модулях и библиотеках и может занять некоторое время.",
@@ -2848,6 +3010,8 @@
 	"TIME.Now": "Сейчас",
 	"TIME.Seconds": "секунд",
 	"TIME.SecondsAbbreviation": "с",
+	"TIME.Milliseconds": "Милисекунды",
+	"TIME.MillisecondsAbbreviation": "мс",
 	"TIME.Minutes": "минут",
 	"TIME.MinutesAbbreviation": "м",
 	"TIME.Hours": "часов",
@@ -2875,11 +3039,11 @@
 	"TOKEN.Update": "Обновление токена",
 	"TOKEN.WarningNoActor": "Этот токен связан с актёром, который больше не существует.",
 	"TOKEN.WarningNoVision": "На этой сцене нет токена, позволяющего вам видеть область.",
-	"TOKEN.Tabs": {
+	"TOKEN.TABS": {
 		"Identity": "Данные",
-		"Appearance": "Внешний вид",
+		"Appearance": "Вид",
 		"Vision": "Зрение",
-		"Light": "Освещение",
+		"Light": "Свет",
 		"Resources": "Ресурсы"
 	},
 	"TOKEN.FIELDS": {
