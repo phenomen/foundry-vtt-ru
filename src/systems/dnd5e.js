@@ -37,9 +37,7 @@ export function init() {
 					let translation;
 
 					if (Array.isArray(translations)) {
-						translation = translations.find(
-							(t) => t.id === data._id || t.id === data.name,
-						);
+						translation = translations.find((t) => t.id === data._id || t.id === data.name);
 					} else {
 						translation = translations[data.name];
 					}
@@ -118,29 +116,22 @@ async function updateAA() {
 		"/modules/ru-ru/i18n/modules/aa-autorec.json",
 	);
 
-	const currentSettings =
-		AutomatedAnimations.AutorecManager.getAutorecEntries();
+	const currentSettings = AutomatedAnimations.AutorecManager.getAutorecEntries();
 
 	const newSettings = {
 		melee: mergeArrays(currentSettings.melee, translatedSettings.melee),
 		range: mergeArrays(currentSettings.range, translatedSettings.range),
 		ontoken: mergeArrays(currentSettings.ontoken, translatedSettings.ontoken),
-		templatefx: mergeArrays(
-			currentSettings.templatefx,
-			translatedSettings.templatefx,
-		),
+		templatefx: mergeArrays(currentSettings.templatefx, translatedSettings.templatefx),
 		aura: mergeArrays(currentSettings.aura, translatedSettings.aura),
 		preset: mergeArrays(currentSettings.preset, translatedSettings.preset),
 		aefx: mergeArrays(currentSettings.aefx, translatedSettings.aefx),
 		version: "5",
 	};
 
-	AutomatedAnimations.AutorecManager.overwriteMenus(
-		JSON.stringify(newSettings),
-		{
-			submitAll: true,
-		},
-	);
+	AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify(newSettings), {
+		submitAll: true,
+	});
 }
 
 function mergeArrays(array1, array2) {
