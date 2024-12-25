@@ -57,15 +57,11 @@ function registerConverters() {
 			}
 
 			const { packs } = game.babele;
-			const translatedEdges = packs.find(
-				(pack) => pack.metadata.id === packEdges,
-			).translations;
+			const translatedEdges = packs.find((pack) => pack.metadata.id === packEdges).translations;
 			const translatedHindrances = packs.find(
 				(pack) => pack.metadata.id === packHindrances,
 			).translations;
-			const translatedSkills = packs.find(
-				(pack) => pack.metadata.id === packSkills,
-			).translations;
+			const translatedSkills = packs.find((pack) => pack.metadata.id === packSkills).translations;
 
 			return requirements.map((data) => {
 				if (!data.label) return data;
@@ -101,20 +97,12 @@ function setupRules() {
 
 		// SWADE Core
 		if (game.modules.get("swade-core-rules")?.active) {
-			game.settings.set(
-				"swade",
-				"coreSkillsCompendium",
-				"swade-core-rules.swade-skills",
-			);
+			game.settings.set("swade", "coreSkillsCompendium", "swade-core-rules.swade-skills");
 		}
 
 		// Savage Pathfinder
 		if (game.modules.get("swpf-core-rules")?.active) {
-			game.settings.set(
-				"swade",
-				"coreSkillsCompendium",
-				"swpf-core-rules.swpf-skills",
-			);
+			game.settings.set("swade", "coreSkillsCompendium", "swpf-core-rules.swpf-skills");
 			game.settings.set("swade", "currencyName", "зм");
 		}
 	}
@@ -128,15 +116,13 @@ const EXCEPTIONS = {
 	"Arcane Background (Miracles)": "Сверхъестественный дар (чудеса)",
 	"Arcane Background (Magic)": "Сверхъестественный дар (магия)",
 	"Arcane Background (Psionics)": "Сверхъестественный дар (псионика)",
-	"Arcane Background (Weird Science)":
-		"Сверхъестественный дар (безумная наука)",
+	"Arcane Background (Weird Science)": "Сверхъестественный дар (безумная наука)",
 	"arcane skill": "сверхъестественный навык",
 	"Tough as Nails": "Несгибаемый",
 	"Work the Room": "Заводила",
 	"Professional in affected Trait": "Профессионал в выбранном параметре",
 	"Expert in affected Trait": "Профессионал+ в выбранном параметре",
-	"maximum die type possible in affected Trait":
-		"максимальное значение выбранного параметра",
+	"maximum die type possible in affected Trait": "максимальное значение выбранного параметра",
 };
 
 const CATEGORIES = {

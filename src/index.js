@@ -16,21 +16,18 @@ Hooks.once("init", () => {
 
 	/* Добавление шрифтов с кириллицей */
 	const cyrillicFonts = {
-		Beaufort: { editor: true, fonts: [] },
-		Exocet: { editor: true, fonts: [] },
-		GWENT: { editor: true, fonts: [] },
-		Manuskript: { editor: true, fonts: [] },
+		"Beaufort": { editor: true, fonts: [] },
+		"Exocet": { editor: true, fonts: [] },
+		"GWENT": { editor: true, fonts: [] },
+		"Manuskript": { editor: true, fonts: [] },
 		"Marck Script": { editor: true, fonts: [] },
 		"OCR-A": { editor: true, fonts: [] },
 		"Roboto Condensed": { editor: true, fonts: [] },
 		"Roboto Serif": { editor: true, fonts: [] },
-		Roboto: { editor: true, fonts: [] },
+		"Roboto": { editor: true, fonts: [] },
 	};
 
-	CONFIG.fontDefinitions = foundry.utils.mergeObject(
-		CONFIG.fontDefinitions,
-		cyrillicFonts,
-	);
+	CONFIG.fontDefinitions = foundry.utils.mergeObject(CONFIG.fontDefinitions, cyrillicFonts);
 	CONFIG.defaultFontFamily = "Roboto";
 
 	/* Настройка шрифта для подписей на сцене */
@@ -38,9 +35,7 @@ Hooks.once("init", () => {
 		name: "Шрифт подписей на сцене",
 		hint: "Шрифт, используемый для имён токенов и названий заметок на сцене.",
 		type: Number,
-		default: Object.keys(CONFIG.fontDefinitions).indexOf(
-			CONFIG.defaultFontFamily,
-		),
+		default: Object.keys(CONFIG.fontDefinitions).indexOf(CONFIG.defaultFontFamily),
 		choices: Object.keys(CONFIG.fontDefinitions),
 		scope: "world",
 		config: true,
@@ -93,10 +88,7 @@ Hooks.once("init", () => {
 Hooks.on("getSceneControlButtons", getSceneControlButtons);
 
 function getSceneControlButtons(controls) {
-	if (
-		game.user.isGM &&
-		game.settings.get("ru-ru", "displayAdjectiveControls")
-	) {
+	if (game.user.isGM && game.settings.get("ru-ru", "displayAdjectiveControls")) {
 		const tokens = controls.find((c) => c.name === "token");
 
 		tokens.tools.push({
@@ -107,14 +99,10 @@ function getSceneControlButtons(controls) {
 			toggle: true,
 			onClick: (active) => {
 				if (active) {
-					ui.notifications.notify(
-						"Для случайных прилагательных используется женский род",
-					);
+					ui.notifications.notify("Для случайных прилагательных используется женский род");
 					CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesF";
 				} else {
-					ui.notifications.notify(
-						"Для случайных прилагательных используется мужской род",
-					);
+					ui.notifications.notify("Для случайных прилагательных используется мужской род");
 					CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
 				}
 			},
