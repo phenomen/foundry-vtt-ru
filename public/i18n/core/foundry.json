@@ -168,11 +168,13 @@
 			"darknessAdvancedWarning": "Дополнительные настройки для источников, не являющихся тьмой."
 		},
 		"SECTIONS": {
-			"BASIC": "Основное",
-			"ADVANCED": "Дополнительно",
-			"ANIMATION": "Анимация света",
-			"APPEARANCE": "Внешний вид",
-			"PLACEMENT": "Расположение"
+			"appearance": "Внешний вид",
+			"placement": "Расположение"
+		},
+		"TABS": {
+			"basic": "Основное",
+			"animation": "Анимация",
+			"advanced": "Дополнительно"
 		}
 	},
 
@@ -402,6 +404,7 @@
 	"COMBAT.End": "Конец боя",
 	"COMBAT.InitiativeRoll": "Проверка инициативы",
 	"COMBAT.InitiativeReset": "Сброс инициативы",
+	"COMBAT.InitiativeScore": "Инициатива",
 	"COMBAT.EndTitle": "Завершить бой?",
 	"COMBAT.EndConfirmation": "Завершить этот бой и очистить очередь ходов?",
 	"COMBAT.Linked": "Бой прикреплён к сцене, нажмите для открепления",
@@ -412,7 +415,7 @@
 	"COMBAT.PanToCombatant": "Переместиться к бойцу",
 	"COMBAT.PingCombatant": "Маячок на бойце",
 	"COMBAT.WarnNonVisibleToken": "Этот боец вам не виден.",
-	"COMBAT.Round": "Раунд",
+	"COMBAT.Round": "Раунд {round}",
 	"COMBAT.Rounds": "Раунды",
 	"COMBAT.RoundPrev": "Предыдущий раунд",
 	"COMBAT.RoundNext": "Следующий раунд",
@@ -893,10 +896,6 @@
 	"DRAWING.SubmitCreate": "Создание рисунка",
 	"DRAWING.SubmitUpdate": "Обновление рисунка",
 	"DRAWING.SubmitReset": "Сброс до стандартных",
-	"DRAWING.TabPosition": "Положение",
-	"DRAWING.TabLines": "Линии",
-	"DRAWING.TabFill": "Заливка",
-	"DRAWING.TabText": "Текст",
 	"DRAWING.NotePosition": "Расположение и видимость рисунка.",
 	"DRAWING.NoteLines": "Настройка обрамляющих линий рисунка.",
 	"DRAWING.NoteFill": "Настройка внутреннего заполнения рисунка.",
@@ -926,6 +925,12 @@
 	"DRAWING.Information": "Информация",
 	"DRAWING.JointValidationError": "Рисунок должен содержать видимый текст, заливку или линию.",
 	"DRAWING.JointValidationErrorUI": "Рисунок должен содержать видимый текст, заливку или линию. Проверьте настройки рисунков по умолчанию.",
+	"DRAWING.TABS": {
+		"position": "Расположение",
+		"lines": "Линии",
+		"fill": "Заполнение",
+		"text": "Текст"
+	},
 
 	"EFFECT.MODE_CUSTOM": "Свой",
 	"EFFECT.MODE_MULTIPLY": "Умножение",
@@ -944,6 +949,7 @@
 	"EFFECT.Submit": "Применение изменений",
 	"EFFECT.FIELDS": {
 		"name.label": "Название эффекта",
+		"img.label": "Иконка эффекта",
 		"tint.label": "Цвет иконки",
 		"description.label": "Описание эффекта",
 		"disabled.label": "Приостановка эффекта",
@@ -960,9 +966,9 @@
 		}
 	},
 	"EFFECT.TABS": {
-		"Details": "Подробности",
-		"Duration": "Длительность",
-		"Changes": "Изменения"
+		"details": "Подробности",
+		"duration": "Длительность",
+		"changes": "Изменения"
 	},
 
 	"EFFECT.StatusAsleep": "Сон",
@@ -1221,6 +1227,7 @@
 	"JOURNAL.ModeImage": "Изображение",
 	"JOURNAL.ActionShow": "Показать игрокам",
 	"JOURNAL.ActionShowSuccess": "Содержимое {title} показано {which} игрокам.",
+	"JOURNAL.ImageOptions": "Настройки изображения",
 	"JOURNAL.ImageShowSuccess": "Изображение показано {which} игрокам.",
 	"JOURNAL.NavLabel": "Содержание журнала",
 	"JOURNAL.AddPage": "Добавление страницы",
@@ -1258,11 +1265,14 @@
 	"JOURNALENTRYPAGE.TypeVideo": "Видео",
 	"JOURNALENTRYPAGE.ImageSource": "Источник изображения",
 	"JOURNALENTRYPAGE.ImageCaption": "Название изображения",
+	"JOURNALENTRYPAGE.VideoAutoplay": "Автопроигрывание",
 	"JOURNALENTRYPAGE.VideoControls": "Отображение управления видео",
-	"JOURNALENTRYPAGE.VideoStartTime": "Время начала видео",
 	"JOURNALENTRYPAGE.VideoDimensions": "Размеры видео",
+	"JOURNALENTRYPAGE.VideoLoop": "Повторение видео",
+	"JOURNALENTRYPAGE.VideoStartTime": "Время начала видео",
 	"JOURNALENTRYPAGE.VideoSource": "Источник видео",
 	"JOURNALENTRYPAGE.VideoSourceHint": "Это может быть локальный файл, или ссылка на файл видео, или ссылка на YouTube.",
+	"JOURNALENTRYPAGE.VideoVolume": "Громкость видео",
 	"JOURNALENTRYPAGE.PDFLoad": "Загрузка PDF",
 	"JOURNALENTRYPAGE.PDFSource": "Источник PDF",
 	"JOURNALENTRYPAGE.ShowImageOnly": "Показать только изображение",
@@ -1802,15 +1812,15 @@
 		}
 	},
 	"SCENE.TABS": {
-		"Main": {
-			"Basics": "Основное",
-			"Grid": "Сетка",
-			"Lighting": "Освещение",
-			"Ambience": "Окружение"
+		"SHEET": {
+			"basics": "Основное",
+			"grid": "Сетка",
+			"lighting": "Освещение",
+			"ambience": "Атмосфера"
 		},
-		"Ambience": {
-			"Basic": "Основные параметры",
-			"Environment": "Освещение окружения"
+		"AMBIENCE": {
+			"basic": "Основное",
+			"environment": "Освещение окружения"
 		}
 	},
 
@@ -1908,7 +1918,7 @@
 	"SETTINGS.PrototypeTokenOverrides": {
 		"Name": "Перезапись прототипа токена",
 		"Label": "Настройка перезаписи прототипа",
-		"Hint": "Настройка перезаписи параметров прототипа токена для всех актёров.",
+		"Hint": "Настройка перезаписи прототипа токена для всех актёров.",
 		"Reset": {
 			"Label": "Сброс",
 			"Warning": "Это действие удалит все перезаписанные параметры."
@@ -1918,7 +1928,7 @@
 		"TABS": {
 			"AllTypes": {
 				"Label": "[Все типы]",
-				"Hint": "Перезапись этих параметров применяется ко всем прототипам токенов, независимо от типа родительского актёра. Они могут быть переопределены для каждого типа актера в последующих вкладках. Пустые поля будут игнорироваться при перезаписи."
+				"Hint": "Эти настройки перезаписи применяются ко всем прототипам токенов, вне зависимости от типа родительского актёра. На последующих вкладках можно задать особые параметры для конкретных типов актёров. Пустые поля не будут перезаписаны."
 			},
 			"Basics": "Основное",
 			"Marker": "Метка хода"
@@ -2155,6 +2165,8 @@
 	"SETUP.WorldLaunchMigratePackage": "Миграция данных пакета",
 	"SETUP.WorldLaunchMigrateCore": "Выполнение миграции данных",
 	"SETUP.WorldLaunchMigrateSystem": "Выполнение миграции системы",
+	"SETUP.WorldLaunchCleanWorld": "Очистка данных мира",
+	"SETUP.WorldLaunchExtractDemo": "Распаковка демонстрационных данных",
 
 	"SETUP.UpdateDownloadingS": "Загружается обновление",
 	"SETUP.UpdateDownloadingC": "Загрузка завершена",
@@ -2445,7 +2457,9 @@
 	},
 
 	"SHEETS.ConfigureSheet": "Настройка бланка",
+	"SHEETS.ConfigureTitle": "{prefix}: Настройка бланка",
 	"SHEETS.ThisSheet": "Этот бланк",
+	"SHEETS.Defaults": "По умолчанию",
 	"SHEETS.DefaultSheet": "Бланк по умолчанию",
 	"SHEETS.DefaultDocumentSheet": "Бланк по умолчанию для {document}",
 	"SHEETS.DocumentSheetHint": "Перезапись типа бланка, используемого для этого документа.",
@@ -2454,6 +2468,8 @@
 	"SHEETS.Save": "Сохранение настроек бланка",
 	"SHEETS.FormNavLabel": "Навигация вкладок формы",
 	"SHEETS.CopyUuid": "Копирование UUID",
+	"SHEETS.Theme": "Тема",
+	"SHEETS.ThemeHint": "Темы могут быть недоступны для некоторых бланков.",
 
 	"SOUND": {
 		"ConfigTitle": "Настройка фонового звука",
@@ -2518,6 +2534,7 @@
 	"OWNERSHIP.HintDocument": "Настройте уровень доступа для этого документа, предоставляя участнику различные права просмотра.",
 	"OWNERSHIP.Configure": "Настройка владения",
 	"OWNERSHIP.ShowGM": "Отображение ведущих",
+	"OWNERSHIP.Legend": "Владение",
 
 	"PERMISSION.Title": "Настройка прав участников",
 	"PERMISSION.Configure": "Настройка прав",
@@ -2577,10 +2594,10 @@
 	"PERMISSION.WarningNoCreate": "У вас не достаточно прав для создания {document}.",
 
 	"REGION": {
-		"SECTIONS": {
+		"TABS": {
 			"identity": "Данные",
 			"shapes": "Формы",
-			"behaviors": "Поведение"
+			"behaviors": "Поведения"
 		},
 		"FIELDS": {
 			"color": {
@@ -2877,7 +2894,6 @@
 	"SUPPORT.Places": "Где могут помочь",
 	"SUPPORT.Discord": "Вы можете присоединиться к сообществу Foundry VTT, задать вопросы и помочь другим на <a href=\"https://discord.gg/foundryvtt\" target=\"_blank\" rel=\"nofollow\">официальном Discord сервере</a>. Вы также можете присоединиться к <a href=\"https://discord.gg/Z2CXFy35WF\" target=\"_blank\" rel=\"nofollow\">русскоязычному сообществу в Discord</a>.",
 	"SUPPORT.BugReporting": "Если вы хотите сообщить об ошибке, используйте способы, указанные в  Bug Report на странице <a href=\"https://foundryvtt.com/contact-us?category=bug\" target=\"_blank\" rel=\"nofollow\">Contact Us</a>.",
-	"SUPPORT.Details": "Подробности поддержки",
 	"SUPPORT.ReportPrelude": "Перед тем, как обратиться за помощью в Discord или Github, полезно получить информацию о настройках текущего мира. Ниже представлен отчёт, который нужно скопировать и присоединить к вопросу.",
 	"SUPPORT.CopyReport": "Скопировать отчёт в буфер",
 	"SUPPORT.ReportCopied": "Отчёт скопирован",
@@ -2890,9 +2906,6 @@
 	"SUPPORT.NoClientIssues": "Проблемы с клиентом не обнаружены.",
 	"SUPPORT.NoModuleIssues": "Проблемы с модулем не обнаружены.",
 	"SUPPORT.NoViewedScene": "Нет открытой сцены",
-	"SUPPORT.DocumentIssues": "Проблемы с документом",
-	"SUPPORT.ClientIssues": "Проблемы с клиентом",
-	"SUPPORT.ModuleIssues": "Проблемы с модулем",
 	"SUPPORT.ModuleSubTypesUnavailableName": "<strong>{count}</strong> {document} недоступны, т.к. модуль '{name}' не активен.",
 	"SUPPORT.ModuleSubTypesUnavailableNoName": "<strong>{count}</strong> {document} недоступны, т.к. модуль с ID '{name}' не активен.",
 	"SUPPORT.UnavailableDocuments": {
@@ -2905,33 +2918,62 @@
 	"SUPPORT.WorldData": "Данные мира",
 	"SUPPORT.CompendiumData": "Данные библиотеки",
 	"SUPPORT.ActiveModules": "Активные модули",
+	"SUPPORT.TABS": {
+		"support": "Данные для поддержки",
+		"documents": "Проблемы с документом",
+		"client": "Проблемы с клиентом",
+		"modules": "Проблемы с модулем"
+	},
 
-	"TABLE.AnimateSetting": "Анимация бросков по таблице",
-	"TABLE.AnimateSettingHint": "Отображение анимации в виде рулетки при броске по таблице.",
-	"TABLE.DrawFlavor": "Выбирает результат из таблицы {name}",
-	"TABLE.DrawFlavorPlural": "Выбирает {number} результатов из таблицы {name}",
-	"TABLE.NoAvailableResults": "Нет доступных результатов для выбора из этой таблицы.",
-	"TABLE.Description": "Описание таблицы",
-	"TABLE.DisplayRoll": "Отображение броска в чате",
-	"TABLE.Formula": "Формула броска",
-	"TABLE.SheetTitle": "Настройка таблицы",
-	"TABLE.Normalize": "Усреднение вероятности",
-	"TABLE.Replacement": "Не блокировать результаты",
-	"TABLE.Reset": "Сброс",
-	"TABLE.Result": "Результат",
-	"TABLE.ResultCreate": "Добавление результата",
-	"TABLE.ResultType": "Тип",
-	"TABLE.ResultDetails": "Описание результата",
-	"TABLE.ResultDescription": "Описание результата",
-	"TABLE.ResultDelete": "Удаление результата",
-	"TABLE.ResultWeight": "Вес",
-	"TABLE.ResultRange": "Диапазон",
-	"TABLE.Roll": "Бросок",
-	"TABLE.ToggleDrawn": "Заблокировать результат",
-	"TABLE.Update": "Обновление",
-	"TABLE.RESULT_TYPES.TEXT.label": "Текст",
-	"TABLE.RESULT_TYPES.DOCUMENT.label": "Документ",
-	"TABLE.RESULT_TYPES.COMPENDIUM.label": "Библиотека",
+	"TABLE": {
+		"AnimateSetting": "Анимация бросков по таблице",
+		"AnimateSettingHint": "Отображение анимации в виде рулетки при броске по таблице.",
+		"DrawFlavor": "Выбирает результат из таблицы {name}",
+		"DrawFlavorPlural": "Выбирает {number} результата из таблицы {name}",
+		"NoAvailableResults": "Нет доступных результатов для выбора из этой таблицы.",
+		"Result": "Результат",
+		"ResultDescription": "Описание результата",
+		"ACTIONS": {
+			"OpenResultConfig": "Настройка результата",
+			"DrawResult": "Вытянуть результат",
+			"NormalizeResults": "Усреднить диапазоны",
+			"ResetResults": "Сбросить результат",
+			"CreateResult": "Добавить результат",
+			"DeleteResult": "Удалить результат",
+			"ToggleDrawn": "Заблокировать результат",
+			"Submit": "Обновить таблицу"
+		},
+		"TABS": {
+			"summary": "Сводка",
+			"results": "Результаты"
+		},
+		"FIELDS": {
+			"description.label": "Описание таблицы",
+			"formula.label": "Формула броска",
+			"replacement.label": "Не блокировать результаты",
+			"displayRoll.label": "Отображение формулы броска в чате"
+		}
+	},
+
+	"TABLE_RESULT": {
+		"DocumentLabel": "{name} ({_id})",
+		"ACTIONS": {
+			"Submit": "Обновить результаты"
+		},
+		"TYPES": {
+			"text": "Текст",
+			"document": "Документ",
+			"pack": "Библиотека"
+		},
+		"FIELDS": {
+			"type.label": "Тип",
+			"documentCollection.label": "Коллекция",
+			"documentId.label": "Документ",
+			"text.label": "Описание результата",
+			"weight.label": "Вес",
+			"range.label": "Диапазон"
+		}
+	},
 
 	"TEMPLATE.ConeTypeSetting": "Форма шаблона конуса",
 	"TEMPLATE.ConeTypeSettingHint": "Выберите тип шаблонов конусов. Не имеет эффекта, если включены Формы шаблонов на основе сетки.",
@@ -2969,14 +3011,14 @@
 	"TILE.OcclusionModeRadial": "Круговой (вокруг токена)",
 	"TILE.OcclusionModeVision": "Область зрения токена",
 	"TILE.VideoOptions": "Настройки видео",
-	"TILE.TabPosition": {
-		"Label": "Расположение",
-		"Hint": "Расположение и размер тайла."
+	"TILE.SECTIONS": {
+		"position": "Расположение и размер тайла.",
+		"overhead": "Дополнительные параметры для верхних тайлов переднего слоя."
 	},
-	"TILE.TabAppearance.Label": "Внешний вид",
-	"TILE.TabOverhead": {
-		"Label": "Верхний",
-		"Hint": "Дополнительные параметры для верхних тайлов переднего слоя."
+	"TILE.TABS": {
+		"position": "Расположение",
+		"appearance": "Внешний вид",
+		"overhead": "Верхний"
 	},
 	"TILE.FIELDS": {
 		"texture": {
@@ -3034,17 +3076,21 @@
 	"TOKEN.MirrorY": "Вертикально",
 	"TOKEN.ResourceBar1D": "Значение ресурса 1",
 	"TOKEN.ResourceBar2D": "Значение ресурса 2",
-	"TOKEN.ToggleLockRotation": "Блокировка вращения",
 	"TOKEN.TitlePrototype": "Прототип токена",
 	"TOKEN.Update": "Обновление токена",
 	"TOKEN.WarningNoActor": "Этот токен связан с актёром, который больше не существует.",
 	"TOKEN.WarningNoVision": "На этой сцене нет токена, позволяющего вам видеть область.",
 	"TOKEN.TABS": {
-		"Identity": "Данные",
-		"Appearance": "Вид",
-		"Vision": "Зрение",
-		"Light": "Свет",
-		"Resources": "Ресурсы"
+		"identity": "Данные",
+		"appearance": "Внешний вид",
+		"vision": "Зрение",
+		"light": "Свет",
+		"resources": "Ресурсы"
+	},
+	"TOKEN.SECTIONS": {
+		"basic": "Основное",
+		"animation": "Анимация света",
+		"advanced": "Дополнительно"
 	},
 	"TOKEN.FIELDS": {
 		"name.label": "Имя токена",
@@ -3066,7 +3112,10 @@
 			"hint": "Когда этот токен находится под тайлом, использующим круговое преграждение, это значение управляет размером отверстия, вырезанного в тайле над токеном."
 		},
 		"disposition.label": "Отношение токена",
-		"lockRotation.label": "Блокировка поворота",
+		"lockRotation": {
+			"label": "Закрепить поворот изображения",
+			"hint": "Предотвращает визуальное изменение изображения при повороте токена."
+		},
 		"texture": {
 			"src.label": "Файл изображения",
 			"fit": {
