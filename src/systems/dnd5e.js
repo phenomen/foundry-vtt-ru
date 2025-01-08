@@ -4,7 +4,7 @@ export function init() {
 	/* Регистрация настроек */
 	game.settings.register("ru-ru", "compendiumTranslation", {
 		name: "(D&D5E) Перевод библиотек",
-		hint: "(Требуется модуль Babele) Библиотеки системы D&D5E будут переведены.",
+		hint: "(Требуется модуль Babele) Библиотеки системы D&D5E будут переведены. Перевод библиотек требуется для корректного перевода типов оружия, брони, языков и других элементов.",
 		type: Boolean,
 		default: true,
 		scope: "world",
@@ -18,14 +18,7 @@ export function init() {
 	/* Регистрация Babele */
 	if (game.settings.get("ru-ru", "compendiumTranslation")) {
 		/* Библиотеки D&D */
-		game.settings.get("ru-ru", "altTranslation")
-			? setupBabele("dnd5e/ps")
-			: setupBabele("dnd5e/hw");
-
-		/* Библиотеки Ruins of Symbaroum */
-		if (game.modules.get("symbaroum5ecore")?.active) {
-			setupBabele("dnd5e/ros");
-		}
+		setupBabele("dnd5e");
 
 		game.babele.registerConverters({
 			dndpages(pages, translations) {

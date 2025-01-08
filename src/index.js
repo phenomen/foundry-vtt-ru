@@ -1,5 +1,4 @@
 const scripts = import.meta.glob("./systems/*.js");
-import { init as INIT_DND5E_ALT } from "./misc/dnd5e-alt.js";
 
 Hooks.once("init", () => {
 	const system = game.system.id.toLowerCase();
@@ -70,10 +69,6 @@ Hooks.once("init", () => {
 				mod.init();
 			}
 		});
-	}
-
-	if (system === "dnd5e") {
-		INIT_DND5E_ALT();
 	}
 
 	/* Исправление для QUICK INSERT */

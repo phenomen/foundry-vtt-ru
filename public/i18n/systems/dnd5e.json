@@ -1,6 +1,7 @@
 {
 	"DOCUMENT.DND5E": {
 		"Activity": "Функция",
+		"Advancement": "Развитие",
 		"Warning": {
 			"SelectType": "Для создания {name} требуется выбрать тип."
 		}
@@ -17,6 +18,10 @@
 
 	"TYPES.ActiveEffect.enchantment": "Зачарование",
 	"TYPES.ActiveEffect.enchantmentPl": "Зачарования",
+
+	"TYPES.ChatMessage": {
+		"turn": "Сообщение в начале хода"
+	},
 
 	"TYPES.Item.background": "Происхождение",
 	"TYPES.Item.backgroundPl": "Происхождения",
@@ -99,6 +104,7 @@
 	"DND5E.AbilityScoreMax": "Максимальная характеристика",
 	"DND5E.AbilityScoreMaxShort": "Максимум",
 	"DND5E.AbilityModifier": "Модификатор характеристики",
+	"DND5E.AbilityModifierShort": "Мод.",
 	"DND5E.AbilityPromptText": "Выберите тип проверки {ability}",
 	"DND5E.AbilityPromptTitle": "Проверка {ability}",
 	"DND5E.AbilityUseChargesLabel": "{value} зарядов",
@@ -155,10 +161,32 @@
 			}
 		},
 		"Category": {
+			"Combat": "Бой",
+			"Monster": "Чудовище",
 			"Standard": "Обычный",
 			"Time": "Время",
-			"Monster": "Чудовище",
 			"Vehicle": "Транспорт"
+		},
+		"Type": {
+			"Encounter": {
+				"Label": "Начало боя"
+			},
+			"Legendary": {
+				"Counted": {
+					"one": "{number} легендарное действие",
+					"other": "{number} легендарных действия"
+				}
+			},
+			"TurnEnd": {
+				"Label": "Конец хода"
+			},
+			"TurnStart": {
+				"Label": "Начало хода"
+			}
+		},
+		"Warning": {
+			"NoActions": "Не найдено {type}, но для активации требуется как минимум {required}.",
+			"NotEnoughActions": "Не достаточно {type} для активации, требуется {required}, но доступно только {available}."
 		}
 	},
 
@@ -251,12 +279,93 @@
 				"Type": "Можно выбрать только особенность с типом \"черта\"."
 			}
 		},
+		"Config": {
+			"Details": "Подробности развития"
+		},
+		"HitPoints": {
+			"Action": {
+				"Roll": "Бросок {die}"
+			},
+			"Average": "Средние",
+			"Hint": "Отслеживание пунктов здоровья персонажа для каждого уровня класса.",
+			"MaxAtFirstLevel": "Макс. на 1-ом уровне: <strong>{max}</strong>",
+			"Roll": "Бросок ПЗ для {class} ",
+			"Starting": "ПЗ на 1-ом уровне",
+			"TakeAverage": "Взять средние",
+			"Title": "Пункты здоровья",
+			"Warning": {
+				"Empty": "Пункты здоровья должны быть определены броском или выбрано среднее значение.",
+				"Invalid": "Пункты здоровья должны быть целым числом"
+			}
+		},
+		"ItemGrant": {
+			"Details": "Получаемые предметы",
+			"DropHint": "Перенесите сюда предметы, предоставляемые этим развитием.",
+			"FIELDS": {
+				"items": {
+					"label": "Предметы"
+				},
+				"optional": {
+					"label": "Опциональное",
+					"hint": "Если развитие отмечено как опциональное, игроки могут отказаться от любых получаемых предметов. Иначе все предметы будут выданы персонажу."
+				}
+			},
+			"Hint": "Предметы, получаемые персонажем на определённых уровнях (снаряжение, особенности, заклинания).",
+			"Title": "Получаемые предметы",
+			"Warning": {
+				"Container": "Содержимое контейнеров не будет добавлено вместе с контейнерами.",
+				"Duplicate": "Этот предмет уже существует в этом развитии.",
+				"Recursive": "Нельзя добавить предмет в его собственное развитие."
+			}
+		},
+		"Manager": {
+			"Action": {
+				"Complete": "Завершение",
+				"NextStep": "Далее",
+				"PreviousStep": "Назад",
+				"Restart": "Начать заново"
+			},
+			"ClosePrompt": {
+				"Action": {
+					"Continue": "Продолжить",
+					"Stop": "Прекращение развития"
+				},
+				"Message": "<p>При отмене процесса развития, все выборы будут отменены и изменения не будут применены к актёру.</p>",
+				"Title": "Прекращение развития"
+			},
+			"RestartPrompt": {
+				"Message": "Вы уверены, что хотите отменить все сделанные выборы?",
+				"Title": "Начать развитие заново"
+			},
+			"Steps": "Шаг {current} из {total}",
+			"Title": {
+				"Default": "Развитие",
+				"LevelIncreased": "Повышение уровня",
+				"LevelNewClass": "Добавить класс",
+				"ModifyChoices": "Изменить выбор"
+			}
+		},
 		"SPELLCONFIG": {
 			"FIELDS": {
-				"uses": {
-					"requireSlot": {
-						"label": "Требуемая ячейка",
-						"hint": "Требовать расхода ячейки заклинания для ограниченных использований. Иначе они будут дополнительными свободными использованиями, не требующими расхода ячеек."
+				"spell": {
+					"label": "Подробности заклинания",
+					"ability": {
+						"label": "Характеристика"
+					},
+					"preparation": {
+						"label": "Тип подготовки"
+					},
+					"uses": {
+						"max": {
+							"label": "Использования"
+						},
+						"per": {
+							"label": "Интервал"
+						},
+						"requireSlot": {
+							"label": "Требуемая ячейка",
+							"hint": "Требовать расхода ячейки заклинания для ограниченных использований. Иначе они будут дополнительными свободными использованиями, не требующими расхода ячеек."
+						}
 					}
 				}
 			},
@@ -265,7 +374,9 @@
 		"Subclass": {
 			"Title": "Подкласс",
 			"Hint": "Уровень на котором этот класс получает подкласс.",
-			"FlowHint": "Выберите подкласс на вкладке Особенности после завершения повышения уровня."
+			"Warning": {
+				"InvalidType": "Можно выбрать только подклассы."
+			}
 		}
 	},
 
@@ -295,14 +406,6 @@
 	"DND5E.AdvancementDeleteConfirmationTitle": "Подтверждение удаления",
 	"DND5E.AdvancementFlowDropAreaHint": "Перенесите предметы сюда для выбора.",
 	"DND5E.AdvancementHint": "Подсказка",
-	"DND5E.AdvancementHitPointsTitle": "Пункты здоровья",
-	"DND5E.AdvancementHitPointsHint": "Отслеживать пункты здоровья персонажа для каждого уровня класса.",
-	"DND5E.AdvancementHitPointsAverage": "Взять среднее",
-	"DND5E.AdvancementHitPointsEmptyError": "Пункты здоровья должны быть определены броском или выбрано среднее значение.",
-	"DND5E.AdvancementHitPointsInvalidError": "Пункты здоровья должны быть целым числом",
-	"DND5E.AdvancementHitPointsMaxAtFirstLevel": "Макс. на 1-ом уровне: <strong>{max}</strong>",
-	"DND5E.AdvancementHitPointsRollMessage": "Бросок ПЗ для {class} ",
-	"DND5E.AdvancementHitPointsRollButton": "Бросок {die}",
 	"DND5E.AdvancementItemChoiceTitle": "Выберите предметы",
 	"DND5E.AdvancementItemChoiceHint": "Представьте игроку выбор предметов (снаряжение, характеристики или заклинания), которые он может выбрать для своего персонажа на одном или нескольких уровнях.",
 	"DND5E.AdvancementItemChoiceChoices": "Выборы",
@@ -323,35 +426,12 @@
 	"DND5E.AdvancementItemChoiceTypeHint": "Ограничение типа предметов для выбора.",
 	"DND5E.AdvancementItemChoiceTypeAny": "Любой",
 	"DND5E.AdvancementItemChoiceTypeWarning": "Можно выбрать только предметы с типом {type}.",
-	"DND5E.AdvancementItemGrantTitle": "Получаемые предметы",
-	"DND5E.AdvancementItemGrantHint": "Предметы, выдаваемые персонажу (снаряжение, особенности, заклинания) по достижению уровней.",
-	"DND5E.AdvancementItemGrantDropHint": "Перенесите сюда предметы для добавления к этому развитию.",
-	"DND5E.AdvancementItemGrantContainerWarning": "Содержимое контейнера не будет добавлено с контейнерами.",
-	"DND5E.AdvancementItemGrantDuplicateWarning": "Этот предмет уже существует в этом развитии.",
-	"DND5E.AdvancementItemGrantRecursiveWarning": "Нельзя добавить предмет развития в самого себя.",
-	"DND5E.AdvancementItemGrantOptional": "Опциональные",
-	"DND5E.AdvancementItemGrantOptionalHint": "Если всё развитие отмечено как опциональное, игроки могут отказаться от любых выдаваемых предметов. Иначе все предметы будут выданы персонажу.",
 	"DND5E.AdvancementItemTypeInvalidWarning": "Предметы с типом {type} не могут быть добавлены к развитию.",
 	"DND5E.AdvancementLevelHeader": "{level}-й уровень",
 	"DND5E.AdvancementLevelAnyHeader": "Любой уровень",
 	"DND5E.AdvancementLevelNoneHeader": "Нет уровня",
 	"DND5E.AdvancementLevelDownConfirmationMessage": "Понижение уровня этого класса также удалит все выбранные варианты развития. Эти изменения применятся к персонажу, если выбран флажок ниже.",
 	"DND5E.AdvancementLevelDownConfirmationTitle": "Подтверждение понижения уровня",
-	"DND5E.AdvancementManagerCloseTitle": "Прекращение развития",
-	"DND5E.AdvancementManagerCloseMessage": "<p>При отмене процесса развития, сделанные выборы будут отменены и никакие изменения не будут применены к актёру.</p>",
-	"DND5E.AdvancementManagerCloseButtonContinue": "Продолжить",
-	"DND5E.AdvancementManagerCloseButtonStop": "Прекратить развитие",
-	"DND5E.AdvancementManagerComplete": "Завершить",
-	"DND5E.AdvancementManagerLevelIncreasedTitle": "Повышение уровня",
-	"DND5E.AdvancementManagerLevelNewClassTitle": "Добавить класс",
-	"DND5E.AdvancementManagerModifyChoicesTitle": "Изменить выбор",
-	"DND5E.AdvancementManagerNextStep": "Далее",
-	"DND5E.AdvancementManagerPreviousStep": "Назад",
-	"DND5E.AdvancementManagerRestart": "Начать заново",
-	"DND5E.AdvancementManagerRestartConfirm": "Вы уверены, что хотите отменить все сделанные выборы?",
-	"DND5E.AdvancementManagerRestartConfirmTitle": "Начать развитие заново",
-	"DND5E.AdvancementManagerSteps": "Шаг {current} из {total}",
-	"DND5E.AdvancementManagerTitle": "Развитие",
 	"DND5E.AdvancementMigrationConfirm": "Применение миграции",
 	"DND5E.AdvancementMigrationHint": "Выберите развитие, которое будет добавлено к {name}.",
 	"DND5E.AdvancementMigrationTitle": "Миграция развития",
@@ -526,10 +606,15 @@
 			"Unarmed": "Безоружная",
 			"Weapon": "Оружием"
 		},
+		"Formatted": {
+			"2014": "{type} {classification} атака",
+			"2024": "{type} атака"
+		},
 		"Mode": {
 			"Label": "Режим атаки",
 			"Offhand": "Непривычной рукой",
 			"OneHanded": "Одноручная",
+			"Ranged": "Дистанционная",
 			"Thrown": "Метательная",
 			"ThrownOffhand": "Метательная непривычной рукой",
 			"TwoHanded": "Двуручная"
@@ -658,6 +743,10 @@
 		"FIELDS": {
 			"spell": {
 				"label": "Подробности сотворения",
+				"ability": {
+					"label": "Закл. характеристика",
+					"hint": "Перезапись характеристики для сотворения заклинаний."
+				},
 				"challenge": {
 					"attack": {
 						"label": "Бонус атаки",
@@ -703,6 +792,40 @@
 
 	"DND5E.Casting": "Сотворение",
 	"DND5E.Conditions": "Состояния",
+
+	"DND5E.CONTAINER": {
+		"Details": "Подробности контейнера",
+		"FIELDS": {
+			"capacity": {
+				"label": "Вместимость (количество)",
+				"count": {
+					"label": "Количество предметов"
+				},
+				"volume": {
+					"label": "Вместимость (объём)",
+					"units": {
+						"label": "Единицы объёма"
+					},
+					"value": {
+						"label": "Максимальный объём"
+					}
+				},
+				"weight": {
+					"label": "Вместимость (вес)",
+					"units": {
+						"label": "Единицы веса"
+					},
+					"value": {
+						"label": "Максимальный вес"
+					}
+				}
+			},
+			"properties": {
+				"label": "Свойства контейнера"
+			}
+		}
+	},
+
 	"DND5E.Controls": {
 		"Hint": "Включить подсказки в интерфейсе при различных действиях.",
 		"LeftClick": "ЛКМ",
@@ -724,6 +847,14 @@
 	"DND5E.ChatContextSelectHit": "Выбор попаданий",
 	"DND5E.ChatContextSelectMiss": "Выбор промахов",
 	"DND5E.ChatFlavor": "Дополнительный текст в чате",
+
+	"DND5E.CHATMESSAGE": {
+		"TURN": {
+			"Activities": "Функции",
+			"NoCombatant": "Боец больше не существует!",
+			"Recovery": "Восстановление"
+		}
+	},
 
 	"DND5E.CHECK": {
 		"Title": "Проверка",
@@ -761,11 +892,15 @@
 			"Title": "Мультикласс"
 		},
 		"FIELDS": {
-			"hitDice": {
-				"label": "Кость здоровья"
-			},
-			"hitDiceUsed": {
-				"label": "Израсходованные кости здоровья"
+			"hd": {
+				"label": "Кость здоровья",
+				"additional": {
+					"label": "Доп. кость здоровья",
+					"hint": "Формула костей здоровья, доступная этому классу, вдобавок к обычному количеству."
+				},
+				"spent": {
+					"label": "Израсходованные кости здоровья"
+				}
 			},
 			"levels": {
 				"label": "Уровни класса"
@@ -963,6 +1098,7 @@
 				"Bolt": "Болт",
 				"BulletFirearm": "Патрон огнестрельного оружия",
 				"BulletSling": "Ядро для пращи",
+				"EnergyCell": "Ячейка энергии",
 				"Needle": "Игла"
 			},
 			"Food": {
@@ -1066,6 +1202,10 @@
 			"ThisItem": "Этот предмет"
 		},
 		"Type": {
+			"Action": {
+				"Prompt": "Израсходовать {type}?",
+				"PromptHint": "Израсходовано {cost} ({available} доступно)."
+			},
 			"ActivityUses": {
 				"Label": "Исп. функции",
 				"PromptDecrease": "Израсходовать использования функции?",
@@ -1178,6 +1318,7 @@
 	"DND5E.CreatureSwarm": "Стая",
 	"DND5E.CreatureSwarmSize": "Размер стаи",
 	"DND5E.CreatureSwarmPhrase": "Стая из {size} {type}",
+	"DND5E.CreatureTag": "{size} {type}, {alignment}",
 	"DND5E.CreatureTypeConfig": "Настройка типа существа",
 	"DND5E.CreatureTypeSelectorCustom": "Особый тип",
 	"DND5E.CreatureTypeSelectorSubtype": "Подтип",
@@ -1877,6 +2018,21 @@
 	"DND5E.FavoriteRemove": "Удалить из избранного",
 	"DND5E.Favorites": "Избранное",
 	"DND5E.FeatureActionRecharge": "Перезарядка",
+
+	"DND5E.FEATURE": {
+		"FIELDS": {
+			"properties": {
+				"label": "Свойства особенности"
+			},
+			"requirements": {
+				"label": "Требования"
+			},
+			"type": {
+				"label": "Тип особенности"
+			}
+		}
+	},
+
 	"DND5E.Feature": {
 		"Background": "Особенность происхождения",
 		"Class": {
@@ -2036,6 +2192,7 @@
 	"DND5E.Formula": "Формула",
 	"DND5E.FormulaMalformedError": "Проблема в обработке формулы {property} в {name}.",
 	"DND5E.FormulaMissingReferenceWarn": "Формула {property} в {name} имеет отсылки к отсутствующим данным: {references}",
+	"DND5E.Gear": "Снаряжение",
 	"DND5E.Gender": "Пол",
 	"DND5E.GlobalBonus": "Глобальные бонусы",
 	"DND5E.GrantedAbilities": "Полученные способности",
@@ -2056,7 +2213,7 @@
 			"Set": "Сделать основной группой"
 		},
 		"Type": "Тип группы",
-		"TypeEncounter": "Сцена боя",
+		"TypeEncounter": "Бой",
 		"TypeGeneric": "Общая группа",
 		"TypeParty": "Группа персонажей",
 		"Vehicle": {
@@ -2122,6 +2279,14 @@
 	"DND5E.HealingRoll": "Бросок исцеления",
 	"DND5E.HealingTemp": "Исцеление (Временное)",
 	"DND5E.Height": "Рост",
+
+	"DND5E.HITPOINTS": {
+		"Counted": {
+			"one": "{number} пункт здоровья",
+			"other": "{number} пунктов здоровья"
+		}
+	},
+
 	"DND5E.HitPoints": "Пункты здоровья",
 	"DND5E.HitPointsBonusLevel": "Бонус за уровень",
 	"DND5E.HitPointsBonusOverall": "Общий бонус",
@@ -2147,15 +2312,16 @@
 			"Decrease": "Понижение",
 			"Increase": "Повышение"
 		},
-		"Config": "Настройка костей здоровья"
+		"Available": "{number} доступно",
+		"Config": "Настройка костей здоровья",
+		"Counted": {
+			"one": "{number} кость здоровья",
+			"other": "{number} костей здоровья"
+		}
 	},
 
 	"DND5E.HitDie": "Кость здоровья",
 	"DND5E.HitDice": "Кости здоровья",
-	"DND5E.HitDiceAutoSpend": {
-		"Label": "Автоматическое использование КЗ",
-		"Hint": "Автоматически бросать кости здоровья, пока они есть и здоровье не восстановится полностью."
-	},
 	"DND5E.HitDiceConfig": "Настройка кости здоровья",
 	"DND5E.HitDiceConfigHint": "Настройте оставшиеся кости здоровья для каждого класса",
 	"DND5E.HitDiceMax": "Максимальная кость здоровья",
@@ -2197,14 +2363,6 @@
 	"DND5E.ItemConsumableStatus": "Статус расходника",
 	"DND5E.ItemConsumableSubtype": "{category}",
 	"DND5E.ItemConsumableType": "Тип расходника",
-	"DND5E.ItemContainerCapacity": "Нагрузка",
-	"DND5E.ItemContainerCapacityItems": "Предметы",
-	"DND5E.ItemContainerCapacityMax": "Максимальная нагрузка",
-	"DND5E.ItemContainerCapacityType": "Тип нагрузки",
-	"DND5E.ItemContainerCapacityWeight": "Вес",
-	"DND5E.ItemContainerDetails": "Подробности контейнера",
-	"DND5E.ItemContainerProperties": "Свойства контейнера",
-	"DND5E.ItemContainerStatus": "Статус контейнера",
 	"DND5E.ItemCreate": "Создание предмета",
 	"DND5E.ItemCritThreshold": "Предел критической атаки",
 	"DND5E.ItemCritExtraDamage": "Дополнительный критический урон",
@@ -2257,6 +2415,7 @@
 			"Special": "Особое",
 			"StealthDisadvantage": "Помеха скрытности",
 			"Thrown": "Метательное",
+			"Trait": "Пассивное свойство",
 			"TwoHanded": "Двуручное",
 			"Versatile": "Полуторное",
 			"Verbal": "Словесный",
@@ -2271,6 +2430,7 @@
 	"DND5E.ItemRecoveryRollMax": "{name} восстанавливает все заряды",
 	"DND5E.ItemRecoveryFormulaWarning": "Не удаётся восстановить использования для {name}. Некорректная формула '{formula}' ({uuid}).",
 	"DND5E.ItemRequiredStr": "Требуется Сила",
+	"DND5E.Items": "Предметы",
 	"DND5E.ItemSiegeProperties": "Свойства осадного оружия",
 	"DND5E.ItemSpeciesDetails": "Подробности вида",
 	"DND5E.ItemSubclassDetails": "Подробности подкласса",
@@ -2295,51 +2455,78 @@
 	"DND5E.LairAct": "Действия логова",
 	"DND5E.LairActionLabel": "Действие логова",
 	"DND5E.LairActionInitiative": "Инициатива действия логова",
+
+	"DND5E.Language": {
+		"All": "Все языки",
+		"Label": "Язык",
+		"Category": {
+			"Exotic": "Экзотические языки",
+			"Rare": "Редкие языки",
+			"Standard": "Распространённые языки"
+		},
+		"Communication": {
+			"Label": "Общение на расстоянии",
+			"Telepathy": "Телепатия"
+		},
+		"Language": {
+			"Aarakocra": "Ааракокра",
+			"Abyssal": "Демонический",
+			"Aquan": "Подводный",
+			"Auran": "Ауран",
+			"Celestial": "Небесный",
+			"Common": "Всеобщий",
+			"CommonSign": "Язык жестов",
+			"DeepSpeech": "Глубинный",
+			"Draconic": "Драконий",
+			"Druidic": "Друидический",
+			"Dwarvish": "Дварфийский",
+			"Elvish": "Эльфийский",
+			"Giant": "Великаний",
+			"Gith": "Гитский",
+			"Gnoll": "Гнолльский",
+			"Gnomish": "Гномий",
+			"Goblin": "Гоблинский",
+			"Halfling": "Полуросличий",
+			"Ignan": "Игнан",
+			"Infernal": "Дьявольский",
+			"Orc": "Орочий",
+			"Primordial": "Первозданный",
+			"Sylvan": "Сильван",
+			"Terran": "Терран",
+			"ThievesCant": "Воровской жаргон",
+			"Undercommon": "Подземный"
+		}
+	},
 	"DND5E.Languages": "Языки",
-	"DND5E.LanguagesAarakocra": "Ааракокра",
-	"DND5E.LanguagesAbyssal": "Демонический",
-	"DND5E.LanguagesAquan": "Подводный",
-	"DND5E.LanguagesAuran": "Ауран",
-	"DND5E.LanguagesCelestial": "Небесный",
-	"DND5E.LanguagesCommon": "Всеобщий",
-	"DND5E.LanguagesCommonSign": "Общий язык жестов",
-	"DND5E.LanguagesDeepSpeech": "Глубинный",
-	"DND5E.LanguagesDraconic": "Драконий",
-	"DND5E.LanguagesDruidic": "Друидический",
-	"DND5E.LanguagesDwarvish": "Дварфийский",
-	"DND5E.LanguagesElvish": "Эльфийский",
-	"DND5E.LanguagesExotic": "Редкие языки",
-	"DND5E.LanguagesExoticLegacy": "Экзотические языки",
-	"DND5E.LanguagesGiant": "Великаний",
-	"DND5E.LanguagesGith": "Гитский",
-	"DND5E.LanguagesGnoll": "Гнолльский",
-	"DND5E.LanguagesGnomish": "Гномий",
-	"DND5E.LanguagesGoblin": "Гоблинский",
-	"DND5E.LanguagesHalfling": "Полуросличий",
-	"DND5E.LanguagesIgnan": "Игнан",
-	"DND5E.LanguagesInfernal": "Дьявольский",
-	"DND5E.LanguagesOrc": "Орочий",
-	"DND5E.LanguagesPrimordial": "Первозданный",
-	"DND5E.LanguagesStandard": "Распространённые языки",
-	"DND5E.LanguagesSylvan": "Сильван",
-	"DND5E.LanguagesTerran": "Терран",
-	"DND5E.LanguagesThievesCant": "Воровской жаргон",
-	"DND5E.LanguagesUndercommon": "Подземный",
-	"DND5E.LegAct": "Легендарные действия",
-	"DND5E.LegActN.one": "1-е легендарное действие",
-	"DND5E.LegActN.two": "2-е легендарное действие",
-	"DND5E.LegActN.few": "3-е легендарное действие",
-	"DND5E.LegActN.other": "{n}-е легендарное действие",
-	"DND5E.LegActMax": "Максимум легендарных действий",
-	"DND5E.LegActRemaining": "Остаток легендарных действий",
-	"DND5E.LegendaryActionLabel": "Легендарное действие",
-	"DND5E.LegRes": "Легендарная устойчивость",
-	"DND5E.LegResN.one": "1-я легендарная устойчивость",
-	"DND5E.LegResN.two": "2-я легендарная устойчивость",
-	"DND5E.LegResN.few": "3-я легендарная устойчивость",
-	"DND5E.LegResN.other": "{n}-я легендарная устойчивость",
-	"DND5E.LegResMax": "Максимум легендарных устойчивостей",
-	"DND5E.LegResRemaining": "Остаток легендарных устойчивостей",
+
+	"DND5E.LegendaryAction": {
+		"Label": "Легендарное действие",
+		"Max": "Максимум легендарных действий",
+		"Ordinal": {
+			"one": "{n}-е легендарное действие",
+			"two": "{n}-е легендарное действие",
+			"few": "{n}-е легендарное действие",
+			"other": "{n}-е легендарное действие"
+		},
+		"Remaining": "Остаток легендарных действий"
+	},
+
+	"DND5E.LegendaryResistance": {
+		"Action": {
+			"Resist": "Легендарная устойчивость"
+		},
+		"Label": "Легендарная устойчивость",
+		"Max": "Максимум легендарных устойчивостей",
+		"Ordinal": {
+			"one": "{n}-я легендарная устойчивость",
+			"two": "{n}-я легендарная устойчивость",
+			"few": "{n}-я легендарная устойчивость",
+			"other": "{n}-я легендарная устойчивость"
+		},
+		"Remaining": "Остаток легендарных устойчивостей",
+		"Resisted": "Использована легендарная устойчивость"
+	},
+
 	"DND5E.Level": "Уровень",
 	"DND5E.LevelPl": "Уровни",
 	"DND5E.LevelActionDecrease": "Понижение уровня",
@@ -2359,20 +2546,6 @@
 	"DND5E.LimitedUsesPrompt": "Окно расхода",
 	"DND5E.LimitedUsesPromptTooltip": "Отображение диалогового окна при расходе ресурса.",
 	"DND5E.Long": "Дальняя",
-	"DND5E.LongRest": "Долгий отдых",
-	"DND5E.LongRestNormal": "Долгий отдых (8 часов)",
-	"DND5E.LongRestGritty": "Долгий отдых (7 дней)",
-	"DND5E.LongRestEpic": "Долгий отдых (1 час)",
-	"DND5E.LongRestOvernight": "Долгий отдых (новый день)",
-	"DND5E.LongRestHint": "Совершить долгий отдых? В конце долгого отдыха персонаж восстанавливает все потраченные пункты здоровья, а также кости здоровья, ресурсы класса, предметы с ежедневными зарядами и ячейки заклинаний.",
-	"DND5E.LongRestHintLegacy": "Совершить долгий отдых? В конце долгого отдыха персонаж восстанавливает все потраченные пункты здоровья, а также половину от максимума костей здоровья, ресурсы класса, предметы с ежедневными зарядами и ячейки заклинаний.",
-	"DND5E.LongRestHintGroup": "Совершить долгий отдых? В конце долгого отдыха участники группы восстанавливают все потраченные пункты здоровья, а также кости здоровья, ресурсы класса, предметы с ежедневными зарядами и ячейки заклинаний.",
-	"DND5E.LongRestHintGroupLegacy": "Совершить долгий отдых? В конце долгого отдыха участники группы восстанавливают все потраченные пункты здоровья, а также половину от максимума костей здоровья, ресурсы класса, предметы с ежедневными зарядами и ячейки заклинаний.",
-	"DND5E.LongRestRecovery": "Восстанавливается после долгого отдыха",
-	"DND5E.LongRestResult": "{name} совершает долгий отдых, восстанавливая {health} Пунктов Здоровья и {dice} Костей Здоровья.",
-	"DND5E.LongRestResultHitDice": "{name} совершает долгий отдых и восстанавливает {dice} Костей Здоровья.",
-	"DND5E.LongRestResultHitPoints": "{name} совершает долгий отдых и восстанавливает {health} Пунктов Здоровья.",
-	"DND5E.LongRestResultShort": "{name} совершает долгий отдых.",
 	"DND5E.MagicalBonus": "Магический бонус",
 	"DND5E.Materials": "Компоненты",
 	"DND5E.Max": "Макс.",
@@ -2401,7 +2574,30 @@
 	"DND5E.Normal": "Обычная",
 	"DND5E.NotProficient": "Без умения",
 	"DND5E.Notes": "Заметки",
-	"DND5E.NPC": "Персонаж Мастера",
+
+	"DND5E.NPC": {
+		"Label": "Персонаж ведущего",
+		"SECTIONS": {
+			"Actions": "Действия",
+			"BonusActions": "Бонусные действия",
+			"LegendaryActions": "Легендарные действия",
+			"Reactions": "Ответные действия",
+			"Traits": "Свойства"
+		}
+	},
+
+	"DND5E.NUMBER": {
+		"1": "один",
+		"2": "два",
+		"3": "три",
+		"4": "четыре",
+		"5": "пять",
+		"6": "шесть",
+		"7": "семь",
+		"8": "восемь",
+		"9": "девять"
+	},
+
 	"DND5E.Number": "Число",
 	"DND5E.OtherFormula": "Альтернативная формула",
 	"DND5E.PactMagic": "Магия договора",
@@ -2452,9 +2648,14 @@
 		"Header": "Требуемые особенности",
 		"FIELDS": {
 			"prerequisites": {
+				"label": "Требования",
 				"level": {
 					"label": "Требуемый уровень",
 					"hint": "Уровень персонажа или класса, требуемый для выбора этой особенности."
+				},
+				"repeatable": {
+					"hint": "Эту особенность можно выбрать несколько раз.",
+					"label": "Повторяющаяся"
 				}
 			}
 		}
@@ -2462,6 +2663,7 @@
 	"DND5E.Price": "Цена",
 	"DND5E.Proficiency": "Умение",
 	"DND5E.ProficiencyBonus": "Бонус умения",
+	"DND5E.ProficiencyBonusAbbr": "БУ",
 	"DND5E.ProficiencyConfigurationHint": "Настройка бонуса и умения.",
 	"DND5E.ProficiencyConfigureTitle": "Настройка {label}",
 	"DND5E.ProficiencyLevel": "Уровень умения",
@@ -2475,7 +2677,8 @@
 	"DND5E.QuantityAbbr": "Кол.",
 	"DND5E.QuantityFormula": "Формула количества",
 	"DND5E.QuantityRoll": "Бросок количества",
-	"DND5E.RacialTraits": "Особенности расы",
+	"DND5E.RacialTraits": "Особенности вида",
+	"DND5E.RacialTraitsLegacy": "Особенности расы",
 
 	"DND5E.RANGE": {
 		"FIELDS": {
@@ -2505,6 +2708,10 @@
 					"hint": "Значение дистанции в указанных единицах измерения."
 				}
 			}
+		},
+		"Formatted": {
+			"Range": "дистанция {range}",
+			"Reach": "длинное {reach}"
 		}
 	},
 
@@ -2518,6 +2725,8 @@
 	"DND5E.ReactionAbbr": "Р",
 	"DND5E.ReactionPl": "Ответные действия",
 	"DND5E.Recharge": "Перезарядка",
+	"DND5E.RechargeLong": "Перезарядка после долгого отдыха",
+	"DND5E.RechargeShort": "Перезарядка после короткого или долгого отдыха",
 	"DND5E.Recovery": "Восстановление",
 	"DND5E.RecoveryFormula": "Формула восстановления",
 	"DND5E.RequiredMaterials": "Требуемые реагенты",
@@ -2530,9 +2739,56 @@
 	"DND5E.ResourcePrimary": "Ресурс 1",
 	"DND5E.ResourceSecondary": "Ресурс 2",
 	"DND5E.ResourceTertiary": "Ресурс 3",
-	"DND5E.Rest": "Отдых",
-	"DND5E.RestL": "Долгий",
-	"DND5E.RestS": "Короткий",
+
+	"DND5E.REST": {
+		"Configuration": "Настройка отдыха",
+		"HitDice": {
+			"AutoSpend": {
+				"Hint": "Автоматически использовать кости здоровья, пока здоровье полностью не восстановится.",
+				"Label": "Автоматически использовать КЗ"
+			},
+			"None": "Во время отдыха закончились кости здоровья.",
+			"Select": "Выберите кость здоровья"
+		},
+		"Label": "Отдых",
+		"Long": {
+			"Abbreviation": "ДО",
+			"Hint": {
+				"Group": "В конце долгого отдыха участники группы восстанавливают все пункты здоровья, а также кости здоровья, ресурсы класса, предметы с ежедневными зарядами и ячейки заклинаний.",
+				"GroupLegacy": "В конце долгого отдыха участники группы восстанавливают все пункты здоровья, а также половину от максимума костей здоровья, ресурсы класса, предметы с ежедневными зарядами и ячейки заклинаний.",
+				"Normal": "В конце долгого отдыха вы восстанавливаете все пункты здоровья, а также кости здоровья, ресурсы класса, предметы с ежедневными зарядами и ячейки заклинаний.",
+				"NormalLegacy": "В конце долгого отдыха вы восстанавливаете все пункты здоровья, а также половину от максимума костей здоровья, ресурсы класса, предметы с ежедневными зарядами и ячейки заклинаний."
+			},
+			"Label": "Долгий отдых",
+			"LabelShort": "Долгий",
+			"Recovery": "Восстанавливается при долгом отдыхе",
+			"Result": {
+				"Full": "{name} завершает долгий отдых и восстанавливает {health} и {dice}.",
+				"HitDice": "{name} завершает долгий отдых и восстанавливает {dice}.",
+				"HitPoints": "{name} завершает долгий отдых и восстанавливает {health}.",
+				"Short": "{name} завершает долгий отдых."
+			}
+		},
+		"NewDay": {
+			"Hint": "Восстановить способности с ограничением \"в день\" на закате, рассвете или с наступлением нового дня.",
+			"Label": "Новый день"
+		},
+		"Short": {
+			"Abbreviation": "КО",
+			"Hint": {
+				"Group": "При коротком отдыхе участники группы могут использовать кости здоровья и восстановить заряды предметов.",
+				"Normal": "При коротком отдыхе вы можете использовать кости здоровья и восстановить заряды предметов."
+			},
+			"Label": "Короткий отдых",
+			"LabelShort": "Короткий",
+			"Recovery": "Восстанавливается при коротком отдыхе",
+			"Result": {
+				"Full": "{name} завершает короткий отдых, используя {dice} и восстанавливая {health}.",
+				"Short": "{name} завершает короткий отдых."
+			}
+		}
+	},
+
 	"DND5E.Ritual": "Ритуал",
 	"DND5E.RitualAbbr": "Р",
 
@@ -2542,7 +2798,8 @@
 			"Maximum": "Максимальный",
 			"Minimum": "Минимальный"
 		},
-		"Section": "Проверки {label}"
+		"Section": "Проверки {label}",
+		"Status": "Состояние"
 	},
 
 	"DND5E.Roll": "Бросок",
@@ -2576,8 +2833,6 @@
 	"DND5E.MovementAir": "Воздух",
 	"DND5E.MovementSpeeds": "Скорости передвижения",
 	"DND5E.MovementUnits": "Единицы измерения",
-	"DND5E.NewDay": "Новый день?",
-	"DND5E.NewDayHint": "Восстановить способности с ограничением \"в день\"?",
 
 	"DND5E.SAVE": {
 		"Title": {
@@ -2676,6 +2931,7 @@
 	"DND5E.SavingThrow": "Испытание",
 	"DND5E.SavingThrowDC": "СЛ {dc} - испытание {ability}",
 	"DND5E.SavingThrowRoll": "Испытание {ability}",
+	"DND5E.SavingThrowShort": "Испытание",
 	"DND5E.SaveDC": "СЛ {dc} - {ability}",
 	"DND5E.SavePromptTitle": "Испытание {ability}",
 	"DND5E.ScalingFormula": "Формула повышения",
@@ -2690,18 +2946,6 @@
 	"DND5E.SchoolIll": "Иллюзия",
 	"DND5E.SchoolNec": "Некромантия",
 	"DND5E.SchoolTrs": "Превращение",
-	"DND5E.ShortRest": "Короткий отдых",
-	"DND5E.ShortRestNormal": "Короткий отдых (1 час)",
-	"DND5E.ShortRestGritty": "Короткий отдых (8 часов)",
-	"DND5E.ShortRestEpic": "Короткий отдых (5 минут)",
-	"DND5E.ShortRestOvernight": "Короткий отдых (новый день)",
-	"DND5E.ShortRestHint": "Совершить короткий отдых? При коротком отдыхе вы можете использовать кости здоровья для лечения и восстановить заряды предметов.",
-	"DND5E.ShortRestHintGroup": "Совершить короткий отдых? При коротком отдыхе участники группы могут использовать кости здоровья для лечения и восстановить заряды предметов.",
-	"DND5E.ShortRestNoHD": "Не осталось КЗ",
-	"DND5E.ShortRestRecovery": "Восстанавливается после короткого отдыха",
-	"DND5E.ShortRestResult": "{name} совершает короткий отдых, расходуя {dice} Костей Здоровья и восстанавливая {health} Пунктов Здоровья.",
-	"DND5E.ShortRestResultShort": "{name} совершает короткий отдых.",
-	"DND5E.ShortRestSelect": "Выберите Кость Здоровья",
 	"DND5E.Size": "Размер",
 	"DND5E.SizeGargantuan": "Исполинский",
 	"DND5E.SizeGargantuanAbbr": "Ис",
@@ -2809,7 +3053,7 @@
 	"DND5E.Species": {
 		"Label": "Вид",
 		"Add": "Доб. вид",
-		"Features": "Особенности",
+		"Features": "Особенности вида",
 		"Name": "Название вида"
 	},
 	"DND5E.Speed": "Скорость",
@@ -2875,7 +3119,7 @@
 	},
 	"DND5E.SpellSourceClass": "Исходный класс",
 	"DND5E.SpellPrepared": "Подготовлено",
-	"DND5E.SpellProgArt": "Изобретатель",
+	"DND5E.SpellProgArt": "Артефактор",
 	"DND5E.SpellProgAvailable": "Доступные ячейки",
 	"DND5E.SpellProgFull": "Полный заклинатель",
 	"DND5E.SpellProgHalf": "Частичный заклинатель",
@@ -2892,6 +3136,7 @@
 	"DND5E.SpellSlotN.two": "{n}-я ячейка заклинания",
 	"DND5E.SpellSlotN.few": "{n}-я ячейка заклинания",
 	"DND5E.SpellSlotN.other": "{n}-я ячейка заклинания",
+	"DND5E.SpellSlotTemporary": "Временная ячейка",
 	"DND5E.SpellSlotsN.one": "{n}-я ячейка заклинания",
 	"DND5E.SpellSlotsN.two": "{n}-я ячейка заклинания",
 	"DND5E.SpellSlotsN.few": "{n}-я ячейка заклинания",
@@ -2976,7 +3221,7 @@
 				"hint": "Призванное существо и токен будут изменены на этот размер. Если выбрано несколько размеров, то можно будет выбрать один из них во время призыва."
 			},
 			"creatureTypes": {
-				"label": "Типы существа",
+				"label": "Типы существ",
 				"hint": "Призванное существо будет изменено на этот тип. Если выбрано несколько типов, то можно будет выбрать один из них во время призыва."
 			},
 			"match": {
@@ -3023,7 +3268,7 @@
 						"hint": "Имя профиля, отображаемое в окне использования."
 					},
 					"types": {
-						"label": "Типы существа",
+						"label": "Типы существ",
 						"hint": "Список типов существа, которые можно выбрать для призыва."
 					},
 					"uuid": {
@@ -3095,6 +3340,13 @@
 	"DND5E.Suppressed": "Подавлено",
 
 	"DND5E.TARGET": {
+		"Action": {
+			"PlaceTemplate": "Разместить шаблон"
+		},
+		"Count": {
+			"Any": "Любая",
+			"Every": "Каждая"
+		},
 		"FIELDS": {
 			"target": {
 				"label": "Выбор цели",
@@ -3114,7 +3366,7 @@
 					},
 					"type": {
 						"label": "Тип цели",
-						"hint": "Тип целей, которые можно выбрать (существа, объекты, области)."
+						"hint": "Тип целей, которые можно выбрать (существа, объекты, пространства)."
 					}
 				},
 				"override": {
@@ -3158,8 +3410,156 @@
 				}
 			}
 		},
-		"Action": {
-			"PlaceTemplate": "Разместить шаблон"
+		"Formatted": "{count} {type}",
+		"Type": {
+			"Ally": {
+				"Label": "Союзник",
+				"Counted": {
+					"any": "любые союзники",
+					"every": "каждый союзник",
+					"one": "{number} союзник",
+					"other": "{number} союзников"
+				}
+			},
+			"Any": {
+				"Label": "Любая"
+			},
+			"Circle": {
+				"Label": "Круг",
+				"Counted": {
+					"one": "{number} круг",
+					"other": "{number} кругов"
+				}
+			},
+			"Cone": {
+				"Label": "Конус",
+				"Counted": {
+					"one": "{number} конус",
+					"other": "{number} конусов"
+				}
+			},
+			"Creature": {
+				"Label": "Существо",
+				"Counted": {
+					"any": "любые существа",
+					"every": "каждое существо",
+					"one": "{number} существо",
+					"other": "{number} существ"
+				}
+			},
+			"CreatureOrObject": {
+				"Label": "Существо или объект",
+				"Counted": {
+					"any": "любые существа или объекты",
+					"every": "каждое существо или объект",
+					"one": "{number} существо или объект",
+					"other": "{number} существ или объектов"
+				}
+			},
+			"Cube": {
+				"Label": "Куб",
+				"Counted": {
+					"one": "{number} куб",
+					"other": "{number} кубов"
+				}
+			},
+			"Cylinder": {
+				"Label": "Цилиндр",
+				"Counted": {
+					"one": "{number} цилиндр",
+					"other": "{number} цилиндров"
+				}
+			},
+			"Emanation": {
+				"Label": "Эманация",
+				"Counted": {
+					"one": "{number} эманация",
+					"other": "{number} эманаций"
+				}
+			},
+			"Enemy": {
+				"Label": "Враг",
+				"Counted": {
+					"any": "любые враги",
+					"every": "каждый враг",
+					"one": "{number} враг",
+					"other": "{number} врагов"
+				}
+			},
+			"Line": {
+				"Label": "Линия",
+				"Counted": {
+					"one": "{number} линия",
+					"other": "{number} линий"
+				}
+			},
+			"Object": {
+				"Label": "Объект",
+				"Counted": {
+					"any": "любые объекты",
+					"every": "каждый объект",
+					"one": "{number} объект",
+					"other": "{number} объектов"
+				}
+			},
+			"Radius": {
+				"Label": "Радиус",
+				"Counted": {
+					"one": "{number} радиус",
+					"other": "{number} радиусов"
+				}
+			},
+			"Self": {
+				"Label": "На себя"
+			},
+			"Sphere": {
+				"Label": "Сфера",
+				"Counted": {
+					"one": "{number} сфера",
+					"other": "{number} сфер"
+				}
+			},
+			"Space": {
+				"Label": "Пространство",
+				"Counted": {
+					"any": "любые пространства",
+					"every": "каждое пространство",
+					"one": "{number} пространство",
+					"other": "{number} пространств"
+				}
+			},
+			"Square": {
+				"Label": "Квадрат",
+				"Counted": {
+					"one": "{number} квадрат",
+					"other": "{number} квадратов"
+				}
+			},
+			"Target": {
+				"Label": "Цель",
+				"Counted": {
+					"any": "любые цели",
+					"every": "каждая цель",
+					"one": "{number} цель",
+					"other": "{number} целей"
+				}
+			},
+			"Wall": {
+				"Label": "Стена",
+				"Counted": {
+					"one": "{number} стена",
+					"other": "{number} стен"
+				}
+			},
+			"WillingCreature": {
+				"Label": "Согласное существо",
+				"Counted": {
+					"any": "любые согласные существа",
+					"every": "каждое согласное существо",
+					"one": "{number} согласное существо",
+					"other": "{number} согласных существ"
+				}
+			}
 		},
 		"Warning": {
 			"PlaceTemplate": "Не удалось разместить шаблон."
@@ -3168,32 +3568,12 @@
 
 	"DND5E.Target": "Цель",
 	"DND5E.TargetPl": "Цели",
-	"DND5E.TargetAlly": "союзник",
-	"DND5E.TargetAny": "любая",
-	"DND5E.TargetCircle": "круг",
-	"DND5E.TargetCone": "конус",
-	"DND5E.TargetCreature": "существо",
-	"DND5E.TargetCreatureOrObject": "существо или объект",
-	"DND5E.TargetCube": "куб",
-	"DND5E.TargetCylinder": "цилиндр",
-	"DND5E.TargetEnemy": "враг",
-	"DND5E.TargetEvery": "каждый",
-	"DND5E.TargetLine": "линия",
-	"DND5E.TargetObject": "объект",
-	"DND5E.TargetRadius": "эманация",
-	"DND5E.TargetRadiusLegacy": "радиус",
-	"DND5E.TargetSelf": "на себя",
-	"DND5E.TargetSpace": "точка",
-	"DND5E.TargetSphere": "сфера",
-	"DND5E.TargetSquare": "квадрат",
 	"DND5E.TargetType": "Тип цели",
 	"DND5E.TargetTypeArea": "область",
 	"DND5E.TargetTypeIndividual": "индивидуальная",
 	"DND5E.TargetUnits": "Единицы измерения области",
 	"DND5E.TargetValue": "Дистанция или число целей",
-	"DND5E.TargetWall": "стена",
 	"DND5E.TargetWidth": "Ширина линии",
-	"DND5E.TargetWilling": "Согласное существо",
 	"DND5E.TemplatePrompt": "Окно шаблона",
 	"DND5E.TemplatePromptTooltip": "Отображение диалогового окна при размещении шаблона.",
 	"DND5E.Temp": "Врем.",
@@ -3316,6 +3696,142 @@
 	"DND5E.Unidentified.Notice": "Вы можете опознать этот предмет, чтобы узнать подробности.",
 	"DND5E.Unidentified.Title": "Неопознанный",
 	"DND5E.Unidentified.Value": "???",
+	"DND5E.Unit": "Единица",
+
+	"DND5E.UNITS": {
+		"DISTANCE": {
+			"Label": "Единицы расстояния",
+			"Foot": {
+				"Label": "Футы",
+				"Abbreviation": "фт"
+			},
+			"Kilometer": {
+				"Label": "Километры",
+				"Abbreviation": "км"
+			},
+			"Meter": {
+				"Label": "Метры",
+				"Abbreviation": "м"
+			},
+			"Mile": {
+				"Label": "Мили",
+				"Abbreviation": "мл"
+			}
+		},
+		"TIME": {
+			"Day": {
+				"Label": "День"
+			},
+			"Hour": {
+				"Label": "Час"
+			},
+			"Minute": {
+				"Label": "Минута"
+			},
+			"Month": {
+				"Label": "Месяц"
+			},
+			"Round": {
+				"Label": "Раунд",
+				"Counted": {
+					"narrow": "{number}р",
+					"one": "{number} раунд",
+					"other": "{number} раундов"
+				}
+			},
+			"Second": {
+				"Label": "Секунда"
+			},
+			"Turn": {
+				"Label": "Ход",
+				"Abbreviation": "х",
+				"Counted": {
+					"narrow": "{number}х",
+					"one": "{number} ход",
+					"other": "{number} ходов"
+				}
+			},
+			"Week": {
+				"Label": "Неделя"
+			},
+			"Year": {
+				"Label": "Год"
+			}
+		},
+		"VOLUME": {
+			"Label": "Единицы объёма",
+			"CubicFoot": {
+				"Label": "Кубические футы",
+				"Abbreviation": "фт³",
+				"Counted": {
+					"narrow": {
+						"one": "{number}фт³",
+						"other": "{number}фт³"
+					},
+					"short": {
+						"one": "{number} куб.фт.",
+						"other": "{number} куб.фт."
+					},
+					"long": {
+						"one": "{number} кубический фут",
+						"other": "{number} кубических футов"
+					}
+				}
+			},
+			"Liter": {
+				"Label": "Литры",
+				"Abbreviation": "л"
+			}
+		},
+		"WEIGHT": {
+			"Label": "Единицы веса",
+			"Kilogram": {
+				"Label": "Килограммы",
+				"Abbreviation": "кг"
+			},
+			"Megagram": {
+				"Label": "Тонны",
+				"Abbreviation": "т",
+				"Counted": {
+					"narrow": {
+						"one": "{number}т",
+						"other": "{number}т"
+					},
+					"short": {
+						"one": "{number} т",
+						"other": "{number} т"
+					},
+					"long": {
+						"one": "{number} тонна",
+						"other": "{number} тонн"
+					}
+				}
+			},
+			"Pound": {
+				"Label": "Фунты",
+				"Abbreviation": "фнт"
+			},
+			"Ton": {
+				"Label": "Тонны",
+				"Abbreviation": "т",
+				"Counted": {
+					"narrow": {
+						"one": "{number}т",
+						"other": "{number}т"
+					},
+					"short": {
+						"one": "{number} т",
+						"other": "{number} т"
+					},
+					"long": {
+						"one": "{number} тонна",
+						"other": "{number} тонн"
+					}
+				}
+			}
+		}
+	},
+
 	"DND5E.Unknown": "Неизвестно",
 	"DND5E.Unlimited": "Неограниченно",
 
@@ -3401,10 +3917,10 @@
 	},
 
 	"DND5E.UTILITY": {
-		"Title": "Вспомогательное",
+		"Title": "Использование",
 		"FIELDS": {
 			"roll": {
-				"label": "Вспомогательная проверка",
+				"label": "Бросок",
 				"formula": {
 					"label": "Формула броска",
 					"hint": "Формула для произвольного броска."
@@ -3414,7 +3930,7 @@
 					"hint": "Название броска на кнопке."
 				},
 				"prompt": {
-					"label": "Окно вспомогательного броска",
+					"label": "Запрос броска",
 					"hint": "Отображать окно настроек броска?"
 				},
 				"visible": {
@@ -3475,13 +3991,13 @@
 				"hint": "Кости урона оружия. Модификатор характеристики и дополнительный урон будут автоматически добавлены при атаке."
 			},
 			"mastery": {
-				"label": "Мастерство",
-				"hint": "Особая способность оружия, доступная персонажам, у которых есть мастерство в оружии или связанная особенность."
+				"label": "Искусное владение",
+				"hint": "Особая способность оружия, доступная персонажам, у которых есть искусное владение оружием или связанная особенность."
 			}
 		},
 		"Mastery": {
-			"Label": "Мастерство в оружии",
-			"Flavor": "Мастерство",
+			"Label": "Искусное владение оружием",
+			"Flavor": "Искусное владение",
 			"Cleave": "Рассечение",
 			"Graze": "Рикошет",
 			"Nick": "Выпад",
@@ -3504,25 +4020,6 @@
 	"DND5E.WeaponSimpleProficiency": "Простое",
 	"DND5E.WeaponSimpleR": "Простое дист.",
 	"DND5E.Weight": "Вес",
-	"DND5E.WeightUnit": {
-		"Label": "Мера веса",
-		"Kilograms": {
-			"Label": "Килограммы",
-			"Abbreviation": "кг"
-		},
-		"Megagrams": {
-			"Label": "Метр. тонны",
-			"Abbreviation": "мт"
-		},
-		"Pounds": {
-			"Label": "Фунты",
-			"Abbreviation": "фнт"
-		},
-		"Tons": {
-			"Label": "Тонны",
-			"Abbreviation": "т"
-		}
-	},
 	"DND5E.WhisperedTo": "Нашептать ",
 	"DND5E.Wiki": "Вики",
 	"DND5E.available": "доступно",
@@ -3533,15 +4030,22 @@
 
 	"EDITOR.DND5E.Inline": {
 		"ApplyStatus": "Применить статус к выбранным токенам",
+		"AttackExtended": "<em>{type}</em>: {parts}",
+		"AttackLong": "{formula} на попадание",
+		"AttackShort": "{formula}",
 		"AwardEach": "{award} каждому",
 		"CheckShort": "{check}",
 		"CheckLong": "Проверка {check}",
+		"DamageExtended": "<em>Попадание:</em> {damage} урона",
+		"DamageDouble": "{first} плюс {second}",
 		"DamageShort": "{formula} {type}",
 		"DamageLong": "{average} ({formula}) {type}",
 		"DC": "{check} СЛ {dc}",
 		"DCPassiveShort": "СЛ {dc} пассивного {check}",
 		"DCPassiveLong": "пассивное {check} с {dc} или выше",
 		"NoActorWarning": "Не найден выбранный или привязанный актёр для броска.",
+		"PassiveShort": "пассивная {check}",
+		"PassiveLong": "пассивное значение {check}",
 		"RequestRoll": "Запросить бросок",
 		"RollRequest": "Запрос броска",
 		"SaveShort": "{save}",
@@ -3728,20 +4232,6 @@
 	"SETTINGS.5eAutoCollapseCardN": "Сворачивать карточки предметов",
 	"SETTINGS.5eAutoSpellTemplateL": "При сотворении заклинания будет автоматически создаваться измерительный шаблон (игрок должен иметь роль Доверенного)",
 	"SETTINGS.5eAutoSpellTemplateN": "Всегда размещать шаблон заклинания",
-	"SETTINGS.5eAttackRollVisibility": {
-		"Name": "Видимость результата атаки",
-		"Hint": "Видимость результатов бросков атаки в карточках чата для игроков.",
-		"All": "Результат и КБ цели",
-		"HideAC": "Только результат",
-		"None": "Скрывать всё"
-	},
-	"SETTINGS.5eChallengeVisibility": {
-		"Name": "Видимость сложности",
-		"Hint": "Определяет видимость сложности проверок и испытаний игроками, а также выделяет успех/провал на карточках чата.",
-		"All": "Показывать всё",
-		"None": "Скрыть всё",
-		"Player": "Только для других игроков"
-	},
 	"SETTINGS.5eCriticalMaxDiceN": "Максимальная крит. кость урона ",
 	"SETTINGS.5eCriticalMaxDiceL": "Критические попадания становятся более смертельными - кость урона всегда имеет максимальное значение.",
 	"SETTINGS.5eCriticalModifiersN": "Множитель модификаторов крит. урона",
@@ -3766,8 +4256,6 @@
 	"SETTINGS.5eHonorN": "Характеристика Чести",
 	"SETTINGS.5eInitTBL": "Использовать показатель Ловкости для разрешения ничьи при проверке инициативы.",
 	"SETTINGS.5eInitTBN": "Ничья инициативы решается Ловкостью",
-	"SETTINGS.5eMetricN": "Использовать метрическую систему",
-	"SETTINGS.5eMetricL": "Замена системы веса на метрическую: фунты заменяются на килограммы и происходит перерасчёт нагрузки.",
 	"SETTINGS.5eNoAdvancementsN": "Отключение автоматизации повышения уровня",
 	"SETTINGS.5eNoAdvancementsL": "Не отображать диалоговое окно повышения уровня и выбора вариантов развития.",
 	"SETTINGS.5eNoConcentrationN": "Отключение отслеживания концентрации",
@@ -3814,6 +4302,13 @@
 			"Name": "Стандартные навыки",
 			"Hint": "Навыки, отображаемые у персонажей ведущего вне зависимости от умения."
 		},
+		"INITIATIVESCORE": {
+			"Name": "Параметр инициативы",
+			"Hint": "Использовать параметр инициативы существа (10 + бонус) вместо проверки инициативы броском.",
+			"All": "Использовать параметр",
+			"None": "Проверять инициативу",
+			"NPCs": "Использовать параметр только для ПМ"
+		},
 		"LEVELING": {
 			"Name": "Режим повышения уровня",
 			"Hint": "Определяет то, как игроки получают уровни.",
@@ -3821,15 +4316,52 @@
 			"XP": "Пункты опыта",
 			"XPBoons": "Пункты опыта с эпическими дарами"
 		},
+		"METRIC": {
+			"LengthUnits": {
+				"Name": "Метрическая система расстояний",
+				"Hint": "Для передвижения и чувств будут использоваться метры вместо футов."
+			},
+			"VolumeUnits": {
+				"Name": "Метрическая система объёма",
+				"Hint": "Для объёма контейнеров будут использованы литры вместо кубических футов."
+			},
+			"WeightUnits": {
+				"Name": "Метрическая система веса",
+				"Hint": "Для расчёта нагрузки будут использоваться килограммы вместо фунтов."
+			}
+		},
 		"THEME": {
 			"Name": "Тема",
 			"Hint": "Тема интерфейса и бланков по умолчанию. Автоматический режим использует настройки браузера или операционной системы."
 		},
 		"RULESVERSION": {
 			"Name": "Вариант правил",
-			"Hint": "Выбор между оригинальными и современными правилами 5e.",
+			"Hint": "Выбор между оригинальными (2014) и современными (2024) правилами.",
 			"Legacy": "Оригинальные правила (2014)",
 			"Modern": "Современные правила (2024)"
+		},
+		"VISIBILITY": {
+			"Hint": "Настройки, отвечающие за видимость игровой информации игроками.",
+			"Label": "Настройка видимости",
+			"Name": "Видимость",
+			"ATTACK": {
+				"Name": "Видимость результата атаки",
+				"Hint": "Видимость результатов бросков атаки в карточках чата для игроков.",
+				"All": "Результат и КБ цели",
+				"HideAC": "Только результат",
+				"None": "Скрывать всё"
+			},
+			"CHALLENGE": {
+				"All": "Показывать всё",
+				"Hint": "Определяет видимость сложности проверок и испытаний игроками, а также выделяет успех/провал на карточках чата.",
+				"Name": "Видимость сложности",
+				"None": "Скрывать всё",
+				"Player": "Только для других игроков"
+			},
+			"ITEMDESCRIPTIONS": {
+				"Hint": "Скрыть описание предметов персонажей мастера, когда они отправляются в чат при использовании. Только для предметов без 'Описания в чате'.",
+				"Name": "Скрытие описаний ПМ"
+			}
 		}
 	},
 
