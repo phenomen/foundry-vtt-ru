@@ -9,8 +9,8 @@
 
 	"TYPES.Actor.character": "Персонаж игрока",
 	"TYPES.Actor.characterPl": "Персонажи игроков",
-	"TYPES.Actor.npc": "Персонаж мастера",
-	"TYPES.Actor.npcPl": "Персонажи мастера",
+	"TYPES.Actor.npc": "Персонаж Мастера",
+	"TYPES.Actor.npcPl": "Персонажи Мастера",
 	"TYPES.Actor.vehicle": "Транспорт",
 	"TYPES.Actor.vehiclePl": "Транспорт",
 	"TYPES.Actor.group": "Группа",
@@ -437,10 +437,10 @@
 	"DND5E.AdvancementMigrationTitle": "Миграция развития",
 	"DND5E.AdvancementModifyChoices": "Изменить выбор",
 	"DND5E.AdvancementSaveButton": "Сохранение развития",
-	"DND5E.AdvancementScaleValueTitle": "Показатель повышения",
+	"DND5E.AdvancementScaleValueTitle": "Значение эскалации",
 	"DND5E.AdvancementScaleValueHint": "Значение, которое будет изменятся при повышении уровня класса и которое будет доступно в формулах бросков (например кости боевых искусств монаха).",
-	"DND5E.AdvancementScaleValueIdentifierHint": "Это значение повышения для текущего уровня будет доступно в формулах в виде <br><copyable-text>@scale.{class}.{identifier}</copyable-text>",
-	"DND5E.AdvancementScaleValueIdentifierDiceHint": "Это значение повышения для текущего уровня будет доступно в формулах в виде <br><copyable-text>@scale.{class}.{identifier}</copyable-text> - полная формула (<code>4d6</code>)<br><copyable-text>@scale.{class}.{identifier}.die</copyable-text> - полная кость (<code>d6</code>)<br><copyable-text>@scale.{class}.{identifier}.number</copyable-text> - число костей (<code>4</code>)<br><copyable-text>@scale.{class}.{identifier}.faces</copyable-text> - число сторон (<code>6</code>)",
+	"DND5E.AdvancementScaleValueIdentifierHint": "Значение эскалации для текущего уровня будет доступно в формулах в виде <br><copyable-text>@scale.{class}.{identifier}</copyable-text>",
+	"DND5E.AdvancementScaleValueIdentifierDiceHint": "Значение эскалации для текущего уровня будет доступно в формулах в виде <br><copyable-text>@scale.{class}.{identifier}</copyable-text> - полная формула (<code>4d6</code>)<br><copyable-text>@scale.{class}.{identifier}.die</copyable-text> - полная кость (<code>d6</code>)<br><copyable-text>@scale.{class}.{identifier}.number</copyable-text> - число костей (<code>4</code>)<br><copyable-text>@scale.{class}.{identifier}.faces</copyable-text> - число сторон (<code>6</code>)",
 	"DND5E.AdvancementScaleValueTypeCR": "Класс опасности",
 	"DND5E.AdvancementScaleValueTypeDice": "Кость",
 	"DND5E.AdvancementScaleValueTypeDistance": "Дистанция",
@@ -448,8 +448,8 @@
 	"DND5E.AdvancementScaleValueTypeHintDice": "Используйте это для значений в виде кости, вроде вдохновения барда или скрытой атаки.",
 	"DND5E.AdvancementScaleValueTypeHintDistance": "Используйте это для числовых значений, обозначающих дистанцию, вроде скорости перемещения без доспеха или радиуса ауры защиты.",
 	"DND5E.AdvancementScaleValueTypeHintNumber": "Используйте это для простых чисел, вроде бонуса урона ярости или количества использований в день.",
-	"DND5E.AdvancementScaleValueTypeHintString": "Используйте это, если не уверены в типе повышения значения или если тип не важен.",
-	"DND5E.AdvancementScaleValueTypeLabel": "Тип повышения",
+	"DND5E.AdvancementScaleValueTypeHintString": "Используйте это, если не уверены в типе эскалации значения или если тип не важен.",
+	"DND5E.AdvancementScaleValueTypeLabel": "Тип эскалации",
 	"DND5E.AdvancementScaleValueTypeNumber": "Число",
 	"DND5E.AdvancementScaleValueTypeString": "Любой",
 	"DND5E.AdvancementSelectionCreateButton": "Создание развития",
@@ -651,7 +651,7 @@
 		"Message": "{name} получил {award}.",
 		"NoDestinations": "Назначение не доступно",
 		"NoPrimaryParty": "Нет основной группы. Вместо этого отображается назначенные персонажи.",
-		"NotGMError": "Команда /award доступна только мастеру.",
+		"NotGMError": "Команда /award доступна только Мастеру.",
 		"UnrecognizedWarning": "Не удалось обработать {commands}. Команду /award нужно использовать с указанием ПО и монет, например '/award 10gp 50xp'."
 	},
 	"DND5E.Background": "Происхождение",
@@ -1062,7 +1062,7 @@
 	"DND5E.ConsumeCharges": "Использования предмета",
 	"DND5E.ConsumeResource": "Использовать ресурс?",
 	"DND5E.ConsumeRecharge": "Использовать перезарядку?",
-	"DND5E.ConsumeScaling": "Повышение ресурса",
+	"DND5E.ConsumeScaling": "Эскалация ресурса",
 	"DND5E.ConsumeScalingLabel": "Использует ресурсы",
 	"DND5E.ConsumeScalingTooltip": "Расход дополнительных ресурсов позволяет сотворить заклинание более высокого круга.",
 
@@ -1140,15 +1140,15 @@
 			"consumption": {
 				"label": "Расход",
 				"scaling": {
-					"abbr": "Повышение",
-					"label": "Повышение расхода",
+					"abbr": "Эскалация",
+					"label": "Эскалация расхода",
 					"allowed": {
-						"label": "Разрешить повышение",
+						"label": "Разрешить эскалацию",
 						"hint": "Может ли функция не на заклинании быть активирована на высоких кругах?"
 					},
 					"max": {
-						"label": "Макс. повышение",
-						"hint": "Максимальное число уровней повышения для этого предмета, включая начальный уровень."
+						"label": "Макс. эскалация",
+						"hint": "Максимальное число уровней эскалации для этого предмета, включая начальный уровень."
 					}
 				},
 				"spellSlot": {
@@ -1172,14 +1172,14 @@
 							"hint": "Введите отрицательное значение, для восстановления вместо расходования."
 						},
 						"scaling": {
-							"label": "Повышение расхода",
+							"label": "Эскалация расхода",
 							"mode": {
-								"label": "Режим повышения",
-								"hint": "Как будет повышаться расход."
+								"label": "Режим эскалации",
+								"hint": "Как будет эскалироваться расход."
 							},
 							"formula": {
-								"label": "Формула повышения",
-								"hint": "Особое повышение расхода за круг/уровень."
+								"label": "Формула эскалации",
+								"hint": "Особая эскалация расхода за круг/уровень."
 							}
 						}
 					}
@@ -1195,7 +1195,7 @@
 		"Scaling": {
 			"Amount": "Число",
 			"Automatic": "Автоматически",
-			"None": "Без повышения",
+			"None": "Без эскалации",
 			"SlotLevel": "Круг ячейки"
 		},
 		"Target": {
@@ -1402,21 +1402,21 @@
 							"hint": "Число костей для броска."
 						},
 						"scaling": {
-							"label": "Повышение урона",
-							"abbr": "Повышение",
+							"label": "Эскалация урона",
+							"abbr": "Эскалация",
 							"mode": {
-								"label": "Режим повышения",
+								"label": "Режим эскалации",
 								"abbr": "Режим",
-								"hint": "Метод расчёта повышения."
+								"hint": "Метод расчёта эскалации."
 							},
 							"number": {
-								"label": "Повышение кости",
+								"label": "Эскалация кости",
 								"abbr": "Кость",
-								"hint": "Число костей, добавляемых на каждом уровне повышения. Будет добавлено к первой кости в формуле урона."
+								"hint": "Число костей, добавляемых на каждом шаге эскалации. Будет добавлено к первой кости в формуле урона."
 							},
 							"formula": {
-								"label": "Формула повышения",
-								"hint": "Произвольная формула повышения, которая будет умножаться для каждого шага повышения и добавляться к исходной формуле."
+								"label": "Формула эскалации",
+								"hint": "Произвольная формула, которая будет умножаться для каждого шага эскалации и добавляться к исходной формуле."
 							}
 						},
 						"types": {
@@ -1435,7 +1435,7 @@
 		},
 		"Scaling": {
 			"Half": "Каждый второй круг",
-			"None": "Без повышения",
+			"None": "Без эскалации",
 			"Whole": "Каждый круг"
 		}
 	},
@@ -2036,7 +2036,7 @@
 	"DND5E.Feature": {
 		"Background": "Особенность происхождения",
 		"Class": {
-			"Label": "Классовая особенность",
+			"Label": "Особенность класса",
 			"ArcaneShot": "Магический выстрел",
 			"ArtificerInfusion": "Инфузия изобретателя",
 			"ChannelDivinity": "Проведение энергии",
@@ -2062,7 +2062,7 @@
 			"Origin": "Черта происхождения"
 		},
 		"Monster": "Особенность монстра",
-		"Species": "Черта вида",
+		"Species": "Особенность вида",
 		"SpeciesLegacy": "Особенность расы",
 		"SupernaturalGift": {
 			"Label": "Сверхъестественное благо",
@@ -2253,18 +2253,18 @@
 					"hint": "Число костей для броска."
 				},
 				"scaling": {
-					"label": "Повышение исцеления",
+					"label": "Эскалация исцеления",
 					"mode": {
-						"label": "Режим повышения",
-						"hint": "Метод расчёта повышения."
+						"label": "Режим эскалации",
+						"hint": "Метод расчёта эскалации."
 					},
 					"number": {
-						"label": "Повышение кости",
-						"hint": "Число костей, добавляемых на каждом уровне повышения. Будет добавлено к первой кости в формуле исцеления."
+						"label": "Эскалация кости",
+						"hint": "Число костей, добавляемых на каждом шаге эскалации. Будет добавлено к первой кости в формуле исцеления."
 					},
 					"formula": {
-						"label": "Формула повышения",
-						"hint": "Произвольная формула повышения, которая будет умножаться для каждого шага повышения и добавляться к исходной формуле."
+						"label": "Формула эскалации",
+						"hint": "Произвольная формула, которая будет умножаться для каждого шага эскалации и добавляться к исходной формуле."
 					}
 				},
 				"types": {
@@ -2277,7 +2277,7 @@
 
 	"DND5E.Healing": "Исцеление",
 	"DND5E.HealingRoll": "Бросок исцеления",
-	"DND5E.HealingTemp": "Исцеление (Временное)",
+	"DND5E.HealingTemp": "Временные ПЗ",
 	"DND5E.Height": "Рост",
 
 	"DND5E.HITPOINTS": {
@@ -2433,6 +2433,7 @@
 	"DND5E.Items": "Предметы",
 	"DND5E.ItemSiegeProperties": "Свойства осадного оружия",
 	"DND5E.ItemSpeciesDetails": "Подробности вида",
+	"DND5E.ItemSpeciesDetailsLegacy": "Подробности расы",
 	"DND5E.ItemSubclassDetails": "Подробности подкласса",
 	"DND5E.ItemToolBase": "Базовые инструменты",
 	"DND5E.ItemToolBonus": "Бонус инструмента",
@@ -2538,7 +2539,7 @@
 		"Min": "Минимальный уровень"
 	},
 	"DND5E.LevelNumber": "Уровень {level}",
-	"DND5E.LevelScaling": "Повышение круга",
+	"DND5E.LevelScaling": "Эскалация круга",
 	"DND5E.LimitedUses": "Ограниченные использования",
 	"DND5E.LimitedUsesAvailable": "Остаток использований",
 	"DND5E.LimitedUsesMax": "Максимум использований",
@@ -2548,7 +2549,7 @@
 	"DND5E.Long": "Дальняя",
 	"DND5E.MagicalBonus": "Магический бонус",
 	"DND5E.Materials": "Компоненты",
-	"DND5E.Max": "Макс.",
+	"DND5E.Max": "Максимум",
 	"DND5E.MaxCharacterLevelExceededWarn": "Персонаж не может быть выше {max} уровня.",
 	"DND5E.MaxClassLevelExceededWarn": "Класс не может быть выше {max} уровня.",
 	"DND5E.MaxClassLevelMinimumWarn": "Класс должен иметь как минимум один уровень.",
@@ -2571,7 +2572,7 @@
 	"DND5E.NoCharges": "Нет зарядов",
 	"DND5E.None": "Нет",
 	"DND5E.NoneActionLabel": "Нет",
-	"DND5E.Normal": "Обычная",
+	"DND5E.Normal": "Обычный",
 	"DND5E.NotProficient": "Без умения",
 	"DND5E.Notes": "Заметки",
 
@@ -2934,9 +2935,9 @@
 	"DND5E.SavingThrowShort": "Испытание",
 	"DND5E.SaveDC": "СЛ {dc} - {ability}",
 	"DND5E.SavePromptTitle": "Испытание {ability}",
-	"DND5E.ScalingFormula": "Формула повышения",
-	"DND5E.ScalingMode": "Режим повышения",
-	"DND5E.ScalingValue": "Значение повышения",
+	"DND5E.ScalingFormula": "Формула эскалации",
+	"DND5E.ScalingMode": "Режим эскалации",
+	"DND5E.ScalingValue": "Значение эскалации",
 	"DND5E.School": "Школа",
 	"DND5E.SchoolAbj": "Преграждение",
 	"DND5E.SchoolCon": "Воплощение",
@@ -3052,8 +3053,10 @@
 	"DND5E.SpecialTraits": "Особенности",
 	"DND5E.Species": {
 		"Label": "Вид",
-		"Add": "Доб. вид",
+		"Add": "Добавить вид",
+		"AddLegacy": "Добавить расу",
 		"Features": "Особенности вида",
+		"FeaturesLegacy": "Особенности расы",
 		"Name": "Название вида"
 	},
 	"DND5E.Speed": "Скорость",
@@ -3131,7 +3134,7 @@
 	"DND5E.SpellsSearch": "Поиск заклинания",
 	"DND5E.SpellSchool": "Школа",
 	"DND5E.SpellScroll": "Свиток заклинания",
-	"DND5E.SpellSlotExpended": "Потраченная ячейка заклинаний",
+	"DND5E.SpellSlotExpended": "Израсходованная ячейка заклинания",
 	"DND5E.SpellSlotN.one": "{n}-я ячейка заклинания",
 	"DND5E.SpellSlotN.two": "{n}-я ячейка заклинания",
 	"DND5E.SpellSlotN.few": "{n}-я ячейка заклинания",
@@ -3374,7 +3377,7 @@
 					"hint": "Использовать эти значения цели вместо значений у предмета."
 				},
 				"prompt": {
-					"label": "Окно измерительного шаблона",
+					"label": "Окно шаблона",
 					"hint": "Отображать окно запроса для размещения измерительного шаблона? Игроки всё еще смогут размещать шаблоны из карточек чата."
 				},
 				"template": {
@@ -3610,7 +3613,7 @@
 		},
 		"Enabled": "Использовать динамические рамки",
 		"RingColor": "Цвет рамки",
-		"ScaleCorrection": "Корректировка повышения",
+		"ScaleCorrection": "Корректировка эскалации",
 		"Subject": {
 			"Label": "Путь к источнику",
 			"Hint": "Укажите путь к изображению, размещенному над динамическим кольцом токенов. Если путь не указан, будет использовано стандартное."
@@ -3839,7 +3842,7 @@
 		"SECTION": {
 			"Consumption": "Расход",
 			"Creation": "Создание",
-			"Scaling": "Повышение"
+			"Scaling": "Эскалация"
 		}
 	},
 
@@ -3930,7 +3933,7 @@
 					"hint": "Название броска на кнопке."
 				},
 				"prompt": {
-					"label": "Запрос броска",
+					"label": "Окно броска",
 					"hint": "Отображать окно настроек броска?"
 				},
 				"visible": {
@@ -4151,7 +4154,7 @@
 			"ItemHint": "Перенесите класс сюда",
 			"NoValidClass": "Не выбран класс. Нажмите на кнопку изменения, чтобы добавить класс.",
 			"OptionalFeaturesCaption": "Варианты классовых особенностей",
-			"OptionalFeaturesDescription": "В этом разделе содержаться варианты особенностей для {class}. Эти классовые особенности не даются автоматически и вы можете выбрать одну, несколько или все — по решению мастера.",
+			"OptionalFeaturesDescription": "В этом разделе содержаться варианты особенностей для {class}. Эти классовые особенности не даются автоматически и вы можете выбрать одну, несколько или все — по решению Мастера.",
 			"SpellSlotLevel": "Круг ячейки",
 			"SpellSlots": "Ячейки заклинаний",
 			"SpellSlotsPerSpellLevel": "—Ячеек на круг заклинания—",
@@ -4359,7 +4362,7 @@
 				"Player": "Только для других игроков"
 			},
 			"ITEMDESCRIPTIONS": {
-				"Hint": "Скрыть описание предметов персонажей мастера, когда они отправляются в чат при использовании. Только для предметов без 'Описания в чате'.",
+				"Hint": "Скрыть описание предметов персонажей Мастера, когда они отправляются в чат при использовании. Только для предметов без 'Описания в чате'.",
 				"Name": "Скрытие описаний ПМ"
 			}
 		}
