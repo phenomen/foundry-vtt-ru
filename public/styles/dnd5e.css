@@ -4,6 +4,10 @@
 	--syb5e-npc-font: var(--font-fancy) !important;
 }
 
+select {
+	font-weight: 500;
+}
+
 /* 3.0 */
 
 .dnd5e2.sheet.actor.character .ability-scores .ability-score .label {
@@ -49,6 +53,11 @@
 
 .dnd5e2.sheet.actor .meter.sectioned > .tmp {
 	font-size: var(--text-sm);
+}
+
+.dnd5e2.sheet.item .sheet-header .identity-info .subtitles .item-rarity > select {
+	text-transform: uppercase;
+	font-size: var(--text-xs);
 }
 
 /* 1.0 */

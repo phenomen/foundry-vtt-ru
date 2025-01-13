@@ -1,5 +1,5 @@
-import translationData from "./translations.json";
 import entriesData from "./data.json";
+import translationData from "./translations.json";
 
 const translationMap = new Map(translationData.map((item) => [item.en, item.ru]));
 

@@ -4,14 +4,11 @@
 	"private": "true",
 	"scripts": {
 		"build": "vite build",
-		"format": "prettier --write ."
+		"format": "bunx biome check --write"
 	},
 	"type": "module",
 	"devDependencies": {
-		"prettier": "^3.4.2",
-		"vite": "6.0.7"
-	},
-	"trustedDependencies": [
-		"esbuild"
-	]
+		"@biomejs/biome": "^1.9.4",
+		"vite": "^6.0.7"
+	}
 }
