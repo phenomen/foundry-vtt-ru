@@ -1,6 +1,6 @@
 const scripts = import.meta.glob("./systems/*.js");
 
-Hooks.once("init", () => {
+Hooks.once("init", async () => {
 	const system = game.system.id.toLowerCase();
 	const route = foundry.utils.getRoute("/");
 
@@ -64,9 +64,9 @@ Hooks.once("init", () => {
 
 	/* Системные скрипты */
 	for (const path in scripts) {
-		scripts[path]().then((mod) => {
+		scripts[path]().then(async (mod) => {
 			if (path.includes(`${system}.js`)) {
-				mod.init();
+				await mod.init();
 			}
 		});
 	}

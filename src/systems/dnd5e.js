@@ -1,6 +1,6 @@
 import { setupBabele } from "../shared.js";
 
-export function init() {
+export async function init() {
 	/* Регистрация настроек */
 	game.settings.register("ru-ru", "compendiumTranslation", {
 		name: "(D&D5E) Перевод библиотек",
@@ -94,25 +94,28 @@ export function init() {
       </button>
   </div>
   `);
-		updateAAButton.find("button").click((e) => {
+		updateAAButton.find("button").click(async (e) => {
 			e.preventDefault();
-			updateAA();
+			await updateAA();
 		});
 
 		lastMenuSetting.after(updateAAButton);
 	});
+
+	await loadOldTranslations();
 }
 
 /* Загрузка перевода для версии D&D5E < 4.2 */
-/*
 async function loadOldTranslations() {
 	if (Number(game.system.version.slice(0, 3)) > 4.1) return;
 
 	const translations = game.i18n.translations;
-	const oldTranslations = await game.i18n._loadTranslationFile("/modules/ru-ru/i18n/systems/dnd5e-old.json");
-	foundry.utils.mergeObject(translations, oldTranslations, {inplace: true});
+	const oldTranslations = await game.i18n._loadTranslationFile(
+		"/modules/ru-ru/i18n/systems/dnd5e-old.json",
+	);
+
+	foundry.utils.mergeObject(translations, oldTranslations, { overwrite: false });
 }
-*/
 
 /* Обновление базы AA */
 async function updateAA() {
