@@ -64,9 +64,9 @@ Hooks.once("init", async () => {
 
 	/* Системные скрипты */
 	for (const path in scripts) {
-		scripts[path]().then(async (mod) => {
+		scripts[path]().then((mod) => {
 			if (path.includes(`${system}.js`)) {
-				await mod.init();
+				mod.init();
 			}
 		});
 	}
