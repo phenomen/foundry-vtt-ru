@@ -280,6 +280,7 @@
 			}
 		},
 		"Config": {
+			"AnyLevel": "Любой",
 			"Details": "Подробности развития"
 		},
 		"HitPoints": {
@@ -296,6 +297,65 @@
 			"Warning": {
 				"Empty": "Пункты здоровья должны быть определены броском или выбрано среднее значение.",
 				"Invalid": "Пункты здоровья должны быть целым числом"
+			}
+		},
+		"ItemChoice": {
+			"Choose": "выберите {count}",
+			"Chosen": "Выбрано: {current} из {max}",
+			"Details": "Подробности выбора",
+			"DropHint": "Перенесите сюда предметы, которые будут доступны на выбор этому развитию.",
+			"FIELDS": {
+				"allowDrops": {
+					"hint": "Разрешить игрокам добавлять свои выборы в это развитие.",
+					"label": "Разрешить добавление"
+				},
+				"choices": {
+					"hint": "Укажите, сколько выборов разрешено на каждом уровне.",
+					"label": "Выборы",
+					"FIELDS": {
+						"count": {
+							"label": "Число"
+						},
+						"replacement": {
+							"label": "Разрешить замену"
+						}
+					}
+				},
+				"pool": {
+					"label": "Настройка выбора"
+				},
+				"restriction": {
+					"level": {
+						"Available": "Любой доступный круг",
+						"hint": "Разрешить выбор только из заклинаний этого круга.",
+						"label": "Круг заклинания"
+					},
+					"subtype": {
+						"label": "Подтип"
+					},
+					"type": {
+						"label": "Тип"
+					}
+				},
+				"type": {
+					"Any": "Любой",
+					"hint": "Ограничение типа предметов для выбора.",
+					"label": "Тип предмета"
+				}
+			},
+			"Hint": "Предоставьте игрокам предметы на выбор (снаряжение, особенности или заклинания), которые они могут выбрать для своих персонажей на одном или нескольких уровнях.",
+			"Replacement": {
+				"None": "Без замены",
+				"Title": "замена"
+			},
+			"Title": "Выберите предметы",
+			"Warning": {
+				"FeatureLevel": "Для этой особенности требуется уровень {level} или выше.",
+				"InvalidType": "Можно выбрать только предметы с типом {type}.",
+				"NoOriginal": "Сделанный ранее выбор больше не доступен для замены.",
+				"PreviouslyChosen": "Этот предмет уже был выбран на предыдущем уровне.",
+				"SpellLevelAvailable": "Для этого развития можно выбрать только заклинания {level} круга или ниже.",
+				"SpellLevelSpecific": "Для этого развития можно выбрать только заклинания {level} круга."
 			}
 		},
 		"ItemGrant": {
@@ -406,26 +466,6 @@
 	"DND5E.AdvancementDeleteConfirmationTitle": "Подтверждение удаления",
 	"DND5E.AdvancementFlowDropAreaHint": "Перенесите предметы сюда для выбора.",
 	"DND5E.AdvancementHint": "Подсказка",
-	"DND5E.AdvancementItemChoiceTitle": "Выберите предметы",
-	"DND5E.AdvancementItemChoiceHint": "Представьте игроку выбор предметов (снаряжение, характеристики или заклинания), которые он может выбрать для своего персонажа на одном или нескольких уровнях.",
-	"DND5E.AdvancementItemChoiceChoices": "Выборы",
-	"DND5E.AdvancementItemChoiceChoose": "выберите {count}",
-	"DND5E.AdvancementItemChoiceChosen": "Выбрано: {current} из {max}",
-	"DND5E.AdvancementItemChoiceFeatureLevelWarning": "Для этой особенности требуется уровень {level} или выше.",
-	"DND5E.AdvancementItemChoiceLevelsHint": "Укажите, сколько выборов разрешено на каждом уровне.",
-	"DND5E.AdvancementItemChoiceNoOriginalError": "Сделанный ранее выбор больше не доступен для замены.",
-	"DND5E.AdvancementItemChoicePreviouslyChosenWarning": "Этот предмет уже был выбран на предыдущем уровне.",
-	"DND5E.AdvancementItemChoiceReplacement": "Разрешить замену",
-	"DND5E.AdvancementItemChoiceReplacementNone": "Без замены",
-	"DND5E.AdvancementItemChoiceReplacementTitle": "замена",
-	"DND5E.AdvancementItemChoiceSpellLevelAvailable": "Любой доступный круг",
-	"DND5E.AdvancementItemChoiceSpellLevelAvailableWarning": "Для этого развития можно выбрать только заклинания {level} круга или ниже.",
-	"DND5E.AdvancementItemChoiceSpellLevelSpecificWarning": "Для этого развития можно выбрать только заклинания {level} круга.",
-	"DND5E.AdvancementItemChoiceSpellLevelHint": "Разрешить выбор только из заклинаний этого круга.",
-	"DND5E.AdvancementItemChoiceType": "Тип предмета",
-	"DND5E.AdvancementItemChoiceTypeHint": "Ограничение типа предметов для выбора.",
-	"DND5E.AdvancementItemChoiceTypeAny": "Любой",
-	"DND5E.AdvancementItemChoiceTypeWarning": "Можно выбрать только предметы с типом {type}.",
 	"DND5E.AdvancementItemTypeInvalidWarning": "Предметы с типом {type} не могут быть добавлены к развитию.",
 	"DND5E.AdvancementLevelHeader": "{level}-й уровень",
 	"DND5E.AdvancementLevelAnyHeader": "Любой уровень",
@@ -1745,18 +1785,24 @@
 	"DND5E.Equipped": "Надето",
 	"DND5E.Exhaustion": "Утомление",
 	"DND5E.ExhaustionLevel": "{n}-я степень утомления",
-	"DND5E.ExperiencePoints": "Пункты опыта",
-	"DND5E.ExperiencePointsAbbr": "ПО",
-	"DND5E.ExperiencePointsBoons": {
-		"one": "{number} дар",
-		"other": "{number} дара"
+
+	"DND5E.ExperiencePoints": {
+		"Abbreviation": "ПО",
+		"Boons": {
+			"one": "{number} дар",
+			"other": "{number} дара"
+		},
+		"Current": "Текущие ПО",
+		"Format": "{value} ПО",
+		"Label": "Пункты опыта",
+		"Progress": "До следующего уровня",
+		"StatBlock": {
+			"Standard": "{value} ПО",
+			"Lair": "{value} ПО или {lair} ПО в логове"
+		},
+		"Value": "ПО"
 	},
-	"DND5E.ExperiencePointsCurrent": "Текущие ПО",
-	"DND5E.ExperiencePointsFormat": "{value} ПО",
-	"DND5E.ExperiencePointsLabel": "До следующего уровня",
-	"DND5E.ExperiencePointsMax": "ПО для след. уровня",
-	"DND5E.ExperiencePointsMin": "Мин. ПО для этого уровня",
-	"DND5E.ExperiencePointsValue": "Пункты опыта",
+
 	"DND5E.Expertise": "Мастерство",
 
 	"DND5E.FACILITY": {
