@@ -103,6 +103,17 @@ export function init() {
 	});
 }
 
+/* Загрузка перевода для версии D&D5E < 4.2 */
+/*
+async function loadOldTranslations() {
+	if (Number(game.system.version.slice(0, 3)) > 4.1) return;
+
+	const translations = game.i18n.translations;
+	const oldTranslations = await game.i18n._loadTranslationFile("/modules/ru-ru/i18n/systems/dnd5e-old.json");
+	foundry.utils.mergeObject(translations, oldTranslations, {inplace: true});
+}
+*/
+
 /* Обновление базы AA */
 async function updateAA() {
 	const translatedSettings = await foundry.utils.fetchJsonWithTimeout(

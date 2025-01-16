@@ -28,7 +28,7 @@
 			"Header": "<strong>Общая дистанция бега.</strong>",
 			"Reminder": "<p>При этом все остальные действия в этот ход получат штраф -2.</p>"
 		},
-		"RollRun": "[Нажмите] для броска кости бега",
+		"RollRun": "Бросить кость бега",
 		"Adv": "Повышения",
 		"Advance": "Повышение",
 		"Rank": "Ранг",
@@ -100,7 +100,7 @@
 		"EdHind": "Изменить изъян",
 		"Ed": "Изменить",
 		"EdF": "Изменить {item}",
-		"EdRightClick": "[ПКМ] для изменения",
+		"EdRightClick": "ПКМ для изменения",
 		"Del": "Удалить",
 		"Arcane": "Сверхъестественный",
 		"InnatePower": "Врождённая сила",
@@ -157,12 +157,13 @@
 		"Protection": "Доспех",
 		"Dmg": "Урон",
 		"DmgOver": "Урон действия",
-		"ApOver": "Бронебойность действия",
+		"ApOver": "ББ действия",
 		"Resist": "Устойчивость",
 		"ResistRolls": "Проверки устойчивости",
 		"MacroActor": {
 			"Default": "По умолчанию",
-			"Self": "На себя"
+			"Self": "На себя",
+			"Target": "Цель"
 		},
 		"Ap": "ББ",
 		"APLong": "Бронебойность",
@@ -172,7 +173,20 @@
 		"ShieldBonus": "Бонус щита",
 		"Notes": "Заметки",
 		"ActionsEffects": "Действия и эффекты",
-		"Actions": "Действия",
+		"Actions": {
+			"Name": "Действия",
+			"Hidden": {
+				"Label": "Скрытое",
+				"Hint": "Скрытые действия не отображаются в бланке актёра"
+			},
+			"DisplayHidden": {
+				"Label": "Отображение скрытых действий"
+			},
+			"Activities": {
+				"Label": "Функции",
+				"Hint": "SWID действий, связанных с этим предметом"
+			}
+		},
 		"DmgModUni": "Мод. урона",
 		"SkillModUni": "Мод. параметра",
 		"ShotsUsed": "Выстрелено",
@@ -401,7 +415,7 @@
 		"TraitRolls": "Проверки параметров",
 		"Trait": "Параметр",
 		"AltTrait": "Параметр действия",
-		"ClickSuggestions": "[Нажмите] для подсказок",
+		"ClickSuggestions": "Показать подсказки",
 		"Quick": "Стремительность",
 		"BonusDamage": "Дополнительный урон",
 		"Joker": "Джокер",
@@ -410,7 +424,7 @@
 		"DmgRolls": "Броски урона",
 		"SubtractPPDesc": "Вычесть цену ПС из доступных ПС",
 		"AddPPDesc": "Добавить цену ПС к доступным ПС",
-		"RightClickZoom": "[ПКМ] для приближения",
+		"RightClickZoom": "ПКМ для приближения",
 		"SysMigrationWarning": "Данные вашего мира SWADE загружены из очень старой версии Foundry и не могут быть гарантировано перенесены в новую версию. Вы можете попробовать, но могут возникнуть ошибки.",
 		"DeckShuffled": "Колода была автоматически перетасована",
 		"BasePace": "Базовый шаг",
@@ -530,12 +544,15 @@
 		"CannotAddAncestryToAncestry": "Нельзя добавить народ/архетип к народу/архетипу!",
 		"LayOutChaseWithDeck": "Использовать колоду для погони",
 		"ClearChaseCards": "Убрать карты погони со сцены",
+		"NoCCMInstall": "Модуль The Complete Card Management не установлен.",
+		"NoCCMActive": "Модуль The Complete Card Management не активен.",
 		"NoSceneAvailable": "Сцена не доступна, или вы отключили сцены",
 		"ChaseCardsCleared": "Все карты погони были удалены со сцены.",
 		"SetUpChase": "Разложить погоню",
 		"ChaseLayout": "Схема",
 		"ChaseRows": "Строки",
 		"ChaseColumns": "Столбцы",
+		"ChaseDiscard": "Стопка сброса",
 		"ChaseNoDeck": "Выберите колоду!",
 		"ChaseReset": "Колода '{deck}' была сброшена.",
 		"Expiration": {
@@ -550,6 +567,7 @@
 			"LooseTurnOnHold": "Потеря хода, оставаясь наготове",
 			"Remaining": "Осталось"
 		},
+		"RemoveEffectLabel": "Удалить эффект",
 		"RemoveEffectTitle": "Удалить {label} ?",
 		"RemoveEffectBody": "<p style=\"text-align: center;\">Удалить <strong>{label}</strong> из <strong>{parent}</strong>?</p>",
 		"PPAbbreviation": "ПС",
@@ -604,7 +622,9 @@
 			"Source": "Источник",
 			"ResetDuration": "Сброс длительности",
 			"AddGuided": "Открыть конструктор",
-			"AddUnguided": "Добавить пустой эффект"
+			"AddUnguided": "Добавить пустой эффект",
+			"Conditional": "Условный эффект",
+			"ConditionalTooltip": "По умолчанию модификатор не применяется к броску"
 		},
 		"Keybindings": {
 			"OpenFavoriteCards": {
@@ -616,7 +636,7 @@
 			},
 			"Bennies": {
 				"Name": "Потратить/получить фишку",
-				"Hint": "Нажмите, чтобы потратить фишку. Нажмите, удерживая Alt, чтобы получить фишку."
+				"Hint": "Потратить фишку. Удерживайте Alt, чтобы получить фишку."
 			}
 		},
 		"Settings": {
@@ -636,7 +656,7 @@
 				"Name": "Колода для инициативы"
 			},
 			"ParryBase": {
-				"Name": "Название навыка Fighting",
+				"Name": "SWID навыка Fighting",
 				"Hint": "ID навыка, который будет использоваться для расчёта защиты персонажей."
 			},
 			"UseAttributeShorts": {
@@ -843,11 +863,11 @@
 			}
 		},
 		"Validation": {
-			"OnlyOneAncestry": "Вы можете принадлежать только к одному народу!",
-			"OnlyOneArchetype": "Вы можете иметь только один архетип!",
+			"OnlyOneAncestry": "Вы можете принадлежать только к одному народу.",
+			"OnlyOneArchetype": "Вы можете иметь только один архетип.",
+			"InvalidBasePace": "Нельзя изменить базовый шаг на тип шага без значения.",
 			"NoGroupCombatants": "Группы не могут быть участниками боя."
 		},
-		"DocumentLink": "Ссылка",
 		"DocumentTweaks": "Настройки",
 		"TargetVulnerable": "Цель уязвима",
 		"WildAttack": "Яростный удар",
@@ -996,7 +1016,7 @@
 		"FatigueWounds": "Ранения/усталость",
 		"BaseDamage": "Базовый урон",
 		"RefreshPP": "Восполнить пункты силы",
-		"Targets": "Цели:",
+		"Targets": "Цели",
 		"Rolls": {
 			"RollResult": "Результат",
 			"SwadeRoll": "Бросок",
@@ -1018,7 +1038,7 @@
 		"DamageApplicator": {
 			"ApplyDamage": {
 				"Label": "Нанести урон",
-				"Hint": "[Нажмите] для нанесения урона выбранному токену"
+				"Hint": "Нанести урон выбранному токену"
 			},
 			"SoakModifier": "Мод. проверки на прочность",
 			"WoundsAboutToBeTaken": "<p><strong>{name}</strong> может получить <strong>{wounds}</strong>!</p>",
@@ -1079,6 +1099,7 @@
 			"Hint": "Сколько ресурсов использует это действие"
 		},
 		"CouldNotFindMacro": "Не удалось найти макрос с UUID {uuid}",
+		"CouldNotFindTarget": "Этот макрос требует выбранную цель",
 		"Magazine": {
 			"NoneLoaded": "Обойма не заряжена",
 			"Select": "Выбор обоймы"
@@ -1518,7 +1539,37 @@
 			"Supply": {
 				"Label": "Запас"
 			}
-		}
+		},
+		"Movement": {
+			"Base": "Базовое перемещение",
+			"Other": "Другие типы перемещения",
+			"Pace": {
+				"Base": {
+					"Label": "Базовый шаг",
+					"Hint": "Кость шага по умолчанию"
+				},
+				"Ground": {
+					"Label": "По земле"
+				},
+				"Fly": {
+					"Label": "Полёт"
+				},
+				"Swim": {
+					"Label": "Плавание"
+				},
+				"Burrow": {
+					"Label": "Копание"
+				}
+			},
+			"Running": {
+				"OutOfCombat": "Вы можете бежать со скоростью {pace} шагов в течение {minutes} минут вне боя.",
+				"Dialog": {
+					"Title": "Бег",
+					"Content": "Выберите способ бега"
+				}
+			}
+		},
+		"ApplicableEffects": "Применяемые эффекты"
 	},
 	"TYPES": {
 		"Actor": {
