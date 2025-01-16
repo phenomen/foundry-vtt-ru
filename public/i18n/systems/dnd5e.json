@@ -2221,6 +2221,19 @@
 			"other": "Транспорт"
 		}
 	},
+	"DND5E.Habitat": {
+		"Categories": {
+			"Any": "Любая"
+		},
+		"Configuration": {
+			"Custom": "Особая",
+			"Label": "Среда обитания",
+			"Legend": "Категории",
+			"Subtype": "Подтип {type}",
+			"Title": "Настройка среды обитания"
+		},
+		"Subtype": "{type} ({subtype})"
+	},
 	"DND5E.Hair": "Волосы",
 	"DND5E.HalfProficient": "Наполовину умелый",
 
@@ -2453,9 +2466,17 @@
 	"DND5E.ItemWeaponType": "Тип оружия",
 	"DND5E.ItemWeaponUsage": "Использование оружия",
 	"DND5E.JackOfAllTrades": "Мастер на все руки",
-	"DND5E.LairAct": "Действия логова",
-	"DND5E.LairActionLabel": "Действие логова",
-	"DND5E.LairActionInitiative": "Инициатива действия логова",
+
+	"DND5E.LAIR": {
+		"Label": "Логово",
+		"Action": {
+			"Label": "Действие логова",
+			"Initiative": "Инициатива действия логова",
+			"Uses": "Действия логова"
+		},
+		"HasLair": "Есть логово",
+		"Inside": "В логове"
+	},
 
 	"DND5E.Language": {
 		"All": "Все языки",
@@ -2547,6 +2568,7 @@
 	"DND5E.LimitedUsesPrompt": "Окно расхода",
 	"DND5E.LimitedUsesPromptTooltip": "Отображение диалогового окна при расходе ресурса.",
 	"DND5E.Long": "Дальняя",
+	"DND5E.Loyalty": "Лояльность",
 	"DND5E.MagicalBonus": "Магический бонус",
 	"DND5E.Materials": "Компоненты",
 	"DND5E.Max": "Максимум",
@@ -2584,6 +2606,10 @@
 			"LegendaryActions": "Легендарные действия",
 			"Reactions": "Ответные действия",
 			"Traits": "Свойства"
+		},
+		"Important": {
+			"Hint": "Важные персонажи Мастера имеют кости здоровья, проходят испытания против смерти, и имеют показатель лояльности (если включено). Любые ПМ с классами считаются важными не зависимо от этой настройки.",
+			"Label": "Важный ПМ"
 		}
 	},
 
@@ -3691,6 +3717,21 @@
 	"DND5E.TraitWeaponProf": "Умения в оружии",
 	"DND5E.Traits": "Свойства",
 	"DND5E.TraitsChosen": "Выбранные свойства",
+	"DND5E.Treasure": {
+		"Categories": {
+			"Any": "Любое",
+			"Arcana": "Магическое",
+			"Armaments": "Вооружение",
+			"Implements": "Оснащение",
+			"Individual": "Личное",
+			"None": "Нет",
+			"Relics": "Реликвия"
+		},
+		"Configuration": {
+			"Label": "Сокровище",
+			"Title": "Настройка сокровищ"
+		}
+	},
 	"DND5E.Trigger": "Условие",
 	"DND5E.Type": "Тип",
 	"DND5E.Uncrewed": "Без экипажа",
@@ -4318,6 +4359,10 @@
 			"NoXP": "Без пунктов опыта",
 			"XP": "Пункты опыта",
 			"XPBoons": "Пункты опыта с эпическими дарами"
+		},
+		"LOYALTY": {
+			"Hint": "Включить отслеживание лояльности",
+			"Name": "Лояльность"
 		},
 		"METRIC": {
 			"LengthUnits": {
