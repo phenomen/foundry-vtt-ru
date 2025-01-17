@@ -1,59 +1,11 @@
 import { setupBabele } from "../shared.js";
 
 export async function init() {
-	/* Регистрация настроек */
-	game.settings.register("ru-ru", "compendiumTranslation", {
-		name: "(D&D5E) Перевод библиотек",
-		hint: "(Требуется модуль Babele) Библиотеки системы D&D5E будут переведены. Перевод библиотек требуется для корректного перевода типов оружия, брони, языков и других элементов.",
-		type: Boolean,
-		default: true,
-		scope: "world",
-		config: true,
-		restricted: true,
-		onChange: (value) => {
-			window.location.reload();
-		},
-	});
+	registerSettings();
 
-	/* Регистрация Babele */
 	if (game.settings.get("ru-ru", "compendiumTranslation")) {
-		/* Библиотеки D&D */
 		setupBabele("dnd5e");
-
-		game.babele.registerConverters({
-			dndpages(pages, translations) {
-				return pages.map((data) => {
-					if (!translations) {
-						return data;
-					}
-
-					let translation;
-
-					if (Array.isArray(translations)) {
-						translation = translations.find((t) => t.id === data._id || t.id === data.name);
-					} else {
-						translation = translations[data.name];
-					}
-
-					if (!translation) {
-						return data;
-					}
-
-					return mergeObject(data, {
-						name: translation.name,
-						image: { caption: translation.caption ?? data.image?.caption },
-						src: translation.src ?? data.src,
-						text: { content: translation.text ?? data.text?.content },
-						video: {
-							width: translation.width ?? data.video?.width,
-							height: translation.height ?? data.video?.height,
-						},
-						system: { tooltip: translation.tooltip ?? data.system.tooltip },
-						translated: true,
-					});
-				});
-			},
-		});
+		registerConverters();
 	} else {
 		if (game.settings.get("ru-ru", "compendiumTranslation")) {
 			new Dialog({
@@ -75,6 +27,28 @@ export async function init() {
 		}
 	}
 
+	registerHooks();
+	loadOldTranslations();
+}
+
+/* Регистрация настроек */
+function registerSettings() {
+	game.settings.register("ru-ru", "compendiumTranslation", {
+		name: "(D&D5E) Перевод библиотек",
+		hint: "(Требуется модуль Babele) Библиотеки системы D&D5E будут переведены. Перевод библиотек требуется для корректного перевода типов оружия, брони, языков и других элементов.",
+		type: Boolean,
+		default: true,
+		scope: "world",
+		config: true,
+		restricted: true,
+		onChange: () => {
+			window.location.reload();
+		},
+	});
+}
+
+/* Регистрация дополнительных хуков */
+function registerHooks() {
 	/*  Настройка автоопределения анимаций AA  */
 	Hooks.on("renderSettingsConfig", (app, html, data) => {
 		if (!game.user.isGM) return;
@@ -101,17 +75,53 @@ export async function init() {
 
 		lastMenuSetting.after(updateAAButton);
 	});
-
-	await loadOldTranslations();
 }
 
-/* Загрузка перевода для версии D&D5E < 4.2 */
+/* Регистрация конвертеров Babele */
+function registerConverters() {
+	game.babele.registerConverters({
+		dndpages(pages, translations) {
+			return pages.map((data) => {
+				if (!translations) {
+					return data;
+				}
+
+				let translation;
+
+				if (Array.isArray(translations)) {
+					translation = translations.find((t) => t.id === data._id || t.id === data.name);
+				} else {
+					translation = translations[data.name];
+				}
+
+				if (!translation) {
+					return data;
+				}
+
+				return mergeObject(data, {
+					name: translation.name,
+					image: { caption: translation.caption ?? data.image?.caption },
+					src: translation.src ?? data.src,
+					text: { content: translation.text ?? data.text?.content },
+					video: {
+						width: translation.width ?? data.video?.width,
+						height: translation.height ?? data.video?.height,
+					},
+					system: { tooltip: translation.tooltip ?? data.system.tooltip },
+					translated: true,
+				});
+			});
+		},
+	});
+}
+
+/* Загрузка перевода для версий D&D5E < 4.2.0 */
 async function loadOldTranslations() {
 	if (Number(game.system.version.slice(0, 3)) > 4.1) return;
 
 	const translations = game.i18n.translations;
 	const oldTranslations = await game.i18n._loadTranslationFile(
-		"/modules/ru-ru/i18n/systems/dnd5e-old.json",
+		"modules/ru-ru/i18n/systems/dnd5e-old.json",
 	);
 
 	foundry.utils.mergeObject(translations, oldTranslations, { overwrite: false });
