@@ -10,9 +10,6 @@ Hooks.once("init", async () => {
 	systemCSS.href = `${route}modules/ru-ru/styles/${system}.css`;
 	document.head.appendChild(systemCSS);
 
-	/* Пол прилагательных по умолчанию */
-	CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
-
 	/* Добавление шрифтов с кириллицей */
 	const cyrillicFonts = {
 		"Beaufort": { editor: true, fonts: [] },
@@ -44,7 +41,12 @@ Hooks.once("init", async () => {
 		},
 	});
 
-	/* Настройка шрифта для подписей на сцене */
+	/* Шрифт для подписей на сцене */
+	CONFIG.canvasTextStyle.fontFamily = Object.keys(CONFIG.fontDefinitions)[
+		game.settings.get("ru-ru", "sceneLabelFont")
+	];
+
+	/* Переключатель рода случайных прилагательных */
 	game.settings.register("ru-ru", "displayAdjectiveControls", {
 		name: "Переключатель рода случайных прилагательных",
 		hint: "Если вы используете функцию добавления случайных прилагательных к токенам, вы можете добавить переключатель рода на панель инструментов.",
@@ -58,9 +60,8 @@ Hooks.once("init", async () => {
 		},
 	});
 
-	CONFIG.canvasTextStyle.fontFamily = Object.keys(CONFIG.fontDefinitions)[
-		game.settings.get("ru-ru", "sceneLabelFont")
-	];
+	/* Пол прилагательных по умолчанию */
+	CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
 
 	/* Системные скрипты */
 	for (const path in scripts) {
@@ -71,12 +72,7 @@ Hooks.once("init", async () => {
 		});
 	}
 
-	/* Исправление для QUICK INSERT */
-	if (game.modules.get("quick-insert")?.active) {
-		Hooks.on("ready", () => {
-			game.settings.set("quick-insert", "embeddedIndexing", true);
-		});
-	}
+	loadNextTranslations();
 });
 
 /* Выбор пола для случайных прилагательных */
@@ -103,4 +99,17 @@ function getSceneControlButtons(controls) {
 			},
 		});
 	}
+}
+
+/* Загрузка перевода FVTT V13 */
+/* TODO: после релиза FVTT V13, слияние в обратную сторону и спустя несколько обновлений V13, удалить этот код */
+async function loadNextTranslations() {
+	if (Number(game.version.slice(0, 2)) < 13) return;
+
+	const translations = game.i18n.translations;
+	const nextTranslations = await game.i18n._loadTranslationFile(
+		"modules/ru-ru/i18n/core/foundry-next.json",
+	);
+
+	foundry.utils.mergeObject(translations, nextTranslations, { overwrite: true });
 }
