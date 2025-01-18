@@ -235,7 +235,7 @@
 	"DND5E.Add": "Доб.",
 	"DND5E.AdditionalControls": "Дополнительное управление",
 	"DND5E.AdditionalSettings": "Дополнительные настройки",
-	"DND5E.AddEmbeddedItemPromptHint": "Желаете ли вы добавить эти предметы на бланк персонажа?",
+	"DND5E.AddEmbeddedItemPromptHint": "Желаете ли вы добавить эти предметы в бланк персонажа?",
 	"DND5E.Advanced": "Ручная настройка",
 
 	"DND5E.ADVANCEMENT": {
@@ -246,7 +246,9 @@
 				"one": "Макс. {points} пункт на характеристику",
 				"other": "Макс. {points} пунктов на характеристику"
 			},
+			"Details": "Подробности повышения",
 			"Feat": {
+				"ASIName": "Повышение характеристик",
 				"Hint": "Перенесите сюда черту в качестве выбора вместо повышения характеристики."
 			},
 			"FIELDS": {
@@ -256,7 +258,9 @@
 				},
 				"locked": {
 					"label": "Заблокировано",
-					"hint": "Характеристику нельзя повысить."
+					"hint": "Характеристику нельзя повысить.",
+					"locked": "Характеристику нельзя повысить.",
+					"unlocked": "Характеристику можно повысить."
 				},
 				"fixed": {
 					"label": "Предопределённое повышение",
@@ -268,6 +272,11 @@
 					"decrease": "Понижение пунктов",
 					"increase": "Повышение пунктов"
 				}
+			},
+			"Journal": {
+				"DescriptionLegacy": "<p>При достижении {firstLevelOrdinal}-го уровня, и затем на {otherLevelsOrdinal}-м уровне, вы можете повысить либо две характеристики на 1 каждую, либо одну на 2. Таким образом нельзя повысить характеристику выше {maxAbilityScore}.</p><p>Если вы используете необязательные правила для черт, вы можете вместо повышения характеристик выбрать одну черту.</p>",
+				"DescriptionModern": "<p>Вы можете повысить характеристики или выбрать черту, требованиям которой соответствуете. Вы можете сделать это снова на уровне {otherLevels} класса {class}.</p>",
+				"Name": "Повышение характеристик"
 			},
 			"LockedHint": "Нельзя изменять характеристики с выбранной чертой.",
 			"PointsRemaining": {
@@ -405,6 +414,82 @@
 				"ModifyChoices": "Изменить выбор"
 			}
 		},
+		"ScaleValue": {
+			"Details": "Подробности эскалации",
+			"FIELDS": {
+				"distance": {
+					"units": {
+						"label": "Единицы дистанции"
+					}
+				},
+				"identifier": {
+					"label": "Идентификатор"
+				},
+				"scale": {
+					"label": "Эскалация"
+				},
+				"type": {
+					"label": "Тип эскалации"
+				}
+			},
+			"Hint": "Значение, которое будет изменятся при повышении уровня класса и которое будет доступно в формулах бросков (например кости боевых искусств монаха).",
+			"Title": "Значение эскалации",
+			"Type": {
+				"CR": {
+					"FIELDS": {
+						"value": {
+							"label": "КО"
+						}
+					},
+					"Hint": "Используется для указания класса опасности особенностей, вроде Дикой формы",
+					"Label": "Класс опасности"
+				},
+				"Dice": {
+					"FIELDS": {
+						"faces": {
+							"label": "Грани"
+						},
+						"number": {
+							"label": "Число"
+						}
+					},
+					"Hint": "Значение, представленное костью, вроде вдохновения барда или скрытой атаки.",
+					"Identifier": "Значение эскалации для текущего уровня будет доступно в формулах в виде <br><copyable-text>@scale.{class}.{identifier}</copyable-text> - полная формула (<code>4d6</code>)<br><copyable-text>@scale.{class}.{identifier}.die</copyable-text> - полная кость (<code>d6</code>)<br><copyable-text>@scale.{class}.{identifier}.number</copyable-text> - число костей (<code>4</code>)<br><copyable-text>@scale.{class}.{identifier}.faces</copyable-text> - число сторон (<code>6</code>)",
+					"Label": "Кость"
+				},
+				"Distance": {
+					"Hint": "Используйте это для числовых значений, обозначающих дистанцию, вроде скорости перемещения без доспеха или радиуса ауры защиты.",
+					"Label": "Дистанция"
+				},
+				"Number": {
+					"Hint": "Используйте это для простых чисел, вроде бонуса урона ярости или количества использований в день.",
+					"Label": "Числовой"
+				},
+				"String": {
+					"FIELDS": {
+						"value": {
+							"label": "Значение"
+						}
+					},
+					"Hint": "Используйте это, если не уверены в типе эскалации или если тип не важен.",
+					"Identifier": "Значение эскалации для текущего уровня будет доступно в формулах в виде <br><copyable-text>@scale.{class}.{identifier}</copyable-text>",
+					"Label": "Любой"
+				}
+			}
+		},
+		"Size": {
+			"DefaultHint": {
+				"Multiple": "Выберите размер персонажа из {sizes}.",
+				"Single": "Ваш размер {size}."
+			},
+			"FIELDS": {
+				"sizes": {
+					"label": "Размеры"
+				}
+			},
+			"Hint": "Размер персонажа.",
+			"Title": "Размер"
+		},
 		"SPELLCONFIG": {
 			"FIELDS": {
 				"spell": {
@@ -437,10 +522,68 @@
 			"Warning": {
 				"InvalidType": "Можно выбрать только подклассы."
 			}
+		},
+		"Trait": {
+			"Action": {
+				"AddChoice": "Добавить выбор",
+				"RemoveChoice": "Удалить выбор"
+			},
+			"ChoicesRemaining": "Выберите ещё {count} {type}",
+			"Details": "Подробности особенности",
+			"FIELDS": {
+				"allowReplacements": {
+					"hint": "Если у персонажа уже есть эта особенность, то он сможет выбрать любую другую особенность.",
+					"label": "Разрешить замену"
+				},
+				"choices": {
+					"hint": "Эти особенности будут доступны на выбор.",
+					"label": "Выборы",
+					"FIELDS": {
+						"count": {
+							"label": "Число"
+						},
+						"pool": {
+							"label": "Особенности"
+						}
+					}
+				},
+				"grants": {
+					"hint": "Персонаж получит эти особенности, если у него их ещё нет.",
+					"label": "Гарантировано"
+				},
+				"mode": {
+					"label": "Режим"
+				}
+			},
+			"Hint": "Позволяет персонажу выбрать особенности, умения, навыки или языки.",
+			"Mode": {
+				"Default": {
+					"Hint": "Получить особенность или умение.",
+					"Label": "По умолчанию"
+				},
+				"Expertise": {
+					"Hint": "Получить мастерство в навыке у которого уже есть умение.",
+					"Label": "Мастерство"
+				},
+				"Force": {
+					"Hint": "Получить мастерство, даже если у персонажа нет умения.",
+					"Label": "Принудительное мастерство"
+				},
+				"Mastery": {
+					"Hint": "Получить искусное владение оружием, в котором уже есть умение.",
+					"Label": "Искусное владение"
+				},
+				"Upgrade": {
+					"Hint": "Получить мастерство или умение, если у персонажа его ещё нет.",
+					"Label": "Улучшение"
+				}
+			},
+			"TraitType": "Тип особенности",
+			"Title": "Особенности"
 		}
 	},
 
-	"DND5E.AdvancementChoices": "выбор",
+	"DND5E.AdvancementChoices": "выборы",
 	"DND5E.AdvancementClassRestriction": "Ограничение класса",
 	"DND5E.AdvancementClassRestrictionNone": "Все классы",
 	"DND5E.AdvancementClassRestrictionPrimary": "Только оригинальный класс",
@@ -477,52 +620,9 @@
 	"DND5E.AdvancementMigrationTitle": "Миграция развития",
 	"DND5E.AdvancementModifyChoices": "Изменить выбор",
 	"DND5E.AdvancementSaveButton": "Сохранение развития",
-	"DND5E.AdvancementScaleValueTitle": "Значение эскалации",
-	"DND5E.AdvancementScaleValueHint": "Значение, которое будет изменятся при повышении уровня класса и которое будет доступно в формулах бросков (например кости боевых искусств монаха).",
-	"DND5E.AdvancementScaleValueIdentifierHint": "Значение эскалации для текущего уровня будет доступно в формулах в виде <br><copyable-text>@scale.{class}.{identifier}</copyable-text>",
-	"DND5E.AdvancementScaleValueIdentifierDiceHint": "Значение эскалации для текущего уровня будет доступно в формулах в виде <br><copyable-text>@scale.{class}.{identifier}</copyable-text> - полная формула (<code>4d6</code>)<br><copyable-text>@scale.{class}.{identifier}.die</copyable-text> - полная кость (<code>d6</code>)<br><copyable-text>@scale.{class}.{identifier}.number</copyable-text> - число костей (<code>4</code>)<br><copyable-text>@scale.{class}.{identifier}.faces</copyable-text> - число сторон (<code>6</code>)",
-	"DND5E.AdvancementScaleValueTypeCR": "Класс опасности",
-	"DND5E.AdvancementScaleValueTypeDice": "Кость",
-	"DND5E.AdvancementScaleValueTypeDistance": "Дистанция",
-	"DND5E.AdvancementScaleValueTypeHintCR": "Используется для указания класса опасности особенностей, вроде Дикой формы.",
-	"DND5E.AdvancementScaleValueTypeHintDice": "Используйте это для значений в виде кости, вроде вдохновения барда или скрытой атаки.",
-	"DND5E.AdvancementScaleValueTypeHintDistance": "Используйте это для числовых значений, обозначающих дистанцию, вроде скорости перемещения без доспеха или радиуса ауры защиты.",
-	"DND5E.AdvancementScaleValueTypeHintNumber": "Используйте это для простых чисел, вроде бонуса урона ярости или количества использований в день.",
-	"DND5E.AdvancementScaleValueTypeHintString": "Используйте это, если не уверены в типе эскалации значения или если тип не важен.",
-	"DND5E.AdvancementScaleValueTypeLabel": "Тип эскалации",
-	"DND5E.AdvancementScaleValueTypeNumber": "Число",
-	"DND5E.AdvancementScaleValueTypeString": "Любой",
 	"DND5E.AdvancementSelectionCreateButton": "Создание развития",
 	"DND5E.AdvancementSelectionTitle": "Выбор типа развития",
-	"DND5E.AdvancementSizeTitle": "Размер",
-	"DND5E.AdvancementSizeHint": "Размер персонажа.",
-	"DND5E.AdvancementSizeFlowHintSingle": "Ваш размер {size}.",
-	"DND5E.AdvancementSizeflowHintMultiple": "Выберите размер персонажа из {sizes}.",
 	"DND5E.AdvancementTitle": "Развитие",
-	"DND5E.AdvancementTraitTitle": "Свойства",
-	"DND5E.AdvancementTraitHint": "Позволяет персонажу выбрать особые свойства (вроде умений, навыков и языков).",
-	"DND5E.AdvancementTraitActionAddChoice": "Добавить выбор",
-	"DND5E.AdvancementTraitActionRemoveChoice": "Удалить выбор",
-	"DND5E.AdvancementTraitAllowReplacements": "Разрешить замену",
-	"DND5E.AdvancementTraitAllowReplacementsHint": "Если у персонажа уже есть это свойство, то он сможет выбрать любое другое свойство.",
-	"DND5E.AdvancementTraitChoices": "Выборы",
-	"DND5E.AdvancementTraitChoicesHint": "Эти свойства будут доступны на выбор.",
-	"DND5E.AdvancementTraitChoicesRemaining": "Выберите ещё {count} {type}",
-	"DND5E.AdvancementTraitCount": "Число",
-	"DND5E.AdvancementTraitGrants": "Гарантировано",
-	"DND5E.AdvancementTraitGrantsHint": "Эти свойства будут даны персонажу, если он их ещё не имеет.",
-	"DND5E.AdvancementTraitMode": "Режим",
-	"DND5E.AdvancementTraitModeDefaultLabel": "По умолчанию",
-	"DND5E.AdvancementTraitModeDefaultHint": "Дать свойство или умение.",
-	"DND5E.AdvancementTraitModeExpertiseLabel": "Мастерство",
-	"DND5E.AdvancementTraitModeExpertiseHint": "Получить мастерство в свойстве у которого уже есть умение.",
-	"DND5E.AdvancementTraitModeForceLabel": "Принудительное мастерство",
-	"DND5E.AdvancementTraitModeForceHint": "Получить мастерство в свойстве даже, если у персонажа нет умения.",
-	"DND5E.AdvancementTraitModeMasteryLabel": "Искусное владение",
-	"DND5E.AdvancementTraitModeMasteryHint": "Получить искусное владение оружием, в котором уже есть умение.",
-	"DND5E.AdvancementTraitModeUpgradeLabel": "Улучшение",
-	"DND5E.AdvancementTraitModeUpgradeHint": "Получить умение или мастерство в свойстве.",
-	"DND5E.AdvancementTraitType": "Тип свойства",
 	"DND5E.Advantage": "Преимущество",
 	"DND5E.AdvantageMode": "Режим преимущества",
 	"DND5E.Age": "Возраст",
@@ -2067,6 +2167,10 @@
 
 	"DND5E.FEATURE": {
 		"FIELDS": {
+			"cover": {
+				"label": "Укрытие",
+				"hint": "Укрытие, предоставляемое экипажу этой особеностью транспорта."
+			},
 			"properties": {
 				"label": "Свойства особенности"
 			},
@@ -2115,6 +2219,9 @@
 			"Blessing": "Благословение",
 			"Charm": "Чары",
 			"EpicBoon": "Эпический дар"
+		},
+		"Vehicle": {
+			"Label": "Особенность транспорта"
 		}
 	},
 	"DND5E.Focus": {
@@ -2361,7 +2468,6 @@
 	"DND5E.HitPointsTempMaxHint": "Временно изменяет максимальные ПЗ.",
 	"DND5E.HitPointsTempMaxShort": "Врем. макс. ПЗ",
 	"DND5E.HP": "ПЗ",
-	"DND5E.HealthConditions": "Состояние здоровья",
 	"DND5E.HPFormula": "Формула здоровья",
 	"DND5E.HPFormulaError": "Введённая формула пунктов здоровья не может быть рассчитана.",
 	"DND5E.HPFormulaRollMessage": "Формула броска пунктов здоровья",
@@ -2651,7 +2757,7 @@
 			"BonusActions": "Бонусные действия",
 			"LegendaryActions": "Легендарные действия",
 			"Reactions": "Ответные действия",
-			"Traits": "Свойства"
+			"Traits": "Особенности"
 		},
 		"Important": {
 			"Hint": "Важные персонажи Мастера имеют кости здоровья, проходят испытания против смерти, и имеют показатель лояльности (если включено). Любые ПМ с классами считаются важными не зависимо от этой настройки.",
@@ -2673,6 +2779,14 @@
 
 	"DND5E.Number": "Число",
 	"DND5E.OtherFormula": "Альтернативная формула",
+
+	"DND5E.ORDINAL": {
+		"one": "{number}",
+		"two": "{number}",
+		"few": "{number}",
+		"other": "{number}"
+	},
+
 	"DND5E.PactMagic": "Магия договора",
 	"DND5E.Passive": "Пассивная",
 	"DND5E.PassivePerception": "Пассивная Внимательность",
@@ -3132,7 +3246,6 @@
 		"Name": "Название вида"
 	},
 	"DND5E.Speed": "Скорость",
-	"DND5E.SpeedConditions": "Особенности скорости",
 	"DND5E.SpeedSpecial": "Особое движение",
 	"DND5E.SpellAbility": "Закл. хар-ка",
 	"DND5E.SpellAbilitySet": "Сделать основной закл. хар-кой",
@@ -3745,8 +3858,8 @@
 	"DND5E.TraitDRPlural.other": "Устойчивости к урону",
 	"DND5E.TraitDVPlural.one": "Уязвимость к урону",
 	"DND5E.TraitDVPlural.other": "Уязвимости к урону",
-	"DND5E.TraitGenericPlural.one": "Свойство",
-	"DND5E.TraitGenericPlural.other": "Свойства",
+	"DND5E.TraitGenericPlural.one": "Особенность",
+	"DND5E.TraitGenericPlural.other": "Особенности",
 	"DND5E.TraitLanguagesPlural.one": "Язык",
 	"DND5E.TraitLanguagesPlural.other": "Языки",
 	"DND5E.TraitSave": "Обновить",
@@ -3761,8 +3874,8 @@
 	"DND5E.TraitWeaponPlural.one": "Умение в оружии",
 	"DND5E.TraitWeaponPlural.other": "Умения в оружии",
 	"DND5E.TraitWeaponProf": "Умения в оружии",
-	"DND5E.Traits": "Свойства",
-	"DND5E.TraitsChosen": "Выбранные свойства",
+	"DND5E.Traits": "Особенности",
+	"DND5E.TraitsChosen": "Выбранные особенности",
 	"DND5E.Treasure": {
 		"Categories": {
 			"Any": "Любое",
@@ -3790,7 +3903,7 @@
 
 	"DND5E.UNITS": {
 		"DISTANCE": {
-			"Label": "Единицы расстояния",
+			"Label": "Единицы дистанции",
 			"Foot": {
 				"Label": "Футы",
 				"Abbreviation": "фт"
@@ -4032,6 +4145,44 @@
 	},
 
 	"DND5E.Value": "Значение",
+
+	"DND5E.VEHICLE": {
+		"MOUNTABLE": {
+			"FIELDS": {
+				"cover": {
+					"label": "Укрытие",
+					"hint": "Укрытие, предоставляемое экипажу, управляющему транспортом."
+				},
+				"crewed": {
+					"label": "С экипажем"
+				},
+				"hp": {
+					"label": "Пункты здоровья",
+					"conditions": {
+						"label": "Состояние здоровья"
+					},
+					"dt": {
+						"label": "Предел прочности"
+					},
+					"max": {
+						"label": "Макс. ПЗ"
+					},
+					"value": {
+						"label": "Текущие ПЗ"
+					}
+				},
+				"speed": {
+					"conditions": {
+						"label": "Особенности скорости"
+					},
+					"value": {
+						"label": "Скорость"
+					}
+				}
+			}
+		}
+	},
+
 	"DND5E.Vehicle": "Транспорт",
 	"DND5E.VehicleActions": "Действия",
 	"DND5E.VehicleActionsHint": "Действия с полным составом экипажа",
@@ -4075,6 +4226,11 @@
 			"ammunition": {
 				"type": {
 					"label": "Тип боеприпасов"
+				}
+			},
+			"armor": {
+				"value": {
+					"label": "Класс брони"
 				}
 			},
 			"damage": {
@@ -4254,7 +4410,7 @@
 			"TableCaption": "Особенности {class}",
 			"TableOptionalCaption": "Варианты особенностей для {class}",
 			"Traits": {
-				"Caption": "Ключевые атрибуты {class}",
+				"Caption": "Ключевые особенности {class}",
 				"Header": "Умения"
 			}
 		},
@@ -4340,7 +4496,7 @@
 		"Normal": "Обычное: Максимальная грузоподъёмность",
 		"Variant": "Вариант: Нагрузка"
 	},
-	"SETTINGS.5eFeatsL": "Разрешить выбирать черту вместо повышения характеристики при повышении уровня класса.",
+	"SETTINGS.5eFeatsL": "Разрешить выбрать черту вместо повышения характеристик при повышении уровня класса, используя оригинальные правила (2014).",
 	"SETTINGS.5eFeatsN": "Использовать черты",
 	"SETTINGS.5eHonorL": "Включение опциональных правил Чести. Требуется перезагрузка мира.",
 	"SETTINGS.5eHonorN": "Характеристика Чести",
