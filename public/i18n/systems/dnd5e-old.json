@@ -357,10 +357,10 @@
 	"DND5E.AdvancementMigrationTitle": "Миграция развития",
 	"DND5E.AdvancementModifyChoices": "Изменить выбор",
 	"DND5E.AdvancementSaveButton": "Сохранение развития",
-	"DND5E.AdvancementScaleValueTitle": "Показатель повышения",
+	"DND5E.AdvancementScaleValueTitle": "Показатель подъёма",
 	"DND5E.AdvancementScaleValueHint": "Значение, которое будет изменятся при повышении уровня класса и которое будет доступно в формулах бросков (например кости боевых искусств монаха).",
-	"DND5E.AdvancementScaleValueIdentifierHint": "Это значение повышения для текущего уровня будет доступно в формулах в виде <br><copyable-text>@scale.{class}.{identifier}</copyable-text>",
-	"DND5E.AdvancementScaleValueIdentifierDiceHint": "Это значение повышения для текущего уровня будет доступно в формулах в виде <br><copyable-text>@scale.{class}.{identifier}</copyable-text> - полная формула (<code>4d6</code>)<br><copyable-text>@scale.{class}.{identifier}.die</copyable-text> - полная кость (<code>d6</code>)<br><copyable-text>@scale.{class}.{identifier}.number</copyable-text> - число костей (<code>4</code>)<br><copyable-text>@scale.{class}.{identifier}.faces</copyable-text> - число сторон (<code>6</code>)",
+	"DND5E.AdvancementScaleValueIdentifierHint": "Это значение подъёма для текущего уровня будет доступно в формулах в виде <br><copyable-text>@scale.{class}.{identifier}</copyable-text>",
+	"DND5E.AdvancementScaleValueIdentifierDiceHint": "Это значение подъёма для текущего уровня будет доступно в формулах в виде <br><copyable-text>@scale.{class}.{identifier}</copyable-text> - полная формула (<code>4d6</code>)<br><copyable-text>@scale.{class}.{identifier}.die</copyable-text> - полная кость (<code>d6</code>)<br><copyable-text>@scale.{class}.{identifier}.number</copyable-text> - число костей (<code>4</code>)<br><copyable-text>@scale.{class}.{identifier}.faces</copyable-text> - число сторон (<code>6</code>)",
 	"DND5E.AdvancementScaleValueTypeCR": "Класс опасности",
 	"DND5E.AdvancementScaleValueTypeDice": "Кость",
 	"DND5E.AdvancementScaleValueTypeDistance": "Дистанция",
@@ -369,7 +369,7 @@
 	"DND5E.AdvancementScaleValueTypeHintDistance": "Используйте это для числовых значений, обозначающих дистанцию, вроде скорости перемещения без доспеха или радиуса ауры защиты.",
 	"DND5E.AdvancementScaleValueTypeHintNumber": "Используйте это для простых чисел, вроде бонуса урона ярости или количества использований в день.",
 	"DND5E.AdvancementScaleValueTypeHintString": "Используйте это, если не уверены в типе повышения значения или если тип не важен.",
-	"DND5E.AdvancementScaleValueTypeLabel": "Тип повышения",
+	"DND5E.AdvancementScaleValueTypeLabel": "Тип подъёма",
 	"DND5E.AdvancementScaleValueTypeNumber": "Число",
 	"DND5E.AdvancementScaleValueTypeString": "Любой",
 	"DND5E.AdvancementSelectionCreateButton": "Создание развития",
@@ -927,7 +927,7 @@
 	"DND5E.ConsumeCharges": "Использования предмета",
 	"DND5E.ConsumeResource": "Использовать ресурс?",
 	"DND5E.ConsumeRecharge": "Использовать перезарядку?",
-	"DND5E.ConsumeScaling": "Повышение ресурса",
+	"DND5E.ConsumeScaling": "Подъём ресурса",
 	"DND5E.ConsumeScalingLabel": "Использует ресурсы",
 	"DND5E.ConsumeScalingTooltip": "Расход дополнительных ресурсов позволяет сотворить заклинание более высокого круга.",
 
@@ -1004,15 +1004,15 @@
 			"consumption": {
 				"label": "Расход",
 				"scaling": {
-					"abbr": "Повышение",
+					"abbr": "Подъём",
 					"label": "Повышение расхода",
 					"allowed": {
-						"label": "Разрешить повышение",
+						"label": "Разрешить подъём",
 						"hint": "Может ли функция не на заклинании быть активирована на высоких кругах?"
 					},
 					"max": {
-						"label": "Макс. повышение",
-						"hint": "Максимальное число уровней повышения для этого предмета, включая начальный уровень."
+						"label": "Макс. подъём",
+						"hint": "Максимальное число уровней подъёма для этого предмета, включая начальный уровень."
 					}
 				},
 				"spellSlot": {
@@ -1036,14 +1036,14 @@
 							"hint": "Введите отрицательное значение, для восстановления вместо расходования."
 						},
 						"scaling": {
-							"label": "Повышение расхода",
+							"label": "Подъём расхода",
 							"mode": {
-								"label": "Режим повышения",
+								"label": "Режим подъёма",
 								"hint": "Как будет повышаться расход."
 							},
 							"formula": {
-								"label": "Формула повышения",
-								"hint": "Особое повышение расхода за круг/уровень."
+								"label": "Формула подъёма",
+								"hint": "Особый подъём расхода за круг/уровень."
 							}
 						}
 					}
@@ -1059,7 +1059,7 @@
 		"Scaling": {
 			"Amount": "Число",
 			"Automatic": "Автоматически",
-			"None": "Без повышения",
+			"None": "Без подъёма",
 			"SlotLevel": "Круг ячейки"
 		},
 		"Target": {
@@ -1261,21 +1261,21 @@
 							"hint": "Число костей для броска."
 						},
 						"scaling": {
-							"label": "Повышение урона",
-							"abbr": "Повышение",
+							"label": "Подъём урона",
+							"abbr": "Подъём",
 							"mode": {
-								"label": "Режим повышения",
+								"label": "Режим подъёма",
 								"abbr": "Режим",
-								"hint": "Метод расчёта повышения."
+								"hint": "Метод расчёта подъёма."
 							},
 							"number": {
 								"label": "Повышение кости",
 								"abbr": "Кость",
-								"hint": "Число костей, добавляемых на каждом уровне повышения. Будет добавлено к первой кости в формуле урона."
+								"hint": "Число костей, добавляемых на каждом уровне подъёма. Будет добавлено к первой кости в формуле урона."
 							},
 							"formula": {
-								"label": "Формула повышения",
-								"hint": "Произвольная формула повышения, которая будет умножаться для каждого шага повышения и добавляться к исходной формуле."
+								"label": "Формула подъёма",
+								"hint": "Произвольная формула подъёма, которая будет умножаться для каждого шага подъёма и добавляться к исходной формуле."
 							}
 						},
 						"types": {
@@ -1294,7 +1294,7 @@
 		},
 		"Scaling": {
 			"Half": "Каждый второй круг",
-			"None": "Без повышения",
+			"None": "Без подъёма",
 			"Whole": "Каждый круг"
 		}
 	},
@@ -2096,18 +2096,18 @@
 					"hint": "Число костей для броска."
 				},
 				"scaling": {
-					"label": "Повышение исцеления",
+					"label": "Подъём исцеления",
 					"mode": {
-						"label": "Режим повышения",
-						"hint": "Метод расчёта повышения."
+						"label": "Режим подъёма",
+						"hint": "Метод расчёта подъёма."
 					},
 					"number": {
-						"label": "Повышение кости",
-						"hint": "Число костей, добавляемых на каждом уровне повышения. Будет добавлено к первой кости в формуле исцеления."
+						"label": "Подъём кости",
+						"hint": "Число костей, добавляемых на каждом уровне подъёма. Будет добавлено к первой кости в формуле исцеления."
 					},
 					"formula": {
-						"label": "Формула повышения",
-						"hint": "Произвольная формула повышения, которая будет умножаться для каждого шага повышения и добавляться к исходной формуле."
+						"label": "Формула подъёма",
+						"hint": "Произвольная формула подъёма, которая будет умножаться для каждого шага подъёма и добавляться к исходной формуле."
 					}
 				},
 				"types": {
@@ -2351,7 +2351,7 @@
 		"Min": "Минимальный уровень"
 	},
 	"DND5E.LevelNumber": "Уровень {level}",
-	"DND5E.LevelScaling": "Повышение круга",
+	"DND5E.LevelScaling": "Подъём круга",
 	"DND5E.LimitedUses": "Ограниченные использования",
 	"DND5E.LimitedUsesAvailable": "Остаток использований",
 	"DND5E.LimitedUsesMax": "Максимум использований",
@@ -2678,9 +2678,9 @@
 	"DND5E.SavingThrowRoll": "Испытание {ability}",
 	"DND5E.SaveDC": "СЛ {dc} - {ability}",
 	"DND5E.SavePromptTitle": "Испытание {ability}",
-	"DND5E.ScalingFormula": "Формула повышения",
-	"DND5E.ScalingMode": "Режим повышения",
-	"DND5E.ScalingValue": "Значение повышения",
+	"DND5E.ScalingFormula": "Формула подъёма",
+	"DND5E.ScalingMode": "Режим подъёма",
+	"DND5E.ScalingValue": "Значение подъёма",
 	"DND5E.School": "Школа",
 	"DND5E.SchoolAbj": "Преграждение",
 	"DND5E.SchoolCon": "Воплощение",
@@ -3230,7 +3230,7 @@
 		},
 		"Enabled": "Использовать динамические рамки",
 		"RingColor": "Цвет рамки",
-		"ScaleCorrection": "Корректировка повышения",
+		"ScaleCorrection": "Корректировка подъёма",
 		"Subject": {
 			"Label": "Путь к источнику",
 			"Hint": "Укажите путь к изображению, размещенному над динамическим кольцом токенов. Если путь не указан, будет использовано стандартное."
@@ -3323,7 +3323,7 @@
 		"SECTION": {
 			"Consumption": "Расход",
 			"Creation": "Создание",
-			"Scaling": "Повышение"
+			"Scaling": "Подъём"
 		}
 	},
 
