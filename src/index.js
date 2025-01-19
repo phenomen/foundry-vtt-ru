@@ -1,6 +1,6 @@
 const scripts = import.meta.glob("./systems/*.js");
 
-Hooks.once("init", async () => {
+Hooks.once("init", () => {
 	const system = game.system.id.toLowerCase();
 	const route = foundry.utils.getRoute("/");
 
@@ -63,6 +63,8 @@ Hooks.once("init", async () => {
 	/* Пол прилагательных по умолчанию */
 	CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
 
+	loadNextTranslations();
+
 	/* Системные скрипты */
 	for (const path in scripts) {
 		scripts[path]().then((mod) => {
@@ -71,8 +73,6 @@ Hooks.once("init", async () => {
 			}
 		});
 	}
-
-	loadNextTranslations();
 });
 
 /* Выбор пола для случайных прилагательных */
