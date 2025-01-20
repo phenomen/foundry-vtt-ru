@@ -3,227 +3,289 @@
 	"mapping": {
 		"description": "system.description",
 		"trapping": "system.trapping",
-		"category": {
+		"rank": {
 			"path": "system.rank",
 			"converter": "convertRank"
+		},
+		"range": {
+			"path": "system.range",
+			"converter": "convertRange"
+		},
+		"duration": {
+			"path": "system.duration",
+			"converter": "convertDuration"
 		}
 	},
 	"entries": {
 		"Arcane Protection": {
 			"name": "Защита от сверхъестественного",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "концентрация, слабое свечение вокруг защищённого персонажа, амулет",
+			"description": "<p>Вражеские колдуны получают штраф −2 (−4 при подъёме), если их целью становится защищённый персонаж. Урон снижается аналогично.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Banish": {
 			"name": "Изгнание",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "сакральные предметы, магические символы, горсть соли",
+			"description": "<p>Требует встречной проверки против характера цели, чтобы изгнать её.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Barrier": {
 			"name": "Стена",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "огонь, лёд, шипы, силовое поле, кости, энергия",
+			"description": "<p>Создаёт преграду длиной 5 дюймов (10 ярдов), высотой в 1 дюйм (2 ярда) и прочностью 10.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Beast Friend": {
 			"name": "Друг зверей",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "концентрация и жесты",
+			"description": "<p>Позволяет управлять животными.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Blast": {
 			"name": "Взрыв",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "огненные, ледяные, светящиеся или тёмные шары, цветные стрелы, рои насекомых",
+			"description": "<p>2d6 урона в среднем шаблоне.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Blind": {
 			"name": "Ослепление",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "яркая вспышка света, песок в глаза, смятение",
+			"description": "<p>Налагает штраф −2/−4 на проверки, связанные со зрением.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Bolt": {
 			"name": "Стрела",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "огненные, ледяные, световые, цветные стрелы, стрелы из тьмы, потоки насекомых",
+			"description": "<p>Позволяет провести дистанционную атаку, наносящую 2d6 урона (3d6 при подъёме).</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Boost/Lower Trait": {
 			"name": "Усилить/ослабить параметр",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "физические изменения, светящаяся аура, зелья",
+			"description": "<p>Увеличивает или уменьшает значение выбранного навыка или характеристики.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Burrow": {
 			"name": "Подземный ход",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "персонаж скрывается под землёй и появляется в другом месте",
+			"description": "<p>Позволяет перемещаться под землёй.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Burst": {
 			"name": "Поток",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "поток огня, света, иной материи или энергии",
+			"description": "<p>Наносит 2d6 урона в конусном шаблоне.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Confusion": {
 			"name": "Смятение",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "гипнотический узор из огней, кратковременные иллюзии, громкие звуки",
+			"description": "<p>Делает цель отвлечённой и уязвимой.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Damage Field": {
 			"name": "Разрушительное поле",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "огненная аура, шипы, электрическое поле",
+			"description": "<p>Создаёт вокруг цели ауру, наносящую 2d4 урона.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Darksight": {
 			"name": "Ночное зрение",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "светящиеся глаза, кошачьи зрачки, эхолокация",
+			"description": "<p>Позволяет цели игнорировать до 4 пунктов штрафа за темноту и до 6 при успехе с подъёмом.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Deflection": {
 			"name": "Щит",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "волшебный щит, порыв ветра, призрачный защитник",
+			"description": "<p>Налагает штраф −2 на атаки дальнего или ближнего боя по цели. При подъёме — и на те, и на другие.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Detect/Conceal Arcana": {
 			"name": "Увидеть/скрыть сверхъестественное",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "пассы руками, шёпот",
+			"description": "<p>Позволяет замечать магию в течение 5 раундов либо прячет её на час.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Disguise": {
 			"name": "Маска",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": " размытые черты, иллюзорный облик, смена причёски",
+			"description": "<p>Придаёт цели чужой облик.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Dispel": {
 			"name": "Рассеивание",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "пассы руками, шёпот",
+			"description": "<p>Отменяет действие магии.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Divination": {
 			"name": "Прорицание",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "молитвы, эзотерические сеансы, общение с демонами",
+			"description": "<p>Позволяет задавать вопросы потусторонним сущностям.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Drain Power Points": {
 			"name": "Иссушение",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "молитва, шёпот, жесты",
+			"description": "<p>Уничтожает d6 ПС цели при успешной встречной проверке колдовских навыков.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Elemental Manipulation": {
 			"name": "Управление стихиями",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "несколько простых жестов",
+			"description": "<p>Позволяет совершать простые манипуляции с основными стихиями.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Empathy": {
 			"name": "Эмпатия",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "концентрация, тёплая улыбка, обмен любезностями",
+			"description": "<p>При успешной проверке против характера цели даёт модификатор +1 (+2 при подъёме) на проверки социальных навыков.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Entangle": {
 			"name": "Путы",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "клеевая бомба, лианы, наручники, паутина",
+			"description": "<p>Схватывают и обездвиживают противников.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Environmental Protection": {
 			"name": "Защита от окружающей среды",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "метка на лбу, зелья, жабры",
+			"description": "<p>Защищает цель от опасной среды.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Farsight": {
 			"name": "Зоркость",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "иллюзорные указатели, направляющий ветер, орлиные глаза",
+			"description": "<p>Позволяет видеть мелкие детали на больших расстояниях, при подъёме вполовину уменьшает штрафы за дистанцию.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Fear": {
 			"name": "Ужас",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "жесты, зловещее мерцание, леденящий холод",
+			"description": "<p>Заставляет цель пройти проверку храбрости.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Fly": {
 			"name": "Полёт",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "порывистый ветер, крылья, мётлы",
+			"description": "<p>Позволяет цели летать с шагом 12.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Growth/Shrink": {
 			"name": "Увеличение/уменьшение",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "жесты, слова силы, зелья",
+			"description": "<p>Увеличивает или уменьшает размер цели.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Havoc": {
 			"name": "Смерч",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "вихрь, рой призраков, отталкивающее поле",
+			"description": "<p>Цели в среднем или конусном шаблоне отвлечены и могут быть отброшены.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Healing": {
 			"name": "Исцеление",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "возложение рук, прикосновение священного символа, молитва",
+			"description": "<p>Избавляет от ранений, полученных менее часа назад.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Illusion": {
 			"name": "Иллюзия",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "магические чары, голограммы, эфирные материализаторы",
+			"description": "<p>Создаёт иллюзии.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Intangibility": {
 			"name": "Неосязаемость",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "призрачная форма, тело из теней, газообразность",
+			"description": "<p>Делает цель нематериальной.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Invisibility": {
 			"name": "Невидимость",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "порошок, зелье, радужные огоньки",
+			"description": "<p>Делает цель невидимой (−4/−6 на воздействия на неё).</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Light / Darkness": {
 			"name": "Свет/тьма",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "иллюзорный факел, солнечный свет, тьма, густой туман",
+			"description": "<p>Создаёт или убирает освещение.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Mind Link": {
 			"name": "Ментальная связь",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "гарнитура, талисманы Дао, кристаллы",
+			"description": "<p>Позволяет общаться мыслями в пределах 1,5 км (8 км при подъёме).</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Mind Reading": {
 			"name": "Чтение мыслей",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "псионическое вторжение, чтение души",
+			"description": "<p>При успешной проверке против смекалки цели позволяет читать её мысли.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Mind Wipe": {
 			"name": "Стирание памяти",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "ядовитое зелье, паразиты, прикосновение к вискам жертвы",
+			"description": "<p>Убирает или изменяет воспоминания.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Object Reading": {
 			"name": "Психометрия",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "прикосновение к предмету, мерцающие руки",
+			"description": "<p>Позволяет видеть сцены прошлого при контакте с предметом.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Protection": {
 			"name": "Доспех",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "загадочное сияние, отвердевшая кожа, эфирные доспехи, множество нанитов",
+			"description": "<p>Добавляет броню 2 к броне при успехе или 2 к стойкости при успехе с подъёмом.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Puppet": {
 			"name": "Марионетка",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "светящиеся глаза, транс, качающиеся карманные часы, куклы вуду",
+			"description": "<p>Требует встречной проверки против характера цели, позволяет управлять ей.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Relief": {
 			"name": "Поддержка",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "молитва, эликсиры",
+			"description": "<p>Снимает отдельные состояния или помогает игнорировать эффекты ранений и усталости.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Resurrection": {
 			"name": "Воскрешение",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "торжественная церемония, редкие растения, волшебные амулеты, божественное вмешательство",
+			"description": "<p>Возвращает мёртвых к жизни.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Shape Change": {
 			"name": "Превращение",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "трансформация, талисманы, татуировки",
+			"description": "<p>Позволяет колдующему превращаться в различных существ.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Sloth/Speed": {
 			"name": "Замедление/ускорение",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "замедление времени, смазанное движение, скользкое пятно масла или льда",
+			"description": "<p>Увеличивает или уменьшает скорость передвижения и координацию.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Slumber": {
 			"name": "Сон",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "колыбельная, посыпание сонным порошком",
+			"description": "<p>Усыпляет цель.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Smite": {
 			"name": "Сокрушение",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "цветное свечение, руны, символы, треск энергии, вырастающие из клинка шипы",
+			"description": "<p>Увеличивает урон оружия цели на +2/+4.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Sound/Silence": {
 			"name": "Звук/тишина",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "вибрация воздуха, звенящий или замолкающий колокольчик",
+			"description": "<p>Создаёт или заглушает звук.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Speak Language": {
 			"name": "Владение языком",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "слова, картинки, жесты",
+			"description": "<p>Позволяет разговаривать на незнакомых языках и понимать их.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Stun": {
 			"name": "Оглушение",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "стрелы энергии, оглушающие гранаты, гром, вспышка света",
+			"description": "<p>Оглушает цель.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Summon Ally": {
 			"name": "Призыв союзника",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "вырастающая в бойца глиняная фигурка, оживающая татуировка",
+			"description": "<p>Призывает верного и бесстрашного союзника.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Telekinesis": {
 			"name": "Телекинез",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "взмах руки, мановение магического жезла, пристальный взгляд",
+			"description": "<p>Перемещает предметы, используя силу d10 (d12 при подъёме).</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Teleport": {
 			"name": "Телепортация",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "облако дыма, «растворение» в воздухе, превращение в стрелу или молнию",
+			"description": "<p>Телепортирует цель на расстояние до 12 дюймов (до 24 при подъёме).</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Wall Walker": {
 			"name": "Паучьи лапы",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "паучьи черты внешности, цепкие волоски на руках и ногах",
+			"description": "<p>Позволяют цели ходить по стенам на половину её шага (на полный шаг при успехе с подъёмом).</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Warrior's Gift": {
 			"name": "Дар воина",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "жесты, молитвы, шёпот, концентрация",
+			"description": "<p>Персонаж получает боевую черту.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		},
 		"Zombie": {
 			"name": "Зомби",
-			"description": "<p>Описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
+			"trapping": "вырезание символов на трупах, разбрасывание костей, ритуалы на кладбище, книги из человеческой кожи",
+			"description": "<p>Поднимает управляемую нежить.</p><p>Полное описание сил доступно в премиум-модуле <a href='https://peginc.com/product/savage-worlds-adventure-edition-core-rules-foundry-vtt/'>Savage Worlds Adventure Edition Core Rules</a> или издании <a href='https://rpgbook.ru/savage_worlds_rus'>Savage Worlds: Дневник авантюриста</a> на русском языке.</p>"
 		}
 	}
 }

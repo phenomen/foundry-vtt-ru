@@ -32,14 +32,24 @@ function registerConverters() {
 	if (!game.babele) return;
 
 	game.babele.registerConverters({
-		convertCategory: (category) => {
-			if (!category) return;
-			return translateValue(category, CATEGORIES);
+		convertCategory: (value) => {
+			if (!value) return;
+			return translateValue(value, CATEGORIES);
 		},
 
-		convertRank: (rank) => {
-			if (!rank) return;
-			return translateValue(rank, RANKS);
+		convertRank: (value) => {
+			if (!value) return;
+			return translateValue(value, RANKS);
+		},
+
+		convertRange: (value) => {
+			if (!value) return;
+			return translateValue(value, RANGES);
+		},
+
+		convertDuration: (value) => {
+			if (!value) return;
+			return translateValue(value, DURATIONS);
 		},
 
 		convertRequirements: (requirements) => {
@@ -146,4 +156,35 @@ const RANKS = {
 	"Seasoned": "Закалённый",
 	"Veteran": "Ветеран",
 	"Heroic": "Герой",
+};
+
+const RANGES = {
+	"Self": "на себя",
+	"Touch": "касание",
+	"Cone Template": "конусный шаблон",
+	"Small Blast Template": "малый шаблон",
+	"Medium Blast Template": "средний шаблон",
+	"Large Blast Template": "большой шаблон",
+	"Sm": "СМК",
+	"Sm x 2": "СМК×2",
+	"Smarts x5 (Sound); Smarts (Silence)": "СМК×5 (звук); СМК (тишина)",
+};
+
+const DURATIONS = {
+	"Instant": "мгновенное",
+	"Special": "особое",
+	"One Round": "1 раунд",
+	"One Minute": "1 минута",
+	"5": "5 минут",
+	"5 minutes": "5 минут",
+	"10 minutes": "10 минут",
+	"30 Minutes": "30 минут",
+	"One hour": "1 час",
+	"One day": "1 день",
+	"Until the end of the victim's next turn": "до конца следующего хода цели",
+	"5 (detect), one hour (conceal)": "5 (обнаружение); 1 час (скрытие)",
+	"Instant (Sound); 5 (Silence)": "мгновенное (звук); 5 (тишина)",
+	"5 (boost); Instant (lower)": "5 (усилить); мгновенное (ослабить)",
+	"Instant (slot); 5 (speed)": "мгновенное (замедление); 5 (ускорение)",
+	"A brief conversation of about five minutes": "до 5 минут (короткая беседа)",
 };
