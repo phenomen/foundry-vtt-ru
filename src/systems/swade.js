@@ -37,6 +37,11 @@ function registerConverters() {
 			return translateValue(category, CATEGORIES);
 		},
 
+		convertRank: (rank) => {
+			if (!rank) return;
+			return translateValue(rank, RANKS);
+		},
+
 		convertRequirements: (requirements) => {
 			if (!requirements) return;
 
@@ -134,4 +139,11 @@ const CATEGORIES = {
 	Leadership: "Лидерские",
 	Power: "Сверхъестественные",
 	Legendary: "Легендарные",
+};
+
+const RANKS = {
+	"Novice": "Новичок",
+	"Seasoned": "Закалённый",
+	"Veteran": "Ветеран",
+	"Heroic": "Герой",
 };
