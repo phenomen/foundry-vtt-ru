@@ -1626,6 +1626,8 @@
 	"DND5E.Dawn": "Рассвет",
 	"DND5E.Day": "День",
 	"DND5E.DeathSave": "Испытание против смерти",
+	"DND5E.DeathSaveBonus": "Бонус испытания против смерти",
+	"DND5E.DeathSaveConfigure": "Настройка испытания против смерти",
 	"DND5E.DeathSaveCriticalSuccess": "{name} критически преуспел в испытании против смерти и восстановил 1 ПЗ!",
 	"DND5E.DeathSaveHide": "Скрыть испытание против смерти",
 	"DND5E.DeathSaveShow": "Показать испытание против смерти",
@@ -1841,6 +1843,12 @@
 			"Entry": "{item} у <em>{actor}</em>"
 		},
 		"Label": "Зачарование",
+		"Period": {
+			"AtWill": "Неограниченно",
+			"LongRest": "Долгий отдых",
+			"Never": "Никогда",
+			"ShortRest": "Короткий отдых"
+		},
 		"Warning": {
 			"NotOnActor": "Зачарования могут быть добавлены только к предметам, а не напрямую к актёрам.",
 			"Override": "Это значение было изменено зачарованием и не может быть отредактировано. Сначала отключите зачарование на вкладке эффектов."
@@ -4054,20 +4062,8 @@
 	"DND5E.UsesMax": "Макс. использований",
 	"DND5E.UsesPeriod": "Время восстановления",
 	"DND5E.UsesPeriods": {
-		"AtWill": "Неограниченно",
 		"Charges": "Заряды",
-		"ChargesAbbreviation": "Заряды",
-		"Dawn": "Рассвет",
-		"DawnAbbreviation": "Рассвет",
-		"Day": "День",
-		"DayAbbreviation": "День",
-		"Dusk": "Закат",
-		"DuskAbbreviation": "Закат",
-		"Lr": "Долгий отдых",
-		"LrAbbreviation": "ДО",
-		"Never": "Никогда",
-		"Sr": "Короткий отдых",
-		"SrAbbreviation": "КО"
+		"ChargesAbbreviation": "Заряды"
 	},
 
 	"DND5E.USES": {
@@ -4107,10 +4103,47 @@
 				"Create": "Создание профиля восстановления",
 				"Delete": "Удаление профиля восстановления"
 			},
+			"Combat": "Бой",
+			"Never": "Никогда",
+			"Period": {
+				"Dawn": {
+					"Label": "Рассвет"
+				},
+				"Day": {
+					"Label": "День"
+				},
+				"Dusk": {
+					"Label": "Закат"
+				},
+				"Initiative": {
+					"Label": "Инициатива"
+				},
+				"LongRest": {
+					"Label": "Долгий отдых",
+					"Abbreviation": "ДО"
+				},
+				"ShortRest": {
+					"Label": "Короткий отдых",
+					"Abbreviation": "КО"
+				},
+				"Turn": {
+					"Label": "Ход"
+				},
+				"TurnEnd": {
+					"Label": "Раунд (конец хода)",
+					"Abbreviation": "Начало хода"
+				},
+				"TurnStart": {
+					"Label": "Раунд (начало хода)",
+					"Abbreviation": "Конец хода"
+				}
+			},
 			"Recharge": {
 				"Label": "Перезарядка",
 				"Range": "Перезарядка при {range}"
 			},
+			"Special": "Особое",
+			"Time": "Время",
 			"Type": {
 				"Formula": "Своя формула",
 				"LoseAll": "Потратить все использования",
