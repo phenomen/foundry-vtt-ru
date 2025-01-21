@@ -4,12 +4,12 @@
 	"private": "true",
 	"scripts": {
 		"build": "vite build",
-		"format": "bunx biome check --write"
+		"format": "bun biome check --write"
 	},
 	"type": "module",
 	"devDependencies": {
 		"@biomejs/biome": "nightly",
-		"vite": "^6.0.9"
+		"vite": "^6.0.11"
 	},
 	"trustedDependencies": ["@biomejs/biome", "esbuild"]
 }
