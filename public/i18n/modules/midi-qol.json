@@ -320,7 +320,7 @@
 		"hitDamage": "Отображать попадание/промах + общий урон",
 		"hitCriticalDamage": "Отображать попадание/промах/криты + общий урон",
 		"attackTotalOnly": "Отображать только общий бросок атаки",
-		"d20AttackOnly": "Ттображать только d20 бросок атаки",
+		"d20AttackOnly": "Отображать только d20 бросок атаки",
 		"all": "Весь бросок"
 	},
 	"midi-qol.RollOtherDamageOptions": {
@@ -442,8 +442,8 @@
 	"midi-qol.SavesBonus": "При успешном испытании, бонусный урон:",
 	"midi-qol.SavesOther": "При успешном испытании, другая формула:",
 	"midi-qol.Damage": "Урон",
-	"midi-qol.Concentrating": "Концентрация",
-	"midi-qol.concentrationCheckName": "Поддержание концентрации",
+	"midi-qol.Concentrating": "Поддержание концентрации",
+	"midi-qol.concentrationCheckName": "Концентрация",
 	"midi-qol.DamageMacro.Name": "Макрос бонусного урона",
 	"midi-qol.concentrationActivationCondition": "Концентрация",
 	"midi-qol.DamageMacro.Hint": "Разделенный запятыми список макросов для вызова при расчете урона, которые будут применяться для расчёта урона по целям.",
@@ -502,7 +502,7 @@
 	"midi-qol.CoverCalculation.Name": "Calculate Cover",
 	"midi-qol.CoverCalculation.Hint": "Calculate AC bonus for targets in cover - settings taken from the selected module",
 	"midi-qol.CoverCalculationOptions": {
-		"none": "None",
+		"none": "Нет",
 		"simbuls-cover-calculator": "Simbul's Cover Calculator",
 		"levelsautocover": "Levels Auto Cover",
 		"tokencover": "Alternative Token Cover",
@@ -659,16 +659,16 @@
 	"midi-qol.TargetConfirmation.Name": "Подтверждение цели",
 	"midi-qol.TargetConfirmation.Blurb": "Select up to {targetCount} {targetType}. Shift-Click to select multiple targets",
 	"midi-qol.TargetConfirmation.BlurbAny": "Выберите цели. Shift+ЛКМ, чтобы выбрать несколько целей.",
-	"midi-qol.AddDead.Name": "Add effect when HP = 0",
-	"midi-qol.AddDead.Hint1": "Player Controlled",
-	"midi-qol.AddDead.Hint2": "GM Controlled",
+	"midi-qol.AddDead.Name": "Добавить эффект при 0 ПЗ",
+	"midi-qol.AddDead.Hint1": "Управляется игроками",
+	"midi-qol.AddDead.Hint2": "Управляется мастером",
 	"midi-qol.AddDeadOptions": {
 		"none": "Не обновлять",
 		"overlay": "Добавление эффекта наложением",
-		"normal": "Add effect as icon"
+		"normal": "Добавление эффекта иконкой"
 	},
 	"midi-qol.Wounded": "Ранение",
-	"midi-qol.AddWounded.Name": "Add effect when hp falls below %",
+	"midi-qol.AddWounded.Name": "Добавить эффект, когда ПЗ ниже %",
 	"midi-qol.AddWounded.Hint": "Add Selected status when HP are less than specified percentage of max. 0 disables",
 	"midi-qol.debugCallTiming.Name": "Log execution timing",
 	"midi-qol.debugCallTiming.Hint": "Provide some log information about how long things take",
@@ -758,7 +758,7 @@
 	"midi-qol.CheckFlanking.Name": "Check Flanking",
 	"midi-qol.CheckFlanking.Hint": "Check if you and your allies flank the opponent. Either gives attacker advantage and/or applies <strong>CE flanking</strong> condition to <h4>attacker</h4> OR applies CE Flanked condition to target",
 	"midi-qol.CheckFlankingOptions": {
-		"off": "none",
+		"off": "нет",
 		"ceonly": "Convenient Effect Flanking Only",
 		"advonly": "Advantage Only",
 		"ceadv": "CE Flanking + Advantage",

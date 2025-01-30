@@ -289,6 +289,13 @@
 				"Type": "Можно выбрать только особенность с типом \"черта\"."
 			}
 		},
+		"Action": {
+			"Create": "Создание развития",
+			"Delete": "Удаление развития",
+			"Duplicate": "Копирование развития",
+			"Edit": "Изменение развития",
+			"View": "Просмотр развития"
+		},
 		"Config": {
 			"AnyLevel": "Любой",
 			"Details": "Подробности развития"
@@ -416,6 +423,9 @@
 			}
 		},
 		"ScaleValue": {
+			"Action": {
+				"CopyFormula": "Копирование формулы"
+			},
 			"Details": "Подробности подъёма",
 			"FIELDS": {
 				"distance": {
@@ -599,10 +609,6 @@
 	"DND5E.AdvancementConfigureDropAreaHint": "Перенесите предметы сюда, чтобы добавить их в набор для выбора.",
 	"DND5E.AdvancementConfiguredComplete": "Полностью настроено",
 	"DND5E.AdvancementConfiguredIncomplete": "Не настроено",
-	"DND5E.AdvancementControlCreate": "Создание развития",
-	"DND5E.AdvancementControlDelete": "Удаление развития",
-	"DND5E.AdvancementControlDuplicate": "Копия развития",
-	"DND5E.AdvancementControlEdit": "Изменение развития",
 	"DND5E.AdvancementCustomIcon": "Особая иконка",
 	"DND5E.AdvancementCustomTitle": "Особое название",
 	"DND5E.AdvancementDeleteConfirmationLabel": "Удаление изменения развития",
@@ -2387,7 +2393,19 @@
 	},
 	"DND5E.Habitat": {
 		"Categories": {
-			"Any": "Любая"
+			"Any": "Любая",
+			"Arctic": "Арктика",
+			"Coastal": "Побережье",
+			"Desert": "Пустыня",
+			"Forest": "Лес",
+			"Grassland": "Луг",
+			"Hill": "Холм",
+			"Mountain": "Гора",
+			"Planar": "План",
+			"Swamp": "Болото",
+			"Underdark": "Подземье",
+			"Underwater": "Под водой",
+			"Urban": "Город"
 		},
 		"Configuration": {
 			"Custom": "Особая",
@@ -4060,7 +4078,7 @@
 	"DND5E.Usage": "Использование",
 	"DND5E.Use": "Использовать",
 	"DND5E.UseItem": "Использовать {item}",
-	"DND5E.Uses": "Осталось",
+	"DND5E.Uses": "Использования",
 	"DND5E.UsesAvailable": "Доступные использования",
 	"DND5E.UsesMax": "Макс. использований",
 	"DND5E.UsesPeriod": "Время восстановления",
