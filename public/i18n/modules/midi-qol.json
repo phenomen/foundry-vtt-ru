@@ -330,8 +330,8 @@
 		"ifSave": "Условия соблюдены и есть испытание"
 	},
 	"midi-qol.potion": "Зелье",
-	"midi-qol.HideRollDetails.Name": "Скрывать детали броска GM",
-	"midi-qol.HideRollDetails.Hint": "Выберите, какую часть бросков GM скрывать/отображать игрокам:",
+	"midi-qol.HideRollDetails.Name": "Скрывать подробности броска мастера",
+	"midi-qol.HideRollDetails.Hint": "Выберите, какую часть бросков мастера скрывать/отображать игрокам",
 	"midi-qol.HideRollDetails.HintLong": {
 		"none": "<strong>Нет</strong>: Ничего не скрывать",
 		"detailsDSN": "<strong>Roll Formula but show DSN</strong>: Hide the roll formulas but still roll DSN dice",
@@ -342,8 +342,8 @@
 		"all": "<strong>Entire Roll</strong>: hide all roll details from the players"
 	},
 	"midi-qol.DiceRolled": "<div>Бросил</div>",
-	"midi-qol.ForceHideRoll.Name": "Really Hide private/blind/self-rolls",
-	"midi-qol.ForceHideRoll.Hint": "Display nothing to non-recipients for private/blind/self-rolls. Thanks to felix.mueller.86@web.de",
+	"midi-qol.ForceHideRoll.Name": "Действительно скрывать приватные/слепые/броски для себя",
+	"midi-qol.ForceHideRoll.Hint": "Не отображать ничего тем, кто не является получателем бросков с типами: приватный/слепой/для себя",
 	"midi-qol.EnableWorkflow.Name": "Включить поддержку автоматизации бросков",
 	"midi-qol.EnableWorkflow.Hint": "Если автоматизация бросков включена, её можно настроить в панели настроек рабочего процесса.",
 	"midi-qol.magicalProp": "Магический",
@@ -442,7 +442,7 @@
 	"midi-qol.SavesBonus": "При успешном испытании, бонусный урон:",
 	"midi-qol.SavesOther": "При успешном испытании, другая формула:",
 	"midi-qol.Damage": "Урон",
-	"midi-qol.Concentrating": "Поддержание концентрации",
+	"midi-qol.Concentrating": "Концентрация",
 	"midi-qol.concentrationCheckName": "Поддержание концентрации",
 	"midi-qol.DamageMacro.Name": "Макрос бонусного урона",
 	"midi-qol.concentrationActivationCondition": "Концентрация",
@@ -452,8 +452,8 @@
 	"midi-qol.DAEMidiQOL": "Особое для DAE/MidiQOL",
 	"midi-qol.Optional": "Правила",
 	"midi-qol.Mechanics": "Механики",
-	"midi-qol.OptionalRules.Name": "Варианты правил",
-	"midi-qol.OptionalRules.Hint": "DND5E Game rules that you may wish to enable. Generally, don't work with better rolls.",
+	"midi-qol.OptionalRules.Name": "Опциональные варианты правил",
+	"midi-qol.OptionalRules.Hint": "Поддержка вариантов правил D&D5e, которые вы, возможно, используете.",
 	"midi-qol.InvisAdvantage.Name": "Unseen/Invisible attackers have advantage/disadvantage on attacks",
 	"midi-qol.InvisAdvantage.Hint": "<strong>Rules as written</strong> Invisible attackers have advantage on attacks. Disadvantage if the target is invisible",
 	"midi-qol.InvisAdvantageOptions": {
@@ -525,7 +525,7 @@
 	"midi-qol.nevertarget": "Не выбирать целью",
 	"midi-qol.DamageCardMultHeader": "Множитель",
 	"midi-qol.DamageCardUndoHeader": "Отмена",
-	"midi-qol.DamageCardApplyHeader": "Применить",
+	"midi-qol.DamageCardApplyHeader": "Прим.",
 	"midi-qol.DamageCardCalc": "Расчёт",
 	"midi-qol.DamageCardHeal": "Лечение",
 	"midi-qol.DamageCardAll": "Все",
@@ -591,7 +591,7 @@
 	"midi-qol.GhostRolls.Name": "For attack/damage rolls display with 'dice so nice ghost rolls' rather than hiding the roll (merge card only)",
 	"midi-qol.convenientEffectsOn": "Применять Convenient Effects",
 	"midi-qol.convenientEffectsOff": "Не применять Convenient Effects",
-	"midi-qol.ConsumeResource.Name": "Skip consume resource dialog",
+	"midi-qol.ConsumeResource.Name": "Пропускать окно расходования ресурса",
 	"midi-qol.ConsumeResource.Hint": "Если включено, то диалоговое окно с настройками расходования ресурса будет пропущено. Если нет требуемой ячейки заклинаний/ресурса, либо нажата клавиша Преимущества/Помехи, то появится диалоговое окно.",
 	"midi-qol.ConsumeResourceOptions": {
 		"none": "Без авторасходывания",
@@ -599,12 +599,12 @@
 		"item": "Авторасходывание ресурсов/использований",
 		"both": "Авторасходывание ресурсов/ячеек заклинаний"
 	},
-	"midi-qol.ChallengeModeArmor.Name": "Включить режим испытания класса брони",
+	"midi-qol.ChallengeModeArmor.Name": "Включить режим состязания класса брони",
 	"midi-qol.ChallengeModeArmorOptions": {
-		"none": "No Challenge Mode Armor",
-		"challenge": "Challenge Mode Armor (Base)",
-		"scale": "Challenge Mode Armor (Scaled)",
-		"scaleNoAR": "Challenge Mode Armor (Scaled No AR)"
+		"none": "Без состязания класса брони",
+		"challenge": "Состязание класса брони (Base)",
+		"scale": "Состязание класса брони (Scaled)",
+		"scaleNoAR": "Состязание класса брони (Scaled No AR)"
 	},
 	"midi-qol.ChallengeModeArmor.Hint": "Вводит правила для усложнённого режима расчёта класса брони — см. файл README для дополнительной информации",
 	"midi-qol.ChallengeModeArmorScale.Hint": "Implements a modified challenge mode armor rules - see the readme for more information",
@@ -624,7 +624,7 @@
 	"midi-qol.ReactionActivationCondition.Name": "Reaction will be triggered if true",
 	"midi-qol.OtherActivationCondition.Name": "Other Formula will be rolled if true",
 	"midi-qol.HPUpdated": "ПЗ обновлены",
-	"midi-qol.HPNPCUpdated": "NPC HP Updated",
+	"midi-qol.HPNPCUpdated": "ПЗ ПМ обновлены",
 	"midi-qol.HPNotUpdated": "ПЗ не обновлены",
 	"midi-qol.reactionDamaged": "при получении урона",
 	"midi-qol.reactionManual": "Вручную",
@@ -654,11 +654,11 @@
 	"midi-qol.DeferText": "[Defer]",
 	"midi-qol._comment for translators_ItemMacroText": "The text below is searched for by midi in the onUseMacro field in item data. If you change it every item with an onUseMacro will need to be changed to match",
 	"midi-qol.ItemMacroText": "ItemMacro",
-	"midi-qol.TargetConfirmationConfig.Name": "Target Confirmation",
+	"midi-qol.TargetConfirmationConfig.Name": "Подтверждение цели",
 	"midi-qol.TargetConfirmationConfig.Hint": "When rolling an item confirm targets before completing",
-	"midi-qol.TargetConfirmation.Name": "Target Confirmation",
+	"midi-qol.TargetConfirmation.Name": "Подтверждение цели",
 	"midi-qol.TargetConfirmation.Blurb": "Select up to {targetCount} {targetType}. Shift-Click to select multiple targets",
-	"midi-qol.TargetConfirmation.BlurbAny": "Select any number of targets. Shift-Click to select multiple targets",
+	"midi-qol.TargetConfirmation.BlurbAny": "Выберите цели. Shift+ЛКМ, чтобы выбрать несколько целей.",
 	"midi-qol.AddDead.Name": "Add effect when HP = 0",
 	"midi-qol.AddDead.Hint1": "Player Controlled",
 	"midi-qol.AddDead.Hint2": "GM Controlled",
@@ -714,14 +714,14 @@
 		"allCrit": "Attack Roll Total + Critical"
 	},
 	"midi-qol.Reactions": "Подтверждение ответных действий",
-	"midi-qol.ReactionsTab": "Reactions",
+	"midi-qol.ReactionsTab": "Ответные действия",
 	"midi-qol.DoReactions.Name": "Проверять ответные действия ИГРОКОВ",
 	"midi-qol.DoReactions.Hint": "Атакованный актёр получит возможность использовать ответное действие до решения о броске. Ответные действия при попадании требуют включения автопроверки попаданий. Ответные действия при повреждении срабатывают при нанесении урона.",
 	"midi-qol.GMDoReactions.Name": "Check NPC/GM reactions",
 	"midi-qol.ReactionTimeout.Name": "Время ожидания проверки ответного действия",
 	"midi-qol.ReactionTimeout.Hint": "Как долго ожидать, прежде чем предположить отсутствие ответного действия.",
-	"midi-qol.NoOptionalRules.Name": "Без ситуативных правил",
-	"midi-qol.NoOptionalRules.Hint": "Откл. ситуативные правила для этого броска",
+	"midi-qol.NoOptionalRules.Name": "Без вариантов правил",
+	"midi-qol.NoOptionalRules.Hint": "Откл. варианты правил для этого броска",
 	"midi-qol.RecordAOO.Name": "Следить за внеочередной атакой",
 	"midi-qol.RecordAOO.Hint": "Если актёр атакует не в свой ход в бою, будет засчитано использование ответного действия",
 	"midi-qol.RecordAOOOptions": {
@@ -847,27 +847,27 @@
 	"midi-qol.ConfirmAttackDamage.Name": "Display Confirm Roll Button",
 	"midi-qol.ConfirmAttackDamage.Hint": "Pause after rolling attack/damage for the player/GM to confirm",
 	"midi-qol.ConfirmAttackDamageOptions": {
-		"none": "No confirmation",
+		"none": "Без подтверждения",
 		"gmOnly": "Only GM can confirm",
 		"GMPlayer": "GM and Player can confirm"
 	},
 	"midi-qol.ConfirmRoll": "Confirm",
 	"midi-qol.ConfirmMiss": "Confirm Miss",
 	"midi-qol.ConfirmHit": "Confirm Hit",
-	"midi-qol.AverageDamage.Name": "All damage/critical rolls are 'average' results",
+	"midi-qol.AverageDamage.Name": "Средний урон для всех бросков урона",
 	"midi-qol.AverageDamageOptions": {
-		"none": "None",
-		"npc": "NPC only damage rolls",
-		"character": "Character ony damage rolls",
-		"all": "All damage rolls"
+		"none": "Нет",
+		"npc": "Только броски урона ПМ",
+		"character": "Только броски урона игроков",
+		"all": "Все броски урона"
 	},
 	"midi-qol.GriddedGridless.Name": "Gridless Grid",
 	"midi-qol.GridlessFudge.Name": "Fudge factor",
 	"midi-qol.GridlessFudge.Hint": "Subtract the fudge factor from the measured distance when checking range. Specified in grid scale units, i.e. ft/m",
 	"midi-qol.GriddedGridless.Hint": "If set midi will use the square grid for all distance calculations in gridless scenes",
-	"midi-qol.targetConfirmationPosition": "Target Confirmation Position",
-	"midi-qol.TargetConfirmationEnabled": "Enable Target Confirmation",
-	"midi-qol.TargetConfirmationAll": "Always confirm targets",
+	"midi-qol.targetConfirmationPosition": "Расположение подтверждения цели",
+	"midi-qol.TargetConfirmationEnabled": "Включить подтверждение цели",
+	"midi-qol.TargetConfirmationAll": "Всегда подтверждать цели",
 	"midi-qol.TargetConfirmationNoneTargeted": "Confirm targets if none selected",
 	"midi-qol.TargetConfirmation.hasAttack": "Confirm targets if rolled item has an attack",
 	"midi-qol.TargetConfirmationCreatureTarget": "Confirm targets if rolled item has 'creature' target",
@@ -927,7 +927,7 @@
 	"midi-qol.ReplaceDefaultActivities.Hint": "Any existing activities, Attack, Damage, Save, Check, Utility will instead use the midi versions. This is required to automate SRD items, otherwise you will need to hand configure every item for midi automation.",
 	"midi-qol.AutoMergeActivityOther.Name": "Auto merge other activity for Midi Attack Activities (Requires Reload)",
 	"midi-qol.AutoMergeActivityOther.Hint": "If an item only has an attack activity and single Damage, Save, Check or Utility it will be merged with the Attack activity",
-	"midi-qol.ConfirmAmmunition.Name": "Confirm Ammunition choice when rolling attack - shows attack roll configuration",
+	"midi-qol.ConfirmAmmunition.Name": "Отображать окно выбора боеприпасов при атаке",
 	"midi-qol.ActivityNamePrefix.Name": "Activity Prefix",
 	"midi-qol.ActivityNamePrefix.Hint": "Prefix midi-qol activities name with Midi. Change requires reload",
 	"midi-qol.AoETargetTypeOptions": {
@@ -982,7 +982,7 @@
 					"hint": "Force Configuration Dialog when attack rolled"
 				},
 				"confirmTargets": {
-					"label": "Target Confirmation",
+					"label": "Подтверждение цели",
 					"hint": "Confirm targets before rolling"
 				},
 				"autoTargetType": {
@@ -1092,8 +1092,8 @@
 				"hint": "Default attack mode"
 			},
 			"ammunition": {
-				"label": "Ammunition",
-				"hint": "Default ammunition to consume"
+				"label": "Боеприпасы",
+				"hint": "Боеприпасы по умолчанию"
 			},
 			"otherActivityId": {
 				"label": "Other Activity",
@@ -1156,9 +1156,9 @@
 		"force-dialog": "Force Configuration Dialog",
 		"midi-automation-only": "Only use in midi automation"
 	},
-	"midi-qol.BaseDamageFlavor": "Base Damage",
+	"midi-qol.BaseDamageFlavor": "Базовый урон",
 	"midi-qol.OtherDamageFlavor": "Other Damage",
-	"midi-qol.RequireAmmunition.Name": "Require ammunition available if used",
+	"midi-qol.RequireAmmunition.Name": "Требовать боеприпасы при использовании",
 	"midi-qol.CheckTwoHanded.Name": "Require no shield equipped for two-handed/off-hand attacks",
 	"midi-qol.NoAmmunition": "There are 0 {name} in your inventory",
 	"midi-qol.TwoHandedShieldWarning": "Cannot use two-handed or off-hand attack with a shield equipped",
