@@ -1,5 +1,5 @@
 {
-	"TIDY5E.ModuleName": "Tidy 5e Sheets",
+	"TIDY5E.ModuleName": "Tidy 5e",
 	"TIDY5E.Tidy5eCharacterSheetClassic": "Tidy 5e Бланк персонажа",
 	"TIDY5E.Tidy5eNpcSheetClassic": "Tidy 5e Бланк персонажа Мастера",
 	"TIDY5E.Tidy5eItemSheetClassic": "Tidy 5e Бланк предмета",
@@ -53,13 +53,13 @@
 	"TIDY5E.JournalPersonsOfInterest": "Примечательные личности",
 	"TIDY5E.JournalLocationsOfInterest": "Интересные места",
 	"TIDY5E.JournalQuests": "Задания",
-	"TIDY5E.JournalMisc": "Другое",
+	"TIDY5E.JournalMisc": "Прочее",
 	"TIDY5E.JournalEntries": "Личные записи",
 	"TIDY5E.TogglePersonalityInfo": "Переключить подробности личности",
 
 	"TIDY5E.SheetEdit.Enable.Hint": "Включить редактирование - {description}",
 	"TIDY5E.SheetEdit.Disable.Hint": "Выключить редактирование - {description}",
-	"TIDY5E.SheetEdit.Description": "Переключить видимость кнопок добавления/удаления и пустых секций",
+	"TIDY5E.SheetEdit.Description": "Переключить видимость кнопок добавления/удаления и пустых разделов",
 
 	"TIDY5E.SheetLock.Unlock.Hint": "Разблокировать - {description}",
 	"TIDY5E.SheetLock.Lock.Hint": "Заблокировать - {description}",
@@ -79,7 +79,7 @@
 
 	"TIDY5E.EmptyContainer": "Этот контейнер пуст.",
 	"TIDY5E.EmptySection": "Этот раздел пуст. Разблокируйте бланк для редактирования.",
-	"TIDY5E.GMOnlyEdit": "Только GM может изменять этот раздел",
+	"TIDY5E.GMOnlyEdit": "Только Мастер может изменять этот раздел.",
 
 	"TIDY5E.AttunementWarning": "Предупреждение настройки: Вы не можете настроиться на более чем {number} предметов!",
 	"TIDY5E.AttunementItems": "Настроенные предметы",
@@ -162,7 +162,7 @@
 		"SelectedHeader": "Выбранные вкладки",
 		"UnsupportedDocumentErrorMessage": "Тип документов {documentType} не настроен для вкладок.",
 		"AtLeastOneRequiredErrorMessage": "Требуется хотя бы одна вкладка.",
-		"Explanation": "Any tabs that the user or sheet are configured not to see (e.g., disabling the journal in config settings) will still not appear on the sheet, even if selected."
+		"Explanation": "Любые вкладки, на которые участник/бланк настроены так, чтобы их не видеть (например, отключение журнала в настройках), все равно не будут отображаться в бланке."
 	},
 
 	"TIDY5E.ButtonConfirm.Text": "Подтвердить",
@@ -189,30 +189,30 @@
 		"tabLabel": "Утомление"
 	},
 	"TIDY5E.WorldSettings.Exhaustion": {
-		"Header": "Утомление персонажа/НИПа",
+		"Header": "Утомление персонажа",
 		"name": "Настройка утомления",
-		"hint": "Определяет утомление в бланках персонажей игроков и Мастера.",
+		"hint": "Настройки и вид утомления в бланках персонажей игроков и Мастера.",
 		"options.specific.text": "Определённые степени",
 		"options.specific.levels.name": "Всего степеней",
 		"options.specific.levels.hint": "Определяет число степеней утомления.",
 		"options.specific.levels.tooltip.name": "Подсказка к {level}-й степени утомления",
 		"options.specific.levels.tooltip.hint": "Влывающая подсказка для степени утомления. Можно использовать ключи локализации.",
 		"options.open.text": "Числовой ввод",
-		"options.open.explanation": "Shows the user a numeric input for entering levels of exhaustion.",
+		"options.open.explanation": "Отображать числовое поле ввода для степеней утомления.",
 		"AtLeastOneLevelRequiredErrorMessage": "Требуется хотя бы одна степень утомления "
 	},
 	"TIDY5E.WorldSettings.VehicleExhaustion": {
 		"Header": "Утомление у транспорта",
 		"name": "Настройка утомления у транспорта",
-		"hint": "Determines how vehicle exhaustion is configured and presented on the vehicle sheet.",
+		"hint": "Настройки и вид утомления в бланках транспорта.",
 		"AtLeastOneLevelRequiredErrorMessage": "Требуется хотя бы одна степень утомления транспорта."
 	},
 	"TIDY5E.WorldSettings.TabItem": {
-		"tabLabel": "Item"
+		"tabLabel": "Предмет"
 	},
 	"TIDY5E.WorldSettings.IncludeTidySectionFieldsInDefaultSheets": {
-		"name": "Include Tidy Section Fields in Default Sheets",
-		"hint": "Includes Tidy Section and Action Section inputs in the default item sheets."
+		"name": "Добавить разделы Tidy5e в стандартные бланки",
+		"hint": "Раздел Tidy5e и раздел действий будут видны в стандартных бланках предметов."
 	},
 	"TIDY5E.WorldSettings.ItemIdentificationPermission": {
 		"name": "Item Identification Permission",
@@ -240,9 +240,9 @@
 		"tabLabel": "Иконки"
 	},
 	"TIDY5E.WorldSettings.TabCustomSections": {
-		"tabLabel": "Особые секции",
+		"tabLabel": "Особые разделы",
 		"CustomizedIndicatorLabel": "Customized",
-		"ShowWhenEmptyLabel": "Show Section When Empty",
+		"ShowWhenEmptyLabel": "Отображение пустого раздела",
 		"ShowWhenEmptyTooltip": "All tabs with item tables have a set of default sections which are always shown even when there are no items in the section. Always show this section, even when empty.",
 		"LimitToSpecificSheetsLabel": "Limit Shown Section to Specific Sheets",
 		"LimitToSpecificTabsLabel": "Limit Shown Section to Specific Tabs"
@@ -252,14 +252,14 @@
 
 	"TIDY5E.WorldSettings.Menu": {
 		"name": "Настройки мира",
-		"hint": "Adjust world-level settings to customize the Tidy 5e Sheets experience. These settings are saved to this Foundry world and apply to all relevant Tidy 5e Sheets content.",
+		"hint": "Эти настройки общие для всех бланков Tidy 5e в этом мире.",
 		"label": "Настройки мира",
 		"title": "Настройки мира (только для Мастера)"
 	},
 
 	"TIDY5E.UserSettings.Menu": {
 		"name": "Пользовательские настройки",
-		"hint": "Customize your own version of Tidy 5e Sheets. These settings are saved to your browser and apply to your sheets.",
+		"hint": "Настройте бланки Tidy 5e под себя. Эти настройки сохраняются в вашем браузере и применяются только к вашим бланкам.",
 		"label": "Пользовательские настройки",
 		"title": "Пользовательские настройки: {userName}"
 	},
@@ -268,8 +268,8 @@
 		"header": "Бланки персонажей игроков"
 	},
 	"TIDY5E.UserSettings.TabNPCs": {
-		"tabLabel": "НИПы",
-		"header": "Лист НИП"
+		"tabLabel": "Персонажи Мастера",
+		"header": "Бланки персонажей Мастера"
 	},
 	"TIDY5E.UserSettings.TabVehicles": {
 		"tabLabel": "Транспорт",
@@ -312,7 +312,7 @@
 	},
 	"TIDY5E.Settings.DefaultTheme": {
 		"name": "Стандартная цветовая схема",
-		"hint": "The default theme for all users who do not have a specific theme selected."
+		"hint": "Тема оформления по умолчанию для участников, которые не выбрали её для себя."
 	},
 	"TIDY5E.Settings.SheetTheme": {
 		"name": "Цветовая тема Tidy5e",
@@ -322,23 +322,23 @@
 		"dark": "Тёмная"
 	},
 	"TIDY5E.Settings.UseClassicControls": {
-		"name": "Use Classic List Controls",
-		"hint": "Shows controls in the list view."
+		"name": "Классическое управление списком",
+		"hint": "Отображать управление в виде списка."
 	},
 	"TIDY5E.Settings.ShowTraitLabels": {
-		"name": "Отображение названий свойств",
-		"hint": "Shows labels for PC, NPC, and Vehicle traits. Disable to show only icons."
+		"name": "Названия свойств",
+		"hint": "Отображать названия особенностей персонажей и транспорта. Иначе будут только иконки."
 	},
 	"TIDY5E.Settings.ShowPlayerName": {
-		"name": "Отображать имя игрока",
-		"hint": "Shows a field for the player name below the character's name."
+		"name": "Имя игрока",
+		"hint": "Поле имени игрока будет отображаться под именем персонажа."
 	},
 	"TIDY5E.Settings.ShowClassList": {
-		"name": "Отображать список классов",
-		"hint": "Отображает список классов под именем персонажа "
+		"name": "Список классов",
+		"hint": "Список классов будет отображаться под именем персонажа "
 	},
 	"TIDY5E.Settings.InspirationAnimation": {
-		"name": "Отключение анимации вдохновения",
+		"name": "Анимация вдохновения",
 		"hint": "Анимация свечения индикатора вдохновения будет отключена."
 	},
 	"TIDY5E.Settings.HideIfZero": {
@@ -346,15 +346,15 @@
 		"hint": "Если утомление или вдохновение отсутствуют, то они будут скрыты и отображены при наведении."
 	},
 	"TIDY5E.Settings.ShowInspirationOnHover": {
-		"name": "Отображение вдохновения только при наведении",
-		"hint": "Shows the inspiration indicator only when hovering over the portrait."
+		"name": "Вдохновение только при наведении",
+		"hint": "Вдохновение будет отображаться только при наведении на портрет."
 	},
 	"TIDY5E.Settings.ShowExhaustionOnHover": {
-		"name": "Show Exhaustion Tracker Only on Hover",
-		"hint": "Shows the exhaustion tracker only when hovering over the portrait."
+		"name": "Счётчик утомления только при наведении",
+		"hint": "Счётчик утомления будет отображаться только при наведении на портрет."
 	},
 	"TIDY5E.Settings.UseHpBar": {
-		"name": "Использовать полоску ПЗ",
+		"name": "Шкала пунктов здоровья",
 		"hint": "Shows a colored bar indicating remaining HP. Health numbers will still be visible."
 	},
 	"TIDY5E.Settings.UseHpOverlay": {
@@ -378,27 +378,27 @@
 		"hint": "Удалить переключателя видимости навыков без умения и всегда отображать все навыки."
 	},
 	"TIDY5E.Settings.ShowNPCSpellbookTab": {
-		"name": "Показать вкладку книги заклинаний",
-		"hint": "Shows a spellbook tab for NPCs. Disable to move the spellbook section to the Attributes tab."
+		"name": "Вкладка заклинаний",
+		"hint": "Персонажи Мастера будут иметь вкладку заклинаний. Иначе заклинания будут отображаться на вкладке параметров."
 	},
 	"TIDY5E.Settings.ShowActiveEffectsMarker": {
-		"name": "Отображение индикаторов активных эффектов",
-		"hint": "Shows a marker for list view items that have active effects."
+		"name": "Индикатор активных эффектов",
+		"hint": "Предметы с активными эффектами будут отмечены в списке."
 	},
 	"TIDY5E.Settings.UseContextMenu": {
-		"name": "Использование контекстого меню",
-		"hint": "Enables right-click context menu on items."
+		"name": "Контекстого меню предметов",
+		"hint": "Контекстное меню на предметах при нажатии ПКМ."
 	},
 	"TIDY5E.Settings.ShowExpandedLimitedView": {
-		"name": "Show Expanded Limited View",
-		"hint": "Displays the entire sheet (minus the journal) to players with limited permission."
+		"name": "Расширенный ограниченный вид",
+		"hint": "Участники с ограниченными правами на просмотр бланка будут видеть всю информацию, кроме личного журнала."
 	},
 	"TIDY5E.Settings.UseCircularPortraitStyle": {
-		"name": "Использовать круглые портреты",
+		"name": "Круглые портреты",
 		"hint": "Показывать круглые портреты/иконки для актёров.",
 		"all": "Все актёры",
 		"pc": "Персонажи игроков",
-		"npc": "Персонажи мастера/транспорт",
+		"npc": "Персонажи Мастера/транспорт",
 		"none": "Нет"
 	},
 	"TIDY5E.Settings.UseTotalSheetLock": {
@@ -410,7 +410,7 @@
 		"hint": "Limits permission to edit or toggle active effects to GMs only."
 	},
 	"TIDY5E.Settings.UseInspiration": {
-		"name": "Использовать трекер вдохновения",
+		"name": "Использовать счётчик вдохновения",
 		"hint": "Shows an inspiration tracker on the character profile."
 	},
 	"TIDY5E.Settings.UseVehicleMotion": {
@@ -418,12 +418,12 @@
 		"hint": "Shows a motion tracker on the vehicle profile."
 	},
 	"TIDY5E.Settings.UseExhaustion": {
-		"name": "Использовать трекер утомления",
-		"hint": "Shows an exhaustion tracker for characters, NPCs, and vehicles."
+		"name": "Использовать счётчик утомления",
+		"hint": "Счётчик утомления будет отображаться для персонажей и транспорта."
 	},
 	"TIDY5E.Settings.ShowNPCRestInChat": {
-		"name": "Показывать отдых НИПов в чате",
-		"hint": "Shows a chat card when an NPC rests."
+		"name": "Отображать отдых персонажей Мастера в чате",
+		"hint": "При отдыхе персонажей Мастера будет выводиться сообщение чата."
 	},
 	"TIDY5E.Settings.ShowNPCActorLinkMarker": {
 		"name": "Mark Linked/Unlinked NPCs",
@@ -687,7 +687,7 @@
 	"TIDY5E.Settings.GlobalCustomSections": {
 		"name": "Global Custom Sections",
 		"hint": "World custom sections which can be configured for various purposes. Global Custom Sections will always be included in the Section Selector.",
-		"AddSection": "Добавить секцию"
+		"AddSection": "Добавить раздел"
 	},
 	"TIDY5E.Settings.Debug": {
 		"name": "Включение отладки",
@@ -762,28 +762,28 @@
 	"TIDY5E.Utilities.GMTools": "Инструменты мастера",
 	"TIDY5E.Utilities.IdentifyAll": "Опознать все предметы",
 	"TIDY5E.Utilities.AssignSpellsToClasses": "Назначить заклинания классам",
-	"TIDY5E.GenericErrorNotification": "An error occurred while performing this action. See the devtools console for more details.",
+	"TIDY5E.GenericErrorNotification": "При совершении этого действия произошла ошибка. Смотрите консоль для подробностей.",
 	"TIDY5E.Utilities.MarkAllAsUnidentified": "Пометить все предметы как неопознанные",
-	"TIDY5E.Utilities.ConfigureSections": "Настроить секции",
+	"TIDY5E.Utilities.ConfigureSections": "Настроить разделы",
 	"TIDY5E.Section": {
-		"Default": "Стандартная секция",
-		"Label": "Секция",
-		"LabelPl": "Секции",
-		"Tooltip": "Specify a custom section for this item when placed in an actor sheet, or leave it blank for default behavior.",
-		"ActionLabel": "Action Section",
-		"ActionTooltip": "Specify a custom section for this item when placed in the Actions tab, or leave it blank for default behavior.",
+		"Default": "Стандартный раздел",
+		"Label": "Раздел",
+		"LabelPl": "Разделы",
+		"Tooltip": "Укажите особый раздел для этого предмета при размещении в бланк персонажа. Оставьте пустым для использования стандартного.",
+		"ActionLabel": "Раздел действий",
+		"ActionTooltip": "Укажите особый раздел для этого предмета при размещении в раздел действий. Оставьте пустым для использования стандартного.",
 		"ConfigDialog": {
-			"title": "Настроить секцию: {tabTitle}",
-			"showTooltip": "Показать эту секцию",
-			"hideTooltip": "Скрыть эту секцию"
+			"title": "Настроить раздел: {tabTitle}",
+			"showTooltip": "Показать этот раздел",
+			"hideTooltip": "Скрыть этот раздел"
 		},
-		"SectionSelectorChooseSectionTooltip": "Выберите секцию",
-		"SectionSelectorChooseActionSectionTooltip": "Choose an Action Section",
+		"SectionSelectorChooseSectionTooltip": "Выберите раздел",
+		"SectionSelectorChooseActionSectionTooltip": "Выберите раздел действий",
 		"SectionSelectorTitle": "{sectionType}: {documentName}",
-		"SectionSelectorExistingSections": "Существующие секции",
-		"SectionSelectorCreateNewSection": "Создать новую секцию",
-		"SectionSelectorNewSectionName": "Название новой секции",
-		"SectionSelectorSaveNewSection": "Сохранить новую секцию"
+		"SectionSelectorExistingSections": "Существующие разделы",
+		"SectionSelectorCreateNewSection": "Создать новый раздел",
+		"SectionSelectorNewSectionName": "Название нового раздела",
+		"SectionSelectorSaveNewSection": "Сохранить новый раздел"
 	},
 	"TIDY5E.UseDefaultDialog": {
 		"title": "Подтвердить: Использовать по умолчанию",
@@ -791,12 +791,12 @@
 	},
 	"TIDY5E.RollRecharge.Hint": "{rechargeLabel} (Shift+ЛКМ, чтобы пропустить бросок и моментально восстановить)",
 	"TIDY5E.SpellSourceClassAssignments.Identifier": "Идентификатор исходного класса",
-	"TIDY5E.SpellSourceClassAssignments.IdentifierHint": "The spell's source class identifier appears here. To assign an identifier which the character doesn't own, enter the class identifier in this text field.",
+	"TIDY5E.SpellSourceClassAssignments.IdentifierHint": "Идентификатор класса этого заклинания. Чтобы назначить идентификатор, которого нет у персонажа, введите его в это поле.",
 	"TIDY5E.SpellSourceClassAssignments.ShowUnassignedOnly.Text": "Показать только неназначенные",
 	"TIDY5E.Keybindings.ToggleSheetLock.Name": "Режим редактирования",
-	"TIDY5E.Keybindings.ToggleSheetLock.Hint": "If a Tidy sheet is the current active window in the UI, this keybinding toggles the sheet lock.",
+	"TIDY5E.Keybindings.ToggleSheetLock.Hint": "Если бланк Tidy5e является текущим активным окном, это сочетание переключает блокировку бланка.",
 	"TIDY5E.Keybindings.ToggleHeaderMenu.Name": "Открыть меню заголовка",
-	"TIDY5E.Keybindings.ToggleHeaderMenu.Hint": "If a Tidy sheet is the current active window in the UI, this keybinding toggles the sheet header menu.",
+	"TIDY5E.Keybindings.ToggleHeaderMenu.Hint": "Если бланк Tidy5e является текущим активным окном, это сочетание переключает меню в заголовке.",
 	"TIDY5E.Facilities.Hirelings.Label": "Прислуга",
 	"TIDY5E.Facilities.Defenders.Label": "Защитники",
 	"TIDY5E.Facilities.Creatures.Label": "Существа",
@@ -804,8 +804,8 @@
 	"TIDY5E.Facilities.ContextMenuActionRemove": "Убрать из {facilityName}",
 	"TIDY5E.Facilities.Progress.OrderAndCraftLabel": "{orderName} - {craftingItemName}",
 	"TIDY5E.LocalizationTestKey": "Тестовый ключ локализации",
-	"TIDY5E.ExpandCollapseMenu.OptionTitle": "Expand/Collapse Behavior",
-	"TIDY5E.ExpandCollapseMenu.OptionTopLevel": "Top-Level Sections",
+	"TIDY5E.ExpandCollapseMenu.OptionTitle": "Поведение сворачивания",
+	"TIDY5E.ExpandCollapseMenu.OptionTopLevel": "Разделы верхнего уровня",
 	"TIDY5E.ExpandCollapseMenu.OptionAllSections": "Все разделы",
 	"TIDY5E.SortMenu.OptionAlphabetical": "По алфавиту",
 	"TIDY5E.SortMenu.OptionManual": "Вручную",
@@ -815,5 +815,5 @@
 	"TIDY5E.ItemSummaryCommands.ShowDescriptionInChatLabel": "Инфо",
 	"TIDY5E.ItemSummaryCommands.ShowDescriptionInChatTooltip": "Показывать описание в чате",
 	"TIDY5E.Containers.HoldsNumberUnits": "{holdsElementStart}Держит{holdsElementEnd} {numberElementStart}{number}{numberElementEnd} {unitsElementStart}{units}{unitsElementEnd}",
-	"TIDY5E.BrokenLink": "Broken Link"
+	"TIDY5E.BrokenLink": "Неверная ссылка"
 }
