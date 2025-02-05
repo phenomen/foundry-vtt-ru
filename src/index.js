@@ -108,7 +108,7 @@ async function loadNextTranslations() {
 
 	const translations = game.i18n.translations;
 	const nextTranslations = await game.i18n._loadTranslationFile(
-		"modules/ru-ru/i18n/core/foundry-next.json",
+		"modules/ru-ru/i18n/core/foundry-v13.json",
 	);
 
 	foundry.utils.mergeObject(translations, nextTranslations, { overwrite: true });

@@ -97,40 +97,55 @@
 	"YCoord": "Y-координата",
 	"Yes": "Да",
 
-	"ADVENTURE.ImportSubmit": "Импорт приключения",
-	"ADVENTURE.ImportProgress": "Импорт",
-	"ADVENTURE.ImportHeaderOverview": "Обзор",
-	"ADVENTURE.ImportHeaderContents": "Содержимое",
-	"ADVENTURE.ImportHeaderOptions": "Настройки",
-	"ADVENTURE.ImportOverwriteTitle": "Перезаписать существующее содержимое?",
-	"ADVENTURE.ImportOverwriteWarning": "Если содержимое из приключения {name} уже существует в вашем мире, оно будет перезаписано новым. Продолжить?",
-	"ADVENTURE.ImportAll": "Импорт всего",
-	"ADVENTURE.ImportContent": "Импорт {label}",
+	"ADVENTURE": {
+		"ImportSubmit": "Импорт приключения",
+		"ImportProgress": "Импортируется",
+		"ImportHeaderOverview": "Обзор",
+		"ImportHeaderContents": "Содержимое",
+		"ImportHeaderOptions": "Опции",
+		"ImportOverwriteTitle": "Перезаписать существующее содержимое?",
+		"ImportOverwriteWarning": "Если содержимое из приключения {name} уже существует в вашем мире, оно будет перезаписано новым. Продолжить?",
+		"ImportAll": "Импорт всего",
+		"ImportContent": "Импорт {label}",
 
-	"ADVENTURE.Name": "Название приключения",
-	"ADVENTURE.NameHint": "Выберите название для приключения. Оно должно быть уникальным в наборе, если в нём несколько приключений.",
-	"ADVENTURE.Image": "Изображение баннера",
-	"ADVENTURE.ImageHint": "Изображение для баннера должно быть как минимум 768px в ширину и 300px в высоту.",
-	"ADVENTURE.Caption": "Заголовок баннера",
-	"ADVENTURE.CaptionHint": "Введите текст, который будет отображаться под изображением баннера. Эта надпись может содержать HTML или обычный текст.",
-	"ADVENTURE.Description": "Описание приключения",
-	"ADVENTURE.DescriptionHint": "Введите описание и аннотацию приключения.",
+		"Create": "Создание приключения",
+		"ExportEdit": "Пересборка приключения",
+		"ExportSubmit": "Сборка приключения",
+		"ExportDropZone": "Перетащите содержимое из вашего мира, чтобы добавить его в приключение.",
+		"ExportPackNoSystem": "Вы пытаетесь экспортировать актёров или предметы в приключение, являющееся системонезависимым. Библиотека в приключении должна иметь ту же систему, что и актёры или предметы, которые в неё помещены.",
+		"ExportPrimaryDocumentsOnly": "Можно добавлять только основные документы, существующие в мире",
+		"CreateSuccess": "Приключение \"{name}\" успешно создано!",
+		"UpdateSuccess": "Приключение \"{name}\" успешно обновлено!",
 
-	"ADVENTURE.Create": "Создание приключения",
-	"ADVENTURE.ExportEdit": "Пересборка приключения",
-	"ADVENTURE.ExportSubmit": "Сборка приключения",
-	"ADVENTURE.ExportTabSummary": "Сводка",
-	"ADVENTURE.ExportTabContents": "Содержимое",
-	"ADVENTURE.ExportDropZone": "Перетащите содержимое из вашего мира, чтобы добавить его в приключение.",
-	"ADVENTURE.ExportPackNoSystem": "Вы пытаетесь экспортировать актёров или предметы в приключение, являющееся системонезависимым. Библиотека в приключении должна иметь ту же систему, что и актёры или предметы, которые в неё помещены.",
-	"ADVENTURE.ExportPrimaryDocumentsOnly": "Можно добавлять только основные документы из мира",
-	"ADVENTURE.CreateSuccess": "Приключение \"{name}\" успешно создано!",
-	"ADVENTURE.UpdateSuccess": "Приключение \"{name}\" успешно обновлено!",
+		"DocumentUpdate": "Этот документ будет обновлён при сборке приключения.",
+		"DocumentAdd": "Этот документ будет добавлен при сборке приключения.",
+		"DocumentMissing": "Этот документ отсутствует в мире и не будет обновлён при сборке приключения.",
+		"DocumentRemove": "Этот документ будет удалён при сборке приключения.",
 
-	"ADVENTURE.DocumentUpdate": "Этот документ будет обновлён при сборке приключения",
-	"ADVENTURE.DocumentAdd": "Этот документ будет добавлен при сборке приключения",
-	"ADVENTURE.DocumentMissing": "Этот документ отсутствует в мире и не будет обновлён при сборке приключения",
-	"ADVENTURE.DocumentRemove": "Этот документ будет удалён при сборке приключения",
+		"FIELDS": {
+			"name": {
+				"label": "Название приключения",
+				"hint": "Выберите название для приключения. Оно должно быть уникальным, если в модуле несколько приключений."
+			},
+			"img": {
+				"label": "Изображение обложки",
+				"hint": "Изображение для обложки должно быть как минимум 768px в ширину и 300px в высоту."
+			},
+			"caption": {
+				"label": "Подпись обложки",
+				"hint": "Введите текст, который будет отображаться под обложкой. Эта надпись может содержать HTML или обычный текст."
+			},
+			"description": {
+				"label": "Описание приключения",
+				"hint": "Введите описание, содержащее обзор приключения."
+			}
+		},
+
+		"TABS": {
+			"summary": "Резюме",
+			"contents": "Содержимое"
+		}
+	},
 
 	"APP.NavigateBackConfirm": "Вы уверены, что хотите выйти из игры?",
 
@@ -340,35 +355,48 @@
 	"CARDS.NotifyReset": "Все карты возвращены к: {link}",
 	"CARDS.NotifyReturn": "Все карты возвращены из: {link}",
 
-	"CARD.Create": "Создание карты",
-	"CARD.Delete": "Удаление карты",
-	"CARD.Edit": "Изменение карты",
-	"CARD.HeaderDetails": "Подробности карты",
-	"CARD.HeaderBack": "Рубашка карты",
-	"CARD.HeaderFaces": "Лицо карты",
-	"CARD.BackName": "Название рубашки",
-	"CARD.BackImage": "Изображение рубашки",
-	"CARD.BackText": "Текст рубашки",
-	"CARD.FaceName": "Название лица",
-	"CARD.FaceImage": "Изображение лица",
-	"CARD.FaceText": "Текст лица",
-	"CARD.FaceAdd": "Добавление лица",
-	"CARD.FaceDelete": "Удаление лица",
-	"CARD.FaceNext": "Следующее лицо",
-	"CARD.FacePrevious": "Предыдущее лицо",
-	"CARD.FaceDeleteWarning": "Удаление лица карты окончательно удалит данные для этой карты.",
-	"CARD.Description": "Описание",
-	"CARD.Dimensions": "Размер по умолчанию",
-	"CARD.Drawn": "Вытянута",
-	"CARD.Face": "Лицо",
-	"CARD.Type": "Тип",
-	"CARD.Name": "Название",
-	"CARD.Suit": "Масть",
-	"CARD.Value": "Значение",
-	"CARD.Save": "Сохранение карты",
-	"CARD.Unknown": "Неизвестно ({source})",
-	"CARD.Play": "Играть карту",
-	"CARD.PlayHint": "Разыграть карту, передав её в другую руку или стопку.",
+	"CARD": {
+		"Create": "Создание карты",
+		"Delete": "Удаление карты",
+		"Edit": "Изменение карты",
+		"Image": "Лицо карты",
+		"FaceNext": "Следующее лицо",
+		"FacePrevious": "Предыдущее лицо",
+		"Dimensions": "Размер по умолчанию",
+		"Save": "Сохранение карты",
+		"Unknown": "Неизвестно ({source})",
+		"Play": "Разыграть карту",
+		"PlayHint": "Разыграть карту, передав её в другую руку или стопку.",
+		"ACTIONS": {
+			"AddFace": "Добавление лица",
+			"DeleteFace": {
+				"Title": "Удаление лица",
+				"Warning": "Удаление лица карты окончательно удалит данные для этой карты."
+			}
+		},
+		"TABS": {
+			"details": "Подробности",
+			"faces": "Лица",
+			"back": "Рубашка"
+		},
+		"FIELDS": {
+			"type.label": "Тип",
+			"suit.label": "Масть",
+			"value.label": "Значение",
+			"drawn.label": "Вытянута",
+			"face.label": "Лицо",
+			"faces": {
+				"name.label": "Название лица",
+				"img.label": "Изображение лица",
+				"text.label": "Текст лица"
+			},
+			"back": {
+				"name.label": "Название рубашки",
+				"img.label": "Изображение рубашки",
+				"text.label": "Текст рубашки"
+			}
+		}
+	},
 
 	"CHAT.Chat": "Чат",
 	"CHAT.Clear": "Очистка чата",
@@ -451,6 +479,8 @@
 	"COMBAT.CombatantRemove": "Удаление бойца",
 	"COMBAT.CombatantClear": "Очистка инициативы",
 	"COMBAT.CombatantReroll": "Переброс инициативы",
+	"COMBAT.CombatantClearMovementHistory": "Очистка истории перемещений",
+	"COMBAT.CombatantMovementHistoryCleared": "История перемещений для \"{name}\" очищена.",
 	"COMBAT.CombatantToken": "Связанный токен",
 	"COMBAT.CombatantScene": "Сцена боя",
 	"COMBAT.CombatantNotInScene": "Боец {name} отсутствует на текущей сцене",
@@ -526,6 +556,7 @@
 		"Finish": "Успешно импортировано {number} {type} документов и {folderNumber} папок в папку {folder}."
 	},
 	"COMPENDIUM.ImportEntry": "Импорт записи",
+	"COMPENDIUM.Locked": "{title} [Заблокирована]",
 	"COMPENDIUM.SidebarTitle": "Библиотеки",
 	"COMPENDIUM.Type": "Тип документа",
 	"COMPENDIUM.TypeHint": "Каждая библиотека содержит определённый тип документов.",
@@ -737,7 +768,7 @@
 	"CONTROLS.ObjectNoSnap": "Игнорирование сетки",
 	"CONTROLS.MouseWheel": "колёсико мыши",
 	"CONTROLS.DragDrop": "перетягивание и отпускание",
-	"CONTROLS.IgnoreWalls": "Игнорирование стен",
+	"CONTROLS.UnconstrainedMovement": "Неограниченное движение",
 	"CONTROLS.TokenHeader": "Управление токенами",
 	"CONTROLS.TokenPlaceHidden": "Размещение скрытого токена",
 	"CONTROLS.TokenTarget": "Выбор чужого токена целью",
@@ -801,6 +832,7 @@
 	"DOCUMENT.Create": "Создать {type}",
 	"DOCUMENT.Delete": "Удаление {type}",
 	"DOCUMENT.New": "{type}",
+	"DOCUMENT.NewCount": "Новый {type} ({count})",
 	"DOCUMENT.Update": "Обновление {type}",
 	"DOCUMENT.SkipCreate": "Пропуск создания",
 
@@ -845,6 +877,8 @@
 	"DOCUMENT.Items": "Предметы",
 	"DOCUMENT.JournalEntry": "Журнал",
 	"DOCUMENT.JournalEntries": "Журналы",
+	"DOCUMENT.JournalEntryCategory": "Категория",
+	"DOCUMENT.JournalEntryCategories": "Категории",
 	"DOCUMENT.JournalEntryPage": "Страница",
 	"DOCUMENT.JournalEntryPages": "Страницы",
 	"DOCUMENT.Macro": "Макрос",
@@ -881,12 +915,19 @@
 	"DOCUMENT.FIELDS": {
 		"name.label": "Название",
 		"img.label": "Файл изображения",
+		"description": {
+			"label": "Описание",
+			"hint": " "
+		},
 		"width.label": "Ширина",
 		"height.label": "Высота",
 		"hidden.label": "Скрыто",
 		"elevation.label": "Высота",
 		"rotation.label": "Поворот",
-		"sort.label": "Сортировка",
+		"sort": {
+			"label": "Сортировка",
+			"hint": "Настройка порядки сортировки для этого документа относительно других в этой коллекции. Меньшие числа сортируются первыми."
+		},
 		"x.label": "X",
 		"y.label": "Y"
 	},
@@ -1252,6 +1293,12 @@
 	"JOURNAL.ShowBadPermissions": "Вы можете показывать только те журналы или страницы, которыми владеете.",
 	"JOURNAL.ShowNoPlayers": "В текущей игре нет других игроков для показа.",
 	"JOURNAL.ShowOwnershipHint": "Возможность предоставить права владения участникам, кому показан документ. Если участник уже имеет права выше, то они не будут понижены.",
+	"JOURNAL.LockModeLocked": "Оглавление заблокировано. Нажмите для разблокировки.",
+	"JOURNAL.LockModeUnlocked": "Оглавление разблокировано. Нажмите для блокировки.",
+	"JOURNAL.ConfigureCategories": "Настройка категорий",
+	"JOURNAL.ConfigureCategoriesTitle": "Категории {name} ",
+	"JOURNAL.CategoryName": "Название категории",
+	"JOURNAL.Uncategorized": "Без категории",
 
 	"JOURNALENTRYPAGE.DefaultPageSheet": "{page} страница по умолчанию",
 	"JOURNALENTRYPAGE.Format": "Формат",
@@ -1280,6 +1327,7 @@
 	"JOURNALENTRYPAGE.ShowImageCaption": "Показать подпись изображения",
 	"JOURNALENTRYPAGE.ShowTitle": "Отображение заголовка",
 	"JOURNALENTRYPAGE.HeadingLevel": "Уровень заголовка",
+	"JOURNALENTRYPAGE.Category": "Категория страницы",
 	"JOURNALENTRYPAGE.Level": "Уровень {level}",
 
 	"KEYBINDINGS.NavLabel": "Вкладки настроек раскладки",
@@ -1300,7 +1348,7 @@
 	"KEYBINDINGS.CoreMouse": "Основное управление мышью",
 	"KEYBINDINGS.Restricted": "Только GM",
 	"KEYBINDINGS.ReservedModifiers": "Особые модификаторы: {modifiers}",
-	"KEYBINDINGS.HowToEdit": "Используйте {icon}  или двойной щелчок по сочетанию для изменения значения.",
+	"KEYBINDINGS.HowToEdit": "Используйте {icon} или двойной щелчок по сочетанию для изменения значения.",
 	"KEYBINDINGS.CycleView": "Переключение вида сцены",
 	"KEYBINDINGS.Dismiss": "Переключение меню / Скрытие всех окон",
 	"KEYBINDINGS.Pause": "Пауза",
@@ -1311,6 +1359,7 @@
 	"KEYBINDINGS.Copy": "Копирование объектов",
 	"KEYBINDINGS.Paste": "Вставка объектов",
 	"KEYBINDINGS.Target": "Выбор токена целью",
+	"KEYBINDINGS.Ruler": "Переключение линейки расстояния",
 	"KEYBINDINGS.SendToBack": "Переместить объекты на задний план",
 	"KEYBINDINGS.BringToFront": "Переместить объекты на передний план",
 	"KEYBINDINGS.ToggleCharacterSheet": "Открытие бланка персонажа",
@@ -1388,6 +1437,10 @@
 		"negative": {
 			"label": "Источник тьмы",
 			"hint": "Источник тьмы блокирует свет и видимость, подавляет источники света или видимости, находящиеся внутри его зоны действия."
+		},
+		"priority": {
+			"label": "Приоритет",
+			"hint": "Определяет, как взаимодействуют источники света и темноты. Свет с более высоким приоритетом преграждает темноту с более низким приоритетом, но если приоритеты совпадают, темнота преобладает."
 		},
 		"saturation": {
 			"label": "Насыщенность",
@@ -1497,7 +1550,7 @@
 	"MODMANAGE.FilterAll": "Все модули",
 	"MODMANAGE.FilterActive": "Активные модули",
 	"MODMANAGE.FilterInactive": "Неактивные модули",
-	"MODMANAGE.Build": "Сборка",
+
 	"MODMANAGE.RequiredModule": "Этот модуль должен быть активен",
 	"MODMANAGE.DependencyIssues": "Нельзя активировать из-за недостающих зависимостей",
 	"MODMANAGE.SystemCompatibilityIssueMinimum": "Этот модуль требует минимальную версию системы {minimum}, но ваша версия {version}. Требуется обновление системы.",
@@ -1672,7 +1725,7 @@
 	"SCENE.Preload": "Предзагрузка сцены",
 	"SCENE.View": "Просмотр сцены",
 	"SCENE.ShiftBG": "Смещение фонового изображения",
-	"SCENE.ToggleNav": "Отображение в навигации",
+	"SCENE.ToggleNav": "Изменение видимости",
 	"SCENE.Ambience": {
 		"Base": "Базовая атмосфера",
 		"Dark": "Тёмная атмосфера",
@@ -1683,7 +1736,7 @@
 		"navigation.label": "Видимость в навигации",
 		"navName": {
 			"label": "Название в навигации",
-			"hint": "Альтернативное название, которое будет отображаться в панели навигации."
+			"hint": "Альтернативное название, которое будет отображаться в меню навигации."
 		},
 		"background": {
 			"src": {
@@ -1839,24 +1892,15 @@
 		"RoundPoints": "Круглые точки"
 	},
 
-	"SETTINGS.Configure": "Настройка параметров",
 	"SETTINGS.CombatConfigN": "Трекер боя",
 	"SETTINGS.CombatConfigL": "Настройка трекера боя",
 	"SETTINGS.CombatConfigH": "Настройки боя и трекера.",
 	"SETTINGS.CombatThemeN": "Звуковая тема боя",
 	"SETTINGS.CombatThemeL": "Набор звуков, проигрываемых в начале боя, перед началом вашего хода и в начале вашего хода.",
-	"SETTINGS.Keybindings": "Настройка управления",
-	"SETTINGS.DemoMode": "Режим демонстрации",
-	"SETTINGS.Docs": "Просмотр документации",
-	"SETTINGS.Invite": "Ссылки приглашений",
+
 	"SETTINGS.Issues": "Проблемы",
-	"SETTINGS.ManageModules": "Управление модулями",
-	"SETTINGS.ViewModules": "Посмотреть активные модули",
 	"SETTINGS.Title": "Настройки",
-	"SETTINGS.Tours": "Управление экскурсами",
 	"SETTINGS.Update": "Обновление программы",
-	"SETTINGS.Logout": "Выход из аккаунта",
-	"SETTINGS.Players": "Настройка участников",
 	"SETTINGS.Reset": "Сброс настроек",
 	"SETTINGS.ResetInfo": "Сброс всех настроек на стандартные. Нажмите \"Сохранение изменений\" для подтверждения.",
 	"SETTINGS.Save": "Сохранение изменений",
@@ -1864,13 +1908,8 @@
 	"SETTINGS.ShowToolclips": "Отображение видео-подсказок",
 	"SETTINGS.ShowToolclipsH": "Видео-подсказки будут отображаться при наведении на инструменты в боковой панели.",
 	"SETTINGS.None": "Нет",
-	"SETTINGS.InfoHeader": "Основная информация",
-	"SETTINGS.SettingsHeader": "Параметры игры",
-	"SETTINGS.DocsHeader": "Помощь и документация",
-	"SETTINGS.AccessHeader": "Доступ к игре",
-	"SETTINGS.Wiki": "Wiki сообщества",
 	"SETTINGS.AnimVisionN": "Анимация зрения токена",
-	"SETTINGS.AnimVisionL": "Анимировать зрение токена при движении в источниках света. Отключение может повысить производительность на слабых PC.",
+	"SETTINGS.AnimVisionL": "Анимировать зрение и источники света при перемещении токена. Отключение может повысить производительность на слабых PC.",
 	"SETTINGS.AnimLightN": "Анимация источников света",
 	"SETTINGS.AnimLightL": "Анимировать некоторые источники света. Отключение может повысить производительность на слабых PC.",
 	"SETTINGS.FPSMeterN": "Отображение счётчика кадров",
@@ -1909,7 +1948,6 @@
 	"SETTINGS.ScrollStatusL": "Всплывающий текст статусов может отображаться над токенами или другими объектами, отражая изменения этого объекта.",
 	"SETTINGS.SoftSN": "Включение мягких теней",
 	"SETTINGS.SoftSL": "Мягкие тени делают динамическое освещение намного красивее, но это может влиять на производительность на слабых компьютерах.",
-	"SETTINGS.Support": "Техническая поддержка",
 	"SETTINGS.TabCore": "Основные настройки",
 	"SETTINGS.TabModule": "Настройки модулей",
 	"SETTINGS.TabSystem": "Настройки системы",
@@ -2400,12 +2438,10 @@
 	"PACKAGE.PackageInstallTimedOut": "Не удалось установить пакет",
 	"PACKAGE.UpdateCheckTimedOut": "Не удалось получить обновление",
 	"PACKAGE.WarmCacheTimedOut": "Время ожидания создания кэша истекло",
-	"PACKAGE.SetupErrors": "Обнаружено {number} критических ошибок в установленных пакетах. Подробности в консоли (F12).",
-	"PACKAGE.SetupWarnings": "Обнаружено {number} ошибок совместимости в установленных пакетах. Подробности в консоли (F12).",
 	"PACKAGE.Lock": "Заблокировать изменение",
-	"PACKAGE.Locked": "Заблокирован",
+	"PACKAGE.Locked": "Заблокировано",
 	"PACKAGE.Unlock": "Разблокировать изменение",
-	"PACKAGE.Unlocked": "Разблокирован",
+	"PACKAGE.Unlocked": "Разблокировано",
 	"PACKAGE.Favorite": "Добавить в избранное",
 	"PACKAGE.Unfavorite": "Удалить из избранного",
 	"PACKAGE.InstallFailed": "При установке пакета возникли ошибки. Подробности в консоли (F12).",
@@ -2486,10 +2522,12 @@
 	"FOLDER.Create": "Создание папки",
 	"FOLDER.Collapse": "Свернуть все папки",
 	"FOLDER.Delete": "Удаление всего",
+	"FOLDER.DeleteName": "Удаление всего: {name}",
 	"FOLDER.DeleteWarning": "Эта папка и всё её содержимое будет навсегда удалено без возможности восстановления.",
 	"FOLDER.Edit": "Изменение папки",
 	"FOLDER.Export": "Экспорт в библиотеку",
 	"FOLDER.Remove": "Удаление папки",
+	"FOLDER.RemoveName": "Удаление папки: {name}",
 	"FOLDER.RemoveWarning": "Эта папка и всё её содержимое будет навсегда удалено, а содержимое перемещено в вышестоящую папку.",
 	"FOLDER.SortAlphabetical": "По алфавиту",
 	"FOLDER.SortManual": "Ручной порядок",
@@ -2513,28 +2551,29 @@
 	},
 	"FOLDER.InvalidDocumentType": "Недопустимый тип документа \"{type}\" для этой папки.",
 	"FOLDER.ExceededMaxDepth": "Нельзя иметь более {depth} уровней вложения папок.",
-	"FOLDER.DocumentSort": "Сортировка",
-	"FOLDER.DocumentSortHint": "Настройка порядки сортировки для этого документа относительно других в этой коллекции. Меньшие числа сортируются первыми.",
 	"FOLDER.FIELDS": {
 		"name.label": "Название папки",
 		"color.label": "Цвет папки",
 		"sorting.label": "Сортировка"
 	},
 
-	"OWNERSHIP.Title": "Настройка владения: {object}",
-	"OWNERSHIP.NONE": "Нет",
-	"OWNERSHIP.LIMITED": "Ограниченный",
-	"OWNERSHIP.OBSERVER": "Наблюдатель",
-	"OWNERSHIP.OWNER": "Владелец",
-	"OWNERSHIP.DEFAULT": "По умолчанию",
-	"OWNERSHIP.NOCHANGE": "Без изменений",
-	"OWNERSHIP.INHERIT": "Наследуется",
-	"OWNERSHIP.AllPlayers": "Все игроки",
-	"OWNERSHIP.HintFolder": "Настройте уровень доступа для всех документов в этой папке. Изменения не затронут документы во вложенных папках.",
-	"OWNERSHIP.HintDocument": "Настройте уровень доступа для этого документа, предоставляя участнику различные права просмотра.",
-	"OWNERSHIP.Configure": "Настройка владения",
-	"OWNERSHIP.ShowGM": "Отображение ведущих",
-	"OWNERSHIP.Legend": "Владение",
+	"OWNERSHIP": {
+		"Title": "Настройка владения: {object}",
+		"NONE": "Нет",
+		"LIMITED": "Ограниченный",
+		"OBSERVER": "Наблюдатель",
+		"OWNER": "Владелец",
+		"DEFAULT": "По умолчанию",
+		"NOCHANGE": "Без изменений",
+		"INHERIT": "Наследуется",
+		"AllPlayers": "Все игроки",
+		"HintFolder": "Настройте уровень доступа для всех документов в этой папке. Изменения не затронут документы во вложенных папках.",
+		"HintDocument": "Настройте уровень доступа для этого документа, предоставляя участнику различные права просмотра.",
+		"Configure": "Настройка владения",
+		"ShowGM": "Отображение ведущих",
+		"Legend": "Владение",
+		"Save": "Сохранить изменения"
+	},
 
 	"PERMISSION.Title": "Настройка прав участников",
 	"PERMISSION.Configure": "Настройка прав",
@@ -2591,6 +2630,8 @@
 	"PERMISSION.TokenConfigureHint": "Позволить роли изменять параметры токенов под своим владением.",
 	"PERMISSION.WallDoors": "Открытие и закрытие дверей",
 	"PERMISSION.WallDoorsHint": "Позволить роли взаимодействовать с дверьми на слое стен.",
+	"PERMISSION.QueryUser": "Запрос участников",
+	"PERMISSION.QueryUserHint": "Позволить роли отправлять запросы другим участникам.",
 	"PERMISSION.WarningNoCreate": "У вас не достаточно прав для создания {document}.",
 
 	"REGION": {
@@ -2660,25 +2701,40 @@
 		},
 		"EVENTS": {
 			"regionBoundary": {
-				"label": "Границы области изменены"
+				"label": "Изменение границ области"
 			},
-			"behaviorStatus": {
-				"label": "Статус поведения изменён"
+			"behaviorActivated": {
+				"label": "Поведение активировано"
+			},
+			"behaviorDeactivated": {
+				"label": "Поведение деактивировано"
+			},
+			"behaviorViewed": {
+				"label": "Поведение видимо"
+			},
+			"behaviorUnviewed": {
+				"label": "Поведение невидимо"
 			},
 			"tokenEnter": {
-				"label": "Вход токена"
+				"label": "Токен оказывается в области"
 			},
 			"tokenExit": {
-				"label": "Выход токена"
+				"label": "Токен покидает область"
 			},
 			"tokenMoveIn": {
-				"label": "При входе токена"
+				"label": "Движение токена внутрь"
 			},
 			"tokenMoveOut": {
-				"label": "При выходе токена"
+				"label": "Движение токена наружу"
 			},
 			"tokenMoveWithin": {
-				"label": "При перемещении внутри"
+				"label": "Движение токена внутри"
+			},
+			"tokenAnimateIn": {
+				"label": "Начало анимации токена"
+			},
+			"tokenAnimateOut": {
+				"label": "Конец анимации токена"
 			},
 			"tokenTurnStart": {
 				"label": "Начало хода токена"
@@ -2831,6 +2887,13 @@
 					}
 				}
 			},
+			"modifyMovementCost": {
+				"FIELDS": {
+					"difficulties": {
+						"hint": "Настройте множитель цены перемещения для каждого действия движения. Перекрывающие друг друга модификаторы цены складываются мультипликативно."
+					}
+				}
+			},
 			"teleportToken": {
 				"FIELDS": {
 					"destination": {
@@ -2860,8 +2923,8 @@
 		}
 	},
 
-	"RULER.MovementNotAllowed": "Отмеренный путь движения не доступен.",
-	"RULER.MovementCollision": "Движение блокируется стеной.",
+	"RULER.MovementNotAllowed": "Отмеренный путь перемещения недоступен.",
+	"RULER.MovementCollision": "Перемещение блокируется стеной.",
 	"RULER.MovementNoPermission": "У вас не достаточно прав для перемещения этого токена.",
 	"RULER.MovementLocked": "Не удалось переместить токен, т.к. он заблокирован.",
 
@@ -2889,6 +2952,37 @@
 	"SIDEBAR.DirectoryTitle": "Папка для {type}",
 	"SIDEBAR.Documentation": "Документация Foundry VTT",
 	"SIDEBAR.Wiki": "Wiki сообщества Foundry VTT",
+
+	"SIDEBAR.COMPENDIUM.LABELS": {
+		"Ownership": "Особое владение",
+		"Locked": "Заблокировано"
+	},
+
+	"SIDEBAR.SETTINGS": {
+		"LABELS": {
+			"Build": "Версия сборки",
+			"Demo": "Демонстрационный режим",
+			"Modules": "Активные модули"
+		},
+		"HEADERS": {
+			"Settings": "Настройка игры",
+			"Docs": "Помощь и документация",
+			"Access": "Доступ к игре"
+		},
+		"ACTIONS": {
+			"Configure": "Настройка параметров",
+			"Docs": "Просмотр документации",
+			"Invite": "Ссылки приглашений",
+			"Keybindings": "Настройка управления",
+			"Logout": "Выход из мира",
+			"ManageModules": "Управление модулями",
+			"Players": "Управление участниками",
+			"Support": "Техническая поддержка",
+			"Tours": "Управление экскурсами",
+			"ViewModules": "Просмотр активных модулей",
+			"Wiki": "Wiki сообщества"
+		}
+	},
 
 	"SUPPORT.Title": "Подробности поддержки",
 	"SUPPORT.Places": "Где могут помочь",
@@ -2933,9 +3027,18 @@
 		"NoAvailableResults": "Нет доступных результатов для выбора из этой таблицы.",
 		"Result": "Результат",
 		"ResultDescription": "Описание результата",
+		"SHEETS": {
+			"Config": "Настройка бланка",
+			"View": "Просмотр бланка"
+		},
 		"ACTIONS": {
+			"ChangeMode": {
+				"Edit": "Изменение",
+				"View": "Просмотр"
+			},
 			"OpenResultConfig": "Настройка результата",
 			"DrawResult": "Вытянуть результат",
+			"DrawSpecificResult": "Вытянуть определённый результат",
 			"NormalizeResults": "Усреднить диапазоны",
 			"ResetResults": "Сбросить результат",
 			"CreateResult": "Добавить результат",
@@ -2956,20 +3059,18 @@
 	},
 
 	"TABLE_RESULT": {
-		"DocumentLabel": "{name} ({_id})",
+		"Details": "Подробности",
 		"ACTIONS": {
 			"Submit": "Обновить результаты"
 		},
 		"TYPES": {
 			"text": "Текст",
-			"document": "Документ",
-			"pack": "Библиотека"
+			"document": "Документ"
 		},
 		"FIELDS": {
+			"name.label": "Название результата",
 			"type.label": "Тип",
-			"documentCollection.label": "Коллекция",
-			"documentId.label": "Документ",
-			"text.label": "Описание результата",
+			"documentUuid.label": "Документ",
 			"weight.label": "Вес",
 			"range.label": "Диапазон"
 		}
@@ -3162,8 +3263,8 @@
 				"hint": "Позволить токену видеть освещённые области в поле зрения."
 			},
 			"range": {
-				"label": "Дистанция зрения",
-				"hint": "Дистанция зрения токена без источника света."
+				"label": "Дистанция зрения без света",
+				"hint": "Дистанция зрения токена без источников света."
 			},
 			"angle": {
 				"label": "Угол зрения",
@@ -3376,6 +3477,13 @@
 			"CUSTOM": "Особая"
 		}
 	},
+	"TOKEN.MOVEMENT": {
+		"ACTIONS": {
+			"walk": {
+				"label": "Ходьба"
+			}
+		}
+	},
 
 	"TYPES.Base": "Базовый",
 	"TYPES.Cards.deck": "Колода",
@@ -3391,6 +3499,7 @@
 	"TYPES.RegionBehavior.displayScrollingText": "Отображение всплывающего текста",
 	"TYPES.RegionBehavior.executeMacro": "Запуск макроса",
 	"TYPES.RegionBehavior.executeScript": "Запуск скрипта",
+	"TYPES.RegionBehavior.modifyMovementCost": "Модификатор цены перемещения",
 	"TYPES.RegionBehavior.pauseGame": "Приостановка игры",
 	"TYPES.RegionBehavior.suppressWeather": "Блокировка погоды",
 	"TYPES.RegionBehavior.teleportToken": "Телепортация токена",
@@ -3537,7 +3646,7 @@
 	},
 	"WALL.Title": "Настройка стены",
 	"WALL.TitleMany": "Настройка стен [нескольких]",
-	"WALL.Instructions": "Настройка ограничения передвижения и зрения этой стены.",
+	"WALL.Instructions": "Настройка ограничений перемещения и восприятия.",
 	"WALL.CoordinateRange": "({p0X}, {p0Y}) на ({p1X}, {p1Y})",
 	"WALL.DoorAnimation": "Анимация двери",
 	"WALL.DoorConfiguration": "Настройка двери",
