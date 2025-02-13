@@ -4,10 +4,10 @@
 		"ButtonSubmit": "Подтвердить",
 		"CommunityCharSheet": "Старый бланк персонажа",
 		"CommunityNPCSheet": "Бланк персонажа ведущего",
-		"CommunityVicSheet": "Бланк транспорта",
-		"CommunityItemSheet": "Бланк предмета",
+		"CommunityVicSheet": "Старый бланк транспорта",
 		"ItemSheet": "Бланк предмета Savage Worlds",
 		"GroupSheet": "Бланк группы Savage Worlds",
+		"VehicleSheet": "Бланк транспорта Savage Worlds",
 		"HeadquartersSheet": "Бланк штаб-квартиры Savage Worlds",
 		"Expand": "Раскрыть",
 		"OfficialSheet": "Официальный бланк Savage Worlds",
@@ -284,7 +284,22 @@
 		"Mods": "Модификации",
 		"ModSlots": "Ячейки модификации",
 		"MaxMods": "Максимум модификаций",
+		"VehicleAttributes": {
+			"Label": "Характеристики транспорта",
+			"Agility": "У транспорта есть Ловкость",
+			"Spirit": "У транспорта есть Характер",
+			"Smarts": "У транспорта есть Смекалка",
+			"Strength": "У транспорта есть Сила",
+			"Vigor": "У транспорта есть Выносливость"
+		},
+		"Energy": {
+			"Label": "Энергия",
+			"Value": "Текущая энергия",
+			"Max": "Макс. энергия",
+			"Enable": "Есть энергия"
+		},
 		"Operator": "Водитель",
+		"OperatorIdHint": "Перенесите актёра или выберите токен",
 		"ManCheck": "Проверка маневрирования",
 		"AltSkill": "Альтернативный навык",
 		"Class": "Тип",
@@ -458,6 +473,7 @@
 			"GreenJoker": "Зелёный джокер / Трефовый джокер"
 		},
 		"IsJoker": "Джокер",
+		"Complication": "Осложнение",
 		"OpenACEditor": "Открыть в редакторе карт действий",
 		"Yes": "Да",
 		"No": "Нет",
@@ -550,6 +566,7 @@
 		"ChaseCardsCleared": "Все карты погони были удалены со сцены.",
 		"SetUpChase": "Разложить погоню",
 		"ChaseLayout": "Схема",
+		"ChaseLayoutError": "На сцене недостаточно места, чтобы организовать погоню.",
 		"ChaseRows": "Строки",
 		"ChaseColumns": "Столбцы",
 		"ChaseDiscard": "Стопка сброса",
@@ -585,6 +602,7 @@
 		"ActionsOverride": "Перезапись",
 		"EffectsTemporary": "Временные эффекты",
 		"EffectsPermanent": "Постоянные эффекты",
+		"EffectsInactive": "Неактивные эффекты",
 		"Ranks": {
 			"Novice": "Новичок",
 			"Seasoned": "Закалённый",
@@ -758,9 +776,13 @@
 				"Name": "Использование штрафа нагрузки",
 				"Hint": "Добавляет штраф нагрузки. Учтите, что проверки {vigor} для сопротивления {fatigue} в данный момент не поддерживаются!"
 			},
+			"VehicleEnergy": {
+				"Name": "Энергия транспорта",
+				"Hint": "Энергетические транспорт и броня"
+			},
 			"VehicleMods": {
 				"Name": "Модификации транспорта",
-				"Hint": "Транспорт имеет ячейки модификаций"
+				"Hint": "Ячейки модификаций у транспорта и брони"
 			},
 			"VehicleEdges": {
 				"Name": "Черты транспорта",
@@ -1480,6 +1502,7 @@
 			"Unassigned": "Не назначен"
 		},
 		"Combat": {
+			"LinkScene": "Прикрепить сцену",
 			"DealAll": "Вытянуть всем",
 			"DealNPC": "Вытянуть персонажам ведущего",
 			"StartSurpriseRound": "Начать внезапный раунд",
@@ -1569,7 +1592,23 @@
 				}
 			}
 		},
-		"ApplicableEffects": "Применяемые эффекты"
+		"ApplicableEffects": "Применяемые эффекты",
+		"DramaticTask": {
+			"Successes": "Жетоны успеха",
+			"MaxRounds": {
+				"Label": "Число раундов",
+				"Hint": "Сколько раундов длится Вызов судьбе?"
+			},
+			"MaxTokens": {
+				"Label": "Жетоны успеха",
+				"Hint": "Необходимое количество жетонов успеха, прежде чем закончится время"
+			}
+		},
+		"Vehicle": {
+			"Cargo": {
+				"Capacity": "Вместимость груза"
+			}
+		}
 	},
 	"TYPES": {
 		"Actor": {
@@ -1595,6 +1634,10 @@
 		"Card": {
 			"adventure": "Карта приключений",
 			"poker": "Покерная карта"
+		},
+		"Combat": {
+			"chase": "Погоня",
+			"dramaticTask": "Вызов судьбе"
 		},
 		"JournalEntryPage": {
 			"headquarters": "Штаб-квартира"

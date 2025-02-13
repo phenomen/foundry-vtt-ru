@@ -1,7 +1,11 @@
 {
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-	"vcs": { "enabled": false, "clientKind": "git", "useIgnoreFile": false },
-	"files": { "ignoreUnknown": false, "ignore": [] },
+	"vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
+	"files": {
+		"maxSize": 3145728,
+		"ignoreUnknown": false,
+		"ignore": ["ru-ru"]
+	},
 	"formatter": {
 		"enabled": true,
 		"formatWithErrors": false,
@@ -9,9 +13,8 @@
 		"indentWidth": 2,
 		"lineEnding": "lf",
 		"lineWidth": 100,
-		"attributePosition": "auto",
-		"bracketSpacing": true,
-		"ignore": ["./node_modules/", "./ru-ru/"]
+		"attributePosition": "multiline",
+		"bracketSpacing": true
 	},
 	"organizeImports": { "enabled": true },
 	"linter": { "enabled": true, "rules": { "recommended": true } },
@@ -22,10 +25,7 @@
 			"trailingCommas": "all",
 			"semicolons": "always",
 			"arrowParentheses": "always",
-			"bracketSameLine": false,
-			"quoteStyle": "double",
-			"attributePosition": "multiline",
-			"bracketSpacing": true
+			"quoteStyle": "double"
 		}
 	}
 }

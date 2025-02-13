@@ -75,7 +75,12 @@
 	"TIDY5E.ContextMenuActionPrepare": "Подготовить",
 	"TIDY5E.ContextMenuActionUnprepare": "Снять подготовку",
 	"TIDY5E.ContextMenuActionEdit": "Изменить",
+	"TIDY5E.ContextMenuActionView": "Просмотр",
 	"TIDY5E.ContextMenuActionDelete": "Удалить",
+	"TIDY5E.ContextMenuActionPinToAttributes": "Прикрепить в ресурсы",
+	"TIDY5E.ContextMenuActionUnpinFromAttributes": "Открепить от ресурсов",
+	"TIDY5E.ContextMenuActionShowLimitedUses": "Показать ограниченные использования",
+	"TIDY5E.ContextMenuActionShowQuantity": "Показать количество",
 
 	"TIDY5E.EmptyContainer": "Этот контейнер пуст.",
 	"TIDY5E.EmptySection": "Этот раздел пуст. Разблокируйте бланк для редактирования.",
@@ -278,6 +283,9 @@
 	"TIDY5E.UserSettings.TabActionsList": {
 		"tabLabel": "Список действий"
 	},
+	"TIDY5E.UserSettings.TabActivities": {
+		"tabLabel": "Функции"
+	},
 	"TIDY5E.Settings.ItemCardsForAllItems": {
 		"name": "Отображать информационные карточки во всех режимах.",
 		"hint": "Отключите, если в режиме сетки вы предпочитаете выдвигающиеся карточки информации."
@@ -365,9 +373,9 @@
 		"name": "Toggle Empty Character Skills",
 		"hint": "Adds a toggle button for showing/hiding empty skills."
 	},
-	"TIDY5E.Settings.MoveTraitsBelowResources": {
-		"name": "Move Traits Below Resources",
-		"hint": "Positions traits below character resources."
+	"TIDY5E.Settings.MoveTraitsToRightOfSkills": {
+		"name": "Move Traits to Right of Skills",
+		"hint": "Positions traits to the right of the skill list, above most other UIs on the right side (e.g. Favorites, NPC Abilities)."
 	},
 	"TIDY5E.Settings.ShowEquippedAmmoOnly": {
 		"name": "Show Equipped Ammunition Only",
@@ -465,7 +473,7 @@
 		"hint": "Shows an encumbrance bar on vehicle sheets."
 	},
 	"TIDY5E.Settings.UseMulticlassSpellbookFilter": {
-		"name": "Use Multiclass Spellbook Filter",
+		"name": "Использовать фильтр мультикласса заклинаний",
 		"hint": "Allows filtering spells by class in the spellbook tab. The spell must be associated with a class using the Class selector on the spell edit sheet."
 	},
 	"TIDY5E.Settings.UseSpellClassIcons": {
@@ -606,6 +614,12 @@
 	"TIDY5E.Settings.UseTidySpellSchoolIcons": {
 		"name": "Иконки школ заклинаний Tidy 5e",
 		"hint": "Use Tidy's handpicked icons for spell schools. To customize spell school icons through CONFIG.DND5E or through other modules, disable this option. To extend Tidy's custom spell school icons, refer to the Tidy API documentation."
+	},
+	"TIDY5E.Settings.InlineActivitiesPosition": {
+		"name": "Расположение функций",
+		"hint": "При раскрытии информации отображаются функции предмета. Здесь можно определить, будут ли функции располагаться сверху, перед описанием предмета, или снизу, под описанием предмета, а также их вид.",
+		"top": "Top",
+		"bottom": "Bottom"
 	},
 	"TIDY5E.Settings.Reset": {
 		"name": "Сброс настроек на стандартные",
@@ -750,12 +764,12 @@
 	"TIDY5E.Commands.HideLegendaryToolbar": "Hide Legendary Toolbar",
 	"TIDY5E.Commands.ShowContainerPanel": "Show Container Panel",
 	"TIDY5E.Commands.HideContainerPanel": "Hide Container Panel",
-	"TIDY5E.ItemFilters.CanCast": "Can Cast",
-	"TIDY5E.ItemFilters.Options.IncludeRitualsInCanCast": "Include Rituals in \"Can Cast\"",
-	"TIDY5E.ItemFilters.CanUse": "Can Use",
-	"TIDY5E.ItemFilters.ClearAll": "Clear All",
-	"TIDY5E.ItemFilters.Category.Miscellaneous": "Miscellaneous",
-	"TIDY5E.ItemFilters.Filter.Other": "Other",
+	"TIDY5E.ItemFilters.CanCast": "Можно сотворить",
+	"TIDY5E.ItemFilters.Options.IncludeRitualsInCanCast": "Влкючать ритуалы в 'Можно сотворить'",
+	"TIDY5E.ItemFilters.CanUse": "Можно использ.",
+	"TIDY5E.ItemFilters.ClearAll": "Очистить все",
+	"TIDY5E.ItemFilters.Category.Miscellaneous": "Прочее",
+	"TIDY5E.ItemFilters.Filter.Other": "Другое",
 	"TIDY5E.GMOnly.Message": "GM Only: {message}",
 	"TIDY5E.ReminderToBackUp": "Always remember to back up your world.",
 	"TIDY5E.Utilities.Tools": "Инструменты",
@@ -790,6 +804,7 @@
 		"text": "Вы точно хотите использовать по умолчанию?"
 	},
 	"TIDY5E.RollRecharge.Hint": "{rechargeLabel} (Shift+ЛКМ, чтобы пропустить бросок и моментально восстановить)",
+	"TIDY5E.RollRecharge.Label": "Recharge",
 	"TIDY5E.SpellSourceClassAssignments.Identifier": "Идентификатор исходного класса",
 	"TIDY5E.SpellSourceClassAssignments.IdentifierHint": "Идентификатор класса этого заклинания. Чтобы назначить идентификатор, которого нет у персонажа, введите его в это поле.",
 	"TIDY5E.SpellSourceClassAssignments.ShowUnassignedOnly.Text": "Показать только неназначенные",
