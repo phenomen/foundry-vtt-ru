@@ -5,7 +5,9 @@ export async function init() {
 
 	if (game.settings.get("ru-ru", "compendiumTranslation")) {
 		setupBabele("dnd5e");
-		registerConverters();
+		if (game.babele) {
+			registerConverters();
+		}
 	} else {
 		if (game.settings.get("ru-ru", "compendiumTranslation")) {
 			new Dialog({

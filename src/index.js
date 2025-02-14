@@ -47,6 +47,7 @@ Hooks.once("init", () => {
 	];
 
 	/* Переключатель рода случайных прилагательных */
+	/*
 	game.settings.register("ru-ru", "displayAdjectiveControls", {
 		name: "Переключатель рода случайных прилагательных",
 		hint: "Если вы используете функцию добавления случайных прилагательных к токенам, вы можете добавить переключатель рода на панель инструментов.",
@@ -59,11 +60,13 @@ Hooks.once("init", () => {
 			window.location.reload();
 		},
 	});
+	*/
 
 	/* Пол прилагательных по умолчанию */
 	CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
 
-	loadNextTranslations();
+	/* Загрузка перевода FVTT V13 */
+	//loadNextTranslations();
 
 	/* Системные скрипты */
 	for (const path in scripts) {
@@ -76,6 +79,8 @@ Hooks.once("init", () => {
 });
 
 /* Выбор пола для случайных прилагательных */
+/* TODO: переделать на новый API для FVTT V13 */
+/*
 Hooks.on("getSceneControlButtons", getSceneControlButtons);
 
 function getSceneControlButtons(controls) {
@@ -100,16 +105,17 @@ function getSceneControlButtons(controls) {
 		});
 	}
 }
+*/
 
-/* Загрузка перевода FVTT V13 */
 /* TODO: после релиза FVTT V13, слияние в обратную сторону и спустя несколько обновлений V13, удалить этот код */
 async function loadNextTranslations() {
 	if (Number(game.version.slice(0, 2)) < 13) return;
 
-	const translations = game.i18n.translations;
-	const nextTranslations = await game.i18n._loadTranslationFile(
+	const nextTranslations = await foundry.utils.fetchJsonWithTimeout(
 		"modules/ru-ru/i18n/core/foundry-v13.json",
 	);
 
-	foundry.utils.mergeObject(translations, nextTranslations, { overwrite: true });
+	game.i18n.translations = foundry.utils.mergeObject(game.i18n.translations, nextTranslations, {
+		overwrite: true,
+	});
 }

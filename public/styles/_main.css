@@ -1,23 +1,4 @@
-/* FOUNDRY */
-
-button,
-form .form-group label,
-.tabs .item,
-.application nav.tabs {
-	font-family: var(--font-sans-condensed);
-	font-weight: 500;
-}
-
-select,
-.header-button,
-.window-header,
-.playlist-sounds,
-.updated-packages-table th.action,
-.updated-packages-table td.action,
-.compendium-sidebar .dropdown-menu .dropdown-list .dropdown-item,
-.context-item {
-	font-family: var(--font-sans-condensed);
-}
+/* MAIN MENU */
 
 body.auth #main-header h1 {
 	font-size: 3rem;
@@ -25,6 +6,10 @@ body.auth #main-header h1 {
 
 #setup-sidebar .news > h3 {
 	font-size: var(--text-xl);
+}
+
+#setup-packages .package .package-title {
+	font-weight: 600;
 }
 
 .setup .form-group label {
@@ -44,23 +29,6 @@ body.auth #main-header h1 {
 
 .directory .directory-list .directory-item {
 	font-size: var(--text-sm);
-}
-
-.key,
-.show-title,
-.filepicker .favorites .label,
-.active-effect-sheet .effects-header {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--text-sm);
-}
-
-.sheet.journal-entry-page .journal-header .page-level {
-	flex: 0 0 130px;
-	margin-left: 0.4rem;
-}
-
-.filepicker .favorites .label {
-	flex: 2;
 }
 
 .updated-packages :is(.header, .result) > div {
@@ -109,6 +77,19 @@ body.auth #main-header h1 {
 		font-size: 1.5rem !important;
 		font-weight: 500 !important;
 	}
+}
+
+/*  GAME UI */
+
+button,
+a.button {
+	font-family: var(--font-sans-condensed);
+}
+
+/* Override for icon buttons */
+button.icon,
+a.button.icon {
+	font-family: var(--font-awesome);
 }
 
 /* MODULES */
