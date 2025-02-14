@@ -5,7 +5,7 @@ body.auth #main-header h1 {
 }
 
 #setup-sidebar .news > h3 {
-	font-size: var(--text-xl);
+	font-size: var(--font-size-20);
 }
 
 #setup-packages .package .package-title {
@@ -13,22 +13,22 @@ body.auth #main-header h1 {
 }
 
 .setup .form-group label {
-	font-size: var(--text-base);
+	font-size: var(--font-size-15);
 }
 
 .package-list .package .package-controls button {
 	width: 130px;
 	font-family: var(--font-sans-condensed);
-	font-size: var(--text-sm);
+	font-size: var(--font-size-14);
 	line-height: 20px;
 }
 
 .journal-sheet .editor-content {
-	font-size: var(--text-base);
+	font-size: var(--font-size-15);
 }
 
 .directory .directory-list .directory-item {
-	font-size: var(--text-sm);
+	font-size: var(--font-size-14);
 }
 
 .updated-packages :is(.header, .result) > div {
@@ -68,7 +68,7 @@ body.auth #main-header h1 {
 
 .toolclip {
 	font-family: var(--font-sans-condensed);
-	font-size: var(--text-base);
+	font-size: var(--font-size-15);
 }
 
 #menu #menu-items {
@@ -81,15 +81,31 @@ body.auth #main-header h1 {
 
 /*  GAME UI */
 
-button,
-a.button {
+select,
+.header-button,
+.window-header,
+.playlist-sounds,
+.updated-packages-table th.action,
+.updated-packages-table td.action,
+.compendium-sidebar .dropdown-menu .dropdown-list .dropdown-item,
+.context-item {
 	font-family: var(--font-sans-condensed);
 }
 
-/* Override for icon buttons */
+button,
+a.button,
+form .form-group label,
+.tabs .item,
+.application nav.tabs {
+	font-family: var(--font-sans-condensed);
+	font-weight: 500;
+}
+
 button.icon,
-a.button.icon {
+a.button.icon,
+label.search::after {
 	font-family: var(--font-awesome);
+	font-weight: 600;
 }
 
 /* MODULES */
@@ -97,7 +113,7 @@ a.button.icon {
 #AA-autorec-settings .window-content header ul li {
 	font-family: var(--font-sans-condensed);
 	font-weight: 600;
-	font-size: var(--text-sm);
+	font-size: var(--font-size-14);
 }
 
 .compendium-browser .spell-browser .spell .spell-tags {

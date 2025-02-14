@@ -1,20 +1,6 @@
-:root {
-	--text-xs: 0.8rem;
-	--text-sm: 0.85rem;
-	--text-base: 1rem;
-	--text-lg: 1.125rem;
-	--text-xl: 1.25rem;
-	--text-2xl: 1.5rem;
-	--text-3xl: 1.875rem;
-	--text-4xl: 2.25rem;
-	--text-5xl: 3rem;
-	--text-6xl: 3.75rem;
-	--text-7xl: 4.5rem;
-	--text-8xl: 6rem;
-}
+/* CYRILLIC FONTS */
 
 /* Roboto Condensed */
-
 @font-face {
 	font-family: "Roboto Condensed";
 	font-style: italic;
@@ -100,7 +86,6 @@
 }
 
 /* Roboto Sans */
-
 @font-face {
 	font-family: "Roboto";
 	font-style: italic;
@@ -186,7 +171,6 @@
 }
 
 /* Roboto Serif */
-
 @font-face {
 	font-family: "Roboto Serif";
 	font-style: italic;
@@ -258,7 +242,6 @@
 }
 
 /* Beaufort */
-
 @font-face {
 	font-family: "Beaufort";
 	src: url("../fonts/Beaufort/Beaufort-Regular.woff2") format("woff2");
@@ -301,8 +284,7 @@
 	font-style: italic;
 }
 
-/* MISC  */
-
+/* Extras */
 @font-face {
 	font-family: "Manuskript";
 	src: url("../fonts/Manuskript.woff2") format("woff2");
@@ -323,8 +305,7 @@
 	src: url("../fonts/Exocet.woff2") format("woff2");
 }
 
-/* REPLACEMENTS  */
-
+/* Replacements  */
 @font-face {
 	font-family: "Signika";
 	font-style: italic;
@@ -462,6 +443,7 @@
 	font-weight: 400;
 }
 
+/* Variables */
 body {
 	--font-primary: "Roboto", "Arial", sans-serif;
 	--font-sans: "Roboto", "Arial", sans-serif;

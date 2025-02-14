@@ -1,6 +1,6 @@
 const scripts = import.meta.glob("./systems/*.js");
 
-Hooks.once("init", () => {
+Hooks.once("init", async () => {
 	const system = game.system.id.toLowerCase();
 	const route = foundry.utils.getRoute("/");
 
@@ -65,9 +65,6 @@ Hooks.once("init", () => {
 	/* Пол прилагательных по умолчанию */
 	CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
 
-	/* Загрузка перевода FVTT V13 */
-	//loadNextTranslations();
-
 	/* Системные скрипты */
 	for (const path in scripts) {
 		scripts[path]().then((mod) => {
@@ -106,16 +103,3 @@ function getSceneControlButtons(controls) {
 	}
 }
 */
-
-/* TODO: после релиза FVTT V13, слияние в обратную сторону и спустя несколько обновлений V13, удалить этот код */
-async function loadNextTranslations() {
-	if (Number(game.version.slice(0, 2)) < 13) return;
-
-	const nextTranslations = await foundry.utils.fetchJsonWithTimeout(
-		"modules/ru-ru/i18n/core/foundry-v13.json",
-	);
-
-	game.i18n.translations = foundry.utils.mergeObject(game.i18n.translations, nextTranslations, {
-		overwrite: true,
-	});
-}

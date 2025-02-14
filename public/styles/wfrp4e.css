@@ -87,11 +87,11 @@
 }
 
 :root {
-	--window-header-title-font-size: var(--text-base);
-	--major-button-font-size: var(--text-sm);
-	--tab-header-font-size: var(--text-xs);
-	--actor-input-font-size: var(--text-xs);
-	--actor-label-font-size: var(--text-xs);
+	--window-header-title-font-size: var(--font-size-15);
+	--major-button-font-size: var(--font-size-14);
+	--tab-header-font-size: var(--font-size-12);
+	--actor-input-font-size: var(--font-size-12);
+	--actor-label-font-size: var(--font-size-12);
 }
 
 .wfrp4e.actor .randomize-buttons .randomize-label {
@@ -130,7 +130,7 @@ span.item-carries {
 .app.window-app.sheet.item-sheet.prayer-sheet .label-text,
 .app.window-app.sheet.item-sheet.spell-sheet .label-text,
 .app.window-app.sheet.item-sheet .tab .label-text {
-	font-size: var(--text-xs);
+	font-size: var(--font-size-12);
 }
 
 .sidebar-popout button,
@@ -140,11 +140,11 @@ span.item-carries {
 #sidebar button,
 #sidebar .header-actions button,
 .action-buttons button {
-	font-size: var(--text-base);
+	font-size: var(--font-size-15);
 }
 
 .app.window-app.sheet.item-sheet .sheet-tabs.tabs > a {
 	font-family: var(--font-fancy);
-	font-size: var(--text-base);
+	font-size: var(--font-size-15);
 	font-weight: 700;
 }
