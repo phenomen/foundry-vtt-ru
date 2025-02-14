@@ -7,6 +7,9 @@ export async function init() {
 		setupBabele("dnd5e");
 		if (game.babele) {
 			registerConverters();
+			if (game.modules.get('chris-premades')) {
+				setupBabele("chris-premades");
+			}
 		}
 	} else {
 		if (game.settings.get("ru-ru", "compendiumTranslation")) {
