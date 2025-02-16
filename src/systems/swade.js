@@ -5,15 +5,12 @@ let error;
 export function init() {
 	game.settings.register("ru-ru", "setupRules", {
 		name: "(SWADE) Перевод настроек системы",
-		hint: "Автоматический перевод навыков и других настроек системы SWADE. Отключите, если желаете внести изменения вручную.",
+		hint: "Автоматический перевод стандартных навыков и других настроек системы SWADE. Отключите, если желаете внести изменения вручную.",
 		type: Boolean,
 		default: true,
 		scope: "world",
 		config: true,
 		restricted: true,
-		onChange: (value) => {
-			window.location.reload();
-		},
 	});
 
 	setupBabele("swade");
@@ -97,18 +94,18 @@ function registerConverters() {
 
 function setupRules() {
 	if (game.settings.get("ru-ru", "setupRules")) {
-		// SWADE Basic
+		// SWADE Core
 		game.settings.set(
 			"swade",
 			"coreSkills",
 			"Атлетика, Внимание, Осведомлённость, Скрытность, Убеждение",
 		);
+
 		game.settings.set(
 			"swade",
 			"vehicleSkills",
 			"Верховая езда, Вождение, Пилотирование, Судовождение",
 		);
-		game.settings.set("swade", "currencyName", "$");
 
 		// SWADE Core
 		if (game.modules.get("swade-core-rules")?.active) {
@@ -119,6 +116,11 @@ function setupRules() {
 		if (game.modules.get("swpf-core-rules")?.active) {
 			game.settings.set("swade", "coreSkillsCompendium", "swpf-core-rules.swpf-skills");
 			game.settings.set("swade", "currencyName", "зм");
+		}
+
+		// Deadlands
+		if (game.modules.get("deadlands-core-rules")?.active) {
+			game.settings.set("swade", "currencyName", "$");
 		}
 	}
 }
@@ -141,14 +143,14 @@ const EXCEPTIONS = {
 };
 
 const CATEGORIES = {
-	Background: "Предыстории",
-	Combat: "Боевые",
-	Professional: "Профессиональные",
-	Social: "Социальные",
-	Weird: "Потусторонние",
-	Leadership: "Лидерские",
-	Power: "Сверхъестественные",
-	Legendary: "Легендарные",
+	"Background": "Предыстории",
+	"Combat": "Боевые",
+	"Professional": "Профессиональные",
+	"Social": "Социальные",
+	"Weird": "Потусторонние",
+	"Leadership": "Лидерские",
+	"Power": "Сверхъестественные",
+	"Legendary": "Легендарные",
 };
 
 const RANKS = {

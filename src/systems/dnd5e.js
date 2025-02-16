@@ -1,4 +1,4 @@
-import {setupBabele} from "../shared.js";
+import { setupBabele } from "../shared.js";
 
 export async function init() {
 	registerSettings();
@@ -38,7 +38,7 @@ export async function init() {
 /* Регистрация настроек */
 function registerSettings() {
 	game.settings.register("ru-ru", "compendiumTranslation", {
-		name: "(D&D5E) Перевод библиотек",
+		name: "(D&D5E) Перевод библиотек 5e SRD",
 		hint: "(Требуется модуль Babele) Библиотеки системы D&D5E будут переведены. Перевод библиотек требуется для корректного перевода типов оружия, брони, языков и других элементов.",
 		type: Boolean,
 		default: true,
@@ -51,7 +51,7 @@ function registerSettings() {
 	});
 
 	game.settings.register("ru-ru", "translateCPR", {
-		name: "Перевод библиотек модуля Cauldron of Plentiful Resources",
+		name: "(D&D5E) Перевод библиотек Cauldron of Plentiful Resources",
 		hint: "(Требуется модуль Babele и Cauldron of Plentiful Resources) Перевод библиотек модуля Cauldron of Plentiful Resources. Попробуйте выключить, если у вас возникли проблемы с работой модуля.",
 		type: Boolean,
 		default: true,
@@ -70,9 +70,7 @@ function registerHooks() {
 	Hooks.on("renderSettingsConfig", (app, html, data) => {
 		if (!game.user.isGM) return;
 
-		const lastMenuSetting = html
-			.find(`input[name="ru-ru.translateCPR"]`)
-			.closest(".form-group");
+		const lastMenuSetting = html.find(`input[name="ru-ru.translateCPR"]`).closest(".form-group");
 
 		const updateAAButton = $(`
   <label>
@@ -117,14 +115,14 @@ function registerConverters() {
 
 				return mergeObject(data, {
 					name: translation.name,
-					image: {caption: translation.caption ?? data.image?.caption},
+					image: { caption: translation.caption ?? data.image?.caption },
 					src: translation.src ?? data.src,
-					text: {content: translation.text ?? data.text?.content},
+					text: { content: translation.text ?? data.text?.content },
 					video: {
 						width: translation.width ?? data.video?.width,
 						height: translation.height ?? data.video?.height,
 					},
-					system: {tooltip: translation.tooltip ?? data.system.tooltip},
+					system: { tooltip: translation.tooltip ?? data.system.tooltip },
 					translated: true,
 				});
 			});
@@ -161,6 +159,6 @@ function mergeArrays(array1, array2) {
 
 	return array1.map((item) => {
 		const matchingItem = labelMap.get(item.metaData.label);
-		return matchingItem ? {...item, ...matchingItem} : item;
+		return matchingItem ? { ...item, ...matchingItem } : item;
 	});
 }
