@@ -1,4 +1,4 @@
-import { setupBabele } from "../shared.js";
+import {setupBabele} from "../shared.js";
 
 export async function init() {
 	registerSettings();
@@ -7,7 +7,7 @@ export async function init() {
 		setupBabele("dnd5e");
 		if (game.babele) {
 			registerConverters();
-			if (game.modules.get("chris-premades")) {
+			if (game.modules.get("chris-premades") && game.settings.get("ru-ru", "translateCPR")) {
 				setupBabele("chris-premades");
 			}
 		}
@@ -49,6 +49,19 @@ function registerSettings() {
 			window.location.reload();
 		},
 	});
+
+	game.settings.register("ru-ru", "translateCPR", {
+		name: "Перевод библиотек модуля Cauldron of Plentiful Resources",
+		hint: "(Требуется модуль Babele и Cauldron of Plentiful Resources) Перевод библиотек модуля Cauldron of Plentiful Resources. Попробуйте выключить, если у вас возникли проблемы с работой модуля.",
+		type: Boolean,
+		default: true,
+		scope: "world",
+		config: true,
+		restricted: true,
+		onChange: () => {
+			window.location.reload();
+		},
+	});
 }
 
 /* Регистрация дополнительных хуков */
@@ -58,7 +71,7 @@ function registerHooks() {
 		if (!game.user.isGM) return;
 
 		const lastMenuSetting = html
-			.find(`input[name="ru-ru.compendiumTranslation"]`)
+			.find(`input[name="ru-ru.translateCPR"]`)
 			.closest(".form-group");
 
 		const updateAAButton = $(`
@@ -104,14 +117,14 @@ function registerConverters() {
 
 				return mergeObject(data, {
 					name: translation.name,
-					image: { caption: translation.caption ?? data.image?.caption },
+					image: {caption: translation.caption ?? data.image?.caption},
 					src: translation.src ?? data.src,
-					text: { content: translation.text ?? data.text?.content },
+					text: {content: translation.text ?? data.text?.content},
 					video: {
 						width: translation.width ?? data.video?.width,
 						height: translation.height ?? data.video?.height,
 					},
-					system: { tooltip: translation.tooltip ?? data.system.tooltip },
+					system: {tooltip: translation.tooltip ?? data.system.tooltip},
 					translated: true,
 				});
 			});
@@ -148,6 +161,6 @@ function mergeArrays(array1, array2) {
 
 	return array1.map((item) => {
 		const matchingItem = labelMap.get(item.metaData.label);
-		return matchingItem ? { ...item, ...matchingItem } : item;
+		return matchingItem ? {...item, ...matchingItem} : item;
 	});
 }
