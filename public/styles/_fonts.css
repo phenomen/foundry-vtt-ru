@@ -444,6 +444,29 @@
 }
 
 /* Variables */
+:root {
+	--font-primary: "Roboto", "Arial", sans-serif;
+	--font-sans: "Roboto", "Arial", sans-serif;
+	--font-sans-condensed: "Roboto Condensed", sans-serif;
+	--font-serif: "Roboto Serif", "Georgia", "Times New Roman", serif;
+	--font-cursive: "Marck Script", "Lucida Handwriting", cursive;
+	--font-monospace: "Consolas", monospace;
+	--font-fancy: "Beaufort", serif;
+	--font-pirate: "Manuskript", fantasy;
+	--font-sci-fi: "OCR-A", monospace;
+	--font-modesto: "Modesto Condensed", serif;
+
+	--font-body: var(--font-sans);
+	--font-blockquote: var(--font-serif);
+	--font-h1: var(--font-modesto);
+	--font-h2: var(--font-fancy);
+	--font-h3: var(--font-sans);
+	--font-h4: var(--font-fancy);
+	--font-h5: var(--font-sans);
+	--font-h6: var(--font-sans);
+}
+
+/* Copy root vars to body for better compatibility with some systems */
 body {
 	--font-primary: "Roboto", "Arial", sans-serif;
 	--font-sans: "Roboto", "Arial", sans-serif;

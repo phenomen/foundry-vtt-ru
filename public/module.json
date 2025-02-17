@@ -11,7 +11,7 @@
 			"url": "https://discord.gg/Z2CXFy35WF"
 		}
 	],
-	"version": "13.336.2",
+	"version": "13.336.4",
 	"compatibility": {
 		"minimum": "12",
 		"verified": "12",
@@ -24,6 +24,10 @@
 		"recommends": [
 			{
 				"id": "lib-wrapper",
+				"type": "module"
+			},
+			{
+				"id": "babele",
 				"type": "module"
 			}
 		]
@@ -875,6 +879,11 @@
 			"lang": "ru",
 			"path": "i18n/modules/wall-height.json",
 			"module": "wall-height"
+		},
+		{
+			"lang": "ru",
+			"path": "i18n/modules/warhammer-lib.json",
+			"module": "warhammer-lib"
 		},
 		{
 			"lang": "ru",
