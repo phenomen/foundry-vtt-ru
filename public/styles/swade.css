@@ -1,11 +1,11 @@
 @font-face {
 	font-family: "dead-saloon";
-	src: url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap");
+	src: url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 }
 
 @font-face {
 	font-family: "Roboto Slab";
-	src: url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap");
+	src: url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 }
 
 @font-face {
@@ -91,7 +91,7 @@
 	--table-title-font-family: var(--font-serif);
 	--table-headers-font-family: var(--font-serif);
 	--table-summary-font-family: var(--font-sans-condensed);
-	--quote-font-family: "Rock Salt", cursive;
+	--quote-font-family: var(--font-serif);
 }
 
 .swade-official {
@@ -215,9 +215,9 @@
 
 .effect-label,
 .item-name {
-	font-size: var(--font-size-14) !important;
-	font-family: var(--font-sans) !important;
-	font-weight: 600 !important;
+	font-size: var(--font-size-14);
+	font-family: var(--font-sans);
+	font-weight: 600;
 }
 
 /* DEADLANDS */
