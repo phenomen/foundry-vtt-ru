@@ -37,7 +37,7 @@ jobs:
           prerelease: false
           files: |
             ru-ru.zip
-            src/module.json
+            public/module.json
           overwrite: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
