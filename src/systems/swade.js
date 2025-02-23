@@ -1,7 +1,5 @@
 import { setupBabele, translateValue } from "../shared.js";
 
-let error;
-
 export function init() {
 	game.settings.register("ru-ru", "setupRules", {
 		name: "(SWADE) Перевод настроек системы",
@@ -13,14 +11,27 @@ export function init() {
 		restricted: true,
 	});
 
-	setupBabele("swade");
+	if (game.modules.get("swade-core-rules")?.active) {
+		setupBabele("swade/core");
+	} else if (game.modules.get("swpf-core-rules")?.active) {
+		setupBabele("swade/swpf");
+	} else {
+		setupBabele("swade/basic");
+	}
+
 	registerConverters();
 
 	Hooks.on("ready", () => {
-		if (error) {
-			ui.notifications.error(error);
+		if (game.modules.get("swade-core-rules")?.active) {
+			ui.notifications.info(
+				"Обнаружен модуль SWADE Core Rules. Перевод базовой библиотеки был отключен во избежание конфликтов.",
+			);
 		}
-
+		if (game.modules.get("swpf-core-rules")?.active) {
+			ui.notifications.info(
+				"Обнаружен модуль Savage Pathfinder. Перевод базовой библиотеки был отключен во избежание конфликтов.",
+			);
+		}
 		setupRules();
 	});
 }
