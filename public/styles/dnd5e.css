@@ -1,4 +1,5 @@
 :root {
+	--dnd5e-font-modesto: var(--font-modesto);
 	--t5e-signika: var(--font-sans);
 	--syb5e-pc-font: var(--font-fancy) !important;
 	--syb5e-npc-font: var(--font-fancy) !important;
@@ -9,6 +10,10 @@ select {
 }
 
 /* 3.0 */
+
+.dnd5e2.sheet.actor.character .sheet-header .document-name {
+	font-size: var(--font-size-36);
+}
 
 .dnd5e2.sheet.actor.character .ability-scores .ability-score .label {
 	font-weight: 600;
@@ -23,6 +28,22 @@ select {
 
 .dnd5e2.sidebar-heading h2 {
 	font-size: var(--font-size-14);
+}
+
+.dnd5e2.editor-content {
+	font-size: var(--font-size-14);
+}
+
+.dnd5e2 .items-section .items-header .item-quantity,
+.dnd5e2 .items-section .item .item-quantity,
+.dnd5e2 .items-section .items-header .item-recovery,
+.dnd5e2 .items-section .item .item-recovery {
+	width: 73px;
+}
+
+.dnd5e2 .items-section .items-header .item-uses,
+.dnd5e2 .items-section .item .item-uses {
+	width: 87px;
 }
 
 .dnd5e2.sheet.actor.character .sheet-body .skills .name,

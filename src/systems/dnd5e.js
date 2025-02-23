@@ -113,14 +113,14 @@ function registerConverters() {
 					return data;
 				}
 
-				return mergeObject(data, {
+				return foundry.utils.mergeObject(data, {
 					name: translation.name,
-					image: { caption: translation.caption ?? data.image?.caption },
+					image: { caption: translation.caption ?? data.image.caption },
 					src: translation.src ?? data.src,
-					text: { content: translation.text ?? data.text?.content },
+					text: { content: translation.text ?? data.text.content },
 					video: {
-						width: translation.width ?? data.video?.width,
-						height: translation.height ?? data.video?.height,
+						width: translation.width ?? data.video.width,
+						height: translation.height ?? data.video.height,
 					},
 					system: { tooltip: translation.tooltip ?? data.system.tooltip },
 					translated: true,
@@ -132,29 +132,46 @@ function registerConverters() {
 
 /* Обновление базы AA */
 async function updateAA() {
-	const translatedSettings = await foundry.utils.fetchJsonWithTimeout(
-		"/modules/ru-ru/i18n/modules/aa-autorec.json",
-	);
+	if (!game.modules.get("autoanimations")?.active) {
+		ui.notifications.error("Модуль Automated Animations не активен");
+		return;
+	}
 
-	const currentSettings = AutomatedAnimations.AutorecManager.getAutorecEntries();
+	try {
+		const translatedSettings = await foundry.utils.fetchJsonWithTimeout(
+			"/modules/ru-ru/i18n/modules/aa-autorec.json",
+		);
 
-	const newSettings = {
-		melee: mergeArrays(currentSettings.melee, translatedSettings.melee),
-		range: mergeArrays(currentSettings.range, translatedSettings.range),
-		ontoken: mergeArrays(currentSettings.ontoken, translatedSettings.ontoken),
-		templatefx: mergeArrays(currentSettings.templatefx, translatedSettings.templatefx),
-		aura: mergeArrays(currentSettings.aura, translatedSettings.aura),
-		preset: mergeArrays(currentSettings.preset, translatedSettings.preset),
-		aefx: mergeArrays(currentSettings.aefx, translatedSettings.aefx),
-		version: "5",
-	};
+		const currentSettings = AutomatedAnimations.AutorecManager.getAutorecEntries();
+		if (!currentSettings) {
+			throw new Error(
+				"Не удалось получить текущие настройки анимаций. Убедитесь, что модуль D&D5E Animations активен и анимации установлены.",
+			);
+		}
 
-	AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify(newSettings), {
-		submitAll: true,
-	});
+		const newSettings = {
+			melee: mergeArraysByLabel(currentSettings.melee, translatedSettings.melee),
+			range: mergeArraysByLabel(currentSettings.range, translatedSettings.range),
+			ontoken: mergeArraysByLabel(currentSettings.ontoken, translatedSettings.ontoken),
+			templatefx: mergeArraysByLabel(currentSettings.templatefx, translatedSettings.templatefx),
+			aura: mergeArraysByLabel(currentSettings.aura, translatedSettings.aura),
+			preset: mergeArraysByLabel(currentSettings.preset, translatedSettings.preset),
+			aefx: mergeArraysByLabel(currentSettings.aefx, translatedSettings.aefx),
+			version: "5",
+		};
+
+		await AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify(newSettings), {
+			submitAll: true,
+		});
+
+		ui.notifications.info("Настройки анимаций обновлены");
+	} catch (error) {
+		console.error("Не удалось обновить настройки анимаций:", error);
+		ui.notifications.error("Не удалось обновить настройки анимаций");
+	}
 }
 
-function mergeArrays(array1, array2) {
+function mergeArraysByLabel(array1, array2) {
 	const labelMap = new Map(array2.map((item) => [item.metaData.label, item]));
 
 	return array1.map((item) => {

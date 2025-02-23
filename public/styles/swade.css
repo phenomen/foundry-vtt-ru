@@ -79,19 +79,99 @@
 	src: url("../fonts/Roboto_Serif/RobotoSerif-Bold.woff2") format("woff2");
 }
 
-/* SWADE */
+/* Roboto */
 
-.sheet .editor-content {
-	padding: 2px;
+@font-face {
+	font-family: "Anton";
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url("../fonts/Roboto/Roboto-Italic.woff2") format("woff2");
 }
 
+@font-face {
+	font-family: "Anton";
+	font-style: italic;
+	font-weight: 500;
+	font-display: swap;
+	src: url("../fonts/Roboto/Roboto-MediumItalic.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Anton";
+	font-style: italic;
+	font-weight: 600;
+	font-display: swap;
+	src: url("../fonts/Roboto/Roboto-SemiBoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Anton";
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src: url("../fonts/Roboto/Roboto-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Anton";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Anton";
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url("../fonts/Roboto/Roboto-Medium.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Anton";
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url("../fonts/Roboto/Roboto-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Anton";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2");
+}
+
+/* SWADE */
+
 :root {
+	--font-slab: "Roboto Slab", var(--font-serif);
 	--body-font-family: var(--font-serif);
-	--heading-font-family: var(--font-sans-condensed);
-	--table-title-font-family: var(--font-serif);
-	--table-headers-font-family: var(--font-serif);
-	--table-summary-font-family: var(--font-sans-condensed);
+	--heading-font-family: var(--font-slab);
+	--table-title-font-family: var(--font-slab);
+	--table-headers-font-family: var(--font-sans-condensed);
+	--table-summary-font-family: var(--table-headers-font-family);
 	--quote-font-family: var(--font-serif);
+}
+
+.swade-core {
+	--body-font-family: var(--font-serif);
+	--heading-font-family: var(--font-slab);
+	--table-title-font-family: var(--font-slab);
+	--table-headers-font-family: var(--font-sans-condensed);
+	--table-summary-font-family: var(--table-headers-font-family);
+	--quote-font-family: var(--font-serif);
+	font-family: var(--font-sans);
+}
+
+.swade-app {
+	--default-font: var(--font-sans);
+	--section-header-font: var(--font-sans-condensed);
+	--tab-font: var(--font-sans-condensed);
+	font-family: var(--font-sans);
 }
 
 .swade-official {
@@ -100,9 +180,16 @@
 	--default-font: var(--font-sans);
 }
 
+.swade-core .figure-heading {
+	font-family: var(--heading-font-family);
+	font-size: var(--font-size-32);
+	font-weight: 700;
+	font-style: normal;
+}
+
 .swade.sheet.actor .sheet-header .charline .charname {
 	font-family: var(--font-serif);
-	font-size: 35px;
+	font-weight: 600;
 }
 
 .swade-official .label {
@@ -208,15 +295,14 @@
 
 /* Fix for gigantic trash icon */
 .inline-delete {
-	&.fa-3x {
+	.fa-3x {
 		font-size: 2em;
 	}
 }
 
 .effect-label,
 .item-name {
-	font-size: var(--font-size-14);
-	font-family: var(--font-sans);
+	font-family: var(--font-sans-condensed);
 	font-weight: 600;
 }
 
@@ -227,17 +313,13 @@
 .deadlands-core,
 .deadlands-sheet,
 .deadlands-wrapper {
-	--section-header-font: "Roboto Slab", var(--font-serif);
+	--section-header-font: var(--font-slab);
 	--default-font: var(--font-serif);
 }
 
-.deadlands-sheet input.charname {
-	font-family: "Roboto Slab", var(--font-serif);
-}
-
 .swade-official.actor.deadlands-sheet {
-	--section-header-size: 1.3em;
-	--section-header-font: "Roboto Slab";
+	--section-header-size: var(--font-size-20);
+	--section-header-font: var(--font-slab);
 	--default-font: var(--font-sans);
 }
 
@@ -246,37 +328,61 @@
 }
 
 .deadlands-sheet {
-	&.tabs .item {
-		font-family: "Roboto Slab", var(--font-serif);
-		font-weight: bold;
-		font-size: 0.9em;
+	.window-header {
+		font-family: var(--font-sans-condensed);
 	}
 
-	&.sheet-body {
+	.tabs {
+		.item {
+			font-family: var(--font-slab);
+			font-weight: bold;
+			font-size: var(--font-size-12);
+		}
+	}
+
+	.section-header .name,
+	.header,
+	.header .header-name {
+		font-family: var(--font-slab);
+	}
+
+	.sheet-body {
 		padding: 1rem;
 	}
 
-	&.attribute-list {
+	.attribute-list {
 		column-gap: 1px;
 	}
 
-	&.character-detail {
+	.character-detail {
 		font-weight: 600;
 
-		&input,
-		&button {
+		input,
+		button {
 			font-weight: 600;
 		}
 	}
 
-	&.fatigue,
-	&.wounds {
-		font-family: "Roboto Slab", var(--font-serif);
+	.fatigue,
+	.wounds {
+		font-family: var(--font-slab);
 		font-weight: 700;
 
-		&input {
+		input {
 			font-weight: 700;
 		}
+	}
+
+	.charname-container:after,
+	.charname-container:before {
+		display: none;
+		width: 0;
+	}
+
+	input.charname,
+	.charname {
+		font-family: var(--font-slab);
+		font-weight: 600;
 	}
 }
 
@@ -305,7 +411,7 @@
 }
 
 .swpf-core .chapter-heading h1 {
-	font-size: 4rem;
+	font-size: var(--font-size-64);
 	font-weight: 900;
 }
 
@@ -319,44 +425,46 @@
 }
 
 .sheet.journal-entry.swpf-wrapper .pages-list .page-heading {
-	font-size: 1rem;
+	font-size: var(--font-size-16);
 	font-weight: 600;
 }
 
 .swpf-sheet {
-	&.sheet-body {
+	.sheet-body {
 		font-family: var(--font-fancy);
 	}
 
-	&.character-detail {
+	.character-detail {
 		font-weight: 600;
 
-		&input,
-		&button {
+		input,
+		button {
 			font-weight: 600;
 		}
 	}
 
-	&.fatigue,
-	&.wounds {
+	.fatigue,
+	.wounds {
 		font-weight: 700;
 
-		&input {
+		input {
 			font-weight: 700;
 		}
 	}
 
-	&.tabs .item {
-		font-family: var(--font-fancy);
-		font-size: 1em;
-		font-weight: 600;
+	.tabs {
+		.item {
+			font-family: var(--font-fancy);
+			font-size: var(--font-size-16);
+			font-weight: 600;
+		}
 	}
 
-	&.window-content {
+	.window-content {
 		padding: 4px;
 	}
 
-	&.gu-1 {
+	.gu-1 {
 		padding: 0px;
 		height: 13em;
 		left: 0px;
@@ -372,8 +480,16 @@
 	border-image-width: 8px;
 }
 
-/* OTHER MODULES */
+/* MISC */
 
 .brws-tab-player-mods {
 	font-family: var(--font-sans-condensed);
+}
+
+.sheet .editor-content {
+	padding: 2px;
+}
+
+figure figcaption {
+	font-style: normal;
 }
