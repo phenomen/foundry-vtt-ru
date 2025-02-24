@@ -4,11 +4,6 @@
 }
 
 @font-face {
-	font-family: "Roboto Slab";
-	src: url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
-}
-
-@font-face {
 	font-family: "Treacherous Corners";
 	src: url("../fonts/Beaufort/Beaufort-Bold.woff2") format("woff2");
 }
@@ -148,7 +143,6 @@
 /* SWADE */
 
 :root {
-	--font-slab: "Roboto Slab", var(--font-serif);
 	--body-font-family: var(--font-serif);
 	--heading-font-family: var(--font-slab);
 	--table-title-font-family: var(--font-slab);
@@ -175,7 +169,7 @@
 }
 
 .swade-official {
-	--section-header-size: 1.4em;
+	--section-header-size: var(--font-size-24);
 	--section-header-font: var(--font-sans);
 	--default-font: var(--font-sans);
 }
@@ -185,6 +179,10 @@
 	font-size: var(--font-size-32);
 	font-weight: 700;
 	font-style: normal;
+}
+
+.swade.sheet.actor:not(.application) .sheet-body .header-field {
+	font-family: var(--font-slab);
 }
 
 .swade.sheet.actor .sheet-header .charline .charname {
@@ -199,18 +197,19 @@
 
 .swade.sheet .tabs .item {
 	font-family: var(--font-sans-condensed);
-	font-size: 1em;
+	font-size: var(--font-size-16);
 	font-weight: 600;
 }
 
 .swade-official .tabs .item {
 	font-family: var(--font-sans-condensed);
-	font-size: 1.1em;
+	font-size: var(--font-size-14);
+	font-weight: 500;
 }
 
 .swade .check-container,
 .swade-official .check-container {
-	font-size: 1em;
+	font-size: var(--font-size-14);
 	padding-left: 25px;
 	font-family: var(--font-sans-condensed);
 	font-weight: 500;
@@ -222,7 +221,7 @@
 }
 
 .swade-official .primary .attribute-label {
-	font-size: 11px;
+	font-size: var(--font-size-11);
 	text-transform: uppercase;
 	font-weight: 600;
 	font-family: var(--font-sans-condensed);
@@ -234,7 +233,7 @@
 }
 
 .swade.sheet.actor .attribute-label {
-	font-size: 10px;
+	font-size: var(--font-size-10);
 	text-transform: uppercase;
 	font-weight: 500;
 	font-family: var(--font-sans-condensed);
@@ -253,7 +252,7 @@
 .swade-official .section-header .name,
 .swade-official .header,
 .swade-official .header .header-name {
-	font-family: var(--font-sans-condensed);
+	font-family: var(--font-slab);
 	font-weight: 600;
 }
 
@@ -285,19 +284,12 @@
 }
 
 .attribute-manager .index-card header {
-	font-size: 1rem;
+	font-size: var(--font-size-16);
 }
 
 .skills .skill-name {
 	font-family: var(--font-sans-condensed);
 	font-weight: 500;
-}
-
-/* Fix for gigantic trash icon */
-.inline-delete {
-	.fa-3x {
-		font-size: 2em;
-	}
 }
 
 .effect-label,
@@ -492,4 +484,16 @@
 
 figure figcaption {
 	font-style: normal;
+}
+
+/* Fix for gigantic trash icon */
+.inline-delete {
+	.fa-3x {
+		font-size: var(--font-size-18);
+	}
+}
+
+/* Fix for bugged running die button */
+.running-die {
+	height: 32px;
 }

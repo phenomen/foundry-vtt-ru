@@ -139,13 +139,13 @@ function setupRules() {
 /* Data */
 
 const EXCEPTIONS = {
-	"Arcane Background (Any)": "Сверхъестественный дар (любой)",
-	"Arcane Background (Gifted)": "Сверхъестественный дар (феномен)",
-	"Arcane Background (Miracles)": "Сверхъестественный дар (чудеса)",
-	"Arcane Background (Magic)": "Сверхъестественный дар (магия)",
-	"Arcane Background (Psionics)": "Сверхъестественный дар (псионика)",
-	"Arcane Background (Weird Science)": "Сверхъестественный дар (безумная наука)",
-	"arcane skill": "сверхъестественный навык",
+	"Arcane Background (Any)": "Мистический дар (любой)",
+	"Arcane Background (Gifted)": "Мистический дар (феномен)",
+	"Arcane Background (Miracles)": "Мистический дар (чудеса)",
+	"Arcane Background (Magic)": "Мистический дар (магия)",
+	"Arcane Background (Psionics)": "Мистический дар (псионика)",
+	"Arcane Background (Weird Science)": "Мистический дар (безумная наука)",
+	"arcane skill": "мистический навык",
 	"Tough as Nails": "Несгибаемый",
 	"Work the Room": "Заводила",
 	"Professional in affected Trait": "Профессионал в выбранном параметре",
@@ -158,9 +158,9 @@ const CATEGORIES = {
 	"Combat": "Боевые",
 	"Professional": "Профессиональные",
 	"Social": "Социальные",
-	"Weird": "Потусторонние",
+	"Weird": "Сверхъестественные",
 	"Leadership": "Лидерские",
-	"Power": "Сверхъестественные",
+	"Power": "Мистические",
 	"Legendary": "Легендарные",
 };
 
