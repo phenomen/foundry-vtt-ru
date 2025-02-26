@@ -4,7 +4,9 @@ export async function init() {
 	registerSettings();
 
 	if (game.settings.get("ru-ru", "compendiumTranslation")) {
-		setupBabele("dnd5e");
+		game.settings.get("ru-ru", "altTranslation")
+		? setupBabele("dnd5e-alt")
+		: setupBabele("dnd5e");
 		if (game.babele) {
 			registerConverters();
 			if (game.modules.get("chris-premades") && game.settings.get("ru-ru", "translateCPR")) {
