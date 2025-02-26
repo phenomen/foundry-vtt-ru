@@ -1,4 +1,5 @@
 const scripts = import.meta.glob("./systems/*.js");
+import { init as INIT_DND5E_ALT } from "./misc/dnd5e-alt.js";
 
 Hooks.once("init", async () => {
 	const system = game.system.id.toLowerCase();
@@ -40,6 +41,10 @@ Hooks.once("init", async () => {
 			window.location.reload();
 		},
 	});
+
+	if (system === "dnd5e") {
+		INIT_DND5E_ALT();
+	}
 
 	/* Шрифт для подписей на сцене */
 	CONFIG.canvasTextStyle.fontFamily = Object.keys(CONFIG.fontDefinitions)[
