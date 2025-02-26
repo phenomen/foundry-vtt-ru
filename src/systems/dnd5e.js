@@ -4,33 +4,16 @@ export async function init() {
 	registerSettings();
 
 	if (game.settings.get("ru-ru", "compendiumTranslation")) {
-		game.settings.get("ru-ru", "altTranslation")
-		? setupBabele("dnd5e-alt")
-		: setupBabele("dnd5e");
 		if (game.babele) {
 			registerConverters();
+
+			game.settings.get("ru-ru", "altTranslation")
+				? setupBabele("dnd5e/ds")
+				: setupBabele("dnd5e/ag");
+
 			if (game.modules.get("chris-premades") && game.settings.get("ru-ru", "translateCPR")) {
-				setupBabele("chris-premades");
+				setupBabele("dnd5e/chris");
 			}
-		}
-	} else {
-		if (game.settings.get("ru-ru", "compendiumTranslation")) {
-			new Dialog({
-				title: "Перевод библиотек",
-				content:
-					"<p>Для перевода библиотек системы D&D5E требуется активировать модуль <b>Babele</b>. Вы можете отключить перевод библиотек в настройках модуля</p>",
-				buttons: {
-					done: {
-						label: "Хорошо",
-					},
-					never: {
-						label: "Больше не показывать",
-						callback: () => {
-							game.settings.set("ru-ru", "compendiumTranslation", false);
-						},
-					},
-				},
-			}).render(true);
 		}
 	}
 
@@ -41,7 +24,7 @@ export async function init() {
 function registerSettings() {
 	game.settings.register("ru-ru", "compendiumTranslation", {
 		name: "(D&D5E) Перевод библиотек 5e SRD",
-		hint: "(Требуется модуль Babele) Библиотеки системы D&D5E будут переведены. Перевод библиотек требуется для корректного перевода типов оружия, брони, языков и других элементов.",
+		hint: "Библиотеки системы D&D5E будут переведены. Перевод библиотек требуется для корректного перевода типов оружия, брони, языков и других элементов (требуется модуль Babele)",
 		type: Boolean,
 		default: true,
 		scope: "world",
@@ -54,7 +37,7 @@ function registerSettings() {
 
 	game.settings.register("ru-ru", "translateCPR", {
 		name: "(D&D5E) Перевод библиотек Cauldron of Plentiful Resources",
-		hint: "(Требуется модуль Babele и Cauldron of Plentiful Resources) Перевод библиотек модуля Cauldron of Plentiful Resources. Попробуйте выключить, если у вас возникли проблемы с работой модуля.",
+		hint: "Перевод библиотек модуля Cauldron of Plentiful Resources. Отключите, если у вас возникли проблемы с работой модуля.",
 		type: Boolean,
 		default: true,
 		scope: "world",
