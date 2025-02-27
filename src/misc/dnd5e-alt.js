@@ -1,7 +1,7 @@
 export function init() {
 	game.settings.register("ru-ru", "altTranslation", {
 		name: "(D&D5E) Альтернативный перевод",
-		hint: "Использовать альтернативный перевод от Dungeons_ru. Иначе будет использоваться официальный перевод издательства Hobby World и Adventure Guys (требуется модуль libWrapper)",
+		hint: "Использовать альтернативный перевод от Dungeons.ru. Иначе будет использоваться официальный перевод Hobby World и Adventure Guys (требуется модуль libWrapper)",
 		type: Boolean,
 		default: false,
 		scope: "world",
@@ -43,38 +43,44 @@ async function loadAltTranslation(wrapped, lang) {
 	const modulePath = "modules/ru-ru/i18n/modules/alt/";
 	const systemPath = "modules/ru-ru/i18n/systems/alt/";
 
-	const files = [
-		`${route}${systemPath}dnd5e.json`,
-		`${route}${systemPath}dnd5e-plural.json`,
-		`${route}${modulePath}action-pack.json`,
-		`${route}${modulePath}activeauras.json`,
-		`${route}${modulePath}always-hp.json`,
-		`${route}${modulePath}arbron-hp-bar.json`,
-		`${route}${modulePath}bossbar.json`,
-		`${route}${modulePath}combat-utility-belt.json`,
-		`${route}${modulePath}combatbooster.json`,
-		`${route}${modulePath}compendium-browser.json`,
-		`${route}${modulePath}damage-log.json`,
-		`${route}${modulePath}dnd5e-system-customizer.json`,
-		`${route}${modulePath}enhancedcombathud-dnd5e.json`,
-		`${route}${modulePath}enhancedcombathud.json`,
-		`${route}${modulePath}epic-rolls-5e.json`,
-		`${route}${modulePath}health-monitor.json`,
-		`${route}${modulePath}healthestimate.json`,
-		`${route}${modulePath}lmrtfy.json`,
-		`${route}${modulePath}midi-qol.json`,
-		`${route}${modulePath}ready-set-roll-5e.json`,
-		`${route}${modulePath}tidy5e-sheet.json`,
-		`${route}${modulePath}token-action-hud-dnd5e.json`,
-		`${route}${modulePath}vision-5e.json`,
+	const systemFiles = ["dnd5e.json", "dnd5e-plural.json"];
+
+	const moduleFiles = [
+		"action-pack.json",
+		"activeauras.json",
+		"always-hp.json",
+		"arbron-hp-bar.json",
+		"bossbar.json",
+		"combat-utility-belt.json",
+		"combatbooster.json",
+		"compendium-browser.json",
+		"damage-log.json",
+		"dnd5e-system-customizer.json",
+		"enhancedcombathud-dnd5e.json",
+		"enhancedcombathud.json",
+		"epic-rolls-5e.json",
+		"health-monitor.json",
+		"healthestimate.json",
+		"lmrtfy.json",
+		"midi-qol.json",
+		"ready-set-roll-5e.json",
+		"tidy5e-sheet.json",
+		"token-action-hud-dnd5e.json",
+		"vision-5e.json",
 	];
 
-	const promises = files.map((file) => this._loadTranslationFile(file));
+	const files = [
+		...systemFiles.map((file) => `${route}${systemPath}${file}`),
+		...moduleFiles.map((file) => `${route}${modulePath}${file}`),
+	];
 
-	await Promise.all(promises);
-	for (const p of promises) {
-		const altJson = await p;
-		foundry.utils.mergeObject(translations, altJson, { inplace: true });
+	for (const file of files) {
+		try {
+			const altJson = await this._loadTranslationFile(file);
+			foundry.utils.mergeObject(translations, altJson, { inplace: true });
+		} catch (error) {
+			console.warn(`Не удалось загрузить перевод: ${file}`, error);
+		}
 	}
 
 	return translations;
