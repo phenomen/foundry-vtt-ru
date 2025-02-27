@@ -44,7 +44,6 @@ async function loadAltTranslation(wrapped, lang) {
 	const systemPath = "modules/ru-ru/i18n/systems/alt/";
 
 	const systemFiles = ["dnd5e.json", "dnd5e-plural.json"];
-
 	const moduleFiles = [
 		"action-pack.json",
 		"activeauras.json",
@@ -74,14 +73,18 @@ async function loadAltTranslation(wrapped, lang) {
 		...moduleFiles.map((file) => `${route}${modulePath}${file}`),
 	];
 
+	const altTranslations = {};
+
 	for (const file of files) {
 		try {
 			const altJson = await this._loadTranslationFile(file);
-			foundry.utils.mergeObject(translations, altJson, { inplace: true });
+			foundry.utils.mergeObject(altTranslations, altJson, { inplace: true });
 		} catch (error) {
 			console.warn(`Не удалось загрузить перевод: ${file}`, error);
 		}
 	}
+
+	foundry.utils.mergeObject(translations, altTranslations, { inplace: true });
 
 	return translations;
 }
