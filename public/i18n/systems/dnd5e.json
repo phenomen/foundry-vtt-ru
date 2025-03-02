@@ -939,7 +939,7 @@
 						"label": "Бонус атаки оружием дистанционного боя"
 					},
 					"damage": {
-						"label": "Бонус урона оружием дистанционного боя"
+						"label": "Бонус урона оружия дистанционного боя"
 					}
 				},
 				"spell": {
@@ -1295,7 +1295,7 @@
 	"DND5E.ConsumeHitDiceLargestLong": "Наивысшая доступная кость здоровья",
 	"DND5E.ConsumeHitDiceSmallest": "Наименьшая",
 	"DND5E.ConsumeHitDiceSmallestLong": "Наименьшая доступная кость здоровья",
-	"DND5E.ConsumeMaterial": "Материальные компоненты",
+	"DND5E.ConsumeMaterial": "Материалы",
 	"DND5E.ConsumeCharges": "Использования предмета",
 	"DND5E.ConsumeResource": "Использовать ресурс?",
 	"DND5E.ConsumeRecharge": "Использовать перезарядку?",
@@ -1480,9 +1480,9 @@
 				"Warning": "использований у {name}"
 			},
 			"Material": {
-				"Label": "Материальный компонент",
-				"PromptDecrease": "Расход материального компонента?",
-				"PromptIncrease": "Восстановление материального компонента?",
+				"Label": "Материал",
+				"PromptDecrease": "Израсходовать материал?",
+				"PromptIncrease": "Восстановить материал?",
 				"PromptHintDecrease": "Убавить {item} на <strong>{cost}</strong> (осталось {quantity}).",
 				"PromptHintIncrease": "Прибавить {item} на <strong>{cost}</strong>.",
 				"Warning": "у {name}"
@@ -2303,7 +2303,7 @@
 			"ElementalDiscipline": "Стихийные дисциплины",
 			"FightingStyle": "Боевой стиль",
 			"HuntersPrey": "Добыча охотника",
-			"Ki": "Приём сосредоточенности",
+			"Ki": "Умение ци",
 			"Maneuver": "Манёвр",
 			"Metamagic": "Вариант метамагии",
 			"Multiattack": "Мультиатака",
@@ -2342,7 +2342,7 @@
 	"DND5E.Loot.Gear": "Походное снаряжение",
 	"DND5E.Loot.Gem": "Самоцвет",
 	"DND5E.Loot.Junk": "Хлам",
-	"DND5E.Loot.Material": "Материальный компонент",
+	"DND5E.Loot.Material": "Материал",
 	"DND5E.Loot.Resource": "Ресурс",
 	"DND5E.Loot.Treasure": "Сокровище",
 	"DND5E.Flaws": "Изъяны",
@@ -2689,7 +2689,7 @@
 			"Heavy": "Тяжёлое",
 			"Light": "Лёгкое",
 			"Loading": "Заряжаемое",
-			"Material": "Материальный компонент",
+			"Material": "Материал",
 			"Magical": "Магическое",
 			"Reach": "Длинное",
 			"Reload": "Перезарядка",
@@ -2845,7 +2845,7 @@
 	"DND5E.Long": "Дальняя",
 	"DND5E.Loyalty": "Лояльность",
 	"DND5E.MagicalBonus": "Магический бонус",
-	"DND5E.Materials": "Компоненты",
+	"DND5E.Materials": "Материалы",
 	"DND5E.Max": "Максимум",
 	"DND5E.MaxCharacterLevelExceededWarn": "Персонаж не может быть выше {max} уровня.",
 	"DND5E.MaxClassLevelExceededWarn": "Класс не может быть выше {max} уровня.",
@@ -3415,11 +3415,11 @@
 	"DND5E.SpellLevel9": "9-й круг",
 	"DND5E.SpellLevelSlot": "{level} ({n} ячеек)",
 	"DND5E.SpellLevelPact": "Ячейка договора [круг {level}] ({n} ячеек)",
-	"DND5E.SpellMaterials": "Материальные компоненты",
-	"DND5E.SpellMaterialsConsumed": "Расходует материальные компоненты",
-	"DND5E.SpellMaterialsCost": "Цена материального компонента",
-	"DND5E.SpellMaterialsDescription": "Описание материального компонента",
-	"DND5E.SpellMaterialsSupply": "Доступность материального компонента",
+	"DND5E.SpellMaterials": "Материалы заклинания",
+	"DND5E.SpellMaterialsConsumed": "Расходует материалы",
+	"DND5E.SpellMaterialsCost": "Цена материала",
+	"DND5E.SpellMaterialsDescription": "Описание материала",
+	"DND5E.SpellMaterialsSupply": "Доступность материала",
 	"DND5E.SpellName": "Название",
 	"DND5E.SpellNone": "Нет",
 	"DND5E.SpellPrepAtWill": "Неограниченно",
@@ -4006,10 +4006,10 @@
 	"DND5E.Treasure": {
 		"Categories": {
 			"Any": "Любые",
-			"Arcana": "Магия",
+			"Arcana": "Магические",
 			"Armaments": "Вооружение",
 			"Implements": "Инвентарь",
-			"Individual": "Личное",
+			"Individual": "Личные",
 			"None": "Нет",
 			"Relics": "Реликвии"
 		},
@@ -4644,8 +4644,8 @@
 			"Hint": "Разрешить игрокам со способностями призыва создавать актёров. У игроков также должно быть включены права на создание токенов."
 		},
 		"BLOODIED": {
-			"Name": "Статус \"Ранение\"",
-			"Hint": "Автоматическое отслеживание и видимость статуса \"Ранение\".",
+			"Name": "Статус \"Окровавленность\"",
+			"Hint": "Автоматическое отслеживание и видимость статуса \"Окровавленность\".",
 			"All": "Для союзников и противников",
 			"Player": "Только для союзников",
 			"None": "Никогда"
