@@ -1,0 +1,116 @@
+{
+	"CCM": {
+		"Sheets": {
+			"Cards": "Complete Card Management Бланк карт",
+			"Card": "Complete Card Management Бланк карты",
+			"Deck": "Complete Card Management Бланк колоды",
+			"Hand": "Complete Card Management Бланк руки",
+			"DockedHand": "Complete Card Management Бланк руки (закреплённый)",
+			"Pile": "Complete Card Management Бланк стопки"
+		},
+		"MoveCardBehavior": {
+			"FIELDS": {
+				"targetStack": {
+					"hint": "Колода, рука или стопка, в которую перемещается карта.",
+					"label": "Целевой набор"
+				},
+				"keepCanvasCard": {
+					"hint": "Сохранять ли карты, перемещенные в этот регион, на сцене.",
+					"label": "Сохранить карту на сцене"
+				}
+			},
+			"NoGM": "Нет активного ведущего для управления данными сцены!",
+			"NoStack": "Не удалось найти подходящий документ карт для этого региона",
+			"AddCard": "Добавление {name} в {stack}",
+			"RemoveCard": "Удаление {name} из {stack}"
+		},
+		"REGION_EVENTS": {
+			"CardMoveIn": {
+				"label": "Карта перемещена внутрь"
+			},
+			"CardMoveOut": {
+				"label": "Карта перемещена наружу"
+			}
+		},
+		"CardLayer": {
+			"Title": "Управление картами",
+			"Tools": {
+				"SelectTitle": "Выбрать карты",
+				"ClearTitle": "Очистить карты"
+			},
+			"HUD": {
+				"Flip": "Перевернуть {type}",
+				"Rotate": "Повернуть на 90 градусов"
+			},
+			"DragCardFromDeck": "Перетаскивание карты из {name}"
+		},
+		"CardSheet": {
+			"CardParentTitle": "{stackName}: {cardName}",
+			"Add": "Добавить",
+			"TabDetails": "Подробности карты",
+			"TabFaces": "Лица карт",
+			"TabBack": "Рубашка карт",
+			"TabConfiguration": "Конфигурация",
+			"TabCards": "Карты",
+			"BacksideUp": "Рубашкой вверх",
+			"Unnamed": "Без имени ({idx})",
+
+			"ScryingContext": "Просмотр",
+			"ScryingTitle": "Просмотр: {name}",
+			"ScryingMessage": "{name} просматривает {number} карт в {deck}.",
+			"ScryingMessageReorder": "{name} перетасовал(а) {number} открытых карт обратно в {deck}.",
+			"ScryingShuffleAndReplace": "Перетасовать и вернуть",
+			"ScryPromptHint": "Выберите количество карт для просмотра из этого набора карт.",
+			"ScryPromptLabel": "Количество",
+			"ScryMoveTop": "Переместить карту наверх колоды",
+			"ScryMoveBottom": "Переместить карту вниз колоды",
+
+			"RecallCard": "Вернуть карту",
+			"RecalledCard": "Карта {card} возвращена в {deck}.",
+
+			"PrimaryOwner": "Основной владелец"
+		},
+		"Settings": {
+			"ShowNames": {
+				"Label": "Показывать имя владельца карты",
+				"Hint": "Отображать владельца каждой карты на сцене"
+			},
+			"OwnerFontSize": {
+				"Label": "Размер шрифта",
+				"Hint": "Размер шрифта текста, отображаемого если включена опция \"Показывать имя владельца карты\""
+			},
+			"OwnerTextColor": {
+				"Label": "Цвет текста",
+				"Hint": "Цвет текста, отображаемого если включена опция \"Показывать имя владельца карты\""
+			},
+			"OwnerTextAlpha": {
+				"Label": "Прозрачность текста",
+				"Hint": "Прозрачность текста, отображаемого если включена опция \"Показывать имя владельца карты\""
+			}
+		},
+		"SceneConfig": {
+			"CanvasPileLabel": "Стопка на холсте",
+			"CanvasPileHint": "Использовать всю сцену как стопку карт. Регионы с типом \"Распределение карт\" будут иметь приоритет в пределах своего охвата."
+		},
+		"UserConfig": {
+			"PlayerHand": "Рука игрока",
+			"ShowCardCount": "Показать количество карт",
+			"OpenHand": "Открыть руку игрока",
+			"CardCount": "{count} карт в {stack}"
+		},
+		"Warning": {
+			"NoCardsAvailable": "В {type} нет доступных карт.",
+			"CardDrawn": "Эта карта не может быть добавлена на сцену, так как она уже взята и добавлена в стопку или руку.",
+			"FailDraw": "Не удалось взять карту",
+			"FailCanvasDeck": "Верхняя карта этой колоды уже находится на сцене. Переместите её в другую стопку карт, например, с помощью региона, чтобы взять новую карту.",
+			"AlreadyInside": "{card} уже есть в {stack}.",
+			"NoCopyPaste": "Карты на сцене нельзя копировать и вставлять.",
+			"DeckOwnerNotFound": "Не найден владелец колоды для выполнения этого действия.",
+			"NoScryDrop": "Вы не можете перетаскивать внешние карты в диалог просмотра"
+		},
+		"API": {
+			"LayoutScene": "Карты размещены на сцене {name}."
+		}
+	},
+	"TYPES.RegionBehavior.complete-card-management.moveCard": "Распределение карт"
+}
