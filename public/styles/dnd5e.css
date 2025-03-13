@@ -61,8 +61,15 @@ select {
 	text-overflow: ellipsis;
 }
 
+.dnd5e2.sheet.actor.character .tab.spells .top .card.spellcasting {
+	width: 250px;
+}
+
 .dnd5e2 .card .info > div .label {
 	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 53px;
 }
 
 .dnd5e2 .items-section .items-header .item-school,
