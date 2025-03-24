@@ -3,8 +3,7 @@
 	"vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
 	"files": {
 		"maxSize": 3145728,
-		"ignoreUnknown": false,
-		"ignore": ["ru-ru"]
+		"ignoreUnknown": false
 	},
 	"formatter": {
 		"enabled": true,
@@ -16,7 +15,6 @@
 		"attributePosition": "multiline",
 		"bracketSpacing": true
 	},
-	"organizeImports": { "enabled": true },
 	"linter": { "enabled": true, "rules": { "recommended": true } },
 	"javascript": {
 		"formatter": {
@@ -26,6 +24,13 @@
 			"semicolons": "always",
 			"arrowParentheses": "always",
 			"quoteStyle": "double"
+		}
+	},
+	"assist": {
+		"actions": {
+			"source": {
+				"organizeImports": "on"
+			}
 		}
 	}
 }

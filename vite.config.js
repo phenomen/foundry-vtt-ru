@@ -1,11 +1,10 @@
-import { resolve } from "node:path";
-import type { UserConfig } from "vite";
+import { defineConfig } from "vite";
 
-const config: UserConfig = {
+const config = defineConfig({
 	build: {
-		outDir: resolve(__dirname, "ru-ru"),
+		outDir: "ru-ru",
 		lib: {
-			entry: resolve(__dirname, "src/index.js"),
+			entry: "src/index.js",
 			formats: ["es"],
 			name: "ru-ru",
 		},
@@ -16,6 +15,6 @@ const config: UserConfig = {
 			},
 		},
 	},
-};
+});
 
 export default config;

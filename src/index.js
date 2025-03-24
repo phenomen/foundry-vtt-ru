@@ -1,4 +1,5 @@
 const scripts = import.meta.glob("./systems/*.js");
+
 import { init as INIT_DND5E_ALT } from "./misc/dnd5e-alt.js";
 
 Hooks.once("init", async () => {
