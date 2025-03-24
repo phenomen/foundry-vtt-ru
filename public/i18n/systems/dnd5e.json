@@ -441,6 +441,14 @@
 				"ModifyChoices": "Изменить выбор"
 			}
 		},
+		"Migration": {
+			"Action": {
+				"Confirm": "Применение миграции"
+			},
+			"Hint": "Выберите развитие, которое будет добавлено к {name}.",
+			"Selection": "Выбор развития",
+			"Title": "Миграция развития"
+		},
 		"ScaleValue": {
 			"Action": {
 				"CopyFormula": "Копирование формулы"
@@ -644,9 +652,6 @@
 	"DND5E.AdvancementLevelNoneHeader": "Нет уровня",
 	"DND5E.AdvancementLevelDownConfirmationMessage": "Понижение уровня этого класса также удалит все выбранные варианты развития. Эти изменения применятся к персонажу, если выбран флажок ниже.",
 	"DND5E.AdvancementLevelDownConfirmationTitle": "Подтверждение понижения уровня",
-	"DND5E.AdvancementMigrationConfirm": "Применение миграции",
-	"DND5E.AdvancementMigrationHint": "Выберите развитие, которое будет добавлено к {name}.",
-	"DND5E.AdvancementMigrationTitle": "Миграция развития",
 	"DND5E.AdvancementModifyChoices": "Изменить выбор",
 	"DND5E.AdvancementSaveButton": "Сохранение развития",
 	"DND5E.AdvancementSelectionCreateButton": "Создание развития",
@@ -699,7 +704,7 @@
 	"DND5E.ArmorClassUnarmoredMonk": "Защита без брони (монах)",
 	"DND5E.ArmorClassUnarmoredBarbarian": "Защита без брони (варвар)",
 	"DND5E.ArmorClassUnarmoredBard": "Защита без брони (бард)",
-	"DND5E.ArmorClassCustom": "Своя формула",
+	"DND5E.ArmorClassCustom": "Особая формула",
 	"DND5E.ArmorConfig": "Настройка брони",
 	"DND5E.ArmorConfigHint": "Заполните поле выше для перезаписи автоматического расчёта КБ",
 	"DND5E.ArmorClassCalculation": "Расчёт",
@@ -2924,43 +2929,6 @@
 	"DND5E.PassivePerception": "Пассивная Внимательность",
 	"DND5E.Period": "Интервал",
 	"DND5E.PersonalityTraits": "Свойства личности",
-	"DND5E.Polymorph": "Полиморф",
-	"DND5E.PolymorphAcceptSettings": "Особые настройки",
-	"DND5E.PolymorphAddTemp": "Доб. ПЗ цели как временные ПЗ",
-	"DND5E.PolymorphCustomTransformation": "Особая трансформация",
-	"DND5E.PolymorphEffectTransformation": "Эффект трансформации",
-	"DND5E.PolymorphKeepAE": "Сохранить все эффекты (перезапись других настроек эффектов)",
-	"DND5E.PolymorphKeepBackgroundAE": "Сохранить эффекты от происхождения",
-	"DND5E.PolymorphKeepBio": "Сохранить биографию",
-	"DND5E.PolymorphKeepClass": "Сохранить бонус умения",
-	"DND5E.PolymorphKeepClassAE": "Сохранить эффекты от класса и подкласса",
-	"DND5E.PolymorphKeepEquipmentAE": "Сохранить эффекты от снаряжения",
-	"DND5E.PolymorphKeepFeats": "Сохранить особенности",
-	"DND5E.PolymorphKeepFeatureAE": "Сохранить эффекты от особенностей",
-	"DND5E.PolymorphKeepHP": "Сохранить ПЗ и КЗ",
-	"DND5E.PolymorphKeepItems": "Сохранить снаряжение",
-	"DND5E.PolymorphKeepMental": "Сохранить ИНТ, МДР, ХАР",
-	"DND5E.PolymorphKeepOriginAE": "Сохранить эффекты от актёра (не связанные с особенностями, предметами, заклинаниями)",
-	"DND5E.PolymorphKeepOtherOriginAE": "Сохранить эффекты от других актёров",
-	"DND5E.PolymorphKeepPhysical": "Сохранить СИЛ, ЛВК, ВЫН",
-	"DND5E.PolymorphKeepSaves": "Сохранить умение в испытаниях",
-	"DND5E.PolymorphKeepSelf": "Сохранить себя (изменить только изображение и размер, например для заклинания Изменение облика)",
-	"DND5E.PolymorphKeepSkills": "Сохранить умение в навыках",
-	"DND5E.PolymorphKeepSpellAE": "Сохранить эффекты от заклинаний",
-	"DND5E.PolymorphKeepSpells": "Сохранить заклинания",
-	"DND5E.PolymorphKeepType": "Сохранить тип существа",
-	"DND5E.PolymorphKeepVision": "Сохранить зрение (персонажа и токена)",
-	"DND5E.PolymorphMergeSaves": "Объединить умение в испытаниях (оставить высший)",
-	"DND5E.PolymorphMergeSkills": "Объединить умение в навыках (оставить высший)",
-	"DND5E.PolymorphPromptTitle": "Трансформация актёра",
-	"DND5E.PolymorphRestoreTransformation": "Обратить трансформацию",
-	"DND5E.PolymorphRevertNoOriginalActorWarn": "Не найден оригинальный актёр с идентификатором '{reference}'",
-	"DND5E.PolymorphRevertWarn": "У вас нет прав на отмену полиморфа этого существа.",
-	"DND5E.PolymorphSelf": "Только внешний вид",
-	"DND5E.PolymorphTmpClass": "Временный класс",
-	"DND5E.PolymorphTokens": "Трансформировать все связанные токены?",
-	"DND5E.PolymorphWarn": "У вас нет прав на полиморф этого существа.",
-	"DND5E.PolymorphWildShape": "Дикая форма",
 	"DND5E.Portrait": "Портрет",
 	"DND5E.Prepared": "Подготовлено",
 	"DND5E.Prerequisites": {
@@ -3195,7 +3163,7 @@
 						"label": "Формула СЛ",
 						"hint": "Формула или неизменное значение для испытания СЛ."
 					},
-					"CustomFormula": "Своя формула",
+					"CustomFormula": "Особая формула",
 					"DefaultFormula": "8 + @mod + @prof"
 				}
 			}
@@ -4008,6 +3976,131 @@
 	"DND5E.TraitWeaponProf": "Умения в оружии",
 	"DND5E.Traits": "Особенности",
 	"DND5E.TraitsChosen": "Выбранные особенности",
+
+	"DND5E.TRANSFORM": {
+		"Action": {
+			"Restore": "Обратить трансформацию",
+			"Transform": "Трансформация"
+		},
+		"Dialog": {
+			"Title": "Настройка трансформации"
+		},
+		"Preset": {
+			"Appearance": {
+				"Label": "Только внешний вид"
+			},
+			"Default": "По умолчанию",
+			"Label": "Шаблоны",
+			"Polymorph": {
+				"Label": "Полиморф"
+			},
+			"WildShape": {
+				"Label": "Дикая форма"
+			}
+		},
+		"Setting": {
+			"Effects": {
+				"All": {
+					"Hint": "Сохранить все эффекты, игнорируя другие настройки эффектов.",
+					"Label": "Все эффекты"
+				},
+				"Background": {
+					"Label": "Эффекты происхождения"
+				},
+				"Class": {
+					"Label": "Эффекты класса"
+				},
+				"Equipment": {
+					"Label": "Эффекты снаряжения"
+				},
+				"Feature": {
+					"Label": "Эффекты особенностей"
+				},
+				"Origin": {
+					"Hint": "Сохранить эффекты, созданные напрямую на исходном актёре.",
+					"Label": "Этот актёр"
+				},
+				"OtherOrigin": {
+					"Hint": "Сохранить эффекты, созданные другими актёрами.",
+					"Label": "Другие актёры"
+				},
+				"Spell": {
+					"Label": "Эффекты заклинания"
+				},
+				"Title": "Активные эффекты"
+			},
+			"Keep": {
+				"Biography": {
+					"Label": "Биография"
+				},
+				"CreatureType": {
+					"Label": "Тип существа"
+				},
+				"Equipment": {
+					"Label": "Снаряжение"
+				},
+				"Features": {
+					"Label": "Особенности"
+				},
+				"Health": {
+					"Label": "Пункты и кости здоровья"
+				},
+				"Hint": "Эти элементы будут наследованы от исходного актера.",
+				"Mental": {
+					"Hint": "Оставить Интеллект, Мудрость и Харизму.",
+					"Label": "Ментальные способности"
+				},
+				"Physical": {
+					"Hint": "Оставить Силу, Ловкость и Выноскливость.",
+					"Label": "Физические способности"
+				},
+				"Proficiency": {
+					"Label": "Бонус умения"
+				},
+				"Saves": {
+					"Label": "Умения в испытаниях"
+				},
+				"Self": {
+					"Hint": "Изменить только портрет и токен, остальные настройки будут проигнорированы.",
+					"Label": "Собственный"
+				},
+				"Skills": {
+					"Label": "Умения в навыках"
+				},
+				"Spells": {
+					"Label": "Заклинания"
+				},
+				"Title": "Оставить",
+				"Vision": {
+					"Label": "Зрение"
+				}
+			},
+			"Merge": {
+				"Hint": "Объединить эти умения, оставив то, которое имеет больший модификатор.",
+				"Saves": {
+					"Label": "Умения в испытаниях"
+				},
+				"Skills": {
+					"Label": "Умения в навыках"
+				},
+				"Title": "Объединить"
+			},
+			"Other": {
+				"AddTemp": {
+					"Hint": "Доб. текущие ПЗ цели как временные ПЗ",
+					"Label": "Доб. времеменные ПЗ"
+				},
+				"Title": "Прочие настройки"
+			}
+		},
+		"TemporaryClass": "Временный класс",
+		"Warning": {
+			"NoOwnership": "У вас нет разрешения трансформировать этого актёра.",
+			"NoPermission": "Разрешение на трансформацию не предоставлено игрокам.",
+			"OriginalActor": "Не найден оригинальный актёр с ID '{reference}'."
+		}
+	},
+
 	"DND5E.Treasure": {
 		"Categories": {
 			"Any": "Любые",
@@ -4269,7 +4362,7 @@
 			"Special": "Особое",
 			"Time": "Время",
 			"Type": {
-				"Formula": "Своя формула",
+				"Formula": "Особая формула",
 				"LoseAll": "Потратить все использования",
 				"RecoverAll": "Восстановить все использования"
 			}
