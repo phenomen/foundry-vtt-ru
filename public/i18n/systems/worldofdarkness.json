@@ -2,14 +2,15 @@
 	"TYPES.Actor.Changeling": "Подменыш ",
 	"TYPES.Actor.Changing Breed": "Фера",
 	"TYPES.Actor.Demon": "Демон",
+	"TYPES.Actor.Exalted": "Exalted vs WoD",
 	"TYPES.Actor.Hunter": "Охотник",
-	"TYPES.Actor.Mage": "Маг",
+	"TYPES.Actor.Mage": "Mage the Ascension",
 	"TYPES.Actor.Mortal": "Смертный ",
 	"TYPES.Actor.Vampire": "Вампир ",
 	"TYPES.Actor.Wraith": "Призрак",
+	"TYPES.Actor.Mummy": "Mummy the Resurrection",
 	"TYPES.Actor.Werewolf": "Оборотень",
 	"TYPES.Actor.Creature": "Существо",
-	"TYPES.Actor.Spirit": "Дух (устарел)",
 	"TYPES.Item.Bonus": "Бонус",
 	"TYPES.Item.Experience": "Опыт",
 	"TYPES.Item.Feature": "Особенность",
@@ -35,9 +36,12 @@
 			"werewolf": "Оборотни: Апокалипсис",
 			"mage": "Маги: Восхождение ",
 			"wraith": "Призрак: Забвение",
+			"mummy": "Mummy the Resurrection",
+			"exalted": "Exalted vs WoD",
 			"breed": "Фера",
 			"creature": "Существо",
-			"mortal": "Смертный "
+			"mortal": "Смертный ",
+			"orpheus": "Orpheus"
 		},
 		"sheets": {
 			"mortal": "Бланк смертного",
@@ -48,9 +52,10 @@
 			"hunter": "Бланк охотник",
 			"demon": "Бланк демон",
 			"wraith": "Бланк призрака",
+			"mummy": "Mummy sheet",
 			"breed": "Бланк фера",
 			"creature": "Бланк существа",
-			"spirit": "Бланк духа (устарел)",
+			"spirit": "Spirit sheet",
 			"items": "Лист Предмета",
 			"powers": "Силы",
 			"equipment": "Снаряжение",
@@ -62,6 +67,8 @@
 			"victorian": "Викторианская Эпоха",
 			"wildwest": "Дикий Запад",
 			"darkages": "Тёмные Века",
+			"classical": "Classical Age",
+			"livinggods": "Age of the Living Gods",
 			"changeera": "Вы уверены, что хотите изменить эпоху?",
 			"changeerahint": "Бланк уже настроен на эту эпоху, вы уверены, что хотите его сбросить?",
 			"mortaleratext": "Бланк смертного по умолчанию",
@@ -83,6 +90,8 @@
 			"worldversionhint": "Используется для определения необходимости установки патча для мира.",
 			"advantagerolls": "Как осуществляются броски Преимуществ",
 			"advantagerollshint": "Нужно ли использовать в бросках постоянные (проверяемые) или временные (не проверяемые) значения, например, Воли. Требуется перезапуск Foundry VTT.",
+			"specialitylevel": "Number of dots for Speciality",
+			"specialitylevelhint": "What is the normal number of dots needed to be able to set a speciality, default 4.",
 			"attributesettings": "Настройки характеристик",
 			"attributesettingshint": "Есть два варианта на выбор. Либо использовать стандарт из 20-й редакции, где у вас есть Привлекательность и Восприятие, а сила воли рассчитывается как стат. Либо вы используете 5-ю редакцию, в которой Привлекательность и Восприятие заменены на Хладнокровие и Решительность, а Сила Воли рассчитывается как Хладнокровие + Решительность. 20-я редакция используется по умолчанию. После изменения этой настройки необходимо перезапустить Foundry VTT.",
 			"observersactorpermission": "Разрешение на полный обзор для наблюдателей",
@@ -135,6 +144,8 @@
 			"specialityaddsuccesshint": "Использование специализации по умолчанию - добавляет количество успехов при броске 10.",
 			"specialityreducediff": "Специализация снижает сложность",
 			"specialityreducediffhint": "При использовании cпециализации сложность броска снижается.",
+			"specialityallowbotch": "Speciality rolls can botch",
+			"specialityallowbotchhint": "If you roll an Ability with a speciality this roll can botch, default is true.",
 			"tenaddsuccess": "10 всегда добавляют успехи",
 			"tenaddsuccesshint": "Изменения способа обработки 10: теперь они всегда добавляют успехи к броску.",
 			"explodingdice": "Обработка \"взрывающихся\" 10",
@@ -145,7 +156,10 @@
 			"erasettings": "Настройки эры",
 			"erasettingshint": "Настройки мира, связанные с эрами",
 			"darkmodesetting": "Темная тема ",
-			"darkmodesettinghint": "Подсказка о темном режиме (требуется повторный вход в Foundry)"
+			"darkmodesettinghint": "Подсказка о темном режиме (требуется повторный вход в Foundry)",
+			"fifthedwillpowersetting": "Willpower (5th edition only)",
+			"fifthedwillpowersettinghint": "This is an expansion of the attribute settings that sets how the permanent Willpower is calculated. In 5th edition Willpower is calculated by adding Composure and Resolve. In 20th edition Willpower is a normal stat value.",
+			"usepenaltydamage": "Use health penalties in damage rolls"
 		},
 		"types": {
 			"mortal": "Смертный",
@@ -174,6 +188,7 @@
 			"combination": "Комбинированная дисциплина",
 			"art": "Искусство",
 			"artpower": "Сила Искусства",
+			"sliver": "Sliver",
 			"edge": "Грань",
 			"edgepower": "Сила Грани",
 			"lore": "Знание",
@@ -197,9 +212,87 @@
 			"resonance": "Резонанс",
 			"othertraits": "Другие черты",
 			"apocalypticform": "Апокалиптическая форма",
+			"shapeform": "Shapeshifting Form",
+			"aspect": "Aspect",
 			"passion": "Страсть",
 			"fetter": "Оковы",
-			"wyrd": "Wyrd"
+			"wyrd": "Wyrd",
+			"hekau": "Hekau",
+			"hekaupower": "Hekau power",
+			"numina": "Numina",
+			"numinapower": "Spell/Ritual",
+			"stain": "Stain",
+			"horror": "Horror",
+			"exaltedcharm": "Charm",
+			"exaltedsorcery": "Ancient sorcery",
+			"solar": {
+				"dawn": "Dawn charms",
+				"zenith": "Zenith charms",
+				"twilight": "Twilight charms",
+				"night": "Night charms",
+				"eclipse": "Eclipse charms",
+				"special": "Special charms"
+			},
+			"lunar": {
+				"fullmoon": "Full moon charms",
+				"changingmoon": "Changing moon charms",
+				"nomoon": "No moon charms",
+				"shapeshifting": "Shapeshifting charms"
+			},
+			"dragon": {
+				"air": "Air charms",
+				"earth": "Earth charms",
+				"fire": "Fire charms",
+				"water": "Water charms",
+				"wood": "Wood charms"
+			},
+			"sidereal": {
+				"journey": "Journey charms",
+				"serenity": "Serenity charms",
+				"battle": "Battle charms",
+				"secret": "Secret charms",
+				"ending": "Ending charms",
+				"border": "The kaleidoscopic border",
+				"hand": "The quicksilver hand",
+				"march": "The charcoal march",
+				"shard": "The obsidian shards",
+				"prismatic": "The prismatic arrangement",
+				"veil": "The sapphire veil",
+				"scarlet": "The scarlet battlefields"
+			},
+			"abyssal": {
+				"dusk": "Dusk charms",
+				"midnight": "Midnight charms",
+				"daybreak": "Daybreak charms",
+				"day": "Day charms",
+				"moonshadow": "Moonshadow charms"
+			},
+			"infernal": {
+				"general": "General charms",
+				"realm": "The night realm charms",
+				"lanka": "Lanka: Demon city of the Rakshas charms",
+				"skinned": "The hell of being skinned alive charms",
+				"city": "The wicked city charms",
+				"boiling": "The hell of boiling oil charms",
+				"burrowing": "The hell of burrowing maggots charms"
+			},
+			"alchemical": {
+				"general": "General charms",
+				"combat": "Combat charms",
+				"physical": "Physical enhancement charms",
+				"social": "Social charms",
+				"stealth": "Stealth and disguise charms",
+				"analytic": "Analytic and cognitive charms",
+				"utility": "Utility charms",
+				"spirit": "Spiritual charms"
+			},
+			"liminal": {
+				"blood": "Blood charms",
+				"breath": "Breath charms",
+				"fleash": "Flesh charms",
+				"marrow": "Marrow charms",
+				"soil": "Soil charms"
+			}
 		},
 		"tab": {
 			"bio": "Биография",
@@ -216,7 +309,11 @@
 			"edge": "Грани",
 			"lore": "Знания",
 			"death": "Death",
+			"hekau": "Hekau",
+			"numina": "Numina",
+			"exaltedcharm": "Charms",
 			"shapechange": "Смена формы",
+			"effect": "Effects",
 			"settings": "Настройки",
 			"sheet": "Настройки листа",
 			"attribute": "Настройки характеристик"
@@ -437,13 +534,19 @@
 				"sire": "Сир",
 				"weakness": "Изъян",
 				"lowergeneration": "Понизить Поколение",
-				"cleargeneration": "Очистить Временное Поколение"
+				"cleargeneration": "Очистить Временное Поколение",
+				"kindredeast": "Kindred of the East",
+				"balance": "Balance",
+				"ponature": "P'o nature",
+				"direction": "Direction",
+				"wu": "Wu"
 			},
 			"mage": {
 				"affiliation": "Фракция",
 				"essence": "Эссенция",
 				"sect": "Секта",
 				"affinitysphere": "Основная сфера",
+				"affinity": "Affinity",
 				"tradition": "Традиция",
 				"technocracy": "Технократия",
 				"disparate": "Разрозненные",
@@ -618,12 +721,43 @@
 				"darkpassions": "Тёмные страсти",
 				"psychewillpower": "Сила воли души"
 			},
+			"mummy": {
+				"amenti": "Amenti",
+				"hamartia": "Hamartia",
+				"inheritance": "Inheritance",
+				"rebirth": "Rebirth"
+			},
+			"exalted": {
+				"solar": "Solar Exalted",
+				"lunar": "Lunar Exalted",
+				"dragon": "Dragon-Born Exalted",
+				"sidereal": "Sidereal Exalted",
+				"abyssal": "Abyssal Exalted",
+				"infernal": "Infernal Exalted",
+				"alchemical": "Alchemical Exalted",
+				"liminal": "Liminal Exalted",
+				"urge": "Urge",
+				"caste": "Caste",
+				"anima": "Anima",
+				"circle": "Circle",
+				"favored": "Favored charms",
+				"intimacy": "Intimacy",
+				"crown": "Crown",
+				"animapowers": "Anima powers"
+			},
+			"orpheus": {
+				"shade": "Shade",
+				"lament": "Lament",
+				"role": "Role"
+			},
 			"mortal": {
 				"autumnpeople": "Люди осени",
 				"enchanted": "Зачарованный",
 				"ghoul": "Гуль",
 				"kinfolk": "Кинфолк",
-				"truefaith": "Истинная вера"
+				"truefaith": "Истинная вера",
+				"orpheus": "Orpheus",
+				"sorcerer": "Sorcerer"
 			},
 			"creature": {
 				"chimera": "Химера",
@@ -634,7 +768,8 @@
 				"anurana": "Анурана",
 				"samsa": "Самса",
 				"kerasi": "Кераси",
-				"yeren": "Yeren"
+				"yeren": "Yeren",
+				"earthbound": "Earthbound"
 			}
 		},
 		"attributes": {
@@ -667,6 +802,10 @@
 				"stamina": "Бонус выносливости",
 				"manipulation": "Бонус за манипуляцию",
 				"appearance": "Бонус за внешний вид"
+			},
+			"diff": {
+				"perception": "Perception difficulty",
+				"wits": "Wits difficulty"
 			}
 		},
 		"abilities": {
@@ -716,10 +855,13 @@
 			"survival": "Выживание",
 
 			"academics": "Гуманитарные науки",
+			"ancientmedicine": "Ancient Medicine",
+			"astrology": "Astrology",
 			"bureaucracy": "Бюрократия",
 			"computer": "Информатика",
 			"cosmology": "Космология",
 			"culture": "Культура",
+			"customs": "Customs",
 			"enigmas": "Головоломки",
 			"esoterica": "Эзотерика",
 			"finance": "Финансы",
@@ -730,17 +872,22 @@
 			"law": "Законы",
 			"linguistics": "Лингвистика",
 			"medicine": "Медицина",
+			"mythology": "Mythology",
 			"occult": "Оккультизм",
+			"philosophy": "Philosophy",
 			"politics": "Политика",
 			"religion": "Религия",
+			"ritualistics": "Ritualistics",
 			"rituals": "Ритуалы",
 			"seneschal": "Сенешаль",
 			"science": "Естественные науки",
 			"technology": "Электроника",
-			"theology": "Теология"
+			"theology": "Теология",
+			"writing": "Writing"
 		},
 		"health": {
 			"health": "Здоровье",
+			"uninjured": "Uninjured",
 			"bruised": "Помят",
 			"hurt": "Легко ранен",
 			"injured": "Ранен",
@@ -748,6 +895,11 @@
 			"mauled": "Тяжело ранен",
 			"crippled": "Едва жив",
 			"incapacitated": "При смерти",
+			"broken": "Broken/Scorched",
+			"crushed": "Crushed/Burned",
+			"dismembered": "Dismembered/Incinerated",
+			"pulverized": "Pulverized/Cremated",
+			"dust": "Dust/Ash",
 			"bashing": "Легкие",
 			"lethal": "Тяжелые",
 			"aggravated": "Губительные",
@@ -795,6 +947,7 @@
 			},
 			"bloodpool": "Запас крови",
 			"perturn": "Предел траты в ход",
+			"faithpool": "Faith Pool",
 			"bearing": "Столп",
 			"renown": "Почет",
 			"glory": "Слава",
@@ -813,6 +966,7 @@
 			"valor": "Доблесть",
 			"harmony": "Гармония",
 			"innovation": "Инновации",
+			"power": "Power",
 			"rank": "Ранг",
 			"ranknames": {
 				"garou": {
@@ -890,7 +1044,23 @@
 			"apocalypticforms": "Апокалиптические формы",
 			"corpus": "Корпус",
 			"pathos": "Пафос",
-			"angst": "Ангст"
+			"angst": "Ангст",
+			"vitality": "Vitality",
+			"spite": "Spite",
+			"balance": "Balance",
+			"sekhem": "Sekhem",
+			"essencepool": "Essence pool",
+			"essenceperturn": "Essence per turn",
+			"limitbreak": "Limit break",
+			"limit": "Limit",
+			"yinchi": "Yin chi",
+			"yin": "Yin",
+			"yang": "Yang",
+			"yangchi": "Yang chi",
+			"dharma": "Dharma",
+			"hun": "Hun",
+			"po": "P'o",
+			"demonchi": "Demon chi"
 		},
 		"combat": {
 			"conditions": {
@@ -1034,6 +1204,8 @@
 			"unsortedarts": "Ниже все неотсортированные силы Искусств, которым требуется выбрать Искусство. Нажмите на название, чтобы отсортировать ",
 			"unsortededges": "Ниже все неотсортированные силы Граней, которым требуется выбрать Грань. Нажмите на название, чтобы отсортировать ",
 			"unsortedlores": "Ниже все неотсортированные силы Знаний, которым требуется выбрать Знание. Нажмите на название, чтобы отсортировать ",
+			"unsortedhekaus": "Here is all unsorted hekau powers which needs to get a selected Hekau. Click on the headline to sort one.",
+			"unsortednuminas": "Here is all unsorted numina powers which needs to get a selected Numina. Click on the headline to sort one.",
 			"arts": "Искусства",
 			"slivers": "Осколки",
 			"edges": "Грани",
@@ -1046,7 +1218,13 @@
 			"ritualcategory": "Категория ритуала",
 			"arcanoi": "Арканои",
 			"passions": "Страсти",
-			"fetters": "Оковы"
+			"fetters": "Оковы",
+			"hekaus": "Hekaus",
+			"numinas": "Numinas",
+			"horrors": "Horrors",
+			"stains": "Stains",
+			"exaltedcharm": "Charms",
+			"exaltedsorcery": "Ancient sorcery"
 		},
 		"spheres": {
 			"spheres": "Сферы",
@@ -1101,7 +1279,13 @@
 			"periapt": "Периапт",
 			"matrix": "Матрица",
 			"trinket": "Безделушка",
-			"contains": "Содержит"
+			"contains": "Содержит",
+			"name": "Name",
+			"type": "Type"
+		},
+		"effects": {
+			"origin": "Origin",
+			"area": "Area"
 		},
 		"notes": {
 			"unnamedbackground": "Неназванный факт биографии",
@@ -1136,6 +1320,8 @@
 			"specialty": "Использовать cпециализацию",
 			"select": "Выбор",
 			"noneselect": "Не выбрано",
+			"sheetsetting": "Use sheet setting",
+			"nosetting": "No setting use black",
 			"custom": "Вторичная способность",
 			"custompath": "Особый путь",
 			"customtribe": "Особое племя",
@@ -1166,6 +1352,7 @@
 			"other": "Прочее",
 			"both": "Оба",
 			"nochange": "Без изменений",
+			"usewillpower": "Use Willpower",
 			"bio": {
 				"wronggeneration": "Не является действительным поколением",
 				"wrongtempgeneration": "Невозможно иметь поколение ниже 4",
@@ -1191,8 +1378,11 @@
 				"clearedge": "Очистить связь с Гранью",
 				"clearlore": "Очистить связь со Знанием",
 				"cleararcanoi": "Очисть связь с арканои",
+				"clearhekau": "Clear hekau connection",
+				"clearnumina": "Clear numina connection",
 				"disconnect": "Отключить питание",
 				"disconnectlabel": "Отключение питания",
+				"charmtypes": "Charm types",
 				"removebonus": {
 					"art": "Удалить связанные с искусством силы",
 					"sliver": "Удалить связанные с осколком силы",
@@ -1200,7 +1390,9 @@
 					"edge": "Удалить связанные с гранью силы",
 					"discipline": "Удалить связанные с дисциплиной силы",
 					"path": "Удалить связанные с путём силы",
-					"arcanoi": "Удалить связанные с арканои силы"
+					"arcanoi": "Удалить связанные с арканои силы",
+					"hekau": "Remove connected powers to hekau",
+					"numina": "Remove connected powers to numina"
 				}
 			},
 			"notes": {
@@ -1227,12 +1419,17 @@
 				"usedpowers": "Установить использующийся в листе тип сил",
 				"essencevalue": "Установить значение эссенции",
 				"sheetfont": "Использовать специальные шрифты для бланка",
+				"dice": "Dice settings",
+				"dicehint": "This settings able you to override the sheet's dice color.",
 				"secondaryabilities": "Вторичные способноси",
 				"abilitiesmaxrating": "Максимальный уровень способностей",
 				"hasdisciplines": "Имеет Дисциплины и Ритуалы",
 				"hasgifts": "Имеет дары и обряды",
 				"haspowers": "Has special powers",
+				"hasnumina": "Has numina",
 				"setdarkages": "Бланк изменен на Темные Века!",
+				"setclassical": "Sheet set to Classical Ages era!",
+				"setlivinggods": "Sheet set to Age of the Living Gods era!",
 				"setvictorian": "Бланк изменен на \"Викторианская Эпоха\"!",
 				"setwildwest": "Бланк изменен на \"Дикий Запад\"!",
 				"setmodern": "Бланк изменен на \"Современность\"!",
@@ -1249,10 +1446,17 @@
 					"headline": "Эра",
 					"modern": "Современность (20я)",
 					"victorian": "Викторианская Эпоха (20я)",
+					"classical": "Classical Age (20th)",
+					"livinggods": "Age of the Living Gods (20th)",
 					"wildwest": "Дикий Запад (20я)",
 					"darkages": "Темные Века (20я)",
 					"infoone": "Изменение этой настройки означает, что способности листа будут перенастроены в соответствии с выбранной областью.",
 					"infotwo": "Это может привести к тому, что существующие способности окажутся скрытыми."
+				},
+				"power": {
+					"maxrating": "Max rating on Powers",
+					"maxratinghint": "This settings set the maximum rating a power can have.",
+					"bonusmaxrating": "Bonus to max rating"
 				}
 			},
 			"trait": {
@@ -1282,6 +1486,8 @@
 				"abilitydiffhint": "Этот бонус изменяет сложность всех проверок данной способности",
 				"soakbonus": "Бонус к проверке на прочность",
 				"soakbonushint": "Этот бонус изменяет количество костей при любых бросках проверок на прочность",
+				"soakdiffbonus": "Soak difficulty bonus",
+				"soakdiffbonushint": "This bonus changes the difficulty to succeed with soak rolls.",
 				"healthbuff": "Бонус к уровню здоровья",
 				"healthbuffhint": "Этот бонус добавляет количество уровней здоровья \"помят\" которые персонаж может иметь",
 				"initbonus": "Бонус Инициативы",
@@ -1296,7 +1502,9 @@
 				"savefail": "Не удалось сохранить изменения бонуса"
 			},
 			"new": {
+				"create": "Create item",
 				"notfound": "Тип предмета не существует",
+				"alreadyexists": "already exists on the sheet.",
 				"armor": "Новая броня",
 				"naturalweapon": "Новое естественное оружие ",
 				"meleeweapon": "Новое оружие ближнего боя",
@@ -1353,7 +1561,16 @@
 				"arcanoi": "Новый арканои",
 				"arcanoipower": "Новая сила арканои",
 				"passion": "Новая страсть",
-				"fetter": "Новые оковы"
+				"fetter": "Новые оковы",
+				"hekau": "New hekau",
+				"hekaupower": "New hekau power",
+				"numina": "New numina",
+				"numinapower": "New ritual/spell",
+				"stain": "New stain",
+				"horror": "New horror",
+				"ancientsorcery": "New ancient sorcery",
+				"shapeform": "New shapeshifting form",
+				"description": "Select what type of item you wish want to create to the sheet by clicking on the correct button below."
 			},
 			"add": {
 				"naturalweapon": "Добавить естественное оружие ",
@@ -1400,9 +1617,17 @@
 				"arcanoi": "Добавить арканои",
 				"arcanoipower": "Добавить силу арканои",
 				"passion": "Добавить страсть",
-				"fetter": "Добавить оковы"
+				"fetter": "Добавить оковы",
+				"hekau": "Add hekau",
+				"hekaupower": "Add hekau power",
+				"numina": "Add numina",
+				"numinapower": "Add ritual/spell",
+				"item": "Add item",
+				"horror": "Add horror",
+				"stain": "Add stain"
 			},
 			"edit": {
+				"headline": "Edit",
 				"naturalweapon": "Изменить естественное оружие ",
 				"meleeweapon": "Изменить оружие ближнего боя",
 				"rangedweapon": "Изменить оружие дальнего боя",
@@ -1450,9 +1675,16 @@
 				"arcanoi": "Изменить арканои",
 				"arcanoipower": "Изменить силу арканои",
 				"passion": "Изменить страсть",
-				"fetter": "Изменить оковы"
+				"fetter": "Изменить оковы",
+				"hekau": "Edit hekau",
+				"hekaupower": "Edit hekau power",
+				"numina": "Edit numina",
+				"numinapower": "Edit ritual/spell",
+				"horror": "Edit horror",
+				"stain": "Edit stain"
 			},
 			"remove": {
+				"headline": "Remove",
 				"item": "Удалить предмет",
 				"removing": "Удаление",
 				"naturalweapon": "Удалить естественное оружие",
@@ -1499,7 +1731,13 @@
 				"arcanoi": "Удалить арканои",
 				"arcanoipower": "Удалить силу арканои",
 				"passion": "Удалить страсть",
-				"fetter": "Удалить оковы"
+				"fetter": "Удалить оковы",
+				"hekau": "Remove hekau",
+				"hekaupower": "Remove hekau power",
+				"numina": "Remove numina",
+				"numinapower": "Remove ritual/spell",
+				"horror": "Remove horror",
+				"stain": "Remove stain"
 			},
 			"show": {
 				"background": "Показать факты биографии",
@@ -1533,7 +1771,9 @@
 			},
 			"items": {
 				"spheres": "Заполните сферы и их уровни, которые требуются для этого заклятия"
-			}
+			},
+			"changelog": "Changelog",
+			"wiki": "Wiki"
 		},
 		"dice": {
 			"activate": "Бросок на активацию",
@@ -1554,7 +1794,9 @@
 			"rollingsoak": "Проверка на прочность",
 			"rollingremainactive": "Бросок на сохранение активности",
 			"rollingremainactivetext": "Каждый успех исцеляет один уровень здоровья от любого вида повреждений. Независимо от количества исцеленных повреждений персонаж впадает в ярость берсерка. Оборотень получает Боевой шрам, если успешно сохраняет активность.",
-			"addedautosucc": "Бросок добавляет {0} автоматических успехов"
+			"addedautosucc": "Бросок добавляет {0} автоматических успехов",
+			"usingwillpower": "Using Willpower",
+			"favored": "Is a favored roll"
 		},
 		"dialog": {
 			"save": "Сохранить",
@@ -1616,7 +1858,7 @@
 				"selectsphere": "Необходимо сначала выбрать сферу",
 				"keepdifficulty": "Оставляет сложность неизменной",
 				"keepdiff": "Сохранить сложность",
-				"keepdiffdesc": "Сохранение сложности — это когда вы хотите использовать расширенное заклинание, но сложность не должна увеличиваться для каждого броска.",
+				"keepdiffdesc": "Keep difficulty is when you are to use extended casting but the difficulty are not to be increased for each roll.",
 				"difficultylimit": "Сложность никогда не будет выше или ниже чем стандартная\nсложность +3/-3."
 			},
 			"checkfrenzy": {
@@ -1667,7 +1909,7 @@
 				"nightmaredice": "Кости кошмара",
 				"missingrealm": "Вам нужно выбрать царство",
 				"arttype": "Тип искусства",
-				"noarttype": "Тип искусства не выбран",
+				"noarttype": "Art type not selected on used Art",
 				"shiftnightmaredice": "Переключиться на кости кошмара",
 				"notset": "Не установлено",
 				"selectpower": "Выберите, к какой силе привязать",
@@ -1690,9 +1932,10 @@
 				"chosenattribute": "Выбранная характеристика",
 				"movement": "Тип движения",
 				"name": "Имя",
-				"type": "Тип",
 				"bonusvalue": "Значение",
-				"bonuses": "Бонусы"
+				"bonuses": "Бонусы",
+				"healthleveltype": "Health level type",
+				"section": "Section"
 			},
 			"variant": {
 				"sheettype": "Выбрать тип бланка",
@@ -1700,6 +1943,7 @@
 				"general": "Общий тип",
 				"changeling": "Общий подменыш",
 				"mortal": "Общий смертный",
+				"vampire": "General vampire",
 				"wraith": "Общий призрак",
 				"creature": "Общее существо",
 				"info": "Настройка позволяет выбрать вариант бланка персонажа.",
