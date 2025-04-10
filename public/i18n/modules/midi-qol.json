@@ -30,7 +30,7 @@
 	"midi-qol.ItemRollButtons.Name": "Добавить кнопки атаки/урона к предмету в инвентаре",
 	"midi-qol.ItemRollButtons.Hint": "Добавить кнопки бросков в описание предмета — эти кнопки поддерживают Ctrl/Alt/Shift для пропуска диалогового окна.",
 	"midi-qol.AddChatDamageButtons.Name": "Добавить кнопки урона в сообщение чата",
-	"midi-qol.AddChatDamageButtons.Hint": "Кнопки урона добавятся к любому сообщению связанному с броском урона в чате — нажатие на кнопки наносит урон всем выделенным токенам, НЕ ВЫБРАННЫМ В КАЧЕСТВЕ ЦЕЛИ (то же самое, что и в выпадающем меню).",
+	"midi-qol.AddChatDamageButtons.Hint": "Enable the dnd5e damage tray on chat messages.",
 	"midi-qol.AddChatDamageButtonsOptions": {
 		"none": "Нет",
 		"gm": "Только для Мастера",
@@ -43,8 +43,8 @@
 	"midi-qol.AutoCheckSaves.Hint": "Автоматически проверять испытание, когда оно требуется. Если выключено, то будет предполагаться, что все цели провалили испытание.",
 	"midi-qol.DisplaySaveDC.Name": "Отображать СЛ испытания",
 	"midi-qol.DisplaySaveDC.Hint": "Если выключено, то СЛ испытания будет скрыта от игроков (только для объединённой карточки).",
-	"midi-qol.AutoRemoveTargets.Name": "Сбрасывать цели в конце хода",
-	"midi-qol.AutoRemoveTargets.Hint": "Выберите какие цели будут автоматически сбрасываться в конце вашего хода.",
+	"midi-qol.AutoRemoveTargets.Name": "Un-target at end of turn",
+	"midi-qol.AutoRemoveTargets.Hint": "At the end of you turn choose which targets to automatically un-target",
 	"midi-qol.buttons.roll": "Обычный бросок",
 	"midi-qol.buttons.attack": "Атака",
 	"midi-qol.buttons.damage": "Урон",
@@ -72,36 +72,14 @@
 	"midi-qol.noTemplateSeen": "Шаблон не был размещён",
 	"midi-qol.AutoTarget.Name": "Автовыбор целей при размещении шаблона",
 	"midi-qol.AutoTarget.Hint": "When placing a template (e.g. spell) auto target tokens inside the template. If 'Center + Levels' is set in ranged targeting Levels Volumetric Templates will be used (if installed)",
-	"midi-qol._comment for translators_noDamageonSaveSpells": "Начиная с Foundry V9 массив элементов json больше не поддерживается, поэтому будет использоваться только версия V9",
-	"midi-qol.noDamageonSaveSpells": [
-		"Всплеск кислоты",
-		"Взрыв мечей",
-		"Раскат грома",
-		"Язвительная насмешка",
-		"Создание костра",
-		"Петля молнии",
-		"Брызги яда",
-		"Ограда из стрел",
-		"Дезинтеграция",
-		"Священное пламя",
-		"Ограда из стрел",
-		"Обморожение",
-		"Нашествие",
-		"Звон по мёртвым",
-		"Лучистое слово",
-		"Катапульта",
-		"Дрожь земли"
-	],
-	"midi-qol.noDamageonSaveSpellsv9": "Всплеск кислоты, Взрыв мечей, Раскат грома, Язвительная насмешка, Создание костра, Петля молнии, Брызги яда, Ограда из стрел, Дезинтеграция, Священное пламя, Обморожение, Нашествие, Звон по мёртвым, Лучистое слово, Катапульта, Дрожь земли, Чёрные щупальца Эварда, Голод Хадара",
-	"midi-qol.fullDamageText": "{damageType}",
-	"midi-qol._comment for translators_fullDamage": "Обе строки текста ниже используется MidiQOL для поиска эффектов в описании заклинания",
-	"midi-qol.fullDamage": "полный урон при успехе",
-	"midi-qol.fullDamageAlt": "нужно пройти испытание",
+	"midi-qol._comment for translators_noDamageOnSaveSpells": "In foundry v9 the array json element is no longer supported, so only the v9 version will be used",
 	"midi-qol.undoDamageFrom": "Отменить нанесенный урон от",
 	"midi-qol.noGM": "Мастер не в игре и без него нельзя применять эффекты или изменять ПЗ",
 	"midi-qol.noSelection": "Не выбран токен/актёр",
 	"midi-qol.showGM.Name": "Мастер видит все сообщения шепотом",
 	"midi-qol.showGM.Hint": "Сообщения, отправленные шепотом, будут видны Мастеру даже если такая настройка отключена в Foundry",
+	"midi-qol.PreferredGM.Name": "Preferred GM",
+	"midi-qol.PreferredGM.Hint": "Preferred GM for socket calls. If 'none' the first gm on the current scene will be used.",
 	"midi-qol.ColoredBorders.Name": "Сообщения с цветными рамками",
 	"midi-qol.ColoredBorders.Hint": "Каждое сообщение чата имеет рамку в цвете персонажей игрока.",
 	"midi-qol.AutoEffects.Name": "Автоприменение эффектов предмета к целям",
@@ -123,15 +101,6 @@
 	"midi-qol.PlayerSaveTimeout.Hint": "Как долго ожидать, прежде чем совершать броски испытаний за игроков, в секундах.",
 	"midi-qol.MagicResistant": "устойчивость к магии",
 	"midi-qol.MagicResistanceFeat": "Устойчивость к магии",
-	"midi-qol._comment for translators_halfDamage": "Текст ниже используется MidiQOL для поиска эффектов в описании заклинания",
-	"midi-qol.halfDamage": "получает лишь половину урона",
-	"midi-qol._comment for translators_halfDamageAlt": "Текст ниже используется MidiQOL для поиска эффектов в описании заклинания",
-	"midi-qol.halfDamageAlt": "половина урона",
-	"midi-qol.halfDamageText": "{damageType}",
-	"midi-qol._comment for translators_noDamage": "Обе строки текста ниже используется MidiQOL для поиска эффектов в описании заклинания",
-	"midi-qol.noDamage": "успешно пройти испытание",
-	"midi-qol.noDamageAlt": "успехе заклинание",
-	"midi-qol.noDamageText": "{damageType}",
 	"midi-qol.PreRollChecks.Name": "Экспериментально: Применение проверок перед совершением ускоренного броска, либо броска с использованием макросов.",
 	"midi-qol.PreRollChecks.Hint": "Экспериментально: Проверки перед совершением броска предмета. Бросающий в данный момент находится в зоне действия и имеет больше 0 ПЗ.",
 	"midi-qol.noTargets": "Вы должны выбрать цель перед броском атаки.",
@@ -140,7 +109,7 @@
 	"midi-qol.UseTokenNames.Name": "Карточки чата используют имя токена",
 	"midi-qol.UseTokenNames.Hint": "В названиях карточек чата и названиях целей используют имя токена, а не имя актёра.",
 	"midi-qol.CriticalDamage.Name": "Выбор критического урона для игроков",
-	"midi-qol.CriticalDamage.Hint": "'D&D5e по умолчанию' — все кости урона удваиваются в количестве; 'Макс. базовый урон' — стандартные кости урона (без дополнительных костей за критический удар), но все кости имеют максимально возможный результат; 'Макс. критические кости' — кости получаемые за критический удар имеют максимально возможный результат; 'Все кости максимальные' — базовые кости и кости за критический удар имеют максимально возможный результат; 'Удвоение урона' — любой результат костей удваивается; 'Взрыв критических костей' — все кости урона удваиваются, все критические кости взрываются; 'Доп. критический урон только у оружия' — единственный бонус к критическому урону - от поля дополнительного критического урона предмета; 'Макс. базовый критический бросок' — использовать максимальный базовый урон, затем бросить критические кости как обычно.",
+	"midi-qol.CriticalDamage.Hint": "DND5e Settings Only - standard dnd5e critical roll, Max Normal Damage - base weapon dice only (no critical dice) but all maximised, Max Critical Dice - critical dice maximised, Max All Dice - item + critical dice maximised, double dice value - result of dice x2, Explode Critical Dice - roll normal critical exploding any critical dice, Only Item Extra Critical - the only bonus damage for critical is from the item extra critical field, Max Base Roll Crit - use maximum base damage then roll critical dice as usual",
 	"midi-qol.CriticalDamageGM.Name": "Выбор критического урона для Мастера",
 	"midi-qol.CriticalDamageGM.Hint": "",
 	"midi-qol.CriticalDamageChoices": {
@@ -297,14 +266,13 @@
 	},
 	"midi-qol.playerRollSavesOptionsReduced": {
 		"none": "Нет",
-		"letme": "Let Me Roll That For You",
 		"chat": "Сообщение чата"
 	},
 	"midi-qol.AutoRemoveTargetsOptions": {
 		"none": "Никогда",
-		"dead": "снять цель с мёртвых после броска",
-		"allGM": "снять цель с мёртвых и все цели Мастера",
-		"all": "снять все цели в конце хода"
+		"dead": "Un-target dead after roll",
+		"allGM": "Un-target dead and all GM",
+		"all": "Un-target all at end of turn"
 	},
 	"midi-qol.ColoredBordersOptions": {
 		"none": "Нет",
@@ -358,7 +326,7 @@
 	"midi-qol.magicalEffectProp": "Магический эффект",
 	"midi-qol.concentrationEffectProp": "Концентрация",
 	"midi-qol.noConcentrationEffectProp": "Без концентрации",
-	"midi-qol.toggleEffectProp": "Переключение эффекта",
+	"midi-qol.toggleEffectProp": "Toggle effect (Deprecated)",
 	"midi-qol.playerControlsInvisibleTokens.Name": "Игроки контролируют принадлежащие им скрытые токены",
 	"midi-qol.playerControlsInvisibleTokens.Hint": "Экспериментальная опция — может сработать.",
 	"midi-qol.Debug.Name": "Включить отладку",
@@ -420,7 +388,7 @@
 	"midi-qol.SingleConcentrationRoll.Name": "Одна проверка концентрации",
 	"midi-qol.SingleConcentrationRoll.Hint": "Если включено и атака наносит обычный урон + испытание + альтернативный/полуторный урон, то для суммарного урона нужно совершить только одну проверку концентрации.",
 	"midi-qol.TempHPDamageConcentrationCheck.Name": "Проверка концентрации от временных ПЗ",
-	"midi-qol.TempHPDamageConcentrationCheck.Hint": "Если включено, потеря временных ПЗ вызовет проверку концентрации",
+	"midi-qol.TempHPDamageConcentrationCheck.Hint": "If enabled loss of temporary HP will trigger a concentration check.<br><strong>Disabling this is homebrew. Rules as written DND5E is that temp hp damage triggers a concentration check</strong>",
 	"midi-qol.RemoveConcentrationEffects.Name": "Снимать концентрацию при удалении эффектов",
 	"midi-qol.RemoveConcentrationEffects.Hint": "Проверка, когда эффекты (эффекты и шаблоны) удалены. Если все эффекты и шаблоны для концентрации на заклинании были удалены, то снимает концентрацию",
 	"midi-qol.RemoveConcentrationEffectsOptions": {
@@ -428,11 +396,20 @@
 		"effects": "Проверять эффекты",
 		"effectsTemplates": "Проверять эффекты и шаблоны"
 	},
-	"midi-qol.GMSettings": "Мастер",
-	"midi-qol.PlayerSettings": "Игрок",
+	"midi-qol.Config": {
+		"Tabs": {
+			"gm": "GM",
+			"player": "Player",
+			"workflow": "Workflow",
+			"concentration": "Concentration",
+			"reactions": "Reactions",
+			"misc": "Misc",
+			"mechanics": "Mechanics",
+			"rules": "Rules",
+			"quick": "Quick Settings"
+		}
+	},
 	"midi-qol.SoundSettings.Tab": "Звуки",
-	"midi-qol.Workflow": "Процесс",
-	"midi-qol.Misc": "Прочее",
 	"midi-qol.Targeting": "Выбор цели",
 	"midi-qol.Special": "Особые",
 	"midi-qol.Hits": "Попадания",
@@ -450,8 +427,6 @@
 	"midi-qol.AttackMacro.Name": "Макрос на бонус атаки",
 	"midi-qol.AttackMacro.Hint": "Разделенный запятыми список макросов для вызова при расчёте урона, которые будут применяться ждя определения попадания по целям",
 	"midi-qol.DAEMidiQOL": "Особое для DAE/MidiQOL",
-	"midi-qol.Optional": "Правила",
-	"midi-qol.Mechanics": "Механики",
 	"midi-qol.OptionalRules.Name": "Опциональные варианты правил",
 	"midi-qol.OptionalRules.Hint": "Поддержка вариантов правил D&D5e, которые вы, возможно, используете.",
 	"midi-qol.InvisAdvantage.Name": "Unseen/Invisible attackers have advantage/disadvantage on attacks",
@@ -585,8 +560,6 @@
 	"midi-qol.ActiveDefence.Hint": "Instead of GM rolling 'To Hit', players make a defence roll.",
 	"midi-qol.ActiveDefenceShow.Name": "Default display for active defence rolls",
 	"midi-qol.ActiveDefenceShow.Hint": "If set to 'Self Roll' the roll will be hidden from the GM regardless of other settings",
-	"midi-qol.PromptDamageRoll.Name": "Улучшенное диалоговое окно броска урона",
-	"midi-qol.PromptDamageRoll.Hint": "When using Damage Roll Dialog display an enhanced dialog that supports choosing item damage",
 	"midi-qol.GMHide3dDice.Name": "Hide GM attack/damage/saving throw 3d dice rolls - overrides other settings (merge card only)",
 	"midi-qol.GhostRolls.Name": "For attack/damage rolls display with 'dice so nice ghost rolls' rather than hiding the roll (merge card only)",
 	"midi-qol.convenientEffectsOn": "Применять Convenient Effects",
@@ -618,11 +591,11 @@
 	"midi-qol.SpellDamage": "Spell Damage",
 	"midi-qol.NonSpellDamage": "Non-Spell Damage",
 	"midi-qol.ConditionHeader": "Activation Conditions",
-	"midi-qol.EffectActivationCondition.Name": "Effects will be applied if true",
+	"midi-qol.EffectActivationCondition.Name": "Effects will be applied if true (Deprecated)",
 	"midi-qol.EffectActivation": "Use System Activation for Effect application (Deprecated)",
-	"midi-qol.ItemActivationCondition.Name": "Item use allowed if true",
-	"midi-qol.ReactionActivationCondition.Name": "Reaction will be triggered if true",
-	"midi-qol.OtherActivationCondition.Name": "Other Formula will be rolled if true",
+	"midi-qol.ItemActivationCondition.Name": "Item use allowed if true (Deprecated)",
+	"midi-qol.ReactionActivationCondition.Name": "Reaction will be triggered if true (Deprecated)",
+	"midi-qol.OtherActivationCondition.Name": "Other Formula will be rolled if true (Deprecated)",
 	"midi-qol.HPUpdated": "ПЗ обновлены",
 	"midi-qol.HPNPCUpdated": "ПЗ ПМ обновлены",
 	"midi-qol.HPNotUpdated": "ПЗ не обновлены",
@@ -657,18 +630,19 @@
 	"midi-qol.TargetConfirmationConfig.Name": "Подтверждение цели",
 	"midi-qol.TargetConfirmationConfig.Hint": "When rolling an item confirm targets before completing",
 	"midi-qol.TargetConfirmation.Name": "Подтверждение цели",
-	"midi-qol.TargetConfirmation.Blurb": "Select up to {targetCount} {targetType}. Shift-Click to select multiple targets",
-	"midi-qol.TargetConfirmation.BlurbAny": "Выберите цели. Shift+ЛКМ, чтобы выбрать несколько целей.",
+	"midi-qol.TargetConfirmation.Blurb": "Select up to {targetCount} {targetType}. <br>Shift-Click a token to add to the target list.<br>Right click in the list to remove a target",
+	"midi-qol.TargetConfirmation.BlurbAny": "Select any number of targets.<br>Shift-Click a token to add to the target list.<br>Right click in the list to remove a target",
 	"midi-qol.AddDead.Name": "Добавить эффект при 0 ПЗ",
 	"midi-qol.AddDead.Hint1": "Управляется игроками",
 	"midi-qol.AddDead.Hint2": "Управляется мастером",
+	"midi-qol.markDefeated": "Mark defeated in combat tracker",
 	"midi-qol.AddDeadOptions": {
 		"none": "Не обновлять",
 		"overlay": "Добавление эффекта наложением",
 		"normal": "Добавление эффекта иконкой"
 	},
 	"midi-qol.Wounded": "Ранение",
-	"midi-qol.AddWounded.Name": "Добавить эффект, когда ПЗ ниже %",
+	"midi-qol.AddWounded.Name": "Добавить эффект при ПЗ ниже %",
 	"midi-qol.AddWounded.Hint": "Add Selected status when HP are less than specified percentage of max. 0 disables",
 	"midi-qol.debugCallTiming.Name": "Log execution timing",
 	"midi-qol.debugCallTiming.Hint": "Provide some log information about how long things take",
@@ -688,7 +662,6 @@
 	"midi-qol.FixStickyKeys.Name": "Fix sticky alt/ctrl/shift",
 	"midi-qol.FixStickyKeys.Hint": "If set midi will attempt to resolve alt/ctrl/shift being stuck 'on'",
 	"midi-qol.DisplaySaveAdvantage.Name": "Отображать, если испытания имело преимущество/помеху",
-	"midi-qol.QuickSettings": "Предустановки",
 	"midi-qol.QuickSettingsBlurb": {
 		"1": "Быстрые настройки позволяют выбрать преднастроенную конфигурацию.",
 		"2": "При нажатии на один из вариантов ниже, все настройки будут выставлены на рекомендуемые.",
@@ -714,7 +687,6 @@
 		"allCrit": "Attack Roll Total + Critical"
 	},
 	"midi-qol.Reactions": "Подтверждение ответных действий",
-	"midi-qol.ReactionsTab": "Ответные действия",
 	"midi-qol.DoReactions.Name": "Проверять ответные действия ИГРОКОВ",
 	"midi-qol.DoReactions.Hint": "Атакованный актёр получит возможность использовать ответное действие до решения о броске. Ответные действия при попадании требуют включения автопроверки попаданий. Ответные действия при повреждении срабатывают при нанесении урона.",
 	"midi-qol.GMDoReactions.Name": "Check NPC/GM reactions",
@@ -756,16 +728,19 @@
 	},
 	"midi-qol.AddRow": "Add Row",
 	"midi-qol.CheckFlanking.Name": "Check Flanking",
-	"midi-qol.CheckFlanking.Hint": "Check if you and your allies flank the opponent. Either gives attacker advantage and/or applies <strong>CE flanking</strong> condition to <h4>attacker</h4> OR applies CE Flanked condition to target",
+	"midi-qol.CheckFlanking.Hint": "Check if you and your allies flank the opponent. Gives attacker advantage, applies <strong>Flanking</strong> condition to attacker, or applies <strong>Flanked</strong> condition to <em>target</em>. Requires restart if changing to use one of the Midi options.",
 	"midi-qol.CheckFlankingOptions": {
 		"off": "нет",
-		"ceonly": "Convenient Effect Flanking Only",
 		"advonly": "Advantage Only",
-		"ceadv": "CE Flanking + Advantage",
-		"ceflanked": "CE Flanked condition only",
-		"ceflankedNoconga": "CE Flanked + no conga line"
+		"ceonly": "Convenient Effects Flanking",
+		"midiFlanking": "Midi Flanking effect",
+		"ceflanked": "Convenient Effects Flanked",
+		"midiFlanked": "Midi Flanked effect",
+		"ceflankedNoconga": "Convenient Effects Flanked + no conga line",
+		"midiFlankedNoConga": "Midi Flanked + no conga line"
 	},
 	"midi-qol.Flanked": "Flanked",
+	"midi-qol.Flanking": "Flanking",
 	"midi-qol.RollAlternate.Name": "Move roll formula to tooltip",
 	"midi-qol.RollAlternate.Hint": "Use alternate roll display on merge card moving the roll formula to the tooltip and optionally add advantage attribution",
 	"midi-qol.RollAlternateOptions": {
@@ -776,7 +751,7 @@
 	},
 	"midi-qol.OptionalCritRule.Name": "(House Rule) Critical Roll Margin",
 	"midi-qol.OptionalCritRule.Hint": "Attack Rolls this much above AC are critical. -1 disables",
-	"midi-qol.CriticalNat20.Name": "(House Rule) Allow normal criticals",
+	"midi-qol.CriticalNat20.Name": "(House Rule) Allow normal critical rolls",
 	"midi-qol.CriticalNat20.Hint": "A roll above critical threshold is still a critical even if it does not meet the margin requirements",
 	"midi-qol.ActorOnUseMacros": "Actor On Use Macros",
 	"midi-qol.MacroPass": "Macro Pass",
@@ -799,7 +774,7 @@
 	"midi-qol.AttackPerTarget.Name": "Roll a separate attack per target",
 	"midi-qol.SkillAbilityCheckAdvantage.Name": "Ability Check Advantage gives Skill Advantage",
 	"midi-qol.SkillAbilityCheckAdvantage.Hint": "If an actor has advantage/disadvantage on ability checks, skills based on that ability also have advantage/disadvantage",
-	"midi-qol.ignoreTotalCover": "No Full cover",
+	"midi-qol.ignoreTotalCover": "No Full cover (Deprecated)",
 	"midi-qol.InitPromptTitle": "Initiative Roll",
 	"midi-qol.HighlightSuccess.Name": "Color code Hit/Miss/Save Display",
 	"midi-qol.HighlightSuccess.Hint": "When displaying hits/misses, hits/saves are in green and misses/failed saves in red",
@@ -814,7 +789,7 @@
 	"midi-qol.RollSkillsBlind.Name": "Which skill checks are rolled blind",
 	"midi-qol.UndoWorkflow": {
 		"Name": "Support undoing item rolls",
-		"Hint": "If enabled midi will store undo data for all item rolls. Not suitable for game time. Undo via MidiQOL.undoMostRecentWorkflow()",
+		"Hint": "If enabled midi will store undo data for all item/activity rolls. Undo via MidiQOL.undoMostRecentWorkflow()",
 		"title": "Undo workflow",
 		"actorName": "Actor name",
 		"itemName": "Item name",
@@ -828,14 +803,20 @@
 	"midi-qol.versus": "versus",
 	"midi-qol.Skipped": "Skipped",
 	"midi-qol.ExportTroubleShooting": "Export Trouble Shooting Data",
-	"midi-qol.TroubleShooter.Name": "Open Trouble Shooter",
-	"midi-qol.TroubleShooter.Hint": "Trouble shooter to help diagnose problems and collect settings",
-	"midi-qol.TroubleShooter.Label": "Troubleshooter",
-	"midi-qol.Summary": "Summary",
-	"midi-qol.CommonModules": "Common Modules",
-	"midi-qol.Problems": "Problems",
-	"midi-qol.AllModules": "All Modules",
-	"midi-qol.Errors": "Errors",
+	"midi-qol.TroubleShooter": {
+		"Name": "Open Trouble Shooter",
+		"Hint": "Trouble shooter to help diagnose problems and collect settings",
+		"Label": "Troubleshooter",
+		"Tabs": {
+			"summary": "Summary",
+			"common": "Common Modules",
+			"problems": "Problems",
+			"errors": "Errors",
+			"modules": "All Modules"
+		},
+		"ClearErrors": "Clear Errors",
+		"Overwrite": "Overwrite Midi Settings"
+	},
 	"midi-qol.Inactive": "Inactive",
 	"midi-qol.Active": "Active",
 	"midi-qol.EnforceSingleWeaponTarget.Name": "Weapons attack single target",
@@ -886,6 +867,7 @@
 		"SaveDRdr": "Saves -> Damage Reduction -> damage resistance (dr/dv/di)"
 	},
 	"midi-qol.WaitingForPreviousWorkflow": "Previous roll of {name} has not completed.",
+	"midi-qol.ResolvePreviousWorkflow": "Choose what to do with the previous roll",
 	"midi-qol.ConfirmTargetOptions": {
 		"default": "Midi Settings",
 		"always": "Always",
@@ -902,7 +884,9 @@
 	"midi-qol.ConcentrationIncapacitatedConditionCheck.Hint": "Incapacitated, Dead,  Unconscious, Petrified, Paralysed and Stunned remove concentration",
 	"midi-qol.AutoCompleteWorkflow.Name": "Autocomplete workflow if required",
 	"midi-qol.AutoCompleteWorkflow.Hint": "Workflows will be marked as complete if rolled before completion, no extra rolls will be performed",
-	"midi-qol.emanationNoTemplate": "Emanation - No Template",
+	"midi-qol.emanationNoTemplate": "Emanation/Radius - No Template",
+	"midi-qol.emanationTemplate.counted.one": "Emanation No Template",
+	"midi-qol.emanationTemplate.counted.other": "Emanation No Template",
 	"midi-qol.AddFakeDice.Name": "Add fake dice to GM Dice So Nice rolls",
 	"midi-qol.MidiFieldsTab.Name": "Display Midi item fields in a separate tab",
 	"midi-qol.UndoChatColor.Name": "Undo Chat Cards Color",
@@ -960,6 +944,16 @@
 		"firstSaveTarget": "First saved target",
 		"firstFailedSaveTarget": "First failed save target"
 	},
+	"midi-qol.ActivationAutomation.Name": "Activation Cost Automation",
+	"midi-qol.ActivationAutomation.Hint": "Automatically activate activities with short/long rest or encounter start or turn start/end activation costs.",
+	"midi-qol.ActivationAutomationOptions": {
+		"none": "No Automation/No Chat",
+		"chat": "Default dnd5e behavior",
+		"auto": "Auto trigger self targeted activities"
+	},
+	"midi-qol.dummyCards.Name": "Always display attack/damage cards for hidden merge cards",
+	"midi-qol.dummyCards.Hint": "(Experimental) For GM rolls (self, private, blind) display an attack/damage roll card which will trigger a 'gm rollsed some dice' card on the players chats. Only for the case that you want the players to know you rolled something, but not what it was",
+	"midi-qol.dnd5eConcentrationTrackingDisabled": "<br><strong><center>DND5E Concentration Tracking Disabled</strong><br></center><br><center>Concentration Tracking is disabled in the dnd5e system settings.</center><center>Enable in DND5E settings to enable midi concentration settings</center><br>",
 	"midi-qol.SHARED": {
 		"use-condition": {
 			"header": "Midi Conditions"
@@ -970,16 +964,36 @@
 		"FIELDS": {
 			"useConditionText": {
 				"label": "Use Condition",
-				"hint": "Condition to allow use"
+				"hint": "Condition which must be true to allow the activity use to proceed"
+			},
+			"useConditionReason": {
+				"label": "Use Condition Reason",
+				"hint": "Message to display if the use condition is false"
 			},
 			"effectConditionText": {
 				"label": "Active Effect Condition",
 				"hint": "Condition to apply active effects"
 			},
+			"otherActivityId": {
+				"label": "Use Other Activity",
+				"hint": "Extra activity to preform 'other' damage"
+			},
 			"midiProperties": {
+				"rollMode": {
+					"label": "Roll Mode",
+					"hint": "Roll mode to use for the activity"
+				},
+				"ignoreFullCover": {
+					"label": "Ignore Full Cover",
+					"hint": "Ignore full cover when applying damage/saves"
+				},
+				"chooseEffects": {
+					"label": "Choose Effects",
+					"hint": "Choose effects to apply"
+				},
 				"forceDialog": {
 					"label": "Force Configuration Dialog",
-					"hint": "Force Configuration Dialog when attack rolled"
+					"hint": "Force Configuration Dialog when activity used"
 				},
 				"confirmTargets": {
 					"label": "Подтверждение цели",
@@ -996,6 +1010,10 @@
 				"automationOnly": {
 					"label": "Automation Only",
 					"hint": "The activity is only intended for midi automation and not for manual use"
+				},
+				"displayActivityName": {
+					"label": "Display Activity Name",
+					"hint": "Display the activity name in the chat card"
 				},
 				"identifier": {
 					"label": "Identifier",
@@ -1018,8 +1036,12 @@
 					"hint": "Roll the activity as if owned by..."
 				},
 				"otherActivityCompatible": {
-					"label": "Other Activity",
+					"label": "Other Activity Compatible",
 					"hint": "Can be used as an other activity"
+				},
+				"toggleEffect": {
+					"label": "Toggle Effect",
+					"hint": "Disabling an effect will toggle it rather than removing it"
 				},
 				"ignoreTraits": {
 					"idi": {
@@ -1042,6 +1064,30 @@
 						"label": "Modification",
 						"hint": "Ignore damage modification when applying damage"
 					}
+				}
+			},
+			"isOverTimeFlag": {
+				"label": "Is Over Time",
+				"hint": "The activity can be an over time activity"
+			},
+			"overTimeProperties": {
+				"turnChoice": {
+					"label": "Turn Choice",
+					"hint": "Start or end of turn",
+					"start": "Start of Turn",
+					"end": "End of Turn"
+				},
+				"saveRemoves": {
+					"label": "Save Removes",
+					"hint": "Save removes effect"
+				},
+				"preRemoveConditionText": {
+					"label": "Pre activity remove condition",
+					"hint": "Tested prior to rolling activity, effect removed if true"
+				},
+				"postRemoveConditionText": {
+					"label": "Post activity remove condition",
+					"hint": "Tested after rolling activity, effect removed if true"
 				}
 			},
 			"ActivityMacro": {
@@ -1072,12 +1118,6 @@
 			}
 		}
 	},
-	"midi-qol.FORWARD": {
-		"Title": {
-			"one": "Midi Forward",
-			"other": "Midi Forwards"
-		}
-	},
 	"midi-qol.ATTACK": {
 		"Title": {
 			"one": "Midi Attack",
@@ -1094,10 +1134,6 @@
 			"ammunition": {
 				"label": "Боеприпасы",
 				"hint": "Боеприпасы по умолчанию"
-			},
-			"otherActivityId": {
-				"label": "Other Activity",
-				"hint": "Extra activity to preform 'other' damage"
 			}
 		}
 	},
@@ -1105,6 +1141,12 @@
 		"Title": {
 			"one": "Midi Cast",
 			"other": "Midi Casts"
+		}
+	},
+	"midi-qol.CHECK": {
+		"Title": {
+			"one": "Midi Check",
+			"other": "Midi Checks"
 		}
 	},
 	"midi-qol.DAMAGE": {
@@ -1119,10 +1161,45 @@
 			"other": "Midi Enchants"
 		}
 	},
+	"midi-qol.FORWARD": {
+		"Title": {
+			"one": "Midi Forward",
+			"other": "Midi Forwards"
+		}
+	},
 	"midi-qol.HEAL": {
 		"Title": {
 			"one": "Midi Heal",
 			"other": "Midi Heal"
+		}
+	},
+	"midi-qol.OVERTIME": {
+		"Title": {
+			"one": "Midi Overtime",
+			"other": "Midi Overtime"
+		},
+		"extras": {
+			"header": "Midi Overtime Settings"
+		},
+		"FIELDS": {
+			"turnChoice": {
+				"label": "Turn Choice",
+				"hint": "Start or end of turn",
+				"start": "Start of Turn",
+				"end": "End of Turn"
+			},
+			"saveRemoves": {
+				"label": "Save Removes",
+				"hint": "Save removes effect"
+			},
+			"removeConditionBeforeActivity": {
+				"label": "Remove effect before rolling",
+				"hint": "It the Remove Condition is met the effect is removed before the activity is rolled"
+			},
+			"removeConditionText": {
+				"label": "Remove Condition",
+				"hint": "Condition to remove effect"
+			}
 		}
 	},
 	"midi-qol.SAVE": {
@@ -1133,20 +1210,14 @@
 	},
 	"midi-qol.UTILITY": {
 		"Title": {
-			"one": "Midi Utility",
-			"other": "Midi Utility"
+			"one": "Midi Use",
+			"other": "Midi Use"
 		}
 	},
 	"midi-qol.SUMMON": {
 		"Title": {
 			"one": "Midi Summon",
 			"other": "Midi Summons"
-		}
-	},
-	"midi-qol.CHECK": {
-		"Title": {
-			"one": "Midi Check",
-			"other": "Midi Checks"
 		}
 	},
 	"midi-qol.fields": {
@@ -1156,11 +1227,15 @@
 		"force-dialog": "Force Configuration Dialog",
 		"midi-automation-only": "Only use in midi automation"
 	},
-	"midi-qol.BaseDamageFlavor": "Базовый урон",
-	"midi-qol.OtherDamageFlavor": "Other Damage",
-	"midi-qol.RequireAmmunition.Name": "Требовать боеприпасы при использовании",
+	"midi-qol.BaseDamageFlavor": "Damage",
+	"midi-qol.BaseHealingFlavor": "Healing",
+	"midi-qol.OtherDamageFlavor": "Other",
+	"midi-qol.OtherHealingFlavor": "Other Healing",
+	"midi-qol.RequireAmmunition.Name": "Require ammunition available to roll attack",
 	"midi-qol.CheckTwoHanded.Name": "Require no shield equipped for two-handed/off-hand attacks",
 	"midi-qol.NoAmmunition": "There are 0 {name} in your inventory",
+	"midi-qol.NoAmmunitionAvailable": "There is no ammunition in your inventory.",
+	"midi-qol.NoAmmunitionSelected": "You must select the ammunition to use.",
 	"midi-qol.TwoHandedShieldWarning": "Cannot use two-handed or off-hand attack with a shield equipped",
 	"dae.MidiQOL.fieldData": {
 		"flags.midi-qol.absorption.acid": {
@@ -1187,12 +1262,18 @@
 			"name": "Absorption Lightning",
 			"description": "Converts Lightning Damage taken to healing."
 		},
-		"flags.midi-qol.absorption.midi-none": { "name": "Absorption None", "description": "" },
+		"flags.midi-qol.absorption.midi-none": {
+			"name": "Absorption None",
+			"description": ""
+		},
 		"flags.midi-qol.absorption.necrotic": {
 			"name": "Absorption Necrotic",
 			"description": "Converts Necrotic Damage taken to healing."
 		},
-		"flags.midi-qol.absorption.none": { "name": "No Absorption", "description": "" },
+		"flags.midi-qol.absorption.none": {
+			"name": "No Absorption",
+			"description": ""
+		},
 		"flags.midi-qol.absorption.piercing": {
 			"name": "Absorption Piercing",
 			"description": "Converts Piercing Damage taken to healing."
@@ -1297,7 +1378,10 @@
 			"name": "Advantage Dexterity Attacks",
 			"description": "Advantage on attacks using Dexterity."
 		},
-		"flags.midi-qol.advantage.attack.heal": { "name": "Advantage Heal Attacks", "description": "" },
+		"flags.midi-qol.advantage.attack.heal": {
+			"name": "Advantage Heal Attacks",
+			"description": ""
+		},
 		"flags.midi-qol.advantage.attack.int": {
 			"name": "Advantage Intelligence Attacks",
 			"description": "Advantage on attacks using Intelligence."
@@ -1342,7 +1426,10 @@
 			"name": "Fail Disadvantage Heavy",
 			"description": "Disadvantage on stealth because of heavy armor"
 		},
-		"flags.midi-qol.": { "name": "MIDI-QOL Flags", "description": "" },
+		"flags.midi-qol.": {
+			"name": "MIDI-QOL Flags",
+			"description": ""
+		},
 		"flags.midi-qol.DR.msak": {
 			"name": "Damage Reduction (msak) (Deprecated)",
 			"description": "Use the system.traits.dm fields (with a negative value) instead."
@@ -1467,7 +1554,10 @@
 			"name": "Damage Reduction Thunder (Deprecated)",
 			"description": "Use the system.traits.dm fields (with a negative value) instead."
 		},
-		"flags.midi-qol.OverTime": { "name": "Over Time Effects", "description": "" },
+		"flags.midi-qol.OverTime": {
+			"name": "Over Time Effects",
+			"description": ""
+		},
 		"flags.midi-qol.advantage.concentration": {
 			"name": "Advantage (Concentration)",
 			"description": "Advantage on concentration checks."
@@ -1560,8 +1650,14 @@
 			"name": "Concentration Save Bonus",
 			"description": ""
 		},
-		"flags.midi-qol.critical.all": { "name": "Critical Hit (All)", "description": "" },
-		"flags.midi-qol.critical.heal": { "name": "Critical Hit (Heal)", "description": "" },
+		"flags.midi-qol.critical.all": {
+			"name": "Critical Hit (All)",
+			"description": ""
+		},
+		"flags.midi-qol.critical.heal": {
+			"name": "Critical Hit (Heal)",
+			"description": ""
+		},
 		"flags.midi-qol.critical.msak": {
 			"name": "Critical Hit (Melee Spell Attack)",
 			"description": ""
@@ -1570,7 +1666,10 @@
 			"name": "Critical Hit (Melee Weapon Attack)",
 			"description": ""
 		},
-		"flags.midi-qol.critical.other": { "name": "Critical Hit (Other)", "description": "" },
+		"flags.midi-qol.critical.other": {
+			"name": "Critical Hit (Other)",
+			"description": ""
+		},
 		"flags.midi-qol.critical.rsak": {
 			"name": "Critical Hit (Ranged Spell Attack)",
 			"description": ""
@@ -1579,13 +1678,22 @@
 			"name": "Critical Hit (Ranged Weapon Attack)",
 			"description": ""
 		},
-		"flags.midi-qol.critical.save": { "name": "Critical Hit (Save)", "description": "" },
-		"flags.midi-qol.critical.util": { "name": "Critical Hit (Utility)", "description": "" },
+		"flags.midi-qol.critical.save": {
+			"name": "Critical Hit (Save)",
+			"description": ""
+		},
+		"flags.midi-qol.critical.util": {
+			"name": "Critical Hit (Utility)",
+			"description": ""
+		},
 		"flags.midi-qol.damage.reroll-kh": {
 			"name": "Damage Reroll (Keep Highest)",
 			"description": ""
 		},
-		"flags.midi-qol.damage.reroll-kl": { "name": "Damage Reroll (Keep Lowest)", "description": "" },
+		"flags.midi-qol.damage.reroll-kl": {
+			"name": "Damage Reroll (Keep Lowest)",
+			"description": ""
+		},
 		"flags.midi-qol.disadvantage.ability.all": {
 			"name": "Disadvantage (All Abilities)",
 			"description": ""
@@ -1666,7 +1774,10 @@
 			"name": "Disadvantage (Dexterity Attacks)",
 			"description": ""
 		},
-		"flags.midi-qol.disadvantage.attack.heal": { "name": "Disadvantage (Heal)", "description": "" },
+		"flags.midi-qol.disadvantage.attack.heal": {
+			"name": "Disadvantage (Heal)",
+			"description": ""
+		},
 		"flags.midi-qol.disadvantage.attack.int": {
 			"name": "Disadvantage (Intelligence Attacks)",
 			"description": ""
@@ -1691,7 +1802,10 @@
 			"name": "Disadvantage (Ranged Weapon Attack)",
 			"description": ""
 		},
-		"flags.midi-qol.disadvantage.attack.save": { "name": "Disadvantage (Save)", "description": "" },
+		"flags.midi-qol.disadvantage.attack.save": {
+			"name": "Disadvantage (Save)",
+			"description": ""
+		},
 		"flags.midi-qol.disadvantage.attack.util": {
 			"name": "Disadvantage (Utility)",
 			"description": ""
@@ -1720,7 +1834,10 @@
 			"name": "Disadvantage (Animal Handling)",
 			"description": ""
 		},
-		"flags.midi-qol.disadvantage.skill.arc": { "name": "Disadvantage (Arcana)", "description": "" },
+		"flags.midi-qol.disadvantage.skill.arc": {
+			"name": "Disadvantage (Arcana)",
+			"description": ""
+		},
 		"flags.midi-qol.disadvantage.skill.ath": {
 			"name": "Disadvantage (Athletics)",
 			"description": ""
@@ -1749,7 +1866,10 @@
 			"name": "Disadvantage (Medicine)",
 			"description": ""
 		},
-		"flags.midi-qol.disadvantage.skill.nat": { "name": "Disadvantage (Nature)", "description": "" },
+		"flags.midi-qol.disadvantage.skill.nat": {
+			"name": "Disadvantage (Nature)",
+			"description": ""
+		},
 		"flags.midi-qol.disadvantage.skill.per": {
 			"name": "Disadvantage (Persuasion)",
 			"description": ""
@@ -1778,7 +1898,10 @@
 			"name": "Disadvantage (Survival)",
 			"description": ""
 		},
-		"flags.midi-qol.fail.ability.all": { "name": "Fail (All Abilities)", "description": "" },
+		"flags.midi-qol.fail.ability.all": {
+			"name": "Fail (All Abilities)",
+			"description": ""
+		},
 		"flags.midi-qol.fail.ability.check.all": {
 			"name": "Fail (All Ability Checks)",
 			"description": ""
@@ -1803,32 +1926,86 @@
 			"name": "Fail (Strength Checks)",
 			"description": ""
 		},
-		"flags.midi-qol.fail.ability.check.wis": { "name": "Fail (Wisdom Checks)", "description": "" },
-		"flags.midi-qol.fail.ability.save.all": { "name": "Fail (All Saves)", "description": "" },
-		"flags.midi-qol.fail.ability.save.cha": { "name": "Fail (Charisma Saves)", "description": "" },
+		"flags.midi-qol.fail.ability.check.wis": {
+			"name": "Fail (Wisdom Checks)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.ability.save.all": {
+			"name": "Fail (All Saves)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.ability.save.cha": {
+			"name": "Fail (Charisma Saves)",
+			"description": ""
+		},
 		"flags.midi-qol.fail.ability.save.con": {
 			"name": "Fail (Constitution Saves)",
 			"description": ""
 		},
-		"flags.midi-qol.fail.ability.save.dex": { "name": "Fail (Dexterity Saves)", "description": "" },
+		"flags.midi-qol.fail.ability.save.dex": {
+			"name": "Fail (Dexterity Saves)",
+			"description": ""
+		},
 		"flags.midi-qol.fail.ability.save.int": {
 			"name": "Fail (Intelligence Saves)",
 			"description": ""
 		},
-		"flags.midi-qol.fail.ability.save.str": { "name": "Fail (Strength Saves)", "description": "" },
-		"flags.midi-qol.fail.ability.save.wis": { "name": "Fail (Wisdom Saves)", "description": "" },
-		"flags.midi-qol.fail.all": { "name": "Fail (All Actions)", "description": "" },
-		"flags.midi-qol.fail.attack.all": { "name": "Fail (All Attacks)", "description": "" },
-		"flags.midi-qol.fail.attack.heal": { "name": "Fail (Heal)", "description": "" },
-		"flags.midi-qol.fail.attack.msak": { "name": "Fail (Melee Spell Attack)", "description": "" },
-		"flags.midi-qol.fail.attack.mwak": { "name": "Fail (Melee Weapon Attack)", "description": "" },
-		"flags.midi-qol.fail.attack.other": { "name": "Fail (Other Attacks)", "description": "" },
-		"flags.midi-qol.fail.attack.rsak": { "name": "Fail (Ranged Spell Attack)", "description": "" },
-		"flags.midi-qol.fail.attack.rwak": { "name": "Fail (Ranged Weapon Attack)", "description": "" },
-		"flags.midi-qol.fail.attack.save": { "name": "Fail (Save)", "description": "" },
-		"flags.midi-qol.fail.attack.util": { "name": "Fail (Utility)", "description": "" },
-		"flags.midi-qol.fail.critical.all": { "name": "Critical Fail (All)", "description": "" },
-		"flags.midi-qol.fail.critical.heal": { "name": "Critical Fail (Heal)", "description": "" },
+		"flags.midi-qol.fail.ability.save.str": {
+			"name": "Fail (Strength Saves)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.ability.save.wis": {
+			"name": "Fail (Wisdom Saves)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.all": {
+			"name": "Fail (All Actions)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.attack.all": {
+			"name": "Fail (All Attacks)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.attack.heal": {
+			"name": "Fail (Heal)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.attack.msak": {
+			"name": "Fail (Melee Spell Attack)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.attack.mwak": {
+			"name": "Fail (Melee Weapon Attack)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.attack.other": {
+			"name": "Fail (Other Attacks)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.attack.rsak": {
+			"name": "Fail (Ranged Spell Attack)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.attack.rwak": {
+			"name": "Fail (Ranged Weapon Attack)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.attack.save": {
+			"name": "Fail (Save)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.attack.util": {
+			"name": "Fail (Utility)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.critical.all": {
+			"name": "Critical Fail (All)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.critical.heal": {
+			"name": "Critical Fail (Heal)",
+			"description": ""
+		},
 		"flags.midi-qol.fail.critical.msak": {
 			"name": "Critical Fail (Melee Spell Attack)",
 			"description": ""
@@ -1837,7 +2014,10 @@
 			"name": "Critical Fail (Melee Weapon Attack)",
 			"description": ""
 		},
-		"flags.midi-qol.fail.critical.other": { "name": "Critical Fail (Other)", "description": "" },
+		"flags.midi-qol.fail.critical.other": {
+			"name": "Critical Fail (Other)",
+			"description": ""
+		},
 		"flags.midi-qol.fail.critical.rsak": {
 			"name": "Critical Fail (Ranged Spell Attack)",
 			"description": ""
@@ -1846,33 +2026,102 @@
 			"name": "Critical Fail (Ranged Weapon Attack)",
 			"description": ""
 		},
-		"flags.midi-qol.fail.critical.save": { "name": "Critical Fail (Save)", "description": "" },
-		"flags.midi-qol.fail.critical.util": { "name": "Critical Fail (Utility)", "description": "" },
-		"flags.midi-qol.fail.skill.acr": { "name": "Fail (Acrobatics)", "description": "" },
-		"flags.midi-qol.fail.skill.all": { "name": "Fail (All Skills)", "description": "" },
-		"flags.midi-qol.fail.skill.ani": { "name": "Fail (Animal Handling)", "description": "" },
-		"flags.midi-qol.fail.skill.arc": { "name": "Fail (Arcana)", "description": "" },
-		"flags.midi-qol.fail.skill.ath": { "name": "Fail (Athletics)", "description": "" },
-		"flags.midi-qol.fail.skill.dec": { "name": "Fail (Deception)", "description": "" },
-		"flags.midi-qol.fail.skill.his": { "name": "Fail (History)", "description": "" },
-		"flags.midi-qol.fail.skill.ins": { "name": "Fail (Insight)", "description": "" },
-		"flags.midi-qol.fail.skill.inv": { "name": "Fail (Investigation)", "description": "" },
-		"flags.midi-qol.fail.skill.itm": { "name": "Fail (Intimidation)", "description": "" },
-		"flags.midi-qol.fail.skill.med": { "name": "Fail (Medicine)", "description": "" },
-		"flags.midi-qol.fail.skill.nat": { "name": "Fail (Nature)", "description": "" },
-		"flags.midi-qol.fail.skill.per": { "name": "Fail (Persuasion)", "description": "" },
-		"flags.midi-qol.fail.skill.prc": { "name": "Fail (Perception)", "description": "" },
-		"flags.midi-qol.fail.skill.prf": { "name": "Fail (Performance)", "description": "" },
-		"flags.midi-qol.fail.skill.rel": { "name": "Fail (Religion)", "description": "" },
-		"flags.midi-qol.fail.skill.slt": { "name": "Fail (Sleight of Hand)", "description": "" },
-		"flags.midi-qol.fail.skill.ste": { "name": "Fail (Stealth)", "description": "" },
-		"flags.midi-qol.fail.skill.sur": { "name": "Fail (Survival)", "description": "" },
+		"flags.midi-qol.fail.critical.save": {
+			"name": "Critical Fail (Save)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.critical.util": {
+			"name": "Critical Fail (Utility)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.skill.acr": {
+			"name": "Fail (Acrobatics)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.skill.all": {
+			"name": "Fail (All Skills)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.skill.ani": {
+			"name": "Fail (Animal Handling)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.skill.arc": {
+			"name": "Fail (Arcana)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.skill.ath": {
+			"name": "Fail (Athletics)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.skill.dec": {
+			"name": "Fail (Deception)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.skill.his": {
+			"name": "Fail (History)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.skill.ins": {
+			"name": "Fail (Insight)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.skill.inv": {
+			"name": "Fail (Investigation)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.skill.itm": {
+			"name": "Fail (Intimidation)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.skill.med": {
+			"name": "Fail (Medicine)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.skill.nat": {
+			"name": "Fail (Nature)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.skill.per": {
+			"name": "Fail (Persuasion)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.skill.prc": {
+			"name": "Fail (Perception)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.skill.prf": {
+			"name": "Fail (Performance)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.skill.rel": {
+			"name": "Fail (Religion)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.skill.slt": {
+			"name": "Fail (Sleight of Hand)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.skill.ste": {
+			"name": "Fail (Stealth)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.skill.sur": {
+			"name": "Fail (Survival)",
+			"description": ""
+		},
 		"flags.midi-qol.fail.spell.material": {
 			"name": "Fail (Material Component)",
 			"description": ""
 		},
-		"flags.midi-qol.fail.spell.somatic": { "name": "Fail (Somatic Component)", "description": "" },
-		"flags.midi-qol.fail.spell.vocal": { "name": "Fail (Vocal Component)", "description": "" },
+		"flags.midi-qol.fail.spell.somatic": {
+			"name": "Fail (Somatic Component)",
+			"description": ""
+		},
+		"flags.midi-qol.fail.spell.vocal": {
+			"name": "Fail (Vocal Component)",
+			"description": ""
+		},
 		"flags.midi-qol.grants.advantage.attack.all": {
 			"name": "Grants Advantage (All Attacks)",
 			"description": ""
@@ -2237,125 +2486,177 @@
 			"name": "Grants Fail Advantage (All Attacks)",
 			"description": ""
 		},
-		"flags.midi-qol.grants.fail.advantage.attack.heal": {
-			"name": "Grants Fail Advantage (Heal)",
-			"description": ""
+		"flags.midi-qol.noAdvantage.attack.all": {
+			"name": "Grants No Advantage (All Attacks)",
+			"description": "Any attack against the target will not have advantage"
+		},
+		"flags.midi-qol.grants.noAdvantage.attack.heal": {
+			"name": "Grants No Advantage (Heal)",
+			"description": "Any healing attack against the target will not have advantage"
+		},
+		"flags.midi-qol.grants.noAdvantage.attack.msak": {
+			"name": "Grants No Advantage (Melee Spell Attack)",
+			"description": "Any Melee Spell Attack against the target will not have advantage"
+		},
+		"flags.midi-qol.grants.noAdvantage.attack.mwak": {
+			"name": "Grants No Advantage (Melee Weapon Attack)",
+			"description": "Any Melee Weapon Attack against the target will not have advantage"
+		},
+		"flags.midi-qol.grants.noAdvantage.attack.rsak": {
+			"name": "Grants No Advantage (Ranged Spell Attack)",
+			"description": "Any Ranged Spell attack against the target will not have advantage"
+		},
+		"flags.midi-qol.grants.noAdvantage.attack.rwak": {
+			"name": "Grants No Advantage (Ranged Weapon Attack)",
+			"description": "Any Ranged Weapon attack against the target will not have advantage"
+		},
+		"flags.midi-qol.grants.noAdvantage.attack.save": {
+			"name": "Grants No Advantage (Save)",
+			"description": "No saving throw forced by the actor will have advantage"
+		},
+		"flags.midi-qol.grants.noAdvantage.attack.check": {
+			"name": "Grants No Advantage (Check)",
+			"description": "No ability check forced by the actor will have advantage"
+		},
+		"flags.midi-qol.grants.noAdvantage.attack.skill": {
+			"name": "Grants No Advantage (Skill)",
+			"description": "No Skill roll forced by the actor will have advantage"
 		},
 		"flags.midi-qol.grants.fail.advantage.attack.msak": {
-			"name": "Grants Fail Advantage (Melee Spell Attack)",
-			"description": ""
+			"name": "Grants No Advantage (Melee Spell Attack)",
+			"description": "Any Melee Spell Attack against the target will not have advantage"
 		},
 		"flags.midi-qol.grants.fail.advantage.attack.mwak": {
-			"name": "Grants Fail Advantage (Melee Weapon Attack)",
-			"description": ""
-		},
-		"flags.midi-qol.grants.fail.advantage.attack.other": {
-			"name": "Grants Fail Advantage (Other Attacks)",
-			"description": ""
+			"name": "Grants No Advantage (Melee Weapon Attack)",
+			"description": "Any Melee Weapon Attack against the target will not have advantage"
 		},
 		"flags.midi-qol.grants.fail.advantage.attack.rsak": {
-			"name": "Grants Fail Advantage (Ranged Spell Attack)",
-			"description": ""
+			"name": "Grants No Advantage (Ranged Spell Attack)",
+			"description": "Any Ranged Spell attack against the target will not have advantage"
 		},
 		"flags.midi-qol.grants.fail.advantage.attack.rwak": {
-			"name": "Grants Fail Advantage (Ranged Weapon Attack)",
-			"description": ""
+			"name": "Grants No Advantage (Ranged Weapon Attack)",
+			"description": "Any Ranged Weapon attack against the target will not have advantage"
 		},
 		"flags.midi-qol.grants.fail.advantage.attack.save": {
-			"name": "Grants Fail Advantage (Save)",
-			"description": ""
+			"name": "Grants No Advantage (Save)",
+			"description": "Any saving throw forced by actor will not have advantage"
 		},
-		"flags.midi-qol.grants.fail.advantage.attack.util": {
-			"name": "Grants Fail Advantage (Utility)",
-			"description": ""
+		"flags.midi-qol.grants.fail.advantage.attack.check": {
+			"name": "Grants No Advantage (Check)",
+			"description": "Any ability check forced by the attacker will not have advantage"
+		},
+		"flags.midi-qol.grants.fail.advantage.attack.skill": {
+			"name": "Grants No Advantage (Skill)",
+			"description": "Any skill roll forced by the attacker will not have sadvantage"
 		},
 		"flags.midi-qol.grants.fail.disadvantage.attack.all": {
-			"name": "Grants Fail Disadvantage (All Attacks)",
-			"description": ""
+			"name": "Grants No Disadvantage (All Attacks)",
+			"description": "Any Attack against the target will not have disadvantage"
 		},
-		"flags.midi-qol.grants.fail.disadvantage.attack.heal": {
-			"name": "Grants Fail Disadvantage (Heal)",
-			"description": ""
+		"flags.midi-qol.grants.noDisadvantage.attack.all": {
+			"name": "Grants No Disadvantage (All Attacks)",
+			"description": "Any Attack against the target will not have disadvantage"
 		},
 		"flags.midi-qol.grants.fail.disadvantage.attack.msak": {
-			"name": "Grants Fail Disadvantage (Melee Spell Attack)",
-			"description": ""
+			"name": "Grants No Disadvantage (Melee Spell Attack)",
+			"description": "Any Melee Spell Attack against the target will not have disadvantage"
+		},
+		"flags.midi-qol.grants.noDisadvantage.attack.msak": {
+			"name": "Grants No Disadvantage (Melee Spell Attack)",
+			"description": "Any Melee Spell Attack against the target will not have disadvantage"
 		},
 		"flags.midi-qol.grants.fail.disadvantage.attack.mwak": {
 			"name": "Grants Fail Disadvantage (Melee Weapon Attack)",
-			"description": ""
+			"description": "Any Melee Weapon attack against the target will not have disadvantage"
 		},
-		"flags.midi-qol.grants.fail.disadvantage.attack.other": {
-			"name": "Grants Fail Disadvantage (Other Attacks)",
-			"description": ""
+		"flags.midi-qol.grants.NoDisadvantage.attack.mwak": {
+			"name": "Grants No Disadvantage (Melee Weapon Attack)",
+			"description": "Any Melee Weapon attack against the target will not have disadvantage"
 		},
 		"flags.midi-qol.grants.fail.disadvantage.attack.rsak": {
-			"name": "Grants Fail Disadvantage (Ranged Spell Attack)",
-			"description": ""
+			"name": "Grants No Disadvantage (Ranged Spell Attack)",
+			"description": "Any Ranged Spell attack against the target will not have disadvantage"
+		},
+		"flags.midi-qol.grants.NoDisadvantage.attack.rsak": {
+			"name": "Grants No Disadvantage (Ranged Spell Attack)",
+			"description": "Any Ranged Spell attack against the target will not have disadvantage"
 		},
 		"flags.midi-qol.grants.fail.disadvantage.attack.rwak": {
-			"name": "Grants Fail Disadvantage (Ranged Weapon Attack)",
-			"description": ""
+			"name": "Grants No Disadvantage (Ranged Weapon Attack)",
+			"description": "Any Ranged Weapon attack against the target will not have disadvantage"
+		},
+		"flags.midi-qol.grants.noDisadvantage.attack.rwak": {
+			"name": "Grants No Disadvantage (Ranged Weapon Attack)",
+			"description": "Any Ranged Weapon attack against the target will not have disadvantage"
 		},
 		"flags.midi-qol.grants.fail.disadvantage.attack.save": {
-			"name": "Grants Fail Disadvantage (Save)",
+			"name": "Grants No Disadvantage (Save)",
+			"description": "Any save forced by the actor will not have disadvantage"
+		},
+		"flags.midi-qol.grants.noDisadvantage.attack.save": {
+			"name": "Grants No Disadvantage (Save)",
+			"description": "Any save forced by the actor will not have disadvantage"
+		},
+		"flags.midi-qol.grants.fail.disadvantage.attack.check": {
+			"name": "Grants No Disadvantage (Check)",
+			"description": "Any ability check forced by the actor will not have disadvantage"
+		},
+		"flags.midi-qol.grants.noDisadvantage.attack.check": {
+			"name": "Grants Fail Disadvantage (Utility)",
+			"description": "Any ability check forced by the actor will not have disadvantage"
+		},
+		"flags.midi-qol.grants.fail.disadvantage.attack.skill": {
+			"name": "Grants No Disadvantage (skill)",
 			"description": ""
 		},
-		"flags.midi-qol.grants.fail.disadvantage.attack.util": {
-			"name": "Grants Fail Disadvantage (Utility)",
-			"description": ""
+		"flags.midi-qol.grants.noDisadvantage.attack.skill": {
+			"name": "Grants No Disadvantage (skill)",
+			"description": "Any skill roll forced by the attacker will not have disadvantage"
 		},
 		"flags.midi-qol.grants.max.damage.all": {
 			"name": "Grants Max Damage (All)",
-			"description": ""
+			"description": "All damage rolls will do maximum damage"
 		},
 		"flags.midi-qol.grants.max.damage.heal": {
 			"name": "Grants Max Damage (Heal)",
-			"description": ""
+			"description": "All healing rolls will do maximum healing"
 		},
 		"flags.midi-qol.grants.max.damage.msak": {
 			"name": "Grants Max Damage (Melee Spell Attack)",
-			"description": ""
+			"description": "All spell attacks will do maximum damage"
 		},
 		"flags.midi-qol.grants.max.damage.mwak": {
 			"name": "Grants Max Damage (Melee Weapon Attack)",
-			"description": ""
-		},
-		"flags.midi-qol.grants.max.damage.other": {
-			"name": "Grants Max Damage (Other)",
-			"description": ""
+			"description": "All melee weapon attacks will do maximum damage"
 		},
 		"flags.midi-qol.grants.max.damage.rsak": {
 			"name": "Grants Max Damage (Ranged Spell Attack)",
-			"description": ""
+			"description": "All ranged spell attacks will do maximum damage"
 		},
 		"flags.midi-qol.grants.max.damage.rwak": {
 			"name": "Grants Max Damage (Ranged Weapon Attack)",
-			"description": ""
+			"description": "All ranged weapon attacks will do maximum damage"
 		},
 		"flags.midi-qol.grants.max.damage.save": {
 			"name": "Grants Max Damage (Save)",
-			"description": ""
-		},
-		"flags.midi-qol.grants.max.damage.util": {
-			"name": "Grants Max Damage (Utility)",
-			"description": ""
+			"description": "All save activities will do maximum damage"
 		},
 		"flags.midi-qol.grants.min.damage.all": {
 			"name": "Grants Min Damage (All)",
-			"description": ""
+			"description": "All damage rolls will do minimum damage"
 		},
 		"flags.midi-qol.grants.min.damage.heal": {
 			"name": "Grants Min Damage (Heal)",
-			"description": ""
+			"description": "All healing rolls will do minimum healing"
 		},
 		"flags.midi-qol.grants.min.damage.msak": {
 			"name": "Grants Min Damage (Melee Spell Attack)",
-			"description": ""
+			"description": "All melee spell attacks will do minimum damage"
 		},
 		"flags.midi-qol.grants.min.damage.mwak": {
 			"name": "Grants Min Damage (Melee Weapon Attack)",
-			"description": ""
+			"description": "All weapon attacks will do minimum damage"
 		},
 		"flags.midi-qol.grants.min.damage.other": {
 			"name": "Grants Min Damage (Other)",
@@ -2417,17 +2718,50 @@
 			"name": "Ignore Nearby Foes",
 			"description": "Ignore disadvantage imposed on ranged attacks by nearby enemies."
 		},
-		"flags.midi-qol.inMotion": { "name": "In Motion", "description": "" },
-		"flags.midi-qol.long.all": { "name": "Long Range (All)", "description": "" },
-		"flags.midi-qol.long.heal": { "name": "Long Range (Heal)", "description": "" },
-		"flags.midi-qol.long.msak": { "name": "Long Range (Melee Spell Attack)", "description": "" },
-		"flags.midi-qol.long.mwak": { "name": "Long Range (Melee Weapon Attack)", "description": "" },
-		"flags.midi-qol.long.other": { "name": "Long Range (Other)", "description": "" },
-		"flags.midi-qol.long.rsak": { "name": "Long Range (Ranged Spell Attack)", "description": "" },
-		"flags.midi-qol.long.rwak": { "name": "Long Range (Ranged Weapon Attack)", "description": "" },
-		"flags.midi-qol.long.save": { "name": "Long Range (Save)", "description": "" },
-		"flags.midi-qol.long.util": { "name": "Long Range (Utility)", "description": "" },
-		"flags.midi-qol.magicResistance.all": { "name": "Magic Resistance (All)", "description": "" },
+		"flags.midi-qol.inMotion": {
+			"name": "In Motion",
+			"description": ""
+		},
+		"flags.midi-qol.long.all": {
+			"name": "Long Range (All)",
+			"description": ""
+		},
+		"flags.midi-qol.long.heal": {
+			"name": "Long Range (Heal)",
+			"description": ""
+		},
+		"flags.midi-qol.long.msak": {
+			"name": "Long Range (Melee Spell Attack)",
+			"description": ""
+		},
+		"flags.midi-qol.long.mwak": {
+			"name": "Long Range (Melee Weapon Attack)",
+			"description": ""
+		},
+		"flags.midi-qol.long.other": {
+			"name": "Long Range (Other)",
+			"description": ""
+		},
+		"flags.midi-qol.long.rsak": {
+			"name": "Long Range (Ranged Spell Attack)",
+			"description": ""
+		},
+		"flags.midi-qol.long.rwak": {
+			"name": "Long Range (Ranged Weapon Attack)",
+			"description": ""
+		},
+		"flags.midi-qol.long.save": {
+			"name": "Long Range (Save)",
+			"description": ""
+		},
+		"flags.midi-qol.long.util": {
+			"name": "Long Range (Utility)",
+			"description": ""
+		},
+		"flags.midi-qol.magicResistance.all": {
+			"name": "Magic Resistance (All)",
+			"description": ""
+		},
 		"flags.midi-qol.magicResistance.cha": {
 			"name": "Magic Resistance (Charisma)",
 			"description": ""
@@ -2552,8 +2886,14 @@
 			"name": "Max Save (Wisdom)",
 			"description": "Maximum rollable number on the main d20 for Wisdom saving throws."
 		},
-		"flags.midi-qol.max.damage.all": { "name": "Max Damage (All)", "description": "" },
-		"flags.midi-qol.max.damage.heal": { "name": "Max Damage (Heal)", "description": "" },
+		"flags.midi-qol.max.damage.all": {
+			"name": "Max Damage (All)",
+			"description": ""
+		},
+		"flags.midi-qol.max.damage.heal": {
+			"name": "Max Damage (Heal)",
+			"description": ""
+		},
 		"flags.midi-qol.max.damage.msak": {
 			"name": "Max Damage (Melee Spell Attack)",
 			"description": ""
@@ -2562,7 +2902,10 @@
 			"name": "Max Damage (Melee Weapon Attack)",
 			"description": ""
 		},
-		"flags.midi-qol.max.damage.other": { "name": "Max Damage (Other)", "description": "" },
+		"flags.midi-qol.max.damage.other": {
+			"name": "Max Damage (Other)",
+			"description": ""
+		},
 		"flags.midi-qol.max.damage.rsak": {
 			"name": "Max Damage (Ranged Spell Attack)",
 			"description": ""
@@ -2571,8 +2914,14 @@
 			"name": "Max Damage (Ranged Weapon Attack)",
 			"description": ""
 		},
-		"flags.midi-qol.max.damage.save": { "name": "Max Damage (Save)", "description": "" },
-		"flags.midi-qol.max.damage.util": { "name": "Max Damage (Utility)", "description": "" },
+		"flags.midi-qol.max.damage.save": {
+			"name": "Max Damage (Save)",
+			"description": ""
+		},
+		"flags.midi-qol.max.damage.util": {
+			"name": "Max Damage (Utility)",
+			"description": ""
+		},
 		"flags.midi-qol.max.skill.all": {
 			"name": "Max Skill (All)",
 			"description": "Maximum rollable number on the main d20 for all skill checks."
@@ -2637,8 +2986,14 @@
 			"name": "Min Save (Wisdom)",
 			"description": "Minimum rollable number on the main d20 for Wisdom saving throws."
 		},
-		"flags.midi-qol.min.damage.all": { "name": "Min Damage (All)", "description": "" },
-		"flags.midi-qol.min.damage.heal": { "name": "Min Damage (Heal)", "description": "" },
+		"flags.midi-qol.min.damage.all": {
+			"name": "Min Damage (All)",
+			"description": ""
+		},
+		"flags.midi-qol.min.damage.heal": {
+			"name": "Min Damage (Heal)",
+			"description": ""
+		},
 		"flags.midi-qol.min.damage.msak": {
 			"name": "Min Damage (Melee Spell Attack)",
 			"description": ""
@@ -2647,7 +3002,10 @@
 			"name": "Min Damage (Melee Weapon Attack)",
 			"description": ""
 		},
-		"flags.midi-qol.min.damage.other": { "name": "Min Damage (Other)", "description": "" },
+		"flags.midi-qol.min.damage.other": {
+			"name": "Min Damage (Other)",
+			"description": ""
+		},
 		"flags.midi-qol.min.damage.rsak": {
 			"name": "Min Damage (Ranged Spell Attack)",
 			"description": ""
@@ -2656,11 +3014,26 @@
 			"name": "Min Damage (Ranged Weapon Attack)",
 			"description": ""
 		},
-		"flags.midi-qol.min.damage.save": { "name": "Min Damage (Save)", "description": "" },
-		"flags.midi-qol.min.damage.util": { "name": "Min Damage (Utility)", "description": "" },
-		"flags.midi-qol.neverTarget": { "name": "Never Target", "description": "" },
-		"flags.midi-qol.noCritical.all": { "name": "No Critical Hit (All)", "description": "" },
-		"flags.midi-qol.noCritical.heal": { "name": "No Critical Hit (Heal)", "description": "" },
+		"flags.midi-qol.min.damage.save": {
+			"name": "Min Damage (Save)",
+			"description": ""
+		},
+		"flags.midi-qol.min.damage.util": {
+			"name": "Min Damage (Utility)",
+			"description": ""
+		},
+		"flags.midi-qol.neverTarget": {
+			"name": "Never Target",
+			"description": ""
+		},
+		"flags.midi-qol.noCritical.all": {
+			"name": "No Critical Hit (All)",
+			"description": ""
+		},
+		"flags.midi-qol.noCritical.heal": {
+			"name": "No Critical Hit (Heal)",
+			"description": ""
+		},
 		"flags.midi-qol.noCritical.msak": {
 			"name": "No Critical Hit (Melee Spell Attack)",
 			"description": ""
@@ -2669,7 +3042,10 @@
 			"name": "No Critical Hit (Melee Weapon Attack)",
 			"description": ""
 		},
-		"flags.midi-qol.noCritical.other": { "name": "No Critical Hit (Other)", "description": "" },
+		"flags.midi-qol.noCritical.other": {
+			"name": "No Critical Hit (Other)",
+			"description": ""
+		},
 		"flags.midi-qol.noCritical.rsak": {
 			"name": "No Critical Hit (Ranged Spell Attack)",
 			"description": ""
@@ -2678,11 +3054,26 @@
 			"name": "No Critical Hit (Ranged Weapon Attack)",
 			"description": ""
 		},
-		"flags.midi-qol.noCritical.save": { "name": "No Critical Hit (Save)", "description": "" },
-		"flags.midi-qol.noCritical.util": { "name": "No Critical Hit (Utility)", "description": "" },
-		"flags.midi-qol.onUseMacroName": { "name": "", "description": "" },
-		"flags.midi-qol.optional.NAME.macroToCall": { "name": "", "description": "" },
-		"flags.midi-qol.optional.NAME.ac": { "name": "Optional AC", "description": "" },
+		"flags.midi-qol.noCritical.save": {
+			"name": "No Critical Hit (Save)",
+			"description": ""
+		},
+		"flags.midi-qol.noCritical.util": {
+			"name": "No Critical Hit (Utility)",
+			"description": ""
+		},
+		"flags.midi-qol.onUseMacroName": {
+			"name": "",
+			"description": ""
+		},
+		"flags.midi-qol.optional.NAME.macroToCall": {
+			"name": "",
+			"description": ""
+		},
+		"flags.midi-qol.optional.NAME.ac": {
+			"name": "Optional AC",
+			"description": ""
+		},
 		"flags.midi-qol.optional.NAME.activation": {
 			"name": "Optional Activation",
 			"description": "Activation condition for optional bonus."
@@ -2815,7 +3206,10 @@
 			"name": "Optional Check Bonus (Wisdom)",
 			"description": ""
 		},
-		"flags.midi-qol.optional.NAME.count": { "name": "Optional Count", "description": "" },
+		"flags.midi-qol.optional.NAME.count": {
+			"name": "Optional Count",
+			"description": ""
+		},
 		"flags.midi-qol.optional.NAME.countAlt": {
 			"name": "Optional Count Alternative",
 			"description": ""
@@ -2864,7 +3258,10 @@
 			"name": "Optional Force",
 			"description": "Condition to force activation of bonus."
 		},
-		"flags.midi-qol.optional.NAME.label": { "name": "Optional Label", "description": "" },
+		"flags.midi-qol.optional.NAME.label": {
+			"name": "Optional Label",
+			"description": ""
+		},
 		"flags.midi-qol.optional.NAME.save.all": {
 			"name": "Optional Save Bonus (All)",
 			"description": ""
@@ -2997,16 +3394,46 @@
 			"name": "Optional Skill Bonus (Survival)",
 			"description": ""
 		},
-		"flags.midi-qol.potentCantrip": { "name": "Potent Cantrip", "description": "" },
-		"flags.midi-qol.range.all": { "name": "Range (All)", "description": "" },
-		"flags.midi-qol.range.heal": { "name": "Range (Heal)", "description": "" },
-		"flags.midi-qol.range.msak": { "name": "Range (Melee Spell Attack)", "description": "" },
-		"flags.midi-qol.range.mwak": { "name": "Range (Melee Weapon Attack)", "description": "" },
-		"flags.midi-qol.range.other": { "name": "Range (Other)", "description": "" },
-		"flags.midi-qol.range.rsak": { "name": "Range (Ranged Spell Attack)", "description": "" },
-		"flags.midi-qol.range.rwak": { "name": "Range (Ranged Weapon Attack)", "description": "" },
-		"flags.midi-qol.range.save": { "name": "Range (Save)", "description": "" },
-		"flags.midi-qol.range.util": { "name": "Range (Utility)", "description": "" },
+		"flags.midi-qol.potentCantrip": {
+			"name": "Potent Cantrip",
+			"description": ""
+		},
+		"flags.midi-qol.range.all": {
+			"name": "Range (All)",
+			"description": ""
+		},
+		"flags.midi-qol.range.heal": {
+			"name": "Range (Heal)",
+			"description": ""
+		},
+		"flags.midi-qol.range.msak": {
+			"name": "Range (Melee Spell Attack)",
+			"description": ""
+		},
+		"flags.midi-qol.range.mwak": {
+			"name": "Range (Melee Weapon Attack)",
+			"description": ""
+		},
+		"flags.midi-qol.range.other": {
+			"name": "Range (Other)",
+			"description": ""
+		},
+		"flags.midi-qol.range.rsak": {
+			"name": "Range (Ranged Spell Attack)",
+			"description": ""
+		},
+		"flags.midi-qol.range.rwak": {
+			"name": "Range (Ranged Weapon Attack)",
+			"description": ""
+		},
+		"flags.midi-qol.range.save": {
+			"name": "Range (Save)",
+			"description": ""
+		},
+		"flags.midi-qol.range.util": {
+			"name": "Range (Utility)",
+			"description": ""
+		},
 		"flags.midi-qol.rangeOverride.attack.all": {
 			"name": "Range Override (All Attacks)",
 			"description": ""
@@ -3075,9 +3502,18 @@
 			"name": "Semi Super Saver (Wisdom)",
 			"description": "No damage on save."
 		},
-		"flags.midi-qol.sharpShooter": { "name": "Sharp Shooter", "description": "" },
-		"flags.midi-qol.success.attack.all": { "name": "Success (All Attacks)", "description": "" },
-		"flags.midi-qol.success.attack.heal": { "name": "Success (Heal)", "description": "" },
+		"flags.midi-qol.sharpShooter": {
+			"name": "Sharp Shooter",
+			"description": ""
+		},
+		"flags.midi-qol.success.attack.all": {
+			"name": "Success (All Attacks)",
+			"description": ""
+		},
+		"flags.midi-qol.success.attack.heal": {
+			"name": "Success (Heal)",
+			"description": ""
+		},
 		"flags.midi-qol.success.attack.msak": {
 			"name": "Success (Melee Spell Attack)",
 			"description": ""
@@ -3086,7 +3522,10 @@
 			"name": "Success (Melee Weapon Attack)",
 			"description": ""
 		},
-		"flags.midi-qol.success.attack.other": { "name": "Success (Other)", "description": "" },
+		"flags.midi-qol.success.attack.other": {
+			"name": "Success (Other)",
+			"description": ""
+		},
 		"flags.midi-qol.success.attack.rsak": {
 			"name": "Success (Ranged Spell Attack)",
 			"description": ""
@@ -3095,8 +3534,14 @@
 			"name": "Success (Ranged Weapon Attack)",
 			"description": ""
 		},
-		"flags.midi-qol.success.attack.save": { "name": "Success (Save)", "description": "" },
-		"flags.midi-qol.success.attack.util": { "name": "Success (Utility)", "description": "" },
+		"flags.midi-qol.success.attack.save": {
+			"name": "Success (Save)",
+			"description": ""
+		},
+		"flags.midi-qol.success.attack.util": {
+			"name": "Success (Utility)",
+			"description": ""
+		},
 		"flags.midi-qol.superSaver.all": {
 			"name": "Super Saver (All)",
 			"description": "No damage on save, half damage on fail."
@@ -3125,6 +3570,9 @@
 			"name": "Super Saver (Wisdom)",
 			"description": "No damage on save, half damage on fail."
 		},
-		"flags.midi-qol.uncanny-dodge": { "name": "Uncanny Dodge", "description": "" }
+		"flags.midi-qol.uncanny-dodge": {
+			"name": "Uncanny Dodge",
+			"description": ""
+		}
 	}
 }
