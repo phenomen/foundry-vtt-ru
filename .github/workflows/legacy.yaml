@@ -1,0 +1,42 @@
+name: Build and Release (V12)
+
+on:
+  push:
+    branches:
+      - legacy-v12
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build with Vite
+        run: bun run build
+
+      - name: Zip build output
+        run: zip -r ru-ru.zip ru-ru
+
+      - name: Create/Update Release
+        id: create_release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: legacy
+          name: V12 Legacy
+          draft: false
+          prerelease: false
+          files: |
+            ru-ru.zip
+            public/module.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
