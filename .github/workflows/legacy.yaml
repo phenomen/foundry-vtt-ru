@@ -1,9 +1,9 @@
-name: Build and Release (V13)
+name: Build and Release (V12)
 
 on:
   push:
     branches:
-      - main
+      - legacy-v12
 
 jobs:
   build-and-release:
@@ -31,8 +31,8 @@ jobs:
         id: create_release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: latest
-          name: V13
+          tag_name: legacy
+          name: V12 Legacy
           draft: false
           prerelease: false
           files: |
