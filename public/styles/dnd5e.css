@@ -61,17 +61,6 @@ select {
 	text-overflow: ellipsis;
 }
 
-.dnd5e2.sheet.actor.character .tab.spells .top .card.spellcasting {
-	width: 250px;
-}
-
-.dnd5e2 .card .info > div .label {
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	max-width: 53px;
-}
-
 .dnd5e2 .items-section .items-header .item-school,
 .dnd5e2 .items-section .item .item-school,
 .dnd5e2 .items-section .items-header .item-usage,
@@ -91,6 +80,24 @@ select {
 .dnd5e2.sheet.item .sheet-header .identity-info .subtitles .item-rarity > select {
 	text-transform: uppercase;
 	font-size: var(--font-size-12);
+}
+
+.dnd5e2.sheet.actor.character .tab[data-tab="spells"] .top .card.spellcasting {
+	width: 250px;
+}
+
+.dnd5e2.sheet.actor.character .tab.spells .top .card.spellcasting {
+	width: 250px;
+}
+
+.dnd5e2 .card .info > div .label {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 55px;
+	font-size: var(--font-size-9);
+	font-family: var(--font-sans-condensed);
+	font-weight: 500;
 }
 
 /* 1.0 */
