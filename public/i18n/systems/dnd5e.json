@@ -30,8 +30,8 @@
 	"TYPES.Item.containerPl": "Контейнеры",
 	"TYPES.Item.class": "Класс",
 	"TYPES.Item.classPl": "Классы",
-	"TYPES.Item.consumable": "Расходник",
-	"TYPES.Item.consumablePl": "Расходники",
+	"TYPES.Item.consumable": "Расходуемый предмет",
+	"TYPES.Item.consumablePl": "Расходуемые предметы",
 	"TYPES.Item.equipment": "Снаряжение",
 	"TYPES.Item.equipmentPl": "Снаряжение",
 	"TYPES.Item.facility": "Постройка",
@@ -170,17 +170,55 @@
 			"Vehicle": "Транспорт"
 		},
 		"Type": {
+			"Action": {
+				"Header": "Действия",
+				"Label": "Действие"
+			},
+			"BonusAction": {
+				"Header": "Бонусные действия",
+				"Label": "Бонусное действие"
+			},
+			"Crew": {
+				"Header": "Действия экипажа",
+				"Label": "Действие экипажа"
+			},
+			"Day": {
+				"Header": "Дни",
+				"Label": "День"
+			},
 			"Encounter": {
 				"Label": "Начало боя"
+			},
+			"Hour": {
+				"Header": "Часы",
+				"Label": "Час"
+			},
+			"Lair": {
+				"Header": "Действия логова",
+				"Label": "Действие логова"
 			},
 			"Legendary": {
 				"Counted": {
 					"one": "{number} легендарное действие",
 					"other": "{number} легендарных действия"
-				}
+				},
+				"Header": "Легендарные действия",
+				"Label": "Легендарное действие"
 			},
 			"LongRest": {
 				"Label": "В конце долгого отдыха"
+			},
+			"Minute": {
+				"Header": "Минуты",
+				"Label": "Минута"
+			},
+			"Mythic": {
+				"Header": "Мифические действия",
+				"Label": "Мифическое действие"
+			},
+			"Reaction": {
+				"Header": "Ответные действия",
+				"Label": "Ответное действие"
 			},
 			"ShortRest": {
 				"Label": "В конце короткого отдыха"
@@ -1326,7 +1364,7 @@
 				"label": "Магический бонус"
 			},
 			"properties": {
-				"label": "Свойства расходника"
+				"label": "Свойства  расходуемого предмета"
 			},
 			"uses": {
 				"autoDestroy": {
@@ -1376,7 +1414,7 @@
 		}
 	},
 
-	"DND5E.ConsumableUseWarnStart": "Этот расходник имеет",
+	"DND5E.ConsumableUseWarnStart": "Этот расходуемый предмет имеет",
 	"DND5E.ConsumableUseWarnEnd": "от текущих единиц",
 	"DND5E.ConsumableUnitWarn": "единиц осталось",
 	"DND5E.ConsumableLastChargeWarn": "Это последний заряд и использование уменьшит число предметов на 1",
@@ -1840,34 +1878,7 @@
 	"DND5E.ENCHANT": {
 		"Title": "Зачарование",
 		"FIELDS": {
-			"effects": {
-				"FIELDS": {
-					"level": {
-						"label": "Ограничение уровня",
-						"hint": "Диапазон уровней, требуемых для использования зачарования.",
-						"max": {
-							"label": "Максимальный круг"
-						},
-						"min": {
-							"label": "Минимальный круг"
-						}
-					},
-					"riders": {
-						"label": "Прикреплено",
-						"activity": {
-							"label": "Дополнительные функции",
-							"hint": "Эти функции будут добавлены или удалены у зачарованного предмета при добавлении или удалении зачарования."
-						},
-						"effect": {
-							"label": "Дополнительные эффекты",
-							"hint": "Эти эффекты будут добавлены или удалены у зачарованного предмета при добавлении или удалении зачарования."
-						},
-						"item": {
-							"label": "Дополнительные предметы",
-							"hint": "Эти предметы будут добавлены или удалены у существа с зачарованным предметом при добавлении или удалении зачарования."
-						}
-					}
-				},
+			"effects.element": {
 				"level": {
 					"label": "Ограничение уровня",
 					"hint": "Диапазон уровней, требуемых для использования зачарования.",
@@ -2414,13 +2425,6 @@
 	"DND5E.EffectUnavailable": "Недоступные эффекты",
 	"DND5E.EffectUnavailableInfo": "Предмет с эффектом должен быть надет или настроен для активации",
 	"DND5E.Encumbrance": "Нагрузка",
-	"DND5E.ItemRarityCommon": "обычный",
-	"DND5E.ItemRarityMundane": "повседневный",
-	"DND5E.ItemRarityUncommon": "необычный",
-	"DND5E.ItemRarityRare": "редкий",
-	"DND5E.ItemRarityVeryRare": "крайне редкий",
-	"DND5E.ItemRarityLegendary": "легендарный",
-	"DND5E.ItemRarityArtifact": "артефакт",
 	"DND5E.Eyes": "Глаза",
 	"DND5E.Faith": "Вера",
 	"DND5E.FeatureActive": "Активные способности",
@@ -2430,7 +2434,7 @@
 	"DND5E.FeatureRechargeOn": "Перезарядка при",
 	"DND5E.FeatureRechargeResult": "Результат 1d6",
 	"DND5E.FeatureSearch": "Поиск особенности",
-	"DND5E.FeatureUsage": "Особенности использования",
+	"DND5E.FeatureUsage": "Использование",
 	"DND5E.Features": "Особенности",
 	"DND5E.FeaturesBackground": "Особенности происхождения",
 	"DND5E.FeaturesClass": "Особенности {class}",
@@ -2676,13 +2680,13 @@
 	"DND5E.ItemAttackFlatHint": "Не добавлять умение, модификатор характеристики и другие бонусы к атаке, кроме тех, что указаны здесь.",
 	"DND5E.ItemBackgroundDetails": "Подробности происхождения",
 	"DND5E.ItemClassDetails": "Подробности класса",
-	"DND5E.ItemConsumableActivation": "Расходует активацию",
+	"DND5E.ItemConsumableActivation": "Активация расходуемого предмета",
 	"DND5E.ItemConsumableUsage": "Расходование",
-	"DND5E.ItemConsumableDetails": "Подробности расходника",
-	"DND5E.ItemConsumableProperties": "Свойства расходника",
-	"DND5E.ItemConsumableStatus": "Статус расходника",
+	"DND5E.ItemConsumableDetails": "Подробности расходуемого предмета",
+	"DND5E.ItemConsumableProperties": "Свойства расходуемого предмета",
+	"DND5E.ItemConsumableStatus": "Статус расходуемого предмета",
 	"DND5E.ItemConsumableSubtype": "{category}",
-	"DND5E.ItemConsumableType": "Тип расходника",
+	"DND5E.ItemConsumableType": "Тип предмета",
 	"DND5E.ItemCreate": "Создание предмета",
 	"DND5E.ItemCritThreshold": "Предел критической атаки",
 	"DND5E.ItemCritExtraDamage": "Дополнительный критический урон",
@@ -2697,7 +2701,7 @@
 	"DND5E.ItemEquipmentStatus": "Статус снаряжения",
 	"DND5E.ItemEquipmentStealthDisav": "Помеха скрытности",
 	"DND5E.ItemEquipmentType": "Тип снаряжения",
-	"DND5E.ItemEquipmentUsage": "Использование снаряжения",
+	"DND5E.ItemEquipmentUsage": "Использование",
 	"DND5E.ItemFacilityDetails": "Подробности постройки",
 	"DND5E.ItemFeatureDetails": "Подробности особенности",
 	"DND5E.ItemFeatureProperties": "Свойства особенности",
@@ -2709,14 +2713,52 @@
 	"DND5E.ItemLootType": "Тип добычи",
 	"DND5E.ItemName": "Название",
 	"DND5E.ItemNew": "{type}",
-	"DND5E.Item": {
+	"DND5E.ItemRarityCommon": "обычный",
+	"DND5E.ItemRarityMundane": "повседневный",
+	"DND5E.ItemRarityUncommon": "необычный",
+	"DND5E.ItemRarityRare": "редкий",
+	"DND5E.ItemRarityVeryRare": "крайне редкий",
+	"DND5E.ItemRarityLegendary": "легендарный",
+	"DND5E.ItemRarityArtifact": "артефакт",
+	"DND5E.ItemRechargeCheck": "{name} совершает проверку перезарядки - {result}",
+	"DND5E.ItemRechargeFailure": "провал!",
+	"DND5E.ItemRechargeSuccess": "успех!",
+	"DND5E.ItemRecoveryRoll": "{name} восстанавливает {count} зарядов",
+	"DND5E.ItemLossRoll": "{name} теряет {count} зарядов",
+	"DND5E.ItemRecoveryRollMax": "{name} восстанавливает все заряды",
+	"DND5E.ItemRecoveryFormulaWarning": "Не удаётся восстановить использования для {name}. Некорректная формула '{formula}' ({uuid}).",
+	"DND5E.ItemRequiredStr": "Требуется Сила",
+	"DND5E.Items": "Предметы",
+	"DND5E.ItemSiegeProperties": "Свойства осадного оружия",
+	"DND5E.ItemSpeciesDetails": "Подробности вида",
+	"DND5E.ItemSpeciesDetailsLegacy": "Подробности расы",
+	"DND5E.ItemSubclassDetails": "Подробности подкласса",
+	"DND5E.ItemToolBase": "Базовые инструменты",
+	"DND5E.ItemToolBonus": "Бонус инструмента",
+	"DND5E.ItemToolDetails": "Подробности инструмента",
+	"DND5E.ItemToolProficiency": "Умения в инструментах",
+	"DND5E.ItemToolProperties": "Свойства инструмента",
+	"DND5E.ItemToolStatus": "Статус инструмента",
+	"DND5E.ItemToolType": "Тип инструмента",
+	"DND5E.ItemToolUsage": "Использование",
+	"DND5E.ItemVehicleProperties": "Свойства транспорта",
+	"DND5E.ItemView": "Просмотр предмета",
+	"DND5E.ItemWeaponAttack": "Атака оружием",
+	"DND5E.ItemWeaponBase": "Базовое оружие",
+	"DND5E.ItemWeaponDetails": "Подробности атаки",
+	"DND5E.ItemWeaponProperties": "Свойства оружия",
+	"DND5E.ItemWeaponStatus": "Статус оружия",
+	"DND5E.ItemWeaponType": "Тип оружия",
+	"DND5E.ItemWeaponUsage": "Использование",
+
+	"DND5E.ITEM": {
 		"Category": {
 			"Label": "Категория",
 			"Physical": "Предмет"
 		},
 		"Property": {
 			"Adamantine": "Адамантиновое",
-			"Ammunition": "Боеприпасы",
+			"Ammunition": "Боеприпас",
 			"Concentration": "Концентрация",
 			"Finesse": "Фехтовальное",
 			"Firearm": "Огнестрельное",
@@ -2739,40 +2781,27 @@
 			"TwoHanded": "Двуручное",
 			"Versatile": "Полуторное",
 			"Verbal": "Словесный",
-			"WeightlessContents": "Содержимое без веса"
+			"WeightlessContents": "Невесомое содержимое"
+		},
+		"SECTIONS": {
+			"Activities": "Функции",
+			"Advancement": "Развитие",
+			"Contents": "Содержимое",
+			"Description": "Описание",
+			"Details": "Подробности",
+			"Effects": "Эффекты"
 		}
 	},
-	"DND5E.ItemRechargeCheck": "{name} совершает проверку перезарядки - {result}",
-	"DND5E.ItemRechargeFailure": "провал!",
-	"DND5E.ItemRechargeSuccess": "успех!",
-	"DND5E.ItemRecoveryRoll": "{name} восстанавливает {count} зарядов",
-	"DND5E.ItemLossRoll": "{name} теряет {count} зарядов",
-	"DND5E.ItemRecoveryRollMax": "{name} восстанавливает все заряды",
-	"DND5E.ItemRecoveryFormulaWarning": "Не удаётся восстановить использования для {name}. Некорректная формула '{formula}' ({uuid}).",
-	"DND5E.ItemRequiredStr": "Требуется Сила",
-	"DND5E.Items": "Предметы",
-	"DND5E.ItemSiegeProperties": "Свойства осадного оружия",
-	"DND5E.ItemSpeciesDetails": "Подробности вида",
-	"DND5E.ItemSpeciesDetailsLegacy": "Подробности расы",
-	"DND5E.ItemSubclassDetails": "Подробности подкласса",
-	"DND5E.ItemToolBase": "Базовые инструменты",
-	"DND5E.ItemToolBonus": "Бонус инструмента",
-	"DND5E.ItemToolDetails": "Подробности инструмента",
-	"DND5E.ItemToolProficiency": "Умения в инструментах",
-	"DND5E.ItemToolProperties": "Свойства инструмента",
-	"DND5E.ItemToolStatus": "Статус инструмента",
-	"DND5E.ItemToolType": "Тип инструмента",
-	"DND5E.ItemToolUsage": "Использование инструмента",
-	"DND5E.ItemVehicleProperties": "Свойства транспорта",
-	"DND5E.ItemView": "Просмотр предмета",
-	"DND5E.ItemWeaponAttack": "Атака оружием",
-	"DND5E.ItemWeaponBase": "Базовое оружие",
-	"DND5E.ItemWeaponDetails": "Подробности атаки",
-	"DND5E.ItemWeaponProperties": "Свойства оружия",
-	"DND5E.ItemWeaponStatus": "Статус оружия",
-	"DND5E.ItemWeaponType": "Тип оружия",
-	"DND5E.ItemWeaponUsage": "Использование оружия",
+
 	"DND5E.JackOfAllTrades": "Мастер на все руки",
+
+	"DND5E.JOURNALENTRY": {
+		"Navigation": {
+			"Next": "Вперёд",
+			"Previous": "Назад",
+			"Up": "Вверх"
+		}
+	},
 
 	"DND5E.LAIR": {
 		"Label": "Логово",
@@ -3041,6 +3070,7 @@
 	"DND5E.RechargeShort": "Перезарядка после короткого или долгого отдыха",
 	"DND5E.Recovery": "Восстановление",
 	"DND5E.RecoveryFormula": "Формула восстановления",
+	"DND5E.Remaining": "Осталось",
 	"DND5E.RequiredMaterials": "Требуемые материалы",
 	"DND5E.Requirements": "Требования",
 	"DND5E.Resistances": "Устойчивости",
@@ -3556,15 +3586,7 @@
 				}
 			},
 			"profiles": {
-				"count": {
-					"label": "Число"
-				},
-				"cr": {
-					"label": "Класс опасности",
-					"abbr": "КО",
-					"hint": "Максимальный КО призванного существа."
-				},
-				"FIELDS": {
+				"element": {
 					"count": {
 						"label": "Число"
 					},
@@ -3575,7 +3597,7 @@
 					},
 					"level": {
 						"label": "Ограничение уровня",
-						"hint": "Диапазон кругов, требуемых для использования профиля.",
+						"hint": "Диапазон уровней, требуемых для использования профиля.",
 						"max": {
 							"label": "Максимальный уровень"
 						},
@@ -3584,8 +3606,8 @@
 						}
 					},
 					"name": {
-						"label": "Отображаемое имя",
-						"hint": "Имя профиля, отображаемое в окне использования."
+						"label": "Название",
+						"hint": "Название профиля, отображаемое в окне использования."
 					},
 					"types": {
 						"label": "Типы существ",
@@ -3595,28 +3617,7 @@
 						"label": "Связанное существо"
 					}
 				},
-				"label": "Профили призыва",
-				"level": {
-					"label": "Ограничение уровня",
-					"hint": "Диапазон кругов, требуемых для использования профиля.",
-					"max": {
-						"label": "Максимальный уровень"
-					},
-					"min": {
-						"label": "Минимальный уровень"
-					}
-				},
-				"name": {
-					"label": "Отображаемое имя",
-					"hint": "Имя профиля, отображаемое в окне использования."
-				},
-				"types": {
-					"label": "Типы существ",
-					"hint": "Список типов существ, которые можно выбрать для призыва."
-				},
-				"uuid": {
-					"label": "Связанное существо"
-				}
+				"label": "Профили призыва"
 			},
 			"summon": {
 				"label": "Подробности призыва",
@@ -3667,7 +3668,6 @@
 		},
 		"Warning": {
 			"CreateActor": "У вас должны быть права на создание новых актёров, чтобы призывать существ из библиотеки.",
-			"CRV11": "Призыв по классу опасности работает только в Foundry V12 и выше.",
 			"NoActor": "Актёр для призыва с UUID '{uuid}' не найден.",
 			"NoOwnership": "У вас должны быть права владения '{actor}' для призыва.",
 			"NoProfile": "Не удалось найти профиль призыва {profileId} у '{item}'.",
@@ -4041,12 +4041,7 @@
 		},
 		"FIELDS": {
 			"profiles": {
-				"cr": {
-					"label": "Класс опасности",
-					"abbr": "КО",
-					"hint": "Максимальный КО исходного существа."
-				},
-				"FIELDS": {
+				"element": {
 					"cr": {
 						"label": "Класс опасности",
 						"abbr": "КО",
@@ -4063,12 +4058,12 @@
 						}
 					},
 					"movement": {
-						"hint": "Способые перемещения, не разрешённые на исходных существах.",
+						"hint": "Способы перемещения, не разрешённые на исходных существах.",
 						"label": "Ограничение способов перемещения"
 					},
 					"name": {
-						"hint": "Имя профиля, отображаемое в окне использования.",
-						"label": "Отображаемое имя"
+						"hint": "Название профиля, отображаемое в окне использования.",
+						"label": "Название"
 					},
 					"sizes": {
 						"hint": "Список размеров существ, доступных для исходного существа.",
@@ -4079,33 +4074,7 @@
 						"label": "Типы существ"
 					}
 				},
-				"label": "Профили превращения",
-				"level": {
-					"label": "Ограничение уровня",
-					"hint": "Диапазон уровней, требуемых для использования профиля.",
-					"max": {
-						"label": "Максимальный уровень"
-					},
-					"min": {
-						"label": "Минимальный уровень"
-					}
-				},
-				"movement": {
-					"hint": "Способые перемещения, не разрешённые на исходных существах.",
-					"label": "Ограничение способов перемещения"
-				},
-				"name": {
-					"hint": "Имя профиля, отображаемое в окне использования.",
-					"label": "Отображаемое имя"
-				},
-				"sizes": {
-					"hint": "Список размеров существ, доступных для исходного существа.",
-					"label": "Размеры существ"
-				},
-				"types": {
-					"hint": "Список типов существ, доступных для исходного существа.",
-					"label": "Типы существ"
-				}
+				"label": "Профили превращения"
 			},
 			"transform": {
 				"label": "Подробности превращения",
@@ -4895,8 +4864,6 @@
 	"MIGRATION.5eComplete": "Обновление системы D&D 5e до версии {version} завершено!",
 	"MIGRATION.5eVersionTooOldWarning": "Данные вашего мира D&D 5e загружены из очень старой версии Foundry и не могут быть гарантировано перенесены в новую версию. Вы можете попробовать, но могут возникнуть ошибки.",
 
-	"SETTINGS.5eAllowPolymorphingL": "Разрешить игрокам полиморф своих персонажей.",
-	"SETTINGS.5eAllowPolymorphingN": "Разрешить полиморф",
 	"SETTINGS.5eAutoCollapseCardL": "Автоматически сворачивать описание на карточках предметов в чате.",
 	"SETTINGS.5eAutoCollapseCardN": "Сворачивать карточки предметов",
 	"SETTINGS.5eAutoSpellTemplateL": "При сотворении заклинания будет автоматически создаваться измерительный шаблон (игрок должен иметь роль Доверенного)",
@@ -4908,10 +4875,6 @@
 	"SETTINGS.5eGridAlignedSquareTemplatesL": "При создании квадратных шаблонов в результате сотворения заклинания или использования предмета, они выравниваются по сетке и не могут быть повёрнуты.",
 	"SETTINGS.5eGridAlignedSquareTemplatesN": "Квадратные шаблоны по сетке",
 	"SETTINGS.DND5E": {
-		"ALLOWSUMMONING": {
-			"Name": "Разрешить призыв",
-			"Hint": "Разрешить игрокам со способностями призыва создавать актёров. У игроков также должно быть включены права на создание токенов."
-		},
 		"BLOODIED": {
 			"Name": "Статус \"Окровавленность\"",
 			"Hint": "Автоматическое отслеживание и видимость статуса \"Окровавленность\".",
@@ -4996,6 +4959,16 @@
 		"THEME": {
 			"Name": "Тема",
 			"Hint": "Тема интерфейса и бланков по умолчанию. Автоматический режим использует настройки браузера или операционной системы."
+		},
+		"PERMISSIONS": {
+			"AllowSummoning": {
+				"Hint": "Разрешить игрокам призывать актёров. У игроков также должно быть права на создание токенов.",
+				"Name": "Разрешить призыв"
+			},
+			"AllowTransformation": {
+				"Hint": "Разрешить игрокам превращать собственных актёров. У игроков должны быть права на создание актёров.",
+				"Name": "Разрешить превращение"
+			}
 		},
 		"RULESVERSION": {
 			"Name": "Вариант правил",

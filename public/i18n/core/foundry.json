@@ -663,9 +663,7 @@
 		"TargetSelect": "Выбор цели",
 		"TargetSelectP": "Нацелиться на токен, который вы видите.",
 		"BasicMeasure": "Измерение расстояния",
-		"BasicMeasureStart": "Начало измерения",
 		"BasicMeasureWaypoints": "Размещение точки маршрута",
-		"BasicMeasureFollow": "Следование пути",
 		"GroupMeasure": "Инструменты измерения",
 		"MeasureType": "Тип шаблона",
 		"MeasureConfigHint": "Настройте расположение и вид измерительного шаблона.",
@@ -766,7 +764,7 @@
 		"KeyboardControls": "Управление клавиатурой",
 		"GameMenu": "Открытие меню",
 		"GameClose": "Закрытие открытых окон",
-		"GamePause": "Пауза",
+		"GamePause": "Приостановка игры",
 		"CanvasCancel": "Отмена перемещения",
 		"CanvasMove": "Перемещение объекта",
 		"CanvasPan": "Перемещение по сцене",
@@ -936,6 +934,7 @@
 		"AmbientSound": "Фоновый звук",
 		"AmbientSounds": "Фоновые звуки",
 		"Card": "Карта",
+		"CardPlural": "Карты",
 		"Cards": "Стопка карт",
 		"CardsPlural": "Стопки карт",
 		"ChatMessage": "Сообщение чата",
@@ -1133,19 +1132,27 @@
 	"EFFECT.StatusMagicShield": "Магический щит",
 	"EFFECT.StatusHolyShield": "Священный щит",
 
-	"ERROR.BrowserVersion": "Foundry VTT используется современные функции JavaScript, которые не поддерживаются браузером {browser} версии ниже {minimum}. Вы используете {browser} версии {version}. Пожалуйста обновите браузер или используйте другой.",
-	"ERROR.ElectronVersion": "Вы используете устаревшую версию клиента Foundry VTT Electron. Для лучшей производительности и совместимости рекомендуется скачать новую версию Foundry VTT и выполнить переустановку приложения.",
-	"ERROR.LowResolution": "Foundry Virtual Tabletop требует разрешение экрана {reqWidth}px на {reqHeight}px или выше. Ваше разрешение составляет {width}px на {height}px и вы можете столкнуться с проблемами отображения.",
-	"ERROR.NoWebGL": "Ваш браузер не поддерживает рендеринг WebGL, требуемый для Foundry Virtual Tabletop. Убедитесь, что аппаратное ускорение и WebGL включены в вашем браузере.",
-	"ERROR.NoWebGL2": "Ваш браузер не поддерживает рендеринг WebGL V2, который необходим для правильной работы Foundry Virtual Tabletop. Могут возникнуть ошибки или аномальное графическое поведение.",
-	"ERROR.BackgroundTextureSize": "Вы используете фон сцены размером {width}px на {height}px. Сторона {max}px превышает максимально поддерживаемое разрешение вашего устройства.",
-	"ERROR.InvalidAdminKey": "Пароль администратора не действителен. Если вы забыли пароль, то требуется вручную удалить файл <strong>Config/admin.txt</strong> из папки пользовательских данных.</p>",
-	"ERROR.LoadPackages": "Запрос получения пакетов с сервера Foundry не удался. Убедитесь, что ваше приложение не заблокировано на исходящие соединения.",
-	"ERROR.NoTargetUsersForWhisper": "Не был найден получатель для шёпота. Проверьте корректность имени или используйте \"/w [Имя участника]\".",
-	"ERROR.CantWhisper": "У вас не достаточно прав на отправку сообщений шёпотом другим игрокам.",
-	"ERROR.RendererNotDetected": "Не удалось определить вашу видеокарту. Могут возникнуть неожиданные проблемы.",
-	"ERROR.NoHardwareAcceleration": "В вашем браузере выключено аппаратное ускорение. Это негативно влияет на производительность Foundry VTT и вызывает графические проблемы. Убедитесь, что аппаратное ускорение включено в настройках браузера.",
-	"ERROR.UpdateRequiresManualInstall": "Доступна новая версия Foundry VTT {version}, но она не может быть установлена внутри самого приложения Foundry VTT из-за ключевых зависимостей. Скачайте новую версию с сайта <a href=\"https://foundryvtt.com/me/licenses\" target=\"_blank\">foundryvtt.com</a>.",
+	"ERROR": {
+		"BrowserVersion": "Foundry VTT используется современные функции JavaScript, которые не поддерживаются браузером {browser} версии ниже {minimum}. Вы используете {browser} версии {version}. Пожалуйста обновите браузер или используйте другой.",
+		"ElectronVersion": "Вы используете устаревшую версию клиента Foundry VTT Electron. Для лучшей производительности и совместимости рекомендуется скачать новую версию Foundry VTT и выполнить переустановку приложения.",
+		"NoWebGL": "Ваш браузер не поддерживает рендеринг WebGL, требуемый для Foundry Virtual Tabletop. Убедитесь, что аппаратное ускорение и WebGL включены в вашем браузере.",
+		"NoWebGL2": "Ваш браузер не поддерживает рендеринг WebGL V2, который необходим для правильной работы Foundry Virtual Tabletop. Могут возникнуть ошибки или аномальное графическое поведение.",
+		"BackgroundTextureSize": "Вы используете фон сцены размером {width}px на {height}px. Сторона {max}px превышает максимально поддерживаемое разрешение вашего устройства.",
+		"InvalidAdminKey": "Пароль администратора не действителен. Если вы забыли пароль, то требуется вручную удалить файл <strong>Config/admin.txt</strong> из папки пользовательских данных.</p>",
+		"LoadPackages": "Запрос получения пакетов с сервера Foundry не удался. Убедитесь, что ваше приложение не заблокировано на исходящие соединения.",
+		"NoTargetUsersForWhisper": "Не был найден получатель для шёпота. Проверьте корректность имени или используйте \"/w [Имя участника]\".",
+		"CantWhisper": "У вас не достаточно прав на отправку сообщений шёпотом другим игрокам.",
+		"RendererNotDetected": "Не удалось определить вашу видеокарту. Могут возникнуть неожиданные проблемы.",
+		"NoHardwareAcceleration": "В вашем браузере выключено аппаратное ускорение. Это негативно влияет на производительность Foundry VTT и вызывает графические проблемы. Убедитесь, что аппаратное ускорение включено в настройках браузера.",
+		"RequiresFullReinstall": "Доступна новая версия Foundry VTT {version}, но она не может быть установлена внутри самого приложения Foundry VTT из-за ключевых зависимостей. Скачайте новую версию с сайта <a href=\"https://foundryvtt.com/me/licenses\" target=\"_blank\">foundryvtt.com</a>.",
+		"RequiresGenerationReinstall": "Доступна новая версия Foundry VTT {version}, но она не может быть установлена внутри самого приложения Foundry VTT. Скачайте и установите новую версию с сайта <a href=\"https://foundryvtt.com/me/licenses\" target=\"_blank\">foundryvtt.com</a>.",
+		"RequiresElectronReinstall": "Доступна новая версия Foundry VTT {version}, но она не может быть установлена внутри самого приложения Foundry VTT. Скачайте и установите новую версию с сайта <a href=\"https://foundryvtt.com/me/licenses\" target=\"_blank\">foundryvtt.com</a>.",
+		"RESOLUTION": {
+			"Window": "Foundry VTT требует разрешение экрана {reqWidth}px на {reqHeight}px или выше. Ваше разрешение составляет {curWidth}px на {curHeight}px и вы можете столкнуться с проблемами отображения.",
+			"Scale": "Foundry VTT требует размер рабочего окна {reqWidth}px на {reqHeight}px или выше. Размер вашего окна составляет {curWidth}px на {curHeight}px. Ваша операционной система или браузер используют масштабирование, которое уменьшает реальный размер вашего окна. Вам нужно увеличить размер окна или уменьшить коэффициент масштабирования, применяемый в браузере, иначе некоторые функции программы не будут работать корректно.",
+			"Screen": "Foundry VTT требует размер рабочего окна {reqWidth}px на {reqHeight}px или выше. Размер вашего окна составляет {curWidth}px на {curHeight}px. Вам нужно увеличить размер окна, иначе некоторые функции программы не будут работать корректно."
+		}
+	},
 
 	"WARNING.GridConfigNoBG": "Вы используете инструмент настройки сетки на сцене без фонового изображения. Это не рекомендуется и может привести к непредвиденным ошибкам.",
 	"WARNING.ForegroundDimensionsMismatch": "Размер изображения для слоя переднего плана  не совпадает с размером изображения на фоновом слое этой сцены. Передний план был подогнан по размеру, что может привести к нежелательным результатам.",
@@ -1315,8 +1322,8 @@
 		}
 	},
 
-	"GAME.Paused": "Игра на паузе",
-	"GAME.PausedWarning": "Вы не можете совершить это действие во время паузы.",
+	"GAME.Paused": "Игра приостановлена",
+	"GAME.PausedWarning": "Вы не можете совершить это действие во время приостановки игры.",
 	"GAME.ReturnSetup": "В главное меню",
 	"GAME.ReturnSetupActiveUser": "В активном мире остался один участник и при выходе он будет отключён. Продолжить?",
 	"GAME.ReturnSetupActiveUsers": "В активном мире осталось {number} участников и при выходе они будут отключены. Продолжить?",
@@ -1449,7 +1456,7 @@
 		"HowToEdit": "Используйте {icon} или двойной щелчок по сочетанию для изменения значения.",
 		"CycleView": "Переключение вида сцены",
 		"Dismiss": "Переключение меню / Скрытие всех окон",
-		"Pause": "Пауза",
+		"Pause": "Приостановка игры",
 		"Delete": "Удалить объекты",
 		"Highlight": "Подсветка объектов",
 		"SelectAll": "Выбор всех объектов",
@@ -1754,7 +1761,7 @@
 	"PLAYLIST.SoundLoop": "Повторение звука",
 	"PLAYLIST.SoundStreaming": "Передача большого файла",
 	"PLAYLIST.SoundPlay": "Воспроизвести звук",
-	"PLAYLIST.SoundPause": "Пауза",
+	"PLAYLIST.SoundPause": "Звук приостановки",
 	"PLAYLIST.SoundPreload": "Предзагрузка звука",
 	"PLAYLIST.SoundResume": "Продолжение",
 	"PLAYLIST.SoundStop": "Остановка",
@@ -2144,7 +2151,7 @@
 	"SETTINGS.TabModule": "Настройки модулей",
 	"SETTINGS.TabSystem": "Настройки системы",
 	"SETTINGS.TokenAutoRotateN": "Автоматический поворот токена",
-	"SETTINGS.TokenAutoRotateL": "Токены будут автоматически поворачиваются в направлении движения. Параметр 'Закрепление повторота' у отдельных токенов по-прежнему будет препятствовать их повороту.",
+	"SETTINGS.TokenAutoRotateL": "Токены будут автоматически поворачиваться в направлении движения. Настройка 'Закрепление поворота изображения' у отдельных токенов по-прежнему будет препятствовать их повороту.",
 	"SETTINGS.TokenDragPreviewN": "Зрение при перетаскивании",
 	"SETTINGS.TokenDragPreviewL": "Если включено, то зрение токена будет обновляться в реальном времени при перетаскивании. По умолчанию опция отключена, чтобы избежать нежелательного мухлежа.",
 	"SETTINGS.PrototypeTokenOverrides": {
@@ -3239,39 +3246,44 @@
 		}
 	},
 
-	"SUPPORT.Title": "Подробности поддержки",
-	"SUPPORT.Places": "Где могут помочь",
-	"SUPPORT.Discord": "Вы можете присоединиться к сообществу Foundry VTT, задать вопросы и помочь другим на <a href=\"https://discord.gg/foundryvtt\" target=\"_blank\" rel=\"nofollow\">официальном Discord сервере</a>. Вы также можете присоединиться к <a href=\"https://discord.gg/Z2CXFy35WF\" target=\"_blank\" rel=\"nofollow\">русскоязычному сообществу в Discord</a>.",
-	"SUPPORT.BugReporting": "Если вы хотите сообщить об ошибке, используйте способы, указанные в  Bug Report на странице <a href=\"https://foundryvtt.com/contact-us?category=bug\" target=\"_blank\" rel=\"nofollow\">Contact Us</a>.",
-	"SUPPORT.ReportPrelude": "Перед тем, как обратиться за помощью в Discord или Github, полезно получить информацию о настройках текущего мира. Ниже представлен отчёт, который нужно скопировать и присоединить к вопросу.",
-	"SUPPORT.CopyReport": "Скопировать отчёт в буфер",
-	"SUPPORT.ReportCopied": "Отчёт скопирован",
-	"SUPPORT.OS": "OS",
-	"SUPPORT.Client": "Client",
-	"SUPPORT.GPU": "GPU",
-	"SUPPORT.MaxTextureSize": "Макс. размер текстур",
-	"SUPPORT.LargestTexture": "Максимальная текстура",
-	"SUPPORT.NoDocumentIssues": "Проблемы с документом не обнаружены.",
-	"SUPPORT.NoClientIssues": "Проблемы с клиентом не обнаружены.",
-	"SUPPORT.NoModuleIssues": "Проблемы с модулем не обнаружены.",
-	"SUPPORT.NoViewedScene": "Нет открытой сцены",
-	"SUPPORT.ModuleSubTypesUnavailableName": "<strong>{count}</strong> {document} недоступны, т.к. модуль '{name}' не активен.",
-	"SUPPORT.ModuleSubTypesUnavailableNoName": "<strong>{count}</strong> {document} недоступны, т.к. модуль с ID '{name}' не активен.",
-	"SUPPORT.UnavailableDocuments": {
-		"one": "1 недоступный документ {document}",
-		"other": "{count} недоступных документов {document}"
-	},
-	"SUPPORT.WorldScripts": "Скрипты мира",
-	"SUPPORT.GenerateFullReport": "Создать отчёт",
-	"SUPPORT.GenerateFullReportHint": "Полный отчет содержит подробную информацию об установленных модулях и библиотеках и может занять некоторое время.",
-	"SUPPORT.WorldData": "Данные мира",
-	"SUPPORT.CompendiumData": "Данные библиотеки",
-	"SUPPORT.ActiveModules": "Активные модули",
-	"SUPPORT.TABS": {
-		"support": "Данные для поддержки",
-		"documents": "Проблемы с документом",
-		"client": "Проблемы с клиентом",
-		"modules": "Проблемы с модулем"
+	"SUPPORT": {
+		"Title": "Данные для поддержки",
+		"Places": "Где вам могут помочь",
+		"Discord": "Вы можете присоединиться к сообществу Foundry VTT, задать вопросы и помочь другим на <a href=\"https://discord.gg/foundryvtt\" target=\"_blank\" rel=\"nofollow\">официальном Discord сервере</a>. Вы также можете присоединиться к <a href=\"https://discord.gg/Z2CXFy35WF\" target=\"_blank\" rel=\"nofollow\">русскоязычному сообществу в Discord</a>.",
+		"BugReporting": "Если вы хотите сообщить об ошибке, используйте способы, указанные в  Bug Report на странице <a href=\"https://foundryvtt.com/contact-us?category=bug\" target=\"_blank\" rel=\"nofollow\">Contact Us</a>.",
+		"ReportPrelude": "Перед тем, как обратиться за помощью в Discord или Github, полезно получить информацию о настройках текущего мира. Ниже представлен отчёт, который нужно скопировать и присоединить к вопросу.",
+		"CopyReport": "Скопировать отчёт в буфер",
+		"ReportCopied": "Отчёт скопирован",
+		"OS": "ОС",
+		"Client": "Клиент",
+		"Screen": "Размер экрана",
+		"Viewport": "Размер окна",
+		"Dimensions": "{width} × {height}",
+		"GPU": "ГП",
+		"MaxTextureSize": "Макс. размер текстур",
+		"LargestTexture": "Наибольшая текстура",
+		"NoDocumentIssues": "Проблемы с документами не обнаружены.",
+		"NoClientIssues": "Проблемы с клиентом не обнаружены.",
+		"NoModuleIssues": "Проблемы с модулями не обнаружены.",
+		"NoViewedScene": "Нет открытой сцены",
+		"ModuleSubTypesUnavailableName": "<strong>{count}</strong> {document} недоступны, т.к. модуль '{name}' не активен.",
+		"ModuleSubTypesUnavailableNoName": "<strong>{count}</strong> {document} недоступны, т.к. модуль с ID '{name}' не активен.",
+		"UnavailableDocuments": {
+			"one": "1 недоступный документ {document}",
+			"other": "{count} недоступных документов {document}"
+		},
+		"WorldScripts": "Скрипты мира",
+		"GenerateFullReport": "Создать отчёт",
+		"GenerateFullReportHint": "Полный отчет содержит подробную информацию об установленных модулях и библиотеках и может занять некоторое время.",
+		"WorldData": "Данные мира",
+		"CompendiumData": "Данные библиотек",
+		"ActiveModules": "Активные модули",
+		"TABS": {
+			"support": "Данные для поддержки",
+			"documents": "Проблемы с документами",
+			"client": "Проблемы с клиентом",
+			"modules": "Проблемы с модулями"
+		}
 	},
 
 	"TABLE": {
@@ -3496,7 +3508,7 @@
 		},
 		"disposition.label": "Отношение токена",
 		"lockRotation": {
-			"label": "Закрепить поворот изображения",
+			"label": "Закрепление поворота изображения",
 			"hint": "Предотвращает визуальное изменение изображения при повороте токена."
 		},
 		"texture": {
@@ -3776,25 +3788,39 @@
 		}
 	},
 
-	"TYPES.Base": "Базовый",
-	"TYPES.Cards.deck": "Колода",
-	"TYPES.Cards.hand": "Рука",
-	"TYPES.Cards.pile": "Стопка",
-	"TYPES.JournalEntryPage.image": "Изображение",
-	"TYPES.JournalEntryPage.pdf": "PDF",
-	"TYPES.JournalEntryPage.text": "Текст",
-	"TYPES.JournalEntryPage.video": "Видео",
-	"TYPES.Macro.chat": "Сообщение",
-	"TYPES.Macro.script": "Скрипт",
-	"TYPES.RegionBehavior.adjustDarknessLevel": "Настройка уровня темноты",
-	"TYPES.RegionBehavior.displayScrollingText": "Отображение всплывающего текста",
-	"TYPES.RegionBehavior.executeMacro": "Запуск макроса",
-	"TYPES.RegionBehavior.executeScript": "Запуск скрипта",
-	"TYPES.RegionBehavior.modifyMovementCost": "Модификатор цены перемещения",
-	"TYPES.RegionBehavior.pauseGame": "Приостановка игры",
-	"TYPES.RegionBehavior.suppressWeather": "Блокировка погоды",
-	"TYPES.RegionBehavior.teleportToken": "Телепортация токена",
-	"TYPES.RegionBehavior.toggleBehavior": "Переключение поведения",
+	"TYPES": {
+		"Base": "Основной",
+		"Cards": {
+			"deck": "Колода",
+			"hand": "Рука",
+			"pile": "Стопка"
+		},
+		"JournalEntryPage": {
+			"image": "Изображение",
+			"pdf": "PDF",
+			"text": "Текст",
+			"video": "Видео"
+		},
+		"Macro": {
+			"chat": "Сообщение",
+			"script": "Скрипт"
+		},
+		"RegionBehavior": {
+			"adjustDarknessLevel": "Настройка уровня темноты",
+			"displayScrollingText": "Всплывающий текст",
+			"executeMacro": "Запуск макроса",
+			"executeScript": "Запуск скрипта",
+			"modifyMovementCost": "Изменение цены перемещения",
+			"pauseGame": "Приостановка игры",
+			"suppressWeather": "Блокировка погоды",
+			"teleportToken": "Телепортация токена",
+			"toggleBehavior": "Переключение поведения"
+		},
+		"TableResult": {
+			"document": "Документ",
+			"text": "Текст"
+		}
+	},
 
 	"DETECTION.LightPerception": "Восприятие света",
 	"DETECTION.BasicSight": "Ночное зрение",
