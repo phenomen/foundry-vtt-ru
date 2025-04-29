@@ -106,9 +106,11 @@ label.search::after {
 	font-weight: 600;
 }
 
-form .form-group > label {
+.form-group > label,
+.form-group > span.label {
 	font-family: var(--font-sans-condensed);
 	font-weight: 600;
+	line-height: normal;
 }
 
 .directory .directory-header .action-buttons {
