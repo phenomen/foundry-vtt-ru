@@ -24,7 +24,7 @@
 	"TIDY5E.ShowItemArt": "Просмотр изображения",
 	"TIDY5E.Tidy5eSettings": "Настройки бланка Tidy 5e",
 
-	"TIDY5E.AddSpecific": "Add {name}",
+	"TIDY5E.AddSpecific": "Добавить {name}",
 
 	"TIDY5E.ExhaustionLevelTooltip": "{level}-я степень утомления",
 
@@ -234,8 +234,8 @@
 		"options.GmAndOwners": "Мастер и владельцы предмета"
 	},
 	"TIDY5E.WorldSettings.IncludeFlagsInSpellScrollCreation": {
-		"name": "Include Flags in Spell Scroll Creation",
-		"hint": "Spells can sometimes contain special data from other modules which can be useful to carry over into a spell scroll. Enable to copy all flag-based data to the spell scroll upon creation."
+		"name": "Включать флаги в создании свитков",
+		"hint": "Иногда заклинания могут содержать специальные данные из других модулей, которые полезно перенести в свиток заклинаний. Включите, чтобы копировать все данные, основанных на флагах, в свиток заклинания при его создании."
 	},
 	"TIDY5E.WorldSettings.TabSheetLock": {
 		"tabLabel": "Блокировка бланка",
@@ -300,7 +300,7 @@
 	},
 	"TIDY5E.Settings.UseEffectCards": {
 		"name": "Отображение индикаторов активных эффектов",
-		"hint": "Enable to show info cards for active effects on all actors and items with active effects."
+		"hint": "Отображать карточки информации для активных эффектов на всех актёрах и предметах с эффектами."
 	},
 	"TIDY5E.Settings.ItemCardsAreFloating": {
 		"name": "Информация о предметах рядом с курсором.",
@@ -311,7 +311,7 @@
 		"hint": "Карточка с информацией при наведении на предмет будет отображена в указанной задержкой (0 = нет задержки, 300 по умолчанию)."
 	},
 	"TIDY5E.Settings.UseAccessibleKeyboardSupport": {
-		"name": "Use Accessible Keyboard Support",
+		"name": "Поддержка экранной клавиатуры",
 		"hint": "Enables users to tab through most of the buttons/commands on Tidy 5e Sheets and execute them with conventional button-based keyboard hotkeys. Note: when focused on a button in Foundry, keybindings from \"Configure Controls\" do not respond. If a module uses this Foundry feature for controls on the sheets, such as using items while holding a special key, then enabling this Tidy 5e Sheets option will interfere with those keybindings."
 	},
 	"TIDY5E.Settings.UseDefaultSheetAttributeTabbing": {
@@ -323,8 +323,8 @@
 		"hint": "The default 5e sheet allows keyboard tabbing from the current HP input to the current temp HP input. Enabling this replicates that behaviour. This setting is ignored if \"Use Accessible Keyboard Support\" is turned off."
 	},
 	"TIDY5E.Settings.InfoCardsInspectKey": {
-		"name": "Info Card Inspect Key",
-		"hint": "Press this keyboard character (for example, the \"t\" key) while viewing an info card to pop it out."
+		"name": "Клавиша просмотра карточки информации",
+		"hint": "Нажатие клавиши выведет карточку информации в отдельное окно."
 	},
 	"TIDY5E.Settings.DefaultTheme": {
 		"name": "Стандартная цветовая схема",
@@ -371,15 +371,15 @@
 	},
 	"TIDY5E.Settings.UseHpBar": {
 		"name": "Шкала пунктов здоровья",
-		"hint": "Shows a colored bar indicating remaining HP. Health numbers will still be visible."
+		"hint": "Отображать цветную шкалу оставшегося здоровья. Числовые значение останутся в любом случае."
 	},
 	"TIDY5E.Settings.UseHpOverlay": {
-		"name": "Use Health Overlay",
-		"hint": "Shows a colored HP overlay."
+		"name": "Наложение фона здоровья",
+		"hint": "Отображение цветного наложения на портрете"
 	},
 	"TIDY5E.Settings.ToggleEmptyCharacterSkills": {
-		"name": "Toggle Empty Character Skills",
-		"hint": "Adds a toggle button for showing/hiding empty skills."
+		"name": "Переключение отсутствующих навыков персонажа",
+		"hint": "Добавляет кнопку переключения отсутствующих навыков персонажа"
 	},
 	"TIDY5E.Settings.MoveTraitsToRightOfSkills": {
 		"name": "Move Traits to Right of Skills",
@@ -458,39 +458,39 @@
 		"hint": "Определяет, какие и в каком порядке вкладки будут отображаться по умолчанию. Применяется, если для актера не было выбрано ни одной вкладки.",
 		"AvailableHeader": "Доступные вкладки",
 		"SelectedHeader": "Выбранные вкладки",
-		"AtLeastOneTabRequiredErrorMessage": "Default tabs: at least one tab is required for each actor type."
+		"AtLeastOneTabRequiredErrorMessage": "Вкладки по умолчанию: для каждого типа актёра требуется как минимум одна вкладка."
 	},
 	"TIDY5E.Settings.HideDeathSavesFromPlayers": {
-		"name": "Hide Death Saves From Players",
-		"hint": "Makes death save totals visible only to the GM. The death save roll button remains visible."
+		"name": "Скрытие испытаний от смерти от игроков",
+		"hint": "Сделайте результат испытания от смерти видимым только для ведущего. Кнопка броска испытания от смерти остаётся видимой."
 	},
 	"TIDY5E.Settings.DefaultDeathSaveRoll": {
-		"name": "Default Death Save Roll",
-		"hint": "Determines the default roll type to use when rolling a death saving throw."
+		"name": "Стандартный бросок испытания от смерти",
+		"hint": "Определяет тип броска по умолчанию, который будет использоваться при броске испытания от смерти."
 	},
 	"TIDY5E.Settings.UseCharacterEncumbranceBar": {
-		"name": "Use Character Encumbrance Bar",
-		"hint": "Shows an encumbrance bar on character sheets."
+		"name": "Отображение шкалы нагрузки ПИ",
+		"hint": "Отображать шкалу нагрузки в бланках персонажей игроков."
 	},
 	"TIDY5E.Settings.UseNPCEncumbranceBar": {
-		"name": "Use NPC Encumbrance Bar",
-		"hint": "Shows an encumbrance bar on NPC sheets."
+		"name": "Отображение шкалы нагрузки ПМ",
+		"hint": "Отображать шкалу нагрузки в бланках персонажей мастера."
 	},
 	"TIDY5E.Settings.UseVehicleEncumbranceBar": {
-		"name": "Use Vehicle Encumbrance Bar",
-		"hint": "Shows an encumbrance bar on vehicle sheets."
+		"name": "Отображение шкалы нагрузки транспорта",
+		"hint": "Отображать шкалу нагрузки в бланках транспортных средств."
 	},
 	"TIDY5E.Settings.UseMulticlassSpellbookFilter": {
 		"name": "Использовать фильтр мультикласса заклинаний",
-		"hint": "Allows filtering spells by class in the spellbook tab. The spell must be associated with a class using the Class selector on the spell edit sheet."
+		"hint": "Позволяет фильтровать заклинания по классу на вкладке \"Заклинания\". Заклинание должно быть связано с классом с помощью идентификатора класса."
 	},
 	"TIDY5E.Settings.UseSpellClassIcons": {
-		"name": "Use Spell Class Icon for Spells",
-		"hint": "Shows spell class's image on spells instead of the spell's own image. The spell must be associated with a class using the Class selector on the spell edit sheet. When multiclassing, this feature distinguishes which spells belong to which class at a glance."
+		"name": "Иконки класса для заклинаний",
+		"hint": "Показывает иконку класса заклинания вместо собственной иконки заклинания. Заклинание должно быть связано с классом с помощью идентификатора класса. При мультиклассе эта особенность позволяет с первого взгляда определить, какие заклинания принадлежат какому классу."
 	},
 	"TIDY5E.Settings.AllowCantripsToBePrepared": {
-		"name": "Allow Cantrips to be Prepared",
-		"hint": "The \"cantrip formulas\" optional rule from Tasha's Cauldron of Everything allows wizards to prepare cantrips after a long rest in the same way that they do with leveled spells. Prepared cantrips do not count toward total prepared spells."
+		"name": "Разрешить подготовку фокусов",
+		"hint": "Опциональное правило \"Формулы фокусов\" из книги Tasha's Cauldron of Everything позволяет волшебникам подготавливать фокусы после долго отдыха так же, как заклинания круга."
 	},
 	"TIDY5E.Settings.LockMoneyChanges": {
 		"name": "Заблокировать изменение денег для всех, кроме мастера",
@@ -641,35 +641,35 @@
 	},
 	"TIDY5E.Settings.Migrations": {
 		"name": "Миграция",
-		"buttonLabel": "Migrate Tidy Data",
-		"dialogTitle": "Migrate Tidy Data",
-		"hint": "If you were a user of the original Tidy5e Sheet module, optionally use this Migrations menu to migrate your GM settings and Tidy sheet data.",
-		"chatNotification": "A new Tidy 5e Sheets migration is available. See Tidy 5e Sheets Game Settings to view available migrations.",
-		"migrationBeginningMessage": "Migrating data. Please do not refresh the page until done.",
-		"migrationErrorMessage": "An error occurred. More details are in the dev console.",
-		"migrationCompleteMessage": "Migration complete.",
-		"migrateDocumentFlagsButtonLabel": "Migrate Document Flags",
-		"migrateGmSettingsButtonLabel": "Migrate GM Settings",
-		"migrateConfirmTitle": "Confirm Migration",
-		"migrateConfirmMessage1": "Are you sure you wish to perform this migration?",
-		"migrateConfirmMessage2": "{boldStart}Note{boldEnd}: always remember to {boldStart}back up your data{boldEnd}.",
-		"migrateConfirmButtonYes": "Migrate",
-		"migrateConfirmButtonNo": "Cancel",
-		"OptionsHeader": "Migration Options",
-		"OptionOverwrite.Text": "Overwrite",
+		"buttonLabel": "Миграция данных Tidy",
+		"dialogTitle": "Миграция данных Tidy",
+		"hint": "Если вы пользовались оригинальным модулем Tidy5e Sheet, воспользуйтесь меню Миграции, чтобы перенести настройки и данные бланков Tidy.",
+		"chatNotification": "Доступна новая миграция Tidy 5e. Откройте настройки Tidy 5e, чтобы просмотреть доступные миграции.",
+		"migrationBeginningMessage": "Миграция данных. Пожалуйста, не обновляйте страницу до завершения.",
+		"migrationErrorMessage": "Произошла ошибка. Более подробную информацию можно найти в консоли.",
+		"migrationCompleteMessage": "Миграция завершена.",
+		"migrateDocumentFlagsButtonLabel": "Миграция флагов документов",
+		"migrateGmSettingsButtonLabel": "Миграция настроек ведущего",
+		"migrateConfirmTitle": "Подтверждение миграции",
+		"migrateConfirmMessage1": "Вы уверены, что хотите выполнить миграцию?",
+		"migrateConfirmMessage2": "{boldStart}Внимание{boldEnd}: всегда создавайте {boldStart}резервную копию данных{boldEnd}.",
+		"migrateConfirmButtonYes": "Миграция",
+		"migrateConfirmButtonNo": "Отмена",
+		"OptionsHeader": "Настройки миграции",
+		"OptionOverwrite.Text": "Перезапись",
 		"OptionOverwrite.Tooltip": "Enable to overwrite existing sheet data. If unchecked, only empty system fields will receive migrated Tidy data.",
 		"OptionDeleteFlags.Text": "Delete Affected Tidy Flags",
 		"OptionDeleteFlags.Tooltip": "When migrating from custom Tidy flag data to official system data, the flags remain in place by default. Check this option to remove those flags.",
-		"ButtonMigration.Text": "Migrate",
-		"MigrateCompendia.CompendiumLabel": "Compendium",
-		"MigrateCompendia.Title": "Migrate Compendia",
-		"MigrateCompendia.SelectionDialogTitle": "Select Compendia to Migrate",
-		"MigrateCompendia.TotalEntriesLabel": "Total Entries",
+		"ButtonMigration.Text": "Миграция",
+		"MigrateCompendia.CompendiumLabel": "Библиотека",
+		"MigrateCompendia.Title": "Миграция библиотеки",
+		"MigrateCompendia.SelectionDialogTitle": "Выберите библиотеки для миграции",
+		"MigrateCompendia.TotalEntriesLabel": "Всего записей",
 		"CcssToTidy": {
-			"sectionTitle": "CCSS to Tidy 5e",
-			"selectionDialogTitle": "Migration: CCSS to Tidy 5e",
+			"sectionTitle": "CCSS на Tidy 5e",
+			"selectionDialogTitle": "Миграция: CCSS на Tidy 5e",
 			"ccss": "CCSS",
-			"section": "Section",
+			"section": "Раздел",
 			"explanation1": "Tidy 5e now natively supports custom sections and provides additional features around custom sections. This migration will copy Custom Character Sheet Sections (CCSS) section names into Tidy's section setup.",
 			"overwrite": "Overwrite",
 			"overwriteTooltip": "Enable to overwrite existing Tidy section flag. If unchecked, only empty Tidy flags will receive migrated CCSS data.",
@@ -679,10 +679,10 @@
 		"UnlinkedExplanation": "This migration gives the option to migrate unlinked token documents in the current scene. You can run the migration on additional scenes as needed.",
 		"Selection": {
 			"TotalSelectedLabel": "Total Selected: {total}",
-			"ToMigrate": "To Migrate",
-			"SelectAllNoneTooltip": "Select all or none"
+			"ToMigrate": "К миграции",
+			"SelectAllNoneTooltip": "Выбрать всё или ничего"
 		},
-		"Parent": "Parent"
+		"Parent": "Родитель"
 	},
 	"TIDY5E.Settings.SheetPreferences": {
 		"name": "Установить Tidy 5e в качестве бланков по умолчанию",
