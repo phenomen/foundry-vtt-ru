@@ -1,5 +1,7 @@
 const scripts = import.meta.glob("./systems/*.js");
 
+import { init as dnd5eAlt } from "./systems/alt/dnd5e.js";
+
 Hooks.once("init", async () => {
 	const system = game.system.id.toLowerCase();
 	const route = foundry.utils.getRoute("/");
@@ -48,6 +50,10 @@ Hooks.once("init", async () => {
 
 	/* Случайные прилагательные для токенов */
 	CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
+
+	if (system === "dnd5e") {
+		dnd5eAlt();
+	}
 
 	/* Системные скрипты */
 	for (const path in scripts) {
