@@ -17,11 +17,12 @@ export async function init() {
 		}
 	}
 
-	registerHooks();
+	if (typeof libWrapper === "function" && game.settings.get("ru-ru", "altTranslation")) {
+		console.log("WRAPPER REGISTERED");
+		libWrapper.register("ru-ru", "game.i18n.setLanguage", loadAltTranslation, "MIXED");
+	}
 
-	Hooks.once("i18nInit", async () => {
-		await loadAltTranslation();
-	});
+	registerHooks();
 }
 
 /* Регистрация настроек */
@@ -182,9 +183,16 @@ function mergeArraysByLabel(array1, array2) {
 	});
 }
 
-/* Загрузка JSON с альтернативным переводом */
-async function loadAltTranslation() {
-	if (!game.settings.get("ru-ru", "altTranslation")) return;
+/**
+ * Set a language as the active translation source for the session
+ * @param {string} lang       A language string in CONFIG.supportedLanguages
+ * @returns {Promise<void>}   A Promise which resolves once the translations for the requested language are ready
+ */
+
+async function loadAltTranslation(wrapped, ...args) {
+	await wrapped(...args);
+
+	console.log("WRAPPER LOADED");
 
 	const route = foundry.utils.getRoute("/");
 
@@ -224,21 +232,16 @@ async function loadAltTranslation() {
 		...moduleFiles.map((file) => `${route}${modulePath}${file}`),
 	];
 
-	let altTranslations = {};
+	const altTranslations = {};
 
 	for (const file of files) {
 		try {
 			const altJson = await foundry.utils.fetchJsonWithTimeout(file);
-			altTranslations = foundry.utils.mergeObject(altTranslations, altJson);
+			foundry.utils.mergeObject(altTranslations, altJson);
 		} catch (error) {
 			console.warn(`Не удалось загрузить перевод: ${file}`, error);
 		}
 	}
 
-	//console.log(altTranslations);
-
-	game.i18n.translations = foundry.utils.mergeObject(game.i18n.translations, altTranslations);
-
-	//dnd5e.utils.performPreLocalization(CONFIG.DND5E);
-	//console.log("MERGED ALT TRANSLATIONS");
+	foundry.utils.mergeObject(game.i18n.translations, altTranslations);
 }
