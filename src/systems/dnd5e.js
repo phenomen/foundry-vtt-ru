@@ -224,18 +224,21 @@ async function loadAltTranslation() {
 		...moduleFiles.map((file) => `${route}${modulePath}${file}`),
 	];
 
-	const altTranslations = {};
+	let altTranslations = {};
 
 	for (const file of files) {
 		try {
 			const altJson = await foundry.utils.fetchJsonWithTimeout(file);
-			foundry.utils.mergeObject(altTranslations, altJson, { inplace: true });
+			altTranslations = foundry.utils.mergeObject(altTranslations, altJson);
 		} catch (error) {
 			console.warn(`Не удалось загрузить перевод: ${file}`, error);
 		}
 	}
 
+	//console.log(altTranslations);
+
 	game.i18n.translations = foundry.utils.mergeObject(game.i18n.translations, altTranslations);
 
-	console.log("MERGED ALT TRANSLATIONS");
+	dnd5e.utils.performPreLocalization(CONFIG.DND5E);
+	//console.log("MERGED ALT TRANSLATIONS");
 }
