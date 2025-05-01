@@ -239,6 +239,6 @@ async function loadAltTranslation() {
 
 	game.i18n.translations = foundry.utils.mergeObject(game.i18n.translations, altTranslations);
 
-	dnd5e.utils.performPreLocalization(CONFIG.DND5E);
+	//dnd5e.utils.performPreLocalization(CONFIG.DND5E);
 	//console.log("MERGED ALT TRANSLATIONS");
 }
