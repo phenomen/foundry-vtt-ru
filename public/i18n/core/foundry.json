@@ -2055,9 +2055,10 @@
 				"label": "Язык по умолчанию",
 				"hint": "Вы можете выбрать язык приложения по умолчанию, который будет активен для всех игроков."
 			},
+			"upnp.label": "Включить UPnP",
 			"port": {
 				"label": "Порт",
-				"hint": "Вы можете выбрать порт, который Foundry Virtual Tabletop будет использовать для соединений TCP и Universal Plug and Play (UPnP)."
+				"hint": "Выберите порт, который Foundry Virtual Tabletop будет использовать для соединений TCP и Universal Plug and Play (UPnP)."
 			},
 			"compressStatic": {
 				"label": "Сжатие статичных файлов",
@@ -2575,6 +2576,16 @@
 				"Latest": "Последняя версия этого пакета была проверена с версией приложения {verified}",
 				"World": "Система в этом мире была проверена с версией приложения {verified}"
 			}
+		},
+		"INSTALL_PACKAGE": {
+			"ManifestIncompatible": {
+				"Title": "Предупреждение совместимости",
+				"Warning": [
+					"{packageType} по указанному URL не совместим с текущей версией Foundry Virtual Tabletop.",
+					"Вы уверены, что хотите продолжить установку?"
+				]
+			},
+			"ManifestWrongPackageType": "Указанный URL не содержит данных для {packageType}."
 		},
 		"UPDATE_NOTES": {
 			"Title": "Информация обновления: {release}",
