@@ -26,7 +26,6 @@ async function loadAltTranslation(wrapped, ...args) {
 	await wrapped(...args);
 
 	const route = foundry.utils.getRoute("/");
-
 	const modulePath = "modules/ru-ru/i18n/modules/alt/";
 	const systemPath = "modules/ru-ru/i18n/systems/alt/";
 
@@ -63,16 +62,18 @@ async function loadAltTranslation(wrapped, ...args) {
 		...moduleFiles.map((file) => `${route}${modulePath}${file}`),
 	];
 
+	// Временный объект, чтобы не мержить в петле огромный объект основного перевода
 	const altTranslations = {};
 
 	for (const file of files) {
 		try {
 			const altJson = await foundry.utils.fetchJsonWithTimeout(file);
-			foundry.utils.mergeObject(altTranslations, altJson);
+			// Мерж развёрнутого объекта, как это делается в game.i18n.#loadTranslationFile
+			foundry.utils.mergeObject(altTranslations, foundry.utils.expandObject(altJson));
 		} catch (error) {
-			console.warn(`Не удалось загрузить перевод: ${file}`, error);
+			console.warn(`Не удалось загрузить файл: ${file}`, error);
 		}
 	}
-
+	// Мерж альтернативного перевода в основной
 	foundry.utils.mergeObject(game.i18n.translations, altTranslations);
 }
