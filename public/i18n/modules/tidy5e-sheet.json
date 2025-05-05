@@ -382,12 +382,12 @@
 		"hint": "Добавляет кнопку переключения отсутствующих навыков персонажа"
 	},
 	"TIDY5E.Settings.MoveTraitsToRightOfSkills": {
-		"name": "Move Traits to Right of Skills",
-		"hint": "Positions traits to the right of the skill list, above most other UIs on the right side (e.g. Favorites, NPC Abilities)."
+		"name": "Расположить черты справа от навыков",
+		"hint": "Черты будут отображаться справа от списка навыков, над остальными элементами бланка."
 	},
 	"TIDY5E.Settings.ShowEquippedAmmoOnly": {
-		"name": "Show Equipped Ammunition Only",
-		"hint": "Shows only currently equipped ammunition in the weapon ammo selector."
+		"name": "Отображать только надетые боеприпасы",
+		"hint": "Только надетые боеприпасы будут отображаться в меню выбора боеприпасов."
 	},
 	"TIDY5E.Settings.AlwaysShowSkills": {
 		"name": "Всегда отображать навыки",
@@ -418,20 +418,20 @@
 		"none": "Нет"
 	},
 	"TIDY5E.Settings.UseTotalSheetLock": {
-		"name": "Lock Down Sensitive Fields",
-		"hint": "Locks infrequently changed fields (name, proficiency toggles) and hides configuration buttons when the sheet is locked."
+		"name": "Блокировка некоторых полей",
+		"hint": "Блокирует редко изменяемые поля (имя, переключатели умений) и скрывает кнопки настройки, когда бланк заблокирован."
 	},
 	"TIDY5E.Settings.LimitEffectsManagementToGM": {
-		"name": "Limit Active Effects Management to GMs",
-		"hint": "Limits permission to edit or toggle active effects to GMs only."
+		"name": "Ограничить управление активными эффектами",
+		"hint": "Только ведущий сможет изменять и переключать активные эффекты."
 	},
 	"TIDY5E.Settings.UseInspiration": {
 		"name": "Использовать счётчик вдохновения",
-		"hint": "Shows an inspiration tracker on the character profile."
+		"hint": "Отображать шкалу вдохновения в бланках персонажей игроков."
 	},
 	"TIDY5E.Settings.UseVehicleMotion": {
-		"name": "Use Vehicle Motion Tracker",
-		"hint": "Shows a motion tracker on the vehicle profile."
+		"name": "Использовать счётчик движения транспорта",
+		"hint": "Отображать шкалу движения в бланках транспортных средств."
 	},
 	"TIDY5E.Settings.UseExhaustion": {
 		"name": "Использовать счётчик утомления",
@@ -530,8 +530,8 @@
 		"hint": "Includes spells with active effects attached (e.g. Barkskin) in the Actions tab/panel by default."
 	},
 	"TIDY5E.Settings.ActionListIncludeConsumables": {
-		"name": "Include Consumables as Actions",
-		"hint": "Includes consumables which have an activation cost (Action, Bonus Action, etc) in the Actions list by default."
+		"name": "Добавлять расходуемые предметы в действия",
+		"hint": "Автоматически включать расходные предметы, которые имеют стоимость активации (действие, бонусное действие и т.д.), в список действий."
 	},
 	"TIDY5E.Settings.ColorPickerEnabled": {
 		"name": "Включить выбор цвета",
@@ -744,7 +744,7 @@
 			"export": "Экспорт",
 			"import": "Импорт",
 			"importDropHint": "Hint: You can drag a \".tidy5e-theme\" file onto this form to import it.",
-			"importError": "Theme import failed. See console for more details.",
+			"importError": "Импорт темы не удался. Смотрите консоль для подробностей.",
 			"importSuccess": "Тема успешно импортирована",
 			"menuLabel": "Меню",
 			"explanation": "Выберите, какой цвет вы хотите использовать для каждой опции. Значение #00000000 равносильно отключению цвета."
@@ -846,5 +846,5 @@
 	"TIDY5E.ConfigureTab.Title": "Настройка {tabName}",
 	"TIDY5E.DisplayOptions.Title": "Настройки отображения",
 	"TIDY5E.DisplayOptions.ShowContainerRow.Label": "Отображение ряда контейнеров",
-	"TIDY5E.ItemSheet.PactLevelCastLabel": "Cast at {ordinal}"
+	"TIDY5E.ItemSheet.PactLevelCastLabel": "Сотворить на {ordinal}"
 }

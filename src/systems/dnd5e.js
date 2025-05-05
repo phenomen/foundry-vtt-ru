@@ -55,7 +55,7 @@ function registerHooks() {
 	Hooks.on("renderSettingsConfig", (app, html, data) => {
 		if (!game.user.isGM) return;
 
-		const lastMenuSetting = html.find(`input[name="ru-ru.translateCPR"]`).closest(".form-group");
+		const lastMenuSetting = html.querySelector('section[data-tab="ru-ru"] > div:last-child');
 
 		const updateAAButton = $(`
   <label>
@@ -73,7 +73,7 @@ function registerHooks() {
 			await updateAA();
 		});
 
-		lastMenuSetting.after(updateAAButton);
+		updateAAButton.insertAfter(lastMenuSetting);
 	});
 }
 

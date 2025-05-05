@@ -1,4 +1,4 @@
-export function init() {
+export async function init() {
 	game.settings.register("ru-ru", "altTranslation", {
 		name: "(D&D5E) Альтернативный перевод",
 		hint: "Использовать альтернативный перевод от Dungeons.ru. Иначе будет использоваться официальный перевод Hobby World и Adventure Guys (требуется модуль libWrapper)",
@@ -12,34 +12,20 @@ export function init() {
 		},
 	});
 
-	if (game.settings.get("ru-ru", "altTranslation")) {
-		if (typeof libWrapper === "function") {
-			libWrapper.register(
-				"ru-ru",
-				"Localization.prototype._getTranslations",
-				loadAltTranslation,
-				"WRAPPER",
-			);
-		} else {
-			new Dialog({
-				title: "Альтернативный перевод",
-				content:
-					"<p>Для использования альтернативного перевода требуется активировать модуль <b>libWrapper</b></p>",
-				buttons: {
-					done: {
-						label: "Хорошо",
-					},
-				},
-			}).render(true);
-		}
+	if (typeof libWrapper === "function" && game.settings.get("ru-ru", "altTranslation")) {
+		libWrapper.register("ru-ru", "game.i18n.setLanguage", loadAltTranslation, "MIXED");
 	}
 }
+/**
+ * Set a language as the active translation source for the session
+ * @param {string} lang       A language string in CONFIG.supportedLanguages
+ * @returns {Promise<void>}   A Promise which resolves once the translations for the requested language are ready
+ */
 
-/* Загрузка JSON с альтернативным переводом */
-async function loadAltTranslation(wrapped, lang) {
-	const translations = await wrapped(lang);
+async function loadAltTranslation(wrapped, ...args) {
+	await wrapped(...args);
+
 	const route = foundry.utils.getRoute("/");
-
 	const modulePath = "modules/ru-ru/i18n/modules/alt/";
 	const systemPath = "modules/ru-ru/i18n/systems/alt/";
 
@@ -49,7 +35,7 @@ async function loadAltTranslation(wrapped, lang) {
 		"activeauras.json",
 		"always-hp.json",
 		"arbron-hp-bar.json",
-		"autoanimations",
+		"autoanimations.json",
 		"bossbar.json",
 		"combat-utility-belt.json",
 		"combatbooster.json",
@@ -76,18 +62,18 @@ async function loadAltTranslation(wrapped, lang) {
 		...moduleFiles.map((file) => `${route}${modulePath}${file}`),
 	];
 
+	// Временный объект, чтобы не мержить в петле огромный объект основного перевода
 	const altTranslations = {};
 
 	for (const file of files) {
 		try {
-			const altJson = await this._loadTranslationFile(file);
-			foundry.utils.mergeObject(altTranslations, altJson, { inplace: true });
+			const altJson = await foundry.utils.fetchJsonWithTimeout(file);
+			// Мерж развёрнутого объекта, как это делается в game.i18n.#loadTranslationFile
+			foundry.utils.mergeObject(altTranslations, foundry.utils.expandObject(altJson));
 		} catch (error) {
-			console.warn(`Не удалось загрузить перевод: ${file}`, error);
+			console.warn(`Не удалось загрузить файл: ${file}`, error);
 		}
 	}
-
-	foundry.utils.mergeObject(translations, altTranslations, { inplace: true });
-
-	return translations;
+	// Мерж альтернативного перевода в основной
+	foundry.utils.mergeObject(game.i18n.translations, altTranslations);
 }
