@@ -112,6 +112,7 @@
 	"TIDY5E.HideNotProficientSkills": "Скрыть навыки без умения",
 
 	"TIDY5E.Abilities": "Характеристики",
+	"TIDY5E.Ability.EditScore.label": "Изменить значение",
 
 	"TIDY5E.Environment": "Окружение",
 	"TIDY5E.EnvironmentTooltip": "Окружение: {environment}",
@@ -325,17 +326,6 @@
 	"TIDY5E.Settings.InfoCardsInspectKey": {
 		"name": "Клавиша просмотра карточки информации",
 		"hint": "Нажатие клавиши выведет карточку информации в отдельное окно."
-	},
-	"TIDY5E.Settings.DefaultTheme": {
-		"name": "Стандартная цветовая схема",
-		"hint": "Тема оформления по умолчанию для участников, которые не выбрали её для себя."
-	},
-	"TIDY5E.Settings.SheetTheme": {
-		"name": "Цветовая тема",
-		"hint": "Тема оформления бланков.",
-		"default": "По умолчанию",
-		"light": "Светлая",
-		"dark": "Тёмная"
 	},
 	"TIDY5E.Settings.UseClassicControls": {
 		"name": "Классическое управление списком",
@@ -626,8 +616,8 @@
 	"TIDY5E.Settings.InlineActivitiesPosition": {
 		"name": "Расположение функций",
 		"hint": "При раскрытии информации отображаются функции предмета. Здесь можно определить, будут ли функции располагаться сверху, перед описанием предмета, или снизу, под описанием предмета, а также их вид.",
-		"top": "Top",
-		"bottom": "Bottom"
+		"top": "Сверху",
+		"bottom": "Снизу"
 	},
 	"TIDY5E.Settings.Reset": {
 		"name": "Сброс настроек на стандартные",
@@ -678,7 +668,7 @@
 		},
 		"UnlinkedExplanation": "This migration gives the option to migrate unlinked token documents in the current scene. You can run the migration on additional scenes as needed.",
 		"Selection": {
-			"TotalSelectedLabel": "Total Selected: {total}",
+			"TotalSelectedLabel": "Выбрано всего: {total}",
 			"ToMigrate": "К миграции",
 			"SelectAllNoneTooltip": "Выбрать всё или ничего"
 		},
@@ -714,21 +704,6 @@
 	"TIDY5E.Settings.Debug": {
 		"name": "Включение отладки",
 		"hint": "Отображение отладочной информации в консоли."
-	},
-	"TIDY5E.Settings.PermanentlyUnlockCharacterSheetForGM": {
-		"name": "Бланк персонажа: Всегда разблокирован для мастера",
-		"hint": "Treat the character sheet as though it were always unlocked, regardless of the lock setting. The GM can always edit the character, but they can also toggle lock/unlock for a player who also owns the character.",
-		"title": "This sheet is always unlocked for the GM, regardless of the lock setting."
-	},
-	"TIDY5E.Settings.PermanentlyUnlockNPCSheetForGM": {
-		"name": "Бланк персонажа мастера: Всегда разблокирован для мастера",
-		"hint": "Treat the NPC sheet as though it were always unlocked, regardless of the lock setting. The GM can always edit the NPC, but they can also toggle lock/unlock for a player who also owns the NPC.",
-		"title": "Этот бланк всегда открыт для мастера, вне зависимости от настроек."
-	},
-	"TIDY5E.Settings.PermanentlyUnlockVehicleSheetForGM": {
-		"name": "Бланк траспорта: Всегда разблокирован для мастера",
-		"hint": "Treat the vehicle sheet as though it were always unlocked, regardless of the lock setting. The GM can always edit the vehicle, but they can also toggle lock/unlock for a player who also owns the vehicle.",
-		"title": "This sheet is always unlocked for the GM, regardless of the lock setting."
 	},
 	"TIDY5E.ThemeSettings": {
 		"SheetMenu": {
@@ -846,5 +821,8 @@
 	"TIDY5E.ConfigureTab.Title": "Настройка {tabName}",
 	"TIDY5E.DisplayOptions.Title": "Настройки отображения",
 	"TIDY5E.DisplayOptions.ShowContainerRow.Label": "Отображение ряда контейнеров",
-	"TIDY5E.ItemSheet.PactLevelCastLabel": "Сотворить на {ordinal}"
+	"TIDY5E.ItemSheet.PactLevelCastLabel": "Сотворить на {ordinal}",
+	"TIDY5E.HitDice.Abbreviation": "КЗ",
+	"TIDY5E.HitDice.Current.Label": "Текущие КЗ",
+	"TIDY5E.HitDice.Max.Label": "Макс. КЗ"
 }

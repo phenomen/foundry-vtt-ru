@@ -86,87 +86,12 @@
 	font-style: italic;
 }
 
+:root :not(.no-theme) {
+	--primary-font: "CaslonPro";
+	--header-font: "CaslonAntique";
+}
+
 :root {
-	--window-header-title-font-size: var(--font-size-14);
-	--major-button-font-size: var(--font-size-13);
-	--tab-header-font-size: var(--font-size-12);
-	--actor-input-font-size: var(--font-size-12);
-	--actor-label-font-size: var(--font-size-12);
-}
-
-.wfrp4e.actor .randomize-buttons .randomize-label {
-	font-size: var(--font-size-11);
-}
-
-.wfrp4e.actor .randomize-buttons .randomize {
-	height: auto;
-	padding: 0px;
-}
-
-.app.window-app.sheet.wfrp4e.actor .system-effects label {
-	flex: 0 0 120px;
-}
-
-span.item-carries {
-	font-size: var(--font-size-11);
-}
-
-.app.window-app.sheet.wfrp4e.actor.tab.inventory.active.inventory-header.inventory-container.column-section {
-	min-width: 100px;
-	max-width: 100px;
-}
-
-.app.window-app.sheet.wfrp4e.actor.tab.skills.active.skill-section.inventory-list.item.skill-total {
-	height: 19px;
-}
-
-.app.window-app.sheet.wfrp4e.actor.character-sheet.general.items.row.item.label-details {
-	white-space: nowrap;
-}
-
-.label-text,
-.app.window-app.sheet.item-sheet .item-details .label-text,
-.app.window-app.sheet.item-sheet .tab .label-text,
-.app.window-app.sheet.item-sheet.prayer-sheet .label-text,
-.app.window-app.sheet.item-sheet.spell-sheet .label-text,
-.app.window-app.sheet.item-sheet .tab .label-text {
-	font-size: var(--font-size-11);
-}
-
-.sidebar-popout button,
-.sidebar-tab .directory-footer button,
-#macros .directory-footer button,
-#macros .directory-footer button,
-#sidebar button,
-#sidebar .header-actions button,
-.action-buttons button {
-	font-size: var(--font-size-14);
-}
-
-.app.window-app.sheet.item-sheet .sheet-tabs.tabs > a {
-	font-family: var(--font-fancy);
-	font-size: var(--font-size-14);
-	font-weight: 700;
-}
-
-.app.window-app.sheet.wfrp4e.actor.character-sheet
-	.tab.main.active
-	.characteristics-table
-	.row-type.table-data {
-	width: 74px;
-	min-width: 74px;
-	max-width: 74px;
-	padding: 1.5px;
-	align-content: center;
-	font-size: var(--font-size-11);
-}
-
-.app.window-app.sheet.wfrp4e.actor.character-sheet
-	.tab.main.active
-	.characteristics-table
-	.table-header.table-row
-	.table-header:first-of-type {
-	width: 74px;
-	min-width: 74px;
-	max-width: 74px;
+	--primary-font: "CaslonPro";
+	--header-font: "CaslonAntique";
 }
