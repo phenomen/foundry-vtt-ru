@@ -7,7 +7,7 @@ export async function init() {
 		scope: "world",
 		config: true,
 		restricted: true,
-		onChange: (value) => {
+		onChange: (_value) => {
 			window.location.reload();
 		},
 	});

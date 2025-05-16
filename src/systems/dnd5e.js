@@ -52,7 +52,7 @@ function registerSettings() {
 /* Регистрация дополнительных хуков */
 function registerHooks() {
 	/*  Настройка автоопределения анимаций AA  */
-	Hooks.on("renderSettingsConfig", (app, html, data) => {
+	Hooks.on("renderSettingsConfig", (_app, html, _data) => {
 		if (!game.user.isGM) return;
 
 		const lastMenuSetting = html.querySelector('section[data-tab="ru-ru"] > div:last-child');
