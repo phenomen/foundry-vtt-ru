@@ -38,7 +38,7 @@ Hooks.once("init", async () => {
 		scope: "world",
 		config: true,
 		restricted: true,
-		onChange: (value) => {
+		onChange: (_value) => {
 			window.location.reload();
 		},
 	});
