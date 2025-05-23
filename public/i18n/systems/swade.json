@@ -53,6 +53,7 @@
 		"Tweaks": "Настройки",
 		"AttrAgiShort": "Лвк",
 		"AttrSmaShort": "Смк",
+		"AttrSmaShortPowerRange": "Смк",
 		"AttrSprShort": "Хар",
 		"AttrStrShort": "Сил",
 		"AttrVigShort": "Вын",
@@ -408,6 +409,7 @@
 		"AncestralAbilities": "Особенности народа",
 		"ArchetypeAbilities": "Особенности архетипа",
 		"BuildCost": "Стоимость постройки",
+		"BuildLimit": "Лимит постройки",
 		"About": "Данные",
 		"EdgesHindrances": "Черты и изъяны",
 		"GrantsPowers": "Предоставляет силу",
@@ -546,6 +548,7 @@
 		},
 		"Range": {
 			"_name": "Дистанция",
+			"_nameShort": "Дистанция",
 			"Medium": "Средняя дистанция",
 			"Long": "Дальняя дистанция",
 			"Extreme": "Предельная дистанция"
@@ -630,6 +633,20 @@
 			},
 			"Number": "Номер повышения"
 		},
+		"Scales": {
+			"Description": "Силуэт: {scale} ({name})",
+			"LargerThan": "Больше, чем {scale}",
+			"SmallerThan": "Меньше, чем {scale}",
+			"Names": {
+				"Tiny": "Крошечный",
+				"VerySmall": "Очень мелкий",
+				"Small": "Мелкий",
+				"Normal": "Средний",
+				"Large": "Крупный",
+				"Huge": "Огромный",
+				"Gargantuan": "Гигантский"
+			}
+		},
 		"AddAdvance": "Добавить повышение",
 		"Appearance": "Внешность",
 		"CharacterGoals": "Цели",
@@ -648,6 +665,10 @@
 			"ModifierCost": {
 				"Label": "Стоимость модификатора",
 				"Hint": "Модификатор стоимости пунктов силы или постройки"
+			},
+			"ModifierLimit": {
+				"Label": "Ограничение модификатора",
+				"Hint": "Сколько раз можно выбрать этот модификатор?"
 			}
 		},
 		"Keybindings": {
@@ -915,6 +936,7 @@
 		"AddAction": "Добавление действия",
 		"DialogConfirmPrompt": "Вы уверены?",
 		"DeleteEmbeddedActionPrompt": "Вы уверены, что хотите удалить действие {action}?",
+		"DeleteEmbeddedCardPrompt": "Вы уверены, что хотите удалить карту {card}?",
 		"DeleteEmbeddedPowerPrompt": "Вы уверены, что хотите удалить силу {power}?",
 		"TrademarkWeapon": {
 			"Label": "Фирменное оружие",
@@ -951,6 +973,10 @@
 				"Short": "КШ",
 				"Long": "Конусный шаблон"
 			},
+			"SmallCone": {
+				"Short": "Малый конус",
+				"Long": "Малый шаблон конуса"
+			},
 			"Stream": {
 				"Short": "ПШ",
 				"Long": "Поточный шаблон"
@@ -978,7 +1004,7 @@
 			},
 			"Header": "Содержание"
 		},
-		"Category": "Категория предмета",
+		"Category": "Категория",
 		"ItemIsAmmo": "Боеприпас",
 		"Vision": {
 			"SeeHeat": "Тепловидение",

@@ -139,7 +139,6 @@ select {
 .dnd5e.sheet .sheet-navigation {
 	font-weight: 600;
 	font-size: var(--font-size-14);
-	text-transform: uppercase;
 }
 
 .dnd5e.sheet.actor ul.attributes li.attribute {
@@ -211,8 +210,6 @@ select {
 	font-family: var(--font-fancy);
 	font-size: var(--font-size-14);
 	font-weight: 700;
-	padding: 0px;
-	height: 19px;
 }
 
 .dnd5e.sheet.actor .sheet-header .summary {
@@ -233,18 +230,13 @@ select {
 	text-overflow: ellipsis;
 }
 
-.dnd5e.sheet.actor.character ul.skills-list,
-.dnd5e.sheet.actor.npc ul.skills-list {
-	flex: 0 0 200px;
-}
-
 .dnd5e label.checkbox {
 	font-family: var(--font-sans-condensed);
 	font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet .items-list .items-header .item-name {
-	font-family: "Nodesto", sans-serif;
+	font-family: var(--font-modesto);
 	font-weight: 500;
 	font-size: var(--font-size-18);
 }
@@ -259,7 +251,6 @@ select {
 .dnd5e.sheet.actor ul.attributes li.attribute .attribute-value {
 	font-family: var(--font-serif);
 	font-size: var(--font-size-15);
-	height: 27px;
 }
 
 .dnd5e.sheet.actor.character .sheet-header .attributes .hit-dice {
@@ -383,18 +374,6 @@ select {
 	font-weight: bold;
 }
 
-.dnd5e.sheet.actor .spellcasting-ability select {
-	flex: 0 0 100px;
-}
-
-.dnd5e.sheet.actor .sheet-header .attributes .attribute {
-	height: 73px;
-}
-
-.dnd5e.sheet.actor.npc .header-exp {
-	flex: 0 0 120px;
-}
-
 .dnd5e.sheet.actor.npc .header-exp .experience,
 .dnd5e.sheet.actor.npc .header-exp .proficiency {
 	font-size: var(--font-size-14);
@@ -416,16 +395,6 @@ select {
 
 #chat-log thead > tr > th {
 	font-family: var(--font-sans-condensed);
-}
-
-.dnd5e.sheet.item {
-	min-height: 400px;
-	max-height: 95%;
-	min-width: 580px;
-}
-
-.dnd5e.sheet.item .weapon-properties label.checkbox {
-	flex: auto !important;
 }
 
 .dnd5e.sheet.actor.ability-name #pause {
@@ -464,16 +433,10 @@ select {
 	font-size: var(--font-size-12);
 }
 
-.tidy5e.sheet.actor .portrait-temp input {
-	width: 42px;
-}
-
 .tidy5e.sheet.actor .tidy5e-navigation .item {
 	font-family: var(--font-fancy);
 	font-weight: 500;
 	font-size: var(--font-size-15);
-	line-height: 20px;
-	text-align: center;
 }
 
 .tidy5e.sheet.actor .list-layout .items-list .item h4 {
@@ -511,7 +474,6 @@ select {
 	font-family: var(--font-serif);
 	font-size: var(--font-size-28);
 	font-weight: 700;
-	top: 40%;
 }
 
 .tidy5e.sheet.actor .resources .resource .resource-name input {
@@ -569,15 +531,8 @@ select {
 
 /* MIDIQOL */
 
-.midi-results > div:first-child {
-	gap: 2px;
-}
-
 .midi-qol-attack-roll > div:first-child,
 .midi-qol-damage-roll > div:first-child {
 	font-size: var(--font-size-14);
 	font-family: var(--font-sans-condensed);
-	font-weight: 500;
-	line-height: 14px;
-	height: 30px;
 }
