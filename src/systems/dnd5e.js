@@ -1,4 +1,4 @@
-import {setupBabele} from "../shared.js";
+import { setupBabele } from "../shared.js";
 
 export async function init() {
 	registerSettings();
@@ -19,7 +19,6 @@ export async function init() {
 					setupBabele("dnd5e/gambit");
 				}
 			}
-
 		}
 	}
 
@@ -111,14 +110,14 @@ function registerConverters() {
 
 				return foundry.utils.mergeObject(data, {
 					name: translation.name,
-					image: {caption: translation.caption ?? data.image.caption},
+					image: { caption: translation.caption ?? data.image.caption },
 					src: translation.src ?? data.src,
-					text: {content: translation.text ?? data.text.content},
+					text: { content: translation.text ?? data.text.content },
 					video: {
 						width: translation.width ?? data.video.width,
 						height: translation.height ?? data.video.height,
 					},
-					system: {tooltip: translation.tooltip ?? data.system.tooltip},
+					system: { tooltip: translation.tooltip ?? data.system.tooltip },
 					translated: true,
 				});
 			});
@@ -172,6 +171,6 @@ function mergeArraysByLabel(array1, array2) {
 
 	return array1.map((item) => {
 		const matchingItem = labelMap.get(item.metaData.label);
-		return matchingItem ? {...item, ...matchingItem} : item;
+		return matchingItem ? { ...item, ...matchingItem } : item;
 	});
 }
