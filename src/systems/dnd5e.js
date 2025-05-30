@@ -1,4 +1,4 @@
-import { setupBabele } from "../shared.js";
+import {setupBabele} from "../shared.js";
 
 export async function init() {
 	registerSettings();
@@ -11,9 +11,15 @@ export async function init() {
 				? setupBabele("dnd5e/ds")
 				: setupBabele("dnd5e/ag");
 
-			if (game.modules.get("chris-premades") && game.settings.get("ru-ru", "translateCPR")) {
-				setupBabele("dnd5e/chris");
+			if (game.settings.get("ru-ru", "translateCPR")) {
+				if (game.modules.get("chris-premades")) {
+					setupBabele("dnd5e/chris");
+				}
+				if (game.modules.get("gambits-premades")) {
+					setupBabele("dnd5e/gambit");
+				}
 			}
+
 		}
 	}
 
@@ -36,8 +42,8 @@ function registerSettings() {
 	});
 
 	game.settings.register("ru-ru", "translateCPR", {
-		name: "(D&D5E) Перевод библиотек Cauldron of Plentiful Resources",
-		hint: "Перевод библиотек модуля Cauldron of Plentiful Resources. Отключите, если у вас возникли проблемы с работой модуля.",
+		name: "(D&D5E) Перевод библиотек Cauldron of Plentiful Resources и Gambit's Premades",
+		hint: "Перевод библиотек модулей Cauldron of Plentiful Resources и Gambit's Premades. Отключите, если у вас возникли проблемы с работой модулями.",
 		type: Boolean,
 		default: true,
 		scope: "world",
@@ -105,14 +111,14 @@ function registerConverters() {
 
 				return foundry.utils.mergeObject(data, {
 					name: translation.name,
-					image: { caption: translation.caption ?? data.image.caption },
+					image: {caption: translation.caption ?? data.image.caption},
 					src: translation.src ?? data.src,
-					text: { content: translation.text ?? data.text.content },
+					text: {content: translation.text ?? data.text.content},
 					video: {
 						width: translation.width ?? data.video.width,
 						height: translation.height ?? data.video.height,
 					},
-					system: { tooltip: translation.tooltip ?? data.system.tooltip },
+					system: {tooltip: translation.tooltip ?? data.system.tooltip},
 					translated: true,
 				});
 			});
@@ -166,6 +172,6 @@ function mergeArraysByLabel(array1, array2) {
 
 	return array1.map((item) => {
 		const matchingItem = labelMap.get(item.metaData.label);
-		return matchingItem ? { ...item, ...matchingItem } : item;
+		return matchingItem ? {...item, ...matchingItem} : item;
 	});
 }
