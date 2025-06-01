@@ -1,6 +1,6 @@
 {
 	"name": "@phenomen/foundry-vtt-ru",
-	"version": "13.337",
+	"version": "13.334",
 	"private": "true",
 	"scripts": {
 		"build": "vite build",
@@ -9,7 +9,10 @@
 	"type": "module",
 	"devDependencies": {
 		"@biomejs/biome": "beta",
-		"vite": "^6.3.5"
+		"vite": "npm:rolldown-vite@latest"
+	},
+	"overrides": {
+		"vite": "npm:rolldown-vite@latest"
 	},
 	"trustedDependencies": [
 		"@biomejs/biome",
