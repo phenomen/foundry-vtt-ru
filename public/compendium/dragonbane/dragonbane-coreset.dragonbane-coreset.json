@@ -69,7 +69,7 @@
 				"Create Adventure and NPC": "Создать приключение и персонажей",
 				"The Castle of the Robber Knight": "Замок Рыцаря-разбойника",
 				"Attribute Rolls": "Броски характеристик",
-				"Injuries": "Увечья"
+				"Injuries": "Травмы"
 			},
 			"scenes": {
 				"Dragonbane": {
@@ -100,20 +100,20 @@
 					"command": "const table = game.tables.getName(\"Сокровища\");\nif (!table)\n{ \n  ui.notifications.error(\"Не удалось найти таблицу сокровищ\");\n  return;\n}\n\nawait table.resetResults();\nChatMessage.create({content: \"Сброс таблицы сокровищ\"});"
 				},
 				"Draw Treasure Card": {
-					"name": "Вытянуть карту сокровищ",
+					"name": "Взять карту сокровищ",
 					"command": "/treasure 1"
 				},
 				"Draw Treasure Card (no reset)": {
-					"name": "Вытянуть карту сокровищ (без сброса)",
+					"name": "Взять карту сокровищ (без сброса)",
 					"command": "const table = game.tables.getName(\"Сокровища\");\nif (!table)\n{ \n  ui.notifications.error(\"Не удалось найти таблицу сокровищ\");\n  return;\n}\nawait table.draw();"
 				},
 				"Create NPC": {
-					"name": "Создать персонажа ведущего",
-					"command": "const tables = game.tables.filter(e => e.name.startsWith(\"Create NPC - \")).sort((a, b) => {\n  if (a.name < b.name) return -1;\n  if (a.name > b.name) return 1;\n  return 0;\n});\n\nlet msg = \"\";\nlet paragraph = true;\nfor (const table of tables) {\n  msg += \"<p>\" + table.description + \": \";\n\n  const draw = await table.draw({displayChat: false});\n  msg += \" <b>\" + draw.results[0].text + \"</b></p>\";\n\n}\nChatMessage.create({content: msg});"
+					"name": "Создать персонажа Мастера",
+					"command": "const tables = game.tables.filter(e => e.name.startsWith(\"Создание ПМ - \")).sort((a, b) => {\n  if (a.name < b.name) return -1;\n  if (a.name > b.name) return 1;\n  return 0;\n});\n\nlet msg = \"\";\nlet paragraph = true;\nfor (const table of tables) {\n  msg += \"<p>\" + table.description + \": \";\n\n  const draw = await table.draw({displayChat: false});\n  msg += \" <b>\" + draw.results[0].text + \"</b></p>\";\n\n}\nChatMessage.create({content: msg});"
 				},
 				"The Quest": {
-					"name": "Миссия",
-					"command": "const tables = game.tables.filter(e => e.name.startsWith(\"Миссия - \")).sort((a, b) => {\n  if (a.name < b.name) return -1;\n  if (a.name > b.name) return 1;\n  return 0;\n});\n\nlet msg = \"\";\nlet paragraph = true;\nfor (const table of tables) {\n  if (paragraph) {\n    msg += \"<p>\";\n    paragraph = false;\n  }\n  msg += table.description;\n\n  const draw = await table.draw({displayChat: false});\n  const text = draw.results[0].text;\n  msg += \" <b>\" + draw.results[0].text + \"</b> \";\n\n  if (text.charAt(text.length-1) == \".\") {\n    msg += \"</p>\";\n    paragraph = true;\n  }\n}\nChatMessage.create({content: msg});"
+					"name": "Задание",
+					"command": "const tables = game.tables.filter(e => e.name.startsWith(\"Задание - \")).sort((a, b) => {\n  if (a.name < b.name) return -1;\n  if (a.name > b.name) return 1;\n  return 0;\n});\n\nlet msg = \"\";\nlet paragraph = true;\nfor (const table of tables) {\n  if (paragraph) {\n    msg += \"<p>\";\n    paragraph = false;\n  }\n  msg += table.description;\n\n  const draw = await table.draw({displayChat: false});\n  const text = draw.results[0].text;\n  msg += \" <b>\" + draw.results[0].text + \"</b> \";\n\n  if (text.charAt(text.length-1) == \".\") {\n    msg += \"</p>\";\n    paragraph = true;\n  }\n}\nChatMessage.create({content: msg});"
 				},
 				"The Journey": {
 					"name": "Путешествие",
@@ -322,24 +322,24 @@
 					"tokenName": "Русалка (мощность 3)"
 				},
 				"Archmaster Aodhan": {
-					"name": "Archmaster Aodhan",
-					"tokenName": "Archmaster Aodhan"
+					"name": "Архимагистр Аодан",
+					"tokenName": "Архимагистр Аодан"
 				},
 				"Bastonn Bloodjaw": {
-					"name": "Bastonn Bloodjaw",
-					"tokenName": "Bastonn Bloodjaw"
+					"name": "Бастонн Кровопасть",
+					"tokenName": "Бастонн Кровопасть"
 				},
 				"Krisanna the Bold": {
-					"name": "Krisanna the Bold",
-					"tokenName": "Krisanna the Bold"
+					"name": "Крисанна Храбрая",
+					"tokenName": "Крисанна Храбрая"
 				},
 				"Makander of Halfbay": {
-					"name": "Makander of Halfbay",
-					"tokenName": "Makander of Halfbay"
+					"name": "Макандр из Полбухты",
+					"tokenName": "Макандр из Полбухты"
 				},
 				"Orla Moonsilver": {
-					"name": "Orla Moonsilver",
-					"tokenName": "Orla Moonsilver"
+					"name": "Орла Луносребрая",
+					"tokenName": "Орла Луносребрая"
 				},
 				"Adventurer": {
 					"name": "Искатель приключений",
@@ -416,106 +416,106 @@
 					"name": "Берсерк"
 				},
 				"Catlike": {
-					"name": "Catlike"
+					"name": "Четыре лапы"
 				},
 				"Companion": {
-					"name": "Companion"
+					"name": "Верный зверь"
 				},
 				"Contortionist": {
-					"name": "Contortionist"
+					"name": "Гибкость"
 				},
 				"Defensive": {
-					"name": "Defensive"
+					"name": "Защитная стойка"
 				},
 				"Deflect Arrow": {
-					"name": "Deflect Arrow"
+					"name": "Отражение стрел"
 				},
 				"Disguise": {
-					"name": "Disguise"
+					"name": "Маскировка"
 				},
 				"Double Slash": {
-					"name": "Double Slash"
+					"name": "Двойной разрез"
 				},
 				"Dragonslayer": {
-					"name": "Dragonslayer"
+					"name": "Гроза чудовищ"
 				},
 				"Dual Wield": {
-					"name": "Dual Wield"
+					"name": "Обоерукость"
 				},
 				"Eagle Eye": {
-					"name": "Eagle Eye"
+					"name": "Острое зрение"
 				},
 				"Fast Footwork": {
-					"name": "Fast Footwork"
+					"name": "Маневрирование"
 				},
 				"Fast Healer": {
-					"name": "Fast Healer"
+					"name": "Полевой целитель"
 				},
 				"Fearless": {
-					"name": "Fearless"
+					"name": "Бесстрашие"
 				},
 				"Focused": {
-					"name": "Focused"
+					"name": "Концентрация"
 				},
 				"Guardian": {
-					"name": "Guardian"
+					"name": "Страж"
 				},
 				"Insight": {
-					"name": "Insight"
+					"name": "Проницательность"
 				},
 				"Intuition": {
-					"name": "Intuition"
+					"name": "Интуиция"
 				},
 				"Iron Fist": {
-					"name": "Iron Fist"
+					"name": "Железный кулак"
 				},
 				"Iron Grip": {
-					"name": "Iron Grip"
+					"name": "Мёртвая хватка "
 				},
 				"Lightning Fast": {
-					"name": "Lightning Fast"
+					"name": "Молниеносность"
 				},
 				"Lone Wolf": {
-					"name": "Lone Wolf"
+					"name": "Волк-одиночка"
 				},
 				"Magic Talent": {
-					"name": "Magic Talent"
+					"name": "Талант к магии"
 				},
 				"Massive Blow": {
-					"name": "Massive Blow"
+					"name": "Массированный удар"
 				},
 				"Master Blacksmith": {
-					"name": "Master Blacksmith"
+					"name": "Искусный кузнец"
 				},
 				"Master Carpenter": {
-					"name": "Master Carpenter"
+					"name": "Искусный плотник"
 				},
 				"Master Chef": {
-					"name": "Master Chef"
+					"name": "Искусный повар"
 				},
 				"Master Spellcaster": {
-					"name": "Master Spellcaster"
+					"name": "Искусный заклинатель"
 				},
 				"Master Tanner": {
-					"name": "Master Tanner"
+					"name": "Искусный кожевник"
 				},
 				"Monster Hunter": {
-					"name": "Monster Hunter"
+					"name": "Искусный охотник"
 				},
 				"Musician": {
-					"name": "Musician"
+					"name": "Музыкант"
 				},
 				"Pathfinder": {
-					"name": "Pathfinder"
+					"name": "Первопроходец"
 				},
 				"Quartermaster": {
-					"name": "Quartermaster"
+					"name": "Квартирмейстер"
 				},
 				"Robust": {
-					"name": "Robust"
+					"name": "Крепкость"
 				},
 				"Sea Legs": {
-					"name": "Sea Legs"
+					"name": "Морские ноги"
 				},
 				"Shield Block": {
 					"name": "Заграждение щитом"
@@ -533,7 +533,7 @@
 					"name": "Ветеран"
 				},
 				"Weasel": {
-					"name": "Weasel"
+					"name": "Слизняк"
 				},
 				"Adaptive": {
 					"name": "Приспособление"
@@ -584,214 +584,214 @@
 					"name": "Овца"
 				},
 				"Chainmail": {
-					"name": "Chainmail"
+					"name": "Кольчуга"
 				},
 				"Great Helm": {
-					"name": "Great Helm"
+					"name": "Большой шлем"
 				},
 				"Leather": {
-					"name": "Leather"
+					"name": "Кожанка"
 				},
 				"Open Helmet": {
-					"name": "Open Helmet"
+					"name": "Открытый шлем"
 				},
 				"Plate Armor": {
-					"name": "Plate Armor"
+					"name": "Латы"
 				},
 				"Studded Leather": {
-					"name": "Studded Leather"
+					"name": "Клёпаная кожанка"
 				},
 				"Boots": {
-					"name": "Boots"
+					"name": "Сапоги"
 				},
 				"Cloak": {
-					"name": "Cloak"
+					"name": "Плащ"
 				},
 				"Fine Garments": {
-					"name": "Fine Garments"
+					"name": "Изящное одеяние"
 				},
 				"Fur": {
-					"name": "Fur"
+					"name": "Меха"
 				},
 				"Rags": {
-					"name": "Rags"
+					"name": "Обноски"
 				},
 				"Simple Clothes": {
-					"name": "Simple Clothes"
+					"name": "Простая одежда"
 				},
 				"Backpack": {
-					"name": "Backpack"
+					"name": "Рюкзак"
 				},
 				"Barrel": {
-					"name": "Barrel"
+					"name": "Бочка"
 				},
 				"Basket": {
-					"name": "Basket"
+					"name": "Корзина"
 				},
 				"Bottle": {
-					"name": "Bottle"
+					"name": "Бутыль"
 				},
 				"Bucket": {
-					"name": "Bucket"
+					"name": "Ведро"
 				},
 				"Chest": {
-					"name": "Chest"
+					"name": "Сундук"
 				},
 				"Clay Jug": {
-					"name": "Clay Jug"
+					"name": "Кувшин"
 				},
 				"Saddle Bag": {
-					"name": "Saddle Bag"
+					"name": "Седельная сумка"
 				},
 				"Bear Trap": {
-					"name": "Bear Trap"
+					"name": "Медвежий капкан"
 				},
 				"Fishing Net": {
-					"name": "Fishing Net"
+					"name": "Рыболовная сеть"
 				},
 				"Fishing Rod": {
-					"name": "Fishing Rod"
+					"name": "Удочка"
 				},
 				"Snare": {
-					"name": "Snare"
+					"name": "Силок"
 				},
 				"Flint & Tinder": {
-					"name": "Flint & Tinder"
+					"name": "Огниво"
 				},
 				"Lamp Oil": {
-					"name": "Lamp Oil"
+					"name": "Ламповое масло"
 				},
 				"Lantern": {
-					"name": "Lantern"
+					"name": "Фонарь"
 				},
 				"Oil Lamp": {
-					"name": "Oil Lamp"
+					"name": "Масляная лампа"
 				},
 				"Tallow Candle": {
-					"name": "Tallow Candle"
+					"name": "Свеча"
 				},
 				"Torch": {
-					"name": "Torch"
+					"name": "Факел"
 				},
 				"Canoe": {
-					"name": "Canoe"
+					"name": "Каноэ"
 				},
 				"Cart": {
-					"name": "Cart"
+					"name": "Телега"
 				},
 				"Rowing Boat": {
-					"name": "Rowing Boat"
+					"name": "Гребная лодка"
 				},
 				"Sailing Boat": {
-					"name": "Sailing Boat"
+					"name": "Парусная лодка"
 				},
 				"Wagon": {
-					"name": "Wagon"
+					"name": "Вагон"
 				},
 				"Bandages (10)": {
-					"name": "Bandages (10)"
+					"name": "Бинты (10)"
 				},
 				"Healing Potion (dose)": {
-					"name": "Healing Potion (dose)"
+					"name": "Зелье исцеления (доза)"
 				},
 				"Herbal Concoction (dose)": {
-					"name": "Herbal Concoction (dose)"
+					"name": "Травяной отвар (доза)"
 				},
 				"Lethal Poison (dose)": {
-					"name": "Lethal Poison (dose)"
+					"name": "Смертельный яд (доза)"
 				},
 				"Paralyzing Poison (dose)": {
-					"name": "Paralyzing Poison (dose)"
+					"name": "Парализующий яд (доза)"
 				},
 				"Sleeping Poison (dose)": {
-					"name": "Sleeping Poison (dose)"
+					"name": "Усыпляющий яд (доза)"
 				},
 				"Surgical Instruments": {
-					"name": "Surgical Instruments"
+					"name": "Хирургические инструменты"
 				},
 				"A beautifully carved pipe": {
-					"name": "A beautifully carved pipe"
+					"name": "Резная трубка"
 				},
 				"A bone whistle": {
-					"name": "A bone whistle"
+					"name": "Костяной свисток"
 				},
 				"A bracelet": {
-					"name": "A bracelet"
+					"name": "Браслет"
 				},
 				"A copper coin": {
-					"name": "A copper coin"
+					"name": "Медная монета"
 				},
 				"A couple of bone dice": {
-					"name": "A couple of bone dice"
+					"name": "Пара игральных костей"
 				},
 				"A fang": {
-					"name": "A fang"
+					"name": "Клык"
 				},
 				"A griffin feather": {
-					"name": "A griffin feather"
+					"name": "Перо гриффона"
 				},
 				"A map": {
-					"name": "A map"
+					"name": "Карта"
 				},
 				"A horn": {
-					"name": "A horn"
+					"name": "Горн"
 				},
 				"A letter": {
-					"name": "A letter"
+					"name": "Письмо"
 				},
 				"A locket": {
-					"name": "A locket"
+					"name": "Медальон"
 				},
 				"A ragged old journal": {
-					"name": "A ragged old journal"
+					"name": "Старый журнал"
 				},
 				"A ring with an inscription": {
-					"name": "A ring with an inscription"
+					"name": "Кольцо с гравировкой"
 				},
 				"A simple silver medallion": {
-					"name": "A simple silver medallion"
+					"name": "Простой серебряный медальон"
 				},
 				"A strangely shaped stone": {
-					"name": "A strangely shaped stone"
+					"name": "Камень необычной формы"
 				},
 				"A wooden figurine": {
-					"name": "A wooden figurine"
+					"name": "Деревянная фигурка"
 				},
 				"An old pewter tankard": {
-					"name": "An old pewter tankard"
+					"name": "Старая оловянная кружка"
 				},
 				"An ornate key": {
-					"name": "An ornate key"
+					"name": "Изощрённый ключ"
 				},
 				"A ragged old hat": {
-					"name": "A ragged old hat"
+					"name": "Старая шляпа"
 				},
 				"Your trusty old shoes": {
-					"name": "Your trusty old shoes"
+					"name": "Верные ботинки"
 				},
 				"Bagpipe": {
-					"name": "Bagpipe"
+					"name": "Волынка"
 				},
 				"Drum": {
-					"name": "Drum"
+					"name": "Барабан"
 				},
 				"Flute": {
-					"name": "Flute"
+					"name": "Флейта"
 				},
 				"Harp": {
-					"name": "Harp"
+					"name": "Арфа"
 				},
 				"Horn": {
-					"name": "Horn"
+					"name": "Горн"
 				},
 				"Lyre": {
-					"name": "Lyre"
+					"name": "Лира"
 				},
 				"Bath at an Inn": {
-					"name": "Bath at an Inn"
+					"name": "Ванна в таверне"
 				},
 				"Bodyguard": {
-					"name": "Bodyguard"
+					"name": "Телохранитель"
 				},
 				"Bowl of Stew": {
 					"name": "Bowl of Stew"
@@ -2240,23 +2240,23 @@
 					}
 				},
 				"Severe Injury": {
-					"name": "Увечье",
+					"name": "Травма",
 					"description": "",
 					"results": {
-						"1-2": "Broken nose",
-						"3-4": "Scarred face",
-						"5-6": "Teeth knocked out",
-						"7-8": "Broken ribs",
-						"9-10": "Concussion",
-						"11-12": "Deep wounds",
-						"13-13": "Broken leg",
-						"14-14": "Broken arm",
-						"15-15": "Severed toe",
-						"16-16": "Severed finger",
-						"17-17": "Gouged eye",
-						"18-18": "Nightmares",
-						"19-19": "Changed personality",
-						"20-20": "Amnesia"
+						"1-2": "Перелом носа",
+						"3-4": "Изуродованное лицо",
+						"5-6": "Выбитые зубы",
+						"7-8": "Перелом рёбер",
+						"9-10": "Сотрясение мозга",
+						"11-12": "Глубокие раны",
+						"13-13": "Перелом ноги",
+						"14-14": "Перелом руки",
+						"15-15": "Отрубленный палец ноги",
+						"16-16": "Отрубленный палец руки",
+						"17-17": "Выколотый глаз",
+						"18-18": "Кошмары",
+						"19-19": "Изменение личности",
+						"20-20": "Потеря памяти"
 					}
 				},
 				"Leaving the Adventure Site": {
@@ -2384,7 +2384,7 @@
 					}
 				},
 				"Create NPC - 1. Attitude": {
-					"name": "Создание персонажа ведущего - 1. Отношение",
+					"name": "Создание ПМ - 1. Отношение",
 					"description": "Отношение",
 					"results": {
 						"1-1": "Враждебное",
@@ -2394,7 +2394,7 @@
 					}
 				},
 				"Create NPC - 5. Trait": {
-					"name": "Создание персонажа ведущего - 5. Черта",
+					"name": "Создание ПМ - 5. Черта",
 					"description": "Черта",
 					"results": {
 						"1-1": "Talks too much",
@@ -2412,7 +2412,7 @@
 					}
 				},
 				"Create NPC - 4. Motivation": {
-					"name": "Создание персонажа ведущего - 4. Мотивация",
+					"name": "Создание ПМ - 4. Мотивация",
 					"description": "Мотивация",
 					"results": {
 						"1-1": "Sweet, glittering gold",
@@ -2426,7 +2426,7 @@
 					}
 				},
 				"Create NPC - 6. Name": {
-					"name": "Создание персонажа ведущего - 6. Имя",
+					"name": "Создание ПМ - 6. Имя",
 					"description": "Имя (выберите)",
 					"results": {
 						"1-1": "Agnar, Jorid, Dareios",
@@ -2452,7 +2452,7 @@
 					}
 				},
 				"Create NPC - 2. Kin": {
-					"name": "Создание персонажа ведущего - 2. Народ",
+					"name": "Создание ПМ - 2. Народ",
 					"description": "Народ",
 					"results": {
 						"1-1": "Человек",
@@ -2464,7 +2464,7 @@
 					}
 				},
 				"Create NPC - 3. Profession": {
-					"name": "Создание персонажа ведущего - 3. Профессия",
+					"name": "Создание ПМ - 3. Профессия",
 					"description": "Профессия",
 					"results": {
 						"1-1": "Бард",
@@ -2480,8 +2480,8 @@
 					}
 				},
 				"The Quest - 1. One day": {
-					"name": "The Quest - 1. One day",
-					"description": "One day",
+					"name": "Задание - 1. Где",
+					"description": "",
 					"results": {
 						"1-1": "in the gloom of a tavern",
 						"2-2": "at the first light of dawn",
@@ -2490,8 +2490,8 @@
 					}
 				},
 				"The Quest - 2. the characters come across": {
-					"name": "The Quest - 2. the characters come across",
-					"description": "the characters come across",
+					"name": "Задание - 2. Что произошло",
+					"description": "",
 					"results": {
 						"1-1": "a messenger from",
 						"2-2": "a letter from",
@@ -2502,7 +2502,7 @@
 					}
 				},
 				"The Quest - 3. from/about/with": {
-					"name": "The Quest - 3. from/about/with",
+					"name": "Задание - 3. Кто",
 					"description": "",
 					"results": {
 						"1-1": "Karvago, a mysterious mage",
@@ -2516,8 +2516,8 @@
 					}
 				},
 				"The Quest - 4. who wants to": {
-					"name": "The Quest - 4. who wants to",
-					"description": "who wants to",
+					"name": "Задание - 4. Что сделать",
+					"description": "",
 					"results": {
 						"1-1": "examine",
 						"2-2": "seek revenge for",
@@ -2532,8 +2532,8 @@
 					}
 				},
 				"The Quest - 5. a": {
-					"name": "The Quest - 5. a",
-					"description": "a",
+					"name": "Задание - 5. Объект",
+					"description": "",
 					"results": {
 						"1-1": "magical artifact",
 						"2-2": "family heirloom",
@@ -2550,8 +2550,8 @@
 					}
 				},
 				"The Quest - 6. called": {
-					"name": "The Quest - 6. called",
-					"description": "called",
+					"name": "Задание - 6. Под названием",
+					"description": "",
 					"results": {
 						"1-1": "the Blue Zurak.",
 						"2-2": "the Eye of Kalmander.",
@@ -2576,8 +2576,8 @@
 					}
 				},
 				"The Adventure Site - 1. The way in is": {
-					"name": "The Adventure Site - 1. The way in is",
-					"description": "The way in is",
+					"name": "Точка интереса - 1. Путь",
+					"description": "",
 					"results": {
 						"1-1": "easy – no one locked the door.",
 						"2-2": "hidden and hard to find.",
@@ -2586,8 +2586,8 @@
 					}
 				},
 				"The Adventure Site - 2. There is": {
-					"name": "The Adventure Site - 2. There is",
-					"description": "There is",
+					"name": "Точка интереса - 2. Там",
+					"description": "Там",
 					"results": {
 						"1-1": "a flooded chamber",
 						"2-2": "a blockage of rubble",
@@ -2598,8 +2598,8 @@
 					}
 				},
 				"The Adventure Site - 3. but also unexpected guests in the form of": {
-					"name": "The Adventure Site - 3. but also unexpected guests in the form of",
-					"description": "but also unexpected guests in the form of",
+					"name": "Точка интереса - 3. Обитатели",
+					"description": "",
 					"results": {
 						"1-1": "[[/roll 2D8]] goblins",
 						"2-2": "[[/roll D6]] adventurers",
@@ -2612,8 +2612,8 @@
 					}
 				},
 				"The Adventure Site - 4. and": {
-					"name": "The Adventure Site - 4. and",
-					"description": "and",
+					"name": "Точка интереса - 4. И",
+					"description": "и",
 					"results": {
 						"1-1": "a ravenous giant spider.",
 						"2-2": "a curious manticore.",
@@ -2628,8 +2628,8 @@
 					}
 				},
 				"The Adventure Site - 5. There is a deadly challenge in the form of": {
-					"name": "The Adventure Site - 5. There is a deadly challenge in the form of",
-					"description": "There is a deadly challenge in the form of",
+					"name": "Точка интереса - 5. Испытания",
+					"description": "",
 					"results": {
 						"1-1": "a trapdoor.",
 						"2-2": "a strong poison.",
@@ -2646,8 +2646,8 @@
 					}
 				},
 				"The Adventure Site - 6. Finally, the player characters must defeat": {
-					"name": "The Adventure Site - 6. Finally, the player characters must defeat",
-					"description": "Finally, the player characters must defeat",
+					"name": "Точка интереса - 6. Босс",
+					"description": "",
 					"results": {
 						"1-1": "Kazan Murg – a mad wizard.",
 						"2-2": "The Devastator – a powerful minotaur.",
@@ -2675,58 +2675,58 @@
 					"name": "Сокровища",
 					"description": "",
 					"results": {
-						"1-1": "[[d6]] copper coins",
-						"2-2": "[[2d6]] copper coins",
-						"3-3": "[[4d6]] copper coins",
-						"4-4": "[[2d6*10]] copper coins",
-						"5-5": "[[4d6*10]] copper coins",
-						"6-6": "[[d6]] silver coins",
-						"7-7": "[[3d6]] silver coins",
-						"8-8": "[[d6*5]] silver  coins",
-						"9-9": "[[d6*10]] silver coins",
-						"10-10": "[[2d6*10]] silver coins",
-						"11-11": "[[3d6*10]] silver coins",
-						"12-12": "[[d6]] gold coins",
-						"13-13": "[[2d6]] gold coins",
-						"14-14": "[[4d6]] gold coins",
-						"15-15": "[[d6*10]] gold coins",
-						"16-16": "[[2d6*10]] gold coins",
-						"17-17": "Chalice",
-						"18-18": "Silver Bracelet",
-						"19-19": "Gold Bracelet",
-						"20-20": "Silver Necklace",
-						"21-21": "Gold Necklace",
-						"22-22": "Silver Ring",
-						"23-23": "Gold Ring",
-						"24-24": "Gemstone",
-						"25-25": "Silver Brooch",
-						"26-26": "Treasure - Clothing",
-						"27-27": "Treasure - Melee 1",
-						"28-28": "Treasure - Melee 2",
-						"29-29": "Treasure - Ranged",
-						"30-30": "Treasure - Mastercrafted Weapon",
-						"31-31": "Treasure - Armor",
-						"32-32": "@UUID[Item.2PlS8RZ11HbJxOhf]{Poison Dagger}. Roll for EVADE. If you fail, you cut yourself and suffer a Potency 12 poison. Roll [[/roll D3]] for the type.  1: lethal, 2 paralyzing, 3 sleeping.",
-						"33-33": "<b>Rusty Nail.</b> Roll for EVADE. If you fail, you suffer [[/damage D6]]. Armor has no effect.",
-						"34-34": "@UUID[Item.brwS719az0E1uM4V]{Grimoire} Roll [[/roll D4]] for the school. 1: animism, 2: elementalism, 3: mentalism, 4: general magic. Roll [[/roll D4−1]] for the spell rank (0 means magic tricks) and [[/roll D4]] for the number. The GM chooses or randomized the exact spells.",
-						"35-35": "@UUID[Item.4euiW6ItX0zTca9i]{Bottle} A HEALING roll reveals the contents. On a failure, the GM rolls in secret. Roll [[/roll D6]]. 1: lethal poison (Potency 12), 2: sleeping poison (Potency 14), 3: booze, 4: herbal concoction, 5: healing potion (2D6 HP), 6: healing potion (3D6 HP).",
-						"36-36": "Treasure - Book",
-						"37-37": "Treasure - Instrument",
-						"38-38": "Treasure - Trade Goods",
-						"39-39": "<b>Rat.</b> Roll for EVADE. If you fail, you suffer [[/damage D4]]. Armor has no effect.",
-						"40-40": "Gold Amulet"
+						"1-1": "[[d6]] медных монет",
+						"2-2": "[[2d6]] медных монет",
+						"3-3": "[[4d6]] медных монет",
+						"4-4": "[[2d6*10]] медных монет",
+						"5-5": "[[4d6*10]] медных монет",
+						"6-6": "[[d6]] серебряных монет",
+						"7-7": "[[3d6]] серебряных монет",
+						"8-8": "[[d6*5]] серебряных  монет",
+						"9-9": "[[d6*10]] серебряных монет",
+						"10-10": "[[2d6*10]] серебряных монет",
+						"11-11": "[[3d6*10]] серебряных монет",
+						"12-12": "[[d6]] золотых монет",
+						"13-13": "[[2d6]] золотых монет",
+						"14-14": "[[4d6]] золотых монет",
+						"15-15": "[[d6*10]] золотых монет",
+						"16-16": "[[2d6*10]] золотых монет",
+						"17-17": "Чаша",
+						"18-18": "Серебряный браслет",
+						"19-19": "Золотой браслет",
+						"20-20": "Серебряное ожерелье",
+						"21-21": "Золотое ожерелье",
+						"22-22": "Серебряное кольцо",
+						"23-23": "Золотое кольцо",
+						"24-24": "Самоцвет",
+						"25-25": "Серебряная брошь",
+						"26-26": "Сокровища - Одежда",
+						"27-27": "Сокровища - Оружие ближнего боя 1",
+						"28-28": "Сокровища - Оружие ближнего боя 2",
+						"29-29": "Сокровища - Дистанционное оружие",
+						"30-30": "Сокровища - Превосходное оружие",
+						"31-31": "Сокровища - Броня",
+						"32-32": "@UUID[Item.2PlS8RZ11HbJxOhf]{Отравленный кинжал}. Совершите проверку Уклонения. При провале вы получаете порез и испытываете воздействие яда с мощностью 12. Совершите бросок [[/roll D3]], чтобы определить тип: 1. смертельный; 2. парализующий; 3 усыпляющий.",
+						"33-33": "<b>Ржавый гвоздь.</b> Совершите проверку Уклонения. При провале вы получаете [[/damage D6]] урона. Броня вас не защитит.",
+						"34-34": "@UUID[Item.brwS719az0E1uM4V]{Гримуар}. Совершите бросок [[/roll D4]], чтобы определить школу: 1: анимизм, 2: элементализм, 3: ментализм, 4: общая магия. Совершите бросок [[/roll D4−1]], чтобы определить ранг заклинания (0 означает фокусы) и [[/roll D4]] для определения числа. Мастер выбирает конкретные заклинания (вручную или случайно).",
+						"35-35": "@UUID[Item.4euiW6ItX0zTca9i]{Бутыль}. Проверка Исцеления определяет содержимое. При провале, Мастер совершает тайный бросок. Бросьте [[/roll D6]]. 1: смертельный урон (мощность 12); 2: усыпляющий яд (мощность 14); 3: алкоголь; 4: травяной отвар; 5: зелье исцеления (2D6 ПЗ); 6: зелье исцеления (3D6 ПЗ).",
+						"36-36": "Сокровища - Книга",
+						"37-37": "Сокровища - Инструмент",
+						"38-38": "Сокровища - Товар",
+						"39-39": "<b>Крыса.</b> Совершите проверку Уклонения. При провале вы получаете [[/damage D4]] урона. Броня вас не защитит.",
+						"40-40": "Золотой амулет"
 					}
 				},
 				"Treasure - Armor": {
 					"name": "Сокровища - Броня",
 					"description": "",
 					"results": {
-						"1-1": "Shield, Small",
-						"2-2": "Shield, Large",
-						"3-3": "Open Helmet",
-						"4-4": "Great Helm",
-						"5-5": "Studded Leather",
-						"6-6": "Chainmail"
+						"1-1": "Щит, малый",
+						"2-2": "Щит, большой",
+						"3-3": "Открытый шлем",
+						"4-4": "Большой шлем",
+						"5-5": "Клёпаная кожанка",
+						"6-6": "Кольчуга"
 					}
 				},
 				"Treasure - Book": {
@@ -2745,121 +2745,121 @@
 					"name": "Сокровища - Одежда",
 					"description": "",
 					"results": {
-						"1-1": "Boots",
-						"2-2": "Cloak",
-						"3-3": "Fur"
+						"1-1": "Сапоги",
+						"2-2": "Плащ",
+						"3-3": "Меха"
 					}
 				},
 				"Treasure - Instrument": {
 					"name": "Сокровища - Музыкальный инструмент",
 					"description": "",
 					"results": {
-						"1-1": "Horn",
-						"2-2": "Flute",
-						"3-3": "Harp",
-						"4-4": "Lyre",
-						"5-5": "Drum",
-						"6-6": "Bagpipe"
+						"1-1": "Горн",
+						"2-2": "Флейта",
+						"3-3": "Арфа",
+						"4-4": "Лира",
+						"5-5": "Барабан",
+						"6-6": "Волынка"
 					}
 				},
 				"Treasure - Mastercrafted Weapon": {
 					"name": "Сокровища - Превосходное оружие",
 					"description": "",
 					"results": {
-						"1-1": "Mastercrafted Dagger",
-						"2-2": "Mastercrafted Short Sword",
-						"3-3": "Mastercrafted Battleaxe",
-						"4-4": "Mastercrafted Broadsword",
-						"5-5": "Mastercrafted Heavy Warhammer",
-						"6-6": "Mastercrafted Longsword"
+						"1-1": "Превосходный кинжал",
+						"2-2": "Превосходный короткий меч",
+						"3-3": "Превосходный боевой топор",
+						"4-4": "Превосходный палаш",
+						"5-5": "Превосходный боевой молот",
+						"6-6": "Превосходный длинный меч"
 					}
 				},
 				"Treasure - Melee 1": {
 					"name": "Сокровища - Оружие ближнего боя 1",
 					"description": "",
 					"results": {
-						"1-1": "Dagger",
-						"2-2": "Short Sword",
-						"3-3": "Short Spear",
-						"4-4": "Broadsword",
-						"5-5": "Long Spear",
-						"6-6": "Longsword"
+						"1-1": "Кинжал",
+						"2-2": "Короткий меч",
+						"3-3": "Пилум",
+						"4-4": "Палаш",
+						"5-5": "Копьё",
+						"6-6": "Длинный меч"
 					}
 				},
 				"Treasure - Melee 2": {
 					"name": "Сокровища - Оружие ближнего боя 2",
 					"description": "",
 					"results": {
-						"1-1": "Handaxe",
-						"2-2": "Scimitar",
-						"3-3": "Morningstar",
-						"4-4": "Parrying Dagger",
-						"5-5": "Warhammer, Light",
-						"6-6": "Flail"
+						"1-1": "Топорик",
+						"2-2": "Скимитар",
+						"3-3": "Моргенштерн",
+						"4-4": "Парирующий кинжал",
+						"5-5": "Лёгкий молот",
+						"6-6": "Цеп"
 					}
 				},
 				"Treasure - Ranged": {
-					"name": "Сокровища - Оружие дистанционного боя",
+					"name": "Сокровища - Дистанционное оружие",
 					"description": "",
 					"results": {
-						"1-1": "Sling",
-						"2-2": "Short Bow",
-						"3-3": "Longbow",
-						"4-4": "Crossbow, Light",
-						"5-5": "Crossbow, Heavy",
-						"6-6": "Crossbow, Hand"
+						"1-1": "Праща",
+						"2-2": "Короткий лук",
+						"3-3": "Длинный лук",
+						"4-4": "Лёгкий арбалет",
+						"5-5": "Тяжёлый арбалет",
+						"6-6": "Ручной арбалет"
 					}
 				},
 				"Treasure - Trade Goods": {
 					"name": "Сокровища - Товар",
 					"description": "",
 					"results": {
-						"1-1": "Magnifying Glass",
-						"2-2": "Spyglass",
-						"3-3": "Perfume (10 doses)",
-						"4-4": "Chess Set",
-						"5-5": "Playing Cards",
-						"6-6": "Marbles"
+						"1-1": "Увеличительной стекло",
+						"2-2": "Подзорная труба",
+						"3-3": "Флакон духов",
+						"4-4": "Шахматы",
+						"5-5": "Игральные карты",
+						"6-6": "Мраморные шарики"
 					}
 				},
 				"Improvised Weapons - Cave": {
-					"name": "Improvised Weapons - Cave",
+					"name": "Импровизированное оружие - Пещера",
 					"description": "",
 					"results": {
-						"1-1": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.VmiQSdcaEWSputDp]{Stalactite}",
-						"2-2": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.0N0p3iiR0Tk1nWvp]{Torch}",
-						"3-3": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.d4WOAmIIekOtaD7S]{Stalagmite}",
-						"4-4": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.f5TM9uQXswYTNx3x]{Puddle}",
-						"5-5": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.WgJ4bZafzzFSpPum]{Crevice}",
-						"6-6": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.z8MsME6LKUJ8MhrD]{Bats}"
+						"1-1": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.VmiQSdcaEWSputDp]{Сталактит}",
+						"2-2": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.0N0p3iiR0Tk1nWvp]{Факел}",
+						"3-3": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.d4WOAmIIekOtaD7S]{Сталагмит}",
+						"4-4": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.f5TM9uQXswYTNx3x]{Глина}",
+						"5-5": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.WgJ4bZafzzFSpPum]{Прожилок}",
+						"6-6": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.z8MsME6LKUJ8MhrD]{Летучая мышь}"
 					}
 				},
 				"Improvised Weapons - Forest": {
-					"name": "Improvised Weapons - Forest",
+					"name": "Импровизированное оружие - Лес",
 					"description": "",
 					"results": {
-						"1-1": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.k3kUQhPLtcfAxXGM]{Low Branch}",
-						"2-2": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.iJuIT5r2qTJTpbr5]{Wasp Nest}",
-						"3-3": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.Jo1mCjIB16qmpmPy]{Gnarled Roots}",
-						"4-4": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.YYzepkv92wUay1xO]{Boulder}",
-						"5-5": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.76q7GmaujNag2Bxr]{Viper}",
-						"6-6": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.PoTq63Kx7NHNPDdA]{Patch of Dirt}"
+						"1-1": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.k3kUQhPLtcfAxXGM]{Низкая ветка}",
+						"2-2": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.iJuIT5r2qTJTpbr5]{Осиное гнездо}",
+						"3-3": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.Jo1mCjIB16qmpmPy]{Коряга}",
+						"4-4": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.YYzepkv92wUay1xO]{Валун}",
+						"5-5": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.76q7GmaujNag2Bxr]{Гадюка}",
+						"6-6": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.PoTq63Kx7NHNPDdA]{Горсть земли}"
 					}
 				},
 				"Improvised Weapons - Inn": {
-					"name": "Improvised Weapons - Inn",
+					"name": "Импровизированное оружие - Таверна",
 					"description": "",
 					"results": {
-						"1-1": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.3M2i0ZRmAmHh9Mm4]{Boiling Cauldron}",
-						"2-2": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.iBS8gQRrQudthmTa]{Bucket of Soapy Water}",
-						"3-3": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.GISaGxqnfmp4kWnW]{Burning Firewood}",
-						"4-4": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.CV5hdwW1B8Sttnjb]{Rummaging Pig}",
-						"5-5": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.b9dL2iSWi92U6FPg]{Wine Bottle}",
-						"6-6": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.rFi65szeM4puAHUY]{Chandelier}"
+						"1-1": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.3M2i0ZRmAmHh9Mm4]{Кипящий котёл}",
+						"2-2": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.iBS8gQRrQudthmTa]{Мыльная вода}",
+						"3-3": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.GISaGxqnfmp4kWnW]{Горящее полено}",
+						"4-4": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.CV5hdwW1B8Sttnjb]{Свинья}",
+						"5-5": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.b9dL2iSWi92U6FPg]{Бутыль с вином}",
+						"6-6": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.rFi65szeM4puAHUY]{Канделябр}"
 					}
 				},
 				"Hunting": {
-					"name": "Hunting",
+					"name": "Охота",
 					"description": "",
 					"results": {
 						"1-1": "<b>Animal:</b> Squirrel<br /><b>Requirement:</b> Weapon or trap<br /><b>Rations: </b> 1",
@@ -2871,7 +2871,7 @@
 					}
 				},
 				"Monster Attacks - The Robber Knight": {
-					"name": "Monster Attacks - The Robber Knight",
+					"name": "Атаки чудовища - Рыцарь-разбойник",
 					"description": "",
 					"results": {
 						"1-1": "<b>Unholy Roar!</b> The wight’s decomposed skull contorts and lets out a ghastly scream that cuts like a rusty blade through the characters’ souls. Everyone within 10 meters suffers a fear attack and must roll against WIL to resist @Table[RollTable.wHTr9HuHkpVv7ccX]{fear}.",
@@ -2883,7 +2883,7 @@
 					}
 				},
 				"Random Events - The Castle of the Robber Knight": {
-					"name": "Random Events - The Castle of the Robber Knight",
+					"name": "Случайные события - Замок Рыцаря-разбойника",
 					"description": "",
 					"results": {
 						"1-1": "<b>Goblins.</b> Two @UUID[Actor.2KCyP8JCLYVAcMig]{goblins} suddenly appear. After a moment of confusion, they draw their short swords and attack with a shriek.",
@@ -2906,15 +2906,15 @@
 					"description": ""
 				},
 				"Improvised Weapon - Inn": {
-					"name": "Improvised Weapon - Inn",
+					"name": "Импровизированное оружие - Таверна",
 					"description": ""
 				},
 				"Improvised Weapon - Forest": {
-					"name": "Improvised Weapon - Forest",
+					"name": "Импровизированное оружие - Лес",
 					"description": ""
 				},
 				"Improvised Weapon - Cave": {
-					"name": "Improvised Weapon - Cave",
+					"name": "Импровизированное оружие - Пещера",
 					"description": ""
 				}
 			}
