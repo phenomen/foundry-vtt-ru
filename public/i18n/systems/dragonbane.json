@@ -101,9 +101,9 @@
 		},
 		"conditions": {
 			"str": "Утомление",
-			"con": "Слабость",
-			"agl": "Ступор",
-			"int": "Ярость",
+			"con": "Хворь",
+			"agl": "Ошеломление",
+			"int": "Гнев",
 			"wil": "Испуг",
 			"cha": "Уныние"
 		},
@@ -185,11 +185,11 @@
 		"injury": {
 			"healingTime": "Период исцеления",
 			"healingTimeTooltip": "Число дней, требуемых для исцеления травмы",
-			"healingTimeExpired": "<b>{injury}</b> исцелена.",
+			"healingTimeExpired": "Травма исцелена: <b>{injury}</b>.",
 			"healingTimeRollFlavor": "Период исцеления для <b>{injury}</b> составляет <b>{days}</b> дней.",
 			"rollHealingTime": "ЛКМ для проверки периода исцеления",
 			"clickHealingTime": "ЛКМ - уменьшить, ПКМ - увеличить",
-			"healingTimeChanged": "Период заживления для <b>{injury}</b> изменён <b>{from}</b> на <b>{to}</b> дней."
+			"healingTimeChanged": "Период исцеления для <b>{injury}</b> изменён <b>{from}</b> на <b>{to}</b> дней."
 		},
 		"itemTypes": {
 			"item": "Предмет",
@@ -217,8 +217,8 @@
 			"skills": "Навыки"
 		},
 		"roll": {
-			"dragon": "успех с Драконом!",
-			"demon": "провал с Демоном!",
+			"dragon": "с драконьим успехом!",
+			"demon": "с демоническим провалом!",
 			"success": "успешна.",
 			"failure": "провалена.",
 			"attributeRoll": "Проверка характеристики <b>{attribute}</b> <b>{result}</b>",
@@ -235,7 +235,7 @@
 			"damageIgnoreArmorTarget": "<b>{actor}</b> наносит <b>{damage}</b> урона от <b>{damageType} по <b>{target}</b> минуя броню</b> с <b>{weapon}</b>.",
 			"healing": "<b>{actor}</b> исцеляет <b>{damage}</b> ПЗ.",
 			"healingTarget": "<b>{actor}</b> исцеляет <b>{target}</b> на <b>{damage}</b> ПЗ.",
-			"pushButtonLabel": "Усилие",
+			"pushButtonLabel": "Приложить усилие",
 			"pushChoiceLabel": "Выбери состояние:",
 			"parryWeapon": "<p>Если парируемый урон превосходит прочность оружия (<b>{durability}</b>), то оружие повреждается. Колющий урон не может повредить оружие.</p>",
 			"parryShield": "<p>Если парируемый урон превосходит прочность щита (<b>{durability}</b>), то щит повреждается. Колющий урон не может повредить щит.</p>",
@@ -256,9 +256,9 @@
 		},
 		"skill": {
 			"advance": "Развитие",
-			"advanceTooltip": "Отметьте возможность проверки Развития",
+			"advanceTooltip": "Отметьте возможность проверки развития",
 			"advancementFail": "Не удалось повысить навык <b>{skill}</b>.",
-			"advancementSuccess": "Навык <b>{skill}</b> развит с <b>{old}</b> до <b>{new}</b>.",
+			"advancementSuccess": "Навык <b>{skill}</b> развился с <b>{old}</b> до <b>{new}</b>.",
 			"attribute": "Характеристика",
 			"attributeTooltip": "Характеристика навыка",
 			"hide": "Скрыть",
@@ -475,7 +475,7 @@
 				"damageAppliedMultiplier": "x{multiplier} множитель.",
 				"healingApplied": "<b>{actor}</b> исцеляет <b>{spell}</b> ПЗ.",
 				"rollDamage": "Бросок урона",
-				"rollHealing": "Проверка лечения",
+				"rollHealing": "Проверка исцеления",
 				"dealDamage": "Нанести урон",
 				"dealHalfDamage": "Нанести половину урона",
 				"dealDoubleDamage": "Нанести двойной урон",
@@ -567,13 +567,13 @@
 			"useWorldSkillsOnCreateActor": "Использование навыков из мира для новых актёров",
 			"useWorldSkillsOnCreateActorHint": "При создании актёра будут использованы навыки из мира вместо навыков из модуля.",
 			"viewDamagePermission": "Права для видимого урона",
-			"viewDamagePermissionHint": "Выберите минимальный уровень прав участника при котором будут видимы значения урона.",
+			"viewDamagePermissionHint": "Выбери минимальный уровень прав участника при котором будут видимы значения урона.",
 			"monsterAttackDialogIsDefault": "Выбор атаки чудовища",
 			"monsterAttackDialogIsDefaultHint": "При нажатии на кнопку атаки в бланке чудовища, будет отображено окно \"Выбор атаки чудовища\". Окно пропускается при удержании Shift или Ctrl. Если опция отключена, поведение будет обратным.",
 			"allowDealDamageOnSelected": "Нанесение урона выбранному токену",
 			"allowDealDamageOnSelectedHint": "Ведущий может нанести урон (или исцелить) выбранный токен, если ни один токен не выбран целью.",
 			"automaticSkillAdvancementMark": "Автоматически отмечать навыки",
-			"automaticSkillAdvancementMarkHint": "Автоматически отмечать навыки для улучшения при бросках Дракона и Демона."
+			"automaticSkillAdvancementMarkHint": "Автоматически отмечать навыки для улучшения при драконьих и демонических бросках."
 		},
 		"WARNING": {
 			"kinAbility": "Не удалось найти врождённое умение: {ability}",
