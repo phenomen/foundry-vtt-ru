@@ -12,7 +12,15 @@
 		},
 		"items": {
 			"description": "system.description",
-			"requirement": "system.requirement"
+			"requirement": "system.requirement",
+			"skills": {
+				"path": "system.skills",
+				"converter": "translateListCore"
+			},
+			"abilities": {
+				"path": "system.abilities",
+				"converter": "translateListCore"
+			}
 		}
 	},
 	"folders": {},
@@ -97,7 +105,7 @@
 				},
 				"Reset Treasure Cards": {
 					"name": "Сбросить карты сокровищ",
-					"command": "const table = game.tables.getName(\"Сокровища\");\nif (!table)\n{ \n  ui.notifications.error(\"Не удалось найти таблицу сокровищ\");\n  return;\n}\n\nawait table.resetResults();\nChatMessage.create({content: \"Сброс таблицы сокровищ\"});"
+					"command": "const table = game.tables.getName(\"Сокровище\");\nif (!table)\n{ \n  ui.notifications.error(\"Не удалось найти таблицу сокровищ\");\n  return;\n}\n\nawait table.resetResults();\nChatMessage.create({content: \"Сброс таблицы сокровищ\"});"
 				},
 				"Draw Treasure Card": {
 					"name": "Взять карту сокровищ",
@@ -105,7 +113,7 @@
 				},
 				"Draw Treasure Card (no reset)": {
 					"name": "Взять карту сокровищ (без сброса)",
-					"command": "const table = game.tables.getName(\"Сокровища\");\nif (!table)\n{ \n  ui.notifications.error(\"Не удалось найти таблицу сокровищ\");\n  return;\n}\nawait table.draw();"
+					"command": "const table = game.tables.getName(\"Сокровище\");\nif (!table)\n{ \n  ui.notifications.error(\"Не удалось найти таблицу сокровищ\");\n  return;\n}\nawait table.draw();"
 				},
 				"Create NPC": {
 					"name": "Создать персонажа Мастера",
@@ -788,219 +796,223 @@
 					"name": "Лира"
 				},
 				"Bath at an Inn": {
-					"name": "Ванна в таверне"
+					"name": "Ванна в трактире"
 				},
 				"Bodyguard": {
 					"name": "Телохранитель"
 				},
 				"Bowl of Stew": {
-					"name": "Bowl of Stew"
+					"name": "Тарелка рагу"
 				},
 				"Clothes Repair": {
-					"name": "Clothes Repair"
+					"name": "Услуги ателье"
 				},
 				"Courier": {
-					"name": "Courier"
+					"name": "Гонец"
 				},
 				"Feast": {
-					"name": "Feast"
+					"name": "Трапеза"
 				},
 				"Goblet of Wine": {
-					"name": "Goblet of Wine"
+					"name": "Кубок вина"
 				},
 				"Haircut": {
-					"name": "Haircut"
+					"name": "Стрижка"
 				},
 				"Healing": {
-					"name": "Healing"
+					"name": "Исцеление"
 				},
 				"Lodging at Inn, Dormitory": {
-					"name": "Lodging at Inn, Dormitory"
+					"name": "Ночлег в трактире, общая спальня"
 				},
 				"Lodging at Inn, Luxury Suite": {
-					"name": "Lodging at Inn, Luxury Suite"
+					"name": "Ночлег в трактире, роскошный номер"
 				},
 				"Lodging at Inn, Separate Room": {
-					"name": "Lodging at Inn, Separate Room"
+					"name": "Ночлег в трактире, отдельная комната"
 				},
 				"Meal at an Inn": {
-					"name": "Meal at an Inn"
+					"name": "Обед в трактире"
 				},
 				"Road Toll": {
-					"name": "Road Toll"
+					"name": "Дорожная пошлина"
 				},
 				"Stagecoach": {
-					"name": "Stagecoach"
+					"name": "Дилижанс"
 				},
 				"Tankard of Mead": {
-					"name": "Tankard of Mead"
+					"name": "Кружка медовухи"
 				},
 				"Teacher": {
-					"name": "Teacher"
+					"name": "Учебник"
 				},
 				"Amulet": {
-					"name": "Amulet"
+					"name": "Амулет"
 				},
 				"Book": {
-					"name": "Book"
+					"name": "Книга"
 				},
 				"Brooch": {
-					"name": "Brooch"
+					"name": "Брошь"
 				},
 				"Chalk": {
-					"name": "Chalk"
+					"name": "Мел"
 				},
 				"Grimoire": {
-					"name": "Grimoire"
+					"name": "Гримуар"
 				},
 				"Hourglass": {
-					"name": "Hourglass"
+					"name": "Песочные часы"
 				},
 				"Notebook": {
-					"name": "Notebook"
+					"name": "Записная книжка"
 				},
 				"Orbuculum": {
-					"name": "Orbuculum"
+					"name": "Хрустальный шар"
 				},
 				"Paper (sheet)": {
-					"name": "Paper (sheet)"
+					"name": "Бумага (лист)"
 				},
 				"Parchment (sheet)": {
-					"name": "Parchment (sheet)"
+					"name": "Пергамент (лист)"
 				},
 				"Quill & Ink": {
-					"name": "Quill & Ink"
+					"name": "Перо и чернила"
 				},
 				"Reliquary": {
-					"name": "Reliquary"
+					"name": "Реликварий"
 				},
 				"Wand": {
-					"name": "Wand"
+					"name": "Жезл"
 				},
 				"Blacksmithing Tools": {
-					"name": "Blacksmithing Tools"
+					"name": "Кузнечные инструменты"
 				},
 				"Carpentry Tools": {
-					"name": "Carpentry Tools"
+					"name": "Плотничьи инструменты"
 				},
 				"Crowbar": {
-					"name": "Crowbar"
+					"name": "Лом"
 				},
 				"Hammer": {
-					"name": "Hammer"
+					"name": "Молоток"
 				},
 				"Needle & Thread": {
-					"name": "Needle & Thread"
+					"name": "Игла и нитки"
 				},
 				"Pickaxe": {
-					"name": "Pickaxe"
+					"name": "Кирка"
 				},
 				"Saw": {
-					"name": "Saw"
+					"name": "Пила"
 				},
 				"Shovel": {
-					"name": "Shovel"
+					"name": "Лопата"
 				},
 				"Sledgehammer": {
-					"name": "Sledgehammer"
+					"name": "Кувалда"
 				},
 				"Tanning Tools": {
-					"name": "Tanning Tools"
+					"name": "Дубильные инструменты"
 				},
 				"Abacus": {
-					"name": "Abacus"
+					"name": "Счёты"
 				},
 				"Blanket": {
-					"name": "Blanket"
+					"name": "Одеяло"
 				},
 				"Chess Set": {
-					"name": "Chess Set"
+					"name": "Шахматный набор"
 				},
 				"Dice": {
-					"name": "Dice"
+					"name": "Игральные кубики"
 				},
 				"Field Kitchen": {
-					"name": "Field Kitchen"
+					"name": "Полевая кухня"
 				},
 				"Field Ration": {
-					"name": "Field Ration"
+					"name": "Сухой паёк"
 				},
 				"Grappling Hook": {
-					"name": "Grappling Hook"
+					"name": "Крюк-кошка"
 				},
 				"Lockpicks (Advanced)": {
-					"name": "Lockpicks (Advanced)"
+					"name": "Отмычки (продвинутые)"
 				},
 				"Lockpicks (Simple)": {
-					"name": "Lockpicks (Simple)"
+					"name": "Отмычки (простые)"
 				},
 				"Magnifying Glass": {
-					"name": "Magnifying Glass"
+					"name": "Увеличительное стекло"
 				},
 				"Map": {
-					"name": "Map"
+					"name": "Карта"
 				},
 				"Marbles": {
-					"name": "Marbles"
+					"name": "Мраморные шарики"
 				},
 				"Padlock": {
-					"name": "Padlock"
+					"name": "Замок"
 				},
 				"Perfume (10 doses)": {
-					"name": "Perfume (10 doses)"
+					"name": "Флакон духов"
 				},
 				"Playing Cards": {
-					"name": "Playing Cards"
+					"name": "Игральные карты"
 				},
 				"Quiver of Arrows (Iron Head)": {
-					"name": "Quiver of Arrows (Iron Head)"
+					"name": "Колчан (железные наконечники)"
 				},
 				"Quiver of Arrows (Wooden Head)": {
-					"name": "Quiver of Arrows (Wooden Head)"
+					"name": "Колчан (деревянные наконечники)"
 				},
 				"Rope (Hemp, 10 meters)": {
-					"name": "Rope (Hemp, 10 meters)"
+					"name": "Верёвка (пеньковая, 10 метров)"
 				},
 				"Rope (Silk, 10 meters)": {
-					"name": "Rope (Silk, 10 meters)"
+					"name": "Верёвка (шёлковая, 10 метров)"
 				},
 				"Saddle": {
-					"name": "Saddle"
+					"name": "Седло"
 				},
 				"Sleeping Fur": {
-					"name": "Sleeping Fur"
+					"name": "Меховое одеяло"
 				},
 				"Spyglass": {
-					"name": "Spyglass"
+					"name": "Подзорная труба"
 				},
 				"Large Tent": {
-					"name": "Large Tent"
+					"name": "Большая палатка"
 				},
 				"Small Tent": {
-					"name": "Small Tent"
+					"name": "Малая палатка"
 				},
 				"Whistle": {
-					"name": "Whistle"
+					"name": "Свисток"
 				},
 				"Dwarf": {
-					"name": "Дварф"
+					"name": "Дварф",
+					"description": "<p>Дварфы — древнейший из старших народов, по крайней мере, согласно их собственным летописцам. Это невероятно гордый и традиционный народ, чья культура пропитана древними обычаями и величественными балладами о героических предках. Дварфы чувствуют глубокую связь с коренными породами и истоками мира. Они искусные кузнецы и ремесленники, восхищающие своим умением создавать чудесные изделия из драгоценных металлов, а также из железа и камня. Дварфы также известны как свирепые воины, вооруженные топорами, боевыми молотами и другим тяжелым оружием ближнего боя, выкованным в их подземных кузницах.</p>"
 				},
 				"Elf": {
-					"name": "Эльф"
+					"name": "Эльф",
+					"description": "<p>Эльфы — древний народ, который веками стоит на страже лесов мира. Их направляют звёзды, которых они почитают как божественных существ, способных проникнуть в глубочайшие тайны. Эльфийская культура медитативно замкнута и порой трудна для понимания чужаками. Однако очевидно, что ими движут иные, более метафизические устремления, нежели жажда золота и славы, столь часто встречающаяся у дворфов и людей. Тем не менее среди их народа немало могучих воинов, широко уважаемых и воспеваемых бардами за искусное владение мечом и луком.</p>"
 				},
 				"Halfling": {
-					"name": "Полурослик"
+					"name": "Полурослик",
+					"description": "<p>Полурослики — невысокие гуманоиды, которых часто можно встретить в холмистых сельских угодьях, где они живут в земляных жилищах с хорошо заполненными кладовыми. По натуре они скромны и дружелюбны, с врожденной привязанностью к домашнему очагу и уюту. Полурослики не воинственны и не честолюбивы, но их сильно привлекают эпические сказания и прекрасные песни давно минувших дней. Время от времени это стремление может побудить их покинуть безопасность родного дома в поисках великих приключений. Из-за своей уязвимости и страха перед «верзилами», они умеют хорошо прятаться и быстро выбираться из критических ситуаций.</p>"
 				},
 				"Human": {
-					"name": "Человек"
+					"name": "Человек",
+					"description": "<p>Люди — последние из рождённых народов. У других народов есть песни и легенды о временах до зари человечества. Сегодня люди расселились по большей части известного мира. Многие из них — крестьяне, живущие в маленьких деревушках, сгрудившихся вокруг замков и дворцов. Другие — воины, поклявшиеся защищать крестьян и их уязвимые поселения, рынки и торговые караваны от опасностей мира. Еще больше среди них искателей приключений: бесстрашных людей, которые отваживаются идти в неизведанное в поисках славы, золота и знаний.</p>"
 				},
 				"Mallard": {
-					"name": "Крякв"
+					"name": "Крякв",
+					"description": "<p>Происхождение кряквов окутано тайной. Некоторые ученые утверждают, что они родом с могущественного островного царства, поглощенного морем тысячи лет назад; другие полагают, что они являются результатом неудачного магического эксперимента. Какова бы ни была правда, эти пернатые гуманоиды — обычное зрелище в мире. У них есть талант к торговле, и их взволнованное кряканье часто является неотъемлемой частью шума рыночных площадей и торговых караванов. Однако некоторые кряквы ищут удачу в качестве разбойников, пиратов или наёмников. Несмотря на свой миниатюрный размер, они свирепы в бою и внушают страх многим своей убийственной яростью.</p>"
 				},
 				"Wolfkin": {
 					"name": "Волкарь",
-					"description": "<p>Волкари — это неукротимая ярость дикой природы. Они могут быть весьма разумными созданиями, и, подобно эльфам, склонны погружаться в размышления, постигая тайны мироздания. Но под поверхностью кипят древние охотничьи инстинкты и неугасимый гнев за прошлые обиды, причинённые волкарям, волкам и дикой природе в целом. Как охотники и следопыты они не знают равных, но волкарей также можно встретить в качестве тяжеловооружённых наёмников или мистиков и целителей в человеческих поселениях.</p>",
-					"abilities": "Охотничьи инстинкты"
+					"description": "<p>Волкари — это неукротимая ярость дикой природы. Они могут быть весьма разумными созданиями, и, подобно эльфам, склонны погружаться в размышления, постигая тайны мироздания. Но под поверхностью кипят древние охотничьи инстинкты и неугасимый гнев за прошлые обиды, причинённые волкарям, волкам и дикой природе в целом. Как охотники и следопыты они не знают равных, но волкарей также можно встретить в качестве тяжеловооружённых наёмников или мистиков и целителей в человеческих поселениях.</p>"
 				},
 				"Animist": {
 					"name": "Анимист"
@@ -1039,7 +1051,7 @@
 					"name": "Акробатика"
 				},
 				"Awareness": {
-					"name": "Внимание"
+					"name": "Бдительность"
 				},
 				"Bartering": {
 					"name": "Торговля"
@@ -1051,7 +1063,7 @@
 					"name": "Обман"
 				},
 				"Bushcraft": {
-					"name": "Bushcraft"
+					"name": "Выживание"
 				},
 				"Crafting": {
 					"name": "Ремесло"
@@ -1060,475 +1072,475 @@
 					"name": "Уклонение"
 				},
 				"Hunting & Fishing": {
-					"name": "Hunting & Fishing"
+					"name": "Охота и рыбалка"
 				},
 				"Languages": {
-					"name": "Languages"
+					"name": "Знание языков"
 				},
 				"Myths & Legends": {
-					"name": "Myths & Legends"
+					"name": "Мифы и легенды"
 				},
 				"Performance": {
-					"name": "Performance"
+					"name": "Исполнение"
 				},
 				"Persuasion": {
-					"name": "Persuasion"
+					"name": "Убеждение"
 				},
 				"Riding": {
-					"name": "Riding"
+					"name": "Верховая езда"
 				},
 				"Seamanship": {
-					"name": "Seamanship"
+					"name": "Мореходство"
 				},
 				"Sleight of Hand": {
-					"name": "Sleight of Hand"
+					"name": "Ловкость рук"
 				},
 				"Sneaking": {
-					"name": "Sneaking"
+					"name": "Скрытность"
 				},
 				"Spot Hidden": {
-					"name": "Spot Hidden"
+					"name": "Обнаружение"
 				},
 				"Swimming": {
-					"name": "Swimming"
+					"name": "Плавание"
 				},
 				"Animism": {
-					"name": "Animism"
+					"name": "Анимизм"
 				},
 				"Elementalism": {
-					"name": "Elementalism"
+					"name": "Элементализм"
 				},
 				"Mentalism": {
-					"name": "Mentalism"
+					"name": "Ментализм"
 				},
 				"Axes": {
-					"name": "Axes"
+					"name": "Топоры"
 				},
 				"Bows": {
-					"name": "Bows"
+					"name": "Луки"
 				},
 				"Brawling": {
-					"name": "Brawling"
+					"name": "Рукопашный бой"
 				},
 				"Crossbows": {
-					"name": "Crossbows"
+					"name": "Арбалеты"
 				},
 				"Hammers": {
-					"name": "Hammers"
+					"name": "Молоты"
 				},
 				"Knives": {
-					"name": "Knives"
+					"name": "Ножи"
 				},
 				"Slings": {
-					"name": "Slings"
+					"name": "Пращи"
 				},
 				"Spears": {
-					"name": "Spears"
+					"name": "Копья"
 				},
 				"Staves": {
-					"name": "Staves"
+					"name": "Посохи"
 				},
 				"Swords": {
-					"name": "Swords"
+					"name": "Мечи"
 				},
 				"Animal Whisperer": {
-					"name": "Animal Whisperer"
+					"name": "Разговор с животными"
 				},
 				"Banish": {
-					"name": "Banish"
+					"name": "Изгнание"
 				},
 				"Birdsong": {
-					"name": "Birdsong"
+					"name": "Пение птиц"
 				},
 				"Clean": {
-					"name": "Clean"
+					"name": "Уборка"
 				},
 				"Cook Food": {
-					"name": "Cook Food"
+					"name": "Готовка"
 				},
 				"Engulfing Forest": {
-					"name": "Engulfing Forest"
+					"name": "Поглощающий лес"
 				},
 				"Ensnaring Roots": {
-					"name": "Ensnaring Roots"
+					"name": "Опутывающие корни"
 				},
 				"Floral Trail": {
-					"name": "Floral Trail"
+					"name": "Цветочная тропа"
 				},
 				"Hairstyle": {
-					"name": "Hairstyle"
+					"name": "Стрижка"
 				},
 				"Heal Wound": {
-					"name": "Heal Wound"
+					"name": "Исцеление ран"
 				},
 				"Lightning Bolt": {
-					"name": "Lightning Bolt"
+					"name": "Удар молнии"
 				},
 				"Lightning Flash": {
-					"name": "Lightning Flash"
+					"name": "Вспышка молнии"
 				},
 				"Purge": {
-					"name": "Purge"
+					"name": "Низвергание"
 				},
 				"Restoration": {
-					"name": "Restoration"
+					"name": "Восстановление"
 				},
 				"Resurrection": {
-					"name": "Resurrection"
+					"name": "Воскрешение"
 				},
 				"Sleep": {
-					"name": "Sleep"
+					"name": "Сон"
 				},
 				"Thunderbolt": {
-					"name": "Thunderbolt"
+					"name": "Удар грома"
 				},
 				"Treat Wound": {
-					"name": "Treat Wound"
+					"name": "Обработка ран"
 				},
 				"Fire Blast": {
-					"name": "Fire Blast"
+					"name": "Огненный взрыв"
 				},
 				"Fireball": {
-					"name": "Fireball"
+					"name": "Огненный шар"
 				},
 				"Firebird": {
-					"name": "Firebird"
+					"name": "Огненная птица"
 				},
 				"Firestorm": {
-					"name": "Firestorm"
+					"name": "Огненная буря"
 				},
 				"Frost": {
-					"name": "Frost"
+					"name": "Мороз"
 				},
 				"Gnome": {
-					"name": "Gnome"
+					"name": "Гном"
 				},
 				"Gust of Wind": {
-					"name": "Gust of Wind"
+					"name": "Порыв ветра"
 				},
 				"Heat/Chill": {
-					"name": "Heat/Chill"
+					"name": "Жар/холод"
 				},
 				"Ignite": {
-					"name": "Ignite"
+					"name": "Зажигание"
 				},
 				"Pillar": {
-					"name": "Pillar"
+					"name": "Столп"
 				},
 				"Puff of Smoke": {
-					"name": "Puff of Smoke"
+					"name": "Облако дыма"
 				},
 				"Salamander": {
-					"name": "Salamander"
+					"name": "Саламандра"
 				},
 				"Shatter": {
-					"name": "Shatter"
+					"name": "Раскол"
 				},
 				"Stone Shield": {
-					"name": "Stone Shield"
+					"name": "Каменный щит"
 				},
 				"Stone Skin": {
-					"name": "Stone Skin"
+					"name": "Каменная кожа"
 				},
 				"Stonewall": {
-					"name": "Stonewall"
+					"name": "Каменная стена"
 				},
 				"Sylph": {
-					"name": "Sylph"
+					"name": "Сильфида"
 				},
 				"Tidal Wave": {
-					"name": "Tidal Wave"
+					"name": "Приливная волна"
 				},
 				"Undine": {
-					"name": "Undine"
+					"name": "Русалка"
 				},
 				"Whirlwind": {
-					"name": "Whirlwind"
+					"name": "Вихрь"
 				},
 				"Charge": {
-					"name": "Charge"
+					"name": "Заряд"
 				},
 				"Dispel": {
-					"name": "Dispel"
+					"name": "Рассеивание"
 				},
 				"Fetch": {
-					"name": "Fetch"
+					"name": "Притяжение"
 				},
 				"Flick": {
-					"name": "Flick"
+					"name": "Щелчок"
 				},
 				"Light": {
-					"name": "Light"
+					"name": "Свет"
 				},
 				"Magic Seal": {
-					"name": "Magic Seal"
+					"name": "Магическая печать"
 				},
 				"Magic Shield": {
-					"name": "Magic Shield"
+					"name": "Магический щит"
 				},
 				"Open/Close": {
-					"name": "Open/Close"
+					"name": "Открыть/закрыть"
 				},
 				"Permanence": {
-					"name": "Permanence"
+					"name": "Постоянство"
 				},
 				"Protector": {
-					"name": "Protector"
+					"name": "Оберег"
 				},
 				"Repair Clothes": {
-					"name": "Repair Clothes"
+					"name": "Ремонт одежды"
 				},
 				"Sense Magic": {
-					"name": "Sense Magic"
+					"name": "Чутьё магии"
 				},
 				"Transfer": {
-					"name": "Transfer"
+					"name": "Перенос"
 				},
 				"Divination": {
-					"name": "Divination"
+					"name": "Прорицание"
 				},
 				"Dominate": {
-					"name": "Dominate"
+					"name": "Подчинение"
 				},
 				"Enchant Weapon": {
-					"name": "Enchant Weapon"
+					"name": "Очарование оружия"
 				},
 				"Farsight": {
-					"name": "Farsight"
+					"name": "Предвидение"
 				},
 				"Flight": {
-					"name": "Flight"
+					"name": "Полёт"
 				},
 				"Levitate": {
-					"name": "Levitate"
+					"name": "Левитация"
 				},
 				"Lock/Unlock": {
-					"name": "Lock/Unlock"
+					"name": "Запереть/отпереть"
 				},
 				"Longstrider": {
-					"name": "Longstrider"
+					"name": "Скороход"
 				},
 				"Magic Stool": {
-					"name": "Magic Stool"
+					"name": "Магическая табуретка"
 				},
 				"Mental Strike": {
-					"name": "Mental Strike"
+					"name": "Ментальный удар"
 				},
 				"Power Fist": {
-					"name": "Power Fist"
+					"name": "Силовой кулак"
 				},
 				"Scrying": {
-					"name": "Scrying"
+					"name": "Тайновидение"
 				},
 				"Slow Fall": {
-					"name": "Slow Fall"
+					"name": "Замедленное падение"
 				},
 				"Telepathy": {
-					"name": "Telepathy"
+					"name": "Телепатия"
 				},
 				"Teleport": {
-					"name": "Teleport"
+					"name": "Телепортация"
 				},
 				"Broadsword": {
-					"name": "Broadsword"
+					"name": "Палаш"
 				},
 				"Dagger": {
-					"name": "Dagger"
+					"name": "Кинжал"
 				},
 				"Handaxe": {
-					"name": "Handaxe"
+					"name": "Топорик"
 				},
 				"Halberd": {
-					"name": "Halberd"
+					"name": "Алебарда"
 				},
 				"Knife": {
-					"name": "Knife"
+					"name": "Нож"
 				},
 				"Short Spear": {
-					"name": "Short Spear"
+					"name": "Пилум"
 				},
 				"Short Sword": {
-					"name": "Short Sword"
+					"name": "Короткий меч"
 				},
 				"Scimitar": {
-					"name": "Scimitar"
+					"name": "Скимитар"
 				},
 				"Lance": {
-					"name": "Lance"
+					"name": "Пика"
 				},
 				"Long Spear": {
-					"name": "Long Spear"
+					"name": "Копьё"
 				},
 				"Morningstar": {
-					"name": "Morningstar"
+					"name": "Моргенштерн"
 				},
 				"Unarmed": {
-					"name": "Unarmed"
+					"name": "Рукопашный бой"
 				},
 				"Parrying Dagger": {
-					"name": "Parrying Dagger"
+					"name": "Парирующий кинжал"
 				},
 				"Small Shield": {
-					"name": "Small Shield"
+					"name": "Малый щит"
 				},
 				"Large Shield": {
-					"name": "Large Shield"
+					"name": "Большой щит"
 				},
 				"Longsword": {
-					"name": "Longsword"
+					"name": "Длинный меч"
 				},
 				"Flail": {
-					"name": "Flail"
+					"name": "Цеп"
 				},
 				"Light Warhammer": {
-					"name": "Light Warhammer"
+					"name": "Лёгкий молот"
 				},
 				"Heavy Warhammer": {
-					"name": "Heavy Warhammer"
+					"name": "Тяжёлый молот"
 				},
 				"Mace": {
-					"name": "Mace"
+					"name": "Булава"
 				},
 				"Battleaxe": {
-					"name": "Battleaxe"
+					"name": "Боевой топор"
 				},
 				"Light Blunt Object": {
-					"name": "Light Blunt Object"
+					"name": "Лёгкий тупой предмет"
 				},
 				"Heavy Blunt Object": {
-					"name": "Heavy Blunt Object"
+					"name": "Тяжёлый тупой предмет"
 				},
 				"Trident": {
-					"name": "Trident"
+					"name": "Трезубец"
 				},
 				"Small Wooden Club": {
-					"name": "Small Wooden Club"
+					"name": "Малая дубинка"
 				},
 				"Large Wooden Club": {
-					"name": "Large Wooden Club"
+					"name": "Большая дубинка"
 				},
 				"Staff": {
-					"name": "Staff"
+					"name": "Посох"
 				},
 				"Greatsword": {
-					"name": "Greatsword"
+					"name": "Двуручный меч"
 				},
 				"Two-Handed Axe": {
-					"name": "Two-Handed Axe"
+					"name": "Двуручный топор"
 				},
 				"Hand Crossbow": {
-					"name": "Hand Crossbow"
+					"name": "Ручной арбалет"
 				},
 				"Light Crossbow": {
-					"name": "Light Crossbow"
+					"name": "Лёгкий арбалет"
 				},
 				"Heavy Crossbow": {
-					"name": "Heavy Crossbow"
+					"name": "Тяжёлый арбалет"
 				},
 				"Short Bow": {
-					"name": "Short Bow"
+					"name": "Короткий лук"
 				},
 				"Longbow": {
-					"name": "Longbow"
+					"name": "Длинный лук"
 				},
 				"Sling": {
-					"name": "Sling"
+					"name": "Праща"
 				},
 				"Mentalist": {
-					"name": "Mentalist"
+					"name": "Менталист"
 				},
 				"Chalice": {
-					"name": "Chalice"
+					"name": "Чаша"
 				},
 				"Gemstone": {
-					"name": "Gemstone"
+					"name": "Самоцвет"
 				},
 				"Gold Amulet": {
-					"name": "Gold Amulet"
+					"name": "Золотой амулет"
 				},
 				"Gold Bracelet": {
-					"name": "Gold Bracelet"
+					"name": "Золотой браслет"
 				},
 				"Gold Necklace": {
-					"name": "Gold Necklace"
+					"name": "Золотое ожерелье"
 				},
 				"Gold Ring": {
-					"name": "Gold Ring"
+					"name": "Золотое кольцо"
 				},
 				"Mastercrafted Battleaxe": {
-					"name": "Mastercrafted Battleaxe"
+					"name": "Превосходный боевой топор"
 				},
 				"Mastercrafted Broadsword": {
-					"name": "Mastercrafted Broadsword"
+					"name": "Превосходный палаш"
 				},
 				"Mastercrafted Dagger": {
-					"name": "Mastercrafted Dagger"
+					"name": "Превосходный кинжал"
 				},
 				"Mastercrafted Heavy Warhammer": {
-					"name": "Mastercrafted Heavy Warhammer"
+					"name": "Превосходный тяжёлый молот"
 				},
 				"Mastercrafted Longsword": {
-					"name": "Mastercrafted Longsword"
+					"name": "Превосходный длинный меч"
 				},
 				"Mastercrafted Short Sword": {
-					"name": "Mastercrafted Short Sword"
+					"name": "Превосходный короткий меч"
 				},
 				"Poison Dagger": {
-					"name": "Poison Dagger"
+					"name": "Ядовитый кинжал"
 				},
 				"Silver Bracelet": {
-					"name": "Silver Bracelet"
+					"name": "Серебряный браслет"
 				},
 				"Silver Brooch": {
-					"name": "Silver Brooch"
+					"name": "Серебряная брошь"
 				},
 				"Silver Necklace": {
-					"name": "Silver Necklace"
+					"name": "Серебряное ожерелье"
 				},
 				"Silver Ring": {
-					"name": "Silver Ring"
+					"name": "Серебряное кольцо"
 				},
 				"Amnesia": {
-					"name": "Amnesia"
+					"name": "Потеря памяти"
 				},
 				"Broken arm": {
-					"name": "Broken arm"
+					"name": "Перелом руки"
 				},
 				"Broken leg": {
-					"name": "Broken leg"
+					"name": "Перелом ноги"
 				},
 				"Broken nose": {
-					"name": "Broken nose"
+					"name": "Перелом носа"
 				},
 				"Broken ribs": {
-					"name": "Broken ribs"
+					"name": "Перелом рёбер"
 				},
 				"Changed personality": {
-					"name": "Changed personality"
+					"name": "Изменение личности"
 				},
 				"Concussion": {
-					"name": "Concussion"
+					"name": "Сотрясение мозга"
 				},
 				"Deep wounds": {
-					"name": "Deep wounds"
+					"name": "Глубокие раны"
 				},
 				"Gouged eye": {
-					"name": "Gouged eye"
+					"name": "Выколотый глаз"
 				},
 				"Nightmares": {
-					"name": "Nightmares"
+					"name": "Кошмары"
 				},
 				"Scarred face": {
-					"name": "Scarred face"
+					"name": "Изуродованное лицо"
 				},
 				"Severed finger": {
-					"name": "Severed finger"
+					"name": "Отрубленный палец руки"
 				},
 				"Severed toe": {
-					"name": "Severed toe"
+					"name": "Отрубленный палец ноги"
 				},
 				"Teeth knocked out": {
-					"name": "Teeth knocked out"
+					"name": "Выбитые зубы"
 				}
 			},
 			"tables": {
@@ -2358,7 +2370,7 @@
 					}
 				},
 				"The Journey - 6. The place is called": {
-					"name": "Tокруженное - 6. Которое зовётся",
+					"name": "Путешествие - 6. Которое зовётся",
 					"description": "Которое зовётся",
 					"results": {
 						"1-1": "Bark’s Blood.",
@@ -2672,7 +2684,7 @@
 					}
 				},
 				"Treasure": {
-					"name": "Сокровища",
+					"name": "Сокровище",
 					"description": "",
 					"results": {
 						"1-1": "[[d6]] медных монет",
@@ -2700,29 +2712,29 @@
 						"23-23": "Золотое кольцо",
 						"24-24": "Самоцвет",
 						"25-25": "Серебряная брошь",
-						"26-26": "Сокровища - Одежда",
-						"27-27": "Сокровища - Оружие ближнего боя 1",
-						"28-28": "Сокровища - Оружие ближнего боя 2",
-						"29-29": "Сокровища - Дистанционное оружие",
-						"30-30": "Сокровища - Превосходное оружие",
-						"31-31": "Сокровища - Броня",
+						"26-26": "Сокровище - Одежда",
+						"27-27": "Сокровище - Оружие ближнего боя 1",
+						"28-28": "Сокровище - Оружие ближнего боя 2",
+						"29-29": "Сокровище - Дистанционное оружие",
+						"30-30": "Сокровище - Превосходное оружие",
+						"31-31": "Сокровище - Броня",
 						"32-32": "@UUID[Item.2PlS8RZ11HbJxOhf]{Отравленный кинжал}. Совершите проверку Уклонения. При провале вы получаете порез и испытываете воздействие яда с мощностью 12. Совершите бросок [[/roll D3]], чтобы определить тип: 1. смертельный; 2. парализующий; 3 усыпляющий.",
 						"33-33": "<b>Ржавый гвоздь.</b> Совершите проверку Уклонения. При провале вы получаете [[/damage D6]] урона. Броня вас не защитит.",
 						"34-34": "@UUID[Item.brwS719az0E1uM4V]{Гримуар}. Совершите бросок [[/roll D4]], чтобы определить школу: 1: анимизм, 2: элементализм, 3: ментализм, 4: общая магия. Совершите бросок [[/roll D4−1]], чтобы определить ранг заклинания (0 означает фокусы) и [[/roll D4]] для определения числа. Мастер выбирает конкретные заклинания (вручную или случайно).",
 						"35-35": "@UUID[Item.4euiW6ItX0zTca9i]{Бутыль}. Проверка Исцеления определяет содержимое. При провале, Мастер совершает тайный бросок. Бросьте [[/roll D6]]. 1: смертельный урон (мощность 12); 2: усыпляющий яд (мощность 14); 3: алкоголь; 4: травяной отвар; 5: зелье исцеления (2D6 ПЗ); 6: зелье исцеления (3D6 ПЗ).",
-						"36-36": "Сокровища - Книга",
-						"37-37": "Сокровища - Инструмент",
-						"38-38": "Сокровища - Товар",
+						"36-36": "Сокровище - Книга",
+						"37-37": "Сокровище - Инструмент",
+						"38-38": "Сокровище - Товар",
 						"39-39": "<b>Крыса.</b> Совершите проверку Уклонения. При провале вы получаете [[/damage D4]] урона. Броня вас не защитит.",
 						"40-40": "Золотой амулет"
 					}
 				},
 				"Treasure - Armor": {
-					"name": "Сокровища - Броня",
+					"name": "Сокровище - Броня",
 					"description": "",
 					"results": {
-						"1-1": "Щит, малый",
-						"2-2": "Щит, большой",
+						"1-1": "Малый щит",
+						"2-2": "Большой щит",
 						"3-3": "Открытый шлем",
 						"4-4": "Большой шлем",
 						"5-5": "Клёпаная кожанка",
@@ -2730,7 +2742,7 @@
 					}
 				},
 				"Treasure - Book": {
-					"name": "Сокровища - Книга",
+					"name": "Сокровище - Книга",
 					"description": "",
 					"results": {
 						"1-1": "@UUID[Item.csHy2MVcDDH6yuKa]{Book} <i>Eat or Be Eaten – Plants of the Forest</i>",
@@ -2742,7 +2754,7 @@
 					}
 				},
 				"Treasure - Clothing": {
-					"name": "Сокровища - Одежда",
+					"name": "Сокровище - Одежда",
 					"description": "",
 					"results": {
 						"1-1": "Сапоги",
@@ -2751,7 +2763,7 @@
 					}
 				},
 				"Treasure - Instrument": {
-					"name": "Сокровища - Музыкальный инструмент",
+					"name": "Сокровище - Музыкальный инструмент",
 					"description": "",
 					"results": {
 						"1-1": "Горн",
@@ -2763,7 +2775,7 @@
 					}
 				},
 				"Treasure - Mastercrafted Weapon": {
-					"name": "Сокровища - Превосходное оружие",
+					"name": "Сокровище - Превосходное оружие",
 					"description": "",
 					"results": {
 						"1-1": "Превосходный кинжал",
@@ -2775,7 +2787,7 @@
 					}
 				},
 				"Treasure - Melee 1": {
-					"name": "Сокровища - Оружие ближнего боя 1",
+					"name": "Сокровище - Оружие ближнего боя 1",
 					"description": "",
 					"results": {
 						"1-1": "Кинжал",
@@ -2787,7 +2799,7 @@
 					}
 				},
 				"Treasure - Melee 2": {
-					"name": "Сокровища - Оружие ближнего боя 2",
+					"name": "Сокровище - Оружие ближнего боя 2",
 					"description": "",
 					"results": {
 						"1-1": "Топорик",
@@ -2799,7 +2811,7 @@
 					}
 				},
 				"Treasure - Ranged": {
-					"name": "Сокровища - Дистанционное оружие",
+					"name": "Сокровище - Дистанционное оружие",
 					"description": "",
 					"results": {
 						"1-1": "Праща",
@@ -2811,13 +2823,13 @@
 					}
 				},
 				"Treasure - Trade Goods": {
-					"name": "Сокровища - Товар",
+					"name": "Сокровище - Товар",
 					"description": "",
 					"results": {
 						"1-1": "Увеличительной стекло",
 						"2-2": "Подзорная труба",
 						"3-3": "Флакон духов",
-						"4-4": "Шахматы",
+						"4-4": "Шахматный набор",
 						"5-5": "Игральные карты",
 						"6-6": "Мраморные шарики"
 					}
@@ -2847,7 +2859,7 @@
 					}
 				},
 				"Improvised Weapons - Inn": {
-					"name": "Импровизированное оружие - Таверна",
+					"name": "Импровизированное оружие - Трактир",
 					"description": "",
 					"results": {
 						"1-1": "@UUID[JournalEntry.nIfNkZU6DCtG9Qfz.JournalEntryPage.3M2i0ZRmAmHh9Mm4]{Кипящий котёл}",
@@ -2898,7 +2910,7 @@
 
 			"cards": {
 				"Treasure": {
-					"name": "Сокровища",
+					"name": "Сокровище",
 					"description": ""
 				},
 				"Initiative": {
@@ -2906,7 +2918,7 @@
 					"description": ""
 				},
 				"Improvised Weapon - Inn": {
-					"name": "Импровизированное оружие - Таверна",
+					"name": "Импровизированное оружие - Трактир",
 					"description": ""
 				},
 				"Improvised Weapon - Forest": {
