@@ -2,18 +2,75 @@
 	"label": "Dragonbane - Основной набор",
 	"mapping": {
 		"actors": {
+			"description": "system.description",
 			"items": {
 				"path": "items",
 				"converter": "fromPack"
-			}
+			},
+			"tokenName": "prototypeToken.name",
+			"abilities": "system.abilities"
 		},
-		"items": {}
+		"items": {
+			"description": "system.description",
+			"requirement": "system.requirement"
+		}
 	},
 	"folders": {},
 	"entries": {
-		"Dragonbane - ПRules": {
-			"name": "Dragonbane - равила",
+		"Dragonbane - Rules": {
+			"name": "Dragonbane - Правила",
 			"description": "<img style=\"display:block;margin:auto;border:0px solid transparent\" src=\"systems/dragonbane/art/ui/logo-en.webp\" /><p>This will import all content from the rule book into your world.</p><p>Note that existing versions of the content will be overwritten!</p><p>If you want to keep ownership settings on existing content, go to Game Settings &gt; Configure Settings and check the corresponding checkbox.</p><p></p><hr /><p style=\"font-size:smaller\">No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher.</p><p>Dragonbane is a registered trademark by Fria Ligan AB.</p><p>©2023 Fria Ligan AB</p><hr /><p>Published by: <a href=\"http://freeleaguepublishing.com/\">Fria Ligan AB</a></p><p>Foundry VTT version by: <a href=\"http://patrikp.com/\">Patrik Påfvelsson (PatrikP)</a></p><p><a href=\"mailto:info@frialigan.se\">info@frialigan.se</a></p>",
+			"folders": {
+				"Dragonbane - Rules": "Dragonbane - Правила",
+				"Bestiary": "Бестиарий",
+				"Common Animals": "Обычные животные",
+				"Elementals": "Элементали",
+				"Pre-Gen Characters": "Готовые персонажи игроков",
+				"Typical NPCs": "Обычные персонажи ведущего",
+				"Abilities": "Умения",
+				"Heroic Abilities": "Героические умения",
+				"Kin Abilities": "Врождённые умения",
+				"Gear": "Снаряжение",
+				"Animals": "Животные",
+				"Armor & Helmets": "Броня и шлемы",
+				"Clothes": "Одежда",
+				"Containers": "Контейнеры",
+				"Hunting & Fishing": "Охота и рыбалка",
+				"Light Sources": "Источники освещения",
+				"Means of Travel": "Способы передвижения",
+				"Medicine": "Лекарства",
+				"Memento": "Сувениры",
+				"Musical Instruments": "Музыкальные инструменты",
+				"Services": "Услуги",
+				"Studies & Magic": "Учебники и магия",
+				"Tools": "Инструменты",
+				"Trade Goods": "Товары",
+				"Kin": "Народы",
+				"Professions": "Профессии",
+				"Skills": "Навыки",
+				"Core Skills": "Основные навыки",
+				"Secondary Skills": "Дополнительные навыки",
+				"Weapon Skills": "Оружейные навыки",
+				"Spells": "Заклинания",
+				"Animism": "Анимизм",
+				"Elementalism": "Элементализм",
+				"General Magic": "Общие заклинания",
+				"Mentalism": "Ментализм",
+				"7. Bestiary": "7. Бестиарий",
+				"5. Magic": "5. Магия",
+				"2. Your Player Character": "2. Ваш персонаж",
+				"4. Combat & Damage": "4. Бой и урон",
+				"8. Adventures": "8. Приключения",
+				"Melee Weapons": "Оружие ближнего боя",
+				"Ranged Weapons": "Дистанционное оружие",
+				"Dragonbane": "Dragonbane",
+				"Treasure": "Сокровища",
+				"Improvised Weapons": "Импровизированное оружие",
+				"Create Adventure and NPC": "Создать приключение и персонажей",
+				"The Castle of the Robber Knight": "Замок Рыцаря-разбойника",
+				"Attribute Rolls": "Броски характеристик",
+				"Injuries": "Увечья"
+			},
 			"scenes": {
 				"Dragonbane": {
 					"name": "Dragonbane"
@@ -22,7 +79,7 @@
 					"name": "Сцена - Поле"
 				},
 				"Battlemap - Stone": {
-					"name": "Сцена - Камень"
+					"name": "Сцена - Склеп"
 				},
 				"The Castle of the Robber Knight": {
 					"name": "Замок Рыцаря-разбойника",
@@ -93,201 +150,176 @@
 			},
 			"actors": {
 				"Demon": {
-					"name": "Demon",
-					"tokenName": "Demon",
-					"items": {
-						"Evade": {
-							"name": "Evade"
-						}
-					}
+					"name": "Демон",
+					"tokenName": "Демон"
 				},
 				"Dragon": {
-					"name": "Dragon",
-					"tokenName": "Dragon",
-					"items": {
-						"Evade": {
-							"name": "Evade"
-						}
-					}
+					"name": "Дракон",
+					"tokenName": "Дракон"
 				},
 				"Ghost": {
-					"name": "Ghost",
-					"tokenName": "Ghost",
-					"items": {
-						"Evade": {
-							"name": "Evade"
-						}
-					}
+					"name": "Призрак",
+					"tokenName": "Призрак"
 				},
 				"Giant": {
-					"name": "Giant",
-					"tokenName": "Giant",
-					"items": {
-						"Evade": {
-							"name": "Evade"
-						}
-					}
+					"name": "Великан",
+					"tokenName": "Великан"
 				},
 				"Giant Spider": {
-					"name": "Giant Spider",
-					"tokenName": "Giant Spider",
-					"items": {
-						"Evade": {
-							"name": "Evade"
-						}
-					}
+					"name": "Гигантский паук",
+					"tokenName": "Гигантский паук"
 				},
 				"Goblin - Scout": {
-					"name": "Goblin - Scout",
-					"tokenName": "Goblin - Scout"
+					"name": "Гоблин-разведчик",
+					"tokenName": "Гоблин-разведчик"
 				},
 				"Goblin - Warrior": {
-					"name": "Goblin - Warrior",
-					"tokenName": "Goblin - Warrior"
+					"name": "Гоблин-воин",
+					"tokenName": "Гоблин-воин"
 				},
 				"Griffon": {
-					"name": "Griffon",
-					"tokenName": "Griffon"
+					"name": "Гриффон",
+					"tokenName": "Гриффон"
 				},
 				"Harpy": {
-					"name": "Harpy",
-					"tokenName": "Harpy"
+					"name": "Гарпия",
+					"tokenName": "Гарпия"
 				},
 				"Manticore": {
-					"name": "Manticore",
-					"tokenName": "Manticore"
+					"name": "Мантикора",
+					"tokenName": "Мантикора"
 				},
 				"Minotaur": {
-					"name": "Minotaur",
-					"tokenName": "Minotaur"
+					"name": "Минотавр",
+					"tokenName": "Минотавр"
 				},
 				"Orc - Chieftain": {
-					"name": "Orc - Chieftain",
-					"tokenName": "Orc - Chieftain"
+					"name": "Орк-вождь",
+					"tokenName": "Орк-вождь"
 				},
 				"Orc - Shaman": {
-					"name": "Orc - Shaman",
-					"tokenName": "Orc - Shaman"
+					"name": "Орк-шаман",
+					"tokenName": "Орк-шаман"
 				},
 				"Orc - Warrior": {
-					"name": "Orc - Warrior",
-					"tokenName": "Orc - Warrior"
+					"name": "Орк-воин",
+					"tokenName": "Орк-воин"
 				},
 				"Skeleton - Archer": {
-					"name": "Skeleton - Archer",
-					"tokenName": "Skeleton - Archer"
+					"name": "Скелет-лучник",
+					"tokenName": "Скелет-лучник"
 				},
 				"Skeleton - Champion": {
-					"name": "Skeleton - Champion",
-					"tokenName": "Skeleton - Champion"
+					"name": "Скелет-защитник",
+					"tokenName": "Скелет-защитник"
 				},
 				"Skeleton - Warrior": {
-					"name": "Skeleton - Warrior",
-					"tokenName": "Skeleton - Warrior"
+					"name": "Скелет-воин",
+					"tokenName": "Скелет-воин"
 				},
 				"Troll": {
-					"name": "Troll",
-					"tokenName": "Troll"
+					"name": "Тролль",
+					"tokenName": "Тролль"
 				},
 				"Vampiric Bats": {
-					"name": "Vampiric Bats",
-					"tokenName": "Vampiric Bats"
+					"name": "Летучие мыши-вампиры",
+					"tokenName": "Летучие мыши-вампиры"
 				},
 				"Wight": {
-					"name": "Wight",
-					"tokenName": "Wight"
+					"name": "Умертвие",
+					"tokenName": "Умертвие"
 				},
 				"Bear": {
-					"name": "Bear",
-					"tokenName": "Bear"
+					"name": "Медведь",
+					"tokenName": "Медведь"
 				},
 				"Cat": {
-					"name": "Cat",
-					"tokenName": "Cat"
+					"name": "Кошка",
+					"tokenName": "Кошка"
 				},
 				"Deer": {
-					"name": "Deer",
-					"tokenName": "Deer"
+					"name": "Олень",
+					"tokenName": "Олень"
 				},
 				"Dog": {
-					"name": "Dog",
-					"tokenName": "Dog"
+					"name": "Собака",
+					"tokenName": "Собака"
 				},
 				"Donkey": {
-					"name": "Donkey",
-					"tokenName": "Donkey"
+					"name": "Осёл",
+					"tokenName": "Осёл"
 				},
 				"Fox": {
-					"name": "Fox",
-					"tokenName": "Fox"
+					"name": "Лиса",
+					"tokenName": "Лиса"
 				},
 				"Goat": {
-					"name": "Goat",
-					"tokenName": "Goat"
+					"name": "Козёл",
+					"tokenName": "Козёл"
 				},
 				"Horse": {
-					"name": "Horse",
-					"tokenName": "Horse"
+					"name": "Лошадь",
+					"tokenName": "Лошадь"
 				},
 				"Moose": {
-					"name": "Moose",
-					"tokenName": "Moose"
+					"name": "Лось",
+					"tokenName": "Лось"
 				},
 				"Wild Boar": {
-					"name": "Wild Boar",
-					"tokenName": "Wild Boar"
+					"name": "Кабан",
+					"tokenName": "Кабан"
 				},
 				"Wolf": {
-					"name": "Wolf",
-					"tokenName": "Wolf"
+					"name": "Волк",
+					"tokenName": "Волк"
 				},
 				"Gnome (power level 1)": {
-					"name": "Gnome (power level 1)",
-					"tokenName": "Gnome (power level 1)"
+					"name": "Гном (мощность 1)",
+					"tokenName": "Гном (мощность 1)"
 				},
 				"Gnome (power level 2)": {
-					"name": "Gnome (power level 2)",
-					"tokenName": "Gnome (power level 2)"
+					"name": "Гном (мощность 2)",
+					"tokenName": "Гном (мощность 2)"
 				},
 				"Gnome (power level 3)": {
-					"name": "Gnome (power level 3)",
-					"tokenName": "Gnome (power level 3)"
+					"name": "Гном (мощность 3)",
+					"tokenName": "Gnome (мощность 3)"
 				},
 				"Salamander (power level 1)": {
-					"name": "Salamander (power level 1)",
-					"tokenName": "Salamander (power level 1)"
+					"name": "Саламандра (мощность 1)",
+					"tokenName": "Саламандра (мощность 1)"
 				},
 				"Salamander (power level 2)": {
-					"name": "Salamander (power level 2)",
-					"tokenName": "Salamander (power level 2)"
+					"name": "Саламандра (мощность 2)",
+					"tokenName": "Саламандра (мощность 2)"
 				},
 				"Salamander (power level 3)": {
-					"name": "Salamander (power level 3)",
-					"tokenName": "Salamander (power level 3)"
+					"name": "Саламандра (мощность 3)",
+					"tokenName": "Саламандра (мощность 3)"
 				},
 				"Sylph (power level 1)": {
-					"name": "Sylph (power level 1)",
-					"tokenName": "Sylph (power level 1)"
+					"name": "Сильфида (мощность 1)",
+					"tokenName": "Сильфида (мощность 1)"
 				},
 				"Sylph (power level 2)": {
-					"name": "Sylph (power level 2)",
-					"tokenName": "Sylph (power level 2)"
+					"name": "Сильфида (мощность 2)",
+					"tokenName": "Сильфида (мощность 2)"
 				},
 				"Sylph (power level 3)": {
-					"name": "Sylph (power level 3)",
-					"tokenName": "Sylph (power level 3)"
+					"name": "Сильфида (мощность 3)",
+					"tokenName": "Сильфида (мощность 3)"
 				},
 				"Undine (power level 1)": {
-					"name": "Undine (power level 1)",
-					"tokenName": "Undine (power level 1)"
+					"name": "Русалка (мощность 1)",
+					"tokenName": "Русалка (мощность 1)"
 				},
 				"Undine (power level 2)": {
-					"name": "Undine (power level 2)",
-					"tokenName": "Undine (power level 2)"
+					"name": "Русалка (мощность 2)",
+					"tokenName": "Русалка (мощность 2)"
 				},
 				"Undine (power level 3)": {
-					"name": "Undine (power level 3)",
-					"tokenName": "Undine (power level 3)"
+					"name": "Русалка (мощность 3)",
+					"tokenName": "Русалка (мощность 3)"
 				},
 				"Archmaster Aodhan": {
 					"name": "Archmaster Aodhan",
@@ -310,78 +342,78 @@
 					"tokenName": "Orla Moonsilver"
 				},
 				"Adventurer": {
-					"name": "Adventurer",
-					"tokenName": "Adventurer"
+					"name": "Искатель приключений",
+					"tokenName": "Искатель приключений"
 				},
 				"Archmage (Boss)": {
-					"name": "Archmage (Boss)",
-					"tokenName": "Archmage (Boss)"
+					"name": "Архимаг (босс)",
+					"tokenName": "Архимаг (босс)"
 				},
 				"Bandit": {
-					"name": "Bandit",
-					"tokenName": "Bandit"
+					"name": "Бандит",
+					"tokenName": "Бандит"
 				},
 				"Bandit Chief (Boss)": {
-					"name": "Bandit Chief (Boss)",
-					"tokenName": "Bandit Chief (Boss)"
+					"name": "Бандитский атаман (босс)",
+					"tokenName": "Бандитский атаман (босс)"
 				},
 				"Cultist": {
-					"name": "Cultist",
-					"tokenName": "Cultist"
+					"name": "Культист",
+					"tokenName": "Культист"
 				},
 				"Guard": {
-					"name": "Guard",
-					"tokenName": "Guard"
+					"name": "Стражник",
+					"tokenName": "Стражник"
 				},
 				"Hunter": {
-					"name": "Hunter",
-					"tokenName": "Hunter"
+					"name": "Охотник",
+					"tokenName": "Охотник"
 				},
 				"Knight Champion (Boss)": {
-					"name": "Knight Champion (Boss)",
-					"tokenName": "Knight Champion (Boss)"
+					"name": "Рыцарь-поборник (босс)",
+					"tokenName": "Рыцарь-поборник (босс)"
 				},
 				"Scholar": {
-					"name": "Scholar",
-					"tokenName": "Scholar"
+					"name": "Учёный",
+					"tokenName": "Учёный"
 				},
 				"Thief": {
-					"name": "Thief",
-					"tokenName": "Thief"
+					"name": "Вор",
+					"tokenName": "Вор"
 				},
 				"Villager": {
-					"name": "Villager",
-					"tokenName": "Villager"
+					"name": "Сельчанин",
+					"tokenName": "Сельчанин"
 				},
 				"Goblin": {
-					"name": "Goblin",
-					"tokenName": "Goblin"
+					"name": "Гоблин",
+					"tokenName": "Гоблин"
 				},
 				"Grunta": {
-					"name": "Grunta",
-					"tokenName": "Grunta"
+					"name": "Грунта",
+					"tokenName": "Грунта"
 				},
 				"Jaldo": {
-					"name": "Jaldo",
-					"tokenName": "Jaldo"
+					"name": "Яльдо",
+					"tokenName": "Яльдо"
 				},
 				"The Robber Knight": {
-					"name": "The Robber Knight",
-					"tokenName": "The Robber Knight"
+					"name": "Рыцарь-разбойник",
+					"tokenName": "Рыцарь-разбойник"
 				}
 			},
 			"items": {
 				"Assassin": {
-					"name": "Assassin"
+					"name": "Убийца"
 				},
 				"Backstabbing": {
-					"name": "Backstabbing"
+					"name": "Удар в спину"
 				},
 				"Battle Cry": {
-					"name": "Battle Cry"
+					"name": "Боевой клич"
 				},
 				"Berserker": {
-					"name": "Berserker"
+					"name": "Берсерк"
 				},
 				"Catlike": {
 					"name": "Catlike"
@@ -486,70 +518,70 @@
 					"name": "Sea Legs"
 				},
 				"Shield Block": {
-					"name": "Shield Block"
+					"name": "Заграждение щитом"
 				},
 				"Throwing Arm": {
-					"name": "Throwing Arm"
+					"name": "Бросающая рука"
 				},
 				"Treasure Hunter": {
-					"name": "Treasure Hunter"
+					"name": "Охотник за сокровищами"
 				},
 				"Twin Shot": {
-					"name": "Twin Shot"
+					"name": "Сдвоенный выстрел"
 				},
 				"Veteran": {
-					"name": "Veteran"
+					"name": "Ветеран"
 				},
 				"Weasel": {
 					"name": "Weasel"
 				},
 				"Adaptive": {
-					"name": "Adaptive"
+					"name": "Приспособление"
 				},
 				"Hard to Catch": {
-					"name": "Hard to Catch"
+					"name": "Изворотливость"
 				},
 				"Hunting Instincts": {
-					"name": "Hunting Instincts"
+					"name": "Охотничьи инстинкты"
 				},
 				"Ill-Tempered": {
-					"name": "Ill-Tempered"
+					"name": "Дурной нрав"
 				},
 				"Inner Peace": {
-					"name": "Inner Peace"
+					"name": "Внутренний покой"
 				},
 				"Unforgiving": {
-					"name": "Unforgiving"
+					"name": "Злопамятность"
 				},
 				"Webbed Feet": {
-					"name": "Webbed Feet"
+					"name": "Перепончатые лапы"
 				},
 				"Chicken": {
-					"name": "Chicken"
+					"name": "Курица"
 				},
 				"Combat Trained Horse": {
-					"name": "Combat Trained Horse"
+					"name": "Боевой конь"
 				},
 				"Cow": {
-					"name": "Cow"
+					"name": "Корова"
 				},
 				"Donkey": {
-					"name": "Donkey"
+					"name": "Осёл"
 				},
 				"Guard Dog": {
-					"name": "Guard Dog"
+					"name": "Сторожевой пёс"
 				},
 				"Homing Pigeon in Cage": {
-					"name": "Homing Pigeon in Cage"
+					"name": "Почтовый голубь"
 				},
 				"Pig": {
-					"name": "Pig"
+					"name": "Свинья"
 				},
 				"Riding Horse": {
-					"name": "Riding Horse"
+					"name": "Ездовая лошадь"
 				},
 				"Sheep": {
-					"name": "Sheep"
+					"name": "Овца"
 				},
 				"Chainmail": {
 					"name": "Chainmail"
@@ -951,79 +983,81 @@
 					"name": "Whistle"
 				},
 				"Dwarf": {
-					"name": "Dwarf"
+					"name": "Дварф"
 				},
 				"Elf": {
-					"name": "Elf"
+					"name": "Эльф"
 				},
 				"Halfling": {
-					"name": "Halfling"
+					"name": "Полурослик"
 				},
 				"Human": {
-					"name": "Human"
+					"name": "Человек"
 				},
 				"Mallard": {
-					"name": "Mallard"
+					"name": "Крякв"
 				},
 				"Wolfkin": {
-					"name": "Wolfkin"
+					"name": "Волкарь",
+					"description": "<p>Волкари — это неукротимая ярость дикой природы. Они могут быть весьма разумными созданиями, и, подобно эльфам, склонны погружаться в размышления, постигая тайны мироздания. Но под поверхностью кипят древние охотничьи инстинкты и неугасимый гнев за прошлые обиды, причинённые волкарям, волкам и дикой природе в целом. Как охотники и следопыты они не знают равных, но волкарей также можно встретить в качестве тяжеловооружённых наёмников или мистиков и целителей в человеческих поселениях.</p>",
+					"abilities": "Охотничьи инстинкты"
 				},
 				"Animist": {
-					"name": "Animist"
+					"name": "Анимист"
 				},
 				"Artisan": {
-					"name": "Artisan"
+					"name": "Ремесленник"
 				},
 				"Bard": {
-					"name": "Bard"
+					"name": "Бард"
 				},
 				"Elementalist": {
-					"name": "Elementalist"
+					"name": "Элементалист"
 				},
 				"Fighter": {
-					"name": "Fighter"
+					"name": "Воин"
 				},
 				"Hunter": {
-					"name": "Hunter"
+					"name": "Охотник"
 				},
 				"Knight": {
-					"name": "Knight"
+					"name": "Рыцарь"
 				},
 				"Mariner": {
-					"name": "Mariner"
+					"name": "Моряк"
 				},
 				"Merchant": {
-					"name": "Merchant"
+					"name": "Купец"
 				},
 				"Scholar": {
-					"name": "Scholar"
+					"name": "Учёный"
 				},
 				"Thief": {
-					"name": "Thief"
+					"name": "Вор"
 				},
 				"Acrobatics": {
-					"name": "Acrobatics"
+					"name": "Акробатика"
 				},
 				"Awareness": {
-					"name": "Awareness"
+					"name": "Внимание"
 				},
 				"Bartering": {
-					"name": "Bartering"
+					"name": "Торговля"
 				},
 				"Beast Lore": {
-					"name": "Beast Lore"
+					"name": "Знание зверей"
 				},
 				"Bluffing": {
-					"name": "Bluffing"
+					"name": "Обман"
 				},
 				"Bushcraft": {
 					"name": "Bushcraft"
 				},
 				"Crafting": {
-					"name": "Crafting"
+					"name": "Ремесло"
 				},
 				"Evade": {
-					"name": "Evade"
+					"name": "Уклонение"
 				},
 				"Hunting & Fishing": {
 					"name": "Hunting & Fishing"
@@ -1535,7 +1569,7 @@
 					}
 				},
 				"Monster Attacks - Wight": {
-					"name": "Атаки чудовища - Дух",
+					"name": "Атаки чудовища - Умертвие",
 					"description": "",
 					"results": {
 						"1-1": "<b>Unholy Roar!</b> The wight’s decomposed skull contorts and lets out a ghastly scream that cuts like a rusty blade through the characters’ souls. Everyone within 10 meters suffers a fear attack and must roll against WIL to resist @Table[RollTable.wHTr9HuHkpVv7ccX]{fear}.",
@@ -1661,7 +1695,7 @@
 					}
 				},
 				"Monster Attacks - Ghost": {
-					"name": "Атаки чудовища - Призрак ",
+					"name": "Атаки чудовища - Призрак",
 					"description": "",
 					"results": {
 						"1-1": "<b>Ghost Strike!</b> The ghost lunges at a player character within 10 meters and strikes with great force. The victim suffers [[/damage 2D6 bludgeoning]], is knocked back the same number of meters, and lands prone.",
@@ -1736,7 +1770,7 @@
 					}
 				},
 				"Mishap - Magic": {
-					"name": "Mishap - Magic",
+					"name": "Побочный эффект - Магия",
 					"description": "",
 					"results": {
 						"1-1": "The magical powers leave you Dazed.",
@@ -1762,7 +1796,7 @@
 					}
 				},
 				"Memento": {
-					"name": "Memento",
+					"name": "Сувенир",
 					"description": "",
 					"results": {
 						"1-1": "Your trusty old shoes",
@@ -1788,7 +1822,7 @@
 					}
 				},
 				"Name - Elf": {
-					"name": "Name - Elf",
+					"name": "Имя - Эльф",
 					"description": "",
 					"results": {
 						"1-1": "Arasin",
@@ -1800,7 +1834,7 @@
 					}
 				},
 				"Name - Mallard": {
-					"name": "Name - Mallard",
+					"name": "Имя - Крякв",
 					"description": "",
 					"results": {
 						"1-1": "Qwucksum",
@@ -1812,7 +1846,7 @@
 					}
 				},
 				"Name - Dwarf": {
-					"name": "Name - Dwarf",
+					"name": "Имя - Дварф",
 					"description": "",
 					"results": {
 						"1-1": "Tinderrock",
@@ -1824,7 +1858,7 @@
 					}
 				},
 				"Name - Halfling": {
-					"name": "Name - Halfling",
+					"name": "Имя - Полурослик",
 					"description": "",
 					"results": {
 						"1-1": "Snappy",
@@ -1836,7 +1870,7 @@
 					}
 				},
 				"Name - Human": {
-					"name": "Name - Human",
+					"name": "Имя - Человек",
 					"description": "",
 					"results": {
 						"1-1": "Joruna",
@@ -1848,7 +1882,7 @@
 					}
 				},
 				"Name - Wolfkin": {
-					"name": "Name - Wolfkin",
+					"name": "Имя - Волкарь",
 					"description": "",
 					"results": {
 						"1-1": "Wyld",
@@ -1860,19 +1894,19 @@
 					}
 				},
 				"Kin": {
-					"name": "Kin",
+					"name": "Народ",
 					"description": "",
 					"results": {
-						"1-4": "Human",
-						"5-7": "Halfling",
-						"8-9": "Dwarf",
-						"10-10": "Elf",
-						"11-11": "Mallard",
-						"12-12": "Wolfkin"
+						"1-4": "Человек",
+						"5-7": "Полурослик",
+						"8-9": "Дварф",
+						"10-10": "Эльф",
+						"11-11": "Крякв",
+						"12-12": "Волкарь"
 					}
 				},
 				"Weakness": {
-					"name": "Weakness",
+					"name": "Слабости",
 					"description": "",
 					"results": {
 						"1-1": "Gullible. I believe everything that others tell me.",
@@ -1898,7 +1932,7 @@
 					}
 				},
 				"Nickname - Bard": {
-					"name": "Nickname - Bard",
+					"name": "Прозвище - Бард",
 					"description": "",
 					"results": {
 						"1-1": "Odemaker",
@@ -1910,7 +1944,7 @@
 					}
 				},
 				"Nickname - Artisan": {
-					"name": "Nickname - Artisan",
+					"name": "Прозвище - Ремесленник",
 					"description": "",
 					"results": {
 						"1-1": "Stonehammer",
@@ -1922,7 +1956,7 @@
 					}
 				},
 				"Nickname - Hunter": {
-					"name": "Nickname - Hunter",
+					"name": "Прозвище - Охотник",
 					"description": "",
 					"results": {
 						"1-1": "Forest Fox",
@@ -1934,7 +1968,7 @@
 					}
 				},
 				"Nickname - Fighter": {
-					"name": "Nickname - Fighter",
+					"name": "Прозвище - Воин",
 					"description": "",
 					"results": {
 						"1-1": "Gravemaker",
@@ -1946,7 +1980,7 @@
 					}
 				},
 				"Nickname - Scholar": {
-					"name": "Nickname - Scholar",
+					"name": "Прозвище - Учёный",
 					"description": "",
 					"results": {
 						"1-1": "Clearmind",
@@ -1958,7 +1992,7 @@
 					}
 				},
 				"Nickname - Mage": {
-					"name": "Nickname - Mage",
+					"name": "Прозвище - Маг",
 					"description": "",
 					"results": {
 						"1-1": "Rootheart",
@@ -1970,7 +2004,7 @@
 					}
 				},
 				"Nickname - Merchant": {
-					"name": "Nickname - Merchant",
+					"name": "Прозвище - Купец",
 					"description": "",
 					"results": {
 						"1-1": "Silvergrin",
@@ -1982,7 +2016,7 @@
 					}
 				},
 				"Nickname - Knight": {
-					"name": "Nickname - Knight",
+					"name": "Прозвище - Рыцарь",
 					"description": "",
 					"results": {
 						"1-1": "Dragonheart",
@@ -1994,7 +2028,7 @@
 					}
 				},
 				"Nickname - Mariner": {
-					"name": "Nickname - Mariner",
+					"name": "Прозвище - Моряк",
 					"description": "",
 					"results": {
 						"1-1": "Whitewater",
@@ -2006,7 +2040,7 @@
 					}
 				},
 				"Nickname - Thief": {
-					"name": "Nickname - Thief",
+					"name": "Прозвище - Вор",
 					"description": "",
 					"results": {
 						"1-1": "Halffinger",
@@ -2018,7 +2052,7 @@
 					}
 				},
 				"Appearance": {
-					"name": "Appearance",
+					"name": "Внешность",
 					"description": "",
 					"results": {
 						"1-1": "Ugly scar across your cheek",
@@ -2044,41 +2078,41 @@
 					}
 				},
 				"Profession": {
-					"name": "Profession",
+					"name": "Профессия",
 					"description": "",
 					"results": {
-						"1-1": "Artisan",
-						"2-2": "Bard",
-						"3-3": "Fighter",
-						"4-4": "Hunter",
-						"5-5": "Knight",
-						"6-6": "Mage. Choose between @UUID[Item.xsMWmMEDLOtF4pDg]{Animist}, @UUID[Item.5qFrwNTam2KA98jh]{Elementalist} and @UUID[Item.fLYDNkiglRRrOcdx]{Mentalist}.",
-						"7-7": "Mariner",
-						"8-8": "Merchant",
-						"9-9": "Scholar",
-						"10-10": "Thief"
+						"1-1": "Ремесленник",
+						"2-2": "Бард",
+						"3-3": "Воин",
+						"4-4": "Охотник",
+						"5-5": "Рыцарь",
+						"6-6": "Маг. Выберите между @UUID[Item.xsMWmMEDLOtF4pDg]{Animist}, @UUID[Item.5qFrwNTam2KA98jh]{Elementalist} и @UUID[Item.fLYDNkiglRRrOcdx]{Mentalist}.",
+						"7-7": "Моряк",
+						"8-8": "Купец",
+						"9-9": "Учёный",
+						"10-10": "Вор"
 					}
 				},
 				"Profession - Mage": {
-					"name": "Profession - Mage",
+					"name": "Профессия - Маг",
 					"description": "",
 					"results": {
-						"1-2": "Animist",
-						"3-4": "Elementalist",
-						"5-6": "Mentalist"
+						"1-2": "Анимист",
+						"3-4": "Элементалист",
+						"5-6": "Менталист"
 					}
 				},
 				"Age": {
-					"name": "Age",
+					"name": "Возраст",
 					"description": "",
 					"results": {
-						"1-3": "Young",
-						"4-5": "Adult",
-						"6-6": "Old"
+						"1-3": "Юнность",
+						"4-5": "Зрелость",
+						"6-6": "Старость"
 					}
 				},
 				"Gear - Bard": {
-					"name": "Gear - Bard",
+					"name": "Снаряжение - Бард",
 					"description": "",
 					"results": {
 						"1-2": "@UUID[Item.D2U19D7Y88lhqoC7]{Lyre}, @UUID[Item.otNTdw5ukG97slmA]{Knife}, @UUID[Item.q1QjsGqlJAfvyloU]{Oil Lamp}, @UUID[Item.BtTyGxh7u1BjJ0n7]{Lamp Oil}, @UUID[Item.Cxwz560f52T07ktk]{Flint &amp; Tinder}, [[/roll D6]]x@UUID[Item.H9N7sigpDLHMQmGL]{Field Ration}, [[/roll D8]] silver",
@@ -2087,7 +2121,7 @@
 					}
 				},
 				"Gear - Artisan": {
-					"name": "Gear - Artisan",
+					"name": "Снаряжение - Ремесленник",
 					"description": "",
 					"results": {
 						"1-2": "@UUID[Item.ApOJDT5NOkTGUITX]{Warhammer, Light}, @UUID[Item.UtY5xcQPBJZuuj7F]{Leather}, @UUID[Item.88nXOQKWHA52n0dC]{Blacksmithing Tools}, @UUID[Item.9pnujo2YnAkyWGYz]{Torch}, @UUID[Item.Cxwz560f52T07ktk]{Flint &amp; Tinder}, [[/roll D8]]x@UUID[Item.H9N7sigpDLHMQmGL]{Field Ration}, [[/roll D8]] silver",
@@ -2096,7 +2130,7 @@
 					}
 				},
 				"Gear - Hunter": {
-					"name": "Gear - Hunter",
+					"name": "Снаряжение - Охотник",
 					"description": "",
 					"results": {
 						"1-2": "@UUID[Item.iaw4A60DRS2GRzU0]{Dagger}, @UUID[Item.JrIyYWUpCA7eRnKH]{Short Bow}, @UUID[Item.N3NiUj3YyV0yjJDm]{Quiver of Arrows, Iron Head}, @UUID[Item.UtY5xcQPBJZuuj7F]{Leather}, @UUID[Item.Pv49mKzwvjvQvvZ1]{Sleeping Fur}, @UUID[Item.9pnujo2YnAkyWGYz]{Torch}, @UUID[Item.Cxwz560f52T07ktk]{Flint &amp; Tinder}, @UUID[Item.MbOxZVTvXbiHc399]{Rope, Hemp (10 meters)}, @UUID[Item.nbKvfDqFtg1ALX5x]{Snare}, [[/roll D8]]x@UUID[Item.H9N7sigpDLHMQmGL]{Field Ration}, [[/roll D6]] silver",
@@ -2105,7 +2139,7 @@
 					}
 				},
 				"Gear - Fighter": {
-					"name": "Gear - Fighter",
+					"name": "Снаряжение - Воин",
 					"description": "",
 					"results": {
 						"1-2": "@UUID[Item.sefGmdXkWF8GzAPH]{Broadsword} or @UUID[Item.rECfZ03SIfAktrLm]{Battleaxe} or @UUID[Item.H0cmKKiRTN0feKBB]{Morningstar}, @UUID[Item.EvriVpr9y7NNxw2q]{Shield, Small}, @UUID[Item.mipOQqpdwapgMuOe]{Chainmail}, @UUID[Item.9pnujo2YnAkyWGYz]{Torch}, @UUID[Item.Cxwz560f52T07ktk]{Flint &amp; Tinder}, [[/roll D6]]x@UUID[Item.H9N7sigpDLHMQmGL]{Field Ration}, [[/roll D6]] silver",
@@ -2114,7 +2148,7 @@
 					}
 				},
 				"Gear - Scholar": {
-					"name": "Gear - Scholar",
+					"name": "Снаряжение - Учёный",
 					"description": "",
 					"results": {
 						"1-2": "@UUID[Item.lL2NDjJbCRygTBYt]{Staff}, @UUID[Item.BSZ8IUXZSdRNDpOq]{Notebook}, @UUID[Item.LCQq5edI2CYZi19X]{Quill &amp; Ink}, @UUID[Item.Pv49mKzwvjvQvvZ1]{Sleeping Fur}, @UUID[Item.9pnujo2YnAkyWGYz]{Torch}, @UUID[Item.Cxwz560f52T07ktk]{Flint &amp; Tinder}, [[/roll D6]]x@UUID[Item.H9N7sigpDLHMQmGL]{Field Ration}, [[/roll D10]] silver",
@@ -2123,7 +2157,7 @@
 					}
 				},
 				"Gear - Mage": {
-					"name": "Gear - Mage",
+					"name": "Снаряжение - Маг",
 					"description": "",
 					"results": {
 						"1-2": "@UUID[Item.lL2NDjJbCRygTBYt]{Staff}, @UUID[Item.SkfAuURGWldr0KIL]{Orbuculum}, @UUID[Item.brwS719az0E1uM4V]{Grimoire}, @UUID[Item.9pnujo2YnAkyWGYz]{Torch}, @UUID[Item.Cxwz560f52T07ktk]{Flint &amp; Tinder}, [[/roll D6]]x@UUID[Item.H9N7sigpDLHMQmGL]{Field Ration}, [[/roll D8]] silver",
@@ -2132,7 +2166,7 @@
 					}
 				},
 				"Gear - Merchant": {
-					"name": "Gear - Merchant",
+					"name": "Снаряжение - Купец",
 					"description": "",
 					"results": {
 						"1-2": "@UUID[Item.iaw4A60DRS2GRzU0]{Dagger}, @UUID[Item.Pv49mKzwvjvQvvZ1]{Sleeping Fur}, @UUID[Item.9pnujo2YnAkyWGYz]{Torch}, @UUID[Item.Cxwz560f52T07ktk]{Flint &amp; Tinder}, @UUID[Item.MbOxZVTvXbiHc399]{Rope, Hemp (10 meters)}, @UUID[Item.NPz7PXpMtnu9Tn2j]{Donkey}, [[/roll D6]]x@UUID[Item.H9N7sigpDLHMQmGL]{Field Ration}, [[/roll D12]] silver",
@@ -2141,7 +2175,7 @@
 					}
 				},
 				"Gear - Knight": {
-					"name": "Gear - Knight",
+					"name": "Снаряжение - Рыцарь",
 					"description": "",
 					"results": {
 						"1-2": "@UUID[Item.sefGmdXkWF8GzAPH]{Broadsword} or @UUID[Item.H0cmKKiRTN0feKBB]{Morningstar}, @UUID[Item.EvriVpr9y7NNxw2q]{Shield, Small}, @UUID[Item.WipvbzHAA5vBHbPL]{Plate Armor}, @UUID[Item.8mC6FZefZPZOEzJo]{Great Helm}, @UUID[Item.9pnujo2YnAkyWGYz]{Torch}, @UUID[Item.Cxwz560f52T07ktk]{Flint &amp; Tinder}, [[/roll D6]]x@UUID[Item.H9N7sigpDLHMQmGL]{Field Ration}, [[/roll D12]] silver",
@@ -2150,7 +2184,7 @@
 					}
 				},
 				"Gear - Mariner": {
-					"name": "Gear - Mariner",
+					"name": "Снаряжение - Моряк",
 					"description": "",
 					"results": {
 						"1-2": "@UUID[Item.iaw4A60DRS2GRzU0]{Dagger}, @UUID[Item.JrIyYWUpCA7eRnKH]{Short Bow}, @UUID[Item.N3NiUj3YyV0yjJDm]{Quiver of Arrows, Iron Head}, @UUID[Item.MbOxZVTvXbiHc399]{Rope, Hemp (10 meters)}, @UUID[Item.1LVGlgHHVSewU8n4]{Grappling Hook}, @UUID[Item.Pv49mKzwvjvQvvZ1]{Sleeping Fur}, @UUID[Item.9pnujo2YnAkyWGYz]{Torch}, @UUID[Item.Cxwz560f52T07ktk]{Flint &amp; Tinder}, [[/roll D8]]x@UUID[Item.H9N7sigpDLHMQmGL]{Field Ration}, [[/roll D10]] silver",
@@ -2159,7 +2193,7 @@
 					}
 				},
 				"Gear - Thief": {
-					"name": "Gear - Thief",
+					"name": "Снаряжение - Вор",
 					"description": "",
 					"results": {
 						"1-2": "@UUID[Item.iaw4A60DRS2GRzU0]{Dagger}, @UUID[Item.2aoEHGjOgRkDpNNy]{Sling}, @UUID[Item.MbOxZVTvXbiHc399]{Rope, Hemp (10 meters)}, @UUID[Item.1LVGlgHHVSewU8n4]{Grappling Hook}, @UUID[Item.9pnujo2YnAkyWGYz]{Torch}, @UUID[Item.Cxwz560f52T07ktk]{Flint &amp; Tinder}, [[/roll D6]]x@UUID[Item.H9N7sigpDLHMQmGL]{Field Ration}, [[/roll D10]] silver",
@@ -2168,7 +2202,7 @@
 					}
 				},
 				"Mishap - Ranged": {
-					"name": "Mishap - Ranged",
+					"name": "Побочный эффект - Дистанционный бой",
 					"description": "",
 					"results": {
 						"1-1": "You drop your weapon at your feet. Picking it up is an action.",
@@ -2180,7 +2214,7 @@
 					}
 				},
 				"Mishap - Melee": {
-					"name": "Mishap - Melee",
+					"name": "Побочный эффект - Ближний бой",
 					"description": "",
 					"results": {
 						"1-1": "You drop your weapon at your feet. Picking it up is an action.",
@@ -2192,7 +2226,7 @@
 					}
 				},
 				"Fear": {
-					"name": "Fear",
+					"name": "Ужас",
 					"description": "",
 					"results": {
 						"1-1": "<b>Enfeebled.</b> The fear drains your energy and determination. You lose [[/roll 2D6]] WP (to a minimum of zero) and become Disheartened.",
@@ -2206,7 +2240,7 @@
 					}
 				},
 				"Severe Injury": {
-					"name": "Severe Injury",
+					"name": "Увечье",
 					"description": "",
 					"results": {
 						"1-2": "Broken nose",
@@ -2226,7 +2260,7 @@
 					}
 				},
 				"Leaving the Adventure Site": {
-					"name": "Leaving the Adventure Site",
+					"name": "Покидая точку интереса",
 					"description": "",
 					"results": {
 						"1-1": "Enemies at the site follow the player characters and attack at an opportune moment.",
@@ -2236,7 +2270,7 @@
 					}
 				},
 				"Mishap - Journey": {
-					"name": "Mishap - Journey",
+					"name": "Побочный эффект - Путешествие",
 					"description": "",
 					"results": {
 						"1-1": "Fog. The player characters are caught unawares by a thick fog. The distance covered this shift is reduced by half.",
@@ -2254,8 +2288,8 @@
 					}
 				},
 				"The Journey - 1. The journey is": {
-					"name": "The Journey - 1. The journey is",
-					"description": "The journey is",
+					"name": "Путешествие - 1. Путешествие оказалось...",
+					"description": "Путешествие оказалось",
 					"results": {
 						"1-1": "easy with plenty of time for song and camaraderie",
 						"2-2": "eventful with unexpected encounters and challenges",
@@ -2264,8 +2298,8 @@
 					}
 				},
 				"The Journey - 2. and ends": {
-					"name": "The Journey - 2. and ends",
-					"description": "and ends",
+					"name": "Путешествие - 2. и окончилось...",
+					"description": "и окончилось",
 					"results": {
 						"1-1": "in the shadow of a mountain.",
 						"2-2": "in the darkness of the forest.",
@@ -2276,8 +2310,8 @@
 					}
 				},
 				"The Journey - 3. There is an": {
-					"name": "The Journey - 3. There is an",
-					"description": "There is",
+					"name": "Путешествие - 3. В нём...",
+					"description": "В нём",
 					"results": {
 						"1-1": "an ancient",
 						"2-2": "an abandoned",
@@ -2290,7 +2324,7 @@
 					}
 				},
 				"The Journey - 4. place": {
-					"name": "The Journey - 4. place",
+					"name": "Путешествие - 4. место",
 					"description": "",
 					"results": {
 						"1-1": "tower ruin",
@@ -2306,8 +2340,8 @@
 					}
 				},
 				"The Journey - 5. surrounded by": {
-					"name": "The Journey - 5. surrounded by",
-					"description": "surrounded by",
+					"name": "Путешествие - 5. окруженное",
+					"description": "окруженное",
 					"results": {
 						"1-1": "a swamp.",
 						"2-2": "thick fog.",
@@ -2324,8 +2358,8 @@
 					}
 				},
 				"The Journey - 6. The place is called": {
-					"name": "The Journey - 6. The place is called",
-					"description": "The place is called",
+					"name": "Tокруженное - 6. Которое зовётся",
+					"description": "Которое зовётся",
 					"results": {
 						"1-1": "Bark’s Blood.",
 						"2-2": "Barrenstone.",
@@ -2350,18 +2384,18 @@
 					}
 				},
 				"Create NPC - 1. Attitude": {
-					"name": "Create NPC - 1. Attitude",
-					"description": "Attitude",
+					"name": "Создание персонажа ведущего - 1. Отношение",
+					"description": "Отношение",
 					"results": {
-						"1-1": "Hostile",
-						"2-2": "Evasive",
-						"3-3": "Indifferent",
-						"4-4": "Friendly"
+						"1-1": "Враждебное",
+						"2-2": "Избегающее",
+						"3-3": "Безразличное",
+						"4-4": "Дружелюбное"
 					}
 				},
 				"Create NPC - 5. Trait": {
-					"name": "Create NPC - 5. Trait",
-					"description": "Trait",
+					"name": "Создание персонажа ведущего - 5. Черта",
+					"description": "Черта",
 					"results": {
 						"1-1": "Talks too much",
 						"2-2": "Strange clothes",
@@ -2378,8 +2412,8 @@
 					}
 				},
 				"Create NPC - 4. Motivation": {
-					"name": "Create NPC - 4. Motivation",
-					"description": "Motivation",
+					"name": "Создание персонажа ведущего - 4. Мотивация",
+					"description": "Мотивация",
 					"results": {
 						"1-1": "Sweet, glittering gold",
 						"2-2": "Knowledge of the world",
@@ -2392,8 +2426,8 @@
 					}
 				},
 				"Create NPC - 6. Name": {
-					"name": "Create NPC - 6. Name",
-					"description": "Name (Choose)",
+					"name": "Создание персонажа ведущего - 6. Имя",
+					"description": "Имя (выберите)",
 					"results": {
 						"1-1": "Agnar, Jorid, Dareios",
 						"2-2": "Ragnfast, Ask, Euanthe",
@@ -2418,31 +2452,31 @@
 					}
 				},
 				"Create NPC - 2. Kin": {
-					"name": "Create NPC - 2. Kin",
-					"description": "Kin",
+					"name": "Создание персонажа ведущего - 2. Народ",
+					"description": "Народ",
 					"results": {
-						"1-1": "Human",
-						"2-2": "Dwarf",
-						"3-3": "Elf",
-						"4-4": "Halfling",
-						"5-5": "Wolfkin",
-						"6-6": "Mallard"
+						"1-1": "Человек",
+						"2-2": "Дварф",
+						"3-3": "Эльф",
+						"4-4": "Полурослик",
+						"5-5": "Волкарь",
+						"6-6": "Крякв"
 					}
 				},
 				"Create NPC - 3. Profession": {
-					"name": "Create NPC - 3. Profession",
-					"description": "Profession",
+					"name": "Создание персонажа ведущего - 3. Профессия",
+					"description": "Профессия",
 					"results": {
-						"1-1": "Bard",
-						"2-2": "Artisan",
-						"3-3": "Hunter",
-						"4-4": "Fighter",
-						"5-5": "Scholar",
-						"6-6": "Mage",
-						"7-7": "Merchant",
-						"8-8": "Knight",
-						"9-9": "Mariner",
-						"10-10": "Thief"
+						"1-1": "Бард",
+						"2-2": "Ремесленник",
+						"3-3": "Охотник",
+						"4-4": "Воин",
+						"5-5": "Учёный",
+						"6-6": "Маг",
+						"7-7": "Купец",
+						"8-8": "Рыцарь",
+						"9-9": "Моряк",
+						"10-10": "Вор"
 					}
 				},
 				"The Quest - 1. One day": {
@@ -2638,7 +2672,7 @@
 					}
 				},
 				"Treasure": {
-					"name": "Treasure",
+					"name": "Сокровища",
 					"description": "",
 					"results": {
 						"1-1": "[[d6]] copper coins",
@@ -2684,7 +2718,7 @@
 					}
 				},
 				"Treasure - Armor": {
-					"name": "Treasure - Armor",
+					"name": "Сокровища - Броня",
 					"description": "",
 					"results": {
 						"1-1": "Shield, Small",
@@ -2696,7 +2730,7 @@
 					}
 				},
 				"Treasure - Book": {
-					"name": "Treasure - Book",
+					"name": "Сокровища - Книга",
 					"description": "",
 					"results": {
 						"1-1": "@UUID[Item.csHy2MVcDDH6yuKa]{Book} <i>Eat or Be Eaten – Plants of the Forest</i>",
@@ -2708,7 +2742,7 @@
 					}
 				},
 				"Treasure - Clothing": {
-					"name": "Treasure - Clothing",
+					"name": "Сокровища - Одежда",
 					"description": "",
 					"results": {
 						"1-1": "Boots",
@@ -2717,7 +2751,7 @@
 					}
 				},
 				"Treasure - Instrument": {
-					"name": "Treasure - Instrument",
+					"name": "Сокровища - Музыкальный инструмент",
 					"description": "",
 					"results": {
 						"1-1": "Horn",
@@ -2729,7 +2763,7 @@
 					}
 				},
 				"Treasure - Mastercrafted Weapon": {
-					"name": "Treasure - Mastercrafted Weapon",
+					"name": "Сокровища - Превосходное оружие",
 					"description": "",
 					"results": {
 						"1-1": "Mastercrafted Dagger",
@@ -2741,7 +2775,7 @@
 					}
 				},
 				"Treasure - Melee 1": {
-					"name": "Treasure - Melee 1",
+					"name": "Сокровища - Оружие ближнего боя 1",
 					"description": "",
 					"results": {
 						"1-1": "Dagger",
@@ -2753,7 +2787,7 @@
 					}
 				},
 				"Treasure - Melee 2": {
-					"name": "Treasure - Melee 2",
+					"name": "Сокровища - Оружие ближнего боя 2",
 					"description": "",
 					"results": {
 						"1-1": "Handaxe",
@@ -2765,7 +2799,7 @@
 					}
 				},
 				"Treasure - Ranged": {
-					"name": "Treasure - Ranged",
+					"name": "Сокровища - Оружие дистанционного боя",
 					"description": "",
 					"results": {
 						"1-1": "Sling",
@@ -2777,7 +2811,7 @@
 					}
 				},
 				"Treasure - Trade Goods": {
-					"name": "Treasure - Trade Goods",
+					"name": "Сокровища - Товар",
 					"description": "",
 					"results": {
 						"1-1": "Magnifying Glass",
@@ -2861,1319 +2895,27 @@
 					}
 				}
 			},
-			"folders": {
-				"Dragonbane - Rules": "Dragonbane - Rules",
-				"Bestiary": "Bestiary",
-				"Common Animals": "Common Animals",
-				"Elementals": "Elementals",
-				"Pre-Gen Characters": "Pre-Gen Characters",
-				"Typical NPCs": "Typical NPCs",
-				"Abilities": "Abilities",
-				"Heroic Abilities": "Heroic Abilities",
-				"Kin Abilities": "Kin Abilities",
-				"Gear": "Gear",
-				"Animals": "Animals",
-				"Armor & Helmets": "Armor & Helmets",
-				"Clothes": "Clothes",
-				"Containers": "Containers",
-				"Hunting & Fishing": "Hunting & Fishing",
-				"Light Sources": "Light Sources",
-				"Means of Travel": "Means of Travel",
-				"Medicine": "Medicine",
-				"Memento": "Memento",
-				"Musical Instruments": "Musical Instruments",
-				"Services": "Services",
-				"Studies & Magic": "Studies & Magic",
-				"Tools": "Tools",
-				"Trade Goods": "Trade Goods",
-				"Kin": "Kin",
-				"Professions": "Professions",
-				"Skills": "Skills",
-				"Core Skills": "Core Skills",
-				"Secondary Skills": "Secondary Skills",
-				"Weapon Skills": "Weapon Skills",
-				"Spells": "Spells",
-				"Animism": "Animism",
-				"Elementalism": "Elementalism",
-				"General Magic": "General Magic",
-				"Mentalism": "Mentalism",
-				"7. Bestiary": "7. Bestiary",
-				"5. Magic": "5. Magic",
-				"2. Your Player Character": "2. Your Player Character",
-				"4. Combat & Damage": "4. Combat & Damage",
-				"8. Adventures": "8. Adventures",
-				"Melee Weapons": "Melee Weapons",
-				"Ranged Weapons": "Ranged Weapons",
-				"Dragonbane": "Dragonbane",
-				"Treasure": "Treasure",
-				"Improvised Weapons": "Improvised Weapons",
-				"Create Adventure and NPC": "Create Adventure and NPC",
-				"The Castle of the Robber Knight": "The Castle of the Robber Knight",
-				"Attribute Rolls": "Attribute Rolls",
-				"Injuries": "Injuries"
-			},
+
 			"cards": {
 				"Treasure": {
 					"name": "Сокровища",
-					"description": "",
-					"cards": {
-						"1": {
-							"name": "1",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "1",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-1.webp",
-									"text": ""
-								}
-							]
-						},
-						"2": {
-							"name": "2",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "2",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-2.webp",
-									"text": ""
-								}
-							]
-						},
-						"3": {
-							"name": "3",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "3",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-3.webp",
-									"text": ""
-								}
-							]
-						},
-						"4": {
-							"name": "4",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "4",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-4.webp",
-									"text": ""
-								}
-							]
-						},
-						"5": {
-							"name": "5",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "5",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-5.webp",
-									"text": ""
-								}
-							]
-						},
-						"6": {
-							"name": "6",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "6",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-6.webp",
-									"text": ""
-								}
-							]
-						},
-						"7": {
-							"name": "7",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "7",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-7.webp",
-									"text": ""
-								}
-							]
-						},
-						"8": {
-							"name": "8",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "8",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-8.webp",
-									"text": ""
-								}
-							]
-						},
-						"9": {
-							"name": "9",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "9",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-9.webp",
-									"text": ""
-								}
-							]
-						},
-						"10": {
-							"name": "10",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "10",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-10.webp",
-									"text": ""
-								}
-							]
-						},
-						"11": {
-							"name": "11",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "11",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-11.webp",
-									"text": ""
-								}
-							]
-						},
-						"12": {
-							"name": "12",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "12",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-12.webp",
-									"text": ""
-								}
-							]
-						},
-						"13": {
-							"name": "13",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "13",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-13.webp",
-									"text": ""
-								}
-							]
-						},
-						"14": {
-							"name": "14",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "14",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-14.webp",
-									"text": ""
-								}
-							]
-						},
-						"15": {
-							"name": "15",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "15",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-15.webp",
-									"text": ""
-								}
-							]
-						},
-						"16": {
-							"name": "16",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "16",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-16.webp",
-									"text": ""
-								}
-							]
-						},
-						"17": {
-							"name": "17",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "17",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-17.webp",
-									"text": ""
-								}
-							]
-						},
-						"18": {
-							"name": "18",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "18",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-18.webp",
-									"text": ""
-								}
-							]
-						},
-						"19": {
-							"name": "19",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "19",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-19.webp",
-									"text": ""
-								}
-							]
-						},
-						"20": {
-							"name": "20",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "20",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-20.webp",
-									"text": ""
-								}
-							]
-						},
-						"21": {
-							"name": "21",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "21",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-21.webp",
-									"text": ""
-								}
-							]
-						},
-						"22": {
-							"name": "22",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "22",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-22.webp",
-									"text": ""
-								}
-							]
-						},
-						"23": {
-							"name": "23",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "23",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-23.webp",
-									"text": ""
-								}
-							]
-						},
-						"24": {
-							"name": "24",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "24",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-24.webp",
-									"text": ""
-								}
-							]
-						},
-						"25": {
-							"name": "25",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "25",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-25.webp",
-									"text": ""
-								}
-							]
-						},
-						"26": {
-							"name": "26",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "26",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-27.webp",
-									"text": ""
-								}
-							]
-						},
-						"28": {
-							"name": "28",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "28",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-28.webp",
-									"text": ""
-								}
-							]
-						},
-						"29": {
-							"name": "29",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "29",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-29.webp",
-									"text": ""
-								}
-							]
-						},
-						"30": {
-							"name": "30",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "30",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-30.webp",
-									"text": ""
-								}
-							]
-						},
-						"31": {
-							"name": "31",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "31",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-31.webp",
-									"text": ""
-								}
-							]
-						},
-						"32": {
-							"name": "32",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "32",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-32.webp",
-									"text": ""
-								}
-							]
-						},
-						"33": {
-							"name": "33",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "33",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-33.webp",
-									"text": ""
-								}
-							]
-						},
-						"34": {
-							"name": "34",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "34",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-34.webp",
-									"text": ""
-								}
-							]
-						},
-						"35": {
-							"name": "35",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "35",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-35.webp",
-									"text": ""
-								}
-							]
-						},
-						"36": {
-							"name": "36",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "36",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-36.webp",
-									"text": ""
-								}
-							]
-						},
-						"37": {
-							"name": "37",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "37",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-37.webp",
-									"text": ""
-								}
-							]
-						},
-						"38": {
-							"name": "38",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "38",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-38.webp",
-									"text": ""
-								}
-							]
-						},
-						"39": {
-							"name": "39",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "39",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-39.webp",
-									"text": ""
-								}
-							]
-						},
-						"40": {
-							"name": "40",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "40",
-									"img": "modules/dragonbane-coreset/assets/decks/treasure-40.webp",
-									"text": ""
-								}
-							]
-						}
-					}
+					"description": ""
 				},
 				"Initiative": {
-					"name": "Initiative",
-					"description": "",
-					"cards": {
-						"1": {
-							"name": "1",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "1",
-									"img": "modules/dragonbane-coreset/assets/decks/initiative-1.webp",
-									"text": ""
-								}
-							]
-						},
-						"2": {
-							"name": "2",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "2",
-									"img": "modules/dragonbane-coreset/assets/decks/initiative-2.webp",
-									"text": ""
-								}
-							]
-						},
-						"3": {
-							"name": "3",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "3",
-									"img": "modules/dragonbane-coreset/assets/decks/initiative-3.webp",
-									"text": ""
-								}
-							]
-						},
-						"4": {
-							"name": "4",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "4",
-									"img": "modules/dragonbane-coreset/assets/decks/initiative-4.webp",
-									"text": ""
-								}
-							]
-						},
-						"5": {
-							"name": "5",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "5",
-									"img": "modules/dragonbane-coreset/assets/decks/initiative-5.webp",
-									"text": ""
-								}
-							]
-						},
-						"6": {
-							"name": "6",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "6",
-									"img": "modules/dragonbane-coreset/assets/decks/initiative-6.webp",
-									"text": ""
-								}
-							]
-						},
-						"7": {
-							"name": "7",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "7",
-									"img": "modules/dragonbane-coreset/assets/decks/initiative-7.webp",
-									"text": ""
-								}
-							]
-						},
-						"8": {
-							"name": "8",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "8",
-									"img": "modules/dragonbane-coreset/assets/decks/initiative-8.webp",
-									"text": ""
-								}
-							]
-						},
-						"9": {
-							"name": "9",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "9",
-									"img": "modules/dragonbane-coreset/assets/decks/initiative-9.webp",
-									"text": ""
-								}
-							]
-						},
-						"10": {
-							"name": "10",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "10",
-									"img": "modules/dragonbane-coreset/assets/decks/initiative-10.webp",
-									"text": ""
-								}
-							]
-						},
-						"11": {
-							"name": "11",
-							"description": "",
-							"back": {
-								"text": "",
-								"name": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "11",
-									"img": "modules/dragonbane-coreset/assets/decks/initiative-11.webp",
-									"text": ""
-								}
-							]
-						},
-						"12": {
-							"name": "12",
-							"description": "",
-							"back": {
-								"text": "",
-								"name": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "12",
-									"img": "modules/dragonbane-coreset/assets/decks/initiative-12.webp",
-									"text": ""
-								}
-							]
-						},
-						"13": {
-							"name": "13",
-							"description": "",
-							"back": {
-								"text": "",
-								"name": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "13",
-									"img": "modules/dragonbane-coreset/assets/decks/initiative-13.webp",
-									"text": ""
-								}
-							]
-						},
-						"14": {
-							"name": "14",
-							"description": "",
-							"back": {
-								"text": "",
-								"name": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "14",
-									"img": "modules/dragonbane-coreset/assets/decks/initiative-14.webp",
-									"text": ""
-								}
-							]
-						},
-						"15": {
-							"name": "15",
-							"description": "",
-							"back": {
-								"text": "",
-								"name": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "15",
-									"img": "modules/dragonbane-coreset/assets/decks/initiative-15.webp",
-									"text": ""
-								}
-							]
-						},
-						"16": {
-							"name": "16",
-							"description": "",
-							"back": {
-								"text": "",
-								"name": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "16",
-									"img": "modules/dragonbane-coreset/assets/decks/initiative-16.webp",
-									"text": ""
-								}
-							]
-						},
-						"17": {
-							"name": "17",
-							"description": "",
-							"back": {
-								"text": "",
-								"name": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "17",
-									"img": "modules/dragonbane-coreset/assets/decks/initiative-17.webp",
-									"text": ""
-								}
-							]
-						},
-						"18": {
-							"name": "18",
-							"description": "",
-							"back": {
-								"text": "",
-								"name": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "18",
-									"img": "modules/dragonbane-coreset/assets/decks/initiative-18.webp",
-									"text": ""
-								}
-							]
-						},
-						"19": {
-							"name": "19",
-							"description": "",
-							"back": {
-								"text": "",
-								"name": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "19",
-									"img": "modules/dragonbane-coreset/assets/decks/initiative-19.webp",
-									"text": ""
-								}
-							]
-						},
-						"20": {
-							"name": "20",
-							"description": "",
-							"back": {
-								"text": "",
-								"name": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "20",
-									"img": "modules/dragonbane-coreset/assets/decks/initiative-20.webp",
-									"text": ""
-								}
-							]
-						}
-					}
+					"name": "Инициатива",
+					"description": ""
 				},
 				"Improvised Weapon - Inn": {
 					"name": "Improvised Weapon - Inn",
-					"description": "",
-					"cards": {
-						"1": {
-							"name": "1",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "",
-									"img": "modules/dragonbane-coreset/assets/decks/improvised-weapon-inn-1.webp",
-									"text": ""
-								}
-							]
-						},
-						"2": {
-							"name": "2",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "",
-									"img": "modules/dragonbane-coreset/assets/decks/improvised-weapon-inn-2.webp",
-									"text": ""
-								}
-							]
-						},
-						"3": {
-							"name": "3",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "",
-									"img": "modules/dragonbane-coreset/assets/decks/improvised-weapon-inn-3.webp",
-									"text": ""
-								}
-							]
-						},
-						"4": {
-							"name": "4",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "",
-									"img": "modules/dragonbane-coreset/assets/decks/improvised-weapon-inn-5.webp",
-									"text": ""
-								}
-							]
-						},
-						"5": {
-							"name": "5",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "",
-									"img": "modules/dragonbane-coreset/assets/decks/improvised-weapon-inn-5.webp",
-									"text": ""
-								}
-							]
-						},
-						"6": {
-							"name": "6",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "",
-									"img": "modules/dragonbane-coreset/assets/decks/improvised-weapon-inn-6.webp",
-									"text": ""
-								}
-							]
-						}
-					}
+					"description": ""
 				},
 				"Improvised Weapon - Forest": {
 					"name": "Improvised Weapon - Forest",
-					"description": "",
-					"cards": {
-						"1": {
-							"name": "1",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "",
-									"img": "modules/dragonbane-coreset/assets/decks/improvised-weapon-forest-1.webp",
-									"text": ""
-								}
-							]
-						},
-						"2": {
-							"name": "2",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "",
-									"img": "modules/dragonbane-coreset/assets/decks/improvised-weapon-forest-2.webp",
-									"text": ""
-								}
-							]
-						},
-						"3": {
-							"name": "3",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "",
-									"img": "modules/dragonbane-coreset/assets/decks/improvised-weapon-forest-3.webp",
-									"text": ""
-								}
-							]
-						},
-						"4": {
-							"name": "4",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "",
-									"img": "modules/dragonbane-coreset/assets/decks/improvised-weapon-forest-4.webp",
-									"text": ""
-								}
-							]
-						},
-						"5": {
-							"name": "5",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "",
-									"img": "modules/dragonbane-coreset/assets/decks/improvised-weapon-forest-5.webp",
-									"text": ""
-								}
-							]
-						},
-						"6": {
-							"name": "6",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "",
-									"img": "modules/dragonbane-coreset/assets/decks/improvised-weapon-forest-6.webp",
-									"text": ""
-								}
-							]
-						}
-					}
+					"description": ""
 				},
 				"Improvised Weapon - Cave": {
 					"name": "Improvised Weapon - Cave",
-					"description": "",
-					"cards": {
-						"1": {
-							"name": "1",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "",
-									"img": "modules/dragonbane-coreset/assets/decks/improvised-weapon-cave-1.webp",
-									"text": ""
-								}
-							]
-						},
-						"2": {
-							"name": "2",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "",
-									"img": "modules/dragonbane-coreset/assets/decks/improvised-weapon-cave-2.webp",
-									"text": ""
-								}
-							]
-						},
-						"3": {
-							"name": "3",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "",
-									"img": "modules/dragonbane-coreset/assets/decks/improvised-weapon-cave-3.webp",
-									"text": ""
-								}
-							]
-						},
-						"4": {
-							"name": "4",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "",
-									"img": "modules/dragonbane-coreset/assets/decks/improvised-weapon-cave-4.webp",
-									"text": ""
-								}
-							]
-						},
-						"5": {
-							"name": "5",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "",
-									"img": "modules/dragonbane-coreset/assets/decks/improvised-weapon-cave-5.webp",
-									"text": ""
-								}
-							]
-						},
-						"6": {
-							"name": "6",
-							"description": "",
-							"back": {
-								"name": "",
-								"text": "",
-								"img": null
-							},
-							"faces": [
-								{
-									"name": "",
-									"img": "modules/dragonbane-coreset/assets/decks/improvised-weapon-cave-6.webp",
-									"text": ""
-								}
-							]
-						}
-					}
+					"description": ""
 				}
 			}
 		}
