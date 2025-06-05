@@ -7,41 +7,65 @@ export function init() {
 }
 
 function registerConverters() {
-	let cachedEntries = null;
+	let itemTranslationsCache = null;
+	let count = 0;
 
-	const getTranslationEntries = () => {
-		if (cachedEntries) {
-			return cachedEntries;
+	const getItemTranslations = () => {
+		if (itemTranslationsCache) {
+			// console.log("CACHE HIT", count++);
+			return itemTranslationsCache;
 		}
 
 		try {
-			const translations = game.babele?.translations?.[0];
-			if (!translations) {
-				console.warn("Dragonbane: No Babele translations found");
+			const allTranslations = game.babele?.translations;
+			if (!allTranslations || allTranslations.length === 0) {
+				console.warn("Dragonbane + ru-ru: No Babele translations found");
 				return null;
 			}
 
-			const entries = translations.entries?.["Dragonbane - Rules"]?.items;
-			if (!entries) {
-				console.warn("Dragonbane: No entries found in Babele translations");
+			itemTranslationsCache = {};
+			let totalItems = 0;
+			let processedPacks = 0;
+
+			for (let i = 0; i < allTranslations.length; i++) {
+				const translation = allTranslations[i];
+				if (!translation.entries) continue;
+
+				for (const [packName, packData] of Object.entries(translation.entries)) {
+					if (packData?.items && typeof packData.items === 'object') {
+			
+						Object.assign(itemTranslationsCache, packData.items);
+						
+						const itemCount = Object.keys(packData.items).length;
+						totalItems += itemCount;
+						processedPacks++;
+						
+						console.log(`Dragonbane + ru-ru: Loaded ${itemCount} items from pack "${packName}"`);
+					}
+				}
+			}
+
+			if (totalItems === 0) {
+				console.warn("Dragonbane + ru-ru: No item translations found in any pack");
+				itemTranslationsCache = null;
 				return null;
 			}
 
-			cachedEntries = entries;
-			return entries;
+			console.log(`Dragonbane + ru-ru: Translation cache created with ${totalItems} items from ${processedPacks} pack(s)`);
+			return itemTranslationsCache;
 		} catch (error) {
-			console.error("Dragonbane: Error accessing translation entries:", error);
+			console.error("Dragonbane + ru-ru: Error accessing translation entries:", error);
 			return null;
 		}
 	};
 
 	game.babele.registerConverters({
-		translateListCore(list) {
+		translateItemList(list) {
 			if (!list || typeof list !== "string") {
 				return list || "";
 			}
 
-			const entries = getTranslationEntries();
+			const entries = getItemTranslations();			
 			if (!entries) {
 				return list;
 			}

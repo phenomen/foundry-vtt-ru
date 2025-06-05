@@ -1,33 +1,10 @@
 {
 	"label": "Dragonbane - Основной набор",
-	"mapping": {
-		"actors": {
-			"description": "system.description",
-			"items": {
-				"path": "items",
-				"converter": "fromPack"
-			},
-			"tokenName": "prototypeToken.name",
-			"abilities": "system.abilities"
-		},
-		"items": {
-			"description": "system.description",
-			"requirement": "system.requirement",
-			"skills": {
-				"path": "system.skills",
-				"converter": "translateListCore"
-			},
-			"abilities": {
-				"path": "system.abilities",
-				"converter": "translateListCore"
-			}
-		}
-	},
 	"folders": {},
 	"entries": {
 		"Dragonbane - Rules": {
 			"name": "Dragonbane - Правила",
-			"description": "<img style=\"display:block;margin:auto;border:0px solid transparent\" src=\"systems/dragonbane/art/ui/logo-en.webp\" /><p>This will import all content from the rule book into your world.</p><p>Note that existing versions of the content will be overwritten!</p><p>If you want to keep ownership settings on existing content, go to Game Settings &gt; Configure Settings and check the corresponding checkbox.</p><p></p><hr /><p style=\"font-size:smaller\">No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher.</p><p>Dragonbane is a registered trademark by Fria Ligan AB.</p><p>©2023 Fria Ligan AB</p><hr /><p>Published by: <a href=\"http://freeleaguepublishing.com/\">Fria Ligan AB</a></p><p>Foundry VTT version by: <a href=\"http://patrikp.com/\">Patrik Påfvelsson (PatrikP)</a></p><p><a href=\"mailto:info@frialigan.se\">info@frialigan.se</a></p>",
+			"description": "<img style=\"display:block;margin:auto;border:0px solid transparent\" src=\"systems/dragonbane/art/ui/logo-en.webp\" /><p>Всё содержимое модуля будет импортировано в ваш мир. Существующее содержимое будет перезаписано! Если вы желаете изменить настройки владения содержимым, это можно сделать в настройках системы.</p><hr /><p style=\"font-size:smaller\">Содержимое этого модуля не может быть воспроизведено, распространено или передано в любой форме и любыми средствами, включая фотокопирование, запись или другие электронные или механические методы, без предварительного письменного разрешения издателя. Dragonbane является зарегистрированной торговой маркой Fria Ligan AB.</p><p>©2023 Fria Ligan AB</p><hr /><p>Издатель: <a href=\"http://freeleaguepublishing.com/\">Fria Ligan AB</a> | <a href=\"mailto:info@frialigan.se\">info@frialigan.se</a></p><p>Версия для Foundry VTT: <a href=\"http://patrikp.com/\">Patrik Påfvelsson (PatrikP)</a></p><p>Перевод на русский: <a href=\"http://github.com/phenomen\">Phenomen</a></p>",
 			"folders": {
 				"Dragonbane - Rules": "Dragonbane - Правила",
 				"Bestiary": "Бестиарий",
@@ -996,7 +973,7 @@
 				},
 				"Elf": {
 					"name": "Эльф",
-					"description": "<p>Эльфы — древний народ, который веками стоит на страже лесов мира. Их направляют звёзды, которых они почитают как божественных существ, способных проникнуть в глубочайшие тайны. Эльфийская культура медитативно замкнута и порой трудна для понимания чужаками. Однако очевидно, что ими движут иные, более метафизические устремления, нежели жажда золота и славы, столь часто встречающаяся у дворфов и людей. Тем не менее среди их народа немало могучих воинов, широко уважаемых и воспеваемых бардами за искусное владение мечом и луком.</p>"
+					"description": "<p>Эльфы — древний народ, который веками стоит на страже лесов мира. Их направляют звёзды, которых они почитают как божественных существ, способных проникнуть в глубочайшие тайны. Эльфийская культура медитативно замкнута и порой трудна для понимания чужаками. Однако очевидно, что ими движут иные, более метафизические устремления, нежели жажда золота и славы, столь часто встречающаяся у дварфов и людей. Тем не менее среди их народа немало могучих воинов, широко уважаемых и воспеваемых бардами за искусное владение мечом и луком.</p>"
 				},
 				"Halfling": {
 					"name": "Полурослик",
@@ -1004,7 +981,7 @@
 				},
 				"Human": {
 					"name": "Человек",
-					"description": "<p>Люди — последние из рождённых народов. У других народов есть песни и легенды о временах до зари человечества. Сегодня люди расселились по большей части известного мира. Многие из них — крестьяне, живущие в маленьких деревушках, сгрудившихся вокруг замков и дворцов. Другие — воины, поклявшиеся защищать крестьян и их уязвимые поселения, рынки и торговые караваны от опасностей мира. Еще больше среди них искателей приключений: бесстрашных людей, которые отваживаются идти в неизведанное в поисках славы, золота и знаний.</p>"
+					"description": "<p>Люди — последние из рождённых народов. В других культурах есть песни и легенды о временах задолго до зари человечества. Сегодня люди расселились по большей части известного мира. Многие из них — крестьяне, живущие в маленьких деревушках, сгрудившихся вокруг замков и дворцов. Другие — воины, поклявшиеся защищать крестьян и их уязвимые поселения, рынки и торговые караваны от опасностей мира. Еще больше среди них искателей приключений: бесстрашных людей, которые отваживаются идти в неизведанное в поисках славы, золота и знаний.</p>"
 				},
 				"Mallard": {
 					"name": "Крякв",
@@ -2930,6 +2907,16 @@
 					"description": ""
 				}
 			}
+		},
+		"Dragonbane - Adventures": {
+			"name": "Dragonbane - Приключения",
+			"description": "<img style=\"display:block;margin:auto;border:0px solid transparent\" src=\"systems/dragonbane/art/ui/logo-en.webp\" /><p>Всё содержимое модуля будет импортировано в ваш мир. Существующее содержимое будет перезаписано! Если вы желаете изменить настройки владения содержимым, это можно сделать в настройках системы.</p><hr /><p style=\"font-size:smaller\">Содержимое этого модуля не может быть воспроизведено, распространено или передано в любой форме и любыми средствами, включая фотокопирование, запись или другие электронные или механические методы, без предварительного письменного разрешения издателя. Dragonbane является зарегистрированной торговой маркой Fria Ligan AB.</p><p>©2023 Fria Ligan AB</p><hr /><p>Издатель: <a href=\"http://freeleaguepublishing.com/\">Fria Ligan AB</a> | <a href=\"mailto:info@frialigan.se\">info@frialigan.se</a></p><p>Версия для Foundry VTT: <a href=\"http://patrikp.com/\">Patrik Påfvelsson (PatrikP)</a></p><p>Перевод на русский: <a href=\"http://github.com/phenomen\">Phenomen</a></p>"
+
+		},
+		"Dragonbane - Solo Adventure": {
+			"name": "Dragonbane - Одиночное приключение",
+			"description": "<img style=\"display:block;margin:auto;border:0px solid transparent\" src=\"systems/dragonbane/art/ui/logo-en.webp\" /><p>Всё содержимое модуля будет импортировано в ваш мир. Существующее содержимое будет перезаписано! Если вы желаете изменить настройки владения содержимым, это можно сделать в настройках системы.</p><hr /><p style=\"font-size:smaller\">Содержимое этого модуля не может быть воспроизведено, распространено или передано в любой форме и любыми средствами, включая фотокопирование, запись или другие электронные или механические методы, без предварительного письменного разрешения издателя. Dragonbane является зарегистрированной торговой маркой Fria Ligan AB.</p><p>©2023 Fria Ligan AB</p><hr /><p>Издатель: <a href=\"http://freeleaguepublishing.com/\">Fria Ligan AB</a> | <a href=\"mailto:info@frialigan.se\">info@frialigan.se</a></p><p>Версия для Foundry VTT: <a href=\"http://patrikp.com/\">Patrik Påfvelsson (PatrikP)</a></p><p>Перевод на русский: <a href=\"http://github.com/phenomen\">Phenomen</a></p>"
+			
 		}
 	}
 }
