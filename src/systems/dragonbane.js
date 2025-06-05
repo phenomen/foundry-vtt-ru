@@ -8,7 +8,7 @@ export function init() {
 
 function registerConverters() {
 	let itemTranslationsCache = null;
-	let count = 0;
+	const count = 0;
 
 	const getItemTranslations = () => {
 		if (itemTranslationsCache) {
@@ -32,14 +32,13 @@ function registerConverters() {
 				if (!translation.entries) continue;
 
 				for (const [packName, packData] of Object.entries(translation.entries)) {
-					if (packData?.items && typeof packData.items === 'object') {
-			
+					if (packData?.items && typeof packData.items === "object") {
 						Object.assign(itemTranslationsCache, packData.items);
-						
+
 						const itemCount = Object.keys(packData.items).length;
 						totalItems += itemCount;
 						processedPacks++;
-						
+
 						console.log(`Dragonbane + ru-ru: Loaded ${itemCount} items from pack "${packName}"`);
 					}
 				}
@@ -51,7 +50,9 @@ function registerConverters() {
 				return null;
 			}
 
-			console.log(`Dragonbane + ru-ru: Translation cache created with ${totalItems} items from ${processedPacks} pack(s)`);
+			console.log(
+				`Dragonbane + ru-ru: Translation cache created with ${totalItems} items from ${processedPacks} pack(s)`,
+			);
 			return itemTranslationsCache;
 		} catch (error) {
 			console.error("Dragonbane + ru-ru: Error accessing translation entries:", error);
@@ -65,7 +66,7 @@ function registerConverters() {
 				return list || "";
 			}
 
-			const entries = getItemTranslations();			
+			const entries = getItemTranslations();
 			if (!entries) {
 				return list;
 			}
