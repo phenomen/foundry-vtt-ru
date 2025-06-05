@@ -5,8 +5,9 @@
 	--dod-font-handwriting: var(--font-fancy);
 }
 
-.system-dragonbane .sheet.journal-entry .journal-entry-content {
-	font-size: 0.9rem;
+.sheet-tabs.tabs .item {
+	font-family: var(--dod-font-primary);
+	font-weight: 700;
 }
 
 .weapon-action {
@@ -32,10 +33,44 @@ a.item-edit {
 }
 
 .DoD.sheet.character .sheet-header .image-container h1 input {
-	padding: 8px 5px 0px 5px;
+	padding: 8px 2px 0px 2px;
+	font-size: var(--font-size-15);
 }
 
-.sheet-tabs.tabs .item {
-	font-family: var(--dod-font-primary);
+.DoD.sheet.character .resource-points .resource-points-text-label {
+	top: 13px;
 	font-weight: 700;
+}
+
+/* JOURNAL */
+
+.system-dragonbane .sheet.journal-entry h1:not(.window-title) {
+	font-size: var(--font-size-15);
+}
+
+.system-dragonbane .sheet.journal-entry .journal-entry-content {
+	font-size: var(--font-size-15);
+}
+
+.system-dragonbane .sheet.journal-entry .journal-entry-content blockquote.info p {
+	font-size: var(--font-size-14);
+}
+
+.system-dragonbane .sheet.journal-entry .journal-entry-content blockquote.optional p {
+	font-size: var(--font-size-14);
+}
+
+.system-dragonbane .sheet.journal-entry h1:not(.window-title) {
+	font-size: var(--font-size-48);
+}
+
+.system-dragonbane .handwriting {
+	font-family: var(--font-manuscript);
+}
+
+.content-link,
+.inline-roll {
+	background: var(--content-link-background);
+	border: 1px solid var(--content-link-border-color);
+	color: var(--content-link-text-color);
 }
