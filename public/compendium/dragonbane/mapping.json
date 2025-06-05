@@ -1,0 +1,29 @@
+{
+	"Actor": {
+		"description": "system.description",
+		"items": {
+			"path": "items",
+			"converter": "fromPack"
+		},
+		"tokenName": "prototypeToken.name"
+	},
+	"Item": {
+		"description": "system.description",
+		"boons": {
+			"path": "system.boons",
+			"converter": "translateItemList"
+		},
+		"requirement": {
+			"path": "system.requirement",
+			"converter": "translateItemList"
+		},
+		"skills": {
+			"path": "system.skills",
+			"converter": "translateItemList"
+		},
+		"abilities": {
+			"path": "system.abilities",
+			"converter": "translateItemList"
+		}
+	}
+}
