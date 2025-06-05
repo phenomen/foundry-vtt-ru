@@ -7,55 +7,56 @@ export function init() {
 }
 
 function registerConverters() {
-	let itemTranslationsCache = null;
-	const count = 0;
+	let cachedEntries = null;
 
-	const getItemTranslations = () => {
-		if (itemTranslationsCache) {
-			// console.log("CACHE HIT", count++);
-			return itemTranslationsCache;
+	const getTranslationEntries = () => {
+		if (cachedEntries) {
+			return cachedEntries;
 		}
 
 		try {
-			const allTranslations = game.babele?.translations;
-			if (!allTranslations || allTranslations.length === 0) {
-				console.warn("Dragonbane + ru-ru: No Babele translations found");
+			const translations = game.babele.translations;
+
+			if (!translations || translations.length < 1) {
+				console.warn("Dragonbane: No Babele translations found");
 				return null;
 			}
 
-			itemTranslationsCache = {};
-			let totalItems = 0;
-			let processedPacks = 0;
+			// Dynamically discover and merge all translation packs
+			let allItems = {};
 
-			for (let i = 0; i < allTranslations.length; i++) {
-				const translation = allTranslations[i];
-				if (!translation.entries) continue;
-
-				for (const [packName, packData] of Object.entries(translation.entries)) {
-					if (packData?.items && typeof packData.items === "object") {
-						Object.assign(itemTranslationsCache, packData.items);
-
-						const itemCount = Object.keys(packData.items).length;
-						totalItems += itemCount;
-						processedPacks++;
-
-						console.log(`Dragonbane + ru-ru: Loaded ${itemCount} items from pack "${packName}"`);
-					}
+			translations.forEach((translation, index) => {
+				if (!translation.entries) {
+					console.log(`Dragonbane: Translation ${index} has no entries`);
+					return;
 				}
-			}
 
-			if (totalItems === 0) {
-				console.warn("Dragonbane + ru-ru: No item translations found in any pack");
-				itemTranslationsCache = null;
+				// Iterate through all entries in this translation
+				Object.keys(translation.entries).forEach((packName) => {
+					const packData = translation.entries[packName];
+
+					if (packData?.items) {
+						console.log(`Dragonbane: Found items in pack "${packName}"`);
+						// Merge items from this pack
+						allItems = foundry.utils.mergeObject(allItems, packData.items);
+					}
+				});
+			});
+
+			if (Object.keys(allItems).length === 0) {
+				console.warn("Dragonbane: No items found in any Babele translations");
 				return null;
 			}
 
 			console.log(
-				`Dragonbane + ru-ru: Translation cache created with ${totalItems} items from ${processedPacks} pack(s)`,
+				`Dragonbane: Cached ${
+					Object.keys(allItems).length
+				} translation entries from ${translations.length} translation packs`,
 			);
-			return itemTranslationsCache;
+			cachedEntries = allItems;
+			return allItems;
 		} catch (error) {
-			console.error("Dragonbane + ru-ru: Error accessing translation entries:", error);
+			console.error("Dragonbane: Error accessing translation entries:", error);
 			return null;
 		}
 	};
@@ -66,7 +67,7 @@ function registerConverters() {
 				return list || "";
 			}
 
-			const entries = getItemTranslations();
+			const entries = getTranslationEntries();
 			if (!entries) {
 				return list;
 			}
