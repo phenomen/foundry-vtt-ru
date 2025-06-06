@@ -1,43 +1,76 @@
-@font-face {
-	font-family: "QTFrizQuad";
-	src: url("../fonts/Beaufort/Beaufort-Medium.woff2");
+.system-dragonbane {
+	--dod-font-primary: var(--font-fancy);
+	--dod-font-secondary: var(--font-fancy);
+	--dod-font-heading: var(--font-fancy);
+	--dod-font-handwriting: var(--font-fancy);
 }
 
-@font-face {
-	font-family: "QTFrizQuad";
-	src: url("../fonts/Beaufort/Beaufort-Bold.woff2");
-	font-weight: bold;
-}
-
-@font-face {
-	font-family: "Caveat";
-	src: url("../fonts/Beaufort/Beaufort-Regular.woff2");
-}
-
-@font-face {
-	font-family: "Caveat";
-	src: url("../fonts/Beaufort/Beaufort-Medium.woff2");
-	font-weight: bold;
-}
-
-.DoD.sheet.character.attributes-container.attributes.attribute-panel.attribute-input {
-	left: -3px;
-}
-
-.system-dragonbane .sheet.journal-entry .journal-entry-content {
-	font-size: 0.9rem;
+.sheet-tabs.tabs .item {
+	font-family: var(--dod-font-primary);
+	font-weight: 700;
 }
 
 .weapon-action {
 	font-size: var(--font-size-12);
 }
 
+.rollable-skill,
+.use-ability,
+a.item-edit {
+	font-weight: 600;
+}
+
 .DoD.sheet.character .attributes-container .attributes .conditions .condition-label {
 	left: 3px;
+	top: 13px;
 	width: 50px;
+	font-size: 11px;
 	text-overflow: clip;
 }
 
 .DoD.sheet.character .attributes-container .attributes .attribute-panel .attribute-input {
-	left: -4px;
+	left: -2px;
+}
+
+.DoD.sheet.character .sheet-header .image-container h1 input {
+	padding: 8px 2px 0px 2px;
+	font-size: var(--font-size-15);
+}
+
+.DoD.sheet.character .resource-points .resource-points-text-label {
+	top: 13px;
+	font-weight: 700;
+}
+
+/* JOURNAL */
+
+.system-dragonbane .sheet.journal-entry h1:not(.window-title) {
+	font-size: var(--font-size-15);
+}
+
+.system-dragonbane .sheet.journal-entry .journal-entry-content {
+	font-size: var(--font-size-15);
+}
+
+.system-dragonbane .sheet.journal-entry .journal-entry-content blockquote.info p {
+	font-size: var(--font-size-14);
+}
+
+.system-dragonbane .sheet.journal-entry .journal-entry-content blockquote.optional p {
+	font-size: var(--font-size-14);
+}
+
+.system-dragonbane .sheet.journal-entry h1:not(.window-title) {
+	font-size: var(--font-size-48);
+}
+
+.system-dragonbane .handwriting {
+	font-family: var(--font-manuscript);
+}
+
+.content-link,
+.inline-roll {
+	background: var(--content-link-background);
+	border: 1px solid var(--content-link-border-color);
+	color: var(--content-link-text-color);
 }

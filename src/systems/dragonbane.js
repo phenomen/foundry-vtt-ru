@@ -7,11 +7,11 @@ export function init() {
 }
 
 function registerConverters() {
-	let cachedEntries = null;
+	let translationMap = null;
 
-	const getTranslationEntries = () => {
-		if (cachedEntries) {
-			return cachedEntries;
+	const getTranslationMap = () => {
+		if (translationMap) {
+			return translationMap;
 		}
 
 		try {
@@ -22,8 +22,8 @@ function registerConverters() {
 				return null;
 			}
 
-			// Dynamically discover and merge all translation packs
-			let allItems = {};
+			// Create a simple key:value mapping
+			const map = {};
 
 			translations.forEach((translation, index) => {
 				if (!translation.entries) {
@@ -37,26 +37,31 @@ function registerConverters() {
 
 					if (packData?.items) {
 						console.log(`Dragonbane: Found items in pack "${packName}"`);
-						// Merge items from this pack
-						allItems = foundry.utils.mergeObject(allItems, packData.items);
+						// Extract original:translation mapping from this pack
+						Object.keys(packData.items).forEach((originalName) => {
+							const item = packData.items[originalName];
+							if (item?.name) {
+								map[originalName] = item.name;
+							}
+						});
 					}
 				});
 			});
 
-			if (Object.keys(allItems).length === 0) {
-				console.warn("Dragonbane: No items found in any Babele translations");
+			if (Object.keys(map).length === 0) {
+				console.warn("Dragonbane: No translation mappings found in any Babele translations");
 				return null;
 			}
 
 			console.log(
 				`Dragonbane: Cached ${
-					Object.keys(allItems).length
-				} translation entries from ${translations.length} translation packs`,
+					Object.keys(map).length
+				} translation mappings from ${translations.length} translation packs`,
 			);
-			cachedEntries = allItems;
-			return allItems;
+			translationMap = map;
+			return map;
 		} catch (error) {
-			console.error("Dragonbane: Error accessing translation entries:", error);
+			console.error("Dragonbane: Error creating translation map:", error);
 			return null;
 		}
 	};
@@ -67,8 +72,8 @@ function registerConverters() {
 				return list || "";
 			}
 
-			const entries = getTranslationEntries();
-			if (!entries) {
+			const map = getTranslationMap();
+			if (!map) {
 				return list;
 			}
 
@@ -76,7 +81,7 @@ function registerConverters() {
 				.split(",")
 				.map((item) => {
 					const trimmedItem = item.trim();
-					return entries[trimmedItem]?.name || trimmedItem;
+					return map[trimmedItem] || trimmedItem;
 				})
 				.sort((a, b) => a.localeCompare(b))
 				.join(", ");
