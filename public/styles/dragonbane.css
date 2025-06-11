@@ -11,13 +11,18 @@
 }
 
 .weapon-action {
-	font-size: var(--font-size-12);
+	font-size: var(--font-size-16);
+	font-weight: 600;
 }
 
 .rollable-skill,
 .use-ability,
 a.item-edit {
 	font-weight: 600;
+}
+
+.rollable-skill b {
+	color: var(--dod-color-text-dark-title);
 }
 
 .DoD.sheet.character .attributes-container .attributes .conditions .condition-label {
@@ -73,4 +78,30 @@ a.item-edit {
 	background: var(--content-link-background);
 	border: 1px solid var(--content-link-border-color);
 	color: var(--content-link-text-color);
+}
+
+/* CHAT */
+
+.chat-message .message-header .flavor-text {
+	font-size: var(--font-size-14);
+}
+
+.chat-message .message-header {
+	line-height: 24px;
+}
+
+.chat-message .message-header .message-sender {
+	font-weight: 700;
+	color: var(--dod-color-text-dark-title);
+}
+
+.system-dragonbane .chat-button {
+	margin-top: 4px;
+}
+
+.content-link,
+.inline-roll {
+	border: none;
+	color: var(--dod-color-text-dark-title);
+	font-weight: 600;
 }
