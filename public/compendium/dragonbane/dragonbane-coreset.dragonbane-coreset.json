@@ -1,6 +1,5 @@
 {
 	"label": "Dragonbane - Основной набор",
-	"folders": {},
 	"entries": {
 		"Dragonbane - Rules": {
 			"name": "Dragonbane - Правила",
@@ -106,30 +105,30 @@
 				},
 				"The Adventure Site": {
 					"name": "Точка интереса",
-					"command": "const tables = game.tables.filter(e => e.name.startsWith(\"The Adventure Site - \")).sort((a, b) => {\n  if (a.name < b.name) return -1;\n  if (a.name > b.name) return 1;\n  return 0;\n});\n\nlet msg = \"\";\nlet paragraph = true;\nfor (const table of tables) {\n  if (paragraph) {\n    msg += \"<p>\";\n    paragraph = false;\n  }\n  msg += table.description;\n\n  const draw = await table.draw({displayChat: false});\n  const text = draw.results[0].text;\n  msg += \" <b>\" + draw.results[0].text + \"</b> \";\n\n  if (text.charAt(text.length-1) == \".\") {\n    msg += \"</p>\";\n    paragraph = true;\n  }\n}\nChatMessage.create({content: msg});"
+					"command": "const tables = game.tables.filter(e => e.name.startsWith(\"Точка интереса - \")).sort((a, b) => {\n  if (a.name < b.name) return -1;\n  if (a.name > b.name) return 1;\n  return 0;\n});\n\nlet msg = \"\";\nlet paragraph = true;\nfor (const table of tables) {\n  if (paragraph) {\n    msg += \"<p>\";\n    paragraph = false;\n  }\n  msg += table.description;\n\n  const draw = await table.draw({displayChat: false});\n  const text = draw.results[0].text;\n  msg += \" <b>\" + draw.results[0].text + \"</b> \";\n\n  if (text.charAt(text.length-1) == \".\") {\n    msg += \"</p>\";\n    paragraph = true;\n  }\n}\nChatMessage.create({content: msg});"
 				},
 				"Roll CON": {
-					"name": "Бросок ВЫН",
+					"name": "Проверка ВЫН",
 					"command": "for (const token of canvas.tokens.controlled) {\n  game.dragonbane.rollAttribute(token.actor, \"con\");\n}"
 				},
 				"Roll WIL": {
-					"name": "Бросок ВОЛ",
+					"name": "Проверка ВОЛ",
 					"command": "for (const token of canvas.tokens.controlled) {\n  game.dragonbane.rollAttribute(token.actor, \"wil\");\n}"
 				},
 				"Roll STR": {
-					"name": "Бросок СИЛ",
+					"name": "Проверка СИЛ",
 					"command": "for (const token of canvas.tokens.controlled) {\n  game.dragonbane.rollAttribute(token.actor, \"str\");\n}"
 				},
 				"Roll AGL": {
-					"name": "Бросок ЛОВ",
+					"name": "Проверка ЛОВ",
 					"command": "for (const token of canvas.tokens.controlled) {\n  game.dragonbane.rollAttribute(token.actor, \"agl\");\n}"
 				},
 				"Roll INT": {
-					"name": "Бросок ИНТ",
+					"name": "Проверка ИНТ",
 					"command": "for (const token of canvas.tokens.controlled) {\n  game.dragonbane.rollAttribute(token.actor, \"int\");\n}"
 				},
 				"Roll CHA": {
-					"name": "Бросок ХАР",
+					"name": "Проверка ХАР",
 					"command": "for (const token of canvas.tokens.controlled) {\n  game.dragonbane.rollAttribute(token.actor, \"cha\");\n}"
 				}
 			},
@@ -323,8 +322,8 @@
 					"tokenName": "Макандр из Полбухты"
 				},
 				"Orla Moonsilver": {
-					"name": "Орла Луносребрая",
-					"tokenName": "Орла Луносребрая"
+					"name": "Орла Сребролунная",
+					"tokenName": "Орла Сребролунная"
 				},
 				"Adventurer": {
 					"name": "Искатель приключений",
@@ -379,8 +378,8 @@
 					"tokenName": "Грунта"
 				},
 				"Jaldo": {
-					"name": "Яльдо",
-					"tokenName": "Яльдо"
+					"name": "Ялдо",
+					"tokenName": "Ялдо"
 				},
 				"The Robber Knight": {
 					"name": "Рыцарь-разбойник",
@@ -389,55 +388,72 @@
 			},
 			"items": {
 				"Assassin": {
-					"name": "Убийца"
+					"name": "Убийца",
+					"requirement": "Ножи 12"
 				},
 				"Backstabbing": {
-					"name": "Удар в спину"
+					"name": "Удар в спину",
+					"requirement": "Ножи 12"
 				},
 				"Battle Cry": {
-					"name": "Боевой клич"
+					"name": "Боевой клич",
+					"requirement": "—"
 				},
 				"Berserker": {
-					"name": "Берсерк"
+					"name": "Берсерк",
+					"requirement": "Навык оружия ближнего боя 12"
 				},
 				"Catlike": {
-					"name": "Четыре лапы"
+					"name": "Четыре лапы",
+					"requirement": "Акробатика 12"
 				},
 				"Companion": {
-					"name": "Верный зверь"
+					"name": "Верный зверь",
+					"requirement": "Охота и рыбалка 12"
 				},
 				"Contortionist": {
-					"name": "Гибкость"
+					"name": "Гибкость",
+					"requirement": "Уклонение 12"
 				},
 				"Defensive": {
-					"name": "Защитная стойка"
+					"name": "Защитная стойка",
+					"requirement": "Навык оружия ближнего боя 12"
 				},
 				"Deflect Arrow": {
-					"name": "Отражение стрел"
+					"name": "Отражение стрел",
+					"requirement": "Навык оружия ближнего боя 12"
 				},
 				"Disguise": {
-					"name": "Маскировка"
+					"name": "Маскировка",
+					"requirement": "Обман 12"
 				},
 				"Double Slash": {
-					"name": "Двойной разрез"
+					"name": "Двойной разрез",
+					"requirement": "Топоры или Мечи 12"
 				},
 				"Dragonslayer": {
-					"name": "Гроза чудовищ"
+					"name": "Гроза чудовищ",
+					"requirement": "Любой оружейный навык 12"
 				},
 				"Dual Wield": {
-					"name": "Обоерукость"
+					"name": "Обоерукость",
+					"requirement": "Навык оружия ближнего боя 12"
 				},
 				"Eagle Eye": {
-					"name": "Острое зрение"
+					"name": "Острое зрение",
+					"requirement": "Бдительность 12"
 				},
 				"Fast Footwork": {
-					"name": "Маневрирование"
+					"name": "Маневрирование",
+					"requirement": "Уклонение 12"
 				},
 				"Fast Healer": {
-					"name": "Полевой целитель"
+					"name": "Полевой целитель",
+					"requirement": "—"
 				},
 				"Fearless": {
-					"name": "Бесстрашие"
+					"name": "Бесстрашие",
+					"requirement": "—"
 				},
 				"Focused": {
 					"name": "Концентрация"
@@ -497,7 +513,7 @@
 					"name": "Квартирмейстер"
 				},
 				"Robust": {
-					"name": "Крепкость"
+					"name": "Крепость"
 				},
 				"Sea Legs": {
 					"name": "Морские ноги"
@@ -521,25 +537,32 @@
 					"name": "Слизняк"
 				},
 				"Adaptive": {
-					"name": "Приспособление"
+					"name": "Приспособление",
+					"requirement": "Человек"
 				},
 				"Hard to Catch": {
-					"name": "Изворотливость"
+					"name": "Изворотливость",
+					"requirement": "Полурослик"
 				},
 				"Hunting Instincts": {
-					"name": "Охотничьи инстинкты"
+					"name": "Охотничьи инстинкты",
+					"requirement": "Волкарь"
 				},
 				"Ill-Tempered": {
-					"name": "Дурной нрав"
+					"name": "Дурной нрав",
+					"requirement": "Крякв"
 				},
 				"Inner Peace": {
-					"name": "Внутренний покой"
+					"name": "Внутренний покой",
+					"requirement": "Эльф"
 				},
 				"Unforgiving": {
-					"name": "Злопамятность"
+					"name": "Злопамятность",
+					"requirement": "Дварф"
 				},
 				"Webbed Feet": {
-					"name": "Перепончатые лапы"
+					"name": "Перепончатые лапы",
+					"requirement": "Крякв"
 				},
 				"Chicken": {
 					"name": "Курица"
@@ -1518,36 +1541,6 @@
 				},
 				"Teeth knocked out": {
 					"name": "Выбитые зубы"
-				},
-				"Gesture": {
-					"name": "жест"
-				},
-				"gesture": {
-					"name": "жест"
-				},
-				"Word": {
-					"name": "слово"
-				},
-				"word": {
-					"name": "слово"
-				},
-				"Focus": {
-					"name": "фокусировка"
-				},
-				"focus": {
-					"name": "фокусировка"
-				},
-				"Ingredient": {
-					"name": "материал"
-				},
-				"ingredient": {
-					"name": "материал"
-				},
-				"General": {
-					"name": "Общее"
-				},
-				"Any School of Magic": {
-					"name": "любая школа магии"
 				}
 			},
 			"tables": {
