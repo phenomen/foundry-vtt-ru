@@ -1,12 +1,18 @@
+@font-face {
+	font-family: "Beaufort Medium Italic";
+	src: url("../fonts/Beaufort/Beaufort-MediumItalic.woff2") format("woff2");
+}
+
 .system-dragonbane {
 	--dod-font-primary: var(--font-fancy);
 	--dod-font-secondary: var(--font-fancy);
 	--dod-font-heading: var(--font-fancy);
-	--dod-font-handwriting: var(--font-fancy);
+	--dod-font-handwriting: "Beaufort Medium Italic";
 }
 
 .sheet-tabs.tabs .item {
 	font-family: var(--dod-font-primary);
+	font-size: var(--font-size-15);
 	font-weight: 700;
 }
 
@@ -34,7 +40,7 @@ a.item-edit {
 }
 
 .DoD.sheet.character .attributes-container .attributes .attribute-panel .attribute-input {
-	left: -2px;
+	left: -4px;
 }
 
 .DoD.sheet.character .sheet-header .image-container h1 input {
@@ -75,9 +81,7 @@ a.item-edit {
 
 .content-link,
 .inline-roll {
-	background: var(--content-link-background);
-	border: 1px solid var(--content-link-border-color);
-	color: var(--content-link-text-color);
+	border: none;
 }
 
 /* CHAT */
@@ -97,11 +101,4 @@ a.item-edit {
 
 .system-dragonbane .chat-button {
 	margin-top: 4px;
-}
-
-.content-link,
-.inline-roll {
-	border: none;
-	color: var(--dod-color-text-dark-title);
-	font-weight: 600;
 }
