@@ -20,6 +20,7 @@
 	"TYPES.ActiveEffect.enchantmentPl": "Зачарования",
 
 	"TYPES.ChatMessage": {
+		"request": "Сообщение запроса",
 		"rest": "Сообщение отдыха",
 		"turn": "Сообщение в начале хода"
 	},
@@ -52,6 +53,10 @@
 	"TYPES.Item.toolPl": "Инструменты",
 	"TYPES.Item.weapon": "Оружие",
 	"TYPES.Item.weaponPl": "Оружие",
+
+	"TYPES.RegionBehavior": {
+		"dnd5e.rotateArea": "Поворот области"
+	},
 
 	"DND5E.title": "Dungeon & Dragons Fifth Edition",
 	"DND5E.AbbreviationCR": "КО",
@@ -1115,6 +1120,13 @@
 		"Deltas": {
 			"Recovery": "Восстановление"
 		},
+		"REQUEST": {
+			"Action": {
+				"Handle": "Обработка запроса"
+			},
+			"Complete": "Запрос выплнен",
+			"PartyMembers": "Участники группы"
+		},
 		"TURN": {
 			"NoCombatant": "Боец больше не существует!"
 		}
@@ -1178,6 +1190,9 @@
 					"label": "Основная характеристика",
 					"hint": "Характеристики, чаще всего используемые этим классом. Используются для ограничений мультиклассирования."
 				}
+			},
+			"properties": {
+				"label": "Свойства класса"
 			}
 		}
 	},
@@ -2467,8 +2482,6 @@
 	"DND5E.FlagsElvenAccuracyHint": "Дополнительная кость при проверках ЛВК, ИНТ, МДР и ХАР с преимуществом.",
 	"DND5E.FlagsHalflingLucky": "Удача полуросликов",
 	"DND5E.FlagsHalflingLuckyHint": "Один переброс при проверках d20.",
-	"DND5E.FlagsInitiativeAdv": "Преимущество инициативы",
-	"DND5E.FlagsInitiativeAdvHint": "Проверки инициативы получают преимущество.",
 	"DND5E.FlagsAlert": "Бдительный",
 	"DND5E.FlagsAlertHint": "Умение в проверках инициативы.",
 	"DND5E.FlagsAlertHintLegacy": "+5 к инициативе.",
@@ -2772,6 +2785,7 @@
 			"Reload": "Перезарядка",
 			"Returning": "Возвращаемое",
 			"Ritual": "Ритуал",
+			"Sidekick": "Помощник",
 			"Silvered": "Посеребрённое",
 			"Somatic": "Жестовый",
 			"Special": "Особое",
@@ -2858,7 +2872,7 @@
 	"DND5E.Languages": "Языки",
 
 	"DND5E.LegendaryAction": {
-		"Description": "Использования легендарных действий: {uses}",
+		"Description": "Использования легендарного действия: {uses}. Сразу же после хода другого существа {name} может потратить использование, чтобы совершить одно из следующих действий. {name} восстанавливает все потраченные использования в начале каждого своего хода.",
 		"DescriptionLegacy": "{name} может использовать {usesNamed}, выбрав один из вариантов ниже. Одновременно можно использовать только один вариант легендарного действия и только в конце хода другого существа. {name} восстанавливает потраченные легендарные действия в начале своего хода.",
 		"Label": "Легендарное действие",
 		"LairUses": "{normal} ({lair} в логове)",
@@ -3052,7 +3066,7 @@
 		},
 		"Formatted": {
 			"Range": "дистанция {range}",
-			"Reach": "зона досягаемости {reach}"
+			"Reach": "досягаемость {reach}"
 		}
 	},
 
@@ -3070,6 +3084,75 @@
 	"DND5E.RechargeShort": "Перезарядка после короткого или долгого отдыха",
 	"DND5E.Recovery": "Восстановление",
 	"DND5E.RecoveryFormula": "Формула восстановления",
+
+	"DND5E.REGIONBEHAVIORS": {
+		"ROTATEAREA": {
+			"Action": {
+				"AddPosition": "Добавить позицию",
+				"DeletePosition": "Удалить позицию",
+				"RotateToPosition": "Повернуть на позицию"
+			},
+			"DirectionMode": {
+				"Clockwise": "По часовой стрелке",
+				"CounterClockwise": "Против часовой стрелки",
+				"Longest": "Длинная сторона",
+				"Shortest": "Короткая сторона"
+			},
+			"FIELDS": {
+				"directionMode": {
+					"label": "Режим направления",
+					"hint": "Как определяется направление вращения при переходе к следующей позиции."
+				},
+				"lights": {
+					"ids": {
+						"label": "Освещение"
+					}
+				},
+				"positions": {
+					"label": "Позиции",
+					"element": {
+						"angle": {
+							"label": "Угол"
+						}
+					}
+				},
+				"sounds": {
+					"ids": {
+						"label": "Фоновые звуки"
+					}
+				},
+				"tiles": {
+					"ids": {
+						"label": "Тайлы"
+					}
+				},
+				"time": {
+					"mode": {
+						"label": "Режим скорости",
+						"hint": "Как скорость поворота определяется по длительности поворота: либо одинаково, независимо от расстояния перемещения (фиксированная), либо в зависимости от дистанции поворота (переменная)."
+					},
+					"value": {
+						"label": "Длительность поворота",
+						"hint": "Время в милисекундах для поворота в следующую позицию (в фиксированном режиме) или для поворота на 90˚ (в переменном режиме)."
+					}
+				},
+				"walls": {
+					"ids": {
+						"label": "Стены"
+					},
+					"link": {
+						"label": "Связать стены",
+						"hint": "Поворачивать все сегменты стены, прикрёпленные к указанным."
+					}
+				}
+			},
+			"SpeedMode": {
+				"Fixed": "Фиксированное (общее время поворота)",
+				"Variable": "Переменное (поворот на 90˚)"
+			}
+		}
+	},
+
 	"DND5E.Remaining": "Осталось",
 	"DND5E.RequiredMaterials": "Требуемые материалы",
 	"DND5E.Requirements": "Требования",
@@ -3114,6 +3197,20 @@
 		"NewDay": {
 			"Hint": "Восстановить способности с ограничением \"в день\" на закате, рассвете или с наступлением нового дня.",
 			"Label": "Новый день"
+		},
+		"RecoverTempHP": {
+			"Label": "Убрать временные ПЗ"
+		},
+		"RecoverTempMaxHP": {
+			"Hint": "Убрать модификаторы максимальных пунктов здоровья.",
+			"Label": "Восстановить макс. ПЗ"
+		},
+		"Request": {
+			"AutoRest": {
+				"Hint": "Автоматически выполнить отдых для выбранных участников группы, вместо того, чтобы отправлять игрокам запрос на отдых.",
+				"Label": "Автоматический отдых"
+			},
+			"Label": "Запрос отдыха"
 		},
 		"Short": {
 			"Abbreviation": "КО",
@@ -3252,22 +3349,23 @@
 	"DND5E.SenseUnits": "Единицы измерения",
 	"DND5E.SenseSpecial": "Способы восприятия",
 	"DND5E.Shape": "Форма",
-	"DND5E.SheetClassCharacter": "Бланк персонажа 5e",
-	"DND5E.SheetClassCharacterLegacy": "Старый бланк персонажа 5e",
-	"DND5E.SheetClassClassSummary": "Бланк класса 5e",
-	"DND5E.SheetClassContainer": "Бланк контейнера 5e",
-	"DND5E.SheetClassContainerLegacy": "Старый бланк контейнера 5e",
-	"DND5E.SheetClassGroup": "Бланк группы 5e",
-	"DND5E.SheetClassItem": "Бланк предмета 5e",
-	"DND5E.SheetClassItemLegacy": "Старый бланк предмета 5e",
-	"DND5E.SheetClassJournalEntry": "Бланк журнала 5e",
-	"DND5E.SheetClassMapLocation": "Бланк зоны карты 5e",
-	"DND5E.SheetClassNPC": "Бланк ПМ 5e",
-	"DND5E.SheetClassNPCLegacy": "Старый бланк ПМ 5e",
-	"DND5E.SheetClassRule": "Бланк правил 5e",
-	"DND5E.SheetClassSpellList": "Бланк списка заклинаний 5e",
-	"DND5E.SheetClassToken": "Бланк токена 5e",
-	"DND5E.SheetClassVehicle": "Бланк транспорта 5e",
+
+	"DND5E.SheetClass": {
+		"Character": "Бланк персонажа игрока 5e",
+		"ClassSummary": "Бланк класса 5e",
+		"Container": "Бланк контейнера 5e",
+		"Group": "Бланк группы 5e",
+		"Item": "Бланк предмета 5e",
+		"JournalEntry": "Бланк журнала 5e",
+		"MapLocation": "Бланк зоны карты 5e",
+		"NPC": "Бланк персонажа мастера 5e",
+		"RotateArea": "Бланк поворота области 5e",
+		"Rule": "Бланк правила 5e",
+		"SpellList": "Бланк списка заклинаний 5e",
+		"Token": "Бланк токена 5e",
+		"Vehicle": "Бланк транспорта 5e"
+	},
+
 	"DND5E.SheetModeEdit": "Изменение",
 	"DND5E.SheetModePlay": "Игра",
 	"DND5E.SavingThrow": "Испытание",
