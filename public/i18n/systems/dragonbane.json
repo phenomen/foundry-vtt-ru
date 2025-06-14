@@ -185,11 +185,11 @@
 		"injury": {
 			"healingTime": "Период исцеления",
 			"healingTimeTooltip": "Число дней, требуемых для исцеления травмы",
-			"healingTimeExpired": "Травма исцелена: <b>{injury}</b>.",
-			"healingTimeRollFlavor": "Период исцеления для <b>{injury}</b> составляет <b>{days}</b> дней.",
+			"healingTimeExpired": "Травма <b>{injury}</b> исцелена",
+			"healingTimeRollFlavor": "Период исцеления <b>{injury}</b> составляет <b>{days}</b> дней",
 			"rollHealingTime": "ЛКМ для проверки периода исцеления",
 			"clickHealingTime": "ЛКМ - уменьшить, ПКМ - увеличить",
-			"healingTimeChanged": "Период исцеления для <b>{injury}</b> изменён <b>{from}</b> на <b>{to}</b> дней."
+			"healingTimeChanged": "Период исцеления <b>{injury}</b> изменён с <b>{from}</b> до <b>{to}</b> дней"
 		},
 		"itemTypes": {
 			"item": "Предмет",
@@ -475,12 +475,12 @@
 				"wp": "ПВ"
 			},
 			"chat": {
-				"damageApplied": "<b>{damage}</b> урона ПЗ нанесено <b>{actor}</b>",
-				"damageAppliedDetails": "{damage} урона против {armor} класса защиты",
-				"damageAppliedMultiplier": "x{multiplier} множитель",
-				"healingApplied": "<b>{actor}</b> исцеляет <b>{spell}</b> ПЗ",
+				"damageApplied": "<b>{actor}</b> получает <b>{damage}</b> урона",
+				"damageAppliedDetails": "{damage} урона против класса защиты {armor}",
+				"damageAppliedMultiplier": "множитель x{multiplier}",
+				"healingApplied": "<b>{actor}</b> исцеляет <b>{damage}</b> ПЗ",
 				"rollDamage": "Бросок урона",
-				"rollHealing": "Проверка исцеления",
+				"rollHealing": "Бросок исцеления",
 				"dealDamage": "Нанести урон",
 				"dealHalfDamage": "Нанести половину урона",
 				"dealDoubleDamage": "Нанести двойной урон",
