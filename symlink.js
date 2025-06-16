@@ -31,8 +31,9 @@ async function createSymlink() {
 
 	try {
 		await access(devPath, constants.F_OK);
-	} catch (_error) {
+	} catch (error) {
 		console.error(`Error: The source directory does not exist: ${devPath}`);
+		console.error(error);
 		process.exit(1);
 	}
 

@@ -4,13 +4,14 @@
 	"private": "true",
 	"scripts": {
 		"build": "vite build",
-		"dev": "vite dev",
 		"format": "prettier . --write",
+		"lint": "oxlint ./src",
 		"symlink": "vite build && bun symlink.js"
 	},
 	"type": "module",
 	"devDependencies": {
-		"prettier": "3.5.3",
+		"oxlint": "^1.1.0",
+		"prettier": "^3.5.3",
 		"vite": "npm:rolldown-vite@latest"
 	},
 	"overrides": {
