@@ -1,10 +1,14 @@
 {
 	"DUNE": {
+		"Name": "Имя",
+		"Type": "Тип",
+		"Hatred": "Вражда",
+		"Reason": "Причина",
+		"Notes": "Заметки",
 		"Sheet": "Лист персонажа",
 		"HouseSheet": "Лист дома",
 		"Biography": "Биография",
 		"HouseDetails": "История дома и другие детали",
-
 		"Skill": "Навык",
 		"Focuses": "Специализации",
 		"Determination": "Очки Решимости",
@@ -12,7 +16,7 @@
 		"Background": "Описание",
 		"Drive": "Стимул",
 		"Statement": "Убеждение",
-		"House": "Название дома",
+		"House": "Дом",
 		"Role": "Должность",
 		"Faction": "Фракция",
 		"Ambition": "Цель",
@@ -22,8 +26,10 @@
 		"no_statement": " ",
 		"lock": "Заблокировать",
 		"unlock": "Разблокировать",
-		"drag_talents": "Вы можете перетащить сюда таланты из компендиума",
-
+		"drag_talents": "Перенестите сюда Таланты из библиотеки",
+		"drag_assets": "Перенестите сюда Активы из библиотеки",
+		"edit_drive": "Двойной клик по Стимулу для изменения",
+		"edit_drives_hint": "Позволить игрокам изменять список Стимулов",
 		"battle": "Бой",
 		"communicate": "Общение",
 		"discipline": "Выдержка",
@@ -34,9 +40,8 @@
 		"justice": "Справедливость",
 		"power": "Власть",
 		"truth": "Истина",
-
 		"Homeworld": "Родовая планета",
-		"Housetype": "Название дома",
+		"Housetype": "Статус дома",
 		"HouseTraits": "Доминанты",
 		"domains": "Профили",
 		"enemies": "Враги",
@@ -48,7 +53,6 @@
 		"notes": "Заметки",
 		"temporary": "Временный",
 		"permanent": "Постоянный",
-
 		"tracker": {
 			"momentum": "Импульс",
 			"threat": "Угроза",
@@ -59,12 +63,18 @@
 			"momentum-decrease": "{{player}} уменьшите очки Импульса"
 		},
 		"roll": {
+			"description": "Совершить проверку",
 			"roller": "Настройки броска",
+			"doroll": "Проверка {type}",
 			"success": "успех",
 			"successPlural": "успеха",
 			"complication": "Возникает затруднение!",
 			"complicationPlural": "Происходит |#| затруднений!",
-			"complicationrange": "Вероятность затруднений:"
+			"complicationrange": "Вероятность затруднений:",
+			"target": "Цель",
+			"complicationFrom": "затруднение от",
+			"usingDetermination": "используя Решимость",
+			"noDeterminationToSpend": "Не хватает Решимости"
 		},
 		"counting": {
 			"one": "1",
@@ -104,6 +114,8 @@
 			"skill": "Связано с навыком",
 			"drive": "Связано со стимулом",
 			"choose": "Выберите одно",
+			"usage": "Как актив",
+			"keywords": "Ключевые слова",
 			"note": "Заметки игрока",
 			"quality": "Количество",
 			"none": "Нет"
@@ -112,6 +124,51 @@
 			"area": "Сфера деятельности",
 			"field": "Область",
 			"details": "Описание"
+		},
+		"skills": {
+			"Battle": "Бой",
+			"Communicate": "Общение",
+			"Discipline": "Выдержка",
+			"Move": "Физподготовка",
+			"Understand": "Познание"
+		},
+		"drives": {
+			"Duty": "Долг",
+			"Faith": "Вера",
+			"Justice": "Справедливость",
+			"Power": "Власть",
+			"Truth": "Истина",
+			"Challenge": "Испытание",
+			"Glory": "Слава",
+			"Indulgence": "Потворство",
+			"Hate": "Ненависть",
+			"Honor": "Честь",
+			"Love": "Любовь"
+		},
+		"errors": {
+			"minMomentumValue": "Импульс не может быть ниже 0",
+			"maxMomentumValue": "Импульс не может быть выше 6",
+			"minThreatValue": "Угроза не может быть ниже 0"
+		},
+		"ui": {
+			"areYouSureDelete": "Вы уверены, что хотите удалить {what}?",
+			"confirmDelete": "Удалить {what}"
+		}
+	},
+	"TYPES": {
+		"Actor": {
+			"Player Character": "Персонаж игрока",
+			"Supporting Character": "Помощник",
+			"Non-Player Character": "Персонаж ведущего",
+			"Asset": "Актив",
+			"House": "Дом"
+		},
+		"Item": {
+			"talent": "Талант",
+			"domain": "Профиль",
+			"enemy": "Враг",
+			"trait": "Доминанта",
+			"asset": "Актив"
 		}
 	}
 }
