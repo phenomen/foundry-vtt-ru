@@ -1,174 +1,174 @@
 {
-  "DUNE": {
-    "Name": "Имя",
-    "Type": "Тип",
-    "Hatred": "Вражда",
-    "Reason": "Причина",
-    "Notes": "Заметки",
-    "Sheet": "Лист персонажа",
-    "HouseSheet": "Лист дома",
-    "Biography": "Биография",
-    "HouseDetails": "История дома и другие детали",
-    "Skill": "Навык",
-    "Focuses": "Специализации",
-    "Determination": "Очки Решимости",
-    "XP": "Очки Развития",
-    "Background": "Описание",
-    "Drive": "Стимул",
-    "Statement": "Убеждение",
-    "House": "Дом",
-    "Role": "Должность",
-    "Faction": "Фракция",
-    "Ambition": "Цель",
-    "Traits": "Доминанты",
-    "Talents": "Таланты",
-    "Assets": "Активы",
-    "no_statement": " ",
-    "lock": "Заблокировать",
-    "unlock": "Разблокировать",
-    "drag_talents": "Перенестите сюда Таланты из библиотеки",
-    "drag_assets": "Перенестите сюда Активы из библиотеки",
-    "edit_drive": "Двойной клик по Стимулу для изменения",
-    "edit_drives_hint": "Позволить игрокам изменять список Стимулов",
-    "battle": "Бой",
-    "communicate": "Общение",
-    "discipline": "Выдержка",
-    "move": "Физподготовка",
-    "understand": "Познание",
-    "duty": "Долг",
-    "faith": "Вера",
-    "justice": "Справедливость",
-    "power": "Власть",
-    "truth": "Истина",
-    "Homeworld": "Родовая планета",
-    "Housetype": "Статус дома",
-    "HouseTraits": "Доминанты",
-    "domains": "Профили",
-    "enemies": "Враги",
-    "motto": "Девиз",
-    "crest": "Эмблема дома",
-    "primary": "Основной профиль",
-    "secondary": "Дополнительный профиль",
-    "quality": "Количество",
-    "notes": "Заметки",
-    "temporary": "Временный",
-    "permanent": "Постоянный",
-    "tracker": {
-      "momentum": "Импульс",
-      "threat": "Угроза",
-      "title": "Очки"
-    },
-    "chat": {
-      "threat-increase": "{{player}} добавьте очки Угрозы",
-      "momentum-decrease": "{{player}} уменьшите очки Импульса"
-    },
-    "roll": {
-      "description": "Совершить проверку",
-      "roller": "Настройки броска",
-      "doroll": "Проверка {type}",
-      "success": "успех",
-      "successPlural": "успеха",
-      "complication": "Возникает затруднение!",
-      "complicationPlural": "Происходит |#| затруднений!",
-      "complicationrange": "Вероятность затруднений:",
-      "target": "Цель",
-      "complicationFrom": "затруднение от",
-      "usingDetermination": "используя Решимость",
-      "noDeterminationToSpend": "Не хватает Решимости"
-    },
-    "counting": {
-      "one": "1",
-      "two": "2",
-      "three": "3",
-      "four": "4",
-      "five": "5"
-    },
-    "apps": {
-      "target": "Порог успеха (Навык + Стимул)",
-      "dicepoolwindow": "Набор костей",
-      "focus": "Воспользоваться специализацией?",
-      "determination": "Потратить Решимость?",
-      "complicationrange": "Вероятность затруднений (обычно при результате 20)?",
-      "pool": "Сколько костей в наборе",
-      "rolldice": "Бросить"
-    },
-    "roles": {
-      "title": "Должности",
-      "Ruler": "Глава дома",
-      "Consort": "Консорт",
-      "Heir": "Наследник",
-      "Advisor": "Советник",
-      "Chief Physician": "Главный медик",
-      "Councillor": "Управляющий",
-      "Envoy": "Эмиссар",
-      "envoy": "Эмиссар",
-      "Marshall": "Судья",
-      "Scholar": "Главный ученый",
-      "Spymaster": "Мастер-шпион",
-      "Swordmaster": "Мастер меча",
-      "Treasurer": "Казначей",
-      "Warmaster": "Мастер войны"
-    },
-    "items": {
-      "faction": "Регулируется фракцией",
-      "skill": "Связано с навыком",
-      "drive": "Связано со стимулом",
-      "choose": "Выберите одно",
-      "usage": "Как актив",
-      "keywords": "Ключевые слова",
-      "note": "Заметки игрока",
-      "quality": "Количество",
-      "none": "Нет"
-    },
-    "domain": {
-      "area": "Сфера деятельности",
-      "field": "Область",
-      "details": "Описание"
-    },
-    "skills": {
-      "Battle": "Бой",
-      "Communicate": "Общение",
-      "Discipline": "Выдержка",
-      "Move": "Физподготовка",
-      "Understand": "Познание"
-    },
-    "drives": {
-      "Duty": "Долг",
-      "Faith": "Вера",
-      "Justice": "Справедливость",
-      "Power": "Власть",
-      "Truth": "Истина",
-      "Challenge": "Испытание",
-      "Glory": "Слава",
-      "Indulgence": "Потворство",
-      "Hate": "Ненависть",
-      "Honor": "Честь",
-      "Love": "Любовь"
-    },
-    "errors": {
-      "minMomentumValue": "Импульс не может быть ниже 0",
-      "maxMomentumValue": "Импульс не может быть выше 6",
-      "minThreatValue": "Угроза не может быть ниже 0"
-    },
-    "ui": {
-      "areYouSureDelete": "Вы уверены, что хотите удалить {what}?",
-      "confirmDelete": "Удалить {what}"
-    }
-  },
-  "TYPES": {
-    "Actor": {
-      "Player Character": "Персонаж игрока",
-      "Supporting Character": "Помощник",
-      "Non-Player Character": "Персонаж ведущего",
-      "Asset": "Актив",
-      "House": "Дом"
-    },
-    "Item": {
-      "talent": "Талант",
-      "domain": "Профиль",
-      "enemy": "Враг",
-      "trait": "Доминанта",
-      "asset": "Актив"
-    }
-  }
+	"DUNE": {
+		"Name": "Имя",
+		"Type": "Тип",
+		"Hatred": "Вражда",
+		"Reason": "Причина",
+		"Notes": "Заметки",
+		"Sheet": "Лист персонажа",
+		"HouseSheet": "Лист дома",
+		"Biography": "Биография",
+		"HouseDetails": "История дома и другие детали",
+		"Skill": "Навык",
+		"Focuses": "Специализации",
+		"Determination": "Очки Решимости",
+		"XP": "Очки Развития",
+		"Background": "Описание",
+		"Drive": "Стимул",
+		"Statement": "Убеждение",
+		"House": "Дом",
+		"Role": "Должность",
+		"Faction": "Фракция",
+		"Ambition": "Цель",
+		"Traits": "Доминанты",
+		"Talents": "Таланты",
+		"Assets": "Активы",
+		"no_statement": " ",
+		"lock": "Заблокировать",
+		"unlock": "Разблокировать",
+		"drag_talents": "Перенестите сюда Таланты из библиотеки",
+		"drag_assets": "Перенестите сюда Активы из библиотеки",
+		"edit_drive": "Двойной клик по Стимулу для изменения",
+		"edit_drives_hint": "Позволить игрокам изменять список Стимулов",
+		"battle": "Бой",
+		"communicate": "Общение",
+		"discipline": "Выдержка",
+		"move": "Физподготовка",
+		"understand": "Познание",
+		"duty": "Долг",
+		"faith": "Вера",
+		"justice": "Справедливость",
+		"power": "Власть",
+		"truth": "Истина",
+		"Homeworld": "Родовая планета",
+		"Housetype": "Статус дома",
+		"HouseTraits": "Доминанты",
+		"domains": "Профили",
+		"enemies": "Враги",
+		"motto": "Девиз",
+		"crest": "Эмблема дома",
+		"primary": "Основной профиль",
+		"secondary": "Дополнительный профиль",
+		"quality": "Количество",
+		"notes": "Заметки",
+		"temporary": "Временный",
+		"permanent": "Постоянный",
+		"tracker": {
+			"momentum": "Импульс",
+			"threat": "Угроза",
+			"title": "Очки"
+		},
+		"chat": {
+			"threat-increase": "{{player}} добавьте очки Угрозы",
+			"momentum-decrease": "{{player}} уменьшите очки Импульса"
+		},
+		"roll": {
+			"description": "Совершить проверку",
+			"roller": "Настройки броска",
+			"doroll": "Проверка {type}",
+			"success": "успех",
+			"successPlural": "успеха",
+			"complication": "Возникает затруднение!",
+			"complicationPlural": "Происходит |#| затруднений!",
+			"complicationrange": "Вероятность затруднений:",
+			"target": "Цель",
+			"complicationFrom": "затруднение от",
+			"usingDetermination": "используя Решимость",
+			"noDeterminationToSpend": "Не хватает Решимости"
+		},
+		"counting": {
+			"one": "1",
+			"two": "2",
+			"three": "3",
+			"four": "4",
+			"five": "5"
+		},
+		"apps": {
+			"target": "Порог успеха (Навык + Стимул)",
+			"dicepoolwindow": "Набор костей",
+			"focus": "Воспользоваться специализацией?",
+			"determination": "Потратить Решимость?",
+			"complicationrange": "Вероятность затруднений (обычно при результате 20)?",
+			"pool": "Сколько костей в наборе",
+			"rolldice": "Бросить"
+		},
+		"roles": {
+			"title": "Должности",
+			"Ruler": "Глава дома",
+			"Consort": "Консорт",
+			"Heir": "Наследник",
+			"Advisor": "Советник",
+			"Chief Physician": "Главный медик",
+			"Councillor": "Управляющий",
+			"Envoy": "Эмиссар",
+			"envoy": "Эмиссар",
+			"Marshall": "Судья",
+			"Scholar": "Главный ученый",
+			"Spymaster": "Мастер-шпион",
+			"Swordmaster": "Мастер меча",
+			"Treasurer": "Казначей",
+			"Warmaster": "Мастер войны"
+		},
+		"items": {
+			"faction": "Регулируется фракцией",
+			"skill": "Связано с навыком",
+			"drive": "Связано со стимулом",
+			"choose": "Выберите одно",
+			"usage": "Как актив",
+			"keywords": "Ключевые слова",
+			"note": "Заметки игрока",
+			"quality": "Количество",
+			"none": "Нет"
+		},
+		"domain": {
+			"area": "Сфера деятельности",
+			"field": "Область",
+			"details": "Описание"
+		},
+		"skills": {
+			"Battle": "Бой",
+			"Communicate": "Общение",
+			"Discipline": "Выдержка",
+			"Move": "Физподготовка",
+			"Understand": "Познание"
+		},
+		"drives": {
+			"Duty": "Долг",
+			"Faith": "Вера",
+			"Justice": "Справедливость",
+			"Power": "Власть",
+			"Truth": "Истина",
+			"Challenge": "Испытание",
+			"Glory": "Слава",
+			"Indulgence": "Потворство",
+			"Hate": "Ненависть",
+			"Honor": "Честь",
+			"Love": "Любовь"
+		},
+		"errors": {
+			"minMomentumValue": "Импульс не может быть ниже 0",
+			"maxMomentumValue": "Импульс не может быть выше 6",
+			"minThreatValue": "Угроза не может быть ниже 0"
+		},
+		"ui": {
+			"areYouSureDelete": "Вы уверены, что хотите удалить {what}?",
+			"confirmDelete": "Удалить {what}"
+		}
+	},
+	"TYPES": {
+		"Actor": {
+			"Player Character": "Персонаж игрока",
+			"Supporting Character": "Помощник",
+			"Non-Player Character": "Персонаж ведущего",
+			"Asset": "Актив",
+			"House": "Дом"
+		},
+		"Item": {
+			"talent": "Талант",
+			"domain": "Профиль",
+			"enemy": "Враг",
+			"trait": "Доминанта",
+			"asset": "Актив"
+		}
+	}
 }

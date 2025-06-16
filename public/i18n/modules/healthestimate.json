@@ -1,300 +1,300 @@
 {
-  "healthEstimate": {
-    "core": {
-      "custom": {
-        "FractionHP": {
-          "name": "Путь атрибута пунктов здоровья",
-          "hint": "Ваша система может использовать особый путь к атрибуту. Измените этот параметр (например на actor.system.health), если оценка здоровья не отображается. "
-        },
-        "FractionMath": {
-          "name": "Уравнение долей",
-          "hint": "Расчёты здоровья в вашей системе могут отличаться от стандартных. Выберите формулу для расчёта стадий здоровья. ",
-          "choices": {
-            "0": "(Текущие ПЗ)/(Максимальные ПЗ)",
-            "1": "(Максимальные ПЗ - Текущие ПЗ)/(Максимальные ПЗ)"
-          }
-        }
-      },
-      "estimates": {
-        "plural": "Оценки",
-        "worst": "Худшая",
-        "best": "Лучшая",
-        "states": {
-          "0": "Без сознания",
-          "1": "При смерти",
-          "2": "Тяжёлая травма",
-          "3": "Травма",
-          "4": "Лёгкая травма",
-          "5": "Без повреждений"
-        },
-        "vehicles": {
-          "0": "Разрушение",
-          "1": "Возгорание",
-          "2": "Задымление",
-          "3": "Вмятины",
-          "4": "Царапины",
-          "5": "Без повреждений"
-        },
-        "thresholds": {
-          "0": "Разрушение",
-          "1": "Поломка",
-          "2": "Нормальная работа"
-        }
-      },
-      "estimationSettings": {
-        "title": "Настройки оценки",
-        "AddEstimate": "Добавление оценки",
-        "addTable": "Добавление таблицы",
-        "default": "По умолчанию",
-        "deleteTable": "Удаление таблицы",
-        "estimate": "Оценка",
-        "jsRule": "JS правило",
-        "prioDecrease": "Понижение приоритета",
-        "prioIncrease": "Повышение приоритета",
-        "ignoreColor": {
-          "name": "Игнорирование цвета",
-          "hint": "Игнорировать цвета из этой таблицы и использовать цвета из следующей допустимой таблицы для токена. Это предназначено для состояний, которые должны иметь приоритет выше оценки, но при этом используют цвет этой оценки."
-        }
-      },
-      "keybinds": {
-        "markDead": {
-          "name": "Отметка мёртвыми",
-          "hint": "Отметить все выбранные токены мёртвыми. Если все выбранные токены уже мертвы, они будут изменены на живых."
-        },
-        "customEstimates": {
-          "name": "Особые стадии",
-          "hint": "Задать особые настройки оценки выбранным токенам. Оставьте пустым для сброса.",
-          "options": {
-            "1": "Токены и актёры",
-            "2": "Только токены"
-          }
-        },
-        "dontMarkDead": {
-          "name": "Не отмечать мёртвым",
-          "hint": "NPC не будут становиться мёртвыми, когда их ПЗ понижается до 0 (вместо этого они будут Без сознания). Эта опция работает только, если включено {setting}."
-        },
-        "hideEstimates": {
-          "name": "Скрытие оценки",
-          "hint": "Скрывает оценку выбранных токенов от игроков. Скрытые оценки не будут выводиться в чат, а для GM будут помечаться звёздочкой *."
-        },
-        "hideNames": {
-          "name": "Скрытие имён",
-          "hint": "Скрывать имена выбранных токенов, если включена опция {setting}."
-        },
-        "hideEstimatesAndNames": {
-          "name": "Скрытие оценки и имён",
-          "hint": "Скрывать оценку здоровья и имена выбранных токенов."
-        }
-      },
-      "isNow": "{name} → {desc}",
-      "unknownEntity": {
-        "name": "Имя неизвестного существа",
-        "hint": "Способ отображения скрытого имени существа. {warning}",
-        "default": "Неизвестное существо",
-        "warningCUB": "Если вы используете функция скрытых имен CUB, то она будет иметь приоритет над этой настройкой.",
-        "warningPF2eWorkbench": "If you are using PF2e Workbench's feature to mystify names, it will take priority over this setting."
-      },
-      "alwaysShow": {
-        "name": "Всегда отображать оценку",
-        "hint": "Оценка будет видима всегда, а не только при наведении на токен."
-      },
-      "combatOnly": {
-        "name": "Оценка только во время боя",
-        "hint": "Оценка будет отображаться только при активном бое."
-      },
-      "showDescription": {
-        "name": "Показывать оценку",
-        "hint": "Показывать оценку выбранным участникам.",
-        "choices": {
-          "all": "Всем",
-          "GM": "Только для GM",
-          "Players": "Игроки",
-          "NPC": "Персонажи ведущего",
-          "PC": "Персонажи игроков"
-        }
-      },
-      "showDescriptionTokenType": {
-        "name": "Показывать оценку: Токены",
-        "hint": "Показывать оценку для следующих токенов."
-      },
-      "deathState": {
-        "name": "Смерть при состоянии",
-        "hint1": "Show token as defined on the {setting} setting when it has been affected by any condition that uses the icon set on the {setting2} setting.",
-        "hint2": "Show token as defined on the {setting} setting when it has been marked as defeated on combat."
-      },
-      "deathStateName": {
-        "name": "Название состояния смерти",
-        "hint": "Описание мёртвого токена.",
-        "default": "Мёртв"
-      },
-      "deathMarker": {
-        "name": "Метка смерти",
-        "hint": "Путь к иконке состояние для мёртвых токенов."
-      },
-      "NPCsJustDie": {
-        "name": "NPC мгновенно умирают",
-        "hint": "Последняя стадия для токенов, чьи актёры не выбраны (закреплены за) игроками, заменяется настройкой '{setting}'."
-      },
-      "outputChat": {
-        "name": "Выводить оценку в чат",
-        "hint": "Выводить все оценки в чат. Персонажи со скрытыми именами будут отображаться как указано в настройке {setting}."
-      },
-      "addTemp": {
-        "name": "Учитывать временные ПЗ",
-        "hint": "Временные ПЗ будут суммированы с обычными при оценке общего здоровья."
-      },
-      "breakOnZeroMaxHP": {
-        "name": "Hide Estimates on Tokens with 0 Max HP",
-        "hint": "Полезно для объектов с токенами."
-      },
-      "menuSettings": {
-        "behaviorSettings": {
-          "name": "Настройка поведения",
-          "plural": "Настройки поведения"
-        },
-        "deathSettings": {
-          "name": "Настройки смерти",
-          "plural": "Настройки смерти"
-        },
-        "styleSettings": {
-          "name": "Настройки стилей",
-          "plural": "Настройки стилей"
-        },
-        "fontSize": {
-          "name": "Размер шрифта",
-          "hint": "Принимаются параметры CSS для размера шрифта (px, em, rem, и т.д)"
-        },
-        "useColor": {
-          "name": "Использовать цвета",
-          "hint": "Оценка будет отображаться в чёрно-белом виде."
-        },
-        "smoothGradient": {
-          "name": "Плавный градиент",
-          "hint": "Если включено, цвет будет плавно меняться между стадиями. Если выключено, то цвет будет изменяться только при достижении новой стадии."
-        },
-        "deadColor": {
-          "name": "Цвет для мёртвых токенов"
-        },
-        "outline": {
-          "name": "Обводка",
-          "darken": "Темнее",
-          "brighten": "Ярче"
-        },
-        "position": {
-          "name": "Height",
-          "hint": "The height is set relative to the token's frame. Negative values push it higher; positive, lower.",
-          "top": "Сверху",
-          "middle": "Посередине",
-          "bottom": "Снизу"
-        },
-        "position2": {
-          "name": "Position",
-          "hint": "The position relative to the token's frame."
-        },
-        "positionAdjustment": {
-          "name": "Настройка отступа",
-          "hint": "Отступ текста. При положительных значениях он становится выше, при отрицательных - ниже."
-        },
-        "scaleToZoom": {
-          "name": "Масштабировать оценку при приближении",
-          "hint": "Scales the estimate based on the zoom distance. This will cause a drop in performance when used along {setting3}."
-        }
-      }
-    },
-    "custom-system-builder": {
-      "FractionHP": {
-        "hint": "Возможно это {dataPath1} или {dataPath2}."
-      },
-      "tempHP": {
-        "name": "Путь атрибута временных пунктов здоровья",
-        "hint": "Оставьте это пустым, если система не имеет этого или вы не хотите, чтобы это использовалось при оценке."
-      }
-    },
-    "cyberpunk-red-core": {
-      "unorganics": {
-        "4": "Intact",
-        "3": "Operational",
-        "2": "Malfunctioning",
-        "0": "Disabled"
-      }
-    },
-    "cyphersystem": {
-      "impaired": {
-        "name": "Health level for Impaired PCs",
-        "hint": "Sets the maximum health level (current / maximum, fraction 0.0 - 1.0) that can be reported for a PC that is Impaired on the Death Track"
-      },
-      "debilitated": {
-        "name": "Health level for Debilitated PCs",
-        "hint": "Sets the maximum health level (current / maximum, fraction 0.0 - 1.0) that can be reported for a PC that is Debilitated on the Death Track"
-      }
-    },
-    "PF1": {
-      "addNonlethal": {
-        "name": "Учитывать нелетальный урон",
-        "hint": "Если включено, нелетальный урон будет вычтен из текущего здоровья в целях оценки."
-      },
-      "showExtra": {
-        "name": "Отображение {condition1} и {condition2}",
-        "hint": "Отображает описания {condition1} и {condition2}, когда выполнены их условия."
-      },
-      "disabledName": {
-        "name": "Стадия ошеломления",
-        "default": "Ошеломление"
-      },
-      "dyingName": {
-        "name": "Стадия без сознания",
-        "default": "Без сознания"
-      }
-    },
-    "PF2E": {
-      "staminaToHp": {
-        "name": "Живучесть для оценки",
-        "hint": "Добавить пункты живучести для оценки."
-      },
-      "hideHazardHP": {
-        "name": "Скрытие оценки угроз",
-        "hint": "Скрывает оценку для угроз."
-      },
-      "hideVehicleHP": {
-        "name": "Скрытие оценки транспорта",
-        "hint": "Скрывает оценку для транспорта."
-      },
-      "workbenchMystifier": {
-        "name": "(EXPERIMENTAL) PF2e Workbench's Mystifier Support",
-        "hint": "If the NPC Mystification settings are enabled, Chat Outputs will ignore the {setting} setting's name and use the token's name if it is different from its actor's Prototype Token's name."
-      }
-    },
-    "numenera": {
-      "countPools": {
-        "name": "Считать пустые пулы",
-        "hint": "Считать пустые пулы вместо суммы их значений, оценивая только полноту/пустоту пулов."
-      }
-    },
-    "starfinder": {
-      "useThreshold": {
-        "name": "Использовать порог транспорта",
-        "hint": "Defines which estimation table will be used when calculating a Vehicle's estimatives."
-      },
-      "addStamina": {
-        "name": "Учитывать Живучесть",
-        "hint": "Если включено, Живучесть будет суммироваться с ПЗ при оценке."
-      }
-    },
-    "worldbuilding": {
-      "simpleRule": {
-        "name": "Формула оценки",
-        "hint": "JS формула для расчёта долей здоровья токена. Не изменяйте, если не знаете что это."
-      }
-    },
-    "swade": {
-      "defaultWildCardMaxWounds": {
-        "name": "Default Wild Card's Max Wounds",
-        "hint": "This is used to calculate the max wounds a Wild Card NPC should have by default for estimations."
-      },
-      "showIncap": {
-        "name": "Эффект статуса {incap}",
-        "hint": "Tokens with the {incap} Status Effect will be shown as {incap} instead of their current estimates. Doesn't work for tokens that are vehicles or dead."
-      }
-    }
-  }
+	"healthEstimate": {
+		"core": {
+			"custom": {
+				"FractionHP": {
+					"name": "Путь атрибута пунктов здоровья",
+					"hint": "Ваша система может использовать особый путь к атрибуту. Измените этот параметр (например на actor.system.health), если оценка здоровья не отображается. "
+				},
+				"FractionMath": {
+					"name": "Уравнение долей",
+					"hint": "Расчёты здоровья в вашей системе могут отличаться от стандартных. Выберите формулу для расчёта стадий здоровья. ",
+					"choices": {
+						"0": "(Текущие ПЗ)/(Максимальные ПЗ)",
+						"1": "(Максимальные ПЗ - Текущие ПЗ)/(Максимальные ПЗ)"
+					}
+				}
+			},
+			"estimates": {
+				"plural": "Оценки",
+				"worst": "Худшая",
+				"best": "Лучшая",
+				"states": {
+					"0": "Без сознания",
+					"1": "При смерти",
+					"2": "Тяжёлая травма",
+					"3": "Травма",
+					"4": "Лёгкая травма",
+					"5": "Без повреждений"
+				},
+				"vehicles": {
+					"0": "Разрушение",
+					"1": "Возгорание",
+					"2": "Задымление",
+					"3": "Вмятины",
+					"4": "Царапины",
+					"5": "Без повреждений"
+				},
+				"thresholds": {
+					"0": "Разрушение",
+					"1": "Поломка",
+					"2": "Нормальная работа"
+				}
+			},
+			"estimationSettings": {
+				"title": "Настройки оценки",
+				"AddEstimate": "Добавление оценки",
+				"addTable": "Добавление таблицы",
+				"default": "По умолчанию",
+				"deleteTable": "Удаление таблицы",
+				"estimate": "Оценка",
+				"jsRule": "JS правило",
+				"prioDecrease": "Понижение приоритета",
+				"prioIncrease": "Повышение приоритета",
+				"ignoreColor": {
+					"name": "Игнорирование цвета",
+					"hint": "Игнорировать цвета из этой таблицы и использовать цвета из следующей допустимой таблицы для токена. Это предназначено для состояний, которые должны иметь приоритет выше оценки, но при этом используют цвет этой оценки."
+				}
+			},
+			"keybinds": {
+				"markDead": {
+					"name": "Отметка мёртвыми",
+					"hint": "Отметить все выбранные токены мёртвыми. Если все выбранные токены уже мертвы, они будут изменены на живых."
+				},
+				"customEstimates": {
+					"name": "Особые стадии",
+					"hint": "Задать особые настройки оценки выбранным токенам. Оставьте пустым для сброса.",
+					"options": {
+						"1": "Токены и актёры",
+						"2": "Только токены"
+					}
+				},
+				"dontMarkDead": {
+					"name": "Не отмечать мёртвым",
+					"hint": "NPC не будут становиться мёртвыми, когда их ПЗ понижается до 0 (вместо этого они будут Без сознания). Эта опция работает только, если включено {setting}."
+				},
+				"hideEstimates": {
+					"name": "Скрытие оценки",
+					"hint": "Скрывает оценку выбранных токенов от игроков. Скрытые оценки не будут выводиться в чат, а для GM будут помечаться звёздочкой *."
+				},
+				"hideNames": {
+					"name": "Скрытие имён",
+					"hint": "Скрывать имена выбранных токенов, если включена опция {setting}."
+				},
+				"hideEstimatesAndNames": {
+					"name": "Скрытие оценки и имён",
+					"hint": "Скрывать оценку здоровья и имена выбранных токенов."
+				}
+			},
+			"isNow": "{name} → {desc}",
+			"unknownEntity": {
+				"name": "Имя неизвестного существа",
+				"hint": "Способ отображения скрытого имени существа. {warning}",
+				"default": "Неизвестное существо",
+				"warningCUB": "Если вы используете функция скрытых имен CUB, то она будет иметь приоритет над этой настройкой.",
+				"warningPF2eWorkbench": "If you are using PF2e Workbench's feature to mystify names, it will take priority over this setting."
+			},
+			"alwaysShow": {
+				"name": "Всегда отображать оценку",
+				"hint": "Оценка будет видима всегда, а не только при наведении на токен."
+			},
+			"combatOnly": {
+				"name": "Оценка только во время боя",
+				"hint": "Оценка будет отображаться только при активном бое."
+			},
+			"showDescription": {
+				"name": "Показывать оценку",
+				"hint": "Показывать оценку выбранным участникам.",
+				"choices": {
+					"all": "Всем",
+					"GM": "Только для GM",
+					"Players": "Игроки",
+					"NPC": "Персонажи ведущего",
+					"PC": "Персонажи игроков"
+				}
+			},
+			"showDescriptionTokenType": {
+				"name": "Показывать оценку: Токены",
+				"hint": "Показывать оценку для следующих токенов."
+			},
+			"deathState": {
+				"name": "Смерть при состоянии",
+				"hint1": "Show token as defined on the {setting} setting when it has been affected by any condition that uses the icon set on the {setting2} setting.",
+				"hint2": "Show token as defined on the {setting} setting when it has been marked as defeated on combat."
+			},
+			"deathStateName": {
+				"name": "Название состояния смерти",
+				"hint": "Описание мёртвого токена.",
+				"default": "Мёртв"
+			},
+			"deathMarker": {
+				"name": "Метка смерти",
+				"hint": "Путь к иконке состояние для мёртвых токенов."
+			},
+			"NPCsJustDie": {
+				"name": "NPC мгновенно умирают",
+				"hint": "Последняя стадия для токенов, чьи актёры не выбраны (закреплены за) игроками, заменяется настройкой '{setting}'."
+			},
+			"outputChat": {
+				"name": "Выводить оценку в чат",
+				"hint": "Выводить все оценки в чат. Персонажи со скрытыми именами будут отображаться как указано в настройке {setting}."
+			},
+			"addTemp": {
+				"name": "Учитывать временные ПЗ",
+				"hint": "Временные ПЗ будут суммированы с обычными при оценке общего здоровья."
+			},
+			"breakOnZeroMaxHP": {
+				"name": "Hide Estimates on Tokens with 0 Max HP",
+				"hint": "Полезно для объектов с токенами."
+			},
+			"menuSettings": {
+				"behaviorSettings": {
+					"name": "Настройка поведения",
+					"plural": "Настройки поведения"
+				},
+				"deathSettings": {
+					"name": "Настройки смерти",
+					"plural": "Настройки смерти"
+				},
+				"styleSettings": {
+					"name": "Настройки стилей",
+					"plural": "Настройки стилей"
+				},
+				"fontSize": {
+					"name": "Размер шрифта",
+					"hint": "Принимаются параметры CSS для размера шрифта (px, em, rem, и т.д)"
+				},
+				"useColor": {
+					"name": "Использовать цвета",
+					"hint": "Оценка будет отображаться в чёрно-белом виде."
+				},
+				"smoothGradient": {
+					"name": "Плавный градиент",
+					"hint": "Если включено, цвет будет плавно меняться между стадиями. Если выключено, то цвет будет изменяться только при достижении новой стадии."
+				},
+				"deadColor": {
+					"name": "Цвет для мёртвых токенов"
+				},
+				"outline": {
+					"name": "Обводка",
+					"darken": "Темнее",
+					"brighten": "Ярче"
+				},
+				"position": {
+					"name": "Height",
+					"hint": "The height is set relative to the token's frame. Negative values push it higher; positive, lower.",
+					"top": "Сверху",
+					"middle": "Посередине",
+					"bottom": "Снизу"
+				},
+				"position2": {
+					"name": "Position",
+					"hint": "The position relative to the token's frame."
+				},
+				"positionAdjustment": {
+					"name": "Настройка отступа",
+					"hint": "Отступ текста. При положительных значениях он становится выше, при отрицательных - ниже."
+				},
+				"scaleToZoom": {
+					"name": "Масштабировать оценку при приближении",
+					"hint": "Scales the estimate based on the zoom distance. This will cause a drop in performance when used along {setting3}."
+				}
+			}
+		},
+		"custom-system-builder": {
+			"FractionHP": {
+				"hint": "Возможно это {dataPath1} или {dataPath2}."
+			},
+			"tempHP": {
+				"name": "Путь атрибута временных пунктов здоровья",
+				"hint": "Оставьте это пустым, если система не имеет этого или вы не хотите, чтобы это использовалось при оценке."
+			}
+		},
+		"cyberpunk-red-core": {
+			"unorganics": {
+				"4": "Intact",
+				"3": "Operational",
+				"2": "Malfunctioning",
+				"0": "Disabled"
+			}
+		},
+		"cyphersystem": {
+			"impaired": {
+				"name": "Health level for Impaired PCs",
+				"hint": "Sets the maximum health level (current / maximum, fraction 0.0 - 1.0) that can be reported for a PC that is Impaired on the Death Track"
+			},
+			"debilitated": {
+				"name": "Health level for Debilitated PCs",
+				"hint": "Sets the maximum health level (current / maximum, fraction 0.0 - 1.0) that can be reported for a PC that is Debilitated on the Death Track"
+			}
+		},
+		"PF1": {
+			"addNonlethal": {
+				"name": "Учитывать нелетальный урон",
+				"hint": "Если включено, нелетальный урон будет вычтен из текущего здоровья в целях оценки."
+			},
+			"showExtra": {
+				"name": "Отображение {condition1} и {condition2}",
+				"hint": "Отображает описания {condition1} и {condition2}, когда выполнены их условия."
+			},
+			"disabledName": {
+				"name": "Стадия ошеломления",
+				"default": "Ошеломление"
+			},
+			"dyingName": {
+				"name": "Стадия без сознания",
+				"default": "Без сознания"
+			}
+		},
+		"PF2E": {
+			"staminaToHp": {
+				"name": "Живучесть для оценки",
+				"hint": "Добавить пункты живучести для оценки."
+			},
+			"hideHazardHP": {
+				"name": "Скрытие оценки угроз",
+				"hint": "Скрывает оценку для угроз."
+			},
+			"hideVehicleHP": {
+				"name": "Скрытие оценки транспорта",
+				"hint": "Скрывает оценку для транспорта."
+			},
+			"workbenchMystifier": {
+				"name": "(EXPERIMENTAL) PF2e Workbench's Mystifier Support",
+				"hint": "If the NPC Mystification settings are enabled, Chat Outputs will ignore the {setting} setting's name and use the token's name if it is different from its actor's Prototype Token's name."
+			}
+		},
+		"numenera": {
+			"countPools": {
+				"name": "Считать пустые пулы",
+				"hint": "Считать пустые пулы вместо суммы их значений, оценивая только полноту/пустоту пулов."
+			}
+		},
+		"starfinder": {
+			"useThreshold": {
+				"name": "Использовать порог транспорта",
+				"hint": "Defines which estimation table will be used when calculating a Vehicle's estimatives."
+			},
+			"addStamina": {
+				"name": "Учитывать Живучесть",
+				"hint": "Если включено, Живучесть будет суммироваться с ПЗ при оценке."
+			}
+		},
+		"worldbuilding": {
+			"simpleRule": {
+				"name": "Формула оценки",
+				"hint": "JS формула для расчёта долей здоровья токена. Не изменяйте, если не знаете что это."
+			}
+		},
+		"swade": {
+			"defaultWildCardMaxWounds": {
+				"name": "Default Wild Card's Max Wounds",
+				"hint": "This is used to calculate the max wounds a Wild Card NPC should have by default for estimations."
+			},
+			"showIncap": {
+				"name": "Эффект статуса {incap}",
+				"hint": "Tokens with the {incap} Status Effect will be shown as {incap} instead of their current estimates. Doesn't work for tokens that are vehicles or dead."
+			}
+		}
+	}
 }

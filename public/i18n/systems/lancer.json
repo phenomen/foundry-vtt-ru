@@ -1,432 +1,432 @@
 {
-  "TYPES": {
-    "Actor": {
-      "deployable": "Развёртываемое",
-      "mech": "Мех",
-      "npc": "ПВ",
-      "pilot": "Пилот"
-    },
-    "Item": {
-      "bond": "Узы",
-      "core_bonus": "Бонус ядра",
-      "frame": "Корпус",
-      "license": "Лицензия",
-      "mech_system": "Система меха",
-      "mech_weapon": "Оружие меха",
-      "npc_class": "Класс ПВ",
-      "npc_feature": "Особенность ПВ",
-      "npc_template": "Шаблон ПВ",
-      "organization": "Организация",
-      "pilot_armor": "Броня пилота",
-      "pilot_gear": "Снаряжение пилота",
-      "pilot_weapon": "Оружие пилота",
-      "reserve": "Резерв",
-      "skill": "Навык",
-      "status": "Статус/состояние",
-      "talent": "Талант",
-      "weapon_mod": "Модификация оружия"
-    }
-  },
-  "lancer": {
-    "Actor": {
-      "FIELDS": {
-        "activations": { "label": "Активации" }
-      }
-    },
-    "placeholder": {
-      "name": "Название"
-    },
-    "common-sheet": {
-      "tabs": {
-        "effects": "<АКТИВНЫЕ//ЭФФЕКТЫ>"
-      }
-    },
-    "deployable-sheet": {
-      "tabs": {
-        "status": "<СТАТУС>",
-        "config": "<НАСТРОЙКА>"
-      },
-      "deployer": {
-        "label": "РАЗВЕРНУВШИЙ"
-      },
-      "stats": {
-        "label": "ПОКАЗАТЕЛИ"
-      }
-    },
-    "mech-sheet": {
-      "tabs": {
-        "stats": "<ПОКАЗАТЕЛИ>",
-        "loadout": "<СНАРЯЖЕНИЕ>",
-        "talents": "<ТАЛАНТЫ>"
-      },
-      "core": {
-        "label": "ЯДРО"
-      },
-      "actions": {
-        "label": "ДЕЙСТВИЯ"
-      },
-      "macros": {
-        "label": "МАКРОСЫ"
-      },
-      "system": {
-        "label": "СНАРЯЖЕНИЕ",
-        "sp-used": "ИСП. ПС"
-      }
-    },
-    "npc-sheet": {
-      "header": {
-        "class": "КЛАСС:"
-      },
-      "class": {
-        "label": "КЛАСС",
-        "none": "НЕТ КЛАССА"
-      },
-      "templates": {
-        "label": "ШАБЛОНЫ"
-      },
-      "features": {
-        "label": "ОСОБЕННОСТИ"
-      },
-      "effects": {
-        "label": "АКТИВНЫЕ ЭФФЕКТЫ"
-      }
-    },
-    "pilot-sheet": {
-      "header": {
-        "ll": "УРОВЕНЬ ЛИЦЕНЗИИ:",
-        "cs": "ПОЗЫВНОЙ:",
-        "name": "ИМЯ:",
-        "bg": "КВАЛИФИКАЦИЯ:"
-      },
-      "tabs": {
-        "cloud": "<СИНХРОНИЗАЦИЯ>",
-        "dossier": "<ДОСЬЕ>",
-        "narrative": "<ПОВЕСТВОВАНИЕ>",
-        "tactical": "<ТАКТИКА>",
-        "loadout": "<СНАРЯЖЕНИЕ>",
-        "mech": "<АКТИВНЫЙ МЕХ>"
-      },
-      "cloud-header": {
-        "label": "OMNINET UPLINK ID",
-        "vaultID": "Загрузка из аккаунта Comp/Con",
-        "raw-placeholder": "или введите код вручную"
-      },
-      "cloud-download": {
-        "label": "СКАЧАТЬ",
-        "lastSync": "Синхронизировано: {timestamp}"
-      },
-      "cloud-upload": {
-        "label": "ЗАГРУЗИТЬ",
-        "wip": "ФУНКЦИЯ В РАЗРАБОТКЕ"
-      },
-      "json-import": {
-        "label": "ИМПОРТ"
-      },
-      "dossier": {
-        "cs": "ПОЗЫВНОЙ",
-        "name": "ИМЯ"
-      },
-      "narrative": {
-        "bond": "УЗЫ С {bondName}",
-        "burdens": "БРЕМЯ",
-        "clocks": "ТАЙМЕРЫ"
-      },
-      "tactical": {
-        "armor": "БРОНЯ",
-        "weapons": "ОРУЖИЕ",
-        "gear": "СНАРЯЖЕНИЕ",
-        "reserves": "РЕЗЕРВЫ",
-        "licenses": "ЛИЦЕНЗИИ",
-        "cores": "БОНУСЫ ЯДРА"
-      },
-      "abilities": {
-        "skills": "ИНИЦИАТОРЫ НАВЫКОВ",
-        "talents": "ТАЛАНТЫ"
-      }
-    },
-    "chat-card": {
-      "title": {
-        "attack": "// АТАКА //",
-        "damage": "// УРОН //",
-        "reliable": "// НАДЁЖНОСТЬ //",
-        "crit-damage": "// КРИТ УРОН //",
-        "self-heat": "// САМОНАГРЕВ //",
-        "defense-hit": "// АТАКА ПР. {defense} //",
-        "effect": "// ЭФФЕКТ //",
-        "on-attack": "// ПРИ АТАКЕ //",
-        "on-hit": "// ПРИ ПОПАДАНИИ //",
-        "on-crit": "// ПРИ КРИТЕ //",
-        "charge-roll": "// ЗАРЯДКА //",
-        "recharged": "// ПЕРЕЗАРЯЖЕНО //",
-        "structure": "// СТРУКТУРНЫЙ УРОН //",
-        "overheating": "// ПЕРЕГРЕВ //",
-        "cascade": "// РАСПАД //",
-        "check": "// ПРОВЕРКА :: {check} //",
-        "system": "// СИСТЕМА :: {title} //",
-        "mod": "// МОД :: {title} //",
-        "trait": "// ЧЕРТА :: {title} //",
-        "tech": "// ТЕХНИКА :: {title} //",
-        "reaction": "// РЕАКЦИЯ :: {title} //"
-      },
-      "label": {
-        "trigger": "ИНИЦИАТОР",
-        "effect": "ЭФФЕКТ"
-      },
-      "attack": {
-        "crit": "КРИТ",
-        "hit": "ПОПАДАНИЕ",
-        "miss": "ПРОМАХ",
-        "roll-all-damage": "БРОСОК УРОНА"
-      },
-      "exclamation": {
-        "overkill": "СВЕРХУНИЧТОЖЕНИЕ!"
-      },
-      "overcharge": {
-        "charged": "{target} + :: ЗАРЯЖЕНО",
-        "uncharged": "{target} + :: РАЗРЯЖЕНО"
-      },
-      "remaining": "{total} / {max} ОСТАЛОСЬ"
-    },
-    "floatingDamageNumbers": {
-      "name": "Плавающие цифры урона",
-      "hint": "Включите плавающие числа урона при изменении показателей, включая применение бросков урона. Эта настройка является личной для каждого участника."
-    },
-    "uiTheme": {
-      "name": "Цвет интерфейса",
-      "hint": "Цветовая схема интерфейса.",
-      "gms": "Красная // GMS",
-      "gmsDark": "Тёмная // GMS",
-      "msmc": "Бирюзовая // MSMC",
-      "horus": "Зелёная // HORUS",
-      "ha": "Пурпурная // Harrison Armory",
-      "ssc": "Жёлтая // SSC",
-      "ipsn": "Синяя // IPS-N",
-      "gal": "Оранжевая // GALSIM"
-    },
-    "statusIconsConfig": {
-      "menu-name": "Иконки статусов",
-      "menu-label": "Настройка иконок статусов",
-      "menu-hint": "Настройте иконки статусов, отображаемые на токенах",
-      "defaultConditionsStatus": "Статусы и состояния по умолчанию",
-      "defaultConditionsStatus-desc": "Включение стандартных иконок",
-      "cancerConditionsStatus": "Статусы и состояния от Cancermantis",
-      "cancerConditionsStatus-desc": "Включение иконок статусов и состояний от Cancermantis",
-      "cancerNPCTemplates": "Шаблоны ПВ от Cancermantis",
-      "cancerNPCTemplates-desc": "Включение иконок шаблонов ПВ от Cancermantis",
-      "hayleyConditionsStatus": "Статусы и состояния от Hayley",
-      "hayleyConditionsStatus-desc": "Включение иконок статусов и состояний от Hayley",
-      "hayleyPC": "Системы ПИ от Hayley",
-      "hayleyPC-desc": "Включение иконок эффектов систем ПИ от Hayley",
-      "hayleyNPC": "Системы ПВ от Hayley",
-      "hayleyNPC-desc": "Включение иконок эффектов систем ПВ от Hayley",
-      "hayleyUtility": "Утилиты Hayley",
-      "hayleyUtility-desc": "Включение иконок утилит от Hayley",
-      "tommyConditionsStatus": "Статусы и состояния от Tommy",
-      "tommyConditionsStatus-desc": "Включение иконок статусов и состояний от Tommy"
-    },
-    "statusIconsNames": {
-      "abjure": "Отречение",
-      "aceso": "Акесо",
-      "blind": "Ослепление",
-      "bolster": "Укрепление",
-      "burn": "Горение",
-      "camus_razor": "Бритва Камю",
-      "chain": "Цепь",
-      "chains_of_prometheus": "Цепи Прометея",
-      "clamp_bomb": "Зажимная бомба",
-      "commander": "Командир",
-      "cover_hard": "Укрытие - Твёрдое",
-      "cover_soft": "Укрытие - Мягкое",
-      "dangerzone": "Опасная зона",
-      "destroyed": "Уничтожение",
-      "dimensional_shackles": "Пространственные оковы",
-      "dispersal_shield_1": "Рассеивающий щит 1",
-      "dispersal_shield_2": "Рассеивающий щит 2",
-      "dispersal_shield_3": "Рассеивающий щит 3",
-      "dominions_breadth": "Широта Доминиона",
-      "downandout": "Выбывание",
-      "duat_gate": "Врата Дуата",
-      "echo_edge": "Эхо-грань",
-      "elite": "Элита",
-      "engaged": "Ближний бой",
-      "excommunicate": "Отлучение",
-      "exotic": "Экзотический",
-      "exposed": "Уязвимость",
-      "fade_cloak": "Плащ исчезновения",
-      "flaw_minus": "ИЗЪЯН_минус",
-      "flaw_plus": "ИЗЪЯН_плюс",
-      "flying": "Полёт",
-      "focus_down": "Сосредоточение",
-      "follower_count": "Счётчик последователей",
-      "grappled": "Захват",
-      "gravity": "Гравитация",
-      "grind_maniple": "Манипула измельчения",
-      "grunt": "Рядовой",
-      "haste": "Спешка",
-      "hidden": "Скрытность",
-      "hiddeninvis": "Скрытность и невидимость",
-      "hunter_lock": "Охотничья блокировка",
-      "hyperdense_armor": "Сверхплотная броня",
-      "illusionary_subroutines": "Иллюзорные подпрограммы",
-      "immobilized": "Неподвижность",
-      "impaired": "Ослабление",
-      "imperial_eye": "Имперское око",
-      "intangible": "Неосязаемость",
-      "investiture": "Инвеститура",
-      "invisible": "Невидимость",
-      "jammed": "Заглушение",
-      "kraul_grapple": "Захват Краула",
-      "latch_drone": "Прицепной дрон",
-      "lockon": "Захват цели",
-      "marked": "Метка",
-      "mercenary": "Наёмник",
-      "metahook": "Метакрюк",
-      "molten_puncture": "Расплавленный прокол",
-      "npc_tier_1": "Уровень 1",
-      "npc_tier_2": "Уровень 2",
-      "npc_tier_3": "Уровень 3",
-      "overshield": "Сверхщит",
-      "pain_transference": "Перенос боли",
-      "petrify": "Окаменение",
-      "pirate": "Пират",
-      "prone": "Распластанность",
-      "reactor_meltdown": "Расплавление реактора",
-      "resistance_burn": "Сопротивление горению",
-      "resistance_energy": "Сопротивление энергии",
-      "resistance_explosive": "Сопротивление взрывам",
-      "resistance_heat": "Сопротивление нагреву",
-      "resistance_kinetic": "Сопротивление кинетике",
-      "retort_loop": "Цикл ответа",
-      "rpv": "ДПУ",
-      "sanctuary": "Убежище",
-      "shahnameh": "Шахнаме",
-      "ship": "Корабль",
-      "shredded": "Разрывание",
-      "shutdown": "Отключение",
-      "slow": "Замедление",
-      "spacer": "Космонавт",
-      "spike": "Шип",
-      "stasis": "Стазис",
-      "stunned": "Оглушение",
-      "supercharger": "Сверхзарядник",
-      "sympathetic_shield": "Симпатический щит",
-      "tachyon_shield": "Тахионный щит",
-      "tear_down": "Разрушение",
-      "terrify": "Устрашение",
-      "tiercust": "Пользовательский уровень",
-      "tracking_bug": "Следящий жучок",
-      "trueblack": "Истинно-чёрный эгид",
-      "ultra": "Ультра",
-      "unravel": "Распутывание",
-      "vehicle": "Транспорт",
-      "veteran": "Ветеран",
-      "viral_logic": "Виральная логика",
-      "walk_of_kings": "Путь королей",
-      "warp_sensors": "Варп-сенсоры"
-    },
-    "automation": {
-      "menu-name": "Автоматизация",
-      "menu-label": "Настройки автоматизации системы",
-      "menu-hint": "Выберите какие функции системы вы желаете автоматизировать",
-      "master-switch": "Использовать автоматизацию",
-      "master-switch-desc": "Отключите, если вам не нужна никакая автоматизация.",
-      "attacks": "Расчёт бросков атаки",
-      "attacks-desc": "Автоматически рассчитывать попадания и другие элементы атаки.",
-      "damage": "Нанесение урона",
-      "damage-desc": "Автоматически наносить урон по целям.",
-      "structure": "Проверка структуры/давления",
-      "structure-desc": "Автоматически совершать проверки структуры и давления, когда мех достигает 0 ПЗ или предела нагрева.",
-      "overcharge_heat": "Добавление нагрева от перегрузки",
-      "overcharge_heat-desc": "Автоматически добавлять нагрев при проверках перегрузки.",
-      "attack_self_heat": "Самонагрев от атак",
-      "attack_self_heat-desc": "Автоматически добавлять нагрев, если у оружия есть теги Сверхуничтожение или Нагрев.",
-      "remove_templates": "Autoremove Templates",
-      "remove_templates-desc": "Автоматически удалять шаблоны атак в начале каждого хода.",
-      "limited_loading": "Исключительные и перезаряжаемые предметы",
-      "limited_loading-desc": "Автоматически отслеживать предметы с тегами Исключительный и Перезаряжаемый.",
-      "npc_recharge": "Перезарядка у ПВ",
-      "npc_recharge-desc": "Автоматически совершать проверку перезарядки систем ПВ в начале их хода.",
-      "token_size": "Управление размером токенов",
-      "token_size-desc": "Автоматически выставлять размер токенов согласно размеру в параметрах актёра."
-    },
-    "actionTracker": {
-      "menu-name": "Трекер действий",
-      "menu-label": "Настройка трекера действий",
-      "menu-hint": "Настройки внешнего вида и автоматизации трекера действий.",
-      "showHotbar": "Отображение быстрой панели",
-      "showHotbar-desc": "Отображать быструю панель действий во время боя.",
-      "allowPlayers": "Изменение игроками",
-      "allowPlayers-desc": "Позволить игрокам изменять свои действия.",
-      "printMessages": "Вывод сообщений",
-      "printMessages-desc": "Выводить сообщения в чат в начале и конце хода."
-    },
-    "initiative": {
-      "sorttracker": "Сортировка трекера",
-      "sorttracker-desc": "Перемещает токен, который в данный момент совершает ход, в верхнюю часть трекера и перемещает токены, которые сделали свой ход, в конец трекера.",
-      "appearancesettingslabel": "Настройка внешнего вида",
-      "appearancesettingsbutton": "Внешний вид",
-      "appearancesettings-desc": "Настройка цветов и иконок в трекере"
-    },
-    "squaregriddiagonals": {
-      "name": "Диагонали квадратной сетки",
-      "hint": "Выберите способ расчёта диагонального перемещения на квадратной сетке.",
-      "111": "1-1-1: диагональ всегда 1 (по умолчанию)",
-      "121": "1-2-1: диагональ варьируется между 1 и 2",
-      "222": "2-2-2: диагональ всегда 2",
-      "euc": "Точная: округлённая точная дистанция"
-    },
-    "effect": {
-      "categories": {
-        "passive": "Пассивный",
-        "passthrough": "Сквозной",
-        "disabled": "Отключён",
-        "inherited": "Наследуемый"
-      }
-    },
-    "compendium": {
-      "core_macros": "Макросы LANCER",
-      "lancer_info": "Данные LANCER",
-      "deployable": "Развёртываемые",
-      "mech-items": "Предметы меха",
-      "npc-actors": "Готовые ПВ",
-      "npc-items": "Предметы ПВ",
-      "pilot-items": "Предметы пилота",
-      "player-actors": "Готовые действия игрока",
-      "status-items": "Статусы/состояния"
-    },
-    "tokenConfig": {
-      "manual_token_size": {
-        "label": "Ручной размер токена",
-        "hint": "Игнорировать настройку автоматического размера токена"
-      }
-    }
-  },
-  "LANCERINITIATIVE": {
-    "IconSettingsMenu": "Настройки иконок",
-    "Icon": "Иконка действия",
-    "IconDesc": "Класс CSS для иконки активации.",
-    "DeactivateIcon": "Иконка деактивации",
-    "DeactivateIconDesc": "Класс CSS для иконки деактивации.",
-    "IconSize": "Размер иконки",
-    "IconPreview": "Предпросмотр",
-    "PCColor": "Цвет игроков",
-    "PCColorDesc": "По умолчанию: #44abe0",
-    "FriendlyColor": "Цвет дружественных",
-    "FriendlyColorDesc": "По умолчанию: #44abe0",
-    "NeutralColor": "Цвет нейтральных",
-    "NeutralColorDesc": "По умолчанию: #146464",
-    "EnemyColor": "Цвет враждебных",
-    "EnemyColorDesc": "По умолчанию: #d98f30",
-    "DoneColor": "Цвет неактивных",
-    "DoneColorDesc": "Default: #aaaaaa",
-    "ActivatedLast": "Активированный токен в конец",
-    "ActivatedLastDesc": "Перемещает токены, которые совершили свой ход, в конец трекера.",
-    "SortTracker": "Сортировка трекера",
-    "SortTrackerDesc": "Перемещает токен, который в данный момент совершает ход, в верхнюю часть трекера и перемещает токены, которые сделали свой ход, в конец трекера.",
-    "EnableInitiative": "Проверка инициативы",
-    "EnableInitiativeDesc": "Добавляет кнопку проверки инициативы.",
-    "AddActivation": "Добавить активацию",
-    "RemoveActivation": "Удалить активацию",
-    "UndoActivation": "Отменить активацию"
-  }
+	"TYPES": {
+		"Actor": {
+			"deployable": "Развёртываемое",
+			"mech": "Мех",
+			"npc": "ПВ",
+			"pilot": "Пилот"
+		},
+		"Item": {
+			"bond": "Узы",
+			"core_bonus": "Бонус ядра",
+			"frame": "Корпус",
+			"license": "Лицензия",
+			"mech_system": "Система меха",
+			"mech_weapon": "Оружие меха",
+			"npc_class": "Класс ПВ",
+			"npc_feature": "Особенность ПВ",
+			"npc_template": "Шаблон ПВ",
+			"organization": "Организация",
+			"pilot_armor": "Броня пилота",
+			"pilot_gear": "Снаряжение пилота",
+			"pilot_weapon": "Оружие пилота",
+			"reserve": "Резерв",
+			"skill": "Навык",
+			"status": "Статус/состояние",
+			"talent": "Талант",
+			"weapon_mod": "Модификация оружия"
+		}
+	},
+	"lancer": {
+		"Actor": {
+			"FIELDS": {
+				"activations": { "label": "Активации" }
+			}
+		},
+		"placeholder": {
+			"name": "Название"
+		},
+		"common-sheet": {
+			"tabs": {
+				"effects": "<АКТИВНЫЕ//ЭФФЕКТЫ>"
+			}
+		},
+		"deployable-sheet": {
+			"tabs": {
+				"status": "<СТАТУС>",
+				"config": "<НАСТРОЙКА>"
+			},
+			"deployer": {
+				"label": "РАЗВЕРНУВШИЙ"
+			},
+			"stats": {
+				"label": "ПОКАЗАТЕЛИ"
+			}
+		},
+		"mech-sheet": {
+			"tabs": {
+				"stats": "<ПОКАЗАТЕЛИ>",
+				"loadout": "<СНАРЯЖЕНИЕ>",
+				"talents": "<ТАЛАНТЫ>"
+			},
+			"core": {
+				"label": "ЯДРО"
+			},
+			"actions": {
+				"label": "ДЕЙСТВИЯ"
+			},
+			"macros": {
+				"label": "МАКРОСЫ"
+			},
+			"system": {
+				"label": "СНАРЯЖЕНИЕ",
+				"sp-used": "ИСП. ПС"
+			}
+		},
+		"npc-sheet": {
+			"header": {
+				"class": "КЛАСС:"
+			},
+			"class": {
+				"label": "КЛАСС",
+				"none": "НЕТ КЛАССА"
+			},
+			"templates": {
+				"label": "ШАБЛОНЫ"
+			},
+			"features": {
+				"label": "ОСОБЕННОСТИ"
+			},
+			"effects": {
+				"label": "АКТИВНЫЕ ЭФФЕКТЫ"
+			}
+		},
+		"pilot-sheet": {
+			"header": {
+				"ll": "УРОВЕНЬ ЛИЦЕНЗИИ:",
+				"cs": "ПОЗЫВНОЙ:",
+				"name": "ИМЯ:",
+				"bg": "КВАЛИФИКАЦИЯ:"
+			},
+			"tabs": {
+				"cloud": "<СИНХРОНИЗАЦИЯ>",
+				"dossier": "<ДОСЬЕ>",
+				"narrative": "<ПОВЕСТВОВАНИЕ>",
+				"tactical": "<ТАКТИКА>",
+				"loadout": "<СНАРЯЖЕНИЕ>",
+				"mech": "<АКТИВНЫЙ МЕХ>"
+			},
+			"cloud-header": {
+				"label": "OMNINET UPLINK ID",
+				"vaultID": "Загрузка из аккаунта Comp/Con",
+				"raw-placeholder": "или введите код вручную"
+			},
+			"cloud-download": {
+				"label": "СКАЧАТЬ",
+				"lastSync": "Синхронизировано: {timestamp}"
+			},
+			"cloud-upload": {
+				"label": "ЗАГРУЗИТЬ",
+				"wip": "ФУНКЦИЯ В РАЗРАБОТКЕ"
+			},
+			"json-import": {
+				"label": "ИМПОРТ"
+			},
+			"dossier": {
+				"cs": "ПОЗЫВНОЙ",
+				"name": "ИМЯ"
+			},
+			"narrative": {
+				"bond": "УЗЫ С {bondName}",
+				"burdens": "БРЕМЯ",
+				"clocks": "ТАЙМЕРЫ"
+			},
+			"tactical": {
+				"armor": "БРОНЯ",
+				"weapons": "ОРУЖИЕ",
+				"gear": "СНАРЯЖЕНИЕ",
+				"reserves": "РЕЗЕРВЫ",
+				"licenses": "ЛИЦЕНЗИИ",
+				"cores": "БОНУСЫ ЯДРА"
+			},
+			"abilities": {
+				"skills": "ИНИЦИАТОРЫ НАВЫКОВ",
+				"talents": "ТАЛАНТЫ"
+			}
+		},
+		"chat-card": {
+			"title": {
+				"attack": "// АТАКА //",
+				"damage": "// УРОН //",
+				"reliable": "// НАДЁЖНОСТЬ //",
+				"crit-damage": "// КРИТ УРОН //",
+				"self-heat": "// САМОНАГРЕВ //",
+				"defense-hit": "// АТАКА ПР. {defense} //",
+				"effect": "// ЭФФЕКТ //",
+				"on-attack": "// ПРИ АТАКЕ //",
+				"on-hit": "// ПРИ ПОПАДАНИИ //",
+				"on-crit": "// ПРИ КРИТЕ //",
+				"charge-roll": "// ЗАРЯДКА //",
+				"recharged": "// ПЕРЕЗАРЯЖЕНО //",
+				"structure": "// СТРУКТУРНЫЙ УРОН //",
+				"overheating": "// ПЕРЕГРЕВ //",
+				"cascade": "// РАСПАД //",
+				"check": "// ПРОВЕРКА :: {check} //",
+				"system": "// СИСТЕМА :: {title} //",
+				"mod": "// МОД :: {title} //",
+				"trait": "// ЧЕРТА :: {title} //",
+				"tech": "// ТЕХНИКА :: {title} //",
+				"reaction": "// РЕАКЦИЯ :: {title} //"
+			},
+			"label": {
+				"trigger": "ИНИЦИАТОР",
+				"effect": "ЭФФЕКТ"
+			},
+			"attack": {
+				"crit": "КРИТ",
+				"hit": "ПОПАДАНИЕ",
+				"miss": "ПРОМАХ",
+				"roll-all-damage": "БРОСОК УРОНА"
+			},
+			"exclamation": {
+				"overkill": "СВЕРХУНИЧТОЖЕНИЕ!"
+			},
+			"overcharge": {
+				"charged": "{target} + :: ЗАРЯЖЕНО",
+				"uncharged": "{target} + :: РАЗРЯЖЕНО"
+			},
+			"remaining": "{total} / {max} ОСТАЛОСЬ"
+		},
+		"floatingDamageNumbers": {
+			"name": "Плавающие цифры урона",
+			"hint": "Включите плавающие числа урона при изменении показателей, включая применение бросков урона. Эта настройка является личной для каждого участника."
+		},
+		"uiTheme": {
+			"name": "Цвет интерфейса",
+			"hint": "Цветовая схема интерфейса.",
+			"gms": "Красная // GMS",
+			"gmsDark": "Тёмная // GMS",
+			"msmc": "Бирюзовая // MSMC",
+			"horus": "Зелёная // HORUS",
+			"ha": "Пурпурная // Harrison Armory",
+			"ssc": "Жёлтая // SSC",
+			"ipsn": "Синяя // IPS-N",
+			"gal": "Оранжевая // GALSIM"
+		},
+		"statusIconsConfig": {
+			"menu-name": "Иконки статусов",
+			"menu-label": "Настройка иконок статусов",
+			"menu-hint": "Настройте иконки статусов, отображаемые на токенах",
+			"defaultConditionsStatus": "Статусы и состояния по умолчанию",
+			"defaultConditionsStatus-desc": "Включение стандартных иконок",
+			"cancerConditionsStatus": "Статусы и состояния от Cancermantis",
+			"cancerConditionsStatus-desc": "Включение иконок статусов и состояний от Cancermantis",
+			"cancerNPCTemplates": "Шаблоны ПВ от Cancermantis",
+			"cancerNPCTemplates-desc": "Включение иконок шаблонов ПВ от Cancermantis",
+			"hayleyConditionsStatus": "Статусы и состояния от Hayley",
+			"hayleyConditionsStatus-desc": "Включение иконок статусов и состояний от Hayley",
+			"hayleyPC": "Системы ПИ от Hayley",
+			"hayleyPC-desc": "Включение иконок эффектов систем ПИ от Hayley",
+			"hayleyNPC": "Системы ПВ от Hayley",
+			"hayleyNPC-desc": "Включение иконок эффектов систем ПВ от Hayley",
+			"hayleyUtility": "Утилиты Hayley",
+			"hayleyUtility-desc": "Включение иконок утилит от Hayley",
+			"tommyConditionsStatus": "Статусы и состояния от Tommy",
+			"tommyConditionsStatus-desc": "Включение иконок статусов и состояний от Tommy"
+		},
+		"statusIconsNames": {
+			"abjure": "Отречение",
+			"aceso": "Акесо",
+			"blind": "Ослепление",
+			"bolster": "Укрепление",
+			"burn": "Горение",
+			"camus_razor": "Бритва Камю",
+			"chain": "Цепь",
+			"chains_of_prometheus": "Цепи Прометея",
+			"clamp_bomb": "Зажимная бомба",
+			"commander": "Командир",
+			"cover_hard": "Укрытие - Твёрдое",
+			"cover_soft": "Укрытие - Мягкое",
+			"dangerzone": "Опасная зона",
+			"destroyed": "Уничтожение",
+			"dimensional_shackles": "Пространственные оковы",
+			"dispersal_shield_1": "Рассеивающий щит 1",
+			"dispersal_shield_2": "Рассеивающий щит 2",
+			"dispersal_shield_3": "Рассеивающий щит 3",
+			"dominions_breadth": "Широта Доминиона",
+			"downandout": "Выбывание",
+			"duat_gate": "Врата Дуата",
+			"echo_edge": "Эхо-грань",
+			"elite": "Элита",
+			"engaged": "Ближний бой",
+			"excommunicate": "Отлучение",
+			"exotic": "Экзотический",
+			"exposed": "Уязвимость",
+			"fade_cloak": "Плащ исчезновения",
+			"flaw_minus": "ИЗЪЯН_минус",
+			"flaw_plus": "ИЗЪЯН_плюс",
+			"flying": "Полёт",
+			"focus_down": "Сосредоточение",
+			"follower_count": "Счётчик последователей",
+			"grappled": "Захват",
+			"gravity": "Гравитация",
+			"grind_maniple": "Манипула измельчения",
+			"grunt": "Рядовой",
+			"haste": "Спешка",
+			"hidden": "Скрытность",
+			"hiddeninvis": "Скрытность и невидимость",
+			"hunter_lock": "Охотничья блокировка",
+			"hyperdense_armor": "Сверхплотная броня",
+			"illusionary_subroutines": "Иллюзорные подпрограммы",
+			"immobilized": "Неподвижность",
+			"impaired": "Ослабление",
+			"imperial_eye": "Имперское око",
+			"intangible": "Неосязаемость",
+			"investiture": "Инвеститура",
+			"invisible": "Невидимость",
+			"jammed": "Заглушение",
+			"kraul_grapple": "Захват Краула",
+			"latch_drone": "Прицепной дрон",
+			"lockon": "Захват цели",
+			"marked": "Метка",
+			"mercenary": "Наёмник",
+			"metahook": "Метакрюк",
+			"molten_puncture": "Расплавленный прокол",
+			"npc_tier_1": "Уровень 1",
+			"npc_tier_2": "Уровень 2",
+			"npc_tier_3": "Уровень 3",
+			"overshield": "Сверхщит",
+			"pain_transference": "Перенос боли",
+			"petrify": "Окаменение",
+			"pirate": "Пират",
+			"prone": "Распластанность",
+			"reactor_meltdown": "Расплавление реактора",
+			"resistance_burn": "Сопротивление горению",
+			"resistance_energy": "Сопротивление энергии",
+			"resistance_explosive": "Сопротивление взрывам",
+			"resistance_heat": "Сопротивление нагреву",
+			"resistance_kinetic": "Сопротивление кинетике",
+			"retort_loop": "Цикл ответа",
+			"rpv": "ДПУ",
+			"sanctuary": "Убежище",
+			"shahnameh": "Шахнаме",
+			"ship": "Корабль",
+			"shredded": "Разрывание",
+			"shutdown": "Отключение",
+			"slow": "Замедление",
+			"spacer": "Космонавт",
+			"spike": "Шип",
+			"stasis": "Стазис",
+			"stunned": "Оглушение",
+			"supercharger": "Сверхзарядник",
+			"sympathetic_shield": "Симпатический щит",
+			"tachyon_shield": "Тахионный щит",
+			"tear_down": "Разрушение",
+			"terrify": "Устрашение",
+			"tiercust": "Пользовательский уровень",
+			"tracking_bug": "Следящий жучок",
+			"trueblack": "Истинно-чёрный эгид",
+			"ultra": "Ультра",
+			"unravel": "Распутывание",
+			"vehicle": "Транспорт",
+			"veteran": "Ветеран",
+			"viral_logic": "Виральная логика",
+			"walk_of_kings": "Путь королей",
+			"warp_sensors": "Варп-сенсоры"
+		},
+		"automation": {
+			"menu-name": "Автоматизация",
+			"menu-label": "Настройки автоматизации системы",
+			"menu-hint": "Выберите какие функции системы вы желаете автоматизировать",
+			"master-switch": "Использовать автоматизацию",
+			"master-switch-desc": "Отключите, если вам не нужна никакая автоматизация.",
+			"attacks": "Расчёт бросков атаки",
+			"attacks-desc": "Автоматически рассчитывать попадания и другие элементы атаки.",
+			"damage": "Нанесение урона",
+			"damage-desc": "Автоматически наносить урон по целям.",
+			"structure": "Проверка структуры/давления",
+			"structure-desc": "Автоматически совершать проверки структуры и давления, когда мех достигает 0 ПЗ или предела нагрева.",
+			"overcharge_heat": "Добавление нагрева от перегрузки",
+			"overcharge_heat-desc": "Автоматически добавлять нагрев при проверках перегрузки.",
+			"attack_self_heat": "Самонагрев от атак",
+			"attack_self_heat-desc": "Автоматически добавлять нагрев, если у оружия есть теги Сверхуничтожение или Нагрев.",
+			"remove_templates": "Autoremove Templates",
+			"remove_templates-desc": "Автоматически удалять шаблоны атак в начале каждого хода.",
+			"limited_loading": "Исключительные и перезаряжаемые предметы",
+			"limited_loading-desc": "Автоматически отслеживать предметы с тегами Исключительный и Перезаряжаемый.",
+			"npc_recharge": "Перезарядка у ПВ",
+			"npc_recharge-desc": "Автоматически совершать проверку перезарядки систем ПВ в начале их хода.",
+			"token_size": "Управление размером токенов",
+			"token_size-desc": "Автоматически выставлять размер токенов согласно размеру в параметрах актёра."
+		},
+		"actionTracker": {
+			"menu-name": "Трекер действий",
+			"menu-label": "Настройка трекера действий",
+			"menu-hint": "Настройки внешнего вида и автоматизации трекера действий.",
+			"showHotbar": "Отображение быстрой панели",
+			"showHotbar-desc": "Отображать быструю панель действий во время боя.",
+			"allowPlayers": "Изменение игроками",
+			"allowPlayers-desc": "Позволить игрокам изменять свои действия.",
+			"printMessages": "Вывод сообщений",
+			"printMessages-desc": "Выводить сообщения в чат в начале и конце хода."
+		},
+		"initiative": {
+			"sorttracker": "Сортировка трекера",
+			"sorttracker-desc": "Перемещает токен, который в данный момент совершает ход, в верхнюю часть трекера и перемещает токены, которые сделали свой ход, в конец трекера.",
+			"appearancesettingslabel": "Настройка внешнего вида",
+			"appearancesettingsbutton": "Внешний вид",
+			"appearancesettings-desc": "Настройка цветов и иконок в трекере"
+		},
+		"squaregriddiagonals": {
+			"name": "Диагонали квадратной сетки",
+			"hint": "Выберите способ расчёта диагонального перемещения на квадратной сетке.",
+			"111": "1-1-1: диагональ всегда 1 (по умолчанию)",
+			"121": "1-2-1: диагональ варьируется между 1 и 2",
+			"222": "2-2-2: диагональ всегда 2",
+			"euc": "Точная: округлённая точная дистанция"
+		},
+		"effect": {
+			"categories": {
+				"passive": "Пассивный",
+				"passthrough": "Сквозной",
+				"disabled": "Отключён",
+				"inherited": "Наследуемый"
+			}
+		},
+		"compendium": {
+			"core_macros": "Макросы LANCER",
+			"lancer_info": "Данные LANCER",
+			"deployable": "Развёртываемые",
+			"mech-items": "Предметы меха",
+			"npc-actors": "Готовые ПВ",
+			"npc-items": "Предметы ПВ",
+			"pilot-items": "Предметы пилота",
+			"player-actors": "Готовые действия игрока",
+			"status-items": "Статусы/состояния"
+		},
+		"tokenConfig": {
+			"manual_token_size": {
+				"label": "Ручной размер токена",
+				"hint": "Игнорировать настройку автоматического размера токена"
+			}
+		}
+	},
+	"LANCERINITIATIVE": {
+		"IconSettingsMenu": "Настройки иконок",
+		"Icon": "Иконка действия",
+		"IconDesc": "Класс CSS для иконки активации.",
+		"DeactivateIcon": "Иконка деактивации",
+		"DeactivateIconDesc": "Класс CSS для иконки деактивации.",
+		"IconSize": "Размер иконки",
+		"IconPreview": "Предпросмотр",
+		"PCColor": "Цвет игроков",
+		"PCColorDesc": "По умолчанию: #44abe0",
+		"FriendlyColor": "Цвет дружественных",
+		"FriendlyColorDesc": "По умолчанию: #44abe0",
+		"NeutralColor": "Цвет нейтральных",
+		"NeutralColorDesc": "По умолчанию: #146464",
+		"EnemyColor": "Цвет враждебных",
+		"EnemyColorDesc": "По умолчанию: #d98f30",
+		"DoneColor": "Цвет неактивных",
+		"DoneColorDesc": "Default: #aaaaaa",
+		"ActivatedLast": "Активированный токен в конец",
+		"ActivatedLastDesc": "Перемещает токены, которые совершили свой ход, в конец трекера.",
+		"SortTracker": "Сортировка трекера",
+		"SortTrackerDesc": "Перемещает токен, который в данный момент совершает ход, в верхнюю часть трекера и перемещает токены, которые сделали свой ход, в конец трекера.",
+		"EnableInitiative": "Проверка инициативы",
+		"EnableInitiativeDesc": "Добавляет кнопку проверки инициативы.",
+		"AddActivation": "Добавить активацию",
+		"RemoveActivation": "Удалить активацию",
+		"UndoActivation": "Отменить активацию"
+	}
 }

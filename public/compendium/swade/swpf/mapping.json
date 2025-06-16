@@ -1,32 +1,32 @@
 {
-  "Item": {
-    "description": "system.description",
-    "category": {
-      "path": "system.category",
-      "converter": "convertCategory"
-    },
-    "requirements": {
-      "path": "system.requirements",
-      "converter": "convertRequirements"
-    },
-    "trapping": "system.trapping",
-    "rank": {
-      "path": "system.rank",
-      "converter": "convertRank"
-    },
-    "range": {
-      "path": "system.range",
-      "converter": "convertRange"
-    },
-    "duration": {
-      "path": "system.duration",
-      "converter": "convertDuration"
-    }
-  },
-  "Actor": {
-    "items": {
-      "path": "items",
-      "converter": "fromPack"
-    }
-  }
+	"Item": {
+		"description": "system.description",
+		"category": {
+			"path": "system.category",
+			"converter": "convertCategory"
+		},
+		"requirements": {
+			"path": "system.requirements",
+			"converter": "convertRequirements"
+		},
+		"trapping": "system.trapping",
+		"rank": {
+			"path": "system.rank",
+			"converter": "convertRank"
+		},
+		"range": {
+			"path": "system.range",
+			"converter": "convertRange"
+		},
+		"duration": {
+			"path": "system.duration",
+			"converter": "convertDuration"
+		}
+	},
+	"Actor": {
+		"items": {
+			"path": "items",
+			"converter": "fromPack"
+		}
+	}
 }

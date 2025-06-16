@@ -1,22 +1,22 @@
 {
-  "name": "@phenomen/foundry-vtt-ru",
-  "version": "13.335",
-  "private": "true",
-  "scripts": {
-    "build": "vite build",
-    "dev": "vite dev",
-    "format": "prettier . --write",
-    "symlink": "vite build && bun symlink.js"
-  },
-  "type": "module",
-  "devDependencies": {
-    "prettier": "3.5.3",
-    "vite": "npm:rolldown-vite@latest"
-  },
-  "overrides": {
-    "vite": "npm:rolldown-vite@latest"
-  },
-  "trustedDependencies": [
-    "esbuild"
-  ]
+	"name": "@phenomen/foundry-vtt-ru",
+	"version": "13.335",
+	"private": "true",
+	"scripts": {
+		"build": "vite build",
+		"dev": "vite dev",
+		"format": "prettier . --write",
+		"symlink": "vite build && bun symlink.js"
+	},
+	"type": "module",
+	"devDependencies": {
+		"prettier": "3.5.3",
+		"vite": "npm:rolldown-vite@latest"
+	},
+	"overrides": {
+		"vite": "npm:rolldown-vite@latest"
+	},
+	"trustedDependencies": [
+		"esbuild"
+	]
 }
