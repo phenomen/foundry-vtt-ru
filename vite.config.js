@@ -4,9 +4,10 @@ const config = defineConfig({
 	build: {
 		outDir: "ru-ru",
 		lib: {
+			name: "ru-ru",
 			entry: "src/index.js",
 			formats: ["es"],
-			name: "ru-ru",
+			sourcemap: false,
 		},
 		rollupOptions: {
 			output: {

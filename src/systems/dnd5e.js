@@ -134,13 +134,13 @@ async function updateAA() {
 
 	try {
 		const translatedSettings = await foundry.utils.fetchJsonWithTimeout(
-			"/modules/ru-ru/i18n/modules/aa-autorec.json",
+			"/modules/ru-ru/i18n/modules/aa-autorec.json"
 		);
 
 		const currentSettings = AutomatedAnimations.AutorecManager.getAutorecEntries();
 		if (!currentSettings) {
 			throw new Error(
-				"Не удалось получить текущие настройки анимаций. Убедитесь, что модуль D&D5E Animations активен и анимации установлены.",
+				"Не удалось получить текущие настройки анимаций. Убедитесь, что модуль D&D5E Animations активен и анимации установлены."
 			);
 		}
 

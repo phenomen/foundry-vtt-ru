@@ -20,7 +20,7 @@ async function createSymlink() {
 
 	if (!moduleId || !foundryDataDir || !packageType || !buildDir) {
 		console.error(
-			"Error: MODULE_ID, FOUNDRY_DATA_DIR, PACKAGE_TYPE, and BUILD_DIR environment variables must be set.",
+			"Error: MODULE_ID, FOUNDRY_DATA_DIR, PACKAGE_TYPE, and BUILD_DIR environment variables must be set."
 		);
 		process.exit(1);
 	}
@@ -31,8 +31,9 @@ async function createSymlink() {
 
 	try {
 		await access(devPath, constants.F_OK);
-	} catch (_error) {
+	} catch (error) {
 		console.error(`Error: The source directory does not exist: ${devPath}`);
+		console.error(error);
 		process.exit(1);
 	}
 
@@ -43,7 +44,7 @@ async function createSymlink() {
 			await rm(foundryPath, { recursive: true, force: true });
 		} else {
 			console.error(
-				`Error: A file or directory that is not a symlink already exists at ${foundryPath}. Please remove it manually.`,
+				`Error: A file or directory that is not a symlink already exists at ${foundryPath}. Please remove it manually.`
 			);
 			process.exit(1);
 		}

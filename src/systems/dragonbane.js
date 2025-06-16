@@ -56,7 +56,7 @@ function registerConverters() {
 			console.log(
 				`Dragonbane: Cached ${
 					Object.keys(map).length
-				} translation mappings from ${translations.length} translation packs`,
+				} translation mappings from ${translations.length} translation packs`
 			);
 			translationMap = map;
 			return map;

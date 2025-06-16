@@ -24,12 +24,12 @@ export function init() {
 	Hooks.on("ready", () => {
 		if (game.modules.get("swade-core-rules")?.active) {
 			ui.notifications.info(
-				"Обнаружен модуль SWADE Core Rules. Перевод базовой библиотеки был отключен во избежание конфликтов.",
+				"Обнаружен модуль SWADE Core Rules. Перевод базовой библиотеки был отключен во избежание конфликтов."
 			);
 		}
 		if (game.modules.get("swpf-core-rules")?.active) {
 			ui.notifications.info(
-				"Обнаружен модуль Savage Pathfinder. Перевод базовой библиотеки был отключен во избежание конфликтов.",
+				"Обнаружен модуль Savage Pathfinder. Перевод базовой библиотеки был отключен во избежание конфликтов."
 			);
 		}
 		setupRules();
@@ -82,7 +82,7 @@ function registerConverters() {
 			const { packs } = game.babele;
 			const translatedEdges = packs.find((pack) => pack.metadata.id === packEdges).translations;
 			const translatedHindrances = packs.find(
-				(pack) => pack.metadata.id === packHindrances,
+				(pack) => pack.metadata.id === packHindrances
 			).translations;
 			const translatedSkills = packs.find((pack) => pack.metadata.id === packSkills).translations;
 
@@ -109,13 +109,13 @@ function setupRules() {
 		game.settings.set(
 			"swade",
 			"coreSkills",
-			"Атлетика, Внимание, Осведомлённость, Скрытность, Убеждение",
+			"Атлетика, Внимание, Осведомлённость, Скрытность, Убеждение"
 		);
 
 		game.settings.set(
 			"swade",
 			"vehicleSkills",
-			"Верховая езда, Вождение, Пилотирование, Судовождение",
+			"Верховая езда, Вождение, Пилотирование, Судовождение"
 		);
 
 		// SWADE Core
@@ -154,21 +154,21 @@ const EXCEPTIONS = {
 };
 
 const CATEGORIES = {
-	"Background": "Предыстории",
-	"Combat": "Боевые",
-	"Professional": "Профессиональные",
-	"Social": "Социальные",
-	"Weird": "Сверхъестественные",
-	"Leadership": "Лидерские",
-	"Power": "Мистические",
-	"Legendary": "Легендарные",
+	Background: "Предыстории",
+	Combat: "Боевые",
+	Professional: "Профессиональные",
+	Social: "Социальные",
+	Weird: "Сверхъестественные",
+	Leadership: "Лидерские",
+	Power: "Мистические",
+	Legendary: "Легендарные",
 };
 
 const RANKS = {
-	"Novice": "Новичок",
-	"Seasoned": "Закалённый",
-	"Veteran": "Ветеран",
-	"Heroic": "Герой",
+	Novice: "Новичок",
+	Seasoned: "Закалённый",
+	Veteran: "Ветеран",
+	Heroic: "Герой",
 };
 
 const RANGES = {
