@@ -1,0 +1,83 @@
+{
+	"TYPES": {
+		"Actor": {
+			"dragonbane-item-browser.merchant": "Купец"
+		}
+	},
+	"DB-IB": {
+		"Any": "Любое",
+		"addItem": "<strong>{actor}</strong> получает <strong>{type}</strong> <strong>{item}</strong>",
+		"rollForPrice": "Бросок {formula}, чтобы определить цену {item} в {currency}",
+		"notEnoughMoney": "<strong>{actor}</strong> не имеет достаточно монет для покупки <strong>{item}</strong>.",
+		"spendMoney": "<strong>{actor}</strong> тратит <strong>{itemPrice}</strong>, чтобы купить <strong>{item}</strong>",
+		"gainMoney": "<strong>{actor}</strong> получает <strong>{itemPrice}</strong> от продажи <strong>{item}</strong>",
+		"manualMonyRemoval": "Вместе с ведущим определите цену <strong>{item}</strong>. Укажите в виде <strong>{itemPrice}</strong> и уменьшите цену вручную.",
+		"settings": {
+			"rollForBarter": "Проверка Торговли при покупке или продаже предмета",
+			"hintRollForBarter": "При покупку или продаже предмета через навигатор предметов, появляется окно запроса, проверки Barter (Торговли), чтобы скорректировать цену в соответствии с правилами.",
+			"nonCoreSkill": "Название навыка Barter",
+			"hintSkillBarter": "Название навыка, используемого для проверки Barter (Торговли), если оно отличается в вашем мире или языке.",
+			"selling": "Добавить иконку копилки рядом с предметами для их продажи",
+			"hintSelling": "Позволяет продать предметы за 50% от их цены. Если включена опция Торговли, то можно будет совершить проверку навыка.",
+			"stash": "Добавить флажок для предметов в хранилище",
+			"hintStash": "Предметы, отправленные в хранилище, не будут учитываться в нагрузке, но будут отображаться в инвентаре.",
+			"hintSkippedFoldersForBrowser": "Укажите папки, которые будут проигнорированные в навигаторе предметов.",
+			"skippedFoldersForBrowser": "Укажите игнорируемые папки"
+		},
+		"Chat": {
+			"buyItem": "Купить предмет",
+			"reducePrice": "Вы снизили цену {item} на 20%!",
+			"cannotBuy": "Вы оскорбили продавца и больше не можете купить {item}",
+			"cannotSell": "Вы оскорбили покупателя и больше не можете продать {item}",
+			"reducePriceDragon": "Вы снизили цену {item} на 50%!",
+			"nochangeInPrice": "Вы можете приобрести {item} по обычной цене.",
+			"sellItem": "<b>{actor}</b> продаёт <b>{item}</b> за <b>{cost} {currency}</b>.",
+			"increasPrice": "Вы продали {item} на 20% дороже.",
+			"increasePriceDragon": "Вы продали {item} на 50% дороже.",
+			"nochangeInPriceSell": "Вы можете продать {item} по обычной цене.",
+			"sellItemButton": "Продать предмет",
+			"actorSells": "{actor} продаёт предметы {items} за",
+			"and": "и"
+		},
+		"itemName": "Название",
+		"wannaBarter": "Хотите поторговаться?",
+		"pickIfYouWantToRollForBartering": "Вы можете поторговаться для лучшей цены.",
+		"rollForBarter": "Торговаться",
+		"BuyWithoutRoll": "Не торговаться",
+		"openItemBrowser": "Навигатор предметов",
+		"sellItem": "Продать предмет",
+		"addItemToCharacter": "Добавить предмет без покупки.",
+		"buyItem": "Купить предмет - добавить предмет и потратить монеты.",
+		"stashItem": "Оставить предмет в бланке, но вес не будет учитываться в нагрузке.",
+		"stash": "Хранилище",
+		"SellWithoutBarter": "Продать не торгуясь",
+		"merchant": {
+			"setting": "Настройки",
+			"selling": "Предметы на продажу",
+			"buing": "Купец покупает у вас",
+			"setSellingRate": "Процентальная ставка продажи купца от первоначальной цены",
+			"setBuingRate": "Процентальная ставка покупки купца от первоначальной цены",
+			"allowedSupply": "Что покупает купец",
+			"sells": "продаёт",
+			"notAcceptSuply": "Этот купец не покупает данный товар.",
+			"nonGMaddItemsToSell": "Только ведущий может изменить инвентарь купца.",
+			"youCannotSellTheSameItemTwice": "Нельзя продать один и тот же предмет дважды!"
+		},
+		"warrning": {
+			"incoretInput": "Введите число с сиволом %",
+			"youAreNotOwnerOfDeletedItem": "Нельзя удалять предметы, не принадлежащие вам.",
+			"merchantDoNotHaveMoreItem": "У купца больше нет {itemName}",
+			"youDoNotSellAnything": "Ваш персонаж ничего не продаёт."
+		},
+		"itemPrice": "Цена",
+		"dialog": {
+			"denfieQuantity": "Количество на продажу.",
+			"selectSellingQuantity": "Сколько {item} вы хотите продать",
+			"selectActor": "Выберите покупающего персонажа",
+			"buy": "Купить для персонажа",
+			"sell": "Передать предмет купцу",
+			"openMerchantSheet": "Открыть бланк купца",
+			"youAttempToOpenMerchantSheet": "Хотите открыть бланк инвентаря купца?"
+		}
+	}
+}
