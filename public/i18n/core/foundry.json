@@ -1062,8 +1062,8 @@
 	"EFFECT.MODE_OVERRIDE": "Перезапись",
 	"EFFECT.TransferLegacy": "Копирование эффекта к актёру",
 	"EFFECT.TransferHintLegacy": "Эффект будет скопирован к актёру, когда родительский предмет этого эффекта создаётся на актёре и будет удалён вместе с предметом.",
-	"EFFECT.DurationTurns": "Длительность (ходы)",
-	"EFFECT.StartTurns": "Начальный ход эффекта",
+	"EFFECT.DurationTurns": "Длительность (бой)",
+	"EFFECT.StartTurns": "Начало эффекта",
 	"EFFECT.ChangeKey": "Ключ параметра",
 	"EFFECT.ChangeMode": "Режим изменения",
 	"EFFECT.ChangeValue": "Значение",
@@ -1279,7 +1279,7 @@
 		"TraverseBack": "Возвращение",
 		"NoResults": "Подходящие результаты не найдены.",
 		"Upload": "Загрузка",
-		"CannotUpload": "Загрузка в эту папку запрещена. Если необходимо, создайте новую папку верхнего уровня для своих загрузок.",
+		"CannotUpload": "Загрузка в эту папку запрещена, так как её содержимое может быть перезаписано во время обновлений. Вместо этого загружайте в папку \"assets\" или в другую собственную папку.",
 		"Search": "Поиск",
 		"ErrorTooLarge": "Файл, который вы пытаетесь загрузить, слишком большой для настроек сервера.",
 		"ErrorSomethingWrong": "Что-то пошло не так при запросе загрузки файла.",
@@ -2027,6 +2027,11 @@
 			"yes": "Разрешить передачу",
 			"no": "Запретить передачу"
 		},
+		"ChangePassword": {
+			"label": "Сменить пароль",
+			"hint": "Введите текущий пароль администратора.",
+			"title": "Введите текущий пароль"
+		},
 		"SECTIONS": {
 			"FVTTConfig": "Настройки Foundry VTT",
 			"ServerConfig": "Настройки сервера",
@@ -2194,6 +2199,9 @@
 	"SETTINGS.GridDiagonalsAlternating1": "Чередующиеся (1/2/1)",
 	"SETTINGS.GridDiagonalsAlternating2": "Чередующиеся (2/1/2)",
 	"SETTINGS.GridDiagonalsIllegal": "Недопустимые (∞)",
+
+	"SETTINGS.UniversalKeybindingsN": "Универсальная клавиатура (экспериментально)",
+	"SETTINGS.UniversalKeybindingsL": "Сопоставляйте сочетания клавиш по введенному символу, а не по положению физической клавиши. Позволяет лучше поддерживать раскладки AZERTY, QWERTZ, Kana и другие. Требуется перезагрузка.",
 
 	"SETTINGS.UI": {
 		"MENU": {
@@ -2443,11 +2451,15 @@
 		"UpdateWarningWillDisable": "Это крупное обновление Foundry Virtual Tabletop. Некоторые модули и системы могут быть не обновлены для совместимости.",
 		"UpdateButtonDownload": "Скачать обновление {display}",
 		"UpdateInfoAvailable": "Доступно обновление Foundry Virtual Tabletop до версии {display}!",
-		"UpdateNoUpdateMode": "Вы не можете обновить версию Foundry VTT, т.к. программа была запущена в режиме --noupdate.",
 		"UpdateNotAvailable": "В выбранном канале нет обновлений.",
 		"UpdateNoArchive": "Не найден архив установки обновления",
 		"UpdateLicenseInvalid": "Ваш ключ лицензии Foundry Virtual Tabletop недействителен.",
 		"UpdatedPackages": "Журнал обновлений",
+		"NoUpdateMode": {
+			"Label": "Обновление отключено",
+			"Hint": "Вы не можете обновить версию Foundry VTT, т.к. программа была запущена в режиме --noupdate."
+		},
+
 		"Package": "Пакет",
 		"VersionChange": "Изменение версии",
 
@@ -2595,7 +2607,7 @@
 			"FullList": "Просмотр <a href=\"{url}\" target=\"_blank\">полного списка изменений</a> этого обновления.",
 			"BeginDownload": "Начать загрузку",
 			"NewGenerationHint": "Перед обновлением следует сделать образ всех установленных пакетов на случай необходимости отката.",
-			"PreviewCompatibilityHint": "Используя кнопку 'Предпросмотр совместимости' ниже, вы можете проверить, поддерживают ли ваши миры, системы и модули в Foundry VTT версии {version}."
+			"PreviewCompatibilityHint": "Используя \"Предпросмотр совместимости\" ниже, вы можете проверить, поддерживаются ли ваши миры, системы и модули в Foundry VTT версии {version}."
 		}
 	},
 
