@@ -25,9 +25,9 @@
 		"AlignmentCE": "Хаотично-злое",
 		"AlignmentCG": "Хаотично-доброе",
 		"AlignmentCN": "Хаотично-нейтральное",
-		"AlignmentLE": "Принципиально-злое",
-		"AlignmentLG": "Принципиально-доброе",
-		"AlignmentLN": "Принципиально-нейтральное",
+		"AlignmentLE": "Законно-злое",
+		"AlignmentLG": "Законно-доброе",
+		"AlignmentLN": "Законно-нейтральное",
 		"AlignmentNE": "Нейтрально-злое",
 		"AlignmentNG": "Нейтрально-доброе",
 		"SkillArc": "Тайная магия",
@@ -62,7 +62,7 @@
 							"label": "Бонус атаки рукопашных заклинаний"
 						},
 						"damage": {
-							"label": "Бонус урона дальнобойных заклинаний"
+							"label": "Бонус урона рукопашных заклинаний"
 						}
 					},
 					"mwak": {
@@ -121,7 +121,7 @@
 				"ElementalDiscipline": "Стихийные практики",
 				"FightingStyle": "Боевой стиль",
 				"HuntersPrey": "Добыча охотника",
-				"Ki": "Умение ци",
+				"Ki": "Приём сосредоточенности",
 				"Maneuver": "Боевой приём",
 				"Metamagic": "Вариант метамагии",
 				"Multiattack": "Мультиатака",
@@ -445,7 +445,7 @@
 		"ConInvisible": "Невидимый",
 		"ConParalyzed": "Парализованный",
 		"ConPetrified": "Окаменевший",
-		"ConProne": "Сбитый с ног",
+		"ConProne": "Опрокинутый",
 		"ConRestrained": "Опутанный",
 		"ConStunned": "Ошеломлённый",
 		"ConsumableWand": "Палочка",
@@ -469,6 +469,36 @@
 		"CreatureTypeSelectorSubtype": "Подвид",
 		"CreatureTypeTitle": "Настройка вида существа",
 		"CriticalHit": "Критическое попадание",
+		"ITEM": {
+			"Property": {
+				"Adamantine": "Адамантиновое",
+				"Ammunition": "Боеприпас",
+				"Concentration": "Концентрация",
+				"Finesse": "Фехтовальное",
+				"Firearm": "Огнестрельное",
+				"Focus": "Фокусирующее",
+				"Heavy": "Тяжёлое",
+				"Light": "Лёгкое",
+				"Loading": "Заряжаемое",
+				"Material": "Материальный",
+				"Magical": "Магическое",
+				"Reach": "Досягаемость",
+				"Reload": "Перезарядка",
+				"Returning": "Возвращаемое",
+				"Ritual": "Ритуал",
+				"Sidekick": "Помощник",
+				"Silvered": "Посеребрённое",
+				"Somatic": "Соматический",
+				"Special": "Особое",
+				"StealthDisadvantage": "Помеха скрытности",
+				"Thrown": "Метательное",
+				"Trait": "Пассивное свойство",
+				"TwoHanded": "Двуручное",
+				"Versatile": "Универсальное",
+				"Verbal": "Вербальный",
+				"WeightlessContents": "Невесомое содержимое"
+			}
+		},
 		"DamImm": "Иммунитет к урону",
 		"DamRes": "Сопротивление к урону",
 		"DamageApplication": {
@@ -634,11 +664,26 @@
 		"DamageRadiant": "Излучение",
 		"DamageThunder": "Звук",
 		"DeathSave": "Спасбросок от смерти",
+		"DeathSaveBonus": "Бонус к спасброску от смерти",
+		"DeathSaveConfigure": "Настройка спасброска от смерти",
 		"DeathSaveCriticalSuccess": "{name} критически преуспел в спасброске от смерти и восстановил 1 хит!",
+		"DeathSaveHide": "Скрыть спасброски от смерти",
+		"DeathSaveShow": "Показать спасброски от смерти",
+		"DeathSaveSuccess": "{name} выживает с 3 успешными испытаниями против смерти!",
+		"DeathSaveSuccessLabel": "Успешный спасбросок от смерти",
+		"DeathSaveSuccessLabelN.one": "Первый успешный спасбросок от смерти",
+		"DeathSaveSuccessLabelN.two": "Второй успешный спасбросок от смерти",
+		"DeathSaveSuccessLabelN.few": "Третий успешный спасбросок от смерти",
+		"DeathSaveSuccesses": "Успехи",
 		"DeathSaveFailure": "{name} погибает с 3 проваленными спасбросками от смерти!",
-		"DeathSaveSuccess": "{name} выживает с 3 успешными спасбросками от смерти!",
-		"DeathSaveUnnecessary": "Вам не нужно проходить спасбросок от смерти, т.к. у вас более 0 хитов или уже 3 успеха.",
+		"DeathSaveFailureLabel": "Провал спасброска от смерти",
+		"DeathSaveFailureLabelN.one": "Первый провал спасброска от смерти",
+		"DeathSaveFailureLabelN.two": "Второй провал спасброска от смерти",
+		"DeathSaveFailureLabelN.few": "Третий провал спасброска от смерти",
+		"DeathSaveFailures": "Провалы",
+		"DeathSaveRoll": "Спасбросок от смерти",
 		"DeathSavingThrow": "Спасбросок от смерти",
+		"DeathSaveUnnecessary": "Вам не нужно совершать спасбросок от смерти, т.к. у вас более 1 хита или уже 3 успеха.",
 		"Environment": "Местность",
 		"EquipmentHeavy": "Тяжёлый доспех",
 		"EquipmentLight": "Лёгкий доспех",
@@ -660,7 +705,7 @@
 		"FlagsDiamondSoulHint": "Владение всеми спасбросками.",
 		"FlagsElvenAccuracyHint": "Дополнительная кость при проверках ЛОВ, ИНТ, МДР и ХАР с преимуществом.",
 		"FlagsHalflingLucky": "Везучий",
-		"FlagsHalflingLuckyHint": "Один переброс «1» при проверках d20.",
+		"FlagsHalflingLuckyHint": "Переброс «1» при проверках d20.",
 		"FlagsAlertHint": "Владение проверками инициативы.",
 		"FlagsInitiativeAdv": "Преимущество инициативы",
 		"FlagsInitiativeAdvHint": "Проверки инициативы получают преимущество.",
@@ -1117,6 +1162,55 @@
 		},
 		"ToolArtisans": "Ремесленные инструменты",
 		"Resistances": "Сопротивления",
+		"TRANSFORM": {
+			"Preset": {
+				"Appearance": {
+					"Label": "Только внешний вид"
+				},
+				"Default": "По умолчанию",
+				"Label": "Шаблоны",
+				"Polymorph": {
+					"Label": "Превращение"
+				},
+				"WildShape": {
+					"Label": "Дикий облик"
+				}
+			},
+			"Setting": {
+				"FIELDS": {
+					"tempFormula": {
+						"hint": "Формула временных хитов, которая будет добавлена к превращению.",
+						"label": "Формула врем. хитов"
+					}
+				},
+				"Keep": {
+					"Health": {
+						"Label": "Хиты и кости хитов"
+					},
+					"Physical": {
+						"Hint": "Оставить Силу, Ловкость и Телосложение.",
+						"Label": "Физические характеристики"
+					},
+					"Proficiency": {
+						"Label": "Бонус владения"
+					},
+					"Saves": {
+						"Label": "Владения спасбросками"
+					},
+					"Skills": {
+						"Label": "Владение навыками"
+					}
+				},
+				"Merge": {
+					"Saves": {
+						"Label": "Владения спасбросками"
+					},
+					"Skills": {
+						"Label": "Владения навыками"
+					}
+				}
+			}
+		},
 		"TraitArmorPlural": {
 			"one": "Владение доспехами",
 			"other": "Владения доспехами"
