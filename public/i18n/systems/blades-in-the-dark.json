@@ -120,6 +120,7 @@
 	"BITD.Coins": "Монеты",
 	"BITD.Stash": "Заначка",
 	"BITD.CrewReputation": "Реноме",
+	"BITD.DeityDescription": "Описание божества",
 	"BITD.CrewUpgrades": "Улучшения команды",
 	"BITD.Hold": "Контроль",
 	"BITD.Weak": "Слабый",
@@ -135,6 +136,11 @@
 	"BITD.Notes": "Заметки",
 	"BITD.AllItems": "Все записи",
 	"BITD.CrewXP": "Опыт команды",
+	"BITD.XP": "Опыт",
+	"BITD.AddXP": "Добавить опыт",
+	"BITD.MinusXP": "Отнять опыт",
+	"BITD.AddXPClock": "Добавить счётчик опыта",
+	"BITD.MinusXPClock": "Отнять счётчик опыта",
 	"BITD.CrewExpClue1": "В конце встречи отметьте за каждый элемент из списка ниже 1 пункт опыта, если событие произошло хотя бы раз, или 2 пункта опыта, если многократно.",
 	"BITD.SpecialAbilities": "Таланты",
 	"BITD.Claimed": "Занято",
@@ -198,6 +204,10 @@
 	"BITD.RollFailurePositionDesperate": "Случилось худшее. Персонаж получает <strong>тяжёлые повреждения</strong>, происходит <strong>серьёзное осложнение</strong>, <strong>возможность</strong> оказывается <strong>упущенной</strong>.",
 	"BITD.RollResistance": "Ты <strong>уменьшаешь</strong> или <strong>отменяешь</strong> (по решению ведущего) последствия.<br/>Ты увеличивешь <strong>стресс</strong> на <strong>{stress}</strong>.",
 	"BITD.RollResistanceCritical": "Ты <strong>уменьшаешь</strong> или <strong>отменяешь</strong> (по решению ведущего) последствия. <br/>Ты уменьшаешь свой <strong>стресс</strong> на <strong>1</strong>.",
+	"BITD.RollPeril": "Опасность",
+	"BITD.RollThreatSuccess": "Вы избегаете угрозы.",
+	"BITD.RollThreatPeril": "Столкнуться с уменьшенными последствиями или <strong>приложить усилие</strong>, чтобы избежать угрозы.",
+	"BITD.RollThreatThreat": "Ты сталкиваешься с последствиями. Если ты <strong>приложил усилие</strong>, то последствия снижены.",
 
 	"BITD.PositionControlled": "Контролируемая",
 	"BITD.PositionRisky": "Рискованная",
@@ -222,16 +232,16 @@
 
 	"BITD.SkillsResolve": "Воля",
 	"BITD.SkillsResolveShort": "Воля",
-	"BITD.SkillsAttune": "Манипулирование",
+	"BITD.SkillsAttune": "Резонанс",
 	"BITD.SkillsCommand": "Приказ",
 	"BITD.SkillsConsort": "Общение",
-	"BITD.SkillsSway": "Резонанс",
+	"BITD.SkillsSway": "Манипулирование",
 
-	"BITD.AddAbility": "Добавить Талант",
+	"BITD.AddAbility": "Добавить талант",
 	"BITD.AddItem": "Добавить",
 	"BITD.ImportPlaybookContacts": "Импортировать контакты бланка",
 	"BITD.Uses": "Кол-во использований",
-	"BITD.NumberAvailable": "Доступное Количество",
+	"BITD.NumberAvailable": "Доступное количество",
 	"BITD.AdditionalInfo": "Дополнительная информация",
 
 	"BITD.Position": "Уровень риска",
@@ -240,6 +250,8 @@
 
 	"BITD.Encumbered": "Перегружен",
 	"BITD.OverMax": "Больше максимального",
+	"BITD.Discreet": "Скрытная",
+	"BITD.Conspicuous": "Заметная",
 
 	"BITD.Drain": "Истощение",
 	"BITD.Wear": "Износ",
@@ -276,6 +288,9 @@
 	"BITD.CargoTypes": "Виды грузов",
 	"BITD.Prison": "Тюрьма",
 
+	"BITD.ActionRoll": "Действие",
+	"BITD.ThreatRoll": "Угроза",
+	"BITD.PushYourself": "Приложить усилие",
 	"BITD.IndulgeVice": "Утоление страсти",
 	"BITD.GatherInformation": "Сбор информации",
 	"BITD.Fortune": "Удача",
@@ -283,6 +298,8 @@
 	"BITD.AcquireAsset": "Приобретение ресурса",
 	"BITD.AcquireAssetExtra": "Чтобы результат превысил <strong>впечатляющий успех</strong>, ты можешь тратить по 2 монеты за +1 к качеству.",
 	"BITD.CrewTier": "Ранг команды",
+	"BITD.ExtraThreats": "Другие угрозы",
+	"BITD.Threats": "Угрозы",
 
 	"BITD.RollVice": "Ты утоляешь свою страсть.<br/>Уменьши <strong>стресс</strong> на <strong>{clear_stress}</strong>.",
 	"BITD.RollViceFailure": "Ты <strong>увлекаешься страстью</strong>. Уменши <strong>стресс</strong> на <strong>{clear_stress}</strong> и выбери <strong>один</strong> из следующих вариантов:",
@@ -316,6 +333,10 @@
 	"BITD.Associated": "Связанный",
 	"BITD.DisabledByAE": "Мин. значение от активного эффекта",
 	"BITD.NoMastery": "У авантюриста нет вершины мастерства",
+	"BITD.UnusedDice": "Неиспользованые кубики",
+	"BITD.Edge": "Edge",
+	"BITD.GainEdge": "Gain an <strong>Edge</strong>.",
+	"BITD.DiceRoller": "Бросок кубиков",
 
 	"BITD.Colors": {
 		"Black": "Чёрный",
@@ -325,5 +346,45 @@
 		"Red": "Красный",
 		"White": "Белый",
 		"Yellow": "Жёлтый"
+	},
+
+	"BITD.Settings": {
+		"Action": {
+			"Name": "Action Rolls",
+			"Hint": "Enables the Action Roll from the Actor Dice Roller; only uncheck if you have enabled Threat Rolls."
+		},
+		"Threat": {
+			"Name": "Threat Rolls",
+			"Hint": "Enables the Threat Roll from the Deep Cuts supplement."
+		},
+		"Push": {
+			"Name": "Использовать Усилие",
+			"Hint": "Заменяет Испытание на Усилие из Deep Cuts."
+		},
+		"Load": {
+			"Name": "Альтернативная нагрузка",
+			"Hint": "Заменить правила нагрузки (лёгкая/средняя/тяжелая) правилами нагрузки из Deep Cuts (скрытная/заметная)."
+		},
+		"ClockXP": {
+			"Name": "Experience Clocks",
+			"Hint": "Replaces the base Experience Rules with Experience Clocks from the Deep Cuts supplement."
+		},
+		"Edge": {
+			"Name": "Edge",
+			"Hint": "Adds Edge to character sheets from the Deep Cuts supplement."
+		},
+		"PublicClocks": {
+			"Name": "Default Observable Clocks",
+			"Hint": "All newly made Clock actors will have permissions set to Observer for all players."
+		}
+	},
+	"BITD.log": {
+		"info": {
+			"SameNPC": "The dropped NPC is already an acquaintance of this character.",
+			"SameCrew": "The dropped Crew is the current crew of this character."
+		},
+		"warn": {
+			"NoNPC": "This NPC does not exist in the World or in a Compendium."
+		}
 	}
 }
