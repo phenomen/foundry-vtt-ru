@@ -4,14 +4,6 @@ body.auth #main-header h1 {
 	font-size: var(--font-size-48);
 }
 
-#setup-sidebar .news > h3 {
-	font-size: var(--font-size-20);
-}
-
-#setup-packages .package .package-title {
-	font-weight: 600;
-}
-
 .setup .form-group label {
 	font-size: var(--font-size-15);
 }
@@ -21,6 +13,14 @@ body.auth #main-header h1 {
 	font-family: var(--font-sans-condensed);
 	font-size: var(--font-size-14);
 	line-height: 20px;
+}
+
+#setup-sidebar .news > h3 {
+	font-size: var(--font-size-20);
+}
+
+#setup-packages .package .package-title {
+	font-weight: 600;
 }
 
 .journal-sheet .editor-content {
@@ -96,6 +96,13 @@ select,
 	font-family: var(--font-sans-condensed);
 }
 
+.form-group > label,
+.form-group > span.label {
+	font-family: var(--font-sans-condensed);
+	font-weight: 600;
+	line-height: normal;
+}
+
 button,
 a.button,
 .tabs .item,
@@ -108,13 +115,6 @@ a.button.icon,
 label.search::after {
 	font-family: var(--font-awesome);
 	font-weight: 600;
-}
-
-.form-group > label,
-.form-group > span.label {
-	font-family: var(--font-sans-condensed);
-	font-weight: 600;
-	line-height: normal;
 }
 
 .directory .directory-header .action-buttons {
@@ -133,14 +133,6 @@ label.search::after {
 	max-width: 200px;
 }
 
-.monks-tokenbar.chat-card .card-header h3 {
-	font-family: var(--font-sans-condensed);
-}
-
-.monks-tokenbar .sheet .items-list .items-header h3 {
-	font-family: var(--font-serif);
-}
-
 .encounter-cr {
 	font-family: var(--font-sans-condensed);
 }
@@ -149,12 +141,20 @@ label.search::after {
 	font-family: var(--font-sans-condensed);
 }
 
-.monks-tokenbar .sheet .items-list .items-header h3 {
+.storyteller-tooltip {
+	font-family: var(--font-serif);
+}
+
+.monks-tokenbar.chat-card .card-header h3 {
 	font-family: var(--font-sans-condensed);
 }
 
-.storyteller-tooltip {
+.monks-tokenbar .sheet .items-list .items-header h3 {
 	font-family: var(--font-serif);
+}
+
+.monks-tokenbar .sheet .items-list .items-header h3 {
+	font-family: var(--font-sans-condensed);
 }
 
 .monks-active-tiles.sheet .items-list .items-header h3,
