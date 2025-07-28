@@ -1,0 +1,21 @@
+:root {
+	--cosmere-font-normal: var(--font-fancy);
+	--cosmere-font-header: var(--font-sans-condensed);
+	--cosmere-font-header-sc: var(--font-modesto);
+	--cosmere-font-condensed: var(--font-sans-condensed);
+}
+
+.application.sheet.actor app-actor-attributes .attribute-group > .label {
+	font-weight: 600;
+	font-family: var(--font-fancy);
+}
+
+.application.sheet.actor .sheet-stack .label {
+	max-width: 60px;
+	overflow: visible;
+}
+
+.application.sheet.actor .sidebar-header .label {
+	font-weight: 600;
+	font-size: var(--font-size-11);
+}
