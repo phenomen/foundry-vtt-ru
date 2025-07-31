@@ -18,11 +18,11 @@
 				},
 				"Expertise": {
 					"name": "Умение",
-					"Armor": "Броня",
-					"Cultural": "Культура",
-					"Specialist": "Мастерство",
-					"Utility": "Ремесло",
-					"Weapon": "Оружие"
+					"Armor": "Доспешное",
+					"Cultural": "Культурное",
+					"Specialist": "Специальное",
+					"Utility": "Профессиональное",
+					"Weapon": "Оружейное"
 				}
 			},
 			"Adversary": {
@@ -714,80 +714,80 @@
 				}
 			},
 			"Modality": {
-				"Label": "Modality Identifier",
-				"Hint": "Identifier of the modality this talent belongs to. (e.g. \"stance\")"
+				"Label": "Идентификатор условия",
+				"Hint": "Идентификатор условия к которому принадлежит этот талант (напр. \"stance\")"
 			},
-			"AttackFlavor": "[actor] attacks with their [item].",
+			"AttackFlavor": "[actor] атакует, используя [item].",
 			"EventSystem": {
 				"Event": {
 					"Types": {
 						"create": {
-							"Label": "Created",
-							"Description": "Triggered when this item is created, duplicated, added to an actor, or imported."
+							"Label": "Создание",
+							"Description": "Срабатывает, когда предмет создаётся, копируется, добавляется или импортируется."
 						},
 						"update": {
-							"Label": "Updated",
-							"Description": "Triggered when this item is updated."
+							"Label": "Обновление",
+							"Description": "Срабатывает, когда предмет обновляется или изменяется."
 						},
 						"delete": {
-							"Label": "Deleted",
-							"Description": "Triggered when this item is deleted."
+							"Label": "Удаление",
+							"Description": "Срабатывает, когда предмет удаляется."
 						},
 						"add-to-actor": {
-							"Label": "Added to Actor",
-							"Description": "Triggered when this item is added to an actor."
+							"Label": "Добавление актёру",
+							"Description": "Срабатывает, когда предмет добавляется актёру."
 						},
 						"remove-from-actor": {
-							"Label": "Removed from Actor",
-							"Description": "Triggered when this item is removed from an actor."
+							"Label": "Удаление у актёра",
+							"Description": "Срабатывает, когда предмет удаляется у актёра."
 						},
 						"equip": {
-							"Label": "Equipped",
-							"Description": "Triggered when this item is equipped."
+							"Label": "Надевание",
+							"Description": "Срабатывает, когда предмет надевается."
 						},
 						"unequip": {
-							"Label": "Unequipped",
-							"Description": "Triggered when this item is unequipped."
+							"Label": "Снятие",
+							"Description": "Срабатывает, когда предмет снимается."
 						},
 						"use": {
-							"Label": "Used",
-							"Description": "Triggered when this item is used/rolled."
+							"Label": "Использование",
+							"Description": "Срабатывает, когда предмет используется."
 						},
 						"mode-activate": {
-							"Label": "Activated Modality",
-							"Description": "Triggered when this item's mode becomes active for its modality."
+							"Label": "Активация условия",
+							"Description": "Срабатывает, когда режим этого предмета становится активным согласно условию."
 						},
 						"mode-deactivate": {
-							"Label": "Deactivated Modality",
-							"Description": "Triggered when this item's mode becomes inactive for its modality."
+							"Label": "Деактивация модальности",
+							"Description": "Срабатывает, когда режим этого предмета становится неактивным согласно условию."
 						},
 						"goal-complete": {
-							"Label": "Goal Completed",
-							"Description": "Triggered when this Goal item is completed."
+							"Label": "Завершение цели",
+							"Description": "Срабатывает, когда завершается цель."
 						},
 						"goal-progress": {
-							"Label": "Goal Progressed",
-							"Description": "Triggered when this Goal item's progress is updated towards completion."
+							"Label": "Прогресс цели",
+							"Description": "Срабатывает, когда изменяется прогресс цели."
 						},
 						"update-actor": {
-							"Label": "Actor Updated",
-							"Description": "Triggered when this item's parent actor is updated."
+							"Label": "Обновление актёра",
+							"Description": "Срабатывает, когда владеющий предметом актёр обновляется."
 						},
 						"apply-damage-actor": {
-							"Label": "Actor Damaged",
-							"Description": "Triggered when damage is applied to this item's parent actor."
+							"Label": "Урон актёра",
+							"Description": "Срабатывает, когда владеющий предметом актёр получает урон."
 						},
 						"apply-injury-actor": {
-							"Label": "Actor Gained Injury",
-							"Description": "Triggered when an injury is applied to this item's parent actor."
+							"Label": "Травма актёра",
+							"Description": "Срабатывает, когда владеющий предметом актёр получает травму."
 						},
 						"short-rest-actor": {
-							"Label": "Actor Short Rested",
-							"Description": "Triggered when this item's parent actor takes a short rest."
+							"Label": "Короткий отдых",
+							"Description": "Срабатывает, когда владеющий предметом актёр совершает короткий отдых."
 						},
 						"long-rest-actor": {
-							"Label": "Actor Long Rested",
-							"Description": "Triggered when this item's parent actor takes a long rest."
+							"Label": "Долгий отдых",
+							"Description": "Срабатывает, когда владеющий предметом актёр совершает долгий отдых."
 						}
 					},
 					"Rule": {
@@ -795,126 +795,126 @@
 							"Label": "Описание"
 						},
 						"Event": {
-							"Label": "Trigger"
+							"Label": "Условие"
 						},
-						"NewRuleDescription": "New Rule"
+						"NewRuleDescription": "Новое правило"
 					},
 					"Handler": {
 						"Types": {
 							"grant-expertises": {
-								"Title": "Grant Expertises",
-								"Description": "Grants expertises to an actor.",
+								"Title": "Получение умений",
+								"Description": "Предоставляет умения персонажу.",
 								"Pick": {
-									"Label": "User picks",
-									"Hint": "Whether the user should pick a number of expertises or if a specific set of expertises should be granted."
+									"Label": "На выбор",
+									"Hint": "Должен ли участник выбрать несколько умений или ему должен быть предоставлен определенный набор умений."
 								},
 								"PickAmount": {
-									"Label": "Amount",
-									"Hint": "The maximum number of expertises the user can pick."
+									"Label": "Число",
+									"Hint": "Масимальное число умений, которое можно выбрать."
 								},
 								"AllowReplacement": {
-									"Label": "Allow Replacement",
-									"Hint": "Whether to allow the user to replace a granted expertise if they already have it."
+									"Label": "Разрешить замену",
+									"Hint": "Разрешать ли участнику заменять полученное умение, если оно у него уже есть."
 								},
 								"AvailableTypes": {
-									"Label": "Available Categories",
-									"Hint": "The categories of expertises available to pick from."
+									"Label": "Доступные категории",
+									"Hint": "Категории умений, доступные для выбора."
 								},
 								"ReplaceExpertise": {
-									"Title": "Choose another Expertise",
-									"Button": "Pick"
+									"Title": "Выберите другое умение",
+									"Button": "Выбор"
 								},
 								"PickDialog": {
-									"Title": "Choose {amount} Expertises",
-									"Button": "Pick"
+									"Title": "Выберите {amount} умения",
+									"Button": "Выбор"
 								}
 							},
 							"grant-items": {
-								"Title": "Grant Items",
-								"Description": "Grants items to an actor.",
+								"Title": "Получение предметов",
+								"Description": "Предоставляет предметы персонажу.",
 								"AllowDuplicates": {
-									"Label": "Allow Duplicates",
-									"Hint": "Whether to grant items to the actor even if they already have them"
+									"Label": "Разрешить дубликаты",
+									"Hint": "Предоставлять ли актёру предметы, даже если они у него уже есть"
 								},
 								"IncreaseQuantity": {
-									"Label": "Increase Quantity",
-									"Hint": "Whether to increase the quantity of physical items if the actor already has them"
+									"Label": "Увеличение количества",
+									"Hint": "Нужно ли увеличивать количество физических предметов, если они уже есть у актёра."
 								},
 								"PickOne": {
-									"Label": "Pick One",
-									"Hint": "Whether to prompt the user to pick one item from the list of items to grant. If not enabled, all items will be granted."
+									"Label": "Выбор одного",
+									"Hint": "Нужно ли предлагать выбрать один предмет из списка предметов Если эта опция отключены, будут получены все предметы."
 								},
 								"PickPromptTitle": {
-									"Label": "Pick Prompt Title",
-									"Hint": "The title of the prompt shown when picking an item to grant.",
-									"Default": "Pick Item"
+									"Label": "Заголовок выбора",
+									"Hint": "Заголовок, отображаемый при выборе предмета.",
+									"Default": "Выбор предмета"
 								},
 								"Notify": {
-									"Label": "Notify User",
-									"Hint": "Whether to send a notification to the user for each item granted."
+									"Label": "Уведомление участника",
+									"Hint": "Нужно ли отправлять участнику уведомление о каждом полученном предмете."
 								},
 								"Items": {
-									"Label": "Items"
+									"Label": "Предметы"
 								}
 							},
 							"modify-attribute": {
-								"Title": "Modify Attribute",
-								"Description": "Modifies an attribute of an actor.",
+								"Title": "Изменение характеристики",
+								"Description": "Изменяет значение характеристики актёра.",
 								"Attribute": {
-									"Label": "Attribute"
+									"Label": "Характеристика"
 								},
 								"Amount": {
-									"Label": "Amount",
-									"Hint": "The amount to modify the attribute by. Can be positive or negative."
+									"Label": "Число",
+									"Hint": "Значение, на которое нужно изменить характеристику. Может быть положительным или отрицательным."
 								},
 								"Bonus": {
-									"Label": "Modify Bonus",
-									"Hint": "Whether to modify the attribute bonus instead of the attribute itself."
+									"Label": "Изменение бонуса",
+									"Hint": "Можно изменить бонус характеристики вместо значения характеристики."
 								}
 							},
 							"modify-skill-rank": {
 								"Title": "Изменение ранга навыка",
-								"Description": "Изменяет ранг навыка персонажа.",
+								"Description": "Изменяет ранг навыка актёра.",
 								"Skill": {
 									"Label": "Навык"
 								},
 								"Amount": {
-									"Label": "Amount",
+									"Label": "Число",
 									"Hint": "Значение, на которое нужно изменить ранг навыка. Может быть положительным или отрицательным."
 								}
 							},
 							"remove-expertises": {
-								"Title": "Remove Expertises",
-								"Description": "Removes expertises from an actor."
+								"Title": "Удаление умений",
+								"Description": "Удаляет умения актёра."
 							},
 							"remove-items": {
-								"Title": "Remove Items",
-								"Description": "Removes items from an actor.",
+								"Title": "Удаление предметов",
+								"Description": "Удаляет предметы у актёра.",
 								"ReduceQuantity": {
-									"Label": "Reduce Quantity",
-									"Hint": "Whether to reduce the quantity of physical items instead of removing them outright.\nItems reduced to 0 quantity will be removed."
+									"Label": "Уменьшение количества",
+									"Hint": "Нужно ли уменьшать количество предметов вместо того, чтобы удалять их полностью.\nПредметы, количество которых уменьшилось до 0, будут удалены."
 								},
 								"Amount": {
-									"Label": "Amount",
-									"Hint": "The amount of quantity to remove. Only used if \"Reduce Quantity\" is enabled and the item is physical."
+									"Label": "Число",
+									"Hint": "Число, которое необходимо удалить. Используется только в том случае, если включена опция \"Уменьшение количества\" и предмет является физическим."
 								},
 								"Items": {
-									"Label": "Items"
+									"Label": "Предметы"
 								}
 							},
 							"set-attribute": {
-								"Title": "Set Attribute",
-								"Description": "Sets the value of an attribute of an actor.",
+								"Title": "Установка характеристики",
+								"Description": "Устанавливает значение характеристики актёра.",
 								"Attribute": {
-									"Label": "Attribute"
+									"Label": "Характеристика"
 								},
 								"Value": {
-									"Label": "Value",
-									"Hint": "The value to set the attribute to."
+									"Label": "Значение",
+									"Hint": "Значение, на которое нужно установить атрибут."
 								},
 								"Bonus": {
-									"Label": "Set Bonus",
-									"Hint": "Whether to set the attribute bonus instead of the attribute itself."
+									"Label": "Установка бонуса",
+									"Hint": "Можно выставить бонус характеристики вместо значения характеристики."
 								}
 							},
 							"set-skill-rank": {
@@ -924,33 +924,33 @@
 									"Label": "Навык"
 								},
 								"Value": {
-									"Label": "Value",
+									"Label": "Значение",
 									"Hint": "Значение, на которое нужно установить ранг навыка."
 								}
 							},
 							"use-item": {
-								"Title": "Use item",
-								"Description": "Uses an item by rolling it.",
+								"Title": "Использование предмета",
+								"Description": "Использует или совершает бросок предмета.",
 								"Target": {
-									"Label": "Target",
+									"Label": "Цель",
 									"Choices": {
-										"self": "Self",
-										"sibling": "Other on same Actor",
-										"global": "Global"
+										"self": "На себя",
+										"sibling": "Другая на том же актёре",
+										"global": "Глобальная"
 									}
 								},
 								"UUID": {
-									"Label": "Item"
+									"Label": "Предмет"
 								},
 								"FastForward": {
-									"Label": "Fast Forward",
-									"Hint": "Whether to skip the roll dialog for the roll."
+									"Label": "Перемотка броска",
+									"Hint": "Пропуск диалогового окна броска."
 								},
 								"AdvantageMode": {
-									"Label": "Advantage Mode"
+									"Label": "Режим преимущества"
 								},
 								"TemporaryDamageModifiers": {
-									"Label": "Damage Bonus",
+									"Label": "Бонус урона",
 									"Hint": "Damage bonus formula to apply to the roll. Only items that can roll damage."
 								}
 							},
@@ -1004,16 +1004,16 @@
 								}
 							},
 							"execute-macro": {
-								"Title": "Execute Macro",
-								"Description": "Executes a macro.",
+								"Title": "Запуск макроса",
+								"Description": "Запускает выполнение макроса.",
 								"MacroType": {
-									"Label": "Macro Type"
+									"Label": "Тип макроса"
 								},
 								"Inline": {
-									"Label": "Inline"
+									"Label": "Скрипт"
 								},
 								"UUID": {
-									"Label": "Macro"
+									"Label": "Макрос"
 								}
 							}
 						},
@@ -1050,31 +1050,31 @@
 				}
 			},
 			"Sheet": {
-				"Basics": "Basics",
+				"Basics": "Основное",
 				"Tabs": {
 					"Description": "Описание",
-					"Effects": "Effects",
-					"Details": "Details",
-					"Talents": "Talents",
-					"Events": "Events"
+					"Effects": "Эффекты",
+					"Details": "Подробности",
+					"Talents": "Таланты",
+					"Events": "События"
 				},
 				"Identifier": {
-					"Label": "Identifier",
-					"Hint": "Used to uniquely identify this {type}. Identifier can only contain letters (a-z), numbers (0-9), dashes (-), and underscores (_)."
+					"Label": "Идентификатор",
+					"Hint": "Уникальный идентификатор для {type}. Может содержать только латинские буквы (a-z), числа (0-9), тире (-) и подчёркивание (_)."
 				},
-				"Type": "Type",
+				"Type": "Тип",
 				"Injury": {
-					"Duration": "Duration",
-					"InitialDuration": "Initial",
-					"RemainingDuration": "Remaining"
+					"Duration": "Длительность",
+					"InitialDuration": "Изначально",
+					"RemainingDuration": "Осталось"
 				},
 				"Ancestry": {
-					"Size": "Size",
-					"Advancement": "Advancement",
+					"Size": "Размер",
+					"Advancement": "Развитие",
 					"FreePath": "Свободный путь",
-					"FreeTalents": "Free Talents",
-					"BonusTalents": "Bonus Talents",
-					"Restrictions": "Restrictions",
+					"FreeTalents": "Свободные таланты",
+					"BonusTalents": "Бонусные таланты",
+					"Restrictions": "Ограничения",
 					"PathReferencePlaceholder": "Drop Path Here to Set Free Path",
 					"TalentIdDescription": "The identifier column should hold the identifier of the talent item you want characters with this Ancestry to have access to. The path identifier can only contain letters (a-z), numbers (0-9), dashes (-), and underscores (_).",
 					"Component": {
@@ -1127,23 +1127,23 @@
 					"AdditionalFormulaDescription": "Введите дополнительные модификаторы, которые вы хотите добавить к d20 броску навыка этого предмета. Это значение является формулой кости, но любая кость, которую вы добавите, не будет доступна в качестве преимущества/помехи. Параметры, которые можно использовать: @mod, @attribute и @skill.rank относятся к значениям выбранных здесь навыков, но также можно получить доступ ко всему списку навыков и характеристик - обратитесь за помощью в Discord!"
 				},
 				"Attack": {
-					"Title": "Attack",
-					"Type": "Attack Type",
-					"Range": "Range",
-					"RangeShort": "Short",
-					"RangeLong": "Long"
+					"Title": "Атака",
+					"Type": "Тип атаки",
+					"Range": "Дистанция",
+					"RangeShort": "Короткая",
+					"RangeLong": "Дальняя"
 				},
 				"Damage": {
-					"Title": "Damage",
-					"Formula": "Damage Formula",
+					"Title": "Урон",
+					"Formula": "Формула урона",
 					"GrazeOverride": "Override Graze Damage Calculation",
 					"GrazeFormula": "New Formula",
 					"GrazeHint": "Formula entered here will be the entirety of the calculation for graze damage. Any die rolls will be rolled separately from the main damage roll. You can pull in all or part of the main roll using @damage.total/@damage.unmodded/@damage.dice (the latter being the system default) or the selected attribute mod with @mod",
 					"ViewGraze": "View Graze Override"
 				},
 				"Modality": {
-					"Title": "Modality",
-					"HasModality": "Has Modality"
+					"Title": "Условие",
+					"HasModality": "Имеет условие"
 				},
 				"Talent": {
 					"PathId": "Идентификатор пути",
@@ -1156,7 +1156,7 @@
 					"AncestryIdPlaceholder": "Идентификатор народа",
 					"AncestryIdDescription": "The identifier of the ancestry this talent belongs to.",
 					"Prerequisites": {
-						"Label": "Prerequisites",
+						"Label": "Требования",
 						"Type": "Type",
 						"Description": "Описание",
 						"Create": "New Prerequisite",
@@ -1246,7 +1246,7 @@
 			"Enhanced": "Enhanced",
 			"Exhausted": "Exhausted",
 			"Flying": "Flying",
-			"Focused": "Focused",
+			"Focused": "Фокусируется",
 			"Hidden": "Hidden",
 			"Immobilized": "Immobilized",
 			"Invisible": "Invisible",
@@ -1326,36 +1326,36 @@
 		},
 		"ChatMessage": {
 			"Buttons": {
-				"DamageFull": "Click to apply full damage to selected token(s).",
-				"DamageHalf": "Click to apply half damage to selected token(s).",
-				"DamageDouble": "Click to apply double damage to selected token(s).",
-				"Healing": "Click to apply healing to selected token(s).",
-				"ReduceFocus": "Click to reduce focus from selected token(s).",
-				"RollCrit": "Click to roll critical damage.",
-				"RollAdvantage": "Click to roll with advantage.",
-				"RollDisadvantage": "Click to roll with disadvantage.",
-				"ApplyInjury": "Click to apply injury to character.",
-				"UndoDamage": "Click to undo damage taken.",
-				"UndoHealing": "Click to undo healing."
+				"DamageFull": "Нанести полный урон выбранным токенам",
+				"DamageHalf": "Нанести половину урона выбранным токенам",
+				"DamageDouble": "Нанести двойной урон выбранным токенам",
+				"Healing": "Исцелить выбранные токены",
+				"ReduceFocus": "Понизить фокусировку выбранных токенов",
+				"RollCrit": "Бросок критического урона",
+				"RollAdvantage": "Бросок с преимуществом",
+				"RollDisadvantage": "Бросок с помехой",
+				"ApplyInjury": "Добавить травму",
+				"UndoDamage": "Отменить урон",
+				"UndoHealing": "Отменить исцеление"
 			},
 			"Trays": {
-				"Targets": "Targets"
+				"Targets": "Цели"
 			},
-			"InjuryRoll": "Injury Roll",
+			"InjuryRoll": "Проверка травмы",
 			"InjuryDuration": {
-				"Dead": "{actor} has <strong>died</strong>.",
-				"Permanent": "{actor} is <strong>permanently injured</strong>.",
-				"Temporary": "{actor} is injured for <strong>{days} days</strong>."
+				"Dead": "{actor} <strong>погибает</strong>.",
+				"Permanent": "{actor} <strong>получает увечье</strong>.",
+				"Temporary": "{actor} получает травму на <strong>{days} дней</strong>."
 			},
-			"ApplyDamage": "{actor} takes <strong>{amount} damage</strong>.",
-			"ApplyHealing": "{actor} recovers <strong>{amount} health</strong>.",
+			"ApplyDamage": "{actor} получает <strong>{amount} урона</strong>.",
+			"ApplyHealing": "{actor} восстанавливает <strong>{amount} здоровья</strong>.",
 			"ModifierDialog": {
-				"DamageTitle": "Modify Damage",
-				"HealingTitle": "Modify Healing",
-				"FocusTitle": "Modify Focus Loss"
+				"DamageTitle": "Изменить урон",
+				"HealingTitle": "Изменить исцеление",
+				"FocusTitle": "Измененить потерю фокусировки"
 			},
-			"DamageCalculation": "Damage Calculation: {calculation}",
-			"ViewRollsDetails": "Roll Details",
+			"DamageCalculation": "Расчёт урона: {calculation}",
+			"ViewRollsDetails": "Подробности броска",
 			"Welcome": "<h2>Welcome to the Cosmere RPG!</h2> <p>Thank you for using the community-developed <strong>Cosmere Roleplaying Game</strong> system! You're running version <strong>{version}</strong>.</p> <p>For news, support, or to connect with other players and developers, join us on the <a href=\"{discordLink}\">Metalworks Discord</a>.</p> <p>If you run into any issues or have suggestions for improvements, please let us know via our <a href=\"{issuesLink}\">GitHub Issues page</a> or by reaching out on Discord. Interested in contributing? Check out our <a href=\"{contributingLink}\">contribution guidelines</a>.</p> <p>We hope you enjoy your journey through the Cosmere!</p>"
 		},
 		"Theme": {
@@ -1564,11 +1564,11 @@
 			"Confirm": "Confirm"
 		},
 		"Notification": {
-			"GrazeFocusSpent": "Reduced focus by 1",
-			"AddedItem": "Added {item}{quantity} to {actor}",
+			"GrazeFocusSpent": "Понизить фокусировку на 1",
+			"AddedItem": "{actor} получает {quantity} {item} ",
 			"IncreasedSkillRank": "Ранг навыка {skill} у {actor} повышен на {amount}",
-			"TalentObtained": "Added talent {talent} to {actor}",
-			"TalentRemoved": "Removed talent {talent} from {actor}",
+			"TalentObtained": "{actor} получает талант {talent} ",
+			"TalentRemoved": "{actor} теряет талант {talent} ",
 			"TalentCannotBeRemoved": "Cannot remove talent {talent} from {actor} as it is a prerequisite for another talent"
 		},
 		"Warning": {
@@ -1578,7 +1578,7 @@
 			"NotEnoughUses": "Cannot consume, not enough uses left",
 			"ItemConsumeResourceNotConfigured": "The resource selected to be consumed is not configured on this item",
 			"NoDuplicateExpertises": "Cannot create duplicate expertise",
-			"NoFocus": "Not enough focus to perform this action",
+			"NoFocus": "Не хватает фокусировки для этого действия.",
 			"TalentCannotBePrerequisiteOfItself": "A talent cannot be a prerequisite of itself",
 			"DuplicatePrerequisiteTalentRef": "A talent with id {talentId} already exists ({talentName})",
 			"ItemAlreadyInTree": "An item with id \"{itemId}\" already exists in the {name} talent tree",
@@ -1589,8 +1589,8 @@
 		},
 		"Enrichers": {
 			"Test": {
-				"Against": "against",
-				"VsDefense": "against the target's",
+				"Against": "против",
+				"VsDefense": "против",
 				"NoSkill": "Навык не выбран"
 			},
 			"Damage": {
@@ -1645,7 +1645,7 @@
 	},
 	"SETTINGS": {
 		"skipRollDialogByDefault": {
-			"name": "Skip Roll Dialog by Default",
+			"name": "Пропуск окна броска",
 			"hint": "If enabled, rolls will skip the roll configuration dialog when clicked, using the default roll configuration. The dialog can still be accessed by holding the 'Skip/Show Dialog' key modifier from the system controls."
 		},
 		"skipDamageModDialogByDefault": {
