@@ -28,7 +28,7 @@
 			"Adversary": {
 				"Adversary": "Противник",
 				"Traits": {
-					"placeholder": "[Черты противника]"
+					"placeholder": "[Свойства противника]"
 				},
 				"Role": {
 					"Minion": "Прислужник",
@@ -196,7 +196,7 @@
 				},
 				"Conditions": {
 					"Label": "Состояния",
-					"StackableConditionTooltip": "ЛКМ: увеличить количество<br>ПКМ: уменьшить количество"
+					"StackableConditionTooltip": "ЛКМ: увеличить число<br>ПКМ: уменьшить число"
 				},
 				"Injuries": {
 					"Label": "Травмы",
@@ -636,7 +636,7 @@
 				"Type": {
 					"Action": "Действие",
 					"SkillTest": "Проверка навыка",
-					"Utility": "Вспомогательное"
+					"Utility": "Применение"
 				},
 				"ConsumeType": {
 					"Resource": {
@@ -936,7 +936,7 @@
 									"Choices": {
 										"self": "На себя",
 										"sibling": "Другая на том же актёре",
-										"global": "Глобальная"
+										"global": "Глобально"
 									}
 								},
 								"UUID": {
@@ -951,43 +951,43 @@
 								},
 								"TemporaryDamageModifiers": {
 									"Label": "Бонус урона",
-									"Hint": "Damage bonus formula to apply to the roll. Only items that can roll damage."
+									"Hint": "Формулу бонусного урона, добавляемая к броску. Только для предметов, которые могут наносить урон."
 								}
 							},
 							"update-actor": {
-								"Title": "Update Actor",
-								"Description": "Updates an actor by applying a set of changes.",
+								"Title": "Обновление актёра",
+								"Description": "Обновить различные параметры актёра.",
 								"Target": {
-									"Label": "Target",
-									"Hint": "The target actor to update. If not set, the item's parent actor will be used.",
+									"Label": "Цель",
+									"Hint": "Целевой актёр для обновления. Если не выбран, то будет использован владелец предмета.",
 									"Choices": {
-										"parent": "Parent Actor",
-										"global": "Global"
+										"parent": "Владелец",
+										"global": "Глобально"
 									}
 								},
 								"UUID": {
-									"Label": "Actor"
+									"Label": "Актёр"
 								},
 								"Changes": {
-									"Label": "Changes"
+									"Label": "Изменения"
 								}
 							},
 							"update-item": {
-								"Title": "Update Item",
-								"Description": "Updates an item by applying a set of changes.",
+								"Title": "Обновление предмета",
+								"Description": "Обновить различные параметры предмета.",
 								"Target": {
-									"Label": "Target",
+									"Label": "Цель",
 									"Choices": {
-										"self": "Self",
-										"sibling": "Other on same Actor",
-										"global": "Global"
+										"self": "На себя",
+										"sibling": "Другая на том же актёре",
+										"global": "Глобально"
 									}
 								},
 								"UUID": {
-									"Label": "Item"
+									"Label": "Предмет"
 								},
 								"MatchMode": {
-									"Label": "Match Mode",
+									"Label": "Режим совпадения",
 									"Hint": "How to match the item to update.\nIdentifier matches by the identifier set under Details.\nName matches by exact name, case sensitive.\nUUID matches only the exact item.",
 									"Choices": {
 										"identifier": "Identifier",
@@ -1075,13 +1075,13 @@
 					"FreeTalents": "Свободные таланты",
 					"BonusTalents": "Бонусные таланты",
 					"Restrictions": "Ограничения",
-					"PathReferencePlaceholder": "Drop Path Here to Set Free Path",
+					"PathReferencePlaceholder": "Перенесите путь для свободного пути",
 					"TalentIdDescription": "The identifier column should hold the identifier of the talent item you want characters with this Ancestry to have access to. The path identifier can only contain letters (a-z), numbers (0-9), dashes (-), and underscores (_).",
 					"Component": {
 						"AdvancementTalentList": {
-							"DropTalent": "Drop Talent here to add to list",
+							"DropTalent": "Перенесите талант в список",
 							"Warning": {
-								"WrongType": "The dropped Document must be of type Talent"
+								"WrongType": "Документ должен являться талантом"
 							}
 						},
 						"BonusTalents": {
@@ -1090,38 +1090,38 @@
 					}
 				},
 				"Specialty": {
-					"PathId": "Path Identifier",
-					"PathIdDescription": "The identifier of the path this specialty belongs to. The path identifier can only contain letters (a-z), numbers (0-9), dashes (-), and underscores (_)."
+					"PathId": "Идентификатор пути",
+					"PathIdDescription": "Уникальный идентификатор пути, к которому принадлежит специализация. Может содержать только латинские буквы (a-z), числа (0-9), тире (-) и подчёркивание (_)."
 				},
 				"Loot": {
 					"IsMoney": "Is Money",
 					"IsMoneyDescription": "Is this loot item a form of currency?"
 				},
 				"Properties": {
-					"Quantity": "Quantity",
-					"Weight": "Weight",
-					"Price": "Price"
+					"Quantity": "Число",
+					"Weight": "Вес",
+					"Price": "Цена"
 				},
 				"Equip": {
-					"Title": "Equipment Details",
-					"AlwaysEquipped": "Always Equipped",
-					"Traits": "Traits",
-					"ExpertTraits": "Expert Traits",
-					"LoseTrait": "Loses [trait]",
+					"Title": "Подробности снаряжения",
+					"AlwaysEquipped": "Всегда надето",
+					"Traits": "Свойства",
+					"ExpertTraits": "Экспертные свойства",
+					"LoseTrait": "Не [trait]",
 					"ModifyTraitValue": "[trait] [[value]] >",
 					"ModifyTraitValueFull": "[trait] [[value]] > [[newValue]]",
-					"ViewTraits": "View Traits"
+					"ViewTraits": "Просмотр свойства"
 				},
 				"Armor": {
 					"DeflectedTypes": "Deflected Damage Types",
 					"ViewDeflected": "View Deflected Types"
 				},
 				"Activation": {
-					"Title": "Usage",
-					"Type": "Activation Type",
-					"Cost": "Activation Cost",
+					"Title": "Использование",
+					"Type": "Тип активации",
+					"Cost": "Цена активации",
 					"Consume": "Расходование ресурса",
-					"Uses": "Limited Uses",
+					"Uses": "Ограниченные использования",
 					"Recharge": "Recharge",
 					"AdditionalFormula": "Roll Formula Extension",
 					"AdditionalFormulaDescription": "Введите дополнительные модификаторы, которые вы хотите добавить к d20 броску навыка этого предмета. Это значение является формулой кости, но любая кость, которую вы добавите, не будет доступна в качестве преимущества/помехи. Параметры, которые можно использовать: @mod, @attribute и @skill.rank относятся к значениям выбранных здесь навыков, но также можно получить доступ ко всему списку навыков и характеристик - обратитесь за помощью в Discord!"
@@ -1148,13 +1148,13 @@
 				"Talent": {
 					"PathId": "Идентификатор пути",
 					"PathIdPlaceholder": "Идентификатор пути",
-					"PathIdDescription": "The identifier of the path this talent belongs to.",
-					"SpecialtyId": "Specialty Identifier",
-					"SpecialtyIdPlaceholder": "Specialty Identifier — Optional",
-					"SpecialtyIdDescription": "The identifier of the specialty this talent belongs to.",
+					"PathIdDescription": "Идентификатор пути к которому принадлежит этот талант.",
+					"SpecialtyId": "Идентификатор специализации",
+					"SpecialtyIdPlaceholder": "Идентификатор специализации - не обязательно",
+					"SpecialtyIdDescription": "Идентификатор специализации к которой принадлежит этот талант.",
 					"AncestryId": "Идентификатор народа",
 					"AncestryIdPlaceholder": "Идентификатор народа",
-					"AncestryIdDescription": "The identifier of the ancestry this talent belongs to.",
+					"AncestryIdDescription": "Идентификатор народа к которому принадлежит этот талант.",
 					"Prerequisites": {
 						"Label": "Требования",
 						"Type": "Type",
@@ -1164,17 +1164,17 @@
 						"Delete": "Remove prerequisite",
 						"TalentId": "Talent Identifier",
 						"TalentIdPlaceholder": "Talent Identifier",
-						"Attribute": "Attribute",
+						"Attribute": "Характеристика",
 						"AttributeValue": "Value",
-						"AttributeValuePlaceholder": "Minimum Attribute Value",
+						"AttributeValuePlaceholder": "Минимальная характеристика",
 						"Skill": "Навык",
 						"SkillRank": "Rank",
 						"SkillRankPlaceholder": "Минимальный ранг навыка",
 						"Connection": "Connection",
 						"ConnectionDescription": "Описание",
 						"ConnectionDescriptionPlaceholder": "Описание связи",
-						"DropTalents": "Drop Talents here to add them to the list.",
-						"DropGoals": "Drop Goals here to add them to the list."
+						"DropTalents": "Перенесите таланты в список",
+						"DropGoals": "Перенесите цели в список"
 					},
 					"GrantRules": {
 						"Description": "Описание",
@@ -1187,14 +1187,14 @@
 					"View": "View"
 				},
 				"Path": {
-					"TalentTreePlaceholder": "Drop Talent Tree Here",
+					"TalentTreePlaceholder": "Перенесите древо талантов",
 					"NoTalentsConfigured": "No Talents Configured"
 				},
 				"TalentsProvider": {
 					"Title": "Talents",
 					"TalentTree": {
-						"Label": "Talent Tree",
-						"Hint": "Talent tree that contains all talents for this path. This tree is displayed on the \"talents\" tab."
+						"Label": "Древо талантов",
+						"Hint": "Древо, содержащее все таланты этого пути. Древо отображается на вкладке \"Таланты\"."
 					}
 				}
 			},
@@ -1207,34 +1207,34 @@
 		},
 		"Attack": {
 			"Type": {
-				"Melee": "Melee",
-				"Ranged": "Ranged"
+				"Melee": "Ближняя",
+				"Ranged": "Дистанционная"
 			}
 		},
 		"DamageTypes": {
-			"Energy": "Energy",
-			"Impact": "Impact",
-			"Keen": "Keen",
-			"Spirit": "Spirit",
-			"Vital": "Vital",
-			"Healing": "Healing"
+			"Energy": "Энергетический",
+			"Impact": "Ударный",
+			"Keen": "Острый",
+			"Spirit": "Духовный",
+			"Vital": "Жизненный",
+			"Healing": "Исцеление"
 		},
 		"Paths": {
 			"Types": {
 				"Heroic": {
-					"Label": "Heroic"
+					"Label": "Героический"
 				}
 			}
 		},
 		"Currencies": {},
 		"Combat": {
-			"FastPlayers": "Fast Characters",
-			"SlowPlayers": "Slow Characters",
-			"FastAdversaries": "Fast Adversaries",
-			"SlowAdversaries": "Slow Adversaries",
-			"ToggleTurn": "Toggle Turn Speed",
-			"ResetActivation": "Reset Activation",
-			"Activate": "Mark as Acted"
+			"FastPlayers": "Быстрые персонажи",
+			"SlowPlayers": "Медленные персонажи",
+			"FastAdversaries": "Быстрые противники",
+			"SlowAdversaries": "Медленные противники",
+			"ToggleTurn": "Переключение скорости",
+			"ResetActivation": "Сброс активации",
+			"Activate": "Завершил ход"
 		},
 		"Status": {
 			"Afflicted": "Afflicted",
@@ -1267,22 +1267,22 @@
 				"Edit": "Изменить описание"
 			},
 			"Effects": {
-				"Label": "Effects",
-				"Inactive": "Inactive Effects",
-				"Passive": "Passive Effects",
-				"Temporary": "Temporary Effects",
+				"Label": "Эффекты",
+				"Inactive": "Неактивные эффекты",
+				"Passive": "Пассивные эффекты",
+				"Temporary": "Временные эффекты",
 				"Source": "Источник",
-				"Enable": "Enable Effect",
-				"Disable": "Disable Effect",
-				"Duration": "Duration",
-				"Create": "New Effect",
-				"Edit": "Edit Effect",
-				"Delete": "Remove Effect",
-				"ToggleActive": "Toggle Active"
+				"Enable": "Включить эффект",
+				"Disable": "Выключить эффект",
+				"Duration": "Длительность",
+				"Create": "Новый эффект",
+				"Edit": "Изменить эффект",
+				"Delete": "Удалить эффект",
+				"ToggleActive": "Активация"
 			},
 			"Talents": {
 				"Label": "Talents",
-				"AtLevel": "At Level",
+				"AtLevel": "На уровне",
 				"Add": "New Talent",
 				"Edit": "Edit Talent",
 				"Delete": "Remove Talent",
@@ -1369,10 +1369,10 @@
 		}
 	},
 	"DICE": {
-		"RollMode": "Roll Mode",
+		"RollMode": "Режим броска",
 		"Plot": {
 			"Die": "Plot Die",
-			"RaiseTheStakes": "Raise the Stakes",
+			"RaiseTheStakes": "Пойти на риск",
 			"Complication": "Осложнение",
 			"Opportunity": "Потенциал"
 		},
@@ -1388,12 +1388,12 @@
 			"Full": "Full"
 		},
 		"TemporaryBonus": {
-			"Label": "Temporary Bonus",
+			"Label": "Временный бонус",
 			"Hint": "Введите опциональную формулу, которая будет применяться в качестве временного модификатора к этой проверке навыка."
 		}
 	},
 	"ROLLS": {
-		"Recovery": "[character] rolls their recovery die.",
+		"Recovery": "[character] совершает проверку восстановления.",
 		"RecoveryTend": "Tended to by [tender]."
 	},
 	"DIALOG": {
@@ -1401,9 +1401,9 @@
 			"Title": "Расходование ресурса",
 			"ShouldConsume": {
 				"None": "None",
-				"Static": "Consume {amount} {resource}?",
+				"Static": "Израсходовать {amount} {resource}?",
 				"RangeCapped": "Consume {min}-{max} {resource}:",
-				"RangeUncapped": "Consume {amount} or more {resource}:"
+				"RangeUncapped": "Расходование {amount} или больше {resource}:"
 			}
 		},
 		"EditExpertise": {
@@ -1425,7 +1425,7 @@
 			"TendedToBy": "Tended to by"
 		},
 		"ConfigureDefense": {
-			"Title": "Configure {attribute-group} Defense: {actor}"
+			"Title": "Настройка {attribute-group} защиты: {actor}"
 		},
 		"ConfigureMovementRate": {
 			"Title": "Configure Movement Rate: {actor}"
@@ -1444,7 +1444,7 @@
 			"Title": "Edit Prerequisite"
 		},
 		"ConfigureRoll": {
-			"Title": "Configure Rolls",
+			"Title": "Настройка броска",
 			"Hint": "Left click or right click any individual die to apply advantage or disadvantage respectively."
 		},
 		"ConfigureAttack": {
@@ -1458,7 +1458,7 @@
 		},
 		"EditBonusTalentsRule": {
 			"Title": "Edit Bonus Talents Rule",
-			"Quantity": "Amount",
+			"Quantity": "Число",
 			"Warning": {
 				"DuplicateLevel": "A rule for level {level} already exists"
 			}
@@ -1467,18 +1467,18 @@
 			"Title": "Cosmere Roleplaying Game - Release Notes"
 		},
 		"ConfigureTalentTree": {
-			"Title": "Configure Talent Tree: {name}",
+			"Title": "Настройка древа талантов: {name}",
 			"Warning": {
-				"OutOfBounds": "The selected bounds would place at least one talent outside the tree."
+				"OutOfBounds": "Выбранные границы будут иметь как минимум один талант за пределами древа."
 			},
 			"Notification": {}
 		},
 		"PickDiceResult": {
 			"Title": "Pick Result",
 			"Header": "Left to Pick:",
-			"SelectRoll": "Select Roll",
+			"SelectRoll": "Выбор броска",
 			"Error": {
-				"TooManyPicked": "Cannot pick more than {max} roll(s)!"
+				"TooManyPicked": "Нельзя выбрать более {max} бросков!"
 			}
 		},
 		"EditEventRule": {
@@ -1487,28 +1487,28 @@
 	},
 	"COMPONENT": {
 		"DocumentReferenceInput": {
-			"Placeholder": "Drop {type} here to create reference",
+			"Placeholder": "Перенесите {type} для создания ссылки",
 			"Warning": {
-				"WrongType": "The dropped Document must be of type {type}",
-				"WrongSubtype": "The dropped {type} must be of type {subtype}"
+				"WrongType": "Документ должен являться {type}",
+				"WrongSubtype": "{type} должен являться {subtype}"
 			}
 		},
 		"DocumentDropListComponent": {
-			"Placeholder": "Drop {type} here to add to list",
+			"Placeholder": "Перенесите {type} в список",
 			"Warning": {
-				"DocumentAlreadyInList": "The dropped {type} is already in the list",
-				"WrongType": "The dropped Document must be of type {type}",
-				"WrongSubtype": "The dropped {type} must be of type {subtype}"
+				"DocumentAlreadyInList": "{type} уже в списке",
+				"WrongType": "Документ должен являться {type}",
+				"WrongSubtype": "{type} должен являться {subtype}"
 			}
 		},
 		"MultiValueSelect": {
-			"DefaultPlaceholder": "Select Option"
+			"DefaultPlaceholder": "Выбор"
 		},
 		"DocumentChangesList": {
 			"Header": {
-				"Key": "Attribute Key",
-				"Mode": "Change Mode",
-				"Value": "Value"
+				"Key": "Ключ свойства",
+				"Mode": "Режим изменения",
+				"Value": "Значение"
 			},
 			"Add": "Add Change",
 			"Remove": "Remove Change"
@@ -1536,8 +1536,8 @@
 		"Cost": "Cost",
 		"Configure": "Настройки",
 		"DistanceUnit": "ft.",
-		"ViewDetails": "View Details",
-		"HideDetails": "Hide Details",
+		"ViewDetails": "Показать подробности",
+		"HideDetails": "Скрыть подробности",
 		"Bonus": "Bonus",
 		"Mode": "Mode",
 		"Turns": "Turns",
@@ -1552,7 +1552,7 @@
 		"Talent": "Talent",
 		"Goal": "Goal",
 		"Button": {
-			"Roll": "Roll",
+			"Roll": "Бросок",
 			"Continue": "Continue",
 			"Remove": "Remove",
 			"Edit": "Edit",
@@ -1573,7 +1573,7 @@
 		},
 		"Warning": {
 			"NotImplemented": "Sorry! [action] is not implemented yet",
-			"NoActor": "No selected or assigned actor found for this roll",
+			"NoActor": "Для броска нужно выбрать или привязать актёра.",
 			"NotEnoughResource": "Cannot consume, not enough of resource",
 			"NotEnoughUses": "Cannot consume, not enough uses left",
 			"ItemConsumeResourceNotConfigured": "The resource selected to be consumed is not configured on this item",
@@ -1581,7 +1581,7 @@
 			"NoFocus": "Не хватает фокусировки для этого действия.",
 			"TalentCannotBePrerequisiteOfItself": "A talent cannot be a prerequisite of itself",
 			"DuplicatePrerequisiteTalentRef": "A talent with id {talentId} already exists ({talentName})",
-			"ItemAlreadyInTree": "An item with id \"{itemId}\" already exists in the {name} talent tree",
+			"ItemAlreadyInTree": "Талант \"{itemId}\" уже существует в древе {name}",
 			"ActorConditionImmune": "{actor} is immune to {condition}"
 		},
 		"Error": {
