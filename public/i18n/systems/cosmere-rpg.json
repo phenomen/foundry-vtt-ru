@@ -120,12 +120,12 @@
 			},
 			"Statistics": {
 				"Defense": "Защита",
-				"SensesRange": "Чувства",
+				"SensesRange": "Чутьё",
 				"MovementRate": "Перемещение",
 				"LiftingCapactiy": "Нагрузка",
 				"RecoveryDie": "Восстановление",
 				"Deflect": "Поглощение",
-				"NoObscuredSense": "Не подвержено влиянию затруднённых чувств.",
+				"NoObscuredSense": "Не подвержен влиянию затруднённого чутья.",
 				"Immunities": "Невосприимчивость"
 			},
 			"Deflect": {
@@ -234,10 +234,10 @@
 				"ToggleCollapseSkills": "Скрывать навыки без рангов",
 				"ConfigureDefense": "Настройка защиты",
 				"ConfigureDeflect": "Настройка поглощения",
-				"ConfigureMovement": "Настройка перемещения",
-				"ConfigureSensesRange": "Настройка чувств",
-				"ConfigureRecovery": "Настройка восстановления",
-				"RollInjury": "Бросок на травму",
+				"ConfigureMovement": "Настройка скорости перемещения",
+				"ConfigureSensesRange": "Настройка дистанции чутья",
+				"ConfigureRecovery": "Настройка кости восстановления",
+				"RollInjury": "Проверка травмы",
 				"ImmuneTo": "Невосприимчивость к {condition}",
 				"Tabs": {
 					"Details": "Подробности",
@@ -987,20 +987,20 @@
 									"Label": "Предмет"
 								},
 								"MatchMode": {
-									"Label": "Режим совпадения",
-									"Hint": "How to match the item to update.\nIdentifier matches by the identifier set under Details.\nName matches by exact name, case sensitive.\nUUID matches only the exact item.",
+									"Label": "Режим сопоставления",
+									"Hint": "Как сопоставить предмет для обновления.\nИдентификатор соответствует идентификатору, заданному в разделе \"Подробности\".\nНазвание соответствует точному названию, с учетом регистра.\nUUID соответствует только точному элементу.",
 									"Choices": {
-										"identifier": "Identifier",
-										"name": "Name",
+										"identifier": "Идентификатор",
+										"name": "Название",
 										"uuid": "UUID"
 									}
 								},
 								"MatchAll": {
-									"Label": "Match All",
-									"Hint": "Whether to match all items or just the first one encountered."
+									"Label": "Сопоставление всех",
+									"Hint": "Найти сопоставление всех предметов или только первого."
 								},
 								"Changes": {
-									"Label": "Changes"
+									"Label": "Изменения"
 								}
 							},
 							"execute-macro": {
@@ -1019,34 +1019,34 @@
 						},
 						"General": {
 							"Target": {
-								"Label": "Target",
+								"Label": "Цель",
 								"Choices": {
-									"self": "Self",
-									"sibling": "Other on same Actor",
-									"equipped-weapon": "Equipped Weapon",
-									"equipped-armor": "Equipped Armor",
-									"global": "Global"
+									"self": "На себя",
+									"sibling": "Другая на том же актёре",
+									"equipped-weapon": "Надетое оружие",
+									"equipped-armor": "Надетая броня",
+									"global": "Глобально"
 								}
 							},
 							"MatchMode": {
-								"Label": "Match Mode",
-								"Hint": "How to match the item.\nIdentifier matches by the identifier set under Details.\nName matches by exact name, case sensitive.\nUUID matches only the exact item.",
+								"Label": "Режим сопоставления",
+								"Hint": "Как сопоставить предмет.\nИдентификатор соответствует идентификатору, заданному в разделе \"Подробности\".\nНазвание соответствует точному названию, с учетом регистра.\nUUID соответствует только точному элементу.",
 								"Choices": {
-									"identifier": "Identifier",
-									"name": "Name",
+									"identifier": "Идентификатор",
+									"name": "Название",
 									"uuid": "UUID"
 								}
 							},
 							"MatchAll": {
-								"Label": "Match All",
-								"Hint": "Whether to match all items or just the first one encountered."
+								"Label": "Сопоставление всех",
+								"Hint": "Найти сопоставление всех предметов или только первого."
 							}
 						}
 					}
 				},
 				"Notification": {
-					"ExceededMaxDepth": "Exceeded maximum event chain depth. Aborting event execution.",
-					"RecentEventsExceeded": "Exceeded maximum number of \"{eventType}\" events in a short period of time. Aborting event execution."
+					"ExceededMaxDepth": "Превышена максимальная глубина цепочки событий. Выполнение событий прервано.",
+					"RecentEventsExceeded": "Превышено максимальное количество событий \"{eventType}\" за короткий промежуток времени. Выполнение событий прервано."
 				}
 			},
 			"Sheet": {
@@ -1076,7 +1076,7 @@
 					"BonusTalents": "Бонусные таланты",
 					"Restrictions": "Ограничения",
 					"PathReferencePlaceholder": "Перенесите путь для свободного пути",
-					"TalentIdDescription": "The identifier column should hold the identifier of the talent item you want characters with this Ancestry to have access to. The path identifier can only contain letters (a-z), numbers (0-9), dashes (-), and underscores (_).",
+					"TalentIdDescription": "В колонке \"Идентификатор\" должен быть указан идентификатор таланта, к которому персонажи с этим народом будут иметь доступ. Может содержать только латинские буквы (a-z), числа (0-9), тире (-) и подчёркивание (_).",
 					"Component": {
 						"AdvancementTalentList": {
 							"DropTalent": "Перенесите талант в список",
@@ -1085,7 +1085,7 @@
 							}
 						},
 						"BonusTalents": {
-							"Add": "New Rule"
+							"Add": "Новое правило"
 						}
 					}
 				},
@@ -1094,8 +1094,8 @@
 					"PathIdDescription": "Уникальный идентификатор пути, к которому принадлежит специализация. Может содержать только латинские буквы (a-z), числа (0-9), тире (-) и подчёркивание (_)."
 				},
 				"Loot": {
-					"IsMoney": "Is Money",
-					"IsMoneyDescription": "Is this loot item a form of currency?"
+					"IsMoney": "Деньги",
+					"IsMoneyDescription": "Является ли эта добыча формой валюты."
 				},
 				"Properties": {
 					"Quantity": "Число",
@@ -1113,8 +1113,8 @@
 					"ViewTraits": "Просмотр свойства"
 				},
 				"Armor": {
-					"DeflectedTypes": "Deflected Damage Types",
-					"ViewDeflected": "View Deflected Types"
+					"DeflectedTypes": "Поглощаемые типы урона",
+					"ViewDeflected": "Просмотр поглощаемых типов"
 				},
 				"Activation": {
 					"Title": "Использование",
@@ -1122,8 +1122,8 @@
 					"Cost": "Цена активации",
 					"Consume": "Расходование ресурса",
 					"Uses": "Ограниченные использования",
-					"Recharge": "Recharge",
-					"AdditionalFormula": "Roll Formula Extension",
+					"Recharge": "Перезарядка",
+					"AdditionalFormula": "Расширение формулы броска",
 					"AdditionalFormulaDescription": "Введите дополнительные модификаторы, которые вы хотите добавить к d20 броску навыка этого предмета. Это значение является формулой кости, но любая кость, которую вы добавите, не будет доступна в качестве преимущества/помехи. Параметры, которые можно использовать: @mod, @attribute и @skill.rank относятся к значениям выбранных здесь навыков, но также можно получить доступ ко всему списку навыков и характеристик - обратитесь за помощью в Discord!"
 				},
 				"Attack": {
@@ -1136,10 +1136,10 @@
 				"Damage": {
 					"Title": "Урон",
 					"Formula": "Формула урона",
-					"GrazeOverride": "Override Graze Damage Calculation",
-					"GrazeFormula": "New Formula",
-					"GrazeHint": "Formula entered here will be the entirety of the calculation for graze damage. Any die rolls will be rolled separately from the main damage roll. You can pull in all or part of the main roll using @damage.total/@damage.unmodded/@damage.dice (the latter being the system default) or the selected attribute mod with @mod",
-					"ViewGraze": "View Graze Override"
+					"GrazeOverride": "Перезапись расчёта урона касания",
+					"GrazeFormula": "Новая формула",
+					"GrazeHint": "Формула, введенная здесь, будет использоваться для расчёта урона от касания. Любые броски костей будут брошены отдельно от основного броска урона. Вы можете получить весь или часть основного броска, используя @damage.total/@damage.unmodded/@damage.dice (последний вариант используется по умолчанию) или выбранный модификатор характеристики с помощью @mod",
+					"ViewGraze": "Просмотр перезаписи касания"
 				},
 				"Modality": {
 					"Title": "Условие",
@@ -1157,20 +1157,20 @@
 					"AncestryIdDescription": "Идентификатор народа к которому принадлежит этот талант.",
 					"Prerequisites": {
 						"Label": "Требования",
-						"Type": "Type",
+						"Type": "Тип",
 						"Description": "Описание",
-						"Create": "New Prerequisite",
-						"Edit": "Edit prerequisite",
-						"Delete": "Remove prerequisite",
-						"TalentId": "Talent Identifier",
-						"TalentIdPlaceholder": "Talent Identifier",
+						"Create": "Новое требование",
+						"Edit": "Изменить требование",
+						"Delete": "Удалить требование",
+						"TalentId": "Идентификатор таланта",
+						"TalentIdPlaceholder": "Идентификатор таланта",
 						"Attribute": "Характеристика",
-						"AttributeValue": "Value",
+						"AttributeValue": "Значение",
 						"AttributeValuePlaceholder": "Минимальная характеристика",
 						"Skill": "Навык",
-						"SkillRank": "Rank",
+						"SkillRank": "Ранг",
 						"SkillRankPlaceholder": "Минимальный ранг навыка",
-						"Connection": "Connection",
+						"Connection": "Связь",
 						"ConnectionDescription": "Описание",
 						"ConnectionDescriptionPlaceholder": "Описание связи",
 						"DropTalents": "Перенесите таланты в список",
@@ -1178,20 +1178,20 @@
 					},
 					"GrantRules": {
 						"Description": "Описание",
-						"Create": "New rule",
-						"Edit": "Edit rule",
-						"Delete": "Remove rule"
+						"Create": "Новое правило",
+						"Edit": "Изменить правило",
+						"Delete": "Удалить правило"
 					}
 				},
 				"TalentTree": {
-					"View": "View"
+					"View": "Просмотр"
 				},
 				"Path": {
 					"TalentTreePlaceholder": "Перенесите древо талантов",
-					"NoTalentsConfigured": "No Talents Configured"
+					"NoTalentsConfigured": "Таланты не настроены"
 				},
 				"TalentsProvider": {
-					"Title": "Talents",
+					"Title": "Таланты",
 					"TalentTree": {
 						"Label": "Древо талантов",
 						"Hint": "Древо, содержащее все таланты этого пути. Древо отображается на вкладке \"Таланты\"."
@@ -1237,33 +1237,33 @@
 			"Activate": "Завершил ход"
 		},
 		"Status": {
-			"Afflicted": "Afflicted",
-			"Blind": "Senseblind",
-			"Burrowing": "Burrowing",
-			"Determined": "Determined",
-			"Disoriented": "Disoriented",
-			"Empowered": "Empowered",
-			"Enhanced": "Enhanced",
-			"Exhausted": "Exhausted",
-			"Flying": "Flying",
-			"Focused": "Фокусируется",
-			"Hidden": "Hidden",
-			"Immobilized": "Immobilized",
-			"Invisible": "Invisible",
-			"Prone": "Prone",
-			"Restrained": "Restrained",
-			"Slowed": "Slowed",
-			"Stunned": "Stunned",
-			"Surprised": "Surprised",
-			"Unconscious": "Unconscious",
-			"Dead": "Dead"
+			"Afflicted": "Недуг",
+			"Blind": "Слепота",
+			"Burrowing": "Копание",
+			"Determined": "Решимость",
+			"Disoriented": "Дезориентация",
+			"Empowered": "Пробуждение",
+			"Enhanced": "Усиление",
+			"Exhausted": "Утомление",
+			"Flying": "Полёт",
+			"Focused": "Фокусировка",
+			"Hidden": "Скрытность",
+			"Immobilized": "Неподвижность",
+			"Invisible": "Невидимость",
+			"Prone": "Распластанность",
+			"Restrained": "Обездвиженность",
+			"Slowed": "Замедление",
+			"Stunned": "Ошеломление",
+			"Surprised": "Замешательство",
+			"Unconscious": "Без сознания",
+			"Dead": "Смерть"
 		},
 		"Sheet": {
 			"Descriptions": {
 				"DescriptionHeader": "Описание",
 				"ShortHeader": "Краткое описание",
 				"ChatHeader": "Описание в чате",
-				"Collapsible": "Toggle Collapsible",
+				"Collapsible": "Разворачивание",
 				"Edit": "Изменить описание"
 			},
 			"Effects": {
@@ -1281,19 +1281,19 @@
 				"ToggleActive": "Активация"
 			},
 			"Talents": {
-				"Label": "Talents",
+				"Label": "Таланты",
 				"AtLevel": "На уровне",
-				"Add": "New Talent",
-				"Edit": "Edit Talent",
-				"Delete": "Remove Talent",
-				"Cancel": "Discard Changes",
-				"Submit": "Finish Editing"
+				"Add": "Новый талант",
+				"Edit": "Изменить талант",
+				"Delete": "Удалить талант",
+				"Cancel": "Сбросить изменения",
+				"Submit": "Применить"
 			},
 			"TalentPicks": {
-				"Edit": "Edit",
-				"Delete": "Remove",
-				"Cancel": "Discard Changes",
-				"Submit": "Finish Editing"
+				"Edit": "Изменить",
+				"Delete": "Удалить",
+				"Cancel": "Применить",
+				"Submit": "Завершить"
 			}
 		},
 		"Attribute": {
@@ -1356,36 +1356,36 @@
 			},
 			"DamageCalculation": "Расчёт урона: {calculation}",
 			"ViewRollsDetails": "Подробности броска",
-			"Welcome": "<h2>Welcome to the Cosmere RPG!</h2> <p>Thank you for using the community-developed <strong>Cosmere Roleplaying Game</strong> system! You're running version <strong>{version}</strong>.</p> <p>For news, support, or to connect with other players and developers, join us on the <a href=\"{discordLink}\">Metalworks Discord</a>.</p> <p>If you run into any issues or have suggestions for improvements, please let us know via our <a href=\"{issuesLink}\">GitHub Issues page</a> or by reaching out on Discord. Interested in contributing? Check out our <a href=\"{contributingLink}\">contribution guidelines</a>.</p> <p>We hope you enjoy your journey through the Cosmere!</p>"
+			"Welcome": "<h2>Добро пожаловать в ролевую игру по вселенной Космера!</h2> <p>Спасибо, что используете разработанную сообществом систему <strong>Cosmere Roleplaying Game {version}</strong>!</p> <p>Чтобы узнать новости, получить поддержку или пообщаться с игроками и разработчиками, присоединяйтесь к нам в <a href=\"{discordLink}\">Metalworks Discord</a>.</p> <p>Если Вы столкнулись с какими-либо проблемами или у вас есть предложения по улучшению, пожалуйста, сообщите нам об этом на нашей <a href=\"{issuesLink}\">странице \"Issues\" на GitHub</a> или в Discord. Хотите внести свой вклад? Ознакомьтесь с нашими <a href=\"{contributingLink}\">рекомендациями по разработке</a>.</p> <p>Мы надеемся, что вам понравится путешествие по Космеру!</p>"
 		},
 		"Theme": {
-			"Default": "Cosmere"
+			"Default": "Космер"
 		},
 		"Damage": {
-			"IgnoreDeflect": "Ignore Deflect"
+			"IgnoreDeflect": "Не поглощается"
 		},
 		"Migration": {
-			"DocumentMigrationFailed": "Failed to migrate {type} \"{name}\". {error}"
+			"DocumentMigrationFailed": "Не удалось мигрировать {type} \"{name}\". {error}"
 		}
 	},
 	"DICE": {
 		"RollMode": "Режим броска",
 		"Plot": {
-			"Die": "Plot Die",
+			"Die": "Сюжетная кость",
 			"RaiseTheStakes": "Пойти на риск",
 			"Complication": "Осложнение",
 			"Opportunity": "Потенциал"
 		},
 		"AdvantageMode": {
-			"None": "None",
-			"Advantage": "Advantage",
-			"Disadvantage": "Disadvantage"
+			"None": "Нет",
+			"Advantage": "Преимущество",
+			"Disadvantage": "Помеха"
 		},
 		"Damage": {
-			"Label": "Damage",
-			"Apply": "Apply",
-			"Graze": "Graze",
-			"Full": "Full"
+			"Label": "Урон",
+			"Apply": "Применить",
+			"Graze": "Касание",
+			"Full": "Полный"
 		},
 		"TemporaryBonus": {
 			"Label": "Временный бонус",
@@ -1394,77 +1394,77 @@
 	},
 	"ROLLS": {
 		"Recovery": "[character] совершает проверку восстановления.",
-		"RecoveryTend": "Tended to by [tender]."
+		"RecoveryTend": "[tender] занимается лечением."
 	},
 	"DIALOG": {
 		"ItemConsume": {
 			"Title": "Расходование ресурса",
 			"ShouldConsume": {
-				"None": "None",
+				"None": "Нет",
 				"Static": "Израсходовать {amount} {resource}?",
-				"RangeCapped": "Consume {min}-{max} {resource}:",
+				"RangeCapped": "Расходование {min}-{max} {resource}:",
 				"RangeUncapped": "Расходование {amount} или больше {resource}:"
 			}
 		},
 		"EditExpertise": {
-			"Remove": "Remove",
-			"Add": "Add Custom Expertise",
-			"AddPlaceholder": "Custom Expertise",
+			"Remove": "Удалить",
+			"Add": "Добавить особое умение",
+			"AddPlaceholder": "Особое умение",
 			"Warning": {
-				"MaxExpertises": "Can only select up to {max} expertises."
+				"MaxExpertises": "Можно выбрать не более {max} умений."
 			}
 		},
 		"ConfigureResource": {
-			"Title": "Configure Max {resource}: {actor}"
+			"Title": "Настройка максимума {resource}: {actor}"
 		},
 		"LongRest": {
-			"ShouldPerform": "Perform Long Rest?"
+			"ShouldPerform": "Совершить долгий отдых?"
 		},
 		"ShortRest": {
-			"Title": "Short Rest",
-			"TendedToBy": "Tended to by"
+			"Title": "Короткий отдых",
+			"TendedToBy": "Занимается лечением:"
 		},
 		"ConfigureDefense": {
 			"Title": "Настройка {attribute-group} защиты: {actor}"
 		},
 		"ConfigureMovementRate": {
-			"Title": "Configure Movement Rate: {actor}"
+			"Title": "Настройка скорости перемещения: {actor}"
 		},
 		"ConfigureSensesRange": {
-			"Title": "Configure Senses Range: {actor}",
-			"IgnoreObscure": "Ignores Obscured"
+			"Title": "Настройка дистанции чутья: {actor}",
+			"IgnoreObscure": "Игнорирование заслонения"
 		},
 		"ConfigureRecoveryDie": {
-			"Title": "Configure Recovery Die: {actor}"
+			"Title": "Настройка кости восстановления: {actor}"
 		},
 		"ConfigureDeflect": {
-			"Title": "Configure Deflect: {actor}"
+			"Title": "Настройка поглощения: {actor}"
 		},
 		"EditTalentPrerequisite": {
-			"Title": "Edit Prerequisite"
+			"Title": "Изменить требование"
 		},
 		"ConfigureRoll": {
 			"Title": "Настройка броска",
-			"Hint": "Left click or right click any individual die to apply advantage or disadvantage respectively."
+			"Hint": "ЛКМ или ПКМ, чтобы применить преимущество или помеху."
 		},
 		"ConfigureAttack": {
 			"AdvantageMode": {
-				"Title": "Advantage Mode",
+				"Title": "Режим преимущества",
 				"Field": {
-					"Type": "Type",
-					"Dice": "Dice"
+					"Type": "Тип",
+					"Dice": "Кость"
 				}
 			}
 		},
 		"EditBonusTalentsRule": {
-			"Title": "Edit Bonus Talents Rule",
+			"Title": "Изменение правила бонусного таланта",
 			"Quantity": "Число",
 			"Warning": {
-				"DuplicateLevel": "A rule for level {level} already exists"
+				"DuplicateLevel": "Правило для уровня {level} уже существует"
 			}
 		},
 		"ReleaseNotes": {
-			"Title": "Cosmere Roleplaying Game - Release Notes"
+			"Title": "Космер НРИ - Список изменений"
 		},
 		"ConfigureTalentTree": {
 			"Title": "Настройка древа талантов: {name}",
@@ -1474,15 +1474,15 @@
 			"Notification": {}
 		},
 		"PickDiceResult": {
-			"Title": "Pick Result",
-			"Header": "Left to Pick:",
+			"Title": "Выбор результата",
+			"Header": "Осталось:",
 			"SelectRoll": "Выбор броска",
 			"Error": {
 				"TooManyPicked": "Нельзя выбрать более {max} бросков!"
 			}
 		},
 		"EditEventRule": {
-			"Title": "Edit Event Rule"
+			"Title": "Изменение правила события"
 		}
 	},
 	"COMPONENT": {
@@ -1510,58 +1510,58 @@
 				"Mode": "Режим изменения",
 				"Value": "Значение"
 			},
-			"Add": "Add Change",
-			"Remove": "Remove Change"
+			"Add": "Добавить изменение",
+			"Remove": "Удалить изменение"
 		}
 	},
 	"GENERIC": {
-		"Unknown": "Unknown",
-		"None": "None",
-		"Custom": "Custom",
-		"Default": "Default",
-		"Document": "Document",
-		"Formula": "Formula",
-		"Value": "Value",
-		"Modifier": "Modifier",
-		"DC": "DC",
+		"Unknown": "Неизвестно",
+		"None": "Нет",
+		"Custom": "Особое",
+		"Default": "По умолчанию",
+		"Document": "Документ",
+		"Formula": "Формула",
+		"Value": "Значение",
+		"Modifier": "Модификатор",
+		"DC": "СЛ",
 		"Skill": "Навык",
-		"Attribute": "Attribute",
+		"Attribute": "Характеристика",
 		"SkillTest": "Проверка навыка",
-		"Test": "Test",
-		"Plot": "Plot",
-		"Damage": "Damage",
-		"Healing": "Healing",
-		"Immune": "Immune",
-		"Condition": "Condition",
-		"Cost": "Cost",
+		"Test": "Проверка",
+		"Plot": "Сюжет",
+		"Damage": "Урон",
+		"Healing": "Исцеление",
+		"Immune": "Невосприимчивость",
+		"Condition": "Состояние",
+		"Cost": "Цена",
 		"Configure": "Настройки",
-		"DistanceUnit": "ft.",
+		"DistanceUnit": "фт",
 		"ViewDetails": "Показать подробности",
 		"HideDetails": "Скрыть подробности",
-		"Bonus": "Bonus",
-		"Mode": "Mode",
-		"Turns": "Turns",
-		"Rounds": "Rounds",
-		"Clear": "Clear",
-		"Name": "Name",
-		"Image": "Image",
-		"Level": "Level",
-		"Add": "Add",
-		"Type": "Type",
+		"Bonus": "Бонус",
+		"Mode": "Режим",
+		"Turns": "Ходы",
+		"Rounds": "Раунды",
+		"Clear": "Очистить",
+		"Name": "Название",
+		"Image": "Изображение",
+		"Level": "Уровень",
+		"Add": "Добавить",
+		"Type": "Тип",
 		"Description": "Описание",
-		"Talent": "Talent",
-		"Goal": "Goal",
+		"Talent": "Талант",
+		"Goal": "Цель",
 		"Button": {
 			"Roll": "Бросок",
-			"Continue": "Continue",
-			"Remove": "Remove",
-			"Edit": "Edit",
-			"Save": "Save",
-			"Cancel": "Cancel",
-			"Update": "Update",
-			"RemoveFavorite": "Remove Favorite",
-			"Favorite": "Favorite",
-			"Confirm": "Confirm"
+			"Continue": "Продолжить",
+			"Remove": "Удалить",
+			"Edit": "Изменить",
+			"Save": "Сохранить",
+			"Cancel": "Отменить",
+			"Update": "Обновить",
+			"RemoveFavorite": "Удалить избранное",
+			"Favorite": "Добавить избранное",
+			"Confirm": "Подтвердить"
 		},
 		"Notification": {
 			"GrazeFocusSpent": "Понизить фокусировку на 1",
@@ -1569,23 +1569,23 @@
 			"IncreasedSkillRank": "Ранг навыка {skill} у {actor} повышен на {amount}",
 			"TalentObtained": "{actor} получает талант {talent} ",
 			"TalentRemoved": "{actor} теряет талант {talent} ",
-			"TalentCannotBeRemoved": "Cannot remove talent {talent} from {actor} as it is a prerequisite for another talent"
+			"TalentCannotBeRemoved": "Не удалось удалить талант {talent} у {actor}, т.к. он является требованием другого таланта"
 		},
 		"Warning": {
-			"NotImplemented": "Sorry! [action] is not implemented yet",
-			"NoActor": "Для броска нужно выбрать или привязать актёра.",
-			"NotEnoughResource": "Cannot consume, not enough of resource",
-			"NotEnoughUses": "Cannot consume, not enough uses left",
-			"ItemConsumeResourceNotConfigured": "The resource selected to be consumed is not configured on this item",
-			"NoDuplicateExpertises": "Cannot create duplicate expertise",
+			"NotImplemented": "Извините! [action] пока ещё не работает",
+			"NoActor": "Для броска нужно выбрать или привязать актёра",
+			"NotEnoughResource": "Не удалось израсходовать, не достаточно ресурса",
+			"NotEnoughUses": "Не удалось израсходовать, не достаточно использований",
+			"ItemConsumeResourceNotConfigured": "На этом предмете не настроен ресурс для расходования",
+			"NoDuplicateExpertises": "Нельзя создать дубликат умения",
 			"NoFocus": "Не хватает фокусировки для этого действия.",
-			"TalentCannotBePrerequisiteOfItself": "A talent cannot be a prerequisite of itself",
-			"DuplicatePrerequisiteTalentRef": "A talent with id {talentId} already exists ({talentName})",
+			"TalentCannotBePrerequisiteOfItself": "Талант не может быть требованием у самого себя",
+			"DuplicatePrerequisiteTalentRef": "Талант с id {talentId} уже существует ({talentName})",
 			"ItemAlreadyInTree": "Талант \"{itemId}\" уже существует в древе {name}",
-			"ActorConditionImmune": "{actor} is immune to {condition}"
+			"ActorConditionImmune": "{actor} невосприимчив к {condition}"
 		},
 		"Error": {
-			"RegisteringConfigs": "Error while registering configs. Check console for details."
+			"RegisteringConfigs": "Ошибка при регистрации конфигурации. Подробнее в консоли."
 		},
 		"Enrichers": {
 			"Test": {
@@ -1594,29 +1594,29 @@
 				"NoSkill": "Навык не выбран"
 			},
 			"Damage": {
-				"NoFormula": "No Formula or Dice Terms Provided",
-				"NoType": "No Damage Type Provided",
-				"DoubleType": "Damage Type Defined More Than Once",
-				"BadType": "Damage Type Not Supported"
+				"NoFormula": "Нет формулы или указания костей",
+				"NoType": "Нет типа урона",
+				"DoubleType": "Тип урона указан несколько раз",
+				"BadType": "Тип урона не поддерживается"
 			},
 			"Lookup": {
-				"NoPath": "No Lookup Path Provided"
+				"NoPath": "Не указан путь поиска"
 			},
-			"Error": "ENRICHER ERROR"
+			"Error": "ОШИБКА ENRICHER"
 		},
 		"DerivedValue": {
 			"Mode": {
-				"Derived": "Derived",
-				"Override": "Custom"
+				"Derived": "Производный",
+				"Override": "Особый"
 			}
 		},
 		"Units": {
-			"Days": "Days"
+			"Days": "Дни"
 		}
 	},
 	"TYPES": {
 		"Actor": {
-			"character": "Character",
+			"character": "Персонаж",
 			"adversary": "Противник"
 		},
 		"Item": {
@@ -1646,33 +1646,33 @@
 	"SETTINGS": {
 		"skipRollDialogByDefault": {
 			"name": "Пропуск окна броска",
-			"hint": "If enabled, rolls will skip the roll configuration dialog when clicked, using the default roll configuration. The dialog can still be accessed by holding the 'Skip/Show Dialog' key modifier from the system controls."
+			"hint": "Окно настроек броска будет пропущено и будут использованы опции по умолчанию. Окно можно вызвать, удерживая клавишу-модификатор 'Пропуск/отображение окна'."
 		},
 		"skipDamageModDialogByDefault": {
-			"name": "Skip Damage Modifier Dialog by Default",
-			"hint": "If enabled, the damage/healing card in chat will skip the modifier dialog when clicked, using the value shown in the card directly. The dialog can still be accessed by holding the 'Skip/Show Dialog' key modifier from the system controls."
+			"name": "Пропуск окна модификатора урона",
+			"hint": "Окно настроек урона/исцеления будет пропущено и будут использованы значения из карточки чата. Окно можно вызвать, удерживая клавишу-модификатор 'Пропуск/отображение окна'."
 		},
 		"enableOverlayButtons": {
-			"name": "Enable Overlay Buttons",
+			"name": "Включение функциональных кнопок",
 			"hint": "При выводе проверки навыка или броска урона, в сообщении чата будут дополнительные функциональные кнопки."
 		},
 		"enableApplyButtons": {
-			"name": "Enable Apply Buttons",
-			"hint": "When outputting a damage roll, enable buttons on the chat message that allow for damage or healing to be applied to tokens, or to reduce focus from those tokens."
+			"name": "Включение функциональных кнопок",
+			"hint": "При броске уроне, на карточке чата будут отображаться кнопки, позволяющие наносить урон, исцелять или понижать фокусировку."
 		},
 		"alwaysShowApplyButtons": {
-			"name": "Always Show Apply Buttons",
-			"hint": "When outputting a damage roll always show the apply buttons, instead of only on hover."
+			"name": "Всегда отображать функциональные кнопки",
+			"hint": "При броске урона, кнопки урона будут видны всегда, а не только при наведении на сообщение в чате."
 		},
 		"applyButtonsTo": {
-			"name": "Apply Button Options",
-			"hint": "Determines which tokens damage, healing, or focus reduction is applied to when applying via the chat card buttons.",
+			"name": "Настройки функциональных кнопок",
+			"hint": "Определяет какие токены получают урон, лечение или фокусировку при нажатии на функциональные кнопки на карточках чата.",
 			"choices": {
-				"SelectedOnly": "Apply to Selected Tokens",
-				"TargetedOnly": "Apply to Targeted Tokens",
-				"SelectedAndTargeted": "Apply to Both",
-				"PrioritiseSelected": "Prioritise Selected Tokens",
-				"PrioritiseTargeted": "Prioritise Targeted Tokens"
+				"SelectedOnly": "Применить в выбранным токенам",
+				"TargetedOnly": "Применить в нацеленным токенам",
+				"SelectedAndTargeted": "Применить ко всем",
+				"PrioritiseSelected": "Приоритет выбранных токенов",
+				"PrioritiseTargeted": "Приоритет нацеленных токенов"
 			}
 		},
 		"expandDescriptionByDefault": {
@@ -1684,15 +1684,15 @@
 			"hint": "При включении, навыки будут повышаться ЛКМ и понижаться ПКМ, вместо клика по рангу."
 		},
 		"systemTheme": {
-			"name": "Preferred System Theme",
-			"hint": "Specify the themed set of colours to use for system documents and interface elements. The selected theme will respect the preferred Dark/Light mode selected in the core settings."
+			"name": "Предпочтительная тема",
+			"hint": "Укажите цветовую схему, которая будет использоваться для элементов интерфейса. Выбранная тема будет учитывать предпочтительный тёмный/светлый режим, выбранный в основных настройках."
 		}
 	},
 	"KEYBINDINGS": {
-		"skipDialogDefault": "Skip/Show Dialog",
-		"skipDialogAdvantage": "Skip Dialog with Advantage",
-		"skipDialogDisadvantage": "Skip Dialog with Disadvantage",
-		"skipDialogRaiseStakes": "Skip Dialog with Raise Stakes",
+		"skipDialogDefault": "Пропуск/отображение окна",
+		"skipDialogAdvantage": "Пропуск окна с преимуществом",
+		"skipDialogDisadvantage": "Пропуск окна с помехой",
+		"skipDialogRaiseStakes": "Пропуск окна с риском",
 		"changeQuantity5": "Увеличить/уменьшить количество на 5",
 		"changeQuantity10": "Увеличить/уменьшить количество на 10",
 		"changeQuantity50": "Увеличить/уменьшить количество на 50"
