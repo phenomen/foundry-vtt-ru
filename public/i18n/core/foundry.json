@@ -487,116 +487,145 @@
 	"CHAT.PrivateRollContent": "{user} скрыто бросил кости",
 	"CHAT.UnknownUser": "Неизвестный участник",
 
-	"COMBAT.NavLabel": "Навигация в бою",
-	"COMBAT.Begin": "Начать бой",
-	"COMBAT.Create": "Создать бой",
-	"COMBAT.Delete": "Удалить бой",
-	"COMBAT.Encounter": "Бой",
-	"COMBAT.EncounterPrevious": "Активация предыдущего боя",
-	"COMBAT.EncounterNext": "Активация следующего боя",
-	"COMBAT.End": "Конец боя",
-	"COMBAT.InitiativeRoll": "Проверка инициативы",
-	"COMBAT.InitiativeReset": "Сброс инициативы",
-	"COMBAT.ClearMovementHistories": "Очистка истории перемещений",
-	"COMBAT.InitiativeScore": "Инициатива",
-	"COMBAT.EndTitle": "Завершить бой?",
-	"COMBAT.EndConfirmation": "Завершить этот бой и очистить очередь ходов?",
-	"COMBAT.Linked": "Бой прикреплён к сцене, нажмите для открепления",
-	"COMBAT.None": "Нет боя",
-	"COMBAT.NoneActive": "На текущей сцене нет активного боя.",
-	"COMBAT.NoneRemaining": "В бою не осталось бойцов, которые не были побеждены.",
-	"COMBAT.NotStarted": "Не в бою",
-	"COMBAT.PanToCombatant": "Переместиться к бойцу",
-	"COMBAT.PingCombatant": "Маячок на бойце",
-	"COMBAT.WarnNonVisibleToken": "Этот боец вам не виден.",
-	"COMBAT.Round": "Раунд {round}",
-	"COMBAT.Rounds": "Раунды",
-	"COMBAT.RoundPrev": "Предыдущий раунд",
-	"COMBAT.RoundNext": "Следующий раунд",
-	"COMBAT.RollNPC": "Бросок для NPC",
-	"COMBAT.RollAll": "Бросок для всех",
-	"COMBAT.RollsInitiative": "{name} проверяет инициативу!",
-	"COMBAT.Settings": "Настройки трекера боя",
-	"COMBAT.SettingsSave": "Сохранить настройки",
-	"COMBAT.SidebarTitle": "Трекер боя",
-	"COMBAT.Sounds.Epic": "Эпик",
-	"COMBAT.Sounds.MC": "Комментатор боя",
-	"COMBAT.ToggleVis": "Переключение видимости",
-	"COMBAT.ToggleDead": "Отметить побеждённым",
-	"COMBAT.Turn": "Ход",
-	"COMBAT.Turns": "Ходы",
-	"COMBAT.TurnEnd": "Конец хода",
-	"COMBAT.TurnNext": "Следующий ход",
-	"COMBAT.TurnPrev": "Предыдущий ход",
-	"COMBAT.UnknownCombatant": "Неизвестный боец",
-	"COMBAT.Unlinked": "Бой откреплён от сцены, нажмите для прикрепления",
-	"COMBAT.CannotLinkToScene": "Вы не можете привязать бой к сцене, которая не содержит всех бойцов.",
-
-	"COMBAT.CombatantActor": "Представляет актёра",
-	"COMBAT.CombatantCreate": "Создать бойца",
-	"COMBAT.CombatantDefeated": "Побеждён",
-	"COMBAT.CombatantHidden": "Скрытый",
-	"COMBAT.CombatantImage": "Эскиз",
-	"COMBAT.CombatantInitiative": "Значение инициативы",
-	"COMBAT.CombatantStatus": "Статус",
-	"COMBAT.CombatantUpdate": "Настройка бойца",
-	"COMBAT.CombatantUpdateNamed": "Обновить бойца: {name}",
-	"COMBAT.CombatantName": "Отображаемое имя",
-	"COMBAT.CombatantRemove": "Удалить бойца",
-	"COMBAT.CombatantClear": "Очистка инициативы",
-	"COMBAT.CombatantReroll": "Переброс инициативы",
-	"COMBAT.CombatantClearMovementHistory": "Очистка истории перемещений",
-	"COMBAT.CombatantMovementHistoryCleared": "История перемещений для \"{name}\" очищена.",
-	"COMBAT.CombatantToken": "Связанный токен",
-	"COMBAT.CombatantScene": "Сцена боя",
-	"COMBAT.CombatantNotInScene": "Боец {name} отсутствует на текущей сцене",
-
-	"COMBAT.FIELDS": {
-		"round.label": "Раунд",
-		"turn.label": "Ход"
-	},
-
-	"COMBAT.TURN_MARKERS": {
-		"ANIMATIONS": {
-			"SPIN": "Вращение",
-			"SPIN_PULSE": "Вращение с импульсом",
-			"PULSE": "Импульс"
-		}
-	},
-	"COMBAT.CONFIG": {
-		"SHEET": {
-			"TURN_MARKERS": "Метка хода токена"
+	"COMBAT": {
+		"NavLabel": "Навигация в бою",
+		"Begin": "Начать бой",
+		"Create": "Создать бой",
+		"Delete": "Удалить бой",
+		"Encounter": "Бой",
+		"EncounterPrevious": "Активация предыдущего боя",
+		"EncounterNext": "Активация следующего боя",
+		"End": "Завершить бой",
+		"InitiativeRoll": "Бросок инициативы",
+		"InitiativeReset": "Сброс инициативы",
+		"ClearMovementHistories": "Очистка истории перемещений",
+		"InitiativeScore": "Инициатива",
+		"EndTitle": "Завершить бой?",
+		"EndConfirmation": "Завершить бой и очистить очередь ходов?",
+		"None": "Нет боя",
+		"NoneActive": "В текущей сцене нет активных боёв.",
+		"NoneRemaining": "В бою не осталось участников, которые не были побеждены.",
+		"NotStarted": "не начат",
+		"PanToCombatant": "Переместиться к бойцу",
+		"PingCombatant": "Маячок на бойце",
+		"WarnNonVisibleToken": "Этот боец вам не виден.",
+		"Round": "Раунд {round}",
+		"Rounds": "Раунды",
+		"RoundPrev": "Предыдущий раунд",
+		"RoundNext": "Следующий раунд",
+		"RollNPC": "Бросок для NPC",
+		"RollAll": "Бросок для всех",
+		"RollsInitiative": "{name} проверяет инициативу!",
+		"Settings": "Настройки трекера боя",
+		"SettingsSave": "Сохранить настройки",
+		"SidebarTitle": "Трекер боя",
+		"Sounds": {
+			"Epic": "Эпик",
+			"MC": "Комментатор боя"
+		},
+		"ToggleVis": "Видимость",
+		"ToggleDead": "Отметить побеждённым",
+		"Turn": "Ход",
+		"Turns": "Ходы",
+		"TurnEnd": "Завершить ход",
+		"TurnNext": "Следующий ход",
+		"TurnPrev": "Предыдущий ход",
+		"UnknownCombatant": "Неизвестный участник",
+		"CannotLinkToScene": "Вы не можете привязать бой к сцене, которая не содержит всех бойцов.",
+		"CombatantActor": "Связанный актёр",
+		"CombatantCreate": "Создать бойца",
+		"CombatantDefeated": "Побеждённый",
+		"CombatantHidden": "Скрытый",
+		"CombatantImage": "Эскиз",
+		"CombatantInitiative": "Инициатива",
+		"CombatantStatus": "Статус участника",
+		"CombatantUpdate": "Обновить участника",
+		"CombatantUpdateNamed": "Обновить бойца: {name}",
+		"CombatantName": "Отображаемое имя",
+		"CombatantRemove": "Удалить участника",
+		"CombatantClear": "Очистка инициативы",
+		"CombatantReroll": "Переброс инициативы",
+		"CombatantClearMovementHistory": "Очистка истории перемещений",
+		"CombatantMovementHistoryCleared": "История перемещений для \"{name}\" очищена.",
+		"CombatantToken": "Связанный токен",
+		"CombatantScene": "Сцена боя",
+		"CombatantNotInScene": "Участник {name} отсутствует на текущей сцене.",
+		"ACTIONS": {
+			"LinkToScene": "Прикрепить к текущей сцене",
+			"UnlinkFromScene": "Открепить от сцены"
+		},
+		"DURATION": {
+			"ROUNDS": {
+				"one": "Раунд",
+				"two": "Раунда",
+				"few": "Раунда",
+				"many": "Раундов",
+				"other": "Раундов"
+			},
+			"TURNS": {
+				"one": "Ход",
+				"two": "Хода",
+				"few": "Хода",
+				"many": "Ходов",
+				"other": "Ходов"
+			},
+			"None": "Нет"
 		},
 		"FIELDS": {
-			"core.combatTrackerConfig": {
-				"skipDefeated": {
-					"label": "Пропуск побеждённых",
-					"hint": "Автоматически пропускать побеждённых бойцов."
-				},
-				"resource": {
-					"label": "Отслеживаемый ресурс",
-					"hint": "Выберите параметр для отслеживания."
-				},
-				"turnMarker": {
-					"enabled": {
-						"label": "Включение меток",
-						"hint": "Метки хода будут включены по умолчанию для всех токенов."
+			"round": {
+				"label": "Раунд"
+			},
+			"turn": {
+				"label": "Ход"
+			}
+		},
+		"TURN_MARKERS": {
+			"ANIMATIONS": {
+				"SPIN": "Вращение",
+				"SPIN_PULSE": "Вращение с импульсом",
+				"PULSE": "Импульс"
+			}
+		},
+		"CONFIG": {
+			"SHEET": {
+				"TURN_MARKERS": "Метка хода токена"
+			},
+			"FIELDS": {
+				"core.combatTrackerConfig": {
+					"skipDefeated": {
+						"label": "Пропуск побеждённых",
+						"hint": "Автоматически пропускать побеждённых бойцов."
 					},
-					"src": {
-						"label": "Файл",
-						"hint": "Изображение или видео для меток хода."
+					"resource": {
+						"label": "Отслеживаемый ресурс",
+						"hint": "Выберите параметр для отслеживания."
 					},
-					"animation": {
-						"label": "Анимация",
-						"hint": "Анимация для меток хода."
-					},
-					"disposition": {
-						"label": "Оттенок отношения",
-						"hint": "Оттенок меток хода в зависимости от отношения токена."
+					"turnMarker": {
+						"enabled": {
+							"label": "Включение меток",
+							"hint": "Метки хода будут включены по умолчанию для всех токенов."
+						},
+						"src": {
+							"label": "Файл",
+							"hint": "Изображение или видео для меток хода."
+						},
+						"animation": {
+							"label": "Анимация",
+							"hint": "Анимация для меток хода."
+						},
+						"disposition": {
+							"label": "Оттенок отношения",
+							"hint": "Оттенок меток хода в зависимости от отношения токена."
+						}
 					}
 				}
 			}
-		}
+		},
+		"PingInvisibleToken": "Вы не видите токен этого участника.",
+		"ResourceHint": "Выберите ресурс для отслеживания.",
+		"SkipDefeatedHint": "Автоматически пропускать побеждённых участников боя.",
+		"TargetedBy": "Выбран целью: {list}",
+		"ToggleTargeting": "Нацеливание"
 	},
 
 	"COMPENDIUM.Name": "Название библиотеки",
@@ -628,6 +657,10 @@
 	},
 	"COMPENDIUM.ImportEntry": "Импорт записи",
 	"COMPENDIUM.Locked": "{title} [Заблокирована]",
+	"COMPENDIUM.Migration": {
+		"Begin": "Производится миграция библиотеки {collection}, пожалуйста подождите.",
+		"Complete": "Библиотека {collection} успешно мигрирована."
+	},
 	"COMPENDIUM.SidebarTitle": "Библиотеки",
 	"COMPENDIUM.Type": "Тип документа",
 	"COMPENDIUM.TypeHint": "Каждая библиотека содержит определённый тип документов.",
@@ -1353,6 +1386,7 @@
 		"UNLOCK": "Разблокировка панели действий",
 		"PAGE_NEXT": "Следующая панель",
 		"PAGE_PREV": "Предыдущая панель",
+		"EMPTY": "Пустая ячейка",
 		"CLEAR": "Очистка панели действий",
 		"CLEAR_CONFIRM": "Очистить все действия на панели?"
 	},
