@@ -9,12 +9,14 @@
 
 	"TYPES.Actor.character": "Персонаж игрока",
 	"TYPES.Actor.characterPl": "Персонажи игроков",
+	"TYPES.Actor.encounter": "Сцена",
+	"TYPES.Actor.encounterPl": "Сцены",
+	"TYPES.Actor.group": "Группа",
+	"TYPES.Actor.groupPl": "Группы",
 	"TYPES.Actor.npc": "Персонаж Мастера",
 	"TYPES.Actor.npcPl": "Персонажи Мастера",
 	"TYPES.Actor.vehicle": "Транспорт",
 	"TYPES.Actor.vehiclePl": "Транспорт",
-	"TYPES.Actor.group": "Группа",
-	"TYPES.Actor.groupPl": "Группы",
 
 	"TYPES.ActiveEffect.enchantment": "Зачарование",
 	"TYPES.ActiveEffect.enchantmentPl": "Зачарования",
@@ -195,7 +197,7 @@
 				"Label": "День"
 			},
 			"Encounter": {
-				"Label": "Начало боя"
+				"Label": "Начало сцены"
 			},
 			"Hour": {
 				"Header": "Часы",
@@ -245,6 +247,7 @@
 	},
 
 	"DND5E.ACTIVEEFFECT": {
+		"AttributeKeyTooltip": "Список ключей можно найти в <a href=\"{url}\">wiki</a>.",
 		"FIELDS": {
 			"statuses": {
 				"label": "Состояния",
@@ -292,8 +295,15 @@
 		}
 	},
 
-	"DND5E.ActorWarningInvalidItem": "{itemType} не может быть добавлен к {actorType}.",
-	"DND5E.ActorWarningSingleton": "Только один {itemType} может быть добавлен к {actorType}.",
+	"DND5E.ACTOR": {
+		"Warning": {
+			"CreateActor": "У вас должны быть права на создание новых актёров, чтобы призывать существ из библиотеки.",
+			"InvalidItem": "{itemType} не может быть добавлен к {actorType}.",
+			"NoActor": "Актёр для призыва с UUID '{uuid}' не найден.",
+			"Singleton": "Только один {itemType} может быть добавлен к {actorType}."
+		}
+	},
+
 	"DND5E.ActiveEffectOverrideWarning": "Значение было изменено активным эффектом и не может быть отредактировано. Сначала отключите эффект.",
 	"DND5E.Add": "Доб.",
 	"DND5E.AdditionalControls": "Дополнительное управление",
@@ -1265,6 +1275,7 @@
 		},
 		"Filters": {
 			"Label": "Фильтр",
+			"Grouped": "{type} ({group})",
 			"HasDarkvision": "Есть ночное зрение",
 			"HasSpellcasting": "Есть заклинания",
 			"SearchResults": "Результаты поиска"
@@ -2051,6 +2062,23 @@
 		}
 	},
 
+	"DND5E.ENCOUNTER": {
+		"Action": {
+			"Award": "Опыт и деньги"
+		},
+		"Difficulty": {
+			"high": "Высокая сложность",
+			"low": "Низкая сложность",
+			"moderate": "Обычная сложность"
+		},
+		"DropCreature": "Перенесите существо",
+		"Tab": {
+			"Description": "Описание",
+			"Loot": "Добыча",
+			"Members": "Участники"
+		}
+	},
+
 	"DND5E.Environment": "Среда",
 
 	"DND5E.EQUIPMENT": {
@@ -2099,6 +2127,7 @@
 		"Current": "Текущие ПО",
 		"Format": "{value} ПО",
 		"Label": "Пункты опыта",
+		"Pool": "Бюджет ПО",
 		"Progress": "До следующего уровня",
 		"StatBlock": {
 			"Standard": "{value} ПО",
@@ -2554,7 +2583,23 @@
 	"DND5E.GroupSummaryEmpty": "Пустая группа",
 	"DND5E.GroupControls": "Управление",
 	"DND5E.Group": {
+		"Action": {
+			"Remove": "Удалить участника",
+			"View": "Просмотр участника"
+		},
+		"Config": {
+			"Art": {
+				"Label": "Изображение участника",
+				"portraits": "Портреты",
+				"tokens": "Токены"
+			},
+			"Legend": "Настройки бланка группы"
+		},
 		"Challenge": "Опасность",
+		"Distribute": {
+			"noxp": "Распределить деньги",
+			"xp": "Распределить ПО и деньги"
+		},
 		"Member": {
 			"one": "участника",
 			"other": "участников"
@@ -2565,7 +2610,7 @@
 			"Set": "Сделать основной группой"
 		},
 		"Type": "Тип группы",
-		"TypeEncounter": "Бой",
+		"TypeEncounter": "Сцена",
 		"TypeGeneric": "Общая группа",
 		"TypeParty": "Группа персонажей",
 		"Vehicle": {
@@ -2661,6 +2706,9 @@
 		"Counted": {
 			"one": "{number} пункт здоровья",
 			"other": "{number} пунктов здоровья"
+		},
+		"DT": {
+			"Abbr": "ПП"
 		}
 	},
 
@@ -2684,6 +2732,7 @@
 	"DND5E.HPFormulaRollMessage": "Формула броска пунктов здоровья",
 
 	"DND5E.HITDICE": {
+		"Abbreviation": "КЗ",
 		"Action": {
 			"Decrease": "Понижение",
 			"Increase": "Повышение"
@@ -2946,6 +2995,7 @@
 	},
 
 	"DND5E.Level": "Уровень",
+	"DND5E.LevelAvg": "Средний ур.",
 	"DND5E.LevelPl": "Уровни",
 	"DND5E.LevelActionDecrease": "Понижение уровня",
 	"DND5E.LevelActionIncrease": "Повышение уровня",
@@ -3449,6 +3499,7 @@
 		"ClassSummary": "Бланк класса 5e",
 		"Container": "Бланк контейнера 5e",
 		"DifficultTerrain": "Бланк пересечённой местности 5e",
+		"Encounter": "Бланк сцены 5e",
 		"Group": "Бланк группы 5e",
 		"Item": "Бланк предмета 5e",
 		"JournalEntry": "Бланк журнала 5e",
@@ -3530,6 +3581,7 @@
 	"DND5E.SkillSlt": "Ловкость рук",
 	"DND5E.SkillSte": "Скрытность",
 	"DND5E.SkillSur": "Выживание",
+	"DND5E.SkillRoll": "Проверка {ability} ({skill})",
 	"DND5E.SkillPromptTitle": "Проверка {ability} ({skill})",
 	"DND5E.SkillConfigureTitle": "Настройка {skill}",
 	"DND5E.SkillConfigure": "Настройка навыка",
@@ -3777,6 +3829,7 @@
 	"DND5E.SubclassMismatchWarn": "Подкласс {name} не имеет соответствующего класса '{class}'.",
 	"DND5E.SubclassName": "Подкласс",
 	"DND5E.Subtype": "Подтип",
+	"DND5E.Summary": "Информация",
 
 	"DND5E.SUMMON": {
 		"Title": "Призыв",
@@ -3915,8 +3968,6 @@
 			"EmptyDrop": "Нажмите на <i class=\"fas fa-plus\"></i>, чтобы создать профиль или перенесите сюда существо для призыва."
 		},
 		"Warning": {
-			"CreateActor": "У вас должны быть права на создание новых актёров, чтобы призывать существ из библиотеки.",
-			"NoActor": "Актёр для призыва с UUID '{uuid}' не найден.",
 			"NoOwnership": "У вас должны быть права владения '{actor}' для призыва.",
 			"NoProfile": "Не удалось найти профиль призыва {profileId} у '{item}'.",
 			"Wildcard": "У вас должны быть права на Использование проводника файлов, чтобы использовать случайное изображение токена призванного существа."
@@ -4425,6 +4476,10 @@
 				"other": {
 					"label": "Прочие настройки"
 				},
+				"spellLists": {
+					"hint": "Заклинания из этих списков сохранятся, если у актёра есть совпадающий предмет.",
+					"label": "Сохраненные списки заклинаний"
+				},
 				"tempFormula": {
 					"hint": "Формула временных ПЗ, которая будет добавлена к превращению.",
 					"label": "Формула врем. ПЗ"
@@ -4502,6 +4557,15 @@
 			"NoPermission": "Разрешение на превращение не предоставлено игрокам.",
 			"OriginalActor": "Не найден оригинальный актёр с ID '{reference}'.",
 			"SourceActor": "Не найден актёр для превращения."
+		}
+	},
+
+	"DND5E.Travel": {
+		"Label": "Темп путешествия",
+		"Pace": {
+			"Fast": "Быстрый",
+			"Normal": "Обычный",
+			"Slow": "Медленный"
 		}
 	},
 
@@ -5154,10 +5218,10 @@
 			"None": "Никогда"
 		},
 		"COLLAPSETRAYS": {
-			"Name": "Сворачивание деталей в чате",
-			"Hint": "Автоматически сворачивать детали урона, попаданий и эффектов в карточках чата.",
+			"Name": "Сворачивть подробности в чате",
+			"Hint": "Автоматически сворачивать подробности урона, попаданий и эффектов в карточках чата.",
 			"Always": "Сворачивать всё",
-			"Older": "Сворачивать старые детали",
+			"Older": "Сворачивать старые",
 			"Never": "Сворачивать после использования",
 			"Manual": "Никогда не сворачивать"
 		},
@@ -5303,7 +5367,7 @@
 		"VISIBILITY": {
 			"Hint": "Настройки, отвечающие за видимость игровой информации игроками.",
 			"Label": "Настройка видимости",
-			"Name": "Видимость",
+			"Name": "Видимость информации",
 			"Attack": {
 				"Name": "Видимость результата атаки",
 				"Hint": "Видимость результатов бросков атаки в карточках чата для игроков.",
