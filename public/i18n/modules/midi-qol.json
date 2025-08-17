@@ -20,6 +20,7 @@
 	"midi-qol.requiresTargetsOptions": {
 		"none": "Никогда",
 		"combat": "В бою",
+		"tokens": "Токены на сцене",
 		"always": "Всегда"
 	},
 	"midi-qol.AutoApplyDamage.Name": "Автонанесение урона цели",
@@ -72,7 +73,6 @@
 	"midi-qol.noTemplateSeen": "Шаблон не был размещён",
 	"midi-qol.AutoTarget.Name": "Автовыбор целей при размещении шаблона",
 	"midi-qol.AutoTarget.Hint": "When placing a template (e.g. spell) auto target tokens inside the template. If 'Center + Levels' is set in ranged targeting Levels Volumetric Templates will be used (if installed)",
-	"midi-qol._comment for translators_noDamageOnSaveSpells": "In foundry v9 the array json element is no longer supported, so only the v9 version will be used",
 	"midi-qol.undoDamageFrom": "Отменить нанесенный урон от",
 	"midi-qol.noGM": "Мастер не в игре и без него нельзя применять эффекты или изменять ПЗ",
 	"midi-qol.noSelection": "Не выбран токен/актёр",
@@ -131,6 +131,8 @@
 	"midi-qol.MergeCard.Hint": "Объединить атаку, попадание, урон и испытания в одну карточку чата.",
 	"midi-qol.MergeCardCondensed.Name": "Сжимать броски атаки/урона",
 	"midi-qol.MergeCardCondensed.Hint": "Сэкономить немного места в журнале чата, сделав броски атаки и урона меньше.",
+	"midi-qol.DisplayItemProperties.Name": "Display Item Properties",
+	"midi-qol.DisplayItemProperties.Hint": "Display item properties in the chat card. Disabling saves some chat card space.",
 	"midi-qol.ConfigTitle": "Настройки MidiQOL",
 	"midi-qol.WorkflowSettings": "Настройки рабочего процесса",
 	"midi-qol.CheckSaveText.Name": "Проверять описание предмета",
@@ -176,7 +178,8 @@
 	"midi-qol.autoCheckHitOptions": {
 		"none": "Нет",
 		"all": "Проверять — все видят результат",
-		"whisper": "Проверять — только Мастер видит результат"
+		"whisper": "Проверять — только Мастер видит результат",
+		"gmOnly": "Проверять — только Мастер видит всё"
 	},
 	"midi-qol.clickOptions": {
 		"off": "Выкл.",
@@ -198,8 +201,9 @@
 		"none": "Выкл.",
 		"allNoRoll": "Испытание — все видят только результат",
 		"all": "Испытание — все видят результат и общее значение",
-		"whisper": "Испытание — только Мастер видит результат",
-		"allShow": "Испытание — все видят результат и броски"
+		"allShow": "Испытание — все видят результат и броски",
+		"whisper": "Save - only GM sees results + rolls",
+		"gmOnly": "Save - only GM sees anything"
 	},
 	"midi-qol.rangeTargetOptions": {
 		"none": "Нет",
@@ -317,19 +321,6 @@
 	"midi-qol.ForceHideRoll.Hint": "Не отображать ничего тем, кто не является получателем бросков с типами: приватный/слепой/для себя",
 	"midi-qol.EnableWorkflow.Name": "Включить поддержку автоматизации бросков",
 	"midi-qol.EnableWorkflow.Hint": "Если автоматизация бросков включена, её можно настроить в панели настроек рабочего процесса.",
-	"midi-qol.magicalProp": "Магический",
-	"midi-qol.confirmTargetsProp": "Подтверждение целей",
-	"midi-qol.noDamageSaveProp": "Нет урона при успехе",
-	"midi-qol.fullDamageSaveProp": "Полный урон при успехе",
-	"midi-qol.defaultDamageType": "midi-none",
-	"midi-qol.halfDamageSaveProp": "Половина урона при успехе",
-	"midi-qol.rollOtherProp": "Также бросать альтернативный",
-	"midi-qol.otherCritProp": "Альтернативный критический",
-	"midi-qol.magicalDamageProp": "Магический урон",
-	"midi-qol.magicalEffectProp": "Магический эффект",
-	"midi-qol.concentrationEffectProp": "Концентрация",
-	"midi-qol.noConcentrationEffectProp": "Без концентрации",
-	"midi-qol.toggleEffectProp": "Toggle effect (Deprecated)",
 	"midi-qol.playerControlsInvisibleTokens.Name": "Игроки контролируют принадлежащие им скрытые токены",
 	"midi-qol.playerControlsInvisibleTokens.Hint": "Экспериментальная опция — может сработать.",
 	"midi-qol.Debug.Name": "Включить отладку",
@@ -343,6 +334,7 @@
 		"preItemRoll": "Вызывается перед броском предмета (*)",
 		"templatePlaced": "Вызывается только при размещении шаблона",
 		"preAttackRoll": "Перед броском атаки",
+		"preAttackRollConfig": "Before Attack Configuration",
 		"preCheckHits": "Перед проверкой попадания",
 		"postAttackRoll": "После броска атаки",
 		"preDamageRoll": "Перед броском урона",
@@ -350,7 +342,8 @@
 		"damageBonus": "Возвращать бонус урона",
 		"preSave": "До испытаний",
 		"postSave": "После испытаний",
-		"preDamageApplication": "Перед подтверждением нанесения урона",
+		"preDamageRollConfig": "Перед настройкой урона",
+		"preDamageApplication": "Перед нанесением урона",
 		"preActiveEffects": "Перед активными эффектами",
 		"postActiveEffects": "После активных эффектов",
 		"isTargeted": "Target is targeted but before item is rolled",
@@ -361,9 +354,9 @@
 		"isSave": "Target rolled a save",
 		"isSaveSuccess": "Target rolled a successful save",
 		"isSaveFailure": "target failed a saving throw",
-		"preTargetDamageApplication": "Target is about to be damaged by an item",
+		"preTargetDamageApplication": "Цель получит урон от предмета",
 		"postTargetEffectApplication": "Target has an effect applied by a rolled item",
-		"isDamaged": "Target is damaged by an attack",
+		"isDamaged": "Цель получила урон от атаки",
 		"all": "Всё"
 	},
 	"midi-qol.DragDropTarget.Name": "Нацеливание перетаскиванием",
@@ -523,7 +516,7 @@
 	"midi-qol.DefaultSaveMult.Name": "Множитель испытания по умолчанию",
 	"midi-qol.DefaultSaveMult.Hint": "Если нет других модификаторов, испытания будут наносить эту долю урона от первоначальной атаки. По умолчанию 0.5, половина урона при испытании. Вы должны изменять это значение, только если знаете, как работают множители.",
 	"midi-qol.RequireMagical.Name": "Требуется свойство 'Магическое'",
-	"midi-qol.RequireMagical.Hint": "Magical Property is either the dnd5e property <strong>Magical</strong> or the <strong>midi-qol Magic Damage</strong> property. If set the item does magical damage. <br><strong>Off</strong> non-weapons do magical damage by default, weapons do magical damage if attack bonus > 0.<br><strong>Non Spell</strong> means only spells do magical damage by default.<br><strong>All</strong> no item does magical damage by default",
+	"midi-qol.RequireMagical.Hint": "Magical Property is either the dnd5e property <strong>Magical</strong> or the <strong>midi-qol Magic Damage</strong> property. If set the item does magical damage. <br><strong>Off</strong> non-weapons do magical damage by default, weapons do magical damage if the item's magical property set.<br><strong>Non Spell</strong> means only spells do magical damage by default.<br><strong>All</strong> no item does magical damage by default",
 	"midi-qol.RequireMagicalOptions": {
 		"off": "Off: Non-weapons do magical damage",
 		"nonspell": "Non spells do non-magical damage",
@@ -537,10 +530,10 @@
 		"item": "Roll Concentration Item"
 	},
 	"midi-qol.DoConcentrationCheck.Hint": "<strong>Chat Message Only</strong> display a chat message with a button (dnd5e default behaviour and required dnd5e concentration)<br><strong>Chat message + Auto Roll</strong> display a chat message and auto roll the save (requires dnd5e concentration)<br><strong>Roll Concentration Item</strong> roll a concentration item check (midi standard behaviour)",
-	"midi-qol.RemoveConcentration.Name": "Remove concentration on failed concentration save",
+	"midi-qol.RemoveConcentration.Name": "Снимать концентрацию при провале проверки концентрации",
 	"midi-qol.UsePlayerPortrait.Name": "Использовать портрет актёра в карточках чата",
 	"midi-qol.UsePlayerPortrait.Hint": "Использовать портрет актёра вместо изображения токена в карточках чата MidiQOL",
-	"midi-qol.DistanceIncludesHeight.Name": "Include height difference in distance calculations",
+	"midi-qol.DistanceIncludesHeight.Name": "Учитывать разницу высот при расчёте расстояния",
 	"midi-qol.NoSocketLib": "MidiQOL требует установленного и активного модуля socketlib",
 	"midi-qol.confirm": "Диалоговое окно подтверждения",
 	"midi-qol.ExportConfig": "Экспорт настроек MidiQOL в JSON файл",
@@ -549,18 +542,22 @@
 	"midi-qol.ExportJSon": "Экспорт статистики бросков в json файл",
 	"midi-qol.ExportCSV": "Экспорт статистики бросков в csv файл",
 	"midi-qol.AutoCEEffectsOptions": {
-		"none": "Не применять",
-		"itempri": "Apply Item effects, if absent apply CE",
-		"cepri": "Apply CE, if absent apply item effects",
-		"both": "Apply CE and item effects"
+		"none": "Применять только эффекты функции",
+		"itempri": "Применять эффекты функции, иначе применять CE",
+		"cepri": "Применять CE, иначе применять эффекты функции",
+		"both": "Применять CE и эффекты функции"
 	},
 	"midi-qol.AutoCEEffects.Name": "Применять Convenient Effects",
-	"midi-qol.AutoCEEffects.Hint": "Применять Convenient Effects, соответствующие названию предмета при его использовании. Требуется также включить автоматическое применение активных эффектов.",
+	"midi-qol.AutoCEEffects.Hint": "Применять Convenient Effects, соответствующие названию функции или предмета при его использовании. Требуется также включить автоматическое применение активных эффектов.",
 	"midi-qol.BonusACCover": "КБ укрытия",
 	"midi-qol.NoChangelogs": "MidiQOL поддерживает и рекомендует модули ChangeLogs и Module Manager+ для отображения списка изменений с последнего обновления.",
 	"midi-qol.ActiveDefenceString": "Активная защита",
 	"midi-qol.ActiveDefence.Name": "Активная защита",
+	"midi-qol.ActiveDefenceModifier.Name": "Active Defence Modifier",
+	"midi-qol.ActiveDefenceModifier.Hint": "The active defence DC will be attack bonus + (22 - this modifier) and the active defence roll will be AC - modifier + 1d20. <br>The value does not matter just choose what makes the rolls look good to you. <br> Suggested values are <strong>12</strong>, 10 or 0",
 	"midi-qol.ActiveDefence.Hint": "Instead of GM rolling 'To Hit', players make a defence roll.",
+	"midi-qol.ActiveDefenceDC.Name": "Show Active Defence DC",
+	"midi-qol.ActiveDefenceDC.Hint": "If set the active defence DC will be shown in the chat card",
 	"midi-qol.ActiveDefenceShow.Name": "Default display for active defence rolls",
 	"midi-qol.ActiveDefenceShow.Hint": "If set to 'Self Roll' the roll will be hidden from the GM regardless of other settings",
 	"midi-qol.GMHide3dDice.Name": "Hide GM attack/damage/saving throw 3d dice rolls - overrides other settings (merge card only)",
@@ -716,10 +713,8 @@
 	},
 	"midi-qol.EnforceReactions.Title": "Использование ответного действия",
 	"midi-qol.EnforceReactions.Content": "Вы уже использовали ответное действие в этом раунде. Всё равно продолжить?",
-	"midi-qol.DisplayHitResultNumeric.Name": "Display target AC",
 	"midi-qol.EnforceBonusActions.Title": "Использование бонусного действия",
 	"midi-qol.EnforceBonusActions.Content": "Вы уже использовали бонусное действие в этом раунде. Всё равно продолжить?",
-	"midi-qol.MidiProperties": "Свойства предмета MidiQOL",
 	"midi-qol.SoundSettings.Name": "Настройка особых звуков MidiQOL",
 	"midi-qol.SoundSettings.Hint": "Настройка особых звуков MidiQOL для бросков предметов",
 	"midi-qol.SoundSettings.Label": "Настройка особых звуков MidiQOL",
@@ -864,10 +859,11 @@
 	"midi-qol.TargetConfirmationAllies": "Confirm targets if any target is an ally",
 	"midi-qol.OutOfRange": "Out of Range",
 	"midi-qol.SaveDROrder.Name": "Damage Reduction Save Order",
-	"midi-qol.SaveDROrder.Hint": "Order in which damage reduction is applied. If 'none' damage reduction is applied",
+	"midi-qol.SaveDROrder.Hint": "Order in which damage reduction is applied.<br>dm.midi is midi specific damage reduction. <br>dm is dnd5e damage reduction",
 	"midi-qol.SaveDROrderOptions": {
-		"DRSavedr": "Damage Reduction -> Saves -> damage resistance (dr/dv/di)",
-		"SaveDRdr": "Saves -> Damage Reduction -> damage resistance (dr/dv/di)"
+		"DRSaveDr": "dm.midi/dnd5e.dm -> Saves/(dr/dv/di) - dnd5e RAW",
+		"SaveDRDr": "Saves -> dm.midi/dm.dnd5e -> (dr/dv/di)",
+		"SaveDrDR": "Saves -> dm -> (dr/dv/di) -> dm.midi"
 	},
 	"midi-qol.WaitingForPreviousWorkflow": "Previous roll of {name} has not completed.",
 	"midi-qol.ResolvePreviousWorkflow": "Choose what to do with the previous roll",
@@ -957,6 +953,9 @@
 	"midi-qol.dummyCards.Name": "Always display attack/damage cards for hidden merge cards",
 	"midi-qol.dummyCards.Hint": "(Experimental) For GM rolls (self, private, blind) display an attack/damage roll card which will trigger a 'gm rollsed some dice' card on the players chats. Only for the case that you want the players to know you rolled something, but not what it was",
 	"midi-qol.dnd5eConcentrationTrackingDisabled": "<br><strong><center>DND5E Concentration Tracking Disabled</strong><br></center><br><center>Concentration Tracking is disabled in the dnd5e system settings.</center><center>Enable in DND5E settings to enable midi concentration settings</center><br>",
+	"midi-qol.ItemSheetMidiTab": "Midi QoL",
+	"midi-qol.AddOnUseMacro": "Add On-Use Macro",
+	"midi-qol.CustomMacro": "Custom Macro",
 	"midi-qol.SHARED": {
 		"use-condition": {
 			"header": "Midi Conditions"
@@ -981,10 +980,18 @@
 				"label": "Use Other Activity",
 				"hint": "Extra activity to preform 'other' damage"
 			},
+			"otherActivityAsParentType": {
+				"label": "Override action type",
+				"hint": "Replace other damage properties activity type with this activity (mwak, rwak etc)"
+			},
 			"midiProperties": {
 				"rollMode": {
 					"label": "Roll Mode",
 					"hint": "Roll mode to use for the activity"
+				},
+				"removeChatButtons": {
+					"label": "Remove Chat Buttons",
+					"hint": "Remove buttons from the activity chat card"
 				},
 				"ignoreFullCover": {
 					"label": "Ignore Full Cover",
@@ -995,8 +1002,16 @@
 					"hint": "Choose effects to apply"
 				},
 				"forceDialog": {
-					"label": "Force Configuration Dialog",
+					"label": "Force Configuration Dialog (Deprecated)",
 					"hint": "Force Configuration Dialog when activity used"
+				},
+				"forceAttackDialog": {
+					"label": "Force Attack Config",
+					"hint": "Force Attack Configuration Dialog when activity used"
+				},
+				"forceDamageDialog": {
+					"label": "Force Damage Config",
+					"hint": "Force Damage Configuration Dialog when activity used"
 				},
 				"confirmTargets": {
 					"label": "Подтверждение цели",
@@ -1046,6 +1061,18 @@
 					"label": "Toggle Effect",
 					"hint": "Disabling an effect will toggle it rather than removing it"
 				},
+				"magicEffect": {
+					"label": "Magic Effect",
+					"hint": "Saves against this activity are treated as saves against magic"
+				},
+				"magicDamage": {
+					"label": "Magic Damage",
+					"hint": "Damage from this activity is treated as magic damage"
+				},
+				"noConcentrationCheck": {
+					"label": "No Concentration Save",
+					"hint": "The activity's damage does not trigger a concentration save"
+				},
 				"ignoreTraits": {
 					"idi": {
 						"label": "Невосприимчивость",
@@ -1067,7 +1094,15 @@
 						"label": "Modification",
 						"hint": "Ignore damage modification when applying damage"
 					}
+				},
+				"autoCEEffects": {
+					"label": "Применять Convenient Effects",
+					"hint": "Применять Convenient Effects, соответствующие названию функции или предмета при его использовании. Требуется также включить автоматическое применение активных эффектов."
 				}
+			},
+			"friendlySummon": {
+				"label": "Friendly Summons",
+				"hint": "The summoned token has the same disposition as the caster"
 			},
 			"isOverTimeFlag": {
 				"label": "Is Over Time",
@@ -1137,6 +1172,14 @@
 			"ammunition": {
 				"label": "Боеприпасы",
 				"hint": "Боеприпасы по умолчанию"
+			},
+			"attackRollPerTarget": {
+				"label": "Attack Roll Per Target",
+				"hint": "Roll a separate attack roll for each target. Creates a chat card for each target."
+			},
+			"fumbleThreshold": {
+				"label": "Fumble Threshold",
+				"hint": "If the attack roll is less than or equal to this value it is a fumble"
 			}
 		}
 	},
@@ -1156,6 +1199,22 @@
 		"Title": {
 			"one": "Midi Damage",
 			"other": "Midi Damage"
+		},
+		"FIELDS": {
+			"damage": {
+				"label": "Damage",
+				"critical": {
+					"label": "Critical Damage",
+					"allow": {
+						"label": "Allow Critical Damage",
+						"hint": "Allow critical damage to be applied"
+					},
+					"bonus": {
+						"label": "Bonus Critical Damage",
+						"hint": "Bonus critical damage to be applied if critical damage is allowed"
+					}
+				}
+			}
 		}
 	},
 	"midi-qol.ENCHANT": {
@@ -1209,6 +1268,20 @@
 		"Title": {
 			"one": "Midi Save",
 			"other": "Midi Saves"
+		},
+		"extras": {
+			"header": "Midi Save Fields"
+		},
+		"FriendlySave": {
+			"Default": "Roll save",
+			"FriendlySuccess": "Friends Succeed",
+			"FriendlyFail": "Friends Fail"
+		},
+		"FIELDS": {
+			"friendlySave": {
+				"label": "Friendly Save",
+				"hint": "If enabled allow allies to succeed or fail rather than rolling a save"
+			}
 		}
 	},
 	"midi-qol.UTILITY": {
