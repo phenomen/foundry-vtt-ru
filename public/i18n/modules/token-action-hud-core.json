@@ -1,297 +1,195 @@
 {
-	"tokenActionHud": {
-		"accept": "Принять",
-		"addToCombat": "Добавление в бой",
-		"blockListLabel": "чёрный список: скрыть / белый список: показать",
-		"cancel": "Отмена",
-		"collapseHud": "Свернуть HUD",
-		"combat": "Бой",
-		"compendiumEntry": "Документ библиотеки",
-		"compendiumMacro": "Макрос библиотеки",
-		"compendiumPlaylist": "Плейлист библиотеки",
-		"editHud": "Изменение HUD",
-		"endTurn": "Конец хода",
-		"expandHud": "Развернуть HUD",
-		"handlerNotFound": "не найдено, возврат к обычному броску.",
-		"lockHud": "Блокировка HUD",
-		"macro": "Макрос",
-		"macros": "Макросы",
-		"makeInvisible": "Сделать невидимым",
-		"makeVisible": "Сделать видимым",
-		"pushLabelExplanation": "С какой стороны отображать категории?",
-		"removeFromCombat": "Убрать из боя",
-		"title": "Token Action HUD",
-		"toggleHud": "Переключение HUD",
-		"token": "Токен",
-		"unlockHud": "Разблокировка HUD",
-		"utility": "Вспомогательное",
-		"settings": {
-			"activeCssAsText": {
-				"hint": "Активные действия будут отмечены звёздочкой",
-				"name": "Отметка активных действий"
-			},
-			"allow": {
-				"hint": "Настройка ведущего: Разрешить участникам с этой ролью (и выше) использовать HUD.",
-				"name": "Разрешить HUD",
-				"choices": {
-					"4": "Ведущий",
-					"3": "Ассистент ведущего",
-					"2": "Доверенный игрок",
-					"1": "Игрок"
-				}
-			},
-			"alwaysShowHud": {
-				"hint": "Показывать привязанного к участнику персонажа, даже если токен не выбран.",
-				"name": "Всегда отображать HUD"
-			},
-			"background": {
-				"hint": "Устанавливает цвет фона HUD. Эта настройка игнорируется при использовании интерфейса Dorako UI и требует наличия одного из модулей: 'Color Picker', 'Color Settings' или 'libThemer'.",
-				"name": "Цвет фона HUD"
-			},
-			"buttonBackgroundColor": {
-				"hint": "Устанавливает цвет фона кнопок HUD. Эта настройка игнорируется при использовании интерфейса Dorako UI и требует наличия одного из модулей: 'Color Picker', 'Color Settings' или 'libThemer'.",
-				"name": "Цвет фона кнопок"
-			},
-			"clickOpenCategory": {
-				"hint": "Раскрывать группы щелчком вместо наведения.",
-				"name": "Щелчок для раскрытия"
-			},
-			"customStyle": {
-				"hint": "Настройка внешнего вида HUD. Для включения, установите 'Стиль' на 'Свой'.",
-				"label": "Настройка стиля",
-				"name": "Настройка стиля",
-				"form": {
-					"title": "Token Action HUD | Настройка стиля",
-					"active": "Когда активно",
-					"buttons": "Кнопки",
-					"hovered": "При наведении",
-					"text": "Текст и иконки",
-					"toggleable": "Переключатель",
-					"reset": "Сброс настроек",
-					"save": "Сохранение",
-					"backgroundColor": {
-						"label": "Цвет фона"
-					},
-					"buttonHeight": {
-						"label": "Высота",
-						"units": "(пиксели)"
-					},
-					"buttonBackgroundColor": {
-						"label": "Цвет фона"
-					},
-					"buttonBorderPrimaryColor": {
-						"label": "Основной цвет рамки"
-					},
-					"buttonBorderSecondaryColor": {
-						"label": "Дополнительный цвет рамки"
-					},
-					"buttonTextColor": {
-						"label": "Цвет текста кнопок"
-					},
-					"buttonHoverBackgroundColor": {
-						"label": "Цвет фона"
-					},
-					"buttonHoverBorderPrimaryColor": {
-						"label": "Основной цвет рамки"
-					},
-					"buttonHoverBorderSecondaryColor": {
-						"label": "Дополнительный цвет рамки"
-					},
-					"buttonHoverTextColor": {
-						"label": "Цвет текста"
-					},
-					"buttonToggleActiveBackgroundColor": {
-						"label": "Цвет фона"
-					},
-					"buttonToggleActiveBorderPrimaryColor": {
-						"label": "Основной цвет рамки"
-					},
-					"buttonToggleActiveBorderSecondaryColor": {
-						"label": "Дополнительный цвет рамки"
-					},
-					"buttonToggleActiveTextColor": {
-						"label": "Цвет текста"
-					},
-					"buttonToggleHoverBackgroundColor": {
-						"label": "Цвет фона"
-					},
-					"buttonToggleHoverTextColor": {
-						"label": "Цвет текста"
-					},
-					"buttonToggleHoverBorderPrimaryColor": {
-						"label": "Основной цвет рамки"
-					},
-					"buttonToggleHoverBorderSecondaryColor": {
-						"label": "Дополнительный цвет рамки"
-					},
-					"textPrimaryColor": {
-						"label": "Основной цвет"
-					},
-					"textSecondaryColor": {
-						"label": "Дополнительный цвет"
-					},
-					"textTertiaryColor": {
-						"label": "Вспомогательный цвет"
-					},
-					"textHoverPrimaryColor": {
-						"label": "Основной цвет"
-					},
-					"textHoverSecondaryColor": {
-						"label": "Дополнительный цвет"
-					},
-					"textHoverTertiaryColor": {
-						"label": "Вспомогательный цвет"
-					}
-				}
-			},
-			"debug": {
-				"hint": "Включение вывода отладочной информации в консоль.",
-				"name": "Отладка"
-			},
-			"direction": {
-				"hint": "Выбор направления раскрытия HUD",
-				"name": "Направление",
-				"choices": {
-					"auto": "Автоматически",
-					"down": "Вниз",
-					"up": "Вверх"
-				}
-			},
-			"displayCharacterName": {
-				"hint": "При 'Направлении вниз' имя персонажа будет отображаться над HUD.",
-				"name": "Отображение имени персонажа"
-			},
-			"displayIcons": {
-				"hint": "На действиях будут отображаться иконки, если они доступны.",
-				"name": "Отображение иконок"
-			},
-			"drag": {
-				"hint": "Выберите, когда HUD можно перемещать перетаскиванием одной из кнопок верхнего уровня.",
-				"name": "Перетаскивание",
-				"choices": {
-					"always": "Всегда",
-					"whenUnlocked": "Когда разблокирован",
-					"never": "Никогда"
-				}
-			},
-			"enable": {
-				"hint": "Включение Token Action HUD.",
-				"name": "Включение HUD"
-			},
-			"enableCustomization": {
-				"hint": "Настройка ведущего: Включение настроек стиля HUD.",
-				"name": "Включение настройки стиля"
-			},
-			"grid": {
-				"hint": "Действия будут отображаться в виде сетки.",
-				"name": "Сетка"
-			},
-			"itemMacro": {
-				"hint": "Выбор способа отображения макросов предметов.",
-				"name": "Отображение макросов предметов",
-				"choices": {
-					"both": "Предмет и макрос",
-					"itemMacro": "Только макрос",
-					"original": "Только предмет"
-				}
-			},
-			"renderItemOnRightClick": {
-				"hint": "При щелчке правой кнопкой мыши будет открыт бланк предмета.",
-				"name": "Открытие бланка предмета ПКМ"
-			},
-			"reset": {
-				"hint": "ВНИМАНИЕ! Это сбросит все настройки на стандартные",
-				"name": "Сброс HUD"
-			},
-			"rollHandler": {
-				"hint": "Настройка ведущего: Выбор модуля для обработки бросков через HUD.",
-				"name": "Обработчик бросков"
-			},
-			"scale": {
-				"hint": "Изменение масштаба HUD (по умолчанию '1').",
-				"name": "Масштаб HUD"
-			},
-			"style": {
-				"hint": "Настройка стиля HUD",
-				"name": "Стиль"
-			},
-			"tooltips": {
-				"hint": "Способ отображения всплывающих подсказок при наведении курсора на действия.",
-				"name": "Отображение подсказок",
-				"choices": {
-					"full": "Полная подсказка",
-					"nameOnly": "Только название",
-					"none": "Без подсказки"
-				}
-			},
-			"toggleHud": {
-				"disabled": "HUD отключён. Для включения нажмите {binding}",
-				"enabled": "HUD включён. Для отключения нажмите {binding}"
-			}
-		},
-		"tagDialog": {
-			"actionDialogDescription": "Добавляйте и удаляйте группы и действия. Перетаскивайте группы и действия, чтобы изменить их порядок.",
-			"actionDialogTitle": "Настройка действий",
-			"groupDialogDescription": "Добавляйте и удаляйте группы. Выберите группы с заранее определенными действиями из списка или введите свой текст для пустых групп. Перетаскивайте группы, чтобы изменить их порядок.",
-			"groupDialogTitle": "Настройка групп",
-			"hudDialogDescription": "Добавляйте и удаляйте группы. Перетаскивайте группы, чтобы изменить их порядок.",
-			"hudDialogTitle": "Настройка HUD",
-			"clearButton": "Очистка",
-			"settings": {
-				"characterCount": {
-					"label": "Максимум символов в слове",
-					"hint": "Ограничение числа символов для каждого слова в названии действия."
-				},
-				"collapse": {
-					"label": "Сворачивание группы",
-					"hint": "Группа будет свёрнута"
-				},
-				"customWidth": {
-					"label": "Особая ширина",
-					"units": "(пиксели)",
-					"hint": "Настройте ширину для подкатегорий"
-				},
-				"grid": {
-					"label": "Сетка",
-					"hint": "Действия будут отображаться в виде сетки."
-				},
-				"image": {
-					"label": "Изображение",
-					"hint": "Изображение на кнопке."
-				},
-				"showCategoryTitle": {
-					"label": "Отображение заголовка",
-					"hint": "Отображение заголовка кнопки"
-				},
-				"showSubcategoryTitle": {
-					"label": "Отображение заголовка",
-					"hint": "Отображение заголовка группы"
-				},
-				"sort": {
-					"label": "Сортировка действий",
-					"hint": "Действия будут отсортированы в алфавитном порядке."
-				},
-				"style": {
-					"label": "Стиль",
-					"choice": {
-						"list": "Список",
-						"tab": "Вкадка"
-					},
-					"hint": "Стиль этой группы"
-				}
-			},
-			"resetActions": {
-				"button": "Сброс действий",
-				"dialog": {
-					"title": "Сброс действий",
-					"content": "Это приведёт к сбросу всех действий актёра. Продолжить?",
-					"buttons": {
-						"yes": "Да",
-						"no": "Нет"
-					}
-				}
-			},
-			"tagPlaceholder": "Выборы (разделяйте ; )"
-		}
-	}
+	"tokenActionHud.accept": "Принять",
+	"tokenActionHud.addToCombat": "Добавить в бой",
+	"tokenActionHud.cancel": "Отмена",
+	"tokenActionHud.collapseExpandHud": "Свернуть/развернуть HUD",
+	"tokenActionHud.collapseHud": "Свернуть HUD",
+	"tokenActionHud.combat": "Бой",
+	"tokenActionHud.compendiumEntry": "Документ библиотеки",
+	"tokenActionHud.compendiumMacro": "Макрос библиотеки",
+	"tokenActionHud.compendiumPlaylist": "Плейлист библиотеки",
+	"tokenActionHud.editHud": "Изменение HUD",
+	"tokenActionHud.enableDisableHud": "Включить/выключить HUD",
+	"tokenActionHud.endTurn": "Конец хода",
+	"tokenActionHud.expandHud": "Развернуть HUD",
+	"tokenActionHud.group": "Группа",
+	"tokenActionHud.handlerNotFound": "не найдено, возврат к обычному броску.",
+	"tokenActionHud.lockHud": "Блокировка HUD",
+	"tokenActionHud.macro": "Макрос",
+	"tokenActionHud.macros": "Макросы",
+	"tokenActionHud.makeInvisible": "Сделать невидимым",
+	"tokenActionHud.makeVisible": "Сделать видимым",
+	"tokenActionHud.multiple": "Несколько",
+	"tokenActionHud.removeFromCombat": "Убрать из боя",
+	"tokenActionHud.resetToDefault": "Сброс настроек",
+	"tokenActionHud.saveAndClose": "Сохранить и закрыть",
+	"tokenActionHud.title": "Token Action HUD",
+	"tokenActionHud.toggleHud": "Переключение HUD",
+	"tokenActionHud.token": "Токен",
+	"tokenActionHud.unlockHud": "Разблокировка HUD",
+	"tokenActionHud.utility": "Вспомогательное",
+
+	"tokenActionHud.dialog.button.yes": "Да",
+	"tokenActionHud.dialog.button.no": "Нет",
+	"tokenActionHud.dialog.resetActions.title": "Сброс действий",
+	"tokenActionHud.dialog.resetActions.content": "Это приведёт к сбросу всех действий актёра. Продолжить?",
+	"tokenActionHud.dialog.resetLayout.title": "Token Action HUD | Сброс макета",
+	"tokenActionHud.dialog.resetLayout.content": "Это приведёт к сбросу HUD на макет по умолчанию. Продолжить?",
+	"tokenActionHud.dialog.resetAllLayouts.title": "Token Action HUD | Сброс всех макетов",
+	"tokenActionHud.dialog.resetAllLayouts.content": "Это приведёт к сбросу всех HUD на макет по умолчанию. Продолжить?",
+
+	"tokenActionHud.form.hud.availableItems": "Доступные предметы",
+	"tokenActionHud.form.hud.groupDetail": "Щёлкайте доступные элементы, чтобы выбрать их, перетаскивайте выбранные элементы, чтобы изменить их порядок, и нажимайте <strong>X</strong> на выбранных элементах, чтобы отменить выбор. Щёлкните пустую область поля <strong>Выбранные элементы</strong> и начните вводить текст для фильтрации доступных элементов.",
+	"tokenActionHud.form.hud.groupTitle": "Настроить группу",
+	"tokenActionHud.form.hud.hudDetail": "Щёлкните пустую область поля <strong>Выбранные элементы</strong>, введите имя элемента, затем нажмите <strong>Enter</strong>, чтобы добавить его. Перетаскивайте элементы, чтобы изменить их порядок.",
+	"tokenActionHud.form.hud.hudTitle": "Настроить HUD",
+	"tokenActionHud.form.hud.items": "Элементы",
+	"tokenActionHud.form.hud.otherSettings": "Другие настройки",
+	"tokenActionHud.form.hud.resetActions.button": "Сбросить действия в группах",
+	"tokenActionHud.form.hud.selectedItems": "Выбранные элементы",
+	"tokenActionHud.form.hud.tagPlaceholder": "Варианты (разделённые точкой с запятой)",
+	"tokenActionHud.form.hud.unselectAll": "Отменить выбор всех",
+
+	"tokenActionHud.form.group.characterCount.hint": "Ограничить количество символов в слове для действий",
+	"tokenActionHud.form.group.characterCount.label": "Символов в слове",
+	"tokenActionHud.form.group.collapse.hint": "Свернуть эту группу",
+	"tokenActionHud.form.group.collapse.label": "Свернуть группу",
+	"tokenActionHud.form.group.customWidth.hint": "Пользовательская ширина для этой группы",
+	"tokenActionHud.form.group.customWidth.label": "Пользовательская ширина",
+	"tokenActionHud.form.group.customWidth.units": "(в пикселях)",
+	"tokenActionHud.form.group.grid.label": "Сетка",
+	"tokenActionHud.form.group.grid.hint": "Макет сетки для действий",
+	"tokenActionHud.form.group.image.hint": "Изображение на этой кнопке",
+	"tokenActionHud.form.group.image.label": "Изображение",
+	"tokenActionHud.form.group.showTitle.hint": "Показывать заголовок этой группы",
+	"tokenActionHud.form.group.showTitle.label": "Показывать заголовок",
+	"tokenActionHud.form.group.sort.hint": "Сортировать действия в алфавитном порядке",
+	"tokenActionHud.form.group.sort.label": "Сортировать действия",
+	"tokenActionHud.form.group.style.choice.list": "Список",
+	"tokenActionHud.form.group.style.choice.tab": "Вкладка",
+	"tokenActionHud.form.group.style.hint": "Стиль этой группы",
+	"tokenActionHud.form.group.style.label": "Стиль",
+
+	"tokenActionHud.form.group.topLevel.customWidth.hint": "Пользовательская ширина для всех групп в этой группе",
+	"tokenActionHud.form.group.topLevel.showTitle.hint": "Показывать заголовок этой кнопки",
+	"tokenActionHud.form.group.topLevel.showTitle.label": "Показывать заголовок",
+
+	"tokenActionHud.keybinding.toggleHud.disabled": "HUD отключён. Чтобы включить, нажмите {binding}",
+	"tokenActionHud.keybinding.toggleHud.enabled": "HUD включён. Чтобы отключить, нажмите {binding}",
+
+	"tokenActionHud.settings.activeCssAsText.hint": "Активные действия будут отмечены звёздочкой",
+	"tokenActionHud.settings.activeCssAsText.name": "Отметка активных действий",
+	"tokenActionHud.settings.allow.choice.1": "Игрок",
+	"tokenActionHud.settings.allow.choice.2": "Доверенный игрок",
+	"tokenActionHud.settings.allow.choice.3": "Помощник ведущего",
+	"tokenActionHud.settings.allow.choice.4": "Ведущего",
+	"tokenActionHud.settings.allow.hint": "Настройка ведущего: Разрешить участникам с этой ролью (и выше) использовать HUD.",
+	"tokenActionHud.settings.allow.name": "Разрешить HUD",
+	"tokenActionHud.settings.alwaysShowHud.hint": "Показывать привязанного к участнику персонажа, даже если токен не выбран.",
+	"tokenActionHud.settings.alwaysShowHud.name": "Всегда отображать HUD",
+	"tokenActionHud.settings.clickOpenCategory.hint": "Раскрывать группы нажатием вместо наведения.",
+	"tokenActionHud.settings.clickOpenCategory.name": "Нажатие для раскрытия",
+	"tokenActionHud.settings.collapsibleSubgroups.hint": "Сворачивать подгруппы ЛКМ по их заголовку",
+	"tokenActionHud.settings.collapsibleSubgroups.name": "Сворачиваемые подгруппы",
+	"tokenActionHud.settings.customLayout.hint": "Настройка мира: Выберите макет для использования по умолчанию для всех пользователей. Оставьте пустым, чтобы использовать системный макет",
+	"tokenActionHud.settings.customLayout.name": "Общий макет по умолчанию",
+	"tokenActionHud.settings.customStyle.hint": "Настройка внешнего вида HUD. Для включения, установите 'Стиль' на 'Свой'.",
+	"tokenActionHud.settings.customStyle.label": "Настройка стиля",
+	"tokenActionHud.settings.customStyle.name": "Настройка стиля",
+	"tokenActionHud.settings.customStyle.form.active": "Когда активно",
+	"tokenActionHud.settings.customStyle.form.backgroundColor.label": "Цвет фона",
+	"tokenActionHud.settings.customStyle.form.buttonBackgroundColor.label": "Цвет фона",
+	"tokenActionHud.settings.customStyle.form.buttonBorderPrimaryColor.label": "Основной цвет рамки",
+	"tokenActionHud.settings.customStyle.form.buttonBorderSecondaryColor.label": "Дополнительный цвет рамки",
+	"tokenActionHud.settings.customStyle.form.buttonHeight.label": "Высота",
+	"tokenActionHud.settings.customStyle.form.buttonHeight.units": "(пиксели)",
+	"tokenActionHud.settings.customStyle.form.buttonHoverBackgroundColor.label": "Цвет фона",
+	"tokenActionHud.settings.customStyle.form.buttonHoverBorderPrimaryColor.label": "Основной цвет рамки",
+	"tokenActionHud.settings.customStyle.form.buttonHoverBorderSecondaryColor.label": "Дополнительный цвет рамки",
+	"tokenActionHud.settings.customStyle.form.buttonHoverTextColor.label": "Цвет текста",
+	"tokenActionHud.settings.customStyle.form.buttonTextColor.label": "Цвет текста кнопок",
+	"tokenActionHud.settings.customStyle.form.buttonToggleActiveBackgroundColor.label": "Цвет фона",
+	"tokenActionHud.settings.customStyle.form.buttonToggleActiveBorderPrimaryColor.label": "Основной цвет рамки",
+	"tokenActionHud.settings.customStyle.form.buttonToggleActiveBorderSecondaryColor.label": "Дополнительный цвет рамки",
+	"tokenActionHud.settings.customStyle.form.buttonToggleActiveTextColor.label": "Цвет текста",
+	"tokenActionHud.settings.customStyle.form.buttonToggleHoverBackgroundColor.label": "Цвет фона",
+	"tokenActionHud.settings.customStyle.form.buttonToggleHoverBorderPrimaryColor.label": "Основной цвет рамки",
+	"tokenActionHud.settings.customStyle.form.buttonToggleHoverBorderSecondaryColor.label": "Дополнительный цвет рамки",
+	"tokenActionHud.settings.customStyle.form.buttonToggleHoverTextColor.label": "Цвет текста",
+	"tokenActionHud.settings.customStyle.form.buttons": "Кнопки",
+	"tokenActionHud.settings.customStyle.form.hovered": "При наведении",
+	"tokenActionHud.settings.customStyle.form.reset": "Сброс настроек",
+	"tokenActionHud.settings.customStyle.form.save": "Сохранение",
+	"tokenActionHud.settings.customStyle.form.text": "Текст и иконки",
+	"tokenActionHud.settings.customStyle.form.textHoverPrimaryColor.label": "Основной цвет",
+	"tokenActionHud.settings.customStyle.form.textHoverSecondaryColor.label": "Дополнительный цвет",
+	"tokenActionHud.settings.customStyle.form.textHoverTertiaryColor.label": "Вспомогательный цвет",
+	"tokenActionHud.settings.customStyle.form.textPrimaryColor.label": "Основной цвет",
+	"tokenActionHud.settings.customStyle.form.textSecondaryColor.label": "Дополнительный цвет",
+	"tokenActionHud.settings.customStyle.form.textTertiaryColor.label": "Вспомогательный цвет",
+	"tokenActionHud.settings.customStyle.form.title": "Token Action HUD | Настройка стиля",
+	"tokenActionHud.settings.customStyle.form.toggleable": "Переключатель",
+	"tokenActionHud.settings.debug.hint": "Включение вывода отладочной информации в консоль.",
+	"tokenActionHud.settings.debug.name": "Отладка",
+	"tokenActionHud.settings.direction.choice.auto": "Автоматически",
+	"tokenActionHud.settings.direction.choice.down": "Вниз",
+	"tokenActionHud.settings.direction.choice.up": "Вверх",
+	"tokenActionHud.settings.direction.hint": "Выбор направления раскрытия HUD",
+	"tokenActionHud.settings.direction.name": "Направление",
+	"tokenActionHud.settings.displayCharacterName.hint": "При 'Направлении вниз' имя персонажа будет отображаться над HUD.",
+	"tokenActionHud.settings.displayCharacterName.name": "Отображение имени персонажа",
+	"tokenActionHud.settings.displayIcons.hint": "На действиях будут отображаться иконки, если они доступны.",
+	"tokenActionHud.settings.displayIcons.name": "Отображение иконок",
+	"tokenActionHud.settings.drag.choices.always": "Всегда",
+	"tokenActionHud.settings.drag.choices.never": "Никогда",
+	"tokenActionHud.settings.drag.choices.whenUnlocked": "Когда разблокирован",
+	"tokenActionHud.settings.drag.hint": "Выберите, когда HUD можно перемещать перетаскиванием одной из кнопок верхнего уровня.",
+	"tokenActionHud.settings.drag.name": "Перетаскивание",
+	"tokenActionHud.settings.enable.hint": "Включение Token Action HUD.",
+	"tokenActionHud.settings.enable.name": "Включение HUD",
+	"tokenActionHud.settings.enableCustomization.hint": "Настройка ведущего: Включение настроек стиля HUD.",
+	"tokenActionHud.settings.enableCustomization.name": "Включение настройки стиля",
+	"tokenActionHud.settings.enableCompendiumActions.hint": "Настройка мира: Разрешить ядру Token Action HUD делать записи журнала и макросы из библиотек доступными в качестве действий в HUD",
+	"tokenActionHud.settings.enableCompendiumActions.name": "Включить действия из библиотек",
+	"tokenActionHud.settings.enableMacroActions.hint": "Настройка мира: Разрешить ядру Token Action HUD делать макросы доступными в качестве действий в HUD",
+	"tokenActionHud.settings.enableMacroActions.name": "Включить действия макросов",
+	"tokenActionHud.settings.exportLayout.hint": "Экспортировать макет в файл",
+	"tokenActionHud.settings.exportLayout.label": "Экспорт макета",
+	"tokenActionHud.settings.exportLayout.name": "Экспорт макета",
+	"tokenActionHud.settings.grid.hint": "Действия будут отображаться в виде сетки.",
+	"tokenActionHud.settings.grid.name": "Сетка",
+	"tokenActionHud.settings.itemMacro.choices.both": "Предмет и макрос",
+	"tokenActionHud.settings.itemMacro.choices.itemMacro": "Только макрос",
+	"tokenActionHud.settings.itemMacro.choices.original": "Только предмет",
+	"tokenActionHud.settings.itemMacro.hint": "Выбор способа отображения макросов предметов.",
+	"tokenActionHud.settings.itemMacro.name": "Отображение макросов предметов",
+	"tokenActionHud.settings.layout.hint": "Настройки, связанные с макетом",
+	"tokenActionHud.settings.layout.label": "Макет",
+	"tokenActionHud.settings.layout.name": "Макет",
+	"tokenActionHud.settings.layout.form.title": "Token Action HUD | Макет",
+	"tokenActionHud.settings.renderItemOnRightClick.hint": "При нажатии ПКМ будет открыт бланк предмета.",
+	"tokenActionHud.settings.renderItemOnRightClick.name": "Открытие бланка предмета ПКМ",
+	"tokenActionHud.settings.resetLayout.hint": "Сбросить до макета по умолчанию",
+	"tokenActionHud.settings.resetLayout.label": "Сбросить макет",
+	"tokenActionHud.settings.resetLayout.name": "Сбросить макет",
+	"tokenActionHud.settings.resetAllLayouts.hint": "Настройка мира: Сбросить макеты всех пользователей до макета по умолчанию",
+	"tokenActionHud.settings.resetAllLayouts.label": "Сбросить все макеты",
+	"tokenActionHud.settings.resetAllLayouts.name": "Сбросить все макеты",
+	"tokenActionHud.settings.rollHandler.hint": "Настройка ведущего: Выбор модуля для обработки бросков через HUD.",
+	"tokenActionHud.settings.rollHandler.name": "Обработчик бросков",
+	"tokenActionHud.settings.scale.hint": "Изменение масштаба HUD (по умолчанию '1').",
+	"tokenActionHud.settings.scale.name": "Масштаб HUD",
+	"tokenActionHud.settings.sortActions.hint": "Выберите, следует ли сортировать действия в алфавитном порядке по умолчанию",
+	"tokenActionHud.settings.sortActions.name": "Сортировать действия по алфавиту",
+	"tokenActionHud.settings.style.hint": "Настройка стиля HUD",
+	"tokenActionHud.settings.style.name": "Стиль",
+	"tokenActionHud.settings.tooltips.choices.full": "Полная подсказка",
+	"tokenActionHud.settings.tooltips.choices.nameOnly": "Только название",
+	"tokenActionHud.settings.tooltips.choices.none": "Без подсказки",
+	"tokenActionHud.settings.tooltips.hint": "Способ отображения всплывающих подсказок при наведении курсора на действия.",
+	"tokenActionHud.settings.tooltips.name": "Отображение подсказок",
+	"tokenActionHud.settings.tooltipDelay.hint": "Настройте время (в миллисекундах), необходимое для появления начальной подсказки",
+	"tokenActionHud.settings.tooltipDelay.name": "Задержка подсказки",
+	"tokenActionHud.settings.userCustomLayout.hint": "Выберите макет для использования по умолчанию. Оставьте пустым, чтобы использовать системный макет",
+	"tokenActionHud.settings.userCustomLayout.name": "Пользовательский макет по умолчанию"
 }

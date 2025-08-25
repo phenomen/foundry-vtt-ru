@@ -42,6 +42,7 @@
 	"MonksActiveTiles.MinRequired": "Требуется минимально для триггера",
 	"MonksActiveTiles.TagName": "Введите название тега",
 	"MonksActiveTiles.Save": "Сохранение",
+	"MonksActiveTiles.SaveAsTemplate": "Сохранение шаблона",
 	"MonksActiveTiles.SnapToGrid": "Прикрепление к сетке",
 	"MonksActiveTiles.History": "История",
 	"MonksActiveTiles.HoverPointer": "Курсор-указатель при наведении",
@@ -61,6 +62,7 @@
 	"MonksActiveTiles.ActiveScene": "Активная сцена",
 	"MonksActiveTiles.TriggeringTokenScene": "Сцена триггерного токена",
 	"MonksActiveTiles.TokenVision": "Токен должен видеть триггер",
+	"MonksActiveTiles.DoorTriggers": "Дверные триггеры",
 
 	"MonksActiveTiles.actiontext.pause": "<action>{pause} игры</action>",
 	"MonksActiveTiles.actiontext.delay": "<action>Задержка</action> на <detail>\"{delay} секунд\"</detail>",
@@ -199,6 +201,7 @@
 	"MonksActiveTiles.ctrl.activate": "Активация",
 	"MonksActiveTiles.ctrl.usepermission": "Права",
 	"MonksActiveTiles.ctrl.distance": "Расстояние",
+	"MonksActiveTiles.ctrl.unit": "Единица измерения",
 	"MonksActiveTiles.ctrl.name": "Название",
 	"MonksActiveTiles.ctrl.chatbubble": "Облако чата",
 	"MonksActiveTiles.ctrl.runasgm": "Запуск от",
@@ -271,7 +274,7 @@
 	"MonksActiveTiles.ctrl.htmlfile": "Файл HTML",
 	"MonksActiveTiles.ctrl.buttons": "Кнопки",
 	"MonksActiveTiles.ctrl.select-target": "Выбор цели",
-	"MonksActiveTiles.ctrl.close-means-no": "Закрытие окна не вызывает переход",
+	"MonksActiveTiles.ctrl.onclose": "При закрытии перейти к",
 	"MonksActiveTiles.ctrl.fastforward": "Перемотка",
 	"MonksActiveTiles.ctrl.width": "Ширина",
 	"MonksActiveTiles.ctrl.height": "Высота",
@@ -297,6 +300,7 @@
 	"MonksActiveTiles.ctrl.triggerremote": "Триггер в месте назначения",
 	"MonksActiveTiles.ctrl.code": "Код",
 	"MonksActiveTiles.ctrl.hascondition": "Имеет",
+	"MonksActiveTiles.ctrl.classes": "CSS классы",
 
 	"MonksActiveTiles.mode.enter": "Вход",
 	"MonksActiveTiles.mode.exit": "Выход",
@@ -532,9 +536,9 @@
 	"MonksActiveTiles.show-imageless.name": "Отображение тайла без изображения",
 	"MonksActiveTiles.show-imageless.hint": "Отображать тайл на слое токенов для GM, если на тайле нет изображения",
 
-	"MonksActiveTiles.tabs.Setup": "Настройка",
-	"MonksActiveTiles.tabs.Actions": "Действия",
-	"MonksActiveTiles.tabs.Images": "Изображения",
+	"MonksActiveTiles.tabs.setup": "Настройка",
+	"MonksActiveTiles.tabs.actions": "Действия",
+	"MonksActiveTiles.tabs.images": "Изображения",
 
 	"MonksActiveTiles.history.ViewHistory": "История",
 	"MonksActiveTiles.history.ViewVariables": "Переменные",
@@ -544,6 +548,20 @@
 	"MonksActiveTiles.history.Who": "Кто",
 	"MonksActiveTiles.history.Name": "Название",
 	"MonksActiveTiles.history.Value": "Значение",
+
+	"TILE": {
+		"TABS": {
+			"activetile": "Триггеры"
+		}
+	},
+
+	"SIDEBAR": {
+		"ACTIONS": {
+			"CREATE": {
+				"Tile": "Создать тайл"
+			}
+		}
+	},
 
 	"TYPES": {
 		"RegionBehavior": {
