@@ -1,86 +1,86 @@
 /* MAIN MENU */
 
 body.auth #main-header h1 {
-	font-size: var(--font-size-48);
+  font-size: var(--font-size-48);
 }
 
 .setup .form-group label {
-	font-size: var(--font-size-15);
+  font-size: var(--font-size-15);
 }
 
 .package-list .package .package-controls button {
-	width: 130px;
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-14);
-	line-height: 20px;
+  width: 130px;
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-14);
+  line-height: 20px;
 }
 
 #setup-sidebar .news > h3 {
-	font-size: var(--font-size-20);
+  font-size: var(--font-size-20);
 }
 
 #setup-packages .package .package-title {
-	font-weight: 600;
+  font-weight: 600;
 }
 
 .journal-sheet .editor-content {
-	font-size: var(--font-size-15);
+  font-size: var(--font-size-15);
 }
 
 .directory .directory-list .directory-item {
-	font-size: var(--font-size-14);
+  font-size: var(--font-size-14);
 }
 
 .updated-packages :is(.header, .result) > div {
-	padding: 0.5rem 0.3rem;
+  padding: 0.5rem 0.3rem;
 }
 
 .updated-packages .action {
-	font-family: var(--font-sans-condensed);
-	font-weight: 500;
-	flex: 0 0 135px;
+  font-family: var(--font-sans-condensed);
+  font-weight: 500;
+  flex: 0 0 135px;
 }
 
 .updated-packages .package {
-	flex: 0 0 240px;
+  flex: 0 0 240px;
 }
 
 .updated-packages-table th.package,
 .updated-packages-table td.package {
-	width: 200px;
-	padding: 0.5rem;
+  width: 200px;
+  padding: 0.5rem;
 }
 
 .updated-packages-table th.action,
 .updated-packages-table td.action {
-	width: 135px;
-	padding: 0.5rem;
+  width: 135px;
+  padding: 0.5rem;
 }
 
 .updated-packages-table th.description,
 .updated-packages-table td.description {
-	padding: 0.5rem;
+  padding: 0.5rem;
 }
 
 .compendium-sidebar .dropdown-menu .dropdown-list {
-	padding: 6px;
+  padding: 6px;
 }
 
 .settings-sidebar .info .title {
-	font-size: var(--font-size-24);
+  font-size: var(--font-size-24);
 }
 
 .toolclip {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-15);
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-15);
 }
 
 #menu #menu-items {
-	&h4 {
-		font-family: var(--font-sans-condensed);
-		font-size: 1.5rem !important;
-		font-weight: 500 !important;
-	}
+  &h4 {
+    font-family: var(--font-sans-condensed);
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
+  }
 }
 
 /*  GAME UI */
@@ -93,79 +93,81 @@ select,
 .updated-packages-table td.action,
 .compendium-sidebar .dropdown-menu .dropdown-list .dropdown-item,
 .context-item {
-	font-family: var(--font-sans-condensed);
+  font-family: var(--font-sans-condensed);
 }
 
 .form-group > label,
 .form-group > span.label {
-	font-family: var(--font-sans-condensed);
-	font-weight: 600;
-	line-height: normal;
+  font-family: var(--font-sans-condensed);
+  font-weight: 600;
+  line-height: normal;
 }
 
 button,
 a.button,
 .tabs .item,
 .application nav.tabs {
-	font-family: var(--font-sans-condensed);
+  font-family: var(--font-sans-condensed);
 }
 
 button.icon,
 a.button.icon,
 label.search::after {
-	font-family: var(--font-awesome);
-	font-weight: 600;
+  font-family: var(--font-awesome);
+  font-weight: 600;
 }
 
 .directory .directory-header .action-buttons {
-	gap: 4px;
+  gap: 4px;
 }
 
+/*
 #hotbar {
 	align-self: start;
 }
+*/
 
 /* MODULES */
 
 #AA-autorec-settings .window-content header ul li {
-	font-family: var(--font-sans-condensed);
-	font-weight: 600;
-	font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
+  font-weight: 600;
+  font-size: var(--font-size-14);
 }
 
 .compendium-browser .spell-browser .spell .spell-tags {
-	max-width: 200px;
+  max-width: 200px;
 }
 
 .encounter-cr {
-	font-family: var(--font-sans-condensed);
+  font-family: var(--font-sans-condensed);
 }
 
 .request-roll {
-	font-family: var(--font-sans-condensed);
+  font-family: var(--font-sans-condensed);
 }
 
 .storyteller-tooltip {
-	font-family: var(--font-serif);
+  font-family: var(--font-serif);
 }
 
 .monks-tokenbar.chat-card .card-header h3 {
-	font-family: var(--font-sans-condensed);
+  font-family: var(--font-sans-condensed);
 }
 
 .monks-tokenbar .sheet .items-list .items-header h3 {
-	font-family: var(--font-serif);
+  font-family: var(--font-serif);
 }
 
 .monks-tokenbar .sheet .items-list .items-header h3 {
-	font-family: var(--font-sans-condensed);
+  font-family: var(--font-sans-condensed);
 }
 
 .monks-active-tiles.sheet .items-list .items-header h3,
 .monks-active-tiles.sheet .items-list .items-header > * {
-	font-family: var(--font-sans-condensed) !important;
+  font-family: var(--font-sans-condensed) !important;
 }
 
 .effect-player-container {
-	font-family: var(--font-sans-condensed);
+  font-family: var(--font-sans-condensed);
 }
