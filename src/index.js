@@ -1,4 +1,5 @@
 const scripts = import.meta.glob("./systems/*.js");
+const styles = import.meta.glob("../public/styles/*.css");
 
 import { init as dnd5eAlt } from "./systems/alt/dnd5e.js";
 
@@ -7,10 +8,16 @@ Hooks.once("init", async () => {
 	const route = foundry.utils.getRoute("/");
 
 	/* Загрузка особых CSS стилей для систем */
-	const systemCSS = document.createElement("link");
-	systemCSS.rel = "stylesheet";
-	systemCSS.href = `${route}modules/ru-ru/styles/${system}.css`;
-	document.head.appendChild(systemCSS);
+	const systemsWithCSS = Object.keys(styles)
+		.map((path) => path.match(/\/([^/]+)\.css$/)?.[1])
+		.filter((name) => name && !name.startsWith("_"));
+
+	if (systemsWithCSS.includes(system)) {
+		const systemCSS = document.createElement("link");
+		systemCSS.rel = "stylesheet";
+		systemCSS.href = `${route}modules/ru-ru/styles/${system}.css`;
+		document.head.appendChild(systemCSS);
+	}
 
 	/* Добавление шрифтов с кириллицей */
 	const cyrillicFonts = {
@@ -51,16 +58,15 @@ Hooks.once("init", async () => {
 	/* Случайные прилагательные для токенов */
 	CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
 
+	/* D&D5 альтернативный перевод */
 	if (system === "dnd5e") {
 		dnd5eAlt();
 	}
 
-	/* Системные скрипты */
-	for (const path in scripts) {
-		scripts[path]().then((mod) => {
-			if (path.includes(`${system}.js`)) {
-				mod.init();
-			}
-		});
+	/* Инициализация системного скрипта, если он существует */
+	const systemScriptPath = `./systems/${system}.js`;
+	if (scripts[systemScriptPath]) {
+		const mod = await scripts[systemScriptPath]();
+		mod.init();
 	}
 });
