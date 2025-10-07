@@ -1,5 +1,5 @@
 {
-	"$schema": "https://biomejs.dev/schemas/2.2.4/schema.json",
+	"$schema": "https://biomejs.dev/schemas/2.2.5/schema.json",
 	"vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
 	"files": { "ignoreUnknown": false },
 	"formatter": {
@@ -13,8 +13,7 @@
 		"bracketSameLine": false,
 		"bracketSpacing": true,
 		"expand": "auto",
-		"useEditorconfig": true,
-		"includes": ["src", "public", "!node_modules", "!build", "!coverage", "!ru-ru"]
+		"includes": ["**", "!**/node_modules", "!**/!build", "!**/!ru-ru"]
 	},
 	"linter": {
 		"enabled": true,

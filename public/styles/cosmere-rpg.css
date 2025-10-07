@@ -1,51 +1,51 @@
 :root {
-  --cosmere-font-normal: var(--font-fancy);
-  --cosmere-font-header: var(--font-sans-condensed);
-  --cosmere-font-header-sc: var(--font-modesto);
-  --cosmere-font-condensed: var(--font-sans-condensed);
+	--cosmere-font-normal: var(--font-fancy);
+	--cosmere-font-header: var(--font-sans-condensed);
+	--cosmere-font-header-sc: var(--font-modesto);
+	--cosmere-font-condensed: var(--font-sans-condensed);
 }
 
 .application.sheet.actor app-actor-attributes .attribute-group > .label {
-  font-weight: 600;
-  font-family: var(--font-fancy);
+	font-weight: 600;
+	font-family: var(--font-fancy);
 }
 
 .application.sheet.actor .sheet-stack .label {
-  max-width: 60px;
-  overflow: visible;
+	max-width: 60px;
+	overflow: visible;
 }
 
 .application.sheet.actor .sidebar-header .label {
-  font-weight: 600;
-  font-size: var(--font-size-11);
+	font-weight: 600;
+	font-size: var(--font-size-11);
 }
 
 .application.sheet .icon-header .title {
-  font-size: var(--font-size-11);
+	font-size: var(--font-size-11);
 }
 
 .application.sheet .item-list .item .detail,
 .application.dialog .item-list .item .detail {
-  font-family: var(--font-sans-condensed);
-  font-weight: 500;
+	font-family: var(--font-sans-condensed);
+	font-weight: 500;
 }
 
 .application.sheet .item-list .item .name,
 .application.dialog .item-list .item .name {
-  font-weight: 500;
+	font-weight: 500;
 }
 
 /* 
 	  there are a lot of journal variants used by different modules, so I need !important here to cover all of them
   */
 .sheet.journal-entry .journal-entry-page {
-  font-weight: 500 !important;
+	font-weight: 500 !important;
 }
 
 #tooltip {
-  font-weight: 500;
+	font-weight: 500;
 }
 
 .html-field-list p {
-  font-size: var(--font-size-14);
+	font-size: var(--font-size-14);
 }
