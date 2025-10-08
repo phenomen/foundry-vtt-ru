@@ -1,5 +1,4 @@
 const scripts = import.meta.glob("./systems/*.js");
-const styles = import.meta.glob("../public/styles/*.css");
 
 import { init as dnd5eAlt } from "./systems/alt/dnd5e.js";
 
@@ -8,16 +7,10 @@ Hooks.once("init", async () => {
 	const route = foundry.utils.getRoute("/");
 
 	/* Загрузка особых CSS стилей для систем */
-	const systemsWithCSS = Object.keys(styles)
-		.map((path) => path.match(/\/([^/]+)\.css$/)?.[1])
-		.filter((name) => name && !name.startsWith("_"));
-
-	if (systemsWithCSS.includes(system)) {
-		const systemCSS = document.createElement("link");
-		systemCSS.rel = "stylesheet";
-		systemCSS.href = `${route}modules/ru-ru/styles/${system}.css`;
-		document.head.appendChild(systemCSS);
-	}
+	const systemCSS = document.createElement("link");
+	systemCSS.rel = "stylesheet";
+	systemCSS.href = `${route}modules/ru-ru/styles/${system}.css`;
+	document.head.appendChild(systemCSS);
 
 	/* Добавление шрифтов с кириллицей */
 	const cyrillicFonts = {
