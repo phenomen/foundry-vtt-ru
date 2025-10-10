@@ -23,6 +23,7 @@
 	"TYPES.Item.critical": "Критическое попадание",
 	"TYPES.Item.injury": "Увечья",
 	"TYPES.Item.trait": "Черта",
+	"TYPES.Item.pack": "Набор",
 
 	"IMPMAL.Aim": "Прицеливание",
 	"IMPMAL.AddPatron": "Добавьте покровителя, перетащив его с боковой панели или щелкнув правой кнопкой мыши и выбрав 'Установить в качестве покровителя'",
@@ -36,6 +37,7 @@
 	"IMPMAL.Ag": "ЛВК",
 	"IMPMAL.Age": "Возраст",
 	"IMPMAL.Agility": "Ловкость",
+	"IMPMAL.Allocation": "Распределение",
 	"IMPMAL.Ammo": "Боеприпасы",
 	"IMPMAL.AmmoCost": "Цена боеприпасов",
 	"IMPMAL.AmmoEffects": "Эффект боеприпасов",
@@ -63,27 +65,36 @@
 	"IMPMAL.Attack": "Атака",
 	"IMPMAL.Augmetic": "Аугметика",
 	"IMPMAL.Augmetics": "Аугметика",
+	"IMPMAL.AutomaticFailure": "Безусловный провал",
+	"IMPMAL.AutomaticFailureHint": "Все проверки будут проваленными, если их результат равен или меньше этого числа",
+	"IMPMAL.AutomaticSuccess": "Безусловный успех",
+	"IMPMAL.AutomaticSuccessHint": "Все проверки будут успешными, если их результат равен или меньше этого числа",
 	"IMPMAL.Avail.": "Доступность",
 	"IMPMAL.Available": "Текущий",
 	"IMPMAL.Availability": "Проверка доступности",
 	"IMPMAL.Awareness": "Наблюдательность",
 	"IMPMAL.BS": "ДБ",
+	"IMPMAL.Back": "Спина",
+	"IMPMAL.BackArmour": "Задняя броня",
 	"IMPMAL.BallisticSkill": "Дальний бой",
 	"IMPMAL.Barrier": "Преграда",
 	"IMPMAL.Base": "Основной",
 	"IMPMAL.Biomancy": "Биомантия",
+	"IMPMAL.Biography": "Биография",
 	"IMPMAL.Blast": "Взрыв",
 	"IMPMAL.Body": "Торс",
 	"IMPMAL.BodyAbbrev": "Т",
 	"IMPMAL.Bonuses": "Бонусы",
 	"IMPMAL.Bolt": "Болтерное",
 	"IMPMAL.Boon": "Возможность",
-	"IMPMAL.Boons": "Возможности",
+	"IMPMAL.Boons": "Привилегии",
 	"IMPMAL.Brawling": "Безоружный бой",
 	"IMPMAL.Bulky": "Громоздкий",
 	"IMPMAL.BugReporter": "Отчет об ошибках",
 	"IMPMAL.Burst": "Короткая очередь",
 	"IMPMAL.Buy": "Покупка",
+	"IMPMAL.BuyCost": "Покупка ({cost})",
+	"IMPMAL.BuySuccessful": "<p>Приобрёл <strong>{item}</strong> за <strong>{cost} соларов</strong></p>",
 	"IMPMAL.BuyAmmo": "Покупка боеприпасов",
 	"IMPMAL.CalledShot": "Нацеленная атака",
 	"IMPMAL.CannotEquipForceField": "Не удается экипировать перегруженное защитное поле",
@@ -91,15 +102,17 @@
 	"IMPMAL.CannotEditPropertyWithEffect": "Это свойство невозможно отредактировать, так как к нему применяется активный эффект.",
 	"IMPMAL.CannotDeleteItemEffect": "Этот эффект связан с элементом на этом объекте. Удалите сам элемент или эффект с листа элемента.",
 	"IMPMAL.Carapace": "Панцирная",
+	"IMPMAL.Career": "Карьера",
 	"IMPMAL.Cargo": "Груз",
 	"IMPMAL.Category": "Категория",
 	"IMPMAL.Chain": "Цепное",
 	"IMPMAL.Challenging": "Серьёзная",
 	"IMPMAL.Change": "Применить",
+	"IMPMAL.CharacterCreation": "Создание персонажа",
 	"IMPMAL.Characteristic": "Характеристика",
 	"IMPMAL.CharacteristicTest": "Проверка {characteristic}",
 	"IMPMAL.Characteristics": "Характеристики",
-	"IMPMAL.Charge": "Натиск",
+	"IMPMAL.Charge": "Атала с разгона",
 	"IMPMAL.ChoiceAND": "И",
 	"IMPMAL.ChoiceOR": "ИЛИ",
 	"IMPMAL.ChoiceConfig": "Выбор настройки",
@@ -108,6 +121,7 @@
 	"IMPMAL.ChooseSpecialisation": "Выберите специализацию. Если выбор не сделан, будет создана пустая специализация.",
 	"IMPMAL.ChooseNum": "Выберите {num}",
 	"IMPMAL.Choose": "Выберите",
+	"IMPMAL.ChooseActor": "Выберите актера",
 	"IMPMAL.ChooseFaction": "Выберите организацию",
 	"IMPMAL.Close": "Ближнее",
 	"IMPMAL.ClearRended": "Очистить разрыв",
@@ -143,13 +157,82 @@
 	"IMPMAL.ConditionStunnedMajor": "Ошеломлён (Серьёзное)",
 	"IMPMAL.ConditionStunnedMinor": "Ошеломлён (Лёгкое)",
 	"IMPMAL.ConditionUnconscious": "Без сознания",
+	"IMPMAL.Connections": "Связи",
+
+	"IMPMAL.CHARGEN": {
+		"NoGMWarning": "",
+		"Stages": "Этапы",
+		"Title": "Создание персонажа",
+
+		"StageTitle": {
+			"Characteristics": "Characteristics",
+			"Origin": "Происхождения",
+			"Faction": "Фракция",
+			"Role": "Роль",
+			"Details": "Подробности"
+		},
+
+		"Warn": {
+			"NoGM": "Для создания персонажа ведущий должен быть авторизован, либо игроки должны иметь разрешение «Создавать новых персонажей»"
+		},
+
+		"UseExistingData": "Use Existing Data",
+		"UseExistingDataContent": "Обнаружены данные с предыдущей сессии. Использовать эти данные?",
+		"Message": {
+			"Start": "<p><b>{user}</b>приступил к созданию персонажа!</p>",
+			"Created": "<p><b>{name}</b> создан!",
+			"AllocateCharacteristics": "<p>Начато распределение характеристик</p>",
+			"SwappedCharacteristics": "<p>Заменил {ch1} на {ch2}</p>",
+			"Chosen": "<p>Chose: <b>{chosen}</b>!</p>",
+			"Rolled": "<p>Rolled: <b>{rolled}</b>!</p>",
+			"RolledCharacteristics": "<p>Rolled Characterstics</p>",
+			"ReRolledCharacteristics": "<p>Rerolled Characterstics</p>"
+		},
+		"ERROR": {
+			"Create": "Ошибка при создании персонажа: {error}",
+			"StageStart": "Невозможно начать этот этап: сначала необходимо завершить {stage}",
+			"Faction": "Выберите фракции случайно, совершите бросок игральных костей, или вручную, перетащив на страницу.",
+			"Origin": "Выберите происхождение случайно, совершите бросок игральных костей, или вручную, перетащив на страницу.",
+			"Role": "Please Add an Origin by dragging and dropping.",
+			"Choices": "There are pending choices that need to be made before this Stage is complete.",
+			"LowAdvances": "Unallocated Advances ({allocated} out of {total})",
+			"HighAdvances": "Overallocated Advances ({allocated} out of {total})",
+			"TooManySkillAdvances": "A new Character cannot have more than 2 Advances in any one Skill ({skill})",
+			"TooManySpecAdvances": "A new Character cannot have more than 1 Advance in any one Specialisation",
+			"CharacteristicAllocation": "Characteristic allocation points must not exceed 90",
+			"CharacteristicAllocationBounds": "Cannot allocate less than 4 or more than 18 in a single characteristic"
+		},
+
+		"Characteristics": {
+			"AllocationPoints": "Allocate 90 Points to characteristics (min. 4, max: 18)",
+			"AllocationSpent": "You have spent {spent}",
+			"NotHappy": "Not happy with these numbers?",
+			"Rearrange": "Переместить",
+			"Reroll": "Повторный бросок",
+			"Allocate": "Распределить",
+			"Instructions": "Перетащите выпавшие значения, чтобы изменить характеристики (это дает меньше опыта). Либо вы можете совершить повторный бросок без опыта. В качестве альтернативы, вы можете распределить 90 очков по вашему желанию (без опыта)."
+		}
+	},
+
+	"IMPMAL.ActorConfig": {
+		"Title": "Настройка персонажа",
+		"AutoCalc": {
+			"Wounds": "Авто-расчёт пунктов здоровья",
+			"CriticalWounds": "Авто-расчёт травм",
+			"Initiative": "Авто-расчёт инициативы",
+			"Corruption": "Авто-расчёт критической скверны"
+		},
+		"ShowPassengers": "Показать токены пассажиров"
+	},
+
 	"IMPMAL.CountEveryBullet": "Точный подсчёт боеприпасов",
 	"IMPMAL.CountEveryBulletHint": "Использовать необязательное правило 'Точный подсчёт боеприпасов' описанное на странице 314.",
 	"IMPMAL.Corruption": "Порча",
-	"IMPMAL.CorruptionNum": "Порча: {corruption}",
+	"IMPMAL.CorruptionNum": "Скверна: {corruption}",
 	"IMPMAL.CorruptionAdded": "Добавлено порчи: {corruption}",
-	"IMPMAL.CorruptionPrompt": "Сопротивление порче",
+	"IMPMAL.CorruptionPrompt": "Сопротивление скверне",
 	"IMPMAL.CorruptionPromptContent": "Выберите навык, используемый для сопротивления порче",
+	"IMPMAL.MutationPromptContent": "Выберите навык, используемый для сопротивления мутации",
 	"IMPMAL.Cost": "Цена",
 	"IMPMAL.CurrentAction": "Текущее действие",
 	"IMPMAL.Custom": "Стандартные",
@@ -158,11 +241,12 @@
 	"IMPMAL.CreateOption": "Создать опцию",
 	"IMPMAL.CreateOptionDetails": "<p>Какая опция?</p><p><strong>Прототип</strong>: Предмет, с которым не связано никаких данных, кроме его названия, будет создан как предмет типа - снаряжение</p><p><strong>Фильтр</strong>: Определите фильтры для обеспечения выбора предметов</p>",
 	"IMPMAL.Crew": "Экипаж",
-	"IMPMAL.CriticalWounds": "Критические раны",
-	"IMPMAL.Critical": "Критическое попадание",
+	"IMPMAL.CriticalWounds": "Травмы",
+	"IMPMAL.Critical": "Удачное попадание",
 	"IMPMAL.Cover": "Укрытие",
 	"IMPMAL.Damage": "Урон",
 	"IMPMAL.DamageDisplay": "{damage} урона",
+	"IMPMAL.DamageTaken": "{damage} урона в {location}",
 	"IMPMAL.Dark": "Темнота",
 	"IMPMAL.Dead": "Мёртв",
 	"IMPMAL.DeadlyHazard": "Смертельная опасность",
@@ -170,12 +254,16 @@
 	"IMPMAL.Defended": "Защищён",
 	"IMPMAL.Defensive": "Защитное",
 	"IMPMAL.Defend": "Защита",
+	"IMPMAL.Delete": "удалить",
 	"IMPMAL.DeleteItem": "удалить предмет",
 	"IMPMAL.DeleteItemConfirmation": "Вы уверены, что хотите удалить этот предмет?",
 	"IMPMAL.DeleteActiveEffect": "Удаление активного эффекта",
 	"IMPMAL.DeleteActiveEffectConfirmation": "Вы уверены, что хотите удалить этот активный эффект?",
 	"IMPMAL.DeleteFaction": "Удалить организацию",
 	"IMPMAL.DeleteFactionConfirmation": "Вы уверены, что хотите удалить эту организацию?",
+	"IMPMAL.DeleteVehicleWeapon": "Delete or store in Cargo?",
+	"IMPMAL.DeletePackContents": "Delete Pack Contents",
+	"IMPMAL.DeletePackContentsPrompt": "Delete all the Items within this Pack from the Actor?",
 	"IMPMAL.DeletingEffectItems": "Удаление эффекта предмета: {items}",
 	"IMPMAL.Demeanor": "Характер",
 	"IMPMAL.Description": "Описание",
@@ -185,16 +273,15 @@
 	"IMPMAL.Details": "Подробности",
 	"IMPMAL.DetailsCharacter": "Подробности (персонаж)",
 	"IMPMAL.DetailsPatron": "Подробности (покровитель)",
-	"IMPMAL.Dexterity": "Ловкость рук",
+	"IMPMAL.Dexterity": "Сноровка",
 	"IMPMAL.DialogModifiers": "Модификаторы",
 	"IMPMAL.DialogModifierTargeter": "Диалоговое окно выбора цели",
-	"IMPMAL.DialogModifierHideScript": "Скрыть скрипт",
-	"IMPMAL.DialogModifierAcivationScript": "Активировать скрипт",
-	"IMPMAL.DIalogModifierSubmissionScript": "Отправить скрипт",
 	"IMPMAL.Difficult": "Трудная",
 	"IMPMAL.Difficulty": "Сложность",
 	"IMPMAL.DifficultTerrain": "Труднопроходимая местность",
 	"IMPMAL.DisabledEffects": "Неактивные эффекты",
+	"IMPMAL.DisableTheme": "Пилот",
+	"IMPMAL.DisableThemeHint": "Отключает оформление Warhammer в стандартном интерфейсе Foundry (тему листа документа можно переключить через настройки листа в верхней части окна).",
 	"IMPMAL.Disadvantage": "Помеха",
 	"IMPMAL.Discipline": "Дисциплина",
 	"IMPMAL.Disengage": "Выйти из ближнего боя",
@@ -203,6 +290,7 @@
 	"IMPMAL.Divination": "Предсказание",
 	"IMPMAL.Dodge": "Уклонение",
 	"IMPMAL.DragModifications": "Перетащите предмет модификации на этот лист, чтобы добавить изменения.",
+	"IMPMAL.Driver/Pilot": "Пилот",
 	"IMPMAL.Durable": "Надёжный",
 	"IMPMAL.Duration": "Длительность",
 	"IMPMAL.Duty": "Служба",
@@ -210,50 +298,6 @@
 	"IMPMAL.DutyChoice": "<p>Выберите службу, которая будет применена к данному актёру.</p> <p class='note'>Это изменит их характеристики, навыки и добавит новые предметы.</p>",
 	"IMPMAL.Easy": "Лёгкая",
 	"IMPMAL.EditTest": "Редактировать проверку",
-	"IMPMAL.EffectApplication": "Применение эффекта",
-	"IMPMAL.EffectApplicationHint": "Настройте способ передачи или применения активного эффекта.",
-	"IMPMAL.EffectApplicationDocument": "Документ",
-	"IMPMAL.EffectApplicationDamage": "Урон",
-	"IMPMAL.EffectApplicationTarget": "Цель",
-	"IMPMAL.EffectApplicationZone": "Зона",
-	"IMPMAL.EffectApplicationOther": "Другое",
-	"IMPMAL.EffectApplicationDocumentHint": "Примените эффект к владельцу документа",
-	"IMPMAL.EffectApplicationDamageHint": "Урон",
-	"IMPMAL.EffectApplicationTargetHint": "Цель",
-	"IMPMAL.EffectApplicationZoneHint": "Зона",
-	"IMPMAL.EffectApplicationOtherHint": "Другое",
-	"IMPMAL.EffectApplications": "Варианты применения",
-	"IMPMAL.EffectApplicationDocumentType": "Тип документа",
-	"IMPMAL.EffectApplicationZoneType": "Тип зоны",
-	"IMPMAL.EffectApplicationZoneKeep": "Сохранить эффект",
-	"IMPMAL.EffectApplicationAvoidTest": "Избежать проверки",
-	"IMPMAL.EffectApplicationEnableScript": "Включить скрипт",
-	"IMPMAL.EffectApplicationFilter": "Фильтр",
-	"IMPMAL.EffectApplicationPrompt": "Незамедлительно",
-	"IMPMAL.EffectApplicationPromptNumber": "Число",
-	"IMPMAL.EffectApplicationEquipTransfer": "Передача предмета",
-	"IMPMAL.EffectApplicationConsume": "Потребление",
-	"IMPMAL.EffectApplicationZoneSelf": "Своя зона",
-	"IMPMAL.EffectApplicationZoneTraits": "Свойства зоны",
-	"IMPMAL.EffectApplicationDocumentTypeHint": "К какому документу применить активный эффект",
-	"IMPMAL.EffectApplicationZoneTypeHint": "<strong>Эффект зоны</strong> означает, что эффект привязан к зоне, <strong>Актёры в зоне</strong> означает, что это относится ко всем актёрам в этой зоне, <strong>Следовать за актёром</strong> означает, что это применимо к любой зоне, в которой находится целевой актёр",
-	"IMPMAL.EffectApplicationZoneKeepHint": "Предотвращает устранение эффекта при выходе из зоны",
-	"IMPMAL.EffectApplicationAvoidTestHint": "Выполняет проверку, чтобы избежать применения активного эффекта",
-	"IMPMAL.EffectApplicationEquipTransferHint": "Передавайте этот эффект только тогда, когда он включен.",
-	"IMPMAL.EffectApplicationEnableScriptHint": "Условие, определяющее, должен ли эффект быть включен или отключен.",
-	"IMPMAL.EffectApplicationFilterHint": "Скрипт для фильтрации документов, к которым нужно применить активный эффект. Должен возвращать <strong>true</strong> чтобы предотвратить нанесение.",
-	"IMPMAL.EffectApplicationPromptHint": "Введите запрос и выберите, какой документ следует активировать. Можно использовать <strong>Фильтр</strong> чтобы сузить выбор.",
-	"IMPMAL.EffectApplicationConsumeHint": "Потребляйте принадлежащий предмет при активации",
-	"IMPMAL.EffectApplicationZoneSelfHint": "Этот эффект не является целенаправленным и всегда применяется к зоне владельца",
-	"IMPMAL.EffectApplicationAvoidTestNone": "Никто",
-	"IMPMAL.EffectApplicationAvoidTestItem": "Предмет",
-	"IMPMAL.EffectApplicationAvoidTestScript": "Скрипт",
-	"IMPMAL.EffectApplicationAvoidTestCustom": "Особый",
-	"IMPMAL.EffectApplicationAvoidTestPrevention": "Запустите эту проверку при добавлении эффекта, предотвратив её успешное выполнение",
-	"IMPMAL.EffectApplicationAvoidTestReversed": "Избежать эффекта на провал, а не на успех.",
-	"IMPMAL.EffectApplicationAvoidTestManual": "Укажите кнопку, позволяющую легко выполнить эту проверку, что не повлияет на успешный результат",
-	"IMPMAL.EffectApplicationPreApplyScript": "Предварительное применение скрипта",
-	"IMPMAL.EffectApplicationPreApplyScriptHint": "Это выполняется до применения эффекта - он выполняется на источнике, а не на цели. Верните значение false, чтобы предотвратить применение (только для повреждения, цели и зоны)..",
 	"IMPMAL.EffectOptions": "Параметры эффекта",
 	"IMPMAL.EffectPrevented": "Предотвращено {name}",
 	"IMPMAL.EffectFiltered": "{name} не применяется к {target} благодаря фильтрации",
@@ -263,10 +307,13 @@
 	"IMPMAL.EffectNewScript": "Новый скрипт",
 	"IMPMAL.EffectConditionScriptCannotChange": "Невозможно изменить включено/отключено при управлении с помощью сценария условий",
 	"IMPMAL.Elite": "Элита",
+	"IMPMAL.Encumbrance": "Вес",
 	"IMPMAL.Enc.": "Вес",
 	"IMPMAL.Engineering": "Инженерное дело",
 	"IMPMAL.Enormous": "Огромный",
 	"IMPMAL.Eqp.": "Экип.",
+	"IMPMAL.EquipSlots": "Слоты снаряжения",
+	"IMPMAL.EquipSlotsTT": "Добавляет слоты для персонажей, позволяя обойти ограничение двух рук при экипировке предметов.",
 	"IMPMAL.Equipment": "Снаряжение",
 	"IMPMAL.ErrorAmmoUse": "ErrorAmmoUse",
 	"IMPMAL.ErrorFateRerollUsed": "Повторный бросок судьбы уже использован!",
@@ -287,8 +334,18 @@
 	"IMPMAL.ErrorDutyTableDrop": "Таблицы должны быть брошены в поле таблица возможностей или таблица слабостей",
 	"IMPMAL.ErrorPatronDutyCharacter": "Не удается применить к персонажу служба покровителя",
 	"IMPMAL.ErrorID": "ID {name} уже существует в коллекции. Этому документу присвоен уникальный ID",
+	"IMPMAL.ErrorRewardAlreadyReceived": "{name} has already received this reward!",
+	"IMPMAL.ErrorTargetActorsForReward": "GMs must target the Actors to receive the rewards.",
+	"IMPMAL.ErrorSlotItemActor": "Both this and the slotted Item must be owned by an Actor.",
+	"IMPMAL.ErrorNoActorBuyItem": "No assigned Actor to buy this Item.",
+	"IMPMAL.ErrorNotEnoughSolars": "{name} не имеет достаточно соларов!",
+	"IMPMAL.ErrorOwnedItemInPack": "Owned Items cannot be placed in a pack that is not owned.",
+	"IMPMAL.ErrorTraitType": "Wrong Trait type",
+	"IMPMAL.ErrorNoAvailableActors": "No available Actors to choose from.",
 	"IMPMAL.Excellent": "Превосходное",
-	"IMPMAL.ExposureToCorruption": "{label} воздействие порчи",
+	"IMPMAL.ExposureMinor": "Minor Exposure to Corruption",
+	"IMPMAL.ExposureModerate": "Moderate Exposure to Corruption",
+	"IMPMAL.ExposureMajor": "Major Exposure to Corruption",
 	"IMPMAL.Exotic": "Экзотический",
 	"IMPMAL.Extreme": "Сверхдальняя",
 	"IMPMAL.Eyes": "Глаза",
@@ -297,27 +354,35 @@
 	"IMPMAL.FailedRanged": "<strong>Провал проверки стрельбы</strong>: Встречная проверка отменена",
 	"IMPMAL.Fast": "Быстрая",
 	"IMPMAL.Fate": "Судьба",
-	"IMPMAL.Fel": "ОБЩ",
-	"IMPMAL.Fellowship": "Общительность",
+	"IMPMAL.FateAdvantage": "Трата судьбы",
+	"IMPMAL.Fel": "Х",
+	"IMPMAL.Fellowship": "Харизма",
 	"IMPMAL.Filter": "Фильтр",
 	"IMPMAL.Filters": "Фильтры",
 	"IMPMAL.Flak": "Флак",
 	"IMPMAL.Flame": "Огнемётное",
 	"IMPMAL.Flamer": "Огнемёт",
 	"IMPMAL.Flee": "Побег",
+	"IMPMAL.Fly": "Полёт",
 	"IMPMAL.Force": "Психосиловое",
 	"IMPMAL.Forcefield": "Защитное поле",
 	"IMPMAL.ForceFieldProtection": "Защита защитным полем",
 	"IMPMAL.ForceFieldCollapsed": "Защитное поле схлопнуто",
 	"IMPMAL.Formula": "Формула",
-	"IMPMAL.Fortitude": "Стойкость",
+	"IMPMAL.Fortitude": "Живучесть",
+	"IMPMAL.Fraction": "Fraction",
 	"IMPMAL.Free": "Бесплатно",
-	"IMPMAL.Fumble": "Фиаско!",
+	"IMPMAL.Front": "Передняя часть",
+	"IMPMAL.FrontArmour": "Передняя броня",
+	"IMPMAL.Fumble": "Неудача",
+	"IMPMAL.Gender": "Пол",
 	"IMPMAL.GMNotes": "Заметки ведущего",
 	"IMPMAL.Good": "Хорошее",
 	"IMPMAL.Grapple": "Захват",
 	"IMPMAL.GrenadesExplosives": "Гранаты и взрывчатка",
 	"IMPMAL.Hair": "Волосы",
+	"IMPMAL.HairColour": "Цвет волос",
+	"IMPMAL.HairStyle": "Прическа",
 	"IMPMAL.Handed": "Ведущяя рука",
 	"IMPMAL.Hard": "Тяжёлая",
 	"IMPMAL.Hazard": "Опасность",
@@ -333,6 +398,7 @@
 	"IMPMAL.HowManyMags": "Сколько магазинов?",
 	"IMPMAL.Hunted": "Ненависть",
 	"IMPMAL.IgnoreAP": "Игнорировать Броню",
+	"IMPMAL.IgnoreEncumbrance": "Игнорировать вес",
 	"IMPMAL.IgnorePrerequisite": "Игнорировать предварительное условие",
 	"IMPMAL.IgnorePrerequisiteContent": "<p>Этот актёр не соответствует требованиям, предъявляемым к этому таланту. Все равно продолжить?</p>",
 	"IMPMAL.Immediate": "В непосредственной близости",
@@ -346,12 +412,14 @@
 	"IMPMAL.Infl": "Вл.",
 	"IMPMAL.Initiative": "Инициатива",
 	"IMPMAL.Injury": "Увечье",
+	"IMPMAL.Injuries": "Увечья",
 	"IMPMAL.Instant": "Мгновенная",
 	"IMPMAL.InStock": "В наличии!",
 	"IMPMAL.InsufficentQuantity": "Недостаточное количество",
 	"IMPMAL.Int": "ИНТ",
 	"IMPMAL.Intelligence": "Интеллект",
 	"IMPMAL.Intuition": "Интуиция",
+	"IMPMAL.Items": "Предметы",
 	"IMPMAL.ItemsNotAllowed": "Этот предмет не разрешен для данного типа актёров",
 	"IMPMAL.ItemTraits": "Свойства предмета",
 	"IMPMAL.ItemDisplayXSolars": "{solars} соларов",
@@ -361,6 +429,7 @@
 	"IMPMAL.ItemDisplayUsedWith": "Используется с {usedWith}",
 	"IMPMAL.ItemDisplayXArmour": "{armour} брони",
 	"IMPMAL.Label": "Метка",
+	"IMPMAL.Land": "Наземный",
 	"IMPMAL.Large": "Большой",
 	"IMPMAL.Las": "Лазерное",
 	"IMPMAL.Launcher": "Пусковое",
@@ -381,6 +450,7 @@
 	"IMPMAL.LocationChoices": "Выбор зоны попадания",
 	"IMPMAL.Locations": "Зоны попадания",
 	"IMPMAL.Location": "Зона попадания",
+	"IMPMAL.Log": "Log",
 	"IMPMAL.Logic": "Логика",
 	"IMPMAL.Long": "Дальняя",
 	"IMPMAL.LongGun": "Длинноствольное",
@@ -402,6 +472,8 @@
 	"IMPMAL.MaxAugmetics": "Максимум аугметики",
 	"IMPMAL.MaxWounds": "Максимум ран",
 	"IMPMAL.MaxCriticalWounds": "Максимум критических ран",
+	"IMPMAL.MaximumPurged": "Max Purge",
+	"IMPMAL.MaximumPurgedTT": "Limits the amount purged if succeeded",
 	"IMPMAL.Medicae": "Медицина",
 	"IMPMAL.Medium": "Средняя",
 	"IMPMAL.Melee": "Рукопашный бой",
@@ -430,7 +502,6 @@
 	"IMPMAL.NoItems": "У этого актера нет никаких предметов!",
 	"IMPMAL.NoItemsToDamage": "Нет предметов, которым можно было бы нанести ущерб",
 	"IMPMAL.None": "Нет",
-	"IMPMAL.NoAssignedCharacterError": "У пользователя должен быть назначенный персонаж",
 	"IMPMAL.NoAmmoLoaded": "Патроны не заряжены",
 	"IMPMAL.Normal": "Средняя",
 	"IMPMAL.Notes": "Заметки",
@@ -439,17 +510,20 @@
 	"IMPMAL.NotEnoughSolars": "Не хватает соларов",
 	"IMPMAL.NotValidChoiceType": "Неправильный выбор",
 	"IMPMAL.NoOWnerOrGMFound": "Владелец или ведущий не найдены",
+	"IMPMAL.Number": "Number",
 	"IMPMAL.Obscured": "Затенение",
 	"IMPMAL.OneHanded": "Одноручное",
 	"IMPMAL.OneUse": "Одно применение",
 	"IMPMAL.OnlyAutomaticSuccess": "Успех достигается только при броске 01-05",
 	"IMPMAL.Opposed": "Встречная проверка",
+	"IMPMAL.OpposedTest": "Встречная проверка",
 	"IMPMAL.Operation": "Операция",
 	"IMPMAL.Ordnance": "Тяжёлое",
 	"IMPMAL.Origin": "Происхождение",
 	"IMPMAL.OriginApplied": "Происхождение {name} применено",
 	"IMPMAL.Ornamental": "Прекрасный",
 	"IMPMAL.Other": "Другое",
+	"IMPMAL.Offsets": "Offsets",
 	"IMPMAL.OutOfStock": "Нет в наличии!",
 	"IMPMAL.OverburdenedThreshold": "Порог перегруженности",
 	"IMPMAL.Overload": "Перегрузка",
@@ -458,11 +532,13 @@
 	"IMPMAL.Passengers": "Пассажиры",
 	"IMPMAL.Patron": "Покровитель",
 	"IMPMAL.Path": "Путь",
+	"IMPMAL.Packs": "Packs",
 	"IMPMAL.LightCover": "Ненадёжное укрытие",
 	"IMPMAL.MediumCover": "Сносное укрытие",
 	"IMPMAL.HeavyCover": "Надёжное укрытие",
 	"IMPMAL.PayGrade": "Жалование",
 	"IMPMAL.PayGradeModifier": "Модификатор жалования",
+	"IMPMAL.PaymentMultiplier": "Payment Multiplier",
 	"IMPMAL.Penetrating": "Бронебойное",
 	"IMPMAL.Per": "ВОС",
 	"IMPMAL.Perils": "Прорыв",
@@ -474,6 +550,8 @@
 	"IMPMAL.Pistol": "Пистолеты",
 	"IMPMAL.Placeholder": "Заполение",
 	"IMPMAL.Plasma": "Плазменное",
+	"IMPMAL.PlayerExperienceEditing": "Редактирование опыта игрока",
+	"IMPMAL.PlayerExperienceEditingHint": "Позволяет игрокам вручную изменять значения пунктов опыта",
 	"IMPMAL.PlayerVisible": "Видно игрокам",
 	"IMPMAL.Poor": "Низкое",
 	"IMPMAL.PoorlyLit": "Слабое освещение",
@@ -483,7 +561,7 @@
 	"IMPMAL.Powers": "Психосилы",
 	"IMPMAL.PowerCriticalTooltip": "Варп-рейтинг уменьшен вдвое",
 	"IMPMAL.PowerFumbleTooltip": "Получен удвоенный Варп-заряд",
-	"IMPMAL.Presence": "Командование",
+	"IMPMAL.Presence": "Авторитет",
 	"IMPMAL.Prevention": "Предотвращение",
 	"IMPMAL.Prized": "Уважение",
 	"IMPMAL.PriceMultiplier": "Модификатор цены",
@@ -494,21 +572,24 @@
 	"IMPMAL.PsychicPhenomena": "Психический феномен",
 	"IMPMAL.Push": "Усилие",
 	"IMPMAL.Purge": "Очищение",
+	"IMPMAL.PurgeDialog": "Сделать проверку на очищение?",
 	"IMPMAL.Purged": "Очищённый",
 	"IMPMAL.Pyromancy": "Пиромантия",
 	"IMPMAL.Qty.": "Кол.",
 	"IMPMAL.QuickEffect": "Быстрый эффект",
-	"IMPMAL.Range": "Дальность",
+	"IMPMAL.Range": "Дистанция",
 	"IMPMAL.Ranged": "Стрельба",
 	"IMPMAL.RangeModifier": "Модификатор дальности",
 	"IMPMAL.RangeOverride": "Изменение дальности",
 	"IMPMAL.RangedWeapons": "Оружие дальнего боя",
 	"IMPMAL.RapidFire": "Длинная очередь",
-	"IMPMAL.Rapport": "Взаимопонимание",
+	"IMPMAL.Rapport": "Убеждение",
 	"IMPMAL.Rare": "Раритет",
 	"IMPMAL.Reach": "Длинное",
 	"IMPMAL.ReapplyDamageTitle": "Повторное нанесение урона",
 	"IMPMAL.ReapplyDamagePrompt": "Этот урон уже был нанесён. Повторить?",
+	"IMPMAL.Reason": "Повод",
+	"IMPMAL.Receive": "Получить",
 	"IMPMAL.Repeat": "Повтор",
 	"IMPMAL.Reflexes": "Рефлексы",
 	"IMPMAL.Reliable": "Безотказное",
@@ -526,6 +607,8 @@
 	"IMPMAL.RestrainedThreshold": "Порог обездвиженности",
 	"IMPMAL.Restricted": "Обездвижен",
 	"IMPMAL.Reversed": "Перевернуть",
+	"IMPMAL.Reward": "Награда",
+	"IMPMAL.RemoveFromPack": "Remove from Pack",
 	"IMPMAL.Right": "Правая",
 	"IMPMAL.RightArm": "Правая рука",
 	"IMPMAL.RightArmAbbrev": "ПР",
@@ -549,6 +632,8 @@
 	"IMPMAL.SendingSocketRequest": "Отправка запроса сокета в {name}",
 	"IMPMAL.SeizeTheInitiative": "Перехват инициативы",
 	"IMPMAL.SetPatron": "Назначен покровителем",
+	"IMPMAL.SelfTest": "Self Test",
+	"IMPMAL.SelfTestTT": "Владелец этого черты должен сделать эту проверку",
 	"IMPMAL.Shield": "Щит",
 	"IMPMAL.Shock": "Шоковое",
 	"IMPMAL.Shoddy": "Дрянной",
@@ -563,18 +648,22 @@
 	"IMPMAL.Skills": "Навыки",
 	"IMPMAL.SkillSpecialisation": "Специализация {skill}",
 	"IMPMAL.Slow": "Медленная",
+	"IMPMAL.Slots": "Медленный",
 	"IMPMAL.Small": "Небольшой",
 	"IMPMAL.Solars": "Солары",
+	"IMPMAL.SolarsAdded": "добавить {solars} соларов",
 	"IMPMAL.Solid": "Стабберное",
 	"IMPMAL.Source": "Источник",
 	"IMPMAL.Special": "Особый",
 	"IMPMAL.Specialisation": "Специализация",
+	"IMPMAL.Specialisations": "Специализации",
 	"IMPMAL.SpecialisationAdvances": "Развитие специализации",
 	"IMPMAL.Specialised": "Специальное",
 	"IMPMAL.Species": "Вид",
 	"IMPMAL.Speed": "Скорость",
 	"IMPMAL.SpeedModifierLand": "Модификатор скорости (Наземная)",
 	"IMPMAL.SpeedModifierFly": "Модификатор скорости (Полёт)",
+	"IMPMAL.SpeedConfig.Title": "Настройка скорости",
 	"IMPMAL.Spent": "Траты",
 	"IMPMAL.Spread": "Разлёт",
 	"IMPMAL.Standard": "Среднее",
@@ -584,23 +673,35 @@
 	"IMPMAL.Str": "СИЛ",
 	"IMPMAL.Strength": "Сила",
 	"IMPMAL.Structure": "Структура",
+	"IMPMAL.Submit": "Отправить ",
 	"IMPMAL.Subtle": "Незаметное",
+	"IMPMAL.Subspecies": "Subspecies",
 	"IMPMAL.Success": "Успех",
+	"IMPMAL.SuccumbingToCorruption": "Воздействие порчи",
 	"IMPMAL.Supercharge": "Перегрузка",
 	"IMPMAL.Superiority": "Превосходство",
 	"IMPMAL.SupportAttachment": "Вспомогательное",
 	"IMPMAL.Sustained": "Поддержание",
+	"IMPMAL.Swift": "Стремительная",
 	"IMPMAL.TableSettings": "Настройки таблицы",
+	"IMPMAL.TableConfigure": "Настройка таблиц",
 	"IMPMAL.TableSettingsHint": "Настройте, какие таблицы система использует в контекстных ссылках.",
 	"IMPMAL.TableSetting.critarm": "Критическое попадание - Рука",
 	"IMPMAL.TableSetting.critleg": "Критическое попадание - Нога",
 	"IMPMAL.TableSetting.crithead": "Критическое попадание - Голова",
 	"IMPMAL.TableSetting.critbody": "Критическое попадание - Торс",
 	"IMPMAL.TableSetting.critvehicle": "Критическое попадание - Транспорт",
-	"IMPMAL.TableSetting.fumble": "Фиаско",
+	"IMPMAL.TableSetting.critwheeled": "Критические попадания — Транспорт (колёсный)",
+	"IMPMAL.TableSetting.critwalker": "Критические попадания — Транспорт (шагающий)",
+	"IMPMAL.TableSetting.critflyer": "Критические попадания — Транспорт (летающий)",
+	"IMPMAL.TableSetting.crittracked": "Критические попадания — Транспорт (гусеничный)",
+	"IMPMAL.TableSetting.fumble": "Неудачное попадание",
 	"IMPMAL.TableSetting.perils": "Разрыв варпа",
 	"IMPMAL.TableSetting.phenomena": "Психический феномен",
 	"IMPMAL.TableSetting.talents": "Случайные таланты",
+	"IMPMAL.TableSetting.origin": "Происхождения",
+	"IMPMAL.TableSetting.mutation": "Мутации",
+	"IMPMAL.TableSetting.malignancy": "Пагуба",
 	"IMPMAL.TableBoon": "Возможности",
 	"IMPMAL.TableFaction": "Огранизации",
 	"IMPMAL.TableLiability": "Слабости",
@@ -624,6 +725,7 @@
 	"IMPMAL.Total": "Всего",
 	"IMPMAL.TotalCover": "Иекущее укрытие",
 	"IMPMAL.Toughness": "Выносливость",
+	"IMPMAL.Trait": "Черта",
 	"IMPMAL.Traits": "Черты",
 	"IMPMAL.TraitsT": "Ч",
 	"IMPMAL.TraitTest": "Проверка {trait}",
@@ -668,6 +770,8 @@
 	"IMPMAL.TriggerEndRound": "Конец раунда",
 	"IMPMAL.TriggerStartTurn": "Начало хода",
 	"IMPMAL.TriggerEndTurn": "Конец хода",
+	"IMPMAL.TriggerRollTable": "Roll Table",
+	"IMPMAL.TriggerEquipToggle": "Equip Toggle",
 	"IMPMAL.Troop": "Рядовой",
 	"IMPMAL.Trusted": "Доверие",
 	"IMPMAL.TwoHanded": "Двуручное",
@@ -684,6 +788,7 @@
 	"IMPMAL.Uses": "Пользователь",
 	"IMPMAL.UseItems": "Использовать предметы",
 	"IMPMAL.UseItemsHint": "Используйте принадлежащие вам предметы для расчета значений брони вместо статических значений.",
+	"IMPMAL.UseSuperiority": "Use Superiority",
 	"IMPMAL.UpdateCombat": "Обновление боя",
 	"IMPMAL.UpdaterTitle": "Обновить содержимое {title} ",
 	"IMPMAL.UpdaterError": "Вы можете выполнить обновление только в том случае, если вы инициализировали этот модуль хотя бы один раз.",
@@ -699,7 +804,10 @@
 	"IMPMAL.Value": "Значение",
 	"IMPMAL.VeryEasy": "Элементарная",
 	"IMPMAL.VeryHard": "Безумная",
+	"IMPMAL.Vehicle": "Транспортное средство",
 	"IMPMAL.VehicleWeapons": "Оружие транспортных средств",
+	"IMPMAL.VehicleDropTT": "Drag and drop an Actor or Weapon",
+	"IMPMAL.VehicleControl": "Управление транспортом",
 	"IMPMAL.Vilified": "Презрение",
 	"IMPMAL.WR": "ВР",
 	"IMPMAL.WS": "ББ",
@@ -720,7 +828,7 @@
 	"IMPMAL.Wheeled": "Колёсный",
 	"IMPMAL.Wil": "ВОЛ",
 	"IMPMAL.Willpower": "Воля",
-	"IMPMAL.Wounds": "Раны",
+	"IMPMAL.Wounds": "Пункты здоровья",
 	"IMPMAL.WoundsTaken": "{wounds} ран на {location}",
 	"IMPMAL.World": "Мир",
 	"IMPMAL.WorldType": "{world}",
@@ -730,9 +838,247 @@
 	"IMPMAL.WorldShrine": "Мир-храм",
 	"IMPMAL.WorldHive": "Мир улей",
 	"IMPMAL.WorldForge": "Мир-кузница",
-	"IMPMAL.XP": "XP",
-	"IMPMAL.ZoneSettings": "Настройки зоны",
-	"IMPMAL.ZoneTypeZoneEffect": "Эффекты зоны",
-	"IMPMAL.ZoneTypeTokensInZone": "Актёры в зоне",
-	"IMPMAL.ZoneTypeFollowToken": "Следовать за актёром"
+	"IMPMAL.XP": "ПО",
+
+	"WH": {
+		"Models": {
+			"ammo": {
+				"FIELDS": {
+					"custom": {
+						"label": "Custom",
+						"hint": "Drag and Drop Custom Ammo onto non-Custom ammo to apply the modifiers"
+					},
+					"priceMultiplier": {
+						"label": "Коэффициент стоимости"
+					},
+					"damage": {
+						"label": "Урон"
+					},
+					"usedWith": {
+						"label": "Используется с"
+					}
+				}
+			},
+			"boonLiability": {
+				"FIELDS": {
+					"category": {
+						"label": "Категория"
+					},
+					"oneUse": {
+						"label": "Одноразовое использование"
+					}
+				}
+			},
+			"duty": {
+				"FIELDS": {
+					"category": {
+						"label": "Категория "
+					},
+					"character.solars": {
+						"label": "Солары"
+					}
+				}
+			},
+			"corruption": {
+				"FIELDS": {
+					"category": {
+						"label": "Категория"
+					}
+				}
+			},
+			"equipment": {
+				"FIELDS": {}
+			},
+			"forceField": {
+				"FIELDS": {
+					"protection": {
+						"label": "Защита "
+					},
+					"overload": {
+						"value": {
+							"label": "Перезгрузка"
+						},
+						"collapsed": {
+							"label": "Схлопывание"
+						}
+					}
+				}
+			},
+			"modification": {
+				"FIELDS": {
+					"type": {
+						"label": "Тип"
+					},
+					"category": {
+						"label": "Категория"
+					},
+					"usedWith": {
+						"label": "Используется с"
+					}
+				}
+			},
+			"power": {
+				"FIELDS": {
+					"discipline": {
+						"label": "Дисциплина"
+					},
+					"minorSpecialisation": {
+						"label": "Специализация"
+					},
+					"difficulty": {
+						"label": "Сложность"
+					},
+					"rating": {
+						"label": "Варп Рейтинг"
+					},
+					"range": {
+						"label": "Дистанция"
+					},
+					"target": {
+						"label": "Цель"
+					},
+					"duration": {
+						"label": "Длительность"
+					},
+					"overt": {
+						"label": "Очевидность"
+					}
+				}
+			},
+			"protection": {
+				"FIELDS": {
+					"category": {
+						"label": "Категория"
+					},
+					"armour": {
+						"label": "Пункты брони"
+					},
+					"locations": {
+						"label": {
+							"label": "Зоны "
+						}
+					}
+				}
+			},
+			"specialisation": {
+				"FIELDS": {
+					"restricted": {
+						"label": "Ограничения"
+					},
+					"skill": {
+						"label": "Навык"
+					}
+				}
+			},
+			"talent": {
+				"FIELDS": {
+					"requirement": {
+						"value": {
+							"label": "Требование"
+						},
+						"script": {
+							"label": "Условие выполнения"
+						}
+					}
+				}
+			},
+			"origin": {
+				"FIELDS": {
+					"characteristics.base": {
+						"label": "Характеристики"
+					}
+				}
+			},
+			"weapon": {
+				"FIELDS": {
+					"attackType": {
+						"label": "Тип атаки"
+					},
+					"category": {
+						"label": "Категория"
+					},
+					"spec": {
+						"label": "Специализация"
+					},
+					"range": {
+						"label": "Дистанция"
+					},
+					"mag": {
+						"value": {
+							"label": "Маг"
+						}
+					},
+					"ammoCost": {
+						"label": "Расход патронов"
+					}
+				}
+			},
+			"faction": {
+				"FIELDS": {
+					"character": {
+						"characterisics": {
+							"base": {
+								"label": "Характеристики"
+							}
+						}
+					}
+				}
+			},
+			"trait": {
+				"FIELDS": {
+					"category": {
+						"label": "Категория"
+					},
+					"attack": {
+						"type": {
+							"label": "Тип атаки"
+						},
+						"characteristic": {
+							"label": "Характеристики"
+						},
+						"damage": {
+							"characteristic": {
+								"label": "Характеристики"
+							},
+							"ignoreAP": {
+								"label": "Игнорирование ПБ"
+							}
+						},
+						"range": {
+							"label": "Дистанция"
+						}
+					},
+					"vehicle": {
+						"maneuverable": {
+							"label": "Маневренный",
+							"hint": "Бонус к проверкам управления транспортным средством"
+						}
+					}
+				}
+			},
+			"pack": {
+				"FIELDS": {
+					"ignoreEncumbrance": {
+						"label": "Игнорирование веса"
+					},
+					"solars": {
+						"label": "Солары"
+					}
+				}
+			}
+		},
+		"Components": {
+			"Locational": {
+				"FIELDS": {
+					"prompt": {
+						"label": "Prompt Location",
+						"hint": "Prompt for a location when added to an Actor."
+					},
+					"location.value": {
+						"label": "Область"
+					}
+				}
+			}
+		}
+	}
 }

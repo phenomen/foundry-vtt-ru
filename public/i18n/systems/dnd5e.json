@@ -9,8 +9,8 @@
 
 	"TYPES.Actor.character": "Персонаж игрока",
 	"TYPES.Actor.characterPl": "Персонажи игроков",
-	"TYPES.Actor.encounter": "Сцена",
-	"TYPES.Actor.encounterPl": "Сцены",
+	"TYPES.Actor.encounter": "Боевая сцена",
+	"TYPES.Actor.encounterPl": "Боевые сцены",
 	"TYPES.Actor.group": "Группа",
 	"TYPES.Actor.groupPl": "Группы",
 	"TYPES.Actor.npc": "Персонаж Мастера",
@@ -197,7 +197,7 @@
 				"Label": "День"
 			},
 			"Encounter": {
-				"Label": "Начало сцены"
+				"Label": "Начало боевой сцены"
 			},
 			"Hour": {
 				"Header": "Часы",
@@ -210,7 +210,7 @@
 			"Legendary": {
 				"Counted": {
 					"one": "{number} легендарное действие",
-					"other": "{number} легендарных действия"
+					"other": "{number} легендарные действия"
 				},
 				"Header": "Легендарные действия",
 				"Label": "Легендарное действие"
@@ -357,7 +357,8 @@
 			},
 			"Hint": "Позволить повысить одну или несколько характеристик, или взять дополнительную черту.",
 			"Journal": {
-				"DescriptionEpic": "<p>Вы получаете эпический дар или другую черту, требованиям которых вы соответствуете. Рекомендуется: {recommendation}.</p>",
+				"DescriptionEpic": "<p>Вы получаете эпический дар или другую черту, требованиям которых вы соответствуете.</p>",
+				"DescriptionEpicRecommendation": "<p>Вы получаете эпический дар или другую черту, требованиям которых вы соответствуете. Рекомендуется: {recommendation}.</p>",
 				"DescriptionLegacy": "<p>При достижении {firstLevelOrdinal}-го уровня, и затем на {otherLevelsOrdinal}-м уровне, вы можете повысить либо две характеристики на 1 каждую, либо одну на 2. Таким образом нельзя повысить характеристику выше {maxAbilityScore}.</p><p>Если вы используете необязательные правила для черт, вы можете вместо повышения характеристик выбрать одну черту.</p>",
 				"DescriptionModern": "<p>Вы можете повысить характеристики или выбрать черту, требованиям которой соответствуете. Вы можете сделать это снова на уровне {otherLevels} класса {class}.</p>",
 				"Name": "Повышение характеристик"
@@ -1258,7 +1259,7 @@
 	"DND5E.COMBATANT": {
 		"Counted": {
 			"one": "{number} боец",
-			"other": "{number} бойцов"
+			"other": "{number} бойцы"
 		}
 	},
 
@@ -1540,7 +1541,8 @@
 			"SlotLevel": "Круг ячейки"
 		},
 		"Target": {
-			"ThisItem": "Этот предмет"
+			"ThisItem": "Этот предмет",
+			"UnknownItem": "неизвестный предмет"
 		},
 		"Type": {
 			"Action": {
@@ -2584,6 +2586,7 @@
 	"DND5E.GroupControls": "Управление",
 	"DND5E.Group": {
 		"Action": {
+			"ChangePace": "Изменить темп",
 			"Remove": "Удалить участника",
 			"View": "Просмотр участника"
 		},
@@ -2610,12 +2613,15 @@
 			"Set": "Сделать основной группой"
 		},
 		"Type": "Тип группы",
-		"TypeEncounter": "Сцена",
+		"TypeEncounter": "Боевая сцена",
 		"TypeGeneric": "Общая группа",
 		"TypeParty": "Группа персонажей",
 		"Vehicle": {
 			"one": "Транспорт",
 			"other": "Транспорт"
+		},
+		"Warning": {
+			"PhysicalItemOnly": "Поддерживаются только материальные предметы."
 		}
 	},
 	"DND5E.Habitat": {
@@ -2705,7 +2711,7 @@
 	"DND5E.HITPOINTS": {
 		"Counted": {
 			"one": "{number} пункт здоровья",
-			"other": "{number} пунктов здоровья"
+			"other": "{number} пункты здоровья"
 		},
 		"DT": {
 			"Abbr": "ПП"
@@ -2741,7 +2747,7 @@
 		"Config": "Настройка костей здоровья",
 		"Counted": {
 			"one": "{number} кость здоровья",
-			"other": "{number} костей здоровья"
+			"other": "{number} кости здоровья"
 		}
 	},
 
@@ -3499,7 +3505,7 @@
 		"ClassSummary": "Бланк класса 5e",
 		"Container": "Бланк контейнера 5e",
 		"DifficultTerrain": "Бланк пересечённой местности 5e",
-		"Encounter": "Бланк сцены 5e",
+		"Encounter": "Бланк боевой сцены 5e",
 		"Group": "Бланк группы 5e",
 		"Item": "Бланк предмета 5e",
 		"JournalEntry": "Бланк журнала 5e",
@@ -3651,6 +3657,7 @@
 	"DND5E.SpellAbility": "Закл. хар-ка",
 	"DND5E.SpellAbilitySet": "Сделать основной закл. хар-кой",
 	"DND5E.SpellAdd": "Доб. закл.",
+	"DND5E.SpellAttackBonus": "Бонус атаки заклинанием",
 	"DND5E.SpellCantrip": "Фокус",
 	"DND5E.SpellCastConsume": "Использовать ячейку?",
 	"DND5E.SpellCastNoSlots": "У вас не достаточно ячеек для сотворения заклинания",
@@ -3986,8 +3993,8 @@
 			"PlaceTemplate": "Разместить шаблон"
 		},
 		"Count": {
-			"Any": "Любая",
-			"Every": "Каждая"
+			"Any": "Любые",
+			"Every": "Каждое"
 		},
 		"FIELDS": {
 			"target": {
@@ -4060,24 +4067,24 @@
 					"any": "любые союзники",
 					"every": "каждый союзник",
 					"one": "{number} союзник",
-					"other": "{number} союзников"
+					"other": "{number} союзники"
 				}
 			},
 			"Any": {
-				"Label": "Любая"
+				"Label": "Любые"
 			},
 			"Circle": {
 				"Label": "Круг",
 				"Counted": {
 					"one": "{number} круг",
-					"other": "{number} кругов"
+					"other": "{number} круги"
 				}
 			},
 			"Cone": {
 				"Label": "Конус",
 				"Counted": {
 					"one": "{number} конус",
-					"other": "{number} конусов"
+					"other": "{number} конусы"
 				}
 			},
 			"Creature": {
@@ -4086,7 +4093,7 @@
 					"any": "любые существа",
 					"every": "каждое существо",
 					"one": "{number} существо",
-					"other": "{number} существ"
+					"other": "{number} существа"
 				}
 			},
 			"CreatureOrObject": {
@@ -4095,28 +4102,28 @@
 					"any": "любые существа или объекты",
 					"every": "каждое существо или объект",
 					"one": "{number} существо или объект",
-					"other": "{number} существ или объектов"
+					"other": "{number} существа или объекты"
 				}
 			},
 			"Cube": {
 				"Label": "Куб",
 				"Counted": {
 					"one": "{number} куб",
-					"other": "{number} кубов"
+					"other": "{number} кубы"
 				}
 			},
 			"Cylinder": {
 				"Label": "Цилиндр",
 				"Counted": {
 					"one": "{number} цилиндр",
-					"other": "{number} цилиндров"
+					"other": "{number} цилиндры"
 				}
 			},
 			"Emanation": {
 				"Label": "Эманация",
 				"Counted": {
 					"one": "{number} эманация",
-					"other": "{number} эманаций"
+					"other": "{number} эманации"
 				}
 			},
 			"Enemy": {
@@ -4125,14 +4132,14 @@
 					"any": "любые враги",
 					"every": "каждый враг",
 					"one": "{number} враг",
-					"other": "{number} врагов"
+					"other": "{number} враги"
 				}
 			},
 			"Line": {
 				"Label": "Линия",
 				"Counted": {
 					"one": "{number} линия",
-					"other": "{number} линий"
+					"other": "{number} линии"
 				}
 			},
 			"Object": {
@@ -4141,14 +4148,14 @@
 					"any": "любые объекты",
 					"every": "каждый объект",
 					"one": "{number} объект",
-					"other": "{number} объектов"
+					"other": "{number} объекты"
 				}
 			},
 			"Radius": {
 				"Label": "Радиус",
 				"Counted": {
 					"one": "{number} радиус",
-					"other": "{number} радиусов"
+					"other": "{number} радиусы"
 				}
 			},
 			"Self": {
@@ -4158,7 +4165,7 @@
 				"Label": "Сфера",
 				"Counted": {
 					"one": "{number} сфера",
-					"other": "{number} сфер"
+					"other": "{number} сферы"
 				}
 			},
 			"Space": {
@@ -4167,14 +4174,14 @@
 					"any": "любые пространства",
 					"every": "каждое пространство",
 					"one": "{number} пространство",
-					"other": "{number} пространств"
+					"other": "{number} пространства"
 				}
 			},
 			"Square": {
 				"Label": "Квадрат",
 				"Counted": {
 					"one": "{number} квадрат",
-					"other": "{number} квадратов"
+					"other": "{number} квадраты"
 				}
 			},
 			"Target": {
@@ -4183,14 +4190,14 @@
 					"any": "любые цели",
 					"every": "каждая цель",
 					"one": "{number} цель",
-					"other": "{number} целей"
+					"other": "{number} цели"
 				}
 			},
 			"Wall": {
 				"Label": "Стена",
 				"Counted": {
 					"one": "{number} стена",
-					"other": "{number} стен"
+					"other": "{number} стены"
 				}
 			},
 			"WillingCreature": {
@@ -4199,7 +4206,7 @@
 					"any": "любые согласные существа",
 					"every": "каждое согласное существо",
 					"one": "{number} согласное существо",
-					"other": "{number} согласных существ"
+					"other": "{number} согласные существа"
 				}
 			}
 		},
@@ -5303,11 +5310,11 @@
 				"Name": "Разрешить индивидуальный отдых"
 			},
 			"AllowSummoning": {
-				"Hint": "Разрешить игрокам призывать актёров. У игроков также должно быть права на создание токенов.",
+				"Hint": "Разрешить игрокам использовать способности призыва актёров. У игроков также должны быть права на создание токенов.",
 				"Name": "Разрешить призыв"
 			},
 			"AllowTransformation": {
-				"Hint": "Разрешить игрокам превращать собственных актёров. У игроков должны быть права на создание актёров.",
+				"Hint": "Разрешить игрокам превращать собственных актёров. У игроков должны быть права на создание актёров и создание токенов.",
 				"Name": "Разрешить превращение"
 			}
 		},

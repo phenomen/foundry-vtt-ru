@@ -121,16 +121,15 @@ label.search::after {
 	gap: 4px;
 }
 
-/* MODULES */
+/* 
+  Modules
+*/
 
+/* Automated Animations */
 #AA-autorec-settings .window-content header ul li {
 	font-family: var(--font-sans-condensed);
 	font-weight: 600;
 	font-size: var(--font-size-14);
-}
-
-.compendium-browser .spell-browser .spell .spell-tags {
-	max-width: 200px;
 }
 
 .encounter-cr {
@@ -145,6 +144,7 @@ label.search::after {
 	font-family: var(--font-serif);
 }
 
+/* Monks Tokenbar */
 .monks-tokenbar.chat-card .card-header h3 {
 	font-family: var(--font-sans-condensed);
 }
@@ -157,6 +157,7 @@ label.search::after {
 	font-family: var(--font-sans-condensed);
 }
 
+/* Monks Active Tiles */
 .monks-active-tiles.sheet .items-list .items-header h3,
 .monks-active-tiles.sheet .items-list .items-header > * {
 	font-family: var(--font-sans-condensed) !important;
@@ -164,4 +165,15 @@ label.search::after {
 
 .effect-player-container {
 	font-family: var(--font-sans-condensed);
+}
+
+/*  Carolingian UI */
+@layer variables {
+	body {
+		--crlngn-font-family: var(--font-sans);
+		--crlngn-font-titles: var(--font-sans-condensed);
+		--crlngn-font-journal-body: var(--font-sans);
+		--crlngn-font-journal-title: var(--font-fancy);
+		--crlngn-font-serif: var(--font-serif);
+	}
 }
