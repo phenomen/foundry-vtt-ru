@@ -51,16 +51,15 @@ Hooks.once("init", async () => {
 	/* Случайные прилагательные для токенов */
 	CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
 
+	/* D&D5 альтернативный перевод */
 	if (system === "dnd5e") {
 		dnd5eAlt();
 	}
 
-	/* Системные скрипты */
-	for (const path in scripts) {
-		scripts[path]().then((mod) => {
-			if (path.includes(`${system}.js`)) {
-				mod.init();
-			}
-		});
+	/* Инициализация системного скрипта, если он существует */
+	const systemScriptPath = `./systems/${system}.js`;
+	if (scripts[systemScriptPath]) {
+		const mod = await scripts[systemScriptPath]();
+		mod.init();
 	}
 });
