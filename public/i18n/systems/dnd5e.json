@@ -189,6 +189,10 @@
 				"Label": "Бонусное действие"
 			},
 			"Crew": {
+				"Counted": {
+					"one": "{number} действие экипажа",
+					"other": "{number} действия экипажа"
+				},
 				"Header": "Действия экипажа",
 				"Label": "Действие экипажа"
 			},
@@ -1467,6 +1471,9 @@
 			},
 			"Wand": {
 				"Label": "Жезл"
+			},
+			"Wondrous": {
+				"Label": "Чудесный предмет"
 			}
 		}
 	},
@@ -1797,6 +1804,7 @@
 			"Modification": "Модификатор {type}",
 			"Immunity": "Невосприимчивость к {type}",
 			"Resistance": "Устойчивость к {type}",
+			"Threshold": "Предел прочности",
 			"Vulnerability": "Уязвимость к {type}"
 		},
 		"Downgrading": "Понижение {source} до устойчивости",
@@ -2587,7 +2595,13 @@
 	"DND5E.Group": {
 		"Action": {
 			"ChangePace": "Изменить темп",
+			"Inventory": {
+				"Group": "Показать инвентарь группы",
+				"Vehicle": "Показать инвентарь транспорта"
+			},
 			"Remove": "Удалить участника",
+			"SetPrimaryVehicle": "Сделать основным транспортом",
+			"UnsetPrimaryVehicle": "Сделать неосновным транспортом",
 			"View": "Просмотр участника"
 		},
 		"Config": {
@@ -2617,8 +2631,13 @@
 		"TypeGeneric": "Общая группа",
 		"TypeParty": "Группа персонажей",
 		"Vehicle": {
-			"one": "Транспорт",
-			"other": "Транспорт"
+			"Count": {
+				"one": "Транспортное средство",
+				"other": "Транспортные средства"
+			},
+			"Primary": {
+				"label": "Основной транспорт"
+			}
 		},
 		"Warning": {
 			"PhysicalItemOnly": "Поддерживаются только материальные предметы."
@@ -2714,7 +2733,10 @@
 			"other": "{number} пункты здоровья"
 		},
 		"DT": {
-			"Abbr": "ПП"
+			"abbr": "ПП"
+		},
+		"Other": {
+			"label": "Прочие настройки"
 		}
 	},
 
@@ -3054,6 +3076,18 @@
 	"DND5E.NPC": {
 		"Label": "Персонаж ведущего",
 		"FIELDS": {
+			"attributes": {
+				"price": {
+					"denomination": {
+						"label": "Значение"
+					},
+					"hint": "Заработная плата за день или стоимость покупки скота.",
+					"label": "Цена",
+					"value": {
+						"label": "Количество"
+					}
+				}
+			},
 			"traits": {
 				"important": {
 					"hint": "Важные персонажи Мастера имеют кости здоровья, проходят испытания против смерти, и имеют показатель лояльности (если включено). Любые ПМ с классами считаются важными не зависимо от этой настройки.",
@@ -3139,6 +3173,7 @@
 	"DND5E.PropertyBase": "Базовый",
 	"DND5E.PropertyTotal": "Всего",
 	"DND5E.Public": "Публичный",
+	"DND5E.Quality": "Качество",
 	"DND5E.Quantity": "Количество",
 	"DND5E.QuantityAbbr": "Кол.",
 	"DND5E.QuantityFormula": "Формула количества",
@@ -3407,21 +3442,37 @@
 			"Rule": "Правило"
 		}
 	},
+
+	"DND5E.MOVEMENT": {
+		"Action": {
+			"Configure": "Настройка скорости перемещения"
+		},
+		"FIELDS": {
+			"ignoredDifficultTerrain": {
+				"label": "Игнорируемая пересечённая местность"
+			},
+			"special": {
+				"label": "Способы перемещения"
+			},
+			"speeds": {
+				"label": "Скорость перемещения"
+			},
+			"units": {
+				"label": "Единицы"
+			}
+		},
+		"Hover": "Парение",
+		"Speed": "Скорость в бою",
+		"Type": {
+			"Burrow": "Рытьё",
+			"Climb": "Лазание",
+			"Fly": "Полёт",
+			"Swim": "Плавание",
+			"Walk": "Ходьба"
+		}
+	},
+
 	"DND5E.Movement": "Перемещение",
-	"DND5E.MovementConfig": "Настройка скорости перемещения",
-	"DND5E.MovementConfigHint": "Настройка скорости перемещения и особых типов движения.",
-	"DND5E.MovementWalk": "Ходьба",
-	"DND5E.MovementBurrow": "Копание",
-	"DND5E.MovementClimb": "Лазание",
-	"DND5E.MovementHover": "Парение",
-	"DND5E.MovementFly": "Полёт",
-	"DND5E.MovementSwim": "Плавание",
-	"DND5E.MovementLand": "Земля",
-	"DND5E.MovementWater": "Вода",
-	"DND5E.MovementAir": "Воздух",
-	"DND5E.MovementSpeeds": "Скорости перемещения",
-	"DND5E.MovementUnits": "Единицы измерения",
-	"DND5E.MovementIgnoredDifficultTerrain": "Игнорируемая пересечённая местность",
 
 	"DND5E.SAVE": {
 		"Title": {
@@ -4568,12 +4619,35 @@
 		}
 	},
 
-	"DND5E.Travel": {
+	"DND5E.TRAVEL": {
+		"FIELDS": {
+			"pace": {
+				"label": "Темп"
+			},
+			"time": {
+				"hint": "Количество часов, проведённых в пути за день. Используется для преобразования скорости перемещения в темп.",
+				"label": "Часов в дне"
+			}
+		},
 		"Label": "Темп путешествия",
 		"Pace": {
 			"Fast": "Быстрый",
 			"Normal": "Обычный",
 			"Slow": "Медленный"
+		},
+		"Per": {
+			"Day": "В день",
+			"Hour": "В час"
+		},
+		"Slowed": {
+			"Group": "Темп группы замедляется из-за того, что скорость одного из участников снижена наполовину или больше.",
+			"Member": "Этот участник группы замедляет остальных."
+		},
+		"Speed": "Темп путешествия",
+		"Type": {
+			"Air": "Воздушный",
+			"Land": "Наземный",
+			"Water": "Водный"
 		}
 	},
 
@@ -4604,7 +4678,6 @@
 
 	"DND5E.UNITS": {
 		"DISTANCE": {
-			"Label": "Единицы дистанции",
 			"Foot": {
 				"Label": "Футы",
 				"Abbreviation": "фт"
@@ -4613,6 +4686,7 @@
 				"Label": "Километры",
 				"Abbreviation": "км"
 			},
+			"Label": "Единицы дистанции",
 			"Meter": {
 				"Label": "Метры",
 				"Abbreviation": "м"
@@ -4660,6 +4734,19 @@
 			},
 			"Year": {
 				"Label": "Год"
+			}
+		},
+		"TRAVEL": {
+			"Kilometer": {
+				"AbbreviationHour": "км/ч",
+				"AbbreviationDay": "км/д",
+				"Label": "Километры"
+			},
+			"Label": "Единицы путешествия",
+			"Mile": {
+				"AbbreviationDay": "мл/д",
+				"AbbreviationHour": "мл/ч",
+				"Label": "Мили"
 			}
 		},
 		"VOLUME": {
@@ -4873,14 +4960,116 @@
 	"DND5E.Value": "Значение",
 
 	"DND5E.VEHICLE": {
+		"Action": {
+			"Create": {
+				"Equipment": "Создать снаряжение",
+				"Feature": "Создать особенность",
+				"Weapon": "Создать оружие"
+			},
+			"Crew": {
+				"Decrease": "Увеличить",
+				"Increase": "Уменьшить"
+			},
+			"Drop": {
+				"Animal": "Убрать тяговое животное",
+				"Crew": "Убрать экипаж",
+				"Passengers": "Убрать пассажиров"
+			},
+			"Uncrew": "Снять экипаж"
+		},
+		"Actions": {
+			"Ordinal": {
+				"one": "{n}-е действие",
+				"two": "{n}-е действие",
+				"few": "{n}-е действие",
+				"other": "{n}-е действие"
+			}
+		},
+		"Activation": {
+			"Crew": {
+				"label": "Действие экипажа"
+			}
+		},
+		"Crew": {
+			"Assigned": "Назначенные",
+			"Label": "Экипаж",
+			"Passengers": "Пассажиры",
+			"Unassigned": "Неназначенные"
+		},
+		"FIELDS": {
+			"attributes": {
+				"actions": {
+					"label": "Действия",
+					"max": {
+						"hint": "Действия с полным составом экипажа",
+						"label": "Максимум действий"
+					},
+					"spent": {
+						"label": "Израсходованные действия"
+					},
+					"stations": {
+						"label": "Действия постов"
+					},
+					"thresholds": {
+						"full": {
+							"label": "Полный состав экипажа"
+						},
+						"mid": {
+							"label": "Неполный состав экипажа"
+						},
+						"min": {
+							"label": "Минимальный состав экипажа"
+						},
+						"label": "Пределы"
+					}
+				},
+				"capacity": {
+					"cargo": {
+						"value": {
+							"label": "Груз"
+						}
+					},
+					"label": "Вместимость"
+				}
+			},
+			"crew": {
+				"max": {
+					"label": "Экипаж"
+				}
+			},
+			"passengers": {
+				"max": {
+					"label": "Пассажиры"
+				}
+			},
+			"traits": {
+				"beam": {
+					"value": {
+						"label": "Бимс"
+					}
+				},
+				"keel": {
+					"value": {
+						"label": "Киль"
+					}
+				}
+			}
+		},
+		"Mishap": {
+			"label": "Сбой",
+			"Threshold": {
+				"abbr": "ПС",
+				"label": "Предел сбоя"
+			}
+		},
 		"MOUNTABLE": {
 			"FIELDS": {
 				"cover": {
 					"label": "Укрытие",
 					"hint": "Укрытие, предоставляемое экипажу, управляющему транспортом."
 				},
-				"crewed": {
-					"label": "С экипажем"
+				"crew": {
+					"label": "Экипаж"
 				},
 				"hp": {
 					"label": "Пункты здоровья",
@@ -4906,38 +5095,34 @@
 					}
 				}
 			}
+		},
+		"Option": {
+			"Abilities": "Отображение характеристик",
+			"Initiative": "Отображение инициативы",
+			"Quality": "Отображение качества"
+		},
+		"Tabs": {
+			"Cargo": "Груз",
+			"CrewPassengers": "Экипаж и пассажиры"
+		},
+		"Type": {
+			"Air": {
+				"label": "Воздушный транспорт"
+			},
+			"label": "Тип транспорта",
+			"Land": {
+				"label": "Наземный транспорт"
+			},
+			"Space": {
+				"label": "Космический транспорт"
+			},
+			"Water": {
+				"label": "Водный транспорт"
+			}
 		}
 	},
 
 	"DND5E.Vehicle": "Транспорт",
-	"DND5E.VehicleActions": "Действия",
-	"DND5E.VehicleActionsHint": "Действия с полным составом экипажа",
-	"DND5E.VehicleActionMax": "Максимум действий",
-	"DND5E.VehicleActionStations": "Действия боевых постов",
-	"DND5E.VehicleActionThresholds": "Пределы действия",
-	"DND5E.VehicleActionThresholdsFull": "Полный состав экипажа",
-	"DND5E.VehicleActionThresholdsMid": "Неполный состав экипажа",
-	"DND5E.VehicleActionThresholdsMin": "Минимальный состав экипажа",
-	"DND5E.VehicleCargo": "Груз",
-	"DND5E.VehicleCargoCapacity": "Вместимость груза",
-	"DND5E.VehicleCargoCrew": "Груз и экипаж",
-	"DND5E.VehicleCreatureCapacity": "Вместимость существ",
-	"DND5E.VehicleCrew": "Экипаж",
-	"DND5E.VehicleCrewPassengers": "Экипаж и пассажиры",
-	"DND5E.VehicleCrewed": "С экипажем",
-	"DND5E.VehicleCrewAction": "Действие экипажа",
-	"DND5E.VehicleEquipment": "Снаряжение транспорта",
-	"DND5E.VehicleMishap": "Сбой",
-	"DND5E.VehicleMishapThreshold": "Предел сбоя",
-	"DND5E.VehiclePassengers": "Пассажиры",
-	"DND5E.VehiclePassengerName": "Тип или имя пассажира",
-	"DND5E.VehiclePassengerQuantity": "Число пассажиров",
-	"DND5E.VehicleType": "Тип транспорта",
-	"DND5E.VehicleTypeAir": "Воздушный транспорт",
-	"DND5E.VehicleTypeLand": "Наземный транспорт",
-	"DND5E.VehicleTypeSpace": "Космический транспорт",
-	"DND5E.VehicleTypeWater": "Водный транспорт",
-	"DND5E.VehicleUncrewed": "Без экипажа",
 	"DND5E.Versatile": "Полуторное",
 	"DND5E.VersatileDamage": "Полуторный урон",
 	"DND5E.VsDC": "со СЛ",
@@ -5016,6 +5201,7 @@
 		"DC": "{check} СЛ {dc}",
 		"DCPassiveShort": "СЛ {dc} пассивного {check}",
 		"DCPassiveLong": "пассивное {check} с {dc} или выше",
+		"ItemActivity": "{item} ({activity})",
 		"NoActorWarning": "Не найден выбранный или привязанный актёр для броска.",
 		"PassiveShort": "пассивная {check}",
 		"PassiveLong": "пассивное значение {check}",
