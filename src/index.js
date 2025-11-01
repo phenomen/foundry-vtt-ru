@@ -7,7 +7,7 @@ Hooks.once("init", async () => {
 	const route = foundry.utils.getRoute("/");
 
 	/* Загрузка особых CSS стилей для систем */
-	if (game.modules.get("ru-ru").flags["ru-ru"].styles.includes(system)) {
+	if (game.modules.get("ru-ru").flags.styles.includes(system)) {
 		const systemCSS = document.createElement("link");
 		systemCSS.rel = "stylesheet";
 		systemCSS.href = `${route}modules/ru-ru/styles/${system}.css`;
