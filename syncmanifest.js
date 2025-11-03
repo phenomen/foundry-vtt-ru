@@ -28,9 +28,9 @@ const languages = [
 		path: "i18n/core/adjectives_m.json",
 	},
 	{
-		"lang": "ru",
-		"path": "i18n/systems/misc/dnd5e-plural.json",
-		"system": "dnd5e",
+		lang: "ru",
+		path: "i18n/systems/misc/dnd5e-plural.json",
+		system: "dnd5e",
 	},
 ];
 

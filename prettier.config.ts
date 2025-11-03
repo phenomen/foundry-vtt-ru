@@ -7,11 +7,10 @@ const config: Config = {
 	printWidth: 100,
 	bracketSameLine: false,
 	bracketSpacing: true,
-
+	quoteProps: "consistent",
 	semi: true,
 	singleQuote: false,
 	jsxSingleQuote: false,
-	quoteProps: "preserve",
 	trailingComma: "es5",
 	arrowParens: "always",
 
