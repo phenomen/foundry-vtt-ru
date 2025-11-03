@@ -7,9 +7,11 @@ export async function init() {
 		if (game.babele) {
 			registerConverters();
 
-			game.settings.get("ru-ru", "altTranslation")
-				? setupBabele("dnd5e/ds")
-				: setupBabele("dnd5e/ag");
+			if (game.settings.get("ru-ru", "altTranslation")) {
+				setupBabele("dnd5e/ds");
+			} else {
+				setupBabele("dnd5e/ag");
+			}
 
 			if (game.settings.get("ru-ru", "translateCPR")) {
 				if (game.modules.get("chris-premades")) {
