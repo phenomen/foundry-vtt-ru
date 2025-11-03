@@ -4,13 +4,13 @@
 	"private": "true",
 	"scripts": {
 		"build": "vite build",
-		"format": "biome check --write",
+		"format": "prettier --write .",
 		"lint": "oxlint --fix --fix-suggestions",
 		"symlink": "vite build && bun symlink.js"
 	},
 	"type": "module",
 	"devDependencies": {
-		"@biomejs/biome": "^2.3.2",
+		"prettier": "^3.6.2",
 		"oxlint": "^1.25.0",
 		"vite": "npm:rolldown-vite@7.1.20"
 	}
