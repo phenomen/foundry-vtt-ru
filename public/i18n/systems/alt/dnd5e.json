@@ -1,36 +1,36 @@
 {
-  "DND5E": {
-	"ACTIVATION": {
-		"Category": {
-			"Combat": "Бой",
-			"Monster": "Монстр",
-			"Rest": "Отдых",
-			"Standard": "Обычный",
-			"Time": "Время",
-			"Vehicle": "Транспорт"
+	"DND5E": {
+		"ACTIVATION": {
+			"Category": {
+				"Combat": "Бой",
+				"Monster": "Монстр",
+				"Rest": "Отдых",
+				"Standard": "Обычный",
+				"Time": "Время",
+				"Vehicle": "Транспорт"
+			},
+			"Type": {
+				"Encounter": {
+					"Label": "Начало боя"
+				},
+				"Hour": {
+					"Header": "Часы",
+					"Label": "Час"
+				},
+				"Mythic": {
+					"Header": "Мифические действия",
+					"Label": "Мифическое действие"
+				},
+				"Reaction": {
+					"Header": "Реакции",
+					"Label": "Реакция"
+				}
+			},
+			"Warning": {
+				"NoActions": "Не найдено {type}, но для активации требуется как минимум {required}.",
+				"NotEnoughActions": "Не достаточно {type} для активации, требуется {required}, но доступно только {available}."
+			}
 		},
-		"Type": {
-			"Encounter": {
-				"Label": "Начало боя"
-			},
-			"Hour": {
-				"Header": "Часы",
-				"Label": "Час"
-			},
-			"Mythic": {
-				"Header": "Мифические действия",
-				"Label": "Мифическое действие"
-			},
-			"Reaction": {
-				"Header": "Реакции",
-				"Label": "Реакция"
-      }
-		},
-		"Warning": {
-			"NoActions": "Не найдено {type}, но для активации требуется как минимум {required}.",
-			"NotEnoughActions": "Не достаточно {type} для активации, требуется {required}, но доступно только {available}."
-		}
-	},
 		"ADVANCEMENT.AbilityScoreImprovement.CapDisplay.few": "Макс. {points} пункта на характеристику",
 		"ADVANCEMENT.AbilityScoreImprovement.CapDisplay.many": "Макс. {points} пунктов на характеристику",
 
@@ -156,1434 +156,1430 @@
 		"HITDICE.Counted.few": "{number} костей хитов",
 		"HITDICE.Counted.many": "{number} костей хитов",
 
+		"AC": "КЗ",
+		"AbbreviationCR": "ПО",
+		"AbbreviationLR": "ДО",
+		"AbilityCon": "Телосложение",
+		"AbilityConAbbr": "тел",
+		"AbilityConfigurationHint": "Настройка бонусов проверок, спасбросков и владения.",
+		"AbilityConfigure": "Настройка проверок характеристик и спасбросков",
+		"AbilityConfigureTitle": "Настройка проверок и спасбросков {ability}",
+		"AbilitySaveConfigure": "Спасброски {ability}",
+		"ActionMSAK": "Рукопашная атака заклинанием",
+		"ActionMWAK": "Рукопашная атака оружием",
+		"ActionRSAK": "Дальнобойная атака заклинанием",
+		"ActionRWAK": "Дальнобойная атака оружием",
+		"ActionSave": "Спасбросок",
+		"Advancement": {
+			"HitPoints": {
+				"Hint": "Отслеживание хитов персонажа для каждого уровня класса.",
+				"MaxAtFirstLevel": "Макс. на 1-ом уровне: <strong>{max}</strong>",
+				"Roll": "Бросок хитов для {class} ",
+				"Starting": "Хиты на 1-ом уровне",
+				"TakeAverage": "Взять средние",
+				"Title": "Хиты",
+				"Warning": {
+					"Empty": "Хиты должны быть определены броском или выбрано среднее значение.",
+					"Invalid": "Хиты должны быть целым числом"
+				}
+			}
+		},
+		"AdvancementHitPointsEmptyError": "Хиты должны быть определены броском или выбрано среднее значение.",
+		"AdvancementHitPointsHint": "Отслеживать хиты персонажа для каждого уровня класса.",
+		"AdvancementHitPointsInvalidError": "Хиты должны быть целым числом",
+		"AdvancementHitPointsRollMessage": "Бросок хитов для {class}",
+		"AdvancementHitPointsTitle": "Хиты",
+		"AdvancementItemGrantHint": "Предметы, выдаваемые персонажу (снаряжение, способности, заклинания) по достижению уровней.",
+		"AdvancementScaleValueTypeCR": "Показатель опасности",
+		"AdvancementScaleValueTypeHintCR": "Используется для указания показателя опасности способностей, вроде Дикого облика.",
+		"AlignmentCE": "Хаотично-злое",
+		"AlignmentCG": "Хаотично-доброе",
+		"AlignmentCN": "Хаотично-нейтральное",
+		"AlignmentLE": "Принципиально-злое",
+		"AlignmentLG": "Принципиально-доброе",
+		"AlignmentLN": "Принципиально-нейтральное",
+		"AlignmentNE": "Нейтрально-злое",
+		"AlignmentNG": "Нейтрально-доброе",
+		"SkillArc": "Тайная магия",
+		"Armor": "Доспех",
+		"ArmorClass": "Класс защиты",
+		"ArmorClassDraconic": "Драконья устойчивость",
+		"ArmorClassEquipment": "Надетый доспех",
+		"ArmorClassMage": "Доспехи мага",
+		"ArmorClassMotionless": "КЗ когда неподвижен",
+		"ArmorClassNatural": "Природный доспех",
+		"ArmorClassUnarmored": "Без доспехов",
+		"ArmorClassUnarmoredBarbarian": "Защита без доспехов (варвар)",
+		"ArmorClassUnarmoredMonk": "Защита без доспехов (монах)",
+		"ArmorConfig": "Настройка доспеха",
+		"ArmorConfigHint": "Заполните поле выше для перезаписи автоматического расчёта КЗ",
+		"Attunement": "Настройка",
+		"AttunementNone": "Настройка не требуется",
+		"AttunementRequired": "Требуется настройка",
+		"Bonds": "Привязанность",
+		"BONUSES": {
+			"FIELDS": {
+				"bonuses": {
+					"abilities": {
+						"label": "Глобальные бонусы характеристик",
+						"save": {
+							"label": "Глобальный бонус спасбросков"
+						}
+					},
+					"msak": {
+						"label": "Бонусы рукопашных заклинаний",
+						"attack": {
+							"label": "Бонус атаки рукопашных заклинаний"
+						},
+						"damage": {
+							"label": "Бонус урона рукопашных заклинаний"
+						}
+					},
+					"mwak": {
+						"label": "Бонусы рукопашного оружия",
+						"attack": {
+							"label": "Бонус атаки рукопашным оружием"
+						},
+						"damage": {
+							"label": "Бонус урона рукопашным оружием"
+						}
+					},
+					"rsak": {
+						"label": "Бонусы дальнобойных заклинаний",
+						"attack": {
+							"label": "Бонус атаки дальнобойных заклинаний"
+						},
+						"damage": {
+							"label": "Бонус урона дальнобойных заклинаний"
+						}
+					},
+					"rwak": {
+						"label": "Бонусы дальнобойного оружия",
+						"attack": {
+							"label": "Бонус атаки дальнобойным оружием"
+						},
+						"damage": {
+							"label": "Бонус урона дальнобойным оружием"
+						}
+					}
+				}
+			}
+		},
+		"BonusAbilitySave": "Глобальный бонус спасбросков",
+		"BonusMSAttack": "Бонус рукопашной атаки заклинанием",
+		"BonusMSDamage": "Бонус рукопашного урона заклинанием",
+		"BonusMWAttack": "Бонус рукопашной атаки",
+		"BonusMWDamage": "Бонус рукопашного урона",
+		"BonusRSAttack": "Бонус дальнобойной атаки заклинанием",
+		"BonusRSDamage": "Бонус дальнобойного урона заклинанием",
+		"BonusRWAttack": "Бонус дальнобойной атаки",
+		"BonusRWDamage": "Бонус дальнобойного урона",
+		"BonusSpellDC": "Глобальный бонус Сл заклинаний",
+		"ChallengeRating": "Показатель опасности",
+		"ChatContextTempHP": "Применить временные хиты",
+		"Feature": {
+			"Background": "Способность происхождения",
+			"Monster": "Способность монстра",
+			"Race": "Способность расы",
+			"Class": {
+				"Label": "Способность класса",
+				"ArcaneShot": "Магический выстрел",
+				"ArtificerInfusion": "Инфузия изобретателя",
+				"ChannelDivinity": "Проведение божественности",
+				"DefensiveTactic": "Оборонительная тактика",
+				"EldritchInvocation": "Таинственные воззвания",
+				"ElementalDiscipline": "Стихийные практики",
+				"FightingStyle": "Боевой стиль",
+				"HuntersPrey": "Добыча охотника",
+				"Ki": "Умение ци",
+				"Maneuver": "Боевой приём",
+				"Metamagic": "Вариант метамагии",
+				"Multiattack": "Мультиатака",
+				"PactBoon": "Предмет договора",
+				"PsionicPower": "Псионическая сила",
+				"Rune": "Руна",
+				"SuperiorHuntersDefense": "Улучшенная защита охотника"
+			}
+		},
+		"DAMAGE": {
+			"Title": "Урон",
+			"FIELDS": {
+				"damage": {
+					"label": "Урон",
+					"critical": {
+						"allow": {
+							"label": "Разрешить криты",
+							"hint": "Может ли функция наносить крит. урон?"
+						},
+						"bonus": {
+							"label": "Дополнительный критический урон",
+							"hint": "Дополнительный урон, добавляемый к первой части урона при критическом уроне."
+						}
+					},
+					"parts": {
+						"label": "Части урона",
+						"hint": "Индивидуальные части урона, составляющие бросок.",
+						"FIELDS": {
+							"bonus": {
+								"label": "Бонус урона",
+								"hint": "Бонус, добавляемый к броску урона."
+							},
+							"custom": {
+								"label": "Особая формула урона",
+								"enabled": {
+									"label": "Включение особой формулы",
+									"hint": "Использовать особую формулу вместо кости по умолчанию."
+								},
+								"formula": {
+									"label": "Формула урона",
+									"hint": "Особая формула урона."
+								}
+							},
+							"denomination": {
+								"label": "Стороны кости",
+								"hint": "Число сторон кости для броска."
+							},
+							"number": {
+								"label": "Число костей",
+								"hint": "Число костей для броска."
+							},
+							"scaling": {
+								"label": "Подъём урона",
+								"abbr": "Подъём",
+								"mode": {
+									"label": "Режим подъёма",
+									"abbr": "Режим",
+									"hint": "Метод расчёта подъёма."
+								},
+								"number": {
+									"label": "Подъём кости",
+									"abbr": "Кость",
+									"hint": "Число костей, добавляемых на каждом шаге подъёма. Будет добавлено к первой кости в формуле урона."
+								},
+								"formula": {
+									"label": "Формула подъёма",
+									"hint": "Произвольная формула, которая будет умножаться для каждого шага подъёма и добавляться к исходной формуле."
+								}
+							},
+							"types": {
+								"label": "Типы урона",
+								"hint": "Тип урона или несколько на выбор."
+							}
+						}
+					}
+				}
+			},
+			"Part": {
+				"Action": {
+					"Create": "Создание части урона",
+					"Delete": "Удаление части урона"
+				}
+			},
+			"Scaling": {
+				"Half": "Каждый второй уровень",
+				"HalfCantrip": "Половина заговора",
+				"None": "Без подъёма",
+				"Whole": "Каждый уровень",
+				"WholeCantrip": "Заговор"
+			}
+		},
+		"Cast": {
+			"Title": "Сотворение",
+			"FIELDS": {
+				"spell": {
+					"label": "Подробности сотворения",
+					"challenge": {
+						"attack": {
+							"label": "Бонус атаки",
+							"hint": "Неизменный бонус к попаданию вместо обычного бонуса атаки заклинания."
+						},
+						"save": {
+							"label": "СЛ спасброска",
+							"hint": "Неизменная СЛ вместо обычной СЛ спасброска заклинания."
+						},
+						"override": {
+							"label": "Перезапись значений",
+							"hint": "Перезапись обычного бонуса атаки и СЛ заклинания."
+						}
+					},
+					"level": {
+						"label": "Базовый уровень",
+						"hint": "Базовый уровень заклинания, если он отличается от уровня самого заклинания."
+					},
+					"properties": {
+						"label": "Игнорирование свойств",
+						"hint": "Компоненты и другие свойства, игнорируемые при сотворении."
+					},
+					"spellbook": {
+						"label": "Отображение в заклинаниях",
+						"hint": "Показывать заклинание в списке заклинаний персонажа."
+					},
+					"uuid": {
+						"label": "Заклинание"
+					}
+				}
+			},
+			"SECTIONS": {
+				"Spell": "Заклинание",
+				"Spellbook": "Дополнительные заклинания"
+			},
+			"Action": {
+				"RemoveSpell": "Удалить заклинание"
+			},
+			"Enchantment": {
+				"Name": "Изменения заклинания"
+			}
+		},
+		"ClassSaves": "Спасброски",
+		"ComponentMaterial": "Материальный",
+		"CONSUMPTION": {
+			"FIELDS": {
+				"consumption": {
+					"label": "Расход",
+					"scaling": {
+						"abbr": "Подъем",
+						"label": "Подъем расхода",
+						"allowed": {
+							"label": "Разрешить подъём",
+							"hint": "Может ли функция не на заклинании быть активирована на высоких ячейках?"
+						},
+						"max": {
+							"label": "Макс. подъём",
+							"hint": "Максимальное число уровней подъёма для этого предмета, включая начальный уровень."
+						}
+					},
+					"spellSlot": {
+						"label": "Расходование ячейки",
+						"hint": "Должна ли функция расходовать ячейку этого заклинания?"
+					},
+					"targets": {
+						"label": "Цели расхода",
+						"hint": "Цели расхода при активации функции.",
+						"FIELDS": {
+							"type": {
+								"label": "Тип расхода",
+								"hint": "Тип расхода цели."
+							},
+							"target": {
+								"label": "Цель расхода",
+								"hint": "Определённая цель для расхода."
+							},
+							"value": {
+								"label": "Число расхода",
+								"hint": "Введите отрицательное значение, для восстановления вместо расходования."
+							},
+							"scaling": {
+								"label": "Подъём расхода",
+								"mode": {
+									"label": "Режим подъёма",
+									"hint": "Как будет подниматься расход."
+								},
+								"formula": {
+									"label": "Формула подъёма",
+									"hint": "Особый подъём расхода за уровень."
+								}
+							}
+						}
+					}
+				}
+			},
+			"Action": {
+				"ConsumeResource": "Расход ресурса",
+				"Create": "Создание цели расхода",
+				"Delete": "Удаление цели расхода",
+				"RefundResource": "Возврат ресурса"
+			},
+			"Scaling": {
+				"Amount": "Число",
+				"Automatic": "Автоматически",
+				"None": "Без подъёма",
+				"SlotLevel": "Уровень ячейки"
+			},
+			"Target": {
+				"ThisItem": "Этот предмет"
+			},
+			"Type": {
+				"Action": {
+					"Prompt": "Израсходовать {type}?",
+					"PromptHint": "Израсходовано {cost} ({available} доступно)."
+				},
+				"ActivityUses": {
+					"Label": "Исп. функции",
+					"PromptDecrease": "Израсходовать использования функции?",
+					"PromptIncrease": "Восстановить использования функции?",
+					"PromptHintDecrease": "Потратить <strong>{cost}</strong> {use} у этой функции (доступно {available} {availableUse}).",
+					"PromptHintIncrease": "Восстановить <strong>{cost}</strong> {use} у этой функции.",
+					"Warning": "использований у функции {activity} на {item}"
+				},
+				"Attribute": {
+					"Label": "Параметр",
+					"PromptDecrease": "Израсходовать параметр?",
+					"PromptIncrease": "Восстановить параметр?",
+					"PromptHintDecrease": "Уменьшить <code>{attribute}</code> на <strong>{cost}</strong> (сейчас {current}).",
+					"PromptHintIncrease": "Увеличить <code>{attribute}</code> на <strong>{cost}</strong> (сейчас {current}).",
+					"Warning": "Значение {attribute}"
+				},
+				"HitDice": {
+					"Label": "Кость хитов",
+					"PromptDecrease": "Расход кости хитов?",
+					"PromptIncrease": "Восстановление кости хитов?",
+					"PromptHintDecrease": "Потратить <strong>{cost}</strong> {denomination} {die} (осталось {available}).",
+					"PromptHintIncrease": "Восстановить  <strong>{cost}</strong> {denomination} {die}.",
+					"Warning": "{denomination} КХ"
+				},
+				"HitDie": {
+					"one": "кость хитов",
+					"other": "кости хитов"
+				},
+				"ItemUses": {
+					"Label": "Использования предмета",
+					"PromptDecrease": "Расход использования?",
+					"PromptIncrease": "Восстановление использования?",
+					"PromptHintDecrease": "Потратить <strong>{cost}</strong> {use} у {item} (доступно {available} {availableUse}).",
+					"PromptHintIncrease": "Восстановить <strong>{cost}</strong> {use} у {item}.",
+					"Warning": "использований у {name}"
+				},
+				"Material": {
+					"Label": "Материал",
+					"PromptDecrease": "Израсходовать материал?",
+					"PromptIncrease": "Восстановить материал?",
+					"PromptHintDecrease": "Убавить {item} на <strong>{cost}</strong> (осталось {quantity}).",
+					"PromptHintIncrease": "Прибавить {item} на <strong>{cost}</strong>.",
+					"Warning": "у {name}"
+				},
+				"SpellSlot": {
+					"one": "{level} ячейка",
+					"other": "{level} ячейки"
+				},
+				"SpellSlots": {
+					"Label": "Ячейки заклинаний",
+					"PromptDecrease": "Использовать ячейку?",
+					"PromptIncrease": "Восстановить ячейку?",
+					"PromptHintDecrease": "Потратить <strong>{cost}</strong> {slot} (осталось {available}).",
+					"PromptHintIncrease": "Восстановить <strong>{cost}</strong> {slot}.",
+					"Warning": "{level} ячеек"
+				},
+				"Use": {
+					"one": "использование",
+					"other": "использования"
+				}
+			},
+			"Warning": {
+				"MissingAttribute": "Параметр {attribute}, настроенный на расходование функцией {activity} на {item}, не может быть найден.",
+				"MissingHitDice": "У актёра нет класса с костью здоровья {denomination}.",
+				"MissingItem": "Предмет, настроенный на расходование функцией {activity} на {item}, не может быть найден.",
+				"MissingSpellSlot": "Нет доступных ячеек {level} уровня.",
+				"None": "Нет доступных {type} для расходования. Требуется {cost}.",
+				"NotEnough": "Нет доступных {type} для расходования. Требуется {cost}, но доступно только {available}.",
+				"WillDestroy": "Это израсходует последнее использование и {item} будет уничтожен."
+			}
+		},
+		"ComponentMaterialAbbr": "М",
+		"ComponentSomatic": "Соматический",
+		"ComponentSomaticAbbr": "С",
+		"ComponentVerbal": "Вербальный",
+		"ComponentVerbalAbbr": "В",
+		"ConBlinded": "Ослеплённый",
+		"ConCharmed": "Очарованный",
+		"ConDeafened": "Оглохший",
+		"ConDiseased": "Больной",
+		"ConExhaustion": "Истощённый",
+		"ExhaustionLevel": "{n}-ый уровень истощения",
+		"ConPoisoned": "Отравленный",
+		"ConFrightened": "Испуганный",
+		"ConGrappled": "Схваченный",
+		"ConImm": "Иммунитет к состоянию",
+		"ConIncapacitated": "Недееспособный",
+		"CompendiumBrowser": {
+			"Filters": {
+				"Label": "Фильтр",
+				"HasDarkvision": "Есть тёмное зрение",
+				"HasSpellcasting": "Есть заклинания",
+				"SearchResults": "Результаты поисков"
+			},
+			"Tabs": {
+				"Feat.other": "Черты",
+				"Item.other": "Предметы",
+				"Monster.other": "Монстры"
+			}
+		},
+		"SPELLCASTING": {
+			"SLOTS": {
+				"spell0": "Заговоры",
+				"spell1": "1-й уровень",
+				"spell2": "2-й уровень",
+				"spell3": "3-й уровень",
+				"spell4": "4-й уровень",
+				"spell5": "5-й уровень",
+				"spell6": "6-й уровень",
+				"spell7": "7-й уровень",
+				"spell8": "8-й уровень",
+				"spell9": "9-й уровень"
+			}
+		},
+		"SpellSlotN.one": "{n}-я ячейка заклинаний",
+		"SpellSlotN.two": "{n}-я ячейка заклинаний",
+		"SpellSlotN.other": "{n}-я ячейка заклинаний",
+		"SpellSlotTemporary": "Временная ячейка",
+		"SpellSlotsN.one": "Ячейка заклинаний {n}-го уровня",
+		"SpellSlotsN.two": "Ячейки заклинаний {n}-го уровня",
+		"SpellSlotsN.other": "Ячейки заклинаний {n}-го уровня",
+		"ConInvisible": "Невидимый",
+		"ConParalyzed": "Парализованный",
+		"ConPetrified": "Окаменевший",
+		"ConProne": "Опрокинутый",
+		"ConRestrained": "Опутанный",
+		"ConStunned": "Ошеломлённый",
+		"ConsumableWand": "Палочка",
+		"CONSUMABLE": {
+			"Type": {
+				"Ammunition": {
+					"Label": "Боеприпасы",
+					"Arrow": "Стрела",
+					"Bolt": "Болт",
+					"BulletFirearm": "Пуля",
+					"BulletSling": "Снаряд для пращи",
+					"EnergyCell": "Ячейка энергии",
+					"Needle": "Игла"
+				},
+				"Poison": {
+					"Label": "Яд",
+					"Contact": "Контактный",
+					"Ingested": "Поглощаемый",
+					"Inhaled": "Вдыхаемый",
+					"Injury": "Травма"
+				},
+				"Rod": {
+					"Label": "Жезл"
+				},
+				"Trinket": {
+					"Label": "Безделушка"
+				},
+				"Wand": {
+					"Label": "Волшебная палочка"
+				}
+			}
+		},
+		"ConsumeHitDice": "Кость хитов",
+		"ConsumeMaterial": "Материальные компоненты",
+		"ContextMenuActionUnattune": "Снять настройку",
+		"CreatureBeast": "Зверь",
+		"CreatureBeastPl": "Звери",
+		"CreatureConstruct": "Конструкт",
+		"CreatureConstructPl": "Конструкты",
+		"CreatureFiend": "Исчадие",
+		"CreatureFiendPl": "Исчадия",
+		"CreatureOoze": "Слизь",
+		"CreatureOozePl": "Слизи",
+		"CreatureSwarm": "Рой/Стая",
+		"CreatureSwarmPhrase": "Рой/Стая из {size} {type}",
+		"CreatureSwarmSize": "Размер роя/стаи",
+		"CreatureType": "Тип существа",
+		"CreatureTypeConfig": "Настройка вида существа",
+		"CreatureTypeSelectorCustom": "Особый вид",
+		"CreatureTypeSelectorSubtype": "Подвид",
+		"CreatureTypeTitle": "Настройка вида существа",
+		"CriticalHit": "Критическое попадание",
+		"ITEM": {
+			"Property": {
+				"Adamantine": "Адамантиновое",
+				"Ammunition": "Боеприпас",
+				"Concentration": "Концентрация",
+				"Finesse": "Фехтовальное",
+				"Firearm": "Огнестрельное",
+				"Focus": "Фокусирующее",
+				"Heavy": "Тяжёлое",
+				"Light": "Лёгкое",
+				"Loading": "Заряжаемое",
+				"Material": "Материальный",
+				"Magical": "Магическое",
+				"Reach": "Досягаемость",
+				"Reload": "Перезарядка",
+				"Returning": "Возвращаемое",
+				"Ritual": "Ритуал",
+				"Sidekick": "Помощник",
+				"Silvered": "Посеребрённое",
+				"Somatic": "Соматический",
+				"Special": "Особое",
+				"StealthDisadvantage": "Помеха скрытности",
+				"Thrown": "Метательное",
+				"Trait": "Пассивное свойство",
+				"TwoHanded": "Двуручное",
+				"Versatile": "Универсальное",
+				"Verbal": "Вербальный",
+				"WeightlessContents": "Невесомое содержимое"
+			}
+		},
+		"DamImm": "Иммунитет к урону",
+		"DamRes": "Сопротивление к урону",
+		"DamageApplication": {
+			"Change": {
+				"Modification": "Модификатор {type}",
+				"Immunity": "Иммунитет к {type}",
+				"Resistance": "Сопротивление к {type}",
+				"Vulnerability": "Уязвимость к {type}"
+			},
+			"Downgrading": "Понижение {source} до сопротивления",
+			"Ignoring": "Игнорирование {source}"
+		},
+		"ATTACK": {
+			"FIELDS": {
+				"attack": {
+					"type": {
+						"label": "Тип атаки",
+						"value": {
+							"label": "Тип атаки",
+							"hint": "Рукопашная или дальнобойная атака?"
+						},
+						"classification": {
+							"label": "Классификация атаки",
+							"hint": "Безоружная, оружием или заклинанием?"
+						}
+					}
+				}
+			},
+			"Attack": {
+				"mwak": "Рукопашная атака",
+				"rwak": "Дальнобойная атака"
+			},
+			"Classification": {
+				"Spell": "Заклинанием",
+				"Unarmed": "Безоружная",
+				"Weapon": "Оружием"
+			},
+			"Formatted": {
+				"2014": "{type} атака {classification}",
+				"2024": "{type} атака"
+			},
+			"Mode": {
+				"Label": "Режим атаки",
+				"Offhand": "Второй рукой",
+				"OneHanded": "Одноручная",
+				"Ranged": "Дальнобойная",
+				"Thrown": "Метательная",
+				"ThrownOffhand": "Метательная второй рукой",
+				"TwoHanded": "Двуручная"
+			},
+			"Type": {
+				"Melee": "Рукопашная",
+				"Ranged": "Дальнобойная"
+			},
+			"Warning": {
+				"NoQuantity": "Попытка атаки оружием с нулевым количеством."
+			},
+			"Weapon": {
+				"Melee": "Рукопашное оружие",
+				"Ranged": "Дальнобойное оружие"
+			}
+		},
+		"DamageForce": "Силовой",
+		"DamageLightning": "Электричество",
+		"DamageNecrotic": "Некротический",
+		"DamagePhysicalBypassHint": "Предметы с этим свойством игнорируют сопротивление к физическому урону.",
+		"DamagePsychic": "Психический",
+		"RANGE": {
+			"FIELDS": {
+				"range": {
+					"label": "Дистанция",
+					"long": {
+						"label": "Дальняя дистанция",
+						"hint": "Значение для дистанционного оружия."
+					},
+					"override": {
+						"label": "Перезапись дистанции",
+						"hint": "Использовать эти значения дистанции вместо значений у предмета."
+					},
+					"reach": {
+						"label": "Досягаемость"
+					},
+					"special": {
+						"label": "Особая дистанция",
+						"hint": "Описание особенностей дистанции."
+					},
+					"units": {
+						"label": "Единицы дистанции",
+						"hint": "Единицы измерения дистанции."
+					},
+					"value": {
+						"label": "Значение дистанции",
+						"hint": "Значение дистанции в указанных единицах измерения."
+					}
+				}
+			},
+			"Formatted": {
+				"Range": "дистанция {range}",
+				"Reach": "досягаемость {reach}"
+			}
+		},
+		"ENCHANT": {
+			"Title": "Зачарование",
+			"FIELDS": {
+				"effects": {
+					"FIELDS": {
+						"level": {
+							"label": "Ограничение уровня",
+							"hint": "Диапазон уровней, требуемых для использования зачарования.",
+							"max": {
+								"label": "Максимальный уровень"
+							},
+							"min": {
+								"label": "Минимальный уровень"
+							}
+						}
+					}
+				}
+			}
+		},
+		"HEAL": {
+			"Title": "Исцеление",
+			"FIELDS": {
+				"healing": {
+					"label": "Исцеление",
+					"bonus": {
+						"label": "Бросок исцеления",
+						"hint": "Бонус, добавляемый к броску исцеления."
+					},
+					"custom": {
+						"label": "Особая формула исцеления",
+						"enabled": {
+							"label": "Включение особой формулы",
+							"hint": "Использовать особую формулу вместо кости по умолчанию."
+						},
+						"formula": {
+							"label": "Формула исцеления",
+							"hint": "Особая формула исцеления."
+						}
+					},
+					"scaling": {
+						"label": "Подъём исцеления",
+						"mode": {
+							"label": "Режим подъёма",
+							"hint": "Метод расчёта подъёма."
+						},
+						"number": {
+							"label": "Подъём кости",
+							"hint": "Число костей, добавляемых на каждом шаге подъёма. Будет добавлено к первой кости в формуле исцеления."
+						},
+						"formula": {
+							"label": "Формула подъёма",
+							"hint": "Произвольная формула, которая будет умножаться для каждого шага подъёма и добавляться к исходной формуле."
+						}
+					},
+					"types": {
+						"label": "Типы исцеления",
+						"hint": "Исцеление или временные хиты."
+					}
+				}
+			}
+		},
+		"DamageRadiant": "Излучение",
+		"DamageSlashing": "Рубящий",
+		"DamageThunder": "Звук",
+		"DeathSave": "Спасбросок от смерти",
+		"DeathSaveBonus": "Бонус к спасброску от смерти",
+		"DeathSaveConfigure": "Настройка спасброска от смерти",
+		"DeathSaveCriticalSuccess": "{name} критически преуспел в спасброске от смерти и восстановил 1 хит!",
+		"DeathSaveHide": "Скрыть спасброски от смерти",
+		"DeathSaveShow": "Показать спасброски от смерти",
+		"DeathSaveSuccess": "{name} выживает с 3 успешными испытаниями против смерти!",
+		"DeathSaveSuccessLabel": "Успешный спасбросок от смерти",
+		"DeathSaveSuccessLabelN.one": "Первый успешный спасбросок от смерти",
+		"DeathSaveSuccessLabelN.two": "Второй успешный спасбросок от смерти",
+		"DeathSaveSuccessLabelN.few": "Третий успешный спасбросок от смерти",
+		"DeathSaveSuccesses": "Успехи",
+		"DeathSaveFailure": "{name} погибает с 3 проваленными спасбросками от смерти!",
+		"DeathSaveFailureLabel": "Провал спасброска от смерти",
+		"DeathSaveFailureLabelN.one": "Первый провал спасброска от смерти",
+		"DeathSaveFailureLabelN.two": "Второй провал спасброска от смерти",
+		"DeathSaveFailureLabelN.few": "Третий провал спасброска от смерти",
+		"DeathSaveFailures": "Провалы",
+		"DeathSaveRoll": "Спасбросок от смерти",
+		"DeathSavingThrow": "Спасбросок от смерти",
+		"DeathSaveUnnecessary": "Вам не нужно совершать спасбросок от смерти, т.к. у вас более 1 хита или уже 3 успеха.",
+		"Environment": "Местность",
+		"EQUIPMENT": {
+			"Type": {
+				"Clothing": {
+					"Label": "Одежда"
+				},
+				"Ring": {
+					"Label": "Кольцо"
+				},
+				"Rod": {
+					"Label": "Жезл"
+				},
+				"Trinket": {
+					"Label": "Безделушка"
+				},
+				"Vehicle": {
+					"Label": "Снаряжение транспорта"
+				},
+				"Wand": {
+					"Label": "Волшебная палочка"
+				},
+				"Wondrous": {
+					"Label": "Чудесный предмет"
+				}
+			}
+		},
+		"EquipmentHeavy": "Тяжёлый доспех",
+		"EquipmentLight": "Лёгкий доспех",
+		"EquipmentMedium": "Средний доспех",
+		"EquipmentNatural": "Природный доспех",
+		"Exhaustion": "Истощение",
+		"Expertise": "Экспертность",
+		"FeatureAdd": "Создать способность",
+		"FeatureAttack": "Атака способностью",
+		"FeatureUsage": "Использование способности",
+		"Features": "Способности",
+		"FLAGS": {
+			"EnhancedDualWielding": {
+				"Name": "Использование двух оружий",
+				"Hint": "Разрешить дополнительные атаки бонусным действием, используя любое оружие ближнего боя без свойства 'Двуручное'."
+			}
+		},
+		"FlagsDiamondSoul": "Алмазная душа",
+		"FlagsDiamondSoulHint": "Владение всеми спасбросками.",
+		"FlagsElvenAccuracyHint": "Дополнительная кость при проверках ЛОВ, ИНТ, МДР и ХАР с преимуществом.",
+		"FlagsHalflingLucky": "Везучий",
+		"FlagsHalflingLuckyHint": "Переброс «1» при проверках d20.",
+		"FlagsAlertHint": "Владение проверками инициативы.",
+		"FlagsInitiativeAdv": "Преимущество инициативы",
+		"FlagsInitiativeAdvHint": "Проверки инициативы получают преимущество.",
+		"FlagsInstructions": "Настройте способности и свойства, которые влияют на персонажа.",
+		"FlagsTavernBrawler": "Драчун",
+		"FlagsTavernBrawlerHint": "Владение импровизированным оружием.",
+		"FlagsJOATHint": "Половина бонуса владения в навыках у которых у вас нет владения.",
+		"FlagsPowerfulBuild": "Мощное телосложение",
+		"FlagsReliableTalent": "Надёжный талант",
+		"FlagsRemarkableAthleteHint": "Половина бонуса владения в проверках физических характеристик и инициативы.",
+		"FlagsSave": "Обновить способность",
+		"FlagsTitle": "Настройка способностей",
+		"Flaws": "Слабости",
+		"GroupHP": "Общие хиты",
+		"HP": "Хиты",
+		"HPFormula": "Формула хитов",
+		"HPFormulaError": "Введённая формула хитов не может быть рассчитана.",
+		"HPFormulaRollMessage": "Формула броска хитов",
+		"HalfProficient": "Владеет наполовину",
+		"HitDice": "Кость хитов",
+		"HitDiceConfig": "Настройка кости хитов",
+		"HITDICE": {
+			"Action": {
+				"Decrease": "Понижение",
+				"Increase": "Повышение"
+			},
+			"Available": "{number} доступно",
+			"Config": "Настройка костей хитов",
+			"Counted": {
+				"one": "{number} кость хитов",
+				"other": "{number} костей хитов"
+			}
+		},
+		"HITPOINTS": {
+			"Counted": {
+				"one": "{number} хит",
+				"other": "{number} хитов"
+			}
+		},
+		"HitDiceConfigHint": "Настройте оставшиеся кости хитов для каждого класса",
+		"HitDiceMax": "Максимальная кость хитов",
+		"HitDiceRemaining": "Оставшиеся кости хитов",
+		"HitDiceRoll": "Бросок кости хитов",
+		"HitDiceUsed": "Использовано КХ",
+		"HitDiceWarn": "У {name} не осталось {formula} костей хитов!",
+		"HitDie": "Кость хитов",
+		"HitPoints": "Хиты",
+		"HitPointsConfig": "Настройка хитов",
+		"HitPointsCurrent": "Текущие хиты",
+		"HitPointsMax": "Максимальные хиты",
+		"HitPointsMin": "Минимальные хиты",
+		"HitPointsOverride": "Перезапись максимальных хитов",
+		"HitPointsTemp": "Временные хиты",
+		"HitPointsTempShort": "Временные хиты",
+		"HitPointsTempMax": "Временный максимум хитов",
+		"HitPointsTempMaxHint": "Временно изменяет максимум хитов.",
+		"HitPointsTempMaxShort": "Врем. макс. хитов",
+		"HealingTemp": "Временные хиты",
+		"ExperiencePoints": {
+			"Abbreviation": "Опыт",
+			"Boons": {
+				"one": "{number} дар",
+				"other": "{number} дара"
+			},
+			"Current": "Текущий опыт",
+			"Format": "{value} опыта",
+			"Label": "Опыт",
+			"Progress": "До следующего уровня",
+			"StatBlock": {
+				"Standard": "{value} опыта",
+				"Lair": "{value} или {lair} опыта в логове"
+			},
+			"Value": "Опыт"
+		},
+		"NPC": {
+			"Label": "Персонаж мастера",
+			"SECTIONS": {
+				"Actions": "Действия",
+				"BonusActions": "Бонусные действия",
+				"LegendaryActions": "Легендарные действия",
+				"Reactions": "Реакции",
+				"Traits": "Особенности"
+			},
+			"Important": {
+				"Hint": "Важные персонажи Мастера имеют кости хитов, проходят спасброски против смерти, и имеют показатель лояльности (если включено). Любые ПМ с классами считаются важными не зависимо от этой настройки.",
+				"Label": "Важный ПМ"
+			}
+		},
+		"ItemFeatureDetails": "Подробности способности",
+		"ItemFeatureType": "Тип способности",
+		"ItemRarityVeryRare": "очень редкий",
+		"ItemToolProficiency": "Владение инструментами",
+		"Language": {
+			"Language": {
+				"Aarakocra": "Ааракокр",
+				"Abyssal": "Язык бездны",
+				"Aquan": "Акван",
+				"Auran": "Ауран",
+				"Celestial": "Небесный",
+				"Common": "Всеобщий",
+				"CommonSign": "Язык жестов",
+				"DeepSpeech": "Глубинная речь",
+				"Draconic": "Драконий",
+				"Druidic": "Друидический",
+				"Dwarvish": "Дварфский",
+				"Elvish": "Эльфийский",
+				"Giant": "Великаний",
+				"Gith": "Гитский",
+				"Gnoll": "Гноллий",
+				"Gnomish": "Гномий",
+				"Goblin": "Гоблинский",
+				"Halfling": "Полуросличий",
+				"Ignan": "Игнан",
+				"Infernal": "Инфернальный",
+				"Orc": "Орочий",
+				"Primordial": "Первичный",
+				"Sylvan": "Сильван",
+				"Terran": "Терран",
+				"ThievesCant": "Воровской жаргон",
+				"Undercommon": "Подземный"
+			}
+		},
+		"LegendaryResistance": {
+			"Action": {
+				"Resist": "Легендарное сопротивление"
+			},
+			"Label": "Легендарное сопротивление",
+			"Max": "Максимум легендарных сопротивлений",
+			"Ordinal": {
+				"one": "{n}-я Легендарное сопротивление",
+				"two": "{n}-я Легендарное сопротивление",
+				"few": "{n}-я Легендарное сопротивление",
+				"other": "{n}-я Легендарное сопротивление"
+			},
+			"Remaining": "Остаток легендарных сопротивлений",
+			"Resisted": "Использовано легендарное сопротивление"
+		},
+		"Habitat": {
+			"Categories": {
+				"Any": "Любая",
+				"Arctic": "Приполярье",
+				"Coastal": "Побережье",
+				"Desert": "Пустыня",
+				"Forest": "Лес",
+				"Grassland": "Степь",
+				"Hill": "Холм",
+				"Mountain": "Гора",
+				"Planar": "План бытия",
+				"Swamp": "Болото",
+				"Underdark": "Подземье",
+				"Underwater": "Подводные глубины",
+				"Urban": "Город"
+			},
+			"Configuration": {
+				"Custom": "Особая",
+				"Label": "Среда обитания",
+				"Legend": "Категория",
+				"Subtype": "Подтип {type}",
+				"Title": "Настройка среды обитания"
+			},
+			"Subtype": "{type} ({subtype})"
+		},
+		"Long": "Максимальная",
+		"Normal": "Обычная",
+		"LongRest": "Долгий отдых",
+		"LongRestEpic": "Долгий отдых (1 час)",
+		"LongRestGritty": "Долгий отдых (7 дней)",
+		"LongRestHint": "Совершить долгий отдых? В конце долгого отдыха персонаж восстанавливает все потраченные хиты, а также половину от максимума костей хитов, предметы с ежедневными зарядами и ячейки заклинаний.",
+		"LongRestNormal": "Долгий отдых (8 часов)",
+		"LongRestOvernight": "Долгий отдых (новый день)",
+		"LongRestRecovery": "Восстанавливается после долгого отдыха",
+		"LongRestResult": "{name} совершает долгий отдых, восстанавливая {health} хитов и {dice} костей хитов.",
+		"LongRestResultHitDice": "{name} совершает долгий отдых и восстанавливает {dice} костей хитов.",
+		"LongRestResultHitPoints": "{name} совершает долгий отдых и восстанавливает {health} хитов.",
+		"LongRestResultShort": "{name} совершает долгий отдых.",
+		"NotProficient": "Без владения",
+		"PersonalityTraits": "Черты характера",
+		"Polymorph": "Превращение",
+		"PolymorphAddTemp": "Добавить хиты цели как временные временные хиты",
+		"PolymorphKeepClass": "Сохранить бонус владения",
+		"PolymorphKeepClassAE": "Сохранить эффекты от класса и подкласса",
+		"PolymorphKeepHP": "Сохранить хиты и кости хитов",
+		"PolymorphKeepPhysical": "Сохранить СИЛ, ЛВК, ТЕЛ",
+		"PolymorphKeepSaves": "Сохранить владение спасбросков",
+		"PolymorphKeepSelf": "Сохранить себя (изменить только изображение и размер)",
+		"PolymorphKeepSkills": "Сохранить владение навыками",
+		"PolymorphMergeSaves": "Объединить владения спасбросками (сохранить наибольшие)",
+		"PolymorphMergeSkills": "Объединить владения навыками (сохранить наибольшие)",
+		"PolymorphRevertWarn": "У вас нет прав на отмену превращения этого существа.",
+		"PolymorphWarn": "У вас нет прав на превращение этого существа.",
+		"PolymorphWildShape": "Дикий облик",
+		"Proficiency": "Владение",
+		"ProficiencyBonus": "Бонус владения",
+		"ProficiencyLevel": "Уровень владения",
+		"Proficient": "Владеет",
+		"RangeLong": "Максимальная дистанция",
+		"RangeNormal": "Нормальная дистанция",
+		"Reaction": "Реакция",
+		"ReactionPl": "Реакции",
+		"REST": {
+			"Configuration": "Настройка отдыха",
+			"HitDice": {
+				"AutoSpend": {
+					"Hint": "Автоматически использовать кости хитов, пока хиты не будут полностью восстановлены.",
+					"Label": "Автоматически использовать костих хитов"
+				},
+				"None": "Во время отдыха закончились кости хитов.",
+				"Select": "Выберите кость хитов"
+			},
+			"Label": "Отдых",
+			"Long": {
+				"Abbreviation": "ДО",
+				"Hint": {
+					"Group": "В конце долгого отдыха участники группы восстанавливают хиты, а также кости хитов, ресурсы класса, предметы с ежедневными зарядами и ячейки заклинаний.",
+					"GroupLegacy": "В конце долгого отдыха участники группы восстанавливают все хиты, а также половину от максимума костей хитов, ресурсы класса, предметы с ежедневными зарядами и ячейки заклинаний.",
+					"Normal": "В конце долгого отдыха вы восстанавливаете хиты, а также кости хитов, ресурсы класса, предметы с ежедневными зарядами и ячейки заклинаний.",
+					"NormalLegacy": "В конце долгого отдыха вы восстанавливаете все хиты, а также половину от максимума костей хитов, ресурсы класса, предметы с ежедневными зарядами и ячейки заклинаний."
+				},
+				"Label": "Долгий отдых",
+				"LabelShort": "Продолжительный",
+				"Recovery": "Восстанавливается при продолжительным отдыхе",
+				"Result": {
+					"Full": "{name} завершает долгий отдых и восстанавливает {health} и {dice}.",
+					"HitDice": "{name} завершает долгий отдых и восстанавливает {dice}.",
+					"HitPoints": "{name} завершает долгий отдых и восстанавливает {health}.",
+					"Short": "{name} завершает долгий отдых."
+				}
+			},
+			"Short": {
+				"Abbreviation": "КО",
+				"Hint": {
+					"Group": "При коротком отдыхе участники группы могут использовать кости хитов и восстановить заряды предметов.",
+					"Normal": "При коротком отдыхе вы можете использовать кости хитов и восстановить заряды предметов."
+				},
+				"Label": "Короткий отдых",
+				"LabelShort": "Короткий",
+				"Recovery": "Восстанавливается при коротком отдыхе",
+				"Result": {
+					"Full": "{name} завершает короткий отдых, используя {dice} и восстанавливая {health}.",
+					"Short": "{name} завершает короткий отдых."
+				}
+			}
+		},
+		"RequiredMaterials": "Требуемые материальные компоненты",
+		"RestL": "Продолжительный",
+		"RestS": "Короткий",
+		"SaveBonus": "Бонус спасброска",
+		"SaveDC": "Сл {dc} {ability}",
+		"SaveGlobalBonusHint": "Бонус применяется ко всем спасброскам.",
+		"SavePromptTitle": "Спасбросок {ability}",
+		"SavingThrow": "Спасбросок",
+		"SavingThrowDC": "СЛ {dc} - спасбросок {ability}",
+		"SavingThrowRoll": "Спасбросок {ability}",
+		"SavingThrowShort": "Спас",
+		"ScalingFormula": "Формула повышенного уровня",
+		"SchoolAbj": "Ограждение",
+		"SchoolCon": "Призыв",
+		"SchoolEvo": "Воплощение",
+		"SchoolTrs": "Преобразование",
+		"SenseDarkvision": "Тёмное зрение",
+		"SenseSpecial": "Особое чувство",
+		"SenseTremorsense": "Чувство вибрации",
+		"Senses": "Особое чувство",
+		"SensesConfig": "Настройка чувств",
+		"SensesConfigHint": "Настройка особых видов чувств, которыми владеет существо.",
+		"ShortRestHint": "Совершить короткий отдых? При коротком отдыхе вы можете использовать кости хитов для лечения и восстановить некоторые ресурсы.",
+		"ShortRestNoHD": "Не осталось КХ",
+		"ShortRestResult": "{name} совершает короткий отдых, расходуя {dice} костей хитов и восстанавливая {health} хитов.",
+		"ShortRestSelect": "Выберите кость хитов",
+		"SizeGargantuan": "Громадный",
+		"SizeLarge": "Большой",
+		"SizeSmall": "Маленький",
+		"SizeTiny": "Крошечный",
+		"SkillAni": "Обращение с животными",
+		"SkillConfigurationHint": "Настройка бонуса и владение навыком.",
+		"SkillPrc": "Восприятие",
+		"SkillPrf": "Выступление",
+		"SpellCantrip": "Заговор",
+		"SpellCastUpcast": "Сотворить на уровне",
+		"SpellDC": "Сл заклинаний",
 
-
-
-    "AC": "КЗ",
-    "AbbreviationCR": "ПО",
-    "AbbreviationLR": "ДО",
-    "AbilityCon": "Телосложение",
-    "AbilityConAbbr": "тел",
-    "AbilityConfigurationHint": "Настройка бонусов проверок, спасбросков и владения.",
-    "AbilityConfigure": "Настройка проверок характеристик и спасбросков",
-    "AbilityConfigureTitle": "Настройка проверок и спасбросков {ability}",
-    "AbilitySaveConfigure": "Спасброски {ability}",
-    "ActionMSAK": "Рукопашная атака заклинанием",
-    "ActionMWAK": "Рукопашная атака оружием",
-    "ActionRSAK": "Дальнобойная атака заклинанием",
-    "ActionRWAK": "Дальнобойная атака оружием",
-    "ActionSave": "Спасбросок",
-    "Advancement": {
-      "HitPoints": {
-        "Hint": "Отслеживание хитов персонажа для каждого уровня класса.",
-        "MaxAtFirstLevel": "Макс. на 1-ом уровне: <strong>{max}</strong>",
-        "Roll": "Бросок хитов для {class} ",
-        "Starting": "Хиты на 1-ом уровне",
-        "TakeAverage": "Взять средние",
-        "Title": "Хиты",
-        "Warning": {
-          "Empty": "Хиты должны быть определены броском или выбрано среднее значение.",
-          "Invalid": "Хиты должны быть целым числом"
-        }
-      }
-    },
-    "AdvancementHitPointsEmptyError": "Хиты должны быть определены броском или выбрано среднее значение.",
-    "AdvancementHitPointsHint": "Отслеживать хиты персонажа для каждого уровня класса.",
-    "AdvancementHitPointsInvalidError": "Хиты должны быть целым числом",
-    "AdvancementHitPointsRollMessage": "Бросок хитов для {class}",
-    "AdvancementHitPointsTitle": "Хиты",
-    "AdvancementItemGrantHint": "Предметы, выдаваемые персонажу (снаряжение, способности, заклинания) по достижению уровней.",
-    "AdvancementScaleValueTypeCR": "Показатель опасности",
-    "AdvancementScaleValueTypeHintCR": "Используется для указания показателя опасности способностей, вроде Дикого облика.",
-    "AlignmentCE": "Хаотично-злое",
-    "AlignmentCG": "Хаотично-доброе",
-    "AlignmentCN": "Хаотично-нейтральное",
-    "AlignmentLE": "Принципиально-злое",
-    "AlignmentLG": "Принципиально-доброе",
-    "AlignmentLN": "Принципиально-нейтральное",
-    "AlignmentNE": "Нейтрально-злое",
-    "AlignmentNG": "Нейтрально-доброе",
-    "SkillArc": "Тайная магия",
-    "Armor": "Доспех",
-    "ArmorClass": "Класс защиты",
-    "ArmorClassDraconic": "Драконья устойчивость",
-    "ArmorClassEquipment": "Надетый доспех",
-    "ArmorClassMage": "Доспехи мага",
-    "ArmorClassMotionless": "КЗ когда неподвижен",
-    "ArmorClassNatural": "Природный доспех",
-    "ArmorClassUnarmored": "Без доспехов",
-    "ArmorClassUnarmoredBarbarian": "Защита без доспехов (варвар)",
-    "ArmorClassUnarmoredMonk": "Защита без доспехов (монах)",
-    "ArmorConfig": "Настройка доспеха",
-    "ArmorConfigHint": "Заполните поле выше для перезаписи автоматического расчёта КЗ",
-    "Attunement": "Настройка",
-    "AttunementNone": "Настройка не требуется",
-    "AttunementRequired": "Требуется настройка",
-    "Bonds": "Привязанность",
-    "BONUSES": {
-      "FIELDS": {
-        "bonuses": {
-          "abilities": {
-            "label": "Глобальные бонусы характеристик",
-            "save": {
-              "label": "Глобальный бонус спасбросков"
-            }
-          },
-          "msak": {
-            "label": "Бонусы рукопашных заклинаний",
-            "attack": {
-              "label": "Бонус атаки рукопашных заклинаний"
-            },
-            "damage": {
-              "label": "Бонус урона рукопашных заклинаний"
-            }
-          },
-          "mwak": {
-            "label": "Бонусы рукопашного оружия",
-            "attack": {
-              "label": "Бонус атаки рукопашным оружием"
-            },
-            "damage": {
-              "label": "Бонус урона рукопашным оружием"
-            }
-          },
-          "rsak": {
-            "label": "Бонусы дальнобойных заклинаний",
-            "attack": {
-              "label": "Бонус атаки дальнобойных заклинаний"
-            },
-            "damage": {
-              "label": "Бонус урона дальнобойных заклинаний"
-            }
-          },
-          "rwak": {
-            "label": "Бонусы дальнобойного оружия",
-            "attack": {
-              "label": "Бонус атаки дальнобойным оружием"
-            },
-            "damage": {
-              "label": "Бонус урона дальнобойным оружием"
-            }
-          }
-        }
-      }
-    },
-    "BonusAbilitySave": "Глобальный бонус спасбросков",
-    "BonusMSAttack": "Бонус рукопашной атаки заклинанием",
-    "BonusMSDamage": "Бонус рукопашного урона заклинанием",
-    "BonusMWAttack": "Бонус рукопашной атаки",
-    "BonusMWDamage": "Бонус рукопашного урона",
-    "BonusRSAttack": "Бонус дальнобойной атаки заклинанием",
-    "BonusRSDamage": "Бонус дальнобойного урона заклинанием",
-    "BonusRWAttack": "Бонус дальнобойной атаки",
-    "BonusRWDamage": "Бонус дальнобойного урона",
-    "BonusSpellDC": "Глобальный бонус Сл заклинаний",
-    "ChallengeRating": "Показатель опасности",
-    "ChatContextTempHP": "Применить временные хиты",
-    "Feature": {
-      "Background": "Способность происхождения",
-      "Monster": "Способность монстра",
-      "Race": "Способность расы",
-      "Class": {
-        "Label": "Способность класса",
-        "ArcaneShot": "Магический выстрел",
-        "ArtificerInfusion": "Инфузия изобретателя",
-        "ChannelDivinity": "Проведение божественности",
-        "DefensiveTactic": "Оборонительная тактика",
-        "EldritchInvocation": "Таинственные воззвания",
-        "ElementalDiscipline": "Стихийные практики",
-        "FightingStyle": "Боевой стиль",
-        "HuntersPrey": "Добыча охотника",
-        "Ki": "Умение ци",
-        "Maneuver": "Боевой приём",
-        "Metamagic": "Вариант метамагии",
-        "Multiattack": "Мультиатака",
-        "PactBoon": "Предмет договора",
-        "PsionicPower": "Псионическая сила",
-        "Rune": "Руна",
-        "SuperiorHuntersDefense": "Улучшенная защита охотника"
-      }
-    },
-    "DAMAGE": {
-      "Title": "Урон",
-      "FIELDS": {
-        "damage": {
-          "label": "Урон",
-          "critical": {
-            "allow": {
-              "label": "Разрешить криты",
-              "hint": "Может ли функция наносить крит. урон?"
-            },
-            "bonus": {
-              "label": "Дополнительный критический урон",
-              "hint": "Дополнительный урон, добавляемый к первой части урона при критическом уроне."
-            }
-          },
-          "parts": {
-            "label": "Части урона",
-            "hint": "Индивидуальные части урона, составляющие бросок.",
-            "FIELDS": {
-              "bonus": {
-                "label": "Бонус урона",
-                "hint": "Бонус, добавляемый к броску урона."
-              },
-              "custom": {
-                "label": "Особая формула урона",
-                "enabled": {
-                  "label": "Включение особой формулы",
-                  "hint": "Использовать особую формулу вместо кости по умолчанию."
-                },
-                "formula": {
-                  "label": "Формула урона",
-                  "hint": "Особая формула урона."
-                }
-              },
-              "denomination": {
-                "label": "Стороны кости",
-                "hint": "Число сторон кости для броска."
-              },
-              "number": {
-                "label": "Число костей",
-                "hint": "Число костей для броска."
-              },
-              "scaling": {
-                "label": "Подъём урона",
-                "abbr": "Подъём",
-                "mode": {
-                  "label": "Режим подъёма",
-                  "abbr": "Режим",
-                  "hint": "Метод расчёта подъёма."
-                },
-                "number": {
-                  "label": "Подъём кости",
-                  "abbr": "Кость",
-                  "hint": "Число костей, добавляемых на каждом шаге подъёма. Будет добавлено к первой кости в формуле урона."
-                },
-                "formula": {
-                  "label": "Формула подъёма",
-                  "hint": "Произвольная формула, которая будет умножаться для каждого шага подъёма и добавляться к исходной формуле."
-                }
-              },
-              "types": {
-                "label": "Типы урона",
-                "hint": "Тип урона или несколько на выбор."
-              }
-            }
-          }
-        }
-      },
-      "Part": {
-        "Action": {
-          "Create": "Создание части урона",
-          "Delete": "Удаление части урона"
-        }
-      },
-      "Scaling": {
-        "Half": "Каждый второй уровень",
-        "HalfCantrip": "Половина заговора",
-        "None": "Без подъёма",
-        "Whole": "Каждый уровень",
-        "WholeCantrip": "Заговор"
-      }
-    },
-    "Cast": {
-      "Title": "Сотворение",
-      "FIELDS": {
-        "spell": {
-          "label": "Подробности сотворения",
-          "challenge": {
-            "attack": {
-              "label": "Бонус атаки",
-              "hint": "Неизменный бонус к попаданию вместо обычного бонуса атаки заклинания."
-            },
-            "save": {
-              "label": "СЛ спасброска",
-              "hint": "Неизменная СЛ вместо обычной СЛ спасброска заклинания."
-            },
-            "override": {
-              "label": "Перезапись значений",
-              "hint": "Перезапись обычного бонуса атаки и СЛ заклинания."
-            }
-          },
-          "level": {
-            "label": "Базовый уровень",
-            "hint": "Базовый уровень заклинания, если он отличается от уровня самого заклинания."
-          },
-          "properties": {
-            "label": "Игнорирование свойств",
-            "hint": "Компоненты и другие свойства, игнорируемые при сотворении."
-          },
-          "spellbook": {
-            "label": "Отображение в заклинаниях",
-            "hint": "Показывать заклинание в списке заклинаний персонажа."
-          },
-          "uuid": {
-            "label": "Заклинание"
-          }
-        }
-      },
-      "SECTIONS": {
-        "Spell": "Заклинание",
-        "Spellbook": "Дополнительные заклинания"
-      },
-      "Action": {
-        "RemoveSpell": "Удалить заклинание"
-      },
-      "Enchantment": {
-        "Name": "Изменения заклинания"
-      }
-    },
-    "ClassSaves": "Спасброски",
-    "ComponentMaterial": "Материальный",
-    "CONSUMPTION": {
-      "FIELDS": {
-        "consumption": {
-          "label": "Расход",
-          "scaling": {
-            "abbr": "Подъем",
-            "label": "Подъем расхода",
-            "allowed": {
-              "label": "Разрешить подъём",
-              "hint": "Может ли функция не на заклинании быть активирована на высоких ячейках?"
-            },
-            "max": {
-              "label": "Макс. подъём",
-              "hint": "Максимальное число уровней подъёма для этого предмета, включая начальный уровень."
-            }
-          },
-          "spellSlot": {
-            "label": "Расходование ячейки",
-            "hint": "Должна ли функция расходовать ячейку этого заклинания?"
-          },
-          "targets": {
-            "label": "Цели расхода",
-            "hint": "Цели расхода при активации функции.",
-            "FIELDS": {
-              "type": {
-                "label": "Тип расхода",
-                "hint": "Тип расхода цели."
-              },
-              "target": {
-                "label": "Цель расхода",
-                "hint": "Определённая цель для расхода."
-              },
-              "value": {
-                "label": "Число расхода",
-                "hint": "Введите отрицательное значение, для восстановления вместо расходования."
-              },
-              "scaling": {
-                "label": "Подъём расхода",
-                "mode": {
-                  "label": "Режим подъёма",
-                  "hint": "Как будет подниматься расход."
-                },
-                "formula": {
-                  "label": "Формула подъёма",
-                  "hint": "Особый подъём расхода за уровень."
-                }
-              }
-            }
-          }
-        }
-      },
-      "Action": {
-        "ConsumeResource": "Расход ресурса",
-        "Create": "Создание цели расхода",
-        "Delete": "Удаление цели расхода",
-        "RefundResource": "Возврат ресурса"
-      },
-      "Scaling": {
-        "Amount": "Число",
-        "Automatic": "Автоматически",
-        "None": "Без подъёма",
-        "SlotLevel": "Уровень ячейки"
-      },
-      "Target": {
-        "ThisItem": "Этот предмет"
-      },
-      "Type": {
-        "Action": {
-          "Prompt": "Израсходовать {type}?",
-          "PromptHint": "Израсходовано {cost} ({available} доступно)."
-        },
-        "ActivityUses": {
-          "Label": "Исп. функции",
-          "PromptDecrease": "Израсходовать использования функции?",
-          "PromptIncrease": "Восстановить использования функции?",
-          "PromptHintDecrease": "Потратить <strong>{cost}</strong> {use} у этой функции (доступно {available} {availableUse}).",
-          "PromptHintIncrease": "Восстановить <strong>{cost}</strong> {use} у этой функции.",
-          "Warning": "использований у функции {activity} на {item}"
-        },
-        "Attribute": {
-          "Label": "Параметр",
-          "PromptDecrease": "Израсходовать параметр?",
-          "PromptIncrease": "Восстановить параметр?",
-          "PromptHintDecrease": "Уменьшить <code>{attribute}</code> на <strong>{cost}</strong> (сейчас {current}).",
-          "PromptHintIncrease": "Увеличить <code>{attribute}</code> на <strong>{cost}</strong> (сейчас {current}).",
-          "Warning": "Значение {attribute}"
-        },
-        "HitDice": {
-          "Label": "Кость хитов",
-          "PromptDecrease": "Расход кости хитов?",
-          "PromptIncrease": "Восстановление кости хитов?",
-          "PromptHintDecrease": "Потратить <strong>{cost}</strong> {denomination} {die} (осталось {available}).",
-          "PromptHintIncrease": "Восстановить  <strong>{cost}</strong> {denomination} {die}.",
-          "Warning": "{denomination} КХ"
-        },
-        "HitDie": {
-          "one": "кость хитов",
-          "other": "кости хитов"
-        },
-        "ItemUses": {
-          "Label": "Использования предмета",
-          "PromptDecrease": "Расход использования?",
-          "PromptIncrease": "Восстановление использования?",
-          "PromptHintDecrease": "Потратить <strong>{cost}</strong> {use} у {item} (доступно {available} {availableUse}).",
-          "PromptHintIncrease": "Восстановить <strong>{cost}</strong> {use} у {item}.",
-          "Warning": "использований у {name}"
-        },
-        "Material": {
-          "Label": "Материал",
-          "PromptDecrease": "Израсходовать материал?",
-          "PromptIncrease": "Восстановить материал?",
-          "PromptHintDecrease": "Убавить {item} на <strong>{cost}</strong> (осталось {quantity}).",
-          "PromptHintIncrease": "Прибавить {item} на <strong>{cost}</strong>.",
-          "Warning": "у {name}"
-        },
-        "SpellSlot": {
-          "one": "{level} ячейка",
-          "other": "{level} ячейки"
-        },
-        "SpellSlots": {
-          "Label": "Ячейки заклинаний",
-          "PromptDecrease": "Использовать ячейку?",
-          "PromptIncrease": "Восстановить ячейку?",
-          "PromptHintDecrease": "Потратить <strong>{cost}</strong> {slot} (осталось {available}).",
-          "PromptHintIncrease": "Восстановить <strong>{cost}</strong> {slot}.",
-          "Warning": "{level} ячеек"
-        },
-        "Use": {
-          "one": "использование",
-          "other": "использования"
-        }
-      },
-      "Warning": {
-        "MissingAttribute": "Параметр {attribute}, настроенный на расходование функцией {activity} на {item}, не может быть найден.",
-        "MissingHitDice": "У актёра нет класса с костью здоровья {denomination}.",
-        "MissingItem": "Предмет, настроенный на расходование функцией {activity} на {item}, не может быть найден.",
-        "MissingSpellSlot": "Нет доступных ячеек {level} уровня.",
-        "None": "Нет доступных {type} для расходования. Требуется {cost}.",
-        "NotEnough": "Нет доступных {type} для расходования. Требуется {cost}, но доступно только {available}.",
-        "WillDestroy": "Это израсходует последнее использование и {item} будет уничтожен."
-      }
-    },
-    "ComponentMaterialAbbr": "М",
-    "ComponentSomatic": "Соматический",
-    "ComponentSomaticAbbr": "С",
-    "ComponentVerbal": "Вербальный",
-    "ComponentVerbalAbbr": "В",
-    "ConBlinded": "Ослеплённый",
-    "ConCharmed": "Очарованный",
-    "ConDeafened": "Оглохший",
-    "ConDiseased": "Больной",
-    "ConExhaustion": "Истощённый",
-    "ExhaustionLevel": "{n}-ый уровень истощения",
-    "ConPoisoned": "Отравленный",
-    "ConFrightened": "Испуганный",
-    "ConGrappled": "Схваченный",
-    "ConImm": "Иммунитет к состоянию",
-    "ConIncapacitated": "Недееспособный",
-    "CompendiumBrowser": {
-      "Filters": {
-        "Label": "Фильтр",
-        "HasDarkvision": "Есть тёмное зрение",
-        "HasSpellcasting": "Есть заклинания",
-        "SearchResults": "Результаты поисков"
-      },
-      "Tabs": {
-        "Feat.other": "Черты",
-        "Item.other": "Предметы",
-        "Monster.other": "Монстры"
-      }
-    },
-    "SPELLCASTING": {
-      "SLOTS": {
-        "spell0": "Заговоры",
-        "spell1": "1-й уровень",
-        "spell2": "2-й уровень",
-        "spell3": "3-й уровень",
-        "spell4": "4-й уровень",
-        "spell5": "5-й уровень",
-        "spell6": "6-й уровень",
-        "spell7": "7-й уровень",
-        "spell8": "8-й уровень",
-        "spell9": "9-й уровень"
-      }
-    },
-    "SpellSlotN.one": "{n}-я ячейка заклинаний",
-    "SpellSlotN.two": "{n}-я ячейка заклинаний",
-    "SpellSlotN.other": "{n}-я ячейка заклинаний",
-    "SpellSlotTemporary": "Временная ячейка",
-    "SpellSlotsN.one": "Ячейка заклинаний {n}-го уровня",
-    "SpellSlotsN.two": "Ячейки заклинаний {n}-го уровня",
-    "SpellSlotsN.other": "Ячейки заклинаний {n}-го уровня",
-    "ConInvisible": "Невидимый",
-    "ConParalyzed": "Парализованный",
-    "ConPetrified": "Окаменевший",
-    "ConProne": "Опрокинутый",
-    "ConRestrained": "Опутанный",
-    "ConStunned": "Ошеломлённый",
-    "ConsumableWand": "Палочка",
-    "CONSUMABLE": {
-      "Type": {
-        "Ammunition": {
-          "Label": "Боеприпасы",
-          "Arrow": "Стрела",
-          "Bolt": "Болт",
-          "BulletFirearm": "Пуля",
-          "BulletSling": "Снаряд для пращи",
-          "EnergyCell": "Ячейка энергии",
-          "Needle": "Игла"
-        },
-        "Poison": {
-          "Label": "Яд",
-          "Contact": "Контактный",
-          "Ingested": "Поглощаемый",
-          "Inhaled": "Вдыхаемый",
-          "Injury": "Травма"
-        },
-        "Rod": {
-          "Label": "Жезл"
-        },
-        "Trinket": {
-          "Label": "Безделушка"
-        },
-        "Wand": {
-          "Label": "Волшебная палочка"
-        }
-      }
-    },
-    "ConsumeHitDice": "Кость хитов",
-    "ConsumeMaterial": "Материальные компоненты",
-    "ContextMenuActionUnattune": "Снять настройку",
-    "CreatureBeast": "Зверь",
-    "CreatureBeastPl": "Звери",
-    "CreatureConstruct": "Конструкт",
-    "CreatureConstructPl": "Конструкты",
-    "CreatureFiend": "Исчадие",
-    "CreatureFiendPl": "Исчадия",
-    "CreatureOoze": "Слизь",
-    "CreatureOozePl": "Слизи",
-    "CreatureSwarm": "Рой/Стая",
-    "CreatureSwarmPhrase": "Рой/Стая из {size} {type}",
-    "CreatureSwarmSize": "Размер роя/стаи",
-    "CreatureType": "Тип существа",
-    "CreatureTypeConfig": "Настройка вида существа",
-    "CreatureTypeSelectorCustom": "Особый вид",
-    "CreatureTypeSelectorSubtype": "Подвид",
-    "CreatureTypeTitle": "Настройка вида существа",
-    "CriticalHit": "Критическое попадание",
-    "ITEM": {
-      "Property": {
-        "Adamantine": "Адамантиновое",
-        "Ammunition": "Боеприпас",
-        "Concentration": "Концентрация",
-        "Finesse": "Фехтовальное",
-        "Firearm": "Огнестрельное",
-        "Focus": "Фокусирующее",
-        "Heavy": "Тяжёлое",
-        "Light": "Лёгкое",
-        "Loading": "Заряжаемое",
-        "Material": "Материальный",
-        "Magical": "Магическое",
-        "Reach": "Досягаемость",
-        "Reload": "Перезарядка",
-        "Returning": "Возвращаемое",
-        "Ritual": "Ритуал",
-        "Sidekick": "Помощник",
-        "Silvered": "Посеребрённое",
-        "Somatic": "Соматический",
-        "Special": "Особое",
-        "StealthDisadvantage": "Помеха скрытности",
-        "Thrown": "Метательное",
-        "Trait": "Пассивное свойство",
-        "TwoHanded": "Двуручное",
-        "Versatile": "Универсальное",
-        "Verbal": "Вербальный",
-        "WeightlessContents": "Невесомое содержимое"
-      }
-    },
-    "DamImm": "Иммунитет к урону",
-    "DamRes": "Сопротивление к урону",
-    "DamageApplication": {
-      "Change": {
-        "Modification": "Модификатор {type}",
-        "Immunity": "Иммунитет к {type}",
-        "Resistance": "Сопротивление к {type}",
-        "Vulnerability": "Уязвимость к {type}"
-      },
-      "Downgrading": "Понижение {source} до сопротивления",
-      "Ignoring": "Игнорирование {source}"
-    },
-    "ATTACK": {
-      "FIELDS": {
-        "attack": {
-          "type": {
-            "label": "Тип атаки",
-            "value": {
-              "label": "Тип атаки",
-              "hint": "Рукопашная или дальнобойная атака?"
-            },
-            "classification": {
-              "label": "Классификация атаки",
-              "hint": "Безоружная, оружием или заклинанием?"
-            }
-          }
-        }
-      },
-      "Attack": {
-        "mwak": "Рукопашная атака",
-        "rwak": "Дальнобойная атака"
-      },
-      "Classification": {
-        "Spell": "Заклинанием",
-        "Unarmed": "Безоружная",
-        "Weapon": "Оружием"
-      },
-      "Formatted": {
-        "2014": "{type} атака {classification}",
-        "2024": "{type} атака"
-      },
-      "Mode": {
-        "Label": "Режим атаки",
-        "Offhand": "Второй рукой",
-        "OneHanded": "Одноручная",
-        "Ranged": "Дальнобойная",
-        "Thrown": "Метательная",
-        "ThrownOffhand": "Метательная второй рукой",
-        "TwoHanded": "Двуручная"
-      },
-      "Type": {
-        "Melee": "Рукопашная",
-        "Ranged": "Дальнобойная"
-      },
-      "Warning": {
-        "NoQuantity": "Попытка атаки оружием с нулевым количеством."
-      },
-      "Weapon": {
-        "Melee": "Рукопашное оружие",
-        "Ranged": "Дальнобойное оружие"
-      }
-    },
-    "DamageForce": "Силовой",
-    "DamageLightning": "Электричество",
-    "DamageNecrotic": "Некротический",
-    "DamagePhysicalBypassHint": "Предметы с этим свойством игнорируют сопротивление к физическому урону.",
-    "DamagePsychic": "Психический",
-    "RANGE": {
-      "FIELDS": {
-        "range": {
-          "label": "Дистанция",
-          "long": {
-            "label": "Дальняя дистанция",
-            "hint": "Значение для дистанционного оружия."
-          },
-          "override": {
-            "label": "Перезапись дистанции",
-            "hint": "Использовать эти значения дистанции вместо значений у предмета."
-          },
-          "reach": {
-            "label": "Досягаемость"
-          },
-          "special": {
-            "label": "Особая дистанция",
-            "hint": "Описание особенностей дистанции."
-          },
-          "units": {
-            "label": "Единицы дистанции",
-            "hint": "Единицы измерения дистанции."
-          },
-          "value": {
-            "label": "Значение дистанции",
-            "hint": "Значение дистанции в указанных единицах измерения."
-          }
-        }
-      },
-      "Formatted": {
-        "Range": "дистанция {range}",
-        "Reach": "досягаемость {reach}"
-      }
-    },
-    "ENCHANT": {
-      "Title": "Зачарование",
-      "FIELDS": {
-        "effects": {
-          "FIELDS": {
-            "level": {
-              "label": "Ограничение уровня",
-              "hint": "Диапазон уровней, требуемых для использования зачарования.",
-              "max": {
-                "label": "Максимальный уровень"
-              },
-              "min": {
-                "label": "Минимальный уровень"
-              }
-            }
-          }
-        }
-      }
-    },
-    "HEAL": {
-      "Title": "Исцеление",
-      "FIELDS": {
-        "healing": {
-          "label": "Исцеление",
-          "bonus": {
-            "label": "Бросок исцеления",
-            "hint": "Бонус, добавляемый к броску исцеления."
-          },
-          "custom": {
-            "label": "Особая формула исцеления",
-            "enabled": {
-              "label": "Включение особой формулы",
-              "hint": "Использовать особую формулу вместо кости по умолчанию."
-            },
-            "formula": {
-              "label": "Формула исцеления",
-              "hint": "Особая формула исцеления."
-            }
-          },
-          "scaling": {
-            "label": "Подъём исцеления",
-            "mode": {
-              "label": "Режим подъёма",
-              "hint": "Метод расчёта подъёма."
-            },
-            "number": {
-              "label": "Подъём кости",
-              "hint": "Число костей, добавляемых на каждом шаге подъёма. Будет добавлено к первой кости в формуле исцеления."
-            },
-            "formula": {
-              "label": "Формула подъёма",
-              "hint": "Произвольная формула, которая будет умножаться для каждого шага подъёма и добавляться к исходной формуле."
-            }
-          },
-          "types": {
-            "label": "Типы исцеления",
-            "hint": "Исцеление или временные хиты."
-          }
-        }
-      }
-    },
-    "DamageRadiant": "Излучение",
-    "DamageSlashing": "Рубящий",
-    "DamageThunder": "Звук",
-    "DeathSave": "Спасбросок от смерти",
-    "DeathSaveBonus": "Бонус к спасброску от смерти",
-    "DeathSaveConfigure": "Настройка спасброска от смерти",
-    "DeathSaveCriticalSuccess": "{name} критически преуспел в спасброске от смерти и восстановил 1 хит!",
-    "DeathSaveHide": "Скрыть спасброски от смерти",
-    "DeathSaveShow": "Показать спасброски от смерти",
-    "DeathSaveSuccess": "{name} выживает с 3 успешными испытаниями против смерти!",
-    "DeathSaveSuccessLabel": "Успешный спасбросок от смерти",
-    "DeathSaveSuccessLabelN.one": "Первый успешный спасбросок от смерти",
-    "DeathSaveSuccessLabelN.two": "Второй успешный спасбросок от смерти",
-    "DeathSaveSuccessLabelN.few": "Третий успешный спасбросок от смерти",
-    "DeathSaveSuccesses": "Успехи",
-    "DeathSaveFailure": "{name} погибает с 3 проваленными спасбросками от смерти!",
-    "DeathSaveFailureLabel": "Провал спасброска от смерти",
-    "DeathSaveFailureLabelN.one": "Первый провал спасброска от смерти",
-    "DeathSaveFailureLabelN.two": "Второй провал спасброска от смерти",
-    "DeathSaveFailureLabelN.few": "Третий провал спасброска от смерти",
-    "DeathSaveFailures": "Провалы",
-    "DeathSaveRoll": "Спасбросок от смерти",
-    "DeathSavingThrow": "Спасбросок от смерти",
-    "DeathSaveUnnecessary": "Вам не нужно совершать спасбросок от смерти, т.к. у вас более 1 хита или уже 3 успеха.",
-    "Environment": "Местность",
-    "EQUIPMENT": {
-      "Type": {
-        "Clothing": {
-          "Label": "Одежда"
-        },
-        "Ring": {
-          "Label": "Кольцо"
-        },
-        "Rod": {
-          "Label": "Жезл"
-        },
-        "Trinket": {
-          "Label": "Безделушка"
-        },
-        "Vehicle": {
-          "Label": "Снаряжение транспорта"
-        },
-        "Wand": {
-          "Label": "Волшебная палочка"
-        },
-        "Wondrous": {
-          "Label": "Чудесный предмет"
-        }
-      }
+		"SpellLevel": "Уровень",
+		"SpellLevel0": "Заговор",
+		"SpellLevel1": "1-й уровень",
+		"SpellLevel2": "2-й уровень",
+		"SpellLevel3": "3-й уровень",
+		"SpellLevel4": "4-й уровень",
+		"SpellLevel5": "5-й уровень",
+		"SpellLevel6": "6-й уровень",
+		"SpellLevel7": "7-й уровень",
+		"SpellLevel8": "8-й уровень",
+		"SpellLevel9": "9-й уровень",
+		"SpellLevelPact": "Ячейка договора [{level} уровень] ({n} ячеек)",
+		"SpellLevels": "Уровни заклинаний",
+		"SpellMaterials": "Материальные компоненты",
+		"SpellMaterialsConsumed": "Расходует материальные компоненты",
+		"SpellMaterialsCost": "Цена материального компонента",
+		"SpellMaterialsDescription": "Описание материального компонента",
+		"SpellMaterialsSupply": "Доступность материального компонента",
+		"SUMMON": {
+			"FIELDS": {
+				"bonuses": {
+					"ac": {
+						"label": "Бонусный класс защиты",
+						"hint": "Бонус к классу защиты призванного существа."
+					},
+					"attackDamage": {
+						"label": "Бонус урона атак",
+						"hint": "Дополнительный урон, добавляемый к атакам существа."
+					},
+					"hd": {
+						"label": "Бонусная кость хитов",
+						"hint": "Дополнительная кость хитов, добавляемая существу сверх указанной формулы. Только для призываемых актёров."
+					},
+					"healing": {
+						"label": "Бонусное исцеление",
+						"hint": "Дополнительное исцеление, добавляемое к исцеляющим способностям."
+					},
+					"hp": {
+						"label": "Бонусные хиты",
+						"hint": "Бонус хитов для призванного существа."
+					},
+					"saveDamage": {
+						"label": "Бонусный урон спасбросков",
+						"hint": "Дополнительный урон, добавляемый к способностям существа, требующих прохождения спасброска."
+					}
+				},
+				"creatureSizes": {
+					"label": "Размеры существа",
+					"hint": "Призванное существо и токен будут изменены на этот размер. Если выбрано несколько размеров, то можно будет выбрать один из них во время призыва."
+				},
+				"creatureTypes": {
+					"label": "Типы существа",
+					"hint": "Призванное существо будет изменено на этот тип. Если выбрано несколько типов, то можно будет выбрать один из них во время призыва."
+				},
+				"match": {
+					"ability": {
+						"label": "Соответствующая характеристика",
+						"hint": "Характеристика, которая будет использована для соответсвующих атак и спасбросков."
+					},
+					"attacks": {
+						"label": "Приравнивание атак",
+						"hint": "Изменение значений атак призванного существа, чтобы те совпадали с атаками призывателя."
+					},
+					"proficiency": {
+						"label": "Приравнивание БВ",
+						"hint": "Изменение бонуса владения призванного существа, чтобы он совпадал с бонусом владения призывателя."
+					},
+					"saves": {
+						"label": "Приравнивание спасбросков",
+						"hint": "Изменение СЛ спасбросков призванного существа, чтобы те совпадали с призывателем."
+					}
+				},
+				"profiles": {
+					"label": "Профили призыва",
+					"FIELDS": {
+						"count": {
+							"label": "Число"
+						},
+						"cr": {
+							"label": "Показатель опасности",
+							"abbr": "ПО",
+							"hint": "Максимальный ПО призванного существа."
+						},
+						"level": {
+							"label": "Ограничение уровня",
+							"hint": "Диапазон уровней, требуемых для использования профиля.",
+							"max": {
+								"label": "Максимальный уровень"
+							},
+							"min": {
+								"label": "Минимальный уровень"
+							}
+						},
+						"name": {
+							"label": "Отображаемое имя",
+							"hint": "Имя профиля, отображаемое в окне использования."
+						},
+						"types": {
+							"label": "Типы существа",
+							"hint": "Список типов существа, которые можно выбрать для призыва."
+						},
+						"uuid": {
+							"label": "Связанное существо"
+						}
+					}
+				},
+				"summon": {
+					"label": "Подробности призыва",
+					"identifier": {
+						"label": "Идентификатор класса",
+						"hint": "Идентификатор уровня персонажа или класса, используемый для определения ограничения уровня профиля."
+					},
+					"mode": {
+						"label": "Режим",
+						"hint": "Как указываются призванные существа.",
+						"CR": "По показателю опасности и типу",
+						"Direct": "По прямой ссылке"
+					},
+					"prompt": {
+						"label": "Окно призыва",
+						"hint": "Отображать окно запроса для размещения призыва? Игроки всё еще смогут призывать существ из карточек чата."
+					}
+				}
+			}
+		},
+		"SAVE": {
+			"Title": {
+				"one": "Спасбросок",
+				"other": "Спасброски"
+			},
+			"FIELDS": {
+				"damage": {
+					"label": "Урон",
+					"onSave": {
+						"label": "Урон при успехе",
+						"hint": "Урон, получаемый при успешном спасброске",
+						"Full": "Полный урон",
+						"Half": "Половина урона",
+						"None": "Нет урона"
+					},
+					"parts": {
+						"label": "Части урона",
+						"hint": "Индивидуальные части урона, составляющие бросок."
+					}
+				},
+				"effects": {
+					"onSave": {
+						"label": "Всегда применять",
+						"hint": "Этот эффект будет всегда применён, даже если цель успешно пройдёт спасбросок."
+					}
+				},
+				"save": {
+					"label": "Подробности спасброска",
+					"ability": {
+						"label": "Характеристики спасброска",
+						"hint": "Характеристики, используемые при прохождении спасброска."
+					},
+					"dc": {
+						"label": "Сложность",
+						"calculation": {
+							"label": "Расчёт СЛ",
+							"hint": "Метод или характеристика, используемая для расчёта сложности."
+						},
+						"formula": {
+							"label": "Формула СЛ",
+							"hint": "Формула или неизменное значение для СЛ. спасброска"
+						},
+						"CustomFormula": "Своя формула",
+						"DefaultFormula": "8 + @mod + @prof"
+					}
+				}
+			},
+			"OnSave": "При успешном спасброске"
+		},
+		"ToolArtisans": "Ремесленные инструменты",
+		"Resistances": "Сопротивления",
+		"TRANSFORM": {
+			"Preset": {
+				"Appearance": {
+					"Label": "Только внешний вид"
+				},
+				"Default": "По умолчанию",
+				"Label": "Шаблоны",
+				"Polymorph": {
+					"Label": "Превращение"
+				},
+				"WildShape": {
+					"Label": "Дикий облик"
+				}
+			},
+			"Setting": {
+				"FIELDS": {
+					"tempFormula": {
+						"hint": "Формула временных хитов, которая будет добавлена к превращению.",
+						"label": "Формула врем. хитов"
+					}
+				},
+				"Keep": {
+					"Health": {
+						"Label": "Хиты и кости хитов"
+					},
+					"Physical": {
+						"Hint": "Оставить Силу, Ловкость и Телосложение.",
+						"Label": "Физические характеристики"
+					},
+					"Proficiency": {
+						"Label": "Бонус владения"
+					},
+					"Saves": {
+						"Label": "Владения спасбросками"
+					},
+					"Skills": {
+						"Label": "Владение навыками"
+					}
+				},
+				"Merge": {
+					"Saves": {
+						"Label": "Владения спасбросками"
+					},
+					"Skills": {
+						"Label": "Владения навыками"
+					}
+				}
+			}
+		},
+		"TraitArmorPlural": {
+			"one": "Владение доспехами",
+			"other": "Владения доспехами"
+		},
+		"TraitArmorProf": "Владения доспехами",
+		"TraitCIPlural": {
+			"one": "Иммунитет к состоянию",
+			"other": "Иммунитеты к состоянию"
+		},
+		"TraitDIPlural": {
+			"one": "Сопротивление к урону",
+			"other": "Сопротивления к урону"
+		},
+		"TraitDRPlural": {
+			"one": "Сопротивление к урону",
+			"other": "Сопротивления к урону"
+		},
+		"TraitSavesPlural": {
+			"one": "Владение спасбросками",
+			"other": "Владения спасбросками"
+		},
+		"TraitSkillsPlural": {
+			"one": "Владение навыками",
+			"other": "Владения навыками"
+		},
+		"TraitToolPlural": {
+			"one": "Владение инструментами",
+			"other": "Владения инструментами"
+		},
+		"TraitToolProf": "Владения инструментами",
+		"TraitWeaponPlural": {
+			"one": "Владение оружием",
+			"other": "Владения оружием"
+		},
+		"TraitWeaponProf": "Владения оружием",
+		"Versatile": "Универсальное",
+		"VersatileDamage": "Универсальный урон",
+		"VEHICLE": {
+			"MOUNTABLE": {
+				"FIELDS": {
+					"hp": {
+						"label": "Хиты",
+						"conditions": {
+							"label": "Состояние здоровья"
+						},
+						"dt": {
+							"label": "Предел прочности"
+						},
+						"max": {
+							"label": "Макс. хиты"
+						},
+						"value": {
+							"label": "Текущие хиты"
+						}
+					}
+				}
+			}
+		},
+		"VsDC": "со Сл",
+		"WarnBadACFormula": "Введённая формула КЗ не может быть рассчитана.",
+		"WarnMultipleArmor": "Надето более одного комплекта доспехов. Расчёт КЗ может быть некорректным.",
+		"WarnMultipleShields": "Надето более одного щита. Расчёт КЗ может быть некорректным.",
+		"WEAPON": {
+			"FIELDS": {
+				"ammunition": {
+					"type": {
+						"label": "Тип боеприпасов"
+					}
+				},
+				"armor": {
+					"value": {
+						"label": "Класс защиты"
+					}
+				},
+				"damage": {
+					"hint": "Кости урона оружия. Модификатор характеристики и дополнительный урон будут автоматически добавлены при атаке."
+				}
+			},
+			"Mastery": {
+				"Label": "Оружейное мастерство",
+				"Flavor": "Мастерство",
+				"Cleave": "Прорубающее",
+				"Graze": "Секущее",
+				"Nick": "Быстрое",
+				"Push": "Отталкивающее",
+				"Sap": "Ослабляющее",
+				"Slow": "Замедляющее",
+				"Topple": "Опрокидывающее",
+				"Vex": "Отвлекающее"
+			}
+		},
+		"WeaponMartialM": "Воинское рукопашное",
+		"WeaponMartialProficiency": "Воинское оружие",
+		"WeaponMartialR": "Воинское дальнобойное",
+		"WeaponNatural": "Естественное",
+		"WeaponPropertiesAda": "Адамантиновое",
+		"WeaponPropertiesLod": "Перезарядка",
+		"WeaponPropertiesRch": "Досягаемость",
+		"WeaponPropertiesRel": "Боекомплект",
+		"WeaponPropertiesVer": "Универсальное",
+		"WeaponSimpleM": "Простое рукопашное",
+		"WeaponSimpleR": "Простое дальнобойное",
+		"Item": {
+			"Property": {
+				"Adamantine": "Адамантиновое",
+				"Ammunition": "Боеприпасы",
+				"Concentration": "Концентрация",
+				"Finesse": "Фехтовальное",
+				"Firearm": "Огнестрельное",
+				"Focus": "Фокусирующее",
+				"Heavy": "Тяжёлое",
+				"Light": "Лёгкое",
+				"Loading": "Перезарядка",
+				"Material": "Материальный",
+				"Magical": "Магическое",
+				"Reach": "Досягаемость",
+				"Reload": "Боекомплект",
+				"Returning": "Возвращаемое",
+				"Ritual": "Ритуал",
+				"Silvered": "Посеребрённое",
+				"Somatic": "Соматический",
+				"Special": "Особое",
+				"StealthDisadvantage": "Помеха скрытности",
+				"Thrown": "Метательное",
+				"TwoHanded": "Двуручное",
+				"Versatile": "Универсальное",
+				"Verbal": "Вербальный",
+				"WeightlessContents": "Содержимое без веса"
+			}
+		}
 	},
-    "EquipmentHeavy": "Тяжёлый доспех",
-    "EquipmentLight": "Лёгкий доспех",
-    "EquipmentMedium": "Средний доспех",
-    "EquipmentNatural": "Природный доспех",
-    "Exhaustion": "Истощение",
-    "Expertise": "Экспертность",
-    "FeatureAdd": "Создать способность",
-    "FeatureAttack": "Атака способностью",
-    "FeatureUsage": "Использование способности",
-    "Features": "Способности",
-    "FLAGS": {
-      "EnhancedDualWielding": {
-        "Name": "Использование двух оружий",
-        "Hint": "Разрешить дополнительные атаки бонусным действием, используя любое оружие ближнего боя без свойства 'Двуручное'."
-      }
-    },
-    "FlagsDiamondSoul": "Алмазная душа",
-    "FlagsDiamondSoulHint": "Владение всеми спасбросками.",
-    "FlagsElvenAccuracyHint": "Дополнительная кость при проверках ЛОВ, ИНТ, МДР и ХАР с преимуществом.",
-    "FlagsHalflingLucky": "Везучий",
-    "FlagsHalflingLuckyHint": "Переброс «1» при проверках d20.",
-    "FlagsAlertHint": "Владение проверками инициативы.",
-    "FlagsInitiativeAdv": "Преимущество инициативы",
-    "FlagsInitiativeAdvHint": "Проверки инициативы получают преимущество.",
-    "FlagsInstructions": "Настройте способности и свойства, которые влияют на персонажа.",
-    "FlagsTavernBrawler": "Драчун",
-    "FlagsTavernBrawlerHint": "Владение импровизированным оружием.",
-    "FlagsJOATHint": "Половина бонуса владения в навыках у которых у вас нет владения.",
-    "FlagsPowerfulBuild": "Мощное телосложение",
-    "FlagsReliableTalent": "Надёжный талант",
-    "FlagsRemarkableAthleteHint": "Половина бонуса владения в проверках физических характеристик и инициативы.",
-    "FlagsSave": "Обновить способность",
-    "FlagsTitle": "Настройка способностей",
-    "Flaws": "Слабости",
-    "GroupHP": "Общие хиты",
-    "HP": "Хиты",
-    "HPFormula": "Формула хитов",
-    "HPFormulaError": "Введённая формула хитов не может быть рассчитана.",
-    "HPFormulaRollMessage": "Формула броска хитов",
-    "HalfProficient": "Владеет наполовину",
-    "HitDice": "Кость хитов",
-    "HitDiceConfig": "Настройка кости хитов",
-    "HITDICE": {
-      "Action": {
-        "Decrease": "Понижение",
-        "Increase": "Повышение"
-      },
-      "Available": "{number} доступно",
-      "Config": "Настройка костей хитов",
-      "Counted": {
-        "one": "{number} кость хитов",
-        "other": "{number} костей хитов"
-      }
-    },
-    "HITPOINTS": {
-      "Counted": {
-        "one": "{number} хит",
-        "other": "{number} хитов"
-      }
-    },
-    "HitDiceConfigHint": "Настройте оставшиеся кости хитов для каждого класса",
-    "HitDiceMax": "Максимальная кость хитов",
-    "HitDiceRemaining": "Оставшиеся кости хитов",
-    "HitDiceRoll": "Бросок кости хитов",
-    "HitDiceUsed": "Использовано КХ",
-    "HitDiceWarn": "У {name} не осталось {formula} костей хитов!",
-    "HitDie": "Кость хитов",
-    "HitPoints": "Хиты",
-    "HitPointsConfig": "Настройка хитов",
-    "HitPointsCurrent": "Текущие хиты",
-    "HitPointsMax": "Максимальные хиты",
-    "HitPointsMin": "Минимальные хиты",
-    "HitPointsOverride": "Перезапись максимальных хитов",
-    "HitPointsTemp": "Временные хиты",
-    "HitPointsTempShort": "Временные хиты",
-    "HitPointsTempMax": "Временный максимум хитов",
-    "HitPointsTempMaxHint": "Временно изменяет максимум хитов.",
-    "HitPointsTempMaxShort": "Врем. макс. хитов",
-    "HealingTemp": "Временные хиты",
-    "ExperiencePoints": {
-      "Abbreviation": "Опыт",
-      "Boons": {
-        "one": "{number} дар",
-        "other": "{number} дара"
-      },
-      "Current": "Текущий опыт",
-      "Format": "{value} опыта",
-      "Label": "Опыт",
-      "Progress": "До следующего уровня",
-      "StatBlock": {
-        "Standard": "{value} опыта",
-        "Lair": "{value} или {lair} опыта в логове"
-      },
-      "Value": "Опыт"
-    },
-    "NPC": {
-      "Label": "Персонаж мастера",
-      "SECTIONS": {
-        "Actions": "Действия",
-        "BonusActions": "Бонусные действия",
-        "LegendaryActions": "Легендарные действия",
-        "Reactions": "Реакции",
-        "Traits": "Особенности"
-      },
-      "Important": {
-        "Hint": "Важные персонажи Мастера имеют кости хитов, проходят спасброски против смерти, и имеют показатель лояльности (если включено). Любые ПМ с классами считаются важными не зависимо от этой настройки.",
-        "Label": "Важный ПМ"
-      }
-    },
-    "ItemFeatureDetails": "Подробности способности",
-    "ItemFeatureType": "Тип способности",
-    "ItemRarityVeryRare": "очень редкий",
-    "ItemToolProficiency": "Владение инструментами",
-    "Language": {
-      "Language": {
-        "Aarakocra": "Ааракокр",
-        "Abyssal": "Язык бездны",
-        "Aquan": "Акван",
-        "Auran": "Ауран",
-        "Celestial": "Небесный",
-        "Common": "Всеобщий",
-        "CommonSign": "Язык жестов",
-        "DeepSpeech": "Глубинная речь",
-        "Draconic": "Драконий",
-        "Druidic": "Друидический",
-        "Dwarvish": "Дварфский",
-        "Elvish": "Эльфийский",
-        "Giant": "Великаний",
-        "Gith": "Гитский",
-        "Gnoll": "Гноллий",
-        "Gnomish": "Гномий",
-        "Goblin": "Гоблинский",
-        "Halfling": "Полуросличий",
-        "Ignan": "Игнан",
-        "Infernal": "Инфернальный",
-        "Orc": "Орочий",
-        "Primordial": "Первичный",
-        "Sylvan": "Сильван",
-        "Terran": "Терран",
-        "ThievesCant": "Воровской жаргон",
-        "Undercommon": "Подземный"
-      }
-    },
-    "LegendaryResistance": {
-      "Action": {
-        "Resist": "Легендарное сопротивление"
-      },
-      "Label": "Легендарное сопротивление",
-      "Max": "Максимум легендарных сопротивлений",
-      "Ordinal": {
-        "one": "{n}-я Легендарное сопротивление",
-        "two": "{n}-я Легендарное сопротивление",
-        "few": "{n}-я Легендарное сопротивление",
-        "other": "{n}-я Легендарное сопротивление"
-      },
-      "Remaining": "Остаток легендарных сопротивлений",
-      "Resisted": "Использовано легендарное сопротивление"
-    },
-    "Habitat": {
-      "Categories": {
-        "Any": "Любая",
-        "Arctic": "Приполярье",
-        "Coastal": "Побережье",
-        "Desert": "Пустыня",
-        "Forest": "Лес",
-        "Grassland": "Степь",
-        "Hill": "Холм",
-        "Mountain": "Гора",
-        "Planar": "План бытия",
-        "Swamp": "Болото",
-        "Underdark": "Подземье",
-        "Underwater": "Подводные глубины",
-        "Urban": "Город"
-      },
-      "Configuration": {
-        "Custom": "Особая",
-        "Label": "Среда обитания",
-        "Legend": "Категория",
-        "Subtype": "Подтип {type}",
-        "Title": "Настройка среды обитания"
-      },
-      "Subtype": "{type} ({subtype})"
-    },
-    "Long": "Максимальная",
-    "Normal": "Обычная",
-    "LongRest": "Долгий отдых",
-    "LongRestEpic": "Долгий отдых (1 час)",
-    "LongRestGritty": "Долгий отдых (7 дней)",
-    "LongRestHint": "Совершить долгий отдых? В конце долгого отдыха персонаж восстанавливает все потраченные хиты, а также половину от максимума костей хитов, предметы с ежедневными зарядами и ячейки заклинаний.",
-    "LongRestNormal": "Долгий отдых (8 часов)",
-    "LongRestOvernight": "Долгий отдых (новый день)",
-    "LongRestRecovery": "Восстанавливается после долгого отдыха",
-    "LongRestResult": "{name} совершает долгий отдых, восстанавливая {health} хитов и {dice} костей хитов.",
-    "LongRestResultHitDice": "{name} совершает долгий отдых и восстанавливает {dice} костей хитов.",
-    "LongRestResultHitPoints": "{name} совершает долгий отдых и восстанавливает {health} хитов.",
-    "LongRestResultShort": "{name} совершает долгий отдых.",
-    "NotProficient": "Без владения",
-    "PersonalityTraits": "Черты характера",
-    "Polymorph": "Превращение",
-    "PolymorphAddTemp": "Добавить хиты цели как временные временные хиты",
-    "PolymorphKeepClass": "Сохранить бонус владения",
-    "PolymorphKeepClassAE": "Сохранить эффекты от класса и подкласса",
-    "PolymorphKeepHP": "Сохранить хиты и кости хитов",
-    "PolymorphKeepPhysical": "Сохранить СИЛ, ЛВК, ТЕЛ",
-    "PolymorphKeepSaves": "Сохранить владение спасбросков",
-    "PolymorphKeepSelf": "Сохранить себя (изменить только изображение и размер)",
-    "PolymorphKeepSkills": "Сохранить владение навыками",
-    "PolymorphMergeSaves": "Объединить владения спасбросками (сохранить наибольшие)",
-    "PolymorphMergeSkills": "Объединить владения навыками (сохранить наибольшие)",
-    "PolymorphRevertWarn": "У вас нет прав на отмену превращения этого существа.",
-    "PolymorphWarn": "У вас нет прав на превращение этого существа.",
-    "PolymorphWildShape": "Дикий облик",
-    "Proficiency": "Владение",
-    "ProficiencyBonus": "Бонус владения",
-    "ProficiencyLevel": "Уровень владения",
-    "Proficient": "Владеет",
-    "RangeLong": "Максимальная дистанция",
-    "RangeNormal": "Нормальная дистанция",
-    "Reaction": "Реакция",
-    "ReactionPl": "Реакции",
-    "REST": {
-      "Configuration": "Настройка отдыха",
-      "HitDice": {
-        "AutoSpend": {
-          "Hint": "Автоматически использовать кости хитов, пока хиты не будут полностью восстановлены.",
-          "Label": "Автоматически использовать костих хитов"
-        },
-        "None": "Во время отдыха закончились кости хитов.",
-        "Select": "Выберите кость хитов"
-      },
-      "Label": "Отдых",
-      "Long": {
-        "Abbreviation": "ДО",
-        "Hint": {
-          "Group": "В конце долгого отдыха участники группы восстанавливают хиты, а также кости хитов, ресурсы класса, предметы с ежедневными зарядами и ячейки заклинаний.",
-          "GroupLegacy": "В конце долгого отдыха участники группы восстанавливают все хиты, а также половину от максимума костей хитов, ресурсы класса, предметы с ежедневными зарядами и ячейки заклинаний.",
-          "Normal": "В конце долгого отдыха вы восстанавливаете хиты, а также кости хитов, ресурсы класса, предметы с ежедневными зарядами и ячейки заклинаний.",
-          "NormalLegacy": "В конце долгого отдыха вы восстанавливаете все хиты, а также половину от максимума костей хитов, ресурсы класса, предметы с ежедневными зарядами и ячейки заклинаний."
-        },
-        "Label": "Долгий отдых",
-        "LabelShort": "Продолжительный",
-        "Recovery": "Восстанавливается при продолжительным отдыхе",
-        "Result": {
-          "Full": "{name} завершает долгий отдых и восстанавливает {health} и {dice}.",
-          "HitDice": "{name} завершает долгий отдых и восстанавливает {dice}.",
-          "HitPoints": "{name} завершает долгий отдых и восстанавливает {health}.",
-          "Short": "{name} завершает долгий отдых."
-        }
-      },
-      "Short": {
-        "Abbreviation": "КО",
-        "Hint": {
-          "Group": "При коротком отдыхе участники группы могут использовать кости хитов и восстановить заряды предметов.",
-          "Normal": "При коротком отдыхе вы можете использовать кости хитов и восстановить заряды предметов."
-        },
-        "Label": "Короткий отдых",
-        "LabelShort": "Короткий",
-        "Recovery": "Восстанавливается при коротком отдыхе",
-        "Result": {
-          "Full": "{name} завершает короткий отдых, используя {dice} и восстанавливая {health}.",
-          "Short": "{name} завершает короткий отдых."
-        }
-      }
-    },
-    "RequiredMaterials": "Требуемые материальные компоненты",
-    "RestL": "Продолжительный",
-    "RestS": "Короткий",
-    "SaveBonus": "Бонус спасброска",
-    "SaveDC": "Сл {dc} {ability}",
-    "SaveGlobalBonusHint": "Бонус применяется ко всем спасброскам.",
-    "SavePromptTitle": "Спасбросок {ability}",
-    "SavingThrow": "Спасбросок",
-    "SavingThrowDC": "СЛ {dc} - спасбросок {ability}",
-    "SavingThrowRoll": "Спасбросок {ability}",
-    "SavingThrowShort": "Спас",
-    "ScalingFormula": "Формула повышенного уровня",
-    "SchoolAbj": "Ограждение",
-    "SchoolCon": "Призыв",
-    "SchoolEvo": "Воплощение",
-    "SchoolTrs": "Преобразование",
-    "SenseDarkvision": "Тёмное зрение",
-    "SenseSpecial": "Особое чувство",
-    "SenseTremorsense": "Чувство вибрации",
-    "Senses": "Особое чувство",
-    "SensesConfig": "Настройка чувств",
-    "SensesConfigHint": "Настройка особых видов чувств, которыми владеет существо.",
-    "ShortRestHint": "Совершить короткий отдых? При коротком отдыхе вы можете использовать кости хитов для лечения и восстановить некоторые ресурсы.",
-    "ShortRestNoHD": "Не осталось КХ",
-    "ShortRestResult": "{name} совершает короткий отдых, расходуя {dice} костей хитов и восстанавливая {health} хитов.",
-    "ShortRestSelect": "Выберите кость хитов",
-    "SizeGargantuan": "Громадный",
-    "SizeLarge": "Большой",
-    "SizeSmall": "Маленький",
-    "SizeTiny": "Крошечный",
-    "SkillAni": "Обращение с животными",
-    "SkillConfigurationHint": "Настройка бонуса и владение навыком.",
-    "SkillPrc": "Восприятие",
-    "SkillPrf": "Выступление",
-    "SpellCantrip": "Заговор",
-    "SpellCastUpcast": "Сотворить на уровне",
-    "SpellDC": "Сл заклинаний",
-
-    "SpellLevel": "Уровень",
-    "SpellLevel0": "Заговор",
-    "SpellLevel1": "1-й уровень",
-    "SpellLevel2": "2-й уровень",
-    "SpellLevel3": "3-й уровень",
-    "SpellLevel4": "4-й уровень",
-    "SpellLevel5": "5-й уровень",
-    "SpellLevel6": "6-й уровень",
-    "SpellLevel7": "7-й уровень",
-    "SpellLevel8": "8-й уровень",
-    "SpellLevel9": "9-й уровень",
-    "SpellLevelPact": "Ячейка договора [{level} уровень] ({n} ячеек)",
-    "SpellLevels": "Уровни заклинаний",
-    "SpellMaterials": "Материальные компоненты",
-    "SpellMaterialsConsumed": "Расходует материальные компоненты",
-    "SpellMaterialsCost": "Цена материального компонента",
-    "SpellMaterialsDescription": "Описание материального компонента",
-    "SpellMaterialsSupply": "Доступность материального компонента",
-    "SUMMON": {
-      "FIELDS": {
-        "bonuses": {
-          "ac": {
-            "label": "Бонусный класс защиты",
-            "hint": "Бонус к классу защиты призванного существа."
-          },
-          "attackDamage": {
-            "label": "Бонус урона атак",
-            "hint": "Дополнительный урон, добавляемый к атакам существа."
-          },
-          "hd": {
-            "label": "Бонусная кость хитов",
-            "hint": "Дополнительная кость хитов, добавляемая существу сверх указанной формулы. Только для призываемых актёров."
-          },
-          "healing": {
-            "label": "Бонусное исцеление",
-            "hint": "Дополнительное исцеление, добавляемое к исцеляющим способностям."
-          },
-          "hp": {
-            "label": "Бонусные хиты",
-            "hint": "Бонус хитов для призванного существа."
-          },
-          "saveDamage": {
-            "label": "Бонусный урон спасбросков",
-            "hint": "Дополнительный урон, добавляемый к способностям существа, требующих прохождения спасброска."
-          }
-        },
-        "creatureSizes": {
-          "label": "Размеры существа",
-          "hint": "Призванное существо и токен будут изменены на этот размер. Если выбрано несколько размеров, то можно будет выбрать один из них во время призыва."
-        },
-        "creatureTypes": {
-          "label": "Типы существа",
-          "hint": "Призванное существо будет изменено на этот тип. Если выбрано несколько типов, то можно будет выбрать один из них во время призыва."
-        },
-        "match": {
-          "ability": {
-            "label": "Соответствующая характеристика",
-            "hint": "Характеристика, которая будет использована для соответсвующих атак и спасбросков."
-          },
-          "attacks": {
-            "label": "Приравнивание атак",
-            "hint": "Изменение значений атак призванного существа, чтобы те совпадали с атаками призывателя."
-          },
-          "proficiency": {
-            "label": "Приравнивание БВ",
-            "hint": "Изменение бонуса владения призванного существа, чтобы он совпадал с бонусом владения призывателя."
-          },
-          "saves": {
-            "label": "Приравнивание спасбросков",
-            "hint": "Изменение СЛ спасбросков призванного существа, чтобы те совпадали с призывателем."
-          }
-        },
-        "profiles": {
-          "label": "Профили призыва",
-          "FIELDS": {
-            "count": {
-              "label": "Число"
-            },
-            "cr": {
-              "label": "Показатель опасности",
-              "abbr": "ПО",
-              "hint": "Максимальный ПО призванного существа."
-            },
-            "level": {
-              "label": "Ограничение уровня",
-              "hint": "Диапазон уровней, требуемых для использования профиля.",
-              "max": {
-                "label": "Максимальный уровень"
-              },
-              "min": {
-                "label": "Минимальный уровень"
-              }
-            },
-            "name": {
-              "label": "Отображаемое имя",
-              "hint": "Имя профиля, отображаемое в окне использования."
-            },
-            "types": {
-              "label": "Типы существа",
-              "hint": "Список типов существа, которые можно выбрать для призыва."
-            },
-            "uuid": {
-              "label": "Связанное существо"
-            }
-          }
-        },
-        "summon": {
-          "label": "Подробности призыва",
-          "identifier": {
-            "label": "Идентификатор класса",
-            "hint": "Идентификатор уровня персонажа или класса, используемый для определения ограничения уровня профиля."
-          },
-          "mode": {
-            "label": "Режим",
-            "hint": "Как указываются призванные существа.",
-            "CR": "По показателю опасности и типу",
-            "Direct": "По прямой ссылке"
-          },
-          "prompt": {
-            "label": "Окно призыва",
-            "hint": "Отображать окно запроса для размещения призыва? Игроки всё еще смогут призывать существ из карточек чата."
-          }
-        }
-      }
-    },
-    "SAVE": {
-      "Title": {
-        "one": "Спасбросок",
-        "other": "Спасброски"
-      },
-      "FIELDS": {
-        "damage": {
-          "label": "Урон",
-          "onSave": {
-            "label": "Урон при успехе",
-            "hint": "Урон, получаемый при успешном спасброске",
-            "Full": "Полный урон",
-            "Half": "Половина урона",
-            "None": "Нет урона"
-          },
-          "parts": {
-            "label": "Части урона",
-            "hint": "Индивидуальные части урона, составляющие бросок."
-          }
-        },
-        "effects": {
-          "onSave": {
-            "label": "Всегда применять",
-            "hint": "Этот эффект будет всегда применён, даже если цель успешно пройдёт спасбросок."
-          }
-        },
-        "save": {
-          "label": "Подробности спасброска",
-          "ability": {
-            "label": "Характеристики спасброска",
-            "hint": "Характеристики, используемые при прохождении спасброска."
-          },
-          "dc": {
-            "label": "Сложность",
-            "calculation": {
-              "label": "Расчёт СЛ",
-              "hint": "Метод или характеристика, используемая для расчёта сложности."
-            },
-            "formula": {
-              "label": "Формула СЛ",
-              "hint": "Формула или неизменное значение для СЛ. спасброска"
-            },
-            "CustomFormula": "Своя формула",
-            "DefaultFormula": "8 + @mod + @prof"
-          }
-        }
-      },
-      "OnSave": "При успешном спасброске"
-    },
-    "ToolArtisans": "Ремесленные инструменты",
-    "Resistances": "Сопротивления",
-    "TRANSFORM": {
-      "Preset": {
-        "Appearance": {
-          "Label": "Только внешний вид"
-        },
-        "Default": "По умолчанию",
-        "Label": "Шаблоны",
-        "Polymorph": {
-          "Label": "Превращение"
-        },
-        "WildShape": {
-          "Label": "Дикий облик"
-        }
-      },
-      "Setting": {
-        "FIELDS": {
-          "tempFormula": {
-            "hint": "Формула временных хитов, которая будет добавлена к превращению.",
-            "label": "Формула врем. хитов"
-          }
-        },
-        "Keep": {
-          "Health": {
-            "Label": "Хиты и кости хитов"
-          },
-          "Physical": {
-            "Hint": "Оставить Силу, Ловкость и Телосложение.",
-            "Label": "Физические характеристики"
-          },
-          "Proficiency": {
-            "Label": "Бонус владения"
-          },
-          "Saves": {
-            "Label": "Владения спасбросками"
-          },
-          "Skills": {
-            "Label": "Владение навыками"
-          }
-        },
-        "Merge": {
-          "Saves": {
-            "Label": "Владения спасбросками"
-          },
-          "Skills": {
-            "Label": "Владения навыками"
-          }
-        }
-      }
-    },
-    "TraitArmorPlural": {
-      "one": "Владение доспехами",
-      "other": "Владения доспехами"
-    },
-    "TraitArmorProf": "Владения доспехами",
-    "TraitCIPlural": {
-      "one": "Иммунитет к состоянию",
-      "other": "Иммунитеты к состоянию"
-    },
-    "TraitDIPlural": {
-      "one": "Сопротивление к урону",
-      "other": "Сопротивления к урону"
-    },
-    "TraitDRPlural": {
-      "one": "Сопротивление к урону",
-      "other": "Сопротивления к урону"
-    },
-    "TraitSavesPlural": {
-      "one": "Владение спасбросками",
-      "other": "Владения спасбросками"
-    },
-    "TraitSkillsPlural": {
-      "one": "Владение навыками",
-      "other": "Владения навыками"
-    },
-    "TraitToolPlural": {
-      "one": "Владение инструментами",
-      "other": "Владения инструментами"
-    },
-    "TraitToolProf": "Владения инструментами",
-    "TraitWeaponPlural": {
-      "one": "Владение оружием",
-      "other": "Владения оружием"
-    },
-    "TraitWeaponProf": "Владения оружием",
-    "Versatile": "Универсальное",
-    "VersatileDamage": "Универсальный урон",
-    "VEHICLE": {
-      "MOUNTABLE": {
-        "FIELDS": {
-          "hp": {
-            "label": "Хиты",
-            "conditions": {
-              "label": "Состояние здоровья"
-            },
-            "dt": {
-              "label": "Предел прочности"
-            },
-            "max": {
-              "label": "Макс. хиты"
-            },
-            "value": {
-              "label": "Текущие хиты"
-            }
-          }
-        }
-      }
-    },
-    "VsDC": "со Сл",
-    "WarnBadACFormula": "Введённая формула КЗ не может быть рассчитана.",
-    "WarnMultipleArmor": "Надето более одного комплекта доспехов. Расчёт КЗ может быть некорректным.",
-    "WarnMultipleShields": "Надето более одного щита. Расчёт КЗ может быть некорректным.",
-    "WEAPON": {
-      "FIELDS": {
-        "ammunition": {
-          "type": {
-            "label": "Тип боеприпасов"
-          }
-        },
-        "armor": {
-          "value": {
-            "label": "Класс защиты"
-          }
-        },
-        "damage": {
-          "hint": "Кости урона оружия. Модификатор характеристики и дополнительный урон будут автоматически добавлены при атаке."
-        }
-      },
-      "Mastery": {
-        "Label": "Оружейное мастерство",
-        "Flavor": "Мастерство",
-        "Cleave": "Прорубающее",
-        "Graze": "Секущее",
-        "Nick": "Быстрое",
-        "Push": "Отталкивающее",
-        "Sap": "Ослабляющее",
-        "Slow": "Замедляющее",
-        "Topple": "Опрокидывающее",
-        "Vex": "Отвлекающее"
-      }
-    },
-    "WeaponMartialM": "Воинское рукопашное",
-    "WeaponMartialProficiency": "Воинское оружие",
-    "WeaponMartialR": "Воинское дальнобойное",
-    "WeaponNatural": "Естественное",
-    "WeaponPropertiesAda": "Адамантиновое",
-    "WeaponPropertiesLod": "Перезарядка",
-    "WeaponPropertiesRch": "Досягаемость",
-    "WeaponPropertiesRel": "Боекомплект",
-    "WeaponPropertiesVer": "Универсальное",
-    "WeaponSimpleM": "Простое рукопашное",
-    "WeaponSimpleR": "Простое дальнобойное",
-    "Item": {
-      "Property": {
-        "Adamantine": "Адамантиновое",
-        "Ammunition": "Боеприпасы",
-        "Concentration": "Концентрация",
-        "Finesse": "Фехтовальное",
-        "Firearm": "Огнестрельное",
-        "Focus": "Фокусирующее",
-        "Heavy": "Тяжёлое",
-        "Light": "Лёгкое",
-        "Loading": "Перезарядка",
-        "Material": "Материальный",
-        "Magical": "Магическое",
-        "Reach": "Досягаемость",
-        "Reload": "Боекомплект",
-        "Returning": "Возвращаемое",
-        "Ritual": "Ритуал",
-        "Silvered": "Посеребрённое",
-        "Somatic": "Соматический",
-        "Special": "Особое",
-        "StealthDisadvantage": "Помеха скрытности",
-        "Thrown": "Метательное",
-        "TwoHanded": "Двуручное",
-        "Versatile": "Универсальное",
-        "Verbal": "Вербальный",
-        "WeightlessContents": "Содержимое без веса"
-      }
-
-    }
-  },
 	"EDITOR.DND5E.Inline": {
 		"ApplyStatus": "Применить статус к выбранным токенам",
 		"AttackExtended": "<em>{type}</em>: {parts}",
@@ -1614,88 +1610,88 @@
 			"NoItemOnActor": "У {actor} нет предмета с названием {item}."
 		}
 	},
-  "EFFECT.DND5E": {
-    "StatusBleeding": "Кровотечение",
-    "StatusBloodied": "Окровавленный",
-    "StatusBurning": "Горение",
-    "StatusBurrowing": "Копание",
-    "StatusConcentrating": "Концентрация",
-    "StatusCursed": "Проклятие",
-    "StatusDead": "Смерть",
-    "StatusDehydration": "Жажда",
-    "StatusDodging": "Уклонение",
-    "StatusEncumbered": "Нагруженность",
-    "StatusEthereal": "Эфемерность",
-    "StatusExceedingCarryingCapacity": "Превышение максимальной грузоподъёмности",
-    "StatusFalling": "Падение",
-    "StatusFlying": "Полёт",
-    "StatusHeavilyEncumbered": "Крайняя нагруженность",
-    "StatusHiding": "Скрытность",
-    "StatusHovering": "Парение",
-    "StatusMalnutrition": "Голод",
-    "StatusMarked": "Метка",
-    "StatusSilenced": "Немота",
-    "StatusSleeping": "Сон",
-    "StatusStable": "Стабильность",
-    "StatusSuffocation": "Удушение",
-    "StatusSurprised": "Застигнут врасплох",
-    "StatusThreeQuartersCover": "Укрытие на три четверти",
-    "StatusTotalCover": "Укрытие полностью",
-    "StatusTransformed": "Превращение"
-  },
-  "ITEM": {
-    "TypeFeat": "Черта",
-    "TypeFeaturePl": "Черты"
-  },
-  "JOURNALENTRYPAGE": {
-    "DND5E": {
-      "Class": {
-        "AdditionalHitPoints": "Доп. описание хитов",
-        "AdditionalHitPointsHint": "Дополнительное описание под автоматическим расчётом хитов.",
-        "HitDice": "<strong>Кости хитов:</strong> {dice} за уровень {class}",
-        "HitPointsHeader": "Хиты",
-        "HitPointsLevel1": "<strong>Хиты на 1-м уровне:</strong> {max} + модификатор Телосложения",
-        "HitPointsLevelX": "<strong>Хиты на следующих уровнях:</strong> {dice} (or {average}) + модификатор Телосложения за каждый уровень {class} выше 1-го",
-        "SpellSlotLevel": "Уровень ячейки",
-        "SpellSlotsPerSpellLevel": "—Ячеек на уровень заклинания—"
-      }
-    }
-  },
-  "SETTINGS": {
-    "5eAllowPolymorphingL": "Разрешить игрокам превращение своих персонажей.",
-    "5eAllowPolymorphingN": "Разрешить превращение",
-    "5eProfL": "Вариант правил владения - постоянный бонус или бросок кости. Для применения изменений требуется перезагрузка мира.",
-    "5eProfN": "Вариант владений",
-    "5eRestEpic": "Эпическая героика (ДО: 1 час, КО: 1 мин)",
-    "5eRestGritty": "Жестокий реализм (ДО: 7 дней, КО: 8 часов)",
-    "5eRestPHB": "Книга Игрока (ДО: 8 часов, КО: 1 час)"
-  },
-  "SETTINGS.DND5E": {
-    "VISIBILITY": {
-      "ATTACK": {
-        "Name": "Видимость результата атаки",
-        "Hint": "Видимость результатов бросков атаки в карточках чата для игроков.",
-        "All": "Результат и КЗ цели",
-        "HideAC": "Только результат",
-        "None": "Скрывать всё"
-      }
-    },
-    "NPCS": {
-      "Name": "Персонажи мастера",
-      "AutoRollNPCHP": {
-        "Name": "Хиты",
-        "Hint": "Нужно ли совершать бросок для определения максимальных хитов при создании нового токена персонажа Мастера.",
-        "No": "Не бросать",
-        "Silent": "Бросать с сообщением в чате",
-        "Yes": "Бросать без сообщения в чате"
-      }
-    },
-    "BLOODIED": {
-      "Name": "Статус \"Окровавленный\"",
-      "Hint": "Автоматическое отслеживание и видимость статуса \"Окровавленный\".",
-      "All": "Для союзников и противников",
-      "Player": "Только для союзников",
-      "None": "Никогда"
-    }
-  }
+	"EFFECT.DND5E": {
+		"StatusBleeding": "Кровотечение",
+		"StatusBloodied": "Окровавленный",
+		"StatusBurning": "Горение",
+		"StatusBurrowing": "Копание",
+		"StatusConcentrating": "Концентрация",
+		"StatusCursed": "Проклятие",
+		"StatusDead": "Смерть",
+		"StatusDehydration": "Жажда",
+		"StatusDodging": "Уклонение",
+		"StatusEncumbered": "Нагруженность",
+		"StatusEthereal": "Эфемерность",
+		"StatusExceedingCarryingCapacity": "Превышение максимальной грузоподъёмности",
+		"StatusFalling": "Падение",
+		"StatusFlying": "Полёт",
+		"StatusHeavilyEncumbered": "Крайняя нагруженность",
+		"StatusHiding": "Скрытность",
+		"StatusHovering": "Парение",
+		"StatusMalnutrition": "Голод",
+		"StatusMarked": "Метка",
+		"StatusSilenced": "Немота",
+		"StatusSleeping": "Сон",
+		"StatusStable": "Стабильность",
+		"StatusSuffocation": "Удушение",
+		"StatusSurprised": "Застигнут врасплох",
+		"StatusThreeQuartersCover": "Укрытие на три четверти",
+		"StatusTotalCover": "Укрытие полностью",
+		"StatusTransformed": "Превращение"
+	},
+	"ITEM": {
+		"TypeFeat": "Черта",
+		"TypeFeaturePl": "Черты"
+	},
+	"JOURNALENTRYPAGE": {
+		"DND5E": {
+			"Class": {
+				"AdditionalHitPoints": "Доп. описание хитов",
+				"AdditionalHitPointsHint": "Дополнительное описание под автоматическим расчётом хитов.",
+				"HitDice": "<strong>Кости хитов:</strong> {dice} за уровень {class}",
+				"HitPointsHeader": "Хиты",
+				"HitPointsLevel1": "<strong>Хиты на 1-м уровне:</strong> {max} + модификатор Телосложения",
+				"HitPointsLevelX": "<strong>Хиты на следующих уровнях:</strong> {dice} (or {average}) + модификатор Телосложения за каждый уровень {class} выше 1-го",
+				"SpellSlotLevel": "Уровень ячейки",
+				"SpellSlotsPerSpellLevel": "—Ячеек на уровень заклинания—"
+			}
+		}
+	},
+	"SETTINGS": {
+		"5eAllowPolymorphingL": "Разрешить игрокам превращение своих персонажей.",
+		"5eAllowPolymorphingN": "Разрешить превращение",
+		"5eProfL": "Вариант правил владения - постоянный бонус или бросок кости. Для применения изменений требуется перезагрузка мира.",
+		"5eProfN": "Вариант владений",
+		"5eRestEpic": "Эпическая героика (ДО: 1 час, КО: 1 мин)",
+		"5eRestGritty": "Жестокий реализм (ДО: 7 дней, КО: 8 часов)",
+		"5eRestPHB": "Книга Игрока (ДО: 8 часов, КО: 1 час)"
+	},
+	"SETTINGS.DND5E": {
+		"VISIBILITY": {
+			"ATTACK": {
+				"Name": "Видимость результата атаки",
+				"Hint": "Видимость результатов бросков атаки в карточках чата для игроков.",
+				"All": "Результат и КЗ цели",
+				"HideAC": "Только результат",
+				"None": "Скрывать всё"
+			}
+		},
+		"NPCS": {
+			"Name": "Персонажи мастера",
+			"AutoRollNPCHP": {
+				"Name": "Хиты",
+				"Hint": "Нужно ли совершать бросок для определения максимальных хитов при создании нового токена персонажа Мастера.",
+				"No": "Не бросать",
+				"Silent": "Бросать с сообщением в чате",
+				"Yes": "Бросать без сообщения в чате"
+			}
+		},
+		"BLOODIED": {
+			"Name": "Статус \"Окровавленный\"",
+			"Hint": "Автоматическое отслеживание и видимость статуса \"Окровавленный\".",
+			"All": "Для союзников и противников",
+			"Player": "Только для союзников",
+			"None": "Никогда"
+		}
+	}
 }
