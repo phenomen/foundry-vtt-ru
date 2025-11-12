@@ -1,6 +1,8 @@
 import type { Config } from "prettier";
 
 const config: Config = {
+	plugins: ["prettier-plugin-multiline-arrays"],
+	multilineArraysWrapThreshold: 1,
 	useTabs: true,
 	tabWidth: 2,
 	endOfLine: "lf",
@@ -13,7 +15,6 @@ const config: Config = {
 	jsxSingleQuote: false,
 	trailingComma: "es5",
 	arrowParens: "always",
-
 	htmlWhitespaceSensitivity: "css",
 };
 
