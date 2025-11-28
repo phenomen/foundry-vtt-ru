@@ -34,6 +34,10 @@ select {
 	font-size: var(--font-size-14);
 }
 
+.dnd5e2 :is(.form-group, fieldset) :is(select, input):not([type="range"]) {
+    font-size: var(--font-size-12);
+}
+
 .dnd5e2 .items-section .items-header .item-quantity,
 .dnd5e2 .items-section .item .item-quantity,
 .dnd5e2 .items-section .items-header .item-recovery,
@@ -98,6 +102,10 @@ select {
 	font-size: var(--font-size-9);
 	font-family: var(--font-sans-condensed);
 	font-weight: 500;
+}
+
+#calendar-hud .calendar-button button {
+    white-space: nowrap;
 }
 
 /* 1.0 */
