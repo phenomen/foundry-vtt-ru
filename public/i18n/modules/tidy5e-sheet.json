@@ -28,7 +28,20 @@
 
 	"TIDY5E.AddSpecific": "Добавить {name}",
 
+	"TIDY5E.SheetPin": {
+		"Label": "Закрепление бланка",
+		"LabelPl": "Закрепления бланка"
+	},
+
+	"TIDY5E.Show": "Показать",
+	"TIDY5E.Hide": "Скрыть",
+
+	"TIDY5E.LegendaryLairToolbar": "Панель логова",
+	"TIDY5E.SpellbookSections": "Разделы заклинаний",
+
 	"TIDY5E.ExhaustionLevelTooltip": "{level}-я степень утомления",
+
+	"TIDY5E.UserDefaultPrefix": "По умолчанию: {value}",
 
 	"TIDY5E.AbbrInitiative": "Ини",
 
@@ -38,6 +51,7 @@
 	"TIDY5E.Group.ShowMemberTabInfoPanel": "Просмотр панели информации",
 	"TIDY5E.Group.HideMemberTabInfoPanel": "Скрытие панели информации",
 	"TIDY5E.Group.EmptyMembersTabHint": "В группе нет участников. Перетащите актёров, чтобы добавить.",
+	"TIDY5E.Group.PrimaryParty.Label": "Основная группа",
 
 	"TIDY5E.RestHint": "Отдохнуть",
 	"TIDY5E.ShortRest": "Короткий отдых",
@@ -46,6 +60,7 @@
 
 	"TIDY5E.JournalTabName": "Дневник",
 	"TIDY5E.StatblockTabName": "Параметры",
+	"TIDY5E.CombatTabName": "Бой",
 
 	"TIDY5E.Actions": {
 		"TabName": "Действия",
@@ -91,6 +106,8 @@
 	"TIDY5E.ContextMenuActionDelete": "Удалить",
 	"TIDY5E.ContextMenuActionPinToAttributes": "Прикрепить в ресурсы",
 	"TIDY5E.ContextMenuActionUnpinFromAttributes": "Открепить от ресурсов",
+	"TIDY5E.ContextMenuActionPin": "Закрепить сверху",
+	"TIDY5E.ContextMenuActionUnpin": "Открепить",
 	"TIDY5E.ContextMenuActionShowLimitedUses": "Показать ограниченные использования",
 	"TIDY5E.ContextMenuActionShowQuantity": "Показать количество",
 	"TIDY5E.ContextMenuActionSetAsInspirationSource": "Сделать источником Вдохновения",
@@ -99,6 +116,8 @@
 	"TIDY5E.ContextMenuActionRemoveFromSheetTab": "Убрать из вкладки бланка",
 
 	"TIDY5E.InspirationSource.ItemIsSourceTooltip": "Источник Вдохновения",
+	"TIDY5E.InspirationAdd": "Добавить вдохновение",
+	"TIDY5E.InspirationRemove": "Отнять вдохновение",
 
 	"TIDY5E.EmptyContainer": "Этот контейнер пуст.",
 	"TIDY5E.EmptySection": "Этот раздел пуст. Разблокируйте бланк для редактирования.",
@@ -158,7 +177,7 @@
 	"TIDY5E.SpellSourceIdentifierSelectText": "Идентификатор класса: {identifier}",
 	"TIDY5E.SpellSourceIdentifierLabelHint": "Актёр с этим заклинанием не имеет класс, указанный здесь.",
 
-	"TIDY5E.Class.Artificer": "Изобретатель",
+	"TIDY5E.Class.Artificer": "Артефактор",
 	"TIDY5E.Class.Barbarian": "Варвар",
 	"TIDY5E.Class.Bard": "Бард",
 	"TIDY5E.Class.Cleric": "Жрец",
@@ -182,11 +201,18 @@
 		"MoreFormulas": "Больше формул"
 	},
 
-	"TIDY5E.TabSelection": {
-		"Title": "Выбор вкладки: {documentName}",
-		"MenuOptionText": "Выбор вкладки",
+	"TIDY5E.HeaderControlConfiguration": {
+		"LocationMenu": "Меню",
+		"LocationHeader": "Заголовок"
+	},
+
+	"TIDY5E.TabConfiguration": {
+		"Title": "Настройки вкладки: {documentName}",
+		"MenuOptionText": "Настройки вкладки",
+		"SelectionTab.Title": "Выбор вкладки",
 		"AvailableHeader": "Скрытые вкладки",
 		"SelectedHeader": "Видимые вкладки",
+		"VisibilityTab.Title": "Видимость вкладки",
 		"UnsupportedDocumentErrorMessage": "Тип документов {documentType} не настроен для вкладок.",
 		"AtLeastOneRequiredErrorMessage": "Требуется хотя бы одна вкладка.",
 		"Explanation": "Любые вкладки, на которые участник/бланк настроены так, чтобы их не видеть (например, отключение журнала в настройках), все равно не будут отображаться в бланке."
@@ -281,6 +307,12 @@
 		"name": "Домашние правила",
 		"label": "Настройки домашних правил",
 		"hint": "Настройки опциональных вариантов правил системы."
+	},
+
+	"TIDY5E.SettingsMenu.HeaderControlConfiguration": {
+		"name": "Header Controls",
+		"label": "Configure Header Controls",
+		"hint": "New Tidy Sheets Only: Configure the location of sheet header controls."
 	},
 
 	"TIDY5E.SettingsMenu.TabConfiguration": {
@@ -808,6 +840,7 @@
 	"TIDY5E.ItemFilters.ClearAll": "Очистить все",
 	"TIDY5E.ItemFilters.Category.Miscellaneous": "Прочее",
 	"TIDY5E.ItemFilters.Filter.Other": "Другое",
+	"TIDY5E.GMOnly.Title": "GM Only",
 	"TIDY5E.GMOnly.Message": "Только Мастер: {message}",
 	"TIDY5E.ReminderToBackUp": "Всегда создавайте резервную копию мира.",
 	"TIDY5E.Utilities.Tools": "Инструменты",
@@ -823,6 +856,7 @@
 	"TIDY5E.Utilities.CastActivitySpellGroupingTitle": "Cast Activity Spell Grouping",
 	"TIDY5E.Utilities.CastActivitySpellGroupingOptionAdditional": "Additional Spells section",
 	"TIDY5E.Utilities.CastActivitySpellGroupingOptionPerItem": "Section Per Item",
+	"TIDY5E.Utilities.ShowSheetPins": "Show Sheet Pins",
 	"TIDY5E.Utilities.ShowLegendaryTrackersOnNpcStatblock": "Show Legendary/Lair trackers in the Statblock tab",
 	"TIDY5E.Utilities.IncludeSpellbookInNpcStatblockTab": "Include Spellbook sections in the Statblock tab",
 	"TIDY5E.Section": {
@@ -859,12 +893,14 @@
 	"TIDY5E.Keybindings.ToggleSheetLock.Hint": "Если бланк Tidy 5e является текущим активным окном, это сочетание переключает блокировку бланка.",
 	"TIDY5E.Keybindings.ToggleHeaderMenu.Name": "Открыть меню заголовка",
 	"TIDY5E.Keybindings.ToggleHeaderMenu.Hint": "Если бланк Tidy 5e является текущим активным окном, это сочетание переключает меню в заголовке.",
-	"TIDY5E.Facilities.Hirelings.Label": "Прислуга",
-	"TIDY5E.Facilities.Defenders.Label": "Защитники",
-	"TIDY5E.Facilities.Creatures.Label": "Существа",
-	"TIDY5E.Facilities.RosterMember.Label": "{actorName} - {facilityName}",
-	"TIDY5E.Facilities.ContextMenuActionRemove": "Убрать из {facilityName}",
-	"TIDY5E.Facilities.Progress.OrderAndCraftLabel": "{orderName} - {craftingItemName}",
+	"TIDY5E.Facilities": {
+		"Hirelings.Label": "Hirelings",
+		"Defenders.Label": "Defenders",
+		"Creatures.Label": "Creatures",
+		"RosterMember.Label": "{actorName} - {facilityName}",
+		"ContextMenuActionRemove": "Remove from {facilityName}",
+		"Progress.OrderAndCraftLabel": "{orderName} - {craftingItemName}"
+	},
 	"TIDY5E.LocalizationTestKey": "Тестовый ключ локализации",
 	"TIDY5E.ExpandCollapseMenu.OptionTitle": "Поведение сворачивания",
 	"TIDY5E.ExpandCollapseMenu.OptionTopLevel": "Разделы верхнего уровня",
@@ -882,9 +918,9 @@
 	"TIDY5E.Visible": "Видимо",
 	"TIDY5E.Hidden": "Скрыто",
 	"TIDY5E.Options.Title": "Настройки",
-	"TIDY5E.ExplorationTab.Title": "Exploration",
 	"TIDY5E.ConfigureTab.Title": "Настройка {tabName}",
 	"TIDY5E.DisplayOptions.Title": "Настройки отображения",
+	"TIDY5E.DisplayOptionsGlobalDefault.Title": "Global Default Display Options",
 	"TIDY5E.DisplayOptions.ShowContainerRow.Label": "Отображение ряда контейнеров",
 	"TIDY5E.ItemSheet.PactLevelCastLabel": "Сотворить на {ordinal}",
 	"TIDY5E.ItemSheet.FeatureOriginLabel": "Feature Origin",
@@ -895,5 +931,28 @@
 	"TIDY5E.UseSpecificDefaultValue.Label": "Use Default ({value})",
 	"TIDY5E.Notifications.FirstTimeWelcome1": "Спасибо за использование Tidy 5e Sheets! Для начала вы должны изменить {sheetLinkStart}бланк{sheetLinkEnd} (или {allSheetsLinkStart}все ваши бланки{allSheetsLinkEnd}!) на Tidy версии. Вы можете узнать больше о модуле на {wikiLinkStart}странице wiki{wikiLinkEnd}.",
 	"TIDY5E.AggregateSkill.HighMeasure": "High",
-	"TIDY5E.AggregateSkill.LowMeasure": "Low"
+	"TIDY5E.AggregateSkill.LowMeasure": "Low",
+	"TIDY5E.Difficulty": "Difficulty",
+	"TIDY5E.Character.Sidebar.Title": "Player Character Sidebar",
+	"TIDY5E.Encounter": {
+		"CombatantsSection.Title": "Combatants",
+		"Combat.IncludeInCombat.Tooltip": "Include in combat activities",
+		"Combat.ExcludeFromCombat.Tooltip": "Exclude from combat activities",
+		"AddMember.Label": "Add Member",
+		"AddPlaceholderToCombatTracker.Label": "Add to Current Encounter as Placeholder",
+		"AddPlaceholder.Label": "Create Combat Placeholder",
+		"DeletePlaceholder.Label": "Delete Placeholder",
+		"DifficultyTarget.Label": "Difficulty Target",
+		"AddAllPlaceholders.Label": "Add All as Placeholders",
+		"PrerollInitiative": "Preroll Initiative",
+		"NewPlaceholder.Name": "New Placeholder",
+		"NewPlaceholder.SubtitlePlaceholderText": "Note about this placeholder",
+		"AddCombatants.MustHaveEncounter.Message": "Must have an encounter selected to add to encounter tracker",
+		"CombatVisibility.Hidden.Label": "Hidden from players when added to tracker",
+		"CombatVisibility.Visible.Label": "Visible to players when added to tracker",
+		"InitiativeCount.Label": "Добавить инициативу {count}",
+		"PlaceholderNameField.PlaceholderText": "Шаблонное название",
+		"PlaceholderNotesField.PlaceholderText": "Заметки"
+	},
+	"TIDY5E.Actor.Characteristics": "Характеристики"
 }

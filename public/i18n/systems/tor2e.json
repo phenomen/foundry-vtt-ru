@@ -20,7 +20,8 @@
 			"journey-log": "Дневник путешествия",
 			"song": "Песня",
 			"undertaking": "Обязательство",
-			"standing": "Положение"
+			"standing": "Положение",
+			"combat-task": "Combat task"
 		}
 	},
 	"tor2e": {
@@ -147,6 +148,7 @@
 					"rangedCombat": "Дистанционный урон"
 				},
 				"hate": "Ненависть",
+				"resolve": "Resolve",
 				"might": "Мощь",
 				"parry": "Парирование",
 				"noShield": "нет щита",
@@ -324,6 +326,17 @@
 					"title": "Фоновое изображение, представляющее броню.",
 					"alt": "Изображение брони"
 				}
+			},
+			"combat-task": {
+				"tech": {
+					"alt": "Image representing the combat task.",
+					"title": "Image representing the combat task."
+				},
+				"title": "Combat task",
+				"associatedSkill": "Associated skill",
+				"associatedStance": "Associated stance",
+				"all": "All",
+				"none": "None"
 			},
 			"miscellaneous": {
 				"title": "Другое",
@@ -887,9 +900,15 @@
 				"options": {
 					"roll-characteristics": {
 						"title": "Проверка характеристик",
+						"hope-points": "Hope point(s) left",
 						"is-weary": "усталый",
 						"is-miserable": "подавленый",
+						"is-magical": "is magical.",
+						"has-spent-hope": "hope point bonus.",
 						"is-inspired": "вдохновленный",
+						"is-supported": "is supported.",
+						"has-support": "has support.",
+						"is-fellowship-focused": "is fellowship focused.",
 						"is-favoured": "одаренный",
 						"is-ill-favoured": "бездарный"
 					},
@@ -911,6 +930,7 @@
 						"hint": "введите отрицательное значение для штрафа или положительное для бонуса"
 					},
 					"hope-point-bonus-dice": "Бонус от надежды",
+					"no-hope-left": "No hope point left !",
 					"inspired": "Вдохновение",
 					"mastery-dice": "Кость одарённости",
 					"favoured-ill-favoured": "Одарённый / Бездарный",
@@ -922,6 +942,11 @@
 					"best": "лучший",
 					"health-impacts": "Влияние на здоровье",
 					"weary-not-weary": "Проверка с усталостью?",
+					"magical-not-magical": "Magical Roll ?",
+					"magical": "magical",
+					"magical-success": "Magical Success",
+					"fellowship-focused": "Fellowship Focus",
+					"not-magical": "not-magical",
 					"miserable-not-miserable": "Подавленный бросок?",
 					"weary": "усталый",
 					"result-modifier": "Мод. результата",
@@ -929,6 +954,10 @@
 					"not-weary": "не усталый",
 					"miserable": "подавленный",
 					"not-miserable": "не подавленный"
+				},
+				"target": {
+					"self": "Self",
+					"other": "Adversary"
 				},
 				"title": "Бросок {type}"
 			},
@@ -1180,7 +1209,10 @@
 			"weary": "Усталый",
 			"unit": {
 				"days": "Дней"
-			}
+			},
+			"TabDetails": "Details",
+			"TabEffects": "Effects",
+			"TabDuration": "Duration"
 		},
 		"journey-log": {
 			"sheet": {
@@ -1266,6 +1298,8 @@
 		"setJourneyLogCanBeModifiedDescription": "Allow Players to modify the Embedded Journey Log inside Community Actor.",
 		"setStandingActivation": "Standing Activation",
 		"setStandingActivationDescription": "Allow the Loremaster to activate or deactivate the Standing feature for characters. Simple is only 1 value by character, extended use Standing items to store faction reputation.",
+		"setIsFavouredItemSkillAllowed": "Favoured Item Skill allowed",
+		"setIsFavouredItemSkillAllowedDescription": "Allow the Loremaster to activate or deactivate the Favoured Item Skill feature for characters. If deactivated, only common skills can be favoured, not item skills.",
 		"standing": {
 			"none": "None",
 			"simple": "Simple",

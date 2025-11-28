@@ -169,12 +169,7 @@ async function updateAA() {
 }
 
 function mergeArraysByLabel(array1, array2) {
-	const labelMap = new Map(
-		array2.map((item) => [
-			item.metaData.label,
-			item,
-		])
-	);
+	const labelMap = new Map(array2.map((item) => [item.metaData.label, item]));
 
 	return array1.map((item) => {
 		const matchingItem = labelMap.get(item.metaData.label);

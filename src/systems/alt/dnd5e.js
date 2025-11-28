@@ -29,10 +29,7 @@ async function loadAltTranslation(wrapped, ...args) {
 	const modulePath = "modules/ru-ru/i18n/modules/alt/";
 	const systemPath = "modules/ru-ru/i18n/systems/alt/";
 
-	const systemFiles = [
-		"dnd5e.json",
-		"dnd5e-plural.json",
-	];
+	const systemFiles = ["dnd5e.json", "dnd5e-plural.json"];
 	const moduleFiles = [
 		"action-pack.json",
 		"activeauras.json",

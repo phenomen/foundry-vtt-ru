@@ -9,17 +9,14 @@
 			"url": "https://discord.gg/Z2CXFy35WF"
 		}
 	],
-	"version": "13.350.8",
+	"version": "13.351.1",
 	"compatibility": {
 		"minimum": "13",
 		"verified": "13",
 		"maximum": "13"
 	},
 	"esmodules": ["esm/index.js"],
-	"styles": [
-		"styles/_main.css",
-		"styles/_fonts.css"
-	],
+	"styles": ["styles/_main.css", "styles/_fonts.css"],
 	"coreTranslation": true,
 	"relationships": {
 		"recommends": [
@@ -1060,14 +1057,8 @@
 	"flags": {
 		"hotReload": {
 			"enabled": true,
-			"extensions": [
-				"json",
-				"css"
-			],
-			"paths": [
-				"i18n/**/*.json",
-				"styles/*.css"
-			]
+			"extensions": ["json", "css"],
+			"paths": ["i18n/**/*.json", "styles/*.css"]
 		},
 		"styles": [
 			"age-of-sigmar-soulbound",
