@@ -1,37 +1,35 @@
-import { setupBabele, translateValue } from "../shared.js";
+import { setupBabele, translateValue } from '../shared.js';
 
 export function init() {
-  game.settings.register("ru-ru", "setupRules", {
-    name: "(SWADE) Перевод настроек системы",
-    hint: "Автоматический перевод стандартных навыков и других настроек системы SWADE. Отключите, если желаете внести изменения вручную.",
+  game.settings.register('ru-ru', 'setupRules', {
+    name: '(SWADE) Перевод настроек системы',
+    hint: 'Автоматический перевод стандартных навыков и других настроек системы SWADE. Отключите, если желаете внести изменения вручную.',
     type: Boolean,
     default: true,
-    scope: "world",
+    scope: 'world',
     config: true,
     restricted: true,
   });
 
-  if (game.modules.get("swade-core-rules")?.active) {
-    setupBabele("swade/core");
-  }
-  else if (game.modules.get("swpf-core-rules")?.active) {
-    setupBabele("swade/swpf");
-  }
-  else {
-    setupBabele("swade/basic");
+  if (game.modules.get('swade-core-rules')?.active) {
+    setupBabele('swade/core');
+  } else if (game.modules.get('swpf-core-rules')?.active) {
+    setupBabele('swade/swpf');
+  } else {
+    setupBabele('swade/basic');
   }
 
   registerConverters();
 
-  Hooks.on("ready", () => {
-    if (game.modules.get("swade-core-rules")?.active) {
+  Hooks.on('ready', () => {
+    if (game.modules.get('swade-core-rules')?.active) {
       ui.notifications.info(
-        "Обнаружен модуль SWADE Core Rules. Перевод базовой библиотеки был отключен во избежание конфликтов.",
+        'Обнаружен модуль SWADE Core Rules. Перевод базовой библиотеки был отключен во избежание конфликтов.'
       );
     }
-    if (game.modules.get("swpf-core-rules")?.active) {
+    if (game.modules.get('swpf-core-rules')?.active) {
       ui.notifications.info(
-        "Обнаружен модуль Savage Pathfinder. Перевод базовой библиотеки был отключен во избежание конфликтов.",
+        'Обнаружен модуль Savage Pathfinder. Перевод базовой библиотеки был отключен во избежание конфликтов.'
       );
     }
     setupRules();
@@ -65,37 +63,41 @@ function registerConverters() {
     convertRequirements: (requirements) => {
       if (!requirements) return;
 
-      let packEdges = "swade.edges";
-      let packHindrances = "swade.hindrances";
-      let packSkills = "swade.skills";
+      let packEdges = 'swade.edges';
+      let packHindrances = 'swade.hindrances';
+      let packSkills = 'swade.skills';
 
-      if (game.modules.get("swade-core-rules")?.active) {
-        packEdges = "swade-core-rules.swade-edges";
-        packHindrances = "swade-core-rules.swade-hindrances";
-        packSkills = "swade-core-rules.swade-skills";
+      if (game.modules.get('swade-core-rules')?.active) {
+        packEdges = 'swade-core-rules.swade-edges';
+        packHindrances = 'swade-core-rules.swade-hindrances';
+        packSkills = 'swade-core-rules.swade-skills';
       }
 
-      if (game.modules.get("swpf-core-rules")?.active) {
-        packEdges = "swpf-core-rules.swpf-edges";
-        packHindrances = "swpf-core-rules.swpf-hindrances";
-        packSkills = "swpf-core-rules.swpf-skills";
+      if (game.modules.get('swpf-core-rules')?.active) {
+        packEdges = 'swpf-core-rules.swpf-edges';
+        packHindrances = 'swpf-core-rules.swpf-hindrances';
+        packSkills = 'swpf-core-rules.swpf-skills';
       }
 
       const { packs } = game.babele;
-      const translatedEdges = packs.find((pack) => pack.metadata.id === packEdges).translations;
-      const translatedHindrances = packs.find(
-        (pack) => pack.metadata.id === packHindrances,
+      const translatedEdges = packs.find(
+        (pack) => pack.metadata.id === packEdges
       ).translations;
-      const translatedSkills = packs.find((pack) => pack.metadata.id === packSkills).translations;
+      const translatedHindrances = packs.find(
+        (pack) => pack.metadata.id === packHindrances
+      ).translations;
+      const translatedSkills = packs.find(
+        (pack) => pack.metadata.id === packSkills
+      ).translations;
 
       return requirements.map((data) => {
         if (!data.label) return data;
 
-        const translatedLabel
-          = EXCEPTIONS[data.label]
-            || translatedEdges[data.label]?.name
-            || translatedHindrances[data.label]?.name
-            || translatedSkills[data.label]?.name;
+        const translatedLabel =
+          EXCEPTIONS[data.label] ||
+          translatedEdges[data.label]?.name ||
+          translatedHindrances[data.label]?.name ||
+          translatedSkills[data.label]?.name;
 
         if (translatedLabel) data.label = translatedLabel;
 
@@ -106,34 +108,42 @@ function registerConverters() {
 }
 
 function setupRules() {
-  if (game.settings.get("ru-ru", "setupRules")) {
+  if (game.settings.get('ru-ru', 'setupRules')) {
     // SWADE Core
     game.settings.set(
-      "swade",
-      "coreSkills",
-      "Атлетика, Внимание, Осведомлённость, Скрытность, Убеждение",
+      'swade',
+      'coreSkills',
+      'Атлетика, Внимание, Осведомлённость, Скрытность, Убеждение'
     );
 
     game.settings.set(
-      "swade",
-      "vehicleSkills",
-      "Верховая езда, Вождение, Пилотирование, Судовождение",
+      'swade',
+      'vehicleSkills',
+      'Верховая езда, Вождение, Пилотирование, Судовождение'
     );
 
     // SWADE Core
-    if (game.modules.get("swade-core-rules")?.active) {
-      game.settings.set("swade", "coreSkillsCompendium", "swade-core-rules.swade-skills");
+    if (game.modules.get('swade-core-rules')?.active) {
+      game.settings.set(
+        'swade',
+        'coreSkillsCompendium',
+        'swade-core-rules.swade-skills'
+      );
     }
 
     // Savage Pathfinder
-    if (game.modules.get("swpf-core-rules")?.active) {
-      game.settings.set("swade", "coreSkillsCompendium", "swpf-core-rules.swpf-skills");
-      game.settings.set("swade", "currencyName", "зм");
+    if (game.modules.get('swpf-core-rules')?.active) {
+      game.settings.set(
+        'swade',
+        'coreSkillsCompendium',
+        'swpf-core-rules.swpf-skills'
+      );
+      game.settings.set('swade', 'currencyName', 'зм');
     }
 
     // Deadlands
-    if (game.modules.get("deadlands-core-rules")?.active) {
-      game.settings.set("swade", "currencyName", "$");
+    if (game.modules.get('deadlands-core-rules')?.active) {
+      game.settings.set('swade', 'currencyName', '$');
     }
   }
 }
@@ -141,65 +151,66 @@ function setupRules() {
 /* Data */
 
 const EXCEPTIONS = {
-  "Arcane Background (Any)": "Мистический дар (любой)",
-  "Arcane Background (Gifted)": "Мистический дар (феномен)",
-  "Arcane Background (Miracles)": "Мистический дар (чудеса)",
-  "Arcane Background (Magic)": "Мистический дар (магия)",
-  "Arcane Background (Psionics)": "Мистический дар (псионика)",
-  "Arcane Background (Weird Science)": "Мистический дар (безумная наука)",
-  "arcane skill": "мистический навык",
-  "Tough as Nails": "Несгибаемый",
-  "Work the Room": "Заводила",
-  "Professional in affected Trait": "Профессионал в выбранном параметре",
-  "Expert in affected Trait": "Профессионал+ в выбранном параметре",
-  "maximum die type possible in affected Trait": "максимальное значение выбранного параметра",
+  'Arcane Background (Any)': 'Мистический дар (любой)',
+  'Arcane Background (Gifted)': 'Мистический дар (феномен)',
+  'Arcane Background (Miracles)': 'Мистический дар (чудеса)',
+  'Arcane Background (Magic)': 'Мистический дар (магия)',
+  'Arcane Background (Psionics)': 'Мистический дар (псионика)',
+  'Arcane Background (Weird Science)': 'Мистический дар (безумная наука)',
+  'arcane skill': 'мистический навык',
+  'Tough as Nails': 'Несгибаемый',
+  'Work the Room': 'Заводила',
+  'Professional in affected Trait': 'Профессионал в выбранном параметре',
+  'Expert in affected Trait': 'Профессионал+ в выбранном параметре',
+  'maximum die type possible in affected Trait':
+    'максимальное значение выбранного параметра',
 };
 
 const CATEGORIES = {
-  Background: "Предыстории",
-  Combat: "Боевые",
-  Professional: "Профессиональные",
-  Social: "Социальные",
-  Weird: "Сверхъестественные",
-  Leadership: "Лидерские",
-  Power: "Мистические",
-  Legendary: "Легендарные",
+  Background: 'Предыстории',
+  Combat: 'Боевые',
+  Professional: 'Профессиональные',
+  Social: 'Социальные',
+  Weird: 'Сверхъестественные',
+  Leadership: 'Лидерские',
+  Power: 'Мистические',
+  Legendary: 'Легендарные',
 };
 
 const RANKS = {
-  Novice: "Новичок",
-  Seasoned: "Закалённый",
-  Veteran: "Ветеран",
-  Heroic: "Герой",
+  Novice: 'Новичок',
+  Seasoned: 'Закалённый',
+  Veteran: 'Ветеран',
+  Heroic: 'Герой',
 };
 
 const RANGES = {
-  "Self": "на себя",
-  "Touch": "касание",
-  "Cone Template": "конусный шаблон",
-  "Small Blast Template": "малый шаблон",
-  "Medium Blast Template": "средний шаблон",
-  "Large Blast Template": "большой шаблон",
-  "Sm": "СМК",
-  "Sm x 2": "СМК×2",
-  "Smarts x5 (Sound); Smarts (Silence)": "СМК×5 (звук); СМК (тишина)",
+  'Self': 'на себя',
+  'Touch': 'касание',
+  'Cone Template': 'конусный шаблон',
+  'Small Blast Template': 'малый шаблон',
+  'Medium Blast Template': 'средний шаблон',
+  'Large Blast Template': 'большой шаблон',
+  'Sm': 'СМК',
+  'Sm x 2': 'СМК×2',
+  'Smarts x5 (Sound); Smarts (Silence)': 'СМК×5 (звук); СМК (тишина)',
 };
 
 const DURATIONS = {
-  "Instant": "мгновенное",
-  "Special": "особое",
-  "One Round": "1 раунд",
-  "One Minute": "1 минута",
-  "5": "5 минут",
-  "5 minutes": "5 минут",
-  "10 minutes": "10 минут",
-  "30 Minutes": "30 минут",
-  "One hour": "1 час",
-  "One day": "1 день",
-  "Until the end of the victim's next turn": "до конца следующего хода цели",
-  "5 (detect), one hour (conceal)": "5 (обнаружение); 1 час (скрытие)",
-  "Instant (Sound); 5 (Silence)": "мгновенное (звук); 5 (тишина)",
-  "5 (boost); Instant (lower)": "5 (усилить); мгновенное (ослабить)",
-  "Instant (slot); 5 (speed)": "мгновенное (замедление); 5 (ускорение)",
-  "A brief conversation of about five minutes": "до 5 минут (короткая беседа)",
+  'Instant': 'мгновенное',
+  'Special': 'особое',
+  'One Round': '1 раунд',
+  'One Minute': '1 минута',
+  '5': '5 минут',
+  '5 minutes': '5 минут',
+  '10 minutes': '10 минут',
+  '30 Minutes': '30 минут',
+  'One hour': '1 час',
+  'One day': '1 день',
+  "Until the end of the victim's next turn": 'до конца следующего хода цели',
+  '5 (detect), one hour (conceal)': '5 (обнаружение); 1 час (скрытие)',
+  'Instant (Sound); 5 (Silence)': 'мгновенное (звук); 5 (тишина)',
+  '5 (boost); Instant (lower)': '5 (усилить); мгновенное (ослабить)',
+  'Instant (slot); 5 (speed)': 'мгновенное (замедление); 5 (ускорение)',
+  'A brief conversation of about five minutes': 'до 5 минут (короткая беседа)',
 };

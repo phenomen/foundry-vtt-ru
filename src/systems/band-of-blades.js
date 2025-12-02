@@ -1,7 +1,7 @@
-import { setupBabele, translateValue } from "../shared.js";
+import { setupBabele, translateValue } from '../shared.js';
 
 export function init() {
-  setupBabele("band-of-blades");
+  setupBabele('band-of-blades');
   registerConverters();
 }
 
@@ -27,16 +27,16 @@ function registerConverters() {
 }
 
 const CLASSES = {
-  Heavy: "Гоплит",
-  Medic: "Врач",
-  Officer: "Офицер",
-  Rookie: "Новобранец",
-  Scout: "Разведчик",
-  Sniper: "Снайпер",
-  Soldier: "Солдат",
-  Panyar: "Паньяр",
-  Bartan: "Бартан",
-  Orite: "Орите",
-  Zemyati: "Земьяти",
-  General: "Общий",
+  Heavy: 'Гоплит',
+  Medic: 'Врач',
+  Officer: 'Офицер',
+  Rookie: 'Новобранец',
+  Scout: 'Разведчик',
+  Sniper: 'Снайпер',
+  Soldier: 'Солдат',
+  Panyar: 'Паньяр',
+  Bartan: 'Бартан',
+  Orite: 'Орите',
+  Zemyati: 'Земьяти',
+  General: 'Общий',
 };

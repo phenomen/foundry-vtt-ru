@@ -1,10 +1,10 @@
 :root {
-	--font-primary: var(--font-sans);
-	--font-editor: var(--font-fancy);
-	--font-input: var(--font-sans);
-	--font-special: var(--font-fancy);
-	--font-subheader: var(--font-fancy);
-	--font-table: var(--font-sans);
+  --font-primary: var(--font-sans);
+  --font-editor: var(--font-fancy);
+  --font-input: var(--font-sans);
+  --font-special: var(--font-fancy);
+  --font-subheader: var(--font-fancy);
+  --font-table: var(--font-sans);
 }
 
 /* HARDCODED FONT REPLACEMENTS */
@@ -13,13 +13,14 @@ body,
 button,
 .app .journal-sheet-container.adventure-site .journal-entry-page.text em,
 .app .journal-sheet-container.adventure-site .journal-entry-page.text strong,
-.app.journal-sheet-container.adventure-site.journal-entry-page.text.room > .index-tip,
+.app.journal-sheet-container.adventure-site.journal-entry-page.text.room
+  > .index-tip,
 .app.sheet .journal-page-content .fbl-box,
 .app.sheet .journal-page-content .fbl-box table.fbl-table,
 .app.sheet .journal-page-content .fbl-box h4,
 .app.sheet .journal-page-content .fbl-journal-info-box,
 .app.sheet .journal-page-content .fbl-core .fbl-branding-bold {
-	font-family: var(--font-sans);
+  font-family: var(--font-sans);
 }
 
 #menu,
@@ -35,10 +36,10 @@ button,
 .chargen-title,
 .chargen-description,
 .chargen-build,
-.app.journal-sheet .editor .journal-header > input[name="name"],
-.app.journal-sheet .journal-entry-content .journal-header > input[name="name"],
-.app.sheet.actor .editor .journal-header > input[name="name"],
-.app.sheet.actor .journal-entry-content .journal-header > input[name="name"],
+.app.journal-sheet .editor .journal-header > input[name='name'],
+.app.journal-sheet .journal-entry-content .journal-header > input[name='name'],
+.app.sheet.actor .editor .journal-header > input[name='name'],
+.app.sheet.actor .journal-entry-content .journal-header > input[name='name'],
 .app.journal-sheet .editor h1,
 .app.journal-sheet .editor h2,
 .app.journal-sheet .editor h3,
@@ -69,82 +70,82 @@ button,
 .app.sheet.actor .journal-entry-content h5,
 .consumable-result,
 .spell-roll {
-	font-family: var(--font-fancy);
+  font-family: var(--font-fancy);
 }
 
 /* CUSTOM STYLES */
 
 .fbl-button.push {
-	width: max(100%);
+  width: max(100%);
 }
 
 a.inline-roll {
-	font-family: var(--font-fancy) !important;
+  font-family: var(--font-fancy) !important;
 }
 
 .fa-comments,
 .fa-suitcase {
-	font-size: var(--font-size-16);
+  font-size: var(--font-size-16);
 }
 
 .forbidden-lands .sheet-tabs .tab-item {
-	font-size: var(--font-size-14);
-	padding: 6px 12px;
+  font-size: var(--font-size-14);
+  padding: 6px 12px;
 }
 
 .forbidden-lands .character .critical-injuries .critical-injury .healtime {
-	flex-basis: 35%;
+  flex-basis: 35%;
 }
 
 .forbidden-lands .roll-action {
-	font-family: var(--font-sans);
-	font-weight: 600;
-	font-size: var(--font-size-12);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--font-size-12);
 }
 
 .forbidden-lands .character .weapons .weapon .weapon-actions {
-	flex-basis: 24%;
+  flex-basis: 24%;
 }
 
 .forbidden-lands .character .conditions-grid {
-	display: flex;
-	flex-flow: column;
-	gap: 5% 5%;
-	place-content: space-between;
-	padding: 5% 5%;
+  display: flex;
+  flex-flow: column;
+  gap: 5% 5%;
+  place-content: space-between;
+  padding: 5% 5%;
 }
 
 .forbidden-lands .conditions-grid a.condition {
-	display: inline-flex;
-	justify-content: space-between !important;
-	grid: none;
+  display: inline-flex;
+  justify-content: space-between !important;
+  grid: none;
 }
 
 .roll-dialog .options .legend {
-	font-weight: 600;
-	font-family: var(--font-sans);
-	font-size: var(--font-size-12);
+  font-weight: 600;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-12);
 }
 
 .roll-dialog {
-	padding: 0 1rem;
-	gap: 0.6rem;
+  padding: 0 1rem;
+  gap: 0.6rem;
 }
 
 .roll-dialog .options .legend,
 .roll-dialog .options .modifiers {
-	grid-template-columns: 1fr 4fr 1fr;
-	gap: 1rem;
+  grid-template-columns: 1fr 4fr 1fr;
+  gap: 1rem;
 }
 
 .roll-dialog .options .modifiers label {
-	font-weight: 600;
-	font-size: var(--font-size-12);
+  font-weight: 600;
+  font-size: var(--font-size-12);
 }
 
 .journal-entry .pages-list {
-	font-family: var(--font-sans);
-	font-size: var(--font-size-12);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-12);
 }
 
 .fbl-button,
@@ -153,43 +154,43 @@ a.inline-roll {
 .app.journal-sheet .journal-entry-content h1,
 .app.journal-sheet .journal-entry-content h2,
 .app.journal-sheet .journal-entry-content h3,
-.forbidden-lands input[type="number"],
-.forbidden-lands input[type="text"],
+.forbidden-lands input[type='number'],
+.forbidden-lands input[type='text'],
 .forbidden-lands .sheet-tabs .tab-item {
-	font-weight: 600;
+  font-weight: 600;
 }
 
-.app.journal-sheet .journal-entry-content .journal-header > input[name="name"] {
-	font-weight: 700;
+.app.journal-sheet .journal-entry-content .journal-header > input[name='name'] {
+  font-weight: 700;
 }
 
 .forbidden-lands .item-list .header {
-	font-size: var(--font-size-11);
+  font-size: var(--font-size-11);
 }
 
 .forbidden-lands .roll-skill,
 .forbidden-lands .roll-attribute,
 .forbidden-lands .conditions-grid a.condition {
-	font-family: var(--font-sans);
-	font-weight: 600;
-	font-size: var(--font-size-14);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--font-size-14);
 }
 
 .roll-dialog .container {
-	gap: 1rem;
+  gap: 1rem;
 }
 
 .roll-dialog .dice input {
-	margin: 0;
+  margin: 0;
 }
 
 .forbidden-lands .gear-tab .gears .items > table thead {
-	font-size: var(--font-size-11);
+  font-size: var(--font-size-11);
 }
 
 .forbidden-lands .travel-action-header {
-	font-family: var(--font-sans);
-	text-transform: uppercase;
+  font-family: var(--font-sans);
+  text-transform: uppercase;
 }
 
 button,
@@ -203,70 +204,70 @@ select option,
 .forbidden-lands .gear-tab .gears .items > table th,
 .forbidden-lands .gear-tab .gears .items > table td,
 .combat-sidebar li.combatant .token-name h4 {
-	font-weight: 600;
+  font-weight: 600;
 }
 
 .forbidden-lands .attributes,
 .forbidden-lands .skills {
-	gap: 2px 2px;
-	padding: 0 4px 4px;
+  gap: 2px 2px;
+  padding: 0 4px 4px;
 }
 
 .forbidden-lands div.value {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
 .forbidden-lands .attributes .rotated {
-	transform: none;
-	font-size: var(--font-size-12);
+  transform: none;
+  font-size: var(--font-size-12);
 }
 
 .forbidden-lands .attributes .fa-slash:before {
-	content: "/";
-	font-size: var(--font-size-12);
-	padding: 0px;
+  content: '/';
+  font-size: var(--font-size-12);
+  padding: 0px;
 }
 
 .forbidden-lands.item .weight {
-	gap: 0px;
+  gap: 0px;
 }
 
 .forbidden-lands.sheet label {
-	font-size: var(--font-size-14);
-	font-family: var(--font-sans);
+  font-size: var(--font-size-14);
+  font-family: var(--font-sans);
 }
 
 .combat-sidebar .combat-tracker-header div.encounter-controls h3 {
-	font-size: var(--font-size-14);
+  font-size: var(--font-size-14);
 }
 
 .combat-sidebar li.combatant .token-name,
 .combat-sidebar li.combatant .token-initiative .initiative {
-	text-shadow: none;
-	font-family: var(--font-sans);
-	font-weight: 600;
+  text-shadow: none;
+  font-family: var(--font-sans);
+  font-weight: 600;
 }
 
 .combat-sidebar li.combatant .token-initiative {
-	flex: 0 0 45px;
+  flex: 0 0 45px;
 }
 
 .combat-sidebar li.combatant .token-image {
-	margin-left: 2px;
+  margin-left: 2px;
 }
 
 .combat-sidebar #combat-controls a {
-	font-family: var(--font-sans);
-	font-weight: 700;
+  font-family: var(--font-sans);
+  font-weight: 700;
 }
 
 .combat-sidebar li.combatant .token-initiative {
-	border-right-style: solid;
-	border-right-width: 3px;
-	border-right-color: #000000 !important;
+  border-right-style: solid;
+  border-right-width: 3px;
+  border-right-color: #000000 !important;
 }
 
 .directory .directory-item.context,
 .directory .directory-item.active {
-	border-color: #000000 !important;
+  border-color: #000000 !important;
 }

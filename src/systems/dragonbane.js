@@ -1,7 +1,7 @@
-import { setupBabele } from "../shared.js";
+import { setupBabele } from '../shared.js';
 
 export function init() {
-  setupBabele("dragonbane");
+  setupBabele('dragonbane');
 
   registerConverters();
 }
@@ -18,7 +18,7 @@ function registerConverters() {
       const translations = game.babele.translations;
 
       if (!translations || translations.length < 1) {
-        console.warn("Dragonbane: No Babele translations found");
+        console.warn('Dragonbane: No Babele translations found');
         return null;
       }
 
@@ -49,28 +49,29 @@ function registerConverters() {
       });
 
       if (Object.keys(map).length === 0) {
-        console.warn("Dragonbane: No translation mappings found in any Babele translations");
+        console.warn(
+          'Dragonbane: No translation mappings found in any Babele translations'
+        );
         return null;
       }
 
       console.log(
         `Dragonbane: Cached ${
           Object.keys(map).length
-        } translation mappings from ${translations.length} translation packs`,
+        } translation mappings from ${translations.length} translation packs`
       );
       translationMap = map;
       return map;
-    }
-    catch (error) {
-      console.error("Dragonbane: Error creating translation map:", error);
+    } catch (error) {
+      console.error('Dragonbane: Error creating translation map:', error);
       return null;
     }
   };
 
   game.babele.registerConverters({
     translateItemList(list) {
-      if (!list || typeof list !== "string") {
-        return list || "";
+      if (!list || typeof list !== 'string') {
+        return list || '';
       }
 
       const map = getTranslationMap();
@@ -79,13 +80,13 @@ function registerConverters() {
       }
 
       return list
-        .split(",")
+        .split(',')
         .map((item) => {
           const trimmedItem = item.trim();
           return map[trimmedItem] || trimmedItem;
         })
         .sort((a, b) => a.localeCompare(b))
-        .join(", ");
+        .join(', ');
     },
   });
 }

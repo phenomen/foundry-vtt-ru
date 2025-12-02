@@ -3,20 +3,19 @@ export function setupBabele(id) {
 
   if (game.babele) {
     game.babele.register({
-      module: "ru-ru",
-      lang: "ru",
+      module: 'ru-ru',
+      lang: 'ru',
       dir: `compendium/${id}`,
     });
 
-    game.settings.set("babele", "showOriginalName", true);
-  }
-  else {
+    game.settings.set('babele', 'showOriginalName', true);
+  } else {
     new Dialog({
-      title: "Перевод библиотек",
+      title: 'Перевод библиотек',
       content: `<p>Для перевода библиотек <b>${title}</b> требуется активировать модули <b>Babele и libWrapper</b><p>`,
       buttons: {
         done: {
-          label: "Хорошо",
+          label: 'Хорошо',
         },
       },
     }).render(true);
@@ -29,9 +28,9 @@ export function translateValue(value, translations) {
 
 export function translateList(value, translations) {
   return value
-    .split(", ")
+    .split(', ')
     .map((item) => translateValue(item, translations))
-    .join(", ");
+    .join(', ');
 }
 
 export function parseParentheses(str) {

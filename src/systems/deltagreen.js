@@ -1,11 +1,11 @@
 export function init() {
   function sortSkillsAlpha() {
-    const lists = document.getElementsByClassName("grid grid-3col");
+    const lists = document.getElementsByClassName('grid grid-3col');
     for (const list of lists) {
       const competences = list.childNodes;
       const complist = [];
       for (const sk of competences) {
-        if (sk.innerText && sk.tagName === "DIV") {
+        if (sk.innerText && sk.tagName === 'DIV') {
           complist.push(sk);
         }
       }
@@ -16,7 +16,7 @@ export function init() {
     }
   }
 
-  Hooks.on("renderActorSheet", () => {
+  Hooks.on('renderActorSheet', () => {
     sortSkillsAlpha();
   });
 }

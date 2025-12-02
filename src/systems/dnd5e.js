@@ -1,25 +1,24 @@
-import { setupBabele } from "../shared.js";
+import { setupBabele } from '../shared.js';
 
 export async function init() {
   registerSettings();
 
-  if (game.settings.get("ru-ru", "compendiumTranslation")) {
+  if (game.settings.get('ru-ru', 'compendiumTranslation')) {
     if (game.babele) {
       registerConverters();
 
-      if (game.settings.get("ru-ru", "altTranslation")) {
-        setupBabele("dnd5e/ds");
-      }
-      else {
-        setupBabele("dnd5e/ag");
+      if (game.settings.get('ru-ru', 'altTranslation')) {
+        setupBabele('dnd5e/ds');
+      } else {
+        setupBabele('dnd5e/ag');
       }
 
-      if (game.settings.get("ru-ru", "translateCPR")) {
-        if (game.modules.get("chris-premades")) {
-          setupBabele("dnd5e/chris");
+      if (game.settings.get('ru-ru', 'translateCPR')) {
+        if (game.modules.get('chris-premades')) {
+          setupBabele('dnd5e/chris');
         }
-        if (game.modules.get("gambits-premades")) {
-          setupBabele("dnd5e/gambit");
+        if (game.modules.get('gambits-premades')) {
+          setupBabele('dnd5e/gambit');
         }
       }
     }
@@ -30,12 +29,12 @@ export async function init() {
 
 /* Регистрация настроек */
 function registerSettings() {
-  game.settings.register("ru-ru", "compendiumTranslation", {
-    name: "(D&D5E) Перевод библиотек 5e SRD",
-    hint: "Библиотеки системы D&D5E будут переведены. Перевод библиотек требуется для корректного перевода типов оружия, брони, языков и других элементов (требуется модуль Babele)",
+  game.settings.register('ru-ru', 'compendiumTranslation', {
+    name: '(D&D5E) Перевод библиотек 5e SRD',
+    hint: 'Библиотеки системы D&D5E будут переведены. Перевод библиотек требуется для корректного перевода типов оружия, брони, языков и других элементов (требуется модуль Babele)',
     type: Boolean,
     default: true,
-    scope: "world",
+    scope: 'world',
     config: true,
     restricted: true,
     onChange: () => {
@@ -43,12 +42,12 @@ function registerSettings() {
     },
   });
 
-  game.settings.register("ru-ru", "translateCPR", {
+  game.settings.register('ru-ru', 'translateCPR', {
     name: "(D&D5E) Перевод библиотек Cauldron of Plentiful Resources и Gambit's Premades",
     hint: "Перевод библиотек модулей Cauldron of Plentiful Resources и Gambit's Premades. Отключите, если у вас возникли проблемы с работой модулями.",
     type: Boolean,
     default: true,
-    scope: "world",
+    scope: 'world',
     config: true,
     restricted: true,
     onChange: () => {
@@ -60,15 +59,18 @@ function registerSettings() {
 /* Регистрация дополнительных хуков */
 function registerHooks() {
   /*  Настройка автоопределения анимаций AA  */
-  Hooks.on("renderSettingsConfig", (_app, html, _data) => {
+  Hooks.on('renderSettingsConfig', (_app, html, _data) => {
     if (!game.user.isGM) return;
 
     let lastMenuSetting;
     if (game.release.generation < 13) {
-      lastMenuSetting = html.find("input[name=\"ru-ru.translateCPR\"]").closest(".form-group");
-    }
-    else {
-      lastMenuSetting = html.querySelector("section[data-tab=\"ru-ru\"] > div:last-child");
+      lastMenuSetting = html
+        .find('input[name="ru-ru.translateCPR"]')
+        .closest('.form-group');
+    } else {
+      lastMenuSetting = html.querySelector(
+        'section[data-tab="ru-ru"] > div:last-child'
+      );
     }
 
     const updateAAButton = $(`
@@ -82,7 +84,7 @@ function registerHooks() {
       </button>
   </div>
   `);
-    updateAAButton.find("button").click(async (e) => {
+    updateAAButton.find('button').click(async (e) => {
       e.preventDefault();
       await updateAA();
     });
@@ -103,9 +105,10 @@ function registerConverters() {
         let translation;
 
         if (Array.isArray(translations)) {
-          translation = translations.find((t) => t.id === data._id || t.id === data.name);
-        }
-        else {
+          translation = translations.find(
+            (t) => t.id === data._id || t.id === data.name
+          );
+        } else {
           translation = translations[data.name];
         }
 
@@ -132,43 +135,61 @@ function registerConverters() {
 
 /* Обновление базы AA */
 async function updateAA() {
-  if (!game.modules.get("autoanimations")?.active) {
-    ui.notifications.error("Модуль Automated Animations не активен");
+  if (!game.modules.get('autoanimations')?.active) {
+    ui.notifications.error('Модуль Automated Animations не активен');
     return;
   }
 
   try {
     const translatedSettings = await foundry.utils.fetchJsonWithTimeout(
-      "/modules/ru-ru/i18n/modules/aa-autorec.json",
+      '/modules/ru-ru/i18n/modules/aa-autorec.json'
     );
 
-    const currentSettings = AutomatedAnimations.AutorecManager.getAutorecEntries();
+    const currentSettings =
+      AutomatedAnimations.AutorecManager.getAutorecEntries();
     if (!currentSettings) {
       throw new Error(
-        "Не удалось получить текущие настройки анимаций. Убедитесь, что модуль D&D5E Animations активен и анимации установлены.",
+        'Не удалось получить текущие настройки анимаций. Убедитесь, что модуль D&D5E Animations активен и анимации установлены.'
       );
     }
 
     const newSettings = {
-      melee: mergeArraysByLabel(currentSettings.melee, translatedSettings.melee),
-      range: mergeArraysByLabel(currentSettings.range, translatedSettings.range),
-      ontoken: mergeArraysByLabel(currentSettings.ontoken, translatedSettings.ontoken),
-      templatefx: mergeArraysByLabel(currentSettings.templatefx, translatedSettings.templatefx),
+      melee: mergeArraysByLabel(
+        currentSettings.melee,
+        translatedSettings.melee
+      ),
+      range: mergeArraysByLabel(
+        currentSettings.range,
+        translatedSettings.range
+      ),
+      ontoken: mergeArraysByLabel(
+        currentSettings.ontoken,
+        translatedSettings.ontoken
+      ),
+      templatefx: mergeArraysByLabel(
+        currentSettings.templatefx,
+        translatedSettings.templatefx
+      ),
       aura: mergeArraysByLabel(currentSettings.aura, translatedSettings.aura),
-      preset: mergeArraysByLabel(currentSettings.preset, translatedSettings.preset),
+      preset: mergeArraysByLabel(
+        currentSettings.preset,
+        translatedSettings.preset
+      ),
       aefx: mergeArraysByLabel(currentSettings.aefx, translatedSettings.aefx),
-      version: "5",
+      version: '5',
     };
 
-    await AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify(newSettings), {
-      submitAll: true,
-    });
+    await AutomatedAnimations.AutorecManager.overwriteMenus(
+      JSON.stringify(newSettings),
+      {
+        submitAll: true,
+      }
+    );
 
-    ui.notifications.info("Настройки анимаций обновлены");
-  }
-  catch (error) {
-    console.error("Не удалось обновить настройки анимаций:", error);
-    ui.notifications.error("Не удалось обновить настройки анимаций");
+    ui.notifications.info('Настройки анимаций обновлены');
+  } catch (error) {
+    console.error('Не удалось обновить настройки анимаций:', error);
+    ui.notifications.error('Не удалось обновить настройки анимаций');
   }
 }
 

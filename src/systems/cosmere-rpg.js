@@ -1,7 +1,7 @@
-import { setupBabele } from "../shared.js";
+import { setupBabele } from '../shared.js';
 
 export function init() {
-  setupBabele("cosmere-rpg");
+  setupBabele('cosmere-rpg');
   registerConverters();
 }
 

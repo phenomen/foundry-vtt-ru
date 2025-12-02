@@ -1,6 +1,6 @@
-import { constants } from "node:fs";
-import { access, lstat, rm, symlink } from "node:fs/promises";
-import { join, resolve } from "node:path";
+import { constants } from 'node:fs';
+import { access, lstat, rm, symlink } from 'node:fs/promises';
+import { join, resolve } from 'node:path';
 
 /*
 Create a symlink from the build directory to the Foundry data directory.
@@ -20,7 +20,7 @@ async function createSymlink() {
 
   if (!moduleId || !foundryDataDir || !packageType || !buildDir) {
     console.error(
-      "Error: MODULE_ID, FOUNDRY_DATA_DIR, PACKAGE_TYPE, and BUILD_DIR environment variables must be set.",
+      'Error: MODULE_ID, FOUNDRY_DATA_DIR, PACKAGE_TYPE, and BUILD_DIR environment variables must be set.'
     );
     process.exit(1);
   }
@@ -31,8 +31,7 @@ async function createSymlink() {
 
   try {
     await access(devPath, constants.F_OK);
-  }
-  catch (error) {
+  } catch (error) {
     console.error(`Error: The source directory does not exist: ${devPath}`);
     console.error(error);
     process.exit(1);
@@ -43,27 +42,24 @@ async function createSymlink() {
     if (stats.isSymbolicLink()) {
       console.log(`Removing existing symlink at: ${foundryPath}`);
       await rm(foundryPath, { recursive: true, force: true });
-    }
-    else {
+    } else {
       console.error(
-        `Error: A file or directory that is not a symlink already exists at ${foundryPath}. Please remove it manually.`,
+        `Error: A file or directory that is not a symlink already exists at ${foundryPath}. Please remove it manually.`
       );
       process.exit(1);
     }
-  }
-  catch (error) {
-    if (error.code !== "ENOENT") {
+  } catch (error) {
+    if (error.code !== 'ENOENT') {
       console.error(`Error checking status of ${foundryPath}:`, error);
       process.exit(1);
     }
   }
 
   try {
-    await symlink(devPath, foundryPath, "junction");
+    await symlink(devPath, foundryPath, 'junction');
     console.log(`Successfully created symlink: ${foundryPath} -> ${devPath}`);
-  }
-  catch (error) {
-    console.error("Failed to create symlink:", error);
+  } catch (error) {
+    console.error('Failed to create symlink:', error);
     process.exit(1);
   }
 }

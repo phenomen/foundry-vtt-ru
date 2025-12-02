@@ -1,4 +1,4 @@
-import { setupBabele } from "../shared.js";
+import { setupBabele } from '../shared.js';
 
 export function init() {
   setupBabele();

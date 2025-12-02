@@ -1,109 +1,125 @@
 @font-face {
-	font-family: "Beaufort Medium Italic";
-	src: url("../fonts/Beaufort/Beaufort-MediumItalic.woff2") format("woff2");
+  font-family: 'Beaufort Medium Italic';
+  src: url('../fonts/Beaufort/Beaufort-MediumItalic.woff2') format('woff2');
 }
 
 .system-dragonbane {
-	--dod-font-primary: var(--font-fancy);
-	--dod-font-secondary: var(--font-fancy);
-	--dod-font-heading: var(--font-fancy);
-	--dod-font-handwriting: "Beaufort Medium Italic";
+  --dod-font-primary: var(--font-fancy);
+  --dod-font-secondary: var(--font-fancy);
+  --dod-font-heading: var(--font-fancy);
+  --dod-font-handwriting: 'Beaufort Medium Italic';
 }
 
 .sheet-tabs.tabs .item {
-	font-family: var(--dod-font-primary);
-	font-size: var(--font-size-15);
-	font-weight: 700;
+  font-family: var(--dod-font-primary);
+  font-size: var(--font-size-15);
+  font-weight: 700;
 }
 
 .weapon-action {
-	font-size: var(--font-size-16);
-	font-weight: 600;
+  font-size: var(--font-size-16);
+  font-weight: 600;
 }
 
 .rollable-skill,
 .use-ability,
 a.item-edit {
-	font-weight: 600;
+  font-weight: 600;
 }
 
 .rollable-skill b {
-	color: var(--dod-color-text-dark-title);
+  color: var(--dod-color-text-dark-title);
 }
 
-.DoD.sheet.character .attributes-container .attributes .conditions .condition-label {
-	left: 3px;
-	top: 13px;
-	width: 50px;
-	font-size: 11px;
-	text-overflow: clip;
+.DoD.sheet.character
+  .attributes-container
+  .attributes
+  .conditions
+  .condition-label {
+  left: 3px;
+  top: 13px;
+  width: 50px;
+  font-size: 11px;
+  text-overflow: clip;
 }
 
-.DoD.sheet.character .attributes-container .attributes .attribute-panel .attribute-input {
-	left: -4px;
+.DoD.sheet.character
+  .attributes-container
+  .attributes
+  .attribute-panel
+  .attribute-input {
+  left: -4px;
 }
 
 .DoD.sheet.character .sheet-header .image-container h1 input {
-	padding: 8px 2px 0px 2px;
-	font-size: var(--font-size-15);
+  padding: 8px 2px 0px 2px;
+  font-size: var(--font-size-15);
 }
 
 .DoD.sheet.character .resource-points .resource-points-text-label {
-	top: 13px;
-	font-weight: 700;
+  top: 13px;
+  font-weight: 700;
 }
 
 .edit-armor-bonuses a,
 .armor-bonuses td {
-	text-transform: lowercase !important;
+  text-transform: lowercase !important;
 }
 
 /* JOURNAL */
 
 .system-dragonbane .sheet.journal-entry h1:not(.window-title) {
-	font-size: var(--font-size-15);
+  font-size: var(--font-size-15);
 }
 
 .system-dragonbane .sheet.journal-entry .journal-entry-content {
-	font-size: var(--font-size-15);
+  font-size: var(--font-size-15);
 }
 
-.system-dragonbane .sheet.journal-entry .journal-entry-content blockquote.info p {
-	font-size: var(--font-size-14);
+.system-dragonbane
+  .sheet.journal-entry
+  .journal-entry-content
+  blockquote.info
+  p {
+  font-size: var(--font-size-14);
 }
 
-.system-dragonbane .sheet.journal-entry .journal-entry-content blockquote.optional p {
-	font-size: var(--font-size-14);
+.system-dragonbane
+  .sheet.journal-entry
+  .journal-entry-content
+  blockquote.optional
+  p {
+  font-size: var(--font-size-14);
 }
 
 .system-dragonbane .sheet.journal-entry h1:not(.window-title) {
-	font-size: var(--font-size-48);
+  font-size: var(--font-size-48);
 }
 
 .system-dragonbane .handwriting {
-	font-family: var(--dod-font-handwriting);
+  font-family: var(--dod-font-handwriting);
 }
 
 .content-link,
 .inline-roll {
-	border: none;
+  border: none;
 }
 
 /* CHAT */
 
 .chat-message .message-header .flavor-text {
-	font-size: var(--font-size-14);
+  font-size: var(--font-size-14);
 }
 
 .chat-message .message-header {
-	line-height: 24px;
+  line-height: 24px;
 }
 
 .chat-message .message-header .message-sender {
-	font-weight: 700;
-	color: var(--dod-color-text-dark-title);
+  font-weight: 700;
+  color: var(--dod-color-text-dark-title);
 }
 
 .system-dragonbane .chat-button {
-	margin-top: 4px;
+  margin-top: 4px;
 }

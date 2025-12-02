@@ -1,18 +1,21 @@
 {
-	"name": "@phenomen/foundry-vtt-ru",
-	"version": "13.351",
-	"private": "true",
-	"scripts": {
-		"build": "vite build",
-		"format": "eslint . --fix",
-		"lint": "eslint .",
-		"symlink": "vite build && bun symlink.js"
-	},
-	"type": "module",
-	"devDependencies": {
-		"@eslint/json": "^0.14.0",
-		"@stylistic/eslint-plugin": "^5.6.1",
-		"eslint": "^9.39.1",
-		"vite": "npm:rolldown-vite@7.2.8"
-	}
+  "name": "@phenomen/foundry-vtt-ru",
+  "version": "13.351",
+  "private": "true",
+  "scripts": {
+    "build": "vite build",
+    "format": "prettier . --write",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "symlink": "vite build && bun symlink.js"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@eslint/css": "^0.14.1",
+    "@eslint/json": "^0.14.0",
+    "@stylistic/eslint-plugin": "^5.6.1",
+    "eslint": "^9.39.1",
+    "prettier": "^3.7.3",
+    "vite": "npm:rolldown-vite@7.2.8"
+  }
 }
