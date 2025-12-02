@@ -4,14 +4,15 @@
 	"private": "true",
 	"scripts": {
 		"build": "vite build",
-		"format": "oxfmt",
-		"lint": "oxlint --fix --fix-suggestions",
+		"format": "eslint . --fix",
+		"lint": "eslint .",
 		"symlink": "vite build && bun symlink.js"
 	},
 	"type": "module",
 	"devDependencies": {
-		"oxfmt": "^0.15.0",
-		"oxlint": "^1.30.0",
+		"@eslint/json": "^0.14.0",
+		"@stylistic/eslint-plugin": "^5.6.1",
+		"eslint": "^9.39.1",
 		"vite": "npm:rolldown-vite@7.2.8"
 	}
 }
