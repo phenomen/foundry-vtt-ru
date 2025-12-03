@@ -4,7 +4,7 @@ export default antfu({
   type: 'lib',
   stylistic: true,
   formatters: {
-    css: true,
+    css: 'prettier',
   },
   rules: {
     'no-undef': 'off',
