@@ -1,17 +1,17 @@
-const scripts = import.meta.glob('./systems/*.js');
+import { init as dnd5eAlt } from './systems/alt/dnd5e.js'
 
-import { init as dnd5eAlt } from './systems/alt/dnd5e.js';
+const scripts = import.meta.glob('./systems/*.js')
 
 Hooks.once('init', async () => {
-  const system = game.system.id.toLowerCase();
-  const route = foundry.utils.getRoute('/');
+  const system = game.system.id.toLowerCase()
+  const route = foundry.utils.getRoute('/')
 
   /* Загрузка особых CSS стилей для систем */
   if (game.modules.get('ru-ru').flags.styles.includes(system)) {
-    const systemCSS = document.createElement('link');
-    systemCSS.rel = 'stylesheet';
-    systemCSS.href = `${route}modules/ru-ru/styles/${system}.css`;
-    document.head.appendChild(systemCSS);
+    const systemCSS = document.createElement('link')
+    systemCSS.rel = 'stylesheet'
+    systemCSS.href = `${route}modules/ru-ru/styles/${system}.css`
+    document.head.appendChild(systemCSS)
   }
 
   /* Добавление шрифтов с кириллицей */
@@ -25,13 +25,13 @@ Hooks.once('init', async () => {
     'Roboto Condensed': { editor: true, fonts: [] },
     'Roboto Serif': { editor: true, fonts: [] },
     'Roboto': { editor: true, fonts: [] },
-  };
+  }
 
   CONFIG.fontDefinitions = foundry.utils.mergeObject(
     CONFIG.fontDefinitions,
-    cyrillicFonts
-  );
-  CONFIG.defaultFontFamily = 'Roboto';
+    cyrillicFonts,
+  )
+  CONFIG.defaultFontFamily = 'Roboto'
 
   /* Настройка шрифта для подписей на сцене */
   game.settings.register('ru-ru', 'sceneLabelFont', {
@@ -39,34 +39,34 @@ Hooks.once('init', async () => {
     hint: 'Шрифт, используемый для имён токенов и названий заметок на сцене.',
     type: Number,
     default: Object.keys(CONFIG.fontDefinitions).indexOf(
-      CONFIG.defaultFontFamily
+      CONFIG.defaultFontFamily,
     ),
     choices: Object.keys(CONFIG.fontDefinitions),
     scope: 'world',
     config: true,
     restricted: true,
     onChange: (_value) => {
-      window.location.reload();
+      window.location.reload()
     },
-  });
+  })
 
   /* Шрифт для подписей на сцене */
   CONFIG.canvasTextStyle.fontFamily = Object.keys(CONFIG.fontDefinitions)[
     game.settings.get('ru-ru', 'sceneLabelFont')
-  ];
+  ]
 
   /* Случайные прилагательные для токенов */
-  CONFIG.Token.adjectivesPrefix = 'TOKEN.RussianAdjectivesM';
+  CONFIG.Token.adjectivesPrefix = 'TOKEN.RussianAdjectivesM'
 
   /* D&D5 альтернативный перевод */
   if (system === 'dnd5e') {
-    dnd5eAlt();
+    dnd5eAlt()
   }
 
   /* Инициализация системного скрипта, если он существует */
-  const systemScriptPath = `./systems/${system}.js`;
+  const systemScriptPath = `./systems/${system}.js`
   if (scripts[systemScriptPath]) {
-    const mod = await scripts[systemScriptPath]();
-    mod.init();
+    const mod = await scripts[systemScriptPath]()
+    mod.init()
   }
-});
+})

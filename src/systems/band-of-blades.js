@@ -1,30 +1,4 @@
-import { setupBabele, translateValue } from '../shared.js';
-
-export function init() {
-  setupBabele('band-of-blades');
-  registerConverters();
-}
-
-function registerConverters() {
-  if (!game.babele) return;
-
-  game.babele.registerConverters({
-    classConverter: (cls) => {
-      if (!cls) return;
-      return translateValue(cls, CLASSES);
-    },
-
-    effectsConverter: (effects, translations) => {
-      if (!effects || !translations) return;
-      return effects.map((effect) => {
-        if (effect.name && translations[effect.name]) {
-          effect.name = translations[effect.name];
-        }
-        return effect;
-      });
-    },
-  });
-}
+import { setupBabele, translateValue } from '../shared.js'
 
 const CLASSES = {
   Heavy: 'Гоплит',
@@ -39,4 +13,33 @@ const CLASSES = {
   Orite: 'Орите',
   Zemyati: 'Земьяти',
   General: 'Общий',
-};
+}
+
+export function init() {
+  setupBabele('band-of-blades')
+  registerConverters()
+}
+
+function registerConverters() {
+  if (!game.babele)
+    return
+
+  game.babele.registerConverters({
+    classConverter: (cls) => {
+      if (!cls)
+        return
+      return translateValue(cls, CLASSES)
+    },
+
+    effectsConverter: (effects, translations) => {
+      if (!effects || !translations)
+        return
+      return effects.map((effect) => {
+        if (effect.name && translations[effect.name]) {
+          effect.name = translations[effect.name]
+        }
+        return effect
+      })
+    },
+  })
+}

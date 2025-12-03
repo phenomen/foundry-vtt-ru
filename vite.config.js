@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite'
 
 const config = defineConfig({
   build: {
@@ -17,6 +17,6 @@ const config = defineConfig({
       },
     },
   },
-});
+})
 
-export default config;
+export default config

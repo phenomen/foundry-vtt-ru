@@ -1,7 +1,7 @@
-import { setupBabele } from '../shared.js';
+import { setupBabele } from '../shared.js'
 
 export function init() {
-  setupBabele('mausritter');
+  setupBabele('mausritter')
 
   CONFIG.MAUSRITTER.tables = {
     tables: 'Таблицы',
@@ -17,5 +17,5 @@ export function init() {
     npcSocial: 'Мыши ведущего - Положение в обществе и плата за услуги',
     npcWants: 'Мыши ведущего - Желания',
     npcRelationship: 'Мыши ведущего - Отношения',
-  };
+  }
 }
