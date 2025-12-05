@@ -86,7 +86,7 @@ body.auth #main-header h1 {
 /*  GAME UI */
 
 select,
-.header-button,
+.header-button:not(.icon),
 .window-header,
 .playlist-sounds,
 .updated-packages-table th.action,
@@ -102,15 +102,13 @@ select,
   font-weight: 600;
 }
 
-button,
-a.button,
+button:not(.icon),
+a.button:not(.icon),
 .tabs .item,
 .application nav.tabs {
   font-family: var(--font-sans-condensed);
 }
 
-button.icon,
-a.button.icon,
 label.search::after {
   font-family: var(--font-awesome);
   font-weight: 600;

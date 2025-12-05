@@ -244,7 +244,7 @@
   font-size: var(--font-size-12);
 }
 
-.swade-official .item-controls button {
+.swade-official .item-controls button:not(.icon) {
   font-family: var(--font-sans-condensed);
   font-size: var(--font-size-12);
 }
@@ -265,7 +265,7 @@
   font-weight: 600;
 }
 
-.swade-official .item-name button {
+.swade-official .item-name button:not(.icon) {
   font-family: var(--font-sans-condensed);
 }
 
@@ -279,7 +279,7 @@
   line-height: normal;
 }
 
-.swade-app button {
+.swade-app button:not(.icon) {
   font-family: var(--font-sans-condensed);
 }
 
@@ -380,16 +380,16 @@
 
 /* PATHFINDER */
 
-.swpf-core {
-  font-family: var(--font-serif);
-}
-
 .swpf-compendium.sidebar-popout.Compendium-sidebar > .window-content {
   font-family: var(--font-serif);
 }
 
 .compendium-toc .toc .toc-entry .entry .name:not(:only-child) {
   line-height: 1.5rem;
+}
+
+.swpf-compendium .window-content {
+  font-family: var(--font-serif);
 }
 
 .swpf-core h2.trap,
@@ -449,7 +449,7 @@
   .tabs {
     .item {
       font-family: var(--font-fancy);
-      font-size: var(--font-size-16);
+      font-size: var(--font-size-14);
       font-weight: 600;
     }
   }
