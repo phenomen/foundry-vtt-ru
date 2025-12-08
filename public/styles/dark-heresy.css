@@ -1,30 +1,30 @@
 @font-face {
-  font-family: 'Caslon Antique';
-  src: url('../fonts/Caslon_Antique/caslon-antique.woff2') format('woff2');
+  font-family: "Caslon Antique";
+  src: url("../fonts/Caslon_Antique/caslon-antique.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Caslon Antique';
-  src: url('../fonts/Caslon_Antique/caslon-antique-Italic.woff2') format('woff2');
+  font-family: "Caslon Antique";
+  src: url("../fonts/Caslon_Antique/caslon-antique-Italic.woff2") format("woff2");
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Caslon Antique';
-  src: url('../fonts/Caslon_Antique/caslon-antique-bold.woff2') format('woff2');
+  font-family: "Caslon Antique";
+  src: url("../fonts/Caslon_Antique/caslon-antique-bold.woff2") format("woff2");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: 'Caslon Antique';
-  src: url('../fonts/Caslon_Antique/caslon-antique-boldItalic.woff2') format('woff2');
+  font-family: "Caslon Antique";
+  src: url("../fonts/Caslon_Antique/caslon-antique-boldItalic.woff2") format("woff2");
   font-style: italic;
   font-weight: bold;
 }
 
 :root {
   --font-text: var(--font-sans-condensed);
-  --font-header: 'Caslon Antique', sans-serif;
+  --font-header: "Caslon Antique", sans-serif;
 }
 
 .dark-heresy label,
@@ -66,8 +66,8 @@
   font-size: 0.8rem;
 }
 
-.dark-heresy input[type='number'],
-.dark-heresy input[type='text'],
+.dark-heresy input[type="number"],
+.dark-heresy input[type="text"],
 .dark-heresy select,
 .dark-heresy textarea {
   font-family: var(--font-sans-condensed);

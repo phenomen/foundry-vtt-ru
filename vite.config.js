@@ -1,22 +1,22 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
 
 const config = defineConfig({
   build: {
-    outDir: 'ru-ru',
+    outDir: "ru-ru",
     emptyOutDir: true,
     lib: {
-      name: 'ru-ru',
-      entry: 'src/index.js',
-      formats: ['es'],
+      name: "ru-ru",
+      entry: "src/index.js",
+      formats: ["es"],
       sourcemap: false,
     },
     rolldownOptions: {
       output: {
-        entryFileNames: 'esm/[name].js',
-        chunkFileNames: 'esm/[name].js',
+        entryFileNames: "esm/[name].js",
+        chunkFileNames: "esm/[name].js",
       },
     },
   },
-})
+});
 
-export default config
+export default config;

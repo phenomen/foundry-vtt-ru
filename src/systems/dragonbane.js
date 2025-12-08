@@ -1,83 +1,82 @@
-import { setupBabele } from '../shared.js'
+import { setupBabele } from "../shared.js";
 
 export function init() {
-  setupBabele('dragonbane')
+  setupBabele("dragonbane");
 
-  registerConverters()
+  registerConverters();
 }
 
 function registerConverters() {
-  let translationMap = null
+  let translationMap = null;
 
   const getTranslationMap = () => {
     if (translationMap) {
-      return translationMap
+      return translationMap;
     }
 
     try {
-      const translations = game.babele.translations
+      const translations = game.babele.translations;
 
       if (!translations || translations.length < 1) {
         // console.warn('Dragonbane: No Babele translations found')
-        return null
+        return null;
       }
 
       // Create a simple key:value mapping
-      const map = {}
+      const map = {};
 
-      translations.forEach((translation, _index) => {
+      for (const translation of translations) {
         if (!translation.entries) {
           // console.log(`Dragonbane: Translation ${index} has no entries`)
-          return
+          continue;
         }
 
-        Object.keys(translation.entries).forEach((packName) => {
-          const packData = translation.entries[packName]
+        for (const packName of Object.keys(translation.entries)) {
+          const packData = translation.entries[packName];
 
           if (packData?.items) {
             // console.log(`Dragonbane: Found items in pack "${packName}"`)
-            Object.keys(packData.items).forEach((originalName) => {
-              const item = packData.items[originalName]
+            for (const originalName of Object.keys(packData.items)) {
+              const item = packData.items[originalName];
               if (item?.name) {
-                map[originalName] = item.name
+                map[originalName] = item.name;
               }
-            })
+            }
           }
-        })
-      })
-
-      if (Object.keys(map).length === 0) {
-        return null
+        }
       }
 
-      translationMap = map
-      return map
+      if (Object.keys(map).length === 0) {
+        return null;
+      }
+
+      translationMap = map;
+      return map;
+    } catch (error) {
+      console.warn("Dragonbane: Error creating translation map:", error);
+      return null;
     }
-    catch (error) {
-      console.warn('Dragonbane: Error creating translation map:', error)
-      return null
-    }
-  }
+  };
 
   game.babele.registerConverters({
     translateItemList(list) {
-      if (!list || typeof list !== 'string') {
-        return list || ''
+      if (!list || typeof list !== "string") {
+        return list || "";
       }
 
-      const map = getTranslationMap()
+      const map = getTranslationMap();
       if (!map) {
-        return list
+        return list;
       }
 
       return list
-        .split(',')
+        .split(",")
         .map((item) => {
-          const trimmedItem = item.trim()
-          return map[trimmedItem] || trimmedItem
+          const trimmedItem = item.trim();
+          return map[trimmedItem] || trimmedItem;
         })
-        .sort((a, b) => a.localeCompare(b))
-        .join(', ')
+        .toSorted((a, b) => a.localeCompare(b))
+        .join(", ");
     },
-  })
+  });
 }

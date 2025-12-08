@@ -1,45 +1,42 @@
-import { setupBabele, translateValue } from '../shared.js'
+import { setupBabele, translateValue } from "../shared.js";
 
 const CLASSES = {
-  Heavy: 'Гоплит',
-  Medic: 'Врач',
-  Officer: 'Офицер',
-  Rookie: 'Новобранец',
-  Scout: 'Разведчик',
-  Sniper: 'Снайпер',
-  Soldier: 'Солдат',
-  Panyar: 'Паньяр',
-  Bartan: 'Бартан',
-  Orite: 'Орите',
-  Zemyati: 'Земьяти',
-  General: 'Общий',
-}
+  Heavy: "Гоплит",
+  Medic: "Врач",
+  Officer: "Офицер",
+  Rookie: "Новобранец",
+  Scout: "Разведчик",
+  Sniper: "Снайпер",
+  Soldier: "Солдат",
+  Panyar: "Паньяр",
+  Bartan: "Бартан",
+  Orite: "Орите",
+  Zemyati: "Земьяти",
+  General: "Общий",
+};
 
 export function init() {
-  setupBabele('band-of-blades')
-  registerConverters()
+  setupBabele("band-of-blades");
+  registerConverters();
 }
 
 function registerConverters() {
-  if (!game.babele)
-    return
+  if (!game.babele) return;
 
   game.babele.registerConverters({
     classConverter: (cls) => {
-      if (!cls)
-        return
-      return translateValue(cls, CLASSES)
+      if (!cls) return;
+      return translateValue(cls, CLASSES);
     },
 
     effectsConverter: (effects, translations) => {
-      if (!effects || !translations)
-        return
+      if (!effects || !translations) return;
       return effects.map((effect) => {
         if (effect.name && translations[effect.name]) {
-          effect.name = translations[effect.name]
+          effect.name = translations[effect.name];
         }
-        return effect
-      })
+        return effect;
+      });
     },
-  })
+  });
 }

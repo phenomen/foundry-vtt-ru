@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "env": {
+    "browser": true
+  },
+  "categories": {
+    "correctness": "deny",
+    "perf": "warn",
+    "suspicious": "warn",
+    "restriction": "warn"
+  },
+  "rules": {
+    "no-console": "off",
+    "oxc/no-optional-chaining": "off",
+    "oxc/no-async-await": "off",
+    "oxc/no-rest-spread-properties": "off",
+    "unicorn/no-process-exit": "off"
+  }
+}

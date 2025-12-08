@@ -35,10 +35,10 @@ button,
 .chargen-title,
 .chargen-description,
 .chargen-build,
-.app.journal-sheet .editor .journal-header > input[name='name'],
-.app.journal-sheet .journal-entry-content .journal-header > input[name='name'],
-.app.sheet.actor .editor .journal-header > input[name='name'],
-.app.sheet.actor .journal-entry-content .journal-header > input[name='name'],
+.app.journal-sheet .editor .journal-header > input[name="name"],
+.app.journal-sheet .journal-entry-content .journal-header > input[name="name"],
+.app.sheet.actor .editor .journal-header > input[name="name"],
+.app.sheet.actor .journal-entry-content .journal-header > input[name="name"],
 .app.journal-sheet .editor h1,
 .app.journal-sheet .editor h2,
 .app.journal-sheet .editor h3,
@@ -153,13 +153,13 @@ a.inline-roll {
 .app.journal-sheet .journal-entry-content h1,
 .app.journal-sheet .journal-entry-content h2,
 .app.journal-sheet .journal-entry-content h3,
-.forbidden-lands input[type='number'],
-.forbidden-lands input[type='text'],
+.forbidden-lands input[type="number"],
+.forbidden-lands input[type="text"],
 .forbidden-lands .sheet-tabs .tab-item {
   font-weight: 600;
 }
 
-.app.journal-sheet .journal-entry-content .journal-header > input[name='name'] {
+.app.journal-sheet .journal-entry-content .journal-header > input[name="name"] {
   font-weight: 700;
 }
 
@@ -222,7 +222,7 @@ select option,
 }
 
 .forbidden-lands .attributes .fa-slash:before {
-  content: '/';
+  content: "/";
   font-size: var(--font-size-12);
   padding: 0px;
 }
