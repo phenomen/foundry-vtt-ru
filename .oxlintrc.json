@@ -1,19 +1,23 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["unicorn", "typescript", "oxc"],
   "env": {
-    "browser": true
+    "browser": true,
+    "node": false
   },
   "categories": {
-    "correctness": "deny",
-    "perf": "warn",
+    "correctness": "error",
     "suspicious": "warn",
+    "pedantic": "off",
+    "style": "off",
+    "perf": "warn",
     "restriction": "warn"
   },
   "rules": {
     "no-console": "off",
-    "oxc/no-optional-chaining": "off",
+    "no-process-exit": "off",
     "oxc/no-async-await": "off",
     "oxc/no-rest-spread-properties": "off",
-    "unicorn/no-process-exit": "off"
+    "oxc/no-optional-chaining": "off"
   }
 }
