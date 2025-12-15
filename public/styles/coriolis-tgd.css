@@ -1,0 +1,113 @@
+body,
+body.theme-dark,
+.journal-entry-page {
+  --font-header: var(--font-fancy);
+  --font-editor: var(--font-fancy);
+  --font-text-editor: var(--font-fancy);
+  --font-body: var(--font-fancy);
+}
+
+.cgd.actor.explorer div.attributes label.insight {
+  left: 10px;
+}
+
+.cgd.actor.explorer div.attributes label.logic {
+  right: 10px;
+}
+
+.cgd.actor.explorer div.attributes label.agility {
+  right: 10px;
+}
+
+.cgd.actor.explorer div.attributes label.strength {
+  left: 30px;
+}
+
+.cgd.actor.explorer div.attributes svg text.attributes {
+  font-size: 10px;
+}
+
+.cgd.actor.explorer header.header div.title label {
+  height: 13px;
+  overflow: hidden;
+}
+
+.cgd .editor {
+  font-size: var(--font-size-16);
+}
+
+.cgd.actor.vehicle .upgrade-item-title label:not(:first-child),
+.cgd.actor.vehicle .cargo-item-title label:not(:first-child),
+.cgd.actor.crew .maneuver-item-title label:not(:first-child),
+.cgd.actor.bird .bird-power-item-title label:not(:first-child),
+.cgd.actor.explorer .solo-item-title label:not(:first-child),
+.cgd.actor.explorer .affliction-item-title label:not(:first-child),
+.cgd.actor.explorer .armor-item-title label:not(:first-child),
+.cgd.actor.explorer .weapon-item-title label:not(:first-child),
+.cgd.actor.explorer .equipment-item-title label:not(:first-child) {
+  font-size: var(--font-size-11);
+}
+
+.cgd.actor.vehicle .upgrade-item > label,
+.cgd.actor.vehicle .upgrade-item div:not(.expandable-field),
+.cgd.actor.vehicle .cargo-item > label,
+.cgd.actor.vehicle .cargo-item div:not(.expandable-field),
+.cgd.actor.vehicle div.principal > div:nth-of-type(1) select,
+.cgd.actor.crew .maneuver-item > label,
+.cgd.actor.crew .maneuver-item div:not(.expandable-field),
+.cgd.actor.crew div.principal > div:nth-of-type(1) select,
+.cgd.actor.bird .bird-power-item > label,
+.cgd.actor.bird .bird-power-item div:not(.expandable-field),
+.cgd.actor.bird header.header div.basic div.principal select[name="system.type"],
+.cgd.actor.explorer .solo-item > label,
+.cgd.actor.explorer .solo-item div:not(.expandable-field):not([class]),
+.cgd.actor.explorer .affliction-item > label,
+.cgd.actor.explorer .affliction-item div:not(.expandable-field),
+.cgd.actor.explorer .armor-item > label,
+.cgd.actor.explorer .armor-item div:not(.expandable-field):not([class]),
+.cgd.actor.explorer .weapon-item > label,
+.cgd.actor.explorer .weapon-item div:not(.expandable-field):not([class]),
+.cgd.actor.explorer
+  section.equipments.active
+  div:nth-child(1)
+  div.circles
+  div.encumbrance
+  label.max,
+.cgd.actor.explorer
+  section.equipments.active
+  div:nth-child(1)
+  div.circles
+  div.encumbrance
+  label.value,
+.cgd.actor.explorer .equipment-item > label,
+.cgd.actor.explorer .equipment-item div:not(.expandable-field),
+.cgd.actor.explorer input,
+.cgd.actor.explorer label.attribute-field,
+.cgd div.expandable-field,
+.cgd div.input-with-circle-title input,
+.cgd div.input-with-circle-title-small input,
+.cgd div.input-with-circle-title textarea,
+.cgd div.input-with-circle-title-small textarea,
+.cgd div.form-group.cgd-custom select,
+.cgd div.form-group.cgd-custom:has(input[type="checkbox"]) select,
+.cgd div.form-group.cgd-custom input,
+.cgd div.form-group.cgd-custom:has(input[type="checkbox"]) input,
+.cgd div.simple-field input,
+.cgd.actor.creature div.creature-behavior div.edit input,
+.cgd div.label-with-circle-label-label > label:nth-of-type(3),
+.cgd.actor.explorer .talent-item > div:nth-child(1) > label:nth-of-type(3),
+.cgd div.label-with-circle-label-label > label:nth-of-type(2),
+.cgd.actor.explorer .talent-item > div:nth-child(1) > label:nth-of-type(2),
+.cgd div.label-with-circle-label-label > label:nth-of-type(1),
+.cgd.actor.explorer .talent-item > div:nth-child(1) > label:nth-of-type(1),
+.cgd div.label-with-circle-field > :last-child,
+.cgd.roll-application div.bonuses div:not([class]) > :last-child,
+.cgd.roll-application div.infos div:not([class]) > :last-child,
+.cgd div.label-with-circle-field:has(> :last-child:nth-child(3)) > *:nth-child(2),
+.cgd.roll-application div.bonuses div:has(> :last-child:nth-child(3)):not([class]) > *:nth-child(2),
+.cgd.roll-application div.infos div:has(> :last-child:nth-child(3)):not([class]) > *:nth-child(2),
+.cgd .field-circleField-smallField > label:nth-of-type(3),
+.cgd .field-circleField-smallField > label:nth-of-type(2),
+.cgd .field-circleField-smallField > label:nth-of-type(1) {
+  font-family: var(--font-fancy);
+}

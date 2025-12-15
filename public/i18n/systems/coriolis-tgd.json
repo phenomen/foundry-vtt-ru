@@ -1,0 +1,871 @@
+{
+  "CORIOLIS_TGD": {
+    "SheetLabels": {
+      "Actor": {
+        "Explorer": "Coriolis — Бланк исследователя",
+        "NPC": "Coriolis — Бланк персонажа ведущего",
+        "Creature": "Coriolis — Бланк существа",
+        "Bird": "Coriolis — Бланк птицы",
+        "Crew": "Coriolis — Бланк экипажа",
+        "Vehicle": "Coriolis— Бланк техники (аэростат/ровер/шаттл)"
+      },
+      "Item": "Coriolis — Бланк предмета",
+      "Sheet": "Бланк"
+    },
+    "Actor": {
+      "Tabs": {
+        "Biography": "Биография",
+        "Talents": "Достоинства",
+        "Equipments": "Снаряжение",
+        "Combat": "Бой",
+        "Effects": "Эффекты",
+        "Afflictions": "Недуги",
+        "Powers": "Силы",
+        "Maneuvers": "Манёвры",
+        "Cargo": "Груз",
+        "Upgrades": "Улучшения",
+        "Stats": "Параметры",
+        "Automations": "Автоматизация",
+        "Solo": "Соло",
+        "Notes": "Заметки"
+      },
+      "base": {
+        "FIELDS": {
+          "playMode": {
+            "true": "Режим редактирования",
+            "false": "Режим игры"
+          },
+          "biography": {
+            "label": "Биография"
+          },
+          "setValue": "Установить значение {value}",
+          "derivedAttributes": {
+            "health": {
+              "value": {
+                "label": "Здоровье"
+              },
+              "max": {
+                "label": "Макс. здоровье"
+              }
+            }
+          },
+          "health": {
+            "value": {
+              "label": "Здоровье"
+            },
+            "max": {
+              "label": "Максимум здоровья"
+            }
+          },
+          "hope": {
+            "value": {
+              "label": "Надежда"
+            },
+            "max": {
+              "label": "Максимум надежды"
+            }
+          },
+          "heart": {
+            "value": {
+              "label": "Дух"
+            },
+            "max": {
+              "label": "Максимум духа"
+            }
+          },
+          "attributes": {
+            "label": "Характеристики",
+            "abbr": "Хар.",
+            "selectWhenRolling": {
+              "label": "(выбор при броске)"
+            },
+            "strength": {
+              "label": "Сила",
+              "abbr": "СИЛ"
+            },
+            "agility": {
+              "label": "Ловкость",
+              "abbr": "ЛВК"
+            },
+            "empathy": {
+              "label": "Эмпатия",
+              "abbr": "ЭМП"
+            },
+            "logic": {
+              "label": "Логика",
+              "abbr": "ЛОГ"
+            },
+            "insight": {
+              "label": "Интуиция",
+              "abbr": "ИНТ"
+            },
+            "perception": {
+              "label": "Внимание",
+              "abbr": "ВНМ"
+            }
+          },
+          "conditions": {
+            "exhausted": {
+              "label": "Истощёние"
+            },
+            "dazed": {
+              "label": "Ошеломлёние"
+            },
+            "shaken": {
+              "label": "Шок"
+            },
+            "distracted": {
+              "label": "Отвлечение"
+            },
+            "confused": {
+              "label": "Замешательство"
+            },
+            "disheartened": {
+              "label": "Уныние"
+            }
+          },
+          "bonus": "Бонус"
+        }
+      },
+      "Explorer": {
+        "FIELDS": {
+          "attributes.level.value": {
+            "label": "Уровень"
+          },
+          "experience": {
+            "label": "Опыт"
+          },
+          "biography": {
+            "appearance.label": "Внешность",
+            "quirk.label": "Причуда",
+            "motivation.label": "Мотивация",
+            "faction.label": "Фракция",
+            "contacts.label": "Контакты",
+            "origin.label": "Происхождение",
+            "others.label": "Другое"
+          },
+          "biography.profession": {
+            "label": "Профессия"
+          },
+          "biography.speciality": {
+            "label": "Специализация"
+          },
+          "rukh": {
+            "label": "Рух"
+          },
+          "encumbrance": {
+            "label": "Нагрузка",
+            "abbr": "Нагр."
+          }
+        }
+      },
+      "Creature": {
+        "FIELDS": {
+          "size": {
+            "label": "Размер",
+            "small": {
+              "label": "Маленький"
+            },
+            "normal": {
+              "label": "Средний"
+            },
+            "large": {
+              "label": "Большой"
+            }
+          },
+          "ferocity": {
+            "label": "Свирепость"
+          },
+          "armor": {
+            "label": "Броня"
+          },
+          "containmentProtocol": {
+            "label": "Протокол сдерживания"
+          },
+          "containmentProtocolBonus": {
+            "label": "Бонус протокола"
+          },
+          "abilities": {
+            "label": "Способности"
+          },
+          "behavior": {
+            "label": "Модель поведения"
+          },
+          "attacks": {
+            "label": "Характерные атаки"
+          }
+        }
+      },
+      "Bird": {
+        "FIELDS": {
+          "type": {
+            "ward.label": "Защитник",
+            "guide.label": "Проводник",
+            "specter.label": "Призрак"
+          },
+          "energy": {
+            "label": "Энергия"
+          },
+          "powers.label": "Силы",
+          "appearance.label": "Внешность",
+          "companion.label": "Спутник"
+        }
+      },
+      "Crew": {
+        "FIELDS": {
+          "roles": {
+            "label": "Роль",
+            "delver.label": "Первопроходец",
+            "scout.label": "Разведчик",
+            "guard.label": "Охранник",
+            "burrower.label": "Бурильщик",
+            "archaeologist.label": "Археолог"
+          },
+          "totalSupply.label": "Всего припасов",
+          "crewPoints.label": "Пункты экипажа"
+        }
+      },
+      "Vehicle": {
+        "FIELDS": {
+          "maneuverability.label": "Манёвренность",
+          "maxManeuverability.label": "Макс. манёвренность",
+          "hull.label": "Корпус",
+          "armor.label": "Броня",
+          "passengers.label": "Пассажиры",
+          "slots": {
+            "label": "Слоты",
+            "capacity": "Вместимость слотов улучшений:"
+          },
+          "cargo": {
+            "label": "Груз",
+            "capacity": "Грузоподъёмность:"
+          },
+          "weapon": {
+            "capacity": "Вместимость оружейных турелей:"
+          },
+          "notes.label": "Заметки",
+          "paint.label": "Окраска"
+        },
+        "Automation": {
+          "SensorSweep.name": "Сканирование сенсорами",
+          "Overload.name": "Перегрузка",
+          "ArmorRoll": {
+            "name": "Бросок брони",
+            "item": {
+              "label": "Броня",
+              "name": "Броня"
+            }
+          },
+          "BlightProtectionRoll": {
+            "name": "Бросок защиты от Скверны",
+            "item": {
+              "label": "Защита от Скверны",
+              "name": "Защита от Скверны"
+            }
+          },
+          "Stunt": {
+            "name": "Манёвр",
+            "item": {
+              "type": {
+                "name": "Манёвренность"
+              }
+            }
+          },
+          "Ramming": {
+            "name": "Таран",
+            "item": {
+              "type": {
+                "name": "Таран"
+              }
+            }
+          }
+        }
+      },
+      "Kite": {
+        "FIELDS": {
+          "cost.label": "Стоимость"
+        },
+        "Automation": {
+          "UseKite": {
+            "name": "Использовать аэростат",
+            "item": {
+              "type": {
+                "name": "Бонус"
+              }
+            }
+          }
+        }
+      },
+      "Rover": {
+        "FIELDS": {
+          "speed.label": "Скорость",
+          "blightProtection.label": "Защита от Скверны",
+          "propulsion.label": "Движитель"
+        }
+      },
+      "Shuttle": {
+        "FIELDS": {
+          "combatSpeed.label": "Боевая скорость",
+          "travelSpeed.label": "Маршевая скорость",
+          "range.label": "Дальность"
+        }
+      },
+      "general": {
+        "TransferTo": "Передать актеру: {actor}",
+        "QuantityToTransfer": "Количество для передачи"
+      }
+    },
+    "Item": {
+      "Tabs": {
+        "Configuration": "Конфиг",
+        "Attributes": "Атрибуты",
+        "Description": "Инфо",
+        "Effects": "Эффекты",
+        "Automations": "Авто",
+        "Features": "Свойства",
+        "DelveInfo": "Инфо об экспедиции"
+      },
+      "Talent": {
+        "FIELDS": {
+          "maxLevel": {
+            "label": "Максимальный уровень"
+          },
+          "bonusPerLevel": {
+            "label": "Бонус за уровень"
+          },
+          "currentLevel": {
+            "label": "Текущий уровень",
+            "error": "Текущий уровень не может быть выше максимального"
+          },
+          "attribute": {
+            "label": "Характеристика"
+          }
+        }
+      },
+      "Affliction": {
+        "FIELDS": {
+          "afflictionType": {
+            "label": "Тип недуга",
+            "criticalInjury": "Критическая травма",
+            "mentalTrauma": "Психическая травма",
+            "blightManifestation": "Проявление Скверны"
+          },
+          "healTime": {
+            "label": "Время лечения"
+          },
+          "lethal": {
+            "label": "Смертельно"
+          },
+          "permanent": {
+            "label": "Постоянно"
+          },
+          "effect": {
+            "label": "Эффект"
+          }
+        }
+      },
+      "Equipment": {
+        "FIELDS": {
+          "supply": {
+            "label": "Припасы",
+            "automation": "Потребляет припасы"
+          },
+          "bonus": {
+            "label": "Бонус",
+            "error": "Бонус не может быть выше максимального бонуса."
+          },
+          "maxBonus": {
+            "label": "Максимальный бонус"
+          },
+          "quantity": {
+            "label": "Количество",
+            "abbr": "Кол-во"
+          },
+          "deleteWhenZero": {
+            "label": "Удалить при 0 кол-ва"
+          },
+          "weight": {
+            "0": {
+              "1label": "0.1",
+              "25label": "¼",
+              "5label": "½"
+            },
+            "label": "Вес",
+            "abbr": "Вес",
+            "tiny": {
+              "label": "0: Крошечный"
+            },
+            "veryLight": {
+              "label": "¼: Очень лёгкий"
+            },
+            "light": {
+              "label": "½: Лёгкий"
+            },
+            "regular": {
+              "label": "1: Обычный"
+            },
+            "heavy": {
+              "label": "2: Тяжёлый"
+            },
+            "veryHeavy": {
+              "label": "3: Очень тяжёлый"
+            },
+            "superHeavy": {
+              "label": "4: Супертяжёлый"
+            },
+            "extreme": {
+              "label": "5: Экстремальный"
+            },
+            "0label": "Крошечный",
+            "1label": "1",
+            "2label": "2",
+            "3label": "3",
+            "4label": "4",
+            "5label": "5"
+          },
+          "cost": {
+            "label": "Стоимость",
+            "abbr": "Стоим."
+          },
+          "consumable": {
+            "label": "Расходный",
+            "abbr": "Расх."
+          },
+          "supplyConsumed": {
+            "label": "Использовано припасов",
+            "abbr": "Припасы",
+            "description": "Использовано припасов: {supplyConsumed}"
+          },
+          "tech": {
+            "label": "Технологии",
+            "ordinary": {
+              "label": "Обычные",
+              "abbr": "О"
+            },
+            "guildExplorers": {
+              "label": "Гильдия Исследователей",
+              "abbr": "Г(И)"
+            },
+            "guildNavigators": {
+              "label": "Гильдия Навигаторов",
+              "abbr": "Г(Н)"
+            },
+            "guildMachinists": {
+              "label": "Гильдия Механиков",
+              "abbr": "Г(М)"
+            },
+            "guildGardeners": {
+              "label": "Гильдия Озеленителей",
+              "abbr": "Г(О)"
+            },
+            "heirloom": {
+              "label": "Реликвия",
+              "abbr": "Р"
+            },
+            "restricted": {
+              "label": "Лицензирован (*)",
+              "abbr": "*"
+            },
+            "guildGmChoice": {
+              "label": "Гильдия (выбор ведущего)",
+              "abbr": "Г"
+            }
+          },
+          "keepsake": {
+            "label": "Памятная вещь"
+          }
+        }
+      },
+      "Weapon": {
+        "label": "Оружие",
+        "atHand": {
+          "label": "(в руках)",
+          "equip": "Взять в руки",
+          "unequip": "Убрать из рук"
+        },
+        "installed.label": "Установлено",
+        "FIELDS": {
+          "attackType": {
+            "label": "Тип атаки",
+            "close": {
+              "label": "Ближний бой"
+            },
+            "ranged": {
+              "label": "Дальний бой"
+            },
+            "vehicle": {
+              "label": "Бой техники"
+            }
+          },
+          "grip": {
+            "label": "Хват",
+            "oneHand": {
+              "label": "Одна рука",
+              "abbr": "1Р"
+            },
+            "twoHands": {
+              "label": "Две руки",
+              "abbr": "2Р"
+            }
+          },
+          "damage": {
+            "label": "Урон",
+            "abbr": "УРОН"
+          },
+          "critical": {
+            "label": "Порог крит. удара",
+            "abbr": "КРИТ"
+          },
+          "blight": {
+            "label": "Скверна",
+            "abbr": "СКВЕРНА"
+          },
+          "minRange": {
+            "label": "Мин. дистанция"
+          },
+          "maxRange": {
+            "label": "Макс. дистанция"
+          },
+          "range": {
+            ".label": "-",
+            "label": "Дистанция",
+            "engaged": {
+              "label": "В упор",
+              "abbr": "У"
+            },
+            "short": {
+              "label": "Ближняя",
+              "abbr": "Б"
+            },
+            "medium": {
+              "label": "Средняя",
+              "abbr": "С"
+            },
+            "long": {
+              "label": "Дальняя",
+              "abbr": "Д"
+            },
+            "extreme": {
+              "label": "Предельная",
+              "abbr": "П"
+            },
+            "special": {
+              "label": "Особая",
+              "abbr": "О"
+            }
+          },
+          "loaded": {
+            "label": "Заряжено",
+            "unloaded": "Оружие разряжено. Перезарядите, чтобы использовать снова.",
+            "noReload": "В оружии ещё есть боеприпасы. Перезарядка не требуется.",
+            "emptyMagazine": "Магазин пуст."
+          }
+        }
+      },
+      "Armor": {
+        "label": "Броня",
+        "equipped": {
+          "label": "(надето)",
+          "equip": "Надеть",
+          "unequip": "Снять"
+        },
+        "FIELDS": {
+          "armorRating": {
+            "label": "Класс защиты"
+          },
+          "armorProtection": {
+            "label": "Защита брони"
+          },
+          "blightProtection": {
+            "label": "Защита от Скверны"
+          },
+          "cost": {
+            "label": "Стоимость"
+          },
+          "extras": {
+            "label": "Дополнительно"
+          },
+          "tech": {
+            "label": "Технологии"
+          }
+        }
+      },
+      "CreatureAttack": {
+        "FIELDS": {
+          "attackNumber": {
+            "label": "Номер атаки"
+          },
+          "baseDice": {
+            "label": "Базовые кубики",
+            "info": "кубики {value}"
+          },
+          "damage": {
+            "label": "Урон",
+            "info": "урон {value}"
+          },
+          "damageCritical": {
+            "label": "Крит",
+            "info": "крит {value}"
+          },
+          "despair": {
+            "label": "Отчаяние",
+            "info": "отчаяние {value}"
+          },
+          "blight": {
+            "label": "Скверна",
+            "info": "Скверна {value}"
+          },
+          "range": {
+            "label": "Дистанция"
+          },
+          "actions": {
+            "attack": "Бросок характерной атаки",
+            "behavior": "Бросок модели поведения"
+          }
+        }
+      },
+      "BirdPower": {
+        "FIELDS": {
+          "isAttack.label": "Является атакой",
+          "damage.label": "Урон",
+          "critical.label": "Порог крит. удара",
+          "range.label": "Дистанция",
+          "minEnergy.label": "Мин. энергия",
+          "energyBonus": "Энергия => Бонус"
+        }
+      },
+      "CrewManeuver": {
+        "FIELDS": {
+          "role": {
+            "label": "Роль"
+          }
+        }
+      },
+      "VehicleUpgrade": {
+        "FIELDS": {
+          "bonus.label": "Бонус",
+          "maxBonus.label": "Максимальный бонус",
+          "cost.label": "Стоимость (ОЭ)",
+          "tech.label": "Технологии",
+          "slot.label": "Слот",
+          "installed.label": "Установлено",
+          "partOfFrame.label": "Часть каркаса",
+          "upgradesNotInstalled": "Улучшения не установлены"
+        },
+        "uninstall": "Демонтировать",
+        "install": "Установить"
+      },
+      "RoverUpgrade": {
+        "FIELDS": {}
+      },
+      "Feature": {
+        "FIELDS": {
+          "modifier.label": "Модификатор",
+          "type": {
+            "label": "Тип",
+            "weapon.label": "Свойство оружия",
+            "armor.label": "Свойство экзо- и экспедиционного костюма"
+          }
+        }
+      },
+      "Solo": {
+        "label": "Журналы соло-экспедиций",
+        "tooltip": "Это базовая реализация журнала соло-экспедиции. Имейте в виду, что здесь нет автоматизации, и вам нужно будет вручную обновлять поля в соответствии с вашими соло-приключениями.",
+        "FIELDS": {
+          "delveClass.label": "Класс экспедиции",
+          "depthClass.label": "Класс глубины",
+          "deepScanBonus.label": "Бонус глубокого сканирования",
+          "blightScanBonus.label": "Бонус сканирования Скверны",
+          "distanceToExitBonus.label": "Бонус дистанции до выхода",
+          "forayDistanceBonus.label": "Бонус дистанции вылазки"
+        }
+      }
+    },
+    "Effect": {
+      "Source": "Источник",
+      "Toggle": "Переключить эффект",
+      "Temporary": "Временные эффекты",
+      "Passive": "Пассивные эффекты",
+      "Inactive": "Неактивные эффекты"
+    },
+    "Chat": {
+      "Success": "Успехи",
+      "SendToChat": "Отправить в чат"
+    },
+    "Automation": {
+      "new": "Новый {type}",
+      "addNew": "Добавить новую автоматизацию",
+      "automate": "Автоматизировать {name} [{actor}]",
+      "actorBroken": "\"{actor}\" сломлен. Вы уверены, что хотите выполнить этот бросок?",
+      "Type": {
+        "automation": "Автоматизация",
+        "rollAttribute": "Бросок характеристики",
+        "rollAttack": "Бросок атаки",
+        "reloadWeapon": "Перезарядить оружие",
+        "runMacro": "Запустить макрос",
+        "consume": "Потребить предмет",
+        "consumeSupply": "Потребить припасы",
+        "runSequence": "Запустить цепочку автоматизаций",
+        "rollArmorDamage": "Бросок защиты брони от урона",
+        "rollArmorBlight": "Бросок защиты брони от Скверны",
+        "rollCreatureAttack": "Бросок атаки существа",
+        "rollBirdPower": "Бросок силы птицы",
+        "rollUpgrade": "Бросок улучшения"
+      },
+      "Category": {
+        "Default": "По умолчанию",
+        "Weapons": "Оружие",
+        "Armor": "Броня",
+        "Talent": "Достоинство",
+        "Equipment": "Снаряжение",
+        "Bird": "Птица",
+        "Crew": "Экипаж",
+        "Upgrades": "Улучшения",
+        "Other": "Другое"
+      },
+      "FIELDS": {
+        "showAsSelection": {
+          "label": "Показывать как выбор"
+        },
+        "attribute": {
+          "label": "Характеристика"
+        },
+        "rollAttribute": {
+          "requireAttribute.label": "Требует характеристики",
+          "canChangeAttribute.label": "Может менять характеристику"
+        },
+        "rollAttack": {
+          "notLoaded": "Вы не можете атаковать оружием, которое не заряжено.",
+          "postExecutionMacro.label": "Макрос после выполнения"
+        },
+        "reloadWeapon": {
+          "reloaded": "Оружие перезаряжено. Потреблено припасов: {supplyConsumed}. Доступно припасов: {newQuantity}."
+        },
+        "macro": {
+          "open": "Открыть макрос",
+          "drop": "Перетащите макрос сюда или вставьте его UUID в поле",
+          "error": "Эта автоматизация не типа \"Запустить макрос\"",
+          "notFound": "Макрос не задан или не найден. Пожалуйста, проверьте."
+        },
+        "consume": {
+          "noQuantity": "У этого предмета нет количества. Проверьте автоматизацию.",
+          "notConsumable": "Этот предмет не помечен как расходный. Проверьте автоматизацию.",
+          "notEnough": "У вас недостаточно количества этого предмета для использования.",
+          "itemUsed": "Предмет использован. Новое доступное количество: {newQuantity}"
+        },
+        "consumeSupply": {
+          "noSupplyConsumed": "У этого предмета нет конфигурации потребления припасов. Проверьте конфигурацию предмета.",
+          "notEnough": "У вас недостаточно припасов для использования этого предмета. Требуется припасов: {required}. Доступно припасов: {available}.",
+          "itemUsed": "Предмет использован и припасы потреблены. Потреблено припасов: {supplyConsumed}. Доступно припасов: {newQuantity}"
+        },
+        "sequence": {
+          "add": "Добавить автоматизацию в цепочку",
+          "delete": "Удалить автоматизацию из цепочки"
+        },
+        "armorRoll": {
+          "notArmor": "Предмет, связанный с этой автоматизацией, не является броней. Пожалуйста, проверьте конфигурацию.",
+          "armorRatingTitle": "Защита от урона",
+          "blightProtectionTitle": "Защита от Скверны",
+          "armorRatingZero": "Класс защиты настроен равен нулю. Проверьте конфигурацию предмета.",
+          "blightProtectionZero": "Защита от Скверны равна нулю. Проверьте конфигурацию предмета."
+        },
+        "birdPower": {
+          "noExplorer": "Выберите исследователя, чтобы командовать птицей.",
+          "notEnoughEnergy": "У птицы недостаточно энергии для использования этой силы."
+        },
+        "upgrade": {
+          "noExplorer": "Выберите исследователя для использования улучшения техники."
+        }
+      }
+    },
+    "Roller": {
+      "Bonuses": {
+        "GearBonus": {
+          "label": "Добавить снаряжение/оружие"
+        },
+        "TalentBonus": {
+          "label": "Добавить достоинство"
+        },
+        "manualBonus": {
+          "label": "Ручной бонус",
+          "name": "{dice} базовых кубиков"
+        },
+        "targetSize": {
+          "label": "Размер цели",
+          "proneOrSmall": "Лежащая или Маленькая",
+          "largeOrVehicle": "Большая или Техника"
+        },
+        "aimed": {
+          "label": "Прицеливание",
+          "aimedFire": "Прицельный огонь"
+        },
+        "restrained": {
+          "label": "Стеснён",
+          "restrainedOrUnaware": "Стеснён или Застигнут врасплох"
+        },
+        "cover": {
+          "label": "Укрытие",
+          "Shrubbery": "Кустарник",
+          "Furniture": "Мебель",
+          "Door": "Дверь",
+          "InnerBulkhead": "Внутренняя переборка",
+          "OuterBulkhead": "Внешняя переборка",
+          "ArmoredBulkhead": "Бронированная переборка"
+        }
+      }
+    },
+    "Errors": {
+      "NoTarget": "Нет цели для применения урона."
+    }
+  },
+  "YZUR": {
+    "CHAT.ROLL": {
+      "Push": "Молитва",
+      "Accept": "Принять",
+      "EnergyUsed": "Использовано энергии",
+      "AttackDamage": "Урон атаки",
+      "Trauma": "Потеряно Надежды",
+      "GearDamage": "Повреждение снаряжения",
+      "ATTACK": {
+        "DAMAGE": "Урон атаки",
+        "CRITICAL": "Порог крит. удара",
+        "DESPAIR": "Урон отчаяния",
+        "BLIGHT": "Урон Скверны",
+        "ApplyDamage": "Применить урон"
+      }
+    },
+    "DIETERMS": {
+      "GearDie": "Успехи снаряжения",
+      "BaseDie": "Базовые успехи"
+    }
+  },
+  "TYPES": {
+    "Actor": {
+      "explorer": "Исследователь",
+      "npc": "Персонаж ведущего",
+      "creature": "Существо",
+      "bird": "Птица",
+      "crew": "Экипаж",
+      "kite": "Аэростат",
+      "rover": "Ровер",
+      "shuttle": "Шаттл"
+    },
+    "Item": {
+      "talent": "Достоинство",
+      "affliction": "Недуг",
+      "equipment": "Снаряжение",
+      "weapon": "Оружие",
+      "armor": "Броня",
+      "creatureAttack": "Атака существа",
+      "creatureAbility": "Способность существа",
+      "birdPower": "Сила птицы",
+      "crewManeuver": "Манёвр экипажа",
+      "kiteUpgrade": "Улучшение аэростата",
+      "roverUpgrade": "Улучшение ровера",
+      "shuttleUpgrade": "Улучшение шаттла",
+      "vehicleWeapon": "Вооружение техники",
+      "feature": "Свойство",
+      "solo": "Журнал одиночной экспедиции"
+    }
+  }
+}

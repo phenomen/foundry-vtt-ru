@@ -52,7 +52,9 @@ async function main() {
   }
 
   for await (const file of globs.styles.scan(".")) {
-    styles.push(path.basename(file, ".css"));
+    if (path.basename(file, ".css") !== "_fonts" && path.basename(file, ".css") !== "_main") {
+      styles.push(path.basename(file, ".css"));
+    }
   }
 
   languages.push(...systems, ...modules);
