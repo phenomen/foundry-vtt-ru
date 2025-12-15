@@ -1,0 +1,62 @@
+{
+  "label": "Буклеты",
+  "mapping": {
+    "name": "name",
+    "attitude": "system.attitude",
+    "styleBonus": "system.styleBonus",
+    "specialGear": "system.specialGear",
+    "specialTraitName": "system.specialTraitName",
+    "specialTraitDesc": "system.specialTraitDesc",
+    "items": {
+      "path": "items",
+      "converter": "fromPack"
+    },
+    "tokenName": {
+      "path": "prototypeToken.name",
+      "converter": "name"
+    }
+  },
+  "folders": {},
+  "entries": {
+    "The Chill": {
+      "name": "The Chill",
+      "attitude": "Sit back, relax, and get +1d6 to all your actions. Things just tend to work out.\n(This puppy can’t be shared with teammates. They’re too busy to enjoy it, anyways.)",
+      "styleBonus": "ease or flow",
+      "specialGear": "something you found on your way here",
+      "specialTraitName": "Quirk",
+      "specialTraitDesc": "For some weird reason, you are good at"
+    },
+    "The Grit": {
+      "name": "The Grit",
+      "attitude": "Describe how your grit helps your action, then boost or kick as needed. Also, refill 1 attitude whenever you fail any action. When the going gets tough, ya know?",
+      "styleBonus": "toughness or focus",
+      "specialGear": "something everyone else forgot",
+      "specialTraitName": "Skill",
+      "specialTraitDesc": "You’ve spent hours and hours practicing"
+    },
+    "The Guts": {
+      "name": "The Guts",
+      "attitude": "Describe how your guts help your action, then boost or kick as needed. Also, refill 1 attitude whenever you attempt a trick, even if you fail. Feel the rush?",
+      "styleBonus": "boldness or risk-taking",
+      "specialGear": "something you're not supposed to have",
+      "specialTraitName": "Raw Talent",
+      "specialTraitDesc": "You've always just been amazing at"
+    },
+    "The Heart": {
+      "name": "The Heart",
+      "attitude": "Describe how your heart helps your action, then boost or kick as needed. Also, anytime you (or a teammate you’re helping) succeed on any action, refill 1 attitude.",
+      "styleBonus": "passon or empathy",
+      "specialGear": "something from someone special",
+      "specialTraitName": "Passion",
+      "specialTraitDesc": "You care a lot about"
+    },
+    "The Smarts": {
+      "name": "The Smarts",
+      "attitude": "Describe how your smarts help your action, then boost or kick as needed. Also, refill 1 attitude when you or a nearby teammate fails an action. You learn from failure.",
+      "styleBonus": "curiosity or creativity",
+      "specialGear": "a work-in-progress",
+      "specialTraitName": "Know-How",
+      "specialTraitDesc": "You know everything about"
+    }
+  }
+}
