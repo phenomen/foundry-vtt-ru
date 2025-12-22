@@ -36,20 +36,20 @@ const RANKS = {
 };
 
 const RANGES = {
-  Self: "на себя",
-  Touch: "касание",
+  "Self": "на себя",
+  "Touch": "касание",
   "Cone Template": "конусный шаблон",
   "Small Blast Template": "малый шаблон",
   "Medium Blast Template": "средний шаблон",
   "Large Blast Template": "большой шаблон",
-  Sm: "СМК",
+  "Sm": "СМК",
   "Sm x 2": "СМК×2",
   "Smarts x5 (Sound); Smarts (Silence)": "СМК×5 (звук); СМК (тишина)",
 };
 
 const DURATIONS = {
-  Instant: "мгновенное",
-  Special: "особое",
+  "Instant": "мгновенное",
+  "Special": "особое",
   "One Round": "1 раунд",
   "One Minute": "1 минута",
   5: "5 минут",

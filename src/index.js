@@ -16,19 +16,19 @@ Hooks.once("init", async () => {
 
   /* Добавление шрифтов с кириллицей */
   const cyrillicFonts = {
-    Beaufort: {
+    "Beaufort": {
       editor: true,
       fonts: [],
     },
-    Exocet: {
+    "Exocet": {
       editor: true,
       fonts: [],
     },
-    GWENT: {
+    "GWENT": {
       editor: true,
       fonts: [],
     },
-    Manuskript: {
+    "Manuskript": {
       editor: true,
       fonts: [],
     },
@@ -48,7 +48,7 @@ Hooks.once("init", async () => {
       editor: true,
       fonts: [],
     },
-    Roboto: {
+    "Roboto": {
       editor: true,
       fonts: [],
     },

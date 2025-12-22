@@ -1,11 +1,13 @@
 import { defineConfig } from "vite";
+import { id } from "./public/module.json";
 
 const config = defineConfig({
   build: {
-    outDir: "ru-ru",
+    outDir: id,
     emptyOutDir: true,
+    minify: "oxc",
     lib: {
-      name: "ru-ru",
+      name: id,
       entry: "src/index.js",
       formats: ["es"],
       sourcemap: false,
@@ -15,6 +17,7 @@ const config = defineConfig({
         entryFileNames: "esm/[name].js",
         chunkFileNames: "esm/[name].js",
       },
+      external: ["../../babele/script/converters.js"],
     },
   },
 });
