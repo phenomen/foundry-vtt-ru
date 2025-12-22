@@ -4,7 +4,6 @@
 }
 
 .slugblaster {
-
   .window-title,
   .header-button,
   label {
@@ -13,9 +12,25 @@
 }
 
 .slugblaster {
-
   h2,
   h3 {
-    font-weight: 500;
+    font-weight: 400;
+    opacity: 1;
+    color: oklch(64.5% 0.246 16.439);
+  }
+
+  input,
+  textarea {
+    border: 0px;
+    border-bottom: 1px solid #9d9c93;
+  }
+
+  label {
+    color: oklch(76.5% 0.177 163.223);
+    opacity: 1;
+  }
+
+  .slugblasterBeats li {
+    opacity: 1;
   }
 }
