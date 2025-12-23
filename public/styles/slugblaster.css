@@ -21,8 +21,11 @@
 
   input,
   textarea {
-    border: 0px;
-    border-bottom: 1px solid #9d9c93;
+    font-family: var(--font-sans-condensed);
+  }
+
+  input#name {
+    color: oklch(82.8% 0.189 84.429);
   }
 
   label {
