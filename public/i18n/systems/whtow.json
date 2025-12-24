@@ -1,18 +1,18 @@
 {
   "TYPES.Actor.character": " Персонаж игрока",
-  "TYPES.Actor.npc": " Персонаж игрока",
+  "TYPES.Actor.npc": " Персонаж ведущего",
   "TYPES.Actor.vehicle": "Транспортные средства",
   "TYPES.Actor.party": "Группа",
 
   "TYPES.Item.weapon": "Оружие",
   "TYPES.Item.talent": "Талант",
-  "TYPES.Item.lore": "Знания",
-  "TYPES.Item.origin": "Происхождения",
+  "TYPES.Item.lore": "Знание",
+  "TYPES.Item.origin": "Происхождение",
   "TYPES.Item.blessing": "Благословение",
-  "TYPES.Item.toolKit": "Инструменты / наборы",
-  "TYPES.Item.tool": "Инструменты",
-  "TYPES.Item.corruption": "Пути осквернения",
-  "TYPES.Item.spell": "Заклинания",
+  "TYPES.Item.toolKit": "Инструмент / набор",
+  "TYPES.Item.tool": "Инструмент",
+  "TYPES.Item.corruption": "Путь скверны",
+  "TYPES.Item.spell": "Заклинание",
   "TYPES.Item.wound": "Рана",
   "TYPES.Item.trapping": "Имущество",
   "TYPES.Item.career": "Карьера",
@@ -281,102 +281,102 @@
       "OptionalSwaps": "Опциональные замены",
       "Identifier": "Идентификатор",
 
-      "ExcludeStaggeredOptions": "Exclude Staggered Options",
-      "FallProne": "Fall Prone",
-      "GiveGround": "Give Ground",
-      "TakeWound": "Take Wound",
+      "ExcludeStaggeredOptions": "не учитывать состояние ошеломления",
+      "FallProne": "Сбит с ног",
+      "GiveGround": "Уступить позицию",
+      "TakeWound": "Получить рану",
 
-      "AddedItems": "Added Items",
-      "AddedEffects": "Added Effects",
+      "AddedItems": "Добавить предмет",
+      "AddedEffects": "Добавить эффект",
 
-      "Mount": "Mount",
-      "Dismount": "Dismount",
-      "RemoveMount": "Remove Mount",
+      "Mount": "Оседлать",
+      "Dismount": "Спешиться",
+      "RemoveMount": "Удалить скакуна",
 
-      "Faults": "Faults",
-      "Occupants": "Occupants",
-      "Animals": "Animals",
+      "Faults": "Повреждения",
+      "Occupants": "Пассажиры",
+      "Animals": "Животные",
 
-      "RowCrew": "Row Crew",
-      "SailCrew": "Sail Crew",
+      "RowCrew": "Экипаж для гребли",
+      "SailCrew": "Экипаж для парусов",
 
-      "SpeedRow": "Speed (Row)",
-      "SpeedSail": "Speed (Sail)",
+      "SpeedRow": "Скорость (гребля)",
+      "SpeedSail": "Скорость (парус)",
 
-      "PreventStaggeredOption": "Prevent Staggered Option"
+      "PreventStaggeredOption": "Блокировать действие ошеломления"
     },
 
     "Action": {
-      "Aim": "Aim",
-      "Help": "Help",
-      "Improvise": "Improvise",
-      "Manoeuvre": "Manoeuvre",
-      "Recover": "Recover"
+      "Aim": "Прицеливание",
+      "Help": "Помощь",
+      "Improvise": "Импровизация",
+      "Manoeuvre": "Манёвр",
+      "Recover": "Восстановление"
     },
 
-    "TableSetting.wounds": "Wounds",
-    "TableSetting.miscast": "Miscast",
-    "TableSetting.faults": "Miscast",
+    "TableSetting.wounds": "Раны",
+    "TableSetting.miscast": "Магическая отдача",
+    "TableSetting.faults": "Магическая отдача",
 
-    "Setting.TableSettings": "Table Settings",
-    "Setting.TableConfigure": "Configure Tables",
-    "Setting.TableSettingsHint": "Configure what tables to use by the system.",
+    "Setting.TableSettings": "Параметры таблицы",
+    "Setting.TableConfigure": "Настройка таблиц",
+    "Setting.TableSettingsHint": "Определите, какие таблицы будут использоваться системой.",
 
     "Speeds": {
-      "Slow": "Slow",
-      "Normal": "Normal",
-      "Fast": "Fast"
+      "Slow": "Медленная",
+      "Normal": "Нормальная",
+      "Fast": "Быстрая"
     },
 
     "MagicLore": {
-      "Battle": "Battle",
-      "Elementalism": "Elementalism",
-      "Illusion": "Illusion",
-      "Necromancy": "Necromancy",
-      "Daemonology": "Daemonology",
-      "Other": "Other"
+      "Battle": "Боевая",
+      "Elementalism": "Элементализм",
+      "Illusion": "Иллюзия",
+      "Necromancy": "Некромантия",
+      "Daemonology": "Демонология",
+      "Other": "Прочее"
     },
 
     "TargetType": {
-      "Self": "Self",
-      "Creature": "Creature",
-      "Zone": "Zone",
-      "Object": "Object"
+      "Self": "Персонаж",
+      "Creature": "Существо",
+      "Zone": "Зона",
+      "Object": "Объект"
     },
 
     "DurationType": {
-      "Immediate": "Immediate",
-      "Instant": "Instant",
-      "Battle": "Battle",
-      "Permanent": "Permanent",
-      "Varies": "Varies",
-      "Turns": "Turns"
+      "Immediate": "Мгновенный",
+      "Instant": "Мгновенно",
+      "Battle": "Бой",
+      "Permanent": "Постоянная",
+      "Varies": "Разная",
+      "Turns": "Ходов"
     },
 
     "Test": {
-      "SkillTest": "{skill} Test",
-      "WeaponTest": "{weapon} Test",
+      "SkillTest": "Проверка {skill}",
+      "WeaponTest": "Проверка {weapon} ",
 
-      "RerollGlorious": "Reroll (Glorious)",
-      "RerollGrim": "Reroll (Grim)",
-      "Reroll": "Reroll"
+      "RerollGlorious": "Повторная проверка (Славная)",
+      "RerollGrim": "Повторная проверка (Мрачная)",
+      "Reroll": "Повторная проверка"
     },
 
     "Chat": {
-      "OpposedTitle": "{attacker} is targeting {defender}",
-      "Unopposed": "Unopposed",
-      "Successes": "{successes} Successes",
-      "Tie": "Tie",
+      "OpposedTitle": "{attacker} атакует {defender}",
+      "Unopposed": "Невстречная",
+      "Successes": "{successes} Успехов",
+      "Tie": "Ничья",
 
-      "Failure": "Failure!",
-      "MarginalSuccesss": "Marginal Successs",
-      "Success": "Success",
-      "TotalSuccess": "Total Success!",
-      "ApplyDamage": "Apply Damage",
-      "ApplyNumDamage": "Apply {damage} Damage",
-      "Potency": "Potency",
+      "Failure": "Провал!",
+      "MarginalSuccesss": "Условный успех",
+      "Success": "Успех",
+      "TotalSuccess": "Полный успех!",
+      "ApplyDamage": "Нанести урон",
+      "ApplyNumDamage": "Нанести {damage} урона",
+      "Potency": "Потенциал",
 
-      "SuffersFault": "<p><strong>{name}</strong> suffers a Fault!</p>",
+      "SuffersFault": "<p><strong>{name}</strong> получает повреждение</p>",
       "TakesWound": "<p><strong>{name}</strong> takes a Wound!</p>",
       "GainsStaggered": "<p><strong>{name}</strong> gets Staggered!</p>",
       "NoEffect": "No Effect!",
