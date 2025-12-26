@@ -1,0 +1,646 @@
+{
+  "TYPES.Actor.character": " Персонаж игрока",
+  "TYPES.Actor.npc": " Персонаж ведущего",
+  "TYPES.Actor.vehicle": "Транспортные средства",
+  "TYPES.Actor.party": "Группа",
+
+  "TYPES.Item.weapon": "Оружие",
+  "TYPES.Item.talent": "Талант",
+  "TYPES.Item.lore": "Знание",
+  "TYPES.Item.origin": "Происхождение",
+  "TYPES.Item.blessing": "Благословение",
+  "TYPES.Item.toolKit": "Инструмент / набор",
+  "TYPES.Item.tool": "Инструмент",
+  "TYPES.Item.corruption": "Путь скверны",
+  "TYPES.Item.spell": "Заклинание",
+  "TYPES.Item.wound": "Рана",
+  "TYPES.Item.trapping": "Имущество",
+  "TYPES.Item.career": "Карьера",
+  "TYPES.Item.armour": "Броня",
+  "TYPES.Item.asset": "Актив",
+  "TYPES.Item.ability": "Способность",
+
+  "TOW": {
+    "CharName": {
+      "WeaponSkill": "Ближний бой",
+      "BallisticSkill": "Дистанционный бой",
+      "Strength": "Сила",
+      "Toughness": "Выносливость",
+      "Initiative": "Инициатива",
+      "Agility": "Проворство",
+      "Reason": "Рассудительность",
+      "Fellowship": "Харизма"
+    },
+
+    "CharAbbrev": {
+      "WeaponSkill": "ББ",
+      "BallisticSkill": "ДБ",
+      "Strength": "С",
+      "Toughness": "В",
+      "Initiative": "И",
+      "Agility": "Пр",
+      "Reason": "Р",
+      "Fellowship": "Х"
+    },
+
+    "SkillName": {
+      "Melee": "Рукопашный бой",
+      "Defence": "Защита",
+      "Shooting": "Стрельба",
+      "Throwing": "Метание",
+      "Brawn": "Мощь",
+      "Toil": "Тяжёлый труд",
+      "Survival": "Выживание",
+      "Endurance": "Стойкость",
+      "Awareness": "Наблюдательность",
+      "Dexterity": "Парирование",
+      "Athletics": "Атлетика",
+      "Stealth": "Скрытность",
+      "Willpower": "Сила воли",
+      "Recall": "Память",
+      "Leadership": "Лидерство",
+      "Charm": "Обаяние"
+    },
+
+    "StatusName": {
+      "Brass": "Медь",
+      "Silver": "Серебро",
+      "Gold": "Золото"
+    },
+
+    "RangeType": {
+      "Close": "Ближняя",
+      "Short": "Короткая",
+      "Medium": "Средняя",
+      "Long": "Дальняя",
+      "Extreme": "Экстремальная"
+    },
+
+    "Melee": "Рукопашный бой",
+    "Brawn": "Мощь",
+    "Shooting": "Стрельба",
+    "Throwing": "Метание",
+
+    "Duration": "Продолжительность",
+    "Target": "Цель",
+    "Range": "Дистанция",
+    "Damage": "Урон",
+
+    "Glorious": "Славная",
+    "Grim": "Мрачная",
+
+    "Advancement": "Развитие",
+
+    "Modifier": "Модификатор",
+    "ModifierConfig": "Настройка модификатора",
+    "MountConfig": "Настройка скакуна",
+
+    "MagicLevel": "Уровень магии",
+
+    "AssetCategory": {
+      "AnimalVehicle": "Животные и транспортные средства",
+      "BuildingEstablishment": "Здания и заведения",
+      "Other": "Прочее"
+    },
+
+    "NPC": {
+      "Minion": "Прислужник",
+      "Brute": "Силач",
+      "Champion": "Чемпион",
+      "Monstrosity": "Чудовище"
+    },
+
+    "Vehicle": {
+      "Land": "Земля",
+      "Water": "Вода"
+    },
+
+    "Sheet": {
+      "Tab": {
+        "Description": "Описание",
+        "Details": "Детали",
+        "Effects": "Эффект",
+
+        "Main": "Основное",
+        "Combat": "Бой",
+        "Magic": "Магия",
+        "Religion": "Религия",
+        "Corruption": "Скверна",
+        "Trappings": "Имущество",
+        "Notes": "Заметки"
+      },
+
+      "MeleeWeapons": "Оружие рукопашного боя",
+      "RangedWeapons": "Дистанционное оружие",
+
+      "Talents": "Таланты",
+      "Lores": "Знания",
+      "Career": "Карьера",
+      "Origin": "Происхождения",
+      "Weapons": "Оружие",
+      "Blessings": "Благословения",
+      "ToolsKits": "Инструменты и наборы",
+      "Armour": "Броня",
+      "Trappings": "Имущество",
+      "Assets": "Активы",
+      "Spells": "Заклинания",
+      "Wounds": "Раны",
+      "Contacts": "Контакты",
+      "CareerTalent": "Талант карьеры",
+      "Res": "Жив.",
+      "Equipped": "Надето",
+
+      "Custom": "Особое",
+
+      "Status": "Статус",
+      "Resilience": "Живучесть",
+      "ResilienceModifier": "Модификатор живучести",
+      "Modifier": "Модификатор",
+      "Speed": "Скорость",
+      "SpeedModifier": "Скорость (модификатор)",
+      "Fate": "Судьба",
+
+      "DescriptionPublic": "Описание (общее)",
+      "DescriptionGM": "Описание (ведущий)",
+
+      "Quantity": "Количество",
+      "Cost": "Цена",
+
+      "Damage": "Урон",
+      "DamageModifiers": "Модификаторы урона",
+      "IgnoreArmour": "Игнорирует броню",
+      "Range": "Дистанция",
+      "OptimumRange": "Оптимальная дистанция",
+      "Magical": "Магическая",
+      "Successes": "Успехи",
+
+      "Favour": "Благосклонность",
+      "Prayers": "Молитвы",
+      "Miracles": "Чудеса",
+
+      "Effects": "Эффекты",
+      "TemporaryEffects": "Временные эффекты",
+      "PassiveEffects": "Пассивные эффекты",
+      "DisabledEffects": "Неактивные эффекты",
+      "Source": "Источник",
+      "Careers": "Карьеры",
+      "Origins": "Происхождения",
+      "Attacks": "Атаки",
+      "Abilities": "Способности",
+      "TypicalTrappings": "Типичное имущество",
+
+      "Value": "Значение",
+
+      "FavouredCharacteristics": "Предпочтительные характеристики ",
+      "SkillBonuses": "Бонусы к навыкам",
+
+      "Choices": "Выбор",
+
+      "Starting": "Начальные",
+      "Maximum": "Предельные",
+
+      "Table": "Таблица",
+
+      "Replacements": "Замена",
+      "Gained": "Получено",
+
+      "Group": "Группа",
+      "Healing": "Заживление",
+      "Treated": "Обработана",
+
+      "Brass": "Медь",
+      "Silver": "Серебро",
+      "Gold": "Золото",
+
+      "DefendingAgainst": "Защита от",
+
+      "Experience": "Опыт",
+      "Available": "Доступно",
+      "Spent": "Трата",
+      "Total": "Всего",
+
+      "Characteristic": "Характеристики",
+      "Base": "Базовая",
+      "Skill": "Навык",
+      "Advances": "Шаги развития",
+      "Item": "Предмет",
+      "Reason": "Рассудительность",
+      "Description": "Описание",
+      "XP": "ПО",
+      "Adv.": "Разв.",
+      "Type": "Тип",
+      "Category": "Категория",
+
+      "Characteristics": "Характеристики",
+      "Skills": "Навыки",
+      "Items": "Предметы",
+      "Log": "Вход",
+      "Offsets": "Смещение",
+      "Improvement": "Шаги развития",
+
+      "CV": "ПС",
+      "Target": "Цель",
+      "Duration": "Продолжительность",
+
+      "MiscastPool": "Пул магической отдачи ",
+
+      "Dispose": "Избавиться ",
+      "Miscast": "Магическая отдача",
+      "Potency": "Потенциал",
+
+      "Self": "Персонаж",
+      "Opposed": "Встречная проверка",
+      "Dice": "Кость",
+
+      "BlessedBy": "Благословлённый",
+      "PerformMiracle": "Свершение чуда",
+      "RegainMiracle": "Восстановление чуда",
+      "PurchaseMiracleUse": "Использование приобретённого чуда",
+
+      "Corruption": "Скверна",
+      "Vulnerable": "Уязвимый",
+      "Tarnished": "Запятнанный",
+      "Tainted": "Осквернённый",
+      "Damned": "Проклятый",
+
+      "PromptCorruptionTest": "Проверка предложения скверны",
+      "OfferTemptation": "Предложить искушение",
+
+      "NPCType": "Тип",
+      "Defeated": "Поражение",
+
+      "XWounds": "{раны} Ран",
+      "XYWounds": "{x}-{y} Ран",
+
+      "ToggleEditing": "Режим редактирования",
+
+      "ChooseSkill": "Выбери навык",
+      "SkillOptions": "Выбор навыков",
+
+      "RequiredSwaps": "Необходимые замены",
+      "OptionalSwaps": "Опциональные замены",
+      "Identifier": "Идентификатор",
+
+      "ExcludeStaggeredOptions": "не учитывать состояние ошеломления",
+      "FallProne": "Сбит с ног",
+      "GiveGround": "Уступить позицию",
+      "TakeWound": "Получить рану",
+
+      "AddedItems": "Добавить предмет",
+      "AddedEffects": "Добавить эффект",
+
+      "Mount": "Оседлать",
+      "Dismount": "Спешиться",
+      "RemoveMount": "Удалить скакуна",
+
+      "Faults": "Повреждения",
+      "Occupants": "Пассажиры",
+      "Animals": "Животные",
+
+      "RowCrew": "Экипаж для гребли",
+      "SailCrew": "Экипаж для парусов",
+
+      "SpeedRow": "Скорость (гребля)",
+      "SpeedSail": "Скорость (парус)",
+
+      "PreventStaggeredOption": "Блокировать действие ошеломления"
+    },
+
+    "Action": {
+      "Aim": "Прицеливание",
+      "Help": "Помощь",
+      "Improvise": "Импровизация",
+      "Manoeuvre": "Манёвр",
+      "Recover": "Восстановление"
+    },
+
+    "TableSetting.wounds": "Раны",
+    "TableSetting.miscast": "Магическая отдача",
+    "TableSetting.faults": "Магическая отдача",
+
+    "Setting.TableSettings": "Параметры таблицы",
+    "Setting.TableConfigure": "Настройка таблиц",
+    "Setting.TableSettingsHint": "Определите, какие таблицы будут использоваться системой.",
+
+    "Speeds": {
+      "Slow": "Медленная",
+      "Normal": "Нормальная",
+      "Fast": "Быстрая"
+    },
+
+    "MagicLore": {
+      "Battle": "Боевая",
+      "Elementalism": "Элементализм",
+      "Illusion": "Иллюзия",
+      "Necromancy": "Некромантия",
+      "Daemonology": "Демонология",
+      "Other": "Прочее"
+    },
+
+    "TargetType": {
+      "Self": "Персонаж",
+      "Creature": "Существо",
+      "Zone": "Зона",
+      "Object": "Объект"
+    },
+
+    "DurationType": {
+      "Immediate": "Мгновенный",
+      "Instant": "Мгновенно",
+      "Battle": "Бой",
+      "Permanent": "Постоянная",
+      "Varies": "Разная",
+      "Turns": "Ходов"
+    },
+
+    "Test": {
+      "SkillTest": "Проверка {skill}",
+      "WeaponTest": "Проверка {weapon} ",
+
+      "RerollGlorious": "Повторная проверка (Славная)",
+      "RerollGrim": "Повторная проверка (Мрачная)",
+      "Reroll": "Повторная проверка"
+    },
+
+    "Chat": {
+      "OpposedTitle": "{attacker} атакует {defender}",
+      "Unopposed": "Невстречная",
+      "Successes": "{successes} Успехов",
+      "Tie": "Ничья",
+
+      "Failure": "Провал!",
+      "MarginalSuccesss": "Условный успех",
+      "Success": "Успех",
+      "TotalSuccess": "Полный успех!",
+      "ApplyDamage": "Нанести урон",
+      "ApplyNumDamage": "Нанести {damage} урона",
+      "Potency": "Потенциал",
+
+      "SuffersFault": "<p><strong>{name}</strong> получает повреждение</p>",
+      "TakesWound": "<p><strong>{name}</strong> получает Рану</p>",
+      "GainsStaggered": "<p><strong>{name}</strong> получает Ошеломление!</p>",
+      "NoEffect": "Нет эффекта!",
+      "AppliedDamage": "Нанесение урона",
+
+      "DisposingMiscasts": "Избавление от магической отдачи",
+      "DisposingMiscastsCombat": "Использовать Восстановление для избавления от костей магической отдачи",
+      "DisposingMiscastsNonCombat": "Удалены  {miscasts} костей магической отдачи",
+
+      "Damage": "Урон",
+
+      "FavouredBy": "Предпочтительная {name}",
+      "MiracleOf": "Чудо {name}",
+      "Experience": "Опыт",
+      "Receive": "Получить",
+
+      "BuySuccessful": "<p>Куплен <strong>{item}</strong> ({cost})</p>"
+    },
+
+    "WoundHealing": {
+      "CatchYourBreath": "Перевести дух",
+      "Respite": "Ночной отдых",
+      "RestRecovery": "Отдых и восстановление",
+      "Surgery": "Лечение, отдых и восстановление",
+      "NA": "Нет"
+    },
+
+    "Tooltips": {
+      "ToggleEffect": "Переключаемый эффект",
+      "CannotDeleteItemEffect": "Этот эффект исходит от Предмета на этом Актере. Удалите сам Предмет или эффект в листе предмета",
+      "Mixing": "Смешение Ветров",
+      "WearingArmour": "Надеть броню"
+    },
+
+    "ConditionName": {
+      "Ablaze": "Охвачен огнём",
+      "Blinded": "Ослеплён",
+      "Broken": "Сломлен",
+      "Burdened": "Обременён",
+      "CriticallyInjured": "Критически ранен",
+      "Deafened": "Оглушён",
+      "Defenceless": "Беззащитен",
+      "Distracted": "Отвлечён",
+      "Drained": "Истощён",
+      "Prone": "Сбит с ног",
+      "Staggered": "Ошеломлён",
+      "Dead": "Смерть"
+    },
+
+    "Dialog": {
+      "BonusDice": "Бонусная кость",
+      "DicePenalty": "Штрафная кость",
+      "Bonus": "Бонус",
+      "Penalty": "Штраф",
+      "Charging": "Атака с разгона",
+      "Damage": "Урон",
+      "Mixing": "Смешение Ветров",
+
+      "Grim": "Мрачная",
+      "Normal": "Обычная",
+      "Glorious": "Славная",
+
+      "Staggered": "Ошеломлён!",
+      "StaggeredPrompt": "Вы были снова ошеломили! Выберите один из следующих вариантов.",
+
+      "RegainMiracleTitle": "Восстановление чуда",
+      "RegainMiracle": "Потратить 4 ПО, чтобы восстановить способность творить Чудо",
+      "Temptation": "Предложить Искушение",
+      "Accept": "Принять",
+      "Refuse": "Отказаться",
+      "Offer": "Принять",
+      "AnOffering": "Дар...",
+      "ChooseSkills": "Выбери навык",
+      "ChooseSkillsContent": "Выберите {number} Навыков для увеличения на +1",
+      "ApplyCareer": "Применить карьеру к этому актёру?",
+      "ApplyOrigin": "Применить Происхождения к этому Актеру?"
+    },
+
+    "Error": {
+      "MiscastReroll": "Повторная проверка магической отдачи невозможна",
+      "Experience": "Значения опыта должны быть числовыми",
+      "ActorsXP": "Выберите токены, чтобы начислить опыт",
+      "CharAssigned": "Персонаж не назначен. Зайдите в меню настройки игрока, чтобы назначить персонажа.",
+      "NoSpellsToCast": "Нет доступных для сотворения заклинаний",
+      "NoCoin": "Недостаточно монет, чтобы купить этот предмет!",
+      "NoACtorBuyItem": "Нет связанного актёра для покупки этого предмета."
+    },
+
+    "Zone": {
+      "Cover": "Укрытие",
+      "CoverConcealment": " Укрытие / маскировка ",
+      "DifficultTerrain": "Пересечённая местность",
+      "Hazard": " Опасность"
+    }
+  },
+
+  "WH": {
+    "Trigger": {
+      "ComputeOwnedItem": "Подсчитать имущество "
+    },
+
+    "TransferType": {
+      "Rider": "Всадник"
+    },
+
+    "Models": {
+      "weapon": {
+        "FIELDS": {
+          "skill": {
+            "label": "Навык"
+          },
+          "grip": {
+            "label": "Хват"
+          },
+          "traits": {
+            "label": "Черты"
+          },
+          "reload.value": {
+            "label": "Успехов до перезарядки"
+          }
+        }
+      },
+      "ability": {
+        "FIELDS": {
+          "attack": {
+            "skill": {
+              "label": "Атакующий навык"
+            },
+            "traits": {
+              "label": "Черты"
+            },
+            "grip:": {
+              "label": "Хват"
+            }
+          }
+        }
+      },
+      "talent": {
+        "FIELDS": {
+          "cost": {
+            "label": "Цена ПО"
+          },
+          "requirement": {
+            "text.label": "Требование",
+            "script.label": "Скрипт требований"
+          }
+        }
+      },
+      "lore": {
+        "FIELDS": {
+          "category": {
+            "label": "Категория"
+          }
+        }
+      },
+      "armour": {
+        "FIELDS": {
+          "resilience": {
+            "label": "Живучесть"
+          },
+          "traits": {
+            "label": "Черты"
+          }
+        }
+      },
+      "spell": {
+        "FIELDS": {
+          "cv": {
+            "label": "Порог сотворения"
+          },
+          "lore": {
+            "label": "Знание"
+          },
+          "target": {
+            "value": {
+              "label": "Цель"
+            }
+          },
+          "range": {
+            "value": {
+              "label": "Дистанция"
+            }
+          },
+          "duration": {
+            "value": {
+              "label": "Продолжительность"
+            }
+          },
+          "damage": {
+            "formula": {
+              "label": "Урон"
+            }
+          }
+        }
+      },
+      "blessing": {
+        "FIELDS": {}
+      },
+      "origin": {
+        "FIELDS": {
+          "fate": {
+            "label": "Судьба"
+          },
+          "talents": {
+            "rolls": {
+              "label": "Броски"
+            },
+            "keep": {
+              "label": "Сохранить"
+            }
+          }
+        }
+      },
+      "career": {
+        "FIELDS": {
+          "status": {
+            "label": "Статус"
+          }
+        }
+      },
+      "trapping": {
+        "FIELDS": {
+          "equippable": {
+            "label": "Надеваемое"
+          }
+        }
+      },
+      "asset": {
+        "FIELDS": {
+          "category": {
+            "label": "Категория"
+          }
+        }
+      },
+      "toolKit": {
+        "FIELDS": {
+          "tests": {
+            "label": "Соответствующая проверка"
+          },
+          "lore": {
+            "label": "Соответствующие знание"
+          }
+        }
+      },
+      "wound": {
+        "FIELDS": {
+          "healing": {
+            "label": "Заживление"
+          }
+        }
+      }
+    },
+    "Components": {
+      "Locational": {
+        "FIELDS": {
+          "prompt": {
+            "label": "Определить зону попадания",
+            "hint": "Выбрать зону попадания при добавлении актёру"
+          },
+          "location.value": {
+            "label": "Место"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,40 +1,40 @@
 @font-face {
-	font-family: "Caslon Antique";
-	src: url("../fonts/Caslon_Antique/caslon-antique.woff2") format("woff2");
+  font-family: "Caslon Antique";
+  src: url("../fonts/Caslon_Antique/caslon-antique.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: "Caslon Antique";
-	src: url("../fonts/Caslon_Antique/caslon-antique-Italic.woff2") format("woff2");
-	font-style: italic;
+  font-family: "Caslon Antique";
+  src: url("../fonts/Caslon_Antique/caslon-antique-Italic.woff2") format("woff2");
+  font-style: italic;
 }
 
 @font-face {
-	font-family: "Caslon Antique";
-	src: url("../fonts/Caslon_Antique/caslon-antique-bold.woff2") format("woff2");
-	font-weight: bold;
+  font-family: "Caslon Antique";
+  src: url("../fonts/Caslon_Antique/caslon-antique-bold.woff2") format("woff2");
+  font-weight: bold;
 }
 
 @font-face {
-	font-family: "Caslon Antique";
-	src: url("../fonts/Caslon_Antique/caslon-antique-boldItalic.woff2") format("woff2");
-	font-style: italic;
-	font-weight: bold;
+  font-family: "Caslon Antique";
+  src: url("../fonts/Caslon_Antique/caslon-antique-boldItalic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: bold;
 }
 
 :root {
-	--font-text: var(--font-sans-condensed);
-	--font-header: "Caslon Antique", sans-serif;
+  --font-text: var(--font-sans-condensed);
+  --font-header: "Caslon Antique", sans-serif;
 }
 
 .dark-heresy label,
 .dark-heresy span {
-	font-size: 0.9rem;
-	font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .dark-heresy button {
-	font-weight: 500;
+  font-weight: 500;
 }
 
 .dark-heresy .stats .characteristics .characteristic .name,
@@ -43,58 +43,58 @@
 .dark-heresy .stats .skills .skill .name,
 .dark-heresy .roll-characteristic,
 .dark-heresy .combat .armour .armour-row .part .name {
-	font-size: 0.8rem;
-	font-weight: 500;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 .dark-heresy .tabs .item {
-	font-size: 0.9rem;
-	font-family: var(--font-header);
+  font-size: 0.9rem;
+  font-family: var(--font-header);
 }
 
 .dark-heresy h1 {
-	font-family: var(--font-header);
+  font-family: var(--font-header);
 }
 
 .dark-heresy .stats .insanities .item-list .header .name {
-	font-weight: 500;
+  font-weight: 500;
 }
 
 .dark-heresy .item-list .header {
-	font-family: var(--font-sans-condensed);
-	font-weight: 500;
-	font-size: 0.8rem;
+  font-family: var(--font-sans-condensed);
+  font-weight: 500;
+  font-size: 0.8rem;
 }
 
 .dark-heresy input[type="number"],
 .dark-heresy input[type="text"],
 .dark-heresy select,
 .dark-heresy textarea {
-	font-family: var(--font-sans-condensed);
+  font-family: var(--font-sans-condensed);
 }
 
 .dark-heresy .progression .experience .information label {
-	font-family: var(--font-sans-condensed);
-	font-weight: 500;
-	font-size: 0.75rem;
+  font-family: var(--font-sans-condensed);
+  font-weight: 500;
+  font-size: 0.75rem;
 }
 
 .dark-heresy .combat .psychic-powers .information .rating {
-	flex-basis: 45%;
+  flex-basis: 45%;
 }
 
 .dark-heresy .fate label,
 .dark-heresy .fatigue label {
-	display: flex;
-	flex-basis: 100%;
-	width: 100%;
+  display: flex;
+  flex-basis: 100%;
+  width: 100%;
 }
 
 .dark-heresy .notes-tab .information .full {
-	flex-basis: 95%;
+  flex-basis: 95%;
 }
 
 .dark-heresy .notes-tab .information .information-row input,
 .dark-heresy .notes-tab .information .information-row .margin {
-	margin-left: 3px;
+  margin-left: 3px;
 }

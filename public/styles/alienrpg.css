@@ -1,119 +1,119 @@
 /* FONTS */
 @font-face {
-	font-family: "Changa";
-	src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.woff2") format("woff2");
-	font-weight: 400;
-	font-style: normal;
+  font-family: "Changa";
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: "Changa";
-	src: url("../fonts/Roboto_Condensed/RobotoCondensed-Italic.woff2") format("woff2");
-	font-weight: 400;
-	font-style: italic;
+  font-family: "Changa";
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
 }
 
 /* ALIEN */
 
 h3.Power1.resource-label {
-	font-size: 0.9em;
+  font-size: 0.9em;
 }
 
 .chat-message {
-	font-weight: 400;
+  font-weight: 400;
 }
 
 /* CRT */
 
 .creature-attack-roll {
-	width: 260px !important;
-	height: 40px !important;
-	border-radius: 3px !important;
-	text-shadow: 0 0 #00000000 !important;
-	color: #00000000 !important;
-	background-image: url(../images/alien/alien_crt_roll-attack.webp) no-repeat top left;
+  width: 260px !important;
+  height: 40px !important;
+  border-radius: 3px !important;
+  text-shadow: 0 0 #00000000 !important;
+  color: #00000000 !important;
+  background-image: url(../images/alien/alien_crt_roll-attack.webp) no-repeat top left;
 }
 
 .creature-attack-roll:hover {
-	border-radius: 3px !important;
-	background-color: var(--aliendarkergreen) !important;
-	text-shadow: 0 0 #00000000 !important;
-	color: #00000000 !important;
-	background-image: url(../images/alien/alien_crt_roll-attack_hover.webp) no-repeat top left;
+  border-radius: 3px !important;
+  background-color: var(--aliendarkergreen) !important;
+  text-shadow: 0 0 #00000000 !important;
+  color: #00000000 !important;
+  background-image: url(../images/alien/alien_crt_roll-attack_hover.webp) no-repeat top left;
 }
 
 .alien-Push-button {
-	height: 40px;
-	margin-top: 5px;
-	margin-left: 1px;
-	box-shadow: 0 0 5px var(--aliendarkergreen);
-	border-radius: 3px;
-	background-image: url(../images/alien/alien_crt_push-button.webp) no-repeat top left;
-	color: #00000000;
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 1px;
+  box-shadow: 0 0 5px var(--aliendarkergreen);
+  border-radius: 3px;
+  background-image: url(../images/alien/alien_crt_push-button.webp) no-repeat top left;
+  color: #00000000;
 }
 
 .alien-Push-button:hover {
-	border-radius: 3px;
-	box-shadow: 0 0 5px var(--aliendarkergreen);
-	background-color: inherit;
-	background-image: url(../images/alien/alien_crt_push-button_hover.webp) no-repeat top left;
-	color: #00000000;
+  border-radius: 3px;
+  box-shadow: 0 0 5px var(--aliendarkergreen);
+  background-color: inherit;
+  background-image: url(../images/alien/alien_crt_push-button_hover.webp) no-repeat top left;
+  color: #00000000;
 }
 
 :root {
-	--alienfont: "OCR-A", sans-serif !important;
-	--alienchatfont: var(--font-sans) !important;
+  --alienfont: "OCR-A", sans-serif !important;
+  --alienchatfont: var(--font-sans) !important;
 }
 
 .alienrpg textarea {
-	font-family: var(--alienfont);
+  font-family: var(--alienfont);
 }
 
 .alienrpg .dots.radiation {
-	padding-bottom: 40px !important;
+  padding-bottom: 40px !important;
 }
 
 .alienrpg .dots_conditions .dots {
-	height: 30px !important;
+  height: 30px !important;
 }
 
 .tooltip {
-	font-size: var(--font-size-14) !important;
+  font-size: var(--font-size-14) !important;
 }
 
 #panel,
 #panel ol,
 #panel li {
-	font-size: 15px !important;
-	color: white !important;
+  font-size: 15px !important;
+  color: white !important;
 }
 
 .message-sender {
-	color: white !important;
+  color: white !important;
 }
 
 .message-metadata {
-	color: white !important;
+  color: white !important;
 }
 
 .message-content h2 {
-	font-family: var(--alienfont) !important;
-	font-size: 20px !important;
+  font-family: var(--alienfont) !important;
+  font-size: 20px !important;
 }
 
 a.inline-roll {
-	background: none !important;
-	border: none !important;
+  background: none !important;
+  border: none !important;
 }
 
 .chat-message .table-draw .table-results .table-result .result-text {
-	color: white !important;
+  color: white !important;
 }
 
 .panicked-textarea {
-	margin-left: 40px !important;
-	color: black !important;
-	font-weight: bold;
+  margin-left: 40px !important;
+  color: black !important;
+  font-weight: bold;
 }
 
 .alienrpg .maxboxsize,
@@ -122,25 +122,25 @@ a.inline-roll {
 .textbox3,
 .textbox4,
 .biog-full {
-	color: white !important;
+  color: white !important;
 }
 
 #pause,
 #menu {
-	font-family: var(--alienfont) !important;
-	font-variant: small-caps !important;
-	text-transform: uppercase !important;
+  font-family: var(--alienfont) !important;
+  font-variant: small-caps !important;
+  text-transform: uppercase !important;
 }
 
 #pause h3 {
-	color: var(--aliengreen) !important;
+  color: var(--aliengreen) !important;
 }
 
 .alienrpg .item-header {
-	font-weight: 700 !important;
+  font-weight: 700 !important;
 }
 
 form .form-group label {
-	font-family: var(--font-sans-condensed);
-	font-size: 15px;
+  font-family: var(--font-sans-condensed);
+  font-size: 15px;
 }

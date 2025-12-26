@@ -1,39 +1,39 @@
 {
-	"Actor": {
-		"description": "system.description",
-		"items": {
-			"path": "items",
-			"converter": "fromPack"
-		},
-		"tokenName": "prototypeToken.name"
-	},
-	"Item": {
-		"description": "system.description",
-		"requirement": "system.requirement",
-		"prerequisite": "system.prerequisite",
-		"boons": {
-			"path": "system.boons",
-			"converter": "translateItemList"
-		},
-		"banes": {
-			"path": "system.banes",
-			"converter": "translateItemList"
-		},
-		"school": {
-			"path": "system.school",
-			"converter": "translateItemList"
-		},
-		"skills": {
-			"path": "system.skills",
-			"converter": "translateItemList"
-		},
-		"skill": {
-			"path": "system.skill.name",
-			"converter": "translateItemList"
-		},
-		"abilities": {
-			"path": "system.abilities",
-			"converter": "translateItemList"
-		}
-	}
+  "Actor": {
+    "description": "system.description",
+    "items": {
+      "path": "items",
+      "converter": "fromPack"
+    },
+    "tokenName": "prototypeToken.name"
+  },
+  "Item": {
+    "description": "system.description",
+    "requirement": "system.requirement",
+    "prerequisite": "system.prerequisite",
+    "boons": {
+      "path": "system.boons",
+      "converter": "translateItemList"
+    },
+    "banes": {
+      "path": "system.banes",
+      "converter": "translateItemList"
+    },
+    "school": {
+      "path": "system.school",
+      "converter": "translateItemList"
+    },
+    "skills": {
+      "path": "system.skills",
+      "converter": "translateItemList"
+    },
+    "skill": {
+      "path": "system.skill.name",
+      "converter": "translateItemList"
+    },
+    "abilities": {
+      "path": "system.abilities",
+      "converter": "translateItemList"
+    }
+  }
 }

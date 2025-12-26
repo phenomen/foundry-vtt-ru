@@ -1,1275 +1,1309 @@
 {
-	"GAME.paused": "Ты не пройдёшь!",
-	"TYPES": {
-		"Actor": {
-			"community": "Отряд",
-			"character": "Персонаж игрока",
-			"npc": "Персонаж ведущего",
-			"lore": "Персонаж хранителя",
-			"adversary": "Враг"
-		},
-		"Item": {
-			"trait": "Черта",
-			"fell-ability": "Зловещая способность",
-			"skill": "Навык",
-			"armour": "Броня",
-			"weapon": "Оружие",
-			"miscellaneous": "Прочее",
-			"reward": "Награда",
-			"virtues": "Качество",
-			"journey-log": "Дневник путешествия",
-			"song": "Песня",
-			"undertaking": "Обязательство",
-			"standing": "Положение"
-		}
-	},
-	"tor2e": {
-		"types": {
-			"distinctiveFeature": "Отличительная черта",
-			"flaw": "Изъян",
-			"trait": "Черта",
-			"fell-ability": "Зловещая способность",
-			"skill": "Навык",
-			"armour": "Броня",
-			"weapon": "Оружие",
-			"miscellaneous": "Прочее",
-			"reward": "Награда",
-			"virtues": "Качество",
-			"journey-log": "Дневник путешествия",
-			"swords": "Мечи",
-			"axes": "Топоры",
-			"brawling": "Рукопашное",
-			"spears": "Копья",
-			"bows": "Луки",
-			"shield": "Щиты",
-			"head": "Шлемы",
-			"leather": "Кожаная",
-			"mail": "Кольчужная"
-		},
-		"actors": {
-			"biography": {
-				"age": "Возраст",
-				"fellowshipFocus": "Узы",
-				"title": "Титул",
-				"years": "лет",
-				"culture": "Культура",
-				"standardOfLiving": "Образ жизни",
-				"culturalBlessing": "Дар культуры",
-				"calling": "Призвание",
-				"shadowPath": "Соблазн Тени"
-			},
-			"sections": {
-				"biography": "Биография",
-				"traits": "Черты",
-				"effects": "Эффекты",
-				"attributes": "Характеристики",
-				"skillGroups": "Категории навыков",
-				"combatProficiencies": "Боевые умения",
-				"commonSkills": "Общие навыки",
-				"weaponSkills": "Боевые навыки",
-				"rewards": "Награды",
-				"virtues": "Качества",
-				"war-gear": "Боевое снаряжение",
-				"equipment-gear": "Походное снаряжение",
-				"resources": "Средства",
-				"combat": "Бой",
-				"fellowship": "Братство",
-				"skillPoints": "Пункты навыков",
-				"reputationPoints": "Пункты репутации",
-				"heroicStature": "Становление героя",
-				"treasure": "Сокровище",
-				"background": "Происхождение",
-				"company": "Отряд",
-				"fellowshipPhase": "Фаза братства",
-				"members": "Участники",
-				"available-members": "Доступные участники",
-				"patrons": "Покровители",
-				"name": "Имя",
-				"location": "Расположение",
-				"connections": "Связи",
-				"travel": "Путешествие",
-				"taleOfYears": "Сказание лет",
-				"songs": "Песни",
-				"undertakings": "Обязательства",
-				"standings": "Положения",
-				"notes": "Заметки",
-				"rating": "Положение",
-				"journey-log": "Дневник путешествия",
-				"occupation": "Профессия"
-			},
-			"details": {
-				"tech": {
-					"alt": "Изображение актёра"
-				}
-			},
-			"fellAbilities": {
-				"title": "Зловещие способности"
-			},
-			"traits": {
-				"distinctiveFeatures": "Отличительные черты",
-				"flaws": "Изъяны"
-			},
-			"combatSkills": {
-				"title": "Боевые навыки"
-			},
-			"skills": {
-				"title": "Навыки",
-				"commonSkills": "Общие навыки",
-				"combatSkills": "Боевые навыки",
-				"relevantSkills": "Полезные навыки",
-				"favoured": "(одар.)"
-			},
-			"types": {
-				"community": {
-					"title": "Отряд"
-				},
-				"lore": {
-					"title": "Знание"
-				},
-				"npc": {
-					"title": "ПХ"
-				},
-				"adversary": {
-					"title": "Враг"
-				},
-				"character": {
-					"title": "Персонаж"
-				}
-			},
-			"faction": {
-				"hostile": "Враг",
-				"friendly": "Друг"
-			},
-			"stats": {
-				"attributeLevel": "Уровень",
-				"damage": {
-					"closedCombat": "Урон ближнего боя",
-					"rangedCombat": "Дистанционный урон"
-				},
-				"hate": "Ненависть",
-				"might": "Мощь",
-				"parry": "Парирование",
-				"noShield": "нет щита",
-				"noHeadgear": "нет шлема",
-				"noArmour": "нет брони",
-				"armour": "Броня",
-				"endurance": "Выносливость",
-				"load": "Нагрузка",
-				"hope": "Надежда",
-				"maxHope": "Макс. надежда",
-				"maxEndurance": "Макс. выносливость",
-				"rating": "Изначально",
-				"travelLoad": "Утомление",
-				"shadow": "Тень",
-				"temporary": "Временная",
-				"shadowScars": "Шрамы Тени",
-				"canBeAPatron": "Может быть покровителем?",
-				"initial": "Изначально",
-				"fellowshipPoints": "Пункты братства",
-				"eyeAwareness": "Внимание Ока",
-				"current": "Текущая",
-				"faction": "Коалиция",
-				"health": "Здоровье",
-				"state": "Состояние",
-				"rest": "Отдых",
-				"max": "Макс.",
-				"min": "Мин.",
-				"bonus": {
-					"combat": {
-						"injury": "Травма от оружия",
-						"piercingBlow": "Пронзающий удар оружия",
-						"heavyBlow": "Урон от сокрушительного удара",
-						"pierce": "Укол"
-					},
-					"defense": {
-						"protection": "Защита",
-						"shieldParry": "Модификатор парирования"
-					},
-					"stats": {
-						"load": "Бонус нагрузки"
-					},
-					"tn": {
-						"strength": "СЛ Силы",
-						"heart": "СЛ Характера",
-						"wits": "СЛ Смекалки"
-					}
-				}
-			},
-			"stateOfHealth": {
-				"weary": "Усталый",
-				"poisoned": "Отравленный",
-				"miserable": "Подавленный",
-				"wounded": "Раненый",
-				"temporary": "Временное"
-			},
-			"combatAttributes": {
-				"damage": "Урон",
-				"ranged": "Дистанционное",
-				"parry": "Парирование",
-				"shield": "Щит",
-				"armour": "Броня",
-				"headGear": "Шлем"
-			},
-			"chat": {
-				"warn": {
-					"title": "Предупреждение",
-					"hint": "Щёлкните правой кнопкой, чтобы вызвать меню и применить изменения.",
-					"weary": "<strong>{name}</strong> должен быть <strong>усталым</strong>.",
-					"miserable": "<strong>{name}</strong> должен быть <strong>подавленным</strong>.",
-					"wearyAndMiserable": "<strong>{name}</strong> должен быть <strong>усталым</strong> и <strong>подавленным</strong>."
-				},
-				"result": {
-					"title": "Результат",
-					"weary": "<strong>{name}</strong> становится <strong>усталым</strong>.",
-					"miserable": "<strong>{name}</strong> становится <strong>подавленный</strong>.",
-					"wearyAndMiserable": "<strong>{name}</strong> становится <strong>усталым</strong> и <strong>подавленным</strong>."
-				}
-			},
-			"community": {
-				"messages": {
-					"setDefaultActorManually": "Вы выбрали Отряд '{name}' основным для этого мира.",
-					"setDefaultActorAutomatically": "Отряд '{name}' автоматически выбран в этом мире основным.",
-					"displayDefaultActor": "Основным Отрядом является '{name}'.",
-					"warnNoCommunityActor": "В этом мире нет Отряда и некоторые функции не будут работать, пока вы его не создадите.",
-					"warnTooManyCommunityActors": "В этом мире несколько Отрядов ({size}). Система не может установить, какой из них вам нужен. Пожалуйста, укажите его вручную в бланке Отряда.",
-					"selectPlayer": "Выбор исполнителя",
-					"select-a-player": "Выберите игрока"
-				},
-				"title": "Отряд",
-				"song": {
-					"title": "Песня",
-					"used": "Исп.",
-					"name": "Название",
-					"type": "Тип"
-				},
-				"undertakings": {
-					"active": "Активно",
-					"type": "Тип",
-					"season": "Время года",
-					"location": "Место",
-					"name": "Название",
-					"yule": "Юль",
-					"free": "Свободно",
-					"calling": "Призвание",
-					"enrichUndertakingAndCreate": "Создание обязательства"
-				},
-				"journey-log": {
-					"year": "Год",
-					"season": "Время года",
-					"from": "Пункт отправления",
-					"to": "Пункт назначения",
-					"duration": "Дней в пути"
-				},
-				"make-default": {
-					"title": "Назначить по умолчанию",
-					"description": "Два персонажа связаны друг с другом",
-					"label": "чтобы назначить это Отрядом по умолчанию."
-				}
-			},
-			"character": {
-				"standings": {
-					"folk": "Народ",
-					"rating": "Известность",
-					"location": "Место",
-					"reputation": "Репутация"
-				}
-			}
-		},
-		"travel": {
-			"roles": {
-				"guide": {
-					"label": "Проводник",
-					"skill": "путешествие"
-				},
-				"scouts": {
-					"label": "Разведчик",
-					"skill": "разведка"
-				},
-				"hunters": {
-					"label": "Охотник",
-					"skill": "охота"
-				},
-				"lookouts": {
-					"label": "Дозорный",
-					"skill": "бдительность"
-				}
-			}
-		},
-		"common": {
-			"type": "Тип",
-			"group": "Группа",
-			"name": "Название",
-			"description": "Описание",
-			"usage": "Применение"
-		},
-		"items": {
-			"common": {
-				"load": "Нагрузка",
-				"equipped": "Надето",
-				"dropped": "Обронено"
-			},
-			"shields": {
-				"none": "Нет",
-				"buckler": "Баклер",
-				"shield": "Щит",
-				"greatShield": "Высокий щит"
-			},
-			"armours": {
-				"title": "Броня",
-				"armour": "Броня",
-				"protection": "Защита",
-				"group": "Тип",
-				"protection-roll": "Проверка защиты",
-				"tech": {
-					"title": "Фоновое изображение, представляющее броню.",
-					"alt": "Изображение брони"
-				}
-			},
-			"miscellaneous": {
-				"title": "Другое",
-				"equipment": "Снаряжение",
-				"tech": {
-					"title": "Фоновое изображение, представляющее разные предметы.",
-					"alt": "Изображение разных предметов"
-				}
-			},
-			"traits": {
-				"title": "Черта",
-				"tech": {
-					"title": "Фоновое изображение, представляющее черту.",
-					"alt": "Изображение черты"
-				}
-			},
-			"standings": {
-				"title": "Положение",
-				"tech": {
-					"title": "Background Image of the Standing Item.",
-					"alt": "Image representing the Standing item."
-				}
-			},
-			"undertakings": {
-				"title": "Обязательство",
-				"tech": {
-					"title": "Background Image of the Undertaking Item.",
-					"alt": "Image representing the Undertaking item."
-				},
-				"messages": {
-					"create": "Create an undertaking",
-					"cancel": "Cancel the creation"
-				},
-				"roll-dialog": {
-					"title": "Enrich your undertaking"
-				}
-			},
-			"songs": {
-				"title": "Песня",
-				"chat": {
-					"character": "Персонаж",
-					"song": "Песня",
-					"song-type": "Тип песни",
-					"successMessage": "The song has been played successfully and <b>{name}</b> ignores the effects of being <b>Weary</b> for the length of the heroic venture."
-				},
-				"event": {
-					"title": "Roll Event",
-					"description": "Some dice rolling on a song."
-				},
-				"roll-dialog": {
-					"title": "Select the song singer"
-				},
-				"tech": {
-					"title": "Background Image of the Song Item representing a some music notes.",
-					"alt": "Image representing the Song item."
-				}
-			},
-			"special-abilities": {
-				"title": "Особенность",
-				"tech": {
-					"title": "Фоновое изображение, представляющее особенность.",
-					"alt": "Изображение особенности"
-				}
-			},
-			"journey-log": {
-				"roll-dialog": {
-					"title": "Выберите тип региона"
-				},
-				"chat": {
-					"region-type": "Тип региона:",
-					"event-type": "Тип события:",
-					"target": "Цель:"
-				},
-				"title": "Дневник путешествия",
-				"company": "Отряд",
-				"mounts": "Ездовые животные",
-				"journal": "Дневник",
-				"journey-path": "Маршрут путешествия",
-				"events": {
-					"title": "Бросок на событие",
-					"name": "События"
-				},
-				"event": {
-					"name": "Событие",
-					"result": "Результат",
-					"target": "Цель",
-					"region": "Регион",
-					"description": "Кости катятся по маршруту путешествия"
-				},
-				"region-types": {
-					"border-land": "Приграничные земли",
-					"wild-land": "Дикие земли",
-					"dark-land": "Темные земли"
-				},
-				"attributes": {
-					"name": "Имя",
-					"role": "Роль",
-					"vigour": "Мощь",
-					"": "Утомление в путешествии",
-					"travel-fatigue": "Утомление в путешествии"
-				},
-				"actions": {
-					"import": {
-						"title": "Добавить данные из актера Отряда (Alt+ЛКМ). Внимание, данные предметов Отряда не будут учтены."
-					},
-					"add-member": {
-						"title": "Добавить персонажа в Отряд (Alt+ЛКМ)."
-					},
-					"delete-member": {
-						"title": "Убрать персонажа из Отряда (Alt+ЛКМ)."
-					},
-					"add-mount": {
-						"title": "Добавить ездовое животное к Отряду (Alt+ЛКМ)."
-					},
-					"delete-mount": {
-						"title": "Убрать ездовое животное из Отряда (Alt+ЛКМ)."
-					},
-					"add-event": {
-						"title": "Добавить событие для Отряда (Alt+ЛКМ)."
-					},
-					"add-event-with-roll": {
-						"title": "Добавить событие в историю отряда с автоматическим броском на событие (Alt+ЛКМ)"
-					},
-					"delete-event": {
-						"title": "Удалить событие (ALT+ЛКМ)."
-					},
-					"re-roll-event": {
-						"title": "Повторить бросок на событие и заменить предыдущий результат (Alt+ЛКМ)"
-					}
-				},
-				"tech": {
-					"title": "Фоновое изображение Дневника путешествия, представляющее путь.",
-					"alt": "Изображение для Дневника путешествия"
-				}
-			},
-			"fellowship": {
-				"title": "Братство",
-				"tech": {
-					"title": "Фоновое изображение, представляющее братство.",
-					"alt": "Изображение братства"
-				}
-			},
-			"skills": {
-				"title": "Навык",
-				"tech": {
-					"title": "Фоновое изображение, представляющее навык.",
-					"alt": "Изображение навыка"
-				}
-			},
-			"virtues": {
-				"title": "Качество",
-				"tech": {
-					"title": "Фоновое изображение, представляющее качество.",
-					"alt": "Изображение качества"
-				}
-			},
-			"rewards": {
-				"title": "Награда",
-				"tech": {
-					"title": "Фоновое изображение, представляющее награду.",
-					"alt": "Изображение награды"
-				}
-			},
-			"weapons": {
-				"title": "Оружие",
-				"tech": {
-					"title": "Фоновое изображение, представляющее оружие.",
-					"alt": "Изображение оружия"
-				}
-			}
-		},
-		"skills": {
-			"groups": {
-				"personality": "Личность",
-				"movement": "Перемещение",
-				"perception": "Восприятие",
-				"survival": "Выживание",
-				"custom": "Особый",
-				"vocation": "Призвание",
-				"combat": "Бой"
-			},
-			"details": {
-				"skillGroup": "Категория навыка",
-				"associatedStat": "Характеристика",
-				"tech": {
-					"alt": "Изображение навыка"
-				}
-			}
-		},
-		"traits": {
-			"groups": {
-				"distinctiveFeature": "Отличительная черта",
-				"flaw": "Изъян"
-			},
-			"details": {
-				"traitGroup": "Категория черты",
-				"tech": {
-					"alt": "Изображение черты"
-				}
-			}
-		},
-		"standings": {
-			"folk": "Folk",
-			"rating": "Rating",
-			"location": "Location",
-			"reputation": "Reputation"
-		},
-		"undertakings": {
-			"active": "Active",
-			"name": "Name",
-			"year": "Year",
-			"season": "Season",
-			"location": "Location",
-			"canBeFree": "Can be Free",
-			"canBeYule": "Yule Only",
-			"yule": "Yule",
-			"free": "Free",
-			"calling": "Calling"
-		},
-		"songs": {
-			"details": {
-				"songGroup": "Song Type"
-			},
-			"groups": {
-				"combat": "Song of Victory",
-				"council": "Lay",
-				"journey": "Walking-Song"
-			}
-		},
-		"reward": {
-			"groups": {
-				"cultural": "Награда культуры",
-				"qualities": "Свойства"
-			},
-			"details": {
-				"type": "Тип награды",
-				"tech": {
-					"alt": "Изображение награды"
-				}
-			}
-		},
-		"virtues": {
-			"groups": {
-				"cultural": "Качества культуры",
-				"masteries": "Изначальное качество"
-			},
-			"details": {
-				"type": "Тип качества",
-				"tech": {
-					"alt": "Изображение качества"
-				}
-			}
-		},
-		"specialAbilities": {
-			"groups": {
-				"hate": "Ненависть",
-				"virtues": "Качества",
-				"valour": "Доблесть"
-			},
-			"details": {
-				"specialAbilityGroup": "Категория особенности",
-				"active": "Активная",
-				"cost": "Цена",
-				"tech": {
-					"alt": "Изображение особой способности"
-				}
-			}
-		},
-		"fellAbilities": {
-			"groups": {
-				"hate": "Ненависть"
-			},
-			"details": {
-				"fellAbilityGroup": "Категория злодеяния",
-				"active": "Активное",
-				"cost": "Цена",
-				"tech": {
-					"alt": "Изображение злодеяния"
-				}
-			}
-		},
-		"weapons": {
-			"groups": {
-				"none": "-",
-				"brawling": "Борьба",
-				"swords": "Мечи",
-				"axes": "Топоры",
-				"bows": "Луки",
-				"spears": "Копья",
-				"bestial": "Зверское"
-			},
-			"details": {
-				"weapon": "Оружие",
-				"damage": "Урон",
-				"edge": "Сложность",
-				"injury": "Травма",
-				"extendedWeaponSelectionHint": "(опционально для особого оружия игроков)",
-				"type": "Type",
-				"group": "Категория",
-				"ranks": "Уровни",
-				"notes": "Заметки",
-				"skill-name": "Навык",
-				"ranged": "Дистанционное",
-				"actions": "Действия",
-				"twoHandWeapon": "Двуручное",
-				"short": "Короткая дистанция",
-				"medium": "Средняя дистанция",
-				"long": "Дальняя дистанция",
-				"description": "Описание",
-				"tech": {
-					"alt": "Изображение оружия",
-					"title": "Фоновое изображение, представляющее иконку особенностей оружия.",
-					"caption": "Качества"
-				}
-			}
-		},
-		"callings": {
-			"groups": {
-				"captain": "Командующий",
-				"scholar": "Учёный",
-				"champion": "Поборник",
-				"treasure-hunter": "Искатель сокровищ",
-				"messenger": "Вестник",
-				"warden": "Страж"
-			}
-		},
-		"armour": {
-			"title": {
-				"group": "Категория брони"
-			},
-			"groups": {
-				"leather": "Кожаный доспех",
-				"mail": "Кольчуга",
-				"head": "Шлем",
-				"shield": "Щит"
-			}
-		},
-		"stats": {
-			"strength": "Сила",
-			"heart": "Характер",
-			"wits": "Смекалка",
-			"favoured": "одарённый"
-		},
-		"statureStats": {
-			"adventurePoints": "Пункты приключений",
-			"total": "всего",
-			"valour": "Доблесть",
-			"wisdom": "Мудрость"
-		},
-		"commonSkills": {
-			"awe": "Впечатление",
-			"enhearten": "Вдохновление",
-			"persuade": "Убеждение",
-			"athletics": "Атлетика",
-			"travel": "Путешествие",
-			"stealth": "Скрытность",
-			"awareness": "Бдительность",
-			"insight": "Проницательность",
-			"scan": "Внимательность",
-			"explore": "Разведка",
-			"healing": "Лечение",
-			"hunting": "Охота",
-			"song": "Песня",
-			"courtesy": "Традиции",
-			"riddle": "Загадка",
-			"craft": "Ремесло",
-			"battle": "Битва",
-			"lore": "Знание"
-		},
-		"combatProficiencies": {
-			"brawling": "Борьба",
-			"axes": "Топоры",
-			"swords": "Мечи",
-			"spears": "Копья",
-			"bows": "Луки"
-		},
-		"standardOfLivingGroups": {
-			"poor": "Бедный",
-			"frugal": "Экономный",
-			"common": "Обычный",
-			"prosperous": "Зажиточный",
-			"rich": "Богатый",
-			"veryRich": "Роскошный"
-		},
-		"skillGroups": {
-			"personality": "Личность",
-			"movement": "Перемещение",
-			"perception": "Восприятие",
-			"survival": "Выживание",
-			"custom": "Особый",
-			"vocation": "Призвание",
-			"combat": "Бой"
-		},
-		"sheet": {
-			"actions": {
-				"rest": {
-					"dialog-box": {
-						"title": "Восстановить пункт(ы) надежды от братства",
-						"community-point-label": "Пунктов Отряда доступно",
-						"required-hope-points": "Сколько пунктов вы желаете восстановить?",
-						"actor-hope-points": "Пункты надежды (текущие/макс.):",
-						"submit-button": "Восстановление",
-						"cancel-button": "Отмена",
-						"warn": {
-							"one-community_actor_expected": "Только один актёр с типом Отряд может существовать в игре!",
-							"not-enough-hope-points-available": "У вас недостаточно Надежды в запасе (необходимо: {required}, в запасе: {available})",
-							"too-many-hope-points-required": "Требуется слишком много пунктов надежды (всего: {target}, доступно: {max})"
-						}
-					},
-					"short": {
-						"label": "Короткий",
-						"noRestoredMessage": "{name} <b>не восстановил</b> выносливость после короткого отдыха ({name} <b>полностью здоров</b>).",
-						"restoredMessage": "{name} <b>восстановил {amount} выносливости</b> после короткого отдыха (выносливость {name} <b>равна {endurance}</b>) ",
-						"woundedRestoredMessage": "{name} <b>не восстановил</b> выносливость после короткого отдыха ({name} <b>раненый</b>).",
-						"description": "нажмите, чтобы восстановить выносливость после короткого отдыха (один час)",
-						"title": "Короткий отдых"
-					},
-					"prolonged": {
-						"label": "Долгий",
-						"noRestoredMessage": "{name} <b>не восстановил</b> выносливость после долгого отдыха ({name} <b>полностью здоров</b>).",
-						"restoredMessage": "{name} <b>полностью восстановил выносливость</b> после долгого отдыха ({name} <b>полностью здоров</b>).",
-						"woundedRestoredMessage": "{name} <b>восстановил {amount} выносливости</b> после долгого отдыха, он раненый (выносливость {name} <b>равна {endurance}</b>).",
-						"description": "нажмите, чтобы восстановить выносливость после долгого отдыха (одна ночь)",
-						"title": "Долгий отдых"
-					}
-				},
-				"roll": {
-					"hope": "Потрать пункт надежды, чтобы добавить",
-					"lore": "Проверка навыка Знания",
-					"fatigue": "Проверка Утомления",
-					"skill": "бросок"
-				},
-				"toggle": {
-					"favoured": "Нажмите Alt+ЛКМ, чтобы выбрать одаренный навык",
-					"add-remove-skill": "Нажмите Alt+ЛКМ, чтобы увеличить уровень навыка и Shift+Alt+ЛКМ, чтобы уменьшить уровень навыка."
-				}
-			},
-			"journey-log": {
-				"delete": "[ALT+Click] Delete Journey Log",
-				"edit": "Edit Journey Log"
-			},
-			"standing": {
-				"delete": "[ALT+Click] Delete Standing",
-				"edit": "Edit Standing"
-			},
-			"undertaking": {
-				"delete": "[ALT+Click] Delete undertaking",
-				"edit": "Edit undertaking",
-				"toggle": "Toggle undertaking activation state",
-				"yule": "Yule or not",
-				"free": "Free or not"
-			},
-			"song": {
-				"used-or-not": "Used or Not",
-				"play": "Use this song",
-				"toggle": "Toggle this song used value",
-				"delete": "[ALT+Click] Delete Song",
-				"edit": "Edit Song"
-			},
-			"skill": {
-				"delete": "[ALT+Click] Удалить предмет",
-				"edit": "Изменить предмет",
-				"roll": "Бросок предмета",
-				"chat": "Отправить в чат"
-			}
-		},
-		"roll": {
-			"warn": {
-				"noSkillFound": "Навык {skillName} не найден у актёра {actorName}",
-				"clickOnWeaponInstead": "Нажмите на оружие для его использования, а не на боевой навык.",
-				"impossibleToFavouredAWeapon": "Невозможно выбрать одарённое оружие этому персонажу."
-			},
-			"skill": "Нажмите ЛКМ, чтобы совершить проверку навыка",
-			"difficulty": "Сложность",
-			"target": "Цель",
-			"result": {
-				"success": "Успех",
-				"great-success": "Великолепный успех",
-				"extraordinary-success": "Экстраординарный успех",
-				"automatic-success": "Безусловный успех",
-				"failure": "Провал",
-				"hidden": "Скрытый",
-				"automatic-failure": "Безусловный провал"
-			},
-			"details": {
-				"tech": {
-					"title": "Проверка задачи"
-				}
-			},
-			"special-success": {
-				"title": "Использование особых успехов",
-				"label": "Число особых успехов",
-				"actions": {
-					"submit": "Подтвердить",
-					"cancel": "Отмена"
-				},
-				"tech": {
-					"title": "Проверка задачи с тенгвар"
-				}
-			}
-		},
-		"dice": {
-			"tengwar": "Руна тенгвара",
-			"gandalf": "Руна Гэндальфа",
-			"sauron": "Око Саурона",
-			"standard": {
-				"label": "Успех",
-				"1": "обычная кость 1",
-				"2": "обычная кость 2",
-				"3": "обычная кость 3",
-				"4": "обычная кость 4",
-				"5": "обычная кость 5",
-				"6": "обычная кость с тенгвар 6 "
-			},
-			"weary": {
-				"label": "Успех с усталостью",
-				"1": "кость с усталостью 1",
-				"2": "кость с усталостью 2",
-				"3": "кость с усталостью 3",
-				"4": "кость с усталостью 4",
-				"5": "кость с усталостью 5",
-				"6": "кость с усталостью и тенгвар 6"
-			},
-			"feat": {
-				"label": "Испытание",
-				"description": "Кость испытания D12",
-				"1": "кость испытания 1",
-				"2": "кость испытания 2",
-				"3": "кость испытания 3",
-				"4": "кость испытания 4",
-				"5": "кость испытания 5",
-				"6": "кость испытания 6",
-				"7": "кость испытания 7",
-				"8": "кость испытания 8",
-				"9": "кость испытания 9",
-				"10": "кость испытания 10",
-				"11": "кость с оком саурона 11",
-				"12": "кость с руной гэндальфа 12"
-			}
-		},
-		"popup": {
-			"actions": {
-				"save": "Сохранить",
-				"cancel": "Отмена"
-			},
-			"taskCheck": {
-				"armour": {},
-				"title": "Редактирование {type}"
-			}
-		},
-		"chat": {
-			"actions": {
-				"roll": "Бросок",
-				"roll-result": "Результат",
-				"test": "Проверка",
-				"save": "Сохранить",
-				"cancel": "Отмена",
-				"hidden": "скрытое действие"
-			},
-			"taskCheck": {
-				"options": {
-					"roll-characteristics": {
-						"title": "Проверка характеристик",
-						"is-weary": "усталый",
-						"is-miserable": "подавленый",
-						"is-inspired": "вдохновленный",
-						"is-favoured": "одаренный",
-						"is-ill-favoured": "бездарный"
-					},
-					"roll-combat": {
-						"title": "Combat Information",
-						"pc-stance": "on {stance} stance",
-						"adv-stance": "against {stance} stance",
-						"engagement": "Engaged with {number} foes"
-					},
-					"roll-formula": "Формула броска",
-					"difficulty": "Сложность",
-					"tn": "СЛ",
-					"feat-die-value": "Значение кости испытания",
-					"feat-dice": "Кость испытания",
-					"bonus-success-dice": "Бонусный кубик",
-					"bonus-penalty-dice": "Мод. кубика",
-					"extended-penalty-dice": {
-						"label": "Значение бонуса / штрафа",
-						"hint": "введите отрицательное значение для штрафа или положительное для бонуса"
-					},
-					"hope-point-bonus-dice": "Бонус от надежды",
-					"inspired": "Вдохновение",
-					"mastery-dice": "Кость одарённости",
-					"favoured-ill-favoured": "Одарённый / Бездарный",
-					"bonus-penalty": "Бонус / Штраф",
-					"support-die": "Поддержка компаньона",
-					"advanced": "Дополнительно",
-					"hope": "Надежда",
-					"worst": "худший",
-					"best": "лучший",
-					"health-impacts": "Влияние на здоровье",
-					"weary-not-weary": "Проверка с усталостью?",
-					"miserable-not-miserable": "Подавленный бросок?",
-					"weary": "усталый",
-					"result-modifier": "Мод. результата",
-					"modifier": "Модификатор",
-					"not-weary": "не усталый",
-					"miserable": "подавленный",
-					"not-miserable": "не подавленный"
-				},
-				"title": "Бросок {type}"
-			},
-			"error": {
-				"actorNotFound": "Не найден актёр с actorID: {actorId} и tokenId: {tokenId}"
-			},
-			"warn": {
-				"characterHasNotBeenUsedToCreateTheAction": "Действие, на которое вы хотите потратить пункт надежды, было создано не этим персонажем, а {actorName}!"
-			}
-		},
-		"rolls": {
-			"protection": "Защита",
-			"fear": "Ужас",
-			"corruption": "Соблазн"
-		},
-		"combat": {
-			"error": {
-				"unableToRerollPrepBattle": "невозможно перебросить проверку подготовки к битве, потому что токен {token} имеет тип {type} и не является персонажем",
-				"itemNotFound": "У этого актера нет такого предмета (название: {name}, тип {type})",
-				"noActorAttachedToToken": "Невозможно добавить токен \"{name}\" к бою, потому что с этим токеном не связан актер. "
-			},
-			"warn": {
-				"noTokenSelectedToChangeStance": "You need to select a token to change its stance.",
-				"tokenIsNotInCombat": "The token you selected is not in combat.",
-				"combatantIsNotACharacter": "The token you selected is not a character.",
-				"invalidNewStance": "The new stance you selected is not valid.",
-				"noActorFound": "Актер с именем {name} не найден",
-				"combatantNotInCombat": "The Token ({name}) you want to make an engagement with is not part of the active Combat or is Out of Combat.",
-				"combatantDoesntExistInCombat": "Актёр с id ({id}) не является участником активного боя.",
-				"noSkillNameAvailableWithExtendedWeaponSelection": "У персонажа {actorName} нет боевого умения ({name}) или навыка ({name}).",
-				"noSkillNameFoundWithExtendedWeaponSelection": "У персонажа {actorName} нет боевого умения ({name}) и навыка ({name}).",
-				"noCombatProficiencyFound": "У персонажа {actorName} нет боевого умения ({name}). Вам нужно или добавить умение, или использовать расширенный боевой навык.",
-				"incompleteItem": "Не найдено {element} для предмета ({item}). Вам нужно выбрать {element}.",
-				"noValidTarget": "Чтобы атаковать вы должны выбрать только один токен.",
-				"noValidCombatTarget": "Вы должны выбрать токен, который участвует в бою.",
-				"noValidWeaponEquipped": "У вас нет подходящего надетого оружия для использования навыка ({skill}).",
-				"tnIsWeird": "СЛ имеет некорректное значение. Возможно вы не выставили значение паррирования цели ({foeName}).",
-				"noTokenSelectedForEngagement": "Вам нужно выбрать несколько токенов, которые вступят в бой друг с другом.",
-				"numberOfTengwarNotCorrect": "Произошло что-то странное. Количество тенгвар ({tengwar}) равно 0 или меньше! Этого не должно происходить.",
-				"impossibleForMonoFaction": "Вы должны выбрать хотя бы по одному токену от каждой стороны конфликта.",
-				"impossibleForComplexEngagement": "Вы должны выбрать один токен для одной из двух фракций, а не несколько для обеих."
-			},
-			"actions": {
-				"applyDamage": "Нанести урон",
-				"applyWeary": "Сделать усталым",
-				"applyWounded": "Сделать раненым",
-				"applyAll": "Нанести урон и состояния",
-				"applyAllStates": "Сделать усталым, раненым и вне боя",
-				"applyOutOfCombat": "Вывести из боя",
-				"applyWearyState": "Сделать усталым",
-				"applyMiserableState": "Сделать подавленным",
-				"applyWearyAndMiserableState": "Сделать усталым и подавленным"
-			},
-			"special-success-action": {
-				"dagger-only": {
-					"title": "Dagger Only",
-					"label": "Dagger Only",
-					"description": "The attacker can only use a dagger to trigger this effect."
-				},
-				"heavy-blow": {
-					"title": "Сокрушительный удар",
-					"alt": "Меч наносит сокрушительный удар",
-					"label": "Сокрушительный удар",
-					"description": "Прибавление {amount} к урону."
-				},
-				"fend-off": {
-					"title": "Отражение",
-					"alt": "Персонаж уклоняется от удара",
-					"label": "Отражение",
-					"description": "Add +{amount} to Parry against next attack."
-				},
-				"piercing-blow": {
-					"title": "Укол",
-					"alt": "Копьё наносит пронзающий удар",
-					"label": "Укол",
-					"description": "Add {amount} to Feat Die ({edge} to beat). {extra_desc}"
-				},
-				"gain-ground": {
-					"title": "Одержать верх",
-					"alt": "Выстрел, чтобы занять лучшую позицию по отношению к врагам",
-					"label": "Одержать верх",
-					"description": "Выстрел, чтобы одержать верх."
-				},
-				"shield-thrust": {
-					"title": "Удар щитом",
-					"alt": "Мощный удар щитом попадает по цели.",
-					"label": "Удар щитом",
-					"description": "Отталкивание вместо нанесения урона."
-				},
-				"seize": {
-					"title": "Захват",
-					"alt": "Крепко ухватились.",
-					"label": "Захват",
-					"description": "Нападающий берёт цель в захват."
-				},
-				"break-shield": {
-					"title": "Пробитие щита",
-					"alt": "Щит раскололся на щепки.",
-					"label": "Пробитие щита",
-					"description": "Нападающий расколол щит на щепки."
-				},
-				"none-custom": {
-					"title": "Нет/особый",
-					"alt": "Крест отмены",
-					"label": "Нет/особый",
-					"description": "Домашние правила"
-				}
-			},
-			"dicePool": {
-				"label": "Число костей с успехом"
-			},
-			"step": {
-				"initiative": {
-					"attack": {
-						"label": "Атака",
-						"title": "Группа персонажей в атакующей стойке."
-					},
-					"defense": {
-						"label": "Защита",
-						"title": "Группа персонажей в защитной стойке."
-					},
-					"toggle": {
-						"title": "Переключение атакующей и защитной стойки."
-					}
-				},
-				"preparation": {
-					"label": "Подготовка",
-					"roll": {
-						"reroll": "Повторная подготовка к бою",
-						"label": "Подготовка к бою",
-						"title": "Проверка подготовки к бою"
-					}
-				},
-				"openingVolley": {
-					"label": "Открывающий залп",
-					"roll": {
-						"label": "Открывающий залп",
-						"title": "Проверка открывающего залпа"
-					}
-				},
-				"closeCombat": {
-					"engagement": "Вступить в бой",
-					"label": "Ближний бой"
-				},
-				"default": {
-					"label": "Неизвестный шаг боя"
-				}
-			},
-			"stance": {
-				"forward": {
-					"label": "На острие"
-				},
-				"open": {
-					"label": "Открытая стойка"
-				},
-				"defensive": {
-					"label": "Защитная стойка"
-				},
-				"rearward": {
-					"label": "В тылу"
-				},
-				"skirmish": {
-					"label": "Битва"
-				},
-				"default": {
-					"label": "Неизвестная стойка"
-				}
-			},
-			"chat": {
-				"warn": {
-					"impossibleToRollInjury": "Не удаётся совершить бросок по таблице для травмы."
-				},
-				"preparation-roll": {
-					"title": "Результат проверки подготовки к бою",
-					"message": " получает <span class='key-point'>{successDiceBonus} бонусных кубиков</span> в этом бою."
-				},
-				"result": {
-					"title": "Результат атаки",
-					"help": "Пожалуйста, нажмите правую кнопку, чтобы вызвать меню.",
-					"paragraph": "<span class='actor-name'>{attackerName}</span> атакует <span class='actor-name'>{targetName}</span> при помощи {weaponName} и наносит <a class='apply-damage-element' title='{hint}'>{totalDamage} урона<i class='fas fa-external-link-alt'></i></a>",
-					"specialResult": " с <a class='apply-special-result' title='{hint}'>{quantity} особых результатов<i class='fas fa-external-link-alt'></i></a> (<img src='systems/tor2e/assets/images/tengwar.png' data-edit='img' title='tengwar' height='15' width='15' alt='tengwar'/>)"
-				},
-				"details": {
-					"attackerRoll": "Проверка атакующего:",
-					"successLevel": "Уровень успеха:",
-					"specialDamage": "Особый урон:",
-					"damage": {
-						"title": "Урон:",
-						"weapon": "[Оружие ({weaponDamage})",
-						"bonus": " + Бонус результата ({bonusDamage})"
-					}
-				},
-				"piercing": {
-					"title": "Пронзающий удар",
-					"description": "<span class='actor-name'>{targetName}</span> должен пройти <a class='button-protection-roll' data-tn-test={weaponInjuryValue}>проверку защиты <i class='fas fa-dice'></i></a> со СЛ {weaponInjuryValue} (атака против {edge})."
-				},
-				"injuryRoll": {
-					"title": "Проверка травмы",
-					"description": "<span class='actor-name'>{targetName}</span> ранен и вынужден совершить <a class='button-injury-roll'>проверку травмы <i class='fas fa-dice'></i></a>."
-				},
-				"injury": {
-					"title": "Травма",
-					"moderate": {
-						"type": "незначительная",
-						"title": "Незначительная травма",
-						"message": "<span class='actor-name'>{targetName}</span> получает <b>незначительную травму</b> до конца боя."
-					},
-					"severe": {
-						"type": "серьёзная",
-						"title": "Серьёзная травма",
-						"message": "<span class='actor-name'>{targetName}</span> получает <b>серьёзную травму</b> на {duration} дней."
-					},
-					"grievous": {
-						"type": "мучительная",
-						"title": "Мучительная травма",
-						"message": "<span class='actor-name'>{targetName}</span> получает <b>мучительную травму</b>, теряет сознание и при смерти."
-					}
-				},
-				"effects": {
-					"title": "Эффекты атаки",
-					"damageDealt": "Нанесённый урон:",
-					"protection": {
-						"is": " - ",
-						"wounded": "ранен!",
-						"protected": "защищён!"
-					},
-					"weary": {
-						"is": " усталый."
-					},
-					"ooc": {
-						"is": " вне боя."
-					}
-				}
-			}
-		},
-		"macro": {
-			"error": {
-				"noActorAvailable": "Выберите актёра перед использованием макроса!",
-				"itemIsMissing": "Предмет {itemName} с типом {itemType} не доступен актёру {actorName}!",
-				"skillIsMissing": "Навык {skillName} не доступен актёру {actorName} !",
-				"missingLoremasterRole": "Только Хранитель может использовать это действие.",
-				"wrongStatusEffect": "Статус '{statusEffect}' не существует."
-			}
-		},
-		"effects": {
-			"wounded": "Раненый",
-			"poisoned": "Отравленный",
-			"miserable": "Подавленный",
-			"weary": "Усталый",
-			"unit": {
-				"days": "Дней"
-			}
-		},
-		"journey-log": {
-			"sheet": {
-				"title": "Название"
-			},
-			"log": {
-				"year": "Год",
-				"season": "Время года",
-				"from": "Пункт отправления",
-				"to": "Пункт назначения",
-				"duration": "Дней в пути"
-			}
-		},
-		"seasons": {
-			"winter": "Зима",
-			"spring": "Весна",
-			"summer": "Лето",
-			"autumn": "Осень"
-		},
-		"roles": {
-			"guide": "Проводник",
-			"scout": "Разведчик",
-			"lookout": "Дозорный",
-			"hunter": "Охотник",
-			"unassigned": "Unassigned"
-		},
-		"evenTypes": {
-			"terrible-misfortune": "Ужасная неудача",
-			"despair": "Отчаяние",
-			"ill-choices": "Неверный выбор",
-			"mishap": "Неприятность",
-			"short-cut": "Короткий путь",
-			"chance-meeting": "Случайная встреча",
-			"joyful-sight": "Добрый знак"
-		},
-		"active-effect": {
-			"toggle": {
-				"help": "используйте Alt+ЛКМ, чтобы переключить состояние"
-			}
-		},
-		"settings": {
-			"warn": {
-				"invalidLoadModifierSetting": "The Load modifier setting is invalid. It should be a number or an attribute."
-			}
-		}
-	},
-	"SETTINGS": {
-		"setPauseMessage": "Текст паузы",
-		"setPauseMessageDescription": "Сообщение, отображаемое над изображением паузы. Оставьте пустым, чтобы использовать сообщение по умолчанию.",
-		"setSoloMode": "Режим Бродяжника (Одиночная игра)",
-		"setSoloModeDescription": "Некоторые функции адаптированы для режима Бродяжника (например: только стойка Битвы, упрощён актёр отряда)",
-		"setAddSkirmish": "Добавить стойку битвы",
-		"setAddSkirmishDescription": "Добавляет стойку стрелка в доступные стойки, даже если вы не играете в режиме Бродяжника (одиночная игра)",
-		"setNoneCustomCombatSpecialEffect": "Добавить особые боевые эффекты",
-		"setNoneCustomCombatSpecialEffectDescription": "Добавляет боевой эффект 'Нет/особый' для использования с домашними правилами.",
-		"setTnBaseValue": "Установите базовую сложность",
-		"setTnBaseValueDescription": "Эта настройка позволяет ведущему установить базовое значение на свой вкус. В книге правил рекомендуется установить 20 для режима кампании и 18 для игр на одну встречу.",
-		"setExtendedWeaponSelection": "Расширенный список оружия",
-		"setExtendedWeaponSelectionDescription": "Этот параметр следует активировать только в том случае, если Хранитель хочет использовать домашние правила боя (т.е. новые боевые умения). При активации этого параметра в бланке оружия появится поле для связи с новым боевым умением вместо названия группы оружия.",
-		"setUseAdversarySkills": "Разрешить использование навыков врагами",
-		"setUseAdversarySkillsDescription": "Во втором издании у врагов нет навыков. Включение этой настройки добавит навыки в бланки персонажей Хранителя.",
-		"setOverrideEyeAwareness": "Вы превысили максимально значение Внимания Ока",
-		"setOverrideEyeAwarenessDescription": "По умолчанию максимальное значение равно 24, но вы можете изменить его, исходя из своих потребностей.",
-		"setRawModeForActiveEffectName": "Change Active Effect selection mode",
-		"setRawModeForActiveEffectDescription": "If you need to do some specific stuff and you know what you are doing, you can toggle the Active selection mode (Checked : List mode/Unchecked: Raw mode (text input box)).",
-		"setAlwaysShowShieldThrustName": "Всегда показывать Удар Щитом",
-		"setAlwaysShowShieldThrustDescription": "Special Damage \"Shield Thrust\" : Propose this option even if the display rule (strength > attribute) is not reached.",
-		"setWarnLoreMasterForCharacterStateName": "Active Warn Message",
-		"setWarnLoreMasterForCharacterStateDescription": "Для активации предупреждения в чате для каждого персонажа с состоянием усталости или подавленности.",
-		"setShowHideRangeBlockName": "Отображение диапазона дистанции",
-		"setShowHideRangeBlockDescription": "Используется для отображения диапазона дистанции в описании оружия, листе персонажа и врага.",
-		"disableAltClickName": "Отключить Alt+ЛКМ",
-		"disableAltClickDescription": "Отключите Alt+ЛКМ, чтобы предотвратить некоторые действия по изменению действий, такие как улучшение навыков или переключения состояния здоровья",
-		"aldDefaultValueName": "Actor Link Data for Npc is checked by default",
-		"aldDefaultValueDescription": "Set up the Actor Link Data default value for new Npc Actor.",
-		"setDisplayCommunityInfoAtStartValue": "Показать текущий основной Отряд.",
-		"setDisplayCommunityInfoAtStartDescription": "Показывать название основного Отряда при присоединении к игре.",
-		"setModifiedLoadAsRequested": "Modify Load calculation",
-		"setModifiedLoadAsRequestedDescription": "Useful for homebrew rules that change how much carried Load relative to Endurance triggers the Weary warning. By default, the Weary status shows when Endurance is equal or less than Load. For example, to lower Load by Strength (i.e. allow Actors to carry their Strength in Load for free without affecting Endurance, e.g. put attributes.strength or integer constant value in the field).",
-		"setInlineElementFromUuidInDescription": "Inline Journal into Description",
-		"setInlineElementFromUuidInDescriptionDescription": "You can inline any journal page into item description. The description will be replaced by the journal content. The item description should only be the Journal link (nothing else) other why it won't work.",
-		"setJourneyLogCanBeModified": "Journey Log can be modified",
-		"setJourneyLogCanBeModifiedDescription": "Allow Players to modify the Embedded Journey Log inside Community Actor.",
-		"setStandingActivation": "Standing Activation",
-		"setStandingActivationDescription": "Allow the Loremaster to activate or deactivate the Standing feature for characters. Simple is only 1 value by character, extended use Standing items to store faction reputation.",
-		"standing": {
-			"none": "None",
-			"simple": "Simple",
-			"extended": "Extended"
-		}
-	}
+  "GAME.paused": "Ты не пройдёшь!",
+  "TYPES": {
+    "Actor": {
+      "community": "Отряд",
+      "character": "Персонаж игрока",
+      "npc": "Персонаж ведущего",
+      "lore": "Персонаж хранителя",
+      "adversary": "Враг"
+    },
+    "Item": {
+      "trait": "Черта",
+      "fell-ability": "Зловещая способность",
+      "skill": "Навык",
+      "armour": "Броня",
+      "weapon": "Оружие",
+      "miscellaneous": "Прочее",
+      "reward": "Награда",
+      "virtues": "Качество",
+      "journey-log": "Дневник путешествия",
+      "song": "Песня",
+      "undertaking": "Обязательство",
+      "standing": "Положение",
+      "combat-task": "Combat task"
+    }
+  },
+  "tor2e": {
+    "types": {
+      "distinctiveFeature": "Отличительная черта",
+      "flaw": "Изъян",
+      "trait": "Черта",
+      "fell-ability": "Зловещая способность",
+      "skill": "Навык",
+      "armour": "Броня",
+      "weapon": "Оружие",
+      "miscellaneous": "Прочее",
+      "reward": "Награда",
+      "virtues": "Качество",
+      "journey-log": "Дневник путешествия",
+      "swords": "Мечи",
+      "axes": "Топоры",
+      "brawling": "Рукопашное",
+      "spears": "Копья",
+      "bows": "Луки",
+      "shield": "Щиты",
+      "head": "Шлемы",
+      "leather": "Кожаная",
+      "mail": "Кольчужная"
+    },
+    "actors": {
+      "biography": {
+        "age": "Возраст",
+        "fellowshipFocus": "Узы",
+        "title": "Титул",
+        "years": "лет",
+        "culture": "Культура",
+        "standardOfLiving": "Образ жизни",
+        "culturalBlessing": "Дар культуры",
+        "calling": "Призвание",
+        "shadowPath": "Соблазн Тени"
+      },
+      "sections": {
+        "biography": "Биография",
+        "traits": "Черты",
+        "effects": "Эффекты",
+        "attributes": "Характеристики",
+        "skillGroups": "Категории навыков",
+        "combatProficiencies": "Боевые умения",
+        "commonSkills": "Общие навыки",
+        "weaponSkills": "Боевые навыки",
+        "rewards": "Награды",
+        "virtues": "Качества",
+        "war-gear": "Боевое снаряжение",
+        "equipment-gear": "Походное снаряжение",
+        "resources": "Средства",
+        "combat": "Бой",
+        "fellowship": "Братство",
+        "skillPoints": "Пункты навыков",
+        "reputationPoints": "Пункты репутации",
+        "heroicStature": "Становление героя",
+        "treasure": "Сокровище",
+        "background": "Происхождение",
+        "company": "Отряд",
+        "fellowshipPhase": "Фаза братства",
+        "members": "Участники",
+        "available-members": "Доступные участники",
+        "patrons": "Покровители",
+        "name": "Имя",
+        "location": "Расположение",
+        "connections": "Связи",
+        "travel": "Путешествие",
+        "taleOfYears": "Сказание лет",
+        "songs": "Песни",
+        "undertakings": "Обязательства",
+        "standings": "Положения",
+        "notes": "Заметки",
+        "rating": "Положение",
+        "journey-log": "Дневник путешествия",
+        "occupation": "Профессия"
+      },
+      "details": {
+        "tech": {
+          "alt": "Изображение актёра"
+        }
+      },
+      "fellAbilities": {
+        "title": "Зловещие способности"
+      },
+      "traits": {
+        "distinctiveFeatures": "Отличительные черты",
+        "flaws": "Изъяны"
+      },
+      "combatSkills": {
+        "title": "Боевые навыки"
+      },
+      "skills": {
+        "title": "Навыки",
+        "commonSkills": "Общие навыки",
+        "combatSkills": "Боевые навыки",
+        "relevantSkills": "Полезные навыки",
+        "favoured": "(одар.)"
+      },
+      "types": {
+        "community": {
+          "title": "Отряд"
+        },
+        "lore": {
+          "title": "Знание"
+        },
+        "npc": {
+          "title": "ПХ"
+        },
+        "adversary": {
+          "title": "Враг"
+        },
+        "character": {
+          "title": "Персонаж"
+        }
+      },
+      "faction": {
+        "hostile": "Враг",
+        "friendly": "Друг"
+      },
+      "stats": {
+        "attributeLevel": "Уровень",
+        "damage": {
+          "closedCombat": "Урон ближнего боя",
+          "rangedCombat": "Дистанционный урон"
+        },
+        "hate": "Ненависть",
+        "resolve": "Resolve",
+        "might": "Мощь",
+        "parry": "Парирование",
+        "noShield": "нет щита",
+        "noHeadgear": "нет шлема",
+        "noArmour": "нет брони",
+        "armour": "Броня",
+        "endurance": "Выносливость",
+        "load": "Нагрузка",
+        "hope": "Надежда",
+        "maxHope": "Макс. надежда",
+        "maxEndurance": "Макс. выносливость",
+        "rating": "Изначально",
+        "travelLoad": "Утомление",
+        "shadow": "Тень",
+        "temporary": "Временная",
+        "shadowScars": "Шрамы Тени",
+        "canBeAPatron": "Может быть покровителем?",
+        "initial": "Изначально",
+        "fellowshipPoints": "Пункты братства",
+        "eyeAwareness": "Внимание Ока",
+        "current": "Текущая",
+        "faction": "Коалиция",
+        "health": "Здоровье",
+        "state": "Состояние",
+        "rest": "Отдых",
+        "max": "Макс.",
+        "min": "Мин.",
+        "bonus": {
+          "combat": {
+            "injury": "Травма от оружия",
+            "piercingBlow": "Пронзающий удар оружия",
+            "heavyBlow": "Урон от сокрушительного удара",
+            "pierce": "Укол"
+          },
+          "defense": {
+            "protection": "Защита",
+            "shieldParry": "Модификатор парирования"
+          },
+          "stats": {
+            "load": "Бонус нагрузки"
+          },
+          "tn": {
+            "strength": "СЛ Силы",
+            "heart": "СЛ Характера",
+            "wits": "СЛ Смекалки"
+          }
+        }
+      },
+      "stateOfHealth": {
+        "weary": "Усталый",
+        "poisoned": "Отравленный",
+        "miserable": "Подавленный",
+        "wounded": "Раненый",
+        "temporary": "Временное"
+      },
+      "combatAttributes": {
+        "damage": "Урон",
+        "ranged": "Дистанционное",
+        "parry": "Парирование",
+        "shield": "Щит",
+        "armour": "Броня",
+        "headGear": "Шлем"
+      },
+      "chat": {
+        "warn": {
+          "title": "Предупреждение",
+          "hint": "Щёлкните правой кнопкой, чтобы вызвать меню и применить изменения.",
+          "weary": "<strong>{name}</strong> должен быть <strong>усталым</strong>.",
+          "miserable": "<strong>{name}</strong> должен быть <strong>подавленным</strong>.",
+          "wearyAndMiserable": "<strong>{name}</strong> должен быть <strong>усталым</strong> и <strong>подавленным</strong>."
+        },
+        "result": {
+          "title": "Результат",
+          "weary": "<strong>{name}</strong> становится <strong>усталым</strong>.",
+          "miserable": "<strong>{name}</strong> становится <strong>подавленный</strong>.",
+          "wearyAndMiserable": "<strong>{name}</strong> становится <strong>усталым</strong> и <strong>подавленным</strong>."
+        }
+      },
+      "community": {
+        "messages": {
+          "setDefaultActorManually": "Вы выбрали Отряд '{name}' основным для этого мира.",
+          "setDefaultActorAutomatically": "Отряд '{name}' автоматически выбран в этом мире основным.",
+          "displayDefaultActor": "Основным Отрядом является '{name}'.",
+          "warnNoCommunityActor": "В этом мире нет Отряда и некоторые функции не будут работать, пока вы его не создадите.",
+          "warnTooManyCommunityActors": "В этом мире несколько Отрядов ({size}). Система не может установить, какой из них вам нужен. Пожалуйста, укажите его вручную в бланке Отряда.",
+          "selectPlayer": "Выбор исполнителя",
+          "select-a-player": "Выберите игрока"
+        },
+        "title": "Отряд",
+        "song": {
+          "title": "Песня",
+          "used": "Исп.",
+          "name": "Название",
+          "type": "Тип"
+        },
+        "undertakings": {
+          "active": "Активно",
+          "type": "Тип",
+          "season": "Время года",
+          "location": "Место",
+          "name": "Название",
+          "yule": "Юль",
+          "free": "Свободно",
+          "calling": "Призвание",
+          "enrichUndertakingAndCreate": "Создание обязательства"
+        },
+        "journey-log": {
+          "year": "Год",
+          "season": "Время года",
+          "from": "Пункт отправления",
+          "to": "Пункт назначения",
+          "duration": "Дней в пути"
+        },
+        "make-default": {
+          "title": "Назначить по умолчанию",
+          "description": "Два персонажа связаны друг с другом",
+          "label": "чтобы назначить это Отрядом по умолчанию."
+        }
+      },
+      "character": {
+        "standings": {
+          "folk": "Народ",
+          "rating": "Известность",
+          "location": "Место",
+          "reputation": "Репутация"
+        }
+      }
+    },
+    "travel": {
+      "roles": {
+        "guide": {
+          "label": "Проводник",
+          "skill": "путешествие"
+        },
+        "scouts": {
+          "label": "Разведчик",
+          "skill": "разведка"
+        },
+        "hunters": {
+          "label": "Охотник",
+          "skill": "охота"
+        },
+        "lookouts": {
+          "label": "Дозорный",
+          "skill": "бдительность"
+        }
+      }
+    },
+    "common": {
+      "type": "Тип",
+      "group": "Группа",
+      "name": "Название",
+      "description": "Описание",
+      "usage": "Применение"
+    },
+    "items": {
+      "common": {
+        "load": "Нагрузка",
+        "equipped": "Надето",
+        "dropped": "Обронено"
+      },
+      "shields": {
+        "none": "Нет",
+        "buckler": "Баклер",
+        "shield": "Щит",
+        "greatShield": "Высокий щит"
+      },
+      "armours": {
+        "title": "Броня",
+        "armour": "Броня",
+        "protection": "Защита",
+        "group": "Тип",
+        "protection-roll": "Проверка защиты",
+        "tech": {
+          "title": "Фоновое изображение, представляющее броню.",
+          "alt": "Изображение брони"
+        }
+      },
+      "combat-task": {
+        "tech": {
+          "alt": "Image representing the combat task.",
+          "title": "Image representing the combat task."
+        },
+        "title": "Combat task",
+        "associatedSkill": "Associated skill",
+        "associatedStance": "Associated stance",
+        "all": "All",
+        "none": "None"
+      },
+      "miscellaneous": {
+        "title": "Другое",
+        "equipment": "Снаряжение",
+        "tech": {
+          "title": "Фоновое изображение, представляющее разные предметы.",
+          "alt": "Изображение разных предметов"
+        }
+      },
+      "traits": {
+        "title": "Черта",
+        "tech": {
+          "title": "Фоновое изображение, представляющее черту.",
+          "alt": "Изображение черты"
+        }
+      },
+      "standings": {
+        "title": "Положение",
+        "tech": {
+          "title": "Background Image of the Standing Item.",
+          "alt": "Image representing the Standing item."
+        }
+      },
+      "undertakings": {
+        "title": "Обязательство",
+        "tech": {
+          "title": "Background Image of the Undertaking Item.",
+          "alt": "Image representing the Undertaking item."
+        },
+        "messages": {
+          "create": "Create an undertaking",
+          "cancel": "Cancel the creation"
+        },
+        "roll-dialog": {
+          "title": "Enrich your undertaking"
+        }
+      },
+      "songs": {
+        "title": "Песня",
+        "chat": {
+          "character": "Персонаж",
+          "song": "Песня",
+          "song-type": "Тип песни",
+          "successMessage": "The song has been played successfully and <b>{name}</b> ignores the effects of being <b>Weary</b> for the length of the heroic venture."
+        },
+        "event": {
+          "title": "Roll Event",
+          "description": "Some dice rolling on a song."
+        },
+        "roll-dialog": {
+          "title": "Select the song singer"
+        },
+        "tech": {
+          "title": "Background Image of the Song Item representing a some music notes.",
+          "alt": "Image representing the Song item."
+        }
+      },
+      "special-abilities": {
+        "title": "Особенность",
+        "tech": {
+          "title": "Фоновое изображение, представляющее особенность.",
+          "alt": "Изображение особенности"
+        }
+      },
+      "journey-log": {
+        "roll-dialog": {
+          "title": "Выберите тип региона"
+        },
+        "chat": {
+          "region-type": "Тип региона:",
+          "event-type": "Тип события:",
+          "target": "Цель:"
+        },
+        "title": "Дневник путешествия",
+        "company": "Отряд",
+        "mounts": "Ездовые животные",
+        "journal": "Дневник",
+        "journey-path": "Маршрут путешествия",
+        "events": {
+          "title": "Бросок на событие",
+          "name": "События"
+        },
+        "event": {
+          "name": "Событие",
+          "result": "Результат",
+          "target": "Цель",
+          "region": "Регион",
+          "description": "Кости катятся по маршруту путешествия"
+        },
+        "region-types": {
+          "border-land": "Приграничные земли",
+          "wild-land": "Дикие земли",
+          "dark-land": "Темные земли"
+        },
+        "attributes": {
+          "name": "Имя",
+          "role": "Роль",
+          "vigour": "Мощь",
+
+          "travel-fatigue": "Утомление в путешествии"
+        },
+        "actions": {
+          "import": {
+            "title": "Добавить данные из актера Отряда (Alt+ЛКМ). Внимание, данные предметов Отряда не будут учтены."
+          },
+          "add-member": {
+            "title": "Добавить персонажа в Отряд (Alt+ЛКМ)."
+          },
+          "delete-member": {
+            "title": "Убрать персонажа из Отряда (Alt+ЛКМ)."
+          },
+          "add-mount": {
+            "title": "Добавить ездовое животное к Отряду (Alt+ЛКМ)."
+          },
+          "delete-mount": {
+            "title": "Убрать ездовое животное из Отряда (Alt+ЛКМ)."
+          },
+          "add-event": {
+            "title": "Добавить событие для Отряда (Alt+ЛКМ)."
+          },
+          "add-event-with-roll": {
+            "title": "Добавить событие в историю отряда с автоматическим броском на событие (Alt+ЛКМ)"
+          },
+          "delete-event": {
+            "title": "Удалить событие (ALT+ЛКМ)."
+          },
+          "re-roll-event": {
+            "title": "Повторить бросок на событие и заменить предыдущий результат (Alt+ЛКМ)"
+          }
+        },
+        "tech": {
+          "title": "Фоновое изображение Дневника путешествия, представляющее путь.",
+          "alt": "Изображение для Дневника путешествия"
+        }
+      },
+      "fellowship": {
+        "title": "Братство",
+        "tech": {
+          "title": "Фоновое изображение, представляющее братство.",
+          "alt": "Изображение братства"
+        }
+      },
+      "skills": {
+        "title": "Навык",
+        "tech": {
+          "title": "Фоновое изображение, представляющее навык.",
+          "alt": "Изображение навыка"
+        }
+      },
+      "virtues": {
+        "title": "Качество",
+        "tech": {
+          "title": "Фоновое изображение, представляющее качество.",
+          "alt": "Изображение качества"
+        }
+      },
+      "rewards": {
+        "title": "Награда",
+        "tech": {
+          "title": "Фоновое изображение, представляющее награду.",
+          "alt": "Изображение награды"
+        }
+      },
+      "weapons": {
+        "title": "Оружие",
+        "tech": {
+          "title": "Фоновое изображение, представляющее оружие.",
+          "alt": "Изображение оружия"
+        }
+      }
+    },
+    "skills": {
+      "groups": {
+        "personality": "Личность",
+        "movement": "Перемещение",
+        "perception": "Восприятие",
+        "survival": "Выживание",
+        "custom": "Особый",
+        "vocation": "Призвание",
+        "combat": "Бой"
+      },
+      "details": {
+        "skillGroup": "Категория навыка",
+        "associatedStat": "Характеристика",
+        "tech": {
+          "alt": "Изображение навыка"
+        }
+      }
+    },
+    "traits": {
+      "groups": {
+        "distinctiveFeature": "Отличительная черта",
+        "flaw": "Изъян"
+      },
+      "details": {
+        "traitGroup": "Категория черты",
+        "tech": {
+          "alt": "Изображение черты"
+        }
+      }
+    },
+    "standings": {
+      "folk": "Folk",
+      "rating": "Rating",
+      "location": "Location",
+      "reputation": "Reputation"
+    },
+    "undertakings": {
+      "active": "Active",
+      "name": "Name",
+      "year": "Year",
+      "season": "Season",
+      "location": "Location",
+      "canBeFree": "Can be Free",
+      "canBeYule": "Yule Only",
+      "yule": "Yule",
+      "free": "Free",
+      "calling": "Calling"
+    },
+    "songs": {
+      "details": {
+        "songGroup": "Song Type"
+      },
+      "groups": {
+        "combat": "Song of Victory",
+        "council": "Lay",
+        "journey": "Walking-Song"
+      }
+    },
+    "reward": {
+      "groups": {
+        "cultural": "Награда культуры",
+        "qualities": "Свойства"
+      },
+      "details": {
+        "type": "Тип награды",
+        "tech": {
+          "alt": "Изображение награды"
+        }
+      }
+    },
+    "virtues": {
+      "groups": {
+        "cultural": "Качества культуры",
+        "masteries": "Изначальное качество"
+      },
+      "details": {
+        "type": "Тип качества",
+        "tech": {
+          "alt": "Изображение качества"
+        }
+      }
+    },
+    "specialAbilities": {
+      "groups": {
+        "hate": "Ненависть",
+        "virtues": "Качества",
+        "valour": "Доблесть"
+      },
+      "details": {
+        "specialAbilityGroup": "Категория особенности",
+        "active": "Активная",
+        "cost": "Цена",
+        "tech": {
+          "alt": "Изображение особой способности"
+        }
+      }
+    },
+    "fellAbilities": {
+      "groups": {
+        "hate": "Ненависть"
+      },
+      "details": {
+        "fellAbilityGroup": "Категория злодеяния",
+        "active": "Активное",
+        "cost": "Цена",
+        "tech": {
+          "alt": "Изображение злодеяния"
+        }
+      }
+    },
+    "weapons": {
+      "groups": {
+        "none": "-",
+        "brawling": "Борьба",
+        "swords": "Мечи",
+        "axes": "Топоры",
+        "bows": "Луки",
+        "spears": "Копья",
+        "bestial": "Зверское"
+      },
+      "details": {
+        "weapon": "Оружие",
+        "damage": "Урон",
+        "edge": "Сложность",
+        "injury": "Травма",
+        "extendedWeaponSelectionHint": "(опционально для особого оружия игроков)",
+        "type": "Type",
+        "group": "Категория",
+        "ranks": "Уровни",
+        "notes": "Заметки",
+        "skill-name": "Навык",
+        "ranged": "Дистанционное",
+        "actions": "Действия",
+        "twoHandWeapon": "Двуручное",
+        "short": "Короткая дистанция",
+        "medium": "Средняя дистанция",
+        "long": "Дальняя дистанция",
+        "description": "Описание",
+        "tech": {
+          "alt": "Изображение оружия",
+          "title": "Фоновое изображение, представляющее иконку особенностей оружия.",
+          "caption": "Качества"
+        }
+      }
+    },
+    "callings": {
+      "groups": {
+        "captain": "Командующий",
+        "scholar": "Учёный",
+        "champion": "Поборник",
+        "treasure-hunter": "Искатель сокровищ",
+        "messenger": "Вестник",
+        "warden": "Страж"
+      }
+    },
+    "armour": {
+      "title": {
+        "group": "Категория брони"
+      },
+      "groups": {
+        "leather": "Кожаный доспех",
+        "mail": "Кольчуга",
+        "head": "Шлем",
+        "shield": "Щит"
+      }
+    },
+    "stats": {
+      "strength": "Сила",
+      "heart": "Характер",
+      "wits": "Смекалка",
+      "favoured": "одарённый"
+    },
+    "statureStats": {
+      "adventurePoints": "Пункты приключений",
+      "total": "всего",
+      "valour": "Доблесть",
+      "wisdom": "Мудрость"
+    },
+    "commonSkills": {
+      "awe": "Впечатление",
+      "enhearten": "Вдохновление",
+      "persuade": "Убеждение",
+      "athletics": "Атлетика",
+      "travel": "Путешествие",
+      "stealth": "Скрытность",
+      "awareness": "Бдительность",
+      "insight": "Проницательность",
+      "scan": "Внимательность",
+      "explore": "Разведка",
+      "healing": "Лечение",
+      "hunting": "Охота",
+      "song": "Песня",
+      "courtesy": "Традиции",
+      "riddle": "Загадка",
+      "craft": "Ремесло",
+      "battle": "Битва",
+      "lore": "Знание"
+    },
+    "combatProficiencies": {
+      "brawling": "Борьба",
+      "axes": "Топоры",
+      "swords": "Мечи",
+      "spears": "Копья",
+      "bows": "Луки"
+    },
+    "standardOfLivingGroups": {
+      "poor": "Бедный",
+      "frugal": "Экономный",
+      "common": "Обычный",
+      "prosperous": "Зажиточный",
+      "rich": "Богатый",
+      "veryRich": "Роскошный"
+    },
+    "skillGroups": {
+      "personality": "Личность",
+      "movement": "Перемещение",
+      "perception": "Восприятие",
+      "survival": "Выживание",
+      "custom": "Особый",
+      "vocation": "Призвание",
+      "combat": "Бой"
+    },
+    "sheet": {
+      "actions": {
+        "rest": {
+          "dialog-box": {
+            "title": "Восстановить пункт(ы) надежды от братства",
+            "community-point-label": "Пунктов Отряда доступно",
+            "required-hope-points": "Сколько пунктов вы желаете восстановить?",
+            "actor-hope-points": "Пункты надежды (текущие/макс.):",
+            "submit-button": "Восстановление",
+            "cancel-button": "Отмена",
+            "warn": {
+              "one-community_actor_expected": "Только один актёр с типом Отряд может существовать в игре!",
+              "not-enough-hope-points-available": "У вас недостаточно Надежды в запасе (необходимо: {required}, в запасе: {available})",
+              "too-many-hope-points-required": "Требуется слишком много пунктов надежды (всего: {target}, доступно: {max})"
+            }
+          },
+          "short": {
+            "label": "Короткий",
+            "noRestoredMessage": "{name} <b>не восстановил</b> выносливость после короткого отдыха ({name} <b>полностью здоров</b>).",
+            "restoredMessage": "{name} <b>восстановил {amount} выносливости</b> после короткого отдыха (выносливость {name} <b>равна {endurance}</b>) ",
+            "woundedRestoredMessage": "{name} <b>не восстановил</b> выносливость после короткого отдыха ({name} <b>раненый</b>).",
+            "description": "нажмите, чтобы восстановить выносливость после короткого отдыха (один час)",
+            "title": "Короткий отдых"
+          },
+          "prolonged": {
+            "label": "Долгий",
+            "noRestoredMessage": "{name} <b>не восстановил</b> выносливость после долгого отдыха ({name} <b>полностью здоров</b>).",
+            "restoredMessage": "{name} <b>полностью восстановил выносливость</b> после долгого отдыха ({name} <b>полностью здоров</b>).",
+            "woundedRestoredMessage": "{name} <b>восстановил {amount} выносливости</b> после долгого отдыха, он раненый (выносливость {name} <b>равна {endurance}</b>).",
+            "description": "нажмите, чтобы восстановить выносливость после долгого отдыха (одна ночь)",
+            "title": "Долгий отдых"
+          }
+        },
+        "roll": {
+          "hope": "Потрать пункт надежды, чтобы добавить",
+          "lore": "Проверка навыка Знания",
+          "fatigue": "Проверка Утомления",
+          "skill": "бросок"
+        },
+        "toggle": {
+          "favoured": "Нажмите Alt+ЛКМ, чтобы выбрать одаренный навык",
+          "add-remove-skill": "Нажмите Alt+ЛКМ, чтобы увеличить уровень навыка и Shift+Alt+ЛКМ, чтобы уменьшить уровень навыка."
+        }
+      },
+      "journey-log": {
+        "delete": "[ALT+Click] Delete Journey Log",
+        "edit": "Edit Journey Log"
+      },
+      "standing": {
+        "delete": "[ALT+Click] Delete Standing",
+        "edit": "Edit Standing"
+      },
+      "undertaking": {
+        "delete": "[ALT+Click] Delete undertaking",
+        "edit": "Edit undertaking",
+        "toggle": "Toggle undertaking activation state",
+        "yule": "Yule or not",
+        "free": "Free or not"
+      },
+      "song": {
+        "used-or-not": "Used or Not",
+        "play": "Use this song",
+        "toggle": "Toggle this song used value",
+        "delete": "[ALT+Click] Delete Song",
+        "edit": "Edit Song"
+      },
+      "skill": {
+        "delete": "[ALT+Click] Удалить предмет",
+        "edit": "Изменить предмет",
+        "roll": "Бросок предмета",
+        "chat": "Отправить в чат"
+      }
+    },
+    "roll": {
+      "warn": {
+        "noSkillFound": "Навык {skillName} не найден у актёра {actorName}",
+        "clickOnWeaponInstead": "Нажмите на оружие для его использования, а не на боевой навык.",
+        "impossibleToFavouredAWeapon": "Невозможно выбрать одарённое оружие этому персонажу."
+      },
+      "skill": "Нажмите ЛКМ, чтобы совершить проверку навыка",
+      "difficulty": "Сложность",
+      "target": "Цель",
+      "result": {
+        "success": "Успех",
+        "great-success": "Великолепный успех",
+        "extraordinary-success": "Экстраординарный успех",
+        "automatic-success": "Безусловный успех",
+        "failure": "Провал",
+        "hidden": "Скрытый",
+        "automatic-failure": "Безусловный провал"
+      },
+      "details": {
+        "tech": {
+          "title": "Проверка задачи"
+        }
+      },
+      "special-success": {
+        "title": "Использование особых успехов",
+        "label": "Число особых успехов",
+        "actions": {
+          "submit": "Подтвердить",
+          "cancel": "Отмена"
+        },
+        "tech": {
+          "title": "Проверка задачи с тенгвар"
+        }
+      }
+    },
+    "dice": {
+      "tengwar": "Руна тенгвара",
+      "gandalf": "Руна Гэндальфа",
+      "sauron": "Око Саурона",
+      "standard": {
+        "label": "Успех",
+        "1": "обычная кость 1",
+        "2": "обычная кость 2",
+        "3": "обычная кость 3",
+        "4": "обычная кость 4",
+        "5": "обычная кость 5",
+        "6": "обычная кость с тенгвар 6 "
+      },
+      "weary": {
+        "label": "Успех с усталостью",
+        "1": "кость с усталостью 1",
+        "2": "кость с усталостью 2",
+        "3": "кость с усталостью 3",
+        "4": "кость с усталостью 4",
+        "5": "кость с усталостью 5",
+        "6": "кость с усталостью и тенгвар 6"
+      },
+      "feat": {
+        "label": "Испытание",
+        "description": "Кость испытания D12",
+        "1": "кость испытания 1",
+        "2": "кость испытания 2",
+        "3": "кость испытания 3",
+        "4": "кость испытания 4",
+        "5": "кость испытания 5",
+        "6": "кость испытания 6",
+        "7": "кость испытания 7",
+        "8": "кость испытания 8",
+        "9": "кость испытания 9",
+        "10": "кость испытания 10",
+        "11": "кость с оком саурона 11",
+        "12": "кость с руной гэндальфа 12"
+      }
+    },
+    "popup": {
+      "actions": {
+        "save": "Сохранить",
+        "cancel": "Отмена"
+      },
+      "taskCheck": {
+        "armour": {},
+        "title": "Редактирование {type}"
+      }
+    },
+    "chat": {
+      "actions": {
+        "roll": "Бросок",
+        "roll-result": "Результат",
+        "test": "Проверка",
+        "save": "Сохранить",
+        "cancel": "Отмена",
+        "hidden": "скрытое действие"
+      },
+      "taskCheck": {
+        "options": {
+          "roll-characteristics": {
+            "title": "Проверка характеристик",
+            "hope-points": "Hope point(s) left",
+            "is-weary": "усталый",
+            "is-miserable": "подавленый",
+            "is-magical": "is magical.",
+            "has-spent-hope": "hope point bonus.",
+            "is-inspired": "вдохновленный",
+            "is-supported": "is supported.",
+            "has-support": "has support.",
+            "is-fellowship-focused": "is fellowship focused.",
+            "is-favoured": "одаренный",
+            "is-ill-favoured": "бездарный"
+          },
+          "roll-combat": {
+            "title": "Combat Information",
+            "pc-stance": "on {stance} stance",
+            "adv-stance": "against {stance} stance",
+            "engagement": "Engaged with {number} foes"
+          },
+          "roll-formula": "Формула броска",
+          "difficulty": "Сложность",
+          "tn": "СЛ",
+          "feat-die-value": "Значение кости испытания",
+          "feat-dice": "Кость испытания",
+          "bonus-success-dice": "Бонусный кубик",
+          "bonus-penalty-dice": "Мод. кубика",
+          "extended-penalty-dice": {
+            "label": "Значение бонуса / штрафа",
+            "hint": "введите отрицательное значение для штрафа или положительное для бонуса"
+          },
+          "hope-point-bonus-dice": "Бонус от надежды",
+          "no-hope-left": "No hope point left !",
+          "inspired": "Вдохновение",
+          "mastery-dice": "Кость одарённости",
+          "favoured-ill-favoured": "Одарённый / Бездарный",
+          "bonus-penalty": "Бонус / Штраф",
+          "support-die": "Поддержка компаньона",
+          "advanced": "Дополнительно",
+          "hope": "Надежда",
+          "worst": "худший",
+          "best": "лучший",
+          "health-impacts": "Влияние на здоровье",
+          "weary-not-weary": "Проверка с усталостью?",
+          "magical-not-magical": "Magical Roll ?",
+          "magical": "magical",
+          "magical-success": "Magical Success",
+          "fellowship-focused": "Fellowship Focus",
+          "not-magical": "not-magical",
+          "miserable-not-miserable": "Подавленный бросок?",
+          "weary": "усталый",
+          "result-modifier": "Мод. результата",
+          "modifier": "Модификатор",
+          "not-weary": "не усталый",
+          "miserable": "подавленный",
+          "not-miserable": "не подавленный"
+        },
+        "target": {
+          "self": "Self",
+          "other": "Adversary"
+        },
+        "title": "Бросок {type}"
+      },
+      "error": {
+        "actorNotFound": "Не найден актёр с actorID: {actorId} и tokenId: {tokenId}"
+      },
+      "warn": {
+        "characterHasNotBeenUsedToCreateTheAction": "Действие, на которое вы хотите потратить пункт надежды, было создано не этим персонажем, а {actorName}!"
+      }
+    },
+    "rolls": {
+      "protection": "Защита",
+      "fear": "Ужас",
+      "corruption": "Соблазн"
+    },
+    "combat": {
+      "error": {
+        "unableToRerollPrepBattle": "невозможно перебросить проверку подготовки к битве, потому что токен {token} имеет тип {type} и не является персонажем",
+        "itemNotFound": "У этого актера нет такого предмета (название: {name}, тип {type})",
+        "noActorAttachedToToken": "Невозможно добавить токен \"{name}\" к бою, потому что с этим токеном не связан актер. "
+      },
+      "warn": {
+        "noTokenSelectedToChangeStance": "You need to select a token to change its stance.",
+        "tokenIsNotInCombat": "The token you selected is not in combat.",
+        "combatantIsNotACharacter": "The token you selected is not a character.",
+        "invalidNewStance": "The new stance you selected is not valid.",
+        "noActorFound": "Актер с именем {name} не найден",
+        "combatantNotInCombat": "The Token ({name}) you want to make an engagement with is not part of the active Combat or is Out of Combat.",
+        "combatantDoesntExistInCombat": "Актёр с id ({id}) не является участником активного боя.",
+        "noSkillNameAvailableWithExtendedWeaponSelection": "У персонажа {actorName} нет боевого умения ({name}) или навыка ({name}).",
+        "noSkillNameFoundWithExtendedWeaponSelection": "У персонажа {actorName} нет боевого умения ({name}) и навыка ({name}).",
+        "noCombatProficiencyFound": "У персонажа {actorName} нет боевого умения ({name}). Вам нужно или добавить умение, или использовать расширенный боевой навык.",
+        "incompleteItem": "Не найдено {element} для предмета ({item}). Вам нужно выбрать {element}.",
+        "noValidTarget": "Чтобы атаковать вы должны выбрать только один токен.",
+        "noValidCombatTarget": "Вы должны выбрать токен, который участвует в бою.",
+        "noValidWeaponEquipped": "У вас нет подходящего надетого оружия для использования навыка ({skill}).",
+        "tnIsWeird": "СЛ имеет некорректное значение. Возможно вы не выставили значение паррирования цели ({foeName}).",
+        "noTokenSelectedForEngagement": "Вам нужно выбрать несколько токенов, которые вступят в бой друг с другом.",
+        "numberOfTengwarNotCorrect": "Произошло что-то странное. Количество тенгвар ({tengwar}) равно 0 или меньше! Этого не должно происходить.",
+        "impossibleForMonoFaction": "Вы должны выбрать хотя бы по одному токену от каждой стороны конфликта.",
+        "impossibleForComplexEngagement": "Вы должны выбрать один токен для одной из двух фракций, а не несколько для обеих."
+      },
+      "actions": {
+        "applyDamage": "Нанести урон",
+        "applyWeary": "Сделать усталым",
+        "applyWounded": "Сделать раненым",
+        "applyAll": "Нанести урон и состояния",
+        "applyAllStates": "Сделать усталым, раненым и вне боя",
+        "applyOutOfCombat": "Вывести из боя",
+        "applyWearyState": "Сделать усталым",
+        "applyMiserableState": "Сделать подавленным",
+        "applyWearyAndMiserableState": "Сделать усталым и подавленным"
+      },
+      "special-success-action": {
+        "dagger-only": {
+          "title": "Dagger Only",
+          "label": "Dagger Only",
+          "description": "The attacker can only use a dagger to trigger this effect."
+        },
+        "heavy-blow": {
+          "title": "Сокрушительный удар",
+          "alt": "Меч наносит сокрушительный удар",
+          "label": "Сокрушительный удар",
+          "description": "Прибавление {amount} к урону."
+        },
+        "fend-off": {
+          "title": "Отражение",
+          "alt": "Персонаж уклоняется от удара",
+          "label": "Отражение",
+          "description": "Add +{amount} to Parry against next attack."
+        },
+        "piercing-blow": {
+          "title": "Укол",
+          "alt": "Копьё наносит пронзающий удар",
+          "label": "Укол",
+          "description": "Add {amount} to Feat Die ({edge} to beat). {extra_desc}"
+        },
+        "gain-ground": {
+          "title": "Одержать верх",
+          "alt": "Выстрел, чтобы занять лучшую позицию по отношению к врагам",
+          "label": "Одержать верх",
+          "description": "Выстрел, чтобы одержать верх."
+        },
+        "shield-thrust": {
+          "title": "Удар щитом",
+          "alt": "Мощный удар щитом попадает по цели.",
+          "label": "Удар щитом",
+          "description": "Отталкивание вместо нанесения урона."
+        },
+        "seize": {
+          "title": "Захват",
+          "alt": "Крепко ухватились.",
+          "label": "Захват",
+          "description": "Нападающий берёт цель в захват."
+        },
+        "break-shield": {
+          "title": "Пробитие щита",
+          "alt": "Щит раскололся на щепки.",
+          "label": "Пробитие щита",
+          "description": "Нападающий расколол щит на щепки."
+        },
+        "none-custom": {
+          "title": "Нет/особый",
+          "alt": "Крест отмены",
+          "label": "Нет/особый",
+          "description": "Домашние правила"
+        }
+      },
+      "dicePool": {
+        "label": "Число костей с успехом"
+      },
+      "step": {
+        "initiative": {
+          "attack": {
+            "label": "Атака",
+            "title": "Группа персонажей в атакующей стойке."
+          },
+          "defense": {
+            "label": "Защита",
+            "title": "Группа персонажей в защитной стойке."
+          },
+          "toggle": {
+            "title": "Переключение атакующей и защитной стойки."
+          }
+        },
+        "preparation": {
+          "label": "Подготовка",
+          "roll": {
+            "reroll": "Повторная подготовка к бою",
+            "label": "Подготовка к бою",
+            "title": "Проверка подготовки к бою"
+          }
+        },
+        "openingVolley": {
+          "label": "Открывающий залп",
+          "roll": {
+            "label": "Открывающий залп",
+            "title": "Проверка открывающего залпа"
+          }
+        },
+        "closeCombat": {
+          "engagement": "Вступить в бой",
+          "label": "Ближний бой"
+        },
+        "default": {
+          "label": "Неизвестный шаг боя"
+        }
+      },
+      "stance": {
+        "forward": {
+          "label": "На острие"
+        },
+        "open": {
+          "label": "Открытая стойка"
+        },
+        "defensive": {
+          "label": "Защитная стойка"
+        },
+        "rearward": {
+          "label": "В тылу"
+        },
+        "skirmish": {
+          "label": "Битва"
+        },
+        "default": {
+          "label": "Неизвестная стойка"
+        }
+      },
+      "chat": {
+        "warn": {
+          "impossibleToRollInjury": "Не удаётся совершить бросок по таблице для травмы."
+        },
+        "preparation-roll": {
+          "title": "Результат проверки подготовки к бою",
+          "message": " получает <span class='key-point'>{successDiceBonus} бонусных кубиков</span> в этом бою."
+        },
+        "result": {
+          "title": "Результат атаки",
+          "help": "Пожалуйста, нажмите правую кнопку, чтобы вызвать меню.",
+          "paragraph": "<span class='actor-name'>{attackerName}</span> атакует <span class='actor-name'>{targetName}</span> при помощи {weaponName} и наносит <a class='apply-damage-element' title='{hint}'>{totalDamage} урона<i class='fas fa-external-link-alt'></i></a>",
+          "specialResult": " с <a class='apply-special-result' title='{hint}'>{quantity} особых результатов<i class='fas fa-external-link-alt'></i></a> (<img src='systems/tor2e/assets/images/tengwar.png' data-edit='img' title='tengwar' height='15' width='15' alt='tengwar'/>)"
+        },
+        "details": {
+          "attackerRoll": "Проверка атакующего:",
+          "successLevel": "Уровень успеха:",
+          "specialDamage": "Особый урон:",
+          "damage": {
+            "title": "Урон:",
+            "weapon": "[Оружие ({weaponDamage})",
+            "bonus": " + Бонус результата ({bonusDamage})"
+          }
+        },
+        "piercing": {
+          "title": "Пронзающий удар",
+          "description": "<span class='actor-name'>{targetName}</span> должен пройти <a class='button-protection-roll' data-tn-test={weaponInjuryValue}>проверку защиты <i class='fas fa-dice'></i></a> со СЛ {weaponInjuryValue} (атака против {edge})."
+        },
+        "injuryRoll": {
+          "title": "Проверка травмы",
+          "description": "<span class='actor-name'>{targetName}</span> ранен и вынужден совершить <a class='button-injury-roll'>проверку травмы <i class='fas fa-dice'></i></a>."
+        },
+        "injury": {
+          "title": "Травма",
+          "moderate": {
+            "type": "незначительная",
+            "title": "Незначительная травма",
+            "message": "<span class='actor-name'>{targetName}</span> получает <b>незначительную травму</b> до конца боя."
+          },
+          "severe": {
+            "type": "серьёзная",
+            "title": "Серьёзная травма",
+            "message": "<span class='actor-name'>{targetName}</span> получает <b>серьёзную травму</b> на {duration} дней."
+          },
+          "grievous": {
+            "type": "мучительная",
+            "title": "Мучительная травма",
+            "message": "<span class='actor-name'>{targetName}</span> получает <b>мучительную травму</b>, теряет сознание и при смерти."
+          }
+        },
+        "effects": {
+          "title": "Эффекты атаки",
+          "damageDealt": "Нанесённый урон:",
+          "protection": {
+            "is": " - ",
+            "wounded": "ранен!",
+            "protected": "защищён!"
+          },
+          "weary": {
+            "is": " усталый."
+          },
+          "ooc": {
+            "is": " вне боя."
+          }
+        }
+      }
+    },
+    "macro": {
+      "error": {
+        "noActorAvailable": "Выберите актёра перед использованием макроса!",
+        "itemIsMissing": "Предмет {itemName} с типом {itemType} не доступен актёру {actorName}!",
+        "skillIsMissing": "Навык {skillName} не доступен актёру {actorName} !",
+        "missingLoremasterRole": "Только Хранитель может использовать это действие.",
+        "wrongStatusEffect": "Статус '{statusEffect}' не существует."
+      }
+    },
+    "effects": {
+      "wounded": "Раненый",
+      "poisoned": "Отравленный",
+      "miserable": "Подавленный",
+      "weary": "Усталый",
+      "unit": {
+        "days": "Дней"
+      },
+      "TabDetails": "Details",
+      "TabEffects": "Effects",
+      "TabDuration": "Duration"
+    },
+    "journey-log": {
+      "sheet": {
+        "title": "Название"
+      },
+      "log": {
+        "year": "Год",
+        "season": "Время года",
+        "from": "Пункт отправления",
+        "to": "Пункт назначения",
+        "duration": "Дней в пути"
+      }
+    },
+    "seasons": {
+      "winter": "Зима",
+      "spring": "Весна",
+      "summer": "Лето",
+      "autumn": "Осень"
+    },
+    "roles": {
+      "guide": "Проводник",
+      "scout": "Разведчик",
+      "lookout": "Дозорный",
+      "hunter": "Охотник",
+      "unassigned": "Unassigned"
+    },
+    "evenTypes": {
+      "terrible-misfortune": "Ужасная неудача",
+      "despair": "Отчаяние",
+      "ill-choices": "Неверный выбор",
+      "mishap": "Неприятность",
+      "short-cut": "Короткий путь",
+      "chance-meeting": "Случайная встреча",
+      "joyful-sight": "Добрый знак"
+    },
+    "active-effect": {
+      "toggle": {
+        "help": "используйте Alt+ЛКМ, чтобы переключить состояние"
+      }
+    },
+    "settings": {
+      "warn": {
+        "invalidLoadModifierSetting": "The Load modifier setting is invalid. It should be a number or an attribute."
+      }
+    }
+  },
+  "SETTINGS": {
+    "setPauseMessage": "Текст паузы",
+    "setPauseMessageDescription": "Сообщение, отображаемое над изображением паузы. Оставьте пустым, чтобы использовать сообщение по умолчанию.",
+    "setSoloMode": "Режим Бродяжника (Одиночная игра)",
+    "setSoloModeDescription": "Некоторые функции адаптированы для режима Бродяжника (например: только стойка Битвы, упрощён актёр отряда)",
+    "setAddSkirmish": "Добавить стойку битвы",
+    "setAddSkirmishDescription": "Добавляет стойку стрелка в доступные стойки, даже если вы не играете в режиме Бродяжника (одиночная игра)",
+    "setNoneCustomCombatSpecialEffect": "Добавить особые боевые эффекты",
+    "setNoneCustomCombatSpecialEffectDescription": "Добавляет боевой эффект 'Нет/особый' для использования с домашними правилами.",
+    "setTnBaseValue": "Установите базовую сложность",
+    "setTnBaseValueDescription": "Эта настройка позволяет ведущему установить базовое значение на свой вкус. В книге правил рекомендуется установить 20 для режима кампании и 18 для игр на одну встречу.",
+    "setExtendedWeaponSelection": "Расширенный список оружия",
+    "setExtendedWeaponSelectionDescription": "Этот параметр следует активировать только в том случае, если Хранитель хочет использовать домашние правила боя (т.е. новые боевые умения). При активации этого параметра в бланке оружия появится поле для связи с новым боевым умением вместо названия группы оружия.",
+    "setUseAdversarySkills": "Разрешить использование навыков врагами",
+    "setUseAdversarySkillsDescription": "Во втором издании у врагов нет навыков. Включение этой настройки добавит навыки в бланки персонажей Хранителя.",
+    "setOverrideEyeAwareness": "Вы превысили максимально значение Внимания Ока",
+    "setOverrideEyeAwarenessDescription": "По умолчанию максимальное значение равно 24, но вы можете изменить его, исходя из своих потребностей.",
+    "setRawModeForActiveEffectName": "Change Active Effect selection mode",
+    "setRawModeForActiveEffectDescription": "If you need to do some specific stuff and you know what you are doing, you can toggle the Active selection mode (Checked : List mode/Unchecked: Raw mode (text input box)).",
+    "setAlwaysShowShieldThrustName": "Всегда показывать Удар Щитом",
+    "setAlwaysShowShieldThrustDescription": "Special Damage \"Shield Thrust\" : Propose this option even if the display rule (strength > attribute) is not reached.",
+    "setWarnLoreMasterForCharacterStateName": "Active Warn Message",
+    "setWarnLoreMasterForCharacterStateDescription": "Для активации предупреждения в чате для каждого персонажа с состоянием усталости или подавленности.",
+    "setShowHideRangeBlockName": "Отображение диапазона дистанции",
+    "setShowHideRangeBlockDescription": "Используется для отображения диапазона дистанции в описании оружия, листе персонажа и врага.",
+    "disableAltClickName": "Отключить Alt+ЛКМ",
+    "disableAltClickDescription": "Отключите Alt+ЛКМ, чтобы предотвратить некоторые действия по изменению действий, такие как улучшение навыков или переключения состояния здоровья",
+    "aldDefaultValueName": "Actor Link Data for Npc is checked by default",
+    "aldDefaultValueDescription": "Set up the Actor Link Data default value for new Npc Actor.",
+    "setDisplayCommunityInfoAtStartValue": "Показать текущий основной Отряд.",
+    "setDisplayCommunityInfoAtStartDescription": "Показывать название основного Отряда при присоединении к игре.",
+    "setModifiedLoadAsRequested": "Modify Load calculation",
+    "setModifiedLoadAsRequestedDescription": "Useful for homebrew rules that change how much carried Load relative to Endurance triggers the Weary warning. By default, the Weary status shows when Endurance is equal or less than Load. For example, to lower Load by Strength (i.e. allow Actors to carry their Strength in Load for free without affecting Endurance, e.g. put attributes.strength or integer constant value in the field).",
+    "setInlineElementFromUuidInDescription": "Inline Journal into Description",
+    "setInlineElementFromUuidInDescriptionDescription": "You can inline any journal page into item description. The description will be replaced by the journal content. The item description should only be the Journal link (nothing else) other why it won't work.",
+    "setJourneyLogCanBeModified": "Journey Log can be modified",
+    "setJourneyLogCanBeModifiedDescription": "Allow Players to modify the Embedded Journey Log inside Community Actor.",
+    "setStandingActivation": "Standing Activation",
+    "setStandingActivationDescription": "Allow the Loremaster to activate or deactivate the Standing feature for characters. Simple is only 1 value by character, extended use Standing items to store faction reputation.",
+    "setIsFavouredItemSkillAllowed": "Favoured Item Skill allowed",
+    "setIsFavouredItemSkillAllowedDescription": "Allow the Loremaster to activate or deactivate the Favoured Item Skill feature for characters. If deactivated, only common skills can be favoured, not item skills.",
+    "standing": {
+      "none": "None",
+      "simple": "Simple",
+      "extended": "Extended"
+    }
+  }
 }

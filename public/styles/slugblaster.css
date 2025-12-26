@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "OneDirection";
+  src: url("../fonts/Graffiti.woff2") format("woff2");
+}
+
+.slugblaster {
+  .window-title,
+  .header-button,
+  label {
+    font-family: "OCR-A";
+  }
+}
+
+.slugblaster {
+  h2,
+  h3 {
+    font-weight: 400;
+    opacity: 1;
+    color: oklch(64.5% 0.246 16.439);
+  }
+
+  input,
+  textarea {
+    font-family: var(--font-sans-condensed);
+  }
+
+  input#name {
+    font-family: "OneDirection";
+    color: oklch(82.8% 0.189 84.429);
+  }
+
+  label {
+    color: oklch(76.5% 0.177 163.223);
+    opacity: 1;
+  }
+
+  .slugblasterBeats li {
+    opacity: 1;
+  }
+}

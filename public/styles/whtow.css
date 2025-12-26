@@ -1,0 +1,21 @@
+body.whtow-font {
+  --font-header: var(--font-sans);
+  --font-header-alt: var(--font-fancy);
+  --font-text: var(--font-sans-condensed);
+}
+
+.application.whtow.actor.character .skills {
+  width: 150px;
+  flex: unset;
+}
+
+.application.whtow.actor.npc .skills .skill a {
+  width: 82px;
+}
+
+.skills .skill a {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+}

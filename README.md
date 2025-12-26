@@ -45,10 +45,13 @@
 - Blades in the Dark (Клинки во тьме)
 - Call of Cthulhu (Зов Ктулху)
 - City of Mist (Город Тумана)
-- Coriolis (Кориолис)
-- Cyberpunk RED
+- Coriolis: Third Horizon (Кориолис)
+- Coriolis: The Great Dark
+- Cosmere
+- Cy-Borg
 - Death in Space
 - Delta Green
+- Dragonbane
 - Dungeon Crawl Classics
 - Dungeon World (Мир Подземелий)
 - Dungeons & Dragons 5
@@ -72,6 +75,8 @@
 - Vaesen (Нечисть)
 - Vampire V5 (Вампиры: Маскарад)
 - [Warhammer Fantasy Roleplay 4](https://github.com/phenomen/fvtt-wfrp4e-ru)
+- Warhammer The Old World
+- Warhammer 40K The Dark Heresy
 
 ### Модули
 

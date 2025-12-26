@@ -1,64 +1,68 @@
 :root {
-	--dnd5e-font-modesto: var(--font-modesto);
-	--t5e-signika: var(--font-sans);
-	--syb5e-pc-font: var(--font-fancy) !important;
-	--syb5e-npc-font: var(--font-fancy) !important;
+  --dnd5e-font-modesto: var(--font-modesto);
+  --t5e-signika: var(--font-sans);
+  --syb5e-pc-font: var(--font-fancy) !important;
+  --syb5e-npc-font: var(--font-fancy) !important;
 }
 
 select {
-	font-weight: 500;
+  font-weight: 500;
 }
 
 /* 3.0 */
 
 .dnd5e2.sheet.actor.character .sheet-header .document-name {
-	font-size: var(--font-size-36);
+  font-size: var(--font-size-36);
 }
 
 .dnd5e2.sheet.actor.character .ability-scores .ability-score .label {
-	font-weight: 600;
+  font-weight: 600;
 }
 
 .dnd5e2 .name-stacked .title,
 .dnd5e2 .effects-element .conditions-list .condition .name-stacked .title {
-	font-size: var(--font-size-13);
-	font-weight: 600;
-	font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-13);
+  font-weight: 600;
+  font-family: var(--font-sans-condensed);
 }
 
 .dnd5e2.sidebar-heading h2 {
-	font-size: var(--font-size-14);
+  font-size: var(--font-size-14);
 }
 
 .dnd5e2.editor-content {
-	font-size: var(--font-size-14);
+  font-size: var(--font-size-14);
+}
+
+.dnd5e2 :is(.form-group, fieldset) :is(select, input):not([type="range"]) {
+  font-size: var(--font-size-12);
 }
 
 .dnd5e2 .items-section .items-header .item-quantity,
 .dnd5e2 .items-section .item .item-quantity,
 .dnd5e2 .items-section .items-header .item-recovery,
 .dnd5e2 .items-section .item .item-recovery {
-	width: 73px;
+  width: 73px;
 }
 
 .dnd5e2 .items-section .items-header .item-uses,
 .dnd5e2 .items-section .item .item-uses {
-	width: 87px;
+  width: 87px;
 }
 
 .dnd5e2 .items-section .item .item-price,
 .dnd5e2 .items-section .items-header .item-price {
-	width: 55px;
+  width: 55px;
 }
 
 .dnd5e2.sheet.actor.character .sheet-body .skills .name,
 .dnd5e2.sheet.actor.character .sheet-body .tools .name,
 .dnd5e2.sheet.actor.character .sheet-body .saves .name {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-14);
-	font-weight: 600;
-	overflow: hidden;
-	text-overflow: ellipsis;
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-14);
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .dnd5e2 .items-section .items-header .item-school,
@@ -69,481 +73,485 @@ select {
 .dnd5e2 .items-section .items-header .item-detail,
 .dnd5e2 .items-section .items-header .item-header,
 .dnd5e2 .items-section .item .item-header {
-	font-size: var(--font-size-10);
-	font-weight: 600;
+  font-size: var(--font-size-10);
+  font-weight: 600;
 }
 
 .dnd5e2.sheet.actor .meter.sectioned > .tmp {
-	font-size: var(--font-size-14);
+  font-size: var(--font-size-14);
 }
 
 .dnd5e2.sheet.item .sheet-header .identity-info .subtitles .item-rarity > select {
-	text-transform: uppercase;
-	font-size: var(--font-size-12);
+  text-transform: uppercase;
+  font-size: var(--font-size-12);
 }
 
 .dnd5e2.sheet.actor.character .tab[data-tab="spells"] .top .card.spellcasting {
-	width: 250px;
+  width: 250px;
 }
 
 .dnd5e2.sheet.actor.character .tab.spells .top .card.spellcasting {
-	width: 250px;
+  width: 250px;
 }
 
 .dnd5e2 .card .info > div .label {
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	max-width: 55px;
-	font-size: var(--font-size-9);
-	font-family: var(--font-sans-condensed);
-	font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 55px;
+  font-size: var(--font-size-9);
+  font-family: var(--font-sans-condensed);
+  font-weight: 500;
+}
+
+#calendar-hud .calendar-button button {
+  white-space: nowrap;
 }
 
 /* 1.0 */
 
 .dnd5e.advancement.flow h3 {
-	font-size: var(--font-size-18);
-	font-weight: 600;
+  font-size: var(--font-size-18);
+  font-weight: 600;
 }
 
 .dnd5e.advancement.flow .step h1 {
-	font-family: var(--font-fancy);
-	font-weight: 700;
+  font-family: var(--font-fancy);
+  font-weight: 700;
 }
 
 .dnd5e.sheet .window-content {
-	font-size: var(--font-size-14);
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet .sheet-header .header-details {
-	font-family: var(--font-serif);
+  font-family: var(--font-serif);
 }
 
 .dnd5e .form-header {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet .sheet-header {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet .sheet-header h1 input {
-	font-family: var(--font-fancy);
-	font-size: var(--font-size-24);
-	font-weight: 600;
+  font-family: var(--font-fancy);
+  font-size: var(--font-size-24);
+  font-weight: 600;
 }
 
 .dnd5e.sheet .sheet-navigation {
-	font-weight: 600;
-	font-size: var(--font-size-14);
+  font-weight: 600;
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet.actor ul.attributes li.attribute {
-	font-family: var(--font-serif);
+  font-family: var(--font-serif);
 }
 
 .dnd5e.sheet.actor .sheet-header .summary input,
 .dnd5e.sheet.actor .sheet-header .summary2 input {
-	font-family: var(--font-serif);
-	font-size: var(--font-size-14);
+  font-family: var(--font-serif);
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet.actor .ability-scores .ability {
-	height: 71px;
+  height: 71px;
 }
 
 .dnd5e.sheet.actor ul.attributes li.attribute .attribute-footer {
-	font-family: var(--font-sans-condensed);
-	font-weight: 500;
-	font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
+  font-weight: 500;
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet.actor .counters .counter h4 {
-	font-family: var(--font-sans-condensed);
-	font-weight: 500;
-	font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
+  font-weight: 500;
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet .items-list .item-controls a {
-	font-family: var(--font-sans-condensed);
-	font-weight: 500;
-	font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
+  font-weight: 500;
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet .filter-list .filter-item {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet.actor .traits label {
-	font-family: var(--font-sans-condensed);
-	font-weight: 500;
-	font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
+  font-weight: 500;
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet.actor .spellcasting-ability label,
 .dnd5e.sheet.actor .spellcasting-ability span {
-	font-family: var(--font-sans-condensed);
+  font-family: var(--font-sans-condensed);
 }
 
 .dnd5e.sheet.actor .spell-school,
 .dnd5e.sheet.actor .spell-action,
 .dnd5e.sheet.actor .spell-target {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet .items-list .items-header h3 {
-	font-family: var(--font-serif);
+  font-family: var(--font-serif);
 }
 
 .dnd5e.sheet.actor .inventory-filters h3,
 .dnd5e.sheet.actor .inventory-filters .filter-title {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet.actor h4.box-title {
-	font-family: var(--font-fancy);
-	font-size: var(--font-size-14);
-	font-weight: 700;
+  font-family: var(--font-fancy);
+  font-size: var(--font-size-14);
+  font-weight: 700;
 }
 
 .dnd5e.sheet.actor .sheet-header .summary {
-	font-size: var(--font-size-15);
+  font-size: var(--font-size-15);
 }
 
 .dnd5e.sheet.actor.character ul.skills-list li.skill h4,
 .dnd5e.sheet.actor ul.skills-list li.skill h4 {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-14);
-	font-weight: 500;
-	overflow: hidden;
-	text-overflow: ellipsis;
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-14);
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .dnd5e.sheet.actor ul.skills-list li.skill .skill-name-controls {
-	overflow: hidden;
-	text-overflow: ellipsis;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .dnd5e label.checkbox {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet .items-list .items-header .item-name {
-	font-family: var(--font-modesto);
-	font-weight: 500;
-	font-size: var(--font-size-18);
+  font-family: var(--font-modesto);
+  font-weight: 500;
+  font-size: var(--font-size-18);
 }
 
 .dnd5e.sheet.actor.character .sheet-header .charlevel,
 .dnd5e.sheet.actor.character .sheet-header .charlevel label,
 .dnd5e.sheet.actor .sheet-header .header-exp {
-	font-family: var(--font-fancy);
-	font-size: var(--font-size-15);
+  font-family: var(--font-fancy);
+  font-size: var(--font-size-15);
 }
 
 .dnd5e.sheet.actor ul.attributes li.attribute .attribute-value {
-	font-family: var(--font-serif);
-	font-size: var(--font-size-15);
+  font-family: var(--font-serif);
+  font-size: var(--font-size-15);
 }
 
 .dnd5e.sheet.actor.character .sheet-header .attributes .hit-dice {
-	font-family: var(--font-serif);
-	font-weight: 600;
-	font-size: var(--font-size-20);
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: var(--font-size-20);
 }
 
 .dnd5e.sheet.actor ul.attributes li.attribute .attribute-value > * {
-	font-family: var(--font-serif);
-	font-weight: 600;
-	font-size: var(--font-size-18);
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: var(--font-size-18);
 }
 
 .dnd5e.sheet.actor .sheet-header .charlevel .level.noxp > label {
-	font-size: var(--font-size-20);
+  font-size: var(--font-size-20);
 }
 
 .dnd5e.sheet.actor .sheet-header .charlevel .level input {
-	font-size: var(--font-size-20);
+  font-size: var(--font-size-20);
 }
 
 .dnd5e.sheet.actor .inventory-list .item-detail {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet .sheet-header .summary li {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet.actor .inventory-list .inventory-header h3 {
-	font-family: var(--font-serif);
+  font-family: var(--font-serif);
 }
 
 .dnd5e.sheet.actor .spell-school,
 .dnd5e.sheet.actor .spell-action,
 .dnd5e.sheet.actor .spell-target {
-	font-size: var(--font-size-14);
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.chat-card .card-content {
-	font-size: var(--font-size-14);
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.chat-card .card-header h3 {
-	font-family: var(--font-sans-condensed);
-	font-weight: 500;
-	font-size: var(--font-size-15);
+  font-family: var(--font-sans-condensed);
+  font-weight: 500;
+  font-size: var(--font-size-15);
 }
 
 .dnd5e.sheet.actor .inventory-list .item-summary {
-	font-size: var(--font-size-14);
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet.actor ul.skills-list li.skill .skill-ability {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet.actor ul.skills-list li.skill .skill-mod {
-	font-family: var(--font-sans-condensed);
-	font-weight: 500;
-	font-size: var(--font-size-14);
-	color: var(--color-gray-500);
+  font-family: var(--font-sans-condensed);
+  font-weight: 500;
+  font-size: var(--font-size-14);
+  color: var(--color-gray-500);
 }
 
 .dnd5e.sheet.actor ul.skills-list li.skill .skill-passive {
-	font-family: var(--font-sans-condensed);
-	font-weight: 500;
-	font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
+  font-weight: 500;
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet.actor.character .resource .attribute-value label.recharge {
-	font-size: var(--font-size-12);
+  font-size: var(--font-size-12);
 }
 
 .dnd5e.sheet.actor.character .characteristics label {
-	font-family: var(--font-serif);
-	font-weight: 700;
+  font-family: var(--font-serif);
+  font-weight: 700;
 }
 
 .dnd5e.sheet.actor.npc .header-exp .cr {
-	font-family: var(--font-serif);
-	font-size: var(--font-size-20);
+  font-family: var(--font-serif);
+  font-size: var(--font-size-20);
 }
 
 .dnd5e.sheet.item .sheet-body .item-properties .form-group label {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet.item .sheet-header .item-subtitle .item-type {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-15);
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-15);
 }
 
 .dnd5e.sheet.item .weapon-properties label {
-	font-size: var(--font-size-14) !important;
-	font-weight: 500 !important;
+  font-size: var(--font-size-14) !important;
+  font-weight: 500 !important;
 }
 
 .dnd5e .form-group label {
-	font-weight: 500 !important;
+  font-weight: 500 !important;
 }
 
 .dnd5e.sheet .items-list .items-header {
-	font-family: var(--font-sans-condensed);
-	font-weight: 500;
+  font-family: var(--font-sans-condensed);
+  font-weight: 500;
 }
 
 .dnd5e.sheet.actor .ability-scores {
-	font-family: var(--font-serif);
-	font-weight: bold;
-	color: var(--color-gray-500);
+  font-family: var(--font-serif);
+  font-weight: bold;
+  color: var(--color-gray-500);
 }
 
 .dnd5e.sheet.actor .ability-scores .ability input.ability-score {
-	font-family: var(--font-serif);
-	font-weight: bold;
+  font-family: var(--font-serif);
+  font-weight: bold;
 }
 
 .dnd5e.sheet.actor.npc .header-exp .experience,
 .dnd5e.sheet.actor.npc .header-exp .proficiency {
-	font-size: var(--font-size-14);
+  font-size: var(--font-size-14);
 }
 
 .dnd5e.sheet .sheet-header .header-details .summary select {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-14);
-	font-weight: 500;
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-14);
+  font-weight: 500;
 }
 
 .dnd5e.sheet.actor .attribute-name {
-	padding: 2px;
+  padding: 2px;
 }
 
 .dnd5e.sheet.item .sheet-navigation .item {
-	font-size: var(--font-size-14);
+  font-size: var(--font-size-14);
 }
 
 #chat-log thead > tr > th {
-	font-family: var(--font-sans-condensed);
+  font-family: var(--font-sans-condensed);
 }
 
 .dnd5e.sheet.actor.ability-name #pause {
-	font-family: var(--font-fancy);
+  font-family: var(--font-fancy);
 }
 
 .dnd5e.sheet.actor .attribute-name {
-	font-family: var(--font-fancy);
+  font-family: var(--font-fancy);
 }
 
 .dnd5e .tag {
-	font-size: var(--font-size-14);
+  font-size: var(--font-size-14);
 }
 
 .tabs .item,
 #menu-items {
-	font-family: var(--font-sans-condensed);
-	font-weight: 500;
+  font-family: var(--font-sans-condensed);
+  font-weight: 500;
 }
 
 /* TIDY5E */
 
 .system-dnd5e {
-	--modesto: var(--font-fancy);
-	--signika: var(--font-sans);
+  --modesto: var(--font-fancy);
+  --signika: var(--font-sans);
 }
 
 .tidy5e.sheet.actor .filter-list .filter-item {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-14);
 }
 
 .tidy5e.sheet.actor input.temphp,
 .tidy5e.sheet.actor input.max-temphp,
 .tidy5e.sheet.actor .portrait-temp {
-	font-size: var(--font-size-12);
+  font-size: var(--font-size-12);
 }
 
 .tidy5e.sheet.actor .tidy5e-navigation .item {
-	font-family: var(--font-fancy);
-	font-weight: 500;
-	font-size: var(--font-size-15);
+  font-family: var(--font-fancy);
+  font-weight: 500;
+  font-size: var(--font-size-15);
 }
 
 .tidy5e.sheet.actor .list-layout .items-list .item h4 {
-	font-size: var(--font-size-14);
-	font-weight: 500;
+  font-size: var(--font-size-14);
+  font-weight: 500;
 }
 
 .tidy5e.sheet.actor .spellcasting-ability h3 {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-15);
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-15);
 }
 
 .tidy5e.sheet.actor .list-layout .items-list .item-detail,
 .tidy5e.sheet.actor .items-list .items-header-labels div {
-	font-family: var(--font-sans-condensed);
-	font-weight: 500;
+  font-family: var(--font-sans-condensed);
+  font-weight: 500;
 }
 
 .tidy5e.sheet.actor .skills-list .skill .skill-name {
-	font-weight: 500;
-	font-size: var(--font-size-14);
-	font-family: var(--font-sans-condensed);
+  font-weight: 500;
+  font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
 }
 
 .tidy5e.sheet.actor .skills-list .skill.proficient .skill-name {
-	font-weight: 500;
+  font-weight: 500;
 }
 
 .tidy5e.sheet.actor .ability-scores .ability .ability-score,
 .tidy5e.sheet.actor .char-name {
-	font-size: var(--font-size-24);
+  font-size: var(--font-size-24);
 }
 
 .tidy5e.sheet.actor .header-attributes .ac-display .attribute-value {
-	font-family: var(--font-serif);
-	font-size: var(--font-size-28);
-	font-weight: 700;
+  font-family: var(--font-serif);
+  font-size: var(--font-size-28);
+  font-weight: 700;
 }
 
 .tidy5e.sheet.actor .resources .resource .resource-name input {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-14);
 }
 
 .tidy5e.sheet.actor .resources .resource .resource-value.multiple input {
-	font-size: var(--font-size-15);
+  font-size: var(--font-size-15);
 }
 
 .tidy5e.sheet.actor .traits.show-labels label span {
-	font-size: var(--font-size-14);
-	font-weight: 500;
+  font-size: var(--font-size-14);
+  font-weight: 500;
 }
 
 .tidy5e.sheet.actor.npc .legendary,
 .tidy5e.sheet.actor.npc .lair,
 .tidy5e.sheet.actor.npc .configure-flags,
 .tidy5e.sheet.actor.npc .toggle-traits {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-14);
 }
 
 .tidy5e.sheet.actor .traits .config-button {
-	line-height: 17px;
+  line-height: 17px;
 }
 
 .tidy5e.sheet.actor .tidy5e-navigation .item {
-	padding: 4px 4px 0 4px;
+  padding: 4px 4px 0 4px;
 }
 
 /* ROS */
 
 .syb5e.sheet.actor.character .sheet-header h1.charname input {
-	font-size: 30px;
+  font-size: 30px;
 }
 
 /* LOTR */
 
 .dnd5e.sheet.actor .ability-name h4,
 .dnd5e.sheet.actor h4.box-title-small {
-	font-family: var(--font-fancy) !important;
+  font-family: var(--font-fancy) !important;
 }
 
 /* ARGON HUD */
 
 .extended-combat-hud {
-	font-family: var(--font-sans-condensed);
+  font-family: var(--font-sans-condensed);
 }
 
 .actions-container {
-	font-weight: 500;
+  font-weight: 500;
 }
 
 /* MIDIQOL */
 
 .midi-qol-attack-roll > div:first-child,
 .midi-qol-damage-roll > div:first-child {
-	font-size: var(--font-size-14);
-	font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-14);
+  font-family: var(--font-sans-condensed);
 }
 
 .xmidi-qol-flex-container th {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-11);
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-11);
 }
 
 .xmidi-qol-flex-container span {
-	font-family: var(--font-sans-condensed);
-	font-size: var(--font-size-12);
-	font-weight: 600;
+  font-family: var(--font-sans-condensed);
+  font-size: var(--font-size-12);
+  font-weight: 600;
 }
