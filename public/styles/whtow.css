@@ -5,12 +5,17 @@ body.whtow-font {
 }
 
 .application.whtow.actor.character .skills {
-  width: 130px;
+  width: 150px;
+  flex: unset;
+}
+
+.application.whtow.actor.npc .skills .skill a {
+  width: 82px;
 }
 
 .skills .skill a {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 82px;
+
 }
