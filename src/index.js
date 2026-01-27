@@ -89,6 +89,6 @@ Hooks.once("init", async () => {
   const systemScriptPath = `./systems/${system}.js`;
   if (scripts[systemScriptPath]) {
     const mod = await scripts[systemScriptPath]();
-    mod.init();
+    await mod.init();
   }
 });
