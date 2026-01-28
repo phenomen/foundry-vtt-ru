@@ -53,61 +53,65 @@ async function loadTranslationFile(fileName) {
 
 function registerConverters() {
   game.babele.registerConverters({
-    convertAutomations: createNestedTranslator("coriolis-tgd-core.custom.automations"),
-    convertFeatures: createNestedTranslator("coriolis-tgd-core.custom.features"),
+    convertAutomations: applyTranslation("coriolis-tgd-core.custom.automations"),
+    convertFeatures: applyTranslation("coriolis-tgd-core.custom.features"),
   });
 }
 
 /**
- * Creates a converter for nested objects that translates name/description fields
- * by looking up entries from a pre-loaded translation file.
+ * Creates a converter for nested objects that translates name/description fields.
  *
- * Expected data structure:
- * {
- *   "someId": { "name": "OriginalName", "description": "...", ... },
- *   "otherId": { "name": "AnotherName", ... }
- * }
+ * Babele passes 5 parameters to converters:
+ * - originalValue: the value at the mapped path
+ * - fieldTranslations: per-item translations for this field (from the entry)
+ * - data: full original item data
+ * - tc: TranslatedCompendium instance
+ * - translations: full translations object for the item
  *
- * Translation file structure:
- * {
- *   "entries": {
- *     "OriginalName": { "name": "TranslatedName", "description": "..." }
- *   }
- * }
+ * Translations are looked up by the `name` field of each entry. The converter
+ * supports two sources (in priority order):
+ * 1. Per-item translations from the compendium entry (fieldTranslations)
+ * 2. Global translations from the pre-loaded translation file (fallback)
  *
  * @param {string} fileName - The translation file name (without .json extension)
  * @returns {function} - A converter function for Babele
  */
-function createNestedTranslator(fileName) {
-  return (data) => {
-    if (!data || typeof data !== "object") return data;
+function applyTranslation(fileName) {
+  return (originalValue, fieldTranslations) => {
+    if (!originalValue || typeof originalValue !== "object") {
+      return originalValue;
+    }
 
-    const translations = translationCache.get(fileName);
+    const globalTranslations = translationCache.get(fileName) || {};
 
-    if (!translations || Object.keys(translations).length === 0) {
-      return data;
+    if (
+      !fieldTranslations &&
+      (!globalTranslations || Object.keys(globalTranslations).length === 0)
+    ) {
+      return originalValue;
     }
 
     const result = {};
 
-    for (const [id, entry] of Object.entries(data)) {
+    for (const [id, entry] of Object.entries(originalValue)) {
       if (!entry?.name) {
         result[id] = entry;
         continue;
       }
 
-      const translation = translations[entry.name];
+      // Look up translation by name: per-item first, then global fallback
+      const translation = fieldTranslations?.[entry.name] || globalTranslations[entry.name];
 
       if (!translation) {
         result[id] = entry;
         continue;
       }
 
-      result[id] = {
-        ...entry,
+      result[id] = foundry.utils.mergeObject(entry, {
         name: translation.name ?? entry.name,
         description: translation.description ?? entry.description,
-      };
+        translated: true,
+      });
     }
 
     return result;
