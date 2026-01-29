@@ -2,14 +2,14 @@
   "CORIOLIS_TGD": {
     "SheetLabels": {
       "Actor": {
-        "Explorer": "Coriolis — Бланк исследователя",
-        "NPC": "Coriolis — Бланк персонажа ведущего",
-        "Creature": "Coriolis — Бланк существа",
-        "Bird": "Coriolis — Бланк птицы",
-        "Crew": "Coriolis — Бланк экипажа",
-        "Vehicle": "Coriolis— Бланк техники (аэростат/ровер/шаттл)"
+        "Explorer": "Coriolis: Бланк исследователя",
+        "NPC": "Coriolis: Бланк персонажа ведущего",
+        "Creature": "Coriolis: Бланк существа",
+        "Bird": "Coriolis: Бланк птицы",
+        "Crew": "Coriolis: Бланк экипажа",
+        "Vehicle": "Coriolis: Бланк техники (аэростат/ровер/шаттл)"
       },
-      "Item": "Coriolis — Бланк предмета",
+      "Item": "Coriolis: Бланк предмета",
       "Sheet": "Бланк"
     },
     "Actor": {
@@ -300,7 +300,7 @@
         "FIELDS": {
           "speed.label": "Скорость",
           "blightProtection.label": "Защита от Скверны",
-          "propulsion.label": "Движитель"
+          "propulsion.label": "Тяга"
         }
       },
       "Shuttle": {
@@ -311,14 +311,14 @@
         }
       },
       "general": {
-        "TransferTo": "Передать актеру: {actor}",
+        "TransferTo": "Передать: {actor}",
         "QuantityToTransfer": "Количество для передачи"
       }
     },
     "Item": {
       "Tabs": {
         "Configuration": "Настройки",
-        "Attributes": "Атрибуты",
+        "Attributes": "Характеристики",
         "Description": "Данные",
         "Effects": "Эффекты",
         "Automations": "Авто",
@@ -371,7 +371,7 @@
             "automation": "Потребляет припасы"
           },
           "bonus": {
-            "label": "Модификатор",
+            "label": "Мод.",
             "error": "Модификатор не может быть выше максимального модификатора.",
             "damaged": "Повреждёно",
             "broken": "Сломано"
@@ -439,7 +439,7 @@
             "description": "Использовано припасов: {supplyConsumed}"
           },
           "tech": {
-            "label": "Технологии",
+            "label": "Технология",
             "ordinary": {
               "label": "Современное",
               "abbr": "С"
@@ -588,7 +588,7 @@
             "label": "Дополнительно"
           },
           "tech": {
-            "label": "Технологии"
+            "label": "Технология"
           }
         }
       },
@@ -648,7 +648,7 @@
           "bonus.label": "Модификатор",
           "maxBonus.label": "Макс. модификатор",
           "cost.label": "Стоимость (ОЭ)",
-          "tech.label": "Технологии",
+          "tech.label": "Технология",
           "slot.label": "Слот",
           "installed.label": "Установлено",
           "partOfFrame.label": "Часть каркаса",
