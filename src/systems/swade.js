@@ -52,7 +52,7 @@ const DURATIONS = {
   "Special": "особое",
   "One Round": "1 раунд",
   "One Minute": "1 минута",
-  5: "5 минут",
+  "5": "5 минут",
   "5 minutes": "5 минут",
   "10 minutes": "10 минут",
   "30 Minutes": "30 минут",
