@@ -7,7 +7,7 @@
         "Creature": "Coriolis: Бланк существа",
         "Bird": "Coriolis: Бланк птицы",
         "Crew": "Coriolis: Бланк экипажа",
-        "Vehicle": "Coriolis: Бланк техники (аэростат/ровер/шаттл)"
+        "Vehicle": "Coriolis: Бланк техники (зонд/ровер/шаттл)"
       },
       "Item": "Coriolis: Бланк предмета",
       "Sheet": "Бланк"
@@ -287,7 +287,7 @@
         },
         "Automation": {
           "UseKite": {
-            "name": "Использовать аэростат",
+            "name": "Использовать зонд",
             "item": {
               "type": {
                 "name": "Модификатор"
@@ -445,19 +445,19 @@
               "abbr": "С"
             },
             "guildExplorers": {
-              "label": "Гильдия Исследователей",
+              "label": "Гильдия исследователей",
               "abbr": "Г(И)"
             },
             "guildNavigators": {
-              "label": "Гильдия Навигаторов",
+              "label": "Гильдия навигаторов",
               "abbr": "Г(Н)"
             },
             "guildMachinists": {
-              "label": "Гильдия Механиков",
+              "label": "Гильдия механиков",
               "abbr": "Г(М)"
             },
             "guildGardeners": {
-              "label": "Гильдия Озеленителей",
+              "label": "Гильдия озеленителей",
               "abbr": "Г(О)"
             },
             "heirloom": {
@@ -576,7 +576,7 @@
             "label": "Класс защиты"
           },
           "armorProtection": {
-            "label": "Защита брони"
+            "label": "Защита от урона"
           },
           "blightProtection": {
             "label": "Защита от Скверны"
@@ -851,7 +851,7 @@
       "creature": "Существо",
       "bird": "Птица",
       "crew": "Экипаж",
-      "kite": "Аэростат",
+      "kite": "Зонд",
       "rover": "Ровер",
       "shuttle": "Шаттл"
     },
@@ -865,7 +865,7 @@
       "creatureAbility": "Способность существа",
       "birdPower": "Сила птицы",
       "crewManeuver": "Манёвр экипажа",
-      "kiteUpgrade": "Улучшение аэростата",
+      "kiteUpgrade": "Улучшение зонда",
       "roverUpgrade": "Улучшение ровера",
       "shuttleUpgrade": "Улучшение шаттла",
       "vehicleWeapon": "Вооружение техники",
