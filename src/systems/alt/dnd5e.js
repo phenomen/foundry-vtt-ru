@@ -16,11 +16,6 @@ export async function init() {
     libWrapper.register("ru-ru", "game.i18n.setLanguage", loadAltTranslation, "MIXED");
   }
 }
-/**
- * Set a language as the active translation source for the session
- * @param {string} lang       A language string in CONFIG.supportedLanguages
- * @returns {Promise<void>}   A Promise which resolves once the translations for the requested language are ready
- */
 
 async function loadAltTranslation(wrapped, ...args) {
   await wrapped(...args);

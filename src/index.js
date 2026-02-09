@@ -81,6 +81,7 @@ Hooks.once("init", async () => {
   CONFIG.Token.adjectivesPrefix = "TOKEN.RussianAdjectivesM";
 
   /* D&D5 альтернативный перевод */
+  /* Не может быть async */
   if (system === "dnd5e") {
     dnd5eAlt();
   }
