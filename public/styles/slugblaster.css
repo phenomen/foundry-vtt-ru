@@ -27,6 +27,12 @@
   input#name {
     font-family: "OneDirection";
     color: oklch(82.8% 0.189 84.429);
+    letter-spacing: 0.05em;
+    font-size: var(--font-size-18);
+  }
+
+  &.actor input#name {
+    font-size: var(--font-size-24);
   }
 
   label {
