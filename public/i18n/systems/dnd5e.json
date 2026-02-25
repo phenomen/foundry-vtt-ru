@@ -24,7 +24,8 @@
   "TYPES.ChatMessage": {
     "request": "Сообщение запроса",
     "rest": "Сообщение отдыха",
-    "turn": "Сообщение в начале хода"
+    "turn": "Сообщение в начале хода",
+    "usage": "Сообщение использования"
   },
 
   "TYPES.Item.background": "Происхождение",
@@ -371,6 +372,7 @@
         "other": "Макс. {points} пунктов на характеристику"
       },
       "Details": "Подробности повышения",
+      "EffectTargetHint": "Значение было изменено активным эффектом. Итоговое значение равно {value}.",
       "Feat": {
         "ASIName": "Повышение характеристик",
         "Hint": "Перенесите сюда черту в качестве выбора вместо повышения характеристики."
@@ -441,14 +443,35 @@
       "BackgroundProficiencies": "Умения происхождения",
       "ChooseLanguages": "Выберите языки"
     },
+    "Deletion": {
+      "Delete": {
+        "Message": "Удаление этого предмета также удалит все выбранные варианты развития. Эти изменения будут удалены у персонажа, если отмечен флажок ниже.",
+        "Title": "Подтверждение удаления"
+      },
+      "LevelDown": {
+        "Message": "Понижение уровня класса также удалит все выбранные варианты развития. Эти изменения применятся к персонажу, если отмечен флажок ниже.",
+        "Title": "Понижение уровня"
+      },
+      "Label": "Удалить изменение",
+      "Options": "Варианты"
+    },
     "HitPoints": {
       "Action": {
-        "Roll": "Бросок {die}"
+        "RollClass": "Бросок ПЗ для {class} ",
+        "RollDie": "Бросок {die}"
       },
       "Average": "Средние",
+      "Breakdown": {
+        "Average": "Сред.",
+        "Bonus": "Бонус",
+        "Final": "Итог",
+        "Max": "Макс.",
+        "Previous": "Пред.",
+        "Roll": "Бросок"
+      },
       "Hint": "Отслеживание пунктов здоровья персонажа для каждого уровня класса.",
       "MaxAtFirstLevel": "Макс. на 1-ом уровне: <strong>{max}</strong>",
-      "Roll": "Бросок ПЗ для {class} ",
+      "Options": "Варианты",
       "Starting": "ПЗ на 1-ом уровне",
       "TakeAverage": "Взять средние",
       "Title": "Пункты здоровья",
@@ -510,6 +533,7 @@
         }
       },
       "Hint": "Предоставьте игрокам предметы на выбор (экипировка, особенности или заклинания), которые они могут выбрать для своих персонажей на одном или нескольких уровнях.",
+      "Options": "Варианты",
       "Replacement": {
         "None": "Без замены",
         "Title": "замена"
@@ -646,6 +670,9 @@
       }
     },
     "Size": {
+      "Action": {
+        "SelectSize": "Выбрать размер"
+      },
       "DefaultHint": {
         "Multiple": "Выберите размер персонажа из {sizes}.",
         "Single": "Ваш размер {size}."
@@ -700,7 +727,9 @@
     "Trait": {
       "Action": {
         "AddChoice": "Добавить выбор",
-        "RemoveChoice": "Удалить выбор"
+        "RemoveChoice": "Удалить выбор",
+        "RemoveTrait": "Удалить особенность",
+        "SelectTrait": "Выбрать особенность"
       },
       "ChoicesRemaining": "Выберите ещё {count} {type}",
       "Details": "Подробности особенности",
@@ -774,9 +803,6 @@
   "DND5E.AdvancementConfiguredIncomplete": "Не настроено",
   "DND5E.AdvancementCustomIcon": "Особая иконка",
   "DND5E.AdvancementCustomTitle": "Особое название",
-  "DND5E.AdvancementDeleteConfirmationLabel": "Удаление изменения развития",
-  "DND5E.AdvancementDeleteConfirmationMessage": "Удаление этого предмета также удалит все выбранные варианты развития. Эти изменения будут удалены у персонажа, если выбран флажок ниже.",
-  "DND5E.AdvancementDeleteConfirmationTitle": "Подтверждение удаления",
   "DND5E.AdvancementFlowDropAreaHint": "Перенесите предметы сюда для выбора.",
   "DND5E.AdvancementHint": "Подсказка",
   "DND5E.AdvancementItemTypeInvalidWarning": "Предметы с типом {type} не могут быть добавлены к развитию.",
@@ -815,6 +841,15 @@
   "DND5E.AttunementOverride": "Перезапись настроенности",
   "DND5E.Attuned": "Настроено",
   "DND5E.AreaOfEffect": {
+    "Description": {
+      "Height": "высота",
+      "Length": "длина",
+      "Radius": "радиус",
+      "SizeSimple": "{number}-{unit}",
+      "SizeType": "{number}-{unit}-{type}",
+      "Thickness": "толщина",
+      "Width": "ширина"
+    },
     "Label": "Область",
     "Size": {
       "Label": "Размер",
@@ -1986,6 +2021,7 @@
   "DND5E.Current": "Текущее",
 
   "DND5E.DAMAGE": {
+    "All": "Весь урон",
     "FIELDS": {
       "damage": {
         "label": "Урон",
@@ -2059,6 +2095,12 @@
         "Delete": "Удаление части урона"
       }
     },
+    "PhysicalBypass": {
+      "Description": "{damageTypes} от атак, которые не {bypassTypes}",
+      "DescriptionShort": "Игнорируется источниками: {type}",
+      "Hint": "Предметы с этим свойством игнорируют устойчивость к физическому урону.",
+      "Label": "Физическое пробивание"
+    },
     "Scaling": {
       "Half": "Каждый второй круг",
       "HalfCantrip": "Половина подъёма фокуса",
@@ -2066,16 +2108,30 @@
       "Whole": "Каждый круг",
       "WholeCantrip": "Подъём фокуса"
     },
-    "Title": "Урон"
+    "Title": "Урон",
+    "Type": {
+      "Acid": "Кислота",
+      "Bludgeoning": "Дробящий",
+      "Cold": "Холод",
+      "Fire": "Огонь",
+      "Force": "Сила",
+      "Lightning": "Молния",
+      "Necrotic": "Некротический",
+      "Piercing": "Колющий",
+      "Poison": "Яд",
+      "Psychic": "Психический",
+      "Radiant": "Лучистый",
+      "Slashing": "Режущий",
+      "Thunder": "Гром"
+    }
   },
 
   "DND5E.DamImm": "Невосприимчивость к урону",
   "DND5E.DamMod": "Модификатор урона",
   "DND5E.DamRes": "Устойчивость к урону",
   "DND5E.DamVuln": "Уязвимость к урону",
+
   "DND5E.Damage": "Урон",
-  "DND5E.DamageAcid": "Кислота",
-  "DND5E.DamageAll": "Весь урон",
   "DND5E.DamageApplication": {
     "Change": {
       "Modification": "Модификатор {type}",
@@ -2087,32 +2143,16 @@
     "Downgrading": "Понижение {source} до устойчивости",
     "Ignoring": "Игнорирование {source}"
   },
-  "DND5E.DamageBludgeoning": "Дробящий",
-  "DND5E.DamageCold": "Холод",
-  "DND5E.DamageFire": "Огонь",
-  "DND5E.DamageForce": "Сила",
-  "DND5E.DamageLightning": "Молния",
   "DND5E.DamageModification": {
     "Label": "Модификатор урона",
     "Hint": "Формулы, которые будут добавлены к урону определённого типа, нанесенному этому актеру. Отрицательные значения уменьшают получаемый урон.",
     "BypassHint": "Предметы с этими свойствами игнорируют модификаторы к физическому урону."
   },
-  "DND5E.DamageNecrotic": "Некротический",
-  "DND5E.DamagePiercing": "Колющий",
-  "DND5E.DamagePhysical": "Немагический физический",
-  "DND5E.DamagePhysicalBypass": "Физическое пробивание",
-  "DND5E.DamagePhysicalBypassHint": "Предметы с этим свойством игнорируют устойчивость к физическому урону.",
-  "DND5E.DamagePhysicalBypasses": "{damageTypes} от атак, которые не {bypassTypes}",
-  "DND5E.DamagePhysicalBypassesShort": "Игнорируется источниками {type}",
-  "DND5E.DamagePoison": "Яд",
-  "DND5E.DamagePsychic": "Психический",
-  "DND5E.DamageRadiant": "Лучистый",
   "DND5E.DamageRoll": "Бросок урона",
-  "DND5E.DamageSlashing": "Режущий",
   "DND5E.DamageThreshold": "Предел прочности",
-  "DND5E.DamageThunder": "Гром",
   "DND5E.DamageType": "Тип урона",
   "DND5E.DamageTypes": "Типы урона",
+
   "DND5E.Dawn": "Рассвет",
   "DND5E.Day": "День",
   "DND5E.DeathSave": "Испытание против смерти",
@@ -2869,7 +2909,15 @@
   "DND5E.Formula": "Формула",
   "DND5E.FormulaMalformedError": "Проблема в обработке формулы {property} в {name}.",
   "DND5E.FormulaMissingReferenceWarn": "Формула {property} в {name} имеет отсылки к отсутствующим данным: {references}",
-  "DND5E.Gear": "Снаряжение",
+
+  "DND5E.Gear": {
+    "Action": {
+      "Add": "Добавить снаряжение",
+      "Remove": "Убрать снаряжение"
+    },
+    "Label": "Снаряжение"
+  },
+
   "DND5E.Gender": "Пол",
   "DND5E.GlobalBonus": "Глобальные бонусы",
   "DND5E.GrantedAbilities": "Предоставлено",
@@ -2963,7 +3011,7 @@
       "healing": {
         "label": "Исцеление",
         "bonus": {
-          "label": "Бросок исцеления",
+          "label": "Бонус исцеления",
           "hint": "Бонус, добавляемый к броску исцеления."
         },
         "custom": {
@@ -3006,13 +3054,20 @@
         }
       }
     },
+    "HealingButton": "Исцеление",
+    "HealingRoll": "Бросок исцеления",
     "Hint": "Исцелить существо",
-    "Title": "Излечение"
+    "Title": "Излечение",
+    "Type": {
+      "Healing": "Пункты здоровья",
+      "HealingShort": "Исцеление",
+      "Maximum": "Максимальные пункты здоровья",
+      "MaximumShort": "Макс. ПЗ",
+      "Temporary": "Временные пункты здоровья",
+      "TemporaryShort": "Врем. ПЗ"
+    }
   },
 
-  "DND5E.Healing": "Исцеление",
-  "DND5E.HealingRoll": "Бросок исцеления",
-  "DND5E.HealingTemp": "Временные ПЗ",
   "DND5E.Height": "Рост",
 
   "DND5E.HITPOINTS": {
@@ -3180,6 +3235,7 @@
       "Finesse": "Фехтовальное",
       "Firearm": "Огнестрельное",
       "Focus": "Фокусирующее",
+      "Gear": "Снаряжение",
       "Heavy": "Тяжёлое",
       "Light": "Лёгкое",
       "Loading": "Заряжаемое",
@@ -3214,9 +3270,13 @@
   "DND5E.JackOfAllTrades": "Мастер на все руки",
 
   "DND5E.JOURNALENTRY": {
+    "Action": {
+      "ConfigureNavigation": "Настройка навигации"
+    },
     "Navigation": {
       "Next": "Вперёд",
       "Previous": "Назад",
+      "Title": "Навигация",
       "Up": "Вверх"
     }
   },
@@ -3450,7 +3510,7 @@
       "InvalidLevel": "требуется уровень {level} или выше",
       "Message": "{actor} {requirements}, чтобы взять {type}.",
       "MissingItem": "должен иметь {items}",
-      "NotRepeatable": "не выбирал это раньше"
+      "NotRepeatable": "не выбирал {name} раньше"
     }
   },
   "DND5E.Price": "Цена",
@@ -3853,22 +3913,23 @@
   "DND5E.Shape": "Форма",
 
   "DND5E.SheetClass": {
-    "Character": "Бланк персонажа игрока 5e",
-    "ClassSummary": "Бланк класса 5e",
-    "Container": "Бланк контейнера 5e",
-    "DifficultTerrain": "Бланк пересечённой местности 5e",
-    "Encounter": "Бланк боевой сцены 5e",
-    "Group": "Бланк группы 5e",
-    "Item": "Бланк предмета 5e",
-    "JournalEntry": "Бланк журнала 5e",
-    "JournalEntryLegacy": "Старый бланк журнала 5e",
-    "MapLocation": "Бланк зоны карты 5e",
-    "NPC": "Бланк персонажа мастера 5e",
-    "RotateArea": "Бланк поворота области 5e",
-    "Rule": "Бланк правила 5e",
-    "SpellList": "Бланк списка заклинаний 5e",
-    "Token": "Бланк токена 5e",
-    "Vehicle": "Бланк транспорта 5e"
+    "Character": "D&D 5e Бланк персонажа",
+    "ClassSummary": "D&D 5e Бланк описания класса",
+    "Container": "D&D 5e Бланк контейнера",
+    "DifficultTerrain": "D&D 5e Бланк пересечённой местности",
+    "Encounter": "D&D 5e Бланк боевой сцены",
+    "Group": "D&D 5e Бланк группы",
+    "Item": "D&D 5e Бланк предмета ",
+    "JournalEntry": "D&D 5e Бланк журнала",
+    "JournalEntryLegacy": "D&D 5e Бланк журнала (устаревший)",
+    "MapLocation": "D&D 5e Бланк зоны карты",
+    "NPC": "D&D 5e Бланк персонажа мастера",
+    "RollTable": "D&D 5e Бланк случайной таблицы",
+    "RotateArea": "D&D 5e Бланк поворота области",
+    "Rule": "D&D 5e Бланк правила",
+    "SpellList": "D&D 5e Бланк списка заклинаний",
+    "Token": "D&D 5e Бланк токена",
+    "Vehicle": "D&D 5e Бланк транспорта"
   },
 
   "DND5E.SheetModeEdit": "Изменение",
@@ -3994,6 +4055,10 @@
     }
   },
 
+  "DND5E.SourceItem": {
+    "Label": "Источник предмета",
+    "LockedHint": "Источник этого предмета определяется автоматически и не может быть изменён."
+  },
   "DND5E.Special": "Особое",
   "DND5E.SpecialHint": "Значения разделяются точкой с запятой.",
   "DND5E.SpecialTraits": "Особенности",
@@ -4007,6 +4072,21 @@
   },
   "DND5E.Speed": "Скорость",
   "DND5E.SpeedSpecial": "Способы перемещения",
+
+  "DND5E.SPELL": {
+    "Embed": {
+      "CastingTimeTrigger": "{castingTime}, которое занимает {trigger}",
+      "Tag": {
+        "Cantrip": "Фокус {school}",
+        "CantripLegacy": "фокус {school}",
+        "Classes": "{levelSchool} ({classes})",
+        "Leveled": "Круг {level} {school}",
+        "LeveledLegacy": "{levelOrdinal} круг {school}",
+        "Ritual": "{levelSchool} (ритуал)"
+      }
+    }
+  },
+
   "DND5E.SpellAbility": "Закл. хар-ка",
   "DND5E.SpellAbilitySet": "Сделать основной закл. хар-кой",
   "DND5E.SpellAdd": "Доб. закл.",
@@ -4078,6 +4158,7 @@
   "DND5E.SpellcastingClass": "Заклинания {class}",
   "DND5E.SpellComponent": "Компонент заклинания",
   "DND5E.SpellComponents": "Компоненты заклинания",
+  "DND5E.SpellComponentsMaterial": "{components} ({materials})",
   "DND5E.SpellCreate": "Создание заклинания",
   "DND5E.SpellDC": "СЛ заклинаний",
   "DND5E.SpellDetails": "Подробности заклинания",
@@ -4121,7 +4202,6 @@
     "Formula": "Формула подготовки",
     "Method": "Способ сотворения"
   },
-  "DND5E.SpellSourceClass": "Исходный класс",
   "DND5E.SpellPrepared": "Подготовлено",
   "DND5E.SpellProgArt": "Артефактор",
   "DND5E.SpellProgAvailable": "Доступные ячейки",
@@ -4303,6 +4383,10 @@
           "label": "Окно призыва",
           "hint": "Отображать окно запроса для размещения призыва? Игроки всё еще смогут призывать существ из карточек чата."
         }
+      },
+      "tempHP": {
+        "label": "Врем. ПЗ",
+        "hint": "Даёт временные ПЗ призванному существу, заменяя существующие временные ПЗ."
       }
     },
     "Action": {
@@ -4426,7 +4510,8 @@
         "Label": "Союзник",
         "Counted": {
           "any": "любые союзники",
-          "every": "каждый союзник",
+          "each": "каждый союзник",
+          "every": "все союзники",
           "one": "{number} союзник",
           "other": "{number} союзники"
         }
@@ -4438,21 +4523,26 @@
         "Label": "Круг",
         "Counted": {
           "one": "{number} круг",
-          "other": "{number} круги"
+          "other": "{number} круги",
+          "oneSized": "{sizes} круг",
+          "otherSized": "{number} {sizes} круги"
         }
       },
       "Cone": {
         "Label": "Конус",
         "Counted": {
           "one": "{number} конус",
-          "other": "{number} конусы"
+          "other": "{number} конусы",
+          "oneSized": "{sizes} конус",
+          "otherSized": "{number} {sizes} конусы"
         }
       },
       "Creature": {
         "Label": "Существо",
         "Counted": {
           "any": "любые существа",
-          "every": "каждое существо",
+          "each": "каждое существо",
+          "every": "все существа",
           "one": "{number} существо",
           "other": "{number} существа"
         }
@@ -4461,7 +4551,8 @@
         "Label": "Существо или объект",
         "Counted": {
           "any": "любые существа или объекты",
-          "every": "каждое существо или объект",
+          "each": "каждое существо или объект",
+          "every": "все существа или объекты",
           "one": "{number} существо или объект",
           "other": "{number} существа или объекты"
         }
@@ -4470,28 +4561,35 @@
         "Label": "Куб",
         "Counted": {
           "one": "{number} куб",
-          "other": "{number} кубы"
+          "other": "{number} кубы",
+          "oneSized": "{sizes} куб",
+          "otherSized": "{number} {sizes} кубы"
         }
       },
       "Cylinder": {
         "Label": "Цилиндр",
         "Counted": {
           "one": "{number} цилиндр",
-          "other": "{number} цилиндры"
+          "other": "{number} цилиндры",
+          "oneSized": "{sizes} цилиндр",
+          "otherSized": "{number} {sizes} цилиндры"
         }
       },
       "Emanation": {
         "Label": "Эманация",
         "Counted": {
           "one": "{number} эманация",
-          "other": "{number} эманации"
+          "other": "{number} эманации",
+          "oneSized": "{sizes} эманация",
+          "otherSized": "{number} {sizes} эманации"
         }
       },
       "Enemy": {
         "Label": "Враг",
         "Counted": {
           "any": "любые враги",
-          "every": "каждый враг",
+          "each": "каждый враг",
+          "every": "все враги",
           "one": "{number} враг",
           "other": "{number} враги"
         }
@@ -4500,14 +4598,17 @@
         "Label": "Линия",
         "Counted": {
           "one": "{number} линия",
-          "other": "{number} линии"
+          "other": "{number} линии",
+          "oneSized": "{sizes} линия",
+          "otherSized": "{number} {sizes} линии"
         }
       },
       "Object": {
         "Label": "Объект",
         "Counted": {
           "any": "любые объекты",
-          "every": "каждый объект",
+          "each": "каждый объект",
+          "every": "все объекты",
           "one": "{number} объект",
           "other": "{number} объекты"
         }
@@ -4516,40 +4617,58 @@
         "Label": "Радиус",
         "Counted": {
           "one": "{number} радиус",
-          "other": "{number} радиусы"
+          "other": "{number} радиусы",
+          "oneSized": "{sizes} радиус",
+          "otherSized": "{number} {sizes} радиусы"
         }
       },
       "Self": {
         "Label": "На себя"
       },
-      "Sphere": {
-        "Label": "Сфера",
-        "Counted": {
-          "one": "{number} сфера",
-          "other": "{number} сферы"
-        }
-      },
       "Space": {
         "Label": "Пространство",
         "Counted": {
           "any": "любые пространства",
-          "every": "каждое пространство",
+          "each": "каждое пространство",
+          "every": "все пространства",
           "one": "{number} пространство",
           "other": "{number} пространства"
+        }
+      },
+      "Sphere": {
+        "Label": "Сфера",
+        "Counted": {
+          "one": "{number} сфера",
+          "other": "{number} сферы",
+          "oneSized": "{sizes} сфера",
+          "otherSized": "{number} {sizes} сферы"
+        }
+      },
+      "Special": {
+        "Label": "{special}",
+        "Counted": {
+          "any": "любой {special}",
+          "each": "каждый {special}",
+          "every": "все {special}",
+          "one": "{number} {special}",
+          "other": "{number} {special}"
         }
       },
       "Square": {
         "Label": "Квадрат",
         "Counted": {
           "one": "{number} квадрат",
-          "other": "{number} квадраты"
+          "other": "{number} квадраты",
+          "oneSized": "{sizes} квадрат",
+          "otherSized": "{number} {sizes} квадраты"
         }
       },
       "Target": {
         "Label": "Цель",
         "Counted": {
           "any": "любые цели",
-          "every": "каждая цель",
+          "each": "каждая цель",
+          "every": "все цели",
           "one": "{number} цель",
           "other": "{number} цели"
         }
@@ -4558,14 +4677,17 @@
         "Label": "Стена",
         "Counted": {
           "one": "{number} стена",
-          "other": "{number} стены"
+          "other": "{number} стены",
+          "oneSized": "{sizes} стена",
+          "otherSized": "{number} {sizes} стены"
         }
       },
       "WillingCreature": {
         "Label": "Согласное существо",
         "Counted": {
           "any": "любые согласные существа",
-          "every": "каждое согласное существо",
+          "each": "каждое согласное существо",
+          "every": "все согласные существа",
           "one": "{number} согласное существо",
           "other": "{number} согласные существа"
         }
@@ -4976,21 +5098,25 @@
   "DND5E.UNITS": {
     "DISTANCE": {
       "Foot": {
+        "Abbreviation": "фт",
         "Label": "Футы",
-        "Abbreviation": "фт"
+        "Template": "фут"
       },
       "Kilometer": {
+        "Abbreviation": "км",
         "Label": "Километры",
-        "Abbreviation": "км"
+        "Template": "километр"
       },
       "Label": "Единицы дистанции",
       "Meter": {
+        "Abbreviation": "м",
         "Label": "Метры",
-        "Abbreviation": "м"
+        "Template": "метр"
       },
       "Mile": {
+        "Abbreviation": "мл",
         "Label": "Мили",
-        "Abbreviation": "мл"
+        "Template": "миля"
       }
     },
     "TIME": {
