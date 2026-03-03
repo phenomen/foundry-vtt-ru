@@ -62,6 +62,13 @@
     "dnd5e.rotateArea": "Поворот области"
   },
 
+  "TYPES.HINTS": {
+    "RegionBehavior": {
+      "dnd5e.difficultTerrain": "Отметить регион как пересечённую местность и выбрать её тип.",
+      "dnd5e.rotateArea": "Вращать токены, тайлы, стены и другие объекты вокруг центральной точки вращения."
+    }
+  },
+
   "DND5E.title": "Dungeon & Dragons Fifth Edition",
   "DND5E.AbbreviationCR": "КО",
   "DND5E.AbbreviationConc": "Конц.",
@@ -4489,6 +4496,10 @@
             "label": "Размер области",
             "hint": "Размер области по основной оси."
           },
+          "stationary": {
+            "label": "Неподвижная",
+            "hint": "Эманация не может быть перемещена после размещения."
+          },
           "type": {
             "label": "Тип области",
             "hint": "Тип области при выборе цели."
@@ -5621,7 +5632,7 @@
     "DamageExtended": "<em>Попадание:</em> {damage} ",
     "DamageDouble": "{first} и {second}",
     "DamageShort": "{formula} {type}",
-    "DamageLong": "{average} ({formula}) {type}",
+    "DamageLong": "{average} <span class=\"formula-group\">({formula})</span> {type}",
     "DC": "{check} СЛ {dc}",
     "DCPassiveShort": "СЛ {dc} пассивного {check}",
     "DCPassiveLong": "пассивное {check} с {dc} или выше",
