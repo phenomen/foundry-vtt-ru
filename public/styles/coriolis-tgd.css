@@ -148,16 +148,6 @@ section.tab.notes div.input-with-circle-title-small p {
 
 /* Hacks */
 
-/* "Armor - Info" */
-.cgd.actor.explorer.npc div.armor-item-title > label:nth-child(4) {
-  display: none;
-}
-
-/* "Weapons - Info" */
-.cgd.actor.explorer.npc div.weapon-item-title > label:nth-child(4) {
-  visibility: hidden;
-}
-
 /* "Weapons - Mod" */
 .cgd.actor.explorer.npc div.weapon-item-title > label:nth-child(2) {
   border-bottom: 1px dotted var(--color-scrollbar);
@@ -166,10 +156,4 @@ section.tab.notes div.input-with-circle-title-small p {
 /* "Weapons - Damage" */
 .cgd.actor.explorer.npc div.weapon-item-title > label:nth-child(3) {
   border-bottom: 1px dotted var(--color-scrollbar);
-}
-
-/* "Weapons" */
-.cgd.actor.explorer.npc div.weapon-item-title > label:nth-child(1) {
-  position: relative;
-  top: 14px;
 }
