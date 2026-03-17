@@ -1,6 +1,6 @@
 # Русский перевод для Foundry VTT
 
-![](https://img.shields.io/badge/FVTT-v13-green)
+![](https://img.shields.io/badge/FVTT-v13-green) ![](https://img.shields.io/badge/FVTT-v14-green)
 
 ![](/public/images/module/cover.webp)
 
@@ -8,8 +8,8 @@
 
 ## Ссылки
 
-- [manifest.json V13](https://github.com/phenomen/foundry-vtt-ru/releases/download/latest/module.json)
-- [manifest.json V12](https://github.com/phenomen/foundry-vtt-ru/releases/download/legacy/module.json)
+- [manifest.json V14](https://github.com/phenomen/foundry-vtt-ru/releases/download/release-v14/module.json)
+- [manifest.json V13](https://github.com/phenomen/foundry-vtt-ru/releases/download/release-v13/module.json)
 
 - [Русскоязычное сообщество Foundry в Discord](https://discord.gg/Z2CXFy35WF)
 - [Модуль на сайте Foundry VTT](https://foundryvtt.com/packages/ru-ru/)
