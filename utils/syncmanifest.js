@@ -3,8 +3,8 @@ import path from "node:path";
 
 const globs = {
   modules: new Glob("public/i18n/modules/*.json"),
-  styles: new Glob("public/styles/*.css"),
   systems: new Glob("public/i18n/systems/*.json"),
+  styles: new Glob("public/styles/*.css"),
 };
 
 const languages = [

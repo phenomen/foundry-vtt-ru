@@ -2,12 +2,12 @@ import { defineConfig } from "vite-plus";
 
 export default defineConfig({
   build: {
-    emptyOutDir: true,
     lib: {
       entry: "src/index.js",
       formats: ["es"],
       name: "ru-ru",
     },
+    emptyOutDir: true,
     minify: "oxc",
     outDir: "ru-ru",
     rolldownOptions: {

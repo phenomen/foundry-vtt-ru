@@ -1,6 +1,6 @@
 {
   "name": "@phenomen/foundry-vtt-ru",
-  "version": "13.351",
+  "version": "13",
   "private": "true",
   "type": "module",
   "scripts": {
@@ -8,12 +8,11 @@
     "format": "vp fmt",
     "lint": "vp lint",
     "prepare": "vp config",
-    "util:symlink": "bun utils/symlink.js",
-    "util:manifest": "bun utils/syncmanifest.js"
+    "util:manifest": "bun utils/syncmanifest.js",
+    "util:symlink": "bun utils/symlink.js"
   },
   "devDependencies": {
-    "vite": "npm:@voidzero-dev/vite-plus-core@latest",
-    "vite-plus": "latest"
+    "vite-plus": "^0.1.12"
   },
   "overrides": {
     "vite": "npm:@voidzero-dev/vite-plus-core@latest",

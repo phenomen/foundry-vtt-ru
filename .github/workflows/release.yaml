@@ -1,9 +1,10 @@
-name: Build and Release (V13)
+name: Build and Release
 
 on:
   push:
     branches:
-      - main
+      - v13
+      - v14
 
 jobs:
   build-and-release:
@@ -29,10 +30,10 @@ jobs:
 
       - name: Create/Update Release
         id: create_release
-        uses: softprops/action-gh-release@v2.2.2
+        uses: softprops/action-gh-release@v2.6.1
         with:
-          tag_name: latest
-          name: V13
+          tag_name: release-${{ github.ref_name }}
+          name: ${{ github.ref_name }}
           draft: false
           prerelease: false
           files: |
