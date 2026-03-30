@@ -386,16 +386,16 @@
     "RevealMessage": "Показать всем",
     "ConcealMessage": "Сделать приватным",
     "RollVisibility": "Видимость броска",
-    "RollTables": "Rollable Tables",
-    "SendMessage": "Send Message",
-    "JumpToBottom": "Jump to Bottom",
+    "RollTables": "Случайные таблицы",
+    "SendMessage": "Отправить сообщение",
+    "JumpToBottom": "Переход в конец",
     "PrivateRollContent": "{user} скрыто бросил кости",
-    "UnknownUser": "Unknown User",
+    "UnknownUser": "Неизвестный участник",
     "MODES": {
-      "blind": "Blind to Gamemasters",
-      "gm": "Private to Gamemasters",
-      "ic": "Public as Character",
-      "public": "Public as User",
+      "blind": "Вслепую для ведущего",
+      "gm": "Приватно для ведущего",
+      "ic": "Публично от персонажа",
+      "public": "Публично от участника",
       "self": "Только себе"
     }
   },
@@ -497,111 +497,111 @@
   "COMBATANT": {
     "Status": "Статус бойца",
     "UpdateNamed": "Обновить бойца: {name}",
-    "Unknown": "Unknown Combatant",
-    "PanTo": "Pan to Combatant",
-    "Ping": "Ping Token",
+    "Unknown": "Неизвестный боец",
+    "PanTo": "Переместиться к бойцу",
+    "Ping": "Маячок на бойце",
     "ToggleVis": "Видимость",
-    "ToggleDead": "Mark Defeated",
+    "ToggleDead": "Отметить побеждённым",
     "MovementHistoryCleared": "История перемещений для \"{name}\" очищена.",
     "WarnNonVisibleToken": "Этот боец вам не виден.",
 
     "FIELDS": {
-      "actorId.label": "Represented Actor",
-      "tokenId.label": "Represented Token",
+      "actorId.label": "Представляемый актёр",
+      "tokenId.label": "Представляемый токен",
       "name.label": "Отображаемое имя",
-      "defeated.label": "Defeated",
-      "hidden.label": "Hidden",
-      "img.label": "Thumbnail Image",
-      "initiative.label": "Initiative Value"
+      "defeated.label": "Побеждённый",
+      "hidden.label": "Скрытый",
+      "img.label": "Эскиз",
+      "initiative.label": "Инициатива"
     },
 
     "ACTIONS": {
-      "Create": "Create Combatant",
-      "Update": "Update Combatant",
-      "Remove": "Remove Combatant",
-      "Clear": "Clear Initiative",
-      "Reroll": "Re-roll Initiative",
+      "Create": "Создать бойца",
+      "Update": "Обновить бойца",
+      "Remove": "Удалить бойца",
+      "Clear": "Очистка инициативы",
+      "Reroll": "Переброс инициативы",
       "ClearMovementHistory": "Очистить историю перемещений"
     }
   },
 
   "COMMON": {
     "AreYouSure": "Вы уверены?",
-    "Cancel": "Cancel",
-    "Confirm": "Confirm",
-    "Default": "Default",
-    "Delete": "Delete",
-    "Invalid": "Invalid",
-    "No": "No",
-    "None": "None",
-    "Preview": "Preview",
-    "Unknown": "Unknown",
-    "Warning": "Warning",
+    "Cancel": "Отмена",
+    "Confirm": "Применить",
+    "Default": "По умолчанию",
+    "Delete": "Удалить",
+    "Invalid": "Некорректно",
+    "No": "Нет",
+    "None": "Нет",
+    "Preview": "Предпросмотр",
+    "Unknown": "Неизвестно",
+    "Warning": "Предупреждение",
     "Yes": "Да"
   },
 
   "COMPENDIUM": {
     "Name": "Название библиотеки",
-    "Create": "Create Compendium",
+    "Create": "Создать библиотеку",
     "CreateHint": "Создание новой библиотеки в вашем мире.",
     "FilterDocuments": "Фильтр документов по типу",
     "ClearFilters": "Очистить фильтры",
     "Delete": {
-      "Option": "Delete Compendium",
-      "Title": "Delete Compendium: {compendium}",
-      "Warning": "This Compendium Pack will be permanently deleted and cannot be recovered."
+      "Option": "Удалить библиотеку",
+      "Title": "Удаление библиотеки: {compendium}",
+      "Warning": "Эта библиотека будет удалена без возможности восстановления."
     },
-    "DeleteEntry": "Delete Entry",
+    "DeleteEntry": "Удалить запись",
     "Duplicate": {
-      "Option": "Duplicate Compendium",
-      "Title": "Duplicate Compendium: {compendium}",
-      "Label": "New Compendium Title",
-      "Hint": "You may duplicate this compendium into your World to have a local copy of its content which is safe to edit.",
-      "Submit": "Duplicate"
+      "Option": "Создать копию",
+      "Title": "Копия библиотеки: {compendium}",
+      "Label": "Название новой библиотеки",
+      "Hint": "Вы можете сохранить копию этой библиотеки в вашем мире, чтобы иметь локальную копию для редактирования.",
+      "Submit": "Создать копию"
     },
-    "ErrorRequireTitle": "You must provide a title to create a World Compendium pack.",
+    "ErrorRequireTitle": "Вы должны дать название библиотеке.",
     "ImportAll": {
-      "Option": "Import All Content",
-      "Title": "Import All Content: {compendium}",
-      "Submit": "Import",
-      "Hint": "Import the complete content from this Compendium pack into a new or existing Folder. Please note that importing large Compendium packs will have a negative impact on application performance.",
-      "Start": "Importing {number} {type} Documents and {folderNumber} Folders into the {folder} folder. Please be patient.",
-      "Finish": "Successfully imported {number} {type} Documents and {folderNumber} Folders into the {folder} folder."
+      "Option": "Импорт всего содержимого",
+      "Title": "Импорт всего содержимого: {compendium}",
+      "Submit": "Импорт",
+      "Hint": "Импорт всего содержимого этой библиотеки в новую или существующую папку. Импорт большого числа библиотек может отрицательно повлиять на производительность.",
+      "Start": "Импорт {number} {type} документов и {folderNumber} папок в папку {folder}. Пожалуйста, подождите.",
+      "Finish": "Успешно импортировано {number} {type} документов и {folderNumber} папок в папку {folder}."
     },
-    "ImportEntry": "Import Entry",
-    "Locked": "{title} [Locked]",
+    "ImportEntry": "Импорт записи",
+    "Locked": "{title} [Заблокирована]",
     "Migration": {
-      "Begin": "Beginning migration for Compendium pack {collection}, please be patient.",
-      "Complete": "Successfully migrated Compendium pack {collection}."
+      "Begin": "Производится миграция библиотеки {collection}, пожалуйста подождите.",
+      "Complete": "Библиотека {collection} успешно мигрирована."
     },
-    "SidebarTitle": "Compendium Packs",
-    "Type": "Document Type",
-    "TypeHint": "Each Compendium pack contains a specific type of Document.",
+    "SidebarTitle": "Библиотеки",
+    "Type": "Тип документа",
+    "TypeHint": "Каждая библиотека содержит определённый тип документов.",
     "ToggleLocked": {
-      "Option": "Toggle Edit Lock",
-      "Title": "Toggle Edit Lock: {compendium}",
-      "Unlock": "Unlock",
-      "Warning": "You are attempting to unlock for editing a compendium that does not belong to this World. Any changes you make in this compendium pack may be lost if the System or Module which owns it is updated. You may wish to duplicate the compendium to your World instead. How do you wish to proceed?"
+      "Option": "Режим редактирования",
+      "Title": "Режим редактирования: {compendium}",
+      "Unlock": "Разблокировать",
+      "Warning": "Вы собираетесь разблокировать библиотеку для редактирования, которая не принадлежит вашему миру. Желательно вместо этого создать локальную копию библиотеки, чтобы не потерять изменения при обновлении модуля или системы. Продолжить?"
     },
-    "CannotViewWarning": "You do not have sufficient permission to view this Compendium pack.",
-    "OwnershipInheritBelow": "Inherit from below",
-    "OwnershipReset": "Reset to Default",
+    "CannotViewWarning": "У вас нет прав доступа к этой библиотеке.",
+    "OwnershipInheritBelow": "Наследование снизу",
+    "OwnershipReset": "Сброс настроек",
     "ART": {
       "CONFIG": {
-        "Hint": "Use the arrows to adjust the priority of the art sources. When a single Actor has art provided by multiple sources, the one with the highest priority will be used.",
-        "Portraits": "Portraits",
-        "PriorityDecrease": "Decrease Priority",
-        "PriorityIncrease": "Increase Priority",
-        "Tokens": "Tokens"
+        "Hint": "Используйте стрелки, чтобы управлять приоритетом источников изображений. Если изображение актёра предоставляется несколькими источниками, то будет выбран источник с наивысшим приоритетом.",
+        "Portraits": "Портреты",
+        "PriorityDecrease": "Понижение приоритета",
+        "PriorityIncrease": "Повышение приоритета",
+        "Tokens": "Токены"
       },
       "SETTING": {
-        "Hint": "Configure which system- and module-provided art should be used.",
-        "Label": "Compendium Art",
-        "Title": "Compendium Art"
+        "Hint": "Настройка предоставляемых системой или модулем изображений.",
+        "Label": "Изображения библиотеки",
+        "Title": "Изображения библиотеки"
       }
     },
-    "CopyId": "Copy Compendium ID",
-    "IdCopiedClipboard": "Compendium ID \"{id}\" copied to clipboard."
+    "CopyId": "Копировать ID библиотеки",
+    "IdCopiedClipboard": "ID библиотеки \"{id}\" скопирован в буфер."
   },
 
   "CONTROLS": {
@@ -631,31 +631,31 @@
     "DrawingClear": "Удаление рисунков",
     "DrawingConfig": "Настройки рисования",
     "GroupWall": "Инструменты стен",
-    "WallDraw": "Draw Wall",
-    "WallSolid": "Solid Wall",
-    "WallSolidBlocks": "Movement, vision, and hearing",
-    "WallInvisible": "Invisible Wall",
+    "WallDraw": "Нарисовать стену",
+    "WallSolid": "Обычная стена",
+    "WallSolidBlocks": "Движение, зрение, слух",
+    "WallInvisible": "Невидимая стена",
     "WallInvisibleBlocks": "Перемещение",
-    "WallTerrain": "Terrain Wall",
+    "WallTerrain": "Ландшафтная стена",
     "WallTerrainBlocks": "Зрение после второй стены, движение, слух",
-    "WallEthereal": "Ethereal Wall",
+    "WallEthereal": "Бесплотная стена",
     "WallEtherealBlocks": "Зрение и слух",
-    "WallDoor": "Door",
-    "WallDoorBlocks": "Movement, vision, and hearing unless opened",
-    "WallSecret": "Secret Door",
+    "WallDoor": "Дверь",
+    "WallDoorBlocks": "Движение, зрение, слух, если закрыта",
+    "WallSecret": "Скрытая дверь",
     "WallSecretHidden": "Скрытность",
     "WallSecretHiddenP": "Скрытые двери не видны игрокам",
-    "WallSelect": "Select Walls",
+    "WallSelect": "Выбор стен",
     "CommonMoveWithoutSnapping": "Перемещение без прикрепления",
     "WallSelectEdit": "<span class=\"reference\">двойной ЛКМ</span>",
     "WallSnapP": "Точки стены будут прикрепляться к ближайшим вершинам сетки.",
     "WallCloseDoors": "Закрытие всех дверей",
     "WallDoorsClosed": "Закрыто {number} дверей",
     "WallClear": "Удаление стен",
-    "WallWindow": "Window",
+    "WallWindow": "Окно",
     "WallWindowBlocks": "зрение, движение, слух до определённого расстояния",
     "GroupLighting": "Инструменты освещения",
-    "LightSelect": "Select Light Sources",
+    "LightSelect": "Выбор источников света",
     "LightDraw": "Источник света",
     "LightClear": "Удаление источников света",
     "LightReset": "Сброс тумана войны",
@@ -671,7 +671,7 @@
     "FOWResetTitle": "Сброс тумана войны",
     "FOWResetDesc": "Это действие сбросит весь открытый туман на сцене для всех игроков.",
     "GroupSound": "Инструменты фоновых звуков",
-    "SoundSelect": "Select Ambient Sounds",
+    "SoundSelect": "Выбор фоновых звуков",
     "SoundDraw": "Источник фонового звука",
     "SoundPreview": "Прослушивание звуков",
     "SoundPreviewP": "Если активно, то при наведении курсора на место в сцене вы будете слышать звук, как если бы там находился ваш токен.",
@@ -770,8 +770,8 @@
     "KeyPaste": "Вставка элементов сцены",
     "KeyUndo": "Отмена операции на сцене",
     "KeyHotbar": "Активация ячейки панели действий",
-    "RulerPlaceWaypoint": "Размещение точки пути",
-    "RulerRemoveWaypoint": "Удаление точки пути",
+    "RulerPlaceWaypoint": "Размещение точки маршрута",
+    "RulerRemoveWaypoint": "Удаление точки маршрута",
     "ObjectSheet": "Открытие бланка токена",
     "ObjectHUD": "Отображение интерфейса объекта",
     "ObjectConfig": "Открытие настроек объекта",
@@ -797,7 +797,7 @@
     "DrawingHeader": "Управление рисованием",
     "DrawingTextConfirm": "Подтверждение текста",
     "DrawingTextCancel": "Отмена ввода текста",
-    "CommonCreate": "Создать",
+    "CommonCreate": "Создание",
     "CommonMove": "Перемещение",
     "CommonEdit": "Изменение",
     "CommonHide": "Скрытие",
@@ -839,7 +839,7 @@
     "SubmitRollPl": "Отправить броски",
     "WarnMissingData": "Параметр {match} не был найден в данных броска.",
     "CONFIG": {
-      "DefaultMethod": "Default Method",
+      "DefaultMethod": "Способ по умолчанию",
       "Hint": "Способ броска костей.",
       "Label": "Кости",
       "Title": "Настройки костей"
@@ -848,7 +848,7 @@
       "Default": "По умолчанию",
       "Mersenne": "Цифровой бросок",
       "Manual": "Ручной ввод",
-      "UseDefault": "Use Default"
+      "UseDefault": "Использовать по умолчанию"
     }
   },
 
@@ -925,7 +925,7 @@
     "Scenes": "Сцены",
     "Setting": "Настройка",
     "Settings": "Настройки",
-    "Sheet": "Sheet",
+    "Sheet": "Бланк",
     "RollTable": "Случайная таблица",
     "RollTables": "Случайные таблицы",
     "Region": "Регион",
@@ -948,8 +948,8 @@
       "type.label": "Тип",
       "img.label": "Файл изображения",
       "description.label": "Описание",
-      "folder.label": "Folder",
-      "author.label": "Author",
+      "folder.label": "Папка",
+      "author.label": "Автор",
       "width.label": "Ширина",
       "height.label": "Высота",
       "hidden.label": "Скрыто",
@@ -962,48 +962,48 @@
       "x.label": "X",
       "y.label": "Y",
       "levels": {
-        "label": "Levels",
-        "hint": "Choose the Levels in which inclusion applies. An empty selection applies inclusion to all Levels."
+        "label": "Уровни",
+        "hint": "Выберите уровни, к которым применяется включение. Пустой выбор применяет включение ко всем уровням."
       }
     }
   },
 
   "DRAWING": {
-    "ConfigDefaultTitle": "Default Drawing Configuration",
-    "SubmitDefault": "Configure Default",
-    "NotePosition": "Adjust the position and visibility of the Drawing.",
-    "NoteLines": "Adjust the outer line work for the Drawing.",
-    "NoteFill": "Adjust the interior fill preferences for this Drawing.",
-    "NoteText": "Adjust the text label applied to this Drawing (if any).",
-    "ZIndex": "Z-Index",
-    "Object": "Object",
-    "Information": "Information",
-    "JointValidationError": "Drawings must have visible text, a visible fill, or a visible line.",
-    "JointValidationErrorUI": "Drawings must have visible text, a visible fill, or a visible line. Please check the default Drawings configuration settings.",
+    "ConfigDefaultTitle": "Настройки рисунка по умолчанию",
+    "SubmitDefault": "Настройки по умолчанию",
+    "NotePosition": "Расположение и видимость рисунка.",
+    "NoteLines": "Настройка обрамляющих линий рисунка.",
+    "NoteFill": "Настройка внутреннего заполнения рисунка.",
+    "NoteText": "Настройка текстовых надписей рисунка.",
+    "ZIndex": "Z-порядок",
+    "Object": "Объект",
+    "Information": "Информация",
+    "JointValidationError": "Рисунок должен содержать видимый текст, заливку или линию.",
+    "JointValidationErrorUI": "Рисунок должен содержать видимый текст, заливку или линию. Проверьте настройки рисунков по умолчанию.",
     "TABS": {
-      "position": "Position",
-      "lines": "Lines",
-      "fill": "Fill",
-      "text": "Text"
+      "position": "Расположение",
+      "lines": "Линии",
+      "fill": "Заполнение",
+      "text": "Текст"
     },
     "FILL_TYPES": {
-      "none": "None",
-      "solid": "Solid",
-      "pattern": "Pattern"
+      "none": "Нет",
+      "solid": "Сплошная",
+      "pattern": "Узор"
     },
     "FIELDS": {
       "bezierFactor": {
-        "label": "Smoothing Factor",
-        "hint": "For freehand drawing, the smoothing factor controls the amount of spline smoothing."
+        "label": "Сглаживание",
+        "hint": "Сглаживание влияет на остроту углов при свободном рисовании."
       },
-      "fillAlpha.label": "Fill Opacity",
-      "fillColor.label": "Fill Color",
-      "fillType.label": "Fill Types",
-      "fontFamily.label": "Font Family",
-      "fontSize.label": "Font Size",
+      "fillAlpha.label": "Непрозрачность заливки",
+      "fillColor.label": "Цвет заливки",
+      "fillType.label": "Тип заливки",
+      "fontFamily.label": "Шрифт",
+      "fontSize.label": "Размер шрифта",
       "interface": {
-        "label": "Drawing Role",
-        "hint": "A Drawing that represents an \"Object\" is rendered in the Primary Canvas Group and is affected by lighting and fog of war exploration. One that conveys \"Information\" is rendered in the Interface Group and is visible to all players unless hidden."
+        "label": "Роль рисунка",
+        "hint": "Рисунок, представляющий \"Объект\", отображается на сцене и подвержен воздействию освещения и тумана войны. Рисунок, являющийся \"Информацией\", отображается на слое интерфейса и виден всем игрокам, если не скрыт."
       },
       "name": {
         "hint": "Опциональное название для идентификации рисунка.",
@@ -1013,78 +1013,78 @@
         "width.label": "Ширина",
         "height.label": "Высота"
       },
-      "sort.label": "Sort",
-      "strokeAlpha.label": "Line Opacity",
-      "strokeColor.label": "Line Color",
+      "sort.label": "Сортировка",
+      "strokeAlpha.label": "Непрозрачность линии",
+      "strokeColor.label": "Цвет линии",
       "strokeWidth.label": "Ширина линии",
-      "text.label": "Text Label",
-      "textAlpha.label": "Text Opacity",
-      "textColor.label": "Text Color",
-      "texture.label": "Fill Texture"
+      "text.label": "Текст",
+      "textAlpha.label": "Непрозрачность текста",
+      "textColor.label": "Цвет текста",
+      "texture.label": "Текстура заливки"
     },
     "ACTIONS": {
-      "resetDefaults": "Reset Defaults",
-      "submitCreate": "Create Drawing",
-      "submitUpdate": "Update Drawing"
+      "resetDefaults": "Сброс настроек",
+      "submitCreate": "Создать рисунок",
+      "submitUpdate": "Обновить рисунок"
     }
   },
 
   "EFFECT": {
-    "StatusAsleep": "Asleep",
-    "StatusBleeding": "Bleeding",
-    "StatusBlessed": "Blessed",
-    "StatusBlind": "Blind",
-    "StatusBurning": "Burning",
-    "StatusBurrow": "Burrowing",
-    "StatusCorrode": "Corroding",
-    "StatusCursed": "Cursed",
-    "StatusDead": "Dead",
-    "StatusDeaf": "Deaf",
-    "StatusDegen": "Degenerating",
-    "StatusDisease": "Diseased",
-    "StatusDowngrade": "Weakened",
-    "StatusFear": "Frightened",
-    "StatusFireShield": "Fire Shield",
-    "StatusFlying": "Flying",
-    "StatusFrozen": "Frozen",
-    "StatusHolyShield": "Holy Shield",
-    "StatusHover": "Hovering",
-    "StatusIceShield": "Ice Shield",
-    "StatusInvisible": "Invisible",
-    "StatusMagicShield": "Magic Shield",
-    "StatusMarked": "Marked",
-    "StatusParalysis": "Paralyzed",
-    "StatusPoison": "Poisoned",
-    "StatusProne": "Prone",
-    "StatusRadiation": "Radioactive",
-    "StatusRegen": "Regenerating",
-    "StatusRestrained": "Restrained",
-    "StatusShocked": "Shocked",
-    "StatusSilenced": "Silenced",
-    "StatusStunned": "Stunned",
-    "StatusTarget": "Targeted",
-    "StatusUnconscious": "Unconscious",
-    "StatusUpgrade": "Empowered",
-    "Submit": "Submit Changes",
+    "StatusAsleep": "Сон",
+    "StatusBleeding": "Кровотечение",
+    "StatusBlessed": "Благословение",
+    "StatusBlind": "Слепота",
+    "StatusBurning": "Горение",
+    "StatusBurrow": "Зарывание",
+    "StatusCorrode": "Разъедание",
+    "StatusCursed": "Проклятие",
+    "StatusDead": "Смерть",
+    "StatusDeaf": "Глухота",
+    "StatusDegen": "Разложение",
+    "StatusDisease": "Болезнь",
+    "StatusDowngrade": "Ослабление",
+    "StatusFear": "Испуг",
+    "StatusFireShield": "Огненный щит",
+    "StatusFlying": "Полёт",
+    "StatusFrozen": "Заморозка",
+    "StatusHolyShield": "Священный щит",
+    "StatusHover": "Наведение",
+    "StatusIceShield": "Ледяной щит",
+    "StatusInvisible": "Невидимость",
+    "StatusMagicShield": "Магический щит",
+    "StatusMarked": "Отметка",
+    "StatusParalysis": "Паралич",
+    "StatusPoison": "Отравление",
+    "StatusProne": "Распластанность",
+    "StatusRadiation": "Облучение",
+    "StatusRegen": "Регенерация",
+    "StatusRestrained": "Обездвиженность",
+    "StatusShocked": "Шокированный",
+    "StatusSilenced": "Немота",
+    "StatusStunned": "Шок",
+    "StatusTarget": "Нацеливание",
+    "StatusUnconscious": "Потеря сознания",
+    "StatusUpgrade": "Усиление",
+    "Submit": "Применение изменений",
     "CHANGES": {
       "PHASES": {
         "initial": {
-          "label": "Initial",
-          "hint": "After base-data attributes are initialized, but before derived data is prepared"
+          "label": "Начальная",
+          "hint": "После инициализации базовых параметров, но до вычисления производных параметров"
         },
         "final": {
-          "label": "Final",
-          "hint": "After derived-data attributes are computed"
+          "label": "Завершающая",
+          "hint": "После вычисления производных параметров"
         }
       },
       "TYPES": {
-        "custom": "Custom",
-        "multiply": "Multiply",
-        "add": "Add",
-        "subtract": "Subtract",
-        "downgrade": "Downgrade",
-        "upgrade": "Upgrade",
-        "override": "Override"
+        "custom": "Особая",
+        "multiply": "Умножение",
+        "add": "Добавление",
+        "subtract": "Вычитание",
+        "downgrade": "Понижение",
+        "upgrade": "Повышение",
+        "override": "Перезапись"
       }
     },
     "DURATION": {
@@ -1146,61 +1146,61 @@
     },
     "FIELDS": {
       "name.label": "Название эффекта",
-      "img.label": "Effect Icon",
-      "tint.label": "Icon Tint Color",
-      "description.label": "Effect Description",
-      "disabled.label": "Effect Suspended",
+      "img.label": "Иконка эффекта",
+      "tint.label": "Оттенок иконки",
+      "description.label": "Описание эффекта",
+      "disabled.label": "Эффект приостановлен",
       "origin.label": "Источник эффекта",
       "transfer": {
-        "label": "Apply Effect to Actor",
-        "hint": "If checked, this Effect will be applied to any Actor that owns this Effect's parent Item."
+        "label": "Применить эффект к актёру",
+        "hint": "Эффект будет применён к актёру, который владеет предметом-источником этого эффекта."
       },
-      "statuses.label": "Status Conditions",
+      "statuses.label": "Статусы",
       "showIcon": {
-        "label": "Show Icon?",
-        "hint": "Should the icon representing this Effect be displayed in the UI while this effect is active?"
+        "label": "Отображать иконку?",
+        "hint": "Отображать иконку эффекта в интерфейсе, когда этот эффект активен?"
       },
       "changes": {
         "element": {
-          "key.label": "Attribute Key",
-          "type.label": "Type",
-          "value.label": "Value",
-          "priority.label": "Priority",
+          "key.label": "Ключ параметра",
+          "type.label": "Тип",
+          "value.label": "Значение",
+          "priority.label": "Приоритет",
           "phase": {
-            "label": "Phase",
-            "hint": "The point in data preparation or another event a change is to be applied."
+            "label": "Фаза",
+            "hint": "Момент в подготовке данных или другого события, на которое должно быть применено изменение."
           }
         }
       },
       "start": {
-        "combatant.label": "Combatant",
-        "round.label": "Round",
-        "turn.label": "Turn",
-        "initiative.label": "Initiative",
+        "combatant.label": "Боец",
+        "round.label": "Раунд",
+        "turn.label": "Ход",
+        "initiative.label": "Инициатива",
         "time.label": "Время начала"
       },
       "duration": {
-        "value.label": "Duration Value",
-        "units.label": "Duration Units",
-        "expiry.label": "Expiry Event"
+        "value.label": "Значение длительности",
+        "units.label": "Единицы длительности",
+        "expiry.label": "Событие истечения"
       }
     },
     "SHOW_ICON": {
-      "always": "Always",
-      "conditional": "If Temporary",
-      "never": "Never"
+      "always": "Всегда",
+      "conditional": "Если временный",
+      "never": "Никогда"
     },
     "START": {
-      "Header": "Effect Start",
+      "Header": "Начало эффекта",
       "Time": "Время начала",
-      "Combat": "Round {round}, Turn {turn}",
-      "Combatant": "{combatant} (Initiative Roll: {initiative})",
-      "NoInitiative": "Not Rolled"
+      "Combat": "Раунд {round}; Ход {turn}",
+      "Combatant": "{combatant} (инициатива: {initiative})",
+      "NoInitiative": "Не брошен"
     },
     "TABS": {
-      "details": "Details",
-      "duration": "Duration",
-      "changes": "Changes"
+      "details": "Подробности",
+      "duration": "Длительность",
+      "changes": "Изменения"
     }
   },
 
@@ -1231,10 +1231,10 @@
   },
 
   "WARNING": {
-    "GridConfigNoBG": "You are using the grid configuration tool for a scene with no background image. This is not currently recommended and may produce unpredictable results.",
-    "ForegroundDimensionsMismatch": "The dimensions of your configured Foreground Layer image do not match the dimensions of the Background Layer image for this scene. The foreground has been resized which may have undesired results.",
+    "GridConfigNoBG": "Вы используете инструмент настройки сетки на сцене без фонового изображения. Это не рекомендуется и может привести к непредвиденным ошибкам.",
+    "ForegroundDimensionsMismatch": "Размер изображения для слоя переднего плана  не совпадает с размером изображения на фоновом слое этой сцены. Передний план был подогнан по размеру, что может привести к нежелательным результатам.",
     "ObjectDoesNotExist": "{name} \"{identifier}\" не существует.",
-    "TilingSpriteDeprecation": "A module or system is using the legacy TilingSprite class which is no longer supported."
+    "TilingSpriteDeprecation": "Модуль или система использует устаревший TilingSprite, который больше не поддерживается."
   },
 
   "EULA": {
@@ -1248,96 +1248,96 @@
   },
 
   "EDITOR": {
-    "Format": "Format",
+    "Format": "Формат",
     "Font": {
       "Color": {
-        "Label": "Font Color",
-        "Set": "Set Font Color",
-        "Title": "Color"
+        "Label": "Цвет грифта",
+        "Set": "Назначить цвет шрифта",
+        "Title": "Цвет"
       },
       "Size": {
-        "Huge": "Huge",
-        "Invalid": "Invalid font size",
-        "Label": "Font Size",
-        "Large": "Large",
-        "Normal": "Normal",
+        "Huge": "Огромный",
+        "Invalid": "Некорректный размер",
+        "Label": "Размер шрифта",
+        "Large": "Большой",
+        "Normal": "Обычный",
         "Placeholder": "12pt",
-        "Set": "Set Font Size",
-        "Small": "Small",
-        "Title": "Size"
+        "Set": "Назначить размер шрифта",
+        "Small": "Маленький",
+        "Title": "Размер"
       },
-      "Title": "Font"
+      "Title": "Шрифт"
     },
-    "Inline": "Inline",
-    "Block": "Block",
-    "Headings": "Headings",
+    "Inline": "Строковый",
+    "Block": "Блочный",
+    "Headings": "Заголовки",
     "Heading": "Заголовок {level}",
-    "Alignment": "Alignment",
-    "Custom": "Custom",
-    "Insert": "Insert",
-    "Lists": "Lists",
-    "Paragraph": "Paragraph",
-    "Bold": "Bold",
-    "Italic": "Italic",
-    "Code": "Code",
-    "Underline": "Underline",
-    "Strikethrough": "Strikethrough",
-    "Superscript": "Superscript",
-    "Subscript": "Subscript",
-    "Blockquote": "Blockquote",
-    "CodeBlock": "Code Block",
-    "Secret": "Secret",
-    "AlignmentLeft": "Left",
-    "AlignmentCenter": "Center",
-    "AlignmentJustify": "Justify",
-    "AlignmentRight": "Right",
-    "BulletList": "Bulleted List",
-    "NumberList": "Numbered List",
-    "HorizontalRule": "Horizontal Rule",
-    "Link": "Link",
-    "ClearFormatting": "Clear Formatting",
-    "EnableHighlightDocumentMatches": "Toggle Content Link Matching When Highlighting",
-    "SourceHTML": "Source HTML",
-    "Save": "Save Changes",
-    "SaveAndClose": "Save and Close Editor",
-    "DiscardHTML": "Discard HTML Changes",
-    "EmbedFailed": "Failed to embed content from '{uuid}'.",
-    "EditingHTMLWarning": "Another user has edited the same document. Any changes you have made to the HTML would erase their changes and so cannot be saved.",
+    "Alignment": "Выравнивание",
+    "Custom": "Особая",
+    "Insert": "Вставить",
+    "Lists": "Списки",
+    "Paragraph": "Параграф",
+    "Bold": "Полужирный",
+    "Italic": "Курсив",
+    "Code": "Код",
+    "Underline": "Подчёркивание",
+    "Strikethrough": "Зачёркивание",
+    "Superscript": "Надстрочный",
+    "Subscript": "Подстрочный",
+    "Blockquote": "Цитата",
+    "CodeBlock": "Блок кода",
+    "Secret": "Секрет",
+    "AlignmentLeft": "Слева",
+    "AlignmentCenter": "По центру",
+    "AlignmentJustify": "По ширине",
+    "AlignmentRight": "Справа",
+    "BulletList": "Маркированный список",
+    "NumberList": "Нумерованный список",
+    "HorizontalRule": "Горизонтальная линейка",
+    "Link": "Ссылка",
+    "ClearFormatting": "Очистка форматирования",
+    "EnableHighlightDocumentMatches": "Переключение сопоставления ссылок при выделении",
+    "SourceHTML": "Код HTML",
+    "Save": "Сохранить изменения",
+    "SaveAndClose": "Сохранить и закрыть",
+    "DiscardHTML": "Сброс изменений HTML",
+    "EmbedFailed": "Не удалось встроить содержимое '{uuid}'.",
+    "EditingHTMLWarning": "Другой участник сейчас редактирует тот же документ. Любые сделанные вами изменения в HTML отменять изменения другого участника.",
     "Resync": "Ваш редактор был рассинхронизирован с сервером и должен быть сброшен. Содержимое вашего редактора было скопировано в буфер.",
-    "NoUploadPermission": "You must have file upload permissions to insert image content.",
-    "UploadingFile": "Uploading image file.",
-    "UploadComplete": "Upload complete.",
-    "InsertImage": "Insert Image",
-    "ImageSource": "Source",
-    "ImageAlt": "Alternative Description",
-    "ImageCaption": "Caption",
-    "ImageDimensions": "Dimensions",
-    "ImageDimensionsHint": "Leaving these blank will use the image's intrinsic size.",
-    "ImageInsert": "Insert",
-    "LinkURL": "Link URL",
-    "LinkText": "Link Text",
-    "LinkTitle": "Link Title",
-    "LinkInsert": "Insert Link",
+    "NoUploadPermission": "Вам требуются права на загрузку файлов для вставки изображения.",
+    "UploadingFile": "Загрузка файла изображения",
+    "UploadComplete": "Загрузка завершена",
+    "InsertImage": "Вставить изображение",
+    "ImageSource": "Источник",
+    "ImageAlt": "Альтернативное описание",
+    "ImageCaption": "Подпись",
+    "ImageDimensions": "Размеры",
+    "ImageDimensionsHint": "Если оставить поля пустыми, будет использован размер изображения.",
+    "ImageInsert": "Вставить",
+    "LinkURL": "URL ссылки",
+    "LinkText": "Текст ссылки",
+    "LinkTitle": "Заголовок ссылки",
+    "LinkInsert": "Вставить ссылку",
     "ProseMirrorBadArguments": "Для создания экземпляра ProseMirror требуется документ и название.",
     "Markdown": "Markdown",
     "HTML": "HTML",
-    "Reveal": "Reveal",
-    "Hide": "Hide",
-    "CollaboratingUsers": "Collaborating users",
-    "Table": "Table",
-    "TableInsert": "Insert Table",
-    "TableDelete": "Delete Table",
-    "TableAddColumnAfter": "Add Column After",
-    "TableAddColumnBefore": "Add Column Before",
-    "TableDeleteColumn": "Delete Column",
-    "TableAddRowAfter": "Add Row After",
-    "TableAddRowBefore": "Add Row Before",
-    "TableDeleteRow": "Delete Row",
-    "TableMergeCells": "Merge Cells",
-    "TableSplitCell": "Split Cell",
-    "TableDimensions": "Dimensions",
-    "TableColumns": "Cols",
-    "TableRows": "Rows"
+    "Reveal": "Раскрыть",
+    "Hide": "Скрыть",
+    "CollaboratingUsers": "Совместно работающие участники",
+    "Table": "Таблица",
+    "TableInsert": "Вставить таблицу",
+    "TableDelete": "Удалить таблицу",
+    "TableAddColumnAfter": "Добавить столбец справа",
+    "TableAddColumnBefore": "Добавить столбец слева",
+    "TableDeleteColumn": "Удалить столбец",
+    "TableAddRowAfter": "Добавить строку снизу",
+    "TableAddRowBefore": "Добавить строку сверху",
+    "TableDeleteRow": "Удалить строку",
+    "TableMergeCells": "Объединить ячейки",
+    "TableSplitCell": "Разделить ячейки",
+    "TableDimensions": "Размеры",
+    "TableColumns": "Столбцы",
+    "TableRows": "Строки"
   },
 
   "ELEMENTS": {
@@ -1347,12 +1347,12 @@
     },
     "TAGS": {
       "Add": "Добавить тэг",
-      "AddGridOffset": "Add Grid Offset",
+      "AddGridOffset": "Добавить смещение сетки",
       "Remove": "Удалить тэг",
-      "RemoveGridOffset": "Remove Grid Offset",
+      "RemoveGridOffset": "Удалить смещение сетки",
       "ErrorBlank": "Тэги в HTMLStringTagsElement не могут быть пустыми.",
-      "ErrorInvalidGridOffset2D": "A 2D grid offset must have two integer coordinates, which are separated by a dot.",
-      "ErrorInvalidGridOffset3D": "A 3D grid offset must have three integer coordinates, which are separated by dots.",
+      "ErrorInvalidGridOffset2D": "2D смещение сетки должно иметь две целые координаты, разделенные точкой.",
+      "ErrorInvalidGridOffset3D": "3D смещение сетки должно иметь три целые координаты, разделенные точкой.",
       "ErrorNonUnique": "Тэг \"{tag}\" уже существует."
     }
   },
@@ -1450,119 +1450,119 @@
   "ITEM.ViewArt": "Просмотр изображения",
 
   "HOTBAR": {
-    "Label": "Action Bar",
-    "Empty": "Empty Slot",
-    "ToggleSheet": "Display {document}",
-    "ClearConfirm": "Clear all assigned Macros from your hotbar?",
+    "Label": "Панель действий",
+    "Empty": "Пустая ячейка",
+    "ToggleSheet": "Показать {document}",
+    "ClearConfirm": "Очистить все действия на панели?",
     "ACTIONS": {
-      "Clear": "Clear Hotbar",
-      "Mute": "Mute Volume",
-      "Unmute": "Unmute Volume",
-      "Menu": "Main Menu",
-      "Lock": "Lock Hotbar",
-      "Unlock": "Unlock Hotbar",
-      "PageNext": "Next Page",
-      "PagePrev": "Previous Page"
+      "Clear": "Очистка панели действий",
+      "Mute": "Выключение звука",
+      "Unmute": "Включение звука",
+      "Menu": "Главное меню",
+      "Lock": "Блокировка панели",
+      "Unlock": "Разблокировка панели",
+      "PageNext": "Следующая страница",
+      "PagePrev": "Предыдущая страница"
     }
   },
 
   "HUD": {
     "ChangeLevel": "Изменить уровень",
-    "Elevation": "Elevation",
-    "OpenConfig": "Open Configuration",
-    "AssignStatusEffects": "Assign Status Effects",
-    "SelectMovementAction": "Select Movement Action",
-    "ToggleTargetState": "Toggle Target State",
-    "ToggleCombatState": "Toggle Combat State",
-    "ToggleVis": "Toggle Visibility State",
-    "ToggleLock": "Toggle Locked State",
-    "ToFrontOrBack": "Bring to Front / Send to Back",
-    "TilePlay": "Play Tile Video",
-    "TilePause": "Pause Tile Video",
-    "WarningEffectNoActor": "You cannot assign status effects to a Token which has no associated Actor."
+    "Elevation": "Высота",
+    "OpenConfig": "Настройки токена",
+    "AssignStatusEffects": "Выбор статуса",
+    "SelectMovementAction": "Выбор действия перемещения",
+    "ToggleTargetState": "Выбор цели",
+    "ToggleCombatState": "Режим боя",
+    "ToggleVis": "Переключение видимости",
+    "ToggleLock": "Переключение блокировки",
+    "ToFrontOrBack": "Расположить спереди / сзади",
+    "TilePlay": "Запуск видео тайла",
+    "TilePause": "Остановка видео тайла",
+    "WarningEffectNoActor": "Вы не можете назначить эффекты статуса токену, у которого нет связанного актёра."
   },
 
   "HTMLDocumentTagsElement.PLACEHOLDER": "Введите UUID или перетащите {type}",
 
   "JOURNAL": {
-    "ModeText": "Text",
-    "ModeImage": "Image",
-    "ActionShow": "Show Players",
-    "ActionShowSuccess": "Showed the contents of {title} to {which} players.",
-    "ImageOptions": "Image Options",
-    "ImageShowSuccess": "Image shown to {which} players.",
-    "NavLabel": "Journal Entry Table of Contents",
-    "AddPage": "Add Page",
-    "EditPage": "Edit Page",
-    "NextPage": "Next Page",
-    "PrevPage": "Previous Page",
-    "Submit": "Save Entry",
-    "AnchorCenter": "Center",
-    "AnchorBottom": "Bottom",
-    "AnchorTop": "Top",
-    "AnchorLeft": "Left",
-    "AnchorRight": "Right",
-    "ModeMultiple": "Multiple Page Mode",
-    "ModeSingle": "Single Page Mode",
-    "ViewMultiple": "View Multiple Pages",
-    "ViewSingle": "View Single Page",
-    "ViewCollapse": "Collapse Sidebar",
-    "ViewExpand": "Expand Sidebar",
-    "ShowTo": "Show To",
-    "ShowEntry": "Show {name}",
-    "ShowBadPermissions": "You may only show Journal Entries or Pages which you own.",
-    "ShowNoPlayers": "There are no other connected players to show this to.",
-    "ShowOwnershipHint": "Optionally update the ownership of this document for the players that it is being shown to. If a player already has a greater ownership level, they will not be downgraded.",
+    "ModeText": "Текст",
+    "ModeImage": "Изображение",
+    "ActionShow": "Показать игрокам",
+    "ActionShowSuccess": "Содержимое {title} показано {which} игрокам.",
+    "ImageOptions": "Настройки изображения",
+    "ImageShowSuccess": "Изображение показано {which} игрокам.",
+    "NavLabel": "Содержание журнала",
+    "AddPage": "Добавить страницу",
+    "EditPage": "Изменить страницу",
+    "NextPage": "Следующая страница",
+    "PrevPage": "Предыдущая страница",
+    "Submit": "Сохранить запись",
+    "AnchorCenter": "По центру",
+    "AnchorBottom": "Снизу",
+    "AnchorTop": "Сверху",
+    "AnchorLeft": "Слева",
+    "AnchorRight": "Справа",
+    "ModeMultiple": "Режим нескольких страниц",
+    "ModeSingle": "Режим одной страницы",
+    "ViewMultiple": "Просмотр нескольких страниц",
+    "ViewSingle": "Просмотр одной страницы",
+    "ViewCollapse": "Свернуть панель",
+    "ViewExpand": "Развернуть панель",
+    "ShowTo": "Показать",
+    "ShowEntry": "Показать {name}",
+    "ShowBadPermissions": "Вы можете показывать только те журналы или страницы, которыми владеете.",
+    "ShowNoPlayers": "В текущей игре нет других игроков для показа.",
+    "ShowOwnershipHint": "Возможность предоставить права владения участникам, кому показан документ. Если участник уже имеет права выше, то они не будут понижены.",
     "SHOW": {
-      "all": "all",
-      "authorized": "authorized",
-      "selected": "selected"
+      "all": "все",
+      "authorized": "авторизованные",
+      "selected": "выбранные"
     },
-    "LockModeLocked": "Table of contents locked. Click to unlock.",
-    "LockModeUnlocked": "Table of contents unlocked. Click to lock.",
-    "ConfigureCategories": "Configure Categories",
-    "ConfigureCategoriesTitle": "{name} Categories",
-    "CategoryName": "Category name",
-    "Uncategorized": "Uncategorized",
-    "UnnamedCategory": "<Unnamed Category>",
+    "LockModeLocked": "Оглавление заблокировано. Нажмите для разблокировки.",
+    "LockModeUnlocked": "Оглавление разблокировано. Нажмите для блокировки.",
+    "ConfigureCategories": "Настройка категорий",
+    "ConfigureCategoriesTitle": "Категории {name} ",
+    "CategoryName": "Название категории",
+    "Uncategorized": "Без категории",
+    "UnnamedCategory": "<Категория без названия>",
     "FIELDS": {
       "name": {
-        "label": "Entry Title"
+        "label": "Заголовок записи"
       }
     }
   },
 
   "JOURNALENTRYPAGE": {
-    "DefaultPageSheet": "Default {page} Page Sheet",
-    "Page": "Page",
-    "VideoDimensions": "Video Dimensions",
-    "VideoStartTime": "Video Start Time",
-    "VideoSourceHint": "This may be a local file, a remote video file URL, or a YouTube URL.",
-    "PDFLoad": "Load PDF",
-    "ShowImageOnly": "Show Image Only",
-    "ShowImageTitle": "Show Image Title",
-    "ShowImageCaption": "Show Image Caption",
-    "Level": "Level {level}",
+    "DefaultPageSheet": "{page} страница по умолчанию",
+    "Page": "Страница",
+    "VideoDimensions": "Размеры видео",
+    "VideoStartTime": "Время начала видео",
+    "VideoSourceHint": "Это может быть локальный файл, или ссылка на файл видео, или ссылка на YouTube.",
+    "PDFLoad": "Загрузка PDF",
+    "ShowImageOnly": "Показать только изображение",
+    "ShowImageTitle": "Показать название изображения",
+    "ShowImageCaption": "Показать подпись изображения",
+    "Level": "Уровень {level}",
 
     "FIELDS": {
-      "category.label": "Page Category",
+      "category.label": "Категория страницы",
       "image": {
-        "caption.label": "Image Caption"
+        "caption.label": "Подпись изображения"
       },
-      "name.label": "Page Name",
-      "src.label": "File Path",
+      "name.label": "Название страницы",
+      "src.label": "Путь к файлу",
       "text": {
-        "format.label": "Format"
+        "format.label": "Форматирование"
       },
       "title": {
-        "level.label": "Heading Level",
-        "show.label": "Display Page Title"
+        "level.label": "Уровень заголовка",
+        "show.label": "Показать название страницы"
       },
       "video": {
-        "autoplay.label": "Autoplay Video",
-        "controls.label": "Show Video Controls",
-        "loop.label": "Loop Video",
-        "volume.label": "Video Volume"
+        "autoplay.label": "Автовоспроизведение видео",
+        "controls.label": "Отображение элементов управления видео",
+        "loop.label": "Повторение видео",
+        "volume.label": "Громкость видео"
       }
     }
   },
@@ -1621,7 +1621,7 @@
     "PanDownRight": "Камера вниз-вправо",
     "ZoomIn": "Приближение камеры",
     "ZoomOut": "Отдаление камеры",
-    "RulerWaypoint": "Размещение точки пути",
+    "RulerWaypoint": "Размещение точки маршрута",
     "ExecuteMacro": "Активация {number}-й ячейки панели действий",
     "SwapMacroPage": "Переключение на {page}-ю панель действий ",
     "MustBeArray": "Должно быть массивом значений",
@@ -1692,8 +1692,8 @@
         "label": "Анимация света",
         "type": {
           "label": "Тип анимации",
-          "any": "Any",
-          "none": "No Animation"
+          "any": "Любая",
+          "none": "Без анимации"
         },
         "speed": {
           "label": "Скорость анимации",
@@ -1792,12 +1792,11 @@
     "ABBR": {
       "Pixels": "px"
     },
-    "Angle": "Angle",
+    "Angle": "Угол",
     "Coordinates": "Координаты",
     "Degrees": "Градусы",
-    "Depth": "Depth",
-    "Direction": "Direction",
-    "Distance": "Distance",
+    "Direction": "Направление",
+    "Distance": "Дистанция",
     "GridSpaces": "Клетки сетки",
     "GridUnits": "Единицы сетки",
     "Height": "Высота",
@@ -1811,43 +1810,43 @@
   "MENU.Reload": "Перезагрузка",
   "MENU.Logout": "Выход из мира",
   "MENU.Players": "Участники",
-  "MENU.Close": "Close Main Menu",
+  "MENU.Close": "Закрыть меню",
 
   "MODMANAGE": {
-    "Bugs": "Bug or Issue Reports",
-    "DeactivateAll": "Deactivate All Modules",
-    "Readme": "Module Documentation",
-    "Title": "Module Management",
-    "Instructions": "Use this form to configure which Modules are active within your current World. Submitting changes to active modules will cause the current session to reload.",
-    "View": "The Modules listed below are currently active within this World.",
-    "None": "No Modules are available within this World.",
+    "Bugs": "Сообщить об ошибке",
+    "DeactivateAll": "Деактивация всех модулей",
+    "Readme": "Документация модуля",
+    "Title": "Управление модулями",
+    "Instructions": "Здесь можно выбрать модули, активные в текущем мире. Игра автоматически перезагрузится при внесении изменений.",
+    "View": "Следующие модули в данный момент активны в этом мире.",
+    "None": "Нет доступных модулей для этого мира.",
     "Search": "Фильтр модулей",
-    "Submit": "Save Module Settings",
-    "Dependencies": "Dependencies",
-    "RequiredDepError": "This module cannot be disabled as it is required by the following: {dependents}",
-    "RequiredDependencies": "Required Dependencies",
-    "RecommendedDependencies": "Recommended Dependencies",
-    "OptionalDependencies": "Optional Dependencies",
-    "DependencyResolution": "Dependency Resolution",
-    "DepRequiredEnable": "The following dependencies are required for the selected modules to function",
-    "DepOptionalEnable": "The selected modules list the following optional dependencies",
-    "DepEnableCheck": "Enable module and selected dependencies?",
-    "DepDisable": "The following dependencies would become unused, and can be disabled:",
-    "DepDisableCheck": "Would you like to disable the selected packages also?",
-    "DepNotInstalled": "The required dependency {missing} is not installed!",
-    "DepMissing": "You have enabled the module {module}, but its dependencies {missing} are not enabled!",
-    "FilterAll": "All Modules",
-    "FilterActive": "Active Modules",
-    "FilterInactive": "Inactive Modules",
-    "RequiredModule": "This module is required to be active",
-    "DependencyIssues": "Cannot be enabled due to issues in required dependencies",
-    "SystemCompatibilityIssueMinimum": "This module requires a minimum system version of {minimum} but your version is {version}. Please update the system.",
-    "SystemCompatibilityIssueMaximum": "This module requires a maximum system version of {maximum} but your version is {version}.",
-    "NavLabel": "Module Management Navigation",
-    "UpstreamPackages": "There are {number} packages that require this package to be active. Disabling this package will also disable those packages.",
-    "UnavailableDocuments": "The following documents will be rendered unavailable if you disable these modules.",
-    "Activate": "Activate",
-    "Deactivate": "Deactivate"
+    "Submit": "Сохранить настройки",
+    "Dependencies": "Зависимости",
+    "RequiredDepError": "Этот модуль нельзя отключить, так как он требуется для: {dependents}",
+    "RequiredDependencies": "Требуемые зависимости",
+    "RecommendedDependencies": "Рекомендуемые зависимости",
+    "OptionalDependencies": "Необязательные зависимости",
+    "DependencyResolution": "Решение зависимостей",
+    "DepRequiredEnable": "Выбранные модули имеют обязательные зависимости, требуемые для правильной работы",
+    "DepOptionalEnable": "Выбранные модули имеют необязательные зависимости",
+    "DepEnableCheck": "Включить модуль и выбранные зависимости?",
+    "DepDisable": "Этот модуль имел {number} зависимостей, которые больше не требуются и могут быть отключены:",
+    "DepDisableCheck": "Желаете также отключить выбранные пакеты?",
+    "DepNotInstalled": "Требуемая зависимость {missing} не установлена!",
+    "DepMissing": "Вы активировали модуль {module}, но его зависимости {missing} не активны!",
+    "FilterAll": "Все модули",
+    "FilterActive": "Активные модули",
+    "FilterInactive": "Неактивные модули",
+    "RequiredModule": "Этот модуль должен быть активен",
+    "DependencyIssues": "Нельзя активировать из-за недостающих зависимостей",
+    "SystemCompatibilityIssueMinimum": "Этот модуль требует минимальную версию системы {minimum}, но ваша версия {version}. Требуется обновление системы.",
+    "SystemCompatibilityIssueMaximum": "Этот модуль требует максимальную версию системы {maximum}, но ваша версия {version}. Он может работать, но не проверен.",
+    "NavLabel": "Навигация управления модулями",
+    "UpstreamPackages": "{number} пакетов требуют этот пакет для работы. Отключение этого пакета также отключит зависимые пакеты.",
+    "UnavailableDocuments": "Документы будут недоступны",
+    "Activate": "Активация",
+    "Deactivate": "Отключить"
   },
 
   "NOTE.Create": "Создать заметку сцены",
@@ -1973,14 +1972,14 @@
   "SCENE.AccessibilityGM": "Только для ведущего",
   "SCENE.AccessibilityAll": "Все игроки",
   "SCENE.Activate": "Активация",
-  "SCENE.Audio": "Audio",
+  "SCENE.Audio": "Аудио",
   "SCENE.BackgroundScale": "Масштаб фонового изображения",
   "SCENE.BackgroundScaleHint": "Используйте SHIFT+Колёсико или SHIFT+Вверх и SHIFT+Вниз для настройки масштаба фонового изображения.",
   "SCENE.CaptureInitialViewPosition": "Положение камеры для начального вида сцены.",
   "SCENE.Configure": "Настройки",
-  "SCENE.CurrentLevel": "Current Level",
-  "SCENE.Darkness": "Darkness",
-  "SCENE.Details": "Details",
+  "SCENE.CurrentLevel": "Текущий уровень",
+  "SCENE.Darkness": "Темнота",
+  "SCENE.Details": "Подробности",
   "SCENE.Dimensions": "Размер сцены",
   "SCENE.DimensionsHint": "Размер сцены автоматически выставляется в соответствии с размером фонового изображения.",
   "SCENE.DimensionChangeTitle": "Изменить размер сцены?",
@@ -1989,19 +1988,19 @@
   "SCENE.DimensionUnlinked": "Стороны сцены отвязаны и изменение одной стороны не повлияет на другую. Нажмите, чтобы привязать стороны.",
   "SCENE.DistortedDimensionsTitle": "Искажение соотношения сторон",
   "SCENE.DistortedDimensionsWarning": "Новые размеры сторон сцены не соответствуют соотношению оригинального размера. Результат может исказить изображение сцены. Желаете продолжить?",
-  "SCENE.Environment.Base": "Base Environment",
-  "SCENE.Environment.Dark": "Darkness Environment",
-  "SCENE.Environment.DarkHint": "Behaves as the base environmental settings, but applies as the scene's darkness level gets closer to 1.",
-  "SCENE.Environment.Reset": "Reset to Default Options",
-  "SCENE.FogOfWar": "Fog of War",
+  "SCENE.Environment.Base": "Обычное окружение",
+  "SCENE.Environment.Dark": "Тёмное окружение",
+  "SCENE.Environment.DarkHint": "Ведёт себя как обычное окружение, но применяется, когда уровень темнеет ближе к 1.",
+  "SCENE.Environment.Reset": "Сброс настроек",
+  "SCENE.FogOfWar": "Туман войны",
   "SCENE.GenerateThumb": "Создать эскиз",
   "SCENE.GenerateThumbNoCanvas": "Эскиз сцены не может быть создан при активной настройке 'Отключение отображения сцены'",
   "SCENE.GenerateThumbUploadDenied": "Эскиз сцены не может быть создан, потому что у участника нет прав на загрузку файлов.",
   "SCENE.GenerateThumbProgress": "Создание эскиза для сцены {name}",
   "SCENE.GenerateThumbSuccess": "Создан эскиз для сцены {name}.",
-  "SCENE.GlobalIllumination": "Global Illumination",
-  "SCENE.GridAppearance": "Appearance",
-  "SCENE.GridAppearanceHint": "Configure the appearance of the grid lines.",
+  "SCENE.GlobalIllumination": "Глобальное освещение",
+  "SCENE.GridAppearance": "Внешний вид",
+  "SCENE.GridAppearanceHint": "Настройка внешнего вида линий сетки.",
   "SCENE.GridConfigTool": "Инструмент настройки сетки",
   "SCENE.GridConfigToolHint": "Сетка и расположение фонового изображения. Используйте колёсико мыши и кнопки стрелок, или введите значение вручную.",
   "SCENE.GridGridless": "Без сетки",
@@ -2010,31 +2009,31 @@
   "SCENE.GridHexEvenR": "Гексагональная острая - Тип 2",
   "SCENE.GridHexOddQ": "Гексагональная плоская - Тип 1",
   "SCENE.GridHexEvenQ": "Гексагональная плоская - Тип 2",
-  "SCENE.GridMeasurement": "Measurement",
-  "SCENE.GridMechanics": "Mechanics",
+  "SCENE.GridMeasurement": "Измерение",
+  "SCENE.GridMechanics": "Механики",
   "SCENE.GridSizeError": "Изменение размера сцены уменьшит размер сетки ниже минимального (50px). Если вы всё равно хотите продолжить, измените режим сетки на 'Без сетки', затем измените размер сцены и добавьте новую сетку.",
   "SCENE.GridResizeHint": "Используйте ALT+Колёсико или ALT+Вверх и ALT+Вниз для настройки размера сетки.",
   "SCENE.GridPosition": "Смещение фонового изображения",
   "SCENE.GridPositionHint": "Используйте кнопки стрелок для регулирования смещения фона.",
   "SCENE.GridReset": "Сброс изменений",
-  "SCENE.InheritedField": "This field's value is being inherited from the '{level}' level. Click here to edit it directly.",
-  "SCENE.InitialLevel": "Initial Level",
+  "SCENE.InheritedField": "Значение этого поля наследуется от уровня '{level}'. Нажмите здесь, чтобы редактировать его напрямую.",
+  "SCENE.InitialLevel": "Начальный уровень",
   "SCENE.InitialView": "Начальное положение камеры",
   "SCENE.InitialViewButton": "Сохранить текущую камеру",
   "SCENE.InitialViewHint": "Начальное положение камеры при открытии сцены.",
   "SCENE.InvalidDimension": "Полученный размер не является целым числом для другой стороны. Попробуйте другое значение, или отвяжите соотношение сторон.",
   "SCENE.Loading": "Загрузка {name}",
   "SCENE.Notes": "Заметки сцены",
-  "SCENE.Perception": "Perception",
+  "SCENE.Perception": "Восприятие",
   "SCENE.Preload": "Предзагрузка сцены",
-  "SCENE.Presentation": "Presentation",
-  "SCENE.Properties": "Scene Properties",
+  "SCENE.Presentation": "Вид",
+  "SCENE.Properties": "Свойства сцены",
   "SCENE.View": "Просмотр сцены",
-  "SCENE.ShiftBG": "Shift",
+  "SCENE.ShiftBG": "Смещение",
   "SCENE.ToggleNav": "Видимость в навигации",
-  "SCENE.FogModeChangeMessage": "Fog exploration mode has changed. This will reload fog exploration and reset vision.",
+  "SCENE.FogModeChangeMessage": "Режим тумана войны изменён. Это перезагрузит туман и сбросит зрение.",
   "SCENE.Transition": {
-    "Animation": "Transition Animation",
+    "Animation": "Анимация перехода",
     "Preview": "Предпросмотр",
     "Config": "Настройка",
     "Types": {
@@ -2055,21 +2054,21 @@
   },
   "SCENE.FIELDS": {
     "initialLevel": {
-      "hint": "If a User has visibility of this Level, they will be placed on it when the Scene is activated for the first time, or if the Scene is active when joining the game.",
-      "label": "Initial Level"
+      "hint": "Если у участника есть видимость этого уровня, он будет размещён на нём при активации сцены в первый раз, или если сцена активна при присоединении к игре.",
+      "label": "Начальный уровень"
     },
     "transition": {
       "type": {
-        "label": "Transition Type",
-        "hint": "The type of transition animation that is played when the Scene is loaded."
+        "label": "Тип перехода",
+        "hint": "Тип анимации перехода, которая воспроизводится при загрузке сцены."
       },
       "duration": {
         "label": "Длительность",
-        "hint": "The duration of the transition animation in milliseconds."
+        "hint": "Длительность анимации перехода в миллисекундах."
       },
       "activeOnly": {
-        "label": "Active Only",
-        "hint": "Play this transition animation only when the Scene is activated or when it is active after joining the game."
+        "label": "Только активный",
+        "hint": "Воспроизводить эту анимацию перехода только при активации сцены или когда она активна при присоединении к игре."
       }
     },
     "name.label": "Название сцены",
@@ -2100,12 +2099,12 @@
       "type.label": "Тип сетки",
       "size": {
         "label": "Размер сетки",
-        "hint": "The grid pixel size is the size of a single grid space. Use the Grid Configuration tool to visually adjust this."
+        "hint": "Размер одной клетки сетки в пикселях. Используйте инструмент настройки сетки для визуальной настройки."
       },
       "thickness.label": "Толщина сетки",
       "color.label": "Цвет сетки",
       "alpha.label": "Непрозрачность сетки",
-      "distance.hint": "The distance each grid space represents on this scene, in units appropriate to the game system.",
+      "distance.hint": "Расстояние, которое представляет одна клетка сетки на этой сцене, в единицах игровой системы.",
       "distance.label": "Дистанция",
       "units.label": "Единицы",
       "style.label": "Стиль сетки"
@@ -2114,34 +2113,34 @@
       "label": "Процент отступа",
       "hint": "Дополнительный отступ вокруг фона сцены, являющийся игровой областью."
     },
-    "shiftX.hint": "The offset applied to the Scene's playable area, which is centered on the canvas by default.",
-    "shiftX.label": "X-Shift",
-    "shiftY.label": "Y-Shift",
+    "shiftX.hint": "Смещение, применяемое к игровой области сцены, которая по умолчанию центрируется.",
+    "shiftX.label": "Смещение X",
+    "shiftY.label": "Смещение Y",
     "tokenVision": {
       "label": "Зрение токенов",
       "hint": "Ограничить видимость внутри сцены зрением управляемых токенов. Иначе вся сцена будет видимой."
     },
     "fog": {
       "MODES": {
-        "DISABLED": "None",
-        "INDIVIDUAL": "Individual",
-        "SHARED": "Shared"
+        "DISABLED": "Нет",
+        "INDIVIDUAL": "Личный",
+        "SHARED": "Общий"
       },
       "mode": {
-        "label": "Exploration Mode",
-        "hint": "Controls Fog of War mode: \"None\" disables exploration (tokens only see what they currently can), \"Individual\" tracks exploration separately for each user, and \"Shared\" uses a single exploration state contributed to by all users."
+        "label": "Режим тумана войны",
+        "hint": "Управляет режимом тумана войны: \"Нет\" отключает исследование (токены видят только то, что они могут в данный момент), \"Личный\" отслеживает исследование отдельно для каждого участника, и \"Общий\" использует единственное состояние исследования, внесённое всеми участниками."
       },
       "overlay": {
-        "label": "Exploration Image",
+        "label": "Изображение тумана войны",
         "hint": "Опциональное изображение тумана войны, отображаемое поверх неисследованных областей."
       },
       "colors": {
         "explored": {
-          "label": "Explored Color",
+          "label": "Раскрытый цвет",
           "hint": "Цвет, применяемый к областям сцены, которые были раскрыты, но находятся за пределами текущей области зрения."
         },
         "unexplored": {
-          "label": "Unexplored Color",
+          "label": "Нераскрытый цвет",
           "hint": "Цвет, применяемый к областям сцены, которые не были раскрыты."
         }
       }
@@ -2149,11 +2148,11 @@
     "environment": {
       "globalLight": {
         "enabled": {
-          "label": "Enabled",
+          "label": "Включено",
           "hint": "На этой сцене будет глобальный источник света, обеспечивающий базовый уровень освещения всех областей сцены."
         },
         "darkness.max": {
-          "label": "Threshold",
+          "label": "Порог",
           "hint": "Порог темноты от 0 до 1. Когда темнота сцены превышает этот порог, глобальное освещение автоматически отключается."
         }
       },
@@ -2215,11 +2214,11 @@
   },
   "SCENE.TABS": {
     "SHEET": {
-      "basics": "Basics",
+      "basics": "Основное",
       "grid": "Сетка",
-      "visibility": "Visibility",
-      "environment": "Environment",
-      "misc": "Miscellaneous",
+      "visibility": "Видимость",
+      "environment": "Окружение",
+      "misc": "Прочее",
       "levels": "Уровни"
     }
   },
@@ -2234,45 +2233,45 @@
       "Edit": "Изменить уровень",
       "Remove": "Удалить уровень",
       "Up": "На уровень вверх",
-      "View": "View level"
+      "View": "Просмотр уровня"
     },
     "FIELDS": {
       "background": {
-        "label": "Background",
-        "src.label": "Texture",
-        "color.label": "Color",
-        "tint.label": "Tint",
-        "alphaThreshold.label": "Alpha Threshold"
+        "label": "Задний фон",
+        "src.label": "Текстура",
+        "color.label": "Цвет",
+        "tint.label": "Оттенок",
+        "alphaThreshold.label": "Порог прозрачности"
       },
       "elevation": {
-        "label": "Elevation Range",
-        "bottom.label": "Background Elevation",
-        "top.label": "Foreground Elevation"
+        "label": "Диапазон высот",
+        "bottom.label": "Высота заднего фона",
+        "top.label": "Высота переднего фона"
       },
       "foreground": {
-        "label": "Foreground",
-        "src.label": "Texture",
-        "tint.label": "Tint",
-        "alphaThreshold.label": "Alpha Threshold"
+        "label": "Передний фон",
+        "src.label": "Текстура",
+        "tint.label": "Оттенок",
+        "alphaThreshold.label": "Порог прозрачности"
       },
       "fog": {
-        "label": "Fog Exploration",
-        "src.label": "Unexplored Texture",
-        "tint.label": "Texture Tint"
+        "label": "Туман войны",
+        "src.label": "Текстура тумана",
+        "tint.label": "Оттенок тумана"
       },
       "textures": {
-        "label": "Positioning",
+        "label": "Расположение",
         "anchor": "Якорь",
         "anchorX.label": "X",
         "anchorY.label": "Y",
-        "offset": "Offset",
+        "offset": "Смещение",
         "offsetX.label": "X",
         "offsetY.label": "Y",
-        "fit.label": "Fit Mode",
-        "scale": "Scale",
+        "fit.label": "Тип размещения",
+        "scale": "Масштаб",
         "scaleX.label": "X",
         "scaleY.label": "Y",
-        "rotation.label": "Rotation"
+        "rotation.label": "Поворот"
       },
       "visibility": {
         "label": "Видимость уровня",
@@ -2356,8 +2355,8 @@
         "hint": "Choose a port number that Foundry Virtual Tabletop will use for TCP connections. You can also enable or disable Universal Plug and Play (UPnP)."
       },
       "unixSocket": {
-        "label": "Unix Socket",
-        "hint": "Instead of a port number, a file path to a Unix domain socket can be entered. If both a port and socket are entered, the socket path will be used."
+        "label": "Unix сокет",
+        "hint": "Вместо номера порта, можно ввести путь к доменному сокету Unix. Если введены и номер порта, и сокет, будет использоваться путь к сокету."
       },
       "compressStatic": {
         "label": "Сжатие статичных файлов",
@@ -2407,7 +2406,7 @@
   "SETTINGS.ShowToolclipsH": "Видео-подсказки будут отображаться при наведении на инструменты в боковой панели.",
   "SETTINGS.None": "Нет",
   "SETTINGS.AnimVisionN": "Анимация зрения токена",
-  "SETTINGS.AnimVisionL": "Animate Token vision, light, and attached region changes during Token movement animations. Disabling this will improve performance for lower-end machines.",
+  "SETTINGS.AnimVisionL": "Анимировать зрение токена, свет и изменения прикрепленных областей во время анимации движения токена. Отключение этой опции может повысить производительность на слабых компьютерах.",
   "SETTINGS.AnimLightN": "Анимация источников света",
   "SETTINGS.AnimLightL": "Анимировать некоторые источники света. Отключение может повысить производительность на слабых PC.",
   "SETTINGS.FPSMeterN": "Отображение счётчика кадров",
@@ -2506,7 +2505,7 @@
       "other": "Прочие настройки"
     },
     "ACTIONS": {
-      "Reset": "Reset"
+      "Reset": "Сброс"
     },
     "FIELDS": {
       "uiScale": {
@@ -2569,7 +2568,7 @@
     "NueWorldDescription": "<p>Подробнее о настройке миров можно узнать в <a href='https://foundryvtt.com/article/game-worlds/' target='_blank'>документации</a>.</p>",
     "SeeTutorial": "Для подробного руководства по Foundry Virtual Tabletop ознакомьтесь с <a href=\"https://foundryvtt.com/article/tutorial/\" target=\"_blank\" title=\"Gamemaster Tutorial\">Руководством ведущего</a> в нашей <a href=\"https://foundryvtt.com/kb/\" target=\"_blank\" title=\"Knowledge Base\">Базе знаний</a>.",
     "Title": "Настройки",
-    "Software": "Software",
+    "Software": "Приложение",
     "Update": "Обновление",
     "UpdateNewGeneration": "Требуется ручная установка",
     "PreviewCompatibility": "Предпросмотр совместимости",
@@ -2734,8 +2733,8 @@
     "PackageIncompatibleWithSystems": "{module} <em>не совместим с</em> {systems}",
     "ConfirmCodeLabel": "Введите '{code}' для подтверждения",
 
-    "ImportingAdventure": "Importing Adventure",
-    "QuickstartFailure": "Quick-Start of module '{title}' failed: {message}. See the console (F12) for more details.",
+    "ImportingAdventure": "Импорт приключения",
+    "QuickstartFailure": "Быстрый запуск мира '{title}' не удался: {message}. Смотрите консоль (F12) для подробностей.",
 
     "WorldLaunchConnect": "Загрузка данных мира",
     "WorldLaunchMigrate": "Миграция данных мира",
@@ -2797,10 +2796,10 @@
     "NoFeaturedContent": "От сервера Foundry VTT не было получено рекомендаций.",
 
     "ACTIONS": {
-      "Configure": "Configure",
-      "Logout": "Log Out",
-      "Update": "Update",
-      "Warnings": "Warnings"
+      "Configure": "Настройки",
+      "Logout": "Выход из мира",
+      "Update": "Обновление",
+      "Warnings": "Предупреждения"
     },
 
     "BACKUPS": {
@@ -2828,7 +2827,7 @@
       "DeleteBackupTitle": "Удаление резервных копий для {title}",
       "DeleteBackupWarning": "Удаление резервной копии не может быть отменено. Продолжить?",
       "DeleteBackupWarningPl": "<strong>{count}</strong> резервных копий выбрано для удаления. Это действие не может быть отменено. Продолжить?",
-      "DeleteSelected": "Delete Selected",
+      "DeleteSelected": "Удалить выбранные",
       "DeletingSnapshot": "Удаление образов",
       "DeleteSnapshotComplete": "Образ уделён.",
       "DeleteSnapshotCompletePl": "Удалено {count} образа.",
@@ -2863,7 +2862,7 @@
       "RestoreSnapshotWarning": "Восстановление образа возвращает состояние Foundry VTT к тому, в котором был сделан образ. Все версии и настройки миров будут возвращены. Этот процесс нельзя отменить.",
       "RestoreSnapshotUnchangedPackages": "<strong>1</strong> пакет был добавлен после создания образа и он останется неизменным после восстановления образа.",
       "RestoreSnapshotUnchangedPackagesPl": "<strong>{count}</strong> пакетов были добавлены после создания образа и они останутся неизменными после восстановления образа.",
-      "SelectAll": "Select All",
+      "SelectAll": "Выбрать все",
       "Snapshot": "Образ",
       "TakeBackup": "Создание резервной копии",
       "VersionFormat": "Версия {version}",
@@ -2948,7 +2947,7 @@
     "Create": "Создание пакета",
     "Compatibility": {
       "Label": "Совместимость",
-      "Hint": "Вы можете указать, что этот пакет совместим только с определёнными версиями Foundry Virtual Tabletop. Совместимость может быть указана для конкретной сборки, например \"13.339\", или для общей версии, например \"13\"."
+      "Hint": "Вы можете указать, что этот пакет совместим только с определёнными версиями Foundry Virtual Tabletop. Совместимость может быть указана для конкретной сборки, например \"14.356\", или для общей версии, например \"14\"."
     },
     "TagJavaScript": "JavaScript",
     "TagCSS": "CSS",
@@ -2973,7 +2972,7 @@
     "AlreadyUpdated": "{name} уже обновлено.",
     "AllUpdated": "Все {type} обновлены!",
     "UpdateAllInProgress": "Процесс \"Обновить все\" уже выполняется. Необходимо дождаться его завершения, прежде чем обновлять другие пакеты.",
-    "Description": "Description",
+    "Description": "Описание",
     "ModuleCreate": "Создание модуля",
     "ModuleCreateHint": "Эта форма позволяет создать модуль, который может быть использован в нескольких мирах или запакован для распространения среди других пользователей. Вы сможете отредактировать свой пакет после создания, изменяя его файл манифеста JSON.",
     "ModuleCreateSuccess": "Созданный модуль \"{id}\" готов к использованию!",
@@ -3000,11 +2999,11 @@
       "DETAILS": "Подробный список"
     },
     "RESULT": {
-      "Label": "Result",
-      "Update": "Update",
-      "Error": "Error",
-      "Warning": "Warning",
-      "Information": "Information"
+      "Label": "Результат",
+      "Update": "Обновление",
+      "Error": "Ошибка",
+      "Warning": "Предупреждение",
+      "Information": "Информация"
     },
     "ACTIONS": {
       "AddAuthor": "Добавить автора",
@@ -3099,7 +3098,7 @@
     "ErrorInvalidPassword": "Предоставлен неверный пароль для {user}!",
     "ErrorBanned": "{user} не имеет разрешения на доступ к этому миру!",
     "LoginSuccess": "Вход под именем {user} успешен, присоединение к игре!",
-    "WorldPendingSetup": "This World is not ready yet. Please wait for the Gamemaster to log in and complete setup before attempting to join."
+    "WorldPendingSetup": "Этот мир ещё не готов. Подождите, пока ведущий не присоединится."
   },
 
   "SHEETS.ConfigureSheet": "Настройка бланка",
@@ -3284,8 +3283,8 @@
       },
       "attachment": {
         "token": {
-          "label": "Attached Token",
-          "hint": "The Token the Region is attached to. When this Token is moved, the Region is moved with it."
+          "label": "Прикреплённый токен",
+          "hint": "Токен, к которому прикреплён регион. Когда этот токен перемещается, регион перемещается вместе с ним."
         }
       },
       "restriction": {
@@ -3342,10 +3341,10 @@
     },
     "HIGHLIGHT_MODES": {
       "shapes": {
-        "label": "True Shapes"
+        "label": "Истинные формы"
       },
       "coverage": {
-        "label": "Covered Grid Spaces"
+        "label": "Покрытые клетки сетки"
       }
     },
     "RESTRICTION_TYPES": {
@@ -3360,7 +3359,7 @@
         "label": "Изменение границ регионов"
       },
       "regionAnimation": {
-        "label": "Region Animation State Changed"
+        "label": "Состояние анимации региона изменено"
       },
       "behaviorActivated": {
         "label": "Поведение активировано"
@@ -3427,16 +3426,16 @@
     },
     "NOTIFICATIONS": {
       "PlacedRegionRotationNotAllowed": "Вы не можете вращать форму размещённого региона.",
-      "PlacedRegionNotAttachedToToken": "The placed Region must be attached to a Token.",
+      "PlacedRegionNotAttachedToToken": "Размещённый регион должен быть прикреплён к токену.",
       "CopiedShape": "Форма региона скопирована.",
       "CutShape": "Форма региона вырезана.",
       "PastedShape": "Форма региона вставлена.",
       "PastedShapeWithoutControlledRegion": "Вы не управляете регионом в который можно вставить форму."
     },
     "TOOLTIPS": {
-      "CannotChangeLevelsIfAttached": "The Region must be on the same Level as the Token it's attached to.",
-      "CannotSelectMultipleLevelsIfRestricted": "This Region can't be included in multiple Regions while it's restricted.",
-      "CannotEnableRestriction": "This Region can't be restricted because it's included in more than one Level."
+      "CannotChangeLevelsIfAttached": "Регион должен быть на том же уровне, что и токен, к которому он прикреплен.",
+      "CannotSelectMultipleLevelsIfRestricted": "Этот регион не может быть включён в несколько регионов, пока он ограничен.",
+      "CannotEnableRestriction": "Этот регион не может быть ограничен, потому что он включён в более чем один уровень."
     }
   },
 
@@ -3510,30 +3509,30 @@
       "changeLevel": {
         "Confirm": "Переместить {token} на {level}?",
         "ConfirmSelect": "Выберите уровень, на который желаете переместить {token}.",
-        "Move": "Move",
-        "MoveDown": "Move Down",
-        "MoveUp": "Move Up"
+        "Move": "Перемещение",
+        "MoveDown": "Вверх",
+        "MoveUp": "Вниз"
       },
       "defineSurface": {
         "FIELDS": {
           "placement.label": "Расположение",
-          "light.label": "Restricts Light and Darkness",
-          "move.label": "Restricts Movement",
-          "sight.label": "Restricts Sight",
-          "sound.label": "Restricts Sound",
+          "light.label": "Ограничивает свет и темноту",
+          "move.label": "Ограничивает перемещение",
+          "sight.label": "Ограничивает зрение",
+          "sound.label": "Ограничивает звук",
           "occlusion": {
-            "label": "Occlusion",
-            "hint": "When an occludable Token is beneath the surface, Tiles with occlusion mode set to SURFACE, and any foreground or background Level textures at the same elevation or higher, will be occluded."
+            "label": "Затенение",
+            "hint": "Когда токен находится под поверхностью, тайлы с режимом затенения 'Поверхность', и любые текстуры уровня переднего или заднего плана на той же высоте или выше, будут затенены."
           },
           "exposure": {
-            "label": "Reveal Elevated Surface",
-            "hint": "Partially reveal the visible area of this elevated surface to observers below and outside of it. The revealed area depends on the angle between the observer and the surface boundary, this area decreases as the angle becomes steeper. This option is useful for roofs, balconies, or other overhead platforms."
+            "label": "Отображение возвышенной поверхности",
+            "hint": "Частично показать видимую область этой возвышенной поверхности наблюдателям ниже и за её пределами. Показаная область зависит от угла между наблюдателем и границей поверхности. Эта область уменьшается, когда угол становится острее. Эта опция полезна для крыш, балконов, или других надземных платформ."
           }
         },
         "PLACEMENTS": {
-          "bottom.label": "Bottom",
-          "top.label": "Top",
-          "both.label": "Bottom and Top"
+          "bottom.label": "Снизу",
+          "top.label": "Сверху",
+          "both.label": "Снизу и сверху"
         }
       },
       "displayScrollingText": {
@@ -3614,19 +3613,19 @@
           },
           "dialog.revealed": {
             "label": "Окно (раскрытый)",
-            "hint": "The text that is displayed in the confirmation dialog if the destination(s) are revealed or the User is a GM. {token} is replaced by the Token's name. {region} is replaced by the destination Region's name unless this teleporter has multiple destinations. {scene} is replaced by the destination Scene's name unless this teleporter has destinations in different Scenes."
+            "hint": "Текст, отображаемый в диалоговом окне подтверждения, если назначения раскрыты или участник является ведущим. {token} заменяется на имя токена. {region} заменяется на название региона назначения, если только этот телепорт не имеет нескольких назначений. {scene} заменяется на название сцены назначения, если этот телепорт имеет назначения в разных сценах."
           },
           "dialog.unrevealed": {
             "label": "Окно (скрытый)",
-            "hint": "The text that is displayed in the confirmation dialog if the destination(s) are unrevealed and the User is not a GM. {token} is replaced by the Token's name."
+            "hint": "Текст, отображаемый в диалоговом окне подтверждения, если назначения не раскрыты и участник не является ведущим. {token} заменяется на имя токена."
           },
           "transition.type": {
-            "label": "Transition Type",
-            "hint": "The type of transition animation that is played when a Token is teleported."
+            "label": "Тип перехода",
+            "hint": "Тип анимации перехода, которая воспроизводится при телепортации токена."
           },
           "transition.duration": {
-            "label": "Transition Duration",
-            "hint": "The duration of the transition animation in milliseconds."
+            "label": "Длительность перехода",
+            "hint": "Длительность анимации перехода в миллисекундах."
           }
         },
         "PLACEMENTS": {
@@ -3636,8 +3635,8 @@
         },
         "Confirm": "Телепортировать {token}?",
         "ConfirmRevealed": "Телепортировать {token} в {region} на {scene}?",
-        "ConfirmSelectSameScene": "Select the destination in {scene} you want to teleport {token} to.",
-        "ConfirmSelectDifferentScene": "Select the destination you want to teleport {token} to.",
+        "ConfirmSelectSameScene": "Выберите назначение в {scene}, в которое вы хотите телепортировать {token}.",
+        "ConfirmSelectDifferentScene": "Выберите назначение, в которое вы хотите телепортировать {token}.",
         "ConfirmSelectOption": "{region} в {scene}"
       },
       "toggleBehavior": {
@@ -3664,7 +3663,7 @@
   "SIDEBAR.NavLabel": "Вкладки боковой панели",
   "SIDEBAR.TabJournal": "Журналы",
   "SIDEBAR.TabCompendium": "Библиотеки",
-  "SIDEBAR.TabPlaceables": "Placeables",
+  "SIDEBAR.TabPlaceables": "Объекты",
   "SIDEBAR.TabSettings": "Настройки игры",
   "SIDEBAR.TabTables": "Случайные таблицы",
   "SIDEBAR.TokenArt": "Просмотр изображения токена",
@@ -3687,7 +3686,7 @@
   "SIDEBAR.Wiki": "Wiki сообщества Foundry VTT",
 
   "SIDEBAR.ACTIONS.CREATE": {
-    "ActiveEffect": "Create Active Effect",
+    "ActiveEffect": "Создать эффект",
     "Actor": "Создать актёра",
     "Adventure": "Создать приключение",
     "Cards": "Создать колоду",
@@ -3715,41 +3714,41 @@
       "Delete": "Удалить",
       "Hidden": "Скрытый",
       "Hide": "Скрыть",
-      "InLevel": "Included in Level",
-      "Lock": "Lock",
-      "Locked": "Locked",
-      "NotInLevel": "Not Included in Level",
-      "Show": "Show",
-      "Unlock": "Unlock",
-      "Unlocked": "Unlocked",
-      "Visible": "Visible"
+      "InLevel": "В уровне",
+      "Lock": "Заблокировать",
+      "Locked": "Заблокирован",
+      "NotInLevel": "Не в уровне",
+      "Show": "Показать",
+      "Unlock": "Разблокировать",
+      "Unlocked": "Разблокирован",
+      "Visible": "Видимый"
     },
     "Categories": {
-      "NoAuthor": "No Author"
+      "NoAuthor": "Без автора"
     },
     "Meta": {
-      "empty": "Empty",
-      "visible": "Visible to some players",
-      "hidden": "Hidden from players",
-      "locked": "Locked"
+      "empty": "Пусто",
+      "visible": "Видимый для некоторых участников",
+      "hidden": "Скрытый для участников",
+      "locked": "Заблокировано"
     },
     "Filter": {
       "ACTIONS": {
-        "Clear": "Clear"
+        "Clear": "Очистить"
       },
-      "Bottom": "Bottom",
-      "Title": "Advanced Filter",
-      "Level": "Filter by Level",
-      "Tooltip": "Advanced Filters. Right-click to clear.",
-      "Top": "Top"
+      "Bottom": "Снизу",
+      "Title": "Расширенный фильтр",
+      "Level": "Фильтр по уровню",
+      "Tooltip": "Расширенные фильтры. Щёлкните ПКМ, чтобы очистить.",
+      "Top": "Сверху"
     },
     "Search": {
       "placeholder": "Фильтр {name}"
     },
     "WALLS": {
-      "door": "Doors",
+      "door": "Двери",
       "ethereal": "Бесплотные стены",
-      "filterByCategory": "Filter by Category",
+      "filterByCategory": "Фильтр по типу",
       "invisible": "Невидимые стены",
       "normal": "Обычные стены",
       "secret": "Скрытые двери",
@@ -3816,8 +3815,8 @@
     "WorldData": "Данные мира",
     "CompendiumData": "Данные библиотек",
     "ActiveModules": "Активные модули",
-    "Errors": "Errors",
-    "Warnings": "Warnings",
+    "Errors": "Ошибки",
+    "Warnings": "Предупреждения",
     "TABS": {
       "support": "Данные для поддержки",
       "documents": "Проблемы с документами",
@@ -3927,14 +3926,14 @@
       "alpha.label": "Прозрачность преграждения"
     },
     "OCCLUSION_MODES": {
-      "FADE.label": "Fade",
-      "NONE.label": "None",
-      "RADIAL.label": "Radial",
-      "SURFACE.label": "Surface",
-      "VISION.label": "Vision"
+      "FADE.label": "Затухание",
+      "NONE.label": "Нет",
+      "RADIAL.label": "Окружность",
+      "SURFACE.label": "Поверхность",
+      "VISION.label": "Зрение"
     },
     "restrictions": {
-      "label": "Restrictions",
+      "label": "Ограничения",
       "light": {
         "label": "Ограничивает свет",
         "hint": "Блокируются ли источники света на основе их высоты относительно высоты этого тайла?"
@@ -3946,7 +3945,7 @@
     },
     "video": {
       "loop.label": "Повторение видео",
-      "autoplay.label": "Автопроигрывание",
+      "autoplay.label": "Автовоспроизведение",
       "volume.label": "Громкость видео"
     }
   },
@@ -4010,8 +4009,8 @@
   "TOKEN.BarAttributes": "Шкалы параметров",
   "TOKEN.BarValues": "Одиночные значения",
   "TOKEN.DeleteCombatantWarning": "Вы собираетесь удалить токен в бою. Боец будет удалён из трекера.",
-  "TOKEN.DeleteAttachedRegionWarning": "You are deleting a Token that has a Region attached to it. Its attached Region(s) will be permanently deleted.",
-  "TOKEN.Dimensions": "Размеры",
+  "TOKEN.DeleteAttachedRegionWarning": "Вы собираетесь удалить токен, который имеет прикрепленный регион. Прикрепленные регионы будут удалены.",
+  "TOKEN.Size": "Размер",
   "TOKEN.Anchor": "Якорь",
   "TOKEN.AnchorHint": "Координаты якоря по умолчанию (0.5, 0.5) - центр изображения токена.",
   "TOKEN.ImageAlts": "Альтернативный токен",
@@ -4025,7 +4024,7 @@
   "TOKEN.WarningNoActor": "Этот токен связан с актёром, который больше не существует.",
   "TOKEN.WarningNoVision": "На этой сцене нет токена, позволяющего вам видеть область.",
   "TOKEN.PROTOTYPE": {
-    "OverridesWarning": "This field is defined by Prototype Token Overrides and cannot be edited directly."
+    "OverridesWarning": "Это поле определяется перезаписью прототипа токена и не может быть отредактировано напрямую."
   },
   "TOKEN.TABS": {
     "identity": "Данные",
@@ -4040,11 +4039,14 @@
     "advanced": "Дополнительно"
   },
   "TOKEN.NOTIFICATIONS": {
-    "PlacedTokenRotationNotAllowed": "You are not allowed to rotate the placed Token."
+    "PlacedTokenRotationNotAllowed": "Вы не можете поворачивать размещённый токен."
   },
   "TOKEN.FIELDS": {
     "name.label": "Имя токена",
     "sort.label": "Сортировка",
+    "width.label": "Размер X",
+    "height.label": "Размер Y",
+    "depth.label": "Размер Z",
     "movementAction.label": "Действие перемещения",
     "actorId.label": "Связанный актёр",
     "actorLink.label": "Привязка данных актёра",
@@ -4292,7 +4294,7 @@
   "TOKEN.DetectionMode": "Режим обнаружения",
   "TOKEN.DetectionRange": "Дистанция",
   "TOKEN.DetectionEnabled": "Включено",
-  "TOKEN.DetectionOverride": "Override Detection Mode",
+  "TOKEN.DetectionOverride": "Перезапись режима обнаружения",
   "TOKEN.DetectionRemove": "Удалить режим обнаружения",
 
   "TOKEN.RING": {
@@ -4340,6 +4342,15 @@
       "fly.label": "Полёт",
       "swim.label": "Плавание",
       "walk.label": "Ходьба"
+    },
+    "NOTIFICATIONS": {
+      "PLAN": {
+        "DirectViolation": "Вы не можете размещать точки маршрута при планировании этого перемещения.",
+        "MinCostViolation": "План перемещения не соответствует минимальной требуемой стоимости.",
+        "MaxCostViolation": "План перемещения превышает максимально допустимую стоимость.",
+        "MinDistanceViolation": "План перемещения не соответствует минимальному требуемому расстоянию.",
+        "MaxDistanceViolation": "План перемещения превышает максимально допустимое расстояние."
+      }
     }
   },
 
@@ -4364,7 +4375,7 @@
       "adjustDarknessLevel": "Настройка уровня темноты",
       "applyActiveEffect": "Применение активного эффекта",
       "changeLevel": "Изменить уровень",
-      "defineSurface": "Define Surface",
+      "defineSurface": "Определение поверхности",
       "displayScrollingText": "Всплывающий текст",
       "executeMacro": "Запуск макроса",
       "executeScript": "Запуск скрипта",
@@ -4380,18 +4391,18 @@
     },
     "HINTS": {
       "RegionBehavior": {
-        "adjustDarknessLevel": "Override, brighten, or darken the Scene's Darkness Level within the Region.",
-        "applyActiveEffect": "Apply Active Effects to Tokens while they are within the Region.",
-        "changeLevel": "Allow Tokens that move into the Region to move to another Level the Region is included in.",
-        "defineSurface": "Define a surface that can restrict light, movement, sight, and sound.",
-        "displayScrollingText": "Display a scrolling text above a Token when it triggers one of the subscribed events.",
-        "executeMacro": "Execute a Macro when one of the subscribed events occurs.",
-        "executeScript": "Execute a script when one of the subscribed events occurs.",
-        "modifyMovementCost": "Modify the movement cost of Tokens within the Region.",
-        "pauseGame": "Pause the game when a Token is moved into the Region by a player.",
-        "suppressWeather": "Suppress weather effects within the Region.",
-        "teleportToken": "Teleport Tokens that are moved into the Region to another Region.",
-        "toggleBehavior": "Enable/disable other Region Behaviors when one of the subscribed events occurs."
+        "adjustDarknessLevel": "Перезапись, осветление или затемнение уровня темноты сцены в регионе.",
+        "applyActiveEffect": "Применение активных эффектов к токенам, находящимся в регионе.",
+        "changeLevel": "Разрешение токенам, перемещающимся в регион, перемещаться на другой уровень, в который входит регион.",
+        "defineSurface": "Определение поверхности, которая может ограничить свет, движение, зрение и звук.",
+        "displayScrollingText": "Вывод всплывающего текста над токеном, когда он запускает одно из подписанных событий.",
+        "executeMacro": "Запуск макроса, когда срабатывает одно из подписанных событий.",
+        "executeScript": "Запуск скрипта, когда срабатывает одно из подписанных событий.",
+        "modifyMovementCost": "Изменение стоимости перемещения токенов в регионе.",
+        "pauseGame": "Приостановка игры, когда токен перемещается в регион игроком.",
+        "suppressWeather": "Блокировка погодных эффектов в регионе.",
+        "teleportToken": "Телепортация токенов, которые перемещаются в регион в другой регион.",
+        "toggleBehavior": "Включение/выключение других поведений регионов, когда срабатывает одно из подписанных событий."
       }
     }
   },
@@ -4485,17 +4496,17 @@
   "USERS.KeyShow": "Показать пароль",
   "USERS.Create": "Создать участника",
   "USERS.Delete": "Удалить участника",
-  "USERS.LoginAs": "Login as User",
-  "USERS.LoginAsGMRequired": "You must be a Gamemaster to log in as another user.",
+  "USERS.LoginAs": "Войти как участник",
+  "USERS.LoginAsGMRequired": "Вы должны быть ведущим, чтобы войти как другой участник.",
   "USERS.DeleteName": "Удаление участника: {name}",
   "USERS.Launch": "Сохранить и вернуться",
-  "USERS.FirstLaunch": "Save and Continue",
+  "USERS.FirstLaunch": "Сохранить и продолжить",
   "USERS.ManageTitle": "Управление участниками",
   "USERS.UpdateSuccess": "Данные участников обновлены, возвращение в игру.",
   "USERS.NoGMError": "В вашем мире должен быть как минимум один ведущий.",
   "USERS.DeleteWarning": "Этот участник будет удалён из игрового мира.",
   "USERS.DeleteGMWarning": "Вы собираетесь удалить ведущего!",
-  "USERS.PasswordWarning": "Setting a password for the Gamemaster account is strongly recommended.",
+  "USERS.PasswordWarning": "Рекомендуется установить пароль для аккаунта ведущего.",
 
   "VISION.ModeBlindness": "Слепота",
   "VISION.ModeBasicVision": "Обычное зрение",
@@ -4572,8 +4583,8 @@
   "WALL.DoorSounds.Industrial": "Индустриальная",
   "WALL.DoorSounds.IndustrialCreaky": "Индустриальная, скрипящая",
   "WALL.DoorSounds.Jail": "Клетка",
-  "WALL.DoorSounds.JailCreaky": "Jail, Creaky",
-  "WALL.DoorSounds.JailHeavy": "Jail, Heavy",
+  "WALL.DoorSounds.JailCreaky": "Клетка, скрипящая",
+  "WALL.DoorSounds.JailHeavy": "Клетка, тяжёлая",
   "WALL.DoorSounds.MagicDoor": "Волшебная дверь",
   "WALL.DoorSounds.MagicWall": "Волшебная стена",
   "WALL.DoorSounds.Metal": "Металлическая",
@@ -4590,7 +4601,7 @@
 
   "WEBRTC": {
     "Title": "Параметры аудио-видео",
-    "MenuLabel": "Audio/Video",
+    "MenuLabel": "Аудио/видео",
     "MenuHint": "Настройка аудио-видео компонента WebRTC.",
     "UnknownDevice": "<Неизвестное устройство>",
     "DeviceUnavailableWarning": "Аудио-видео трансляция не удалась, т.к. одно из устройств не доступно.",
@@ -4600,7 +4611,7 @@
     "DefaultSource": "Устройство по умолчанию",
     "DevicesSubsections": {
       "Video": "Видео",
-      "Audio": "Звук"
+      "Audio": "Аудио"
     },
     "UnavailableDevice": "Недоступное устройство (будет использовано стандартное)",
     "TURNServerConfiguration": "Настройка своего сервера",
@@ -4740,63 +4751,63 @@
   },
 
   "SHAPE": {
-    "label": "Shape",
-    "labelPlural": "Shapes",
+    "label": "Форма",
+    "labelPlural": "Формы",
     "TYPES": {
       "base": {
         "FIELDS": {
           "type.label": "Тип",
-          "hole.label": "Is Hole",
+          "hole.label": "Отверстие",
           "gridBased": {
-            "label": "Is Grid-Based",
-            "hint": "A grid-based shape is conforming to the grid's metric."
+            "label": "По сетке",
+            "hint": "Форма будет прилегать к клеткам сетки."
           },
           "x.label": "Начало X",
           "y.label": "Начало Y",
-          "rotation.label": "Rotation"
+          "rotation.label": "Поворот"
         },
         "origin.label": "Начало"
       },
       "rectangle": {
-        "name": "Rectangle",
+        "name": "Прямоугольник",
         "FIELDS": {
-          "width.label": "Ширина",
-          "height.label": "Высота",
+          "width.label": "Размер X",
+          "height.label": "Размер Y",
           "anchorX.label": "Якорь X",
           "anchorY.label": "Якорь Y"
         },
         "anchor.label": "Якорь"
       },
       "circle": {
-        "name": "Circle",
+        "name": "Круг",
         "FIELDS": {
-          "radius.label": "Radius"
+          "radius.label": "Радиус"
         }
       },
       "ellipse": {
-        "name": "Ellipse",
+        "name": "Эллипс",
         "FIELDS": {
-          "radiusX.label": "X-Radius",
+          "radiusX.label": "Радиус X",
           "radiusY.label": "Радиус Y"
         }
       },
       "cone": {
-        "name": "Cone",
+        "name": "Конус",
         "FIELDS": {
-          "radius.label": "Radius",
-          "angle.label": "Angle",
-          "curvature.label": "Curvature"
+          "radius.label": "Радиус",
+          "angle.label": "Угол",
+          "curvature.label": "Округлость"
         },
         "CURVATURES": {
-          "round.label": "Round",
-          "flat.label": "Flat",
-          "semicircle.label": "Semicircle"
+          "round.label": "Круглый",
+          "flat.label": "Плоский",
+          "semicircle.label": "Полукруглый"
         }
       },
       "ring": {
-        "name": "Ring",
+        "name": "Кольцо",
         "FIELDS": {
-          "radius.label": "Radius",
+          "radius.label": "Радиус",
           "innerWidth.label": "Внутренняя ширина",
           "outerWidth.label": "Наружная ширина"
         }
@@ -4831,32 +4842,32 @@
           "height.label": "Высота",
           "shape.label": "Форма"
         },
-        "position.label": "Position",
-        "dimensions.label": "Dimensions"
+        "position.label": "Положение",
+        "size.label": "Размер"
       },
       "grid": {
-        "name": "Grid Spaces",
+        "name": "Клетки сетки",
         "FIELDS": {
-          "offsets.label": "Grid Offsets",
-          "origin.label": "Origin"
+          "offsets.label": "Смещение сетки",
+          "origin.label": "Начало"
         }
       }
     },
     "ACTIONS": {
-      "createFromWalls": "Create Shapes from Controlled Walls",
-      "makeHole": "Make Hole",
-      "fillHole": "Fill Hole",
-      "moveUp": "Move Shape Up",
-      "moveDown": "Move Shape Down",
-      "edit": "Edit Shape",
-      "remove": "Remove Shape",
-      "removeAll": "Remove All Shapes"
+      "createFromWalls": "Создать формы на основе стен",
+      "makeHole": "Сделать отверстием",
+      "fillHole": "Заполнить отверстие",
+      "moveUp": "Переместить выше",
+      "moveDown": "Переместить ниже",
+      "edit": "Изменить форму",
+      "remove": "Удалить форму",
+      "removeAll": "Удалить все формы"
     },
     "NOTIFICATIONS": {
-      "DrawingMultipleObjectsControlled": "You must control only one or no {type} when you draw a shape!",
-      "ControlWalls": "Control a group of Walls which define the boundary of your desired shape.",
-      "EmptyEnclosedArea": "The area enclosed by the controlled Walls is empty! Make sure that the outer Walls form a closed loop and are connected endpoint to endpoint.",
-      "NoControlledWalls": "You are not controlling any Walls!"
+      "DrawingMultipleObjectsControlled": "Вы должны выделить только один или ни один {type} при рисовании формы!",
+      "ControlWalls": "Выделите группу стен, которые определят границу желаемой формы.",
+      "EmptyEnclosedArea": "Не удалось создать форму. Убедитесь, что выбранные стены образуют замкнутое пространство.",
+      "NoControlledWalls": "Стены не выбраны."
     }
   }
 }
