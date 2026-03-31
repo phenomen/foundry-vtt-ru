@@ -22,6 +22,7 @@ export default defineConfig({
   fmt: {
     quoteProps: "consistent",
     singleAttributePerLine: true,
+    endOfLine: "lf",
     // Defaults:
     // "arrowParens": "always",
     // "bracketSpacing": true,
