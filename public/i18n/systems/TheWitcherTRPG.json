@@ -1,184 +1,191 @@
 {
   "TYPES": {
     "Item": {
-      "alchemical": "Alchemical",
-      "armor": "Armor",
-      "clue": "Clue",
-      "component": "Component",
-      "container": "Container",
-      "diagrams": "Diagrams",
-      "enhancement": "Enhancement",
-      "hex": "Hex",
-      "mount": "Mount",
-      "mutagen": "Mutagen",
-      "note": "Note",
-      "obstacle": "Obstacle",
-      "profession": "Profession",
-      "race": "Race",
-      "ritual": "Ritual",
-      "skill": "Skill",
-      "spell": "Spell",
-      "valuable": "Valuable",
-      "weapon": "Weapon"
+      "alchemical": "Алхимический",
+      "armor": "Броня",
+      "clue": "Подсказка",
+      "component": "Компонент",
+      "container": "Контейнер",
+      "criticalWound": "Критические ранения",
+      "diagrams": "Чертежи",
+      "enhancement": "Улучшение",
+      "hex": "Порча",
+      "homeland": "Родина",
+      "mount": "Ездовое животное",
+      "mutagen": "Мутаген",
+      "note": "Заметка",
+      "obstacle": "Препятствие",
+      "profession": "Профессия",
+      "race": "Раса",
+      "ritual": "Ритуал",
+      "skill": "Навык",
+      "spell": "Заклинание",
+      "valuable": "Ценность",
+      "weapon": "Оружие"
     },
     "Actor": {
-      "character": "Character",
-      "monster": "Monster",
-      "loot": "Loot",
-      "mystery": "Mystery"
+      "character": "Персонаж",
+      "monster": "Монстр",
+      "loot": "Добыча",
+      "mystery": "Тайна"
     },
     "ActiveEffect": {
-      "temporaryItemImprovement": "Temporary Item Improvement"
+      "temporaryItemImprovement": "Временное улучшение"
+    }
+  },
+  "EFFECT": {
+    "TABS": {
+      "systemSpecific": "System Specific"
     }
   },
   "WITCHER": {
-    "Name": "Name",
+    "Name": "Имя",
     "Type": "Тип",
-    "Percentage": "Шанс",
-    "NoEffects": "No Effects",
+    "Percentage": "Процент",
+    "NoEffects": "Нет эффектов",
     "DC": "СЛ",
     "Attack": {
-      "name": "Attack",
+      "name": "Атака",
       "attackOptions": {
-        "label": "Attack is:",
-        "hint": "Configure the attack options",
-        "melee": "Melee",
-        "ranged": "Ranged",
-        "spell": "Spell",
-        "itemUse": "Item Use"
+        "label": "Атака:",
+        "hint": "Настройте параметры атаки",
+        "melee": "Ближний бой",
+        "ranged": "Дальний бой",
+        "spell": "Заклинание",
+        "itemUse": "Использование предмета"
       },
       "meleeAttackSkill": {
-        "label": "Melee Attack Skill",
+        "label": "Навык ближнего боя",
         "hint": ""
       },
       "rangedAttackSkill": {
-        "label": "Ranged Attack Skill",
+        "label": "Навык дальнего боя",
         "hint": ""
       },
       "spellAttackSkill": {
-        "label": "Spell Attack Skill",
+        "label": "Навык заклинаний",
         "hint": ""
       },
       "itemUseAttackSkill": {
-        "label": "Item Use Attack Skill",
+        "label": "Навык использования предметов",
         "hint": ""
       }
     },
     "Defense": {
-      "name": "Defense",
-      "Crit": "You received a crit",
-      "critStun": "Stun save for critical",
+      "name": "Защита",
+      "Crit": "Вы получили критический удар",
+      "critStun": "Спасбросок от дезориентации при критическом ранении",
       "defenseOptions": {
-        "name": "Defense Options",
-        "dodge": "Dodge",
-        "reposition": "Reposition",
-        "parry": "Parry",
-        "block": "Block",
-        "parryThrown": "Parry thrown weapon",
-        "magicResist": "Magic Resist"
+        "name": "Опции защиты",
+        "dodge": "Уклонение",
+        "reposition": "Смена позиции",
+        "parry": "Парирование",
+        "block": "Блок",
+        "parryThrown": "Парирование метательного оружия",
+        "magicResist": "Сопротивление магии"
       },
       "stun": {
-        "button": "Stun"
+        "button": "Дезориентация"
       }
     },
     "Actor": {
       "tabs": {
-        "stats": "Stats",
-        "skills": "Skills",
-        "profession": "Profession & Race",
-        "inventory": "Inventory",
-        "magic": "Magic",
-        "background": "Background",
-        "effects": "Active Effect"
+        "stats": "Параметры",
+        "skills": "Навыки",
+        "profession": "Профессия и раса",
+        "inventory": "Инвентарь",
+        "magic": "Магия",
+        "background": "Предыстория",
+        "effects": "Эффекты"
       },
       "Name": "Имя персонажа",
       "Race": "Раса",
       "Gender": "Пол",
       "Age": "Возраст",
       "Perks": "Черты",
-      "Adda.Profession": "Add a Profession",
-      "Adda.Race": "Add a Race",
-      "woundState": "Wound State",
-      "TotalStats": "Всего",
-      "Stat.Int": "INT",
-      "Stat.Ref": "REF",
-      "Stat.Dex": "DEX",
-      "Stat.Body": "BODY",
-      "Stat.Spd": "SPD",
-      "Stat.Emp": "EMP",
-      "Stat.Cra": "CRA",
-      "Stat.Will": "WILL",
-      "Stat.Luck": "LUCK",
-      "Stat.Toxicity": "Toxicity",
-      "StatTitle.LableLeft": "Statistics",
-      "StatTitle.ModMax": "Mod / Max",
-      "StatTitle.Derived": "Derived",
-      "DerStat.Stun": "STUN",
-      "DerStat.Run": "RUN",
-      "DerStat.Leap": "LEAP",
-      "DerStat.Enc": "ENC",
-      "DerStat.Rec": "REC",
-      "DerStat.woundTreshold": "WT",
-      "DerStat.Vigor": "Vigor",
-      "DerStat.HP": "Max HP",
-      "DerStat.Shield": "Shield",
-      "DerStat.Sta": "STA",
-      "DerStat.Resolve": "Resolve",
-      "DerStat.Focus": "Focus",
-      "DerStat.Punch": "Punch",
-      "DerStat.Kick": "Kick",
+      "Adda.Profession": "Добавить профессию",
+      "Adda.Race": "Добавить расу",
+      "woundState": "Состояние раны",
+      "TotalStats": "Всего хар-ик",
+      "Stat.Int": "ИНТ",
+      "Stat.Ref": "РЕА",
+      "Stat.Dex": "ЛВК",
+      "Stat.Body": "ТЕЛ",
+      "Stat.Spd": "СКОР",
+      "Stat.Emp": "ЭМП",
+      "Stat.Cra": "РЕМ",
+      "Stat.Will": "ВОЛЯ",
+      "Stat.Luck": "УДАЧА",
+      "Stat.Toxicity": "ТОКС",
+      "StatTitle.LableLeft": "Характеристики",
+      "StatTitle.ModMax": "Мод/Макс",
+      "StatTitle.Derived": "Доп.",
+      "DerStat.Stun": "ОГЛУШ",
+      "DerStat.Run": "БЕГ",
+      "DerStat.Leap": "ПРЫЖ",
+      "DerStat.Enc": "ВЕС",
+      "DerStat.Rec": "ОТД",
+      "DerStat.woundTreshold": "ПР",
+      "DerStat.Vigor": "Энергия",
+      "DerStat.HP": "Макс. ПЗ",
+      "DerStat.Shield": "Щит",
+      "DerStat.Sta": "ВЫН",
+      "DerStat.Resolve": "Решимость",
+      "DerStat.Focus": "Концентрация",
+      "DerStat.Punch": "Удар рукой",
+      "DerStat.Kick": "Удар ногой",
       "Initiative": "Инициатива",
       "SavingThrow": "Спасбросок",
-      "Crit/Fumble": "Крит. бросок",
+      "Crit/Fumble": "Крит/Провал",
       "Adrenaline": "Адреналин",
       "Stamina": "Выносливость",
-      "RecoveryStamina": "Recover Stamina",
-      "Resolve": "Resolve",
+      "RecoveryStamina": "Восстановление выносливости",
+      "Resolve": "Решимость",
       "Hp": "ПЗ",
-      "Shield": "Shield",
-      "Skill.Intelligence": "Intelligence",
-      "Skill.Reflex": "Reflex",
-      "Skill.Willpower": "Willpower",
-      "Skill.Dexterity": "Dexterity",
-      "Skill.Crafting": "Crafting",
-      "Skill.Body": "Body",
-      "Skill.Empathy": "Empathy",
-      "Profession.Level": "Level",
-      "ImprovementPoints": "Очки Улучшения",
+      "Shield": "Щит",
+      "Skill.Intelligence": "Интеллект",
+      "Skill.Reflex": "Реакция",
+      "Skill.Willpower": "Воля",
+      "Skill.Dexterity": "Ловкость",
+      "Skill.Crafting": "Ремесло",
+      "Skill.Body": "Телосложение",
+      "Skill.Empathy": "Эмпатия",
+      "Profession.Level": "Уровень",
+      "ImprovementPoints": "Очки улучшения",
       "CurrentIP": "Текущие ОУ:",
       "SkillName": "Название навыка...",
-      "TotalSkill": "Всего О.У в навыках",
-      "TotalProfSkill": "Всего О.У в ветвях профессии",
-      "SpecialSkillModifier": "Special Skill Modifiers",
+      "TotalSkill": "Всего навыков",
+      "TotalProfSkill": "Всего навыков профессии",
+      "SpecialSkillModifier": "Специальные модификаторы навыков",
       "focus": {
-        "name": "Focus",
-        "first": "First",
-        "second": "Second",
-        "third": "Third",
-        "fourth": "Fourth"
+        "name": "Фокус",
+        "first": "Первый",
+        "second": "Второй",
+        "third": "Третий",
+        "fourth": "Четвертый"
       },
       "Lifepath": {
-        "Bonus": "Lifepath Bonus",
-        "strongStrikeAttackBonus": "Strong Strike Attack Bonus",
-        "jointStrikeAttackBonus": "Joint Strike Attack Bonus",
-        "shieldParryBonus": "Shield Parry Bonus",
-        "shieldParryThrownBonus": "Shield Parry Thrown Bonus",
-        "ignoredArmorEncumbrance": "Ignored Armor Encumbrance",
-        "ignoredEvWhenCasting": "Ignored EV When Casting"
+        "Bonus": "Бонус предыстории",
+        "strongStrikeAttackBonus": "Бонус к сильной атаке",
+        "jointStrikeAttackBonus": "Бонус к атаке парным оружием",
+        "shieldParryBonus": "Бонус к парированию щитом",
+        "shieldParryThrownBonus": "Бонус к парированию метательного оружия щитом",
+        "ignoredArmorEncumbrance": "Игнорирование штрафа брони",
+        "ignoredEvWhenCasting": "Игнорирование штрафа EV при использовании заклинаний"
       },
       "attackStats": {
-        "critLocationModifier": "Crit Location Modifier",
-        "critEffectModifier": "Crit Effect Modifier"
+        "critLocationModifier": "Модификатор критического попадания",
+        "critEffectModifier": "Модификатор эффекта критического попадания"
       },
       "settings": {
-        "actor": "Actor Settings",
-        "general": "General",
-        "skills": "Skills"
+        "actor": "Настройки актёра",
+        "general": "Общие",
+        "skills": "Навыки"
       },
       "rewards": {
-        "heading": "Rewards",
-        "currency": "Currency",
-        "ip": "IP"
+        "heading": "Награды",
+        "currency": "Валюта",
+        "ip": "ОУ"
       }
     },
     "Alchemy": {
@@ -190,18 +197,18 @@
       "Oil": "Масло"
     },
     "Armor": {
-      "ArmorEnhancement": "Усиления брони",
-      "Reliable": "Надежность",
+      "ArmorEnhancement": "Усиление брони",
+      "Reliable": "Над.",
       "EncumbranceValue": "Скованность движений",
-      "Resistances": "Сопротивление",
+      "Resistances": "Сопротивления",
       "Res": "Сопр",
       "Type": "Тип",
       "StoppingPower": "Текущая прочность",
       "MaxStoppingPower": "Максимальная прочность",
-      "Short.ArmorEnhancement": "AE",
-      "Short.EncumbranceValue": "EV",
-      "Short.StoppingPower": "SP",
-      "Short.MaxStoppingPower": "Max. SP",
+      "Short.ArmorEnhancement": "УБ",
+      "Short.EncumbranceValue": "СД",
+      "Short.StoppingPower": "ПБ",
+      "Short.MaxStoppingPower": "Макс. ПБ",
       "Light": "Лёгкая броня",
       "Medium": "Средняя броня",
       "Heavy": "Тяжёлая броня",
@@ -216,35 +223,35 @@
       "LocationLeft": "Л.",
       "LocationRight": "П.",
       "Location": "Часть тела",
-      "tooMuch": "Слишком много доспехов надето одновременно"
+      "tooMuch": "Слишком много брони одного типа"
     },
     "Item": {
-      "Equipped": "Equipped",
-      "NotEquipped": "Not Equipped",
-      "sendToChat": "Send to Chat",
-      "ClickableImage": "Zoomable",
-      "Short.Availability": "Avail.",
+      "Equipped": "Экипированно",
+      "NotEquipped": "Не экипированно",
+      "sendToChat": "Отправить в чат",
+      "notCarried": "Не надето",
+      "ClickableImage": "Увеличение",
+      "Short.Availability": "Дос.",
       "Weight": "Вес",
       "Cost": "Цена",
-      "Carried": "Carried",
-      "notCarried": "Not Carried",
-      "isConsumable": "Is Consumable",
-      "Effect": "Эффект",
-      "statusEffect": "Status Effect",
+      "Carried": "Надето",
+      "isConsumable": "Является расходуемым",
+      "Effect": "Эффекты",
+      "statusEffect": "Эффект состояния",
       "Quantity": "Количество",
-      "SourceBook": "Source Book",
+      "SourceBook": "Источник",
       "Description": "Описание",
       "Attribute": "Способности",
       "ROF": "СА",
-      "openDescription": "Click to open the description",
-      "equipEnhancement": "Equip a enhancement",
+      "openDescription": "Нажмите, чтобы открыть описание",
+      "equipEnhancement": "Оборудовать улучшением",
       "Availability": "Доступность",
       "AddEffect": "Добавить эффект",
-      "AddComponent": "Добавить ингредиент",
-      "AddAssociatedItem": "Добавить предмет",
-      "RemoveAssociatedItem": "Убрать предмет",
-      "RemoveEffect": "Убрать эффект",
-      "RemoveComponent": "Убрать ингредиент",
+      "AddComponent": "Добавить компонент",
+      "AddAssociatedItem": "Добавить связанный предмет",
+      "RemoveAssociatedItem": "Удалить связанный предмет",
+      "RemoveEffect": "Удалить эффект",
+      "RemoveComponent": "Удалить компонент",
       "CraftingMaterial": "Ремесленные материалы",
       "Hides&AnimalParts": "Шкуры и части животных",
       "AlchemicalTreatments": "Алхимические пропитки и составы",
@@ -258,128 +265,119 @@
       "Small": "Н",
       "Large": "К",
       "CantHide": "Н/С",
-      "containerItems": "Container Items",
+      "containerItems": "Предметы в контейнере",
       "ConsumeProperties": {
-        "doesHeal": "Applies heal",
-        "heal": "Heals for",
-        "addsTempHp": "Add temporary health",
+        "doesHeal": "Лечит",
+        "heal": "Лечит на",
+        "addsTempHp": "Добавить временные ПЗ",
         "temporaryHp": {
-          "value": "Amount",
-          "duration": "Duration"
+          "value": "Кол-во",
+          "duration": "Длительность"
         },
         "Chat": {
-          "healedFor": "healed for",
-          "tempHpAdded": "Added temporary health",
-          "consumeEffects": "applied these effects"
+          "healedFor": "вылечено на",
+          "tempHpAdded": "временных ПЗ добавлено",
+          "consumeEffects": "применены эффекты"
         }
       },
       "DamageProperties": {
-        "damageIsAblation": "Treat damage as ablation (not functional)",
-        "stun": "Stun(x)",
-        "damageToAllLocations": "Damages all locations",
-        "bypassesWornArmor": "Bypasses worn armor",
-        "bypassesNaturalArmor": "Bypasses natural armor",
-        "variableDamage": "Variable Damage",
-        "silverTrait": "has Silver Trait",
-        "silverDamage": "Silver Damage Formula",
-        "isMeteorite": "Meteorite Weapon",
-        "isNonLethal": "Non-Lethal Weapon",
-        "defenseDifferenceMultiplier": "Damage is multiplied by difference of defense (not functional)",
-        "defenseMultiplierCap": "Multiplier is capped at (not functional)"
+        "damageIsAblation": "Считать разрушающий урон (не функционирует)",
+        "stun": "Дезориентация(x)",
+        "damageToAllLocations": "Наносит урон всем частям тела",
+        "bypassesWornArmor": "Игнорирует надетую броню",
+        "bypassesNaturalArmor": "Игнорирует естественную броню",
+        "variableDamage": "Переменный урон",
+        "silverTrait": "Имеет свойство серебра",
+        "silverDamage": "Формула урона серебром",
+        "isMeteorite": "Метеоритное",
+        "isNonLethal": "Несмертельное",
+        "defenseDifferenceMultiplier": "Урон умножается на разницу защиты (не функционирует)",
+        "defenseMultiplierCap": "Множитель ограничен (не функционирует)"
       },
       "DefenseProperties": {
-        "parrying": "Negates parry penalty",
+        "parrying": "Игнорирует штраф парирования",
         "defendsAgainst": {
-          "label": "Defends against",
-          "hint": "against which attack type does this defends"
+          "label": "Защищает от",
+          "hint": "от какого типа атаки защищает"
         },
-        "modifier": "Modifier"
+        "modifier": "Модификатор"
       },
       "RegionProperties": {
-        "createRegionFromTemplate": "Create Region from Template",
-        "tokenEnter": "Apply Macro on Enter",
-        "tokenTurnStart": "Apply Macro on Turn start",
-        "tokenPreMove": "Apply Macro before Token moves",
-        "tokenExit": "Apply Macro on Exit"
+        "createRegionFromTemplate": "Создать регион из шаблона",
+        "tokenEnter": "Применить макрос при входе",
+        "tokenTurnStart": "Применить макрос в начале хода",
+        "tokenPreMove": "Применить макрос перед движением токена",
+        "tokenExit": "Применить макрос при выходе"
       },
       "ContextMenu": {
-        "edit": "Edit",
-        "Consume": "Consume",
-        "NotConsumable": "The item is not configured as consumable",
-        "RemoveEnhancement": "Remove Enhancement",
-        "Gift": "Gift",
-        "dismantle": "Dismantle",
-        "delete": "Delete"
+        "edit": "Редактировать",
+        "Consume": "Использовать",
+        "NotConsumable": "Предмет не настроен как расходуемый",
+        "RemoveEnhancement": "Удалить улучшение",
+        "Gift": "Передать",
+        "dismantle": "Разобрать",
+        "delete": "Удалить"
       },
       "dismantle": {
-        "addedItems": "The following items where added to the actor",
-        "notFound": "These items are not linked and could not be automatically added."
+        "addedItems": "Следующие предметы были добавлены актёру",
+        "notFound": "Эти предметы не связаны и не могут быть автоматически добавлены."
       },
       "Settings": {
-        "general": "General Settings",
-        "alchemical": "Alchemical Settings",
-        "armor": "Armor Settings",
-        "hex": "Hex Settings",
-        "mutagen": "Mutagen Settings",
-        "race": "Race Settings",
-        "ritual": "Ritual Settings",
-        "spell": "Spell Settings",
-        "valuable": "Valuable Settings",
-        "profession": "Profession Settings",
-        "weapon": "Weapon Settings",
-        "damageProperties": "Damage Properties",
-        "defenseProperties": "Defense Properties",
-        "consumableProperties": "Consumable Properties",
-        "regionProperties": "Region Properties",
+        "settings": "Настройки",
+        "general": "Общие настройки",
+        "damageProperties": "Свойства урона",
+        "defenseProperties": "Свойства защиты",
+        "consumableProperties": "Свойства расходуемых",
+        "regionProperties": "Свойства региона",
         "attacks": {
           "defendWith": {
-            "label": "Defend against with:",
-            "hint": "Configure how the target can defend against this"
+            "label": "Защищаться от этого с помощью:",
+            "hint": "Настройте, как цель может защищаться от этого"
           }
         },
         "castProperties": {
-          "selfProperties": "Apply to caster",
-          "targetProperties": "Apply to target"
+          "selfProperties": "Применить к заклинателю",
+          "targetProperties": "Применить к цели"
         },
-        "activeEffects": "Active Effect"
+        "activeEffects": "Активные эффекты"
       }
     },
     "Damage": {
-      "RemoveSP": "Модификатор урона от места попадания считается после учёта доспехов.",
-      "damageType": "Какой тип урона",
-      "ChangeLocation": "Сменить место",
-      "CurrentLocation": "Место попадания",
-      "resistNonSilver": "Apply Resistance to non-silver",
-      "resistNonMeteorite": "Apply Resistance to non-meteorite",
+      "RemoveSP": "Убрать ПБ перед применением модификатора места попадания.",
+      "damageType": "Тип урона",
+      "ChangeLocation": "Изменить место",
+      "CurrentLocation": "Текущее место",
+      "resistNonSilver": "Применить сопротивление к несеребряному",
+      "resistNonMeteorite": "Применить сопротивление к неметеоритному",
       "initial": "Изначальный урон",
-      "totalSP": "Пункты брони",
-      "improvedArmorPiercing": "(After Improved Armor Piercing)",
-      "afterSPReduct": "Урон после учёта брони",
-      "armorPiercing": "(Ignored due to Armor Piercing)",
+      "totalSP": "Общая прочность",
+      "improvedArmorPiercing": "(После улучшенного пробития брони)",
+      "afterSPReduct": "Урон после снижения прочности",
+      "armorPiercing": "(Игнорируется из-за пробития брони)",
       "afterLocationModifier": "Урон после модификатора места попадания",
-      "afterResistances": "Урон после учёта сопротивления/уязвимости",
-      "totalApplied": "Общий нанесенный урон",
-      "ablated": "Armor was ablated for ",
-      "crushingForce": "Armor was double ablated for ",
+      "afterResistances": "Урон после сопротивлений/уязвимостей",
+      "totalApplied": "Общий нанесённый урон",
+      "ablated": "Броня была снижена на ",
+      "crushingForce": "Броня была снижена вдвое на ",
       "NotEnough": "Недостаточно урона, чтобы пробить броню",
-      "ToMuchShield": "All damage was absorbed by shield or cover",
-      "isVulnerable": "Уязвимость к атакам",
-      "oilDmg": "Доп урон от масла (+5)",
-      "shield": "Shield",
-      "silverDmg": "Доп урон от серебра",
+      "ToMuchShield": "Весь урон поглощён щитом или укрытием",
+      "isVulnerable": "Уязвим к атаке",
+      "oilDmg": "Добавить урон от масла (+5)",
+      "shield": "Щит",
+      "silverDmg": "Добавить урон серебром",
       "silver": "Серебро",
       "oil": "Масло",
-      "activeEffect": "Active Effect"
+      "activeEffect": "Активный эффект"
     },
     "Dialog": {
-      "NoComponents": "Недостаточно компонентов для ремесла",
+      "NoComponents": "Недостаточно компонентов для крафта",
       "CraftingDiagram": "Рецепт перед глазами",
-      "RealCrafting": "Использовать улучшенное изготовление",
+      "RealCrafting": "Использовать настоящий крафт",
       "Crafting": "Изготовление",
       "CraftingTitle": "Проверка изготовления",
       "AlchemyTitle": "Проверка алхимии",
       "ButtonCraft": "Изготовить",
-      "CraftingAlchemycal": "Изготовления алхимического реагента",
+      "CraftingAlchemycal": "Создание алхимического реагента",
       "CraftingItem": "Изготовление предмета",
       "Diagram": "Чертеж",
       "after": "После",
@@ -417,7 +415,7 @@
       "rangePointBlank": "В упор (<2м)",
       "rangeClose": "Близкая (1/4 дистанции)",
       "rangeMedium": "Средняя (1/2 дистанции)",
-      "rangeLong": "Длинная (Полная дистанция)",
+      "rangeLong": "Длинная (Полная дистанции)",
       "rangeExtreme": "Экстремальная (2х дистанции)",
       "attackUse": "Атака использует",
       "attackExtra": "Дополнительная Атака",
@@ -426,11 +424,11 @@
       "attackModifiers": "Модификатор атаки",
       "attackSize": "Модификатор размера врага",
       "attackRange": "Модификатор расстояния",
-      "attackCustom": "Дополнительные Модификаторы",
+      "attackCustom": "Модификатор атаки",
       "attackStrike": "Тип атаки",
       "attackDamage": "Урон",
-      "attackMeleeBonus": "Дополнительный урон в ближнем бою",
-      "attackCustomDmg": "Дополнительный модификатор урона",
+      "attackMeleeBonus": "Доп. урон в ближнем бою",
+      "attackCustomDmg": "Модификатор урона",
       "attackWith": "Совершение атаки с",
       "chooseAmmunition": "Выберите боеприпасы",
       "NoAmmunition": "Нет боеприпасов",
@@ -441,128 +439,155 @@
       "Enhancement": "Улучшения",
       "Apply": "Применить",
       "Skill": "Проверка навыка",
-      "profession.skill": "Performing a profession skill",
-      "staDialog": "How do you want to recover stamina?",
-      "recoveryAction": "Recovery Action",
-      "fullRecovery": "Full Recovery",
-      "fullStaInfo": "Your stamina is already full",
+      "profession.skill": "Проверка навыка профессии",
+      "staDialog": "Как вы хотите восстановить выносливость?",
+      "recoveryAction": "Действие восстановления",
+      "fullRecovery": "Полное восстановление",
+      "fullStaInfo": "Ваша выносливость уже полная",
       "defense": {
-        "custom": "Custom Defense Modifiers"
+        "custom": "Модификатор защиты"
       }
     },
     "DamageType": {
-      "name": "Damage Type",
-      "bludgeoning": "Bludgeoning",
-      "slashing": "Slashing",
-      "piercing": "Piercing",
-      "elemental": "Elemental",
-      "electricity": "Electricity",
-      "fire": "Fire",
-      "ice": "Ice"
+      "name": "Тип урона",
+      "bludgeoning": "Дробящий",
+      "slashing": "Режущий",
+      "piercing": "Колющий",
+      "elemental": "Стихийный",
+      "electricity": "Электричество",
+      "fire": "Огонь",
+      "ice": "Лёд"
     },
     "profession": {
       "skillPath": {
         "skill": {
           "skillAttack": {
-            "isAttack": "Is Attack",
-            "usesWeapon": "Uses Weapon",
-            "damageFormulaOverrides": "Overrides Damage Formula"
+            "isAttack": "Это атака",
+            "usesWeapon": "Использует оружие",
+            "damageFormulaOverrides": "Переопределяет формулу урона"
           },
           "skillDefense": {
-            "isDefense": "Is Defense"
+            "isDefense": "Является защитой"
           },
           "skillUsage": {
-            "hasCustomEffect": "Has custom effect",
+            "hasCustomEffect": "Имеет пользовательский эффект",
             "temporaryHealth": {
-              "addTemporaryHealth": "Adds temporary health",
+              "addTemporaryHealth": "Добавляет временные ПЗ",
               "difficultyCheck": {
-                "multiplier": "Stat Multiplier",
-                "stat": "Stat",
-                "maxRollOver": "Maximum points rolled over"
+                "multiplier": "Множитель сложности",
+                "stat": "Характеристика для проверки",
+                "maxRollOver": "Непревышаемый результат"
               },
               "temporaryHp": {
-                "value": "Value per point",
-                "duration": "Duration"
+                "value": "Кол-во за единицу",
+                "duration": "Длительность"
               }
             }
           }
         }
       },
       "professionSkills": {
-        "label": "Profession Skills",
-        "hint": "Add the skills that will be marked as profession skills"
+        "label": "Навыки профессии",
+        "hint": "Добавьте навыки, которые будут отмечены как навыки профессии"
       },
       "error": {
-        "noTarget": "This skill needs a target"
+        "noTarget": "Данный навык требует цели"
       }
     },
     "Weapon": {
       "Type": "Тип",
-      "Short.WeaponAccuracy": "WA",
-      "Short.Damage": "DMG",
-      "Short.Reliability": "Rel.",
-      "Short.MaxReliability": "Max. Rel.",
+      "Short.WeaponAccuracy": "Т",
+      "Short.Damage": "УРН",
+      "Short.Reliability": "Над.",
+      "Short.MaxReliability": "Макс. Над.",
       "Hands": {
-        "title": "Hands",
-        "none": "None",
-        "left": "Left",
-        "right": "Right",
-        "both": "Both"
+        "title": "Хват",
+        "none": "Нет",
+        "left": "Левая",
+        "right": "Правая",
+        "both": "Обе"
       },
-      "Short.Concealment": "Conc.",
-      "Short.Enhancements": "EN",
+      "Short.Concealment": "Скр.",
+      "Short.Enhancements": "УС",
       "Range": "Дис.",
       "ElderFolk": "Ст. Народ",
-      "Short.RateOfFire": "ROF",
+      "Short.RateOfFire": "СА",
       "WeaponAccuracy": "Точность",
       "Enhancements": "Усиления",
       "Reliability": "Текущая надёжность",
       "MaxReliability": "Максимальная надёжность",
       "RateOfFire": "Скорость атаки",
       "Damage": "Урон",
-      "Concealment": "Concealment",
+      "Concealment": "Скрытность",
       "AttackSkill": "Атакующий навык",
       "MeleeBonus": "Дополнительный урон в ближнем бою",
-      "rangedMeleeBonus": "Ranged Melee Bonus",
-      "rangedMeleeBonusHint": "Some ranged weapons also apply the melee bonus",
+      "rangedMeleeBonus": "Дополнительный урон в ближнем бою для дальнобойного оружия",
+      "rangedMeleeBonusHint": "Некоторые дальнобойные оружия также применяют бонус ближнего боя",
       "isAmmunition": "Боеприпас",
-      "Ammunition": "Ammunition",
+      "Ammunition": "Боеприпасы",
       "isThrowable": "Метательное",
-      "Broken": "Оружие сломано",
+      "Broken": "Ваше оружие сломано",
       "onlyDmg": "Бросать только урон",
       "useAmmo": "Использовать боеприпасы",
-      "armorPiercing": "Armor Piercing",
-      "improvedArmorPiercing": "Improved Armor Piercing",
-      "ablating": "Ablating",
-      "crushingForce": "Crushing Force",
+      "armorPiercing": "Пробивающее броню",
+      "improvedArmorPiercing": "Улучшенное пробивающее броню",
+      "ablating": "Разрушающее",
+      "crushingForce": "Сокрушающая сила",
       "error": {
-        "noAttackSkill": "No attack skill configured"
+        "noAttackSkill": "Атакующий навык не настроен"
       },
       "attacks": {
-        "normal": "Normal Strike",
-        "fast": "Fast Strike",
-        "strong": "Strong Strike",
-        "joint": "Joint Strike",
-        "half": "Half Damage"
+        "normal": "Обычная атака",
+        "fast": "Быстрая атака",
+        "strong": "Сильная атака",
+        "joint": "Атака парным оружием",
+        "half": "Удар эфесом (x0.5)"
       }
     },
     "Location": {
-      "Random": "Random",
+      "Random": "Случайное",
       "All": "неопределено",
       "Left": "Левая",
       "Right": "Правая",
-      "Head": "Head",
-      "Torso": "Torso",
-      "rightArm": "R. Arm",
-      "leftArm": "L. Arm",
-      "rightLeg": "R. Leg",
-      "leftLeg": "L. Leg"
+      "Head": "Голова",
+      "Torso": "Торс",
+      "rightArm": "Правая рука",
+      "leftArm": "Левая рука",
+      "rightLeg": "Правая нога",
+      "leftLeg": "Левая нога"
     },
     "Component": {
       "Rarity": "Доступность",
       "Location": "Где найти",
       "Quantity": "Количество",
       "Forage": "СЛ собирания"
+    },
+    "criticalWound": {
+      "followUp": "Предмет, который заменит критическое ранение при лечении",
+      "followUpHint": "Оставьте пустым, чтобы удалить критическое ранение",
+      "header": "Крит Ранения",
+      "healingTime.label": "Дней до исцеления",
+      "criticalLevel": {
+        "label": "Уровень критического ранения",
+        "Simple": "Лёгкий",
+        "Complex": "Средний",
+        "Difficult": "Тяжёлый",
+        "Deadly": "Смертельный",
+        "None": "Нет"
+      },
+      "treatment": {
+        "label": "Лечение",
+        "Stabilized": "Стабилизировано",
+        "Treated": "Излечено"
+      },
+      "location": {
+        "label": "Часть тела"
+      },
+      "lesserEffect": {
+        "label": "Меньший эффект",
+        "hint": "Используется при прицельном ударе"
+      },
+      "treat": "Лечить"
     },
     "Enhancement": {
       "Stopping": "Прочность",
@@ -584,18 +609,18 @@
       "otherComponents": "Другие компоненты",
       "investment": "Доплата",
       "Learned": "Изучено",
-      "notLearned": "Not Learned",
+      "notLearned": "Не изучено",
       "Formulae": "Формула",
       "Ingredient": "Компонент",
       "Weapon": "Оружие",
       "Armor": "Броня",
-      "ArmorEnhancement": "Усиление брони",
+      "ArmorEnhancement": "Усиление Брони",
       "ElderFolkWeapon": "Оружие Старших Народов",
       "ElderFolkArmor": "Доспех Старших Народов",
       "Ammunition": "Боеприпас",
       "Bomb": "Бомба",
       "Traps": "Ловушка",
-      "Level": "Level",
+      "Level": "Уровень",
       "Novice": "Новичок",
       "Journeyman": "Подмастерье",
       "Master": "Мастер",
@@ -608,13 +633,13 @@
       "Toolkit": "Инструмент",
       "General": "Стандартное",
       "Containers": "Контейнеры",
-      "Food&Drinks": "Еда и напитки",
+      "Food&Drinks": "Еда и Напитки",
       "Clothings": "Одежда",
-      "AlchemicalItem": "Alchemical Item",
+      "AlchemicalItem": "Алхимический ингредиент",
       "Service": "Услуга",
       "Loging": "Проживание",
-      "MountAccessories": "Снаряжение скакуна",
-      "QuestItem": "Quest Item"
+      "MountAccessories": "Снаряжение Скакуна",
+      "QuestItem": "Квестовый Предмет"
     },
     "StInt": "Интеллект",
     "StRef": "Реакция",
@@ -629,14 +654,14 @@
     "StReputation": "Реп",
     "CritWound": {
       "Header": "Критические ранения",
-      "HealingTime.Label": "Days Until Healed",
+      "HealingTime.Label": "Дней до заживления",
       "Simple": "Легкое",
       "Complex": "Среднее",
       "Difficult": "Тяжёлое",
       "Deadly": "Смертельное",
       "None": "Нет",
       "Stabilized": "Стабилизирован",
-      "Treated": "Излечено",
+      "Treated": "Лечено",
       "Name": {
         "SimpleCrackedJaw": "Треснувшая челюсть",
         "SimpleDisfiguringScar": "Уродующий шрам",
@@ -653,113 +678,113 @@
         "DifficultSkullFracture": "Проломленный череп",
         "DifficultConcussion": "Контузия",
         "DifficultTornStomach": "Рана в живот",
-        "DifficultSuckingChestWound": "Открытая рана грудной клетки",
+        "DifficultSuckingChestWound": "Сосущая рана грудной клетки",
         "DifficultCompoundArmFracture": "Открытый перелом руки",
         "DifficultCompoundLegFracture": "Открытый перелом ноги",
         "DeadlyDecapitated": "Сломанная шея/Отсечение головы",
         "DeadlyDamagedEye": "Повреждение глаза",
-        "DeadlyHeartDamage": "Heart Damage",
+        "DeadlyHeartDamage": "Травма сердца",
         "DeadlySepticShock": "Септический шок",
         "DeadlyDismemberedArm": "Потеря руки",
         "DeadlyDismemberedLeg": "Потеря ноги"
       },
-      "SimpleCrackedJaw": "От удара челюсть персонажа треснула, из-за чего ему тяжело говорить. ",
-      "SimpleDisfiguringScar": "После ранения лицо персонажа изуродовано. Смотреть на него неприятно. ",
-      "SimpleCrackedRibs": "От удара у персонажа треснули рёбра, отчего ему больно дышать и напрягаться. ",
-      "SimpleForeignObject": "В ране застрял кусок одежды или брони, что вы звало заражение. ",
-      "SimpleSprainedArm": "После удара рука персонажа вывихнута и плохо слушается. ",
-      "SimpleSprainedLeg": "После удара нога персонажа вывихнута, она плохо слушается и на неё больно наступать. ",
-      "ComplexMinorHeadWound": "От удара у вашего персонажа сотрясение мозга и небольшое внутреннее кровотечение, отчего он с трудом соображает. ",
-      "ComplexLostTeeth": "Ударом персонажу выбили часть зубов. Совершите бросок 1d10, чтобы узнать количество выбитых зубов. ",
-      "ComplexRupturedSpleen": "У персонажа разрыв селезёнки с сильным кровотечением, из-за чего он чувствует слабость. ",
-      "ComplexBrokenRibs": "От удара у персонажа сломаны рёбра, ему очень тяжело дышать, сгибаться и прилагать какие-либо усилия. ",
-      "ComplexFracturedArm": "Персонаж получил перелом руки. ",
-      "ComplexFracturedLeg": "Персонаж получил перелом ноги. ",
+      "SimpleCrackedJaw": "От удара челюсть персонажа треснула, из-за чего ему тяжело говорить.",
+      "SimpleDisfiguringScar": "После ранения лицо персонажа изуродовано. Смотреть на него неприятно.",
+      "SimpleCrackedRibs": "От удара у персонажа треснули рёбра, отчего ему больно дышать и напрягаться.",
+      "SimpleForeignObject": "В ране застрял кусок одежды или брони, что вызвало заражение.",
+      "SimpleSprainedArm": "После удара рука персонажа вывихнута и плохо слушается.",
+      "SimpleSprainedLeg": "После удара нога персонажа вывихнута, она плохо слушается и на неё больно наступать.",
+      "ComplexMinorHeadWound": "От удара у вашего персонажа сотрясение мозга и небольшое внутреннее кровотечение, отчего он с трудом соображает.",
+      "ComplexLostTeeth": "Ударом персонажу выбили часть зубов. Совершите бросок 1d10, чтобы узнать количество выбитых зубов.",
+      "ComplexRupturedSpleen": "У персонажа разрыв селезёнки с сильным кровотечением, из-за чего он чувствует слабость.",
+      "ComplexBrokenRibs": "От удара у персонажа сломаны рёбра, ему очень тяжело дышать, сгибаться и прилагать какие-либо усилия.",
+      "ComplexFracturedArm": "Персонаж получил перелом руки.",
+      "ComplexFracturedLeg": "Персонаж получил перелом ноги.",
       "DifficultSkullFracture": "От удара череп персонажа проломлен, что делает его голову уязвимее и вызывает кровотечение.",
       "DifficultConcussion": "От удара персонаж получил лёгкую контузию.",
-      "DifficultTornStomach": "От удара желудок персонажа порвался, и его содержимое выплеснулось в брюшную полость. ",
-      "DifficultSuckingChestWound": "Удар разорвал лёгкое персонажа, переполнив его грудь воздухом и сдавливая органы. ",
-      "DifficultCompoundArmFracture": "От удара рука раздроблена. Из раны торчит кость. ",
-      "DifficultCompoundLegFracture": "От удара нога сломана и не может двигаться. ",
+      "DifficultTornStomach": "От удара желудок персонажа порвался, и его содержимое выплеснулось в брюшную полость.",
+      "DifficultSuckingChestWound": "Удар разорвал лёгкое персонажа, переполнив его грудь воздухом и сдавливая органы.",
+      "DifficultCompoundArmFracture": "От удара рука раздроблена. Из раны торчит кость.",
+      "DifficultCompoundLegFracture": "От удара нога сломана и не может двигаться.",
       "DeadlyDecapitated": "Ударом персонажу сломали шею или же вовсе сняли голову с плеч.",
-      "DeadlyDamagedEye": "Глаз персонажа повреждён или выбит. ",
-      "DeadlyHeartDamage": "The blow damages your heart.",
-      "DeadlySepticShock": "Удар повредил внутренние органы, и их содержимое попало в кровь. ",
-      "DeadlyDismemberedArm": "Удар начисто отрубает руку или повреждает до такой степени, что вылечить её невозможно. ",
-      "DeadlyDismemberedLeg": "Удар начисто отрубает ногу или повреждает до такой степени, что вылечить её невозможно. ",
+      "DeadlyDamagedEye": "Глаз персонажа повреждён или выбит.",
+      "DeadlyHeartDamage": "Урон повреждает сердце персонажа.",
+      "DeadlySepticShock": "Удар повредил внутренние органы, и их содержимое попало в кровь.",
+      "DeadlyDismemberedArm": "Удар начисто отрубает руку или повреждает до такой степени, что вылечить её невозможно.",
+      "DeadlyDismemberedLeg": "Удар начисто отрубает ногу или повреждает до такой степени, что вылечить её невозможно.",
       "Mod": {
-        "SimpleCrackedJaw.None": "You are at a -2 to Magical Skills & Verbal Combat (Charisma, Persuasion, Seduction, Leadership, Deceit, Social Etiquette and Intimidation).",
-        "SimpleCrackedJaw.Stabilized": "You are at a -1 to Magical Skills & Verbal Combat.",
-        "SimpleCrackedJaw.Treated": "You are at a -1 to Magical Skills.",
-        "SimpleDisfiguringScar.None": "You take a -3 to empathic Verbal Combat (Charisma, Persuasion, Deceit, Social Etiquette, and Leadership).",
-        "SimpleDisfiguringScar.Stabilized": "You take a -1 to emphatic Verbal Combat.",
-        "SimpleDisfiguringScar.Treated": "You take a -1 to Seduction.",
-        "SimpleCrackedRibs.None": "You take a -2 to BODY. This does not affect health points.",
-        "SimpleCrackedRibs.Stabilized": "You are at a -1 to BODY.",
-        "SimpleCrackedRibs.Treated": "You take a -10 to Encumbrance.",
-        "SimpleForeignObject.None": "Your Recovery and Critical Healing are affected.",
-        "SimpleForeignObject.Stabilized": "Your Recovery & Critical Healing are halved.",
-        "SimpleForeignObject.Treated": "You take a -2 to Recovery and a -1 to your Critical Healing.",
-        "SimpleSprainedArm.None": "You take a -2 to actions that use the arm.",
-        "SimpleSprainedArm.Stabilized": "You are at a -1 to actions with that arm.",
-        "SimpleSprainedArm.Treated": "You take a -1 to Physique.",
-        "SimpleSprainedLeg.None": "You take a -2 to SPD, Dodge/Escape, and Athletics.",
-        "SimpleSprainedLeg.Stabilized": "You take a -1 to SPD, Dodge/Escape, and Athletics.",
-        "SimpleSprainedLeg.Treated": "You take a -1 to SPD.",
-        "ComplexMinorHeadWound.None": "You take a -1 to INT, WILL and STUN.",
-        "ComplexMinorHeadWound.Stabilized": "You are at a -1 to INT and WILL.",
-        "ComplexMinorHeadWound.Treated": "You are at a -1 to WILL.",
-        "ComplexLostTeeth.None": "You take a -3 to magical skills and Verbal Combat.",
-        "ComplexLostTeeth.Stabilized": "You take a -2 to magical skills and Verbal Combat.",
-        "ComplexLostTeeth.Treated": "You take a -1 to magical skills and Verbal Combat.",
-        "ComplexRupturedSpleen.None": "Make a Stun save every 5 rounds. This wound induced bleeding.",
-        "ComplexRupturedSpleen.Stabilized": "You must make a Stun save every 10 Rounds.",
-        "ComplexRupturedSpleen.Treated": "You take a -2 to Stun.",
-        "ComplexBrokenRibs.None": "Take a -2 to BODY and a -1 to REF and DEX.",
-        "ComplexBrokenRibs.Stabilized": "You are at a -1 to BODY and REF.",
-        "ComplexBrokenRibs.Treated": "You are at a -1 to BODY.",
-        "ComplexFracturedArm.None": "You take a -3 to actions with that arm.",
-        "ComplexFracturedArm.Stabilized": "You take a -2 to actions with that arm.",
-        "ComplexFracturedArm.Treated": "You take a -1 to actions with that arm.",
-        "ComplexFracturedLeg.None": "You take a -3 to SPD, Dodge/Escape, and Athletics.",
-        "ComplexFracturedLeg.Stabilized": "You take a -2 to SPD, Dodge/Escape, and Athletics.",
-        "ComplexFracturedLeg.Treated": "-1 to SPD, Dodge/Escape, and Athletics.",
-        "DifficultSkullFracture.None": "You take a -1 to INT and DEX, and take quadruple damage from head wounds.",
-        "DifficultSkullFracture.Stabilized": "Take a -1 to INT and DEX and quadruple damage from head wounds.",
-        "DifficultSkullFracture.Treated": "You take quadruple damage from head wounds.",
-        "DifficultConcussion.None": "Make a Stun save every 1d6 rounds and take a -2 to INT, REF, and DEX.",
-        "DifficultConcussion.Stabilized": "You take a -1 to INT, REF, and DEX.",
-        "DifficultConcussion.Treated": "You take a -1 to INT and DEX.",
-        "DifficultTornStomach.None": "You take a -2 to all actions and 4 points of acid damage per round.",
-        "DifficultTornStomach.Stabilized": "You take a -2 to all actions.",
-        "DifficultTornStomach.Treated": "You take a -1 to all actions.",
-        "DifficultSuckingChestWound.None": "You take a -3 to BODY and SPD. You also start suffocating.",
-        "DifficultSuckingChestWound.Stabilized": "You take a -2 to BODY and SPD.",
-        "DifficultSuckingChestWound.Treated": "You take a -1 to BODY and SPD.",
-        "DifficultCompoundArmFracture.None": "The arm is rendered useless and you start bleeding.",
-        "DifficultCompoundArmFracture.Stabilized": "That arm is useless.",
-        "DifficultCompoundArmFracture.Treated": "That arm must remain in a sling, but it can hold things.",
-        "DifficultCompoundLegFracture.None": "Quarter SPD, Dodge/Escape, and Athletics. This induces bleeding.",
-        "DifficultCompoundLegFracture.Stabilized": "Halves SPD, Dodge/Escape, and Athletics.",
-        "DifficultCompoundLegFracture.Treated": "-2 to SPD, Dodge/Escape, and Athletics.",
-        "DeadlyDecapitated.None": "You die immediately.",
-        "DeadlyDecapitated.Stabilized": "This wound cannot be stabilized.",
-        "DeadlyDecapitated.Treated": "This wound cannot be treated.",
-        "DeadlyDamagedEye.None": "You take a -5 to sight-based Awareness and -4 to DEX. This wounds begins bleeding.",
-        "DeadlyDamagedEye.Stabilized": "You take a -3 to sight-based Awareness and -2 to DEX.",
-        "DeadlyDamagedEye.Treated": "Permanent -1 to sight-based Awareness and DEX.",
-        "DeadlyHeartDamage.None": "Make an immediate Death save. If you survive, the wound is bleeding and you must quarter your Stamina, SPD, and BODY.",
-        "DeadlyHeartDamage.Stabilized": "You halve your Stamina, SPD, and BODY.",
-        "DeadlyHeartDamage.Treated": "You take a +2 damage from bleeding permanently.",
-        "DeadlySepticShock.None": "Quarter your Stamina, take a -3 INT, WILL, REF, and DEX. You are poisoned.",
-        "DeadlySepticShock.Stabilized": "Your Stamina is halved and you take a -1 to INT, WILL, REF, and DEX.",
-        "DeadlySepticShock.Treated": "You take a -5 to Stamina permanently.",
-        "DeadlyDismemberedArm.None": "The arm cannot be used and you start bleeding.",
-        "DeadlyDismemberedArm.Stabilized": "That arm is useless.",
-        "DeadlyDismemberedArm.Treated": "That arm can be replaced with a prosthetic.",
-        "DeadlyDismemberedLeg.None": "Quarter your SPD, Dodge/Escape, and Athletics. This wound begins bleeding.",
-        "DeadlyDismemberedLeg.Stabilized": "You quarter your SPD, Dodge/Escape, and Athletics.",
-        "DeadlyDismemberedLeg.Treated": "The leg can be replaced with a prosthetic."
+        "SimpleCrackedJaw.None": "Штраф -2 к магическим навыкам и в Словесной дуэли (Харизма, Убеждение, Соблазнение, Лидерство, Обман, Этикет и Запугивание).",
+        "SimpleCrackedJaw.Stabilized": "Штраф -1 к магическим навыкам и в Словесной дуэли.",
+        "SimpleCrackedJaw.Treated": "Штраф -1 к магическим навыкам.",
+        "SimpleDisfiguringScar.None": "Штраф -3 к эмпатической Словесной дуэли (Харизма, Убеждение, Соблазнение, Обман, Этикет и Лидерство).",
+        "SimpleDisfiguringScar.Stabilized": "Штраф -1 к эмпатической Словесной дуэли.",
+        "SimpleDisfiguringScar.Treated": "Штраф -1 к Соблазнению.",
+        "SimpleCrackedRibs.None": "Штраф -2 к Тел. Это не влияет на пункты здоровья.",
+        "SimpleCrackedRibs.Stabilized": "Штраф -1 к Тел.",
+        "SimpleCrackedRibs.Treated": "Штраф -10 к Переносимому весу.",
+        "SimpleForeignObject.None": "Параметр Отдых и исцеление критических ранений снижены в четыре раза.",
+        "SimpleForeignObject.Stabilized": "Отдых и исцеление критических ранений снижены в два раза.",
+        "SimpleForeignObject.Treated": "Штраф -2 к Отдыху и -1 к исцелению критических ранений.",
+        "SimpleSprainedArm.None": "Штраф -2 к действиям этой рукой.",
+        "SimpleSprainedArm.Stabilized": "Штраф -1 к действиям этой рукой.",
+        "SimpleSprainedArm.Treated": "Штраф -1 к Силе.",
+        "SimpleSprainedLeg.None": "Штраф -2 к Скор, Уклонению/Изворотливости и Атлетике.",
+        "SimpleSprainedLeg.Stabilized": "Штраф -1 к Скор, Уклонению/Изворотливости и Атлетике.",
+        "SimpleSprainedLeg.Treated": "Штраф -1 к Скор.",
+        "ComplexMinorHeadWound.None": "Штраф -1 к Инт, Воле и Уст.",
+        "ComplexMinorHeadWound.Stabilized": "Штраф -1 к Инт и Воле.",
+        "ComplexMinorHeadWound.Treated": "Штраф -1 к Воле.",
+        "ComplexLostTeeth.None": "Штраф -3 к магическим навыкам и в Словесной дуэли.",
+        "ComplexLostTeeth.Stabilized": "Штраф -2 к магическим навыкам и в Словесной дуэли.",
+        "ComplexLostTeeth.Treated": "Штраф -1 к магическим навыкам и в Словесной дуэли.",
+        "ComplexRupturedSpleen.None": "Совершайте испытание Устойчивости каждые 5 раундов. Персонаж истекает кровью.",
+        "ComplexRupturedSpleen.Stabilized": "Персонаж должен совершать испытание Устойчивости каждые 10 раундов.",
+        "ComplexRupturedSpleen.Treated": "Штраф -2 к Устойчивости.",
+        "ComplexBrokenRibs.None": "Штраф -2 к Тел и -1 к Реа и Лвк.",
+        "ComplexBrokenRibs.Stabilized": "Штраф -1 к Тел и Реа.",
+        "ComplexBrokenRibs.Treated": "Штраф -1 к Тел.",
+        "ComplexFracturedArm.None": "Штраф -3 ко всем действиям этой рукой.",
+        "ComplexFracturedArm.Stabilized": "Штраф -2 ко всем действиям этой рукой.",
+        "ComplexFracturedArm.Treated": "Штраф -1 ко всем действиям этой рукой.",
+        "ComplexFracturedLeg.None": "Штраф -3 к Скор, Уклонению/Изворотливости и Атлетике.",
+        "ComplexFracturedLeg.Stabilized": "Штраф -2 к Скор, Уклонению/Изворотливости и Атлетике.",
+        "ComplexFracturedLeg.Treated": "Штраф -1 к Скор, Уклонению/Изворотливости и Атлетике.",
+        "DifficultSkullFracture.None": "Персонаж получает -1 к Инт и Лвк, а последующие ранения в голову наносят в четыре раза больше урона.",
+        "DifficultSkullFracture.Stabilized": "Штраф -1 к Инт и Лвк, а также в четыре раза больше урона от последующих ранений в голову.",
+        "DifficultSkullFracture.Treated": "В четыре раза больше урона от последующих ранений в голову.",
+        "DifficultConcussion.None": "Совершайте испытание Устойчивости каждые 1d6 раундов. Персонаж также получает -2 к Инт, Реа и Лвк.",
+        "DifficultConcussion.Stabilized": "Штраф -1 к Инт, Реа и Лвк.",
+        "DifficultConcussion.Treated": "Штраф -1 к Инт и Лвк.",
+        "DifficultTornStomach.None": "Персонаж получает -2 ко всем действиям и 4 пункта урона кислотой в раунд.",
+        "DifficultTornStomach.Stabilized": "Штраф -2 ко всем действиям.",
+        "DifficultTornStomach.Treated": "Штраф -1 ко всем действиям.",
+        "DifficultSuckingChestWound.None": "Персонаж получает -3 к Тел и Скор и начинает задыхаться.",
+        "DifficultSuckingChestWound.Stabilized": "Штраф -2 к Тел и Скор.",
+        "DifficultSuckingChestWound.Treated": "Штраф -1 к Тел и Скор.",
+        "DifficultCompoundArmFracture.None": "Рукой невозможно двигать, персонаж истекает кровью.",
+        "DifficultCompoundArmFracture.Stabilized": "Этой рукой невозможно двигать.",
+        "DifficultCompoundArmFracture.Treated": "Эта рука должна оставаться на перевязи, но ею можно держать предметы.",
+        "DifficultCompoundLegFracture.None": "Скор, Уклонение/Изворотливость и Атлетика снижены вчетверо, а сам персонаж истекает кровью.",
+        "DifficultCompoundLegFracture.Stabilized": "Скор, Уклонение/Изворотливость и Атлетика снижены вдвое.",
+        "DifficultCompoundLegFracture.Treated": "Штраф -2 к Скор, Уклонению/Изворотливости и Атлетике.",
+        "DeadlyDecapitated.None": "Персонаж немедленно умирает.",
+        "DeadlyDecapitated.Stabilized": "Это ранение нельзя стабилизировать.",
+        "DeadlyDecapitated.Treated": "Это ранение нельзя вылечить.",
+        "DeadlyDamagedEye.None": "Персонаж получает -5 к связанным со зрением проверкам Внимания и -4 к Лвк. Персонаж истекает кровью.",
+        "DeadlyDamagedEye.Stabilized": "Персонаж получает -3 к связанным со зрением проверкам Внимания и -2 к Лвк.",
+        "DeadlyDamagedEye.Treated": "Персонаж получает постоянный штраф -1 к связанным со зрением проверкам Внимания и Лвк.",
+        "DeadlyHeartDamage.None": "Немедленно пройдите испытание против смерти. Если персонаж выживает, рана кровоточит, а его Выносливость, Скор и Тел снижаются вчетверо.",
+        "DeadlyHeartDamage.Stabilized": "Выносливость, Скор и Тел персонажа снижаются вдвое.",
+        "DeadlyHeartDamage.Treated": "Персонаж получает постоянно +2 урона за раунд от кровотечения.",
+        "DeadlySepticShock.None": "Выносливость персонажа снижается вчетверо. Персонаж получает -3 к Инт, Воле, Реа и Лвк. Персонаж отравлен.",
+        "DeadlySepticShock.Stabilized": "Выносливость снижается вдвое, персонаж получает штраф -1 к Инт, Воле, Реа и Лвк.",
+        "DeadlySepticShock.Treated": "Персонаж получает постоянный штраф -5 к Выносливости.",
+        "DeadlyDismemberedArm.None": "Рукой нельзя пользоваться, персонаж истекает кровью.",
+        "DeadlyDismemberedArm.Stabilized": "Рукой нельзя пользоваться.",
+        "DeadlyDismemberedArm.Treated": "Руку можно заменить протезом.",
+        "DeadlyDismemberedLeg.None": "Скор, Уклонение/Изворотливость и Атлетика снижаются вчетверо. Персонаж истекает кровью.",
+        "DeadlyDismemberedLeg.Stabilized": "Скор, Уклонение/Изворотливость и Атлетика снижены вчетверо.",
+        "DeadlyDismemberedLeg.Treated": "Ногу можно заменить протезом."
       }
     },
     "Homeland": "Родина",
@@ -772,7 +797,7 @@
       "ebbing": "Эббинг",
       "etolia": "Этолия",
       "gemmeria": "Гемерра",
-      "gheso": "Гиз",
+      "gheso": "Гесо",
       "kaedwen": "Каэдвен",
       "kovir": "Ковир",
       "lyria": "Лирия",
@@ -790,8 +815,8 @@
       "verden": "Верден",
       "vicovaro": "Виковаро"
     },
-    "MinValue": "Minimal value",
-    "MaxValue": "Maximal value",
+    "MinValue": "Минимальное значение",
+    "MaxValue": "Максимальное значение",
     "Value": "Значение",
     "ValuedPerson": "Кого ценит",
     "Affectations": "Украшения",
@@ -808,7 +833,7 @@
     "Fumble": "Критический провал",
     "CritTotal": "Итог",
     "table": {
-      "Quantity": "Количество",
+      "Quantity": "Кол-во",
       "Range": "Дистанция",
       "Damage": "Урон",
       "Reliability": "Над.",
@@ -824,12 +849,12 @@
       "UpperArmor": "Корпусная броня",
       "LowerArmor": "Ножная броня",
       "WingTailArmor": "Крылья/Хвост",
-      "regeneration": "Regeneration",
+      "regeneration": "Регенерация",
       "CustomHP/STA": "Стандартные ПЗ/ВЫН",
       "Easy": "Простой",
       "Normal": "Средний",
       "Hard": "Сложный",
-      "Exceptional": "Exceptional",
+      "Exceptional": "Исключительный",
       "Simple": "Обычный",
       "Complex": "Незаурядный",
       "Difficult": "Трудный",
@@ -841,12 +866,12 @@
       "Environment": "Среда обитания",
       "Intelligence": "Интеллект",
       "Organization": "Численность",
-      "CommonerSuperstition": "Commoner Superstition (Education DC): ",
-      "AcademicKnowledge": "Academic Knowledge (Education DC): ",
+      "CommonerSuperstition": "Предрассудки Простолюдинов: Образование СЛ:",
+      "AcademicKnowledge": "Академические знания: Образование СЛ:",
       "WitcherKnowledge": "Знания Ведьмаков: Монстрология СЛ:",
-      "dontAddAttr": "Do not add attributes to skill value",
-      "addMeleeBonus": "Add Melee Bonus",
-      "hasTailWing": "Monster has tail or wing",
+      "dontAddAttr": "Не добавлять атрибуты к значению навыка",
+      "addMeleeBonus": "Добавить бонус ближнего боя",
+      "hasTailWing": "Монстр имеет хвост или крылья",
       "SkillTab": "Навыки",
       "InventoryTab": "Атака/Добыча",
       "DetailsTab": "Подробности",
@@ -868,21 +893,21 @@
         "Vampire": "Вампиры"
       },
       "Resistances": "Сопротивления",
-      "resistantNonSilver": "Resistant to non-silver damage",
-      "resistantNonMeteorite": "Resistant to non-meteorite damage",
+      "resistantNonSilver": "Устойчив к урону, кроме серебра",
+      "resistantNonMeteorite": "Устойчив к урону, кроме метеоритной стали",
       "Immunities": "Невосприимчивости",
-      "ImmunitiesStatusEffects": "Immunities to Status Effects",
+      "ImmunitiesStatusEffects": "Невосприимчивость к эффектам состояний",
       "Susceptibilities": "Уязвимости",
       "Senses": "Особые чувства",
       "exportLoot": "Экспорт добычи",
-      "exportLootGenerated": "Item was successfully generated with help of roll table. It was added to the Loot sheet",
-      "exportLootInvalidItemError": "Item doesn't exists in the compendium. Use standard loot generator instead",
-      "exportLootToManyRollTablesError": "Too many roll tables for the item found in the compendium. Use standard loot generator instead"
+      "exportLootGenerated": "Предмет был успешно сгенерирован с помощью таблицы и добавлен в лист добычи",
+      "exportLootInvalidItemError": "Предмет отсутствует в компендиуме. Используйте стандартный генератор добычи",
+      "exportLootToManyRollTablesError": "Слишком много таблиц для данного предмета в компендиуме. Используйте стандартный генератор добычи"
     },
     "Mount": {
       "Dex": "Атл + Лов",
       "Dexterity": "Атл",
-      "ControlMod": "Мод. Управления",
+      "ControlMod": "Модификатор Управления",
       "Control": "Управление",
       "Speed": "Скорость",
       "Hp": "ПЗ"
@@ -900,58 +925,58 @@
     "Loot": {
       "Name": "Добыча",
       "TotalWeight": "Общий вес",
-      "MaxWeight": "Максимальный Вес",
+      "MaxWeight": "Максимальный вес",
       "TotalCost": "Общая цена",
       "Weapons": "Оружие",
       "Armors": "Броня",
       "Valuables": "Ценности",
       "Diagrams": "Чертежи",
       "Components": "Компоненты",
-      "Runes": "Runes",
-      "Glyphs": "Glyphs",
+      "Runes": "Руны",
+      "Glyphs": "Глифы",
       "NotEnough": "Недостаточно монет",
       "InitialCost": "Изначальная стоимость",
-      "HowMany": "Сколько",
+      "HowMany": "Сколько предметов",
       "ItemCost": "Стоимость за предмет",
-      "Percent": "Процент с продажи",
-      "MultipleExport": "Сколько раз экспортировать?",
-      "BuyTitle": "Купить/Продать"
+      "Percent": "Применить процент",
+      "MultipleExport": "Экспортировать сколько раз?",
+      "BuyTitle": "Купить/Продать предметы"
     },
     "Inventory": {
-      "Armor": "Доспехи",
-      "Weapons": "Оружие",
+      "Armor": "Экипированная броня",
+      "Weapons": "Экипированное оружие",
       "Valuables": "Ценности",
-      "Mounts": "Mounts",
-      "Crafting": "Crafting",
-      "CraftingMaterials": "Crafting Materials",
-      "HidesAndAnimalParts": "Hides & Animal Parts",
-      "IngotsAndMinerals": "Ingots & Materials",
-      "Enhancements": "Enhancements",
-      "Alchemy": "Alchemy",
-      "AlchemicalItems": "Alchemical Items",
-      "AlchemicalTreatments": "Alchemical Treatments",
-      "WitcherPotionsAndDecoctions": "Witcher Potions & Decoctions",
-      "Oils": "Blade Coatings",
-      "Mutagens": "Mutagens",
+      "Mounts": "Ездовые",
+      "Crafting": "Крафт",
+      "CraftingMaterials": "Материалы для крафта",
+      "HidesAndAnimalParts": "Шкуры и части животных",
+      "IngotsAndMinerals": "Слитки и материалы",
+      "Enhancements": "Улучшения",
+      "Alchemy": "Алхимия",
+      "AlchemicalItems": "Алхимические ингредиенты",
+      "AlchemicalTreatments": "Алхимические процедуры",
+      "WitcherPotionsAndDecoctions": "Зелья и Отвары Ведьмака",
+      "Oils": "Покрытия лезвий",
+      "Mutagens": "Мутагены",
       "Substances": "Субстанции",
       "Components": "Компоненты",
       "Diagrams": "Диаграммы и Формулы",
-      "RunesAndGlyphs": "Runes & Glyphs",
-      "Runes": "Runes",
-      "Glyphs": "Glyphs",
-      "AlchemicalItemDiagrams": "Alchemical Item Formulae",
-      "PotionDiagrams": "Witcher-Potion Formulae",
-      "DecoctionDiagrams": "Witcher-Decoction Formulae",
-      "OilDiagrams": "Oil Formulae",
-      "IngredientDiagrams": "Component Diagrams",
-      "WeaponDiagrams": "Weapon Diagrams",
-      "ArmorDiagrams": "Armor Diagrams",
-      "enhancementDiagrams": "Enhancement Diagrams",
-      "ElderfolkWeaponDiagrams": "Elderfolk Weapon Diagrams",
-      "ElderfolkArmorDiagrams": "Elderfolk Armor Diagrams",
-      "AmmunitionDiagrams": "Ammunition Diagrams",
-      "BombDiagrams": "Bomb Diagrams",
-      "TrapDiagrams": "Trap Diagrams",
+      "RunesAndGlyphs": "Руны и Глифы",
+      "Runes": "Руны",
+      "Glyphs": "Глифы",
+      "AlchemicalItemDiagrams": "Формулы алхимических предметов",
+      "PotionDiagrams": "Формулы зелий Ведьмака",
+      "DecoctionDiagrams": "Формулы отваров Ведьмака",
+      "OilDiagrams": "Формулы масел",
+      "IngredientDiagrams": "Диаграммы компонентов",
+      "WeaponDiagrams": "Диаграммы оружия",
+      "ArmorDiagrams": "Диаграммы брони",
+      "enhancementDiagrams": "Диаграммы улучшений",
+      "ElderfolkWeaponDiagrams": "Диаграммы оружия Старших народов",
+      "ElderfolkArmorDiagrams": "Диаграммы брони Старших народов",
+      "AmmunitionDiagrams": "Диаграммы боеприпасов",
+      "BombDiagrams": "Диаграммы бомб",
+      "TrapDiagrams": "Диаграммы ловушек",
       "Substance": "Субстанция",
       "Vitriol": "Купорос",
       "Rebis": "Ребис",
@@ -965,6 +990,7 @@
     },
     "Button": {
       "Cancel": "Отменить",
+      "Confirm": "Подтвердить",
       "Continue": "Продолжить",
       "All": "Все"
     },
@@ -972,12 +998,12 @@
       "type": "Тип",
       "Spells": "Заклинания",
       "Ritual": {
-        "name": "Ritual",
-        "components": "Components",
-        "alternateComponents": "Alternate Components"
+        "name": "Ритуал",
+        "components": "Компоненты",
+        "alternateComponents": "Альтернативные Компоненты"
       },
       "Invocations": "Инвокации",
-      "Witcher": "Ведьмачьи знаки",
+      "Witcher": "Знаки Ведьмака",
       "Rituals": "Ритуалы",
       "Hexes": "Порчи",
       "MagicalGift": "Магический дар",
@@ -1002,40 +1028,40 @@
       "Range": "Дистанция",
       "Defence": "Защита",
       "PrepTime": "Время подготовки",
-      "DC": "СЛ проверки",
+      "DC": "Сложность проверки",
       "Requirements": "Требования для снятия порчи",
       "Effect": "Эффект",
-      "SideEffect": "Побочный Эффект",
+      "SideEffect": "Побочный эффект",
       "Signs": "Знаки",
       "Sign": "Знак",
       "Element": "Элемент",
-      "MinorGift": "Малый Дар",
-      "MajorGift": "Высший Дар",
+      "MinorGift": "Малый дар",
+      "MajorGift": "Высший дар",
       "StaCost": "Стоимость в ВЫН",
       "Variable": "Изменяемая выносливость",
-      "variableEffect": "Variable Stamina Effect",
+      "variableEffect": "Эффект изменяемой выносливости",
       "staminaDialog": "Сколько выносливости используется?",
       "notEnoughSta": "Недостаточно выносливости.",
       "MagicCost": "Затраты магии",
-      "ChooseFocus": "Использовать Фокусировку",
-      "ChooseExpandedFocus": "Использовать дополнительную фокусировку",
+      "ChooseFocus": "Использовать фокусировку",
+      "ChooseExpandedFocus": "Использовать расширенную фокусировку",
       "CreateTemplate": "Создание шаблона",
       "meters": "м",
       "Size": "Размер",
       "Type": "Тип",
-      "VisualEffectDuration": "Длительность визуальная (сек)",
+      "VisualEffectDuration": "Длительность визуального эффекта (сек)",
       "Square": "Квадрат",
       "Circle": "Круг",
       "Cone": "Конус",
       "Ray": "Луч",
       "Damage": "Наносит урон",
-      "createsShield": "Creates Shield",
-      "doesHeal": "Applies Heal",
+      "createsShield": "Создаёт щит",
+      "doesHeal": "Применяет лечение",
       "Short": {
         "StaCost": "Стоимость в ВЫН",
         "Variable": "Изм. ВЫН",
-        "Shield": "Shield",
-        "Heal": "Heal"
+        "Shield": "Щит",
+        "Heal": "Лечение"
       }
     },
     "Chat": {
@@ -1043,10 +1069,10 @@
       "FullDmg": "Полный урон",
       "Success": "Успех",
       "Fail": "Провал",
-      "Resting": "spent the day resting and recover:",
-      "Active": "spent the day being active and recover:",
-      "WoundHealing": "on Critical Healing Threshold",
-      "fullStamina": "Full Stamina"
+      "Resting": "провёл день отдыха и восстановил:",
+      "Active": "провёл день активно и восстановил:",
+      "WoundHealing": "на пороге исцеления критических ран",
+      "fullStamina": "Полная выносливость"
     },
     "Currency": {
       "bizant": "Бизант",
@@ -1057,282 +1083,295 @@
       "oren": "Орен",
       "falsecoin": "Фальшивая монета"
     },
+    "currencyConverter": {
+      "title": "Обмен валюты",
+      "open": "Открыть конвертер валюты",
+      "amount": "Количество",
+      "from": "Из",
+      "to": "В",
+      "convert": "Конвертировать",
+      "fee": "Комиссия (%)",
+      "result": "Результат",
+      "errors": {
+        "insufficient": "Недостаточно валюты ({currency})"
+      }
+    },
     "Settings": {
+      "criticalWoundsPack": "Справочник критических ранений",
+      "criticalWoundsPackDetails": "Compendium queried for critical wounds options",
       "Adrenaline": "Использовать дополнительное правило адреналина",
       "AdrenalineDetails": "Адреналин - это сила воли, позволяющая держаться и сражаться в критических ситуациях.",
-      "WoundsAffectSkillBase": "Wounds affect skill base",
-      "WoundsAffectSkillBaseDetails": "Wounds affect skill base instead of only skill. This makes wounds more impactful.",
+      "WoundsAffectSkillBase": "Раны влияют на базовые навыки",
+      "WoundsAffectSkillBaseDetails": "Раны влияют на базовые навыки, а не только на навыки. Это делает раны более значимыми.",
       "useVerbalCombatRule": "Использовать дополнительные правила Словесной Дуэли",
       "useVerbalCombatRuleHint": "Разрешить игрокам видеть параметр решимости и использовать Словесную Дуэль в игре",
-      "silverTrait": "Use Silver Trait rule",
-      "silverTraitHint": "Instead of silver dice, silver is a damage property",
-      "displayRollDetails": "Показывать Детали броска",
-      "displayRollDetailsHint": "Показывать детали во время проверок: 1d10+2[Параметр]+4[Навык]-3[Парирование]",
+      "silverTrait": "Использовать свойство 'Серебряное'",
+      "silverTraitHint": "Вместо серебряных костей, серебро становится свойством урона",
+      "displayRollDetails": "Показывать детали броска",
+      "displayRollDetailsHint": "Показывать детали при броске кубиков: 1d10+2[параметр]+4[навык]-3[парирование]",
       "Custom": "Пользовательские",
       "displayReputation": "Показывать репутацию игрокам",
       "displayReputationHint": "Разрешить игрокам видеть и изменять их репутацию",
-      "clickableImageItemTypes": "Show 'Zoomable' checkbox on item sheet",
-      "clickableImageItemTypesHint": "A comma-separated list of item types, where a checkbox can be set. If it is checked, the players can click on the item image from their inventory to see a larger version of it. Possible types are 'valuable', 'weapon', 'armor', 'alchemical', 'diagrams', 'component'.",
-      "clickableImageCheckboxForGMOnly": "Show 'Zoomable' checkbox to GM only",
+      "clickableImageItemTypes": "Показывать опцию 'Увеличение' на листе предмета",
+      "clickableImageItemTypesHint": "Разделенный запятой список типов предметов. Возможные типы: 'valuable', 'weapon', 'armor', 'alchemical', 'diagrams', 'component'.",
+      "clickableImageCheckboxForGMOnly": "Показывать опцию 'Увеличение' только для ГМа",
       "specialFont": "Использовать специальный ведьмачий шрифт"
     },
-    "background.other": "Other",
-    "Resources.modifiers": "Resources Modifiers",
+    "background.other": "Другое",
+    "Resources.modifiers": "Модификатор ресурсов",
     "Notes": "Заметки",
     "skills": {
-      "name": "Skill",
-      "profession": "Prof",
-      "pickup": "Pick",
-      "learn": "Learn",
+      "name": "Навык",
+      "profession": "Проф",
+      "pickup": "Жизненный навык",
+      "learn": "Выученный навык",
       "skillGroups": {
-        "name": "Skill Groups",
-        "allSkills": "All Skills",
-        "meleeSkills": "Melee Skills",
-        "rangedSkills": "Ranged Skills",
-        "magicSkills": "Magic Skills",
-        "verbalCombatSkills": "Verbal Combat Skills",
-        "empatheticVerbalCombatSkills": "Empathetic Verbal Combat Skills"
+        "name": "Группы навыков",
+        "allSkills": "Все навыки",
+        "meleeSkills": "Навыки ближнего боя",
+        "rangedSkills": "Навыки дальнего боя",
+        "magicSkills": "Магические навыки",
+        "verbalCombatSkills": "Навыки словесной дуэли",
+        "empatheticVerbalCombatSkills": "Эмпатические навыки словесной дуэли"
       },
       "awareness": {
-        "label": "Awareness"
+        "label": "Внимание"
       },
       "business": {
-        "label": "Business"
+        "label": "Торговля"
       },
       "deduction": {
-        "label": "Deduction"
+        "label": "Дедукция"
       },
       "education": {
-        "label": "Education"
+        "label": "Образование"
       },
       "commonSpeech": {
-        "label": "Common Speech (2)",
-        "rollLabel": "Common Speech"
+        "label": "Язык: Всеобщий (2)",
+        "rollLabel": "Язык: Всеобщий"
       },
       "elderSpeech": {
-        "label": "Elder Speech (2)",
-        "rollLabel": "Elder Speech"
+        "label": "Язык: Старшая речь (2)",
+        "rollLabel": "Язык: Старшая речь"
       },
       "dwarvenSpeech": {
-        "label": "Dwarven Speech (2)",
-        "rollLabel": "Dwarven Speech"
+        "label": "Язык: Язык краснолюдов (2)",
+        "rollLabel": "Язык: Язык краснолюдов"
       },
       "monsterLore": {
-        "label": "Monster Lore (2)",
-        "rollLabel": "Monster Lore"
+        "label": "Монстрология (2)",
+        "rollLabel": "Монстрология"
       },
       "socialEtiquette": {
-        "label": "Social Etiquette"
+        "label": "Этикет"
       },
       "streetwise": {
-        "label": "Streetwise"
+        "label": "Ориентирование в городе"
       },
       "tactics": {
-        "label": "Tactics (2)",
-        "rollLabel": "Tactics"
+        "label": "Тактика (2)",
+        "rollLabel": "Тактика"
       },
       "teaching": {
-        "label": "Teaching"
+        "label": "Передача знаний"
       },
       "wildernessSurvival": {
-        "label": "Wilderness Survival"
+        "label": "Выживание в дикой природе"
       },
       "brawling": {
-        "label": "Brawling"
+        "label": "Борьба"
       },
       "dodgeEscape": {
-        "label": "Dodge/Escape"
+        "label": "Уклонение/Изворотливость"
       },
       "melee": {
-        "label": "Melee"
+        "label": "Ближний бой"
       },
       "riding": {
-        "label": "Riding"
+        "label": "Верховая езда"
       },
       "sailing": {
-        "label": "Sailing"
+        "label": "Мореходство"
       },
       "smallblades": {
-        "label": "Small Blades"
+        "label": "Владение лёгкими клинками"
       },
       "staffspear": {
-        "label": "Staff/Spear"
+        "label": "Владение древковым оружием"
       },
       "swordsmanship": {
-        "label": "Swordsmanship"
+        "label": "Владение мечом"
       },
       "archery": {
-        "label": "Archery"
+        "label": "Стрельба из лука"
       },
       "athletics": {
-        "label": "Athletics"
+        "label": "Атлетика"
       },
       "crossbow": {
-        "label": "Crossbow"
+        "label": "Стрельба из арбалета"
       },
       "sleightOfHand": {
-        "label": "Sleight of Hand"
+        "label": "Ловкость рук"
       },
       "stealth": {
-        "label": "Stealth"
+        "label": "Скрытность"
       },
       "physique": {
-        "label": "Physique"
+        "label": "Сила"
       },
       "endurance": {
-        "label": "Endurance"
+        "label": "Стойкость"
       },
       "charisma": {
-        "label": "Charisma"
+        "label": "Харизма"
       },
       "deceit": {
-        "label": "Deceit"
+        "label": "Обман"
       },
       "fineArts": {
-        "label": "Fine Arts"
+        "label": "Искусство"
       },
       "gambling": {
-        "label": "Gambling"
+        "label": "Азартные игры"
       },
       "groomingAndStyle": {
-        "label": "Grooming and Style"
+        "label": "Внешний вид"
       },
       "humanPerception": {
-        "label": "Human Perception"
+        "label": "Понимание людей"
       },
       "leadership": {
-        "label": "Leadership"
+        "label": "Лидерство"
       },
       "persuasion": {
-        "label": "Persuasion"
+        "label": "Убеждение"
       },
       "performance": {
-        "label": "Performance"
+        "label": "Выступление"
       },
       "seduction": {
-        "label": "Seduction"
+        "label": "Соблазнение"
       },
       "alchemy": {
-        "label": "Alchemy (2)",
-        "rollLabel": "Alchemy"
+        "label": "Алхимия (2)",
+        "rollLabel": "Алхимия"
       },
       "crafting": {
-        "label": "Crafting (2)",
-        "rollLabel": "Crafting"
+        "label": "Изготовление (2)",
+        "rollLabel": "Изготовление"
       },
       "disguise": {
-        "label": "Disguise"
+        "label": "Маскировка"
       },
       "firstAid": {
-        "label": "First Aid"
+        "label": "Первая помощь"
       },
       "forgery": {
-        "label": "Forgery"
+        "label": "Подделывание"
       },
       "pickLock": {
-        "label": "Pick Lock"
+        "label": "Взлом замков"
       },
       "trapCrafting": {
-        "label": "Trap Crafting (2)",
-        "rollLabel": "Trap Crafting"
+        "label": "Знание ловушек (2)",
+        "rollLabel": "Знание ловушек"
       },
       "courage": {
-        "label": "Courage"
+        "label": "Храбрость"
       },
       "hexWeaving": {
-        "label": "Hex Weaving (2)",
-        "rollLabel": "Hex Weaving"
+        "label": "Наведение порчи (2)",
+        "rollLabel": "Наведение порчи"
       },
       "intimidation": {
-        "label": "Intimidation"
+        "label": "Запугивание"
       },
       "spellCasting": {
-        "label": "Spell Casting (2)",
-        "rollLabel": "Spell Casting"
+        "label": "Сотворение заклинаний (2)",
+        "rollLabel": "Сотворение заклинаний"
       },
       "resistMagic": {
-        "label": "Resist Magic (2)",
-        "rollLabel": "Resist Magic"
+        "label": "Сопротивление магии (2)",
+        "rollLabel": "Сопротивление магии"
       },
       "resistCoercion": {
-        "label": "Resist Coercion"
+        "label": "Сопротивление убеждению"
       },
       "ritualCrafting": {
-        "label": "Ritual Crafting (2)",
-        "rollLabel": "Ritual Crafting"
+        "label": "Проведение ритуалов (2)",
+        "rollLabel": "Проведение ритуалов"
       }
     },
     "Stats": {
       "stats": {
-        "Name": "Stats"
+        "Name": "Характеристики"
       },
       "derivedStats": {
-        "Name": "Derived Stats"
+        "Name": "Производные характеристики"
       }
     },
-
-    "SocialStanding": "Социальное положение",
+    "SocialStanding": "Социальный статус",
     "Profession": "Профессия",
     "Reputation": "Репутация",
-    "NoDamageSpecified": "Damage is not specified",
-    "Shield.Broken": "Your shield is now broken",
-
-    "Items.transferTitle": "Transferring Items",
-    "Items.transferMany": "How many items to transfer",
+    "NoDamageSpecified": "Урон не указан",
+    "Shield.Broken": "Ваш щит сломан",
+    "Items.transferTitle": "Передача предметов",
+    "Items.transferMany": "Сколько предметов передать",
     "Combat": {
-      "shieldApplied": "gained shield:",
-      "healed": "healed {target} for {heal}",
-      "healedFor": "healed for"
+      "shieldApplied": "получил щит:",
+      "healed": "вылечил {target} на {heal}",
+      "healedFor": "вылечено на"
     },
     "Context": {
       "applyDmg": "Нанести урон",
-      "applyNonLethal": "Apply Non-lethal Damage",
-      "Defense": "Защититься от атаки",
-      "Blocked": "Атака заблокирована",
+      "applyNonLethal": "Нанести нелетальный урон",
+      "Defense": "Защита",
+      "Blocked": "Заблокировано",
       "SelectActor": "Хотя бы один актёр должен быть выбран",
-      "Result": "Result",
-      "unavailable": "N/A",
-      "applyCritDmg": "Apply Critical Wound Damage",
-      "applyBonusCritDmg": "Apply Critical Wound Bonus Damage",
-      "applyCritWound": "Apply Critical Wound",
-      "fumble": "Fumble"
+      "Result": "Результат",
+      "unavailable": "Н/Д",
+      "applyCritDmg": "Нанести урон от критического ранения",
+      "applyBonusCritDmg": "Нанести дополнительный урон от критического ранения",
+      "applyCritWound": "Применить критическое ранение",
+      "fumble": "Критический провал"
     },
     "Heal": {
       "button": "Лечение",
       "dialogTitle": "Лечение после отдыха",
-      "title": "Постепенное исцеление",
-      "resting": "Весь день отдыха",
-      "sterilized": "Стерилизующая жидкость",
-      "healinghand": "Лечащее прикосновение",
-      "healingTent": "В палатке медика",
-      "resetTempHealth": "Reset temporary health",
-      "recovered": "восстановился",
+      "title": "Обстоятельства лечения",
+      "resting": "Провел день отдыхая",
+      "sterilized": "Получил стерилизующую жидкость",
+      "healinghand": "Получил лечащее прикосновение",
+      "healingTent": "Получил лечение в палатке медика",
+      "resetTempHealth": "Сбросить временные ПЗ",
+      "recovered": "вылечился от",
       "restful": "отдыхая",
-      "active": "не отдыхая",
-      "day": "весь день",
-      "totalRecover": "Total Recover:",
-      "criticalWounds": "Critical wounds will heal 2 additional days faster"
+      "active": "активно",
+      "day": "день",
+      "totalRecover": "Всего восстановлено:",
+      "criticalWounds": "Критические ранения заживут на 2 дня быстрее"
     },
-    "Apply.Mod": "Apply a modifier",
-    "ReputationTitle": "Бросок репутации",
-    "ReputationButton.Save": "Save",
-    "ReputationButton.FaceDown": "Face-Down",
-    "ReputationSave.Title": "Save",
-    "ReputationFaceDown.Title": "Reputation Face-Down",
+    "Apply.Mod": "Применить модификатор",
+    "ReputationTitle": "Выполнение броска репутации",
+    "ReputationButton.Save": "Спасбросок",
+    "ReputationButton.FaceDown": "Давление авторитетом",
+    "ReputationSave.Title": "Спасбросок",
+    "ReputationFaceDown.Title": "Давление авторитетом",
     "verbalCombat": {
       "Title": "Словесная Дуэль",
-      "DialogTitle": "Проверка словесной дуэли",
+      "DialogTitle": "Выполнение действия словесной дуэли",
       "EmpatheticAttacks": "Эмпатические атаки",
       "AntagonisticAttacks": "Антагонистические атаки",
-      "Defenses": "Defenses",
+      "Defenses": "Защита",
       "EmpatheticTools": "Эмпатические рычаги давления",
       "AntagonisticTools": "Антагонистические рычаги давления",
       "Seduce": "Соблазнить",
-      "SeduceEffect": "Защищающийся немного смущён и получает +2 накапливающегося урона от каждого Соблазнения во время дуэли. ",
+      "SeduceEffect": "Защищающийся немного смущён и получает +2 накапливающегося урона от каждого Соблазнения во время дуэли.",
       "Persuade": "Убедить",
       "PersuadeEffect": "Если персонаж завершает дуэль успешной проверкой Убеждения, значит он убедил противника в своей правоте.",
       "Appeal": "Привести довод",
-      "AppealEffect": "Защищающийся думает, что ваш персонаж, воз можно, говорит верные вещи, и получает +1 накапливающегося урона от эмпатических атак за каждый успешный довод.",
+      "AppealEffect": "Защищающийся думает, что ваш персонаж, возможно, говорит верные вещи, и получает +1 накапливающегося урона от эмпатических атак за каждый успешный довод.",
       "Befriend": "Сдружиться",
       "BefriendEffect": "Если персонаж завершает дуэль успешным действием «сдружиться», противник становится его другом.",
       "Deceive": "Обмануть",
@@ -1354,44 +1393,44 @@
       "StudyEffect": "Позволяет заглянуть в душу противника и обнаружить его уязвимые места. Совершите проверку против Инт х3 противника. При успехе ваш персонаж получает бонус +2 в Словесной дуэли на 1 раунд.",
       "ImplyPersuade": "Намёк убеждением",
       "ImplyDeceit": "Намёк обманом",
-      "ImplyEffect": "Намёк позволяет навести оппонента на какую-то мысль, хорошую или плохую. При успехе против ник получает штраф -4 к защите. Использовать Намёк можно только один раз за Словесную дуэль.",
+      "ImplyEffect": "Намёк позволяет навести оппонента на какую-то мысль, хорошую или плохую. При успехе противник получает штраф -4 к защите. Использовать Намёк можно только один раз за Словесную дуэль.",
       "Bribe": "Подкуп",
       "BribeEffect": "При успешной проверке Азартных игр за каждые 50 крон, предложенных персонажем, он получает +1 к эмпатическим проверкам до конца Словесной дуэли.",
-      "None": "Нет"
+      "None": "НЕТ"
     },
     "Effect": {
       "Rolled": "Результат",
-      "Applied": "Applied",
-      "Failed": "Failed",
-      "applySelf": "Apply this active effect on self when used",
-      "applyOnTarget": "Apply this active effect on target when used",
-      "applyOnHit": "Apply this active effect on hit when used",
-      "applyOnDamage": "Apply this active effect on damage when used",
+      "Applied": "Применено",
+      "Failed": "Провалено",
+      "applySelf": "Применить этот активный эффект на себя при использовании",
+      "applyOnTarget": "Применить этот активный эффект на цель при использовании",
+      "applyOnHit": "Применить этот активный эффект при попадании",
+      "applyOnDamage": "Применить этот активный эффект при нанесении урона",
       "Error": {
-        "belongsToItem": "This effect belongs to an item"
+        "belongsToItem": "Этот эффект принадлежит предмету"
       },
       "wizard": {
-        "lifepath": "Lifepath",
-        "other": "Other",
-        "resistances": "Resistances",
-        "flat": "Flat Bonus",
-        "multi": "Multiplication",
-        "applyAP": "Apply AP to Multi",
+        "lifepath": "Жизненный путь",
+        "other": "Другое",
+        "resistances": "Сопротивления",
+        "flat": "Постоянный (флатовый) бонус",
+        "multi": "Умножение",
+        "applyAP": "Применить AP к умножению",
         "Item": {
-          "damage": "Damage"
+          "damage": "Урон"
         }
       }
     },
     "activeEffect": {
-      "tab": "Active Effect",
-      "source": "Source",
-      "toggle": "Toggle",
-      "temporary": "Temporary",
-      "passive": "Passive",
-      "inactive": "Inactive",
-      "temporaryItemImprovement": "Temporary Item Improvement"
+      "tab": "Активный эффект",
+      "source": "Источник",
+      "toggle": "Переключить",
+      "temporary": "Временный",
+      "passive": "Пассивный",
+      "inactive": "Неактивный",
+      "temporaryItemImprovement": "Временное улучшение предмета"
     },
-    "character.socialStanding": "Social Standing",
+    "character.socialStanding": "Социальное положение",
     "socialStanding": {
       "equal": "Равенство",
       "tolerated": "Терпимость",
@@ -1406,181 +1445,185 @@
       "mahakam": "Махакам"
     },
     "craft": {
-      "InsufficientComponents": "Недостаточно компонентов для использования улучшенного изготовления",
-      "ItemsSuccessfullyDeleted": "Компонент успешно удален при изготовлении",
-      "ItemsSuccessfullyCrafted": "Предмет был успешно изготовлен персонажем ",
-      "ItemsNotCrafted": "Попытка изготовления провалена персонажем ",
-      "SuccessfulCraftForNothing": "Нужно добавить предмет, который можно изготовить при помощи рецепта. Ваши компоненты остались на месте.",
-      "SkipRemovalOfComponent": "Не удалять компонент",
-      "AssociatedItemMissing": "Предмет для изготовления не связан с рецептом"
+      "InsufficientComponents": "Недостаточно компонентов для использования улучшенного крафта",
+      "ItemsSuccessfullyDeleted": "Компонент успешно удален при крафте",
+      "ItemsSuccessfullyCrafted": "Предмет был успешно создан персонажем",
+      "ItemsNotCrafted": "Попытка крафта была провалена персонажем",
+      "SuccessfulCraftForNothing": "Нужно было добавить предмет, который можно скрафтить при помощи рецепта. Ваши компоненты не пострадали, чего не скажешь о самооценке.",
+      "SkipRemovalOfComponent": "Нет необходимости удаления компонента",
+      "AssociatedItemMissing": "Предмет для крафта не связан с рецептом"
     },
     "err": {
-      "CraftItemDeletion": "Неверное число компонентов было удалено при изготовлении",
-      "craftItemAvailable": "Not all necessary items are available",
+      "CraftItemDeletion": "Неверное число компонентов было удалено при крафте",
+      "craftItemAvailable": "Не все необходимые предметы доступны",
       "NoItemsOfSpecificType": "Нет предмета необходимого типа для"
     },
     "Investigation": {
-      "clues": "Clues",
-      "obstacles": "Obstacles",
-      "skillsUsed": "Skills used",
-      "timeIncrement": "Time",
-      "timeBonus": "Time Bonus",
-      "damage": "Damage",
-      "obfuscation": "Obfuscation",
-      "penalty": "Penalty",
-      "focusDamage": "Damage to Focus",
-      "successDamage": "Success Damage",
-      "failDamage": "Fail Damage",
+      "clues": "Зацепки",
+      "obstacles": "Препятствия",
+      "skillsUsed": "Использованные навыки",
+      "timeIncrement": "Время",
+      "timeBonus": "Бонус времени",
+      "damage": "Урон",
+      "obfuscation": "Запутывание",
+      "penalty": "Штраф",
+      "focusDamage": "Урон по концентрации",
+      "successDamage": "Урон при успехе",
+      "failDamage": "Урон при провале",
       "evidence": {
-        "chooseSkill": "Choose your skill"
+        "chooseSkill": "Выберите ваш навык"
       }
     },
     "statusEffects": {
-      "applyCombat": "Applying combat effect for ",
-      "healing": "Healing",
-      "buffed": "Buffed",
-      "fire": "Fire",
-      "stun": "Stun",
-      "poison": "Poison",
-      "disease": "Disease",
-      "prone": "Prone",
-      "bleed": "Bleed",
-      "freeze": "Freeze",
-      "staggered": "Staggered",
-      "intoxication": "Intoxication",
-      "hallucination": "Hallucination",
-      "nausea": "Nausea",
-      "suffocation": "Suffocation",
-      "blinded": "Blinded",
-      "shielded": "Shielded",
-      "invisible": "Invisible",
-      "unconscious": "Unconscious",
-      "grappled": "Grappled",
-      "flying": "Flying",
-      "frightened": "Frightened",
-      "aiming": "Aiming",
-      "deaf": "Deaf",
-      "reducedVision": "Reduced Vision",
-      "holdAction": "Hold Action",
-      "dead": "Dead"
+      "applyCombat": "Применение боевого эффекта для",
+      "healing": "Лечение",
+      "buffed": "Усиление",
+      "fire": "Горение",
+      "stun": "Дезориентация",
+      "poison": "Отравление",
+      "disease": "Болезнь",
+      "prone": "Сбит с ног",
+      "bleed": "Кровотечение",
+      "freeze": "Замораживание",
+      "staggered": "Ошеломление",
+      "intoxication": "Интоксикация",
+      "hallucination": "Галлюцинации",
+      "nausea": "Тошнота",
+      "suffocation": "Удушье",
+      "blinded": "Слепота",
+      "shielded": "Щит",
+      "invisible": "Невидимость",
+      "unconscious": "Без сознания",
+      "grappled": "Опутан",
+      "flying": "Летит",
+      "frightened": "Страх",
+      "aiming": "Прицеливание",
+      "deaf": "Глухота",
+      "reducedVision": "Снижение зрения",
+      "holdAction": "Удержание действия",
+      "dead": "Мертв"
     },
     "armorEffects": {
-      "fireResistance": "Fire Resistance",
-      "poisonResistance": "Poison Resistance",
-      "bleedResistance": "Bleed Resistance"
+      "fireResistance": "Сопротивление огню",
+      "poisonResistance": "Сопротивление яду",
+      "bleedResistance": "Сопротивление кровотечению"
     },
     "fumbleResults": {
-      "name": "Fumble Result",
-      "nothing": "Nothing happened",
+      "name": "Результат провала",
+      "nothing": "Ничего не произошло",
       "magic": {
-        "1-6": "Magic sparks and crackles and you take 1 point of damage for every point you fumbled by, but the spell still goes off.",
-        "7-9": "The magic that is already partially through you ignites inside you. Not only does the spell fail but you suffer an elemental fumble effect as noted below.",
-        ">9": "Your magic explodes with a catastrophic effect. Not only do you suffer an elemental fumble effect, but any focusing item you are carrying explodes as if it were a bomb (doing [[1d10]] damage) with a 2 meter radius"
+        "1-6": "Магия трещит и полыхает вокруг персонажа, нанося ему урон в зависимости от величины магического провала (1 урон за 1 пункт), но заклинание всё равно срабатывает.",
+        "7-9": "Частично прошедшая сквозь персонажа магия загорается внутри него. Заклинание не срабатывает, а персонаж испытывает стихийный эффект критического провала, указанный в следующей таблице.",
+        ">9": "Сотворённая персонажем магия взрывается с жутким шумом и вспышками. Персонаж испытывает стихийный эффект критического провала, и любой фокусирующий предмет, который у него при себе, взрывается подобно бомбе, нанося 1d10 урона в радиусе 2 метров."
       },
       "meleeAttack": {
-        "6": "Your weapon glances off and you are staggered.",
-        "7": "Your weapon lodges in a nearby object and it takes 1 round to free.",
-        "8": "You damage your weapon severely. Your weapon takes [[1d10]] points of reliability damage.",
-        "9": "You manage to wound yourself. Roll for location.",
-        ">9": "You wound a nearby ally. Roll location on a random ally within range."
+        "6": "Ваше оружие проходит вскользь, и ваш персонаж ошеломлён.",
+        "7": "Ваше оружие застревает в ближайшем объекте; потребуется 1 раунд, чтобы его достать.",
+        "8": "Ваше оружие сильно повреждено и получает ldlO урона надёжности.",
+        "9": "Ваш персонаж случайно ранил сам себя. Совершите бросок, чтобы определить куда.",
+        ">9": "Ваш персонаж ранил ближайшего союзника. Совершите бросок, чтобы определить, куда он ранил случайно выбранного союзника в пределах дистанции."
       },
       "armedDefense": {
-        "6": "Your weapon takes [[1d6]] extra points of reliability damage.",
-        "7": "Your weapon is knocked from your hand and flies [[1d6]] meters away in a random direction (see Scatter table).",
-        "8": "You are knocked to the ground. You are now prone and must make a Stun save.",
-        "9": "Your weapon takes [[2d6]] extra points of reliability damage.",
-        ">9": "Your weapon ricochets back and hits you. Roll for location."
+        "6": "Ваше оружие получает дополнительно 1d6 урона надёжности.",
+        "7": "Оружие выбито из рук вашего персонажа и пролетает 1d6 метров в случайном направлении (см. таблицу разброса).",
+        "8": "Ваш персонаж сбит с ног. Он должен совершить испытание Устойчивости.",
+        "9": "Ваше оружие получает дополнительно 2d6 урона надёжности.",
+        ">9": "Оружие рикошетит и попадает по вашему персонажу. Совершите бросок, чтобы определить место попадания."
       },
       "rangedAttack": {
-        "6-7": "The ammunition you fired, or weapon you threw, hits something hard, breaking.",
-        "8-9": "Your bowstring comes partially undone, your crossbow jams, or you drop your thrown weapon. It takes 1 round to undo this.",
-        ">9": "You strike one of your allies with a ricochet. Roll location on a random ally within range"
+        "6-7": "Выпущенный персонажем снаряд или брошенное им оружие с силой врезается во что-то и ломается.",
+        "8-9": "С лука слетает тетива, арбалет заклинивает, или же персонаж случайно роняет метательное оружие. Для того чтобы исправить ситуацию, требуется 1 раунд.",
+        ">9": "Снаряд рикошетит и случайно задевает вашего союзника. Совершите бросок, чтобы определить, куда ваш персонаж ранил случайно выбранного союзника в пределах дистанции."
       },
       "unarmed": {
-        "6": "You are knocked off balance and are staggered.",
-        "7": "You trip on something and fall prone.",
-        "8": "You trip and fall prone. You must make a Stun save.",
-        "9": "You trip and hit your head. You are knocked prone, take [[1d6]] points of non-lethal damage to the head, and must make a Stun save.",
-        ">9": "You fail horribly and not only fall prone but also take [[1d6]] lethal damage to the head and must make a Stun save."
+        "6": "Ваш персонаж теряет равновесие и считается ошеломлённым.",
+        "7": "Персонаж спотыкается и падает (сбит с ног).",
+        "8": "Персонаж спотыкается и падает (сбит с ног), вы должны совершить испытание Устойчивости.",
+        "9": "Персонаж спотыкается, падает и ударяется головой, персонаж сбит с ног, он получает 1 d6 несмертельного урона по голове и должен совершить испытание Устойчивости.",
+        ">9": "Персонаж не только сбит с ног, но и получает 1 d6 смертельного урона по голове и должен совершить испытание Устойчивости."
       }
     },
     "deprecations": {
       "lifepathModifiers": {
-        "title": "Lifepath Modifiers",
-        "text": "Lifepath Modifiers attack boni where changed. Re-add them via the active effect wizard for the following actors"
+        "title": "Модификаторы предыстории",
+        "text": "Бонусы атаки модификаторов предыстории были изменены. This MUST be done before switching to v14. Переустановите их через мастер активных эффектов для следующих персонажей"
       },
       "statSkillModifiers": {
-        "title": "Stat or Skill Modifiers",
-        "text": "Stat and Skill Modifiers are deprecated. Move them to active effects for the following actors"
+        "title": "Модификаторы характеристик или навыков",
+        "text": "Модификаторы характеристик и навыков устарели. This MUST be done before switching to v14. Переместите их в активные эффекты для следующих персонажей"
+      },
+      "oldCriticalWounds": {
+        "title": "Устранение критических ранений",
+        "text": "Критические ранения были перенесены в предметы. Это НЕОБХОДИМО сделать перед переходом на версию 14. Замените ранения этих персонажей."
       }
     },
     "AssociatedDiagram": {
       "actions": {
-        "add": "Add crafting diagram",
-        "remove": "Remove crafting diagram"
+        "add": "Добавить рецепт крафта",
+        "remove": "Удалить рецепт крафта"
       },
-      "missing": "Associated crafting diagram is missing (drag it here to add)",
-      "title": "Crafting diagram"
+      "missing": "Связанный рецепт крафта отсутствует (перетащите его сюда, чтобы добавить)",
+      "title": "Рецепт крафта"
     },
     "Repair": {
-      "action": "Repairing",
+      "action": "Ремонт",
       "buttons": {
-        "repair": "Repair",
-        "simulate": "Simulate repair",
-        "request": "Request repair",
-        "gmRepair": "GM repair"
+        "repair": "Ремонт",
+        "simulate": "Симуляция ремонта",
+        "request": "Запрос на ремонт",
+        "gmRepair": "Ремонт от ГМа"
       },
       "result": {
-        "success": "Repair successfull!",
-        "failure": "Repair failed"
+        "success": "Ремонт успешен!",
+        "failure": "Ремонт провален"
       },
       "params": {
-        "craftingDC": "Crafting DC",
-        "repairDC": "Repair DC",
-        "repairMod": "Repair modifier",
-        "enchants": "Enchants modifier",
-        "damagedLocations": "Damaged locations",
-        "components": "Components"
+        "craftingDC": "СЛ ремонта",
+        "repairDC": "СЛ ремонта",
+        "repairMod": "Модификатор ремонта",
+        "enchants": "Модификатор зачарований",
+        "damagedLocations": "Поврежденные места",
+        "components": "Компоненты"
       },
       "damagedLocations": {
-        "weapon": "Weapon reliability",
-        "shield": "Shield reliability"
+        "weapon": "Надежность оружия",
+        "shield": "Надежность щита"
       },
       "chat": {
-        "requestTitle": "is requesting to repair"
+        "requestTitle": "запрашивает ремонт"
       },
       "alerts": {
-        "notEnoughComponents": "Not enough components to repair this item",
-        "itemIsAlreadyRepaired": "This item is already fully repaired",
-        "noDiagram": "No associated diagram found for this item",
-        "invalidDiagram": "The type of this diagram is not valid for this item"
+        "notEnoughComponents": "Недостаточно компонентов для ремонта этого предмета",
+        "itemIsAlreadyRepaired": "Этот предмет уже полностью отремонтирован",
+        "noDiagram": "Не найден связанный рецепт для этого предмета",
+        "invalidDiagram": "Тип этого рецепта не подходит для этого предмета"
       }
     },
     "ComponentsList": {
-      "component": "Component",
-      "quantity": "Quantity",
-      "required": "Required",
-      "cost": "Cost",
-      "totalPrice": "Total price"
+      "component": "Компонент",
+      "quantity": "Количество",
+      "required": "Требуется",
+      "cost": "Цена",
+      "totalPrice": "Общая стоимость"
     },
     "rewards": {
       "dialog": {
-        "title": "Select actors for reward",
-        "label": "Label: ",
-        "ip": "IP: ",
-        "magicIp": "Is magic IP: ",
-        "currency": "Currency Amount",
-        "currencyType": "Currency Type",
-        "confirm": "Confirm"
+        "title": "Выберите персонажей для награды",
+        "label": "Метка: ",
+        "ip": "ОУ: ",
+        "magicIp": "Магические очки улучшения: ",
+        "currency": "Количество валюты",
+        "currencyType": "Тип валюты",
+        "confirm": "Подтвердить"
       },
       "chat": {
-        "title": "Rewards",
-        "ip": "IP",
-        "currency": "Currency"
+        "title": "Награды",
+        "ip": "ОУ",
+        "currency": "Валюта"
       }
     },
     "magic": {
-      "magicImprovementPoints": "Magic IP"
+      "magicImprovementPoints": "Магические ОУ"
     }
   }
 }
