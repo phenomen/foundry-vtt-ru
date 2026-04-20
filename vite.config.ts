@@ -1,6 +1,9 @@
 import { defineConfig } from "vite-plus";
 
 export default defineConfig({
+  staged: {
+    "*": "vp check --fix",
+  },
   build: {
     lib: {
       entry: "src/index.js",
@@ -58,7 +61,6 @@ export default defineConfig({
       "eslint/init-declarations": "off",
       "eslint/max-statements": "off",
       "eslint/no-magic-numbers": "off",
-      "eslint/prefer-ternary:": "off",
       "eslint/sort-keys": "off",
       "no-console": "off",
       "no-process-exit": "off",
