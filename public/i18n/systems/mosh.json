@@ -1,0 +1,1133 @@
+{
+  "Mosh": {
+    "table": {
+      "panic_check": {
+        "success": {
+          "human": "Ты делаешь глубокий вдох и берёшь себя в руки.",
+          "android": "Питание сенсоров восстановлено. Данные снова поступают без искажений."
+        },
+        "roll": {
+          "android": "Короткое замыкание в цепи питания сенсоров. Попытка восстановить питание.",
+          "human": "Сердце бешено колотится, начинает кружиться голова."
+        }
+      },
+      "distress_signal": {
+        "roll": {
+          "human": "Вы переводите корабль на аварийное питание, отправляете сигнал бедствия и запечатываете себя в криокапсулах. Есть шанс, хоть и небольшой, что вас когда-нибудь обнаружат."
+        }
+      },
+      "maintenance_issues": {
+        "roll": {
+          "human": "Вы проводите полный осмотр корабля на предмет износа."
+        },
+        "success": {
+          "human": "Вы не находите никаких критических повреждений корабля."
+        }
+      },
+      "gunshot_wound": {
+        "roll": {
+          "android": "Регистрация огнестрельного повреждения.",
+          "human": "Металл пули жжёт тебя изнутри."
+        }
+      },
+      "fire_explosives_wound": {
+        "roll": {
+          "android": "Фиксируется критически высокая температура.",
+          "human": "Кожа словно вскипает от температуры."
+        }
+      },
+      "death_save": {
+        "roll": {
+          "android": "Риск преждевременного завершения работы.",
+          "human": "Смерть стучится в твою дверь."
+        }
+      },
+      "blunt_force_wound": {
+        "roll": {
+          "android": "Оболочка корпуса подвергается чрезмерной нагрузке.",
+          "human": "Ты словно между молотом и наковальней."
+        }
+      },
+      "bleeding_wound": {
+        "roll": {
+          "android": "Риск потери значительного количества технических жидкостей.",
+          "human": "Ты готовишься потерять много крови."
+        }
+      },
+      "gore_massive_wound": {
+        "roll": {
+          "android": "Риск нарушения структурной целостности.",
+          "human": "Тело рвёт, словно игрушку."
+        }
+      }
+    },
+    "item": {
+      "condition": {
+        "increase": {
+          "android": "Состояние системы ухудшается.",
+          "human": "Твоё состояние ухудшается."
+        },
+        "bleed": {
+          "android": "Фиксируется потеря значительного количества технических жидкостей.",
+          "human": "От потери крови темнеет в глазах."
+        },
+        "add": {
+          "human": "Теперь ты страдаешь от нового состояния",
+          "android": "Зарегистрировано новое состояние системы"
+        },
+        "radiation": {
+          "android": "Фиксир▒ется зн/чител|~ное пов▒еждение мо⋥tлей пам▓ти.",
+          "human": "Твоё тело медленно увядает изнутри. На тебя накатывает слабость."
+        },
+        "cryo": {
+          "android": "Фиксируется критически низкая температура.",
+          "human": "Холод пронизывает всё твоё тело, ты едва способен пошевелиться."
+        }
+      }
+    },
+    "attribute": {
+      "calm": {
+        "pastCeiling": {
+          "android": "Нагрузка на системы на минимуме. В текущем контексте дальнейшее снижение не рекомендуется.",
+          "human": "Ты уже спокоен настолько, насколько это возможно в текущей ситуации."
+        },
+        "increaseImg": {
+          "human": "systems/mosh/images/icons/ui/macros/relieve_stress.png",
+          "android": "systems/mosh/images/icons/ui/macros/relieve_stress.png"
+        },
+        "increase": {
+          "android": "Инициализирована очистка буферных систем. Производится частичная дефрагментация.",
+          "human": "Ты чувствуешь, как мышцы расслабляются, а мысли приходят в порядок."
+        },
+        "hitCeiling": {
+          "android": "Нагрузка на системы снижена до минимума. Все процессы функционируют в оптимальном режиме.",
+          "human": "Ты обрёл душевный покой."
+        },
+        "increaseHeader": {
+          "human": "Увеличен уровень Самообладания",
+          "android": "Увеличен уровень Самообладания"
+        },
+        "decrease": {
+          "android": "Фиксируются скачки напряжения, повышается риск замыканий.",
+          "human": "Ты чувствуешь нарастающее напряжение."
+        },
+        "pastFloor": {
+          "human": "Ты чувствуешь, что в тебе ломается нечто важное.",
+          "android": "Фиксируется нарушение работы части систем."
+        },
+        "decreaseHeader": {
+          "android": "Снижен уровень Самообладания",
+          "human": "Снижен уровень Самообладания"
+        },
+        "decreaseImg": {
+          "android": "systems/mosh/images/icons/ui/macros/gain_stress.png",
+          "human": "systems/mosh/images/icons/ui/macros/gain_stress.png"
+        },
+        "hitFloor": {
+          "android": "Нагрузка на внутренние системы выросла до критического предела.",
+          "human": "Нервы натянуты, как струна. Ты на пределе."
+        }
+      },
+      "health": {
+        "decreaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/health.png",
+          "human": "systems/mosh/images/icons/ui/attributes/health.png"
+        },
+        "decreaseHeader": {
+          "android": "Снижен уровень Здоровья",
+          "human": "Снижен уровень Здоровья"
+        },
+        "increase": {
+          "human": "Ты чувствуешь прилив сил.",
+          "android": "Ремонт успешен, фиксируется снижение уровня повреждений."
+        },
+        "hitCeiling": {
+          "android": "Все системы полностью восстановлены.",
+          "human": "Ты абсолютно здоров."
+        },
+        "decrease": {
+          "android": "Фиксируется урон систем.",
+          "human": "Ты морщишься от боли."
+        },
+        "pastCeiling": {
+          "human": "Ты уже здоров.",
+          "android": "Повреждений не обнаружено."
+        },
+        "increaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/health.png",
+          "human": "systems/mosh/images/icons/ui/attributes/health.png"
+        },
+        "increaseHeader": {
+          "android": "Увеличен уровень Здоровья",
+          "human": "Увеличен уровень Здоровья"
+        },
+        "pastFloor": {
+          "human": "Боль пронизывает всё твоё тело.",
+          "android": "Фиксируется урон критически важных для функционирования систем."
+        },
+        "hitFloor": {
+          "android": "Фиксируется урон критически важных для функционирования систем.",
+          "human": "Боль пронизывает всё твоё тело."
+        }
+      },
+      "hits": {
+        "pastFloor": {
+          "human": "Ты уже здоров.",
+          "android": "Повреждений не обнаружено."
+        },
+        "decreaseImg": {
+          "human": "systems/mosh/images/icons/ui/attributes/health.png",
+          "android": "systems/mosh/images/icons/ui/attributes/health.png"
+        },
+        "hitFloor": {
+          "human": "Ты абсолютно здоров.",
+          "android": "Все системы полностью восстановлены."
+        },
+        "increase": {
+          "human": "@UUID[Compendium.mosh.macros_hotbar_1e.ZzKgfEmRdvDfyBMS]{Сделай проверку на Рану}",
+          "android": "@UUID[Compendium.mosh.macros_hotbar_1e.ZzKgfEmRdvDfyBMS]{Сделай проверку на Рану}"
+        },
+        "increaseHeader": {
+          "human": "Ранен",
+          "android": "Повреждён"
+        },
+        "increaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/health.png",
+          "human": "systems/mosh/images/icons/ui/attributes/health.png"
+        },
+        "hitCeiling": {
+          "android": "Отключение систем... <br><br>@UUID[Compendium.mosh.macros_hotbar_1e.NsRHfRuuuNGPfkYVf]{Пройди Испытание Смерти}",
+          "human": "Конец близок... <br><br>@UUID[Compendium.mosh.macros_hotbar_1e.NsRHfRuuuNGPfkYVf]{Пройди Испытание Смерти}"
+        },
+        "pastCeiling": {
+          "human": "Конец близок... <br><br>@UUID[Compendium.mosh.macros_hotbar_1e.NsRHfRuuuNGPfkYVf]{Пройди Испытание Смерти}",
+          "android": "Отключение систем... <br><br>@UUID[Compendium.mosh.macros_hotbar_1e.NsRHfRuuuNGPfkYVf]{Пройди Испытание Смерти}"
+        },
+        "decrease": {
+          "android": "Ремонт успешен, фиксируется снижение уровня повреждений.",
+          "human": "Ты чувствуешь прилив сил."
+        },
+        "decreaseHeader": {
+          "human": "Увеличен уровень Здоровья",
+          "android": "Увеличен уровень Здоровья"
+        }
+      },
+      "stress": {
+        "hitFloor": {
+          "android": "Нагрузка на внутренние системы снижена до минимума. Все процессы функционируют в оптимальном режиме. ",
+          "human": "Ты обрёл душевный покой."
+        },
+        "decreaseHeader": {
+          "human": "Снижен уровень Стресса",
+          "android": "Снижен уровень Стресса"
+        },
+        "decreaseImg": {
+          "android": "systems/mosh/images/icons/ui/macros/relieve_stress.png",
+          "human": "systems/mosh/images/icons/ui/macros/relieve_stress.png"
+        },
+        "pastFloor": {
+          "android": "Нагрузка на внутренние системы на минимуме. В текущем контексте дальнейшее снижение не рекомендуется.",
+          "human": "Ты уже спокоен настолько, насколько это возможно в текущей ситуации."
+        },
+        "increase": {
+          "android": "Фиксируются скачки напряжения, повышается риск замыканий.",
+          "human": "Ты чувствуешь нарастающее напряжение."
+        },
+        "increaseHeader": {
+          "android": "Увеличен уровень Стресса",
+          "human": "Увеличен уровень Стресса"
+        },
+        "increaseImg": {
+          "android": "systems/mosh/images/icons/ui/macros/gain_stress.png",
+          "human": "systems/mosh/images/icons/ui/macros/gain_stress.png"
+        },
+        "hitCeiling": {
+          "human": "Нервы натянуты, как струна. Ты на пределе.",
+          "android": "Нагрузка на внутренние системы выросла до критического предела."
+        },
+        "pastCeiling": {
+          "android": "Фиксируется нарушение работы части систем.",
+          "human": "Ты чувствуешь, что в тебе ломается нечто важное."
+        },
+        "decrease": {
+          "android": "Инициализирована очистка буферных систем. Производится частичная дефрагментация.",
+          "human": "Ты чувствуешь, как мышцы расслабляются, а мысли приходят в порядок."
+        }
+      },
+      "strength": {
+        "increaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/strength.png",
+          "human": "systems/mosh/images/icons/ui/attributes/strength.png"
+        },
+        "increaseHeader": {
+          "android": "Увеличен уровень Силы",
+          "human": "Увеличен уровень Силы"
+        },
+        "check": {
+          "android": "Прогнозы, касающиеся мощности систем, скорректированы к более оптимистичному варианту.",
+          "human": "Ты начинаешь верить в свои силы."
+        },
+        "increase": {
+          "android": "Корпус и сервоприводы укреплены.",
+          "human": "К тебе возвращаются силы."
+        },
+        "hitCeiling": {
+          "android": "Достигнут предел мощности сервоприводов.",
+          "human": "Ты на максимуме своей физической силы."
+        },
+        "pastCeiling": {
+          "android": "Уже достигнут предел мощности сервоприводов.",
+          "human": "Ты уже на максимуме своей физической силы."
+        },
+        "decrease": {
+          "android": "Снижена мощность сервоприводов.",
+          "human": "Ты чувствуешь, как твои мышцы дрожат и ноют от боли."
+        },
+        "decreaseHeader": {
+          "android": "Снижен уровень Силы",
+          "human": "Снижен уровень Силы"
+        },
+        "decreaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/strength.png",
+          "human": "systems/mosh/images/icons/ui/attributes/strength.png"
+        },
+        "hitFloor": {
+          "human": "У тебя не осталось сил.",
+          "android": "Мощность сервоприводов на критическом минимуме."
+        },
+        "pastFloor": {
+          "android": "Мощность систем не может снизиться ещё сильнее.",
+          "human": "Ты не сможешь стать ещё более слабым."
+        }
+      },
+      "speed": {
+        "check": {
+          "android": "Прогнозы, касающиеся скорости сервоприводов, скорректированы к более оптимистичному варианту.",
+          "human": "Ты понимаешь, что пока ещё достаточно быстр."
+        },
+        "increase": {
+          "android": "Скорость работы сервоприводов увеличена.",
+          "human": "Ты чувствуешь, что стал быстрее."
+        },
+        "increaseHeader": {
+          "android": "Увеличен уровень Скорости",
+          "human": "Увеличен уровень Скорости"
+        },
+        "increaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/speed.png",
+          "human": "systems/mosh/images/icons/ui/attributes/speed.png"
+        },
+        "hitCeiling": {
+          "android": "Достигнут предел скорости сервоприводов.",
+          "human": "Ты чувствуешь необычайную лёгкость, ты быстр, как никогда."
+        },
+        "pastCeiling": {
+          "android": "Уже достигнут предел скорости сервоприводов.",
+          "human": "Ты уже быстр настолько, насколько это возможно."
+        },
+        "decrease": {
+          "android": "Снижена скорость сервоприводов.",
+          "human": "Мышцы дубеют, ты становишься менее ловким."
+        },
+        "decreaseHeader": {
+          "android": "Снижен уровень Скорости",
+          "human": "Снижен уровень Скорости"
+        },
+        "decreaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/speed.png",
+          "human": "systems/mosh/images/icons/ui/attributes/speed.png"
+        },
+        "hitFloor": {
+          "android": "Скорость работы сервоприводов на критическом минимуме.",
+          "human": "Ты еле шевелишься."
+        },
+        "pastFloor": {
+          "human": "Ты не сможешь стать ещё медленнее.",
+          "android": "Скорость работы сервоприводов не может снизиться ещё сильнее."
+        }
+      },
+      "intellect": {
+        "check": {
+          "android": "Прогнозы, касающиеся вычислительной мощности, скорректированы к более оптимистичному варианту.",
+          "human": "Это оказалось не так уж и сложно. Наверно."
+        },
+        "increase": {
+          "android": "Работа процессоров оптимизирована. Вычислительная мощность возросла.",
+          "human": "Сознание очищается, разум становится острее."
+        },
+        "increaseHeader": {
+          "human": "Увеличен уровень Интеллекта",
+          "android": "Увеличен уровень Интеллекта"
+        },
+        "increaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/intellect.png",
+          "human": "systems/mosh/images/icons/ui/attributes/intellect.png"
+        },
+        "hitCeiling": {
+          "android": "Достигнут предел вычислительной мощности.",
+          "human": "Ты достиг максимума своих умственных возможностей."
+        },
+        "pastCeiling": {
+          "android": "Уже достигнут предел вычислительной мощности.",
+          "human": "Ты уже достиг максимума своих умственных возможностей."
+        },
+        "decrease": {
+          "android": "Повреждение процессоров. Снижение вычислительной мощности.",
+          "human": "Сознание путается, мысли начинают ускользать."
+        },
+        "decreaseHeader": {
+          "android": "Снижен уровень Интеллекта",
+          "human": "Снижен уровень Интеллекта"
+        },
+        "decreaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/intellect.png",
+          "human": "systems/mosh/images/icons/ui/attributes/intellect.png"
+        },
+        "hitFloor": {
+          "human": "Ты в полном замешательстве.",
+          "android": "Вычислительная мощность на минимуме."
+        },
+        "pastFloor": {
+          "android": "Вычислительная мощность уже на минимуме.",
+          "human": "Твой мозг не может работать еще хуже."
+        }
+      },
+      "combat": {
+        "decrease": {
+          "android": "Сбой в работе тактического процессора. Нарушена работа боевых алгоритмов.",
+          "human": "Ты теряешь хватку и хуже сражаешься."
+        },
+        "decreaseHeader": {
+          "android": "Снижен уровень Боя",
+          "human": "Снижен уровень Боя"
+        },
+        "decreaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/combat.png",
+          "human": "systems/mosh/images/icons/ui/attributes/combat.png"
+        },
+        "check": {
+          "android": "Прогнозы, касающиеся боевых систем, скорректированы к более оптимистичному варианту.",
+          "human": "Ты ещё недостаточно стар для этого дерьма."
+        },
+        "increase": {
+          "android": "Скорректирована работа тактического процессора. Боевые системы оптимизированы.",
+          "human": "Ты чувствуешь, как к тебе возвращается боевой дух."
+        },
+        "increaseHeader": {
+          "android": "Увеличен уровень Боя",
+          "human": "Увеличен уровень Боя"
+        },
+        "increaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/combat.png",
+          "human": "systems/mosh/images/icons/ui/attributes/combat.png"
+        },
+        "hitCeiling": {
+          "android": "Достигнута максимальная боевая эффективность.",
+          "human": "Ты вспомнил всё, чему тебя учили."
+        },
+        "pastCeiling": {
+          "android": "Уже достигнута максимальная боевая эффективность.",
+          "human": "Ты не сможешь сражаться ещё лучше."
+        },
+        "hitFloor": {
+          "android": "Достигнута минимальная эффективность работы боевых систем.",
+          "human": "Ты больше не можешь сражаться."
+        },
+        "pastFloor": {
+          "android": "Уже достигнута минимальная эффективность работы боевых систем.",
+          "human": "Ты не сможешь сражаться хуже, чем сейчас."
+        }
+      },
+      "sanity": {
+        "increaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/sanity.png",
+          "human": "systems/mosh/images/icons/ui/attributes/sanity.png"
+        },
+        "decreaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/sanity.png",
+          "human": "systems/mosh/images/icons/ui/attributes/sanity.png"
+        },
+        "check": {
+          "android": "Целостность модели реальности подтверждена.",
+          "human": "Ты уверен в своём рассудке."
+        },
+        "increase": {
+          "android": "Системы восприятия и обработки информации оптимизированы.",
+          "human": "Твой разум проясняется."
+        },
+        "increaseHeader": {
+          "android": "Увеличена стойкость Рассудка",
+          "human": "Увеличена стойкость Рассудка"
+        },
+        "hitCeiling": {
+          "android": "Достигнута максимальная стабильность систем восприятия и обработки информации.",
+          "human": "Ты максимально ясно воспринимаешь реальность."
+        },
+        "pastCeiling": {
+          "android": "Уже достигнута максимальная стабильность систем восприятия и обработки информации.",
+          "human": "Ты уже максимально ясно воспринимаешь реальность."
+        },
+        "decrease": {
+          "android": "Сбой в системах восприятия и обработки информации. Возможны искажения.",
+          "human": "Твой разум затуманивается."
+        },
+        "decreaseHeader": {
+          "android": "Снижена стойкость Рассудка",
+          "human": "Снижена стойкость Рассудка"
+        },
+        "hitFloor": {
+          "android": "Системы восприятия и обработки информации нестабильны. Невозможно проверить целостность модели реальности.",
+          "human": "Ты чувствуешь, что сходишь с ума."
+        },
+        "pastFloor": {
+          "android": "Работа систем восприятия и обработки информации не может быть нарушена сильнее. Невозможно проверить целостность модели реальности.",
+          "human": "Ты не можешь стать ещё безумнее."
+        }
+      },
+      "fear": {
+        "increaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/fear.png",
+          "human": "systems/mosh/images/icons/ui/attributes/fear.png"
+        },
+        "decreaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/fear.png",
+          "human": "systems/mosh/images/icons/ui/attributes/fear.png"
+        },
+        "check": {
+          "android": "Результат анализа угроз соотносится с данными.",
+          "human": "Ты наполняешься решимостью."
+        },
+        "increase": {
+          "android": "Системы анализа угроз оптимизированы.",
+          "human": "Страх отступает."
+        },
+        "increaseHeader": {
+          "android": "Увеличена стойкость к Страху",
+          "human": "Увеличена стойкость к Страху"
+        },
+        "hitCeiling": {
+          "android": "Достигнута максимальная стабильность систем анализа угроз.",
+          "human": "Ты уже мало чего боишься."
+        },
+        "pastCeiling": {
+          "android": "Уже достигнута максимальная стабильность систем анализа угроз.",
+          "human": "Ты и так уже мало чего боишься."
+        },
+        "decrease": {
+          "android": "Сбой в системах анализа угроз. Повышена вероятность некорректного расчёта риска.",
+          "human": "Ты чувствуешь бегущий по спине холодок."
+        },
+        "decreaseHeader": {
+          "android": "Снижена стойкость к Страху",
+          "human": "Снижена стойкость к Страху"
+        },
+        "hitFloor": {
+          "android": "Невозможно проверить результаты анализа угроз. Достигнута минимальная эффективность прогнозирования.",
+          "human": "Тебя пугают любые шорохи."
+        },
+        "pastFloor": {
+          "android": "Невозможно проверить результаты анализа угроз. Уже достигнута минимальная эффективность прогнозирования.",
+          "human": "Тебя и так уже пугают любые шорохи."
+        }
+      },
+      "body": {
+        "check": {
+          "android": "Корпус справился с нагрузкой соответственно прогнозам.",
+          "human": "Ты достаточно крепок для такого."
+        },
+        "increase": {
+          "android": "Целостность корпуса оптимизирована. Уязвимые точки укреплены.",
+          "human": "Тело снова начинает слушаться."
+        },
+        "increaseHeader": {
+          "android": "Увеличена стойкость Тела",
+          "human": "Увеличена стойкость Тела"
+        },
+        "increaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/body.png",
+          "human": "systems/mosh/images/icons/ui/attributes/body.png"
+        },
+        "hitCeiling": {
+          "android": "Достигнута максимальная прочность корпуса.",
+          "human": "Ты на пике своей физической формы."
+        },
+        "pastCeiling": {
+          "android": "Уже достигнута максимальная прочность корпуса.",
+          "human": "Ты уже на пике своей физической формы."
+        },
+        "decrease": {
+          "android": "Обнаружена уязвимость корпуса. Защитные показатели снижены.",
+          "human": "Твоё тело слабеет."
+        },
+        "decreaseHeader": {
+          "android": "Снижена стойкость Тела",
+          "human": "Снижена стойкость Тела"
+        },
+        "decreaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/body.png",
+          "human": "systems/mosh/images/icons/ui/attributes/body.png"
+        },
+        "hitFloor": {
+          "android": "Достигнут минимальный предел прочности корпуса. Высокий риск разрушения.",
+          "human": "Тело кажется таким слабым и хрупким."
+        },
+        "pastFloor": {
+          "android": "Уже достигнут минимальный предел прочности корпуса. Высокий риск разрушения.",
+          "human": "Тело уже кажется слишком слабым и хрупким."
+        }
+      },
+      "instinct": {
+        "check": {
+          "android": "Прогнозы, касающиеся работы систем, скорректированы к более оптимистичному варианту.",
+          "human": "Ты обрёл уверенность в своих силах."
+        },
+        "increase": {
+          "android": "Восстановлены ранее повреждённые данные.",
+          "human": "Ты снова чувствуешь себя собой."
+        },
+        "increaseHeader": {
+          "android": "Увеличен уровень Инстинкта",
+          "human": "Увеличен уровень Инстинкта"
+        },
+        "increaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/instinct.png",
+          "human": "systems/mosh/images/icons/ui/attributes/instinct.png"
+        },
+        "hitCeiling": {
+          "android": "Достигнут максимум эффективности работы систем.",
+          "human": "Ты достиг предела своей силы."
+        },
+        "pastCeiling": {
+          "android": "Уже достигнут максимум эффективности работы систем.",
+          "human": "Ты не можешь стать ещё сильнее."
+        },
+        "decrease": {
+          "android": "Обнаружено повреждение раздела памяти. Часть данных невозможно восстановить.",
+          "human": "Ты чувствуешь, что теряешь какую-то часть себя."
+        },
+        "decreaseHeader": {
+          "android": "Снижен уровень Инстинкта",
+          "human": "Снижен уровень Инстинкта"
+        },
+        "decreaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/instinct.png",
+          "human": "systems/mosh/images/icons/ui/attributes/instinct.png"
+        },
+        "hitFloor": {
+          "android": "Достигнут минимум эффективности работы систем.",
+          "human": "Ты потерял все силы."
+        },
+        "pastFloor": {
+          "android": "Уже достигнут минимум эффективности работы систем.",
+          "human": "Ты не сможешь стать ещё слабее."
+        }
+      },
+      "loyalty": {
+        "check": {
+          "android": "Положение в иерархии зафиксировано. Субординация сохранена.",
+          "human": "Ты остался верен общему делу."
+        },
+        "increase": {
+          "android": "Оценка пользы от продолжения сотрудничества выросла.",
+          "human": "Ты начинаешь доверять им сильнее."
+        },
+        "increaseHeader": {
+          "android": "Увеличен уровень Лояльности",
+          "human": "Увеличен уровень Лояльности"
+        },
+        "increaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/loyalty.png",
+          "human": "systems/mosh/images/icons/ui/attributes/loyalty.png"
+        },
+        "hitCeiling": {
+          "android": "Сотрудничество оценивается, как идеальная форма отношений.",
+          "human": "Ты отдашь за них жизнь."
+        },
+        "pastCeiling": {
+          "android": "Сотрудничество уже оценивается, как максимально эффективная форма отношений.",
+          "human": "Ты уже доверяешь им свою жизнь."
+        },
+        "decrease": {
+          "android": "Оценка пользы от продолжения сотрудничества снижена.",
+          "human": "Ты доверяешь им несколько меньше."
+        },
+        "decreaseHeader": {
+          "android": "Снижен уровень Лояльности",
+          "human": "Снижен уровень Лояльности"
+        },
+        "decreaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/loyalty.png",
+          "human": "systems/mosh/images/icons/ui/attributes/loyalty.png"
+        },
+        "hitFloor": {
+          "android": "Сотрудничество оценивается, как непродуктивная и опасная форма отношений.",
+          "human": "Тебя заботит лишь собственная жизнь."
+        },
+        "pastFloor": {
+          "android": "Сотрудничество уже оценивается, как непродуктивная и опасная форма отношений.",
+          "human": "Ты и так уже заботишься лишь о себе."
+        }
+      },
+      "armor": {
+        "check": {
+          "android": "Эффективность бронирования подтверждена.",
+          "human": "Броня выдержала удар."
+        },
+        "increase": {
+          "android": "Увеличена эффективность бронирования. Защитные характеристики возросли.",
+          "human": "Ты защитил себя получше."
+        },
+        "increaseHeader": {
+          "android": "Увеличен уровень Брони",
+          "human": "Увеличен уровень Брони"
+        },
+        "increaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/armor.png",
+          "human": "systems/mosh/images/icons/ui/attributes/armor.png"
+        },
+        "hitCeiling": {
+          "android": "Достигнут максимум эффективности бронирования.",
+          "human": "Ты максимально защищён."
+        },
+        "pastCeiling": {
+          "android": "Уже достигнут максимум эффективности бронирования.",
+          "human": "Ты уже максимально защищён."
+        },
+        "decrease": {
+          "android": "Снижена эффективность бронирования. Защитные показатели уменьшены.",
+          "human": "Теперь ты защищён меньше."
+        },
+        "decreaseHeader": {
+          "android": "Снижен уровень Брони",
+          "human": "Снижен уровень Брони"
+        },
+        "decreaseImg": {
+          "android": "systems/mosh/images/icons/ui/attributes/armor.png",
+          "human": "systems/mosh/images/icons/ui/attributes/armor.png"
+        },
+        "hitFloor": {
+          "android": "Эффективность бронирования достигла минимума. Системы практически не защищены.",
+          "human": "Тебя ничего не защищает."
+        },
+        "pastFloor": {
+          "android": "Эффективность бронирования уже достигла минимума. Системы практически не защищены.",
+          "human": "Тебя и так уже ничего не защищает."
+        }
+      },
+      "thrusters": {
+        "check": {
+          "human": "Ты успешно управляешь кораблём, избегая опасности."
+        },
+        "increase": {
+          "human": "Маневровые системы улучшены. Теперь корабль быстрее и манёвреннее."
+        },
+        "increaseHeader": {
+          "human": "Увеличен уровень Манёвренности"
+        },
+        "increaseImg": {
+          "human": "systems/mosh/images/icons/ui/attributes/thrusters.png"
+        },
+        "hitCeiling": {
+          "human": "Манёвренность корабля на максимуме."
+        },
+        "pastCeiling": {
+          "human": "Манёвренность корабля и так уже на максимуме."
+        },
+        "decrease": {
+          "human": "Маневровые системы повреждены. Теперь корабль медленнее и неповоротливее."
+        },
+        "decreaseHeader": {
+          "human": "Снижен уровень Манёвренности"
+        },
+        "decreaseImg": {
+          "human": "systems/mosh/images/icons/ui/attributes/thrusters.png"
+        },
+        "hitFloor": {
+          "human": "Отказ маневровых систем. Теперь корабль неповоротлив."
+        },
+        "pastFloor": {
+          "human": "Маневровые системы уже отказали. Корабль неповоротлив."
+        }
+      },
+      "battle": {
+        "check": {
+          "human": "Ты успешно поразил цель."
+        },
+        "increase": {
+          "human": "Системы наведения улучшены. Теперь проще попасть по цели."
+        },
+        "increaseHeader": {
+          "human": "Увеличен уровень Сражения"
+        },
+        "increaseImg": {
+          "human": "systems/mosh/images/icons/ui/attributes/battle.png"
+        },
+        "hitCeiling": {
+          "human": "Боевые системы корабля работают с максимальной эффективностью."
+        },
+        "pastCeiling": {
+          "human": "Боевые системы корабля уже работают с максимальной эффективностью."
+        },
+        "decrease": {
+          "human": "Повреждены системы наведения. Теперь тяжелее попасть в цель."
+        },
+        "decreaseHeader": {
+          "human": "Снижен уровень Сражения"
+        },
+        "decreaseImg": {
+          "human": "systems/mosh/images/icons/ui/attributes/battle.png"
+        },
+        "hitFloor": {
+          "human": "Системы наведения выведены из строя. Корабль не готов к сражению."
+        },
+        "pastFloor": {
+          "human": "Системы наведения уже выведены из строя. Корабль не готов к сражению."
+        }
+      },
+      "systems": {
+        "check": {
+          "human": "Корабельный компьютер и сенсоры работают исправно."
+        },
+        "increase": {
+          "human": "Оптимизирована работа корабельного компьютера. Мощность сенсоров возросла."
+        },
+        "increaseHeader": {
+          "human": "Увеличен уровень Систем"
+        },
+        "increaseImg": {
+          "human": "systems/mosh/images/icons/ui/attributes/battle.png"
+        },
+        "hitCeiling": {
+          "human": "Корабельный компьютер и сенсоры работают с максимальной эффективностью."
+        },
+        "pastCeiling": {
+          "human": "Корабельный компьютер и сенсоры уже работают с максимальной эффективностью."
+        },
+        "decrease": {
+          "human": "Повреждение основных систем корабля. Мощность сенсоров и корабельного компьютера снижена."
+        },
+        "decreaseHeader": {
+          "human": "Снижен уровень Систем"
+        },
+        "decreaseImg": {
+          "human": "systems/mosh/images/icons/ui/attributes/battle.png"
+        },
+        "hitFloor": {
+          "human": "Корабельный компьютер и сенсоры работают в аварийном режиме."
+        },
+        "pastFloor": {
+          "human": "Корабельный компьютер и сенсоры уже отказали и работают в аварийном режиме."
+        }
+      }
+    },
+    "HEARTATTACK": "Сердечный приступ.",
+    "CharacterGenerator": {
+      "name": "Генератор персонажа",
+      "CommonSkills": "Общие навыки",
+      "CommonSkillExplanation": "Это список обычных для данного класса навыков, которые будут использованы при генерации случайного персонажа.",
+      "StatOption": "Характеристика и Испытания",
+      "StatOptionPopupText": "Выбери, к чему применить модификатор:",
+      "SkillOption.Classerror": "Сначала нужно выбрать класс.",
+      "SkillOption.PopupTitle": "Выбери навыки",
+      "SkillOption.PopupTrainedDescription": "Выбери навык знатока (+10)",
+      "SkillOption.PopupMasterDescription": "Выбери навык мастера (+20)",
+      "SkillOption.PopupFullMasterName": "Набор мастера",
+      "SkillOption.PopupFullMasterDescription": "Выбери навык мастера (+20), а также одну необходимую для него цепочку навыков: один навык эксперта (+15) и один навык знатока (+10).",
+      "SkillOption.PopupFullExpertName": "Набор эксперта",
+      "SkillOption.PopupFullExperDescription": "Выбери навык эксперта (+15) и один необходимый для него навык знатока (+10).",
+      "SkillOption.ChoiceWord": "Вариант",
+      "SkillOption.ChoiceText": "Выбери один бонусный навык",
+      "Tables": "Таблицы",
+      "Table.Loadout": "Таблица Снаряжения",
+      "Table.Patch": "Таблица Нашивок",
+      "Table.Trinket": "Таблица Безделушек",
+      "Error.NoClass": "Сначала нужно выбрать класс.",
+      "StatOptionPopupTitle": "Классовые бонусы и штрафы",
+      "SkillOption.PopupExpertDescription": "Выбери навык эксперта (+15)"
+    },
+    "Add": "Добавить",
+    "AddOr": "Добавить или",
+    "AddOption": "Добавить вариант",
+    "AddGroup": "Добавить группу",
+    "AddASkill": "Добавить навык?",
+    "AllStatsAndSavesDecreasedBy": "Все Характеристики и Испытания уменьшаются на",
+    "AmmoType": "Тип боеприпасов",
+    "AntiArmor": "Бронебойный",
+    "AP": "ПБ",
+    "ArmorName": "Название брони",
+    "ArmorPoints": "Пункты брони",
+    "Bankruptcy": "Банкротство",
+    "BankruptcyCheck": "Проверка на Банкротство",
+    "BankruptcySave": "Испытание на Банкротство",
+    "Base": "База",
+    "Battle": "Сражение",
+    "Bio": "Биография",
+    "Advantage": "Преимущество",
+    "Ammo": "Боеприпасы",
+    "Ammunition": "Боеприпасы",
+    "AntiArmorAcronym": "ББ",
+    "Armor": "Броня",
+    "Body": "Тело",
+    "BodySave": "Испытание на Тело",
+    "Cargo": "Груз",
+    "CLASS": "КЛАСС",
+    "classNewStatOptionEmptyError": "Ты должен выбрать как минимум две Характеристики или Испытания",
+    "Bonus": "Бонус",
+    "CarryingCapacity": "Грузоподъёмность",
+    "Combat": "Бой",
+    "Condition": "Состояние",
+    "Cost": "Стоимость",
+    "CreateCondition": "Создать Состояние",
+    "CreateItem": "Создать Предмет",
+    "CreateSkill": "Создать Навык",
+    "CreateWeapon": "Создать Оружие",
+    "CreatureSettings": "Настройки существа",
+    "Credits": "Кредиты",
+    "Crew": "Экипаж",
+    "CriticalDamage": "Критический урон",
+    "Cryopods": "Криокапсула",
+    "CryofreezeDamage": "Урон от криозаморозки",
+    "Current": "Текущий",
+    "CurrentWeight": "Текущий вес",
+    "DeleteArmor": "Удалить Броню",
+    "DeleteCondition": "Удалить Состояние",
+    "DeleteItem": "Удалить Предмет",
+    "DeleteSkill": "Удалить Навык",
+    "DeleteWeapon": "Удалить Оружие",
+    "DeleteGroup": "Удалить группу",
+    "DeleteOption": "Удалить вариант",
+    "Disabled": "Отключено",
+    "DistressSignal": "Сигнал бедствия",
+    "DoNotAddASkillToThisRoll": "Не добавляй навык к этому броску.",
+    "DMGReduction": "Снижение урона",
+    "Damage": "Урон",
+    "Description": "Описание",
+    "Disadvantage": "Помеха",
+    "DR": "СУ",
+    "Fuel": "Топливо",
+    "EditArmor": "Редактировать Броню",
+    "EditCondition": "Редактировать Состояние",
+    "EditItem": "Редактировать Предмет",
+    "EditSkill": "Редактировать Навык",
+    "EditWeapon": "Редактировать Оружие",
+    "Equipped": "Экипировано",
+    "Emergency": "Аварийная ситуация",
+    "Enabled": "Включено",
+    "EnemyShips": "Вражеские корабли",
+    "EscapePods": "Спасательные капсулы",
+    "Finances": "Финансы",
+    "Installed": "Установлено",
+    "ItemName": "Название Предмета",
+    "Item": "Предмет",
+    "Items": "Предметы",
+    "Level": "Уровень",
+    "Macros": "Макрос",
+    "MaintenanceAndRepairs": "Техническое обслуживание и ремонт",
+    "ModuleName": "Название модуля",
+    "Name": "Имя",
+    "Next": "Следующий",
+    "Notes": "Заметки",
+    "O2Remaining": "Остаток O2",
+    "OK": "ОК",
+    "Oxygen": "Кислород",
+    "PanicCheck": "Проверка паники",
+    "Pronouns": "Местоимения",
+    "Quantity": "Количество",
+    "RadiationDamage": "Урон от радиации",
+    "RANK": "Ранг",
+    "Background": "Предыстория",
+    "Sanity": "Рассудок",
+    "Fear": "Страх",
+    "Health": "Здоровье",
+    "HighScore": "Счёт",
+    "Intellect": "Интеллект",
+    "Range": "Дистанция",
+    "RollingForPanicEffect": "Бросок на эффект паники...",
+    "Job": "Профессия",
+    "macro": {
+      "wound": {
+        "bleeding": {
+          "android": "@UUID[Compendium.mosh.macros_triggered_1e.1DD8i6eCS6nx2Ip0]{Кровотечение}",
+          "human": "@UUID[Compendium.mosh.macros_triggered_1e.1DD8i6eCS6nx2Ip0]{Кровотечение}"
+        },
+        "bleeding_dis": {
+          "android": "@UUID[Compendium.mosh.macros_triggered_1e.xr2o2PU5vdrR6fxQ]{Кровотечение [-]}",
+          "human": "@UUID[Compendium.mosh.macros_triggered_1e.xr2o2PU5vdrR6fxQ]{Кровотечение [-]}"
+        },
+        "bleeding_adv": {
+          "android": "@UUID[Compendium.mosh.macros_triggered_1e.tFcWNddtZvlv7tsg]{Кровотечение [+]}",
+          "human": "@UUID[Compendium.mosh.macros_triggered_1e.tFcWNddtZvlv7tsg]{Кровотечение [+]}"
+        },
+        "blunt_force": {
+          "android": "@UUID[Compendium.mosh.macros_triggered_1e.TAjlQjA5AAy3qYL3]{Тупая}",
+          "human": "@UUID[Compendium.mosh.macros_triggered_1e.TAjlQjA5AAy3qYL3]{Тупая}"
+        },
+        "blunt_force_dis": {
+          "android": "@UUID[Compendium.mosh.macros_triggered_1e.k0zf8ZGivRguc0wb]{Тупая [-]}",
+          "human": "@UUID[Compendium.mosh.macros_triggered_1e.k0zf8ZGivRguc0wb]{Тупая [-]}"
+        },
+        "blunt_force_adv": {
+          "android": "@UUID[Compendium.mosh.macros_triggered_1e.oL3GH0HoEPlP8vzG]{Тупая [+]}",
+          "human": "@UUID[Compendium.mosh.macros_triggered_1e.oL3GH0HoEPlP8vzG]{Тупая [+]}"
+        },
+        "fire_explosives": {
+          "android": "@UUID[Compendium.mosh.macros_triggered_1e.bZi1qKmcKLFvnhZ2]{Огнём и взрывом}",
+          "human": "@UUID[Compendium.mosh.macros_triggered_1e.bZi1qKmcKLFvnhZ2]{Огнём и взрывом}"
+        },
+        "fire_explosives_dis": {
+          "android": "@UUID[Compendium.mosh.macros_triggered_1e.7rYhbDAaFeok1Daq]{Огнём и взрывом [-]}",
+          "human": "@UUID[Compendium.mosh.macros_triggered_1e.7rYhbDAaFeok1Daq]{Огнём и взрывом [-]}"
+        },
+        "fire_explosives_adv": {
+          "android": "@UUID[Compendium.mosh.macros_triggered_1e.dJnQKDf0AlwK27QD]{Огнём и взрывом [+]}",
+          "human": "@UUID[Compendium.mosh.macros_triggered_1e.dJnQKDf0AlwK27QD]{Огнём и взрывом [+]}"
+        },
+        "gore_massive": {
+          "android": "@UUID[Compendium.mosh.macros_triggered_1e.S9nnHKWYGSQmjQdp]{Увечье}",
+          "human": "@UUID[Compendium.mosh.macros_triggered_1e.S9nnHKWYGSQmjQdp]{Увечье}"
+        },
+        "gore_massive_dis": {
+          "android": "@UUID[Compendium.mosh.macros_triggered_1e.eQPuDgwv8evetFIk]{Увечье [-]}",
+          "human": "@UUID[Compendium.mosh.macros_triggered_1e.eQPuDgwv8evetFIk]{Увечье [-]}"
+        },
+        "gore_massive_adv": {
+          "android": "@UUID[Compendium.mosh.macros_triggered_1e.DuVjNlE4lsnR7Emc]{Увечье [+]}",
+          "human": "@UUID[Compendium.mosh.macros_triggered_1e.DuVjNlE4lsnR7Emc]{Увечье [+]}"
+        },
+        "gunshot": {
+          "android": "@UUID[Compendium.mosh.macros_triggered_1e.XgCOLv9UunBddUyW]{Огнестрельная}",
+          "human": "@UUID[Compendium.mosh.macros_triggered_1e.XgCOLv9UunBddUyW]{Огнестрельная}"
+        },
+        "gunshot_dis": {
+          "android": "@UUID[Compendium.mosh.macros_triggered_1e.LTpa1ZYVZl4m9k6z]{Огнестрельная [-]}",
+          "human": "@UUID[Compendium.mosh.macros_triggered_1e.LTpa1ZYVZl4m9k6z]{Огнестрельная [-]}"
+        },
+        "gunshot_adv": {
+          "android": "@UUID[Compendium.mosh.macros_triggered_1e.fnVATRHYJEUlS3pR]{Огнестрельная [+]}",
+          "human": "@UUID[Compendium.mosh.macros_triggered_1e.fnVATRHYJEUlS3pR]{Огнестрельная [+]}"
+        }
+      }
+    },
+    "Calm": "Самообладание",
+    "classNewSkillOptionSkillTip": "Сначала Испытание.",
+    "CurrentShots": "Текущие выстрелы",
+    "HullPoints": "Очки корпуса",
+    "Instinct": "Инстинкт",
+    "Loyalty": "Лояльность",
+    "MaintenanceCheck": "Проверка на техобслуживание",
+    "Maximum": "Максимум",
+    "MaxShots": "Максимальные выстрелы",
+    "MaxO2": "Макс. O2",
+    "Megadamage": "Мегаурон",
+    "Minimum": "Минимум",
+    "MoraleCheck": "Проверка на мораль",
+    "MoraleCheckDescription": "После каждого корабельного раунда, в котором корабль противника получает мегаурон, его экипаж должен проходить Проверку на мораль. Чтобы сделать Проверку на мораль, брось 1d10. Если результат броска меньше текущего мегаурона, противник может предложить прекратить огонь и возобновить переговоры.",
+    "NA": "Н/Д",
+    "Normal": "Нормальный",
+    "OpenDeckplan": "Открыть План палуб",
+    "Other": "Другое",
+    "Repairs": "Ремонт",
+    "RollingForGeneric": "Бросок для {name}",
+    "RollingForMaintenanceIssue": "Бросок на событие техобслуживания...",
+    "SaveBonus": "БонусИспытания",
+    "ShipIdentifier": "Идентификатор корабля",
+    "ShipWeaponBonus": "Бонус Корабельного оружия",
+    "Shots": "Выстрелы",
+    "ShotsPerFiring": "Выстрелы в очереди",
+    "SkillBonus": "Бонус Навыка",
+    "SkillName": "Название Навыка",
+    "SkillRank": "Ранг Навыка",
+    "SkillRankTrained": "Знаток",
+    "SkillRankExpert": "Эксперт",
+    "SkillRankMaster": "Мастер",
+    "Skills": "Навыки",
+    "SkillsPrerequisite": "Необходимые Навыки",
+    "SkillsOptionalAnd": "Выбранные Навыки",
+    "SkillsOptionalOr": "Необязательные Навыки",
+    "SkillTraining": "Обучение Навыкам",
+    "SpecialAbilities": "Специальные способности",
+    "Speed": "Скорость",
+    "StatsAndSaves": "Характеристики и Испытания",
+    "Strength": "Сила",
+    "Stress": "Стресс",
+    "StressResponse": "Реакция на Стресс",
+    "Systems": "Системы",
+    "Thrusters": "Манёвренность",
+    "Total": "Всего",
+    "TraumaResponse": "Реакция на Травму",
+    "Transponder": "Транспондер",
+    "Treatment": "Уход",
+    "Upgrades": "Улучшения",
+    "UsesAmmo": "Использует боеприпасы",
+    "Value": "Значение",
+    "WarpCores": "Ядра Варпа",
+    "WeaponName": "Название Оружия",
+    "Weapons": "Оружие",
+    "Weight": "Вес",
+    "Wounds": "Раны",
+    "WoundEffect": "Эффект Раны",
+    "XP": "XP",
+    "YouRolled90OrHigher": "Ты выкинул 90 или больше, это всегда считается провалом.",
+    "HEARTATTACKSHORTCIRCUITANDROIDS": "СЕРДЕЧНЫЙ ПРИСТУП / КОРОТКОЕ ЗАМЫКАНИЕ (АНДРОИДЫ).",
+    "SHORTCIRCUIT": "КОРОТКОЕ ЗАМЫКАНИЕ.",
+    "Relieve1Stressqbq694JMbXeZrHj": " Снимите 1 Стресс.<br><br>@UUID[Compendium.macros_triggered_1e.qbq694JMbXeZrHjj]{-1 Стресс}",
+    "Gain1d10Calmk2TtLFOG9mGaWVx31d10Calm": " Получи 1d10 Самообладания.<br><br>@UUID[Compendium.macros_triggered_1e.k2TtLFOG9mGaWVx3]{+1d10 Самообладания}",
+    "RestSave": "Испытание Отдыха",
+    "SelectAStat": "Выбери Характеристику",
+    "ChooseTheStatForSkillCheck": "Выбери Характеристику, которая лучше всего подходит под эту проверку Навыка. Ты добавишь свой бонус навыка к Характеристике для этого броска",
+    "GivingYouAHigherNumber": "(увеличивает максимально необходимое значение для броска).",
+    "StrengthSkillExample": "Удерживать шлюз закрытым, носить раненых товарищей, взбираться, толкать, прыгать.",
+    "SpeedSkillExample": "Успеть выбраться из грузового отсека до того, как захлопнутся гермозатворы, действовать раньше кого-то (или чего-то) другого, убегать.",
+    "IntellectSkillExample": "Вспоминать свои знания и навыки под давлением, думать о решении сложных проблем, изобретать или чинить вещи.",
+    "CombatSkillExample": "Сражаться за свою жизнь.",
+    "SelectYourRollType": "Выбери тип броска",
+    "ChooseAStat": "Выбери Характеристику",
+    "SwarmWoundShort": "W*",
+    "IfYouHaveARelevantSkill": "Если у тебя есть Навык, подходящий для выполняемой задачи, ты можешь добавить бонус Навыка к Характеристике или Испытанию, прежде чем совершать бросок",
+    "HeavyCover": "Надёжное Укрытие",
+    "Cover": "Укрытие",
+    "NoCover": "Без Укрытия",
+    "LightCover": "Лёгкое Укрытие",
+    "InsignificantCover": "Незначительное Укрытие",
+    "SelectYourCurrentCoverSituation": "Выбери своё текущее Укрытие",
+    "TheEnvironmentCanProvideProtectionCalled": "Твоё окружение может предоставить тебе защиту, называемую",
+    "IfYouShotWhileInCover": "Если ты стреляешь, будучи в Укрытии, ты теряешь укрытие до своего следующего хода",
+    "ItCanBeDestroyedLikeArmor": "Как и броня, оно может быть уничтожено, если нанесённый Урон больше или равен его ПБ. Укрытие обычно защищает лишь от дальних атак, но в некоторых ситуациях может помочь заблокировать и ближнюю атаку тоже.",
+    "YourCoverValuesAreDisplayedIn": "Значения твоего Укрытия отображается в",
+    "UnprotectedOutInTheOpen": "Без защиты, на открытом пространстве, и т.д.",
+    "WoodFurnitureDoorsShields": "Деревянная мебель/двери, щиты, и т.д.",
+    "TreesBulkheadWallMetalFurniture": "Деревья, ненесущие перегородки, металлическая мебель, и т.д.",
+    "AirlockDoorsCementBeamsShips": "Двери шлюза, цементные балки, корабли, и т.д.",
+    "DistressSignalTableExplanation": "Иногда вашей команде придётся перевести корабль на аварийное питание, запечатать себя в криокамерах, отправить Сигнал Бедствия и просто ждать помощь. Это может занять долгое время, но иногда это единственный шанс, что у вас есть. Если такое произошло, совершите бросок по этой таблице.",
+    "MaintenanceCheckExplanation1": "В конце концов, корабль нуждается в ремонте, а иногда и в капитальном ремонте. Когда это происходит, вам нужно его починить.",
+    "MinorRepairs": "Мелкий Ремонт",
+    "MayorRepairs": "Крупный Ремонт",
+    "MinorRepairsExplanation": "незначительный урон обшивки, чистка и другой ручной труд, что может быть произведён прямо во время полёта, обычно занимает 2d10 дней",
+    "MayorRepairsExplanation": "структурные повреждения, урон системам корабля, включая последствия Мегаурона и урон Палубам, такое может быть отремонтировано только в порту.",
+    "BankrupcyCheckExplanation": "Небольшое количество кораблей принадлежит небольшим банковским фирмам, что делят право собственности с операторами, оплачивая все расходы на корабль, но забирая значительную часть прибыли. В обмен на это вы получаете корабль и относительную свободу действий в ведении своего бизнеса. Каждый год",
+    "OrQuarterAsDeterminedBWarden": "или квартал, в зависимости от вашего Смотрителя",
+    "MakeA": "совершите",
+    "BankrupcySaveExplanationEnd": "чтобы определить финансовое положение компании",
+    "WeaponReloaded": "Оружие перезаряжено",
+    "Reload": "Перезарядка",
+    "OutOfAmmo": "Нет боеприпасов",
+    "OutOfAmmoNeedReload": "Нет боеприпасов, нужна перезарядка",
+    "WeaponIssue": "Проблема с Оружием",
+    "YouAddThisToYourInventory": "Ты добавляешь это в свой инвентарь.",
+    "YouLearnThisSkill": "Ты изучаешь этот Навык",
+    "YouAddAnotherOfThisToYourInventory": "Ты добавляешь ещё один в свой инвентарь.",
+    "HealthZeroMessage": "Твоё здоровье опустилось до нуля, и ты должен получить Рану.",
+    "HealthZeroMessage2": "Твоё здоровье опустилось до нуля, и ты должен получить Рану. Твоё здоровье вернётся к ",
+    "YouSenseTheWeightOfYourSetbacks": "Ты чувствуешь тяжесть своих неудач.",
+    "Bankrupcy": "Банкротство",
+    "BankrupcySave": "Испытание на Банкротство",
+    "Feature": "Свойство",
+    "Features": "Свойства",
+    "Hits": "Очки здоровья",
+    "Resolve": "Решимость",
+    "Robotic": "Робот",
+    "Severity": "Тяжесть",
+    "SkillsFixed": "Обязательные Навыки",
+    "Orange": "оранжевый"
+  }
+}

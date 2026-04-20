@@ -45,9 +45,9 @@ async function main() {
 
   for await (const file of globs.modules.scan(".")) {
     modules.push({
-      lang: "ru",
       module: path.basename(file, ".json"),
       path: file.replace(/\\/g, "/").replace("public/", ""),
+      lang: "ru",
     });
   }
 
