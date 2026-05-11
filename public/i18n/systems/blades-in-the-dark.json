@@ -22,6 +22,7 @@
   "BITD.Heritage": "Происхождение",
   "BITD.Background": "Прошлое",
   "BITD.TitleDeleteItem": "Удалить элемент",
+  "BITD.ToggleStanding": "Переключить положение {name} (сейчас {standing})",
   "BITD.TitlePostItem": "Вставить элемент",
   "BITD.Vice": "Страсть",
   "BITD.Class": "Бланк",
@@ -315,14 +316,14 @@
 
   "BITD.RollGatherInformationSuccess": "<strong>Высокая эффективность</strong>: ты узнаёшь много деталей. Информация исчерпывающая, а при помощи дополнительных вопросов ты можешь узнать больше ожидаемого или выяснить что-то из смежных тем.",
   "BITD.RollGatherInformationPartialSuccess": "<strong>Средняя эффективность</strong>: ты узнаёшь полезную информацию. Можешь задавать уточняющие вопросы.",
-  "BITD.RollGatherInformationFailure": "<strong>Низкая эффективность</strong>: ты узнаёшь неполную информацию. Потребуется собирать сведения где-то ещё.",
+  "BITD.RollGatherInformationFailure": "<strong>Низкая эффективность</strong>:  ты узнаёшь неполную информацию. Потребуется собирать сведения где-то ещё.",
 
   "BITD.RollEngagementCritical": "<strong>Великолепный результат</strong>. Вы уже <strong>преодолели первое препятствие</strong> и находитесь в <strong>безопасной</strong> ситуации, столкнувшись со следующим.",
   "BITD.RollEngagementSuccess": "Хороший результат. Вы начинаете в <strong>безопасной</strong> ситуации.",
   "BITD.RollEngagementPartialSuccess": "Неоднозначный результат. Вы начинаете в <strong>рискованной</strong> ситуации.",
   "BITD.RollEngagementFailure": "Плохой результат. Вы начинаете в <strong>отчаянной</strong> ситуации.",
 
-  "BITD.RollAcquireAssetResult": "Вы приобрели ресурс <strong>{tier_quality}</strong> ранга качества.",
+  "BITD.RollAcquireAssetResult": "Вы приобрели ресурс <strong>{tier_quality} качества</strong>.",
   "BITD.RollAcquireAssetCritical": "Великолепный результат.",
   "BITD.RollAcquireAssetSuccess": "Хороший результат.",
   "BITD.RollAcquireAssetPartialSuccess": "Неоднозначный результат.",
@@ -334,8 +335,8 @@
   "BITD.DisabledByAE": "Мин. значение от активного эффекта",
   "BITD.NoMastery": "У авантюриста нет вершины мастерства",
   "BITD.UnusedDice": "Неиспользованые кубики",
-  "BITD.Edge": "Edge",
-  "BITD.GainEdge": "Gain an <strong>Edge</strong>.",
+  "BITD.Edge": "Достоинство",
+  "BITD.GainEdge": "Применить <strong>Достоинство</strong>.",
   "BITD.DiceRoller": "Бросок кубиков",
 
   "BITD.Colors": {
@@ -350,41 +351,41 @@
 
   "BITD.Settings": {
     "Action": {
-      "Name": "Action Rolls",
-      "Hint": "Enables the Action Roll from the Actor Dice Roller; only uncheck if you have enabled Threat Rolls."
+      "Name": "Проверки навыка",
+      "Hint": "Добавить проверки навыка в окно бросков. Можно отключить только, если вы включили проверки угрозы."
     },
     "Threat": {
-      "Name": "Threat Rolls",
-      "Hint": "Enables the Threat Roll from the Deep Cuts supplement."
+      "Name": "Проверки угрозы",
+      "Hint": "Добавить проверки угрозы из дополнения «Глубокие раны»."
     },
     "Push": {
       "Name": "Использовать Усилие",
-      "Hint": "Заменяет Испытание на Усилие из Deep Cuts."
+      "Hint": "Заменить Испытание на Усилие из дополнения «Глубокие раны»."
     },
     "Load": {
       "Name": "Альтернативная нагрузка",
-      "Hint": "Заменить правила нагрузки (лёгкая/средняя/тяжелая) правилами нагрузки из Deep Cuts (скрытная/заметная)."
+      "Hint": "Заменить правила нагрузки (лёгкая/средняя/тяжелая) правилами нагрузки из дополнения «Глубокие раны» (скрытная/заметная)."
     },
     "ClockXP": {
-      "Name": "Experience Clocks",
-      "Hint": "Replaces the base Experience Rules with Experience Clocks from the Deep Cuts supplement."
+      "Name": "Счётчик опыта",
+      "Hint": "Заменить стандартные правила опыта на счётчик опыта из дополнения «Глубокие раны»."
     },
     "Edge": {
-      "Name": "Edge",
-      "Hint": "Adds Edge to character sheets from the Deep Cuts supplement."
+      "Name": "Достоинство",
+      "Hint": "Добавить Достоинства из дополнения «Глубокие раны» в бланк персонажа."
     },
     "PublicClocks": {
-      "Name": "Default Observable Clocks",
-      "Hint": "All newly made Clock actors will have permissions set to Observer for all players."
+      "Name": "Наблюдаемые счётчики по умолчанию",
+      "Hint": "Все новые счётчики будут иметь права наблюдателя у всех игроков."
     }
   },
   "BITD.log": {
     "info": {
-      "SameNPC": "The dropped NPC is already an acquaintance of this character.",
-      "SameCrew": "The dropped Crew is the current crew of this character."
+      "SameNPC": "Этот персонаж ведущего уже является знакомым персонажа игрока.",
+      "SameCrew": "Эта команда уже является командой персонажа."
     },
     "warn": {
-      "NoNPC": "This NPC does not exist in the World or in a Compendium."
+      "NoNPC": "Этот персонаж ведущего не существует в мире или библиотеке."
     }
   }
 }
