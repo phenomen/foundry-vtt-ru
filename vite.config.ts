@@ -62,6 +62,7 @@ export default defineConfig({
       "eslint/max-statements": "off",
       "eslint/no-magic-numbers": "off",
       "eslint/sort-keys": "off",
+      "eslint/no-underscore-dangle": "off",
       "no-console": "off",
       "no-process-exit": "off",
       "oxc/no-async-await": "off",
