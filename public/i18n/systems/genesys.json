@@ -1,31 +1,35 @@
 {
-  "ACTOR": {
-    "TypeCharacter": "Персонаж",
-    "TypeMinion": "Приспешник",
-    "TypeRival": "Соперник",
-    "TypeNemesis": "Главарь",
-    "TypeVehicle": "Транспорт"
-  },
-  "ITEM": {
-    "TypeAbility": "Особенность",
-    "TypeArchetype": "Архетип",
-    "TypeCareer": "Карьера",
-    "TypeInjury": "Критическая травма/попадание",
-    "TypeSkill": "Навык",
-    "TypeTalent": "Талант",
-    "TypeArmor": "Броня",
-    "TypeConsumable": "Припас",
-    "TypeContainer": "Ёмкость",
-    "TypeGear": "Экипировка",
-    "TypeQuality": "Качество предмета",
-    "TypeWeapon": "Оружие",
-    "TypeVehicleweapon": "Оружие транспорта"
+  "TYPES": {
+    "Actor": {
+      "character": "Персонаж",
+      "minion": "Приспешник",
+      "rival": "Соперник",
+      "nemesis": "Главарь",
+      "vehicle": "Транспорт"
+    },
+    "Item": {
+      "ability": "Особенность",
+      "archetype": "Архетип",
+      "career": "Карьера",
+      "injury": "Критическая травма/попадание",
+      "skill": "Навык",
+      "talent": "Талант",
+      "armor": "Броня",
+      "consumable": "Припас",
+      "container": "Ёмкость",
+      "gear": "Экипировка",
+      "quality": "Качество предмета",
+      "weapon": "Оружие",
+      "vehicleWeapon": "Оружие транспорта"
+    }
   },
   "Genesys": {
     "System": { "Name": "Genesys" },
     "Settings": {
       "SkillsCompendium": "Библиотека навыков",
       "SkillsCompendiumHint": "Библиотека предметов, содержащая все навыки, будут у новых создаваемых персонажей. Изменение этого значения не повлияет на существующих персонажей.",
+      "DefaultDifficulty": "Сложность по умолчанию",
+      "DefaultDifficultyHint": "Это набор модификаций для набора костей, который будет использовать при совершении проверки по умолчанию. Этот набор будет игнорироваться, если сложность уже известна. Для объяснения всех возможных модификаций и знаков посмотрите в [[Dice-Pool-Modification-Glyphs|Dice Pool Modification Glyphs]].",
       "Money": "Название денег",
       "MoneyHint": "Название, используемое для денег в системе (например золото, кредиты, доллары, дублоны и т.д.)",
       "CareerSkillRanks": "Количество карьерных навыков",
@@ -40,15 +44,15 @@
       "SkillForRepairingVehicleHitsHint": "Название навыка, используемого для устранения эффекта критического попадания.",
       "UseMagicalGirlSymbols": "Использовать набор символов Magical Girl от MilkMyth (клиентская настройка)",
       "UseMagicalGirlSymbolsHint": "Заменяет набор символов Genesys на набор символов Magical Girls от MilkMyth. Выбор этой настройки не повлияет на других пользователей.",
-      "DicePoolChanceToSucceedByPermutation": "Calculate the Chance to Succeed for Dice Pools",
-      "DicePoolChanceToSucceedByPermutationHint": "If enabled this will spawn a Web Worker that calculates the exact chance to succeed. However, if the dice pool uses a super-characteristic the calculated value is lower than the true value because it assumes that the pool doesn't explode. For dice pools that use super-characteristics you can get a more accurate value by using simulations.",
-      "DicePoolChanceToSucceedBySimulation": "Approximate the Chance to Succeed for Dice Pools",
-      "DicePoolChanceToSucceedBySimulationHint": "The number of simulated rolls to run in order to approximate the chance to succeed. Be mindful when increasing this number since it will have a direct impact on Foundry's performance; a good number to start is 100. If a value of 0 is provided this feature is disabled. This setting is ignored if the chance is already being calculated some other way.",
+      "DicePoolChanceToSucceedByPermutation": "Рассчитывать шанс успеха для набора костей",
+      "DicePoolChanceToSucceedByPermutationHint": "Если включено, то будет вызывать Web Worker, рассчитывающий точный шанс успеха. Но, если набор костей использует суперхарактеристики, вычисленно значение будет ниже истинного, поскольку принимется что набор не будет иметь врывных успехов. Для набора костей с суперхарактеристиками вы получите более точное значение через использование симуляции.",
+      "DicePoolChanceToSucceedBySimulation": "Приблизительная вероятность успеха в наборе костей.",
+      "DicePoolChanceToSucceedBySimulationHint": "Количество разыгранных симуляций бросков для определения шанса на успех. Будьте внимательны при увеличении этого числа, поскольку это будет иметь прямое влияние на производительность Foundry. Хорошим число для начала будет 100. Если указанное число 0, то эта настройка будет отключена. Эта настройка игнорируется, если шанс успеха уже вычисляется иным методом.",
       "SuperCharacteristics": "Суперхарактеристики",
       "SuperCharacteristicsHint": "Позволяет отмечать характеристики как «супер» во время создания персонажа в соответствии с дополнительным правилом «Суперхарактеристики» (Основная книга правил, стр. 251)."
     },
     "Tooltips": {
-      "NoDescription": "No Description Available",
+      "NoDescription": "Нет описания",
       "IsInitiative": "Используется ли этот навык для проверки инициативы. Если этот пункт отмечен, то навык появится в списке используемых в боевом трекере для массовых проверок.",
       "CycleInitiativeSkill": "Выбрать навык, который использует боец для проверки инициативы.",
       "AddExtraInitiativeSlot": "Добавить дополнительный слот инициативы."
@@ -57,20 +61,20 @@
       "Dice": "Кость",
       "Results": "Результат",
       "Description": {
-        "Simple": "Проверка...",
-        "Initiative": "Проверка инициативы: <strong>{skill}</strong>...",
+        "Simple": "Проверка<i class=\"fas fa-star {superChar}\"></i>...",
+        "Initiative": "Проверка инициативы: <strong>{skill}<i class=\"fas fa-star {superChar}\"></i></strong>...",
         "Characteristic": "Проверка: <strong>{characteristic}</strong>...",
-        "Skill": "Проверка: <strong>{skill} ({characteristic})</strong>...",
+        "Skill": "Проверка:<strong>{skill} ({characteristic}<i class=\"fas fa-star {superChar}\"></i>)</strong>...",
         "SkillWithoutCharacteristic": "Проверка: <strong>{skill}</strong>...",
         "AttackCharacteristic": "Атака: <strong>{name}</strong> используется <strong>{characteristic}</strong>!",
-        "AttackSkill": "Атака: <strong>{name}</strong> используется <strong>{skill} ({characteristic})</strong>!",
+        "AttackSkill": "Атака: <strong>{name}</strong> используется <strong>{skill} ({characteristic}<i class=\"fas fa-star {superChar}\"></i>)</strong>!",
         "AttackSkillWithoutCharacteristic": "Атака: <strong>{name}</strong> используется <strong>{skill}</strong>!"
       },
       "Attack": {
         "Critical": "Крит",
         "Label": "Результат атаки",
         "Damage": "Урон",
-        "Qualities": "Attack Qualities"
+        "Qualities": "Свойства атаки"
       },
       "Summary": {
         "Label": "Итого",
@@ -107,7 +111,8 @@
       "Average": "Обычная",
       "Hard": "Сложная",
       "Daunting": "Пугающая",
-      "Impossible": "Запредельная"
+      "Formidable": "Запредельная",
+      "Impossible": "Невыполнимая"
     },
     "Inventory": {
       "Sections": {
@@ -124,11 +129,21 @@
       "Suppressed": "Неактивные эффекты",
       "Source": "Источник",
       "Duration": "Продолжительность",
+      "ChangeKey": "Цель эффекта",
+      "ChangeMode": "Опции",
+      "ChangeValue": "Значение эффекта",
       "Types": {
         "ModifyCharacteristic": "Изменение характеристики",
         "ModifyStat": "Изменение параметра",
         "ModifySkill": "Изменение навыка",
-        "ModifyDicePool": "Изменение набора костей"
+        "ModifyDicePool": {
+          "GroupLabel": "Изменение набора костей",
+          "Options": {
+            "Check": "Любая проверка",
+            "Characteristic": "Использовать характеристику",
+            "Skill": "Использовать навык"
+          }
+        }
       }
     },
     "DicePrompt": {
@@ -136,9 +151,36 @@
       "Roll": "Бросок!",
       "Hint": "Используйте набор костей справа, чтобы добавлять, усиливать и ослаблять кости. Чтобы удалить кости из набора, нажмите на них!",
       "UseSuperCharacteristic": "Проверка как суперхарактеристики",
+      "PoolModifications": {
+        "Title": "Набор модификаций",
+        "DefaultDifficulty": "Сложность по умолчанию",
+        "ManualChanges": "Ручные изменения",
+        "SelfEffects": "От себя: ",
+        "TargetEffects": "От цели: "
+      },
       "ChanceToSucceed": "Шанс успеха",
       "ChanceToSucceedByPermutationDisclaimer": "Отображаемая вероятность является точной, если в набор костей не входит суперхарактеристика.",
       "ChanceToSucceedBySimulationDisclaimer": "Отображаемая вероятность представляет собой приближение, использующее метод Монте-Карло."
+    },
+    "RewardsPrompt": {
+      "Title": "Награда",
+      "Amount": "Количество",
+      "Reason": "Причина"
+    },
+    "CharacterSkillPrompt": {
+      "Title": "Выберите пользователя"
+    },
+    "CloneActorPrompt": {
+      "Title": "Подтверждение перетаскивания",
+      "OriginalMethod": {
+        "Label": "Ссылка",
+        "Description": "Ссылка к актёру будет сохранена."
+      },
+      "CloneMethod": {
+        "Label": "Клонировать",
+        "Description": "Клон перетащенного актёра будет создан, а ссылка на него будет сохранена. Так же клонированный актёр появится в папке 'Актёры' как новое вхождение под именем, указаным ниже.",
+        "ActorNameLabel": "Новое имя"
+      }
     },
     "XPJournal": {
       "Award": "<strong>Опыт выдан ведущим</strong>: {reason}",
@@ -149,6 +191,7 @@
       "TalentRank": "Повышен талант <strong>{name}</strong> до ранга {rank} (Текущий ранг {tier})."
     },
     "Notifications": {
+      "GenericError": "Невозможно выполнить указаное действие.",
       "AlreadyHaveSpecialAbility": "Невозможно добавить {abilityName}; Эта способность уже имеется, и у неё нет ранга!",
       "TalentNotRanked": "Невозможно добавить {talentName}; Этот талант уже имеется и он не имеет ранга!",
       "NoSkillsCompendium": "Настройка библиотеки навыков пуста! Будет использована библиотека навыков по умолчанию.",
@@ -173,14 +216,34 @@
       "EffectsWereNotUpdatedAfterTransfer": "Произошла ошибка обновления эффектов с использованием последних значений для переданного '{name}'.",
       "NoRoleMembersWithAppropriateSkills": "Нет участников, обладающих соответствующими навыками для выполнения этого действия."
     },
+    "Dialogs": {
+      "ConfirmDeleteItem": {
+        "Title": "Подвердите удаление",
+        "Content": "Это удалить предмет. Продолжить?"
+      }
+    },
+    "Migration": {
+      "MustPerformMigration": "ТРЕБУЕТСЯ МИГРАЦИЯ!: Некоторые данные должны быть мигрированны и ошибка при выполнении может привести к порче данных или сломанному функционалу. Пожалуйста, выйдите из мира и подождите, пока ведущий выполнит миграцию.",
+      "StartingMigration": "МИГРАЦИЯ НАЧАЛАСЬ: Выполняется {amount} миграций; пожалуйста, подождите и не закрывайте приложение.",
+      "StartingScriptMigration": "МИГРАЦИЯ НАЧАЛАСЬ [{id}]: Проведение миграции.",
+      "StoppedScriptMigration": "МИГРАЦИЯ ОСТАНОВЛЕНА [{id}]: Произошла ошибка при миграции.",
+      "CompletedScriptMigration": "МИГРАЦИЯ ЗАВЕРШИЛАСЬ [{id}]: Миграция выполнена.",
+      "MultipleSuccessfulMigration": "МИГРАЦИЯ ВЕРСИИ ЗАВЕРШЕНА: Как минимум одна миграция была успешно завершена.",
+      "StoppedMigration": "МИГРАЦИЯ ОСТАНОВЛЕНА: Миграция остановилась из-за ошибок; проверьте консольные логи на описание ошибок. Так же {amount} миграций не были выполнены.",
+      "CompletedMigration": "МИГРАЦИЯ ЗАВЕРШЕНА: Все миграции выполнены; спасибо за ваше ожидание."
+    },
     "StoryPoints": {
       "Player": "Очки сюжета игроков",
       "GM": "Очки сюжета ведущего",
       "Reset": "Сбросить очки сюжета",
       "Spend": "Потратить ОС",
-      "ChatMessage": "Потрачено Очко сюжета!"
+      "ChatMessageGmPool": "Потрачено Очко сюжета ведущего!",
+      "ChatMessagePlayerPool": "Потрачено Очко сюжета игроков!"
     },
-    "Enrichers": { "Difficulty": "{difficulty} [{symbols}] проверка {skill} " },
+    "Enrichers": {
+      "Difficulty": "{difficulty} [{symbols}] проверка {skill} ",
+      "Opposed": "Противопоставленная проверка {skill1} против {skill2}"
+    },
     "CombatTracker": {
       "RevokeInitiativeClaim": "Отозвать заявку на инициативу"
     },
@@ -263,7 +326,10 @@
         "Equipment": "Снаряжение",
         "Other": "Другое"
       },
-      "Actor": { "Adversary": "Противник", "Other": "Другое" }
+      "Actor": {
+        "Adversary": "Противник",
+        "Other": "Другое"
+      }
     },
     "Equipment": {
       "DamageState": {
@@ -271,6 +337,15 @@
         "Minor": "Слабое повреждение",
         "Moderate": "Среднее повреждение",
         "Major": "Сильное повреждение"
+      },
+      "Dropdown": {
+        "Equip": "Экипировать",
+        "Unequip": "Снять",
+        "Drop": "Выкинуть",
+        "PickUp": "Взять",
+        "ToChat": "В чат",
+        "Edit": "Редактировать",
+        "Delete": "Удалить"
       }
     },
     "Labels": {
@@ -331,6 +406,7 @@
       "Activation": "Активация",
       "Rank": "Ранг",
       "Ranked": "Ранговый",
+      "EffectsScaleWithRank": "Эффекты масштабируются с рангом",
       "Active": "Активный",
       "Passive": "Пассивный",
       "Yes": "Да",
@@ -354,9 +430,6 @@
       "RankDown": "Понизить",
       "FreeRankUp": "Повысить (свободно)",
       "FreeRankDown": "Понизить (свободно)",
-      "AwardXP": "Выдать опыт",
-      "Amount": "Количество",
-      "Reason": "Причина",
       "IsRated": "Есть рейтинг?",
       "Qualities": "Улучшения",
       "Severity": "Тяжесть",
@@ -391,11 +464,18 @@
       "EncumbranceCapacity": "Вместимость нагрузки",
       "Information": "Информация",
       "Passengers": "Пассажиры",
+      "Role": "Роль",
       "Roles": "Экипаж",
       "OverCapacity": "Перегрузка!",
       "RoleSkills": "Навык должности",
       "FiringArc": "Сектор обстрела",
-      "Select": "Выбрать"
+      "Select": "Выбрать",
+      "PerformCheck": "Выполнить проверку",
+      "GroupBy": "Сгруппировать",
+      "Attack": "Атака",
+      "Item": "Предмет",
+      "Items": "Предметы",
+      "CloseContainer": "Закрыть контейнер"
     }
   }
 }
