@@ -4,8 +4,6 @@ export async function init() {
   registerSettings();
 
   if (game.babele) {
-    registerConverters();
-
     if (game.settings.get("ru-ru", "altTranslation")) {
       setupBabele("dnd5e/ds");
     } else {
@@ -73,50 +71,6 @@ function registerHooks() {
     });
 
     updateAAButton.insertAfter(lastMenuSetting);
-  });
-}
-
-/* Регистрация конвертеров Babele */
-function registerConverters() {
-  game.babele.registerConverters({
-    dndpages(pages, translations) {
-      return pages.map((data) => {
-        if (!translations) {
-          return data;
-        }
-
-        let translation;
-
-        if (Array.isArray(translations)) {
-          translation = translations.find((t) => t.id === data._id || t.id === data.name);
-        } else {
-          translation = translations[data.name];
-        }
-
-        if (!translation) {
-          return data;
-        }
-
-        return foundry.utils.mergeObject(data, {
-          image: {
-            caption: translation.caption ?? data.image.caption,
-          },
-          name: translation.name,
-          src: translation.src ?? data.src,
-          system: {
-            tooltip: translation.tooltip ?? data.system.tooltip,
-          },
-          text: {
-            content: translation.text ?? data.text.content,
-          },
-          translated: true,
-          video: {
-            height: translation.height ?? data.video.height,
-            width: translation.width ?? data.video.width,
-          },
-        });
-      });
-    },
   });
 }
 
