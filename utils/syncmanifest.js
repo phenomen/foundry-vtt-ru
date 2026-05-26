@@ -1,10 +1,11 @@
-import { Glob } from "bun";
+import { glob } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-const globs = {
-  modules: new Glob("public/i18n/modules/*.json"),
-  systems: new Glob("public/i18n/systems/*.json"),
-  styles: new Glob("public/styles/*.css"),
+const patterns = {
+  modules: "public/i18n/modules/*.json",
+  systems: "public/i18n/systems/*.json",
+  styles: "public/styles/*.css",
 };
 
 const languages = [
@@ -28,42 +29,47 @@ const languages = [
   },
 ];
 
+function toPublicPath(file) {
+  return file.replace(/\\/g, "/").replace("public/", "");
+}
+
 async function main() {
-  const manifest = Bun.file("./public/module.json");
+  const manifestPath = "./public/module.json";
+  const manifestData = JSON.parse(await readFile(manifestPath, "utf8"));
 
   const systems = [];
   const modules = [];
   const styles = [];
 
-  for await (const file of globs.systems.scan(".")) {
+  for await (const file of glob(patterns.systems)) {
     systems.push({
       lang: "ru",
-      path: file.replace(/\\/g, "/").replace("public/", ""),
+      path: toPublicPath(file),
       system: path.basename(file, ".json"),
     });
   }
 
-  for await (const file of globs.modules.scan(".")) {
+  for await (const file of glob(patterns.modules)) {
     modules.push({
       module: path.basename(file, ".json"),
-      path: file.replace(/\\/g, "/").replace("public/", ""),
+      path: toPublicPath(file),
       lang: "ru",
     });
   }
 
-  for await (const file of globs.styles.scan(".")) {
-    if (path.basename(file, ".css") !== "_fonts" && path.basename(file, ".css") !== "_main") {
-      styles.push(path.basename(file, ".css"));
+  for await (const file of glob(patterns.styles)) {
+    const name = path.basename(file, ".css");
+    if (name !== "_fonts" && name !== "_main") {
+      styles.push(name);
     }
   }
 
   languages.push(...systems, ...modules);
 
-  const manifestData = await manifest.json();
   manifestData.languages = languages;
   manifestData.flags.styles = styles;
 
-  await Bun.write("./public/module.json", JSON.stringify(manifestData, null, "\t"));
+  await writeFile(manifestPath, JSON.stringify(manifestData, null, "\t"), "utf8");
 }
 
 main();

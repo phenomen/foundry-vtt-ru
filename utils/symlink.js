@@ -5,9 +5,9 @@ Required Environment Variables:
 - PACKAGE_TYPE: type of the package to symlink (module/system)
 - FOUNDRY_DATA_DIR: path to the Foundry data directory
 */
-import { access, lstat, rm, symlink } from "node:fs/promises";
-import { join, resolve } from "node:path";
+import { access, lstat, readFile, rm, symlink } from "node:fs/promises";
 import { constants } from "node:fs";
+import { join, resolve } from "node:path";
 
 async function main() {
   const foundryDataDir = process.env.FOUNDRY_DATA_DIR;
@@ -28,7 +28,7 @@ async function main() {
   let manifest;
 
   try {
-    manifest = await Bun.file(manifestPath).json();
+    manifest = JSON.parse(await readFile(manifestPath, "utf8"));
   } catch (error) {
     console.error(`Error: Failed to read manifest at ${manifestPath}`);
     console.error(error);

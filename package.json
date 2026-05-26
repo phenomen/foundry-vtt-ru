@@ -8,9 +8,9 @@
     "format": "vp fmt",
     "lint": "vp lint",
     "prepare": "vp config",
-    "util:manifest": "bun utils/syncmanifest.js",
-    "util:symlink": "bun utils/symlink.js",
-    "util:babeleformat": "bun utils/babeleformat.js"
+    "util:manifest": "node utils/syncmanifest.js",
+    "util:symlink": "node utils/symlink.js",
+    "util:babeleformat": "node utils/babeleformat.js"
   },
   "devDependencies": {
     "vite-plus": "^0.1.22"
