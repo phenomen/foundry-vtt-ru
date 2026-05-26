@@ -49,11 +49,7 @@ function convertBabeleFormat(data) {
     result.entries = arrayToMap(result.entries);
 
     for (const entry of Object.values(result.entries)) {
-      if (typeof entry !== "object" || entry === null) {
-        continue;
-      }
-
-      if (Array.isArray(entry.pages)) {
+      if (typeof entry === "object" && entry !== null && Array.isArray(entry.pages)) {
         entry.pages = arrayToMap(entry.pages);
       }
     }
@@ -63,7 +59,7 @@ function convertBabeleFormat(data) {
 }
 
 async function main() {
-  const inputPath = process.argv[2];
+  const [, , inputPath] = process.argv;
 
   if (!inputPath) {
     console.error("Usage: pnpm util:babeleformat <path-to-json>");
