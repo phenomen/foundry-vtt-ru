@@ -3,11 +3,10 @@ import { setupBabele } from "../shared.js";
 
 export function init() {
   setupBabele("slugblaster");
-  registerConverters();
 }
 
-function registerConverters() {
-  game.babele.registerConverters({
+export function registerBabeleConverters(babele) {
+  babele.registerConverters({
     fromPackCustom: Converters.fromPack({
       description: "system.description",
       name: "name",

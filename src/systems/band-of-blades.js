@@ -17,15 +17,10 @@ const CLASSES = {
 
 export function init() {
   setupBabele("band-of-blades");
-  registerConverters();
 }
 
-function registerConverters() {
-  if (!game.babele) {
-    return;
-  }
-
-  game.babele.registerConverters({
+export function registerBabeleConverters(babele) {
+  babele.registerConverters({
     classConverter: (cls) => {
       if (!cls) {
         return;

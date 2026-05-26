@@ -1,0 +1,47 @@
+{
+  "Actor": {
+    "description": "system.description",
+    "items": {
+      "path": "items",
+      "converter": "fromPack"
+    }
+  },
+  "Item": {
+    "description": "system.description",
+    "experience_clues": "system.experience_clues",
+    "def_abilities": {
+      "path": "system.def_abilities",
+      "converter": "translateItemList"
+    },
+    "class": {
+      "path": "system.class",
+      "converter": "translateItemName"
+    },
+    "system": {
+      "path": "system.system",
+      "converter": "translateItemName"
+    },
+    "allies": {
+      "path": "system.allies",
+      "converter": "translateItemList"
+    },
+    "enemies": {
+      "path": "system.enemies",
+      "converter": "translateItemList"
+    },
+    "type": "system.type",
+    "tier": "system.tier",
+    "goal": "system.goal",
+    "turf": "system.turf",
+    "assets": "system.assets",
+    "quirks": "system.quirks",
+    "notables": "system.notables",
+    "situation": "system.situation",
+    "scene": "system.scene",
+    "rule": "system.rule",
+    "effects": {
+      "path": "effects",
+      "converter": "translateEffects"
+    }
+  }
+}
