@@ -1,6 +1,7 @@
 /**
 Converts the legacy Babele format (arrays) into the new format (objects)
 */
+import { access, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 /**
@@ -62,22 +63,23 @@ function convertBabeleFormat(data) {
 }
 
 async function main() {
-  const inputPath = Bun.argv[2];
+  const inputPath = process.argv[2];
 
   if (!inputPath) {
-    console.error("Usage: bun util:babeleformat <path-to-json>");
+    console.error("Usage: pnpm util:babeleformat <path-to-json>");
     process.exit(1);
   }
 
   const resolvedPath = path.resolve(inputPath);
-  const inputFile = Bun.file(resolvedPath);
 
-  if (!(await inputFile.exists())) {
+  try {
+    await access(resolvedPath);
+  } catch {
     console.error(`Error: file not found: ${resolvedPath}`);
     process.exit(1);
   }
 
-  const data = await inputFile.json();
+  const data = JSON.parse(await readFile(resolvedPath, "utf8"));
   const converted = convertBabeleFormat(data);
 
   const dir = path.dirname(resolvedPath);
@@ -85,7 +87,7 @@ async function main() {
   const ext = path.extname(resolvedPath);
   const outputPath = path.join(dir, `${base}.new${ext}`);
 
-  await Bun.write(outputPath, JSON.stringify(converted, null, "\t"));
+  await writeFile(outputPath, JSON.stringify(converted, null, "\t"), "utf8");
 
   console.log(`Output: ${outputPath}`);
 }
