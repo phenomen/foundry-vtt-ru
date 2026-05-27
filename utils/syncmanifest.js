@@ -1,5 +1,4 @@
-import { glob } from "node:fs/promises";
-import { readFile, writeFile } from "node:fs/promises";
+import { glob, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const patterns = {

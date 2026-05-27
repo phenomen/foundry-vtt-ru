@@ -6,8 +6,8 @@ Required Environment Variables:
 - FOUNDRY_DATA_DIR: path to the Foundry data directory
 */
 import { access, lstat, readFile, rm, symlink } from "node:fs/promises";
-import { constants } from "node:fs";
 import { join, resolve } from "node:path";
+import { constants } from "node:fs";
 
 async function main() {
   const foundryDataDir = process.env.FOUNDRY_DATA_DIR;

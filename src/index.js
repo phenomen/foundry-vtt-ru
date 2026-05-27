@@ -2,6 +2,19 @@ import { init as dnd5eAlt } from "./systems/alt/dnd5e.js";
 
 const scripts = import.meta.glob("./systems/*.js");
 
+Hooks.once("babele.init", async (babele) => {
+  const system = game.system.id.toLowerCase();
+  const path = `./systems/${system}.js`;
+  const load = scripts[path];
+
+  if (!load) {
+    return;
+  }
+
+  const mod = await load();
+  await mod.registerBabeleConverters?.(babele);
+});
+
 Hooks.once("init", async () => {
   const system = game.system.id.toLowerCase();
   const route = foundry.utils.getRoute("/");

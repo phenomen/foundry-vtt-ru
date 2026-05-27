@@ -1,6 +1,5 @@
 import { setupBabele, translateValue } from "../shared.js";
-
-/* Data */
+import { resolveTranslatedItemName } from "../babele-helpers.js";
 
 const EXCEPTIONS = {
   "Arcane Background (Any)": "Мистический дар (любой)",
@@ -85,8 +84,6 @@ export function init() {
     setupBabele("swade/basic");
   }
 
-  registerConverters();
-
   Hooks.on("ready", () => {
     if (game.modules.get("swade-core-rules")?.active) {
       ui.notifications.info(
@@ -102,92 +99,98 @@ export function init() {
   });
 }
 
-function registerConverters() {
-  if (!game.babele) {
-    return;
-  }
-
-  game.babele.registerConverters({
-    convertCategory: (value) => {
-      if (!value) {
-        return;
-      }
-      return translateValue(value, CATEGORIES);
+export function registerBabeleConverters(babele) {
+  babele.registerConverters({
+    convertCategory: {
+      translate(context) {
+        const { value } = context;
+        if (!value) {
+          return value;
+        }
+        return translateValue(value, CATEGORIES);
+      },
     },
 
-    convertDuration: (value) => {
-      if (!value) {
-        return;
-      }
-      return translateValue(value, DURATIONS);
+    convertDuration: {
+      translate(context) {
+        const { value } = context;
+        if (!value) {
+          return value;
+        }
+        return translateValue(value, DURATIONS);
+      },
     },
 
-    convertRange: (value) => {
-      if (!value) {
-        return;
-      }
-      return translateValue(value, RANGES);
+    convertRange: {
+      translate(context) {
+        const { value } = context;
+        if (!value) {
+          return value;
+        }
+        return translateValue(value, RANGES);
+      },
     },
 
-    convertRank: (value) => {
-      if (!value) {
-        return;
-      }
-      return translateValue(value, RANKS);
+    convertRank: {
+      translate(context) {
+        const { value } = context;
+        if (!value) {
+          return value;
+        }
+        return translateValue(value, RANKS);
+      },
     },
 
-    convertRequirements: (requirements) => {
-      if (!requirements) {
-        return;
-      }
+    convertRequirements: {
+      translate(context) {
+        const { value: requirements, runtime } = context;
+        if (!requirements) {
+          return requirements;
+        }
 
-      let packEdges = "swade.edges";
-      let packHindrances = "swade.hindrances";
-      let packSkills = "swade.skills";
+        const packIds = getRequirementPackIds();
 
-      if (game.modules.get("swade-core-rules")?.active) {
-        packEdges = "swade-core-rules.swade-edges";
-        packHindrances = "swade-core-rules.swade-hindrances";
-        packSkills = "swade-core-rules.swade-skills";
-      }
+        return requirements.map((data) => {
+          if (!data.label) {
+            return data;
+          }
 
-      if (game.modules.get("swpf-core-rules")?.active) {
-        packEdges = "swpf-core-rules.swpf-edges";
-        packHindrances = "swpf-core-rules.swpf-hindrances";
-        packSkills = "swpf-core-rules.swpf-skills";
-      }
+          const translatedLabel =
+            EXCEPTIONS[data.label] ?? resolveTranslatedItemName(data.label, { runtime, packIds });
 
-      const { packs } = game.babele;
-      const translatedEdges = packs.find((pack) => pack.metadata.id === packEdges).translations;
-      const translatedHindrances = packs.find(
-        (pack) => pack.metadata.id === packHindrances,
-      ).translations;
-      const translatedSkills = packs.find((pack) => pack.metadata.id === packSkills).translations;
+          if (translatedLabel !== data.label) {
+            data.label = translatedLabel;
+          }
 
-      return requirements.map((data) => {
-        if (!data.label) {
           return data;
-        }
-
-        const translatedLabel =
-          EXCEPTIONS[data.label] ||
-          translatedEdges[data.label]?.name ||
-          translatedHindrances[data.label]?.name ||
-          translatedSkills[data.label]?.name;
-
-        if (translatedLabel) {
-          data.label = translatedLabel;
-        }
-
-        return data;
-      });
+        });
+      },
     },
   });
 }
 
+function getRequirementPackIds() {
+  if (game.modules.get("swade-core-rules")?.active) {
+    return [
+      "swade-core-rules.swade-edges",
+      "swade-core-rules.swade-hindrances",
+      "swade-core-rules.swade-skills",
+    ];
+  }
+
+  if (game.modules.get("swpf-core-rules")?.active) {
+    return [
+      "swpf-core-rules.swpf-edges",
+      "swpf-core-rules.swpf-hindrances",
+      "swpf-core-rules.swpf-skills",
+    ];
+  }
+
+  return ["swade.edges", "swade.hindrances", "swade.skills"];
+}
+
 function setupRules() {
   if (game.settings.get("ru-ru", "setupRules")) {
-    // SWADE Core
     game.settings.set(
       "swade",
       "coreSkills",
@@ -200,18 +203,15 @@ function setupRules() {
       "Верховая езда, Вождение, Пилотирование, Судовождение",
     );
 
-    // SWADE Core
     if (game.modules.get("swade-core-rules")?.active) {
       game.settings.set("swade", "coreSkillsCompendium", "swade-core-rules.swade-skills");
     }
 
-    // Savage Pathfinder
     if (game.modules.get("swpf-core-rules")?.active) {
       game.settings.set("swade", "coreSkillsCompendium", "swpf-core-rules.swpf-skills");
       game.settings.set("swade", "currencyName", "зм");
     }
 
-    // Deadlands
     if (game.modules.get("deadlands-core-rules")?.active) {
       game.settings.set("swade", "currencyName", "$");
     }

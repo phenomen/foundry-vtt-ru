@@ -21,7 +21,6 @@ const CLASSES = {
 
 export function init() {
   setupBabele("blades-in-the-dark");
-  registerConverters();
 
   Hooks.on("ready", () => {
     if (game.system.version.startsWith("4")) {
@@ -32,12 +31,8 @@ export function init() {
   });
 }
 
-function registerConverters() {
-  if (!game.babele) {
-    return;
-  }
-
-  game.babele.registerConverters({
+export function registerBabeleConverters(babele) {
+  babele.registerConverters({
     convertClass: (cls) => {
       if (!cls) {
         return;

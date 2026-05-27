@@ -5,35 +5,29 @@ const translationCache = new Map();
 
 export async function init() {
   setupBabele("coriolis-tgd");
+}
 
-  if (!game.babele) {
-    return;
-  }
-
-  // Pre-load translation files before registering converters
+export async function registerBabeleConverters(babele) {
   await loadTranslationFiles([
     "coriolis-tgd-core.custom.automations",
     "coriolis-tgd-core.custom.features",
   ]);
 
-  registerConverters();
+  babele.registerConverters({
+    convertAutomations: applyTranslation("coriolis-tgd-core.custom.automations"),
+    convertFeatures: applyTranslation("coriolis-tgd-core.custom.features"),
+  });
 }
 
 /**
- * Loads multiple translation files and caches them.
- *
- * @param {string[]} fileNames - Array of file names (without .json extension)
+ * @param {string[]} fileNames
  */
 async function loadTranslationFiles(fileNames) {
   await Promise.all(fileNames.map(loadTranslationFile));
 }
 
 /**
- * Loads a translation file from the module's compendium directory.
- * Results are cached to avoid repeated fetches.
- *
- * @param {string} fileName - The file name (without .json extension)
- * @returns {Promise<object>} - The entries object from the translation file
+ * @param {string} fileName
  */
 async function loadTranslationFile(fileName) {
   if (translationCache.has(fileName)) {
@@ -53,30 +47,8 @@ async function loadTranslationFile(fileName) {
   }
 }
 
-function registerConverters() {
-  game.babele.registerConverters({
-    convertAutomations: applyTranslation("coriolis-tgd-core.custom.automations"),
-    convertFeatures: applyTranslation("coriolis-tgd-core.custom.features"),
-  });
-}
-
 /**
- * Creates a converter for nested objects that translates name/description fields.
- *
- * Babele passes 5 parameters to converters:
- * - originalValue: the value at the mapped path
- * - fieldTranslations: per-item translations for this field (from the entry)
- * - data: full original item data
- * - tc: TranslatedCompendium instance
- * - translations: full translations object for the item
- *
- * Translations are looked up by the `name` field of each entry. The converter
- * supports two sources (in priority order):
- * 1. Per-item translations from the compendium entry (fieldTranslations)
- * 2. Global translations from the pre-loaded translation file (fallback)
- *
- * @param {string} fileName - The translation file name (without .json extension)
- * @returns {function} - A converter function for Babele
+ * @param {string} fileName
  */
 function applyTranslation(fileName) {
   return (originalValue, fieldTranslations) => {
