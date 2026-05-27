@@ -1,5 +1,14 @@
 /**
- * @param {object|null|undefined} runtime
+ * Shared helpers for Babele custom converters.
+ *
+ * Used when a compendium field stores references to other items by name instead of embedded documents. Lookups go through Babele's runtime API.
+ */
+
+/**
+ * Normalizes the `runtime` object Babele passes into converters.
+ *
+ * @param {object|null|undefined} runtime - Value from the converter context's `runtime` field.
+ * @returns {object|null} Babele compendium runtime, or `null`.
  */
 export function getCompendiumRuntime(runtime) {
   if (!runtime) {
@@ -22,8 +31,11 @@ export function getCompendiumRuntime(runtime) {
 }
 
 /**
- * @param {string} trimmed
- * @param {unknown} fieldTranslation
+ * Resolves a name from the per-entry translation fragment for the current field.
+ *
+ * @param {string} trimmed - Source name, already trimmed.
+ * @param {unknown} fieldTranslation - `translation` slice for this field from the active entry.
+ * @returns {string|null} Translated name, or `null` if this field provides no override.
  */
 function translatedNameFromField(trimmed, fieldTranslation) {
   if (
@@ -47,9 +59,12 @@ function translatedNameFromField(trimmed, fieldTranslation) {
 }
 
 /**
- * @param {string} trimmed
- * @param {object} scope
- * @param {string[]} packIds
+ * Resolves a name by looking up Babele translations in compendium packs.
+ *
+ * @param {string} trimmed - Source item name, already trimmed.
+ * @param {object} scope - Compendium runtime from {@link getCompendiumRuntime}.
+ * @param {string[]} packIds - Foundry compendium collection ids to search first.
+ * @returns {string|null} Translated `name` from the matched entry, or `null`.
  */
 function translatedNameFromPacks(trimmed, scope, packIds) {
   const data = { name: trimmed };
@@ -73,11 +88,14 @@ function translatedNameFromPacks(trimmed, scope, packIds) {
 }
 
 /**
- * @param {string} name
+ * Translates a single compendium item name referenced by string.
+ *
+ * @param {string} name - Original English name as stored on the source document.
  * @param {object} [options]
- * @param {unknown} [options.fieldTranslation]
- * @param {object} [options.runtime]
- * @param {string[]} [options.packIds]
+ * @param {unknown} [options.fieldTranslation] - Optional per-entry field overrides from Babele.
+ * @param {object} [options.runtime] - Babele runtime from the converter context.
+ * @param {string[]} [options.packIds] - Compendiums to search before the generic Item fallback.
+ * @returns {string} Translated name, or the original name if no translation exists.
  */
 export function resolveTranslatedItemName(name, options = {}) {
   const { fieldTranslation, runtime, packIds = [] } = options;
@@ -100,12 +118,15 @@ export function resolveTranslatedItemName(name, options = {}) {
 }
 
 /**
- * @param {string} list
+ * Translates a comma-separated list of compendium item names.
+ *
+ * @param {string} list - Comma-separated source names.
  * @param {object} [options]
- * @param {unknown} [options.fieldTranslation]
- * @param {object} [options.runtime]
- * @param {boolean} [options.sort]
- * @param {string[]} [options.packIds]
+ * @param {unknown} [options.fieldTranslation] - Optional per-entry field overrides from Babele.
+ * @param {object} [options.runtime] - Babele runtime from the converter context.
+ * @param {boolean} [options.sort] - If true, sort translated segments alphabetically.
+ * @param {string[]} [options.packIds] - Compendiums to search before the generic Item fallback.
+ * @returns {string} Comma-separated translated names.
  */
 export function translateItemListValue(list, options = {}) {
   const { fieldTranslation, runtime, sort = false, packIds = [] } = options;
@@ -125,7 +146,10 @@ export function translateItemListValue(list, options = {}) {
   return segments.join(", ");
 }
 
-/** @type {{ translate: (context: object) => string }} */
+/**
+ * Babele converter object for `mappings.json` fields that use `translateItemList`.
+ *
+ */
 export const translateItemListConverter = {
   translate(context) {
     const { value: list, translation: fieldTranslation, runtime } = context;
