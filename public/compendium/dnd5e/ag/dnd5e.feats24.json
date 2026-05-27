@@ -1,0 +1,122 @@
+{
+  "label": "Черты (Modern)",
+  "folders": {
+    "Origin Feats": "Черты происхождений",
+    "Epic Boon Feats": "Черты эпических даров",
+    "Fighting Style Feats": "Черты боевых стилей",
+    "General Feats": "Универсальные черты"
+  },
+  "entries": {
+    "Boon of Combat Prowess": {
+      "name": "Boon of Combat Prowess",
+      "description": "<p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 30.</p><p><strong>Peerless Aim.</strong> When you miss with an attack roll, you can hit instead. Once you use this benefit, you can't use it again until the start of your next turn.</p>"
+    },
+    "Boon of Dimensional Travel": {
+      "name": "Boon of Dimensional Travel",
+      "description": "<p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 30.</p><p><strong>Blink Steps.</strong> Immediately after you take the Attack action or the Magic action, you can teleport up to 30 feet to an unoccupied space you can see.</p>"
+    },
+    "Boon of Fate": {
+      "name": "Boon of Fate",
+      "description": "<p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 30.</p><p><strong>Improve Fate.</strong> When you or another creature within 60 feet of you succeeds on or fails a D20 Test, you can roll 2d4 and apply the total rolled as a bonus or penalty to the d20 roll. Once you use this benefit, you can't use it again until you roll Initiative or finish a Short or Long Rest.</p>"
+    },
+    "Boon of Irresistible Offense": {
+      "name": "Boon of Irresistible Offense",
+      "description": "<p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Strength or Dexterity score by 1, to a maximum of 30.</p><p><strong>Overcome Defenses.</strong> The Bludgeoning, Piercing, and Slashing damage you deal always ignores Resistance.</p><p><strong>Overwhelming Strike.</strong> When you roll a 20 on the d20 for an attack roll, you can deal extra damage to the target equal to the ability score increased by this feat. The extra damage's type is the same as the attack's type.</p><section id=\"secret-B9D2nT6vBjWr9JMV\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feat's effects are not automated. The additional damage can be added in the Situational Bonus field of the damage's dialog roll box.</p></section>"
+    },
+    "Boon of Spell Recall": {
+      "name": "Boon of Spell Recall",
+      "description": "<p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 30.</p><p><strong>Free Casting.</strong> Whenever you cast a spell with a level 1–4 spell slot, roll [[/r 1d4]]. If the number you roll is the same as the slot's level, the slot isn't expended.</p><section class=\"secret\" id=\"secret-KMAFFZCOzi6Cuemh\"><p><strong>Foundry Note</strong></p><p>If the number is the same, uncheck the Consumption option when using the spell.</p></section>"
+    },
+    "Boon of Truesight": {
+      "name": "Boon of Truesight",
+      "description": "<p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 30.</p><p><strong>Truesight.</strong> You have Truesight with a range of 60 feet.</p><section id=\"secret-MmPASAH8hA8METnP\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which grants you Truesight with a range of 60 feet.</p></section>",
+      "effects": {
+        "Boon of Truesight": {
+          "name": "Boon of Truesight",
+          "changes": {
+            "system.attributes.senses.truesight": 60
+          }
+        }
+      }
+    },
+    "Boon of the Night Spirit": {
+      "name": "Boon of the Night Spirit",
+      "description": "<p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 30.</p><p><strong>Merge with Shadows.</strong> While within Dim Light or Darkness, you can give yourself the &amp;Reference[Invisible] condition as a Bonus Action. The condition ends on you immediately after you take an action, a Bonus Action, or a Reaction.</p><p><strong>Shadowy Form.</strong> While within Dim Light or Darkness, you have Resistance to all damage except Psychic and Radiant.</p><section id=\"secret-fpWHPSTNYUeGtg0w\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature's <strong>Boon of the Night Spirit</strong> Active Effect includes the Resistances but must be toggled on/off in the Effects tab of your sheet.</p><p>The <strong>Merge with Shadows</strong> activity includes an Active Effect that applies the Invisible condition.</p></section>",
+      "effects": {
+        "Boon of the Night Spirit": {
+          "name": "Boon of the Night Spirit",
+          "changes": {
+            "system.traits.dr.value": "thunder"
+          }
+        },
+        "Merged with Shadows": {
+          "name": "Merged with Shadows"
+        }
+      }
+    },
+    "Archery": {
+      "name": "Archery",
+      "description": "<p><em>(Prerequisite: Fighting Style Feature)</em></p><p>You gain a +2 bonus to attack rolls you make with Ranged weapons.</p><section id=\"secret-n13Z6zR2u0CiIA7D\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which adds the bonus to Ranged weapon attack rolls.</p></section>",
+      "effects": {
+        "Archery Style": {
+          "name": "Archery Style",
+          "changes": {
+            "system.bonuses.rwak.attack": 2
+          }
+        }
+      }
+    },
+    "Defense": {
+      "name": "Defense",
+      "description": "<p><em>(Prerequisite: Fighting Style Feature)</em></p><p>While you're wearing Light, Medium, or Heavy armor, you gain a +1 bonus to Armor Class.</p><section id=\"secret-y8skH0HHunT4I5NR\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which provides the Armor Class bonus. Disable it when you are not wearing armor.</p></section>",
+      "effects": {
+        "Defense": {
+          "name": "Defense",
+          "changes": {
+            "system.attributes.ac.bonus": 1
+          }
+        }
+      }
+    },
+    "Great Weapon Fighting": {
+      "name": "Great Weapon Fighting",
+      "description": "<p><em>(Prerequisite: Fighting Style Feature)</em></p><p>When you roll damage for an attack you make with a Melee weapon that you are holding with two hands, you can treat any 1 or 2 on a damage die as a 3. The weapon must have the Two-Handed or Versatile property to gain this benefit.</p><section id=\"secret-jkbP75uR9eNGIRN0\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This effect is not automated.</p></section>"
+    },
+    "Two-Weapon Fighting": {
+      "name": "Two-Weapon Fighting",
+      "description": "<p><em>(Prerequisite: Fighting Style Feature)</em></p><p>When you make an extra attack as a result of using a weapon that has the Light property, you can add your ability modifier to the damage of that attack if you aren't already adding it to the damage.</p><section class=\"secret\" id=\"secret-hYptyfGCa0gLDQRT\"><p><strong>Foundry Note</strong></p><p>This feature is not automated. You can add your modifier in the Situational Bonus field of the damage roll.</p></section>"
+    },
+    "Ability Score Improvement": {
+      "name": "Ability Score Improvement",
+      "description": "<p><em>General Feat (Prerequisite: Level 4+)</em></p><p>Increase one ability score of your choice by 2, or increase two ability scores of your choice by 1. This feat can't increase an ability score above 20.</p><p><strong>Repeatable.</strong> You can take this feat more than once.</p>"
+    },
+    "Alert": {
+      "name": "Alert",
+      "description": "<p>You gain the following benefits.</p><p><strong>Initiative Proficiency.</strong> When you roll Initiative, you can add your Proficiency Bonus to the roll.</p><p><strong>Initiative Swap.</strong> Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the &amp;Reference[Incapacitated] condition.</p><section id=\"secret-yzfXk3D5M1jv9ixH\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature automatically includes the bonus to your Initiative.</p></section>",
+      "effects": {
+        "Alert": {
+          "name": "Alert",
+          "changes": {
+            "flags.dnd5e.initiativeAlert": true
+          }
+        }
+      }
+    },
+    "Grappler": {
+      "name": "Grappler",
+      "description": "<p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p><p><strong>Punch and Grab.</strong> When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Grapple option. You can use this benefit only once per turn.</p><p><strong>Attack Advantage.</strong> You have Advantage on attack rolls against a creature &amp;Reference[Grappled] by you.</p><p><strong>Fast Wrestler.</strong> You don't have to spend extra movement to move a creature by you if the creature is your size or smaller.</p><section class=\"secret\" id=\"secret-LAjjGo55LPacAy8v\"><p><strong>Foundry Note</strong></p><p>The Advantage is not automated.</p></section>"
+    },
+    "Magic Initiate": {
+      "name": "Magic Initiate",
+      "description": "<p>You gain the following benefits.</p><p><strong>Two Cantrips.</strong> You learn two cantrips of your choice from the @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj]{Cleric}, @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU]{Druid}, or @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]{Wizard} spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).</p><p><strong>Level 1 Spell.</strong> Choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</p><p><strong>Spell Change.</strong> Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.</p><p><strong>Repeatable.</strong> You can take this feat more than once, but you must choose a different spell list each time.</p>"
+    },
+    "Savage Attacker": {
+      "name": "Savage Attacker",
+      "description": "<p>You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.</p>"
+    },
+    "Skilled": {
+      "name": "Skilled",
+      "description": "<p>You gain proficiency in any combination of three skills or tools of your choice.</p><p><strong>Repeatable.</strong> You can take this feat more than once.</p>"
+    }
+  }
+}
