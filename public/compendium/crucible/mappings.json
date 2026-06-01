@@ -1,0 +1,39 @@
+{
+  "Item": {
+    "description": {
+      "path": "system.description",
+      "converter": "convertDescription"
+    },
+    "requirements": "system.requirements",
+    "actions": {
+      "path": "system.actions",
+      "converter": "structured",
+      "cardinality": "many",
+      "keys": [
+        "name"
+      ],
+      "mapping": {
+        "name": "name",
+        "description": "description",
+        "condition": "condition"
+      }
+    }
+  },
+  "Actor": {
+    "tokenName": "prototypeToken.name",
+    "ancestryName": "system.details.ancestry.name",
+    "ancestryDescription": "system.details.ancestry.description",
+    "archetypeName": "system.details.archetype.name",
+    "archetypeDescription": "system.details.archetype.description",
+    "backgroundName": "system.details.background.name",
+    "backgroundDescription": "system.details.background.description",
+    "taxonomyName": "system.details.taxonomy.name",
+    "taxonomyDescription": "system.details.taxonomy.description",
+    "biographyPublic": "system.details.biography.public",
+    "biographyPrivate": "system.details.biography.private",
+    "items": {
+      "path": "items",
+      "converter": "fromPack"
+    }
+  }
+}
