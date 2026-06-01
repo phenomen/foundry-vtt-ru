@@ -1,17 +1,14 @@
 {
   "Item": {
-    "description": {
-      "path": "system.description",
-      "converter": "convertDescription"
-    },
+    "description": "system.description",
+    "descriptionPublic": "system.description.public",
+    "descriptionPrivate": "system.description.private",
     "requirements": "system.requirements",
     "actions": {
       "path": "system.actions",
       "converter": "structured",
       "cardinality": "many",
-      "keys": [
-        "name"
-      ],
+      "keys": ["name"],
       "mapping": {
         "name": "name",
         "description": "description",
@@ -21,19 +18,34 @@
   },
   "Actor": {
     "tokenName": "prototypeToken.name",
-    "ancestryName": "system.details.ancestry.name",
-    "ancestryDescription": "system.details.ancestry.description",
-    "archetypeName": "system.details.archetype.name",
-    "archetypeDescription": "system.details.archetype.description",
-    "backgroundName": "system.details.background.name",
-    "backgroundDescription": "system.details.background.description",
-    "taxonomyName": "system.details.taxonomy.name",
-    "taxonomyDescription": "system.details.taxonomy.description",
+    "ancestry": {
+      "path": "system.details.ancestry",
+      "converter": "crucibleEmbeddedDetail",
+      "packId": "crucible.ancestry"
+    },
+    "background": {
+      "path": "system.details.background",
+      "converter": "crucibleEmbeddedDetail",
+      "packId": "crucible.background"
+    },
+    "archetype": {
+      "path": "system.details.archetype",
+      "converter": "crucibleEmbeddedDetail",
+      "packId": "crucible.archetype"
+    },
+    "taxonomy": {
+      "path": "system.details.taxonomy",
+      "converter": "crucibleEmbeddedDetail",
+      "packId": "crucible.taxonomy"
+    },
     "biographyPublic": "system.details.biography.public",
     "biographyPrivate": "system.details.biography.private",
     "items": {
       "path": "items",
-      "converter": "fromPack"
+      "converter": "document",
+      "documentType": "Item",
+      "cardinality": "many",
+      "fallbackPolicy": "owner-package-first"
     }
   }
 }
