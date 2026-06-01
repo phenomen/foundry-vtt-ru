@@ -1,4 +1,4 @@
-import { setupBabele, translateValue } from "../shared.js";
+import { setupBabele, translateValue } from "../babele-helpers.js";
 
 const CLASSES = {
   Bartan: "Бартан",

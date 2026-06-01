@@ -10,7 +10,8 @@
     "prepare": "vp config",
     "util:manifest": "node utils/syncmanifest.js",
     "util:symlink": "node utils/symlink.js",
-    "util:babeleformat": "node utils/babeleformat.js"
+    "util:babeleformat": "node utils/babeleformat.js",
+    "util:strip-crucible-actor-details": "node utils/strip-crucible-actor-details.mjs"
   },
   "devDependencies": {
     "vite-plus": "^0.1.22"

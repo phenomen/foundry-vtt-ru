@@ -1,5 +1,5 @@
 import { resolveTranslatedItemName, translateItemListConverter } from "../babele-helpers.js";
-import { setupBabele } from "../shared.js";
+import { setupBabele } from "../babele-helpers.js";
 
 export function init() {
   setupBabele("scum-and-villainy");

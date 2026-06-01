@@ -1,4 +1,4 @@
-import { setupBabele } from "../shared.js";
+import { setupBabele } from "../babele-helpers.js";
 
 /** Cache for loaded translation files */
 const translationCache = new Map();

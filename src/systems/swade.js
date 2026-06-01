@@ -1,5 +1,4 @@
-import { setupBabele, translateValue } from "../shared.js";
-import { resolveTranslatedItemName } from "../babele-helpers.js";
+import { resolveTranslatedItemName, setupBabele, translateValue } from "../babele-helpers.js";
 
 const EXCEPTIONS = {
   "Arcane Background (Any)": "Мистический дар (любой)",

@@ -1,4 +1,4 @@
-import { setupBabele } from "../shared.js";
+import { setupBabele } from "../babele-helpers.js";
 
 export async function init() {
   registerSettings();

@@ -5,6 +5,35 @@
  */
 
 /**
+ * Setup Babele for a specific compendium.
+ * @param {string} id - The ID of the compendium to setup.
+ */
+
+export function setupBabele(id) {
+  if (!game.settings.get("ru-ru", "compendiumTranslation")) {
+    return;
+  }
+
+  const { title } = game.system;
+
+  if (game.babele) {
+    game.babele.register({
+      dir: `compendium/${id}`,
+      lang: "ru",
+      module: "ru-ru",
+    });
+
+    game.settings.set("babele", "showOriginalName", true);
+  } else {
+    foundry.applications.api.DialogV2.prompt({
+      window: { title: "Перевод библиотек" },
+      content: `<p>Для перевода библиотек <b>${title}</b> требуется активировать модули <b>Babele и libWrapper</b></p>`,
+      ok: { label: "Хорошо" },
+    });
+  }
+}
+
+/**
  * Normalizes the `runtime` object Babele passes into converters.
  *
  * @param {object|null|undefined} runtime - Value from the converter context's `runtime` field.
@@ -59,6 +88,28 @@ function translatedNameFromField(trimmed, fieldTranslation) {
 }
 
 /**
+ * @param {string} entryName - Compendium index name used for Babele matching.
+ * @param {object} scope - Compendium runtime from {@link getCompendiumRuntime}.
+ * @param {string} packId - Foundry compendium collection id.
+ * @returns {object|null} Translation entry (`name`, `description`, …) or `null`.
+ */
+function translatedItemEntryFromPack(entryName, scope, packId) {
+  const trimmed = entryName?.trim();
+  if (!trimmed || !scope || !packId) {
+    return null;
+  }
+
+  const data = { name: trimmed };
+  const pack = scope.mappedCompendiumFor?.(packId);
+
+  if (pack?.hasTranslation?.(data, "Item", scope)) {
+    return pack.translationsFor(data, "Item") ?? null;
+  }
+
+  return null;
+}
+
+/**
  * Resolves a name by looking up Babele translations in compendium packs.
  *
  * @param {string} trimmed - Source item name, already trimmed.
@@ -67,18 +118,14 @@ function translatedNameFromField(trimmed, fieldTranslation) {
  * @returns {string|null} Translated `name` from the matched entry, or `null`.
  */
 function translatedNameFromPacks(trimmed, scope, packIds) {
-  const data = { name: trimmed };
-
   for (const packId of packIds) {
-    const pack = scope.mappedCompendiumFor?.(packId);
-    if (pack?.hasTranslation?.(data, "Item", scope)) {
-      const entry = pack.translationsFor(data, "Item");
-      if (entry?.name) {
-        return entry.name;
-      }
+    const entry = translatedItemEntryFromPack(trimmed, scope, packId);
+    if (entry?.name) {
+      return entry.name;
     }
   }
 
+  const data = { name: trimmed };
   const pack = scope.translatedPackFor("Item", data);
   if (!pack) {
     return null;
@@ -156,3 +203,31 @@ export const translateItemListConverter = {
     return translateItemListValue(list, { fieldTranslation, runtime });
   },
 };
+
+export function translateValue(value, translations) {
+  return translations[value.trim()] || value;
+}
+
+export function translateList(value, translations) {
+  return value
+    .split(", ")
+    .map((item) => translateValue(item, translations))
+    .join(", ");
+}
+
+export function parseParentheses(str) {
+  const regex = /^(\S+(?:\s+\S+)*)\s+\(([^)]+)\)$/;
+  const match = str.match(regex);
+
+  if (match) {
+    return {
+      main: match[1],
+      sub: match[2],
+    };
+  }
+
+  return {
+    main: str.trim(),
+    sub: null,
+  };
+}

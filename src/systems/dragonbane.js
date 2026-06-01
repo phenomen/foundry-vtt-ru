@@ -1,4 +1,4 @@
-import { setupBabele } from "../shared.js";
+import { setupBabele } from "../babele-helpers.js";
 import { translateItemListValue } from "../babele-helpers.js";
 
 export function init() {
