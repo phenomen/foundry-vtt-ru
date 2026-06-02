@@ -1,7 +1,7 @@
-import { setupBabele } from "../babele-helpers.js";
+import { registerCompendiumTranslations } from "../babele-helpers.js";
 
-export const init = () => {
+export function registerBabeleTranslations(babele) {
   if (game.modules.get("masks-newgeneration-unofficial")?.active) {
-    setupBabele("pbta/masks");
+    registerCompendiumTranslations(babele, "pbta/masks");
   }
-};
+}

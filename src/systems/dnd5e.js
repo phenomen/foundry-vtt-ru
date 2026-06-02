@@ -1,29 +1,30 @@
-import { setupBabele } from "../babele-helpers.js";
+import { getSettings, registerCompendiumTranslations } from "../babele-helpers.js";
 
 export async function init() {
   registerSettings();
-
-  if (game.babele) {
-    if (game.settings.get("ru-ru", "altTranslation")) {
-      setupBabele("dnd5e/ds");
-    } else {
-      setupBabele("dnd5e/ag");
-    }
-
-    if (game.settings.get("ru-ru", "translateCPR")) {
-      if (game.modules.get("chris-premades")) {
-        setupBabele("dnd5e/chris");
-      }
-      if (game.modules.get("gambits-premades")) {
-        setupBabele("dnd5e/gambit");
-      }
-    }
-  }
-
   registerHooks();
 }
 
-/* Регистрация настроек */
+export function registerBabeleTranslations(babele) {
+  const dirs = [];
+  if (getSettings("altTranslation")) {
+    dirs.push("dnd5e/ds");
+  } else {
+    dirs.push("dnd5e/ag");
+  }
+
+  if (getSettings("translateCPR", true)) {
+    if (game.modules.get("chris-premades")?.active) {
+      dirs.push("dnd5e/chris");
+    }
+    if (game.modules.get("gambits-premades")?.active) {
+      dirs.push("dnd5e/gambit");
+    }
+  }
+
+  registerCompendiumTranslations(babele, dirs);
+}
+
 function registerSettings() {
   game.settings.register("ru-ru", "translateCPR", {
     config: true,
@@ -39,9 +40,7 @@ function registerSettings() {
   });
 }
 
-/* Регистрация дополнительных хуков */
 function registerHooks() {
-  /*  Настройка автоопределения анимаций AA  */
   Hooks.on("renderSettingsConfig", (_app, html, _data) => {
     if (!game.user.isGM) {
       return;
@@ -74,7 +73,6 @@ function registerHooks() {
   });
 }
 
-/* Обновление базы AA */
 async function updateAA() {
   if (!game.modules.get("autoanimations")?.active) {
     ui.notifications.error("Модуль Automated Animations не активен");

@@ -415,14 +415,7 @@
       "effects": {
         "Hypnotic Pattern": {
           "name": "Hypnotic Pattern",
-          "description": "<p>The creature is Charmed for the duration. While charmed by this spell, the creature is Incapacitated and has a speed of 0.</p>",
-          "changes": {
-            "system.attributes.movement.burrow": 0,
-            "system.attributes.movement.climb": 0,
-            "system.attributes.movement.fly": 0,
-            "system.attributes.movement.swim": 0,
-            "system.attributes.movement.walk": 0
-          }
+          "description": "<p>The creature is Charmed for the duration. While charmed by this spell, the creature is Incapacitated and has a speed of 0.</p>"
         }
       },
       "materials": "курящаяся палочка благовоний или хрустальный пузырек со светящимся веществам",
@@ -554,11 +547,7 @@
       "effects": {
         "Divine Favor": {
           "name": "Divine Favor",
-          "description": "<p>Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit.</p>",
-          "changes": {
-            "system.bonuses.rwak.damage": "1d4[radiant]",
-            "system.bonuses.mwak.damage": "1d4[radiant]"
-          }
+          "description": "<p>Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit.</p>"
         }
       },
       "source": {
@@ -612,14 +601,7 @@
       "effects": {
         "Bless": {
           "name": "Bless",
-          "description": "<p>Whenever you make an attack roll or a saving throw before the spell ends, you can roll 1d4 and add the number rolled to the attack roll or saving throw.</p>",
-          "changes": {
-            "system.bonuses.abilities.save": "1d4",
-            "system.bonuses.mwak.attack": "1d4",
-            "system.bonuses.msak.attack": "1d4",
-            "system.bonuses.rsak.attack": "1d4",
-            "system.bonuses.rwak.attack": "1d4"
-          }
+          "description": "<p>Whenever you make an attack roll or a saving throw before the spell ends, you can roll 1d4 and add the number rolled to the attack roll or saving throw.</p>"
         }
       },
       "materials": "брызги святой воды",
@@ -669,14 +651,7 @@
       "effects": {
         "Bane": {
           "name": "Bane",
-          "description": "<p>Whenever you make an attack roll or a saving throw before the spell ends, you must roll a d4 and subtract the number rolled from the attack roll or saving throw.</p>",
-          "changes": {
-            "system.bonuses.abilities.save": "-1d4",
-            "system.bonuses.mwak.attack": "-1d4",
-            "system.bonuses.msak.attack": "-1d4",
-            "system.bonuses.rsak.attack": "-1d4",
-            "system.bonuses.rwak.attack": "-1d4"
-          }
+          "description": "<p>Whenever you make an attack roll or a saving throw before the spell ends, you must roll a d4 and subtract the number rolled from the attack roll or saving throw.</p>"
         }
       },
       "materials": "капля крови",
@@ -799,10 +774,7 @@
       "effects": {
         "Longstrider": {
           "name": "Longstrider",
-          "description": "<p>Your speed increases by 10 feet until the spell ends.</p>",
-          "changes": {
-            "system.attributes.movement.bonus": 10
-          }
+          "description": "<p>Your speed increases by 10 feet until the spell ends.</p>"
         }
       },
       "materials": "щепотка земли",
@@ -925,10 +897,7 @@
       "effects": {
         "Mage Armor": {
           "name": "Mage Armor",
-          "description": "<p>A protective magical force surrounds it until the spell ends.</p><p>Your base AC becomes 13 + your Dexterity modifier. The spell ends if you don armor or if the caster dismisses the spell as an action.</p>",
-          "changes": {
-            "system.attributes.ac.calc": "mage"
-          }
+          "description": "<p>A protective magical force surrounds it until the spell ends.</p><p>Your base AC becomes 13 + your Dexterity modifier. The spell ends if you don armor or if the caster dismisses the spell as an action.</p>"
         }
       },
       "materials": "клочок выделанной кожи",
@@ -1207,10 +1176,7 @@
       "effects": {
         "Familiar": {
           "name": "Familiar",
-          "description": "<p>This creature is a @UUID[Compendium.dnd5e.spells.Item.JGT5bNqu9REL7Fuz]{Familiar}. A familiar can't attack, but it can take other actions as normal.</p>",
-          "changes": {
-            "name": "{} Familiar"
-          }
+          "description": "<p>This creature is a @UUID[Compendium.dnd5e.spells.Item.JGT5bNqu9REL7Fuz]{Familiar}. A familiar can't attack, but it can take other actions as normal.</p>"
         }
       },
       "materials": "сжигаемые в латунной жаровне благовония, травы и уголь суммарной стоимостью 10 зм, исчезают при сотворении",
@@ -1234,10 +1200,7 @@
       "description": "<p>Прикоснитесь к согласному существу. Пока длится заклинание, его кожа будет выглядеть грубой, как кора, а КБ цели не сможет стать ниже 16 вне зависимости от надетой брони.</p>",
       "effects": {
         "Barkskin": {
-          "name": "Barkskin",
-          "changes": {
-            "system.attributes.ac.min": 16
-          }
+          "name": "Barkskin"
         }
       },
       "materials": "горсть дубовой коры",
@@ -1295,10 +1258,7 @@
       "description": "<p>Пока длится заклинание, одно согласное существо, которого вы коснулись, получает способность карабкаться вверх, вниз и вдоль вертикальных поверхностей и даже ходить вверх ногами по потолку, при этом его руки остаются свободны. Цель также получает скорость лазания, равную ее скорости ходьбы.</p>",
       "effects": {
         "Spider Climb": {
-          "name": "Spider Climb",
-          "changes": {
-            "system.attributes.movement.climb": "@attributes.movement.walk"
-          }
+          "name": "Spider Climb"
         }
       },
       "materials": "капля битума и паук",
@@ -1436,10 +1396,7 @@
       "effects": {
         "Protection from Poison": {
           "name": "Protection from Poison",
-          "description": "<p>The target has advantage on saving throws against being poisoned, and it has resistance to poison damage.</p>",
-          "changes": {
-            "system.traits.dr.value": "poison"
-          }
+          "description": "<p>The target has advantage on saving throws against being poisoned, and it has resistance to poison damage.</p>"
         }
       },
       "source": {
@@ -1687,11 +1644,7 @@
       "effects": {
         "Stoneskin": {
           "name": "Stoneskin",
-          "description": "<p>The target has resistance to nonmagical bludgeoning, piercing, and slashing damage.</p>",
-          "changes": {
-            "system.traits.dr.value": "slashing",
-            "system.traits.dr.bypasses": "mgc"
-          }
+          "description": "<p>The target has resistance to nonmagical bludgeoning, piercing, and slashing damage.</p>"
         }
       },
       "materials": "алмазная пыль стоимостью 100 зм, исчезает при сотворении",
@@ -1766,30 +1719,15 @@
       "effects": {
         "Magic Weapon, +1": {
           "name": "Magic Weapon, +1",
-          "description": "<p>This weapon becomes a magic weapon with a +1 bonus to Attack rolls and Damage Rolls.</p>",
-          "changes": {
-            "name": "{}, +1",
-            "system.properties": "mgc",
-            "system.magicalBonus": 1
-          }
+          "description": "<p>This weapon becomes a magic weapon with a +1 bonus to Attack rolls and Damage Rolls.</p>"
         },
         "Magic Weapon, +2": {
           "name": "Magic Weapon, +2",
-          "description": "<p>This weapon becomes a magic weapon with a +2 bonus to Attack rolls and Damage Rolls.</p>",
-          "changes": {
-            "name": "{}, +2",
-            "system.properties": "mgc",
-            "system.magicalBonus": 2
-          }
+          "description": "<p>This weapon becomes a magic weapon with a +2 bonus to Attack rolls and Damage Rolls.</p>"
         },
         "Magic Weapon, +3": {
           "name": "Magic Weapon, +3",
-          "description": "<p>This weapon becomes a magic weapon with a +3 bonus to Attack rolls and Damage Rolls.</p>",
-          "changes": {
-            "name": "{}, +3",
-            "system.properties": "mgc",
-            "system.magicalBonus": 3
-          }
+          "description": "<p>This weapon becomes a magic weapon with a +3 bonus to Attack rolls and Damage Rolls.</p>"
         }
       },
       "source": {
@@ -1824,15 +1762,7 @@
       "effects": {
         "Haste": {
           "name": "Haste",
-          "description": "<p>Until the spell ends, the target's speed is doubled, it gains a +2 bonus to AC, it has advantage on Dexterity Saving Throws, and it gains an additional action on each of its turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.</p>",
-          "changes": {
-            "system.attributes.ac.bonus": 2,
-            "system.attributes.movement.burrow": 2,
-            "system.attributes.movement.climb": 2,
-            "system.attributes.movement.fly": 2,
-            "system.attributes.movement.swim": 2,
-            "system.attributes.movement.walk": 2
-          }
+          "description": "<p>Until the spell ends, the target's speed is doubled, it gains a +2 bonus to AC, it has advantage on Dexterity Saving Throws, and it gains an additional action on each of its turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.</p>"
         }
       },
       "materials": "стружка корня лакрицы",
@@ -1965,13 +1895,7 @@
       "effects": {
         "Shillelagh": {
           "name": "Shillelagh",
-          "description": "<p>For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using this weapon, and the weapon's damage die becomes a d8. The weapon also becomes magical, if it isn't already. The spell ends if you cast it again or if you let go of the weapon.</p>",
-          "changes": {
-            "name": ", Shillelagh",
-            "system.damage.base.number": 1,
-            "system.damage.base.denomination": 8,
-            "system.properties": "mgc"
-          }
+          "description": "<p>For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using this weapon, and the weapon's damage die becomes a d8. The weapon also becomes magical, if it isn't already. The spell ends if you cast it again or if you let go of the weapon.</p>"
         }
       },
       "materials": "омела, лист клевера-трилистника и дубинка или боевой посох",
@@ -2239,11 +2163,7 @@
       "effects": {
         "Hopeful": {
           "name": "Hopeful",
-          "description": "<p>The target has Advantage on Wisdom saving throws and Death Saving Throws and regains the maximum number of Hit Points possible from any healing.</p>",
-          "changes": {
-            "system.abilities.wis.save.roll.mode": 1,
-            "system.attributes.death.roll.mode": 1
-          }
+          "description": "<p>The target has Advantage on Wisdom saving throws and Death Saving Throws and regains the maximum number of Hit Points possible from any healing.</p>"
         }
       },
       "source": {
@@ -2354,17 +2274,11 @@
       "effects": {
         "Warm Shield": {
           "name": "Warm Shield",
-          "description": "<p>The warm shield grants you Resistance to cold damage.</p>",
-          "changes": {
-            "system.traits.dr.value": "cold"
-          }
+          "description": "<p>The warm shield grants you Resistance to cold damage.</p>"
         },
         "Chill Shield": {
           "name": "Chill Shield",
-          "description": "<p>The chill shield grants you resistance to fire damage.</p>",
-          "changes": {
-            "system.traits.dr.value": "fire"
-          }
+          "description": "<p>The chill shield grants you resistance to fire damage.</p>"
         }
       },
       "materials": "фосфор или светлячок",
@@ -2473,10 +2387,7 @@
       "effects": {
         "Chilled": {
           "name": "Chilled",
-          "description": "<p>Your speed is reduced by 10 feet until the start of the caster's next turn.</p>",
-          "changes": {
-            "system.attributes.movement.bonus": -10
-          }
+          "description": "<p>Your speed is reduced by 10 feet until the start of the caster's next turn.</p>"
         }
       },
       "source": {
@@ -2548,11 +2459,7 @@
       "effects": {
         "Freedom of Movement": {
           "name": "Freedom of Movement",
-          "description": "<p>The target's Movement is unaffected by difficult terrain, and Spells and other magical Effects can neither reduce the target's speed nor cause the target to be Paralyzed or Restrained.</p>",
-          "changes": {
-            "system.traits.di.value": "restrained",
-            "system.attributes.movement.ignoredDifficultTerrain": "all"
-          }
+          "description": "<p>The target's Movement is unaffected by difficult terrain, and Spells and other magical Effects can neither reduce the target's speed nor cause the target to be Paralyzed or Restrained.</p>"
         }
       },
       "materials": "кожаный ремешок, обвязанный вокруг руки или схожей конечности",
@@ -2791,10 +2698,7 @@
       "effects": {
         "Heroism": {
           "name": "Heroism",
-          "description": "<p>You have been imbued with bravery. Until the spell ends, you are immune to being &amp;reference[Frightened apply=false] and gain Temporary Hit Points equal to the caster's Spellcasting ability modifier at the start of each of your turns. When the spell ends, you lose any remaining temporary hit points from this spell.</p>",
-          "changes": {
-            "system.traits.ci.value": "frightened"
-          }
+          "description": "<p>You have been imbued with bravery. Until the spell ends, you are immune to being &amp;reference[Frightened apply=false] and gain Temporary Hit Points equal to the caster's Spellcasting ability modifier at the start of each of your turns. When the spell ends, you lose any remaining temporary hit points from this spell.</p>"
         }
       },
       "source": {
@@ -2876,10 +2780,7 @@
       "effects": {
         "Darkvision": {
           "name": "Darkvision",
-          "description": "<p>The target has darkvision out to a range of 60 feet.</p>",
-          "changes": {
-            "system.attributes.senses.darkvision": 60
-          }
+          "description": "<p>The target has darkvision out to a range of 60 feet.</p>"
         }
       },
       "materials": "щепотка сушёной моркови или агат",
@@ -2895,11 +2796,7 @@
       "effects": {
         "Feeblemind": {
           "name": "Feeblemind",
-          "description": "<p>The creature's Intelligence and Charisma scores become 1. The creature can't cast Spells, activate Magic Items, understand language, or communicate in any intelligible way. The creature can, however, identify its friends, follow them, and even protect them.</p>",
-          "changes": {
-            "system.abilities.int.value": 1,
-            "system.abilities.cha.value": 1
-          }
+          "description": "<p>The creature's Intelligence and Charisma scores become 1. The creature can't cast Spells, activate Magic Items, understand language, or communicate in any intelligible way. The creature can, however, identify its friends, follow them, and even protect them.</p>"
         }
       },
       "materials": "горсть глиняных, хрустальных, стеклянных или минеральных шариков",
@@ -2954,10 +2851,7 @@
       "effects": {
         "Shield of Faith": {
           "name": "Shield of Faith",
-          "description": "<p>A shimmering field appears and surrounds you, granting you a +2 bonus to AC for the duration of this spell.</p>",
-          "changes": {
-            "system.attributes.ac.bonus": 2
-          }
+          "description": "<p>A shimmering field appears and surrounds you, granting you a +2 bonus to AC for the duration of this spell.</p>"
         }
       },
       "materials": "небольшой пергамент со святыми письменами",
@@ -3106,11 +3000,7 @@
       "effects": {
         "Heroes' Feast": {
           "name": "Heroes' Feast",
-          "description": "<p>The creature is cured of all Diseases and poison, becomes immune to poison and being Frightened, and makes all Wisdom Saving Throws with advantage. Its hit point maximum also increases by 2d10, and it gains the same number of Hit Points. These benefits last for 24 hours.</p>",
-          "changes": {
-            "system.traits.di.value": "poison",
-            "system.traits.ci.value": "frightened"
-          }
+          "description": "<p>The creature is cured of all Diseases and poison, becomes immune to poison and being Frightened, and makes all Wisdom Saving Throws with advantage. Its hit point maximum also increases by 2d10, and it gains the same number of Hit Points. These benefits last for 24 hours.</p>"
         }
       },
       "materials": "кубок, украшенный самоцветами, стоимостью не менее 1 000 зм, исчезает при сотворении",
@@ -3145,10 +3035,7 @@
       "effects": {
         "Faerie Fire": {
           "name": "Faerie Fire",
-          "description": "<p>You are outlined in light, shedding &amp;reference[dim light] in a 10-foot radius.</p><p>Any attack roll against you has advantage if the attacker can see you, and you can't benefit from being &amp;reference[invisible apply=false].</p>",
-          "changes": {
-            "system.traits.ci.value": "invisible"
-          }
+          "description": "<p>You are outlined in light, shedding &amp;reference[dim light] in a 10-foot radius.</p><p>Any attack roll against you has advantage if the attacker can see you, and you can't benefit from being &amp;reference[invisible apply=false].</p>"
         }
       },
       "source": {
@@ -3231,50 +3118,27 @@
       "effects": {
         "Cursed Charisma": {
           "name": "Cursed Charisma",
-          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.cha.check.roll.mode": -1,
-            "system.abilities.cha.save.roll.mode": -1
-          }
+          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>"
         },
         "Cursed Constitution": {
           "name": "Cursed Constitution",
-          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.con.check.roll.mode": -1,
-            "system.abilities.con.save.roll.mode": -1
-          }
+          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>"
         },
         "Cursed Dexterity": {
           "name": "Cursed Dexterity",
-          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.dex.check.roll.mode": -1,
-            "system.abilities.dex.save.roll.mode": -1
-          }
+          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>"
         },
         "Cursed Intelligence": {
           "name": "Cursed Intelligence",
-          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.int.check.roll.mode": -1,
-            "system.abilities.int.save.roll.mode": -1
-          }
+          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>"
         },
         "Cursed Strength": {
           "name": "Cursed Strength",
-          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.str.check.roll.mode": -1,
-            "system.abilities.str.save.roll.mode": -1
-          }
+          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>"
         },
         "Cursed Wisdom": {
           "name": "Cursed Wisdom",
-          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.wis.save.roll.mode": -1
-          }
+          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>"
         },
         "Cursed Attacks": {
           "name": "Cursed Attacks",
@@ -3627,15 +3491,7 @@
       "effects": {
         "Slow": {
           "name": "Slow",
-          "description": "<p>An affected target's speed is halved, it takes a -2 penalty to AC and Dexterity saving throws, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn.</p>",
-          "changes": {
-            "system.attributes.ac.bonus": -2,
-            "system.attributes.movement.burrow": 0.5,
-            "system.attributes.movement.climb": 0.5,
-            "system.attributes.movement.fly": 0.5,
-            "system.attributes.movement.swim": 0.5,
-            "system.attributes.movement.walk": 0.5
-          }
+          "description": "<p>An affected target's speed is halved, it takes a -2 penalty to AC and Dexterity saving throws, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn.</p>"
         }
       },
       "materials": "капля патоки",
@@ -3661,10 +3517,7 @@
       "effects": {
         "Shield": {
           "name": "Shield",
-          "description": "<p>Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from @UUID[Compendium.dnd5e.spells.Item.41JIhpDyM9Anm7cs]{magic missile}.</p>",
-          "changes": {
-            "system.attributes.ac.bonus": 5
-          }
+          "description": "<p>Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from @UUID[Compendium.dnd5e.spells.Item.41JIhpDyM9Anm7cs]{magic missile}.</p>"
         }
       },
       "source": {

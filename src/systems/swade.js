@@ -1,4 +1,8 @@
-import { resolveTranslatedItemName, setupBabele, translateValue } from "../babele-helpers.js";
+import {
+  createLookupConverter,
+  registerCompendiumTranslations,
+  resolveTranslatedItemName,
+} from "../babele-helpers.js";
 
 const EXCEPTIONS = {
   "Arcane Background (Any)": "Мистический дар (любой)",
@@ -12,18 +16,29 @@ const EXCEPTIONS = {
   "Tough as Nails": "Несгибаемый",
   "Work the Room": "Заводила",
   "arcane skill": "мистический навык",
-  "maximum die type possible in affected Trait": "максимальное значение выбранного параметра",
+  "arcane skill d8+": "мистический навык d8+",
+  "arcane skill d10+": "мистический навык d10+",
+  "skill with the chosen weapon of d8+": "навык в данном оружии d8+",
+  "maximum die type possible in affected Trait":
+    "максимальная возможная кость в выбранном параметре",
 };
 
 const CATEGORIES = {
-  Background: "Предыстории",
-  Combat: "Боевые",
-  Leadership: "Лидерские",
-  Legendary: "Легендарные",
-  Power: "Мистические",
-  Professional: "Профессиональные",
-  Social: "Социальные",
-  Weird: "Сверхъестественные",
+  "Background": "Предыстории",
+  "Combat": "Боевые",
+  "Leadership": "Лидерские",
+  "Legendary": "Легендарные",
+  "Power": "Мистические",
+  "Professional": "Профессиональные",
+  "Social": "Социальные",
+  "Weird": "Сверхъестественные",
+  "Edges": "Черты",
+  "Hindrances": "Недостатки",
+  "Adventure Toolkit": "Инструменты приключений",
+  "Healing": "Лечение",
+  "Special Ability Actions": "Действия особенностей",
+  "Situational Rules": "Ситуативные правила",
+  "Weapon Actions": "Действия снаряжения",
 };
 
 const RANKS = {
@@ -75,70 +90,30 @@ export function init() {
     type: Boolean,
   });
 
-  if (game.modules.get("swade-core-rules")?.active) {
-    setupBabele("swade/core");
-  } else if (game.modules.get("swpf-core-rules")?.active) {
-    setupBabele("swade/swpf");
-  } else {
-    setupBabele("swade/basic");
-  }
-
   Hooks.on("ready", () => {
     if (game.modules.get("swade-core-rules")?.active) {
       ui.notifications.info(
         "Обнаружен модуль SWADE Core Rules. Перевод базовой библиотеки был отключен во избежание конфликтов.",
       );
     }
-    if (game.modules.get("swpf-core-rules")?.active) {
-      ui.notifications.info(
-        "Обнаружен модуль Savage Pathfinder. Перевод базовой библиотеки был отключен во избежание конфликтов.",
-      );
-    }
     setupRules();
   });
 }
 
+export function registerBabeleTranslations(babele) {
+  let path = "swade/basic";
+  if (game.modules.get("swade-core-rules")?.active) {
+    path = "swade/core";
+  }
+  registerCompendiumTranslations(babele, path);
+}
+
 export function registerBabeleConverters(babele) {
   babele.registerConverters({
-    convertCategory: {
-      translate(context) {
-        const { value } = context;
-        if (!value) {
-          return value;
-        }
-        return translateValue(value, CATEGORIES);
-      },
-    },
-
-    convertDuration: {
-      translate(context) {
-        const { value } = context;
-        if (!value) {
-          return value;
-        }
-        return translateValue(value, DURATIONS);
-      },
-    },
-
-    convertRange: {
-      translate(context) {
-        const { value } = context;
-        if (!value) {
-          return value;
-        }
-        return translateValue(value, RANGES);
-      },
-    },
-
-    convertRank: {
-      translate(context) {
-        const { value } = context;
-        if (!value) {
-          return value;
-        }
-        return translateValue(value, RANKS);
-      },
-    },
+    convertCategory: createLookupConverter(CATEGORIES),
+    convertDuration: createLookupConverter(DURATIONS),
+    convertRange: createLookupConverter(RANGES),
+    convertRank: createLookupConverter(RANKS),
 
     convertRequirements: {
       translate(context) {
@@ -177,14 +152,6 @@ function getRequirementPackIds() {
     ];
   }
 
-  if (game.modules.get("swpf-core-rules")?.active) {
-    return [
-      "swpf-core-rules.swpf-edges",
-      "swpf-core-rules.swpf-hindrances",
-      "swpf-core-rules.swpf-skills",
-    ];
-  }
-
   return ["swade.edges", "swade.hindrances", "swade.skills"];
 }
 
@@ -204,11 +171,6 @@ function setupRules() {
 
     if (game.modules.get("swade-core-rules")?.active) {
       game.settings.set("swade", "coreSkillsCompendium", "swade-core-rules.swade-skills");
-    }
-
-    if (game.modules.get("swpf-core-rules")?.active) {
-      game.settings.set("swade", "coreSkillsCompendium", "swpf-core-rules.swpf-skills");
-      game.settings.set("swade", "currencyName", "зм");
     }
 
     if (game.modules.get("deadlands-core-rules")?.active) {

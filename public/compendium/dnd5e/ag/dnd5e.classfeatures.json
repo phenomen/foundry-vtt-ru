@@ -100,10 +100,7 @@
       "description": "<p>Beginning at 18th level, you can use your action to spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.</p>\n<p>Additionally, you can spend 8 ki points to cast the @UUID[Compendium.dnd5e.spells.Item.TIoadMIsUKD4edXi]{Astral Projection} spell, without needing material components. When you do so, you can't take any other creatures with you.</p>",
       "effects": {
         "Ki: Empty Body": {
-          "name": "Ki: Empty Body",
-          "changes": {
-            "system.traits.dr.value": "poison"
-          }
+          "name": "Ki: Empty Body"
         }
       }
     },
@@ -112,10 +109,7 @@
       "description": "<p>You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.</p>",
       "effects": {
         "Devil's Sight": {
-          "name": "Devil's Sight",
-          "changes": {
-            "system.attributes.senses.darkvision": 120
-          }
+          "name": "Devil's Sight"
         }
       }
     },
@@ -172,10 +166,7 @@
       "description": "<p>Beginning at 14th level, your mastery of ki grants you proficiency in all saving throws. Additionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result.</p>",
       "effects": {
         "Diamond Soul": {
-          "name": "Diamond Soul",
-          "changes": {
-            "flags.dnd5e.diamondSoul": true
-          }
+          "name": "Diamond Soul"
         }
       }
     },
@@ -216,10 +207,7 @@
       "description": "<p>You gain a +2 bonus to attack rolls you make with ranged weapons</p>",
       "effects": {
         "Fighting Style: Archery": {
-          "name": "Fighting Style: Archery",
-          "changes": {
-            "system.bonuses.rwak.attack": "+2"
-          }
+          "name": "Fighting Style: Archery"
         }
       }
     },
@@ -236,10 +224,7 @@
       "description": "<p>Starting at 10th level, you can choose one damage type when you finish a short or long rest. You gain resistance to that damage type until you choose a different one with this feature. Damage from magical weapons or silver weapons ignores this resistance.</p>",
       "effects": {
         "Fiendish Resilience": {
-          "name": "Fiendish Resilience",
-          "changes": {
-            "system.traits.dr.custom": "Fiendish Resilience"
-          }
+          "name": "Fiendish Resilience"
         }
       }
     },
@@ -316,10 +301,7 @@
       "description": "<p>By 11th level, you are so suffused with righteous might that all your melee weapon strikes carry divine power with them.</p><p>Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage. If you also use your @UUID[Compendium.dnd5e.classfeatures.Item.ySMPQ6zNSlvkrl2f]{Divine Smite} with an attack, you add this damage to the extra damage of your Divine Smite.</p>",
       "effects": {
         "Improved Divine Smite": {
-          "name": "Improved Divine Smite",
-          "changes": {
-            "system.bonuses.mwak.damage": "+1d8[Radiant]"
-          }
+          "name": "Improved Divine Smite"
         }
       }
     },
@@ -376,10 +358,7 @@
       "description": "<p>Your speed increases by 10 feet while you aren't wearing heavy armor.</p>",
       "effects": {
         "Fast Movement": {
-          "name": "Fast Movement",
-          "changes": {
-            "system.attributes.movement.walk": 10
-          }
+          "name": "Fast Movement"
         }
       }
     },
@@ -420,10 +399,7 @@
       "description": "<p>As magic flows through your body, it causes physical traits of your dragon ancestors to emerge. At 1st level, your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class.</p><p>Additionally, parts of your skin are covered by a thin sheen of dragon-like scales. When you aren't wearing armor, your AC equals 13 + your Dexterity modifier.</p>",
       "effects": {
         "Draconic Resilience": {
-          "name": "Draconic Resilience",
-          "changes": {
-            "system.attributes.ac.calc": "draconic"
-          }
+          "name": "Draconic Resilience"
         }
       }
     },
@@ -444,10 +420,7 @@
       "description": "<p>By 7th level, your instincts are so honed that you have advantage on initiative rolls.</p><p>Additionally, if you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn.</p>",
       "effects": {
         "Feral Instinct": {
-          "name": "Feral Instinct",
-          "changes": {
-            "system.attributes.init.roll.mode": 1
-          }
+          "name": "Feral Instinct"
         }
       }
     },
@@ -464,10 +437,7 @@
       "description": "<p>When you reach 10th level, you can't be charmed or frightened by elementals or fey, and you are immune to poison and disease.</p>",
       "effects": {
         "Nature's Ward": {
-          "name": "Nature's Ward",
-          "changes": {
-            "system.traits.ci.value": "poisoned"
-          }
+          "name": "Nature's Ward"
         }
       }
     },
@@ -524,10 +494,7 @@
       "description": "<p>While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.</p>",
       "effects": {
         "Unarmored Defense": {
-          "name": "Unarmored Defense",
-          "changes": {
-            "system.attributes.ac.calc": "unarmoredBarb"
-          }
+          "name": "Unarmored Defense"
         }
       }
     },
@@ -556,10 +523,7 @@
       "description": "<p>Beginning at 1st Level, while you are wearing no armor and not wielding a Shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.</p>",
       "effects": {
         "Unarmored Defense": {
-          "name": "Unarmored Defense",
-          "changes": {
-            "system.attributes.ac.calc": "unarmoredMonk"
-          }
+          "name": "Unarmored Defense"
         }
       }
     },
@@ -576,13 +540,7 @@
       "description": "<p>In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you aren't wearing heavy armor:</p>\n<ul>\n<li>\n<p>You have advantage on Strength checks and Strength saving throws.</p>\n</li>\n<li>\n<p>When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.</p>\n</li>\n<li>\n<p>You have resistance to bludgeoning, piercing, and slashing damage.</p>\n</li>\n</ul>\n<p>If you are able to cast spells, you can't cast them or concentrate on them while raging. </p>\n<p>Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action. </p>\n<p>Once you have raged the number of times shown for your barbarian level in the Rages column of the Barbarian table, you must finish a long rest before you can rage again.</p>",
       "effects": {
         "Rage": {
-          "name": "Rage",
-          "changes": {
-            "system.bonuses.mwak.damage": "+@scale.barbarian.rage-damage",
-            "system.traits.dr.value": "bludgeoning",
-            "system.abilities.str.check.roll.mode": 1,
-            "system.abilities.str.save.roll.mode": 1
-          }
+          "name": "Rage"
         }
       }
     },
@@ -611,10 +569,7 @@
       "description": "<p>By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.</p>",
       "effects": {
         "Reliable Talent": {
-          "name": "Reliable Talent",
-          "changes": {
-            "flags.dnd5e.reliableTalent": true
-          }
+          "name": "Reliable Talent"
         }
       }
     },
@@ -727,10 +682,7 @@
       "description": "<p>Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus.</p>",
       "effects": {
         "Jack of All Trades": {
-          "name": "Jack of All Trades",
-          "changes": {
-            "flags.dnd5e.jackOfAllTrades": true
-          }
+          "name": "Jack of All Trades"
         }
       }
     },
@@ -763,10 +715,7 @@
       "description": "<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>",
       "effects": {
         "Fighting Style: Dueling": {
-          "name": "Fighting Style: Dueling",
-          "changes": {
-            "system.bonuses.mwak.damage": "+2"
-          }
+          "name": "Fighting Style: Dueling"
         }
       }
     },
@@ -920,10 +869,7 @@
       "description": "<p>Starting at 10th level, you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials with which to create your camouflage.</p><p>Once you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to Dexterity (Stealth) checks as long as you remain there without moving or taking actions. Once you move or take an action or a reaction, you must camouflage yourself again to gain this benefit.</p>",
       "effects": {
         "Hide in Plain Sight": {
-          "name": "Hide in Plain Sight",
-          "changes": {
-            "system.skills.ste.bonuses.check": "+10"
-          }
+          "name": "Hide in Plain Sight"
         }
       }
     },
@@ -1040,10 +986,7 @@
       "description": "<p>Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain monk levels, as shown in the Monk table.</p>\n<p>At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</p>",
       "effects": {
         "Unarmored Movement": {
-          "name": "Unarmored Movement",
-          "changes": {
-            "system.attributes.movement.walk": "@scale.monk.unarmored-movement"
-          }
+          "name": "Unarmored Movement"
         }
       }
     },
@@ -1056,10 +999,7 @@
       "description": "<p>While you are wearing armor, you gain a +1 bonus to AC</p>",
       "effects": {
         "Fighting Style: Defense": {
-          "name": "Fighting Style: Defense",
-          "changes": {
-            "system.attributes.ac.bonus": "+1"
-          }
+          "name": "Fighting Style: Defense"
         }
       }
     },

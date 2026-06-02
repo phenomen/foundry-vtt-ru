@@ -1,7 +1,11 @@
-import { getCompendiumRuntime, setupBabele } from "../babele-helpers.js";
+import {
+  getCompendiumRuntime,
+  registerCompendiumTranslations,
+  translatedItemEntryFromPack,
+} from "../babele-helpers.js";
 
-export function init() {
-  setupBabele("crucible");
+export function registerBabeleTranslations(babele) {
+  registerCompendiumTranslations(babele, "crucible");
 }
 
 /**
@@ -17,28 +21,6 @@ function compendiumEntryNameFromIdentifier(identifier) {
   }
 
   return identifier.charAt(0).toUpperCase() + identifier.slice(1);
-}
-
-/**
- * @param {string} entryName - Compendium index name used for Babele matching.
- * @param {object} scope - Compendium runtime from {@link getCompendiumRuntime}.
- * @param {string} packId - Foundry compendium collection id.
- * @returns {object|null} Translation entry (`name`, `description`, …) or `null`.
- */
-function translatedItemEntryFromPack(entryName, scope, packId) {
-  const trimmed = entryName?.trim();
-  if (!trimmed || !scope || !packId) {
-    return null;
-  }
-
-  const data = { name: trimmed };
-  const pack = scope.mappedCompendiumFor?.(packId);
-
-  if (pack?.hasTranslation?.(data, "Item", scope)) {
-    return pack.translationsFor(data, "Item") ?? null;
-  }
-
-  return null;
 }
 
 /**

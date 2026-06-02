@@ -1,10 +1,10 @@
-export async function init() {
+export function init() {
   game.settings.register("ru-ru", "altTranslation", {
     config: true,
     default: false,
     hint: "Использовать альтернативный перевод от Dungeons.ru. Иначе будет использоваться официальный перевод Hobby World и Adventure Guys (требуется модуль libWrapper)",
     name: "(D&D5E) Альтернативный перевод",
-    onChange: (_value) => {
+    onChange: () => {
       window.location.reload();
     },
     restricted: true,
@@ -57,7 +57,6 @@ async function loadAltTranslation(wrapped, ...args) {
     ...moduleFiles.map((file) => `${route}${modulePath}${file}`),
   ];
 
-  // Временный объект, чтобы не мержить в петле огромный объект основного перевода
   const altTranslations = {};
 
   const results = await Promise.all(
@@ -73,10 +72,9 @@ async function loadAltTranslation(wrapped, ...args) {
 
   for (const altJson of results) {
     if (altJson) {
-      // Мерж развёрнутого объекта, как это делается в game.i18n.#loadTranslationFile
       foundry.utils.mergeObject(altTranslations, foundry.utils.expandObject(altJson));
     }
   }
-  // Мерж альтернативного перевода в основной
+
   foundry.utils.mergeObject(game.i18n.translations, altTranslations);
 }

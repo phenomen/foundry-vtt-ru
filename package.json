@@ -10,10 +10,12 @@
     "prepare": "vp config",
     "util:manifest": "node utils/syncmanifest.js",
     "util:symlink": "node utils/symlink.js",
-    "util:babeleformat": "node utils/babeleformat.js"
+    "util:babeleformat": "node utils/babeleformat.js",
+    "util:remove-changes": "node utils/remove-changes.js",
+    "util:remove-items": "node utils/remove-items.js"
   },
   "devDependencies": {
-    "vite-plus": "^0.1.22"
+    "vite-plus": "^0.1.24"
   },
   "overrides": {
     "vite": "npm:@voidzero-dev/vite-plus-core@latest",

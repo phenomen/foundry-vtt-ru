@@ -1,5 +1,5 @@
-import { setupBabele } from "../babele-helpers.js";
+import { registerCompendiumTranslations } from "../babele-helpers.js";
 
-export function init() {
-  setupBabele("slugblaster");
+export function registerBabeleTranslations(babele) {
+  registerCompendiumTranslations(babele, "slugblaster");
 }

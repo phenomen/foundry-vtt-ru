@@ -1,4 +1,4 @@
-import { setupBabele, translateValue } from "../babele-helpers.js";
+import { createLookupConverter, registerCompendiumTranslations } from "../babele-helpers.js";
 
 const CLASSES = {
   Bartan: "Бартан",
@@ -15,29 +15,28 @@ const CLASSES = {
   Zemyati: "Земьяти",
 };
 
-export function init() {
-  setupBabele("band-of-blades");
+export function registerBabeleTranslations(babele) {
+  registerCompendiumTranslations(babele, "band-of-blades");
 }
 
 export function registerBabeleConverters(babele) {
   babele.registerConverters({
-    classConverter: (cls) => {
-      if (!cls) {
-        return;
-      }
-      return translateValue(cls, CLASSES);
-    },
+    classConverter: createLookupConverter(CLASSES),
 
-    effectsConverter: (effects, translations) => {
-      if (!effects || !translations) {
-        return;
-      }
-      return effects.map((effect) => {
-        if (effect.name && translations[effect.name]) {
-          effect.name = translations[effect.name];
+    effectsConverter: {
+      translate(context) {
+        const { value: effects, translation: translations } = context;
+        if (!effects || !translations) {
+          return effects;
         }
-        return effect;
-      });
+
+        return effects.map((effect) => {
+          if (effect.name && translations[effect.name]) {
+            effect.name = translations[effect.name];
+          }
+          return effect;
+        });
+      },
     },
   });
 }

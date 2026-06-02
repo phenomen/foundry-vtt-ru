@@ -25,10 +25,7 @@
       "effects": {
         "Acid Absorption": {
           "name": "Acid Absorption",
-          "description": "<p>The creature is immune to Acid damage and instead regains a number of Hit Points equal to the Acid damage dealt.</p>",
-          "changes": {
-            "system.traits.di.value": "acid"
-          }
+          "description": "<p>The creature is immune to Acid damage and instead regains a number of Hit Points equal to the Acid damage dealt.</p>"
         }
       }
     },
@@ -72,12 +69,7 @@
       "effects": {
         "Animate Trees": {
           "name": "Animate Trees",
-          "description": "<p>The tree has Intelligence and Charisma scores of 1, can't speak, and lacks the Animate Trees action.</p>",
-          "changes": {
-            "system.abilities.cha.value": 1,
-            "system.abilities.int.value": 1,
-            "system.traits.languages.custom": "Can't speak"
-          }
+          "description": "<p>The tree has Intelligence and Charisma scores of 1, can't speak, and lacks the Animate Trees action.</p>"
         }
       }
     },
@@ -87,11 +79,7 @@
       "effects": {
         "Damaged: -1 AC/Attack": {
           "name": "Damaged: -1 AC/Attack",
-          "description": "<p>The object takes a -1 penalty to the AC it offers (armor) or to its attack rolls (weapon). Armor is destroyed if the penalty reduces its AC to 10, and a weapon is destroyed if its penalty reaches -5. The penalty can be removed by casting the <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMending000]</em> spell on the armor or weapon.</p>",
-          "changes": {
-            "system.armor.value": -1,
-            "activities[attack].attack.bonus": -1
-          }
+          "description": "<p>The object takes a -1 penalty to the AC it offers (armor) or to its attack rolls (weapon). Armor is destroyed if the penalty reduces its AC to 10, and a weapon is destroyed if its penalty reaches -5. The penalty can be removed by casting the <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMending000]</em> spell on the armor or weapon.</p>"
         }
       }
     },
@@ -178,10 +166,7 @@
       "description": "<p>The [[lookup @name lowercase]]{monster} counts as one size larger for the purpose of determining its carrying capacity.</p>",
       "effects": {
         "Beast of Burden": {
-          "name": "Beast of Burden",
-          "changes": {
-            "flags.dnd5e.powerfulBuild": 1
-          }
+          "name": "Beast of Burden"
         }
       }
     },
@@ -416,10 +401,7 @@
       "effects": {
         "Resistance: Fire": {
           "name": "Resistance: Fire",
-          "description": "<p>The creature can grant Resistance to Fire damage to a rider while it is on the creature.</p>",
-          "changes": {
-            "system.traits.dr.value": "fire"
-          }
+          "description": "<p>The creature can grant Resistance to Fire damage to a rider while it is on the creature.</p>"
         }
       }
     },
@@ -463,10 +445,7 @@
       "effects": {
         "Damaged: -1 Attack": {
           "name": "Damaged: -1 Attack",
-          "description": "<p>Any nonmagical weapon takes a cumulative −1 penalty to attack rolls immediately after dealing damage to the attacking creature and coming into contact with it.</p>",
-          "changes": {
-            "activities[attack].attack.bonus": -1
-          }
+          "description": "<p>Any nonmagical weapon takes a cumulative −1 penalty to attack rolls immediately after dealing damage to the attacking creature and coming into contact with it.</p>"
         }
       }
     },
@@ -502,11 +481,7 @@
         },
         "Self: Attack Adv./0 Speed": {
           "name": "Self: Attack Adv./0 Speed",
-          "description": "<p>While attached to a target, the [[lookup @name lowercase]]{monster} can attack only the target but has Advantage on its attack rolls. Its Speed becomes 0, it can’t benefit from any bonus to its Speed, and it moves with the target.</p>",
-          "changes": {
-            "system.attributes.movement.walk": 0,
-            "system.attributes.movement.fly": 0
-          }
+          "description": "<p>While attached to a target, the [[lookup @name lowercase]]{monster} can attack only the target but has Advantage on its attack rolls. Its Speed becomes 0, it can’t benefit from any bonus to its Speed, and it moves with the target.</p>"
         }
       }
     },
@@ -592,10 +567,7 @@
       "effects": {
         "Damaged: -1 AC": {
           "name": "Damaged: -1 AC",
-          "description": "<p>Nonmagical armor worn by the target takes a -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.</p>",
-          "changes": {
-            "system.attributes.ac.bonus": -1
-          }
+          "description": "<p>Nonmagical armor worn by the target takes a -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.</p>"
         }
       }
     },
@@ -622,34 +594,19 @@
       "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} is related to a type of dragon associated with one of the following damage types (DM's choice): Acid, Cold, Fire, Lightning, or Poison. This choice affects other aspects of the stat block.</p><section class=\"secret\" id=\"secret-9qS4XvlccQjIsypM\"><p><strong>Foundry Note</strong></p><p>This feature provides an Active Effect to manage <strong>Damage Resistances</strong> in the character sheet's Effects tab. The resistances outlined will need to be manually enabled/disabled.</p></section>",
       "effects": {
         "Acid Resistance": {
-          "name": "Acid Resistance",
-          "changes": {
-            "system.traits.dr.value": "acid"
-          }
+          "name": "Acid Resistance"
         },
         "Cold Resistance": {
-          "name": "Cold Resistance",
-          "changes": {
-            "system.traits.dr.value": "cold"
-          }
+          "name": "Cold Resistance"
         },
         "Fire Resistance": {
-          "name": "Fire Resistance",
-          "changes": {
-            "system.traits.dr.value": "fire"
-          }
+          "name": "Fire Resistance"
         },
         "Poison Resistance": {
-          "name": "Poison Resistance",
-          "changes": {
-            "system.traits.dr.value": "poison"
-          }
+          "name": "Poison Resistance"
         },
         "Lightning Resistance": {
-          "name": "Lightning Resistance",
-          "changes": {
-            "system.traits.dr.value": "lightning"
-          }
+          "name": "Lightning Resistance"
         }
       }
     },
@@ -667,10 +624,7 @@
       "effects": {
         "Hit: STR Score -1d4": {
           "name": "Hit: STR Score -1d4",
-          "description": "<p>The target’s Strength score decreases by [[/r 1d4]].</p>",
-          "changes": {
-            "system.abilities.str.value": -1
-          }
+          "description": "<p>The target’s Strength score decreases by [[/r 1d4]].</p>"
         }
       }
     },
@@ -886,11 +840,7 @@
       "effects": {
         "Speed: -20 ft.": {
           "name": "Speed: -20 ft.",
-          "description": "<p>If the attacking creature takes Cold damage, its Speed decreases by 20 feet until the end of its next turn.</p>",
-          "changes": {
-            "system.attributes.movement.walk": -20,
-            "system.attributes.movement.swim": -20
-          }
+          "description": "<p>If the attacking creature takes Cold damage, its Speed decreases by 20 feet until the end of its next turn.</p>"
         }
       }
     },
@@ -900,14 +850,7 @@
       "effects": {
         "0 ft. Speed": {
           "name": "0 ft. Speed",
-          "description": "<p>The target’s Speed is 0 until the end of the target’s next turn.</p>",
-          "changes": {
-            "system.attributes.movement.walk": 0,
-            "system.attributes.movement.burrow": 0,
-            "system.attributes.movement.climb": 0,
-            "system.attributes.movement.fly": 0,
-            "system.attributes.movement.swim": 0
-          }
+          "description": "<p>The target’s Speed is 0 until the end of the target’s next turn.</p>"
         }
       }
     },
@@ -937,14 +880,7 @@
       "effects": {
         "Giggling": {
           "name": "Giggling",
-          "description": "<p>Until the end of its next turn, the target rolls [[/r 1d6]] whenever it makes an ability check or attack and subtracts the number rolled from the D20 Test.</p>",
-          "changes": {
-            "system.bonuses.abilities.check": "-1d6",
-            "system.bonuses.msak.attack": "-1d6",
-            "system.bonuses.mwak.attack": "-1d6",
-            "system.bonuses.rsak.attack": "-1d6",
-            "system.bonuses.rwak.attack": "-1d6"
-          }
+          "description": "<p>Until the end of its next turn, the target rolls [[/r 1d6]] whenever it makes an ability check or attack and subtracts the number rolled from the D20 Test.</p>"
         }
       }
     },
@@ -988,10 +924,7 @@
       "effects": {
         "Speed: -10 Ft.": {
           "name": "Speed: -10 Ft.",
-          "description": "<p>The target’s Speed decreases by 10 feet until the end of its next turn.</p>",
-          "changes": {
-            "system.attributes.movement.walk": -10
-          }
+          "description": "<p>The target’s Speed decreases by 10 feet until the end of its next turn.</p>"
         }
       }
     },
@@ -1091,10 +1024,7 @@
       "effects": {
         "Speed -10": {
           "name": "Speed -10",
-          "description": "<p>Until the end of its next turn, the target's speed decreases by 10 feet.</p>",
-          "changes": {
-            "system.attributes.movement.walk": -10
-          }
+          "description": "<p>Until the end of its next turn, the target's speed decreases by 10 feet.</p>"
         }
       }
     },
@@ -1397,10 +1327,7 @@
       "effects": {
         "Damaged: −2 AC": {
           "name": "Damaged: −2 AC",
-          "description": "<p>The target takes a −2 penalty to AC until the end of its next turn.</p>",
-          "changes": {
-            "system.armor.value": -2
-          }
+          "description": "<p>The target takes a −2 penalty to AC until the end of its next turn.</p>"
         }
       }
     },
@@ -1410,10 +1337,7 @@
       "effects": {
         "Speed: -10 feet": {
           "name": "Speed: -10 feet",
-          "description": "<p>If the target is a creature, its Speed decreases by 10 feet until the end of its next turn.</p>",
-          "changes": {
-            "system.attributes.movement.walk": -10
-          }
+          "description": "<p>If the target is a creature, its Speed decreases by 10 feet until the end of its next turn.</p>"
         }
       }
     },
@@ -1583,10 +1507,7 @@
       "effects": {
         "Protected": {
           "name": "Protected",
-          "description": "<p>The wearer gains a +5 bonus to AC, including against the triggering attack and possibly causing it to miss, until the start of the bestower's next turn.</p>",
-          "changes": {
-            "system.attributes.ac.bonus": 5
-          }
+          "description": "<p>The wearer gains a +5 bonus to AC, including against the triggering attack and possibly causing it to miss, until the start of the bestower's next turn.</p>"
         }
       }
     },
@@ -1720,10 +1641,7 @@
       "effects": {
         "+3 AC": {
           "name": "+3 AC",
-          "description": "<p>The [[lookup @name lowercase]]{monster} adds 3 to its AC against that attack, possibly causing it to miss.</p>",
-          "changes": {
-            "system.attributes.ac.bonus": 3
-          }
+          "description": "<p>The [[lookup @name lowercase]]{monster} adds 3 to its AC against that attack, possibly causing it to miss.</p>"
         }
       }
     },
@@ -1797,14 +1715,7 @@
       "effects": {
         "1/2 Speed": {
           "name": "1/2 Speed",
-          "description": "<p>The target’s Speed is halved until the end of its next turn</p>",
-          "changes": {
-            "system.attributes.movement.walk": 0.5,
-            "system.attributes.movement.swim": 0.5,
-            "system.attributes.movement.fly": 0.5,
-            "system.attributes.movement.climb": 0.5,
-            "system.attributes.movement.burrow": 0.5
-          }
+          "description": "<p>The target’s Speed is halved until the end of its next turn</p>"
         }
       }
     },
@@ -1858,10 +1769,7 @@
       "effects": {
         "Shielded": {
           "name": "Shielded",
-          "description": "<p>The target's AC increases by 2 until the end of the bestower's next turn.</p>",
-          "changes": {
-            "system.attributes.ac.bonus": 2
-          }
+          "description": "<p>The target's AC increases by 2 until the end of the bestower's next turn.</p>"
         }
       }
     },
@@ -1921,14 +1829,7 @@
       "effects": {
         "1/2 Speed | Action Restrictions": {
           "name": "1/2 Speed | Action Restrictions",
-          "description": "<p>The target can’t take Reactions; its Speed is halved; and it can take either an action or a Bonus Action on its turn, not both. This effect lasts until the end of its next turn.</p>",
-          "changes": {
-            "system.attributes.movement.walk": 0.5,
-            "system.attributes.movement.burrow": 0.5,
-            "system.attributes.movement.climb": 0.5,
-            "system.attributes.movement.fly": 0.5,
-            "system.attributes.movement.swim": 0.5
-          }
+          "description": "<p>The target can’t take Reactions; its Speed is halved; and it can take either an action or a Bonus Action on its turn, not both. This effect lasts until the end of its next turn.</p>"
         }
       }
     },
@@ -2408,10 +2309,7 @@
       "effects": {
         "Weakened": {
           "name": "Weakened",
-          "description": "<p>The target has Disadvantage on Strength-based D20 Tests and subtracts 2 (1d4) from its damage rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</p>",
-          "changes": {
-            "system.abilities.str.bonuses.check": "-1d4"
-          }
+          "description": "<p>The target has Disadvantage on Strength-based D20 Tests and subtracts 2 (1d4) from its damage rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</p>"
         }
       }
     },
@@ -2475,10 +2373,7 @@
       "effects": {
         "+2 AC": {
           "name": "+2 AC",
-          "description": "<p>The attacking creature adds 2 to its AC against the attack, possibly causing the attack to miss.</p>",
-          "changes": {
-            "system.attributes.ac.bonus": 2
-          }
+          "description": "<p>The attacking creature adds 2 to its AC against the attack, possibly causing the attack to miss.</p>"
         },
         "Blinded": {
           "name": "Blinded",

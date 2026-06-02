@@ -1,0 +1,308 @@
+{
+  "label": "Tables",
+  "entries": {
+    "Out of Control": {
+      "name": "Out of Control",
+      "description": "Damage caused by an Out of Control roll doesn’t trigger another Out of Control roll, but a Wound triggers a Critical Hit as usual. See @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04chasesandveh00]{Maneuvering Skills} to learn more",
+      "results": {
+        "2-2": {
+          "description": "<p><strong>Major Collision:</strong> Everyone in the vehicle is @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03distractedan00]{Distracted}. It takes d4 @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wounds} and one@Compendium[swade-core-rules.swade-tables.Vehicle Critical Hits]{Critical Hit}.</p>"
+        },
+        "3-4": {
+          "description": "<p><strong>Minor Collision:</strong> The vehicle takes a @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#wounds]{Wound} and a@Compendium[swade-core-rules.swade-tables.Vehicle Critical Hits]{Critical Hit}.</p>"
+        },
+        "5-9": {
+          "description": "<b>Distracted:</b> Ground vehicles spin out or skid. Airplanes or spaceships stall, slide, flip, or roll unexpectedly. Everyone on board is @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03distractedan00]{Distracted} until the end of their next turn."
+        },
+        "10-11": {
+          "description": "<b>Vulnerable:</b> The vehicle and everyone on board is @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03distractedan00]{Vulnerable} until the end of their next turn."
+        },
+        "12-12": {
+          "description": "<b>Glitch:</b> Something is jarred loose or breaks from rough handling. The vehicle suffers a@Compendium[swade-core-rules.swade-tables.Vehicle Critical Hits]{Critical Hit} (reroll Crew results)."
+        }
+      }
+    },
+    "Creative Combat": {
+      "name": "Creative Combat",
+      "description": "Creative Combat enhances a pulp-style game with additional benefits for those who Test with a raise. See <b>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04creativecomb00]{Creative Combat}</b> on when to use these rules.",
+      "results": {
+        "2-2": {
+          "description": "<p><strong>Second Wind:</strong> The foe’s reaction gives your hero hope or allows her to catch her breath. She may remove a level of @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03fatigue0000000]{Fatigue} or a @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#wounds]{Wounds} (her choice). If she doesn’t have Fatigue or Wounds, the enemy is @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#shaken]{Shaken} instead.</p>"
+        },
+        "3-3": {
+          "description": "<b>Inspiration:</b> Fate favors the bold. The clever hero receives a @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03bennies0000000]{Benny}."
+        },
+        "4-5": {
+          "description": "<p><strong>Double Whammy:</strong> The target is both @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03rules000000000#distracted-and-vulnerable]{Distracted and Vulnerable}.</p>"
+        },
+        "6-8": {
+          "description": "<b>Shaken: </b>The foe is @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#shaken]{Shaken}."
+        },
+        "9-10": {
+          "description": "<b>Setback:</b> The target suffers a setback of some sort. She might fall off a ledge, lose the confidence of her minions (who then desert her), take a rash but foolish action, or simply loses her next turn as she attempts to recover from whatever situation she finds herself in."
+        },
+        "11-11": {
+          "description": "<b>Insight:</b> The hero has new insight into the target’s nature. Once during this encounter, she may add +d6 to any @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Trait Roll} made to directly attack, affect, or damage the same foe. If rolled a second time in the same encounter, the foe is @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#shaken]{Shaken} instead."
+        },
+        "12-12": {
+          "description": "<b>Seize the Moment:</b> After the hero resolves this turn, she immediately gets an entire additional turn. This includes movement as well! She may use the turn to go on @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03hold0000000000]{Hold} if she wishes."
+        }
+      }
+    },
+    "HeadInjury": {
+      "name": "HeadInjury",
+      "results": {
+        "1-3": {
+          "description": "<p><strong>Hideous Scar:</strong> Your hero now has the @Compendium[swade-core-rules.swade-hindrances.Ugly]{Ugly} (Major) Hindrance.</p>"
+        },
+        "4-5": {
+          "description": "<p><strong>Blinded:</strong> An eye is damaged. Gain the @Compendium[swade-core-rules.swade-hindrances.One Eye]{One Eye} Hindrance (or the @Compendium[swade-core-rules.swade-hindrances.Blind]{Blind} Hindrance if he only had one good eye).</p>"
+        },
+        "6-6": {
+          "description": "<p><strong>Brain Damage:</strong> Massive trauma to the head. Smarts reduced one die type (min d4).</p>"
+        }
+      }
+    },
+    "Allied Personalites": {
+      "name": "Allied Personalites",
+      "description": "<p>You can add a little flavor to your allies by rolling on the <strong>Allied Personalities</strong> table. Jot down the keyword on the Ally Sheet so you and your Game Master have a little insight into each particular ally’s character.</p>\n<p>Consider these general impressions with no particular game effect. They help both the player and GM decide just how an ally might react in a given situation. In a <cite>Weird War Two</cite> game, for instance, a player with a young lieutenant character could look over his list and choose the “Observant” character to pull guard duty. If he has to go with the “Lazy” soldier for some reason, there’s a good chance the GM will rule he falls asleep sometime during his watch.</p>",
+      "results": {
+        "1-1": {
+          "description": "Treacherous"
+        },
+        "2-2": {
+          "description": "Cruel"
+        },
+        "3-3": {
+          "description": "Old"
+        },
+        "4-4": {
+          "description": "Happy"
+        },
+        "5-5": {
+          "description": "Experienced"
+        },
+        "6-6": {
+          "description": "Gung-Ho"
+        },
+        "7-7": {
+          "description": "Lazy"
+        },
+        "8-8": {
+          "description": "Sneaky"
+        },
+        "9-9": {
+          "description": "Bright"
+        },
+        "10-10": {
+          "description": "Young"
+        },
+        "11-11": {
+          "description": "Crude"
+        },
+        "12-12": {
+          "description": "Agile"
+        },
+        "13-13": {
+          "description": "Observant"
+        },
+        "14-14": {
+          "description": "Clueless"
+        },
+        "15-15": {
+          "description": "Mysterious"
+        },
+        "16-16": {
+          "description": "Creative"
+        },
+        "17-17": {
+          "description": "Artistic"
+        },
+        "18-18": {
+          "description": "Fearless"
+        },
+        "19-19": {
+          "description": "Cowardly"
+        },
+        "20-20": {
+          "description": "Heroic"
+        }
+      }
+    },
+    "Battle Effects": {
+      "name": "Battle Effects",
+      "description": "See <b>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04massbattles000]{Mass Battles}</b> for when to use this table.",
+      "results": {
+        "2-2": {
+          "description": "<b>Inspire: </b>The warrior battles valiantly, inspiring the troops and urging them to fight on despite their injuries. Her side immediately recovers one @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04massbattles000]{Force Token}."
+        },
+        "3-4": {
+          "description": "<b>Terrorize: </b>The fighter’s fury terrorizes her foes. The enemy commander subtracts 2 from his @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Spirit} roll if forced to test @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04massbattles000]{morale} this round."
+        },
+        "5-9": {
+          "description": "<b>Valor: </b>The warrior’s @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03support0000000]{Support} adds +2 to the commander’s @Compendium[swade-core-rules.swade-skills.Battle]{Battle} roll as usual."
+        },
+        "10-11": {
+          "description": "<b>Slaughter: </b>The foe reels at the champ­ion’s onslaught. Subtract 2 from the enemy commander’s @Compendium[swade-core-rules.swade-skills.Battle]{Battle} total."
+        },
+        "12-12": {
+          "description": "<b>An Army of One: </b>Tales will be told and songs sung of the warrior’s epic feats this day. The enemy army loses a @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04massbattles000]{Force Token} immediately (this doesn’t subtract from his Battle roll but does cause a  @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04massbattles000]{morale} check even if he wins)."
+        }
+      }
+    },
+    "Vehicle Critical Hits": {
+      "name": "Vehicle Critical Hits",
+      "description": "See @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04chasesandveh00]{Chases and Vehicles}",
+      "results": {
+        "2-2": {
+          "description": "<b>Scratch and Dent:</b> The attack just scratches the paint or passes clean through the body without hitting anyone or anything vital. There’s no permanent damage."
+        },
+        "3-3": {
+          "description": "<b>Guidance/Traction:</b> The wheels, tracks, sails, thrusters, etc. have been hit. Reduce @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03vehicles000000]{Handling} by one each time this occurs (to a maximum penalty of –4)."
+        },
+        "4-5": {
+          "description": "<b>Locomotion:</b> The engine, mainsails, boiler, etc., is hit. @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03vehicles000000]{Top Speed} is reduced by 10% each time this occurs (to a minimum of 60% Top Speed)."
+        },
+        "6-8": {
+          "description": "<b>Chassis:</b> The vehicle suffers a hit in the body with no special effects."
+        },
+        "9-10": {
+          "description": "<b>Crew:</b> For direct damage, subtract the vehicle’s @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03vehicles000000]{Armor} (if appropriate for the victim’s position) and apply the remainder to a random crew member. @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03areaeffectat00]{Area Effect} weapons affect everyone in a section determined by the GM. If this is the result of a @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04chasesandveh00]{Collision}, the occupants are Shaken."
+        },
+        "11-11": {
+          "description": "<b>Weapon</b>: A random weapon is destroyed. If there is no weapon, this is a Chassis hit instead"
+        },
+        "12-12": {
+          "description": "<b>System</b>: The vehicle loses an electronic system, its airbags, or some other system determined by the GM. If it doesn’t have any special features, treat this as a Chassis hit instead."
+        }
+      }
+    },
+    "Reaction Table": {
+      "name": "Reaction Table",
+      "description": "The GM can use the table below to roll or choose a character or group's initial attitude. See @Compendium[swade-core-rules.swade-skills.Persuasion]{Persuasion} on how to use this table.",
+      "results": {
+        "2-2": {
+          "description": "<b>Hostile: </b>The target is openly hostile. He may attack if possible, or other­wise betray, report on, or hinder the party at the first opportunity. He doesn’t help without an over­whelming reward or threat of some kind."
+        },
+        "3-3": {
+          "description": "<b>Unfriendly: </b>The character isn’t interested in helping unless he has little choice and/or is offered a substantial payment or reward."
+        },
+        "4-5": {
+          "description": "<b>Uncooperative: </b>The target isn’t interested in getting involved unless there’s a significant advantage to himself."
+        },
+        "6-8": {
+          "description": "<b>Neutral: </b>The character has no particular attitude toward the group. He expects fair payment for any sort of favor or information."
+        },
+        "9-10": {
+          "description": "<b>Cooperative: </b>The character is gener­ally sympathetic. He helps if he can for a small fee, favor, or kindness."
+        },
+        "11-11": {
+          "description": "<b>Friendly: </b>The individual goes out of his way for the hero. He likely does simple tasks for very little, and is willing to do more dangerous tasks for fair pay or other favors."
+        },
+        "12-12": {
+          "description": "<b>Helpful: </b>Helpful: The target is anxious to help the hero and probably does so for little or no reward."
+        }
+      }
+    },
+    "Injury Table": {
+      "name": "Injury Table",
+      "description": "If <b>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#incapacitation]{Incapacitation}</b> and failed Vigor roll, roll on this table.",
+      "results": {
+        "2-2": {
+          "description": "<b>Unmentionables:</b> If the injury is permanent, reproduction is out of the question without miracle surgery or magic. There is no other effect from this result."
+        },
+        "3-4": {
+          "description": "<b>Arm:</b> The victim can no longer use his left or right arm (rolled randomly if not targeted)."
+        },
+        "5-9": {
+          "name": "GutsInjury",
+          "description": "GutsInjury"
+        },
+        "10-11": {
+          "description": "<b>Leg:</b> Gain the @Compendium[swade-core-rules.swade-hindrances.Slow]{Slow} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} (Minor), or Major if already @Compendium[swade-core-rules.swade-hindrances.Slow]{Slow} or injured in either leg."
+        },
+        "12-12": {
+          "name": "HeadInjury",
+          "description": "HeadInjury"
+        }
+      }
+    },
+    "Fear Table": {
+      "name": "Fear Table",
+      "description": "Change the Roll Table Formula to include the modifier, like \"d20+2\". Or for easier rolls, click @Compendium[swade-core-rules.swade-macros.Fear Table]{Fear Table Macro} to be prompted for a modifier. If you did use the Macro to get this result, please disregard this message. You can read more about the Fear table by clicking @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04fear0000000000]{here}",
+      "results": {
+        "1-3": {
+          "description": "<b>Adrenaline Surge: </b>The hero’s “fight” response takes over. He acts as if he had a @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actioncardsi00#the-countdown]{Joker} this action!"
+        },
+        "4-6": {
+          "description": "<b>Distracted: </b>The hero is @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03distractedan00#distracted-and-vulnerable]{Distracted} until the end of his next turn."
+        },
+        "7-9": {
+          "description": "<b>Vulnerable: </b>The target is @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03distractedan00#distracted-and-vulnerable]{Vulnerable} until the end of his next turn."
+        },
+        "10-12": {
+          "description": "<b>Shaken: </b>The character is @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#shaken]{Shaken}"
+        },
+        "13-13": {
+          "description": "<b>The Mark of Fear: </b>The hero is @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03stunned0000000]{Stunned} and suffers some cosmetic physical alteration—a white streak forms in his hair, his eyes twitch constantly, or some other minor physical alteration manifests."
+        },
+        "14-15": {
+          "description": "<b>Frightened: </b>The character gains the @Compendium[swade-core-rules.swade-hindrances.Hesitant]{Hesitant} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} for the remainder of the encounter. If he already has it, he’s Panicked instead."
+        },
+        "16-17": {
+          "description": "<b>Panicked: </b>The character immediately moves his full @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{Pace} plus running die away from the danger and is @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#shaken]{Shaken}"
+        },
+        "18-19": {
+          "description": "<b>Minor Phobia: </b>The character gains a Minor @Compendium[swade-core-rules.swade-hindrances.Phobia]{Phobia} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} somehow associated with the trauma."
+        },
+        "20-21": {
+          "description": "<b>Major Phobia: </b>The character gains the Major @Compendium[swade-core-rules.swade-hindrances.Phobia]{Phobia} Hindrance."
+        },
+        "22-9999": {
+          "description": "<b>Heart Attack: </b>The hero is so over­whelmed with fear that his heart stutters. He must make an immediate @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Vigor} roll at –2. If successful, he’s @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03stunned0000000]{Stunned}. If he fails, he’s @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Incapacitated} and dies in 2d6 rounds. In the latter case, a @Compendium[swade-core-rules.swade-skills.Healing]{Healing} roll at –4 saves his life, but he remains @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Incapacitated}. He may be treated normally thereafter."
+        }
+      }
+    },
+    "GutsInjury": {
+      "name": "GutsInjury",
+      "results": {
+        "1-2": {
+          "description": "<p><strong>Broken Guts:</strong> Agility reduced a die type (minimum d4).</p>"
+        },
+        "3-4": {
+          "description": "<p><strong>Battered Guts:</strong> Vigor reduced a die type (minimum d4).</p>"
+        },
+        "5-6": {
+          "description": "<p><strong>Busted Guts: </strong>Strength reduced a die type (minimum d4).</p>"
+        }
+      }
+    },
+    "Dynamic Backlash": {
+      "name": "Dynamic Backlash",
+      "description": "Normally, a Critical Failure on an arcane skill results in Fatigue. If the GM feels it should have a higher price, use this table instead. See <b>@UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04dynamicbackl00]{Dynamic Backlash}</b>",
+      "results": {
+        "2-2": {
+          "description": "<p><strong>Catastrophe:</strong> Something goes terribly wrong. The GM must decide what, but some ideas are a new and permanent Minor @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, the inability to use @UUID[Compendium.swade-core-rules.swade-rules.swadecor05powers.JournalEntryPage.05powers00000000]{powers} for several days, or an explosion of some sort. The backlash should be thematic if possible. If the hero tampers with dark forces for his abilities, for example, he might become corrupted or summon something sinister into the world. If he’s a weird scientist the device might explode for 3d6 damage in a @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03blasttemplat00#blast-templates]{Medium Blast Template}, or he might develop a @Compendium[swade-core-rules.swade-hindrances.Quirk]{Quirk}, @Compendium[swade-core-rules.swade-hindrances.Phobia]{Phobia}, or other “madness.”</p>"
+        },
+        "3-3": {
+          "description": "<b>Backfire:</b> The power succeeds as with a raise but affects a different target with the worst possible results. A <i>@Compendium[swade-core-rules.swade-powers.Bolt]{bolt}</i> hits a random friend, <i>@Compendium[swade-core-rules.swade-powers.Boost/Lower Trait]{boost Trait}</i> increases an enemy’s @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{skill or attribute}, etc. If there’s no likely target, he’s @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03stunned0000000]{Stunned} instead. If the power has a @UUID[Compendium.swade-core-rules.swade-rules.swadecor05powers.JournalEntryPage.05powers00000000]{Duration} other than Instant, it lasts its full term and can only be negated by <i>d@Compendium[swade-core-rules.swade-powers.Dispel]{dispel}</i> (the caster can’t voluntarily end it herself)."
+        },
+        "4-5": {
+          "description": "<b>Short Circuit:</b> The power fails but the @UUID[Compendium.swade-core-rules.swade-rules.swadecor05powers.JournalEntryPage.05powers00000000]{Power Points}  allocated to it are spent, along with an additional 1d6 @UUID[Compendium.swade-core-rules.swade-rules.swadecor05powers.JournalEntryPage.05powers00000000]{Power Points} ."
+        },
+        "6-8": {
+          "description": "<b>Stunned:</b> The caster is <b>@UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03stunned0000000]{Stunned}</b>. She subtracts 2 from arcane skill rolls for the rest of the encounter (the penalty remains –2 even if she gets this result again)."
+        },
+        "9-10": {
+          "description": "<b>Overload:</b> The character’s synapses crackle and overload with power. He takes 2d6 damage plus the cost of the power in @UUID[Compendium.swade-core-rules.swade-rules.swadecor05powers.JournalEntryPage.05powers00000000]{Power Points} , including any @UUID[Compendium.swade-core-rules.swade-rules.swadecor05powers.JournalEntryPage.05powermodifie00]{Power Modifiers} the player declared."
+        },
+        "11-11": {
+          "description": "<b>Fatigue:</b> The character suffers @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03fatigue0000000]{Fatigue}."
+        },
+        "12-12": {
+          "description": "<p><strong>Overcharge:</strong> The power draws ambient energy from the air, automatically suc­ceeding against the target with a @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#raises]{raise} and costing the caster no @UUID[Compendium.swade-core-rules.swade-rules.swadecor05powers.JournalEntryPage.05powers00000000]{Power Points}!</p>"
+        }
+      }
+    }
+  }
+}

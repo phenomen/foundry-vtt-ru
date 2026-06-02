@@ -1,0 +1,57 @@
+{
+  "label": "Macros",
+  "entries": {
+    "Boost // Lower Trait": {
+      "name": "Boost // Lower Trait",
+      "command": "const power = await fromUuid('Compendium.swade-core-rules.swade-powers.Item.FSwGNyzYvYRMhOkV')\ngame.swadeCore.macros.applyBoostLowerTraitSwadeCore(actor, power.system.description)"
+    },
+    "Patch All Actors": {
+      "name": "Patch All Actors",
+      "command": "game.swadeCore.macros.patchActorsDialog()"
+    },
+    "Poison": {
+      "name": "Poison",
+      "command": "game.swadeCore.macros.applyPoison()"
+    },
+    "Status Changer": {
+      "name": "Status Changer",
+      "command": "game.swadeCore.macros.manageStatusEffects()"
+    },
+    "Place Template": {
+      "name": "Place Template",
+      "command": "game.swadeCore.macros.placeTemplateMacro()"
+    },
+    "Healing": {
+      "name": "Healing",
+      "command": "game.swadeCore.macros.healWounds()"
+    },
+    "Add Warrior's Gift Edges": {
+      "name": "Add Warrior's Gift Edges",
+      "command": "game.swadeCore.macros.warriorsGift()"
+    },
+    "Damage": {
+      "name": "Damage",
+      "command": "game.swadeCore.macros.rollDamage()"
+    },
+    "Fear Table": {
+      "name": "Fear Table",
+      "command": "game.swadeCore.macros.coreFearDialog(actor)"
+    },
+    "Apply Smite": {
+      "name": "Apply Smite",
+      "command": "game.swadeCore.macros.applySmiteEffect()"
+    },
+    "Tactician Edge": {
+      "name": "Tactician Edge",
+      "command": "game.swadeCore.macros.tactician()"
+    },
+    "Wild Attack": {
+      "name": "Wild Attack",
+      "command": "game.swadeCore.macros.wildAttack()"
+    },
+    "Jack of All Trades": {
+      "name": "Jack of All Trades",
+      "command": "game.swadeCore.macros.jackOfAllTrades()"
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "label": "Special Abilities",
+  "entries": {
+    "Swarm": {
+      "name": "Swarm",
+      "description": "<ul>\n<li><strong>Swarm: </strong>+2 to recover from being @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Shaken}, @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Parry} +2. Swarms are composed of many small creatures, so cutting and piercing weapons do no real damage. @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03areaeffectat00]{Area eﬀect attacks} work normally, and a character can stomp to inﬂict his damage in @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Strength} each round. Some swarms (bees, hornets, birds) may be foiled by total immersion in water.</li>\n</ul>",
+      "effects": {
+        "Swarm": {
+          "name": "Swarm"
+        }
+      }
+    },
+    "Hardy": {
+      "name": "Hardy",
+      "description": "<ul>\n<li><strong>@UUID[Compendium.swade-core-rules.swade-rules.swadecor06bestia.JournalEntryPage.06specialabili14]{Hardy}:</strong> The creature does not suffer a Wound from being @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Shaken} twice.</li>\n</ul>",
+      "effects": {
+        "Hardy": {
+          "name": "Hardy",
+          "description": "<ul>\n<li><strong>@UUID[Compendium.swade-core-rules.swade-rules.swadecor06bestia.JournalEntryPage.06specialabili14]{Hardy}:</strong> The creature does not suffer a Wound from being @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Shaken} twice.</li>\n</ul>"
+        }
+      }
+    },
+    "Construct": {
+      "name": "Construct",
+      "description": "<p>Robots, golems, and other animated objects are collectively called “constructs.” Some are sentient beings while others are mere automatons following the will of their masters.</p> <p>Whatever their origin or material, constructs have several inherent advantages over creatures of flesh and blood.</p> <p>Constructs add +2 when attempting to recover from being @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Shaken}, ignore 1 point of @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wound} penalties, don’t breathe or eat and are immune to @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04disease0000000]{disease} and @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04poison00000000]{poison}, don’t @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Bleed Out}, and Wounds are removed with @Compendium[swade-core-rules.swade-skills.Repair]{Repair} instead of @Compendium[swade-core-rules.swade-powers.Healing]{Healing} with no @Compendium[swade-core-rules.swade-powers.Healing]{“Golden Hour.”}</p>",
+      "effects": {
+        "Construct": {
+          "name": "Construct"
+        }
+      }
+    },
+    "Regeneration": {
+      "name": "Regeneration",
+      "description": "<p>Legend has it that @Compendium[swade-core-rules.swade-bestiary.Troll]{trolls}, @Compendium[swade-core-rules.swade-bestiary.Vampire]{vampires}, and certain other types of legendary creatures can Regenerate damage caused to them.</p> <p>Regeneration comes in two types: Fast and Slow.</p> <ul class=\"red-bullet-list\"> <li><strong>FAST: </strong>Wounded creatures make a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Vigor} roll every round—even after they’ve been @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Incapacitated}. A success heals one @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wound} (or removes Incapacitated status), and a raise heals an additional Wound. Wounds caused by some types of damage, listed in the creature’s description, do not regenerate but may still @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03healing0000000]{heal} naturally. Trolls cannot regenerate Wounds caused by flame, for example.</li> <li><strong>SLOW: </strong>The creature makes a @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03healing0000000#natural-healing]{natural healing roll} once per day.</li> </ul>"
+    },
+    "Burrow": {
+      "name": "Burrow",
+      "description": "<p>From massive worms to sand-dwelling humanoids, many creatures are able to burrow beneath the earth and move within it.</p> <p>Burrowers can tunnel underground and reappear elsewhere for devastating surprise attacks against their foes. The distance a creature can burrow on its turn is written immediately after its Burrow ability.</p> <p>A burrowing creature may tunnel on its @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03actions0000000]{action}, and may erupt from the ground at any point within its burrowing @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{Pace} in the same turn. It cannot be attacked while beneath the earth unless the attacker has some special means of detecting it and penetrating the intervening dirt.</p> <p>Burrowing creatures erupt from beneath their opponents and may take them by surprise. If the target was unaware of the burrower’s presence, the creature makes an opposed @Compendium[swade-core-rules.swade-skills.Stealth]{Stealth} roll versus the victim’s @Compendium[swade-core-rules.swade-skills.Notice]{Notice}. If the burrower wins, the target is @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03distractedan00]{Vulnerable} <em>to it only</em>. With a raise, the burrower gets @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03thedrop0000000]{the Drop}. Targets on @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03hold0000000000]{Hold} may attempt to interrupt the attack before it occurs.</p> <p>Burrowers can’t usually surprise a foe once their presence is known, but can still burrow for protection and mobility.</p>"
+    },
+    "Change Form": {
+      "name": "Change Form",
+      "description": "<ul>\n<li><strong>Change Form:</strong> As an action, a vampire can change into a wolf or bat with a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Smarts} roll at &minus;2. Changing back into humanoid form requires a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Smarts} roll.</li>\n</ul>"
+    },
+    "Fear": {
+      "name": "Fear",
+      "description": "<p>Particularly frightening monsters cause Fear checks to all who see them. Some truly terrifying monsters may inflict penalties on Fear checks as well. A creature with Fear −2, for instance, causes those who see it to make their Fear checks at −2. See the <strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04fear0000000000]{Fear}</strong> rules for effects.</p>"
+    },
+    "Poison": {
+      "name": "Poison",
+      "description": "<p>Snakes, spiders, and other creatures inject @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04poison00000000]{poisonous} venom via bite or scratch. To do so, the thing must cause at least a @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Shaken} result to the victim, who then makes a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Vigor} roll modified by the strength of the poison (listed in parentheses after the creature’s Poison ability). Effects of failure are described in more detail in the <b>@UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04hazards0000000]{Hazards}</b> section.</p>"
+    },
+    "Immunity": {
+      "name": "Immunity",
+      "description": "<p>Creatures born in fire aren’t affected by @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04heat0000000000]{heat}, and a horror made of pure lightning won’t suffer from a <em>@Compendium[swade-core-rules.swade-powers.Bolt]{bolt}</em> attack with an electrical @UUID[Compendium.swade-core-rules.swade-rules.swadecor05powers.JournalEntryPage.05trappings00000]{trapping}. Immunities are to specific types of attacks, such as @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04fire0000000000]{fire}, @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04cold0000000000]{cold}, electricity, and so on. Such creatures don’t have <strong>@UUID[Compendium.swade-core-rules.swade-rules.swadecor06bestia.JournalEntryPage.06specialabili19]{Invulnerability}</strong>, they just ignore @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{damage} and @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03stunned0000000]{Stun} results from the specific attack types named.</p>"
+    },
+    "Charm": {
+      "name": "Charm",
+      "description": "<ul>\n<li><strong>Charm:</strong> Vampires can use the <em>@Compendium[swade-core-rules.swade-powers.Puppet]{puppet}</em> power on those attracted to them (GM&rsquo;s call) using their @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Smarts} as their @UUID[Compendium.swade-core-rules.swade-rules.swadecor05powers.JournalEntryPage.05arcanebackgr00]{arcane skill}. They can cast and maintain the power indefinitely, but may only affect one target at a time.</li>\n</ul>"
+    },
+    "Elemental": {
+      "name": "Elemental",
+      "description": "<p>Air, earth, fire, and water form the basis of the elemental realms, wherein dwell strange, unfathomable creatures.</p> <p>Elementals have bodies of pure earth, water, air, or fire and thus ignore additional damage from @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03calledshots000]{Called Shots}, ignore 1 point of @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wound} penalties, don’t breathe or eat and are immune to @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04disease0000000]{disease} and @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04poison00000000]{poison}, can only be @Compendium[swade-core-rules.swade-skills.Healing]{healed} via magic or natural healing.</p>",
+      "effects": {
+        "Elemental": {
+          "name": "Elemental"
+        }
+      }
+    },
+    "Invulnerability": {
+      "name": "Invulnerability",
+      "description": "<p>Some Savage Tales feature invulnerable horrors that can only be defeated by discovering their weakness.</p> <p>Invulnerable creatures ignore damage as listed in their description. Unless otherwise specified, they can be @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Shaken} or @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03stunned0000000]{Stunned} but not @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wounded} by other forms of damage. An ancient dark god given life by misguided cultists, for example, might only be vulnerable to shards of stained glass gathered from a church.</p>"
+    },
+    "Infravision": {
+      "name": "Infravision",
+      "description": "<p>Nocturnal beasts often see in the infrared spectrum—meaning they can “see” by detecting heat. Creatures with Infravision halve penalties for bad lighting when attacking targets that radiate warmth (including <i>invisible</i> foes).</p> <p>Clever characters may figure out ways to mask their heat from such creatures. Smearing cold mud over one’s body or wearing special heat-filtering suits generally obscures the target from those with Infravision.</p> <p>Humanoids with Infravision usually have normal sight as well.</p> <p><em>(Infravision can be set as a Detection Mode in token settings, try \"See Heat\")</em></P>"
+    },
+    "Aquatic": {
+      "name": "Aquatic",
+      "description": "<p>The creature is native to the water. It is a natural swimmer and cannot drown. Its @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{Pace} in water is specified after the Aquatic ability.</p>"
+    },
+    "Undead": {
+      "name": "Undead",
+      "description": "<p>@Compendium[swade-core-rules.swade-bestiary.Zombie]{Zombies}, @Compendium[swade-core-rules.swade-bestiary.Skeleton]{skeletons}, and similar physical horrors are particularly difficult to destroy. Below are the benefits of being such an abomination.</p> <li>Add +2 to @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Toughness} and @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Spirit} rolls to recover from being @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Shaken}, ignore addi­tional damage from @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03calledshots000]{Called Shots}, ignore 1 point of @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wound} penalties, don’t breathe or eat and are immune to @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04disease0000000]{disease} and @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04poison00000000]{poison}, don’t @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Bleed Out}, and can only be healed with magical <i>@Compendium[swade-core-rules.swade-powers.Healing]{healing}</i>.</li>",
+      "effects": {
+        "Undead": {
+          "name": "Undead"
+        }
+      }
+    },
+    "Infection": {
+      "name": "Infection",
+      "description": "<p>A @Compendium[swade-core-rules.swade-bestiary.Vampire]{vampire}’s bite, a horrid @Compendium[swade-core-rules.swade-bestiary.Spider, Giant]{spider}-like creature that injects eggs into its victim’s skin, or even the @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04disease0000000]{disease}-born scratching of @Compendium[swade-core-rules.swade-bestiary.Swarm]{rats} are all examples of Infection.</p> <p>A character @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Shaken} or @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wounded} by a creature with Infection must make a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Vigor} roll. Modifiers to the roll are listed in the creature’s description, as are the effects of failure.</p>"
+    },
+    "Fearless": {
+      "name": "Fearless",
+      "description": "<p>Mindless creatures, some undead, robots, and the like don’t suffer from the weaknesses of the mortal mind. Fearless creatures are immune to @Compendium[swade-core-rules.swade-powers.Fear]{Fear} effects and @Compendium[swade-core-rules.swade-skills.Intimidation]{Intimidation}. They may still be @Compendium[swade-core-rules.swade-skills.Taunt]{Taunted}, however (usually because it draws their attention rather than causing emotional distress).</p>"
+    },
+    "Seep": {
+      "name": "Seep",
+      "description": "<ul>\n<li><strong>Seep:</strong> Can squeeze through any porous gap as if it were @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{Difficult Ground}.</li>\n</ul>"
+    },
+    "Zombie": {
+      "name": "Zombie",
+      "description": "<ul>\n<li><strong>Zombie:</strong> Liches are necromancers first and foremost. The undead they raise through the <em>@Compendium[swade-core-rules.swade-powers.Zombie]{zombie}</em> spell are permanent, and they may raise @Compendium[swade-core-rules.swade-bestiary.Skeleton]{skeletons} just like @Compendium[swade-core-rules.swade-bestiary.Zombie]{zombies} as they choose. Some liches have built up entire armies of the undead at their disposal.</li>\n</ul>"
+    },
+    "Low Light Vision": {
+      "name": "Low Light Vision",
+      "description": "<p>Low Light Vision ignores penalties for Dim and Dark @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03illumination00]{Illumination} (but not Pitch Darkness).</p>"
+    },
+    "Wall Walker": {
+      "name": "Wall Walker",
+      "description": "<p>Some creatures have the ability to walk on walls. They automatically walk on vertical or inverted surfaces just as a human walks on the earth.</p> <p>A Wall Walker’s movement rate when walking on walls is its standard @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{Pace}. It may run as usual when walking on walls unless the specific creature’s text says otherwise.</p>"
+    },
+    "Fear (-2)": {
+      "name": "Fear (-2)",
+      "description": "<p>Particularly frightening monsters cause Fear checks to all who see them. Some truly terrifying monsters may inflict penalties on Fear checks as well. This creature causes those who see it to make their Fear checks at −2. See the <strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04fear0000000000]{Fear}</strong> rules for effects.</p>"
+    },
+    "Flight": {
+      "name": "Flight",
+      "description": "<p>The creature can fly at the listed @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{Pace}. It uses its @Compendium[swade-core-rules.swade-skills.Athletics]{Athletics} to maneuver in chases or other situations.</p>"
+    },
+    "Resilient": {
+      "name": "Resilient",
+      "description": "<p>Elite @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03wildcardsand00]{Extras} are tougher than usual. This might include specially bred @Compendium[swade-core-rules.swade-bestiary.Orc]{orcs} in a fantasy setting, particularly tough thugs or agents in the modern world, or even mutant animals created in the lab of some mad scientist.</p> <p>Resilient Extras can take one @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wound} before they’re @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Incapacitated}, Very Resilient Extras can take two. Wild Cards can’t be Resilient or Very Resilient. The abilities exist to bring select Extras a little closer to the heroes and villains who lead them.</p>",
+      "effects": {
+        "Resilient": {
+          "name": "Resilient",
+          "description": "<p>Resilient Extras can take one @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wound} before they’re @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Incapacitated}</p>"
+        },
+        "Very Resilient": {
+          "name": "Very Resilient",
+          "description": "<p>Very Resilient Extras can take two @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wounds} before they’re @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Incapacitated}</p>"
+        }
+      }
+    },
+    "Sire": {
+      "name": "Sire",
+      "description": "<ul>\n<li><strong>Sire: </strong>Anyone slain by a vampire has a 50% chance of rising as a vampire in [[/r 1d4]] days.</li>\n</ul>"
+    },
+    "Ethereal": {
+      "name": "Ethereal",
+      "description": "<p>@Compendium[swade-core-rules.swade-bestiary.Ghost]{Ghosts}, shadows, will-o’-the-wisps, and similar intangible creatures have no form in the physical world (or can turn it on and off at will). They can pass through physical objects, cannot be harmed by non-magical attacks, and cannot even be seen unless they desire to be. Ethereal creatures are affected by magical items, weapons, and supernatural powers.</p> <p>Unless its description says otherwise, ethereal creatures can throw objects, wield weapons, or even push terrified heroes down long, dark stairs.</p>"
+    },
+    "Constrict": {
+      "name": "Constrict",
+      "description": "<ul>\n<li><strong>Constrict: </strong>+2 to @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Athletics} and @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Strength} rolls made to @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03grappling00000]{grapple}.</li>\n</ul>"
+    },
+    "Swat": {
+      "name": "Swat",
+      "description": "<p>The creature has learned how to deal with pesky creatures smaller than itself. It ignores up 4 points of @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Scale} penalties when attacking with certain abilities listed in its description (and only those specific abilities).</p>"
+    },
+    "Tentacles": {
+      "name": "Tentacles",
+      "description": "<p>The creature has a number of “tentacle actions” specified in its description (usually 2 or 4). Tentacle actions collectively count as a single limited action for the creature on its turn. The actions must stem from the tentacle in some way—usually a @Compendium[swade-core-rules.swade-skills.Fighting]{Fighting}, @Compendium[swade-core-rules.swade-skills.Shooting]{Shooting}, or @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03grappling00000]{grappling} attack, but this is the GM’s call.</p> <p>If the creature is a @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03wildcardsand00]{Wild Card}, it rolls its @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Wild Die} with each tentacle action as usual.</p> <p>If the being performs other actions on its turn, such as @Compendium[swade-core-rules.swade-skills.Taunt]{Taunting} or casting a spell, these and the tentacle actions are affected by the @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03multiactions00]{Multi-Action} penalty as usual.</p> <p>Grappling rolls made with tentacles get a +2 bonus, and “crushing” causes the creature’s @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Strength} in damage unless otherwise listed.</p> <p>Severing a tentacle is a @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03calledshots000]{Called Shot}. If damage exceeds the creature’s @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Toughness}, the limb is severed and the monster is @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Shaken}. If it was already Shaken, it takes a @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wound}.</p>"
+    },
+    "Mist": {
+      "name": "Mist",
+      "description": "<ul>\n<li><strong>Mist:</strong> Ancient vampires have the ability to turn into mist. Doing so (or returning to human form) requires an action and a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Smarts} roll at &minus;2.</li>\n</ul>"
+    },
+    "Fast Regeneration": {
+      "name": "Fast Regeneration",
+      "description": "<ul>\n<li><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor06bestia.JournalEntryPage.06specialabili23]{Fast Regeneration}:</strong> Some creatures heal quickly and may attempt a @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03healing0000000]{natural healing} roll every round, even if @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Incapacitated,} unless their @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wounds} were caused by ﬁre or ﬂame or they&rsquo;re put to the torch afterward.</li>\n</ul>"
+    },
+    "Gaseous Form": {
+      "name": "Gaseous Form",
+      "description": "<ul>\n<li><strong>Gaseous Form:</strong> Can maneuver through any non-solid surface, pass through cracks in doors or windows, bubble through water, etc.</li>\n</ul>"
+    },
+    "Night Vision": {
+      "name": "Night Vision",
+      "description": "<ul>\n<li><strong>Night Vision:</strong> Sensor packages ignore penalties for @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03illumination00]{Illumination}.</li>\n</ul>"
+    },
+    "Speed": {
+      "name": "Speed",
+      "description": "<ul>\n<li><strong>Speed:</strong> d10 @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{running die}.</li>\n</ul>",
+      "effects": {
+        "Speed": {
+          "name": "Speed"
+        }
+      }
+    },
+    "Ornery": {
+      "name": "Ornery",
+      "description": "<ul>\n<li><strong>Ornery:</strong> Mules are contrary creatures. Characters must subtract 1 from their @Compendium[swade-core-rules.swade-skills.Riding]{Riding} rolls when riding them.</li>\n</ul>"
+    },
+    "Weakness": {
+      "name": "Weakness",
+      "description": "<p>Some creatures suffer additional damage or can only be hurt by their Weakness. A creature made of ice, for example, might take double damage from @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04fire0000000000]{fire}. See the creature’s description for particular effects.</p>"
+    },
+    "Split": {
+      "name": "Split",
+      "description": "<ul>\n<li><strong>Split: </strong>Some swarms split into two smaller swarms when @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wounded} (GM&rsquo;s call). Reduce the @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03areaeffectat00]{Blast Template} one size after a @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wound}; Small swarms are destroyed.</li>\n</ul>"
+    },
+    "Children of the Night": {
+      "name": "Children of the Night",
+      "description": "<ul>\n<li><strong>Children of the Night:</strong> Ancient vampires have the ability to summon and control wolves or rats. This requires an action and a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Smarts} roll at &minus;2. If successful, [[1d6]] # Wolves summoned wolves or [[1d6]] # Swarms of rats summoned swarms of rats (see @Compendium[swade-core-rules.swade-bestiary.Swarm]{Swarm}) come from the surrounding wilds in [[1d6+2]] # Rounds until summoned rounds.</li>\n</ul>"
+    }
+  }
+}

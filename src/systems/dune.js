@@ -1,5 +1,5 @@
-import { setupBabele } from "../babele-helpers.js";
+import { registerCompendiumTranslations } from "../babele-helpers.js";
 
-export const init = () => {
-  setupBabele("dune");
-};
+export function registerBabeleTranslations(babele) {
+  registerCompendiumTranslations(babele, "dune");
+}

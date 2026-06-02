@@ -1,7 +1,7 @@
 {
   "label": "Заклинания (Modern)",
   "folders": {
-    "Cantrip": "Фокусы",
+    "Cantrips": "Фокусы",
     "1st Level": "1-й круг",
     "2nd Level": "2-й круг",
     "3rd Level": "3-й круг",
@@ -51,34 +51,19 @@
       "description": "<div><p>For the duration, the willing creature you touch has Resistance to one damage type of your choice: Acid, Cold, Fire, Lightning, or Thunder.</p></div>",
       "effects": {
         "Acid Protection": {
-          "name": "Acid Protection",
-          "changes": {
-            "system.traits.dr.value": "acid"
-          }
+          "name": "Acid Protection"
         },
         "Cold Protection": {
-          "name": "Cold Protection",
-          "changes": {
-            "system.traits.dr.value": "cold"
-          }
+          "name": "Cold Protection"
         },
         "Fire Protection": {
-          "name": "Fire Protection",
-          "changes": {
-            "system.traits.dr.value": "fire"
-          }
+          "name": "Fire Protection"
         },
         "Lightning Protection": {
-          "name": "Lightning Protection",
-          "changes": {
-            "system.traits.dr.value": "lightning"
-          }
+          "name": "Lightning Protection"
         },
         "Thunder Protection": {
-          "name": "Thunder Protection",
-          "changes": {
-            "system.traits.dr.value": "thunder"
-          }
+          "name": "Thunder Protection"
         }
       }
     },
@@ -102,59 +87,35 @@
       "effects": {
         "Level 2: +5 Max HP": {
           "name": "Level 2: +5 Max HP",
-          "description": "<p>The target's Hit Point maximum is increased for the duration.</p>",
-          "changes": {
-            "system.attributes.hp.tempmax": 5
-          }
+          "description": "<p>The target's Hit Point maximum is increased for the duration.</p>"
         },
         "Level 3: +10 Max HP": {
           "name": "Level 3: +10 Max HP",
-          "description": "<p>The target's Hit Point maximum is increased for the duration.</p>",
-          "changes": {
-            "system.attributes.hp.tempmax": 10
-          }
+          "description": "<p>The target's Hit Point maximum is increased for the duration.</p>"
         },
         "Level 4: +15 Max HP": {
           "name": "Level 4: +15 Max HP",
-          "description": "<p>The target's Hit Point maximum is increased for the duration.</p>",
-          "changes": {
-            "system.attributes.hp.tempmax": 15
-          }
+          "description": "<p>The target's Hit Point maximum is increased for the duration.</p>"
         },
         "Level 5: +20 Max HP": {
           "name": "Level 5: +20 Max HP",
-          "description": "<p>The target's Hit Point maximum is increased for the duration.</p>",
-          "changes": {
-            "system.attributes.hp.tempmax": 20
-          }
+          "description": "<p>The target's Hit Point maximum is increased for the duration.</p>"
         },
         "Level 6: +25 Max HP": {
           "name": "Level 6: +25 Max HP",
-          "description": "<p>The target's Hit Point maximum is increased for the duration.</p>",
-          "changes": {
-            "system.attributes.hp.tempmax": 25
-          }
+          "description": "<p>The target's Hit Point maximum is increased for the duration.</p>"
         },
         "Level 7: +30 Max HP": {
           "name": "Level 7: +30 Max HP",
-          "description": "<p>The target's Hit Point maximum is increased for the duration.</p>",
-          "changes": {
-            "system.attributes.hp.tempmax": 30
-          }
+          "description": "<p>The target's Hit Point maximum is increased for the duration.</p>"
         },
         "Level 8: +35 Max HP": {
           "name": "Level 8: +35 Max HP",
-          "description": "<p>The target's Hit Point maximum is increased for the duration.</p>",
-          "changes": {
-            "system.attributes.hp.tempmax": 35
-          }
+          "description": "<p>The target's Hit Point maximum is increased for the duration.</p>"
         },
         "Level 9: +40 Max HP": {
           "name": "Level 9: +40 Max HP",
-          "description": "<p>The target's Hit Point maximum is increased for the duration.</p>",
-          "changes": {
-            "system.attributes.hp.tempmax": 40
-          }
+          "description": "<p>The target's Hit Point maximum is increased for the duration.</p>"
         }
       }
     },
@@ -168,10 +129,7 @@
       "effects": {
         "Aquatic Adaptation": {
           "name": "Aquatic Adaptation",
-          "description": "<p>You can breathe underwater and gain a Swim Speed equal to your Speed.</p>",
-          "changes": {
-            "system.attributes.movement.swim": 1
-          }
+          "description": "<p>You can breathe underwater and gain a Swim Speed equal to your Speed.</p>"
         },
         "Altered Appearance": {
           "name": "Altered Appearance"
@@ -279,10 +237,7 @@
       "effects": {
         "Aura of Life": {
           "name": "Aura of Life",
-          "description": "<p>While in the aura, you and your allies have Resistance to Necrotic damage, and your Hit Point maximums can’t be reduced. If an ally with 0 Hit Points starts its turn in the aura, that ally regains [[/healing 1 type=healing]]{1 Hit Point}.</p>",
-          "changes": {
-            "system.traits.dr.value": "necrotic"
-          }
+          "description": "<p>While in the aura, you and your allies have Resistance to Necrotic damage, and your Hit Point maximums can’t be reduced. If an ally with 0 Hit Points starts its turn in the aura, that ally regains [[/healing 1 type=healing]]{1 Hit Point}.</p>"
         }
       }
     },
@@ -296,14 +251,7 @@
       "effects": {
         "Bane": {
           "name": "Bane",
-          "description": "<p>Whenever a target makes an attack roll or a saving throw before the spell ends, the target must subtract 1d4 from the attack roll or save.</p>",
-          "changes": {
-            "system.bonuses.abilities.save": "-1d4",
-            "system.bonuses.mwak.attack": "-1d4",
-            "system.bonuses.msak.attack": "-1d4",
-            "system.bonuses.rsak.attack": "-1d4",
-            "system.bonuses.rwak.attack": "-1d4"
-          }
+          "description": "<p>Whenever a target makes an attack roll or a saving throw before the spell ends, the target must subtract 1d4 from the attack roll or save.</p>"
         }
       }
     },
@@ -322,10 +270,7 @@
       "description": "<p>You touch a willing creature. Until the spell ends, the target's skin assumes a bark-like appearance, and the target has an Armor Class of 17 if its AC is lower than that.</p>",
       "effects": {
         "Bark-like Skin": {
-          "name": "Bark-like Skin",
-          "changes": {
-            "system.attributes.ac.min": 17
-          }
+          "name": "Bark-like Skin"
         }
       }
     },
@@ -335,11 +280,7 @@
       "effects": {
         "Hopeful": {
           "name": "Hopeful",
-          "description": "<p>The target has Advantage on Wisdom saving throws and Death Saving Throws and regains the maximum number of Hit Points possible from any healing.</p>",
-          "changes": {
-            "system.abilities.wis.save.roll.mode": 1,
-            "system.attributes.death.roll.mode": 1
-          }
+          "description": "<p>The target has Advantage on Wisdom saving throws and Death Saving Throws and regains the maximum number of Hit Points possible from any healing.</p>"
         }
       }
     },
@@ -359,50 +300,27 @@
       "effects": {
         "Cursed Charisma": {
           "name": "Cursed Charisma",
-          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.cha.check.roll.mode": -1,
-            "system.abilities.cha.save.roll.mode": -1
-          }
+          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>"
         },
         "Cursed Constitution": {
           "name": "Cursed Constitution",
-          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.con.check.roll.mode": -1,
-            "system.abilities.con.save.roll.mode": -1
-          }
+          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>"
         },
         "Cursed Dexterity": {
           "name": "Cursed Dexterity",
-          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.dex.check.roll.mode": -1,
-            "system.abilities.dex.save.roll.mode": -1
-          }
+          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>"
         },
         "Cursed Intelligence": {
           "name": "Cursed Intelligence",
-          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.int.check.roll.mode": -1,
-            "system.abilities.int.save.roll.mode": -1
-          }
+          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>"
         },
         "Cursed Strength": {
           "name": "Cursed Strength",
-          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.str.check.roll.mode": -1,
-            "system.abilities.str.save.roll.mode": -1
-          }
+          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>"
         },
         "Cursed Wisdom": {
           "name": "Cursed Wisdom",
-          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.wis.save.roll.mode": -1
-          }
+          "description": "<p>The target has Disadvantage on ability checks and saving throws made with the chosen ability.</p>"
         },
         "Cursed Attacks": {
           "name": "Cursed Attacks",
@@ -432,14 +350,7 @@
       "effects": {
         "Blessed": {
           "name": "Blessed",
-          "description": "<p>Whenever a target makes an attack roll or a saving throw before the spell ends, the target adds 1d4 to the attack roll or save.</p>",
-          "changes": {
-            "system.bonuses.abilities.save": "1d4",
-            "system.bonuses.mwak.attack": "1d4",
-            "system.bonuses.msak.attack": "1d4",
-            "system.bonuses.rsak.attack": "1d4",
-            "system.bonuses.rwak.attack": "1d4"
-          }
+          "description": "<p>Whenever a target makes an attack roll or a saving throw before the spell ends, the target adds 1d4 to the attack roll or save.</p>"
         }
       }
     },
@@ -494,10 +405,7 @@
       "effects": {
         "Calmed": {
           "name": "Calmed",
-          "description": "<p>The creature has Immunity to the Charmed and Frightened conditions until the spell ends. If the creature was already Charmed or Frightened, those conditions are suppressed for the duration.</p>",
-          "changes": {
-            "system.traits.ci.value": "frightened"
-          }
+          "description": "<p>The creature has Immunity to the Charmed and Frightened conditions until the spell ends. If the creature was already Charmed or Frightened, those conditions are suppressed for the duration.</p>"
         },
         "Indifference": {
           "name": "Indifference",
@@ -585,10 +493,7 @@
       "description": "<p>For the duration, you understand the literal meaning of any language that you hear or see signed. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode symbols or secret messages.</p>",
       "effects": {
         "Comprehension": {
-          "name": "Comprehension",
-          "changes": {
-            "system.traits.languages.value": "ALL"
-          }
+          "name": "Comprehension"
         }
       }
     },
@@ -679,10 +584,7 @@
       "description": "<p>Choose a spell of level 5 or lower that you can cast, that has a casting time of an action, and that can target you. You cast that spell—called the contingent spell—as part of casting <em>Contingency</em>, expending spell slots for both, but the contingent spell doesn't come into effect. Instead, it takes effect when a certain trigger occurs. You describe that trigger when you cast the two spells. For example, a <em>Contingency</em> cast with <em>Water Breathing</em> might stipulate that <em>Water Breathing</em> comes into effect when you are engulfed in water or a similar liquid.</p><p>The contingent spell takes effect immediately after the trigger occurs for the first time, whether or not you want it to, and then <em>Contingency</em> ends.</p><p>The contingent spell takes effect only on you, even if it can normally target others. You can use only one <em>Contingency</em> spell at a time. If you cast this spell again, the effect of another <em>Contingency</em> spell on you ends. Also, <em>Contingency</em> ends on you if its material component is ever not on your person.</p><section class=\"secret\" id=\"secret-gnXQNvWGYfLGkrBe\"><p><strong>Foundry Note</strong></p><p>The \"create contingency\" activity is configured to optionally enchant a Scroll to track and serve as the triggered spell. Create a spell scroll by right clicking on a spell in your spell list, expend a spell slot of the created scroll's level, and enchant the scroll.</p></section>",
       "effects": {
         "Contingency Spell": {
-          "name": "Contingency Spell",
-          "changes": {
-            "name": "Contengency: {}"
-          }
+          "name": "Contingency Spell"
         }
       }
     },
@@ -736,10 +638,7 @@
       "effects": {
         "Darkvision": {
           "name": "Darkvision",
-          "description": "<p>For the duration, a willing creature you touch has &amp;Reference[darkvision] with a range of 150 feet.</p>",
-          "changes": {
-            "system.attributes.senses.darkvision": 120
-          }
+          "description": "<p>For the duration, a willing creature you touch has &amp;Reference[darkvision] with a range of 150 feet.</p>"
         }
       }
     },
@@ -841,11 +740,7 @@
       "description": "<p>Until the spell ends, your attacks with weapons deal an extra 1d4 Radiant damage on a hit.</p>",
       "effects": {
         "Divine Favor": {
-          "name": "Divine Favor",
-          "changes": {
-            "system.bonuses.mwak.damage": "1d4[radiant]",
-            "system.bonuses.rwak.damage": "1d4[radiant]"
-          }
+          "name": "Divine Favor"
         }
       }
     },
@@ -915,14 +810,7 @@
       "effects": {
         "Trance State": {
           "name": "Trance State",
-          "description": "<p><span style=\"font-family:Signika, sans-serif\">While in the trance, the messenger is Incapacitated and has a Speed of 0.</span></p>",
-          "changes": {
-            "system.attributes.movement.walk": 0,
-            "system.attributes.movement.fly": 0,
-            "system.attributes.movement.swim": 0,
-            "system.attributes.movement.burrow": 0,
-            "system.attributes.movement.climb": 0
-          }
+          "description": "<p><span style=\"font-family:Signika, sans-serif\">While in the trance, the messenger is Incapacitated and has a Speed of 0.</span></p>"
         }
       }
     },
@@ -954,38 +842,23 @@
       "effects": {
         "Enhanced Strength": {
           "name": "Enhanced Strength",
-          "description": "<p>The target has Advantage on ability checks made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.str.check.roll.mode": 1
-          }
+          "description": "<p>The target has Advantage on ability checks made with the chosen ability.</p>"
         },
         "Enhanced Dexterity": {
           "name": "Enhanced Dexterity",
-          "description": "<p>The target has Advantage on ability checks made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.dex.check.roll.mode": 1
-          }
+          "description": "<p>The target has Advantage on ability checks made with the chosen ability.</p>"
         },
         "Enhanced Intelligence": {
           "name": "Enhanced Intelligence",
-          "description": "<p>The target has Advantage on ability checks made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.int.check.roll.mode": 1
-          }
+          "description": "<p>The target has Advantage on ability checks made with the chosen ability.</p>"
         },
         "Enhanced Wisdom": {
           "name": "Enhanced Wisdom",
-          "description": "<p>The target has Advantage on ability checks made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.wis.check.roll.mode": 1
-          }
+          "description": "<p>The target has Advantage on ability checks made with the chosen ability.</p>"
         },
         "Enhanced Charisma": {
           "name": "Enhanced Charisma",
-          "description": "<p>The target has Advantage on ability checks made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.cha.check.roll.mode": 1
-          }
+          "description": "<p>The target has Advantage on ability checks made with the chosen ability.</p>"
         }
       }
     },
@@ -995,23 +868,11 @@
       "effects": {
         "Enlarged": {
           "name": "Enlarged",
-          "description": "<p>The target’s size increases by one category—from Medium to Large, for example. The target also has Advantage on Strength checks and Strength saving throws. The target’s attacks with its enlarged weapons or Unarmed Strikes deal an extra 1d4 damage on a hit.</p>",
-          "changes": {
-            "system.bonuses.mwak.damage": "1d4",
-            "system.bonuses.rwak.damage": "1d4",
-            "system.abilities.str.check.roll.mode": 1,
-            "system.abilities.str.save.roll.mode": 1
-          }
+          "description": "<p>The target’s size increases by one category—from Medium to Large, for example. The target also has Advantage on Strength checks and Strength saving throws. The target’s attacks with its enlarged weapons or Unarmed Strikes deal an extra 1d4 damage on a hit.</p>"
         },
         "Reduced": {
           "name": "Reduced",
-          "description": "<p>The target’s size decreases by one category—from Medium to Small, for example. The target also has Disadvantage on Strength checks and Strength saving throws. The target’s attacks with its reduced weapons or Unarmed Strikes deal 1d4 less damage on a hit (this can’t reduce the damage below 1).</p>",
-          "changes": {
-            "system.bonuses.mwak.damage": "- 1d4",
-            "system.bonuses.rwak.damage": "- 1d4",
-            "system.abilities.str.check.roll.mode": -1,
-            "system.abilities.str.save.roll.mode": -1
-          }
+          "description": "<p>The target’s size decreases by one category—from Medium to Small, for example. The target also has Disadvantage on Strength checks and Strength saving throws. The target’s attacks with its reduced weapons or Unarmed Strikes deal 1d4 less damage on a hit (this can’t reduce the damage below 1).</p>"
         }
       }
     },
@@ -1041,10 +902,7 @@
       "effects": {
         "Distracted": {
           "name": "Distracted",
-          "description": "<p><span style=\"font-family:Signika, sans-serif\">The target has a −10 penalty to [[/check ability=wis skill=prc]] checks and Passive Perception until the spell ends.</span></p>",
-          "changes": {
-            "system.skills.prc.bonuses.check": -10
-          }
+          "description": "<p><span style=\"font-family:Signika, sans-serif\">The target has a −10 penalty to [[/check ability=wis skill=prc]] checks and Passive Perception until the spell ends.</span></p>"
         }
       }
     },
@@ -1131,10 +989,7 @@
       "effects": {
         "Flying Steed": {
           "name": "Flying Steed",
-          "description": "<p>The steed has a Fly speed of 60ft. when summoned by a level 4+ spell.</p>",
-          "changes": {
-            "system.attributes.movement.fly": 60
-          }
+          "description": "<p>The steed has a Fly speed of 60ft. when summoned by a level 4+ spell.</p>"
         }
       }
     },
@@ -1160,17 +1015,11 @@
       "effects": {
         "Warm Shield": {
           "name": "Warm Shield",
-          "description": "<p>Whenever a creature within 5 feet of you hits you with a melee attack roll, the attacker takes [[/damage 2d8 type=fire]] damage.</p>",
-          "changes": {
-            "system.traits.dr.value": "cold"
-          }
+          "description": "<p>Whenever a creature within 5 feet of you hits you with a melee attack roll, the attacker takes [[/damage 2d8 type=fire]] damage.</p>"
         },
         "Chill Shield": {
           "name": "Chill Shield",
-          "description": "<p>Whenever a creature within 5 feet of you hits you with a melee attack roll, the attacker takes [[/damage 2d8 type=cold]] damage.</p>",
-          "changes": {
-            "system.traits.dr.value": "fire"
-          }
+          "description": "<p>Whenever a creature within 5 feet of you hits you with a melee attack roll, the attacker takes [[/damage 2d8 type=cold]] damage.</p>"
         }
       }
     },
@@ -1204,14 +1053,7 @@
         },
         "Unable to Move": {
           "name": "Unable to Move",
-          "description": "<p>On a successful save, its Speed is 0 until the start of your next turn.</p>",
-          "changes": {
-            "system.attributes.movement.walk": 0,
-            "system.attributes.movement.fly": 0,
-            "system.attributes.movement.swim": 0,
-            "system.attributes.movement.climb": 0,
-            "system.attributes.movement.burrow": 0
-          }
+          "description": "<p>On a successful save, its Speed is 0 until the start of your next turn.</p>"
         }
       }
     },
@@ -1220,11 +1062,7 @@
       "description": "<p>You touch a willing creature. For the duration, the target gains a Fly Speed of 60 feet and can hover. When the spell ends, the target falls if it is still aloft unless it can stop the fall.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can target one additional creature for each spell slot level above 3.</p>",
       "effects": {
         "Flight": {
-          "name": "Flight",
-          "changes": {
-            "system.attributes.movement.fly": 60,
-            "system.attributes.movement.hover": true
-          }
+          "name": "Flight"
         }
       }
     },
@@ -1246,21 +1084,7 @@
       "effects": {
         "Foresight": {
           "name": "Foresight",
-          "description": "<p>For the duration, the target has Advantage on D20 Tests, and other creatures have Disadvantage on attack rolls against it.</p>",
-          "changes": {
-            "system.abilities.str.save.roll.mode": 1,
-            "system.abilities.dex.save.roll.mode": 1,
-            "system.abilities.con.save.roll.mode": 1,
-            "system.abilities.int.save.roll.mode": 1,
-            "system.abilities.wis.save.roll.mode": 1,
-            "system.abilities.cha.save.roll.mode": 1,
-            "system.abilities.str.check.roll.mode": 1,
-            "system.abilities.dex.check.roll.mode": 1,
-            "system.abilities.con.check.roll.mode": 1,
-            "system.abilities.int.check.roll.mode": 1,
-            "system.abilities.wis.check.roll.mode": 1,
-            "system.abilities.cha.check.roll.mode": 1
-          }
+          "description": "<p>For the duration, the target has Advantage on D20 Tests, and other creatures have Disadvantage on attack rolls against it.</p>"
         }
       }
     },
@@ -1269,12 +1093,7 @@
       "description": "<p>You touch a willing creature. For the duration, the target's movement is unaffected by &amp;Reference[DifficultTerrain], and spells and other magical effects can neither reduce the target's Speed nor cause the target to have the &amp;Reference[Paralyzed apply=false] or &amp;Reference[Restrained apply=false] conditions. The target also has a Swim Speed equal to its Speed.</p><p>In addition, the target can spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature imposing the &amp;Reference[Grappled apply=false] condition on it.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can target one additional creature for each spell slot level above 4.</p>",
       "effects": {
         "Unrestricted Movement": {
-          "name": "Unrestricted Movement",
-          "changes": {
-            "system.traits.ci.value": "restrained",
-            "system.attributes.movement.swim": "@attributes.movement.walk",
-            "system.attributes.movement.ignoredDifficultTerrain": "all"
-          }
+          "name": "Unrestricted Movement"
         }
       }
     },
@@ -1284,17 +1103,7 @@
       "effects": {
         "Gaseous Form": {
           "name": "Gaseous Form",
-          "description": "<p>The target’s only method of movement is a Fly Speed of 10 feet, and it can hover. The target can enter and occupy the space of another creature. The target has Resistance to Bludgeoning, Piercing, and Slashing damage; it has Immunity to the &amp;Reference[prone apply=false] condition; and it has Advantage on Strength, Dexterity, and Constitution saving throws. The target can pass through narrow openings, but it treats liquids as though they were solid surfaces.</p><p>The target can’t talk or manipulate objects, and any objects it was carrying or holding can’t be dropped, used, or otherwise interacted with. Finally, the target can’t attack or cast spells.</p>",
-          "changes": {
-            "system.attributes.movement.fly": 10,
-            "system.attributes.movement.hover": true,
-            "system.traits.dr.value": "slashing",
-            "system.traits.ci.value": "prone",
-            "img": "icons/magic/air/wind-vortex-swirl-blue-purple.webp",
-            "system.abilities.str.save.roll.mode": 1,
-            "system.abilities.dex.save.roll.mode": 1,
-            "system.abilities.con.save.roll.mode": 1
-          }
+          "description": "<p>The target’s only method of movement is a Fly Speed of 10 feet, and it can hover. The target can enter and occupy the space of another creature. The target has Resistance to Bludgeoning, Piercing, and Slashing damage; it has Immunity to the &amp;Reference[prone apply=false] condition; and it has Advantage on Strength, Dexterity, and Constitution saving throws. The target can pass through narrow openings, but it treats liquids as though they were solid surfaces.</p><p>The target can’t talk or manipulate objects, and any objects it was carrying or holding can’t be dropped, used, or otherwise interacted with. Finally, the target can’t attack or cast spells.</p>"
         }
       }
     },
@@ -1371,112 +1180,58 @@
       "description": "<p>You touch a willing creature and choose a skill. Until the spell ends, the creature adds 1d4 to any ability check using the chosen skill.</p>",
       "effects": {
         "Acrobatic Guidance": {
-          "name": "Acrobatic Guidance",
-          "changes": {
-            "system.skills.acr.bonuses.check": "1d4"
-          }
+          "name": "Acrobatic Guidance"
         },
         "Animal Handling Guidance": {
-          "name": "Animal Handling Guidance",
-          "changes": {
-            "system.skills.ani.bonuses.check": "1d4"
-          }
+          "name": "Animal Handling Guidance"
         },
         "Arcana Guidance": {
-          "name": "Arcana Guidance",
-          "changes": {
-            "system.skills.arc.bonuses.check": "1d4"
-          }
+          "name": "Arcana Guidance"
         },
         "Athletic Guidance": {
-          "name": "Athletic Guidance",
-          "changes": {
-            "system.skills.ath.bonuses.check": "1d4"
-          }
+          "name": "Athletic Guidance"
         },
         "Deception Guidance": {
-          "name": "Deception Guidance",
-          "changes": {
-            "system.skills.dec.bonuses.check": "1d4"
-          }
+          "name": "Deception Guidance"
         },
         "History Guidance": {
-          "name": "History Guidance",
-          "changes": {
-            "system.skills.his.bonuses.check": "1d4"
-          }
+          "name": "History Guidance"
         },
         "Insight Guidance": {
-          "name": "Insight Guidance",
-          "changes": {
-            "system.skills.ins.bonuses.check": "1d4"
-          }
+          "name": "Insight Guidance"
         },
         "Investigation Guidance": {
-          "name": "Investigation Guidance",
-          "changes": {
-            "system.skills.inv.bonuses.check": "1d4"
-          }
+          "name": "Investigation Guidance"
         },
         "Intimidation Guidance": {
-          "name": "Intimidation Guidance",
-          "changes": {
-            "system.skills.itm.bonuses.check": "1d4"
-          }
+          "name": "Intimidation Guidance"
         },
         "Medicine Guidance": {
-          "name": "Medicine Guidance",
-          "changes": {
-            "system.skills.med.bonuses.check": "1d4"
-          }
+          "name": "Medicine Guidance"
         },
         "Nature Guidance": {
-          "name": "Nature Guidance",
-          "changes": {
-            "system.skills.nat.bonuses.check": "1d4"
-          }
+          "name": "Nature Guidance"
         },
         "Persuasion Guidance": {
-          "name": "Persuasion Guidance",
-          "changes": {
-            "system.skills.per.bonuses.check": "1d4"
-          }
+          "name": "Persuasion Guidance"
         },
         "Perception Guidance": {
-          "name": "Perception Guidance",
-          "changes": {
-            "system.skills.prc.bonuses.check": "1d4"
-          }
+          "name": "Perception Guidance"
         },
         "Performance Guidance": {
-          "name": "Performance Guidance",
-          "changes": {
-            "system.skills.prf.bonuses.check": "1d4"
-          }
+          "name": "Performance Guidance"
         },
         "Religion Guidance": {
-          "name": "Religion Guidance",
-          "changes": {
-            "system.skills.rel.bonuses.check": "1d4"
-          }
+          "name": "Religion Guidance"
         },
         "Sleight of Hand Guidance": {
-          "name": "Sleight of Hand Guidance",
-          "changes": {
-            "system.skills.slt.bonuses.check": "1d4"
-          }
+          "name": "Sleight of Hand Guidance"
         },
         "Stealth Guidance": {
-          "name": "Stealth Guidance",
-          "changes": {
-            "system.skills.ste.bonuses.check": "1d4"
-          }
+          "name": "Stealth Guidance"
         },
         "Survival Guidance": {
-          "name": "Survival Guidance",
-          "changes": {
-            "system.skills.sur.bonuses.check": "1d4"
-          }
+          "name": "Survival Guidance"
         }
       }
     },
@@ -1512,27 +1267,11 @@
       "effects": {
         "Hasted": {
           "name": "Hasted",
-          "description": "<p>Until the spell ends, the target’s Speed is doubled, it gains a +2 bonus to Armor Class, it has Advantage on Dexterity saving throws, and it gains an additional action on each of its turns. That action can be used to take only the Attack (one attack only), Dash, Disengage, Hide, or Utilize action.</p><p>When the spell ends, the target is Incapacitated and has a Speed of 0 until the end of its next turn, as a @UUID[Compendium.dnd5e.spells24.Item.phbsplHaste00000.ActiveEffect.S5XcFawnnNHO8bUr]{wave of lethargy} washes over it.</p>",
-          "changes": {
-            "system.attributes.movement.walk": 2,
-            "system.attributes.movement.burrow": 2,
-            "system.attributes.movement.climb": 2,
-            "system.attributes.movement.fly": 2,
-            "system.attributes.movement.swim": 2,
-            "system.attributes.ac.bonus": 2,
-            "system.abilities.dex.save.roll.mode": 1
-          }
+          "description": "<p>Until the spell ends, the target’s Speed is doubled, it gains a +2 bonus to Armor Class, it has Advantage on Dexterity saving throws, and it gains an additional action on each of its turns. That action can be used to take only the Attack (one attack only), Dash, Disengage, Hide, or Utilize action.</p><p>When the spell ends, the target is Incapacitated and has a Speed of 0 until the end of its next turn, as a @UUID[Compendium.dnd5e.spells24.Item.phbsplHaste00000.ActiveEffect.S5XcFawnnNHO8bUr]{wave of lethargy} washes over it.</p>"
         },
         "Lethargy": {
           "name": "Lethargy",
-          "description": "<p>When the spell ends, the target is &amp;Reference[incapacitated apply=false] and has a Speed of 0 until the end of its next turn, as a wave of lethargy washes over it.</p>",
-          "changes": {
-            "system.attributes.movement.walk": 0,
-            "system.attributes.movement.burrow": 0,
-            "system.attributes.movement.climb": 0,
-            "system.attributes.movement.fly": 0,
-            "system.attributes.movement.swim": 0
-          }
+          "description": "<p>When the spell ends, the target is &amp;Reference[incapacitated apply=false] and has a Speed of 0 until the end of its next turn, as a wave of lethargy washes over it.</p>"
         }
       }
     },
@@ -1564,11 +1303,7 @@
       "effects": {
         "Feast's Benefits": {
           "name": "Feast's Benefits",
-          "description": "<p>The creature has &amp;Reference[damageResistance]{Resistance} to Poison damage, and it has Immunity to the &amp;Reference[Frightened] and &amp;Reference[Poisoned] conditions. Its Hit Point maximum also increases by 2d10, and it gains the same number of Hit Points.</p>",
-          "changes": {
-            "system.traits.dr.value": "poison",
-            "system.traits.ci.value": "poisoned"
-          }
+          "description": "<p>The creature has &amp;Reference[damageResistance]{Resistance} to Poison damage, and it has Immunity to the &amp;Reference[Frightened] and &amp;Reference[Poisoned] conditions. Its Hit Point maximum also increases by 2d10, and it gains the same number of Hit Points.</p>"
         }
       }
     },
@@ -1578,10 +1313,7 @@
       "effects": {
         "Bravery": {
           "name": "Bravery",
-          "description": "<p>The creature is immune to the Frightened condition and gains Temporary Hit Points equal to your spellcasting ability modifier at the start of each of its turns.</p>",
-          "changes": {
-            "system.traits.ci.value": "frightened"
-          }
+          "description": "<p>The creature is immune to the Frightened condition and gains Temporary Hit Points equal to your spellcasting ability modifier at the start of each of its turns.</p>"
         }
       }
     },
@@ -1591,45 +1323,27 @@
       "effects": {
         "Hexed Strength": {
           "name": "Hexed Strength",
-          "description": "<p>The target has Disadvantage on ability checks made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.str.check.roll.mode": -1
-          }
+          "description": "<p>The target has Disadvantage on ability checks made with the chosen ability.</p>"
         },
         "Hexed Dexterity": {
           "name": "Hexed Dexterity",
-          "description": "<p>The target has Disadvantage on ability checks made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.dex.check.roll.mode": -1
-          }
+          "description": "<p>The target has Disadvantage on ability checks made with the chosen ability.</p>"
         },
         "Hexed Constitution": {
           "name": "Hexed Constitution",
-          "description": "<p>The target has Disadvantage on ability checks made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.con.check.roll.mode": -1
-          }
+          "description": "<p>The target has Disadvantage on ability checks made with the chosen ability.</p>"
         },
         "Hexed Intelligence": {
           "name": "Hexed Intelligence",
-          "description": "<p>The target has Disadvantage on ability checks made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.int.check.roll.mode": -1
-          }
+          "description": "<p>The target has Disadvantage on ability checks made with the chosen ability.</p>"
         },
         "Hexed Wisdom": {
           "name": "Hexed Wisdom",
-          "description": "<p>The target has Disadvantage on ability checks made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.wis.check.roll.mode": -1
-          }
+          "description": "<p>The target has Disadvantage on ability checks made with the chosen ability.</p>"
         },
         "Hexed Charisma": {
           "name": "Hexed Charisma",
-          "description": "<p>The target has Disadvantage on ability checks made with the chosen ability.</p>",
-          "changes": {
-            "system.abilities.cha.check.roll.mode": -1
-          }
+          "description": "<p>The target has Disadvantage on ability checks made with the chosen ability.</p>"
         }
       }
     },
@@ -1658,15 +1372,7 @@
       "description": "<p>For the duration, you emit an aura in a 30-foot Emanation. While in the aura, creatures of your choice have Advantage on all saving throws, and other creatures have Disadvantage on attack rolls against them. In addition, when a Fiend or an Undead hits an affected creature with a melee attack roll, the attacker must succeed on a Constitution saving throw or have the &amp;Reference[Blinded apply=false] condition until the end of its next turn.</p>",
       "effects": {
         "Holy Protection": {
-          "name": "Holy Protection",
-          "changes": {
-            "system.abilities.str.save.roll.mode": 1,
-            "system.abilities.dex.save.roll.mode": 1,
-            "system.abilities.con.save.roll.mode": 1,
-            "system.abilities.int.save.roll.mode": 1,
-            "system.abilities.wis.save.roll.mode": 1,
-            "system.abilities.cha.save.roll.mode": 1
-          }
+          "name": "Holy Protection"
         },
         "Blinded": {
           "name": "Blinded",
@@ -1690,14 +1396,7 @@
       "effects": {
         "Hypnotized": {
           "name": "Hypnotized",
-          "description": "<p>While &amp;Reference[charmed apply=false], the creature has the &amp;Reference[incapacitated apply=false] condition and a Speed of 0.</p><p>The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor.</p>",
-          "changes": {
-            "system.attributes.movement.walk": 0,
-            "system.attributes.movement.burrow": 0,
-            "system.attributes.movement.climb": 0,
-            "system.attributes.movement.fly": 0,
-            "system.attributes.movement.swim": 0
-          }
+          "description": "<p>While &amp;Reference[charmed apply=false], the creature has the &amp;Reference[incapacitated apply=false] condition and a Speed of 0.</p><p>The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor.</p>"
         }
       }
     },
@@ -1831,10 +1530,7 @@
       "effects": {
         "Longstrider": {
           "name": "Longstrider",
-          "description": "<p>The target’s Speed increases by 10 feet until the spell ends.</p>",
-          "changes": {
-            "system.attributes.movement.walk": 10
-          }
+          "description": "<p>The target’s Speed increases by 10 feet until the spell ends.</p>"
         }
       }
     },
@@ -1844,10 +1540,7 @@
       "effects": {
         "Mage Armor": {
           "name": "Mage Armor",
-          "description": "<p>The target's base AC becomes 13 + its Dexterity modifier.</p>",
-          "changes": {
-            "system.attributes.ac.calc": "mage"
-          }
+          "description": "<p>The target's base AC becomes 13 + its Dexterity modifier.</p>"
         }
       }
     },
@@ -1869,14 +1562,7 @@
         },
         "Trapped Soul": {
           "name": "Trapped Soul",
-          "description": "<p>the possessed creature’s soul can perceive from the container using its own senses, but it can’t move and it is &amp;Reference[Incapacitated apply=false].</p>",
-          "changes": {
-            "system.attributes.movement.walk": 0,
-            "system.attributes.movement.climb": 0,
-            "system.attributes.movement.fly": 0,
-            "system.attributes.movement.swim": 0,
-            "system.attributes.movement.burrow": 0
-          }
+          "description": "<p>the possessed creature’s soul can perceive from the container using its own senses, but it can’t move and it is &amp;Reference[Incapacitated apply=false].</p>"
         }
       }
     },
@@ -1894,30 +1580,15 @@
       "effects": {
         "Magic Weapon +1": {
           "name": "Magic Weapon +1",
-          "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>",
-          "changes": {
-            "system.properties": "mgc",
-            "system.magicalBonus": 1,
-            "name": "Magic {} +1"
-          }
+          "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>"
         },
         "Magic Weapon +2": {
           "name": "Magic Weapon +2",
-          "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +2 bonus to attack rolls and damage rolls.</p>",
-          "changes": {
-            "system.properties": "mgc",
-            "system.magicalBonus": 2,
-            "name": "Magic {} +2"
-          }
+          "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +2 bonus to attack rolls and damage rolls.</p>"
         },
         "Magic Weapon +3": {
           "name": "Magic Weapon +3",
-          "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +3 bonus to attack rolls and damage rolls.</p>",
-          "changes": {
-            "system.properties": "mgc",
-            "system.magicalBonus": 3,
-            "name": "Magic {} +3"
-          }
+          "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +3 bonus to attack rolls and damage rolls.</p>"
         }
       }
     },
@@ -1988,11 +1659,7 @@
       "description": "<p>Until the spell ends, one willing creature you touch has Immunity to Psychic damage and the Charmed condition. The target is also unaffected by anything that would sense its emotions or alignment, read its thoughts, or magically detect its location, and no spell—not even <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish}</em>—can gather information about the target, observe it remotely, or control its mind.</p>",
       "effects": {
         "Mind Blanked": {
-          "name": "Mind Blanked",
-          "changes": {
-            "system.traits.di.value": "psychic",
-            "system.traits.ci.value": "charmed"
-          }
+          "name": "Mind Blanked"
         }
       }
     },
@@ -2019,22 +1686,13 @@
       "description": "<p>Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it's impossible to track which image is real.</p><p>Each time a creature hits you with an attack roll during the spell's duration, roll a [[/r (@flags.dnd-players-handbook.mirrorImages)d6kh1cs&gt;2#Duplicate destroyed]]{d6 for each} of your remaining duplicates. If any of the d6s rolls a 3 or higher, one of the duplicates is hit instead of you, and the duplicate is destroyed. The duplicates otherwise ignore all other damage and effects. The spell ends when all three duplicates are destroyed.</p><p>A creature is unaffected by this spell if it has the &amp;Reference[blinded apply=false] condition, &amp;Reference[blindsight], or &amp;Reference[truesight].</p>",
       "effects": {
         "Duplicate A": {
-          "name": "Duplicate A",
-          "changes": {
-            "flags.dnd-players-handbook.mirrorImages": 1
-          }
+          "name": "Duplicate A"
         },
         "Duplicate B": {
-          "name": "Duplicate B",
-          "changes": {
-            "flags.dnd-players-handbook.mirrorImages": 1
-          }
+          "name": "Duplicate B"
         },
         "Duplicate C": {
-          "name": "Duplicate C",
-          "changes": {
-            "flags.dnd-players-handbook.mirrorImages": 1
-          }
+          "name": "Duplicate C"
         }
       }
     },
@@ -2133,10 +1791,7 @@
       "effects": {
         "Concealed": {
           "name": "Concealed",
-          "description": "<p>While in the aura, you and each creature you choose have a +10 bonus to [[/check ability=dex skill=ste]] checks and leave no tracks.</p>",
-          "changes": {
-            "system.skills.ste.bonuses.check": 10
-          }
+          "description": "<p>While in the aura, you and each creature you choose have a +10 bonus to [[/check ability=dex skill=ste]] checks and leave no tracks.</p>"
         }
       }
     },
@@ -2202,14 +1857,7 @@
         },
         "No Movement": {
           "name": "No Movement",
-          "description": "<p>The target's Speed is 0 until the start of your next turn.</p>",
-          "changes": {
-            "system.attributes.movement.walk": 0,
-            "system.attributes.movement.climb": 0,
-            "system.attributes.movement.swim": 0,
-            "system.attributes.movement.fly": 0,
-            "system.attributes.movement.burrow": 0
-          }
+          "description": "<p>The target's Speed is 0 until the start of your next turn.</p>"
         }
       }
     },
@@ -2277,10 +1925,7 @@
       "effects": {
         "Poison Protection": {
           "name": "Poison Protection",
-          "description": "<p><span style=\"font-family:Signika, sans-serif\">For the duration, the target has Advantage on saving throws to avoid or end the Poisoned condition, and it has Resistance to Poison damage.</span></p>",
-          "changes": {
-            "system.traits.dr.value": "poison"
-          }
+          "description": "<p><span style=\"font-family:Signika, sans-serif\">For the duration, the target has Advantage on saving throws to avoid or end the Poisoned condition, and it has Resistance to Poison damage.</span></p>"
         }
       }
     },
@@ -2294,55 +1939,19 @@
       "effects": {
         "Resurrection Sickness (Day 1)": {
           "name": "Resurrection Sickness (Day 1)",
-          "description": "<p>Coming back from the dead is an ordeal. The target takes a −4 penalty to D20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0.</p>",
-          "changes": {
-            "system.bonuses.abilities.check": -1,
-            "system.bonuses.abilities.save": -1,
-            "system.attributes.init.bonus": -1,
-            "system.bonuses.mwak.attack": -1,
-            "system.bonuses.msak.attack": -1,
-            "system.bonuses.rsak.attack": -1,
-            "system.bonuses.rwak.attack": -1
-          }
+          "description": "<p>Coming back from the dead is an ordeal. The target takes a −4 penalty to D20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0.</p>"
         },
         "Resurrection Sickness (Day 2)": {
           "name": "Resurrection Sickness (Day 2)",
-          "description": "<p>Coming back from the dead is an ordeal. The target takes a −4 penalty to D20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0.</p>",
-          "changes": {
-            "system.bonuses.abilities.check": -1,
-            "system.bonuses.abilities.save": -1,
-            "system.attributes.init.bonus": -1,
-            "system.bonuses.mwak.attack": -1,
-            "system.bonuses.msak.attack": -1,
-            "system.bonuses.rsak.attack": -1,
-            "system.bonuses.rwak.attack": -1
-          }
+          "description": "<p>Coming back from the dead is an ordeal. The target takes a −4 penalty to D20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0.</p>"
         },
         "Resurrection Sickness (Day 4)": {
           "name": "Resurrection Sickness (Day 4)",
-          "description": "<p>Coming back from the dead is an ordeal. The target takes a −4 penalty to D20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0.</p>",
-          "changes": {
-            "system.bonuses.abilities.check": -1,
-            "system.bonuses.abilities.save": -1,
-            "system.attributes.init.bonus": -1,
-            "system.bonuses.mwak.attack": -1,
-            "system.bonuses.msak.attack": -1,
-            "system.bonuses.rsak.attack": -1,
-            "system.bonuses.rwak.attack": -1
-          }
+          "description": "<p>Coming back from the dead is an ordeal. The target takes a −4 penalty to D20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0.</p>"
         },
         "Resurrection Sickness (Day 3)": {
           "name": "Resurrection Sickness (Day 3)",
-          "description": "<p>Coming back from the dead is an ordeal. The target takes a −4 penalty to D20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0.</p>",
-          "changes": {
-            "system.bonuses.abilities.check": -1,
-            "system.bonuses.abilities.save": -1,
-            "system.attributes.init.bonus": -1,
-            "system.bonuses.mwak.attack": -1,
-            "system.bonuses.msak.attack": -1,
-            "system.bonuses.rsak.attack": -1,
-            "system.bonuses.rwak.attack": -1
-          }
+          "description": "<p>Coming back from the dead is an ordeal. The target takes a −4 penalty to D20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0.</p>"
         }
       }
     },
@@ -2351,10 +1960,7 @@
       "description": "<p>You forge a telepathic link among up to eight willing creatures of your choice within range, psychically linking each creature to all the others for the duration. Creatures that can't communicate in any languages aren't affected by this spell.</p><p>Until the spell ends, the targets can communicate telepathically through the bond whether or not they share a language. The communication is possible over any distance, though it can't extend to other planes of existence.</p>",
       "effects": {
         "Bonded Telepathy": {
-          "name": "Bonded Telepathy",
-          "changes": {
-            "system.traits.languages.custom": ";Bonded telepathy"
-          }
+          "name": "Bonded Telepathy"
         }
       }
     },
@@ -2368,15 +1974,7 @@
         },
         "Enervated": {
           "name": "Enervated",
-          "description": "<p>The target has Disadvantage on Strength-based D20 Tests for the duration. During that time, it also subtracts 1d8 from all its damage rolls. The target repeats the [[/save ability=con]] save at the end of each of its turns, ending the spell on a success.</p>",
-          "changes": {
-            "system.bonuses.mwak.damage": "- 1d8",
-            "system.bonuses.rwak.damage": "- 1d8",
-            "system.bonuses.msak.damage": "- 1d8",
-            "system.bonuses.rsak.damage": "- 1d8",
-            "system.abilities.str.check.roll.mode": -1,
-            "system.abilities.str.save.roll.mode": -1
-          }
+          "description": "<p>The target has Disadvantage on Strength-based D20 Tests for the duration. During that time, it also subtracts 1d8 from all its damage rolls. The target repeats the [[/save ability=con]] save at the end of each of its turns, ending the spell on a success.</p>"
         }
       }
     },
@@ -2386,14 +1984,7 @@
       "effects": {
         "Reduced Movement": {
           "name": "Reduced Movement",
-          "description": "<p>The target's Speed is reduced by 10 feet until the start of your next turn.</p>",
-          "changes": {
-            "system.attributes.movement.walk": -10,
-            "system.attributes.movement.swim": -10,
-            "system.attributes.movement.climb": -10,
-            "system.attributes.movement.fly": -10,
-            "system.attributes.movement.burrow": -10
-          }
+          "description": "<p>The target's Speed is reduced by 10 feet until the start of your next turn.</p>"
         }
       }
     },
@@ -2475,55 +2066,19 @@
       "effects": {
         "Resurrection Sickness (Day 1)": {
           "name": "Resurrection Sickness (Day 1)",
-          "description": "<p>Coming back from the dead is an ordeal. The target takes a −4 penalty to D20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0.</p>",
-          "changes": {
-            "system.bonuses.abilities.check": -1,
-            "system.bonuses.abilities.save": -1,
-            "system.attributes.init.bonus": -1,
-            "system.bonuses.mwak.attack": -1,
-            "system.bonuses.msak.attack": -1,
-            "system.bonuses.rsak.attack": -1,
-            "system.bonuses.rwak.attack": -1
-          }
+          "description": "<p>Coming back from the dead is an ordeal. The target takes a −4 penalty to D20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0.</p>"
         },
         "Resurrection Sickness (Day 2)": {
           "name": "Resurrection Sickness (Day 2)",
-          "description": "<p>Coming back from the dead is an ordeal. The target takes a −4 penalty to D20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0.</p>",
-          "changes": {
-            "system.bonuses.abilities.check": -1,
-            "system.bonuses.abilities.save": -1,
-            "system.attributes.init.bonus": -1,
-            "system.bonuses.mwak.attack": -1,
-            "system.bonuses.msak.attack": -1,
-            "system.bonuses.rsak.attack": -1,
-            "system.bonuses.rwak.attack": -1
-          }
+          "description": "<p>Coming back from the dead is an ordeal. The target takes a −4 penalty to D20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0.</p>"
         },
         "Resurrection Sickness (Day 3)": {
           "name": "Resurrection Sickness (Day 3)",
-          "description": "<p>Coming back from the dead is an ordeal. The target takes a −4 penalty to D20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0.</p>",
-          "changes": {
-            "system.bonuses.abilities.check": -1,
-            "system.bonuses.abilities.save": -1,
-            "system.attributes.init.bonus": -1,
-            "system.bonuses.mwak.attack": -1,
-            "system.bonuses.msak.attack": -1,
-            "system.bonuses.rsak.attack": -1,
-            "system.bonuses.rwak.attack": -1
-          }
+          "description": "<p>Coming back from the dead is an ordeal. The target takes a −4 penalty to D20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0.</p>"
         },
         "Resurrection Sickness (Day 4)": {
           "name": "Resurrection Sickness (Day 4)",
-          "description": "<p>Coming back from the dead is an ordeal. The target takes a −4 penalty to D20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0.</p>",
-          "changes": {
-            "system.bonuses.abilities.check": -1,
-            "system.bonuses.abilities.save": -1,
-            "system.attributes.init.bonus": -1,
-            "system.bonuses.mwak.attack": -1,
-            "system.bonuses.msak.attack": -1,
-            "system.bonuses.rsak.attack": -1,
-            "system.bonuses.rwak.attack": -1
-          }
+          "description": "<p>Coming back from the dead is an ordeal. The target takes a −4 penalty to D20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0.</p>"
         },
         "Spell Taxed": {
           "name": "Spell Taxed",
@@ -2570,10 +2125,7 @@
       "description": "<p>For the duration, you see creatures and objects that have the &amp;Reference[invisible apply=false] condition as if they were visible, and you can see into the Ethereal Plane. Creatures and objects there appear ghostly.</p>",
       "effects": {
         "See Invisibility": {
-          "name": "See Invisibility",
-          "changes": {
-            "system.attributes.senses.special": ";Ethereal Plane"
-          }
+          "name": "See Invisibility"
         }
       }
     },
@@ -2615,10 +2167,7 @@
       "effects": {
         "Imperceptible Barrier": {
           "name": "Imperceptible Barrier",
-          "description": "<p>Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from <em>Magic Missile</em>.</p>",
-          "changes": {
-            "system.attributes.ac.bonus": 5
-          }
+          "description": "<p>Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from <em>Magic Missile</em>.</p>"
         }
       }
     },
@@ -2628,10 +2177,7 @@
       "effects": {
         "Shimmering Field": {
           "name": "Shimmering Field",
-          "description": "<p>The target gains a +2 bonus to AC for the duration.</p>",
-          "changes": {
-            "system.attributes.ac.bonus": 2
-          }
+          "description": "<p>The target gains a +2 bonus to AC for the duration.</p>"
         }
       }
     },
@@ -2640,56 +2186,16 @@
       "description": "<p>A Club or Quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. If the attack deals damage, it can be Force damage or the weapon's normal damage type (your choice).</p><p>The spell ends early if you cast it again or if you let go of the weapon.</p><p><strong>Cantrip Upgrade.</strong> The damage die changes when you reach levels 5 (d10), 11 (d12), and 17 (2d6).</p>",
       "effects": {
         "Shillelagh (1d8)": {
-          "name": "Shillelagh (1d8)",
-          "changes": {
-            "system.damage.base.denomination": 8,
-            "system.damage.base.types": "force",
-            "system.damage.base.number": 1,
-            "name": "{} Shillelagh",
-            "system.damage.base.custom.enabled": 0,
-            "activities[attack].attack.ability": "none",
-            "activities[attack].attack.bonus": "max(@abilities.str.mod, @attributes.spell.mod)",
-            "system.damage.base.bonus": "max(@abilities.str.mod, @attributes.spell.mod)"
-          }
+          "name": "Shillelagh (1d8)"
         },
         "Shillelagh (1d10)": {
-          "name": "Shillelagh (1d10)",
-          "changes": {
-            "system.damage.base.denomination": 10,
-            "system.damage.base.types": "force",
-            "system.damage.base.number": 1,
-            "name": "{} (Shillelagh)",
-            "system.damage.base.custom.enabled": 0,
-            "activities[attack].attack.ability": "none",
-            "activities[attack].attack.bonus": "max(@abilities.str.mod, @attributes.spell.mod)",
-            "system.damage.base.bonus": "max(@abilities.str.mod, @attributes.spell.mod)"
-          }
+          "name": "Shillelagh (1d10)"
         },
         "Shillelagh (1d12)": {
-          "name": "Shillelagh (1d12)",
-          "changes": {
-            "system.damage.base.denomination": 12,
-            "system.damage.base.types": "force",
-            "system.damage.base.number": 1,
-            "name": "{} (Shillelagh)",
-            "system.damage.base.custom.enabled": 0,
-            "activities[attack].attack.ability": "none",
-            "activities[attack].attack.bonus": "max(@abilities.str.mod, @attributes.spell.mod)",
-            "system.damage.base.bonus": "max(@abilities.str.mod, @attributes.spell.mod)"
-          }
+          "name": "Shillelagh (1d12)"
         },
         "Shillelagh (2d6)": {
-          "name": "Shillelagh (2d6)",
-          "changes": {
-            "system.damage.base.denomination": 6,
-            "system.damage.base.types": "force",
-            "system.damage.base.number": 2,
-            "name": "{} (Shillelagh)",
-            "system.damage.base.custom.enabled": 0,
-            "activities[attack].attack.ability": "none",
-            "activities[attack].attack.bonus": "max(@abilities.str.mod, @attributes.spell.mod)",
-            "system.damage.base.bonus": "max(@abilities.str.mod, @attributes.spell.mod)"
-          }
+          "name": "Shillelagh (2d6)"
         }
       }
     },
@@ -2699,10 +2205,7 @@
       "effects": {
         "Shining": {
           "name": "Shining",
-          "description": "<p>Until the spell ends, the target sheds &amp;Reference[BrightLight] in a 5-foot radius, attack rolls against it have Advantage, and it can’t benefit from the &amp;Reference[Invisible] condition.</p>",
-          "changes": {
-            "system.traits.ci.value": "invisible"
-          }
+          "description": "<p>Until the spell ends, the target sheds &amp;Reference[BrightLight] in a 5-foot radius, attack rolls against it have Advantage, and it can’t benefit from the &amp;Reference[Invisible] condition.</p>"
         }
       }
     },
@@ -2722,10 +2225,7 @@
       "effects": {
         "Silenced": {
           "name": "Silenced",
-          "description": "<p>Any creature or object entirely inside the Sphere has Immunity to Thunder damage, and creatures have the Deafened condition while entirely inside it. Casting a spell that includes a Verbal component is impossible there.</p>",
-          "changes": {
-            "system.traits.di.value": "thunder"
-          }
+          "description": "<p>Any creature or object entirely inside the Sphere has Immunity to Thunder damage, and creatures have the Deafened condition while entirely inside it. Casting a spell that includes a Verbal component is impossible there.</p>"
         }
       }
     },
@@ -2757,16 +2257,7 @@
       "effects": {
         "Slowed": {
           "name": "Slowed",
-          "description": "<p>An affected target’s Speed is halved, it takes a −2 penalty to AC and Dexterity saving throws, and it can’t take Reactions. On its turns, it can take either an action or a Bonus Action, not both, and it can make only one attack if it takes the Attack action. If it casts a spell with a Somatic component, there is a [[/r 1d100cs&gt;25#Spell cast successfully on 1]]{25 percent} chance the spell fails as a result of the target making the spell’s gestures too slowly.</p><p>An affected target repeats the [[/save ability=wis]] save at the end of each of its turns, ending the spell on itself on a success.</p>",
-          "changes": {
-            "system.attributes.ac.bonus": -2,
-            "system.attributes.movement.burrow": 0.5,
-            "system.attributes.movement.climb": 0.5,
-            "system.attributes.movement.fly": 0.5,
-            "system.attributes.movement.swim": 0.5,
-            "system.attributes.movement.walk": 0.5,
-            "system.abilities.dex.bonuses.save": -2
-          }
+          "description": "<p>An affected target’s Speed is halved, it takes a −2 penalty to AC and Dexterity saving throws, and it can’t take Reactions. On its turns, it can take either an action or a Bonus Action, not both, and it can make only one attack if it takes the Attack action. If it casts a spell with a Somatic component, there is a [[/r 1d100cs&gt;25#Spell cast successfully on 1]]{25 percent} chance the spell fails as a result of the target making the spell’s gestures too slowly.</p><p>An affected target repeats the [[/save ability=wis]] save at the end of each of its turns, ending the spell on itself on a success.</p>"
         }
       }
     },
@@ -2788,10 +2279,7 @@
       "description": "<p>For the duration, you can comprehend and verbally communicate with Beasts, and you can use any of the Influence action's skill options with them.</p><p>Most Beasts have little to say about topics that don't pertain to survival or companionship, but at minimum, a Beast can give you information about nearby locations and monsters, including whatever it has perceived within the past day.</p>",
       "effects": {
         "Bestial Communication": {
-          "name": "Bestial Communication",
-          "changes": {
-            "system.traits.languages.custom": ";comprehend and verbally communicate with Beasts"
-          }
+          "name": "Bestial Communication"
         }
       }
     },
@@ -2813,10 +2301,7 @@
       "description": "<p>Until the spell ends, one willing creature you touch gains the ability to move up, down, and across vertical surfaces and along ceilings, while leaving its hands free. The target also gains a Climb Speed equal to its Speed.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can target one additional creature for each spell slot level about 2.</p><section class=\"secret\" id=\"secret-4LoECjSnyIsXFdKY\"><p><strong>Foundry Note</strong></p><p>The Active Effect provided by the <strong>Cast</strong> activity upgrades the character's Climb Speed to a value of \"1\" to indicate equivalence to (walk) Speed.</p></section>",
       "effects": {
         "Spider Climb": {
-          "name": "Spider Climb",
-          "changes": {
-            "system.attributes.movement.climb": "@attributes.movement.walk"
-          }
+          "name": "Spider Climb"
         }
       }
     },
@@ -2830,14 +2315,7 @@
       "effects": {
         "Half Speed": {
           "name": "Half Speed",
-          "description": "<p>The creature's speed is halved while within the Emanation.</p>",
-          "changes": {
-            "system.attributes.movement.walk": 0.5,
-            "system.attributes.movement.fly": 0.5,
-            "system.attributes.movement.climb": 0.5,
-            "system.attributes.movement.swim": 0.5,
-            "system.attributes.movement.burrow": 0.5
-          }
+          "description": "<p>The creature's speed is halved while within the Emanation.</p>"
         }
       }
     },
@@ -2874,10 +2352,7 @@
       "description": "<p>Until the spell ends, one willing creature you touch has &amp;Reference[damageresistance]{Resistance} to Bludgeoning, Piercing, and Slashing damage.</p>",
       "effects": {
         "Stoneskin": {
-          "name": "Stoneskin",
-          "changes": {
-            "system.traits.dr.value": "slashing"
-          }
+          "name": "Stoneskin"
         }
       }
     },
@@ -2980,10 +2455,7 @@
       "effects": {
         "Booming Voice": {
           "name": "Booming Voice",
-          "description": "<p>Your voice booms up to three times as loud as normal for 1 minute. For the duration, you have Advantage on [[/check ability=cha skill=itm]] checks.</p>",
-          "changes": {
-            "system.skills.itm.roll.mode": 1
-          }
+          "description": "<p>Your voice booms up to three times as loud as normal for 1 minute. For the duration, you have Advantage on [[/check ability=cha skill=itm]] checks.</p>"
         }
       }
     },
@@ -3000,10 +2472,7 @@
       "description": "<p>This spell grants the creature you touch the ability to understand any spoken or signed language that it hears or sees. Moreover, when the target communicates by speaking or signing, any creature that knows at least one language can understand it if that creature can hear the speech or see the signing.</p>",
       "effects": {
         "Universal Communication": {
-          "name": "Universal Communication",
-          "changes": {
-            "system.traits.languages.custom": ";all spoken or signed languages"
-          }
+          "name": "Universal Communication"
         }
       }
     },
@@ -3028,10 +2497,7 @@
       "description": "<p>For the duration, the willing creature you touch has Truesight with a range of 120 feet.</p>",
       "effects": {
         "Truesight": {
-          "name": "Truesight",
-          "changes": {
-            "system.attributes.senses.truesight": 120
-          }
+          "name": "Truesight"
         }
       }
     },
@@ -3040,21 +2506,10 @@
       "description": "<p>Guided by a flash of magical insight, you make one attack with the weapon used in the spell's casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Radiant damage or the weapon's normal damage type (your choice).</p><p><strong>Cantrip Upgrade.</strong> Whether you deal Radiant damage or the weapon's normal damage type, the attack deals extra Radiant damage when you reach levels 5 (1d6), 11 (2d6), and 17 (3d6).</p>",
       "effects": {
         "True Strike": {
-          "name": "True Strike",
-          "changes": {
-            "system.damage.base.types": "radiant",
-            "name": "{} (True Strike)",
-            "system.damage.parts": [["(floor((@details.level + 1) / 6))d6", "radiant"]],
-            "activities[attack].attack.ability": "spellcasting"
-          }
+          "name": "True Strike"
         },
         "Ranged Weapon": {
-          "name": "Ranged Weapon",
-          "changes": {
-            "system.damage.base.types": "radiant",
-            "name": "{} (True Strike)",
-            "system.damage.base.bonus": "(floor((@details.level + 1) / 6))d6[radiant]"
-          }
+          "name": "Ranged Weapon"
         }
       }
     },
@@ -3116,12 +2571,7 @@
       "effects": {
         "Bonded": {
           "name": "Bonded",
-          "description": "<p>While the target is within 60 feet of you, it gains a +1 bonus to AC and saving throws, and it has Resistance to all damage. Also, each time it takes damage, you take the same amount of damage.</p><p>The spell ends if you drop to 0 Hit Points or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures.</p>",
-          "changes": {
-            "system.traits.dr.value": "thunder",
-            "system.attributes.ac.bonus": 1,
-            "system.bonuses.abilities.save": 1
-          }
+          "description": "<p>While the target is within 60 feet of you, it gains a +1 bonus to AC and saving throws, and it has Resistance to all damage. Also, each time it takes damage, you take the same amount of damage.</p><p>The spell ends if you drop to 0 Hit Points or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures.</p>"
         }
       }
     },
@@ -3164,13 +2614,7 @@
       "effects": {
         "Cloud Form": {
           "name": "Cloud Form",
-          "description": "<p>The only actions a target can take in this form are the &amp;Reference[Dash] action or a Magic action to begin reverting to its normal form. Reverting takes 1 minute, during which the target has the &amp;Reference[Stunned apply=false] condition. Until the spell ends, the target can revert to cloud form, which also requires a Magic action followed by a 1-minute transformation.</p>",
-          "changes": {
-            "system.attributes.movement.fly": 300,
-            "system.attributes.movement.hover": true,
-            "system.traits.ci.value": "prone",
-            "system.traits.dr.value": "slashing"
-          }
+          "description": "<p>The only actions a target can take in this form are the &amp;Reference[Dash] action or a Magic action to begin reverting to its normal form. Reverting takes 1 minute, during which the target has the &amp;Reference[Stunned apply=false] condition. Until the spell ends, the target can revert to cloud form, which also requires a Magic action followed by a 1-minute transformation.</p>"
         }
       }
     },
@@ -3184,10 +2628,7 @@
       "effects": {
         "Wish Stress": {
           "name": "Wish Stress",
-          "description": "<p>Each time you cast a spell until you finish a Long Rest, you take [[/damage 1d10 type=necrotic]] damage per level of that spell. This damage can’t be reduced or prevented in any way. In addition, your Strength score becomes 3 for [[/r 2d4]] days.</p>",
-          "changes": {
-            "system.abilities.str.value": 3
-          }
+          "description": "<p>Each time you cast a spell until you finish a Long Rest, you take [[/damage 1d10 type=necrotic]] damage per level of that spell. This damage can’t be reduced or prevented in any way. In addition, your Strength score becomes 3 for [[/r 2d4]] days.</p>"
         }
       }
     },

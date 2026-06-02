@@ -9,7 +9,9 @@
     "Human": "Человек",
     "Orc": "Орк",
     "Tiefling": "Тифлинг",
-    "Backgrounds": "Происхождения"
+    "Backgrounds": "Происхождения",
+    "Species": "Виды",
+    "Traits": "Особенности"
   },
   "entries": {
     "Acolyte": {
@@ -130,10 +132,7 @@
       "description": "<p>Your Hit Point maximum increases by 1, and it increases by 1 again whenever you gain a level.</p><section class=\"secret\" id=\"secret-FK9DFLudP5EzEss9\"><p><strong>Foundry Note</strong></p><p>The Hit Point maximum increase is handled automatically each level.</p></section>",
       "effects": {
         "Dwarven Toughness": {
-          "name": "Dwarven Toughness",
-          "changes": {
-            "system.attributes.hp.bonuses.level": 1
-          }
+          "name": "Dwarven Toughness"
         }
       }
     },
@@ -154,14 +153,7 @@
       "description": "<p>When you hit a target with an attack roll and deal damage to it, you can also deal 1d6 Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn.</p><section id=\"secret-jxuUuY0r33aiP0zL\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which can be used for tracking and reduces their Speed by 10.</p></section>",
       "effects": {
         "Chilled": {
-          "name": "Chilled",
-          "changes": {
-            "system.attributes.movement.walk": -10,
-            "system.attributes.movement.burrow": -10,
-            "system.attributes.movement.climb": -10,
-            "system.attributes.movement.fly": -10,
-            "system.attributes.movement.swim": -10
-          }
+          "name": "Chilled"
         }
       }
     },
@@ -175,12 +167,7 @@
       "effects": {
         "Gnomish Cunning": {
           "name": "Gnomish Cunning",
-          "description": "<p>You have Advantage on Intelligence, Wisdom, and Charisma saving throws.</p>",
-          "changes": {
-            "system.abilities.int.save.roll.mode": 1,
-            "system.abilities.wis.save.roll.mode": 1,
-            "system.abilities.cha.save.roll.mode": 1
-          }
+          "description": "<p>You have Advantage on Intelligence, Wisdom, and Charisma saving throws.</p>"
         }
       }
     },
@@ -189,10 +176,7 @@
       "description": "<p>You can move through the space of any creature that is a size larger than you, but you can't stop in the same space.</p>",
       "effects": {
         "Halfling Nimbleness": {
-          "name": "Halfling Nimbleness",
-          "changes": {
-            "flags.dnd5e.halflingNimbleness": true
-          }
+          "name": "Halfling Nimbleness"
         }
       }
     },
@@ -218,11 +202,7 @@
       "effects": {
         "Large Form": {
           "name": "Large Form",
-          "description": "<p>For the duration, you have Advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you can’t use it again until you finish a Long Rest.</p>",
-          "changes": {
-            "system.attributes.movement.walk": 10,
-            "system.abilities.str.check.roll.mode": 1
-          }
+          "description": "<p>For the duration, you have Advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you can’t use it again until you finish a Long Rest.</p>"
         }
       }
     },
@@ -231,10 +211,7 @@
       "description": "<p>When you roll a 1 on the d20 of a D20 Test, you can reroll the die, and you must use the new roll.</p>",
       "effects": {
         "Luck": {
-          "name": "Luck",
-          "changes": {
-            "flags.dnd5e.halflingLucky": true
-          }
+          "name": "Luck"
         }
       }
     },
@@ -251,10 +228,7 @@
       "description": "<p>You have Advantage on any ability check you make to end the &amp;Reference[Grappled apply=false] condition. You also count as one size larger when determining your carrying capacity.</p><section class=\"secret\" id=\"secret-7qaTRjmRe4PD41G3\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which automatically upgrades your size when determining carrying capacity.</p></section>",
       "effects": {
         "Powerful Build": {
-          "name": "Powerful Build",
-          "changes": {
-            "flags.dnd5e.powerfulBuild": true
-          }
+          "name": "Powerful Build"
         }
       }
     },
@@ -279,10 +253,7 @@
       "description": "<p>As a Bonus Action, you gain &amp;Reference[Tremorsense] with a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this Tremorsense. The stone can be natural or worked. You can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><section class=\"secret\" id=\"secret-7BtT80083mC3Eavg\"><p><strong>Foundry Note</strong></p><p>This feature includes the limited uses and an Active Effect that grants you the 60 feet of Tremorsense. It does not automatically update your Token's vision settings.</p></section>",
       "effects": {
         "Stonecunning": {
-          "name": "Stonecunning",
-          "changes": {
-            "system.attributes.senses.tremorsense": 60
-          }
+          "name": "Stonecunning"
         }
       }
     },

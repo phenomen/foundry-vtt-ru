@@ -137,64 +137,22 @@
       "description": "<p><em>@UUID[Compendium.dnd5e.equipment24.Item.phbafcWand000000]{Wand}, Uncommon (+1), Rare (+2), or Very Rare (+3) (Requires Attunement by a Spellcaster)</em></p><p>While holding this wand, you gain a bonus to spell attack rolls determined by the wand's rarity. In addition, you ignore &amp;Reference[HalfCover] when making a spell attack roll.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "War Mage +1": {
-          "name": "War Mage +1",
-          "changes": {
-            "system.bonuses.msak.attack": 1,
-            "system.bonuses.rsak.attack": 1
-          }
+          "name": "War Mage +1"
         },
         "War Mage +2": {
-          "name": "War Mage +2",
-          "changes": {
-            "system.bonuses.msak.attack": 2,
-            "system.bonuses.rsak.attack": 2
-          }
+          "name": "War Mage +2"
         },
         "War Mage +3": {
-          "name": "War Mage +3",
-          "changes": {
-            "system.bonuses.msak.attack": 3,
-            "system.bonuses.rsak.attack": 3
-          }
+          "name": "War Mage +3"
         },
         "Wand of the War Mage, +1": {
-          "name": "Wand of the War Mage, +1",
-          "changes": {
-            "name": "{} of the War Mage, +1",
-            "system.rarity": "uncommon",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmg1WandOfTheWar caption=false]</p>",
-            "system.price.value": 400,
-            "system.properties": "mgc",
-            "system.attunement": "required",
-            "system.magicalBonus": 1,
-            "img": "icons/weapons/wands/wand-gem-blue.webp"
-          }
+          "name": "Wand of the War Mage, +1"
         },
         "Wand of the War Mage, +2": {
-          "name": "Wand of the War Mage, +2",
-          "changes": {
-            "name": "{} of the War Mage, +2",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmg1WandOfTheWar caption=false]</p>",
-            "system.price.value": 4000,
-            "system.properties": "mgc",
-            "system.attunement": "required",
-            "system.magicalBonus": 2,
-            "img": "icons/weapons/wands/wand-gem-blue.webp"
-          }
+          "name": "Wand of the War Mage, +2"
         },
         "Wand of the War Mage, +3": {
-          "name": "Wand of the War Mage, +3",
-          "changes": {
-            "name": "{} of the War Mage, +3",
-            "system.rarity": "veryRare",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmg1WandOfTheWar caption=false]</p>",
-            "system.price.value": 40000,
-            "system.properties": "mgc",
-            "system.attunement": "required",
-            "system.magicalBonus": 3,
-            "img": "icons/weapons/wands/wand-gem-blue.webp"
-          }
+          "name": "Wand of the War Mage, +3"
         }
       }
     },
@@ -207,16 +165,7 @@
       "description": "<p><em>Armor (Any Medium or Heavy, Except Hide Armor), Uncommon</em></p><p>This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you're wearing it, any &amp;Reference[CriticalHits] against you becomes a normal hit.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Adamantine Armor": {
-          "name": "Adamantine Armor",
-          "changes": {
-            "system.properties": "ada",
-            "name": "Adamantine {}",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgAdamantineArm caption=false]</p>",
-            "system.rarity": "uncommon",
-            "img": "icons/equipment/chest/breastplate-layered-leather-blue.webp",
-            "system.price.value": 400,
-            "system.price.denomination": "gp"
-          }
+          "name": "Adamantine Armor"
         }
       }
     },
@@ -226,10 +175,7 @@
       "effects": {
         "Enhanced Agility: Dexterity Bonus": {
           "name": "Enhanced Agility: Dexterity Bonus",
-          "description": "<p>Your Dexterity increases by 2, to a maximum of 20, while this deep-red sphere orbits your head.</p>",
-          "changes": {
-            "system.abilities.dex.value": 20
-          }
+          "description": "<p>Your Dexterity increases by 2, to a maximum of 20, while this deep-red sphere orbits your head.</p>"
         }
       }
     },
@@ -241,13 +187,7 @@
           "name": "Charmed"
         },
         "Air Focus": {
-          "name": "Air Focus",
-          "changes": {
-            "system.traits.languages.value": "auran",
-            "system.traits.dr.value": "lightning",
-            "system.attributes.movement.hover": true,
-            "system.attributes.movement.fly": "@attributes.movement.walk"
-          }
+          "name": "Air Focus"
         }
       }
     },
@@ -256,34 +196,13 @@
       "description": "<p><em>Weapon (Any Ammunition), Uncommon (+1), Rare (+2), or Very Rare (+3)</em></p><p>You have a bonus to attack rolls and damage rolls made with this piece of magic ammunition. The bonus is determined by the rarity of the ammunition. Once it hits a target, the ammunition is no longer magical.</p><p>This ammunition is typically found or sold in quantities of ten or twenty pieces. Ten pieces of this ammunition are equivalent in value to a potion of the same rarity.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Ammunition +1": {
-          "name": "Ammunition +1",
-          "changes": {
-            "name": "{} +1",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgAmmunition12o caption=false]</p>",
-            "system.properties": "mgc",
-            "system.magicalBonus": 1,
-            "system.rarity": "uncommon"
-          }
+          "name": "Ammunition +1"
         },
         "Ammunition +2": {
-          "name": "Ammunition +2",
-          "changes": {
-            "name": "{} +2",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgAmmunition12o caption=false]</p>",
-            "system.properties": "mgc",
-            "system.magicalBonus": 2,
-            "system.rarity": "rare"
-          }
+          "name": "Ammunition +2"
         },
         "Ammunition +3": {
-          "name": "Ammunition +3",
-          "changes": {
-            "name": "{} +3",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgAmmunition12o caption=false]</p>",
-            "system.properties": "mgc",
-            "system.magicalBonus": 3,
-            "system.rarity": "veryRare"
-          }
+          "name": "Ammunition +3"
         }
       }
     },
@@ -292,10 +211,7 @@
       "description": "<p><em>Wondrous Item, Rare (Requires Attunement)</em></p><p>Your Constitution is 19 while you wear this amulet. It has no effect on you if your Constitution is 19 or higher without it.</p>",
       "effects": {
         "Upgraded Constitution": {
-          "name": "Upgraded Constitution",
-          "changes": {
-            "system.abilities.con.value": 19
-          }
+          "name": "Upgraded Constitution"
         }
       }
     },
@@ -336,37 +252,13 @@
       "description": "<p><em>Armor (Any Light, Medium, or Heavy), Rare (+1), Very Rare (+2), or Legendary (+3)</em></p><p>You have a bonus to Armor Class while wearing this armor. The bonus is determined by its rarity.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Armor +1": {
-          "name": "Armor +1",
-          "changes": {
-            "name": "{} +1",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgArmor12or3000 caption=false]</p>",
-            "system.properties": "mgc",
-            "system.armor.magicalBonus": 1,
-            "system.price.value": 4000
-          }
+          "name": "Armor +1"
         },
         "Armor +2": {
-          "name": "Armor +2",
-          "changes": {
-            "name": "{} +2",
-            "system.rarity": "veryRare",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgArmor12or3000 caption=false]</p>",
-            "system.properties": "mgc",
-            "system.armor.magicalBonus": 2,
-            "system.price.value": 40000
-          }
+          "name": "Armor +2"
         },
         "Armor +3": {
-          "name": "Armor +3",
-          "changes": {
-            "name": "{} +3",
-            "system.rarity": "legendary",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgArmor12or3000 caption=false]</p>",
-            "system.properties": "mgc",
-            "system.armor.magicalBonus": 3,
-            "system.price.value": 200000
-          }
+          "name": "Armor +3"
         }
       }
     },
@@ -375,17 +267,11 @@
       "description": "<p><em>Armor (@UUID[Compendium.dnd5e.equipment24.Item.phbarmPlateArmor]{Plate Armor}), Legendary (Requires Attunement)</em></p><p>You have Resistance to Bludgeoning, Piercing, and Slashing damage while you wear this armor.</p><p><strong>Metal Shell.</strong> You can take a Magic action to give yourself Immunity to Bludgeoning, Piercing, and Slashing damage for 10 minutes or until you are no longer wearing the armor. Once this property is used, it can't be used again until the next dawn.</p>",
       "effects": {
         "Bludgeoning, Piercing, Slashing Resistance": {
-          "name": "Bludgeoning, Piercing, Slashing Resistance",
-          "changes": {
-            "system.traits.dr.value": "slashing"
-          }
+          "name": "Bludgeoning, Piercing, Slashing Resistance"
         },
         "Metal Shell": {
           "name": "Metal Shell",
-          "description": "<div><p>You have Immunity to Bludgeoning, Piercing, and Slashing damage for 10 minutes or until you are no longer wearing the armor.</p></div>",
-          "changes": {
-            "system.traits.di.value": "slashing"
-          }
+          "description": "<div><p>You have Immunity to Bludgeoning, Piercing, and Slashing damage for 10 minutes or until you are no longer wearing the armor.</p></div>"
         }
       }
     },
@@ -394,184 +280,64 @@
       "description": "<p><em>Armor (Any Light, Medium, or Heavy), Rare (Requires Attunement)</em></p><p>You have Resistance to one type of damage while you wear this armor. The GM chooses the type or determines it randomly by rolling on the following table.</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmgArmorOfResist rollable caption=false]</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Armor of Acid Resistance": {
-          "name": "Armor of Acid Resistance",
-          "changes": {
-            "name": "{} of Acid Resistance",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist caption=false]</p>",
-            "system.properties": "mgc",
-            "system.rarity": "rare",
-            "system.attunement": "required",
-            "img": "icons/equipment/chest/breastplate-layered-gold.webp",
-            "system.price.value": 4000
-          }
+          "name": "Armor of Acid Resistance"
         },
         "Armor of Cold Resistance": {
-          "name": "Armor of Cold Resistance",
-          "changes": {
-            "name": "{} of Cold Resistance",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist caption=false]</p>",
-            "system.properties": "mgc",
-            "system.rarity": "rare",
-            "system.attunement": "required",
-            "img": "icons/equipment/chest/breastplate-layered-gold.webp",
-            "system.price.value": 4000
-          }
+          "name": "Armor of Cold Resistance"
         },
         "Armor of Fire Resistance": {
-          "name": "Armor of Fire Resistance",
-          "changes": {
-            "name": "{} of Fire Resistance",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist caption=false]</p>",
-            "system.properties": "mgc",
-            "system.rarity": "rare",
-            "system.attunement": "required",
-            "img": "icons/equipment/chest/breastplate-layered-gold.webp",
-            "system.price.value": 4000
-          }
+          "name": "Armor of Fire Resistance"
         },
         "Armor of Force Resistance": {
-          "name": "Armor of Force Resistance",
-          "changes": {
-            "name": "{} of Force Resistance",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist caption=false]</p>",
-            "system.properties": "mgc",
-            "system.rarity": "rare",
-            "system.attunement": "required",
-            "img": "icons/equipment/chest/breastplate-layered-gold.webp",
-            "system.price.value": 4000
-          }
+          "name": "Armor of Force Resistance"
         },
         "Armor of Lightning Resistance": {
-          "name": "Armor of Lightning Resistance",
-          "changes": {
-            "name": "{} of Lightning Resistance",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist caption=false]</p>",
-            "system.properties": "mgc",
-            "system.rarity": "rare",
-            "system.attunement": "required",
-            "img": "icons/equipment/chest/breastplate-layered-gold.webp",
-            "system.price.value": 4000
-          }
+          "name": "Armor of Lightning Resistance"
         },
         "Armor of Necrotic Resistance": {
-          "name": "Armor of Necrotic Resistance",
-          "changes": {
-            "name": "{} of Necrotic Resistance",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist caption=false]</p>",
-            "system.properties": "mgc",
-            "system.rarity": "rare",
-            "system.attunement": "required",
-            "img": "icons/equipment/chest/breastplate-layered-gold.webp",
-            "system.price.value": 4000
-          }
+          "name": "Armor of Necrotic Resistance"
         },
         "Armor of Poison Resistance": {
-          "name": "Armor of Poison Resistance",
-          "changes": {
-            "name": "{} of Poison Resistance",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist caption=false]</p>",
-            "system.properties": "mgc",
-            "system.rarity": "rare",
-            "system.attunement": "required",
-            "img": "icons/equipment/chest/breastplate-layered-gold.webp",
-            "system.price.value": 4000
-          }
+          "name": "Armor of Poison Resistance"
         },
         "Armor of Psychic Resistance": {
-          "name": "Armor of Psychic Resistance",
-          "changes": {
-            "name": "{} of Psychic Resistance",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist caption=false]</p>",
-            "system.properties": "mgc",
-            "system.rarity": "rare",
-            "system.attunement": "required",
-            "img": "icons/equipment/chest/breastplate-layered-gold.webp",
-            "system.price.value": 4000
-          }
+          "name": "Armor of Psychic Resistance"
         },
         "Armor of Radiant Resistance": {
-          "name": "Armor of Radiant Resistance",
-          "changes": {
-            "name": "{} of Radiant Resistance",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist caption=false]</p>",
-            "system.properties": "mgc",
-            "system.rarity": "rare",
-            "system.attunement": "required",
-            "img": "icons/equipment/chest/breastplate-layered-gold.webp",
-            "system.price.value": 4000
-          }
+          "name": "Armor of Radiant Resistance"
         },
         "Armor of Thunder Resistance": {
-          "name": "Armor of Thunder Resistance",
-          "changes": {
-            "name": "{} of Thunder Resistance",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist caption=false]</p>",
-            "system.properties": "mgc",
-            "system.rarity": "rare",
-            "system.attunement": "required",
-            "img": "icons/equipment/chest/breastplate-layered-gold.webp",
-            "system.price.value": 4000
-          }
+          "name": "Armor of Thunder Resistance"
         },
         "Acid Resistance": {
-          "name": "Acid Resistance",
-          "changes": {
-            "system.traits.dr.value": "acid"
-          }
+          "name": "Acid Resistance"
         },
         "Cold Resistance": {
-          "name": "Cold Resistance",
-          "changes": {
-            "system.traits.dr.value": "cold"
-          }
+          "name": "Cold Resistance"
         },
         "Fire Resistance": {
-          "name": "Fire Resistance",
-          "changes": {
-            "system.traits.dr.value": "fire"
-          }
+          "name": "Fire Resistance"
         },
         "Force Resistance": {
-          "name": "Force Resistance",
-          "changes": {
-            "system.traits.dr.value": "force"
-          }
+          "name": "Force Resistance"
         },
         "Lightning Resistance": {
-          "name": "Lightning Resistance",
-          "changes": {
-            "system.traits.dr.value": "lightning"
-          }
+          "name": "Lightning Resistance"
         },
         "Necrotic Resistance": {
-          "name": "Necrotic Resistance",
-          "changes": {
-            "system.traits.dr.value": "necrotic"
-          }
+          "name": "Necrotic Resistance"
         },
         "Poison Resistance": {
-          "name": "Poison Resistance",
-          "changes": {
-            "system.traits.dr.value": "poison"
-          }
+          "name": "Poison Resistance"
         },
         "Radiant Resistance": {
-          "name": "Radiant Resistance",
-          "changes": {
-            "system.traits.dr.value": "radiant"
-          }
+          "name": "Radiant Resistance"
         },
         "Psychic Resistance": {
-          "name": "Psychic Resistance",
-          "changes": {
-            "system.traits.dr.value": "psychic"
-          }
+          "name": "Psychic Resistance"
         },
         "Thunder Resistance": {
-          "name": "Thunder Resistance",
-          "changes": {
-            "system.traits.dr.value": "thunder"
-          }
+          "name": "Thunder Resistance"
         }
       }
     },
@@ -580,67 +346,22 @@
       "description": "<p><em>Armor (Any Light, Medium, or Heavy), Rare (Requires Attunement)</em></p><p>While wearing this armor, you have Resistance to one of the following damage types: Bludgeoning, Piercing, or Slashing. The GM chooses the type or determines it randomly.</p><section class=\"secret\" id=\"secret-UPopsWFeYAszydMn\"><p><strong>Curse.</strong> This armor is cursed, a fact that is revealed only when the <em>Identify</em> spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by a <em>Remove Curse</em> spell or similar magic; removing the armor fails to end the curse. While cursed, you have Vulnerability to two of the three damage types associated with the armor (not the one to which it grants Resistance).</p></section><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Armor: Bludgeoning Resistance": {
-          "name": "Armor: Bludgeoning Resistance",
-          "changes": {
-            "system.traits.dr.value": "bludegoning",
-            "system.traits.dv.value": "slashing"
-          }
+          "name": "Armor: Bludgeoning Resistance"
         },
         "Armor: Piercing Resistance": {
-          "name": "Armor: Piercing Resistance",
-          "changes": {
-            "system.traits.dv.value": "slashing",
-            "system.traits.dr.value": "piercing"
-          }
+          "name": "Armor: Piercing Resistance"
         },
         "Armor: Slashing Resistance": {
-          "name": "Armor: Slashing Resistance",
-          "changes": {
-            "system.traits.dv.value": "piercing",
-            "system.traits.dr.value": "slashing"
-          }
+          "name": "Armor: Slashing Resistance"
         },
         "Bludgeoning Resistance": {
-          "name": "Bludgeoning Resistance",
-          "changes": {
-            "name": "{} of Vulnerability",
-            "system.unidentified.name": "{} of Bludgeoning Resistance",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgArmorOfVulner caption=false]</p>",
-            "system.unidentified.description": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgArmorOfVulner caption=false]</p>",
-            "system.price.value": 4000,
-            "system.price.denomination": "gp",
-            "system.properties": "mgc",
-            "system.attunement": "required"
-          }
+          "name": "Bludgeoning Resistance"
         },
         "Piercing Resistance": {
-          "name": "Piercing Resistance",
-          "changes": {
-            "name": "{} of Vulnerability",
-            "system.unidentified.name": "{} of Piercing Resistance",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgArmorOfVulner caption=false]</p>",
-            "system.unidentified.description": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgArmorOfVulner caption=false]</p>",
-            "system.price.value": 4000,
-            "system.price.denomination": "gp",
-            "system.properties": "mgc",
-            "system.attunement": "required"
-          }
+          "name": "Piercing Resistance"
         },
         "Slashing Resistance": {
-          "name": "Slashing Resistance",
-          "changes": {
-            "name": "{} of Vulnerability",
-            "system.unidentified.name": "{} of Slashing Resistance",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgArmorOfVulner caption=false]</p>",
-            "system.unidentified.description": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgArmorOfVulner caption=false]</p>",
-            "system.price.value": 4000,
-            "system.price.denomination": "gp",
-            "system.properties": "mgc",
-            "system.attunement": "required"
-          }
+          "name": "Slashing Resistance"
         }
       }
     },
@@ -650,10 +371,7 @@
       "effects": {
         "Ranged Attack AC Bonus": {
           "name": "Ranged Attack AC Bonus",
-          "description": "<p>You gain a +2 bonus to Armor Class against ranged attack rolls while you wield this Shield. This bonus is in addition to the Shield’s normal bonus to AC.</p>",
-          "changes": {
-            "system.attributes.ac.bonus": 2
-          }
+          "description": "<p>You gain a +2 bonus to Armor Class against ranged attack rolls while you wield this Shield. This bonus is in addition to the Shield’s normal bonus to AC.</p>"
         }
       }
     },
@@ -672,10 +390,7 @@
       "effects": {
         "Enhanced Awareness: Initiative and Perception": {
           "name": "Enhanced Awareness: Initiative and Perception",
-          "description": "<p>While this dark-blue rhomboid orbits your head, you have Advantage on Initiative rolls and Wisdom (Perception) checks.</p>",
-          "changes": {
-            "system.attributes.init.roll.mode": 1
-          }
+          "description": "<p>While this dark-blue rhomboid orbits your head, you have Advantage on Initiative rolls and Wisdom (Perception) checks.</p>"
         }
       }
     },
@@ -709,13 +424,7 @@
       "effects": {
         "Dwarvenkind Benefits": {
           "name": "Dwarvenkind Benefits",
-          "description": "<div class=\"def-block\"><p><strong>Dwarvish.</strong> You know Dwarvish.</p><p><strong>Friend of Dwarvenkind.</strong> You have Advantage on Charisma (Persuasion) checks made to interact with dwarves and duergar.</p><p><strong>Toughness.</strong> Your Constitution increases by 2, to a maximum of 20.</p><p>If you aren’t a dwarf or duergar, you gain the following additional benefits while wearing the belt:</p><div class=\"def-block\"><p><strong>Darkvision.</strong> You have Darkvision with a range of 60 feet.</p><p><strong>Resilience.</strong> You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned condition.</p></div></div>",
-          "changes": {
-            "system.traits.languages.value": "dwarvish",
-            "system.abilities.con.value": 20,
-            "system.attributes.senses.darkvision": 60,
-            "system.traits.dr.value": "poison"
-          }
+          "description": "<div class=\"def-block\"><p><strong>Dwarvish.</strong> You know Dwarvish.</p><p><strong>Friend of Dwarvenkind.</strong> You have Advantage on Charisma (Persuasion) checks made to interact with dwarves and duergar.</p><p><strong>Toughness.</strong> Your Constitution increases by 2, to a maximum of 20.</p><p>If you aren’t a dwarf or duergar, you gain the following additional benefits while wearing the belt:</p><div class=\"def-block\"><p><strong>Darkvision.</strong> You have Darkvision with a range of 60 feet.</p><p><strong>Resilience.</strong> You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned condition.</p></div></div>"
         }
       }
     },
@@ -729,21 +438,10 @@
       "effects": {
         "Berserker HP Increase": {
           "name": "Berserker HP Increase",
-          "description": "<p>While you are attuned to this weapon, your Hit Point maximum increases by 1 for each level you have attained.</p>",
-          "changes": {
-            "system.attributes.hp.bonuses.level": 1
-          }
+          "description": "<p>While you are attuned to this weapon, your Hit Point maximum increases by 1 for each level you have attained.</p>"
         },
         "Berserker Axe": {
-          "name": "Berserker Axe",
-          "changes": {
-            "name": "Berserker {}",
-            "system.rarity": "rare",
-            "system.attunement": "required",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgBerserkerAxe0 caption=false]</p>",
-            "system.magicalBonus": 1,
-            "system.properties": "mgc"
-          }
+          "name": "Berserker Axe"
         }
       }
     },
@@ -778,14 +476,7 @@
       "effects": {
         "Boots of Speed Active": {
           "name": "Boots of Speed Active",
-          "description": "<p>The boots double your Speed, and any creature that makes an Opportunity Attack against you has Disadvantage on the attack roll. If you click your heels together again, you end the effect.</p>",
-          "changes": {
-            "system.attributes.movement.walk": 2,
-            "system.attributes.movement.fly": 2,
-            "system.attributes.movement.climb": 2,
-            "system.attributes.movement.burrow": 2,
-            "system.attributes.movement.swim": 2
-          }
+          "description": "<p>The boots double your Speed, and any creature that makes an Opportunity Attack against you has Disadvantage on the attack roll. If you click your heels together again, you end the effect.</p>"
         }
       }
     },
@@ -795,10 +486,7 @@
       "effects": {
         "Unburdened Movement": {
           "name": "Unburdened Movement",
-          "description": "<p>Your Speed becomes 30 feet unless your Speed is higher, and your Speed isn’t reduced by you carrying weight in excess of your carrying capacity or wearing Heavy Armor.</p>",
-          "changes": {
-            "system.attributes.movement.walk": 30
-          }
+          "description": "<p>Your Speed becomes 30 feet unless your Speed is higher, and your Speed isn’t reduced by you carrying weight in excess of your carrying capacity or wearing Heavy Armor.</p>"
         }
       }
     },
@@ -808,17 +496,11 @@
       "effects": {
         "Cold Resistance": {
           "name": "Cold Resistance",
-          "description": "<p>You have Resistance to Cold damage and can tolerate temperatures of 0 degrees Fahrenheit or lower without any additional protection.</p>",
-          "changes": {
-            "system.traits.dr.value": "cold"
-          }
+          "description": "<p>You have Resistance to Cold damage and can tolerate temperatures of 0 degrees Fahrenheit or lower without any additional protection.</p>"
         },
         "Winter Strider": {
           "name": "Winter Strider",
-          "description": "<p>You ignore Difficult Terrain created by ice or snow.</p>",
-          "changes": {
-            "system.attributes.movement.ignoredDifficultTerrain": "snow"
-          }
+          "description": "<p>You ignore Difficult Terrain created by ice or snow.</p>"
         }
       }
     },
@@ -831,17 +513,11 @@
       "description": "<div><p><em>Wondrous Item, Uncommon (Requires Attunement)</em></p></div><p>While wearing these bracers, you have proficiency with the Longbow and Shortbow, and you gain a +2 bonus to damage rolls made with such weapons.</p><section class=\"secret\" id=\"secret-l1W6lw8WR2ku4qP2\"><p><strong>Foundry Note</strong></p><p>The <strong>Bonus Damage: Bows</strong> passive effect applies the damage bonus to <em>all</em> ranged weapon damage rolls and should be disabled before rolling damage for weapons other than a Longbow or Shortbow.</p></section>",
       "effects": {
         "Bow Proficiencies": {
-          "name": "Bow Proficiencies",
-          "changes": {
-            "system.traits.weaponProf.value": "shortbow"
-          }
+          "name": "Bow Proficiencies"
         },
         "Bonus Damage: Bows": {
           "name": "Bonus Damage: Bows",
-          "description": "<p>you gain a +2 bonus to damage rolls on ranged attacks made with a Longbow or Shortbow</p>",
-          "changes": {
-            "system.bonuses.rwak.damage": 2
-          }
+          "description": "<p>you gain a +2 bonus to damage rolls on ranged attacks made with a Longbow or Shortbow</p>"
         }
       }
     },
@@ -850,10 +526,7 @@
       "description": "<div><p><em>Wondrous Item, Rare (Requires Attunement)</em></p></div><p>While wearing these bracers, you gain a +2 bonus to Armor Class if you are wearing no armor and using no Shield.</p>",
       "effects": {
         "Bonus AC (Unarmored)": {
-          "name": "Bonus AC (Unarmored)",
-          "changes": {
-            "system.attributes.ac.bonus": 2
-          }
+          "name": "Bonus AC (Unarmored)"
         }
       }
     },
@@ -863,10 +536,7 @@
       "effects": {
         "Horn of Valhalla: Condition Immunity": {
           "name": "Horn of Valhalla: Condition Immunity",
-          "description": "<p>The spirits look like living, breathing warriors, and they have Immunity to the &amp;Reference[Charmed apply=false] and &amp;Reference[Frightened apply=false] conditions.</p>",
-          "changes": {
-            "system.traits.ci.value": "frightened"
-          }
+          "description": "<p>The spirits look like living, breathing warriors, and they have Immunity to the &amp;Reference[Charmed apply=false] and &amp;Reference[Frightened apply=false] conditions.</p>"
         }
       }
     },
@@ -880,10 +550,7 @@
       "effects": {
         "Horn of Valhalla: Condition Immunity": {
           "name": "Horn of Valhalla: Condition Immunity",
-          "description": "<p>The spirits look like living, breathing warriors, and they have Immunity to the &amp;Reference[Charmed apply=false] and &amp;Reference[Frightened apply=false] conditions.</p>",
-          "changes": {
-            "system.traits.ci.value": "frightened"
-          }
+          "description": "<p>The spirits look like living, breathing warriors, and they have Immunity to the &amp;Reference[Charmed apply=false] and &amp;Reference[Frightened apply=false] conditions.</p>"
         }
       }
     },
@@ -893,10 +560,7 @@
       "effects": {
         "Resistance: Force": {
           "name": "Resistance: Force",
-          "description": "<p>Additionally, you have Immunity to damage from the <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMagicMissi]{Magic Missile}</em> spell.</p>",
-          "changes": {
-            "system.traits.dr.value": "force"
-          }
+          "description": "<p>Additionally, you have Immunity to damage from the <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMagicMissi]{Magic Missile}</em> spell.</p>"
         }
       }
     },
@@ -906,25 +570,11 @@
       "effects": {
         "Riding Broom (Low Weight)": {
           "name": "Riding Broom (Low Weight)",
-          "description": "<p>The broom can carry up to 400 pounds, but its Fly Speed becomes 30 feet while carrying over 200 pounds.</p>",
-          "changes": {
-            "system.attributes.movement.fly": 50,
-            "system.attributes.movement.walk": 0,
-            "system.attributes.movement.swim": 0,
-            "system.attributes.movement.burrow": 0,
-            "system.attributes.movement.climb": 0
-          }
+          "description": "<p>The broom can carry up to 400 pounds, but its Fly Speed becomes 30 feet while carrying over 200 pounds.</p>"
         },
         "Riding Broom (High Weight)": {
           "name": "Riding Broom (High Weight)",
-          "description": "<p>The broom can carry up to 400 pounds, but its Fly Speed becomes 30 feet while carrying over 200 pounds.</p>",
-          "changes": {
-            "system.attributes.movement.fly": 30,
-            "system.attributes.movement.walk": 0,
-            "system.attributes.movement.swim": 0,
-            "system.attributes.movement.burrow": 0,
-            "system.attributes.movement.climb": 0
-          }
+          "description": "<p>The broom can carry up to 400 pounds, but its Fly Speed becomes 30 feet while carrying over 200 pounds.</p>"
         }
       }
     },
@@ -984,11 +634,7 @@
       "effects": {
         "Spider Movement and Resistance": {
           "name": "Spider Movement and Resistance",
-          "description": "<p><strong>Poison Resistance.</strong> You have Resistance to Poison damage.</p><p><strong>Spider Climb.</strong> You have a Climb Speed equal to your Speed and can move up, down, and across vertical surfaces and along ceilings, while leaving your hands free.</p><p><strong>Spider Walk.</strong> You can’t be caught in webs of any sort and can move through webs as if they were Difficult Terrain.</p>",
-          "changes": {
-            "system.traits.dr.value": "poison",
-            "system.attributes.movement.climb": "@attributes.movement.walk"
-          }
+          "description": "<p><strong>Poison Resistance.</strong> You have Resistance to Poison damage.</p><p><strong>Spider Climb.</strong> You have a Climb Speed equal to your Speed and can move up, down, and across vertical surfaces and along ceilings, while leaving your hands free.</p><p><strong>Spider Walk.</strong> You can’t be caught in webs of any sort and can move through webs as if they were Difficult Terrain.</p>"
         }
       }
     },
@@ -1026,11 +672,7 @@
       "description": "<div><p><em>Wondrous Item, Uncommon (Requires Attunement)</em></p></div><p>You gain a +1 bonus to Armor Class and saving throws while you wear this cloak.</p>",
       "effects": {
         "Bonus AC/Saves: +1": {
-          "name": "Bonus AC/Saves: +1",
-          "changes": {
-            "system.attributes.ac.bonus": 1,
-            "system.bonuses.abilities.save": 1
-          }
+          "name": "Bonus AC/Saves: +1"
         }
       }
     },
@@ -1049,10 +691,7 @@
       "effects": {
         "Aquatic Bonuses: Swimming and Breathing": {
           "name": "Aquatic Bonuses: Swimming and Breathing",
-          "description": "<p>You can breathe underwater, and you have a Swim Speed of 60 feet.</p>",
-          "changes": {
-            "system.attributes.movement.swim": 60
-          }
+          "description": "<p>You can breathe underwater, and you have a Swim Speed of 60 feet.</p>"
         }
       }
     },
@@ -1061,10 +700,7 @@
       "description": "<p><em>Potion, Very Rare</em></p><p>When you drink this potion, your Strength score changes for 1 hour to 27. The type of giant determines the score. The potion has no effect on you if your Strength is equal to or greater than that score.</p><p>This potion's transparent liquid has floating in it a sliver of light resembling a giant's fingernail.</p>",
       "effects": {
         "Strength of Clouds": {
-          "name": "Strength of Clouds",
-          "changes": {
-            "system.abilities.str.value": 27
-          }
+          "name": "Strength of Clouds"
         }
       }
     },
@@ -1097,11 +733,7 @@
           "description": "<p>The creature has the &amp;Reference[Poisoned apply=false] condition for 1 minute.</p>"
         },
         "Poison Coat": {
-          "name": "Poison Coat",
-          "changes": {
-            "img": "icons/skills/melee/blade-tip-acid-poison-green.webp",
-            "activities[attack].description.chatFlavor": "{}  On Hit: Use <em>Poison Save</em> activity."
-          }
+          "name": "Poison Coat"
         }
       }
     },
@@ -1110,14 +742,7 @@
       "description": "<div><p><em>Weapon (@UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatsword]{Greatsword}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepLongsword0]{Longsword}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepRapier0000]{Rapier}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Scimitar}, or @UUID[Compendium.dnd5e.equipment24.Item.phbwepShortsword]{Shortsword}), Very Rare (Requires Attunement)</em></p></div><p>You can take a Bonus Action to toss this magic weapon into the air. When you do so, the weapon begins to hover, flies up to 30 feet, and attacks one creature of your choice within 5 feet of itself. The weapon uses your attack roll and adds your ability modifier to damage rolls.</p><p>While the weapon hovers, you can take a Bonus Action to cause it to fly up to 30 feet to another spot within 30 feet of you. As part of the same Bonus Action, you can cause the weapon to attack one creature within 5 feet of the weapon.</p><p>After the hovering weapon attacks for the fourth time, it flies back to you and tries to return to your hand. If you have no hand free, the weapon falls to the ground in your space. If the weapon has no unobstructed path to you, it moves as close to you as it can and then falls to the ground. It also ceases to hover if you grasp it or are more than 30 feet away from it.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Dancing Sword": {
-          "name": "Dancing Sword",
-          "changes": {
-            "name": "Dancing {}",
-            "system.rarity": "veryRare",
-            "system.attunement": "required",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgDancingSword0 caption=false]</p>",
-            "system.properties": "mgc"
-          }
+          "name": "Dancing Sword"
         }
       }
     },
@@ -1139,44 +764,18 @@
       "effects": {
         "Transferred AC Bonus: 1": {
           "name": "Transferred AC Bonus: 1",
-          "description": "<p>The adjusted bonuses remain in effect until the start of your next turn, although you must hold the weapon to gain a bonus to AC from it.</p>",
-          "changes": {
-            "system.attributes.ac.bonus": 1,
-            "system.bonuses.mwak.damage": -1,
-            "system.bonuses.mwak.attack": -1
-          }
+          "description": "<p>The adjusted bonuses remain in effect until the start of your next turn, although you must hold the weapon to gain a bonus to AC from it.</p>"
         },
         "Defender": {
-          "name": "Defender",
-          "changes": {
-            "name": "Defender {}",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgDefender00000 caption=false]</p>",
-            "system.properties": "mgc",
-            "system.attunement": "required",
-            "system.magicalBonus": 3,
-            "system.rarity": "legendary",
-            "img": "icons/weapons/swords/greatsword-guard-jewel-green.webp",
-            "system.price.value": 200000,
-            "system.price.denomination": "gp"
-          }
+          "name": "Defender"
         },
         "Transferred AC Bonus: 2": {
           "name": "Transferred AC Bonus: 2",
-          "description": "<p>The adjusted bonuses remain in effect until the start of your next turn, although you must hold the weapon to gain a bonus to AC from it.</p>",
-          "changes": {
-            "system.attributes.ac.bonus": 2,
-            "system.bonuses.mwak.damage": -2,
-            "system.bonuses.mwak.attack": -2
-          }
+          "description": "<p>The adjusted bonuses remain in effect until the start of your next turn, although you must hold the weapon to gain a bonus to AC from it.</p>"
         },
         "Transferred AC Bonus: 3": {
           "name": "Transferred AC Bonus: 3",
-          "description": "<p>The adjusted bonuses remain in effect until the start of your next turn, although you must hold the weapon to gain a bonus to AC from it.</p>",
-          "changes": {
-            "system.attributes.ac.bonus": 3,
-            "system.bonuses.mwak.damage": -3,
-            "system.bonuses.mwak.attack": -3
-          }
+          "description": "<p>The adjusted bonuses remain in effect until the start of your next turn, although you must hold the weapon to gain a bonus to AC from it.</p>"
         }
       }
     },
@@ -1185,24 +784,10 @@
       "description": "<p><em>Armor (Any Light, Medium, or Heavy), Very Rare (Requires Attunement)</em></p><p>While wearing this armor, you gain a +1 bonus to Armor Class, and you know Abyssal. In addition, the armor's clawed gauntlets allow your Unarmed Strikes to deal 1d8 Slashing damage instead of the usual Bludgeoning damage, and you gain a +1 bonus to the attack and damage rolls of your Unarmed Strikes.</p><section class=\"secret\" id=\"secret-i2l0Ym3XkTC4Qm8z\"><p><strong>Curse.</strong> Once you don this cursed armor, you can't doff it unless you are targeted by a <em>Remove Curse</em> spell or similar magic. While wearing the armor, you have Disadvantage on attack rolls against demons and on saving throws against their spells and special abilities.</p></section><p> @Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Demon Armor": {
-          "name": "Demon Armor",
-          "changes": {
-            "name": "Demon {}",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgDemonArmor000 caption=false]</p>",
-            "system.properties": "mgc",
-            "system.attunement": "required",
-            "system.armor.magicalBonus": 1,
-            "system.rarity": "veryRare",
-            "system.price.value": 40000,
-            "system.unidentified.description": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgDemonArmor000 caption=false]</p>",
-            "img": "icons/equipment/chest/breastplate-layered-leather-green.webp"
-          }
+          "name": "Demon Armor"
         },
         "Abyssal Language": {
-          "name": "Abyssal Language",
-          "changes": {
-            "system.traits.languages.value": "abyssal"
-          }
+          "name": "Abyssal Language"
         }
       }
     },
@@ -1250,10 +835,7 @@
       "effects": {
         "Euryale Card: Cursed Saves": {
           "name": "Euryale Card: Cursed Saves",
-          "description": "<p>You take a −2 penalty to saving throws while cursed in this way. Only a god or the magic of the Fates card can end this curse.</p>",
-          "changes": {
-            "system.bonuses.abilities.save": -2
-          }
+          "description": "<p>You take a −2 penalty to saving throws while cursed in this way. Only a god or the magic of the Fates card can end this curse.</p>"
         }
       }
     },
@@ -1364,124 +946,64 @@
       "description": "<p><em>Armor (Scale Mail), Very Rare (Requires Attunement)</em></p><p><em>Dragon Scale Mail</em> is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them. Other times, hunters carefully preserve the hide of a dead dragon. In either case, <em>Dragon Scale Mail</em> is highly valued.</p><p>While wearing this armor, you gain a +1 bonus to Armor Class, you have Advantage on saving throws against the breath weapons of Dragons, and you have Resistance to one damage type determined by the kind of dragon that provided the scales (see the accompanying table).</p><p>Additionally, you can focus your senses as a Magic action to discern the distance and direction to the closest dragon within 30 miles of yourself that is of the same type as the armor. This action can't be used again until the next dawn.</p><details><summary>Resistance Table</summary><table><thead><tr><th><p>Dragon</p></th><th><p>Resistance</p></th></tr></thead><tbody><tr><td><p>Black</p></td><td><p>Acid</p></td></tr><tr><td><p>Gold</p></td><td><p>Fire</p></td></tr><tr><td><p>Blue</p></td><td><p>Lightning</p></td></tr><tr><td><p>Green</p></td><td><p>Poison</p></td></tr><tr><td><p>Brass</p></td><td><p>Fire</p></td></tr><tr><td><p>Red</p></td><td><p>Fire</p></td></tr><tr><td><p>Bronze</p></td><td><p>Lightning</p></td></tr><tr><td><p>Silver</p></td><td><p>Cold</p></td></tr><tr><td><p>Copper</p></td><td><p>Acid</p></td></tr><tr><td><p>White</p></td><td><p>Cold</p></td></tr></tbody></table></details><section class=\"secret\" id=\"secret-maFaWTt3fehLniiP\"><p><strong>Foundry Note</strong></p><p>The <strong>Select Dragon Type</strong> activity can be used to select the type of dragon for this armor. It includes the +1 bonus and an Active Effect that provides the Resistance.</p></section>",
       "effects": {
         "Black Scale": {
-          "name": "Black Scale",
-          "changes": {
-            "name": "Black {}"
-          }
+          "name": "Black Scale"
         },
         "cPxO25ckNFWtuPOT": {
-          "name": "Black Scale",
-          "changes": {
-            "system.traits.dr.value": "acid"
-          }
+          "name": "Black Scale"
         },
         "Gold Scale": {
-          "name": "Gold Scale",
-          "changes": {
-            "name": "Gold {}"
-          }
+          "name": "Gold Scale"
         },
         "7pZPJW8286U9Tg7k": {
-          "name": "Gold Scale",
-          "changes": {
-            "system.traits.dr.value": "fire"
-          }
+          "name": "Gold Scale"
         },
         "Blue Scale": {
-          "name": "Blue Scale",
-          "changes": {
-            "system.traits.dr.value": "lightning"
-          }
+          "name": "Blue Scale"
         },
         "Green Scale": {
-          "name": "Green Scale",
-          "changes": {
-            "system.traits.dr.value": "poison"
-          }
+          "name": "Green Scale"
         },
         "Brass Scale": {
-          "name": "Brass Scale",
-          "changes": {
-            "system.traits.dr.value": "fire"
-          }
+          "name": "Brass Scale"
         },
         "Red Scale": {
-          "name": "Red Scale",
-          "changes": {
-            "system.traits.dr.value": "fire"
-          }
+          "name": "Red Scale"
         },
         "Bronze Scale": {
-          "name": "Bronze Scale",
-          "changes": {
-            "system.traits.dr.value": "lightning"
-          }
+          "name": "Bronze Scale"
         },
         "Silver Scale": {
-          "name": "Silver Scale",
-          "changes": {
-            "system.traits.dr.value": "cold"
-          }
+          "name": "Silver Scale"
         },
         "Copper Scale": {
-          "name": "Copper Scale",
-          "changes": {
-            "system.traits.dr.value": "acid"
-          }
+          "name": "Copper Scale"
         },
         "White Scale": {
-          "name": "White Scale",
-          "changes": {
-            "system.traits.dr.value": "cold"
-          }
+          "name": "White Scale"
         },
         "YnovzwTfQAEO8okl": {
-          "name": "Blue Scale",
-          "changes": {
-            "name": "Blue {}"
-          }
+          "name": "Blue Scale"
         },
         "SXYzllaQnbyxFGJu": {
-          "name": "Green Scale",
-          "changes": {
-            "name": "Green {}"
-          }
+          "name": "Green Scale"
         },
         "7R5dtsUNiWZhXhS3": {
-          "name": "Brass Scale",
-          "changes": {
-            "name": "Fire {}"
-          }
+          "name": "Brass Scale"
         },
         "kwIXULk6aDknIZnv": {
-          "name": "Red Scale",
-          "changes": {
-            "name": "Red {}"
-          }
+          "name": "Red Scale"
         },
         "4MsmIVyXTFt4AKuD": {
-          "name": "Bronze Scale",
-          "changes": {
-            "name": "Bronze {}"
-          }
+          "name": "Bronze Scale"
         },
         "WnwsmlBDChjhXgAj": {
-          "name": "Silver Scale",
-          "changes": {
-            "name": "Silver {}"
-          }
+          "name": "Silver Scale"
         },
         "wVh8ceMKvVud2qyr": {
-          "name": "Copper Scale",
-          "changes": {
-            "name": "Copper {}"
-          }
+          "name": "Copper Scale"
         },
         "QzV7iJWMlEePDrjN": {
-          "name": "White Scale",
-          "changes": {
-            "name": "White {}"
-          }
+          "name": "White Scale"
         }
       }
     },
@@ -1490,15 +1012,7 @@
       "description": "<p><em>Weapon (Any Simple or Martial), Rare</em></p><p>You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.</p><p>The weapon deals an extra 3d6 damage of the weapon's type if the target is a Dragon.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Dragon Slayer": {
-          "name": "Dragon Slayer",
-          "changes": {
-            "name": "Dragon Slayer {}",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgDragonSlayer0 caption=false]</p>",
-            "system.properties": "mgc",
-            "system.magicalBonus": 1,
-            "activities[attack].description.chatFlavor": "{} Bonus Damage: 3d6 vs Dragon"
-          }
+          "name": "Dragon Slayer"
         }
       }
     },
@@ -1531,14 +1045,7 @@
       "description": "<div><p><em>Armor (@UUID[Compendium.dnd5e.equipment24.Item.phbarmHalfPlateA]{Half Plate} or @UUID[Compendium.dnd5e.equipment24.Item.phbarmPlateArmor]{Plate Armor}), Very Rare</em></p></div><p>While wearing this armor, you gain a +2 bonus to Armor Class. In addition, if an effect moves you against your will along the ground, you can take a Reaction to reduce the distance you are moved by up to 10 feet.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Dwarven Plate": {
-          "name": "Dwarven Plate",
-          "changes": {
-            "name": "Dwarven {}",
-            "system.rarity": "veryRare",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgDwarvenPlate0 caption=false]</p>",
-            "system.armor.magicalBonus": 2,
-            "system.properties": "mgc"
-          }
+          "name": "Dwarven Plate"
         }
       }
     },
@@ -1554,12 +1061,7 @@
           "name": "Charmed"
         },
         "Earth Focus": {
-          "name": "Earth Focus",
-          "changes": {
-            "system.traits.languages.value": "terran",
-            "system.traits.dr.value": "acid",
-            "system.attributes.movement.ignoredDifficultTerrain": "rocks"
-          }
+          "name": "Earth Focus"
         }
       }
     },
@@ -1573,22 +1075,10 @@
       "effects": {
         "Efreeti Bonuses: Resistance, Primordial, Movement": {
           "name": "Efreeti Bonuses: Resistance, Primordial, Movement",
-          "description": "<p>You have Immunity to Fire damage, and you know Primordial. In addition, you can stand on and move across molten rock as if it were solid ground.</p>",
-          "changes": {
-            "system.traits.di.value": "fire",
-            "system.traits.languages.value": "primordial"
-          }
+          "description": "<p>You have Immunity to Fire damage, and you know Primordial. In addition, you can stand on and move across molten rock as if it were solid ground.</p>"
         },
         "Efreeti Chain": {
-          "name": "Efreeti Chain",
-          "changes": {
-            "name": "Efreeti {}",
-            "system.rarity": "legendary",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgEfreetiChain0 caption=false]</p>",
-            "system.attunement": "required",
-            "system.properties": "mgc",
-            "system.armor.magicalBonus": 3
-          }
+          "name": "Efreeti Chain"
         }
       }
     },
@@ -1605,15 +1095,7 @@
       "description": "<p><em>Armor (@UUID[Compendium.dnd5e.equipment24.Item.phbarmChainMail0]{Chain Mail} or @UUID[Compendium.dnd5e.equipment24.Item.phbarmChainShirt]{Chain Shirt}), Rare</em></p><p>You gain a +1 bonus to Armor Class while you wear this armor. You are considered trained with this armor even if you lack training with Medium or Heavy armor.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Elven Chain": {
-          "name": "Elven Chain",
-          "changes": {
-            "name": "Elven {}",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgElvenChain000 caption=false]</p>",
-            "system.properties": "mgc",
-            "system.proficient": 1,
-            "system.armor.magicalBonus": 1
-          }
+          "name": "Elven Chain"
         }
       }
     },
@@ -1626,19 +1108,7 @@
       "description": "<p><em>Weapon (@UUID[Compendium.dnd5e.equipment24.Item.phbwepLongbow000]{Longbow} or @UUID[Compendium.dnd5e.equipment24.Item.phbwepShortbow00]{Shortbow}), Very Rare (Requires Attunement)</em></p><p>You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon, which has no string. Each time you pull your arm back in a firing motion, a magical arrow made of golden energy appears nocked and ready to fire. An arrow produced by this weapon deals Force damage instead of Piercing damage on a hit, and it disappears after it hits or misses its target. Until it disappears, the arrow emits Bright Light in a 20-foot radius and Dim Light for an additional 20 feet.</p><p>This weapon has the following additional properties.</p><details><summary><strong>Arrow of Restraint.</strong></summary><p>Whenever you use this weapon to make a ranged attack against a creature, you can try to restrain the target instead of dealing damage to it. If the arrow hits, the target must succeed on a [[/save ability=str dc=15 format=long]] or have the &amp;Reference[Restrained apply=false] condition for 1 minute. As an action, a creature Restrained by an arrow can make a [[/check ability=str skill=ath dc=20 format=long]] to try to break the restraint, ending the effect on itself on a successful check.</p></details><details><summary><strong>Arrow of Transport.</strong></summary><p>As a Magic action, you can fire one energy arrow from this weapon at a target you can see within 60 feet of yourself. The target can be either a willing Medium or smaller creature or an object that isn't being worn or carried, provided the object is small enough to fit inside a 5-foot Cube. The arrow teleports the target to an unoccupied space you can see within 10 feet of you.</p></details><details><summary><strong>Energy Ladder.</strong></summary><p>As a Magic action, you can loose a flurry of energy arrows from this weapon at a wall up to 60 feet away from yourself. The arrows become glowing rungs that stick out of the wall, forming a magical ladder up to 60 feet long on the wall. This ladder lasts for 1 minute before disappearing.</p></details><p> @Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Energy Bow": {
-          "name": "Energy Bow",
-          "changes": {
-            "name": "Energy {}",
-            "system.rarity": "veryRare",
-            "system.attunement": "required",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgEnergyBow0000 caption=false]</p>",
-            "system.properties": "-amm",
-            "system.magicalBonus": 1,
-            "system.damage.base.types": "-piercing",
-            "img": "icons/weapons/bows/longbow-gold-pink.webp",
-            "system.price.value": 40000,
-            "system.price.denomination": "gp"
-          }
+          "name": "Energy Bow"
         },
         "Restrained (Arrow of Restraint)": {
           "name": "Restrained (Arrow of Restraint)",
@@ -1699,10 +1169,7 @@
       "description": "<p><em>Potion, Rare</em></p><p>When you drink this potion, your Strength score changes for 1 hour to 25. The type of giant determines the score. The potion has no effect on you if your Strength is equal to or greater than that score.</p><p>This potion's transparent liquid has floating in it a sliver of light resembling a giant's fingernail.</p>",
       "effects": {
         "Strength of Fire": {
-          "name": "Strength of Fire",
-          "changes": {
-            "system.abilities.str.value": 25
-          }
+          "name": "Strength of Fire"
         }
       }
     },
@@ -1714,11 +1181,7 @@
           "name": "Charmed"
         },
         "Fire Focus": {
-          "name": "Fire Focus",
-          "changes": {
-            "system.traits.languages.value": "ignan",
-            "system.traits.di.value": "fire"
-          }
+          "name": "Fire Focus"
         }
       }
     },
@@ -1731,22 +1194,10 @@
       "description": "<p><em>Weapon (Any Melee Weapon), Rare (Requires Attunement)</em></p><p>While holding this magic weapon, you can take a Bonus Action and use a command word to cause flames to engulf the <span class=\"no-break\">damage</span>-dealing part of the weapon. These flames shed Bright Light in a 40-foot radius and Dim Light for an additional 40 feet. While the weapon is ablaze, it deals an extra 2d6 Fire damage on a hit. The flames last until you take a Bonus Action to issue the command again or until you drop, stow, or sheathe the weapon.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Flame Tongue": {
-          "name": "Flame Tongue",
-          "changes": {
-            "name": "Flame Tongue {}",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgFlameTongue00 caption=false]</p>",
-            "system.properties": "mgc",
-            "system.attunement": "required",
-            "system.price.value": 4000,
-            "system.price.denomination": "gp"
-          }
+          "name": "Flame Tongue"
         },
         "Ablaze": {
-          "name": "Ablaze",
-          "changes": {
-            "system.damage.parts": [["2d6", "fire"]],
-            "name": "{} (Ablaze)"
-          }
+          "name": "Ablaze"
         }
       }
     },
@@ -1760,10 +1211,7 @@
       "effects": {
         "Enhance Fortitude: Constitution Bonus": {
           "name": "Enhance Fortitude: Constitution Bonus",
-          "description": "<p>Your Constitution increases by 2, to a maximum of 20, while this pink rhomboid orbits your head.</p>",
-          "changes": {
-            "system.abilities.con.value": 20
-          }
+          "description": "<p>Your Constitution increases by 2, to a maximum of 20, while this pink rhomboid orbits your head.</p>"
         }
       }
     },
@@ -1772,22 +1220,10 @@
       "description": "<p><em>Weapon (@UUID[Compendium.dnd5e.equipment24.Item.phbwepGlaive0000]{Glaive}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatsword]{Greatsword}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepLongsword0]{Longsword}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepRapier0000]{Rapier}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Scimitar}, or @UUID[Compendium.dnd5e.equipment24.Item.phbwepShortsword]{Shortsword}), Very Rare (Requires Attunement)</em></p><p>When you hit with an attack roll using this magic weapon, the target takes an extra 1d6 Cold damage. In addition, while you hold the weapon, you have Resistance to Fire damage.</p><p>In freezing temperatures, the weapon sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet.</p><p>When you draw this weapon, you can extinguish all nonmagical flames within 30 feet of yourself. Once used, this property can't be used again for 1 hour.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Frost Brand": {
-          "name": "Frost Brand",
-          "changes": {
-            "system.damage.parts": [["1d6", "cold"]],
-            "system.properties": "mgc",
-            "system.attunement": "required",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgFrostBrand000 caption=false]</p>",
-            "name": "Frost Brand {}",
-            "system.rarity": "veryRare",
-            "img": "icons/weapons/swords/greatsword-flamberge.webp"
-          }
+          "name": "Frost Brand"
         },
         "Fire Resistance": {
-          "name": "Fire Resistance",
-          "changes": {
-            "system.traits.dr.value": "fire"
-          }
+          "name": "Fire Resistance"
         }
       }
     },
@@ -1796,10 +1232,7 @@
       "description": "<p><em>Potion, Rare</em></p><p>When you drink this potion, your Strength score changes for 1 hour to 23. The type of giant determines the score. The potion has no effect on you if your Strength is equal to or greater than that score.</p><p>This potion's transparent liquid has floating in it a sliver of light resembling a giant's fingernail.</p>",
       "effects": {
         "Strength of Frost": {
-          "name": "Strength of Frost",
-          "changes": {
-            "system.abilities.str.value": 23
-          }
+          "name": "Strength of Frost"
         }
       }
     },
@@ -1833,12 +1266,7 @@
       "effects": {
         "Mastiff Figurine": {
           "name": "Mastiff Figurine",
-          "description": "<p>The mastiff has an Intelligence of 8 and can speak Common. It also has &amp;Reference[Blindsight] with a range of 60 feet.</p>",
-          "changes": {
-            "system.abilities.int.value": 8,
-            "system.traits.languages.value": "common",
-            "system.attributes.senses.blindsight": 60
-          }
+          "description": "<p>The mastiff has an Intelligence of 8 and can speak Common. It also has &amp;Reference[Blindsight] with a range of 60 feet.</p>"
         }
       }
     },
@@ -1855,10 +1283,7 @@
       "description": "<p><em>Wondrous Item, Uncommon (Requires Attunement)</em></p><p>Your Strength is 19 while you wear these gauntlets. They have no effect on you if your Strength is 19 or higher without them.</p>",
       "effects": {
         "Ogre Strength": {
-          "name": "Ogre Strength",
-          "changes": {
-            "system.abilities.str.value": 19
-          }
+          "name": "Ogre Strength"
         }
       }
     },
@@ -1876,10 +1301,7 @@
       "description": "<p><em>Wondrous Item, Rare (Requires Attunement)</em></p><p>This gem has 3 charges. As a Magic action, you can expend 1 charge. For the next 10 minutes, you have &amp;Reference[Truesight] out to 120 feet when you peer through the gem.</p><p>The gem regains 1d3 expended charges daily at dawn.</p>",
       "effects": {
         "Seeing": {
-          "name": "Seeing",
-          "changes": {
-            "system.attributes.senses.trueseight": 120
-          }
+          "name": "Seeing"
         }
       }
     },
@@ -1888,14 +1310,7 @@
       "description": "<p><em>Weapon (Any Simple or Martial), Rare</em></p><p>You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.</p><p>When you hit a Giant with this weapon, the Giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or have the Prone condition.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Giant Slayer": {
-          "name": "Giant Slayer",
-          "changes": {
-            "name": "Giant Slayer {}",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgGiantSlayer00 caption=false]</p>",
-            "system.properties": "mgc",
-            "system.magicalBonus": 1
-          }
+          "name": "Giant Slayer"
         }
       }
     },
@@ -1913,12 +1328,7 @@
       "effects": {
         "Gloves On": {
           "name": "Gloves On",
-          "description": "<p>You have a Climb Speed and a Swim Speed equal to your Speed, and you gain a +5 bonus to Strength (Athletics) checks made to climb or swim.</p>",
-          "changes": {
-            "system.skills.ath.bonuses.check": 5,
-            "system.attributes.movement.climb": "@attributes.movement.walk",
-            "system.attributes.movement.swim": "@attributes.movement.walk"
-          }
+          "description": "<p>You have a Climb Speed and a Swim Speed equal to your Speed, and you gain a +5 bonus to Strength (Athletics) checks made to climb or swim.</p>"
         }
       }
     },
@@ -1927,10 +1337,7 @@
       "description": "<p><em>Wondrous Item, Uncommon</em></p><p>These gloves are imperceptible while worn. While wearing them, you gain a +5 bonus to Dexterity (Sleight of Hand) checks.</p><section id=\"secret-MTbVEJqcHy1oERli\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Gloves On</strong> Active Effect automates the +5 to your Sleight of Hand checks.</p></section>",
       "effects": {
         "Gloves On": {
-          "name": "Gloves On",
-          "changes": {
-            "system.skills.slt.bonuses.check": 5
-          }
+          "name": "Gloves On"
         }
       }
     },
@@ -1939,10 +1346,7 @@
       "description": "<p><em>Wondrous Item, Uncommon</em></p><p>While wearing these dark lenses, you have Darkvision out to 60 feet. If you already have Darkvision, wearing the goggles increases its range by 60 feet.</p>",
       "effects": {
         "Goggles On": {
-          "name": "Goggles On",
-          "changes": {
-            "system.attributes.senses.darkvision": 60
-          }
+          "name": "Goggles On"
         }
       }
     },
@@ -1959,18 +1363,7 @@
       "description": "<p><em>Weapon (@UUID[Compendium.dnd5e.equipment24.Item.phbwepMaul000000]{Maul} or @UUID[Compendium.dnd5e.equipment24.Item.phbwepWarhammer0]{Warhammer}), Legendary (Requires Attunement)</em></p><p>You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.</p><p>The weapon has 5 charges. You can expend 1 charge and make a ranged attack with the weapon, hurling it as if it had the Thrown property with a normal range of 20 feet and a long range of 60 feet. If the attack hits, the weapon unleashes a thunderclap audible out to 300 feet. The target and every creature within 30 feet of it other than you must succeed on a DC 17 Constitution saving throw or have the Stunned condition until the end of your next turn. Immediately after hitting or missing, the weapon flies back to your hand. The weapon regains 1d4 + 1 expended charges daily at dawn.</p><p><strong>Giant's Bane.</strong> While you are attuned to the weapon and wearing either a <em>Belt of Giant Strength</em> or <em>Gauntlets of Ogre Power</em> to which you are also attuned, you gain the following benefits:</p><details><summary><strong>Giants' Bane.</strong></summary><p>When you roll a 20 on the d20 for an attack roll made with this weapon against a Giant, the creature must succeed on a DC 17 Constitution saving throw or die.</p></details><details><summary><strong>Might of Giants.</strong></summary><p>The Strength score bestowed by your <em>Belt of Giant Strength</em> or <em>Gauntlets of Ogre Power</em> increases by 4, to a maximum of 30.</p></details><p> @Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Hammer of Thunderbolts": {
-          "name": "Hammer of Thunderbolts",
-          "changes": {
-            "name": "{} of Thunderbolts",
-            "system.rarity": "legendary",
-            "system.attunement": "required",
-            "system.properties": "mgc",
-            "system.magicalBonus": 1,
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgHammerOfThund caption=false]</p>",
-            "system.price.value": 200000,
-            "system.price.denomination": "gp",
-            "img": "icons/weapons/hammers/hammer-double-glowing-yellow.webp"
-          }
+          "name": "Hammer of Thunderbolts"
         },
         "Stunned": {
           "name": "Stunned",
@@ -1978,17 +1371,11 @@
         },
         "Giant's Bane: Paired Attunement Bonuses": {
           "name": "Giant's Bane: Paired Attunement Bonuses",
-          "description": "<p><strong>Giant’s Bane.</strong> While you are attuned to the weapon and wearing either a <em>Belt of Giant Strength</em> or <em>Gauntlets of Ogre Power</em> to which you are also attuned, you gain the following benefits:</p><ul><li><p><strong>Giants’ Bane.</strong> When you roll a 20 on the d20 for an attack roll made with this weapon against a Giant, the creature must succeed on a DC 17 Constitution saving throw or die.</p></li><li><p><strong>Might of Giants.</strong> The Strength score bestowed by your <em>Belt of Giant Strength</em> or <em>Gauntlets of Ogre Power</em> increases by 4, to a maximum of 30.</p></li></ul>",
-          "changes": {
-            "name": ", Giant's Bane"
-          }
+          "description": "<p><strong>Giant’s Bane.</strong> While you are attuned to the weapon and wearing either a <em>Belt of Giant Strength</em> or <em>Gauntlets of Ogre Power</em> to which you are also attuned, you gain the following benefits:</p><ul><li><p><strong>Giants’ Bane.</strong> When you roll a 20 on the d20 for an attack roll made with this weapon against a Giant, the creature must succeed on a DC 17 Constitution saving throw or die.</p></li><li><p><strong>Might of Giants.</strong> The Strength score bestowed by your <em>Belt of Giant Strength</em> or <em>Gauntlets of Ogre Power</em> increases by 4, to a maximum of 30.</p></li></ul>"
         },
         "Might of Giants": {
           "name": "Might of Giants",
-          "description": "<p>The Strength score bestowed by your <em>Belt of Giant Strength</em> or <em>Gauntlets of Ogre Power</em> increases by 4, to a maximum of 30.</p>",
-          "changes": {
-            "system.abilities.str.value": 30
-          }
+          "description": "<p>The Strength score bestowed by your <em>Belt of Giant Strength</em> or <em>Gauntlets of Ogre Power</em> increases by 4, to a maximum of 30.</p>"
         }
       }
     },
@@ -2005,10 +1392,7 @@
       "description": "<p><em>Wondrous Item, Uncommon (Requires Attunement)</em></p><p>Your Intelligence is 19 while you wear this headband. It has no effect on you if your Intelligence is 19 or higher without it.</p>",
       "effects": {
         "Intelligent": {
-          "name": "Intelligent",
-          "changes": {
-            "system.abilities.int.value": 19
-          }
+          "name": "Intelligent"
         }
       }
     },
@@ -2020,10 +1404,7 @@
           "name": "Burst Into Flames"
         },
         "Ruby Resistance": {
-          "name": "Ruby Resistance",
-          "changes": {
-            "system.traits.dr.value": "fire"
-          }
+          "name": "Ruby Resistance"
         }
       }
     },
@@ -2036,10 +1417,7 @@
       "description": "<p><em>Wondrous Item, Uncommon (Requires Attunement)</em></p><p>While wearing this helm, you have telepathy with a range of 30 feet, and you can cast @UUID[Compendium.dnd5e.spells24.Item.phbsplDetectThou]{Detect Thoughts} or @UUID[Compendium.dnd5e.spells24.Item.phbsplSuggestion]{Suggestion} (save DC 13) from the helm. Once either spell is cast from the helm, that spell can't be cast from it again until the next dawn.</p>",
       "effects": {
         "Telepathy": {
-          "name": "Telepathy",
-          "changes": {
-            "system.traits.languages.custom": "Telepathy (30 feet)"
-          }
+          "name": "Telepathy"
         }
       }
     },
@@ -2060,10 +1438,7 @@
       "description": "<p><em>Potion, Uncommon</em></p><p>When you drink this potion, your Strength score changes for 1 hour to 21. The type of giant determines the score. The potion has no effect on you if your Strength is equal to or greater than that score.</p><p>This potion's transparent liquid has floating in it a sliver of light resembling a giant's fingernail.</p>",
       "effects": {
         "Strength of Hills": {
-          "name": "Strength of Hills",
-          "changes": {
-            "system.abilities.str.value": 21
-          }
+          "name": "Strength of Hills"
         }
       }
     },
@@ -2072,18 +1447,7 @@
       "description": "<p><em>Weapon (Any Simple or Martial), Legendary (Requires Attunement by a Paladin)</em></p><p>You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. When you hit a Fiend or an Undead with it, that creature takes an extra 2d10 Radiant damage.</p><p>While you hold the drawn weapon, it creates a 10-foot Emanation originating from you. You and all creatures Friendly to you in the Emanation have Advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the Paladin class, the size of the Emanation increases to 30 feet.</p><p>[[10 + floor(@classes.paladin.levels / 17) * 20]]{Emanation Size (feet)}</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Holy Avenger": {
-          "name": "Holy Avenger",
-          "changes": {
-            "name": "Holy Avenger {}",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgHolyAvenger00 caption=false]</p>",
-            "system.rarity": "legendary",
-            "system.attunement": "required",
-            "system.properties": "mgc",
-            "system.magicalBonus": 3,
-            "img": "icons/weapons/swords/greatsword-guard-gem-blue.webp",
-            "activities[attack].description.chatFlavor": "{} Bonus Damage: 2d10 Radiant vs Fiend/Undead",
-            "system.damage.parts": [["0", "radiant"]]
-          }
+          "name": "Holy Avenger"
         }
       }
     },
@@ -2102,10 +1466,7 @@
       "effects": {
         "Horn of Valhalla: Condition Immunity": {
           "name": "Horn of Valhalla: Condition Immunity",
-          "description": "<p>The spirits look like living, breathing warriors, and they have Immunity to the &amp;Reference[Charmed apply=false] and &amp;Reference[Frightened apply=false] conditions.</p>",
-          "changes": {
-            "system.traits.ci.value": "frightened"
-          }
+          "description": "<p>The spirits look like living, breathing warriors, and they have Immunity to the &amp;Reference[Charmed apply=false] and &amp;Reference[Frightened apply=false] conditions.</p>"
         }
       }
     },
@@ -2114,10 +1475,7 @@
       "description": "<p><em>Wondrous Item, Very Rare</em></p><p>These horseshoes come in a set of four. As a Magic action, you can touch one of the horseshoes to the hoof of a horse or similar creature, whereupon the horseshoe affixes itself to the hoof. Removing a horseshoe also takes a Magic action.</p><p>While all four shoes are affixed to the hooves of a horse or similar creature, they allow the creature to move normally while floating 4 inches above a surface. This effect means the creature can cross or stand above nonsolid or unstable surfaces, such as water or lava. The creature leaves no tracks and ignores &amp;Reference[Difficult Terrain]. In addition, the creature can travel for up to 12 hours a day without gaining &amp;Reference[Exhaustion] levels from extended travel.</p>",
       "effects": {
         "Ignore Difficult Terrain": {
-          "name": "Ignore Difficult Terrain",
-          "changes": {
-            "system.attributes.movement.ignoredDifficultTerrain": "all"
-          }
+          "name": "Ignore Difficult Terrain"
         }
       }
     },
@@ -2126,10 +1484,7 @@
       "description": "<p><em>Wondrous Item, Rare</em></p><p>These horseshoes come in a set of four. As a Magic action, you can touch one of the horseshoes to the hoof of a horse or similar creature, whereupon the horseshoe affixes itself to the hoof. Removing a horseshoe also takes a Magic action.</p><p>While all four horseshoes are attached to the same creature, its Speed is increased by 30 feet.</p>",
       "effects": {
         "Faster": {
-          "name": "Faster",
-          "changes": {
-            "system.attributes.movement.walk": 30
-          }
+          "name": "Faster"
         }
       }
     },
@@ -2143,10 +1498,7 @@
       "effects": {
         "Enhanced Insight: Wisdom Bonus": {
           "name": "Enhanced Insight: Wisdom Bonus",
-          "description": "<p>Your Wisdom increases by 2, to a maximum of 20, while this incandescent blue sphere orbits your head.</p>",
-          "changes": {
-            "system.abilities.wis.value": 20
-          }
+          "description": "<p>Your Wisdom increases by 2, to a maximum of 20, while this incandescent blue sphere orbits your head.</p>"
         }
       }
     },
@@ -2156,10 +1508,7 @@
       "effects": {
         "Enhanced Intellect: Intelligence Bonus": {
           "name": "Enhanced Intellect: Intelligence Bonus",
-          "description": "<p>Your Intelligence increases by 2, to a maximum of 20, while this marbled scarlet and blue sphere orbits your head.</p>",
-          "changes": {
-            "system.abilities.int.value": 20
-          }
+          "description": "<p>Your Intelligence increases by 2, to a maximum of 20, while this marbled scarlet and blue sphere orbits your head.</p>"
         }
       }
     },
@@ -2186,10 +1535,7 @@
       "effects": {
         "Horn of Valhalla: Condition Immunity": {
           "name": "Horn of Valhalla: Condition Immunity",
-          "description": "<p>The spirits look like living, breathing warriors, and they have Immunity to the &amp;Reference[Charmed apply=false] and &amp;Reference[Frightened apply=false] conditions.</p>",
-          "changes": {
-            "system.traits.ci.value": "frightened"
-          }
+          "description": "<p>The spirits look like living, breathing warriors, and they have Immunity to the &amp;Reference[Charmed apply=false] and &amp;Reference[Frightened apply=false] conditions.</p>"
         }
       }
     },
@@ -2207,10 +1553,7 @@
       "effects": {
         "Enhanced Leadership: Charisma Bonus": {
           "name": "Enhanced Leadership: Charisma Bonus",
-          "description": "<p>Your Charisma increases by 2, to a maximum of 20, while this marbled pink and green sphere orbits your head.</p>",
-          "changes": {
-            "system.abilities.cha.value": 20
-          }
+          "description": "<p>Your Charisma increases by 2, to a maximum of 20, while this marbled pink and green sphere orbits your head.</p>"
         }
       }
     },
@@ -2238,24 +1581,11 @@
       "description": "<p><em>Weapon (@UUID[Compendium.dnd5e.equipment24.Item.phbwepGlaive0000]{Glaive}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatsword]{Greatsword}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepLongsword0]{Longsword}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepRapier0000]{Rapier}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Scimitar}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepSickle0000]{Sickle}, or @UUID[Compendium.dnd5e.equipment24.Item.phbwepShortsword]{Shortsword}), Legendary (Requires Attunement)</em></p><p>You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon. While the weapon is on your person, you also gain a +1 bonus to saving throws.</p><p><strong>Luck.</strong> If the weapon is on your person, you can call on its luck (no action required) to reroll one failed D20 Test if you don't have the Incapacitated condition. You must use the second roll. Once used, this property can't be used again until the next dawn.</p><p><strong>Wish.</strong> The weapon has [[/r 1d3#Initial Charges]] charges. While holding it, you can expend 1 charge and cast <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish}</em> from it. Once used, this property can't be used again until the next dawn. The weapon loses this property if it has no charges.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Luck Blade": {
-          "name": "Luck Blade",
-          "changes": {
-            "name": "Luck Blade ({})",
-            "system.rarity": "legendary",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgLuckBlade0000 caption=false]</p>",
-            "system.attunement": "required",
-            "system.magicalBonus": 1,
-            "system.properties": "mgc",
-            "system.price.value": 200000,
-            "system.price.denomination": "gp"
-          }
+          "name": "Luck Blade"
         },
         "Saving Throw Bonus": {
           "name": "Saving Throw Bonus",
-          "description": "<p>While the weapon is on your person, you also gain a +1 bonus to saving throws.</p>",
-          "changes": {
-            "system.bonuses.abilities.save": 1
-          }
+          "description": "<p>While the weapon is on your person, you also gain a +1 bonus to saving throws.</p>"
         }
       }
     },
@@ -2300,11 +1630,7 @@
       "description": "<p><em>Wondrous Item, Very Rare</em></p><p>This book contains health and nutrition tips, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Constitution increases by 2, to a maximum of 30. The manual then loses its magic but regains it in a century.</p><section class=\"secret\" id=\"secret-SOm6BCXpqNkcxRCM\"><p><strong>Foundry Note</strong></p><p>This item includes 48 max uses for tracking hours read.</p><p>The <strong>Read</strong> activity includes a scaling value that lets you enter the amount of hours you've read. Once you hit 48 you can use the included Active Effect to increase your Constitution.</p><p>The <strong>Reset Progress</strong> activity resets your uses to 0 if you fail to complete the book within 6 days and need to start over.</p></section>",
       "effects": {
         "Healthy": {
-          "name": "Healthy",
-          "changes": {
-            "system.abilities.con.value": 2,
-            "system.abilities.con.max": 30
-          }
+          "name": "Healthy"
         }
       }
     },
@@ -2313,11 +1639,7 @@
       "description": "<p><em>Wondrous Item, Very Rare</em></p><p>This book describes fitness exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Strength increases by 2, to a maximum of 30. The manual then loses its magic but regains it in a century.</p><section class=\"secret\" id=\"secret-rzQiysHGZvxuxsGz\"><p><strong>Foundry Note</strong></p><p>This item includes 48 max uses for tracking hours read.</p><p>The <strong>Read</strong> activity includes a scaling value that lets you enter the amount of hours you've read. Once you hit 48 you can use the included Active Effect to increase your Strength.</p><p>The <strong>Reset Progress</strong> activity resets your uses to 0 if you fail to complete the book within 6 days and need to start over.</p></section>",
       "effects": {
         "Well Exercised": {
-          "name": "Well Exercised",
-          "changes": {
-            "system.abilities.str.value": 2,
-            "system.abilities.str.max": 30
-          }
+          "name": "Well Exercised"
         }
       }
     },
@@ -2330,11 +1652,7 @@
       "description": "<p><em>Wondrous Item, Very Rare</em></p><p>This book contains coordination and balance exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Dexterity increases by 2, to a maximum of 30. The manual then loses its magic but regains it in a century.</p><section class=\"secret\" id=\"secret-cXi2vCFHtxDKHpSv\"><p><strong>Foundry Note</strong></p><p>This item includes 48 max uses for tracking hours read.</p><p>The <strong>Read</strong> activity includes a scaling value that lets you enter the amount of hours you've read. Once you hit 48 you can use the included Active Effect to increase your Dexterity.</p><p>The <strong>Reset Progress</strong> activity resets your uses to 0 if you fail to complete the book within 6 days and need to start over.</p></section>",
       "effects": {
         "Quick Acting": {
-          "name": "Quick Acting",
-          "changes": {
-            "system.abilities.dex.value": 2,
-            "system.abilities.dex.max": 30
-          }
+          "name": "Quick Acting"
         }
       }
     },
@@ -2344,10 +1662,7 @@
       "effects": {
         "Enhanced Mastery: Proficiency Bonus": {
           "name": "Enhanced Mastery: Proficiency Bonus",
-          "description": "<p>Your Proficiency Bonus increases by 1 while this pale green prism orbits your head.</p>",
-          "changes": {
-            "system.attributes.prof": 1
-          }
+          "description": "<p>Your Proficiency Bonus increases by 1 while this pale green prism orbits your head.</p>"
         }
       }
     },
@@ -2376,15 +1691,7 @@
       "description": "<p><em>Armor (Any Medium or Heavy, Except Hide Armor), Uncommon</em></p><p>Mithral is a light, flexible metal. Armor made of this substance can be worn under normal clothes. If the armor normally imposes Disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Mithral Armor": {
-          "name": "Mithral Armor",
-          "changes": {
-            "name": "Mithral {}",
-            "system.rarity": "uncommon",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgMithralArmor0 caption=false]</p>",
-            "system.properties": "-stealthDisadvantage",
-            "system.strength": 0,
-            "system.price.value": 400
-          }
+          "name": "Mithral Armor"
         }
       }
     },
@@ -2405,15 +1712,7 @@
       "description": "<p><em>Weapon (Any Simple or Martial), Very Rare (Requires Attunement)</em></p><p>You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.</p><p><strong>Life Stealing.</strong> The weapon has [[/r 1d8 + 1]] charges. When you attack a creature that has fewer than 100 Hit Points with this weapon and roll a 20 on the d20 for the attack roll, the creature must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body. Constructs and Undead succeed on the save automatically. The weapon loses 1 charge if the creature is slain. When the weapon has no charges remaining, it loses this property.</p><section class=\"secret\" id=\"secret-vSYC0gYqNiDynkjf\"><p><strong>Foundry Note</strong></p><p>The <strong>Life Stealing</strong> activity should be updated with its max uses set to the number of charges rolled.</p></section><p> @Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Nine Lives Stealer": {
-          "name": "Nine Lives Stealer",
-          "changes": {
-            "name": "Nine Lives Stealer {}",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgNineLivesStea caption=false]</p>",
-            "system.rarity": "veryRare",
-            "system.properties": "mgc",
-            "system.attunement": "required",
-            "system.magicalBonus": 2
-          }
+          "name": "Nine Lives Stealer"
         }
       }
     },
@@ -2426,17 +1725,7 @@
       "description": "<p><em>Weapon (@UUID[Compendium.dnd5e.equipment24.Item.phbwepLongbow000]{Longbow} or @UUID[Compendium.dnd5e.equipment24.Item.phbwepShortbow00]{Shortbow}), Very Rare (Requires Attunement)</em></p><p>When you nock an arrow on this bow, it whispers in Elvish, \"Swift defeat to my enemies.\" When you use this weapon to make a ranged attack, you can utter or sign the following command words: \"Swift death to you who have wronged me.\" The target of your attack becomes your sworn enemy until it dies or until dawn 7 days later. You can have only one such sworn enemy at a time. When your sworn enemy dies, you can choose a new one after the next dawn.</p><p>When you make a ranged attack roll with this weapon against your sworn enemy, you have Advantage on the roll. In addition, your target gains no benefit from Half Cover or Three-Quarters Cover, and you suffer no Disadvantage due to long range. If the attack hits, your sworn enemy takes an extra 3d6 Piercing damage.</p><p>While your sworn enemy lives, you have Disadvantage on attack rolls with all other weapons.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Oathbow": {
-          "name": "Oathbow",
-          "changes": {
-            "name": "Oathbow ({})",
-            "system.rarity": "veryRare",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgOathbow000000 caption=false]</p>",
-            "system.attunement": "required",
-            "system.properties": "mgc",
-            "img": "icons/weapons/bows/longbow-recurve-leather-red.webp",
-            "system.price.value": 40000,
-            "system.price.denomination": "gp"
-          }
+          "name": "Oathbow"
         },
         "Sworn Enemy": {
           "name": "Sworn Enemy",
@@ -2458,22 +1747,10 @@
       "description": "<p><em>Potion, Very Rare</em></p><p>One vial of this oil can coat one Melee weapon or twenty pieces of ammunition, but only ammunition and Melee weapons that are nonmagical and deal Slashing or Piercing damage are affected. Applying the oil takes 1 minute, after which the oil magically seeps into whatever it coats, turning the coated weapon into a +3 Weapon or the coated ammunition into +3 Ammunition.</p><p>This clear, gelatinous oil sparkles with tiny, ultrathin silver shards.</p>",
       "effects": {
         "Oiled": {
-          "name": "Oiled",
-          "changes": {
-            "name": "{} Oiled",
-            "system.description.value": "{}<p>This item has been oiled and is +3 weapon for the next hour.</p>",
-            "system.properties": "mgc",
-            "system.magicalBonus": 3
-          }
+          "name": "Oiled"
         },
         "Oiled Ammunition": {
-          "name": "Oiled Ammunition",
-          "changes": {
-            "name": "{} Oiled",
-            "system.description.value": "{}<p>This ammunition has been oiled and is a +3 for the next hour.</p>",
-            "system.properties": "mgc",
-            "system.magicalBonus": 3
-          }
+          "name": "Oiled Ammunition"
         }
       }
     },
@@ -2505,10 +1782,7 @@
       "effects": {
         "Poisoned and Reduce Max": {
           "name": "Poisoned and Reduce Max",
-          "description": "<p>The Poisoned creature repeats the save every 24 hours, taking 3 (1d6) Poison damage on a failed save. The damage the poison deals can't be healed by any means while the creature remains Poisoned. After seven successful saves against the poison, the creature is no longer Poisoned.</p>",
-          "changes": {
-            "system.attributes.hp.max": 0
-          }
+          "description": "<p>The Poisoned creature repeats the save every 24 hours, taking 3 (1d6) Poison damage on a failed save. The damage the poison deals can't be healed by any means while the creature remains Poisoned. After seven successful saves against the poison, the creature is no longer Poisoned.</p>"
         }
       }
     },
@@ -2525,11 +1799,7 @@
       "description": "<p><em>Wondrous Item, Rare (Requires Attunement)</em></p><p>This delicate silver chain has a brilliant-cut black gem pendant. While you wear it, you have Immunity to the &amp;Reference[Poisoned apply=false] condition and Poison damage.</p>",
       "effects": {
         "Protected Against Poison": {
-          "name": "Protected Against Poison",
-          "changes": {
-            "system.traits.di.value": "poison",
-            "system.traits.ci.value": "poisoned"
-          }
+          "name": "Protected Against Poison"
         }
       }
     },
@@ -2568,16 +1838,7 @@
       "description": "<p><em>Armor (@UUID[Compendium.dnd5e.equipment24.Item.phbarmHalfPlateA]{Half Plate Armor} or @UUID[Compendium.dnd5e.equipment24.Item.phbarmPlateArmor]{Plate Armor}), Legendary (Requires Attunement)</em></p><p>While you're wearing this armor, you can take a Magic action and use a command word to gain the effect of the <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplEtherealne]{Etherealness}</em> spell. The spell ends immediately if you remove the armor or take a Magic action to repeat the command word. This property of the armor can't be used again until the next dawn.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Plate Armor of Etherealness": {
-          "name": "Plate Armor of Etherealness",
-          "changes": {
-            "name": "{} of Etherealness",
-            "system.rarity": "legendary",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgPlateArmorOfE caption=false]</p>",
-            "system.attunement": "required",
-            "system.properties": "mgc",
-            "img": "icons/equipment/chest/breastplate-collared-steel.webp",
-            "system.price.value": 200000
-          }
+          "name": "Plate Armor of Etherealness"
         }
       }
     },
@@ -2624,11 +1885,7 @@
       "description": "<p><em>Potion, Very Rare</em></p><p>When you drink this potion, you gain a Fly Speed equal to your Speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft.</p><p>This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.</p>",
       "effects": {
         "Flyer": {
-          "name": "Flyer",
-          "changes": {
-            "system.attributes.movement.hover": true,
-            "system.attributes.movement.fly": "@attributes.movement.walk"
-          }
+          "name": "Flyer"
         }
       }
     },
@@ -2650,14 +1907,7 @@
       "effects": {
         "Blessed": {
           "name": "Blessed",
-          "description": "<p>Whenever a target makes an attack roll or a saving throw before the effect ends, the target adds 1d4 to the attack roll or save.</p>",
-          "changes": {
-            "system.bonuses.abilities.save": "1d4",
-            "system.bonuses.mwak.attack": "1d4",
-            "system.bonuses.msak.attack": "1d4",
-            "system.bonuses.rsak.attack": "1d4",
-            "system.bonuses.rwak.attack": "1d4"
-          }
+          "description": "<p>Whenever a target makes an attack roll or a saving throw before the effect ends, the target adds 1d4 to the attack roll or save.</p>"
         }
       }
     },
@@ -2675,10 +1925,7 @@
       "description": "<p><em>Potion, Rare</em></p><p>For 1 minute after you drink this potion, you have Resistance to all damage.</p><p>This potion's syrupy liquid looks like liquefied iron.</p>",
       "effects": {
         "Resistant": {
-          "name": "Resistant",
-          "changes": {
-            "system.traits.dr.value": "bludgeoning"
-          }
+          "name": "Resistant"
         }
       }
     },
@@ -2704,64 +1951,34 @@
       "description": "<p><em>Potion, Uncommon</em></p><p>When you drink this potion, you have Resistance to one type of damage for 1 hour. The GM chooses the type or determines it randomly by rolling on the following table.</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmgPotionOfResis caption=false rollable]</p><section class=\"secret\" id=\"secret-yI26znYuybVCz6iX\"><p><strong>Foundry Note</strong></p><p>This item includes Active Effects for each type of resistance. Use the AE for the type of damage chosen by your DM.</p></section>",
       "effects": {
         "Acid  Resistance": {
-          "name": "Acid  Resistance",
-          "changes": {
-            "system.traits.dr.value": "acid"
-          }
+          "name": "Acid  Resistance"
         },
         "Cold Resistance": {
-          "name": "Cold Resistance",
-          "changes": {
-            "system.traits.dr.value": "cold"
-          }
+          "name": "Cold Resistance"
         },
         "Fire Resistance": {
-          "name": "Fire Resistance",
-          "changes": {
-            "system.traits.dr.value": "fire"
-          }
+          "name": "Fire Resistance"
         },
         "Force Resistance": {
-          "name": "Force Resistance",
-          "changes": {
-            "system.traits.dr.value": "force"
-          }
+          "name": "Force Resistance"
         },
         "Lightning Resistance": {
-          "name": "Lightning Resistance",
-          "changes": {
-            "system.traits.dr.value": "lightning"
-          }
+          "name": "Lightning Resistance"
         },
         "Necrotic Resistance": {
-          "name": "Necrotic Resistance",
-          "changes": {
-            "system.traits.dr.value": "necrotic"
-          }
+          "name": "Necrotic Resistance"
         },
         "Poison Resistance": {
-          "name": "Poison Resistance",
-          "changes": {
-            "system.traits.dr.value": "poison"
-          }
+          "name": "Poison Resistance"
         },
         "Psychic Resistance": {
-          "name": "Psychic Resistance",
-          "changes": {
-            "system.traits.dr.value": "psychic"
-          }
+          "name": "Psychic Resistance"
         },
         "Radiant Resistance": {
-          "name": "Radiant Resistance",
-          "changes": {
-            "system.traits.dr.value": "radiant"
-          }
+          "name": "Radiant Resistance"
         },
         "Thunder Resistance": {
-          "name": "Thunder Resistance",
-          "changes": {
-            "system.traits.dr.value": "thunder"
-          }
+          "name": "Thunder Resistance"
         }
       }
     },
@@ -2797,10 +2014,7 @@
       "effects": {
         "Enhanced Protection: +1 AC": {
           "name": "Enhanced Protection: +1 AC",
-          "description": "<p>You gain a +1 bonus to Armor Class while this dusty-rose prism orbits your head.</p>",
-          "changes": {
-            "system.attributes.ac.bonus": 1
-          }
+          "description": "<p>You gain a +1 bonus to Armor Class while this dusty-rose prism orbits your head.</p>"
         }
       }
     },
@@ -2861,10 +2075,7 @@
       "effects": {
         "Free Action": {
           "name": "Free Action",
-          "description": "<p>Difficult Terrain doesn't cost you extra movement.</p>",
-          "changes": {
-            "system.attributes.movement.ignoredDifficultTerrain": "all"
-          }
+          "description": "<p>Difficult Terrain doesn't cost you extra movement.</p>"
         }
       }
     },
@@ -2885,11 +2096,7 @@
       "description": "<p><em>Ring, Rare (Requires Attunement)</em></p><p>You gain a +1 bonus to Armor Class and saving throws while wearing this ring.</p>",
       "effects": {
         "Ring of Protection": {
-          "name": "Ring of Protection",
-          "changes": {
-            "system.attributes.ac.bonus": "+1",
-            "system.bonuses.abilities.save": "+1"
-          }
+          "name": "Ring of Protection"
         }
       }
     },
@@ -2902,174 +2109,64 @@
       "description": "<p><em>@UUID[Compendium.dnd5e.equipment24.Item.dmgsupRingofResi]{Ring}, Rare</em></p><p>You have Resistance to one damage type while wearing this ring. The gemstone in the ring indicates the type, which the GM chooses or determines randomly by rolling on the following table.</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmgRingOfResista rollable caption=false]</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Acid Resistance": {
-          "name": "Acid Resistance",
-          "changes": {
-            "system.traits.dr.value": "acid"
-          }
+          "name": "Acid Resistance"
         },
         "Cold Resistance": {
-          "name": "Cold Resistance",
-          "changes": {
-            "system.traits.dr.value": "cold"
-          }
+          "name": "Cold Resistance"
         },
         "Fire Resistance": {
-          "name": "Fire Resistance",
-          "changes": {
-            "system.traits.dr.value": "fire"
-          }
+          "name": "Fire Resistance"
         },
         "Force Resistance": {
-          "name": "Force Resistance",
-          "changes": {
-            "system.traits.dr.value": "force"
-          }
+          "name": "Force Resistance"
         },
         "Lightning Resistance": {
-          "name": "Lightning Resistance",
-          "changes": {
-            "system.traits.dr.value": "lightning"
-          }
+          "name": "Lightning Resistance"
         },
         "Necrotic Resistance": {
-          "name": "Necrotic Resistance",
-          "changes": {
-            "system.traits.dr.value": "necrotic"
-          }
+          "name": "Necrotic Resistance"
         },
         "Poison Resistance": {
-          "name": "Poison Resistance",
-          "changes": {
-            "system.traits.dr.value": "poison"
-          }
+          "name": "Poison Resistance"
         },
         "Psychic Resistance": {
-          "name": "Psychic Resistance",
-          "changes": {
-            "system.traits.dr.value": "psychic"
-          }
+          "name": "Psychic Resistance"
         },
         "Radiant Resistance": {
-          "name": "Radiant Resistance",
-          "changes": {
-            "system.traits.dr.value": "radiant"
-          }
+          "name": "Radiant Resistance"
         },
         "Thunder Resistance": {
-          "name": "Thunder Resistance",
-          "changes": {
-            "system.traits.dr.value": "thunder"
-          }
+          "name": "Thunder Resistance"
         },
         "Ring of Resistance (Acid)": {
-          "name": "Ring of Resistance (Acid)",
-          "changes": {
-            "name": "Ring of Resistance (pearl)",
-            "img": "icons/equipment/finger/ring-faceted-gold-purple.webp",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p><em>See: @UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista]</em></p> <p>You have Resistance to one damage type while wearing this ring. The gemstone in the ring indicates the type.</p>",
-            "system.properties": "mgc",
-            "system.price.value": 4000
-          }
+          "name": "Ring of Resistance (Acid)"
         },
         "Ring of Resistance (Cold)": {
-          "name": "Ring of Resistance (Cold)",
-          "changes": {
-            "name": "Ring of Resistance (tourmaline)",
-            "img": "icons/equipment/finger/ring-faceted-gold-purple.webp",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p><em>See: @UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista]</em></p> <p>You have Resistance to one damage type while wearing this ring. The gemstone in the ring indicates the type.</p>",
-            "system.properties": "mgc",
-            "system.price.value": 4000
-          }
+          "name": "Ring of Resistance (Cold)"
         },
         "Ring of Resistance (Fire)": {
-          "name": "Ring of Resistance (Fire)",
-          "changes": {
-            "name": "Ring of Resistance (garnet)",
-            "img": "icons/equipment/finger/ring-faceted-gold-purple.webp",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p><em>See: @UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista]</em></p> <p>You have Resistance to one damage type while wearing this ring. The gemstone in the ring indicates the type.</p>",
-            "system.properties": "mgc",
-            "system.price.value": 4000
-          }
+          "name": "Ring of Resistance (Fire)"
         },
         "Ring of Resistance (Force)": {
-          "name": "Ring of Resistance (Force)",
-          "changes": {
-            "name": "Ring of Resistance (sapphire)",
-            "img": "icons/equipment/finger/ring-faceted-gold-purple.webp",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p><em>See: @UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista]</em></p> <p>You have Resistance to one damage type while wearing this ring. The gemstone in the ring indicates the type.</p>",
-            "system.properties": "mgc",
-            "system.price.value": 4000
-          }
+          "name": "Ring of Resistance (Force)"
         },
         "Ring of Resistance (Lightning)": {
-          "name": "Ring of Resistance (Lightning)",
-          "changes": {
-            "name": "Ring of Resistance (citrine)",
-            "img": "icons/equipment/finger/ring-faceted-gold-purple.webp",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p><em>See: @UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista]</em></p> <p>You have Resistance to one damage type while wearing this ring. The gemstone in the ring indicates the type.</p>",
-            "system.properties": "mgc",
-            "system.price.value": 4000
-          }
+          "name": "Ring of Resistance (Lightning)"
         },
         "Ring of Resistance (Necrotic)": {
-          "name": "Ring of Resistance (Necrotic)",
-          "changes": {
-            "name": "Ring of Resistance (jet)",
-            "img": "icons/equipment/finger/ring-faceted-gold-purple.webp",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p><em>See: @UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista]</em></p> <p>You have Resistance to one damage type while wearing this ring. The gemstone in the ring indicates the type.</p>",
-            "system.properties": "mgc",
-            "system.price.value": 4000
-          }
+          "name": "Ring of Resistance (Necrotic)"
         },
         "Ring of Resistance (Poison)": {
-          "name": "Ring of Resistance (Poison)",
-          "changes": {
-            "name": "Ring of Resistance (amethyst)",
-            "img": "icons/equipment/finger/ring-faceted-gold-purple.webp",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p><em>See: @UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista]</em></p> <p>You have Resistance to one damage type while wearing this ring. The gemstone in the ring indicates the type.</p>",
-            "system.properties": "mgc",
-            "system.price.value": 4000
-          }
+          "name": "Ring of Resistance (Poison)"
         },
         "Ring of Resistance (Psychic)": {
-          "name": "Ring of Resistance (Psychic)",
-          "changes": {
-            "name": "Ring of Resistance (jade)",
-            "img": "icons/equipment/finger/ring-faceted-gold-purple.webp",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p><em>See: @UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista]</em></p> <p>You have Resistance to one damage type while wearing this ring. The gemstone in the ring indicates the type.</p>",
-            "system.properties": "mgc",
-            "system.price.value": 4000
-          }
+          "name": "Ring of Resistance (Psychic)"
         },
         "Ring of Resistance (Radiant)": {
-          "name": "Ring of Resistance (Radiant)",
-          "changes": {
-            "name": "Ring of Resistance (topaz)",
-            "img": "icons/equipment/finger/ring-faceted-gold-purple.webp",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p><em>See: @UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista]</em></p> <p>You have Resistance to one damage type while wearing this ring. The gemstone in the ring indicates the type.</p>",
-            "system.properties": "mgc",
-            "system.price.value": 4000
-          }
+          "name": "Ring of Resistance (Radiant)"
         },
         "Ring of Resistance (Thunder)": {
-          "name": "Ring of Resistance (Thunder)",
-          "changes": {
-            "name": "Ring of Resistance (spinel)",
-            "img": "icons/equipment/finger/ring-faceted-gold-purple.webp",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p><em>See: @UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista]</em></p> <p>You have Resistance to one damage type while wearing this ring. The gemstone in the ring indicates the type.</p>",
-            "system.properties": "mgc",
-            "system.price.value": 4000
-          }
+          "name": "Ring of Resistance (Thunder)"
         }
       }
     },
@@ -3090,10 +2187,7 @@
       "description": "<p><em>Ring, Uncommon</em></p><p>You have a Swim Speed of 40 feet while wearing this ring.</p>",
       "effects": {
         "Swimmer": {
-          "name": "Swimmer",
-          "changes": {
-            "system.attributes.movement.swim": 40
-          }
+          "name": "Swimmer"
         }
       }
     },
@@ -3131,11 +2225,7 @@
       "description": "<p><em>Wondrous Item, Rare (Requires Attunement)</em></p><p>This robe is adorned with eyelike patterns. While you wear the robe, you gain the following benefits:</p><p><strong>All-Around Vision.</strong> The robe gives you Advantage on Wisdom (Perception) checks that rely on sight.</p><p><strong>Special Senses.</strong> You have Darkvision and Truesight, both with a range of 120 feet.</p><p><em><strong>Drawbacks.</strong></em> A<em> </em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLight00000]{Light} spell cast on the robe or a @UUID[Compendium.dnd5e.spells24.Item.phbsplDaylight00]{Daylight} spell cast within 5 feet of the robe gives you the &amp;Reference[Blinded] condition for 1 minute. At the end of each of your turns, you make a Constitution saving throw (DC 11 for <em>Light</em> or DC 15 for <em>Daylight</em>), ending the condition on yourself on a success.</p>",
       "effects": {
         "Special Senses": {
-          "name": "Special Senses",
-          "changes": {
-            "system.attributes.senses.darkvision": 120,
-            "system.attributes.senses.truesight": 120
-          }
+          "name": "Special Senses"
         }
       }
     },
@@ -3153,10 +2243,7 @@
       "description": "<p><em>Wondrous Item, Very Rare (Requires Attunement)</em></p><p>This black or dark-blue robe is embroidered with small white or silver stars. You gain a +1 bonus to saving throws while you wear it.</p><p>Six stars, located on the robe's upper-front portion, are particularly large. While wearing this robe, you can take a Magic action to remove one of the stars and expend it to cast the level 5 version of @UUID[Compendium.dnd5e.spells24.Item.phbsplMagicMissi]{Magic Missile}. Daily at dusk, 1d6 removed stars reappear on the robe.</p><p>While you wear the robe, you can take a Magic action to enter the Astral Plane along with everything you are wearing and carrying. You remain there until you take a Magic action to return to the plane you were on. You reappear in the last space you occupied or, if that space is occupied, the nearest unoccupied space.</p><section class=\"secret\" id=\"secret-a1r37HVL7VTqMrwu\"><p><strong>Foundry Note</strong></p><p>The <strong>Enter/Exit Astral Plane</strong> activity includes a 5 foot measured template that can be used to mark where you exited the Astral Plane for tracking.</p></section>",
       "effects": {
         "Robe of Stars": {
-          "name": "Robe of Stars",
-          "changes": {
-            "system.bonuses.abilities.save": 1
-          }
+          "name": "Robe of Stars"
         }
       }
     },
@@ -3165,19 +2252,10 @@
       "description": "<p><em>Wondrous Item, Legendary (Requires Attunement by a Sorcerer, Warlock, or Wizard)</em></p><p>This elegant garment is made from exquisite cloth and adorned with runes.</p><p>You gain these benefits while wearing the robe.</p><p><em><strong>Armor.</strong></em> If you aren't wearing armor, your base Armor Class is 15 plus your Dexterity modifier.</p><p><em><strong>Magic Resistance.</strong></em> You have Advantage on saving throws against spells and other magical effects.</p><p><em><strong>War Mage.</strong></em> Your spell save DC and spell attack bonus each increase by 2.</p><section id=\"secret-IRNV3h4JDt2BjO62\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Archmagi Armor</strong> Active Effect sets your AC and should be disabled if you're still wearing armor.</p><p>The <strong>War Mage</strong> Active Effect automatically increases you spell save and attack bonus increases.</p></section>",
       "effects": {
         "Archmagi Armor": {
-          "name": "Archmagi Armor",
-          "changes": {
-            "system.attributes.ac.calc": "custom",
-            "system.attributes.ac.formula": "15 + @abilities.dex.mod"
-          }
+          "name": "Archmagi Armor"
         },
         "War Mage": {
-          "name": "War Mage",
-          "changes": {
-            "system.bonuses.spell.dc": 2,
-            "system.bonuses.msak.attack": 2,
-            "system.bonuses.rsak.attack": 2
-          }
+          "name": "War Mage"
         }
       }
     },
@@ -3194,11 +2272,7 @@
       "description": "<p><em>Rod, Very Rare (Requires Attunement)</em></p><p>This rod has the following properties.</p><p><strong>Alertness.</strong> While holding the rod, you have Advantage on Wisdom (Perception) checks and on Initiative rolls.</p><p><strong>Spells.</strong> While holding the rod, you can cast the following spells from it:</p><ul><li><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectEvil]{Detect Evil and Good}</p></li><li><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{Detect Magic}</p></li><li><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectPois]{Detect Poison and Disease}</p></li><li><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplSeeInvisib]{See Invisibility}</p></li></ul><p><strong>Protective Aura.</strong> As a Magic action, you can plant the haft end of the rod in the ground, whereupon the rod's head sheds Bright Light in a 60-foot radius and Dim Light for an additional 60 feet. While in that Bright Light, you and your allies gain a +1 bonus to Armor Class and saving throws and can sense the location of any Invisible creature that is also in the Bright Light.</p><p>The rod's head stops glowing and the effect ends after 10 minutes or when a creature takes a Magic action to pull the rod from the ground. Once used, this property can't be used again until the next dawn.</p><section class=\"secret\" id=\"secret-jGrucoqKAFLoFtqT\"><p><strong>Foundry Note</strong></p><p>The <strong>Plant Rod</strong> activity can be used to place a 60 foot template representing the Bright Light radius. It includes an Active Effect which can be applied to the relevant Actors and adds the +1 bonus to AC and Saving Throws.</p></section>",
       "effects": {
         "Protective Aura": {
-          "name": "Protective Aura",
-          "changes": {
-            "system.attributes.ac.bonus": 1,
-            "system.bonuses.abilities.save": 1
-          }
+          "name": "Protective Aura"
         }
       }
     },
@@ -3258,10 +2332,7 @@
       "effects": {
         "Protected": {
           "name": "Protected",
-          "description": "<p>You gain a +1 bonus to Armor Class and you have Advantage on saving throws against spells.</p>",
-          "changes": {
-            "system.attributes.ac.bonus": 1
-          }
+          "description": "<p>You gain a +1 bonus to Armor Class and you have Advantage on saving throws against spells.</p>"
         }
       }
     },
@@ -3278,10 +2349,7 @@
       "description": "<p><em>Armor (Shield), Uncommon</em></p><p>While holding this Shield, you have Advantage on Initiative rolls and Wisdom (Perception) checks. The Shield is emblazoned with a symbol of an eye.</p>",
       "effects": {
         "Initiative Advantage": {
-          "name": "Initiative Advantage",
-          "changes": {
-            "system.attributes.init.roll.mode": 1
-          }
+          "name": "Initiative Advantage"
         }
       }
     },
@@ -3294,37 +2362,13 @@
       "description": "<p><em>Armor (@UUID[Compendium.dnd5e.equipment24.Item.phbarmShield0000]{Shield}), Uncommon (+1), Rare (+2), or Very Rare (+3)</em></p><p>While holding this Shield, you have a bonus to Armor Class determined by the Shield's rarity, in addition to the Shield's normal bonus to AC.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Shield +1": {
-          "name": "Shield +1",
-          "changes": {
-            "name": "{} +1",
-            "system.rarity": "uncommon",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgShield12or300 caption=false]</p>",
-            "system.properties": "mgc",
-            "system.armor.magicalBonus": 1,
-            "system.price.value": 400
-          }
+          "name": "Shield +1"
         },
         "Shield +2": {
-          "name": "Shield +2",
-          "changes": {
-            "name": "{} +2",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgShield12or300 caption=false]</p>",
-            "system.properties": "mgc",
-            "system.armor.magicalBonus": 2,
-            "system.price.value": 4000
-          }
+          "name": "Shield +2"
         },
         "Shield +3": {
-          "name": "Shield +3",
-          "changes": {
-            "name": "{} +3",
-            "system.rarity": "veryRare",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgShield12or300 caption=false]</p>",
-            "system.properties": "mgc",
-            "system.armor.magicalBonus": 3,
-            "system.price.value": 40000
-          }
+          "name": "Shield +3"
         }
       }
     },
@@ -3351,10 +2395,7 @@
       "effects": {
         "Horn of Valhalla: Condition Immunity": {
           "name": "Horn of Valhalla: Condition Immunity",
-          "description": "<p>The spirits look like living, breathing warriors, and they have Immunity to the &amp;Reference[Charmed apply=false] and &amp;Reference[Frightened apply=false] conditions.</p>",
-          "changes": {
-            "system.traits.ci.value": "frightened"
-          }
+          "description": "<p>The spirits look like living, breathing warriors, and they have Immunity to the &amp;Reference[Charmed apply=false] and &amp;Reference[Frightened apply=false] conditions.</p>"
         }
       }
     },
@@ -3363,117 +2404,46 @@
       "description": "<p>This magic ammunition is meant to slay creatures of a particular type, which the GM chooses or determines randomly by rolling on the table below. If a creature of that type takes damage from the ammunition, the creature makes a DC 17 Constitution saving throw, taking an extra 6d10 Force damage on a failed save or half as much extra damage on a successful one.</p><p>After dealing its extra damage to a creature, the ammunition becomes nonmagical.</p><details><summary>Creature Type Table (click to expand)</summary><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmgSlayingAmmuni rollable]</p></details><p> @Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Ammunition of Slaying Aberrations": {
-          "name": "Ammunition of Slaying Aberrations",
-          "changes": {
-            "name": "{} of Slaying (Aberrations)",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni caption=false]</p>",
-            "system.properties": "mgc",
-            "system.rarity": "veryRare"
-          }
+          "name": "Ammunition of Slaying Aberrations"
         },
         "Ammunition of Slaying Beasts": {
-          "name": "Ammunition of Slaying Beasts",
-          "changes": {
-            "name": "{} of Slaying (Beasts)",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni caption=false]</p>",
-            "system.properties": "mgc"
-          }
+          "name": "Ammunition of Slaying Beasts"
         },
         "Ammunition of Slaying Celestials": {
-          "name": "Ammunition of Slaying Celestials",
-          "changes": {
-            "name": "{} of Slaying (Celestials)",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni caption=false]</p>",
-            "system.properties": "mgc"
-          }
+          "name": "Ammunition of Slaying Celestials"
         },
         "Ammunition of Slaying Constructs": {
-          "name": "Ammunition of Slaying Constructs",
-          "changes": {
-            "name": "{} of Slaying (Constructs)",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni caption=false]</p>",
-            "system.properties": "mgc"
-          }
+          "name": "Ammunition of Slaying Constructs"
         },
         "Ammunition of Slaying Dragons": {
-          "name": "Ammunition of Slaying Dragons",
-          "changes": {
-            "name": "{} of Slaying (Dragons)",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni caption=false]</p>",
-            "system.properties": "mgc"
-          }
+          "name": "Ammunition of Slaying Dragons"
         },
         "Ammunition of Slaying Elementals": {
-          "name": "Ammunition of Slaying Elementals",
-          "changes": {
-            "name": "{} of Slaying (Elementals)",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni caption=false]</p>",
-            "system.properties": "mgc"
-          }
+          "name": "Ammunition of Slaying Elementals"
         },
         "Ammunition of Slaying Humanoids": {
-          "name": "Ammunition of Slaying Humanoids",
-          "changes": {
-            "name": "{} of Slaying (Humanoids)",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni caption=false]</p>",
-            "system.properties": "mgc"
-          }
+          "name": "Ammunition of Slaying Humanoids"
         },
         "Ammunition of Slaying Fey": {
-          "name": "Ammunition of Slaying Fey",
-          "changes": {
-            "name": "{} of Slaying (Fey)",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni caption=false]</p>",
-            "system.properties": "mgc"
-          }
+          "name": "Ammunition of Slaying Fey"
         },
         "Ammunition of Slaying Fiends": {
-          "name": "Ammunition of Slaying Fiends",
-          "changes": {
-            "name": "{} of Slaying (Fiends)",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni caption=false]</p>",
-            "system.properties": "mgc"
-          }
+          "name": "Ammunition of Slaying Fiends"
         },
         "Ammunition of Slaying Giants": {
-          "name": "Ammunition of Slaying Giants",
-          "changes": {
-            "name": "{} of Slaying (Giants)",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni caption=false]</p>",
-            "system.properties": "mgc"
-          }
+          "name": "Ammunition of Slaying Giants"
         },
         "Ammunition of Slaying Monstrosities": {
-          "name": "Ammunition of Slaying Monstrosities",
-          "changes": {
-            "name": "{} of Slaying (Monstrosities)",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni caption=false]</p>",
-            "system.properties": "mgc"
-          }
+          "name": "Ammunition of Slaying Monstrosities"
         },
         "Ammunition of Slaying Oozes": {
-          "name": "Ammunition of Slaying Oozes",
-          "changes": {
-            "name": "{} of Slaying (Oozes)",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni caption=false]</p>",
-            "system.properties": "mgc"
-          }
+          "name": "Ammunition of Slaying Oozes"
         },
         "Ammunition of Slaying Plants": {
-          "name": "Ammunition of Slaying Plants",
-          "changes": {
-            "name": "{} of Slaying (Plants)",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni caption=false]</p>",
-            "system.properties": "mgc"
-          }
+          "name": "Ammunition of Slaying Plants"
         },
         "Ammunition of Slaying Undead": {
-          "name": "Ammunition of Slaying Undead",
-          "changes": {
-            "name": "{} of Slaying (Undead)",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni caption=false]</p>",
-            "system.properties": "mgc"
-          }
+          "name": "Ammunition of Slaying Undead"
         }
       }
     },
@@ -3550,10 +2520,7 @@
       "description": "<p><em>@UUID[Compendium.dnd5e.equipment24.Item.phbafcStaffalsoa]{Staff}, Very Rare (Requires Attunement by a Druid, Sorcerer, Warlock, or Wizard)</em></p><p>You have Resistance to Fire damage while you hold this staff.</p><p><em><strong>Spells.</strong></em> The staff has 10 charges. While holding the staff, you can cast one of the spells on the following table from it, using your spell save DC. The table indicates how many charges you must expend to cast the spell.</p><table><thead><tr><th>Spell</th><th>Charge Cost</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplBurningHan]{Burning Hands}</td><td>1</td></tr><tr><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Fireball}</td><td>3</td></tr><tr><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofFire]{Wall of Fire}</td><td>4</td></tr></tbody></table><p><em><strong>Regaining Charges.</strong></em> The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll [[/r 1d20]]. On a 1, the staff crumbles into cinders and is destroyed.</p>",
       "effects": {
         "Fire Resistance": {
-          "name": "Fire Resistance",
-          "changes": {
-            "system.traits.dr.value": "fire"
-          }
+          "name": "Fire Resistance"
         }
       }
     },
@@ -3562,10 +2529,7 @@
       "description": "<p><em>@UUID[Compendium.dnd5e.equipment24.Item.phbafcStaffalsoa]{Staff}, Very Rare (Requires Attunement by a Druid, Sorcerer, Warlock, or Wizard)</em></p><p>You have Resistance to Cold damage while you hold this staff.</p><p><em><strong>Spells.</strong></em> The staff has 10 charges. While holding the staff, you can cast one of the spells on the following table from it, using your spell save DC. The table indicates how many charges you must expend to cast the spell.</p><table><thead><tr><th>Spell</th><th>Charge Cost</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplConeofCold]{Cone of Cold}</td><td>5</td></tr><tr><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplIceStorm00]{Ice Storm}</td><td>4</td></tr><tr><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFogCloud00]{Fog Cloud}</td><td>1</td></tr><tr><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofIce0]{Wall of Ice}</td><td>4</td></tr></tbody></table><p><em><strong>Regaining Charges.</strong></em> The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll [[/r 1d20]]. On a 1, the staff turns to water and is destroyed.</p>",
       "effects": {
         "Resistance to Cold": {
-          "name": "Resistance to Cold",
-          "changes": {
-            "system.traits.dr.value": "cold"
-          }
+          "name": "Resistance to Cold"
         }
       }
     },
@@ -3578,13 +2542,7 @@
       "description": "<p><em>@UUID[Compendium.dnd5e.equipment24.Item.phbafcStaffalsoa]{Staff}, Very Rare (Requires Attunement by a Sorcerer, Warlock, or Wizard)</em></p><p>This staff has 20 charges and can be wielded as a magic Quarterstaff that grants a +2 bonus to attack rolls and damage rolls made with it. While holding it, you gain a +2 bonus to Armor Class, saving throws, and spell attack rolls.</p><p><em><strong>Spells.</strong></em> While holding the staff, you can cast one of the spells on the following table from it, using your spell save DC. The table indicates how many charges you must expend to cast the spell.</p><details><summary>Spell Cost Table</summary><table><thead><tr><th><p>Spell</p></th><th><p>Charge Cost</p></th><th></th></tr></thead><tbody><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplConeofCold]{Cone of Cold}</p></td><td><p>5</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Fireball} (level 5 version)</p></td><td><p>5</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplGlobeofInv]{Globe of Invulnerability}</p></td><td><p>6</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplHoldMonste]{Hold Monster}</p></td><td><p>5</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplLevitate00]{Levitate}</p></td><td><p>2</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplLightningB]{Lightning Bolt} (level 5 version)</p></td><td><p>5</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplMagicMissi]{Magic Missile}</p></td><td><p>1</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplRayofEnfee]{Ray of Enfeeblement}</p></td><td><p>1</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofForc]{Wall of Force}</p></td><td><p>5</p></td><td></td></tr></tbody></table></details><p><em><strong>Regaining Charges.</strong></em> The staff regains 2d8 + 4 expended charges daily at dawn. If you expend the last charge, roll [[/r 1d20]]. On a 1, the staff retains its +2 bonus to attack rolls and damage rolls but loses all other properties. On a 20, the staff regains [[/r 1d8 + 2]] charges.</p><p><em><strong>Retributive Strike.</strong></em> You can take a Magic action to break the staff over your knee or against a solid surface. The staff is destroyed and releases its magic in an explosion that fills a 30-foot Emanation originating from itself. You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take Force damage equal to 16 times the number of charges in the staff. Each other creature in the area makes a DC 17 Dexterity saving throw. On a failed save, a creature takes Force damage equal to 4 times the number of charges in the staff. On a successful save, a creature takes half as much damage.</p>",
       "effects": {
         "Staff of Power": {
-          "name": "Staff of Power",
-          "changes": {
-            "system.attributes.ac.bonus": 2,
-            "system.bonuses.abilities.save": 2,
-            "system.bonuses.msak.attack": 2,
-            "system.bonuses.rsak.attack": 2
-          }
+          "name": "Staff of Power"
         }
       }
     },
@@ -3601,11 +2559,7 @@
       "description": "<p><em>@UUID[Compendium.dnd5e.equipment24.Item.phbafcStaffalsoa]{Staff}, Legendary (Requires Attunement by a Sorcerer, Warlock, or Wizard)</em></p><p>This staff has 50 charges and can be wielded as a magic Quarterstaff that grants a +2 bonus to attack rolls and damage rolls made with it. While you hold it, you gain a +2 bonus to spell attack rolls.</p><p><em><strong>Spell Absorption.</strong></em> While holding the staff, you have Advantage on saving throws against spells. In addition, you can take a Reaction when another creature casts a spell that targets only you. If you do, the staff absorbs the magic of the spell, canceling its effect and gaining a number of charges equal to the absorbed spell's level. However, if doing so brings the staff's total number of charges above 50, the staff explodes as if you activated its Retributive Strike (see below).</p><p><em><strong>Spells.</strong></em> While holding the staff, you can cast one of the spells on the following table from it, using your spell save DC. The table indicates how many charges you must expend to cast the spell.</p><details><summary>Spell Cost Table</summary><table><thead><tr><th><p>Spell</p></th><th><p>Charge Cost</p></th><th></th></tr></thead><tbody><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplArcaneLock]{Arcane Lock}</p></td><td><p>0</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplConjureEle]{Conjure Elemental}</p></td><td><p>7</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{Detect Magic}</p></td><td><p>0</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplDispelMagi]{Dispel Magic}</p></td><td><p>3</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed]{Enlarge/Reduce}</p></td><td><p>0</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Fireball} (level 7 version)</p></td><td><p>7</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplFlamingSph]{Flaming Sphere}</p></td><td><p>2</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplIceStorm00]{Ice Storm}</p></td><td><p>4</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplInvisibili]{Invisibility}</p></td><td><p>2</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplKnock00000]{Knock}</p></td><td><p>2</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplLight00000]{Light}</p></td><td><p>0</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplLightningB]{Lightning Bolt} (level 7 version)</p></td><td><p>7</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplMageHand00]{Mage Hand}</p></td><td><p>0</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplPasswall00]{Passwall}</p></td><td><p>5</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplPlaneShift]{Plane Shift}</p></td><td><p>7</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbEvilAndGoodPr]{Protection from Evil and Good}</p></td><td><p>0</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplTelekinesi]{Telekinesis}</p></td><td><p>5</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofFire]{Wall of Fire}</p></td><td><p>4</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplWeb0000000]{Web}</p></td><td><p>2</p></td><td></td></tr></tbody></table></details><p><em><strong>Regaining Charges.</strong></em> The staff regains 4d6 + 2 expended charges daily at dawn. If you expend the last charge, roll [[/r 1d20]]. On a 20, the staff regains [[/r 1d12 + 1]] charges.</p><p><em><strong>Retributive Strike.</strong></em> You can take a Magic action to break the staff over your knee or against a solid surface. The staff is destroyed and releases its magic in an explosion that fills a 30-foot Emanation originating from itself. You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion ([[/r 1d2]], teleported on a 1). If you fail to avoid the effect, you take Force damage equal to 16 times the number of charges in the staff. Each other creature in the area makes a DC 17 Dexterity saving throw. On a failed save, a creature takes Force damage equal to 6 times the number of charges in the staff. On a successful save, a creature takes half as much damage.</p><section class=\"secret\" id=\"secret-aWlDNImPrAgu7dbv\"><p><strong>Foundry Note</strong></p><p>The <strong>Spell Absorption</strong> activity allows you to select the level of the cast spell and restores that number of charges.</p></section>",
       "effects": {
         "Spell Attack Bonus": {
-          "name": "Spell Attack Bonus",
-          "changes": {
-            "system.bonuses.msak.attack": 2,
-            "system.bonuses.rsak.attack": 2
-          }
+          "name": "Spell Attack Bonus"
         }
       }
     },
@@ -3618,11 +2572,7 @@
       "description": "<p><em>@UUID[Compendium.dnd5e.equipment24.Item.phbafcStaffalsoa]{Staff}, Rare (Requires Attunement by a Druid)</em></p><p>This staff has 6 charges and can be wielded as a magic Quarterstaff that grants a +2 bonus to attack rolls and damage rolls made with it. While holding it, you have a +2 bonus to spell attack rolls.</p><p><em><strong>Spells.</strong></em> While holding the staff, you can cast one of the spells on the following table from it, using your spell save DC. The table indicates how many charges you must expend to cast the spell.</p><table><thead><tr><th><p>Spell</p></th><th><p>Charge Cost</p></th><th></th></tr></thead><tbody><tr><td><p><em>Animal Friendship</em></p></td><td><p>1</p></td><td></td></tr><tr><td><p><em>Awaken</em></p></td><td><p>5</p></td><td></td></tr><tr><td><p><em>Barkskin</em></p></td><td><p>2</p></td><td></td></tr><tr><td><p><em>Locate Animals or Plants</em></p></td><td><p>2</p></td><td></td></tr><tr><td><p><em>Pass without Trace</em></p></td><td><p>2</p></td><td></td></tr><tr><td><p><em>Speak with Animals</em></p></td><td><p>1</p></td><td></td></tr><tr><td><p><em>Speak with Plants</em></p></td><td><p>3</p></td><td></td></tr><tr><td><p><em>Wall of Thorns</em></p></td><td><p>6</p></td><td></td></tr></tbody></table><p><em><strong>Tree Form.</strong></em> You can take a Magic action to plant one end of the staff in earth in an unoccupied space and expend 1 charge to transform the staff into a healthy tree. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius. The tree appears ordinary but radiates a faint aura of Transmutation magic that can be discerned with the <em>Detect Magic</em> spell. While touching the tree and using a Magic action, you return the staff to its normal form. Any creature in the tree falls when the tree reverts to a staff.</p><p><em><strong>Regaining Charges.</strong></em> The staff regains 1d6 expended charges daily at dawn. If you expend the last charge, roll [[/r 1d20]]. On a 1, the staff loses its properties and becomes a nonmagical Quarterstaff.</p>",
       "effects": {
         "Spell Attack Bonus": {
-          "name": "Spell Attack Bonus",
-          "changes": {
-            "system.bonuses.msak.attack": 2,
-            "system.bonuses.rsak.attack": 2
-          }
+          "name": "Spell Attack Bonus"
         }
       }
     },
@@ -3657,11 +2607,7 @@
       "description": "<p><em>Wondrous Item, Uncommon (Requires Attunement)</em></p><p>While this polished agate is on your person, you gain a +1 bonus to ability checks and saving throws.</p><section id=\"secret-nh2ZHIcUKEYwoYE9\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This item includes an Active Effect that automates the bonus.</p></section>",
       "effects": {
         "Lucky": {
-          "name": "Lucky",
-          "changes": {
-            "system.bonuses.abilities.check": 1,
-            "system.bonuses.abilities.save": 1
-          }
+          "name": "Lucky"
         }
       }
     },
@@ -3670,10 +2616,7 @@
       "description": "<p><em>Potion, Rare</em></p><p>When you drink this potion, your Strength score changes for 1 hour to 23. The type of giant determines the score. The potion has no effect on you if your Strength is equal to or greater than that score.</p><p>This potion's transparent liquid has floating in it a sliver of light resembling a giant's fingernail.</p>",
       "effects": {
         "Strength of Stone": {
-          "name": "Strength of Stone",
-          "changes": {
-            "system.abilities.str.value": 23
-          }
+          "name": "Strength of Stone"
         }
       }
     },
@@ -3682,10 +2625,7 @@
       "description": "<p><em>Potion, Legendary</em></p><p>When you drink this potion, your Strength score changes for 1 hour to 29. The type of giant determines the score. The potion has no effect on you if your Strength is equal to or greater than that score.</p><p>This potion's transparent liquid has floating in it a sliver of light resembling a giant's fingernail.</p>",
       "effects": {
         "Strength of Storms": {
-          "name": "Strength of Storms",
-          "changes": {
-            "system.abilities.str.value": 29
-          }
+          "name": "Strength of Storms"
         }
       }
     },
@@ -3695,10 +2635,7 @@
       "effects": {
         "Enhanced Strength: Strength Bonus": {
           "name": "Enhanced Strength: Strength Bonus",
-          "description": "<p>Your Strength increases by 2, to a maximum of 20, while this pale blue rhomboid orbits your head.</p>",
-          "changes": {
-            "system.abilities.str.value": 20
-          }
+          "description": "<p>Your Strength increases by 2, to a maximum of 20, while this pale blue rhomboid orbits your head.</p>"
         }
       }
     },
@@ -3733,18 +2670,7 @@
       "description": "<p><em>Weapon (@UUID[Compendium.dnd5e.equipment24.Item.phbwepGlaive0000]{Glaive}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatsword]{Greatsword}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepLongsword0]{Longsword}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepRapier0000]{Rapier}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Scimitar}, or @UUID[Compendium.dnd5e.equipment24.Item.phbwepShortsword]{Shortsword}), Rare (Requires Attunement)</em></p><p>When you attack a creature with this magic weapon and roll a 20 on the d20 for the attack roll, that target takes an extra 15 Necrotic damage if it isn't a Construct or an Undead, and you gain Temporary Hit Points equal to the amount of Necrotic damage taken.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Sword of Life Stealing": {
-          "name": "Sword of Life Stealing",
-          "changes": {
-            "name": "{} of Life Stealing",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSwordOfLifeSt caption=false]</p>",
-            "system.properties": "mgc",
-            "system.attunement": "required",
-            "activities[attack].damage.critical.bonus": "15[necrotic]",
-            "system.price.value": 4000,
-            "system.price.denomination": "gp",
-            "img": "icons/weapons/swords/sword-guard-worn.webp"
-          }
+          "name": "Sword of Life Stealing"
         }
       }
     },
@@ -3753,17 +2679,7 @@
       "description": "<p><em>Weapon (@UUID[Compendium.dnd5e.equipment24.Item.phbwepGlaive0000]{Glaive}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatsword]{Greatsword}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepLongsword0]{Longsword}, or @UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Scimitar}), Very Rare (Requires Attunement)</em></p><p>When you attack an object with this magic weapon and hit, maximize your weapon damage dice against the target.</p><p>When you attack a creature with this weapon and roll a 20 on the d20 for the attack roll, that target takes an extra 14 Slashing damage and gains <span class=\"no-break\">1 &amp;Reference[Exhaustion]</span> level.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Sword of Sharpness": {
-          "name": "Sword of Sharpness",
-          "changes": {
-            "name": "{} of Sharpness",
-            "system.rarity": "veryRare",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSwordOfSharpn caption=false]</p>",
-            "system.properties": "mgc",
-            "system.attunement": "required",
-            "activities[attack].damage.critical.bonus": "14d1[necrotic]",
-            "system.price.value": 40000,
-            "system.price.denomination": "gp"
-          }
+          "name": "Sword of Sharpness"
         }
       }
     },
@@ -3772,17 +2688,7 @@
       "description": "<p><em>Weapon (@UUID[Compendium.dnd5e.equipment24.Item.phbwepGlaive0000]{Glaive}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatsword]{Greatsword}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepLongsword0]{Longsword}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepRapier0000]{Rapier}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Scimitar}, or @UUID[Compendium.dnd5e.equipment24.Item.phbwepShortsword]{Shortsword}), Rare (Requires Attunement)</em></p><p>When you hit a creature with an attack using this magic weapon, the target takes an extra 2d6 Necrotic damage and must succeed on a DC 15 Constitution saving throw or be unable to regain Hit Points for 1 hour. The target repeats the save at the end of each of its turns, ending the effect on itself on a success.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Sword of Wounding": {
-          "name": "Sword of Wounding",
-          "changes": {
-            "name": "{} of Wounding",
-            "system.rarity": "rare",
-            "system.attunement": "required",
-            "system.properties": "mgc",
-            "system.damage.parts": [["2d6", "necrotic"]],
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSwordOfWoundi caption=false]</p>",
-            "system.price.value": 4000,
-            "system.price.denomination": "gp"
-          }
+          "name": "Sword of Wounding"
         },
         "Wounded and Cannot Heal": {
           "name": "Wounded and Cannot Heal"
@@ -3794,11 +2700,7 @@
       "description": "<p><em>Wondrous Item, Legendary (Requires Attunement by a Cleric or Paladin)</em></p><p>This talisman is a mighty symbol of goodness. A Fiend or an Undead that touches the talisman takes 8d6 Radiant damage and takes the damage again each time it ends its turn holding or carrying the talisman.</p><p><em><strong>Holy Symbol.</strong></em> You can use the talisman as a Holy Symbol. You gain a +2 bonus to spell attack rolls while you wear or hold it.</p><p><em><strong>Pure Rebuke.</strong></em> The talisman has 7 charges. While wearing or holding the talisman, you can take a Magic action to expend 1 charge and target one creature you can see on the ground within 120 feet of yourself. A flaming fissure opens under the target, and the target makes a DC 20 Dexterity saving throw. If the target is a Fiend or an Undead, it has Disadvantage on the save. On a failed save, the target falls into the fissure and is destroyed, leaving no remains. On a successful save, the target isn't cast into the fissure but takes 4d6 Psychic damage from the ordeal. In either case, the fissure then closes, leaving no trace of its existence. When you expend the last charge, the talisman disperses into motes of golden light and is destroyed.</p>",
       "effects": {
         "Holy Symbol": {
-          "name": "Holy Symbol",
-          "changes": {
-            "system.bonuses.msak.attack": 2,
-            "system.bonuses.rsak.attack": 2
-          }
+          "name": "Holy Symbol"
         }
       }
     },
@@ -3811,11 +2713,7 @@
       "description": "<p><em>Wondrous Item, Legendary (Requires Attunement)</em></p><p>This item symbolizes unrepentant evil. A creature that isn't a Fiend or an Undead that touches the talisman takes 8d6 Necrotic damage and takes the damage again each time it ends its turn holding or carrying the talisman.</p><p><em><strong>Holy Symbol.</strong></em> You can use the talisman as a Holy Symbol. You gain a +2 bonus to spell attack rolls while you wear or hold it.</p><p><em><strong>Ultimate End.</strong></em> The talisman has 6 charges. While wearing or holding the talisman, you can take a Magic action to expend 1 charge and target one creature you can see on the ground within 120 feet of yourself. A flaming fissure opens under the target, and the target makes a DC 20 Dexterity saving throw. If the target is a Celestial, it has Disadvantage on the save. On a failed save, the target falls into the fissure and is destroyed, leaving no remains. On a successful save, the target isn't cast into the fissure but takes 4d6 Psychic damage from the ordeal. In either case, the fissure then closes, leaving no trace of its existence. When you expend the last charge, the talisman dissolves into foul-smelling slime and is destroyed.</p>",
       "effects": {
         "Holy Symbol": {
-          "name": "Holy Symbol",
-          "changes": {
-            "system.bonuses.msak.attack": 2,
-            "system.bonuses.rsak.attack": 2
-          }
+          "name": "Holy Symbol"
         }
       }
     },
@@ -3832,10 +2730,7 @@
       "description": "<p><em>Weapon (@UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatclub0]{Greatclub}), Very Rare (Requires Attunement)</em></p><p>While you are attuned to this magic weapon, your Strength is 20 unless your Strength is already equal to or greater than that score. The weapon deals an extra 1d8 Thunder damage to any creature it hits and an extra 3d8 Thunder damage to objects it hits that aren't being worn or carried.</p><p>The weapon has the following additional properties.</p><p><em><strong>Clap of Thunder.</strong></em> As a Magic action, you can strike the weapon against a hard surface to create a loud clap of thunder audible out to 300 feet. You also create a 30-foot Cone of thunderous energy. Each creature in the Cone must succeed on a DC 15 Strength saving throw or have the Prone condition. Nonmagical objects in the Cone that aren't being worn or carried take [[/damage 3d8 type=thunder]] damage.</p><p><em><strong>Earthquake.</strong></em> As a Magic action, you can strike the weapon against the ground to create an intense seismic disturbance in a 50-foot-radius circle centered on the point of impact. Structures in contact with the ground in that area take 50 Bludgeoning damage, and each creature on the ground in that area must succeed on a DC 20 Dexterity saving throw or have the Prone condition. If that creature is also concentrating, it must succeed on a [[/save con 20]] saving throw or its Concentration is broken. In addition, you can cause a 30-foot-deep, 10-foot-wide fissure to open up on the ground anywhere in the area. Any creature on a spot where the fissure opens must succeed on a DC 20 Dexterity saving throw, falling into the fissure on a failed save or moving with the fissure's edge on a successful one. Any structure on a spot where the fissure opens collapses into the fissure. Once you use this property, it can't be used again until the next dawn.</p>",
       "effects": {
         "Thunderous Strength": {
-          "name": "Thunderous Strength",
-          "changes": {
-            "system.abilities.str.value": 20
-          }
+          "name": "Thunderous Strength"
         },
         "Prone": {
           "name": "Prone"
@@ -3847,11 +2742,7 @@
       "description": "<p><em>Wondrous Item, Very Rare</em></p><p>This book contains memory and logic exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Intelligence increases by 2, to a maximum of 30. The manual then loses its magic but regains it in a century.</p><section class=\"secret\" id=\"secret-IEz5CmdQakntpRWJ\"><p><strong>Foundry Note</strong></p><p>This item includes 48 max uses for tracking hours read.</p><p>The <strong>Read</strong> activity includes a scaling value that lets you enter the amount of hours you've read. Once you hit 48 you can use the included Active Effect to increase your Intelligence.</p><p>The <strong>Reset Progress</strong> activity resets your uses to 0 if you fail to complete the book within 6 days and need to start over.</p></section>",
       "effects": {
         "Clear Minded": {
-          "name": "Clear Minded",
-          "changes": {
-            "system.abilities.int.value": 2,
-            "system.abilities.int.max": 30
-          }
+          "name": "Clear Minded"
         }
       }
     },
@@ -3860,11 +2751,7 @@
       "description": "<p><em>Wondrous Item, Very Rare</em></p><p>This book contains guidelines for influencing and charming others, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Charisma increases by 2, to a maximum of 30. The manual then loses its magic but regains it in a century.</p><section class=\"secret\" id=\"secret-3CB9QWRmYLF6zQFy\"><p><strong>Foundry Note</strong></p><p>This item includes 48 max uses for tracking hours read.</p><p>The <strong>Read</strong> activity includes a scaling value that lets you enter the amount of hours you've read. Once you hit 48 you can use the included Active Effect to increase your Charisma.</p><p>The <strong>Reset Progress</strong> activity resets your uses to 0 if you fail to complete the book within 6 days and need to start over.</p></section>",
       "effects": {
         "Leader": {
-          "name": "Leader",
-          "changes": {
-            "system.abilities.cha.value": 2,
-            "system.abilities.cha.max": 30
-          }
+          "name": "Leader"
         }
       }
     },
@@ -3873,11 +2760,7 @@
       "description": "<p><em>Wondrous Item, Very Rare</em></p><p>This book contains intuition and insight exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Wisdom increases by 2, to a maximum of 30. The manual then loses its magic, but regains it in a century.</p><section class=\"secret\" id=\"secret-geGQeemrI6uIgb0R\"><p><strong>Foundry Note</strong></p><p>This item includes 48 max uses for tracking hours read.</p><p>The <strong>Read</strong> activity includes a scaling value that lets you enter the amount of hours you've read. Once you hit 48 you can use the included Active Effect to increase your Wisdom.</p><p>The <strong>Reset Progress</strong> activity resets your uses to 0 if you fail to complete the book within 6 days and need to start over.</p></section>",
       "effects": {
         "Understanding": {
-          "name": "Understanding",
-          "changes": {
-            "system.abilities.wis.value": 2,
-            "system.abilities.wis.max": 30
-          }
+          "name": "Understanding"
         }
       }
     },
@@ -3932,16 +2815,7 @@
       "description": "<p><em>Weapon (Any Simple or Martial), Rare</em></p><p>This magic weapon deals an extra 2d6 damage to any creature it hits. This extra damage is of the same type as the weapon's normal damage.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Vicious Weapon": {
-          "name": "Vicious Weapon",
-          "changes": {
-            "name": "Vicious {}",
-            "system.rarity": "rare",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgViciousWeapon caption=false]</p>",
-            "system.properties": "mgc",
-            "system.damage.base.bonus": "2d6",
-            "system.price.value": 4000,
-            "system.price.denomination": "gp"
-          }
+          "name": "Vicious Weapon"
         }
       }
     },
@@ -3950,19 +2824,7 @@
       "description": "<p><em>Weapon (@UUID[Compendium.dnd5e.equipment24.Item.phbwepGlaive0000]{Glaive}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatsword]{Greatsword}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepLongsword0]{Longsword}, or @UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Scimitar}), Legendary (Requires Attunement)</em></p><p>You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. In addition, the weapon ignores Resistance to Slashing damage.</p><p>When you use this weapon to attack a creature that has at least one head and roll a 20 on the d20 for the attack roll, you cut off one of the creature's heads. The creature dies if it can't survive without the lost head. A creature is immune to this effect if it has Immunity to Slashing damage, if it doesn't have or need a head, or if the GM decides that the creature is too big for its head to be cut off with this weapon. Such a creature instead takes an extra 30 Slashing damage from the hit. If the creature has Legendary Resistance, it can expend one daily use of that trait to avoid losing its head, taking the extra damage instead.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Vorpal Sword": {
-          "name": "Vorpal Sword",
-          "changes": {
-            "name": "Vorpal {}",
-            "system.rarity": "legendary",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgVorpalSword00 caption=false]</p>",
-            "system.attunement": "required",
-            "system.properties": "mgc",
-            "system.magicalBonus": 3,
-            "img": "icons/weapons/swords/scimitar-guard-gold.webp",
-            "system.price.value": 200000,
-            "system.price.denomination": "gp",
-            "activities[attack].damage.critical.bonus": 30
-          }
+          "name": "Vorpal Sword"
         }
       }
     },
@@ -4032,10 +2894,7 @@
           "name": "Charmed"
         },
         "Water Focus": {
-          "name": "Water Focus",
-          "changes": {
-            "system.attributes.movement.swim": 60
-          }
+          "name": "Water Focus"
         }
       }
     },
@@ -4044,40 +2903,13 @@
       "description": "<p><em>Weapon (Any Simple or Martial), Uncommon (+1), Rare (+2), or Very Rare (+3)</em></p><p>You have a bonus to attack rolls and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Weapon +1": {
-          "name": "Weapon +1",
-          "changes": {
-            "name": "{} +1",
-            "system.magicalBonus": 1,
-            "system.rarity": "uncommon",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgWeapon12or300 caption=false]</p>",
-            "system.properties": "mgc",
-            "system.price.value": 400,
-            "system.price.denomination": "gp"
-          }
+          "name": "Weapon +1"
         },
         "Weapon +2": {
-          "name": "Weapon +2",
-          "changes": {
-            "name": "{} +2",
-            "system.magicalBonus": 2,
-            "system.rarity": "rare",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgWeapon12or300 caption=false]</p>",
-            "system.properties": "mgc",
-            "system.price.value": 4000,
-            "system.price.denomination": "gp"
-          }
+          "name": "Weapon +2"
         },
         "Weapon +3": {
-          "name": "Weapon +3",
-          "changes": {
-            "name": "{} +3",
-            "system.magicalBonus": 3,
-            "system.rarity": "veryRare",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgWeapon12or300 caption=false]</p>",
-            "system.properties": "mgc",
-            "system.price.value": 40000,
-            "system.price.denomination": "gp"
-          }
+          "name": "Weapon +3"
         }
       }
     },
@@ -4086,24 +2918,11 @@
       "description": "<p><em>Weapon (Any Simple or Martial), Uncommon (Requires Attunement)</em></p><p>As long as this weapon is within your reach and you are attuned to it, you and allies within 30 feet of you gain the following benefits.</p><p><strong>Alarm.</strong> The weapon magically awakens each subject who is sleeping naturally when combat begins. This benefit doesn't wake a subject from magically induced sleep.</p><p><strong>Supernatural Readiness.</strong> Each subject has Advantage on its Initiative rolls.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
       "effects": {
         "Weapon of Warning": {
-          "name": "Weapon of Warning",
-          "changes": {
-            "name": "{} of Warning",
-            "system.rarity": "uncommon",
-            "system.attunement": "required",
-            "system.description.value": "{}<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgWeaponOfWarni caption=false]</p>",
-            "system.properties": "mgc",
-            "img": "icons/weapons/hammers/hammer-double-engraved-ruby.webp",
-            "system.price.value": 400,
-            "system.price.denomination": "gp"
-          }
+          "name": "Weapon of Warning"
         },
         "Supernatural Readiness: Initiative Advantage": {
           "name": "Supernatural Readiness: Initiative Advantage",
-          "description": "<p>Each ally (including you) has Advantage on its Initiative rolls when within 30 feet.</p>",
-          "changes": {
-            "system.attributes.init.roll.mode": 1
-          }
+          "description": "<p>Each ally (including you) has Advantage on its Initiative rolls when within 30 feet.</p>"
         }
       }
     },
@@ -4125,10 +2944,7 @@
       "effects": {
         "Winged": {
           "name": "Winged",
-          "description": "<p>The wings lasts for 1 hour or until you end the effect early as a Magic action. The wings give you a Fly Speed of 60 feet.</p>",
-          "changes": {
-            "system.attributes.movement.fly": 30
-          }
+          "description": "<p>The wings lasts for 1 hour or until you end the effect early as a Magic action. The wings give you a Fly Speed of 60 feet.</p>"
         }
       }
     },
@@ -4138,10 +2954,7 @@
       "effects": {
         "Winged": {
           "name": "Winged",
-          "description": "<p>The wings lasts for 1 hour or until you end the effect early as a Magic action. The wings give you a Fly Speed of 60 feet.</p>",
-          "changes": {
-            "system.attributes.movement.fly": 60
-          }
+          "description": "<p>The wings lasts for 1 hour or until you end the effect early as a Magic action. The wings give you a Fly Speed of 60 feet.</p>"
         }
       }
     },
@@ -4158,10 +2971,7 @@
       "description": "<div><p><em>See: @UUID[Compendium.dnd5e.equipment24.Item.dmgBeltOfGiantSt]</em></p><p>While wearing this belt, your Strength changes to 27. The type of giant determines the score. The item has no effect on you if your Strength without the belt is equal to or greater than 27.</p></div>",
       "effects": {
         "Cloud Giant Strength": {
-          "name": "Cloud Giant Strength",
-          "changes": {
-            "system.abilities.str.value": 27
-          }
+          "name": "Cloud Giant Strength"
         }
       }
     },
@@ -4170,10 +2980,7 @@
       "description": "<div><p><em>See: @UUID[Compendium.dnd5e.equipment24.Item.dmgBeltOfGiantSt]</em></p><p>While wearing this belt, your Strength changes to 25. The type of giant determines the score. The item has no effect on you if your Strength without the belt is equal to or greater than 25.</p></div>",
       "effects": {
         "Fire Giant Strength": {
-          "name": "Fire Giant Strength",
-          "changes": {
-            "system.abilities.str.value": 25
-          }
+          "name": "Fire Giant Strength"
         }
       }
     },
@@ -4182,10 +2989,7 @@
       "description": "<div><p><em>See: @UUID[Compendium.dnd5e.equipment24.Item.dmgBeltOfGiantSt]</em></p><p>While wearing this belt, your Strength changes to 23. The type of giant determines the score. The item has no effect on you if your Strength without the belt is equal to or greater than 23.</p></div>",
       "effects": {
         "Frost Giant Strength": {
-          "name": "Frost Giant Strength",
-          "changes": {
-            "system.abilities.str.value": 23
-          }
+          "name": "Frost Giant Strength"
         }
       }
     },
@@ -4194,10 +2998,7 @@
       "description": "<div><p><em>See: @UUID[Compendium.dnd5e.equipment24.Item.dmgBeltOfGiantSt]</em></p><p>While wearing this belt, your Strength changes to 21. The type of giant determines the score. The item has no effect on you if your Strength without the belt is equal to or greater than 21.</p></div>",
       "effects": {
         "Hill Giant Strength": {
-          "name": "Hill Giant Strength",
-          "changes": {
-            "system.abilities.str.value": 21
-          }
+          "name": "Hill Giant Strength"
         }
       }
     },
@@ -4213,10 +3014,7 @@
       "description": "<div><p><em>See: @UUID[Compendium.dnd5e.equipment24.Item.dmgBeltOfGiantSt]</em></p><p>While wearing this belt, your Strength changes to 29. The type of giant determines the score. The item has no effect on you if your Strength without the belt is equal to or greater than 29.</p></div>",
       "effects": {
         "Storm Giant Strength": {
-          "name": "Storm Giant Strength",
-          "changes": {
-            "system.abilities.str.value": 29
-          }
+          "name": "Storm Giant Strength"
         }
       }
     },
@@ -4225,10 +3023,7 @@
       "description": "<div><p><em>See: @UUID[Compendium.dnd5e.equipment24.Item.dmgBeltOfGiantSt]</em></p><p>While wearing this belt, your Strength changes to 23. The type of giant determines the score. The item has no effect on you if your Strength without the belt is equal to or greater than 23.</p></div>",
       "effects": {
         "Stone Giant Strength": {
-          "name": "Stone Giant Strength",
-          "changes": {
-            "system.abilities.str.value": 23
-          }
+          "name": "Stone Giant Strength"
         }
       }
     },
@@ -4243,14 +3038,7 @@
       "description": "<p>As a Utilize action, you can spread Caltrops from their bag to cover a 5-foot-square area within 5 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 15 Dexterity saving throw or take 1 Piercing damage and have its Speed reduced to 0 until the start of its next turn. It takes 10 minutes to recover the Caltrops.</p>",
       "effects": {
         "Slowed": {
-          "name": "Slowed",
-          "changes": {
-            "system.attributes.movement.walk": 0,
-            "system.attributes.movement.fly": 0,
-            "system.attributes.movement.swim": 0,
-            "system.attributes.movement.climb": 0,
-            "system.attributes.movement.burrow": 0
-          }
+          "name": "Slowed"
         }
       }
     },

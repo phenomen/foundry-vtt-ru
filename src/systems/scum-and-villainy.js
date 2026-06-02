@@ -1,8 +1,11 @@
-import { resolveTranslatedItemName, translateItemListConverter } from "../babele-helpers.js";
-import { setupBabele } from "../babele-helpers.js";
+import {
+  registerCompendiumTranslations,
+  resolveTranslatedItemName,
+  translateItemListConverter,
+} from "../babele-helpers.js";
 
-export function init() {
-  setupBabele("scum-and-villainy");
+export function registerBabeleTranslations(babele) {
+  registerCompendiumTranslations(babele, "scum-and-villainy");
 }
 
 export function registerBabeleConverters(babele) {

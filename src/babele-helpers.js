@@ -1,36 +1,83 @@
 /**
- * Shared helpers for Babele custom converters.
- *
- * Used when a compendium field stores references to other items by name instead of embedded documents. Lookups go through Babele's runtime API.
+ * Shared helpers for Babele compendium translation.
  */
+
+export const MODULE_ID = "ru-ru";
+export const BABELE_LANG = "ru";
 
 /**
- * Setup Babele for a specific compendium.
- * @param {string} id - The ID of the compendium to setup.
+ * Reads a module setting, or returns `defaultValue` if the hook has not registered it yet.
+ *
+ * @param {string} key
+ * @param {boolean} [defaultValue=false]
+ * @returns {boolean}
  */
+export function getSettings(key, defaultValue = false) {
+  if (!game.settings.settings.has(`${MODULE_ID}.${key}`)) {
+    return defaultValue;
+  }
+  return game.settings.get(MODULE_ID, key);
+}
 
-export function setupBabele(id) {
-  if (!game.settings.get("ru-ru", "compendiumTranslation")) {
+/**
+ * Registers one or more compendium translation directories for the current module.
+ * Must run during `Hooks.once("babele.init", ...)`.
+ *
+ * @param {object} babele - Babele facade from the hook callback.
+ * @param {string|string[]} paths - Path segment(s) under `compendium/` (e.g. `"swade/core"`).
+ */
+export function registerCompendiumTranslations(babele, paths) {
+  if (!game.settings.get(MODULE_ID, "compendiumTranslation")) {
+    return;
+  }
+
+  let pathList = paths;
+  if (!Array.isArray(paths)) {
+    pathList = [paths];
+  }
+  const dirs = pathList.map((path) => `compendium/${path}`);
+
+  const registration = {
+    module: MODULE_ID,
+    lang: BABELE_LANG,
+  };
+
+  if (dirs.length === 1) {
+    const [dir] = dirs;
+    registration.dir = dir;
+  } else {
+    registration.dirs = dirs;
+  }
+
+  babele.register(registration);
+}
+
+/**
+ * Applies useful Babele defaults when compendium translation is active.
+ */
+export function applyBabeleDefaults() {
+  if (!game.settings.get(MODULE_ID, "compendiumTranslation")) {
+    return;
+  }
+
+  game.settings.set("babele", "showOriginalName", true);
+}
+
+/**
+ * Prompts the GM when compendium translation is enabled but Babele is missing.
+ */
+export function warnBabeleMissing() {
+  if (!game.settings.get(MODULE_ID, "compendiumTranslation") || game.babele) {
     return;
   }
 
   const { title } = game.system;
 
-  if (game.babele) {
-    game.babele.register({
-      dir: `compendium/${id}`,
-      lang: "ru",
-      module: "ru-ru",
-    });
-
-    game.settings.set("babele", "showOriginalName", true);
-  } else {
-    foundry.applications.api.DialogV2.prompt({
-      window: { title: "Перевод библиотек" },
-      content: `<p>Для перевода библиотек <b>${title}</b> требуется активировать модули <b>Babele и libWrapper</b></p>`,
-      ok: { label: "Хорошо" },
-    });
-  }
+  foundry.applications.api.DialogV2.prompt({
+    window: { title: "Перевод библиотек" },
+    content: `<p>Для перевода библиотек <b>${title}</b> требуется активировать модули <b>Babele и libWrapper</b></p>`,
+    ok: { label: "Хорошо" },
+  });
 }
 
 /**
@@ -54,6 +101,28 @@ export function getCompendiumRuntime(runtime) {
 
   if (runtime.runtime?.translatedPackFor) {
     return runtime.runtime;
+  }
+
+  return null;
+}
+
+/**
+ * @param {string} entryName - Compendium index name used for Babele matching.
+ * @param {object} scope - Compendium runtime from {@link getCompendiumRuntime}.
+ * @param {string} packId - Foundry compendium collection id.
+ * @returns {object|null} Translation entry (`name`, `description`, …) or `null`.
+ */
+export function translatedItemEntryFromPack(entryName, scope, packId) {
+  const trimmed = entryName?.trim();
+  if (!trimmed || !scope || !packId) {
+    return null;
+  }
+
+  const data = { name: trimmed };
+  const pack = scope.mappedCompendiumFor?.(packId);
+
+  if (pack?.hasTranslation?.(data, "Item", scope)) {
+    return pack.translationsFor(data, "Item") ?? null;
   }
 
   return null;
@@ -88,30 +157,6 @@ function translatedNameFromField(trimmed, fieldTranslation) {
 }
 
 /**
- * @param {string} entryName - Compendium index name used for Babele matching.
- * @param {object} scope - Compendium runtime from {@link getCompendiumRuntime}.
- * @param {string} packId - Foundry compendium collection id.
- * @returns {object|null} Translation entry (`name`, `description`, …) or `null`.
- */
-function translatedItemEntryFromPack(entryName, scope, packId) {
-  const trimmed = entryName?.trim();
-  if (!trimmed || !scope || !packId) {
-    return null;
-  }
-
-  const data = { name: trimmed };
-  const pack = scope.mappedCompendiumFor?.(packId);
-
-  if (pack?.hasTranslation?.(data, "Item", scope)) {
-    return pack.translationsFor(data, "Item") ?? null;
-  }
-
-  return null;
-}
-
-/**
- * Resolves a name by looking up Babele translations in compendium packs.
- *
  * @param {string} trimmed - Source item name, already trimmed.
  * @param {object} scope - Compendium runtime from {@link getCompendiumRuntime}.
  * @param {string[]} packIds - Foundry compendium collection ids to search first.
@@ -194,8 +239,7 @@ export function translateItemListValue(list, options = {}) {
 }
 
 /**
- * Babele converter object for `mappings.json` fields that use `translateItemList`.
- *
+ * Babele converter for `mappings.json` fields that use `translateItemList`.
  */
 export const translateItemListConverter = {
   translate(context) {
@@ -204,8 +248,44 @@ export const translateItemListConverter = {
   },
 };
 
+/**
+ * @param {object} [options]
+ * @param {boolean} [options.sort] - Sort translated segments alphabetically.
+ * @returns {{ translate: (context: object) => string }}
+ */
+export function createTranslateItemListConverter({ sort = false } = {}) {
+  return {
+    translate(context) {
+      const { value: list, translation: fieldTranslation, runtime } = context;
+      return translateItemListValue(list, { fieldTranslation, runtime, sort });
+    },
+  };
+}
+
+/**
+ * Creates a Babele converter that maps a scalar value through a lookup table.
+ *
+ * @param {Record<string, string>} lookup
+ * @returns {{ translate: (context: object) => string|undefined }}
+ */
+export function createLookupConverter(lookup) {
+  return {
+    translate(context) {
+      const { value } = context;
+      if (!value) {
+        return value;
+      }
+      return translateValue(value, lookup);
+    },
+  };
+}
+
 export function translateValue(value, translations) {
-  return translations[value.trim()] || value;
+  const translated = translations[value.trim()];
+  if (typeof translated !== "string" || translated === "") {
+    return value;
+  }
+  return translated;
 }
 
 export function translateList(value, translations) {

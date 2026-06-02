@@ -1,176 +1,366 @@
 {
   "label": "Изъяны",
   "entries": {
-    "All Thumbs": {
-      "name": "Кривые руки"
-    },
-    "Anemic": {
-      "name": "Болезненность"
-    },
-    "Arrogant": {
-      "name": "Заносчивость"
-    },
-    "Bad Eyes": {
-      "name": "Плохое зрение"
-    },
-    "Bad Luck": {
-      "name": "Невезение"
-    },
-    "Big Mouth": {
-      "name": "Длинный язык"
-    },
-    "Blind": {
-      "name": "Слепота"
-    },
-    "Bloodthirsty": {
-      "name": "Жажда крови"
-    },
-    "Can't Swim": {
-      "name": "Неумение плавать"
-    },
-    "Cautious": {
-      "name": "Перестраховщик"
-    },
-    "Clueless": {
-      "name": "Рассеянность"
-    },
-    "Clumsy": {
-      "name": "Неуклюжесть"
-    },
-    "Code of Honor": {
-      "name": "Кодекс чести"
-    },
-    "Curious": {
-      "name": "Любопытство"
-    },
-    "Death Wish": {
-      "name": "Самопожертвование"
-    },
-    "Delusional": {
-      "name": "Заблуждение"
-    },
-    "Doubting Thomas": {
-      "name": "Фома неверующий"
-    },
-    "Driven": {
-      "name": "Одержимость идеей"
-    },
-    "Elderly": {
-      "name": "Старость"
-    },
     "Enemy": {
-      "name": "Враг"
-    },
-    "Greedy": {
-      "name": "Жадность"
-    },
-    "Habit": {
-      "name": "Дурная привычка"
-    },
-    "Hard of Hearing": {
-      "name": "Тугоухость"
-    },
-    "Heroic": {
-      "name": "Героизм"
-    },
-    "Hesitant": {
-      "name": "Медлительность"
-    },
-    "Illiterate": {
-      "name": "Неграмотность"
-    },
-    "Impulsive": {
-      "name": "Импульсивность"
-    },
-    "Jealous": {
-      "name": "Зависть"
-    },
-    "Loyal": {
-      "name": "Верный друг"
-    },
-    "Mean": {
-      "name": "Дурной характер"
-    },
-    "Mild Mannered": {
-      "name": "Мягкость"
-    },
-    "Mute": {
-      "name": "Немота"
-    },
-    "Obese": {
-      "name": "Полнота"
-    },
-    "Obligation": {
-      "name": "Обязательства"
-    },
-    "One Arm": {
-      "name": "Отсутствие руки"
-    },
-    "One Eye": {
-      "name": "Отсутствие глаза"
-    },
-    "Outsider": {
-      "name": "Чужак"
-    },
-    "Overconfident": {
-      "name": "Самоуверенность"
-    },
-    "Pacifist": {
-      "name": "Пацифизм"
-    },
-    "Phobia": {
-      "name": "Фобия"
-    },
-    "Poverty": {
-      "name": "Транжира"
-    },
-    "Quirk": {
-      "name": "Причуда"
-    },
-    "Ruthless": {
-      "name": "Жестокость"
-    },
-    "Secret": {
-      "name": "Секрет"
-    },
-    "Shamed": {
-      "name": "Позор"
-    },
-    "Slow": {
-      "name": "Хромота"
+      "name": "Враг",
+      "description": "<p>Someone out there hates the character and wants him ruined, locked away, or dead. The value of the @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} depends on how powerful the enemy is and how often he might show up. A @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} Enemy might be a lone gunslinger out for vengeance or a betrayed brotherhood that’s deadly but appears rarely. A @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} Enemy might represent powerful authorities, a band of outlaws, or a single very powerful and relentless rival.</p><p>If the enemy is one day defeated, the GM should gradually work in a replacement, or the hero may buy off the @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} by sacrificing an @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01advancement000]{Advance}.</p>"
     },
     "Small": {
-      "name": "Коротышка"
+      "name": "Коротышка",
+      "description": "<p>This adventurer is very skinny, very short, or both. His @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Size} is reduced by 1, which reduces his @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Toughness} as well.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Size} can&rsquo;t be reduced below -1, but the @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Toughness} penalty remains. A Small half-folk, for example, remains Size -1 and loses a point of Toughness. <br style=\"font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;\" /><br /></p>",
+      "effects": {
+        "Small": {
+          "name": "Small",
+          "description": "<p>This adventurer is very skinny, very short, or both. His @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Size} is reduced by 1, which reduces his @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Toughness} as well.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Size} can’t be reduced below -1, but the @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Toughness} penalty remains. A Small half-folk, for example, remains Size -1 and loses a point of Toughness.</p>"
+        }
+      }
     },
-    "Stubborn": {
-      "name": "Упрямство"
+    "Mild Mannered": {
+      "name": "Мягкость",
+      "description": "<p>Your milquetoast just isn&rsquo;t threatening. Maybe he&rsquo;s a little doughy around the middle, has a kind face, or a soft voice. Whatever the issue, he has a hard time looking tough. He subtracts 2 when making @Compendium[swade-core-rules.swade-skills.Intimidation]{Intimidation} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#trait-rolls]{rolls}.</p>",
+      "effects": {
+        "Mild Mannered": {
+          "name": "Mild Mannered",
+          "description": "<p>Your milquetoast just isn’t threatening. Maybe he’s a little doughy around the middle, has a kind face, or a soft voice. Whatever the issue, he has a hard time looking tough. He subtracts 2 when making @Compendium[swade-core-rules.swade-skills.Intimidation]{Intimidation} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#trait-rolls]{rolls}.</p>"
+        }
+      }
     },
-    "Suspicious": {
-      "name": "Паранойя"
+    "Habit": {
+      "name": "Дурная привычка",
+      "description": "<p>(MINOR OR MAJOR)</p>\n<p>Your warrior has an annoying or dangerous compulsion. A @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} Habit irritates those around her but isn&rsquo;t dangerous. Maybe she picks her nose, can&rsquo;t stop fiddling with her phone, says &ldquo;y&rsquo;know&rdquo; in the middle of every sentence, or chews and smacks her gum loudly and often. Allies avoid her if possible.</p>\n<p>A @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} Habit is a physical or mental addiction of some sort that is debilitating or possibly even deadly. This includes drug use, chronic drinking, or perhaps even an addiction to virtual reality in a hightech setting.</p>\n<p>An addict who doesn&rsquo;t get his fix must make a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Vigor}&nbsp;roll every 24 hours he goes without or take a level of @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03fatigue0000000]{Fatigue}.</p>\n<p>Once every 24 hours, a @Compendium[swade-core-rules.swade-skills.Healing]{Healing} roll with some sort of appropriate medicine removes one level of @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03fatigue0000000]{Fatigue}&nbsp;for four hours. After that the Fatigue returns and can only be recovered with the addicting substance.</p>"
     },
-    "Thin Skinned": {
-      "name": "Обидчивость"
+    "Code of Honor": {
+      "name": "Кодекс чести",
+      "description": "<p>Honor is very important to your character. He keeps his word, doesn&rsquo;t abuse or kill prisoners, and generally tries to operate within his world&rsquo;s particular notion of proper gentlemanly or ladylike behavior.</p>"
     },
-    "Timid": {
-      "name": "Трусость"
-    },
-    "Tongue-Tied": {
-      "name": "Косноязычие"
-    },
-    "Ugly": {
-      "name": "Уродство"
-    },
-    "Vengeful": {
-      "name": "Мстительность"
-    },
-    "Vow": {
-      "name": "Клятва"
-    },
-    "Wanted": {
-      "name": "В розыске"
+    "Cautious": {
+      "name": "Перестраховщик",
+      "description": "<p>This planner personifies restraint and carefulness. He never makes rash decisions and likes to plot things out in detail long before any action is taken.</p>"
     },
     "Young": {
-      "name": "Юность"
+      "name": "Юность",
+      "description": "<p>(MINOR OR MAJOR)</p>\n<p>The hero is 12&ndash;15 years old (in human years&mdash;adjust this for other ancestries). He has only 4 points to adjust his @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{attributes} instead of 5, and 10 skill points instead of 12. He may also have legal restrictions depending on the setting (can&rsquo;t drive, own a firearm, and so on).</p>\n<p>On the plus side, youths have a fair amount of luck. They draw one extra @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03bennies0000000]{Benny} at the beginning of each game session (this stacks with other @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01edges000000000]{Edges} such @Compendium[swade-core-rules.swade-edges.Luck]{Luck} or @Compendium[swade-core-rules.swade-edges.Great Luck]{Great Luck}).</p>\n<p>Most Young characters should also take the @Compendium[swade-core-rules.swade-hindrances.Small]{Small} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, but it&rsquo;s not mandatory. </p>\n<p>As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, the character is Very Young (8 to 11 years old). He has only 3 points for @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{attributes} and 10 for skills, and the @Compendium[swade-core-rules.swade-hindrances.Small]{Small} Hindrance. Very Young heroes draw two extra @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03bennies0000000]{Bennies} at the start of each session.</p>",
+      "effects": {
+        "Young": {
+          "name": "Young",
+          "description": "<p>(MINOR OR MAJOR)</p>\n<p>The hero is 12–15 years old (in human years—adjust this for other ancestries). He has only 4 points to adjust his @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{attributes} instead of 5, and 10 skill points instead of 12. He may also have legal restrictions depending on the setting (can’t drive, own a firearm, and so on).</p>\n<p>On the plus side, youths have a fair amount of luck. They draw one extra @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03bennies0000000]{Benny} at the beginning of each game session (this stacks with other @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01edges000000000]{Edges} such @Compendium[swade-core-rules.swade-edges.Luck]{Luck} or @Compendium[swade-core-rules.swade-edges.Great Luck]{Great Luck}).</p>\n<p>Most Young characters should also take the @Compendium[swade-core-rules.swade-hindrances.Small]{Small} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, but it’s not mandatory. </p>"
+        },
+        "Very Young": {
+          "name": "Very Young",
+          "description": "<p>(MINOR OR MAJOR)</p>\n<p>The hero is 12–15 years old (in human years—adjust this for other ancestries). He has only 4 points to adjust his @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{attributes} instead of 5, and 10 skill points instead of 12. He may also have legal restrictions depending on the setting (can’t drive, own a firearm, and so on).</p>\n<p>On the plus side, youths have a fair amount of luck. They draw one extra @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03bennies0000000]{Benny} at the beginning of each game session (this stacks with other @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01edges000000000]{Edges} such @Compendium[swade-core-rules.swade-edges.Luck]{Luck} or @Compendium[swade-core-rules.swade-edges.Great Luck]{Great Luck}).</p>\n<p>Most Young characters should also take the @Compendium[swade-core-rules.swade-hindrances.Small]{Small} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, but it’s not mandatory. </p>\n<p>As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, the character is Very Young (8 to 11 years old). He has only 3 points for @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{attributes} and 10 for skills, and the @Compendium[swade-core-rules.swade-hindrances.Small]{Small} Hindrance. Very Young heroes draw two extra @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03bennies0000000]{Bennies} at the start of each session.</p>"
+        }
+      }
+    },
+    "Blind": {
+      "name": "Слепота",
+      "description": "<p>The individual is completely without sight. He suffers a -6 to all physical tasks that require vision (GM&rsquo;s call). On the plus side, Blind characters gain their choice of a free @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01edges000000000]{Edge} to compensate for this particularly difficult @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}.</p>"
+    },
+    "Stubborn": {
+      "name": "Упрямство",
+      "description": "<p>Stubborn individuals always want their way and never admit they&rsquo;re wrong. Even when it&rsquo;s painfully obvious they&rsquo;ve made a mistake they try to justify it with half-truths and rationalizations.</p>"
+    },
+    "Doubting Thomas": {
+      "name": "Фома неверующий",
+      "description": "<p>Some people don&rsquo;t believe in the supernatural until they&rsquo;re halfway down some creature&rsquo;s gullet. Doubting Thomases are skeptics who try their best to rationalize supernatural events. They walk right into danger they don&rsquo;t believe in and look for alternate explanations to every supernatural event. </p>\n<p>Even after being confronted with undeniable truth, the doubter&rsquo;s mind eventually begins to doubt what he saw, rationalizes it away, or compartmentalizes the event as &ldquo;one of a kind&rdquo; while continuing to doubt the next mystery.</p>"
+    },
+    "Hesitant": {
+      "name": "Медлительность",
+      "description": "<p>Your hero hesitates in stressful situations. Draw two @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03actioncardsi00]{Action Cards} in @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03combat00000000]{combat} and @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03actions0000000]{act} on the lowest. If you draw a Joker, use it normally and ignore the @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} for the round (hence this being a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, it actually increases your chances of drawing a Joker!)</p>\n<p> Hesitant characters cannot take the @Compendium[swade-core-rules.swade-edges.Quick]{Quick} or @Compendium[swade-core-rules.swade-edges.Level Headed]{Level Headed} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01edges000000000]{Edges}.</p>",
+      "effects": {
+        "Hesitant": {
+          "name": "Hesitant"
+        }
+      }
+    },
+    "Vow": {
+      "name": "Клятва",
+      "description": "<p>(MINOR OR MAJOR)</p>\n<p>The character has sworn an oath to someone or something he believes in.</p>\n<p>The danger in fulfilling the Vow and how often it might occur determines the level of the @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}. A @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} Vow might be to serve an order with a broad mandate that rarely conflicts with the party&rsquo;s goals.</p>\n<p>A @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} Vow makes long-term and frequent demands on the servant&rsquo;s time and results in great risks to his life.</p>"
+    },
+    "Bloodthirsty": {
+      "name": "Жажда крови",
+      "description": "<p>Your hero never takes prisoners unless under the direct supervision of a superior. His cold-blooded ruthlessness causes enemies to respond in kind, often costs vital information, creates constant enemies, and may get him in trouble with his superiors or the authorities, depending on the setting.</p>"
+    },
+    "Big Mouth": {
+      "name": "Длинный язык",
+      "description": "<p>Loose lips sink ships, the saying goes. This hero&rsquo;s mouth could drown an armada. The blabbermouth can&rsquo;t keep a secret very well. He reveals plans and gives away things best kept among friends, usually at the worst possible times</p>"
+    },
+    "Driven": {
+      "name": "Одержимость идеей",
+      "description": "<p>(MINOR OR MAJOR)</p>\n<p>A vow is a commitment to others. Driven characters want something for themselves. It may be to protect the realm, become a decorated officer, prove you&rsquo;re the best gladiator in Rome, or the best pilot in the galactic fleet. </p>\n<p>The @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} version shapes the character and pushes his decisions but either happens rarely or is fairly harmless. As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} it&rsquo;s an overriding desire that comes up frequently or causes peril for the heroine and those around her.</p>"
+    },
+    "One Eye": {
+      "name": "Отсутствие глаза",
+      "description": "<p>This veteran lost an eye and has trouble with depth perception. He subtracts 2 from any @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#trait-rolls]{Trait roll} dependent on vision and more than 5&Prime; (10 yards) distant.</p>"
+    },
+    "Delusional": {
+      "name": "Заблуждение",
+      "description": "<p>(MINOR OR MAJOR)</p>\n<p>Your hero believes something that is considered quite strange by everyone else. @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} Delusions are harmless or the character generally keeps it to himself (the government puts sedatives in soft drinks, dogs can talk, we&rsquo;re all just characters in some bizarre game, etc.). </p>\n<p>With a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} Delusion, he expresses his view on the situation frequently and it can occasionally lead to danger (the government is run by aliens, hospitals are deadly, I&rsquo;m allergic to armor, zombies are my friends).</p>"
+    },
+    "Outsider": {
+      "name": "Чужак",
+      "description": "<p>(MINOR OR MAJOR)</p>\n<p>In a society made up of only a few types of people, your hero isn&rsquo;t one of them. A Native American in a Western town, an alien in a scifi game of human marines, or a half-orc in a party of elves, dwarves, and humans are all examples. Locals are likely to raise prices on her, ignore pleas for help, and generally treat her as lower class.<br /></p>\n<p>Outsiders subtract 2 from @Compendium[swade-core-rules.swade-skills.Persuasion]{Persuasion} @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03traitrolls0000]{rolls} made to influence those who aren&rsquo;t her own kind. The @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} version also means the character has few or no legal rights in the main campaign area. She might be a different species among xenophobes, the civilization may be cruel and unenlightened toward strangers, or she might even be an artificial intelligence whose sapience isn&rsquo;t acknowledged by the law.</p>",
+      "effects": {
+        "Outsider": {
+          "name": "Outsider"
+        }
+      }
+    },
+    "Arrogant": {
+      "name": "Заносчивость",
+      "description": "<p>Your hero doesn&rsquo;t think he&rsquo;s the best&mdash;he knows he is. Whether it&rsquo;s swordsmanship, kung fu, or painting, few compare to his skills and he flaunts it every chance he gets. Winning isn&rsquo;t enough for this champion. He wants to dominate his opponent and prove there&rsquo;s no one better. He&rsquo;s the kind of fighter who disarms an opponent in a duel just to pick the sword up and hand it back with a smirk. Arrogant individuals look for the greatest threat in battle, hacking their way through lesser minions only because they&rsquo;re in the way.</p>"
+    },
+    "Suspicious": {
+      "name": "Паранойя",
+      "description": "<p>(MINOR OR MAJOR)</p>\n<p>Your character is suspicious of everyone. As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, his paranoia causes frequent trust issues. He might demand full payment before doing a task, want every agreement in writing, or believe even his friends are out to get him.</p>\n<p> As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03support0000000]{Support} @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03traitrolls0000]{rolls} to aid the distrustful individual are made at -2.</p>"
+    },
+    "Tongue-Tied": {
+      "name": "Косноязычие",
+      "description": "<p>Your adventurer flubs cool lines (or thinks of them afterwards!), goes off on tangents when he&rsquo;s trying to talk someone into something, and generally miscommunicates most everything he says. He suffers a -1 @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03traitrolls0000]{penalty} to @Compendium[swade-core-rules.swade-skills.Intimidation]{Intimidation}, @Compendium[swade-core-rules.swade-skills.Performance]{Performance}, @Compendium[swade-core-rules.swade-skills.Persuasion]{Persuasion}, and @Compendium[swade-core-rules.swade-skills.Taunt]{Taunt} rolls that involve speech.</p>",
+      "effects": {
+        "Tongue Tied": {
+          "name": "Tongue Tied",
+          "description": "<p>Your adventurer flubs cool lines (or thinks of them afterwards!), goes off on tangents when he’s trying to talk someone into something, and generally miscommunicates most everything he says. He suffers a -1 @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03traitrolls0000]{penalty} to @Compendium[swade-core-rules.swade-skills.Intimidation]{Intimidation}, @Compendium[swade-core-rules.swade-skills.Performance]{Performance}, @Compendium[swade-core-rules.swade-skills.Persuasion]{Persuasion}, and @Compendium[swade-core-rules.swade-skills.Taunt]{Taunt} rolls that involve speech.</p>"
+        }
+      }
+    },
+    "Obese": {
+      "name": "Полнота",
+      "description": "<p>Those who carry their weight well have the @Compendium[swade-core-rules.swade-edges.Brawny]{Brawny} Edge. Those who don&rsquo;t are Obese. A character cannot be both @Compendium[swade.edges.Brawny]{Brawny} and Obese, and this @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} can&rsquo;t increase your @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Size} above +3. </p>\n<p>An Obese hero&rsquo;s @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Size} (and therefore @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Toughness}) increase by +1. His @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{Pace} is reduced by 1, and his @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{running die} by one die type (minimum d4). @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Strength} is considered one die type less (minimum d4) for armor and worn gear (not weapons). They may also have difficulty finding armor or @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02commongearta00]{clothing} that fits or entering confined spaces.</p>",
+      "effects": {
+        "Obese": {
+          "name": "Obese",
+          "description": "<p>Those who carry their weight well have the @Compendium[swade-core-rules.swade-edges.Brawny]{Brawny} Edge. Those who don’t are Obese. A character cannot be both @Compendium[swade.edges.Brawny]{Brawny} and Obese, and this @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} can’t increase your @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Size} above +3. </p>\n<p>An Obese hero’s @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Size} (and therefore @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Toughness}) increase by +1. His @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{Pace} is reduced by 1, and his @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{running die} by one die type (minimum d4). @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Strength} is considered one die type less (minimum d4) for armor and worn gear (not weapons). They may also have difficulty finding armor or @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02commongearta00]{clothing} that fits or entering confined spaces.</p>"
+        }
+      }
+    },
+    "Ruthless": {
+      "name": "Жестокость",
+      "description": "<p>(MINOR OR MAJOR)</p>\n<p>The fanatic will do most anything to accomplish her goals. As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, she harms anyone and everyone who gets in her way. As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} Hindrance, she stops short of true harm to anyone except those who directly oppose her.</p>"
+    },
+    "Greedy": {
+      "name": "Жадность",
+      "description": "<p>(MINOR OR MAJOR)</p>\n<p>A miser measures worth in material possessions or wealth. If a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} Hindrance, he argues bitterly for more than his fair share of any loot or reward the party might come across. As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, he fights over anything he considers unfair, and may even kill for it if he feels slighted or covets something he cannot have.</p>"
+    },
+    "Impulsive": {
+      "name": "Импульсивность",
+      "description": "<p>The daredevil almost always leaps before he looks. He rarely thinks things through before taking action.</p>"
+    },
+    "Anemic": {
+      "name": "Болезненность",
+      "description": "<p>Anemic characters are particularly susceptible to sickness, disease, environmental effects, and fatigue. They subtract 2 from @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Vigor} rolls made to resist @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03fatigue0000000]{Fatigue} (see @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04hazards0000000]{Hazards}).</p>"
+    },
+    "Vengeful": {
+      "name": "Мстительность",
+      "description": "<p>(MINOR OR MAJOR)</p>\n<p>Payback is&hellip; well&hellip; bad news for someone, and this adventurer is going to get it.</p>\n<p>As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} she usually seeks vengeance legally. The method varies by situation. Some plot and scheme for months while others demand immediate results.</p>\n<p>Those with the @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} version of this @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} don&rsquo;t let anything prevent them from a reckoning. This doesn&rsquo;t mean they immediately resort to violence, but their actions always escalate until total and complete satisfaction is achieved.</p>"
+    },
+    "Bad Luck": {
+      "name": "Невезение",
+      "description": "<p>Your hero is a little less lucky than most. He gets one less @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03bennies0000000]{Benny} per game session than normal. A character cannot have both Bad Luck and the @UUID[Compendium.swade-core-rules.swade-edges.Item.7huwXlataZ2OaQXL]{Luck} Edge.</p>",
+      "effects": {
+        "Bad Luck": {
+          "name": "Bad Luck"
+        }
+      }
+    },
+    "Pacifist": {
+      "name": "Пацифизм",
+      "description": "<p>(MINOR OR MAJOR)</p>\n<p>Your hero absolutely despises violence. Minor pacifism means he only fights when given no other choice and never allows the killing of prisoners or other defenseless victims.</p>\n<p>Major Pacifists won&rsquo;t fight living characters under any circumstances. They may defend themselves, but won&rsquo;t do anything to permanently harm sapient, living creatures. They may use @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0]{nonlethal} methods, but only in self-defense or the defense of others. Note that undeniably evil creatures, undead, demons, and the like are fair game even for @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} Pacifists!</p>"
+    },
+    "Can't Swim": {
+      "name": "Неумение плавать",
+      "description": "<p>Most people in the 21st century can swim thanks to swimming pools, easy travel to lakes and beaches, or educational efforts. Historically, however, those who weren&rsquo;t raised around a temperate body of water could not. @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Characters} with this @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} suffer a -2 penalty to the @Compendium[swade-core-rules.swade-skills.Athletics]{Athletics} skill when swimming and each inch moved in water costs 3&Prime; of @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{Pace}. See <strong>@UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{Movement}</strong> for more details and @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04drowning000000]{Drowning}.</p>",
+      "effects": {
+        "Can't Swim": {
+          "name": "Can't Swim",
+          "description": "<p>Most people in the 21st century can swim thanks to swimming pools, easy travel to lakes and beaches, or educational efforts. Historically, however, those who weren’t raised around a temperate body of water could not. @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Characters} with this @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} suffer a -2 penalty to the @Compendium[swade-core-rules.swade-skills.Athletics]{Athletics} skill when swimming and each inch moved in water costs 3″ of @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{Pace}. See <strong>@UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{Movement}</strong> for more details and @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04drowning000000]{Drowning}.</p>"
+        }
+      }
+    },
+    "Death Wish": {
+      "name": "Самопожертвование",
+      "description": "<p>Having a death wish doesn&rsquo;t mean your adventurer is suicidal&mdash;he might just think his life is worth less than some noble but clearly deadly goal. Those with a Death Wish don&rsquo;t throw their lives away for no reason, but when there&rsquo;s a chance to complete a goal they do anything&mdash;and take any risk&mdash;to achieve it.</p>"
+    },
+    "Jealous": {
+      "name": "Зависть",
+      "description": "<p>(MINOR OR MAJOR)</p>\n<p>Insecurity leads to envy of others&rsquo; accomplishments or being overly possessive of what this disgruntled soul feels belongs to him. He often complains, pouts, covets others&rsquo; possessions or accolades, claims credit for another&rsquo;s work, disobeys commands, and generally causes problems.</p>\n<p>As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, the character&rsquo;s jealousy is focused on one particular subject (such as his &ldquo;unrivaled&rdquo; skill as a pilot or a romantic interest).</p>\n<p>As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, the character is jealous of anyone and everyone he feels outshines him. He consistently bad-mouths his rivals, tries to upstage them, or actively plots to discredit those who threaten his ego.</p>"
+    },
+    "Mean": {
+      "name": "Дурной характер",
+      "description": "<p>This curmudgeon is ill-tempered and disagreeable. He has trouble doing anything kind for anyone else, must be paid for his troubles, and doesn&rsquo;t accept awards or favors graciously. Besides the obvious roleplaying issues, Mean characters subtract 1 from @Compendium[swade-core-rules.swade-skills.Persuasion]{Persuasion} @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03traitrolls0000]{rolls}.</p>",
+      "effects": {
+        "Mean": {
+          "name": "Mean",
+          "description": "<p>This curmudgeon is ill-tempered and disagreeable. He has trouble doing anything kind for anyone else, must be paid for his troubles, and doesn’t accept awards or favors graciously. Besides the obvious roleplaying issues, Mean characters subtract 1 from @Compendium[swade-core-rules.swade-skills.Persuasion]{Persuasion} @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03traitrolls0000]{rolls}.</p>"
+        }
+      }
+    },
+    "Clumsy": {
+      "name": "Неуклюжесть",
+      "description": "<p>Your hero is an uncoordinated klutz who trips over air and is always the last one picked for sports. He subtracts 2 from @Compendium[swade-core-rules.swade-skills.Athletics]{Athletics} and @Compendium[swade-core-rules.swade-skills.Stealth]{Stealth} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#trait-rolls]{rolls}.</p>"
+    },
+    "Timid": {
+      "name": "Трусость",
+      "description": "<p>Not everyone has ice water in their veins. Your hero is squeamish at the sight of blood and gore and terrified of coming to harm. He subtracts 2 from @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04fear0000000000]{Fear}&nbsp;checks and when resisting @Compendium[swade-core-rules.swade-skills.Intimidation]{Intimidation}.</p>",
+      "effects": {
+        "Timid": {
+          "name": "Timid",
+          "description": "<p>Not everyone has ice water in their veins. Your hero is squeamish at the sight of blood and gore and terrified of coming to harm. He subtracts 2 from @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04fear0000000000]{Fear} checks and when resisting @Compendium[swade-core-rules.swade-skills.Intimidation]{Intimidation}.</p>"
+        }
+      }
+    },
+    "One Arm": {
+      "name": "Отсутствие руки",
+      "description": "<p>By birth or battle, your hero has lost an arm. Fortunately, his other arm is (now) his &ldquo;good&rdquo; one. Tasks that require two hands, such as some @Compendium[swade-core-rules.swade-skills.Athletics]{Athletics} @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03traitrolls0000]{rolls} (GM&rsquo;s call) or using a two-handed weapon, suffer a -4 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#trait-rolls]{modifier}.</p>"
+    },
+    "Secret": {
+      "name": "Секрет",
+      "description": "<p>(MINOR OR MAJOR)</p>\n<p>Your hero has a secret she keeps to protect herself or others. As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, the secret is troublesome but not life-threatening. The @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} version would cause severe problems if discovered. If it ever becomes public knowledge, she should trade it for @Compendium[swade-core-rules.swade-hindrances.Enemy]{Enemy}, @Compendium[swade-core-rules.swade-hindrances.Shamed]{Shamed}, @Compendium[swade-core-rules.swade-hindrances.Wanted]{Wanted}, or another appropriate @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} approved by the GM.</p>"
+    },
+    "Ugly": {
+      "name": "Уродство",
+      "description": "<p>(MINOR OR MAJOR)</p>\n<p>@Compendium[swade-core-rules.swade-edges.Attractive]{Attractive} people get all the breaks. This unfortunate individual isn&rsquo;t one of them. He subtracts 1 from his @Compendium[swade-core-rules.swade-skills.Persuasion]{Persuasion} @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03traitrolls0000]{rolls}, or 2 if taken as a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}.</p>",
+      "effects": {
+        "Ugly (Minor)": {
+          "name": "Ugly (Minor)",
+          "description": "<p>@Compendium[swade-core-rules.swade-edges.Attractive]{Attractive} people get all the breaks. This unfortunate individual isn’t one of them. He subtracts 1 from his @Compendium[swade-core-rules.swade-skills.Persuasion]{Persuasion} @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03traitrolls0000]{rolls}.</p>"
+        },
+        "Ugly (Major)": {
+          "name": "Ugly (Major)",
+          "description": "<p>@Compendium[swade-core-rules.swade-edges.Attractive]{Attractive} people get all the breaks. This unfortunate individual isn’t one of them. He subtracts 2 from his @Compendium[swade-core-rules.swade-skills.Persuasion]{Persuasion} @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03traitrolls0000]{rolls} as a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}.</p>"
+        }
+      }
+    },
+    "Elderly": {
+      "name": "Старость",
+      "description": "<p>Your adventurer is getting on in years, but he&rsquo;s not quite ready for the nursing home yet. His @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{Pace} is reduced by 1, and he subtracts 1 from @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{running rolls} (minimum 1). He also suffers a -1 penalty to @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Agility}, @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Strength}, and @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Vigor} rolls, but not their linked @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{skills}. </p>\n<p>On the plus side, the wisdom of his years grants the hero 5 extra @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{skill points} which may be used for any @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{skills} linked to @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01traits00000000]{Smarts}.</p>",
+      "effects": {
+        "Elderly": {
+          "name": "Elderly"
+        }
+      }
+    },
+    "Slow": {
+      "name": "Хромота",
+      "description": "<p>(MINOR OR MAJOR)</p>\n<p>A disability or past injury has hindered this hero&rsquo;s mobility. As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, reduce his @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{Pace} by 1 and his @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{running die} one step (if already d4, reduce to d4-1). As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} Hindrance, reduce the running die&nbsp;a step, @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{Pace} by 2, and subtract 2 from @Compendium[swade-core-rules.swade-skills.Athletics]{Athletics} rolls and rolls to resist @Compendium[swade-core-rules.swade-skills.Athletics]{Athletics} (such as @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Tests} or @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03grappling00000]{Grappling}).<br /></p>\n<p>Slow characters may not take the @Compendium[swade-core-rules.swade-edges.Fleet-Footed]{Fleet-Footed} Edge</p>\n<p><strong>Prosthesis:&nbsp;</strong>A character with the @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} version of this @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} may have a prosthesis. If the prosthesis is lost, he suffers the effects of the @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} version of Slow.</p>\n<p><strong>Wheelchairs: </strong>From about the Victorian era forward, Slow heroes may start with a manual wheelchair at no cost. In the modern era (1980s and on), the character may also choose from an ultralight or powered chair. All wheelchairs require reasonably smooth ground to operate (GM&rsquo;s call).</p>\n<ul>\n<li>MANUAL: @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{Pace} is half @Compendium[swade-core-rules.swade-skills.Athletics]{Athletics} die (max of 3) and cannot run</li>\n<li>ULTRALIGHT: @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{Pace} is half @Compendium[swade-core-rules.swade-skills.Athletics]{Athletics} die and may run at d4 (Minor) or d4-1 (Major)</li>\n<li>POWERED: @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{Pace} 6 on flat, even ground, Pace 3 on uneven ground, cannot run. Most powered chairs can go about 10 miles before requiring a recharge.</li>\n</ul>",
+      "effects": {
+        "Slow (Minor)": {
+          "name": "Slow (Minor)",
+          "description": "<p>A disability or past injury has hindered this hero’s mobility. As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, reduce his @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{Pace} by 1 and his @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{running die} one step (if already d4, reduce to d4-1).</p>\n<p>Slow characters may not take the @Compendium[swade-core-rules.swade-edges.Fleet-Footed]{Fleet-Footed} Edge</p>\n<p><strong>Prosthesis: </strong>A character with the @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} version of this @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} may have a prosthesis. If the prosthesis is lost, he suffers the effects of the @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} version of Slow.</p>"
+        },
+        "Slow (Major)": {
+          "name": "Slow (Major)",
+          "description": "<p>A disability or past injury has hindered this hero’s mobility. As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} Hindrance, reduce the running die a step, @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03movement000000]{Pace} by 2, and subtract 2 from @Compendium[swade-core-rules.swade-skills.Athletics]{Athletics} rolls and rolls to resist @Compendium[swade-core-rules.swade-skills.Athletics]{Athletics} (such as @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Tests} or @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03grappling00000]{Grappling}).</p>\n<p>Slow characters may not take the @Compendium[swade-core-rules.swade-edges.Fleet-Footed]{Fleet-Footed} Edge</p>\n<p><strong>Prosthesis: </strong>A character with the @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} version of this @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} may have a prosthesis. If the prosthesis is lost, he suffers the effects of the @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} version of Slow.</p>"
+        }
+      }
+    },
+    "Heroic": {
+      "name": "Героизм",
+      "description": "<p>This noble soul never says no to a person in need. She doesn&rsquo;t have to be happy about it,but she always comes to the rescue of those she feels can&rsquo;t help themselves. She&rsquo;s the first one to run into a burning building, usually agrees to hunt monsters for little or no pay, and is generally a pushover for a sob story.</p>"
+    },
+    "Poverty": {
+      "name": "Транжира",
+      "description": "<p>It&rsquo;s said a fool and his money are soon parted. Your hero is one of them. He starts with half the usual @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{money} for your @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04settingrules00]{setting} and just can&rsquo;t seem to hang on to funds acquired after play begins. In general, the player halves his total funds every game week.</p>"
+    },
+    "Clueless": {
+      "name": "Рассеянность",
+      "description": "<p>Your hero doesn&rsquo;t pay much attention to the world around him and can&rsquo;t seem to find a haystack in a small pile of needles. He suffers a -1 @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03traitrolls0000]{penalty} to @Compendium[swade-core-rules.swade-skills.Common Knowledge]{Common Knowledge} and @Compendium[swade-core-rules.swade-skills.Notice]{Notice} rolls.</p>",
+      "effects": {
+        "Clueless": {
+          "name": "Clueless"
+        }
+      }
+    },
+    "Hard of Hearing": {
+      "name": "Тугоухость",
+      "description": "<p>(MINOR OR MAJOR)</p>\n<p>Characters who have lost some or all of their hearing have this disadvantage. As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, it subtracts 4 from all @Compendium[swade-core-rules.swade-skills.Notice]{Notice} @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03traitrolls0000]{rolls} made to hear, including awaking due to loud noises. A @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} means the character is deaf. She cannot hear and automatically fails all @Compendium[swade-core-rules.swade-skills.Notice]{Notice} @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03traitrolls0000]{rolls} that depend on hearing.</p>\n<p>Hearing aids reduce the penalty by 2, but require batteries and have a 50% chance of falling out when he&rsquo;s @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wounded}, @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04hazards0000000]{falls}, or suffers some other @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04hazards0000000]{trauma}.</p>",
+      "effects": {
+        "Hard of Hearing": {
+          "name": "Hard of Hearing",
+          "description": "<p>(MINOR OR MAJOR)</p>\n<p>Characters who have lost some or all of their hearing have this disadvantage. As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, it subtracts 4 from all @Compendium[swade-core-rules.swade-skills.Notice]{Notice} @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03traitrolls0000]{rolls} made to hear, including awaking due to loud noises. A @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} means the character is deaf. She cannot hear and automatically fails all @Compendium[swade-core-rules.swade-skills.Notice]{Notice} @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03traitrolls0000]{rolls} that depend on hearing.</p>\n<p>Hearing aids reduce the penalty by 2, but require batteries and have a 50% chance of falling out when he’s @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wounded}, @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04hazards0000000]{falls}, or suffers some other @UUID[Compendium.swade-core-rules.swade-rules.swadecor04theadv.JournalEntryPage.04hazards0000000]{trauma}.</p>"
+        }
+      }
+    },
+    "Thin Skinned": {
+      "name": "Обидчивость",
+      "description": "<p>(MINOR OR MAJOR)</p>\n<p>Personal attacks really get under this individual&rsquo;s skin. As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, he subtracts 2 when resisting @Compendium[swade-core-rules.swade-skills.Taunt]{Taunt} attacks. As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major}, he subtracts 4.</p>",
+      "effects": {
+        "Thin Skinned (Minor)": {
+          "name": "Thin Skinned (Minor)",
+          "description": "<p>Personal attacks really get under this individual’s skin. As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, he subtracts 2 when resisting @Compendium[swade-core-rules.swade-skills.Taunt]{Taunt} attacks.</p>"
+        },
+        "Thin Skinned (Major)": {
+          "name": "Thin Skinned (Major)",
+          "description": "<p>Personal attacks really get under this individual’s skin. As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, he subtracts 4 when resisting @Compendium[swade-core-rules.swade-skills.Taunt]{Taunt} attacks.</p>"
+        }
+      }
+    },
+    "Illiterate": {
+      "name": "Неграмотность",
+      "description": "<p>Your hero cannot read. He can sign his name and knows what a STOP sign says, but little else. He also doesn&rsquo;t know much about math. He can probably do 2&thinsp;+&thinsp;2&thinsp;=&thinsp;4, but multiplication and the like are beyond him.</p>\n<p>Illiterate characters can&rsquo;t read or write in any language, by the way, no matter how many they actually speak.</p>"
+    },
+    "Bad Eyes": {
+      "name": "Плохое зрение",
+      "description": "<p>(MINOR OR MAJOR)</p><p>Your hero’s eyes aren’t what they used to be. He suffers a -1 penalty to any @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#trait-rolls]{Trait rolls} dependent on vision (such as ranged attacks and @Compendium[swade-core-rules.swade-skills.Notice]{Notice} rolls) or -2 as a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}.<br /></p><p>In settings where glasses are available, they negate the penalty when worn. If lost or broken during a combat (generally a 50% chance when he’s @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wounded}, falls, or suffers some other trauma), the character is @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03distractedan00]{Distracted} (and @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03distractedan00]{Vulnerable} if a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}) until the end of their next turn.</p>",
+      "effects": {
+        "Bad Eyes (Minor)": {
+          "name": "Bad Eyes (Minor)",
+          "description": "<p>(MINOR OR MAJOR)</p>\n<p>Your hero’s eyes aren’t what they used to be. He suffers a -1 penalty to any @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#trait-rolls]{Trait rolls} dependent on vision (such as ranged attacks and @Compendium[swade-core-rules.swade-skills.Notice]{Notice} rolls)<br></p>\n<p>In settings where glasses are available, they negate the penalty when worn. If lost or broken during a combat (generally a 50% chance when he’s @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wounded}, falls, or suffers some other trauma), the character is @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03distractedan00]{Distracted} until the end of their next turn.</p>"
+        },
+        "Bad Eyes (Major)": {
+          "name": "Bad Eyes (Major)",
+          "description": "<p>(MINOR OR MAJOR)</p>\n<p>Your hero’s eyes aren’t what they used to be. He suffers a -2 penalty to any @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#trait-rolls]{Trait rolls} dependent on vision (such as ranged attacks and @Compendium[swade-core-rules.swade-skills.Notice]{Notice} rolls) as a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}.<br></p>\n<p>In settings where glasses are available, they negate the penalty when worn. If lost or broken during a combat (generally a 50% chance when he’s @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wounded}, falls, or suffers some other trauma), the character is @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03distractedan00]{Distracted and Vulnerable} as a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} until the end of their next turn.</p>"
+        }
+      }
+    },
+    "Phobia": {
+      "name": "Фобия",
+      "description": "<p>Phobias are overwhelming and irrational fears that plague a hero&rsquo;s psyche. </p>\n<p>Whenever a character is in the presence of his phobia (GM&rsquo;s call, but generally sight), he subtracts 1 from all his @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#trait-rolls]{Trait rolls} if it&rsquo;s a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, and 2 if it&rsquo;s @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major}.</p>\n<p>Phobias shouldn&rsquo;t be too obvious; everyone should be afraid of vampires, for example, so it&rsquo;s not a phobia, it&rsquo;s common sense. Instead, the phobia usually centers on some random element the mind associates with the event. Remember, phobias are irrational fears.</p>",
+      "effects": {
+        "Phobia (Minor)": {
+          "name": "Phobia (Minor)",
+          "description": "<p>Phobias are overwhelming and irrational fears that plague a hero’s psyche. </p>\n<p>Whenever a character is in the presence of his phobia (GM’s call, but generally sight), he subtracts 1 from all his @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#trait-rolls]{Trait rolls}if it’s a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance},\n</p><p>Phobias shouldn’t be too obvious; everyone should be afraid of vampires, for example, so it’s not a phobia, it’s common sense. Instead, the phobia usually centers on some random element the mind associates with the event. Remember, phobias are irrational fears.</p>"
+        },
+        "Phobia (Major)": {
+          "name": "Phobia (Major)",
+          "description": "<p>Phobias are overwhelming and irrational fears that plague a hero’s psyche. </p>\n<p>Whenever a character is in the presence of his phobia (GM’s call, but generally sight), he subtracts 2 from all his @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#trait-rolls]{Trait rolls} if it’s a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance},\n</p><p>Phobias shouldn’t be too obvious; everyone should be afraid of vampires, for example, so it’s not a phobia, it’s common sense. Instead, the phobia usually centers on some random element the mind associates with the event. Remember, phobias are irrational fears.</p>"
+        }
+      }
+    },
+    "Shamed": {
+      "name": "Позор",
+      "description": "<p>(MINOR OR MAJOR)</p>\n<p>Something haunts your adventurer. Maybe he made a vow he didn&rsquo;t keep. Maybe he was defeated in an honorable fight and ordered the death of his foe anyway for some greater principle. Maybe he isn&rsquo;t actually cowardly but once ran from a battle and left others to die. </p>\n<p>As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, the shameful circumstances aren&rsquo;t generally known&mdash;it just haunts the hero. He might go out of his way, against all reason, not to repeat the mistake. Or he might give in to the same set of circumstances and hate himself for it. </p>\n<p>As a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance}, his deed is wellknown&mdash;or at least known among those he cares about. The other player characters should be told the tale as soon as possible (preferably at character creation). If not, it should be revealed by @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03wildcardsand00]{nonplayer characters} at some point, and occasionally used against the hero.</p>"
+    },
+    "Quirk": {
+      "name": "Причуда",
+      "description": "<p>This individual has some minor foible that is usually humorous but can occasionally cause him real trouble. A swashbuckler may always try to slash his initials on his foes, a dwarf may brag constantly about his culture, or a snobby d&eacute;butante might not eat, drink, or socialize with the lower class, for example.</p>"
+    },
+    "Curious": {
+      "name": "Любопытство",
+      "description": "<p>It killed the cat, and it might kill your warrior as well. Curious characters have to check out everything and always want to know what&rsquo;s behind a potential mystery or secret.</p>"
+    },
+    "All Thumbs": {
+      "name": "Кривые руки",
+      "description": "<p>Due to upbringing, lack of exposure, or pure bad luck, some individuals are &ldquo;all thumbs&rdquo; when it comes to mechanical or technological devices.</p>\n<p>All Thumbs inflicts a -2 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#trait-rolls]{penalty} when using mechanical or electrical devices. If he rolls a @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#trait-rolls]{Critical Failure} while using such a device (and it doesn&rsquo;t already have a built-in effect), it&rsquo;s broken. If the GM feels it&rsquo;s appropriate, it can be fixed with a @Compendium[swade-core-rules.swade-skills.Repair]{Repair} roll and 1d6 hours.</p>"
+    },
+    "Mute": {
+      "name": "Немота",
+      "description": "<p>Due to trauma or birth, your character has lost the ability to speak. He can write messages to others when needed, use sign language, or some combination of visual communication.</p>\n<p>Vison-based communication may require a @Compendium[swade-core-rules.swade-skills.Notice]{Notice} roll to perceive correctly (@UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03illumination00]{illumination} and similar @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03traitrolls0000]{penalties} apply).</p>"
+    },
+    "Wanted": {
+      "name": "В розыске",
+      "description": "<p>(MINOR OR MAJOR)</p>\n<p>Your hero has committed some crime and will be arrested if discovered by the authorities. This assumes the setting actually has laws and police officers to enforce them.</p>\n<p>The level of the @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01hindrances0000]{Hindrance} depends on how serious the crime was and how active the hunters are. A hero with numerous unpaid parking tickets (in a game where he might have to drive occasionally) has a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Minor} Hindrance, as does someone wanted for more serious crimes away from the main campaign area. Being accused of murder is a @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} Hindrance in almost any setting if there&rsquo;s someone around to seek justice (or vengeance).</p>"
+    },
+    "Overconfident": {
+      "name": "Самоуверенность",
+      "description": "<p>There&rsquo;s nothing out there your hero can&rsquo;t defeat. At least that&rsquo;s what he thinks. He believes he can do most anything and never wants to retreat from a challenge. He&rsquo;s not suicidal, but he certainly takes on more than common sense dictates.</p>"
+    },
+    "Loyal": {
+      "name": "Верный друг",
+      "description": "<p>This stalwart defender risks her life for her friends without hesitation. Some Loyal heroes may not act that way, but are the first to come to their friends&rsquo; rescue when they&rsquo;re threatened.</p>"
+    },
+    "Obligation": {
+      "name": "Обязательства",
+      "description": "<p>(MINOR OR MAJOR)</p>\n<p>Your hero has a responsibility she must attend to on a daily or regular basis. It could be a job, volunteer work, taking care of family or friends, etc.</p>\n<p>The Obligation consumes about 20 hours most weeks, or 40 + for the @UUID[Compendium.swade-core-rules.swade-rules.swadecor01charac.JournalEntryPage.01characters0000]{Major} version. Exactly what that entails should be discussed between the player and the Game Master.</p>"
     }
   }
 }

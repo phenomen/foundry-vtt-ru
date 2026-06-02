@@ -1,4 +1,4 @@
-import { setupBabele, translateValue } from "../babele-helpers.js";
+import { createLookupConverter, registerCompendiumTranslations } from "../babele-helpers.js";
 
 const CLASSES = {
   Assassins: "Душегубы",
@@ -20,8 +20,6 @@ const CLASSES = {
 };
 
 export function init() {
-  setupBabele("blades-in-the-dark");
-
   Hooks.on("ready", () => {
     if (game.system.version.startsWith("4")) {
       ui.notifications.warn(
@@ -31,13 +29,12 @@ export function init() {
   });
 }
 
+export function registerBabeleTranslations(babele) {
+  registerCompendiumTranslations(babele, "blades-in-the-dark");
+}
+
 export function registerBabeleConverters(babele) {
   babele.registerConverters({
-    convertClass: (cls) => {
-      if (!cls) {
-        return;
-      }
-      return translateValue(cls, CLASSES);
-    },
+    convertClass: createLookupConverter(CLASSES),
   });
 }
