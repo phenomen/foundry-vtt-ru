@@ -1,40 +1,110 @@
-import { setupBabele } from "../shared.js";
+import {
+  getCompendiumRuntime,
+  registerCompendiumTranslations,
+  translatedItemEntryFromPack,
+} from "../babele-helpers.js";
 
-export function init() {
-  setupBabele("crucible");
-  registerConverters();
+export function registerBabeleTranslations(babele) {
+  registerCompendiumTranslations(babele, "crucible");
 }
 
-function registerConverters() {
-  if (!game.babele) {
-    return;
+/**
+ * Crucible actor detail blocks use `identifier` (e.g. `human`) while Babele entries are
+ * keyed by compendium item names (e.g. `Human`).
+ *
+ * @param {string} identifier
+ * @returns {string|null}
+ */
+function compendiumEntryNameFromIdentifier(identifier) {
+  if (!identifier || typeof identifier !== "string") {
+    return null;
   }
 
-  /**
-   * Crucible stores `Item.system.description` as a string for talents, spells
-   * and summons, but as an object `{ public, private }` for equipment (weapons,
-   * armor, consumables). Babele's built-in primitive converter cannot translate
-   * this dual shape, which leaves equipment items untranslated when imported
-   * (most visibly inside actor inventories).
-   *
-   * The translation file stores the translated description under
-   * `descriptionPublic` for the object shape and `description` for the string
-   * shape. This converter reads both keys from the field-level translations
-   * and returns whichever matches the original shape.
-   */
-  game.babele.registerConverters({
-    convertDescription: (originalValue, _fieldTranslations, data, _tc, translations) => {
-      const t = translations ?? {};
-      if (typeof originalValue === "string") {
-        return typeof t.description === "string" ? t.description : originalValue;
+  return identifier.charAt(0).toUpperCase() + identifier.slice(1);
+}
+
+/**
+ * Merges translated `name` and `description` onto a Crucible `system.details.*` block.
+ *
+ * Actor detail data stores `description` on the root object, not `system.description` like
+ * compendium Items. Babele's `document` + `Item` mapping does not apply here reliably.
+ *
+ * @param {object} detail - Source synthetic detail item from the actor.
+ * @param {object} [options]
+ * @param {object} [options.runtime] - Babele runtime from the converter context.
+ * @param {string} [options.packId] - Compendium to resolve (e.g. `crucible.ancestry`).
+ * @param {unknown} [options.fieldTranslation] - Per-actor override fragment from Babele.
+ * @returns {object}
+ */
+function translateEmbeddedDetail(detail, options = {}) {
+  const { runtime, packId, fieldTranslation } = options;
+
+  if (!detail || typeof detail !== "object" || Array.isArray(detail)) {
+    return detail;
+  }
+
+  const scope = getCompendiumRuntime(runtime);
+  const result = { ...detail };
+
+  const applyEntry = (entry) => {
+    if (!entry || typeof entry !== "object" || Array.isArray(entry)) {
+      return;
+    }
+
+    if (entry.name) {
+      result.name = entry.name;
+    }
+
+    if (entry.description) {
+      result.description = entry.description;
+    }
+  };
+
+  if (scope && packId) {
+    const matchNames = [];
+    const fromIdentifier = compendiumEntryNameFromIdentifier(detail.identifier);
+
+    if (fromIdentifier) {
+      matchNames.push(fromIdentifier);
+    }
+
+    if (typeof detail.name === "string" && detail.name.trim()) {
+      matchNames.push(detail.name.trim());
+    }
+
+    for (const entryName of matchNames) {
+      const entry = translatedItemEntryFromPack(entryName, scope, packId);
+      if (entry) {
+        applyEntry(entry);
+        break;
       }
-      if (originalValue && typeof originalValue === "object") {
-        const next = { ...originalValue };
-        if (typeof t.descriptionPublic === "string") next.public = t.descriptionPublic;
-        if (typeof t.descriptionPrivate === "string") next.private = t.descriptionPrivate;
-        return next;
-      }
-      return originalValue;
+    }
+  }
+
+  if (
+    fieldTranslation &&
+    typeof fieldTranslation === "object" &&
+    !Array.isArray(fieldTranslation)
+  ) {
+    applyEntry(fieldTranslation);
+  }
+
+  return result;
+}
+
+export function registerBabeleConverters(babele) {
+  babele.registerConverters({
+    crucibleEmbeddedDetail: {
+      translate(context) {
+        const { value, translation: fieldTranslation, runtime, params } = context;
+        const packId = params?.packId;
+
+        if (!packId) {
+          return value;
+        }
+
+        return translateEmbeddedDetail(value, { runtime, packId, fieldTranslation });
+      },
     },
   });
 }
