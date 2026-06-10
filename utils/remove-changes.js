@@ -34,12 +34,11 @@ function stripChanges(value) {
     for (const [key, child] of Object.entries(value)) {
       if (key === "changes") {
         removed += 1;
-        continue;
+      } else {
+        const result = stripChanges(child);
+        removed += result.removed;
+        next[key] = result.value;
       }
-
-      const result = stripChanges(child);
-      removed += result.removed;
-      next[key] = result.value;
     }
 
     return { value: next, removed };
@@ -70,49 +69,74 @@ async function collectJsonFiles(root) {
   return files.sort();
 }
 
+/**
+ * @param {string} filePath
+ * @param {boolean} dryRun
+ * @returns {Promise<{ removed: number; changed: boolean }>}
+ */
+async function processFile(filePath, dryRun) {
+  const original = await readFile(filePath, "utf8");
+  const data = JSON.parse(original);
+  const { value, removed } = stripChanges(data);
+
+  if (removed === 0) {
+    return { removed: 0, changed: false };
+  }
+
+  const relative = path.relative(process.cwd(), filePath);
+
+  if (dryRun) {
+    console.log(`${relative}: would remove ${removed} "changes" block(s)`);
+    return { removed, changed: true };
+  }
+
+  const updated = `${JSON.stringify(value, null, 2)}\n`;
+  await writeFile(filePath, updated, "utf8");
+  console.log(`${relative}: removed ${removed} "changes" block(s)`);
+  return { removed, changed: true };
+}
+
 async function main() {
   const args = process.argv.slice(2);
   const dryRun = args.includes("--dry-run");
   const paths = args.filter((arg) => arg !== "--dry-run");
 
-  const roots = paths.length > 0 ? paths : [DEFAULT_ROOT];
+  let roots;
+  if (paths.length > 0) {
+    roots = paths;
+  } else {
+    roots = [DEFAULT_ROOT];
+  }
+
+  const fileSets = await Promise.all(roots.map(collectJsonFiles));
+  const files = fileSets.flat();
+  const results = await Promise.all(files.map((filePath) => processFile(filePath, dryRun)));
 
   let totalRemoved = 0;
   let filesChanged = 0;
 
-  for (const root of roots) {
-    const files = await collectJsonFiles(root);
-
-    for (const filePath of files) {
-      const original = await readFile(filePath, "utf8");
-      const data = JSON.parse(original);
-      const { value, removed } = stripChanges(data);
-
-      if (removed === 0) {
-        continue;
-      }
-
-      totalRemoved += removed;
+  for (const result of results) {
+    totalRemoved += result.removed;
+    if (result.changed) {
       filesChanged += 1;
-
-      const relative = path.relative(process.cwd(), filePath);
-
-      if (dryRun) {
-        console.log(`${relative}: would remove ${removed} "changes" block(s)`);
-        continue;
-      }
-
-      const updated = `${JSON.stringify(value, null, 2)}\n`;
-      await writeFile(filePath, updated, "utf8");
-      console.log(`${relative}: removed ${removed} "changes" block(s)`);
     }
   }
 
-  const action = dryRun ? "Would remove" : "Removed";
+  let action;
+  if (dryRun) {
+    action = "Would remove";
+  } else {
+    action = "Removed";
+  }
+
   console.log(`\n${action} ${totalRemoved} "changes" block(s) in ${filesChanged} file(s).`);
 }
 
 main().catch((error) => {
-  console.error(error instanceof Error ? error.message : error);
+  if (error instanceof Error) {
+    console.error(error.message);
+  } else {
+    console.error(error);
+  }
   process.exit(1);
 });
