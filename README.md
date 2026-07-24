@@ -38,7 +38,7 @@
 
 ### Системы
 
-- 13th Age
+- 13th Age (Тринадцатая эпоха)
 - AGE System
 - Age of Sigmar: Soulbound
 - Alien (Чужой)
@@ -57,7 +57,7 @@
 - Dungeons & Dragons 5
 - Forbidden Lands (Запретные земли)
 - Genesys / Star Wars FFG
-- GUMSHOE (СЫШИК)
+- GUMSHOE (СЫЩИК)
 - Ironsworn / Starforged
 - Mausritter
 - Mouseguard
@@ -69,7 +69,7 @@
 - Star Trek Adventures (Звёздный Путь)
 - Starfinder + Beginner Box
 - Tales from the Loop (Тайны Эхосферы)
-- The One Ring 2e
+- The One Ring 2e (Кольцо Всевластья)
 - The Witcher (Ведьмак)
 - Traveler / Cepheus Engine
 - Vaesen (Нечисть)

@@ -1,0 +1,15 @@
+{
+  "Item": {
+    "description": "system.description",
+    "category": {
+      "path": "system.category",
+      "converter": "convertCategory"
+    }
+  },
+  "Actor": {
+    "items": {
+      "path": "items",
+      "converter": "fromPack"
+    }
+  }
+}

@@ -1,16 +1,4 @@
 {
-  "COMMON": {
-    "AreYouSure": "Вы уверены?",
-    "Cancel": "Отмена",
-    "Confirm": "Подтвердить",
-    "Default": "По умолчанию",
-    "Delete": "Удалить",
-    "No": "Нет",
-    "None": "Нет",
-    "Unknown": "Неизвестно",
-    "Yes": "Да"
-  },
-
   "DOCUMENT.DND5E": {
     "Activity": "Функция",
     "Advancement": "Развитие",
@@ -19,63 +7,72 @@
     }
   },
 
-  "TYPES.Actor.character": "Персонаж игрока",
-  "TYPES.Actor.characterPl": "Персонажи игроков",
-  "TYPES.Actor.encounter": "Боевая сцена",
-  "TYPES.Actor.encounterPl": "Боевые сцены",
-  "TYPES.Actor.group": "Группа",
-  "TYPES.Actor.groupPl": "Группы",
-  "TYPES.Actor.npc": "Персонаж Мастера",
-  "TYPES.Actor.npcPl": "Персонажи Мастера",
-  "TYPES.Actor.vehicle": "Транспорт",
-  "TYPES.Actor.vehiclePl": "Транспорт",
+  "TYPES.Actor": {
+    "character": "Персонаж игрока",
+    "characterPl": "Персонажи игроков",
+    "encounter": "Боевая сцена",
+    "encounterPl": "Боевые сцены",
+    "group": "Группа",
+    "groupPl": "Группы",
+    "npc": "Персонаж Мастера",
+    "npcPl": "Персонажи Мастера",
+    "vehicle": "Транспорт",
+    "vehiclePl": "Транспорт"
+  },
 
-  "TYPES.ActiveEffect.enchantment": "Зачарование",
-  "TYPES.ActiveEffect.enchantmentPl": "Зачарования",
+  "TYPES.ActiveEffect": {
+    "enchantment": "Зачарование",
+    "enchantmentPl": "Зачарования"
+  },
 
   "TYPES.ChatMessage": {
     "request": "Сообщение запроса",
     "rest": "Сообщение отдыха",
+    "timePassed": "Сообщение прошедшего времени",
     "turn": "Сообщение в начале хода",
     "usage": "Сообщение использования"
   },
 
-  "TYPES.Item.background": "Происхождение",
-  "TYPES.Item.backgroundPl": "Происхождения",
-  "TYPES.Item.container": "Контейнер",
-  "TYPES.Item.containerPl": "Контейнеры",
-  "TYPES.Item.class": "Класс",
-  "TYPES.Item.classPl": "Классы",
-  "TYPES.Item.consumable": "Расходуемый предмет",
-  "TYPES.Item.consumablePl": "Расходуемые предметы",
-  "TYPES.Item.equipment": "Экипировка",
-  "TYPES.Item.equipmentPl": "Экипировка",
-  "TYPES.Item.facility": "Постройка",
-  "TYPES.Item.facilityPl": "Постройки",
-  "TYPES.Item.feat": "Особенность",
-  "TYPES.Item.featurePl": "Особенности",
-  "TYPES.Item.loot": "Добыча",
-  "TYPES.Item.lootPl": "Добыча",
-  "TYPES.Item.race": "Вид",
-  "TYPES.Item.racePl": "Виды",
-  "TYPES.Item.raceLegacy": "Раса",
-  "TYPES.Item.raceLegacyPl": "Расы",
-  "TYPES.Item.spell": "Заклинание",
-  "TYPES.Item.spellPl": "Заклинания",
-  "TYPES.Item.subclass": "Подкласс",
-  "TYPES.Item.subclassPl": "Подклассы",
-  "TYPES.Item.tool": "Инструмент",
-  "TYPES.Item.toolPl": "Инструменты",
-  "TYPES.Item.weapon": "Оружие",
-  "TYPES.Item.weaponPl": "Оружие",
+  "TYPES.Item": {
+    "background": "Происхождение",
+    "backgroundPl": "Происхождения",
+    "container": "Контейнер",
+    "containerPl": "Контейнеры",
+    "class": "Класс",
+    "classPl": "Классы",
+    "consumable": "Расходуемый предмет",
+    "consumablePl": "Расходуемые предметы",
+    "equipment": "Экипировка",
+    "equipmentPl": "Экипировка",
+    "facility": "Постройка",
+    "facilityPl": "Постройки",
+    "feat": "Особенность",
+    "featurePl": "Особенности",
+    "loot": "Добыча",
+    "lootPl": "Добыча",
+    "race": "Вид",
+    "racePl": "Виды",
+    "raceLegacy": "Раса",
+    "raceLegacyPl": "Расы",
+    "spell": "Заклинание",
+    "spellPl": "Заклинания",
+    "subclass": "Подкласс",
+    "subclassPl": "Подклассы",
+    "tool": "Инструмент",
+    "toolPl": "Инструменты",
+    "weapon": "Оружие",
+    "weaponPl": "Оружие"
+  },
 
   "TYPES.RegionBehavior": {
+    "dnd5e.applyActiveEffect": "Применение активного эффекта (5e)",
     "dnd5e.difficultTerrain": "Пересечённая местность",
     "dnd5e.rotateArea": "Поворот области"
   },
 
   "TYPES.HINTS": {
     "RegionBehavior": {
+      "dnd5e.applyActiveEffect": "Применение активных эффектов к токенам, находящимся в регионе и соответствующим требованиям.",
       "dnd5e.difficultTerrain": "Отметить регион как пересечённую местность и выбрать её тип.",
       "dnd5e.rotateArea": "Вращать токены, тайлы, стены и другие объекты вокруг центральной точки вращения."
     }
@@ -96,6 +93,23 @@
       "CheckLabel": "Проверка {ability}",
       "SaveLabel": "Испытание {ability}",
       "Title": "Настройка {ability}"
+    },
+    "Formatter": {
+      "Check": {
+        "AdvantageMode": "Режим преимущества проверки {name}",
+        "Bonus": "Бонус проверки {name}",
+        "Maximum": "Макс. бросок проверки {name}",
+        "Minimum": "Мин. бросок проверки {name}"
+      },
+      "Maximum": "Максимум {name}",
+      "Save": {
+        "AdvantageMode": "Режим преимущества испытания {name}",
+        "Bonus": "Бонус испытания {name}",
+        "Maximum": "Макс. бросок испытания {name}",
+        "Minimum": "Мин. бросок испытания {name}",
+        "Proficiency": "Умение в испытании {name}"
+      },
+      "Score": "Показатель {name}"
     },
     "SECTIONS": {
       "Bonuses": {
@@ -275,7 +289,20 @@
   },
 
   "DND5E.ACTIVEEFFECT": {
-    "AttributeKeyTooltip": "Список ключей можно найти в <a href=\"{url}\">wiki</a>.",
+    "AttributeKeyTooltip": "Список ключей и допустимых значений в <a href=\"{url}\">wiki</a>.",
+    "Expired": "Истёк",
+    "Expiry": {
+      "GROUPS": {
+        "General": "Общее",
+        "Specific": "Особое"
+      },
+      "SourceStart": "Начало следующего хода источника",
+      "SourceEnd": "Конец следующего хода источника",
+      "TargetStart": "Начало следующего хода цели",
+      "TargetEnd": "Конец следующего хода цели",
+      "YourStart": "Начало вашего следующего хода",
+      "YourEnd": "Конец вашего следующего хода"
+    },
     "FIELDS": {
       "statuses": {
         "label": "Состояния",
@@ -295,6 +322,24 @@
       "other": "Функции"
     },
     "FIELDS": {
+      "behaviors": {
+        "element": {
+          "level": {
+            "label": "Ограничение уровня",
+            "hint": "Диапазон уровней, требуемых для применения поведения.",
+            "max": {
+              "label": "Макс. уровень"
+            },
+            "min": {
+              "label": "Мин. уровень"
+            }
+          },
+          "name": {
+            "label": "Название"
+          }
+        },
+        "label": "Поведения области действия"
+      },
       "description": {
         "label": "Описание",
         "chatFlavor": {
@@ -530,7 +575,8 @@
         },
         "restriction": {
           "level": {
-            "Available": "Любой доступный круг",
+            "Available": "Любой доступный круг (включая фокусы)",
+            "AvailableNoCantrips": "Любой доступный круг (без фокусов)",
             "hint": "Разрешить выбор заклинаний только этого круга.",
             "label": "Круг заклинания"
           },
@@ -544,6 +590,9 @@
           "type": {
             "label": "Тип"
           }
+        },
+        "sorting": {
+          "label": "Режим сортировки"
         },
         "type": {
           "Any": "Любой",
@@ -577,6 +626,9 @@
         "optional": {
           "label": "Опциональное",
           "hint": "Если развитие отмечено как опциональное, игроки могут отказаться от любых предоставленных предметов. Иначе все предметы будут выданы персонажу."
+        },
+        "sorting": {
+          "label": "Режим сортировки"
         }
       },
       "Hint": "Предметы, получаемые персонажем на определённых уровнях (экипировка, особенности, заклинания).",
@@ -621,6 +673,33 @@
       "Hint": "Выберите развитие, которое будет добавлено к {name}.",
       "Selection": "Выбор развития",
       "Title": "Миграция развития"
+    },
+    "ModifyItem": {
+      "Action": {
+        "AddChange": "Добавить изменение",
+        "DeleteChange": "Удалить изменение"
+      },
+      "DropHint": "Перенесите зачарование сюда",
+      "Empty": {
+        "WithDropdown": "Нет изменений. Используйте кнопку <i class=\"fa-solid fa-plus\"></i> выше, чтобы создать, или выберите существующий эффект из списка.",
+        "WithoutDropdown": "Нет изменений. Используйте кнопку <i class=\"fa-solid fa-plus\"></i> выше, чтобы создать."
+      },
+      "FIELDS": {
+        "changes": {
+          "element": {
+            "enchantment": {
+              "label": "Применённое зачарование"
+            },
+            "identifiers": {
+              "hint": "Идентификаторы предметов, которые будут изменены этим зачарованием. К идентификаторам можно добавить префикс типа предмета (например, «spell:mage-hand»).",
+              "label": "Изменяемые предметы"
+            }
+          },
+          "label": "Изменения предметов"
+        }
+      },
+      "Hint": "Изменение существующих предметов с помощью зачарования.",
+      "Title": "Изменение предметов"
     },
     "ScaleValue": {
       "Action": {
@@ -685,6 +764,18 @@
           "Hint": "Используйте это, если не уверены в типе подъёма или если тип не важен.",
           "Identifier": "Значение подъёма для текущего уровня будет доступно в формулах в виде <br><copyable-text>@scale.{class}.{identifier}</copyable-text>",
           "Label": "Любой"
+        },
+        "Usage": {
+          "FIELDS": {
+            "period": {
+              "label": "Интервал"
+            },
+            "value": {
+              "label": "Использования"
+            }
+          },
+          "Hint": "Используется для отображения числа использований предмета за определённый период.",
+          "Label": "Использование"
         }
       }
     },
@@ -837,6 +928,27 @@
   "DND5E.AdvancementTitle": "Развитие",
   "DND5E.Advantage": "Преимущество",
   "DND5E.AdvantageMode": "Режим преимущества",
+
+  "DND5E.ADVENTURE": {
+    "Action": {
+      "Configure": "Настройка приключения",
+      "Launch": "Запустить приключение"
+    },
+    "Finished": {
+      "one": "Подготовка приключения {adventure} завершена.",
+      "other": "Подготовка {number} приключений завершена."
+    },
+    "ImportAction": {
+      "ActivateScene": "Активировать начальную сцену",
+      "CustomizeWorld": "Настроить параметры мира",
+      "DisplayJournal": "Показать журнал «С чего начать»"
+    },
+    "Warning": {
+      "JournalMissing": "Запись журнала `{id}` не найдена для отображения в приключении {adventure}.",
+      "SceneMissing": "Сцена `{id}` не найдена для активации в приключении {adventure}."
+    }
+  },
+
   "DND5E.Age": "Возраст",
   "DND5E.Alignment": "Мировоззрение",
   "DND5E.AlignmentCE": "Хаотичное злое",
@@ -851,6 +963,7 @@
   "DND5E.Amount": "Число",
   "DND5E.Appearance": "Внешность",
   "DND5E.Apply": "Применить",
+  "DND5E.AttributeScores": "Показатели характеристик",
   "DND5E.Attunement": "Настроенность",
   "DND5E.AttunementMax": "Максимум настроенных предметов",
   "DND5E.AttunementNone": "Настроенность не требуется",
@@ -880,22 +993,103 @@
     }
   },
   "DND5E.Armor": "Броня",
+
+  "DND5E.ARMORCLASS": {
+    "Action": {
+      "Configure": "Настройка брони",
+      "CreateFormula": "Создать особую формулу",
+      "DeleteFormula": "Удалить особую формулу"
+    },
+    "Calculation": {
+      "Armored": "Надетая броня",
+      "Custom": "Особая",
+      "Draconic": "Драконья стойкость",
+      "Label": "Расчёт",
+      "Mage": "Магический доспех",
+      "Natural": "Естественная броня",
+      "Unarmored": "Без брони",
+      "UnarmoredBarbarian": "Защита без брони (варвар)",
+      "UnarmoredBard": "Защита без брони (бард)",
+      "UnarmoredMonk": "Защита без брони (монах)"
+    },
+    "Condition": {
+      "Positive": "Должен иметь {type}",
+      "Negative": "Не должен иметь {type}"
+    },
+    "Configuration": "Настройки",
+    "CurrentFormula": "Текущая формула",
+    "CustomFormulas": {
+      "Empty": "Нет особых формул. Используйте кнопку <i class=\"fas fa-plus\"></i> выше, чтобы создать."
+    },
+    "FIELDS": {
+      "attributes": {
+        "ac": {
+          "armor": {
+            "label": "Значение надетой брони"
+          },
+          "base": {
+            "label": "Базовый класс брони"
+          },
+          "bonus": {
+            "label": "Бонус КБ"
+          },
+          "calc": {
+            "label": "Способ расчёта КБ"
+          },
+          "calcs": {
+            "hint": "Эти формулы используются при расчёте класса брони.",
+            "label": "Выбранные формулы"
+          },
+          "cover": {
+            "label": "КБ от укрытия"
+          },
+          "flat": {
+            "hint": "Число, которое можно использовать в формуле класса брони через @attributes.ac.flat.",
+            "label": "Неизменное значение"
+          },
+          "formula": {
+            "label": "Дополнительная формула КБ"
+          },
+          "formulas": {
+            "element": {
+              "armored": {
+                "excluded": "Без брони",
+                "label": "В броне",
+                "required": "Требуется броня"
+              },
+              "formula": {
+                "label": "Формула"
+              },
+              "label": {
+                "label": "Название"
+              },
+              "shielded": {
+                "excluded": "Без щита",
+                "label": "Со щитом",
+                "required": "Требуется щит"
+              }
+            },
+            "label": "Формулы"
+          },
+          "label": "Класс брони",
+          "min": {
+            "label": "Мин. класс брони"
+          },
+          "override": {
+            "hint": "Значение, используемое вместо рассчитанного класса брони, без учёта укрытия, щита и прочих бонусов.",
+            "label": "Переопределение"
+          },
+          "shield": {
+            "label": "Значение надетого щита"
+          }
+        }
+      }
+    },
+    "Flat": "Неизменный",
+    "Formula": "Формула"
+  },
+
   "DND5E.ArmorClass": "Класс брони",
-  "DND5E.ArmorClassEquipment": "Надетая броня",
-  "DND5E.ArmorClassFlat": "Неизменный",
-  "DND5E.ArmorClassUnarmored": "Без брони",
-  "DND5E.ArmorClassNatural": "Естественная броня",
-  "DND5E.ArmorClassMage": "Магический доспех",
-  "DND5E.ArmorClassMotionless": "КБ когда неподвижен",
-  "DND5E.ArmorClassDraconic": "Драконья стойкость",
-  "DND5E.ArmorClassUnarmoredMonk": "Защита без брони (монах)",
-  "DND5E.ArmorClassUnarmoredBarbarian": "Защита без брони (варвар)",
-  "DND5E.ArmorClassUnarmoredBard": "Защита без брони (бард)",
-  "DND5E.ArmorClassCustom": "Особая формула",
-  "DND5E.ArmorConfig": "Настройка брони",
-  "DND5E.ArmorConfigHint": "Заполните поле выше для перезаписи автоматического расчёта КБ",
-  "DND5E.ArmorClassCalculation": "Расчёт",
-  "DND5E.ArmorClassFormula": "Формула",
   "DND5E.ArmorHeavyProficiency": "Тяжёлая",
   "DND5E.ArmorLightProficiency": "Лёгкая",
   "DND5E.ArmorMediumProficiency": "Средняя",
@@ -1019,10 +1213,17 @@
   "DND5E.Background": "Происхождение",
   "DND5E.BackgroundAdd": "Добавить происхождение",
   "DND5E.BackgroundName": "Название происхождения",
+  "DND5E.BaseItem": "Базовый предмет",
+
+  "DND5E.BASE": {
+    "Image": "Изображение",
+    "Name": "Название"
+  },
 
   "DND5E.Bastion": {
     "Action": {
-      "BastionTurn": "Ход бастиона"
+      "Advance": "Продвинуть ход бастиона",
+      "Maintain": "Поддерживать бастион"
     },
     "Attack": {
       "Automatic": "Расчитать автоматически",
@@ -1049,7 +1250,10 @@
       "Label": "Настройка бастионов",
       "Hint": "Различные настройки системы бастионов из Руководства Мастера."
     },
-    "Confirm": "Перейти на следующий ход бастиона?",
+    "Confirm": {
+      "Advance": "Это продвинет прогресс приказов всех построек бастиона на {duration}, выдаст приказ «поддержание» всем простаивающим постройкам и починит отключённые. Продолжить?",
+      "Maintain": "Это выдаст приказ «поддержание» всем простаивающим постройкам бастиона и починит отключённые. Продолжить?"
+    },
     "Duration": {
       "Label": "Длительность хода бастиона (дней)"
     },
@@ -1075,9 +1279,19 @@
     }
   },
 
+  "DND5E.BEHAVIOR": {
+    "Action": {
+      "Create": "Создать поведение",
+      "Delete": "Удалить поведение"
+    },
+    "Empty": "Нет связанных поведений. Используйте кнопку <i class=\"fas fa-plus\"></i> выше, чтобы создать.",
+    "Hint": "Эти поведения применяются к любой области воздействия, созданной этой функцией.",
+    "Label": "Поведение"
+  },
+
   "DND5E.Biography": "Биография",
   "DND5E.BiographyPublic": "Общедоступная биография",
-  "DND5E.BiopgrahyPublicEdit": "Изменить общедоступную биографию",
+  "DND5E.BiographyPublicEdit": "Редактировать общедоступную биографию",
   "DND5E.Bonds": "Узы",
   "DND5E.Bonus": "Бонус",
   "DND5E.BonusAction": "Бонусное действие",
@@ -1179,6 +1393,13 @@
       "enabled": {
         "hint": "Отображение календаря для всех участников.",
         "label": "Включить календарь"
+      },
+      "dailyRecovery": {
+        "calendar": "Восстановление по календарю (по ходу времени)",
+        "default": "По умолчанию (по настройке календаря)",
+        "hint": "Определяет, восстанавливаются ли ограниченные использования с периодами «день», «рассвет» и «закат» по мировому календарю или через диалог отдыха.",
+        "label": "Режим ежедневного восстановления",
+        "manual": "Ручное восстановление (через диалог отдыха)"
       },
       "formatters": {
         "date": {
@@ -1369,6 +1590,17 @@
         "Autumn": "Осень",
         "Winter": "Зима"
       }
+    },
+    "TimePassage": {
+      "Midnight": "Наступил новый день.",
+      "Sunrise": "Солнце взошло.",
+      "Sunset": "Солнце зашло.",
+      "SunsetSunrise": "Солнце зашло, и наступил рассвет нового дня.",
+      "TimePassed": {
+        "one": "Прошло: {number}.",
+        "other": "Прошло: {number}."
+      },
+      "Title": "Ход времени"
     }
   },
 
@@ -1409,8 +1641,8 @@
           "hint": "Компоненты и другие свойства, игнорируемые при сотворении."
         },
         "spellbook": {
-          "label": "Отображение в заклинаниях",
-          "hint": "Показывать заклинание в списке заклинаний персонажа."
+          "label": "Отображение во вкладке заклинаний",
+          "hint": "Показывать заклинание во вкладке «Заклинания» бланка персонажа. Предмет должен иметь свойство «Магический» и быть настроен, если требуется настроенность."
         },
         "uuid": {
           "label": "Заклинание"
@@ -1473,6 +1705,24 @@
   },
   "DND5E.Challenge": "Опасность",
   "DND5E.ChallengeRating": "Класс опасности",
+
+  "DND5E.CHARACTER": {
+    "FIELDS": {
+      "traits": {
+        "weaponProf": {
+          "mastery": {
+            "bonus": {
+              "label": "Бонусные оружейные мастерства"
+            },
+            "value": {
+              "label": "Оружейные мастерства"
+            }
+          }
+        }
+      }
+    }
+  },
+
   "DND5E.Charged": "Заряжено",
   "DND5E.Charges": "Заряды",
   "DND5E.ChatContextDamage": "Нанести урон",
@@ -1493,10 +1743,13 @@
     },
     "REQUEST": {
       "Action": {
-        "Handle": "Обработка запроса"
+        "Handle": "Обработка запроса",
+        "Post": "Отправить запрос"
       },
+      "AnyOwner": "Любой владелец",
       "Complete": "Запрос выполнен",
-      "PartyMembers": "Участники группы"
+      "PartyMembers": "Участники группы",
+      "Title": "Запрос"
     },
     "TURN": {
       "NoCombatant": "Боец больше не существует!"
@@ -1515,6 +1768,10 @@
           "label": "Связанный навык или инструмент",
           "hint": "Характеристика, используемая в умениях и бонусах от этих навыков или инструментов."
         },
+        "bonus": {
+          "label": "Бонус проверки",
+          "hint": "Бонус, добавляемый ко всем проверкам этой функции."
+        },
         "dc": {
           "label": "Сложность",
           "calculation": {
@@ -1525,6 +1782,10 @@
             "label": "Формула СЛ",
             "hint": "Формула или неизменное значение для проверки СЛ."
           }
+        },
+        "visible": {
+          "label": "Видимо всем",
+          "hint": "Показывать кнопку броска в чате всем игрокам."
         }
       }
     },
@@ -1680,12 +1941,6 @@
   "DND5E.ConCharmed": "Обворожение",
   "DND5E.ConDeafened": "Глухота",
   "DND5E.ConDiseased": "Болезнь",
-  "DND5E.CONDITIONS": {
-    "RiderConditions": {
-      "label": "Отдельные состояния",
-      "hint": "Пока воздействует этот активный эффект, эти дополнительные состояния будут применены."
-    }
-  },
   "DND5E.ConExhaustion": "Утомление",
   "DND5E.ConFrightened": "Испуг",
   "DND5E.ConGrappled": "Захват",
@@ -1699,23 +1954,53 @@
   "DND5E.ConRestrained": "Обездвиженность",
   "DND5E.ConStunned": "Шок",
   "DND5E.ConUnconscious": "Без сознания",
+
   "DND5E.Concentration": "Концентрация",
-  "DND5E.ConcentrationAbbr": "К",
-  "DND5E.ConcentrationBreak": "Прерывание концентрации",
-  "DND5E.ConcentrationBreakWarning": "Прерывание концентрации на эффекте другого существа, требует Мастера в игре.",
-  "DND5E.ConcentrationBonus": "Бонус концентрации",
-  "DND5E.ConcentrationDuration": "Концентрация до {duration}",
-  "DND5E.ConcentratingOn": "Вы поддерживаете концентрацию на эффекте '{name}' ({type}).",
-  "DND5E.ConcentratingEndChoice": "Вы поддерживаете концентрацию на эффекте с несколькими источникам. Выберите, какой эффект прервать.",
-  "DND5E.ConcentratingMissingItem": "Эффект концентрации на замену не существует.",
-  "DND5E.ConcentratingLimited": "Вы не можете начать концентрацию на дополнительном эффекте.",
-  "DND5E.ConcentrationLimit": "Предел концентрации",
-  "DND5E.ConcentratingEnd": "Прервать концентрацию",
-  "DND5E.ConcentratingItemless": "Концентрация без источника",
-  "DND5E.ConcentratingWarnLimit": "Вы не можете поддерживать концентрацию на нескольких эффектах!",
-  "DND5E.ConcentratingWarnLimitOptional": "Вы можете прервать концентрацию на одном из ваших эффектов, чтобы использовать этот предмет.",
-  "DND5E.ConcentratingWarnLimitZero": "Вы не можете поддерживать концентрацию на любом из эффектов!",
-  "DND5E.ConcentrationConfigurationHint": "Настройка модификаторов и бонусов концентрации этого существа.",
+  "DND5E.CONCENTRATION": {
+    "Abbreviation": "К",
+    "Action": {
+      "Break": "Прервать концентрацию",
+      "End": "Завершить концентрацию"
+    },
+    "Description": "Вы поддерживаете концентрацию на эффектах «{name}» ({type}).",
+    "Duration": "Концентрация, вплоть до {duration}",
+    "EndChoice": "Вы концентрируетесь на эффектах из нескольких источников. Выберите, какой эффект завершить.",
+    "FIELDS": {
+      "attributes": {
+        "concentration": {
+          "bonuses": {
+            "label": "Бонусы концентрации",
+            "save": {
+              "label": "Бонус концентрации"
+            }
+          },
+          "label": "Концентрация",
+          "limit": {
+            "label": "Предел концентрации"
+          },
+          "roll": {
+            "ability": "Характеристика испытания концентрации",
+            "max": "Макс. бросок испытания концентрации",
+            "min": "Мин. бросок испытания концентрации",
+            "mode": "Режим преимущества испытания концентрации"
+          }
+        }
+      }
+    },
+    "Limit": {
+      "Hard": "Вы не можете поддерживать концентрацию на большем числе эффектов!",
+      "Optional": "Чтобы использовать этот предмет, вы можете завершить концентрацию на одном из поддерживаемых эффектов.",
+      "Reached": "Вы не можете начать концентрироваться на дополнительном эффекте.",
+      "Zero": "Вы не можете поддерживать концентрацию ни на каких эффектах!"
+    },
+    "Lost": "Концентрация потеряна",
+    "NoSource": "Концентрация без источника",
+    "Warning": {
+      "BreakWithoutGM": "Прерывание концентрации на эффекте, действующем на других существ, требует присутствия активного Мастера.",
+      "MissingItem": "Эффект, на котором поддерживается концентрация и который нужно заменить, не существует."
+    }
+  },
+
   "DND5E.ConsumeTitle": "Расход ресурсов",
   "DND5E.ConsumeAmount": "Расход",
   "DND5E.ConsumeHint": {
@@ -1742,6 +2027,42 @@
   "DND5E.CONSUMABLE": {
     "FIELDS": {
       "damage": {
+        "base": {
+          "bonus": {
+            "label": "Бонус базового урона"
+          },
+          "custom": {
+            "enabled": {
+              "label": "Использовать особую формулу базового урона"
+            },
+            "formula": {
+              "label": "Особая формула базового урона"
+            }
+          },
+          "denomination": {
+            "label": "Грань кости базового урона"
+          },
+          "number": {
+            "label": "Число костей базового урона"
+          },
+          "scaling": {
+            "formula": {
+              "label": "Формула подъёма базового урона"
+            },
+            "mode": {
+              "label": "Режим подъёма базового урона"
+            },
+            "number": {
+              "label": "Значение подъёма базового урона"
+            }
+          },
+          "types": {
+            "label": "Типы базового урона"
+          }
+        },
+        "bonus": {
+          "label": "Бонус урона"
+        },
         "label": "Урон боеприпасов",
         "replace": {
           "label": "Замена урона оружия",
@@ -1868,6 +2189,7 @@
       "Delete": "Удаление цели расхода",
       "RefundResource": "Возврат ресурса"
     },
+    "Empty": "Нет связанного расхода. Используйте кнопку <i class=\"fas fa-plus\"></i> выше, чтобы добавить цели расхода.",
     "Scaling": {
       "Amount": "Число",
       "Automatic": "Автоматически",
@@ -2077,6 +2399,10 @@
               "label": "Стороны кости",
               "hint": "Число сторон кости для броска."
             },
+            "modifiers": {
+              "label": "Модификаторы",
+              "hint": "Модификаторы броска, добавляемые к базовой кости."
+            },
             "number": {
               "label": "Число костей",
               "hint": "Число костей для броска."
@@ -2107,6 +2433,8 @@
         }
       }
     },
+    "Empty": "Урон не настроен. Используйте кнопку <i class=\"fas fa-plus\"></i> выше, чтобы добавить части урона.",
+    "EmptyExceptBase": "Используйте кнопку <i class=\"fas fa-plus\"></i> выше, чтобы добавить дополнительные части урона.",
     "Hint": "Нанести урон без атаки или испытания.",
     "Part": {
       "Action": {
@@ -2261,25 +2589,106 @@
   "DND5E.DurationUnits": "Единицы длительности",
   "DND5E.DurationValue": "Значение длительности",
   "DND5E.Dusk": "Закат",
+
   "DND5E.Effect": "Эффект",
-  "DND5E.Effects": "Эффекты",
   "DND5E.EFFECT": {
     "Action": {
-      "Create": "Создать эффект",
-      "Delete": "Удалить эффект",
-      "Dissociate": "Отвязать эффект"
+      "AddChange": "Добавить изменение",
+      "CreateEffect": "Создать эффект",
+      "DeleteEffect": "Удалить эффект",
+      "DeleteChange": "Удалить изменение",
+      "DissociateEffect": "Отвязать эффект",
+      "EditChange": "Изменить изменение",
+      "EditEffect": "Изменить эффект",
+      "RemoveStatus": {
+        "all": "Все источники",
+        "label": "Источник"
+      },
+      "Search": "Поиск эффектов"
     },
+    "AdditionalChanges": "Дополнительные изменения",
+    "Application": {
+      "Action": {
+        "ApplyTokens": "Применить к выбранным токенам"
+      },
+      "Header": "Эффекты",
+      "Warning": {
+        "Concentration": "Применение эффекта, на котором концентрируется другой персонаж, требует прав Мастера.",
+        "Ownership": "Эффекты нельзя применять к токенам, владельцем которых вы не являетесь."
+      }
+    },
+    "BASE": {
+      "FIELDS": {
+        "changes": {
+          "element": {
+            "key": {
+              "label": "Ключ параметра"
+            },
+            "phase": {
+              "hint": "Момент подготовки данных или иное событие, при котором применяется изменение.",
+              "label": "Фаза"
+            },
+            "priority": {
+              "label": "Приоритет"
+            },
+            "type": {
+              "label": "Тип"
+            },
+            "value": {
+              "label": "Значение"
+            }
+          }
+        },
+        "magical": {
+          "hint": "Этот эффект имеет магический источник и должен отключаться, когда магия недоступна.",
+          "label": "Магический"
+        }
+      }
+    },
+    "Category": {
+      "Temporary": "Временные эффекты",
+      "Passive": "Пассивные эффекты",
+      "Inactive": "Неактивные эффекты",
+      "Unavailable": "Недоступные эффекты"
+    },
+    "Change": {
+      "Configuration": "Настройка изменения",
+      "Label": "Изменение",
+      "Title": "Изменение {effect} #{number}"
+    },
+    "DropHint": "Перенесите активный эффект сюда",
     "Empty": "Нет связанных эффектов. Нажмите на <i class=\"fas fa-plus\"></i>, чтобы создать новый, или выберите существующий из списка.",
     "Label": "Доступные эффекты",
+    "New": "Новый эффект",
     "RIDER": {
       "Activity": "Дополнительная функция",
-      "Effect": "Дополнительный эффект"
-    }
+      "Effect": "Дополнительный эффект",
+      "FIELDS": {
+        "rider": {
+          "statuses": {
+            "hint": "При применении этого активного эффекта указанные состояния будут применены отдельно.",
+            "label": "Отдельные состояния"
+          }
+        }
+      }
+    },
+    "Status": {
+      "ChangeActive": "Изменение активно",
+      "ChangeInactive": "Изменение неактивно",
+      "DeleteDialog": {
+        "hint": "На вас действует это состояние из нескольких источников. Выберите, какой эффект завершить.",
+        "title": "Удалить эффект"
+      },
+      "Inactive": "Неактивный",
+      "Passive": "Пассивный",
+      "Temporary": "Временный",
+      "Unavailable": "Недоступный"
+    },
+    "Suppressed": {
+      "Hint": "Исходный предмет должен быть надет или настроен, чтобы активировать эти эффекты"
+    },
+    "Tab": "Эффекты"
   },
-  "DND5E.EffectsApplyTokens": "Применить к выбранным токенам",
-  "DND5E.EffectApplyWarningConcentration": "Применение эффекта на котором концентрируется другой персонаж, требует наличия Мастера в игре.",
-  "DND5E.EffectApplyWarningOwnership": "Нельзя применить эффект к токену, если вы не его владелец.",
-  "DND5E.EffectsSearch": "Поиск эффекта",
 
   "DND5E.ENCHANT": {
     "FIELDS": {
@@ -2348,7 +2757,8 @@
     "Enchantment": {
       "Action": {
         "Create": "Создание зачарования",
-        "Delete": "Удаление зачарования"
+        "Delete": "Удаление зачарования",
+        "Dissociate": "Отвязать зачарование"
       },
       "Active": "{name} (активно)",
       "Empty": "Нет зачарований. Нажмите на <i class=\"fas fa-plus\"></i>, чтобы создать новое, или выберите существующее из списка."
@@ -2384,18 +2794,9 @@
       "Inactive": "Неактивные зачарования"
     },
     "FIELDS": {
-      "enchantment": {
-        "label": "Настройка зачарования",
-        "items": {
-          "max": {
-            "label": "Ограничение предмета",
-            "hint": "Формула максимального числа зачарований этого типа, которые могут быть одновременно активны."
-          },
-          "period": {
-            "label": "Период замены",
-            "hint": "Как часто зачарования этого типа могут быть переназначены другим предметам."
-          }
-        }
+      "magical": {
+        "hint": "Это зачарование магическое и должно отключаться, когда магия недоступна.",
+        "label": "Магическое"
       }
     },
     "Items": {
@@ -2428,6 +2829,44 @@
       "Description": "Описание",
       "Loot": "Добыча",
       "Members": "Участники"
+    }
+  },
+
+  "DND5E.Encumbrance": "Нагрузка",
+  "DND5E.ENCUMBRANCE": {
+    "FIELDS": {
+      "attributes": {
+        "encumbrance": {
+          "bonuses": {
+            "encumbered": {
+              "label": "Бонус к порогу нагруженности"
+            },
+            "heavilyEncumbered": {
+              "label": "Бонус к порогу крайней нагруженности"
+            },
+            "maximum": {
+              "label": "Бонус к максимальной грузоподъёмности"
+            },
+            "overall": {
+              "label": "Бонус ко всем порогам нагрузки"
+            }
+          },
+          "multipliers": {
+            "encumbered": {
+              "label": "Множитель порога нагруженности"
+            },
+            "heavilyEncumbered": {
+              "label": "Множитель порога крайней нагруженности"
+            },
+            "maximum": {
+              "label": "Множитель максимальной грузоподъёмности"
+            },
+            "overall": {
+              "label": "Множитель всех порогов нагрузки"
+            }
+          }
+        }
+      }
     }
   },
 
@@ -2489,6 +2928,7 @@
   },
 
   "DND5E.Expertise": "Экспертность",
+  "DND5E.Eyes": "Глаза",
 
   "DND5E.FACILITY": {
     "Action": {
@@ -2756,6 +3196,19 @@
         "label": "Укрытие",
         "hint": "Укрытие, предоставляемое экипажу этой особеностью транспорта."
       },
+      "enchant": {
+        "label": "Настройка зачарования",
+        "items": {
+          "max": {
+            "label": "Предел предметов",
+            "hint": "Формула максимального числа зачарований этого типа, которые могут быть активны одновременно."
+          },
+          "period": {
+            "label": "Период замены",
+            "hint": "Как часто зачарования этого типа можно переназначать другим предметам."
+          }
+        }
+      },
       "properties": {
         "label": "Свойства особенности"
       },
@@ -2798,6 +3251,7 @@
       "Origin": "Черта происхождения"
     },
     "Monster": "Особенность чудовища",
+    "PietyTrait": "Особенность благочестия",
     "Species": "Особенность вида",
     "SpeciesLegacy": "Особенность расы",
     "SupernaturalGift": {
@@ -2840,26 +3294,6 @@
     }
   },
 
-  "DND5E.EffectCreate": "Создание эффекта",
-  "DND5E.EffectToggle": "Переключить эффект",
-  "DND5E.EffectEdit": "Изменить эффект",
-  "DND5E.EffectEnable": "Включить эффект",
-  "DND5E.EffectDelete": "Удаление эффекта",
-  "DND5E.EffectDisable": "Выключить эффект",
-  "DND5E.EffectTemporary": "Временные эффекты",
-  "DND5E.EffectPassive": "Пассивные эффекты",
-  "DND5E.EffectInactive": "Неактивные эффекты",
-  "DND5E.EffectNew": "Новый эффект",
-  "DND5E.EffectType": {
-    "Inactive": "Неактивные",
-    "Passive": "Пассивные",
-    "Temporary": "Временные",
-    "Unavailable": "Недоступные"
-  },
-  "DND5E.EffectUnavailable": "Недоступные эффекты",
-  "DND5E.EffectUnavailableInfo": "Предмет с эффектом должен быть надет или настроен для активации",
-  "DND5E.Encumbrance": "Нагрузка",
-  "DND5E.Eyes": "Глаза",
   "DND5E.Faith": "Вера",
   "DND5E.FeatureActive": "Активные способности",
   "DND5E.FeatureAdd": "Создать особенность",
@@ -2881,12 +3315,30 @@
   "DND5E.FilterGroupOrigin": "Группировка по источнику",
   "DND5E.FilterGroupAction": "Группировка по действию",
   "DND5E.FilterNoSpells": "Заклинания с этим фильтром не найдены.",
+
+  "DND5E.FILTER": {
+    "Action": {
+      "Edit": "Изменить фильтры"
+    },
+    "Empty": "Нет фильтров",
+    "Invalid": "Недопустимый фильтр",
+    "Operator": {
+      "And": "и",
+      "Not": "не",
+      "Or": "или"
+    }
+  },
+
   "DND5E.NoSpellLevels": "У этого персонажа нет уровней заклинателя, но вы можете добавить заклинания сами.",
 
   "DND5E.FLAGS": {
     "EnhancedDualWielding": {
       "Name": "Улучшенная обоерукость",
       "Hint": "Разрешить дополнительные атаки бонусным действием, используя любое оружие ближнего боя без свойства 'Двуручное'."
+    },
+    "IgnoreArmorSpeedReduction": {
+      "Name": "Игнорировать снижения скорости от брони",
+      "Hint": "Игнорировать снижение скорости при ношении брони без соблюдения требования к Силе."
     }
   },
 
@@ -2915,7 +3367,8 @@
   "DND5E.FlagsReliableTalent": "Надёжный",
   "DND5E.FlagsReliableTalentHint": "Особенность класса плута.",
   "DND5E.FlagsRemarkableAthlete": "Атлет",
-  "DND5E.FlagsRemarkableAthleteHint": "Половина бонуса умения в проверках физических характеристик и инициативы.",
+  "DND5E.FlagsRemarkableAthleteHint": "Преимущество на броски инициативы и проверки Атлетики.",
+  "DND5E.FlagsRemarkableAthleteHintLegacy": "Половина умения (с округлением вверх) к проверкам физических характеристик и инициативе.",
   "DND5E.FlagsWeaponCritThreshold": "Предел крит. атаки оружием",
   "DND5E.FlagsWeaponCritThresholdHint": "Расширенный предел при котором происходит критическая атака оружием.",
   "DND5E.FlagsSpellCritThreshold": "Предел крит. атаки заклинанием",
@@ -3090,6 +3543,9 @@
   "DND5E.Height": "Рост",
 
   "DND5E.HITPOINTS": {
+    "Bloodied": {
+      "label": "Порог окровавленности"
+    },
     "Counted": {
       "one": "{number} пункт здоровья",
       "other": "{number} пункты здоровья"
@@ -3147,6 +3603,7 @@
   "DND5E.Ideals": "Идеалы",
   "DND5E.Identified": "Опознанный",
   "DND5E.Identifier": "Идентификатор",
+  "DND5E.IdentifierCustom": "Особый идентификатор",
   "DND5E.IdentifierError": "Идентификатор может содержать только латинские буквы (a-z), числа (0-9), тире (-) и подчёркивание (_).",
   "DND5E.Identify": "Опознать",
   "DND5E.Immunities": "Невосприимчивости",
@@ -3204,13 +3661,6 @@
   "DND5E.ItemLootType": "Тип добычи",
   "DND5E.ItemName": "Название",
   "DND5E.ItemNew": "{type}",
-  "DND5E.ItemRarityCommon": "обычный",
-  "DND5E.ItemRarityMundane": "повседневный",
-  "DND5E.ItemRarityUncommon": "необычный",
-  "DND5E.ItemRarityRare": "редкий",
-  "DND5E.ItemRarityVeryRare": "крайне редкий",
-  "DND5E.ItemRarityLegendary": "легендарный",
-  "DND5E.ItemRarityArtifact": "артефакт",
   "DND5E.ItemRechargeCheck": "{name} совершает проверку перезарядки - {result}",
   "DND5E.ItemRechargeFailure": "провал!",
   "DND5E.ItemRechargeSuccess": "успех!",
@@ -3275,6 +3725,16 @@
       "Versatile": "Полуторное",
       "Verbal": "Словесный",
       "WeightlessContents": "Невесомое содержимое"
+    },
+    "Rarity": {
+      "Artifact": "артефакт",
+      "Common": "обычный",
+      "Legendary": "легендарный",
+      "Mundane": "повседневный",
+      "Rare": "редкий",
+      "Uncommon": "необычный",
+      "Varies": "разный",
+      "VeryRare": "крайне редкий"
     },
     "SECTIONS": {
       "Activities": "Функции",
@@ -3421,14 +3881,6 @@
   "DND5E.Minimum": "Минимум",
   "DND5E.Method": "Способ",
   "DND5E.Modifier": "Модификатор",
-  "DND5E.ModuleArtConfigH": "Настройка предоставляемых модулем изображений.",
-  "DND5E.ModuleArtConfigL": "Настройка изображений",
-  "DND5E.ModuleArtConfigN": "Предоставляемые модулем изображения",
-  "DND5E.ModuleArtConfigPortraits": "Портреты",
-  "DND5E.ModuleArtConfigTokens": "Токены",
-  "DND5E.ModuleArtPriorityDecrease": "Понижение приоритета",
-  "DND5E.ModuleArtPriorityHint": "Используйте стрелочки, чтобы управлять приоритетом источников изображений. Если изображение актёра предоставляется несколькими источниками, то будет выбрано с наивысшим приоритетом.",
-  "DND5E.ModuleArtPriorityIncrease": "Повышение приоритета",
   "DND5E.Multiple": "Несколько",
   "DND5E.Multiplier": "Множитель",
   "DND5E.MythicActionLabel": "Мифическое действие",
@@ -3503,6 +3955,18 @@
   "DND5E.PassivePerception": "Пассивное Внимание",
   "DND5E.Period": "Интервал",
   "DND5E.PersonalityTraits": "Свойства личности",
+
+  "DND5E.PIETY": {
+    "Configure": "Настройка благочестия",
+    "Label": "Благочестие",
+    "FIELDS": {
+      "value": {
+        "label": "Показатель благочестия",
+        "hint": "Текущий показатель благочестия этого персонажа."
+      }
+    }
+  },
+
   "DND5E.Portrait": "Портрет",
   "DND5E.Prepared": "Подготовлено",
   "DND5E.Preparation": "Подготовка",
@@ -3604,6 +4068,26 @@
   "DND5E.RecoveryFormula": "Формула восстановления",
 
   "DND5E.REGIONBEHAVIORS": {
+    "APPLYACTIVEEFFECT": {
+      "FIELDS": {
+        "dispositions": {
+          "hint": "Если задано, эффекты применяются только к токенам с этими отношениями.",
+          "label": "Отношения"
+        },
+        "effects": {
+          "hint": "Эффекты, применяемые к токенам внутри региона.",
+          "label": "Эффекты"
+        },
+        "sizes": {
+          "hint": "Если задано, эффекты применяются только к токенам этих размеров.",
+          "label": "Размеры"
+        },
+        "types": {
+          "hint": "Если задано, эффекты применяются только к токенам этих типов существ.",
+          "label": "Типы"
+        }
+      }
+    },
     "DIFFICULTTERRAIN": {
       "FIELDS": {
         "ignoredDispositions": {
@@ -3723,6 +4207,11 @@
 
   "DND5E.REST": {
     "Configuration": "Настройка отдыха",
+    "Duration": {
+      "Hint": "Количество времени, проходящее во время отдыха.",
+      "Label": "Длительность",
+      "UntilSunrise": "Отдых до восхода"
+    },
     "HitDice": {
       "AutoSpend": {
         "Hint": "Автоматически использовать кости здоровья, пока здоровье полностью не восстановится.",
@@ -3791,6 +4280,12 @@
   "DND5E.RitualAbbr": "Р",
 
   "DND5E.ROLL": {
+    "Formatter": {
+      "AdvantageMode": "Режим преимущества {name}",
+      "Maximum": "Максимальный бросок {name}",
+      "Minimum": "Минимальный бросок {name}",
+      "ModifierAbility": "Характеристика модификатора {name}"
+    },
     "Range": {
       "Label": "Диапазон броска",
       "Maximum": "Максимальный",
@@ -3808,6 +4303,7 @@
   },
   "DND5E.RollExample": "напр. +1d4",
   "DND5E.RollMode": "Режим броска",
+  "DND5E.RollModifiers": "Модификаторы",
   "DND5E.RollSituationalBonus": "Ситуационный бонус?",
   "DND5E.Rule": {
     "Tooltip": "Подсказка",
@@ -3883,8 +4379,15 @@
           "label": "Характеристики испытаний",
           "hint": "Характеристики, используемые при прохождении испытаний."
         },
+        "bonus": {
+          "label": "Бонус испытания",
+          "hint": "Бонус, добавляемый ко всем испытаниям этой функции."
+        },
         "dc": {
           "label": "Сложность",
+          "bonus": {
+            "label": "Бонус СЛ"
+          },
           "calculation": {
             "label": "Расчёт СЛ",
             "hint": "Способ или характеристика, используемая для расчёта сложности."
@@ -3895,6 +4398,10 @@
           },
           "CustomFormula": "Особая формула",
           "DefaultFormula": "8 + @mod + @prof"
+        },
+        "visible": {
+          "label": "Видимо всем",
+          "hint": "Показывать кнопку броска в чате всем игрокам."
         }
       }
     },
@@ -3934,6 +4441,8 @@
   "DND5E.Shape": "Форма",
 
   "DND5E.SheetClass": {
+    "ActiveEffect": "D&D 5e Бланк активного эффекта ",
+    "AdventureImporter": "D&D 5e Бланк приключения",
     "Character": "D&D 5e Бланк персонажа",
     "ClassSummary": "D&D 5e Бланк описания класса",
     "Container": "D&D 5e Бланк контейнера",
@@ -3988,6 +4497,11 @@
   "DND5E.SizeTinyAbbr": "Мл",
 
   "DND5E.SKILL": {
+    "Formatter": {
+      "CheckBonus": "Бонус проверки {name}",
+      "PassiveBonus": "Бонус пассивного {name}",
+      "Proficiency": "Умение {name}"
+    },
     "SECTIONS": {
       "Details": "Подробности {label}",
       "Bonuses": {
@@ -4254,6 +4768,11 @@
   "DND5E.SpellUsage": "Сотворение",
   "DND5E.Spellbook": "Заклинания",
   "DND5E.Spent": "Израсходовано",
+  "DND5E.SplitStack": {
+    "Action": "Разделить",
+    "Title": "Разделить стопку"
+  },
+
   "DND5E.StartingEquipment": {
     "Title": "Начальная экипировка",
     "Action": {
@@ -4293,6 +4812,7 @@
   "DND5E.SubclassDuplicateError": "Подкласс с идентификатором {identifier} уже существует у этого актёра.",
   "DND5E.SubclassMismatchWarn": "Подкласс {name} не имеет соответствующего класса '{class}'.",
   "DND5E.SubclassName": "Подкласс",
+  "DND5E.SubclassOf": "Подкласс: {class}",
   "DND5E.Subtype": "Подтип",
   "DND5E.Summary": "Информация",
 
@@ -4331,6 +4851,14 @@
       "creatureTypes": {
         "label": "Типы существ",
         "hint": "Призванное существо будет изменено на этот тип. Если выбрано несколько типов, то можно будет выбрать один из них во время призыва."
+      },
+      "flat": {
+        "attack": {
+          "label": "Неизменный бонус попадания"
+        },
+        "save": {
+          "label": "Неизменная СЛ испытания"
+        }
       },
       "match": {
         "ability": {
@@ -4444,6 +4972,7 @@
     "Warning": {
       "NoOwnership": "У вас должны быть права владения '{actor}' для призыва.",
       "NoProfile": "Не удалось найти профиль призыва {profileId} у '{item}'.",
+      "PlaceTokens": "Ошибка размещения призванных на сцене.",
       "Wildcard": "У вас должны быть права на Использование проводника файлов, чтобы использовать случайное изображение токена призванного существа."
     }
   },
@@ -4453,6 +4982,48 @@
   },
   "DND5E.Supply": "Запас",
   "DND5E.Suppressed": "Подавлено",
+
+  "DND5E.TABLEOFCONTENTS": {
+    "Action": {
+      "Configure": "Настройка оглавления"
+    },
+    "FIELDS": {
+      "order": {
+        "label": "Порядок"
+      },
+      "position": {
+        "label": "Позиция"
+      },
+      "showPages": {
+        "label": "Показывать страницы"
+      },
+      "title": {
+        "label": "Переопределение заголовка"
+      },
+      "type": {
+        "label": "Тип"
+      }
+    },
+    "HiddenPages": "Скрытые страницы",
+    "HideAllPages": "Скрыть все страницы",
+    "JournalEntry": "Запись журнала",
+    "NoFolder": "Без папки",
+    "Special": {
+      "After": "После {chapter}",
+      "End": "В конце оглавления"
+    },
+    "Title": "Оглавление",
+    "Type": {
+      "Appendix": "Приложение",
+      "Chapter": "Глава",
+      "Header": "Заголовок",
+      "Special": "Особое"
+    },
+    "Warning": {
+      "DuplicateHeader": "Только одна запись может иметь тип «Заголовок».",
+      "DuplicatePosition": "У каждой главы и приложения должно быть уникальное значение позиции."
+    }
+  },
 
   "DND5E.TARGET": {
     "Action": {
@@ -4647,6 +5218,15 @@
           "otherSized": "{number} {sizes} радиусы"
         }
       },
+      "Ring": {
+        "Label": "Кольцо",
+        "Counted": {
+          "one": "{number} кольцо",
+          "other": "{number} кольца",
+          "oneSized": "{sizes} кольцо",
+          "otherSized": "{number} {sizes} кольца"
+        }
+      },
       "Self": {
         "Label": "На себя"
       },
@@ -4723,6 +5303,36 @@
     }
   },
 
+  "DND5E.TELEPORT": {
+    "Action": {
+      "Teleport": "Телепортация"
+    },
+    "FIELDS": {
+      "teleport": {
+        "label": "Дистанция",
+        "hint": "Задайте максимальную дистанцию телепортации.",
+        "override": {
+          "label": "Переопределение",
+          "hint": "Переопределить обычную дистанцию функции и задать максимальную дистанцию телепортации вручную."
+        },
+        "units": {
+          "label": "Единица дистанции"
+        },
+        "value": {
+          "label": "Максимальная дистанция"
+        }
+      }
+    },
+    "Hint": "Телепортировать токен в выбранную точку.",
+    "SECTIONS": {
+      "Teleport": "Телепортация"
+    },
+    "Title": "Телепортация",
+    "Warning": {
+      "InvalidDistance": "Телепортацию нельзя использовать на сценах без поддерживаемых единиц перемещения."
+    }
+  },
+
   "DND5E.Target": "Цель",
   "DND5E.TargetPl": "Цели",
   "DND5E.TargetType": "Тип цели",
@@ -4760,6 +5370,10 @@
   "DND5E.ToggleDescription": "Раскрыть описание",
 
   "DND5E.TOOL": {
+    "Formatter": {
+      "CheckBonus": "Бонус проверки {name}",
+      "Proficiency": "Умение {name}"
+    },
     "SECTIONS": {
       "Details": "Подробности {label}",
       "Bonuses": {
@@ -4883,15 +5497,20 @@
           "label": "Настройка",
           "hint": "Особые настройки превращения, вместо стандартных из шаблона."
         },
+        "formless": {
+          "hint": "Позволяет существу снять все формы и вернуться к исходному состоянию.",
+          "label": "Без формы"
+        },
         "identifier": {
           "label": "Идентификатор класса",
           "hint": "Идентификатор уровня персонажа или класса, используемый для определения ограничения уровня профиля."
         },
         "mode": {
           "label": "Режим",
-          "hint": "Способ выбора существ, являющихся источником превращения.",
-          "CR": "По классу опасности",
-          "Direct": "По прямой ссылке"
+          "hint": "Определяет, как вычисляются изменения превращения.",
+          "CR": "Параметры существа (по классу опасности)",
+          "Direct": "Параметры существа (по прямой ссылке)",
+          "Form": "Выбор формы"
         },
         "preset": {
           "label": "Шаблон"
@@ -4899,6 +5518,7 @@
       }
     },
     "Hint": "Изменить актёра, используя параметры другого актёра.",
+    "NoForm": "Без формы",
     "Preset": {
       "Appearance": {
         "Label": "Только внешний вид"
@@ -5056,6 +5676,7 @@
     "TemporaryClass": "Временный класс",
     "Title": "Превращение",
     "Warning": {
+      "FormActive": "Форма {form} уже активна на {actor}.",
       "NoOwnership": "У вас нет разрешения на превращение этого актёра.",
       "NoPermission": "Разрешение на превращение не предоставлено игрокам.",
       "OriginalActor": "Не найден оригинальный актёр с ID '{reference}'.",
@@ -5271,9 +5892,6 @@
     }
   },
 
-  "DND5E.Unknown": "Неизвестно",
-  "DND5E.Unlimited": "Неограниченно",
-
   "DND5E.USAGE": {
     "SECTION": {
       "Consumption": "Расход",
@@ -5332,6 +5950,7 @@
         "Delete": "Удаление профиля восстановления"
       },
       "Combat": "Бой",
+      "Empty": "Восстановление не указано. Используйте кнопку <i class=\"fas fa-plus\"></i> выше, чтобы добавить периоды восстановления.",
       "Never": "Никогда",
       "Period": {
         "Dawn": {
@@ -5594,6 +6213,42 @@
         }
       },
       "damage": {
+        "base": {
+          "bonus": {
+            "label": "Бонус базового урона"
+          },
+          "custom": {
+            "enabled": {
+              "label": "Использовать особую формулу базового урона"
+            },
+            "formula": {
+              "label": "Особая формула базового урона"
+            }
+          },
+          "denomination": {
+            "label": "Грань кости базового урона"
+          },
+          "number": {
+            "label": "Число костей базового урона"
+          },
+          "scaling": {
+            "formula": {
+              "label": "Формула подъёма базового урона"
+            },
+            "mode": {
+              "label": "Режим подъёма базового урона"
+            },
+            "number": {
+              "label": "Значение подъёма базового урона"
+            }
+          },
+          "types": {
+            "label": "Типы базового урона"
+          }
+        },
+        "bonus": {
+          "label": "Бонус урона"
+        },
         "hint": "Кости урона оружия. Модификатор характеристики и дополнительный урон будут автоматически добавлены при атаке."
       },
       "mastery": {
@@ -5823,18 +6478,31 @@
 
   "KEYBINDINGS.DND5E.DragCopy": "Принудительно копировать при перетягивании документа",
   "KEYBINDINGS.DND5E.DragMove": "Принудительно перемещать при перетягивании документа",
-  "KEYBINDINGS.DND5E.SkipDialogNormal": "Пропуск окна",
+  "KEYBINDINGS.DND5E.OpenCompendiumBrowser": "Открыть навигатор библиотек",
   "KEYBINDINGS.DND5E.SkipDialogAdvantage": "Пропуск окна (бросок с преимуществом/крит)",
   "KEYBINDINGS.DND5E.SkipDialogDisadvantage": "Пропуск окна (бросок с помехой/не-критический)",
+  "KEYBINDINGS.DND5E.SkipDialogNormal": "Пропуск окна",
+  "KEYBINDINGS.DND5E.ToggleSheetMode": "Переключить режим бланка",
 
   "MACRO.5eMissingTargetWarn": "Ваш актёр '{actor}' не имеет {type} с названием '{name}'.",
   "MACRO.5eMultipleTargetsWarn": "Ваш актёр '{actor}' имеет больше одного {type} с названием '{name}'. Будет выбран первый предмет.",
   "MACRO.5eNoActorSelected": "Не найден выбранный или привязанный актёр для применения макроса.",
   "MACRO.5eUnownedWarn": "Вы можете создавать макросы только для предметов, которыми владеете.",
 
-  "MIGRATION.5eBegin": "Обновляем данные системы D&D 5e до версии {version}. Пожалуйста, наберитесь терпения, не выключайте игру и не выключайте сервер.",
-  "MIGRATION.5eComplete": "Обновление системы D&D 5e до версии {version} завершено!",
-  "MIGRATION.5eVersionTooOldWarning": "Данные вашего мира D&D 5e загружены из очень старой версии Foundry и не могут быть гарантировано перенесены в новую версию. Вы можете попробовать, но могут возникнуть ошибки.",
+  "MIGRATION.DND5E": {
+    "Compendium": {
+      "Failed": "Ошибка миграции библиотеки {compendium}.",
+      "Migrate": "Миграция библиотеки {compendium} для версии {version}.",
+      "Refresh": "Обновление библиотеки {compendium}."
+    },
+    "World": {
+      "Begin": "Обновляем данные системы D&D 5e до версии {version}. Пожалуйста подождите, не выключайте игру и не выключайте сервер.",
+      "Complete": "Обновление системы D&D 5e до версии {version} завершено!"
+    },
+    "Warning": {
+      "VersionTooOld": "Данные вашего мира D&D 5e загружены из очень старой версии Foundry и не могут быть гарантировано перенесены в новую версию. Процесс будет выполнен, но возможны ошибки."
+    }
+  },
 
   "SETTINGS.5eAutoCollapseCardL": "Автоматически сворачивать описание на карточках предметов в чате.",
   "SETTINGS.5eAutoCollapseCardN": "Сворачивать карточки предметов",
@@ -5844,6 +6512,8 @@
   "SETTINGS.5eNoAdvancementsL": "Не отображать диалоговое окно повышения уровня и выбора вариантов развития.",
   "SETTINGS.5eNoConcentrationN": "Отключение отслеживания концентрации",
   "SETTINGS.5eNoConcentrationL": "Отключить автоматизацию концентрации в системе.",
+  "SETTINGS.5eNoExhaustionN": "Отключение автоматизации утомления",
+  "SETTINGS.5eNoExhaustionL": "Отключить автоматизацию эффектов утомления в системе.",
   "SETTINGS.5eGridAlignedSquareTemplatesL": "При создании квадратных шаблонов в результате сотворения заклинания или использования предмета, они выравниваются по сетке и не могут быть повёрнуты.",
   "SETTINGS.5eGridAlignedSquareTemplatesN": "Квадратные шаблоны по сетке",
   "SETTINGS.DND5E": {
@@ -5854,13 +6524,19 @@
         "Full": "Полная",
         "NoBlocking": "Частичная",
         "None": "Отключена"
+      },
+      "SenseVision": {
+        "Name": "Синхронизация чувств со зрением токена",
+        "Hint": "Автоматически настраивать дальность зрения токена, режим зрения и режимы обнаружения на основе чувств актёра.",
+        "Notice": "Зрение и обнаружение синхронизированы с {senses} этого актёра.",
+        "Senses": "чувства"
       }
     },
     "BLOODIED": {
       "Name": "Статус \"Окровавленность\"",
       "Hint": "Автоматическое отслеживание и видимость статуса \"Окровавленность\".",
-      "All": "Для союзников и противников",
-      "Player": "Только для союзников",
+      "All": "Показывать для дружественных, нейтральных и враждебных токенов",
+      "Player": "Показывать только для дружественных токенов",
       "None": "Никогда"
     },
     "COLLAPSETRAYS": {
@@ -5879,13 +6555,32 @@
         "Name": "Ничья решается Ловкостью",
         "Hint": "Использовать Ловкость для разрешения ничьи при проверке инициативы."
       },
+      "AutoApplyDowned": {
+        "Name": "Автоприменение «выведен из строя»",
+        "Hint": "Автоматически помечать существо как мёртвое или без сознания при снижении ПЗ до 0 в бою. Незначительные NPC помечаются мёртвыми. Важные ПМ и ПИ сначала помечаются без сознания, а мёртвыми — после трёх провалов испытаний против смерти.",
+        "None": "Никогда",
+        "DeadOnly": "Для ПМ (только смерть)",
+        "NPCs": "Для ПМ (смерть и без сознания)",
+        "All": "Всегда"
+      },
       "InitiativeScore": {
         "Name": "Параметр инициативы",
         "Hint": "Использовать параметр инициативы существа (10 + бонус) вместо проверки инициативы броском.",
         "All": "Использовать параметр для всех",
         "None": "Всегда проверять инициативу",
         "NPCs": "Использовать параметр только для ПМ"
+      },
+      "InitiativeGroupCombatants": {
+        "Name": "Группировать участников боя",
+        "Hint": "Группировать участников с одинаковой инициативой в трекере столкновения."
+      },
+      "InitiativeGroupRoll": {
+        "Name": "Один бросок на вид существа",
+        "Hint": "Использовать один бросок инициативы для одинаковых существ."
       }
+    },
+    "CONDITIONS": {
+      "Name": "Состояния"
     },
     "CRITICAL": {
       "Name": "Критический урон",
@@ -5901,6 +6596,16 @@
     "DEFAULTSKILLS": {
       "Name": "Стандартные навыки",
       "Hint": "Навыки, отображаемые у персонажей ведущего вне зависимости от умения."
+    },
+    "ENCOUNTERS": {
+      "Name": "Боевая сцена",
+      "EncounterPlacementBehavior": {
+        "Name": "Параметры размещения",
+        "Hint": "Определяет, добавлять ли участников боевой сцены в бой при размещении на сцене.",
+        "CreateCombatants": "Добавить в бой",
+        "None": "Ничего не делать",
+        "RollInitiative": "Добавить в бой и бросить инициативу"
+      }
     },
     "General": "Общее",
     "LOYALTY": {
@@ -5937,6 +6642,10 @@
         "Silent": "Бросать с сообщением в чате",
         "Yes": "Бросать без сообщения в чате"
       }
+    },
+    "PIETY": {
+      "Hint": "Включить отслеживание благочестия для персонажей игроков.",
+      "Name": "Показатель благочестия"
     },
     "THEME": {
       "Name": "Тема",
