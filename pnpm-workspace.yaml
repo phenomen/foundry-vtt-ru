@@ -1,11 +1,10 @@
-minimumReleaseAgeExclude:
-  - "@voidzero-dev/vite-plus-core@0.2.3"
-  - "@voidzero-dev/vite-plus-darwin-arm64@0.2.3"
-  - "@voidzero-dev/vite-plus-darwin-x64@0.2.3"
-  - "@voidzero-dev/vite-plus-linux-arm64-gnu@0.2.3"
-  - "@voidzero-dev/vite-plus-linux-arm64-musl@0.2.3"
-  - "@voidzero-dev/vite-plus-linux-x64-gnu@0.2.3"
-  - "@voidzero-dev/vite-plus-linux-x64-musl@0.2.3"
-  - "@voidzero-dev/vite-plus-win32-arm64-msvc@0.2.3"
-  - "@voidzero-dev/vite-plus-win32-x64-msvc@0.2.3"
-  - vite-plus@0.2.3
+catalog:
+  vite: npm:@voidzero-dev/vite-plus-core@0.2.6
+  vite-plus: 0.2.6
+overrides:
+  vite: "catalog:"
+peerDependencyRules:
+  allowAny:
+    - vite
+  allowedVersions:
+    vite: "*"
