@@ -1,0 +1,762 @@
+{
+  "CAMPAIGN_CODEX": {
+    "updateHTML": "<div> <p><strong>ТРЕБУЕТСЯ ВАЖНОЕ ДЕЙСТВИЕ: Campaign Codex</strong></p><p>Если вы только что обновили Campaign Codex с версии 1.5.7 или более ранней, используйте макрос <strong>Миграция регионов-источников</strong> из библиотеки макросов модуля.</p></div>",
+    "updateQUESTS": "<div> <p><strong>ТРЕБУЕТСЯ ВАЖНОЕ ДЕЙСТВИЕ: Campaign Codex</strong></p><p>Если вы только что обновили Campaign Codex с версии 2.x до 3.x и ранее использовали карточки заданий, используйте макрос <strong>QuestConvert_v3</strong> из библиотеки макросов модуля.</p></div>",
+    "updateINVENTORY": "<div> <p><strong>ТРЕБУЕТСЯ ВАЖНОЕ ДЕЙСТВИЕ: Campaign Codex</strong></p><p>Если вы обновили Campaign Codex с предыдущей версии и используете инвентари, используйте макрос <strong>Миграция инвентаря в кэш инвентаря</strong> из библиотеки макросов модуля.</p></div>\n</p></div><div><p><strong>Маркеры на карте:</strong></p><p>Если вы обновили Campaign Codex с предыдущей версии и используете Названия журналов как маркеры на карте (пр. A1 - Название), используйте макрос <strong>Названия маркеров на карте в новые маркеры на карте</strong> из библиотеки макросов модуля для миграции названий в поле маркера, а встраиваемые маркеры на карте не используются.</p></div>",
+    "welcomePageHTML": "<div> <p><strong>Добро пожаловать в Campaign Codex!</strong></p> <p>Управление папками, настройка системных цен и валюты, а также другие опции могут быть изменены в настройках.</p> <div><button data-campaign-codex-handler=\"campaign-codex|openMenu|core_settings\"><i class=\"fas fa-wrench\"></i>Настройки</button></div> <hr> <p><strong>Становитесь частью сообщества Campaign Codex</strong></p> <p>Если вы хотите предложить функцию, сообщить об ошибке или же просто поболтать, присоединяйтесь к нам в Discord.</p> <div><button data-campaign-codex-handler=\"campaign-codex|openWindow|https://discord.gg/fycwH79s2y\"><i class=\"fab fa-discord\"></i> Наш Discord</button></div> <p><strong>Нашли ошибку?</strong></p> <p>Если вы хотите сообщить об ошибке, но не пользуетесь Discord, пишите о ней на GitHub.</p> <div><button data-campaign-codex-handler=\"campaign-codex|openWindow|https://github.com/xthesaintx/cc13\"><i class=\"fas fa-bug\"></i> Сообщить об ошибке</button></div> <p><strong>Поддержать разработку</strong></p> <p>Если вы хотите поддержать разработку, вы можете рассмотреть разные опции подписки на Patreon.</p> <div><button data-campaign-codex-handler=\"campaign-codex|openWindow|https://patreon.com/wgtngm\"><i class=\"fa-brands fa-patreon\"></i> Стать участником</button></div><p>Вы можете поддержать разработку на Ko-fi, если вам так удобнее.</p><div><button data-campaign-codex-handler=\"campaign-codex|openWindow|https://ko-fi.com/wgtngm\"><i class=\"fas fa-cup-togo\"></i> Оплатить чашечку кофе</button></div><p><strong>Документация</strong></p> <p>Слегка потерялись? Переходите на страницу документации, где находится руководство, или присоединяйтесь к нам в Discord и задайте вопрос.</a>.</p> <div><button data-campaign-codex-handler=\"campaign-codex|openWindow|https://campaigncodex.wgtngm.com\"><i class=\"fas fa-book\"></i> Документация</button></div></div>",
+    "tabs": {
+      "original-name": "Изначальное название",
+      "override-name": "Перезапись названия",
+      "visible": "Включено",
+      "hidden": "Спрятан",
+      "edit-title": "Настроить вкладки",
+      "reset": "Сбросить"
+    },
+    "widgets": {
+      "available": "Доступно",
+      "inactive": "Неактивный",
+      "active": "Активно"
+    },
+    "context": {
+      "hideAssociate": "Скрыть от игроков",
+      "showAssociate": "Показать игрокам",
+      "export": "Экспортировать в обычный журнал",
+      "group": "Добавить в {type}",
+      "changeImage": "Изменить изображение",
+      "removeImage": "Убрать изображение",
+      "showImage": "Показать изображение игрокам",
+      "showInDirectory": "Показать расположение",
+      "removeLink": "Отвязать",
+      "removeTag": "Удалить метку"
+    },
+    "toc": {
+      "filter": "Включение по левому клику, исключение по левому клику. Используйте кнопку Режима, чтобы переключать логику И/ИЛИ.",
+      "clear": "Очистить фильтры",
+      "filterPlaceholder": "Фильтр..."
+    },
+    "button": {
+      "deactivate": "Отключить",
+      "title": "Создать новый {type}",
+      "droptoscene": "Перетащите {type} на текущую сцену",
+      "tagmode": "Режим меток",
+      "dropactortoscene": "Перетащите актёра на текущую сцену"
+    },
+    "info": {
+      "automatically": "{type} автоматически наполнен всем из {source}.",
+      "refresh": "Обновить",
+      "linkfound": "Связать с существующим {type}.",
+      "newlink": "Созданный и связанный {type} с этой сцены.",
+      "linked": "Связанный {type}"
+    },
+    "sheet": {
+      "journal": "{type} Журнал"
+    },
+    "add": "Добавить {type}",
+    "group": {
+      "notfound": "Предмет, который вы пытаетесь добавить, не найден.",
+      "self": "Группа не может быть добавлена сама в себя.",
+      "expandAll": "Раскрыть всё",
+      "collapseAll": "Свернуть всё",
+      "toggleRegions": "Спрятать/Показать регионы",
+      "toggleShops": "Спрятать/Показать записи",
+      "toggleLocations": "Спрятать/Показать локализации",
+      "toggleGroups": "Спрятать/Показать группы",
+      "toggleItems": "Спрятать/Показать предметы инвентаря",
+      "toggleNPCs": "Спрятать/Показать НИП",
+      "toggleNPCTags": "Спрятать/Показать метки НИП",
+      "toggleTagMode": "Вид фракций"
+    },
+    "member": {
+      "type": "Член фракции \"{type}\""
+    },
+    "heading": {
+      "in": "{type} {in}"
+    },
+    "names": {
+      "widgets": "Виджеты",
+      "regionlocation": "Регионы или локации",
+      "location": "Местоположение",
+      "locations": "Локации",
+      "group": "Группа",
+      "groups": "Группы",
+      "shop": "Запись",
+      "shops": "Записи",
+      "region": "Регион",
+      "regions": "Регионы",
+      "parentregions": "Источники",
+      "npc": "Персонаж мастера",
+      "npcs": "НИПы",
+      "groupnpcs": "Связанные НИП и фракции",
+      "items": "Элементы",
+      "journal": "Дневник",
+      "journals": "Журналы",
+      "organisation": "Организация",
+      "organisations": "Организации",
+      "associate": "Союзник",
+      "associates": "Союзники",
+      "members": "Члены",
+      "direct": "Указание",
+      "info": "Информация",
+      "information": "Информация",
+      "note": "Заметки",
+      "actor": "Актёр",
+      "player": "Игрок",
+      "faction": "Фракция",
+      "tag": "Метка",
+      "tags": "Метки",
+      "inventory": "Инвентарь",
+      "loot": "Добыча",
+      "scene": "Сцена",
+      "standard": "Стандартное",
+      "quest": "Задание",
+      "quests": "Задания",
+      "toc": "Оглавление",
+      "factions": "Фракции",
+      "entities": "Сущности"
+    },
+    "settings": {
+      "allowPlayerPurchasing": {
+        "name": "Позволить игрокам покупать из Инвентаря",
+        "hint": "Если эта опция включена, игроки могут отправлять себе вещи из инвентаря"
+      },
+      "allowPlayerLooting": {
+        "name": "Позволить игрокам брать из Инвентаря Добычи",
+        "hint": "Если эта опция включена, игроки могут отправлять себе вещи из инвентаря добычи"
+      },
+      "mapMarkerOverride": {
+        "name": "Размер маркера на карте",
+        "hint": "Размер маркера Campaign Codex на карте. По умолчанию 1"
+      },
+      "mapMarkerColorPicker": {
+        "name": "Цвет для маркеров на карте",
+        "hint": "Установить цвет, используемый для маркеров Campaign Codex"
+      },
+      "mapMarkerColor": {
+        "name": "Использовать установленный цвет для маркеров на карте",
+        "hint": "Если эта опция включена, маркеры Campaign Codex будут использовать выбранный цвет как фоновый"
+      },
+      "mapMarkerUseSheetIconFallback": {
+        "name": "Использовать иконку листа, когда маркер пуст",
+        "hint": "Если эта опция включена, если маркер Campaign Codex не задан, заметка будет использовать обычную иконку листа вместо создания кода маркера из названия."
+      },
+      "mapMarkers": {
+        "name": "Включить маркеры Campaign Codex для карты",
+        "hint": "Если эта опция включена, листы CC с маркером будут использованы на сценах"
+      },
+      "mapMarkersHover": {
+        "name": "Включить предпросмотр при наведении на маркеры Campaign Codex",
+        "hint": "Если эта опция включена, виджеты маркеров будут отображать содержимое при наведении"
+      },
+      "mapMarkersHoverDelay": {
+        "name": "Задержка при наведении на маркер (мс)",
+        "hint": "Задержка перед отображением содержимого заметки при наведении. От 0 до 1500 миллисекунд."
+      },
+      "hideGmCCbutton": {
+        "name": "Спрятать кнопку оглавления CC для Мастера",
+        "hint": "Спрятать кнопку оглавления CC панели управления сценой для Мастеров."
+      },
+      "hideCCbutton": {
+        "name": "Спрятать кнопку оглавления CC",
+        "hint": "Спрятать кнопку оглавления CC панели управления сценой для не-Мастеров."
+      },
+      "useStyledTocButton": {
+        "name": "Стилизованная кнопка оглавления",
+        "hint": "Включите, чтобы использовать тему Campaign Codex для кнопки оглавления на панели управления сценой."
+      },
+      "colorPicker": {
+        "name": "Перезапись акцентного цвета",
+        "hint": "Перезаписывает стандартный акцентный цвет темы. Введите цветовой код, например #b9a987. Оставьте пустым, чтобы вернуться к стандарту."
+      },
+      "showOnlyPinned": {
+        "name": "Показывать только закреплённые задания в оглавлении",
+        "hint": "При включении оглавление будет отображать только задания, отмеченные как \"закреплённые\"."
+      },
+      "showStats": {
+        "name": "Отображать количество в меню",
+        "hint": "Будет показывать (#) рядом с предметами в меню в листах для отображения количества каждого вида — только для Мастера."
+      },
+      "showActorDropperDialog": {
+        "name": "Показывать диалог для перетаскивания актёров",
+        "hint": "При отключении актёры размещаются немедленно, без диалогового окна."
+      },
+      "roundFinalPrice": {
+        "name": "Округлять итоговую цену до целого числа",
+        "hint": "Будет округлять итоговую цену предмета дл ближайшего целого числа."
+      },
+      "maxRegionDepth": {
+        "name": "Перезаписать глубину списка",
+        "hint": "Количество слоёв регионов, которые вы можете создавать. По умолчанию 5, более высокое значение может нагружать систему."
+      },
+      "itemPricePath": {
+        "name": "Перезаписать путь цены предмета",
+        "hint": "Путь к цене предмета (пр. 'system.price.value' для D&D5e). Оставьте пустым, чтобы система определила автоматически."
+      },
+      "enableThemes": {
+        "name": "Включить пользовательскую тему",
+        "hint": "Включает пользовательские цвета и настройки, выбранные в Настройке цветов."
+      },
+      "playerCurrencyPath": {
+        "name": "Перезаписать путь валюты игроков",
+        "hint": "Путь к валюте игроков (пр. 'system.currency' for D&D5e). Оставьте пустым, чтобы система определила автоматически."
+      },
+      "itemDenominationPath": {
+        "name": "Перезаписать путь предметов валюты",
+        "hint": "Путь к обозначению валюты (пр. 'system.price.denomination' для D&D5e). Оставьте пустым, чтобы система определила автоматически."
+      },
+      "itemDenominationOverride": {
+        "name": "Перезаписать наименование валюты",
+        "hint": "Наименование валюты (пр. кредиты, зм, юниты). Оставьте пустым, чтобы использовать Путь предметов валюты или позволить системе определить. Campaign Codex автоматически определить ценность и название предметов на основе активной игровой системы (пр. Dungeons and Dragons 5e, Pathfinder 2e, Starfinder, Savage Worlds Adventure Edition, Pathfinder 1e, Old-School Essentials and Daggerheart)."
+      },
+      "inventoryCategoryPath": {
+        "name": "Перезаписать путь категории инвентаря",
+        "hint": "Путь к категории предметов для группировки инвентаря (пр. 'system.itemtype'). Оставьте пустым, чтобы использовать тип предмета."
+      },
+      "useAssetLibrarianCategoryTag": {
+        "name": "Использовать метку категории Asset Librarian",
+        "hint": "Если эта опция включена, группировка инвентаря использует flags.asset-librarian.categoryTag в приоритете перед другими источниками категорий."
+      },
+      "hideBaseCost": {
+        "name": "Скрыть колонку базовой стоимости",
+        "hint": "Если вам не нужна видимая колонка базовой стоимости, или у системы нет пути цены, вы можете спрятать эту колонку на вкладке инвентаря. Переоткройте листы, чтобы они обновились."
+      },
+      "sortCardsAlpha": {
+        "name": "Автоматически сортировать карточки по алфавиту",
+        "hint": "При включении карточки будут сортироваться от A до Z"
+      },
+      "runonlyonce": {
+        "name": "Приветственное сообщение - Отключено",
+        "hint": "При включении вы не будете видеть приветственное сообщение"
+      },
+      "actorLinkTokenHUD": {
+        "name": "Ссылка на Campaign Codex в интерфейсе токена",
+        "hint": "Отображать связанные листы НИП в Campaign Codex в интерфейсе токена"
+      },
+      "useOrganizedFolders": {
+        "name": "Структурировать в папки",
+        "hint": "Автоматически создать и структурировать журналы Campaign Codex в папки"
+      },
+      "showQuestByVisibility": {
+        "name": "Показывать задания в зависимости от прав пользователя",
+        "hint": "Показываться связанные задания, если у пользователя есть разрешения наблюдателя или владельца журнала заданий"
+      },
+      "hideByPermission": {
+        "name": "Скрыть согласно владению",
+        "hint": "Спрятать связанные листы, если у пользователя нет разрешения наблюдателя или владельца журнала"
+      },
+      "allowPlayerViewInventory": {
+        "name": "Позволять игрокам смотреть все описания предметов",
+        "hint": "Позволять игрокам смотреть описание любого предмета, наблюдателем которого они не являются"
+      },
+      "hideInventoryByPermission": {
+        "name": "Скрыть предметы инвентаря согласно владению",
+        "hint": "Спрятать предметы в инвентарях, если у пользователя нет разрешения наблюдателя или владельца предмета"
+      },
+      "addPurchaseFundsToInventoryCash": {
+        "name": "Добавлять приобретённые средства в имеющуюся валюту в инвентаре",
+        "hint": "Если эта опция включена, успешные покупки добавляют уплаченную валюту в инвентарь валюты этого листа."
+      },
+      "enableTransactionLogging": {
+        "name": "Включить отчёты о транзакциях",
+        "hint": "Если эта опция включена, продажи и покупки будут записываться в отчёт о транзакциях."
+      },
+      "resetItemPathsButton": {
+        "name": "Сбросить",
+        "hint": "Включите эту опцию и сохраните, чтобы восстановить настройки по умолчанию"
+      }
+    },
+    "notifications": {
+      "itemPricePathsReset": "Пути цен предметов сбрасываются до стандартных для D&D5e"
+    },
+    "dropzone": {
+      "region": "Перетащите {type} сюда для добавления",
+      "location": "Перетащите {type} сюда или сцены для добавления",
+      "shop": "Перетащите журналы типа {type} сюда для добавления",
+      "npc": "Перетащите {type} или актёров сюда для добавления",
+      "associate": "Перетащите {type} или Актёров сюда для создания отношений",
+      "item": "Перетащите {type} для добавления в инвентарь",
+      "generic": "Перетащите {type} сюда",
+      "link": "Перетащите {type} для создания связи",
+      "empty": "Пустой {type}"
+    },
+    "dragToAdd": {
+      "item": "Перетащите предметы сюда для добавления в инвентарь",
+      "empty": "Пустой"
+    },
+    "error": {
+      "faileditem": "Не удалось переместить предмет"
+    },
+    "warn": {
+      "notEnoughCurrency": "Недостаточно средств",
+      "directly": "Невозможно удалить {type} напрямую",
+      "remove": "Удалить {type}",
+      "invaliddrop": "Не найдено членов со связанными актёрами, которых можно перетащить!",
+      "nonpcfound": "Не найдено НИП, которых можно перетащить на карту!",
+      "actornotfound": "Связанный актёр не найден!",
+      "failedtodrop": "Не удалось перетащить НИП на карту!",
+      "scenenotfound": "Не удалось найти перетащенную сцену."
+    },
+    "message": {
+      "open": "Открыть {type}",
+      "unlink": "Отвязать {type}",
+      "droptomap": "Перетащить членов {type} на сцену",
+      "drop": "Перетащить на сцену."
+    },
+    "title": {
+      "all": "Все",
+      "open": {
+        "actor": "Открыть лист актёра",
+        "sheet": "Открыть лист"
+      },
+      "unlink": {
+        "actor": "Отвязать лист актёра"
+      },
+      "sort": {
+        "alphabetically": "Сортировать инвентарь по алфавиту"
+      },
+      "send": {
+        "player": "Отправить игроку",
+        "purchase": "Купить",
+        "item": {
+          "player": "Отправить предмет персонажу игрока",
+          "typetoplayer": "Отправить {type} игроку {player}."
+        }
+      },
+      "infinite": {
+        "item": "Переключение бесконечного количества"
+      },
+      "remove": {
+        "item": "Удалить предмет",
+        "allInventory": "Убрать все разблокированные предметы из инвентаря",
+        "lockedFromAll": "Защищён от Убрать все",
+        "unlockedForAll": "Не защищён от Убрать все",
+        "from": {
+          "group": "Удалить из группы"
+        }
+      },
+      "focus": {
+        "in": {
+          "tab": "Фокус на вкладке"
+        }
+      }
+    },
+    "inventory": {
+      "added": "Добавлено в инвентарь: {type}",
+      "price": {
+        "name": "Цена",
+        "base": "Базовая цена",
+        "final": "Итоговая цена"
+      },
+      "quantity": "Количество",
+      "actions": "Действия",
+      "item": {
+        "name": "Название предмета"
+      },
+      "global": {
+        "markup": "Глобальный модификатор цен"
+      },
+      "help": {
+        "markup": "Предметы без пользовательской цены будут использовать базовую цену х модификатор"
+      }
+    },
+    "ui": {
+      "addedto": "{type} добавлен в {typeb}",
+      "drag": {
+        "link": {
+          "journal": {
+            "standard": "Журнал: Перетащите стандартный журнал, чтобы создать связь"
+          }
+        }
+      },
+      "warn": {
+        "notfound": {
+          "player": {
+            "character": "Не найдено игровых персонажей"
+          }
+        }
+      },
+      "send": {
+        "item": {
+          "player": "Какому игровому персонажу отправить <strong>{type}</strong>?"
+        }
+      },
+      "cancel": "Отменить",
+      "Save": "Сохранить",
+      "quicklinks": "Быстрые ссылки",
+      "toggleQuicklinks": "Переключение быстрых ссылок",
+      "customiseTabs": "Настроить вкладки",
+      "createNewTag": "Создать новую метку",
+      "toggleExistingTags": "Переключить существующие метки",
+      "themeConfigDescription": "Настроить цвета темы для интерфейса Campaign Codex. Изменения применятся после сохранения.",
+      "tabName": "Название вкладки",
+      "defaultVisible": "Видимость по умолчанию",
+      "hiddenFromPlayer": "Скрыто от игрока",
+      "tabPickerDescription": "Установка единой глобальной перезаписи названия для каждой кнопки вкладки, плюс видимость по умолчанию <i class=\"fas fa-power-off\"></i> и сокрытие от игроков <i class=\"fas fa-eye-slash\"></i> на основе типа листа. ",
+      "lootMode": "Режим добычи",
+      "filter": "Фильтр...",
+      "tagsPlaceholder": "Добавить метку...",
+      "removeTag": "Удалить метку",
+      "noAssociatesLinked": "Нет связей.",
+      "moveWidgets": "Переместить виджеты",
+      "dropActorsHere": "Перетащите актёров сюда",
+      "widgetTitle": "Название виджета",
+      "xpLabel": "ОО",
+      "balanceEncounter": "Баланс столкновения",
+      "noteTitle": "Название заметки",
+      "noNotesAvailable": "Нет доступных заметок.",
+      "playerNoteVisibleToPlayers": "Видима всем игрокам",
+      "playerNoteHiddenFromPlayers": "Скрыта от других игроков",
+      "playerNotePrivateLabel": "Личная",
+      "playerNoteSharedLabel": "Общие",
+      "playerNoteToggleNeedsContent": "Напишите заметку, прежде чем изменять общую видимость.",
+      "noQuestsFound": "Заданий не найдено.",
+      "drop": "Перетащить",
+      "removeAll": "Убрать все",
+      "remove": "Удалить",
+      "cr": "Опасность столкновения",
+      "linkedEntityTable": {
+        "title": "Связанные сущности",
+        "marker": "Метка",
+        "name": "Имя",
+        "linkType": "Тип",
+        "unlink": "Отвязать",
+        "empty": "Нет связанных сущностей.",
+        "sortBy": "Сортировать по {label}",
+        "linkedDocument": "Связанный документ",
+        "linkTypes": {
+          "parentRegion": "Регион-источник",
+          "member": "Член",
+          "dependency": "Зависимость",
+          "macro": "Макрос"
+        }
+      }
+    },
+    "quest": {
+      "rewards": "Награды",
+      "objectives": "Цели",
+      "addObjective": "Добавить цель",
+      "addSubObjective": "Добавить подцели",
+      "toggleCompletion": "Переключить выполнение",
+      "togglePlayerVisibility": "Переключить видимость игроками",
+      "deleteObjective": "Уделить цель",
+      "markAsIncomplete": "Отметить невыполненным",
+      "markAsComplete": "Отметить выполненным",
+      "removeFromQuestBoard": "Уделить с доски заданий",
+      "pinToQuestBoard": "Закрепить на доске заданий",
+      "hideFromPlayers": "Скрыть от игроков",
+      "showToPlayers": "Показать игрокам",
+      "removeQuest": "Удалить задание",
+      "removeItem": "Удалить предмет",
+      "pinned": "Закреплено",
+      "notPinned": "Откреплено",
+      "active": "Активно",
+      "completed": "Завершено",
+      "inactive": "Неактивный",
+      "failed": "Провалено",
+      "cycleStatus": "Сменить статус",
+      "openSource": "Открыть источник задания",
+      "pinnedQuests": "Закреплённые задания",
+      "noPinnedQuests": "Пока нет закреплённых заданий. Закрепите задания с левой панели.",
+      "progress": "Прогресс",
+      "blocked": "Недоступно",
+      "locked": "Заблокировано",
+      "unlocked": "Разблокировано",
+      "owner": "Владелец",
+      "visible": "Видимо",
+      "dueDate": "Дата завершения",
+      "urgency": "Срочность",
+      "boardColumn": "Колонка на доске",
+      "boardOrder": "Порядок на доске",
+      "hideRewardsSideBar": "Скрыть награды",
+      "notifyPlayersSideBar": "Автоматическое уведомление",
+      "messageOnCompletedSideBar": "Объявление о выполнении",
+      "hideRewards": "Скрыть награды от игроков",
+      "notifyPlayers": "Автоматически уведомлять игроков об изменениях",
+      "messageOnCompleted": "Отправить в чат по завершении",
+      "notifyPlayersNow": "Объявление об обновлении",
+      "updated": "Обновлено",
+      "questGiver": "Задание выдано",
+      "related": "Сопутствующие листы",
+      "dependencies": "Зависит от",
+      "unlocks": "Разблокирует",
+      "macros": "Макросы",
+      "none": "Нет",
+      "dropQuestGiver": "Перетащите лист сюда, чтобы задать персонажа, выдавшего задание",
+      "dropRelated": "Перетащите лист сюда, чтобы связать как сопутствующий",
+      "dropDependency": "Перетащите задание сюда",
+      "dropUnlock": "Перетащите задание сюда",
+      "dropMacro": "Перетащите макрос сюда",
+      "currency": "Валюта",
+      "reputation": "Репутация",
+      "rewardText": "Заметки по награде",
+      "rewardClaimed": "Награда получена",
+      "addCheckIn": "Добавить отметку",
+      "checkInNote": "Заметка об отметках",
+      "checkIns": "Отметки",
+      "updatedForPlayers": "Задание было обновлено.",
+      "createHandout": "Создать раздатку",
+      "recentUpdates": "Недавние обновления",
+      "noRecentUpdates": "Недавние обновления отсутствуют.",
+      "linkedQuestNotPinned": "Связанное задание сейчас не закреплено на доске.",
+      "columnActive": "Активно",
+      "columnCompleted": "Завершено",
+      "columnFailed": "Провалено",
+      "openSourceJournal": "Открыть журнал-источник: {name}",
+      "distributeAwards": "Распределить награды"
+    },
+    "dialog": {
+      "create": "Создать",
+      "cancel": "Отменить",
+      "save": "Сохранить",
+      "close": "Закрыть",
+      "confirm": "Подтвердить",
+      "yes": "Да",
+      "no": "Нет",
+      "createNew": "Создать новый {type}",
+      "nameLabel": "Название:",
+      "enterName": "Введите название {type}...",
+      "defaultName": "Новый {type}",
+      "areYouSure": "Вы уверены?",
+      "removeAllInventory": "Вы уверены, что хотите удалить все разблокированные предметы инвентаря?",
+      "importContent": "Вы хотите импортировать существующий текст из \"{name}\" в описание Campaign Codex?",
+      "defaultTabVisibility": "Видимость вкладок по умолчанию",
+      "themeColors": "Цвета темы Campaign Codex",
+      "templatePath": "Путь к шаблону Campaign Codex",
+      "editPin": "Редактировать маркер",
+      "newNote": "Новая заметка",
+      "exportCampaignCodex": "Экспорт Campaign Codex",
+      "importCampaignCodex": "Импорт Campaign Codex",
+      "confirmExport": "Подтвердить экспорт",
+      "confirmImport": "Подтвердить импорт",
+      "overwriteCompendiums": "Перезаписать библиотеки модуля?",
+      "overwriteCompendium": "Перезаписать библиотеку?",
+      "exportToStandardJournal": "Экспортировать в обычный журнал",
+      "sendItemToPlayer": "Отправить предмет персонажу игрока",
+      "dropActorsToMap": "Перетащите актёров на карту",
+      "dropToMap": "Перетащите {name} на карту",
+      "dropNpcsToMap": "Перетащите НИП {name} на карту",
+      "contextImage": "Контекстное изображение",
+      "templates": "Шаблоны",
+      "dropNpcsToScene": "Перетащите НИП на карту",
+      "selectNpcsToPlace": "Выберите НИП для размещения на текущей сцене:",
+      "startTokensHidden": "Токены начинают спрятанными",
+      "startPlacing": "Начать размещение",
+      "rotateHelp": "Повернуть:",
+      "rotateHelpDetail": "Прокручивайте колёсико, чтобы поворачивать токены",
+      "gridSnapHelp": "Прикрепление к сетке:",
+      "gridSnapHelpDetail": "Зажмите Shift, чтобы отключить прикрепление",
+      "skipTokensHelp": "Пропустить токены:",
+      "skipTokensHelpDetail": "ПКМ, чтобы пропустить ненужных НИП",
+      "deleteNote": "Вы уверены, что хотите удалить эту заметку?",
+      "playerVisible": "Игрок виден",
+      "playerHidden": "Игрок скрыт",
+      "exportToModule": "Экспорт в модуль",
+      "exportToObsidian": "Экспорт в Obsidian",
+      "selectExportTarget": "Выбрать цель экспорта",
+      "selectImportTarget": "Выбрать цель импорта",
+      "exportCleanup": "Запустить чистку перед экспортом",
+      "sendToPlayer": "Какому игровому персонажу отправить <strong>{item}</strong>?",
+      "filterCharacters": "Фильтр персонажей...",
+      "deductFunds": "Вычесть средства у актёра",
+      "sendToPlayerTitle": "Отправить предмет персонажу игрока",
+      "distributeAwardsTitle": "Распределить награды",
+      "distributeMode": "Распределение",
+      "divideAmongSelected": "Разделить всё между выбранными",
+      "totalToEachSelected": "Дать всё каждому из выбранных",
+      "includeRewards": "Типы наград",
+      "includeXP": "Включать ОО",
+      "includeCurrency": "Включать валюту",
+      "selectRecipients": "Получатели",
+      "offline": "Не в сети",
+      "balanceEncounter": "Баланс столкновения",
+      "targetPartyLevel": "Целевой уровень группы",
+      "numberOfPlayers": "Количество игроков",
+      "difficulty": "Сложность",
+      "difficultyLow": "Низкое",
+      "difficultyModerate": "Среднее",
+      "difficultyHigh": "Высокое",
+      "balanceEncounterBudgetNote": "Бюджет ОО за персонажа, умноженного на кол-во игроков (DMG 2024).",
+      "reviewEncounterQuantities": "Предпросмотр количества по столкновению",
+      "stillOverBudget": "Всё ещё выше бюджета",
+      "underBudgetBy": "Меньше бюджета на",
+      "onBudget": "В рамках бюджета",
+      "target": "Цель",
+      "current": "Текущее",
+      "suggested": "Рекомендуемое",
+      "currentBeforeEdits": "Текущее",
+      "suggestedAfterEdits": "После изменений",
+      "new": "Новое",
+      "balanceProtected": "защита от авто-понижения",
+      "balanceManualOnly": "только вручную",
+      "balanceClickToUnlock": "Нажмите для разблокировки",
+      "balanceClickToLock": "Нажмите для блокировки",
+      "partyLevel": "Уровень группы",
+      "level": "Уровень",
+      "threat": "Угроза",
+      "threatTrivial": "Тривиальное",
+      "threatLow": "Низкое",
+      "threatModerate": "Среднее",
+      "threatSevere": "Серьёзное",
+      "threatExtreme": "Экстремальное",
+      "balanceEncounterPf2eNote": "ОО считаются на основе уровня существа против уровня группы, рассчитывая бюджет на основе её размера."
+    },
+    "notify": {
+      "journalNotFound": "Campaign Codex | Запись журнала не найдена.",
+      "widgetDataMissing": "Campaign Codex | Данные виджета отсутствуют.",
+      "noteContentNotFound": "Campaign Codex | Содержимое Заметки и Журнала не найдено.",
+      "dragDropToLink": "Перетащите запись журнала на маркер, чтобы связать их.",
+      "journalUnlinked": "Журнал отвязан от маркера.",
+      "invalidDropType": "Только записи журнала и страницы записей журнала можно перетаскивать на карту.",
+      "documentNotFound": "Не найден перетаскиваемый документ.",
+      "addedPin": "Добавлен маркер для \"{name}\".",
+      "mergingFolders": "Объединение дубликатов папок \"{name}\"...",
+      "folderCleanupComplete": "Чистка папок Campaign Codex завершена.",
+      "cannotCreateType": "Невозможно создать документ неизвестного типа: \"{type}\"",
+      "couldNotFindJournal": "Campaign Codex | Не удалось найти запись журнала с UUID {uuid}",
+      "invalidConversionType": "Campaign Codex | Невозможный тип конвертации \"{type}\".",
+      "noTextPages": "В журнале \"{name}\" нет страниц с текстовым содержимом для конвертации.",
+      "createdSheets": "Создано {count} новых листов {type} из страниц \"{name}\".",
+      "createdSheet": "Успешно создан новый лист {type} из \"{name}\"",
+      "dropRollTable": "Пожалуйста перетащите документ случайной таблицы.",
+      "rollTableNotFound": "Связанная таблица не найдена.",
+      "documentTypeNotFound": "Документ {type} не найден",
+      "failedToOpen": "Не удалось открыть {type}",
+      "noLinkedActor": "Campaign Codex | Связанный актёр не найден для отслеживания Верности.",
+      "dropMacro": "Пожалуйста перетащите документ макроса.",
+      "macroExecuted": "Исполнено: {name}",
+      "macroNotFound": "Макрос не найден.",
+      "dropActor": "Пожалуйста перетащите документ актёра.",
+      "actorDataNotFound": "Не удалось найти данные актёра.",
+      "dropperNotAvailable": "Утилита перетаскивания недоступна.",
+      "failedToDropActors": "Не удалось перетащить актёров.",
+      "noActorsToDrop": "Нет актёров для перетаскивания.",
+      "noRestockTables": "Нет связанных таблиц пополнения ассортимента.",
+      "noValidItems": "Нет подходящих предметов в результатах броска.",
+      "restocked": "Пополнено: {count} предметов.",
+      "tabVisibilitySaved": "Видимость вкладок по умолчанию для Campaign Codex сохранена!",
+      "tabVisibilityReset": "Видимость вкладок по умолчанию для Campaign Codex сброшена.",
+      "invalidTemplate": "Неподходящее определение шаблона.",
+      "failedTemplate": "Не удалось загрузить шаблон: {name}",
+      "themeApplied": "Настройки темы Campaign Codex применены!",
+      "themeExported": "Campaign Codex: Тема экспортирована успешно.",
+      "themeImported": "Тема импортирована успешно.",
+      "themeImportFailed": "Не удалось обработать файл JSON.",
+      "themeReset": "Цвета темы Campaign Codex были сброшены.",
+      "noLinkedActorForDrop": "Campaign Codex | Связанный актёр не найден для отслеживания Верности.",
+      "noSceneActive": "Отсутствует активная сцена!",
+      "noNpcsWithActors": "Нет связанных НИП-актёров для перетаскивания!",
+      "noActorsToDropNpc": "Нет актёров для перетаскивания!",
+      "noValidActors": "Не найдено подходящих актёров для перетаскивания!",
+      "noNpcsSelected": "Не выбрано НИП!",
+      "preparingNpcs": "{count} НИП подготавливаются для размещения...",
+      "noActorsPrepared": "Не удалось подготовить актёров для размещения!",
+      "placementInstructions": "Нажмите на сцену для размещения {count} НИП. Перетащите для размещения, крутите колёсико для поворота, кликните для подтверждения, ПКМ чтобы пропустить.",
+      "placementCancelled": "Размещение токенов отменено.",
+      "tokenPlacementFailed": "Размещение токенов не удалось. Смотрите подробности в консоли.",
+      "droppedResults": "{success} НИП перетащено на сцену",
+      "droppedImported": " (импортировано {imported} из библиотек)",
+      "droppedFailed": ". {failed} не удалось.",
+      "noNpcsDropped": "НИП не были успешно перетащены на сцену.",
+      "awardsUnsupportedSystem": "Эта система не поддерживает распределение наград.",
+      "noAssignedCharacters": "Не найдено закреплённых за игроками персонажей.",
+      "noRewardsToDistribute": "Для этого задания не задано наград в ОО и валюте.",
+      "awardsDistributed": "Награды распределены для {count} персонажей (ОО: {xpCount}, Валюта: {currencyCount}).",
+      "exportCleaningUp": "Выполняется чистка перед экспортом...",
+      "cleanupNotAvailable": "Функционал чистки недоступен, продолжение с экспортом...",
+      "cleanupComplete": "Чистка успешно завершена.",
+      "cleanupErrors": "При чистке возникли ошибки, но экспорт продолжится...",
+      "collectingDocuments": "Сбор всех связанных документов...",
+      "noDocumentsToExport": "Не найдено документов Campaign Codex для экспорта!",
+      "exportComplete": "Экспорт завершён! Документы экспортированы в \"{name}\".",
+      "exportFailed": "Экспорт не удался: {message}",
+      "moduleNotFound": "Модуль \"{name}\" не найден или не имеет требуемых разблокируемых библиотек!",
+      "pruningEmptyFolders": "Удаление пустых папок...",
+      "pruningFolders": "{count} папок удалено из \"{label}\".",
+      "failedToCreateCompendium": "Не удалось создать набор библиотек!",
+      "recreatingCompendium": "Воссоздаётся библиотека: {name}",
+      "creatingCompendium": "Создание новой библиотеки: {name}",
+      "jsZipNotAvailable": "Библиотека JSZip недоступна. Пожалуйста удостоверьтесь, что она загружена.",
+      "generatingObsidianFiles": "Создание {count} файлов для экспорта Обсидиана...",
+      "obsidianExportSuccess": "Журналы успешно экспортированы в {name}",
+      "obsidianExportFailed": "Не удалось сгенерировать файл zip. Смотрите подробности в консоли.",
+      "importCollecting": "Сбор документов из библиотек...",
+      "noDocumentsToImport": "Не найдено документов Campaign Codex для импорта!",
+      "importingFrom": "Импортирование документов из \"{name}\"...",
+      "importFailed": "Импорт не удался: {message}",
+      "noCompendiumsFound": "Не найдено библиотек Campaign Codex!",
+      "importingFolders": "Импорт структур папок...",
+      "relinkingDocuments": "Пересвязывание импортирование документов...",
+      "relinkingScenes": "Пересвязывание импортированных сцен...",
+      "templatePathUpdated": "Путь шаблона Campaign Codex обновлён!",
+      "usingExistingScene": "Использование существующей сцены \"{name}\" из мира",
+      "importedScene": "Импортирована сцена \"{name}\" из библиотеки в мир",
+      "importComplete": "Импорт завершён!",
+      "importedCount": "Импортировано: {count}",
+      "skippedCount": "Пропущено/Использовано существующих: {count}",
+      "replacedCount": "Заменено: {count}",
+      "failedCount": "Не удалось: {count}",
+      "notCampaignCodexDocument": "Этот журнал не является документом Campaign Codex",
+      "exportedToStandard": "\"{name}\" экспортировано в обычный журнал",
+      "exportJournalFailed": "Не удалось экспортировать журнал",
+      "noJournalsSelected": "Журналов Campaign Codex не выбрано",
+      "exportingJournals": "Экспортируется {count} журналов Campaign Codex...",
+      "exportedJournals": "Успешно экспортировано {count} журналов",
+      "exportedWithErrors": "Экспортировано {count} журналов с {errors} ошибками",
+      "sceneImportFailed": "Не удалось импортировать сцену \"{name}\": {message}",
+      "noSceneLinked": "С этим документом не связано сцен",
+      "linkedSceneNotFound": "Связанная сцена не найдена",
+      "compendiumSceneNotSupported": "Открытие сцен из библиотек не поддерживается. Пожалуйста, импортируйте сцену в свой мир и установите связь снова.",
+      "openLinkedSceneFailed": "Не удалось открыть связанную сцену",
+      "createdNpcJournal": "Создан журнал НИП для \"{name}\"",
+      "resetItemPathsFailed": "Не удалось сбросить пути предмета",
+      "movedRegion": "Перемешено: \"{child}\" в \"{parent}\"",
+      "regionCannotBeSelfParent": "Регион не может быть собственным источником.",
+      "circularDependency": "Вы не можете переместить \"{child}\" в \"{parent}\", так как он является его первоисточником.",
+      "maxNestingDepth": "Это действие превысит максимальную глубину в {depth}.",
+      "locationRefreshed": "Данные локации обновлены!",
+      "linkedScene": "Сцена \"{name}\" связана с {doc}",
+      "linkedJournal": "Журнал \"{name}\" связан.",
+      "journalAlreadyLinked": "Журнал \"{name}\" уже связан.",
+      "removedBrokenRefs": "Удалено {count} сломанных связей {field} в {name}",
+      "removedBrokenParent": "Удалена сломанная связь с регионом-источником в {name}.",
+      "removedBrokenInventory": "Удалено {count} сломанных предметов инвентаря в {name}",
+      "removeAllSkippedLocked": "Все предметы инвентаря защищены от \"Удалить все\".",
+      "removedInventoryItems": "Удалено {count} разблокированных предметов инвентаря у {name}.",
+      "sheetNotFound": "Выбранный лист не найден",
+      "npcNoLinkedActor": "С этим НИП не связан актёр для перетаскивания!",
+      "sourceDocNotFound": "Не удалось найти исходный документ.",
+      "removedMember": "Из группы удалён член",
+      "circularGroupDependency": "Невозможно добавить \"{name}\", так как это создаст цикличную зависимость.",
+      "alreadyInGroup": "\"{name}\" уже относится к этой группе.",
+      "failedToUpdateImage": "Не удалось обновить изображение",
+      "idCollision": "Произошло случайное перекрещивание ID. Пожалуйста попробуйте снова.",
+      "unlinkedScene": "Сцена без связей",
+      "itemNotFound": "Предмет не найден",
+      "noSourceDocument": "Исходный документ не задан",
+      "outOfStock": "Предмет закончился.",
+      "unlinkedJournal": "Журнал без связей.",
+      "failedToRemoveLocationLink": "Не удалось удалить связь с локацией",
+      "linkedRegionOrLocationNotFound": "Не удалось найти связанный регион или локацию.",
+      "removedFromRegion": "Лоакция \"{location}\" удалена из региона \"{region}\"",
+      "dropToMapNotImplemented": "Перетаскивание на карту не поддерживается для листов типа {type}",
+      "noNPCsWithActors": "Нет связанных НИП-актёров для перетаскивания!",
+      "tagNotFound": "Не удалось найти метку для связи.",
+      "itemNotFoundToAdd": "Не удалось найти предмет для добавления в запись",
+      "addedToQuest": "Предмет \"{item}\" добавлен в задание \"{quest}\"",
+      "actorNotFound": "Не удалось найти перетащенного актёра.",
+      "linkedActorToDocument": "\"{actor}\" связан с \"{document}\"",
+      "linkedActorToJournal": "Актёр \"{name}\" связан с этим журналом.",
+      "linkedAsAssociate": "\"{name}\" связан как союзник.",
+      "cannotLinkSelf": "Нельзя связать НИП самого с собой как с союзником.",
+      "actorDropNotConfigured": "Перетаскивание актёров не поддерживается для листов типа \"{type}\".",
+      "documentNotFoundType": "Документ {type} не найден",
+      "failedToOpenType": "Не удалось открыть {type}",
+      "noPlayerCharacters": "Не найдено игровых персонажей"
+    },
+    "export": {
+      "exportButton": "Экспорт Campaign Codex",
+      "exportTooltip": "Экспортировать всё содержимое Campaign Codex в библиотеку",
+      "importButton": "Импорт Campaign Codex",
+      "importTooltip": "Импортировать содержимое Campaign Codex из библиотеки"
+    }
+  }
+}

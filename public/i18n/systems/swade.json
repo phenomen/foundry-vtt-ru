@@ -71,6 +71,13 @@
       "Strength": "Сила и связанные навыки",
       "Vigor": "Выносливость и связанные навыки",
       "Attack": "Все атаки",
+      "TargetAttack": "Атака",
+      "TargetAttackRanged": "Атака (дистанционная)",
+      "TargetAttackMelee": "Атака (ближний бой)",
+      "TargetDamage": "Урон",
+      "GangUpAttack": "Атака (объединение сил)",
+      "GangUpDefend": "Защита (объединение сил)",
+      "TargetGangUp": "Модификатор (объединение сил)",
       "Damage": "Весь урон",
       "AP": "Вся бронебойность"
     },
@@ -124,10 +131,7 @@
     "Defending": "Оборона",
     "Burrowing": "Под землёй",
     "Flying": "Полёт",
-    "Unfamiliar": {
-      "2": "Незнакомый (-2)",
-      "4": "Незнакомый (-4)"
-    },
+    "Unfamiliar": { "2": "Незнакомый (-2)", "4": "Незнакомый (-4)" },
     "FollowLabel": "Следовать",
     "Follow": "Следовать за {name}",
     "Unfollow": "Не следовать за {name}",
@@ -163,11 +167,9 @@
     "ApOver": "ББ действия",
     "Resist": "Устойчивость",
     "ResistRolls": "Проверки устойчивости",
-    "MacroActor": {
-      "Default": "По умолчанию",
-      "Self": "На себя",
-      "Target": "Цель"
-    },
+    "ResistRoll": "Проверка устойчивости",
+    "ResistRollName": "Проверка устойчивости: {name}",
+    "MacroActor": { "Default": "По умолчанию", "Self": "На себя", "Target": "Цель" },
     "Ap": "ББ",
     "APLong": "Бронебойность",
     "RoF": "СКС",
@@ -178,17 +180,9 @@
     "ActionsEffects": "Действия и эффекты",
     "Actions": {
       "Name": "Действия",
-      "Hidden": {
-        "Label": "Скрытое",
-        "Hint": "Скрытые действия не отображаются в бланке актёра"
-      },
-      "DisplayHidden": {
-        "Label": "Отображение скрытых действий"
-      },
-      "Activities": {
-        "Label": "Функции",
-        "Hint": "SWID действий, связанных с этим предметом"
-      }
+      "Hidden": { "Label": "Скрытое", "Hint": "Скрытые действия не отображаются в бланке актёра" },
+      "DisplayHidden": { "Label": "Отображение скрытых действий" },
+      "Activities": { "Label": "Функции", "Hint": "SWID действий, связанных с этим предметом" }
     },
     "DmgModUni": "Модификатор урона",
     "SkillModUni": "Модификатор параметра",
@@ -324,9 +318,10 @@
     "DiceConfLabel": "Открыть настройки дикого кубика",
     "Formula": "Формула",
     "SitMod": "Ситуативный модификатор",
-    "RollMode": "Режим проверки",
+    "RollMode": "Тип сообщения",
     "RollExample": "напр. +1d6x= или -2",
     "Roll": "Проверка",
+    "RollName": "Бросок {name}",
     "RollNoun": "Бросок",
     "RollRaise": "Подъём",
     "GroupRoll": "Групповая проверка",
@@ -341,6 +336,7 @@
     "Scale": "Силуэт",
     "ScaleDifference": "Разница в силуэте",
     "PickACard": "Выбери карту для {name}",
+    "GMOverride": "Перезапись ведущего",
     "NoCardsLeft": "В колоде не достаточно карт! Доступно только {current} из требуемых {needed}. Сбросьте колоду или уменьшите число участников боя.",
     "OldCard": "Старая карта",
     "ActionCard": "Карта действия",
@@ -395,10 +391,7 @@
     "NoMags": "В вашем инвентаре нет расходников, являющихся обоймами",
     "RemoveAmmo": "Удалить боеприпасы",
     "DiscardMagazine": "Удалить пустую обойму",
-    "ConsumableType": {
-      "Label": "Подтип",
-      "Regular": "Обычный"
-    },
+    "ConsumableType": { "Label": "Подтип", "Regular": "Обычный" },
     "Trapping": "Проявления",
     "AddBenny": "Добавить фишку",
     "CurrentBennies": "Текущие фишки",
@@ -426,10 +419,7 @@
     "Selection": "Список",
     "WealthDie": {
       "Label": "Кость достатка",
-      "Broke": {
-        "Label": "Нищета",
-        "Hint": "У тебя нет денег!"
-      },
+      "Broke": { "Label": "Нищета", "Hint": "У тебя нет денег!" },
       "Sides": "Стороны кости достатка",
       "WildSides": "Стороны дикой кости достатка",
       "Modifier": "Модификатор кости достатка"
@@ -444,6 +434,7 @@
     "CustomWildDie": "- Свой дикий кубик -",
     "Subtract": "Вычесть",
     "DmgRolls": "Броски урона",
+    "NoAcing": "Без хода",
     "SubtractPPDesc": "Вычесть цену ПС из доступных ПС",
     "AddPPDesc": "Добавить цену ПС к доступным ПС",
     "RightClickZoom": "ПКМ для приближения",
@@ -517,14 +508,9 @@
     "Characters": "Персонажи",
     "SettingRules": "Правила миров",
     "WorldBasics": "Подробности мира",
-    "MAPenalty": {
-      "Label": "Штраф нескольких действий",
-      "None": "Нет"
-    },
+    "MAPenalty": { "Label": "Штраф нескольких действий", "None": "Нет" },
     "Mod": {
-      "Custom": {
-        "Add": "Добавить особый модификатор"
-      },
+      "Custom": { "Add": "Добавить особый модификатор" },
       "Support": "Помощь",
       "Preset": {
         "Settings": "Модификатор шаблона",
@@ -559,6 +545,8 @@
       "Extreme": "Предельная дистанция"
     },
     "GangUp": "Объединение сил",
+    "GangUpDamage": "Объединение сил",
+    "GangUpHint": "Автоматически применять бонус урона от объединения сил",
     "ModOther": "Другие модификаторы",
     "ModTrait": "Модификаторы параметра",
     "ModAttack": "Модификаторы атаки",
@@ -587,9 +575,9 @@
       "Description": "<p>Эффекты цели с завершением <em>в следующем ходу или позже</em>.</p>",
       "Behavior": "Настройка завершения",
       "BeginAuto": "В начале хода, автоматически",
-      "BeginPrompt": "В начале хода, запрос",
+      "BeginPrompt": "Начало хода (запрос)",
       "EndAuto": "В конце хода, автоматически",
-      "EndPrompt": "В конце хода, запрос",
+      "EndPrompt": "Конец хода (запрос)",
       "None": "Нет",
       "LooseTurnOnHold": "Потеря хода, оставаясь наготове",
       "Remaining": "Осталось"
@@ -604,6 +592,7 @@
     "Unfavorite": "Удалить избранное",
     "Equip": "Надеть",
     "RollDamage": "Проверка урона",
+    "RollDamageName": "Бросок урона: {name}",
     "SystemLinks": {
       "Changelog": "Список изменений",
       "Wiki": "Справка",
@@ -626,11 +615,7 @@
       "Toggle": "Переключение плана повышения",
       "Delete": "Удаление повышения",
       "Planned": "Запланировано",
-      "Modes": {
-        "Label": "Режим",
-        "Legacy": "Оригинальный",
-        "Expanded": "Расширенный"
-      },
+      "Modes": { "Label": "Режим", "Legacy": "Оригинальный", "Expanded": "Расширенный" },
       "Types": {
         "Edge": "Новая черта",
         "SingleSkill": "Повышение одного навыка",
@@ -693,10 +678,6 @@
       "Bennies": {
         "Name": "Потратить/получить фишку",
         "Hint": "Потратить фишку. Удерживайте Alt, чтобы получить фишку."
-      },
-      "ToggleHUD": {
-        "Name": "Переключение SWADE HUD",
-        "Hint": "Переключить SWADE HUD для выбранного токена или назначенного персонажа."
       }
     },
     "Settings": {
@@ -709,12 +690,8 @@
         "Name": "Всегда подсвечивать шаблоны",
         "Hint": "Если включено, измерительные шаблоны всегда будут подсвечены на сетке."
       },
-      "InitDiscardPile": {
-        "Name": "Сброс колоды инициативы"
-      },
-      "InitCardDeck": {
-        "Name": "Колода для инициативы"
-      },
+      "InitDiscardPile": { "Name": "Сброс колоды инициативы" },
+      "InitCardDeck": { "Name": "Колода для инициативы" },
       "ParryBase": {
         "Name": "SWID навыка Fighting",
         "Hint": "ID навыка, который будет использоваться для расчёта защиты персонажей."
@@ -752,10 +729,7 @@
         "Name": "Передняя текстура",
         "Hint": "Текстура на передней стороне 3D фишки"
       },
-      "Benny3DBack": {
-        "Name": "Задняя текстура",
-        "Hint": "Текстура на задней стороне 3D фишки"
-      },
+      "Benny3DBack": { "Name": "Задняя текстура", "Hint": "Текстура на задней стороне 3D фишки" },
       "Benny3DBackBump": {
         "Name": "Задняя карта рельефа",
         "Hint": "Карта рельефа на задней стороне фишки"
@@ -776,10 +750,7 @@
         "Name": "Тип достатка",
         "Hint": "Выберите как отслеживать достаток и деньги персонажа"
       },
-      "CurrencyName": {
-        "Name": "Название валюты",
-        "Hint": "Название для денег"
-      },
+      "CurrencyName": { "Name": "Название валюты", "Hint": "Название для денег" },
       "JokersWild": {
         "Name": "Подарок джокера",
         "Hint": "Выдать фишку каждому персонажу игрока, когда одному из них достался Джокер"
@@ -792,20 +763,13 @@
         "Name": "Персонажи игроков используют боеприпасы",
         "Hint": "Выбранное снаряжение или расходуемые предметы будут использованы в качестве боеприпасов при перезарядке оружия"
       },
-      "NPCAmmoFromInventory": {
-        "Name": "Персонажи ведущего используют боеприпасы"
-      },
-      "VehicleAmmoFromInventory": {
-        "Name": "Транспорт использует боеприпасы"
-      },
+      "NPCAmmoFromInventory": { "Name": "Персонажи ведущего используют боеприпасы" },
+      "VehicleAmmoFromInventory": { "Name": "Транспорт использует боеприпасы" },
       "EnableWoundPace": {
         "Name": "Влияние ранений на шаг",
         "Hint": "Если включено, шаг будет изменён в зависимости от полученных ранений"
       },
-      "EnableConv": {
-        "Name": "Решимость",
-        "Hint": "Включить ситуативное правило решимости"
-      },
+      "EnableConv": { "Name": "Решимость", "Hint": "Включить ситуативное правило решимости" },
       "NoPowerPoints": {
         "Name": "Без пунктов силы",
         "Hint": "Если включено, все указания на пункты силы будут скрыты"
@@ -818,18 +782,12 @@
         "Name": "Использование штрафа нагрузки",
         "Hint": "Добавляет штраф нагрузки. Учтите, что проверки {vigor} для сопротивления {fatigue} в данный момент не поддерживаются!"
       },
-      "VehicleEnergy": {
-        "Name": "Энергия транспорта",
-        "Hint": "Энергетические транспорт и броня"
-      },
+      "VehicleEnergy": { "Name": "Энергия транспорта", "Hint": "Энергетические транспорт и броня" },
       "VehicleMods": {
         "Name": "Модификации транспорта",
         "Hint": "Ячейки модификаций у транспорта и брони"
       },
-      "VehicleEdges": {
-        "Name": "Черты транспорта",
-        "Hint": "Транспорт имеет черты и изъяны"
-      },
+      "VehicleEdges": { "Name": "Черты транспорта", "Hint": "Транспорт имеет черты и изъяны" },
       "VehicleSkills": {
         "Name": "Навыки управления",
         "Hint": "Введите через запятую список навыков, которые будут считаться навыками управления."
@@ -850,10 +808,7 @@
         "Name": "Тяжёлый выбор",
         "Hint": "Включает ситуационное правило 'Тяжёлый выбор'."
       },
-      "CardSound": {
-        "Name": "Звук карты",
-        "Hint": "Проигрывать звук при раздаче карт инициативы"
-      },
+      "CardSound": { "Name": "Звук карты", "Hint": "Проигрывать звук при раздаче карт инициативы" },
       "StartingCurrency": {
         "PC": {
           "Name": "Стартовый капитал персонажей игроков",
@@ -935,10 +890,7 @@
     "DocumentTweaks": "Настройки",
     "TargetVulnerable": "Цель уязвима",
     "WildAttack": "Яростный удар",
-    "DesperateAttack": {
-      "2": "Отчаянный удар (2)",
-      "4": "Отчаянный удар (4)"
-    },
+    "DesperateAttack": { "2": "Отчаянный удар (2)", "4": "Отчаянный удар (4)" },
     "CalledShot": {
       "HeadOrVitals": "Прицельная атака: Голова или важные органы",
       "Hand": "Прицельная атака: Кисть руки",
@@ -985,32 +937,31 @@
     "EmptyAncestralAbilitiesHint": "<strong>Внимание:</strong> эта вкладка больше не используется. Если вы создаёте новый {ancestry} или {archetype}, перетащите предметы на вкладку Свойства. {ancestry} или {archetype} автоматически добавит эти особенности актёру.",
     "NoTokenSelectedForResistRoll": "Выберите один токен перед проверкой сопротивления",
     "Templates": {
-      "Cone": {
-        "Short": "КШ",
-        "Long": "Конусный шаблон"
-      },
+      "Cone": { "Short": "КШ", "Long": "Конусный шаблон", "Place": "Разместить шаблон конуса" },
       "SmallCone": {
         "Short": "Малый конус",
-        "Long": "Малый шаблон конуса"
+        "Long": "Малый шаблон конуса",
+        "Place": "Разместить малый шаблон конуса"
       },
       "Stream": {
         "Short": "ПШ",
-        "Long": "Поточный шаблон"
+        "Long": "Поточный шаблон",
+        "Place": "Разметстить поточный шаблон"
       },
-      "Small": {
-        "Short": "МШ",
-        "Long": "Малый шаблон"
-      },
+      "Small": { "Short": "МШ", "Long": "Малый шаблон", "Place": "Разместить малый шаблон взрыва" },
       "Medium": {
         "Short": "СШ",
-        "Long": "Средний шаблон"
+        "Long": "Средний шаблон",
+        "Place": "Разместить средний шаблон взрыва"
       },
       "Large": {
         "Short": "БШ",
-        "Long": "Большой шаблон"
+        "Long": "Большой шаблон",
+        "Place": "Разместить большой шаблон взрыва"
       },
       "Available": "Доступные шаблоны",
-      "Possible": "Возможные шаблоны"
+      "Possible": "Возможные шаблоны",
+      "RegionName": "SW {name}"
     },
     "CompendiumTOC": {
       "Toggle": "Переключение оглавления библиотеки",
@@ -1064,7 +1015,7 @@
     "EffectWizard": {
       "Preview": "Предпросмотр",
       "Change": "Изменение",
-      "Mode": "Режим",
+      "Type": "Тип",
       "Value": "Значение",
       "Changes": "Изменения",
       "SelectAttribute": "Выбор характеристики",
@@ -1122,10 +1073,7 @@
     },
     "LoadedAmmo": "Заряженные боеприпасы",
     "DamageApplicator": {
-      "ApplyDamage": {
-        "Label": "Нанести урон",
-        "Hint": "Нанести урон выбранному токену"
-      },
+      "ApplyDamage": { "Label": "Нанести урон", "Hint": "Нанести урон выбранному токену" },
       "SoakModifier": "Модификатор проверки на прочность",
       "WoundsAboutToBeTaken": "<p><strong>{name}</strong> может получить <strong>{wounds}</strong>!</p>",
       "SoakDialog": {
@@ -1168,6 +1116,8 @@
         "PermanentInjuryHND": "<p><strong>{name}</strong> получает постоянное увечье!</p>",
         "TemporaryInjury": "<p><strong>{name}</strong> получает увечье, пока не излечит все ранения.</p>",
         "ShortInjury": "<p><strong>{name}</strong> получает увечье, пока не излечит все ранения или не пройдет 24 часа.</p>",
+        "DefeatTitle": "Отметить побеждённым",
+        "MarkedDefeated": "<p><strong>{name}</strong> has been marked defeated without bleeding out.</p>",
         "TakeFail": "Получить постоянное увечье",
         "TakeSuccess": "Получить временное увечье",
         "Title": "Перебросить степень увечья для {name}?",
@@ -1186,10 +1136,7 @@
     },
     "CouldNotFindMacro": "Не удалось найти макрос с UUID {uuid}",
     "CouldNotFindTarget": "Этот макрос требует выбранную цель",
-    "Magazine": {
-      "NoneLoaded": "Обойма не заряжена",
-      "Select": "Выбор обоймы"
-    },
+    "Magazine": { "NoneLoaded": "Обойма не заряжена", "Select": "Выбор обоймы" },
     "DmgMod": "Модификатор урона",
     "Auras": {
       "TabHeader": "Ауры",
@@ -1367,10 +1314,7 @@
           "Title": "Label",
           "Content": "The text that will show up on the character sheet."
         },
-        "StatDType": {
-          "Title": "Type",
-          "Content": "Each type has unique handling."
-        },
+        "StatDType": { "Title": "Type", "Content": "Each type has unique handling." },
         "HasMax": {
           "Title": "Has Max Value",
           "Content": "Adds a field to indicate the maximum of an additional stat as well as its current value (Only available for Numbers and Text)."
@@ -1449,9 +1393,7 @@
           "Title": "Setting the Advance Mode",
           "Content": "A character's advance mode can be switched in the Tweaks menu."
         },
-        "Mode": {
-          "Title": "Advance Mode Selection"
-        },
+        "Mode": { "Title": "Advance Mode Selection" },
         "AdvanceTab": {
           "Title": "The Advances Tab",
           "Content": "Advances are configured in the primary \"About\" tab."
@@ -1547,14 +1489,8 @@
       }
     },
     "NpcWildCardsOnScene": "Дикие карты ведущего на сцене",
-    "PlayerCardDrawHelper": {
-      "Title": "Помощник для карт SWADE"
-    },
-    "CardDrawMsgSize": {
-      "None": "Нет",
-      "Compact": "Компактная",
-      "Large": "Полная"
-    },
+    "PlayerCardDrawHelper": { "Title": "Помощник для карт SWADE" },
+    "CardDrawMsgSize": { "None": "Нет", "Compact": "Компактная", "Large": "Полная" },
     "SelectNewGroupLeader": "Выберите нового лидера группы",
     "ToggleIncap": "При смерти",
     "AmbushAssistant": {
@@ -1576,6 +1512,7 @@
       "RevertRoundTitle": "Предыдущий раунд",
       "RevertRoundContent": "Изменить раунд на предыдущий?",
       "DiscardedCards": "Сброшенные карты",
+      "MustDrawInitiative": "Cannot change turn or round without all combatants having initiative!",
       "Redraw": "Вытянуть новую карту",
       "RedrawFor": "Card Redraw ({name})",
       "RedrawDialog": {
@@ -1588,10 +1525,7 @@
     "Free": "Свободно",
     "DeleteFromParentWarningPermanent": "{name} будет удалён из {parent} без возможности восстановления.",
     "DeleteFromParentWarning": "{name} будет навсегда удалён из {parent}.",
-    "SettingConfigurator": {
-      "WorldTables": "Таблицы мира",
-      "WorldCompendiums": "Библиотеки мира"
-    },
+    "SettingConfigurator": { "WorldTables": "Таблицы мира", "WorldCompendiums": "Библиотеки мира" },
     "Group": {
       "Sheet": {
         "Members": {
@@ -1599,10 +1533,7 @@
           "Hint": "Чтобы добавить участников, либо перетащите их на бланк, либо скопируйте и вставьте их UUID. Это также работает с токенами актёров на сцене.",
           "Empty": "Нет участников"
         },
-        "Stash": {
-          "Header": "Хранилище",
-          "Empty": "Здесь пусто"
-        },
+        "Stash": { "Header": "Хранилище", "Empty": "Здесь пусто" },
         "Lock": {
           "Label": "Режим редактирования",
           "Hint": "В режиме блокировки, актёры не могут быть добавлены в группу или удалены из неё."
@@ -1611,79 +1542,43 @@
     },
     "Supplies": {
       "Label": "Запасы",
-      "Level": {
-        "Out": "Отсутствуют",
-        "Low": "Мало",
-        "High": "Много",
-        "VeryHigh": "Избыток"
-      },
-      "Ammo": {
-        "Label": "Боеприпасы"
-      },
-      "Fuel": {
-        "Label": "Топливо"
-      },
-      "Food": {
-        "Label": "Пища"
-      },
-      "Supply": {
-        "Label": "Запас"
-      }
+      "Level": { "Out": "Отсутствуют", "Low": "Мало", "High": "Много", "VeryHigh": "Избыток" },
+      "Ammo": { "Label": "Боеприпасы" },
+      "Fuel": { "Label": "Топливо" },
+      "Food": { "Label": "Пища" },
+      "Supply": { "Label": "Запас" }
     },
     "Movement": {
       "Base": "Базовое перемещение",
       "Other": "Другие типы перемещения",
       "Pace": {
-        "Base": {
-          "Label": "Базовый шаг",
-          "Hint": "Кость шага по умолчанию"
-        },
-        "Ground": {
-          "Label": "По земле"
-        },
-        "Fly": {
-          "Label": "Полёт"
-        },
-        "Swim": {
-          "Label": "Плавание"
-        },
-        "Burrow": {
-          "Label": "Копание"
-        }
+        "Base": { "Label": "Базовый шаг", "Hint": "Кость шага по умолчанию" },
+        "Ground": { "Label": "По земле" },
+        "Fly": { "Label": "Полёт" },
+        "Swim": { "Label": "Плавание" },
+        "Burrow": { "Label": "Копание" }
       },
       "Running": {
         "OutOfCombat": "Вы можете бежать со скоростью {pace} шагов в течение {minutes} минут вне боя.",
-        "Dialog": {
-          "Title": "Бег",
-          "Content": "Выберите способ бега"
-        }
+        "Dialog": { "Title": "Бег", "Content": "Выберите способ бега" }
       }
     },
     "ApplicableEffects": "Применяемые эффекты",
     "DramaticTask": {
       "Successes": "Жетоны успеха",
-      "MaxRounds": {
-        "Label": "Число раундов",
-        "Hint": "Сколько раундов длится Вызов судьбе?"
-      },
+      "MaxRounds": { "Label": "Число раундов", "Hint": "Сколько раундов длится Вызов судьбе?" },
       "MaxTokens": {
         "Label": "Жетоны успеха",
         "Hint": "Необходимое количество жетонов успеха, прежде чем закончится время"
       }
     },
     "Vehicle": {
-      "Cargo": {
-        "Capacity": "Вместимость груза"
-      },
+      "Cargo": { "Capacity": "Вместимость груза" },
       "Crew": {
         "Add": "Добавить члена экипажа",
         "Remove": "Удалить члена экипажа",
         "Role": "Роль",
-        "Roles": {
-          "Operator": "Водитель",
-          "Gunner": "Стрелок",
-          "Other": "Другая"
-        }
+        "Roles": { "Operator": "Водитель", "Gunner": "Стрелок", "Other": "Другая" }
       }
     },
     "ChargeLevel": "Заряд",
@@ -1708,9 +1603,7 @@
     }
   },
   "TYPES": {
-    "ActiveEffect": {
-      "modifier": "Модификатор"
-    },
+    "ActiveEffect": { "modifier": "Модификатор" },
     "Actor": {
       "character": "Персонаж игрока",
       "npc": "Персонаж ведущего",
@@ -1732,19 +1625,9 @@
       "action": "Действие",
       "charge": "Заряд"
     },
-    "Card": {
-      "adventure": "Карта приключений",
-      "poker": "Покерная карта"
-    },
-    "Combat": {
-      "chase": "Погоня",
-      "dramaticTask": "Вызов судьбе"
-    },
-    "JournalEntryPage": {
-      "headquarters": "Штаб-квартира"
-    },
-    "RegionBehavior": {
-      "attackModifiers": "Attack Modifiers"
-    }
+    "Card": { "adventure": "Карта приключений", "poker": "Покерная карта" },
+    "Combat": { "chase": "Погоня", "dramaticTask": "Вызов судьбе" },
+    "JournalEntryPage": { "headquarters": "Штаб-квартира" },
+    "RegionBehavior": { "attackModifiers": "Attack Modifiers" }
   }
 }
