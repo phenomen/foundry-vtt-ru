@@ -62,7 +62,7 @@ async function main() {
   const [, , inputPath] = process.argv;
 
   if (!inputPath) {
-    console.error("Usage: pnpm util:babeleformat <path-to-json>");
+    console.error("Usage: bun util:babele-format <path-to-json>");
     process.exit(1);
   }
 
