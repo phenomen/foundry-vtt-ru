@@ -102,26 +102,26 @@
         "element": {
           "attack": {
             "roll": {
-              "bonus": { "label": "Attack Bonus" },
-              "max": { "label": "Maximum Attack Roll" },
-              "min": { "label": "Minimum Attack Roll" },
-              "mode": { "label": "Attack Advantage Mode" }
+              "bonus": { "label": "Бонус атаки" },
+              "max": { "label": "Максимальный бросок атаки" },
+              "min": { "label": "Минимальный бросок атаки" },
+              "mode": { "label": "Режим преимущества атаки" }
             }
           },
           "check": {
             "roll": {
-              "bonus": { "label": "Check Bonus" },
-              "max": { "label": "Maximum Check Roll" },
-              "min": { "label": "Minimum Check Roll" },
-              "mode": { "label": "Check Advantage Mode" }
+              "bonus": { "label": "Бонус проверки" },
+              "max": { "label": "Максимальный бросок проверки" },
+              "min": { "label": "Минимальный бросок проверки" },
+              "mode": { "label": "Режим преимущества проверки" }
             }
           },
           "save": {
             "roll": {
-              "bonus": { "label": "Save Bonus" },
-              "max": { "label": "Maximum Save Roll" },
-              "min": { "label": "Minimum Save Roll" },
-              "mode": { "label": "Save Advantage Mode" }
+              "bonus": { "label": "Бонус испытания" },
+              "max": { "label": "Максимальный бросок испытания" },
+              "min": { "label": "Минимальный бросок испытания" },
+              "mode": { "label": "Режим преимущества испытания" }
             }
           }
         }
@@ -129,10 +129,10 @@
     },
     "Formatter": {
       "Attack": {
-        "AdvantageMode": "{name} Attack Advantage Mode",
-        "Bonus": "{name} Attack Bonus",
-        "Maximum": "Maximum {name} Attack Roll",
-        "Minimum": "Minimum {name} Attack Roll"
+        "AdvantageMode": "Режим преимущества атаки {name}",
+        "Bonus": "Бонус атаки {name}",
+        "Maximum": "Макс. бросок атаки {name}",
+        "Minimum": "Мин. бросок атаки {name}"
       },
       "Check": {
         "AdvantageMode": "Режим преимущества проверки {name}",
@@ -330,28 +330,28 @@
     "AttributeKeyTooltip": "Список ключей и допустимых значений в <a href=\"{url}\">wiki</a>.",
     "ChangeType": {
       "Advantage": {
-        "Label": "Advantage Mode"
+        "Label": "Режим преимущества"
       },
       "Bonus": {
-        "Label": "Bonus"
+        "Label": "Бонус"
       },
       "Group": {
-        "Custom": "Custom",
-        "Rules": "Rules",
-        "Standard": "Standard"
+        "Custom": "Особое",
+        "Rules": "Правила",
+        "Standard": "Стандартное"
       },
       "Maximum": {
-        "Label": "Roll Maximum"
+        "Label": "Максимум броска"
       },
       "Minimum": {
-        "Label": "Roll Minimum"
+        "Label": "Минимум броска"
       }
     },
     "Expired": "Истёк",
     "Expiry": {
       "Abbreviation": {
-        "End": "End",
-        "Start": "Start"
+        "End": "Кон.",
+        "Start": "Нач."
       },
       "GROUPS": {
         "General": "Общее",
@@ -554,17 +554,17 @@
       "Delete": "Удаление развития",
       "Duplicate": "Копирование развития",
       "Edit": "Изменение развития",
-      "ModifyChoices": "Modify Choices",
+      "ModifyChoices": "Изменить выбор",
       "View": "Просмотр развития"
     },
     "Config": {
       "AnyLevel": "Любой",
       "Details": "Подробности развития",
       "Status": {
-        "Complete": "Fully Configured",
-        "Incomplete": "Not Configured"
+        "Complete": "Полностью настроено",
+        "Incomplete": "Не настроено"
       },
-      "Title": "Configure {item} Advancement"
+      "Title": "Настройка развития {item}"
     },
     "Defaults": {
       "BackgroundFeat": "Черта происхождения",
@@ -586,22 +586,22 @@
     },
     "FIELDS": {
       "classRestriction": {
-        "label": "Class Restriction",
-        "none": "All Classes",
-        "primary": "Original Class Only",
-        "secondary": "Multiclass Only"
+        "label": "Ограничение класса",
+        "none": "Все классы",
+        "primary": "Только оригинальный класс",
+        "secondary": "Только мультикласс"
       },
       "hint": {
-        "label": "Hint"
+        "label": "Подсказка"
       },
       "img": {
-        "label": "Custom Icon"
+        "label": "Особая иконка"
       },
       "level": {
-        "label": "Level"
+        "label": "Уровень"
       },
       "name": {
-        "label": "Custom Title"
+        "label": "Особое название"
       }
     },
     "HitPoints": {
@@ -722,14 +722,14 @@
         "Container": "Содержимое контейнеров не будет добавлено вместе с контейнерами.",
         "Duplicate": "Этот предмет уже существует в этом развитии.",
         "Recursive": "Нельзя добавить предмет в его собственное развитие.",
-        "Type": "{type} items cannot be added with this advancement type."
+        "Type": "Предметы с типом {type} нельзя добавить с этим типом развития."
       }
     },
-    "Label": "Advancement",
+    "Label": "Развитие",
     "Level": {
-      "Any": "Any Level",
-      "None": "No Level",
-      "Specific": "Level {level}"
+      "Any": "Любой уровень",
+      "None": "Нет уровня",
+      "Specific": "{level}-й уровень"
     },
     "Manager": {
       "Action": {
@@ -1172,7 +1172,7 @@
       "attack": {
         "label": "Подробности атаки",
         "abilities": {
-          "label": "Ability Options"
+          "label": "Варианты характеристик"
         },
         "ability": {
           "label": "Характеристика атаки",
@@ -1317,19 +1317,19 @@
     },
     "FIELDS": {
       "button": {
-        "hint": "Display a button for advancing bastion turns in the main game interface.",
-        "label": "Show Bastion Turn Button"
+        "hint": "В интерфейсе будет отображена кнопка для продвижения хода бастиона.",
+        "label": "Отображение кнопки хода бастиона"
       },
       "duration": {
-        "label": "Bastion Turn Duration (days)"
+        "label": "Длительность хода бастиона (дней)"
       },
       "enabled": {
-        "hint": "When enabled, player characters will have access to a new Bastion tab on their character sheets when reaching level 5, and will be able to build facilities and issue orders to them.",
-        "label": "Enable Bastion Functionality"
+        "hint": "Персонажи игроков получат доступ к вкладке «Бастион» по достижению 5-го уровня, смогут возводить постройки и давать приказы.",
+        "label": "Включить бастионы"
       },
       "reminder": {
-        "hint": "Display a reminder in chat when the next bastion turn should occur based on the advancement of time.",
-        "label": "Automatic Turn Reminder"
+        "hint": "Показывать напоминание в чате, когда по прошествии времени должен наступить следующий ход бастиона.",
+        "label": "Автоматическое напоминание о ходе"
       }
     },
     "Gold": {
@@ -1339,9 +1339,9 @@
     },
     "Label": "Бастион",
     "Reminder": {
-      "Elapsed": "It has been {time} since the last bastion turn.",
-      "Triggered": "A bastion turn has occurred.",
-      "Unknown": "It has been some time since the last bastion turn."
+      "Elapsed": "С последнего хода бастиона прошло {time}.",
+      "Triggered": "Наступил ход бастиона.",
+      "Unknown": "С последнего хода бастиона прошло некоторое время."
     },
     "Summary": {
       "Gold": "{value} ({claimed})",
@@ -1634,7 +1634,7 @@
 
   "DND5E.CAST": {
     "Action": {
-      "DropSpell": "Drop a spell here",
+      "DropSpell": "Перенесите заклинание сюда",
       "RemoveSpell": "Удалить заклинание"
     },
     "Enchantment": {
@@ -1765,17 +1765,17 @@
 
   "DND5E.CHATMESSAGE": {
     "Action": {
-      "SelectAll": "Select All Outcomes",
-      "SelectFailure": "Select Failures",
-      "SelectSuccess": "Select Successes"
+      "SelectAll": "Выбрать все результаты",
+      "SelectFailure": "Выбрать провалы",
+      "SelectSuccess": "Выбрать успехи"
     },
     "Activities": "Функции",
     "Button": {
-      "rollAttack": "Attack",
-      "rollCheck": "Ability Check",
-      "rollDamage": "Damage",
-      "rollFormula": "Roll",
-      "rollSave": "Saving Throw"
+      "rollAttack": "Атака",
+      "rollCheck": "Проверка характеристики",
+      "rollDamage": "Урон",
+      "rollFormula": "Бросок",
+      "rollSave": "Испытание"
     },
     "Deltas": {
       "Created": "Предмет создан",
@@ -1793,13 +1793,13 @@
       "Title": "Запрос"
     },
     "Row": {
-      "Actions": "Item actions",
-      "Items": "Items",
-      "Properties": "Item properties",
-      "Roll": "Die roll",
-      "rollCheck": "Ability checks",
-      "rollSave": "Saving throws",
-      "Targets": "Targets"
+      "Actions": "Действия предмета",
+      "Items": "Предметы",
+      "Properties": "Свойства предмета",
+      "Roll": "Бросок кости",
+      "rollCheck": "Проверки характеристик",
+      "rollSave": "Испытания",
+      "Targets": "Цели"
     },
     "Targets": {
       "Count": "{number}× {name}"
@@ -2014,8 +2014,8 @@
     },
     "Description": "Вы поддерживаете концентрацию на эффектах «{name}» ({type}).",
     "Duration": {
-      "Scalar": "Concentration, up to {duration}",
-      "Special": "Concentration, {durationLc}"
+      "Scalar": "Концентрация, вплоть до {duration}",
+      "Special": "Концентрация, {durationLc}"
     },
     "EndChoice": "Вы концентрируетесь на эффектах из нескольких источников. Выберите, какой эффект завершить.",
     "FIELDS": {
@@ -2024,11 +2024,11 @@
           "label": "Концентрация",
           "limit": { "label": "Предел концентрации" },
           "roll": {
-            "ability": { "label": "Concentration Ability" },
-            "bonus": { "label": "Concentration Bonus" },
-            "max": { "label": "Maximum Concentration Roll" },
-            "min": { "label": "Minimum Concentration Roll" },
-            "mode": { "label": "Concentration Advantage Mode" }
+            "ability": { "label": "Характеристика концентрации" },
+            "bonus": { "label": "Бонус концентрации" },
+            "max": { "label": "Максимальный бросок концентрации" },
+            "min": { "label": "Минимальный бросок концентрации" },
+            "mode": { "label": "Режим преимущества концентрации" }
           }
         }
       }
@@ -2521,7 +2521,7 @@
 
   "DND5E.Damage": "Урон",
   "DND5E.DamageApplication": {
-    "Back": "Back to previous pane",
+    "Back": "Назад к предыдущей панели",
     "Change": {
       "Modification": "Модификатор {type}",
       "Immunity": "Невосприимчивость к {type}",
@@ -2531,16 +2531,16 @@
     },
     "Downgrading": "Понижение {source} до устойчивости",
     "Ignoring": "Игнорирование {source}",
-    "Multiplier": "Damage multiplier",
+    "Multiplier": "Множитель урона",
     "Section": {
-      "Changes": "Applied to this target",
-      "Multiplier": "Multiplier",
-      "Targets": "Targets in this group"
+      "Changes": "Применено к этой цели",
+      "Multiplier": "Множитель",
+      "Targets": "Цели в этой группе"
     },
     "State": {
-      "active": "Applied",
-      "downgrade": "Downgraded",
-      "ignore": "Ignored"
+      "active": "Применено",
+      "downgrade": "Понижено",
+      "ignore": "Игнорировано"
     }
   },
   "DND5E.DamageModification": {
@@ -2578,18 +2578,18 @@
       "attributes": {
         "death": {
           "roll": {
-            "bonus": { "label": "Death Save Bonus" },
-            "max": { "label": "Maximum Death Save Roll" },
-            "min": { "label": "Minimum Death Save Roll" },
-            "mode": { "label": "Death Save Advantage Mode" }
+            "bonus": { "label": "Бонус испытания против смерти" },
+            "max": { "label": "Максимальный бросок испытания против смерти" },
+            "min": { "label": "Минимальный бросок испытания против смерти" },
+            "mode": { "label": "Режим преимущества испытания против смерти" }
           }
         }
       }
     },
     "Outcome": {
-      "death": "{name} has died with 3 death save failures!",
-      "revive": "{name} critically succeeded on a death saving throw and has regained 1 Hit Point!",
-      "stable": "{name} has survived with 3 death save successes and is now stable!"
+      "death": "{name} погибает с 3 проваленными испытаниями против смерти!",
+      "revive": "{name} критически преуспел в испытании против смерти и восстановил 1 ПЗ!",
+      "stable": "{name} выживает с 3 успешными испытаниями против смерти и теперь стабилизирован!"
     }
   },
 
@@ -2664,16 +2664,16 @@
   "DND5E.EFFECT": {
     "Action": {
       "AddChange": "Добавить изменение",
-      "Apply": "Apply",
+      "Apply": "Применить",
       "CreateEffect": "Создать эффект",
       "DeleteEffect": "Удалить эффект",
       "DeleteChange": "Удалить изменение",
-      "DisableEffect": "Disable Effect",
+      "DisableEffect": "Выключить эффект",
       "DissociateEffect": "Отвязать эффект",
       "EditChange": "Изменить изменение",
       "EditEffect": "Изменить эффект",
-      "EnableEffect": "Enable Effect",
-      "PanToToken": "Pan to token",
+      "EnableEffect": "Включить эффект",
+      "PanToToken": "Перейти к токену",
       "RemoveStatus": {
         "all": "Все источники",
         "label": "Источник"
@@ -2695,8 +2695,8 @@
         "changes": {
           "element": {
             "conditions": {
-              "hint": "Condition that must be met for this change to apply.",
-              "label": "Change Conditions"
+              "hint": "Условие, которое должно быть выполнено для применения этого изменения.",
+              "label": "Условия изменения"
             },
             "key": {
               "label": "Ключ параметра"
@@ -2709,8 +2709,8 @@
               "label": "Приоритет"
             },
             "replacement": {
-              "label": "Replacement",
-              "hint": "Configure whether roll data properties in the Value are replaced prior to application, and using whose data."
+              "label": "Замена",
+              "hint": "Определяет, подставляются ли свойства данных броска в значении до применения, и чьи данные используются."
             },
             "type": {
               "label": "Тип"
@@ -2721,8 +2721,8 @@
           }
         },
         "conditions": {
-          "hint": "Conditions that control when the effect will be applied.",
-          "label": "Effect Conditions"
+          "hint": "Условия, определяющие, когда будет применён эффект.",
+          "label": "Условия эффекта"
         },
         "magical": {
           "hint": "Этот эффект имеет магический источник и должен отключаться, когда магия недоступна.",
@@ -2742,21 +2742,21 @@
       "Title": "Изменение {effect} #{number}"
     },
     "DisabledTooltip": {
-      "Disabled": "This effect is currently selected in one or more of its Item's Activities, and therefore cannot be suspended.",
-      "Transfer": "This effect is currently selected in one or more of its Item's Activities, and therefore cannot passively apply to the Item's Actor."
+      "Disabled": "Этот эффект выбран в одной или нескольких функциях своего предмета и поэтому не может быть отключён.",
+      "Transfer": "Этот эффект выбран в одной или нескольких функциях своего предмета и поэтому не может пассивно применяться к актёру предмета."
     },
     "DropHint": "Перенесите активный эффект сюда",
     "Empty": "Нет связанных эффектов. Нажмите на <i class=\"fas fa-plus\"></i>, чтобы создать новый, или выберите существующий из списка.",
     "Expiry": {
-      "LongRest": "End of Long Rest",
-      "ShortRest": "End of Short Rest"
+      "LongRest": "Конец долгого отдыха",
+      "ShortRest": "Конец короткого отдыха"
     },
     "Label": "Доступные эффекты",
     "New": "Новый эффект",
     "Replacement": {
-      "NoChange": "No Change",
-      "Origin": "Origin",
-      "Target": "Target"
+      "NoChange": "Без изменений",
+      "Origin": "Источник",
+      "Target": "Цель"
     },
     "RIDER": {
       "Activity": "Дополнительная функция",
@@ -2908,9 +2908,9 @@
       "ShortRest": "Короткий отдых"
     },
     "Transfer": {
-      "DisabledTooltip": "This Enchantment is currently selected in one or more of its Item's Enchant Activities, and therefore cannot apply directly to the Item.",
-      "Hint": "If checked, this Enchantment will be applied directly to its parent Item.",
-      "Label": "Apply Enchantment to Item"
+      "DisabledTooltip": "Это зачарование выбрано в одной или нескольких функциях зачарования своего предмета и поэтому не может применяться напрямую к предмету.",
+      "Hint": "Если отмечено, это зачарование будет применено напрямую к родительскому предмету.",
+      "Label": "Применить зачарование к предмету"
     },
     "Warning": {
       "NotOnActor": "Зачарования могут быть добавлены только к предметам, а не напрямую к актёрам.",
@@ -3064,7 +3064,7 @@
         "Label": "Покупка базового предмета",
         "Hint": "Базовый предмет будет куплен за полную стоимость вместо изготовления."
       },
-      "DropHint": "Drop an Item here",
+      "DropHint": "Перенесите предмет сюда",
       "Hint": "Предметы, которые в данный момент изготавливаются или собираются этой постройкой."
     },
     "Description": "Описание",
@@ -3215,11 +3215,11 @@
         "Supplement": "Покупка"
       },
       "Creatures": {
-        "Buy": "Drop animals that you wish to purchase into the slots above. The cost is calculated from their individual prices, and can be adjusted below."
+        "Buy": "Перенесите животных, которых желаете приобрести, в ячейки выше. Стоимость рассчитывается из их индивидуальных цен и может быть изменена ниже."
       },
       "Price": {
         "Label": "Базовая цена",
-        "Hint": "Select which stock to sell. The base price is calculated from their individual prices, and can be adjusted above."
+        "Hint": "Выберите запасы на продажу. Базовая стоимость рассчитывается из их индивидуальных цен и может быть изменена выше."
       },
       "Sell": {
         "Label": "Продажа запасов",
@@ -3232,7 +3232,7 @@
       "Stocked": {
         "Label": "Полная укомплектованность",
         "Hint": "Введите стоимость при которой постройка будет полностью укомплектованной.",
-        "Supplement": "Fully stocked"
+        "Supplement": "Полностью укомплектовано"
       }
     },
     "Types": {
@@ -3290,10 +3290,10 @@
   },
 
   "DND5E.FALLING": {
-    "DamageFlavor": "Fell {distance}",
-    "MovementAction": "Fall",
+    "DamageFlavor": "Падение на {distance}",
+    "MovementAction": "Падение",
     "Warning": {
-      "NoLandingSurface": "Cannot plummet {name}, there is no surface below them."
+      "NoLandingSurface": "{name} не может упасть: под ним нет поверхности."
     }
   },
 
@@ -3731,10 +3731,10 @@
       "attributes": {
         "init": {
           "roll": {
-            "bonus": { "label": "Initiative Bonus" },
-            "max": { "label": "Maximum Initiative Roll" },
-            "min": { "label": "Minimum Initiative Roll" },
-            "mode": { "label": "Initiative Advantage Mode" }
+            "bonus": { "label": "Бонус инициативы" },
+            "max": { "label": "Максимальный бросок инициативы" },
+            "min": { "label": "Минимальный бросок инициативы" },
+            "mode": { "label": "Режим преимущества инициативы" }
           }
         }
       }
@@ -4109,22 +4109,22 @@
         },
         "label": "Требования",
         "level": {
-          "display": "Level {level}+",
-          "displayLegacy": "{levelOrdinal} level",
+          "display": "Уровень {level}+",
+          "displayLegacy": "{levelOrdinal} уровень",
           "hint": "Уровень персонажа или класса, требуемый для выбора этой особенности.",
           "label": "Требуемый уровень"
         },
         "repeatable": {
-          "display": "Not already taken",
+          "display": "Ещё не выбрано",
           "hint": "Эту особенность можно выбрать несколько раз.",
           "label": "Повторяющаяся"
         }
       }
     },
     "Status": {
-      "Invalid": "Prerequisite Validation Failed",
-      "Unknown": "Prerequisite Validation Incomplete",
-      "Valid": "Prerequisite Validation Succeeded"
+      "Invalid": "Проверка требований не пройдена",
+      "Unknown": "Проверка требований не завершена",
+      "Valid": "Проверка требований пройдена"
     },
     "Warning": {
       "InvalidLevel": "требуется уровень {level} или выше",
@@ -4417,119 +4417,119 @@
   "DND5E.RitualAbbr": "Р",
 
   "DND5E.ROLL": {
-    "Bonus": "Roll Bonus",
+    "Bonus": "Бонус броска",
     "Description": {
-      "ability": "Roll Ability",
+      "ability": "Характеристика броска",
       "attack": {
-        "classification": "Attack Classification",
-        "mode": "Attack Mode",
-        "type": "Attack Type"
+        "classification": "Классификация атаки",
+        "mode": "Режим атаки",
+        "type": "Тип атаки"
       },
       "damage": {
-        "type": "Damage Type"
+        "type": "Тип урона"
       },
-      "proficient": "Proficient",
-      "skill": "Rolled Skill",
-      "tool": "Rolled Tool",
-      "type": "Roll Type"
+      "proficient": "Умелый",
+      "skill": "Навык броска",
+      "tool": "Инструмент броска",
+      "type": "Тип броска"
     },
     "FIELDS": {
       "rolls": {
         "ability": {
           "check": {
-            "bonus": { "label": "Global Ability Check Bonus" },
-            "max": { "label": "Maximum Global Ability Check Roll" },
-            "min": { "label": "Minimum Global Ability Check Roll" },
-            "mode": { "label": "Global Ability Check Advantage Mode" },
-            "proficiency": { "label": "Global Ability Check Proficiency" }
+            "bonus": { "label": "Глобальный бонус проверки характеристик" },
+            "max": { "label": "Максимальный глобальный бросок проверки характеристик" },
+            "min": { "label": "Минимальный глобальный бросок проверки характеристик" },
+            "mode": { "label": "Глобальный режим преимущества проверки характеристик" },
+            "proficiency": { "label": "Глобальное умение в проверках характеристик" }
           },
-          "label": "Ability Roll Modification",
+          "label": "Модификация броска характеристики",
           "save": {
-            "bonus": { "label": "Global Ability Save Bonus" },
-            "max": { "label": "Maximum Global Ability Save Roll" },
-            "min": { "label": "Minimum Global Ability Save Roll" },
-            "mode": { "label": "Global Ability Save Advantage Mode" },
-            "proficiency": { "label": "Global Ability Save Proficiency" }
+            "bonus": { "label": "Глобальный бонус испытаний" },
+            "max": { "label": "Максимальный глобальный бросок испытания" },
+            "min": { "label": "Минимальный глобальный бросок испытания" },
+            "mode": { "label": "Глобальный режим преимущества испытаний" },
+            "proficiency": { "label": "Глобальное умение в испытаниях" }
           },
           "skill": {
-            "bonus": { "label": "Global Skill Check Bonus" },
-            "max": { "label": "Maximum Global Skill Check Roll" },
-            "min": { "label": "Minimum Global Skill Check Roll" },
-            "mode": { "label": "Global Skill Check Advantage Mode" },
-            "proficiency": { "label": "Global Skill Check Proficiency" }
+            "bonus": { "label": "Глобальный бонус навыков" },
+            "max": { "label": "Максимальный глобальный бросок проверки навыка" },
+            "min": { "label": "Минимальный глобальный бросок проверки навыка" },
+            "mode": { "label": "Глобальный режим преимущества проверки навыков" },
+            "proficiency": { "label": "Глобальное умение в навыках" }
           },
           "tool": {
-            "bonus": { "label": "Global Tool Check Bonus" },
-            "max": { "label": "Maximum Global Tool Check Roll" },
-            "min": { "label": "Minimum Global Tool Check Roll" },
-            "mode": { "label": "Global Tool Check Advantage Mode" },
-            "proficiency": { "label": "Global Tool Check Proficiency" }
+            "bonus": { "label": "Глобальный бонус инструментов" },
+            "max": { "label": "Максимальный глобальный бросок проверки инструмента" },
+            "min": { "label": "Минимальный глобальный бросок проверки инструмента" },
+            "mode": { "label": "Глобальный режим преимущества проверки инструментов" },
+            "proficiency": { "label": "Глобальное умение в инструментах" }
           }
         },
         "attack": {
-          "bonus": { "label": "Global Attack Bonus" },
-          "label": "Attack Roll Modification",
-          "max": { "label": "Maximum Global Attack Roll" },
-          "min": { "label": "Minimum Global Attack Roll" },
-          "mode": { "label": "Global Attack Advantage Mode" },
+          "bonus": { "label": "Глобальный бонус атаки" },
+          "label": "Модификация броска атаки",
+          "max": { "label": "Максимальный глобальный бросок атаки" },
+          "min": { "label": "Минимальный глобальный бросок атаки" },
+          "mode": { "label": "Глобальный режим преимущества атаки" },
           "msak": {
-            "bonus": { "label": "Melee Spell Attack Bonus" },
-            "max": { "label": "Maximum Melee Spell Attack Roll" },
-            "min": { "label": "Minimum Melee Spell Attack Roll" },
-            "mode": { "label": "Melee Spell Attack Advantage Mode" }
+            "bonus": { "label": "Бонус атаки заклинаний ближнего боя" },
+            "max": { "label": "Максимальный бросок атаки заклинаний ближнего боя" },
+            "min": { "label": "Минимальный бросок атаки заклинаний ближнего боя" },
+            "mode": { "label": "Режим преимущества атаки заклинаний ближнего боя" }
           },
           "mwak": {
-            "bonus": { "label": "Melee Weapon Attack Bonus" },
-            "max": { "label": "Maximum Melee Weapon Attack Roll" },
-            "min": { "label": "Minimum Melee Weapon Attack Roll" },
-            "mode": { "label": "Melee Weapon Attack Advantage Mode" }
+            "bonus": { "label": "Бонус атаки оружием ближнего боя" },
+            "max": { "label": "Максимальный бросок атаки оружием ближнего боя" },
+            "min": { "label": "Минимальный бросок атаки оружием ближнего боя" },
+            "mode": { "label": "Режим преимущества атаки оружием ближнего боя" }
           },
           "rsak": {
-            "bonus": { "label": "Ranged Spell Attack Bonus" },
-            "max": { "label": "Maximum Ranged Spell Attack Roll" },
-            "min": { "label": "Minimum Ranged Spell Attack Roll" },
-            "mode": { "label": "Ranged Spell Attack Advantage Mode" }
+            "bonus": { "label": "Бонус атаки заклинаний дистанционного боя" },
+            "max": { "label": "Максимальный бросок атаки заклинаний дистанционного боя" },
+            "min": { "label": "Минимальный бросок атаки заклинаний дистанционного боя" },
+            "mode": { "label": "Режим преимущества атаки заклинаний дистанционного боя" }
           },
           "rwak": {
-            "bonus": { "label": "Ranged Weapon Attack Bonus" },
-            "max": { "label": "Maximum Ranged Weapon Attack Roll" },
-            "min": { "label": "Minimum Ranged Weapon Attack Roll" },
-            "mode": { "label": "Ranged Weapon Attack Advantage Mode" }
+            "bonus": { "label": "Бонус атаки оружием дистанционного боя" },
+            "max": { "label": "Максимальный бросок атаки оружием дистанционного боя" },
+            "min": { "label": "Минимальный бросок атаки оружием дистанционного боя" },
+            "mode": { "label": "Режим преимущества атаки оружием дистанционного боя" }
           }
         },
         "damage": {
-          "label": "Damage Roll Modification",
+          "label": "Модификация броска урона",
           "msak": {
-            "bonus": { "label": "Melee Spell Attack Damage Bonus" }
+            "bonus": { "label": "Бонус урона заклинаний ближнего боя" }
           },
           "mwak": {
-            "bonus": { "label": "Melee Weapon Attack Damage Bonus" }
+            "bonus": { "label": "Бонус урона оружия ближнего боя" }
           },
           "rsak": {
-            "bonus": { "label": "Ranged Spell Attack Damage Bonus" }
+            "bonus": { "label": "Бонус урона заклинаний дистанционного боя" }
           },
           "rwak": {
-            "bonus": { "label": "Ranged Weapon Attack Damage Bonus" }
+            "bonus": { "label": "Бонус урона оружия дистанционного боя" }
           }
         }
       }
     },
     "Formatter": {
       "AdvantageMode": "Режим преимущества {name}",
-      "Bonus": "{name} Roll Bonus",
+      "Bonus": "Бонус броска {name}",
       "Maximum": "Максимальный бросок {name}",
       "Minimum": "Минимальный бросок {name}",
       "ModifierAbility": "Характеристика модификатора {name}"
     },
     "Generic": {
       "D20": {
-        "bonus": { "label": "Roll Bonus" },
-        "max": { "label": "Maximum Roll" },
-        "min": { "label": "Minimum Roll" },
-        "mode": { "label": "Advantage Mode" }
+        "bonus": { "label": "Бонус броска" },
+        "max": { "label": "Максимальный бросок" },
+        "min": { "label": "Минимальный бросок" },
+        "mode": { "label": "Режим преимущества" }
       },
       "Damage": {
-        "bonus": { "label": "Damage Bonus" }
+        "bonus": { "label": "Бонус урона" }
       }
     },
     "Range": {
@@ -4572,7 +4572,7 @@
         "label": "Игнорируемая пересечённая местность"
       },
       "multiplier": {
-        "label": "Movement Multiplier"
+        "label": "Множитель перемещения"
       },
       "special": {
         "label": "Способы перемещения"
@@ -4749,10 +4749,10 @@
       "skills": {
         "element": {
           "roll": {
-            "bonus": { "label": "Skill Check Bonus" },
-            "max": { "label": "Maximum Skill Check Roll" },
-            "min": { "label": "Minimum Skill Check Roll" },
-            "mode": { "label": "Skill Check Advantage Mode" }
+            "bonus": { "label": "Бонус проверки навыка" },
+            "max": { "label": "Максимальный бросок проверки навыка" },
+            "min": { "label": "Минимальный бросок проверки навыка" },
+            "mode": { "label": "Режим преимущества проверки навыка" }
           }
         }
       }
@@ -5367,8 +5367,8 @@
           "any": "любые союзники",
           "each": "каждый союзник",
           "every": "все союзники",
-          "one": "ally",
-          "other": "allies"
+          "one": "союзник",
+          "other": "союзники"
         }
       },
       "Any": {
@@ -5377,8 +5377,8 @@
       "Circle": {
         "Label": "Круг",
         "Counted": {
-          "one": "circle",
-          "other": "circles",
+          "one": "круг",
+          "other": "круги",
           "oneSized": "{sizes} круг",
           "otherSized": "{number} {sizes} круги"
         }
@@ -5386,8 +5386,8 @@
       "Cone": {
         "Label": "Конус",
         "Counted": {
-          "one": "cone",
-          "other": "cones",
+          "one": "конус",
+          "other": "конусы",
           "oneSized": "{sizes} конус",
           "otherSized": "{number} {sizes} конусы"
         }
@@ -5398,8 +5398,8 @@
           "any": "любые существа",
           "each": "каждое существо",
           "every": "все существа",
-          "one": "creature",
-          "other": "creatures"
+          "one": "существо",
+          "other": "существа"
         }
       },
       "CreatureOrObject": {
@@ -5408,15 +5408,15 @@
           "any": "любые существа или объекты",
           "each": "каждое существо или объект",
           "every": "все существа или объекты",
-          "one": "creature or object",
-          "other": "creatures or objects"
+          "one": "существо или объект",
+          "other": "существа или объекты"
         }
       },
       "Cube": {
         "Label": "Куб",
         "Counted": {
-          "one": "cube",
-          "other": "cubes",
+          "one": "куб",
+          "other": "кубы",
           "oneSized": "{sizes} куб",
           "otherSized": "{number} {sizes} кубы"
         }
@@ -5424,8 +5424,8 @@
       "Cylinder": {
         "Label": "Цилиндр",
         "Counted": {
-          "one": "cylinder",
-          "other": "cylinders",
+          "one": "цилиндр",
+          "other": "цилиндры",
           "oneSized": "{sizes} цилиндр",
           "otherSized": "{number} {sizes} цилиндры"
         }
@@ -5433,8 +5433,8 @@
       "Emanation": {
         "Label": "Эманация",
         "Counted": {
-          "one": "emanation",
-          "other": "emanations",
+          "one": "эманация",
+          "other": "эманации",
           "oneSized": "{sizes} эманация",
           "otherSized": "{number} {sizes} эманации"
         }
@@ -5445,15 +5445,15 @@
           "any": "любые враги",
           "each": "каждый враг",
           "every": "все враги",
-          "one": "enemy",
-          "other": "enemies"
+          "one": "враг",
+          "other": "враги"
         }
       },
       "Line": {
         "Label": "Линия",
         "Counted": {
-          "one": "line",
-          "other": "lines",
+          "one": "линия",
+          "other": "линии",
           "oneSized": "{sizes} линия",
           "otherSized": "{number} {sizes} линии"
         }
@@ -5464,15 +5464,15 @@
           "any": "любые объекты",
           "each": "каждый объект",
           "every": "все объекты",
-          "one": "object",
-          "other": "objects"
+          "one": "объект",
+          "other": "объекты"
         }
       },
       "Radius": {
         "Label": "Радиус",
         "Counted": {
-          "one": "radius",
-          "other": "radii",
+          "one": "радиус",
+          "other": "радиусы",
           "oneSized": "{sizes} радиус",
           "otherSized": "{number} {sizes} радиусы"
         }
@@ -5480,8 +5480,8 @@
       "Ring": {
         "Label": "Кольцо",
         "Counted": {
-          "one": "ring",
-          "other": "rings",
+          "one": "кольцо",
+          "other": "кольца",
           "oneSized": "{sizes} кольцо",
           "otherSized": "{number} {sizes} кольца"
         }
@@ -5495,15 +5495,15 @@
           "any": "любые пространства",
           "each": "каждое пространство",
           "every": "все пространства",
-          "one": "space",
-          "other": "spaces"
+          "one": "пространство",
+          "other": "пространства"
         }
       },
       "Sphere": {
         "Label": "Сфера",
         "Counted": {
-          "one": "sphere",
-          "other": "spheres",
+          "one": "сфера",
+          "other": "сферы",
           "oneSized": "{sizes} сфера",
           "otherSized": "{number} {sizes} сферы"
         }
@@ -5521,8 +5521,8 @@
       "Square": {
         "Label": "Квадрат",
         "Counted": {
-          "one": "square",
-          "other": "squares",
+          "one": "квадрат",
+          "other": "квадраты",
           "oneSized": "{sizes} квадрат",
           "otherSized": "{number} {sizes} квадраты"
         }
@@ -5533,15 +5533,15 @@
           "any": "любые цели",
           "each": "каждая цель",
           "every": "все цели",
-          "one": "target",
-          "other": "targets"
+          "one": "цель",
+          "other": "цели"
         }
       },
       "Wall": {
         "Label": "Стена",
         "Counted": {
-          "one": "wall",
-          "other": "walls",
+          "one": "стена",
+          "other": "стены",
           "oneSized": "{sizes} стена",
           "otherSized": "{number} {sizes} стены"
         }
@@ -5552,8 +5552,8 @@
           "any": "любые согласные существа",
           "each": "каждое согласное существо",
           "every": "все согласные существа",
-          "one": "willing creature",
-          "other": "willing creatures"
+          "one": "согласное существо",
+          "other": "согласные существа"
         }
       }
     },
@@ -5623,24 +5623,24 @@
 
   "DND5E.TOKEN": {
     "Attribute": {
-      "Label": "Token: {attribute}",
-      "LightBrightRadius": "Light Bright Radius",
-      "LightDimRadius": "Light Dim Radius"
+      "Label": "Токен: {attribute}",
+      "LightBrightRadius": "Радиус яркого света",
+      "LightDimRadius": "Радиус тусклого света"
     },
     "LockScale": {
-      "Hint": "Prevent a scaling adjustment from being applied to Token if Actor's size is Small.",
-      "Label": "Lock Scale"
+      "Hint": "Не применять корректировку масштаба токена, если размер актёра — Маленький.",
+      "Label": "Блокировать масштаб"
     },
     "LockSize": {
-      "Hint": "Unlock to input dimensions for this token manually, and prevent them from being adjusted automatically based on the creature size.",
-      "Label": "Lock Size"
+      "Hint": "Разблокируйте, чтобы задать размеры токена вручную и запретить их автоматическую подстройку под размер существа.",
+      "Label": "Блокировать размер"
     }
   },
 
   "DND5E.Tokens": {
     "NoneSelected": "Токены не выбраны",
     "NoneTargeted": "Токены не нацелены",
-    "NoTargets": "No Targets",
+    "NoTargets": "Нет целей",
     "Selected": "Выбрано",
     "Targeted": "Нацелено"
   },
@@ -5652,10 +5652,10 @@
       "tools": {
         "element": {
           "roll": {
-            "bonus": { "label": "Tool Check Bonus" },
-            "max": { "label": "Maximum Tool Check Roll" },
-            "min": { "label": "Minimum Tool Check Roll" },
-            "mode": { "label": "Tool Check Advantage Mode" }
+            "bonus": { "label": "Бонус проверки инструмента" },
+            "max": { "label": "Максимальный бросок проверки инструмента" },
+            "min": { "label": "Минимальный бросок проверки инструмента" },
+            "mode": { "label": "Режим преимущества проверки инструмента" }
           }
         }
       }
@@ -5694,85 +5694,85 @@
 
   "DND5E.TRAIT": {
     "Action": {
-      "Configure": "Configure {trait}"
+      "Configure": "Настройка {trait}"
     },
-    "All": "All {category}",
+    "All": "Все {category}",
     "Armor": {
-      "one": "Armor Training",
-      "other": "Armor Training",
-      "title": "Armor Training"
+      "one": "Обращение с бронёй",
+      "other": "Обращение с бронёй",
+      "title": "Обращение с бронёй"
     },
     "ArmorLegacy": {
-      "one": "Armor Proficiency",
-      "other": "Armor Proficiencies",
-      "title": "Armor Proficiencies"
+      "one": "Умение в броне",
+      "other": "Умения в броне",
+      "title": "Умения в броне"
     },
     "Condition": {
       "Immunity": {
-        "one": "Condition Immunity",
-        "other": "Condition Immunities",
-        "title": "Condition Immunities"
+        "one": "Невосприимчивость к состоянию",
+        "other": "Невосприимчивости к состоянию",
+        "title": "Невосприимчивости к состоянию"
       }
     },
     "Choose": {
-      "AnyCounted": "any {count} {type}",
-      "AnyUncounted": "any {type}",
-      "List": "{count} from {list}",
-      "Other": "{count} other {type}",
-      "Wrapper": "Choose {choices}"
+      "AnyCounted": "любые {count} {type}",
+      "AnyUncounted": "любой {type}",
+      "List": "{count} из {list}",
+      "Other": "{count} других {type}",
+      "Wrapper": "Выберите {choices}"
     },
-    "Chosen": "Chosen Traits",
+    "Chosen": "Выбранные особенности",
     "Damage": {
       "Immunity": {
-        "one": "Damage Immunity",
-        "other": "Damage Immunities",
-        "title": "Damage Immunities"
+        "one": "Невосприимчивость к урону",
+        "other": "Невосприимчивости к урону",
+        "title": "Невосприимчивости к урону"
       },
       "Modification": {
-        "one": "Damage Modification",
-        "other": "Damage Modifications",
-        "title": "Damage Modification"
+        "one": "Модификация урона",
+        "other": "Модификации урона",
+        "title": "Модификация урона"
       },
       "Resistance": {
-        "one": "Damage Resistance",
-        "other": "Damage Resistances",
-        "title": "Damage Resistances"
+        "one": "Устойчивость к урону",
+        "other": "Устойчивости к урону",
+        "title": "Устойчивости к урону"
       },
       "Vulnerability": {
-        "one": "Damage Vulnerability",
-        "other": "Damage Vulnerabilities",
-        "title": "Damage Vulnerabilities"
+        "one": "Уязвимость к урону",
+        "other": "Уязвимости к урону",
+        "title": "Уязвимости к урону"
       }
     },
     "Generic": {
-      "one": "Trait",
-      "other": "Traits",
-      "title": "Traits"
+      "one": "Особенность",
+      "other": "Особенности",
+      "title": "Особенности"
     },
     "Language": {
-      "one": "Language",
-      "other": "Languages",
-      "title": "Languages"
+      "one": "Язык",
+      "other": "Языки",
+      "title": "Языки"
     },
     "Save": {
-      "one": "Saving Throw Proficiency",
-      "other": "Saving Throw Proficiencies",
-      "title": "Saving Throw Proficiencies"
+      "one": "Умение в испытаниях",
+      "other": "Умения в испытаниях",
+      "title": "Умения в испытаниях"
     },
     "Skill": {
-      "one": "Skill Proficiency",
-      "other": "Skill Proficiencies",
-      "title": "Skill Proficiencies"
+      "one": "Умение в навыках",
+      "other": "Умения в навыках",
+      "title": "Умения в навыках"
     },
     "Tool": {
-      "one": "Tool Proficiency",
-      "other": "Tool Proficiencies",
-      "title": "Tool Proficiencies"
+      "one": "Умение в инструментах",
+      "other": "Умения в инструментах",
+      "title": "Умения в инструментах"
     },
     "Weapon": {
-      "one": "Weapon Proficiency",
-      "other": "Weapon Proficiencies",
-      "title": "Weapon Proficiencies"
+      "one": "Умение в оружии",
+      "other": "Умения в оружии",
+      "title": "Умения в оружии"
     }
   },
 
@@ -6656,27 +6656,27 @@
   },
 
   "EDITOR.DND5E.Inserts": {
-    "Advice": "General Advice",
-    "Attack": "Attack Roll",
-    "Award": "Award",
-    "Check": "Ability Check",
-    "Damage": "Damage",
-    "EnrichersGroup": "D&D Enrichers",
-    "FloatLeft": "Float Left",
-    "FloatRight": "Float Right",
-    "Group": "D&D Blocks",
-    "HabitatTreasure": "Habitat & Treasure",
-    "Healing": "Healing",
-    "Item": "Item",
-    "Lookup": "Lookup",
-    "Narrative": "Narrative",
-    "Notable": "Notable",
-    "Quest": "Quest",
-    "Quote": "Pull Quote",
-    "Reference": "Reference",
-    "Save": "Saving Throw",
-    "Skill": "Skill Check",
-    "VTTAdvice": "VTT Advice"
+    "Advice": "Общий совет",
+    "Attack": "Бросок атаки",
+    "Award": "Награда",
+    "Check": "Проверка характеристики",
+    "Damage": "Урон",
+    "EnrichersGroup": "Обогатители D&D",
+    "FloatLeft": "Обтекание слева",
+    "FloatRight": "Обтекание справа",
+    "Group": "Блоки D&D",
+    "HabitatTreasure": "Среда обитания и сокровища",
+    "Healing": "Исцеление",
+    "Item": "Предмет",
+    "Lookup": "Подстановка",
+    "Narrative": "Повествование",
+    "Notable": "Важное",
+    "Quest": "Задание",
+    "Quote": "Цитата",
+    "Reference": "Справка",
+    "Save": "Испытание",
+    "Skill": "Проверка навыка",
+    "VTTAdvice": "Совет VTT"
   },
 
   "EFFECT.DND5E": {
@@ -6877,12 +6877,12 @@
   "SETTINGS.DND5E": {
     "AUTOMATION": {
       "Autosize": {
-        "Hint": "Automatically adjust a token's dimensions and scale based on their size category.",
-        "Name": "Sync Token Size"
+        "Hint": "Автоматически подстраивать размеры и масштаб токена под категорию размера.",
+        "Name": "Синхронизация размера токена"
       },
       "Falling": {
-        "Name": "Disable Falling Automation",
-        "Hint": "Do not track the falling status of tokens."
+        "Name": "Отключение автоматизации падения",
+        "Hint": "Не отслеживать состояние падения токенов."
       },
       "Movement": {
         "Name": "Автоматизация перемещений",
@@ -6906,12 +6906,12 @@
       "None": "Никогда"
     },
     "CHATLOG": {
-      "Hint": "Specify a theme for the chat log. By default this will inherit from the Application theme.",
-      "Name": "Chat Log Theme",
+      "Hint": "Тема журнала чата. По умолчанию наследуется от темы интерфейса.",
+      "Name": "Тема журнала чата",
       "Options": {
-        "blank": "Default",
-        "dark": "Dark",
-        "light": "Light"
+        "blank": "По умолчанию",
+        "dark": "Тёмная",
+        "light": "Светлая"
       }
     },
     "COLLAPSETRAYS": {
@@ -7024,12 +7024,12 @@
     },
     "PERMISSIONS": {
       "AllowDamage": {
-        "Hint": "Allow players to apply damage to tokens they own.",
-        "Name": "Allow Player Damage Application"
+        "Hint": "Разрешить игрокам применять урон к принадлежащим им токенам.",
+        "Name": "Разрешить игрокам применять урон"
       },
       "AllowEffects": {
-        "Hint": "Allow players to use the effect application tray when an actor they own is the target of an effect.",
-        "Name": "Allow Player Effect Application"
+        "Hint": "Разрешить игрокам использовать панель применения эффектов, когда целью эффекта является принадлежащий им актёр.",
+        "Name": "Разрешить игрокам применять эффекты"
       },
       "AllowRests": {
         "Hint": "Разрешите игрокам отдыхать из бланков своих персонажей. Если эта функция отключена, игроки смогут отдыхать только тогда, когда Мастер сделает запрос.",
@@ -7051,8 +7051,8 @@
       "Modern": "Современные правила (2024)"
     },
     "SUMMARIZECHAT": {
-      "Hint": "Append certain results as summaries rather than full chat cards.",
-      "Name": "Summary Chat Cards"
+      "Hint": "Добавлять некоторые результаты в виде кратких сводок вместо полных карточек чата.",
+      "Name": "Краткие карточки чата"
     },
     "VARIANT": {
       "Hint": "Настройки опциональных вариантов правил системы.",
