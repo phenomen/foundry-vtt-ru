@@ -2,90 +2,24 @@
   "label": "Призываемые существа",
   "folders": {
     "Talents": "Таланты",
-    "Gesture: Conjure": "Жест: Вызов",
-    "Gesture: Create": "Жест: Создание"
+    "Gesture: Create": "Жест: Создание",
+    "Gesture: Conjure": "Жест: Вызов"
   },
   "entries": {
-    "Ancestral Guardian": {
-      "name": "Предок-страж",
+    "Moldy Skeleton": {
+      "name": "Плесневелый скелет",
       "items": {
-        "Ancestral Manifestation": {
-          "name": "Проявление предков",
-          "description": "<p>Предок-страж — это бестелесное проявление бдительных духов. Его нельзя ранить, переместить против его воли или сломить, а другие существа могут свободно проходить сквозь его клетку. Его подавляющее присутствие на поле боя приводит к тому, что он считается за <strong>трёх существ</strong> при определении того, находится ли враг в состоянии @Condition[flanked].</p>"
-        }
-      },
-      "tokenName": "Предок-страж",
-      "biographyPublic": "<p>Предок-страж — это не столько существо, сколько присутствие: собравшиеся духи тех, кто ушёл раньше, призванные в мир @UUID[Compendium.crucible.talent.Item.warden0000000000]{Хранителем природы} через Предковую рощу. Ими нельзя повелевать, с ними нельзя договориться, и они не произносят ни слова. Они просто оберегают живых до тех пор, пока длится связь Хранителя природы с ними.</p>"
-    },
-    "Earth Sprite": {
-      "name": "Спрайт земли",
-      "tokenName": "Порождение земли",
-      "items": {
-        "Elemental Armor": {
-          "name": "Стихийная броня"
+        "Deathly Armor": {
+          "name": "Мертвенная броня"
         },
-        "Earthen Claw": {
-          "name": "Земляной коготь"
+        "Bony Claws": {
+          "name": "Костяные когти"
         },
-        "Rune: Earth": {
-          "name": "Руна: Земля"
-        },
-        "Gesture: Ray": {
-          "name": "Жест: Луч"
-        },
-        "Acid Absorption": {
-          "name": "Поглощение кислоты"
-        },
-        "False Appearance": {
-          "name": "Ложный облик"
+        "Rune: Death": {
+          "name": "Руна: Смерть"
         },
         "Gesture: Fan": {
           "name": "Жест: Веер"
-        }
-      }
-    },
-    "Earth Visitor": {
-      "name": "Иномирец земли",
-      "tokenName": "Иномирец земли",
-      "items": {
-        "Rune: Earth": {
-          "name": "Руна: Земля"
-        },
-        "Acid Absorption": {
-          "name": "Поглощение кислоты"
-        },
-        "Gesture: Fan": {
-          "name": "Жест: Веер"
-        },
-        "Earthen Claw": {
-          "name": "Земляной коготь"
-        },
-        "Elemental Armor": {
-          "name": "Стихийная броня"
-        },
-        "Gesture: Aspect": {
-          "name": "Жест: Аспект"
-        }
-      }
-    },
-    "Flame Sprite": {
-      "name": "Спрайт пламени",
-      "tokenName": "Порождение пламени",
-      "items": {
-        "Rune: Flame": {
-          "name": "Руна: Пламя"
-        },
-        "Gesture: Fan": {
-          "name": "Жест: Веер"
-        },
-        "Flame Claw": {
-          "name": "Пламенный коготь"
-        },
-        "Elemental Armor": {
-          "name": "Стихийная броня"
-        },
-        "Fire Absorption": {
-          "name": "Поглощение огня"
         },
         "False Appearance": {
           "name": "Ложный облик"
@@ -94,7 +28,6 @@
     },
     "Flame Visitor": {
       "name": "Иномирец пламени",
-      "tokenName": "Иномирец пламени",
       "items": {
         "Rune: Flame": {
           "name": "Руна: Пламя"
@@ -116,9 +49,117 @@
         }
       }
     },
+    "Storm Sprite": {
+      "name": "Спрайт бури",
+      "items": {
+        "Elemental Armor": {
+          "name": "Стихийная броня"
+        },
+        "Voltaic Claw": {
+          "name": "Электрический коготь"
+        },
+        "Gesture: Arrow": {
+          "name": "Жест: Стрела"
+        },
+        "Rune: Storm": {
+          "name": "Руна: Буря"
+        },
+        "Electricity Absorption": {
+          "name": "Поглощение электричества"
+        },
+        "False Appearance": {
+          "name": "Ложный облик"
+        },
+        "Gesture: Fan": {
+          "name": "Жест: Веер"
+        }
+      }
+    },
+    "Flame Sprite": {
+      "name": "Спрайт пламени",
+      "items": {
+        "Rune: Flame": {
+          "name": "Руна: Пламя"
+        },
+        "Gesture: Fan": {
+          "name": "Жест: Веер"
+        },
+        "Flame Claw": {
+          "name": "Пламенный коготь"
+        },
+        "Elemental Armor": {
+          "name": "Стихийная броня"
+        },
+        "Fire Absorption": {
+          "name": "Поглощение огня"
+        },
+        "False Appearance": {
+          "name": "Ложный облик"
+        }
+      }
+    },
+    "Ancestral Guardian": {
+      "name": "Предок-страж",
+      "items": {
+        "Ancestral Manifestation": {
+          "name": "Проявление предков"
+        }
+      }
+    },
+    "Storm Visitor": {
+      "name": "Иномирец бури",
+      "items": {
+        "Rune: Storm": {
+          "name": "Руна: Буря"
+        },
+        "Electricity Absorption": {
+          "name": "Поглощение электричества"
+        },
+        "Gesture: Fan": {
+          "name": "Жест: Веер"
+        },
+        "Voltaic Claw": {
+          "name": "Электрический коготь"
+        },
+        "Elemental Armor": {
+          "name": "Стихийная броня"
+        },
+        "Gesture: Aspect": {
+          "name": "Жест: Аспект"
+        }
+      }
+    },
+    "Frost Visitor": {
+      "name": "Иномирец мороза",
+      "items": {
+        "Cold Absorption": {
+          "name": "Поглощение холода"
+        },
+        "Amorphous": {
+          "name": "Аморфный"
+        },
+        "Rune: Frost": {
+          "name": "Руна: Мороз"
+        },
+        "Aqueous Transmission": {
+          "name": "Водный перенос"
+        },
+        "Gesture: Fan": {
+          "name": "Жест: Веер"
+        },
+        "Elemental Armor": {
+          "name": "Стихийная броня"
+        },
+        "Frost Claw": {
+          "name": "Морозный коготь"
+        },
+        "Gesture: Aspect": {
+          "name": "Жест: Аспект"
+        }
+      }
+    },
     "Frost Sprite": {
       "name": "Спрайт мороза",
-      "tokenName": "Порождение мороза",
       "items": {
         "Elemental Armor": {
           "name": "Стихийная броня"
@@ -149,105 +190,52 @@
         }
       }
     },
-    "Frost Visitor": {
-      "name": "Иномирец мороза",
-      "tokenName": "Иномирец мороза",
+    "Earth Visitor": {
+      "name": "Иномирец земли",
       "items": {
-        "Cold Absorption": {
-          "name": "Поглощение холода"
+        "Rune: Earth": {
+          "name": "Руна: Земля"
         },
-        "Amorphous": {
-          "name": "Аморфный"
-        },
-        "Rune: Frost": {
-          "name": "Руна: Мороз"
-        },
-        "Aqueous Transmission": {
-          "name": "Водный перенос"
+        "Acid Absorption": {
+          "name": "Поглощение кислоты"
         },
         "Gesture: Fan": {
           "name": "Жест: Веер"
         },
-        "Elemental Armor": {
-          "name": "Стихийная броня"
-        },
-        "Frost Claw": {
-          "name": "Морозный коготь"
-        },
-        "Gesture: Aspect": {
-          "name": "Жест: Аспект"
-        }
-      }
-    },
-    "Moldy Skeleton": {
-      "name": "Плесневелый скелет",
-      "tokenName": "Порождение смерти",
-      "items": {
-        "Deathly Armor": {
-          "name": "Мертвенная броня"
-        },
-        "Bony Claws": {
-          "name": "Костяные когти"
-        },
-        "Rune: Death": {
-          "name": "Руна: Смерть"
-        },
-        "Gesture: Fan": {
-          "name": "Жест: Веер"
-        },
-        "False Appearance": {
-          "name": "Ложный облик"
-        }
-      }
-    },
-    "Storm Sprite": {
-      "name": "Спрайт бури",
-      "tokenName": "Порождение бури",
-      "items": {
-        "Elemental Armor": {
-          "name": "Стихийная броня"
-        },
-        "Voltaic Claw": {
-          "name": "Электрический коготь"
-        },
-        "Gesture: Arrow": {
-          "name": "Жест: Стрела"
-        },
-        "Rune: Storm": {
-          "name": "Руна: Буря"
-        },
-        "Electricity Absorption": {
-          "name": "Поглощение электричества"
-        },
-        "False Appearance": {
-          "name": "Ложный облик"
-        },
-        "Gesture: Fan": {
-          "name": "Жест: Веер"
-        }
-      }
-    },
-    "Storm Visitor": {
-      "name": "Иномирец бури",
-      "tokenName": "Иномирец бури",
-      "items": {
-        "Rune: Storm": {
-          "name": "Руна: Буря"
-        },
-        "Electricity Absorption": {
-          "name": "Поглощение электричества"
-        },
-        "Gesture: Fan": {
-          "name": "Жест: Веер"
-        },
-        "Voltaic Claw": {
-          "name": "Электрический коготь"
+        "Earthen Claw": {
+          "name": "Земляной коготь"
         },
         "Elemental Armor": {
           "name": "Стихийная броня"
         },
         "Gesture: Aspect": {
           "name": "Жест: Аспект"
+        }
+      }
+    },
+    "Earth Sprite": {
+      "name": "Спрайт земли",
+      "items": {
+        "Elemental Armor": {
+          "name": "Стихийная броня"
+        },
+        "Earthen Claw": {
+          "name": "Земляной коготь"
+        },
+        "Rune: Earth": {
+          "name": "Руна: Земля"
+        },
+        "Gesture: Ray": {
+          "name": "Жест: Луч"
+        },
+        "Acid Absorption": {
+          "name": "Поглощение кислоты"
+        },
+        "False Appearance": {
+          "name": "Ложный облик"
+        },
+        "Gesture: Fan": {
+          "name": "Жест: Веер"
         }
       }
     }
