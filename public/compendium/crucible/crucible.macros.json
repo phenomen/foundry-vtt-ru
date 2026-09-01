@@ -1,20 +1,25 @@
 {
   "label": "Макросы системы",
   "entries": {
-    "Configure Group Check": {
-      "name": "Настроить групповую проверку"
-    },
     "Configure Hazard": {
-      "name": "Настроить опасность"
+      "name": "Настроить опасность",
+      "command": "await crucible.api.dice.HazardDialog.prompt()"
+    },
+    "Configure Group Check": {
+      "name": "Настроить групповую проверку",
+      "command": "crucible.api.dice.GroupCheck.configure({party: true})"
     },
     "Randomize Item": {
-      "name": "Случайный предмет"
+      "name": "Случайный предмет",
+      "command": "await crucible.api.documents.CrucibleItem.randomizeDialog()"
     },
     "Recover": {
-      "name": "Восстановиться"
+      "name": "Восстановиться",
+      "command": "game.system.api.documents.CrucibleActor.macroAction(actor, \"recover\");"
     },
     "Rest": {
-      "name": "Отдых"
+      "name": "Отдых",
+      "command": "game.system.api.documents.CrucibleActor.macroAction(actor, \"rest\");"
     }
   }
 }
