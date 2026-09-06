@@ -15,6 +15,7 @@
     },
     "Item": {
       "career": "Карьера",
+      "element": "Специализация",
       "race": "Раса",
       "gear": "Снаряжение",
       "skill": "Навык",
@@ -47,12 +48,14 @@
       "Stats": "Данные",
       "Skills": "Навыки",
       "Talents": "Таланты",
+      "Career": "Карьера",
       "Equipment": "Снаряжение",
       "Vessel": "Судно",
       "Crew": "Экипаж",
       "Data": "Сведения",
       "Effects": "Эффекты",
-      "Description": "Описание"
+      "Description": "Описание",
+      "Personal": "Личное"
     },
     "Effect": {
       "Title": "Активный эффект",
@@ -86,10 +89,15 @@
     },
     "Character": {
       "ChangePortrait": "Сменить портрет",
+      "Callsign": "Позывной",
+      "CallsignPlaceholder": "Позывной",
+      "Faction": "Фракция",
+      "FactionPlaceholder": "Фракция",
       "Level": "Уровень",
       "Experience": "Опыт",
-      "BuildPoints": "Развитие",
+      "BuildPoints": "ПР",
       "Armor": "Броня",
+      "Resistance": "Устойчивость",
       "Race": "Раса",
       "Career": "Карьера",
       "Element": "Специализация",
@@ -108,10 +116,11 @@
       "Speed": "Скорость",
       "Wealth": "Достаток",
       "Miscellaneous": "Прочее",
+      "Combat": "Бой",
       "Proficiencies": "Умения",
       "ProficienciesPlaceholder": "Особое оружие, управление техникой, специализированная подготовка...",
-      "DragDropCareer": "Перетащите сюда карьеру",
-      "DragDropRace": "Перетащите сюда расу",
+      "DragDropCareer": "Перетащите карьеру или нажмите для создания",
+      "DragDropRace": "Перетащите расу или нажмите для создания",
       "AddCareer": "Добавить карьеру",
       "AddRace": "Добавить расу",
       "AddGenericSkills": "Добавить общие навыки"
@@ -130,9 +139,13 @@
       "Settings": "Настройки показателей",
       "Max": "Макс. {max}",
       "Min": "Мин. {min}",
-      "MechaClass": "Меха-класс",
-      "MechaClassWounds": "Ранения меха-класса",
       "Triumvirate": "Триумвират"
+    },
+    "ArmorClass": {
+      "Title": "Класс брони",
+      "light": "Лёгкий",
+      "mecha": "Мех",
+      "naval": "Корабль"
     },
     "Stress": {
       "Stress": "Стресс",
@@ -180,6 +193,7 @@
       "Battloid": "«Воитель»",
       "Structure": "Конструкция",
       "Armor": "Броня",
+      "Resistance": "Устойчивость",
       "Crew": "Экипаж",
       "Capacity": "Вместимость",
       "HardwarePoints": "Ячейки оборудования",
@@ -191,10 +205,10 @@
       "SpaceUnits": "Космические",
       "UnitConversionHint": "10 наземных = 1 планетарная | 10 планетарных = 1 космическая",
       "FrameworkTitle": "Каркас",
+      "Settings": "Настройки каркаса",
       "SystemsTitle": "Системы",
       "Total": "Всего",
       "Left": "Ост.",
-      "Basic": "Базовый",
       "BasicStructure": "Базовая конструкция",
       "Suite": "Комплект",
       "Sensors": "Сенсоры",
@@ -205,7 +219,7 @@
     "Damage": {
       "Title": "Расчёт урона",
       "DistributeTitle": "Распределить урон",
-      "DistributeHint": "{damage} ед. урона ({type}) по {name}",
+      "DistributeHint": "{damage} ({type}) урона по {name}",
       "Assigned": "Распределено: {assigned} / {total}.",
       "Soaked": "Поглощено бронёй: {soaked}.",
       "Capacity": "осталось {remaining}",
@@ -228,8 +242,8 @@
       "Defended": "Атака отражена защитой.",
       "ArmorAbsorbed": "Атака поглощена бронёй цели.",
       "ImmuneLightVsNaval": "Неуязвимость! Лёгкий урон не может повредить корабельную конструкцию.",
-      "DirectHit": "Прямое попадание! Наносит {damage} ед. урона ({type}).",
-      "OverkillSuccess": "КРИТИЧЕСКАЯ АТАКА! Наносит {damage} ед. урона ({type})!",
+      "DirectHit": "Прямое попадание! Наносит {damage} ({type}) урона.",
+      "OverkillSuccess": "КРИТИЧЕСКАЯ АТАКА! Наносит {damage} ({type}) урона!",
       "DamageClass": {
         "light": "Лёгкий класс",
         "mecha": "Меха класс",
@@ -237,12 +251,13 @@
       },
       "Breakdown": {
         "Opposed": "{attack} Атака − {defend} Защита = {net} попаданий",
-        "MultiplierApplied": "Применён множитель ×{value} против {type} → {hits} попаданий",
-        "MultiplierSkipped": "Множитель ×{value} против {type} пропущен (цель — {target})",
+        "MultiplierApplied": "×{value} → {hits} попаданий",
         "Armor": "Броня {armor} − Бронебойность {ap} = {effective} поглощения",
+        "ArmorResisted": "Броня {armor} − Бронебойность {ap} (−{resist} Устойчивость) = {effective} поглощено",
         "ArmorSkipped": "Броня поглощает {armor} (бронебойность {ap} игнорируется против {target})",
         "HitsOverArmor": "{hits} попаданий сверх брони",
         "SwarmArmor": "Бронебойность {ap} применяется к броне каждого судна",
+        "SwarmArmorResisted": "Бронебойность {ap} уменьшается на величину Устойчивости каждого судна, а затем применяется к броне",
         "SwarmArmorSkipped": "Бронебойность {ap} игнорируется против брони {target} каждого судна",
         "ClassSame": "{attack} против {target}: урон 1 к 1",
         "ClassReduce": "{attack} против {target}: каждые 10 попаданий дают 1 ед. урона",
@@ -273,7 +288,7 @@
       "EquipmentSuite": "Набор снаряжения",
       "EquipmentSuitePl": "Наборы снаряжения",
       "Upgrade": "Улучшение меха",
-      "UpgradePl": "Улучшения",
+      "UpgradePl": "Улучшения меха",
       "Quantity": "Количество",
       "Value": "Значение",
       "Uses": "Использования",
@@ -284,14 +299,14 @@
       "Prerequisites": "Требования",
       "SlotType": "Тип ячейки",
       "Element": "Специализация",
+      "ElementPl": "Специализации",
+      "ElementTalent": "Талант специализации",
+      "ElementTalentPlaceholder": "Название таланта...",
+      "StartingRank": "Начальный ранг",
       "RankTitle": "Название ранга",
       "FameTitle": "Титул известности",
-      "Equipment": "Снаряжение",
-      "ElementPlaceholder": "Специализация карьеры...",
-      "TalentPlaceholder": "Талант карьеры...",
       "RankTitlePlaceholder": "Название ранга...",
       "FameTitlePlaceholder": "Титул известности...",
-      "EquipmentPlaceholder": "Предоставляемое снаряжение...",
       "PrerequisitePlaceholder": "",
       "Benefit": "Преимущество",
       "Cost": "Стоимость",
@@ -308,7 +323,11 @@
       "Property": {
         "Damage": {
           "name": "Урон",
-          "tag": "У={val}"
+          "tag": "{mult}x{typeLetter}",
+          "multiplier": "Множитель",
+          "light": "Л",
+          "mecha": "М",
+          "naval": "К"
         },
         "Ammunition": {
           "name": "Боеприпасы"
@@ -385,13 +404,6 @@
         "Penetration": {
           "name": "Бронебойное",
           "tag": "Бр{val}"
-        },
-        "Multiplier": {
-          "name": "Множитель",
-          "tag": "{typeLetter}x{mult}",
-          "light": "Л",
-          "mecha": "М",
-          "naval": "К"
         }
       }
     },
@@ -421,7 +433,7 @@
         },
         "Observe": {
           "name": "Наблюдение",
-          "hint": "Осмотрите ближайшую область в поисках скрытых угроз или интересных элементов."
+          "hint": "Осмотрите ближайшую область в поисках скрытых угроз или интересных объектов."
         },
         "Obscure": {
           "name": "Маскировка",
@@ -488,8 +500,6 @@
       "Weapon": "Оружие",
       "DamageClass": "Класс урона",
       "ArmorPenetration": "Бронебойность",
-      "Multiplier": "Множитель",
-      "MultiplierValue": "{value}x против {type}",
       "IncomingAttack": "Входящая атака",
       "AttackSuccesses": "Успехи атаки",
       "DefendSuccesses": "Успехи защиты",
@@ -521,6 +531,7 @@
       "Edit": "Редактировать",
       "Roll": "Бросить",
       "Use": "Исп.",
+      "SendToChat": "Отправить в чат",
       "Save": "Сохранить",
       "Cancel": "Отмена",
       "Decrement": "Уменьшить",
@@ -559,6 +570,7 @@
         "DragDropHint": "Перетащите суда, чтобы добавить их в рой",
         "Count": "Количество",
         "Armor": "Броня",
+        "Resistance": "Устойчивость",
         "Structure": "Конструкция",
         "Speed": "Скорость",
         "ReducedStructureHint": "Каждые 3 единицы конструкции дают 1 единицу конструкции: 3 превращается в 1, 4 превращается в 2."
