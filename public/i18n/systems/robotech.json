@@ -8,13 +8,14 @@
       "plot_event": "Сюжетное событие"
     },
     "Combat": {
-      "robotech": "Конфликт"
+      "robotech": "Столкновение"
     },
     "Combatant": {
       "robotech": "Участник боя"
     },
     "Item": {
       "career": "Карьера",
+      "element": "Специализация",
       "race": "Раса",
       "gear": "Снаряжение",
       "skill": "Навык",
@@ -26,7 +27,6 @@
     }
   },
   "ROBOTECH": {
-    "Title": "Роботех: «Сага о Макроссе»",
     "Sheet": {
       "Actor": "Бланк актёра Роботеха",
       "Item": "Бланк предмета Роботеха",
@@ -34,6 +34,7 @@
       "Name": "Имя",
       "NamePlaceholder": "Имя",
       "Open": "Открыть бланк",
+      "Redacted": "[ ЗАСЕКРЕЧЕНО ]",
       "NoPermission": "У вас нет прав для изменения этого актёра.",
       "MissingActor": "Актёр {uuid} не найден"
     },
@@ -47,12 +48,14 @@
       "Stats": "Данные",
       "Skills": "Навыки",
       "Talents": "Таланты",
+      "Career": "Карьера",
       "Equipment": "Снаряжение",
-      "Vessel": "Судно",
       "Crew": "Экипаж",
       "Data": "Сведения",
       "Effects": "Эффекты",
-      "Description": "Описание"
+      "Description": "Описание",
+      "Personal": "Личное",
+      "Bio": "Биография"
     },
     "Effect": {
       "Title": "Активный эффект",
@@ -86,10 +89,15 @@
     },
     "Character": {
       "ChangePortrait": "Сменить портрет",
+      "Callsign": "Позывной",
+      "CallsignPlaceholder": "Позывной",
+      "Organization": "Организация",
+      "OrganizationPlaceholder": "Организация",
       "Level": "Уровень",
       "Experience": "Опыт",
-      "BuildPoints": "Развитие",
+      "BuildPoints": "ПР",
       "Armor": "Броня",
+      "Resistance": "Устойчивость",
       "Race": "Раса",
       "Career": "Карьера",
       "Element": "Специализация",
@@ -99,22 +107,21 @@
       "Rank": "Ранг",
       "RankN": "Р{n}",
       "RankNTitle": "Р{n}: {title}",
-      "RankTitle": "Звание",
       "Fame": "Известность",
       "FameN": "И{n}",
       "FameNTitle": "И{n}: {title}",
-      "FameTitle": "Титул известности",
       "Burnout": "Выгорание",
       "Speed": "Скорость",
       "Wealth": "Достаток",
-      "Miscellaneous": "Прочее",
+      "Encounter": "Столкновение",
       "Proficiencies": "Умения",
       "ProficienciesPlaceholder": "Особое оружие, управление техникой, специализированная подготовка...",
-      "DragDropCareer": "Перетащите сюда карьеру",
-      "DragDropRace": "Перетащите сюда расу",
+      "DragDropCareer": "Перетащите карьеру или нажмите для создания",
+      "DragDropRace": "Перетащите расу или нажмите для создания",
       "AddCareer": "Добавить карьеру",
       "AddRace": "Добавить расу",
-      "AddGenericSkills": "Добавить общие навыки"
+      "AddGenericSkills": "Добавить общие навыки",
+      "Biography": "Биография, внешность, отношения"
     },
     "Race": {
       "Form": "Форма",
@@ -129,10 +136,13 @@
       "Box": "{type} {n}",
       "Settings": "Настройки показателей",
       "Max": "Макс. {max}",
-      "Min": "Мин. {min}",
-      "MechaClass": "Меха-класс",
-      "MechaClassWounds": "Ранения меха-класса",
       "Triumvirate": "Триумвират"
+    },
+    "ArmorClass": {
+      "Title": "Класс брони",
+      "light": "Лёгкий",
+      "mecha": "Мех",
+      "naval": "Корабль"
     },
     "Stress": {
       "Stress": "Стресс",
@@ -171,7 +181,7 @@
       "ClassificationPlaceholder": "например, авиация, силовая броня...",
       "Designation": "Обозначение",
       "DesignationPlaceholder": "например, VF/A-6H, VHT-1...",
-      "Faction": "Фракция",
+      "Organization": "Организация",
       "RequiredRank": "Требуемый ранг",
       "Transformable": "Трансформируемый",
       "Mode": "Режим",
@@ -180,6 +190,7 @@
       "Battloid": "«Воитель»",
       "Structure": "Конструкция",
       "Armor": "Броня",
+      "Resistance": "Устойчивость",
       "Crew": "Экипаж",
       "Capacity": "Вместимость",
       "HardwarePoints": "Ячейки оборудования",
@@ -191,12 +202,13 @@
       "SpaceUnits": "Космические",
       "UnitConversionHint": "10 наземных = 1 планетарная | 10 планетарных = 1 космическая",
       "FrameworkTitle": "Каркас",
+      "Settings": "Настройки каркаса",
       "SystemsTitle": "Системы",
+      "Current": "Текущий",
       "Total": "Всего",
-      "Left": "Ост.",
-      "Basic": "Базовый",
+      "TotalArmor": "Общая броня",
+      "TotalStructure": "Общая конструкция",
       "BasicStructure": "Базовая конструкция",
-      "Suite": "Комплект",
       "Sensors": "Сенсоры",
       "Targeting": "Наведение",
       "Thrusters": "Микродвигатели",
@@ -205,7 +217,7 @@
     "Damage": {
       "Title": "Расчёт урона",
       "DistributeTitle": "Распределить урон",
-      "DistributeHint": "{damage} ед. урона ({type}) по {name}",
+      "DistributeHint": "{damage} ({type}) урона по {name}",
       "Assigned": "Распределено: {assigned} / {total}.",
       "Soaked": "Поглощено бронёй: {soaked}.",
       "Capacity": "осталось {remaining}",
@@ -228,8 +240,8 @@
       "Defended": "Атака отражена защитой.",
       "ArmorAbsorbed": "Атака поглощена бронёй цели.",
       "ImmuneLightVsNaval": "Неуязвимость! Лёгкий урон не может повредить корабельную конструкцию.",
-      "DirectHit": "Прямое попадание! Наносит {damage} ед. урона ({type}).",
-      "OverkillSuccess": "КРИТИЧЕСКАЯ АТАКА! Наносит {damage} ед. урона ({type})!",
+      "DirectHit": "Прямое попадание! Наносит {damage} ({type}) урона.",
+      "OverkillSuccess": "КРИТИЧЕСКАЯ АТАКА! Наносит {damage} ({type}) урона!",
       "DamageClass": {
         "light": "Лёгкий класс",
         "mecha": "Меха класс",
@@ -237,18 +249,20 @@
       },
       "Breakdown": {
         "Opposed": "{attack} Атака − {defend} Защита = {net} попаданий",
-        "MultiplierApplied": "Применён множитель ×{value} против {type} → {hits} попаданий",
-        "MultiplierSkipped": "Множитель ×{value} против {type} пропущен (цель — {target})",
+        "MultiplierApplied": "×{value} → {hits} попаданий",
         "Armor": "Броня {armor} − Бронебойность {ap} = {effective} поглощения",
+        "ArmorResisted": "Броня {armor} − Бронебойность {ap} (−{resist} Устойчивость) = {effective} поглощено",
         "ArmorSkipped": "Броня поглощает {armor} (бронебойность {ap} игнорируется против {target})",
         "HitsOverArmor": "{hits} попаданий сверх брони",
         "SwarmArmor": "Бронебойность {ap} применяется к броне каждого судна",
+        "SwarmArmorResisted": "Бронебойность {ap} уменьшается на величину Устойчивости каждого судна, а затем применяется к броне",
         "SwarmArmorSkipped": "Бронебойность {ap} игнорируется против брони {target} каждого судна",
         "ClassSame": "{attack} против {target}: урон 1 к 1",
         "ClassReduce": "{attack} против {target}: каждые 10 попаданий дают 1 ед. урона",
         "ClassOverkill": "{attack} против {target}: каждое попадание наносит 10 ед. урона",
         "ClassOverkillHeavy": "{attack} против {target}: каждое попадание наносит 100 ед. урона",
-        "ClassImmune": "{attack} против {target}: урон не наносится"
+        "ClassImmune": "{attack} против {target}: урон не наносится",
+        "HardenedSwarm": "Закалённый рой: каждое судно имеет 1 конструкцию меха-класса и 0 брони"
       }
     },
     "Item": {
@@ -256,46 +270,32 @@
       "NamePlaceholder": "Название предмета",
       "TagCount": "{name} ({current}/{total})",
       "ItemNotAllowed": "Нельзя добавить {itemType} к {actorType}.",
-      "Career": "Карьера",
-      "CareerPl": "Карьеры",
-      "Race": "Раса",
-      "RacePl": "Расы",
-      "Gear": "Снаряжение",
       "GearPl": "Снаряжение",
       "Skill": "Навык",
-      "SkillPl": "Навыки",
-      "Talent": "Талант",
-      "TalentPl": "Таланты",
-      "Weapon": "Оружие",
       "WeaponPl": "Оружие",
-      "Feature": "Особенность",
       "FeaturePl": "Особенности",
-      "EquipmentSuite": "Набор снаряжения",
       "EquipmentSuitePl": "Наборы снаряжения",
-      "Upgrade": "Улучшение меха",
-      "UpgradePl": "Улучшения",
+      "UpgradePl": "Улучшения меха",
       "Quantity": "Количество",
       "Value": "Значение",
       "Uses": "Использования",
       "Unlimited": "Неогранич.",
       "HardwarePoints": "Ячейки оборудования",
       "Category": "Категория",
-      "Damage": "Урон",
       "Prerequisites": "Требования",
-      "SlotType": "Тип ячейки",
       "Element": "Специализация",
+      "ElementPl": "Специализации",
+      "ElementTalent": "Талант специализации",
+      "ElementTalentPlaceholder": "Название таланта...",
+      "StartingRank": "Начальный ранг",
+      "RequiredRank": "Требуемый ранг",
       "RankTitle": "Название ранга",
       "FameTitle": "Титул известности",
-      "Equipment": "Снаряжение",
-      "ElementPlaceholder": "Специализация карьеры...",
-      "TalentPlaceholder": "Талант карьеры...",
       "RankTitlePlaceholder": "Название ранга...",
       "FameTitlePlaceholder": "Титул известности...",
-      "EquipmentPlaceholder": "Предоставляемое снаряжение...",
       "PrerequisitePlaceholder": "",
       "Benefit": "Преимущество",
       "Cost": "Стоимость",
-      "Condition": "Состояние",
       "Bonus": "Бонус",
       "Properties": "Свойства оружия",
       "Ranges": {
@@ -308,7 +308,11 @@
       "Property": {
         "Damage": {
           "name": "Урон",
-          "tag": "У={val}"
+          "tag": "{mult}x{typeLetter}",
+          "multiplier": "Множитель",
+          "light": "Л",
+          "mecha": "М",
+          "naval": "К"
         },
         "Ammunition": {
           "name": "Боеприпасы"
@@ -385,21 +389,11 @@
         "Penetration": {
           "name": "Бронебойное",
           "tag": "Бр{val}"
-        },
-        "Multiplier": {
-          "name": "Множитель",
-          "tag": "{typeLetter}x{mult}",
-          "light": "Л",
-          "mecha": "М",
-          "naval": "К"
         }
       }
     },
     "LinkedCharacter": {
-      "DropHint": "Назначьте персонажа",
-      "Clear": "Очистить",
       "OpenSheet": "Открыть лист персонажа",
-      "WrongType": "Перетащите персонажа, а не судно или рой.",
       "Missing": "Связанный персонаж отсутствует"
     },
     "Crew": {
@@ -421,7 +415,7 @@
         },
         "Observe": {
           "name": "Наблюдение",
-          "hint": "Осмотрите ближайшую область в поисках скрытых угроз или интересных элементов."
+          "hint": "Осмотрите ближайшую область в поисках скрытых угроз или интересных объектов."
         },
         "Obscure": {
           "name": "Маскировка",
@@ -449,11 +443,10 @@
         },
         "Initiative": {
           "name": "Инициатива",
-          "hint": "Определите очерёдность ходов в конфликте."
+          "hint": "Определите очерёдность ходов перед столкновением."
         }
       },
       "Phases": {
-        "Phase": "Фаза",
         "Support": "Фаза поддержки",
         "Ops": "Фаза операций",
         "Cinematic": "Фаза окружения",
@@ -469,13 +462,11 @@
       "Title": "Центр действий",
       "Action": "Действие",
       "Roll": "Бросок",
-      "RollButton": "Бросить кубики",
       "SelectSkill1": "Первый навык",
       "SelectSkill2": "Второй навык",
       "SelectSuite": "Набор снаряжения",
       "Modifier": "Модификатор",
       "Successes": "Успехи",
-      "NoSuccesses": "Нет успехов",
       "ManualDice": "Доп. кубики",
       "ManualSuccesses": "Успехи",
       "TotalDice": "Общий набор кубиков",
@@ -486,24 +477,34 @@
       "Rolled": "Выпало",
       "None": "Нет",
       "Weapon": "Оружие",
-      "DamageClass": "Класс урона",
       "ArmorPenetration": "Бронебойность",
-      "Multiplier": "Множитель",
-      "MultiplierValue": "{value}x против {type}",
       "IncomingAttack": "Входящая атака",
       "AttackSuccesses": "Успехи атаки",
       "DefendSuccesses": "Успехи защиты",
       "DefendButton": "Защититься",
       "ApplyDamage": "Применить урон",
+      "SynergyButton": "Синергия",
+      "SynergyTitle": "Синергия",
+      "SynergyHint": "Выберите действие и сколько успехов взять из броска.",
+      "SynergyMove": "Доступно успехов",
+      "SynergyRemaining": "Осталось: {count}",
+      "SynergyTransferred": "Взято: {count}",
+      "SynergyConfirm": "Применить синергию",
+      "SynergyTitleCard": "{name} — {action} с синергией",
+      "PushedSynergyTitle": "{name} — {action} с усилием и синергией",
+      "PushedSynergyFatigue": "Усиленная синергия требует 2 усталости.",
+      "SynergyAlreadySplit": "Этот бросок уже был использован для синергии.",
+      "SynergyLogFull": "Участник боя уже использовал оба действия в этом раунде.",
+      "SynergyNoPermission": "Вы не можете использовать синергию с этим броском.",
+      "SynergyMissingActor": "Актёр этого броска не найден.",
       "CalledShot": "Прицельный выстрел",
       "CalledShotYes": "Прицельный выстрел: распределите урон по системе или оборудованию",
-      "CalledShotHint": "Прицельный выстрел: {damage} урона ({type}). Распределите его по системе или оборудованию цели.",
       "RollTitle": "{name} — {action}",
-      "HeightenedTitle": "{name} — {action} с ускорением",
+      "PushedTitle": "{name} — {action} с усилием",
       "NoVesselCrew": "Назначьте члена экипажа на это судно перед использованием Центра действий.",
       "NoSwarmVessels": "Добавьте суда в этот рой перед использованием Центра действий.",
       "SwarmVessels": "Набор кубиков роя",
-      "SwarmVesselsHint": "Каждое судно добавляет 1 кубик. Уменьшите это количество, чтобы разделить рой на отдельные пулы действий.",
+      "SwarmVesselsHint": "Общая сила: 1 кубик за каждого живого участника, с разделением на 2 действия за раунд.",
       "OptionWithSource": "{name} [{value}] ({source})",
       "OptionNameWithSource": "{name} ({source})",
       "SelectOneToken": "Выберите один токен под вашим управлением.",
@@ -521,12 +522,11 @@
       "Edit": "Редактировать",
       "Roll": "Бросить",
       "Use": "Исп.",
+      "SendToChat": "Отправить в чат",
       "Save": "Сохранить",
       "Cancel": "Отмена",
       "Decrement": "Уменьшить",
-      "Increment": "Увеличить",
-      "Equip": "Экипировать",
-      "Unequip": "Снять"
+      "Increment": "Увеличить"
     },
     "List": {
       "HeaderName": "Название",
@@ -536,16 +536,16 @@
       "HeaderUses": "Применения",
       "HeaderAmmo": "Боеприпасы",
       "HeaderSkill": "Навык",
-      "HeaderQty": "Кол-во",
-      "HeaderDestroyed": "Уничтожено",
       "HardwareSlot": "Оборудование {current}/{total}",
-      "HeaderManage": "Управление",
       "HeaderValue": "Значение",
       "Empty": "Нет элементов",
       "NewItem": "Новый {type}"
     },
     "Swarm": {
       "Title": "Рой",
+      "Hardened": "Закалённый",
+      "HardenedHint": "Участники считаются как 1 структура меха-класса и 0 брони меха-класса. Рой становится базовым.",
+      "ActionBudget": "Рой может совершить 2 действия за раунд.",
       "Tabs": {
         "Members": "Состав"
       },
@@ -559,13 +559,13 @@
         "DragDropHint": "Перетащите суда, чтобы добавить их в рой",
         "Count": "Количество",
         "Armor": "Броня",
+        "Resistance": "Устойчивость",
         "Structure": "Конструкция",
         "Speed": "Скорость",
-        "ReducedStructureHint": "Каждые 3 единицы конструкции дают 1 единицу конструкции: 3 превращается в 1, 4 превращается в 2."
+        "ReducedStructureHint": "За каждые 3 пункта конструкции рой получает 1 пункт конструкции. Например: 3 становится 1, 4 становится 2."
       }
     },
     "Conflict": {
-      "Title": "Конфликт",
       "Type": "Тип",
       "TypeSwarm": "Рой",
       "TypeBoss": "Босс",
@@ -601,7 +601,6 @@
       "PoolRollTitle": "{name} — кубики конфликта"
     },
     "PlotEvent": {
-      "Title": "Сюжетное событие",
       "Level": "Уровень",
       "Rounds": "Раунды",
       "RisingAction": "Развитие действия",
@@ -610,7 +609,6 @@
       "SetActivePhase": "Отметить фазу «{phase}» как активную фазу раунда",
       "Conflicts": "Конфликты",
       "ConflictsHint": "Перетащите конфликты, чтобы добавить их к этому событию",
-      "AlreadyAssigned": "Этот конфликт уже добавлен в это сюжетное событие.",
       "WrongType": "Перетащите участника конфликта.",
       "MissingConflict": "Привязанный конфликт отсутствует",
       "HeaderType": "Тип",
@@ -623,14 +621,14 @@
       "MentalBreak": "Нервный срыв"
     },
     "Combat": {
-      "Create": "Создать конфликт",
+      "Create": "Создать столкновение",
       "Settings": "Настройки трекера",
-      "Menu": "Настройки конфликта",
-      "NoEncounter": "Нет конфликта",
+      "Menu": "Параметры столкновения",
+      "NoEncounter": "Нет столкновения",
       "NotStarted": "Не начато",
       "Round": "Раунд {n}",
-      "EmptyTurns": "Добавьте токены в конфликт.",
-      "Start": "Начать конфликт",
+      "EmptyTurns": "Добавьте токены в столкновение.",
+      "Start": "Начать столкновение",
       "PreviousTurn": "Предыдущий ход",
       "NextTurn": "Следующий ход",
       "PreviousRound": "Предыдущий раунд",
@@ -638,7 +636,7 @@
       "Initiative": "Инициатива",
       "Unrolled": "—",
       "RoundPhase": "Раунд {n}: фаза «{phase}».",
-      "ConflictResolved": "Конфликт разрешён!",
+      "EncounterResolved": "Столкновение окончено!",
       "RollInitiative": "Бросить инициативу",
       "RoundBudget": "Навыки: {skills} | Снаряжение: {suite}",
       "SuiteAvailable": "доступно",
@@ -646,12 +644,12 @@
       "SkillBudget": "В каждом раунде можно использовать только два навыка.",
       "SuiteBudget": "В каждом раунде можно использовать только один набор снаряжения.",
       "SuiteRequiresSkill": "Набор снаряжения можно использовать только вместе с навыком",
-      "Heightened": "с ускорением",
+      "Pushed": "с усилием",
       "TakenAction": "{phase}: {action}",
-      "TakenHeightened": "{phase}: {action} {heightened}",
+      "TakenPushed": "{phase}: {action} {pushed}",
       "TakeAction": "Совершить действие",
       "Hidden": "Скрыто",
-      "NotInCombat": "Этот участник не задействован в текущем конфликте.",
+      "NotInCombat": "Этот участник не задействован в текущем столкновении.",
       "WaitForPhase": "Подождите, пока Ведущий переключит фазу.",
       "Phases": {
         "Communication": "Связь",
