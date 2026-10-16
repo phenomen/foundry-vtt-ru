@@ -8,44 +8,101 @@
       "path": "system.actions",
       "converter": "structured",
       "cardinality": "many",
-      "keys": ["name"],
+      "keys": [
+        "name",
+        "id"
+      ],
       "mapping": {
         "name": "name",
         "description": "description",
         "condition": "condition"
       }
+    },
+    "_identity": {
+      "export": [
+        "crucibleOriginalName",
+        "_id",
+        "id"
+      ]
     }
   },
   "Actor": {
-    "tokenName": "prototypeToken.name",
-    "ancestry": {
-      "path": "system.details.ancestry",
-      "converter": "crucibleEmbeddedDetail",
-      "packId": "crucible.ancestry"
+    "description": {
+      "path": "system.details.biography",
+      "converter": "crucibleOmit"
     },
-    "background": {
-      "path": "system.details.background",
-      "converter": "crucibleEmbeddedDetail",
-      "packId": "crucible.background"
+    "tokenName": {
+      "path": "prototypeToken.name",
+      "converter": "crucibleOmit"
     },
-    "archetype": {
-      "path": "system.details.archetype",
-      "converter": "crucibleEmbeddedDetail",
-      "packId": "crucible.archetype"
-    },
-    "taxonomy": {
-      "path": "system.details.taxonomy",
-      "converter": "crucibleEmbeddedDetail",
-      "packId": "crucible.taxonomy"
-    },
-    "biographyPublic": "system.details.biography.public",
-    "biographyPrivate": "system.details.biography.private",
     "items": {
       "path": "items",
       "converter": "document",
       "documentType": "Item",
       "cardinality": "many",
       "fallbackPolicy": "owner-package-first"
+    },
+    "_identity": {
+      "export": [
+        "crucibleOriginalName",
+        "_id",
+        "id"
+      ]
+    }
+  },
+  "ActiveEffect": {
+    "_identity": {
+      "export": [
+        "crucibleOriginalName",
+        "_id",
+        "id"
+      ]
+    },
+    "changes": {
+      "path": "system.changes",
+      "converter": "structured",
+      "cardinality": "many",
+      "keys": [
+        "key"
+      ],
+      "valuePath": "value"
+    }
+  },
+  "JournalEntry": {
+    "_identity": {
+      "export": [
+        "crucibleOriginalName",
+        "_id",
+        "id"
+      ]
+    },
+    "categories": {
+      "path": "categories",
+      "converter": "crucibleNames"
+    }
+  },
+  "JournalEntryPage": {
+    "_identity": {
+      "export": [
+        "crucibleOriginalName",
+        "_id",
+        "id"
+      ]
+    }
+  },
+  "Scene": {
+    "_identity": {
+      "export": [
+        "crucibleOriginalName",
+        "_id",
+        "id"
+      ]
+    }
+  },
+  "Adventure": {
+    "folders": {
+      "path": "folders",
+      "converter": "crucibleNames"
     }
   }
 }
