@@ -8,10 +8,7 @@
       "path": "system.actions",
       "converter": "structured",
       "cardinality": "many",
-      "keys": [
-        "name",
-        "id"
-      ],
+      "keys": ["name", "id"],
       "mapping": {
         "name": "name",
         "description": "description",
@@ -19,11 +16,7 @@
       }
     },
     "_identity": {
-      "export": [
-        "crucibleOriginalName",
-        "_id",
-        "id"
-      ]
+      "export": ["crucibleOriginalName", "_id", "id"]
     }
   },
   "Actor": {
@@ -43,38 +36,24 @@
       "fallbackPolicy": "owner-package-first"
     },
     "_identity": {
-      "export": [
-        "crucibleOriginalName",
-        "_id",
-        "id"
-      ]
+      "export": ["crucibleOriginalName", "_id", "id"]
     }
   },
   "ActiveEffect": {
     "_identity": {
-      "export": [
-        "crucibleOriginalName",
-        "_id",
-        "id"
-      ]
+      "export": ["crucibleOriginalName", "_id", "id"]
     },
     "changes": {
       "path": "system.changes",
       "converter": "structured",
       "cardinality": "many",
-      "keys": [
-        "key"
-      ],
+      "keys": ["key"],
       "valuePath": "value"
     }
   },
   "JournalEntry": {
     "_identity": {
-      "export": [
-        "crucibleOriginalName",
-        "_id",
-        "id"
-      ]
+      "export": ["crucibleOriginalName", "_id", "id"]
     },
     "categories": {
       "path": "categories",
@@ -83,20 +62,12 @@
   },
   "JournalEntryPage": {
     "_identity": {
-      "export": [
-        "crucibleOriginalName",
-        "_id",
-        "id"
-      ]
+      "export": ["crucibleOriginalName", "_id", "id"]
     }
   },
   "Scene": {
     "_identity": {
-      "export": [
-        "crucibleOriginalName",
-        "_id",
-        "id"
-      ]
+      "export": ["crucibleOriginalName", "_id", "id"]
     }
   },
   "Adventure": {

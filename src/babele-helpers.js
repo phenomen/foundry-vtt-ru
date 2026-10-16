@@ -296,13 +296,13 @@ export function translateList(value, translations) {
 }
 
 export function parseParentheses(str) {
-  const regex = /^(\S+(?:\s+\S+)*)\s+\(([^)]+)\)$/;
+  const regex = /^(?<main>\S+(?:\s+\S+)*)\s+\((?<sub>[^)]+)\)$/;
   const match = str.match(regex);
 
-  if (match) {
+  if (match?.groups) {
     return {
-      main: match[1],
-      sub: match[2],
+      main: match.groups.main,
+      sub: match.groups.sub,
     };
   }
 

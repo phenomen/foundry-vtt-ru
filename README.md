@@ -42,41 +42,61 @@
 - AGE System
 - Age of Sigmar: Soulbound
 - Alien (Чужой)
+- Band of Blades
 - Blades in the Dark (Клинки во тьме)
+- CAIN
 - Call of Cthulhu (Зов Ктулху)
 - City of Mist (Город Тумана)
 - Coriolis: Third Horizon (Кориолис)
 - Coriolis: The Great Dark
 - Cosmere
+- Crucible
 - Cy-Borg
 - Death in Space
 - Delta Green
+- Dishonored
 - Dragonbane
+- Dune: Adventures in the Imperium
 - Dungeon Crawl Classics
 - Dungeon World (Мир Подземелий)
 - Dungeons & Dragons 5
 - Forbidden Lands (Запретные земли)
 - Genesys / Star Wars FFG
 - GUMSHOE (СЫЩИК)
+- GURPS
+- Index Card RPG
 - Ironsworn / Starforged
+- Lancer
+- Legend of the Five Rings 5e
 - Mausritter
-- Mouseguard
+- Mothership
+- Mouse Guard (Мышинная стража)
 - Mutants Year Zero (Мутанты. Точка Отсчёта)
 - Old-School Essentials
 - Pathfinder 1e
+- Powered by the Apocalypse
+- Robotech
 - Savage Worlds (Дневник Авантюриста)
+- Scum and Villainy
 - Shadow of the Demon Lord
+- Shadowrun 6e
+- Slugblaster
 - Star Trek Adventures (Звёздный Путь)
 - Starfinder + Beginner Box
+- Symbaroum 5e
 - Tales from the Loop (Тайны Эхосферы)
 - The One Ring 2e (Кольцо Всевластья)
+- The Wildsea
 - The Witcher (Ведьмак)
 - Traveler / Cepheus Engine
+- Twilight: 2000
 - Vaesen (Нечисть)
 - Vampire V5 (Вампиры: Маскарад)
+- Warhammer 40K: Imperium Maledictum
+- Warhammer 40K: The Dark Heresy
 - [Warhammer Fantasy Roleplay 4](https://github.com/phenomen/fvtt-wfrp4e-ru)
-- Warhammer The Old World
-- Warhammer 40K The Dark Heresy
+- Warhammer: The Old World
+- World of Darkness (Мир Тьмы)
 
 ### Модули
 
