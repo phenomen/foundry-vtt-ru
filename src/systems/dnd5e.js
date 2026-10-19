@@ -1,4 +1,4 @@
-import { getSettings, registerCompendiumTranslations } from "../babele.js";
+import { getSettings, registerCompendiumTranslations } from "#helpers";
 
 export async function init() {
   registerSettings();

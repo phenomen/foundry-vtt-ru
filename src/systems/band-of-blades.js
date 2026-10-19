@@ -1,4 +1,4 @@
-import { createLookupConverter, registerCompendiumTranslations } from "../babele.js";
+import { createLookupConverter, registerCompendiumTranslations } from "#helpers";
 
 const CLASSES = {
   Bartan: "Бартан",
