@@ -1,7 +1,4 @@
-import {
-  createTranslateItemListConverter,
-  registerCompendiumTranslations,
-} from "../babele-helpers.js";
+import { createTranslateItemListConverter, registerCompendiumTranslations } from "../babele.js";
 
 export function registerBabeleTranslations(babele) {
   registerCompendiumTranslations(babele, "dragonbane");

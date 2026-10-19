@@ -1,7 +1,30 @@
-import { applyBabeleDefaults, warnBabeleMissing } from "./babele-helpers.js";
+import { applyBabeleDefaults, warnBabeleMissing } from "./babele.js";
 import { init as dnd5eAlt } from "./systems/dnd5e/alt.js";
 
-const systemScripts = import.meta.glob("./systems/*.js");
+const systemScripts = {
+  "./systems/band-of-blades.js": () => import("./systems/band-of-blades.js"),
+  "./systems/blades-in-the-dark.js": () => import("./systems/blades-in-the-dark.js"),
+  "./systems/city-of-mist.js": () => import("./systems/city-of-mist.js"),
+  "./systems/coc7.js": () => import("./systems/coc7.js"),
+  "./systems/coriolis-tgd.js": () => import("./systems/coriolis-tgd.js"),
+  "./systems/cosmere-rpg.js": () => import("./systems/cosmere-rpg.js"),
+  "./systems/crucible.js": () => import("./systems/crucible.js"),
+  "./systems/cy-borg.js": () => import("./systems/cy-borg.js"),
+  "./systems/deltagreen.js": () => import("./systems/deltagreen.js"),
+  "./systems/dnd5e.js": () => import("./systems/dnd5e.js"),
+  "./systems/dragonbane.js": () => import("./systems/dragonbane.js"),
+  "./systems/dune.js": () => import("./systems/dune.js"),
+  "./systems/dungeonworld.js": () => import("./systems/dungeonworld.js"),
+  "./systems/forbidden-lands.js": () => import("./systems/forbidden-lands.js"),
+  "./systems/investigator.js": () => import("./systems/investigator.js"),
+  "./systems/mausritter.js": () => import("./systems/mausritter.js"),
+  "./systems/mosh.js": () => import("./systems/mosh.js"),
+  "./systems/mouseguard.js": () => import("./systems/mouseguard.js"),
+  "./systems/pbta.js": () => import("./systems/pbta.js"),
+  "./systems/scum-and-villainy.js": () => import("./systems/scum-and-villainy.js"),
+  "./systems/slugblaster.js": () => import("./systems/slugblaster.js"),
+  "./systems/swade.js": () => import("./systems/swade.js"),
+};
 
 const CYRILLIC_FONTS = [
   "Beaufort",

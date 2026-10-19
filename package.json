@@ -4,19 +4,13 @@
   "private": "true",
   "type": "module",
   "scripts": {
-    "build": "vp build",
-    "format": "vp fmt",
-    "lint": "vp lint",
-    "check": "vp check",
-    "fix": "vp check --fix",
-    "prepare": "vp config",
+    "build": "bun scripts/build.js",
+    "format": "bun fmt",
+    "lint": "bun lint",
+    "fix": "bun fmt && bun lint --fix",
+    "prepare": "bun scripts/install-hooks.js",
     "util:sync": "node utils/sync-manifest.js",
     "util:symlink": "node utils/symlink.js"
   },
-  "devDependencies": {
-    "@types/bun": "^1.4.3",
-    "vite": "npm:@voidzero-dev/vite-plus-core@1.3.0",
-    "vite-plus": "^1.3.0"
-  },
-  "packageManager": "bun@1.4.3"
+  "packageManager": "bun@1.4.4-canary.1"
 }

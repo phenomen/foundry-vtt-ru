@@ -14,14 +14,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6
 
-      - name: Setup Vite+
-        uses: voidzero-dev/setup-vp@v1
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          node-version: "lts"
-          cache: true
+          bun-version: canary
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
 
       - name: Build
-        run: vp build
+        run: bun run build
 
       - name: Zip build output
         run: zip -r ru-ru.zip ru-ru

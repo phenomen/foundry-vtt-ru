@@ -3,7 +3,7 @@ import {
   resolveTranslatedItemName,
   translateItemListConverter,
   translateValue,
-} from "../babele-helpers.js";
+} from "../babele.js";
 
 const CLASSES = {
   Mechanic: "Механик",

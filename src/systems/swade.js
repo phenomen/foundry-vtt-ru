@@ -2,7 +2,7 @@ import {
   createLookupConverter,
   registerCompendiumTranslations,
   resolveTranslatedItemName,
-} from "../babele-helpers.js";
+} from "../babele.js";
 
 const EXCEPTIONS = {
   "Arcane Background (Any)": "Мистический дар (любой)",

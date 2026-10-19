@@ -1,0 +1,62 @@
+[fmt]
+printWidth = 100
+quoteProps = "consistent"
+singleAttributePerLine = true
+endOfLine = "lf"
+
+[lint]
+ignorePatterns = ["public/", "utils/"]
+
+[lint.categories]
+correctness = "error"
+pedantic = "off"
+perf = "warn"
+restriction = "warn"
+style = "warn"
+suspicious = "warn"
+
+[lint.globals]
+Hooks = "readonly"
+game = "readonly"
+foundry = "readonly"
+CONFIG = "readonly"
+libWrapper = "readonly"
+ui = "readonly"
+"$" = "readonly"
+AutomatedAnimations = "readonly"
+
+[lint.rules]
+"prefer-destructuring" = "off"
+"max-params" = "off"
+"no-undefined" = "off"
+"no-ternary" = "off"
+"func-style" = "off"
+"id-length" = "off"
+"init-declarations" = "off"
+"max-statements" = "off"
+"no-continue" = "off"
+"no-magic-numbers" = "off"
+"no-underscore-dangle" = "off"
+"no-use-before-define" = ["warn", { functions = false }]
+"one-var" = "off"
+"sort-keys" = "off"
+"no-console" = "off"
+"no-process-exit" = "off"
+"oxc/*" = "off"
+# Browser ESM needs explicit .js extensions and named exports from sibling files.
+"import/extensions" = "off"
+"import/exports-last" = "off"
+"import/group-exports" = "off"
+"import/no-named-export" = "off"
+"import/no-relative-parent-imports" = "off"
+"import/prefer-default-export" = "off"
+# The build and hook installer use Node builtins, top-level await, and process.exit.
+"import/no-nodejs-modules" = "off"
+"n/no-sync" = "off"
+"n/no-top-level-await" = "off"
+"unicorn/no-process-exit" = "off"
+# null is the missing-value sentinel, and Foundry reloads through window.
+"unicorn/no-null" = "off"
+"unicorn/prefer-global-this" = "off"
+"unicorn/prefer-ternary" = "off"
+

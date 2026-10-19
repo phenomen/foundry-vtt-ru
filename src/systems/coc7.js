@@ -1,4 +1,4 @@
-import { registerCompendiumTranslations } from "../babele-helpers.js";
+import { registerCompendiumTranslations } from "../babele.js";
 
 export function registerBabeleTranslations(babele) {
   registerCompendiumTranslations(babele, "coc7");
