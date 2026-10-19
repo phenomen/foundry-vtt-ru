@@ -1,4 +1,4 @@
-import { applyBabeleDefaults, warnBabeleMissing } from "./babele.js";
+import { applyBabeleDefaults, warnBabeleMissing } from "#helpers";
 import { init as dnd5eAlt } from "./systems/dnd5e/alt.js";
 
 const systemScripts = {

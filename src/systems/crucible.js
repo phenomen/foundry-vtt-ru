@@ -1,8 +1,7 @@
+import { registerCompendiumTranslations } from "#helpers";
+
 export function registerBabeleTranslations(babele) {
-  if (!game.settings.get("ru-ru", "compendiumTranslation")) {
-    return;
-  }
-  babele.register({ module: "ru-ru", lang: "ru", dir: "compendium/crucible" });
+  registerCompendiumTranslations(babele, "crucible");
 }
 
 function originalName(document) {
