@@ -60,7 +60,7 @@
     "Samurai": "Самурай",
     "School of Abjuration": "Школа преграждения",
     "School of Divination": "Школа прорицания",
-    "School of Evocation": "Школа воплощения",
+    "School of Evocation": "Школа эвокации",
     "School of Necromancy": "Школа некромантии",
     "Shadow Magic": "Теневая магия",
     "Sorcerer": "Чародей",
@@ -161,7 +161,11 @@
     "Summon Features": "Способности призванных",
     "Graviturgy Magic": "Школа магии гравитургии",
     "Chronurgy Magic": "Школа магии хронургии",
-    "Animate Objects": "Оживший предмет"
+    "Animate Objects": "Оживший предмет",
+    "Circle of the Shepherd": "Круг Пастыря",
+    "Infusions": "Инфузии",
+    "Leyline Magic": "Магия лей-линий",
+    "Predator": "Хищник"
   },
   "entries": {
     "Alchemical Savant": {
@@ -219,7 +223,7 @@
       "name": "Утешение Летнего двора"
     },
     "Bardic Inspiration": {
-      "name": "Бардовское вдохновение (1, 5, 10, 15 ур)"
+      "name": "Бардовское вдохновение"
     },
     "Beguiling Twist": {
       "name": "Заманивающий трюк"
@@ -402,16 +406,16 @@
       "name": "Стихийный тесак"
     },
     "Elemental Gift (Dao)": {
-      "name": "Стихийный дар (Дао)"
+      "name": "Стихийный дар: дробящий"
     },
     "Elemental Gift (Djinni)": {
-      "name": "Стихийный дар (Джинн)"
+      "name": "Стихийный дар: гром"
     },
     "Elemental Gift (Efreeti)": {
-      "name": "Стихийный дар (Ифрит)"
+      "name": "Стихийный дар: огонь"
     },
     "Elemental Gift (Marid)": {
-      "name": "Стихийный дар (Марид)"
+      "name": "Стихийный дар: холод"
     },
     "Elemental Gift: Flight": {
       "name": "Стихийный дар: Полет"
@@ -480,16 +484,16 @@
       "name": "Резчик рун: Ледяная руна"
     },
     "Genie's Vessel: Genie's Wrath (Dao)": {
-      "name": "Сосуд гения: Гнев гения (Дао)"
+      "name": "Гнев Дао"
     },
     "Genie's Vessel: Genie's Wrath (Djinni)": {
-      "name": "Сосуд гения: Гнев гения (Джин)"
+      "name": "Гнев Джинна"
     },
     "Genie's Vessel: Genie's Wrath (Efreeti)": {
-      "name": "Сосуд гения: Гнев гения (Ифрит)"
+      "name": "Гнев Ифрита"
     },
     "Genie's Vessel: Genie's Wrath (Marid)": {
-      "name": "Сосуд гения: Гнев гения (Марид)"
+      "name": "Гнев Марида"
     },
     "Giant's Havoc: Crushing Throw": {
       "name": "Великанье разрушение: Сокрушительный бросок"
@@ -516,7 +520,7 @@
       "name": "Лечащий свет"
     },
     "Heart of the Storm": {
-      "name": "Бурная магия"
+      "name": "Сердце шторма"
     },
     "Hearth of Moonlight and Shadow": {
       "name": "Очаг лунного света и тени"
@@ -726,7 +730,7 @@
       "name": "Очки чар"
     },
     "Soul Blades: Homing Strikes": {
-      "name": "Клинок души"
+      "name": "Самонаводящиеся удары"
     },
     "Starry Form": {
       "name": "Звёздная форма"
@@ -1628,7 +1632,7 @@
     "Martial Arts": { "name": "Боевые искусства" },
     "Seeking Spell": { "name": "Метамагия: Ищущее заклинание" },
     "Great Weapon Fighting": {
-      "name": "Боевой стиль: Бой с большим оружием / Great Weapon Fighting"
+      "name": "Боевой стиль: Двуручное оружие"
     },
     "Relentless Rage": { "name": "Несгибаемая ярость" },
     "Beast Spells": { "name": "Заклинания зверя" },
@@ -1670,6 +1674,27 @@
     "Steady Aim": { "name": "Точное прицеливание (опционально)" },
     "Heightened Spell": { "name": "Метамагия: Повышенное заклинание" },
     "Reckless Attack": { "name": "Безрассудная атака" },
-    "Transmuted Spell": { "name": "Метамагия: Преобразованное заклинание" }
+    "Transmuted Spell": { "name": "Метамагия: Преобразованное заклинание" },
+    "Flash of Genius": { "name": "Проблеск гениальности" },
+    "Infusion: Arcane Propulsion Armor": { "name": "Движимый магией доспех" },
+    "Infusion: Armor of Magical Strength": { "name": "Броня магической силы" },
+    "Infusion: Boots of the Winding Path": { "name": "Сапоги извилистого пути" },
+    "Infusion: Enhanced Arcane Focus": { "name": "Улучшенная магическая фокусировка" },
+    "Infusion: Enhanced Defense": { "name": "Улучшенная защита" },
+    "Infusion: Enhanced Weapon": { "name": "Улучшенное оружие" },
+    "Infusion: Helm of Awareness": { "name": "Шлем осведомлённости" },
+    "Infusion: Homunculus Servant": { "name": "Слуга-гомункул" },
+    "Infusion: Mind Sharpener": { "name": "Усилитель разума" },
+    "Infusion: Radiant Weapon": { "name": "Излучающее свет оружие" },
+    "Infusion: Repeating Shot": { "name": "Повторный выстрел" },
+    "Infusion: Repulsion Shield": { "name": "Отталкивающий щит" },
+    "Infusion: Resistant Armor": { "name": "Броня устойчивости" },
+    "Infusion: Returning Weapon": { "name": "Возвращающееся оружие" },
+    "Infusion: Spell-Refueling Ring": { "name": "Кольцо восстановления заклинаний" },
+    "Natural Attunement": { "name": "Природная настройка" },
+    "Soul of Artifice": { "name": "Душа изобретения" },
+    "Spell-Storing Item": { "name": "Хранящий заклинания предмет" },
+    "The Right Tool for the Job": { "name": "Подходящий инструмент" },
+    "Thrum of the Land": { "name": "Гул земли" }
   }
 }
