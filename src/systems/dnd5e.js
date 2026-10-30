@@ -1,6 +1,8 @@
 import { getSettings, registerCompendiumTranslations } from "#helpers";
+import { init as initAltTranslation } from "./dnd5e/alt.js";
 
-export async function init() {
+export function init() {
+  initAltTranslation();
   registerSettings();
   registerHooks();
 }
@@ -41,35 +43,33 @@ function registerSettings() {
 }
 
 function registerHooks() {
-  Hooks.on("renderSettingsConfig", (_app, html, _data) => {
+  Hooks.on("renderSettingsConfig", (_app, html) => {
     if (!game.user.isGM) {
       return;
     }
 
-    let lastMenuSetting;
-    if (game.release.generation < 13) {
-      lastMenuSetting = html.find('input[name="ru-ru.translateCPR"]').closest(".form-group");
-    } else {
-      lastMenuSetting = html.querySelector('section[data-tab="ru-ru"] > div:last-child');
+    const lastMenuSetting = html.querySelector('section[data-tab="ru-ru"] > div:last-child');
+    if (!lastMenuSetting) {
+      return;
     }
 
-    const updateAAButton = $(`
-  <label>
-    Перед переводом анимаций требуется включить модули Automated Animations, D&D5E Animations, JB2A Patreon
-  </label>
-  <div class="form-group">
-      <button type="button">
+    lastMenuSetting.insertAdjacentHTML(
+      "afterend",
+      `<label>
+        Перед переводом анимаций требуется включить модули Automated Animations, D&D5E Animations, JB2A Patreon
+      </label>
+      <div class="form-group">
+        <button type="button" data-ru-ru-action="translate-aa">
           <i class="fas fa-cogs"></i>
           <label>Перевести анимации</label>
-      </button>
-  </div>
-  `);
-    updateAAButton.find("button").click(async (e) => {
-      e.preventDefault();
-      await updateAA();
-    });
+        </button>
+      </div>`,
+    );
 
-    updateAAButton.insertAfter(lastMenuSetting);
+    html.querySelector('[data-ru-ru-action="translate-aa"]').addEventListener("click", (event) => {
+      event.preventDefault();
+      updateAA();
+    });
   });
 }
 
@@ -81,7 +81,7 @@ async function updateAA() {
 
   try {
     const translatedSettings = await foundry.utils.fetchJsonWithTimeout(
-      "/modules/ru-ru/i18n/modules/aa-autorec.json",
+      foundry.utils.getRoute("modules/ru-ru/i18n/modules/aa-autorec.json"),
     );
 
     const currentSettings = AutomatedAnimations.AutorecManager.getAutorecEntries();

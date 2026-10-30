@@ -22,7 +22,6 @@ foundry = "readonly"
 CONFIG = "readonly"
 libWrapper = "readonly"
 ui = "readonly"
-"$" = "readonly"
 AutomatedAnimations = "readonly"
 
 [lint.rules]
@@ -40,6 +39,8 @@ AutomatedAnimations = "readonly"
 "no-use-before-define" = ["warn", { functions = false }]
 "one-var" = "off"
 "sort-keys" = "off"
+# Long form for quoted keys, so it agrees with fmt quoteProps = "consistent".
+"object-shorthand" = ["warn", "always", { avoidQuotes = true }]
 "no-console" = "off"
 "no-process-exit" = "off"
 "oxc/*" = "off"
@@ -48,6 +49,8 @@ AutomatedAnimations = "readonly"
 "import/exports-last" = "off"
 "import/group-exports" = "off"
 "import/no-named-export" = "off"
+# src/index.js maps system ids to whole system modules.
+"import/no-namespace" = "off"
 "import/no-relative-parent-imports" = "off"
 "import/prefer-default-export" = "off"
 # The build and hook installer use Node builtins, top-level await, and process.exit.

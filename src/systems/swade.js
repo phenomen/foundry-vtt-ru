@@ -156,7 +156,7 @@ function getRequirementPackIds() {
 }
 
 function setupRules() {
-  if (game.settings.get("ru-ru", "setupRules")) {
+  if (game.user.isGM && game.settings.get("ru-ru", "setupRules")) {
     game.settings.set(
       "swade",
       "coreSkills",

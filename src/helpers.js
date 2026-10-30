@@ -56,7 +56,10 @@ export function registerCompendiumTranslations(babele, paths) {
  * Applies useful Babele defaults when compendium translation is active.
  */
 export function applyBabeleDefaults() {
-  if (!game.settings.get(MODULE_ID, "compendiumTranslation")) {
+  if (
+    !game.settings.get(MODULE_ID, "compendiumTranslation") ||
+    game.settings.get("babele", "showOriginalName")
+  ) {
     return;
   }
 
@@ -67,7 +70,7 @@ export function applyBabeleDefaults() {
  * Prompts the GM when compendium translation is enabled but Babele is missing.
  */
 export function warnBabeleMissing() {
-  if (!game.settings.get(MODULE_ID, "compendiumTranslation") || game.babele) {
+  if (!game.user.isGM || !game.settings.get(MODULE_ID, "compendiumTranslation") || game.babele) {
     return;
   }
 
@@ -286,28 +289,4 @@ export function translateValue(value, translations) {
     return value;
   }
   return translated;
-}
-
-export function translateList(value, translations) {
-  return value
-    .split(", ")
-    .map((item) => translateValue(item, translations))
-    .join(", ");
-}
-
-export function parseParentheses(str) {
-  const regex = /^(?<main>\S+(?:\s+\S+)*)\s+\((?<sub>[^)]+)\)$/;
-  const match = str.match(regex);
-
-  if (match?.groups) {
-    return {
-      main: match.groups.main,
-      sub: match.groups.sub,
-    };
-  }
-
-  return {
-    main: str.trim(),
-    sub: null,
-  };
 }
