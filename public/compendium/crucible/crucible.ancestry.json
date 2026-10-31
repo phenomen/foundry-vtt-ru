@@ -15,7 +15,10 @@
       "actions": {
         "Hellbrand": {
           "name": "Адское клеймо",
-          "description": "<p>Вы расходуете @Rule[resource.heroism], окутывая свои атаки адским пламенем на <strong>3 раунда</strong>. Каждая ваша атака, наносящая урон @Rule[resource.health], дополнительно наносит урон типа <strong>Огонь</strong>, равный половине вашей @Rule[ability.presence]. При @Rule[dice.criticalSuccess]{Критическом попадании} цель получает состояние @Condition[burning].</p>"
+          "description": "<p>Вы расходуете @Rule[resource.heroism], окутывая свои атаки адским пламенем на <strong>3 раунда</strong>. Каждая ваша атака, наносящая урон @Rule[resource.health], дополнительно наносит урон типа <strong>Огонь</strong>, равный половине вашей @Rule[ability.presence]. При @Rule[dice.criticalSuccess]{Критическом Попадании} цель получает состояние @Condition[burning].</p>",
+          "effects": {
+            "Hellbrand": "Адское клеймо"
+          }
         }
       }
     },
@@ -29,7 +32,10 @@
       "actions": {
         "Grudgebearer": {
           "name": "Обет мести",
-          "description": "<p>Вы расходуете @Rule[resource.heroism], объявляя видимого врага своим заклятым противником. Ваши атаки по нему наносят дополнительный урон, равный вашей @Rule[ability.wisdom].</p><p>Обет мести прекращается, если вы завершаете ход, ни разу за этот ход не атаковав этого врага. Одновременно можно мстить лишь одному врагу: новый обет прекращает предыдущий.</p>"
+          "description": "<p>Вы расходуете @Rule[resource.heroism], объявляя видимого врага своим заклятым противником. Ваши атаки по нему наносят дополнительный урон, равный вашей @Rule[ability.wisdom].</p><p>Обет мести прекращается, если вы завершаете ход, ни разу за этот ход не атаковав этого врага. Одновременно можно мстить лишь одному врагу: новый обет прекращает предыдущий.</p>",
+          "effects": {
+            "Grudge": "Обет мести"
+          }
         }
       }
     },
@@ -43,7 +49,10 @@
       "actions": {
         "Perfect Precision": {
           "name": "Безупречная точность",
-          "description": "<p>Вы расходуете @Rule[resource.heroism], чтобы действовать с безупречной точностью. До конца вашего хода ваш @UUID[Compendium.crucible.rules.JournalEntry.QhZgmBrdLAGwYy5c.JournalEntryPage.lZfPVvBSsCEqlte4#critical-hits-and-misses]{Порог критического успеха} снижается на <strong>3</strong>.</p>"
+          "description": "<p>Вы расходуете @Rule[resource.heroism], чтобы действовать с безупречной точностью. До конца вашего хода ваш @UUID[Compendium.crucible.rules.JournalEntry.QhZgmBrdLAGwYy5c.JournalEntryPage.lZfPVvBSsCEqlte4#critical-hits-and-misses]{Порог Критического Успеха} снижается на <strong>3</strong>.</p>",
+          "effects": {
+            "Perfect Precision": "Безупречная точность"
+          }
         }
       }
     },
@@ -57,7 +66,10 @@
       "actions": {
         "Elemental Birthright": {
           "name": "Стихийное наследие",
-          "description": "<p>Вы расходуете @Rule[resource.heroism], призывая стихийные силы своего наследия. До начала следующего хода вы получаете сопротивление урону типов <strong>Кислота</strong>, <strong>Холод</strong>, <strong>Электричество</strong> и <strong>Огонь</strong>, равное вашей @Rule[ability.wisdom]. Весь наносимый вами урон типов <strong>Кислота</strong>, <strong>Холод</strong>, <strong>Электричество</strong> и <strong>Огонь</strong> также увеличивается на вашу @Rule[ability.wisdom].</p>"
+          "description": "<p>Вы расходуете @Rule[resource.heroism], призывая стихийные силы своего наследия. До начала следующего хода вы получаете сопротивление урону типов <strong>Кислота</strong>, <strong>Холод</strong>, <strong>Электричество</strong> и <strong>Огонь</strong>, равное вашей @Rule[ability.wisdom]. Весь наносимый вами урон типов <strong>Кислота</strong>, <strong>Холод</strong>, <strong>Электричество</strong> и <strong>Огонь</strong> также увеличивается на вашу @Rule[ability.wisdom].</p>",
+          "effects": {
+            "Elemental Birthright": "Стихийное наследие"
+          }
         }
       }
     },
@@ -71,7 +83,10 @@
       "actions": {
         "Tinker's Trick": {
           "name": "Уловка умельца",
-          "description": "<p>Вы расходуете @Rule[resource.heroism], готовя хитрый приём. Следующий расходуемый предмет, использованный с пояса до конца вашего хода, не требует @Rule[resource.action] и не расходуется.</p>"
+          "description": "<p>Вы расходуете @Rule[resource.heroism], готовя хитрый приём. Следующий расходуемый предмет, использованный с пояса до конца вашего хода, не требует @Rule[resource.action] и не расходуется.</p>",
+          "effects": {
+            "Tinker's Trick": "Уловка умельца"
+          }
         }
       }
     },
@@ -81,7 +96,7 @@
     },
     "Halfling Lineage": {
       "name": "Наследие полурослика",
-      "description": "<p>Полурослики храбрее, чем можно судить по их росту, а ваш дух быстро оправляется даже от самых тяжёлых испытаний.</p><p><strong>Маленький и проворный.</strong> Небольшое тело позволяет легко скрываться из виду и выскальзывать из захватов. Вы получаете @Rule[dice.boon]{+1 Преимущество} при использовании действий @Action[default escape], @Action[default hide] и <strong>Красться</strong>.</p>",
+      "description": "<p>Полурослики храбрее, чем можно судить по их росту, а ваш дух быстро оправляется даже от самых тяжёлых испытаний.</p><p><strong>Маленький и проворный.</strong> Небольшое тело позволяет легко скрываться из виду и выскальзывать из захватов. Вы получаете @Rule[dice.boon]{+1 Преимущество} при использовании действий @Action[default escape], @Action[Compendium.crucible.talent.Item.hide000000000000 hide] и <strong>Подкрадывание</strong>.</p>",
       "actions": {
         "Stout Heart": {
           "name": "Храброе сердце",
@@ -99,7 +114,10 @@
       "actions": {
         "Push Through": {
           "name": "Преодоление",
-          "description": "<p>Вы расходуете @Rule[resource.heroism], преодолевая невзгоды. До конца вашего хода ваши атаки и проверки навыков игнорируют все наложенные на них @Rule[dice.bane]{Помехи}. Помехи, которые вы добровольно принимаете на себя, не игнорируются.</p>"
+          "description": "<p>Вы расходуете @Rule[resource.heroism], преодолевая невзгоды. До конца вашего хода ваши атаки и проверки навыков игнорируют все наложенные на них @Rule[dice.bane]{Помехи}. Помехи, которые вы добровольно принимаете на себя, не игнорируются.</p>",
+          "effects": {
+            "Push Through": "Преодоление"
+          }
         }
       }
     },
@@ -114,7 +132,10 @@
         "Deathless Fury": {
           "name": "Неумирающая ярость",
           "description": "<p>Пока ваше @Rule[resource.health] не превышает ваши @Rule[resource.wounds], вы можете потратить @Rule[resource.heroism], впадая в неумирающую ярость. Пока она длится, вы игнорируете все штрафы состояния @Condition[weakened], а ваши атаки @Action[default strike] получают @Rule[dice.boon]{+1 Преимущество}.</p><p>Ярость заканчивается, когда ваше @Rule[resource.health] превышает ваши @Rule[resource.wounds] или когда заканчивается <strong>Бой</strong>.</p>",
-          "condition": "Пока ваше Здоровье не превышает ваши Раны"
+          "condition": "Пока ваше Здоровье не превышает ваши Раны",
+          "effects": {
+            "Deathless Fury": "Неумирающая ярость"
+          }
         }
       }
     }
