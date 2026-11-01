@@ -15,17 +15,8 @@
       "converter": "crucibleActions"
     },
     "_identity": {
-      "export": [
-        "crucibleOriginalName",
-        "_id",
-        "id"
-      ],
-      "match": [
-        "_id",
-        "crucibleOriginalName",
-        "name",
-        "sourceId"
-      ]
+      "export": ["crucibleOriginalName", "_id", "id"],
+      "match": ["_id", "crucibleOriginalName", "name", "sourceId"]
     }
   },
   "Actor": {
@@ -48,17 +39,8 @@
       "fallbackPolicy": "owner-package-first"
     },
     "_identity": {
-      "export": [
-        "crucibleOriginalName",
-        "_id",
-        "id"
-      ],
-      "match": [
-        "_id",
-        "crucibleOriginalName",
-        "name",
-        "sourceId"
-      ]
+      "export": ["crucibleOriginalName", "_id", "id"],
+      "match": ["_id", "crucibleOriginalName", "name", "sourceId"]
     }
   },
   "ActiveEffect": {
@@ -67,41 +49,21 @@
       "converter": "crucibleActions"
     },
     "_identity": {
-      "export": [
-        "crucibleOriginalName",
-        "_id",
-        "id"
-      ],
-      "match": [
-        "_id",
-        "crucibleOriginalName",
-        "name",
-        "sourceId"
-      ]
+      "export": ["crucibleOriginalName", "_id", "id"],
+      "match": ["_id", "crucibleOriginalName", "name", "sourceId"]
     },
     "changes": {
       "path": "system.changes",
       "converter": "structured",
       "cardinality": "many",
-      "keys": [
-        "key"
-      ],
+      "keys": ["key"],
       "valuePath": "value"
     }
   },
   "JournalEntry": {
     "_identity": {
-      "export": [
-        "crucibleOriginalName",
-        "_id",
-        "id"
-      ],
-      "match": [
-        "_id",
-        "crucibleOriginalName",
-        "name",
-        "sourceId"
-      ]
+      "export": ["crucibleOriginalName", "_id", "id"],
+      "match": ["_id", "crucibleOriginalName", "name", "sourceId"]
     },
     "categories": {
       "path": "categories",
@@ -110,17 +72,8 @@
   },
   "JournalEntryPage": {
     "_identity": {
-      "export": [
-        "crucibleOriginalName",
-        "_id",
-        "id"
-      ],
-      "match": [
-        "_id",
-        "crucibleOriginalName",
-        "name",
-        "sourceId"
-      ]
+      "export": ["crucibleOriginalName", "_id", "id"],
+      "match": ["_id", "crucibleOriginalName", "name", "sourceId"]
     }
   },
   "Scene": {
@@ -139,17 +92,8 @@
       "valuePath": "name"
     },
     "_identity": {
-      "export": [
-        "crucibleOriginalName",
-        "_id",
-        "id"
-      ],
-      "match": [
-        "_id",
-        "crucibleOriginalName",
-        "name",
-        "sourceId"
-      ]
+      "export": ["crucibleOriginalName", "_id", "id"],
+      "match": ["_id", "crucibleOriginalName", "name", "sourceId"]
     }
   },
   "Adventure": {
@@ -158,17 +102,8 @@
       "converter": "crucibleNames"
     },
     "_identity": {
-      "export": [
-        "crucibleOriginalName",
-        "_id",
-        "id"
-      ],
-      "match": [
-        "_id",
-        "crucibleOriginalName",
-        "name",
-        "sourceId"
-      ]
+      "export": ["crucibleOriginalName", "_id", "id"],
+      "match": ["_id", "crucibleOriginalName", "name", "sourceId"]
     }
   }
 }

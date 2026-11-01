@@ -9,9 +9,11 @@ function originalName(document) {
 }
 
 function actionText(action) {
-  return Object.fromEntries(["name", "description", "condition"]
-    .filter((field) => typeof action[field] === "string")
-    .map((field) => [field, action[field]]));
+  return Object.fromEntries(
+    ["name", "description", "condition"]
+      .filter((field) => typeof action[field] === "string")
+      .map((field) => [field, action[field]]),
+  );
 }
 
 function actionKey(action, translation) {
@@ -31,7 +33,8 @@ function embeddedActionTranslation(source, action, runtime) {
   const matches = new Map();
   const originalActions = source?.flags?.babele?.originalPayload?.actions;
   for (const pack of runtime?.globalPacks?.values?.() ?? []) {
-    if (pack.metadata?.packageName !== "crucible" && !pack.metadata?.id?.startsWith("crucible.")) continue;
+    if (pack.metadata?.packageName !== "crucible" && !pack.metadata?.id?.startsWith("crucible."))
+      continue;
     const root = pack.translation;
     if (!root || typeof root !== "object") continue;
     let index = actionDictionaryIndexes.get(root);
@@ -97,16 +100,24 @@ export function registerBabeleConverters(babele) {
     // must stay English and are extracted without this translated fallback.
     crucibleActorItems: {
       prepare(context) {
-        return context.contextCompendium.documentMappings.converterRegistry.named("document").prepare(context);
+        return context.contextCompendium.documentMappings.converterRegistry
+          .named("document")
+          .prepare(context);
       },
       translate(context) {
-        return context.contextCompendium.documentMappings.converterRegistry.named("document").translate(context);
+        return context.contextCompendium.documentMappings.converterRegistry
+          .named("document")
+          .translate(context);
       },
       extract(context) {
-        const extracted = context.contextCompendium.documentMappings.converterRegistry.named("document").extract(context);
+        const extracted = context.contextCompendium.documentMappings.converterRegistry
+          .named("document")
+          .extract(context);
         if (!context.source?.flags?.babele?.hasTranslation) return extracted;
         const known = context.contextCompendium.translationsFor(context.source)?.items;
-        return known ? foundry.utils.mergeObject(foundry.utils.deepClone(known), extracted ?? {}) : extracted;
+        return known
+          ? foundry.utils.mergeObject(foundry.utils.deepClone(known), extracted ?? {})
+          : extracted;
       },
     },
     // Some item types use text here, others use structured system data.
@@ -128,7 +139,10 @@ export function registerBabeleConverters(babele) {
           const key = actionKey(action, translation);
           const translated = translation[key];
           if (!translated) return action;
-          const result = translateEffectNames({ ...action, ...actionText(translated) }, translated.effects);
+          const result = translateEffectNames(
+            { ...action, ...actionText(translated) },
+            translated.effects,
+          );
           if (action.regionBehavior && typeof translated.regionName === "string") {
             result.regionBehavior = { ...action.regionBehavior, name: translated.regionName };
           }
@@ -154,9 +168,15 @@ export function registerBabeleConverters(babele) {
         // Item pack to retain English action keys after fallback translation.
         const inline = contextCompendium?.translationsFor(source)?.actions;
         const activeRuntime = getCompendiumRuntime(runtime);
-        const owner = inline ? null : activeRuntime?.translatedPackFor?.(contextCompendium?.metadata?.type ?? "Item", source, {
-          predicate: (pack) => Boolean(pack.translationsFor(source)?.actions),
-        });
+        const owner = inline
+          ? null
+          : activeRuntime?.translatedPackFor?.(
+              contextCompendium?.metadata?.type ?? "Item",
+              source,
+              {
+                predicate: (pack) => Boolean(pack.translationsFor(source)?.actions),
+              },
+            );
         const translation = inline ?? owner?.translationsFor(source)?.actions ?? {};
         const result = {};
         for (const action of value) {
@@ -167,7 +187,8 @@ export function registerBabeleConverters(babele) {
           const text = actionText(action);
           const effects = extractEffectNames(action, translated.effects);
           if (effects) text.effects = effects;
-          if (typeof action.regionBehavior?.name === "string") text.regionName = action.regionBehavior.name;
+          if (typeof action.regionBehavior?.name === "string")
+            text.regionName = action.regionBehavior.name;
           const regionAction = action.regionBehavior?.system?.action;
           if (regionAction) {
             text.regionAction = actionText(regionAction);
