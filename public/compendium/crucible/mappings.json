@@ -1,59 +1,107 @@
 {
   "Item": {
-    "description": "system.description",
+    "description": {
+      "path": "system.description",
+      "converter": "crucibleText"
+    },
     "descriptionPublic": "system.description.public",
     "descriptionPrivate": "system.description.private",
-    "requirements": "system.requirements",
+    "requirements": {
+      "path": "system.requirements",
+      "converter": "crucibleText"
+    },
     "actions": {
       "path": "system.actions",
-      "converter": "structured",
-      "cardinality": "many",
-      "keys": ["name", "id"],
-      "mapping": {
-        "name": "name",
-        "description": "description",
-        "condition": "condition"
-      }
+      "converter": "crucibleActions"
     },
     "_identity": {
-      "export": ["crucibleOriginalName", "_id", "id"]
+      "export": [
+        "crucibleOriginalName",
+        "_id",
+        "id"
+      ],
+      "match": [
+        "_id",
+        "crucibleOriginalName",
+        "name",
+        "sourceId"
+      ]
     }
   },
   "Actor": {
-    "description": {
-      "path": "system.details.biography",
-      "converter": "crucibleOmit"
-    },
-    "tokenName": {
-      "path": "prototypeToken.name",
-      "converter": "crucibleOmit"
-    },
+    "ancestryName": "system.details.ancestry.name",
+    "ancestryDescription": "system.details.ancestry.description",
+    "backgroundName": "system.details.background.name",
+    "backgroundDescription": "system.details.background.description",
+    "archetypeName": "system.details.archetype.name",
+    "archetypeDescription": "system.details.archetype.description",
+    "taxonomyName": "system.details.taxonomy.name",
+    "taxonomyDescription": "system.details.taxonomy.description",
+    "description": "system.details.biography.public",
+    "descriptionPrivate": "system.details.biography.private",
+    "tokenName": "prototypeToken.name",
     "items": {
       "path": "items",
-      "converter": "document",
+      "converter": "crucibleActorItems",
       "documentType": "Item",
       "cardinality": "many",
       "fallbackPolicy": "owner-package-first"
     },
     "_identity": {
-      "export": ["crucibleOriginalName", "_id", "id"]
+      "export": [
+        "crucibleOriginalName",
+        "_id",
+        "id"
+      ],
+      "match": [
+        "_id",
+        "crucibleOriginalName",
+        "name",
+        "sourceId"
+      ]
     }
   },
   "ActiveEffect": {
+    "actions": {
+      "path": "system.actions",
+      "converter": "crucibleActions"
+    },
     "_identity": {
-      "export": ["crucibleOriginalName", "_id", "id"]
+      "export": [
+        "crucibleOriginalName",
+        "_id",
+        "id"
+      ],
+      "match": [
+        "_id",
+        "crucibleOriginalName",
+        "name",
+        "sourceId"
+      ]
     },
     "changes": {
       "path": "system.changes",
       "converter": "structured",
       "cardinality": "many",
-      "keys": ["key"],
+      "keys": [
+        "key"
+      ],
       "valuePath": "value"
     }
   },
   "JournalEntry": {
     "_identity": {
-      "export": ["crucibleOriginalName", "_id", "id"]
+      "export": [
+        "crucibleOriginalName",
+        "_id",
+        "id"
+      ],
+      "match": [
+        "_id",
+        "crucibleOriginalName",
+        "name",
+        "sourceId"
+      ]
     },
     "categories": {
       "path": "categories",
@@ -62,18 +110,65 @@
   },
   "JournalEntryPage": {
     "_identity": {
-      "export": ["crucibleOriginalName", "_id", "id"]
+      "export": [
+        "crucibleOriginalName",
+        "_id",
+        "id"
+      ],
+      "match": [
+        "_id",
+        "crucibleOriginalName",
+        "name",
+        "sourceId"
+      ]
     }
   },
   "Scene": {
+    "tokens": {
+      "path": "tokens",
+      "converter": "structured",
+      "cardinality": "many",
+      "keys": ["_id"],
+      "valuePath": "name"
+    },
+    "levels": {
+      "path": "levels",
+      "converter": "structured",
+      "cardinality": "many",
+      "keys": ["_id"],
+      "valuePath": "name"
+    },
     "_identity": {
-      "export": ["crucibleOriginalName", "_id", "id"]
+      "export": [
+        "crucibleOriginalName",
+        "_id",
+        "id"
+      ],
+      "match": [
+        "_id",
+        "crucibleOriginalName",
+        "name",
+        "sourceId"
+      ]
     }
   },
   "Adventure": {
     "folders": {
       "path": "folders",
       "converter": "crucibleNames"
+    },
+    "_identity": {
+      "export": [
+        "crucibleOriginalName",
+        "_id",
+        "id"
+      ],
+      "match": [
+        "_id",
+        "crucibleOriginalName",
+        "name",
+        "sourceId"
+      ]
     }
   }
 }
