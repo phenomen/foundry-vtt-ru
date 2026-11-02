@@ -16,6 +16,13 @@ export function registerSettings() {
     type: Boolean,
   });
 
+  game.settings.register("ru-ru", "babeleDefaultsApplied", {
+    config: false,
+    default: false,
+    scope: "client",
+    type: Boolean,
+  });
+
   game.settings.register("ru-ru", "sceneLabelFont", {
     choices: Object.keys(CONFIG.fontDefinitions),
     config: true,

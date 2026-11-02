@@ -16,12 +16,11 @@ import * as investigator from "./systems/investigator.js";
 import * as mausritter from "./systems/mausritter.js";
 import * as mosh from "./systems/mosh.js";
 import * as mouse_guard from "./systems/mouseguard.js";
-import * as pbta from "./systems/pbta.js";
 import * as scum_and_villainy from "./systems/scum-and-villainy.js";
 import * as slugblaster from "./systems/slugblaster.js";
 import * as swade from "./systems/swade.js";
 
-import { applyBabeleDefaults, warnBabeleMissing } from "#helpers";
+import { MODULE_ID, applyBabeleDefaults, warnBabeleMissing } from "#helpers";
 
 // `game.system.id`
 const systemModules = {
@@ -43,7 +42,6 @@ const systemModules = {
   "mausritter": mausritter,
   "mosh": mosh,
   "mouseguard": mouse_guard,
-  "pbta": pbta,
   "scum-and-villainy": scum_and_villainy,
   "slugblaster": slugblaster,
   "swade": swade,
@@ -67,13 +65,13 @@ export function initSystem() {
 }
 
 /**
- * Registers the current system's compendium translations and converters with Babele.
+ * Registers the current system's compendium translations, converters and mappings with Babele.
  *
  * @param {object} babele - Babele facade from the `babele.init` hook.
  */
 export function registerSystemBabele(babele) {
   const mod = getSystemModule();
-  if (!mod) {
+  if (!mod || !game.settings.get(MODULE_ID, "compendiumTranslation")) {
     return;
   }
 

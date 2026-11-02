@@ -1,4 +1,4 @@
-import { createLookupConverter, registerCompendiumTranslations } from "#helpers";
+import { lookupField, registerCompendiumTranslations } from "#helpers";
 
 const CLASSES = {
   Bartan: "Бартан",
@@ -20,23 +20,7 @@ export function registerBabeleTranslations(babele) {
 }
 
 export function registerBabeleConverters(babele) {
-  babele.registerConverters({
-    classConverter: createLookupConverter(CLASSES),
-
-    effectsConverter: {
-      translate(context) {
-        const { value: effects, translation: translations } = context;
-        if (!effects || !translations) {
-          return effects;
-        }
-
-        return effects.map((effect) => {
-          if (effect.name && translations[effect.name]) {
-            effect.name = translations[effect.name];
-          }
-          return effect;
-        });
-      },
-    },
+  babele.registerMapping({
+    Item: { class: lookupField("system.class", CLASSES) },
   });
 }
