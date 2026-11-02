@@ -11,6 +11,14 @@ export function registerBabeleConverters(babele) {
     convertAutomations: createNestedConverter(AUTOMATIONS),
     convertFeatures: createNestedConverter(FEATURES),
   });
+
+  // Automations and features appear on items in every pack (and on items embedded in actors).
+  babele.registerMapping({
+    Item: {
+      automations: { path: "system.automations", converter: "convertAutomations" },
+      features: { path: "system.features", converter: "convertFeatures" },
+    },
+  });
 }
 
 /**
