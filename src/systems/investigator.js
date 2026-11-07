@@ -1,4 +1,4 @@
-import { createLookupConverter, registerCompendiumTranslations } from "../babele-helpers.js";
+import { lookupField, registerCompendiumTranslations } from "#helpers";
 
 export function registerBabeleTranslations(babele) {
   registerCompendiumTranslations(babele, "investigator");
@@ -23,7 +23,7 @@ const CATEGORIES = {
 };
 
 export function registerBabeleConverters(babele) {
-  babele.registerConverters({
-    convertCategory: createLookupConverter(CATEGORIES),
+  babele.registerMapping({
+    Item: { category: lookupField("system.category", CATEGORIES) },
   });
 }

@@ -27,47 +27,44 @@ export function getSettings(key, defaultValue = false) {
  * @param {string|string[]} paths - Path segment(s) under `compendium/` (e.g. `"swade/core"`).
  */
 export function registerCompendiumTranslations(babele, paths) {
-  if (!game.settings.get(MODULE_ID, "compendiumTranslation")) {
-    return;
-  }
+  const pathList = Array.isArray(paths) ? paths : [paths];
 
-  let pathList = paths;
-  if (!Array.isArray(paths)) {
-    pathList = [paths];
-  }
-  const dirs = pathList.map((path) => `compendium/${path}`);
-
-  const registration = {
+  babele.register({
     module: MODULE_ID,
     lang: BABELE_LANG,
-  };
-
-  if (dirs.length === 1) {
-    const [dir] = dirs;
-    registration.dir = dir;
-  } else {
-    registration.dirs = dirs;
-  }
-
-  babele.register(registration);
+    dirs: pathList.map((path) => `compendium/${path}`),
+  });
 }
 
 /**
- * Applies useful Babele defaults when compendium translation is active.
+ * Builds a mapping field that uses Babele's built-in `lookup` converter.
+ * Pass the result to `babele.registerMapping` instead of writing the table into `mappings.json`.
+ *
+ * @param {string} path - Source data path (e.g. `"system.class"`).
+ * @param {Record<string, string>} values - Original value → translated value.
+ * @returns {object}
+ */
+export function lookupField(path, values) {
+  return { path, converter: "lookup", values, normalize: "trim" };
+}
+
+/**
+ * Turns on Babele's "show original name" once per client, so later changes by the user stick.
  */
 export function applyBabeleDefaults() {
-  if (!game.settings.get(MODULE_ID, "compendiumTranslation")) {
+  if (getSettings("babeleDefaultsApplied")) {
     return;
   }
 
   game.settings.set("babele", "showOriginalName", true);
+  game.settings.set(MODULE_ID, "babeleDefaultsApplied", true);
 }
 
 /**
  * Prompts the GM when compendium translation is enabled but Babele is missing.
  */
 export function warnBabeleMissing() {
-  if (!game.settings.get(MODULE_ID, "compendiumTranslation") || game.babele) {
+  if (!game.user.isGM || !game.settings.get(MODULE_ID, "compendiumTranslation") || game.babele) {
     return;
   }
 
@@ -82,6 +79,7 @@ export function warnBabeleMissing() {
 
 /**
  * Normalizes the `runtime` object Babele passes into converters.
+ * Converters receive a document translation scope that may wrap the compendium runtime.
  *
  * @param {object|null|undefined} runtime - Value from the converter context's `runtime` field.
  * @returns {object|null} Babele compendium runtime, or `null`.
@@ -122,7 +120,7 @@ export function translatedItemEntryFromPack(entryName, scope, packId) {
   const pack = scope.mappedCompendiumFor?.(packId);
 
   if (pack?.hasTranslation?.(data, "Item", scope)) {
-    return pack.translationsFor(data, "Item") ?? null;
+    return pack.translationsFor(data, "Item");
   }
 
   return null;
@@ -262,52 +260,10 @@ export function createTranslateItemListConverter({ sort = false } = {}) {
   };
 }
 
-/**
- * Creates a Babele converter that maps a scalar value through a lookup table.
- *
- * @param {Record<string, string>} lookup
- * @returns {{ translate: (context: object) => string|undefined }}
- */
-export function createLookupConverter(lookup) {
-  return {
-    translate(context) {
-      const { value } = context;
-      if (!value) {
-        return value;
-      }
-      return translateValue(value, lookup);
-    },
-  };
-}
-
 export function translateValue(value, translations) {
   const translated = translations[value.trim()];
   if (typeof translated !== "string" || translated === "") {
     return value;
   }
   return translated;
-}
-
-export function translateList(value, translations) {
-  return value
-    .split(", ")
-    .map((item) => translateValue(item, translations))
-    .join(", ");
-}
-
-export function parseParentheses(str) {
-  const regex = /^(\S+(?:\s+\S+)*)\s+\(([^)]+)\)$/;
-  const match = str.match(regex);
-
-  if (match) {
-    return {
-      main: match[1],
-      sub: match[2],
-    };
-  }
-
-  return {
-    main: str.trim(),
-    sub: null,
-  };
 }

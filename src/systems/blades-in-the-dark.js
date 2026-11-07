@@ -1,4 +1,4 @@
-import { createLookupConverter, registerCompendiumTranslations } from "../babele-helpers.js";
+import { lookupField, registerCompendiumTranslations } from "#helpers";
 
 const CLASSES = {
   Assassins: "Душегубы",
@@ -34,7 +34,7 @@ export function registerBabeleTranslations(babele) {
 }
 
 export function registerBabeleConverters(babele) {
-  babele.registerConverters({
-    convertClass: createLookupConverter(CLASSES),
+  babele.registerMapping({
+    Item: { class: lookupField("system.class", CLASSES) },
   });
 }

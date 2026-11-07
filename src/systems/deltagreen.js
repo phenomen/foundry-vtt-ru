@@ -1,11 +1,11 @@
 export function init() {
-  Hooks.on("renderActorSheet", () => {
-    sortSkillsAlpha();
+  Hooks.on("renderActorSheet", (_app, html) => {
+    sortSkillsAlpha(html instanceof HTMLElement ? html : html[0]);
   });
 }
 
-function sortSkillsAlpha() {
-  const lists = document.getElementsByClassName("grid grid-3col");
+function sortSkillsAlpha(root) {
+  const lists = root.getElementsByClassName("grid grid-3col");
   for (const list of lists) {
     const competences = list.childNodes;
     const complist = [];

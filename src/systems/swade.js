@@ -1,8 +1,4 @@
-import {
-  createLookupConverter,
-  registerCompendiumTranslations,
-  resolveTranslatedItemName,
-} from "../babele-helpers.js";
+import { lookupField, registerCompendiumTranslations, resolveTranslatedItemName } from "#helpers";
 
 const EXCEPTIONS = {
   "Arcane Background (Any)": "Мистический дар (любой)",
@@ -109,12 +105,16 @@ export function registerBabeleTranslations(babele) {
 }
 
 export function registerBabeleConverters(babele) {
-  babele.registerConverters({
-    convertCategory: createLookupConverter(CATEGORIES),
-    convertDuration: createLookupConverter(DURATIONS),
-    convertRange: createLookupConverter(RANGES),
-    convertRank: createLookupConverter(RANKS),
+  babele.registerMapping({
+    Item: {
+      category: lookupField("system.category", CATEGORIES),
+      duration: lookupField("system.duration", DURATIONS),
+      range: lookupField("system.range", RANGES),
+      rank: lookupField("system.rank", RANKS),
+    },
+  });
 
+  babele.registerConverters({
     convertRequirements: {
       translate(context) {
         const { value: requirements, runtime } = context;
@@ -129,14 +129,10 @@ export function registerBabeleConverters(babele) {
             return data;
           }
 
-          const translatedLabel =
+          const label =
             EXCEPTIONS[data.label] ?? resolveTranslatedItemName(data.label, { runtime, packIds });
 
-          if (translatedLabel !== data.label) {
-            data.label = translatedLabel;
-          }
-
-          return data;
+          return label === data.label ? data : { ...data, label };
         });
       },
     },
@@ -156,7 +152,7 @@ function getRequirementPackIds() {
 }
 
 function setupRules() {
-  if (game.settings.get("ru-ru", "setupRules")) {
+  if (game.user.isGM && game.settings.get("ru-ru", "setupRules")) {
     game.settings.set(
       "swade",
       "coreSkills",

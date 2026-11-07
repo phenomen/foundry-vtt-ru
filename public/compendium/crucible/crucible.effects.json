@@ -1,0 +1,69 @@
+{
+  "label": "Crucible - Эффекты системы",
+  "folders": {
+    "Healing Over Time": "Постепенное исцеление",
+    "Damage Over Time": "Длительный урон"
+  },
+  "entries": {
+    "Suffocating": {
+      "name": "Задыхается",
+      "description": "<p>Существо в состоянии @Condition[suffocating] получает урон типа <strong>Пустота</strong> одновременно по @Rule[resource.wounds] и @Rule[resource.madness] в начале каждого хода: это отражает повреждение лёгких и панику из-за отсутствия пригодного для дыхания воздуха. Пока существо Задыхается, оно также находится в состоянии @Condition[silenced].</p>"
+    },
+    "Inspired": {
+      "name": "Вдохновлён",
+      "description": "<p>Существо в состоянии @Condition[inspired] постепенно восстанавливает @Rule[resource.morale] в начале каждого своего хода.</p>"
+    },
+    "Mending": {
+      "name": "Восстанавливается",
+      "description": "<p>Существо в состоянии @Condition[mending] постепенно восстанавливает @Rule[resource.health] в начале каждого своего хода.</p>"
+    },
+    "Decaying": {
+      "name": "Разлагается",
+      "description": "<p>Существо в состоянии @Condition[decaying] получает дополнительный урон типа <strong>Порча</strong> по @Rule[resource.health] в начале своих последующих ходов.</p>"
+    },
+    "Burning": {
+      "name": "Горит",
+      "description": "<p>Существо в состоянии @Condition[burning] получает дополнительный урон типа <strong>Огонь</strong> по @Rule[resource.health] и @Rule[resource.morale] в начале своих последующих ходов.</p>"
+    },
+    "Dominated": {
+      "name": "Подчинён",
+      "description": "<p>Существо в состоянии @Condition[dominated] получает урон типа <strong>Психический</strong> по @Rule[resource.morale] в начале каждого хода.</p>"
+    },
+    "Entropy": {
+      "name": "Энтропия",
+      "description": "<p>Существо, поражённое @Condition[entropy], получает урон типа <strong>Пустота</strong> по @Rule[resource.health] в начале каждого хода и также считается находящимся в состоянии @Condition[frightened].</p>"
+    },
+    "Bleeding (Slashing)": {
+      "name": "Кровоточит (рубящий)",
+      "description": "<p>Существо в состоянии @Condition[bleeding] получает дополнительный урон типа <strong>Рубящий</strong> по @Rule[resource.health] в начале своих последующих ходов.</p>"
+    },
+    "Freezing": {
+      "name": "Замерзает",
+      "description": "<p>Существо в состоянии @Condition[freezing] получает дополнительный урон типа <strong>Холод</strong> по @Rule[resource.health] в начале своих последующих ходов.</p>"
+    },
+    "Bleeding (Piercing)": {
+      "name": "Кровоточит (колющий)",
+      "description": "<p>Существо в состоянии @Condition[bleeding] (колющий) получает дополнительный урон типа <strong>Колющий</strong> по @Rule[resource.health] в начале своих последующих ходов.</p>"
+    },
+    "Poisoned": {
+      "name": "Отравлен",
+      "description": "<p>Существо в состоянии @Condition[poisoned] получает дополнительный урон типа <strong>Яд</strong> по @Rule[resource.health] в начале своих последующих ходов.</p>"
+    },
+    "Confused": {
+      "name": "Смятён",
+      "description": "<p>Существо в состоянии @Condition[confused] получает урон типа <strong>Психический</strong> по @Rule[resource.morale] в начале каждого хода и также считается находящимся в состоянии @Condition[disoriented].</p>"
+    },
+    "Shocked": {
+      "name": "Потрясён",
+      "description": "<p>Существо в состоянии @Condition[shocked] получает урон типа <strong>Электричество</strong> по @Rule[resource.morale] в начале каждого хода.</p>"
+    },
+    "Irradiated": {
+      "name": "Облучён",
+      "description": "<p>Существо в состоянии @Condition[irradiated] получает дополнительный урон типа <strong>Сияющий</strong> по @Rule[resource.health] и @Rule[resource.morale] в начале своих последующих ходов.</p>"
+    },
+    "Corroding": {
+      "name": "Разъедаем",
+      "description": "<p>Существо в состоянии @Condition[corroding] получает дополнительный урон типа <strong>Кислота</strong> по @Rule[resource.health] в начале своих последующих ходов.</p>"
+    }
+  }
+}

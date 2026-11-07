@@ -1,4 +1,4 @@
-import { registerCompendiumTranslations } from "../babele-helpers.js";
+import { registerCompendiumTranslations } from "#helpers";
 
 export function registerBabeleTranslations(babele) {
   registerCompendiumTranslations(babele, "cosmere-rpg");

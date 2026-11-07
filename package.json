@@ -4,23 +4,16 @@
   "private": "true",
   "type": "module",
   "scripts": {
-    "build": "vp build",
-    "format": "vp fmt",
-    "lint": "vp lint",
-    "check": "vp check",
-    "fix": "vp check --fix",
-    "prepare": "vp config",
-    "util:sync-manifest": "node utils/sync-manifest.js",
-    "util:symlink": "node utils/symlink.js",
-    "util:babele-format": "node utils/babele-format.js",
-    "util:remove-changes": "node utils/remove-changes.js",
-    "util:remove-items": "node utils/remove-items.js",
-    "util:merge-ag-srd24": "node scripts/merge-ag-srd24.js"
+    "build": "bun scripts/build.js",
+    "format": "bun fmt",
+    "lint": "bun lint",
+    "fix": "bun fmt && bun lint --fix",
+    "prepare": "bun scripts/install-hooks.js",
+    "util:sync": "node utils/sync-manifest.js",
+    "util:symlink": "node utils/symlink.js"
   },
-  "devDependencies": {
-    "@types/bun": "^1.4.2",
-    "vite": "npm:@voidzero-dev/vite-plus-core@0.3.1",
-    "vite-plus": "^0.3.1"
-  },
-  "packageManager": "bun@1.4.2"
+  "packageManager": "bun@1.4.4",
+  "imports": {
+    "#helpers": "./src/helpers.js"
+  }
 }

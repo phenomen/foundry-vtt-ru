@@ -1,0 +1,34 @@
+body.witcher-ttrpg-death-march {
+  --wdm-font-display: var(--font-sans-condensed);
+  --wdm-font-body: var(--font-sans);
+  --wdm-font-mono: var(--font-monospace);
+}
+
+body.witcher-ttrpg-death-march .wcs-vital-lbl {
+  white-space: normal;
+  overflow: visible;
+}
+
+body.witcher-ttrpg-death-march .wcs-vital {
+  grid-template-columns: 6.5rem 2.25rem 1fr auto auto;
+}
+
+body.witcher-ttrpg-death-march .wcs-coin .name,
+body.witcher-ttrpg-death-march .wcs-stat-abbr,
+body.witcher-ttrpg-death-march .wcs-pill .lbl,
+body.witcher-ttrpg-death-march #wou-top-bar .hud .coin .cur em,
+body.witcher-ttrpg-death-march .wcs-skill-line.is-difficult .wcs-skill-name::after {
+  font-size: 0.6rem;
+}
+
+body.witcher-ttrpg-death-march .wcs-skill-line button.wcs-skill-name {
+  display: block;
+  align-content: center;
+  padding: 0 0.5rem;
+  letter-spacing: 0.06em;
+}
+
+body.witcher-ttrpg-death-march .wcs-skill-line.is-difficult .wcs-skill-name::after {
+  vertical-align: baseline;
+  line-height: 0;
+}
