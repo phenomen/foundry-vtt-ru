@@ -1,9 +1,9 @@
 {
   "label": "Таланты противников",
   "folders": {
-    "Charge": "Натиск",
+    "Charges": "Натиск",
     "Bites": "Укусы",
-    "General": "Общее",
+    "Biological": "Биологические особенности",
     "Flight": "Полет",
     "Communication": "Общение",
     "Death": "Смерть",
@@ -812,6 +812,100 @@
           "name": "Смертоносный всплеск яда",
           "description": "<p>Когда @ref[actor.name]{существо} получает состояние @Condition[dead], возникает всплеск <strong>Яда</strong>, атакующий защиту @Rule[defense.fortitude] всех находящихся поблизости существ. При Критическом Успехе атаки поражённое существо также получает состояние @Condition[poisoned] на <strong>3 раунда</strong>.</p>",
           "condition": "Существо становится мертвым."
+        }
+      }
+    },
+    "Bioluminescent Display": {
+      "name": "Биолюминесцентное свечение",
+      "description": "<p>По телу @ref[actor.name]{существа} переливается биолюминесцентное свечение. Меняющиеся цветовые узоры воздействуют на чувства наблюдателей, вызывая замешательство или более тяжёлые последствия.</p>",
+      "actions": {
+        "Confusing Patterns": {
+          "name": "Сбивающие с толку узоры",
+          "description": "<p>Существо начинает пульсировать и вспыхивать причудливыми узорами цвета и света. Враги в пределах 20 футов должны отразить атаку против своей @Rule[defense.willpower], иначе их охватывает одурманивающая вялость: они получают урон типа @Rule[damageType.radiant] по @Rule[resource.morale] и состояние @Condition[disoriented].</p>",
+          "condition": "",
+          "effects": {
+            "Confusing Patterns": "Сбивающие с толку узоры"
+          }
+        },
+        "Scintillating Agony": {
+          "name": "Мерцающая агония",
+          "description": "<p>Существо становится кроваво-красным и пульсирует волнами тёмных и светлых багровых оттенков, причиняя психический вред всему вокруг. Враги в пределах 15 футов должны отразить @Rule[action.empowered]{Усиленную} атаку против своей @Rule[defense.willpower], иначе получают урон типа @Rule[damageType.psychic] по @Rule[resource.morale].</p>",
+          "condition": ""
+        }
+      }
+    },
+    "Colossal Form": {
+      "name": "Колоссальная форма",
+      "description": "<p>@ref[actor.name]{существо} исполинских размеров: его уязвимые места далеко друг от друга и хорошо защищены, а само оно значительно крепче большинства существ. Для <strong>Ударов</strong> по нему @Rule[dice.criticalSuccessThreshold] увеличивается на 2, и сдвинуть его против воли могут лишь самые могущественные силы.</p>"
+    },
+    "Debilitating Tendrils": {
+      "name": "Изнуряющие щупальца",
+      "description": "<p>У @ref[actor.name]{существа} множество щупалец, покрытых сильнодействующим нейротоксином.</p>",
+      "actions": {
+        "Debilitating Tendrils": {
+          "name": "Изнуряющие щупальца",
+          "description": "<p>Этот удар направлен против @Rule[defense.fortitude] и подвергает существо воздействию нейротоксина, способного лишить его сил. Эта @Rule[action.weakened]{Ослабленная} атака наносит урон типа @Rule[damageType.poison] по @Rule[resource.morale] и накладывает на цель состояние @Condition[poisoned] на 3 Хода.</p><p>При Критическом Успехе она также накладывает состояние @Condition[paralyzed] на 2 Хода.</p>",
+          "condition": ""
+        }
+      }
+    },
+    "Digestive Sacs": {
+      "name": "Пищеварительные мешки",
+      "description": "<p>@ref[actor.name]{существо} может затянуть в свои пищеварительные мешки другое существо, чей @Rule[movement.size] как минимум на 2 меньше его собственного, чтобы переварить его едкими кислотами. Одновременно внутри могут находиться до трёх существ.</p><p>Если @ref[actor.name]{существо} получает состояние @Condition[burning], @Condition[stunned], @Condition[incapacitated] или @Condition[weakened], оно извергает всех поглощённых существ.</p>",
+      "actions": {
+        "Digestive Sacs": {
+          "name": "Пищеварительные мешки",
+          "description": "<p>Вы затягиваете выбранного врага в один из своих пищеварительных мешков. Пока цель не освободится, на неё действуют состояния @Condition[restrained] и @Condition[corroding], поскольку пищеварительные кислоты пытаются её переварить.</p><p>Если вы получаете состояние @Condition[burning], @Condition[stunned], @Condition[incapacitated] или @Condition[weakened], вы извергаете всех поглощённых существ.</p>",
+          "condition": "",
+          "effects": {
+            "Digesting": "Переваривание"
+          }
+        },
+        "Regurgitate": {
+          "name": "Извергнуть поглощённых",
+          "description": "<p>Вы извергаете всех существ из своих пищеварительных мешков, возвращая их в пространство вокруг себя и снимая наложенные мешками состояния @Condition[restrained] и @Condition[corroding].</p>",
+          "condition": ""
+        }
+      }
+    },
+    "Hexing Burst": {
+      "name": "Проклинающий всплеск",
+      "description": "<p>@ref[actor.name]{существо} способно порождать и испускать мощный всплеск почти осязаемого невезения.</p>",
+      "actions": {
+        "Hexing Burst": {
+          "name": "Проклинающий всплеск",
+          "description": "<p>@ref[actor.name]{существо} испускает всплеск чистого невезения взрывом радиусом 15 футов, атакуя @Rule[defense.willpower] каждой враждебной цели в этой области. Этот взрыв @Rule[action.harmless]{Безвреден}, но при успехе цели получают состояние @Condition[hexed] до конца своего следующего хода.</p>",
+          "condition": ""
+        }
+      }
+    },
+    "Noxious Burst": {
+      "name": "Ядовитый всплеск",
+      "description": "<p>@ref[actor.name]{существо} способно порождать и выпускать облако ядовитого газа.</p>",
+      "actions": {
+        "Noxious Burst": {
+          "name": "Ядовитый всплеск",
+          "description": "<p>@ref[actor.name]{существо} выпускает ядовитый газ взрывом радиусом 15 футов, атакуя @Rule[defense.fortitude] каждой цели в этой области и нанося урон типа @Rule[damageType.poison] по @Rule[resource.morale].</p><p>При @Rule[dice.criticalSuccess]{Критическом Попадании} атака накладывает состояние @Condition[poisoned] на <strong>3 Хода</strong>.</p>",
+          "condition": ""
+        }
+      }
+    },
+    "Noxious Strikes": {
+      "name": "Ядовитые удары",
+      "description": "<p>Тело @ref[actor.name]{существа} отравляет всё, по чему оно бьёт. Когда его атака ближнего боя, наносящая урон @Rule[resource.health], даёт @Rule[dice.criticalSuccess]{Критическое Попадание}, цель получает состояние @Condition[poisoned] на <strong>3 Раунда</strong>.</p>"
+    },
+    "Summoned": {
+      "name": "Призван",
+      "description": "<p>@ref[actor.name]{существо} призвано заклинателем. Его обучение в той семье заклинательства, которая использовалась для призыва, не может превышать обучение его призывателя.</p>"
+    },
+    "Vine Lash": {
+      "name": "Удар лозой",
+      "description": "<p>@ref[actor.name]{существо} может с ужасающей силой хлестать лозами по полю боя.</p>",
+      "actions": {
+        "Vine Lash": {
+          "name": "Удар лозой",
+          "description": "<p>@ref[actor.name]{существо} хлещет колючими лозами широким 20-футовым <strong>Веером</strong>, поражая всех существ в этой области. При @Rule[dice.criticalSuccess] поражённые цели получают состояние @Condition[staggered] до конца своего следующего хода.</p>",
+          "condition": ""
         }
       }
     }
